@@ -24,8 +24,25 @@ contributors:
 
 Theming is a mechanism by which a consistent look and feel can be applied to all the components on a page. For now, this means sharing a color scheme across the entire page.
 
+> [!IMPORTANT]
+> A *Theme Json* object is a code block containing a set of colors. Creator Kit components are designed to accept the code block and map the color values to component properties. Save the object as a variable in your app (as described in the following instructions). Although a Theme Json object is designed to be easily referenced by kit components, any component outside of the kit can also reference these values, which helps easily maintain consistency across all app components.
+
+## Generating the theme
+
+1. Play the [Fluent Theme Designer](https://docs.microsoft.com/en-us/power-platform/guidance/creator-kit/creator-kit-explained#theme-editor-app) app provided in the **CreatorKitReferences(Canvas)** solution.
+
+1. Modify the **Primary color**, **Text color**, and **Background color** values.
+
+    :::image type="content" source="media/theme-editor.png" alt-text="Theme Editor app." border="false":::
+
+1. In the upper-right corner, select **Export theme** to generate the Power Fx expression version of the Theme JSON, and then copy the value from the panel.
+
+    :::image type="content" source="media/theme-editor-json.png" alt-text="Theme Editor app-generated Theme JSON." border="false":::
+
+1. Save the Theme JSON as a global variable in the `OnStart` property of your app, with the palette code block as a property of the `AppTheme` object variable.
+
 ## Setting the theme
-The below Power Fx formula shows an example of how to set a global `AppTheme` variable using the output from the [Fluent UI Theme Designer](https://docs.microsoft.com/en-us/power-platform/guidance/creator-kit/creator-kit-explained#theme-editor-app) app provided in the Creator Kit's Canvas . This variable can be referenced by all components in the app. 
+The below Power Fx formula shows an example of how to set a global `AppTheme` variable using the output from the Fluent UI Theme Designer app. This variable can be referenced by all components in the app. 
 
 - Place this Power Fx formula to run on the app's `OnStart` property. 
 - Replace the value between the `/* THEME OBJECT */` comments with your own theme object from the designer.

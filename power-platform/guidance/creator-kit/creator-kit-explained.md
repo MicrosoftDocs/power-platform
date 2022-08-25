@@ -105,68 +105,17 @@ Follow the preceding steps to [make a copy of the canvas template app](#canvas-a
 
 1. Remove the original custom page template from the solution.
 
-### Theme editor app
+### Fluent theme designer app
 
-Use this app to generate a **Theme JSON** object for styling components consistently.
+Use this app to generate a **Theme Json** object for styling components consistently.
 
-> [!IMPORTANT]
-> A *Theme JSON* object is a code block containing a set of colors. Creator Kit components are designed to accept the code block and map the color values to component properties. Save the object as a variable in your app (as described in the following instructions). Although a Theme JSON object is designed to be easily referenced by kit components, any component outside of the kit can also reference these values, which helps easily maintain consistency across all app components.
+:::image type="content" source="media/theme-editor.png" alt-text="Theme Editor app." border="false":::
 
-1. Play the Theme Editor App.
-
-1. Modify the **Primary color**, **Text color**, and **Background color** values.
-
-    :::image type="content" source="media/theme-editor.png" alt-text="Theme Editor app." border="false":::
-
-1. In the upper-right corner, select **Export theme** to generate the Power Fx expression version of the Theme JSON, and then copy the value from the panel.
-
-    :::image type="content" source="media/theme-editor-json.png" alt-text="Theme Editor app-generated Theme JSON." border="false":::
-
-1. Save the Theme JSON as a global variable in the `OnStart` property of your app, with the palette code block as a property of the `AppTheme` object variable.
-
-    ```powerapps-dot
-    Set( AppTheme, {
-      palette: {
-        themePrimary: "#0078d4",
-        themeLighterAlt: "#eff6fc",
-        themeLighter: "#deecf9",
-        themeLight: "#c7e0f4",
-        themeTertiary: "#71afe5",
-        themeSecondary: "#2b88d8",
-        themeDarkAlt: "#106ebe",
-        themeDark: "#005a9e",
-        themeDarker: "#004578",
-        neutralLighterAlt: "#faf9f8",
-        neutralLighter: "#f3f2f1",
-        neutralLight: "#edebe9",
-        neutralQuaternaryAlt: "#e1dfdd",
-        neutralQuaternary: "#d0d0d0",
-        neutralTertiaryAlt: "#c8c6c4",
-        neutralTertiary: "#a19f9d",
-        neutralSecondary: "#605e5c",
-        neutralPrimaryAlt: "#3b3a39",
-        neutralPrimary: "#323130",
-        neutralDark: "#201f1e",
-        black: "#000000",
-        white: "#ffffff"
-      }
-    });
-    ```
-
-1. Reference the `AppTheme` variable for any Creator Kit control that has a `Theme` property.
-
-> [!NOTE]
-> Any control (including those outside the Creator Kit) can reference the Theme JSON colors, but the specific property of `palette` needs to be indicated.
-
-The following example shows a formula that references the `AppTheme` primary color value in the `Fill` property for a standard button.
-
-```powerapps-dot
-ColorValue( AppTheme.palette.themePrimary )
-```
+See [Theming](./theme.md) for instructions on how to generate themes and reference themes from components.
 
 ### Canvas components
 
-Canvas components are defined in the **Power CAT Component Library**, and are implemented by using [canvas components](/power-apps/maker/canvas-apps/create-component).
+Canvas components are defined in the **Power CAT Component Library**, and are implemented using [canvas components](/power-apps/maker/canvas-apps/create-component).
 
 :::image type="content" source="media/canvascomponents.png" alt-text="Canvas components." border="false":::
 
