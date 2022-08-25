@@ -116,7 +116,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. Once extraction is complete, go to the **Suggested** tab. A number of suggestions will appear. These may be either [single-turn or multi-turn topics](#single-turn-and-multi-turn-topic-suggestions).
 
-    :::image type="content" source="media/advanced-create-topics-from-web/suggestion-tab.png" alt-text="Screenshot of the Suggested tab.":::
+    :::image type="content" source="../media/advanced-create-topics-from-web/suggestion-tab.png" alt-text="Screenshot of the Suggested tab.":::
 
 1. Review these suggestions to see which ones you want to [add to your bot](#add-suggested-topics-to-an-existing-bot).
 
