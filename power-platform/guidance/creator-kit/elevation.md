@@ -28,30 +28,30 @@ A control used to construct cards and flyout menus.
 
 ## Description
 
-Fluent UI `Elevation` support with mouse hover events.
+`Elevation` is used to draw focus to an experience and add a physical materiality to the app. Shallow levels are reserved for items that are closely connected to the canvas or view, such as tiles. Deeper levels create a prominent frame around the surface, drawing strong focus to self-contained experiences like dialogs. Supports mouse hover events.
+
+Go to [Fluent UI Elevation style](https://developer.microsoft.com/fluentui#/styles/web/elevation) page for best practices.
+
+## Properties
+
+### Key properties
+
+| Property | Description |
+| -------- | ----------- |
+| `Depth` | The depth of the shadow. |
+| `HoverDepth` | The depth of the shadow that appears on hover. |
+
+### Style properties
+
+| Property | Description |
+| -------- | ----------- |
+| `FillColor` | The background color of the `Elevation` control. |
+| `HoverFillColor` | The background color of the `Elevation` control that appears on hover. |
+| `Padding` | The distance between the `Elevation` card and the edge of the control (in each direction: left, right, top, and bottom). |
+| `DarkOverlay` | When enabled, displays a dark overlay effect in the padded area. |
 
 ## Limitations
 
 This code component can only be used in canvas apps and custom pages.
-
-## Key properties
-
-| Property | Description |
-| -------- | ----------- |
-| `Fill color` | The background color of the `Elevation` control. |
-| `Depth` | The depth of the shadow. |
-
-## Additional properties
-
-| Property | Description |
-| -------- | ----------- |
-| `Hover fill color` | The background color of the `Elevation` control that appears on hover. |
-| `Hover depth` | The depth of the shadow that appears on hover. |
-| `Padding` | The distance between the `Elevation` card and the edge of the control (in each direction: left, right, top, and bottom). |
-| `Dark overlay padding` | When enabled, displays a dark overlay effect in the padded area. |
-
-## Best practices
-
-Go to [Fluent UI Elevation control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
