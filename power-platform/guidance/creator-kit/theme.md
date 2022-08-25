@@ -1,11 +1,35 @@
-# Theming
+---
+title: Theming | Creator Kit
+description: Learn how to configure the Theme property for Creator Kit components.
+author: denisem-msft
+manager: devkeydet
+ms.component: pa-maker
+ms.topic: conceptual
+ms.date: 08/24/2022
+ms.subservice: guidance
+ms.author: demora
+ms.reviewer: tapanm
+search.audienceType: 
+  - maker
+search.app: 
+  - D365CE
+  - PowerApps
+  - Powerplatform
+contributors:
+  - tapanm-msft
+  - mehdis-msft
+---
 
-A theme can be passed to the `Theme` property of each component. The following is an example of setting a global `AppTheme` variable using the output from the [Fluent UI Theme Designer](https://docs.microsoft.com/en-us/power-platform/guidance/creator-kit/creator-kit-explained#theme-editor-app). This enables centralized app theming.
+# :::no-loc text="Theming":::
 
-- `AppTheme` can be referenced by canvas components. 
-- `AppThemeJson` can be referenced by code components.
+Theming is a mechanism by which a consistent look and feel can be applied to all the components on a page. For now, this means sharing a color scheme across the entire page.
 
-The following Power Fx formula should be run on the app's `OnStart` property, which loads before the user starts interacting with the app components. Replace the value between the `/* THEME OBJECT */` comments with your own theme object.  
+## Setting the theme
+The below Power Fx formula shows an example of how to set a global `AppTheme` variable using the output from the [Fluent UI Theme Designer](https://docs.microsoft.com/en-us/power-platform/guidance/creator-kit/creator-kit-explained#theme-editor-app) app provided in the Creator Kit's Canvas . This variable can be referenced by all components in the app. 
+
+- Place this Power Fx formula to run on the app's `OnStart` property. 
+- Replace the value between the `/* THEME OBJECT */` comments with your own theme object from the designer.
+
 ```powerapps-dot
 Set(
     AppTheme,
@@ -46,3 +70,21 @@ Set(
     )
 );
 ```
+
+## Referencing from Creator Kit components
+A theme can be passed to the `Theme` property of each component. 
+
+- Canvas components must reference the `AppTheme` variable.
+- Code components must reference the `AppThemeJson` variable.
+
+## Referencing from non-Creator Kit components
+Any of the core components in canvas apps or custom pages can reference elements from the `AppTheme` object (cannot be Json formatted). These controls must reference the desired `palette` properties and be cast as a Color data type using the `ColorValue()` formula.
+
+Example `Button`.`Fill` Power Fx formula referencing the primary color of the theme:
+```powerapps-dot
+ColorValue(AppTheme.palette.themePrimary)
+```
+
+:::image type="content" source="media/theme-button.png" alt-text="Button using theme.":::
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

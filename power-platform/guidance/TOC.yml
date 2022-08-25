@@ -274,7 +274,7 @@
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
-  - name: Power Platform Creator Kit (preview)
+  - name: Power Platform Creator Kit
     items:
     - name: Overview
       href: creator-kit/overview.md
@@ -339,7 +339,11 @@
         - name: Elevation
           href: creator-kit/elevation.md
         - name: KeyboardShortcuts
-          href: creator-kit/keyboardshortcuts.md      
+          href: creator-kit/keyboardshortcuts.md  
+    - name: Reference
+      items:
+      - name: Theming
+        href: creator-kit/theme.md
   - name: Automation adoption best practices
     items:
     - name: Overview
