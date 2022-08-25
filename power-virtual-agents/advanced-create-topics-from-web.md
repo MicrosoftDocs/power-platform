@@ -76,11 +76,11 @@ Tabular file types require a _two-column format_ where each row represents a que
 
 When using Microsoft Excel files, only the first sheet is imported.
 
-You can enter more than one question in the first column and they'll all be added as trigger phrases to the topic suggestion.
+You can enter more than one question (separated by new lines) in a first-column cell and they'll all be added as trigger phrases to the topic suggestion.
 
-:::image type="content" source="media/advanced-create-topics-from-web/multiple-triggers-excel.png" alt-text="The Topics menu item on the side pane.":::
+:::image type="content" source="media/advanced-create-topics-from-web/multiple-triggers-excel.png" alt-text="Screenshot of an Excel spreadsheet with multiple questions in one cell.":::
 
-:::image type="content" source="media/advanced-create-topics-from-web/multiple-triggers-pva.png" alt-text="The Topics menu item on the side pane.":::
+:::image type="content" source="media/advanced-create-topics-from-web/multiple-triggers-pva.png" alt-text="Screenshot of all the questions as trigger phrases in the topic suggestion.":::
 
 ## Extract content from webpages or online files
 
@@ -90,11 +90,11 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. Select **Topics** on the side pane.
 
-    :::image type="content" source="media/advanced-create-topics-from-web/menu-topics.png" alt-text="The Topics menu item on the side pane." border="false":::
+    :::image type="content" source="media/advanced-create-topics-from-web/menu-topics.png" alt-text="Screenshot of the Topics menu item on the side pane." border="false":::
 
 1. Select **Suggest topics**.
 
-    :::image type="content" source="media/advanced-create-topics-from-web/suggest-topics-button.png" alt-text="The Topics menu item on the side pane." border="false":::
+    :::image type="content" source="media/advanced-create-topics-from-web/suggest-topics-button.png" alt-text="Screenshot of the Suggest topics button." border="false":::
 
 1. Enter a URL for a [supported webpage or online file](#supported-content) from which you want to extract content, and then select **Add**.
 
@@ -116,7 +116,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. Once extraction is complete, go to the **Suggested** tab. A number of suggestions will appear. These may be either [single-turn or multi-turn topics](#single-turn-and-multi-turn-topic-suggestions).
 
-    :::image type="content" source="media/advanced-create-topics-from-web/suggestion-tab.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
+    :::image type="content" source="media/advanced-create-topics-from-web/suggestion-tab.png" alt-text="Screenshot of the Suggested tab.":::
 
 1. Review these suggestions to see which ones you want to [add to your bot](#add-suggested-topics-to-an-existing-bot).
 
