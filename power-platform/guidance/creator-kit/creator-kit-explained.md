@@ -60,7 +60,7 @@ Use this app to learn about each component, get recommended best practices for t
 - Select the **Code** tab to see the underlying Power Fx formulas.
 - Learn best practices from the inline guidance related to the control.
 
-:::image type="content" source="media/ReferenceApp.png" alt-text="Screenshot of a page in the reference app that describes a control." border="false":::
+:::image type="content" source="media/referenceapp-mda.png" alt-text="Screenshot of a page in the reference app that describes a control." border="false":::
 
 ### Templates
 
