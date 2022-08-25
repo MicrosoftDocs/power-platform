@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, three meters determine how mu
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/29/2022
+ms.date: 09/25/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
@@ -96,10 +96,10 @@ A flow can either run in the cloud, on a desktop with a user (attended), or on a
 - Flows that run in the cloud or attended cost $0.60 per run 
 - Flows that run unattended cost $3.00 per run  
 
-To make it easy to test and fix your flows no charges will be incurred if you're testing your flow in the designer or resubmitting failed runs. Additionally, if you use the "Child flow" feature for cloud flows or attended flows, there will only be a single charge for the parent flow run, no charges will be incurred for child flow runs. For unattended flows, both parent and child flow runs will be charged. 
+To make it easy to test and fix your flows, no charges will be incurred if you're testing your flow in the designer or resubmitting failed runs. Additionally, if you use the "Child flow" feature for cloud flows or attended flows, there will only be a single charge for the parent flow run, no charges will be incurred for child flow runs. For unattended flows, both parent and child flow runs will be charged. 
 
 > [!NOTE]
-> During the public preview, there may be limits on the maximum number of runs that will be charged to a single flow in a pay-as-you-go environment per day (starting on 9/1 the limit is 1000 per day, subject to change during the preview period). The downloadable pay-as-you-go report in the Power Platform admin center will show the full and accurate number of flow runs, but the number billed to Azure may be lower. We recommend that any flows with a high number of runs use a Power Automate per flow plan, as that is a fixed price per month.
+> During the public preview, there may be limits on the maximum number of runs that will be charged to a single flow in a pay-as-you-go environment per day. Starting on 9/1, the limit is 1000 per day subject to change during the preview period. The downloadable pay-as-you-go report in the Power Platform admin center will show the full and accurate number of flow runs, but the number billed to Azure may be lower. We recommend that any flows with a high number of runs use a Power Automate per flow plan, as that is a fixed price per month.
 
 #### Users and flows with standalone Power Automate licenses 
 
