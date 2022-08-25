@@ -44,12 +44,12 @@ Organizations also gain rights to use Power Automate if they are licensed to use
 - Power Apps Plan 2 (grandfathered)
 - Windows licenses.
 
-When you use seeded plans, your flows must run within the context of the application in which the seeded plan is available. For example, flows included within a Dynamics/Power Apps application can connect to the following.
+When you use seeded plans, your flows must run within the context of the application in which the seeded plan is available. For example, flows included within a Dynamics 365/App created using Power Apps can connect to the following.
 
-- To any data source within the use rights of the Dynamics 365/Power Apps app.
-- Directly with the Dynamics 365/Power Apps app (via built in triggers/actions).
+- To any data source within the use rights of the Dynamics 365/App created using Power Apps.
+- Directly with the Dynamics 365/App created using Power Apps (via built in triggers/actions).
 
-For example, if a flow uses [premium connectors](#premium-connectors) and it's triggered by a Power App app, any user can run the flow if they have a Power Apps license.
+For example, if a flow uses [premium connectors](#premium-connectors) and it's triggered by an app, any user can run the flow if they have a Power Apps license.
 
 If the flow is isolated and has nothing to do with the application, then a standalone Power Automate license must be purchased.
 
