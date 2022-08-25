@@ -48,7 +48,7 @@ For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/flu
 
 | Property | Description |
 | -------- | ----------- |
-| `FontSize` | Size of the font (action button type only) |
+| `FontSize` | Size of the font (works for type `Action button`) |
 | `IconColor` | Color of the icon |
 | `HoverIconColor` | Color of the icon that appears on hover |
 | `FontColor` | Color of the font |
