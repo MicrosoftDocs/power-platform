@@ -168,7 +168,7 @@ async function enableFrameAncestors(sources) {
     console.log('Successfully enabled CSP!')
 }
 ```
-### Disabling CSP
+## Disabling CSP without UI
 Steps:
 - Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
 - Paste and execute the below script into the console.
