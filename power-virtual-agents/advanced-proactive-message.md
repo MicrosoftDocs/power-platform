@@ -55,7 +55,7 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 
 ## Send a proactive message
 
-In Power Automate, add the Microsoft Teams connector action **Post message in a chat or channel** at the step where you want to send a proactive message in your flow:
+1. In Power Automate, add the Microsoft Teams connector action **Post message in a chat or channel** at the step where you want to send a proactive message in your flow.
 
 1. Set the **Post as** field to **Power Virtual Agents (Preview)**.
 
@@ -74,11 +74,13 @@ When the flow is run, the recipient will receive the proactive message from the 
 ## Send a proactive Adaptive Card
 
 > [!IMPORTANT]
-> This section details how to send _proactive_ Adapative Cards with Power Automate flows. To learn how to send Adaptive Cards in a typical conversation flow, see [Add Adaptive Cards with Composer](advanced-bot-framework-composer-example1.md).
+> This section details how to send _proactive_ Adaptive Cards with Power Automate flows. To learn how to send Adaptive Cards in a typical conversation flow, see [Add Adaptive Cards with Composer](advanced-bot-framework-composer-example1.md).
 
 <!-- FIXME: screenshot of informational card -->
 
-<!-- FIXME: intro blurb -->
+In addition to sending proactive messages, you can also send proactive Adaptive Cards.
+
+Adaptive Cards are an open card exchange format enabling developers to exchange UI content in a common and consistent way. You can author Adaptive Cards by hand in JSON, or if you prefer a drag-and-drop interface, you can use the [Adaptive Cards Designer](https://adaptivecards.io/designer/).
 
 1. In Power Automate, add the Microsoft Teams connector action **Post adaptive card in a chat or channel** at the step where you want to send card in your flow.
 
@@ -96,16 +98,11 @@ When the flow is run, the recipient will receive the proactive message from the 
 
 When the flow is run, the recipient will receive the Adaptive Card from the bot in Microsoft Teams.
 
-<!-- FIXME: rephrase to be some along the lines of "send a card with choices" -->
-### Send a proactive adaptive card and wait for a response
+### Wait for user response
 
 <!-- FIXME: screenshot of card with responses -->
 
-In some scenarios, you'll want to wait for a user's response to an Adaptive Card before continuing.
-
-You can use the response from the recipient as dynamic content for later steps in the flow. For example, you could store their responses in a database.
-
-To wait for a response to an Adaptive Card:
+Adaptive Cards support collecting user input. In these scenarios, you'll want to wait for the user's response before the flow continues.
 
 1. In Power Automate, add the Microsoft Teams connector action **Post adaptive card and wait for a response** at the step where you want to send card in your flow.
 
@@ -127,6 +124,8 @@ To wait for a response to an Adaptive Card:
     :::image type="content" source="media/advanced-proactive-message/image4.png" alt-text="Post adaptive card and wait for response update message.":::
 
 When the flow is run, the recipient will receive the adaptive card from the bot in Microsoft Teams that they can then provide a response to.
+
+You can use the response from the recipient as dynamic content for later steps in the flow. For example, you could store their responses in a database.
 
 ## Send proactive messages to multiple recipients
 
