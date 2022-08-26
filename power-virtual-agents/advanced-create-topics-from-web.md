@@ -103,7 +103,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
     :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-wizard.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from.":::
 
-1. Repeat the previous step as many times as you need to add more URLs. We recommend that you add only a few at a time to keep the list of suggestions manageable.
+1. As needed, repeat the previous step to add more URLs. We recommend that you add only a few at a time to keep the resulting list of suggestions manageable.
 
 1. If you add a URL by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/advanced-create-topics-from-web/delete-suggested-topic.png" alt-text="Delete." border="false":::.
 
@@ -118,7 +118,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
     :::image type="content" source="media/advanced-create-topics-from-web/suggestion-tab.png" alt-text="Screenshot of the Suggested tab.":::
 
-1. Review these suggestions to see which ones you want to [add to your bot](#add-suggested-topics-to-an-existing-bot).
+1. For instructions on how to review, edit, accept, and reject suggested topics, see [Add suggested topics to an existing bot](#add-suggested-topics-to-an-existing-bot).
 
 ## Troubleshoot errors
 
