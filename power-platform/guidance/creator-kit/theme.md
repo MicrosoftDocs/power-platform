@@ -90,13 +90,13 @@ Set(
 );
 ```
 
-## Referencing from Creator Kit components
+## Referencing theme from Creator Kit components
 A theme can be passed to the `Theme` property of each component. 
 
 - **Canvas** components must reference the `AppTheme` variable.
 - **Code** components must reference the `AppThemeJson` variable.
 
-## Referencing from non-Creator Kit components
+## Referencing theme from native Power Apps components
 Any of the core components in canvas apps or custom pages can reference elements from the `AppTheme` object (cannot be Json formatted). These controls must reference the desired `palette` properties and be cast as a Color data type using the `ColorValue()` formula.
 
 Example `Button`.`Fill` Power Fx formula referencing the primary color of the theme:
