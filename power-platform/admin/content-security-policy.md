@@ -113,4 +113,93 @@ CSP can be configured without using UI by modifying the following organization s
 
 - [ContentSecurityPolicyReportUri](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyReportUri) controls whether reporting should be used. This is used by both model-driven and canvas apps. A valid string will send violation reports to the specified endpoint, using report-only mode if `IsContentSecurityPolicyEnabled`/`IsContentSecurityPolicyEnabledForCanvas` is turned off. An empty string disables reporting.
 
+## Enabling CSP without UI (applicable for on-premise environments without PPAC)
+Steps:
+- Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
+- Paste and execute the below script into the console.
+- To simply enable CSP, pass the default configuration - `enableFrameAncestors(["'self'"])`
+- As an example of enabling additional origins to embed the app - `enableFrameAncestors(["*.powerapps.com", "'self'", "abcxyz"])`
+
+```js
+async function enableFrameAncestors(sources) {
+     if (!Array.isArray(sources) || sources.some(s => typeof s !== 'string')) {
+        throw new Error('sources must be a string array');
+    }
+    const orgResponse = await fetch('/api/data/v9.1/organizations');
+    if (!orgResponse.ok) throw new Error('Failed to retrieve org info');
+    const orgs = await orgResponse.json();
+    const { organizationid, contentsecuritypolicyconfiguration, iscontentsecuritypolicyenabled } = orgs.value[0];
+    console.log(`Organization Id: ${organizationid}`);
+    console.log(`CSP Enabled?: ${iscontentsecuritypolicyenabled}`);
+    console.log(`CSP Config: ${contentsecuritypolicyconfiguration}`);
+    const orgProperty = prop => `/api/data/v9.1/organizations(${organizationid})/${prop}`;
+    console.log('Updating CSP configuration...')
+    const config = {
+        'Frame-Ancestor': {
+            sources: sources.map(source => ({ source })),
+        },
+    };
+    const cspConfigResponse = await fetch(orgProperty('contentsecuritypolicyconfiguration'), {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            value: JSON.stringify(config),
+        }),
+    });
+    if (!cspConfigResponse.ok) {
+        throw new Error('Failed to update csp configuration');
+    }
+    console.log('Successfully updated CSP configuration!')
+    if (iscontentsecuritypolicyenabled) {
+        console.log('CSP is already enabled! Skipping update.')
+        return;
+    }
+    console.log('Enabling CSP...')
+    const cspEnableResponse = await fetch(orgProperty('iscontentsecuritypolicyenabled'), {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            value: true,
+        }),
+    });
+    if (!cspEnableResponse.ok) {
+        throw new Error('Failed to enable csp');
+    }
+    console.log('Successfully enabled CSP!')
+}
+```
+### Disabling CSP
+Steps:
+- Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
+- Paste and execute the below script into the console.
+- To disable CSP, paste into the console: `disableCSP()`
+
+```js
+async function disableCSP() {
+    const orgResponse = await fetch('/api/data/v9.1/organizations');
+    if (!orgResponse.ok) throw new Error('Failed to retrieve org info');
+    const orgs = await orgResponse.json();
+    const { organizationid, iscontentsecuritypolicyenabled } = orgs.value[0];
+    console.log(`Organization Id: ${organizationid}`);
+    console.log(`CSP Enabled?: ${iscontentsecuritypolicyenabled}`);
+    const orgProperty = prop => `/api/data/v9.1/organizations(${organizationid})/${prop}`;
+    if (!iscontentsecuritypolicyenabled) {
+        console.log('CSP is already disabled! Skipping update.')
+        return;
+    }
+    console.log('Disabling CSP...')
+    const cspEnableResponse = await fetch(orgProperty('iscontentsecuritypolicyenabled'), {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            value: false,
+        }),
+    });
+    if (!cspEnableResponse.ok) {
+        throw new Error('Failed to disable csp');
+    }
+    console.log('Successfully disabled CSP!')
+}
+```
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
