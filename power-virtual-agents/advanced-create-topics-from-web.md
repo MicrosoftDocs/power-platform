@@ -82,6 +82,18 @@ You can enter more than one question (separated by new lines) in a first-column 
 
 :::image type="content" source="media/advanced-create-topics-from-web/multiple-triggers-pva.png" alt-text="Screenshot of all the questions as trigger phrases in the topic suggestion.":::
 
+## Single-turn and multi-turn topic suggestions
+
+When Power Virtual Agents extracts content, it generates single-turn or multi-turn topic suggestions, based on the structure of the document.
+
+A **single-turn topic** has a trigger phrase that contains a single answer. Topics such as these are typically generated if your online content has simple "question-and-answer" pairs, such as an FAQ page.
+
+A **multi-turn topic** contains multiple bot responses, and is often associated with multiple dialog branches. It provides a guided experience for your bot's users to navigate through a problem and reach a solution. These topics are typically generated when your online content is similar to a troubleshooting page or a reference manual or guidebook.
+
+The original content's structure or hierarchy (such as headings and subheadings) will [contribute to whether a multi-turn or single-turn topic is generated](#how-the-ai-creates-topic-suggestions).
+
+:::image type="content" source="media/advanced-create-topics-from-web/sample-multi-turn-topic.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion showing multiple branches from the original question.":::
+
 ## Extract content from webpages or online files
 
 First, you'll need to point to the webpages or online files from which you want to extract content.
@@ -127,18 +139,6 @@ The tool provides explicit feedback about errors so that you can understand and 
 :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-error-bar.png" alt-text="A red banner alert that says We ran into problems getting suggestions appears at the top of the page with a link to more details." border="false":::
 
 :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-error-detail.png" alt-text="A pop-up window that describes the errors encountered when trying to get suggestions from a web page." border="false":::
-
-## Single-turn and multi-turn topic suggestions
-
-When Power Virtual Agents extracts content, it generates single-turn or multi-turn topic suggestions, based on the structure of the document.
-
-A **single-turn topic** has a trigger phrase that contains a single answer. Topics such as these are typically generated if your online content has simple "question-and-answer" pairs, such as an FAQ page.
-
-A **multi-turn topic** contains multiple bot responses, and is often associated with multiple dialog branches. It provides a guided experience for your bot's users to navigate through a problem and reach a solution. These topics are typically generated when your online content is similar to a troubleshooting page or a reference manual or guidebook.
-
-The original content's structure or hierarchy (such as headings and subheadings) will [contribute to whether a multi-turn or single-turn topic is generated](#how-the-ai-creates-topic-suggestions).
-
-:::image type="content" source="media/advanced-create-topics-from-web/sample-multi-turn-topic.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion showing multiple branches from the original question.":::
 
 ### How the AI creates topic suggestions
 
