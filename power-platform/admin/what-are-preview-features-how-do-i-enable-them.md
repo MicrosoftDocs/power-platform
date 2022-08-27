@@ -21,7 +21,7 @@ search.app:
 
 Preview features are features that aren't complete, but are made available on a "preview" basis so customers can get early access and provide feedback. Preview features:  
   
-- Are subject to separate [Supplemental Terms of Use](/dynamics365/legal/supp-dynamics365-preview).  
+- Are subject to separate [Supplemental Terms of Use](https://go.microsoft.com/fwlink/p/?LinkId=511446).  
   
 - Are not supported by [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] for production use. Microsoft Support is, however, eager to get your feedback on the preview functionality, and might provide best effort support in certain cases. 
   
@@ -67,7 +67,7 @@ To enable a Preview feature, you must be an administrator.
   
 4. Select **System Settings**, and then select the **Previews** tab.  
   
-5. Read the [Supplemental Terms of Use](/dynamics365/legal/supp-dynamics365-preview), and if you agree, select the **I've read and agree to the license terms** check box.  
+5. Read the [Supplemental Terms of Use](https://go.microsoft.com/fwlink/p/?LinkId=511446), and if you agree, select the **I've read and agree to the license terms** check box.  
   
 6. For each Preview feature you want to enable, select **Yes**.  
   
