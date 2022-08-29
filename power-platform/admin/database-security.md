@@ -100,7 +100,7 @@ The following table describes which resources can be authored by each security r
 
 |Resource  |Environment Maker  |Environment Admin  |System Customizer  |System Admin  |
 |---------|---------|---------|---------|---------|
-|Canvas app     |X         |X         |-         |X         |
+|Canvas app     |X         |X         |X        |X         |
 |Cloud flow     |X (non-solution aware)         |X         |X (solution aware)         |X         |
 |Connector     |X         |X         |-         |X         |
 |Connection     |X         |X         |-         |X         |

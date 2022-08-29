@@ -48,10 +48,10 @@ To run the CoE CLI application, you'll need to install the components below.
 
    a. [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
-1. Azure CLI (version 2.24.0 or later) is required for user authentication and Azure Active Directory integration.
+1. Azure CLI (version 2.37.0 or later) is required for user authentication and Azure Active Directory integration.
 
-> [!Note]
-> The CoE CLI has been tested with Azure CLI version up to 2.34.1
+> [!NOTE]
+> The CoE CLI has been tested with Azure CLI version up to 2.38.0
 
    a. [Install Azure CLI](/cli/azure/install-azure-cli)
 
@@ -113,7 +113,7 @@ To run the CoE CLI application, you'll need the following software.
 
 ### Docker install steps
 
-> [!Note]
+> [!NOTE]
 > On some operating systems, you may need to use `sudo` before each of the Docker commands.
 
 1. Build docker image.

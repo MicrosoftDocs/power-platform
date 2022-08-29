@@ -40,7 +40,8 @@ ForAll( Sequence( 10 ), DateAdd( Today(), Value, Days ) )
 
 The number of records to generate is rounded down to the nearest whole number and must be in the range 0 to 50,000. Generating a table with zero records results in an _empty_ table.
 
-> [!NOTE] > **Sequence** is limited to 50,000 records.
+> [!NOTE] 
+> **Sequence** is limited to 50,000 records.
 
 ## Syntax
 

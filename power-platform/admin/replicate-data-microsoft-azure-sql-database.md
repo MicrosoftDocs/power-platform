@@ -3,7 +3,7 @@ title: "Replicate data to Azure SQL Database using Data Export Service | Microso
 description: Replicate data to Azure SQL Database using Data Export Service 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/01/2022
+ms.date: 07/14/2022
 ms.subservice: admin
 ms.author: sabinn
 author: sabinn-msft
@@ -578,12 +578,12 @@ EXEC SP_EXECUTESQL @sql;
 |------------|----------------|  
 |West US|13.64.148.9  |40.112.139.218|  
 |East US|20.228.153.81  |23.96.92.86|  
-|West Europe| No change |40.68.252.224|  
 |East Asia|No change  |104.208.84.217|  
 |Southeast Asia|20.205.153.14  |52.163.231.218|  
 |Central India| No change |20.198.113.107|  
 |South India| No change |104.211.204.18|  
-|North Europe| No change |52.169.117.212|  
+|West Europe| 40.68.244.253 |40.68.252.224|  
+|North Europe| 20.238.83.32 |52.169.117.212|  
 |Japan West| No change |104.214.144.93|  
 |Japan East| No change |20.89.138.246|  
 |Brazil South| No change |20.197.186.17|  
@@ -591,8 +591,9 @@ EXEC SP_EXECUTESQL @sql;
 |Australia East|20.213.58.3  |13.73.202.160|  
 |Canada Central|No change  |52.228.26.31|  
 |Canada East|52.229.109.91  |40.86.251.81|  
-|United Kingdom South|20.117.89.184  |51.140.71.166|  
 |United Kingdom West|20.68.113.18  |51.141.44.218|  
+|United Kingdom South|20.117.89.184  |51.140.71.166|  
+
   
 > [!NOTE]
 > North America customers should add IP addresses to an approved list for both East US and West US.

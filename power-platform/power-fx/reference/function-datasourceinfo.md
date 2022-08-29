@@ -26,7 +26,7 @@ Provides information about a [data source](/power-apps/maker/canvas-apps/working
 
 Data sources can provide a wealth of information to optimize the user experience.
 
-You can use [column](/power-apps/maker/canvas-apps/working-with-tables.md#columns)-level information to validate user input and provide immediate feedback to the user before using the **[Patch](function-patch.md)** function. The **[Validate](function-validate.md)** function uses this same information.
+You can use [column](/power-apps/maker/canvas-apps/working-with-tables#columns)-level information to validate user input and provide immediate feedback to the user before using the **[Patch](function-patch.md)** function. The **[Validate](function-validate.md)** function uses this same information.
 
 You can use information at the data-source level, for example, to disable or hide **Edit** and **New** buttons for users who don't have permissions to edit and create [records](/power-apps/maker/canvas-apps/working-with-tables#records).
 
@@ -63,7 +63,8 @@ You can also use **DataSourceInfo** to obtain information about a data source as
 | **DataSourceInfo.EditPermission**   | Boolean     | Does the current user have permission to edit records in this data source? If not set by the data source, returns **true**.   |
 | **DataSourceInfo.ReadPermission**   | Boolean     | Does the current user have permission to read records in this data source? If not set by the data source, returns **true**.   |
 
-> [!NOTE] > **DataSourceInfo** returns _true_ if it cannot determine whether the current user has the requested permission. Permissions will be checked again by the server when the actual operation is carried out and an error is displayed if it was not allowed. At this time, permissions checking with **DataSourceInfo** is only possible when using Microsoft Dataverse.
+> [!NOTE] 
+> **DataSourceInfo** returns _true_ if it cannot determine whether the current user has the requested permission. Permissions will be checked again by the server when the actual operation is carried out and an error is displayed if it was not allowed. At this time, permissions checking with **DataSourceInfo** is only possible when using Microsoft Dataverse.
 
 ## Syntax
 

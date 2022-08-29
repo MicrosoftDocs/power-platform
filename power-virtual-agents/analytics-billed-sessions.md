@@ -27,7 +27,7 @@ The consumption of the capacity isn't reported at the tenant level, but can be s
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Find the number of billed sessions for your bot
 

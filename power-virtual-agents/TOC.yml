@@ -76,12 +76,22 @@
          href: advanced-create-topics-from-csi.md
        - name: Add end-user authentication
          href: advanced-end-user-authentication.md
-       - name: Add actions using Power Automate
-         href: advanced-flow.md
        - name: Send proactive messages and cards in Microsoft Teams
          href: advanced-proactive-message.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
+       - name: Use Power Automate flows
+         items:
+          - name: Key Concepts - Flows
+            href: advanced-flow.md
+          - name: Create a flow
+            href: advanced-flow-create.md
+          - name: Call a flow as an action
+            href: advanced-use-flow.md
+          - name: Add input and output variables
+            href: advanced-flow-input-output.md
+          - name: Return a list of results
+            href: advanced-flow-list-of-results.md
     - name: Publish and integrate
       items:
        - name: Key concepts - Publish your bot

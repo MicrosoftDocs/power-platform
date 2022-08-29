@@ -1,7 +1,7 @@
 ---
 title: "Regional settings and data locations (contains video)"
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
-ms.date: 5/19/2021
+ms.date: 7/20/2022
 
 ms.topic: article
 author: iaanw
@@ -24,7 +24,7 @@ Power Virtual Agents supports multiple globalization scenarios, and lets you cho
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Supported locales and formats
 
@@ -72,7 +72,7 @@ Data will be stored in the United States if a bot author's tenant location isn't
 | South America                     | Brazil South (Sao Paulo State) &nbsp;(As there is only one region in Brazil, customer data in Brazil South may be replication to South Central US (Texas) for disaster recovery purposes) |
 | Switzerland                       | Switzerland North (Zurich), Switzerland west (Geneva)                                                                                                                                     |
 | United Kingdom                    | UK South (London), UK West (Cardiff, Durham)                                                                                                                                              |
-| United States                     | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA)                                                                                                         |
+| United States                     | East US (Virginia), South Central US (Texas), West US 2 (Washington)                                                                                                         |
 
 ## Customer data  
 

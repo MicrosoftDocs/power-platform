@@ -4,10 +4,10 @@ description: "Learn about the email service configurations supported by server-s
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/23/2022
-author: mduelae
+author: gattimassimo 
 ms.subservice: admin
 ms.author: magatti
-ms.reviewer: magatti
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

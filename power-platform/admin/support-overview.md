@@ -47,7 +47,7 @@ Microsoft provides support in English globally and provides additional languages
 
 - Microsoft provides all day, every day support for all Severity A issues and might provide all day, every day assistance for issues of other severity based on your support offering. 
 - For those issues that do not qualify for all day, every day support, Microsoft provides assistance during local business hours only.
-- For Finance and Operations, support times for some features can vary by region and can differ from the following hours listed.
+- For finance and operations apps, support times for some features can vary by region and can differ from the following hours listed.
 
 ### What hours are considered local business hours for support? 
 
@@ -107,7 +107,7 @@ We have designed our support plans to meet different business needs:
 
 - All support plans provide access to technical support for break-fix issues. 
 - Higher tiers of support plans offer access to advisory services, and other benefits like technical support on an all day, every day basis with faster initial response times. You can find more information about the existing support plans at [Support Plans](https://dynamics.microsoft.com/support/plans/).
-- Customer engagement Finance and Operations apps, Power Apps and Power Automate are covered by the subscription, professional direct, premier, and unified support plans.
+- Customer engagement finance and operations apps, Power Apps and Power Automate are covered by the subscription, professional direct, premier, and unified support plans.
 
 ### What's the difference between technical support and advisory services?
 
@@ -151,7 +151,7 @@ Public preview and/or beta services may be supported through our [forums](https:
 |Service  |Support portal  |
 |---------|---------|
 |Customer engagement apps and AI apps including mixed reality apps and Insights apps   |[Power Platform admin center](https://admin.powerplatform.microsoft.com)         |
-|Finance and Operations (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
+|finance and operations apps (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
 |Dynamics 365 Business Central      | Support is provided through partners only. Contact your Cloud Solution Provider (CSP) for assistance.        |
 |**Product**    |     |
 |Dynamics   |<a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a><br /> or <br />  <a href="https://support.microsoft.com/premier">Premier Support</a>   |

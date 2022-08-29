@@ -1,11 +1,11 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 06/21/2022
+ms.date: 07/26/2022
 ms.topic: conceptual
-author: cpdSeattle
+author: MicroSri
 ms.subservice: admin
-ms.author: camdebay
+ms.author: sriknair
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -170,6 +170,8 @@ Notifications for capacity approaching storage limits will be triggered when any
 - Recover an environment (requires minimum 1GB capacity available)
 - Add Dataverse database to an environment
 
+> [!NOTE]
+> The storage driven capacity model calculation of these thresholds also considers the overflow usage allowed in the storage driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, overflow usage has been taken into consideration to reduce the number of emails a tenant admin receives.
 
 These notifications are sent out to tenant admins on a weekly basis. At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. All tenant admins for a tenant will automatically receive these notifications.
 

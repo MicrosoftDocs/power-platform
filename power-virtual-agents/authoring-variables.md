@@ -24,17 +24,17 @@ Select the version of Power Virtual Agents you're using here:
 
 Save customers' responses in a bot conversation to variables and reuse them later in the conversation.
 
-For example, save a customer's name in a variable called `UserName` and the bot can address the customer by name as the conversation continues. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths. You can also feed variables to [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as input parameters, and save the output results from those actions.  
+For example, save a customer's name in a variable called `UserName` and the bot can address the customer by name as the conversation continues. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths. You can also [feed variables to Power Automate](advanced-flow-input-output.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as input parameters, and save the output results from those actions.  
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Entity and variable type
 
 Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to identify a specific type of information from a user's responses. A variable type is associated with the identified information when it's saved. The variable type is analogous with the entity.
 
-Each entity or variable type maps to a base type, as listed in the following table. The base type determines the operators that you can use when you construct a logical expression with the corresponding variable. It also determines whether you can feed a variable to a [flow](advanced-flow.md) or [Bot Framework skill](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as an input parameter.
+Each entity or variable type maps to a base type, as listed in the following table. The base type determines the operators that you can use when you construct a logical expression with the corresponding variable. It also determines whether you can [feed a variable to a flow](advanced-flow-input-output.md) or [Bot Framework skill](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as an input parameter.
 
 For example, a **boolean** base type maps to an operator "is equal to" with possible values being True or False. A **number** base type gives you numeric operators such as "is equal to," "is greater than," or "is greater than or equal to," and so on.
 
@@ -76,7 +76,7 @@ In the bot authoring canvas, add a question node. A variable is created automati
 
 1. Go to your bot's [**Topics page**](./authoring-create-edit-topics.md) and open the topic you want to add a variable to.
 
-1. Select the plus (**+**) icon, and then select **Ask a question**.
+1. Select **Add node** (**+**), and then select **Ask a question**.
 
    :::image type="content" source="media/authoring-variables/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 

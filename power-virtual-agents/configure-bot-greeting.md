@@ -41,7 +41,7 @@ You can also combine the customized greeting with [customization to the look and
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 > [!IMPORTANT]
 > You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
@@ -224,7 +224,7 @@ You can now test your bot by going to the webpage where you deployed your bot's 
 
 1. [Delete the message nodes](authoring-create-edit-topics.md#insert-nodes) on the **Greeting** topic.
 
-1. To automatically divert the bot to a user topic, select **+** to add a node, and then [Go to another topic](authoring-create-edit-topics.md#redirect-to-another-topic).
+1. To automatically divert the bot to a user topic, select **Add node** (**+**) to add a node, and then [Go to another topic](authoring-create-edit-topics.md#redirect-to-another-topic).
 
 1. In the flyout menu, select the user topic you created above.
 

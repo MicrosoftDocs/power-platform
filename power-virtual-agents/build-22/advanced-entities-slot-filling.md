@@ -17,13 +17,13 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working—even if that exact phrase isn't listed as a trigger phrase.
+A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability of the AI to understand a user's intent. For example, natural language understanding is involved when a user might say, "I tried to use my gift card, but it doesn't work", and the bot can route the user to the topic related to gift cards not working—even if that exact phrase isn't listed as a trigger phrase.
 
-One fundamental aspect of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name.
+One fundamental aspect of natural language understanding is to identify _entities_ in a user dialog. An entity can be viewed as an information unit that represents a certain type of real-world subject, like a phone number, zip code, city, or even a person's name.
 
 ## Prebuilt entities
 
-Out of the box, Power Virtual Agents comes with a set of prebuilt entities, which represent the most commonly used stereotype information in real-world dialogs, such as age, colors, numbers, and names.
+Power Virtual Agents comes with a set of prebuilt entities, which represent the most commonly used stereotype information in real-world dialogs, such as age, colors, numbers, and names.
 
 With the knowledge granted by entities, a bot can smartly recognize the relevant information from a user input and save it for later use.
 

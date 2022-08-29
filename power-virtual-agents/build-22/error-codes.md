@@ -22,27 +22,27 @@ If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.
 
 :::image type="content" source="media/error-codes/c1-error.png" alt-text="Bot error message displayed to bot makers.":::
 
-Errors may also appear in the [Topic Checker](authoring-topic-management.md#topic-errors) where you can easily locate and fix them.
+Errors may also appear in the [Topic Checker](authoring-topic-management.md#topic-errors), where you can easily locate and fix them.
 
 ## Error list
 
 > [!IMPORTANT]
-> The term _dialog_ is used in some error messages when it is referring to a _topic_.
+> The term _dialog_ is used in some error messages when referring to a _topic_.
 
 <!-- table best viewed and edited without word wrap -->
-| Error code                                                                | Description                                                      |
-| ------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| [ContentError](#contenterror)                                             | There is an error in the topic content.                          |
-| [FlowActionException](#flowactionexception)                               | An error occurred while executing a [flow][2].                   |
-| [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to a [flow][2] was malformed.                     |
-| [InvalidContent](#invalidcontent)                                         | Invalid content was added to the [code editor][5].               |
-| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | A node was executed too many times.                              |
-| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.             |
-| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to a disabled topic.                 |
-| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic is [redirecting][1] to another topic that longer exists. |
-| [SystemError](#systemerror)                                               | A system error occurred in Power Virtual Agents.                 |
-| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] is not valid.        |
-| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number has not been set for [telephony][4].              |
+| Error code                                                                | Description                                                         |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [ContentError](#contenterror)                                             | There's an error in the topic content.                              |
+| [FlowActionException](#flowactionexception)                               | An error occurred while executing a [flow][2].                      |
+| [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to a [flow][2] was malformed.                        |
+| [InvalidContent](#invalidcontent)                                         | Invalid content was added to the [code editor][5].                  |
+| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | A node was executed too many times.                                 |
+| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.                |
+| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to a disabled topic.                    |
+| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic is [redirecting][1] to another topic that no longer exists. |
+| [SystemError](#systemerror)                                               | A system error occurred in Power Virtual Agents.                    |
+| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] isn't valid.            |
+| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number hasn't been set for [telephony][4].                  |
 
 [1]: authoring-create-edit-topics.md#go-to-another-topic
 [2]: advanced-flow.md
@@ -54,9 +54,9 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 
 **Error message:** This error produces dynamic messages based on the context of the error.
 
-**Resolution:** This is a catch-all error for a variety of problems related to your bot's content. Please refer to the error message for more details.
+**Resolution:** This is a catch-all error for various problems related to your bot's content. Refer to the error message for more details.
 
-Common problems include, but are not limited to:
+Common problems include, but aren't limited to:
 
 - A node missing required properties.
 - Invalid YAML added with the [code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor).
@@ -81,7 +81,7 @@ Common problems include, but are not limited to:
 - "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) evaluated to type {ResolveType}, expected type {ExpectedType}."
 - "The flow {FlowName} ({FlowId}) failed to run with response code {ResponseCode}, error code: {FlowErrorCode}."
 
-**Resolution:** Check that the [base type](authoring-variables.md#variable-types) of any variables you are passing to the flow [match the parameter type](authoring-variables.md#use-variables-in-action-nodes).
+**Resolution:** Check that the [base type](authoring-variables.md#variable-types) of any variables you pass to the flow [match the parameter type](authoring-variables.md#use-variables-in-action-nodes).
 
 ### InvalidContent
 
@@ -93,7 +93,7 @@ Common problems include, but are not limited to:
 
 **Error message:** "Action {DialogId}.{TriggerId}.{ActionId} was executed more than {MaxTurnCount} times in a row. This indicates a cycle in execution of the dialog and hence dialog execution will be terminated."
 
-**Resolution:** Make sure the topic ends properly, and links to other topics that end properly, such as the **Escalate** system topic.
+**Resolution:** Make sure the topic ends properly and links to other topics that end properly, such as the **Escalate** system topic.
 
 ### LatestPublishedVersionNotFound
 
@@ -114,15 +114,16 @@ Common problems include, but are not limited to:
 **Resolution:** [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
 
 ### SystemError
+
 **Error message:** This error doesn't produce an error message
 
-**Resolution:** Contact customer the support for more details.
+**Resolution:** Contact customer support for more details.
 
 ### TelephonyHandoffInvalidPhoneNumber
 
 **Error message:** "The phone number {PhoneNumber} used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
 
-**Resolution:** Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format. For example, `+14251231234`.
+**Resolution:** Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format, for example; `+14251231234`.
 
 ### TelephonyHandoffMissingPhoneNumber
 

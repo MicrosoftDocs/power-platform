@@ -20,7 +20,7 @@ contributors:
 
 # Validate function in Power Apps
 
-The **Validate** function checks whether the value of a single [column](/power-apps/maker/canvas-apps/working-with-tables.md#columns) or a complete [record](/power-apps/maker/canvas-apps/working-with-tables#records) is valid for a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
+The **Validate** function checks whether the value of a single [column](/power-apps/maker/canvas-apps/working-with-tables#columns) or a complete [record](/power-apps/maker/canvas-apps/working-with-tables#records) is valid for a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
 ## Description
 

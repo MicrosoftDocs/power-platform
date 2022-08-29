@@ -41,7 +41,7 @@ Beginning February 2022, eligible customers can choose to deploy Power Virtual A
 
 Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework.  
 
-This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD. 
+This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD.
 
 For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
 
@@ -150,30 +150,31 @@ The Azure AD account management services are hosted on physical servers managed 
 
 You use a different set of URLs to access Power Virtual Agents US Government environments, as shown in the following table. The table also includes the commercial URLs for contextual reference.
 
-| Commercial version                                                                      | US Government version                                                                                                                                                                                             |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com)                  | [https://gcc.powerva.microsoft.us](https://gcc.powerva.microsoft.us) (GCC) </br></br>[https://high.powerva.microsoft.us](https://high.powerva.microsoft.us) (GCC High)                                            |
-| [https://flow.microsoft.com](https://flow.microsoft.com/)                               | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us/) (GCC)</br></br>[https://high.flow.microsoft.us](https://high.flow.microsoft.us/) (GCC High)                                                       |
-| [https://make.powerapps.com](https://make.powerapps.com/)                               | [https://make.gov.powerapps.us](https://make.gov.powerapps.us/) (GCC)</br></br>[https://make.high.powerapps.us](https://make.high.powerapps.us/) (GCC High)                                                       |
-| [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors)          | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors)</br></br>[https://high.flow.microsoft.us/connectors](https://high.flow.microsoft.us/connectors) (GCC High)                   |
-| [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)</br></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High) |
+| Commercial                        | US Government (GCC)                  | US Government (GCC High)              |
+| --------------------------------- | ------------------------------------ | ------------------------------------- |
+| web.powerva.microsoft.com         | gcc.powerva.microsoft.us             | high.powerva.microsoft.us             |
+| flow.microsoft.com                | gov.flow.microsoft.us                | high.flow.microsoft.us                |
+| make.powerapps.com                | make.gov.powerapps.us                | make.high.powerapps.us                |
+| flow.microsoft.com/connectors     | gov.flow.microsoft.us/connectors     | high.flow.microsoft.us/connectors     |
+| admin.powerplatform.microsoft.com | gcc.admin.powerplatform.microsoft.us | high.admin.powerplatform.microsoft.us |
+| admin.powerplatform.microsoft.com | gcc.api.powerva.microsoft.us         | high.api.powerva.microsoft.us         |
 
 For those customers that implement network restrictions, ensure access to the following domains is made available to your end users' access points:
 
 ### GCC customers
 
-- *.azure.net*
-- *.azure.us*
-- *.azure-apihub.us*
-- *.azureedge.net*
-- *.crm9.dynamics.com*
-- *.microsoft.com*
-- *.microsoft.us*
-- *.microsoftonline.com*
-- *.usgovcloudapi.net*
-- *.windows.net*
+- _.azure.net_
+- _.azure.us_
+- _.azure-apihub.us_
+- _.azureedge.net_
+- _.crm9.dynamics.com_
+- _.microsoft.com_
+- _.microsoft.us_
+- _.microsoftonline.com_
+- _.usgovcloudapi.net_
+- _.windows.net_
 
-Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for *AzureCloud.usgovtexas* and*AzureCloud.usgovvirginia* to enable access to Dataverse instances that users and administrators may create within your tenant.
+Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for _AzureCloud.usgovtexas_ and _AzureCloud.usgovvirginia_ to enable access to Dataverse instances that users and administrators may create within your tenant.
 
 ## Connectivity between Power Virtual Agents US Government and Public Azure Cloud services
 
@@ -183,7 +184,7 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to 
 
 - USGov Texas
 
-Refer to the [Azure IP Ranges and Service Tags - US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end users to have access to the service URLs.
+Refer to the [Azure IP Ranges and Service Tags - US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on _AzureCloud.usgovtexas_, and _AzureCloud.usgovvirginia_. Also note that these are the IP ranges required for your end users to have access to the service URLs.
 
 ## Power Virtual Agents US Government feature limitations
 

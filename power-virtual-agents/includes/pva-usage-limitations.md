@@ -1,1 +1,0 @@
-[Learn more about what you can do with Power Virtual Agents](../fundamentals-what-is-power-virtual-agents.md).

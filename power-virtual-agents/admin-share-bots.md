@@ -30,6 +30,7 @@ Bot owners and managers from [sharing a bot for collaboration](#share-a-bot-for-
 
 ### Prerequisites
 
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization.
 
 ### Share bot with security groups
@@ -226,7 +227,7 @@ To make sure users who chat with your bot can run [Power Automate](advanced-flow
 
 After you've shared a bot, everyone can edit the bot's topics.
 
-In the **Topics** list, you can see who's working on a topic under the **Editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email.
+In the **Topics** list, you can see who's working on a topic under the **Editing** column. You can select the person's icon to quickly chat with them in Teams or send them an email.
 
 This can help prevent conflicts if multiple people are working on the same topic.
 

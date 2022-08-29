@@ -27,7 +27,7 @@ This article is intended for system administrators or IT professionals who are f
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Review restrictions and validation for skills used in Power Virtual Agents](/azure/bot-service/skill-pva)
 
 > [!IMPORTANT]

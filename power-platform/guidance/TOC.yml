@@ -157,6 +157,8 @@
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
         - name: Using the Pipeline extension points
           href: coe/setup-almacceleratorforpowerplatform-hook-extensions.md
+        - name: Considerations when creating Azure App Registrations
+          href: coe/almaccelerator-app-registrations.md
         - name: Set up ALM Accelerator for Makers components
           href: coe/setup-almaccelerator.md
       - name: What's next - updating the CoE Starter Kit
@@ -347,7 +349,11 @@
     - name: Automation CoE starter kit (preview)
       href: automation-coe/automation-coe-starter-kit.md
     - name: Manage Power Automate for desktop on Windows
-      href: automation-coe/manage-pad-on-windows.md      
+      href: automation-coe/manage-pad-on-windows.md 
+    - name: Automation Maturity Model overview
+      href: automation-coe/automation-maturity-model-overview.md
+    - name: Automation Maturity Model details
+      href: automation-coe/automation-maturity-model-details.md
   - name: Real-world architecture examples
     items: 
     - name: Overview

@@ -2,7 +2,7 @@
 title: "Use managed properties (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "Managed properties help you define which of the managed solution components can be customized" # 115-145 characters including spaces. This abstract displays in the search result.
 ms.custom: ""
-ms.date: 07/01/2022
+ms.date: 07/15/2022
 ms.reviewer: "pehecke"
 
 ms.topic: "article"
@@ -57,6 +57,8 @@ The following table lists some managed properties for a subset of available solu
 |Mail Merge Template|Can be customized|`MailMergeTemplate.IsCustomizable.Value`|  
 |Dashboard|Can be customized|`SystemForm.IsCustomizable.Value`|  
 |Security Roles|Can be customized|`Role.IsCustomizable.Value`|  
+|System Form|Can be deleted|[CanBeDeleted](/power-apps/developer/data-platform/reference/entities/systemform#BKMK_CanBeDeleted).`Value`|  
+|System Query|Can be deleted|[CanBeDeleted](/power-apps/developer/data-platform/reference/entities/savedquery#BKMK_CanBeDeleted).`Value`|
 
 ### Workflow Is Custom Processing Step Allowed For Other Publishers 
 

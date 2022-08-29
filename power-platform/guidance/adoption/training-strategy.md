@@ -30,6 +30,7 @@ Check out:
 - [Microsoft Power Platform documentation](/power-platform)
 - [Business Applications communities](https://powerusers.microsoft.com)
 - [Find a local user group](https://www.powerappsug.com/home)
+- [Leverage Microsoft Learn in your organization](/learn/support/integrations) 
 
 ## Grow your pool of talented people
 

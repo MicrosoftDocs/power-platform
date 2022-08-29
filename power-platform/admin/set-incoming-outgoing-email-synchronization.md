@@ -1,13 +1,12 @@
 ---
 title: "Set incoming and outgoing email synchronization | MicrosoftDocs"
 description: You can set a synchronization method for user mailboxes and specify incoming and outgoing email messaging options.
-author: mduelae
-
+author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/12/2021
 ms.subservice: admin
-ms.author: mkaur
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:

@@ -1,16 +1,15 @@
 ---
 title: Requests limits and allocations | Microsoft Docs
 description: Requests limits and allocations
-author: cpdSeattle
+author: MicroSri
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/28/2022
 ms.subservice: admin
-ms.author: camdebay 
+ms.author: sriknair 
 ms.reviewer: jimholtz
 contributors: 
-  - viveke 
-  - snandi 
+  - ShawnNandiMSFT 
   - PriyaKodukula 
 search.audienceType: 
   - admin
@@ -183,7 +182,7 @@ The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-requ
 | Caller ID	| The unique identifier of the calling identity. This can be null or empty. |
 | Caller Type	| The type of caller identity. Applicable values are System, Non-Interactive/Application.   |
 | Resource Type	| The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate. |
-| Resource ID	| The unique resource identifier. Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty. |
+| Resource ID	| The unique resource identifier. Based on the Resource Type, this could be an app ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty. |
 | Meter Category	| The top level meter in this case Power Platform request.    |
 | Meter Subcategory  | 	The detailed classification of what generated the request. This can be Dataverse, Power Apps, or Power Automate. |
 | Usage Datetime | 	The date and time of when the usage was captured (UTC). |

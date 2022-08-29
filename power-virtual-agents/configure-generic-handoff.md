@@ -21,9 +21,9 @@ With some custom development, you can configure your bot to hand off conversatio
 
 ## Prerequisites
 
-- You need to have [built a bot using Power Virtual Agents](authoring-first-bot.md)  
-- You need an engagement hub that can interacting programmatically using APIs or SDK  
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- You need to have [built a bot using Power Virtual Agents](authoring-first-bot.md).
+- You need an engagement hub that can interact programmatically using APIs or SDK.
 
 > [!IMPORTANT]
 > Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs who are looking to integrate third-party engagement hubs with Power Virtual Agents.

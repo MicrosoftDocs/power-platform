@@ -1,10 +1,10 @@
 ---
 title: Manage Power Apps | Microsoft Docs
-description: How to manage Power Apps apps created in your organization.
+description: How to manage apps created using Power Apps in your organization.
 author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/25/2022
+ms.date: 07/18/2022
 ms.subservice: admin
 ms.author: alaug
 ms.reviewer: jimholtz
@@ -59,6 +59,8 @@ Power Apps respects the Canvas App ‘Share’ privilege in Dataverse. A user wi
 
 > [!NOTE]
 > The ability to granularly control the Canvas App Share privilege in a security role requires Dataverse in the environment where the privilege is to be changed. Power Apps does not discretely recognize the other Dataverse Canvas app entity privileges set for the environment. 
+>
+> System updates may remove customizations to [predefined security roles](database-security.md#predefined-security-roles), including Environment Maker. This means the removal of the canvas app share privilege may be reintroduced during a system update. Until the customization to the canvas app share privilege is preserved during system updates, the share privilege customization may need to be reapplied. 
 
 ### Surface your organization’s governance error content 
 If you specify governance error message content to appear in error messages, it will be included in the error message displayed when users observe they don’t have permission to share apps in an environment. See: [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
@@ -133,7 +135,7 @@ Get-AppQuarantineState -EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
 ## Conditional Access on individual apps (preview)
-In addition to respecting Conditional Access policies applied to the Power Apps service, it is possible to apply Azure AD Conditional Access policies to individual Power Apps apps. For example, an admin can apply a Conditional Access policy requiring Multi-factor authentication only on apps containing sensitive data. Power Apps leverages [Azure AD Conditional Access authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview) as the mechanism to target Conditional Access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
+In addition to respecting Conditional Access policies applied to the Power Apps service, it is possible to apply Azure AD Conditional Access policies to individual apps created using Power Apps. For example, an admin can apply a Conditional Access policy requiring Multi-factor authentication only on apps containing sensitive data. Power Apps leverages [Azure AD Conditional Access authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview) as the mechanism to target Conditional Access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
 
 > [!NOTE]
 > 1. Authentication contexts set on an app are not moved with apps in solutions and moved across environments. This allows different authentication contexts to be applied to apps in different environments. Also, as an app moves across environments via solutions the authentication context set in an environment is preserved. For example, if an authentication context is set on an app in a UAT environment, that authentication context is preserved. 
