@@ -91,7 +91,7 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 
 ### Trigger activity for an inactive Dataverse for Teams environment 
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments**, and then select the inactive Dataverse for Teams environment.
 
@@ -99,7 +99,7 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 
 ### Re-enable a disabled Dataverse for Teams environment
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments**, and then select the disabled Dataverse for Teams environment.
 
@@ -107,7 +107,7 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 
 ### Recover a deleted Dataverse for Teams environment
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments**, and then select **Recover deleted environments**.
 
@@ -122,7 +122,7 @@ Administrators can change the length of time Power Platform waits to disable ina
 > [!NOTE]
 > This view is not yet available. We will be rolling out this policy setting this Fall.
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Policies** > **Environment policies**.
 

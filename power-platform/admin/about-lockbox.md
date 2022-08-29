@@ -65,7 +65,7 @@ Power Platform applications and services store customer data in several Azure st
 
 Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. For the duration of the preview, enabling the tenant level policy will apply to all environments in the tenant. It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox. 
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
 2. Select **Policies** > **Lockbox policy (preview)**.
 
@@ -75,7 +75,7 @@ Global administrators or Power Platform administrators can create or update the 
 
 ## Review a lockbox request
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
 2. Select **Policies** > **Customer Lockbox (preview)**.
 
