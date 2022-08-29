@@ -27,31 +27,28 @@ To manage this record-level collaboration and to provide user access to shared r
 
 ### Share reassigned records with original owner
 
-When this setting is set to ‘Yes’, then record would be created in the POA table whenever a user assigns a record to another user or team. The original owner is automatically added as ‘Share’ to.
+When this setting is set to **Yes**, then record would be created in the POA table whenever a user assigns a record to another user or team. The original owner is automatically added as **Share**-to.
 
 :::image type="content" source="media/manage-principalobjectaccess-storage.png" alt-text="Manage PrincipalObjectAccess storage.":::
 
 ### Access teams
 When an access team is used for record collaboration, records are created in the POA table whenever a user is added to the access team. There are two types of access teams:
 
-- System-managed 
-  
-  These are created via templates and are embedded on a form to allow the user to easily manage the member list. The system automatically creates an access team for a record that is shared. For example, Account #1 has an access team that is different from Account #2. 
+- **System-managed**: These are created via templates and are embedded on a form to allow the user to easily manage the member list. The system automatically creates an access team for a record that is shared. For example, Account #1 has an access team that is different from Account #2. 
 
-- Manually added
-  
-  These are individual access teams where an admin/owner of the team manages the team members list. 
+- **Manually added**: These are individual access teams where an admin/owner of the team manages the team members list. 
 
 ### Direct sharing
 
 - When a user explicitly shares a record to another user, a record is created in the POA table.
 
-- Direct sharing also occurs with a record that has a cascade sharing relationship or on a table with a parent/child relationship.  When a parent record is shared to a user or team, the shared to user/team has access to all the cascaded or child records.  All these permissions to access the child records are created in the POA table. 
+- Direct sharing also occurs with a record that has a cascade sharing relationship or on a table with a parent/child relationship. When a parent record is shared to a user or team, the shared-to user or team has access to all the cascaded or child records. All these permissions to access the child records are created in the POA table. 
 
   **Example of table relationship**
-  A table can be set to have relationships with other tables (for example, Account to Case).  By default, the relationship of the ‘Reparent’ option is set to ‘Cascade All’. All related sub records are shared to the owner of the parent record.  
+  
+  A table can be set to have relationships with other tables (for example, Account to Case). By default, the relationship of the **Reparent** option is set to **Cascade All**. All related sub records are shared to the owner of the parent record.  
 
-  For example: User #1 owns Account #1.  User #1 shares Account #1 with User #2.  User #2 creates a Case #1 underneath Account #1. With the out-of-the-box reparent options, User #1 has access to the Case #1. All these user permissions are captured in the POA table.
+  For example: User #1 owns Account #1. User #1 shares Account #1 with User #2. User #2 creates a Case #1 underneath Account #1. With the out-of-the-box reparent options, User #1 has access to Case #1. All these user permissions are captured in the POA table.
 
 ### Indirect sharing
 When a user shares a record to a team, all members of the team are indirectly shared to.  
@@ -68,8 +65,8 @@ The RetrieveAccessOrigin API can be used to determine where a user or team’s a
   - Share only where needed.
   - Minimize the number of business units.
   - Make sure that users are placed in the appropriate business unit.
-  - Share to team to allow users from different business unit to access records.
-- When a record can be accessed by multiple access teams, for example a sales representative team  who can only read the record, and another Sales Manager team who has full read/write access, consider using different role-based forms for Sales Representative and Sales Manager. 
+  - Share to the team to allow users from different business units to access records.
+- When a record can be accessed by multiple access teams—for example, a sales representative team that can only read the record, and another sales manager team that has full read and write access—consider using different role-based forms for sales representative and sales manager. 
 - Manage the lifecycle of your access team members. Remove users who are no longer needed for the collaboration.
 - Remove all access team members when collaboration is over. 
 
