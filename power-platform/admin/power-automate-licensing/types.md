@@ -315,7 +315,7 @@ Global admins use the Microsoft 365 admin center to start these trials and assig
 
 Follow these steps to get started.
 
-1. Sign into [the Microsoft 365 admin center](https://admin.microsoft.com/).
+1. Sign in to [the Microsoft 365 admin center](https://admin.microsoft.com/).
 1. Go to **Purchase services** under the **Billing** section.
 1. Search for "Power Automate", and then select a plan.
 

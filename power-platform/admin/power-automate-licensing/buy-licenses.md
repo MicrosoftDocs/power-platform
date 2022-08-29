@@ -25,7 +25,7 @@ Power Platform admins can purchase licenses for Power Automate and then manage t
 
 You can purchase Power Automate plans from [Microsoft 365 admin center](https://admin.microsoft.com/).
 
-1. Sign into the Microsoft 365 admin center.
+1. Sign in to the Microsoft 365 admin center.
 1. Go to **Billing** > **Purchase services**, and then search for "Power Automate" to find all relevant plans.
 1. Select the plan that you want to buy.
 
@@ -39,7 +39,7 @@ You can purchase Power Automate plans from [Microsoft 365 admin center](https://
 
 You can purchase the **Power Automate unattended RPA Trial add-on** from the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
-1. Sign into the Microsoft 365 admin center.
+1. Sign in to the Microsoft 365 admin center.
 1. Go to **Billing** > **Purchase services**, and then search for "Power Automate" to find all relevant plans.
 1. Search for the **Power Automate unattended RPA Trial add-on**.
 
@@ -59,7 +59,7 @@ After the purchase completes, the environment admin must assign the available (p
 
 ### Assign per user licenses to user
 
-1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com/), select **Users** > **Active users**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/), select **Users** > **Active users**.
 
    ![Image displays active users selected.](../media/power-automate-licensing/active-users.png)
 
@@ -131,7 +131,7 @@ Consult this article to learn more about [capacity add-ons for Power Apps and Po
 
 Follow these steps to monitor license usage.
 
-1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com/).
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 1. Go to **Billing** > **Licenses** to see all licenses that are assigned or available.
 
@@ -193,7 +193,7 @@ Power Automate allows you to create data groups for business and non-business da
 
 ### What is my license?
 
-1. Sign into [Power Automate](https://powerautomate.com/).
+1. Sign in to [Power Automate](https://powerautomate.com/).
 2. Select your profile picture in the top right corner of the screen.
 3. Select  **View account**.
 4. Select the  **View** on the **Subscriptions**  tile.
