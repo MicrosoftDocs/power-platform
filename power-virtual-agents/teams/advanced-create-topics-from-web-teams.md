@@ -82,6 +82,18 @@ You can enter more than one question (separated by new lines) in a first-column 
 
 :::image type="content" source="../media/advanced-create-topics-from-web/multiple-triggers-pva.png" alt-text="Screenshot of all the questions as trigger phrases in the topic suggestion.":::
 
+## Single-turn and multi-turn topic suggestions
+
+When Power Virtual Agents extracts content, it generates single-turn or multi-turn topic suggestions, based on the structure of the document.
+
+A **single-turn topic** has a trigger phrase that contains a single answer. Topics such as these are typically generated if your online content has simple "question-and-answer" pairs, such as an FAQ page.
+
+A **multi-turn topic** contains multiple bot responses, and is often associated with multiple dialog branches. It provides a guided experience for your bot's users to navigate through a problem and reach a solution. These topics are typically generated when your online content is similar to a troubleshooting page or a reference manual or guidebook.
+
+The original content's structure or hierarchy (such as headings and subheadings) will [contribute to whether a multi-turn or single-turn topic is generated](#how-the-ai-creates-topic-suggestions).
+
+:::image type="content" source="../media/advanced-create-topics-from-web/sample-multi-turn-topic.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion showing multiple branches from the original question.":::
+
 ## Extract content from webpages or online files
 
 First, you'll need to point to the webpages or online files from which you want to extract content.
@@ -90,24 +102,26 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. Select **Topics** on the side pane.
 
-   :::image type="content" source="../media/advanced-create-topics-from-web/menu-topics.png" alt-text="Screenshot of the Topics menu item on the side pane." border="false":::
+    :::image type="content" source="../media/advanced-create-topics-from-web/menu-topics.png" alt-text="Screenshot of the Topics menu item on the side pane." border="false":::
 
 1. Select **Suggest topics**.
 
     :::image type="content" source="../media/advanced-create-topics-from-web/suggest-topics-button.png" alt-text="Screenshot of the Suggest topics button." border="false":::
 
-1. Enter a URL for a [supported webpage or online file](#supported-content) from which you want to extract content, and then select **Add**.
+1. Enter a URL for a [supported webpage or online file](#supported-content) from which you want to extract content, and then select **Add**. This queues up content for extraction in a later step.
 
     > [!IMPORTANT]
     > When using an online file, you must provide the full URL to the location of the file, including the file extension. For example `https://www.contoso.com/support.pdf`.
 
     :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-wizard.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from.":::
 
-1. Repeat the previous step as many times as you need to add more URLs. We recommend that you add only a few at a time to keep the list of suggestions manageable.
+1. As needed, repeat the previous step to add more URLs. We recommend that you add only a few at a time to keep the resulting list of suggestions manageable.
 
-1. If you add a URL by mistake, you can remove it by selecting **Delete** :::image type="content" source="../media/advanced-create-topics-from-web/delete-suggested-topic.png" alt-text="Delete." border="false":::.
+1. If you add a URL by mistake, you can remove it by selecting **Delete**.
 
-1. When you're done adding URLs to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
+    :::image type="content" source="../media/advanced-create-topics-from-web/delete-content.png" alt-text="Screenshot of the delete button.":::
+
+1. When you're done adding URLs to webpages and/or online files, select **Start**. The extraction process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
     :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
 
@@ -127,18 +141,6 @@ The tool provides explicit feedback about errors so that you can understand and 
 :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-error-bar.png" alt-text="A red banner alert that says We ran into problems getting suggestions appears at the top of the page with a link to more details." border="false":::
 
 :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-error-detail.png" alt-text="A pop-up window that describes the errors encountered when trying to get suggestions from a web page." border="false":::
-
-## Single-turn and multi-turn topic suggestions
-
-When Power Virtual Agents extracts content, it generates single-turn or multi-turn topic suggestions, based on the structure of the document.
-
-A **single-turn topic** has a trigger phrase that contains a single answer. Topics such as these are typically generated if your online content has simple "question-and-answer" pairs, such as an FAQ page.
-
-A **multi-turn topic** contains multiple bot responses, and is often associated with multiple dialog branches. It provides a guided experience for your bot's users to navigate through a problem and reach a solution. These topics are typically generated when your online content is similar to a troubleshooting page or a reference manual or guidebook.
-
-The original content's structure or hierarchy (such as headings and subheadings) will [contribute to whether a multi-turn or single-turn topic is generated](#how-the-ai-creates-topic-suggestions).
-
-:::image type="content" source="../media/advanced-create-topics-from-web/sample-multi-turn-topic.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion showing multiple branches from the original question.":::
 
 ### How the AI creates topic suggestions
 
