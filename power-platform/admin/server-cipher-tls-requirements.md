@@ -18,7 +18,7 @@ search.app:
 ---
 # Server cipher suites and TLS requirements
 
-A [cipher suite](/windows/win32/secauthn/cipher-suites-in-schannel) is a set of cryptographic algorithms. This is used to encrypt messages between clients/servers and other servers.  
+A [cipher suite](/windows/win32/secauthn/cipher-suites-in-schannel) is a set of cryptographic algorithms. This is used to encrypt messages between clients/servers and other servers. Dataverse is using the latest **TLS 1.2 cipher suites as approved by Microsoft Crypto Board.** 
 
 Before a secure connection is established, the protocol and cipher are negotiated between server and client based on availability on both sides. 
 
@@ -44,8 +44,9 @@ To comply with our security policy for a secure connection, your server must hav
 
    > [!IMPORTANT]
    > Older TLS 1.0 & 1.1 and cipher suites, (for example TLS_RSA) have been deprecated; see the [announcement](../important-changes-coming.md#tls-rsa-cipher-suites-are-deprecated).
-   > 
    > Your servers must have the above security protocol to continue running the Dataverse services.
+   > 
+   > **TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 and TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384** may show up as weak when you performed a SSL report test. This is due to known attacks toward OpenSSL implementation. Dataverse is using Windows implementation that is not based on OpenSSL and therefore it's not vulnerable. 
 
    You may either upgrade the [Windows version](/windows/win32/secauthn/cipher-suites-in-schannel) or update the [Windows TLS registry](/windows-server/security/tls/tls-registry-settings) to make sure that your server endpoint supports one of these ciphers.
 
