@@ -29,6 +29,7 @@ Plan|Description
 Power Automate per user plan|This plan provides a user with rights to run an unlimited number of flows (within service limits) with the full capabilities of Power Automate, including [standard connectors](https://preview.flow.microsoft.com/connectors/?filter=&category=standard),[premium connectors](#premium-connectors),[business process flows](#business-process-flows), [custom connectors](#custom-connectors),[on-premises gateways](#on-premises-gateway) based on their unique needs for a monthly fixed cost for each user.
 Power Automate per user with attended RPA plan|This plan spans legacy and modern applications, allowing makers to create unlimited flows for API-based automation and automate legacy applications with desktop flows [through Robotic Process Automation (RPA)](#robotic-process-automation) and AI. This plan includes all Power Automate per user plan capabilities and the ability for users to run an attended RPA bot on their workstation. Additionally, this plan includes access to [AI Builder capacity](#ai-builder-credits), supporting scenarios like forms processing, object detection, prediction, text classification, and recognition. This plan can be purchased for a monthly fixed cost for each user.
 Power Automate per flow plan|  With this plan, organizations can implement flows with reserved capacity that serve a team, a department, or an entire organization without having to license each user separately. This plan starts with a fixed monthly cost for five active flows.There is a monthly fee for each additional active flow (beyond the five flows that are included in the base fee).
+Power Automate Pay-as-you-go plan(preview)| With this plan, organizations can get started building flows without any license commitment or upfront purchasing and use an Azure subscription to only pay when the flows are run. [Power Automate Pay-as-you-go meters](https://docs.microsoft.com/en-us/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview) 
 Power Automate P1 and P2 plans (grand fathered)| These plans are no longer available for purchase nor via auto-renewal after December 31, 2020. Organizations with these plan licenses with renewals that are due on or after January 1, 2021 need to transition to either the Power Automate per user or per flow plan or to the Power Apps per user or per app plan to continue using the Microsoft Power Platform services. Customers with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Contact your Microsoft account representative for more information or [purchase licenses](https://flow.microsoft.com/pricing/?ef_id=dd65eaf79fda13e945118bbef5cc361a:G:s&amp;OCID=AID2200054_SEM_dd65eaf79fda13e945118bbef5cc361a:G:s&amp;msclkid=dd65eaf79fda13e945118bbef5cc361a).
 
 ## Seeded plans
@@ -67,17 +68,6 @@ Here's a chart that lays out the limits that are associated with the different l
 1. Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, and Dynamics 365 Customer Engagement plan.
 1. In Dataverse for Teams environments (included in [select Office licenses)](../powerapps-flow-licensing-faq.md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-power-virtual-agents-capabilities-with-teams) customers can use custom connectors built on Azure and Dataverse capabilities.
 
-## Transition period
-
-All customers are in a transition period. That means that enforcement isn't strict and limits are higher. The transition period ends after Power Platform admin center reports are generally available. Organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
-
-Here are a few things to be aware of during the transition period.
-
-1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Requests limits and allocations](../api-request-limits-allocations.md) to understand both plan limits and transition period limits. 
-1. These transition period limits are applied at the flow level during transition period. Additionally, a separate per user level limit of 1M actions is applied during transition period to ensure users do not go above 1M actions across all their flow runs in a day. Once the transition period ends, the actual limits will be applied at user level for per user plans and flow level for per flow plan.
-1. Since limits are more generous during the transition period, [stacking of user licenses isn't supported](../api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
-1. Power Platform requests capacity add-on packs are not assignable to the users or flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
-1. Seeded license users can only use flows within the context of the app. See [the seeded plans](#seeded-plans) section to learn more. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
 
 ## License entitlements
 
@@ -129,6 +119,18 @@ To help ensure service levels, availability and quality, there are limits to the
 <!--todo: Create a table to replace this image-->
 
 ![List that displays license limits](../media/power-automate-licensing/license-limits.png)
+
+## Transition period
+
+All customers are in a transition period. That means that enforcement isn't strict and limits are higher. The transition period ends after [Power Platform admin center reports](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) are generally available. Organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
+
+Here are a few things to be aware of during the transition period.
+
+1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Requests limits and allocations](../api-request-limits-allocations.md) to understand both plan limits and transition period limits. 
+1. These transition period limits are applied at the flow level during transition period. Additionally, a separate per user level limit of 1M actions is applied during transition period to ensure users do not go above 1M actions across all their flow runs in a day. Once the transition period ends, the actual limits will be applied at user level for per user plans and flow level for per flow plan.
+1. Since limits are more generous during the transition period, [stacking of user licenses isn't supported](../api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
+1. Power Platform requests capacity add-on packs are not assignable to the users or flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
+1. Seeded license users can only use flows within the context of the app. See [the seeded plans](#seeded-plans) section to learn more. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
 
 ### FAQs
 
