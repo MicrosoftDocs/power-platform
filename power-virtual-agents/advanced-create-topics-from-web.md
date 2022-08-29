@@ -108,7 +108,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
     :::image type="content" source="media/advanced-create-topics-from-web/suggest-topics-button.png" alt-text="Screenshot of the Suggest topics button." border="false":::
 
-1. Enter a URL for a [supported webpage or online file](#supported-content) from which you want to extract content, and then select **Add**.
+1. Enter a URL for a [supported webpage or online file](#supported-content) from which you want to extract content, and then select **Add**. This queues up content for extraction in a later step.
 
     > [!IMPORTANT]
     > When using an online file, you must provide the full URL to the location of the file, including the file extension. For example `https://www.contoso.com/support.pdf`.
@@ -117,9 +117,11 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. As needed, repeat the previous step to add more URLs. We recommend that you add only a few at a time to keep the resulting list of suggestions manageable.
 
-1. If you add a URL by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/advanced-create-topics-from-web/delete-suggested-topic.png" alt-text="Delete." border="false":::.
+1. If you add a URL by mistake, you can remove it by selecting **Delete**.
 
-1. When you're done adding URLs to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
+    :::image type="content" source="media/advanced-create-topics-from-web/delete-content.png" alt-text="Screenshot of the delete button.":::
+
+1. When you're done adding URLs to webpages and/or online files, select **Start**. The extraction process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
     :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
 
