@@ -25,11 +25,11 @@ You can use content from existing webpages when creating a Power Virtual Agents 
 
 Rather than copying and pasting or manually re-creating this content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing online resources into your bot.
 
-The underlying capability identifies the structure and content on a webpage or online file, isolates content blocks that pertain to a support issue or question, and then classifies them into topics with corresponding [**Trigger phrase** and **Message** nodes](authoring-create-edit-topics.md) for each topic.
+The underlying capability identifies the structure and content on a webpage or online file, isolates content blocks that pertain to a support issue or question, and then classifies them into topics with corresponding [Trigger phrase and Message nodes](authoring-create-edit-topics.md) for each topic.
 
 There are three main steps to using the feature:
 
-1. [Select **Suggest topics** on the Topics page to extract content](#extract-content-from-webpages-or-online-files).
+1. [Select Suggest topics on the Topics page to extract content](#extract-content-from-webpages-or-online-files).
 1. [Add the suggested topics to your bot](#add-suggested-topics-to-an-existing-bot).
 1. [Enable the suggested topics](#enable-topics-in-your-bot).
 
