@@ -27,7 +27,7 @@ To manage this record-level collaboration and to provide user access to shared r
 
 ### Share reassigned records with original owner
 
-When this setting is set to **Yes**, then record would be created in the POA table whenever a user assigns a record to another user or team. The original owner is automatically added as **Share**-to.
+When this setting is set to **Yes**, then record would be created in the POA table whenever a user assigns a record to another user or team. The original owner is automatically added as **Share** to.
 
 :::image type="content" source="media/manage-principalobjectaccess-storage.png" alt-text="Manage PrincipalObjectAccess storage.":::
 
@@ -46,7 +46,7 @@ When an access team is used for record collaboration, records are created in the
 
   **Example of table relationship**
   
-  A table can be set to have relationships with other tables (for example, Account to Case). By default, the relationship of the **Reparent** option is set to **Cascade All**. All related sub records are shared to the owner of the parent record.  
+  A table can be set to have relationships with other tables (for example, Account to Case). By default, the relationship of the **Reparent** option is set to **Cascade All**. All related subrecords are shared to the owner of the parent record.  
 
   For example: User #1 owns Account #1. User #1 shares Account #1 with User #2. User #2 creates a Case #1 underneath Account #1. With the out-of-the-box reparent options, User #1 has access to Case #1. All these user permissions are captured in the POA table.
 
