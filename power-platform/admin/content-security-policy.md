@@ -44,7 +44,7 @@ To configure CSP, navigate to [PPAC](https://admin.powerplatform.microsoft.com) 
 
 ![Content security policy default settings](media/csp-default-settings.png "Content security policy default settings")
 
-The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. Enabling it requires an endpoint to be specified. Violation reports will be sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced).
+The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. Enabling it requires an endpoint to be specified. Violation reports will be sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced). See [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only) for more information.
 
 ![Enabling reporting endpoint](media/csp-reporting.png "Enabling reporting endpoint")
 
@@ -114,7 +114,7 @@ CSP can be configured without using UI by modifying the following organization s
 
 - [ContentSecurityPolicyConfigurationForCanvas](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfigurationForCanvas) controls the policy for canvas using the same process described in `ContentSecurityPolicyConfiguration` above.
 
-- [ContentSecurityPolicyReportUri](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyReportUri) controls whether reporting should be used. This is used by both model-driven and canvas apps. A valid string will send violation reports to the specified endpoint, using report-only mode if `IsContentSecurityPolicyEnabled`/`IsContentSecurityPolicyEnabledForCanvas` is turned off. An empty string disables reporting.
+- [ContentSecurityPolicyReportUri](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyReportUri) controls whether reporting should be used. This is used by both model-driven and canvas apps. A valid string will send violation reports to the specified endpoint, using report-only mode if `IsContentSecurityPolicyEnabled`/`IsContentSecurityPolicyEnabledForCanvas` is turned off. An empty string disables reporting. See [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only) for more information.
 
 ## Configuring CSP without UI
 Especially in environments without PPAC, such as on-premise, admins may want to configure CSP using scripts to directly modify settings.
