@@ -66,7 +66,7 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 
 1. For **Message**, enter the message you want to send.
 
-    :::image type="content" source="media/advanced-proactive-message/image1.png" alt-text="Post message action in Power Automate.":::
+    :::image type="content" source="media/advanced-proactive-message/proactive-message-node.png" alt-text="Post message action in Power Automate.":::
 
 When the flow is run, the recipient will receive the proactive message from the bot in Microsoft Teams.
 
@@ -75,11 +75,13 @@ When the flow is run, the recipient will receive the proactive message from the 
 > [!IMPORTANT]
 > This section details how to send _proactive_ Adaptive Cards with Power Automate flows. To learn how to send Adaptive Cards in a typical conversation flow, see [Add Adaptive Cards with Composer](advanced-bot-framework-composer-example1.md).
 
-<!-- FIXME: screenshot of informational card -->
-
 In addition to sending proactive messages, you can also send proactive Adaptive Cards.
 
+:::image type="content" source="media/advanced-proactive-message/proactive-card.png" alt-text="Screenshot of an adaptive card.":::
+
 Adaptive Cards are an open card exchange format enabling developers to exchange UI content in a common and consistent way. You can author Adaptive Cards by hand in JSON, or if you prefer a drag-and-drop interface, you can use the [Adaptive Cards Designer](https://adaptivecards.io/designer/).
+
+In this example, you'll send an order summary card for the user to review.
 
 1. In Power Automate, add the Microsoft Teams connector action **Post adaptive card in a chat or channel** at the step where you want to send card in your flow.
 
@@ -91,18 +93,72 @@ Adaptive Cards are an open card exchange format enabling developers to exchange 
 
 1. For **Recipient**, enter the recipient's name or email address. You can also use dynamic content if the recipient info comes from an earlier step in the flow.
 
-    <!-- FIXME: the weather card example (or any example really) can't be used without significant modification. -->
-1. For **Adaptive Card**, enter the template JSON for your card. See this [example JSON for a weather card](https://adaptivecards.io/samples/WeatherCompact.html).
+1. For **Adaptive Card**, enter the following template JSON:
 
-    :::image type="content" source="media/advanced-proactive-message/image2.png" alt-text="Post adaptive card action in Power Automate.":::
+    ```json
+    {
+        "type": "AdaptiveCard",
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "version": "1.5",
+        "body": [
+            {
+                "type": "TextBlock",
+                "text": "Order summary",
+                "wrap": true,
+                "style": "heading"
+            },
+            {
+                "type": "FactSet",
+                "facts": [
+                    {
+                        "title": "Name",
+                        "value": "John Doe"
+                    },
+                    {
+                        "title": "Phone number",
+                        "value": "(000) 000-0000"
+                    }
+                ]
+            },
+            {
+                "type": "Container",
+                "items": [
+                    {
+                        "type": "FactSet",
+                        "facts": [
+                            {
+                                "title": "1x",
+                                "value": "Steak"
+                            },
+                            {
+                                "title": "2x",
+                                "value": "Side Rice"
+                            },
+                            {
+                                "title": "1x",
+                                "value": "Soft Drink"
+                            }
+                        ],
+                        "spacing": "Small"
+                    }
+                ],
+                "spacing": "Small"
+            }
+        ]
+    }
+    ```
+
+    :::image type="content" source="media/advanced-proactive-message/adaptive-card-node.png" alt-text="Post adaptive card action in Power Automate.":::
 
 When the flow is run, the recipient will receive the Adaptive Card from the bot in Microsoft Teams.
 
 ### Wait for user response
 
-<!-- FIXME: screenshot of card with responses -->
-
 Adaptive Cards support collecting user input. In these scenarios, you'll want to wait for the user's response before the flow continues.
+
+:::image type="content" source="media/advanced-proactive-message/proactive-card-wait-for-response.png" alt-text="Screenshot of an adaptive card that contains actions for the user.":::
+
+In this example, you'll send an order confirmation card that allows the user to make changes before the order is submitted.
 
 1. In Power Automate, add the Microsoft Teams connector action **Post adaptive card and wait for a response** at the step where you want to send card in your flow.
 
@@ -110,8 +166,70 @@ Adaptive Cards support collecting user input. In these scenarios, you'll want to
 
 1. For **Post in**, choose **Chat with bot**.
 
-    <!-- FIXME: the weather card example (or any example really) can't be used without significant modification. -->
-1. For **Adaptive Card**, enter the template JSON for your card. See this [example JSON for an input form](https://adaptivecards.io/samples/InputForm.html).
+1. For **Message**, enter the following template JSON:
+
+    ```json
+    {
+        "type": "AdaptiveCard",
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "version": "1.0",
+        "body": [
+            {
+                "type": "TextBlock",
+                "text": "Order confirmation",
+                "wrap": true,
+                "style": "heading"
+            },
+            {
+                "type": "FactSet",
+                "facts": [
+                    {
+                        "title": "Name",
+                        "value": "John Doe"
+                    },
+                    {
+                        "title": "Phone number",
+                        "value": "(000) 000-0000"
+                    }
+                ]
+            },
+            {
+                "type": "Container",
+                "items": [
+                    {
+                        "type": "FactSet",
+                        "facts": [
+                            {
+                                "title": "1x",
+                                "value": "Steak"
+                            },
+                            {
+                                "title": "2x",
+                                "value": "Side Rice"
+                            },
+                            {
+                                "title": "1x",
+                                "value": "Soft Drink"
+                            }
+                        ],
+                        "spacing": "Small"
+                    }
+                ],
+                "spacing": "Small"
+            }
+        ],
+        "actions": [
+            {
+                "type": "Action.Execute",
+                "title": "Submit Order"
+            },
+            {
+                "type": "Action.Execute",
+                "title": "Edit Order",
+            }
+        ]
+    }
+    ```
 
 1. For **Update message**, enter the update message that the recipient will see after providing their response.
 
@@ -119,10 +237,7 @@ Adaptive Cards support collecting user input. In these scenarios, you'll want to
 
 1. For **Bot**, select the bot that you want the card to be sent from.
 
-    <!-- FIXME: why are these images split? -->
-    :::image type="content" source="media/advanced-proactive-message/image3.png" alt-text="Post adaptive card and wait for response action in Power Automate.":::
-
-    :::image type="content" source="media/advanced-proactive-message/image4.png" alt-text="Post adaptive card and wait for response update message.":::
+    :::image type="content" source="media/advanced-proactive-message/adaptive-card-wait-node.png" alt-text="Post adaptive card and wait for response action in Power Automate.":::
 
 When the flow is run, the recipient will receive the adaptive card from the bot in Microsoft Teams that they can then provide a response to.
 
@@ -163,7 +278,7 @@ In this example, the bot will send a reminder to the members of a team to comple
 
 1. For **Recipient**, select the dynamic content **User Principle Name** from the **List group members** action.
 
-    :::image type="content" source="media/advanced-proactive-message/image6.png" alt-text="Send to teammates example.":::
+    :::image type="content" source="media/advanced-proactive-message/send-to-teammates.png" alt-text="Send to teammates example.":::
 
 1. For **Message**, enter the message you want to send.
 
@@ -189,7 +304,7 @@ In this example, the bot will send a reminder to a security group to complete th
 
 1. For **Message**, enter the message you want to send.
 
-    :::image type="content" source="media/advanced-proactive-message/image7.png" alt-text="Send to a security group option.":::
+    :::image type="content" source="media/advanced-proactive-message/send-to-security-group.png" alt-text="Send to a security group option.":::
 
 When the flow runs, each user in the security group will receive the proactive message in a private chat with the bot.
 
@@ -199,23 +314,23 @@ Normally when sending a proactive message to multiple recipients, your bot will 
 
 1. In the **Apply to each** action, select the three horizontal dots (**. . .**) and then **Settings**.
 
-    :::image type="content" source="media/advanced-proactive-message/image8.png" alt-text="Settings under the more options menu.":::
+    :::image type="content" source="media/advanced-proactive-message/node-settings.png" alt-text="Settings under the more options menu.":::
 
 1. Turn on **Concurrency control** and set the degree of parallelism.
 
-    :::image type="content" source="media/advanced-proactive-message/image9.png" alt-text="Slider control for setting the level or concurrency.":::
+    :::image type="content" source="media/advanced-proactive-message/concurrency-control.png" alt-text="Slider control for setting the level or concurrency.":::
 
 ## Configure advanced options for proactive messages
 
 Power Virtual Agents allows you to control detail behavior on your bot under **Show advanced options** in the Microsoft Teams connector.
 
-:::image type="content" source="media/advanced-proactive-message/image10.png" alt-text="Expanded options pane in the connector.":::
+:::image type="content" source="media/advanced-proactive-message/advanced-options.png" alt-text="Expanded options pane in the connector.":::
 
 ### Label sent message as a notification
 
 **Label as notification** controls whether the message will have the text "Notification via" in front of the bot's name. Labeling the bot's response allows the recipient to identify the bot's response to their inquiry.
 
-:::image type="content" source="media/advanced-proactive-message/image11.png" alt-text="The setting shows Notification via bot name.":::
+:::image type="content" source="media/advanced-proactive-message/message-label.png" alt-text="The setting shows Notification via bot name.":::
 
 ### When the recipient is currently in an active chat with the bot
 
@@ -247,8 +362,8 @@ The **If bot not installed** box allows you to control the behavior:
 
 You can use the returned status code to define different follow-up behaviors in your flow. For example, you could specify that the flow should try again over a period of time or log a record about the failure.
 
-| Status code | Succeeded (boolean) | Description                                                                                            |
-| ----------- | ------------------- | ------------------------------------------------------------------------------------------------------ |
+| Status code | Succeeded (boolean) | Description                                                                                    |
+| ----------- | ------------------- | ---------------------------------------------------------------------------------------------- |
 | 200         | True                | Message is successfully delivered.                                                             |
 | 100         | False               | Message couldn't be delivered because the recipient doesn't have the bot installed.            |
 | 300         | False               | Message couldn't be delivered because the recipient is in an active conversation with the bot. |
