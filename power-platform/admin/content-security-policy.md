@@ -127,14 +127,18 @@ async function enableFrameAncestors(sources) {
     if (!Array.isArray(sources) || sources.some(s => typeof s !== 'string')) {
         throw new Error('sources must be a string array');
     }
+
     const orgResponse = await fetch(`${baseUrl}/api/data/v9.1/organizations`);
     if (!orgResponse.ok) throw new Error('Failed to retrieve org info');
     const orgs = await orgResponse.json();
     const { organizationid, contentsecuritypolicyconfiguration, iscontentsecuritypolicyenabled } = orgs.value[0];
+
     console.log(`Organization Id: ${organizationid}`);
     console.log(`CSP Enabled?: ${iscontentsecuritypolicyenabled}`);
     console.log(`CSP Config: ${contentsecuritypolicyconfiguration}`);
+
     const orgProperty = prop => `${baseUrl}/api/data/v9.1/organizations(${organizationid})/${prop}`;
+
     console.log('Updating CSP configuration...')
     const config = {
         'Frame-Ancestor': {
@@ -148,14 +152,17 @@ async function enableFrameAncestors(sources) {
             value: JSON.stringify(config),
         }),
     });
+
     if (!cspConfigResponse.ok) {
         throw new Error('Failed to update csp configuration');
     }
     console.log('Successfully updated CSP configuration!')
+
     if (iscontentsecuritypolicyenabled) {
         console.log('CSP is already enabled! Skipping update.')
         return;
     }
+
     console.log('Enabling CSP...')
     const cspEnableResponse = await fetch(orgProperty('iscontentsecuritypolicyenabled'), {
         method: 'PUT',
@@ -164,6 +171,7 @@ async function enableFrameAncestors(sources) {
             value: true,
         }),
     });
+
     if (!cspEnableResponse.ok) {
         throw new Error('Failed to enable csp');
     }
@@ -184,13 +192,17 @@ async function disableCSP() {
     if (!orgResponse.ok) throw new Error('Failed to retrieve org info');
     const orgs = await orgResponse.json();
     const { organizationid, iscontentsecuritypolicyenabled } = orgs.value[0];
+
     console.log(`Organization Id: ${organizationid}`);
     console.log(`CSP Enabled?: ${iscontentsecuritypolicyenabled}`);
+
     const orgProperty = prop => `${baseUrl}/api/data/v9.1/organizations(${organizationid})/${prop}`;
+
     if (!iscontentsecuritypolicyenabled) {
         console.log('CSP is already disabled! Skipping update.')
         return;
     }
+
     console.log('Disabling CSP...')
     const cspEnableResponse = await fetch(orgProperty('iscontentsecuritypolicyenabled'), {
         method: 'PUT',
@@ -199,6 +211,7 @@ async function disableCSP() {
             value: false,
         }),
     });
+
     if (!cspEnableResponse.ok) {
         throw new Error('Failed to disable csp');
     }
