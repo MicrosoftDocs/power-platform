@@ -43,7 +43,6 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 - [Learn how to use and create flows](advanced-flow.md).
 - [Publish your bot](publication-fundamentals-publish-channels.md).
 - [Add your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
-- Optionally work with your admin to [pre-pin and install your bot](/microsoftteams/teams-app-setup-policies).
 - [Getting started with Power Automate](/power-automate/getting-started).
 
 ## Known limitations
