@@ -116,7 +116,10 @@ CSP can be configured without using UI by modifying the following organization s
 
 - [ContentSecurityPolicyReportUri](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyReportUri) controls whether reporting should be used. This is used by both model-driven and canvas apps. A valid string will send violation reports to the specified endpoint, using report-only mode if `IsContentSecurityPolicyEnabled`/`IsContentSecurityPolicyEnabledForCanvas` is turned off. An empty string disables reporting.
 
-## Enabling CSP without UI (applicable for on-premise environments without PPAC)
+## Configuring CSP without UI
+Especially in environments without PPAC, such as on-premise, admins may want to configure CSP using scripts to directly modify settings.
+
+### Enabling CSP without UI
 Steps:
 - Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
 - Paste and execute the below script into the console.
@@ -181,7 +184,7 @@ async function enableFrameAncestors(sources) {
     console.log('Successfully enabled CSP!')
 }
 ```
-## Disabling CSP without UI
+### Disabling CSP without UI
 Steps:
 - Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
 - Paste and execute the below script into the console.
