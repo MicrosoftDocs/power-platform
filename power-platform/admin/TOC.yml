@@ -611,10 +611,10 @@
           href: free-storage-space.md  
         - name: Clean up AsyncOperationBase and WorkflowLogBase tables
           href: cleanup-asyncoperationbase-table.md
-        - name: Manage PrincipalObjectAccess storage
-          href: manage-principalobjectaccess-storage.md
       - name: Add storage capacity
         href: add-storage.md      
+      - name: Manage PrincipalObjectAccess storage
+        href: manage-principalobjectaccess-storage.md
       - name: Access storage with SAS token
         href: storage-sas-token.md 
     - name: Resources
