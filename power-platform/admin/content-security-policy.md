@@ -44,9 +44,13 @@ To configure CSP, navigate to [PPAC](https://admin.powerplatform.microsoft.com) 
 
 ![Content security policy default settings](media/csp-default-settings.png "Content security policy default settings")
 
+### Reporting
+
 The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. Enabling it requires an endpoint to be specified. Violation reports will be sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced). See [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only) for more information.
 
 ![Enabling reporting endpoint](media/csp-reporting.png "Enabling reporting endpoint")
+
+### Enforcement
 
 Enforcement of CSP is controlled independently for model-driven and canvas apps to provide granular control over policies. Use the Model-driven / Canvas pivot to modify the intended app type.
 
@@ -54,6 +58,8 @@ The "Enforce content security policy" toggle turns on the default policy for enf
 1. Enforce on a dev/test environment
 2. Enable report-only mode in production
 3. Enforce in production once no violations are reported
+
+### Configuring directives
 
 The final section is "Configure directives". This section allows you to control individual directives within the policy. Currently, only `frame-ancestors` can be customized.
 
