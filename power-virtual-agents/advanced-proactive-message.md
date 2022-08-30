@@ -56,15 +56,15 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 
 1. In Power Automate, add the Microsoft Teams connector action **Post message in a chat or channel** at the step where you want to send a proactive message in your flow.
 
-1. Set the **Post as** field to **Power Virtual Agents (Preview)**.
+1. For **Post as**, choose **Power Virtual Agents (Preview)**.
 
-1. Set the **Post in** field to **Chat with bot**.
+1. For **Post in**, choose **Chat with bot**.
 
-1. Select the bot that you want the message to be posted from.
+1. For **Bot**, select the bot that you want the message to be sent from.
 
-1. Provide the recipient's name or email address. You can also use dynamic content if the recipient info comes from an earlier step in the flow.
+1. For **Recipient**, enter the recipient's name or email address. You can also use dynamic content if the recipient info comes from an earlier step in the flow.
 
-1. Compose the message you want to send.
+1. For **Message**, enter the message you want to send.
 
     :::image type="content" source="media/advanced-proactive-message/image1.png" alt-text="Post message action in Power Automate.":::
 
@@ -83,15 +83,16 @@ Adaptive Cards are an open card exchange format enabling developers to exchange 
 
 1. In Power Automate, add the Microsoft Teams connector action **Post adaptive card in a chat or channel** at the step where you want to send card in your flow.
 
-1. Set the **Post as** field to **Power Virtual Agents (Preview)**.
+1. For **Post as**, choose **Power Virtual Agents (Preview)**.
 
-1. Set the **Post in** field to **Chat with bot**.
+1. For **Post in**, choose **Chat with bot**.
 
-1. Select the bot that you want the message to be posted from.
+1. For **Bot**, select the bot that you want the message to be sent from.
 
-1. Provide the recipient's name or email address. You can also use dynamic content if the recipient info comes from an earlier step in the flow.
+1. For **Recipient**, enter the recipient's name or email address. You can also use dynamic content if the recipient info comes from an earlier step in the flow.
 
-1. Provide the Adaptive Card JSON. See this [example JSON for a weather card](https://adaptivecards.io/samples/WeatherCompact.html).
+    <!-- FIXME: the weather card example (or any example really) can't be used without significant modification. -->
+1. For **Adaptive Card**, enter the template JSON for your card. See this [example JSON for a weather card](https://adaptivecards.io/samples/WeatherCompact.html).
 
     :::image type="content" source="media/advanced-proactive-message/image2.png" alt-text="Post adaptive card action in Power Automate.":::
 
@@ -105,17 +106,18 @@ Adaptive Cards support collecting user input. In these scenarios, you'll want to
 
 1. In Power Automate, add the Microsoft Teams connector action **Post adaptive card and wait for a response** at the step where you want to send card in your flow.
 
-1. Set the **Post as** field to **Power Virtual Agents (Preview)**.
+1. For **Post as**, choose **Power Virtual Agents (Preview)**.
 
-1. Set the **Post in** field to **Chat with bot**.
+1. For **Post in**, choose **Chat with bot**.
 
-1. Provide the Adaptive Card JSON. See this [example JSON for an input form](https://adaptivecards.io/samples/InputForm.html).
+    <!-- FIXME: the weather card example (or any example really) can't be used without significant modification. -->
+1. For **Adaptive Card**, enter the template JSON for your card. See this [example JSON for an input form](https://adaptivecards.io/samples/InputForm.html).
 
-1. Provide the update message that the recipient will see after providing their response.
+1. For **Update message**, enter the update message that the recipient will see after providing their response.
 
-1. Provide the recipient's name or email address. You can also use dynamic content if the recipient info comes from an earlier step in the flow.
+1. For **Recipient**, enter the recipient's name or email address. You can also use dynamic content if the recipient info comes from an earlier step in the flow.
 
-1. Select the bot that you want the card to be posted from.
+1. For **Bot**, select the bot that you want the card to be sent from.
 
     <!-- FIXME: why are these images split? -->
     :::image type="content" source="media/advanced-proactive-message/image3.png" alt-text="Post adaptive card and wait for response action in Power Automate.":::
@@ -143,21 +145,27 @@ In this example, the bot will send a reminder to the members of a team to comple
 
 1. Add the **Microsoft Teams** connector and select the **Get a team** action in your Power Automate flow.
 
-1. Select the team with the members that you want to send the message to.
+1. For **Team**, choose the team with the members that you want to send the message to.
 
 1. Add the **Office 365 Groups** connector and select the **List group members** action.
 
-1. In the **Group Id** field, select **Custom value**.
+1. For **Group Id**, select **Custom value**.
 
 1. Select **Team ID** from the dynamic content of the **Get a team** action.
 
 1. Add the **Microsoft Teams** connector and select the **Post message in a chat or channel** action.
 
-1. Select the bot that you want send the message.
+1. For **Post as**, choose **Power Virtual Agents (Preview)**.
 
-1. At the **Recipient** field, select the dynamic content **User Principle Name** from the **List group members** action.
+1. For **Post in**, choose **Chat with bot**.
+
+1. For **Bot**, select the bot that you want send the message.
+
+1. For **Recipient**, select the dynamic content **User Principle Name** from the **List group members** action.
 
     :::image type="content" source="media/advanced-proactive-message/image6.png" alt-text="Send to teammates example.":::
+
+1. For **Message**, enter the message you want to send.
 
 When the flow runs, each user in the team will receive the proactive message in a private chat with the bot.
 
@@ -167,13 +175,19 @@ In this example, the bot will send a reminder to a security group to complete th
 
 1. Add the **Azure AD** connector and select the **Get group members** action in your Power Automate flow.
 
-1. Provide the Security group's GUID in the **Group Id** field.
+1. For **Group Id**, enter the security group's GUID.
 
 1. Add the **Microsoft Teams** connector and select the **Post message in a chat or channel** action.
 
-1. Select the bot that you want send the message.
+1. For **Post as**, choose **Power Virtual Agents (Preview)**.
 
-1. At the **Recipient** field, select the dynamic content **Group Members User Principle Name** from the **Get group members** action.
+1. For **Post in**, choose **Chat with bot**.
+
+1. For **Bot**, select the bot that you want send the message.
+
+1. For **Recipient**, select the dynamic content **Group Members User Principle Name** from the **Get group members** action.
+
+1. For **Message**, enter the message you want to send.
 
     :::image type="content" source="media/advanced-proactive-message/image7.png" alt-text="Send to a security group option.":::
 
@@ -183,7 +197,7 @@ When the flow runs, each user in the security group will receive the proactive m
 
 Normally when sending a proactive message to multiple recipients, your bot will send one message after another. However in some situations it may be more ideal to send the message to multiple recipients at the same time.
 
-1. Select **. . .** from the **Apply to each** control and select **Settings**.
+1. In the **Apply to each** action, select the three horizontal dots (**. . .**) and then **Settings**.
 
     :::image type="content" source="media/advanced-proactive-message/image8.png" alt-text="Settings under the more options menu.":::
 
@@ -199,7 +213,7 @@ Power Virtual Agents allows you to control detail behavior on your bot under **S
 
 ### Label sent message as a notification
 
-**Label as notification** controls whether the message will have the text **Notification via** in front of the bot's name. Labeling the bot's response allows the recipient to identify the bot's response to their inquiry.
+**Label as notification** controls whether the message will have the text "Notification via" in front of the bot's name. Labeling the bot's response allows the recipient to identify the bot's response to their inquiry.
 
 :::image type="content" source="media/advanced-proactive-message/image11.png" alt-text="The setting shows Notification via bot name.":::
 
@@ -209,7 +223,7 @@ Sometimes the bot might be sending a proactive message when the recipient is in 
 
 You might want to postpone sending the proactive message until they have finished their conversation to not disrupt the conversation flow.
 
-The **If chat is active** field allows you to control the behavior:
+The **If chat is active** box allows you to control the behavior:
 
 - **Send:** the bot will send the proactive message as normal.
 
@@ -223,7 +237,7 @@ The bot can only deliver messages to recipients who have installed the bot in Mi
 
 For lower importance messages, you can set the flow run to be marked as succeeded even when the recipient doesn't have the bot installed.
 
-The **If bot not installed** field allows you to control the behavior:
+The **If bot not installed** box allows you to control the behavior:
 
 - **Fail:** the flow run will be marked as a failure when the recipient hasn't installed the bot in Microsoft Teams.
 
