@@ -65,7 +65,7 @@ UpdateContext({ showHideDialog: true })
 The following is the Power Fx formula to close the dialog in the `OnCloseSelect` property of the dialog:
 
 ```powerapps-dot
-UpdateContext({ showHideDialog: true })
+UpdateContext({ showHideDialog: false })
 ```
 
 Assign the variable to the `Visible` property of the dialog:
