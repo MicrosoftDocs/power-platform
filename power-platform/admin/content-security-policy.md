@@ -44,13 +44,16 @@ To configure CSP, navigate to [PPAC](https://admin.powerplatform.microsoft.com) 
 
 ![Content security policy default settings](media/csp-default-settings.png "Content security policy default settings")
 
-The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. Enabling it requires an endpoint to be specified. Violation reports will be sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP is not enforced).
+The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. Enabling it requires an endpoint to be specified. Violation reports will be sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced).
 
 ![Enabling reporting endpoint](media/csp-reporting.png "Enabling reporting endpoint")
 
 Enforcement of CSP is controlled independently for model-driven and canvas apps to provide granular control over policies. Use the Model-driven / Canvas pivot to modify the intended app type.
 
-The "Enforce content security policy" toggle turns on the default policy for enforcement, as specified above, for the given app type. Turning this toggle on will change the behavior of apps in this environment to adhere to the policy, so it is suggested to enable on a dev/test environment, then enable report-only mode in production before enforcing in production.
+The "Enforce content security policy" toggle turns on the default policy for enforcement, as specified above, for the given app type. Turning on this toggle will change the behavior of apps in this environment to adhere to the policy. Therefore, the suggested enablement flow would be:
+1. Enforce on a dev/test environment
+2. Enable report-only mode in production
+3. Enforce in production once no violations are reported
 
 The final section is "Configure directives". This section allows you to control individual directives within the policy. Currently, only `frame-ancestors` can be customized.
 
@@ -61,8 +64,8 @@ Leaving the default directive toggled on uses the default value specified above.
 ![Setting custom CSP directives](media/csp-default-directive.png "Setting custom CSP directives")
 
 **Important considerations:**
-- Turning off the default directive does not send the default value as part of the response. For example, using custom `frame-ancestors` would not send `'self'` as part of the directive. Admins would need to manually add `'self'` to the list.
-- Turning off the default directive and saving with an empty list *turns the directive off completely*, i.e. does not send it as part of the response.
+- Turning off the default directive doesn't send the default value as part of the response. For example, using custom `frame-ancestors` wouldn't send `'self'` as part of the directive. Admins would need to manually add `'self'` to the list.
+- Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the response.
 
 ## Examples
 
@@ -80,7 +83,7 @@ In the above example:
 
 The effective headers would be:
 - Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.foo.com https://www.bar.com;`
-- Canvas apps: CSP header would not be sent
+- Canvas apps: CSP header wouldn't be sent
 
 ### Example 2
 
