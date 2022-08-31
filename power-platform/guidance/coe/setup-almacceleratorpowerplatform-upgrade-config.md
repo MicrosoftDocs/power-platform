@@ -42,7 +42,7 @@ Go to [https://make.powerapps.com](https://make.powerapps.com) and select the en
 When the import is completed, the reactivation of the **CustomAzureDevOps** custom connector needs to be done. The following steps need to be done.
 
 1. Select **Data** -> **Custom Connectors** and edit the **CustomAzureDevOps**
-1. Go to the Definition tab and verify if there are 3 **Policies** created, in cause you don't find the policies follow the steps  [on this session](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config#create-the-customazuredevops-custom-connector-policies).
+1. Go to the Definition tab and verify if there are 3 **Policies** created, in case you don't find the policies, follow the steps  [on this session](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config#create-the-customazuredevops-custom-connector-policies).
 1. Go to the Security tab and select **Edit**
 1. Add your **ClientId**, **Client Secret** & **ResourceUrl**
 1. Select the **Test** tab and select **Test operation**
@@ -85,6 +85,7 @@ To simplify this process, there's a pipeline template that will automatically sy
 You should have 3 policies under **Definition** tab in the CustomAzureDevOps custom connector. Verify the policies are created accordingly to the following information. You might need to create missing policies.
 
 **Set host to https://vssps.dev.azure.com** policy
+
 | **Field name**         | **Value**   |
 |-------------------|-------------------|
 | Name     | Set host to https://vssps.dev.azure.com|
@@ -102,6 +103,7 @@ You should have 3 policies under **Definition** tab in the CustomAzureDevOps cus
 | URL Template | https://app.vssps.visualstudio.com |
 
 **Convert Build Definition Variables to Array** policy
+
 | **Field name**         | **Value**   |
 |-------------------|-------------------|
 | Name     | Convert Build Definition Variables to Array |
