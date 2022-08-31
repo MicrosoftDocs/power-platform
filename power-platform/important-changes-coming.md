@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 08/18/2022
+ms.date: 08/31/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
@@ -287,14 +287,13 @@ Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector.
 - All new flows must be created with the Microsoft Dataverse connector.
 - Flows that use the Dynamics 365 connector should be re-created to use the Dataverse (Legacy) connector or the Microsoft Dataverse connector. 
 
-> In some cases users will be able to use a migration tool to migrate from the Dynamics 365 connector to the Microsoft Dataverse connector. On the detail page of each flow, you will see the message 
-> "Migrate this flow to the latest Microsoft Dataverse Connector", you will be able to open the migration assistant from there. 
+> In some cases users will be able to use a migration tool to migrate from the Dynamics 365 connector to the Microsoft Dataverse connector. On the detail page of each flow, you will see the message "Migrate this flow to the latest Microsoft Dataverse Connector". You'll be able to open the migration assistant from there. 
 > 
 > This should migrate your flow unless:
-> - Flow is in the old format (To check this, the customer can confirm whether the Microsoft Dataverse connector is searchable when editing the flow. Most flows created before June 2020 are in the older format.)
-> - Flow has legacy actions connecting to environments other than the current environment 
+> - Flow is in the old format. To check this, the customer can confirm whether the Microsoft Dataverse connector is searchable when editing the flow. Most flows created before June 2020 are in the older format.
+> - Flow has legacy actions connecting to environments other than the current environment. 
 
-- If your flow falls into one of the categories above or if the migration fails, you will need to manually recreate your flow using the Dataverse Legacy Microsoft Dataverse (legacy) connector.
+- If your flow falls into one of the categories above or if the migration fails, you'll need to manually recreate your flow using the Dataverse Legacy Microsoft Dataverse (legacy) connector.
 
 #### Logic Apps
 - All new Logic Apps should be created with the Microsoft Dataverse (Legacy) connector. In the Summer of 2022, the Microsoft Dataverse connector will be available and should be used.
