@@ -18,7 +18,7 @@ search.app:
   - Powerplatform
 ---
 
-# Set up inactivity proccesses
+# Set up inactivity processes
 
 This article will help you to set up the inactivity notifications for unused canvas apps and cloud flows, and for how to clean up unused connection references.
 
@@ -32,20 +32,19 @@ Process to delete connections that have are, and have been broken for some time 
 > You may see an error like this when running for large environments:  <br>
 > The action 'Get_Connections_as_Admin' has an aggregated page results size more than '209797598' bytes. This exceeded the maximum size '209715200' bytes allowed' <br><br>
 > If this occurs you will need to clean up the connections via Power Shell first in order to use the connector in Power Automate. <br>
-> This article will get you started on [Power Shell for Power Platform](https://docs.microsoft.com/power-platform/admin/powershell-getting-started) <br>
-> And this this call will delete all the errored connections in your default envirnment <br> 
->(Get-AdminPowerAppConnection -EnvironmentName "Default-yourguidhere") | Where { $_.statuses -like "*Error*"} | Remove-AdminPowerAppConnection
+> This article will get you started on [Power Shell for Power Platform](/power-platform/admin/powershell-getting-started) <br>
+> And this this call will delete all the errored connections in your default environment <br> 
+>(Get-AdminPowerAppConnection -EnvironmentName "Default-yourGUIDhere") | Where { $_.statuses -like "*Error*"} | Remove-AdminPowerAppConnection
 
-## Turn on flow
+### Turn on flow
 
-- [Admin | Broken Connection Cleanup](governance-components.md##admin--broken-connection-cleanup)
+- [Admin | Broken Connection Cleanup](governance-components.md#admin--broken-connection-cleanup)
 
-
-# Set up inactivity notifications (unused apps and flows)
+## Set up inactivity notifications (unused apps and flows)
 
 Processes to ask users if canvas apps and cloud flows are still useful, or to clean them up if they are not.
 
-## Update environment variables values for unused apps and flows
+### Update environment variables values for unused apps and flows
 
 >[!NOTE]
 >These flows used to be called called "archive" flows, however they did not automatically archive apps and flows. The name has recently changed to "inactivity notifications", however if you are on an older version of the Governance components solution they may still be called "archive" flows.
@@ -55,13 +54,13 @@ You use this functionality to detect unused objects, and ask makers to either ar
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
-## Grant makers environment access
+### Grant makers environment access
 
 If your solution is installed in a production environment, make sure your environment isn't restricted with an [environment security group](limitations.md#security-groups-and-approvals).
 
 If your solution is installed in a Dataverse for Teams environment, you first need to grant access to makers who aren't part of your team in Microsoft Teams so they can participate in approval workflows. [Share an app in a Teams environment](faq.md#share-an-app-from-a-dataverse-for-teams-environment) with your [Power Platform maker group](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users).
 
-## Configure mandatory environment variables
+### Configure mandatory environment variables
 
 You'll [update these environment variables](faq.md#update-environment-variables) after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
 
@@ -74,13 +73,13 @@ You'll [update these environment variables](faq.md#update-environment-variables)
 | Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Teams environment](faq.md#add-apps-to-microsoft-teams) |
 | Flow Approvals URL | (Optional) A link to the Power Automate approval page for your CoE environment. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. To get the URL, go to flows.microsoft.com for your CoE environment > **Action Items** > **Approvals**. The URL will end in **approvals/received**. |  
 
-## Exempt environments from the inactivity notifications process
+### Exempt environments from the inactivity notifications process
 
 You might want to exempt some environments from the inactivity notification process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/adoption/environment-strategy)
 
 You can exempt environments from the inactivity notification process by using the Power Platform Admin View app.  
 
-### Production environment
+#### Production environment
 
 If your solution is installed in a production environment, your app will be a model-driven app. Follow these steps:
 
@@ -93,7 +92,7 @@ If your solution is installed in a production environment, your app will be a mo
 
    ![Exclude an environment from the inactivity notification process in a production environment.](media/coe-archive2.png "Exclude an environment from the inactivity notification in a production environment")
 
-### Dataverse for Teams environment
+#### Dataverse for Teams environment
 
 1. Open the Power Apps app in Teams, select **Build**, and then select the team that you've installed the CoE Starter Kit solutions in.
 1. Select **Center of Excellence - Core for Teams** > **See All**.
@@ -104,7 +103,7 @@ If your solution is installed in a production environment, your app will be a mo
 
    ![Exclude an environment from the inactivity notification process in Dataverse for Teams.](media/coe-archive1.png "Exclude an environment from the inactivity notification process in Dataverse for Teams")
 
-## Turn on flows
+### Turn on flows
 
 Turn on the following flows, which are installed as part of the governance components solution:
 
@@ -114,7 +113,7 @@ Turn on the following flows, which are installed as part of the governance compo
 - [Admin | Inactivity notifications v2 (Start Approval for Flows)](governance-components.md#admin--inactivity-notifications-v2-start-approval-for-flows)
 - [Admin | Email Managers Ignored Approvals](governance-components.md#admin--email-managers-ignored-inactivity-notifications-approvals)
 
-## Share apps with makers
+### Share apps with makers
 
 The governance components solution contains the [Cleanup Old Objects App](governance-components.md#cleanup-old-objects-app) app for makers and admins to manage archive approvals. Share this app with your makers and admins, assigning them the Power Platform Maker SR security role.
 
