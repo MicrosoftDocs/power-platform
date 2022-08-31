@@ -4,9 +4,9 @@ description: Consider the best practices outlined in this topic when you plan an
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/12/2021
-author: jimholtz
+author: DanaMartens
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin

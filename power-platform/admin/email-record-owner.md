@@ -1,12 +1,13 @@
 ---
 title: "How is an email record owner determined  | MicrosoftDocs"
 description: How is an email record owner determined when synchronizing email messages to Dynamics 365?
-author: jimholtz
+author: DanaMartens
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 4/2/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: dmartens
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
