@@ -4,9 +4,9 @@ description: Automatically track sent folder items with server-side synchronizat
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/15/2021
-author: jimholtz
+author: DanaMartens
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
