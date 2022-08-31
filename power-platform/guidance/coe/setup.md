@@ -72,7 +72,7 @@ Some processes part of the CoE Starter Kit send [Power Automate Approvals](/powe
 
 ### Decide what environment type to use (production or Dataverse for Teams)
 
-> [!CAUTION]
+> [!IMPORTANT]
 > Effective October 2022, the CoE Starter Kit version for Dataverse for Teams will be deprecated. Existing customers can continue using the Dataverse for Teams version. You can continue to [download the latest available versions](https://github.com/link) for Dataverse for Teams, but we will no longer implement new features or fix bugs for this version.
 >
 >We recommend that customers transition to installing the CoE starter Kit in a [Production environment](/power-platform/admin/environments-overview#types-of-environments) and setting up [pay-as-you-go plans](/power-platform/admin/pay-as-you-go-overview) for the usage of apps within the CoE Starter Kit.

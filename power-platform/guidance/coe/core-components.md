@@ -425,6 +425,8 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 
 ## Environment Request management components
 
+[Watch a walk-through](https://www.youtube.com/watch?v=16mspbGz1zA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the environment and DLP request process works.
+
 ### Tables
 
 - **Environment Creation Request** represents a request submitted by non-admins to create a new Environment. This has a many-to-many relationship with the Maker and PowerApps Connector tables. The following is available for each request:

@@ -24,7 +24,7 @@ This article will help you set up the inventory components of the Core solution 
 
 The flows in this solution sync all your resources into tables and build admin apps, flows, and dashboards on top of this inventory to help you get a holistic overview into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.
 
-[Watch a walk-through](https://www.youtube.com/embed/Z9Vp2IxFzpU) on how to set up the core components solution.
+[Watch a walk-through](https://www.youtube.com/watch?v=Lsooi7xp6eA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) on how to set up the core components solution.
 
 >[!IMPORTANT]
 >Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes that you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
@@ -240,10 +240,13 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 >[!IMPORTANT]
 >If your CoE Starter Kit is installed in a commercial or GCC tenant, you can skip this step.
 
-1. If your CoE Starter Kit is installed in a GCC High or DoD tenant, update the **Authority** in HTTP action:
-    1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
-    1. Edit the **Command Center App >  Get M365 Service Messages** flow.
-    1. Update the **List serviceAnnouncements from Graph** action and change the **Authority** to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
+If your CoE Starter Kit is installed in a GCC High or DoD tenant, update the **URI, Authority, and Audience** in HTTP action:
+1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+1. Edit the **Command Center App >  Get M365 Service Messages** flow.
+1. Update the **List serviceAnnouncements from Graph** action.
+    1. Change the **URI** to https://graph.microsoft.us/v1.0/admin/serviceAnnouncement/messages.
+    1. Change the **Authority** to https://login.microsoftonline.us/.
+    1. Change the **Audience** to https://graph.microsoft.us.
     1. **Save** this flow.
 
 ## Set up Audit Logs solution

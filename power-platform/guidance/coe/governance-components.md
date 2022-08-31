@@ -27,6 +27,8 @@ The Governance components solution contains assets relevant to admins and makers
 
 ## Compliance processes
 
+[Watch a walk-through](https://www.youtube.com/watch?v=WXXFjHLt5ss&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the compliance process works.
+
 ### Flows
 
 >[!NOTE]
@@ -195,6 +197,8 @@ All business process flows are disabled by default. To enable them, do the follo
 
 ## Inactivity processes
 
+[Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
+
 ### Tables
 
 #### Inactivity notifications approval
@@ -266,7 +270,6 @@ This flow works with the other Inactivity notifications flows in that it looks f
 
 Runs weekly deletes connection references that are errored out and which were last modified at least 30 days ago (configurable).
 
-
 ### Apps
 
 #### Cleanup Old Objects App
@@ -302,7 +305,7 @@ And if the reason is sound, they can choose to exempt the object from future run
 ## Microsoft Teams governance
 
 >[!NOTE]
->These components will not work in GCC, GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+>These components will not work in GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
 
 ### Flows
 
@@ -351,7 +354,9 @@ This flow sends a daily reminder email to environment owners who have been asked
 ## Cleanup for orphaned resources
 
 >[!NOTE]
->These components will not work in GCC, GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+>These components will not work in GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+
+[Watch a walk-through](https://www.youtube.com/watch?v=0zptiBppTNo&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the clean-up for orphaned objects process works.
 
 ### Flows
 

@@ -22,7 +22,9 @@ search.app:
 
 This article will help you to set up the inactivity notifications for unused canvas apps and cloud flows, and for how to clean up unused connection references.
 
-# Set up connection cleanup (broken connections)
+[Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
+
+## Set up connection cleanup (broken connections)
 
 Process to delete connections that have are, and have been broken for some time (30 days by default)
 

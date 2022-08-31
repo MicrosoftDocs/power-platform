@@ -103,7 +103,7 @@ The Maker Assessment app can be used to ask users a series of questions regardin
 ## Pulse survey components
 
 >[!NOTE]
->These components will not work in GCC, GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+>These components will not work in GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
 
 ### Tables
 
