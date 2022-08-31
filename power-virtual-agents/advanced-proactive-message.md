@@ -48,13 +48,13 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 ## Known limitations
 
 - All proactive messages from Power Virtual Agents are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
-- All proactive messages won't be logged in conversation transcripts or [Analytics sessions](analytics-overview.md).
+- Proactive messages won't be logged in conversation transcripts or [Analytics sessions](analytics-overview.md).
 - Proactive messages must be in the same environment as the Power Automate flow.
 - Proactive messages can only be posted to a personal chat with the bot.
 
 ## Send a proactive message
 
-1. In Power Automate, add the Microsoft Teams connector action **Post message in a chat or channel** at the step where you want to send a proactive message in your flow.
+1. In Power Automate, open the flow that you want to send a proactive message. Add the Microsoft Teams connector action **Post message in a chat or channel**.
 
 1. For **Post as**, choose **Power Virtual Agents (Preview)**.
 
