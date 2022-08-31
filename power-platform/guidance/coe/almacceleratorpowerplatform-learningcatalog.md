@@ -45,6 +45,7 @@ The shortcut for this page is [https://aka.ms/AA4PPLearning](https://aka.ms/AA4P
 - [How to use ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components)
 - [Set up ALM accelerator for Microsoft Power Platform components manually](/power-platform/guidance/coe/setup-almacceleratorpowerplatform)
 - [How to update ALM Accelerator for Power Platform](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-pipeline-sync)
+- [Configuring the ALM Accelerator for Power Platform hook extensions](/power-platform/guidance/coe/setup-almacceleratorforpowerplatform-hook-extensions)
 
 ## Labs
 
@@ -66,10 +67,6 @@ The shortcut for this page is [https://aka.ms/AA4PPLearning](https://aka.ms/AA4P
 - The release notes / change log is part of each release, find the [latest here](https://github.com/microsoft/coe-starter-kit/releases/)
 
 ## Customer Stories
-
-- Soon
-
-## Experimental features
 
 - Soon
 
