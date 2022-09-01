@@ -90,22 +90,22 @@ Table(
 )
   ```
 
-  ### Style properties
+### Style properties
 
 | Name | Description |
 | ------ | ----------- |
-  | `Theme` |  Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
+| `Theme` |  Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
 | `AccessibilityLabel` |  Screen reader aria-label |
 
-  ### Event properties
+### Event properties
 
 | Name | Description |
 | ------ | ----------- |
-  | `InputEvent` |  An event to send to the control. E.g. `SetFocus`. See below. |
+| `InputEvent` |  An event to send to the control. E.g. `SetFocus`. See below. |
 
-  ## Behavior
+## Behavior
 
-  ### Setting Focus on the control
+### Setting Focus on the control
 
 When a new dialog is shown, and the default focus should be on the control, an explicit set focus will be needed. 
 
