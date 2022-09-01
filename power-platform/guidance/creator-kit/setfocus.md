@@ -32,8 +32,8 @@ Example Power Fx formula that triggers the focus behavior:
 UpdateContext({ ctxComponentEvent: "SetFocus" & Text(Rand()) });
 ```
 
-The context variable `ctxResizableTextareaEvent` would then be bound to the `InputEvent` property.
+The component's `InputEvent` property would then be bound to the context variable `ctxComponentEvent`.
 
-Note: `Text(Rand())` is used to generate a unique value for the `ctxComponentEvent`, which triggers an event in the component.
+Note: `Text(Rand())` is used to generate a unique value for the `ctxComponentEvent`. A unique value change is required to trigger an event in the component.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
