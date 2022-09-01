@@ -304,6 +304,8 @@
           href: creator-kit/contextmenu.md
         - name: CommandBar
           href: creator-kit/commandbar.md
+        - name: Header
+          href: creator-kit/header.md
         - name: ExpandMenu
           href: creator-kit/expandmenu.md
         - name: Nav
