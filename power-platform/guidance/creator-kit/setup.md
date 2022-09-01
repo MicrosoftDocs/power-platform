@@ -21,8 +21,6 @@ contributors:
 ---
 # Install the Creator Kit
 
-[This article is pre-release documentation and is subject to change.]
-
 ## Prerequisites
 
 - A [Microsoft Power Platform environment with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
