@@ -32,6 +32,8 @@ All controls and components included in the kit use the [Fluent UI](https://deve
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
 
+You can also download the reference app solutions for canvas at [aka.ms/CreatorKitReferenceCanvas](https://aka.ms/CreatorKitReferenceCanvas) and for custom pages at [aka.ms/CreatorKitReferenceMDA](https://aka.ms/reatorkitreferencemda)
+
 You can view the code in the latest version of the Creator Kit in the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit). View the code components and more detailed component level documentation in the [Creator Kit Code Components GitHub repository](https://github.com/microsoft/powercat-code-components).
 
 :::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the Creator Kit." border="false":::
