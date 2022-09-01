@@ -21,7 +21,7 @@ contributors:
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="Shimmer"::: control
+# :::no-loc text="Shimmer"::: control (Preview)
 
 [This article is pre-release documentation and is subject to change.]
 

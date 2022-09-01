@@ -19,7 +19,7 @@ contributors:
   - tapanm-msft
   - slaouist
 ---
-# :::no-loc text="Panel"::: control
+# :::no-loc text="Panel"::: control (Experimental)
 
 [This article is pre-release documentation and is subject to change.]
 

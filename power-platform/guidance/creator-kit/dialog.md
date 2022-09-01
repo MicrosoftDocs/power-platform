@@ -19,7 +19,7 @@ contributors:
   - tapanm-msft
   - slaouist
 ---
-# :::no-loc text="Dialog"::: control
+# :::no-loc text="Dialog"::: control (Experimental)
 
 [This article is pre-release documentation and is subject to change.]
 

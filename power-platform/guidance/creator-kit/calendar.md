@@ -21,7 +21,7 @@ contributors:
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="Calendar"::: control
+# :::no-loc text="Calendar"::: control (Preview)
 
 [This article is pre-release documentation and is subject to change.]
 
