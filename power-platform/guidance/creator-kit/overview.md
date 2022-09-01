@@ -38,9 +38,9 @@ You can view the code in the latest version of the Creator Kit in the [Creator K
 
 ## What's included
 
-The Creator Kit is a [Microsoft Power Platform managed solution](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions) that contains the following components:
+The Creator Kit is a set of managed solutions that provide the following components:
 
-- Reference canvas app
+- Reference App (Model and Canvas versions available)
 - Template starter apps (canvas app and model-driven app custom page)
 - Component library
 - Code components
@@ -48,12 +48,15 @@ The Creator Kit is a [Microsoft Power Platform managed solution](/power-platform
 
 ## Disclaimer
 
-Although the underlying features and components used to build the kit (such as canvas components and Power Apps component framework) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to create apps with Power Apps in their organizations.
+Although the underlying features and components used to build the kit (such as canvas components and Power Apps component framework) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use these components to create apps with Power Apps in their organizations.
 
 If you face issues with:
 
-- **Using the kit**, report your issue at [https://aka.ms/Creator-Kit-Issues](https://aka.ms/Creator-Kit-Issues). Although this kit isn't supported by Microsoft Support, you can reach out with support requests for any related, underlying platform or feature problems.
-- **The core features in Microsoft Power Platform**, use your standard channel to contact Microsoft Support.
+- **Using the kit**, [report your issue](https://aka.ms/Creator-Kit-Issues). 
+
+- **Features in Microsoft Power Platform**, use your standard channel to contact Microsoft Support.
+
+See [more guidance on support]().
 
 ## More resources
 
