@@ -60,7 +60,7 @@ This canvas component mimics the style and behavior of the [Fluent UI SearchBox 
 
 ### Configure search behavior
 
-Add the `SearchBox` control to your app where you need a search interface that's coupled with a gallery, `DetailsList`, or some control that can display a dataset.
+Add this control to your app where a search interface is needed, usually coupled with a gallery, [`DetailsList`](detailslist.md), or any control that can display a dataset.
 
 Create a search experience by using the [Search() or Filter()](/power-apps/maker/canvas-apps/functions/function-filter-lookup) expressions that use the value of the `Text` property in the `SearchBox`.
 
