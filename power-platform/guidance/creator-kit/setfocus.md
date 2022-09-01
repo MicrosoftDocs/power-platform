@@ -20,7 +20,7 @@ contributors:
   - mehdis-msft
 ---
 
-# Setting Focus on a control
+# Set Focus on a control
 
 When a new dialog is shown, and the default focus should be on the control, an explicit set focus will be needed. 
 
