@@ -29,7 +29,7 @@ Theming is a mechanism by which a consistent look and feel can be applied to all
 
 ## Generating the theme
 
-Use the [Fluent Theme Designer](https://docs.microsoft.com/en-us/power-platform/guidance/creator-kit/creator-kit-explained#theme-editor-app) app (provided in the *CreatorKitReferences(Canvas)* solution) to generate a theme Json object that can be referenced by Creator Kit components.
+Use the [Fluent Theme Designer](/power-platform/guidance/creator-kit/creator-kit-explained#theme-editor-app) app (provided in the *CreatorKitReferences(Canvas)* solution) to generate a theme Json object that can be referenced by Creator Kit components.
 
 1. Play the **Fluent Theme Designer** app.
 

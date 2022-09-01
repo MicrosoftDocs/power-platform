@@ -1,5 +1,5 @@
 ---
-title: CommandBar control reference | Creator Kit
+title: CommandBar control reference (preview) | Creator Kit
 description: Learn about the details and properties of the CommandBar control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
@@ -20,7 +20,7 @@ contributors:
   - slaouist
 ---
 
-# :::no-loc text="CommandBar"::: control (Preview)
+# :::no-loc text="CommandBar"::: control (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -30,6 +30,10 @@ A control used to input commands.
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/CommandBar).
 
 :::image type="content" source="media/command-bar.png" alt-text="CommandBar control.":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Description
 

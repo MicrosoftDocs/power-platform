@@ -1,5 +1,5 @@
 ---
-title: Header control reference | Creator Kit
+title: Header control reference (experimental) | Creator Kit
 description: Learn about the details and properties of the Header control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
@@ -20,13 +20,17 @@ contributors:
   - slaouist
 ---
 
-# :::no-loc text="Header"::: control (Experimental)
+# :::no-loc text="Header"::: control (experimental)
 
 [This article is pre-release documentation and is subject to change.]
 
 A control used to create a navigation experience.
 
 :::image type="content" source="media/header.png" alt-text="Header control.":::
+
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Description
 

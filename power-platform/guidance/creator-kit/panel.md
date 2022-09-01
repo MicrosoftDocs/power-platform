@@ -1,5 +1,5 @@
 ---
-title: Panel control reference | Creator Kit
+title: Panel control reference (experimental) | Creator Kit
 description: Learn about the details and properties of the Panel control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
@@ -19,13 +19,17 @@ contributors:
   - tapanm-msft
   - slaouist
 ---
-# :::no-loc text="Panel"::: control (Experimental)
+# :::no-loc text="Panel"::: control (experimental)
 
 [This article is pre-release documentation and is subject to change.]
 
 A control used to group content.
 
 :::image type="content" source="media/Panel.png" alt-text="Panel control.":::
+
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Description
 
@@ -125,6 +129,7 @@ Steps to format content in a panel:
 1. Add the `Panel` (example name: `cmp_panel`)
 1. Add a container (example name: `c_panelContent`)
 1. Modify the following properties of `c_panelContent`:
+
     |Property|Value|
     |-|-|
     |`X`| `cmp_panel.X` |

@@ -302,11 +302,11 @@
           href: creator-kit/breadcrumb.md
         - name: ContextMenu
           href: creator-kit/contextmenu.md
-        - name: CommandBar
+        - name: CommandBar (preview)
           href: creator-kit/commandbar.md
-        - name: Header
+        - name: Header (experimental)
           href: creator-kit/header.md
-        - name: ExpandMenu
+        - name: ExpandMenu (experimental)
           href: creator-kit/expandmenu.md
         - name: Nav
           href: creator-kit/nav.md
@@ -316,7 +316,7 @@
         href: creator-kit/detailslist.md
       - name: Pickers
         items:
-        - name: Calendar
+        - name: Calendar (preview)
           href: creator-kit/calendar.md
         - name: TagsPicker
           href: creator-kit/picker.md
@@ -324,17 +324,17 @@
           href: creator-kit/taglist.md
       - name: Progress
         items:
-        - name: Shimmer
+        - name: Shimmer (preview)
           href: creator-kit/shimmer.md
-        - name: Spinner
+        - name: Spinner (preview)
           href: creator-kit/spinner.md
         - name: ProgressIndicator
           href: creator-kit/progressindicator.md
       - name: Surfaces
         items:
-        - name: Dialog
+        - name: Dialog (experimental)
           href: creator-kit/dialog.md
-        - name: Panel
+        - name: Panel (experimental)
           href: creator-kit/panel.md
       - name: Utilities
         items:

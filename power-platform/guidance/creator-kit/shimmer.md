@@ -1,5 +1,5 @@
 ---
-title: Shimmer control reference | Creator Kit
+title: Shimmer control reference (preview) | Creator Kit
 description: Learn about the details and properties of the Shimmer control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
@@ -21,7 +21,7 @@ contributors:
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="Shimmer"::: control (Preview)
+# :::no-loc text="Shimmer"::: control (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -31,6 +31,10 @@ A control used to display a loading experience.
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Shimmer).
 
 :::image type="content" source="media/shimmer.png" alt-text="Shimmer control.":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Description
 

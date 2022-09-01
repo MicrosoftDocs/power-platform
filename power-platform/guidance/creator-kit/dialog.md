@@ -1,5 +1,5 @@
 ---
-title: Dialog control reference | Creator Kit
+title: Dialog control reference (experimental) | Creator Kit
 description: Learn about the details and properties of the Dialog control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
@@ -19,13 +19,17 @@ contributors:
   - tapanm-msft
   - slaouist
 ---
-# :::no-loc text="Dialog"::: control (Experimental)
+# :::no-loc text="Dialog"::: control (experimental)
 
 [This article is pre-release documentation and is subject to change.]
 
 A control used to group content.
 
 :::image type="content" source="media/dialog.png" alt-text="Dialog control.":::
+
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Description
 

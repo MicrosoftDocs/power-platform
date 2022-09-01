@@ -246,7 +246,7 @@ If(Self.EventName="CellAction" && Self.EventColumn="expand",
 This searches for the row that has had the Cell Action invoked on using the index (if no `RecordKey` is set, then the `EventRowKey` will contain the row number), and then toggles the expand value.
 
 This will give the following result:  
-![](media/details-list-columns-expand.gif)
+![Expand and collapse example explained through animation ](media/details-list-columns-expand.gif)
 
 ### Tag & Indicator Tag
 

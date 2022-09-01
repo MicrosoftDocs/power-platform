@@ -1,5 +1,5 @@
 ---
-title: Spinner control reference | Creator Kit
+title: Spinner control reference (preview) | Creator Kit
 description: Learn about the details and properties of the Spinner control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
@@ -21,7 +21,7 @@ contributors:
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="Spinner"::: control (Preview)
+# :::no-loc text="Spinner"::: control (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -32,9 +32,13 @@ A control used to create a loading experience.
 
 :::image type="content" source="media/spinner.png" alt-text="Spinner control.":::
 
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
+
 ## Description
 
-A Spinner is an outline of a circle that animates around itself indicating to the user that things are processing. It appears when the process is unsure how long a task will take, making it the indeterminate version of a [ProgressIndicator](progressindicator.md) control.<!--note from editor: Very nice!-->
+A Spinner is an outline of a circle that animates around itself indicating to the user that things are processing. It appears when the process is unsure how long a task will take, making it the indeterminate version of a [ProgressIndicator](progressindicator.md) control.
 
 Spinners can vary in size, and can be located inline with content or centered. Spinners generally appear after an action is being processed or committed. They're subtle and generally don't take up much space, but are transitions from the completed task.
 

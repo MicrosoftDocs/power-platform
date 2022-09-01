@@ -48,7 +48,6 @@ In this section, you'll learn details about the different apps, templates, and c
 - [Templates](#templates) 
 - [Canvas app template](#canvas-app-template) 
 - [Custom page template](#custom-page-template) 
-- [Theme editor app](#theme-editor-app) 
 - [Canvas components](#canvas-components) 
 - [Code components](#code-components) 
 

@@ -28,6 +28,10 @@ A control used to create a navigation experience.
 
 :::image type="content" source="media/expander.png" alt-text="ExpandMenu control.":::
 
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
 ## Description
 
 Expand menus are like `Nav` components used to provide navigation, which consists of links to the main areas of an app or site. You can also expand and collapse the menu, which gives the user an option for more space if they want it. The ExpandMenu control should be used with layout containers to make sure the experience is responsive due to its nature of varying width when the app is played.
