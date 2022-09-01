@@ -38,14 +38,35 @@ The Header control should be used with layout containers to make sure the experi
 
 This canvas component mimics the style and behavior of the default Power Apps header, and can actually replace it (see Behavior section below).
 
-## Key properties
+## Properties
+
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Width` | The width of the control. |
-| `Items` | A dataset that displays items in the menu. |
-| `OnExpandSelect` | Action expression triggered when the hamburger (three horizontal lines) button is selected. |
-| `OnButtonSelect` | Action expression triggered when any of the buttons are selected. |
+| `Text` | The text displayed in the center of the control |
+| `BackButtonVisible` | Enable to display the back button, otherwise the `LeftButtonImage` is displayed (if any) |
+| `LeftButtonImage` | An image that is displayed on the left edge of the control |
+| `LeftButtonVisible` | Enable to display the `LeftButtonImage` |
+| `RightButtonImage` | An image that is displayed on the right edge of the control |
+| `RightButtonVisible` | Enable to display the `RightButtonImage` |
+| `ContentWidth` | The width of the content within the control |
+
+### Style properties
+
+| Property | Description |
+| -------- | ----------- |
+| `Color` | The color of the control |
+| `Width` | The width of the control |
+| `Theme` | The theme object |
+
+### Event properties
+| Property | Description |
+| -------- | ----------- |
+| `OnLeftButtonSelect` | Action formula executed when the left button is selected (when displayed) |
+| `OnRightButtonSelect` | Action formula executed when the left button is selected (when displayed) |
+| `OnBackSelect` | Action formula executed when the back button is selected (when displayed) |
+
 
 ## Items dataset
 
