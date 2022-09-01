@@ -34,7 +34,7 @@ A `Header` is commonly used to display global app details (e.g., app name or pag
 
 The `Header` component can replace the default Power Apps header if you want different look or behavior.
 
-The Header control should be used with layout containers to make sure the experience is responsive due to its nature of varying width when the app is played.
+The control should be used with layout containers to make sure the experience is responsive due to its nature of varying width when the app is played.
 
 This canvas component mimics the style and behavior of the default Power Apps header, and can actually replace it (see Behavior section below).
 
@@ -67,45 +67,11 @@ This canvas component mimics the style and behavior of the default Power Apps he
 | `OnRightButtonSelect` | Action formula executed when the left button is selected (when displayed) |
 | `OnBackSelect` | Action formula executed when the back button is selected (when displayed) |
 
-
-## Items dataset
-
-| Property | Description |
-| -------- | ----------- |
-| `Label` | The text to display in the menu item. |
-| `Icon` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
-| `Screen` | App screen that the item will navigate to when selected. |
-
-Example `Items` property:
-
-```powerapps-dot
-Table(
-    {
-        Icon: "PowerApps", 
-        Label: "Power Apps", 
-        Screen:PowerAppsScreen
-    },{
-        Icon: "PowerBILogo", 
-        Label: "Power BI", 
-        Screen:PowerBIScreen
-    },{
-        Icon: "PowerAutomateLogo", 
-        Label: "Power Automate", 
-        Screen:PowerAutomateScreen
-    },{
-        Icon: "Dataverse", 
-        Label: "Dataverse", 
-        Screen:DataverseScreen
-    }
-)
-```
-
-> [!IMPORTANT]
-> The screen values in the preceding example code are from a sample, and might not exist in your app. Ensure that you replace the screen values with screen names in your app, as appropriate.
-
 ## Behavior
 
 ### Replace default Power Apps navigation bar with `Header`
+
+*\*Only applies to canvas apps\**
 
 If you want to only display the header, you can hide the default navigation bar that is rendered by Power Apps player by sharing the app link with the query parameter `hideNavBar`:
 
@@ -113,10 +79,10 @@ If you want to only display the header, you can hide the default navigation bar 
 https://apps.powerapps.com/play/APPID?source=iframe&hidenavbar=true
 ```
 
-Where `APPID` is replaced with your app's value.
+Where `APPID` is replaced with your app's value. Note that the parameters are required for it to render without the default navigation bar. Canvas apps that are played without the query parameters, such as directly from the maker portal, will still render the default bar.
 
 ## Limitations
 
-This canvas component can only be used in canvas apps and custom pages.
+This canvas component can only be used in canvas apps. It can be used in custom pages, but is likely not needed as pages are embedded in model driven apps.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
