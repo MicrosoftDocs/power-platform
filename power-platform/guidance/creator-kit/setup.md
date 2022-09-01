@@ -28,7 +28,7 @@ contributors:
 - The System Customizer security role is needed to use the Creator Kit components.
 - A Power Apps for Microsoft 365 license.
 
-## Install the Creator Kit solution
+## First install the Creator Kit solution
 
 1. [Download the `CreatorKitCore` solution](https://aka.ms/creatorkitdownload).
 2. Ensure the [Power Apps code components for Canvas apps feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) is enabled in the [Environment settings](/power-platform/admin/edit-properties-environment).
@@ -36,7 +36,7 @@ contributors:
 4. Import the solution.
 
 
-## Install the Reference solutions
+## (Optional) Install the Reference solutions
 The reference solutions can optionally be installed after the `CreatorKitCore` solution is installed.
 
 Solution-specific prerequisites:
