@@ -28,12 +28,12 @@ The Creator Kit includes the following assets, distributed in three solutions:
 
 |Solution | Items |
 |-|-| 
-| **CreatorKitCore** | <li>24 Power Apps component framework and canvas [components](components.md)</li><li>Must be installed before other solutions</li> |
+| **CreatorKitCore** | <li>24 Power Apps component framework and canvas [components](components.md)</li> |
 | **CreatorKitReference (MDA)** | <li>A reference app (Model Driven with custom pages) to interactively learn with</li><li>A canvas page template</li> |
 | **CreatorKitReference (Canvas)** | <li>Reference app (Canvas) to interactively learn with (does not required standalone Power Apps license)</li><li>A canvas template app</li><li>A theme editor that generates Theme JSON, used to easily style consistent components</li>
 
 
-## Learn about adding components to an app
+## Learn how to add components to an app
 
 After the kit has been [installed](setup.md), learn how to add the components to your app:
 
@@ -42,7 +42,7 @@ After the kit has been [installed](setup.md), learn how to add the components to
 
 ## Create the building blocks
 
-In this section, you'll learn details about the different apps, templates, and components included with the Creator Kit.
+In this section, you'll learn details about the different apps, templates, and components that make up the Creator Kit.
 
 - [Reference app](#reference-app) 
 - [Templates](#templates) 
@@ -132,7 +132,7 @@ You can view the code components on the [components reference page](components.m
 Apps that use kit components can't be built outside of a solution, and they must be imported and exported as part of solutions.
 
 - During development, build apps that use Creator Kit components in their own separate, unmanaged solution.
-- When deploying an app that includes the components, make sure the Creator Kit (managed solution) is already installed in the target environment.
+- When deploying an app that includes the components, the `CreatorKitCore` (managed solution) must be installed in the target environment before dependent solutions are imported.
 
 For more information and general guidance, go to [solution import troubleshooting tips](/troubleshoot/dynamics-365/sales/troubleshoot-solution-import-errors-in-dynamics-365).
 
