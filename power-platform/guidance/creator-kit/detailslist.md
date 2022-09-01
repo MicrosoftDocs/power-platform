@@ -105,10 +105,10 @@ These attributes must be available in the data source to enable the related func
 
 | Property | Description |
 | -------- | ----------- |
-| `Theme` | The Fluent UI Theme JSON to use that is generated and exported from [Fluent UI Theme Designer](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/).
-| `Compact` | True when the compact style should be used
-| `AlternateRowColor` | The hex value of the row color to use on alternate rows.
-| `SelectionAlwaysVisible` | Should the selection radio buttons always be visible rather than only on row hover.
+| `Theme` | The Fluent UI Theme JSON to use that is generated and exported from [Fluent UI Theme Designer](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). See [theming](theme.md) for guidance on how to configure. |
+| `Compact` | True when the compact style should be used |
+| `AlternateRowColor` | The hex value of the row color to use on alternate rows. |
+| `SelectionAlwaysVisible` | Should the selection radio buttons always be visible rather than only on row hover. |
 | `AccessibilityLabel` | The label to add to the table aria description |
 
 ### Event properties

@@ -58,7 +58,7 @@ For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/flu
 | `BorderColor` | Color of the border of the icon (works for types `Action button` and `Icon button`) |
 | `HoverBorderColor` | The color of the border that appears on hover |
 | `BorderRadius` | Roundness of the corners (works for types `Action button` and `Icon button`) |
-| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
+| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `AccessibilityLabel` | Screen reader aria-label |
 
 ### Event properties

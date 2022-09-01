@@ -42,16 +42,22 @@ Go to [Fluent UI Label control](https://developer.microsoft.com/en-us/fluentui#/
 | Property | Description |
 | -------- | ----------- |
 | `Text` | The text value of the label. |
-| `AutoWidth` | (Output) The width set by the component to accommodate the text. |
+
+
+### Output properties
+
+| Property | Description |
+| -------- | ----------- |
+| `AutoWidth` | Width set by the component to accommodate the text |
 
 ### Style properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Padding Left` | The padding to add inside the label. |
-| `Padding Right` | The padding to add inside the label. |
-| `Padding Top` | The padding to add inside the label. |
-| `Padding Bottom` | The padding to add inside the label. |
+| `PaddingLeft` | The padding to add inside the label. |
+| `PaddingRight` | The padding to add inside the label. |
+| `PaddingTop` | The padding to add inside the label. |
+| `PaddingBottom` | The padding to add inside the label. |
 
 Not all combinations of style/state are implemented by every component. See more details in the [state dependent style properties](https://github.com/microsoft/powercat-code-components/blob/main/AutoWidthLabel/README.md#state-dependent-style-properties) section of the GitHub documentation.
 

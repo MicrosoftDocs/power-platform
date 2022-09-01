@@ -45,17 +45,17 @@ This component allows the user to resize the text area for convenience.
 | -------- | ----------- |
 | `Text` | The text value set in the control. This is the default bound property when used in a model-driven app.
 | `Default` | The default value that the control will have when the control is reset, or the default value is changed. This allows the control to work in a similar way to controls inside canvas app forms. 
-| `Max Length` | The maximum number of characters that can be entered
-| `Hint Text` | The text to display when there is no text value set
-| `Empty Placeholder Text` | The text to display when there is no value, and the control does not have focus. This provides a similar style when the model-driven text control that displays **---** when there is no value populated.
-| `Default Height` | The height to set the text area to initially.If this is not set in a canvas app/custom page, the size will default to the code component height. For model-driven apps, this is required since the form does not provide an initial height.
-| `Default Width` | The width to set the text area to initially. If this is not set in a canvas app/custom page, the size will default to the code component height. For model-driven apps, this is not required, since the default width will be the width of the form column.
-| `Min Height` | The minimum height that the `textarea` can be resized to. Set to zero for no limit.
-| `Max Height` | The maximum height that the `textarea` can be resized to. Set to zero for no limit.
+| `MaxLength` | The maximum number of characters that can be entered
+| `HintText` | The text to display when there is no text value set
+| `EmptyPlaceholderText` | The text to display when there is no value, and the control does not have focus. This provides a similar style when the model-driven text control that displays **---** when there is no value populated.
+| `DefaultHeight` | The height to set the text area to initially.If this is not set in a canvas app/custom page, the size will default to the code component height. For model-driven apps, this is required since the form does not provide an initial height.
+| `DefaultWidth` | The width to set the text area to initially. If this is not set in a canvas app/custom page, the size will default to the code component height. For model-driven apps, this is not required, since the default width will be the width of the form column.
+| `MinHeight` | The minimum height that the `textarea` can be resized to. Set to zero for no limit.
+| `MaxHeight` | The maximum height that the `textarea` can be resized to. Set to zero for no limit.
 | `Min Width` | The minimum width that the `textarea` can be resized to. Set to zero for no limit.
-| `Max Width` | The maximum width that the `textarea` can be resized to. Set to zero for no limit.
-| `Allow Resize` | Defines which direction the `textarea` can be resized in. None, Both, Vertical or Horizontal.
-| `Enable Spell Check` | Defines if the `textarea` should be spell checked by the browser or not.
+| `MaxWidth` | The maximum width that the `textarea` can be resized to. Set to zero for no limit.
+| `AllowResize` | Defines which direction the `textarea` can be resized in. None, Both, Vertical or Horizontal.
+| `EnableSpellCheck` | Defines if the `textarea` should be spell checked by the browser or not.
 
 ### Output properties
 
@@ -65,13 +65,15 @@ This component allows the user to resize the text area for convenience.
 | `Resized Width** (output) - The user adjusted width
 
 ### Style Properties
-| `Padding Left` | The padding to add inside the `textarea`.
 
-| `Padding Right` | The padding to add inside the `textarea`.            
-| `Padding Top` | The padding to add inside the `textarea`.
-| `Padding Bottom` | The padding to add inside the `textarea`.
+| Property | Description |
+| -------- | ----------- |
+| `PaddingLeft` | The padding to add inside the `textarea`
+| `PaddingRight` | The padding to add inside the `textarea`          
+| `PaddingTop` | The padding to add inside the `textarea`
+| `PaddingBottom` | The padding to add inside the `textarea`
 | `Left Padding Adjustment` | Inside a model driven app, even when the label is hidden there is padding on the left of the code component to hold icons (e.g. lock icon). To correct for this, the width must be reduced by setting the Left Padding Adjustment to 21. When there is also a label, the Left Padding Adjustment must be set to the width of the label.
-| `Render Border Style` | This can be either **Normal** or Centered**.** When set to Normal, the border width will increase inside the text area box, however using **Centered** will center the border around the edge of the text area box. Use Centered to be compatible with the Power Apps **Classic** controls, and normal for model-driven and **Fluent UI** controls.
+| `RenderBorderStyle` | This can be either **Normal** or **Centered**. When set to Normal, the border width will increase inside the text area box, however using **Centered** will center the border around the edge of the text area box. Use Centered to be compatible with the Power Apps **Classic** controls, and normal for model-driven and **Fluent UI** controls.
 | `Accessibility Label` | The aria label
 
 Not all combinations of style/state are implemented by every component. See the [State Dependent Style Properties](https://github.com/microsoft/powercat-code-components/tree/main/ResizableTextarea#state-dependent-style-properties) in the GitHub component documentation.
@@ -85,19 +87,7 @@ Other properties are the same as the standard [text input control](/power-apps/m
 
 ## Behavior
 
-### Setting Focus on the control
-
-When a new dialog is shown, and the default focus should be on the control, an explicit set focus will be needed. 
-
-To make calls to the input event, you can set a context variable that is bound to the Input Event property to a string that starts with `SetFocus` and followed by a random element to ensure that the app detects it as a change.
-
-E.g.
-
-```powerapps-dot
-UpdateContext({ctxResizableTextareaEvent:"SetFocus" & Text(Rand())}));
-```
-
-The context variable `ctxResizableTextareaEvent` would then be bound to the property `Input Event` property.
+Supports [SetFocus](setfocus.md)
 
 ## Limitations
 

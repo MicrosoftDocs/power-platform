@@ -76,7 +76,7 @@ Table(
 | `Overlay Color` | Color displayed in the overlay area. |
 | `DialogWidth` | The width of the panel (not to be confused with the control width, which should span the app width). |
 | `Position of the panel` | Provide the text value `Right` or `Left` to indicate which side of the screen the panel should be rendered on. |
-| `Theme` | Theme object. Leaving this blank will render the default Power Apps theme. |
+| `Theme` | Theme object. Leaving this blank will render the default Power Apps theme. See [theming](theme.md) for guidance on how to configure. |
 
 ### Event properties
 

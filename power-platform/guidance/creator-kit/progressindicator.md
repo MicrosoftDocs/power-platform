@@ -21,7 +21,7 @@ contributors:
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="ProgressIndicator"::: control
+# :::no-loc text="ProgressIndicator"::: control (Preview)
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -57,6 +57,7 @@ This code component provides a wrapper around the [Fluent UI ProgressIndicator](
 | `AccessibilityLabel` | Screen reader aria-label |
 
 ## Behavior
+
 ### Display loading progress
 
 Make the `ProgressIndicator` control itself (or the surface it's located within) visible when a process begins, then update a variable with the value as segments of the process are completed. Hide it when the process is complete. Use a variable to control the visibility of the control, and update the values between the major code blocks of the process that need to be indicated.

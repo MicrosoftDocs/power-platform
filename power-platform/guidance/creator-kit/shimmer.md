@@ -48,7 +48,7 @@ This code component provides a wrapper around the [Fluent UI Shimmer](https://de
 
 | Property | Description |
 | -------- | ----------- |
-| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
+| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `AccessibilityLabel` | Screen reader aria-label |
 
 ### Items Property value
@@ -93,7 +93,7 @@ Table(
 
 ### Example Theme
 
-The Theme JSON string is passed to the component property, whilst the varTheme can be used to style other standard components such as buttons using the individual colors.
+The Theme JSON string is passed to the component property, whilst the `varTheme` can be used to style other standard components such as buttons using the individual colors.
 
 For more information on the color palette to be used while working with Shimmer, refer `IShimmerColors Interface` section of [IShimmerElement](https://developer.microsoft.com/en-us/fluentui#/controls/web/shimmer#IShimmerElement) documentation.
 

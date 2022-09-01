@@ -81,7 +81,7 @@ Table(
 
 | Property | Description |
 | -------- | ----------- |
-| `Theme` | The Theme object |
+| `Theme` | The Theme object. See [theming](theme.md) for guidance on how to configure. |
 
 ### Event properties
 

@@ -59,7 +59,7 @@ This canvas component mimics the style and behavior of the default Power Apps he
 | `Color` | The color of the control center text |
 | `HeaderFill` | The color of the header's fill, if different from the `Theme` primary color is desired |
 | `Width` | The width of the control |
-| `Theme` | The theme object |
+| `Theme` | The theme object. See [theming](theme.md) for guidance on how to configure. |
 
 ### Event properties
 | Property | Description |

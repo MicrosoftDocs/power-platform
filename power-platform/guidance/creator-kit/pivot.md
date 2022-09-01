@@ -97,6 +97,9 @@ Table(
 | `InputEvent` | An event to send to the control. E.g. `SetFocus`. See below. |
 
 ## Behavior
+
+Supports [SetFocus](setfocus.md)
+
 ### Configure tab behavior
 
 Coordinate tab pages by associating the `Visible` property of dependent components in your app (for example, a container that represents a page) with the value of `Pivot1.Selected.ItemKey`.
@@ -106,20 +109,6 @@ Coordinate tab pages by associating the `Visible` property of dependent componen
   ```powerapps-dot
 Pivot1.Selected.ItemKey = "tabFile"
   ```
-
-### Setting Focus on the control
-
-When a new dialog is shown, and the default focus should be on the control, an explicit set focus will be needed. 
-
-To make calls to the input event, you can set a context variable that is bound to the Input Event property to a string that starts with `SetFocus` and followed by a random element to ensure that the app detects it as a change.
-
-E.g.
-
-```powerapps-dot
-UpdateContext({ctxResizableTextareaEvent:"SetFocus" & Text(Rand())}));
-```
-
-The context variable `ctxResizableTextareaEvent` would then be bound to the property `Input Event` property.
 
 ## Limitations
 

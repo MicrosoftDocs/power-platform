@@ -48,7 +48,7 @@ This canvas component mimics the style and behavior of the [Fluent UI SearchBox 
 
 | Property | Description |
 | -------- | ----------- |
-| `Theme` | The Theme object (not Json formatted) |
+| `Theme` | The Theme object (not Json formatted). See [theming](theme.md) for guidance on how to configure. |
 
 ### Output properties
 

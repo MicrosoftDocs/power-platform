@@ -51,6 +51,7 @@ This canvas component can only be used in canvas apps and custom pages.
 | `SubTitle` | Text displayed under the title |
 | `OnCloseSelect` | Action expression that's executed when the close button is selected. |
 | `OnButtonSelect` | Action expression that's executed when one of the action buttons are selected. |
+| `Theme` | Theme object. See [theming](theme.md) for guidance on how to configure. |
 
 ## Configure Dialog visibility
 

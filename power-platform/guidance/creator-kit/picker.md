@@ -90,7 +90,7 @@ Search(colSuggestions,TagPicker.SearchTerm,"name")
 ### Style properties
 | Property | Description |
 | -------- | ----------- |
-| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
+| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `FontSize` | the font size of the tags shown inside the Picker. |
 | `BorderRadius` | the border radius of the tags shown inside the Picker. |
 | `ItemHeight` | the height of the tags (pixesl) shown inside the Picker. |
@@ -108,7 +108,11 @@ Search(colSuggestions,TagPicker.SearchTerm,"name")
 | `TagDisplayName` | the text that is used to create a new **Tag** when the **On Change** event is fired |
 | `AutoHeight` | When the tag picker wraps onto multiple lines, the **Auto Height** property can be used to control the height of a responsive container height. |
 
-## OnChange event
+## Behavior
+
+Supports [SetFocus](setfocus.md)
+
+### OnChange event
 
 The `TagPicker`component raises an `OnChange` event when tags are added or removed. The properties used are:
 
