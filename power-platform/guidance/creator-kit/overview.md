@@ -22,12 +22,6 @@ contributors:
 
 # Creator kit overview (preview)
 
-[This article is pre-release documentation and is subject to change.]
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
-
 The Creator Kit helps you create Power Apps experiences on the web and mobile platforms with easy-to-use sample controls and components. The kit contains a component library, several commonly used [Power Apps component framework controls](/power-apps/developer/component-framework/overview), and other utilities that increase developer productivity. 
 
 All controls and components included in the kit use the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help you easily create consistent, beautiful, and effective user experiences for custom business applications.
@@ -38,7 +32,7 @@ All controls and components included in the kit use the [Fluent UI](https://deve
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
 
-You can view the code in the latest version of the Creator Kit in the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit). View the code components and more detailed documentation in the [Creator Kit Code Components GitHub repository](https://github.com/microsoft/powercat-code-components).
+You can view the code in the latest version of the Creator Kit in the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit). View the code components and more detailed component level documentation in the [Creator Kit Code Components GitHub repository](https://github.com/microsoft/powercat-code-components).
 
 :::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the Creator Kit." border="false":::
 
