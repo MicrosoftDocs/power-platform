@@ -24,11 +24,11 @@ contributors:
 
 Before you use the components included with the Creator Kit, use the reference app to learn component behavior and implementation patterns. With the reference app, you'll also learn how to add components to an app. 
 
-The Creator Kit includes the following assets, split up into three solutions:
+The Creator Kit includes the following assets, distributed in three solutions:
 
 |Solution | Items |
 |-|-| 
-| **CreatorKitCore** | <li>24 Power Apps component framework and canvas [components](components.md) |
+| **CreatorKitCore** | <li>24 Power Apps component framework and canvas [components](components.md)</li><li>Must be installed before other solutions</li> |
 | **CreatorKitReference (MDA)** | <li>A reference app (Model Driven with custom pages) to interactively learn with</li><li>A canvas page template</li> |
 | **CreatorKitReference (Canvas)** | <li>Reference app (Canvas) to interactively learn with (does not required standalone Power Apps license)</li><li>A canvas template app</li><li>A theme editor that generates Theme JSON, used to easily style consistent components</li>
 
