@@ -32,9 +32,11 @@ All controls and components included in the kit use the [Fluent UI](https://deve
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
 
-You can also download the reference app solutions for canvas at [aka.ms/CreatorKitReferenceCanvas](https://aka.ms/CreatorKitReferenceCanvas) and for custom pages at [aka.ms/CreatorKitReferenceMDA](https://aka.ms/reatorkitreferencemda)
+You can also download the reference app solutions: 
+- for canvas at [aka.ms/CreatorKitReferenceCanvas](https://aka.ms/CreatorKitReferenceCanvas) 
+- for custom pages at [aka.ms/CreatorKitReferenceMDA](https://aka.ms/reatorkitreferencemda)
 
-You can view the code in the latest version of the Creator Kit in the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit). View the code components and more detailed component level documentation in the [Creator Kit Code Components GitHub repository](https://github.com/microsoft/powercat-code-components).
+View the [latest version release notes](https://aka.ms/creatorkitlatestrelease) in the [microsoft/powercat-creator-kit GitHub Repository](https://github.com/microsoft/powercat-creator-kit). The code component source code and more detailed component-level is available in the [microsoft/powercat-code-components GitHub repository](https://github.com/microsoft/powercat-code-components).
 
 :::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the Creator Kit." border="false":::
 
@@ -54,11 +56,11 @@ Although the underlying features and components used to build the kit (such as c
 
 If you face issues with:
 
-- **Using the kit**, [report your issue](https://aka.ms/Creator-Kit-Issues). 
+- **Using the kit components**, [report your issue](https://aka.ms/Creator-Kit-Issues) (requires GitHub account)
 
-- **Features in Microsoft Power Platform**, use your standard channel to contact Microsoft Support.
+- **Features in Microsoft Power Platform**, use your standard channel to contact Microsoft Support. See guidance on contacting support for [admins]() and [makers](https://powerapps.microsoft.com/en-us/support/).
 
-See [more guidance on support]().
+If you are not sure if you're experiencing an issue with the Creator Kit or the platform, [report the issue on the GitHub](https://aka.ms/Creator-Kit-Issues) first and our team will triage the issue.
 
 ## More resources
 
