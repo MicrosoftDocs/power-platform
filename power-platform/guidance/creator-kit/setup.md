@@ -40,6 +40,7 @@ contributors:
 The reference solutions can optionally be installed after the `CreatorKitCore` solution is installed.
 
 Solution-specific prerequisites:
+
 | Solution | Notes |
 |-|-|
 | `CreatorKitReference (MDA)` | <li>Reference App is a Model Driven app that requires a premium license to play</li><li>Reference App uses the Dataverse connector; Environment's DLP Policies must allow the connector.</li> |
