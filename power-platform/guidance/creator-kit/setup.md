@@ -37,13 +37,13 @@ contributors:
 
 
 ## Install the Reference solutions
-The reference solutions can optionally be installed after the `CreatorKitCore` solution is installed:
+The reference solutions can optionally be installed after the `CreatorKitCore` solution is installed.
 
-Solution specific prerequisites:
+Solution-specific prerequisites:
 | Solution | Notes |
 |-|-|
-|`CreatorKitReference (MDA)`|<li>Reference App is a Model Driven app that requires a premium license to play</li><li>Reference App uses the Dataverse connector; Environment's DLP Policies must allow the connector.</li> |
-|`CreatorKitReference (Canvas)`|<li>Before installation, enable the Environment setting 'Power Apps code components for canvas apps'</li>|
+| `CreatorKitReference (MDA)` | <li>Reference App is a Model Driven app that requires a premium license to play</li><li>Reference App uses the Dataverse connector; Environment's DLP Policies must allow the connector.</li> |
+| `CreatorKitReference (Canvas)` | <li>Before installation, enable the Environment setting 'Power Apps code components for canvas apps'</li> |
 
 
 > [!div class="nextstepaction"]
