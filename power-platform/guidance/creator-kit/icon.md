@@ -67,7 +67,9 @@ For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/flu
 | ------ | ----------- |
 | `InputEvent` |  An event to send to the control. |
 
+## Behavior
 
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
 
 ## Limitations
 

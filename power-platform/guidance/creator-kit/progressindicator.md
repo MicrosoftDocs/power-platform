@@ -39,21 +39,22 @@ Progress indicators are used to show the completion status of an operation lasti
 This code component provides a wrapper around the [Fluent UI ProgressIndicator](https://developer.microsoft.com/en-us/fluentui#/controls/web/progressindicator) control for use in canvas & custom pages. See component documentation for best practices.
 
 ## Properties
+
 ### Key properties
 
 | Property | Description |
 | -------- | ----------- |
 | `Label` | Optional label for spinner. |
 | `Percentage Complete` | Percentage of the operation completed, on the scale of 0 to 1. If not set Indeterminate Indicator will be shown. |
-| `Type of Indicator` | Specifies the type of indicator style. Choices: `Default Indicator` or `Indeterminate Indicator` |
-| `Hide Progress State` |  Specify true to hide progress state |
-| `Bar Height` |  Specify height of the bar as applicable |
+| `TypeOfIndicator` | Specifies the type of indicator style. Choices: `Default Indicator` or `IndeterminateIndicator` |
+| `HideProgressState` |  Specify true to hide progress state |
+| `BarHeight` |  Specify height of the bar as applicable |
 
 ### Style properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
+| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `AccessibilityLabel` | Screen reader aria-label |
 
 ## Behavior

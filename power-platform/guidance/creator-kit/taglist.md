@@ -105,7 +105,7 @@ Table(
 
 ## Behavior
 
-Supports [SetFocus](setfocus.md)
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
 
 
   ## Limitations

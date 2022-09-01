@@ -86,7 +86,7 @@ Table(
 
 | Property | Description |
 | -------- | ----------- |
-| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
+| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `RenderSize` | The pivot control can be rendered in two sizes (large/normal) |
 | `AccessibilityLabel` | Screen reader aria-label |
 
@@ -98,7 +98,7 @@ Table(
 
 ## Behavior
 
-Supports [SetFocus](setfocus.md)
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
 
 ### Configure tab behavior
 

@@ -70,6 +70,8 @@ This code component provides a wrapper around the [Fluent UI Calendar](https://d
 
 ## Behavior 
 
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
+
 ### Using OnChange
 
 When a date is selected, value can be obtained by the selectedDate output property. Below is a set of sample code which can be added in 'OnChange' property, depending on how to output need to be visualized.

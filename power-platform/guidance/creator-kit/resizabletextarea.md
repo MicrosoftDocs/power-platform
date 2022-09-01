@@ -87,7 +87,7 @@ Other properties are the same as the standard [text input control](/power-apps/m
 
 ## Behavior
 
-Supports [SetFocus](setfocus.md)
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
 
 ## Limitations
 

@@ -112,6 +112,8 @@ Table(
 
 ## Behavior
 
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
+
 ### Configure "On Select" behavior
 
 Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.

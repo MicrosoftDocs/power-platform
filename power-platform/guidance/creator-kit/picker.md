@@ -110,7 +110,7 @@ Search(colSuggestions,TagPicker.SearchTerm,"name")
 
 ## Behavior
 
-Supports [SetFocus](setfocus.md)
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
 
 ### OnChange event
 

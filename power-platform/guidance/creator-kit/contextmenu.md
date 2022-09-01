@@ -84,25 +84,28 @@ Example Power Fx formula for `Items`:
 
 | Property | Description |
 | -------- | ----------- |
-| `Theme` |Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps.
+| `Theme` |Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `Chevron` | Show or hide the down chevron on the root button |
-| `Icon color` | Optional. color of the icon on the context menu button. |
+| `IconColor` | Optional. color of the icon on the context menu button. |
 | `HoverIconColor` | Optional. color of the icon when hovered over the context menu button. |
 | `IconSize` | Optional. In pixels, the size of the icon on the context menu button. |
-| `Font size` | Optional. In pixels, the size of the text on the context menu button. |
-| `Font color` | Optional. the color of the text on the context menu button. |
-| `Hover font color` | Optional. the color of the text when hovered over the context menu button. |
-| `Fill color` | Optional. the background color of the context menu button. |
-| `Hover fill color` | Optional. the background color when hovered over the context menu button. |
-| `Text alignment` | The alignment of the button text. Possible values: Center, Left or Right |
-| `Accessibility label` | Screen reader aria-label |
+| `FontSize` | Optional. In pixels, the size of the text on the context menu button. |
+| `FontColor` | Optional. the color of the text on the context menu button. |
+| `HoverFontColor` | Optional. the color of the text when hovered over the context menu button. |
+| `FillColor` | Optional. the background color of the context menu button. |
+| `HoverFillColor` | Optional. the background color when hovered over the context menu button. |
+| `TextAlignment` | The alignment of the button text. Possible values: Center, Left or Right |
+| `AccessibilityLabel` | Screen reader aria-label |
 
 ### Event Properties
 
 | Property | Description |
 | -------- | ----------- |
 | `InputEvent` | An event to send to the control. E.g. `SetFocus`. See below. |
+
 ## Behavior
+
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
 
 ### Configure 'On Select' behavior
 
