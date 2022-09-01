@@ -41,11 +41,13 @@ Please note the following with regards to solution version compatibility.
 - Create a new solution with the same publisher leveraging [solution layering concepts](solution-layers-alm.md) and [solution segmentation](segmented-solutions-alm.md) to add or modify components. 
 ### Release an upgrade to an existing solution
 
-
+Importing a solution as an upgrade is the default import option and with good reason. Importing a solution with the upgrade option performs operations most teams would expect. All solution components are updated with changes and any components removed that do not exist in the new version of the managed solution will be removed from the target environment. to an existing managed solution removes unused components and implements upgrade logic. 
 
 ### Release an update for your managed solution
 
-The preferred release method is to modify an existing managed solution in your development environment, publishing changes as needed, export as managed with an updated version, and importing using the *update* option. 
+The update option may be leveraged during a managed solution import to process a solution importing only the changes made during development. Where a full solution upgrade will process all metadata changes and allow for deleting of components an update is purely additive. If a team has deleted a component during an import with the update option the deletion will not be processed. The result is that the will component remaining in the target environment. To handle deleting solution components on import see the [Release an upgrade to an existing solution](#release-an-upgrade-to-an-existing-solution) section.
+
+![update-solution-import-option-screenshot](./media/update-solution-import-option-screenshot.png)
 
 ... TODO add more
 
