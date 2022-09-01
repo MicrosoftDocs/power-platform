@@ -26,7 +26,7 @@ contributors:
 
 A control used to create a navigation experience.
 
-:::image type="content" source="media/expandmenu.png" alt-text="ExpandMenu control.":::
+:::image type="content" source="media/expander.png" alt-text="ExpandMenu control.":::
 
 ## Description
 
