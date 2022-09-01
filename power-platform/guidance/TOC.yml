@@ -346,6 +346,8 @@
       items:
       - name: Theming
         href: creator-kit/theme.md
+      - name: Set focus
+        href: creator-kit/setfocus.md
   - name: Automation adoption best practices
     items:
     - name: Overview
