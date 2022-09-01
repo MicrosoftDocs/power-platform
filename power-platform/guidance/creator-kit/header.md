@@ -84,16 +84,15 @@ Table(
 
 ## Behavior
 
-## Replace default Power Apps navigation bar with `Header`
+### Replace default Power Apps navigation bar with `Header`
 
-If you want to only display the header, you can hide the default navigation bar that is rendered by Power Apps player by sharing the app link with the query parameter `hideNavBar`.
-
-Set the `Width` property to the following expression. The width values can be adjusted based on the resolution of the app.
+If you want to only display the header, you can hide the default navigation bar that is rendered by Power Apps player by sharing the app link with the query parameter `hideNavBar`:
 
 ```powerapps-dot
-If( Self.IsExpanded, 200, 46 )
+https://apps.powerapps.com/play/APPID?source=iframe&hidenavbar=true
 ```
 
+Where `APPID` is replaced with your app's value.
 
 ## Limitations
 
