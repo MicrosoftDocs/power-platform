@@ -20,7 +20,7 @@ contributors:
   - slaouist
 ---
 
-# :::no-loc text="ExpandMenu"::: control
+# :::no-loc text="ExpandMenu"::: control (Experimental)
 
 [This article is pre-release documentation and is subject to change.]
 
