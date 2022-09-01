@@ -254,11 +254,8 @@ If approved in the past, but before deletion, it sends a reminder to archive the
 
 Runs daily and does two cleanup tasks for the workflow.
 
-1. Deletes timed out requests. Deletes, from the Archive Approval table, all non-approved requests that were created over a month ago.
-
 1. Deletes the flows and apps that were approved for deletion more than three weeks ago (configurable).
-
-**Customize**: By default, this flow won't delete the apps and flows. This is to ensure you explicitly are ready for that to occur. To begin deletion of flows and apps, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#all-environment-variables) to **Yes**.
+1. Deletes expired approval requests that were created over a month ago. If a maker ignores an approval request, their app or flow will not get deleted, however they will receive another approval request again in the future. Additionally, their manager will receive a notification on ignored requests.
 
 #### Admin \| Email Managers Ignored Inactivity notifications Approvals
 
