@@ -2,7 +2,7 @@
 
 ### Application List
 
-This example lists all available applications in the target environment.
+This example lists all available applications in the specified environment.
 
 ```powershell
 pac application list --environment-id 00000000-0000-0000-0000-000000000000
