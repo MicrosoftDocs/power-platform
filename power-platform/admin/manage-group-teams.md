@@ -30,7 +30,7 @@ The administration of app and data access for Microsoft Dataverse has been exten
 
 Both types of Azure AD groups—Office and Security—can be used to secure user-access rights. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 
-Both types of Azure AD groups — Office and Security — with a Membership type *Assigned* can be used to secure user-access rights. Membership type *Dynamic User* and *Dynamic Device* is not supported. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
+Both types of Azure AD groups — Office and Security — with a Membership type *Assigned* can be used to secure user-access rights. Membership type *Dynamic Device* is not supported but *Dynamic User* is now supported. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 
 The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the environments and assign a security role to these group teams. For each Azure AD group, the administrator can create group teams based on the Azure AD group **Members**, and/or **Owners**, or **Guests**. For each Azure AD group, an administrator can create separate group teams for owners, members, guests, and members and guests, and assign a respective security role to each of these teams.
 
