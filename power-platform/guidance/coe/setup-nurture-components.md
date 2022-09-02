@@ -39,7 +39,7 @@ The core components solution is required for the nurture components solution to 
 The video hub has two apps:
 
 1. Video hub - admin: a model driven app, designed for administrators to add content, moderate comments and curate shared playlists.
-1. Video hub: this is the canvas app that all users access.
+1. Video hub: a canvas app that all users access.
 
 ### Manage content in the Video hub - admin app
 
@@ -96,12 +96,12 @@ The canvas app has two features that can be enabled:
 1. Comments
 2. Related video
 
-Either, or both can be enabled by setting the following variables in the apps OnStart event. These variables control the visibility of the related components in the canvas app.
+Either, or both can be enabled by setting the following environment variables in the Admin - Command Center app:
 
-- **gloCommentsEnabled**: true to enable, false to disable.
-- **gloRelatedVideoEnabled**: true to enable, false to disable.
+1. VideoHubEnableComments
+1. VideoHubRelatedVideos
 
-![Set the variables in OnStart to enable or disable features.](media/App-OnStart-Variables.png "Set the variables in OnStart to enable or disable features")
+Follow [detailed instructions for setting environment variables](/power-platform/guidance/coe/faq#update-environment-variables).
 
 #### Comments
 
