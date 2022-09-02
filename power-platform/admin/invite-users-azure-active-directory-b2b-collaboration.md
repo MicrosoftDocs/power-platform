@@ -3,7 +3,7 @@ title: "Invite users with Azure Active Directory B2B collaboration  | MicrosoftD
 description: Invite users with Azure Active Directory B2B collaboration
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/08/2022
+ms.date: 08/15/2022
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -149,24 +149,30 @@ Follow these steps to allow B2B collaboration users to create Power Apps.
     Set-TenantSettings $requestBody 
     ```
 
-3. Assign the [Environment Maker](database-security.md) security role to the B2B guest users that you want to be able to create custom list forms using Power Apps.
+3. Assign the [Environment Maker](database-security.md) security role to the B2B guest users that you want to be able to create apps and Microsoft list custom forms using Power Apps.
 
     > [!TIP]
-    > In addition, you can also review all other members of this security role (especially in the default environment), and remove users that aren't expected to have this privilege.
+    > In addition, you can also review all other guests of this security role (especially in the default environment), and remove users that aren't expected to have this privilege.
 
 After the B2B guest users are given the required permissions to create and edit apps, they can now create Power Apps and Microsoft List [custom forms](/powerapps/maker/canvas-apps/customize-list-form#open-the-form) using Power Apps.
+
+4. B2B guests can [follow these steps](/power-apps/maker/canvas-apps/intro-maker-portal) to sign in the preferred Azure AD tenant to build apps.   
 
 ### Known limitations
 1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to an Azure Active Directory tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
 2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they’ll need a license with Dataverse use rights assigned to them in the resource tenant.
 
 ### See also  
- [Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)   
- [Azure Active Directory B2B collaboration code and PowerShell samples](/azure/active-directory/b2b/code-samples)   
- [Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](/azure/active-directory/active-directory-b2b-faq)   
- [Azure Active Directory B2B Collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   
- [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/)
-
+[Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)  
+[Azure Active Directory B2B collaboration code and PowerShell samples](/azure/active-directory/b2b/code-samples)   <br /> 
+[Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](/azure/active-directory/active-directory-b2b-faq)   <br /> 
+[Azure Active Directory B2B Collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   <br /> 
+[Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br /> 
+[Azure Active Directory cross-tenant access overview](/azure/active-directory/external-identities/cross-tenant-access-overview) <br /> 
+[Restrict cross-tenant inbound and outbound access](cross-tenant-restrictions.md) <br /> 
 [Share a canvas app with guest users](/powerapps/maker/canvas-apps/share-app-guests)
+
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

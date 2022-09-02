@@ -1,7 +1,7 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 06/13/2022
+ms.date: 08/30/2022
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
@@ -140,7 +140,7 @@ For full access users:
 4. Remove all columns except **Full Name**.
 5. Select **Add Columns** > **Windows Live ID**.
 6. Select **OK** > **Results** to see the list of full access users.
-7. Select all the records, select **Export Users** in the ribbon, and then choose **Static Worksheet (Page only)**.
+7. Select all the records, select **Export Users** in the ribbon, and then choose **Static Worksheet**. 
 8. Follow steps 1-7 above for the destination environment. You should now have two separate Excel sheets—one for source and one for target.
 9. Open the files for editing.
 10.	Starting with the source Excel sheet, copy the records under the **Windows Live ID** column into Notepad. Do not copy the header.

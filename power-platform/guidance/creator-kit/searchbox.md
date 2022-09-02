@@ -20,7 +20,7 @@ contributors:
   - slaouist
 ---
 
-# :::no-loc text="SearchBox"::: control
+# :::no-loc text="SearchBox"::: control (Experimental)
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -34,31 +34,42 @@ A search box (`SearchBox`) provides an input field for searching within a site o
 
 This canvas component mimics the style and behavior of the [Fluent UI SearchBox control](https://developer.microsoft.com/fluentui#/controls/web/searchbox).
 
-[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
+## Properties
 
-## Limitations
-
-This canvas component can only be used in canvas apps and custom pages.
-
-## Key properties
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `HintText` | The hint text displayed when there's no text. |
-| `Text` | The value of the text in the search box. |
+| `HintText` | The hint text displayed when there's no search text |
+| `Default` | Default text displayed when the component is rendered |
+| `ClearButton` | Default text displayed when the component is rendered |
 
-## Configure search behavior
+### Style properties
 
-Add the `SearchBox` control to your app where you need a search interface that's coupled with a gallery, `DetailsList`, or some control that can display a dataset.
+| Property | Description |
+| -------- | ----------- |
+| `Theme` | The Theme object (not Json formatted). See [theming](theme.md) for guidance on how to configure. |
+
+### Output properties
+
+| Property | Description |
+| -------- | ----------- |
+| `SearchText` | The value of the text in the search box. |
+
+## Behavior
+
+### Configure search behavior
+
+Add this control to your app where a search interface is needed, usually coupled with a gallery, [`DetailsList`](detailslist.md), or any control that can display a dataset.
 
 Create a search experience by using the [Search() or Filter()](/power-apps/maker/canvas-apps/functions/function-filter-lookup) expressions that use the value of the `Text` property in the `SearchBox`.
 
 ```powerapps-dot
-Search( Accounts, SearchBox.Text, "name" )
+Search( Accounts, SearchBox.SearchText, "name" )
 ```
 
-## Best practices
+## Limitations
 
-Go to [Fluent UI SearchBox control best practices](https://developer.microsoft.com/fluentui#/controls/web/searchbox).
+This canvas component can only be used in canvas apps and custom pages.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -21,19 +21,30 @@ contributors:
 ---
 # Install the Creator Kit
 
-[This article is pre-release documentation and is subject to change.]
-
 ## Prerequisites
 
-- A [Microsoft Power Platform environment with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database) having the [Power Apps component framework feature enabled](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) (the System Administrator security role is needed to enable the feature).
+- A [Microsoft Power Platform environment with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
+- The [Power Apps code components for Canvas apps feature enabled](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) (the System Administrator security role is needed to enable the feature).
 - The System Customizer security role is needed to use the Creator Kit components.
 - A Power Apps for Microsoft 365 license.
 
-## Install the solution
+## Step 1 - install the Creator Kit solution
 
-1. [Download](https://aka.ms/creatorkitdownload) the solution.
-1. In [Power Apps](https://make.powerapps.com), select your Microsoft Power Platform environment.
-1. Import the solution.
+1. [Download the `CreatorKitCore` solution](https://aka.ms/creatorkitdownload).
+2. Ensure the [Power Apps code components for Canvas apps feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) is enabled in the [Environment settings](/power-platform/admin/edit-properties-environment).
+3. In [Power Apps](https://make.powerapps.com), select your Microsoft Power Platform environment.
+4. Import the solution.
+
+
+## Step 2 - Install the Reference solutions (optional)
+The reference solutions can optionally be installed after the `CreatorKitCore` solution is installed.
+
+Solution-specific prerequisites:
+
+| Solution | Notes |
+|-|-|
+| [`CreatorKitReference(MDA)`](https://aka.ms/creatorkitreferencemda) | <li>Reference App is a Model Driven app that requires a premium license to play</li><li>Reference App uses the Dataverse connector; Environment's DLP Policies must allow the connector.</li> |
+| [`CreatorKitReference(Canvas)`](https://aka.ms/creatorkitreferencecanvas) | <li>Before installation, enable the Environment setting 'Power Apps code components for canvas apps'</li> |
 
 > [!div class="nextstepaction"]
 > [Next step: Learn how to use the kit](creator-kit-explained.md)
