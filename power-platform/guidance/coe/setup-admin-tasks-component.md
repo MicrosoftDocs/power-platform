@@ -36,21 +36,21 @@ You'll need to download the COE Starter Kit file to install the Administration P
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
-1. Extract the zip file after downloading and before moving on to the next step.
+2. Extract the zip file after downloading and before moving on to the next step.
 
    The CoE Starter Kit compressed file contains all solution and non-solution components that make up the CoE Starter Kit.
 
->[!IMPORTANT]
->The solution name contains the version number. In the following step use the **admintaskanalysis_core_x_x_x_xx_managed** zip solution from the download.
+   > [!IMPORTANT]
+   > The solution name contains the version number. In the following step use the **admintaskanalysis_core_x_x_x_xx_managed** zip solution from the download.
 
-1. Import the solution.
+3. Import the solution.
 
 The import can take up to 15 minutes to be completed.
 
 ## Import sample admin task data
 
->[!NOTE]
->Importing the sample task data is optional but recommended.
+> [!NOTE]
+> Importing the sample task data is optional but recommended.
 
 If you want to pre-populate the solution with common administrative tasks, import data from the sample admin tasks spreadsheet. This task list can be particularly helpful when you're just getting started with Power Platform.
 
@@ -86,15 +86,15 @@ You can configure and modify the Power BI dashboard by working directly with the
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
-1. In Power BI Desktop, open the **PowerPlatformAdminPlanner.pbit** file, which can be found in [the CoE Starter Kit you downloaded and extracted](#set-up-the-power-platform-administration-planning-component).
+2. In Power BI Desktop, open the **PowerPlatformAdminPlanner.pbit** file, which can be found in [the CoE Starter Kit you downloaded and extracted](#set-up-the-power-platform-administration-planning-component).
 
-1. Enter the URL of the environment where you imported the solution.
+3. Enter the URL of the environment where you imported the solution.
 
    > [!IMPORTANT]
    > Do not include the https:// prefix, or the '/' suffix when adding the environment URL.
 
-1. Save the dashboard locally or select **Publish** and choose the workspace you want to publish the report to.
+4. Save the dashboard locally or select **Publish** and choose the workspace you want to publish the report to.
 
-1. [Configure scheduled refresh](/power-bi/connect-data/refresh-data#configure-scheduled-refresh) for your Power BI Dataset to update the report daily.
+5. [Configure scheduled refresh](/power-bi/connect-data/refresh-data#configure-scheduled-refresh) for your Power BI Dataset to update the report daily.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
