@@ -1,7 +1,7 @@
 ---
 title: "Content security policy"
 description: "Use content security policy to prevent clickjacking in Power Apps."  
-ms.date: 06/15/2022
+ms.date: 09/02/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
