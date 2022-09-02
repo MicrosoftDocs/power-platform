@@ -39,23 +39,19 @@ The CoE nurture components solution contains assets relevant to everyone in the 
 
 #### Video hub - admin
 
-A model driven app, designed for administrators and/ or moderators of the video hub.  Users of this app can add video content, manage comment status and playlists.
+A model driven app, designed for administrators and/or moderators of the video hub.  Users of this app can add video content, manage comment status and playlists.
 
 ![Video hub - admin](media/Video-hub-admin-app.png)
 
 **Permission**: Share with CoE admins, community leads or champions community.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment:
-
-1. end users need to have a Per User license 
-1. or the app needs to be assigned a Per App license 
-1. or the environment needs to be covered by pay-as-you-go
+**Prerequisite**: This app uses Microsoft Dataverse. End users need to have a Per User license.
 
 #### Video hub
 
 The canvas app for video content, playlists, etc.
 
-![Related video enabled](media/Video-hub-start-screen.png) 
+![Related video enabled](media/Video-hub-start-screen.png)
 
 Content is grouped in one of three in-built categories:
 

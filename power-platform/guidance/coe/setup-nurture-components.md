@@ -65,8 +65,8 @@ Playlists are managed by administrators.  Playlists are curated lists of video c
 |------|-----|------|
 | Name | Text | Represents the display name for the playlist |
 | Owner | User | The creator of the record | 
-| Playlist description | Text | Represents a detailed decription of the playlist |
-| Playlist type | Choice | Represents the playlist type.  Options available are Personal or shared. Shared playlists are visible to all users, whereas private playlists are only visible to the person that created it. **Note** - private playlists are in development. |
+| Playlist description | Text | Represents a detailed description of the playlist |
+| Playlist type | Choice | Represents the playlist type.  Options available are personal or shared. Shared playlists are visible to all users, private playlists are only visible to the person that created it. **Note** - private playlists are coming in a future release. |
 
 Playlists are a curated collection of videos. One playlist has many playlist items, the schema for a playlist item is represented in the following table:
 
@@ -78,9 +78,9 @@ Playlists are a curated collection of videos. One playlist has many playlist ite
 
 #### Comments
 
-Comments are created by users of the video hub canvas app.  Comments are moderated and only visible when an administrator has set the 'Comment status' column value to 'Approved'.
+Comments are created by users of the video hub canvas app.  Comments are moderated and only visible when an administrator has set the **Comment status** column value to **Approved**.
 
-By default, the comment functionality is hidden in the video hub canvas app. This can be updated (see following section).  Comments have the following schema:
+Comments have the following schema:
 
 |Column|Column type|Description|
 |------|-----|------|
@@ -96,18 +96,18 @@ The canvas app has two features that can be enabled:
 1. Comments
 2. Related video
 
-Either, or both can be enabled by setting the following environment variables in the Admin - Command Center app:
+Either, or both can be enabled by updating the following environment variables in the Admin - Command Center app:
 
-1. VideoHubEnableComments
-1. VideoHubRelatedVideos
+1. Video Hub - Enable Comments
+1. Video Hub - Related Videos
 
 Follow [detailed instructions for setting environment variables](/power-platform/guidance/coe/faq#update-environment-variables).
 
-#### Comments
+#### Enable Comments
 
 When enabled, video hub users will be able to comment on selected videos. Comment moderation is managed through the admin app - comments must be approved prior to them becoming visible in the video hub.
 
-Approve comments in the admin app by 
+Approve comments in the admin app by
 ![Approve comments](media/Approve-or-reject-comment.png)
 
 #### Related video
@@ -272,14 +272,16 @@ Here is the full list of environment variables that impact the nurture solution,
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
-| Name | Description |
-|------|---------------|
-| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    |
-| Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. *Currently not used.* |
-| Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
-| Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
-| Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
-| Pulse - How many makers to survey? | The Pulse survey is send to makers to provide feedback on their experience working with the CoE and Power Platform. Provide the number of makers you want to survey regularly here. If you set this number to 5, the survey will be sent to 5 random makers per week. A Default value of 1 is provided. |
+| Name | Description | Default Value
+|------|---------------|------|
+| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    | n/a |
+| Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. *Currently not used.* |  n/a |
+| Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app | n/a |
+| Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app | n/a |
+| Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) | n/a |
+| Pulse - How many makers to survey? | The Pulse survey is send to makers to provide feedback on their experience working with the CoE and Power Platform. Provide the number of makers you want to survey regularly here. If you set this number to 5, the survey will be sent to 5 random makers per week. | 1 |
+| Video Hub - Enable comments | Enable or disable end users to leave comments on videos published via the Video Hub. Disabled by default.  | No |
+| Video Hub - Related Videos | Enable or disable showing related videos in the Video Hub. Enabled by default. | Yes |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
