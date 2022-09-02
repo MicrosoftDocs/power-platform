@@ -1,6 +1,6 @@
 ### Examples
 
-### Application List
+#### Application List
 
 This example lists all available applications in the specified environment.
 
@@ -8,7 +8,7 @@ This example lists all available applications in the specified environment.
 pac application list --environment-id 00000000-0000-0000-0000-000000000000
 ```
 
-### Application List JSON Export
+#### Application List JSON Export
 
 This example lists all available applications for the tenant you're connected to and saves it as a JSON file in the directory `c:\home`.
 
