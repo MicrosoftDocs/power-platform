@@ -274,7 +274,7 @@
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
-  - name: Power Platform Creator Kit (preview)
+  - name: Power Platform Creator Kit
     items:
     - name: Overview
       href: creator-kit/overview.md
@@ -302,9 +302,11 @@
           href: creator-kit/breadcrumb.md
         - name: ContextMenu
           href: creator-kit/contextmenu.md
-        - name: CommandBar
+        - name: CommandBar (preview)
           href: creator-kit/commandbar.md
-        - name: ExpandMenu
+        - name: Header (experimental)
+          href: creator-kit/header.md
+        - name: ExpandMenu (experimental)
           href: creator-kit/expandmenu.md
         - name: Nav
           href: creator-kit/nav.md
@@ -314,28 +316,38 @@
         href: creator-kit/detailslist.md
       - name: Pickers
         items:
+        - name: Calendar (preview)
+          href: creator-kit/calendar.md
         - name: TagsPicker
           href: creator-kit/picker.md
         - name: TagList
           href: creator-kit/taglist.md
       - name: Progress
         items:
-        - name: Spinner
+        - name: Shimmer (preview)
+          href: creator-kit/shimmer.md
+        - name: Spinner (preview)
           href: creator-kit/spinner.md
-        - name: ProgressIndicator
+        - name: ProgressIndicator (preview)
           href: creator-kit/progressindicator.md
       - name: Surfaces
         items:
-        - name: Dialog
+        - name: Dialog (experimental)
           href: creator-kit/dialog.md
-        - name: Panel
+        - name: Panel (experimental)
           href: creator-kit/panel.md
       - name: Utilities
         items:
         - name: Elevation
           href: creator-kit/elevation.md
         - name: KeyboardShortcuts
-          href: creator-kit/keyboardshortcuts.md      
+          href: creator-kit/keyboardshortcuts.md  
+    - name: Reference
+      items:
+      - name: Theming
+        href: creator-kit/theme.md
+      - name: Set focus
+        href: creator-kit/setfocus.md
   - name: Automation adoption best practices
     items:
     - name: Overview
