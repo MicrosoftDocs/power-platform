@@ -44,12 +44,12 @@ Organizations also gain rights to use Power Automate if they are licensed to use
 - Power Apps Plan 2 (grandfathered)
 - Windows licenses.
 
-When you use seeded plans, your flows must run within the context of the application in which the seeded plan is available. For example, flows included within a Dynamics/Power Apps application can connect to the following.
+When you use seeded plans, your flows must run within the context of the application in which the seeded plan is available. For example, flows included within a Dynamics 365/App created using Power Apps can connect to the following.
 
-- To any data source within the use rights of the Dynamics 365/Power Apps app.
-- Directly with the Dynamics 365/Power Apps app (via built in triggers/actions).
+- To any data source within the use rights of the Dynamics 365/App created using Power Apps.
+- Directly with the Dynamics 365/App created using Power Apps (via built in triggers/actions).
 
-For example, if a flow uses [premium connectors](#premium-connectors) and it's triggered by a Power App app, any user can run the flow if they have a Power Apps license.
+For example, if a flow uses [premium connectors](#premium-connectors) and it's triggered by an app, any user can run the flow if they have a Power Apps license.
 
 If the flow is isolated and has nothing to do with the application, then a standalone Power Automate license must be purchased.
 
@@ -74,7 +74,7 @@ All customers are in a transition period. That means that enforcement isn't stri
 Here are a few things to be aware of during the transition period.
 
 1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Requests limits and allocations](../api-request-limits-allocations.md) to understand both plan limits and transition period limits. 
-1. These transition period limits are applied at the flow level during transition period. Additionally, a seperate per user level limit of 1M actions is applied during transition period to ensure users dont go above 1M actions across all their flow runs in a day. Once the transition period ends, the actual limits will be applied at user level for per user plans and flow level for per flow plan.
+1. These transition period limits are applied at the flow level during transition period. Additionally, a separate per user level limit of 1M actions is applied during transition period to ensure users do not go above 1M actions across all their flow runs in a day. Once the transition period ends, the actual limits will be applied at user level for per user plans and flow level for per flow plan.
 1. Since limits are more generous during the transition period, [stacking of user licenses isn't supported](../api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
 1. Power Platform requests capacity add-on packs are not assignable to the users or flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 1. Seeded license users can only use flows within the context of the app. See [the seeded plans](#seeded-plans) section to learn more. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
@@ -315,7 +315,7 @@ Global admins use the Microsoft 365 admin center to start these trials and assig
 
 Follow these steps to get started.
 
-1. Sign into [the Microsoft 365 admin center](https://admin.microsoft.com/).
+1. Sign in to [the Microsoft 365 admin center](https://admin.microsoft.com/).
 1. Go to **Purchase services** under the **Billing** section.
 1. Search for "Power Automate", and then select a plan.
 

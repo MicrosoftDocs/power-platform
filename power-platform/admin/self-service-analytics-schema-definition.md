@@ -79,7 +79,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Description             | Longtext           | App description (not available currently)         |
 | tenantId                | Guid               | Customer tenant ID                             |
 | EnvironmentId           | Longtext           | Environment ID                                |
-| Type                    | Longtext           | Power Apps app  |
+| Type                    | Longtext           | App created using Power Apps  |
 | Subtype                 | Longtext           | Canvas \| Model \| Pages                      |
 | DocumentVersion         | Datetime           | The date-and-time stamp is used as the app version          |
 | Uri                     | Longtext           | App URI                                       |
