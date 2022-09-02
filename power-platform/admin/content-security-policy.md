@@ -38,9 +38,9 @@ This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; wo
 
 ## Configuring CSP
 
-CSP can be toggled and configured through the Power Platform Admin Center (PPAC). **It is important to enable on a dev/test environment first** since enabling this could start blocking scenarios if the policy is violated.  We also support a "report-only mode" to allow for easier ramp-up in production.
+CSP can be toggled and configured through the Power Platform admin center. **It is important to enable on a dev/test environment first** since enabling this could start blocking scenarios if the policy is violated.  We also support a "report-only mode" to allow for easier ramp-up in production.
 
-To configure CSP, navigate to [PPAC](https://admin.powerplatform.microsoft.com) -> Environments -> Settings -> Privacy + Security. Below is the default state of the settings:
+To configure CSP, navigate to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) -> **Environments** -> **Settings** -> **Privacy + Security**. Below is the default state of the settings:
 
 ![Content security policy default settings](media/csp-default-settings.png "Content security policy default settings")
 
@@ -52,12 +52,12 @@ The "Enable reporting" toggle controls whether model-driven and canvas apps send
 
 ### Enforcement
 
-Enforcement of CSP is controlled independently for model-driven and canvas apps to provide granular control over policies. Use the Model-driven / Canvas pivot to modify the intended app type.
+Enforcement of CSP is controlled independently for model-driven and canvas apps to provide granular control over policies. Use the model-driven/canvas pivot to modify the intended app type.
 
 The "Enforce content security policy" toggle turns on the default policy for enforcement, as specified above, for the given app type. Turning on this toggle will change the behavior of apps in this environment to adhere to the policy. Therefore, the suggested enablement flow would be:
-1. Enforce on a dev/test environment
-2. Enable report-only mode in production
-3. Enforce in production once no violations are reported
+1. Enforce on a dev/test environment.
+2. Enable report-only mode in production.
+3. Enforce in production once no violations are reported.
 
 ### Configuring directives
 
@@ -82,25 +82,25 @@ Let's take a look at a couple examples of CSP configuration:
 ![CSP example 1](media/csp-example-1.png "CSP example 1")
 
 In the above example:
-- Reporting is turned off
-- Model-driven enforcement is enabled
+- Reporting is turned off.
+- Model-driven enforcement is enabled.
   - `frame-ancestors` is customized to `https://www.foo.com` and `https://www.bar.com`
-- Canvas enforcement is disabled
+- Canvas enforcement is disabled.
 
 The effective headers would be:
 - Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.foo.com https://www.bar.com;`
-- Canvas apps: CSP header wouldn't be sent
+- Canvas apps: CSP header wouldn't be sent.
 
 ### Example 2
 
 ![CSP example 2](media/csp-example-2.png "CSP example 2")
 
 In the above example:
-- Reporting is turned on
+- Reporting is turned on.
   - Reporting endpoint is set to `https://www.mysite.com/myreportingendpoint`
-- Model-driven enforcement is enabled
+- Model-driven enforcement is enabled.
   - `frame-ancestors` is kept as default
-- Canvas enforcement is disabled
+- Canvas enforcement is disabled.
   - `frame-ancestors` is customized to `https://www.baz.com`
 
 The effective CSP values would be:
@@ -109,7 +109,7 @@ The effective CSP values would be:
 
 ## Organization settings
 
-CSP can be configured without using UI by modifying the following organization settings directly:
+CSP can be configured without using the UI by modifying the following organization settings directly:
 
 - [IsContentSecurityPolicyEnabled](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabled) controls whether the Content-Security-Policy header is sent in model-driven apps.
 
@@ -123,7 +123,7 @@ CSP can be configured without using UI by modifying the following organization s
 - [ContentSecurityPolicyReportUri](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyReportUri) controls whether reporting should be used. This setting is used by both model-driven and canvas apps. A valid string will send violation reports to the specified endpoint, using report-only mode if `IsContentSecurityPolicyEnabled`/`IsContentSecurityPolicyEnabledForCanvas` is turned off. An empty string disables reporting. For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
 
 ## Configuring CSP without UI
-Especially in environments without PPAC, such as on-premises configurations, admins may want to configure CSP using scripts to directly modify settings.
+Especially for environments not in the Power Platform admin center such as on-premises configurations, admins may want to configure CSP using scripts to directly modify settings.
 
 ### Enabling CSP without UI
 Steps:
