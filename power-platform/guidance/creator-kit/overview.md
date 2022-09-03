@@ -34,7 +34,7 @@ All controls and components included in the kit use the [Fluent UI](https://deve
 
 You can also download the reference app solutions: 
 - Canvas apps: [aka.ms/CreatorKitReferenceCanvas](https://aka.ms/CreatorKitReferenceCanvas) 
-- Custom pages: [aka.ms/CreatorKitReferenceMDA](https://aka.ms/reatorkitreferencemda)
+- Custom pages: [aka.ms/CreatorKitReferenceMDA](https://aka.ms/Creatorkitreferencemda)
 
 View the [latest version release notes](https://aka.ms/creatorkitlatestrelease) in the [microsoft/powercat-creator-kit GitHub Repository](https://github.com/microsoft/powercat-creator-kit). The code component source code and more detailed component-level is available in the [microsoft/powercat-code-components GitHub repository](https://github.com/microsoft/powercat-code-components).
 
