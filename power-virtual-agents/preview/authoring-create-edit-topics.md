@@ -142,7 +142,7 @@ To [call Power Automate Flows](advanced-flow.md), select **Call an action**.
 
 When you add a node, the **Topic Management** sub menu contains several options to allow you to move between topics and to manage your conversation, including options for ending the conversation.
 
-See [moving between topics and managing the conversation](authoring-moving-between-topics.md).
+See [Moving between topics](authoring-moving-between-topics.md).
 
 ### Delete nodes
 

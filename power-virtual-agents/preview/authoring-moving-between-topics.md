@@ -14,19 +14,21 @@ ms.custom: authoring, topics
 ms.collection: virtual-agent
 ---
 
-# Moving between topics and managing the conversation
+# Moving between topics
 
-When you add a node, the **Topic Management** sub menu contains several nodes to allow you to move between topics and to manage your conversation, including options for ending the conversation.
+When you add a node, the **Topic Management** sub menu contains several nodes to allow you to move between topics.
 
 ## Prerequisites
 
 - [Create and edit topics](authoring-create-edit-topics.md)
 
+## Redirecting to another topic
+
 1. To have the bot move to a different topic, select **+** to add a node, and then select **Topic Management**, then **Go to another topic**.
 
     :::image type="content" source="media/authoring-moving-between-topics/topics-redirect-add-subtopic.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
 
-1. Select an existing topic from the list, or **Create a topic**.
+2. Select an existing topic from the list, or **Create a topic**.
 
     > [!TIP]
     > Before creating a new topic, save your current topic first.
@@ -34,9 +36,9 @@ When you add a node, the **Topic Management** sub menu contains several nodes to
 
     :::image type="content" source="media/authoring-moving-between-topics/topics-redirect-select-topic.png" alt-text="Screenshot of redirect topic list.":::
 
-1. If there are any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables in the next topic, enter or select a value for each one.
+3. If there are any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables in the next topic, enter or select a value for each one.
 
-1. Save your topic, then use the test bot pane to confirm that your bot successfully calls the next topic.
+4. Save your topic, then use the test bot pane to confirm that your bot successfully calls the next topic.
 
 In the authoring canvas for the original topic, you can insert additional nodes under the **Redirect** node.
 
@@ -44,26 +46,13 @@ When the path for the topic chosen in the **Redirect** node is finished, the bot
 
 :::image type="content" source="media/authoring-moving-between-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-#### End the conversation or topic
+## End the current or all active topics
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), the current conversation flow will end. Unless modified, these topics have the following behavior. To provide a consistent user experience at the end of a conversation, you can redirect to these topics or implement your own.
+By default, a topic being called from another will return to the calling topic that once the topic has completed but. you can use the **End current topic** and **End all topics** for other behavior.
 
-| Topic | Behavior |
-|:-|:-|
-| Confirmed Failure| The user can ask another question or request to talk to an agent, which redirects to the Escalate topic.|
-| Confirmed Success| The user is presented with a satisfaction survey, and then can ask another question or leave the conversation, which redirects to the Goodbye topic. The survey response is collected on the [customer satisfaction analytics page](analytics-csat.md). |
-| End of Conversation | The user is asked if their question was answered. Based on their response, the bot redirects to the Confirmed Success or the Confirmed Failure topic. |
-| Escalate | This topic is incomplete. You can hand the conversation over to a live agent if you're using a suitable customer service portal, such as Omnichannel for Customer Service. |
-| Goodbye | Thanks the user and indicates to the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client will hang up. |
-| Start over | Resets the conversation and resets [global variables](authoring-variables-bot.md) for the current session. |
+   - Select **End all topics** to clear all active topics. This means that the next message recieved from the user will be treated in the same way as the first one in the conversation, with all topics being evaluated and the most appropriate one being started. 
 
-Use the following nodes to design conversation flow in your bots.
+    > [!TIP]
+    > Using the **End all topics** node does not clear or reset any global variables. To clear global variables, use the **Clear variable values** node, as seen in the _Start over_ that is created as part of a bot's default content.
 
-1. Select **+** to add a node, and then select **Topic Management**, then one of the following:
-
-    :::image type="content" source="media/authoring-moving-between-topics/topics-nodes-end.png" alt-text="Screenshot showing options for ending a conversation.":::
-
-   - Select **End conversation** to notify the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client ends the call.
-   - Select **End all topics** to clear all active topics and start the conversation from the beginning. However, this does not clear or reset any global variables. To clear global variables, redirect to the Start over system topic.
-   - Select **End current topic** to end the current topic and return to the calling topic, if any. You can use this node to create a conversation branch that exits the topic while another branch continues.
-   - Select **Go to another topic** to _call_ or redirect to another topic. When that topic ends, control returns to the calling topic.
+   - Select **End current topic** to end the current topic. If the current topic was called by another, the conversation will return to the calling topic immediately. A common use of this node is within a condition branch, where one branch exits the topic early, while another branch continues the current topic.

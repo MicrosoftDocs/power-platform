@@ -132,11 +132,9 @@ Some system variables are hidden from the variable context menu and must be acce
 | Activity.TypeId                      | string | ✔      | Type of [activity][], as a string.                              |
 | Activity.Name                        | string |        | Name of the event.                                              |
 | Activity.From.Id                     | string | ✔      | Channel-specific unique ID for the sender.                      |
-| Activity.From.Name                   | string | ✔      | Channel-specific user-friendly name of the sender. <sup>1</sup> |
+| Activity.From.Name                   | string | ✔      | Channel-specific user-friendly name of the sender. |
 
 [activity]: /azure/bot-service/bot-activity-handler-concept
-
-<sup>1</sup> For the [Telephony channel](publication-connect-bot-to-telephony.md), this will include the phone number of the caller.
 
 ## Use literal values
 
@@ -146,18 +144,11 @@ Instead of selecting a variable from the menu, you can type a literal value into
 
 :::image type="content" source="media/authoring-variables/set-redirect-variable-to-literal.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect node.":::
 
-Values entered directly will always be treated as a string. To set a specific type, use the appropriate [Power Fx formula](advanced-power-fx.md) as per the following table:
+The node will attempt to interpret literal values entered as String, Number or a Boolean type. 
 
-| Type     | Example formulas                                                                        |
-| -------- | --------------------------------------------------------------------------------------- |
-| String   | `hi`, `hello world!`, `chatbot`                                                         |
-| Boolean  | Only `true` or `false`                                                                  |
-| Number   | `1`, `532`, `5.258`, `-9201`                                                            |
-| Table    | `[1]`, `[45, 8, 2]`, `["cats", "dogs"]`                                                 |
-| Record   | `{ id: 1 }`, `{ message: "hello" }`, `{ name: "John", info: { age: 25, weight: 175 } }` |
-| DateTime | `Time(5,0,23)`, `Date(2022,5,24)`, `DateTimeValue("May 10, 2022 5:00:00 PM")`           |
-| Choice   | Not supported                                                                           |
-| Blank    | Only `Blank()`                                                                          |
+For example, entering _123_ will be interpreted as Number. If you wanted this interpreted as a string value instead, you could wrap this value in double quotes, like _"123"_. 
+
+For some scenarios, or where you're using more complex types, To set a specific type, use the appropriate [Power Fx formula](advanced-power-fx.md) as per the following table:
 
 ## Variables pane
 
