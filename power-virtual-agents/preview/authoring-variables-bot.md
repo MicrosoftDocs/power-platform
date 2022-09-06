@@ -27,6 +27,9 @@ These variables are called **global variables** because they apply across the en
 
 By default, global variables apply during a single user session. Specify the global variables to distinguish them from topic-level variables.
 
+> [!NOTE]
+> A good alternative to making a variable global, is to [pass variables between topics](authoring-variables.md#passing-variables-between-topics). Consider if you really need a variable across all topics, or if you should make use of variable passing instead.
+
 ## Create a global variable
 
 1. Create a [new variable](authoring-variables.md#create-a-variable) or [use the variables pane](authoring-variables.md#variables-pane) to open an existing variable.
@@ -48,7 +51,7 @@ When you're composing a bot message in a message node or question node, select t
 
 :::image type="content" source="media/authoring-variables-bot/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
 
-When you use a condition node, a flow action node, or a skill node, you'll also see global variables available.
+You will also see global variables listed in the variable picker, within the **Custom** tab, alongside any topic variables.
 
 ## Manage global variables
 

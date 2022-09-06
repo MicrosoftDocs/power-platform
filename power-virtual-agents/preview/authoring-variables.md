@@ -22,7 +22,7 @@ Save customers' responses in a bot conversation to variables and reuse them late
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
-Variables can also be passed into, and returned from, [other topics](/authoring-variables.md#receive-values-from-other-topics), [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview).  
+Variables can also be passed into, and returned from, [other topics](#receive-values-from-other-topics), [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview).  
 
 ## Variable types
 
@@ -161,9 +161,6 @@ In the variable properties pane you can rename a variable, see where a variable 
 ## Passing variables between topics
 
 When you redirect to other topics, you can pass values into variables in the destination topic or get variables back from it. Passing variables between topics is especially useful when you already have information that the topic needs. Your users will appreciate not having to answer the question again. It's also helpful when you refactor and separate your topics into reusable components and you want to pass variables across the topics.
-
-> [!NOTE]
-> Variables of type `Custom Entity`, `Date Time`, and `Duration` can't be passed between topics.  
 
 ### Receive values from other topics
 
