@@ -73,7 +73,7 @@ When the flow is run, the recipient will receive the proactive message from the 
 ## Send a proactive Adaptive Card
 
 > [!IMPORTANT]
-> This section details how to send _proactive_ Adaptive Cards with Power Automate flows. To learn how to send Adaptive Cards in a typical conversation flow, see [Add Adaptive Cards with Composer](advanced-bot-framework-composer-example1.md).
+> This section details how to send proactive Adaptive Cards with Power Automate flows. Proactive Adaptive Cards enables users to receive information from an _inactive_ conversation with a bot. To learn how to send Adaptive Cards in an _active_ conversation, see [Add Adaptive Cards with Composer](advanced-bot-framework-composer-example1.md).
 
 In addition to sending proactive messages, you can also send proactive Adaptive Cards.
 
@@ -153,6 +153,9 @@ In this example, you'll send an order summary card for the user to review.
 When the flow is run, the recipient will receive the Adaptive Card from the bot in Microsoft Teams.
 
 ### Wait for user response
+
+> [!IMPORTANT]
+> This section details how to send proactive Adaptive Cards with Power Automate flows. Proactive Adaptive Cards enables users to receive information from an _inactive_ conversation with a bot. To learn how to send Adaptive Cards in an _active_ conversation, see [Add Adaptive Cards with Composer](advanced-bot-framework-composer-example1.md).
 
 Adaptive Cards support collecting user input. In these scenarios, you'll want to wait for the user's response before the flow continues.
 
