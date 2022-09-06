@@ -24,7 +24,7 @@ This article will help you set up the inventory components of the Core solution 
 
 The flows in this solution sync all your resources into tables and build admin apps, flows, and dashboards on top of this inventory to help you get a holistic overview into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.
 
-[Watch a walk-through](https://www.youtube.com/watch?v=Lsooi7xp6eA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) on how to set up the core components solution.
+[Watch a walk-through](https://www.youtube.com/embed/Z9Vp2IxFzpU) on how to set up the core components solution.
 
 >[!IMPORTANT]
 >Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes that you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
@@ -121,21 +121,20 @@ The following flows support the inventory setup and need to be turned on before 
 
 - Admin | Add Maker to Group
 - Admin | Excuse Support Envts from Governance Flows
-- Admin | Sync Template v3 Configure Emails
 - Command Center App >  Get M365 Service Messages
 - Command Center App > Initially Populate Bookmarks
-- Command Center App > Get CoE Flows
 - Command Center App > Set CoE Flows State
 - DLP Editor > Parse impacted resources into CSV
-- Admin | Sync Template v3 (Connectors)
 - Admin | Sync Template v3 CoE Solution Metadata
+- Admin | Sync Template v3 Configure Emails
+- Admin | Sync Template v3 (Connectors)
 
 >[!IMPORTANT]
-> Before proceeding, ensure that these flows run and complete successfully:
+> Before proceeding, ensure that these flows run and complete successfully, one by one:
 >
+> - **Admin | Sync Template v3 CoE Solution Metadata**
 > - **Admin | Sync Template v3 Configure Emails**
 > - **Admin | Sync Template v3 (Connectors)**
-> - **Admin | Sync Template v3 CoE Solution Metadata**
 
 ## Turn on inventory flows
 
@@ -154,6 +153,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Business Process Flows)
+- Admin | Sync Template v3 (Call Updates)
 - Admin | Sync Template v3 (Connection Identities)
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
@@ -240,13 +240,10 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 >[!IMPORTANT]
 >If your CoE Starter Kit is installed in a commercial or GCC tenant, you can skip this step.
 
-If your CoE Starter Kit is installed in a GCC High or DoD tenant, update the **URI, Authority, and Audience** in HTTP action:
-1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
-1. Edit the **Command Center App >  Get M365 Service Messages** flow.
-1. Update the **List serviceAnnouncements from Graph** action.
-    1. Change the **URI** to https://graph.microsoft.us/v1.0/admin/serviceAnnouncement/messages.
-    1. Change the **Authority** to https://login.microsoftonline.us/.
-    1. Change the **Audience** to https://graph.microsoft.us.
+1. If your CoE Starter Kit is installed in a GCC High or DoD tenant, update the **Authority** in HTTP action:
+    1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+    1. Edit the **Command Center App >  Get M365 Service Messages** flow.
+    1. Update the **List serviceAnnouncements from Graph** action and change the **Authority** to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
     1. **Save** this flow.
 
 ## Set up Audit Logs solution
