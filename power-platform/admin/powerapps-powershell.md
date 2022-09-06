@@ -336,9 +336,9 @@ Set-TenantSettings -RequestBody $settings
 
 If you specify governance error message content to appear in error messages, it will be included in the error message displayed when makers observe they don’t have permission to share apps with 'Everyone'. See [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
-#### Associate in context flows to a Power App
+#### Associate in context flows to an app
 
-Associate flows in context of a Power App to the Power App to create a dependency between the app and flows. To learn more about context flows, see [What Power Automate capabilities are included in Power Apps licenses?](power-automate-licensing/faqs.md#what-power-automate-capabilities-are-included-in-power-apps-licenses)
+Associate flows in context of an app to the app to create a dependency between the app and flows. To learn more about context flows, see [What Power Automate capabilities are included in Power Apps licenses?](power-automate-licensing/faqs.md#what-power-automate-capabilities-are-included-in-power-apps-licenses)
 
 ```powershell
    Add-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion <String>] [<CommonParameters>]
@@ -360,8 +360,8 @@ EnvironmentName and FlowName can be found in the flow url:
    - For more information, type: "get-help Add-AdminFlowPowerAppContext -detailed".
    - For technical information, type: "get-help Add-AdminFlowPowerAppContext -full".
 
-#### Remove in context flows of a Power App
-Remove the dependency between flows and a Power App with this PowerShell command. The Remove-AdminFlowPowerAppContext removes Power App context from the specific flow.
+#### Remove in context flows of an app
+Remove the dependency between flows and an app with this PowerShell command. The Remove-AdminFlowPowerAppContext removes app context from the specific flow.
   
 ```powershell
     Remove-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion <String>] [<CommonParameters>]
@@ -573,10 +573,10 @@ The governance error message URL and email can be shown independently or togethe
 
 |     #    |     Experience                                                                                                     |     Availability           |
 |----------|--------------------------------------------------------------------------------------------------------------------|----------------------------|
-|     1    |     User launches a Power Apps app that’s not DLP compliant                                                        |     Generally available    |
+|     1    |     User launches an app created using Power Apps that’s not DLP compliant                                                        |     Generally available    |
 |     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                          |     Generally available    |
 |     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’       |     Generally available    |
-|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Generally available    |
+|     4    |     Maker saves an app created using Power Apps that’s not DLP compliant                                                          |     Generally available    |
 |     5    |     Maker saves a Power Automate flow that’s not DLP compliant                                                     |     Generally available    |
 
 #### Display governance error message content 

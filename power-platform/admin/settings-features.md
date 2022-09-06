@@ -4,7 +4,7 @@ description: View and manage feature settings for Microsoft Dataverse.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/04/2022
+ms.date: 08/08/2022
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -85,5 +85,6 @@ Make sure you have the System Administrator or System Customizer security role o
 > | Edit and view records and activities using Unified Interface forms instead of quick view forms | Default: Off. |
 > | **Power Apps Ideas for Canvas Apps** | |
 > | Share ideas query data to help improve ideas results. | Default: Off. To help Microsoft improve Power Apps Ideas, you can share your ideas query data with Microsoft. More information: [Power Apps Ideas (preview)](/power-apps/maker/canvas-apps/power-apps-ideas).
+> | **Create new canvas apps as Dataverse solutions (preview)**  | Default: Off. Set to **On** to add all newly created canvas apps to the default environment solution.  More information: [Add canvas apps to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

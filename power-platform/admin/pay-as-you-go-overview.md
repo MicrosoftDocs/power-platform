@@ -24,7 +24,7 @@ search.app:
 
 Pay-as-you-go is a new way to pay for Power Apps and Power Automate using an Azure subscription, which allows you to get started building and sharing apps without any license commitment or upfront purchasing.
 
-Pay-as-you-go allows you to share Power Apps apps and Power Automate flows with any user in your organization and then only pay if and when they're used. The pay-as-you-go plan also includes Microsoft Dataverse storage capacity and provides the flexibility to pay for additional storage as you need it.
+Pay-as-you-go allows you to share apps and Power Automate flows with any user in your organization and then only pay if and when they're used. The pay-as-you-go plan also includes Microsoft Dataverse storage capacity and provides the flexibility to pay for additional storage as you need it.
 
 This plan reduces the overhead of license procurement and lets you manage and split costs across business units by leveraging the cost management reporting capabilities of Azure subscriptions. Pricing information for this plan is available [here.](https://go.microsoft.com/fwlink/?linkid=2169167)
 
