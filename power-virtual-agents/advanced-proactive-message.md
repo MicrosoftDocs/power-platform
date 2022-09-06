@@ -47,6 +47,7 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 
 ## Known limitations
 
+- If the bot is disconnected and reconnected to Microsoft Teams, users won't receive proactive messages until after they re-install the bot.
 - All proactive messages from Power Virtual Agents are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
 - Proactive messages won't be logged in conversation transcripts or [Analytics sessions](analytics-overview.md).
 - Proactive messages must be in the same environment as the Power Automate flow.
