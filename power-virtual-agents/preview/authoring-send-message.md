@@ -19,7 +19,7 @@ ms.collection: virtual-agent
 The **Message** node is used when you want to send a message from the bot to the user. Messages are usually simple text message, but can also include richer components, such as images, videos, quick replies and cards.
 
 > [!TIP]
-> All the capabilities of the Message node are also available on the [Question node](authoring-question-node.md), to allow you to author the message used to prompt the user for information.
+> All the capabilities of the Message node are also available on the [Question node](authoring-ask-question.md), to allow you to author the message used to prompt the user for information.
 
 ## Prerequisites
 
@@ -115,7 +115,7 @@ To remove an images / video / card from a node, select the **Delete** icon at th
 
 ## Adding Quick replies
 
-Quick replies can be added to a message to provide suggested responses or actions for a user, which they can choose to use, or ignore. To enforce a choice from a finite list, use a multiple choice [question node](authoring-question-node.md).
+Quick replies can be added to a message to provide suggested responses or actions for a user, which they can choose to use, or ignore. To enforce a choice from a finite list, use a multiple choice [question node](authoring-ask-question.md).
 
 To add a quick reply, 
 

@@ -23,7 +23,7 @@ The node allows you to choose the type of information you want to collect, such 
 ## Prerequisites
 
 - [Create and edit topics](authoring-create-edit-topics.md)
-- [Send a message](authoring-message-node.md)
+- [Send a message](authoring-send-message.md)
 
 ## Asking a question
 
@@ -34,7 +34,7 @@ The node allows you to choose the type of information you want to collect, such 
 1. Enter the text for your question in the first input on the node, which has a placeholder **Enter a response**.
 
 > [!TIP]
-> The Question node has all the same capabiltiies as the Message node for authoring a response including the ability to use images, videos, cards and quick replies. See [Send a message](authoring-message-node.md).
+> The Question node has all the same capabiltiies as the Message node for authoring a response including the ability to use images, videos, cards and quick replies. See [Send a message](authoring-send-message.md).
 
 1. In the **Identify** list, select an option for the user's response.
 
@@ -86,7 +86,7 @@ If the question node reaches the maximum number of retries (which could be zero)
 
 - **Redirect to topic: Ecalate** (_default_) - This will redirect the user to the _Escalate_ system topic.
 - **Set variable to value** - If this option is selected, an additional property, **Default entity value** is available, where you can specify a value to be used in place of a valid response from the user.
-- **Set variable to empty (no value)** - This sets the output variable to Blank and the topic moves onto the next node. You can later use a [condition](authoring-condition-node.md) to check if the variable has a value.
+- **Set variable to empty (no value)** - This sets the output variable to Blank and the topic moves onto the next node. You can later use a [condition](authoring-using-conditions.md) to check if the variable has a value.
 
 1. You can also, optionally, set a **Default entity message**, to be sent if the maximum reprompt count is reached and one of the above behavior's is used. Check the **Customize** checkbox to reveal the message editor.
 

@@ -25,7 +25,7 @@ This technology preview currently doesn't support some of the existing features 
 
 - Bots can't be deleted.
 - When sharing a bot, any Power Automate flows used in the conversation logic will not be shared. You'll have to manually share those flows if desired.  
-- [Message variations](authoring-create-edit-topics.md#message-variations) do not vary in a single conversation. You'll only see differences between different conversations.
+- [Message variations](authoring-send-message.md#sending-a-text-message) do not vary in a single conversation. You'll only see differences between different conversations.
 - The **Track between topics** toggle in the [test bot pane](authoring-test-bot.md) doesn't work.
 - Quick replies are not read over the [Telephony channel](publication-connect-bot-to-telephony.md).
 - While co-authoring a bot with another user is possible, it's not a fully supported feature.

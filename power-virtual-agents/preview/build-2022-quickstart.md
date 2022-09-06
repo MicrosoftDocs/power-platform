@@ -50,12 +50,12 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. In the existing **Message** node, select the **Delete** button in the ellipsis menu.
 
-1. To add a new **Message** node, select **Send a message** in the add node menu. Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
+1. To add a new **Message** node, select **Send a message** in the add node menu. Type the following greetings as [message variations](authoring-send-message.md#sending-a-text-message):
     - `Good day!`
     - `Hi there!`
     - `Hi!`
 
-1. [Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant to help the user visually confirm that they're booking at the correct location.
+1. [Add an image card](authoring-send-message.md#add-an-image) and provide an image of the restaurant to help the user visually confirm that they're booking at the correct location.
 
     :::image type="content" source="media/build-2022-quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
 
@@ -63,7 +63,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. Change the edit mode to **Speech**.
 
-   The speech mode allows you to add a specific message for voice-enabled channels and enable the use of [SSML tags](advanced-custom-speech-ssml.md).
+   The speech mode allows you to add a specific message for voice-enabled channels and enable the use of [SSML tags](authoring-send-message.md#use-ssml-to-customize-speech-responses).
 
     :::image type="content" source="media/build-2022-quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
 

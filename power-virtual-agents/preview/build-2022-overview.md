@@ -24,13 +24,13 @@ The new intelligent bot authoring experience unifies the sophistication of Azure
 This evolution brings new features, including:
 
 - Updates to authoring experience
-  - [Multimedia cards​](advanced-cards.md)
+  - [Add Images / Videos / Cards to a message](authoring-send-message.md)
   - [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
-  - [Bot response variations](authoring-create-edit-topics.md#message-variations)
-  - [Quick replies](authoring-create-edit-topics.md#quick-replies)
+  - [Bot response variations](authoring-send-message.md#sending-a-text-message)
+  - [Quick replies](authoring-send-message.md#adding-quick-replies)
 
 - Unlock the power of voice
-  - [Speech authoring](advanced-custom-speech-ssml.md)
+  - [Speech authoring](authoring-send-message.md#use-ssml-to-customize-speech-responses)
   - [Voice font selection](advanced-speech-settings.md)
   - [Telephony channel](publication-connect-bot-to-telephony.md)
 
