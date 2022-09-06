@@ -28,7 +28,7 @@ contributors:
 
 The value of a variable of type **untyped object** cannot be used directly. You always have to correctly type it using the corresponding type constructor.
 
-The following examples use fields from an **untyped object** variable named `UOValue`.
+The following examples convert the value of an **untyped object** variable named `UOValue`.
 
 ```powerapps-dot
 Text(UOValue)
@@ -42,7 +42,7 @@ The following table lists the data types and corresponding functions to convert 
 | Data Type | Function  | Description |
 | --- | --- | --- |
 | Boolean | [Boolean()](./reference/function-boolean.md) | When converting **untyped object** to **boolean**, the value may need to be converted to [text](./reference/function-text.md) or [number](./reference/function-value.md) first if the **untyped object** represents the **boolean** in those types. |
-| Color | [ColorValue() or RGBA()](./reference/function-colors.md) | Colors can be represented in hexadecimal notiation as a string, or as individual RGBA components. In either case the **untyped object** needs to be first converted to individual RGBA [numbers](./reference/function-value.md), or to a [text](./reference/function-text.md) string containing the hexadecimal notation. |
+| Color | [ColorValue() or RGBA()](./reference/function-colors.md) | Colors can be represented in Cascading Style Sheet (CSS) color definition notation as a string, or as individual RGBA components. The **untyped object** can be converted directly from a Cascading Style Sheet (CSS) color definition string using the [ColorValue()](./reference/function-colors.md) function, or from individual RGBA [numbers](./reference/function-value.md) into color using the [RGBA()](./reference/function-colors.md) function. |
 | Currency, Number | [Value()](./reference/function-value.md) | Numbers in **untyped object** can be directly converted to numbers. However, if the original **untyped object** value was represented as text, for example as `ParseJSON("""123""")` then it must first be converted to [text](./reference/function-text.md) before converting to a number. |
 | Date, DateTime, Time | [DateValue(), TimeValue() or DateTimeValue()](./reference/function-datevalue-timevalue.md) | Date, time and datetime can be directly converted from **untyped object** to their respective type, when represented in ISO 8601 format. Other formats must first be converted to text using the [Text()](./reference/function-text.md) function and then passed into the [DateValue(), TimeValue() or DateTimeValue()](./reference/function-datevalue-timevalue.md) function which by default will use the language of the current user's settings to interpret the date and time. |
 | GUID | [GUID()](./reference/function-guid.md) | An **untyped object** can be directly converted to GUID. |
