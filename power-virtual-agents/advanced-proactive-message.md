@@ -178,6 +178,8 @@ In this example, you'll send an order confirmation card that allows the user to 
 
 1. For **Message**, enter the following template JSON:
 
+    The properties in the `actions` section is what determines the options that are presented to the user.
+
     ```json
     {
         "type": "AdaptiveCard",
@@ -230,11 +232,11 @@ In this example, you'll send an order confirmation card that allows the user to 
         ],
         "actions": [
             {
-                "type": "Action.Execute",
+                "type": "Action.Submit",
                 "title": "Submit Order"
             },
             {
-                "type": "Action.Execute",
+                "type": "Action.Submit",
                 "title": "Edit Order",
             }
         ]
@@ -251,7 +253,7 @@ In this example, you'll send an order confirmation card that allows the user to 
 
 When the flow is run, the recipient will receive the adaptive card from the bot in Microsoft Teams that they can then provide a response to.
 
-You can use the response from the recipient as dynamic content for later steps in the flow. For example, you could store their responses in a database.
+To use the response from the recipient, select **submitActionId** from the dynamic content flyout menu. The value of this variable will be the `title` of the action the user chose.
 
 ## Send proactive messages to multiple recipients
 
