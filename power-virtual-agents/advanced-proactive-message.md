@@ -82,6 +82,9 @@ In addition to sending proactive messages, you can also send proactive Adaptive 
 
 Adaptive Cards are an open card exchange format enabling developers to exchange UI content in a common and consistent way. You can author Adaptive Cards by hand in JSON, or if you prefer a drag-and-drop interface, you can use the [Adaptive Cards Designer](https://adaptivecards.io/designer/).
 
+> [!NOTE]
+> Power Automate does not support Adaptive Cards that use the [templating feature](/adaptive-cards/templating/).
+
 In this example, you'll send an order summary card for the user to review.
 
 1. In Power Automate, add the Microsoft Teams connector action **Post adaptive card in a chat or channel** at the step where you want to send card in your flow.
@@ -161,6 +164,9 @@ When the flow is run, the recipient will receive the Adaptive Card from the bot 
 Adaptive Cards support collecting user input. In these scenarios, you'll want to wait for the user's response before the flow continues.
 
 :::image type="content" source="media/advanced-proactive-message/proactive-card-wait-for-response.png" alt-text="Screenshot of an adaptive card that contains actions for the user.":::
+
+> [!NOTE]
+> Power Automate does not support Adaptive Cards that use the [templating feature](/adaptive-cards/templating/).
 
 In this example, you'll send an order confirmation card that allows the user to make changes before the order is submitted.
 
