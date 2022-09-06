@@ -113,7 +113,7 @@ To remove an images / video / card from a node, select the **Delete** icon at th
 
 :::image type="content" source="media/authoring-message-node/delete-card.png" alt-text="Screenshot of an image card with the Delete icon highlighted.":::
 
-### Adding Quick replies
+## Adding Quick replies
 
 Quick replies can be added to a message to provide suggested responses or actions for a user, which they can choose to use, or ignore. To enforce a choice from a finite list, use a multiple choice [question node](authoring-question-node.md).
 
@@ -145,3 +145,41 @@ To change the behavior of a quick reply.
 
 > [!TIP]
 > Some user clients do not support quick replies, in which case the client may not render them. Some user clients have an upper limit on the number of quick replies that they allow.
+
+## Add a speech message override
+
+By default, on channels which are speech enabled, such as Omnichannel, the message text entered in the message node will be used for both text display and voice. However, you can provide a speech override for a message.
+
+1. On the message you wish to set a speech override for, select **Text**, and then select **Speech** to view the speech response.
+
+    :::image type="content" source="media/advanced-custom-speech-ssml/select-speech-mode-message.png" alt-text="Screenshot of a message node, with the Speech mode selection highlighted.":::
+
+    The following message will show after you switch from text to speech.
+
+    :::image type="content" source="media/advanced-custom-speech-ssml/variation-message.png" alt-text="Screenshot of the notice that appears when Speech mode is selected in a message node.":::
+
+2. Select **+ Add**, and then select **Message variation**.
+
+3. Enter what you want the bot to say. Add as many variations for the speech response as needed.
+
+You can, optionally, add SSML to your message variations for a speech response, to control how the message is spoken.
+
+### Use SSML to customize speech responses
+
+In the message, select **SSML tags**, and then select the tags you want to add.
+
+:::image type="content" source="media/advanced-custom-speech-ssml/ssml-tag-options.png" alt-text="Screenshot of SSML tags in a speech message.":::
+
+The table below describes what each tag does:
+
+| SSML tag | Description |
+|---|---|
+| Audio | Add prerecorded audio. |
+| Break | Insert pauses or breaks between words. |
+| Emphasis | Add levels of stress to words or phrases. |
+| Prosody | Specify changes to pitch, contour, range, rate, and volume. |
+|||
+
+:::image type="content" source="media/advanced-custom-speech-ssml/ssml-tagged-speech.png" alt-text="Screenshot of a speech message with SSML tags added.":::
+
+You can add multiple tags to a single speech variation. You can also add SSML tags that don't appear in the helper menu. [Learn more about SSML](/azure/cognitive-services/speech-service/speech-synthesis-markup).
