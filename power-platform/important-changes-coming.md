@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 07/15/2022
+ms.date: 08/31/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
@@ -27,6 +27,8 @@ Dynamics 365 and Microsoft Power Platform will be blocked in Internet Explorer s
  
 We recommend that customers transition to [Microsoft Edge](https://www.microsoft.com/edge). 
 
+We recommend Dynamics 365 App for Outlook users that are using the Outlook desktop client upgrade their clients to Microsoft Outlook versions that use Edge WebView2 or  Microsoft Outlook on the web (OWA).
+
 More information: [Support end for Internet Explorer](admin/support-end-internet-explorer.md).
 
 If you have more questions, contact your Microsoft Customer Service representative or Microsoft Partner.
@@ -48,6 +50,40 @@ The legacy read-only grid:
 Tables configured to use the *Read-only Grid (Default)* control are replaced with the *Power Apps read-only grid* for views and subgrids. This change started with the 2022 release wave 1. 
 
 When the Power Apps read-only grid is originally enabled, the jump bar row is not visible; however, makers can re-enable this as needed. More information: [Configure the Power Apps read-only grid control](/power-apps/maker/model-driven-apps/power-apps-grid-control#configure-the-power-apps-read-only-grid-control)
+
+## Dynamics 365 (Preview) app for Windows is deprecated
+
+The [Microsoft Dynamics 365 (Preview)](https://apps.microsoft.com/store/detail/microsoft-dynamics-365-preview/9N0RWZ9KZZT8?hl=en-us&gl=US) app for Windows was deprecated on June 20, 2022. The app is no longer supported.  
+
+You can still run your Dynamics 365 apps on Powers Apps for Windows with the same set of features and capabilities. For more information, see [Install Powers Apps for Windows](/power-apps/mobile/windows-app-install).
+
+## Admin mode custom message deprecated 
+
+Effective July 1, 2022, the Custom message field is deprecated from the environment Edit details page.
+
+## Power Apps for Windows will be deprecated and replaced with a new app
+
+Effective September 2022, [Power Apps](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) for Windows will be deprecated. Microsoft will continue to provide security and other critical updates for the app until Sept 20, 2022. We won't release any other features or functionalities for the app.
+
+On June 20, 2022  [Power Apps](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) for Windows will be renamed to **Power Apps for Windows 8**. After Sept 20, 2022, the app will be removed from the Microsoft Store, and will no longer be supported.
+
+On June 20, 2022 the new app for Windows that’s currently in preview will be available for general availability. The app will be renamed from [Power Apps (Preview)](https://apps.microsoft.com/store/detail/power-apps-preview/9MVC8P1Q3B29?hl) to **Power Apps**. For more information, see [Install Powers Apps for Windows](/power-apps/mobile/windows-app-install).
+
+## Data Export Service deprecation
+
+Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on will not be available for download for new customers. Existing customers will be able to download and use this add-on from AppSource. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
+
+## Dataverse OData v2.0 Service removal
+
+We plan to remove the Dataverse OData v2.0 Organization Data Service on November 11, 2022.
+
+> [!NOTE]
+> This announcement does not involve the deprecated Organization Service SOAP endpoint. At this time, no date has been announced for the removal of the SOAP endpoint.
+
+The Organization Data Service is an OData v2.0 endpoint introduced with Dynamics CRM 2011. The Organization Data Service was deprecated with Dynamics 365 Customer Engagement v8.0 in favor of the Web API, an OData v4.0 service. Today, less than .06% of requests to Dataverse use this endpoint. Removing this endpoint will enable Dataverse to improve overall performance.
+
+Any code that uses the Organization Data Service should be migrated to use the Web API before that time. 
+More information: [OData v2.0 Service removal date announcement](https://aka.ms/DataverseODataV2EndpointRemoval).
 
 ## Support for Microsoft 365 Groups and Yammer in Dynamics 365 is deprecated
 
@@ -249,14 +285,21 @@ Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector.
 
 #### Automate
 - All new flows must be created with the Microsoft Dataverse connector.
-- Flows that use the Dynamics 365 connector should be re-created to use the Microsoft Dataverse connector. 
-- Once the Microsoft Dataverse connector is available in summer of 2022, users will have the option to use an automated tool to migrate from the Microsoft Dataverse (Legacy) connector to the Microsoft Dataverse connector.
+- Flows that use the Dynamics 365 connector should be re-created to use the Dataverse (Legacy) connector or the Microsoft Dataverse connector. 
+
+  In some cases users will be able to use a migration tool to migrate from the Dynamics 365 connector to the Microsoft Dataverse connector. On the detail page of each flow, you will see the message "Migrate this flow to the latest Microsoft Dataverse Connector". You'll be able to open the migration assistant from there. 
+  
+  This should migrate your flow unless:
+  - Flow is in the old format. To check this, the customer can confirm whether the Microsoft Dataverse connector is searchable when editing the flow. Most flows created before June 2020 are in the older format.
+  - Flow has legacy actions connecting to environments other than the current environment. 
+
+- If your flow falls into one of the categories above or if the migration fails, you'll need to manually recreate your flow using the Dataverse Legacy Microsoft Dataverse (legacy) connector.
 
 #### Logic Apps
-- All new Logic Apps should be created with the Microsoft Dataverse (Legacy) connector.
-- Logic Apps using the Dynamics 365 connector are recommended to move to the Microsoft Dataverse (Legacy) connector. 
-- Logic Apps will need to be recreated in the using the Dataverse (Legacy) connector and then completing setup.
-- Once the Microsoft Dataverse connector is available in summer of 2022, no action is needed. The Microsoft Dataverse (Legacy) connector will merge with the Microsoft Dataverse connector. At this time additional actions and triggers will become available. 
+- All new Logic Apps should be created with the Microsoft Dataverse (Legacy) connector. In the Summer of 2022, the Microsoft Dataverse connector will be available and should be used.
+- Logic Apps using the Dynamics 365 connector are recommended to move to the Microsoft Dataverse (Legacy) connector until the Microsoft Dataverse connector is available. 
+- Logic Apps will either need to be recreated to use the Dataverse (Legacy) connector/Dataverse connector or be edited to change the Dynamics 365 connector to the Dataverse (Legacy) connector/Dataverse connector, and then validating all triggers and actions. 
+- Once the Microsoft Dataverse connector is available in the Summer of 2022, users will be able to migrate to the Microsoft Dataverse connector.
 
 #### Canvas apps
 - If you are using the Power Apps Player to launch Power Apps in Windows, you will need to switch over to Power Apps for Windows.

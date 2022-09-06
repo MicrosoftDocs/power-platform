@@ -35,7 +35,7 @@ When you use the ALM Accelerator Canvas App to trigger an Azure DevOps pipeline,
 
 ### Azure DevOps pipeline communication with Power Platform
 
-When an Azure DevOps pipeline is running operations in a Power Platform environment, it will use an Azure DevOps Service Connection to connect to the relevant environment. The Azure DevOps Service connection is configured with details about the Azure App Registration to use when connecting to Power Platform, and, in the relevant Power Platform environment the Azure App Registration will be registered as an [Application User](/power-apps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation?preserve-view=true). This allows the Azure DevOps pipeline to communicate with the relevant Power Platform environment in the context of the Azure App Registration.
+When an Azure DevOps pipeline is running operations in a Power Platform environment, it will use an Azure DevOps Service Connection to connect to the relevant environment. The Azure DevOps Service connection is configured with details about the Azure App Registration to use when connecting to Power Platform, and, in the relevant Power Platform environment the Azure App Registration will be registered as an [Application User](/power-apps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation). This allows the Azure DevOps pipeline to communicate with the relevant Power Platform environment in the context of the Azure App Registration.
 
 ### Api permissions overview
 

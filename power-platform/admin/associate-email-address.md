@@ -1,12 +1,13 @@
 ---
 title: "Associate an email address with a row   | MicrosoftDocs"
 description: Associate an email address with a row. 
-author: jimholtz
+author: DanaMartens
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/5/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: dmartens
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

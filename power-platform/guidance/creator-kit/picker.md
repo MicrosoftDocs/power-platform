@@ -22,9 +22,10 @@ contributors:
 
 # :::no-loc text="Picker"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to provide a search experience.
+
+> [!NOTE]
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Picker).
 
 :::image type="content" source="media/Picker.png" alt-text="Picker control.":::
 
@@ -42,10 +43,7 @@ The Tag Picker code component provides the following features:
 1. Raises an **On Change** event when a user adds or removes a tag.
 1. Allows programmatic **Set Focus**.
 
-> [!NOTE]
-> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Picker).
-
-## Datasets
+### Datasets
 
 The Tag Picker has the following input datasets, which are described in detail in [Key properties](#key-properties) later in this article.
 
@@ -61,41 +59,82 @@ The `Suggestions` dataset should be filtered by using the `SearchTerm` output pr
 Search(colSuggestions,TagPicker.SearchTerm,"name")
 ```
 
-## Limitations
+## Properties
 
-This code component can only be used in canvas apps and custom pages.
-
-## Key properties
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Tags` | A collection (table) of tags. The app is responsible for adding or removing tags in response to the component's raising Add or Remove events (described in the following [OnChange event section](#onchange-event)). |
-| `TagDisplayName` | Set to the name of the column that holds the tag display name. |
-| `Suggestions` | A collection (table) of suggestions. |
-| `SuggestionDisplayName` | Set to the name of the column that holds the suggestion display name. |
-| `SuggestionSubDisplayName`| Optional. Set to the name of the column that holds the secondary line of text. |
+| `Items` | A collection (table) of tags. The app is responsible for adding or removing tags in response to the component's raising Add or Remove events (described in the following [OnChange event section](#onchange-event)). |
+| `Suggestions_Items` | A collection (table) of suggestions. |
+| `TagMaxWidth` | The maximum width of the tags when rendering. Overflow text will be truncated with ellipsis's and a hover tooltip shows the full text. |
+| `AllowFreeText` | When typing a value, do not not automatically select the first suggestion so that a free text entry can be provided rather than selecting from a pre-defined list. |
+| `SearchTermToShortMessage` | The message to display when the Search Term is less than the `MinimumSearchTermLength`.
+| `HintText` | The message to display inside the Picker when no search term is provided. |
+| `NoSuggestionsFoundMessage` | The message to display when the Suggestions collection contains no results. |
+| `MinimumSearchTermLength` | The minimum number of character to trigger the suggestions flyout. |
+| `MaxTags` | The maximum number of tags that can be added. After this number, the Tag Picker will be re-only until a tag is removed. |
+| `Error` | True when the red error border should be displayed. |
 
-## OnChange event
+### `Items` properties
+| Property | Description |
+| -------- | ----------- |
+| `TagDisplayName` | Set to the name of the column that holds the tag display name. |
+
+### `Suggestions` properties
+| Property | Description |
+| -------- | ----------- |
+| `SuggestionDisplayName` | set to the name of the column that holds the suggestion display name. |
+| `SuggestionSubDisplayName` | (Optional) set to the name of the column that holds the secondary line of text. |
+
+### Style properties
+| Property | Description |
+| -------- | ----------- |
+| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
+| `FontSize` | the font size of the tags shown inside the Picker. |
+| `BorderRadius` | the border radius of the tags shown inside the Picker. |
+| `ItemHeight` | the height of the tags (pixesl) shown inside the Picker. |
+| `AccessibilityLabel` | Screen reader aria-label |
+
+### Event properties
+| Property | Description |
+| -------- | ----------- |
+| `Input Event` | Set to the event to sent to the `TagPicker` |
+
+### Output properties
+| Property | Description |
+| -------- | ----------- |
+| `SearchTerm` | The text entered into the Tag Picker that can be used for filtering the suggestions dataset. |
+| `TagDisplayName` | the text that is used to create a new **Tag** when the **On Change** event is fired |
+| `AutoHeight` | When the tag picker wraps onto multiple lines, the **Auto Height** property can be used to control the height of a responsive container height. |
+
+## Behavior
+
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
+
+### OnChange event
 
 The `TagPicker`component raises an `OnChange` event when tags are added or removed. The properties used are:
 
-- **TagEvent**: The name of the event raised
-- **TagKey**: The key of the item that has raised the event (if the event is related to a tag)
+| Property | Description |
+| -------- | ----------- |
+| `TagEvent` | The name of the event raised |
+| `TagKey` | The key of the item that has raised the event (if the event is related to a tag) |
 
 The event should contain an expression similar to:
 
 ```powerapps-dot
-If(TagPicker.TagEvent="Add" && CountRows(Filter(colTags,name=TagPicker.TagDisplayName))=0,
-    Collect(colTags,{name:TagPicker.TagDisplayName})
+If( TagPicker.TagEvent = "Add" && CountRows(Filter(colTags,name=TagPicker.TagDisplayName)) = 0,
+    Collect( colTags, { name:TagPicker.TagDisplayName })
 );
 
-If(TagPicker.TagEvent="Remove",
- RemoveIf(colTags,name=Text(TagPicker.TagDisplayName))
+If( TagPicker.TagEvent="Remove",
+ RemoveIf( colTags,name=Text(TagPicker.TagDisplayName) )
 );
 ```
 
-## Best practices
+## Limitations
 
-Go to [Fluent UI pickers best practices](https://developer.microsoft.com/fluentui#/controls/web/pickers).
+This code component can only be used in canvas apps and custom pages.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
