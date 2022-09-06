@@ -22,15 +22,9 @@ search.app:
 
 To install the CoE CLI:
 
-1. Download the zip file or clone the repository [coe-starter-kit](https://github.com/microsoft/coe-starter-kit).
+1. Download the zip file of latest released [coe-starter-kit](https://aka.ms/CoEStarterKitCurrentMonthRelease).
 
-1. Go to the unzipped or cloned repository.
-
-   ```bash
-   cd coe-starter-kit
-   ```
-
-1. Go to the **coe-cli** folder.
+1. Go to the unzipped folder and go to the **coe-cli** folder
 
    ```bash
    cd coe-cli
