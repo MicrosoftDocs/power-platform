@@ -86,11 +86,11 @@ Connections are independent from license checks. You can have multiple user conn
 
 ### The owner of a flow left the company. How can we ensure it works without interruptions?
 
-If the flow is a solution flow, you can [change the owner](/power-automate/change-cloud-flow-owner) in Power Automate portal, or use [Power Automate Web API](/power-automate/web-api#update-a-cloud-flow) to ensure the flow works without interruptions. If the flow is a non-solution flow, you cannot change the owner, assign a per flow license to the flow to ensure it continues to run. Alternatively, any co-owners of the flow can export and import the flow. When imported, the flow will be a new flow and the co-owner will now become the owner of the flow. And the flow will use the license of the new owner. 
+If the flow is a solution flow, you can [change the owner](/power-automate/change-cloud-flow-owner) in Power Automate portal, or use [Power Automate Web API](/power-automate/web-api#update-a-cloud-flow) to ensure the flow works without interruptions. If the flow is a non-solution flow, any co-owners can add it to a solution and then change the owner. If not, assign a per flow license to the flow to ensure it continues to run. Alternatively, any co-owners of the flow can export and import the flow. When imported, the flow will be a new flow and the co-owner will now become the owner of the flow. And the flow will use the license of the new owner. 
 
 ### The owner of the flow no longer has a premium license, but the flow is a premium flow. What happens?
 
-The flow will be downgraded to lower performance and all flow owners will be notified and the flow will be turned off in 30 days if no action is taken.
+The flow will be downgraded to lower performance and all flow owners will be notified and the flow will be turned off in 15 days if no action is taken.
 
 ### Do guest users (not from your tenant) need a license to use Power Automate?
 Yes. The guest user must have a Power Automate license assigned through one of the following tenants:
@@ -227,7 +227,7 @@ The following questions are related to Power Apps licensing and Power Automate u
 
 ### What Power Automate capabilities are included in Power Apps licenses?
 
-Power Apps licenses include following Power Automate capabilities.
+A limited set of Power Automate capabilities are included as part of Power Apps license. Power Apps licenses include following Power Automate capabilities.
 
 - Create and execute automated, scheduled, button flows
 - Access to [standard connectors](./types.md#standard-connectors)
@@ -243,7 +243,8 @@ The following Power Automate capabilities aren't included in Power Apps licenses
 - [Robotic process automation](./types.md#robotic-process-automation)
 - [AI Builder capacity](./types.md#ai-builder-credits)
 
-Flows that use the Power Apps license must run within the context of the app created using Power Apps, which uses the same data sources for triggers or actions as the app created using Power Apps. If your app created using Power Apps consumes standalone flows that aren't related to the app created using Power Apps, you must purchase a standalone Power Automate license.
+Flows created to support a Power App must run within the context of the app created using Power Apps, meaning the flow must use the same data sources for triggers or actions as the Power App. Flows triggered from the Power App are automatically considered as in context of the app. If automated/scheduled cloud flows are created to support the Power App and are in context of an App, link the flow to the app using a [PowerShell script](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app) to establish dependency between the app and the flow.
+If a premium flow is not in context of any app, you must purchase a standalone Power Automate license.
 
 #### Example of Power Automate use within an app created using Power Apps context
 
@@ -271,10 +272,9 @@ In this example, the app created using Power Apps is being used outside the cont
 Multiplexing refers to the use of hardware or software that a customer uses to pool connections, reroute information, or reduce the number of users that directly access or use the Power Apps, Power Automate, and the Power Virtual Agents service. Using multiplexing as a mechanism to reduce the number of licenses to be purchased is a license violation. For more details, refer to the multiplexing guidance from [Client Access License (CAL) Requirements](https://download.microsoft.com/download/3/D/4/3D42BDC2-6725-4B29-B75A-A5B04179958B/Licensing_Brief_PLT_Multiplexing.pdf).
 
 Examples of multiplexing:
-1. User creates a flow to export data from Dataverse into an external storage and sends the data over to collegues in an email. The collegues consume/edit the data.Flow imports the data back into Dataverse. In this case, the user and all the collegues need a license as Power Automate is performing all the steps in the data distribution. 
-2. If the flow is only moving data into shared location and the user is manually sending an email to the collegues, it doesnt fall under multiplexing. 
-3. If a premium flow triggers when a new item is added to a sharepoint list and saves the details in Dataverse and sends an email to the owner of the flow. Multiple people can upload items into the list but the email is only sent to the owner. In this case, only owner needs a license as he/she is the only person getting value from the flow. 
-4. If the above flow sends an email to the owner and the user who uploaded the item, both the owner and user needs a premium license. Failure to license all the users fall under multiplexing.  
+1. If the premium flow is only moving data from Dataverse into shared location/sending an email to the collegues, it doesnt fall under multiplexing because the users are consming the data but not triggering  the flow. 
+2. If a premium flow triggers when a new item is added to a sharepoint list and saves the details in Dataverse and sends an email to the owner of the flow. Multiple people can upload items into the list but the email is only sent to the owner. In this case, only owner needs a license as he/she is the only person getting value from the flow. 
+4. If the above flow sends an email to the user who uploaded the item, both the owner and the user needs a premium license. In this case, the user  indirectly triggered the flow(uploading into sharepoint) and getting value back from the flow in the form of email. Failure to license all the users fall under multiplexing.  
 
 ### I have multiple flows running under a shared service account. What licenses do I need?
 Definitions: 
