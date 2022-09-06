@@ -50,7 +50,7 @@ To run the CoE CLI application, you'll need to install the components below.
 
 1. PowerShell Core (version 7.2+)
 
-   a. [https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell)
+   a. [/powershell/scripting/install/installing-powershell](/powershell/scripting/install/installing-powershell)
 
 1. Git CLI (version 2.37.2+)
 
