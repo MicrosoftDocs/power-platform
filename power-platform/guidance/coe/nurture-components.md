@@ -8,7 +8,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/21/2022
 ms.subservice: guidance
-ms.author: mapichle, stjeffer
+ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
