@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # Moving between topics
 
-When you add a node, the **Topic Management** sub menu contains several nodes to allow you to move between topics.
+As well as being called when a user sends a message to the bot, based on their trigger phrases, you can also call a topic from another topic. When you add a node, the **Topic Management** sub menu contains several nodes to allow you to manage movement between topics.
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ When you add a node, the **Topic Management** sub menu contains several nodes to
 
     :::image type="content" source="media/authoring-moving-between-topics/topics-redirect-add-subtopic.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
 
-2. Select an existing topic from the list, or **Create a topic**.
+1. Select an existing topic from the list, or **Create a topic**.
 
     > [!TIP]
     > Before creating a new topic, save your current topic first.
@@ -36,13 +36,13 @@ When you add a node, the **Topic Management** sub menu contains several nodes to
 
     :::image type="content" source="media/authoring-moving-between-topics/topics-redirect-select-topic.png" alt-text="Screenshot of redirect topic list.":::
 
-3. If there are any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables in the next topic, enter or select a value for each one.
+2. You can [pass variables between topics](authoring-variables.md#passing-variables-between-topics). If there are any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables in the topic you are redirecting to, enter or select a value for each one. 
 
-4. Save your topic, then use the test bot pane to confirm that your bot successfully calls the next topic.
+3. Save your topic, then use the test bot pane to confirm that your bot successfully calls the next topic.
 
 In the authoring canvas for the original topic, you can insert additional nodes under the **Redirect** node.
 
-When the path for the topic chosen in the **Redirect** node is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the **Redirect** node.
+When the topic that is redirected to is finished, the bot will return to the original topic and continue with any nodes after the **Redirect** node.
 
 :::image type="content" source="media/authoring-moving-between-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 

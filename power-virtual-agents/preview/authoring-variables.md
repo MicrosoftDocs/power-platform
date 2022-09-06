@@ -22,11 +22,11 @@ Save customers' responses in a bot conversation to variables and reuse them late
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
-You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview) as input parameters and save the output results from those actions.  
+Variables can also be passed into, and returned from, [other topics](/authoring-variables.md#receive-values-from-other-topics), [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview).  
 
 ## Variable types
 
-A variable is associated with a **type**. The type determines what values the variable can contain and the operators that you can use when you construct a logical expression with the corresponding variable.
+A variable is associated with a **type**. The type determines what values the variable can contain and the operators that you can use when you use the variable as part of a [condition](authoring-using-conditions.md).
 
 <!-- best viewed without wordwrap -->
 | Type     | Description                                                                                                           |
@@ -34,17 +34,17 @@ A variable is associated with a **type**. The type determines what values the va
 | String   | A sequence of characters used to represent text.                                                                      |
 | Boolean  | A logical value that can only be `true` or `false`.                                                                   |
 | Number   | Any real number.                                                                                                      |
-| Table    | A list of any number of values, but all values must be the same type.                                                 |
+| Table    | A list of values, but all values must be the same type.                                                 |
 | Record   | A collection of name-value pairs where values can be any type.                                                        |
 | DateTime | A date, time, day of the week, or month relative to a point in time.                                                  |
 | Choice   | A list of string values that have associated synonyms.                                                                |
 | Blank    | A placeholder for "no value" or "unknown value". See [Blanks in Power Fx](/power-platform/power-fx/data-types#blank). |
 
-A variable's type is set based on the first assigned value.
+A variable's type is set based on the first time is has a value assigned.
 
-Once a variable has been assigned a type, it can't be assigned values from other types. For example, a variable given the starting value of `1` is assigned the type **Number**. Attempting to assign it to a **String** value of `"apples"` will result in an error.
+Once a variable has been assigned a value, the type for that variable is fixed and it can't be assigned values of any other type. For example, a variable given the starting value of `1` is assigned the type **Number**. Attempting to assign it to a **String** value of `"apples"` will result in an error.
 
-When testing a bot, a variable may appear temporarily as the type **Unspecified**. An **Unspecified** variable hasn't been assigned a value yet.
+When testing a bot, a variable may appear temporarily as the type **unknown**. An **unknown** variable hasn't been assigned a value yet.
 
 ## Entities
 
@@ -84,19 +84,25 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 
 ## Create a variable
 
-Variables can be created in any node that prompts you to select a variable, such as the **Set Variable Value** node.
+Variables can be created in any node that prompts you to select a variable as an output, such as the [**Question**](authoring-ask-question.md) node, a [Power Automate Flow](advanced-flow.md) or [another topic](/authoring-variables.md#Receive-values-from-other-topics). 
+
+These nodes will automatically create new variables, with the appropriate type, for each of their output variable slots.
+
+You can use the [variable properties pane](#variable-properties-pane) to rename variables.
+
+You can also create a new variable and assign a value to it immediately using the **Set Variable Value** node.
 
 1. Select **+** to add a node and then select **Set a variable value**.
 
-1. In the **Set variable** box, select the **>** arrow.
+2. In the **Set variable** box, select the **>** arrow.
 
     :::image type="content" source="media/authoring-variables/create-new-variable-button.png" alt-text="Screenshot of selecting a variable in the Set Variable Value node.":::
 
-1. In the flyout menu that appears, select **Create a new variable**.
+3. In the flyout menu that appears, select **Create a new variable**.
 
     :::image type="content" source="media/authoring-variables/create-variable.png" alt-text="Screenshot of Create a new variable button.":::
 
-A new variable will be created with an appropriate type for its usage. Use the [variable properties pane](#variable-properties-pane) to rename it.
+A new variable will be created. The new variable's type will be **unknown** until you [assign a value](#set-a-variable) to it.
 
 ## Set a variable
 
@@ -106,35 +112,15 @@ Typically you'll use a [question node](authoring-create-edit-topics.md#ask-a-que
 
 1. For **Set variable**, choose or create a [new variable](#create-a-variable).
 
-1. For **To value**, [directly enter a value](#use-literal-values) or select another variable.
+1. For **To value**, assign a value using one of the following 3 options.
 
-## System variables
+   - Use a [literal value](#use-literal-values)
+   - Choose an existing variable of the same type from the variable picker. This will set your variable to the same value as the variable you choose.
+   - Use a [Power Fx formula](advanced-power-fx.md). This is useful for more complex types, where literal values cannot be used, such as Table and Record types.
 
-There are a number of built-in system variables that provide additional information about a conversation.
+## Variable initialization
 
-If you want to use system variables in a Power Fx formula, you must add `System.` before the name. For example, you'd need to use `System.User.DisplayName` instead of `User.DisplayName`.
-
-Some system variables are hidden from the variable context menu and must be accessed with a [Power Fx formula](advanced-power-fx.md).
-
-<!-- best viewed without wordwrap -->
-| Name                                 | Type   | Hidden | Definition                                                      |
-| ------------------------------------ | ------ | ------ | --------------------------------------------------------------- |
-| Conversation.Id                      | string |        | Unique ID for the current conversation.                         |
-| Conversation.TopicInitialUserMessage | string |        | User message which triggered the current topic.                 |
-| LastActivity.Id                      | string |        | ID of the previously sent [activity][].                         |
-| Activity.Channel                     | choice |        | Channel ID of the current conversation.                         |
-| Activity.ChannelId                   | string | ✔      | Channel ID of the current conversation, as a string.            |
-| Channel.DisplayName                  | string | ✔      | Display the name of the channel.                                |
-| Activity.Text                        | string |        | Last message sent by the user.                                  |
-| Activity.ChannelData                 | any    | ✔      | An object that contains channel-specific content.               |
-| Activity.Value                       | any    | ✔      | Open-ended value.                                               |
-| Activity.Type                        | choice |        | Type of [activity][].                                           |
-| Activity.TypeId                      | string | ✔      | Type of [activity][], as a string.                              |
-| Activity.Name                        | string |        | Name of the event.                                              |
-| Activity.From.Id                     | string | ✔      | Channel-specific unique ID for the sender.                      |
-| Activity.From.Name                   | string | ✔      | Channel-specific user-friendly name of the sender. |
-
-[activity]: /azure/bot-service/bot-activity-handler-concept
+TODO...
 
 ## Use literal values
 
@@ -171,12 +157,6 @@ You can also open the variable properties pane by selecting a variable in any no
 In the variable properties pane you can rename a variable, see where a variable is used, or convert a variable to a [global variable](authoring-variables-bot.md).
 
 :::image type="content" source="media/authoring-variables/variable-properties.png" alt-text="Screenshot of the properties pane.":::
-
-## Use variables in action nodes
-
-When you use a variable in an action node, if its base type matches a parameter type that's specified for a flow or Bot Framework skill, you can pass it to that parameter. The output from action nodes generates new variables.  
-
-:::image type="content" source="media/authoring-variables/variable-in-flow.PNG" alt-text="Screenshot of using an entity in an action node.":::
 
 ## Passing variables between topics
 
@@ -238,6 +218,50 @@ To return a variable to the original topic, set the variable's property:
     The variable that's being returned to the topic is shown in the redirected topic. Use the returned variable in your topic.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing a redirected topic with both values input and returned.":::
+
+## Variable scope
+
+By default, a variable can only be referenced within the topic where it is created and is said to be scoped to that topic. 
+
+Variables can also existing within two other scopes.
+
+- [Global](authoring-variables-bot.md) - Global scoped variables are created by the bot author, but are available for use across all topics. You can change the scope of any topic variable to make it a global variable.
+- [System](#system-variables) - System variables are created automatically and provide additional contextual information about the conversation or the user. They are usually available in all topics.
+
+## Global variables
+
+See [Reuse variables across topics](authoring-variables-bot.md).
+
+## System variables
+
+There are a number of built-in system variables that provide additional information about a conversation. These variables are shown within the variable picker on the **System** tab.
+
+:::image type="content" source="media/authoring-variables/authoring-variables-system-variable-picker.png" alt-text="Screenshot of Create a new variable button.":::
+
+If you want to use system variables in a Power Fx formula, you must add `System.` before the name. For example, you'd need to use `System.Conversation.Id` instead of `Conversation.Id` (as shown at the top of the system tab in the variable picker above).
+
+Some system variables are hidden from the variable picker and must be accessed with a [Power Fx formula](advanced-power-fx.md).
+
+<!-- best viewed without wordwrap -->
+| Name                                 | Type   | Hidden | Definition                                                      |
+| ------------------------------------ | ------ | ------ | --------------------------------------------------------------- |
+| Conversation.Id                      | string |        | Unique ID for the current conversation.                         |
+| Conversation.TopicInitialUserMessage | string |        | User message which triggered the current topic.                 |
+| LastActivity.Id                      | string |        | ID of the previously sent [activity][].                         |
+| Activity.Channel                     | choice |        | Channel ID of the current conversation.                         |
+| Activity.ChannelId                   | string | ✔      | Channel ID of the current conversation, as a string.            |
+| Channel.DisplayName                  | string | ✔      | Display the name of the channel.                                |
+| Activity.ChannelData                 | any    | ✔      | An object that contains channel-specific content.               |
+| Activity.Value                       | any    | ✔      | Open-ended value.                                               |
+| Activity.Type                        | choice |        | Type of [activity][].                                           |
+| Activity.TypeId                      | string | ✔      | Type of [activity][], as a string.                              |
+| Activity.Name                        | string |        | Name of the event.                                              |
+| Activity.From.Id                     | string | ✔      | Channel-specific unique ID for the sender.                      |
+| Activity.From.Name                   | string | ✔      | Channel-specific user-friendly name of the sender. |
+| LastMessage.Text                   | string | ✔      | Last message text sent by the user. |
+| Activity.Text                        | string |        | Message text sent by the user on the current turn.                                  |
+
+[activity]: /azure/bot-service/bot-activity-handler-concept
 
 ## Related links
 

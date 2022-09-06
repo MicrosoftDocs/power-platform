@@ -14,7 +14,7 @@ ms.custom: authoring, topics, message, question
 ms.collection: virtual-agent
 ---
 
-# Asking a Question
+# Ask a Question
 
 The **Question** node allows you to prompt a user for information and store their response into a variable, for use later on in the conversation. 
 

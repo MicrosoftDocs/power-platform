@@ -113,19 +113,19 @@ When you add a node after the **Trigger Phrases** node or between other existing
 
 To send a message consisting of text, or richer components such as images, videos, card and quick replies, select **Send a Message**.
 
-See [Send a message](authoring-message-node).
+See [Send a message](authoring-send-message.md).
 
 #### Ask a question
 
 To have the bot ask a question and get a response from the user, select **+** to add a node, and then select **Ask a question** to add a new **Question** node.
 
-See [Ask a question](authoring-question-node).
+See [Ask a question](authoring-ask-question.md).
 
 #### Add a condition
 
 You can use conditions to branch logic within your topic.
 
-See [Using conditions](authoring-condition-node).
+See [Using conditions](authoring-using-conditions.md).
 
 #### Set a variable value
 
