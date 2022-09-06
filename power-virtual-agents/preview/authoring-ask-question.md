@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 
 The **Question** node allows you to prompt a user for information and store their response into a variable, for use later on in the conversation. 
 
-The node allows you to choose the type of information you want to collect, such as multiple choice, a pre-built entity such as Number, or a custom entity that you have created via the entities page. There are also a number of [additional properties](#additional-question-behavior-properties) that allow you to control the behavior of the node, such as what to do when an invalid response is recieved or additional validation rules that need to be met by the user.
+The node allows you to choose the type of information you want to collect, such as multiple choice, a pre-built entity such as Number, or a custom entity that you have created via the entities page. There are also a number of [additional properties](#additional-question-behavior) that allow you to control the behavior of the node, such as what to do when an invalid response is recieved or additional validation rules that need to be met by the user.
 
 ## Prerequisites
 

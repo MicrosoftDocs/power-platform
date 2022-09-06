@@ -176,17 +176,17 @@ To receive values from other topics, set the variable's property:
 
 1. Save the topic.
 
-1. Go to a topic that you want to redirect to. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirecting-to-another-topic) to redirect to the correct topic.
+2. Go to a topic that you want to redirect to. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirecting-to-another-topic) to redirect to the correct topic.
 
-1. Select **+ Add input for destination topic**.
+3. Select **+ Add input for destination topic**.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for the destination topic.":::
 
-1. Select a variable in the redirected topic that you want to pass the variable to.
+4. Select a variable in the redirected topic that you want to pass the variable to.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step2.png" alt-text="Screenshot of the authoring canvas showing selecting the variable in the redirected topic.":::
 
-1. Under **Enter or select a value**, select the variable in the current topic that you want to pass to the redirected topic.
+5. Under **Enter or select a value**, select the variable in the current topic that you want to pass to the redirected topic.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step3.png" alt-text="Screenshot of the authoring canvas showing selecting the variable from the list of options.":::
 

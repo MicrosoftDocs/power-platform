@@ -52,7 +52,7 @@ By default, a topic being called from another will return to the calling topic t
 
    - Select **End all topics** to clear all active topics. This means that the next message recieved from the user will be treated in the same way as the first one in the conversation, with all topics being evaluated and the most appropriate one being started. 
 
-    > [!TIP]
-    > Using the **End all topics** node does not clear or reset any global variables. To clear global variables, use the **Clear variable values** node, as seen in the _Start over_ that is created as part of a bot's default content.
-
    - Select **End current topic** to end the current topic. If the current topic was called by another, the conversation will return to the calling topic immediately. A common use of this node is within a condition branch, where one branch exits the topic early, while another branch continues the current topic.
+
+> [!TIP]
+> Using the **End all topics** node does not clear or reset any global variables. To clear global variables, use the **Clear variable values** node, as seen in the _Start over_ that is created as part of a bot's default content.
