@@ -4,7 +4,7 @@ description: About setting up exporting to Application Insights from the Power P
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/09/2022
+ms.date: 09/07/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -81,10 +81,10 @@ search.app:
 |South Africa (ZAF)     |  Yes | Jan 2021       |
 |UAE     | Yes | March 2021        |
 |Switzerland (CHE)     | Yes | Jan 2021       |
-|GCC     | No |  Summer 2022 |
-|GCC-Mod     | No |  Summer 2022 |
+|GCC     | No |  Fall 2022 |
+|GCC-High     | No |  Fall 2022 |
 |GCC-DOD     | No |  TBD |
-|Mooncake     | No |  Fall 2022 |
+|Mooncake     | No |  TBD |
 
 
 
