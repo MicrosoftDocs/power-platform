@@ -106,9 +106,9 @@
       href: coe/overview.md
     - name: Establishing a Center of Excellence
       href: coe/motivation.md   
-    - name: Set-up the CoE starter kit    
+    - name: Set up the CoE starter kit    
       items: 
-      - name: Get started with set-up
+      - name: Get started with setup
         href: coe/setup.md
       - name: Set up inventory components
         href: coe/setup-core-components.md  
@@ -120,7 +120,7 @@
         href: coe/before-setup-gov.md  
       - name: Set up compliance processes
         href: coe/setup-governance-components.md 
-      - name: Set up inactivity notifications
+      - name: Set up inactivity processes
         href: coe/setup-archive-components.md 
       - name: Set up Microsoft Teams governance processes
         href: coe/setup-teams-components.md  
@@ -136,6 +136,8 @@
         href: coe/setup-nurture-components.md
       - name: Set up Innovation Backlog components
         href: coe/setup-innovationbacklog.md
+      - name: Set up administration planning components
+        href: coe/setup-admin-tasks-component.md
       - name: Set up theming components
         href: coe/setup-theming.md
       - name: Set up ALM Accelerator for Power Platform components
@@ -155,6 +157,8 @@
           href: coe/setup-almacceleratorpowerplatform-users.md
         - name: Configuring deployment user settings and profiles
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
+        - name: Configuring the ALM Accelerator Pipelines
+          href: coe/almaccelerator-pipelines.md
         - name: Using the Pipeline extension points
           href: coe/setup-almacceleratorforpowerplatform-hook-extensions.md
         - name: Considerations when creating Azure App Registrations
@@ -201,6 +205,8 @@
           href: coe/teams-governance.md  
         - name: Use the Innovation Backlog app
           href: coe/use-innovationbacklog.md 
+        - name: Use the Administration planning components
+          href: coe/admin-tasks-component.md 
         - name: Use the ALM Accelerator for Power Platform
           href: coe/almacceleratorpowerplatform-components.md
           items:

@@ -19,6 +19,8 @@ search.app:
 ---
 # Environment and DLP Policy management
 
+[Watch a walk-through](https://www.youtube.com/watch?v=16mspbGz1zA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the environment and DLP request process works.
+
 ## Process description
 
 **Problem statement**: When a development project requires a new Environment, and non-admins are restricted from creating Environments, the only way for non-admins to access new Environments is for admins to provision the Environment and grant permissions to users. Admins can become the bottleneck of development if volume of demand for environments is high because multiple steps are involved. New environments may also require new connectors or DLP policies.

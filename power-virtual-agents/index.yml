@@ -43,7 +43,7 @@ highlightedContent:
       url: https://go.microsoft.com/fwlink/?linkid=2058639
 
     # Card
-    - title: Power Virtual Agents training on Microsoft Learn
+    - title: Power Virtual Agents training
       itemType: learn
       url: /learn/browse/?expanded=power-platform&products=power-virtual-agents
 
