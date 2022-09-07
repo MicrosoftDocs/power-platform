@@ -324,7 +324,7 @@ Use this app to:
 - Update environment variables used in the CoE Starter Kit.
 - View Microsoft 365 Message Center news related to Microsoft Power Platform.
 - Download the latest CoE Starter Kit version and raise support tickets with the team.
-- Launch Microsoft Learn learning paths to learn more about Microsoft Power Platform.
+- Launch learning paths to learn more about Microsoft Power Platform.
 - Launch the latest posts of the Power Apps, Power Automate, Power BI and Power Virtual Agent blogs.
 - Configure email subject and body text for emails send through the CoE Starter Kit.
 
