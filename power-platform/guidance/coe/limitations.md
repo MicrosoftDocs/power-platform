@@ -37,7 +37,7 @@ Larger tenants might require a [Power Automate Per Flow](https://flow.microsoft.
 ## Installing the CoE Starter Kit in Dataverse for Teams
 
 > [!IMPORTANT]
-> Effective October 2022, we will stop investing in the CoE Starter Kit version for Dataverse for Teams. Existing customers can continue using the Dataverse for Teams version and you can continue to [download the latest available versions](https://github.com/link) for Dataverse for Teams, but we will no longer implement new features or fix bugs for this version.
+> Effective October 2022, we will stop investing in the CoE Starter Kit version for Dataverse for Teams. Existing customers can continue using the Dataverse for Teams version and you can continue to [download the latest available versions](https://aka.ms/CoEStarterKitD4T) for Dataverse for Teams, but we will no longer implement new features or fix bugs for this version.
 >
 >We recommend that customers transition to installing the CoE starter Kit in a [Production environment](/power-platform/admin/environments-overview#types-of-environments) and setting up [pay-as-you-go plans](/power-platform/admin/pay-as-you-go-overview) for the usage of apps within the CoE Starter Kit.
 
