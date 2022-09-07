@@ -20,31 +20,23 @@ searchScope:
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-In Power Virtual Agents, a topic defines how a bot conversation plays out.
+In Power Virtual Agents, a topic definesa piece of your bot's conversation.
 
-A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
+A topic contains one or more _conversation nodes_, which define the conversation path for that topic. These nodes can carry out actions, such as sending messages or asking questions.
 
-The AI uses natural language understanding (NLU) to parse what a customer types and find the most appropriate trigger phrase or node.
+Usually, a topic also has _trigger phrases_, which are phrases, keywords, and questions that a user is likely to type that are related to a specific issue. This allows the built in natural language understanding (NLU) to parse what a customer types and find the most appropriate topic to trigger. For example, if you might have a topic to allow a customer to check store hours, with a trigger phrase `check store hours`. In this case, if a customer sends a message, "see store opening hours", PVA can identify that the store hours topic should be triggered. Notice that the customer's message doesn't need to be exactly the same as the trigger phrases, thanks to the built in AI.
 
-For example, a user might type "Open hours" into your bot. The AI matches that to the **Store hours** topic, begins a conversation that asks which store the customer is interested in, and then displays the hours the store is open.
+There are two types of topics within a bot.
 
-The **Test bot** pane shows how the bot conversation plays out at every step. You can use the **Test bot** pane to fine-tune a topic without having to exit the Power Virtual Agents portal.
+- **Custom** topics. These are topics that you will create to build out your conversation. When you create a new bot, 4 custom topics are created for you to get you started with some common behavior, such as **Greeting**, **Goodbye** or if the customer indicates they would like to restart the conversation.
 
-## Use system and sample topics
+    You can make changes to the custom topics created for you, or remove them from your bot entirely.
 
-When you create a bot, Power Virtual Agents creates several topics for you.
+- **System** topics help your bot respond to common system events, such as escalation or carry out essential behaviour for your bot, such as ending a conversation. 
 
-:::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of the Topics list showing sample topics and system topics.":::
+    Some system topics have trigger phrases, which you can customize to fit your bot's needs. You can't delete system topics but, if necessary, you can disable them. However, we recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
 
-These automatically created topics fall into two categories:
-  
-- Some example [Custom topics](authoring-template-topics.md) to handle some common scenarios that most bots will need to handle, such as **Greeting** and **Goodbye** topics.
-
-    You can edit custom topics or delete them entirely.
-
-- System topics are topics that help you respond to common system events, such as escalation or carry out critical behaviour for your bot, such as ending a conversation.
-
-    You can't delete system topics. However, you can customize the trigger phrases or the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
+    See [System Topics](authoring-system-topics.md) for details on the system topics included as part of a bot.
 
 ## Create a topic
 
@@ -100,49 +92,14 @@ You have several options when you add a node. Each option has a specific node or
 
 When you add a node after the **Trigger Phrases** node or between other existing nodes, you have the following available options:
 
-- **Send a message** - Send a message from the bot to a user.
-- **Ask a question** - Ask the user a question.
-- **Add a condition** - Branch your conversation based on a condition.
-- **Set a variable value** - Set a value for a new, or existing, variable.
-- **Topic management** - Use one of several available nodes to control the flow of your conversation, including  redirecting to another topic or ending all topics.
-- **Call an action** - Call a Power Automate Flow.
+- [**Send a message**](authoring-send-message.md) - Send a message from the bot to a user.
+- [**Ask a question**](authoring-ask-question.md) - Ask the user a question.
+- [**Add a condition**](authoring-using-conditions.md) - Branch your conversation based on a condition.
+- [**Set a variable value**](authoring-variables.md#set-a-variable) - Set a value for a new, or existing, variable.
+- [**Topic management**](authoring-moving-between-topics.md) - Use one of several available nodes to control the flow of your conversation, including  redirecting to another topic or ending all topics.
+- [**Call an action**](advanced-flow.md) - Call a Power Automate Flow.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
-
-#### Send a message
-
-To send a message consisting of text, or richer components such as images, videos, card and quick replies, select **Send a Message**.
-
-See [Send a message](authoring-send-message.md).
-
-#### Ask a question
-
-To have the bot ask a question and get a response from the user, select **+** to add a node, and then select **Ask a question** to add a new **Question** node.
-
-See [Ask a question](authoring-ask-question.md).
-
-#### Add a condition
-
-You can use conditions to branch logic within your topic.
-
-See [Using conditions](authoring-using-conditions.md).
-
-#### Set a variable value
-
-See [Set variable value](authoring-variables.md#set-a-variable).
-
-#### Call an action
-
-To [call Power Automate Flows](advanced-flow.md), select **Call an action**.
-
-> [!TIP]
-> If you've configured authentication or hand-off to omnichannel, you'll see some additional actions for use in those scenarios.
-
-#### Moving between topics
-
-When you add a node, the **Topic Management** sub menu contains several options to allow you to move between topics and to manage your conversation, including options for ending the conversation.
-
-See [Moving between topics](authoring-moving-between-topics.md).
 
 ### Delete nodes
 
