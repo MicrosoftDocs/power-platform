@@ -4,7 +4,7 @@ description: About setting up exporting to Application Insights from the Power P
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/09/2022
+ms.date: 09/07/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
