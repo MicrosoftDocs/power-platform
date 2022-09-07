@@ -4,7 +4,7 @@ title: "Create a preview bot by cloning an existing bots content"
 description: "Create a new preview bot, cloning the content from an existing Power Virtual Agents bot."
 ms.date: 09/07/2022
 ms.topic: article
-author: gapretty
+author: garypretty
 ms.author: gapretty
 manager: mahesha
 ms.collection: virtual-agent
@@ -45,7 +45,7 @@ You can still [create a new preview bot](build-2022-quickstart.md) to try the pr
 
 1. Once created, you can choose **Go to your bot** to navigate to your new bot.
 
-    :::image type="content" source="media/clone-existing-bot/modal-in-progress.png" alt-text="Screenshot of the completion screen.":::
+    :::image type="content" source="media/clone-existing-bot/modal-complete.png" alt-text="Screenshot of the completion screen.":::
 
 ## Limitations
 
