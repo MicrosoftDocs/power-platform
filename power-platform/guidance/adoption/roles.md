@@ -23,7 +23,7 @@ We recommend including the following roles and responsibilities when establishin
 
 ## Low-code strategy team
 
-The low-code strategy team represents the key decision maker, and ensures the Microsoft Power Platform strategy is aligned with organizational goals. This team also is responsible for adoption and change management, and for looking at ways of working across the organization, including a [collaboration model](/power-apps/guidance/co-develop/overview.md) for multidisciplinary teams to define and adopt co-development best practices. As a driver for digital innovation, they ensure a concrete action plan for increasing digital literacy is in place. Often that is achieved through a combination of bottom-up and top-down initiatives. Bottom up: educate your makers, make it less scary, and drive self-enablement. Top down: work on executive literacy and creating an innovation-friendly culture. 
+The low-code strategy team represents the key decision maker, and ensures the Microsoft Power Platform strategy is aligned with organizational goals. This team also is responsible for adoption and change management, and for looking at ways of working across the organization, including a [collaboration model](/power-apps/guidance/co-develop/overview) for multidisciplinary teams to define and adopt co-development best practices. As a driver for digital innovation, they ensure a concrete action plan for increasing digital literacy is in place. Often that is achieved through a combination of bottom-up and top-down initiatives. Bottom up: educate your makers, make it less scary, and drive self-enablement. Top down: work on executive literacy and creating an innovation-friendly culture. 
 
 ## Microsoft Power Platform admin team
 
