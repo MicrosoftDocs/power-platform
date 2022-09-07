@@ -4,7 +4,7 @@ description: About setting up exporting to Application Insights from the Power P
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/09/2022
+ms.date: 09/07/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -24,7 +24,7 @@ search.app:
 1. Ensure that you have an [Application Insights environment](/azure/azure-monitor/app/create-workspace-resource) set up for receiving the data, in addition to the [environment](environments-overview.md) that has a database. 
    - For the Application Insights environment, you must have contributor, writer, or admin rights.
    - The Application Insights environment must be unique for an environment or tenant. Note that Application Insights out-of-the-box reports won't function correctly if a single Application Insights environment contains data from multiple environments.
-2. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need to be a member of the System Administrator role for an Environment. 
+2. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need to be a member of the System Administrator role for an environment. 
 
 ## Set up export to your Applications Insights environment from the Power Platform admin center
 
