@@ -3,12 +3,11 @@ title: "Schema and Description of Deployment Settings payload for the ALM accele
 description: "Customizing the ALM Accelerator for Power Platform can be achieved in several ways without affecting the upgrade path of the solution and pipelines. This document describes the deployment settings payload for the ALM Accelerator pipelines for Microsoft Power Platform."
 author: mikefactorial
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
 ms.subservice: guidance
-ms.author: v-mikeochs
+ms.author: rusant
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -18,18 +17,18 @@ search.app:
   - Powerplatform
 ---
 
-# ALM accelerator for Microsoft Power Platform pipelines (preview)
+# ALM accelerator for Microsoft Power Platform pipelines (preview) - Deployment settings
 
 > [!NOTE]
 > The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
 
-The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
+The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. The ALM accelerator helps makers work without intimate knowledge of downstream technologies, switch quickly from developing solutions to source-controlling the solution and pushing their apps to other environments with as few interruptions to their work as possible.
 
 The ALM accelerator doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 ## ALM Accelerator for Power Platform Pipelines Deployment Settings
 
-The deployment settings payload for the ALM Accelerator export pipeline is used to customize the deployment settings used in the deployment pipelines for a particular solution and environment. The deployment settings payload is a JSON string that is passed to the export pipeline as a parameter. Included in the payload are the following deployment settings for each deployment environment (e.g. Test, Production, etc.):
+The deployment settings payload for the ALM Accelerator export pipeline is used to customize the deployment settings used in the deployment pipelines for a particular solution and environment. The deployment settings payload is a JSON string that is passed to the export pipeline as a parameter. Included in the payload are the following deployment settings for each deployment environment (for example, Test, Production, etc.):
 
 ### Deployment pipeline settings
 
@@ -48,7 +47,7 @@ The deployment settings payload for the ALM Accelerator export pipeline is used 
   | Setting                                                                 | Required | Description |
   | -------                                                                 | -------- | ----------- |
   | environmentvariable.environment-variable-schema-name                    | No       | Used to set the value of environment variables in a deployment environment during deployment. |
-  | canvasshare.aadGroupId.canvas-app-schema-name                           | No       | This is the AAD group id for sharing the canvas app. In cases where the canvas app is to be shared with multiple aad groups a unique suffix of .1. or .2 can be added to the end of the setting to generate multiple. |
+  | canvasshare.aadGroupId.canvas-app-schema-name                           | No       | This setting is the AAD group id for sharing the canvas app. In cases where the canvas app is to be shared with multiple aad groups a unique suffix of .1. or .2 can be added to the end of the setting to generate multiple. |
   | canvasshare.roleName.canvas-app-schema-name                             | No       | This is the role to assign to the AAD group above the valid options are CanView, CanViewAndShare and CanEdit. In cases where the canvas app is to be shared with multiple aad groups a unique suffix of .1. or .2 can be added to the end of the setting similar to above.  |
   | owner.ownerEmail.flow-name.flow-id                                      | No       | The owner of the flow assigned after import of the solution in the deployment environment. |
   | flow.sharing.flow-name.flow-id                                          | No       | The Dataverse AAD Group Team to share the process record associated with the flow after import of the solution in the deployment environment. |
@@ -64,4 +63,4 @@ The schema of the deployment settings is based on the various components that re
 
 ### Deployment Settings Sample Payload
 
-The sample payload contains an example of a common payload for the ALM Accelerator pipelines. The sample payload is defined in the [deployment-settings.sample.json](https://github.com/microsoft/coe-alm-accelerator-templates/deployment-settings.sample.json) file. The data contained in this sample payload is passed to the export pipeline as a parameter as described [here](https://docs.microsoft.com/power-platform/guidance/coe/almaccelerator-pipelines). The UserSettings array contains a list of all of the deployment pipeline variables that are set on the deployment pipeline(s). When the export pipeline is run, the deployment settings and custom deployment settings files are generated using placeholders for these values. When the deployment pipeline is run, the placeholders are replaced with the values from the deployment settings payload. The only exception to this is specific reserved pipeline variables that are created on the pipeline, but not included in the deployment settings or custom deployment settings (e.g. TriggerSolutionUpgrade). Additionally, if the UseDeploymentSettingsPlaceholders variable is set to false, the placeholders are not used and the values are set directly in the deployment settings and custom deployment settings files.
+The sample payload contains an example of a common payload for the ALM Accelerator pipelines. The sample payload is defined in the [deployment-settings.sample.json](https://github.com/microsoft/coe-alm-accelerator-templates/deployment-settings.sample.json) file. The data contained in this sample payload is passed to the [export pipeline as a parameter](/power-platform/guidance/coe/almaccelerator-pipelines). The UserSettings array contains a list of all of the deployment pipeline variables that are set on the deployment pipeline(s). When the export pipeline is run, the deployment settings and custom deployment settings files are generated using placeholders for these values. When the deployment pipeline is run, the placeholders are replaced with the values from the deployment settings payload. The only exception to this is specific reserved pipeline variables that are created on the pipeline, but not included in the deployment settings or custom deployment settings (e.g. TriggerSolutionUpgrade). Additionally, if the UseDeploymentSettingsPlaceholders variable is set to false, the placeholders are not used and the values are set directly in the deployment settings and custom deployment settings files.

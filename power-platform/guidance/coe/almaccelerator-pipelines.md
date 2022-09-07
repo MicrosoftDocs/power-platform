@@ -8,7 +8,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
 ms.subservice: guidance
-ms.author: v-mikeochs
+ms.author: rusant
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
