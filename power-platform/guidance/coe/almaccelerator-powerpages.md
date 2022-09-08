@@ -31,8 +31,8 @@ Source controlling and transporting of Power Apps Portal/Power Pages website to 
 
 ## Prerequisites for Power Apps Portal/Power Pages website ALM
 
-- An active website of either Power Apps Portal/Power Pages. Go to [Power Apps portals](https://docs.microsoft.com/en-us/power-apps/maker/portals/overview) or [Power Pages](https://powerpages.microsoft.com/en-us/) to create a website.
-- ALM accelerator for Power Platform app. Go to [ALM accelerator for Power Platform app](https://docs.microsoft.com/en-us/power-platform/guidance/coe/almacceleratorpowerplatform-components)
+- An active website of either Power Apps Portal/Power Pages. Go to [Power Apps portals](https://docs.microsoft.com/power-apps/maker/portals/overview) or [Power Pages](https://powerpages.microsoft.com) to create a website.
+- ALM accelerator for Power Platform app. Go to [ALM accelerator for Power Platform app](https://docs.microsoft.com/power-platform/guidance/coe/almacceleratorpowerplatform-components)
 
 ## Including Power Apps Portal/Power Pages website during solution commit
 
@@ -49,13 +49,13 @@ In the ALM accelerator for Power Platform app, to include Power Apps Portal/Powe
 
 ## Upload Power Apps Portal/Power Pages website to downstream environments
 
-No additional steps required to upload Power Apps Portal/Power Pages website to downstream environments. Use the [ALM accelerator for Power Platform app](https://docs.microsoft.com/en-us/power-platform/guidance/coe/almacceleratorpowerplatform-components) **DEPLOY SOLUTION** option which will take care the upload of Power Apps Portal/Power Pages website to downstream environments.
+No additional steps required to upload Power Apps Portal/Power Pages website to downstream environments. Use the [ALM accelerator for Power Platform app](https://docs.microsoft.com/power-platform/guidance/coe/almacceleratorpowerplatform-components) **DEPLOY SOLUTION** option which will take care the upload of Power Apps Portal/Power Pages website to downstream environments.
 
 ## Complete Power Apps Portal/Power Pages website set up post deployment
 
 Post deploying the Power Apps Portal/Power Pages website to downstream environments, update which website record the website runtime is by following these steps:
 
-1. Open **Power Apps portals admin center**. [Steps to open Power Apps portals admin center](https://docs.microsoft.com/en-us/power-apps/maker/portals/overview)
+1. Open **Power Apps portals admin center**. [Steps to open Power Apps portals admin center](https://docs.microsoft.com/power-apps/maker/portals/overview)
 1. Under the 'Update Portal Bindings', select the website which got transported from your maker/dev environment and click on **Update**
 
    ![Power Apps Portal/Power Pages Website update binding.](media/setup-almacceleratorpowerplatform/Portal-Update-Bindings.png)
@@ -68,7 +68,7 @@ To clear the configuration cache there are a few options:
 ### Restart the Portal in Portal Admin Center
 
 1. This is easier for admins.
-1. Open **Power Apps portals admin center**. [Steps to open Power Apps portals admin center](https://docs.microsoft.com/en-us/power-apps/maker/portals/overview).
+1. Open **Power Apps portals admin center**. [Steps to open Power Apps portals admin center](https://docs.microsoft.com/power-apps/maker/portals/overview).
 1. Go to Portal Actions > Restart.
 
 ### Use Browse/Preview button in Studio
