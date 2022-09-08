@@ -1,15 +1,15 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 08/31/2022
+ms.date: 09/08/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-author: KumarVivek
-ms.author: kvivek
+author: tapanm-MSFT
+ms.author: tapanm
 ---
 
 # Important changes (deprecations) coming in Power Apps and Power Automate
@@ -21,7 +21,35 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated. 
+## CDS 2.0 connector for Power Automate flows will be deprecated and replaced with another connector
+
+Effective October 31, 2023, the CDS 2.0 connector, also referred to as the Dataverse (legacy) connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components.
+
+Users will need to review their existing Power Automate flows to determine which ones need to be updated. By March 2023, no new flows can be created using the CDS 2.0 connector but existing flows will continue to work.
+
+ Customers should use the Microsoft Dataverse connector, which is available now for use in Power Automate for most flow users. It provides a code free experience and provides greater flexibility. However, the following features aren't be available currently:
+
+- Flow uses connector actions connecting to environments other than the current environment.
+
+- Flow uses connector actions connecting to environments that are in a different geographic location than the current environment.
+
+- Flow uses the **When a row is selected** trigger.
+
+## CDS 2.0 connector for Azure Logic Apps will be deprecated and replaced with another connector
+
+Effective October 31, 2023, all existing logic apps using the deprecated legacy actions and triggers will cease to work. Users will need to review their existing logic apps to update them to the new Logic Apps triggers.
+
+The Microsoft Dataverse connector will be available for use in Azure Logic Apps in Aug 2022. Users will need to modify their existing logic apps or create new logic apps using the Microsoft Dataverse connector before October 2023.
+
+There will be a phased-in approach before deprecation takes place. Here's the timeline:
+
+- **August 30, 2022:** The actions and triggers in CDS 2.0 connector, also referred to as the Dataverse (legacy) connector, will be updated into the Microsoft Dataverse connector.
+    - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility for a period of time.
+    - All new logic apps will be created using the new actions.
+- **August 2022 through October 2022 preview period:** Both new and legacy actions and triggers will be available during new flow creation.
+- **October 2022 after preview:** No new logic apps can be created using the CDS 2.0/Dataverse (legacy) connector’s actions and triggers, but existing logic apps will continue to work.
+
+## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
  
 Dynamics 365 and Microsoft Power Platform will be blocked in Internet Explorer starting October 31st. From early October 2022, users will be redirected to Microsoft Edge if they have Edge currently installed on their device.  Otherwise, they will receive a non-dismissible message informing them why they are blocked and to try using the site on Microsoft Edge. Starting October 31st, Internet Explorer will be blocked on Dynamics 365 and Microsoft Power Platform and users will see a blocking message informing them to use Microsoft Edge. If users are trying to access Dynamics 365 and Microsoft Power Platform on a Microsoft Edge version that is no longer supported, they will be prompted to use the latest version of Edge. 
  
