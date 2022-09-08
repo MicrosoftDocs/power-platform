@@ -80,8 +80,8 @@ You can store the app/business data in a database with Microsoft Dataverse. You 
 
 You have multiple options when creating an environment:
 
-1. [Create an environment with a Dataverse database](#create-an-environment-with-a-database)
-2. [Create an environment without a Dataverse database](#create-an-environment-without-a-database)
+- [Create an environment with a Dataverse database](#create-an-environment-with-a-database)
+- [Create an environment without a Dataverse database](#create-an-environment-without-a-database)
 
 ### Some important considerations when creating a new environment
 
