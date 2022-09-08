@@ -247,8 +247,6 @@ The following Power Automate capabilities aren't included in Power Apps licenses
 - [Robotic process automation](./types.md#robotic-process-automation).
 - [AI Builder capacity](./types.md#ai-builder-credits).
 
-Flows created to support apps built with Power Apps must run within the context of the app, meaning the flow must use the same data sources for triggers or actions as the app. Flows that are triggered from the app are automatically considered as being in context of the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the app using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app) to establish dependency between the app and the flow.
-If a premium flow is not in context of any app, you must purchase a standalone Power Automate license.
 
 #### Example of Power Automate use within an app created using Power Apps context
 
@@ -268,6 +266,9 @@ The same user ([in the example above](#example-of-power-automate-use-within-an-a
 
 In this example, the app created using Power Apps is being used outside the context of Power Apps so the user needs a standalone Power Automate license.
 
+Flows created to support apps built with Power Apps must run within the context of the app, meaning the flow must use the same data sources for triggers or actions as the app. Flows that are triggered from the app are automatically considered as being in context of the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the app using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app). Once the flow is linked, a dependency is established between the app and the flow and they can be managed together.  
+
+If a premium flow is not in context of any app, you must purchase a standalone Power Automate license.
 
 ## Multiplexing
 
