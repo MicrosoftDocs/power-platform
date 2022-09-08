@@ -78,7 +78,7 @@ Power Apps P1 and P2 and Power Automate P1 and P2 plans will no longer be availa
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
 
-Power Apps licenses will continue to include Power Automate capabilities. However, flows will need to run within the context of the Power Apps application, which refers to using the same data sources for triggers or actions as the Power Apps application. Consuming standalone Power Automate flows unrelated to the Power Apps application(s) will require purchase of a standalone Power Automate license.
+Power Apps licenses will continue to include Power Automate capabilities. However, flows will need to run within the context of the app, which refers to using the same data sources for triggers or actions as the app. Consuming standalone Power Automate flows unrelated to the app(s) will require purchase of a standalone Power Automate license.
 
 ### Is there a plan for developers?
 
@@ -170,7 +170,7 @@ Power Automate plan-based limits on trigger frequency and the number of runs all
 
 Power Apps and Power Automate usage will be subject to service limits described [here](./api-request-limits-allocations.md). Per user service limits provide capacity assurance for users and alleviate the risk of one user exhausting the tenant wide quota.
 
-### How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct 1st 2019? Will my existing Power Apps applications and Power Automate workflows continue to work?
+### How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct 1st 2019? Will my existing apps and Power Automate workflows continue to work?
 
 Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Microsoft 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Microsoft 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.
 
@@ -180,9 +180,9 @@ The extended transition period allows for using the connectors listed above but 
 
 Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector does not provide Dataverse capacity. Dataverse capacity is a prerequisite for Power Apps and Power Automate workflows to use Dataverse. 
 
-### How many Power Apps applications I can run with Microsoft 365 plans?
+### How many apps I can run with Microsoft 365 plans?
 
-There is no limit on the number of applications. Customers can continue to run standalone Power Apps applications to extend and customize Microsoft 365 using standard connectors. 
+There is no limit on the number of applications. Customers can continue to run standalone apps to extend and customize Microsoft 365 using standard connectors. 
 
 ## Dynamics 365
 
@@ -196,9 +196,9 @@ Power Apps use rights with Dynamics 365 licenses: Dynamics 365 *Enterprise* li
 
 Power Automate use rights with Dynamics 365 licenses: Dynamics 365 licenses will no longer include general purpose Power Automate capabilities. Power Automate flows will need to map to licensed Dynamics 365 application context - Power Automate flows should trigger from OR connect to data sources within use rights of licensed Dynamics 365 application(s). Use of standalone flows will require a Power Automate license.
 
-### Can I connect to Microsoft Dynamics for Finance and Operations?
+### Can I connect to Microsoft Dynamics for finance and operations apps?
 
-Yes, you can use the Dynamics 365 Finance and Operations connector to build canvas apps using this data.
+Yes, you can use the Dynamics 365 finance and operations apps connector to build canvas apps using this data.
 
 ## Power Automate
 
@@ -392,7 +392,7 @@ Yes. You can purchase Power Apps Portals add-on capacity if you are an existing 
 
 Custom Power Apps Portals use rights: For internal users, use rights to a “custom” portal are aligned with their “custom” Power Apps use rights. For example:
 
-- A Dynamics 365 enterprise application license gets use rights to custom Power Apps applications within the same environment as the Dynamics 365 application. As such, A Dynamics 365 enterprise application license gets use rights to custom Power Apps Portals within the same environment as the licensed Dynamics 365 enterprise application.
+- A Dynamics 365 enterprise application license gets use rights to custom apps within the same environment as the Dynamics 365 application. As such, A Dynamics 365 enterprise application license gets use rights to custom Power Apps Portals within the same environment as the licensed Dynamics 365 enterprise application.
 
 - The Team Member license does not get access to custom portal as Team Member licenses do not allow access to a custom app.
 

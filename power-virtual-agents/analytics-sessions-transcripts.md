@@ -20,6 +20,10 @@ Each of these fields includes information relevant to the chatbot conversation.
 
 This topic lists the most important fields found in Power Virtual Agents conversation transcripts, and also provides guidance on bringing analytics information into Power BI with dataflows.
 
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+
 ## Conversation transcripts fields
 
 The following are the most relevant to chatbots created with Power Virtual Agents:

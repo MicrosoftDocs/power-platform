@@ -4,7 +4,7 @@ description: About Power Apps per app plans
 author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/19/2022
+ms.date: 07/18/2022
 ms.subservice: admin
 ms.author: alaug
 ms.reviewer: jimholtz
@@ -66,7 +66,7 @@ To allocate add-ons, select **Manage**. For detailed information, see [Allocate 
 
 After an admin allocates Power Apps per app plan to an environment, they're assigned to unlicensed users when an app in that environment is shared with them. 
 
-Follow these steps to turn off assigning per app plans for users when an app is shared with them:
+Follow these steps to turn on assigning per app plans for users when an app is shared with them:
 
 1. Choose the app in [Power Apps](https://make.powerapps.com).
 
@@ -180,8 +180,8 @@ Once the user is allocated a Power Apps per user license, per app license consum
 ### When will I be able to see the list of users who are using the Power Apps per app license?
 We are currently working on this report. Please check back again for more details. This report will be available in the Power Platform admin center. 
 
-### What are the differences in the admin experience between the Power App per app and the Power App per user license?
-Power Apps per user plan is a user license assigned by admins from https://admin.microsoft.com. Once the user has this license they can access any number of Power Apps apps. However, the Power Apps per app plan provides a capacity to run apps and the management experience for this license is in the Power Platform admin center. The license is assigned to users when apps in the environment are shared with them. Admins allocate the capacity of per app to an environment and the makers share the app with users. This sharing consumes the per app capacity. Once the reporting is available, admins can see the users who are consuming capacity in the Power Platform admin center and not in the Microsoft 365 admin center.
+### What are the differences in the admin experience between the Power Apps per app and the Power Apps per user license?
+Power Apps per user plan is a user license assigned by admins from https://admin.microsoft.com. Once the user has this license they can access any number of apps created using Power Apps. However, the Power Apps per app plan provides a capacity to run apps and the management experience for this license is in the Power Platform admin center. The license is assigned to users when apps in the environment are shared with them. Admins allocate the capacity of per app to an environment and the makers share the app with users. This sharing consumes the per app capacity. Once the reporting is available, admins can see the users who are consuming capacity in the Power Platform admin center and not in the Microsoft 365 admin center.
 
 ### Can I assign Power Apps per app plans in the Microsoft 365 admin center (admin.microsoft.com)? 
 No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Power Apps per app plans are to be allocated to an environment by an admin in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to users when apps are shared with users in the environment.

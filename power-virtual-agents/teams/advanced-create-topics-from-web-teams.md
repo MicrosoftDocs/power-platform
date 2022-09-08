@@ -2,7 +2,7 @@
 title: "Get topic suggestions from support pages in Microsoft Teams"
 description: "Get suggestions on what topics to include from existing support content, such as FAQs, help sites, and Word and Excel documents"
 keywords: "PVA"
-ms.date: 01/25/2022
+ms.date: 08/24/2022
 
 ms.topic: article
 author: iaanw
@@ -21,106 +21,170 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-create-topics-from-web.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-create-topics-from-web-teams.md)
 
-You can import existing help text and automatically create topics for a chatbot, so you don't have to re-create lots of questions and answers.
+You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you already have help or support content, such as FAQ pages or support sites.
 
-For example, imagine you already have an FAQ page (like [this one for Microsoft Search](/microsoftsearch/faqs)) and you just want to put these common questions into your bot. Or you might have something similar, but stored in a Word or Excel file.
+Rather than copying and pasting or manually re-creating this content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing online resources into your bot.
 
-Instead of having to manually copy each question and its answer and create new topics in your bot for each question, you can get Power Virtual Agents to do all this for you automatically.
+The underlying capability identifies the structure and content on a webpage or online file, isolates content blocks that pertain to a support issue or question, and then classifies them into topics with corresponding [Trigger phrase and Message nodes](authoring-create-edit-topics-teams.md) for each topic.
 
-All you need is a secure link (one that starts with https://) to the file or webpage that has the questions you want to import.
+There are three main steps to using the feature:
+
+1. [Select Suggest topics on the Topics page to extract content](#extract-content-from-webpages-or-online-files).
+1. [Add the suggested topics to your bot](#add-suggested-topics-to-an-existing-bot).
+1. [Enable the suggested topics](#enable-topics-in-your-bot).
+
+You can [test the topics in the test chat](authoring-test-bot-teams.md), but you'll need to [publish your bot for customers](publication-fundamentals-publish-channels-teams.md) to see the latest changes.
+
+>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mNOt]
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
-## Get content from webpages and online files
+## Supported content
 
-First you'll need a secure URL (starting with HTTPS) to your content, which must be a publicly available link. For example, you can't use a file on a SharePoint site or somewhere where you need to log in.
+Uploading files is not supported, instead you must provide a URL that meets the following requirements:
 
-After the extraction is complete, you'll be shown the suggested topics for further review. Suggested topics aren't automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
+- Points to a webpage or supported file type
+- Is accessible by anyone on the internet
+- Doesn't require a user to login
+- Uses HTTPS (starts with `https://`)
 
-> [!IMPORTANT]
-> The **Suggest topics** command is built to run on webpages that are in the form of FAQ pages or support sites. Other types of pages that don't have that structure might not work as expected.
+The **Suggest topics** capability is built to extract topics from content with a FAQ or support structure. Webpages with a different structure might not work as expected. If you can't extract content from your webpage, try providing the content as a CSV file.
 
-### Extract content from existing webpages
+### Supported file types
 
-1. Select **Topics** on the side pane.
-
-    :::image type="content" source="../media/advanced-create-topics-from-web/topics-web-tab.png" alt-text="The Topics menu item on the side pane.":::
-
-1. Go to the **Suggested** tab.
-
-1. If it's the first time you're getting suggestions, the list of suggested topics will be blank. A link to **Get started** or **Learn more** appears instead.
-
-    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-get-teams.png" alt-text="An empty Topics page, with a link to Get started or Learn more.":::
-
-2. Select **Get started** or **Suggest topics**.
-
-3. Enter each webpage or file you want to extract content from, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a page by mistake, you can remove it by selecting **Delete** :::image type="content" source="../media/advanced-create-topics-from-web/delete-suggested-topic-teams.png" alt-text="Delete." border="false":::.
-
-    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-wizard-teams.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from." border="false":::
-
-4. When you're done adding pages, select **Start**. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
-
-    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-wait-teams.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
-
-> [!TIP]
-> You can add multiple webpages, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
+Tabular file types require a _two-column format_ where each row represents a question and answer pair: the first column contains the question and the second column contains the answer.
 
 > [!IMPORTANT]
-> You won't be able to add more URLs while the **Suggest topics** feature is running.
+> You must provide the full URL to the location of the file, including the file extension. For example `https://www.example.com/thisisafile.pdf`.
 
-Now the suggested topics will appear. These are taken from the links you previously submitted.
+| Supported file type             | Requires two-column format |
+| ------------------------------- | :------------------------: |
+| Comma separated values (.csv)   |            Yes             |
+| [Microsoft Excel (.xlsx)][1]    |            Yes             |
+| Microsoft Power Point (.pptx)   |                            |
+| Microsoft Word (.docx)          |                            |
+| Plain text (.txt)               |                            |
+| Portable Document Format (.pdf) |                            |
+| Tab separated values (.tsv)     |            Yes             |
 
-:::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-topics-teams.png" alt-text="The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received." border="false":::
+[1]: #microsoft-excel
+
+#### Microsoft Excel
+
+When using Microsoft Excel files, only the first sheet is imported.
+
+You can enter more than one question (separated by new lines) in a first-column cell and they'll all be added as trigger phrases to the topic suggestion.
+
+:::image type="content" source="../media/advanced-create-topics-from-web/multiple-triggers-excel.png" alt-text="Screenshot of an Excel spreadsheet with multiple questions in one cell.":::
+
+:::image type="content" source="../media/advanced-create-topics-from-web/multiple-triggers-pva.png" alt-text="Screenshot of all the questions as trigger phrases in the topic suggestion.":::
 
 ## Single-turn and multi-turn topic suggestions
 
-When Power Virtual Agents extracts your content, it automatically creates single-turn or multi-turn topic suggestions based on how your content is laid out and formatted (for example, its headings and subheadings).
+When Power Virtual Agents extracts content, it generates single-turn or multi-turn topic suggestions, based on the structure of the document.
 
-A **single-turn topic** has a trigger phrase that contains a single answer. These topics are often created from simple content, such as FAQ pages.
+A **single-turn topic** has a trigger phrase that contains a single answer. Topics such as these are typically generated if your online content has simple "question-and-answer" pairs, such as an FAQ page.
 
-A **multi-turn topic** contains multiple bot responses and questions to the user. These topics are often created from troubleshooting pages or reference pages and manuals.
+A **multi-turn topic** contains multiple bot responses, and is often associated with multiple dialog branches. It provides a guided experience for your bot's users to navigate through a problem and reach a solution. These topics are typically generated when your online content is similar to a troubleshooting page or a reference manual or guidebook.
 
-:::image type="content" source="../media/advanced-create-topics-from-web/sample-multi-turn-topic-teams.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion in Teams.":::
+The original content's structure or hierarchy (such as headings and subheadings) will [contribute to whether a multi-turn or single-turn topic is generated](#how-the-ai-creates-topic-suggestions).
 
-See the [Power Virtual Agents web app version of this topic for more details on how topic suggestions are created](../advanced-create-topics-from-web.md#single-turn-and-multi-turn-topic-suggestions).
+:::image type="content" source="../media/advanced-create-topics-from-web/sample-multi-turn-topic.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion showing multiple branches from the original question.":::
+
+## Extract content from webpages or online files
+
+First, you'll need to point to the webpages or online files from which you want to extract content.
+
+After the extraction is complete, you'll be shown the suggested topics for further review. Suggested topics aren't automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
+
+1. Select **Topics** on the side pane.
+
+    :::image type="content" source="../media/advanced-create-topics-from-web/menu-topics.png" alt-text="Screenshot of the Topics menu item on the side pane." border="false":::
+
+1. Select **Suggest topics**.
+
+    :::image type="content" source="../media/advanced-create-topics-from-web/suggest-topics-button.png" alt-text="Screenshot of the Suggest topics button." border="false":::
+
+1. Enter a URL for a [supported webpage or online file](#supported-content) from which you want to extract content, and then select **Add**. This queues up content for extraction in a later step.
+
+    > [!IMPORTANT]
+    > When using an online file, you must provide the full URL to the location of the file, including the file extension. For example `https://www.contoso.com/support.pdf`.
+
+    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-wizard.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from.":::
+
+1. As needed, repeat the previous step to add more URLs. We recommend that you add only a few at a time to keep the resulting list of suggestions manageable.
+
+1. If you add a URL by mistake, you can remove it by selecting **Delete**.
+
+    :::image type="content" source="../media/advanced-create-topics-from-web/delete-content.png" alt-text="Screenshot of the delete button.":::
+
+1. When you're done adding URLs to webpages and/or online files, select **Start**. The extraction process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
+
+    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
+
+    > [!IMPORTANT]
+    > You can't add more URLs while the **Suggest topics** command is running.
+
+1. Once extraction is complete, go to the **Suggested** tab. A number of suggestions will appear. These may be either [single-turn or multi-turn topics](#single-turn-and-multi-turn-topic-suggestions).
+
+    :::image type="content" source="../media/advanced-create-topics-from-web/suggestion-tab.png" alt-text="Screenshot of the Suggested tab.":::
+
+1. Review these suggestions to see which ones you want to [add to your bot](#add-suggested-topics-to-an-existing-bot).
+
+## Troubleshoot errors
+
+The tool provides explicit feedback about errors so that you can understand and address any issues. For example, you might be unable to extract content because the site you're referencing is down or it may be gated behind a user login, such as a SharePoint page.
+
+:::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-error-bar.png" alt-text="A red banner alert that says We ran into problems getting suggestions appears at the top of the page with a link to more details." border="false":::
+
+:::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-error-detail.png" alt-text="A pop-up window that describes the errors encountered when trying to get suggestions from a web page." border="false":::
+
+### How the AI creates topic suggestions
+
+The Power Virtual Agents AI engine applies a number of steps to the content when it extracts topics and generates suggestions. These steps utilize AI to identify and parse visual and semantic cues from the content.
+
+1. _Document parsing:_ the Power Virtual Agents engine identifies and extracts the basic components of the document, such as text and image blocks.
+
+1. _Layout understanding:_ the document is segmented into different zones that consist of the blocks of content.
+
+1. _Structure understanding:_ the logical structure of the content is analyzed by determining the "role" of each zone (for example, what is actual content and what are headings). Power Virtual Agents creates a hierarchical map or "heading tree" of the content, based on the headings and their associated content.
+
+1. _Augmentation:_ the Power Virtual Agents AI engine adds context to the tree by analyzing how the headings relate to each other and their content. At this point, it generates single-turn topics from identified simple "question-and-answer" pairs of headings and content.
+
+1. _Dialog generation:_ multi-turn topics are generated from the augmented knowledge tree, depending on whether the topic's intent is a simple answer from a group of many, or if the topic has multiple solutions that are equally different, and are chosen based on a user's input or choices.
 
 ## Add suggested topics to an existing bot
 
-You can now review these suggestions to see what to add to your bot.
-
-### Review suggestions and add them to your bot
+After the extraction process has been completed, the topic suggestions appear on the **Suggested** tab. Review them individually to decide which ones you want to include in your bot. You can also add suggestions without reviewing them.
 
 1. Select the name of the suggested topic.  
 
-1. Check the phrases and words that will cause the bot to start talking about that topic, along with what answer the bot will give. Each topic will end with a survey, so your customers can let you know whether they found it helpful. You have the following three options for dealing with the topic:  
+1. Review the trigger phrase and suggested **Message** node. (Each topic will end with a survey, so your customers can let you know whether they found it helpful.) You have the following three options for dealing with the topic:  
 
-    1. To make edits to the topic, select **Add to topics and edit**. The topic will open, where you can [edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics-teams.md) to make changes to what the bot says. The topic will also be removed from the list of suggestions.  
+    1. To make edits to the topic, select **Add to topics and edit**. The topic will open, where you can [edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics-teams.md) to make changes to the conversation flow. The topic will also be removed from the list of suggestions.  
 
-    1. To directly add the suggested topic without making any changes, select **Add to topics**. The topic is added and saved. The topic will also be removed from the list of suggested topics.  
+    1. To add the suggested topic without making any changes, select **Add to topics**. The topic is added and saved, but you'll stay on the list of suggested topics. The topic will also be removed from the list of suggested topics.  
 
-    1. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics. Run the **Suggest topics** command again to restore it.  
+    1. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics. You can run the **Suggest topics** command again if you want to restore it.  
 
-    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-add-edit-teams.png" alt-text="n editing window showing a snapshot of the topic's layout":::
+    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-add-edit.png" alt-text="An editing window showing a snapshot of the topic's layout." border="false":::
 
-1. You can delete or add the suggestion without opening the preview. Hover over the name of the suggested topic you want to delete or add.
+1. In the suggested topics list, hover over the name of the suggested topic you want to add or delete.
 
-    1. To delete, select the trashcan icon.
+    1. To add the topic to your bot, select **Add to topics** :::image type="content" source="../media/advanced-create-topics-from-web/add-to-topics.png" alt-text="Add to topics." border="false":::. You won't see a preview of the topic and the topic will be moved from the list of **Suggested** topics into **Existing** topics.
 
-    1. To add the topic to your bot, select the **Add to topics** icon :::image type="content" source="../media/advanced-create-topics-from-web/add-to-topics-teams.png" alt-text="Add to topics." border="false":::. You won't see a preview of the topic, and the topic will be automatically moved to the list of "Existing" topics.
-
-        :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-quick-teams.png" alt-text="An up arrow icon next to the title of a topic." border="false":::
+    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-quick.png" alt-text="An up arrow icon next to the title of a topic." border="false":::
 
 1. You can also add or delete multiple topic suggestions at a time. If you select multiple rows, you'll see options to **Add to topic** or **Delete**.
 
-    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-multi-teams.png" alt-text="The list has three items selected." border="false":::
+    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-multi.png" alt-text="The list has three items selected." border="false":::
 
 ## Enable topics in your bot
 
-Suggested topics are added to the **Existing** tab with their status set to **Off**. This way, topics won't be added to your bot by accident.
-
-### Enable topics for use
+Suggested topics are added to the **Existing** tab with their status set to **Off**. This way, topics won't be prematurely added to your bot.
 
 1. Select **Topics** on the side pane.
 
@@ -128,7 +192,7 @@ Suggested topics are added to the **Existing** tab with their status set to **Of
 
 1. For each topic you want to enable, turn on the toggle under **Status**.
 
-You can [test the topics in the test chat](authoring-test-bot-teams.md), but you'll need to [publish your bot for customers](publication-fundamentals-publish-channels-teams.md) to see the latest changes.
+    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-enable.png" alt-text="A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column." border="false":::
 
 ### See also
 

@@ -25,7 +25,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Test a topic in the Test bot pane
 

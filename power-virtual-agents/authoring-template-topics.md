@@ -25,7 +25,7 @@ Power Virtual Agents includes a set of four lessons from which you can see examp
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Access and use lesson topics for new bots
 
