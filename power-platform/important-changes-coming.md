@@ -1,15 +1,15 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 09/08/2022
+ms.date: 09/09/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-author: tapanm-MSFT
-ms.author: tapanm
+author: KumarVivek
+ms.author: kvivek
 ---
 
 # Important changes (deprecations) coming in Power Apps and Power Automate
@@ -27,19 +27,23 @@ Effective October 31, 2023, the CDS 2.0 connector, also referred to as the Datav
 
 Users will need to review their existing Power Automate flows to determine which ones need to be updated. By March 2023, no new flows can be created using the CDS 2.0 connector but existing flows will continue to work.
 
- Customers should use the Microsoft Dataverse connector, which is available now for use in Power Automate for most flow users. It provides a code free experience and provides greater flexibility. However, the following features aren't be available currently:
+Customers should use the Microsoft Dataverse connector, which is available now for use in Power Automate for most flow users. It provides a code free experience and provides greater flexibility. However, the following features aren't available currently:
 
-- Flow uses connector actions connecting to environments other than the current environment.
+- Connector actions connecting to environments other than the current environment.
 
-- Flow uses connector actions connecting to environments that are in a different geographic location than the current environment.
+- Connector actions connecting to environments that are in a different geographic location than the current environment.
 
-- Flow uses the **When a row is selected** trigger.
+- **When a row is selected** trigger.
+
+If you meet one of these criteria, you won't be able to migrate until this functionality is available. All other flows can start migration in October 2022.
+
+In some cases, users will be able to use a migration tool to migrate from the Dataverse (legacy) connector to the Microsoft Dataverse connector. On the detail page of each flow, you'll see the message *Migrate this flow to the latest Microsoft Dataverse connector". You'll be able to open the migration assistant from there.
+
+If your flow was created prior to June 2020, you won't be able to use the migration tool. To check this, you can confirm whether the Microsoft Dataverse connector is searchable when editing the flow. If this is the case, or if the migration fails, you'll need to manually recreate your flow using the Microsoft Dataverse connector.
 
 ## CDS 2.0 connector for Azure Logic Apps will be deprecated and replaced with another connector
 
-Effective October 31, 2023, all existing logic apps using the deprecated legacy actions and triggers will cease to work. Users will need to review their existing logic apps to update them to the new Logic Apps triggers.
-
-The Microsoft Dataverse connector will be available for use in Azure Logic Apps in Aug 2022. Users will need to modify their existing logic apps or create new logic apps using the Microsoft Dataverse connector before October 2023.
+Effective October 31, 2023, the CDS 2.0 connector, also referred to as the Dataverse (legacy) connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components. The Microsoft Dataverse connector will be available for use in Azure Logic Apps in Aug 2022. Users will need to modify their existing logic apps or create new logic apps using the Microsoft Dataverse connector before October 2023.
 
 There will be a phased-in approach before deprecation takes place. Here's the timeline:
 
@@ -48,6 +52,9 @@ There will be a phased-in approach before deprecation takes place. Here's the ti
     - All new logic apps will be created using the new actions.
 - **August 2022 through October 2022 preview period:** Both new and legacy actions and triggers will be available during new flow creation.
 - **October 2022 after preview:** No new logic apps can be created using the CDS 2.0/Dataverse (legacy) connector’s actions and triggers, but existing logic apps will continue to work.
+
+Effective October 31, 2023, all existing logic apps using the deprecated legacy actions and triggers will cease to work. Users will need to review their existing logic apps to update them to the new Azure Logic Apps triggers.
+
 
 ## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
  
