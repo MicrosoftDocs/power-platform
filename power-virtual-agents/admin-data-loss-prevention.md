@@ -33,9 +33,7 @@ Administrators can govern chatbots in your organization using data loss preventi
 Power Virtual Agents connectors can be classified within a DLP policy under the following data groups, which are presented in the Power Platform admin center when reviewing DLP policies:
 
 -   Business
-
 -   Non-business
-
 -   Blocked
 
 You can use the connectors in DLP policies to protect your organization's data from any malicious or unintentional data exfiltration by your chatbot makers.
@@ -72,13 +70,9 @@ You can configure whether DLP policies should be applied to your chatbots with t
 You can:
 
 -   Confirm if DLP is enabled for bots in your tenant
-
 -   Enable or disable DLP in an auditing mode (`-Mode SoftEnabled`) so bot makers can see errors, but are not prevented from performing actions that would be blocked if DLP enforcement was fully enabled.
-
 -   Enable or disable DLP enforcement, which will show DLP enforcement errors, and prevent bot makers from publishing DLP-affected bots or configuring DLP-related settings.
-
 -   Exempt specific bots from DLP enforcement.
-
 -   Add and update the learn-more and contact email links that are shown to bot makers when they encounter DLP in the Power Virtual Agents web and Teams apps.
 
 > [!IMPORTANT]

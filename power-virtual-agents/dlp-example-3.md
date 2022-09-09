@@ -1,6 +1,6 @@
 ---
 title: "Use DLP to require chatbot users to be authenticated"
-description: "Block unauthenticated end users from interacting with chatbots.
+description: "Block unauthenticated end users from interacting with chatbots."
 keywords: "PVA"
 ms.date: 9/9/2022
 ms.topic: article
@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Data loss prevention example 3 – Require end-user authentication for Power Virtual Agents chatbots 
+# Data loss prevention example 3 - Require end-user authentication for Power Virtual Agents chatbots 
 
 If a Power Virtual Agents chatbot is not configured to require end-user authentication, then anyone on the internet can chat with the bot.
 
