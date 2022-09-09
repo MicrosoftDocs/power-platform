@@ -33,7 +33,7 @@ While the ALM Accelerator pipelines and app have default configurations that all
 
 ### Installing the pipelines in one project and source code in another project
 
-A recent addition to the the ALM Accelerator App and in the Deployment Profiles is an option to specify a pipeline project in addition to source project. An option has also been added to the coe-cli install to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
+Using the Deployment Profiles in the ALM Accelerator app you can specify a pipeline project in addition to source project. An option has also been added to the coe-cli install to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
 
 ### Run the ALM Accelerator pipelines without installing the ALM Accelerator Canvas App and solution
 
