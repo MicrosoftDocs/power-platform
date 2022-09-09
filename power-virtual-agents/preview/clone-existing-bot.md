@@ -1,8 +1,8 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
-title: "Create a preview bot by cloning an existing bots content"
+title: "Create a preview bot from the content of an existing bot"
 description: "Create a new preview bot, cloning the content from an existing Power Virtual Agents bot."
-ms.date: 09/07/2022
+ms.date: 09/14/2022
 ms.topic: article
 author: garypretty
 ms.author: gapretty
@@ -10,7 +10,7 @@ manager: mahesha
 ms.collection: virtual-agent
 ---
 
-# Create a preview bot by cloning an existing bots content
+# Create a preview bot from the content of an existing bot
 
 This article walks you through creating a new preview bot by cloning the content from an existing non-preview bot.
 
@@ -26,24 +26,28 @@ You can still [create a new preview bot](build-2022-quickstart.md) to try the pr
 
 ## Clone a bot
 
-1. Navigate to the bot **overview** page for an existing (non-preview) bot and locate the tile that invites you to try the new preview.
+<!--09/09 Feature not yet available-->
+
+1. Open your existing (non-preview) bot in PVA.
+1. Go to the **Overview** page for an existing bot and select **Try the preview**.
 
    :::image type="content" source="media/clone-existing-bot/preview-tile.png" alt-text="Screenshot of tiles inviting users to try the new Power Virtual Agents preview.":::
 
-1. Click **Try the preview**, which will present you with a modal window with an overview of the preview and then choose **Continue**.
+1. On the **Create a chatbot** page, select **Try the unified canvas (preview)**. PVA will open a dialog.
+   1. The **Chatbots (preview)** page describes features of the preview. Select **Continue**.
 
-1. On the next page within the wizard, if your [bot is eligible](#eligibility), you will be presented with a choice of copying and converting your existing bot's content, or creating a new preview bot. Providing you're happy to continue with your existing bot's content, leave the selection as **Copy and convert this bot**, optionally amend your new preview bot's name, and then choose **Create**.
+   1. On the **Create a chatbot (preview)** page, if your [bot is eligible](#eligibility), you can copy and convert your existing bot content, or you can create a new preview bot. To continue, make sure **Copy and convert this bot** is selected, optionally edit the name for your new preview bot, and then select **Create**.
 
-   :::image type="content" source="media/clone-existing-bot/modal-step2.png" alt-text="Screenshot of tiles inviting users to try the new Power Virtual Agents preview.":::
+      :::image type="content" source="media/clone-existing-bot/modal-step2.png" alt-text="Screenshot of tiles inviting users to try the new Power Virtual Agents preview.":::
 
-    > [TIP]
-    > There are some limitations with the type of content that can be copied from an existing bot. If there are any limitations that will affect your bot, you will be informed of these on the next screen, before continuing to create your new bot.
+       > [!TIP]
+       > There are some limitations with the type of content that can be copied from an existing bot. If there are any limitations that will affect your bot, you will be informed of these on the next screen, before continuing to create your new bot.
 
-1. Your new preview bot will now be created.
+1. PVA will create your new bot.
 
     :::image type="content" source="media/clone-existing-bot/modal-in-progress.png" alt-text="Screenshot of the in progress screen whilst your new bot is being created.":::
 
-1. Once created, you can choose **Go to your bot** to navigate to your new bot.
+1. Once it's created, select **Go to your bot** to navigate to your new bot.
 
     :::image type="content" source="media/clone-existing-bot/modal-complete.png" alt-text="Screenshot of the completion screen.":::
 
