@@ -62,23 +62,23 @@ Follow these steps to update the website binding once the Power Apps Portal/Powe
 
 ## Be aware of configuration cache
 
-If your changes are not reflected on the website post deployment, you will need to clear the configuration cache:
+If your changes are not reflected on the website post deployment, you will need to clear the configuration cache - there are multiple options to clear the configuration cache:
 
-### Restart the Portal in Portal Admin Center
+### Restart the portal in the Power Apps portal admin aenter
 
-1. This is easier for admins.
-1. Open **Power Apps portals admin center**. [Steps to open Power Apps portals admin center](/power-apps/maker/portals/overview).
-1. Go to Portal Actions > Restart.
+1. If you are an administrator, this is the easiest option.
+1. Open **[Power Apps portals admin center](/power-apps/maker/portals/overview)**.
+1. Navigate to Portal Actions > Restart.
 
-### Use browse/preview button in studio
+### Use browse/preview button in the maker studio
 
-1. This is the easiest for makers and admins and minimum down time.
+1. If you are a maker, this is the easiest option and involves minimum down time of the website.
 1. Be careful not to change anything and close the studio tab right away.
 
 ### Service page for site administrator users
 
-1. This requires more setup and planning but is likely the safest feature.
-1. Authenticate to the site and assign the resulting contact record has the Administrator Web Role. You can then go to the Site URL + "/_services/about" in your browser where you can select the **Clear cache** button. 
+1. This requires more setup and planning but is the safest option.
+1. Authenticate to the site and assign the resulting contact record the Administrator Web Role. Navigate to the Site URL + **/_services/about** in your web browser where you can select the **Clear cache** button. 
 
    ![Power Apps Portal/Power Pages Website clear cache.](media/setup-almacceleratorpowerplatform/Portal-Clear-Cache.png)
 
