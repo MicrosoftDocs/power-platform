@@ -27,7 +27,7 @@ search.app:
 
 The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
-With the ALM Accelerator, you can source control your Power Apps Portal/Power Pages website, transport them to downstream environments and include them during solution commit. 
+With the ALM Accelerator, you can source control your Power Apps Portal/Power Pages website, transport them to downstream environments and include them during solution commit.
 
 ## Prerequisites for Power Apps Portal/Power Pages website ALM
 
@@ -41,7 +41,7 @@ Follow these steps to include ower Apps Portal/Power Pages website during soluti
 1. During the solution commit, on the 'COMMIT SOLUTION' pane, toggle **Include Power Apps Portal/Power Pages** to **Enabled**.
 1. Select the website from the **Website** dropdown and click on **COMMIT SOLUTION**
 
-   ![Include Power Apps Portal/Power Pages Website .](media/setup-almacceleratorpowerplatform/IncludePortalWebsite-solution-commit.png)
+   ![Include Power Apps Portal/Power Pages Website .](media/setup-almacceleratorpowerplatform/IncludingPortalWebsite-solution-commit.png)
 
 1. Once the commit is successful, a folder with downloaded website contents with convention "Solution_name\PowerPages\Site_Name" gets created under the Repository branch.
 
@@ -70,16 +70,11 @@ If your changes are not reflected on the website post deployment, you will need 
 1. Open **[Power Apps portals admin center](/power-apps/maker/portals/overview)**.
 1. Navigate to Portal Actions > Restart.
 
-### Use browse/preview button in the maker studio
-
-1. If you are a maker, this is the easiest option and involves minimum down time of the website.
-1. Be careful not to change anything and close the studio tab right away.
-
 ### Service page for site administrator users
 
 1. This requires more setup and planning but is the safest option.
-1. Authenticate to the site and assign the resulting contact record the Administrator Web Role. Navigate to the Site URL + **/_services/about** in your web browser where you can select the **Clear cache** button. 
+1. Authenticate to the site and assign the resulting contact record the Administrator Web Role. Navigate to the Site URL + **/_services/about** in your web browser where you can select the **Clear cache** button.
 
    ![Power Apps Portal/Power Pages Website clear cache.](media/setup-almacceleratorpowerplatform/Portal-Clear-Cache.png)
 
-1. Refresh the website in your browser to see the changes. 
+1. Refresh the website in your browser to see the changes.
