@@ -564,6 +564,11 @@ PRINT @sql
 EXEC SP_EXECUTESQL @sql;
 ```
 
+## How to uninstall Data Export Service from Administer Power Platform
+1. Navigate to Advanced settings.
+2. Go to **Settings/Customizations** tab and select **Solutions**
+3. Choose **DataExportService** published by Microsoft Dynamics 365 and Delete
+
 ## Find the Azure Active Directory tenant Id for your tenant
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
