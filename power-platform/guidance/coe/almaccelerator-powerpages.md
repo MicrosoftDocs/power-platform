@@ -43,7 +43,7 @@ Follow these steps to include ower Apps Portal/Power Pages website during soluti
 
    ![Include Power Apps Portal/Power Pages Website .](media/setup-almacceleratorpowerplatform/IncludePortalWebsite-solution-commit.png)
 
-1. Once the 'Commit' is successful, a folder with downloaded website contents with convention "Solution_name\PowerPages\Site_Name" gets created under the Repository branch.
+1. Once the commit is successful, a folder with downloaded website contents with convention "Solution_name\PowerPages\Site_Name" gets created under the Repository branch.
 
    ![Power Apps Portal/Power Pages Website commit.](media/setup-almacceleratorpowerplatform/Portal-Committed-Website.png)
 
