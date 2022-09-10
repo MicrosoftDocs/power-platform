@@ -64,7 +64,7 @@ To configure your chosen behavior.
 
 1. Open the property pane for the question node.
 
-1. Under the heading **Start question**, use the **Skip question** property to choose either **Allow question to be skipped** or **Ask every time** depending on your needs.
+2. **Skip question** property to choose either **Skip if variable already has a value** or **Ask every time** depending on your needs.
 
 ### Retry behavior
 
@@ -82,13 +82,13 @@ By default, When the question node does reprompt, it will use the same message (
 
 If the question node reaches the maximum number of retries (which could be zero) and has not recieved a valid response, you can configure what the node should do in this case.
 
-1. Under the heading **End question**, use the **If no entity found** dropdown box to select one of the following.
+1. Under the heading **No valid entity found**, use the **Action If no entity found** dropdown box to select one of the following.
 
-- **Redirect to topic: Ecalate** (_default_) - This will redirect the user to the _Escalate_ system topic.
-- **Set variable to value** - If this option is selected, an additional property, **Default entity value** is available, where you can specify a value to be used in place of a valid response from the user.
+- **Ecalate** (_default_) - This will redirect the user to the _Escalate_ system topic.
+- **Set variable to value** - If this option is selected, an additional property, **Value** is available, where you can specify a value to be used in place of a valid response from the user.
 - **Set variable to empty (no value)** - This sets the output variable to Blank and the topic moves onto the next node. You can later use a [condition](authoring-using-conditions.md) to check if the variable has a value.
 
-1. You can also, optionally, set a **Default entity message**, to be sent if the maximum reprompt count is reached and one of the above behavior's is used. Check the **Customize** checkbox to reveal the message editor.
+1. You can also, optionally, set a **No entity found message**, to be sent if the maximum reprompt count is reached and one of the above behavior's is used. Check the **Customize** checkbox to reveal the message editor.
 
 ### Validating a response
 
@@ -98,4 +98,4 @@ For example, you might want to accept a number from a user, but ensure that the 
 
 1. Open the properties pane for the question node and select **Question behavior**.
 
-1. Under the heading **Additional conditions**, set the **Condition** property using Power Fx, ensuring the formula you provide returns a boolean value (true / false). e.g. _Topic.Var1 < 10_.
+1. Under the heading **Additional entity validation**, set the **Condition** property using Power Fx, ensuring the formula you provide returns a boolean value (true / false). e.g. _Topic.Var1 < 10_.
