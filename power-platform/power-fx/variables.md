@@ -213,7 +213,7 @@ Let's rebuild our adding machine by using a context variable:
 
     The mere existence of this formula establishes **RunningTotal** as a context variable that holds a number because of the **+** operator. You can reference **RunningTotal** anywhere in this screen. Whenever the user opens this app, **RunningTotal** has an initial value of *blank*.
 
-    The first time that the user selects the **Add** button and **[UpdateContext](reference/function-updatecontext)** runs, **RunningTotal** is set to the value **RunningTotal + TextInput1**.
+    The first time that the user selects the **Add** button and **[UpdateContext](reference/function-updatecontext.md)** runs, **RunningTotal** is set to the value **RunningTotal + TextInput1**.
 
     ![OnSelect property of the Add button.](media/variables/context-variable-1.png "OnSelect property of the Add button")
 
