@@ -18,6 +18,9 @@ contributors:
 ---
 # Working with JSON in Power Fx
 
+> [!NOTE]
+> Microsoft Power Fx is the new name for the canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.
+
 Power Fx allows makers to read **JSON** into an [Untyped object](untyped-object.md) using the [ParseJSON](reference/function-parsejson.md) function.
 
 ## Reading and converting values
