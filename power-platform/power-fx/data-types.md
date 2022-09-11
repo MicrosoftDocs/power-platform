@@ -45,7 +45,7 @@ This article provides details for the data types that canvas apps support. When 
 | **Text**             | A Unicode text string.                                                                                                                                                                                                                                                                                                                          | **"Hello, World"**                                                                                                            |
 | **Time**             | A time without a date, in the time zone of the app's user.                                                                                                                                                                                                                                                                                      | **Time( 11, 23, 45 )**                                                                                                        |
 | **Two option**       | A choice from a set of two options, backed by a boolean value. This data type combines a localizable text label with a boolean value. The label appears in the app, and the boolean value is stored and used for comparisons.                                                                                                                   | **ThisItem.Taxable**                                                                                                          |
-| **Untyped object** | An object of an undeclared type. The underlying object could be any existing type, and can be converted into compatible types using functions such as [Boolean()](reference/function-boolean.md), [Value()](reference/function-value.md), [Table()](reference/function-table.md) etc. For more information see [Untyped object](../untyped-object.md) and [Working with JSON](../working-with-json.md). | **ParseJSON("{ ""Field"" : 1234 }").Field** |
+| **Untyped object** | An object of an undeclared type. The underlying object could be any existing type, and can be converted into compatible types using functions such as [Boolean()](reference/function-boolean.md), [Value()](reference/function-value.md), [Table()](reference/function-table.md) etc. For more information see [Untyped object](untyped-object.md) and [Working with JSON](working-with-json.md). | **ParseJSON("{ ""Field"" : 1234 }").Field** |
 
 Many of these data types are similar and have the same underlying representation, such as a **Hyperlink** field being treated as **Text**. The additional data types provide better default experiences in forms and other controls.
 
@@ -300,4 +300,4 @@ You can also use this equivalent formula:
 
 `If( ThisItem.Taxable, ...`
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
