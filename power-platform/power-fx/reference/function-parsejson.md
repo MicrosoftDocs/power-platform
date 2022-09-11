@@ -31,7 +31,7 @@ The ParseJSON function may return errors if the text isn't valid JSON according 
 * *JSONString* – Required. The JSON structure represented as text.
 
 ## Converting Untyped object data type
-ParseJSON returns an [untyped object](../untyped-object.md) which requires explicit conversion of field values in supported data types. The following table lists the [data types](data-types.md) in Power Apps and a corresponding JSON data type and how to convert it.
+ParseJSON returns an [untyped object](../untyped-object.md) which requires explicit conversion of field values in supported data types. The following table lists the [data types](../data-types.md) in Power Apps and a corresponding JSON data type and how to convert it.
 
 | Data type | JSON examples | Description  | Example conversion |
 | --- | --- | --- | --- |

@@ -106,8 +106,6 @@
             href: reference/function-table-counts.md
           - name: CountRows
             href: reference/function-table-counts.md
-          - name: Data types
-            href: reference/data-types.md
           - name: DataSourceInfo
             href: reference/function-datasourceinfo.md
           - name: Date

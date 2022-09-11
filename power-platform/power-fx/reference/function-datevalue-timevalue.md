@@ -51,7 +51,7 @@ To convert from numeric hour, minute and second components, read [Time](function
 For more information, read:
 
 - [Working with date and time](/power-apps/maker/canvas-apps/show-text-dates-times).
-- [Date/time and data types](data-types.md#date-time-and-datetime).
+- [Date/time and data types](../data-types.md#date-time-and-datetime).
 
 ## Syntax
 

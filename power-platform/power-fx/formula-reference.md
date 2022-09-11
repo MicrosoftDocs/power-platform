@@ -31,7 +31,7 @@ Other elements include:
 
 - [Operators and identifiers](reference/operators.md)
 - [Controls and their properties](/power-apps/maker/canvas-apps/reference-properties)
-- [Data types](reference/data-types.md)
+- [Data types](data-types.md)
 
 ## <a id="-a"></a> A
 
