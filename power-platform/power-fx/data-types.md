@@ -45,7 +45,7 @@ This article provides details for the data types that canvas apps support. When 
 | **Text**             | A Unicode text string.                                                                                                                                                                                                                                                                                                                          | **"Hello, World"**                                                                                                            |
 | **Time**             | A time without a date, in the time zone of the app's user.                                                                                                                                                                                                                                                                                      | **Time( 11, 23, 45 )**                                                                                                        |
 | **Two option**       | A choice from a set of two options, backed by a boolean value. This data type combines a localizable text label with a boolean value. The label appears in the app, and the boolean value is stored and used for comparisons.                                                                                                                   | **ThisItem.Taxable**                                                                                                          |
-| **Untyped object** | An object of an undeclared type. The underlying object could be any existing type, and can be converted into compatible types using functions such as [Boolean()](function-boolean.md), [Value()](function-value.md), [Table()](function-table.md) etc. For more information see [Untyped object](../untyped-object.md) and [Working with JSON](../working-with-json.md). | **ParseJSON("{ ""Field"" : 1234 }").Field** |
+| **Untyped object** | An object of an undeclared type. The underlying object could be any existing type, and can be converted into compatible types using functions such as [Boolean()](reference/function-boolean.md), [Value()](reference/function-value.md), [Table()](reference/function-table.md) etc. For more information see [Untyped object](../untyped-object.md) and [Working with JSON](../working-with-json.md). | **ParseJSON("{ ""Field"" : 1234 }").Field** |
 
 Many of these data types are similar and have the same underlying representation, such as a **Hyperlink** field being treated as **Text**. The additional data types provide better default experiences in forms and other controls.
 
@@ -55,7 +55,7 @@ All data types can have a value of _blank_ (in other words, no value). The term 
 
 Use the **Blank** function with the **Set** or **Patch** function to set a variable or field to _blank_. For example, **Set( x, Blank() )** removes any value in the global variable **x**.
 
-Test for a _blank_ value by using the [**IsBlank**](function-isblank-isempty.md) function. Replace possible _blank_ values with non-_blank_ values by using the [**Coalesce**](function-isblank-isempty.md) function.
+Test for a _blank_ value by using the [**IsBlank**](reference/function-isblank-isempty.md) function. Replace possible _blank_ values with non-_blank_ values by using the [**Coalesce**](reference/function-isblank-isempty.md) function.
 
 Because all data types support _blank_, the **Boolean** and **Two option** data types effectively have three possible values.
 
@@ -79,7 +79,7 @@ Single quotation marks are used for [identifier names](operators.md#identifier-n
 
 ### String interpolation
 
-Use string interpolation to embed formulas within a text string. This is often easier to work with and visualize the output than using the [**Concatenate**](function-concatenate.md) function or [**&**](operators.md) operator.
+Use string interpolation to embed formulas within a text string. This is often easier to work with and visualize the output than using the [**Concatenate**](reference/function-concatenate.md) function or [**&**](operators.md) operator.
 
 Prefix the text string with a dollar sign **$** and enclose the formula to be embedded with curly braces **{ }**. To include a curly brace in the text string, use repeated curly braces: **{{** or **}}**. String interpolation can be used anywhere a standard text string can be used.
 
@@ -105,7 +105,7 @@ String interpolation can include standard text strings in the embedded formula. 
 $"Welcome {Coalesce( NickName, FirstName, "Friend" )}!"
 ```
 
-String interpolations can even be nested. Consider this example where **First**, **Middle**, and **Last** names are combined into a greeting. Even if one or two of these values are _blank_, the correct number of spaces will be between the name parts. If none of the parts are provided, the inner string interpolation will collapse to an empty string, and be replaced by the [**Coalesce**](function-isblank-isempty.md) function by "Friend".
+String interpolations can even be nested. Consider this example where **First**, **Middle**, and **Last** names are combined into a greeting. Even if one or two of these values are _blank_, the correct number of spaces will be between the name parts. If none of the parts are provided, the inner string interpolation will collapse to an empty string, and be replaced by the [**Coalesce**](reference/function-isblank-isempty.md) function by "Friend".
 
 ```powerapps-dot
 $"Welcome {Coalesce( Trim( $"{First} {Middle} {Last}"}), "Friend" )}!"
@@ -216,7 +216,7 @@ This table shows some examples:
 
 For **User local** date/times, canvas apps use the time zone of the browser or device, but model-driven apps use the user's setting in Dataverse. These settings typically match, but results will differ if these settings differ.
 
-Use the [**DateAdd**](function-dateadd-datediff.md) and [**TimeZoneInformation**](function-dateadd-datediff.md) functions to convert local time to UTC and back again. See the examples at the end of the documentation for these functions.
+Use the [**DateAdd**](reference/function-dateadd-datediff.md) and [**TimeZoneInformation**](reference/function-dateadd-datediff.md) functions to convert local time to UTC and back again. See the examples at the end of the documentation for these functions.
 
 ### Numeric equivalents
 
@@ -224,7 +224,7 @@ Canvas apps hold and calculate all date/time values, whether **User local** or *
 
 When a canvas app reads a **Time zone independent** value from a data source or writes such a value to a data source, the app automatically adjusts the value to compensate for the time zone of the app's user. The app then treats the value as a UTC value, consistent with all other date/time values in the app. Because of this compensation, the original **Time zone independent** value appears when the app adjusts the UTC value for the app user's time zone.
 
-You can observe this behavior more closely by using the [**Value**](function-value.md) function to access the underlying numerical value for a date/time value. This function returns the date/time value as the number of milliseconds since January 1, 1970 00:00:00.000 UTC.
+You can observe this behavior more closely by using the [**Value**](reference/function-value.md) function to access the underlying numerical value for a date/time value. This function returns the date/time value as the number of milliseconds since January 1, 1970 00:00:00.000 UTC.
 
 Because every date/time value is held in UTC, the formula **Value( Date( 1970, 1, 1 ) )** won't return zero in most parts of the world because the **Date** function returns a date in UTC. For example, the formula would return 28,800,000 in a time zone that's offset from UTC by eight hours. That number reflects the number of milliseconds in eight hours.
 
@@ -239,7 +239,7 @@ Returning to our example from above:
 
 Unix times reflect the number of seconds since January 1, 1970 00:00:00 UTC. Because canvas apps use milliseconds instead of seconds, you can convert between the two by multiplying or dividing by 1,000.
 
-For example, Unix time shows September 9, 2001, at 01:46:40 UTC as 1,000,000,000. To show that date/time value in a canvas app, multiply that number by 1,000 to convert it to milliseconds, and then use it in a [**Text**](function-text.md) function. The formula **Text( 1000000000 \* 1000, DateTimeFormat.UTC )** returns the string **2001-09-09T01:46:40.000Z**.
+For example, Unix time shows September 9, 2001, at 01:46:40 UTC as 1,000,000,000. To show that date/time value in a canvas app, multiply that number by 1,000 to convert it to milliseconds, and then use it in a [**Text**](reference/function-text.md) function. The formula **Text( 1000000000 \* 1000, DateTimeFormat.UTC )** returns the string **2001-09-09T01:46:40.000Z**.
 
 However, that function returns **Saturday, September 8, 2001 18:46:40** if you use the **DateTimeFormat.LongDateTime24** format in a time zone that's -7 hours offset from UTC (7 hours west of UTC). This result shows the **DateTime** value correctly based on the local time zone.
 
@@ -251,11 +251,11 @@ If you need the Unix time in a **Date** value for further calculations or displa
 
 ### SQL Server
 
-SQL Server has [**Datetime**, **Datetime2**, and other date/time data types](/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql) that don't include a time-zone offset and don't indicate which time zone they're in. Canvas apps assume these values are stored in UTC and treat them as **User local**. If the values are meant to be time-zone independent, correct for the UTC translations by using the [**TimeZoneOffset**](function-dateadd-datediff.md#converting-to-utc) function.
+SQL Server has [**Datetime**, **Datetime2**, and other date/time data types](/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql) that don't include a time-zone offset and don't indicate which time zone they're in. Canvas apps assume these values are stored in UTC and treat them as **User local**. If the values are meant to be time-zone independent, correct for the UTC translations by using the [**TimeZoneOffset**](reference/function-dateadd-datediff.md#converting-to-utc) function.
 
 Canvas apps use the included time-zone information in **Datetimeoffset** fields when converting a value to the app's internal UTC representation. The apps always use UTC as the time zone (zero time zone offset) when they write data.
 
-Canvas apps read and write values of the [**Time**](/sql/t-sql/data-types/time-transact-sql) data type in SQL Server as text strings in the [ISO 8601 duration format](https://en.wikipedia.org/wiki/ISO_8601#Durations). For example, you must parse this string format and use the [**Time**](function-date-time.md) function to convert the text string **"PT2H1M39S"** to a **Time** value:
+Canvas apps read and write values of the [**Time**](/sql/t-sql/data-types/time-transact-sql) data type in SQL Server as text strings in the [ISO 8601 duration format](https://en.wikipedia.org/wiki/ISO_8601#Durations). For example, you must parse this string format and use the [**Time**](reference/function-date-time.md) function to convert the text string **"PT2H1M39S"** to a **Time** value:
 
 ```powerapps-dot
 With(
@@ -272,7 +272,7 @@ With(
 
 A **Date** value can include time information with it, which is usually midnight. A **Time** value can carry date information, which is usually January 1, 1970. Dataverse also stores time information with a **Date Only** field but shows only the date information by default. Similarly, canvas apps sometimes distinguish between these data types to determine default formats and controls.
 
-Adding and subtracting date and time values directly isn't recommended because time-zone and other conversions could cause confusing results. Either use the **Value** function to convert date/time values to milliseconds first and take into account the app user's time zone, or use the [**DateAdd**](function-dateadd-datediff.md) and [**DateDiff**](function-dateadd-datediff.md) functions to add or subtract from one of these values.
+Adding and subtracting date and time values directly isn't recommended because time-zone and other conversions could cause confusing results. Either use the **Value** function to convert date/time values to milliseconds first and take into account the app user's time zone, or use the [**DateAdd**](reference/function-dateadd-datediff.md) and [**DateDiff**](reference/function-dateadd-datediff.md) functions to add or subtract from one of these values.
 
 ## Choices and Yes/No
 
