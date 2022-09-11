@@ -1,5 +1,5 @@
 ---
-title: Data policies
+title: Data policies (preview)
 description: View the data policies that are in effect in your managed environments.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -21,9 +21,11 @@ search.app:
   - Flow
 ---
 
-# Data policies
+# Data policies (preview)
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2193887 -->
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 With Managed Environments, admins can easily identify all the data policies that are applied to an environment. Data policies define the consumer connectors that data can be shared with. They make sure that data is managed in a uniform manner across your organization. They also prevent important business data from being accidentally published to connectors like social media sites. For more information about data policies, go to [Data loss prevention policies](wp-data-loss-prevention.md).
 

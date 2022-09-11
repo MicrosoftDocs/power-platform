@@ -4,7 +4,7 @@ description: "Frequently asked questions about Power Automate licensing."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/16/2022
+ms.date: 07/22/2022
 ms.author: prkoduku
 ms.reviewer: MSFTMan
 search.audienceType: 
@@ -177,7 +177,7 @@ Dynamics licenses include following Power Automate capabilities.
 - [Business process flows](./types.md#business-process-flows) within app context
 - [Custom connectors](./types.md#custom-connectors) within app context
 - [On premises gateways](./types.md#on-premises-gateway) within app context
-- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics Team member gets 5K requests/day (25K requests/day during the [transition period](./types.md#transition-period)), Dynamics professional gets 10K requests/day (100K requests/day during [transition period](./types.md#transition-period)) and Dynamics Enterprise gets 20K requests/day (100K requests/day during [transition period](./types.md#transition-period)).
+- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics Team member gets 6K requests/day (25K requests/day during the [transition period](./types.md#transition-period)), Dynamics professional gets 40K requests/day (100K requests/day during [transition period](./types.md#transition-period)) and Dynamics Enterprise gets 40K requests/day (100K requests/day during [transition period](./types.md#transition-period)).
 
 The following Power Automate capabilities aren't included in Dynamics licenses.
 
@@ -236,32 +236,32 @@ Power Apps licenses include following Power Automate capabilities.
 - [Custom connectors](./types.md#custom-connectors) within app context
 - [On premises gateways](./types.md#on-premises-gateway) within app context
 - Power Platform request limits: Power Apps per user gets 5K requests/day (25K requests/day during [transition period](./types.md#transition-period)) and Power Apps per app gets 1K requests/day (10K requests/day during [transition period](./types.md#transition-period)).
-- Power Apps per user gets 250MB Dataverse database capacity and 2GB Dataverse file capacity. Power Apps per app gets 50MB Dataverse database capacity and 400MB Dataverse file capacity. Flows invoked by Power Apps apps that handle complex objects will consume this storage limit. For example, if a flow parses a 100-page document and makes updates to it, the storage it needs to retain the document in run history for future troubleshooting will consume this limit.
+- Power Apps per user gets 250MB Dataverse database capacity and 2GB Dataverse file capacity. Power Apps per app gets 50MB Dataverse database capacity and 400MB Dataverse file capacity. Flows invoked by the app created using Power Apps that handle complex objects will consume this storage limit. For example, if a flow parses a 100-page document and makes updates to it, the storage it needs to retain the document in run history for future troubleshooting will consume this limit.
 
 The following Power Automate capabilities aren't included in Power Apps licenses.
 
 - [Robotic process automation](./types.md#robotic-process-automation)
 - [AI Builder capacity](./types.md#ai-builder-credits)
 
-Flows that use the Power Apps license must run within the context of the Power Apps app, which uses the same data sources for triggers or actions as the Power Apps app. If your Power Apps app consumes standalone flows that aren't related to the Power Apps app, you must purchase a standalone Power Automate license.
+Flows that use the Power Apps license must run within the context of the app created using Power Apps, which uses the same data sources for triggers or actions as the app created using Power Apps. If your app created using Power Apps consumes standalone flows that aren't related to the app created using Power Apps, you must purchase a standalone Power Automate license.
 
-#### Example of Power Automate use within a Power Apps app context
+#### Example of Power Automate use within an app created using Power Apps context
 
-A user with a standalone Power Apps license runs an app that uses a SQL database as the data source. The Power Apps app also includes flows that do the following.
+A user with a standalone Power Apps license runs an app that uses a SQL database as the data source. The app created using Power Apps also includes flows that do the following.
 
 - Read from or write to a SQL database.
 
-- Use a built-in Power Apps trigger or action, for example, to send a push notification to the Power Apps app.
+- Use a built-in Power Apps trigger or action, for example, to send a push notification to the app created using Power Apps.
 
-#### Example of Power Automate use outside of a Power Apps app context
+#### Example of Power Automate use outside of an app created using Power Apps context
 
-The same user ([in the example above](#example-of-power-automate-use-within-a-power-apps-app-context)) now also wants to use a flow that updates an Oracle database and also has the following properties.
+The same user ([in the example above](#example-of-power-automate-use-within-an-app-created-using-power-apps-context)) now also wants to use a flow that updates an Oracle database and also has the following properties. 
 
-- It's completely unrelated to the Power Apps app
+- It's completely unrelated to the app created using Power Apps
 
-- It doesn't interact in any way with the Power Apps app (or its data sources).
+- It doesn't interact in any way with the app created using Power Apps (or its data sources).
 
-In this example, the Power Apps app is being used outside the context of Power Apps so the user needs a standalone Power Automate license.
+In this example, the app created using Power Apps is being used outside the context of Power Apps so the user needs a standalone Power Automate license.
 
 
 ## Multiplexing
@@ -288,10 +288,10 @@ Guidance: This guidance is specific to flows that run under a service account as
    - If the flow uses premium features (premium connectors, Robotic process Automation, custom connectors, on prem gateway, Business process flows): 
    - The service account is used by a limited set of users. In this case, licensing all the users and the service account is enough. 
    - The service account is used by many users. In this case, it is recommended to assign a per flow license to the flow to ensure any new users adding to the account are automatically compliant. 
- - If the flow is a manual/Power App triggered flow/Dataverse ‘Run as user’ flow, all users who run the flow will need a premium license or the flow needs a per flow license. Check out this FAQ on [who needs to purchase a premium license](faqs.md#who-needs-to-purchase-a-premium-license).   
- - Premium flow is in context (the flow shares the data sources of the app) of a Power App/Dynamics App: 
-   - All the users who has credentials of the service account and the service account need a Power App/Dynamics 365 license. 
-   - If they don’t have a Power App/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
+ - If the flow is a manual/app triggered flow/Dataverse ‘Run as user’ flow, all users who run the flow will need a premium license or the flow needs a per flow license. Check out this FAQ on [who needs to purchase a premium license](faqs.md#who-needs-to-purchase-a-premium-license).   
+ - Premium flow is in context (the flow shares the data sources of the app) of an app created using Power Apps/Dynamics App: 
+   - All the users who has credentials of the service account and the service account need a Power Apps/Dynamics 365 license. 
+   - If they don’t have a Power Apps/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
    - Alternatively, the flow can be licensed with a per flow license and none of the users/service account needs a license. 
   - Multiple users sharing credentials of a service account and using premium flows with one premium per user license assigned to the service account is considered multiplexing and the flow is not compliant. 
 

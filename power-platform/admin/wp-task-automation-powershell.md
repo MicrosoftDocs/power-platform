@@ -33,7 +33,7 @@ Using PowerShell cmdlets and management connectors, admins can build flows and a
 You can use a combination of all the above cmdlets to build PowerShell scripts to do bulk operations on users, environments, or their resources.
 
 > [!TIP]
-> Examples can also be found when installing and testing the [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) or using the Admin-in-a-Day hands-on labs that can be found on GitHub ([https://aka.ms/powerapps/admininaday](https://aka.ms/powerapps/admininaday)).
+> Examples can also be found when installing and testing the [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) or using the Admin-in-a-Day hands-on labs that can be found on GitHub ([Admin in a day](https://github.com/microsoft/powerapps-tools/tree/master/Administration/AdminInADay)).
 
 ## Common PowerShell tasks
 

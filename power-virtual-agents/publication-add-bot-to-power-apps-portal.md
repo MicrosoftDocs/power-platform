@@ -18,8 +18,9 @@ ms.collection: virtual-agent
 
 ## Prerequisites
 
-- [A Power Apps portal](/powerapps/maker/portals/create-portal)
-- [A Power Virtual Agents bot](authoring-first-bot.md)
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [A Power Apps portal](/powerapps/maker/portals/create-portal).
+- [A Power Virtual Agents bot](authoring-first-bot.md).
 
 ## Add a bot to your Power Apps portal
 

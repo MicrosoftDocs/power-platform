@@ -106,9 +106,9 @@
       href: coe/overview.md
     - name: Establishing a Center of Excellence
       href: coe/motivation.md   
-    - name: Set-up the CoE starter kit    
+    - name: Set up the CoE starter kit    
       items: 
-      - name: Get started with set-up
+      - name: Get started with setup
         href: coe/setup.md
       - name: Set up inventory components
         href: coe/setup-core-components.md  
@@ -120,7 +120,7 @@
         href: coe/before-setup-gov.md  
       - name: Set up compliance processes
         href: coe/setup-governance-components.md 
-      - name: Set up inactivity notifications
+      - name: Set up inactivity processes
         href: coe/setup-archive-components.md 
       - name: Set up Microsoft Teams governance processes
         href: coe/setup-teams-components.md  
@@ -136,6 +136,8 @@
         href: coe/setup-nurture-components.md
       - name: Set up Innovation Backlog components
         href: coe/setup-innovationbacklog.md
+      - name: Set up administration planning components
+        href: coe/setup-admin-tasks-component.md
       - name: Set up theming components
         href: coe/setup-theming.md
       - name: Set up ALM Accelerator for Power Platform components
@@ -155,8 +157,12 @@
           href: coe/setup-almacceleratorpowerplatform-users.md
         - name: Configuring deployment user settings and profiles
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
+        - name: Configuring the ALM Accelerator Pipelines
+          href: coe/almaccelerator-pipelines.md
         - name: Using the Pipeline extension points
           href: coe/setup-almacceleratorforpowerplatform-hook-extensions.md
+        - name: Considerations when creating Azure App Registrations
+          href: coe/almaccelerator-app-registrations.md
         - name: Set up ALM Accelerator for Makers components
           href: coe/setup-almaccelerator.md
       - name: What's next - updating the CoE Starter Kit
@@ -199,6 +205,8 @@
           href: coe/teams-governance.md  
         - name: Use the Innovation Backlog app
           href: coe/use-innovationbacklog.md 
+        - name: Use the Administration planning components
+          href: coe/admin-tasks-component.md 
         - name: Use the ALM Accelerator for Power Platform
           href: coe/almacceleratorpowerplatform-components.md
           items:
@@ -272,7 +280,7 @@
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
-  - name: Power Platform Creator Kit (preview)
+  - name: Power Platform Creator Kit
     items:
     - name: Overview
       href: creator-kit/overview.md
@@ -300,9 +308,11 @@
           href: creator-kit/breadcrumb.md
         - name: ContextMenu
           href: creator-kit/contextmenu.md
-        - name: CommandBar
+        - name: CommandBar (preview)
           href: creator-kit/commandbar.md
-        - name: ExpandMenu
+        - name: Header (experimental)
+          href: creator-kit/header.md
+        - name: ExpandMenu (experimental)
           href: creator-kit/expandmenu.md
         - name: Nav
           href: creator-kit/nav.md
@@ -312,28 +322,38 @@
         href: creator-kit/detailslist.md
       - name: Pickers
         items:
+        - name: Calendar (preview)
+          href: creator-kit/calendar.md
         - name: TagsPicker
           href: creator-kit/picker.md
         - name: TagList
           href: creator-kit/taglist.md
       - name: Progress
         items:
-        - name: Spinner
+        - name: Shimmer (preview)
+          href: creator-kit/shimmer.md
+        - name: Spinner (preview)
           href: creator-kit/spinner.md
-        - name: ProgressIndicator
+        - name: ProgressIndicator (preview)
           href: creator-kit/progressindicator.md
       - name: Surfaces
         items:
-        - name: Dialog
+        - name: Dialog (experimental)
           href: creator-kit/dialog.md
-        - name: Panel
+        - name: Panel (experimental)
           href: creator-kit/panel.md
       - name: Utilities
         items:
         - name: Elevation
           href: creator-kit/elevation.md
         - name: KeyboardShortcuts
-          href: creator-kit/keyboardshortcuts.md      
+          href: creator-kit/keyboardshortcuts.md  
+    - name: Reference
+      items:
+      - name: Theming
+        href: creator-kit/theme.md
+      - name: Set focus
+        href: creator-kit/setfocus.md
   - name: Automation adoption best practices
     items:
     - name: Overview
@@ -347,7 +367,11 @@
     - name: Automation CoE starter kit (preview)
       href: automation-coe/automation-coe-starter-kit.md
     - name: Manage Power Automate for desktop on Windows
-      href: automation-coe/manage-pad-on-windows.md      
+      href: automation-coe/manage-pad-on-windows.md 
+    - name: Automation Maturity Model overview
+      href: automation-coe/automation-maturity-model-overview.md
+    - name: Automation Maturity Model details
+      href: automation-coe/automation-maturity-model-details.md
   - name: Real-world architecture examples
     items: 
     - name: Overview

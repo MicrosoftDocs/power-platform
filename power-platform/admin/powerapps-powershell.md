@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/19/2022
+ms.date: 09/06/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -40,7 +40,7 @@ For information on the Power Apps admin module, see [Get started using the Power
 > ```
 
 ## Requirements
-PowerShell in this topic requires PowerShell version 5.x. To check the version of PowerShell running on your machine, run the following command:
+PowerShell in this topic requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
 
 > ```powershell
 > $PSVersionTable.PSVersion
@@ -66,13 +66,11 @@ To run the PowerShell cmdlets for app creators, do the following:
     Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber
     ```
 
-    Alternatively, if you don't have admin rights on your computer, you can use the following to use these modules:
+    Alternatively, if you don't have admin rights on your computer, you can use the `-Scope CurrentUser` paramater for installation:
 
     ```powershell
-    Save-Module -Name Microsoft.PowerApps.Administration.PowerShell -Path
-    Import-Module -Name Microsoft.PowerApps.Administration.PowerShell
-    Save-Module -Name Microsoft.PowerApps.PowerShell -Path
-    Import-Module -Name Microsoft.PowerApps.PowerShell
+    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Scope CurrentUser
+    Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Scope CurrentUser
     ```
 
 3. If you are prompted to accept the change to *InstallationPolicy* value of the repository, accept [A] Yes to all modules by typing 'A' and pressing **Enter** for each module.
@@ -104,8 +102,8 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 | Purpose | Cmdlet |
 | --- | --- |
 | Add a canvas app to a Microsoft Dataverse solution | Set-PowerAppAsSolutionAware |
-| Read and update environments | Get-PowerAppEnvironment *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)*|
-| Read, update, and delete a canvas app | Get-PowerApp *(previously Get-App)* <br> Remove-PowerApp *(previously Remove-App)* <br> Publish-PowerApp *(previously Publish-App)*<br />Set-PowerAppDisplayName *(previously Set-AppDisplayName)*<br> Get-PowerAppVersion *(previously Get-AppVersion)* <br> Restore-PowerAppVersion *(previously Restore-AppVersion)*|
+| Read and update environments | [Get-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappenvironment) *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)*|
+| Read, update, and delete a canvas app | [Get-AdminPowerApp](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapp) *(previously Get-App)*<br> [Remove-AdminPowerApp](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerapp)  *(previously Remove-App)* <br> Publish-AdminPowerApp *(previously Publish-App)* |
 | Read, update, and delete canvas app permissions | [Get-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapproleassignment) *(previously Get-AppRoleAssignment)* <br>  [Remove-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerapproleassignment) *(previously Remove-AppRoleAssignment)* |
 | Read, update, and delete a flow | [Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow) <br> [Enable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/enable-adminflow) <br> [Disable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/disable-adminflow) <br> [Remove-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflow) |
 | Read, update, and delete flow permissions | [Get-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflowownerrole) <br> [Set-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/set-adminflowownerrole) <br> [Remove-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflowownerrole) |
@@ -336,9 +334,9 @@ Set-TenantSettings -RequestBody $settings
 
 If you specify governance error message content to appear in error messages, it will be included in the error message displayed when makers observe they don’t have permission to share apps with 'Everyone'. See [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
-#### Associate in context flows to a Power App
+#### Associate in context flows to an app
 
-Associate flows in context of a Power App to the Power App to create a dependency between the app and flows. To learn more about context flows, see [What Power Automate capabilities are included in Power Apps licenses?](power-automate-licensing/faqs.md#what-power-automate-capabilities-are-included-in-power-apps-licenses)
+Associate flows in context of an app to the app to create a dependency between the app and flows. To learn more about context flows, see [What Power Automate capabilities are included in Power Apps licenses?](power-automate-licensing/faqs.md#what-power-automate-capabilities-are-included-in-power-apps-licenses)
 
 ```powershell
    Add-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion <String>] [<CommonParameters>]
@@ -360,8 +358,8 @@ EnvironmentName and FlowName can be found in the flow url:
    - For more information, type: "get-help Add-AdminFlowPowerAppContext -detailed".
    - For technical information, type: "get-help Add-AdminFlowPowerAppContext -full".
 
-#### Remove in context flows of a Power App
-Remove the dependency between flows and a Power App with this PowerShell command. The Remove-AdminFlowPowerAppContext removes Power App context from the specific flow.
+#### Remove in context flows of an app
+Remove the dependency between flows and an app with this PowerShell command. The Remove-AdminFlowPowerAppContext removes app context from the specific flow.
   
 ```powershell
     Remove-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion <String>] [<CommonParameters>]
@@ -573,10 +571,10 @@ The governance error message URL and email can be shown independently or togethe
 
 |     #    |     Experience                                                                                                     |     Availability           |
 |----------|--------------------------------------------------------------------------------------------------------------------|----------------------------|
-|     1    |     User launches a Power Apps app that’s not DLP compliant                                                        |     Generally available    |
+|     1    |     User launches an app created using Power Apps that’s not DLP compliant                                                        |     Generally available    |
 |     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                          |     Generally available    |
 |     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’       |     Generally available    |
-|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Generally available    |
+|     4    |     Maker saves an app created using Power Apps that’s not DLP compliant                                                          |     Generally available    |
 |     5    |     Maker saves a Power Automate flow that’s not DLP compliant                                                     |     Generally available    |
 
 #### Display governance error message content 

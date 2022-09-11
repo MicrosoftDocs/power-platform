@@ -53,7 +53,7 @@ The topic details page includes a variety of charts with graphical views of a to
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Topic summary charts
 

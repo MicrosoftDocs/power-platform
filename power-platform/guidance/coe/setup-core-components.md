@@ -35,8 +35,8 @@ The flows in this solution sync all your resources into tables and build admin a
 
 We recommend that you create connections to all connectors used in the solution prior to importing the solution. This will make the setup faster.
 
-1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
-1. Select your CoE environment, and go to **Dataverse** > **Connections** > **+ New connection**.
+1. Go to [make.powerautomate.com](https://make.powerautomate.com/).
+1. Select your CoE environment, and go to **Data** > **Connections** > **+ New connection**.
 1. Create connections for the following:
     - [Approvals](/connectors/approvals/)
     - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
@@ -70,8 +70,9 @@ During solution import, you'll configure environment variable values. Make sure 
 |Individual Admin |This is the email address to which communications in the starter kit will be sent which cannot be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You'll use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow and as part of the [Admin | Welcome Email v3](core-components.md#flows-2). More information: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)|
-|PowerApp Maker environment variable | The URL used byA the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
+|PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including the trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
+|Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
 | TenantID | Your Azure tenant ID.|
 
 ## Import the core components solution
@@ -107,6 +108,7 @@ There are several child flows, check to make sure all of these flows are on:
 1. CLEANUP HELPER – Check Deleted (Custom Connectors)
 1. CLEANUP HELPER – Check Deleted (Model Driven Apps)
 1. CLEANUP HELPER – Check Deleted (PVA)
+1. CLEANUP HELPER - Check Deleted (Solutions)
 1. CLEANUP HELPER – Power Apps User Shared With
 
 If you get a connection authorization error turning on a flow, you might need to set the [run-only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
@@ -119,21 +121,20 @@ The following flows support the inventory setup and need to be turned on before 
 
 - Admin | Add Maker to Group
 - Admin | Excuse Support Envts from Governance Flows
-- Admin | Sync Template v3 Configure Emails
 - Command Center App >  Get M365 Service Messages
 - Command Center App > Initially Populate Bookmarks
-- Command Center App > Get CoE Flows
 - Command Center App > Set CoE Flows State
 - DLP Editor > Parse impacted resources into CSV
-- Admin | Sync Template v3 (Connectors)
 - Admin | Sync Template v3 CoE Solution Metadata
+- Admin | Sync Template v3 Configure Emails
+- Admin | Sync Template v3 (Connectors)
 
 >[!IMPORTANT]
-> Before proceeding, ensure that these flows run and complete successfully:
+> Before proceeding, ensure that these flows run and complete successfully, one by one:
 >
+> - **Admin | Sync Template v3 CoE Solution Metadata**
 > - **Admin | Sync Template v3 Configure Emails**
 > - **Admin | Sync Template v3 (Connectors)**
-> - **Admin | Sync Template v3 CoE Solution Metadata**
 
 ## Turn on inventory flows
 
@@ -152,6 +153,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Business Process Flows)
+- Admin | Sync Template v3 (Call Updates)
 - Admin | Sync Template v3 (Connection Identities)
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
@@ -161,6 +163,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - Admin | Sync Template v3 (Model Driven Apps)
 - Admin | Sync Template v3 (Portals)
 - Admin | Sync Template v3 (PVA)
+- Admin | Sync Template v3 (Solutions)
 - Admin | Sync Template v3 (Sync Flow Errors)
 - Admin | Sync Template v3
 - CLEANUP - Admin | Sync Template v3 (Check Deleted)
@@ -221,7 +224,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 ### Update environment variables
 
-[Update the environment variables](faq.md#update-environment-variables) that hold the client ID and secret as shown in the following table. You can store the client secret either in plain text in the **Command Center - Client Secret** environment variable (not recommended) or create store the client secret in Azure Key Vault and reference it in the **Command Center - Client Azure Secret** environment variable (recommended). Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets)
+[Update the environment variables](faq.md#update-environment-variables) that hold the client ID and secret as shown in the following table. You can store the client secret either in plain text in the **Command Center - Client Secret** environment variable (not recommended) or create store the client secret in Azure Key Vault and reference it in the **Command Center - Client Azure Secret** environment variable (recommended). Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)
 
 >[!NOTE]
 > The flow using this environment variable is configured with a condition to expect either the Command Center - Client Secret or the Command Center - Client Azure Secret environment variable. It is not necessary to edit the flow or command center application to work with Azure Key Vault.
@@ -230,7 +233,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 |------|---------------|
 | Command Center - Application Client ID | The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. |
 | Command Center - Client Secret | The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
-| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. Note that this variable expects the Azure Key Vault reference, not the secret. Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets)|
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. Note that this variable expects the Azure Key Vault reference, not the secret. Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)|
 
 ### Modify the Command Center App > Get M365 Service Messages flow for a GCC High or DoD tenant
 
@@ -306,7 +309,7 @@ Environment variables are used to store application and flow configuration data 
 |Also Delete from CoE | When running the "Admin \| Sync Template v2 (Check Deleted)" flow, delete the items from CoE (yes) or just mark deleted (no)  | Yes |
 | Command Center - Application Client ID | (optional) The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Secret | (optional) The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
-| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable.  Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets)| Not applicable |
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable.  Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)| Not applicable |
 | DelayInventory | If Yes, runs a delay step to assist with the Dataverse load balancing. Only set this to No for debugging. | Yes |
 | eMail Header Style | The CSS / Style to use for eMails | [Default CSS](/power-platform/guidance/coe/code-samples/css/default-value-email-header-style) |
 | eMail Body Start | Starting HTML format for eMails | Default style provided |
@@ -317,7 +320,7 @@ Environment variables are used to store application and flow configuration data 
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. You'll use this to communicate and share apps with them. This is needed for the inventory setup in the Admin \| Add Maker to Group flow. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) | Not applicable |
 |Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). | Not applicable |
 |PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). | Not applicable|
-|PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> | Not applicable |
+|PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us/> | Not applicable |
 | ProductionEnvironment | Set to No if you're creating a development/test environment. This will allow some flows to set target users to the admin instead of resource owners.| Yes |
 | TenantID | Your Azure Tenant ID.| Not applicable|
 

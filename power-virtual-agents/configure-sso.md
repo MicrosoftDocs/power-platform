@@ -2,7 +2,7 @@
 title: "Configure single sign-on"
 description: "Enable your bot to authenticate an already-signed-in user"
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 06/23/2022
+ms.date: 07/20/2022
 
 ms.topic: article
 author: iaanw
@@ -31,12 +31,14 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 
 > [!IMPORTANT]
 >
-> - SSO on SharePoint is not supported.
-> - SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
+> SSO is currently not supported when a bot has been either:
+> - Published to a [SharePoint website](publication-connect-bot-to-web-channels.md#add-bot-to-your-website).
+> - Published to a [Power Apps portal](publication-add-bot-to-power-apps-portal.md).
+> - Integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Enable end-user authentication with Azure Active Directory](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
   - SSO is only supported for Azure Active Directory (Azure AD) V2. Other account types such as Microsoft Account or other OAuth accounts are not supported.
 - [Add an authentication topic to your bot](advanced-end-user-authentication.md).
