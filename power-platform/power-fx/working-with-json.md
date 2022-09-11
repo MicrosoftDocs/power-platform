@@ -6,7 +6,7 @@ author: jorisdg
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 8/23/2022
+ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: jorisde
 search.audienceType: 
@@ -18,11 +18,9 @@ contributors:
 ---
 # Working with JSON in Power Fx
 
-## Overview
-
 Power Fx allows makers to read **JSON** into an [Untyped object](untyped-object.md) using the [ParseJSON](reference/function-parsejson.md) function.
 
-## Reading and Converting Values
+## Reading and converting values
 
 **ParseJSON** will convert the following **JSON** record string into an **Untyped object** with fields `ItemName`, `Quantity`, `ReleaseDate` and `AvailableForPreOrder`.
 
@@ -46,14 +44,14 @@ Set( release, DateValue ( untyped.ReleaseDate ) );
 Set( preorder, Boolean ( untyped.AvailableForPreOrder ) );
 ```
 
-Power Fx will not evaluate the existence of the field until the formula is run. This allows flexibility in the incoming **JSON**. For example, the previous **JSON** may sometimes contain an extra field called `Discount`. But in our previous example, this field is not present. Writing a formula that uses the `Discount` field will not result in any errors, during the app making process or when users use the app. If the field is missing when the formula runs, the value will just result in a [Blank()](reference/function-isblank-isempty.md) value.
+Power Fx won't evaluate the existence of the field until the formula is run. This allows flexibility in the incoming **JSON**. For example, the previous **JSON** may sometimes contain an extra field called `Discount`. But in our previous example, this field isn't present. Writing a formula that uses the `Discount` field won't result in any errors, during the app making process or when users use the app. If the field is missing when the formula runs, the value will just result in a [Blank()](reference/function-isblank-isempty.md) value.
 
 > [!NOTE]
 > **JSON** supports `null` values for fields. These will also result in **Blank()** values. Currently, there is no distinction in Power Fx between a missing field, or a field that has the value `null`.
 
-As accessing fields on **Untyped objects** is not evaluated when writing the formula, there is also no **Intellisense** available. Both **JSON** and **Power Fx** are case sensitive, so take extra care in writing out field names.
+As accessing fields on **Untyped objects** isn't evaluated when writing the formula, there's also no **Intellisense** available. Both **JSON** and **Power Fx** are case sensitive, so take extra care in writing out field names.
 
-**JSON** values do not have to be in a record-style notation. Valid **JSON** can be just a value, such as `"text value"`,  `true` or `123.456`. In such a case, the **Untyped object** that **ParseJSON** returns is the value itself and the dot notation is not used.
+**JSON** values don't have to be in a record-style notation. Valid **JSON** can be just a value, such as `"text value"`,  `true` or `123.456`. In such a case, the **Untyped object** that **ParseJSON** returns is the value itself and the dot notation isn't used.
 
 ```powerapps-dot
 Set( myText, Boolean( ParseJSON( "true" ) ) );
@@ -87,9 +85,9 @@ Set( parentName, Text( jsonObject.RootElement.Parent.Name ) ); // "This is the p
 Set( childName, Text( jsonObject.RootElement.Parent.Child.Name ) ); // "This is the child"
 ```
 
-If any of the fields in the dot notation expression do not exist, **Blank()** will be returned.
+If any of the fields in the dot notation expression don't exist, **Blank()** will be returned.
 
-## Arrays and Tables
+## Arrays and tables
 
 **JSON** can contain arrays of values or records. These arrays can be accessed directly, or converted into **Power Fx** tables.
 
@@ -148,13 +146,13 @@ The new `typedOrderLines` variable is now a fully typed **Power Fx** table with 
 | "Widget 1" | 3 |
 | "Widget 2" | 5 |
 
-The previous examples use arrays of records, but **JSON** can also contain arrays of just values. Consider the following example which is a valid **JSON** string containing an array of three strings.
+The previous examples use arrays of records, but **JSON** can also contain arrays of just values. Consider the following example that is a valid **JSON** string containing an array of three strings.
 
 ```JSON
 [ "First Item", "Second Item", "Third Item"]
 ```
 
-We can simply retrieve one of the items from the array using the **Index()** function, and convert it to text.
+We can retrieve one of the items from the array using the **Index()** function, and convert it to text.
 
 ```powerapps-dot
 Text( Index( ParseJSON( jsonStringVariable ), 2 ) ) // "Second Item"

@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm-msft
-ms.date: 04/21/2022
+ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -15,6 +15,7 @@ search.app:
 contributors:
   - tapanm-msft
   - gregli-msft
+  - jorisdg
 ---
 
 # Power Fx formula reference for Power Apps
@@ -292,7 +293,7 @@ Other elements include:
 
 **[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
 
-**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an Untyped object value.
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
