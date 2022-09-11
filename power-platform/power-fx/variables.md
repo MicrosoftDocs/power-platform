@@ -116,7 +116,7 @@ Let's rebuild our adding machine by using a global variable:
 
     The mere existence of this formula establishes **RunningTotal** as a global variable that holds a number because of the **+** operator. You can reference **RunningTotal** anywhere in the app. Whenever the user opens this app, **RunningTotal** has an initial value of *blank*.
 
-    The first time that a user selects the **Add** button and **[Set](reference/function-set)** runs, **RunningTotal** is set to the value **RunningTotal + TextInput1**.
+    The first time that a user selects the **Add** button and **[Set](reference/function-set.md)** runs, **RunningTotal** is set to the value **RunningTotal + TextInput1**.
 
     ![OnSelect property of the Add button is set to Set function.](media/variables/global-variable-1.png)
 
@@ -150,7 +150,7 @@ Power Fx has two types of variables:
 
 | Variables type | Scope | Description | Functions that establish |
 | --- | --- | --- | --- |
-| Global variables |App |Simplest to use. Holds a number, text string, Boolean, record, table, etc. that can be references from anywhere in the app. |[**Set**](reference/function-set) |
+| Global variables |App |Simplest to use. Holds a number, text string, Boolean, record, table, etc. that can be references from anywhere in the app. |[**Set**](reference/function-set.md) |
 | Collections |App |Holds a table that can be referenced from anywhere in the app. Allows the contents of the table to be modified rather than being set as a whole. Can be saved to the local device for later use. |[**Collect**](reference/function-clear-collect-clearcollect.md)<br>[**ClearCollect**](reference/function-clear-collect-clearcollect.md) |
 
 When used in Power Apps, there is a third type of variable:
