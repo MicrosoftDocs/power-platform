@@ -66,3 +66,7 @@ Once your preview bot has been created, you will need to update those topics and
 1. When your new bot is ready, select **Go to your bot** to open your new bot.
 
     :::image type="content" source="media/clone-existing-bot/modal-complete.png" alt-text="Screenshot of the completion screen.":::
+
+## Next steps
+
+[Create and edit topics in your Power Virtual Agents bot](authoring-create-edit-topics.md)
