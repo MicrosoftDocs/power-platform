@@ -124,10 +124,6 @@ The **End of conversation** topic is a pre-built topic designed to check if the 
 
 ## Next steps
 
-1. To allow users to call your bot, you need to [enable and configure the Telephony channel](publication-connect-bot-to-telephony.md).
-
-1. Optionally, [customize your bot's voice font](advanced-speech-settings.md).
-
 1. [Publish your bot](publication-fundamentals-publish-channels.md).
 
 1. Test your bot using the [demo website](publication-connect-bot-to-web-channels.md), or call the phone number configured in Telephony.
