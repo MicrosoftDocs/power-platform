@@ -3,7 +3,7 @@ title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Dataverse for Teams, and AI Builder"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/15/2022
+ms.date: 09/12/2022
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -222,9 +222,9 @@ Since flows, as well as certain Power Automate features like approvals, run insi
 
 | **Power Automate capacity Limits**    | **+ Per user** | **+ Per flow** |
 |---------------------------------------|----------------|----------------|
-| Dataverse Database Capacity | \+ 50 MB       | \+ 50 MB       |
+| Dataverse Database Capacity | \+ 250 MB       | \+ 50 MB       |
 | Dataverse Log Capacity      | \+ 0           | \+ 0           |
-| Dataverse File Capacity     | \+ 200 MB      | \+ 200 MB      |
+| Dataverse File Capacity     | \+ 2 GB      | \+ 200 MB      |
 
 ## Dataverse for Teams
 
