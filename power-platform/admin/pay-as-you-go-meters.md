@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, three meters determine how mu
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/25/2022
+ms.date: 09/12/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
@@ -27,9 +27,9 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 | Meter | What is counted? | What is billed? |
 |------|--------|--------|
 | Power Apps per-app | The total number of unique monthly active users of each app and portal in a pay-as-you-go environment. </br>An active user is someone who opens an app/portal at least once in the given month. </br>Repeat access of an app/portal by a user isn't counted. Users with Power Apps per-user licenses aren't counted. Users with a Dynamics 365 license that provides access to per user license won't be counted.| $10 per active user/app/month |
-| [Power Automate flow runs (preview)](https://docs.microsoft.com/en-us/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview)| Flow runs for premium cloud flows and desktop flows. <br/>Flows with standard connectors are excluded from charges. <br /> Users with Power Automate per user licenses (for example Power Automate Per User, Power Automate Per User with attended RPA) are excluded from flow run charges when using a feature within their license entitlements. <br /> Similarly, flows using a Power Automate per flow license are excluded from run charges when using a feature within their license entitlements. | $0.60 per flow run for Power Automate cloud flow runs and desktop flow runs (attended mode) <br /> $3.00 per flow run for Power Automate desktop flow runs (unattended mode)  |
+| [Power Automate flow runs (preview)](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview)| Flow runs for premium cloud flows and desktop flows. <br/>Flows with standard connectors are excluded from charges. <br /> Users with Power Automate per user licenses (for example Power Automate Per User, Power Automate Per User with attended RPA) are excluded from flow run charges when using a feature within their license entitlements. <br /> Similarly, flows using a Power Automate per flow license are excluded from run charges when using a feature within their license entitlements. | $0.60 per flow run for Power Automate cloud flow runs and desktop flow runs (attended mode) <br /> $3.00 per flow run for Power Automate desktop flow runs (unattended mode)  |
 | Dataverse | For database storage, any usage above 1 GB per pay-as-you-go environment. </br>For file storage, any usage above 1 GB per pay-as-you-go environment. </br>If auditing is enabled, any resulting log storage usage will be counted. | For usage above 1 GB for database: $48 per GB/month</br>For usage above 1 GB for file: $2.40 per GB/month </br>For any log usage: $12 per GB/month |
-| [Power Platform requests (coming soon)](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types#pay-as-you-go)| Each user in a pay-as-you-go enabled environment will get a daily entitlement of Power Platform requests based on their license. See [License limits](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits). This will be sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement will be counted. | 0.00004$ per request/day above the daily entitled limits |
+| [Power Platform requests (coming soon)](/power-platform/admin/power-automate-licensing/types#pay-as-you-go)| Each user in a pay-as-you-go enabled environment will get a daily entitlement of Power Platform requests based on their license. See [License limits](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits). This will be sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement will be counted. | 0.00004$ per request/day above the daily entitled limits |
 
 For detailed pricing information, see [Power Apps and Power Automate pricing.](https://powerapps.microsoft.com/pricing/)
 
@@ -122,19 +122,19 @@ Example: if an environment has Unattended bot add-on units assigned and then PAY
 If the owner of a flow is service principal, the flow runs will be charged unless the flow has a per-flow license. 
 
 > [!NOTE]
-> Assigning a Power Automate per user/per flow license ensures that any runs of the flow doesnt trigger Power Automate flow run meter if the flow features are within their license entitlements. But, if the flow uses more Power platform requests than the [limits](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits), Power platform request meter will be triggered for any overages.
+> Assigning a Power Automate per user/per flow license ensures that any runs of the flow doesnt trigger Power Automate flow run meter if the flow features are within their license entitlements. But, if the flow uses more Power platform requests than the [limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits), Power platform request meter will be triggered for any overages.
 
-|User |Standard flow runs  |Premium cloud  flow runs |Attended RPA flow runs |Unattended RPA runs| Azure billable runs|
+|User |Standard flow runs  |Premium cloud flow runs |Attended RPA flow runs |Unattended RPA runs| Azure billable runs|
 |---------|----------------------|----------------|--------------|-------------|-------------|
 |**User with Office license** | 10 runs(not charged)     | 10 runs      |  5 runs   | 5 runs| 20 runs
-|**User with no license(Power Automate free license** | 10 runs(not charged)      | 10 runs      |  5 runs   | 5 runs| 20 runs
+|**User with no license (Power Automate free license** | 10 runs(not charged)      | 10 runs      |  5 runs   | 5 runs| 20 runs
 |**User with Power Automate per user license** | 10 runs(not charged)      | 10 runs(not charged)      |  5 runs   | 5 runs| 10 runs
 |**User with Power Automate per user with attended RPA** | 10 runs(not charged)      | 10 runs  (not charged)     |  5 runs (not charged)   | 5 runs| 5 runs
-|**User with Power Apps per user with flow runs out of Power App context** | 10 runs (not charged)      | 10 runs      |  5 runs   | 5 runs| 15 runs
+|**User with Power Apps per user with flow runs out of the app context** | 10 runs (not charged)      | 10 runs      |  5 runs   | 5 runs| 15 runs
 
 #### Flows running in the context of an app
 
-Power Automate flows can either be triggered directly via a user in a Power App, or, run in the background automatically in response to automated triggers, such as a new item being added to a SharePoint list. Charges are different depending on the method: 
+Power Automate flows can either be triggered directly via a user in an app or run in the background automatically in response to automated triggers, such as a new item being added to a SharePoint list. Charges are different depending on the method: 
 
 - Flows triggered directly from an app created using Power Apps will have no additional cost since by running the Power App, the user’s standalone Power Apps license or the Power Apps PAYG meter will cover their usage of Power Automate.  
 - For flows running in response to an automated trigger (owned by a user without a Power Apps or Power Automate license), you have the flexibility to choose between the following options: 
