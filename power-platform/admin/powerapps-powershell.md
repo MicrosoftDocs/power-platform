@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/22/2022
+ms.date: 09/06/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -40,7 +40,7 @@ For information on the Power Apps admin module, see [Get started using the Power
 > ```
 
 ## Requirements
-PowerShell in this topic requires PowerShell version 5.x. To check the version of PowerShell running on your machine, run the following command:
+PowerShell in this topic requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
 
 > ```powershell
 > $PSVersionTable.PSVersion
@@ -66,13 +66,11 @@ To run the PowerShell cmdlets for app creators, do the following:
     Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber
     ```
 
-    Alternatively, if you don't have admin rights on your computer, you can use the following to use these modules:
+    Alternatively, if you don't have admin rights on your computer, you can use the `-Scope CurrentUser` paramater for installation:
 
     ```powershell
-    Save-Module -Name Microsoft.PowerApps.Administration.PowerShell -Path
-    Import-Module -Name Microsoft.PowerApps.Administration.PowerShell
-    Save-Module -Name Microsoft.PowerApps.PowerShell -Path
-    Import-Module -Name Microsoft.PowerApps.PowerShell
+    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Scope CurrentUser
+    Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Scope CurrentUser
     ```
 
 3. If you are prompted to accept the change to *InstallationPolicy* value of the repository, accept [A] Yes to all modules by typing 'A' and pressing **Enter** for each module.

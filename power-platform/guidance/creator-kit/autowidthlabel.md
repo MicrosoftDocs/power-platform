@@ -22,32 +22,49 @@ contributors:
 
 # :::no-loc text="AutoWidthLabel"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to display data.
+
+> [!NOTE]
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/AutoWidthLabel).
 
 :::image type="content" source="media/autowidthlabel.png" alt-text="Auto width label.":::
 
 ## Description
 
-The behavior of this code component is similar to that of the standard canvas app label, but it expands dynamically in width to accommodate the text and return the new width. This functionality is currently not supported in canvas apps.
+The behavior of this code component is similar to that of the standard canvas app label, but it expands dynamically in width to accommodate the text and return the new width.
 
-> [!NOTE]
-> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/AutoWidthLabel).
+Go to [Fluent UI Label control](https://developer.microsoft.com/en-us/fluentui#/controls/web/label) for best practices.
 
-## Limitations
+## Properties
 
-This code component can only be used in canvas apps<!--note from editor: Is it okay that above, you say it isn't currently supported by canvas apps?--> and custom pages.
-
-## Key properties
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Text` | Data displayed in the label |
-| `AutoWidth` | The new width of the label, based on the text |
+| `Text` | The text value of the label. |
 
-## Best practices
 
-Go to [Fluent UI Label control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label).
+### Output properties
+
+| Property | Description |
+| -------- | ----------- |
+| `AutoWidth` | Width set by the component to accommodate the text |
+
+### Style properties
+
+| Property | Description |
+| -------- | ----------- |
+| `PaddingLeft` | The padding to add inside the label. |
+| `PaddingRight` | The padding to add inside the label. |
+| `PaddingTop` | The padding to add inside the label. |
+| `PaddingBottom` | The padding to add inside the label. |
+
+Not all combinations of style/state are implemented by every component. See more details in the [state dependent style properties](https://github.com/microsoft/powercat-code-components/blob/main/AutoWidthLabel/README.md#state-dependent-style-properties) section of the GitHub documentation.
+
+## Limitations
+
+This code component can only be used in canvas apps and custom pages.
+
+See more limitation notes in the [design challenges](https://github.com/microsoft/powercat-code-components/blob/main/AutoWidthLabel/README.md#design-challenges) section of the GitHub documentation.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

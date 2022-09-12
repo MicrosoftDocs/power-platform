@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm-msft
-ms.date: 04/21/2022
+ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -15,6 +15,7 @@ search.app:
 contributors:
   - tapanm-msft
   - gregli-msft
+  - jorisdg
 ---
 
 # Power Fx formula reference for Power Apps
@@ -30,7 +31,7 @@ Other elements include:
 
 - [Operators and identifiers](reference/operators.md)
 - [Controls and their properties](/power-apps/maker/canvas-apps/reference-properties)
-- [Data types](reference/data-types.md)
+- [Data types](data-types.md)
 
 ## <a id="-a"></a> A
 
@@ -67,6 +68,8 @@ Other elements include:
 **[Back](reference/function-navigate.md)** – Displays the previous screen.
 
 **[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
+
+**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
 
 ## C
 
@@ -289,6 +292,8 @@ Other elements include:
 **[Param](reference/function-param.md)** – Access parameters passed to a canvas app when launched.
 
 **[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
+
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
