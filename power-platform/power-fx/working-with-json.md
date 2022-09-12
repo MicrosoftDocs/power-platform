@@ -1,5 +1,5 @@
 ---
-title: Working with JSON
+title: Working with JSON (experimental)
 description: Guide to working with JSON in Power Fx.
 author: jorisdg
 
@@ -16,11 +16,11 @@ search.app:
 contributors:
   - jorisdg
 ---
-# Working with JSON
+# Working with JSON (experimental)
 
-> [!NOTE]
->
-> - ParseJSON and Untyped objects are part of an experimental feature and are subject to change. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview).
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the _ParseJSON function and untyped objects_ experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
 > - Your feedback is very valuable to us - please let us know what you think in the [Power Apps experimental features community forum](https://powerusers.microsoft.com/t5/Power-Apps-Experimental-Features/bd-p/PA_ExperimentalFeatures).
 
