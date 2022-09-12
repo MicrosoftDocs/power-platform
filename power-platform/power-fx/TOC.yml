@@ -12,9 +12,9 @@
           href: global.md
         - name: Data types
           href: data-types.md 
-        - name: Untyped objects
+        - name: Untyped objects (experimental)
           href: untyped-object.md
-        - name: Working with JSON
+        - name: Working with JSON (experimental)
           href: working-with-json.md
         - name: Imperatives
           href: imperative.md
@@ -258,7 +258,7 @@
             href: reference/function-param.md
           - name: Parent
             href: reference/operators.md#self-and-parent-operators
-          - name: ParseJSON
+          - name: ParseJSON (experimental)
             href: reference/function-parsejson.md
           - name: Patch
             href: reference/function-patch.md
