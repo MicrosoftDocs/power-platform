@@ -1,5 +1,5 @@
 ---
-title: Working with JSON
+title: Working with JSON (experimental)
 description: Guide to working with JSON in Power Fx.
 author: jorisdg
 
@@ -16,10 +16,13 @@ search.app:
 contributors:
   - jorisdg
 ---
-# Working with JSON
+# Working with JSON (experimental)
 
-> [!NOTE]
-> Microsoft Power Fx is the new name for the canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview)
+> - The behavior that this article describes is available only when the _ParseJSON function and untyped objects_ experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
+> - Your feedback is very valuable to us - please let us know what you think in the [Power Apps experimental features community forum](https://powerusers.microsoft.com/t5/Power-Apps-Experimental-Features/bd-p/PA_ExperimentalFeatures).
 
 Power Fx allows makers to read **JSON** into an [Untyped object](untyped-object.md) using the [ParseJSON](reference/function-parsejson.md) function.
 
