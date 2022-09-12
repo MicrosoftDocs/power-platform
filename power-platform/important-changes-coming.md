@@ -21,9 +21,9 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## CDS 2.0 connector for Power Automate flows will be deprecated and replaced with another connector
+## Microsoft Dataverse (legacy) connector (CDS 2.0 connector for Power Automate flows) will be deprecated and replaced with another connector
 
-Effective October 31, 2022, the CDS 2.0 connector, also referred to as the Microsoft Dataverse (legacy) connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components.
+Effective October 31, 2022, the Microsoft Dataverse (legacy) connector, also referred to as the CDS 2.0 connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components.
 
 Users will need to review their existing Power Automate flows to determine which ones need to be updated. By March 2023, no new flows can be created using the CDS 2.0 connector but existing flows will continue to work.
 
@@ -41,9 +41,9 @@ In some cases, users will be able to use a migration tool to migrate from the Da
 
 If your flow was created prior to June 2020, you won't be able to use the migration tool. To check this, you can confirm whether the Microsoft Dataverse connector is searchable when editing the flow. If this is the case, or if the migration fails, you'll need to manually recreate your flow using the Microsoft Dataverse connector.
 
-## CDS 2.0 connector for Azure Logic Apps will be deprecated and replaced with another connector
+## Microsoft Dataverse (legacy) connector (CDS 2.0 connector for Azure Logic Apps) will be deprecated and replaced with another connector
 
-Effective October 31, 2022, the CDS 2.0 connector, also referred to as the Microsoft Dataverse (legacy) connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components. The Microsoft Dataverse connector will be available for use in Azure Logic Apps in Aug 2022. Users will need to modify their existing logic apps or create new logic apps using the Microsoft Dataverse connector before October 2023.
+Effective October 31, 2022, the Microsoft Dataverse (legacy) connector, also referred to as the CDS 2.0 connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components. The Microsoft Dataverse connector will be available for use in Azure Logic Apps in Aug 2022. Users will need to modify their existing logic apps or create new logic apps using the Microsoft Dataverse connector before October 2023.
 
 There will be a phased-in approach before deprecation takes place. Here's the timeline:
 
