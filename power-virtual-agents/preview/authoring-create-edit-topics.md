@@ -20,47 +20,54 @@ searchScope:
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-In Power Virtual Agents, a topic represents part of or a complete conversational thread.
+In Power Virtual Agents, a _topic_ represents some portion of a conversational thread. Power Virtual Agents provides an _authoring canvas_ for defining and working with your topics.
 
 A topic contains one or more _conversation nodes_, which together define the conversational paths that that topic can take.
 Each node performs an action, such as sending a message or asking a question.
 
-Usually, a topic also has _trigger phrases_, which are phrases, keywords, and questions that a user is likely to use that are related to a specific issue.
-Power Virtual Agents uses the topic trigger phrases and natural language understanding to interpret customer input and find the most appropriate topic to trigger.
-So, your customer's message doesn't need to exactly match your topic trigger phrases.
+Often, a topic also has a set of _trigger phrases_&mdash;phrases, keywords, and questions that a user is likely to use that are related to a specific issue.
+The Power Virtual Agents AI uses natural language understanding, your customer's message, and the trigger phrases for all your topics to find the most appropriate topic to trigger. The message doesn't need to be an exact match to a topic's trigger phrases to trigger the topic.
 
-For example, a topic about store hours might include the trigger phrase `check store hours`. If a customer sends, "see store opening hours", Power Virtual Agents can trigger your store hours topic.
+For example, a topic about store hours might include the trigger phrase `check store hours`. If a customer sends, "see store opening hours", Power Virtual Agents can still trigger your store hours topic.
+
+## Topic types
 
 There are two types of topics within a bot.
 
-- _Custom_ topics, which you create to build out your conversation.
-  Four custom topics are automatically created for you. These topics cover some common behavior, such as conversation for when a customer starts, ends, or restarts the conversation.
+- _Custom_ topics are ones you can create to build out your conversation.
+  Every bot starts with four custom topics. These topics cover some common behavior, such as ways to greet a customer, to acknowledge the end of a conversation, or to start a conversation over.
 
-    You can make changes to the custom topics created for you, or remove them from your bot entirely.
+  - You can make changes to the custom topics created for you, or remove them from your bot entirely.
+  - All topics you create will be custom topics.
 
-- _System_ topics, which help your bot respond to common system events. such as escalation or carry out essential behavior for your bot, such as ending a conversation.
+- _System_ topics are ones that support essential behavior for your bot, such as a custom request to speak to a person or end the conversation.
+  Some system topics have trigger phrases, which you can customize to fit your bot's needs.
 
-    Some system topics have trigger phrases, which you can customize to fit your bot's needs. You can't delete system topics but, if necessary, you can disable them. However, we recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
+  - You can't create new system topics.
+  - You can't delete a system topic. However, you can, if necessary, disable one or more of them.
+  - Until you're comfortable creating end-to-end bot conversations, you shouldn't edit the system topics.
 
-    See [System Topics](authoring-system-topics.md) for details on the system topics included as part of a bot.
+  For more information, see [System Topics](authoring-system-topics.md).
 
 ## Create a topic
 
-1. In the left pane, select **Topics** and then select **+New Topic** to create a new topic.
+1. Open your bot and select **Topics**.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::  
 
-1. The **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
+1. On the **Topics** page, select **+ New Topic**. Power Virtual Agents creates and opens a new topic for you.
+1. The **Trigger phrases** pane should already be open. If not, select the **Trigger phrases** node to open the pane.
 
     :::image type="content" source="media/authoring-create-edit-topics/trigger-phrases-button.png" alt-text="Screenshot of the topic authoring canvas, highlighting Trigger phrases.":::
 
-1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
+1. Add one or more trigger phrases for your topic in the **Trigger phrases** pane.
 
     :::image type="content" source="media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Screenshot of the topic authoring canvas, highlighting adding trigger phrases.":::
 
-    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define.
-
-    You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
+    > [!TIP]
+    > You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
+    >
+    > A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path as defined in the topic.
 
 1. Select **Details** to open the topic details pane.
 
@@ -68,27 +75,30 @@ There are two types of topics within a bot.
 
 1. Enter a **Name** for your topic and, optionally, a **Description**.
 
-    The **Name** of the topic is what you will see in your bot's list of topics when you select **Topics** on the left pane. The bot also uses the **Name** when it needs to clarify with the end user which topic they are asking about.
+    - Use the name to identify the topic.
+      The **Topics** page lists all the topics currently defined in your bot, by name.
+      A customer might see the topic name&mdash;the bot will use topic names if it can't determine which topic matches a customer message.
 
-    The **Description** is never shown to users. Use it to describe the purpose of the topic to yourself and other bot makers.
+    - The **Description** is never shown to users. Use it to describe the purpose of the topic to yourself and other the bot makers on your team.
 
     :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="Screenshot of the topic details pane showing Name, Display name, and Description.":::
 
-    You can also rename the topic by selecting its name and entering a new value.
+1. Select **Save** to save your changes and add the topic to the topics list.
 
-    :::image type="content" source="media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Screenshot of the topic authoring canvas, highlighting the topic name.":::
+When you edit a topic, you can also use the toolbar to rename it.
 
-1. Select **Save** to add the topic to the topics list.
+:::image type="content" source="media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Screenshot of the topic authoring canvas, highlighting the topic name.":::
 
-## Design the topic's conversation path
+## Design a topic conversation path
 
-1. Select **Topics** in the left pane and then select the topic you want to edit.
+1. Open your bot and select **Topics**.
+1. On the **Topics** page and select the topic you want to edit.
 
-    Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
+    Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases.
 
     When you create a new topic, a **Trigger phrases** node is inserted for you, and you can then add additional nodes to control the conversation.
 
-1. To add a node, select the plus (**+**) icon on the line or branch between or after nodes.
+1. To add a node, select the plus sign (**+**) icon on the line or branch between or after nodes.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 
