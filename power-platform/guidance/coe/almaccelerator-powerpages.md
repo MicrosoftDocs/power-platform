@@ -1,9 +1,8 @@
 ---
-title: "Using and Configuring the ALM accelerator for Microsoft Power Apps Portal/Power Pages | MicrosoftDocs"
+title: "Using and configuring the ALM accelerator for Power Apps portal and Power Pages | MicrosoftDocs"
 description: "Committing Power Apps Portal/Power Pages website can be achieved by including the website during solution commit. This document describes how to commit Power Apps Portal/Power Pages website and deploy to test environments."
 author: rajeevpentyala
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/08/2022
@@ -15,64 +14,64 @@ search.audienceType:
 search.app: 
   - D365CE
   - PowerApps
-  - Powerplatform
-  - PowerAppsPortals
-  - PowerPages
+  - Powerplatform 
 ---
 
-# Power Apps Portal/Power Pages website ALM using ALM accelerator
+# Using and configuring ALM accelerator for Power Apps portal or Power Pages
 
 > [!NOTE]
 > The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
 
 The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
-With the ALM Accelerator, you can source control your Power Apps Portal/Power Pages website, transport them to downstream environments and include them during solution commit.
+With the ALM Accelerator, you can source control your Power Apps portal or Power Pages websites, transport them to downstream environments and include them during solution commit.
 
-## Prerequisites for Power Apps Portal/Power Pages website ALM
+## Prerequisites for Power Apps portal or Power Pages website ALM
 
-- An active website of either Power Apps Portal/Power Pages. Go to [Power Apps portals](/power-apps/maker/portals/overview) or [Power Pages](https://powerpages.microsoft.com) to create a website.
-- ALM accelerator for Power Platform app. Go to [ALM accelerator for Power Platform app](almacceleratorpowerplatform-components.md)
+- An active website created using [Power Apps portals](/power-apps/maker/portals/overview) or [Power Pages](/power-pages/introduction).
+- [ALM accelerator for Power Platform app](almacceleratorpowerplatform-components.md)
 
-## Including Power Apps Portal/Power Pages website during solution commit
+## Include the website during solution commit
 
-Follow these steps to include Power Apps Portal/Power Pages website during solution commit:
+Follow these steps to include Power Apps portal or Power Pages website during solution commit:
 
-1. During the solution commit, on the 'COMMIT SOLUTION' pane, toggle **Include Power Apps Portal/Power Pages** to **Enabled**.
-1. Select the website from the **Website** dropdown and select on **COMMIT SOLUTION**
+1. During the solution commit, on the **COMMIT SOLUTION** pane, enable **Include Power Apps Portal/Power Pages**.
+1. Select the website from the **Website** list and select **COMMIT SOLUTION**.
 
    ![Include Power Apps Portal/Power Pages Website .](media/setup-almacceleratorpowerplatform/IncludingPortalWebsite-solution-commit.png)
 
-1. Once the commit is successful, a folder with downloaded website contents with convention "Solution_name\PowerPages\Site_Name" gets created under the Repository branch.
+1. After the commit is successful, a folder with downloaded website contents with convention "Solution_name\PowerPages\Site_Name" gets created under the Repository branch.
 
    ![Power Apps Portal/Power Pages Website commit.](media/setup-almacceleratorpowerplatform/Portal-Committed-Website.png)
 
-## Upload Power Apps Portal/Power Pages website to downstream environments
+## Upload website to downstream environments
 
-No other steps are required to upload Power Apps Portal/Power Pages website to downstream environments. Use the [ALM accelerator for Power Platform app](almacceleratorpowerplatform-components.md) **DEPLOY SOLUTION** option that will upload of Power Apps Portal/Power Pages website to your downstream environments.
+No other steps are required to upload Power Apps Portal or Power Pages website to downstream environments. Use the [ALM accelerator for Power Platform app](almacceleratorpowerplatform-components.md) **DEPLOY SOLUTION** option to upload the website to your downstream environments.
 
-## Complete Power Apps Portal/Power Pages website setup post deployment
+## Complete website setup post deployment
 
-Follow these steps to update the website binding once the Power Apps Portal/Power Pages website has been deployed to your downstream environments:
+Follow these steps to update the website binding once the website has been deployed to your downstream environments:
 
-1. Open **Power Apps portals admin center**. [Steps to open Power Apps portals admin center](/power-apps/maker/portals/overview)
-1. Under the 'Update Portal Bindings', select the website that got transported from your maker/dev environment and select on **Update**
+1. Open **Power Apps portals admin center**. More information: [Steps to open Power Apps portals admin center](/power-apps/maker/portals/overview)
+1. Under **Update Portal Bindings**, select the website that got transported from your maker/dev environment and select **Update**.
 
    ![Power Apps Portal/Power Pages Website update binding.](media/setup-almacceleratorpowerplatform/Portal-Update-Bindings.png)
 
 ## Be aware of configuration cache
 
-If your changes aren't reflected on the website post deployment, you'll need to clear the configuration cache - there are multiple options to clear the configuration cache:
+If your changes aren't reflected on the website post deployment, you'll need to clear the configuration cache. There are multiple options to clear the configuration cache.
 
 ### Restart the portal in the Power Apps portal admin center
 
-1. If you're an administrator, this is the easiest option.
+If you're an administrator, this is the easiest option.
+
 1. Open **[Power Apps portals admin center](/power-apps/maker/portals/overview)**.
-1. Navigate to Portal Actions > Restart.
+1. Navigate to **Portal Actions** > **Restart**.
 
 ### Service page for site administrator users
 
-1. This requires more setup and planning but is the safest option.
+This requires more setup and planning but is the safest option.
+
 1. Authenticate to the site and assign the resulting contact record the Administrator Web Role. Navigate to the Site URL + **/_services/about** in your web browser where you can select the **Clear cache** button.
 
    ![Power Apps Portal/Power Pages Website clear cache.](media/setup-almacceleratorpowerplatform/Portal-Clear-Cache.png)
