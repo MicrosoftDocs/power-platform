@@ -41,7 +41,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**Embedded content**||  
 > |Power BI visualization embedding|Default: Off. More information: [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards)|  
 > |Bing Maps|Default: Off. If **On**, Customer Engagement (on-premises) users will need to enter a Bing Maps key. Users don’t need to enter a key. |  
-> |Prevent social data in Dynamics|Default: Off. If you don’t want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization will not be able to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.|  
+> |Prevent social data in Dynamics|Default: Off. If you don’t want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization will not be able to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.|
 > |**Communications**| |
 > |Country/region code prefixing for numbers|Default: On. If **On**, customer engagement apps will prefix the country/region code to numbers that users are trying to call.|  
 > |Set the telephony provider|Default: On. Choose which provider to enable outbound calls from within customer engagement apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.|  
