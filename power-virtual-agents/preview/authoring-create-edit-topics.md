@@ -92,11 +92,11 @@ When you edit a topic, you can also use the toolbar to rename it.
 ## Design a topic conversation path
 
 1. Open your bot and select **Topics**.
-1. On the **Topics** page and select the topic you want to edit.
+1. On the **Topics** page, select the topic you want to edit.
 
     Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases.
 
-    When you create a new topic, a **Trigger phrases** node is inserted for you, and you can then add additional nodes to control the conversation.
+    When you create a new topic, a **Trigger phrases** node is inserted for you. Add nodes to control the conversation.
 
 1. To add a node, select the plus sign (**+**) icon on the line or branch between or after nodes.
 
