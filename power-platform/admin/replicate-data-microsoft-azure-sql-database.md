@@ -5,8 +5,8 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/13/2022
 ms.subservice: admin
-ms.author: sabinn
-author: sabinn-msft
+ms.author: nhelgren
+author: NHelgren
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
