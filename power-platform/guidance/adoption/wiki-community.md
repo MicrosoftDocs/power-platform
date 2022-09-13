@@ -25,7 +25,7 @@ They make sure that every person in the organization can come together at regula
 
 ## Create an internal wiki
 
-Set up your own SharePoint Hub or Teams site to share rules of engagement and processes with your maker community - or get started with our [template site](#template-site). This site should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
+Set up your own SharePoint Hub or Teams site to share rules of engagement and processes with your maker community - or get started with our [template site](#deploy-and-configure-a-template-power-platform-hub-site). This site should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
 
 Here are a few tips on what the wiki should include:
 
