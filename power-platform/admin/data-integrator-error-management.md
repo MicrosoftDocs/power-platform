@@ -4,9 +4,9 @@ description: "Troubleshoot issues and manage errors when executing data integrat
 ms.topic: conceptual
 ms.component: pa-admin
 ms.date: 11/19/2021
-author: sabinn-msft
+author: NHelgren
 ms.subservice: admin
-ms.author: sabinn
+ms.author: nhelgren
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
