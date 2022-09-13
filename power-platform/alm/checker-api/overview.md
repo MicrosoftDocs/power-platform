@@ -90,6 +90,11 @@ When interacting with the Power Apps checker service, files are temporarily stor
 |Public|Production|France|france.api.advisor.powerapps.com|
 |Public|Production|Germany|germany.api.advisor.powerapps.com|
 |Public|Production|United Arab Emirates|unitedarabemirates.api.advisor.powerapps.com|
+|Public|Production|Brazil|brazil.api.advisor.powerapps.com|
+|Public|Production|Switzerland|switzerland.api.advisor.powerapps.com|
+|Public|Production|South Africa|southafrica.api.advisor.powerapps.com|
+|Public|Production|Korea|korea.api.advisor.powerapps.com|
+|Public|Production|Norway|norway.api.advisor.powerapps.com|
 |Public|Production|US Government|gov.api.advisor.powerapps.us|
 |Public|Production|US Government L4|high.api.advisor.powerapps.us|
 |Public|Production|US Government L5 (DOD)|mil.api.advisor.appsplatform.us|
