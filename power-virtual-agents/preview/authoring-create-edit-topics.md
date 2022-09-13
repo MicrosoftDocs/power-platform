@@ -102,24 +102,28 @@ When you edit a topic, you can also use the toolbar to rename it.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 
-### Insert nodes
+1. Then insert the type of node you want.
+
+### Insert a node
 
 You have several options when you add a node. Each option has a specific node or nodes that will be inserted in the conversation path.
 
-When you add a node after the **Trigger Phrases** node or between other existing nodes, you have the following available options:
+When you add a node after the **Trigger Phrases** node or between other existing nodes, you have the following options:
 
-- [**Send a message**](authoring-send-message.md) - Send a message from the bot to a user.
-- [**Ask a question**](authoring-ask-question.md) - Ask the user a question.
-- [**Add a condition**](authoring-using-conditions.md) - Branch your conversation based on a condition.
-- [**Set a variable value**](authoring-variables.md#set-a-variable) - Set a value for a new, or existing, variable.
-- [**Topic management**](authoring-moving-between-topics.md) - Use one of several available nodes to control the flow of your conversation, including  redirecting to another topic or ending all topics.
-- [**Call an action**](advanced-flow.md) - Call a Power Automate Flow.
+| Option                                                            | Description                                           |
+|:------------------------------------------------------------------|:------------------------------------------------------|
+| [**Send a message**](authoring-send-message.md)                   | Send the customer a message .                         |
+| [**Ask a question**](authoring-ask-question.md)                   | Ask the customer a question.                          |
+| [**Add a condition**](authoring-using-conditions.md)              | Branch your conversation based on a condition.        |
+| [**Set a variable value**](authoring-variables.md#set-a-variable) | Set a value for a new or existing variable.           |
+| [**Topic management**](authoring-moving-between-topics.md)        | Redirect, transfer, or end the topic or conversation. |
+| [**Call an action**](advanced-flow.md)                            | Call a Power Automate Flow.                           |
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
 
-### Delete nodes
+### Delete a node
 
-Select the menu icon at the top of the node's title and select **Delete**.
+Select the the node's _node menu_ (**&vellip;**) then **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
 
@@ -134,7 +138,7 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
 
 1. On the topic list, create a **New topic**.
 
-1. Select the three dots icon and then select **Open code editor**
+1. On the authoring canvas, select _more options_ (**&hellip;**) then **Open code editor**.
 
     :::image type="content" source="media/authoring-create-edit-topics/code-editor-open.png" alt-text="Screenshot of how to open the code editor.":::
 
