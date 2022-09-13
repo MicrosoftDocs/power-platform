@@ -1,5 +1,5 @@
 ---
-title: "Using and configuring the ALM accelerator for Power Apps portal and Power Pages | MicrosoftDocs"
+title: "Configuring and using the ALM accelerator for Power Apps portal and Power Pages | MicrosoftDocs"
 description: "Committing Power Apps Portal/Power Pages website can be achieved by including the website during solution commit. This document describes how to commit Power Apps Portal/Power Pages website and deploy to test environments."
 author: rajeevpentyala
 manager: devkeydet
@@ -17,14 +17,14 @@ search.app:
   - Powerplatform 
 ---
 
-# Using and configuring ALM accelerator for Power Apps portal or Power Pages
+# Configuring and using the ALM accelerator for Power Apps portal and Power Pages
 
 > [!NOTE]
 > The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
 
 The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
-With the ALM Accelerator, you can source control your Power Apps portal or Power Pages websites, transport them to downstream environments and include them during solution commit.
+With the ALM Accelerator, you can source control your Power Apps portal or Power Pages websites, transport them to downstream environments, and include them during solution commit.
 
 ## Prerequisites for Power Apps portal or Power Pages website ALM
 
