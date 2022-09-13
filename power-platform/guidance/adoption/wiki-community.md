@@ -47,29 +47,29 @@ Here are a few tips on what the wiki should include:
 
 ![Sample Microsoft Power Platform wiki page.](media/wiki.png "Sample Microsoft Power Platform wiki page")
 
-## Deploy a template Power Platform Hub site
+## Deploy and configure a template Power Platform Hub site
 
 This communication site is designed to be the place where your Power Platform community can find the news and resources they need, including digital governance and compliance guardrails, upcoming events, success stories and more.
 
-### Installation
+### Deployment
 
 ### Configuration
 
-The Power Platform Hub contains placeholder text and ideas for your own content. You will have to update this content with your own processes, links and images before the hub is ready for use.
+The Power Platform Hub contains placeholder text and ideas for your own content. Update this content with your own processes, links and images before the hub is ready for use.
 
 Navigate to **Site contents > Site Pages** to get started, and modify:
 
 - **Accelerate-innovation-and-amplify-your-productivity-with-Power-Platform.aspx**: This permanent news story is your place to share your strategy and vision for Power Platform with your makers and community. Record a video with your executive sponsor and inspire your makers to achieve more with Microsoft Power Platform!
 - **Consultation-and-Development.aspx**: If you have an internal Power Platform development team, provide their contact details and ways to engage here. If not, delete this page!
-- **Data-Loss-Prevention-(DLP)-Policies.aspx**: Share which connectors are available in which environments and how to request additional connectors or a new environment for a specific project. We have added content of a typical DLP policy strategy here for you to get started with. Scan the document for placeholders for **Company specific instructions** which you need to update with your own processes and guidelines.
-- **Environments.aspx**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of environments with regard to licensing, security for environments, and connectors. We have added content of a typical environment policy strategy here for you to get started with. Scan the document for placeholders for **Company specific instructions** which you need to update with your own processes and guidelines.
+- **Data-Loss-Prevention-(DLP)-Policies.aspx**: Share which connectors are available in which environments and how to request additional connectors or a new environment for a specific project. We have added content of a typical DLP policy strategy here for you to get started with. Scan the document for placeholders for *Company specific instructions* which you need to update with your own processes and guidelines.
+- **Environments.aspx**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of environments with regard to licensing, security for environments, and connectors. We have added content of a typical environment policy strategy here for you to get started with. Scan the document for placeholders for *Company specific instructions* which you need to update with your own processes and guidelines.
 - **Guided-Learning.aspx**: This page provides a summary of Power Platform learning paths available on Microsoft Learn. If you are running internal training events, add them here.
 - **Power-Platform-at-Contoso.aspx**: Share what a maker is responsible for—for example, keeping the tenant tidy by deleting unused resources, ensuring apps are only shared with required end users, supporting their apps in the default environment, or engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support. Ensure makers are educated about the processes you have in place for business-important or mission-critical apps, such as engaging formal support.
 - **Requesting-a-Premium-License.aspx**: Share what licenses are available and what’s included in those licenses, how to request premium licenses, and who will pay for those premium licenses if cross-charging from IT to business units or teams is in place.
 - **Internal-Communities.aspx**: Update this page to add links to your Power Platform communities - we recommend including a Yammer web part here.
 - **Support.aspx**: Share how makers and solutions can be supported. Learn more: [Develop a support strategy](support-strategy.md).
 
-Additional to modifying the pages above with your own content, you should also:
+You should also:
 
 - Delete the **Adele-Vance.aspx** and **James-Williams.aspx** pages, these are templates for how the **Champion of the week** page template can be used. Celebrate your own champions by selecting **New > Page > Champion** from the Power Platform Hub homepage.
 - Delete the **Success-story--Learn-how-our-Finance-department-saved-1M-per-month-by-automating-processes.aspx** page, this is a template for how to share a success story. Highlight your own success stories by selecting **New > Page > Story** from the Power Platform Hub homepage.
