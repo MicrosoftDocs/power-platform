@@ -161,6 +161,8 @@
                   href: coe/almaccelerator-powerpages.md
                 - name: Configuring the ALM Accelerator Pipelines
                   href: coe/almaccelerator-pipelines.md
+                - name: Deployment settings for ALM Accelerator
+                  href: coe/almaccelerator-deployment-settings.md
                 - name: Using the Pipeline extension points
                   href: coe/setup-almacceleratorforpowerplatform-hook-extensions.md
                 - name: Considerations when creating Azure App Registrations
