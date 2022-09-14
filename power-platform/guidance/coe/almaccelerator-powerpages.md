@@ -5,7 +5,7 @@ author: rajeevpentyala
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2022
+ms.date: 09/14/2022
 ms.subservice: guidance
 ms.author: rajeevpe
 ms.reviewer: jimholtz
@@ -38,8 +38,8 @@ Follow these steps to include Power Apps portal or Power Pages website during so
 1. During the solution commit, on the **COMMIT SOLUTION** pane, enable **Include Power Apps Portal/Power Pages**.
 1. Select the website from the **Website** list and select **COMMIT SOLUTION**.
 
-   ![Include Power Apps Portal/Power Pages Website .](media/setup-almacceleratorpowerplatform/IncludingPortalWebsite-solution-commit.png)
-
+   :::image type="content" source="media/setup-almacceleratorpowerplatform/IncludingPortalWebsite-solution-commit.png" alt-text="Include Power Apps portal or Power Pages website":::
+   
 1. After the commit is successful, a folder with downloaded website contents with convention "Solution_name\PowerPages\Site_Name" gets created under the Repository branch.
 
    ![Power Apps Portal/Power Pages Website commit.](media/setup-almacceleratorpowerplatform/Portal-Committed-Website.png)
