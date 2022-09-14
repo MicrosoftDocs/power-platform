@@ -1,9 +1,9 @@
 ﻿---
 ROBOTS: NOINDEX,NOFOLLOW
-title: "Use Power Fx formulas"
+title: "Create expressions using Power Fx"
 description: "Use Power Fx to create complex bot logic using formulas to manipulate data."
 keywords: "PVA"
-ms.date: 05/10/2022
+ms.date: 09/14/2022
 
 ms.topic: article
 author: v-alarioza
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring
 ---
 
-# Microsoft Power Fx in Power Virtual Agents
+# Create expressions using Power Fx in your bot
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
