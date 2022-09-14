@@ -110,8 +110,8 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | Choose production, trial, or sandbox.        |
    |Region     | Choose a region for the environment.        |
+   |Type     | Choose production, trial, or sandbox.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
@@ -152,8 +152,8 @@ You need 1GB available database capacity.
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose production or trial.        |
    |Region     | Choose a region for the environment.        |
+   |Type     | You can choose production or trial.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **No**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
