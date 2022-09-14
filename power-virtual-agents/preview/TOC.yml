@@ -26,7 +26,7 @@
       href: authoring-variables.md
     - name: Reuse variables across topics
       href: authoring-variables-bot.md
-    - name: Use Power Fx formulas
+    - name: Create expressions using Power Fx
       href: advanced-power-fx.md
     - name: Add actions using Power Automate
       href: advanced-flow.md
