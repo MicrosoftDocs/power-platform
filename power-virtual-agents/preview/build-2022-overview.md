@@ -64,9 +64,9 @@ The following table lists some key concepts in Composer and describes where to f
 [Entities]: advanced-entities-slot-filling.md
 [Nodes]: authoring-create-edit-topics.md
 [Power Fx]: advanced-power-fx.md
-[question variations]: authoring-create-edit-topics.md#message-variations
-[Quick replies]: authoring-create-edit-topics.md#quick-replies
-[Response variations]: authoring-create-edit-topics.md#message-variations
+[question variations]: authoring-send-message.md#message-variations
+[Quick replies]: authoring-send-message.md#adding-quick-replies
+[Response variations]: authoring-send-message.md#message-variations
 [Topics]: authoring-create-edit-topics.md
 [Trigger phrases]: authoring-create-edit-topics.md
 [Variables]: authoring-variables.md

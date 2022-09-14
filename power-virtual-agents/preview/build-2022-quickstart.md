@@ -73,7 +73,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. Add a third **Message** node and type the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
 
-1. Add a [quick reply](authoring-create-edit-topics.md#quick-replies) with the message `make a reservation`.
+1. Add a [quick reply](authoring-send-message.md#adding-quick-replies) with the message `make a reservation`.
 
    A quick reply gives the user the option to select "make a reservation" instead of having to type it out.
 
@@ -95,7 +95,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. For **Save response as**, [create a new variable](authoring-variables.md) named `reservationDateTime`.
 
-1. [Add a **ConditionItem** node](authoring-create-edit-topics.md#add-a-condition) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
+1. [Add a **ConditionItem** node](authoring-using-conditions.md) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
 
 1. Enter the [Power Fx formula](advanced-power-fx.md) `Topic.reservationDateTime < Today() || DateDiff(Today(), Topic.reservationDateTime) > 7`. This formula will evaluate to true if the date the user provided is in the past or more than seven days away.
 

@@ -106,7 +106,7 @@ A new variable will be created. The new variable's type will be **unknown** unti
 
 ## Set a variable
 
-Typically you'll use a [question node](authoring-create-edit-topics.md#ask-a-question) to save user input to a variable, but there may be situations where you want to set the value manually.
+Typically you'll use a [question node](authoring-ask-question.md) to save user input to a variable, but there may be situations where you want to set the value manually.
 
 1. To assign a value to a [variable](authoring-variables.md), select **+** to add a node and then select **Set a variable value**.
 

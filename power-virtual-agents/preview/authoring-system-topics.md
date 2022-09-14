@@ -1,6 +1,6 @@
 ---
 title: "Use system topics in Power Virtual Agents"
-description: "Learn how system topics are used in conversations."
+description: "Learn how system topics are used in conversations in public preview."
 keywords: "PVA"
 ms.date: 04/20/2022
 
@@ -13,14 +13,14 @@ ms.collection: virtual-agent
 ms.reviewer: ggupta
 ---
 
-# Use system topics in Power Virtual Agents
+# Use system topics in Power Virtual Agents public preview
 
 System topics are built-in topics, that help your bot respond to common system events, such as escalation, or carry out essential behaviour for your bot, such as ending a conversation. You can't delete system topics but, they can be disabled.
 
-When you first create a bot, all system topics are configured to trigger at the appropriate times, in response to related events. However, you can manually trigger system topics by [redirecting](/authoring-create-edit-topics.md#redirect-to-another-topic) to them. Some also have trigger phrases, just like customer topics and, where they do, you can also customize these to fit your bot's needs. 
+When you first create a bot, all system topics are configured to trigger at the appropriate times, in response to related events. However, you can manually trigger system topics by [redirecting](/authoring-create-edit-topics.md#redirect-to-another-topic) to them. Some also have trigger phrases, just like customer topics and, where they do, you can also customize these to fit your bot's needs.
 
 > [!TIP]
-> You can edit the content and nodes within system topics, wowever, we recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
+> You can edit the content and nodes within system topics, however, we recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
 
 ## System topics
 
