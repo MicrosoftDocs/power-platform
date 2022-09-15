@@ -1,7 +1,7 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
 title: "Public preview quickstart"
-description: "Discover the new features introduced in the public preview at Build."
+description: "Discover the new features introduced in the public preview."
 ms.date: 05/10/2022
 ms.topic: article
 author: v-alarioza
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This quickstart walks you through making a bot that uses new features and improvements introduced in the public preview at Build. We'll create a bot that helps users make a reservation at a fictional restaurant.
+This quickstart walks you through making a bot that uses new features and improvements introduced in the public preview. We'll create a bot that helps users make a reservation at a fictional restaurant.
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]

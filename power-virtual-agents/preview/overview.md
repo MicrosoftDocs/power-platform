@@ -13,11 +13,11 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Public preview for Build 2022
+# Power Virtual Agents public preview
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This year at Microsoft Build 2022, we are excited to announce the evolution of Power Virtual Agents.
+We are excited to announce the evolution of Power Virtual Agents.
 
 The new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer pro-code capabilities with the simplicity of the Power Virtual Agents low-code platform, making it even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot building studio.
 
@@ -38,9 +38,7 @@ This evolution brings new features, including:
   - [Enhanced variable management](authoring-variables.md)
   - [Power FX support](advanced-power-fx.md)
 
-For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart](quickstart.md).
-
-To get answers and tips directly from other users in the public preview, visit the [community forums](https://aka.ms/PVABuild22Forum).
+For a guided tutorial on how to use these new features, please refer to the [quickstart](quickstart.md).
 
 This public preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of public preview](limitations.md).
 
