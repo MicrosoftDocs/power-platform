@@ -1,8 +1,8 @@
-- name: Overview of technology preview
+- name: Overview of public preview
   href: overview.md
-- name: Technology preview quickstart
+- name: Public preview quickstart
   href: quickstart.md
-- name: Limitations of technology preview
+- name: Limitations of public preview
   href: limitations.md
 - name: Author and edit
   items:

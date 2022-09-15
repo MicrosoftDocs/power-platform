@@ -1,7 +1,7 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
-title: "Overview of technology preview"
-description: "Overview of new features and improvements in the technology preview."
+title: "Overview of public preview"
+description: "Overview of new features and improvements in the public preview."
 ms.date: 05/10/2022
 ms.topic: overview
 author: v-alarioza
@@ -13,7 +13,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Technology preview for Build 2022
+# Public preview for Build 2022
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
@@ -40,13 +40,13 @@ This evolution brings new features, including:
 
 For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart](quickstart.md).
 
-To get answers and tips directly from other users in the technology preview, visit the [community forums](https://aka.ms/PVABuild22Forum).
+To get answers and tips directly from other users in the public preview, visit the [community forums](https://aka.ms/PVABuild22Forum).
 
-This technology preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of technology preview](limitations.md).
+This public preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of public preview](limitations.md).
 
 ## For desktop Composer users
 
-There are a number of differences and similarities in how bots are designed in the Bot Framework Composer and the Power Virtual Agents technology preview.
+There are a number of differences and similarities in how bots are designed in the Bot Framework Composer and the Power Virtual Agents public preview.
 The following table lists some key concepts in Composer and describes where to find information about similar concepts in Power Virtual Agents.
 
 <!-- best viewed without wordwrap -->

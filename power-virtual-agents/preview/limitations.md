@@ -1,7 +1,7 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
-title: "Limitations of technology preview"
-description: "Existing features that aren't supported in the technology preview."
+title: "Limitations of public preview"
+description: "Existing features that aren't supported in the public preview."
 ms.date: 05/10/2022
 ms.topic: overview
 author: v-alarioza
@@ -12,11 +12,11 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Limitations of technology preview
+# Limitations of public preview
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-This technology preview currently doesn't support some of the existing features you're used to in Power Virtual Agents, and available features have some limitations.
+This public preview currently doesn't support some of the existing features you're used to in Power Virtual Agents, and available features have some limitations.
 
 ## Limitations of current features
 
