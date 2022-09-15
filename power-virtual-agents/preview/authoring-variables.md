@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # Use variables
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Save customers' responses in a bot conversation to variables and reuse them later in the conversation. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths.
 

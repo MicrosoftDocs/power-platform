@@ -14,7 +14,7 @@ searchScope:
 
 # Limitations of public preview
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 This public preview currently doesn't support some of the existing features you're used to in Power Virtual Agents, and available features have some limitations.
 

@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 
 # Quickstart
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 This quickstart walks you through making a bot that uses new features and improvements introduced in the public preview at Build. We'll create a bot that helps users make a reservation at a fictional restaurant.
 

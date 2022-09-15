@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Customize your bot's voice
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Give your telephony bots personality with voices and speaking styles based on the bot's domain and context. Voices are called voice fonts in Power Virtual Agents.
 
