@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Connect your bot to Telephony
 description: Connect your bot to the Telephony channel to interact with users over the phone.
 ms.date: 05/31/2022

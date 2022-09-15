@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: "Limitations of public preview"
 description: "Existing features that aren't supported in the public preview."
 ms.date: 05/10/2022

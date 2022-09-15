@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: "Public preview quickstart"
 description: "Discover the new features introduced in the public preview."
 ms.date: 05/10/2022

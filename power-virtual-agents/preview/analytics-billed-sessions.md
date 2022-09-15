@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: View billed sessions
 description: See Power Virtual Agents billed sessions.
 keywords: "PVA"

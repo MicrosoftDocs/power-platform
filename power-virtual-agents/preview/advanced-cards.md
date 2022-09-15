@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Add multimedia cards to messages
 description: Add rich multimedia responses to question and message nodes in Power Virtual Agents bots.
 keywords: "PVA"

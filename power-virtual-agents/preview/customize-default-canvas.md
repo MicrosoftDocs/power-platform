@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Customize your bot
 description: Change the name, icon, and color of your bot with CSS and JavaScript styling.
 keywords: "PVA"

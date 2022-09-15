@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Download bot session transcripts
 description: Download bot sessions from the last 30 days for further analysis.
 keywords: "PVA"
