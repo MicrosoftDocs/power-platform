@@ -55,8 +55,8 @@ Follow these steps to update the website binding once the website has been deplo
 1. Open **Power Apps portals admin center**. More information: [Steps to open Power Apps portals admin center](/power-apps/maker/portals/overview)
 1. Under **Update Portal Bindings**, select the website that got transported from your maker/dev environment and select **Update**.
 
-   ![Power Apps Portal/Power Pages Website update binding.](media/setup-almacceleratorpowerplatform/Portal-Update-Bindings.png)
-
+   :::image type="content" source="media/setup-almacceleratorpowerplatform/Portal-Update-Bindings.png" alt-text="Power Apps portal or Power Pages website update binding":::
+   
 ## Be aware of configuration cache
 
 If your changes aren't reflected on the website post deployment, you'll need to clear the configuration cache. There are multiple options to clear the configuration cache.
@@ -74,6 +74,6 @@ This requires more setup and planning but is the safest option.
 
 1. Authenticate to the site and assign the resulting contact record the Administrator Web Role. Navigate to the Site URL + **/_services/about** in your web browser where you can select the **Clear cache** button.
 
-   ![Power Apps Portal/Power Pages Website clear cache.](media/setup-almacceleratorpowerplatform/Portal-Clear-Cache.png)
+   :::image type="content" source="media/setup-almacceleratorpowerplatform/Portal-Clear-Cache.png" alt-text="Power Apps portal or Power Pages website clear cache":::   
 
 1. Refresh the website in your browser to see the changes.
