@@ -1,6 +1,6 @@
 ---
-title: "Technology preview quickstart"
-description: "Discover the new features introduced in the technology preview at Build."
+title: "Public preview quickstart"
+description: "Discover the new features introduced in the public preview."
 ms.date: 05/10/2022
 ms.topic: article
 author: v-alarioza
@@ -11,9 +11,9 @@ ms.collection: virtual-agent
 
 # Quickstart
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll create a bot that helps users make a reservation at a fictional restaurant.
+This quickstart walks you through making a bot that uses new features and improvements introduced in the public preview. We'll create a bot that helps users make a reservation at a fictional restaurant.
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]
@@ -27,21 +27,21 @@ This quickstart walks you through making a bot that uses new features and improv
 
 Power Virtual Agents now has an app-level home page that isn't specific to any bot. On this page you can create a new bot and view a list of bots that you've previously created.
 
-:::image type="content" source="media/build-2022-quickstart/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
+:::image type="content" source="media/quickstart/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
 > [!TIP]
 > To navigate back to the home page from a bot, select **Power Virtual Agents** in the top menu bar.
 >
-> :::image type="content" source="media/build-2022-quickstart/go-home.png" alt-text="Screenshot of Power Virtual Agents top menu bar.":::
+> :::image type="content" source="media/quickstart/go-home.png" alt-text="Screenshot of Power Virtual Agents top menu bar.":::
 
 1. In the side navigation, select **Create**, or select **Home** and then select **Create a bot**.
 
 1. Name the bot `Reservation Bot` and select **Create**.
 
-:::image type="content" source="media/build-2022-quickstart/new-bot2.png" alt-text="Screenshot of the create a chatbot dialog.":::
+:::image type="content" source="media/quickstart/new-bot2.png" alt-text="Screenshot of the create a chatbot dialog.":::
 
 > [!IMPORTANT]
-> Bots can only be created in English in the technology preview.
+> Bots can only be created in English in the public preview.
 
 ## Customize the greeting topic
 
@@ -56,7 +56,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. [Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant to help the user visually confirm that they're booking at the correct location.
 
-    :::image type="content" source="media/build-2022-quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
+    :::image type="content" source="media/quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
 
 1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. Please note, reservations can only be made for the next 7 days.`
 
@@ -64,7 +64,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
    The speech mode allows you to add a specific message for voice-enabled channels and enable the use of [SSML tags](advanced-custom-speech-ssml.md).
 
-    :::image type="content" source="media/build-2022-quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
+    :::image type="content" source="media/quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
 
 1. Add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next 7 days.`
 
@@ -76,7 +76,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
    A quick reply gives the user the option to select "make a reservation" instead of having to type it out.
 
-   :::image type="content" source="media/build-2022-quickstart/quick-reply.png" alt-text="Screenshot of the reservation quick reply.":::
+   :::image type="content" source="media/quickstart/quick-reply.png" alt-text="Screenshot of the reservation quick reply.":::
 
 1. Select **Save**.
 
@@ -98,7 +98,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. Enter the [Power Fx formula](advanced-power-fx.md) `Topic.reservationDateTime < Today() || DateDiff(Today(), Topic.reservationDateTime) > 7`. This formula will evaluate to true if the date the user provided is in the past or more than seven days away.
 
-    :::image type="content" source="media/build-2022-quickstart/condition-formula.png" alt-text="Screenshot of Power Fx formula in a condition node.":::
+    :::image type="content" source="media/quickstart/condition-formula.png" alt-text="Screenshot of Power Fx formula in a condition node.":::
 
 1. Under the **ConditionItem** node, add a **Message** node. This message will remind the user that reservations can only be made in the next seven days. Enter the message `Sorry, I can only make reservations for the next seven days.`
 
@@ -110,11 +110,11 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
     > [!TIP]
     > You can also enter the full message by using braces around the variable `Your reservation has been made for {Topic.reservationDateTime}. We look forward to seeing you!`.
 
-    :::image type="content" source="media/build-2022-quickstart/variable-reference.png" alt-text="Screenshot of variable in message node.":::
+    :::image type="content" source="media/quickstart/variable-reference.png" alt-text="Screenshot of variable in message node.":::
 
     When the bot responds with this message, the variable reference will be replaced with the value of the variable.
 
-    :::image type="content" source="media/build-2022-quickstart/variable-replaced.png" alt-text="Screenshot of the variable's value shown in a message.":::
+    :::image type="content" source="media/quickstart/variable-replaced.png" alt-text="Screenshot of the variable's value shown in a message.":::
 
 1. Add a **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
 The **End of conversation** topic is a pre-built topic designed to check if the user is satisfied and asks them to rate their experience.

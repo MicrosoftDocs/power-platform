@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Use sample topics in Power Virtual Agents
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Virtual Agents includes a set of three samples from which you can see examples of topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
 

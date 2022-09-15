@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Download your bot session transcripts
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can download bot session or conversation transcripts from the past 30 days in both Power Virtual Agents and Power Apps. You can also change the retention period for transcripts from the default 30 days.
 
