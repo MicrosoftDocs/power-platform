@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Fundamentals - Analyze chatbot usage
 description: Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents.
 keywords: "PVA"

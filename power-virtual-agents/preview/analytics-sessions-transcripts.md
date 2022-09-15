@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Work with Power Apps bot conversation transcripts
 description: Work with bot conversation transcripts exported from Power Apps and learn how to pull the data into Power BI.
 keywords: "PVA"

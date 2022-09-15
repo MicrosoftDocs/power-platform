@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: "Create and use entities (contains video)"
 description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
 keywords: "PVA"

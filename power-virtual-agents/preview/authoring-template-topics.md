@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: "Use sample topics to understand capabilities"
 description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
 keywords: "PVA"

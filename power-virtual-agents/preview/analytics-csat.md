@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Analyze bot customer satisfaction metrics
 description: Use AI-driven analytics to understand how well customers are interacting with your bot and identify areas for improvement.
 keywords: "PVA"

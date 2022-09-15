@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Summarize bot analytics, performance, and usage
 description: The Summary analytics page shows you at a glance what bots and topics need improving.
 keywords: "PVA"
