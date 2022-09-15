@@ -104,6 +104,3 @@ In this example, the bot will determine if a booking date qualifies for a discou
 1. Under the **All Other Conditions** node, add a **Send a message** node. Enter the message, `Sorry, you don't qualify for a discount`.
 
     :::image type="content" source="media/advanced-power-fx/condition-messages.png" alt-text="Screenshot of message nodes in condition branches.":::
-
-### Reference
-You can find Power Fx reference [here](https://docs.microsoft.com/en-us/power-platform/power-fx/formula-reference). Note that not all forumulas are available in PVA.
