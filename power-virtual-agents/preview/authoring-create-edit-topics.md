@@ -146,73 +146,49 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
 
     ```yaml
     kind: AdaptiveDialog
-    id: FL9xjs
-    autoEndDialog: true
     beginDialog:
-    kind: OnRecognizedIntent
-    actions:
+      kind: OnRecognizedIntent
+      actions:
         - kind: Question
-        id: question_Pf6ZSq
-        disabled: false
-        allowInterruptions: true
-        property: Topic.chosenAnimal
-        prompt:
-            kind: Message
-            text:
-            - Do you like cats or dogs?
-
-        maxTurnCount: 3
-        entity:
+          id: question_b9p80Y
+          alwaysPrompt: false
+          variable: init:Topic.chosenAnimal
+          prompt: Do you like cats or dogs?
+          maxTurnCount: 3
+          entity:
             kind: EmbeddedEntity
             definition:
-            kind: ClosedListEntity
-            items:
-                - id: pD60EN
-                displayName: Cats
+              kind: ClosedListEntity
+              items:
+                - id: d24VJv
+                  displayName: Cats
 
-                - id: aZdKO5
-                displayName: Dogs
+                - id: vXYBtP
+                  displayName: Dogs
 
-        - kind: Condition
-        id: condition_65zClW
-        conditions:
-            - id: conditionItem_7mbFIC
-            condition: =Topic.chosenAnimal = 'cr08a_codeEditor050922.topic.Untitled.main.question_Pf6ZSq'.pD60EN
-            actions:
+        - kind: ConditionGroup
+          id: conditionGroup_wugqYZ
+          conditions:
+            - id: conditionItem_XN8zwO
+              condition: =Topic.chosenAnimal = 'cr638_08252022.topic.Animal.main.question_b9p80Y'.d24VJv
+              actions:
                 - kind: SendMessage
-                id: sendMessage_3IR6t8
-                disabled: false
-                message:
-                    text:
-                    - Meow!
+                  id: sendMessage_mZoPeG
+                  message: Meow!
 
-            - id: conditionItem_XN7izI
-            condition: =Topic.chosenAnimal = 'cr08a_codeEditor050922.topic.Untitled.main.question_Pf6ZSq'.aZdKO5
-            actions:
+            - id: conditionItem_VxJuyY
+              condition: =Topic.chosenAnimal = 'cr638_08252022.topic.Animal.main.question_b9p80Y'.vXYBtP
+              actions:
                 - kind: SendMessage
-                id: sendMessage_uVbAox
-                disabled: false
-                message:
-                    text:
-                    - Woof!
+                  id: sendMessage_zMgiKJ
+                  message: Woof!
 
-    id: main
-    intent:
+      id: main
+      intent:
         displayName: Animal
 
     inputType: {}
     outputType: {}
-    variables:
-    - name: chosenAnimal
-        scope: Dialog
-        isExternalInitializationAllowed: false
-        initializer:
-        kind: ActionInitializer
-        action:
-            triggerId: main
-            actionId: question_Pf6ZSq
-
-    disabled: false
     ```
 
 1. Select the three dots icon, then select **Close code editor**. You'll see the new conversation path generated from the YAML on the authoring canvas.
