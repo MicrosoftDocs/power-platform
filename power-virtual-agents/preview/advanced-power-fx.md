@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring
 ---
 
-# Create expressions using Power Fx in your bot
+# Create expressions using Power Fx
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
