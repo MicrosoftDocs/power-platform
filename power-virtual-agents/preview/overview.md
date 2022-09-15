@@ -38,11 +38,11 @@ This evolution brings new features, including:
   - [Enhanced variable management](authoring-variables.md)
   - [Power FX support](advanced-power-fx.md)
 
-For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart](build-2022-quickstart.md).
+For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart](quickstart.md).
 
 To get answers and tips directly from other users in the technology preview, visit the [community forums](https://aka.ms/PVABuild22Forum).
 
-This technology preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of technology preview](build-2022-limitations.md).
+This technology preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of technology preview](limitations.md).
 
 ## For desktop Composer users
 
