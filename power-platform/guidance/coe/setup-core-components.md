@@ -102,6 +102,7 @@ There are several child flows, check to make sure all of these flows are on:
 1. HELPER – CloudFlowOperations
 1. HELPER – CanvasAppOperations
 1. HELPER – ObjectOperations
+1. CLEANUP HELPER - Check Deleted (Ai Models)
 1. CLEANUP HELPER - Check Deleted (Business Process Flows)
 1. CLEANUP HELPER – Check Deleted (Canvas Apps)
 1. CLEANUP HELPER – Check Deleted (Cloud Flows)
@@ -119,15 +120,16 @@ If you get a connection authorization error turning on a flow, you might need to
 
 The following flows support the inventory setup and need to be turned on before proceeding:
 
+- Admin | Sync Template v3 CoE Solution Metadata
 - Admin | Add Maker to Group
 - Admin | Excuse Support Envts from Governance Flows
+- Admin | Sync Template v3 Configure Emails
+- Admin | Sync Template v3 (Connectors)
 - Command Center App >  Get M365 Service Messages
 - Command Center App > Initially Populate Bookmarks
 - Command Center App > Set CoE Flows State
+- Command Center App > Fet COE Flows
 - DLP Editor > Parse impacted resources into CSV
-- Admin | Sync Template v3 CoE Solution Metadata
-- Admin | Sync Template v3 Configure Emails
-- Admin | Sync Template v3 (Connectors)
 
 >[!IMPORTANT]
 > Before proceeding, ensure that these flows run and complete successfully, one by one:
@@ -151,6 +153,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow - for example, looking at how is using the Send Email or Get Item actions.
 >This flow temporarily makes the account running the the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow that is using HTTP actions to retrieve further details of those actions (for example, the HTTP host), and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
 
+- Admin | Sync Template v3 (Ai Models)
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Business Process Flows)
 - Admin | Sync Template v3 (Call Updates)
