@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Analyze topic performance
 description: See how your bot topics are performing and determine what you can do to improve customer satisfaction.
 keywords: "PVA"
@@ -15,7 +14,7 @@ ms.collection: virtual-agent
 
 # Analyze your bot's topic performance
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 The topic details page provides a view into the performance of individual topics and how you might improve them.
 
