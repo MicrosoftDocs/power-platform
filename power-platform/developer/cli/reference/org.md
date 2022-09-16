@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 8/11/2022
+ms.date: 9/15/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -48,7 +48,7 @@ Show only environments containing filter criteria
 
 ## pac org select
 
-Select defualt organization for current authentication profile
+Select default organization for current authentication profile
 
 [!INCLUDE [org-select-intro](includes/org-select-intro.md)]
 
