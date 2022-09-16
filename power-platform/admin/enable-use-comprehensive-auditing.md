@@ -202,7 +202,7 @@ The following are some examples of logs created with Activity Logging.
 |   EntityName    |                                                       Account                                                       |
 |      Query      |                                                         N/A                                                         |
 |  QueryResults   |                                                         N/A                                                         |
-|     ItemURL     | https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=0a0d8709-711e-e811-a952-000d3a732d76 |
+|     ItemURL     | `https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=0a0d8709-711e-e811-a952-000d3a732d76` |
 
 ### Example 2 – Logs generated when user sees Account records in a Grid (Export to Microsoft Excel logs are like this) 
 

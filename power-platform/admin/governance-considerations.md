@@ -130,7 +130,7 @@ In addition to monitoring, many customers want to subscribe to software creation
 ### Build Power Automate flows to alert on key audit events
 
 1. An example of alerting that can be implemented is subscribing to Microsoft 365 Security and Compliance Audit Logs. 
-2. This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
+2. This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://tip1.flow.microsoft.com/en-us/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
 
 ### Build the policies you need with Power Apps, Power Automate, and PowerShell
 
@@ -140,7 +140,7 @@ In addition to monitoring, many customers want to subscribe to software creation
     1. [List new Power Automate Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
     1. [Get List of new Power Apps, Power Automate flows and Connectors](https://preview.flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
     1. [Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
-    1. [Access Office 365 Security and Compliance Logs from Power Automate](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
+    1. [Access Office 365 Security and Compliance Logs from Power Automate](https://tip1.flow.microsoft.com/en-us/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
 1. Use this [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) ramp up quickly on the administration connectors. 
 1. Additionally, it's worth checking out content shared in the [Community Apps Gallery](https://powerusers.microsoft.com/t5/Community-Apps-Gallery/PowerApps-admin-app-version-2/m-p/247560), here's another example of an administrative experience built using Power Apps and admin connectors.
 

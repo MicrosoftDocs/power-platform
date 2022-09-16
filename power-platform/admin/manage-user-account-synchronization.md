@@ -74,9 +74,9 @@ Review the following resources to equip you to make the right decision for your 
   
 3. Select the **General** tab.  
   
-    Make note of your Federation Service identifier. For example: http://sts1.fabrikam.com/adfs/services/trust  
+    Make note of your Federation Service identifier. For example: `http://sts1.fabrikam.com/adfs/services/trust`  
   
-   Your URL should look like: https://<em>contoso</em>.crm.dynamics.com?whr=*<http://sts1.fabrikam.com/adfs/services/trust>*  
+   Your URL should look like: https://<em>contoso</em>.crm.dynamics.com?whr=`<http://sts1.fabrikam.com/adfs/services/trust>`  
   
    Send this URL to your users and encourage them to bookmark it.
 
