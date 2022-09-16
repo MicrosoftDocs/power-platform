@@ -67,16 +67,18 @@ Follow the instructions in [Configure user authentication with Azure AD](configu
 
 ## Grant admin consent
 
-<!-- FIXME: I'm unable to do this, due to the app not having a verified publisher. Is there a doc we can link to? -->
+Applications are authorized to call APIs when they are granted permissions by users/admins as part of the consent process. To learn more about consent, see [Permissions and consent in the Microsoft identity platform](/azure/active-directory/develop/v2-permissions-and-consent)
+
+The admin consent option may be greyed out if it's not enabled by your tenant administrator. However, if it's available, you'll need to grant consent:
 
 1. In the Azure portal on your app registration blade, go to **API Permissions**.
 
 1. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
 
-:::image type="content" source="media/configure-sso-teams/grant-admin-consent.png" alt-text="Screenshot of the Grant admin consent button highlighted.":::
+    :::image type="content" source="media/configure-sso-teams/grant-admin-consent.png" alt-text="Screenshot of the Grant admin consent button highlighted.":::
 
-> [!IMPORTANT]
-> To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide](/azure/active-directory/manage-apps/grant-admin-consent) consent to your application registrations.
+> [!TIP]
+> To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator can [grant tenant-wide](/azure/active-directory/manage-apps/grant-admin-consent) consent to your application registrations.
 
 ## Add API permissions
 
