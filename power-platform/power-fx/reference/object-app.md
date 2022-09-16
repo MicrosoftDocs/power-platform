@@ -116,14 +116,14 @@ In a browser, the confirmation dialog box might appear with a generic message fr
 
 Use named formulas, in the **Formulas** property, to define a formula that can be reused throughout your app.  
 
-In Power Apps, control properties are driven by formulas.  For example, to set the background color consistently across an app, you might set the Fill property for each to a common formula:
+In Power Apps, control properties are driven by formulas.  For example, to set the background color consistently across an app, you might set the **Fill** property for each to a common formula:
 
 ```powerapps-dot
 Label1.Fill: ColorValue( Param( "BackgroundColor" ) )
 Label2.Fill: ColorValue( Param( "BackgroundColor" ) )
 Label3.Fill: ColorValue( Param( "BackgroundColor" ) )
 ```
-With so many places where this formula may appear, it becomes tedious and error prone to update them all if a change is needed.  Instead, many makers will create a global variable in App.OnStart to set the color once, and then reuse the value throughout the app:
+With so many places where this formula may appear, it becomes tedious and error prone to update them all if a change is needed.  Instead, many makers will create a global variable in **OnStart** to set the color once, and then reuse the value throughout the app:
 
 ```powerapps-dot
 App.OnStart: Set( BGColor, ColorValue( Param( "BackgroundColor" ) ) )
@@ -158,7 +158,7 @@ UserPhone = Switch( UserInfo.'Preferred Phone',
                     'Preferred Phone (Users)'.'Mobile Phone', UserInfo.'Mobile Phone',
                     UserInfo.'Main Phone' );
 ```
-If the formula for **UserTitle** needs to be updated, it can be done easily in this one location.  If **UserPhone** is not needed in the app, then these calls to the Office365Users connector are not made.  There is no penalty for including a formula definition that is not used.
+If the formula for **UserTitle** needs to be updated, it can be done easily in this one location.  If **UserPhone** is not needed in the app, then these calls to the **Users** table in Dataverse are not made.  There is no penalty for including a formula definition that is not used.
 
 Some limitations of named formulas:
 - They cannot use behavior functions or otherwise cause side effects within the app. 
