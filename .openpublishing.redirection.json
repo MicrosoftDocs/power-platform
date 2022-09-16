@@ -1,6 +1,11 @@
 {
   "redirections": [
-   {
+    {
+      "source_path": "power-platform/guidance/automation-coe/automation-coe-starter-kit.md",
+      "redirect_url": "/power-automate/guidance/automation-kit/overview/introduction",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/developer/cli/reference/admin-command.md",
       "redirect_url": "/power-platform/developer/cli/reference/admin",
       "redirect_document_id": "false"
