@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Moving between topics
 description: Redirect to other topics and how to use other topic management nodes.
 keywords: "PVA"

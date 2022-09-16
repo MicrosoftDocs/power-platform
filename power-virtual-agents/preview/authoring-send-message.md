@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Send a message
 description: Use the Message node to send a message from the bot to a user.
 keywords: "PVA"

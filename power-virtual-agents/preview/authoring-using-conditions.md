@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Add a condition
 description: Use the Condition node to branch a topic's logic
 keywords: "PVA"
