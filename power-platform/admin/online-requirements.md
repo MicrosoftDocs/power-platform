@@ -58,7 +58,7 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://*.microsoftonline.com  | Required for authentication and Microsoft 365 services such as the Microsoft 365 admin center.   |
 | https://go.microsoft.com  | Required for product documentation and context-sensitive help pages.    |
 | `https://urs.microsoft.com`  |  Required for Microsoft defender SmartScreen filtering.    |
-| http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
+| https://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
 | https://*.api.powerplatform.com and https://api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products and admin automation scenarios as [documented here](programmability-extensibility-overview.md).
 

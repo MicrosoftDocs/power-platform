@@ -137,7 +137,7 @@ You can create your own reports to review your audit data. See [Search the audit
 
 ## What's logged
 
-For a list of what's logged with Activity Logging, see [Microsoft.Crm.Sdk.Messages Namespace](/dotnet/api/microsoft.crm.sdk.messages?view=dynamics-general-ce-9).
+For a list of what's logged with Activity Logging, see [Microsoft.Crm.Sdk.Messages Namespace](/dotnet/api/microsoft.crm.sdk.messages).
 
 We log all SDK messages except the following:
 
@@ -241,7 +241,7 @@ When audit log search in the Microsoft 365 Security and Compliance Center is tur
 
 ### See also
 [Manage Dataverse auditing](manage-dataverse-auditing.md)<br />
-[Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide) <br />
+[Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) <br />
 Search the audit log for user activity using [Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)
 
 

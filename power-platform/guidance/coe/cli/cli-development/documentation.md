@@ -151,7 +151,7 @@ termtosvg record test.cast
 
 The generated cast file is a simple text file that can be edited with any text editor.
 
-1. Remove pauses using [term-trim.ps1](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/scripts/scripts/term-trim.ps1).
+1. Remove pauses using [term-trim.ps1](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/scripts/term-trim.ps1).
 
 ```bash
 ./term-trim.ps1 -Input test.cast -Output test2.cast -Trim 1
