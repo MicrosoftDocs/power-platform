@@ -78,7 +78,7 @@ This article covers how to configure Azure Active Directory (Azure AD) as your s
 
     :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of selecting the Authentication card.":::
 
-1. Select **Manual (for any channel including Teams)**.
+1. Select **Manual (for any channel including Teams)** then turn on **Require users to sign in**.
 
     :::image type="content" source="media/configuration-end-user-authentication/auth-select-manual.png" alt-text="Screenshot of selecting the manual authentication option.":::
 
