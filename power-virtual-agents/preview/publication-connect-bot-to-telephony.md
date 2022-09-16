@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Connect your bot to Telephony
 description: Connect your bot to the Telephony channel to interact with users over the phone.
 ms.date: 05/31/2022
@@ -14,7 +13,7 @@ ms.collection: virtual-agent
 
 # Connect your bot to Telephony
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Customers often prefer to pick up the phone when they interact with an organization. With the Telephony channel, you can connect your bot to your [Azure Communication Services](/azure/communication-services/) phone number to enable customers to interact with it over the phone.
 
@@ -39,12 +38,12 @@ Customers often prefer to pick up the phone when they interact with an organizat
 1. Under **Phone number type**, select **PTSN**.
 
     > [!IMPORTANT]
-    > The **Direct routing** option is not supported in the technology preview.
+    > The **Direct routing** option is not supported in the public preview.
 
 1. Under **PTSN phone numbers**, select the first number in the list, and then select **Connect**.
 
     > [!IMPORTANT]
-    > Phone numbers have been been provisioned for the technology preview. Normally, you'll need to do this yourself in [Azure Communication Services](/azure/communication-services/).
+    > Phone numbers have been been provisioned for the public preview. Normally, you'll need to do this yourself in [Azure Communication Services](/azure/communication-services/).
 
     :::image type="content" source="media/publication-connect-bot-to-telephony/connect-number.png" alt-text="Screenshot of selected phone number.":::
 
