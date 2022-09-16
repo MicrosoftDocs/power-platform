@@ -98,13 +98,14 @@ Follow the instructions in [Configure user authentication with Azure AD](configu
 
     :::image type="content" source="media/configure-sso-teams/add-a-scope.png" alt-text="Screenshot of the Add a scope button highlighted.":::
 
-1. Enter the following values:
+1. Set the following properties:
 
    | Property                   | Value                                |
    | -------------------------- | ------------------------------------ |
-   | Scope name                 | `Test.Read`                          |
-   | Admin consent display name | `Test.Read`                          |
-   | Admin consent description  | `Allows the app to log in the user.` |
+   | Scope name                 | Enter `Test.Read`                          |
+   | Who can consent?           | Select **Admins and users**                 |
+   | Admin consent display name | Enter `Test.Read`                          |
+   | Admin consent description  | Enter `Allows the app to log in the user.` |
 
    > [!NOTE]
    > The scope name `Test.Read` is a placeholder value and should be replaced with a name that makes sense in your environment.
