@@ -76,7 +76,7 @@ Use **ConfirmExitMessage** to provide a custom message in the confirmation dialo
 In a browser, the confirmation dialog box might appear with a generic message from the browser.
 
 > [!NOTE]
-> App object has two more additional properties `OnMessage` and `BackEnabled` which are experimental properties and will go away from the app object in future. We recommend not to use these properties in your production environment.
+> App object has two more additional properties `OnMessage` and `BackEnabled` which are experimental properties and will go away from the app object in the future. We recommend not to use these properties in your production environment.
 
 ### Example
 
@@ -131,9 +131,9 @@ Label1.Fill: BGColor
 Label2.Fill: BGColor
 Label3.Fill: BGColor
 ```
-This is certainly better, but it depends on **OnStart** running before the value for BGColor is established.  BGColor could also be manipulated in some corner of the app that the maker is unaware of, a change made by someone else, and that can be hard to track down.
+This is certainly better, but it depends on **OnStart** running before the value for **BGColor** is established.  **BGColor** could also be manipulated in some corner of the app that the maker is unaware of, a change made by someone else, and that can be hard to track down.
 
-Named formulas provide an alternative.  Just as we commonly write *property = expression*, we can instead write *name = expression* and then reuse *name* throughout our app to replace *expression*.  The definitions of these formulas is done in the **Formulas** property:
+Named formulas provide an alternative.  Just as we commonly write *control-property = expression*, we can instead write *name = expression* and then reuse *name* throughout our app to replace *expression*.  The definitions of these formulas is done in the **Formulas** property:
 
 ```powerapps-dot
 App.Formulas: BGColor = ColorValue( Param( "BackgroundColor" ) );
@@ -142,26 +142,27 @@ Label2.Fill: BGColor
 Label3.Fill: BGColor
 ```
 
-The advantages of named formulas includes:
-- **The formula's result is always correct.**  There is no timing dependency, no **OnStart** that must run first before the value is set.  Named formulas can refer to each other in any order, so long as they don't create a cycle.  They don't depend on any object being loaded before they become true, unless they refer to an object.  They can be calculated in parallel. 
-- **The formula's value is immutable.**  The definition in **Formulas** is the single source of truth and the value can't be changed somewhere else in the app.  With variables, it is possible that some code unexpectedly changes a value, but this is not possible with named formulas.
-- **The formula's value is dynamic.**  Immutable does not mean static.  The formula can perform a calculation based on changing control values or database records.  Even though it is dynamic, it only recalcs when dependencies change.
-- **The formula can be reused.**  Since it is dynamic, it can be used like a user defined function that takes no parameters.
-- **The formula's calculation can be deferred.**  Because it is always true, it need not be actually calculated until it is used.  Formulas that aren't referenced until **screen2** of an app need not be calculated until **screen2** is visible.  This can improve app load time.  Named formulas are declarative and provide opportunities for the system to optimize how and when they are computed.
+The advantages of using named formulas includes:
+- **The formula's value is always available.**  There is no timing dependency, no **OnStart** that must run first before the value is set, no time in which the formula's value is incorrect.  Named formulas can refer to each other in any order, so long as they don't create a circular reference.  They can be calculated in parallel. 
+- **The formula's value is always up to date.**  The formula can perform a calculation that is dependent on control properties or database records, and as they change, the formula's value automatically updates.  You don't need to manually update the value as you do with a variable.  And formulas only recalc when needed.
+- **The formula's definition is immutable.**  The definition in **Formulas** is the single source of truth and the value can't be changed somewhere else in the app.  With variables, it is possible that some code unexpectedly changes a value, but this is not possible with named formulas.
+- **The formula's calculation can be deferred.**  Because it's value it immutable, it can always be calculated when needed, which means it need not be actually calculated until it is actually needed.  Formula values that aren't used until **screen2** of an app is displayed need not be calculated until **screen2** is visible.  This can improve app load time.  Named formulas are declarative and provide opportunities for the system to optimize how and when they are computed.
 - **Named formulas is an Excel concept.** Power Fx leverages Excel concepts where possible since so many people know Excel well.  Named formulas are the equivalent of named cells and named formulas in Excel, managed with the Name Manager.  They recalc automatically like a spreadsheet, just like control properties do.
 
-Named formulas are defined, one after another in the **Formulas** property, each ending with a semi-colon.  The type of the formula is inferred from the types of the expression, which is based on the types of the elements within the expression and how they are used together.  For example, these named formulas retrieve useful information about the current user:
+Named formulas are defined, one after another in the **Formulas** property, each ending with a semi-colon.  The type of the formula is inferred from the types of the expression, which is based on the types of the elements within the expression and how they are used together.  For example, these named formulas retrieve useful information about the current user from Dataverse:
 ```powerapps-dot
 UserEmail = User().Email;
-UserTitle = Office365Users.UserProfile(User().Email).JobTitle;
-UserPhone = Coalesce( Office365Users.UserProfile(User().Email).mobilePhone,
-                      First(Office365Users.UserProfile(User().Email).BusinessPhones).Value );
+UserInfo = LookUp( Users, 'Primary Email' = User().Email );
+UserTitle = UserInfo.Title;
+UserPhone = Switch( UserInfo.'Preferred Phone', 
+                    'Preferred Phone (Users)'.'Mobile Phone', UserInfo.'Mobile Phone',
+                    UserInfo.'Main Phone' );
 ```
 If the formula for **UserTitle** needs to be updated, it can be done easily in this one location.  If **UserPhone** is not needed in the app, then these calls to the Office365Users connector are not made.  There is no penalty for including a formula definition that is not used.
 
 Some limitations of named formulas:
 - They cannot use behavior functions or otherwise cause side effects within the app. 
-- They cannot create a circular reference.  Having **a = b** and **b = a** in the same app is not allowed.
+- They cannot create a circular reference.  Having **a = b;** and **b = a;** in the same app is not allowed.
 
 ## OnError property
 
