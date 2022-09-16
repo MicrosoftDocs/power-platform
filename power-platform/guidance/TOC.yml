@@ -368,8 +368,8 @@
           href: automation-coe/heat.md
         - name: Automation admin and governance
           href: automation-coe/automation-admin-gov.md
-        - name: Automation CoE starter kit (preview)
-          href: automation-coe/automation-coe-starter-kit.md
+        - name: Automation Kit
+          href: /power-automate/guidance/automation-kit/overview/introduction
         - name: Manage Power Automate for desktop on Windows
           href: automation-coe/manage-pad-on-windows.md
         - name: Automation Maturity Model overview
