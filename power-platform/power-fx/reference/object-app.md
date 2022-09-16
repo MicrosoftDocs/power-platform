@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/21/2022
+ms.date: 09/15/2022
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -106,6 +106,62 @@ In a browser, the confirmation dialog box might appear with a generic message fr
 
     > [!div class="mx-imgBorder"]
     > ![Form-specific confirmation dialog box.](media/object-app/confirm-native-custom.png)
+
+## Formulas property
+
+> [!NOTE]
+> - Formulas is an experimental feature and is subject to change. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview).
+> - The behavior that this article describes is available only when the *Named formulas* experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
+> - Your feedback is very valuable to us - please let us know what you think in the [Power Apps experimental features community forums](https://powerusers.microsoft.com/t5/Power-Apps-Experimental-Features/bd-p/PA_ExperimentalFeatures).
+
+Use named formulas, in the **Formulas** property, to define a formula that can be reused throughout your app.  
+
+In Power Apps, control properties are driven by formulas.  For example, to set the background color consistently across an app, you might set the Fill property for each to a common formula:
+
+```powerapps-dot
+Label1.Fill: ColorValue( Param( "BackgroundColor" ) )
+Label2.Fill: ColorValue( Param( "BackgroundColor" ) )
+Label3.Fill: ColorValue( Param( "BackgroundColor" ) )
+```
+With so many places where this formula may appear, it becomes tedious and error prone to update them all if a change is needed.  Instead, many makers will create a global variable in App.OnStart to set the color once, and then reuse the value throughout the app:
+
+```powerapps-dot
+App.OnStart: Set( BGColor, ColorValue( Param( "BackgroundColor" ) ) )
+Label1.Fill: BGColor
+Label2.Fill: BGColor
+Label3.Fill: BGColor
+```
+This is certainly better, but it depends on **OnStart** running before the value for BGColor is established.  BGColor could also be manipulated in some corner of the app that the maker is unaware of, a change made by someone else, and that can be hard to track down.
+
+Named formulas provide an alternative.  Just as we commonly write *property = expression*, we can instead write *name = expression* and then reuse *name* throughout our app to replace *expression*.  The definitions of these formulas is done in the **Formulas** property:
+
+```powerapps-dot
+App.Formulas: BGColor = ColorValue( Param( "BackgroundColor" ) );
+Label1.Fill: BGColor
+Label2.Fill: BGColor
+Label3.Fill: BGColor
+```
+
+The advantages of named formulas includes:
+- **The formula's result is always correct.**  There is no timing dependency, no **OnStart** that must run first before the value is set.  Named formulas can refer to each other in any order, so long as they don't create a cycle.  They don't depend on any object being loaded before they become true, unless they refer to an object.  They can be calculated in parallel. 
+- **The formula's value is immutable.**  The definition in **Formulas** is the single source of truth and the value can't be changed somewhere else in the app.  With variables, it is possible that some code unexpectedly changes a value, but this is not possible with named formulas.
+- **The formula's value is dynamic.**  Immutable does not mean static.  The formula can perform a calculation based on changing control values or database records.  Even though it is dynamic, it only recalcs when dependencies change.
+- **The formula can be reused.**  Since it is dynamic, it can be used like a user defined function that takes no parameters.
+- **The formula's calculation can be deferred.**  Because it is always true, it need not be actually calculated until it is used.  Formulas that aren't referenced until **screen2** of an app need not be calculated until **screen2** is visible.  This can improve app load time.  Named formulas are declarative and provide opportunities for the system to optimize how and when they are computed.
+- **Named formulas is an Excel concept.** Power Fx leverages Excel concepts where possible since so many people know Excel well.  Named formulas are the equivalent of named cells and named formulas in Excel, managed with the Name Manager.  They recalc automatically like a spreadsheet, just like control properties do.
+
+Named formulas are defined, one after another in the **Formulas** property, each ending with a semi-colon.  The type of the formula is inferred from the types of the expression, which is based on the types of the elements within the expression and how they are used together.  For example, these named formulas retrieve useful information about the current user:
+```powerapps-dot
+UserEmail = User().Email;
+UserTitle = Office365Users.UserProfile(User().Email).JobTitle;
+UserPhone = Coalesce( Office365Users.UserProfile(User().Email).mobilePhone,
+                      First(Office365Users.UserProfile(User().Email).BusinessPhones).Value );
+```
+If the formula for **UserTitle** needs to be updated, it can be done easily in this one location.  If **UserPhone** is not needed in the app, then these calls to the Office365Users connector are not made.  There is no penalty for including a formula definition that is not used.
+
+Some limitations of named formulas:
+- They cannot use behavior functions or otherwise cause side effects within the app. 
+- They cannot create a circular reference.  Having **a = b** and **b = a** in the same app is not allowed.
 
 ## OnError property
 
