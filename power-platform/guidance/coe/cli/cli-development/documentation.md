@@ -26,7 +26,7 @@ Documentation is key to understanding how the CLI works. As you add new commands
 
 ## Add markdown pages
 
-Add new pages to [help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/overview.md) that describes the new command and explains to the user the expected usage.
+Add new pages to [help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help) that describes the new command and explains to the user the expected usage.
 
 Consider adding the following to the page:
 
