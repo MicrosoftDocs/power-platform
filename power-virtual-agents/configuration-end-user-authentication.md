@@ -134,7 +134,7 @@ When a bot's authentication setting can't control who can chat with it, if you s
 
 ## Manual authentication fields
 
-The following are all the fields you may see when you're configuring manual authentication. Which fields you'll see depends on your choice for [service provider](#service-provider).
+The following are all the fields you may see when you're configuring manual authentication. Which fields you'll see depends on your choice for service provider.
 
 <!-- table best viewed and edited without wordwrap -->
 | Field name                              | Description                                                                                                                                                                                                                                    |
