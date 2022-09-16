@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 8/11/2022
+ms.date: 9/15/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,14 +26,14 @@ Operating with Power Apps .msapp files
 
 |Command|Description|
 |---------|---------|
-|[pac canvas create](#pac-canvas-create)|Generate Power App from custom connector|
+|[pac canvas create](#pac-canvas-create)|Generate a canvas app from a custom connector|
 |[pac canvas pack](#pac-canvas-pack)|(Preview) Pack sources into an msapp file|
 |[pac canvas unpack](#pac-canvas-unpack)|(Preview) Extract an msapp file into sources|
 
 
 ## pac canvas create
 
-Generate Power App from custom connector
+Generate a canvas app from a custom connector
 
 [!INCLUDE [canvas-create-intro](includes/canvas-create-intro.md)]
 
