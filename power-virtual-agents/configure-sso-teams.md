@@ -78,6 +78,18 @@ Follow the instructions in [Configure user authentication with Azure AD](configu
 > [!IMPORTANT]
 > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide](/azure/active-directory/manage-apps/grant-admin-consent) consent to your application registrations.
 
+## Add API permissions
+
+1. In the Azure portal on your app registration blade, go to **API Permissions**.
+
+1. Select **Add a permission** and choose **Microsoft Graph**.
+
+1. Select **Delegated permissions**. A list of permissions will appear below. Expand **OpenId permissions** and turn on **openid** and **profile**.
+
+1. Select **Add permissions**.
+
+:::image type="content" source="media/configure-sso-teams/add-permissions.png" alt-text="Screenshot of the openid and profile permissions turned on.":::
+
 ## Define a custom scope for your bot
 
 1. In the Azure portal on your app registration blade, go to **Expose an API**.
