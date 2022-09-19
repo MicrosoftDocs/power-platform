@@ -32,27 +32,27 @@ Once your preview bot has been created, you will need to update those topics and
 
 ## Clone a bot
 
-<!--FIXME: 09/12, feature not yet visible in dogfood-->
-
 1. Open your existing non-preview bot in Power Virtual Agents.
+
 1. On the bot **Overview** page, select **Try the preview**.
 
    :::image type="content" source="media/clone-existing-bot/preview-tile.png" alt-text="Screenshot of tile with invitation to try the new Power Virtual Agents preview.":::
 
-1. On the **Create a chatbot** page, select **Try the unified canvas (preview)**.
+1. Power Virtual Agents will open a dialog and describe features of the preview. Select **Continue**.
 
-   1. Power Virtual Agents will open a dialog and describe features of the preview.
-   1. On the **Chatbots (preview)** page, select **Continue**.
-   1. On the **Create a chatbot (preview)** page, if your [bot is eligible](#eligibility), you can copy and convert your existing bot content, or you can create a new preview bot.
+   > [!IMPORTANT]
+   > If your [bot is not eligible](#eligibility), Power Virtual Agents will prompt you to create a new preview bot instead.
 
-      - Make sure **Copy and convert this bot** is selected.
-      - Optionally edit the name for your new preview bot.
-      - Select **Create**.
+1. Select **Copy and convert this bot**.
 
-      :::image type="content" source="media/clone-existing-bot/modal-step2.png" alt-text="Screenshot of tiles inviting users to try the new Power Virtual Agents preview.":::
+1. Optionally edit the **Bot name** for your new preview bot.
 
-      > [!TIP]
-      > There are some limitations with the type of content that can be copied from an existing bot. If there are any limitations that will affect your bot, you will be informed of these, before Power Virtual Agents creates your new bot.
+1. Select **Create**.
+
+    :::image type="content" source="media/clone-existing-bot/modal-step2.png" alt-text="Screenshot of tiles inviting users to try the new Power Virtual Agents preview.":::
+
+    > [!TIP]
+    > There are some limitations with the type of content that can be copied from an existing bot. If there are any limitations that will affect your bot, you will be informed of these, before Power Virtual Agents creates your new bot.
 
 1. Wait until Power Virtual Agents creates your new bot.
 
