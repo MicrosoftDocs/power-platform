@@ -22,6 +22,8 @@ Use Email settings to adjust how model-driven apps in Dynamics 365, such as Dyna
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**.
 
+[!TIP] In addition to the settings mentioned below, there are more settings available to control email behavior. For more information, see [OrgDBOrgSettings for server-side synchronization](power-platform/admin/orgdborgsettings).
+
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
 
 **Check your security role**
