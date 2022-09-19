@@ -6,6 +6,8 @@
   href: limitations.md
 - name: Author and edit
   items:
+    - name: Clone an existing bot
+      href: clone-existing-bot.md
     - name: Use sample topics
       href: authoring-template-topics.md
     - name: Create and edit topics
