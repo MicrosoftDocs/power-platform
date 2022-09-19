@@ -22,7 +22,7 @@ Some bots are not currently eligible to have their content cloned into a new pre
 - Hand-off to Omnichannel for Customer Service
 - Knowledge Management extensions
 
-Whether or not your bot is eligible, you can [create a new preview bot](build-2022-quickstart.md) to explore preview features on the unified canvas.
+Whether or not your bot is eligible, you can [create a new preview bot](quickstart.md) to explore preview features on the unified canvas.
 
 ## Limitations
 
