@@ -31,8 +31,4 @@ Using entities can help you expand what you can make chatbots do, and can increa
 
 If you're interested in using entities, read the [Power Virtual Agents web app documentation for entities](../advanced-entities-slot-filling.md).
 
-Entities in the Power Virtual Agents app on Teams have the same functionality as entities in the web app, and are located in the side menu:
-
-:::image type="content" source="../media/advanced-entities-slot-filling/entities-menu.png" alt-text="The entities menu on Teams has a box icon and is labelled as Entities.":::
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
