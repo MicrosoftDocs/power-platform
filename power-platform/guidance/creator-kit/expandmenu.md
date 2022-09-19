@@ -20,13 +20,17 @@ contributors:
   - slaouist
 ---
 
-# :::no-loc text="ExpandMenu"::: control
+# :::no-loc text="ExpandMenu"::: control (Experimental)
 
 [This article is pre-release documentation and is subject to change.]
 
 A control used to create a navigation experience.
 
-:::image type="content" source="media/expandmenu.png" alt-text="ExpandMenu control.":::
+:::image type="content" source="media/expander.png" alt-text="ExpandMenu control.":::
+
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Description
 
@@ -34,23 +38,18 @@ Expand menus are like `Nav` components used to provide navigation, which consist
 
 This canvas component mimics the style and *limited* behavior of the [Fluent UI Nav control](https://developer.microsoft.com/fluentui#/controls/web/Nav).
 
-> [!NOTE]
-> You can find component source code and more information at the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+## Properties
 
-## Limitations
-
-This canvas component can only be used in canvas apps and custom pages.
-
-## Key properties
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Width` | The width of the control. |
 | `Items` | A dataset that displays items in the menu. |
-| `OnExpandSelect` | Action expression triggered when the hamburger (three horizontal lines) button is selected. |
-| `OnButtonSelect` | Action expression triggered when any of the buttons are selected. |
+| `IsNavigationEnabled` | Enable to navigate to the item's specified `Screen` on select |
+| `DefaultExpandValue` | Whether the control is expanded on load |
 
-## Items dataset
+
+### :::no-loc text="Items"::: properties
 
 | Property | Description |
 | -------- | ----------- |
@@ -82,10 +81,26 @@ Table(
 )
 ```
 
+### Style properties
+
+| Property | Description |
+| -------- | ----------- |
+| `Theme` | The Theme object. See [theming](theme.md) for guidance on how to configure. |
+
+### Event properties
+
+| Property | Description |
+| -------- | ----------- |
+| `OnExpandSelect` | Action formula triggered when the hamburger button is selected |
+| `OnButtonSelect` | Action formula triggered when any of the buttons are selected |
+
+
 > [!IMPORTANT]
 > The screen values in the preceding example code are from a sample, and might not exist in your app. Ensure that you replace the screen values with screen names in your app, as appropriate.
 
-## Configure expand and collapse behavior
+## Behavior
+
+### Expand and collapse
 
 Set the `Width` property to the following expression. The width values can be adjusted based on the resolution of the app.
 
@@ -93,8 +108,9 @@ Set the `Width` property to the following expression. The width values can be ad
 If( Self.IsExpanded, 200, 46 )
 ```
 
-## Best practices
+## Limitations
 
-Go to [Fluent UI Nav control best practices](https://developer.microsoft.com/fluentui#/controls/web/nav).
+This canvas component can only be used in canvas apps and custom pages.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

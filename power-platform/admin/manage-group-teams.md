@@ -3,7 +3,7 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/11/2022
+ms.date: 08/29/2022
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -21,8 +21,6 @@ search.app:
 <!-- legacy procedure --> 
 
 ## About group teams
-
-Applies to Microsoft Dataverse
 
 An Azure Active Directory (Azure AD) *group* team. Similar to *owner* team, an Azure AD group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership. 
 
@@ -167,6 +165,21 @@ Review the following table for how members in Azure AD groups match to Dataverse
 
 ## Change the business unit for a team  
 See [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
+
+## Add group team types to the default lookup view
+
+When manually assigning a record or sharing a record using the built in form, the default options list does not pick up some group team types such as Azure AD. You can edit the filter on the default lookup view of the teams table so that it includes these groups.
+
+1.	Sign in to [Power Apps](https://make.powerapps.com).
+
+2.	Select **Dataverse** > **Tables** > **Team** > **Views** > **Teams Lookup View** > **Edit Filters**
+
+3.	Set **Team Type**, **Equals** to:  **AAD Office Group**, **AAD Security Group**, **Owner**
+
+   :::image type="content" source="media/team-type-edit-filters.png" alt-text="Add AAD Office Group and AAD Security Group to the Team type.":::
+    
+4.	Select **OK** > **Save** > **Publish**.
+
 
 ## Other team operations  
 See:

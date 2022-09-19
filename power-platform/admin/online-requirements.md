@@ -4,9 +4,12 @@ description: Provides information about URLs and IP addresses to be added to the
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/17/2022
+ms.date: 09/06/2022
 ms.subservice: admin
 ms.author: jimholtz
+contributors:
+  - shazichuanshuo 
+  - garrettm-msft 
 search.audienceType: 
   - admin
 search.app:
@@ -57,12 +60,11 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://urs.microsoft.com  |  Required for Microsoft defender SmartScreen filtering.    |
 | http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
-| https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products and admin automation scenarios as [documented here](programmability-extensibility-overview.md).
+| https://*.api.powerplatform.com and https://api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products and admin automation scenarios as [documented here](programmability-extensibility-overview.md).
 
 > [!IMPORTANT]
 > - If you are Government cloud customer, go to [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls) 
 > - If you are a customer in China and want to access Dynamics 365 services operated by a local company that stores your data within China, go to [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md)
-
 
 ## IP addresses required
 

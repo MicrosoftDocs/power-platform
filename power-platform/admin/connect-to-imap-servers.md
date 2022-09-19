@@ -1,13 +1,12 @@
 ---
 title: "Connect to IMAP or POP servers  | MicrosoftDocs"
 description: Connect to IMAP, POP, or SMTP servers 
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/24/2021
-author: jimholtz
+author: DanaMartens
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin

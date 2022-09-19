@@ -40,6 +40,11 @@ This article will provide you with answers to frequently asked questions and tip
 
 ## Installing a solution in a Dataverse for Teams environment
 
+> [!IMPORTANT]
+> Effective October 2022, we will stop investing in the CoE Starter Kit version for Dataverse for Teams. Existing customers can continue using the Dataverse for Teams version and you can continue to [download the latest available versions](https://aka.ms/CoEStarterKitD4T) for Dataverse for Teams, but we will no longer implement new features or fix bugs for this version.
+>
+>We recommend that customers transition to installing the CoE starter Kit in a [Production environment](/power-platform/admin/environments-overview#types-of-environments) and setting up [pay-as-you-go plans](/power-platform/admin/pay-as-you-go-overview) for the usage of apps within the CoE Starter Kit.
+
 1. Select the Microsoft Teams group you want to add the solution to.
 1. [Install the Power Apps personal app in Microsoft Teams](/powerapps/teams/install-personal-app).
 1. [Create your first app](/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).

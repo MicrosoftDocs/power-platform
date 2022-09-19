@@ -3,10 +3,10 @@ title: "Replicate data to Azure SQL Database using Data Export Service | Microso
 description: Replicate data to Azure SQL Database using Data Export Service 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/14/2022
+ms.date: 09/13/2022
 ms.subservice: admin
-ms.author: sabinn
-author: sabinn-msft
+ms.author: nhelgren
+author: NHelgren
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -88,7 +88,7 @@ For information about the programmatic interface for managing configuration and 
     - Go to **Settings** > **Microsoft Appsource** > search or browse to **Microsoft Dynamics 365 - Data Export Service**, and then select **Get it now**. 
     - Or, find it on [Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448).  
   
-- The entities that will be added to the Export Profile must be enabled with change tracking. To ensure a standard or custom entity can be synchronized go to **Customization** > **Customize the System**, and then click the entity. On the **General** tab make sure the **Change Tracking** option under the **Data Services** section is enabled.  
+- The entities that will be added to the Export Profile must be enabled with change tracking. To ensure a standard or custom entity can be synchronized go to **Customization** > **Customize the System**, and then select the entity. On the **General** tab make sure the **Change Tracking** option under the **Data Services** section is enabled.  
   
 - You must have the System Administrator security role in the environment.  
   
@@ -170,11 +170,11 @@ For information about the programmatic interface for managing configuration and 
   
 1. Go to **Settings** > **Data Export**.  
   
-2. Review the notice, and click **Continue** or **Cancel** if you don't want to export data.  
+2. Review the notice, and select **Continue** or **Cancel** if you don't want to export data.  
   
-3. Click **New** to create a new Export Profile.  
+3. Select **New** to create a new Export Profile.  
   
-4. In the **Properties** step, enter the following information, and then click **Next** to continue without connecting to the Key Vault. Clicking **Validate** uses the Key Vault URL you provided to connect to the Key Vault.  
+4. In the **Properties** step, enter the following information, and then select **Next** to continue without connecting to the Key Vault. Selecting **Validate** uses the Key Vault URL you provided to connect to the Key Vault.  
   
    - **Name**. Unique name of the profile. This field is mandatory.  
   
@@ -195,15 +195,15 @@ For information about the programmatic interface for managing configuration and 
   
    ![Properties tab in Create Export Profile dialog box.](../admin/media/data-export-profile-1.PNG "Properties tab in Create Export Profile dialog box")  
   
-5. In the **Select Entities** step, select the entities that you want to export to the destination [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database, and then click **Next**.  
+5. In the **Select Entities** step, select the entities that you want to export to the destination [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database, and then select **Next**.  
   
    ![Select Entities tab in Create Export Profile dialog box.](../admin/media/data-export-profile-2.PNG "Select Entities tab in Create Export Profile dialog box")  
   
-6. In the **Select Relationships** step, you can synchronize  the M:N (many-to-many) [relationships](/powerapps/maker/common-data-service/create-edit-entity-relationships) that exist with the entities you selected in the previous step. Click **Next**.  
+6. In the **Select Relationships** step, you can synchronize  the M:N (many-to-many) [relationships](/powerapps/maker/common-data-service/create-edit-entity-relationships) that exist with the entities you selected in the previous step. Select **Next**.  
   
    ![Create Export Profile - Manage Relationships - Select Relationships.](../admin/media/data-export-profile-3.PNG "Create Export Profile - Manage Relationships - Select Relationships")  
   
-7. In the **Summary** step, click **Create and Activate** to create the profile record and connect to the Key Vault, which begins the synchronization process. Otherwise, click **Create** to save the Export Profile and activate later.  
+7. In the **Summary** step, select **Create and Activate** to create the profile record and connect to the Key Vault, which begins the synchronization process. Otherwise, select **Create** to save the Export Profile and activate later.  
   
    ![Summary tab in Create Export Profile dialog box.](../admin/media/data-export-profile-4.PNG "Summary tab in Create Export Profile dialog box")  
   
@@ -216,7 +216,7 @@ For information about the programmatic interface for managing configuration and 
   
    ![Select an Export Profile.](../admin/media/data-export-select-profile.png "Select an Export Profile")  
   
-3. On the Actions toolbar, click **MANAGE ENTITIES** to add or remove entities for data export. To add or remove entity relationships, click **MANAGE RELATIONSHIPS**.  
+3. On the Actions toolbar, select **MANAGE ENTITIES** to add or remove entities for data export. To add or remove entity relationships, select **MANAGE RELATIONSHIPS**.  
   
    ![Manage entities or entity relationships.](../admin/media/dataexport-manage.PNG "Manage entities or entity relationships")  
   
@@ -224,7 +224,7 @@ For information about the programmatic interface for managing configuration and 
   
    ![Select the entities or entity relationships to add or remove.](../admin/media/data-export-select-entities.PNG "Select the entities or entity relationships to add or remove")  
   
-5. Click **Update** to submit your changes to the Export Profile.  
+5. Select **Update** to submit your changes to the Export Profile.  
   
 > [!IMPORTANT]
 > When you remove an entity or entity relationship from an Export Profile it doesn't drop the corresponding table in the destination database. Before you can re-add an entity that has been removed, you must drop the corresponding table in the destination database.  To drop an entity table, see [How to delete Data Export Profile tables and stored procedures for a specific entity](#how-to-delete-all-data-export-profile-tables-and-stored-procedures).  
@@ -266,24 +266,24 @@ For information about the programmatic interface for managing configuration and 
   
    2. Open the Export Profile that includes record synch failures.  
   
-   3. On the Export Profile toolbar, click **RESYNC FAILED RECORDS**.  
+   3. On the Export Profile toolbar, select **RESYNC FAILED RECORDS**.  
   
-   4. Click **Ok** upon successful resynchronization of the failed records on the confirmation dialog.  
+   4. Select **Ok** upon successful resynchronization of the failed records on the confirmation dialog.  
   
    ![Notification of a successful resynchronization.](../admin/media/data-export-resync-success.PNG "Notification of a successful resynchronization")  
   
-   5.  Verify that the Export Profile doesn't contain failed record notifications by opening the data export profile and viewing the **Failed Notifications** counter on the **PROPERTIES & OVERVIEW** tab, which should be **0**. Click **REFRESH** on the Export Profile toolbar to make sure the **Failed Notifications** value is current.  
+   5.  Verify that the Export Profile doesn't contain failed record notifications by opening the data export profile and viewing the **Failed Notifications** counter on the **PROPERTIES & OVERVIEW** tab, which should be **0**. Select **REFRESH** on the Export Profile toolbar to make sure the **Failed Notifications** value is current.  
   
    ![Zero records failed  indication.](../admin/media/data-export-failed-records-zero.PNG "Zero records failed  indication")  
   
 4.  If the record synchronization failures persist after you've tried resynchronizing by following the previous steps, contact [Microsoft Customer Support Services](get-help-support.md).  
   
 ## Error handling and monitoring  
- To view the synchronization status of an Export Profile, go to **Settings** > **Data Export** and open the Export Profile. On the **ENTITIES** tab, the synchronization status is displayed including a **Failed Records** column for records that could not be synchronized. For any failed records, a list of those records including the status reason can be downloaded by clicking **FAILED RECORDS** on the command bar.  
+ To view the synchronization status of an Export Profile, go to **Settings** > **Data Export** and open the Export Profile. On the **ENTITIES** tab, the synchronization status is displayed including a **Failed Records** column for records that could not be synchronized. For any failed records, a list of those records including the status reason can be downloaded by selecting **FAILED RECORDS** on the command bar.  
   
  ![Export Profile command bar - Failed Records button.](../admin/media/data-export-command-bar.png "Export Profile command bar - Failed Records button")  
   
- In the Export Profile you can click **PROPERTIES & OVERVIEW** to display the properties of the profile. Click **RELATIONSHIPS** to view the relationships synchronization status.  
+ In the Export Profile you can select **PROPERTIES & OVERVIEW** to display the properties of the profile. Select **RELATIONSHIPS** to view the relationships synchronization status.  
     
 ### How to view detailed information about the records that failed to sync  
  Viewing the failed record logs can help you determine the cause of synchronization failures. To view failed records in the destination Azure destination database, use Azure Storage Explorer, a free standalone app that allows you to easily work with Azure Storage data. More information:  [Azure Storage Explorer](https://storageexplorer.com/).  
@@ -294,11 +294,11 @@ For information about the programmatic interface for managing configuration and 
   
    ![Failed notifications.](../admin/media/data-export-failed-notifications.PNG "Failed notifications")  
   
-3. On the Actions toolbar, click **FAILED RECORDS**.  
+3. On the Actions toolbar, select **FAILED RECORDS**.  
   
    ![Failed records toolbar button.](../admin/media/data-export-failed-records-toolbar.PNG "Failed records toolbar button")  
   
-4. In the Download Failed Records dialog box, click **Copy Blob URL**, and then click **Ok**.  
+4. In the Download Failed Records dialog box, select **Copy Blob URL**, and then select **Ok**.  
   
    ![Download failed records dialog box.](../admin/media/dataexport-download-failed-records.PNG "Download failed records dialog box")  
   
@@ -307,13 +307,13 @@ For information about the programmatic interface for managing configuration and 
   
 5. Start Azure Storage Explorer.  
   
-6. In Azure Storage Explorer, click **Connect to Azure Storage**.  
+6. In Azure Storage Explorer, select **Connect to Azure Storage**.  
   
-7. Paste the URL from your clipboard in to the **Connect to Azure Storage** box, and then click **Next**.  
+7. Paste the URL from your clipboard in to the **Connect to Azure Storage** box, and then select **Next**.  
   
    ![Storage url.](../admin/media/azure-store-url.png "Storage url")  
   
-8. On the Connection Summary page, click **Connect**.  
+8. On the Connection Summary page, select **Connect**.  
   
 9. Azure Storage Explorer connects to the destination database. If failed records exist for the Export Profile, Azure Storage Explorer displays failed record  synchronization folders.  
   
@@ -564,6 +564,11 @@ PRINT @sql
 EXEC SP_EXECUTESQL @sql;
 ```
 
+## How to uninstall Data Export Service from Administer Power Platform
+1. Navigate to Advanced settings.
+2. Select **Settings > Customizations**, and then select **Solutions**.
+3. Choose **DataExportService** published by Microsoft Dynamics 365, and then select **Delete**.
+
 ## Find the Azure Active Directory tenant Id for your tenant
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
@@ -572,7 +577,7 @@ EXEC SP_EXECUTESQL @sql;
   
 ## Azure SQL database static IP addresses used by the Data Export Service  
 
- In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
+ In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], select **Set server firewall**, turn **Allow access to Azure services** to **OFF**, select **Add client IP**, and then add the IP addresses appropriate for the region of your environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
   
 |Region| New IP address| Old IP address |
 |------------|----------------|  
