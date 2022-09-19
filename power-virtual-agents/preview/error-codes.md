@@ -46,7 +46,6 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 
 [1]: authoring-moving-between-topics.md#redirecting-to-another-topic
 [2]: advanced-flow.md
-[3]: authoring-create-edit-topics.md#edit-topics-with-the-code-editor
 [4]: publication-connect-bot-to-telephony.md
 [5]: authoring-create-edit-topics.md#edit-topics-with-the-code-editor
 

@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Using conditions
 
-You can use condition nodes to branch logic within your topic, comparing the value of a variable to another variable or a specific value. For example, you might check to see if a number variable is greater than a certain number. 
+You can use condition nodes to branch logic within your topic, comparing the value of a variable to another variable or a specific value. For example, you might check to see if a number variable is greater than a certain number.
 
 ## Prerequisites
 
@@ -24,10 +24,10 @@ You can use condition nodes to branch logic within your topic, comparing the val
 ## Adding a condition
 
 1. Select **+** to add a node, then select **Add a condition**, to add a condition node to the canvas.
-   
-    This adds two branches to your topic where you can add nodes, one for if the condition you define is true, and another labelled **All other conditions**, for nodes that will be executed if the condition is false.    
 
-    By default, the node uses the simple condition editor, where you select a variable, an operator (such as 'is equal to' or 'is greater than') and a value (another variable or a literal value), to build your condition. 
+    This adds two branches to your topic where you can add nodes, one for if the condition you define is true, and another labelled **All other conditions**, for nodes that will be executed if the condition is false.
+
+    By default, the node uses the simple condition editor, where you select a variable, an operator (such as 'is equal to' or 'is greater than') and a value (another variable or a literal value), to build your condition.
 
     :::image type="content" source="media/authoring-condition-node/authoring-condition-node-new-condition.png" alt-text="Screenshot showing new condition with default simple editor and an all other conditions branch.":::
 
@@ -53,8 +53,8 @@ For the above, the resulting conditions in your topic might looks like this.
 
 :::image type="content" source="media/authoring-condition-node/authoring-condition-node-multiple-conditions.png" alt-text="Screenshot showing multiple condition branches and an all other conditions branch.":::
 
-1. To add an additional condition branch, select the **+** above an existing condition node and select **Add a condition**. 
-   
+1. To add an additional condition branch, select the **+** above an existing condition node and select **Add a condition**.
+
 ## Using Power Fx to author a condition
 
 The simple condition editor will suffice for most scenarios, but sometimes you might require more flexibility when building a condition. For this scenario, you can choose to author the condition for a specific condition node using Power Fx.
@@ -67,7 +67,7 @@ The simple condition editor will suffice for most scenarios, but sometimes you m
 
     :::image type="content" source="media/authoring-condition-node/authoring-condition-node-formula-mode.png" alt-text="Screenshot showing the formula editor for a condtion node.":::
 
-1. To add or update the formula, use the **>** to the right of the **Function** box to open the Power Fx formula editor. The formula you enter here must return a boolean value (true / false). 
+1. To add or update the formula, use the **>** to the right of the **Function** box to open the Power Fx formula editor. The formula you enter here must return a boolean value (true / false).
 
     See [Microsoft Power Fx in Power Virtual Agents](advanced-power-fx.md) for more details about using the Power Fx formula editor.
 

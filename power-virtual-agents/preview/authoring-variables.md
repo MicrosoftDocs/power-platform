@@ -83,7 +83,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 
 ## Create a variable
 
-Variables can be created in any node that prompts you to select a variable as an output, such as the [**Question**](authoring-ask-question.md) node, a [Power Automate Flow](advanced-flow.md) or [another topic](/authoring-variables.md#Receive-values-from-other-topics). 
+Variables can be created in any node that prompts you to select a variable as an output, such as the [**Question**](authoring-ask-a-question.md) node, a [Power Automate Flow](advanced-flow.md) or [another topic](/authoring-variables.md#Receive-values-from-other-topics).
 
 These nodes will automatically create new variables, with the appropriate type, for each of their output variable slots.
 
@@ -93,11 +93,11 @@ You can also create a new variable and assign a value to it immediately using th
 
 1. Select **+** to add a node and then select **Set a variable value**.
 
-2. In the **Set variable** box, select the **>** arrow.
+1. In the **Set variable** box, select the **>** arrow.
 
     :::image type="content" source="media/authoring-variables/create-new-variable-button.png" alt-text="Screenshot of selecting a variable in the Set Variable Value node.":::
 
-3. In the flyout menu that appears, select **Create a new variable**.
+1. In the flyout menu that appears, select **Create a new variable**.
 
     :::image type="content" source="media/authoring-variables/create-variable.png" alt-text="Screenshot of Create a new variable button.":::
 
@@ -105,7 +105,7 @@ A new variable will be created. The new variable's type will be **unknown** unti
 
 ## Set a variable
 
-Typically you'll use a [question node](authoring-ask-question.md) to save user input to a variable, but there may be situations where you want to set the value manually.
+Typically you'll use a [question node](authoring-ask-a-question.md) to save user input to a variable, but there may be situations where you want to set the value manually.
 
 1. To assign a value to a [variable](authoring-variables.md), select **+** to add a node and then select **Set a variable value**.
 
@@ -129,9 +129,9 @@ Instead of selecting a variable from the menu, you can type a literal value into
 
 :::image type="content" source="media/authoring-variables/set-redirect-variable-to-literal.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect node.":::
 
-The node will attempt to interpret literal values entered as String, Number or a Boolean type. 
+The node will attempt to interpret literal values entered as String, Number or a Boolean type.
 
-For example, entering _123_ will be interpreted as Number. If you wanted this interpreted as a string value instead, you could wrap this value in double quotes, like _"123"_. 
+For example, entering _123_ will be interpreted as Number. If you wanted this interpreted as a string value instead, you could wrap this value in double quotes, like _"123"_.
 
 For some scenarios, or where you're using more complex types, To set a specific type, use the appropriate [Power Fx formula](advanced-power-fx.md) as per the following table:
 
@@ -175,17 +175,17 @@ To receive values from other topics, set the variable's property:
 
 1. Save the topic.
 
-2. Go to a topic that you want to redirect to. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirecting-to-another-topic) to redirect to the correct topic.
+1. Go to a topic that you want to redirect to. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirecting-to-another-topic) to redirect to the correct topic.
 
-3. Select **+ Add input for destination topic**.
+1. Select **+ Add input for destination topic**.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for the destination topic.":::
 
-4. Select a variable in the redirected topic that you want to pass the variable to.
+1. Select a variable in the redirected topic that you want to pass the variable to.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step2.png" alt-text="Screenshot of the authoring canvas showing selecting the variable in the redirected topic.":::
 
-5. Under **Enter or select a value**, select the variable in the current topic that you want to pass to the redirected topic.
+1. Under **Enter or select a value**, select the variable in the current topic that you want to pass to the redirected topic.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step3.png" alt-text="Screenshot of the authoring canvas showing selecting the variable from the list of options.":::
 
@@ -217,7 +217,7 @@ To return a variable to the original topic, set the variable's property:
 
 ## Variable scope
 
-By default, a variable can only be referenced within the topic where it is created and is said to be scoped to that topic. 
+By default, a variable can only be referenced within the topic where it is created and is said to be scoped to that topic.
 
 Variables can also existing within two other scopes.
 

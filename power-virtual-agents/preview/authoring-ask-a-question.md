@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Ask a Question
 
-The **Question** node allows you to prompt a user for information and store their response into a variable, for use later on in the conversation. 
+The **Question** node allows you to prompt a user for information and store their response into a variable, for use later on in the conversation.
 
 The node allows you to choose the type of information you want to collect, such as multiple choice, a pre-built entity such as Number, or a custom entity that you have created via the entities page. There are also a number of [additional properties](#additional-question-behavior) that allow you to control the behavior of the node, such as what to do when an invalid response is recieved or additional validation rules that need to be met by the user.
 
@@ -28,7 +28,7 @@ The node allows you to choose the type of information you want to collect, such 
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then select **Ask a question** to add a new **Question** node.
 
-   :::image type="content" source="media/authoring-question-node/topics-question.png" alt-text="Screenshot of adding a new question mode.":::
+   :::image type="content" source="media/authoring-ask-a-question/topics-question.png" alt-text="Screenshot of adding a new question mode.":::
 
 1. Enter the text for your question in the first input on the node, which has a placeholder **Enter a response**.
 
@@ -45,9 +45,9 @@ The node allows you to choose the type of information you want to collect, such 
 
 1. In **Save response as**, a new variable is created for you to store the user's response to the question. You can, optionally, create a new variable, or choose another existing variable, to use instead.
 
-     :::image type="content" source="media/authoring-question-node/question-variable-button.png" alt-text="Select variable name to display variable properties":::
+     :::image type="content" source="media/authoring-ask-a-question/question-variable-button.png" alt-text="Select variable name to display variable properties":::
 
-2. Optionally, open the properties pane for the question node to modify [additional question behavior](#additional-question-behavior).
+1. Optionally, open the properties pane for the question node to modify [additional question behavior](#additional-question-behavior).
 
 ## Additional question behavior
 
@@ -55,7 +55,7 @@ There are also a number of additional properties that allow you to control the b
 
 ### Skip question
 
-In some cases, the variable set within the **Save response as** property may already have a value via [slot filling](advanced-entities-slot-filling.md), or having a value assinged earlier in the conversation. 
+In some cases, the variable set within the **Save response as** property may already have a value via [slot filling](advanced-entities-slot-filling.md), or having a value assinged earlier in the conversation.
 
 By default, if the variable does already have a value, the question will be skipped entirely, but you can choose to always ask the user the question, even if the variable already has a value.
 
@@ -63,7 +63,7 @@ To configure your chosen behavior.
 
 1. Open the property pane for the question node.
 
-2. **Skip question** property to choose either **Skip if variable already has a value** or **Ask every time** depending on your needs.
+1. **Skip question** property to choose either **Skip if variable already has a value** or **Ask every time** depending on your needs.
 
 ### Retry behavior
 
@@ -77,7 +77,7 @@ By default, When the question node does reprompt, it will use the same message (
 
 1. Under the heading **Retry prompt** tick the **Customize** checkbox, which reveals the message editor.
 
-2. Use the message editor to set your desired re-prompt message.
+1. Use the message editor to set your desired re-prompt message.
 
 If the question node reaches the maximum number of retries (which could be zero) and has not recieved a valid response, you can configure what the node should do in this case.
 
@@ -91,7 +91,7 @@ If the question node reaches the maximum number of retries (which could be zero)
 
 ### Validating a response
 
-The question node will check if a user's response is valid, based on the type being identified but, in some cases it can be useful to add additional validation rules to add further define what is a valid response. 
+The question node will check if a user's response is valid, based on the type being identified but, in some cases it can be useful to add additional validation rules to add further define what is a valid response.
 
 For example, you might want to accept a number from a user, but ensure that the number is less than 10. By default, the question node will accept any numeric value when identifying a number, so you can set a boolean condition, using Power Fx, to determine if the user input is valid.
 

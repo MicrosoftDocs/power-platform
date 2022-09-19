@@ -32,10 +32,6 @@
       href: advanced-power-fx.md
     - name: Add actions using Power Automate
       href: advanced-flow.md
-    - name: Add multimedia cards to messages
-      href: advanced-cards.md
-    - name: Customize speech responses with SSML
-      href: advanced-custom-speech-ssml.md
 - name: Publish and integrate
   items:
     - name: Key concepts - Publish your bot

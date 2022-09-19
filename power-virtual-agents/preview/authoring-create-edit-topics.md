@@ -112,7 +112,7 @@ When you add a node after the **Trigger Phrases** node or between other existing
 | Option                                                            | Description                                           |
 |:------------------------------------------------------------------|:------------------------------------------------------|
 | [**Send a message**](authoring-send-message.md)                   | Send the customer a message .                         |
-| [**Ask a question**](authoring-ask-question.md)                   | Ask the customer a question.                          |
+| [**Ask a question**](authoring-ask-a-question.md)                   | Ask the customer a question.                          |
 | [**Add a condition**](authoring-using-conditions.md)              | Branch your conversation based on a condition.        |
 | [**Set a variable value**](authoring-variables.md#set-a-variable) | Set a value for a new or existing variable.           |
 | [**Topic management**](authoring-moving-between-topics.md)        | Redirect, transfer, or end the topic or conversation. |
