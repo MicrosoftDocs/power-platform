@@ -35,7 +35,7 @@ Sample data gives you something to experiment with as you learn customer engagem
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
+2. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
 
 3. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
 

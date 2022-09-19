@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, three meters determine how mu
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/29/2022
+ms.date: 09/25/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
@@ -96,7 +96,10 @@ A flow can either run in the cloud, on a desktop with a user (attended), or on a
 - Flows that run in the cloud or attended cost $0.60 per run 
 - Flows that run unattended cost $3.00 per run  
 
-To make it easy to test and fix your flows no charges will be incurred if you're testing your flow in the designer or resubmitting failed runs. Additionally, if you use the "Child flow" feature for cloud flows or attended flows, there will only be a single charge for the parent flow run, no charges will be incurred for child flow runs. For unattended flows, both parent and child flow runs will be charged.  
+To make it easy to test and fix your flows, no charges will be incurred if you're testing your flow in the designer or resubmitting failed runs. Additionally, if you use the "Child flow" feature for cloud flows or attended flows, there will only be a single charge for the parent flow run, no charges will be incurred for child flow runs. For unattended flows, both parent and child flow runs will be charged. 
+
+> [!NOTE]
+> During the public preview, there may be limits on the maximum number of runs that will be charged to a single flow in a pay-as-you-go environment per day. Starting on 9/1, the limit is 1000 per day subject to change during the preview period. The downloadable pay-as-you-go report in the Power Platform admin center will show the full and accurate number of flow runs, but the number billed to Azure may be lower. We recommend that any flows with a high number of runs use a Power Automate per flow plan, as that is a fixed price per month.
 
 #### Users and flows with standalone Power Automate licenses 
 
@@ -115,14 +118,14 @@ Note that customers can't use the Power Automate unattended RPA add-on subscript
 
 Example: if an environment has Unattended bot add-on units assigned and then PAYG is enabled for that environment, every unattended flow run in the environment will be charged. Any Unattended bots add-on units are ignored and can be reassigned to other environments.  
 
-#### Flows running in the context of a Power App 
+#### Flows running in the context of an app
 
 Power Automate flows can either be triggered directly via a user in a Power App, or, run in the background automatically in response to automated triggers, such as a new item being added to a SharePoint list. Charges are different depending on the method: 
 
-- Flows triggered directly from a Power App will have no additional cost since by running the Power App, the user’s standalone Power Apps license or the Power Apps PAYG meter will cover their usage of Power Automate.  
+- Flows triggered directly from an app created using Power Apps will have no additional cost since by running the Power App, the user’s standalone Power Apps license or the Power Apps PAYG meter will cover their usage of Power Automate.  
 - For flows running in response to an automated trigger (owned by a user without a Power Apps or Power Automate license), you have the flexibility to choose between the following options: 
   - Pay the normal run rates called out above -- charged $0.60 or $3.00 depending on where it runs (this in the default behavior), or, 
-  - For cloud flows only, if the flow uses the same data sources as a Power App, you can link that flow to the app using a [PowerShell script](powerapps-powershell.md#associate-in-context-flows-to-a-power-app). When you link a flow to an app, usage will be covered by the user’s standalone Power Apps license or the Power Apps PAYG meter.  
+  - For cloud flows only, if the flow uses the same data sources as a Power App, you can link that flow to the app using a [PowerShell script](powerapps-powershell.md#associate-in-context-flows-to-an-app). When you link a flow to an app, usage will be covered by the user’s standalone Power Apps license or the Power Apps PAYG meter.  
 
 #### Choose the right subscription to save costs
 Prepaid flows and Pay-as-you-go flows can co-exist in same environments as Pay-as-you-go plan complements prepaid subscriptions. Admins can understand usage patterns using Power platform admin center reports and move users to pre-pay licenses for optimal pricing.
