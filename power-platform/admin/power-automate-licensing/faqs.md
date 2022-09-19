@@ -91,7 +91,7 @@ If the flow is a solution-aware flow, you can [change the owner](/power-automate
 
 ### The owner of the flow no longer has a premium license, but the flow is a premium flow. What happens?
 
-The flow will be downgraded to lower performance and all flow owners will be notified and the flow will be turned off in 15 days if no action is taken.
+The flow will be downgraded to lower performance and all flow owners will be notified and the flow will be turned off in 14 days if no action is taken.
 
 ### Do guest users (not from your tenant) need a license to use Power Automate?
 
@@ -256,6 +256,7 @@ A user with a standalone Power Apps license runs an app that uses a SQL database
 
 - Use a built-in Power Apps trigger or action, for example, to send a push notification to the app created using Power Apps.
 
+
 #### Example of Power Automate use outside of an app created using Power Apps context
 
 The same user ([in the example above](#example-of-power-automate-use-within-an-app-created-using-power-apps-context)) now also wants to use a flow that updates an Oracle database and also has the following properties. 
@@ -266,9 +267,17 @@ The same user ([in the example above](#example-of-power-automate-use-within-an-a
 
 In this example, the app created using Power Apps is being used outside the context of Power Apps so the user needs a standalone Power Automate license.
 
-Flows created to support apps built with Power Apps must run within the context of the app, meaning the flow must use the same data sources for triggers or actions as the app. Flows that are triggered from the app are automatically considered as being in context of the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the app using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app). Once the flow is linked, a dependency is established between the app and the flow and they can be managed together.  
+#### Example of Power Automate use outside of an app created using Power Apps context
+An environment has multiple apps. There are flows for data management that donot directly support the app but ensure the data quality. The user needs a standalone Power Automate license. 
+
+Flows created to support apps built with Power Apps must run within the context of the app, meaning the flow must use the same data sources for triggers or actions as the app. Flows that are triggered from the app are automatically considered as being in context of the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the app(s) using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app). Once the flow is linked, a dependency is established between the app and the flow and they can be managed together. If the linked app is deleted or unused, the flow will be turned off.
 
 If a premium flow is not in context of any app, you must purchase a standalone Power Automate license.
+
+### How can i easily determine if my flow is in context of a Power App/Dynamics app?
+
+Is the flow created to support the Power App/Dynamics app? Can the flow be deleted if the corresponding app(s) are deleted? If so, the flow is in context. 
+
 
 ## Multiplexing
 
