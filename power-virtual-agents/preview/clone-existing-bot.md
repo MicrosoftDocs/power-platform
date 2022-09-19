@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 
 # Create a preview bot from the content of an existing bot
 
-This article describes how to clone the content from an existing non-preview bot to create a new preview bot. This process lets you use a bot with familiar content to explore preview features on the unified canvas.
+This article describes how to clone the content from an existing non-preview bot to create a new preview bot. This process lets you use familiar content to explore preview features on the unified canvas.
 
 ## Eligibility
 
@@ -26,7 +26,7 @@ Whether or not your bot is eligible, you can [create a new preview bot](build-20
 
 ## Limitations
 
-When creating a preview bot and cloning content from an existing bot, any topic authored using Bot Framework Composer will be created as an empty topic, meaning none of the content or nodes within the topic are copied. However with the topic will retain the same input and output variables.
+When cloning content, any topic authored using Bot Framework Composer will be created as an empty topic, meaning none of the content or nodes within the topic are copied. However, the topic will retain the same input and output variables.
   
 Once your preview bot has been created, you will need to update those topics and add content to them.
 
