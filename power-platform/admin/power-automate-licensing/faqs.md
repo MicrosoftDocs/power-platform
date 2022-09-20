@@ -42,7 +42,7 @@ The per flow plan is intended for enterprise process automation. If a flow provi
 
 The per flow plan has the highest priority among all licenses, meaning, if a per flow license is assigned to a flow, the flow always uses this license.
 
-If the flow is used for an enterprise scenario where multiple people get value from the flow, everyone who is benefits from the flow needs a per user license or the flow  needs a per flow license.
+If the flow is used for an enterprise scenario where multiple people get value from the flow, everyone who benefits from the flow needs a per user license or the flow  needs a per flow license.
 
 If the flow doesn't have a per flow license and it's a personal automation flow, the decision about which license is used is based on how the flow gets triggered.
 
