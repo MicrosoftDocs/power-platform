@@ -30,16 +30,14 @@ This evolution brings new features, including:
 
 - Unlock the power of voice
   - [Speech authoring](advanced-custom-speech-ssml.md)
-  - [Voice font selection](advanced-speech-settings.md)
-  - [Telephony channel](publication-connect-bot-to-telephony.md)
 
 - Power FX and variable management
   - [Enhanced variable management](authoring-variables.md)
-  - [Power FX support](advanced-power-fx.md)
+  - [Power Fx support](advanced-power-fx.md)
 
 For a guided tutorial on how to use these new features, please refer to the [quickstart](quickstart.md).
 
-This public preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of public preview](limitations.md).
+This public preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of public preview](limitations.md).
 
 ## For desktop Composer users
 
