@@ -57,7 +57,7 @@ The other significant change is to your organization URL. Each of the regional d
 - United Kingdom (UK) = *.crm11.dynamics.com  
 - United Arab Emirates (UAE) = *.crm15.dynamics.com 
 
-For example, if your existing organization URL is https://myorg.crm<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be https://myorg.crm<strong>6</strong>.dynamics.com.  
+For example, if your existing organization URL is `https://myorg.crm`<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be `https://myorg.crm`<strong>6</strong>.dynamics.com.  
 
 You'll need to update any direct references to your organization URL.  
 

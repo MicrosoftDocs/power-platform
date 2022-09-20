@@ -100,7 +100,7 @@ conceptualContent:
         text: Videos
     - title: Administer and manage Microsoft Power Platform
       links:
-      - url: ./admin/admin-documentation.md
+      - url: ./admin/index.yml
         itemType: overview
         text: Admin guide      
       - url: ./admin/pricing-billing-skus.md

@@ -45,7 +45,7 @@ Watch how to use the ALM accelerator for Microsoft Power Platform.
 
 Makers and maker teams can use the ALM accelerator for Microsoft Power Platform to implement source control and deploy solutions in Microsoft Power Platform. With the ALM Accelerator for Power Platform app, makers can perform source control, enable version history, and deploy their solutions in Power Platform. The combination of Azure Pipelines and the app is what makes up the full ALM accelerator for Microsoft Power Platform.
 
-While an advanced knowledge of ALM isn't required to use the accelerator, it's important that makers understand how to use solutions in Microsoft Power Platform. To use the ALM accelerator for Microsoft Power Platform, all of your components—such as apps, flows, customizations, and other components—must be contained in a solution. To learn more about solutions, go to [Manage solutions in Power Apps and Power Automate](/learn/modules/manage-solutions-power-automate/).
+While an advanced knowledge of ALM isn't required to use the accelerator, it's important that makers understand how to use solutions in Microsoft Power Platform. To use the ALM accelerator for Microsoft Power Platform, all of your components—such as apps, flows, customizations, and other components—must be contained in a solution. To learn more about solutions, go to [Manage solutions in Power Apps and Power Automate](/training/modules/manage-solutions-power-automate/).
 
 The target users for the ALM Accelerator for Power Platform app include:
 
