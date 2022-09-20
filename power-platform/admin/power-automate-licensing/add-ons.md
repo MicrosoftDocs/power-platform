@@ -25,7 +25,7 @@ Add-ons can be added onto a standalone Power Automate license.
 
 Power Apps and Power Automate capacity add-ons increase the daily Power Platform requests limits for workloads that need more usage capacity than their allocation. These add-ons provide an additional 50,000 daily Power Platform requests per unit for $50/month. Unused Power Platform requests do not carry over from day to day. You can purchase these add-ons at anytime and they remain part of the subscription for the remainder of the subscription term.
 
-You cannot assign Power Platform requests capacity add-on packs to users or flows during the [transition period](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. 
+You cannot assign Power Platform requests capacity add-on packs to users or flows during the [transition period](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/types#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. 
 
 If Power Automate is throttling your flows, try [Pay-as-you-go](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/types#pay-as-you-go) to ensure that none of the flows in the environment are throttled. If you cannot use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
