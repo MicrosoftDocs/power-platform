@@ -86,7 +86,7 @@ For information about the programmatic interface for managing configuration and 
   
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution must be installed.  
     - Go to **Settings** > **Microsoft Appsource** > search or browse to **Microsoft Dynamics 365 - Data Export Service**, and then select **Get it now**. 
-    - Or, find it on [Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448).  
+    - Or, find it on [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365).  
   
 - The entities that will be added to the Export Profile must be enabled with change tracking. To ensure a standard or custom entity can be synchronized go to **Customization** > **Customize the System**, and then select the entity. On the **General** tab make sure the **Change Tracking** option under the **Data Services** section is enabled.  
   
@@ -382,9 +382,9 @@ The statement has been terminated.
 
 - To help improve query performance we recommend the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database max degree of parallelism (MAXDOP) be set to 1. More information: [MSDN: Server Memory Options](/sql/database-engine/configure-windows/server-memory-server-configuration-options)
 
-- Frequently assess the amount of fragmentation, and when necessary, rebuild the indexes in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Reorganize and Rebuild Indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-2017)
+- Frequently assess the amount of fragmentation, and when necessary, rebuild the indexes in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Reorganize and Rebuild Indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes)
 
-- Periodically update database statistics on tables and indexed views in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Update Statistics](/sql/relational-databases/statistics/update-statistics?view=sql-server-2017) 
+- Periodically update database statistics on tables and indexed views in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Update Statistics](/sql/relational-databases/statistics/update-statistics) 
 
 - Monitor the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database's utilization. More information: [Perf monitoring](/azure/sql-database/sql-database-single-database-monitor)
 
