@@ -81,6 +81,6 @@ The cookie IP binding feature is disabled by default. Administrators must enable
 
 ### See also
 
-[Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/)
+[Get started with security roles in Dataverse](/training/modules/get-started-security-roles/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
