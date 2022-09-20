@@ -48,7 +48,9 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
 1. In the side pane select **Create**, or select **Home** and select **Create a bot**.
 
-<<<Insert>>>>>>
+There are two options to create bots. Use 'Build for production' to create bots that are intended to get deployed to your customers. Use 'Try the unified canvas (preview)' to try the new authoring features in preview. These preview bots are supported in English only and are not recommended for deploying for customer use. If you select 'Build for production', the steps below guide you to continue creating your bot. For preview bots, follow the steps here to continue creating your bot <<<<<INSERT LINK TO PUBLIC PREVIEW DOCS FOR BOT CREATION>>>>
+
+  <<<<INCLUDE SCREENSHOT OF CREATE PAGE WITH THE TWO TILES>>>>
 
 1. Choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
