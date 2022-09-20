@@ -71,13 +71,13 @@ A separate limit is established for certain activities(for example: A background
 - [Application users](create-users.md#create-an-application-user)
 - [Non-interactive users](create-users.md#create-a-non-interactive-user-account)
 - [Administrative users](create-users.md#create-an-administrative-user-account)
-- [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
+- [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser#operations)
 
 Additionally, there are special free ($0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#user-and-portal-licensing) for more details.
 
 For these non-licensed identities, every tenant will get an initial base request limit per tenant determined by what paid licenses are on the tenant, plus accrued limits determined by the quantity of paid Dynamics 365 Enterprise and Professional licenses.<sup>1</sup> This pool can only be used by these non-licensed users and not by users with assigned interactive user licenses.
 
-| Products                                                    | Pooled non-licensed tenant-level requests per 24 hours                              |
+| Products                                                        | Pooled non-licensed tenant-level requests per 24 hours                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | Dynamics 365 Enterprise & Professional applications<sup>1</sup> | 500,000 base requests + 5,000 requests accrued per USL<sup>1</sup> up to 10,000,000 max<sup>2</sup> |
 | Power Apps (all licenses)                                       | 25,000 base requests with no per-license accrual for the tenant                         |
