@@ -17,6 +17,8 @@ This quickstart walks you through making a bot that uses new features and improv
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]
+
+<<<<This video is outdated now since we have a Create page and some screens have also updated. This seems like one we recorded ourselves, so we should update to record a new one >>>
 >
 
 ## Prerequisites
@@ -25,16 +27,13 @@ This quickstart walks you through making a bot that uses new features and improv
 
 ## Create a bot
 
-Power Virtual Agents now has an app-level home page that isn't specific to any bot. On this page you can create a new bot and view a list of bots that you've previously created.
+Power Virtual Agents now has an app-level home page that isn't specific to any bot. On this page you can create a new bot, view a list of recent bots that you've accessed, and learning resources like videos, documentation resources, and learning paths.
 
 :::image type="content" source="media/quickstart/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
-> [!TIP]
-> To navigate back to the home page from a bot, select **Power Virtual Agents** in the top menu bar.
->
-> :::image type="content" source="media/quickstart/go-home.png" alt-text="Screenshot of Power Virtual Agents top menu bar.":::
+1. In the side navigation, select **Create**, or select **Home** and then select **Create a bot**.\
 
-1. In the side navigation, select **Create**, or select **Home** and then select **Create a bot**.
+2. Select 'Try the unified canvas (preview)' to create a preview bot. 
 
 1. Name the bot `Reservation Bot` and select **Create**.
 
@@ -122,8 +121,6 @@ The **End of conversation** topic is a pre-built topic designed to check if the 
 1. Name the topic **Reservation** and select **Save**.
 
 ## Next steps
-
-1. To allow users to call your bot, you need to [enable and configure the Telephony channel](publication-connect-bot-to-telephony.md).
 
 1. Optionally, [customize your bot's voice font](advanced-speech-settings.md).
 
