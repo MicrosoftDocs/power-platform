@@ -21,7 +21,8 @@ Use Email settings to adjust how customer engagement apps (Dynamics 365 Sales, D
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email Tracking**.
 
-[!TIP] In addition to the settings mentioned below, there are more settings available to control email tracking behavior. For more information, see [OrgDBOrgSettings for server-side synchronization](OrgDbOrgSettings.md).
+> [!TIP]
+> In addition to the settings mentioned below, there are more settings available to control synchronization behavior. For more information, see [OrgDBOrgSettings for server-side synchronization](OrgDbOrgSettings.md).
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
 
