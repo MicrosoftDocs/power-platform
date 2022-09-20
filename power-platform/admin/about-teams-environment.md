@@ -326,7 +326,7 @@ Follow these steps to apply a DLP policy:
 [Power Automate and Teams](/power-automate/teams/overview)<br/>
 [Power Virtual Agents and Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)<br />
 [Manage your apps in the Microsoft Teams admin center](/MicrosoftTeams/manage-apps) <br />
-[Get started with Microsoft Dataverse for Teams](/learn/modules/get-started-dataverse-teams/)
+[Get started with Microsoft Dataverse for Teams](/training/modules/get-started-dataverse-teams/)
 
 
 
