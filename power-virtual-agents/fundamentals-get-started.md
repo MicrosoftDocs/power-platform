@@ -46,16 +46,25 @@ In addition to this guide, you can also [download and use templates to help you 
 
 1. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts are currently not supported.
 
-1. Power Virtual Agents has an app-level home page that is not specific to any bot. On this page you can create a new bot and view a list of bots that you've previously created.
+1. Power Virtual Agents has an app-level home page that is not specific to any bot. On this page you can create a new bot, view the recent bots you have accessed, and access learning resources like Videos, Documentation, and Learning Paths. You can also switch to a different environment using the environment picker dropdown in the header in the top right of the page.
 
     :::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
+    
+    <<<< update this image to show the header with the environment picker dropdown >>>>
 
     > [!TIP]
-    > To navigate back to the home page from a bot, select **Chatbots** in the side pane.
+    > Use the **Chatbots** page in the side pane to view all the bots you have access to in this environment. Here you can see metadata about these bots, including the Owner of the bot, when it was last published, and the last modified information. Use this page to navigate to another bot that you have access to.
+    > 
     >
     > :::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Chatbots button in the side pane.":::
 
+<<< I recommend updating this image to show the Chatbots link in the app level context since you are in the app level right now. >>>>
+
 1. In the side navigation select **Create**, or select **Home** and select **Create a bot**.
+
+There are two options to create bots. Use 'Build for production' to create bots that are intended to get deployed to your customers. Use 'Try the unified canvas (preview)' to try the new authoring features in preview. These preview bots are supported in English only and are not recommended for deploying for customer use. If you select 'Build for production', the steps below guide you to continue creating your bot. For preview bots, follow the steps here to continue creating your bot <<<<<INSET LINK TO PUBLIC PREVIEW DOCS FOR BOT CREATION>>>>
+  
+  <<<<INCLUDE SCREENSHOT OF CREATE PAGE WITH THE TWO TILES>>>>
 
 1. Choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
@@ -66,6 +75,8 @@ In addition to this guide, you can also [download and use templates to help you 
    > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
    :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
+  
+  <<<<< THIS SCREENSHOT IS OUTDATED IT SEEMS...its missing the language picker.. please grab latest screen >>>>
 
 1. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
 
