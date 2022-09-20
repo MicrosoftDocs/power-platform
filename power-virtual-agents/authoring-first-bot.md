@@ -42,11 +42,13 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 > [!NOTE]
 > If this is your first time creating a bot in Power Virtual Agents, please see [Create your first bot](fundamentals-get-started.md)
 
-1. Select **Chatbots** in the side pane to navigate back to the home page.
+1. Select **Chatbots** in the side pane to navigate back to the list of chatbots you have access to.
 
     :::image type="content" source="media/authoring-first-bot/go-home.png" alt-text="Screenshot of Chatbots option in the side pane." border="false":::
 
 1. In the side pane select **Create**, or select **Home** and select **Create a bot**.
+
+<<<Insert>>>>>>
 
 1. Choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
@@ -58,11 +60,11 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
 You can delete bots to remove them from your environment.
 
-1. Select **Chatbots** in the side pane to navigate back to the home page.
+1. Select **Chatbots** in the side pane to navigate back to the list of bots you have access to.
 
     :::image type="content" source="media/authoring-first-bot/go-home.png" alt-text="Screenshot of Chatbots button in the side pane." border="false":::
 
-1. In the side pane, select **Chatbots**. Select the bot you want to delete, then select **Delete**.
+1. Select the bot you want to delete, then select **Delete**.
 
     :::image type="content" source="media/authoring-first-bot/delete-bot.png" alt-text="General settings." border="false":::
 
@@ -80,11 +82,5 @@ In this case, you see this error: "You do not have permissions to any environmen
 
 You will need to [create a new environment](environments-first-run-experience.md). Use that environment to create your bot.
 
-### The environment I created does not show up in the drop-down menu of Power Virtual Agents
-
-Your environment might not show up in the drop-down menu due to one of the following:
-
-- The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
-- The environment is created in an unsupported region. Learn more about [supported data locations](data-location.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
