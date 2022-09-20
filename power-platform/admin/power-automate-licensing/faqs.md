@@ -4,7 +4,7 @@ description: "Frequently asked questions about Power Automate licensing."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 09/07/2022
+ms.date: 09/20/2022
 ms.author: prkoduku
 ms.reviewer: MSFTMan
 search.audienceType: 
@@ -32,7 +32,7 @@ The standard user license plan for Power Automate is the Power Automate per user
 
 ### When should I choose Power Automate "per flow" versus "per user"?
 
-Microsoft's recommendation is that almost all organizations in almost all situations is to buy the per user with attended Robotic Process Automation (RPA) license for every user in their organization. Optionally, purchase the unattended bot add-on for every machine that will be running unattended automation. 
+Microsoft recommends that most organizations buy the per user with attended Robotic Process Automation (RPA) license for every user in their organization. Optionally, purchase the unattended bot add-on for every machine that runs unattended automation. 
 
 The per user plan is intended for personal automation to support the broad adoption of an automation culture in an organization.
 
