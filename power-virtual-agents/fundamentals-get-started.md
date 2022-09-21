@@ -52,6 +52,9 @@ Select **Chatbots** in the side pane to open the **Chatbots** page and view all 
 
 ## Choose a bot type
 
+> [!IMPORTANT]
+> In this section, you'll make a choice on the type of bot you want to create. This decision will affect which documentation you'll follow next.
+
 1. Go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA). Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
 1. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts are currently not supported.
@@ -66,18 +69,13 @@ Select **Chatbots** in the side pane to open the **Chatbots** page and view all 
 
 1. In the side navigation select **Create**. You can also select **Home** then select **Create a bot**.
 
-1. There are two types of bots that you can create:
+1. Choose one of the following options:
 
     :::image type="content" source="media/fundamentals-get-started/create-bot-tiles.png" alt-text="Screenshot of the two chat bot creation options.":::
 
-    - Use **Build for production** to create production bots that are intended to be deployed to your customers.
+    - Use **Build for production** to create production bots that are intended to be deployed to your customers. If you choose this option, continue to [Create a bot](#create-a-bot).
 
-    - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use.
-
-> [!div class="nextstepaction"]
-> [I chose a production bot](#create-a-bot)
-> [!div class="nextstepaction"]
-> [I chose a preview bot](preview/quickstart.md)
+    - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use. If you choose this option, refer to the [quickstart for preview bots](preview/quickstart.md) to continue creating your bot.
 
 ## Create a bot
 
