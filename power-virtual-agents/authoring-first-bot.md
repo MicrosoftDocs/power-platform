@@ -85,5 +85,4 @@ In this case, you see this error: "You do not have permissions to any environmen
 
 You will need to [create a new environment](environments-first-run-experience.md). Use that environment to create your bot.
 
-
 [!INCLUDE[footer-include](includes/footer-banner.md)]

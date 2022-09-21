@@ -58,7 +58,7 @@ Use the **Chatbots** page in the side pane to view all the bots you have access 
 
 1. When you first sign up, a default [Power Apps environment](environments-first-run-experience.md) is made for you. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment, select a different environment from the environment picker.
 
-    :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the two chat bot creation options.":::
+    :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the environment picker.":::
 
     > [!NOTE]
     > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
@@ -75,10 +75,9 @@ Use the **Chatbots** page in the side pane to view all the bots you have access 
     - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use.
 
 > [!div class="nextstepaction"]
-> [I choose a production bot](#create-a-bot)
-
+> [I chose a production bot](#create-a-bot)
 > [!div class="nextstepaction"]
-> [I choose a preview bot](preview/quickstart.md)
+> [I chose a preview bot](preview/quickstart.md)
 
 ## Create a bot
 

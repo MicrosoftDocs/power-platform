@@ -76,7 +76,6 @@ Tabular file types require a _two-column format_ where each row represents a que
 
 When using Microsoft Excel files, only the first sheet is imported.
 
-    :::image type="content" source="../media/advanced-create-topics-from-web/suggested-web-get-teams.png" alt-text="An empty Topics page, with a link to Get started or Learn more.":::
 You can enter more than one question (separated by new lines) in a first-column cell and they'll all be added as trigger phrases to the topic suggestion.
 
 :::image type="content" source="../media/advanced-create-topics-from-web/multiple-triggers-excel.png" alt-text="Screenshot of an Excel spreadsheet with multiple questions in one cell.":::
