@@ -22,7 +22,7 @@ This public preview currently doesn't support some of the existing features you'
 > [!IMPORTANT]
 > These are the current limitations as of 5/17/2022.
 
-- Bots can't be deleted.
+- Preview bots are only available in English.
 - When sharing a bot, any Power Automate flows used in the conversation logic will not be shared. You'll have to manually share those flows if desired.  
 - [Message variations](authoring-create-edit-topics.md#message-variations) do not vary in a single conversation. You'll only see differences between different conversations.
 - The **Track between topics** toggle in the [test bot pane](authoring-test-bot.md) doesn't work.
@@ -31,11 +31,10 @@ This public preview currently doesn't support some of the existing features you'
 - Global variables that are configured to persist across sessions will not work for all channels and are specifically not supported for the [Telephony channel](publication-connect-bot-to-telephony.md).
 - Default values in multiple-choice questions don't work.
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
-- The Power Virtual Agents preview is available in English only.
+
 
 ## Upcoming releases
 
-- Custom entities
 - Skills
 - Security options for your bot
 - Channels (including Teams and Facebook Messenger)
