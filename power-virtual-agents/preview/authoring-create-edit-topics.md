@@ -15,7 +15,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Create and edit topics in your Power Virtual Agents bot
+# Create and edit topics in your Power Virtual Agents bot (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

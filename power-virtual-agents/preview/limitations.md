@@ -11,7 +11,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Limitations of public preview
+# Limitations of public preview (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

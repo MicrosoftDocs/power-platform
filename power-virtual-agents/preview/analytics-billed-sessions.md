@@ -11,7 +11,7 @@ ms.custom: "analysis, licensing, ceX"
 ms.collection: virtual-agent
 ---
 
-# View billed sessions for Power Virtual Agents
+# View billed sessions for Power Virtual Agents (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

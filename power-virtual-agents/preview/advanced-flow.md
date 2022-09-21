@@ -12,7 +12,7 @@ ms.custom: flow, ceX, advanced-authoring
 ms.collection: virtual-agent
 ---
 
-# Add actions to a bot using Power Automate
+# Add actions to a bot using Power Automate (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

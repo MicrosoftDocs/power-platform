@@ -11,7 +11,7 @@ ms.custom: "customization, ce06102020"
 ms.collection: virtual-agent
 ---
 
-# Customize the look and feel of your bot
+# Customize the look and feel of your bot (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

@@ -10,7 +10,7 @@ manager: shellyha
 ms.collection: virtual-agent
 ---
 
-# Create a preview bot from the content of an existing bot
+# Create a preview bot from the content of an existing bot (Preview)
 
 This article describes how to clone the content from an existing non-preview bot to create a new preview bot. This process lets you use familiar content to explore preview features on the unified canvas.
 

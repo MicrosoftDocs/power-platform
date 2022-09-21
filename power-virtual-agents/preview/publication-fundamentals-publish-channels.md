@@ -11,7 +11,7 @@ ms.custom: "publication, fundamentals, ceX"
 ms.collection: virtual-agent
 ---
 
-# Publish your bot
+# Publish your bot (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
