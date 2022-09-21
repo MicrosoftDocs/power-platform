@@ -3,7 +3,7 @@ title: "Best practices for server-side synchronization  | MicrosoftDocs"
 description: Consider the best practices outlined in this topic when you plan and deploy server-side synchronization.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/12/2021
+ms.date: 09/21/2022
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
@@ -20,8 +20,8 @@ search.app:
 
 Consider the best practices outlined in this topic when you plan and deploy server-side synchronization.
 
->[!NOTE]
->To make the settings described in the following sections, go to  **Settings** > **Email Configuration** > **Email Server Profiles**.
+> [!NOTE]
+> To make the settings described in the following sections, go to  **Settings** > **Email Configuration** > **Email Server Profiles**.
 
 ## Configure server-side synchronization for customer engagement apps and Exchange Online  
 
@@ -80,12 +80,13 @@ Make the following settings for each user mailbox.
 - Using individual credentials to process emails will accumulate against the number of *MaximumConcurrentConnections*. This method is generally recommended for a small number of mailboxes. 
 - Using individual credentials or one set of credentials is subject to password expiration policies. Passwords need to be updated on the mailbox or email server profile when a password is changed.
 - The **Process Emails from** date on the email server profile applies to all mailboxes associated with that profile. If you need to set a different **Process Emails from** date on a subset of mailboxes, we recommend that you use a separate email server profile or set the **Process Email Received After** column on the mailbox to the date you want. 
->[!NOTE]
->When a mailbox is synchronized for the first time, server side synchronization will use the Process Emails From date on the Email Server Profile to determine how far back emails should be synchronized relative to the Received On date for the emails in the Exchange mailbox. The last email processed in any synchronization cycle will be used to set the Process Emails From date on the mailbox record. Subsequent synchronization cycles will then reference the Process Emails From date on the mailbox to control how far back server side synchronization will search for emails. 
+
+> [!NOTE]
+> When a mailbox is synchronized for the first time, server-side synchronization will use the Process Emails From date on the email server profile to determine how far back emails should be synchronized relative to the Received On date for the emails in the Exchange mailbox. The last email processed in any synchronization cycle will be used to set the Process Emails From date on the mailbox record. Subsequent synchronization cycles will then reference the Process Emails From date on the mailbox to control how far back server side synchronization will search for emails. 
 >
->There may be times when you need to set the Process Emails From date on the mailbox entity to a previous date in order to reprocess emails. One such example may be to account for emails which were synchronized but then accidentally deleted from Dynamics 365. Another example is if an email was not within the Inbox folder when the mailbox was processed. Moving the email back into the Inbox folder after it was already processed will not result in that email being processed because the Process Emails From date on the mailbox would likely be later than the Received On date of the email. In this case, the Process Emails From attribute can be added to the Mailbox form and updated to a value to reflect the time period from which you need to reprocess emails. 
+> There may be times when you need to set the Process Emails From date on the mailbox table to a previous date in order to reprocess emails. One such example may be to account for emails which were synchronized but then accidentally deleted from Dynamics 365. Another example is if an email wasn't within the Inbox folder when the mailbox was processed. Moving the email back into the Inbox folder after it was already processed won't result in that email being processed because the Process Emails From date on the mailbox would likely be later than the Received On date of the email. In this case, the Process Emails From attribute can be added to the Mailbox form and updated to a value to reflect the time period from which you need to reprocess emails. 
 >
->Please note that server side synchronization will always utilize the greater value between the Process Emails From date on the email server profile and the mailbox record.
+> Note that server-side synchronization will always utilize the greater value between the Process Emails From date on the email server profile and the mailbox record.
 
   
 ### See also
