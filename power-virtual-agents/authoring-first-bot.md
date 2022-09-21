@@ -42,7 +42,7 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 > [!NOTE]
 > If this is your first time creating a bot in Power Virtual Agents, please see [Create your first bot](fundamentals-get-started.md)
 
-1. Navigate to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/).
+1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/).
 
 1. In the side pane select **Create**, or select **Home** and select **Create a bot**.
 
@@ -65,7 +65,7 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
 You can delete bots to remove them from your environment.
 
-1. Navigate to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/).
+1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/).
 
 1. In the side pane, select **Chatbots**. Select the bot you want to delete, then select **Delete**.
 

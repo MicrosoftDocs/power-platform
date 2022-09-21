@@ -42,11 +42,11 @@ In addition to this guide, you can also [download and use templates to help you 
 
 ## Explore the home page
 
-Power Virtual Agents has an app-level home page that isn't specific to any bot. On this page you can create a new bot, view recent bots, and access learning resources like videos, documentation, and learning paths. You can also switch to a different environment using the environment picker dropdown in the header in the top right of the page.
+Power Virtual Agents has an app-level home page that isn't specific to any bot. On this page you can create a new bot, view recent bots, and access learning resources like videos, documentation, and learning paths.
 
 :::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
-Use the **Chatbots** page in the side pane to view all the bots you have access to in this environment. Here you can see metadata about these bots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another bot that you have access to.
+Select **Chatbots** in the side pane to open the **Chatbots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these bots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another bot that you have access to.
 
 :::image type="content" source="media/fundamentals-get-started/chatbot-list.png" alt-text="Screenshot of the list of chatbots.":::
 
@@ -89,7 +89,7 @@ Use the **Chatbots** page in the side pane to view all the bots you have access 
 
 1. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
 
-1. After a few minutes, you'll land on the bot overview page. You'll see a banner at the top of the Power Virtual Agents portal indicating that the bot is still being built. You can't save any edits during this time, but you can:
+1. After a few minutes, you'll be redirected to the bot's overview page. You'll see a banner at the top of the Power Virtual Agents portal indicating that the bot is still being built. While your bot is building, you can't save any edits during this time, but you can:
     - explore the overall user interface
     - look at topics
     - experiment with the preloaded user topics and system topics
