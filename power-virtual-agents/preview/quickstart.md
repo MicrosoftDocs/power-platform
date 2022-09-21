@@ -31,13 +31,19 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 :::image type="content" source="media/quickstart/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
-1. In the side navigation, select **Create**, or select **Home** and then select **Create a bot**.\
+1. In the side navigation, select **Create**, or select **Home** and then select **Create a bot**.
 
 2. Select 'Try the unified canvas (preview)' to create a preview bot. 
+
+3. A preview opt-in modal will be shown the first time you attempt to create or view a preview bot. Click **Continue*** to continue the preview bot action or cancel if you change your mind.
+
+<<<<< ADD IMAGE OF PREVIEW OPT-IN MODAL >>>
 
 1. Name the bot `Reservation Bot` and select **Create**.
 
 :::image type="content" source="media/quickstart/new-bot2.png" alt-text="Screenshot of the create a chatbot dialog.":::
+
+<< IMAGE NEEDS UPDATE to the latest image with (preview) in the title.
 
 > [!IMPORTANT]
 > Bots can only be created in English in the public preview.
