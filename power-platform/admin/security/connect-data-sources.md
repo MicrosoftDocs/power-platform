@@ -33,8 +33,8 @@ Let's look first at how Power Platform services connect with data sources. Power
 
 Power Apps canvas and model-driven apps connect directly to Dataverse without the need for a separate connector. (Canvas apps store consent to work with other environments in the Power Apps Resource Provider (RP).) Power Automate authenticates using an API Hub, but all data interactions after that are direct to Dataverse. Both Power Apps and Power Automate support legacy connectors that access Dataverse using connectors (for example, [Dynamics 365 (deprecated)](/connectors/dynamicscrmonline/) and [Microsoft Dataverse (legacy)](/connectors/commondataservice/)).
 
->[!NOTE]
->Creating canvas apps with [Start from data](/powerapps/maker/canvas-apps/data-platform-create-app) uses a placeholder connector icon to connect to Dataverse. However, no actual connector is involved. For more information, see [Connect canvas apps to Microsoft Dataverse](/powerapps/maker/canvas-apps/connections/connection-common-data-service).
+> [!NOTE]
+> Creating canvas apps with [Start from data](/powerapps/maker/canvas-apps/data-platform-create-app) uses a placeholder connector icon to connect to Dataverse. However, no actual connector is involved. For more information, see [Connect canvas apps to Microsoft Dataverse](/powerapps/maker/canvas-apps/connections/connection-common-data-service).
 
 The following diagram illustrates how canvas apps work with Dataverse.
 
@@ -56,8 +56,8 @@ In general, Power Platform services use connectors to work with external data so
 1. The consent service returns credentials to the API Management connector.
 1. The API Management connector sends the consent credentials to the Power Apps RP. The credentials are stored in the RP so that Power Apps doesn't prompt for consent again the next time data is requested.
 
-    >[!NOTE]
-    >Consent for one application connection doesn't give consent for all applications. Each application connection consent per user is separate. For instance, when you provide a connection for use in a Power Automate flow, you consent for the flow to use that connection going forward. You don't need to consent again to reuse that connection in that flow. For a connection provided by a flow author, the consent double is (connection and flow). For a connection provided by a user invoking a flow (for example, from a canvas app), the consent triple is (connection, flow, and user).
+    > [!NOTE]
+    > Consent for one application connection doesn't give consent for all applications. Each application connection consent per user is separate. For instance, when you provide a connection for use in a Power Automate flow, you consent for the flow to use that connection going forward. You don't need to consent again to reuse that connection in that flow. For a connection provided by a flow author, the consent double is (connection and flow). For a connection provided by a user invoking a flow (for example, from a canvas app), the consent triple is (connection, flow, and user).
 
 1. The API Management connector passes the data query to the external connector.
 1. The connector sends the query to the data source.

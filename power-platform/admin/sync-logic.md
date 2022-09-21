@@ -233,10 +233,10 @@ On the **Synchronization** tab in Dynamics 365 for Outlook, select one of the fo
 
 - **Synchronize all three addresses (Business, Home, Other) in Outlook contact:** All three Outlook mailing addresses (Business, Home, and Other) are synced between Dynamics 365 and Outlook.
 
->[!WARNING]
->If you have existing data, changing the setting to sync all three addresses can cause data loss. Attributes of existing tracked contacts are remapped when this setting is enabled. We recommend that you test this option before deployment to understand how the remapping affects your environment and your data. In most cases, you should have the full data on one side (normally Dynamics 365) and sync to the other side (normally Outlook or Exchange).  
+> [!WARNING]
+> If you have existing data, changing the setting to sync all three addresses can cause data loss. Attributes of existing tracked contacts are remapped when this setting is enabled. We recommend that you test this option before deployment to understand how the remapping affects your environment and your data. In most cases, you should have the full data on one side (normally Dynamics 365) and sync to the other side (normally Outlook or Exchange).  
 >
->For more information, see [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized)
+> For more information, see [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized)
   
 #### Syncing tasks that are assigned in Outlook
   
