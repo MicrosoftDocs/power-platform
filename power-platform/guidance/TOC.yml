@@ -412,5 +412,8 @@
           href: expressroute/setup.md
         - name: ExpressRoute readiness checklist
           href: expressroute/checklist.md
-    - name: Icons
-      href: icons.md
+    - name: Resources
+      expanded: true
+      items:
+        - name: Icons
+          href: icons.md
