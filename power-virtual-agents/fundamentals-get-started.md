@@ -53,7 +53,7 @@ Select **Chatbots** in the side pane to open the **Chatbots** page and view all 
 ## Choose a bot type
 
 > [!IMPORTANT]
-> In this section, you'll make a choice on the type of bot you want to create. This decision will affect which documentation you'll follow next.
+> In this section, you'll make a choice on the type of bot you want to create. This decision affects which documentation to follow next.
 
 1. Go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA). Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
