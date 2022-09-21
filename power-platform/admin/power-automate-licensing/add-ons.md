@@ -35,8 +35,8 @@ When running unattended, Power Automate securely signs into the device on your b
 
 The Power Automate unattended RPA add-on extends desktop-based automation by enabling a bot to run autonomously (independent of a user). Unattended bots can be deployed on a local or remote desktop, or in a virtualized environment. The Power Automate per user with attended RPA or Power Automate per flow plans are the eligible standalone offers for the unattended RPA add-on.
 
->[!NOTE]
->The Power Automate unattended RPA add-on is licensed by a bot. Concurrent instances of a singular process require an additional unattended bot for each instance. Multiple unattended RPA add-ons can be applied against a qualifying base license.
+> [!NOTE]
+> The Power Automate unattended RPA add-on is licensed by a bot. Concurrent instances of a singular process require an additional unattended bot for each instance. Multiple unattended RPA add-ons can be applied against a qualifying base license.
 
 Here are a few important notes of which you should be aware regarding the unattended add-on.
 
@@ -63,7 +63,7 @@ AI Builder is licensed as an add-on to standalone Power Apps and Power Automate 
 
 Each unit of "AI Builder capacity add-on" includes 1 million service credits per month. For example, a customer who requires 4.7 million service credits per month (based on anticipated usage), should purchase 5 units of "AI Builder capacity add-on".
 
->[!NOTE]
+> [!NOTE]
 >
 > - Purchased service credits can be used from AI Builder models included within Power Automate, Power Apps, and Dynamics 365 applications.
 > - Service credits are deducted / consumed for both training and production usage

@@ -283,8 +283,8 @@ For customers with extremely high scale scenarios who need to exceed these limit
 
 ![An image that displays an overview of pay as you go](../media/power-automate-licensing/pay-as-you-go.png)
 
->[!NOTE]
->If you link an environment to an Azure subscription, this meter will not be reported or billed. Reporting and billing will be turned on by the end of calendar year 2021.
+> [!NOTE]
+> If you link an environment to an Azure subscription, this meter will not be reported or billed. Reporting and billing will be turned on by the end of calendar year 2021.
 
 ### FAQs about request limits
 
@@ -294,8 +294,8 @@ You can consult this [requests limits frequently asked questions](../api-request
 
 If you sign in with work or school email address, you get all [Power Automate capabilities included in Office 365](faqs.md). But if you have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate with the free plan. Go to [Power Automate](https://flow.microsoft.com/) and then select **Try free**.
 
->[!NOTE]
->You cannot share flows when you use the free plan.
+> [!NOTE]
+> You cannot share flows when you use the free plan.
 
 To know which users have the free plan, admins can go to the [O365 Admin portal](https://admin.microsoft.com/), sign in, select **Billing** > **Licenses** to see how many free licenses are assigned vs available.
 
@@ -334,8 +334,8 @@ Follow these steps to get started.
 After the free trial starts, go to **Billing** > **Licenses** to see the 25 new licenses available for you to assign to users.
 
 <!--todo this isn't clear, PM will update in github-->
->[!NOTE]
->Trials are different from free licenses. Once you start a trial, the sku name might not say Trial.
+> [!NOTE]
+> Trials are different from free licenses. Once you start a trial, the sku name might not say Trial.
 
 ![View trial licenses](../media/power-automate-licensing/trial-licenses.png)
 
