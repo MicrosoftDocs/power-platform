@@ -42,19 +42,22 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 > [!NOTE]
 > If this is your first time creating a bot in Power Virtual Agents, please see [Create your first bot](fundamentals-get-started.md)
 
-1. Select **Chatbots** in the side pane to navigate back to the list of chatbots you have access to.
-
-    :::image type="content" source="media/authoring-first-bot/go-home.png" alt-text="Screenshot of Chatbots option in the side pane." border="false":::
+1. Navigate to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/).
 
 1. In the side pane select **Create**, or select **Home** and select **Create a bot**.
 
-There are two options to create bots. Use 'Build for production' to create bots that are intended to get deployed to your customers. Use 'Try the unified canvas (preview)' to try the new authoring features in preview. These preview bots are supported in English only and are not recommended for deploying for customer use. If you select 'Build for production', the steps below guide you to continue creating your bot. For preview bots, follow the steps here to continue creating your bot <<<<<INSERT LINK TO PUBLIC PREVIEW DOCS FOR BOT CREATION>>>>
+1. Choose the type of bot you want to create:
 
-  <<<<INCLUDE SCREENSHOT OF CREATE PAGE WITH THE TWO TILES>>>>
+    - Use **Build for production** to create production bots that are intended to be deployed to your customers.
 
-1. Choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
+    - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use.
 
-    :::image type="content" source="media/authoring-first-bot/create-new-bot-screen.png" alt-text="Screen shot of new bot dialog." border="false":::
+    > [!IMPORTANT]
+    > If you choose to create a preview bot, please refer to the [preview documentation](preview/overview.md).
+
+1. For **Name your bot**, enter a name for your bot.
+
+1. For **What language will your bot speak**, select the language you want your bot to speak.
 
 1. Select **Create**.
 
@@ -62,11 +65,9 @@ There are two options to create bots. Use 'Build for production' to create bots 
 
 You can delete bots to remove them from your environment.
 
-1. Select **Chatbots** in the side pane to navigate back to the list of bots you have access to.
+1. Navigate to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/).
 
-    :::image type="content" source="media/authoring-first-bot/go-home.png" alt-text="Screenshot of Chatbots button in the side pane." border="false":::
-
-1. Select the bot you want to delete, then select **Delete**.
+1. In the side pane, select **Chatbots**. Select the bot you want to delete, then select **Delete**.
 
     :::image type="content" source="media/authoring-first-bot/delete-bot.png" alt-text="General settings." border="false":::
 
