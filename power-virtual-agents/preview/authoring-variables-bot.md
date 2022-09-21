@@ -12,7 +12,7 @@ ms.custom: authoring, ce06122020
 ms.collection: virtual-agent
 ---
 
-# Reuse variables across topics
+# Reuse variables across topics (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

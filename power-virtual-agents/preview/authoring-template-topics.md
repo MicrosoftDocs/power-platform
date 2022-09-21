@@ -12,7 +12,7 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Use sample topics in Power Virtual Agents
+# Use sample topics in Power Virtual Agents (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

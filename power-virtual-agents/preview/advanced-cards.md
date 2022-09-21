@@ -13,7 +13,7 @@ ms.custom: authoring, topics, variables, ceX
 ms.collection: virtual-agent
 ---
 
-# Add multimedia cards to messages
+# Add multimedia cards to messages (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

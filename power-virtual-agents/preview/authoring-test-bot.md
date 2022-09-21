@@ -12,7 +12,7 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Test your Power Virtual Agents bot
+# Test your Power Virtual Agents bot (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

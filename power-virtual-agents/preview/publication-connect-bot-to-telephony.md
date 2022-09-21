@@ -11,7 +11,7 @@ ms.custom: "publication, ceX"
 ms.collection: virtual-agent
 ---
 
-# Connect your bot to Telephony
+# Connect your bot to Telephony (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

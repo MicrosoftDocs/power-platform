@@ -10,7 +10,7 @@ ms.reviewer: clmori
 manager: shellyha
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
-# Troubleshoot error codes
+# Troubleshoot error codes (Preview)
 
 When a bot encounters a problem during a conversation, it will send an error response.
 

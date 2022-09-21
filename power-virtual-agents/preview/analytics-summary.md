@@ -11,7 +11,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Summarize your bot's performance and usage
+# Summarize your bot's performance and usage (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

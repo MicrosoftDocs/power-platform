@@ -12,7 +12,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Analyze your bot's customer satisfaction metrics
+# Analyze your bot's customer satisfaction metrics (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

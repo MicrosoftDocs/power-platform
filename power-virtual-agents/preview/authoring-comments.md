@@ -15,7 +15,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Add comments to bots (Preview)
+# Add comments to bots (Preview) (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

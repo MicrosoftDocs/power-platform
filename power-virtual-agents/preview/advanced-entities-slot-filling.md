@@ -12,7 +12,7 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Use entities and slot filling in Power Virtual Agents bots
+# Use entities and slot filling in Power Virtual Agents bots (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
