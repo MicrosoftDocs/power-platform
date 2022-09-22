@@ -17,8 +17,6 @@ This quickstart walks you through making a bot that uses new features and improv
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]
-
-<<<<This video is outdated now since we have a Create page and some screens have also updated. This seems like one we recorded ourselves, so we should update to record a new one >>>
 >
 
 ## Prerequisites
@@ -33,17 +31,15 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. In the side navigation, select **Create**, or select **Home** and then select **Create a bot**.
 
-2. Select 'Try the unified canvas (preview)' to create a preview bot. 
+1. Select **Try the unified canvas (preview)** to create a preview bot.
 
-3. A preview opt-in modal will be shown the first time you attempt to create or view a preview bot. Click **Continue*** to continue the preview bot action or cancel if you change your mind.
+1. An opt-in confirmation will be shown the first time you attempt to create or view a preview bot. Select **Continue** to continue, or select **No thanks** if you change your mind.
 
-<<<<< ADD IMAGE OF PREVIEW OPT-IN MODAL >>>
+    :::image type="content" source="media/quickstart/preview-opt-in.png" alt-text="Screenshot of the preview opt-in message.":::
 
 1. Name the bot `Reservation Bot` and select **Create**.
 
-:::image type="content" source="media/quickstart/new-bot2.png" alt-text="Screenshot of the create a chatbot dialog.":::
-
-<< IMAGE NEEDS UPDATE to the latest image with (preview) in the title.
+    :::image type="content" source="media/quickstart/new-bot2.png" alt-text="Screenshot of the create a chatbot dialog.":::
 
 > [!IMPORTANT]
 > Bots can only be created in English in the public preview.

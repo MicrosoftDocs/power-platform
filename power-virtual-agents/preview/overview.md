@@ -27,8 +27,6 @@ This evolution brings new features, including:
   - [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
   - [Bot response variations](authoring-create-edit-topics.md#message-variations)
   - [Quick replies](authoring-create-edit-topics.md#quick-replies)
-
-- Unlock the power of voice
   - [Speech authoring](advanced-custom-speech-ssml.md)
 
 - Power FX and variable management

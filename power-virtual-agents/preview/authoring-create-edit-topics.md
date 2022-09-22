@@ -37,8 +37,6 @@ When you create a bot, Power Virtual Agents creates several topics for you.
 
 :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of the Topics list showing sample topics and system topics.":::
 
-<<< THIS IMAGE NEEDS UPDATE -- the left nav doesn't have 'components', it has Entities. Also, the Topics page has two tabs - Custom and System'.>>>>>
-
 These automatically created topics fall into two categories:
   
 - [Sample topics](authoring-template-topics.md) help you understand simple to complex ways to use nodes to create bot conversations.
@@ -54,14 +52,10 @@ These automatically created topics fall into two categories:
 1. In the left pane, select **Topics** and then select **+New Topic** to create a new topic.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::  
-   
-   <<< IMAGE NEEDS UPDATE -- same reason as above that the left nav has 'Entities', not Components >>>>
 
 1. The **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
 
     :::image type="content" source="media/authoring-create-edit-topics/trigger-phrases-button.png" alt-text="Screenshot of the topic authoring canvas, highlighting Trigger phrases.":::
-    
-    <<< IMAGE NEEDS UPDATE -- same reason as above >>>>
 
 1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 

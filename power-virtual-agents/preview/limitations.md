@@ -32,7 +32,6 @@ This public preview currently doesn't support some of the existing features you'
 - Default values in multiple-choice questions don't work.
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
 
-
 ## Upcoming releases
 
 - Skills
