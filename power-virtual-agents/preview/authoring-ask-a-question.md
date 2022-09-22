@@ -1,6 +1,6 @@
 ---
 title: Ask a question
-description: Use the Question node to ask the user a question and store their response in a variable.
+description: Use the question node to ask the user a question and store their response in a variable.
 keywords: "PVA"
 ms.date: 09/05/2022
 
@@ -13,11 +13,11 @@ ms.custom: authoring, topics, message, question
 ms.collection: virtual-agent
 ---
 
-# Ask a Question
+# Ask a question
 
 The **Question** node allows you to prompt a user for information and store their response into a variable, for use later on in the conversation.
 
-The node allows you to choose the type of information you want to collect, such as multiple choice, a pre-built entity, or a custom entity that you have created via the entities page. There are also a number of [additional properties](#configure-question-behavior) that allow you to control the behavior of the node, such as, what to do when an invalid response is received or additional validation rules that need to be met by the user.
+The node allows you to choose the type of information you want to collect, such as a multiple choice answer, a pre-built entity, or a custom entity that you have created via the entities page. There are also some extra [question behavior properties](#configure-question-behavior) that allow you to control the behavior of the node, such as, what to do when an invalid response is received or additional validation rules that need to be met by the user.
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ The node allows you to choose the type of information you want to collect, such 
 
 To have the bot ask a question and get a response from the user:
 
-1. Select **Add node** (**+**), then select **Ask a question** to add a new Question node.
+1. Select **Add node** (**+**), then select **Ask a question** to add a new question node.
 
    :::image type="content" source="media/authoring-ask-a-question/topics-question.png" alt-text="Screenshot of adding a new question mode.":::
 

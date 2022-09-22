@@ -12,6 +12,8 @@
       href: authoring-template-topics.md
     - name: Create and edit topics
       href: authoring-create-edit-topics.md
+    - name: Ask a question
+      href: authoring-ask-a-question.md
     - name: Manage topics
       href: authoring-topic-management.md
     - name: Add comments to bots
