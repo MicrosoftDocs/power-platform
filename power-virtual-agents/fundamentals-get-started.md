@@ -64,7 +64,7 @@ Select **Chatbots** in the side pane to open the **Chatbots** page and view all 
     :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the environment picker.":::
 
     > [!NOTE]
-    > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
+    > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
     > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
 1. In the side navigation select **Create**. You can also select **Home** then select **Create a bot**.
