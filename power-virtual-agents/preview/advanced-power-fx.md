@@ -1,10 +1,8 @@
 ﻿---
-ROBOTS: NOINDEX,NOFOLLOW
 title: "Create expressions using Power Fx"
 description: "Use Power Fx to create complex bot logic using formulas to manipulate data."
 keywords: "PVA"
 ms.date: 09/14/2022
-
 ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza
@@ -14,9 +12,9 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring
 ---
 
-# Create expressions using Power Fx
+# Create expressions using Power Fx - Preview
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Fx is a low-code language that makers can work with directly in an Excel-like formula bar. Use Power Fx to create complex bot logic via formulas to manipulate data, such as setting the value of variables, parsing a string, or using expressions in conditionals.
 

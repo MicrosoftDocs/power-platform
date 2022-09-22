@@ -1,11 +1,13 @@
-- name: Overview of technology preview
-  href: build-2022-overview.md
-- name: Technology preview quickstart
-  href: build-2022-quickstart.md
-- name: Limitations of technology preview
-  href: build-2022-limitations.md
+- name: Overview of public preview
+  href: overview.md
+- name: Public preview quickstart
+  href: quickstart.md
+- name: Limitations of public preview
+  href: limitations.md
 - name: Author and edit
   items:
+    - name: Clone an existing bot
+      href: clone-existing-bot.md
     - name: Use sample topics
       href: authoring-template-topics.md
     - name: Create and edit topics

@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: Customize your bot
 description: Change the name, icon, and color of your bot with CSS and JavaScript styling.
 keywords: "PVA"
@@ -12,9 +11,9 @@ ms.custom: "customization, ce06102020"
 ms.collection: virtual-agent
 ---
 
-# Customize the look and feel of your bot
+# Customize the look and feel of your bot (Preview)
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Your bot's look and feel is defined by the bot's canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
 

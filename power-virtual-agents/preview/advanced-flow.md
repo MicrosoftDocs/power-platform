@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: "Automate chatbot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: "PVA, flow, automate"
@@ -13,9 +12,9 @@ ms.custom: flow, ceX, advanced-authoring
 ms.collection: virtual-agent
 ---
 
-# Add actions to a bot using Power Automate
+# Add actions to a bot using Power Automate (Preview)
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can help your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities or call backend systems. For example, you can use flows with end-user authentication to retrieve information about a user after they've signed in.
 
