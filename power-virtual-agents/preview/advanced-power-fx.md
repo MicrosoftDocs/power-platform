@@ -1,9 +1,8 @@
 ﻿---
-title: "Use Power Fx formulas"
+title: "Create expressions using Power Fx"
 description: "Use Power Fx to create complex bot logic using formulas to manipulate data."
 keywords: "PVA"
-ms.date: 05/10/2022
-
+ms.date: 09/22/2022
 ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza
@@ -13,7 +12,7 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring
 ---
 
-# Microsoft Power Fx in Power Virtual Agents (Preview)
+# Create expressions using Power Fx (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -36,7 +35,7 @@ To use a variable in a Power Fx formula, you must add a prefix depending on the 
 
 For example, you'd need to use `System.Conversation.Id` to access the respective [system variable](authoring-variables.md#system-variables).
 
-:::image type="content" source="media/advanced-power-fx/variable-prefix.png" alt-text="Screenshot of the Question node with the user's response set to a variable named Var1.":::
+:::image type="content" source="media/advanced-power-fx/variable-prefix.png" alt-text="Screenshot of the Enter formula pane with an expression containing the System variable.":::
 
 ## Use Power Fx to set a variable
 
