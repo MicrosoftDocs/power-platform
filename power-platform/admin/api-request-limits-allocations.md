@@ -71,7 +71,7 @@ A separate limit is established for certain activities(for example: A background
 - [Application users](create-users.md#create-an-application-user)
 - [Non-interactive users](create-users.md#create-a-non-interactive-user-account)
 - [Administrative users](create-users.md#create-an-administrative-user-account)
-- [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
+- [SYSTEM user](/power-apps/developer/data-platform/webapi/reference/systemuser#operations)
 
 Additionally, there are special free ($0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#user-and-portal-licensing) for more details.
 
