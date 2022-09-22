@@ -2,7 +2,7 @@
 title: "Create expressions using Power Fx"
 description: "Use Power Fx to create complex bot logic using formulas to manipulate data."
 keywords: "PVA"
-ms.date: 09/14/2022
+ms.date: 09/22/2022
 ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza
