@@ -1,5 +1,4 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
 title: View billed sessions
 description: See Power Virtual Agents billed sessions.
 keywords: "PVA"
@@ -12,9 +11,9 @@ ms.custom: "analysis, licensing, ceX"
 ms.collection: virtual-agent
 ---
 
-# View billed sessions for Power Virtual Agents
+# View billed sessions for Power Virtual Agents (Preview)
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 The purchase of a Power Virtual Agents license includes a specific number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant.
 
