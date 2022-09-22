@@ -1,4 +1,5 @@
 ---
+ROBOTS: NOINDEX,NOFOLLOW
 title: Fundamentals - Analyze chatbot usage
 description: Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents.
 keywords: "PVA"
@@ -11,9 +12,9 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Analyze your bot's usage and performance (Preview)
+# Analyze your bot's usage and performance
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 The maker's job isn't done when the bot is published and in use. You'll want to know how well your bot is performing its intended duties. The comprehensive analytics in Power Virtual Agents keep your bot's key performance indicators front and center. Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest impact on your bot's performance.
 
