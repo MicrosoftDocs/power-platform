@@ -12,7 +12,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Power Virtual Agents public preview
+# Power Virtual Agents public preview (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

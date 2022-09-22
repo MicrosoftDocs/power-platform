@@ -11,7 +11,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Work with Power Apps bot conversation transcripts
+# Work with Power Apps bot conversation transcripts (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring
 ---
 
-# Microsoft Power Fx in Power Virtual Agents
+# Microsoft Power Fx in Power Virtual Agents (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

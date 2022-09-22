@@ -11,7 +11,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Download your bot session transcripts
+# Download your bot session transcripts (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

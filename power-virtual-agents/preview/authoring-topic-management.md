@@ -12,7 +12,7 @@ ms.custom: "ceX"
 ms.collection: virtual-agent
 ---
 
-# Manage topics in Power Virtual Agents
+# Manage topics in Power Virtual Agents (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

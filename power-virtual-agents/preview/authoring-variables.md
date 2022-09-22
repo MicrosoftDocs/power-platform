@@ -13,7 +13,7 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Use variables
+# Use variables (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
