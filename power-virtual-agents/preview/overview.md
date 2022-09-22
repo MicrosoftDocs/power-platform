@@ -14,7 +14,7 @@ searchScope:
 
 # Power Virtual Agents public preview (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 We are excited to announce the evolution of Power Virtual Agents.
 

@@ -13,7 +13,7 @@ searchScope:
 
 # Limitations of public preview (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 This public preview currently doesn't support some of the existing features you're used to in Power Virtual Agents, and available features have some limitations.
 

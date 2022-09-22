@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Test your Power Virtual Agents bot (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation.
 

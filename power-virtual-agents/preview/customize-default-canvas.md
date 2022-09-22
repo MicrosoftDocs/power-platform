@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of your bot (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 Your bot's look and feel is defined by the bot's canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
 

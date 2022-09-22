@@ -11,7 +11,7 @@ ms.collection: virtual-agent
 
 # Quickstart (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 This quickstart walks you through making a bot that uses new features and improvements introduced in the public preview. We'll create a bot that helps users make a reservation at a fictional restaurant.
 
