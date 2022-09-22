@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring
 ---
 
-# Create expressions using Power Fx - Preview
+# Create expressions using Power Fx - (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
