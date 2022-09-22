@@ -35,7 +35,7 @@ To use a variable in a Power Fx formula, you must add a prefix depending on the 
 
 For example, you'd need to use `System.Conversation.Id` to access the respective [system variable](authoring-variables.md#system-variables).
 
-:::image type="content" source="media/advanced-power-fx/variable-prefix.png" alt-text="Screenshot of the Question node with the user's response set to a variable named Var1.":::
+:::image type="content" source="media/advanced-power-fx/variable-prefix.png" alt-text="Screenshot of the Enter formula pane with an expression containing the System variable.":::
 
 ## Use Power Fx to set a variable
 
