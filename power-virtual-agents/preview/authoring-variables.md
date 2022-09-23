@@ -1,5 +1,5 @@
 ---
-title: "Work with chatbot variables"
+title: "Work with chatbot variables (Preview)"
 description: "Use variables with custom and prebuilt entities to created customized bot conversations."
 keywords: "PVA"
 ms.date: 05/10/2022

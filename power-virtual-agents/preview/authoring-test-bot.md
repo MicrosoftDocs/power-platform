@@ -1,5 +1,5 @@
 ---
-title: "Check your chatbot with the Test bot"
+title: "Check your chatbot with the Test bot (Preview)"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
 keywords: "PVA"
 ms.date: 01/25/2022

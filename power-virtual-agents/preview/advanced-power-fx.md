@@ -1,5 +1,5 @@
 ﻿---
-title: "Create expressions using Power Fx"
+title: "Create expressions using Power Fx (Preview)"
 description: "Use Power Fx to create complex bot logic using formulas to manipulate data."
 keywords: "PVA"
 ms.date: 09/22/2022

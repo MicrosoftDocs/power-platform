@@ -1,5 +1,5 @@
 ---
-title: "Use sample topics to understand capabilities"
+title: "Use sample topics to understand capabilities (Preview)"
 description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
 keywords: "PVA"
 ms.date: 05/10/2022

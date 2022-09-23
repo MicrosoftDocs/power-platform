@@ -1,5 +1,5 @@
 ---
-title: Connect your bot to Telephony
+title: Connect your bot to Telephony (Preview)
 description: Connect your bot to the Telephony channel to interact with users over the phone.
 ms.date: 05/31/2022
 ms.topic: article

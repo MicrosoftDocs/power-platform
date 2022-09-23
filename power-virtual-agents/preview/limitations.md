@@ -1,5 +1,5 @@
 ---
-title: "Limitations of the Power Virtual Agents preview"
+title: "Limitations of the Power Virtual Agents preview (Preview)"
 description: "Existing features that aren't supported in the Power Virtual Agents preview."
 ms.date: 05/10/2022
 ms.topic: overview

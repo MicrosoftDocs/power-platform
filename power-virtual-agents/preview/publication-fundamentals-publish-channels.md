@@ -1,5 +1,5 @@
 ---
-title: Fundamentals - Publish a chatbot to various channels
+title: Fundamentals - Publish a chatbot to various channels (Preview)
 description: Publish your bot to a channel so that your customers can engage with it where they are.
 keywords: "Publish; demo; demo website; channels, PVA"
 ms.date: 05/31/2022
