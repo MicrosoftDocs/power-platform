@@ -294,8 +294,18 @@
           href: preview/clone-existing-bot.md
         - name: Use sample topics
           href: preview/authoring-template-topics.md
+        - name: Use system topics
+          href: preview/authoring-system-topics.md
         - name: Create and edit topics
           href: preview/authoring-create-edit-topics.md
+        - name: Send a message
+          href: preview/authoring-send-message.md
+        - name: Ask a question
+          href: preview/authoring-ask-a-question.md
+        - name: Moving between topics
+          href: preview/authoring-moving-between-topics.md
+        - name: Add a condition
+          href: preview/authoring-using-conditions.md
         - name: Manage topics
           href: preview/authoring-topic-management.md
         - name: Add comments to bots
@@ -316,10 +326,6 @@
           href: preview/advanced-power-fx.md
         - name: Add actions using Power Automate
           href: preview/advanced-flow.md
-        - name: Add multimedia cards to messages
-          href: preview/advanced-cards.md
-        - name: Customize speech responses with SSML
-          href: preview/advanced-custom-speech-ssml.md
     - name: Publish and integrate
       items:
         - name: Key concepts - Publish your bot
