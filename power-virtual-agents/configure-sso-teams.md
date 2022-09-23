@@ -187,6 +187,10 @@ To update the Azure AD authentication settings in Power Virtual Agents, you'll n
 
 1. Select **Publish** to make the latest bot content available to your customers.
 
+1. On the side pane, under **Manage**, select **Channels**.
+
+1. Select **Microsoft Teams**, then select **Open bot**.
+
 1. Start a new conversation with your bot in Microsoft Teams to test if it automatically signs you in.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
