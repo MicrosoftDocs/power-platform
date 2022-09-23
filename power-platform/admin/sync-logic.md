@@ -19,7 +19,7 @@ search.app:
 
 # Synchronization logic for appointments, contacts, and tasks
 
-This article explores how appointments, contacts, and tasks are synced between Dynamics 365 and Exchange. [Email is synchronized separately](./integrate-synchronize-your-email-system.md).
+This article explores how appointments, contacts, and tasks are synced between Dynamics 365 and Exchange. [Email is synchronized separately](/power-platform/admin/integrate-synchronize-your-email-system/).
 
 Appointments, contacts, and tasks sync both ways by default between Dynamics 365 and Exchange. [Server-side synchronization](./server-side-synchronization.md), also known as Exchange synchronization, is the preferred method. Syncing happens differently, depending on the item being synced and the sync direction.
 
@@ -123,7 +123,7 @@ If the organizer has deleted past instances of the series, then Dynamics 365 see
 
 - **Appointment status and Free/Busy state:** If the appointment state in Exchange is **Free**, the appointment state syncs to Dynamics 365 as **Free**. If the state is **Completed** or **Canceled** in Dynamics 365, the appointment status in Dynamics 365 is set to **Completed**. If the state is **Open** in Dynamics 365, the appointment status is set to **Free**. Working elsewhere, Free/Busy status syncs to Dynamics 365 as state **Open** and status **Free**.
 
-- **Appointment booking and conflict management:** When an appointment is tracked to Dynamics 365, server-side sync uses the booking API to make sure that attendees are available at the specified time. For example, if the organizer's calendar in Dynamics 365 has another appointment at the same time, the booking fails, and the appointment isn't synced. The user can [address the scheduling conflict](https://go.microsoft.com/fwlink/?linkid=2187456), select to ignore it, and let the appointment sync anyway. Booking from Dynamics 365 in Outlook automatically suppresses the scheduling conflict. For more information, see [A scheduling conflict was found when saving appointment [appointment subject] from Exchange to Microsoft Dynamics 365](/dynamics-365/sales/scheduling-conflict-saving-appointment.md).
+- **Appointment booking and conflict management:** When an appointment is tracked to Dynamics 365, server-side sync uses the booking API to make sure that attendees are available at the specified time. For example, if the organizer's calendar in Dynamics 365 has another appointment at the same time, the booking fails, and the appointment isn't synced. The user can [address the scheduling conflict](https://go.microsoft.com/fwlink/?linkid=2187456), select to ignore it, and let the appointment sync anyway. Booking from Dynamics 365 in Outlook automatically suppresses the scheduling conflict. For more information, see [A scheduling conflict was found when saving appointment [appointment subject] from Exchange to Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/scheduling-conflict-saving-appointment).
 
 #### Syncing canceled and deleted appointments from Exchange to Dynamics 365
 
@@ -208,7 +208,7 @@ When any linked item is copied in Exchange, server-side sync ignores the copy ac
 
 ### Syncing appointment attachments, contact addresses, and tasks in Outlook
 
-The following sections apply to sync that's done through Dynamics 365 for Outlook or server-side synchronization. For more information, see [Integrate your email system](/integrate-synchronize-your-email-system.md).
+The following sections apply to sync that's done through Dynamics 365 for Outlook or server-side synchronization. For more information, see [Integrate your email system](/power-platform/admin/integrate-synchronize-your-email-system).
 
 :::image type="content" source="./media/crm-itpro-systemsynctab.png" alt-text="A screenshot of the System Settings Synchronization tab in Dynamics 365 for Outlook.":::
 
@@ -233,10 +233,10 @@ On the **Synchronization** tab in Dynamics 365 for Outlook, select one of the fo
 
 - **Synchronize all three addresses (Business, Home, Other) in Outlook contact:** All three Outlook mailing addresses (Business, Home, and Other) are synced between Dynamics 365 and Outlook.
 
->[!WARNING]
->If you have existing data, changing the setting to sync all three addresses can cause data loss. Attributes of existing tracked contacts are remapped when this setting is enabled. We recommend that you test this option before deployment to understand how the remapping affects your environment and your data. In most cases, you should have the full data on one side (normally Dynamics 365) and sync to the other side (normally Outlook or Exchange).  
+> [!WARNING]
+> If you have existing data, changing the setting to sync all three addresses can cause data loss. Attributes of existing tracked contacts are remapped when this setting is enabled. We recommend that you test this option before deployment to understand how the remapping affects your environment and your data. In most cases, you should have the full data on one side (normally Dynamics 365) and sync to the other side (normally Outlook or Exchange).  
 >
->For more information, see [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized.md)
+> For more information, see [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized)
   
 #### Syncing tasks that are assigned in Outlook
   
@@ -257,7 +257,7 @@ By default, tasks that are created in Dynamics 365 for Outlook don't sync with D
 - [Track an email or appointment without linking it to a specific row](/dynamics365/outlook-app/user/track-without-set-regarding)
 - [Use Outlook category to track appointments and emails](./use-outlook-category-track-appointments-emails.md)
 - [OrgDbOrgSettings](./OrgDbOrgSettings.md)
-- [A scheduling conflict was found when saving appointment [appointment subject] from Exchange to Microsoft Dynamics 365](/dynamics-365/sales/scheduling-conflict-saving-appointment.md)
+- [A scheduling conflict was found when saving appointment [appointment subject] from Exchange to Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/scheduling-conflict-saving-appointment)
 - [Address synchronization for contacts](/dynamics365/outlook-addin/admin-guide/configure-synchronization-appointments-contacts-tasks#address-synchronization-for-contacts)
-- [Integrate your email system](/integrate-synchronize-your-email-system.md)
-- [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized.md)
+- [Integrate your email system](/power-platform/admin/integrate-synchronize-your-email-system)
+- [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized)
