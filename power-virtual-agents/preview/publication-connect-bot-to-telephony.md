@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Connect your bot to Telephony (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 Customers often prefer to pick up the phone when they interact with an organization. With the Telephony channel, you can connect your bot to your [Azure Communication Services](/azure/communication-services/) phone number to enable customers to interact with it over the phone.
 

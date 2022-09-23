@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Use variables (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 Save customers' responses in a bot conversation to variables and reuse them later in the conversation. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths.
 

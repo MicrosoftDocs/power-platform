@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Summarize your bot's performance and usage (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 The Summary page gives you a broad overview of your bot's performance. It uses AI to show you which topics are having the greatest impact on [escalation rate](#escalation-rate-drivers), [abandon rate](#abandon-rate-drivers), and [resolution rate](#resolution-rate-drivers), among other key performance indicators.
 

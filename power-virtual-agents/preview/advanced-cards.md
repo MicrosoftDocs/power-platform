@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Add multimedia cards to messages (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 Cards add rich multimedia responses to question and message nodes in your bot conversations. With cards, you can go beyond basic text replies by adding images, videos, and interactive elements.
 
