@@ -21,8 +21,7 @@ searchScope:
 
 In Power Virtual Agents, a _topic_ represents some portion of a conversational thread. Power Virtual Agents provides an _authoring canvas_ for defining and working with your topics.
 
-A topic contains one or more _conversation nodes_, which together define the conversational paths that that topic can take.
-Each node performs an action, such as sending a message or asking a question.
+A topic contains one or more _conversation nodes_, which together define the conversational paths that that topic can take. Each node performs an action, such as sending a message or asking a question.
 
 Often, a topic also has a set of _trigger phrases_&mdash;phrases, keywords, and questions that a user is likely to use that are related to a specific issue.
 The Power Virtual Agents AI uses natural language understanding, your customer's message, and the trigger phrases for all your topics to find the most appropriate topic to trigger. The message doesn't need to be an exact match to a topic's trigger phrases to trigger the topic.
@@ -31,19 +30,17 @@ For example, a topic about store hours might include the trigger phrase `check s
 
 ## Topic types
 
-There are two types of topics within a bot.
+There are two types of topics within a bot. Every new bot starts with a set of custom and system topics.
 
-- _Custom_ topics are ones you can create to build out your conversation.
-  Every bot starts with four custom topics. These topics cover some common behavior, such as ways to greet a customer, to acknowledge the end of a conversation, or to start a conversation over.
+- _Custom_ topics are ones you can create to build out your conversation. These topics cover some common behavior, such as ways to greet a customer, to acknowledge the end of a conversation, or to start a conversation over.
 
+  - All new topics you create will be custom topics.
   - You can make changes to the custom topics created for you, or remove them from your bot entirely.
-  - All topics you create will be custom topics.
 
-- _System_ topics are ones that support essential behavior for your bot, such as a custom request to speak to a person or end the conversation.
-  Some system topics have trigger phrases, which you can customize to fit your bot's needs.
+- _System_ topics are ones that support essential behavior for your bot, such as a custom request to speak to a person or end the conversation. Some system topics have trigger phrases, which you can customize to fit your bot's needs.
 
   - You can't create new system topics.
-  - You can't delete a system topic. However, you can, if necessary, disable one or more of them.
+  - You can't delete a system topic, but you can disable one or more of them.
   - Until you're comfortable creating end-to-end bot conversations, you shouldn't edit the system topics.
 
   For more information, see [System Topics](authoring-system-topics.md).
@@ -95,7 +92,7 @@ When you edit a topic, you can also use the toolbar to rename it.
 
     Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases.
 
-    When you create a new topic, a **Trigger phrases** node is inserted for you. Add nodes to control the conversation.
+    When you create a new topic, a **Trigger phrases** node is inserted for you. Add more nodes to control the conversation.
 
 1. To add a node, select the plus sign (**+**) icon on the line or branch between or after nodes.
 
@@ -105,14 +102,14 @@ When you edit a topic, you can also use the toolbar to rename it.
 
 ### Insert a node
 
-You have several options when you add a node. Each option has a specific node or nodes that will be inserted in the conversation path.
+You have several options for the type of node to insert. Each option describes the type of node or nodes that will be inserted in the conversation path.
 
 When you add a node after the **Trigger Phrases** node or between other existing nodes, you have the following options:
 
 | Option                                                            | Description                                           |
 |:------------------------------------------------------------------|:------------------------------------------------------|
 | [**Send a message**](authoring-send-message.md)                   | Send the customer a message .                         |
-| [**Ask a question**](authoring-ask-a-question.md)                   | Ask the customer a question.                          |
+| [**Ask a question**](authoring-ask-a-question.md)                 | Ask the customer a question.                          |
 | [**Add a condition**](authoring-using-conditions.md)              | Branch your conversation based on a condition.        |
 | [**Set a variable value**](authoring-variables.md#set-a-variable) | Set a value for a new or existing variable.           |
 | [**Topic management**](authoring-moving-between-topics.md)        | Redirect, transfer, or end the topic or conversation. |
@@ -126,6 +123,7 @@ Select the the node's _node menu_ (**&vellip;**) then **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
 
+<!--
 ## Edit topics with the code editor
 
 The code editor shows the topic in [YAML](https://yaml.org/), a markup language that is easy to read and understand. Use the code editor to copy and paste topics from other bots, even ones created by other authors.
@@ -193,6 +191,7 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
 1. Select the three dots icon, then select **Close code editor**. You'll see the new conversation path generated from the YAML on the authoring canvas.
 
     :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot conversation created from YAML.":::
+-->
 
 ## Test and publish your bot
 
