@@ -32,7 +32,7 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 ## Connect your bot to a web-based app
 
-1. In the Power Virtual Agents side pane, go to **Manage** > **Channels**.
+1. In the Power Virtual Agents side pane, go to **Settings** > **Channels**.
 
 1. Select the **Mobile app** tile to open the configuration window.
 
@@ -73,7 +73,7 @@ To connect to the bot you have built with Power Virtual Agents, you will need to
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
 
-1. On the side pane, go to **Manage** > **Channels**.
+1. On the side pane, go to **Settings** > **Channels**.
 
 1. Select **Mobile app**.
 
