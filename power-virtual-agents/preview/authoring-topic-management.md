@@ -1,5 +1,5 @@
 ---
-title: "Fix errors, set status, and copy topics"
+title: "Fix errors, set status, and copy topics (Preview)"
 description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time."
 keywords: "PVA"
 ms.date: 01/25/2022
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Manage topics in Power Virtual Agents (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 There are a number of ways you can manage your topics. Power Virtual Agents includes a topic checker that lets you know if there are errors in your topics, you can turn topics on or off so they don't appear to people chatting with your bot, and you can copy or duplicate topics to make it easier to create new ones.
 

@@ -1,5 +1,5 @@
 ---
-title: "Use sample topics to understand capabilities"
+title: "Use sample topics to understand capabilities (Preview)"
 description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
 keywords: "PVA"
 ms.date: 05/10/2022
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Use sample topics in Power Virtual Agents (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 Power Virtual Agents includes a set of three samples from which you can see examples of topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
 

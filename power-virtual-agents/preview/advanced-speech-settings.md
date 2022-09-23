@@ -1,5 +1,5 @@
 ---
-title: Customize your bot's voice
+title: Customize your bot's voice (Preview)
 description: Use voice font and style settings to customize your bot's speech.
 keywords: "PVA"
 ms.date: 06/02/2022
@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Customize your bot's voice (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 Give your telephony bots personality with voices and speaking styles based on the bot's domain and context. Voices are called voice fonts in Power Virtual Agents.
 

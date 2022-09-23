@@ -1,5 +1,5 @@
 ---
-title: "Create and use entities (contains video)"
+title: "Create and use entities (contains video) (Preview)"
 description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
 keywords: "PVA"
 ms.date: 01/25/2022
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Use entities and slot filling in Power Virtual Agents bots (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability of the AI to understand a user's intent. For example, natural language understanding is involved when a user might say, "I tried to use my gift card, but it doesn't work", and the bot can route the user to the topic related to gift cards not working—even if that exact phrase isn't listed as a trigger phrase.
 

@@ -1,6 +1,6 @@
 ---
-title: "Overview of public preview"
-description: "Overview of new features and improvements in the public preview."
+title: "Overview of the Power Virtual Agents preview (Preview)"
+description: "Overview of new features and improvements in the Power Virtual Agents preview."
 ms.date: 05/10/2022
 ms.topic: overview
 author: v-alarioza
@@ -12,9 +12,9 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Power Virtual Agents public preview (Preview)
+# Overview (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 We are excited to announce the evolution of Power Virtual Agents.
 
@@ -27,23 +27,19 @@ This evolution brings new features, including:
   - [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
   - [Bot response variations](authoring-send-message.md#sending-a-text-message)
   - [Quick replies](authoring-send-message.md#adding-quick-replies)
-
-- Unlock the power of voice
   - [Speech authoring](authoring-send-message.md#use-ssml-to-customize-speech-responses)
-  - [Voice font selection](advanced-speech-settings.md)
-  - [Telephony channel](publication-connect-bot-to-telephony.md)
 
 - Power FX and variable management
   - [Enhanced variable management](authoring-variables.md)
-  - [Power FX support](advanced-power-fx.md)
+  - [Power Fx support](advanced-power-fx.md)
 
 For a guided tutorial on how to use these new features, please refer to the [quickstart](quickstart.md).
 
-This public preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of public preview](limitations.md).
+The Power Virtual Agents preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of public preview](limitations.md).
 
 ## For desktop Composer users
 
-There are a number of differences and similarities in how bots are designed in the Bot Framework Composer and the Power Virtual Agents public preview.
+There are a number of differences and similarities in how bots are designed in the Bot Framework Composer and the Power Virtual Agents preview.
 The following table lists some key concepts in Composer and describes where to find information about similar concepts in Power Virtual Agents.
 
 <!-- best viewed without wordwrap -->

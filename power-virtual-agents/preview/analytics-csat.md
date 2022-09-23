@@ -1,5 +1,5 @@
 ---
-title: Analyze bot customer satisfaction metrics
+title: Analyze bot customer satisfaction metrics (Preview)
 description: Use AI-driven analytics to understand how well customers are interacting with your bot and identify areas for improvement.
 keywords: "PVA"
 ms.date: 06/01/2022
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Analyze your bot's customer satisfaction metrics (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 The Customer Satisfaction page provides a detailed view of customer satisfaction (CSAT) survey data. The information includes the average CSAT score over time and the topics that are having the most impact on the CSAT score.
 

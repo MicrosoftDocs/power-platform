@@ -1,5 +1,5 @@
 ---
-title: Publish your bot on your own or a demo website (contains video)
+title: Publish your bot on your own or a demo website (contains video) (Preview)
 description: Customize a prebuilt demo website to try out your bot, or publish your bot to your own website for customers to use.
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
 ms.date: 05/31/2022
@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Customize the demo website or publish your bot on your website (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 A prebuilt demo website is automatically created for you when you publish your bot. Your teammates and stakeholders can use the demo website to try out the bot while you're building it. You might want to customize the demo site to guide your teammates' testing efforts. Publish the bot to your live website when it's ready for customers to use.
 

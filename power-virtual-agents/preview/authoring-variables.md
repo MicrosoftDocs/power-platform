@@ -1,5 +1,5 @@
 ---
-title: "Work with chatbot variables"
+title: "Work with chatbot variables (Preview)"
 description: "Use variables with custom and prebuilt entities to created customized bot conversations."
 keywords: "PVA"
 ms.date: 05/10/2022
@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Use variables (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 Save customers' responses in a bot conversation to variables and reuse them later in the conversation. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths.
 

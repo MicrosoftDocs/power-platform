@@ -1,5 +1,5 @@
 ---
-title: "Use chatbot variables to carry content across topics"
+title: "Use chatbot variables to carry content across topics (Preview)"
 description: "Global variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: "PVA"
 ms.date: 5/10/2022
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Reuse variables across topics (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 [Variables](authoring-variables.md) let you save responses from your customers. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
