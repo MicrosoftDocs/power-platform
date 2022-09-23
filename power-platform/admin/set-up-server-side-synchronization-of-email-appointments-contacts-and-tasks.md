@@ -4,9 +4,9 @@ description: Set up server-side synchronization of email, appointments, contacts
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 01/21/2022
-author: revachauhan
+author: DanaMartens 
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: dmartens 
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
