@@ -1,6 +1,6 @@
 ---
-title: "Overview of public preview"
-description: "Overview of new features and improvements in the public preview."
+title: "Overview of the Power Virtual Agents preview"
+description: "Overview of new features and improvements in the Power Virtual Agents preview."
 ms.date: 05/10/2022
 ms.topic: overview
 author: v-alarioza
@@ -12,7 +12,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Power Virtual Agents public preview (Preview)
+# Overview (Preview)
 
 [!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
@@ -39,11 +39,11 @@ This evolution brings new features, including:
 
 For a guided tutorial on how to use these new features, please refer to the [quickstart](quickstart.md).
 
-This public preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of public preview](limitations.md).
+The Power Virtual Agents preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations](limitations.md).
 
 ## For desktop Composer users
 
-There are a number of differences and similarities in how bots are designed in the Bot Framework Composer and the Power Virtual Agents public preview.
+There are a number of differences and similarities in how bots are designed in the Bot Framework Composer and the Power Virtual Agents preview.
 The following table lists some key concepts in Composer and describes where to find information about similar concepts in Power Virtual Agents.
 
 <!-- best viewed without wordwrap -->
