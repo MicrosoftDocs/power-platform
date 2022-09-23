@@ -2,7 +2,7 @@
 title: Ask a question
 description: Use the question node to ask the user a question and store their response in a variable.
 keywords: "PVA"
-ms.date: 09/05/2022
+ms.date: 10/04/2022
 
 ms.topic: article
 author: v-alarioza
