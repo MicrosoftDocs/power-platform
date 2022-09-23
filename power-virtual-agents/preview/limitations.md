@@ -1,6 +1,6 @@
 ---
-title: "Limitations of public preview"
-description: "Existing features that aren't supported in the public preview."
+title: "Limitations of the Power Virtual Agents preview"
+description: "Existing features that aren't supported in the Power Virtual Agents preview."
 ms.date: 05/10/2022
 ms.topic: overview
 author: v-alarioza
@@ -11,11 +11,11 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Limitations of public preview (Preview)
+# Limitations (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
-This public preview currently doesn't support some of the existing features you're used to in Power Virtual Agents, and available features have some limitations.
+The Power Virtual Agents preview currently doesn't support some of the existing features you're used to in Power Virtual Agents, and available features have some limitations.
 
 ## Limitations of current features
 

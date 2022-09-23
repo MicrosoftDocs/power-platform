@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Analyze your bot's topic performance (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 The topic details page provides a view into the performance of individual topics and how you might improve them.
 

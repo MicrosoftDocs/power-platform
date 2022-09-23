@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Connect your bot to Telephony (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
 Customers often prefer to pick up the phone when they interact with an organization. With the Telephony channel, you can connect your bot to your [Azure Communication Services](/azure/communication-services/) phone number to enable customers to interact with it over the phone.
 
@@ -38,12 +38,12 @@ Customers often prefer to pick up the phone when they interact with an organizat
 1. Under **Phone number type**, select **PTSN**.
 
     > [!IMPORTANT]
-    > The **Direct routing** option is not supported in the public preview.
+    > The **Direct routing** option is not supported in the Power Virtual Agents preview.
 
 1. Under **PTSN phone numbers**, select the first number in the list, and then select **Connect**.
 
     > [!IMPORTANT]
-    > Phone numbers have been been provisioned for the public preview. Normally, you'll need to do this yourself in [Azure Communication Services](/azure/communication-services/).
+    > Phone numbers have been been provisioned for the Power Virtual Agents preview. Normally, you'll need to do this yourself in [Azure Communication Services](/azure/communication-services/).
 
     :::image type="content" source="media/publication-connect-bot-to-telephony/connect-number.png" alt-text="Screenshot of selected phone number.":::
 

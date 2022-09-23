@@ -1,6 +1,6 @@
 ---
-title: "Public preview quickstart"
-description: "Discover the new features introduced in the public preview."
+title: "Power Virtual Agents preview quickstart"
+description: "Discover the new features introduced in the Power Virtual Agents preview."
 ms.date: 05/10/2022
 ms.topic: article
 author: v-alarioza
@@ -11,9 +11,9 @@ ms.collection: virtual-agent
 
 # Quickstart (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
-This quickstart walks you through making a bot that uses new features and improvements introduced in the public preview. We'll create a bot that helps users make a reservation at a fictional restaurant.
+This quickstart walks you through making a bot that uses new features and improvements introduced in the Power Virtual Agents preview. We'll create a bot that helps users make a reservation at a fictional restaurant.
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]
@@ -42,7 +42,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
     :::image type="content" source="media/quickstart/new-bot2.png" alt-text="Screenshot of the create a chatbot dialog.":::
 
 > [!IMPORTANT]
-> Bots can only be created in English in the public preview.
+> Bots can only be created in English in the Power Virtual Agents preview.
 
 ## Customize the greeting topic
 
