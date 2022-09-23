@@ -28,22 +28,22 @@ The node allows you to choose the type of information you want to collect, such 
 
 To have the bot ask a question and get a response from the user:
 
-1. Select **Add node** (**+**), then select **Ask a question** to add a new question node.
+1. Select **Add node** (**+**), then select **Ask a question**. A new **Question** node is added to the canvas.
 
-   :::image type="content" source="media/authoring-ask-a-question/topics-question.png" alt-text="Screenshot of adding a new question mode.":::
+   :::image type="content" source="media/authoring-ask-a-question/topics-question.png" alt-text="Screenshot of a new question mode.":::
 
-1. Enter a question in the first box.
+1. Enter a question in the first field.
 
     > [!TIP]
-    > The Question node has all the same capabilities as the Message nodes. This includes the ability to use images, videos, cards, quick replies, and send message variations. For more information, see [Send a message](authoring-send-message.md).
+    > Message fields in a **Question** node have the same capabilities as fields in a **Message** node. This includes the ability to use images, videos, cards, quick replies, and send message variations. For more information, see [Send a message](authoring-send-message.md).
 
-1. For **Identify**, select an option for the user's response.
+1. For **Identify**, select an option for the bot will interpret the user's response.
 
    The options determine what the bot should listen for when the user responds. For more information, see [Use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
 
-1. Depending on what you selected in **Identify**, there may be additional properties that need to be set.
+1. Depending which **Identify** option you selected, you may have more properties you need to set.
 
-   For example, if you selected **Multiple choice options**, you'll be required to enter the choices the user can specify in **Options for user**. Each choice is presented as a multiple-choice button, but users can also type their answers.
+   For example, for **Multiple choice options**, you need to enter the choices the user can specify in **Options for user**. Each choice is presented as a multiple-choice button, but users can also type their answers.
 
 1. In **Save response as**, a new variable is created for you to store the user's response to the question. You can also choose another existing variable to use instead.
 
@@ -51,13 +51,13 @@ To have the bot ask a question and get a response from the user:
 
 ## Configure question behavior
 
-There are additional properties that allow you to control the behavior of the Question node, such as, what to do when an invalid response is received or validation rules that need to be met by the user.
+Question behavior properties allow you to control other aspects of the **Question** node, such as how the bot responds to an invalid response or how it validates user input.
 
 :::image type="content" source="media/authoring-ask-a-question/question-properties.png" alt-text="Screenshot of question properties.":::
 
 To open the question properties pane:
 
-1. Select the vertical three dots, then select **Properties**.
+1. On the **Question** node, select the _node menu_ (**&vellip;**), then select **Properties**.
 
     :::image type="content" source="media/authoring-ask-a-question/properties-button.png" alt-text="Screenshot of properties button.":::
 
@@ -67,64 +67,51 @@ To open the question properties pane:
 
 ### Skip behavior
 
-In some cases, the Question node's variable may already have a value from [slot filling](advanced-entities-slot-filling.md) or assigned a value earlier in the conversation.
+In some cases, the question node's variable may already have a value, from [slot filling](advanced-entities-slot-filling.md) or from earlier in the conversation.
 
-To customize how your bot handles this situation, choose the appropriate value for **Skip question**:
+Decide whether your bot should ask the question, if it already has a value for the associated variable. Under **Skip question**, select:
 
-- **Allow question to be skipped**: if the variable already has a value, the question will be skipped entirely.
-- **Ask every time**: always ask the user the question, even if the variable already has a value.
+- **Allow question to be skipped** to skip the question entirely.
+- **Ask every time** to always ask the user the question every time.
 
 ### Reprompt
 
-If the user responds with an invalid response (such as responding with a number when asked for a date), you can configure how many times the bot should try asking the question again before giving up. To customize what your bot does when it gives up, see [No valid entity found](#no-valid-entity-found).
+A user might enter an invalid response, such as providing a number when asked for a date. Use the **Reprompt** settings to configure how your bot will react.
 
-To customize how many times your bot reprompts the user, choose one of the following values for **How many reprompts**:
+Change **How many reprompts** to change how many times your bot will reprompt the user for a valid answer before it stops trying:
 
-- **Don't repeat**: The question is not repeated and your bot will immediately escalate the conversation.
-- **Repeat once:**: The question is repeated _once_.
-- **Repeat up to 2 times** (_default_): The question is repeated _twice_.
+- **Don't repeat**: your bot won't repeat the question and immediately moves on.
+- **Repeat once:**: your bot will repeat the question at most _one_ time.
+- **Repeat up to 2 times** (_default_): your bot will repeat the question at most _two_ times.
 
-By default, when the bot reprompts the user it will use the same message again. However, you can use a different message to provide the user with additional context.
+By default, when the bot reprompts the user, it uses the same message again. However, you can use a different message to provide the user with additional context.
 
-To customize the reprompt message, under **Retry prompt**, turn on **Customize** to reveal the message editor. Then enter your desired reprompt message.
+To customize the reprompt message, under **Retry prompt**, select **Customize**, then enter the reprompt message to use. You have the same options as for other types of messages. For more information on editing messages, see [Send a message](authoring-send-message.md).
 
-To learn more, see [Customize reprompt messages](#customize-reprompt-messages).
+To customize what your bot does when it moves on, see [No valid entity found](#no-valid-entity-found).
 
 ### Additional entity validation
 
-The question node will check if a user's response is valid based on the selected entity. However, in some cases it can be useful to add additional validation rules to further define what is a valid response.
+The question node will check if a user's response is valid based on the selected entity. To add extra validation criteria, use the **Additional entity validation** settings.
 
-For example, you might want to accept a number from a user, but ensure that the number is less than 10. By default, the question node will accept any numeric value when identifying a number, so you can set a boolean condition, using Power Fx, to determine if the user input is valid.
+For example, you might want to accept a number from a user, but ensure that the number is less than 10. By default, the question node will accept any numeric value when identifying a number. Add a Boolean condition, using Power Fx, to determine if the user input is valid.
 
-To add additional validation, enter a Power Fx formula for **Condition**. The formula you provide must return a boolean value (`true` or `false`), for example, `Topic.Var1 < 10`.
+Use the **Condition** field to enter your validation criteria as a Power Fx formula. The formula you provide must return a Boolean value (`true` or `false`), for example, `Topic.Var1 < 10`.
 
-By default when the condition is not met, the bot reprompts the user with the same message again. However, you can use a different message to provide the user with additional context.
+By default, when the condition is not met, the bot reprompts the user with the same message again. However, you can use a different message to provide the user with additional context.
 
-To customize the reprompt message, under **Condition not met prompt**, turn on **Customize** to reveal the message editor. Then enter your desired reprompt message.
-
-To learn more, see [Customize reprompt messages](#customize-reprompt-messages).
+To customize the invalid value message, under **Condition not met prompt**, select **Customize** to display the message editor, then enter your custom message. You have the same options as for other types of messages. For more information on editing messages, see [Send a message](authoring-send-message.md).
 
 ### No valid entity found
 
-If the question node reaches the maximum number of retries and hasn't received a valid response, your bot will give up.
+When your bot stops trying to get a valid response from the user, it stops trying. To control what it does next, use the **No valid entity found** settings.
 
-To configure what the node should do in this situation, choose one of the following values for **Action If no entity found**:
+To configure what to do next, choose one of the **Action If no entity found** options.
 
 - **Redirect to topic: Escalate** (_default_): Redirect the user to the _Escalate_ system topic.
-- **Set variable to value**: Reveals an additional box named **Default entity value** where you can enter a value to be used in place of a valid response from the user.
-- **Set variable to empty (no value)**: Sets the output variable to `Blank` and the topic moves onto the next node. You can later use a [condition](authoring-using-conditions.md) to check if the variable has a value.
+- **Set variable to value**: Set the output variable to a value and move on to the next node. Enter the value to use the **Default entity value** field.
+- **Set variable to empty (no value)**: Set the output variable to `Blank` and move on to the next node. You can use a [condition](authoring-using-conditions.md) node later to check if the variable has a value.
 
-<!-- FIXME: this is not a reprompt message, but a message to let he user know a default value was used -->
-By default when the entity is not found, the bot reprompts the user with the same message again. However, you can use a different message to provide the user with additional context.
+By default, when the entity is not found, the bot shows a standard error message. However, you can use a different message to provide the user with additional context.
 
-To customize the reprompt message, under **No entity found message**, turn on **Customize** to reveal the message editor. Then enter your desired reprompt message.
-
-To learn more, see [Customize reprompt messages](#customize-reprompt-messages).
-
-## Customize reprompt messages
-
-By default, when the bot reprompts the user it will use the same message again. However, you can provide a different message to be used to provide the user with additional context.
-
-For example, if the question node is expecting a date, but the user entered a number, an appropriate retry message might be, _"Sorry, I didn't get that. Which day? For example, 'tomorrow' or '9/15'"_.
-
-The reprompt message editor has all the same capabilities as the editors for Message and Question nodes. This includes the ability to use images, videos, cards, quick replies, and send message variations. For more information, see [Send a message](authoring-send-message.md).
+To customize the error message, under **No entity found message**, select **Customize** to display the message editor, then enter your custom message. You have the same options as for other types of messages. For more information on editing messages, see [Send a message](authoring-send-message.md).
