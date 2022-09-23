@@ -88,7 +88,7 @@ For each business unit, create an Azure AD security group. Create a [Dataverse g
 
 Add users into the respective Azure AD security group to grant them access to the business unit. The users can immediately run the app and access its resources/data. 
 
-In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), where users can work and access data from multiple business units, add the users to the Azure AD security groups that mapped to those business units.  
+In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-modernize-business-units), where users can work and access data from multiple business units, add the users to the Azure AD security groups that mapped to those business units.  
 
 ### Owning Business Unit
 
