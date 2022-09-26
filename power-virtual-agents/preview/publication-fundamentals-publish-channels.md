@@ -2,7 +2,7 @@
 title: Fundamentals - Publish a chatbot to various channels (Preview)
 description: Publish your bot to a channel so that your customers can engage with it where they are.
 keywords: "Publish; demo; demo website; channels, PVA"
-ms.date: 05/31/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Publish your bot (Preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 You need to publish your bot before your customers can engage with it. You can publish your bot on multiple platforms, or channels. Channels available in Power Virtual Agents include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
 

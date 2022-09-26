@@ -2,7 +2,7 @@
 title: Work with Power Apps bot conversation transcripts (Preview)
 description: Work with bot conversation transcripts exported from Power Apps and learn how to pull the data into Power BI.
 keywords: "PVA"
-ms.date: 06/01/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Work with Power Apps bot conversation transcripts (Preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 You can export bot session or conversation transcripts from both Power Virtual Agents and Power Apps. The information that each app exports is slightly different. We discussed the file that's exported from Power Virtual Agents here: [Download session transcripts in Power Virtual Agents](analytics-sessions.md#download-session-transcripts-in-power-virtual-agents). This article covers [conversation transcripts that you export from Power Apps](analytics-sessions.md#download-conversation-transcripts-in-power-apps). We'll also provide guidance on bringing that information into Power BI with dataflows.
 

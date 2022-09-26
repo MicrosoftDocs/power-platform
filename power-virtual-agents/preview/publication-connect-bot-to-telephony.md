@@ -1,7 +1,7 @@
 ---
 title: Connect your bot to Telephony (Preview)
 description: Connect your bot to the Telephony channel to interact with users over the phone.
-ms.date: 05/31/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza
@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Connect your bot to Telephony (Preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 Customers often prefer to pick up the phone when they interact with an organization. With the Telephony channel, you can connect your bot to your [Azure Communication Services](/azure/communication-services/) phone number to enable customers to interact with it over the phone.
 

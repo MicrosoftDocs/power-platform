@@ -1,7 +1,7 @@
 ---
 title: "Limitations of the Power Virtual Agents preview (Preview)"
 description: "Existing features that aren't supported in the Power Virtual Agents preview."
-ms.date: 05/10/2022
+ms.date: 10/10/2022
 ms.topic: overview
 author: v-alarioza
 ms.author: v-alarioza
@@ -13,14 +13,11 @@ searchScope:
 
 # Limitations (Preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 The Power Virtual Agents preview currently doesn't support some of the existing features you're used to in Power Virtual Agents, and available features have some limitations.
 
 ## Limitations of current features
-
-> [!IMPORTANT]
-> These are the current limitations as of 5/17/2022.
 
 - Preview bots are only available in English.
 - When sharing a bot, any Power Automate flows used in the conversation logic will not be shared. You'll have to manually share those flows if desired.  

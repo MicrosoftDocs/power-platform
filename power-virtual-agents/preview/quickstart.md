@@ -1,7 +1,7 @@
 ---
 title: "Power Virtual Agents preview quickstart (Preview)"
 description: "Discover the new features introduced in the Power Virtual Agents preview."
-ms.date: 05/10/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza
@@ -11,7 +11,7 @@ ms.collection: virtual-agent
 
 # Quickstart (Preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 This quickstart walks you through making a bot that uses new features and improvements introduced in the Power Virtual Agents preview. We'll create a bot that helps users make a reservation at a fictional restaurant.
 

@@ -2,7 +2,7 @@
 title: Download bot session transcripts (Preview)
 description: Download bot sessions from the last 30 days for further analysis.
 keywords: "PVA"
-ms.date: 06/01/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Download your bot session transcripts (Preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 You can download bot session or conversation transcripts from the past 30 days in both Power Virtual Agents and Power Apps. You can also change the retention period for transcripts from the default 30 days.
 
