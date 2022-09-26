@@ -1,8 +1,8 @@
 ---
-title: Moving between topics
-description: Redirect to other topics and how to use other topic management nodes.
+title: Move between topics
+description: Learn how to insert nodes to switch to other topics.
 keywords: "PVA"
-ms.date: 09/05/2022
+ms.date: 10/10/2022
 
 ms.topic: article
 author: v-alarioza
@@ -13,25 +13,22 @@ ms.custom: authoring, topics
 ms.collection: virtual-agent
 ---
 
-# Moving between topics
+# Move between topics
 
-As well as being called when a user sends a message to the bot, based on their trigger phrases, you can also call a topic from another topic. When you add a node, the **Topic Management** sub menu contains several nodes to allow you to manage movement between topics.
+Normally, a topic starts when a user sends a message to the bot, based on their message and the topic trigger phrases. To shift the conversation from the current topic to another topic, without starting the conversation over, add a **Redirect** node. When the conversation reaches the end of the new topic, the conversation resumes in the original topic.
 
 ## Prerequisites
 
 - [Create and edit topics](authoring-create-edit-topics.md)
 
-## Redirecting to another topic
+## Redirect to another topic
 
-1. To have the bot move to a different topic, select **+** to add a node, and then select **Topic Management**, then **Go to another topic**.
+1. Open your topic.
+1. Select **+** to add a node where you want to insert the transition to occur, then **Topic Management**, then **Go to another topic**.
 
     :::image type="content" source="media/authoring-moving-between-topics/topics-redirect-add-subtopic.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
 
-1. Select an existing topic from the list, or **Create a topic**.
-
-    > [!TIP]
-    > Before creating a new topic, save your current topic first.
-    > Creating a new topic will open the new topic in the authoring canvas, and any unsaved edits you have in the current topic will be lost.
+1. Select an existing topic from the list; it can be a system or custom topic. A **Redirect** node is then added to your topic.
 
     :::image type="content" source="media/authoring-moving-between-topics/topics-redirect-select-topic.png" alt-text="Screenshot of redirect topic list.":::
 
@@ -39,19 +36,21 @@ As well as being called when a user sends a message to the bot, based on their t
 
 1. Save your topic, then use the test bot pane to confirm that your bot successfully calls the next topic.
 
-In the authoring canvas for the original topic, you can insert additional nodes under the **Redirect** node.
-
-When the topic that is redirected to is finished, the bot will return to the original topic and continue with any nodes after the **Redirect** node.
+In the authoring canvas for the original topic, you can insert additional nodes after the **Redirect** node. When the topic that is redirected to is finished, the bot will return to the original topic and continue with any nodes after the **Redirect** node.
 
 :::image type="content" source="media/authoring-moving-between-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
 ## End the current or all active topics
 
-By default, a topic being called from another will return to the calling topic that once the topic has completed but. you can use the **End current topic** and **End all topics** for other behavior.
+By default, the conversation returns to the calling topic, once the redirected-to topic has completed. However, the **End Current Topic** and **End All Topics** nodes alter the normal course of the conversation.
 
-- Select **End all topics** to clear all active topics. This means that the next message recieved from the user will be treated in the same way as the first one in the conversation, with all topics being evaluated and the most appropriate one being started.
+- An **End Current Topic** node ends the current topic. If the current topic was called from another topic, the conversation returns to the original topic immediately. A common use of this node is within a condition branch, where one branch exits the topic early, while another branch continues the current topic.
+- An **End All Topics** node clears all active topics. Your bot will treat the next message from the user as the first message in a new conversation. Your bot will choose a topic based on the user message.
+<!--TODO Cut or add, based on Gary's reply.
+- An **End Conversation** node...
+-->
 
-- Select **End current topic** to end the current topic. If the current topic was called by another, the conversation will return to the calling topic immediately. A common use of this node is within a condition branch, where one branch exits the topic early, while another branch continues the current topic.
+Many of the system topics use these nodes to control how conversations end or start over. For more information, see [Use system topics in Power Virtual Agents public preview](authoring-system-topics.md).
 
 > [!TIP]
-> Using the **End all topics** node does not clear or reset any global variables. To clear global variables, use the **Clear variable values** node, as seen in the _Start over_ that is created as part of a bot's default content.
+> Using the **End All Topics** node does not clear or reset any global variables. To clear global variables, use a **Clear all variables** first. For an example, see the default **Start Over** system topic.
