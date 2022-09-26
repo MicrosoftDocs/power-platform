@@ -314,8 +314,6 @@
           href: preview/authoring-variables-bot.md
         - name: Create expressions using Power Fx
           href: preview/advanced-power-fx.md
-        - name: Add actions using Power Automate
-          href: preview/advanced-flow.md
         - name: Add multimedia cards to messages
           href: preview/advanced-cards.md
         - name: Customize speech responses with SSML
