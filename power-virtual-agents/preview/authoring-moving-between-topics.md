@@ -53,4 +53,4 @@ By default, the conversation returns to the calling topic, once the redirected-t
 Many of the system topics use these nodes to control how conversations end or start over. For more information, see [Use system topics in Power Virtual Agents public preview](authoring-system-topics.md).
 
 > [!TIP]
-> Using the **End All Topics** node does not clear or reset any global variables. To clear global variables, use a **Clear all variables** first. For an example, see the default **Start Over** system topic.
+> The **End All Topics** node does not clear or reset any global variables. To clear global variables, use a **Clear all variables** first. For an example, see the default **Start Over** system topic.
