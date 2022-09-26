@@ -14,7 +14,7 @@ searchScope:
 
 # Overview (Preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 We are excited to announce the evolution of Power Virtual Agents.
 
