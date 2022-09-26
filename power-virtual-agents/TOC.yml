@@ -1,7 +1,7 @@
-- name: Power Virtual Agents introduction
-  href: fundamentals-what-is-power-virtual-agents.md
-- name: Power Virtual Agents production
+- name: Power Virtual Agents
   items:
+  - name: Power Virtual Agents introduction
+    href: fundamentals-what-is-power-virtual-agents.md
   - name: Licensing for Power Virtual Agents
     href: requirements-licensing-subscriptions.md
   - name: Power Virtual Agents compliance offerings
