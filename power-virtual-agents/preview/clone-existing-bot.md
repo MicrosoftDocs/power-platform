@@ -1,7 +1,7 @@
 ---
 title: "Create a preview bot from the content of an existing bot (Preview)"
 description: "Create a new preview bot by cloning the content from an existing Power Virtual Agents bot."
-ms.date: 09/14/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza

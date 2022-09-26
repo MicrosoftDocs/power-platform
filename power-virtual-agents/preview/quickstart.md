@@ -1,7 +1,7 @@
 ---
 title: "Power Virtual Agents preview quickstart (Preview)"
 description: "Discover the new features introduced in the Power Virtual Agents preview."
-ms.date: 05/10/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza

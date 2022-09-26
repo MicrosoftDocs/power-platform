@@ -2,7 +2,7 @@
 title: Customize speech responses with SSML (Preview)
 description: Use Speech Synthesis Markup Language (SSML) in speech-specific responses to control how your bot speaks a message.
 keywords: PVA, speech, ssml, voice
-ms.date: 05/31/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: emgrol
 ms.author: v-eolshefski

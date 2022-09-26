@@ -2,7 +2,7 @@
 title: Customize your bot's voice (Preview)
 description: Use voice font and style settings to customize your bot's speech.
 keywords: "PVA"
-ms.date: 06/02/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: emgrol  
 ms.author: v-eolshefski

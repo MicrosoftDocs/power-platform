@@ -2,7 +2,7 @@
 title: Fundamentals - Analyze chatbot usage (Preview)
 description: Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents.
 keywords: "PVA"
-ms.date: 06/01/2022
+ms.date: 10/10/2022
 ms.topic: overview
 author: iaanw
 ms.author: iawilt

@@ -2,7 +2,7 @@
 title: Customize your bot (Preview)
 description: Change the name, icon, and color of your bot with CSS and JavaScript styling.
 keywords: "PVA"
-ms.date: 06/02/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt

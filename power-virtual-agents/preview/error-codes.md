@@ -4,7 +4,7 @@ description: "Troubleshoot error responses from your bot."
 author: v-alarioza
 ms.author: v-alarioza
 ms.topic: troubleshooting
-ms.date: 03/07/2022
+ms.date: 10/10/2022
 
 ms.reviewer: clmori
 manager: shellyha

@@ -2,7 +2,7 @@
 title: "Create and use entities (contains video) (Preview)"
 description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
 keywords: "PVA"
-ms.date: 01/25/2022
+ms.date: 10/10/2022
 
 ms.topic: article
 author: iaanw

@@ -2,7 +2,7 @@
 title: Summarize bot analytics, performance, and usage (Preview)
 description: The Summary analytics page shows you at a glance what bots and topics need improving.
 keywords: "PVA"
-ms.date: 06/01/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt

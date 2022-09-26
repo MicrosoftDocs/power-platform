@@ -2,7 +2,7 @@
 title: Download bot session transcripts (Preview)
 description: Download bot sessions from the last 30 days for further analysis.
 keywords: "PVA"
-ms.date: 06/01/2022
+ms.date: 10/10/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
