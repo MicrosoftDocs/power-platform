@@ -1,6 +1,36 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform-pr/power-platform/guidance/automation-coe/automation-admin-gov.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/automation-admin-gov",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform-pr/power-platform/guidance/automation-coe/automation-maturity-model-details.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/automation-maturity-model-details",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform-pr/power-platform/guidance/automation-coe/automation-maturity-model-overview.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/automation-maturity-model-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform-pr/power-platform/guidance/automation-coe/heat.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/heat",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform-pr/power-platform/guidance/automation-coe/manage-pad-on-windows.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/manage-pad-on-windows",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform-pr/power-platform/guidance/automation-coe/strategy.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/strategy",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/guidance/automation-coe/automation-coe-starter-kit.md",
       "redirect_url": "/power-automate/guidance/automation-kit/overview/introduction",
       "redirect_document_id": "false"
