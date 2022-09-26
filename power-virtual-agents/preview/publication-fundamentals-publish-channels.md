@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 # Publish your bot (Preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 You need to publish your bot before your customers can engage with it. You can publish your bot on multiple platforms, or channels. Channels available in Power Virtual Agents include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
 

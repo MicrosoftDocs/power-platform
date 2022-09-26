@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Analyze your bot's customer satisfaction metrics (Preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 The Customer Satisfaction page provides a detailed view of customer satisfaction (CSAT) survey data. The information includes the average CSAT score over time and the topics that are having the most impact on the CSAT score.
 

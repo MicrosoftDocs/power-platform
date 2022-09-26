@@ -17,7 +17,7 @@ searchScope:
 
 # Create and edit topics in your Power Virtual Agents bot (Preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 In Power Virtual Agents, a topic defines how a bot conversation plays out.
 
