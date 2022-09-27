@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 10/01/2022
+ms.date: 9/27/2022
 ms.topic: conceptual
 author: paulliew
 ms.subservice: admin
