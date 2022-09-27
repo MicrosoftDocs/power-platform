@@ -1,9 +1,8 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
-title: Add multimedia cards to messages
+title: Add multimedia cards to messages (Preview)
 description: Add rich multimedia responses to question and message nodes in Power Virtual Agents bots.
 keywords: "PVA"
-ms.date: 05/31/2022
+ms.date: 10/10/2022
 
 ms.topic: article
 author: v-alarioza
@@ -14,9 +13,9 @@ ms.custom: authoring, topics, variables, ceX
 ms.collection: virtual-agent
 ---
 
-# Add multimedia cards to messages
+# Add multimedia cards to messages (Preview)
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 Cards add rich multimedia responses to question and message nodes in your bot conversations. With cards, you can go beyond basic text replies by adding images, videos, and interactive elements.
 

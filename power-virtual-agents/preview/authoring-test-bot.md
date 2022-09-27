@@ -1,9 +1,8 @@
 ---
-ROBOTS: NOINDEX,NOFOLLOW
-title: "Check your chatbot with the Test bot"
+title: "Check your chatbot with the Test bot (Preview)"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
 keywords: "PVA"
-ms.date: 01/25/2022
+ms.date: 10/10/2022
 
 ms.topic: article
 author: iaanw
@@ -13,9 +12,9 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Test your Power Virtual Agents bot
+# Test your Power Virtual Agents bot (Preview)
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation.
 

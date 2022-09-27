@@ -1,16 +1,16 @@
 ---
-title: "Troubleshoot error codes"
+title: "Troubleshoot error codes (Preview)"
 description: "Troubleshoot error responses from your bot."
 author: v-alarioza
 ms.author: v-alarioza
 ms.topic: troubleshooting
-ms.date: 03/07/2022
+ms.date: 10/10/2022
 
 ms.reviewer: clmori
 manager: shellyha
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
-# Troubleshoot error codes
+# Troubleshoot error codes (Preview)
 
 When a bot encounters a problem during a conversation, it will send an error response.
 

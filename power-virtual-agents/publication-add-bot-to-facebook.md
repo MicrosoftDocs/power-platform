@@ -96,7 +96,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 ### Configure the Facebook channel in Power Virtual Agents
 
-1. In Power Virtual Agents, select **Manage** on the side pane, and then go to the **Channels** tab.
+1. In Power Virtual Agents, select **Settings** on the side pane, and then go to the **Channels** tab.
 
 1. Select the **Facebook** tile to open the configuration window.
 
@@ -160,7 +160,7 @@ After the review is successful, in the app's **Dashboard** under **App Review**,
 
 When you do not want the bot to be reachable in Facebook Messenger, you can remove the bot from Facebook.
 
-1. In Power Virtual Agents, select **Manage** on the side pane, and then go to the **Channels** tab.
+1. In Power Virtual Agents, select **Settings** on the side pane, and then go to the **Channels** tab.
 
 1. Select the **Facebook** tile and then **Delete**.
 
