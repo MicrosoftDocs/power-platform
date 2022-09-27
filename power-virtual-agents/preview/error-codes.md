@@ -45,7 +45,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 | [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number hasn't been set for [telephony][4].                  |
 
 [1]: authoring-create-edit-topics.md#go-to-another-topic
-[2]: advanced-flow.md
+[2]: ../advanced-flow.md
 [3]: authoring-create-edit-topics.md#edit-topics-with-the-code-editor
 [4]: publication-connect-bot-to-telephony.md
 [5]: authoring-create-edit-topics.md#edit-topics-with-the-code-editor

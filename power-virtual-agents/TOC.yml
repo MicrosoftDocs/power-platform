@@ -316,14 +316,10 @@
           href: preview/advanced-power-fx.md
         - name: Add multimedia cards to messages
           href: preview/advanced-cards.md
-        - name: Customize speech responses with SSML
-          href: preview/advanced-custom-speech-ssml.md
     - name: Publish and integrate
       items:
         - name: Key concepts - Publish your bot
           href: preview/publication-fundamentals-publish-channels.md
-        - name: Add bot to Telephony
-          href: preview/publication-connect-bot-to-telephony.md
         - name: Add bot to your live website
           href: preview/publication-connect-bot-to-web-channels.md
     - name: Monitor and diagnose
@@ -346,5 +342,3 @@
       items:
         - name: Customize the look and feel of the bot
           href: preview/customize-default-canvas.md
-        - name: Select voice font settings for speech
-          href: preview/advanced-speech-settings.md

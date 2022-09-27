@@ -1,6 +1,6 @@
 ---
 title: "Work with chatbot variables (Preview)"
-description: "Use variables with custom and prebuilt entities to created customized bot conversations."
+description: "Use variables with custom and prebuilt entities to created customized bot conversations in Power Virtual Agents preview."
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.service: power-virtual-agents
@@ -21,7 +21,7 @@ Save customers' responses in a bot conversation to variables and reuse them late
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
-You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview) as input parameters and save the output results from those actions.  
+You can also pass variables to [Power Automate](../advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview) as input parameters and save the output results from those actions.  
 
 ## Variable types
 
@@ -131,11 +131,11 @@ Some system variables are hidden from the variable context menu and must be acce
 | Activity.TypeId                      | string | ✔      | Type of [activity][], as a string.                              |
 | Activity.Name                        | string |        | Name of the event.                                              |
 | Activity.From.Id                     | string | ✔      | Channel-specific unique ID for the sender.                      |
-| Activity.From.Name                   | string | ✔      | Channel-specific user-friendly name of the sender. <sup>1</sup> |
+| Activity.From.Name                   | string | ✔      | Channel-specific user-friendly name of the sender. |
 
 [activity]: /azure/bot-service/bot-activity-handler-concept
 
-<sup>1</sup> For the [Telephony channel](publication-connect-bot-to-telephony.md), this will include the phone number of the caller.
+
 
 ## Use literal values
 

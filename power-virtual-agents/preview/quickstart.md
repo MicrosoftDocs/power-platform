@@ -63,7 +63,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. Change the edit mode to **Speech**.
 
-   The speech mode allows you to add a specific message for voice-enabled channels and enable the use of [SSML tags](advanced-custom-speech-ssml.md).
+   The speech mode allows you to add a specific message for voice-enabled channels.
 
     :::image type="content" source="media/quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
 

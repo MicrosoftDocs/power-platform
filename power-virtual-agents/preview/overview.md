@@ -23,11 +23,11 @@ The new intelligent bot authoring experience unifies the sophistication of Azure
 This evolution brings new features, including:
 
 - Updates to authoring experience
-  - [Multimedia cards​](advanced-cards.md)
+  - [Multimedia cards](advanced-cards.md)
   - [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
   - [Bot response variations](authoring-create-edit-topics.md#message-variations)
   - [Quick replies](authoring-create-edit-topics.md#quick-replies)
-  - [Speech authoring](advanced-custom-speech-ssml.md)
+
 
 - Power FX and variable management
   - [Enhanced variable management](authoring-variables.md)
