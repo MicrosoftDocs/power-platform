@@ -1,0 +1,222 @@
+### YamlMime:Hub
+
+title: Microsoft Power Platform guidance documentation
+summary: The Microsoft Power Platform guidance documentation provides information that's designed to help you create and implement the business and technology strategies necessary for your organization to succeed with Microsoft Power Platform.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: dynamics
+metadata:
+  title: Microsoft Power Platform guidance documentation
+  description: Provides access to Microsoft Power Platform guidance documentation
+  services: service  
+  ms.subservice: guidance
+  ms.topic: landing-page 
+  ms.collection: collection
+  author: KumarVivek
+  ms.author: kvivek
+  ms.date: 09/27/2022
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: cardtitle1
+      itemType: itemType
+      url: ./file1.md OR /file1
+    # Card
+    - title: cardtitle2
+      itemType: itemType
+      url: ./file2.md OR /file2
+    # Card
+    - title: cardtitle3
+      itemType: itemType
+      url: ./file3.md OR /file3
+
+# productDirectory section (optional)
+productDirectory:
+  title: sectiontitle # < 60 chars (optional)
+  summary: sectionsummary # < 160 chars (optional)
+  items:
+    # Card
+    - title: Adoption best practices
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/index/image1.svg OR /media/logos/image1.svg
+      links:
+        - url: adoption/methodolgy.md
+          text: Adoption overview
+        - url: adoption/strategy-best-practices.md
+          text: Strategy and vision
+    # Card
+    - title: cardtitle2
+      imageSrc: ./media/index/image2.svg OR /media/logos/image2.svg
+      links:
+        - url: ./file2a.md OR /file2a
+          text: linktext2a
+        - url: ./file2b.md OR /file2b
+          text: linktext2b
+    # Card
+    - title: cardtitle3
+      imageSrc: ./media/index/image3.svg OR /media/logos/image3.svg
+      links:
+        - url: ./file3a.md OR /file3a
+          text: linktext3a
+        - url: ./file3b.md OR /file3b
+          text: linktext3b
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  # Supports up to 3 subsections
+  sections:
+    - title: subsectiontitle1 # < 60 chars (optional)
+      summary: subsectionsummary1 # < 160 chars (optional)
+      items:
+        # Card
+        - title: cardtitle1
+          links:
+            - url: ./file1.md OR /file1
+              itemType: itemType
+              text: linktext1
+            - url: ./file2.md OR /file2
+              itemType: itemType
+              text: linktext2
+            - url: ./file3.md OR /file3
+              itemType: itemType
+              text: linktext3
+          # footerLink (optional)
+          footerLink:
+            url: ./filefooter.md OR /filefooter
+            text: See more
+        # Card
+        - title: cardtitle2
+          links:
+            - url: ./file1.md OR /file1
+              itemType: itemType
+              text: linktext1
+            - url: ./file2.md OR /file2
+              itemType: itemType
+              text: linktext2
+            - url: ./file3.md OR /file3
+              itemType: itemType
+              text: linktext3
+          # footerLink (optional)
+          footerLink:
+            url: ./filefooter.md OR /filefooter
+            text: See more
+    - title: subsectiontitle2 # < 60 chars (optional)
+      summary: subsectionsummary2 # < 160 chars (optional)
+      items:
+        # Card
+        - title: cardtitle1
+          links:
+            - url: ./file1.md OR /file1
+              itemType: itemType
+              text: linktext1
+            - url: ./file2.md OR /file2
+              itemType: itemType
+              text: linktext2
+            - url: ./file3.md OR /file3
+              itemType: itemType
+              text: linktext3
+          # footerLink (optional)
+          footerLink:
+            url: ./filefooter.md OR /filefooter
+            text: See more
+        # Card
+        - title: cardtitle2
+          links:
+            - url: ./file1.md OR /file1
+              itemType: itemType
+              text: linktext1
+            - url: ./file2.md OR /file2
+              itemType: itemType
+              text: linktext2
+            - url: ./file3.md OR /file3
+              itemType: itemType
+              text: linktext3
+          # footerLink (optional)
+          footerLink:
+            url: ./filefooter.md OR /filefooter
+            text: See more
+
+# tools section (optional)
+tools:
+  title: sectiontitle # < 60 chars (optional)
+  summary: sectionsummary # < 160 chars (optional)
+  items:
+    # Card
+    - title: cardtitle1
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/index/image1.svg OR /media/logos/image1.svg
+      url: ./file1.md
+    # Card
+    - title: cardtitle2
+      imageSrc: ./media/index/image2.svg OR /media/logos/image2.svg
+      url: ./file2.md
+    # Card
+    - title: cardtitle3
+      imageSrc: ./media/index/image3.svg OR /media/logos/image3.svg
+      url: ./file3.md
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+    - title: subsectiontitle1 # < 60 chars (optional)
+      summary: subsectionsummary1 # < 160 chars (optional)
+      items:
+        # Card
+        - title: cardtitle1
+          summary: cardsummary1
+          url: ./file1.md OR /file1
+        # Card
+        - title: cardtitle2
+          summary: cardsummary2
+          url: ./file1.md OR /file2
+        # Card
+        - title: cardtitle3
+          summary: cardsummary3
+          url: ./file1.md OR /file3
+  # footer (optional)
+  footer: "footertext [linktext](/footerfile)"
+
+# additionalContent section (optional)
+# Card with links style
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+    - title: subsectiontitle1 # < 60 chars (optional)
+      summary: subsectionsummary1 # < 160 chars (optional)
+      items:
+        # Card
+        - title: cardtitle1
+          links:
+            - text: link1a
+              url: ./file1a.md OR /file1a
+            - text: link1b
+              url: ./file1b.md OR /file1b
+        # Card
+        - title: cardtitle2
+          links:
+            - text: link2a
+              url: ./file2a.md OR /file2a
+            - text: link2b
+              url: ./file2b.md OR /file2b
+        # Card
+        - title: cardtitle3
+          links:
+            - text: link3a
+              url: ./file3a.md OR /file3a
+            - text: link3b
+              url: ./file3b.md OR /file3b
+  # footer (optional)
+  footer: "footertext [linktext](/footerfile)"
+        
+  
+     
+
+
+      
+
