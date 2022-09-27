@@ -44,9 +44,9 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 > [!IMPORTANT]
 > Bots can only be created in English in the Power Virtual Agents preview.
 
-## Customize the greeting topic
+## Customize the conversation start topic
 
-1. In the side navigation, select **Topics** and then select the **Greeting** topic.
+1. In the side navigation, select **Topics**. Then select the **System** tab to view the system topics and then select the **Conversation Start** topic. This topic is triggered when a user joins a new conversation and allows the bot to send a welcome message to the user.
 
 1. In the existing **Message** node, select the **Delete** button in the ellipsis menu.
 
@@ -60,16 +60,6 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
     :::image type="content" source="media/quickstart/image-card.png" alt-text="Screenshot of image card added to message node.":::
 
 1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. Please note, reservations can only be made for the next 7 days.`
-
-1. Change the edit mode to **Speech**.
-
-   The speech mode allows you to add a specific message for voice-enabled channels and enable the use of [SSML tags](advanced-custom-speech-ssml.md).
-
-    :::image type="content" source="media/quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
-
-1. Add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next 7 days.`
-
-   When the bot speaks the message over a phone call, it will emphasize "Please note" and pause for a moment before continuing.
 
 1. Add a third **Message** node and type the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
 
@@ -95,37 +85,55 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. For **Save response as**, [create a new variable](authoring-variables.md) named `reservationDateTime`.
 
-1. [Add a **ConditionItem** node](authoring-create-edit-topics.md#add-a-condition) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
+1. On the Question node, select the **Properties** button in the ellipsis menu.
 
-1. Enter the [Power Fx formula](advanced-power-fx.md) `Topic.reservationDateTime < Today() || DateDiff(Today(), Topic.reservationDateTime) > 7`. This formula will evaluate to true if the date the user provided is in the past or more than seven days away.
+1. On the **Question Properties** pane that appears on the right hand of the canvas, select **Question behavior** to see additional configuration for the question. 
 
-    :::image type="content" source="media/quickstart/condition-formula.png" alt-text="Screenshot of Power Fx formula in a condition node.":::
+1. Under the **Reprompt** heading, tick the **Customize** check box under **Retry prompt**. This allows you to set the question used to retry when a user provides an invalid response to the question, such as providing a value that does not contain a date or time in this case.
 
-1. Under the **ConditionItem** node, add a **Message** node. This message will remind the user that reservations can only be made in the next seven days. Enter the message `Sorry, I can only make reservations for the next seven days.`
+1. In the message box that is now shown, enter the message `Sorry, that doesn't look like a valid reservation date. Please enter your desired reservation date. e.g. '11-10-2022' or 'tomorrow'`.
 
-1. Under the **All Other Conditions** node, add a **Message** node. This message will confirm the user's reservation.
-    1. Enter `Your reservation has been made for`
-    1. Select **Insert variable** and choose **reservationDateTime** from the list
-    1. Enter `. We look forward to seeing you!`
+   :::image type="content" source="media/quickstart/retry-message.png" alt-text="Screenshot of the question retry message property.":::
+
+1. We only want to accept reservations for within the next 7 days, so we can add a validation rule and message to the question. Under the **Additional entity validation** section and the **Condition** property, click into the **Enter in a formula** input box and click the **Fx** button that appears. In the formula editor that appears, enter `Topic.reservationDateTime >= Today()` and click **Insert**.
+
+1. Under the **Condition not met prompt** select the **Customize** check box and enter the message `Sorry. It looks like the date you entered was in the past. Please enter a future date.`.
+
+   :::image type="content" source="media/quickstart/validation-rule.png" alt-text="Screenshot of the question validation properties.":::
+
+1. Add another **Question** node and enter the message `For how many people?`
+
+1. For **Identify**, choose **Number**. This [entity](advanced-entities-slot-filling.md) enables your bot to extract a number from the user's response.
+
+1. For **Save response as**, [create a new variable](authoring-variables.md) named `reservationNumber`.
+
+1. Reservations can only be made for a maximum of 6 people, so we need to let the user know if they have exceeded this number. [Add a **Condition** node](authoring-create-edit-topics.md#add-a-condition), select **Select a variable** and then choose the `reservationNumber` variable.
+
+1. Change the operator dropdown to **is greater than or equal to** and then replace the **Enter or select a value** placeholder with `7`. 
+
+   :::image type="content" source="media/quickstart/validation-rule.png" alt-text="Screenshot of the condition node to check if the reservation exceeds the maximum number of people.":::
+
+1. Under the **Condition** node, add a **Message** node. Enter the message `Sorry, reservations can only be made for a maximum of 6 guests. Please call us to make a reservation for a larger party.`
+
+1. Under the **All Other Conditions** node, add a **Message** node.
+    1. Enter `We look forward to seeing you and your party of .`
+    2. Select **Insert variable** and choose **reservationNumber** from the list
+    3. Enter `. We look forward to seeing you!`
 
     > [!TIP]
-    > You can also enter the full message by using braces around the variable `Your reservation has been made for {Topic.reservationDateTime}. We look forward to seeing you!`.
+    > You can also enter the full message by using braces around the variable `We look forward to seeing you and your party of {Topic.reservationNumber}. We look forward to seeing you!`.
 
     :::image type="content" source="media/quickstart/variable-reference.png" alt-text="Screenshot of variable in message node.":::
 
     When the bot responds with this message, the variable reference will be replaced with the value of the variable.
 
-    :::image type="content" source="media/quickstart/variable-replaced.png" alt-text="Screenshot of the variable's value shown in a message.":::
-
 1. Add a **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
-The **End of conversation** topic is a pre-built topic designed to check if the user is satisfied and asks them to rate their experience.
+The **End of conversation** topic is a system topic designed to check if the user is satisfied and asks them to rate their experience.
 
 1. Name the topic **Reservation** and select **Save**.
 
 ## Next steps
 
-1. Optionally, [customize your bot's voice font](advanced-speech-settings.md).
-
 1. [Publish your bot](publication-fundamentals-publish-channels.md).
 
-1. Test your bot using the [demo website](publication-connect-bot-to-web-channels.md), or call the phone number configured in Telephony.
+2. Test your bot using the [demo website](publication-connect-bot-to-web-channels.md). 
