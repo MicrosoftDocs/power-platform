@@ -1,10 +1,10 @@
 - name: Power Virtual Agents
   items:
-  - name: Power Virtual Agents introduction
+  - name: Overview
     href: fundamentals-what-is-power-virtual-agents.md
-  - name: Licensing for Power Virtual Agents
+  - name: Licensing
     href: requirements-licensing-subscriptions.md
-  - name: Power Virtual Agents compliance offerings
+  - name: Compliance offerings
     href: admin-certification.md
   - name: Quotas, limits, and configuration values
     href: requirements-quotas.md
@@ -282,9 +282,9 @@
             href: teams/configuration-add-skills-teams.md
       - name: GDPR compliance
         href: teams/gdpr-summary-teams.md
-- name: Power Virtual Agents preview
+- name: Power Virtual Agents (preview)
   items:
-    - name: Overview 
+    - name: What's in preview
       href: preview/overview.md
     - name: Quickstart
       href: preview/quickstart.md
