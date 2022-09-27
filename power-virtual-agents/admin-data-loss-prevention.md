@@ -48,7 +48,7 @@ The following Power Virtual Agents connectors are available in the Power Platfor
 | Connector name | Description |
 |-------------------------|-------------------------|
 | Skills with Power Virtual Agents | Block bot makers from using skills in Power Virtual Agents chatbots.</br>See [Example 1 – Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md) and [Example 2 – Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md) for more details. |
-| Chat without Azure AD authentication in Power Virtual Agents | Block bot makers from configuring chatbots that aren't configured for authentication.</br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot.</br>See [Example 3 – Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md) for more details. |
+| Chat without Azure AD authentication in Power Virtual Agents | Block bot makers from publishing chatbots that aren't configured for authentication.</br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot.</br>See [Example 3 – Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md) for more details. |
 | Microsoft Teams channel in Power Virtual Agents | Block bot makers from enabling or using the Teams channel. |
 | Direct Line channels in Power Virtual Agents | Block any Direct Line channel.</br>For example, the Demo website, Custom website, and Mobile app channels would be blocked. |
 | Facebook channel in Power Virtual Agents | Block bot makers from enabling or using the Facebook channel. |
@@ -77,6 +77,8 @@ You can:
 
 > [!IMPORTANT]
 > Before using the PowerShell cmdlets, or the example scripts shown here, ensure you [Install all necessary modules using PowerShell](/power-platform/admin/powerapps-powershell#installation).
+>  
+> You need to be a [tenant admin](/power-platform/admin/use-service-admin-role-manage-tenant) to use the cmdlets.
 
 Typically, you would use these cmdlets in accordance with a DLP rollout process, which might consist of the following steps, in order:
 
@@ -98,94 +100,107 @@ You can configure an email and learn-more link using the `Set-PowerAppDlpErrorSe
 
 ![Screenshot of the Power Virtual Agents web app showing a DLP related error  with error text highlighted ](media/admin-data-loss-prevention/image2.png)
 
-To add the email and learn-more link for the first time, run the following PowerShell script, replacing the values for the `Email`, `Url`, and `TenantId` parameters with your own.
+To add the email and learn-more link for the first time, run the following PowerShell script, replacing the values for the `<email>`, `<URL>`, and `<tenant ID>` parameters with your own.
 
 ```PowerShell
 $ContactDetails = [pscustomobject] @{
     Enabled=$true
-    Email="admin@contoso.org"
+    Email="<email>"
 }
 $ErrorMessageDetails = [pscustomobject] @{
     Enabled=$true
-    Url="https://contoso.org/fix-chat-bot-dlp-issues"
+    Url="<URL>"
 }
 $ErrorSettingsObj = [pscustomobject] @{
     ErrorMessageDetails=$ErrorMessageDetails
     ContactDetails=$ContactDetails
 }
-New-PowerAppDlpErrorSettings -TenantId "9f6be000-XXXX-XXXX-9000-44a0d0000ert" P-ErrorSettings $ErrorSettingsObj
+New-PowerAppDlpErrorSettings -TenantId "<tenant ID>" -ErrorSettings $ErrorSettingsObj
 ```
 
+To update an existing configuration, use the same PowerShell script, and replace `New-PowerAppDlpErrorSettings` with `Set-PowerAppDlpErrorSettings`.
 
-To update an existing configuration, run the following PowerShell script, replacing the values for the `Email`, `Url`, and `TenantId` parameters with the new ones.
-
-```PowerShell
-$ContactDetails = [pscustomobject] @{
-    Enabled=$true
-    Email="newadmin@contoso.org"
-}
-$ErrorMessageDetails = [pscustomobject] @{
-    Enabled=$true
-    Url="https://contoso.org/fix-chat-bot-dlp-issues-v2"
-}
-$ErrorSettingsObj = [pscustomobject] @{
-    ErrorMessageDetails=$ErrorMessageDetails
-    ContactDetails=$ContactDetails
-}
-Set-PowerAppDlpErrorSettings -TenantId "9f6be790-XXXX-XXXX-9850-44a0d2649aef" -ErrorSettings $ErrorSettingsObj
-```
-
+> [!CAUTION]
+> These settings apply to all Power Platform apps within the specified tenant.
 
 ### Enable and configure DLP enforcement for chatbots
 
 You can enable, disable, configure, and audit DLP enforcement within Power Virtual Agents with the the `PowerVirtualAgentsDlpEnforcement` cmdlet.
 
-In any of the following examples, replace (or declare) `{tenant id}` with your tenant's ID.
+In any of the following examples, replace (or declare) `<tenant ID>` with your tenant's ID.
 
-You can scope to bots created after a certain date by replacing `{date}` with a date in the format `MM-DD-YYYY`. To remove the scope, delete the `-OnlfyForBotsCreatedAfter` parameter and its value.
+You can scope to bots created after a certain date by replacing `<date>` with a date in the format `MM-DD-YYYY`. To remove the scope, delete the `-OnlyForBotsCreatedAfter` parameter and its value.
 
 #### Confirm DLP enforcement for chatbots
 
 By default, DLP enforcement for chatbots is disabled in all tenants.
 
-You can run the following PowerShell script to see which bots have enforced DLP policies.
+You can run the following PowerShell cmdlet to check if DLP for Power Virtual Agents is enabled for a tenant.
 
 ```PowerShell
-Get-PowerVirtualAgentsDlpEnforcement -TenantId {tenant id} -Mode Enabled -OnlyForBotsCreatedAfter {date}
+Get-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID>
 ```
+
+> [!NOTE]
+> If you haven't configured Power Virtual Agents DLP, the results from the cmdlet will be empty.
+
+
 
 #### Use auditing or "soft" mode to see DLP errors in the Power Virtual Agents web or Teams apps
 
 Run the following PowerShell script to enable DLP policies in auditing mode. Bot makers will see DLP-related errors when configuring bots in the Power Virtual Agents web and Teams apps, but will not be blocked from performing DLP-related actions, and can publish bots as usual.
 
 ```PowerShell
-Set-PowerVirtualAgentsDlpEnforcement -TenantId {tenant id} -Mode SoftEnabled -OnlyForBotsCreatedAfter {date}
+Set-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID> -Mode SoftEnabled
 ```
+
+To find chatbots which could be impacted by your organization's existing DLP policies you can:
+
+1. Use the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/power-bi) to get a list of chatbots in your organization. Go to the Power Virtual Agents Overview page on the CoE Dashboard to see the chatbos and environment names in your organization.
+
+    ![Screenshot of the CoE Starter Kit dashboard opened to the Power Virtual Agents overview.](media/admin-data-loss-prevention/coe-dashboard.png)
+
+1. Run a campaign with the bot makers in your organization to address DLP errors or updated DLP policies. You can download all DLP errors thrown by a chatbot by selecting **Download details** on the error notification banner in Power Virtual Agents.
+
+++==TODO: Edit PII from image==++
+
+    ![Screenshot of the error notification banner showing the option to download details of the error.](media/admin-data-loss-prevention/download-dlp-error-details.png)
 
 #### Enable DLP enforcement for chatbots 
 
+> [!IMPORTANT]
+> Before enabling DLP enforcement, ensure you know which bots will show errors to your chatbot users due to DLP policiy violations. 
+>  
+> If you run into issues, you can exempt a bot from DLP policies or disable DLP enforcement while your makers fix the bot to comply with DLP policies.
+
 You can run the following PowerShell command to enforce DLP policies in Power Virtual Agents. Bot makers will be blocked or prevented from performing DLP-affected actions, and end users will see errors if they try to interact with the DLP-impacted features in a bot.
 
+++==Should date param be removed?==++
 ```PowerShell 
-Set-PowerVirtualAgentsDlpEnforcement -TenantId {tenant id} -Mode Enabled -OnlyForBotsCreatedAfter {date}
+Set-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID> -Mode Enabled -OnlyForBotsCreatedAfter <date>
 ```
 
 #### Exempt a bot from DLP policies
 
 If you've enabled DLP enforcement for your tenant but you need to exempt a bot from showing DLP errors to makers and end-users, you can run the following PowerShell script.
 
-Make sure to replace `{environment id}`, `{bot id}`, `{tenant id}`, and `{policy id}` with the appropriate IDs for the bot you want to exempt.
+Make sure to replace `<environment ID>`, `<bot ID>`, `<tenant ID>`, and `<policy ID>` with the appropriate IDs for the bot you want to exempt.
+
+>[!TIP]
+> You can find the `<environment ID>` and `<bot ID>` from the chatbot's URL. 
+>  
+> The `<policy ID>` is listed alongside the error details in the **Download details** file. You can download that file by selecting **Download details** on the error notification banner in Power Virtual Agents.
 
 ```PowerShell
-$environmentId = "{environment id}" 
-$botId = "{bot id}"; 
-$tenantId = "{tenant id}" 
-$policyName = "{policy id}"
+$environmentId = "<environment ID>" 
+$botId = "<bot ID>"; 
+$tenantId = "<tenant ID>" 
+$policyName = "<policy ID>"
 
 # Ensure the DLP commands are installed
 if (-not (Get-Command "Get-PowerAppDlpPolicyExemptResources" -ErrorAction SilentlyContinue))
 {
-    Write-Host "Please ensure the Power Apps DLP commands are available: https://docs.microsoft.com/en-us/power-platform/admin/powerapps-powershell#environments-commands" -ForegroundColor Red
+    Write-Host "Please ensure the Power Apps DLP commands are available: https://docs.microsoft.com/power-platform/admin/powerapps-powershell#environments-commands" -ForegroundColor Red
     return;
 }
 # Set up the PVA resource information
@@ -211,7 +226,7 @@ Write-Host "Added bot to exempt resources"
 The following command will disable DLP enforcement in chatbots.
 
 ```PowerShell  
-Set-PowerVirtualAgentsDlpEnforcement -TenantId {id} -Mode Disabled
+Set-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID> -Mode Disabled
 ```
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

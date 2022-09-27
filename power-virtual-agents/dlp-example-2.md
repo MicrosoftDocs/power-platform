@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 
 
-# Data loss prevention example 2 - Block HTTPs requests from Power Virtual Agents chatbots
+# Data loss prevention example 2 - Block HTTP requests from Power Virtual Agents chatbots
 
 Bot makers in your organization can [extend their bots with Bot Framework Composer](advanced-bot-framework-composer.md) and use HTTP requests.
 
@@ -38,6 +38,8 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 1.  Select the connector's menu ellipses (shown as three dots in a vertical line next to the connector's name), and then select **Block**. Select **Next**.
 
     ![Screenshot of the Power Platform admin center  showing the contextual menu for a connector available from the menu icon.](media/admin-data-loss-prevention/image5.png)
+
+
 
 1.  Under **Review**, Select **Update policy** to apply the DLP changes.
 

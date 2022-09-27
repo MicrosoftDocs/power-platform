@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 If a Power Virtual Agents chatbot is not configured to require end-user authentication, then anyone on the internet can chat with the bot.
 
-You can use data loss prevention (DLP) policies to block your bot makers from configuring chatbots that aren't configured for authentication to help prevent data exfiltration.
+You can use data loss prevention (DLP) policies to block your bot makers from configuring and publishing chatbots that aren't configured for authentication to help prevent data exfiltration.
 
 Bot makers will need to [configure end-user authentication with Teams or Azure AD v2 in Power Virtual Agents](configuration-end-user-authentication.md)if you use this connector in an enforced DLP policy.
 
@@ -38,7 +38,7 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 1.  Select the connector's menu ellipses (shown as three dots in a vertical line next to the connector's name), and then select **Block**. Select **Next**.
 
-    ![Screenshot of the Power Platform admin center showing the contextual menu for a connector available from the menu icon.](media/admin-data-loss-prevention/image5.png)
+    ![Screenshot of the Power Platform admin center showing the contextual menu for a connector available from the menu icon.](media/admin-data-loss-prevention/connect-block.png)
 
 1.  Under **Environments**, select **Scope**. Apply the DLP policy on the environment where the bot is created, or for all environments.
 
