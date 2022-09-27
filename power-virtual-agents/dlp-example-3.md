@@ -2,7 +2,7 @@
 title: "Use DLP to require chatbot users to be authenticated"
 description: "Block unauthenticated end users from interacting with chatbots."
 keywords: "PVA"
-ms.date: 9/9/2022
+ms.date: 10/07/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Data loss prevention example 3 - Require end-user authentication for Power Virtual Agents chatbots 
 
-If a Power Virtual Agents chatbot is not configured to require end-user authentication, then anyone on the internet can chat with the bot.
+If a Power Virtual Agents chatbot isn't configured to require end-user authentication, then anyone on the internet can chat with the bot.
 
 You can use data loss prevention (DLP) policies to block your bot makers from configuring and publishing chatbots that aren't configured for authentication to help prevent data exfiltration.
 
@@ -24,7 +24,7 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 ### Configure DLP to require authentication in the Power Platform admin center
 
-1.  In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) select **Data policies**.
+1.  In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Data policies**.
 
     1.  To create a new policy, select **New policy**, enter a name for the policy, and select **Next**.
 
@@ -55,7 +55,7 @@ You can confirm that this connector is being used in the DLP policy from the Pow
 
 First, open your bot from the environment where the DLP policy is applied.
 
-If the policy is enforced, you'll see an error banner with a **Go to Authentication** button and a message advising you to contact an admin or configure authentication.
+If the policy is enforced, you'll see an error banner with a **Go to Authentication** button, and a message advising you to contact an admin or configure authentication.
 
 ![Screenshot of a chat bot in the Power Virtual Agents web app with a banner that indicates DLP policies are in effect  and that authentication must be configured.](media/admin-data-loss-prevention/image11.png)
 

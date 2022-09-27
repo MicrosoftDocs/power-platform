@@ -2,7 +2,7 @@
 title: "Use DLP to block skills in chatbots"
 description: "Block skills from being used in Power Virtual Agents chatbots."
 keywords: "PVA"
-ms.date: 9/9/2022
+ms.date: 10/07/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -23,7 +23,7 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 ### Configure DLP to block skills in the Power Platform admin center
 
-1.  In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) select **Data policies**.
+1.  In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Data policies**.
 
     1.  To create a new policy, select **New policy**, enter a name for the policy, and select **Next**.
 
@@ -31,7 +31,7 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
     1.  To add this connector to an existing DLP policy, select the policy you want to update, and then select **Edit policy**.
 
-        ![Screenshot of the Power Platform admin center  open to the Data policies section  with an existing policy and the Edit Policy button highlighted.](media/admin-data-loss-prevention/image4.png)
+        ![Screenshot of the Power Platform admin center open to the Data policies section  with an existing policy and the Edit Policy button highlighted.](media/admin-data-loss-prevention/image4.png)
 
 1.  Under **Prebuilt connectors**, find the **Skills with Power Virtual Agents** connector.
 
@@ -49,7 +49,7 @@ You can confirm that this connector is being used in the DLP policy from the Pow
 
 First, open your bot from the environment where the DLP policy is applied, and then try to [add a skill to the bot](configuration-add-skills.md#configure-a-skill).
 
-If the policy is enforced, you'll see an error in the **Add a skill** pane. The error says "Skill not allowed by data loss prevention policy" and suggests you contact an admin to add the skill to the allow list. The **Skill manifest URL** field will also be highlighted with the message "This skill couldn't be validated. Review details and try again".
+If the policy is enforced, you'll see an error in the **Add a skill** pane. The error says "Skill not allowed by data loss prevention policy" and suggests you contact an admin to add the skill to the allowlist. The **Skill manifest URL** field will also be highlighted with the message "This skill couldn't be validated. Review details and try again".
 
 ![Screenshot of the Add a skill pane in Power Virtual Agents showing the errors that occur if skills are prohibited by DLP policy.](media/admin-data-loss-prevention/image7.png)
 

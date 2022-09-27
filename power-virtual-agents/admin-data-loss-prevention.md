@@ -2,7 +2,7 @@
 title: "Apply data loss prevention policies to chatbots"
 description: "Use and configure DLP policies with PowerShell cmdlets to help prevent accidental data exfiltration or data loss."
 keywords: "PVA"
-ms.date: 9/9/2022
+ms.date: 10/07/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -16,9 +16,9 @@ ms.collection: virtual-agent
 
 Organizational data is the most important asset administrators are responsible for safeguarding. The ability to build automation to use that data is a large part of their company's success.
 
-Users can rapidly build and roll out their high-value bots for their end-users and connect them with many data sources and services. Some of these might be external, third-party services and might even include some social networks.
+Users can rapidly build and roll out their high-value bots for their end-users. They can connect connect their bots with many data sources and services. Some of these sources and services might be external, third-party services, and might even include some social networks.
 
-Users generally have good intentions, but they can easily overlook the potential for exposure from data leakage to services and audiences that shouldn't have access to the data.
+Users generally have good intentions, but they can easily overlook the potential for exposure. This sort of exposure can result from data leakage or connections to services and audiences that shouldn't have access to the data.
 
 Administrators can govern chatbots in your organization using data loss prevention (DLP) policies with existing and Power Virtual Agents connectors. DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). To create a DLP policy, you need to be a [tenant admin](/power-platform/admin/use-service-admin-role-manage-tenant) or have the [Environment Admin role](/power-platform/admin/environments-overview#environment-permissions).
 
@@ -47,10 +47,10 @@ The following Power Virtual Agents connectors are available in the Power Platfor
 
 | Connector name | Description |
 |-------------------------|-------------------------|
-| Skills with Power Virtual Agents | Block bot makers from using skills in Power Virtual Agents chatbots.</br>See [Example 1 – Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md) and [Example 2 – Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md) for more details. |
-| Chat without Azure AD authentication in Power Virtual Agents | Block bot makers from publishing chatbots that aren't configured for authentication.</br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot.</br>See [Example 3 – Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md) for more details. |
+| Skills with Power Virtual Agents | Block bot makers from using skills in Power Virtual Agents chatbots. </br>See [Example 1 – Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md) and [Example 2 – Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md) for more details. |
+| Chat without Azure AD authentication in Power Virtual Agents | Block bot makers from publishing chatbots that aren't configured for authentication. </br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot. </br>See [Example 3 – Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md) for more details. |
 | Microsoft Teams channel in Power Virtual Agents | Block bot makers from enabling or using the Teams channel. |
-| Direct Line channels in Power Virtual Agents | Block any Direct Line channel.</br>For example, the Demo website, Custom website, and Mobile app channels would be blocked. |
+| Direct Line channels in Power Virtual Agents | Block any Direct Line channel. </br>For example, the Demo website, Custom website, and Mobile app channels would be blocked. |
 | Facebook channel in Power Virtual Agents | Block bot makers from enabling or using the Facebook channel. |
 | Omnichannel in Power Virtual Agents | Block bot makers from enabling or using the Omnichannel channel. |
 
@@ -70,7 +70,7 @@ You can configure whether DLP policies should be applied to your chatbots with t
 You can:
 
 -   Confirm if DLP is enabled for bots in your tenant
--   Enable or disable DLP in an auditing mode (`-Mode SoftEnabled`) so bot makers can see errors, but are not prevented from performing actions that would be blocked if DLP enforcement was fully enabled.
+-   Enable or disable DLP in an auditing mode (`-Mode SoftEnabled`) so bot makers can see errors, but aren't prevented from performing actions that would be blocked if DLP enforcement was fully enabled.
 -   Enable or disable DLP enforcement, which will show DLP enforcement errors, and prevent bot makers from publishing DLP-affected bots or configuring DLP-related settings.
 -   Exempt specific bots from DLP enforcement.
 -   Add and update the learn-more and contact email links that are shown to bot makers when they encounter DLP in the Power Virtual Agents web and Teams apps.
@@ -125,7 +125,7 @@ To update an existing configuration, use the same PowerShell script, and replace
 
 ### Enable and configure DLP enforcement for chatbots
 
-You can enable, disable, configure, and audit DLP enforcement within Power Virtual Agents with the the `PowerVirtualAgentsDlpEnforcement` cmdlet.
+You can enable, disable, configure, and audit DLP enforcement within Power Virtual Agents with the `PowerVirtualAgentsDlpEnforcement` cmdlet.
 
 In any of the following examples, replace (or declare) `<tenant ID>` with your tenant's ID.
 
@@ -148,21 +148,19 @@ Get-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID>
 
 #### Use auditing or "soft" mode to see DLP errors in the Power Virtual Agents web or Teams apps
 
-Run the following PowerShell script to enable DLP policies in auditing mode. Bot makers will see DLP-related errors when configuring bots in the Power Virtual Agents web and Teams apps, but will not be blocked from performing DLP-related actions, and can publish bots as usual.
+Run the following PowerShell script to enable DLP policies in auditing mode. Bot makers will see DLP-related errors when configuring bots in the Power Virtual Agents web and Teams apps, but they won't be blocked from performing DLP-related actions. They can also publish bots as usual.
 
 ```PowerShell
 Set-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID> -Mode SoftEnabled
 ```
 
-To find chatbots which could be impacted by your organization's existing DLP policies you can:
+To find chatbots that could be impacted by your organization's existing DLP policies, you can:
 
-1. Use the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/power-bi) to get a list of chatbots in your organization. Go to the Power Virtual Agents Overview page on the CoE Dashboard to see the chatbos and environment names in your organization.
+1. Use the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/power-bi) to get a list of chatbots in your organization. Go to the Power Virtual Agents Overview page on the CoE Dashboard to see the chatbots and environment names in your organization.
 
     ![Screenshot of the CoE Starter Kit dashboard opened to the Power Virtual Agents overview.](media/admin-data-loss-prevention/coe-dashboard.png)
 
 1. Run a campaign with the bot makers in your organization to address DLP errors or updated DLP policies. You can download all DLP errors thrown by a chatbot by selecting **Download details** on the error notification banner in Power Virtual Agents.
-
-++==TODO: Edit PII from image==++
 
     ![Screenshot of the error notification banner showing the option to download details of the error.](media/admin-data-loss-prevention/download-dlp-error-details.png)
 
@@ -175,7 +173,6 @@ To find chatbots which could be impacted by your organization's existing DLP pol
 
 You can run the following PowerShell command to enforce DLP policies in Power Virtual Agents. Bot makers will be blocked or prevented from performing DLP-affected actions, and end users will see errors if they try to interact with the DLP-impacted features in a bot.
 
-++==Should date param be removed?==++
 ```PowerShell 
 Set-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID> -Mode Enabled -OnlyForBotsCreatedAfter <date>
 ```
