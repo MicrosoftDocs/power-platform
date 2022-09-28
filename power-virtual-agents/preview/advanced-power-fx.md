@@ -37,6 +37,21 @@ For example, you'd need to use `System.Conversation.Id` to access the respective
 
 :::image type="content" source="media/advanced-power-fx/variable-prefix.png" alt-text="Screenshot of the Enter formula pane with an expression containing the System variable.":::
 
+## Use literal values
+
+Instead of using a variable, you can also enter literal values. To use a literal value, you must enter the value in the format that corresponds to its [type](authoring-variables.md#variable-types):
+
+| Type     | Format examples                                                                         |
+| -------- | --------------------------------------------------------------------------------------- |
+| String   | `"hi"`, `"hello world!"`, `"chatbot"`                                                   |
+| Boolean  | Only `true` or `false`                                                                  |
+| Number   | `1`, `532`, `5.258`, `-9201`                                                            |
+| Table    | `[1]`, `[45, 8, 2]`, `["cats", "dogs"]`                                                 |
+| Record   | `{ id: 1 }`, `{ message: "hello" }`, `{ name: "John", info: { age: 25, weight: 175 } }` |
+| DateTime | `Time(5,0,23)`, `Date(2022,5,24)`, `DateTimeValue("May 10, 2022 5:00:00 PM")`           |
+| Choice   | Not supported                                                                           |
+| Blank    | Only `Blank()`                                                                          |
+
 ## Use Power Fx to set a variable
 
 In this example, a Power Fx expression is used to convert the user's name to uppercase.

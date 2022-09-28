@@ -22,12 +22,10 @@ By default, a variable's value can only be used in the topic where this variable
 
 For example, in a "Welcome" topic, the bot asks for the customer's name and email. Then when the conversation goes to another topic, such as an "Appointment booking" topic, you want the bot to remember this customer's name and email address.
 
-These variables are called **global variables** because they apply across the entire bot.
+These variables are called **global variables** because they apply across the entire bot. By default, global variables apply during a single user session.
 
-By default, global variables apply during a single user session. Specify the global variables to distinguish them from topic-level variables.
-
-> [!NOTE]
-> A good alternative to making a variable global, is to [pass variables between topics](authoring-variables.md#passing-variables-between-topics). Consider if you really need a variable across all topics, or if you should make use of variable passing instead.
+> [!TIP]
+> An alternative to making a variable global, is to [pass variables between topics](authoring-variables.md#passing-variables-between-topics).
 
 ## Create a global variable
 
@@ -46,11 +44,9 @@ By default, global variables apply during a single user session. Specify the glo
 
 After you set a global variable, it will be available to all topics.
 
-When you're composing a bot message in a message node or question node, select the `{x}` button to see the global variable. Variables are sorted in alphabetical order. Global variables are grouped together because their names all begin with "Global."
+When you're composing a bot message in a message node or question node, select the `{x}` button to see available variables. Global variables are listed within the **Custom** tab, alongside any topic variables. Variables are sorted in alphabetical order.
 
 :::image type="content" source="media/authoring-variables-bot/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
-
-You will also see global variables listed in the variable picker, within the **Custom** tab, alongside any topic variables.
 
 ## Manage global variables
 
@@ -68,7 +64,7 @@ After you've created a global variable, you can see where it's first defined and
 
 Global variables are accessible from any topic, and the global variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session).
 
-Values can be cleared automatically when the **Clear Variable Values** node is used, such as within the [the **Start over** system topic](authoring-create-edit-topics.md#use-system-and-sample-topics), either via redirection from the bot or when the user triggers it directly (for example, by typing *Start over*). In this case, all global variables are reset.
+The values of global variables are cleared automatically by the **Clear Variable Values** node. This node is used in the [Start over system topic](authoring-create-edit-topics.md#use-system-and-sample-topics) which can be triggered either by redirection from the bot or when the user triggers it directly (for example, by typing "Start over"). In this case, all global variables are reset.
 
 ## Set a global variable's value from external sources
 

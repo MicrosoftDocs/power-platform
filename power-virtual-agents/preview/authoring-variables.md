@@ -21,11 +21,19 @@ Save customers' responses in a bot conversation to variables and reuse them late
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
-Variables can also be passed into, and returned from, [other topics](#receive-values-from-other-topics), [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview).  
+Variables can also be passed into, and returned from, [other topics](#receive-values-from-other-topics) and Power Automate.  
+
+## Variable scopes
+
+Variables can exist within three scopes:
+
+- **Topic**: Topic variables can only be referenced within the topic where it is created. This is the default scope for created variables.
+- **Global**: [Global variables](authoring-variables-bot.md) are available for use across all topics. You can change the scope of any topic variable to make it a global variable.
+- **System**: [System variables](#system-variables) are created automatically and provide additional contextual information about the conversation or the user. They are usually available in all topics.
 
 ## Variable types
 
-A variable is associated with a **type**. The type determines what values the variable can contain and the operators that you can use when you use the variable as part of a [condition](authoring-using-conditions.md).
+A variable is associated with a **type**. The type determines what values the variable can contain and the operators that you can use when you construct a logical expression with the corresponding variable.
 
 <!-- best viewed without wordwrap -->
 | Type     | Description                                                                                                           |
@@ -33,7 +41,7 @@ A variable is associated with a **type**. The type determines what values the va
 | String   | A sequence of characters used to represent text.                                                                      |
 | Boolean  | A logical value that can only be `true` or `false`.                                                                   |
 | Number   | Any real number.                                                                                                      |
-| Table    | A list of values, but all values must be the same type.                                                 |
+| Table    | A list of values, but all values must be the same type.                                                               |
 | Record   | A collection of name-value pairs where values can be any type.                                                        |
 | DateTime | A date, time, day of the week, or month relative to a point in time.                                                  |
 | Choice   | A list of string values that have associated synonyms.                                                                |
@@ -83,7 +91,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 
 ## Create a variable
 
-Variables can be created in any node that prompts you to select a variable as an output, such as the [**Question**](authoring-ask-a-question.md) node, a [Power Automate Flow](advanced-flow.md) or [another topic](/authoring-variables.md#Receive-values-from-other-topics).
+Variables can be created in any node that prompts you to select a variable as an output, such as the [**Question**](authoring-ask-a-question.md) node, a Power Automate Flow, or [another topic](/authoring-variables.md#Receive-values-from-other-topics).
 
 These nodes will automatically create new variables, with the appropriate type, for each of their output variable slots.
 
@@ -119,7 +127,7 @@ Typically you'll use a [question node](authoring-ask-a-question.md) to save user
 
 ## Variable initialization
 
-TODO...
+<!-- FIXME: what goes here? -->
 
 ## Use literal values
 
@@ -215,47 +223,37 @@ To return a variable to the original topic, set the variable's property:
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing a redirected topic with both values input and returned.":::
 
-## Variable scope
-
-By default, a variable can only be referenced within the topic where it is created and is said to be scoped to that topic.
-
-Variables can also existing within two other scopes.
-
-- [Global](authoring-variables-bot.md) - Global scoped variables are created by the bot author, but are available for use across all topics. You can change the scope of any topic variable to make it a global variable.
-- [System](#system-variables) - System variables are created automatically and provide additional contextual information about the conversation or the user. They are usually available in all topics.
-
-## Global variables
-
-See [Reuse variables across topics](authoring-variables-bot.md).
-
 ## System variables
 
-There are a number of built-in system variables that provide additional information about a conversation. These variables are shown within the variable picker on the **System** tab.
+There are a number of built-in system variables that provide additional information about a conversation.
 
 :::image type="content" source="media/authoring-variables/authoring-variables-system-variable-picker.png" alt-text="Screenshot of Create a new variable button.":::
 
-If you want to use system variables in a Power Fx formula, you must add `System.` before the name. For example, you'd need to use `System.Conversation.Id` instead of `Conversation.Id` (as shown at the top of the system tab in the variable picker above).
+If you want to use system variables in a Power Fx formula, you must add `System.` before the name. For example, you'd need to use `System.User.DisplayName` instead of `User.DisplayName`.
 
-Some system variables are hidden from the variable picker and must be accessed with a [Power Fx formula](advanced-power-fx.md).
+Some system variables are hidden from the variable context menu and must be accessed with a [Power Fx formula](advanced-power-fx.md).
 
 <!-- best viewed without wordwrap -->
-| Name                                 | Type   | Hidden | Definition                                                      |
-| ------------------------------------ | ------ | ------ | --------------------------------------------------------------- |
-| Conversation.Id                      | string |        | Unique ID for the current conversation.                         |
-| Conversation.TopicInitialUserMessage | string |        | User message which triggered the current topic.                 |
-| LastActivity.Id                      | string |        | ID of the previously sent [activity][].                         |
-| Activity.Channel                     | choice |        | Channel ID of the current conversation.                         |
-| Activity.ChannelId                   | string | ✔      | Channel ID of the current conversation, as a string.            |
-| Channel.DisplayName                  | string | ✔      | Display the name of the channel.                                |
-| Activity.ChannelData                 | any    | ✔      | An object that contains channel-specific content.               |
-| Activity.Value                       | any    | ✔      | Open-ended value.                                               |
-| Activity.Type                        | choice |        | Type of [activity][].                                           |
-| Activity.TypeId                      | string | ✔      | Type of [activity][], as a string.                              |
-| Activity.Name                        | string |        | Name of the event.                                              |
-| Activity.From.Id                     | string | ✔      | Channel-specific unique ID for the sender.                      |
-| Activity.From.Name                   | string | ✔      | Channel-specific user-friendly name of the sender. |
-| LastMessage.Text                   | string | ✔      | Last message text sent by the user. |
-| Activity.Text                        | string |        | Message text sent by the user on the current turn.                                  |
+| Name                           | Type   | Hidden | Definition                                                |
+| ------------------------------ | ------ | ------ | --------------------------------------------------------- |
+| Activity.Channel               | choice |        | Channel ID of the current conversation.                   |
+| Activity.ChannelData           | any    | ✔      | An object that contains channel-specific content.         |
+| Activity.ChannelId             | string | ✔      | Channel ID of the current conversation, as a string.      |
+| Activity.From.Id               | string | ✔      | Channel-specific unique ID for the sender.                |
+| Activity.From.Name             | string | ✔      | Channel-specific user-friendly name of the sender.        |
+| Activity.Name                  | string |        | Name of the event.                                        |
+| Activity.Text                  | string |        | Last message sent by the user.                            |
+| Activity.Type                  | choice |        | Type of [activity][].                                     |
+| Activity.TypeId                | string | ✔      | Type of [activity][], as a string.                        |
+| Activity.Value                 | any    | ✔      | Open-ended value.                                         |
+| Bot.Name                       | string |        | The name of your bot.                                     |
+| Channel.DisplayName            | string | ✔      | Display the name of the channel.                          |
+| Conversation.Id                | string |        | Unique ID for the current conversation.                   |
+| LastActivity.Id                | string |        | ID of the previously sent [activity][].                   |
+| LastMessage.Id                 | string |        | Id of the last message sent by the user                   |
+| LastMessage.Text               | string |        | The last message sent by the user.                        |
+| Recognizer.TriggerMessage.Id   | string |        | Id of the user message which triggered the current topic. |
+| Recognizer.TriggerMessage.Text | string |        | User message which triggered the current topic.           |
 
 [activity]: /azure/bot-service/bot-activity-handler-concept
 
