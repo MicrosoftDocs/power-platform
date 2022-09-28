@@ -42,7 +42,7 @@ productDirectory:
           text: CoE overview
         - url: /power-platform/guidance/coe/starter-kit-explained
           text: What's in the CoE starter Kit
-        - url: /power-platform/guidance/coe/
+        - url: /power-platform/guidance/coe/setup
           text: Set up the CoE starter Kit
         - url: /power-platform/guidance/coe/power-bi
           text: Use the CoE starter Kit
