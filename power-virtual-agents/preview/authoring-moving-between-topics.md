@@ -42,13 +42,12 @@ In the authoring canvas for the original topic, you can insert additional nodes 
 
 ## End the current or all active topics
 
-By default, the conversation returns to the calling topic, once the redirected-to topic has completed. However, the **End Current Topic** and **End All Topics** nodes alter the normal course of the conversation.
+By default, the conversation returns to the calling topic, once the redirected-to topic has completed. However, the **End Current Topic** and **End All Topics** nodes alter the normal course of the conversation but do not logically end the conversation.
 
 - An **End Current Topic** node ends the current topic. If the current topic was called from another topic, the conversation returns to the original topic immediately. A common use of this node is within a condition branch, where one branch exits the topic early, while another branch continues the current topic.
 - An **End All Topics** node clears all active topics. Your bot will treat the next message from the user as the first message in a new conversation. Your bot will choose a topic based on the user message.
-<!--TODO Cut or add, based on Gary's reply.
-- An **End Conversation** node...
--->
+
+To signal to the user's channel that you bot thinks that the conversation has ended, add an **End Conversation** node before the **End All Topics** node.
 
 Many of the system topics use these nodes to control how conversations end or start over. For more information, see [Use system topics in Power Virtual Agents public preview](authoring-system-topics.md).
 
