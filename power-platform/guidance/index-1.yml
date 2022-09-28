@@ -62,102 +62,52 @@ productDirectory:
 additionalContent:
   # Supports up to 4 subsections
   sections:
-    - title: Power Apps guidance # < 60 chars (optional)
-      summary: Guidance information focussed on effectively using Power Apps in your organization. # < 160 chars (optional)
+    - title: Related guidance centers# < 60 chars (optional)
+      summary: Guidance information focussed on individual Power Platform components # < 160 chars (optional)
       items:
         # Card
-        - title: cardtitle1
+        - title: Power Apps guidance
           links:
             - text: link1a
               url: ./file1a.md OR /file1a
             - text: link1b
               url: ./file1b.md OR /file1b
         # Card
-        - title: cardtitle2
+        - title: Power Automate guidance
           links:
             - text: link2a
               url: ./file2a.md OR /file2a
             - text: link2b
               url: ./file2b.md OR /file2b
         # Card
-        - title: cardtitle3
+        - title: Power BI guidance
           links:
             - text: link3a
               url: ./file3a.md OR /file3a
             - text: link3b
               url: ./file3b.md OR /file3b
 
-    - title: Power Automate guidance # < 60 chars (optional)
-      summary: Guidance information focussed on effectively using Power Automate in your organization. # < 160 chars (optional)
+    - title: Official docs # < 60 chars (optional)
+      summary: Official documentation resources for Power Platform components # < 160 chars (optional)
       items:
         # Card
-        - title: cardtitle1
-          links:
-            - text: link1a
-              url: ./file1a.md OR /file1a
-            - text: link1b
-              url: ./file1b.md OR /file1b
+        - title: Power Apps docs
+          summary: Quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
+          url: /power-apps
         # Card
-        - title: cardtitle2
-          links:
-            - text: link2a
-              url: ./file2a.md OR /file2a
-            - text: link2b
-              url: ./file2b.md OR /file2b
+        - title: Power Automate docs
+          summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
+          url: /power-automate
         # Card
-        - title: cardtitle3
-          links:
-            - text: link3a
-              url: ./file3a.md OR /file3a
-            - text: link3b
-              url: ./file3b.md OR /file3b
-
-
-      title: Power BI guidance # < 60 chars (optional)
-      summary: Guidance information focussed on effectively using Power BI in your organization. # < 160 chars (optional)
-      items:
-        # Card
-        - title: cardtitle1
-          links:
-            - text: link1a
-              url: ./file1a.md OR /file1a
-            - text: link1b
-              url: ./file1b.md OR /file1b
-        # Card
-        - title: cardtitle2
-          links:
-            - text: link2a
-              url: ./file2a.md OR /file2a
-            - text: link2b
-              url: ./file2b.md OR /file2b
-        # Card
-        - title: cardtitle3
-          links:
-            - text: link3a
-              url: ./file3a.md OR /file3a
-            - text: link3b
-              url: ./file3b.md OR /file3b
-
-additionalContent:
-# Supports up to 3 sections
-  sections:
-  - title: Power Platform documentation
-    items:
-      # Card
-      - title: Power Apps docs
-        summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
-        url: /powerapps/maker/common-data-service/data-platform-intro
-      # Card
-      - title: Power Automate docs
-        summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
-        url: /ai-builder
-      # Card
-      - title: Common Data Model
-        summary: "Unify data across all your business processes and enable interoperability among apps"
-        url: /common-data-model/
-      - title: Connectors
-        summary: "Connect to hundreds of data sources using a library of connectors"
-        url: /connectors/
+        - title: Power BI docs
+          summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
+          url: /power-bi
+        - title: Power Pages docs
+          summary: Design, host, and administer secure, modern, and low-code business websites.
+          url: /power-pages
+        - title: Power Virtual Agents docs
+          summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
+          url: /power-virtual-agents
 
   # footer (optional)
-  footer: "Power Platform documentation [linktext](/footerfile)"
+  footer: "Power Platform documentation [Power Platform docs](/power-platform)"
