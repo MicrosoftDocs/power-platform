@@ -20,34 +20,42 @@ metadata:
 
 # productDirectory section (optional)
 productDirectory:
-  title: sectiontitle # < 60 chars (optional)
-  summary: sectionsummary # < 160 chars (optional)
   items:
     # Card
     - title: Adoption best practices
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/index/image1.svg
       links:
-        - url: ./adoption/methodolgy.md
+        - url: /power-platform/guidance/adoption/methodolgy.md
           text: Adoption overview
-        - url: ./adoption/strategy-best-practices.md
+        - url: /power-platform/guidance/adoption/strategy-best-practices.md
           text: Strategy and vision
     # Card
     - title: Center of Excellence (CoE) Kit
-      imageSrc: ./media/index/image2.svg
+      imageSrc: /power-platform/guidance/media/index/image2.svg
       links:
-        - url: ./coe/overview.md
+        - url: /power-platform/guidance/coe/overview.md
           text: CoE overview
-        - url: ./coe/setup.md
+        - url: /power-platform/guidance/coe/setup.md
           text: Set up the CoE starter Kit
     # Card
     - title: Creator Kit
       imageSrc: ./media/index/image3.svg
       links:
-        - url: ./creator-kit/overview
+        - url: /power-platform/guidance/creator-kit/overview
           text: Creator kit overview
-        - url: ./creator-kit/setup.md
+        - url: /power-platform/guidance/creator-kit/setup.md
           text: Install Creator Kit
+    # Card
+    - title: More resources...
+      imageSrc: ./media/index/image3.svg
+      links:
+        - url: /power-platform/guidance/architecture/real-world-examples/overview
+          text: Real-world solution architecture examples
+        - url: /power-platform/guidance/expressroute/overview
+          text: Azure ExpressRoute and Power Platform
+        - url: /power-platform/guidance/icons
+          text: Power Platform icons
 
 # additionalContent section (optional)
 # Card with links style
