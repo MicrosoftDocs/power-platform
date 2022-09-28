@@ -24,7 +24,7 @@ productDirectory:
     # Card
     - title: Adoption best practices
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/index/image1.svg
+      imageSrc: ./media/sample1.svg
       links:
         - url: /power-platform/guidance/adoption/methodolgy.md
           text: Adoption overview
@@ -40,15 +40,15 @@ productDirectory:
           text: Set up the CoE starter Kit
     # Card
     - title: Creator Kit
-      imageSrc: ./media/index/image3.svg
+      imageSrc: ./media/sample1.svg
       links:
         - url: /power-platform/guidance/creator-kit/overview
           text: Creator kit overview
         - url: /power-platform/guidance/creator-kit/setup.md
           text: Install Creator Kit
     # Card
-    - title: More resources...
-      imageSrc: ./media/index/image3.svg
+    - title: More...
+      imageSrc: ./media/sample1.svg
       links:
         - url: /power-platform/guidance/architecture/real-world-examples/overview
           text: Real-world solution architecture examples
