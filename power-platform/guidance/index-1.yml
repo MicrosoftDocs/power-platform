@@ -26,7 +26,7 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/sample-adoption.svg
       links:
-        - url: /power-platform/guidance/adoption/methodolgy
+        - url: /power-platform/guidance/adoption/methodology
           text: Adoption overview
         - url: /power-platform/guidance/adoption/strategy-best-practices
           text: Strategy and vision
