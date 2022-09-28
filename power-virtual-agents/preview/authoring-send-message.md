@@ -15,28 +15,50 @@ ms.collection: virtual-agent
 
 # Send a message
 
-The **Message** node is used when you want to send a message from the bot to the user. Messages are usually simple text message, but can also include richer components, such as images, videos, quick replies and cards.
+The Message node is used when you want to send a message from the bot to the user. Messages are usually simple text messages, but can also include richer components, such as images, videos, quick replies, and cards.
 
 > [!TIP]
-> All the capabilities of the Message node are also available on the [Question node](authoring-ask-a-question.md), to allow you to author the message used to prompt the user for information.
+> All capabilities of the Message node are also available to the [Question node](authoring-ask-a-question.md).
 
 ## Prerequisites
 
-- [Create and edit topics](authoring-create-edit-topics.md)
+- [Create and edit topics](authoring-create-edit-topics.md).
 
-## Sending a text message
+## Send a text message
 
-1. To specify a response from the bot, select **+** to add a node, and then select **Send a message** to add a new **Message** node.
+1. Select **Add node** (**+**), then select **Send a message** to add a new **Message** node.
 
 1. Enter what you want the bot to say in the text box.
 
-    You can apply some basic formatting, such as bold, italics, and numbering. You can also [use variables](authoring-variables.md) that you defined elsewhere in your bot conversation.
+    :::image type="content" source="media/authoring-send-message/message-node.png" alt-text="Screenshot of the Message node.":::
 
-You can, optionally, add additional variations for your message text. When you do this, the bot will respond randomly with one of the variations each time the message is sent.
+1. Optionally, using the options in the node's menu bar, you can:
 
-1. Select **Add** and then select **Message variation** to add a text box for a message variation.
+    - Apply basic formatting, such as bold, italics, and numbering.
+    - [Use variables](authoring-variables.md) that you defined elsewhere in your bot conversation.
+    - [Add message variations](#use-message-variations).
 
-    :::image type="content" source="media/authoring-send-message/message-node-variation.png" alt-text="Select the synonyms icon." border="false":::
+## Use message variations
+
+When you add message variations, the bot will randomly pick one of the variations to use each time the node is triggered.
+
+### Add a message variation
+
+1. Select **Add**, then select **Message variation** to add a text box for a message variation.
+
+    :::image type="content" source="media/authoring-send-message/add-variation.png" alt-text="Screenshot of the add Message Variation option.":::
+
+1. Enter what you want the bot to say.
+
+    :::image type="content" source="media/authoring-send-message/message-node-variation.png" alt-text="Screenshot of a message variation added to a message node.":::
+
+1. Repeat above steps to add as many variations as you like.
+
+### Remove a message variation
+
+Select **Remove variation**.
+
+:::image type="content" source="media/authoring-send-message/remove-variation.png" alt-text="Screenshot of the remove variation button.":::
 
 ## Add a Basic card to a message
 
@@ -44,7 +66,7 @@ You can, optionally, add additional variations for your message text. When you d
 
 A basic card is a general-purpose card that you can use in various situations to add text, images, and interactive elements to bot responses.
 
-1. On the authoring canvas, select the plus (**+**) icon. Then select **Send a message** to add a message node.
+1. On the authoring canvas, select **Add node** (**+**). Then select **Send a message** to add a message node.
 
 1. Select **Add**, and then select **Basic card**.
 
@@ -58,11 +80,11 @@ You can also, optionally, add one or more buttons, which have the same propertie
 
 You can add an image to a message, which will be shown on a card.
 
-1. On the authoring canvas, select the plus (**+**) icon. Then select **Send a message** to add a message node.
+1. On the authoring canvas, select **Add node** (**+**). Then select **Send a message** to add a message node.
 
 1. Select **Add**, and then select **Image**.
 
-1. Under **Image URL**, enter the URL of your image.
+1. Under **Image**, enter the URL of your image.
 
 1. Optionally, enter a **Title** for the image.
 
@@ -72,7 +94,7 @@ You can add an image to a message, which will be shown on a card.
 
 You can add a video to a message, which will be shown on a card.
 
-1. On the authoring canvas, select the plus (**+**) icon. Then select **Send a message** to add a message node.
+1. On the authoring canvas, select **Add node** (**+**). Then select **Send a message** to add a message node.
 
 1. Select **Add**, and then select **Video**.
 
@@ -84,12 +106,12 @@ You can add a video to a message, which will be shown on a card.
 
 :::image type="content" source="media/authoring-send-message/add-adaptive-card.png" alt-text="Screenshot of a message node with an adaptive card.":::
 
-[Adaptive Cards](https://adaptivecards.io) are platform-agnostic cards, authored in JSON, you can tailor to your needs. You can design Adaptive Cards using the [Adaptive Cards Designer](https://adaptivecards.io/designer/), or you can manually create the JSON, adhering to the Adaptive Card schema.
+[Adaptive Cards](https://adaptivecards.io) are platform-agnostic cards that you can tailor to your needs. You can design Adaptive Cards using the [Adaptive Cards Designer](https://adaptivecards.io/designer/), or author the JSON by hand.
 
 > [!IMPORTANT]
 > Power Virtual Agents supports AdaptiveCard schema version 1.3 or lower.
 
-1. On the authoring canvas, select the plus (**+**) icon. Then select **Send a message** to add a message node.
+1. On the authoring canvas, select **Add node** (**+**). Then select **Send a message** to add a message node.
 
 1. Select **Add**, and then select **Adaptive card**.
 
@@ -99,55 +121,68 @@ You can add a video to a message, which will be shown on a card.
 
     :::image type="content" source="media/authoring-send-message/adaptive-card-expand.png" alt-text="Screenshot of an adaptive card with the Expand icon highlighted.":::
 
-## Manage multiple images, videos or cards in the same node
+## Manage multiple cards in the same node
 
-If you add more than one card to a node, two display options will appear in the node's menu when a card is selected:
+If you add two or more cards to a node, two display options will appear in the node's menu when a card is selected:
 
 - **Carousel** displays one card at a time.
 - **List** displays all cards in a vertical list.
 
 :::image type="content" source="media/authoring-send-message/card-display.png" alt-text="Screenshot of image cards in carousel view and list view.":::
 
-To remove an images / video / card from a node, select the **Delete** icon at the upper-right corner of the item.
+To remove a card from a node, select the **Delete** icon at the upper-right corner of the item.
 
 :::image type="content" source="media/authoring-send-message/delete-card.png" alt-text="Screenshot of an image card with the Delete icon highlighted.":::
 
-## Adding Quick replies
+## Use quick replies
 
-Quick replies can be added to a message to provide suggested responses or actions for a user, which they can choose to use, or ignore. To enforce a choice from a finite list, use a multiple choice [question node](authoring-ask-a-question.md).
+> [!IMPORTANT]
+> Not all channels support quick replies, in which case the user may not be able to interact them.
+>
+> Additionally, some channels have a limit on the number of quick replies that can be shown at once.
 
-To add a quick reply:
+Quick replies can be added to a message to provide suggested responses or actions for a user, which they can choose to use, or ignore.
 
-1. Select **Add**, then **Quick reply**.
-
-1. In the **Quick replies** box that appears on the node, enter the text for the quick reply and hit enter.
-
-:::image type="content" source="media/authoring-send-message/add-quick-reply.png" alt-text="Add quick replies to a question node" border="false":::
-
-By default, when used by a user, quick replies will send a message back to the bot, with the quick reply text shown in the chat history as if the user had typed the message themselves.
+When a quick reply is selected by a user, it will send a message back to the bot. The quick reply text is shown in the chat history as if the user had typed the message themselves.
 
 The quick reply buttons are removed from the chat history when the bot or user sends another activity.
 
-Quick replies can also be configured to carry out one of the following actions when used.
+Interacting with quick replies are optional. If you want to require a user to choose an option from a list, use a multiple choice [question node](authoring-ask-a-question.md) instead.
 
-- Open a URL
-- Make a call
-- Send a hidden message to the bot
+### Add a quick reply
 
-To change the behavior of a quick reply.
+1. Select **Add**, then **Quick reply**.
 
-1. After adding at least one quick reply, select the **Quick replies** list on the node.
+    :::image type="content" source="media/authoring-send-message/add-quick-reply.png" alt-text="Screenshot of the add a quick reply option.":::
 
-1. In the right hand properties pane, you can see further details for each quick reply.
+1. In the **Quick replies** box that appears on the node, enter the text for the quick reply and hit enter.
 
-1. Change the **Type** dropdown to choose the action for the quick reply. When you change the **Type**, the mandatory and optional properties (some less used properites will be found under **Advanced options**) for that type of quick reply will be shown, which you can fill in to complete the configuration of your quick reply.
+    :::image type="content" source="media/authoring-send-message/quick-reply.png" alt-text="Screenshot of quick replies added to a message node.":::
 
-> [!TIP]
-> Some user clients do not support quick replies, in which case the client may not render them. Some user clients have an upper limit on the number of quick replies that they allow.
+### Change quick reply type
+
+Quick replies can also be configured to carry out other types of actions. To change the action of a quick reply:
+
+1. Select the quick reply box to open the **Quick Replies properties** pane.
+
+    :::image type="content" source="media/authoring-send-message/open-quick-reply-properties.png" alt-text="Screenshot of quick reply properties pane.":::
+
+1. In the **Quick replies properties** pane, you can see further details for each quick reply.
+
+    :::image type="content" source="media/authoring-send-message/quick-reply-properties.png" alt-text="Screenshot of quick reply properties pane.":::
+
+1. Choose a value for **Type**:
+
+    - **Send a message** (default): Send a message to the bot, and show it in the chat history.
+    - **Open a URL**: Open a URL. The URL must start with `https://`.
+    - **Make a call**: Call a phone number. Must be in the format `tel:1234567890`.
+    - **Send a hidden message to the bot**: Send a message to the bot, but hide it from the chat history.
+
+The properties shown will change based on the type of quick reply you have selected. Additional options can be found under **Advanced options**.
 
 ## Add a speech message override
 
-By default, on channels which are speech enabled, such as Omnichannel, the message text entered in the message node will be used for both text display and voice. However, you can provide a speech override for a message.
+By default on voice-enabled channels, such as Omnichannel, the message text entered in the message node will be used for both text display and voice. However, you can provide a speech override for a message.
 
 1. On the message you wish to set a speech override for, select **Text**, and then select **Speech** to view the speech response.
 
@@ -161,11 +196,15 @@ By default, on channels which are speech enabled, such as Omnichannel, the messa
 
 1. Enter what you want the bot to say. Add as many variations for the speech response as needed.
 
-You can, optionally, add SSML to your message variations for a speech response, to control how the message is spoken.
+1. Optionally, [add SSML to your message variations](#use-ssml-to-customize-speech-responses) for a speech response to control how the message is spoken.
 
 ### Use SSML to customize speech responses
 
-In the message, select **SSML tags**, and then select the tags you want to add.
+:::image type="content" source="media/authoring-send-message/ssml-tagged-speech.png" alt-text="Screenshot of a speech message with SSML tags added.":::
+
+Speech Synthesis Markup Language (SSML) is an XML-based markup language that specifies how text is converted into synthesized speech. It's one of the many ways Power Virtual Agents makes your bot's responses sound like natural speech.
+
+In the message, select **SSML tags**, and then select the tags you want to add. You can add multiple tags to a single speech variation.
 
 :::image type="content" source="media/authoring-send-message/ssml-tag-options.png" alt-text="Screenshot of SSML tags in a speech message.":::
 
@@ -177,8 +216,6 @@ The table below describes what each tag does:
 | Break    | Insert pauses or breaks between words.                      |
 | Emphasis | Add levels of stress to words or phrases.                   |
 | Prosody  | Specify changes to pitch, contour, range, rate, and volume. |
-|          |                                                             |
 
-:::image type="content" source="media/authoring-send-message/ssml-tagged-speech.png" alt-text="Screenshot of a speech message with SSML tags added.":::
-
-You can add multiple tags to a single speech variation. You can also add SSML tags that don't appear in the helper menu. [Learn more about SSML](/azure/cognitive-services/speech-service/speech-synthesis-markup).
+> [!TIP]
+> You can also manually enter SSML tags that don't appear in the helper menu. To learn more about other available tags, see [Improve synthesis with Speech Synthesis Markup Language](/azure/cognitive-services/speech-service/speech-synthesis-markup).
