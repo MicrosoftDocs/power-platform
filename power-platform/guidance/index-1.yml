@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform guidance documentation
-summary: The Microsoft Power Platform guidance documentation provides information that's designed to help you create and implement the business and technology strategies necessary for your organization to succeed with Microsoft Power Platform.
+summary: Provides information to help you create and implement business and technology strategies using Microsoft Power Platform for your organization to be successful.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: dynamics
 metadata:
@@ -63,7 +63,7 @@ additionalContent:
   # Supports up to 4 subsections
   sections:
     - title: Power Apps guidance # < 60 chars (optional)
-      summary: subsectionsummary1 # < 160 chars (optional)
+      summary: Guidance information focussed on effectively using Power Apps in your organization. # < 160 chars (optional)
       items:
         # Card
         - title: cardtitle1
@@ -88,7 +88,33 @@ additionalContent:
               url: ./file3b.md OR /file3b
 
     - title: Power Automate guidance # < 60 chars (optional)
-      summary: subsectionsummary1 # < 160 chars (optional)
+      summary: Guidance information focussed on effectively using Power Automate in your organization. # < 160 chars (optional)
+      items:
+        # Card
+        - title: cardtitle1
+          links:
+            - text: link1a
+              url: ./file1a.md OR /file1a
+            - text: link1b
+              url: ./file1b.md OR /file1b
+        # Card
+        - title: cardtitle2
+          links:
+            - text: link2a
+              url: ./file2a.md OR /file2a
+            - text: link2b
+              url: ./file2b.md OR /file2b
+        # Card
+        - title: cardtitle3
+          links:
+            - text: link3a
+              url: ./file3a.md OR /file3a
+            - text: link3b
+              url: ./file3b.md OR /file3b
+
+
+      title: Power BI guidance # < 60 chars (optional)
+      summary: Guidance information focussed on effectively using Power BI in your organization. # < 160 chars (optional)
       items:
         # Card
         - title: cardtitle1
