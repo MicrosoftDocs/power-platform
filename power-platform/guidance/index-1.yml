@@ -17,21 +17,6 @@ metadata:
 
 # highlightedContent section (optional)
 # Maximum of 8 items
-highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  items:
-    # Card
-    - title: cardtitle1
-      itemType: itemType
-      url: ./file1.md OR /file1
-    # Card
-    - title: cardtitle2
-      itemType: itemType
-      url: ./file2.md OR /file2
-    # Card
-    - title: cardtitle3
-      itemType: itemType
-      url: ./file3.md OR /file3
 
 # productDirectory section (optional)
 productDirectory:
@@ -41,41 +26,41 @@ productDirectory:
     # Card
     - title: Adoption best practices
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/index/image1.svg OR /media/logos/image1.svg
+      imageSrc: ./media/index/image1.svg
       links:
-        - url: adoption/methodolgy.md
+        - url: ./adoption/methodolgy.md
           text: Adoption overview
-        - url: adoption/strategy-best-practices.md
+        - url: ./adoption/strategy-best-practices.md
           text: Strategy and vision
     # Card
     - title: Center of Excellence (CoE) Kit
-      imageSrc: ./media/index/image2.svg OR /media/logos/image2.svg
+      imageSrc: ./media/index/image2.svg
       links:
-        - url: coe/overview.md
+        - url: ./coe/overview.md
           text: CoE overview
-        - url: coe/setup.md
+        - url: ./coe/setup.md
           text: Set up the CoE starter Kit
     # Card
-    - title: cardtitle3
-      imageSrc: ./media/index/image3.svg OR /media/logos/image3.svg
+    - title: Creator Kit
+      imageSrc: ./media/index/image3.svg
       links:
-        - url: ./file3a.md OR /file3a
-          text: linktext3a
-        - url: ./file3b.md OR /file3b
-          text: linktext3b
+        - url: ./creator-kit/overview
+          text: Creator kit overview
+        - url: ./creator-kit/setup.md
+          text: Install Creator Kit
 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   # Supports up to 3 subsections
   sections:
-    - title: subsectiontitle1 # < 60 chars (optional)
+    - title: Power Apps guidance # < 60 chars (optional)
       summary: subsectionsummary1 # < 160 chars (optional)
       items:
         # Card
         - title: cardtitle1
           links:
-            - url: ./file1.md OR /file1
+            - url: ./file1.md
               itemType: itemType
               text: linktext1
             - url: ./file2.md OR /file2
