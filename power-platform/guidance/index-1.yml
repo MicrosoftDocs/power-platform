@@ -70,13 +70,13 @@ productDirectory:
           text: Power Platform icons
 
 # additionalContent section (optional)
-# Card with links style
 additionalContent:
   # Supports up to 4 subsections
   sections:
     - title: Related guidance centers
       summary: Guidance information focussed on individual Power Platform components # < 160 chars (optional)
       items:
+        # Cards with links style
         # Card
         - title: Power Apps guidance
           links:
@@ -105,8 +105,8 @@ additionalContent:
             - text: Power BI implementation planning
               url: /power-bi/guidance/powerbi-implementation-planning-introduction
 
-    - title: Official docs # < 60 chars (optional)
-      summary: Official documentation resources for Power Platform components # < 160 chars (optional)
+    - title: Documentation # < 60 chars (optional)
+      summary: Official documentation for Power Platform components
       items:
         # Card
         - title: Power Apps docs
