@@ -1,6 +1,6 @@
 ---
 title: View billed sessions (Preview)
-description: See Power Virtual Agents billed sessions.
+description: See Power Virtual Agents billed sessions in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article

@@ -1,6 +1,6 @@
 ﻿---
 title: "Create expressions using Power Fx (Preview)"
-description: "Use Power Fx to create complex bot logic using formulas to manipulate data."
+description: "Use Power Fx to create complex bot logic using formulas to manipulate data in Power Virtual Agents preview."
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article

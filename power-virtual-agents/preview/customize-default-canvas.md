@@ -1,6 +1,6 @@
 ---
 title: Customize your bot (Preview)
-description: Change the name, icon, and color of your bot with CSS and JavaScript styling.
+description: Change the name, icon, and color of your bot with CSS and JavaScript styling in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article

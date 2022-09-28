@@ -1,6 +1,6 @@
 ---
 title: Download bot session transcripts (Preview)
-description: Download bot sessions from the last 30 days for further analysis.
+description: Download bot sessions from the last 30 days for further analysis in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article

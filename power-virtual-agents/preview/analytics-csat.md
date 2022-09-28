@@ -1,6 +1,6 @@
 ---
 title: Analyze bot customer satisfaction metrics (Preview)
-description: Use AI-driven analytics to understand how well customers are interacting with your bot and identify areas for improvement.
+description: Use AI-driven analytics to understand how well customers are interacting with your bot and identify areas for improvement in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article

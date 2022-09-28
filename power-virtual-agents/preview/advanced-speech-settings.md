@@ -1,6 +1,6 @@
 ---
 title: Customize your bot's voice (Preview)
-description: Use voice font and style settings to customize your bot's speech.
+description: Use voice font and style settings to customize your bot's speech in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article

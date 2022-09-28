@@ -1,6 +1,6 @@
 ---
 title: Work with Power Apps bot conversation transcripts (Preview)
-description: Work with bot conversation transcripts exported from Power Apps and learn how to pull the data into Power BI.
+description: Work with bot conversation transcripts exported from Power Apps and learn how to pull the data into Power BI in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article

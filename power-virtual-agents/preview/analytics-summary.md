@@ -1,6 +1,6 @@
 ---
 title: Summarize bot analytics, performance, and usage (Preview)
-description: The Summary analytics page shows you at a glance what bots and topics need improving.
+description: The Summary analytics page shows you at a glance what bots and topics need improving in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article
