@@ -58,7 +58,7 @@ conceptualContent:
       summary: subsectionsummary1 # < 160 chars (optional)
       items:
         # Card
-        - title: cardtitle1
+        - title: My new card
           links:
             - url: ./file1.md
               itemType: itemType
@@ -89,7 +89,7 @@ conceptualContent:
           footerLink:
             url: ./filefooter.md OR /filefooter
             text: See more
-    - title: subsectiontitle2 # < 60 chars (optional)
+    - title: Power Automate Guidance # < 60 chars (optional)
       summary: subsectionsummary2 # < 160 chars (optional)
       items:
         # Card
