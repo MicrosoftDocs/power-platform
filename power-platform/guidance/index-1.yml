@@ -24,7 +24,7 @@ productDirectory:
     # Card
     - title: Adoption best practices
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/sample1.svg
+      imageSrc: ./media/sample-adoption.svg
       links:
         - url: /power-platform/guidance/adoption/methodolgy.md
           text: Adoption overview
