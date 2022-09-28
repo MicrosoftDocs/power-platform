@@ -175,7 +175,7 @@ Quick replies can also be configured to carry out other types of actions. To cha
 
     - **Send a message** (default): Send a message to the bot, and show it in the chat history.
     - **Open a URL**: Open a URL. The URL must start with `https://`.
-    - **Make a call**: Call a phone number.
+    - **Make a call**: Call a phone number. Must be in the format `tel:1234567890`.
     - **Send a hidden message to the bot**: Send a message to the bot, but hide it from the chat history.
 
 The properties shown will change based on the type of quick reply you have selected. Additional options can be found under **Advanced options**.
