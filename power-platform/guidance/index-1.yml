@@ -40,7 +40,7 @@ productDirectory:
           text: Set up the CoE starter Kit
     # Card
     - title: Creator Kit
-      imageSrc: ./media/sample1.svg
+      imageSrc: ./media/sample-creator.svg
       links:
         - url: /power-platform/guidance/creator-kit/overview
           text: Creator kit overview
