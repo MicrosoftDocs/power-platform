@@ -62,30 +62,36 @@ productDirectory:
 additionalContent:
   # Supports up to 4 subsections
   sections:
-    - title: Related guidance centers# < 60 chars (optional)
+    - title: Related guidance centers
       summary: Guidance information focussed on individual Power Platform components # < 160 chars (optional)
       items:
         # Card
         - title: Power Apps guidance
           links:
-            - text: link1a
-              url: ./file1a.md OR /file1a
-            - text: link1b
-              url: ./file1b.md OR /file1b
+            - text: Power Apps patterns
+              url: /power-apps/guidance/patterns/overview
+            - text: Planning a Power Apps project
+              url: /power-apps/guidance/planning/introduction
+            - text: Collaborating and co-developing apps
+              url: /power-apps/guidance/co-develop/overview
         # Card
         - title: Power Automate guidance
           links:
-            - text: link2a
-              url: ./file2a.md OR /file2a
-            - text: link2b
-              url: ./file2b.md OR /file2b
+            - text: Planning a Power Automate project
+              url: /power-automate/guidance/planning/introduction
+            - text: RPA with SAP
+              url: /power-automate/guidance/rpa-sap-playbook/introduction
+            - text: Automation Kit
+              url: /power-automate/guidance/automation-kit/overview/introduction
         # Card
         - title: Power BI guidance
           links:
-            - text: link3a
-              url: ./file3a.md OR /file3a
-            - text: link3b
-              url: ./file3b.md OR /file3b
+            - text: Migrate to Power BI
+              url: /power-bi/guidance/powerbi-migration-overview
+            - text: Power BI adoption roadmap
+              url: /power-bi/guidance/powerbi-adoption-roadmap-overview
+            - text: Power BI implementation planning
+              url: /power-bi/guidance/powerbi-implementation-planning-introduction
 
     - title: Official docs # < 60 chars (optional)
       summary: Official documentation resources for Power Platform components # < 160 chars (optional)
@@ -110,4 +116,4 @@ additionalContent:
           url: /power-virtual-agents
 
   # footer (optional)
-  footer: "Power Platform documentation [Power Platform docs](/power-platform)"
+  footer: "[Power Platform docs](/power-platform)"
