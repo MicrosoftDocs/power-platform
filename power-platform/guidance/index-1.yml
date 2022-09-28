@@ -51,7 +51,7 @@ productDirectory:
       imageSrc: ./media/sample-creator.svg
       links:
         - url: /power-platform/guidance/creator-kit/overview
-          text: Creator kit overview
+          text: Creator Kit overview
         - url: /power-platform/guidance/creator-kit/components
           text: What's in the Creator Kit
         - url: /power-platform/guidance/creator-kit/setup
