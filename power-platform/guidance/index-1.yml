@@ -6,10 +6,10 @@ summary: Provides information to help you create and implement business and tech
 brand: dynamics
 metadata:
   title: Microsoft Power Platform guidance documentation
-  description: Provides access to Microsoft Power Platform guidance documentation
+  description: Hub page with links to Microsoft Power Platform guidance documentation
   services: service
   ms.subservice: guidance
-  ms.topic: landing-page
+  ms.topic: hub-page
   ms.collection: collection
   author: KumarVivek
   ms.author: kvivek
@@ -26,17 +26,17 @@ productDirectory:
       # imageSrc should be square in ratio with no white space
       imageSrc: ./media/sample-adoption.svg
       links:
-        - url: /power-platform/guidance/adoption/methodolgy.md
+        - url: /power-platform/guidance/adoption/methodolgy
           text: Adoption overview
-        - url: /power-platform/guidance/adoption/strategy-best-practices.md
+        - url: /power-platform/guidance/adoption/strategy-best-practices
           text: Strategy and vision
     # Card
     - title: Center of Excellence (CoE) Kit
       imageSrc: ./media/sample1.svg
       links:
-        - url: /power-platform/guidance/coe/overview.md
+        - url: /power-platform/guidance/coe/overview
           text: CoE overview
-        - url: /power-platform/guidance/coe/setup.md
+        - url: /power-platform/guidance/coe/
           text: Set up the CoE starter Kit
     # Card
     - title: Creator Kit
@@ -44,7 +44,7 @@ productDirectory:
       links:
         - url: /power-platform/guidance/creator-kit/overview
           text: Creator kit overview
-        - url: /power-platform/guidance/creator-kit/setup.md
+        - url: /power-platform/guidance/creator-kit/setup
           text: Install Creator Kit
     # Card
     - title: More...
