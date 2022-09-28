@@ -138,5 +138,26 @@ additionalContent:
             - text: link3b
               url: ./file3b.md OR /file3b
 
+additionalContent:
+# Supports up to 3 sections
+  sections:
+  - title: Power Platform documentation
+    items:
+      # Card
+      - title: Power Apps docs
+        summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
+        url: /powerapps/maker/common-data-service/data-platform-intro
+      # Card
+      - title: Power Automate docs
+        summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
+        url: /ai-builder
+      # Card
+      - title: Common Data Model
+        summary: "Unify data across all your business processes and enable interoperability among apps"
+        url: /common-data-model/
+      - title: Connectors
+        summary: "Connect to hundreds of data sources using a library of connectors"
+        url: /connectors/
+
   # footer (optional)
-  footer: "footertext [linktext](/footerfile)"
+  footer: "Power Platform documentation [linktext](/footerfile)"
