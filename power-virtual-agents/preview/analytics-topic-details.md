@@ -1,6 +1,6 @@
 ---
 title: Analyze topic performance (Preview)
-description: See how your bot topics are performing and determine what you can do to improve customer satisfaction.
+description: See how your bot topics are performing and determine what you can do to improve customer satisfaction in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article

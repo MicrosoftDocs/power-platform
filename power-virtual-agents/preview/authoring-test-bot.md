@@ -1,6 +1,6 @@
 ---
 title: "Check your chatbot with the Test bot (Preview)"
-description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
+description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes in Power Virtual Agents preview."
 keywords: "PVA"
 ms.date: 10/10/2022
 

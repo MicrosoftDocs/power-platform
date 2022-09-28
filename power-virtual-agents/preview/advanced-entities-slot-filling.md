@@ -1,6 +1,6 @@
 ---
 title: "Create and use entities (contains video) (Preview)"
-description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
+description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling in Power Virtual Agents preview."
 keywords: "PVA"
 ms.date: 10/10/2022
 

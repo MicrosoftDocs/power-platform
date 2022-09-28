@@ -1,6 +1,6 @@
 ---
 title: Add multimedia cards to messages (Preview)
-description: Add rich multimedia responses to question and message nodes in Power Virtual Agents bots.
+description: Add rich multimedia responses to question and message nodes in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 
