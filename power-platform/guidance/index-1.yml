@@ -48,7 +48,7 @@ productDirectory:
           text: Install Creator Kit
     # Card
     - title: More...
-      imageSrc: ./media/sample1.svg
+      imageSrc: ./media/sample-more.svg
       links:
         - url: /power-platform/guidance/architecture/real-world-examples/overview
           text: Real-world solution architecture examples
