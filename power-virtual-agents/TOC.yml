@@ -1,4 +1,4 @@
-- name: Power Virtual Agents
+- name: Power Virtual Agents (production)
   items:
   - name: Overview
     href: fundamentals-what-is-power-virtual-agents.md
