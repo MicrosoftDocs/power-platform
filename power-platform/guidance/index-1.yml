@@ -32,7 +32,7 @@ productDirectory:
           text: Strategy and vision
     # Card
     - title: Center of Excellence (CoE) Kit
-      imageSrc: /power-platform/guidance/media/index/image2.svg
+      imageSrc: ./media/sample1.svg
       links:
         - url: /power-platform/guidance/coe/overview.md
           text: CoE overview
