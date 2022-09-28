@@ -1,5 +1,5 @@
 - name: Power Platform guidance
-  href: index.yml
+  href: index-1.yml
   items:
     - name: Power Platform adoption best practices
       href: adoption/methodology.md
@@ -412,7 +412,7 @@
           href: expressroute/setup.md
         - name: ExpressRoute readiness checklist
           href: expressroute/checklist.md
-    - name: Resources      
+    - name: Resources
       items:
         - name: Icons
           href: icons.md
