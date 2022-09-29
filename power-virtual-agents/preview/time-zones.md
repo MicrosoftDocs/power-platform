@@ -40,20 +40,20 @@ To determine the chatbot user's time zone, PVA attempts the following in order:
 1. If time zone is not available becasue a channel does not provide it in the message, PVA uses UTC.
 
 ## Set bot's time zone
-1. Add a Set a variable value node to a topic in your bot as shown below:
+1. Add a **Set a variable value** node to a topic in your bot as shown below:
 
 :::image type="content" source="media/timezone/select-set-variable-node.png" alt-text="Screenshot set variable node.":::
 
-2. In the Set a Variable node, click on the Select a variable arrow. Select System in the Select a variable panel that opens up. Select Conversation.LocalTimeZone.
+2. In the **Set a Variable** node, click on the **Select a variable** arrow. Select **System** in the **Select a variable** panel that opens up. Select `Conversation.LocalTimeZone`.
 
 :::image type="content" source="media/timezone/set-variable-value.png" alt-text="Screenshot set variable value.":::
 
-3. In the To value text box type America/Los_Angeles (this is the values that you can get from Noda Time website mentioned above)
+3. In the **To value** text box type `America/Los_Angeles` (this is the values that you can get from Noda Time website mentioned above)
 
 :::image type="content" source="media/timezone/set-time-zone.png" alt-text="Screenshot set time zone.":::
 
-4. Next, add a Message node.
-5. In the message text box type, "The local time zone is: " and then click on {x} to insert Conversation.LocalTimeZone variable on the System tab. Next, add "The local time zone offset is: " and insert Conversation.LocalTimeZoneOffset on the System tab. 
+4. Next, add a **Message** node.
+5. In the text box type, _"The local time zone is: "_ and then click on **{x}** to insert `Conversation.LocalTimeZone` variable on the **System** tab. Next, add _"The local time zone offset is: "_ and insert `Conversation.LocalTimeZoneOffset` on the **System** tab. 
 
 :::image type="content" source="media/timezone/set-message.png" alt-text="Screenshot send message":::
 
