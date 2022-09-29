@@ -21,13 +21,13 @@ Save customers' responses in a bot conversation to variables and reuse them late
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
-Variables can also be passed into, and returned from, [other topics](#receive-values-from-other-topics) and Power Automate.  
+Variables can also be passed into, and returned from, [other topics](#receive-values-from-other-topics) and Power Automate flows.  
 
 ## Variable scopes
 
 Variables can exist within three scopes:
 
-- **Topic**: Topic variables can only be referenced within the topic where it is created. This is the default scope for created variables.
+- **Topic**: Topic variables can only be referenced within the topics in which they are created. This is the default scope for created variables.
 - **Global**: [Global variables](authoring-variables-bot.md) are available for use across all topics. You can change the scope of any topic variable to make it a global variable.
 - **System**: [System variables](#system-variables) are created automatically and provide additional contextual information about the conversation or the user. They are usually available in all topics.
 
@@ -91,7 +91,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 
 ## Create a variable
 
-Variables can be created in any node that prompts you to select a variable as an output, such as the [**Question**](authoring-ask-a-question.md) node, a Power Automate Flow, or [another topic](/authoring-variables.md#Receive-values-from-other-topics).
+Variables can be created in any node that prompts you to select a variable as an output, such as a [**Question**](authoring-ask-a-question.md) node, a Power Automate flow, or [another topic](/authoring-variables.md#Receive-values-from-other-topics).
 
 These nodes will automatically create new variables, with the appropriate type, for each of their output variable slots.
 
@@ -119,7 +119,7 @@ Typically you'll use a [question node](authoring-ask-a-question.md) to save user
 
 1. For **Set variable**, choose or create a [new variable](#create-a-variable).
 
-1. For **To value**, assign a value using one of the following 3 options.
+1. For **To value**, assign a value using one of the following options:
 
    - Use a [literal value](#use-literal-values)
    - Choose an existing variable of the same type from the variable picker. This will set your variable to the same value as the variable you choose.
@@ -139,9 +139,9 @@ Instead of selecting a variable from the menu, you can type a literal value into
 
 The node will attempt to interpret literal values entered as String, Number or a Boolean type.
 
-For example, entering _123_ will be interpreted as Number. If you wanted this interpreted as a string value instead, you could wrap this value in double quotes, like _"123"_.
+For example, entering `123` will be interpreted as Number. If you wanted this interpreted as a string value instead, you could wrap this value in double quotes, like `"123"`.
 
-For some scenarios, or where you're using more complex types, To set a specific type, use the appropriate [Power Fx formula](advanced-power-fx.md) as per the following table:
+For some scenarios, or where you're using more complex types, use the appropriate [Power Fx formula](advanced-power-fx.md) to set a specific type.
 
 ## Variables pane
 
@@ -167,6 +167,8 @@ In the variable properties pane you can rename a variable, see where a variable 
 
 ## Passing variables between topics
 
+<!-- TODO: this section needs to be re-written with a specific scenario so that its less confusing -->
+
 When you redirect to other topics, you can pass values into variables in the destination topic or get variables back from it. Passing variables between topics is especially useful when you already have information that the topic needs. Your users will appreciate not having to answer the question again. It's also helpful when you refactor and separate your topics into reusable components and you want to pass variables across the topics.
 
 ### Receive values from other topics
@@ -175,31 +177,33 @@ When a topic defines a variable (for example, by a question node), the bot asks 
 
 To receive values from other topics, set the variable's property:
 
-1. In the **Question** node, select the variable that you want to receive values from other topics.
+1. Go to the topic that you want to receive values from other topics. This will be your destination topic.
 
-1. In the **Variables properties** pane,  under **Topic (limited scope)** select **Receive values from other topics**.
+1. Select the variable that you want to receive values from other topics.
+
+1. In the **Variables properties** pane, under **Topic (limited scope)** select **Receive values from other topics**.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-properties-receive-input.png" alt-text="Screenshot of the authoring canvas showing the Variable properties pane with Receive values from other topics selected.":::
 
 1. Save the topic.
 
-1. Go to a topic that you want to redirect to. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirecting-to-another-topic) to redirect to the correct topic.
+1. Go to a different topic. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirecting-to-another-topic) to add a Redirect node to the destination topic.
 
-1. Select **+ Add input for destination topic**.
+1. Select **+ Add input**.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for the destination topic.":::
 
-1. Select a variable in the redirected topic that you want to pass the variable to.
+1. Select the variable from the destination topic that you want to pass a value to.
 
-    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step2.png" alt-text="Screenshot of the authoring canvas showing selecting the variable in the redirected topic.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step2.png" alt-text="Screenshot of the authoring canvas showing selecting the variable in the destination topic.":::
 
-1. Under **Enter or select a value**, select the variable in the current topic that you want to pass to the redirected topic.
+1. Select the variable in the current topic that you want to pass to the destination topic.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step3.png" alt-text="Screenshot of the authoring canvas showing selecting the variable from the list of options.":::
 
-    The variable is shown in the redirected node.
+    The variable is shown in the Redirect node.
 
-    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step4.png" alt-text="Screenshot of the authoring canvas showing the variable being passed into the redirected node.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step4.png" alt-text="Screenshot of the authoring canvas showing the variable being passed into the redirect node.":::
 
 ### Return values to original topics
 
@@ -209,7 +213,9 @@ In this case, the variable also becomes part of the original topic and can be us
 
 To return a variable to the original topic, set the variable's property:
 
-1. In the **Question** node, select the variable that you want to receive values from other topics.
+1. Go to the topic that you want to return values to other topics. This will be your destination topic.
+
+1. Select the variable that you want to return values to other topics.
 
 1. In the **Variables properties** pane, under **Topic (limited scope)** select **Return values to original topics**.
 
@@ -217,9 +223,9 @@ To return a variable to the original topic, set the variable's property:
 
 1. Save the topic.
 
-1. Go to a topic that you want to redirect to. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirecting-to-another-topic) to redirect to the correct topic.
+1. Go to the topic that you want to receive a return value. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirecting-to-another-topic) to add a Redirect node to the destination topic.
 
-    The variable that's being returned to the topic is shown in the redirected topic. Use the returned variable in your topic.
+    The variable that's being returned to the current topic is shown in the Redirect node. Use the returned variable in your current topic.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing a redirected topic with both values input and returned.":::
 

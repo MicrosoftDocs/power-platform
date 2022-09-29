@@ -324,10 +324,6 @@
           href: preview/authoring-variables.md
         - name: Reuse variables across topics
           href: preview/authoring-variables-bot.md
-        - name: Create expressions using Power Fx
-          href: preview/advanced-power-fx.md
-        - name: Add actions using Power Automate
-          href: preview/advanced-flow.md
     - name: Publish and integrate
       items:
         - name: Key concepts - Publish your bot
