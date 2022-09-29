@@ -41,20 +41,24 @@ To determine the chatbot user's time zone, PVA attempts the following in order:
 
 ## Set bot's time zone
 1. Add a Set a variable value node to a topic in your bot as shown below:
+
 :::image type="content" source="media/timezone/select-set-variable-node.png" alt-text="Screenshot set variable node.":::
 
 1. In the Set a Variable node, click on the Select a variable arrow. Select System in the Select a variable panel that opens up. Select Conversation.LocalTimeZone.
-:::image type="content" source="media/timezone/set-variable-value.png" alt-text="Screenshot set variable node.":::
+
+:::image type="content" source="media/timezone/set-variable-value.png" alt-text="Screenshot set variable value.":::
 
 1. In the To value text box type America/Los_Angeles (this is the values that you can get from Noda Time website mentioned above).
+
 :::image type="content" source="media/timezone/set-time-zone.png" alt-text="Screenshot set time zone.":::
 
 1. Next, add a Message node.
 1. In the message text box type, "The local time zone is: " and then click on {x} to insert Conversation.LocalTimeZone variable on the System tab. Next, add "The local time zone offset is: " and insert Conversation.LocalTimeZoneOffset on the System tab. 
+
 :::image type="content" source="media/timezone/set-message.png" alt-text="Screenshot send message":::
 
 1. Save and test the chbot.
 
 
 ## Reference
-[Power Fx date time reference](https://learn.microsoft.com/en-us/power-platform/power-fx/data-types#date-time-and-datetime)
+[Power Fx date time reference](https://learn.microsoft.com/power-platform/power-fx/data-types#date-time-and-datetime)
