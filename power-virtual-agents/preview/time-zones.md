@@ -20,7 +20,7 @@ As you build bots in PVA, you'll likely run into scenarios where you must displa
 
 - Prebuilt entities 
 - System level vairables 
-- Determine which time zone to use
+- Time zone determination
 
 ## Prebuild entitities:
 To manage data and time in your bots, PVA provides the following prebuilt entities:  
@@ -33,7 +33,7 @@ PVA also provides the following system-level variables to help you manage the ti
 - `Conversation.LocalTimeZone` stores the bot user's time zone. Supports both read and write operations. You can set the Conversation.LocalTimeZone to any valid time zone listed on the [Noda Time](https://nodatime.org/timezones) website. After you do that, the bot uses this time zone to determine the date and time for your chatbot. 
 - `Conversation.LocalTimeZoneOffset` is a read-only variable you can use to determine the UTC offset for the local time. 
 
-## Determine time zone
+## Time zone determination
 To determine the chatbot user's time zone, PVA attempts the following in order:
 1. If the bot developer has set the `Conversation.LocalTimeZone` with a valid time zone from [Noda Time](https://nodatime.org/timezones), use that as the time zone.
 1. If `Conversation.LocalTimeZone` has not been set, PVA tries to determine the time from the message the user sent to the bot
