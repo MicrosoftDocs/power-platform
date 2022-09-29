@@ -22,15 +22,16 @@ By default, a variable's value can only be used in the topic where this variable
 
 For example, in a "Welcome" topic, the bot asks for the customer's name and email. Then when the conversation goes to another topic, such as an "Appointment booking" topic, you want the bot to remember this customer's name and email address.
 
-These variables are called **global variables** because they apply across the entire bot.
+These variables are called **global variables** because they apply across the entire bot. By default, global variables apply during a single user session.
 
-Global variables apply during a single user session. Specify the global variables to distinguish them from topic-level variables.
+> [!TIP]
+> An alternative to making a variable global, is to [pass variables between topics](authoring-variables.md#passing-variables-between-topics).
 
 ## Create a global variable
 
 1. Create a [new variable](authoring-variables.md#create-a-variable) or [use the variables pane](authoring-variables.md#variables-pane) to open an existing variable.
 
-1. On the **Variable properties** pane, under **Usage**, select **Bot (any topic can access)**.
+1. On the **Variable properties** pane, under **Usage**, select **Global (any topic can access)**.
 
 1. The variable name will be given a prefix string `global.`, to differentiate it from the topic-level variables. For example, the variable `UserName` is displayed as `global.UserName`.
 
@@ -43,57 +44,27 @@ Global variables apply during a single user session. Specify the global variable
 
 After you set a global variable, it will be available to all topics.
 
-When you're composing a bot message in a message node or question node, select the `{x}` button to see the global variable. Variables are sorted in alphabetical order. Global variables are grouped together because their names all begin with "Global."
+When you're composing a bot message in a message node or question node, select the `{x}` button to see available variables. Global variables are listed within the **Custom** tab, alongside any topic variables. Variables are sorted in alphabetical order.
 
 :::image type="content" source="media/authoring-variables-bot/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
 
-When you use a condition node, a flow action node, or a skill node, you'll also see global variables available.
-
 ## Manage global variables
 
-After you've created a global variable, you can see where it's first defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-create-edit-topics.md#add-a-condition).
-
-### Go to the source of a global variable's definition
-
-1. Select any variable in the authoring canvas.
-
-1. On the **Variable properties** pane, select **Go to source**.
-
-:::image type="content" source="media/authoring-variables-bot/bot-variable-source.png" alt-text="Screenshot showing the Variable Properties pane, with the Go to Source button highlighted":::
-
-This will take you to the node in the topic where the global variable was created.
+After you've created a global variable, you can see where it's first defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-using-conditions.md).
 
 ### Find all topics using a global variable
 
 1. Select any global variable in the authoring canvas.
 
-1. On the **Variable properties** pane, in the **Used by** section, select any of the topics where the variable is used to go straight to that topic and node.
+1. On the **Variable properties** pane, in the **Reference** section, select any of the topics where the variable is used to go straight to that topic and node.
 
 :::image type="content" source="media/authoring-variables-bot/bot-variable-used-by.png" alt-text="Screenshot showing the list of topics used by a variable in the Variable Properties pane.":::
-
-## Global variable initialization
-
-If a global variable is triggered before it has been initialized (or "filled in"), the bot will automatically trigger the part of the topic where the global variable is first defined&mdash;even when it's in a different topic&mdash;before returning to the original topic. This allows the bot to have all the variables filled in without interrupting the conversation.  
-
-For example, the customer starts the conversation on the "Appointment booking" topic, in which a global variable `global.UserName` is used. However, the `global.UserName` variable is first defined in the "Welcome" topic.
-
-When the conversation comes to the point in the "Appointment booking" topic where `global.UserName` is referenced, the bot will seamlessly pivot to the question node where `global.UserName` is first defined.
-
-After the customer answers the question, the bot will resume the "Appointment booking" topic.
-
-## Global variable behavior when implementing Actions via Power Automate flows or skills
-
-Sometimes, you might use a flow or skill to initialize or fill in a variable in a chatbot.
-
-However, when a user interacts with the chatbot, the variable might be filled in at an earlier point in the conversation, or you may have [already set the variables externally](#set-a-global-variables-value-from-external-sources).
-
-The flow or skill will still run and fill in the variable, overwriting whatever was previously stored in the variable.
 
 ## Global variables lifecycle and resetting its value
 
 Global variables are accessible from any topic, and the global variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session).
 
-The value is only cleared when the bot user ends up at [the **Start over** system topic](authoring-create-edit-topics.md#use-system-and-sample-topics), either via redirection from the bot or when the user triggers it directly (for example, by typing *Start over*). In this case, all global variables are reset.
+The values of global variables are cleared automatically by the **Clear Variable Values** node. This node is used in the [Reset Conversation system topic](authoring-system-topics.md#reset-conversation) which can be triggered either by redirection from the bot or when the user triggers it directly (for example, by typing "Start over"). In this case, all global variables are reset.
 
 ## Set a global variable's value from external sources
 
@@ -101,22 +72,22 @@ If you want to make sure the bot starts a conversation with some context, you ca
 
 For example, if your site already knows a user's name, then when they bring up a bot chat, you can let the bot know the customer's name before they start typing their first question. This lets the bot have a more intelligent conversation with the customer without asking for their name again.
 
-### Set global variable from external source
+### Allow external source to set global variable
 
 1. Select any variable in the authoring canvas.
 
 1. On the **Variable properties** pane, in the **Usage** section, select the checkbox **External sources can set values**.
 
-:::image type="content" source="media/authoring-variables-bot/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
+    :::image type="content" source="media/authoring-variables-bot/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
 
-1. If you're [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#add-your-bot-to-your-website), you can append the variables and their definitions. Or, if you'd like a little more control, you can use a `<script>` code block to call and use variables programmatically.
+### Set global variable in an embedded bot
 
-    > [!NOTE]
-    > The variable name in the query string must match the global variable without the `global.` prefix. For example, a global variable `global.UserName` must be rendered as `UserName=`.
+If you're [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#add-your-bot-to-your-website), you can append the variables and their definitions. Or, if you'd like a little more control, you can use a `<script>` code block to call and use variables programmatically.
+
+> [!NOTE]
+> The variable name in the query string must match the global variable without the `global.` prefix. For example, a global variable `global.UserName` must be rendered as `UserName=`.
 
 The described examples make a simple declaration for the variables. In a production scenario, you might pass in as the query parameter or variable definition another variable that has already stored the user's name (for example, if you have the user name from a sign-in script).
-
-### To add the variable to an embedded bot
 
 1. Append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`). For example:
 
@@ -170,20 +141,6 @@ The described examples make a simple declaration for the variables. In a product
         })
         .catch(err => console.error("An error occurred: " + err));
     ```
-
-## Delete global variables
-
-When removing a global variable used in other topics, the references to that variable in the topics will be marked as `Unknown`.
-
-You'll receive a warning about deleting the global variable before you can confirm the operation.
-
-:::image type="content" source="media/authoring-variables-bot/bot-variable-delete.png" alt-text="The global variable delete message indicates that references to that variable will be labeled as unknown." border="false":::
-  
-Nodes that contain references to the deleted global variable will tell you they contain an unknown variable.
-
-:::image type="content" source="media/authoring-variables-bot/bot-variable-unknown-node.png" alt-text="Screenshot of a node with references to an unknown variable, which are marked as red within the message node's text, and indicated with a warning that says Bot message contains unknown variable":::
-
-Topics with nodes that contain references to deleted global variables might stop working. Ensure that you remove or correct all the topics that were using the deleted variable before publishing.
 
 ## Related links
 

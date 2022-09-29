@@ -31,7 +31,7 @@ By default, the page displays billed sessions for the last seven days. To change
 
 A billed session is an interaction between a customer and a bot. It represents one unit of consumption.
 
-The billed session begins when a user topic or premium functionality (as indicated in [Common scenarios](#common-scenarios)) is triggered. For more information, see [Use system and sample topics](authoring-create-edit-topics.md#use-system-and-sample-topics).
+The billed session begins when a user topic or premium functionality (as indicated in [Common scenarios](#common-scenarios)) is triggered.
 
 A billed session ends for one of the following reasons:
 
