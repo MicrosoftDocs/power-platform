@@ -74,7 +74,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     ![Rename and replace content.](../media/github-actions-tutorial/gh-lab-2.100.png "Rename and replace content")
 
-4. Update `<ENVIRONMENTURL>` with the URL for the development environment you want to export from (for example: https://poweractionsdev.crm.dynamics.com).
+4. Update `<ENVIRONMENTURL>` with the URL for the development environment you want to export from (for example: `https://poweractionsdev.crm.dynamics.com`).
 
 5. Update `<APPID>` and `<TENANT ID>` with your values. 
 
@@ -161,7 +161,7 @@ In this section, we will call the reusable workflow on the [release event](https
     ![Rename and paste code.](../media/github-actions-tutorial/gh-lab-2.251.png "Rename and paste code")
 
 4. Update the following variables in the new workflow file:
-    - Update `<BUILD_ENVIRONMENT>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
+    - Update `<BUILD_ENVIRONMENT>` with the URL for the build environment you are using to generate the managed solution. For example: `https://poweractionsbuild.crm.dynamics.com`.
     - Update `<PROD_ENVIRONMENT>` with the URL for the production environment you are deploying to. For example: https://poweractionsprod.crm.dynamics.com.
     - Update `<APP_ID>` with the Application (Client) ID that can be found in the [App registrations blade of the Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) by clicking into the registration created previously in this tutorial.
     - Update `<TENANT_ID>` with the Directory (tenant) ID that can be found in the [App registrations blade of the Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) by clicking into the registration created previously in this tutorial.
