@@ -1,8 +1,8 @@
 ---
-title: Send a message
-description: Use the Message node to send a message from the bot to a user.
+title: Send a message (Preview)
+description: Use the Message node to send a message from the bot to a user in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 09/05/2022
+ms.date: 10/10/2022
 
 ms.topic: article
 author: v-alarioza
@@ -13,7 +13,7 @@ ms.custom: authoring, topics, message, question
 ms.collection: virtual-agent
 ---
 
-# Send a message
+# Send a message (Preview)
 
 The Message node is used when you want to send a message from the bot to the user. Messages are usually simple text messages, but can also include richer components, such as images, videos, quick replies, and cards.
 
@@ -72,7 +72,7 @@ A basic card is a general-purpose card that you can use in various situations to
 
 1. In the properties pane, fill in one or more of the available properties for the content of your card.
 
-You can also, optionally, add one or more buttons, which have the same properties as Quick Replies (see [add Quick Replies](#adding-quick-replies)).
+You can also, optionally, add one or more buttons, which have the same properties as [Quick Replies](#use-quick-replies).
 
 ## Add an Image
 
@@ -100,7 +100,7 @@ You can add a video to a message, which will be shown on a card.
 
 1. In the **Media** property, enter the URL of your video, which can either be a direct link to a publicly accessible MP4 file, or a YouTube URL.
 
-1. Optionally enter a **Title**, **Subtitle**, **Image** (URL for a publicly accessible image file) or **Text** to be shown alongside the video on the card. You can also, optionally, add one or more buttons, which have the same properties as Quick Replies (see [use adding Quick Replies to a message](#adding-quick-replies)).
+1. Optionally enter a **Title**, **Subtitle**, **Image** (URL for a publicly accessible image file) or **Text** to be shown alongside the video on the card. You can also, optionally, add one or more buttons, which have the same properties as [Quick Replies](#use-quick-replies).
 
 ## Add an Adaptive card
 
@@ -165,7 +165,7 @@ Quick replies can also be configured to carry out other types of actions. To cha
 
 1. Select the quick reply box to open the **Quick Replies properties** pane.
 
-    :::image type="content" source="media/authoring-send-message/open-quick-reply-properties.png" alt-text="Screenshot of quick reply properties pane.":::
+    :::image type="content" source="media/authoring-send-message/open-quick-reply-properties.png" alt-text="Screenshot of Quick Reply box highlighted.":::
 
 1. In the **Quick replies properties** pane, you can see further details for each quick reply.
 

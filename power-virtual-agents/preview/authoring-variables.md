@@ -187,7 +187,7 @@ To receive values from other topics, set the variable's property:
 
 1. Save the topic.
 
-1. Go to a different topic. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirecting-to-another-topic) to add a Redirect node to the destination topic.
+1. Go to a different topic. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirect-to-another-topic) to add a Redirect node to the destination topic.
 
 1. Select **+ Add input**.
 
@@ -223,7 +223,7 @@ To return a variable to the original topic, set the variable's property:
 
 1. Save the topic.
 
-1. Go to the topic that you want to receive a return value. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirecting-to-another-topic) to add a Redirect node to the destination topic.
+1. Go to the topic that you want to receive a return value. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirect-to-another-topic) to add a Redirect node to the destination topic.
 
     The variable that's being returned to the current topic is shown in the Redirect node. Use the returned variable in your current topic.
 
@@ -233,7 +233,7 @@ To return a variable to the original topic, set the variable's property:
 
 There are a number of built-in system variables that provide additional information about a conversation.
 
-:::image type="content" source="media/authoring-variables/authoring-variables-system-variable-picker.png" alt-text="Screenshot of Create a new variable button.":::
+:::image type="content" source="media/authoring-variables/authoring-variables-system-variable-picker.png" alt-text="Screenshot of system variables.":::
 
 If you want to use system variables in a Power Fx formula, you must add `System.` before the name. For example, you'd need to use `System.User.DisplayName` instead of `User.DisplayName`.
 

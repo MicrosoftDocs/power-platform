@@ -64,7 +64,7 @@ After you've created a global variable, you can see where it's first defined and
 
 Global variables are accessible from any topic, and the global variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session).
 
-The values of global variables are cleared automatically by the **Clear Variable Values** node. This node is used in the [Start over system topic](authoring-create-edit-topics.md#use-system-and-sample-topics) which can be triggered either by redirection from the bot or when the user triggers it directly (for example, by typing "Start over"). In this case, all global variables are reset.
+The values of global variables are cleared automatically by the **Clear Variable Values** node. This node is used in the [Reset Conversation system topic](authoring-system-topics.md#reset-conversation) which can be triggered either by redirection from the bot or when the user triggers it directly (for example, by typing "Start over"). In this case, all global variables are reset.
 
 ## Set a global variable's value from external sources
 

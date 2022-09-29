@@ -1,8 +1,8 @@
 ---
-title: "Use system topics in Power Virtual Agents"
-description: "Learn how system topics are used in conversations in public preview."
+title: "Use system topics in Power Virtual Agents (Preview)"
+description: "Learn how system topics are used in conversations in Power Virtual Agents preview."
 keywords: "PVA"
-ms.date: 04/20/2022
+ms.date: 10/10/2022
 
 ms.topic: article
 author: v-alarioza
@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 ms.reviewer: ggupta
 ---
 
-# Use system topics in Power Virtual Agents public preview
+# Use system topics in Power Virtual Agents (preview)
 
 System topics are built-in topics, that help your bot respond to common system events, such as escalation, or carry out essential behavior for your bot, such as ending a conversation. You can't delete system topics but, they can be disabled.
 
@@ -40,7 +40,7 @@ Confirms with the customer if their query has been answered.
 
 Sends a message to the customer with information of how they can speak to a real person.
 
-**Trigger:** When a trigger phrase is matched (such as "talk to agent") OR when the Escalate system event is triggered, such as when a [Question node](authoring-ask-a-question.md#additional-question-behavior) is configured to escalate if it does not receive a valid answer from a customer.
+**Trigger:** When a trigger phrase is matched (such as "talk to agent") OR when the Escalate system event is triggered, such as when a [Question node](authoring-ask-a-question.md#configure-question-behavior) is configured to escalate if it does not receive a valid answer from a customer.
 
 ## Fallback
 
