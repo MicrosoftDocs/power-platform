@@ -16,7 +16,7 @@ ms.custom: ceX, advanced-authoring
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-As you build bots in PVA, you'll likely run into scenarios where you need to display the date and time based on the user's location instead of using Coordinated Universal Time (UTC). Internally, PVA stores date and time in UTC, but does provide additional capabilities to handle user's local time. There are two key things that you must understand:
+As you build bots in PVA, you'll likely run into scenarios where you need to display the date and time based on the user's location instead of using Coordinated Universal Time (UTC). Internally, PVA stores date and time in UTC, but does provide additional capabilities to handle user's local time. There are a few things that you must understand:
 
 - Prebuilt entities 
 - System level vairables 
@@ -41,17 +41,20 @@ To determine the chatbot user's time zone, PVA attempts the following in order:
 
 ## Set bot's time zone
 1. Add a Set a variable value node to a topic in your bot as shown below:
+:::image type="content" source="media/timezone/select-set-variable-node.png" alt-text="Screenshot set variable node.":::
 
-:::image type="content" source="media/timezone/add-node.png" alt-text="Screenshot adding a node.":::
+1. In the Set a Variable node, click on the Select a variable arrow. Select System in the Select a variable panel that opens up. Select Conversation.LocalTimeZone.
+:::image type="content" source="media/timezone/set-variable-value.png" alt-text="Screenshot set variable node.":::
 
-1. In the Set a Variable node, click on the Select a variable arrow. 
-1. Select System in the Select a variable panel that opens up.
-1. Select Conversation.LocalTimeZone.
 1. In the To value text box type America/Los_Angeles (this is the values that you can get from Noda Time website mentioned above).
+:::image type="content" source="media/timezone/set-time-zone.png" alt-text="Screenshot set time zone.":::
+
 1. Next, add a Message node.
 1. In the message text box type, "The local time zone is: " and then click on {x} to insert Conversation.LocalTimeZone variable on the System tab. Next, add "The local time zone offset is: " and insert Conversation.LocalTimeZoneOffset on the System tab. 
+:::image type="content" source="media/timezone/set-message.png" alt-text="Screenshot send message":::
+
 1. Save and test the chbot.
 
 
-# Reference
+## Reference
 [Power Fx date time reference](https://learn.microsoft.com/en-us/power-platform/power-fx/data-types#date-time-and-datetime)
