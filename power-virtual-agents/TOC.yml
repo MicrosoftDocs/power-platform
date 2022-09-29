@@ -1,6 +1,16 @@
 - name: Power Virtual Agents (production)
   items:
     - name: Overview
+      href: fundamentals-what-is-power-virtual-agents.md
+    - name: Licensing
+      href: requirements-licensing-subscriptions.md
+    - name: Compliance offerings
+      href: admin-certification.md
+    - name: Quotas, limits, and configuration values
+      href: requirements-quotas.md
+    - name: Community help and support
+      href: fundamentals-support.md
+    - name: Overview
       items:
        - name: Power Virtual Agents online overview
          href: fundamentals-what-is-power-virtual-agents-portal.md
@@ -254,6 +264,74 @@
          href: teams/configuration-add-skills-teams.md
     - name: GDPR compliance
       href: teams/gdpr-summary-teams.md
+- name: Power Virtual Agents (preview)
+  items:
+  - name: What's in preview
+    href: preview/overview.md
+  - name: Quickstart
+    href: preview/quickstart.md
+  - name: Limitations
+    href: preview/limitations.md
+  - name: Author and edit
+    items:
+      - name: Clone an existing bot
+        href: preview/clone-existing-bot.md
+      - name: Use sample topics
+        href: preview/authoring-template-topics.md
+      - name: Create and edit topics
+        href: preview/authoring-create-edit-topics.md
+      - name: Manage topics
+        href: preview/authoring-topic-management.md
+      - name: Add comments to bots
+        href: preview/authoring-comments.md
+      - name: Test your bot
+        href: preview/authoring-test-bot.md
+      - name: Troubleshoot error codes
+        href: preview/error-codes.md
+  - name: Enhance and improve
+    items:
+      - name: Use entities and slot filling
+        href: preview/advanced-entities-slot-filling.md
+      - name: Use variables
+        href: preview/authoring-variables.md
+      - name: Reuse variables across topics
+        href: preview/authoring-variables-bot.md
+      - name: Create expressions using Power Fx
+        href: preview/advanced-power-fx.md
+      - name: Add multimedia cards to messages
+        href: preview/advanced-cards.md
+      - name: Customize speech responses with SSML
+        href: preview/advanced-custom-speech-ssml.md
+  - name: Publish and integrate
+    items:
+      - name: Key concepts - Publish your bot
+        href: preview/publication-fundamentals-publish-channels.md
+      - name: Add bot to Telephony
+        href: preview/publication-connect-bot-to-telephony.md
+      - name: Add bot to your live website
+        href: preview/publication-connect-bot-to-web-channels.md
+  - name: Monitor and diagnose
+    items:
+      - name: Key concepts - Analytics
+        href: preview/analytics-overview.md
+      - name: Analyze bot performance and usage
+        href: preview/analytics-summary.md
+      - name: Analyze customer satisfaction
+        href: preview/analytics-csat.md
+      - name: Analyze session information
+        href: preview/analytics-sessions.md
+      - name: Work with conversation transcripts
+        href: preview/analytics-sessions-transcripts.md
+      - name: Analyze topic usage
+        href: preview/analytics-topic-details.md
+      - name: Analyze billed session information
+        href: preview/analytics-billed-sessions.md
+  - name: Configure and customize
+    items:
+      - name: Customize the look and feel of the bot
+        href: preview/customize-default-canvas.md
+      - name: Select voice font settings for speech
+        href: preview/advanced-speech-settings.md
 
 
 
