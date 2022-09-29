@@ -1,6 +1,6 @@
 ---
-title: "Handling time zone in PVA (Preview)"
-description: "Use time zone functionality to manage date and time in PVA bots"
+title: "Managing date and time in PVA (Preview)"
+description: "How to manage date and time in PVA bots"
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article
@@ -12,21 +12,44 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring
 ---
 
-# Managing time zone in PVA bots
+# Managing date and time in chatbots
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-PVA provides the following system level variables to help you manage time zone in your bot:
-- `Conversation.LocalTimeZone` stores the user's time zone who is communicating with the bot. Supports both read and write operations. You can set the Conversation.LocalTimeZone to any valid time zone listed on the 
-[Noda Time](https://nodatime.org/timezones) website.  
+As you build bots in PVA, you'll likely run into scenarios where you need to display the date and time based on the user's location instead of using Coordinated Universal Time (UTC). Internally, PVA stores date and time in UTC, but does provide additional capabilities to handle user's local time. There are two key things that you must understand:
+
+- Prebuilt entities 
+- System level vairables 
+- Determine which time zone to use
+
+## Prebuild entitities:
+To manage data and time in your bots, PVA provides the following prebuilt entities:  
+- Date: A date without a time, in the time zone of the bot user.
+- DateTime: A date with a time, in the time zone of the bot user. 
+- DateTimeNoTimeZone: A date with a time, in Coordinated Universal Time (UTC).
+
+## Sytem level variables
+PVA also provides the following system level variables to help you manage time zone in your bot:
+- `Conversation.LocalTimeZone` stores the bot user's time zone. Supports both read and write operations. You can set the Conversation.LocalTimeZone to any valid time zone listed on the [Noda Time](https://nodatime.org/timezones) website. After you do that, the bot uses this time zone to determine the date and time for your chatbot. 
 - `Conversation.LocalTimeZoneOffset` is a read-only variable that you can use to determine the UTC offset for the local time. 
 
-If you don't set the value, PVA uses the time from the message the user sends to the bot to 
-determine user's time zone. It is possible because at the protocol level all messages include the date and time information. 
+## Determine time zone
+To determine the chatbot user's time zone, PVA attempts the following in order:
+1. If the bot developer has set the `Conversation.LocalTimeZone` with a valid time zone from [Noda Time](https://nodatime.org/timezones), use that as the time zone.
+1. If `Conversation.LocalTimeZone` has not been set, PVA tries to determine the time from the message the user sent to the bot
+1. If time zone is not available becasue a channel does not provide it in the message, PVA uses UTC.
 
-provided by the 
-protocol layer as part of the message that was sent from the user to the bot. If you use UTC time. 
-PVa persists all date and time values in UTC, the conversation happens automatically when you input or retrieve the value. 
+## Set bot's time zone
+1. Add a Set a variable value node to a topic in your bot as shown below:
+
+1. In the Set a Variable node, click on the Select a variable arrow. 
+1. Select System in the Select a variable panel that opens up.
+1. Select Conversation.LocalTimeZone.
+1. In the To value text box type America/Los_Angeles (this is the values that you can get from Noda Time website mentioned above).
+1. Next, add a Message node.
+1. In the message text box type, "The local time zone is: " and then click on {x} to insert Conversation.LocalTimeZone variable on the System tab. Next, add "The local time zone offset is: " and insert Conversation.LocalTimeZoneOffset on the System tab. 
+1. Save and test the chbot.
+
 
 # Reference
-https://nodatime.org/timezones
+[Power Fx date time reference](https://learn.microsoft.com/en-us/power-platform/power-fx/data-types#date-time-and-datetime)
