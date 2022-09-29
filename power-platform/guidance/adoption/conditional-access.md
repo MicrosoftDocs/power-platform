@@ -47,7 +47,7 @@ To learn how to set up Conditional Access policies, see [Plan a Conditional Acce
 ## Further resources
 
 [Best practices for Conditional Access in Azure Active Directory](/azure/active-directory/conditional-access/best-practices)<br>
-[License Requirements to enable Conditional Access](//azure/active-directory/conditional-access/overview#license-requirements)
+[License Requirements to enable Conditional Access](/azure/active-directory/conditional-access/overview#license-requirements)
 
 
 

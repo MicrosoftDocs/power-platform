@@ -23,6 +23,8 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 
 ![CoE Starter Kit Power BI dashboard.](media/pb-1.PNG "CoE Starter Kit Power BI dashboard")
 
+[Watch a walk-through](https://www.youtube.com/watch?v=Lsooi7xp6eA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG&index=1&t=1942s) on how to set up the Power BI dashboard.
+
 ## Which dashboard to use?
 
 You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files:
