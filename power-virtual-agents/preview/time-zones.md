@@ -48,7 +48,7 @@ To determine the chatbot user's time zone, PVA attempts the following in order:
 
 :::image type="content" source="media/timezone/set-variable-value.png" alt-text="Screenshot set variable value.":::
 
-1. In the To value text box type America/Los_Angeles (this is the values that you can get from Noda Time website mentioned above).
+1. In the To value text box type America/Los_Angeles (this is the values that you can get from Noda Time website mentioned above)
 
 :::image type="content" source="media/timezone/set-time-zone.png" alt-text="Screenshot set time zone.":::
 
