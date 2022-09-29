@@ -42,6 +42,8 @@ To determine the chatbot user's time zone, PVA attempts the following in order:
 ## Set bot's time zone
 1. Add a Set a variable value node to a topic in your bot as shown below:
 
+:::image type="content" source="media/timezone/add-node.png" alt-text="Screenshot adding a node.":::
+
 1. In the Set a Variable node, click on the Select a variable arrow. 
 1. Select System in the Select a variable panel that opens up.
 1. Select Conversation.LocalTimeZone.
