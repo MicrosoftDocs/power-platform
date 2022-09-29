@@ -194,9 +194,17 @@ Take this example.  Here, the original table has no errors, but the act of filte
 
 The values -5 and -3 are properly filtered out.  The values 0 result in an error in processing the filter, and so it is unclear if the record should be included or not in the result.  To maximize transparency for end users and help makers debug, we include an error record in place of the original.  In this case, `IsError( Index( output, 2 ) )` returns true.
 
-## Relationship to the Errors function
+## Datasource errors
 
-The **Errors** function returns information about past errors after performing runtime operations to a data source, such as **Patch**, **Collect**, **Remove**, etc.  These functions will also return errors directly which can be easier to check than using the **Errors** function.  
+The functions that modify data in datasoruces, such as **Patch**, **Collect**, and **Remove**, report errors in two ways:
+- Each of these functions will return an error value as the result of the operation.  Errors can be replaced or suppressed with **IfError** and **App.OnError** as usual.  
+- After the operation, the **Errors** function will also return these errors.  This can be useful for displaying the error message on a form screen without needing to capture the error in a state variable.
+
+
+
+The **Errors** function returns information about past errors after performing runtime operations on a data source, such as **Patch**, **Collect**, and **Remove**.  It can be useful for displaying an error on a form screen without needing to capture the error in a state variable.   
+
+These functions will also return errors directly which can be easier to check than using the **Errors** function.  
 
 For example, this formula will check for an error from **Patch** and display a custom error message:
 ```
