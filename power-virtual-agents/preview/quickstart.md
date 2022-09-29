@@ -111,12 +111,12 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. Change the operator dropdown to **is greater than or equal to** and then replace the **Enter or select a value** placeholder with `7`. 
 
-   :::image type="content" source="media/quickstart/validation-rule.png" alt-text="Screenshot of the condition node to check if the reservation exceeds the maximum number of people.":::
+   :::image type="content" source="media/quickstart/validation-rule-number.png" alt-text="Screenshot of the condition node to check if the reservation exceeds the maximum number of people.":::
 
 1. Under the **Condition** node, add a **Message** node. Enter the message `Sorry, reservations can only be made for a maximum of 6 guests. Please call us to make a reservation for a larger party.`
 
 1. Under the **All Other Conditions** node, add a **Message** node.
-    1. Enter `We look forward to seeing you and your party of .`
+    1. Enter `We look forward to seeing you and your party of `
     2. Select **Insert variable** and choose **reservationNumber** from the list
     3. Enter `. We look forward to seeing you!`
 
