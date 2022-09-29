@@ -294,8 +294,6 @@
         href: preview/authoring-variables-bot.md
       - name: Create expressions using Power Fx
         href: preview/advanced-power-fx.md
-      - name: Customize speech responses with SSML
-        href: preview/advanced-custom-speech-ssml.md
   - name: Publish and integrate
     items:
       - name: Key concepts - Publish your bot
@@ -324,5 +322,3 @@
     items:
       - name: Customize the look and feel of the bot
         href: preview/customize-default-canvas.md
-      - name: Select voice font settings for speech
-        href: preview/advanced-speech-settings.md

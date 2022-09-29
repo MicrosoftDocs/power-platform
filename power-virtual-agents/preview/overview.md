@@ -24,9 +24,9 @@ This evolution brings new features, including:
 
 - Updates to authoring experience
   - [Add Images / Videos / Cards to a message](authoring-send-message.md)
-  - [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
-  - [Bot response variations](authoring-send-message.md#sending-a-text-message)
-  - [Quick replies](authoring-send-message.md#adding-quick-replies)
+  - [YAML code editor](authoring-create-edit-topics.md)
+  - [Message variations](authoring-send-message.md#use-message-variations)
+  - [Quick replies](authoring-send-message.md#use-quick-replies)
   - [Speech authoring](authoring-send-message.md#use-ssml-to-customize-speech-responses)
 
 - Power FX and variable management
@@ -57,9 +57,9 @@ The following table lists some key concepts in Composer and describes where to f
 [Entities]: advanced-entities-slot-filling.md
 [Nodes]: authoring-create-edit-topics.md
 [Power Fx]: advanced-power-fx.md
-[question variations]: authoring-send-message.md#message-variations
-[Quick replies]: authoring-send-message.md#adding-quick-replies
-[Response variations]: authoring-send-message.md#message-variations
+[question variations]: authoring-send-message.md#use-message-variations
+[Quick replies]: authoring-send-message.md#use-quick-replies
+[Response variations]: authoring-send-message.md#use-message-variations
 [Topics]: authoring-create-edit-topics.md
 [Trigger phrases]: authoring-create-edit-topics.md
 [Variables]: authoring-variables.md

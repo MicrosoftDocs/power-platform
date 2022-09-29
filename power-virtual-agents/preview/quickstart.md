@@ -50,7 +50,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. In the existing **Message** node, select the **Delete** button in the ellipsis menu.
 
-1. To add a new **Message** node, select **Send a message** in the add node menu. Type the following greetings as [message variations](authoring-send-message.md#sending-a-text-message):
+1. To add a new **Message** node, select **Send a message** in the add node menu. Type the following greetings as [message variations](authoring-send-message.md#use-message-variations):
     - `Good day!`
     - `Hi there!`
     - `Hi!`
@@ -73,7 +73,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. Add a third **Message** node and type the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
 
-1. Add a [quick reply](authoring-send-message.md#adding-quick-replies) with the message `make a reservation`.
+1. Add a [quick reply](authoring-send-message.md#use-quick-replies) with the message `make a reservation`.
 
    A quick reply gives the user the option to select "make a reservation" instead of having to type it out.
 
@@ -123,8 +123,6 @@ The **End of conversation** topic is a pre-built topic designed to check if the 
 1. Name the topic **Reservation** and select **Save**.
 
 ## Next steps
-
-1. Optionally, [customize your bot's voice font](advanced-speech-settings.md).
 
 1. [Publish your bot](publication-fundamentals-publish-channels.md).
 
