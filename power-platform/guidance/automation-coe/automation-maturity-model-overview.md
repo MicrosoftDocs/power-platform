@@ -85,4 +85,4 @@ The detailed Automation Maturity Model captures goals, indicators, and required 
 - [Automate It](https://aka.ms/AutomateIt)
 - [Holistic enterprise automation techniques (HEAT)](https://aka.ms/rpapnp)
 - [RPA in a Day training](https://aka.ms/RPAinaDayPackage)
-- [Power Automate learn](/learn/browse/?expanded=power-platform&amp%3Bproducts=power-automate&amp%3Bresource_type=learning%20path&amp%3Broles=maker)
+- [Power Automate learn](/training/browse/?expanded=power-platform&amp%3Bproducts=power-automate&amp%3Bresource_type=learning%20path&amp%3Broles=maker)

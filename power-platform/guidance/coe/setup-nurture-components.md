@@ -34,6 +34,99 @@ The core components solution is required for the nurture components solution to 
     1. If [Installing to Dataverse for Teams Environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment) – use the solution file from the download called  CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip.
 1. Leave all environment variables blank on import.
 
+## Set up video hub components
+
+The video hub has two apps:
+
+1. Video hub - admin: a model driven app, designed for administrators to add content, moderate comments and curate shared playlists.
+1. Video hub: a canvas app that all users access.
+
+### Manage content in the Video hub - admin app
+
+#### Video content
+
+Administrators manage video content in the admin app. The following table describes the schema for video content:
+
+|Column|Column type|Description|
+|------|-----|------|
+|Name| Text | The title of the video, for example 'Building responsive Power Apps'|
+|Owner| User| The creator of the record|
+|Content description| Text | Detailed description of the video |
+| Content URL | Text (URL) | The URL to the video | 
+| View count | Number | This is updated via the video hub canvas app. When a user watches a video, the view count is updated |
+| Power Platform product | Choice | Categorizes the video based on Power Platform product |
+| Content category | Choice | Select the type of video; for example: How-to, Success story, Community session |
+
+#### Playlists
+
+Playlists are managed by administrators.  Playlists are curated lists of video content.  Playlists have the following schema:
+
+|Column|Column type|Description|
+|------|-----|------|
+| Name | Text | Represents the display name for the playlist |
+| Owner | User | The creator of the record | 
+| Playlist description | Text | Represents a detailed description of the playlist |
+| Playlist type | Choice | Represents the playlist type.  Options available are personal or shared. Shared playlists are visible to all users, private playlists are only visible to the person that created it. **Note** - private playlists are coming in a future release. |
+
+Playlists are a curated collection of videos. One playlist has many playlist items, the schema for a playlist item is represented in the following table:
+
+|Column|Column type|Description|
+|------|-----|------|
+| Name | Text | This can be set to any value, it is not used in the video hub canvas app |
+| Playlist | Lookup | This lookup column returns a list of playlists|
+| Community hub content | Lookup| This lookup column returns a list of video content |
+
+#### Comments
+
+Comments are created by users of the video hub canvas app.  Comments are moderated and only visible when an administrator has set the **Comment status** column value to **Approved**.
+
+Comments have the following schema:
+
+|Column|Column type|Description|
+|------|-----|------|
+| Name | Text | Unused in admin app. The name column is populated when comments are created via video hub canvas app|
+| Comment text | Text | Represents the users comment text| 
+| Comment status | Choice | Approved or rejected.  Only approved comments will appear in the video hub canvas app |
+| Community hub content | Lookup | Represents the video related to the comment |
+
+### Review and enable video hub canvas app features
+
+The canvas app has two features that can be enabled:
+
+1. Comments
+2. Related video
+
+Either, or both can be enabled by updating the following environment variables in the Admin - Command Center app:
+
+1. Video Hub - Enable Comments
+1. Video Hub - Related Videos
+
+Follow [detailed instructions for setting environment variables](/power-platform/guidance/coe/faq#update-environment-variables).
+
+#### Enable Comments
+
+When enabled, video hub users will be able to comment on selected videos. Comment moderation is managed through the admin app - comments must be approved prior to them becoming visible in the video hub.
+
+Approve comments in the admin app by
+![Approve comments](media/Approve-or-reject-comment.png)
+
+#### Related video
+
+When enabled, video hub users will see a list of similar videos to the one that they've selected. This is filtered by the 'content category' value of content.  
+
+![Related video enabled](media/Video-hub-RelatedVideoEnabled.png)
+
+### Share apps with admins and makers
+
+The video hub components consist of two apps:
+
+- [**Video hub - admin**](nurture-components.md#video-hub---admin) app to manage content, playlists and comments. Share this app with other admins, and assign them the Power Platform SR security role.
+- [**Video hub**](nurture-components.md#video-hub) canvas app for video content. Share this app with your makers and assign them the Power Platform SR security role.
+
+More information:
+
+- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+
 ## Set up training in a day components
 
 ### Update environment variables values
@@ -179,14 +272,16 @@ Here is the full list of environment variables that impact the nurture solution,
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
-| Name | Description |
-|------|---------------|
-| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    |
-| Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. *Currently not used.* |
-| Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
-| Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
-| Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
-| Pulse - How many makers to survey? | The Pulse survey is send to makers to provide feedback on their experience working with the CoE and Power Platform. Provide the number of makers you want to survey regularly here. If you set this number to 5, the survey will be sent to 5 random makers per week. A Default value of 1 is provided. |
+| Name | Description | Default Value
+|------|---------------|------|
+| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    | n/a |
+| Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. *Currently not used.* |  n/a |
+| Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app | n/a |
+| Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app | n/a |
+| Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) | n/a |
+| Pulse - How many makers to survey? | The Pulse survey is send to makers to provide feedback on their experience working with the CoE and Power Platform. Provide the number of makers you want to survey regularly here. If you set this number to 5, the survey will be sent to 5 random makers per week. | 1 |
+| Video Hub - Enable comments | Enable or disable end users to leave comments on videos published via the Video Hub. Disabled by default.  | No |
+| Video Hub - Related Videos | Enable or disable showing related videos in the Video Hub. Enabled by default. | Yes |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 

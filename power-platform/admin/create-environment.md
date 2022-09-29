@@ -4,7 +4,7 @@ description: About creating and manage environments in the Power Platform admin 
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/24/2022
+ms.date: 09/14/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -80,13 +80,13 @@ You can store the app/business data in a database with Microsoft Dataverse. You 
 
 You have multiple options when creating an environment:
 
-1. [Create an environment with a Dataverse database](#create-an-environment-with-a-database)
-2. [Create an environment without a Dataverse database](#create-an-environment-without-a-database)
+- [Create an environment with a Dataverse database](#create-an-environment-with-a-database)
+- [Create an environment without a Dataverse database](#create-an-environment-without-a-database)
 
 ### Some important considerations when creating a new environment
 
-- **Why create an environment with a database**: When you create a production or sandbox environment with a Dataverse database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment. 
-- **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Dataverse, and you are creating Power Apps or Power Automate using other data sources, create the environment without the Dataverse database.
+- **Why create an environment with a database**: When you create a production or sandbox environment with a Dataverse database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment.<br>More information about Dataverse: [What is Dataverse?](/power-apps/maker/data-platform/data-platform-intro) and [Why choose Dataverse?](/power-apps/maker/data-platform/why-dataverse-overview) 
+- **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Dataverse, and you are creating canvas apps using Power Apps or flows using Power Automate using other data sources, create the environment without the Dataverse database.
 - **The Enable Dynamics 365 apps decision is not reversible**: Once you create an environment, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment. 
 - **Dynamics 365 apps and trial environments**: Currently, Dynamics 365 apps cannot be enabled for trial environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).
 - The URL can't be that of an environment that's been [deleted](delete-environment.md) or [changed](edit-properties-environment.md) until at least 24 hours have passed since an environment deletion or change.
@@ -110,10 +110,11 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | Choose production, trial, or sandbox.        |
    |Region     | Choose a region for the environment.        |
+   |Type     | Choose production, trial, or sandbox.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes**. |
+   |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
    > [!div class="mx-imgBorder"] 
    > ![Create new environment settings.](./media/new-environment-page1.png "Create new environment settings")
@@ -151,10 +152,11 @@ You need 1GB available database capacity.
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose production or trial.        |
    |Region     | Choose a region for the environment.        |
+   |Type     | You can choose production or trial.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **No**. |
+   |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
    > [!div class="mx-imgBorder"] 
    > ![Create new environment settings.](./media/new-environment-page1-nodb.png "Create new environment settings")

@@ -106,7 +106,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
       -o https://dev.azure.com/contoso 
       -p alm-sandbox 
       -e https://contoso-userdev.crm.dynamics.com 
-      -a ALMAcceleratorServicePrincipal 
+      -aad ALMAcceleratorServicePrincipal 
       -g ALMAcceleratorForMakers -u user@contoso.com
    ```
 

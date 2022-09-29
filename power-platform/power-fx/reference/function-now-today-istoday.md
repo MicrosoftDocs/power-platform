@@ -40,7 +40,7 @@ The **IsToday** function tests whether a date/time value is between midnight tod
 > - **Now**, **Today**, and **IsToday** are not available in Dataverse for Teams formula columns as evaluations are done without the knowledge of the current user's local time zone.
 >   <br> More information: [Work with formula table columns in Dataverse for Teams](/power-apps/teams/formula-columns)
 
-See [Date, Time, and DateTime in the data types documentation](data-types.md#date-time-and-datetime) and [working with dates and times](/power-apps/maker/canvas-apps/show-text-dates-times) for more information.
+See [Date, Time, and DateTime in the data types documentation](../data-types.md#date-time-and-datetime) and [working with dates and times](/power-apps/maker/canvas-apps/show-text-dates-times) for more information.
 
 ## Volatile Functions
 

@@ -34,7 +34,7 @@ The following is a high-level overview of how security model is implemented in D
 - Environments with Dataverse add support for more advanced security models that are specific to controlling access to data and services in the environment with a Dataverse database.
 
 > [!TIP]
-> To learn about how to help secure and govern Microsoft Power Platform apps like Power Automate, check out the [Microsoft Learn: Introduction to Power Automate security and governance](/learn/modules/security-governance-intro/).
+> To learn about how to help secure and govern Microsoft Power Platform apps like Power Automate, check out [Introduction to Power Automate security and governance](/training/modules/security-governance-intro/).
 
 ### See also
 [Security in Power Platform](security/overview.md)<br/>
