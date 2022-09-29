@@ -300,8 +300,16 @@
         href: preview/authoring-template-topics.md
       - name: Create and edit topics
         href: preview/authoring-create-edit-topics.md
+      - name: Send a message
+        href: preview/send-a-message.md
+      - name: Ask a question
+        href: preview/authoring-ask-a-question.md
+      - name: Move between topics
+        href: preview/authoring-moving-between-topics.md
       - name: Manage topics
         href: preview/authoring-topic-management.md
+      - name: Use system topics
+        href: preview/system-topics.md
       - name: Add comments to bots
         href: preview/authoring-comments.md
       - name: Test your bot
@@ -316,7 +324,7 @@
         href: preview/authoring-variables.md
       - name: Reuse variables across topics
         href: preview/authoring-variables-bot.md
-      - name: Create expressions using Power Fx
+      - name: Use expressions using Power Fx
         href: preview/advanced-power-fx.md
   - name: Publish and integrate
     items:
