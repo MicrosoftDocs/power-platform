@@ -1,6 +1,6 @@
 ---
-title: Move between topics
-description: Learn how to insert nodes to switch to other topics.
+title: Move between topics (Preview)
+description: Learn how to insert nodes to switch to other topics in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 
@@ -13,7 +13,7 @@ ms.custom: authoring, topics
 ms.collection: virtual-agent
 ---
 
-# Move between topics
+# Move between topics (preview)
 
 Normally, a topic starts when a user sends a message to the bot, based on their message and the topic trigger phrases. To shift the conversation from the current topic to another topic, without starting the conversation over, add a **Redirect** node. When the conversation reaches the end of the new topic, the conversation resumes in the original topic.
 
@@ -52,4 +52,4 @@ To signal to the user's channel that you bot thinks that the conversation has en
 Many of the system topics use these nodes to control how conversations end or start over. For more information, see [Use system topics in Power Virtual Agents public preview](authoring-system-topics.md).
 
 > [!TIP]
-> The **End All Topics** node does not clear or reset any global variables. To clear global variables, use a **Clear all variables** first. For an example, see the default **Start Over** system topic.
+> The **End All Topics** node does not clear or reset any global variables. To clear global variables, use a **Clear all variables** first. For an example, see the default [Reset Conversation system topic](authoring-system-topics.md#reset-conversation).

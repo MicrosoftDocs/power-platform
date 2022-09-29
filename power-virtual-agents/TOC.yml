@@ -322,8 +322,6 @@
     items:
       - name: Key concepts - Publish your bot
         href: preview/publication-fundamentals-publish-channels.md
-      - name: Add bot to Telephony
-        href: preview/publication-connect-bot-to-telephony.md
       - name: Add bot to your live website
         href: preview/publication-connect-bot-to-web-channels.md
   - name: Monitor and diagnose

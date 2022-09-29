@@ -1,5 +1,5 @@
 ---
-title: Publish your bot on your own or a demo website (contains video) (Preview)
+title: Publish your bot on your own or a demo website (Preview)
 description: Customize a prebuilt demo website to try out your bot, or publish your bot to your own website in Power Virtual Agents preview.
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
 ms.date: 10/10/2022

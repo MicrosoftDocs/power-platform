@@ -1,6 +1,6 @@
 ---
-title: Add a condition
-description: Learn how to add conditional branching to a topic and the conversational path.
+title: Add a condition (Preview)
+description: Learn how to add conditional branching to a topic and the conversational path in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 
@@ -13,7 +13,7 @@ ms.custom: authoring, topics, message, question
 ms.collection: virtual-agent
 ---
 
-# Use conditions
+# Use conditions (Preview)
 
 You can use **Condition** nodes to branch logic within your topic, comparing the value of a variable to another variable or a specific value. For example, you might check to see if a number variable is greater than a certain number.
 
