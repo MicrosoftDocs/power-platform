@@ -25,7 +25,7 @@ They make sure that every person in the organization can come together at regula
 
 ## Create an internal wiki
 
-Set up a SharePoint Hub or Teams site to share rules of engagement and processes with your maker community. This should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
+Set up a SharePoint Hub or Teams site to share rules of engagement and processes with your maker community. It should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
 
 Here are a few tips on what the wiki should include:
 
@@ -33,11 +33,16 @@ Here are a few tips on what the wiki should include:
 
 - **Community**: Share how to engage with the internal community, how to become a champion, how to find a mentor, and what the benefits of the community are.
 
-- **[Environment strategy](environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of environments with regard to licensing, security for environments, and connectors.
+- **[Environment strategy](environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of an environments licensing, security, and connectors.
 
 - **[Data loss prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request additional connectors or a new environment for a specific project.
 
-- **Responsibilities of a maker**: Share what a maker is responsible for—for example, keeping the tenant tidy by deleting unused resources, ensuring apps are only shared with required end users, supporting their apps in the default environment, or engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support. Ensure makers are educated about the processes you have in place for business-important or mission-critical apps, such as engaging formal support.
+- **Responsibilities of a maker**: Share what a maker is responsible for—for example:
+
+1. Keeping the tenant tidy by deleting unused resources
+1. Ensuring apps are only shared with required end users
+1. Supporting their apps in the default environment, or engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support. 
+1. Ensure makers are educated about the processes you have in place for business-important or mission-critical apps, such as engaging formal support.
 
 - **Support process**: Share how makers and solutions can be supported.
 
@@ -46,6 +51,85 @@ Here are a few tips on what the wiki should include:
 - **UI/UX**: Discussion area on corporate standards/styles and overall best practices around UX.
 
 ![Sample Microsoft Power Platform wiki page.](media/wiki.png "Sample Microsoft Power Platform wiki page")
+
+## Deploy the Community Wiki
+
+The community wiki is a SharePoint Online template that is installed to an existing Site Collection by running two PowerShell scripts.
+The steps in this section take you through the process of preparing, and running the PowerShell scripts.
+
+> [!NOTE] Your organization may restrict your ability to run PowerShell scripts, or you may need to work with your SharePoint  Online administration team to run the PowerShell script.
+
+### Download the assets
+
+The assets can be [downloaded from GitHub](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceResources/Release).  
+
+### Prepare to run the PowerShell scripts
+
+The two PowerShell scripts have a dependency on two PowerShell modules:
+
+1. Microsoft.PowerApps.Administration.PowerShell - which can be downloaded and installed by [following instructions in this document](power-platform/admin/powerapps-powershell#installation).
+1. PnP PowerShell - which can be downloaded and installed by [following instructions in this document](https://github.com/pnp/powershell)
+
+> [!IMPORTANT] Before running the script, ensure that you have the SharePoint Online site template files located in an accessible folder.  You'll need to input the path for the $Path script parameter.
+
+The PowerShell commands in the Microsoft.PowerApps.Administration.PowerShell module requires Windows PowerShell version 5.x.
+
+Check the version of PowerShell running on your machine:
+
+```powershell
+$PSVersionTable.PSVersion
+```
+
+1. Extract the contents of the PowerPlatformHub.zip folder to a location on your PC.
+
+### Update the PowerShell script variables
+
+The PowerShell script contains several variables that should be updated to reflect your organization:
+
+```powershell
+$adminTenantName = 'contoso'
+$adminURL = 'https://' + $adminTenantName + '-admin.sharepoint.com'
+$companyName = 'Contoso'
+$lcid = 1033
+$newSiteURL = 'https://' + $adminTenantName + '.sharepoint.com/sites/powerplatformhub'
+$ownerEmail = 'owner@contoso.com'
+$siteTemplate = 'SITEPAGEPUBLISHING#0'
+$siteTitle = 'Power Platform Hub'
+$timeZone = 2
+```
+
+1. **$adminTenantName** - represents your organization name
+1. **$companyName** - represents your organization name
+1. **$lcid** - defines the language for the SharePoint Online site (note: you can view a list of all locales [here](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a))
+1. **$adminTenantName** - replace  '/powerplatformhub' with your community hub name URL
+1. **$ownerEmail** - update with admin email address
+1. **$siteTitle** - replace with your community wiki name
+1. **$timeZone** - an integer representing the time zone for your organization (note: these are listed [here](https://learn.microsoft.com/en-us/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones?view=sharepoint-server))
+
+### Run the PowerShell scripts
+
+1. Select Start > type PowerShell > Run as administrator
+1. Navigate to the folder containing the source files
+1. Execute (by typing the following name) the following PowerShell scripts:
+    1. Deploy-PowerPlatformHub.ps1
+    1. Set-PowerPlatformHubAsDLPErrorSettings.ps1
+
+### Test if the deployment was successful
+
+When the scripts have finished executing, you should see a notification message:
+
+"Deployment of Power Platform Hub complete!"
+
+1. Navigate to the URL of your community hub wiki
+1. Check that the following lists
+
+## Troubleshooting
+
+The PowerShell scripts have been written to catch any failures. However, if you do see errors, you should check:
+
+### Can't connect to SharePoint Online
+
+It could be caused by PnP PowerShell not being registered.  Your global administrator will need to register by following the steps [in this document](https://pnp.github.io/powershell/articles/authentication.html).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
