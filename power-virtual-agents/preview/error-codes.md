@@ -76,7 +76,7 @@ Common problems include, but aren't limited to:
 - "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) evaluated to type {ResolveType}, expected type {ExpectedType}."
 - "The flow {FlowName} ({FlowId}) failed to run with response code {ResponseCode}, error code: {FlowErrorCode}."
 
-**Resolution:** Check that the [base type](authoring-variables.md#variable-types) of any variables you pass to the flow [match the parameter type](authoring-variables.md#use-variables-in-action-nodes).
+**Resolution:** Check that the [base type](authoring-variables.md#variable-types) of any variables you pass to the flow match the parameter's type.
 
 ### InvalidContent
 
@@ -113,15 +113,3 @@ Common problems include, but aren't limited to:
 **Error message:** This error doesn't produce an error message
 
 **Resolution:** Contact customer support for more details.
-
-### TelephonyHandoffInvalidPhoneNumber
-
-**Error message:** "The phone number {PhoneNumber} used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
-
-**Resolution:** Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format, for example; `+14251231234`.
-
-### TelephonyHandoffMissingPhoneNumber
-
-**Error message:** "The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context."
-
-**Resolution:** Go to your [telephony configuration](publication-connect-bot-to-telephony.md) and add a phone number.
