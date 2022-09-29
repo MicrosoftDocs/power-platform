@@ -58,6 +58,7 @@ To determine the chatbot user's time zone, PVA attempts the following in order:
 :::image type="content" source="media/timezone/set-message.png" alt-text="Screenshot send message":::
 
 6. Save and test the chatbot.
+
 :::image type="content" source="media/timezone/test-bot.png" alt-text="Screenshot test bot.":::
 
 
