@@ -123,6 +123,28 @@ Select the the node's _node menu_ (**&vellip;**) then **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
 
+## Controls for editing nodes on the canvas
+
+You can use controls on the toolbar to cut, copy, paste, and delete nodes on the canvas.
+
+:::image type="content" source="media/authoring-create-edit-topics/toolbar-edit-controls.png" alt-text="Screenshot of the toolbar controls for editing nodes on the canvas.":::
+
+The toolbar also has controls for undo, undo to last save, and redo. Use the drop-down menu to switch between these modes.
+
+:::image type="content" source="media/authoring-create-edit-topics/toolbar-undo-redo.png" alt-text="Screenshot of the toolbar controls for undo and redo.":::
+
+### To cut, copy, or delete nodes
+
+1. Select one or more adjacent nodes.
+1. Select the cut, copy, or delete control on the canvas toolbar.
+
+### To paste nodes
+
+Once you have one or more nodes on the clipboard, there are a a couple ways to paste them to the canvas.
+
+- If you select a node and then select paste, the nodes from the clipboard are added after the selected node.
+- If you select the _add node_ (**+**) menu, then **Paste**, the nodes from the clipboard are added at that point.
+
 <!--
 ## Edit topics with the code editor
 
