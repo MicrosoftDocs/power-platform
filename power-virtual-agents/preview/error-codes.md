@@ -43,7 +43,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 | [SystemError](#systemerror)                                       | A system error occurred in Power Virtual Agents.                    |
 
 [1]: authoring-moving-between-topics.md#redirect-to-another-topic
-[2]: /advanced-flow.md
+[2]: advanced-flow.md
 
 ### ContentError
 
