@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Power Virtual Agents preview (Preview)"
+title: "Overview of the Power Virtual Agents preview (preview)"
 description: "Overview of new features and improvements in the Power Virtual Agents preview."
 ms.date: 10/10/2022
 ms.topic: overview
@@ -12,7 +12,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Overview (Preview)
+# Overview (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

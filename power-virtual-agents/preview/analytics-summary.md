@@ -1,5 +1,5 @@
 ---
-title: Summarize bot analytics, performance, and usage (Preview)
+title: Summarize bot analytics, performance, and usage (preview)
 description: The Summary analytics page shows you at a glance what bots and topics need improving in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -11,7 +11,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Summarize your bot's performance and usage (Preview)
+# Summarize your bot's performance and usage (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

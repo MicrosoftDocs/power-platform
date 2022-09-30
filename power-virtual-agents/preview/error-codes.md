@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot error codes (Preview)"
+title: "Troubleshoot error codes (preview)"
 description: "Troubleshoot error responses from your bot in Power Virtual Agents preview."
 author: v-alarioza
 ms.author: v-alarioza
@@ -10,7 +10,7 @@ ms.reviewer: clmori
 manager: shellyha
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
-# Troubleshoot error codes (Preview)
+# Troubleshoot error codes (preview)
 
 When a bot encounters a problem during a conversation, it will send an error response.
 

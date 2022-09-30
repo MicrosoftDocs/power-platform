@@ -1,5 +1,5 @@
 ---
-title: "Use system topics in Power Virtual Agents (Preview)"
+title: "Use system topics in Power Virtual Agents (preview)"
 description: "Learn how system topics are used in conversations in Power Virtual Agents preview."
 keywords: "PVA"
 ms.date: 10/10/2022

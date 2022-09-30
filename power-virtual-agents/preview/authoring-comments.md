@@ -1,5 +1,5 @@
 ---
-title: "Create and reply to comments in bot topics (Preview)"
+title: "Create and reply to comments in bot topics (preview)"
 description: "Add new comments, reply to existing comments, and resolve or delete comments and comment threads for topics in Power Virtual Agents preview."
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -15,7 +15,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Add comments to bots (Preview) (Preview)
+# Add comments to bots (preview) (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

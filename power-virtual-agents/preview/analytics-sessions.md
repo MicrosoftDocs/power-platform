@@ -1,5 +1,5 @@
 ---
-title: Download bot session transcripts (Preview)
+title: Download bot session transcripts (preview)
 description: Download bot sessions from the last 30 days for further analysis in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -11,7 +11,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Download your bot session transcripts (Preview)
+# Download your bot session transcripts (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

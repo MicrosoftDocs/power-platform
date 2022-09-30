@@ -1,5 +1,5 @@
 ---
-title: "Work with chatbot variables (Preview)"
+title: "Work with chatbot variables (preview)"
 description: "Use variables with custom and prebuilt entities to created customized bot conversations in Power Virtual Agents preview."
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -13,7 +13,7 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Use variables (Preview)
+# Use variables (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

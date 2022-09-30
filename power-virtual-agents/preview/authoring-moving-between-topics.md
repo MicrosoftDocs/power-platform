@@ -1,5 +1,5 @@
 ---
-title: Move between topics (Preview)
+title: Move between topics (preview)
 description: Learn how to insert nodes to switch to other topics in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022

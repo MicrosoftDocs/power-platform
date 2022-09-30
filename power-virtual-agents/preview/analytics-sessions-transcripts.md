@@ -1,5 +1,5 @@
 ---
-title: Work with Power Apps bot conversation transcripts (Preview)
+title: Work with Power Apps bot conversation transcripts (preview)
 description: Work with bot conversation transcripts exported from Power Apps and learn how to pull the data into Power BI in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -11,7 +11,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Work with Power Apps bot conversation transcripts (Preview)
+# Work with Power Apps bot conversation transcripts (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
