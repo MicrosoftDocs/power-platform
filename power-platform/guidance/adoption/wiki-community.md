@@ -61,7 +61,8 @@ The Power Platform hub template is a SharePoint communication site designed to p
 The Power Platform hub is a SharePoint Online template that is installed to an existing Site Collection by running two PowerShell scripts.
 The steps in this section take you through the process of preparing, and running the PowerShell scripts.
 
-> [!NOTE] Your organization may restrict your ability to run PowerShell scripts, or you may need to work with your SharePoint Online administration team to run the PowerShell script.
+> [!NOTE]
+> Your organization may restrict your ability to run PowerShell scripts, or you may need to work with your SharePoint Online administration team to run the PowerShell script.
 
 #### Download the assets
 
