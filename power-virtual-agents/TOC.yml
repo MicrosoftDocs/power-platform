@@ -309,7 +309,7 @@
       - name: Manage topics
         href: preview/authoring-topic-management.md
       - name: Use system topics
-        href: preview/system-topics.md
+        href: preview/authoring-system-topics.md
       - name: Add comments to bots
         href: preview/authoring-comments.md
       - name: Test your bot
