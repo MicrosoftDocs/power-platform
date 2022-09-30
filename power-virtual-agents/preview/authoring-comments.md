@@ -19,6 +19,4 @@ searchScope:
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This feature is available to preview bots, but still works the same way as production bots.
-
-To learn more, see [Add comments to bots](/authoring-comments.md) in the production documentation.
+This feature is available in the preview and has not changed. For more information, see [Add comments to bots (production)](/authoring-comments.md).
