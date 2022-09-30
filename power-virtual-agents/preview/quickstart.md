@@ -13,11 +13,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This quickstart walks you through making a bot that uses new features and improvements introduced in the Power Virtual Agents preview. We'll create a bot that helps users make a reservation at a fictional restaurant.
-
->
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]
->
+This quickstart walks you through making a bot that uses new features and improvements introduced in the Power Virtual Agents preview. You'll create a bot that helps users make a reservation at a fictional restaurant.
 
 ## Prerequisites
 
@@ -25,11 +21,11 @@ This quickstart walks you through making a bot that uses new features and improv
 
 ## Create a bot
 
-Power Virtual Agents now has an app-level home page that isn't specific to any bot. On this page you can create a new bot, view a list of recent bots that you've accessed, and learning resources like videos, documentation resources, and learning paths.
+Power Virtual Agents now has an app-level home page that isn't specific to any bot. On this page you can create a new bot, view a list of recent bots that you've accessed, and access learning resources, such as videos, documentation, and learning paths.
 
 :::image type="content" source="media/quickstart/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
-1. In the side navigation, select **Create**, or select **Home** and then select **Create a bot**.
+1. In the side navigation, select **Create** (**+**); or, select **Home**, then **+ Create a bot**.
 
 1. Select **Try the unified canvas (preview)** to create a preview bot.
 
@@ -41,21 +37,24 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
     :::image type="content" source="media/quickstart/new-bot2.png" alt-text="Screenshot of the create a chatbot dialog.":::
 
-> [!IMPORTANT]
-> Bots can only be created in English in the Power Virtual Agents preview.
+    > [!IMPORTANT]
+    > In the Power Virtual Agents preview, bots can only be created in English.
 
 ## Customize the conversation start topic
 
-1. In the side navigation, select **Topics**. Then select the **System** tab to view the system topics and then select the **Conversation Start** topic. This topic is triggered when a user joins a new conversation and allows the bot to send a welcome message to the user.
+1. In the side navigation, select **Topics**.
+1. Select the **System** tab to view the system topics.
+1. Select the **Conversation Start** topic to open it. This topic is triggered when a user joins a new conversation and allows the bot to send a welcome message to the user.
+1. To remove the existing **Message** node, select its _node menu_ (**&vellip;**), then **Delete**.
+1. To add a new **Message** node, select the _add node_ (**+**) menu after the the **On Coversation Start** node, then **Send a message**.
+    1. Add `Good day!` in the message field.
+    1. In the **Message** node, select **+ Add**, then **Message variation** to add a couple [message variations](authoring-send-message.md#use-message-variations):
+        - `Hi there!`
+        - `Hi!`
 
-1. In the existing **Message** node, select the **Delete** button in the ellipsis menu.
+    1. To add an image to the message, select **+ Add**, then **Image**. You'll need to provide a title and the image URL. The image URL must start with `https://`.
 
-1. To add a new **Message** node, select **Send a message** in the add node menu. Type the following greetings as [message variations](authoring-send-message.md#use-message-variations):
-    - `Good day!`
-    - `Hi there!`
-    - `Hi!`
-
-1. [Add an image card](authoring-send-message.md#add-an-image) and provide an image of the restaurant to help the user visually confirm that they're booking at the correct location.
+<!-- TODO: What are the real limitations of images?-->
 
     :::image type="content" source="media/quickstart/image-card.png" alt-text="Screenshot of image card added to message node.":::
 
