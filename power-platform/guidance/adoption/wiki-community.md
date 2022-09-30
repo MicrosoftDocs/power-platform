@@ -65,7 +65,7 @@ The steps in this section take you through the process of preparing, and running
 
 #### Download the assets
 
-[Download](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceResources/Release/PowerPlatformHub) the Power Platform hub template from GitHub.
+[Download](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceResources/Release/PowerPlatformHub/PowerPlatformHub.zip) the Power Platform hub template from GitHub.
 
 1. Extract the contents of the PowerPlatformHub.zip folder to a location on your PC.
 1. Copy the path to the folder you extracted the files to. You'll need to input the path for the *$Path* script parameter.
