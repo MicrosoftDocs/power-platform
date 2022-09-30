@@ -123,6 +123,7 @@ Select the the node's _node menu_ (**&vellip;**) then **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
 
+<!-- FIXME: remove in comment -->
 <!--
 ## Edit topics with the code editor
 
