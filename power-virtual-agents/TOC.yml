@@ -295,7 +295,7 @@
   - name: Administer and manage
     items:
       - name: Share bots with users in your organization
-        href: admin-share-bots.md
+        href: preview/admin-share-bots.md
   - name: Author and edit
     items:
       - name: Clone an existing bot
@@ -305,7 +305,7 @@
       - name: Create and edit topics
         href: preview/authoring-create-edit-topics.md
       - name: Send a message
-        href: preview/send-a-message.md
+        href: preview/authoring-send-message.md
       - name: Ask a question
         href: preview/authoring-ask-a-question.md
       - name: Move between topics
@@ -331,9 +331,9 @@
       - name: Use expressions using Power Fx
         href: preview/advanced-power-fx.md
       - name: Add user authentication
-        href: advanced-end-user-authentication.md
+        href: preview/advanced-end-user-authentication.md
       - name: Use Power Automate flows
-        href: advanced-flow.md
+        href: preview/advanced-flow.md
   - name: Publish and integrate
     items:
       - name: Key concepts - Publish your bot
@@ -341,7 +341,7 @@
       - name: Add bot to your live website
         href: preview/publication-connect-bot-to-web-channels.md
       - name: Add bot to Microsoft Teams
-        href: publication-add-bot-to-microsoft-teams.md
+        href: preview/publication-add-bot-to-microsoft-teams.md
   - name: Monitor and diagnose
     items:
       - name: Key concepts - Analytics
@@ -361,12 +361,12 @@
   - name: Configure and customize
     items:
       - name: Configure user authentication
-        href: configuration-end-user-authentication.md
+        href: preview/configuration-end-user-authentication.md
       - name: Configure web and Direct Line channel security
-        href: configure-web-security.md
+        href: preview/configure-web-security.md
       - name: Configure single sign-on for Web
-        href: configure-sso.md
+        href: preview/configure-sso.md
       - name: Configure single sign-on for Teams
-        href: configure-sso-teams.md
+        href: preview/configure-sso-teams.md
       - name: Customize the look and feel of the bot
-        href: customize-default-canvas.md
+        href: preview/customize-default-canvas.md
