@@ -17,4 +17,4 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This feature is available in the preview and has not changed. For more information, see [Configure single sign-on with Azure Active Directory (production)](/configure-sso.md).
+This feature is available in the preview and has not changed. For more information, see [Configure single sign-on with Azure Active Directory (production)](../configure-sso.md).

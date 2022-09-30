@@ -17,4 +17,4 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This feature is available in the preview and has not changed. For more information, see [Add end-user authentication (production)](/advanced-end-user-authentication.md).
+This feature is available in the preview and has not changed. For more information, see [Add end-user authentication (production)](../advanced-end-user-authentication.md).

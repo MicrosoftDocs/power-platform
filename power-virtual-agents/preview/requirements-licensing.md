@@ -16,4 +16,4 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This feature is available in the preview and has not changed. For more information, see [Assign licenses and manage access (production)](/requirements-licensing.md).
+This feature is available in the preview and has not changed. For more information, see [Assign licenses and manage access (production)](../requirements-licensing.md).

@@ -17,4 +17,4 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This feature is available in the preview and has not changed. For more information, see [Share your bot with other users (production)](/admin-share-bots.md).
+This feature is available in the preview and has not changed. For more information, see [Share your bot with other users (production)](../admin-share-bots.md).

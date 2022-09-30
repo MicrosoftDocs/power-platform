@@ -17,4 +17,4 @@ ms.collection: virtualagent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This feature is available in the preview and has not changed. For more information, see [Export and import bots using solutions (production)](/authoring-export-import-bots.md).
+This feature is available in the preview and has not changed. For more information, see [Export and import bots using solutions (production)](../authoring-export-import-bots.md).

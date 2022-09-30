@@ -16,4 +16,4 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This feature is available in the preview and has not changed. For more information, see [Power Virtual Agents for US Government customers (production)](/requirements-licensing-gcc.md).
+This feature is available in the preview and has not changed. For more information, see [Power Virtual Agents for US Government customers (production)](../requirements-licensing-gcc.md).

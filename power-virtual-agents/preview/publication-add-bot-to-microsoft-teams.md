@@ -16,4 +16,4 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This feature is available in the preview and has not changed. For more information, see [Add a chatbot to Microsoft Teams (production)](/publication-add-bot-to-microsoft-teams.md).
+This feature is available in the preview and has not changed. For more information, see [Add a chatbot to Microsoft Teams (production)](../publication-add-bot-to-microsoft-teams.md).

@@ -15,4 +15,4 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This feature is available in the preview and has not changed. For more information, see [Working with environments (production)](/environments-first-run-experience.md).
+This feature is available in the preview and has not changed. For more information, see [Working with environments (production)](../environments-first-run-experience.md).

@@ -17,4 +17,4 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-This feature is available in the preview and has not changed. For more information, see [Configure web and Direct Line channel security (production)](/configure-web-security.md).
+This feature is available in the preview and has not changed. For more information, see [Configure web and Direct Line channel security (production)](../configure-web-security.md).
