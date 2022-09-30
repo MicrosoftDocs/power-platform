@@ -54,29 +54,36 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
     1. To add an image to the message, select **+ Add**, then **Image**. You'll need to provide a title and the image URL. The image URL must start with `https://`.
 
-<!-- TODO: What are the real limitations of images?-->
+<!-- TODO: What are the real limitations of images? Do we have a publicly accessible image URL they can use so we can provide a sample URL that works?-->
 
-    :::image type="content" source="media/quickstart/image-card.png" alt-text="Screenshot of image card added to message node.":::
+1. Add a second **Message** node.
+    1. Add a text message.
 
-1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. Please note, reservations can only be made for the next 7 days.`
+        ```text
+        We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. Please note, reservations can only be made for the next 7 days.
+        ```
 
-1. Change the edit mode to **Speech**.
+    1. Change the _text or speech_ mode to **Speech** and add a speech variation.
 
-   The speech mode allows you to add a specific message for voice-enabled channels and enable the use of [SSML tags](authoring-send-message.md#use-ssml-to-customize-speech-responses).
+        The speech mode allows you to add a specific message for voice-enabled channels and enable the use of [SSML tags](authoring-send-message.md#use-ssml-to-customize-speech-responses).
 
-    :::image type="content" source="media/quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
+        :::image type="content" source="media/quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
 
-1. Add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next 7 days.`
+    1. Add the annotated message to speak:
+
+        ```SSML
+        We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next 7 days.
+        ```
 
    When the bot speaks the message over a phone call, it will emphasize "Please note" and pause for a moment before continuing.
 
-1. Add a third **Message** node and type the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
+1. Add a third **Message** node.
+   1. Add the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
+   1. Select **+ Add**, then **Quick reply** to add a [quick reply](authoring-send-message.md#use-quick-replies) with the message `make a reservation`.
 
-1. Add a [quick reply](authoring-send-message.md#use-quick-replies) with the message `make a reservation`.
+      A quick reply gives the user the option to select "make a reservation" instead of having to type it out.
 
-   A quick reply gives the user the option to select "make a reservation" instead of having to type it out.
-
-   :::image type="content" source="media/quickstart/quick-reply.png" alt-text="Screenshot of the reservation quick reply.":::
+      :::image type="content" source="media/quickstart/quick-reply.png" alt-text="Screenshot of the reservation quick reply.":::
 
 1. Select **Save**.
 
@@ -88,21 +95,29 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
     - `Reserve a table`
     - `Make a reservation`
 
-1. Add a **Question** node and enter the message `What is the desired time and date of your reservation?`
+1. Add a **Question** node and enter the message:
 
-1. For **Identify**, choose **Date and time**. This [entity](advanced-entities-slot-filling.md) enables your bot to extract a date and time from the user's response.
+    ```text
+    What is the desired time and date of your reservation?
+    ```
 
-1. For **Save response as**, [create a new variable](authoring-variables.md) named `reservationDateTime`.
+    1. For **Identify**, choose **Date and time**. This [entity](advanced-entities-slot-filling.md) enables your bot to extract a date and time from the user's response.
 
-1. [Add a **ConditionItem** node](authoring-using-conditions.md) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
+    1. For **Save response as**, rename the variable to `reservationDateTime`.
 
-1. On the **Question Properties** pane that appears on the right hand of the canvas, select **Question behavior** to see additional configuration for the question. 
+    1. On the **Question Properties** pane that appears on the right hand of the canvas, select **Question behavior** to see additional settings for the question.
 
-1. Under the **Reprompt** heading, tick the **Customize** check box under **Retry prompt**. This allows you to set the question used to retry when a user provides an invalid response to the question, such as providing a value that does not contain a date or time in this case.
+    1. Under **Reprompt** and **Retry prompt**, select **Customize**. Set the retry prompt&mdash;the question used when a user provides an invalid response and the bot tries again.
 
-1. In the message box that is now shown, enter the message `Sorry, that doesn't look like a valid reservation date. Please enter your desired reservation date. e.g. '11-10-2022' or 'tomorrow'`.
+        ```text
+        Sorry, that doesn't look like a valid reservation date. Please enter your desired reservation date, such as `11-10-2022` or `tomorrow`.
+        ```
 
-   :::image type="content" source="media/quickstart/retry-message.png" alt-text="Screenshot of the question retry message property.":::
+    1. [Add a **ConditionItem** node](authoring-using-conditions.md) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
+
+    1. In the message box that is now shown, enter the message `Sorry, that doesn't look like a valid reservation date. Please enter your desired reservation date. e.g. '11-10-2022' or 'tomorrow'`.
+
+        :::image type="content" source="media/quickstart/retry-message.png" alt-text="Screenshot of the question retry message property.":::
 
 1. We only want to accept reservations for within the next 7 days, so we can add a validation rule and message to the question. Under the **Additional entity validation** section and the **Condition** property, click into the **Enter in a formula** input box and click the **Fx** button that appears. In the formula editor that appears, enter `Topic.reservationDateTime >= Today()` and click **Insert**.
 
