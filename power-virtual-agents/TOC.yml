@@ -294,8 +294,16 @@
     href: preview/limitations.md
   - name: Administer and manage
     items:
+      - name: Assign licenses
+        href: preview/requirements-licensing.md
+      - name: Power Virtual Agents for US Government customers
+        href: preview/requirements-licensing-gcc.md
+      - name: Working with environments
+        href: preview/environments-first-run-experience.md
       - name: Share bots with users in your organization
         href: preview/admin-share-bots.md
+      - name: Export and import bots using solutions
+        href: preview/authoring-export-import-bots.md
   - name: Author and edit
     items:
       - name: Clone an existing bot
