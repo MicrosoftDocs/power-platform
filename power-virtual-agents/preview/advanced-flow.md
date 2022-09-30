@@ -15,6 +15,7 @@ ms.collection: virtual-agent
 
 # Use Power Automate flows (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+> [!IMPORTANT]
+> This topic contains Power Virtual Agents preview documentation and is subject to change.
 
 This feature is available in the preview and has not changed. For more information, see [Use Power Automate flows (production)](../advanced-flow.md).

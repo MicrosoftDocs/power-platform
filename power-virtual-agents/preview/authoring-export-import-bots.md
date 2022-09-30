@@ -15,6 +15,7 @@ ms.collection: virtualagent
 
 # Export and import bots using solutions (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+> [!IMPORTANT]
+> This topic contains Power Virtual Agents preview documentation and is subject to change.
 
 This feature is available in the preview and has not changed. For more information, see [Export and import bots using solutions (production)](../authoring-export-import-bots.md).

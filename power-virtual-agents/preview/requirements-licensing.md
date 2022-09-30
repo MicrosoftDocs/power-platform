@@ -14,6 +14,7 @@ ms.collection: virtual-agent
 
 # Assign licenses and manage access (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+> [!IMPORTANT]
+> This topic contains Power Virtual Agents preview documentation and is subject to change.
 
 This feature is available in the preview and has not changed. For more information, see [Assign licenses and manage access (production)](../requirements-licensing.md).

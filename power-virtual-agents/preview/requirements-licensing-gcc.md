@@ -14,6 +14,7 @@ ms.collection: virtual-agent
 
 # Power Virtual Agents for US Government customers (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+> [!IMPORTANT]
+> This topic contains Power Virtual Agents preview documentation and is subject to change.
 
 This feature is available in the preview and has not changed. For more information, see [Power Virtual Agents for US Government customers (production)](../requirements-licensing-gcc.md).

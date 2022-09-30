@@ -15,6 +15,7 @@ ms.collection: virtual-agent
 
 # Share your bot with other users (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+> [!IMPORTANT]
+> This topic contains Power Virtual Agents preview documentation and is subject to change.
 
 This feature is available in the preview and has not changed. For more information, see [Share your bot with other users (production)](../admin-share-bots.md).

@@ -14,6 +14,7 @@ ms.collection: virtual-agent
 
 # Add a chatbot to Microsoft Teams (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+> [!IMPORTANT]
+> This topic contains Power Virtual Agents preview documentation and is subject to change.
 
 This feature is available in the preview and has not changed. For more information, see [Add a chatbot to Microsoft Teams (production)](../publication-add-bot-to-microsoft-teams.md).

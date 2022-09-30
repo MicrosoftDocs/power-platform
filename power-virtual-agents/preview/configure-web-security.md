@@ -15,6 +15,7 @@ ms.collection: virtual-agent
 
 # Configure web and Direct Line channel security (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+> [!IMPORTANT]
+> This topic contains Power Virtual Agents preview documentation and is subject to change.
 
 This feature is available in the preview and has not changed. For more information, see [Configure web and Direct Line channel security (production)](../configure-web-security.md).

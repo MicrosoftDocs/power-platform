@@ -15,6 +15,7 @@ ms.collection: virtual-agent
 
 # Configure single sign-on with Azure Active Directory (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+> [!IMPORTANT]
+> This topic contains Power Virtual Agents preview documentation and is subject to change.
 
 This feature is available in the preview and has not changed. For more information, see [Configure single sign-on with Azure Active Directory (production)](../configure-sso.md).
