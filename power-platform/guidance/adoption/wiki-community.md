@@ -25,11 +25,7 @@ They make sure that every person in the organization can come together at regula
 
 ## Create a Power Platform Hub
 
-<<<<<<< HEAD
-Set up a SharePoint Hub or Teams site to share rules of engagement and processes with your maker community. It should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
-=======
 Set up your own SharePoint Hub or Teams site to share success stories, upcoming events, rules of engagement and guidelines with your maker community - or get started with the [Power Platform Hub template](#get-started-with-the-power-platform-hub-template). This site should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
->>>>>>> 0e39522543ef9e51fb8a292565716109b23c5fdb
 
 Here are a few tips on what the wiki should include:
 
@@ -37,30 +33,16 @@ Here are a few tips on what the wiki should include:
 
 - **Community**: Share how to engage with the internal community, how to become a champion, how to find a mentor, and what the benefits of the community are.
 
-<<<<<<< HEAD
 - **[Environment strategy](environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of an environments licensing, security, and connectors.
-=======
-- **[Environment strategy](environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of environments with regards to licensing, security for environments, and connectors.
->>>>>>> 0e39522543ef9e51fb8a292565716109b23c5fdb
 
 - **[Data loss prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project.
 
-<<<<<<< HEAD
 - **Responsibilities of a maker**: Share what a maker is responsible for—for example:
 
 1. Keeping the tenant tidy by deleting unused resources
 1. Ensuring apps are only shared with required end users
-1. Supporting their apps in the default environment, or engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support. 
+1. Supporting their apps in the default environment, or engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support.
 1. Ensure makers are educated about the processes you have in place for business-important or mission-critical apps, such as engaging formal support.
-=======
-- **Responsibilities of a maker**: Share what a maker is responsible for—for example
-  - Keeping the tenant tidy by deleting unused resources.
-  - Ensuring apps are only shared with required end users.
-  - Supporting their apps in the default environment,.
-  - Engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support.
-  
-  Ensure makers are educated about the processes you have in place for business-important or mission-critical apps, such as engaging formal support.
->>>>>>> 0e39522543ef9e51fb8a292565716109b23c5fdb
 
 - **Support process**: Share how makers and solutions can be supported.
 
@@ -70,26 +52,30 @@ Here are a few tips on what the wiki should include:
 
 ![Sample Microsoft Power Platform wiki page.](media/wiki.png "Sample Microsoft Power Platform wiki page")
 
-<<<<<<< HEAD
-## Deploy the Community Wiki
+## Get started with the Power Platform hub template
 
-The community wiki is a SharePoint Online template that is installed to an existing Site Collection by running two PowerShell scripts.
+The Power Platform hub template is a SharePoint communication site designed to provide you with a starting point of content and page templates as you're setting up your internal Power Platform wiki and hub site. This communication site is designed to be the place where your Power Platform community can find the news and resources they need, including digital governance and compliance guardrails, upcoming events, success stories and more.
+
+### Deploy the Power Platform hub
+
+The Power Platform hub is a SharePoint Online template that is installed to an existing Site Collection by running two PowerShell scripts.
 The steps in this section take you through the process of preparing, and running the PowerShell scripts.
 
-> [!NOTE] Your organization may restrict your ability to run PowerShell scripts, or you may need to work with your SharePoint  Online administration team to run the PowerShell script.
+> [!NOTE] Your organization may restrict your ability to run PowerShell scripts, or you may need to work with your SharePoint Online administration team to run the PowerShell script.
 
-### Download the assets
+#### Download the assets
 
-The assets can be [downloaded from GitHub](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceResources/Release).  
+[Download](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceResources/Release/PowerPlatformHub) the Power Platform hub template from GitHub.
 
-### Prepare to run the PowerShell scripts
+1. Extract the contents of the PowerPlatformHub.zip folder to a location on your PC.
+1. Copy the path to the folder you extracted the files to. You'll need to input the path for the *$Path* script parameter.
+
+#### Prepare to run the PowerShell scripts
 
 The two PowerShell scripts have a dependency on two PowerShell modules:
 
-1. Microsoft.PowerApps.Administration.PowerShell - which can be downloaded and installed by [following instructions in this document](power-platform/admin/powerapps-powershell#installation).
-1. PnP PowerShell - which can be downloaded and installed by [following instructions in this document](https://github.com/pnp/powershell)
-
-> [!IMPORTANT] Before running the script, ensure that you have the SharePoint Online site template files located in an accessible folder.  You'll need to input the path for the $Path script parameter.
+1. [Download and install](/power-platform/admin/powerapps-powershell#installation) Microsoft.PowerApps.Administration.PowerShell
+1. [Download and install](https://github.com/pnp/powershell) PnP PowerShell
 
 The PowerShell commands in the Microsoft.PowerApps.Administration.PowerShell module requires Windows PowerShell version 5.x.
 
@@ -98,8 +84,6 @@ Check the version of PowerShell running on your machine:
 ```powershell
 $PSVersionTable.PSVersion
 ```
-
-1. Extract the contents of the PowerPlatformHub.zip folder to a location on your PC.
 
 ### Update the PowerShell script variables
 
@@ -117,8 +101,8 @@ $siteTitle = 'Power Platform Hub'
 $timeZone = 2
 ```
 
-1. **$adminTenantName** - represents your organization name
-1. **$companyName** - represents your organization name
+1. **$adminTenantName** - your organization name
+1. **$companyName** - your organization name
 1. **$lcid** - defines the language for the SharePoint Online site (note: you can view a list of all locales [here](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a))
 1. **$adminTenantName** - replace  '/powerplatformhub' with your community hub name URL
 1. **$ownerEmail** - update with admin email address
@@ -127,7 +111,7 @@ $timeZone = 2
 
 ### Run the PowerShell scripts
 
-1. Select Start > type PowerShell > Run as administrator
+1. Select **Start** > type **PowerShell** > Run as administrator
 1. Navigate to the folder containing the source files
 1. Execute (by typing the following name) the following PowerShell scripts:
     1. Deploy-PowerPlatformHub.ps1
@@ -139,8 +123,8 @@ When the scripts have finished executing, you should see a notification message:
 
 "Deployment of Power Platform Hub complete!"
 
-1. Navigate to the URL of your community hub wiki
-1. Check that the following lists
+1. Navigate to the URL of your Power Platform hub.
+1. Check that the **Site Pages** document library contains files, and that the **Events** list exists.
 
 ## Troubleshooting
 
@@ -149,13 +133,6 @@ The PowerShell scripts have been written to catch any failures. However, if you 
 ### Can't connect to SharePoint Online
 
 It could be caused by PnP PowerShell not being registered.  Your global administrator will need to register by following the steps [in this document](https://pnp.github.io/powershell/articles/authentication.html).
-
-=======
-## Get started with the Power Platform Hub template
-
-The Power Platform Hub template is a SharePoint communication site designed to provide you with a starting point of content and page templates as you're setting up your internal Power Platform wiki and hub site. This communication site is designed to be the place where your Power Platform community can find the news and resources they need, including digital governance and compliance guardrails, upcoming events, success stories and more.
-
-### Deployment
 
 ### Configuration
 
@@ -188,6 +165,5 @@ Once you've modified the existing content, you should also
   ![Add a new page from a template](media/wiki-new.png "Add a new page from a template")
 - Delete the **Success-story--Learn-how-our-Finance-department-saved-1M-per-month-by-automating-processes.aspx** page, this page is a template for how to share a success story. Highlight your own success stories by selecting **New > Page > Story** from the Power Platform Hub homepage.
 - Delete the **Research-and-Innovation-hackathon.aspx** page, this page is a template for how to announce an upcoming hackathon event. Announce your own hackathon by selecting **New > Page > Hackathon** from the Power Platform Hub homepage.
->>>>>>> 0e39522543ef9e51fb8a292565716109b23c5fdb
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
