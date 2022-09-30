@@ -1,6 +1,6 @@
 ---
 title: "Limitations of the Power Virtual Agents preview (preview)"
-description: "Existing features that aren't supported in the Power Virtual Agents preview."
+description: "Existing features that aren't supported in Power Virtual Agents preview."
 ms.date: 10/10/2022
 ms.topic: overview
 author: v-alarioza
