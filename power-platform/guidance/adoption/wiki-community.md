@@ -87,7 +87,7 @@ $PSVersionTable.PSVersion
 
 ### Update the PowerShell script variables
 
-The PowerShell script contains several variables that should be updated to reflect your organization. 
+The PowerShell script contains several variables that should be updated to reflect your organization.
 Open **Deploy-PowerPlatformHub.ps1** in an ISE of your choice and update the following variables:
 
 ```powershell
