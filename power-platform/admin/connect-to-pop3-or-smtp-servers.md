@@ -4,9 +4,9 @@ description: Connect Gmail accounts, POP3 email server, or SMTP email server usi
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/20/2022
-author: jimholtz
+author: DanaMartens
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin

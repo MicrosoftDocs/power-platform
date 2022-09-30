@@ -1,5 +1,5 @@
 ---
-title: "Power Virtual Agents preview quickstart (Preview)"
+title: "Power Virtual Agents preview quickstart (preview)"
 description: "Discover the new features introduced in the Power Virtual Agents preview."
 ms.date: 10/10/2022
 ms.topic: article
@@ -9,7 +9,7 @@ manager: shellyha
 ms.collection: virtual-agent
 ---
 
-# Quickstart (Preview)
+# Quickstart (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -50,20 +50,30 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. In the existing **Message** node, select the **Delete** button in the ellipsis menu.
 
-1. To add a new **Message** node, select **Send a message** in the add node menu. Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
+1. To add a new **Message** node, select **Send a message** in the add node menu. Type the following greetings as [message variations](authoring-send-message.md#use-message-variations):
     - `Good day!`
     - `Hi there!`
     - `Hi!`
 
-1. [Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant to help the user visually confirm that they're booking at the correct location.
+1. [Add an image card](authoring-send-message.md#add-an-image) and provide an image of the restaurant to help the user visually confirm that they're booking at the correct location.
 
     :::image type="content" source="media/quickstart/image-card.png" alt-text="Screenshot of image card added to message node.":::
 
 1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. Please note, reservations can only be made for the next 7 days.`
 
+1. Change the edit mode to **Speech**.
+
+   The speech mode allows you to add a specific message for voice-enabled channels and enable the use of [SSML tags](authoring-send-message.md#use-ssml-to-customize-speech-responses).
+
+    :::image type="content" source="media/quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
+
+1. Add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next 7 days.`
+
+   When the bot speaks the message over a phone call, it will emphasize "Please note" and pause for a moment before continuing.
+
 1. Add a third **Message** node and type the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
 
-1. Add a [quick reply](authoring-create-edit-topics.md#quick-replies) with the message `make a reservation`.
+1. Add a [quick reply](authoring-send-message.md#use-quick-replies) with the message `make a reservation`.
 
    A quick reply gives the user the option to select "make a reservation" instead of having to type it out.
 
@@ -85,7 +95,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. For **Save response as**, [create a new variable](authoring-variables.md) named `reservationDateTime`.
 
-1. On the Question node, select the **Properties** button in the ellipsis menu.
+1. [Add a **ConditionItem** node](authoring-using-conditions.md) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
 
 1. On the **Question Properties** pane that appears on the right hand of the canvas, select **Question behavior** to see additional configuration for the question. 
 

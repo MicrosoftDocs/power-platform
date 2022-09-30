@@ -49,6 +49,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**Inactivity timeout**|More information: [Inactivity timeout](user-session-management.md#inactivity-timeout) |  
 > |Set inactivity timeout|Default: Off. Enable to automatically sign out a user. |  
 > | **Enable sharing** | Default: Off. Select **On** to allow users to share read-only links to records with other users from this environment. |
+> |**Content security policy**|More information: [Content security policy](content-security-policy.md) |  
 
 ## Replace the privacy statement for the organization  
  By default, the [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] privacy statement is always shown to users with an administrator role only, and not to other (business) users. As an administrator, you can add a link to specify your organization's privacy statement, which is then shown to other users in your organization.  

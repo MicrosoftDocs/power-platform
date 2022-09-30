@@ -85,7 +85,7 @@ Open XrmToolBox and connect to your organization. On the **Configuration** tab, 
 
 To modify the default filter for a table, you'll need to edit the default view for the table.
 
-1. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation.md#solution-explorer), expand **Entities**, select the table that you want, and then select **Views**. 
+1. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer), expand **Entities**, select the table that you want, and then select **Views**.
 
 2. Select **Create a new view**.
 

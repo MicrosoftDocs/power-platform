@@ -21,8 +21,6 @@ contributors:
 ---
 # :::no-loc text="Icon"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to display Fluent UI icons.
 
 :::image type="content" source="media/icon.png" alt-text="Icon control.":::
@@ -33,40 +31,48 @@ This control renders Fluent UI icons based on the name. You can use it to easily
 
 For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/fluentui#/styles/web/icons).
 
-> [!NOTE]
-> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Icon).
+## Properties
+
+### Key properties
+
+| Property | Description |
+| -------- | ----------- |
+| `ItemIconName` | The Fluent UI icon to use (see [Fluent UI Icons](https://uifabricicons.azurewebsites.net/)) |
+| `IconType` | Renders the icon as types `Action button`, `Icon button`, or `Icon only` |
+| `IconSize` | The size of the icon (pixels) |
+| `Text` | Text displayed (works for type `Action button`) |
+| `TextAlignment` | Position of the text (works for types `Action button` and `Icon only`) |
+
+
+### Style properties
+
+| Property | Description |
+| -------- | ----------- |
+| `FontSize` | Size of the font (works for type `Action button`) |
+| `IconColor` | Color of the icon |
+| `HoverIconColor` | Color of the icon that appears on hover |
+| `FontColor` | Color of the font |
+| `HoverFontColor` | Color of the font that appears on hover |
+| `FillColor` | Color of the background fill of the icon (works for types `Action button` and `Icon button`) |
+| `HoverFillColor` | Color of the fill that appears on hover (works for types `Action button` and `Icon button`) |
+| `BorderColor` | Color of the border of the icon (works for types `Action button` and `Icon button`) |
+| `HoverBorderColor` | The color of the border that appears on hover |
+| `BorderRadius` | Roundness of the corners (works for types `Action button` and `Icon button`) |
+| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
+| `AccessibilityLabel` | Screen reader aria-label |
+
+### Event properties
+
+| Name | Description |
+| ------ | ----------- |
+| `InputEvent` |  An event to send to the control. |
+
+## Behavior
+
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
 
 ## Limitations
 
 This code component can only be used in canvas apps and custom pages.
-
-## Key properties
-
-| Property | Description |
-| -------- | ----------- |
-| `Icon name` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
-| `Icon type` | Renders the icon as an action button, icon button, or icon only. |
-| `Text` | Text displayed (action button type only) |
-| `Text alignment` | Position of the text (action button type only) |
-| `Icon color` | The color of the icon |
-| `Icon size` | The size of the icon |
-| `Font size` | The size of the font (action button type only) |
-| `Font color` | The color of the font |
-| `Fill color` | The color of the background fill of the icon |
-| `Border color` | The color of the border of the icon |
-| `Border radius` | The roundness of the corners |
-
-## Additional properties
-
-| Property | Description |
-| -------- | ----------- |
-| `Hover icon color` | The color of the icon that appears on hover |
-| `Hover font color` | The color of the font that appears on hover |
-| `Hover fill color` | The color of the fill that appears on hover |
-| `Hover border color` | The color of the border that appears on hover |
-
-## Best practices
-
-Go to [Fluent UI Icon control best practices](https://developer.microsoft.com/fluentui#/controls/web/icon).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
