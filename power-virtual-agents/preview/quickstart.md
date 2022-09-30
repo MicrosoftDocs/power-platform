@@ -117,7 +117,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
     1. We only want to accept reservations for within the next 7 days, so we can add a validation rule and message to the question.
         1. Under **Additional entity validation** and **Condition**, enter the following Power Fx formula:
 
-            ```powerappsfl
+            ```Power Fx
             And(Topic.reservationDateTime >= Today(), Topic.reservationDateTime < Today()+7)
             ```
 
@@ -140,7 +140,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
     1. To only accept reservations of up to 6 people:
         1. Under **Additional entity validation** and **Condition**, enter the following Power Fx formula:
 
-            ```powerappsfl
+            ```Power Fx
             And(Topic.reservationNumber > 0, Topic.reservationNumber <= 6)
             ```
 
