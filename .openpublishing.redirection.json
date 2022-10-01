@@ -26,6 +26,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "power-platform/guidance/automation-coe/overview.md",
+       "redirect_url": "/power-automate/guidance/automation-coe/overview",
+       "redirect_document_id": "false"
+    },
+    {
      "source_path": "power-platform/guidance/automation-coe/strategy.md",
       "redirect_url": "/power-automate/guidance/automation-coe/strategy",
       "redirect_document_id": "false"
