@@ -361,7 +361,7 @@
     - name: Automation adoption best practices
       items:
         - name: Overview
-          href: /power-automate/automation-coe/overview.md
+          href: /power-automate/guidance/automation-coe/overview.md
     - name: Real-world architecture examples
       items:
         - name: Overview

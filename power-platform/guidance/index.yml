@@ -71,7 +71,7 @@ landingContent:
        - linkListType: overview
          links:
           - text: Overview
-            url: /power-automate/automation-coe/overview.md
+            url: /power-automate/guidance/automation-coe/overview
 
   # Card
   - title: Architecture
