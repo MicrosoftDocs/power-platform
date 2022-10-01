@@ -72,18 +72,6 @@ landingContent:
          links:
           - text: Overview
             url: /power-automate/automation-coe/overview.md
-          - text: Holistic Enterprise Automation Techniques (HEAT)
-            url: ./automation-coe/heat.md
-          - text: Automation Maturity Model
-            url: ./automation-coe/automation-maturity-model-overview.md
-       - linkListType: how-to-guide
-         links:
-          - text: Automation admin and governance
-            url: ./automation-coe/automation-admin-gov.md
-          - text: Automation Kit for Power Platform
-            url: ./automation-coe/automation-coe-starter-kit.md
-          - text: Manage Power Automate for desktop on Windows
-            url: ./automation-coe/manage-pad-on-windows.md  
 
   # Card
   - title: Architecture
