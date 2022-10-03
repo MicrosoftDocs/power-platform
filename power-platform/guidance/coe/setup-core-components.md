@@ -161,6 +161,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
 - Admin | Sync Template v3 (Desktop flows)
+- Admin | Sync Template v3 (Environment Properties)
 - (optional) Admin | Sync Template v3 (Flow Action Details)
 - Admin | Sync Template v3 (Flows)
 - Admin | Sync Template v3 (Model Driven Apps)
