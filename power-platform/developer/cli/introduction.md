@@ -12,9 +12,7 @@ ms.topic: overview
 
 Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and more.
 
-Microsoft Power Platform CLI is available for use in the GCC and GCC High (US Sovereign cloud) regions. See the [`--cloud`](reference/auth.md#--cloud--ci) parameter for the [pac auth create](reference/auth.md#pac-auth-create) command to find out about supported US Sovereign cloud environments. 
-
-<!-- Use the command `pac auth create` for help on the `--cloud` parameter to find out about supported US Sovereign cloud environments.   -->
+Microsoft Power Platform CLI is available for use in the GCC and GCC High (US Sovereign cloud) regions. See the [`--cloud`](reference/auth.md#--cloud--ci) parameter for the [pac auth create](reference/auth.md#pac-auth-create) command to find out about supported US Sovereign cloud environments.
 
 ## Install Microsoft Power Platform CLI
 
@@ -65,7 +63,6 @@ In some organizations, downloading or initiating an install over the web is proh
 Once the installation is successful, you will need to restart Visual Studio Code, upon which you will see the following notification.
 
 :::image type="content" source="media/installation-success-1.png" alt-text="Install notification":::
-
 
 On the **Activity** bar. you'll notice the icon for the Power Platform Tools.
 
