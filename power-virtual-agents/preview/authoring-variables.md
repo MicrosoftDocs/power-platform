@@ -41,15 +41,15 @@ A variable is associated with a **type**. The type determines what values the va
 | String   | A sequence of characters used to represent text.                                                                      |
 | Boolean  | A logical value that can only be `true` or `false`.                                                                   |
 | Number   | Any real number.                                                                                                      |
-<!-- FIXME: remove in comment -->
 | Table    | A list of values, but all values must be the same type.                                                               |
 | Record   | A collection of name-value pairs where values can be any type.                                                        |
 | DateTime | A date, time, day of the week, or month relative to a point in time.                                                  |
 | Choice   | A list of string values that have associated synonyms.                                                                |
 | Blank    | A placeholder for "no value" or "unknown value". See [Blanks in Power Fx](/power-platform/power-fx/data-types#blank). |
 
-<!-- FIXME: remove in comment -->
-A variable's type is set based on the first time is has a value assigned.
+A variable's type is set the first time a value is assigned. Order is determined from top to bottom, meaning nodes at the top of the authoring canvas will are considered first over nodes at the bottom. However, when you create branches with condition nodes, branches are ordered from left to right, meaning nodes in the leftmost branch are considered first over nodes in the rightmost branch.
+
+If a variable is configured as a [global variable](authoring-variables-bot.md) it can be used in more than one topic. In this case, the topic where the global variable was created is considered first.
 
 Once a variable has been assigned a value, the type for that variable is fixed and it can't be assigned values of any other type. For example, a variable given the starting value of `1` is assigned the type **Number**. Attempting to assign it to a **String** value of `"apples"` will result in an error.
 
