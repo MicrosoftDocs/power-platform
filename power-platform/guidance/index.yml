@@ -125,7 +125,4 @@ additionalContent:
           url: /power-pages
         - title: Power Virtual Agents docs
           summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
-          url: /power-virtual-agents
-
-  # footer (optional)
-  footer: "[Power Platform docs](/power-platform)"
+          url: /power-virtual-agents  
