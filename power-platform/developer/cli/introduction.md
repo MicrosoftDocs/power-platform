@@ -8,7 +8,6 @@ ms.reviewer: jdaly
 ms.date: 10/03/2022
 ms.topic: overview
 ---
-
 # What is Microsoft Power Platform CLI?
 
 Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and more.
@@ -64,32 +63,32 @@ Follow these steps to install Microsoft Power Platform CLI using Visual Studio C
 1. Select the **Extensions** icon from the **Activity** panel. In the search bar, enter **Power Platform Tools**.
 1. Select **Install**. Once the installation is finished, restart Visual Studio Code to see the extension within the **Terminal** window.
 
-   > [!div class="mx-imgBorder"]
-   > ![VS code extension install.](media/power-platform-vs-code-extension-install.png "VS code extension install")
+   :::image type="content" source="media/power-platform-vs-code-extension-install.png" alt-text="VS Code extension install":::
 
    > [!NOTE]
    > Power Platform Tools for Visual Studio Code updates automatically.
 
 1. Optionally, you can initiate the install into Visual Studio Code directly from [Marketplace]( https://aka.ms/ppcvscode) and it will launch Visual Studio Code and commence the extension installation.
 
-   > [!div class="mx-imgBorder"]
-   > ![Launch install from Marketplace.](media/marketplace-install.png "Launch install from Marketplace")
+   :::image type="content" source="media/marketplace-install.png" alt-text="Launch install from Marketplace":::
 
 You can also do a side-load install into Visual Studio Code by downloading the extension from the [Marketplace](https://aka.ms/ppcvscode).
 
 ### Side-load install of Power Platform Tools for Visual Studio Code
 
-In some organizations, downloading or initiating an install over the web is prohibited. Most cases, the organization download the installation media and stores it in a secure location and verify that it is working according to their standards, before it is distributed within the organization. To support this paradigm of installation, you can go to the [Marketplace](https://aka.ms/ppcvscode) and instead of pressing the install button, press the download extension.
+In some organizations, downloading or initiating an install over the web is prohibited. Most cases, the organization download the installation media and stores it in a secure location and verify that it is working according to their standards, before it is distributed within the organization. Use the following instructions to support this type of installation.
 
-:::image type="content" source="media/side-load-install-1.png" alt-text="Download the extension":::
+1. Go to the [Marketplace](https://aka.ms/ppcvscode) and instead of pressing the **Install** button, click the **Download Extension** link under **Resources**.
 
-This is will download a file with a .vsix extension on to your workstation.
+   :::image type="content" source="media/side-load-install-1.png" alt-text="Download the extension":::
 
-:::image type="content" source="media/side-load-install-2.png" alt-text="Downloaded extension":::
+   This is will download a file with a .vsix extension on to your workstation.
 
-Launch Visual Studio Code and select the **Extensions** icon, select the ellipsis on the **Extensions** side bar, and then select **Install from VSIX**.
+   :::image type="content" source="media/side-load-install-2.png" alt-text="Downloaded extension":::
 
-:::image type="content" source="media/side-load-install-3.png" alt-text="Install from VSIX":::
+1. Launch Visual Studio Code and select the **Extensions** icon, select the ellipsis on the **Extensions** side bar, and then select **Install from VSIX**.
+
+   :::image type="content" source="media/side-load-install-3.png" alt-text="Install from VSIX":::
 
 ### Successful installation
 
