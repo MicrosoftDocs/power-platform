@@ -1,137 +1,131 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
 title: Microsoft Power Platform guidance documentation
-summary: The Microsoft Power Platform guidance documentation provides information that's designed to help you create and implement the business and technology strategies necessary for your organization to succeed with Microsoft Power Platform.
-
+summary: Provides information to help you create and implement the business and technology strategies necessary for your organization to succeed with Microsoft Power Platform.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: dynamics
 metadata:
   title: Microsoft Power Platform guidance documentation
-  description: Provides access to Microsoft Power Platform guidance documentation
+  description: Hub page with links to Microsoft Power Platform guidance documentation
   services: service
-  
   ms.subservice: guidance
-  ms.topic: landing-page 
+  ms.topic: hub-page
   ms.collection: collection
-  author: jimholtz
-  ms.author: jimholtz
-  ms.date: 05/16/2022
+  author: KumarVivek
+  ms.author: kvivek
+  ms.date: 09/27/2022
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+# highlightedContent section (optional)
+# Maximum of 8 items
 
-landingContent:
+# productDirectory section (optional)
+productDirectory:
+  items:
+    # Card
+    - title: Adoption best practices
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ./media/sample-adoption.svg
+      links:
+        - url: /power-platform/guidance/adoption/methodology
+          text: Adoption overview
+        - url: /power-platform/guidance/adoption/strategy-best-practices
+          text: Strategy and vision
+        - url: /power-platform/guidance/adoption/admin-best-practices
+          text: Admin and governance
+        - url: /power-platform/guidance/adoption/nurture-best-practices
+          text: Nurture and educate
+    # Card
+    - title: Center of Excellence (CoE) Kit
+      imageSrc: ./media/sample-coe.svg
+      links:
+        - url: /power-platform/guidance/coe/overview
+          text: CoE overview
+        - url: /power-platform/guidance/coe/starter-kit-explained
+          text: What's in the CoE starter Kit
+        - url: /power-platform/guidance/coe/setup
+          text: Set up the CoE starter Kit
+        - url: /power-platform/guidance/coe/power-bi
+          text: Use the CoE starter Kit
+    # Card
+    - title: Creator Kit
+      imageSrc: ./media/sample-creator.svg
+      links:
+        - url: /power-platform/guidance/creator-kit/overview
+          text: Creator Kit overview
+        - url: /power-platform/guidance/creator-kit/components
+          text: What's in the Creator Kit
+        - url: /power-platform/guidance/creator-kit/setup
+          text: Install the Creator Kit
+        - url: /power-platform/guidance/creator-kit/creator-kit-explained
+          text: Use the Creator Kit
+    # Card
+    - title: More...
+      imageSrc: ./media/sample-more.svg
+      links:
+        - url: /power-platform/guidance/architecture/real-world-examples/overview
+          text: Real-world solution architecture examples
+        - url: /power-platform/guidance/expressroute/overview
+          text: Azure ExpressRoute and Power Platform
+        - url: /power-platform/guidance/icons
+          text: Power Platform icons
 
-  # Card 
-  - title: Power Platform Adoption best practices
-    linkLists:
-       - linkListType: overview
-         links:
-          - text: Overview
-            url: ./adoption/methodology.md
-          - text: Strategy and vision
-            url: ./adoption/strategy-best-practices.md
-          - text: Admin and governance
-            url: ./adoption/admin-best-practices.md
-          - text: Nurture and educate
-            url: ./adoption/nurture-best-practices.md
-        
-  # Card
-  - title: Power Platform Center of Excellence (CoE) Kit
-    linkLists:
-       - linkListType: overview
-         links:
-          - text: Overview
-            url: ./coe/overview.md
-          - text: What's in the CoE Starter Kit?
-            url: ./coe/starter-kit-explained.md
-       - linkListType: how-to-guide
-         links:
-          - text: Set up the CoE Starter Kit
-            url: ./coe/setup.md
-          - text: How to use the CoE Starter Kit?
-            url: ./coe/power-bi.md
+# additionalContent section (optional)
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+    - title: Related guidance centers
+      summary: Guidance information focused on individual Power Platform components # < 160 chars (optional)
+      items:
+        # Cards with links style
+        # Card
+        - title: Power Apps guidance
+          links:
+            - text: Power Apps patterns
+              url: /power-apps/guidance/patterns/overview
+            - text: Planning a Power Apps project
+              url: /power-apps/guidance/planning/introduction
+            - text: Collaborating and co-developing apps
+              url: /power-apps/guidance/co-develop/overview
+        # Card
+        - title: Power Automate guidance
+          links:
+            - text: Planning a Power Automate project
+              url: /power-automate/guidance/planning/introduction
+            - text: RPA with SAP
+              url: /power-automate/guidance/rpa-sap-playbook/introduction
+            - text: Automation Kit
+              url: /power-automate/guidance/automation-kit/overview/introduction
+        # Card
+        - title: Power BI guidance
+          links:
+            - text: Migrate to Power BI
+              url: /power-bi/guidance/powerbi-migration-overview
+            - text: Power BI adoption roadmap
+              url: /power-bi/guidance/powerbi-adoption-roadmap-overview
+            - text: Power BI implementation planning
+              url: /power-bi/guidance/powerbi-implementation-planning-introduction
 
-  # Card
-  - title: Power Platform Creator Kit
-    linkLists:
-       - linkListType: overview
-         links:
-          - text: Overview
-            url: ./creator-kit/overview.md
-          - text: What's in the Creator Kit?
-            url: ./creator-kit/components.md
-       - linkListType: how-to-guide
-         links:
-          - text: Install the Creator Kit
-            url: ./creator-kit/setup.md
-          - text: Use the Creator Kit
-            url: ./creator-kit/creator-kit-explained.md
+    - title: Documentation # < 60 chars (optional)
+      summary: Official documentation for Power Platform components
+      items:
+        # Card
+        - title: Power Apps docs
+          summary: Quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
+          url: /power-apps
+        # Card
+        - title: Power Automate docs
+          summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
+          url: /power-automate
+        # Card
+        - title: Power BI docs
+          summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
+          url: /power-bi
+        - title: Power Pages docs
+          summary: Design, host, and administer secure, modern, and low-code business websites.
+          url: /power-pages
+        - title: Power Virtual Agents docs
+          summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
+          url: /power-virtual-agents
 
-  # Card
-  - title: Automation adoption best practices
-    linkLists:
-       - linkListType: overview
-         links:
-          - text: Overview
-            url: ./automation-coe/overview.md
-          - text: Holistic Enterprise Automation Techniques (HEAT)
-            url: ./automation-coe/heat.md
-          - text: Automation Maturity Model
-            url: ./automation-coe/automation-maturity-model-overview.md
-       - linkListType: how-to-guide
-         links:
-          - text: Automation admin and governance
-            url: ./automation-coe/automation-admin-gov.md
-          - text: Automation Kit for Power Platform
-            url: ./automation-coe/automation-coe-starter-kit.md
-          - text: Manage Power Automate for desktop on Windows
-            url: ./automation-coe/manage-pad-on-windows.md  
-
-  # Card
-  - title: Architecture
-    linkLists:
-       - linkListType: overview
-         links:
-          - text: Real-world architecture examples
-            url: ./architecture/real-world-examples/overview.md
-       - linkListType: video
-         links:
-          - text: "Videos: Power Apps and Power Automate Architecture Series"
-            url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
-
-  # Card
-  - title: Use ExpressRoute
-    linkLists:
-       - linkListType: overview
-         links:
-          - text: Overview
-            url: ./expressroute/overview.md          
-          - text: Benefits of using ExpressRoute
-            url: ./expressroute/benefits.md
-       - linkListType: how-to-guide
-         links:
-          - text: How ExpressRoute works with Power Platform?
-            url: ./expressroute/how-expressroute-works.md
-          - text: Set up ExpressRoute for Power Platform
-            url: ./expressroute/setup.md
-
-  # Card
-  - title: Related resources
-    linkLists:
-       - linkListType: reference
-         links:
-          - text: Power Apps guidance
-            url: /powerapps/guidance
-          - text: Power BI guidance
-            url: /power-bi/guidance/
-          - text: Power Automate guidance
-            url: /power-automate/guidance/
-          - text: Power Virtual Agents docs
-            url: /power-virtual-agents
-          - text: Power Platform admin guide
-            url: ../admin/admin-documentation.md
-        
-  
-     
-
-
-      
-
+  # footer (optional)
+  footer: "[Power Platform docs](/power-platform)"
