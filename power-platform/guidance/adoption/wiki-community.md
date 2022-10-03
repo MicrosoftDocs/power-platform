@@ -58,7 +58,7 @@ The Power Platform hub template is a SharePoint communication site designed to p
 
 ### Deploy the Power Platform hub
 
-The Power Platform hub is a SharePoint Online template that is installed to an existing Site Collection by running two PowerShell scripts.
+The Power Platform hub is a SharePoint Online template that is installed by running two PowerShell scripts.
 The steps in this section take you through the process of preparing, and running the PowerShell scripts.
 
 > [!NOTE]
