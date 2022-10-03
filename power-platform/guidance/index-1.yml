@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform guidance documentation
-summary: Provides information to help you create and implement business and technology strategies using Microsoft Power Platform for your organization to be successful.
+summary: Provides information to help you create and implement the business and technology strategies necessary for your organization to succeed with Microsoft Power Platform.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: dynamics
 metadata:
@@ -74,7 +74,7 @@ additionalContent:
   # Supports up to 4 subsections
   sections:
     - title: Related guidance centers
-      summary: Guidance information focussed on individual Power Platform components # < 160 chars (optional)
+      summary: Guidance information focused on individual Power Platform components # < 160 chars (optional)
       items:
         # Cards with links style
         # Card
