@@ -1,5 +1,5 @@
 ---
-title: Analyze topic performance (Preview)
+title: Analyze topic performance (preview)
 description: See how your bot topics are performing and determine what you can do to improve customer satisfaction in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -12,7 +12,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Analyze your bot's topic performance (Preview)
+# Analyze your bot's topic performance (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Use sample topics to understand capabilities (Preview)"
+title: "Use sample topics to understand capabilities (preview)"
 description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents preview."
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -12,7 +12,7 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Use sample topics in Power Virtual Agents (Preview)
+# Use sample topics in Power Virtual Agents (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

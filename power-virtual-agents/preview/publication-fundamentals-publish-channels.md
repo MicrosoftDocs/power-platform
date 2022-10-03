@@ -1,5 +1,5 @@
 ---
-title: Fundamentals - Publish a chatbot to various channels (Preview)
+title: Fundamentals - Publish a chatbot to various channels (preview)
 description: Publish your bot to a channel in Power Virtual Agents preview.
 keywords: "Publish; demo; demo website; channels, PVA"
 ms.date: 10/10/2022
@@ -11,7 +11,7 @@ ms.custom: "publication, fundamentals, ceX"
 ms.collection: virtual-agent
 ---
 
-# Publish your bot (Preview)
+# Publish your bot (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

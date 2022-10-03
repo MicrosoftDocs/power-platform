@@ -40,11 +40,13 @@ The **ColorFade** function returns a brighter or darker version of a color. The 
 
 In a canvas app, you can layer controls in front of one another and specify the transparency of a control to any controls that are behind it. As a result, colors will blend through the layers. For example, this diagram shows how the three primary colors mix with an alpha setting of 50%:
 
-> [!div class="mx-imgBorder"] > ![Three primary colors with an alpha setting of 50%.](media/function-colors/alpha-primary.png)
+> [!div class="mx-imgBorder"]
+> ![Three primary colors with an alpha setting of 50%.](media/function-colors/alpha-primary.png)
 
 You can also blend images in file formats that support alpha channels. For example, you can't blend .jpeg files, but you can blend .png files. The next graphic shows the same red, green, and blue colors from the previous example, but the red color appears as a squiggle (instead of a circle) in a .png file with a 50% alpha channel:
 
-> [!div class="mx-imgBorder"] > ![Red squiggle with an alpha setting of 50% in front of blue and green circles.](media/function-colors/alpha-image.png)
+> [!div class="mx-imgBorder"]
+> ![Red squiggle with an alpha setting of 50% in front of blue and green circles.](media/function-colors/alpha-image.png)
 
 If you specify a **Color** enumeration value or you build a **ColorValue** formula with a color name or a 6-digit hexadecimal value, the alpha setting is 100%, which is fully opaque.
 
@@ -57,6 +59,10 @@ If you specify a **Color** enumeration value or you build a **ColorValue** formu
 **ColorValue**( _CSSColor_ )
 
 - _CSSColor_ - Required. A Cascading Style Sheet (CSS) color definition. You can specify either a name, such as **OliveDrab**, or a hex value, such as **#6b8e23** or **#7fffd420**. Hex values can take the form of either #_rrggbb_ or #_rrggbbaa_.
+
+**ColorValue**( _Untyped_ )
+
+- _Untyped_ - Required. An Untyped object containing a string that represents a Cascading Style Sheet (CSS) color definition.
 
 **RGBA**( _Red_, _Green_, _Blue_, _Alpha_ )
 

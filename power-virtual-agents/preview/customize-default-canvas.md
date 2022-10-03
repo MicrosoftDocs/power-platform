@@ -1,5 +1,5 @@
 ---
-title: Customize your bot (Preview)
+title: Customize your bot (preview)
 description: Change the name, icon, and color of your bot with CSS and JavaScript styling in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -11,7 +11,7 @@ ms.custom: "customization, ce06102020"
 ms.collection: virtual-agent
 ---
 
-# Customize the look and feel of your bot (Preview)
+# Customize the look and feel of your bot (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

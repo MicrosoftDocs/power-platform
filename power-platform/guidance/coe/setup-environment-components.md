@@ -25,6 +25,8 @@ This article will help you to set up the environment request components of the c
 >[!IMPORTANT]
 >Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
+[Watch a walk-through](https://www.youtube.com/watch?v=16mspbGz1zA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the environment and DLP request process works.
+
 ## Before you start
 
 ### Update environment variables values

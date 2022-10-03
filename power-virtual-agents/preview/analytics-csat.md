@@ -1,5 +1,5 @@
 ---
-title: Analyze bot customer satisfaction metrics (Preview)
+title: Analyze bot customer satisfaction metrics (preview)
 description: Use AI-driven analytics to understand how well customers are interacting with your bot and identify areas for improvement in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -12,7 +12,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Analyze your bot's customer satisfaction metrics (Preview)
+# Analyze your bot's customer satisfaction metrics (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
