@@ -148,7 +148,7 @@ If you continue to face issues with the setup, have questions or would like to r
 
 The Power Platform Hub contains placeholder text and ideas for your own content. Update this content with your own processes, links and images before the hub is ready for use.
 
-After deployment, navigate to **Site contents > Site Pages** to get started, and modify:
+After deployment, navigate to **Settings (Gear icon) > Site contents > Site Pages** to get started, and modify:
 
 - **Accelerate-innovation-and-amplify-your-productivity-with-Power-Platform.aspx**: This permanent news story is your place to share your strategy and vision for Power Platform with your makers and community. Record a video with your executive sponsor and inspire your makers to achieve more with Microsoft Power Platform!
 - **Consultation-and-Development.aspx**: If you have an internal Power Platform development team, provide their contact details, and ways to engage here. If not, delete this page!
