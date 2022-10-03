@@ -129,20 +129,26 @@ You can use controls on the toolbar to cut, copy, paste, and delete nodes on the
 
 :::image type="content" source="media/authoring-create-edit-topics/toolbar-edit-controls.png" alt-text="Screenshot of the toolbar controls for editing nodes on the canvas.":::
 
-The toolbar also has controls for undo, undo to last save, and redo. Use the drop-down menu to switch between these modes.
+The toolbar also has a control for undo.
 
 :::image type="content" source="media/authoring-create-edit-topics/toolbar-undo-redo.png" alt-text="Screenshot of the toolbar controls for undo and redo.":::
+
+To access **Undo to last save** and **Redo**, open the undo menu.
+
+:::image type="content" source="media/authoring-create-edit-topics/undo-menu.png" alt-text="Screenshot of the undo menu.":::
 
 ### To cut, copy, or delete nodes
 
 1. Select one or more adjacent nodes.
+
 1. Select the cut, copy, or delete control on the canvas toolbar.
 
 ### To paste nodes
 
-Once you have one or more nodes on the clipboard, there are a a couple ways to paste them to the canvas.
+Once you have one or more nodes on the clipboard, there are a couple of ways to paste them to the canvas.
 
-- If you select a node and then select paste, the nodes from the clipboard are added after the selected node.
+- If you select a node and then select **Paste**, the nodes from the clipboard are added after the selected node.
+
 - If you select the _add node_ (**+**) menu, then **Paste**, the nodes from the clipboard are added at that point.
 
 <!--
