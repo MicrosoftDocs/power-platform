@@ -55,11 +55,11 @@ Here's the decision tree for personal automations.
 
 A common question is, "If a flow is triggered when a Microsoft Lists item is updated, and many users interact with that list, will there be a cost for each user?" The answer depends on who is getting value from the flow.
 
--  If the flow uses premium connectors and the end users get value from the flow directly or indirecty, then every user needs a license. 
+-  If the flow uses premium connectors and the end users get value from the flow directly or indirectly, then every user needs a license. 
 -  If the flow uses premium connectors and only the owner gets value from the flow, since the trigger is an automated trigger, only the owner needs a premium license.
 -  If the flow does not use a premium connector, such as calling Dataverse in the full production environment (not the Microsoft Teams environment), having a Microsoft 365 license is enough.
 
-To find out what type (automated/manual/scheduled) of flow you have have, select a flow to see its 'type' in the details.
+To find out what type (automated/manual/scheduled) of flow you have, select a flow to see its 'type' in the details.
 
 ![Types of flows image](../media/power-automate-licensing/flow-types.png)
 
@@ -134,14 +134,14 @@ Office 365 licenses include the following Power Automate capabilities:
   
 The following Power Automate capabilities aren't included:
   
-- Access to [premium connectors](./types.md#premium-connectors) is not included except in Dataverse for Teams environments. Learn more about [Dataverse for Teams capabilities](../pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses).
+- Access to [premium connectors](./types.md#premium-connectors) (except in Dataverse for Teams environments). Learn more about [Dataverse for Teams capabilities](../pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses).
 - [Business process flows](./types.md#business-process-flows).
 - [Custom connectors](./types.md#custom-connectors).
 - [On premises gateways](./types.md#on-premises-gateway).
 - [Robotic process automation](./types.md#robotic-process-automation).
 - [AI Builder capacity](./types.md#ai-builder-credits).
   
-The following Office 365 licenses include Power Automate capabilities.
+The following Office 365 licenses include Power Automate capabilities:
   
 - Office 365 E1
 - Office 365 E3
@@ -162,7 +162,7 @@ The following Office 365 licenses include Power Automate capabilities.
 - Office 365 A1 Plus for Faculty
 - Office 365 A1 Plus for Students
 - Office 365 A3 for Faculty
-- Office 365 A3 for Students,
+- Office 365 A3 for Students
 - Office 365 A3 for Student Use Benefit
 - Office 365 A5 for Faculty
 - Office 365 A5 for Students
@@ -172,24 +172,28 @@ The following Office 365 licenses include Power Automate capabilities.
 
 The following questions are related to Dynamics 365 licensing and Power Automate use rights.
 
-### What Power Automate capabilities are included in Dynamics licenses?
+### What Power Automate capabilities are included in Dynamics 365 licenses?
 
-Dynamics licenses include following Power Automate capabilities.
+Dynamics 365 licenses include following Power Automate capabilities:
 
 - Create and execute automated, scheduled, or button flows.
 - Access to [standard connectors](./types.md#standard-connectors).
 - Access to [premium connectors](./types.md#premium-connectors) within app context.
 - [Business process flows](./types.md#business-process-flows) within app context.
 - [Custom connectors](./types.md#custom-connectors) within app context.
-- [On premises gateways](./types.md#on-premises-gateway) within app context.
-- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics Team member gets 6,000 requests/day (25,000 requests/day during the [transition period](./types.md#transition-period)), Dynamics professional gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)) and Dynamics Enterprise gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)).
+- [On-premises gateways](./types.md#on-premises-gateway) within app context.
+- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics 365 Team member gets 6,000 requests/day (25,000 requests/day during the [transition period](./types.md#transition-period)), Dynamics 365 professional gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)) and Dynamics 365 Enterprise gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)).
 
-The following Power Automate capabilities aren't included in Dynamics licenses.
+The following Power Automate capabilities aren't included in Dynamics 365 licenses:
 
-- [Robotic process automation](./types.md#robotic-process-automation).
-- [AI Builder capacity](./types.md#ai-builder-credits).
+- [Robotic process automation](./types.md#robotic-process-automation)
+- [AI Builder capacity](./types.md#ai-builder-credits)
 
-When you use a Dynamics license with Power Automate, your flows must run within the context of the Dynamics application, which refers to using the same data sources for triggers or actions as the Dynamics application. If your flow consumes standalone Power Automate actions that aren't related to the Dynamics application(s), you will need to purchase standalone Power Automate licenses.
+When you use a Dynamics 365 license with Power Automate, your flows must run within the context of the Dynamics 365 application, which refers to using the same data sources for triggers or actions as the Dynamics 365 application. If your flow consumes standalone Power Automate actions that aren't related to the Dynamics 365 applications, you'll need to purchase standalone Power Automate licenses.
+
+
+
+
 
 #### Example of Dynamics license using Power Automate within a Dynamics application context
 
