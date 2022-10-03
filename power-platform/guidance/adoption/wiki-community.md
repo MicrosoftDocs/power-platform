@@ -66,14 +66,13 @@ The steps in this section take you through the process of preparing, and running
 
 #### Download the assets
 
-[Download](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceResources/Release/PowerPlatformHub/PowerPlatformHub.zip) the Power Platform hub template from GitHub.
-
+1. [Download](https://aka.ms/pphub-download) the Power Platform hub template from GitHub.
 1. Extract the contents of the PowerPlatformHub.zip folder to a location on your PC.
-1. Copy the path to the folder you extracted the files to. You'll need to input the path for the *$Path* script parameter.
+1. Copy the path to the folder you extracted the files to. You'll need this path when you run the PowerShell scripts to deploy the template.
 
-#### Prepare to run the PowerShell scripts
+#### Prerequisites to deploy the Power Platform hub template site
 
-The two PowerShell scripts have a dependency on two PowerShell modules:
+The scripts to deploy the Power Platform hub template has a dependency on two PowerShell modules:
 
 1. [Download and install](/power-platform/admin/powerapps-powershell#installation) Microsoft.PowerApps.Administration.PowerShell
 1. [Download and install](https://github.com/pnp/powershell) PnP PowerShell
@@ -88,7 +87,8 @@ $PSVersionTable.PSVersion
 
 ### Update the PowerShell script variables
 
-The PowerShell script contains several variables that should be updated to reflect your organization.
+The PowerShell script to deploy the Power Platform hub template contains several variables that should be updated to reflect your organization.
+
 Open **Deploy-PowerPlatformHub.ps1** in an ISE of your choice and update the following variables:
 
 ```powershell
@@ -103,21 +103,21 @@ $siteTitle = 'Power Platform Hub'
 $timeZone = 2
 ```
 
-1. **$adminTenantName** - your organization name
-1. **$companyName** - your organization name
-1. **$lcid** - defines the language for the SharePoint Online site (note: you can view a list of all locales [here](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a))
-1. **$adminTenantName** - replace  '/powerplatformhub' with your community hub name URL
-1. **$ownerEmail** - update with admin email address
-1. **$siteTitle** - replace with your community wiki name
-1. **$timeZone** - an integer representing the time zone for your organization (note: these are listed [here](https://learn.microsoft.com/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones?view=sharepoint-server))
+1. **$adminTenantName** - the name of your SharePoint [root site](/sharepoint/modern-root-site#whats-the-root-site), if your root site is *contoso*.sharepoint.com enter *contoso*.
+1. **$companyName** - your organization name.
+1. **$lcid** - enter a [locale](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) to defines the language for the SharePoint Online site, enter *1033* for English (United States).
+1. **$newSiteURL** - replace  */powerplatformhub* with your chosen Power Platform community hub name.
+1. **$ownerEmail** - update with admin email address.
+1. **$siteTitle** - replace with your chosen Power Platform community hub title.
+1. **$timeZone** - a number representing the time zone for your organization, select from the list of [available time zones](/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones?view=sharepoint-server).
 
 ### Run the PowerShell scripts
 
 1. Select **Start** > type **PowerShell** > Run as administrator
-1. Navigate to the folder containing the source files
+1. Navigate to the folder containing the source files - this is the folder you extracted files to after [downloading the template](#download-the-assets).
 1. Execute (by typing the following name) the following PowerShell scripts:
-    1. Deploy-PowerPlatformHub.ps1
-    1. Set-PowerPlatformHubAsDLPErrorSettings.ps1
+    1. .\Deploy-PowerPlatformHub.ps1
+    1. .\Set-PowerPlatformHubAsDLPErrorSettings.ps1
 
 ### Test if the deployment was successful
 
@@ -128,13 +128,21 @@ When the scripts have finished executing, you should see a notification message:
 1. Navigate to the URL of your Power Platform hub.
 1. Check that the **Site Pages** document library contains files, and that the **Events** list exists.
 
-## Troubleshooting
+### Troubleshooting
 
 The PowerShell scripts have been written to catch any failures. However, if you do see errors, you should check:
 
-### Can't connect to SharePoint Online
+#### Can't connect to SharePoint Online
 
-It could be caused by PnP PowerShell not being registered.  Your global administrator will need to register by following the steps [in this document](https://pnp.github.io/powershell/articles/authentication.html).
+If you can't connect to SharePoint Online, this could be caused by PnP PowerShell not being registered.  Your global administrator will need to register by following the steps [in this document](https://pnp.github.io/powershell/articles/authentication.html).
+
+#### Can't run the script
+
+If you get an error message telling you the PowerShell script can't be loaded as it is not signed, you have to [update the execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) to [remove the execution policy from the current user](/powershell/module/microsoft.powershell.security/set-executionpolicy#example-5-remove-the-execution-policy-for-the-current-user).
+
+#### Still seeing issues?
+
+If you continue to face issues with the setup, have questions or would like to raise feature requests please report your issues here: [aka.ms/pphub-issues](https://aka.ms/pphub-issues).
 
 ### Configuration
 
