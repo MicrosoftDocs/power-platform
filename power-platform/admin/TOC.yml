@@ -71,7 +71,7 @@
       - name: Overview
         href: pricing-billing-skus.md
       - name: About licensing and license management
-        href: wp-license-management.md            
+        href: wp-license-management.md      
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
       - name: Administer without a license
@@ -134,6 +134,8 @@
           href: copy-environment.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
+        - name: Troubleshoot missing environments
+          href: troubleshoot-missing-environments.md
         - name: Business continuity and disaster recovery
           href: business-continuity-disaster-recovery.md
         - name: Edit environment properties
@@ -152,17 +154,17 @@
           href: admin-view-apps.md
         - name: Language collations 
           href: language-collations.md            
-      - name: Managed Environments (preview)     
+      - name: Managed Environments   
         items: 
         - name: Overview
           href: managed-environment-overview.md
-        - name: Enable environment management
+        - name: Enable Managed Environments
           href: managed-environment-enable.md
+        - name: Limit sharing 
+          href: managed-environment-sharing-limits.md
         - name: Weekly digests
           href: managed-environment-weekly-digests.md 
-        - name: Sharing limits
-          href: managed-environment-sharing-limits.md
-        - name: Data policies
+        - name: Data policies (preview)
           href: managed-environment-data-policies.md
       - name: Environment updates
         items:
