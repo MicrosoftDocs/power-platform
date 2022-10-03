@@ -154,7 +154,7 @@
           href: admin-view-apps.md
         - name: Language collations 
           href: language-collations.md            
-      - name: Managed Environments   
+      - name: Managed Environments (preview)  
         items: 
         - name: Overview
           href: managed-environment-overview.md
@@ -164,7 +164,7 @@
           href: managed-environment-sharing-limits.md
         - name: Weekly digests
           href: managed-environment-weekly-digests.md 
-        - name: Data policies (preview)
+        - name: Data policies 
           href: managed-environment-data-policies.md
       - name: Environment updates
         items:
