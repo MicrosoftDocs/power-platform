@@ -73,7 +73,6 @@ Some of the key fields you'll find in the Content JSON include:
 | `SessionInfo` | The type (`unengaged` or `engaged`), outcome (`Escalated`, `Resolved`, `Abandon`), and the turn count of the session. |
 | `VariableAssignment` | A value has been assigned to a variable. |
 
-
 ## Build custom reports from conversation transcripts
 
 A useful way to approach building custom reports from conversation transcripts is to look at the number of messages that need to be processed.
