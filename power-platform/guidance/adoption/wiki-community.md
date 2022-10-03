@@ -104,7 +104,7 @@ $timeZone = 2
 ```
 
 1. **$adminTenantName** - the name of your SharePoint [root site](/sharepoint/modern-root-site#whats-the-root-site), if your root site is *contoso*.sharepoint.com enter *contoso*.
-1. **$companyName** - your organization name, this name will be used in the templates navigation, title and sample pages.
+1. **$companyName** - your organization name, this name will be used in the templates page navigation, page title and sample pages.
 1. **$lcid** - enter a [locale](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) to defines the language for the SharePoint Online site, enter *1033* for English (United States).
 1. **$newSiteURL** - replace  */powerplatformhub* with your chosen Power Platform community hub URL.
 1. **$ownerEmail** - update with admin email address.
