@@ -3,7 +3,7 @@ title: "Special system users and application users"
 description: "Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose." 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2022
+ms.date: 09/30/2022
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -65,6 +65,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | # Flow-RP | Flow-RP@onmicrosoft.com | To allow Power Automate to integrate with Dataverse | Flow-RP Role, Service Reader |
 | | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\><br />@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service  |
 | | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework  |
+| | # Sharepoint Syntex | SharepointSyntex@onmicrosoft.com | To allow Sharepoint to use AI Builder document processing models | Basic User  |
 
 **The purpose of the system account?** 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 
