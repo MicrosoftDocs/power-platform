@@ -109,7 +109,7 @@ $timeZone = 2
 1. **$newSiteURL** - replace  */powerplatformhub* with your chosen Power Platform community hub URL.
 1. **$ownerEmail** - update with admin email address.
 1. **$siteTitle** - replace with your chosen Power Platform community hub title.
-1. **$timeZone** - a number representing the time zone for your organization, select from the list of [available time zones](/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones?view=sharepoint-server).
+1. **$timeZone** - a number representing the time zone for your organization, select from the list of [available time zones](/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones).
 
 ### Run the PowerShell scripts
 
