@@ -27,15 +27,18 @@ You can install Microsoft Power Platform CLI using either of the following:
 
 ## Install Power Platform CLI for Windows
 
-To install Power Platform CLI for Windows, follow these steps.
+To install Power Platform CLI for Windows, download and install the .msi file found here: [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI).
 
-1. Download and install [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI).
+### Update Power Platform CLI for Windows
 
-1. To take advantage of all the latest capabilities, update Microsoft Power Platform CLI tooling to the latest version by using this command (not applicable for Power Platform Tools for Visual Studio Code):
+To take advantage of all the latest capabilities, update Microsoft Power Platform CLI tooling to the latest version by using this command:
 
-    ```dotnetcli
-    pac install latest
-    ```
+```dotnetcli
+pac install latest
+```
+
+> [!NOTE]
+> `pac install latest` command is not applicable for Power Platform Tools for Visual Studio Code. It will look for updates and update automatically each time you open Visual Studio Code.
 
 ### Uninstall Power Platform CLI for Windows
 
