@@ -141,11 +141,11 @@ To access **Undo to last save** and **Redo**, open the undo menu.
 
 1. Select one or more adjacent nodes.
 
-1. Select the cut, copy, or delete control on the canvas toolbar.
+1. Select **Cut**, **Copy**, or **Delete** on the canvas toolbar.
 
 ### To paste nodes
 
-Once you have one or more nodes on the clipboard, there are a couple of ways to paste them to the canvas.
+Once you have used **Cut** or **Copy** to add one or more nodes to the clipboard, there are a couple of ways to paste them to the canvas:
 
 - If you select a node and then select **Paste**, the nodes from the clipboard are added after the selected node.
 
