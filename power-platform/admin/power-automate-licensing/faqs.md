@@ -1,6 +1,6 @@
 ---
 title: "Frequently asked questions about Power Automate licensing"
-description: "Frequently asked questions about Power Automate licensing."
+description: "Power Automate licensing FAQs."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
@@ -28,19 +28,19 @@ Each user and flow has a license plan. If a flow is set to the per flow plan, th
 
 If the flow is set to the per user plan, then it gets the plan of its primary owner. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the request limits from both plans.
 
-The standard user license plan for Power Automate is the Power Automate per user plan, but there is a range of other license plans a user could use. Users with the free plan or one of the Microsoft 365 license plans can only access standard connectors, but most of the other license plans provide access to premium connectors. For details about license plans that include Power Automate capabilities, see the [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types) and the Power Platform [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). For details about the limits and performance profile of license plans, see the [Power Automate Limits](/power-automate/limits-and-config).
+The standard user license plan for Power Automate is the Power Automate per user plan, but users have a range of other license plan options. Users with the free plan or one of the Microsoft 365 license plans can only access standard connectors, but most of the other license plans provide access to premium connectors. For details about license plans that include Power Automate capabilities, see [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types) and the Power Platform [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). For details about the limits and performance profile of license plans, see [Power Automate Limits](/power-automate/limits-and-config).
 
 ### When should I choose Power Automate "per flow" versus "per user"?
 
-Microsoft recommends that most organizations buy the per user with attended Robotic Process Automation (RPA) license for every user in their organization. Optionally, purchase the unattended bot add-on for every machine that runs unattended automation. 
+Microsoft recommends that most organizations buy the per user with an attended robotic process automation (RPA) license for every user in their organization. Optionally, purchase the unattended bot add-on for every machine that runs unattended automation. 
 
 The per user plan is intended for personal automation to support the broad adoption of an automation culture in an organization.
 
-The per flow plan is intended for enterprise process automation. If a flow provides value to a team, either every one in the team needs a per user license or the flow needs a per flow license. If a flow has per flow license, it doesn't use nor require any other license when it runs. It provides an organization with the flexibility to pay for licenses based on the number of flows it uses, instead of licensing each user who accesses the flows individually with the per user plan. Larger organizations or solutions that affect many will benefit from the fixed monthly cost. It's best to use the per flow license if your flow uses premium connectors and your organization has many guest users using the flow, but you don't know if the guest users home tenant provides them with premium licenses. 
+The per flow plan is intended for enterprise process automation. If a flow provides value to a team, either everyone in the team needs a per user license or the flow needs a per flow license. If a flow has a per flow license, it doesn't use or require any other license when it runs. It provides an organization with the flexibility to pay for licenses based on the number of flows it uses, instead of licensing each user who accesses the flows individually with the per user plan. Larger organizations or solutions that affect many will benefit from the fixed monthly cost. It's best to use the per flow license if your flow uses premium connectors and your organization has many guest users using the flow, but you don't know if the guest users' home tenant provides them with premium licenses. 
 
 ### Who needs to purchase a premium license?
 
-The per flow plan has the highest priority among all licenses, meaning, if a per flow license is assigned to a flow, the flow always uses this license.
+The per flow plan has the highest priority among all licenses, meaning that if a per flow license is assigned to a flow, the flow always uses this license.
 
 If the flow is used for an enterprise scenario where multiple people get value from the flow, everyone who benefits from the flow needs a per user license or the flow  needs a per flow license.
 
@@ -50,8 +50,8 @@ Here's the decision tree for personal automations.
 
 - Automated and scheduled flows always run in the context of the flow owner regardless of who starts the flow or what accounts are used for connections inside of the flow. Instant flows (button, hybrid triggers) run in the context of the user who invokes them, regardless of the connections the flow uses.
 - If an automated or scheduled flow uses a premium connector, only the owner needs to have a premium license.
-- If an instant flow has premium connectors, every user who runs the flow needs either a Power Automate premium license, a Power Apps premium license, or a Dynamics license. In such cases, instead of licensing every user, it is simpler to license the flow with a per flow license. One exception for this rule is the http trigger runs in the context of the owner, even if it's used in an instant flow.
-- If a parent flow calls a child flow, the child flow leverages the context from the parent flow. For example, if the parent flow is an automated flow, and the child flow uses premium connectors and the child flow doesn't have per flow license, it uses the parent flow owner's license. If the child flow has a per flow license, it uses the per flow license and not the parent flow's license. During the [transition period](./types.md#transition-period), there is a slight difference in this behavior. The child flow owner's license will be used unless the child flow has a per flow license but after the transition period ends, the child flow owner's license will be ignored and only the parent flow owner's license is used unless the child flow has a per flow license.
+- If an instant flow has premium connectors, every user who runs the flow needs either a Power Automate premium license, a Power Apps premium license, or a Dynamics 365 license. In such cases, instead of licensing every user, it is simpler to license the flow with a per flow license. One exception to this rule is that the HTTP trigger runs in the context of the owner, even if it's used in an instant flow.
+- If a parent flow calls a child flow, the child flow leverages the context from the parent flow. For example, if the parent flow is an automated flow, and the child flow uses premium connectors and the child flow doesn't have a per flow license, it uses the parent flow owner's license. If the child flow has a per flow license, it uses the per flow license and not the parent flow's license. During the [transition period](./types.md#transition-period), there is a slight difference in this behavior. The child flow owner's license will be used unless the child flow has a per flow license, but after the transition period ends, the child flow owner's license will be ignored and only the parent flow owner's license is used unless the child flow has a per flow license.
 
 A common question is, "If a flow is triggered when a Microsoft Lists item is updated, and many users interact with that list, will there be a cost for each user?" The answer depends on who is getting value from the flow.
 
@@ -65,21 +65,21 @@ To find out what type (automated/manual/scheduled) of flow you have have, select
 
 ### We have three environments (development, test, and production) to align with best practices and we need flows in several environments. Do we need to buy a per flow license for every environment?
 
-Each flow exists in a specific environment. So, if a flow is imported into a different environments, each instance is a separate flow and needs a separate per flow license.
+Each flow exists in a specific environment. So, if a flow is imported into a different environment, each instance is a separate flow and needs a separate per flow license.
 
 ### We have three environments (development, test, and production) to align with best practices and we need flows in several environments. Do we need to buy a per user license for every environment?
 
-The per user license is a user level license. All user level licenses (per user, Microsoft 365, Dynamics) are tenant level licenses. The user can use the flow in all environments without having to buy a separate license.
+The per user license is a user level license. All user level licenses (per user, Microsoft 365, Dynamics 365) are tenant level licenses. The user can use the flow in all environments without having to buy a separate license.
 
-### When five flows are purchased as part of the per flow pack, do I have to assign them all to same environment?
+### When five flows are purchased as part of the per flow pack, do I have to assign them all to the same environment?
 
 No, these licenses can be assigned to different environments.
 
 ### Can Microsoft 365 customers create solution-aware flows and child flows?
 
-Yes. Microsoft 365 customers can create solution-aware flows if the environment in which they create the solution-aware flow has a Dataverse database attached to it. The default environment gets a Dataverse database by default. The admin must attach a Dataverse instance to non-default environments. Admins need at least a 1GB tenant level Dataverse database capacity available to create a new environment.
+Yes. Microsoft 365 customers can create solution-aware flows if the environment in which they create the solution-aware flow has a Dataverse database attached to it. The default environment gets a Dataverse database by default. The admin must attach a Dataverse instance to non-default environments. Admins need at least a 1 GB tenant level Dataverse database capacity available to create a new environment.
 
-The first subscription of Power Apps, Power Automate, Power Virtual Agents, Dynamics 365 Sales, Customer Service, and Field Service adds a one-time default capacity limit of 10GB for the tenant. When you add subscriptions to the tenant, additional Dataverse capacity may accrue to the tenant. For example, if a new customer purchases a Power Automate per user plan, the tenant receives 10GB of default Dataverse database capacity. And if the tenant buys 10 Power Automate per user licenses, the tenant gets 10.5GB (10GB+10*50MB).
+The first subscription of Power Apps, Power Automate, Power Virtual Agents, Dynamics 365 Sales, Customer Service, and Field Service adds a one-time default capacity limit of 10 GB for the tenant. When you add subscriptions to the tenant, additional Dataverse capacity may accrue to the tenant. For example, if a new customer purchases a Power Automate per user plan, the tenant receives 10 GB of default Dataverse database capacity. And if the tenant buys 10 Power Automate per user licenses, the tenant gets 10.5 GB (10 GB plus 10 times 50 MB).
 
 ### I use multiple user connections in my premium flow. Which user needs a premium license to run the flow?
 
@@ -95,13 +95,14 @@ The flow will be downgraded to lower performance and all flow owners will be not
 
 ### Do guest users (not from your tenant) need a license to use Power Automate?
 
-Yes. The guest user must have a Power Automate license assigned through one of the following tenants.
+Yes. The guest user must have a Power Automate license assigned through one of the following tenants:
 
 - The tenant that hosts the flow. You can assign them admin trials for temporary access or standalone licenses.
 - The home tenant of the guest user.
 
 For example, if a guest user has a Power Automate per user license assigned in the home tenant, they can use premium features in the guest tenant that hosts the flow. 
-Power Automate, included with Office, Power Automate per user, per user with attended RPA, Power Apps per user, and Dynamics user plans, will have the following characteristics.
+
+Power Automate—included with Office, Power Automate per user, per user with attended RPA, Power Apps per user, and Dynamics user plans—will have the following characteristics:
 
 - In the Azure public cloud, these plans are recognized across tenants in guest scenarios because they aren't bound to a specific environment.
 - In Azure national or sovereign clouds, these plans are recognized across tenants in guest scenarios. More information: [National clouds](/azure/active-directory/develop/authentication-national-cloud), [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies)
@@ -109,29 +110,29 @@ Power Automate, included with Office, Power Automate per user, per user with att
 
 ### What Power Automate capabilities are included in Windows licenses?
 
-Windows 11 users can try desktop flows in attended RPA for personal productivity in the default environment. They can't share the desktop flows or create desktop flows in a different environment other than default environment. Windows users do not have access to cloud flows. To get full cloud flows and RPA features, purchase the Power Automate per user with attended RPA plan.
+Windows 11 users can try desktop flows in attended RPA for personal productivity in the default environment. They can't share the desktop flows or create desktop flows in a different environment other than the default environment. Windows users do not have access to cloud flows. To get full cloud flows and RPA features, purchase the Power Automate per user with attended RPA plan.
 
-Windows 11 users can search for "Power Automate" in the Windows search bar. The Power Automate Desktop app downloads automatically and then launches the first time you select its icon.
+Windows 11 users can search for "Power Automate" in the Windows search bar. The Power Automate app for the desktop downloads automatically and then launches the first time you select its icon.
 
-### Can Windows 10, Windows server 2016 users use Power Automate for desktop?
+### Can Windows 10 and Windows Server 2016 users use Power Automate for desktop?
 
-Yes, they can use Power Automate for desktop (they have usage rights for it) but they'll have to download it from the download center.
+Yes, they can use Power Automate for the desktop (they have usage rights for it) but they'll have to download it from the download center.
 
 ## Office 365 license questions
 
-Here are some frequently asked questions about using Power Automate with a Office 365 license.
+Here are some frequently asked questions about using Power Automate with an Office 365 license.
 
-### What Power Automate capabilities are included in Office 365 licenses
+### What Power Automate capabilities are included in Office 365 licenses?
 
 Limited Power Automate use rights are included with select Office 365 licenses to allow users to customize and extend Office 365 for personal productivity scenarios. For enterprise scenarios, Office recommends [standalone licenses](./types.md#standalone-plans).
 
-Office 365 licenses include the following Power Automate capabilities.
+Office 365 licenses include the following Power Automate capabilities:
   
 - Create and execute automated, scheduled, and button flows.
 - Access to [standard connectors](./types.md#standard-connectors).
 - 2,000 [Power Platform requests/day](./types.md#power-platform-requests). 10,000 requests/day during [transition period](./types.md#transition-period).
   
-The following Power Automate capabilities aren't included.
+The following Power Automate capabilities aren't included:
   
 - Access to [premium connectors](./types.md#premium-connectors) is not included except in Dataverse for Teams environments. Learn more about [Dataverse for Teams capabilities](../pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses).
 - [Business process flows](./types.md#business-process-flows).
