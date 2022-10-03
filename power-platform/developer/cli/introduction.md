@@ -16,7 +16,7 @@ Microsoft Power Platform CLI is available for use in the GCC and GCC High (US So
 
 ## Install Microsoft Power Platform CLI
 
-You can install Microsoft Power Platform CLI using either of the following:
+You can install Microsoft Power Platform CLI using either or both of the following:
 
 |Installation Method |Description|
 |---------|---------|
