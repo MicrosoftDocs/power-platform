@@ -24,7 +24,7 @@ You can install Microsoft Power Platform CLI using either of the following:
 |Installation Method |Description|
 |---------|---------|
 |[Install Power Platform CLI for Windows](#install-power-platform-cli-for-windows)|Enables use of pac cli commands using PowerShell for Windows 10 and Windows 11. <br /> Certain commands, such as [pac data](reference/data.md), are only available using Power Platform CLI for Windows|
-|[Install using Power Platform Tools for Visual Studio Code](#install-using-power-platform-tools-for-visual-studio-code)|Enables use of pac cli commands within a PowerShell terminal within Visual Studio code on Windows 10, Windows 11, Linux, and MacOS.|
+|[Install using Power Platform Tools for Visual Studio Code](#install-using-power-platform-tools-for-visual-studio-code)|Enables use of pac cli commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and MacOS.|
 
 ## Install Power Platform CLI for Windows
 
@@ -41,8 +41,6 @@ To install Power Platform CLI for Windows, follow these steps.
 ### Uninstall Power Platform CLI for Windows
 
 To uninstall Power Platform CLI for Windows, run the MSI from [https://aka.ms/PowerAppsCLI](https://aka.ms/PowerAppsCLI).
-
-To uninstall the Visual Studio Code extension, follow the same steps as installing the extension, except this time select the **Uninstall** button.
 
 <!-- Do we still need this?
 
