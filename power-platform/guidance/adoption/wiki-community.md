@@ -156,7 +156,7 @@ After deployment, navigate to **Settings (Gear icon) > Site contents > Site Page
     ![Look out for placeholders to update the hub with your own content](media/wiki-change.png "Look out for placeholders to update the hub with your own content")
 - **Environments.aspx**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of environments with regard to licensing, security for environments, and connectors. We have added content of a typical environment policy strategy here for you to get started with. Scan the document for placeholders for *Company specific instructions that you need to update with your own processes and guidelines.
 - **Guided-Learning.aspx**: This page provides a summary of Power Platform learning paths available on Microsoft Learn. If you're running internal training events, add them here.
-- **Power-Platform-at-Contoso.aspx**: Share what a maker is responsible for—for example
+- **Power-Platform-at-{companyName}.aspx**: Share what a maker is responsible for—for example
   - Keeping the tenant tidy by deleting unused resources.
   - Ensuring apps are only shared with required end users.
   - Supporting their apps in the default environment,.
