@@ -109,7 +109,7 @@ $timeZone = 2
 1. **$adminTenantName** - replace  '/powerplatformhub' with your community hub name URL
 1. **$ownerEmail** - update with admin email address
 1. **$siteTitle** - replace with your community wiki name
-1. **$timeZone** - an integer representing the time zone for your organization (note: these are listed [here](https://learn.microsoft.com/en-us/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones?view=sharepoint-server))
+1. **$timeZone** - an integer representing the time zone for your organization (note: these are listed [here](https://learn.microsoft.com/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones?view=sharepoint-server))
 
 ### Run the PowerShell scripts
 
