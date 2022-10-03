@@ -115,8 +115,8 @@ The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit**
 
       ![Go to App Detail page in Power BI Desktop.](media/coe84.PNG "Go to App Detail page in Power BI Desktop")
 
-1. If an app exists there already, remove it
-      ![Delete existing powerapp visualization.](media/delete-old-pa-visualization.png "Delete existing powerapp visualization")
+1. Remove the existing app.
+      ![Delete existing Power Apps visualization.](media/delete-old-pa-visualization.png "Delete existing Powr Apps visualization")
 
 1. Select **Power Apps for Power BI** from **Visualizations**.
 
@@ -129,7 +129,7 @@ The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit**
 
 1. With the visual selected, select the **admin_environmentname** from **Environment** (on the **Fields** pane).
 
-     ![Select admin_environmentid from App for Power Apps Data.](media/coe87.PNG "Select admin_environmentid from App for Power Apps Data")
+     ![Select admin_environmentname from App for Power Apps Data.](media/coe87.PNG "Select admin_environmentname from App for Power Apps Data")
 
 1. In the Power Apps for Power BI visual, select the environment of your CoE (where you imported the apps to).
 
@@ -142,7 +142,7 @@ The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit**
 
 1. Resize and move the visual to the location you want. Delete the placeholder from the template, and move your embedded app to the same place.
 1. Next, go to the **Cloud flow detail** tab.
-1. Again remove if an app already exists there.
+1. Remove the existing Power Apps visualization.
 1. Select the **Power Apps visual** from **Visualizations**.
    Select the fields from your dataset that you want to use in the app.
 1. With the visual selected, select the **admin_flowid** from **Flow** and **admin_environmentname** from **Environment**under **Fields**.
