@@ -53,7 +53,6 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
         - `Hi!`
 
     1. To add an image to the message, select **+ Add**, then **Image**. You'll need to provide a title and the image URL. The image URL must start with `https://`.
-    <!-- TODO: What are the limitations on images? Is there a public image URL they can use so we can provide a sample URL that works?-->
 
 1. Add a second **Message** node.
     1. Add a text message.
