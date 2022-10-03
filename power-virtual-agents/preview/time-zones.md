@@ -16,51 +16,51 @@ ms.custom: ceX, advanced-authoring
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-As you build bots in PVA, you'll likely run into scenarios where you must display the date and time based on the user's location instead of using Coordinated Universal Time (UTC). Internally, PVA stores date and time in UTC, but does provide additional capabilities to handle users' local time. Here are a few things that PVA provides to manage time zones.
+As you build bots, you'll likely run into scenarios where you must display the date and time based on the user's location instead of using Coordinated Universal Time (UTC). Internally, Power Virtual Agents stores date and time as a UTC value; however, you have some ways in which to manage time zones in your bots.
 
-- Prebuilt entities 
-- System level vairables 
+- Prebuilt entities
+- System-level variables
 - Time zone determination
 
-## Prebuild entitities:
-To manage data and time in your bots, PVA provides the following prebuilt entities:  
-- Date: A date without a time in the time zone of the bot user.
-- DateTime: A date with a time in the time zone of the bot user. 
-- DateTimeNoTimeZone: A date with a time in Coordinated Universal Time (UTC).
+## Prebuilt entities
 
-## Sytem level variables
-PVA also provides the following system-level variables to help you manage the time zone in your bot:
-- `Conversation.LocalTimeZone` stores the bot user's time zone. Supports both read and write operations. You can set the Conversation.LocalTimeZone to any valid time zone listed on the [Noda Time](https://nodatime.org/timezones) website. After you do that, the bot uses this time zone to determine the date and time for your chatbot. 
-- `Conversation.LocalTimeZoneOffset` is a read-only variable you can use to determine the UTC offset for the local time. 
+Use these prebuilt entities to identify dates and times.
+
+<!-- TODO check back, currently _Date and time_ is the only one enabled so far. -->
+
+- _Date_: A date without a time in the time zone of the bot user.
+- _Date and time_: A date with a time in the time zone of the bot user.
+- _Date and time (UTC)_: A date with a time in Coordinated Universal Time (UTC).
+
+## System-level variables
+
+Use these system-level variables to get information about the user's time zone.
+
+- `Conversation.LocalTimeZone`, read-write, stores the bot user's time zone as a string. You can use any time zone listed on the [Noda Time](https://nodatime.org/timezones) website. For information on how your bot determines local time, see [Time zone determination](#time-zone-determination).
+- `Conversation.LocalTimeZoneOffset`, read-only, gets the UTC offset for the local time. This value is stored as a time value.
 
 ## Time zone determination
-To determine the chatbot user's time zone, PVA attempts the following in order:
-1. If the bot developer has set the `Conversation.LocalTimeZone` with a valid time zone from [Noda Time](https://nodatime.org/timezones), use that as the time zone.
-1. If `Conversation.LocalTimeZone` has not been set, PVA tries to determine the time from the message the user sent to the bot
-1. If the time zone is unavailable because a channel does not provide it in the message, PVA uses UTC.
+
+Power Virtual Agents uses the following steps, in order, to determine the chatbot user's time zone.
+
+1. If the `Conversation.LocalTimeZone` system variable is set to a valid time zone from [Noda Time](https://nodatime.org/timezones), use that as the time zone.
+1. If the channel included the local time zone in the user's message, use that.
+1. Otherwise, use UTC as the time zone.
 
 ## Set bot's time zone
-1. Add a **Set a variable value** node to a topic in your bot as shown below:
 
-:::image type="content" source="media/timezone/select-set-variable-node.png" alt-text="Screenshot set variable node.":::
+For general information on how to set and use variables, see [Use variables (preview)](authoring-variables.md).
 
-2. In the **Set a Variable** node, click on the **Select a variable** arrow. Select **System** in the **Select a variable** panel that opens up. Select `Conversation.LocalTimeZone`.
+1. Open the topic in which to set the user's time zone.
+1. Add a **Set Variable Value** node.
+    1. For **Set variable**, choose the `Conversation.LocalTimeZone` system topic.
+    1. For **To value**, enter `America/Los_Angeles`, one of the **Zone ID** values from the [Noda Time](https://nodatime.org/timezones) website.
+1. Add a **Message** node. In the text box type, enter `The local time zone is: `, then select _insert variable_ (**{x}**) and insert the system `Conversation.LocalTimeZone` variable.
+1. Add a second **Message** node. In the text box type, enter `The local time zone offset is: `, then select _insert variable_ (**{x}**) and insert the system `Conversation.LocalTimeZoneOffset` variable.
+1. Save and test the chatbot.
 
-:::image type="content" source="media/timezone/set-variable-value.png" alt-text="Screenshot set variable value.":::
-
-3. In the **To value** text box type `America/Los_Angeles` (this is the values that you can get from Noda Time website mentioned above)
-
-:::image type="content" source="media/timezone/set-time-zone.png" alt-text="Screenshot set time zone.":::
-
-4. Next, add a **Message** node.
-5. In the text box type, _"The local time zone is: "_ and then click on **{x}** to insert `Conversation.LocalTimeZone` variable on the **System** tab. Next, add _"The local time zone offset is: "_ and insert `Conversation.LocalTimeZoneOffset` on the **System** tab. 
-
-:::image type="content" source="media/timezone/set-message.png" alt-text="Screenshot send message":::
-
-6. Save and test the chatbot.
-
-:::image type="content" source="media/timezone/test-bot.png" alt-text="Screenshot test bot.":::
-
+    :::image type="content" source="media/timezone/test-bot.png" alt-text="Screenshot test bot.":::
 
 ## Reference
+
 [Power Fx date time reference](https://learn.microsoft.com/power-platform/power-fx/data-types#date-time-and-datetime)
