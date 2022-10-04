@@ -247,7 +247,7 @@ var clientApplication;
 5.	Save code changes.
 
 ### Test bot using the custom canvas
-1.	Load the index.html page. If your browser blocks popup or you are using incognito mode, you will be prompted to log in, otherwise the log in will complete automatically. 
+1.	Load the html page you just saved in the browser. If your browser blocks popup or you are using incognito mode, you will be prompted to log in, otherwise the log in will complete using a validation code . 
  
 2.	Next, you should be able to log in to the bot by clicking the Login button and using the validation code provided in a separate browser tab.
  
