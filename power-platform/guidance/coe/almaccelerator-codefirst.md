@@ -20,20 +20,21 @@ search.app:
 # Using the ALM accelerator to build and package code first components
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
+> The application lifecycle management (ALM) accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
 
-The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
+The ALM accelerator components enable makers to apply source-control strategies with Azure DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies. You can switch quickly from developing solutions to source-controlling the solution and, ultimately, push apps to other environments with as few interruptions to your work as possible.
 
-With the ALM Accelerator, you can source control your code first components (that is, Plugins, PCF Controls), build and run unit test cases and transport them to downstream environments.
+With the ALM Accelerator, you can source control your code first components (that is, Plug-ins, PCF Controls), build and run unit test cases, and transport them to downstream environments.
 
 ## Recommended repository folder structure for code first components
 
- To build and deploy code first components, its recommended to have the following folder structure in your repository:
-   :::image type="content" source="media/almacceleratorpowerplatform-components/alm-code-first-folder-structure.png" alt-text="ALM code first folder structure":::
+ To build and deploy code first components, it's recommended to have the following folder structure in your repository:
+ 
+ :::image type="content" source="media/almacceleratorpowerplatform-components/alm-code-first-folder-structure.png" alt-text="ALM code first folder structure":::
 
  In the above diagram 'cat-codefirst' is the repository name and 'CreatorKit' is the dataverse solution name.
 
-## Setting up plug-in project first time
+## Setting up a plug-in project for the first time
 
 Follow these steps to set up a plug-in project for the first time:
 
@@ -52,6 +53,10 @@ Follow these steps to migrate your legacy plug-in projects to the new folder str
 1. pac plugin init generates a folder structure.
 1. Copy the legacy plug-in project files to the new folder structure
 
-## Setting up pcf projects
+## Setting up PCF projects
 
 No other steps required for setting up PCF projects. You can continue adding your PCF controls to the folder structure (that is, Repository Name\Solution Name\PCF).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
