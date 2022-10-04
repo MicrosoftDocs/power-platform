@@ -1,6 +1,6 @@
 ---
-title: "Managing date and time in PVA (Preview)"
-description: "How to manage date and time in PVA bots"
+title: "Manage date and time in Power Virtual Agents (preview)"
+description: "How to manage date and time in Power Virtual Agents bots."
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article
@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring
 ---
 
-# Managing date and time in chatbots
+# Manage date and time in chatbots
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -57,11 +57,11 @@ For general information on how to set and use variables, see [Use variables (pre
 1. Add a **Set Variable Value** node.
     1. For **Set variable**, choose the `Conversation.LocalTimeZone` system topic.
     1. For **To value**, enter `America/Los_Angeles`, one of the **Zone ID** values from the [Noda Time][] website.
-1. Add a **Message** node. In the text box type, enter `The local time zone is: `, then select _insert variable_ (**{x}**) and insert the system `Conversation.LocalTimeZone` variable.
-1. Add a second **Message** node. In the text box type, enter `The local time zone offset is: `, then select _insert variable_ (**{x}**) and insert the system `Conversation.LocalTimeZoneOffset` variable.
+1. Add a **Message** node. In the text box type, enter `The local time zone is: `, then select _Insert variable_ (**{x}**) and insert the system `Conversation.LocalTimeZone` variable.
+1. Add a second **Message** node. In the text box type, enter `The local time zone offset is: `, then select _Insert variable_ (**{x}**) and insert the system `Conversation.LocalTimeZoneOffset` variable.
 1. Save and test the chatbot.
 
-    :::image type="content" source="media/timezone/test-bot.png" alt-text="Screenshot test bot.":::
+    :::image type="content" source="media/timezone/test-bot.png" alt-text="Screenshot of the test bot pane.":::
 
 ## Reference
 
