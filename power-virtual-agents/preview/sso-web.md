@@ -45,15 +45,17 @@ The following table details the channels that currently support SSO in public pr
 | Demo Website                     |           |
 | Facebook                         |           |
 | Microsoft Teams                  |           |
-| [Mobile App                      |           |
+| Mobile App                       |           |
 
 
-## Create an app registration in Azure AD for your custom canvas
+## Create an app registration for your custom canvas
 
-You can't reuse the same app registration for both your bot's user authentication and your custom canvas. To enable SSO, you'll need two separate app registrations:
+To enable SSO, you'll need two separate app registrations:
 
 - One for your bot to enable user authentication with Azure AD.
 - One for your custom canvas (aka website the bot is hosted on) to enable SSO.
+
+You should not reuse the same app registration for both your bot and your custom canvas for security reasons. 
 
 ### Create an app registration for the bot
 Use Azure Active Directory to create an app registration for your PVA bot
@@ -195,13 +197,13 @@ The Token Exchange URL in the Power Virtual Agents authentication configuration 
 Next, we will set up the App Registration for the Web page.
 
  ### Create custom canvas app registration
-The steps for setting up app registration for custom canvas in the Azure portal are the same as the bot’s app registration that you just completed. The only difference is that instead of using https://token.botframework.com/.auth/web/redirect as the redirect URL, provide the canvas app URL. For example, http://contoso.com/index.html as shown below. So go ahead and create the app registration using the steps provided earlier. 
+The steps for setting up app registration for custom canvas in the Azure portal are the same as the bot’s app registration that you just completed. The only difference is that instead of using `https://token.botframework.com/.auth/web/redirect` as the redirect URL, provide the canvas app URL. For example, `http://contoso.com/index.html` as shown below. So go ahead and create the app registration using the steps provided earlier. 
  
    :::image type="content" source="media/sso/configure-web-setting-for-canvas.png" alt-text="Screenshot of configure webpage" border="false"::: 
 
 ### Configure your custom canvas HTML code to enable SSO
 
- In this example, we will use the code provided in the GitHub repo to create the index.html page that you specified as the redirect URI (above). Copy the code from the GitHub repo and modify it using the instructions provided below.
+ In this example, we will use the code provided in the [GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html) to create the a html page that you specified as the redirect URI (above). Copy the code from the GitHub repo and modify it using the instructions provided below.
  
 1.	To make changes to the code, you will need **Application (client) ID** and **Directory (tenant) ID**. You get these IDs from the **Overview** page for the canvas app registration in the Azure portal as shown below.
  
