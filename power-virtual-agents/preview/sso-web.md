@@ -165,6 +165,84 @@ The Token Exchange URL in the Power Virtual Agents authentication configuration 
 
  9.	Update **Client ID** for your PVA bot with the **Application (client) ID** for the canvas app registration. You get the ID from the Overview page for the canvas app registration in the Azure portal as shown below.
 
+  :::image type="content" source="media/sso/copy-clientid.png" alt-text="Screenshot Azure client id page for app registration" border="false"::: 
+ 
+10.	Next, add the *Client Secret* to your bot. This is the secret value you created in the Azure portal (and stored in a temporary place) in an earlier step.
+ 
+11.	Add `profile` and `openid` in the **Scopes** field. 
+ 
+12.	Select **Save**.
+ 
+### Test your bot
+1.	After saving the changes, you need to publish your bot before you can test it. 
+ 
+2.	Run it in the Test bot window. When you interact with the bot, it should ask you to login (as shown below). 
+
+  :::image type="content" source="media/sso/test-bot.png" alt-text="Screenshot testing PVA bot" border="false"::: 
+
+3.	Click on the **Login** button, sign in, and copy the code that is presented. 
+ 
+  :::image type="content" source="media/sso/validation-code.png" alt-text="Screenshot bot validation code" border="false"::: 
+ 
+4.	Paste that code in the bot, and you should be able to communicate with the bot. 
+ 
+   :::image type="content" source="media/sso/paste-code.png" alt-text="Screenshot paste validation code" border="false"::: 
+ 
+Next, we will set up the App Registration for the Web page.
+
+ ### Create custom canvas app registration
+The steps for setting up app registration for custom canvas in the Azure portal are the same as the bot’s app registration that you just completed. The only difference is that instead of using https://token.botframework.com/.auth/web/redirect as the redirect URL, provide the canvas app URL. For example, http://contoso.com/index.html as shown below. So go ahead and create the app registration using the steps provided earlier. 
+ 
+   :::image type="content" source="media/sso/configure-web-setting-for-canvas.png" alt-text="Screenshot of configure webpage border="false"::: 
+
+### Configure your custom canvas HTML code to enable SSO
+
+ In this example, we will use the code provided in the GitHub repo to create the index.html page that you specified as the redirect URI (above). Copy the code from the GitHub repo and modify it using the instructions provided below.
+ 
+1.	To make changes to the code, you will need **Application (client) ID** and **Directory (tenant) ID**. You get these IDs from the **Overview** page for the canvas app registration in the Azure portal as shown below.
+ 
+  :::image type="content" source="media/sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azure="false"::: 
+ 
+ 2.	Configure the Microsoft Authentication Library (MSAL) by updating clientId with the Application (client) ID  and <Directory ID> with the Directory (tenant) ID. 
+...     
+var clientApplication;
+     (function (){
+       var msalConfig = {
+     auth: {
+          clientId: '<Client ID [CanvasClientId]>',
+       authority: 'https://login.microsoftonline.com/<Directory ID>'     
+},
+...
+
+3.	Update <BOT ID> with your bot's ID. You can see your bot's ID by going to the Channels tab for the bot you're using and selecting Mobile app on the Power Virtual Agents portal. 
+
+ :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of bot id in PVA="false"::: 
  
  
+ ```...
+(async function main() {
+
+    // Add your BOT ID below 
+    var BOT_ID = "<BOT ID>";
+    var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+
+  var userId = clientApplication.account?.accountIdentifier != null ? 
+          ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0, 64) 
+          : (Math.random().toString() + Date.now().toString()).substr(0,64);
+ ...
+
+ ```
  
+4.	Replace `Your-customized-prefix-max-20-characters` above with any customized prefix you want to use.
+ 
+5.	Save code changes.
+
+### Test bot using the custom canvas
+1.	Load the index.html page. If your browser blocks popup or you are using incognito mode, you will be prompted to log in, otherwise the log in will complete automatically. 
+ 
+2.	Next, you should be able to log in to the bot by clicking the Login button and using the validation code provided in a separate browser tab.
+ 
+  :::image type="content" source="media/sso/chat-canvas-test.png" alt-text="Screenshot of bot id in PVA="false"::: 
+
+ ## Reference
+ For more information about Azure App Registration, refer to:https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app
