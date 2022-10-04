@@ -123,16 +123,14 @@ Select the the node's _node menu_ (**&vellip;**) then **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
 
-<!-- FIXME: remove in comment -->
-<!--
 ## Edit topics with the code editor
 
 The code editor shows the topic in [YAML](https://yaml.org/), a markup language that is easy to read and understand. Use the code editor to copy and paste topics from other bots, even ones created by other authors.
 
 > [!IMPORTANT]
-> Designing a topic entirely in the code editor is currently not fully supported.
+> Designing a topic entirely in the code editor, and pasting complex topics is not fully supported.
 
-In this example, you'll copy and paste YAML into the code editor to quickly add a topic that asks the user if they prefer cats or dogs.
+In this example, you'll copy and paste YAML into the code editor to quickly add a topic that that asks a user for shipping information.
 
 1. On the topic list, create a **New topic**.
 
@@ -146,53 +144,61 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
     kind: AdaptiveDialog
     beginDialog:
       kind: OnRecognizedIntent
-      actions:
-        - kind: Question
-          id: question_b9p80Y
-          alwaysPrompt: false
-          variable: init:Topic.chosenAnimal
-          prompt: Do you like cats or dogs?
-          maxTurnCount: 3
-          entity:
-            kind: EmbeddedEntity
-            definition:
-              kind: ClosedListEntity
-              items:
-                - id: d24VJv
-                  displayName: Cats
-
-                - id: vXYBtP
-                  displayName: Dogs
-
-        - kind: ConditionGroup
-          id: conditionGroup_wugqYZ
-          conditions:
-            - id: conditionItem_XN8zwO
-              condition: =Topic.chosenAnimal = 'cr638_08252022.topic.Animal.main.question_b9p80Y'.d24VJv
-              actions:
-                - kind: SendMessage
-                  id: sendMessage_mZoPeG
-                  message: Meow!
-
-            - id: conditionItem_VxJuyY
-              condition: =Topic.chosenAnimal = 'cr638_08252022.topic.Animal.main.question_b9p80Y'.vXYBtP
-              actions:
-                - kind: SendMessage
-                  id: sendMessage_zMgiKJ
-                  message: Woof!
-
       id: main
       intent:
-        displayName: Animal
-
-    inputType: {}
-    outputType: {}
+        displayName: Lesson 3 - A topic with a condition, variables and a pre-built entity
+        triggerQueries:
+          - Buy items
+          - Buy online
+          - Buy product
+          - Purchase item
+          - Order product
+    
+      actions:
+        - kind: SendMessage
+          id: Sjghab
+          message: I am happy to help you place your order.
+    
+        - kind: Question
+          id: eRH3BJ
+          alwaysPrompt: false
+          variable: init:Topic.State
+          prompt: To what state will you be shipping?
+          entity: StatePrebuiltEntity
+    
+        - kind: ConditionGroup
+          id: sEzulE
+          conditions:
+            - id: pbR5LO
+              condition: =Topic.State = "California" || Topic.State = "Washington" || Topic.State     = "Oregon"
+    
+          elseActions:
+            - kind: SendMessage
+              id: X7BFUC
+              message: There will be an additional shipping charge of $27.50.
+    
+            - kind: Question
+              id: 6lyBi8
+              alwaysPrompt: false
+              variable: init:Topic.ShippingRateAccepted
+              prompt: Is that acceptable?
+              entity: BooleanPrebuiltEntity
+    
+            - kind: ConditionGroup
+              id: 9BR57P
+              conditions:
+                - id: BW47C4
+                  condition: =Topic.ShippingRateAccepted = true
+    
+              elseActions:
+                - kind: SendMessage
+                  id: LMwySU
+                  message: Thank you and please come again.
     ```
 
 1. Select the three dots icon, then select **Close code editor**. You'll see the new conversation path generated from the YAML on the authoring canvas.
 
     :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot conversation created from YAML.":::
--->
 
 ## Test and publish your bot
 
