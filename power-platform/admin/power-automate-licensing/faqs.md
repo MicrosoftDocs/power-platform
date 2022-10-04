@@ -102,7 +102,7 @@ Yes. The guest user must have a Power Automate license assigned through one of t
 
 For example, if a guest user has a Power Automate per user license assigned in the home tenant, they can use premium features in the guest tenant that hosts the flow. 
 
-Power Automate—included with Office, Power Automate per user, per user with attended RPA, Power Apps per user, and Dynamics user plans—will have the following characteristics:
+Power Automate—included with Office, Power Automate per user, per user with attended RPA, Power Apps per user, and Dynamics 365 user plans—will have the following characteristics:
 
 - In the Azure public cloud, these plans are recognized across tenants in guest scenarios because they aren't bound to a specific environment.
 - In Azure national or sovereign clouds, these plans are recognized across tenants in guest scenarios. More information: [National clouds](/azure/active-directory/develop/authentication-national-cloud), [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies)
@@ -200,7 +200,7 @@ Your organization has connected Azure DevOps with Dynamics 365 CRM to escalate s
 
 #### Example of Dynamics 365 license using Power Automate outside a Dynamics 365 application context
 
-The same user ([in the previous Dynamics example](#example-of-dynamics-license-using-power-automate-within-a-dynamics-application-context)) now also wants to use a flow that updates an Oracle database. This flow has the following properties:
+The same user ([in the previous Dynamics 365 example](#example-of-dynamics-license-using-power-automate-within-a-dynamics-application-context)) now also wants to use a flow that updates an Oracle database. This flow has the following properties:
 
 - It's completely unrelated to the Dynamics 365 app.
 - It doesn't interact in any way with the Dynamics 365 app (or its data sources).
