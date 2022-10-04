@@ -13,7 +13,7 @@ ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 
-# Configure single sign-on with Azure Active Directory in Power Virtual Agents (preview)
+# Configure single sign-on for custom website in Power Virtual Agents (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -103,7 +103,7 @@ It can be helpful to use the name of your bot. For example, if your bot is calle
 >  If you navigate away from the page, the secret's Value is obfuscated, and you'll need to generate a new client secret.
 
 ### API Permissions
-1.	Go to **API Permissions**. Select **Grant admin consent for <your tenant name>** and then select **Yes**.
+1.	Go to **API Permissions**. Select ** Grant admin consent for <your tenant name> ** and then select **Yes**.
  
 > [!Important]
 > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must grant tenant-wide consent to your app registrations.
@@ -184,7 +184,7 @@ The Token Exchange URL in the Power Virtual Agents authentication configuration 
 
 3.	Click on the **Login** button, sign in, and copy the code that is presented. 
  
-  :::image type="content" source="media/sso/validation-code.png" alt-text="Screenshot bot validation code" border="false"::: 
+  :::image type="content" source="media/sso/validation-code.png" alt-text="Screenshot bot login" border="false"::: 
  
 4.	Paste that code in the bot, and you should be able to communicate with the bot. 
  
@@ -206,7 +206,9 @@ The steps for setting up app registration for custom canvas in the Azure portal 
   :::image type="content" source="media/sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azur" border="false"::: 
  
  2.	Configure the Microsoft Authentication Library (MSAL) by updating clientId with the Application (client) ID  and <Directory ID> with the Directory (tenant) ID. 
-...     
+
+ ```
+ ...     
 var clientApplication;
      (function (){
        var msalConfig = {
@@ -215,10 +217,11 @@ var clientApplication;
        authority: 'https://login.microsoftonline.com/<Directory ID>'     
 },
 ...
-
+```
+ 
 3.	Update <BOT ID> with your bot's ID. You can see your bot's ID by going to the Channels tab for the bot you're using and selecting Mobile app on the Power Virtual Agents portal. 
 
- :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of bot id in PVA" border="false"::: 
+ :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of copying bot id in PVA" border="false"::: 
  
  
  ```...
@@ -244,7 +247,7 @@ var clientApplication;
  
 2.	Next, you should be able to log in to the bot by clicking the Login button and using the validation code provided in a separate browser tab.
  
-  :::image type="content" source="media/sso/chat-canvas-test.png" alt-text="Screenshot of bot id in PVA" border="false"::: 
+  :::image type="content" source="media/sso/chat-canvas-test.png" alt-text="Screenshot of logging in using validation code" border="false"::: 
 
  ## Reference
  For more information about Azure App Registration, refer to:https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app
