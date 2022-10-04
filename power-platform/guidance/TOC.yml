@@ -159,8 +159,6 @@
                   href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
                 - name: Use with Power Apps portals and Power Pages
                   href: coe/almaccelerator-powerpages.md
-                - name: Use with code first components
-                  href: coe/almaccelerator-codefirst.md
                 - name: Configuring the ALM Accelerator Pipelines
                   href: coe/almaccelerator-pipelines.md
                 - name: Deployment settings for ALM Accelerator
