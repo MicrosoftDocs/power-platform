@@ -103,7 +103,7 @@ It can be helpful to use the name of your bot. For example, if your bot is calle
 >  If you navigate away from the page, the secret's Value is obfuscated, and you'll need to generate a new client secret.
 
 ### API Permissions
-1.	Go to **API Permissions**. Select ** Grant admin consent for <your tenant name> ** and then select **Yes**.
+1.	Go to **API Permissions**. Select ** Grant admin consent for _your tenant name_ ** and then select **Yes**.
  
 > [!Important]
 > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must grant tenant-wide consent to your app registrations.
@@ -203,9 +203,9 @@ The steps for setting up app registration for custom canvas in the Azure portal 
  
 1.	To make changes to the code, you will need **Application (client) ID** and **Directory (tenant) ID**. You get these IDs from the **Overview** page for the canvas app registration in the Azure portal as shown below.
  
-  :::image type="content" source="media/sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azur" border="false"::: 
+  :::image type="content" source="media/sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azure" border="false"::: 
  
- 2.	Configure the Microsoft Authentication Library (MSAL) by updating clientId with the Application (client) ID  and <Directory ID> with the Directory (tenant) ID. 
+ 2.	Configure the Microsoft Authentication Library (MSAL) by updating _clientId_ with the **Application (client) ID**  and _Directory ID_ with the **Directory (tenant) ID**. 
 
  ```csharp
  ...     
@@ -218,8 +218,8 @@ var clientApplication;
 },
 ...
 ```
- 
-3.	Update <BOT ID> with your bot's ID. You can see your bot's ID by going to the Channels tab for the bot you're using and selecting Mobile app on the Power Virtual Agents portal. 
+
+3.	Update **BOT ID** with your bot's ID. You can see your bot's ID by going to the Channels tab for the bot you're using and selecting Mobile app on the Power Virtual Agents portal. 
 
  :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of copying bot id in PVA" border="false"::: 
  
@@ -250,4 +250,4 @@ var clientApplication;
   :::image type="content" source="media/sso/chat-canvas-test.png" alt-text="Screenshot of logging in using validation code" border="false"::: 
 
  ## Reference
- For more information about Azure App Registration, refer to:https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app
+- [Azure App Registration](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app)
