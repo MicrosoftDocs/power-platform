@@ -13,7 +13,6 @@ ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 
-
 # Configure single sign-on with Azure Active Directory in Power Virtual Agents (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
@@ -59,3 +58,5 @@ Use Azure Active Directory to create an app registration for your PVA bot
 1.	Sign in to the Azure portal, using an admin account on the same tenant as your bot.
 2.	Go to App registrations, either by selecting the icon or searching in the top search bar.
 
+ :::image type="content" source="media/sso/new-app-reg.png" alt-text="Screenshot showing new registration form." border="false":::
+ 
