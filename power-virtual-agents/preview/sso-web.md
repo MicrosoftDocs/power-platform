@@ -24,6 +24,7 @@ For example, the bot is hosted on the corporate intranet or in an app that the u
 >
 > SSO is currently not supported when a bot has been either:
 >
+> - Published to Teams 
 > - Published to a SharePoint website.
 > - Published to a Power Apps portal.
 > - Integrated with Dynamics 365 Customer Service.
@@ -34,24 +35,25 @@ For example, the bot is hosted on the corporate intranet or in an app that the u
 
 ## Supported channels
 
-The following table details the channels that currently support SSO. You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
+The following table details the channels that currently support SSO in public preview release of PVA.
+
 
 | Channel                          | Supported |
 | -------------------------------- | :-------: |
-| [Custom Website]                 |     ✔    |
-| [Microsoft Teams]<sup>1</sup>    |     ✔    |
+| Azure Bot Service channels       |           |
+| Custom Website                   |     ✔     |
+| Demo Website                     |           |
+| Facebook                         |           |
+| Microsoft Teams                  |           |
+| [Mobile App                      |           |
 
-<sup>1</sup> If you also have the Teams channel enabled, you need to follow the configuration instructions on the [Configure SSO for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will cause your users to always fail authentication when using the Teams channel.
 
 ## Create an app registration in Azure AD for your custom canvas
 
-To enable SSO, you'll need two separate app registrations:
+You can't reuse the same app registration for both your bot's user authentication and your custom canvas. To enable SSO, you'll need two separate app registrations:
 
-- Tne for your bot to enable user authentication with Azure AD.
+- One for your bot to enable user authentication with Azure AD.
 - One for your custom canvas (aka website the bot is hosted on) to enable SSO.
-
-> [!IMPORTANT]
-> You can't reuse the same app registration for both your bot's user authentication and your custom canvas.
 
 ### Create an app registration for the bot
 Use Azure Active Directory to create an app registration for your PVA bot
