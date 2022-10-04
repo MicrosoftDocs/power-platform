@@ -137,8 +137,8 @@ The following Power Automate capabilities aren't included:
 - Access to [premium connectors](./types.md#premium-connectors) (except in Dataverse for Teams environments). Learn more about [Dataverse for Teams capabilities](../pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses).
 - [Business process flows](./types.md#business-process-flows).
 - [Custom connectors](./types.md#custom-connectors).
-- [On premises gateways](./types.md#on-premises-gateway).
-- [Robotic process automation](./types.md#robotic-process-automation).
+- [On-premises gateways](./types.md#on-premises-gateway).
+- [Robotic Process Automation](./types.md#robotic-process-automation).
 - [AI Builder capacity](./types.md#ai-builder-credits).
   
 The following Office 365 licenses include Power Automate capabilities:
@@ -186,7 +186,7 @@ Dynamics 365 licenses include the following Power Automate capabilities:
 
 The following Power Automate capabilities aren't included in Dynamics 365 licenses:
 
-- [Robotic process automation](./types.md#robotic-process-automation)
+- [Robotic Process Automation](./types.md#robotic-process-automation)
 - [AI Builder capacity](./types.md#ai-builder-credits)
 
 When you use a Dynamics 365 license with Power Automate, your flows must run within the context of the Dynamics 365 application, which refers to using the same data sources for triggers or actions as the Dynamics 365 application. If your flow consumes standalone Power Automate actions that aren't related to the Dynamics 365 applications, you'll need to purchase standalone Power Automate licenses.
@@ -243,7 +243,7 @@ A limited set of Power Automate capabilities are included as part of a Power App
 
 The following Power Automate capabilities aren't included in Power Apps licenses:
 
-- [Robotic process automation](./types.md#robotic-process-automation)
+- [Robotic Process Automation](./types.md#robotic-process-automation)
 - [AI Builder capacity](./types.md#ai-builder-credits)
 
 
