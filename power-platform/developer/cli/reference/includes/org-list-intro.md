@@ -1,9 +1,8 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
 
 ### Example
 
 ```powershell
-pac org list
-``` 
--->
+pac org list --filter myorg
+```
+
+The filter parameter is a regular expression based filter.
