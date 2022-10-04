@@ -41,6 +41,12 @@ If an email is tracked and is categorized as **Tracked to Dynamics**, removing t
 
 > [!NOTE]
 > Server-side synchronization will automatically categorize emails in Dynamics 365 recipient mailboxes if the email being processed has already been tracked into Dynamics by another user or queue recipient of the same email.
+>
+> Please note that only emails that match the Dynamics 365 direction code will be automatically categorized when the system setting "[Track emails sent between Dynamics 365 users as two activities](https://learn.microsoft.com/en-us/power-platform/admin/settings-email-tracking)" is enabled. 
+>
+> For example, emails which are tracked and sent from Outlook to other Dynamics 365 users will not appear as categorized in the Outlook recipient mailboxes because
+> they represent the "received" copy of the email. This is to allow the Dynamics 365 recipient to track an incoming copy of the email as per the system setting noted
+> above.
 
 ## Appointment
 You can track an appointment by assigning it the **Tracked to Dynamics 365** category. The appointment will be tracked and synced to customer engagement apps based on server-side synchronization rules.
