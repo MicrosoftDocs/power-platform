@@ -57,7 +57,7 @@ To enable SSO, you'll need two separate app registrations:
 
 You should not reuse the same app registration for both your bot and your custom canvas for security reasons. 
 
-### Create an app registration for the bot
+### Create an app registration
 Use Azure Active Directory to create an app registration for your PVA bot
 1.	Sign in to the Azure portal, using an admin account on the same tenant as your bot.
 2.	Go to **App registrations**, either by selecting the icon or searching in the top search bar.
@@ -196,12 +196,12 @@ The Token Exchange URL in the Power Virtual Agents authentication configuration 
  
 Next, we will set up the App Registration for the Web page.
 
- ### Create custom canvas app registration
+ ## Create custom canvas app registration
 The steps for setting up app registration for custom canvas in the Azure portal are the same as the bot’s app registration that you just completed. The only difference is that instead of using `https://token.botframework.com/.auth/web/redirect` as the redirect URL, provide the canvas app URL. For example, `http://contoso.com/index.html` as shown below. So go ahead and create the app registration using the steps provided earlier. 
  
    :::image type="content" source="media/sso/configure-web-setting-for-canvas.png" alt-text="Screenshot of configure webpage" border="false"::: 
 
-### Configure your custom canvas HTML code to enable SSO
+## Configure your custom canvas HTML code to enable SSO
 
  In this example, we will use the code provided in the [GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html) to create the a html page that you specified as the redirect URI (above). Copy the code from the GitHub repo and modify it using the instructions provided below.
  
@@ -246,7 +246,7 @@ var clientApplication;
  
 5.	Save code changes.
 
-### Test bot using the custom canvas
+## Test bot using the custom canvas
 1.	Load the html page you just saved in the browser. If your browser blocks popup or you are using incognito mode, you will be prompted to log in, otherwise the log in will complete using a validation code . 
  
 2.	Next, you should be able to log in to the bot by clicking the Login button and using the validation code provided in a separate browser tab.
