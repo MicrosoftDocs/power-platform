@@ -20,7 +20,7 @@ contributors:
   - slaouist
 ---
 
-# :::no-loc text="Facepile"::: control
+# :::no-loc text="Facepile"::: control (Preview)
 
 A control used to display and interact with images.
 

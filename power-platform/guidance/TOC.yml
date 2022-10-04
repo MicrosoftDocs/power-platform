@@ -326,7 +326,7 @@
               items:
                 - name: DetailsList
                   href: creator-kit/detailslist.md
-                - name: Facepile
+                - name: Facepile (preview)
                   href: creator-kit/facepile.md
             - name: Pickers
               items:
