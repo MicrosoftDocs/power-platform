@@ -68,7 +68,7 @@ It can be helpful to use the name of your bot. For example, if your bot is calle
 
 4.	Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 
- :::image type="content" source="media/sso/register-an--app.png" alt-text="Screenshot accounts in organizational directory." border="false":::
+ :::image type="content" source="media/sso/register-an-app.png" alt-text="Screenshot accounts in organizational directory." border="false":::
 
 5.	Leave the **Redirect URI** section blank for now. You'll enter that information in the next steps.
 6.	Select **Register**.
@@ -134,9 +134,9 @@ Define a custom scope by exposing an API for the canvas app registration within 
 4.	Under Who can consent?, select Admins and users.
 5.	Enter Admin consent display name and Admin consent description. 
 
- :::image type="content" source="media/sso/add-scop.png" alt-text="Screenshot adding of API scopes" border="false"::: 
+ :::image type="content" source="media/sso/add-scope.png" alt-text="Screenshot adding of API scopes" border="false"::: 
  
-6.	Select Add scope.
+6.	Select **Add** scope.
  
 ### Configure authentication in Power Virtual Agents to enable SSO
 The Token Exchange URL in the Power Virtual Agents authentication configuration page is used to exchange the OBO token for the requested access token through the bot framework. ower Virtual Agents calls into Azure AD to perform the actual exchange.
@@ -161,7 +161,7 @@ The Token Exchange URL in the Power Virtual Agents authentication configuration 
  
 8.	In the **Token exchange URL** field, enter the full scope URI from the **Expose an API** blade in the Azure portal for the bot’s authentication app registration. The URI will be in the format of `api://1234-4567/scopename` as shown below.
 
- :::image type="content" source="media/copy-scope.png" alt-text="Screenshot PVA authentication settings page" border="false"::: 
+ :::image type="content" source="media/sso/copy-scope.png" alt-text="Screenshot PVA authentication settings page" border="false"::: 
 
  9.	Update **Client ID** for your PVA bot with the **Application (client) ID** for the canvas app registration. You get the ID from the Overview page for the canvas app registration in the Azure portal as shown below.
 
