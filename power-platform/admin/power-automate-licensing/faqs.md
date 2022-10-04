@@ -16,6 +16,10 @@ search.app:
   - Flow
 ---
 
+
+<!-- note from editor: This FAQ includes many mentions of Dynamics without the 365. They should always be together, so I added 365 where needed. -->
+
+
 # Frequently asked questions about Power Automate licensing
 
 ## Power Automate license plans
@@ -30,7 +34,7 @@ If the flow is set to the per user plan, then it gets the plan of its primary ow
 
 The standard user license plan for Power Automate is the Power Automate per user plan, but users have a range of other license plan options. Users with the free plan or one of the Microsoft 365 license plans can only access standard connectors, but most of the other license plans provide access to premium connectors. For details about license plans that include Power Automate capabilities, see [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types) and the Power Platform [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). For details about the limits and performance profile of license plans, see [Power Automate Limits](/power-automate/limits-and-config).
 
-### When should I choose Power Automate "per flow" versus "per user"?
+### When should I choose Power Automate 'per flow' versus 'per user'?
 
 Microsoft recommends that most organizations buy the per user with an attended robotic process automation (RPA) license for every user in their organization. Optionally, purchase the unattended bot add-on for every machine that runs unattended automation. 
 
