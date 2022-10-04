@@ -30,7 +30,7 @@ For example, the bot is hosted on the corporate intranet or in an app that the u
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](https://learn.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents)).
+- [Learn more about what you can do with Power Virtual Agents](https://learn.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
 
 ## Supported channels
 
@@ -99,7 +99,7 @@ It can be helpful to use the name of your bot. For example, if your bot is calle
 5.	Select **Add** to create the secret.
 6.	Store the secret's **Value** in a secure temporary place. You'll need it when you configure your bot's authentication later on.
 
-> [!Important]
+> [!IMPORTANT]
 >  If you navigate away from the page, the secret's Value is obfuscated, and you'll need to generate a new client secret.
 
 ### API Permissions
@@ -207,7 +207,7 @@ The steps for setting up app registration for custom canvas in the Azure portal 
  
  2.	Configure the Microsoft Authentication Library (MSAL) by updating clientId with the Application (client) ID  and <Directory ID> with the Directory (tenant) ID. 
 
- ```
+ ```csharp
  ...     
 var clientApplication;
      (function (){
@@ -223,8 +223,8 @@ var clientApplication;
 
  :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of copying bot id in PVA" border="false"::: 
  
- 
- ```...
+ ```csharp
+ ...
 (async function main() {
 
     // Add your BOT ID below 
