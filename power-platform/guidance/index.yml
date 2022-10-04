@@ -86,6 +86,8 @@ additionalContent:
               url: /power-apps/guidance/planning/introduction
             - text: Collaborating and co-developing apps
               url: /power-apps/guidance/co-develop/overview
+            - text: More...
+              url: /power-apps/guidance
         # Card
         - title: Power Automate guidance
           links:
@@ -95,6 +97,8 @@ additionalContent:
               url: /power-automate/guidance/rpa-sap-playbook/introduction
             - text: Automation Kit
               url: /power-automate/guidance/automation-kit/overview/introduction
+            - text: More...
+              url: /power-automate/guidance
         # Card
         - title: Power BI guidance
           links:
@@ -104,6 +108,8 @@ additionalContent:
               url: /power-bi/guidance/powerbi-adoption-roadmap-overview
             - text: Power BI implementation planning
               url: /power-bi/guidance/powerbi-implementation-planning-introduction
+            - text: More...
+              url: /power-bi/guidance
 
     - title: Documentation # < 60 chars (optional)
       summary: Official documentation for Power Platform components
@@ -125,4 +131,7 @@ additionalContent:
           url: /power-pages
         - title: Power Virtual Agents docs
           summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
-          url: /power-virtual-agents  
+          url: /power-virtual-agents
+        - title: Power Platform admin docs
+          summary: Use Power Platform admin center to manage environments, security, features, and settings for Power Platform components.
+          url: /power-platform/admin
