@@ -195,7 +195,7 @@ Next, we will set up the App Registration for the Web page.
  ### Create custom canvas app registration
 The steps for setting up app registration for custom canvas in the Azure portal are the same as the bot’s app registration that you just completed. The only difference is that instead of using https://token.botframework.com/.auth/web/redirect as the redirect URL, provide the canvas app URL. For example, http://contoso.com/index.html as shown below. So go ahead and create the app registration using the steps provided earlier. 
  
-   :::image type="content" source="media/sso/configure-web-setting-for-canvas.png" alt-text="Screenshot of configure webpage border="false"::: 
+   :::image type="content" source="media/sso/configure-web-setting-for-canvas.png" alt-text="Screenshot of configure webpage" border="false"::: 
 
 ### Configure your custom canvas HTML code to enable SSO
 
@@ -203,7 +203,7 @@ The steps for setting up app registration for custom canvas in the Azure portal 
  
 1.	To make changes to the code, you will need **Application (client) ID** and **Directory (tenant) ID**. You get these IDs from the **Overview** page for the canvas app registration in the Azure portal as shown below.
  
-  :::image type="content" source="media/sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azur"e="false"::: 
+  :::image type="content" source="media/sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azur" border="false"::: 
  
  2.	Configure the Microsoft Authentication Library (MSAL) by updating clientId with the Application (client) ID  and <Directory ID> with the Directory (tenant) ID. 
 ...     
@@ -218,7 +218,7 @@ var clientApplication;
 
 3.	Update <BOT ID> with your bot's ID. You can see your bot's ID by going to the Channels tab for the bot you're using and selecting Mobile app on the Power Virtual Agents portal. 
 
- :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of bot id in PVA"="false"::: 
+ :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of bot id in PVA" border="false"::: 
  
  
  ```...
@@ -244,7 +244,7 @@ var clientApplication;
  
 2.	Next, you should be able to log in to the bot by clicking the Login button and using the validation code provided in a separate browser tab.
  
-  :::image type="content" source="media/sso/chat-canvas-test.png" alt-text="Screenshot of bot id in PVA"="false"::: 
+  :::image type="content" source="media/sso/chat-canvas-test.png" alt-text="Screenshot of bot id in PVA" border="false"::: 
 
  ## Reference
  For more information about Azure App Registration, refer to:https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app
