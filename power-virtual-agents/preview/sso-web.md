@@ -24,21 +24,21 @@ For example, the bot is hosted on the corporate intranet or in an app that the u
 >
 > SSO is currently not supported when a bot has been either:
 >
-> - Published to a [SharePoint website](publication-connect-bot-to-web-channels.md#add-bot-to-your-website).
-> - Published to a [Power Apps portal](publication-add-bot-to-power-apps-portal.md).
-> - Integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
+> - Published to a SharePoint website.
+> - Published to a Power Apps portal.
+> - Integrated with Dynamics 365 Customer Service.
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Power Virtual Agents](https://learn.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents)).
 
 ## Supported channels
 
-The following table details the [channels](publication-fundamentals-publish-channels.md) that currently support SSO. You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
+The following table details the channels that currently support SSO. You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 | Channel                          | Supported |
 | -------------------------------- | :-------: |
-| [Custom Website]                 |     ✔     |
+| [Custom Website]                 |     ✔    |
 | [Microsoft Teams]<sup>1</sup>    |     ✔    |
 
 <sup>1</sup> If you also have the Teams channel enabled, you need to follow the configuration instructions on the [Configure SSO for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will cause your users to always fail authentication when using the Teams channel.
@@ -58,7 +58,7 @@ Use Azure Active Directory to create an app registration for your PVA bot
 1.	Sign in to the Azure portal, using an admin account on the same tenant as your bot.
 2.	Go to **App registrations**, either by selecting the icon or searching in the top search bar.
 
- :::image type="content" source="media/sso/start-app-reg.png" alt-text="Screenshot showing new registration form." border="false":::
+ :::image type="content" source="media/sso/start-app-reg.png" alt-text="Screenshot showing new app registration in azure." border="false":::
  
  3.	Select **New registration** and enter a name for the registration.
 
@@ -104,7 +104,9 @@ It can be helpful to use the name of your bot. For example, if your bot is calle
 
 ### API Permissions
 1.	Go to **API Permissions**. Select **Grant admin consent for <your tenant name>** and then select **Yes**.
-Important To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must grant tenant-wide consent to your app registrations.
+ 
+> [!Important]
+> To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must grant tenant-wide consent to your app registrations.
  
  :::image type="content" source="media/sso/api-permission.png" alt-text="Screenshot API permission." border="false":::
 
@@ -161,7 +163,7 @@ The Token Exchange URL in the Power Virtual Agents authentication configuration 
  
 8.	In the **Token exchange URL** field, enter the full scope URI from the **Expose an API** blade in the Azure portal for the bot’s authentication app registration. The URI will be in the format of `api://1234-4567/scopename` as shown below.
 
- :::image type="content" source="media/sso/copy-scope.png" alt-text="Screenshot PVA authentication settings page" border="false"::: 
+ :::image type="content" source="media/sso/copy-scope.png" alt-text="Screenshot copy scope for use in PVA" border="false"::: 
 
  9.	Update **Client ID** for your PVA bot with the **Application (client) ID** for the canvas app registration. You get the ID from the Overview page for the canvas app registration in the Azure portal as shown below.
 
@@ -201,7 +203,7 @@ The steps for setting up app registration for custom canvas in the Azure portal 
  
 1.	To make changes to the code, you will need **Application (client) ID** and **Directory (tenant) ID**. You get these IDs from the **Overview** page for the canvas app registration in the Azure portal as shown below.
  
-  :::image type="content" source="media/sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azure="false"::: 
+  :::image type="content" source="media/sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azur"e="false"::: 
  
  2.	Configure the Microsoft Authentication Library (MSAL) by updating clientId with the Application (client) ID  and <Directory ID> with the Directory (tenant) ID. 
 ...     
@@ -216,7 +218,7 @@ var clientApplication;
 
 3.	Update <BOT ID> with your bot's ID. You can see your bot's ID by going to the Channels tab for the bot you're using and selecting Mobile app on the Power Virtual Agents portal. 
 
- :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of bot id in PVA="false"::: 
+ :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of bot id in PVA"="false"::: 
  
  
  ```...
@@ -242,7 +244,7 @@ var clientApplication;
  
 2.	Next, you should be able to log in to the bot by clicking the Login button and using the validation code provided in a separate browser tab.
  
-  :::image type="content" source="media/sso/chat-canvas-test.png" alt-text="Screenshot of bot id in PVA="false"::: 
+  :::image type="content" source="media/sso/chat-canvas-test.png" alt-text="Screenshot of bot id in PVA"="false"::: 
 
  ## Reference
  For more information about Azure App Registration, refer to:https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app
