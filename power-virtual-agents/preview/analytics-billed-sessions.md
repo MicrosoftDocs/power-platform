@@ -1,5 +1,5 @@
 ---
-title: View billed sessions (Preview)
+title: View billed sessions (preview)
 description: See Power Virtual Agents billed sessions in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -11,7 +11,7 @@ ms.custom: "analysis, licensing, ceX"
 ms.collection: virtual-agent
 ---
 
-# View billed sessions for Power Virtual Agents (Preview)
+# View billed sessions for Power Virtual Agents (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

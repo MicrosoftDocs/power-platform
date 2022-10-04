@@ -1,6 +1,6 @@
 ---
-title: "Limitations of the Power Virtual Agents preview (Preview)"
-description: "Existing features that aren't supported in the Power Virtual Agents preview."
+title: "Limitations of the Power Virtual Agents preview (preview)"
+description: "Existing features that aren't supported in Power Virtual Agents preview."
 ms.date: 10/10/2022
 ms.topic: overview
 author: v-alarioza
@@ -11,7 +11,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Limitations (Preview)
+# Limitations (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -25,7 +25,7 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 - The **Track between topics** toggle in the [test bot pane](authoring-test-bot.md) doesn't work.
 - While co-authoring a bot with another user is possible, it's not a fully supported feature.
 - Default values in multiple-choice questions don't work.
-- Passing uninitialized variables to [flows](/advanced-flow.md) causes an error.
+- Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
 
 ## Upcoming releases
 

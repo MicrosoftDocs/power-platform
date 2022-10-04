@@ -1,5 +1,5 @@
 ---
-title: Ask a question (Preview)
+title: Ask a question (preview)
 description: Use the question node to ask the user a question and store their response in a variable in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
@@ -13,7 +13,7 @@ ms.custom: authoring, topics, message, question
 ms.collection: virtual-agent
 ---
 
-# Ask a question (Preview)
+# Ask a question (preview)
 
 The **Question** node allows you to prompt a user for information and store their response into a variable, for use later on in the conversation.
 
