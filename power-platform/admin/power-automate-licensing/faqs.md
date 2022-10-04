@@ -174,7 +174,7 @@ The following questions are related to Dynamics 365 licensing and Power Automate
 
 ### What Power Automate capabilities are included in Dynamics 365 licenses?
 
-Dynamics 365 licenses include following Power Automate capabilities:
+Dynamics 365 licenses include the following Power Automate capabilities:
 
 - Create and execute automated, scheduled, or button flows.
 - Access to [standard connectors](./types.md#standard-connectors).
@@ -182,7 +182,7 @@ Dynamics 365 licenses include following Power Automate capabilities:
 - [Business process flows](./types.md#business-process-flows) within app context.
 - [Custom connectors](./types.md#custom-connectors) within app context.
 - [On-premises gateways](./types.md#on-premises-gateway) within app context.
-- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics 365 Team member gets 6,000 requests/day (25,000 requests/day during the [transition period](./types.md#transition-period)), Dynamics 365 professional gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)) and Dynamics 365 Enterprise gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)).
+- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics 365 Team member gets 6,000 requests/day (25,000 requests/day during the [transition period](./types.md#transition-period)), Dynamics 365 professional gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)), and Dynamics 365 Enterprise gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)).
 
 The following Power Automate capabilities aren't included in Dynamics 365 licenses:
 
@@ -191,29 +191,23 @@ The following Power Automate capabilities aren't included in Dynamics 365 licens
 
 When you use a Dynamics 365 license with Power Automate, your flows must run within the context of the Dynamics 365 application, which refers to using the same data sources for triggers or actions as the Dynamics 365 application. If your flow consumes standalone Power Automate actions that aren't related to the Dynamics 365 applications, you'll need to purchase standalone Power Automate licenses.
 
+#### Example of Dynamics 365 license using Power Automate within a Dynamics 365 application context
 
-
-
-
-#### Example of Dynamics license using Power Automate within a Dynamics application context
-
-Your organization has connected Azure DevOps with Dynamics CRM to escalate support cases and create work items to get problems resolved faster. As part of the Dynamics license, Power Automate rights are included for flows in the following scenarios.
+Your organization has connected Azure DevOps with Dynamics 365 CRM to escalate support cases and create work items to get problems resolved faster. As part of the Dynamics 365 license, Power Automate rights are included for flows in the following scenarios:
 
 - Read from or write to Azure DevOps.
+- Use a built-in Dataverse trigger or action.
 
-- Use a built-in Dataverse trigger and/or action.
+#### Example of Dynamics 365 license using Power Automate outside a Dynamics 365 application context
 
-#### Example of Dynamics license using Power Automate outside a Dynamics application context
+The same user ([in the previous Dynamics example](#example-of-dynamics-license-using-power-automate-within-a-dynamics-application-context)) now also wants to use a flow that updates an Oracle database. This flow has the following properties:
 
-The same user ([in the previous Dynamics example](#example-of-dynamics-license-using-power-automate-within-a-dynamics-application-context)) now also wants to use a flow that updates an Oracle database. This flow has the following properties.
-
-- It's completely unrelated to the Dynamics app.
-
-- It doesn't interact in any way with the Dynamics app (or its data sources).
+- It's completely unrelated to the Dynamics 365 app.
+- It doesn't interact in any way with the Dynamics 365 app (or its data sources).
 
 In this scenario, the user requires a standalone Power Automate license.
 
-The following Dynamics licenses include Power Automate capabilities.
+The following Dynamics 365 licenses include Power Automate capabilities:
 
 - Dynamics 365 Sales Enterprise
 - Dynamics 365 Sales Professional
@@ -228,7 +222,7 @@ The following Dynamics licenses include Power Automate capabilities.
 - Dynamics 365 Human Resources
 - Dynamics 365 Operations – Activity
 - Dynamics 365 Business Central
-- Dynamics 365 Business Central Team Members.
+- Dynamics 365 Business Central Team Members
 
 ## Power Apps license questions
 
@@ -236,52 +230,55 @@ The following questions are related to Power Apps licensing and Power Automate u
 
 ### What Power Automate capabilities are included in Power Apps licenses?
 
-A limited set of Power Automate capabilities are included as part of Power Apps license. Power Apps licenses include following Power Automate capabilities.
+A limited set of Power Automate capabilities are included as part of a Power Apps license. Power Apps licenses include the following Power Automate capabilities:
 
 - Create and execute automated, scheduled, button flows.
 - Access to [standard connectors](./types.md#standard-connectors).
 - Access to [premium connectors](./types.md#premium-connectors) within app context.
 - [Business process flows](./types.md#business-process-flows) within app context.
 - [Custom connectors](./types.md#custom-connectors) within app context.
-- [On premises gateways](./types.md#on-premises-gateway) within app context.
+- [On-premises gateways](./types.md#on-premises-gateway) within app context.
 - Power Platform request limits: Power Apps per user gets 5,000 requests/day (25,000 requests/day during the [transition period](./types.md#transition-period)) and Power Apps per app gets 1,000 requests/day (10,000 requests/day during the [transition period](./types.md#transition-period)).
-- Power Apps per user gets 250MB Dataverse database capacity and 2GB Dataverse file capacity. Power Apps per app gets 50MB Dataverse database capacity and 400MB Dataverse file capacity. Flows invoked by the app created using Power Apps that handle complex objects will consume this storage limit. For example, if a flow parses a 100-page document and makes updates to it, the storage it needs to retain the document in run history for future troubleshooting will consume this limit.
+- Power Apps per user gets 250 MB Dataverse database capacity and 2 GB Dataverse file capacity. Power Apps per app gets 50 MB Dataverse database capacity and 400 MB Dataverse file capacity. Flows invoked by the app created using Power Apps that handle complex objects will consume this storage limit. For example, if a flow parses a 100-page document and makes updates to it, the storage it needs to retain the document in run history for future troubleshooting will consume this limit.
 
-The following Power Automate capabilities aren't included in Power Apps licenses.
+The following Power Automate capabilities aren't included in Power Apps licenses:
 
-- [Robotic process automation](./types.md#robotic-process-automation).
-- [AI Builder capacity](./types.md#ai-builder-credits).
+- [Robotic process automation](./types.md#robotic-process-automation)
+- [AI Builder capacity](./types.md#ai-builder-credits)
 
 
 #### Example of Power Automate use within an app created using Power Apps context
 
-A user with a standalone Power Apps license runs an app that uses a SQL database as the data source. The app created using Power Apps also includes flows that do the following.
+A user with a standalone Power Apps license runs an app that uses a SQL database as the data source. The app created using Power Apps also includes flows that do the following:
 
 - Read from or write to a SQL database.
-
-- Use a built-in Power Apps trigger or action, for example, to send a push notification to the app created using Power Apps.
+- Use a built-in Power Apps trigger or action—for example, to send a push notification to the app created using Power Apps.
 
 
 #### Example of Power Automate use outside of an app created using Power Apps context
 
-The same user ([in the example above](#example-of-power-automate-use-within-an-app-created-using-power-apps-context)) now also wants to use a flow that updates an Oracle database and also has the following properties. 
+The same user ([in the example above](#example-of-power-automate-use-within-an-app-created-using-power-apps-context)) now also wants to use a flow that updates an Oracle database and also has the following properties: 
 
-- It's completely unrelated to the app created using Power Apps
-
+- It's completely unrelated to the app created using Power Apps.
 - It doesn't interact in any way with the app created using Power Apps (or its data sources).
 
 In this example, the app created using Power Apps is being used outside the context of Power Apps so the user needs a standalone Power Automate license.
 
-#### Example of Power Automate use outside of an app created using Power Apps context
-An environment has multiple apps. There are flows for data management that donot directly support the app but ensure the data quality. The user needs a standalone Power Automate license. 
 
-Flows created to support apps built with Power Apps must run within the context of the app, meaning the flow must use the same data sources for triggers or actions as the app. Flows that are triggered from the app are automatically considered as being in context of the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the app(s) using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app). Once the flow is linked, a dependency is established between the app and the flow and they can be managed together. If the linked app is deleted or unused, the flow will be turned off.
+<!-- Note from editor: The following heding was identical to the one above, so I modified it. Does that work? -->
+
+
+#### Second example of Power Automate use outside of an app created using Power Apps context
+
+An environment has multiple apps. There are flows for data management that do not directly support the app but ensure the data quality. The user needs a standalone Power Automate license. 
+
+Flows created to support apps built with Power Apps must run within the context of the app, meaning the flow must use the same data sources for triggers or actions as the app. Flows that are triggered from the app are automatically considered as being in context of the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the apps using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app). Once the flow is linked, a dependency is established between the app and the flow and they can be managed together. If the linked app is deleted or unused, the flow will be turned off.
 
 If a premium flow is not in context of any app, you must purchase a standalone Power Automate license.
 
-### How can i easily determine if my flow is in context of a Power App/Dynamics app?
+### How can I easily determine if my flow is in context of a Power Apps/Dynamics 365 app?
 
-Is the flow created to support the Power App/Dynamics app? Can the flow be deleted if the corresponding app(s) are deleted? If so, the flow is in context. 
+Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be deleted if the corresponding apps are deleted? If so, the flow is in context. 
 
 
 ## Multiplexing
@@ -290,34 +287,39 @@ Is the flow created to support the Power App/Dynamics app? Can the flow be delet
 
 Multiplexing refers to the use of hardware or software that a customer uses to pool connections, reroute information, or reduce the number of users that directly access or use the Power Apps, Power Automate, and the Power Virtual Agents service. Using multiplexing as a mechanism to reduce the number of licenses to be purchased is a license violation. For more details, refer to the multiplexing guidance from [Client Access License (CAL) Requirements](https://download.microsoft.com/download/3/D/4/3D42BDC2-6725-4B29-B75A-A5B04179958B/Licensing_Brief_PLT_Multiplexing.pdf).
 
-Here are a few examples of multiplexing.
+Here are a few examples of what multiplexing is or isn't:
 
-1. If the premium flow is only moving data from Dataverse into a shared location or sending an email to collegues, it doesn't fall under multiplexing because the users  consume the data, rather than trigger the flow. 
-1. If a premium flow triggers when a new item is added to a SharePoint list, saves the details in Dataverse, and then sends an email to the owner of the flow. Multiple people can upload items into the list but the email is only sent to the owner. In this case, only the owner needs a license because they are the only person who gets value from the flow. 
-1. If the flow mentioned in number two sends an email to the user who uploads the item, both the owner and the user need a premium license. In this case, the user  indirectly triggers the flow (by uploading an item into SharePoint) and gets value from the flow in the form of an email. Failure to license all the users falls under multiplexing.  
+1. If the premium flow is only moving data from Dataverse into a shared location or sending an email to colleagues, it doesn't fall under multiplexing because the users  consume the data, rather than trigger the flow. 
+2. If a premium flow triggers when a new item is added to a SharePoint list, saves the details in Dataverse, and then sends an email to the owner of the flow, multiple people can upload items into the list but the email is only sent to the owner. In this case, only the owner needs a license because they are the only person who gets value from the flow. 
+3. If the flow mentioned in number two sends an email to the user who uploads the item, both the owner and the user need a premium license. In this case, the user  indirectly triggers the flow (by uploading an item into SharePoint) and gets value from the flow in the form of an email. Failure to license all the users falls under multiplexing.  
 
 ### I have multiple flows running under a shared service account. What licenses do I need?
+
 Definitions: 
- - **Service account**: Azure Active Directory (Azure AD) user account used as a service account. Service accounts are a special type of account that are intended to represent a non-human entity such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, are difficult to track and managing their passwords is a challenge. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. 
- - **Service principal**: Azure AD service principal functions as the identity of the application instance. Service principals define who can access the application and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object. Power Automate doesn't yet support a flow to run under Service Principal; the [feature](/power-platform-release-plan/2022wave1/power-automate/ownership-supported-service-principals) is planned. 
- - **Non-interactive users**: Dataverse supports non-interactive users for activities like background processes that migrate data between databases. These do not require a user to interact with the service. There is a maximum limit of 7 non-interactive users per tenant. Non-interactive users are not yet supported by Power Automate. 
- - **Normal users**: These are the regular synchronized users from Azure AD.
 
-Guidance: This guidance is specific to flows that run under a service account as the owner of the flow. If you want to run your flow under a service account, here are the best practices.
+- **Service account**: Azure Active Directory (Azure AD) user account used as a service account. Service accounts are a special type of account that are intended to represent a non-human entity such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, are difficult to track and managing their passwords is a challenge. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. 
+ 
+- **Service principal**: Azure AD service principal functions as the identity of the application instance. Service principals define who can access the application and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object. Power Automate doesn't yet support a flow to run under service principal; the [feature](/power-platform-release-plan/2022wave1/power-automate/ownership-supported-service-principals) is planned. 
 
- - If the flow only uses standard connectors and no premium features, all the users who have the credentials of the service account can have Microsoft/Office 365 license, Power Automate Free, or any Power Automate premium license. 
-   - If the flow uses premium features (premium connectors, Robotic process Automation, custom connectors, on prem gateway, Business process flows): 
-   - The service account is used by a limited set of users. In this case, licensing all the users and the service account is enough. 
-   - The service account is used by many users. In this case, it is recommended to assign a per flow license to the flow to ensure any new users adding to the account are automatically compliant. 
- - If the flow is manually or app triggered flow/Dataverse ‘Run as user’ flow, all users who run the flow will need a premium license or the flow needs a per flow license. Check out this FAQ on [who needs to purchase a premium license](faqs.md#who-needs-to-purchase-a-premium-license).   
- - Premium flow is in context (the flow shares the data sources of the app) of an app created using Power Apps/Dynamics App: 
-   - All the users who have the credentials for the service account and the service account need a Power Apps/Dynamics 365 license. 
-   - If they don’t have a Power Apps/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
-   - Alternatively, the flow can be licensed with a per flow license and none of the users/service account needs a license. 
-  - Multiple users sharing credentials of a service account and using premium flows with one premium per user license assigned to the service account is considered multiplexing and the flow isn't compliant. 
+- **Non-interactive users**: Dataverse supports non-interactive users for activities like background processes that migrate data between databases. These do not require a user to interact with the service. There is a maximum limit of 7 non-interactive users per tenant. Non-interactive users are not yet supported by Power Automate. 
+
+- **Normal users**: These are the regular synchronized users from Azure AD.
+
+Guidance: This guidance is specific to flows that run under a service account as the owner of the flow. If you want to run your flow under a service account, here are the best practices:
+
+- If the flow only uses standard connectors and no premium features, all the users who have the credentials of the service account can have a Microsoft/Office 365 license, Power Automate Free, or any Power Automate premium license. 
+- If the flow uses premium features (premium connectors, Robotic Process Automation, custom connectors, on-premises gateway, business process flows): 
+  - The service account is used by a limited set of users. In this case, licensing all the users and the service account is enough. 
+  - The service account is used by many users. In this case, it's recommended to assign a per flow license to the flow to ensure any new users adding to the account are automatically compliant. 
+- If the flow is a manually or app-triggered flow/Dataverse ‘Run as user’ flow, all users who run the flow will need a premium license or the flow needs a per flow license. Check out this FAQ on [who needs to purchase a premium license](faqs.md#who-needs-to-purchase-a-premium-license).   
+- Premium flow is in context (the flow shares the data sources of the app) of an app created using Power Apps/Dynamics 365 app: 
+  - All the users who have the credentials for the service account and the service account need a Power Apps/Dynamics 365 license. 
+  - If they don’t have a Power Apps/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
+  - Alternatively, the flow can be licensed with a per flow license and none of the users/service account needs a license. 
+- Multiple users sharing credentials of a service account and using premium flows with one premium per user license assigned to the service account is considered multiplexing and the flow isn't compliant. 
 
 > [!NOTE]
-> The guidance is specific to service accounts used as flow owners or run only users. Flows using service accounts as connections or co-owners are not impacted by this guidance. 
+> The guidance is specific to service accounts used as flow owners or run-only users. Flows using service accounts as connections or co-owners are not impacted by this guidance. 
 > 
 > This is guidance only and not hard enforcement. Admins are responsible for licensing all the flows correctly to stay compliant. 
 
@@ -326,7 +328,10 @@ Guidance: This guidance is specific to flows that run under a service account as
 
 Every user benefiting from the flow needs a license. But, if the flow is a personal automation where only the owner is benefiting from the flow, users who respond to approval requests don't need a premium license. 
 
-### **Automated flow** - User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL database (Premium). Multiple people can add items to the list created using Microsoft Lists.
+
+<!-- note from editor: What is the question below and the one after? -->
+
+### Automated flow - User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL database (Premium). Multiple people can add items to the list created using Microsoft Lists.
 
 It depends on who is getting the value from the flow. If the users are getting value from the flow directly or indirectly, they need a premium license. If the flow is for personal automation, the flow runs in the context of owner's license for automated or scheduled flows and the invoking user's license for instant, Power Apps, or Dataverse-triggered flows. So, the person who added the item to the list created using Microsoft Lists doesn't need a premium license.
 
@@ -340,7 +345,7 @@ You can either license the parent flow or license the child flow with a per flow
 
 ### My flow uses connections from multiple users. Do I need to license all of them?
 
-Who needs a license is independent from whose connections are used in the flow. automated or scheduled flows always run under the owner's license and manual flows or  apps always run under the user who triggers the flow. 
+Who needs a license is independent from whose connections are used in the flow. Automated or scheduled flows always run under the owner's license and manual flows or  apps always run under the user who triggers the flow. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
