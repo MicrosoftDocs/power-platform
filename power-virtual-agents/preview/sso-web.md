@@ -87,7 +87,7 @@ It can be helpful to use the name of your bot. For example, if your bot is calle
 
  :::image type="content" source="media/sso/configure-platform.png" alt-text="Screenshot showing add a platform." border="false":::
  
-3.	Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect`.
+3.	Under **Redirect URIs**, enter `https://unitedstates.token.botframework.com/.auth/web/redirect`.
 
 4.	Under the **Implicit grant and hybrid flows** section, turn on both **ID tokens (used for implicit and hybrid flows)** and **Access tokens (used for implicit flows)**.
 
