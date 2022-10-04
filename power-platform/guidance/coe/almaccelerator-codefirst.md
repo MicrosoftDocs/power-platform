@@ -1,6 +1,6 @@
 ---
 title: "Configuring and using the ALM accelerator for Plug-ins and PCF | MicrosoftDocs"
-description: "Code first components (i.e., Plug-ins, PCF controls) ALM using ALM accelerator for Microsoft Power Platform builds code first projects in the repository and packs as solutions. This document describes how to perform code first components ALM using ALM accelerator for Microsoft Power Platform."
+description: "Code first components (that is, Plug-ins, PCF controls) ALM using ALM accelerator for Microsoft Power Platform builds code first projects in the repository and packs as solutions. This document describes how to perform code first components ALM using ALM accelerator for Microsoft Power Platform."
 author: rajeevpentyala
 manager: devkeydet
 ms.component: pa-admin
@@ -24,7 +24,7 @@ search.app:
 
 The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
-With the ALM Accelerator, you can source control your code first components (i.e., Plugins, PCF Controls), build and run unit test cases and transport them to downstream environments.
+With the ALM Accelerator, you can source control your code first components (that is, Plugins, PCF Controls), build and run unit test cases and transport them to downstream environments.
 
 ## Recommended repository folder structure for code first components
 
@@ -37,8 +37,8 @@ With the ALM Accelerator, you can source control your code first components (i.e
 
 Follow these steps to set up a plug-in project for the first time:
 
-1. [Install Power Platform CLI](/power-platform/developer/cli/introduction.md)
-1. Trigger [pac plugin init command](\power-platform\developer\cli\reference\includes\plugin-init-intro.md)
+1. [Install Power Platform CLI](/developer/cli/introduction.md)
+1. Trigger [pac plugin init command](/developer/cli/reference/plugin.md)
 1. pac plugin init generates a folder structure as below
    :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-pac-plugins-init.png" alt-text="Pac plugin init folder structure":::
 1. Continue adding your plugin class files to the folder structure
@@ -47,11 +47,11 @@ Follow these steps to set up a plug-in project for the first time:
 
 Follow these steps to migrate your legacy plug-in projects to the new folder structure:
 
-1. [Install Power Platform CLI](/power-platform/developer/cli/introduction.md)
-1. Trigger [pac plugin init command](\power-platform\developer\cli\reference\includes\plugin-init-intro.md)
+1. [Install Power Platform CLI](/developer/cli/introduction.md)
+1. Trigger [pac plugin init command](/developer/cli/reference/plugin.md)
 1. pac plugin init generates a folder structure.
 1. Copy the legacy plug-in project files to the new folder structure
 
 ## Setting up pcf projects
 
-No additional steps required for setting up PCF projects. You can continue adding your PCF controls to the folder structure (i.e., Repository Name\Solution Name\PCF).
+No other steps required for setting up PCF projects. You can continue adding your PCF controls to the folder structure (that is, Repository Name\Solution Name\PCF).
