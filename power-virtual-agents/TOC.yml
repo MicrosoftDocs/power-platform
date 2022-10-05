@@ -286,6 +286,7 @@
         href: teams/gdpr-summary-teams.md
 - name: Power Virtual Agents (preview)
   items:
+
   - name: What's in preview
     href: preview/overview.md
   - name: Quickstart
@@ -378,3 +379,4 @@
         href: preview/configure-sso-teams.md
       - name: Customize the look and feel of the bot
         href: preview/customize-default-canvas.md
+

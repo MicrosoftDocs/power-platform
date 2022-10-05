@@ -1,4 +1,5 @@
 ---
+
 title: "Work with chatbot variables (preview)"
 description: "Use variables with custom and prebuilt entities to created customized bot conversations in Power Virtual Agents preview."
 keywords: "PVA"
@@ -21,6 +22,7 @@ Save customers' responses in a bot conversation to variables and reuse them late
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
+
 Variables can also be passed into, and returned from, [other topics](#receive-values-from-other-topics) and [Power Automate flows](advanced-flow.md).  
 
 ## Variable scopes
@@ -30,6 +32,7 @@ Variables can exist within three scopes:
 - **Topic**: Topic variables can only be referenced within the topics in which they are created. This is the default scope for created variables.
 - **Global**: [Global variables](authoring-variables-bot.md) are available for use across all topics. You can change the scope of any topic variable to make it a global variable.
 - **System**: [System variables](#system-variables) are created automatically and provide additional contextual information about the conversation or the user. They are usually available in all topics.
+
 
 ## Variable types
 
@@ -127,7 +130,9 @@ Typically you'll use a [question node](authoring-ask-a-question.md) to save user
 
 ## Variable initialization
 
+
 <!-- FIXME: what goes here? -->
+
 
 ## Use literal values
 

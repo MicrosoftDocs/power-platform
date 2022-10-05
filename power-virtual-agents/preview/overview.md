@@ -23,11 +23,13 @@ The new intelligent bot authoring experience unifies the sophistication of Azure
 This evolution brings new features, including:
 
 - Updates to authoring experience
+
   - [Add Images / Videos / Cards to a message](authoring-send-message.md)
   - [YAML code editor](authoring-create-edit-topics.md)
   - [Message variations](authoring-send-message.md#use-message-variations)
   - [Quick replies](authoring-send-message.md#use-quick-replies)
   - [Speech authoring](authoring-send-message.md#use-ssml-to-customize-speech-responses)
+
 
 - Power FX and variable management
   - [Enhanced variable management](authoring-variables.md)
