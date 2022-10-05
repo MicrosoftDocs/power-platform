@@ -1,6 +1,6 @@
 ---
-title: "Configure single sign-on for chat canvas"
-description: "Enable your bot to authenticate an already-signed-in user (preview)"
+title: "Configure single sign-on for a custom website (preview)"
+description: "Enable your bot to authenticate an already-signed-in user in Power Virtual Agents preview."
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA, preview"
 ms.date: 10/10/2022
 
@@ -8,7 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: pawant
+ms.reviewer: kamrani
 ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
@@ -17,8 +17,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're in to the page where the bot is deployed.  
-For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
+Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're in to the page where the bot is deployed. For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
 > [!IMPORTANT]
 >
@@ -29,46 +28,44 @@ For example, the bot is hosted on the corporate intranet or in an app that the u
 > - Published to a Power Apps portal.
 > - Integrated with Dynamics 365 Customer Service.
 
-## Prerequisites
-
-- [Learn more about what you can do with Power Virtual Agents](https://learn.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
-
 ## Supported channels
 
-The following table details the channels that currently support SSO in public preview release of PVA.
+The following table details the channels that currently support SSO in Power Virtual Agents preview:
 
-| Channel                          | Supported |
-| -------------------------------- | :-------: |
-| Azure Bot Service channels       |           |
-| Custom Website                   |     ✔     |
-| Demo Website                     |           |
-| Facebook                         |           |
-| Microsoft Teams                  |           |
-| Mobile App                       |           |
+| Channel                    | Supported |
+| -------------------------- | :-------: |
+| Azure Bot Service channels |           |
+| Custom Website             |     ✔     |
+| Demo Website               |           |
+| Facebook                   |           |
+| Microsoft Teams            |           |
+| Mobile App                 |           |
 
-## Create an app registration for your custom canvas
+## Create an app registration for your custom website
 
 To enable SSO, you'll need two separate app registrations:
 
 - One for your bot to enable user authentication with Azure AD.
-- One for your custom canvas (aka website the bot is hosted on) to enable SSO.
+- One for your custom website to enable SSO.
 
-You should not reuse the same app registration for both your bot and your custom canvas for security reasons.
+> [!IMPORTANT]
+> It's not recommended to reuse the same app registration for both your bot and your custom website for security reasons.
 
 ### Create an app registration
 
-Use Azure Active Directory to create an app registration for your PVA bot
+Use Azure Active Directory to create an app registration for your Power Virtual Agents bot.
 
-1. Sign in to the Azure portal, using an admin account on the same tenant as your bot.
+1. Sign in to the [Azure portal](https://portal.azure.com), using an admin account on the same tenant as your bot.
+
 1. Go to **App registrations**, either by selecting the icon or searching in the top search bar.
 
     :::image type="content" source="media/sso/start-app-reg.png" alt-text="Screenshot showing new app registration in azure." border="false":::
 
 1. Select **New registration** and enter a name for the registration.
 
-    :::image type="content" source="media/sso/new-app-reg.png" alt-text="Screenshot showing new registration form." border="false":::
+    It can be helpful to use the name of your bot. For example, if your bot is called "Contoso sales help", you could name the app registration "ContosoSalesReg".
 
-It can be helpful to use the name of your bot. For example, if your bot is called "Contoso sales help", you might name the app registration "ContosoSalesReg" or something similar.
+    :::image type="content" source="media/sso/new-app-reg.png" alt-text="Screenshot showing new registration form." border="false":::
 
 1. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 
@@ -78,9 +75,13 @@ It can be helpful to use the name of your bot. For example, if your bot is calle
 
 1. Select **Register**.
 
+1. Once the registration is complete, go to **Overview**.
+
+1. Copy the **Application (client) ID** and store it in a temporary place. You'll need this in later steps.
+
 ### Add the redirect URL
 
-1. Once the registration is complete, the **Overview** page opens. Go to **Authentication** and then select **Add a platform**.
+1. In the Azure portal, go to **Authentication** and then select **Add a platform**.
 
     :::image type="content" source="media/sso/add-platform.png" alt-text="Screenshot showing authentication." border="false":::
 
@@ -98,11 +99,16 @@ It can be helpful to use the name of your bot. For example, if your bot is calle
 
 ### Generate a client secret
 
-1. Go to **Certificates & Secrets**.
+1. In the Azure portal, go to **Certificates & Secrets**.
+
 1. Under the **Client secrets** section, select **New client secret**.
+
 1. (Optional) Enter a description. One will be provided if you leave it blank.
+
 1. Select the expiry period. Select the shortest period that's relevant for the life of your bot.
+
 1. Select **Add** to create the secret.
+
 1. Store the secret's **Value** in a secure temporary place. You'll need it when you configure your bot's authentication later on.
 
 > [!IMPORTANT]
@@ -112,20 +118,20 @@ It can be helpful to use the name of your bot. For example, if your bot is calle
 
 1. Go to **API Permissions**. Select **Grant admin consent for _your tenant name_** and then select **Yes**.
 
-> [!IMPORTANT]
-> To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must grant tenant-wide consent to your app registrations.
+    > [!IMPORTANT]
+    > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must grant tenant-wide consent to your app registrations.
 
     :::image type="content" source="media/sso/api-permission.png" alt-text="Screenshot API permission." border="false":::
 
-1. Next, select **Add a permission**, then **Microsoft Graph**.
+1. Select **Add a permission**, then **Microsoft Graph**.
 
     :::image type="content" source="media/sso/request-api-permission.png" alt-text="Screenshot showing request API permission." border="false":::
 
-1. Next, select **Delegated permissions**.
+1. Select **Delegated permissions**. A list of permissions will appear below.
 
     :::image type="content" source="media/sso/delegated-permission.png" alt-text="Screenshot showing delegated permission." border="false":::
 
-1. Select **openid** and **profile**.
+1. Expand **OpenId permissions** and turn on **openid** and **profile**.
 
     :::image type="content" source="media/sso/select-permission.png" alt-text="Screenshot showing delegated permission selection." border="false":::
 
@@ -133,16 +139,24 @@ It can be helpful to use the name of your bot. For example, if your bot is calle
 
 ### Define a custom scope for your bot
 
-Define a custom scope by exposing an API for the canvas app registration within the authentication app registration. Scopes allow you to determine user and admin roles and access rights.
+Define a custom scope by exposing an API for the canvas app registration within the authentication app registration. [Scopes](/azure/active-directory/develop/developer-glossary#scopes) allow you to determine user and admin roles and access rights.
 
-1. Go to Expose an API and select Add a scope.
+1. In the Azure portal, go to **Expose an API** and select **Add a scope**.
 
     :::image type="content" source="media/sso/expose-api.png" alt-text="Screenshot showing API scopes" border="false":::
 
-1. Select Save and continue.
-1. Enter a Scope name.
-1. Under Who can consent?, select Admins and users.
-1. Enter Admin consent display name and Admin consent description.
+1. Set the following properties:
+
+   | Property                   | Value                                      |
+   | -------------------------- | ------------------------------------------ |
+   | Scope name                 | Enter `Test.Read`                          |
+   | Who can consent?           | Select **Admins and users**                |
+   | Admin consent display name | Enter `Test.Read`                          |
+   | Admin consent description  | Enter `Allows the app to log in the user.` |
+   | State                      | Select **Enabled**                         |
+
+   > [!NOTE]
+   > The scope name `Test.Read` is a placeholder value and should be replaced with a name that makes sense in your environment.
 
     :::image type="content" source="media/sso/add-scope.png" alt-text="Screenshot adding of API scopes" border="false":::
 
@@ -150,115 +164,120 @@ Define a custom scope by exposing an API for the canvas app registration within 
 
 ### Configure authentication in Power Virtual Agents to enable SSO
 
-The Token Exchange URL in the Power Virtual Agents authentication configuration page is used to exchange the OBO token for the requested access token through the bot framework. ower Virtual Agents calls into Azure AD to perform the actual exchange.
+The token exchange URL on the Power Virtual Agents authentication configuration page is used to exchange the On-Behalf-Of (OBO) token for the requested access token.
 
-1. Sign in to Power Virtual Agents.
+1. In Power Virtual Agents, select **Manage** on the side pane, then **Security**.
 
-1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the correct bot.
+    :::image type="content" source="media/sso/pva-security-auth.png" alt-text="Screenshot Power Virtual Agents security and authentication page" border="false":::
 
-1. Select **Manage** on the side pane, then **Security**.
+1. Select **Authentication**.
 
-    :::image type="content" source="media/sso/pva-security-auth.png" alt-text="Screenshot PVA security and authentication page" border="false":::
+    :::image type="content" source="media/sso/pva-auth.png" alt-text="Screenshot Power Virtual Agents authentication settings page" border="false":::
 
-1. Next, select **Authentication**.
+1. Select **Manual (for any channel including Teams)** then turn on **Require users to sign in**.
 
-    :::image type="content" source="media/sso/pva-auth.png" alt-text="Screenshot PVA authentication settings page" border="false":::
+1. Enter the values for the following properties:
 
-1. Select **Manual (for any channel including Teams)**.
+    - **Service provider**: Select **Azure Active Directory V2**.
 
-1. Make sure **Require users to sign in** is checked.
+    - **Client ID**: Enter the application (client) ID that you copied earlier from the Azure portal.
 
-1. Select **Azure Active Directory v2**.
+    - **Client secret**: Enter the client secret you generated earlier from the Azure portal.
 
-1. In the **Token exchange URL** field, enter the full scope URI from the **Expose an API** blade in the Azure portal for the bot’s authentication app registration. The URI will be in the format of `api://1234-4567/scopename` as shown below.
+    - **Scopes**: Enter `profile openid`.
 
-    :::image type="content" source="media/sso/copy-scope.png" alt-text="Screenshot copy scope for use in PVA" border="false":::
-
-1. Update **Client ID** for your PVA bot with the **Application (client) ID** for the canvas app registration. You get the ID from the Overview page for the canvas app registration in the Azure portal as shown below.
-
-    :::image type="content" source="media/sso/copy-clientid.png" alt-text="Screenshot Azure client id page for app registration" border="false":::
-
-1. Next, add the _Client Secret_ to your bot. This is the secret value you created in the Azure portal (and stored in a temporary place) in an earlier step.
-
-1. Add `profile` and `openid` in the **Scopes** field.
-
-1. Select **Save**.
+1. Select **Save** to finish the configuration.
 
 ### Test your bot
 
 1. After saving the changes, you need to publish your bot before you can test it.
 
-1. Run it in the Test bot window. When you interact with the bot, it should ask you to login (as shown below).
+1. When you interact with the bot in the test bot pane, it should ask you to login.
 
-    :::image type="content" source="media/sso/test-bot.png" alt-text="Screenshot testing PVA bot" border="false":::
+    :::image type="content" source="media/sso/test-bot.png" alt-text="Screenshot testing Power Virtual Agents bot" border="false":::
 
 1. Click on the **Login** button, sign in, and copy the code that is presented.
 
     :::image type="content" source="media/sso/validation-code.png" alt-text="Screenshot bot login" border="false":::
 
-1. Paste that code in the bot, and you should be able to communicate with the bot.
+1. Send the code to the bot to complete the sign-in process.
 
     :::image type="content" source="media/sso/paste-code.png" alt-text="Screenshot paste validation code" border="false":::
 
-Next, we will set up the App Registration for the Web page.
-
 ## Create custom canvas app registration
 
-The steps for setting up app registration for custom canvas in the Azure portal are the same as the bot’s app registration that you just completed. The only difference is that instead of using `https://token.botframework.com/.auth/web/redirect` as the redirect URL, provide the canvas app URL. For example, `http://contoso.com/index.html` as shown below. So go ahead and create the app registration using the steps provided earlier.
+<!-- FIXME -->
+The steps for setting up app registration for a custom canvas in the Azure portal are the same as the bot's app registration that you just completed. The only difference is that instead of using `https://token.botframework.com/.auth/web/redirect` as the redirect URL, provide the web page URL. For example, `http://contoso.com/index.html` as shown below. So go ahead and create the app registration using the steps provided earlier.
 
     :::image type="content" source="media/sso/configure-web-setting-for-canvas.png" alt-text="Screenshot of configure webpage" border="false":::
 
-## Configure your custom canvas HTML code to enable SSO
+## Configure SSO in your web page
+<!-- FIXME: broken URL -->
+You can use the code provided in the [Power Virtual Agents' GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/1.single-sign-on/index.html) to create an web page for the redirect URL. Copy the code from the GitHub repo and modify it using the instructions provided below.
 
-In this example, we will use the code provided in the [GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/1.single-sign-on/index.html) to create the a html page that you specified as the redirect URI (above). Copy the code from the GitHub repo and modify it using the instructions provided below.
-
-1. To make changes to the code, you will need **Application (client) ID** and **Directory (tenant) ID**. You get these IDs from the **Overview** page for the canvas app registration in the Azure portal as shown below.
+1. To make changes to the code, you will need the **Application (client) ID** and **Directory (tenant) ID** from your canvas app registration. You can get these IDs from the **Overview** page in Azure portal.
 
     :::image type="content" source="media/sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azure" border="false":::
 
-1. Configure the Microsoft Authentication Library (MSAL) by updating _clientId_ with the **Application (client) ID**  and _Directory ID_ with the **Directory (tenant) ID**.
+1. To configure the Microsoft Authentication Library (MSAL):
+    - Assign `clientId` to your **Application (client) ID**.
+    - Assign `authority` to `https://login.microsoftonline.com/` and add your **Directory (tenant) ID** to the end.
 
-    ```csharp
-    ...     
+    For example:
+    ```csharp    
     var clientApplication;
         (function (){
         var msalConfig = {
-        auth: {
-            clientId: '<Client ID [CanvasClientId]>',
-        authority: 'https://login.microsoftonline.com/<Directory ID>'     
-    },
-    ...
+            auth: {
+                clientId: '692e92c7-d146-4060-76d3-b381798f4d9c',
+                authority: 'https://login.microsoftonline.com/7ef988bf-86f1-51af-01ab-2d7fd011db47'     
+            },
     ```
 
-1. Update **BOT ID** with your bot's ID. You can see your bot's ID by going to the Channels tab for the bot you're using and selecting Mobile app on the Power Virtual Agents portal.
+1. Find your bot's ID in Power Virtual Agents:
+    1. In the side navigation pane, under **Settings**, select **Channels**.
+        <!-- FIXME: mobile app tile is not available/no id shown -->
+    1. Select **Mobile app**.
 
-    :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of copying bot id in PVA" border="false":::
+        <!-- FIXME: screenshot is not up to date -->
+        :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of copying bot id in Power Virtual Agents" border="false":::
+
+    1. Under **Bot ID**, select **Copy** to copy your bot's ID to your clipboard.
+
+1. Set the `BOT_ID` variable to your bot's ID you copied in the previous step. For example:
 
     ```csharp
-    ...
     (async function main() {
 
         // Add your BOT ID below 
-        var BOT_ID = "<BOT ID>";
+        var BOT_ID = "88e0d382-2a92-4e45-b721-91304b5493fe";
         var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
-
-    var userId = clientApplication.account?.accountIdentifier != null ? 
-            ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0, 64) 
-            : (Math.random().toString() + Date.now().toString()).substr(0,64);
-    ...
     ```
 
-1. Replace `Your-customized-prefix-max-20-characters` above with any customized prefix you want to use.
+1. Update the value of `userId` to include a customized prefix. For example:
+
+    ```csharp
+    var userId = clientApplication.account?.accountIdentifier != null ? 
+            ("My-custom-prefix" + clientApplication.account.accountIdentifier).substr(0, 64) 
+            : (Math.random().toString() + Date.now().toString()).substr(0,64);
+    ```
 
 1. Save code changes.
 
-## Test bot using the custom canvas
+## Test bot using your web page
 
-1. Load the html page you just saved in the browser. If your browser blocks popup or you are using incognito mode, you will be prompted to log in, otherwise the log in will complete using a validation code .
+1. Open your web page in your browser.
 
-1. Next, you should be able to log in to the bot by clicking the Login button and using the validation code provided in a separate browser tab.
+   > [!NOTE]
+   > If your browser blocks popups, or you are using incognito mode, you will be prompted to log in, otherwise the log in will complete using a validation code.
+
+1. Select **Login**. A new browser tab will open.
 
     :::image type="content" source="media/sso/chat-canvas-test.png" alt-text="Screenshot of logging in using validation code" border="false":::
+
+1. Switch to the new browser tab and copy the validation code.
+
+1. Switch back to the tab with your bot, and send your bot the validation code.
 
 ## Reference
 
