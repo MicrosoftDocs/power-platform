@@ -57,17 +57,17 @@ To enable SSO, you'll need two separate app registrations:
 
 1. Go to **App registrations**, either by selecting the icon or searching in the top search bar.
 
-    :::image type="content" source="media/sso/start-app-reg.png" alt-text="Screenshot showing new app registration in azure." border="false":::
+    :::image type="content" source="media/configure-web-sso/start-app-reg.png" alt-text="Screenshot showing new app registration in azure." border="false":::
 
 1. Select **New registration** and enter a name for the registration.
 
     It can be helpful to use the name of your bot. For example, if your bot is called "Contoso sales help", you could name the app registration "ContosoSalesReg".
 
-    :::image type="content" source="media/sso/new-app-reg.png" alt-text="Screenshot showing new registration form." border="false":::
+    :::image type="content" source="media/configure-web-sso/new-app-reg.png" alt-text="Screenshot showing new registration form." border="false":::
 
 1. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 
-    :::image type="content" source="media/sso/register-an-app.png" alt-text="Screenshot accounts in organizational directory." border="false":::
+    :::image type="content" source="media/configure-web-sso/register-an-app.png" alt-text="Screenshot accounts in organizational directory." border="false":::
 
 1. Leave the **Redirect URI** section blank for now. You'll enter that information in the next steps.
 
@@ -81,17 +81,17 @@ To enable SSO, you'll need two separate app registrations:
 
 1. In the Azure portal, go to **Authentication** and then select **Add a platform**.
 
-    :::image type="content" source="media/sso/add-platform.png" alt-text="Screenshot showing authentication." border="false":::
+    :::image type="content" source="media/configure-web-sso/add-platform.png" alt-text="Screenshot showing authentication." border="false":::
 
 1. Under **Platform configurations** select **Add a platform**, then select **Web**.
 
-    :::image type="content" source="media/sso/configure-platform.png" alt-text="Screenshot showing add a platform." border="false":::
+    :::image type="content" source="media/configure-web-sso/configure-platform.png" alt-text="Screenshot showing add a platform." border="false":::
 
 1. Under **Redirect URIs**, enter `https://unitedstates.token.botframework.com/.auth/web/redirect`.
 
 1. Under the **Implicit grant and hybrid flows** section, turn on both **ID tokens (used for implicit and hybrid flows)** and **Access tokens (used for implicit flows)**.
 
-    :::image type="content" source="media/sso/redirect-uri.png" alt-text="Screenshot showing implicit grant and hybrid flow." border="false":::
+    :::image type="content" source="media/configure-web-sso/redirect-uri.png" alt-text="Screenshot showing implicit grant and hybrid flow." border="false":::
 
 1. Select **Configure** to confirm your changes.
 
@@ -119,19 +119,19 @@ To enable SSO, you'll need two separate app registrations:
     > [!IMPORTANT]
     > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must grant tenant-wide consent to your app registrations.
 
-    :::image type="content" source="media/sso/api-permission.png" alt-text="Screenshot API permission." border="false":::
+    :::image type="content" source="media/configure-web-sso/api-permission.png" alt-text="Screenshot API permission." border="false":::
 
 1. Select **Add a permission**, then **Microsoft Graph**.
 
-    :::image type="content" source="media/sso/request-api-permission.png" alt-text="Screenshot showing request API permission." border="false":::
+    :::image type="content" source="media/configure-web-sso/request-api-permission.png" alt-text="Screenshot showing request API permission." border="false":::
 
 1. Select **Delegated permissions**. A list of permissions will appear below.
 
-    :::image type="content" source="media/sso/delegated-permission.png" alt-text="Screenshot showing delegated permission." border="false":::
+    :::image type="content" source="media/configure-web-sso/delegated-permission.png" alt-text="Screenshot showing delegated permission." border="false":::
 
 1. Expand **OpenId permissions** and turn on **openid** and **profile**.
 
-    :::image type="content" source="media/sso/select-permission.png" alt-text="Screenshot showing delegated permission selection." border="false":::
+    :::image type="content" source="media/configure-web-sso/select-permission.png" alt-text="Screenshot showing delegated permission selection." border="false":::
 
 1. Select **Add permissions** to save your settings.
 
@@ -141,7 +141,7 @@ To enable SSO, you'll need two separate app registrations:
 
 1. In the Azure portal, go to **Expose an API** and select **Add a scope**.
 
-    :::image type="content" source="media/sso/expose-api.png" alt-text="Screenshot showing API scopes" border="false":::
+    :::image type="content" source="media/configure-web-sso/expose-api.png" alt-text="Screenshot showing API scopes" border="false":::
 
 1. Set the following properties:
 
@@ -156,7 +156,7 @@ To enable SSO, you'll need two separate app registrations:
    > [!NOTE]
    > The scope name `Test.Read` is a placeholder value and should be replaced with a name that makes sense in your environment.
 
-    :::image type="content" source="media/sso/add-scope.png" alt-text="Screenshot adding of API scopes" border="false":::
+    :::image type="content" source="media/configure-web-sso/add-scope.png" alt-text="Screenshot adding of API scopes" border="false":::
 
 1. Select **Add** scope.
 
@@ -166,11 +166,11 @@ The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the 
 
 1. In Power Virtual Agents side navigation pane, under **Settings**, select **Security**. Then select **Authentication**.
 
-    :::image type="content" source="media/sso/pva-security-auth.png" alt-text="Screenshot Power Virtual Agents security and authentication page" border="false":::
+    :::image type="content" source="media/configure-web-sso/pva-security-auth.png" alt-text="Screenshot Power Virtual Agents security and authentication page" border="false":::
 
 1. Select **Manual (for any channel including Teams)** then turn on **Require users to sign in**.
 
-    :::image type="content" source="media/sso/pva-auth.png" alt-text="Screenshot Power Virtual Agents authentication settings page" border="false":::
+    :::image type="content" source="media/configure-web-sso/pva-auth.png" alt-text="Screenshot Power Virtual Agents authentication settings page" border="false":::
 
 1. Enter the values for the following properties:
 
@@ -192,17 +192,17 @@ The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the 
 
 1. When the bot responds, select **Login**.
 
-    :::image type="content" source="media/sso/test-bot.png" alt-text="Screenshot testing Power Virtual Agents bot" border="false":::
+    :::image type="content" source="media/configure-web-sso/test-bot.png" alt-text="Screenshot testing Power Virtual Agents bot" border="false":::
 
 1. A new browser tab will open asking you to sign in. Sign in, then copy the code that is presented.
 
-    :::image type="content" source="media/sso/validation-code.png" alt-text="Screenshot bot login" border="false":::
+    :::image type="content" source="media/configure-web-sso/validation-code.png" alt-text="Screenshot bot login" border="false":::
 
     <!-- FIXME: unable to validate past here, bot continuously asks user to log in -->
 
 1. Send the code to the bot to complete the sign-in process.
 
-    :::image type="content" source="media/sso/paste-code.png" alt-text="Screenshot paste validation code" border="false":::
+    :::image type="content" source="media/configure-web-sso/paste-code.png" alt-text="Screenshot paste validation code" border="false":::
 
 ## Create a canvas app registration
 
@@ -214,7 +214,7 @@ The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the 
 
 1. Under **Redirect URIs**, enter the URL for your web page. For example, `http://contoso.com/index.html`.
 
-    :::image type="content" source="media/sso/configure-web-setting-for-canvas.png" alt-text="Screenshot of configure webpage" border="false":::
+    :::image type="content" source="media/configure-web-sso/configure-web-setting-for-canvas.png" alt-text="Screenshot of configure webpage" border="false":::
 
 1. Under the **Implicit grant and hybrid flows** section, turn on both **ID tokens (used for implicit and hybrid flows)** and **Access tokens (used for implicit flows)**.
 
@@ -226,7 +226,7 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
 
 1. To make changes to the code, you will need the **Application (client) ID** and **Directory (tenant) ID** from your canvas app registration. You can get these IDs from the **Overview** page in Azure portal.
 
-    :::image type="content" source="media/sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azure" border="false":::
+    :::image type="content" source="media/configure-web-sso/canvas-client-tenant-id.png" alt-text="Screenshot app registration overview page in azure" border="false":::
 
 1. To configure the Microsoft Authentication Library (MSAL):
     - Assign `clientId` to your **Application (client) ID**.
@@ -249,7 +249,7 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
     1. Select **Mobile app**.
 
         <!-- FIXME: screenshot is not up to date -->
-        :::image type="content" source="media/sso/pva-bot-id.png" alt-text="Screenshot of copying bot id in Power Virtual Agents" border="false":::
+        :::image type="content" source="media/configure-web-sso/pva-bot-id.png" alt-text="Screenshot of copying bot id in Power Virtual Agents" border="false":::
 
     1. Under **Bot ID**, select **Copy** to copy your bot's ID to your clipboard.
 
@@ -282,7 +282,7 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
 
 1. Select **Login**. A new browser tab will open.
 
-    :::image type="content" source="media/sso/chat-canvas-test.png" alt-text="Screenshot of logging in using validation code" border="false":::
+    :::image type="content" source="media/configure-web-sso/chat-canvas-test.png" alt-text="Screenshot of logging in using validation code" border="false":::
 
 1. Switch to the new browser tab and copy the validation code.
 
