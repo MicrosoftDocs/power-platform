@@ -143,8 +143,6 @@
       - name: Set up ALM Accelerator for Power Platform components
         href: coe/setup-almacceleratorpowerplatform-cli.md
         items:
-        - name: Set up ALM Accelerator for Power Platform
-          href: coe/cli/alm/setup-almacceleratorforpowerplatform-preview.md
         - name: Set up ALM Accelerator for Power Platform using CoE CLI
           href: coe/cli/alm/overview.md
         - name: Set up ALM Accelerator for Power Platform components manually
