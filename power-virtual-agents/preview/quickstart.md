@@ -65,6 +65,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
         The speech mode allows you to add a specific message for voice-enabled channels and enable the use of [SSML tags](authoring-send-message.md#use-ssml-to-customize-speech-responses).
 
+
         :::image type="content" source="media/quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
 
     1. Add the annotated message to speak:

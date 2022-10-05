@@ -1,12 +1,12 @@
 ---
+
 title: "Troubleshoot error codes (preview)"
 description: "Troubleshoot error responses from your bot in Power Virtual Agents preview."
 author: v-alarioza
 ms.author: v-alarioza
 ms.topic: troubleshooting
 ms.date: 10/10/2022
-
-ms.reviewer: clmori
+ms.reviewer: mvakoc
 manager: shellyha
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
@@ -30,6 +30,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 > The term _dialog_ is used in some error messages when referring to a _topic_.
 
 <!-- table best viewed and edited without word wrap -->
+
 | Error code                                                        | Description                                                         |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
 | [ContentError](#contenterror)                                     | There's an error in the topic content.                              |
