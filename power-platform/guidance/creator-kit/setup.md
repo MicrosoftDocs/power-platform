@@ -51,6 +51,17 @@ Solution-specific prerequisites:
 
 ## Option 2: Install from AppSource
 
+This will install the following managed solutions:
+- CreatorKitCore
+- CreatorKitReference(Canvas)
+- CreatorKitReference(MDA)
+
+The following configurations will be modified in the Environment:
+- *Enable code components for Canvas* is set to **true**
+
+> [!IMPORTANT]
+> Using this AppSource install option will modify the selected Environment's settings. Ensure this automated modification is acceptable for your organization before continuing with this install option.
+
 1. Go to the [Creator Kit page on AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview) page. 
 
    Make sure you're signed in to the account that has System Administrator permissions to the Environment you want to install the Creator Kit in.
