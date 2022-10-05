@@ -28,7 +28,10 @@ contributors:
 - The System Customizer security role is needed to use the Creator Kit components.
 - A Power Apps for Microsoft 365 license.
 
-## Step 1 - Install the Creator Kit solution
+
+## Option 1: Download and manually install the managed solutions
+
+### Step 1 - Install the Creator Kit solution
 
 1. [Download the `CreatorKitCore` solution](https://aka.ms/creatorkitdownload).
 2. Ensure the [Power Apps code components for Canvas apps feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) is enabled in the [Environment settings](/power-platform/admin/edit-properties-environment).
@@ -36,7 +39,7 @@ contributors:
 4. Import the solution. More information: [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions)
 
 
-## Step 2 - Install the Reference solutions (optional)
+### Step 2 - Install the Reference solutions (optional)
 The reference solutions can optionally be installed after the `CreatorKitCore` solution is installed.
 
 Solution-specific prerequisites:
@@ -45,6 +48,21 @@ Solution-specific prerequisites:
 |-|-|
 | [`CreatorKitReference(MDA)`](https://aka.ms/creatorkitreferencemda) | <li>Reference App is a Model Driven app that requires a premium license to play</li><li>Reference App uses the Dataverse connector; Environment's DLP Policies must allow the connector.</li> |
 | [`CreatorKitReference(Canvas)`](https://aka.ms/creatorkitreferencecanvas) | <li>Before installation, enable the Environment setting 'Power Apps code components for canvas apps'</li> |
+
+## Option 2: Install from AppSource
+
+1. Go to the [Creator Kit page on AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview) page. 
+
+   Make sure you're signed in to the account that has System Administrator permissions to the Environment you want to install the Creator Kit in.
+
+1. Select the button **Get it now**. 
+
+   If prompted, confirm your details and select the **Get it now** button again to continue. Microsoft will not contact you regarding the Creator Kit by submitting this form.
+
+   The App Source install experience will launch the Power Platform admin center and ask you to identify the target Environment.
+
+1.  Choose the target Environment, review and agree to the two agreement checkboxes, then select the **Install** button to continue.
+
 
 > [!div class="nextstepaction"]
 > [Next step: Learn how to use the kit](creator-kit-explained.md)
