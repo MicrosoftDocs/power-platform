@@ -290,4 +290,4 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
 
 ## Reference
 
-- [Azure App Registration](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+- [Azure App Registration](/azure/active-directory/develop/quickstart-register-app)
