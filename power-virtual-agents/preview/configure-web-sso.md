@@ -45,15 +45,13 @@ The following table details the channels that currently support SSO in Power Vir
 
 To enable SSO, you'll need two separate app registrations:
 
-- One for your bot to enable user authentication with Azure AD.
-- One for your custom website to enable SSO.
+- An _authentication app registration_ which enables user authentication in your bot with Azure AD.
+- A _canvas app registration_ which enables SSO for your custom web page.
 
 > [!IMPORTANT]
 > It's not recommended to reuse the same app registration for both your bot and your custom website for security reasons.
 
-### Create an app registration
-
-Use Azure Active Directory to create an app registration for your Power Virtual Agents bot.
+### Create an authentication app registration
 
 1. Sign in to the [Azure portal](https://portal.azure.com), using an admin account on the same tenant as your bot.
 
@@ -114,7 +112,7 @@ Use Azure Active Directory to create an app registration for your Power Virtual 
 > [!IMPORTANT]
 > If you navigate away from the page, the secret's Value is obfuscated, and you'll need to generate a new client secret.
 
-### API Permissions
+### Configure API Permissions
 
 1. Go to **API Permissions**. Select **Grant admin consent for _your tenant name_** and then select **Yes**.
 
@@ -139,7 +137,7 @@ Use Azure Active Directory to create an app registration for your Power Virtual 
 
 ### Define a custom scope for your bot
 
-Define a custom scope by exposing an API for the canvas app registration within the authentication app registration. [Scopes](/azure/active-directory/develop/developer-glossary#scopes) allow you to determine user and admin roles and access rights.
+[Scopes](/azure/active-directory/develop/developer-glossary#scopes) allow you to determine user and admin roles and access rights. You'll create a custom scope for your canvas app registration that you'll create in a later step.
 
 1. In the Azure portal, go to **Expose an API** and select **Add a scope**.
 
@@ -162,19 +160,17 @@ Define a custom scope by exposing an API for the canvas app registration within 
 
 1. Select **Add** scope.
 
-### Configure authentication in Power Virtual Agents to enable SSO
+### Configure authentication in Power Virtual Agents
 
-The token exchange URL on the Power Virtual Agents authentication configuration page is used to exchange the On-Behalf-Of (OBO) token for the requested access token.
+The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the requested access token.
 
-1. In Power Virtual Agents, select **Manage** on the side pane, then **Security**.
+1. In Power Virtual Agents side navigation pane, under **Settings**, select **Security**. Then select **Authentication**.
 
     :::image type="content" source="media/sso/pva-security-auth.png" alt-text="Screenshot Power Virtual Agents security and authentication page" border="false":::
 
-1. Select **Authentication**.
+1. Select **Manual (for any channel including Teams)** then turn on **Require users to sign in**.
 
     :::image type="content" source="media/sso/pva-auth.png" alt-text="Screenshot Power Virtual Agents authentication settings page" border="false":::
-
-1. Select **Manual (for any channel including Teams)** then turn on **Require users to sign in**.
 
 1. Enter the values for the following properties:
 
@@ -188,28 +184,41 @@ The token exchange URL on the Power Virtual Agents authentication configuration 
 
 1. Select **Save** to finish the configuration.
 
-### Test your bot
+### Test your bot using the test bone pane
 
-1. After saving the changes, you need to publish your bot before you can test it.
+1. Publish your bot.
 
-1. When you interact with the bot in the test bot pane, it should ask you to login.
+1. In the test bot pane send a message to your bot.
+
+1. When the bot responds, select **Login**.
 
     :::image type="content" source="media/sso/test-bot.png" alt-text="Screenshot testing Power Virtual Agents bot" border="false":::
 
-1. Click on the **Login** button, sign in, and copy the code that is presented.
+1. A new browser tab will open asking you to sign in. Sign in, then copy the code that is presented.
 
     :::image type="content" source="media/sso/validation-code.png" alt-text="Screenshot bot login" border="false":::
+
+    <!-- FIXME: unable to validate past here, bot continuously asks user to log in -->
 
 1. Send the code to the bot to complete the sign-in process.
 
     :::image type="content" source="media/sso/paste-code.png" alt-text="Screenshot paste validation code" border="false":::
 
-## Create custom canvas app registration
+## Create a canvas app registration
 
-<!-- FIXME -->
-The steps for setting up app registration for a custom canvas in the Azure portal are the same as the bot's app registration that you just completed. The only difference is that instead of using `https://token.botframework.com/.auth/web/redirect` as the redirect URL, provide the web page URL. For example, `http://contoso.com/index.html` as shown below. So go ahead and create the app registration using the steps provided earlier.
+1. Create a second app registration to serve as your canvas app registration. You can refer to the earlier steps on [how to create an authentication app registration](#create-an-authentication-app-registration).
+
+1. Once you've created your canvas app registration, go to **Authentication** and then select **Add a platform**.
+
+1. Under **Platform configurations** select **Add a platform**, then select **Web**.
+
+1. Under **Redirect URIs**, enter the URL for your web page. For example, `http://contoso.com/index.html`.
 
     :::image type="content" source="media/sso/configure-web-setting-for-canvas.png" alt-text="Screenshot of configure webpage" border="false":::
+
+1. Under the **Implicit grant and hybrid flows** section, turn on both **ID tokens (used for implicit and hybrid flows)** and **Access tokens (used for implicit flows)**.
+
+1. Select **Configure** to confirm your changes.
 
 ## Configure SSO in your web page
 <!-- FIXME: broken URL -->
