@@ -111,6 +111,18 @@ $timeZone = 2
 1. **$siteTitle** - replace with your chosen Power Platform community hub title.
 1. **$timeZone** - a number representing the time zone for your organization, select from the list of [available time zones](/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones).
 
+Open **Set-PowerPlatformHubAsDLPErrorSettings.ps1** in an ISE of your choice and update the following variables:
+
+```powershell
+$newSiteURL = 'https://contoso.sharepoint.com/sites/powerplatformhub'
+$supportEmail = 'support@contoso.com'
+$tenantId = '00000000-0000-0000-0000-000000000000'
+```
+
+1. **$newSiteURL** - the URL of the SharePoint site.
+2. **$supportEmail** - the email address of the support department.
+3. **$tenantId** - the GUID of your tenant. Learn how to find your tenant idea [here](/onedrive/find-your-office-365-tenant-id)
+
 ### Run the PowerShell scripts
 
 1. Select **Start** > type **PowerShell** > Run as administrator
