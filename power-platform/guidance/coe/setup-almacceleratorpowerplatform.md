@@ -80,6 +80,12 @@ For the ALM Accelerator for Power Platform canvas app to work, the following con
 - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
 - ALM Accelerator Custom DevOps (this connector will be created as part of the [accelerator solution import](#importing-the-solution-and-configuring-the-app))
 
+### Creator Kit
+
+The ALM Accelerator includes features that required the installation of the **Creator Kit** in the environment where you install ALM Accelerator for Power Platform.
+
+To install the **Creator Kit** follow steps described here : [Install Creator Kit](https://learn.microsoft.com/en-us/power-platform/guidance/creator-kit/setup)
+
 ## Foundational setup
 
 The following steps guide you through setting up the foundations of the ALM accelerator for Microsoft Power Platform. These steps are general to the functionality of the ALM accelerator, and aren't project-specific or solution-specific.

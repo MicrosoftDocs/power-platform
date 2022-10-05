@@ -99,8 +99,8 @@ To show an image for entities that don't have an **EntityImage** by default, you
 
 Now, when you download and open a document based on this template, it will contain the image you added.
 
-  > [!NOTE]
-  > Similarly, if you add an image to an entity form, follow this process to upload the image to the Word template.
+  >[!NOTE]
+  >Similarly, if you add an image to an entity form, follow this process to upload the image to the Word template.
 
 
 ### See also

@@ -1,5 +1,5 @@
 ---
-title: "Create an internal Microsoft Power Platform hub | MicrosoftDocs"
+title: "Create an internal wiki and community | MicrosoftDocs"
 description: "At the heart of growth is a community, a place for people to collaborate, share ideas and discover new ways to apply technology to achieve more."
 author: manuelap-msft
 manager: devkeydet
@@ -17,15 +17,15 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Create an internal Microsoft Power Platform hub
+# Create an internal wiki and community
 
-At the heart of growth is a community, a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. A community is a safe place to ask questions to share tacit knowledge and expand skill sets. Organizations that have succeeded at creating a growing community of makers provide tools such as Yammer or Microsoft Teams groups, regular events and speaking opportunities, and foster an environment of ongoing learning.
+At the heart of growth is a community, a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. A community is a safe place to ask questions to share tacit knowledge and expand skill sets. Organizations that have succeeded at creating a growing community of makers provide tools such as Yammer or Microsoft Teams groups, regular events and speaking opportunities, and foster an environment of ongoing learning. 
 
 They make sure that every person in the organization can come together at regular intervals to socialize, share their knowledge, and explore new possibilities. Leaders who want to create a digital culture will put a framework in place for the community inside their organization to break down geographic and organizational silos.
 
-## Create a Power Platform Hub
+## Create an internal wiki
 
-Set up your own SharePoint Hub or Teams site to share success stories, upcoming events, rules of engagement and guidelines with your maker community - or get started with the [Power Platform Hub template](#get-started-with-the-power-platform-hub-template). This site should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
+Set up a SharePoint Hub or Teams site to share rules of engagement and processes with your maker community. This should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
 
 Here are a few tips on what the wiki should include:
 
@@ -33,16 +33,11 @@ Here are a few tips on what the wiki should include:
 
 - **Community**: Share how to engage with the internal community, how to become a champion, how to find a mentor, and what the benefits of the community are.
 
-- **[Environment strategy](environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of an environments licensing, security, and connectors.
+- **[Environment strategy](environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of environments with regard to licensing, security for environments, and connectors.
 
-- **[Data loss prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project.
+- **[Data loss prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request additional connectors or a new environment for a specific project.
 
-- **Responsibilities of a maker**: Share what a maker is responsible for—for example:
-
-1. Keeping the tenant tidy by deleting unused resources
-1. Ensuring apps are only shared with required end users
-1. Supporting their apps in the default environment, or engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support.
-1. Ensure makers are educated about the processes you have in place for business-important or mission-critical apps, such as engaging formal support.
+- **Responsibilities of a maker**: Share what a maker is responsible for—for example, keeping the tenant tidy by deleting unused resources, ensuring apps are only shared with required end users, supporting their apps in the default environment, or engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support. Ensure makers are educated about the processes you have in place for business-important or mission-critical apps, such as engaging formal support.
 
 - **Support process**: Share how makers and solutions can be supported.
 
@@ -54,7 +49,7 @@ Here are a few tips on what the wiki should include:
 
 ## Get started with the Power Platform communication site template
 
-The Power Platform communication site template is a SharePoint communication site designed to provide you with a starting point of content and page templates as you're setting up your internal Power Platform wiki and hub site. This communication site is designed to be the place where your Power Platform community can find the news and resources they need, including digital governance and compliance guardrails, upcoming events, success stories and more.
+The Power Platform communication site template is a SharePoint communication site designed to provide you with a starting point of content and page templates as you're setting up your internal Power Platform wiki and community site. This communication site is designed to be the place where your Power Platform community can find the news and resources they need, including digital governance and compliance guardrails, upcoming events, success stories and more.
 
 ### Deploy the Power Platform communication site template
 

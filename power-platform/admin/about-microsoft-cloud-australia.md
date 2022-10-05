@@ -2,9 +2,10 @@
 title: "About Microsoft Cloud Australia  | MicrosoftDocs"
 description: About Microsoft Cloud Australia
 author: jimholtz
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/20/2022
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -97,6 +98,9 @@ Services deployed in the Australia East Region will replicate data to the Austra
   
 ### What rules govern New Zealand or Oceania customers who want to license affiliates located in Australia?  
  A New Zealand and Oceania customer may not place orders under its existing agreement for any affiliate located in Australia, nor grant any affiliate located in Australia administrative rights to manage subscriptions, if the customer elects to access and use services delivered from datacenters located in Australia. An affiliate located in Australia that wants to access and use Online Services delivered from our datacenters located in Australia must enter into its own subscription under its separate [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] Agreement.  
+  
+### Will Microsoft Dynamics Marketing, Social Engagement, and Parature be available in the Australia datacenters?  
+ These services will be available for purchase in the local market but will be delivered outside of the Australia Datacenters at this time. Note: Power Platform and Dynamics 365 apps leverage [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)] and Multi-Factor Authentication, which don’t offer a region choice to customers.  
   
 ### Will Power Platform and Dynamics 365 apps be available on Azure Infrastructure as a Service (IaaS) in Australia?  
  At this time, Power Platform and Dynamics 365 apps are only available for Dev/Test scenarios and isn’t supported for production use cases. Developers can leverage their MSDN subscription and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] credits for dev/test scenarios. Note: we recently announced intent to support Power Platform and Dynamics 365 apps on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] IaaS but we’re dependent on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Premium Storage availability in each geography. Azure’s Limited Public Preview will only be available in the U.S. and part of Europe.  
