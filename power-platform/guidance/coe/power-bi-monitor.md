@@ -198,9 +198,6 @@ Filters on this page can help you narrow down this view by environment and by ma
 
 ## Desktop flows
 
->[!TIP]
->Are you looking for more insights into desktop flows and near real-time data? The [Automation Kit](https://aka.ms/automationcoe) is set of tools that accelerates the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate money saved and return on investment (ROI).
-
 The **desktop flows** page provides an overview of UI-based robotic process automation (RPA) flows in your environment:
 
 - Total number of desktop flows
