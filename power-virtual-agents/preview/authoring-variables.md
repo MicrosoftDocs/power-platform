@@ -21,7 +21,7 @@ Save customers' responses in a bot conversation to variables and reuse them late
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
-Variables can also be passed into, and returned from, [other topics](#receive-values-from-other-topics) and Power Automate flows.  
+Variables can also be passed into, and returned from, [other topics](#receive-values-from-other-topics) and [Power Automate flows](advanced-flow.md).  
 
 ## Variable scopes
 
@@ -91,7 +91,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 
 ## Create a variable
 
-Variables can be created in any node that prompts you to select a variable as an output, such as a [**Question**](authoring-ask-a-question.md) node, a Power Automate flow, or [another topic](/authoring-variables.md#Receive-values-from-other-topics).
+Variables can be created in any node that prompts you to select a variable as an output, such as a [Question node](authoring-ask-a-question.md), a [Power Automate flow](advanced-flow.md), or [another topic](/authoring-variables.md#Receive-values-from-other-topics).
 
 These nodes will automatically create new variables, with the appropriate type, for each of their output variable slots.
 

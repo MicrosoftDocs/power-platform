@@ -292,6 +292,18 @@
     href: preview/quickstart.md
   - name: Limitations
     href: preview/limitations.md
+  - name: Administer and manage
+    items:
+      - name: Assign licenses
+        href: preview/requirements-licensing.md
+      - name: Power Virtual Agents for US Government customers
+        href: preview/requirements-licensing-gcc.md
+      - name: Working with environments
+        href: preview/environments-first-run-experience.md
+      - name: Share bots with users in your organization
+        href: preview/admin-share-bots.md
+      - name: Export and import bots using solutions
+        href: preview/authoring-export-import-bots.md
   - name: Author and edit
     items:
       - name: Clone an existing bot
@@ -301,7 +313,7 @@
       - name: Create and edit topics
         href: preview/authoring-create-edit-topics.md
       - name: Send a message
-        href: preview/send-a-message.md
+        href: preview/authoring-send-message.md
       - name: Ask a question
         href: preview/authoring-ask-a-question.md
       - name: Move between topics
@@ -326,12 +338,18 @@
         href: preview/authoring-variables-bot.md
       - name: Use expressions using Power Fx
         href: preview/advanced-power-fx.md
+      - name: Add user authentication
+        href: preview/advanced-end-user-authentication.md
+      - name: Use Power Automate flows
+        href: preview/advanced-flow.md
   - name: Publish and integrate
     items:
       - name: Key concepts - Publish your bot
         href: preview/publication-fundamentals-publish-channels.md
       - name: Add bot to your live website
         href: preview/publication-connect-bot-to-web-channels.md
+      - name: Add bot to Microsoft Teams
+        href: preview/publication-add-bot-to-microsoft-teams.md
   - name: Monitor and diagnose
     items:
       - name: Key concepts - Analytics
@@ -350,6 +368,14 @@
         href: preview/analytics-billed-sessions.md
   - name: Configure and customize
     items:
+      - name: Configure user authentication
+        href: preview/configuration-end-user-authentication.md
+      - name: Configure web and Direct Line channel security
+        href: preview/configure-web-security.md
+      - name: Configure single sign-on for Web
+        href: preview/configure-sso.md
+      - name: Configure single sign-on for Teams
+        href: preview/configure-sso-teams.md
       - name: Customize the look and feel of the bot
         href: preview/customize-default-canvas.md
       - name: Configure SSO for your custom website

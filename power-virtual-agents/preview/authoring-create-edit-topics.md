@@ -113,7 +113,7 @@ When you add a node after the **Trigger Phrases** node or between other existing
 | [**Add a condition**](authoring-using-conditions.md)              | Branch your conversation based on a condition.        |
 | [**Set a variable value**](authoring-variables.md#set-a-variable) | Set a value for a new or existing variable.           |
 | [**Topic management**](authoring-moving-between-topics.md)        | Redirect, transfer, or end the topic or conversation. |
-| [**Call an action**](//advanced-flow.md)                           | Call a Power Automate Flow.                           |
+| [**Call an action**](advanced-flow.md)                            | Call a Power Automate Flow.                           |
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
 
@@ -122,6 +122,34 @@ When you add a node after the **Trigger Phrases** node or between other existing
 Select the the node's _node menu_ (**&vellip;**) then **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
+
+## Controls for editing nodes on the canvas
+
+You can use controls on the toolbar to cut, copy, paste, and delete nodes on the canvas.
+
+:::image type="content" source="media/authoring-create-edit-topics/toolbar-edit-controls.png" alt-text="Screenshot of the toolbar controls for editing nodes on the canvas.":::
+
+The toolbar also has a control for undo.
+
+:::image type="content" source="media/authoring-create-edit-topics/toolbar-undo-redo.png" alt-text="Screenshot of the toolbar controls for undo and redo.":::
+
+To access **Undo to last save** and **Redo**, open the undo menu.
+
+:::image type="content" source="media/authoring-create-edit-topics/undo-menu.png" alt-text="Screenshot of the undo menu.":::
+
+### To cut, copy, or delete nodes
+
+1. Select one or more adjacent nodes.
+
+1. Select **Cut**, **Copy**, or **Delete** on the canvas toolbar.
+
+### To paste nodes
+
+Once you have used **Cut** or **Copy** to add one or more nodes to the clipboard, there are a couple of ways to paste them to the canvas:
+
+- If you select a node and then select **Paste**, the nodes from the clipboard are added after the selected node.
+
+- If you select the _add node_ (**+**) menu, then **Paste**, the nodes from the clipboard are added at that point.
 
 <!--
 ## Edit topics with the code editor
