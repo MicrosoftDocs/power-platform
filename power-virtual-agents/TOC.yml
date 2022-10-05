@@ -352,3 +352,6 @@
     items:
       - name: Customize the look and feel of the bot
         href: preview/customize-default-canvas.md
+      - name: Configure SSO for your custom website
+        href: preview/configure-web-sso.md
+        

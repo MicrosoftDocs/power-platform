@@ -13,7 +13,7 @@ ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 
-# Configure single sign-on for custom website in Power Virtual Agents (preview)
+# Configure single sign-on for your custom website (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
