@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: jimholtz
 contributors:
   - mayadumesh
-  - NHelgren
+  - sabinn-msft
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin

@@ -74,7 +74,7 @@ If you are not sure if you're experiencing an issue with the Creator Kit or the 
 
 - Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [https://aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
 
-- Get started with the Microsoft Power Platform learning path, a free online and interactive training platform [https://aka.ms/PowerUp](/training/paths/create-powerapps/?WT.mc_id=twitter-social-donasa).
+- Get started with the Microsoft Power Platform learning path, a free online and interactive training platform [https://aka.ms/PowerUp](/learn/paths/create-powerapps/?WT.mc_id=twitter-social-donasa).
 
 > [!div class="nextstepaction"]
 > [Next step: Install the kit](setup.md)

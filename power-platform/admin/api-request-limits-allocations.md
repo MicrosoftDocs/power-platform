@@ -4,7 +4,7 @@ description: Requests limits and allocations
 author: MicroSri
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/20/2022
+ms.date: 06/28/2022
 ms.subservice: admin
 ms.author: sriknair 
 ms.reviewer: jimholtz
@@ -71,13 +71,13 @@ A separate limit is established for certain activities(for example: A background
 - [Application users](create-users.md#create-an-application-user)
 - [Non-interactive users](create-users.md#create-a-non-interactive-user-account)
 - [Administrative users](create-users.md#create-an-administrative-user-account)
-- [SYSTEM user](/power-apps/developer/data-platform/webapi/reference/systemuser#operations)
+- [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
 
 Additionally, there are special free ($0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#user-and-portal-licensing) for more details.
 
 For these non-licensed identities, every tenant will get an initial base request limit per tenant determined by what paid licenses are on the tenant, plus accrued limits determined by the quantity of paid Dynamics 365 Enterprise and Professional licenses.<sup>1</sup> This pool can only be used by these non-licensed users and not by users with assigned interactive user licenses.
 
-| Products                                                        | Pooled non-licensed tenant-level requests per 24 hours                                  |
+| Products                                                    | Pooled non-licensed tenant-level requests per 24 hours                              |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | Dynamics 365 Enterprise & Professional applications<sup>1</sup> | 500,000 base requests + 5,000 requests accrued per USL<sup>1</sup> up to 10,000,000 max<sup>2</sup> |
 | Power Apps (all licenses)                                       | 25,000 base requests with no per-license accrual for the tenant                         |
@@ -104,10 +104,6 @@ Microsoft reserves the right to enforce  limits for overages. If a customer enco
 ## Power Platform Request capacity add-on
 
 Customers that observe in reporting that they're frequently using more requests than limits can avoid high usage enforcement by purchasing the Power Platform Request capacity add-on. This add-on allows customers to increase the limits for specific high usage licensed users or high usage non-licensed users. Each capacity add-on raises the request limit by another 50,000 per 24 hours. Multiple capacity add-ons can be assigned to increase limits.
-
-You cannot assign Power Platform requests capacity add-on packs to users or flows during the [transition period](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/types#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. 
-
-If your Power Automate flows are being throttled, try [Pay-as-you-go](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/types#pay-as-you-go) to ensure none of the flows in the environment are throttled. If you cannot use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
 > [!NOTE]
 > Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users). The functionality for assignment of capacity add-ons will be aligned to the timing of high usage enforcement.

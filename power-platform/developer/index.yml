@@ -35,9 +35,9 @@ landingContent:
       - linkListType: learn
         links:
           - text: Introduction to developing with Power Platform
-            url: /training/paths/intro-developing-power-platform/
+            url: /learn/paths/intro-developing-power-platform/
           - text: Transform your business applications with fusion development
-            url: /training/paths/transform-business-applications-with-fusion-development/
+            url: /learn/paths/transform-business-applications-with-fusion-development/
 
   # Card
   - title: Tools

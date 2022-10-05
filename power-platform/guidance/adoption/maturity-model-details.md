@@ -146,5 +146,5 @@ In the articles in this series, learn about the Power Platform adoption maturity
 Other helpful resources include:
 
 - [Administering a Power Apps enterprise deployment.](../../admin/admin-powerapps-enterprise-deployment.md)
-- Upskilling? See [Power Platform in a Day workshops](https://powerplatform.microsoft.com/instructor-led-training/) and [Microsoft Learn training for Power Platform](/training/powerplatform/).
+- Upskilling? See [Power Platform in a Day workshops](https://powerplatform.microsoft.com/instructor-led-training/) and [Power Platform on Microsoft Learn](/learn/powerplatform/).
 - Experienced Power Platform partners are available to help your organization succeed with adoption of Power Platform. To engage a Power Platform partner, visit the [Power Apps partner portal](https://powerapps.microsoft.com/partners/).

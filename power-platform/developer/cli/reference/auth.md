@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 9/15/2022
+ms.date: 8/11/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -54,14 +54,6 @@ Create and store authentication profiles on this computer
 
 Optional: The application id to authenticate with
 
-#### `--certificateDiskPath` `-cdp`
-
-Optional: The certificate disk path to authenticate with
-
-#### `--certificatePassword` `-cp`
-
-Optional: The certificate password to authenticate with
-
 #### `--clientSecret` `-cs`
 
 Optional: The client secret to authenticate with
@@ -103,7 +95,7 @@ Optional: The password to authenticate with
 
 #### `--tenant` `-t`
 
-Tenant id if using application id/client secret or application id/client certificate.
+Tenant id if using application id & secret.
 
 #### `--url` `-u`
 

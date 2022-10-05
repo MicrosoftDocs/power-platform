@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 9/15/2022
+ms.date: 8/11/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac paportal
 
-Commands for working with Power Apps portal website
+Commands for working with PowerApps portal website
 
 [!INCLUDE [paportal-intro](includes/paportal-intro.md)]
 

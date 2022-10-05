@@ -86,7 +86,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   
 - The following software features are required to run the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets described in this topic.  
   
-  -   Microsoft Online Services Sign-In Assistant for IT Professionals Beta  
+  -   [Microsoft Online Services Sign-In Assistant for IT Professionals Beta](https://www.microsoft.com/download/details.aspx?id=39267)  
   
   -   [MSOnlineExt](https://www.powershellgallery.com/packages/MSOnlineExt/)  
      -   To install the MSOnlineExt module, enter the following command from an administrator PowerShell session.
@@ -124,7 +124,7 @@ Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short]
   
 3. Set the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] host name.  
   
-    The value that you set for the variable *HostName* must be the complete host name of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is `<https://SharePoint.constoso.com/sites/salesteam>`, so the hostname is *SharePoint.contoso.com*.  
+    The value that you set for the variable *HostName* must be the complete host name of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is *<https://SharePoint.constoso.com/sites/salesteam>*, so the hostname is *SharePoint.contoso.com*.  
   
    ```powershell
    $HostName = "SharePoint.contoso.com"  

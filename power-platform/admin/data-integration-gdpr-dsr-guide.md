@@ -1,13 +1,13 @@
 ---
 title: Data Integration for Admins customer data
 description: Identifying, exporting and deleting personal data in data integration for Admins for Microsoft Dataverse
-author: NHelgren
+author: sabinn-msft
+
 ms.topic: how-to
 ms.component: cds
 ms.date: 05/20/2018
 ms.subservice: admin
-ms.author: nhelgren
-ms.reviewer: jimholtz
+ms.author: sabinn
 search.audienceType: 
   - admin
 search.app:

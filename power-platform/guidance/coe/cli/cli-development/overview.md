@@ -76,7 +76,7 @@ Documentation is critical for users of the CoE understanding the commands. The [
 If you're new to TypeScript, the following links may help.
 
 - [Typescript docs](https://www.typescriptlang.org/docs/)
-- [Getting started with TypeScript - learning module](/training/modules/typescript-get-started/)
+- [Getting started with TypeScript - learning module](/learn/modules/typescript-get-started/)
 
 If you're new to unit testing with Jest, start with this article.
 

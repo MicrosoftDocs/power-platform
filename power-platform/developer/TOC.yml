@@ -24,8 +24,6 @@
             href: cli\reference\auth.md
           - name: pac canvas
             href: cli\reference\canvas.md
-          - name: pac connector
-            href: cli\reference\connector.md
           - name: pac data
             href: cli\reference\data.md
           - name: pac help
