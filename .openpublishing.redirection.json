@@ -1,6 +1,46 @@
 {
   "redirections": [
-   {
+    {
+     "source_path": "power-platform/guidance/automation-coe/automation-admin-gov.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/automation-admin-gov",
+      "redirect_document_id": "false"
+    },
+    {
+     "source_path": "power-platform/guidance/automation-coe/automation-maturity-model-details.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/automation-maturity-model-details",
+      "redirect_document_id": "false"
+    },
+    {
+     "source_path": "power-platform/guidance/automation-coe/automation-maturity-model-overview.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/automation-maturity-model-overview",
+      "redirect_document_id": "false"
+    },
+    {
+     "source_path": "power-platform/guidance/automation-coe/heat.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/heat",
+      "redirect_document_id": "false"
+    },
+    {
+     "source_path": "power-platform/guidance/automation-coe/manage-pad-on-windows.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/manage-pad-on-windows",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/automation-coe/overview.md",
+       "redirect_url": "/power-automate/guidance/automation-coe/overview",
+       "redirect_document_id": "false"
+    },
+    {
+     "source_path": "power-platform/guidance/automation-coe/strategy.md",
+      "redirect_url": "/power-automate/guidance/automation-coe/strategy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/automation-coe/automation-coe-starter-kit.md",
+      "redirect_url": "/power-automate/guidance/automation-kit/overview/introduction",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/developer/cli/reference/admin-command.md",
       "redirect_url": "/power-platform/developer/cli/reference/admin",
       "redirect_document_id": "false"
@@ -53,6 +93,146 @@
     {
       "source_path": "power-platform/developer/cli/reference/telemetry-command.md",
       "redirect_url": "/power-platform/developer/cli/reference/telemetry",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-cards.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-custom-speech-ssml.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-entities-slot-filling.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-flow.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-power-fx.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/advanced-speech-settings.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-billed-sessions.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-csat.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-overview.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-sessions-transcripts.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-sessions.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-summary.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/analytics-topic-details.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-comments.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-create-edit-topics.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-template-topics.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-test-bot.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-topic-management.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-variables-bot.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/authoring-variables.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/build-2022-limitations.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/build-2022-overview.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/build-2022-quickstart.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/customize-default-canvas.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/error-codes.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/publication-connect-bot-to-telephony.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/publication-connect-bot-to-web-channels.md",
+      "redirect_url": "../index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/build-22/publication-fundamentals-publish-channels.md",
+      "redirect_url": "../index",
       "redirect_document_id": "false"
     },
     {
@@ -502,7 +682,7 @@
     },
     {
       "source_path": "power-virtual-agents/build-22/index.yml",
-      "redirect_url": "build-2022-overview",
+      "redirect_url": "../index",
       "redirect_document_id": "false"
     },
     {
