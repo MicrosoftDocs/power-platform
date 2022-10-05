@@ -1,6 +1,6 @@
 ---
-title: "Fix errors, set status, and copy topics (Preview)"
-description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time."
+title: "Fix errors, set status, and copy topics (preview)"
+description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time in Power Virtual Agents preview."
 keywords: "PVA"
 ms.date: 10/10/2022
 
@@ -12,7 +12,7 @@ ms.custom: "ceX"
 ms.collection: virtual-agent
 ---
 
-# Manage topics in Power Virtual Agents (Preview)
+# Manage topics in Power Virtual Agents (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

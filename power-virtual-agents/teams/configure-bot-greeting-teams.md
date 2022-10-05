@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../configure-bot-greeting.md)
 > - [Power Virtual Agents app in Microsoft Teams](configure-bot-greeting-teams.md)
 
-By default, chatbots created with the Power Virtual Agents app in Microsoft Teams will automatically start the conversation when someone opens a chat with the bot.
+By default, chatbots created with the Power Virtual Agents app in Microsoft Teams will automatically start the conversation when installed for the first time.
 
 You can change what the bot says by updating the greeting topic.
 
@@ -31,7 +31,7 @@ For example, you could have your bot say, "Hi, I'm Botty, a virtual agent" as so
 You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas-teams.md).
 
 > [!IMPORTANT]
-> Having the bot start the conversation will show up in your [analytics](analytics-overview-teams.md) and will increase your session count.
+> When your bot starts the conversation, it will show up in your [analytics](analytics-overview-teams.md) and will increase your session count.
 >
 > If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary-teams.md#engagement-over-time-chart).
 >
@@ -49,7 +49,9 @@ You can also combine the customized greeting with [customization to the look and
 
 1. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics-teams.md#insert-nodes).
 
-1. Select **Save**.
+1. Select **Save** when you're finished editing the message.
+
+    :::image type="content" source="../media/configure-bot-greeting/custom-greeting-message-teams.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited.":::
 
 1. [**Publish** your bot](publication-add-bot-to-microsoft-teams-teams.md) and test it.
 

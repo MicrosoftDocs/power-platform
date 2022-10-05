@@ -1,6 +1,6 @@
 ---
-title: Work with Power Apps bot conversation transcripts (Preview)
-description: Work with bot conversation transcripts exported from Power Apps and learn how to pull the data into Power BI.
+title: Work with Power Apps bot conversation transcripts (preview)
+description: Work with bot conversation transcripts exported from Power Apps and learn how to pull the data into Power BI in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: article
@@ -11,7 +11,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Work with Power Apps bot conversation transcripts (Preview)
+# Work with Power Apps bot conversation transcripts (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -72,7 +72,6 @@ Some of the key fields you'll find in the Content JSON include:
 | `PRRSurveyResponse` | The user's response to whether the topic answered their question from the "End of Conversation" topic. |
 | `SessionInfo` | The type (`unengaged` or `engaged`), outcome (`Escalated`, `Resolved`, `Abandon`), and the turn count of the session. |
 | `VariableAssignment` | A value has been assigned to a variable. |
-
 
 ## Build custom reports from conversation transcripts
 

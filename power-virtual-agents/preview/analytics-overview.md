@@ -1,6 +1,6 @@
 ---
-title: Fundamentals - Analyze chatbot usage (Preview)
-description: Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents.
+title: Fundamentals - Analyze chatbot usage (preview)
+description: Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 10/10/2022
 ms.topic: overview
@@ -11,7 +11,7 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Analyze your bot's usage and performance (Preview)
+# Analyze your bot's usage and performance (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

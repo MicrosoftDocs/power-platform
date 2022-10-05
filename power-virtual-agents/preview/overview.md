@@ -1,6 +1,6 @@
 ---
-title: "Overview of the Power Virtual Agents preview (Preview)"
-description: "Overview of new features and improvements in the Power Virtual Agents preview."
+title: "Overview of the Power Virtual Agents preview (preview)"
+description: "Overview of new features and improvements in Power Virtual Agents preview."
 ms.date: 10/10/2022
 ms.topic: overview
 author: v-alarioza
@@ -12,7 +12,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Overview (Preview)
+# Overview (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -23,10 +23,12 @@ The new intelligent bot authoring experience unifies the sophistication of Azure
 This evolution brings new features, including:
 
 - Updates to authoring experience
-  - [Multimedia cards](advanced-cards.md)
-  - [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
-  - [Bot response variations](authoring-create-edit-topics.md#message-variations)
-  - [Quick replies](authoring-create-edit-topics.md#quick-replies)
+
+  - [Add Images / Videos / Cards to a message](authoring-send-message.md)
+  - [YAML code editor](authoring-create-edit-topics.md)
+  - [Message variations](authoring-send-message.md#use-message-variations)
+  - [Quick replies](authoring-send-message.md#use-quick-replies)
+  - [Speech authoring](authoring-send-message.md#use-ssml-to-customize-speech-responses)
 
 
 - Power FX and variable management
@@ -57,9 +59,9 @@ The following table lists some key concepts in Composer and describes where to f
 [Entities]: advanced-entities-slot-filling.md
 [Nodes]: authoring-create-edit-topics.md
 [Power Fx]: advanced-power-fx.md
-[question variations]: authoring-create-edit-topics.md#message-variations
-[Quick replies]: authoring-create-edit-topics.md#quick-replies
-[Response variations]: authoring-create-edit-topics.md#message-variations
+[question variations]: authoring-send-message.md#use-message-variations
+[Quick replies]: authoring-send-message.md#use-quick-replies
+[Response variations]: authoring-send-message.md#use-message-variations
 [Topics]: authoring-create-edit-topics.md
 [Trigger phrases]: authoring-create-edit-topics.md
 [Variables]: authoring-variables.md

@@ -102,7 +102,7 @@ In this situation, the flow or skill will still run and fill in the variable, ov
 
 Bot variables are accessible from any topic, and the bot variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session).
 
-The value is only cleared when the bot user is redirected to [the **Start over** system topic](authoring-create-edit-topics.md#use-system-and-sample-topics), or when the user triggers this topic directly (for example, by typing *Start over*). In this case, all bot variables will be reset and won't have any values.
+The value is only cleared when the bot user is redirected to [the **Start over** system topic](authoring-system-topics.md), or when the user triggers this topic directly (for example, by typing *Start over*). In this case, all bot variables will be reset and won't have any values.
 
 ## Set a bot variable's value from external sources
 
