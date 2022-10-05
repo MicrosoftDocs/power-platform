@@ -33,14 +33,13 @@ While the ALM Accelerator pipelines and app have default configurations that all
 
 ### Installing the pipelines in one project and source code in another project
 
-Using the Deployment Profiles in the ALM Accelerator app you can specify a pipeline project in addition to source project. An option has also been added to the coe-cli install to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
+From the ALM Accelerator App and in the Deployment Profiles there's now an option to specify a pipeline project in addition to source project. An option has also been added to the coe-cli to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
 
 ### Run the ALM Accelerator pipelines without installing the ALM Accelerator Canvas App and solution
 
 The ALM Accelerator Canvas App provides an easy button layer for running the ALM Accelerator pipelines. However, the Pipelines themselves, are the engine of the ALM Accelerator and can be run independent of the App. If you want to use the pipelines independently, you can run the pipelines directly from the command line or build your own app to invoke the pipelines via the [Azure DevOps API](/rest/api/azure/devops). Additionally, the ALM Accelerator solution includes a custom connector for the Azure DevOps API that can be used to invoke the pipelines via Flow or other Power Platform technologies. The key to using the pipelines independently is understanding the parameters that are passed to the various pipelines.
 
 **Parameters for import-unmanaged-to-dev-environment** - The import solution pipeline is used to import an unmanaged solution from source control into a Dev environment. The parameters are as follows:
-
 | Parameter                | Example                     | Description                                                      |
 | ---------                | -------                     | -----------                                                      |
 | Project                  | My Azure Devops Project     | The name of the project to import the solution into              |
@@ -54,7 +53,6 @@ The ALM Accelerator Canvas App provides an easy button layer for running the ALM
 | EnvironmentName          | MyDevEnvironment            | Used to find the deployment settings in the deployment pipeline. This will be a folder name under the config directory in the solution source  |
 
 **Parameters for delete-unmanaged-solution-and-components** - The delete solution pipeline is used to delete an unmanaged solution and all its components from a Dev environment. The parameters are as follows:
-
 | Parameter                | Example                     | Description                                                                      |
 | ---------                | -------                     | -----------                                                                      |
 | SolutionName             | MySolutionName              | The name of the solution to delete                                               |
@@ -62,7 +60,6 @@ The ALM Accelerator Canvas App provides an easy button layer for running the ALM
 | ServiceConnectionUrl     | example.crm.dynamics.com    | The url of the maker environment for the solution to be deleted                  |
 
 **Parameters for export-solution-to-git** - The export solution pipeline is used to export the solution to a git repository. The pipeline parameters are as follows:
-
 | Parameter                | Example                     | Description                                                                      |
 | ---------                | -------                     | -----------                                                                      |
 | Project                  | My Azure Devops Project     | The name of the project to export the solution source code to                                    |
@@ -101,15 +98,7 @@ to a versioning strategy using [configure run or build numbers](/azure/devops/pi
 
 ### Customize the number of deployment steps in your pipelines and the names of the target environments
 
-Similar to custom versioning above, the ability to bring your own templates for generating deployment pipelines provides flexibility when deployment pipelines are generated during the initial export of a solution. Bring your own templates supports the ability to specify the project in which your templates exist and the path to the template to use to generate the deployment pipeline(s). The setting for the project and path lives on the Deployment Profile and Deployment Steps table in the ALM Accelerator Administration app. The path to the template is relative to the root of the location of the export pipeline. For example, the path to the default validation environment deployment pipeline templates is /Pipelines/build-deploy-validation-SampleSolution.yml. If you wanted to use a template in the same project as the export pipeline, you would specify the path as /Pipelines/build-deploy-validation-MyCustomTemplate.yml. The templates contain placeholders for the following solution specific values that are replaced when the deployment pipeline is generated:
-
-| Placeholder                           | Description                                                                      |
-| ---------                             | -----------                                                                      |
-| SampleSolutionName                    | The name of the solution to deploy                                               |
-| RepositoryContainingTheBuildTemplates | The repository containing the build templates to use for the deployment pipeline |
-| BranchContainingTheBuildTemplates     | The branch containing the build templates to use for the deployment pipeline     |
-
-It's recommended that you copy one of the existing build-deploy-validation/test/prod-SampleSolution.yml pipeline templates to get started with your own custom template. Once you have your template(s) in place, you can update your Deployment Steps in your Deployment Profile to point to your newly created template.
+Similar to custom versioning above, the ability to bring your own templates for generating deployment pipelines provides flexibility when deployment pipelines are generated during the initial export of a solution. The concept of bring your own templates and now support the ability to specify the project in which your templates exist and the path to the template to use to generate the deployment pipeline(s). TODO more details on this
 
 ### Execute custom steps in my export / import / delete and deploy pipelines without modifying the templates provided by the ALM Accelerator Team
 
@@ -117,8 +106,7 @@ The ALM Accelerator for Power Platform pipeline templates has several extension 
 
 ### Toggle on/off specific actions in the pipelines
 
-There are several places in the pipelines where pipeline variables are used to dictate whether or not a task should be executed or which specific task should be executed. The following are a list of variables that can be set either on an individual pipeline or via the alm-accelerator-variable-group to apply to all pipelines. If you want to set these variables for specific solutions on export you can create a specific export pipeline based on the export pipeline template using the naming convention export-solution-to-git-SolutionName. The ALM Accelerator app will use this export pipeline for your specific solution rather than the general purpose export-solution-to-git pipeline.
-
+There are several places in the pipelines where pipeline variables are used to dictate whether or not a task should be executed or which specific task should be executed. The following are a list of variables that can be set either on an individual pipeline or via the alm-accelerator-variable-group to apply to all pipelines. NOTE: That if you want to set these variables for specific solutions on export you can create a specific export pipeline based on the export pipeline template using the naming convention export-solution-to-git-SolutionName. The ALM Accelerator app will use this export pipeline for your specific solution rather than the general purpose export-solution-to-git pipeline.
 | Variable                             | Default                     | Description                                                                      |
 | ---------                            | -------                     | -----------                                                                      |
 | GenerateDeploymentSettings           | true                        | If false then the deployment settings won't be generated and stored in source control. |

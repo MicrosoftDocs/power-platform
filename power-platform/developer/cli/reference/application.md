@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 9/15/2022
+ms.date: 8/11/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -37,6 +37,13 @@ Installs Dataverse application to given environment
 [!INCLUDE [application-install-intro](includes/application-install-intro.md)]
 
 
+### Required Parameters
+
+#### `--environment-id` `-id`
+
+Target environment application will be installed to
+
+
 ### Optional Parameters
 
 #### `--application-list` `-al`
@@ -47,13 +54,6 @@ Location of the JSON file with list of the Dataverse applications from AppSource
 
 Unique name of the application that will be installed to target environment
 
-#### `--environment` `-env`
-
-List available Dataverse applications for given environment (by id or url); if not specified, list all applications in the tenant
-
-#### `--environment-id` `-id`
-
-**Deprecated**: Use `--environment` instead.
 [!INCLUDE [application-install-remarks](includes/application-install-remarks.md)]
 
 ## pac application list
@@ -65,22 +65,9 @@ List available Dataverse applications from AppSource
 
 ### Optional Parameters
 
-#### `--environment` `-env`
-
-List available Dataverse applications for given environment (by id or url); if not specified, list all applications in the tenant
-
 #### `--environment-id` `-id`
 
-**Deprecated**: Use `--environment` instead.
-#### `--installState` `-s`
-
-Filter by application install state
-
-Use one of these values:
-
-- `NotInstalled`
-- `Installed`
-- `All`
+List available Dataverse applications for given environment; if not specified, list all applications in the tenant (default: list for all environments)
 
 #### `--output` `-o`
 

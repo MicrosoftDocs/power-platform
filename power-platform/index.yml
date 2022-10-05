@@ -32,9 +32,9 @@ highlightedContent:
       url: https://www.youtube.com/c/mspowerplatform/
 
     # Card
-    - title: Microsoft Learn training
+    - title: Power Platform training on Microsoft Learn
       itemType: learn
-      url: /training/powerplatform/
+      url: /learn/powerplatform/
       
     # Card
     - title: Power Platform In a Day workshops
@@ -51,9 +51,9 @@ conceptualContent:
       - url: /powerapps
         itemType: overview
         text: Documentation
-      - url: /training/powerplatform/power-apps
+      - url: /learn/powerplatform/power-apps
         itemType: learn
-        text: Microsoft Learn training
+        text: Training on Microsoft Learn
       - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
         itemType: video
         text: Videos
@@ -62,9 +62,9 @@ conceptualContent:
       - url: /power-automate/
         itemType: overview
         text: Documentation
-      - url: /training/powerplatform/power-automate
+      - url: /learn/powerplatform/power-automate
         itemType: learn
-        text: Microsoft Learn training for Power Automate
+        text: Training on Microsoft Learn
       - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
         itemType: video
         text: Videos
@@ -73,9 +73,9 @@ conceptualContent:
       - url: /power-bi/
         itemType: overview
         text: Documentation
-      - url: /training/powerplatform/power-bi
+      - url: /learn/powerplatform/power-bi
         itemType: learn
-        text: Microsoft Learn training
+        text: Training on Microsoft Learn
       - url: https://www.youtube.com/user/mspowerbi
         itemType: video
         text: Videos    
@@ -92,15 +92,15 @@ conceptualContent:
       - url: /power-virtual-agents/
         itemType: overview
         text: Documentation
-      - url: /training/browse/?expanded=power-platform&products=power-virtual-agents
+      - url: /learn/browse/?expanded=power-platform&products=power-virtual-agents
         itemType: learn
-        text: Microsoft Learn training
+        text: Training on Microsoft Learn
       - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
         itemType: video
         text: Videos
     - title: Administer and manage Microsoft Power Platform
       links:
-      - url: ./admin/index.yml
+      - url: ./admin/admin-documentation.md
         itemType: overview
         text: Admin guide      
       - url: ./admin/pricing-billing-skus.md

@@ -1,7 +1,7 @@
 ---
 title: Block cookie replay attacks in Dataverse (preview)
 description: Learn how to use IP-based cookie binding to block session hijacking attacks in Dataverse.
-ms.date: 09/21/2022
+ms.date: 08/26/2022
 ms.topic: conceptual
 author: ritesp
 ms.reviewer: jimholtz
@@ -51,23 +51,17 @@ IP-based cookie binding sets the IP address claim in the session cookie. Each re
 
 ## How to test the feature
 
-1. Clear all the cookies from the browser. This step is important to ensure that a new cookie is generated.
-
-2. Sign in to a Dynamics 365 environment that has IP-based cooking binding enabled.
-
-3. Use a client tool such as Fiddler to copy the session cookie.
-
-4. On a different computer (not in the same network), open [Postman](https://www.postman.com/).
-
-5. Fill in the required details along with the copied cookie.
-
-6. Submit the request. An HTTP 403 code should be returned.
+1. Sign in to a Dynamics 365 environment that has IP-based cooking binding enabled.
+1. Use a client tool such as Fiddler to copy the session cookie.
+1. On a different computer, open [Postman](https://www.postman.com/).
+1. Fill in the required details along with the copied cookie.
+1. Submit the request. An HTTP 401 code should be returned.
 
 ## Exclusions
 
 If the user connects to Dataverse from the same IP address with the old, valid cookie, Dataverse will accept the cookie.
 
-## FAQ 
+## FAQ
 
 ### Is this feature available in Dataverse?
 
@@ -87,6 +81,6 @@ The cookie IP binding feature is disabled by default. Administrators must enable
 
 ### See also
 
-[Get started with security roles in Dataverse](/training/modules/get-started-security-roles/)
+[Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

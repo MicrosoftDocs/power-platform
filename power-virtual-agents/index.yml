@@ -45,7 +45,7 @@ highlightedContent:
     # Card
     - title: Power Virtual Agents training
       itemType: learn
-      url: /training/browse/?expanded=power-platform&products=power-virtual-agents
+      url: /learn/browse/?expanded=power-platform&products=power-virtual-agents
 
     # Card
     - title: Register for a free virtual Power Virtual Agents in a Day workshop
