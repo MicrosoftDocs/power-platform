@@ -96,13 +96,13 @@ You can still run your Dynamics 365 apps on Powers Apps for Windows with the sam
 
 Effective July 1, 2022, the Custom message field is deprecated from the environment Edit details page.
 
-## Power Apps for Windows will be deprecated and replaced with a new app
+## Power Apps for Windows 8 will be deprecated and replaced with a new app
 
-Effective September 2022, [Power Apps](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) for Windows will be deprecated. Microsoft will continue to provide security and other critical updates for the app until Sept 20, 2022. We won't release any other features or functionalities for the app.
+Effective September 2022, [Power Apps for Windows 8](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) will be deprecated. Microsoft will continue to provide security and other critical updates for the app until Sept 20, 2022. We won't release any other features or functionalities for the app.
 
-On June 20, 2022  [Power Apps](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) for Windows will be renamed to **Power Apps for Windows 8**. After Sept 20, 2022, the app will be removed from the Microsoft Store, and will no longer be supported.
+After Sept 20, 2022, Power Apps for Windows 8 will be removed from the Microsoft Store, and will no longer be supported.
 
-On June 20, 2022 the new app for Windows that’s currently in preview will be available for general availability. The app will be renamed from [Power Apps (Preview)](https://apps.microsoft.com/store/detail/power-apps-preview/9MVC8P1Q3B29?hl) to **Power Apps**. For more information, see [Install Powers Apps for Windows](/power-apps/mobile/windows-app-install).
+On June 20, 2022 [Power Apps for Windows](https://apps.microsoft.com/store/detail/power-apps-preview/9MVC8P1Q3B29?hl) will be available. For more information about the new app, see [Install Powers Apps for Windows](/power-apps/mobile/windows-app-install).
 
 ## Data Export Service deprecation
 
