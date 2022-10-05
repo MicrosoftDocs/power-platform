@@ -73,6 +73,13 @@ Text(UORecord.StringField)
 Value(UORecord.Field.ChildField)
 ```
 
+In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
+
+```powerapps-dot
+untyped.'01'
+untyped.'my-field'
+```
+
 ## Arrays
 
 An **untyped object** variable can contain an array. Even though the array could be either an array of records or array of simple types, converting the **untyped object** array to a table using the [Table()](./reference/function-table.md) function will always result in a single-column table of **untyped objects**.
