@@ -4,7 +4,7 @@ description: About creating and manage environments in the Power Platform admin 
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/24/2022
+ms.date: 09/14/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -110,10 +110,11 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | Choose production, trial, or sandbox.        |
    |Region     | Choose a region for the environment.        |
+   |Type     | Choose production, trial, or sandbox.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes**. |
+   |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
    > [!div class="mx-imgBorder"] 
    > ![Create new environment settings.](./media/new-environment-page1.png "Create new environment settings")
@@ -151,10 +152,11 @@ You need 1GB available database capacity.
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose production or trial.        |
    |Region     | Choose a region for the environment.        |
+   |Type     | You can choose production or trial.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **No**. |
+   |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
    > [!div class="mx-imgBorder"] 
    > ![Create new environment settings.](./media/new-environment-page1-nodb.png "Create new environment settings")

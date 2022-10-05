@@ -4,7 +4,7 @@ description: "Types of Power Automate licenses."
 author: PriyaKodukula
 ms.subservice: admin
 ms.topic: overview
-ms.date: 09/07/2022
+ms.date: 09/20/2022
 ms.author: prkoduku
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -206,10 +206,10 @@ Here are some things you can do if you've exceeded the limits of your license.
 
 - Revisit your design and check for any places that can help reduce the number of actions being called. Check out [Best Practices section to create flows to use less actions](https://support.microsoft.com/topic/troubleshooting-slow-running-flows-2a51dcd6-0b21-33da-5ce8-1e908b1540ef).
 - If the flow is already optimized, but it uses many actions because of the nature of the business, consider buying a higher license. The per flow plan provides the best performance quota available (250K actions/24 hours/flow).
-- Purchase the **Power Apps and Power Automate capacity add-on** for your organization. During the [transition period](#transition-period), because enforcement is currently less strict, there is no facility to assign the **Power Apps and Power Automate capacity add-on** to a user. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms and create a support ticket with the flow details and add on details to get temporary relief(30 days) from throttling.
-- Turn on [Pay-as-you go](#pay-as-you-go) for the environment to ensure none of the flows in the environment are throttled.
+- Turn on [Pay-as-you go](#pay-as-you-go) for the environment to ensure none of the flows in the environment are throttled. Microsoft recommends this apporach during the transition period. 
+- Purchase the **Power Apps and Power Automate capacity add-on** for your organization. During the [transition period](#transition-period), because enforcement is less strict, there is no facility to assign the **Power Apps and Power Automate capacity add-on** to a user or flow. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms. Create a support ticket with the flow details and add on details to get temporary relief (30 days) from throttling.
 
-If a flow is consistently above the transition period limits for 14 consecutive days, the flow is turned off and the owner is notified. You can purchase higher license, and then turn it on anytime. You can edit and save the flow for the 14 day counter to reset while you purchase the license.  
+If a flow is consistently above the transition period limits for 14 consecutive days, Power Automate turns off the flow and sends a notification to the owner. You can purchase a higher license, and then turn it on anytime. You can edit and save the flow to reset the 14 day counter while you purchase the license.  
 
 #### What are connector limits and are they different from Power Platform request limits?
 
@@ -283,8 +283,8 @@ For customers with extremely high scale scenarios who need to exceed these limit
 
 ![An image that displays an overview of pay as you go](../media/power-automate-licensing/pay-as-you-go.png)
 
->[!NOTE]
->If you link an environment to an Azure subscription, this meter will not be reported or billed. Reporting and billing will be turned on by the end of calendar year 2021.
+> [!NOTE]
+> If you link an environment to an Azure subscription, this meter will not be reported or billed. Reporting and billing will be turned on by the end of calendar year 2021.
 
 ### FAQs about request limits
 
@@ -294,8 +294,8 @@ You can consult this [requests limits frequently asked questions](../api-request
 
 If you sign in with work or school email address, you get all [Power Automate capabilities included in Office 365](faqs.md). But if you have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate with the free plan. Go to [Power Automate](https://flow.microsoft.com/) and then select **Try free**.
 
->[!NOTE]
->You cannot share flows when you use the free plan.
+> [!NOTE]
+> You cannot share flows when you use the free plan.
 
 To know which users have the free plan, admins can go to the [O365 Admin portal](https://admin.microsoft.com/), sign in, select **Billing** > **Licenses** to see how many free licenses are assigned vs available.
 
@@ -334,8 +334,8 @@ Follow these steps to get started.
 After the free trial starts, go to **Billing** > **Licenses** to see the 25 new licenses available for you to assign to users.
 
 <!--todo this isn't clear, PM will update in github-->
->[!NOTE]
->Trials are different from free licenses. Once you start a trial, the sku name might not say Trial.
+> [!NOTE]
+> Trials are different from free licenses. Once you start a trial, the sku name might not say Trial.
 
 ![View trial licenses](../media/power-automate-licensing/trial-licenses.png)
 

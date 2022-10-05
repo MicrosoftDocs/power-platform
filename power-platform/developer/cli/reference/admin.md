@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 8/11/2022
+ms.date: 9/15/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac admin
 
-Work with your PowerPlatform Admin Account
+Work with your Power Platform Admin Account
 
 [!INCLUDE [admin-intro](includes/admin-intro.md)]
 
@@ -29,7 +29,7 @@ Work with your PowerPlatform Admin Account
 |[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target environment.|
 |[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
 |[pac admin copy](#pac-admin-copy)|Copy Source Environment to Destination Environment|
-|[pac admin create](#pac-admin-create)|Creates a Dataverse Environment in your tenant.|
+|[pac admin create](#pac-admin-create)|Creates a Dataverse database in your tenant.|
 |[pac admin delete](#pac-admin-delete)|Deletes Environment from your tenant|
 |[pac admin list](#pac-admin-list)|List all environments from your tenant|
 |[pac admin list-app-templates](#pac-admin-list-app-templates)|Lists all supported Dataverse database templates of model-driven apps in Dynamics 365.|
@@ -58,16 +58,26 @@ Name or ID of security role to be applied to user
 
 #### `--user` `-u`
 
-Object ID of AAD user to be assigned to environment
+Object ID or UPN of AAD user to be assigned to the environment or Application ID if assigning an Application User.
 
 
 ### Optional Parameters
+
+#### `--application-user` `-au`
+
+Specifies whether the input user is an application user. If business unit is not specified the application user will be added to the authenticated users business unit.
+
+This parameter requires no value. It is a switch.
 
 #### `--async` `-a`
 
 Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
 This parameter requires no value. It is a switch.
+
+#### `--business-unit` `-bu`
+
+ID of business unit to associate application user with.
 
 [!INCLUDE [admin-assign-user-remarks](includes/admin-assign-user-remarks.md)]
 
@@ -82,7 +92,8 @@ Takes a manual backup of your environment.
 
 #### `--label` `-l`
 
-**Deprecated**: This parameter will be ignored.
+Sets the backup label as provided.
+
 
 ### Optional Parameters
 
@@ -153,7 +164,7 @@ Use one of these values:
 
 ## pac admin create
 
-Creates a Dataverse Environment in your tenant.
+Creates a Dataverse database in your tenant.
 
 [!INCLUDE [admin-create-intro](includes/admin-create-intro.md)]
 
@@ -169,6 +180,7 @@ Use one of these values:
 - `Trial`
 - `Sandbox`
 - `Production`
+- `Developer`
 - `Teams`
 - `SubscriptionBasedTrial`
 
@@ -279,6 +291,7 @@ Use one of these values:
 - `Trial`
 - `Sandbox`
 - `Production`
+- `Developer`
 - `Teams`
 - `SubscriptionBasedTrial`
 
