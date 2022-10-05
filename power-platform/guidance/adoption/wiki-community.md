@@ -114,7 +114,7 @@ $timeZone = 2
 Open **Set-PowerPlatformHubAsDLPErrorSettings.ps1** in an ISE of your choice and update the following variables:
 
 ```powershell
-$newSiteURL = 'https://contoso.sharepoint.com/sites/powerplatformhub'
+$newSiteURL = 'https://contoso.sharepoint.com/sites/powerplatformhub/SitePages/Data-Loss-Prevention-(DLP)-Policies.aspx'
 $supportEmail = 'support@contoso.com'
 $tenantId = '00000000-0000-0000-0000-000000000000'
 ```
