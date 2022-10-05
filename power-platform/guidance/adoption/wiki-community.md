@@ -119,7 +119,7 @@ $supportEmail = 'support@contoso.com'
 $tenantId = '00000000-0000-0000-0000-000000000000'
 ```
 
-1. **$newSiteURL** - the URL of the SharePoint site.
+1. **$newSiteURL** - the URL of the Data Loss Prevention policies page on the SharePoint site.
 2. **$supportEmail** - the email address of the support department.
 3. **$tenantId** - the GUID of your tenant. Learn how to find your tenant idea [here](/onedrive/find-your-office-365-tenant-id).
 
