@@ -1,12 +1,11 @@
 ---
 title: "Troubleshoot error codes (Preview)"
-description: "Troubleshoot error responses from your bot."
+description: "Troubleshoot error responses from your Power Virtual Agents preview bot."
 author: v-alarioza
 ms.author: v-alarioza
 ms.topic: troubleshooting
 ms.date: 10/10/2022
-
-ms.reviewer: clmori
+ms.reviewer: mvakoc
 manager: shellyha
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
@@ -41,13 +40,10 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 | [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to a disabled topic.                    |
 | [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic is [redirecting][1] to another topic that no longer exists. |
 | [SystemError](#systemerror)                                               | A system error occurred in Power Virtual Agents.                    |
-| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] isn't valid.            |
-| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number hasn't been set for [telephony][4].                  |
 
 [1]: authoring-create-edit-topics.md#go-to-another-topic
 [2]: ../advanced-flow.md
 [3]: authoring-create-edit-topics.md#edit-topics-with-the-code-editor
-[4]: publication-connect-bot-to-telephony.md
 [5]: authoring-create-edit-topics.md#edit-topics-with-the-code-editor
 
 ### ContentError
@@ -118,15 +114,3 @@ Common problems include, but aren't limited to:
 **Error message:** This error doesn't produce an error message
 
 **Resolution:** Contact customer support for more details.
-
-### TelephonyHandoffInvalidPhoneNumber
-
-**Error message:** "The phone number {PhoneNumber} used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
-
-**Resolution:** Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format, for example; `+14251231234`.
-
-### TelephonyHandoffMissingPhoneNumber
-
-**Error message:** "The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context."
-
-**Resolution:** Go to your [telephony configuration](publication-connect-bot-to-telephony.md) and add a phone number.
