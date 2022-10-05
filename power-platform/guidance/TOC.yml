@@ -157,6 +157,8 @@
           href: coe/setup-almacceleratorpowerplatform-users.md
         - name: Configuring deployment user settings and profiles
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
+        - name: Use with Power Apps portals and Power Pages
+          href: coe/almaccelerator-powerpages.md
         - name: Configuring the ALM Accelerator Pipelines
           href: coe/almaccelerator-pipelines.md
         - name: Using the Pipeline extension points
