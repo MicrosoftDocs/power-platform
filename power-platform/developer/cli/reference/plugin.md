@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 9/15/2022
+ms.date: 8/11/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac plugin
 
-Commands for working with Dataverse plug-in class library
+Commands for working with Dataverse plugin class library
 
 [!INCLUDE [plugin-intro](includes/plugin-intro.md)]
 
@@ -26,13 +26,13 @@ Commands for working with Dataverse plug-in class library
 
 |Command|Description|
 |---------|---------|
-|[pac plugin init](#pac-plugin-init)|Initializes a directory with a new Dataverse plug-in class library.|
-|[pac plugin push](#pac-plugin-push)|Import plug-in into Dataverse.|
+|[pac plugin init](#pac-plugin-init)|Initializes a directory with a new Dataverse plugin class library.|
+|[pac plugin push](#pac-plugin-push)|Import plugin into the current Dataverse Environment|
 
 
 ## pac plugin init
 
-Initializes a directory with a new Dataverse plug-in class library.
+Initializes a directory with a new Dataverse plugin class library.
 
 [!INCLUDE [plugin-init-intro](includes/plugin-init-intro.md)]
 
@@ -49,7 +49,7 @@ Output directory
 
 #### `--signing-key-file-path` `-sk`
 
-Relative path to the Dataverse plug-in assembly originator key file for signing.
+Relative path to the Dataverse plugin assembly originator key file for signing.
 
 #### `--skip-signing` `-ss`
 
@@ -61,7 +61,7 @@ This parameter requires no value. It is a switch.
 
 ## pac plugin push
 
-Import plug-in into Dataverse.
+Import plugin into the current Dataverse Environment
 
 [!INCLUDE [plugin-push-intro](includes/plugin-push-intro.md)]
 
@@ -70,7 +70,7 @@ Import plug-in into Dataverse.
 
 #### `--pluginId` `-id`
 
-Id of plug-in assembly or plug-in package
+Id of plugin assembly or plugin package
 
 
 ### Optional Parameters
@@ -81,7 +81,7 @@ Build configuration. Default: Debug
 
 #### `--pluginFile` `-pf`
 
-File name of plug-in assembly or plug-in package
+File name of plugin assembly or plugin package
 
 #### `--type` `-t`
 

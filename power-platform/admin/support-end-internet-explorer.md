@@ -35,7 +35,7 @@ Administrators in the Power Platform Admin center and in the model-driven apps A
 
 ## User experience 
 
-All users using Dynamics 365 and canvas apps in the Microsoft Power Platform in Internet Explorer will see an error message at the top of the app. By switching to Microsoft Edge Chromium or another modern browser, the user will not see an error message. From early October 2022, users will be [redirected](https://www.learn.microsoft.com/deployedge/edge-learnmore-neededge) to Microsoft Edge if they have Edge currently installed on their device. Otherwise, they will receive a message informing them why they are blocked and to try using the site on Microsoft Edge. If a user tries accessing Dynamics 365 or Canvas apps in the Microsoft Power Platform in Internet Explorer, they will see the following messages:
+All users using Dynamics 365 and canvas apps in the Microsoft Power Platform in Internet Explorer will see an error message at the top of the app. By switching to Microsoft Edge Chromium or another modern browser, the user will not see an error message. From early October 2022, users will be [redirected](https://www.docs.microsoft.com/deployedge/edge-learnmore-neededge) to Microsoft Edge if they have Edge currently installed on their device. Otherwise, they will receive a message informing them why they are blocked and to try using the site on Microsoft Edge. If a user tries accessing Dynamics 365 or Canvas apps in the Microsoft Power Platform in Internet Explorer, they will see the following messages:
 
 > **Alert** <br />
 > This website will be blocked in Internet Explorer starting on October 31st. Try using this site in Microsoft Edge. Learn more

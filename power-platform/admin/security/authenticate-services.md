@@ -38,8 +38,8 @@ The authentication sequence is illustrated in the diagram that follows.
 
 When a Power Platform service is embedded in SharePoint, Power BI, or Teams, the authentication sequence is slightly different. That's because these services perform some of the steps themselves.
 
-> [!NOTE]
-> Authentication to external data sources is a separate step from authentication to the service. For more information, see [Connect to data sources](connect-data-sources.md).
+>[!NOTE]
+>Authentication to external data sources is a separate step from authentication to the service. For more information, see [Connect to data sources](connect-data-sources.md).
 
 :::image type="content" source="./media/EndUserAuthSequence.png" alt-text="A diagram of the Power Platform user authentication sequence.":::
 

@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 9/15/2022
+ms.date: 8/11/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -22,18 +22,17 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 
 |Command Group|Description|
 |---------|---------|
-|[pac admin](admin.md)|Work with your Power Platform Admin Account|
+|[pac admin](admin.md)|Work with your PowerPlatform Admin Account|
 |[pac application](application.md)|Commands for listing and installing available Dataverse applications from AppSource|
 |[pac auth](auth.md)|Manage how you authenticate to various services|
 |[pac canvas](canvas.md)|Operating with Power Apps .msapp files|
-|[pac connector](connector.md)|(Preview) Commands for working with Power Platform Connectors|
-|[pac data](data.md)|Import and export data from Dataverse.|
-|[pac help](help.md)|Show help for the Microsoft Power Platform CLI|
+|[pac data](data.md)|Import and export data from Dataverse environment|
+|[pac help](help.md)|Show help for the Microsoft PowerPlatform CLI|
 |[pac org](org.md)|Work with your Dataverse Organization|
 |[pac package](package.md)|Commands for working with Dataverse package projects|
-|[pac paportal](paportal.md)|Commands for working with Power Apps portal website|
-|[pac pcf](pcf.md)|Commands for working with Power Apps component framework projects|
-|[pac plugin](plugin.md)|Commands for working with Dataverse plug-in class library|
+|[pac paportal](paportal.md)|Commands for working with PowerApps portal website|
+|[pac pcf](pcf.md)|Commands for working with PowerApps component framework projects|
+|[pac plugin](plugin.md)|Commands for working with Dataverse plugin class library|
 |[pac solution](solution.md)|Commands for working with Dataverse solution projects|
 |[pac telemetry](telemetry.md)|Manage telemetry settings|
 

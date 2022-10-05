@@ -2,7 +2,7 @@
 title: "Considerations for choosing multiple environments or tenants"
 description: "Learn about options and use cases for choosing multiple environments or tenants in your subscription, including a multi-tenant deployment." 
 ms.custom: ""
-ms.date: 09/30/2022
+ms.date: 09/08/2020
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -25,17 +25,17 @@ search.app:
 
 # About multiple online environments or tenants
 
-The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing), gives you options for segregating your data and user access. For most companies, adding and using multiple Power Platform environments provides the right mix of functionality and ease of management. Enterprises with separate entities that may want to separate directory and licenses might consider using multiple tenants. Multiple environments can be accessed by all users in the tenant. Multiple tenants need to invite other tenant users as guest users to give them access.
+The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), gives you options for segregating your data and user access. For most companies, adding and using multiple environments in your subscription provides the right mix of functionality and ease of management. Enterprises with separate geographic locations might consider using multiple tenants to separate licenses. Multiple environments can share users among environments; multiple tenants cannot.  
   
 ## Uses for multiple environments  
  Environments are similar in concept to a high-rise business complex with floors organized according to business functions. Consider each floor within the building as an application (Sales/Service/Marketing, Vendor management, Wealth management) and consider each unit within a floor as an environment for a specific purpose such as production, Training, Testing, and Development.  
   
  ![Multiple environments as units in a building.](../admin/media/multi-tenant-3.png "Multiple environments as units in a building")  
   
- Multiple environments are needed when segregation is required of data, plugins, workflows, or admin resources that cannot be easily isolated by using business units.  
+ Multiple environments are needed when segregation is required of plugins, workflows, or admin resources that cannot be easily isolated by using business units.  
   
 ## A multi-environment deployment  
- A typical customer has only one tenant. A tenant can include one or more environments; however, an environment is always associated with a single tenant.  
+ A typical deployment includes one tenant only. A tenant can include one or more environments; however, an environment is always associated with a single tenant.  
   
  ![Single tenant deployment.](../admin/media/multi-tenant-1b.png "Single tenant deployment")  
   
@@ -53,14 +53,16 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
 - See [Microsoft Dataverse storage capacity](capacity-storage.md) for how storage is shared across environments.  
   
-- Environments in a single tenant are by default created in the geography where they initially signed up for their account. Additionally, creator of the environment can choose to create the environment in a different geography; allowed geographies will be displayed for the user to choose. In certain circumstances users will need to able to see or select all geographies supported by power platform. 
+- All environments for a single customer tenant will be set up in the geography where they initially signed up for their account. Storage consumption is totaled and tracked across all the environments attached to a customer tenant.  
   
-- Storage consumption is totaled and tracked across all the environments attached to a customer tenant. 
-
-- You can set up separate security groups for environments if you want to control who can see and access an environment.  
+- You can set up separate security groups for all environments.  
   
 - A licensed user can potentially access all the environments associated with the tenant. Access is controlled by environment security group membership.  
-   
+  
+- You can purchase additional environments through the Additional environment Add-On. Additional environments can be added only to "paid" subscriptions - not trials or Internal Use Rights (IUR). If you purchased your subscription through Volume Licensing, you must go through your Large Account Reseller (LAR) to purchase the additional environment. More information: [Support overview](support-overview.md)  
+  
+- You can't merge existing trials or subscriptions onto an additional environment; instead, you will need to move your data and customizations.  
+  
 ## Why use multiple environments?  
  The following are common use cases for multi-environment deployment. Consider these examples when you decide the deployment type that best fits your company's requirements.  
   
@@ -78,12 +80,12 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
  **Scalability**  
   
- While a single environment can scale up and out to support the growth of a customer's business, with very high data volumes or levels of complexity, there are additional considerations. For example, in environments with extreme volumes and/or extensive use of Service Scheduling, scaling up SQL Server can require complicated and expensive infrastructure that is prohibitively expensive or extremely difficult to manage.  
+ While a single environment can scale up and out to support the growth of a customer's business, with very high data volumes or levels of complexity, there are additional considerations. For example, in environments with extreme volumes and/or extensive use of Service Scheduling, scaling up [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] can require complicated and expensive infrastructure that is prohibitively expensive or extremely difficult to manage.  
   
  There are many scenarios in which there is a natural functional split in capability requirements. In such cases, delegating workloads by creating scale-out scenarios that are based on these functional splits can provide for higher volumes by using commodity infrastructure.  
   
 ## Add an environment to your subscription  
- For information about how to add an environment to your tenant, see [Create and manage environments](create-environment.md).  
+ For information about how to add an environment to your subscription, see [Create and manage environments](create-environment.md).  
   
 ## A multi-tenant deployment  
  Global businesses with regional or country models that differ can use tenants to account for variations in approach, market size, or compliance with legal and regulatory constraints.  
@@ -96,7 +98,9 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
  About multiple tenants:  
   
-- In a multi-tenant scenario, a licensed user associated with a tenant can only access one or more environments mapped to the same tenant. To access another tenant a user needs to be invited as a guest user and may need a separate license assigned.
+- In a multi-tenant scenario, a licensed user associated with a tenant can only access one or more environments mapped to the same tenant. To access another tenant a user would need a separate license and a unique set of sign-in credentials for that tenant.  
+  
+   For example, if User A has an account to access Tenant A their license allows them to access any and all environments created within Tenant A - if they are allowed by their administrator.  If User A needs to access environments within Tenant B, they will need an additional license.  
   
 - Each tenant will require Microsoft Power Platform admin(s) with unique sign-in credentials, and each tenant affiliate will manage its tenant separately in the administrator console.  
   
@@ -137,15 +141,15 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
 - Each tenant must have its own namespace; UPN or SMTP namespaces cannot be shared across tenants.  
   
-- If an on-premises Exchange organization exists, you cannot split this organization across multiple tenants.  
+- If an on-premises [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] organization exists, you cannot split this organization across multiple tenants.  
   
 - A consolidated Global Address List will not be available, except if explicitly managed downstream from the synchronization.  
   
 - Cross-tenant collaboration will be limited to Lync Federation and Exchange Federation features.  
   
-- SharePoint access across tenants may not be possible. While this may be solved with Partner Access, the user experience is disrupted and licensing aspects apply.  
+- [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] access across tenants may not be possible. While this may be solved with Partner Access, the user experience is disrupted and licensing aspects apply.  
   
-- There can be no duplicate accounts across the tenants or partitions in the on-premises Active Directory.  
+- There can be no duplicate accounts across the tenants or partitions in the on-premises [!INCLUDE[pn_Active_Directory](../includes/pn-active-directory.md)].  
   
 ### See also
 [Blog: What is a tenant?](https://powerbi.microsoft.com/blog/what-is-a-tenant/) <br />

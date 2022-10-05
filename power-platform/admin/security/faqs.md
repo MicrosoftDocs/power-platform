@@ -1,7 +1,7 @@
 ---
 title: Power Platform security FAQs
 description: Get answers to common questions about Power Platform security.
-ms.date: 09/21/2022
+ms.date: 05/27/2022
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -125,10 +125,6 @@ Information about deprecations of cipher suites is communicated through Power Pl
 Microsoft weighs the relative risk and disruption to customer operations in choosing cipher suites to support. The RSA-CBC cipher suites haven't been broken yet. We've enabled them to ensure consistency across our services and products, and to support all customer configurations. However, they're at the bottom of the priority list.
 
 We'll deprecate these ciphers at the right time, based on the Microsoft Crypto Board's continuous assessment.
-
-### Why does Power Automate expose MD5 content hashes in trigger/action inputs and outputs?
-
-Power Automate passes the optional content-MD5 hash value returned by Azure Storage as-is to its clients. This hash is used by Azure Storage to verify the integrity of the page during transport as a checksum algorithm and it isn't used as a cryptographic hash function for security purposes in Power Automate. You can find more details of this in the Azure Storage documentation on how to [Get Blob Properties](https://learn.microsoft.com/rest/api/storageservices/get-blob-properties#response) and how to work with [Request Headers](https://learn.microsoft.com/rest/api/storageservices/put-page#request-headers).
 
 ### How does Power Platform protect against Distributed Denial of Service (DDoS) attacks?
 

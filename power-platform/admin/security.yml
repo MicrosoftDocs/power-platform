@@ -70,7 +70,7 @@ landingContent:
        - linkListType: learn
          links:
           - text: Get started with security roles in Dataverse
-            url: /training/modules/get-started-security-roles/
+            url: /learn/modules/get-started-security-roles/
   
   # Card
   - title: Data loss prevention policies
@@ -88,7 +88,7 @@ landingContent:
        - linkListType: learn
          links:
           - text: Manage environmental changes
-            url: /training/modules/manage-environmental-changes/
+            url: /learn/modules/manage-environmental-changes/
 
   # Card
   - title: Configure teams and team templates

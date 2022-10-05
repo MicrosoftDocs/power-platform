@@ -30,8 +30,8 @@ Currently AA4PP doesn't automatically support a multi-tenant enterprise deployme
 
 ### Demo deployment scenario
 
-Example Tenant: `<https://v1234f.onmicrosoft.com>`
-Azure DevOps: `<https://dev.azure.com/v1234f>`
+Example Tenant: <https://v1234f.onmicrosoft.com>
+Azure DevOps: <https://dev.azure.com/v1234f>
 
 Attributes:
 
@@ -55,7 +55,7 @@ Attributes:
 
 ### Multi-tenant deployment scenario
 
-Example Tenants: `<https://contoso-dev.onmicrosoft.com>`, <https://contoso.onmicrosoft.com>
+Example Tenants: <https://contoso-dev.onmicrosoft.com>, <https://contoso.onmicrosoft.com>
 Azure DevOps: <https://dev.azure.com/contoso>, <https://dev.azure.com/contoso-dev>
 
 Attributes:
