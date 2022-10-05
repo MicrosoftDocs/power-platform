@@ -96,12 +96,12 @@ search.app:
    Remove-CrmCertificate -Certificate $alternativecertificate  
    ```  
   
-### You receive “The remote server returned an error: (400) Bad Request” and “Register-SPAppPrincipal: The requested service, `<http://wgwitsp:32843/46fbdd1305a643379b47d761334f6134/AppMng.svc>` could not be activated” error messages  
+### You receive “The remote server returned an error: (400) Bad Request” and “Register-SPAppPrincipal: The requested service, '<http://wgwitsp:32843/46fbdd1305a643379b47d761334f6134/AppMng.svc>' could not be activated” error messages  
  Applies to: [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises versions used with customer engagement apps.  
   
  The remote server returned an error: (400) Bad Request error message can occur after the certificate installation, such as when you run the CertificateReconfiguration.Ps1 script.  
   
- The Register-SPAppPrincipal: The requested service, `<http://wgwitsp:32843/46fbdd1305a643379b47d761334f6134/AppMng.svc>` could not be activated error message can occur when you grant permission to access [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] by running the Register-SPAppPrincipal command.  
+ The Register-SPAppPrincipal: The requested service, '<http://wgwitsp:32843/46fbdd1305a643379b47d761334f6134/AppMng.svc>' could not be activated error message can occur when you grant permission to access [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] by running the Register-SPAppPrincipal command.  
   
  To resolve both of these errors after they occur, restart the web server where the web application is installed. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Start or Stop the Web Server (IIS 8)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj635851(v=ws.11))  
   

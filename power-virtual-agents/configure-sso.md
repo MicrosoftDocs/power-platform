@@ -32,7 +32,6 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 > [!IMPORTANT]
 >
 > SSO is currently not supported when a bot has been either:
->
 > - Published to a [SharePoint website](publication-connect-bot-to-web-channels.md#add-bot-to-your-website).
 > - Published to a [Power Apps portal](publication-add-bot-to-power-apps-portal.md).
 > - Integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
@@ -40,7 +39,7 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- [Enable end-user authentication with Azure Active Directory](configuration-authentication-azure-ad.md).
+- [Enable end-user authentication with Azure Active Directory](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
   - SSO is only supported for Azure Active Directory (Azure AD) V2. Other account types such as Microsoft Account or other OAuth accounts are not supported.
 - [Add an authentication topic to your bot](advanced-end-user-authentication.md).
 - [Use a custom canvas](customize-default-canvas.md).
@@ -73,7 +72,7 @@ The following illustration shows how a user is signed in without seeing a login 
 
 :::image type="content" source="media/configure-sso/sso-illustration.png" alt-text="Illustration of SSO authentication flow.":::
 
-1. The bot user enters a phrase that [triggers a sign-in topic](advanced-end-user-authentication.md). The sign-in topic is designed to sign the user in and use the user's [authenticated token (`AuthToken` variable)](advanced-end-user-authentication.md#authtoken-variable).
+1. The bot user enters a phrase that [triggers a  sign-in topic](advanced-end-user-authentication.md). The sign-in topic is designed to sign the user in and use the user's [authenticated token (`AuthToken` variable)](advanced-end-user-authentication.md#authtoken-variable).
 
 1. Power Virtual Agents sends a login prompt to allow the user to sign in with their configured identity provider.
 
@@ -85,7 +84,7 @@ The following illustration shows how a user is signed in without seeing a login 
 
 To enable SSO, you'll need two separate app registrations:
 
-- [One for your bot to enable user authentication with Azure AD](configuration-authentication-azure-ad.md).
+- [One for your bot to enable user authentication with Azure AD](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
 - One for your custom canvas to enable SSO.
 
 > [!IMPORTANT]
@@ -144,7 +143,7 @@ Define a custom scope by exposing an API for the canvas app registration within 
 
 This step creates a trust relationship between the authentication app registration for authentication and the app registration for your custom canvas.
 
-1. Open the app registration that you created [when you configured authentication](configuration-authentication-azure-ad.md).
+1. Open the app registration that you created [when you configured authentication](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
 
 1. Go to **API Permissions** and ensure that the correct permissions are added for your bot. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
   
@@ -276,7 +275,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
             const directLine = window.WebChat.createDirectLine({
                 token
             });
-            var userID = clientApplication.account?.accountIdentifier != null ?
+            var userID = clientApplication.account ? .accountIdentifier != null ?
                 ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0, 64) :
                 (Math.random().toString() + Date.now().toString()).substr(0, 64); // Make sure this will not exceed 64 characters 
             const store = WebChat.createStore({}, ({

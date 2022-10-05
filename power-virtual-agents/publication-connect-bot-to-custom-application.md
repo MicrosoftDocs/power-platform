@@ -192,7 +192,7 @@ The following example uses samples from the [Connector sample code](https://gith
       {
           // To get the first response set string watermark = null
           // More information about watermark is available at
-          // https://learn.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-receive-messages?view=azure-bot-service-4.0
+          // https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-receive-messages?view=azure-bot-service-4.0
           
           // response from bot is of type Microsoft.Bot.Connector.DirectLine.ActivitySet
           ActivitySet response = await directLineClient.Conversations.GetActivitiesAsync(conversationtId, watermark);

@@ -27,7 +27,7 @@ search.app:
 
 **Solution**: The below process can be used by non-admins to request new environments and changes to DLP policies for their environments.
 
-:::image type="content" source="media/env-mgmt-process.png" alt-text="Environment management process":::
+![Environment management process.](media\env-mgmt-process.png "Environment management process")
 
 Developers (non-admins) can:
 
@@ -47,20 +47,20 @@ Developers (non-admins) can request new environments for their admin to triage.
 1. Open **Maker – Environment Request** app.
 1. Select + New
 1. In the fly-out menu, choose the desired connectors that will be needed in the new environment. Then select Next.
-   :::image type="content" source="media/dev-resources-maker-connectors.png" alt-text="Choose connectors":::
+![Choose connectors](media\dev-resources-maker-connectors.png "Choose connectors")
 
 1. Choose the user accounts who will need environment administrator access.
-   :::image type="content" source="media/dev-resources-maker-admins.png" alt-text="Choose admins":::
+![Choose admins](media\dev-resources-maker-admins.png "Choose admins")
 
 1. Provide basic details about the desired environment, including the display name, region, type, purpose.
 1. Indicate if the environment can be automatically cleaned up after a certain period of time.
-   1. If yes, then provide a duration (in days) from the dropdown that appears. Do this if you only need the environment for a short term project.
-   1. If no, the environment will not be deleted automatically. Do this if you need to keep the environment for a long time.
+    1. If yes, then provide a duration (in days) from the dropdown that appears. Do this if you only need the environment for a short term project.
+    1. If no, the environment will not be deleted automatically. Do this if you need to keep the environment for a long time.
 1. Indicate whether to provision a Dataverse database. 
-   :::image type="content" source="media/dev-resources-maker-env.png" alt-text="Environment details":::
+![Environment details](media\dev-resources-maker-env.png "Environment details")
 
 1. If a database is needed (toggle=yes), provide the required language and currency values. Optionally provide a security group to restrict access to the environment.
-   :::image type="content" source="media/dev-resources-maker-db.png" alt-text="Choose database settings":::
+![Choose database settings](media\dev-resources-maker-db.png "Choose database settings")
 
 1. Submit the form when done by clicking the **Save** button.
 
@@ -68,7 +68,7 @@ Developers (non-admins) can request new environments for their admin to triage.
 
 View any of your submitted requests in the canvas app.
 
-:::image type="content" source="media/dev-resources-maker-pending.png" alt-text="View requests":::
+![View requests](media\dev-resources-maker-pending.png "View requests")
 
 ## Admin: Approve or deny an environment request
 
@@ -77,11 +77,11 @@ As the admin, you can view and triage requests for new environments.
 1. Open the canvas app called **Admin - Environment Request**.
 1. View the pending environment creation requests in the home screen.
 
-   > [!NOTE]
-   > By default, pending requests are displayed first. Change the request state filter using the dropdown in the right side of the ribbon.
+> [!NOTE]
+> By default, pending requests are displayed first. Change the request state filter using the dropdown in the right side of the ribbon.
 
 1. Select a request in the table to view more detail.
-   :::image type="content" source="media/dev-resources-admin.png" alt-text="Select requests":::
+![Select request](media\dev-resources-admin.png "Select requests")
 
 1. Read details requested for the new environment:
     1. Environment information, justification.
@@ -91,25 +91,25 @@ As the admin, you can view and triage requests for new environments.
     1. Impacting policies.
     1. Add comments about the decision in the Notes panel.
 
-       :::image type="content" source="media/dev-resources-admin-details.png" alt-text="View details":::
+    ![View details](media\dev-resources-admin-details.png "View details")
 
-       > [!NOTE]
-       > A banner on the top of the page indicates how the new environment will be impacted based on the existing policies in the tenant. The impact analysis will change when policies are modified.
+    > [!NOTE]
+    > A banner on the top of the page indicates how the new environment will be impacted based on the existing policies in the tenant. The impact analysis will change when policies are modified.
 
 1. Modify data loss prevention policies in the Impacted Policies table by clicking on the suggested actions (if any are available).
-   :::image type="content" source="media/dev-resources-admin-details-actions.png" alt-text="View actions":::
+![View actions](media\dev-resources-admin-details-actions.png "View actions")
 
-   > [!WARNING]
-   > Only certain types of policies can be added (Organization-level environments that are not "All Environments" type policies).
+    > [!WARNING]
+    > Only certain types of policies can be added (Organization-level environments that are not "All Environments" type policies).
 
 1. Select "View and modify policies" to see all policies and their impact on the requested connectors. You can add or remove policies to the modify list that will be changed upon approval by selecting a policy and choosing the actions that appear in the ribbon.
-   :::image type="content" source="media/dev-resources-admin-policies.png" alt-text="View or modify DLP policies":::
+![View or modify DLP policies](media\dev-resources-admin-policies.png "View or modify DLP policies")
 
 1. Select a policy and click on the **Details** action in the ribbon to view the impact on connectors.
-   :::image type="content" source="media/dev-resources-admin-policy-details.png" alt-text="Policy impact":::
+![Policy impact](media\dev-resources-admin-policy-details.png "Policy impact")
 
 1. Approve or reject the request in the top left ribbon.
-   :::image type="content" source="media/dev-resources-admin-details-decision.png" alt-text="Approve or reject":::
+![Approve or reject](media\dev-resources-admin-details-decision.png "Approve or reject")
 
 ### Approved path
 
@@ -151,17 +151,16 @@ Makers can use the DLP Policy Change Request system to modify the DLP Policy app
 
 1. Open **Maker – Environment Request** app.
 1. Navigate to the **Data Policy Change Requests** page using the left navigation.
-   :::image type="content" source="media/dlp-1.png" alt-text="Data Policy Change Requests screen":::
- 
+    ![Data Policy Change Requests screen](media\dlp-1.png "Data Policy Change Requests screen")
 1. Select + New
 1. In the "Action Requested" field, choose the "Apply Policy to Environment" option.
 1. In the "Policy" field, select the desired policy.
-   1. Confirm if the connectors required by your environment are in the policy by clicking the information icon next to the field header.
-   1. Then search for the connectors you need to confirm if the policy will allow it.
-      :::image type="content" source="media/dlp-2.png" alt-text="Confirm your required connectors are allowed by this policy.":::
+    1. Confirm if the connectors required by your environment are in the policy by clicking the information icon next to the field header.
+    1. Then search for the connectors you need to confirm if the policy will allow it.
+            ![Confirm your required connectors are allowed by this policy.](media\dlp-2.png "Confirm your required connectors are allowed by this policy.")
 1. Choose the environment to apply this policy to. You will only be select environments you are an administrator of.
-   1. If you do not see any environments in the drop-down, then you do not have an environment administrator role to any environments.
-   1. Provide a reason for the request. For example, it helps to specify your project details and the connectors you require.
+    1. If you do not see any environments in the drop-down, then you do not have an environment administrator role to any environments.
+    1. Provide a reason for the request. For example, it helps to specify your project details and the connectors you require.
 1. Select **Save** to submit the request.
 1. If the administrator approves the request, the policy will be applied to the environment.
 
@@ -192,27 +191,26 @@ To make a **Shared DLP Policy** visible to makers, the policy needs to be create
 - Open the **Admin – Environment Request** app.
 - Navigate to the **Data policies** page in the left navigation.
 - Select the policy you want to make visible to makers, then select the **Make visible** option in the ribbon
-  :::image type="content" source="media/dlp-4.png" alt-text="Make shared policies visible to makers.":::
+     ![Make shared policies visible to makers.](media\dlp-4.png "Make shared policies visible to makers.")
 
 ### Share app and instructions with makers
 
-- Grant your makers access to the **Maker – Environment Request** canvas app and assign them the **Power Platform Maker SR** security role. Use an Azure AD group to make assignment easier.
+-	Grant your makers access to the **Maker – Environment Request** canvas app and assign them the **Power Platform Maker SR** security role. Use an Azure AD group to make assignment easier.
 - Provide users with instructions on how to use the request system.
 
 ### Approve or Reject requests
 
 Once users have access and begin making requests, admins can see those requests in the **Admin – Environment Request** canvas app.
-
-:::image type="content" source="media/dlp-5.png" alt-text="View requests in the Admin Environment Request app":::
+  ![View requests in the Admin Environment Request app.](media\dlp-5.png "View requests in the Admin Environment Request app")
  
 To view and respond to the DLP Policy Change requests:
 
 1. Open the **Admin – Environment Request** app.
 1. Navigate to the **Policy Change Requests** page using the left navigation.
 1. View the list of requests. You can filter the request by status using the status filter in the right side of the ribbon.
-   :::image type="content" source="media/dlp-6.png" alt-text="View the list of requests":::
+    ![View the list of requests.](media\dlp-6.png "View the list of requests")
 1. To view the request in more detail, select one of the requests and click the **Details** action in the ribbon.
 1. To approve or deny a request, filter the status to “Pending” and select one of the requests. Only requests with pending status can be responded to in the app.
 1. Once a request is selected, you can choose to “approve” or “reject” the request using the actions in the ribbon.
-   1. If a request is approved, it will update the status to “Approved”, which will trigger a flow that automatically applies the selected policy to the indicated environment. It will also remove the environment from all other policies that have an “include” environment scope and add the environment to all policies with an “exclude” environment scope. Make sure this behavior fits with your company’s security requirements before continuing. Once the automation completes, the request status is set to “Fulfilled” and the record is deactivated.
-   1. If the request is rejected, the status is set to “Rejected” and the record is deactivated.
+    1. If a request is approved, it will update the status to “Approved”, which will trigger a flow that automatically applies the selected policy to the indicated environment. It will also remove the environment from all other policies that have an “include” environment scope and add the environment to all policies with an “exclude” environment scope. Make sure this behavior fits with your company’s security requirements before continuing. Once the automation completes, the request status is set to “Fulfilled” and the record is deactivated.
+    1. If the request is rejected, the status is set to “Rejected” and the record is deactivated.

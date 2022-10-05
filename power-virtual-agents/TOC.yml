@@ -74,7 +74,7 @@
          href: advanced-create-topics-from-web.md
        - name: Create topics from Customer Service Insights
          href: advanced-create-topics-from-csi.md
-       - name: Add user authentication
+       - name: Add end-user authentication
          href: advanced-end-user-authentication.md
        - name: Send proactive messages and cards in Microsoft Teams
          href: advanced-proactive-message.md
@@ -150,10 +150,8 @@
       items:
        - name: Key concepts - Configuration
          href: configuration-fundamentals.md
-       - name: Configure user authentication
+       - name: Configure end-user authentication
          href: configuration-end-user-authentication.md
-       - name: Configure user authentication with Azure Active Directory
-         href: configuration-authentication-azure-ad.md
        - name: Configure web and Direct Line channel security
          href: configure-web-security.md
        - name: Configure single sign-on for Web
@@ -236,7 +234,7 @@
          href: teams/authoring-variables-bot-teams.md
        - name: Create topics from existing support content
          href: teams/advanced-create-topics-from-web-teams.md
-       - name: Add user authentication
+       - name: Add end-user authentication
          href: teams/advanced-end-user-authentication-teams.md
        - name: Add actions using Power Automate
          href: teams/advanced-flow-teams.md
@@ -272,7 +270,7 @@
          href: teams/configuration-fundamentals-teams.md
        - name: Configure web and Direct Line channel security
          href: teams/configure-web-security-teams.md
-       - name: Configure user authentication
+       - name: Configure end-user authentication
          href: teams/configuration-end-user-authentication-teams.md
        - name: Configure how the bot starts the conversation
          href: teams/configure-bot-greeting-teams.md

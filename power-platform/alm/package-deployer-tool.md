@@ -30,7 +30,7 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 A Visual Studio 2015 or later template (available for download) is used to create packages. After creating a package, use the Package Deployer tool to deploy your package to a Dataverse instance.
 
 > [!TIP]
-> An alternative method to create a package using the latest version (currently 2022) of Visual Studio is to use [Microsoft Power Platform CLI](../developer/cli/introduction.md). Run the [pac package init](../developer/cli/reference/package.md#pac-package-init) command to create the initial package. More information: [pac package](../developer/cli/reference/package.md)
+> An alternative method to create a package using the latest version (currently 2022) of Visual Studio is to use [Microsoft Power Platform CLI](../developer/cli/introduction.md). Run the `pac package init` command to create the initial package. More information: [Package](../developer/cli/reference/package-command.md)
 >
 > In the created project, you will find the ImportConfig.xml file in the PkgAssets folder, and you will be modifying the PackageImportExtension.cs file instead of the PackageTemplate.cs file mentioned below. You will need to read the rest of this article for details on creating your package.
 
@@ -83,9 +83,9 @@ A Visual Studio 2015 or later template (available for download) is used to creat
  
 #### Step 3: Update the HTML files: English and other languages  
 
-1.  In the Solution Explorer pane, expand **PkgFolder** > **Content** > **en-us**. You'll find two folders called `EndHTML` and `WelcomeHTML`. These folders contain the  HTML and associated files that enable you to display information at the end and beginning of the package deployment process. Edit the files in the HTML folder of these folders to add information for your package.  
+1.  In the Solution Explorer pane, expand **PkgFolder** > **Content** > **en-us**. You’ll find two folders called `EndHTML` and `WelcomeHTML`. These folders contain the  HTML and associated files that enable you to display information at the end and beginning of the package deployment process. Edit the files in the HTML folder of these folders to add information for your package.  
 
-2.  You can also add the HTML files in your package in other languages so that the content in the HTML appears in the language based on the locale settings of the user's computer. To do so:  
+2.  You can also add the HTML files in your package in other languages so that the content in the HTML appears in the language based on the locale settings of the user’s computer. To do so:  
 
     1.  Create a copy of the **en-us** folder under **PkgFolder** > **Content**.  
     2.  Rename the copied folder to the appropriate language. For example, for the Spanish language, rename it to **es-ES**.  

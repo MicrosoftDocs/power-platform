@@ -1,12 +1,13 @@
 ---
 title: "Error management and troubleshooting for data integration projects"
 description: "Troubleshoot issues and manage errors when executing data integration projects using the Data Integrator service."
-ms.topic: conceptual
-ms.component: pa-admin
+
+ms.topic: how-to
+ms.component: cds
 ms.date: 11/19/2021
-author: NHelgren
+author: sabinn-msft
 ms.subservice: admin
-ms.author: nhelgren
+ms.author: sabinn
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin

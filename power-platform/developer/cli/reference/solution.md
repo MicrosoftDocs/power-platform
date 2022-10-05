@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 9/15/2022
+ms.date: 8/11/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -28,16 +28,16 @@ Commands for working with Dataverse solution projects
 |---------|---------|
 |[pac solution add-license](#pac-solution-add-license)|Add license and plan info to solution|
 |[pac solution add-reference](#pac-solution-add-reference)|Adds a reference from the project in the current directory to the project at 'path'|
-|[pac solution add-solution-component](#pac-solution-add-solution-component)|Adds a solution component to the target unmanaged solution in Dataverse.|
-|[pac solution check](#pac-solution-check)|Upload a Dataverse Solution project to run against the Power Apps Checker Service|
+|[pac solution add-solution-component](#pac-solution-add-solution-component)|Adds a solution component to the target unmanaged solution in the connected Dataverse environment|
+|[pac solution check](#pac-solution-check)|Upload a Dataverse Solution project to run against the PowerApps Checker Service|
 |[pac solution clone](#pac-solution-clone)|Create a solution project based on an existing solution in your Organization|
 |[pac solution create-settings](#pac-solution-create-settings)|Create a settings file from solution zip or solution folder.|
-|[pac solution delete](#pac-solution-delete)|Delete solution from Dataverse in the current Environment.|
-|[pac solution export](#pac-solution-export)|Export a solution from Dataverse.|
-|[pac solution import](#pac-solution-import)|Import the solution into Dataverse.|
+|[pac solution delete](#pac-solution-delete)|Delete Dataverse Solution from the current Dataverse Environment|
+|[pac solution export](#pac-solution-export)|Export a Dataverse Solution from the current Dataverse Environment|
+|[pac solution import](#pac-solution-import)|Import the Dataverse Solution into the current Dataverse Environment|
 |[pac solution init](#pac-solution-init)|Initializes a directory with a new Dataverse solution project|
 |[pac solution list](#pac-solution-list)|List all Solutions from the current Dataverse Organization|
-|[pac solution online-version](#pac-solution-online-version)|Sets version for solution loaded in Dataverse.|
+|[pac solution online-version](#pac-solution-online-version)|Sets version for solution loaded in Dataverse environment.|
 |[pac solution pack](#pac-solution-pack)|Package solution components on local filesystem into solution.zip (SolutionPackager)|
 |[pac solution publish](#pac-solution-publish)|Publishes all customizations|
 |[pac solution sync](#pac-solution-sync)|Sync the current Dataverse solution project to the current state of the solution in your Organization.|
@@ -82,7 +82,7 @@ The path to the referenced project
 
 ## pac solution add-solution-component
 
-Adds a solution component to the target unmanaged solution in Dataverse.
+Adds a solution component to the target unmanaged solution in the connected Dataverse environment
 
 [!INCLUDE [solution-add-solution-component-intro](includes/solution-add-solution-component-intro.md)]
 
@@ -112,13 +112,13 @@ This parameter requires no value. It is a switch.
 
 #### `--environment` `-env`
 
-Environment URL or ID of the target environment.
+Environment URL or ID of the target Dataverse environment
 
 [!INCLUDE [solution-add-solution-component-remarks](includes/solution-add-solution-component-remarks.md)]
 
 ## pac solution check
 
-Upload a Dataverse Solution project to run against the Power Apps Checker Service
+Upload a Dataverse Solution project to run against the PowerApps Checker Service
 
 [!INCLUDE [solution-check-intro](includes/solution-check-intro.md)]
 
@@ -135,7 +135,7 @@ Exclude Files from the Analysis. Pass as comma-separated values
 
 #### `--geo` `-g`
 
-Which geographical instance of the Power Apps Checker service to use.
+Which geographical instance of the PowerApps Checker service to use.
 
 Use one of these values:
 
@@ -230,7 +230,7 @@ Output directory
 
 #### `--packagetype` `-p`
 
-Specifies the extraction type for the solution. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Both'
+When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'
 
 #### `--processCanvasApps` `-pca`
 
@@ -268,7 +268,7 @@ Path to solution zip file.
 
 ## pac solution delete
 
-Delete solution from Dataverse in the current Environment.
+Delete Dataverse Solution from the current Dataverse Environment
 
 [!INCLUDE [solution-delete-intro](includes/solution-delete-intro.md)]
 
@@ -283,7 +283,7 @@ Name of the solution
 
 ## pac solution export
 
-Export a solution from Dataverse.
+Export a Dataverse Solution from the current Dataverse Environment
 
 [!INCLUDE [solution-export-intro](includes/solution-export-intro.md)]
 
@@ -348,7 +348,7 @@ This parameter requires no value. It is a switch.
 
 ## pac solution import
 
-Import the solution into Dataverse.
+Import the Dataverse Solution into the current Dataverse Environment
 
 [!INCLUDE [solution-import-intro](includes/solution-import-intro.md)]
 
@@ -467,7 +467,7 @@ The target Environment ID or URL.  Default value is the environment of your curr
 
 ## pac solution online-version
 
-Sets version for solution loaded in Dataverse.
+Sets version for solution loaded in Dataverse environment.
 
 [!INCLUDE [solution-online-version-intro](includes/solution-online-version-intro.md)]
 
@@ -520,7 +520,7 @@ This parameter requires no value. It is a switch.
 
 #### `--disablePluginRemap` `-dpm`
 
-Disabled plug-in fully qualified type name remapping. default: false
+Disabled plugin fully qualified type name remaping. default: false
 
 This parameter requires no value. It is a switch.
 
@@ -688,7 +688,7 @@ This parameter requires no value. It is a switch.
 
 #### `--disablePluginRemap` `-dpm`
 
-Disabled plug-in fully qualified type name remapping. default: false
+Disabled plugin fully qualified type name remaping. default: false
 
 This parameter requires no value. It is a switch.
 
