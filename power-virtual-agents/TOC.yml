@@ -309,8 +309,6 @@
         href: preview/authoring-export-import-bots.md
   - name: Author and edit
     items:
-      - name: Clone an existing bot
-        href: preview/clone-existing-bot.md
       - name: Use sample topics
         href: preview/authoring-template-topics.md
       - name: Create and edit topics
@@ -327,6 +325,8 @@
         href: preview/authoring-system-topics.md
       - name: Add comments to bots
         href: preview/authoring-comments.md
+      - name: Start with existing content
+        href: preview/clone-existing-bot.md
       - name: Test your bot
         href: preview/authoring-test-bot.md
       - name: Troubleshoot error codes
