@@ -17,7 +17,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Create an internal Microsoft Power Platform hub
+# Create an internal Microsoft Power Platform hub 
 
 At the heart of growth is a community, a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. A community is a safe place to ask questions to share tacit knowledge and expand skill sets. Organizations that have succeeded at creating a growing community of makers provide tools such as Yammer or Microsoft Teams groups, regular events and speaking opportunities, and foster an environment of ongoing learning.
 
@@ -25,7 +25,7 @@ They make sure that every person in the organization can come together at regula
 
 ## Create a Power Platform Hub
 
-Set up your own SharePoint Hub or Teams site to share success stories, upcoming events, rules of engagement and guidelines with your maker community - or get started with the [Power Platform Hub template](#get-started-with-the-power-platform-hub-template). This site should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
+Set up your own SharePoint Hub or Teams site to share success stories, upcoming events, rules of engagement and guidelines with your maker community - or get started with the [Power Platform Hub template]((#get-started-with-the-power-platform-communication-site-template). This site should be a one-stop shop for makers to find out everything they need about getting started with Microsoft Power Platform.
 
 Here are a few tips on what the wiki should include:
 
