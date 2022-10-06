@@ -50,6 +50,13 @@ Set( release, DateValue ( untyped.ReleaseDate ) );
 Set( preorder, Boolean ( untyped.AvailableForPreOrder ) );
 ```
 
+In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
+
+```powerapps-dot
+untyped.'01'
+untyped.'my-field'
+```
+
 Power Fx won't evaluate the existence of the field until the formula is run. This allows flexibility in the incoming **JSON**. For example, the previous **JSON** may sometimes contain an extra field called `Discount`. But in our previous example, this field isn't present. Writing a formula that uses the `Discount` field won't result in any errors, during the app making process or when users use the app. If the field is missing when the formula runs, the value will just result in a [Blank()](reference/function-isblank-isempty.md) value.
 
 > [!NOTE]
