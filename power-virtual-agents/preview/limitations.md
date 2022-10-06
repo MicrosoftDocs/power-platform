@@ -23,9 +23,11 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 - When sharing a bot, any Power Automate flows used in the conversation logic will not be shared. You'll have to manually share those flows if desired.  
 - [Message variations](authoring-send-message.md#use-message-variations) do not vary in a single conversation. You'll only see differences between different conversations.
 - The **Track between topics** toggle in the [test bot pane](authoring-test-bot.md) doesn't work.
-- While co-authoring a bot with another user is possible, it's not a fully supported feature.
+- While co-authoring a bot with another user is possible, it's not a fully supported feature and may lead to data loss.
 - Default values in multiple-choice questions don't work.
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
+- Omnichannel is not supported.
+- No voice support. <!-- FIXME: need to clarify what this means -->
 
 ## Upcoming releases
 
