@@ -338,6 +338,8 @@
         href: preview/authoring-variables.md
       - name: Reuse variables across topics
         href: preview/authoring-variables-bot.md
+      - name: Manage date and time in chatbots
+        href: preview/manage-date-and-time.md
       - name: Use expressions using Power Fx
         href: preview/advanced-power-fx.md
       - name: Add user authentication
