@@ -69,7 +69,7 @@ Different configuration options enable different outcomes for the resulting gene
 
 ## Known limitations
 
-- Certain controls are not currently supported. These include charts, Power BI tile, Map, and some configurations of 3<sup>rd</sup> party PCF controls.
+- Certain controls are not currently supported. These include charts, Power BI tile, Map, and some configurations of third party PCF controls.
 
 - Nested Galleries are not supported
 
