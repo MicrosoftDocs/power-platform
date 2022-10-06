@@ -19,7 +19,7 @@ search.app:
 ---
 # Update a record Owner and Owning Business Unit
 
-There are situations where you need to update a record’s owner, an Owning Business Unit, or both an owner and Owning Business Unit because the record changes ownership. If you have enabled the [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview), you can update the record’s owning business unit. 
+There are situations where you need to update a record’s owner, an Owning Business Unit, or both an owner and Owning Business Unit because the record changes ownership. If you have enabled the [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure), you can update the record’s owning business unit. 
 
 > [!NOTE]
 > Changing the **Owner Business Unit** is a preview feature and is being rolled out over time.
