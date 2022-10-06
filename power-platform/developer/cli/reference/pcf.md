@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 8/11/2022
+ms.date: 9/15/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac pcf
 
-Commands for working with PowerApps component framework projects
+Commands for working with Power Apps component framework projects
 
 [!INCLUDE [pcf-intro](includes/pcf-intro.md)]
 
@@ -26,14 +26,14 @@ Commands for working with PowerApps component framework projects
 
 |Command|Description|
 |---------|---------|
-|[pac pcf init](#pac-pcf-init)|Initializes a directory with a new PowerApps component framework project|
-|[pac pcf push](#pac-pcf-push)|Import the PowerApps component framework project into the current Dataverse Organization|
+|[pac pcf init](#pac-pcf-init)|Initializes a directory with a new Power Apps component framework project|
+|[pac pcf push](#pac-pcf-push)|Import the Power Apps component framework project into the current Dataverse Organization|
 |[pac pcf version](#pac-pcf-version)|Patch version for controls|
 
 
 ## pac pcf init
 
-Initializes a directory with a new PowerApps component framework project
+Initializes a directory with a new Power Apps component framework project
 
 [!INCLUDE [pcf-init-intro](includes/pcf-init-intro.md)]
 
@@ -87,7 +87,7 @@ This parameter requires no value. It is a switch.
 
 ## pac pcf push
 
-Import the PowerApps component framework project into the current Dataverse Organization
+Import the Power Apps component framework project into the current Dataverse Organization
 
 [!INCLUDE [pcf-push-intro](includes/pcf-push-intro.md)]
 
