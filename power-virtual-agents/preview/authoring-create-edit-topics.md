@@ -112,7 +112,7 @@ When you add a node after the **Trigger Phrases** node or between other existing
 | [**Ask a question**](authoring-ask-a-question.md)                 | Ask the customer a question.                          |
 | [**Add a condition**](authoring-using-conditions.md)              | Branch your conversation based on a condition.        |
 | [**Set a variable value**](authoring-variables.md#set-a-variable) | Set a value for a new or existing variable.           |
-| [**Topic management**](authoring-moving-between-topics.md)        | Redirect, transfer, or end the topic or conversation. |
+| [**Topic management**](authoring-topic-management.md)             | Redirect, transfer, or end the topic or conversation. |
 | [**Call an action**](advanced-flow.md)                            | Call a Power Automate Flow.                           |
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
