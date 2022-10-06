@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-You need to publish your bot before your customers can engage with it. You can publish your bot on multiple platforms, or channels. Channels available in Power Virtual Agents include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
+You need to publish your bot before your customers can engage with it. You can publish your bot on multiple platforms, or channels.
 
 After you've published your bot to at least one channel, you can connect it to more channels. Remember to publish your bot again after you make any changes to it. Publishing your bot updates it across all the channels it's connected to.
 
