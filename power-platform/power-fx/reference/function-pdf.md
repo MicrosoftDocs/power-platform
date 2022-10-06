@@ -5,7 +5,7 @@ author: TashasEv
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 05/04/2020
+ms.date: 10/06/2022
 ms.subservice: power-fx
 ms.author: tashas
 search.audienceType:
@@ -44,7 +44,7 @@ Different configuration options enable different outcomes for the resulting gene
 
 ## Syntax
 
-**PDF(***Screen or control name* \[, **{***Size, DPI, Margin, Orientation, ExpandContainers*}**\])**
+**PDF** _(Screen or control name \[,{Size, DPI, Margin, Orientation, ExpandContainers}\])_
 
 -   Screen or control name *–* Required. The screen or control containing the content to use to generate the PDF. Supported controls: Vertical Gallery, Vertical Layout Container, Horizontal Layout Container, Container, Screen.
 
@@ -69,10 +69,10 @@ Different configuration options enable different outcomes for the resulting gene
 
 ## Known limitations
 
--   Certain controls are not currently supported. These include charts, Power BI tile, Map, and some configurations of 3<sup>rd</sup> party PCF controls.
+- Certain controls are not currently supported. These include charts, Power BI tile, Map, and some configurations of 3<sup>rd</sup> party PCF controls.
 
--   Nested Galleries are not supported
+- Nested Galleries are not supported
 
--   Non-Latin script types and font weights and styles such as bold and italic may not appear in the generated PDF for some fonts.
+- Non-Latin script types and font weights and styles such as bold and italic may not appear in the generated PDF for some fonts.
 
--   Creation of fillable PDFs is not supported
+- Creation of fillable PDFs is not supported
