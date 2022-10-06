@@ -45,7 +45,6 @@ Select **+ Add new trigger** to add another Bot Framework trigger to **Contoso M
 After the **Unknown intent** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
 
 ````lg
-
 # adaptivecardjson_BingSearch(user_utterance)
 - ```
 {    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -91,7 +90,7 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 
 ```
 
-:::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Composer Bot Responses - add Activity.":::
+:::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Composer Bot Responses - add activity.":::
 
 Go to the **Create** tab in Composer and select the **Unknown intent** trigger. Add the **Send a response** action and select **Show code**. Add the following expression to the **Bot response** pane:
 
@@ -101,7 +100,7 @@ Go to the **Create** tab in Composer and select the **Unknown intent** trigger. 
 
 :::image type="content" source="media/Composer_Example3/E3_BingSearch_addBotReponse_BingSearch.png" alt-text="Composer BeginDialog - Send a response.":::
 
-You are now ready to add your Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
+You're now ready to add your Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
 
 Once your new Composer content is successfully published, you can now see that **OnUnknownIntent** was added to the **Topics** page in Power Virtual Agents.
 
