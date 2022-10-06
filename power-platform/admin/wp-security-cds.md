@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 03/29/2022
+ms.date: 9/27/2022
 ms.topic: conceptual
 author: paulliew
 ms.subservice: admin
@@ -50,7 +50,7 @@ User A is associated with Division A and assigned a security role Y from Divisio
 > [!div class="mx-imgBorder"] 
 > ![Matrix data access structure example](media/example-business-unit0.png "Matrix data access structure example")
 
-### Matrix data access structure (Modernize Business Units - Preview) 
+### Matrix data access structure (Modernized Business Units) 
 
 Customers can use an organization structure where data is compartmentalized in a tree-like hierarchy, and users can work and access any business unit’s data regardless of what the business unit the user is assigned to. 
 
@@ -61,17 +61,16 @@ User A can be associated with any of the business units, including the root busi
 > [!div class="mx-imgBorder"] 
 > ![Hierarchical data access structure example](media/example-business-unit.png "Hierarchical data access structure example")
 
-#### To enable this Matrix data access structure (preview): 
-
-> [!NOTE]
-> **Record ownership across business units** is a preview feature and is being rolled out over time.
+#### To enable this Matrix data access structure: 
 
 1. Sign in to the Power Platform admin center, as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
 2. Select the **Environments** tab, and then choose the environment that you want to enable this feature for. 
 3. Select **Settings** > **Product** > **Features**. 
 4. Turn **On** the **Record ownership across business units** switch. 
 
-Once this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security role from different business units to a user. The user also requires a security role from the business unit that the user is assigned to with [user settings privileges](assign-security-roles.md#user-settings-privileges-for-record-ownership-across-business-units) to run model-driven apps. You can refer to the [Basic User](database-security.md#predefined-security-roles) security role to find how these user settings privileges are enabled.
+Once this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security role from different business units to a user. The user also requires a security role from the business unit that the user is assigned to with [user settings privileges](assign-security-roles.md#user-settings-privileges-for-record-ownership-across-business-units) to run model-driven apps. You can refer to the [Basic User](database-security.md#predefined-security-roles) security role to find how these user settings privileges are enabled. 
+
+You can assign a user as record owner in any business unit without the need to assign a security role in the record's owning business unit as long as the user has a security role that has Read privilege to the record table. See [Record Ownership in Modernized Business Units](wp-security-cds.md#record-ownership-in-modernized-business-units). 
 
 > [!NOTE]
 > This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** [environment database settings](environment-database-settings.md) and can also be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](
@@ -89,28 +88,28 @@ For each business unit, create an Azure AD security group. Create a [Dataverse g
 
 Add users into the respective Azure AD security group to grant them access to the business unit. The users can immediately run the app and access its resources/data. 
 
-In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), where users can work and access data from multiple business units, add the users to the Azure AD security groups that mapped to those business units.  
+In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), where users can work and access data from multiple business units, add the users to the Azure AD security groups that mapped to those business units.  
 
 ### Owning Business Unit
 
-Each record has an Owning Business Unit field which determines which business unit owns the record. This field defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
+Each record has an Owning Business Unit column which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
 
 > [!NOTE]
 > When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using Organization Service to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
 
-You can manage whether you want to allow your user to set the Owning Business Unit field when the feature switch is ON. To set the Owning Business Unit field, you need to grant the user’s security role the Business Unit table’s **Append To** privilege with local level permission.  
+You can manage whether you want to allow your user to set the Owning Business Unit column when the feature switch is ON. To set the Owning Business Unit column, you need to grant the user’s security role the Business Unit table’s **Append To** privilege with local level permission.  
 
-To allow your user to set this field, you can enable this field in the following:
+To allow your user to set this column, you can enable this column in the following:
 1. Form - both the body and header.
 2. View.
-3. [Column mappings](/powerapps/developer/data-platform/customize-entity-attribute-mappings). If you are using the [AutoMapEntity](/powerapps/developer/data-platform/customize-entity-attribute-mappings#auto-mapping-columns-between-tables), you can specify the field in your column mapping. 
+3. [Column mappings](/powerapps/developer/data-platform/customize-entity-attribute-mappings). If you are using the [AutoMapEntity](/powerapps/developer/data-platform/customize-entity-attribute-mappings#auto-mapping-columns-between-tables), you can specify the column in your column mapping. 
 
 > [!NOTE]
 > If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job will fail with a **Foreign KEY** constraint violation if the target environment does not have the same **Owning Business Unit** value. 
 > 
-> You can either remove the **Owning Business Unit** field from the source schema, or update the **Owning Business Unit** field value of the Source to any of the business units of the target.
+> You can either remove the **Owning Business Unit** column from the source schema, or update the **Owning Business Unit** column value of the Source to any of the business units of the target.
 >
-> If you have a job/process to copy data from an environment to an external resource, for example PowerBI, you will need to select or deselect the **Owning Business Unit** field from your source. Select it if your resource can receive it otherwise deselect it.
+> If you have a job/process to copy data from an environment to an external resource, for example PowerBI, you will need to select or deselect the **Owning Business Unit** column from your source. Select it if your resource can receive it otherwise deselect it.
 
 ## Table/record ownership
 
@@ -132,6 +131,18 @@ In the above you can see the standard privilege types for each table Create, Rea
 
 In the above example, we have given organization level access to Contact which means that the user in Division A could see and update contacts owned by anyone. In fact, one of the most common administrative mistakes is getting frustrated with permissions and just over granting access. Very quickly a well-crafted security model starts looking like swiss cheese (full of holes!).
 
+## Record Ownership in Modernized Business Units ##
+
+In **Modernized Business units**, you can have users being owners of records across any business units. All the users need is a security role (any business unit) which has Read privilege to the record table. The users don't need to have a security role assigned in each business unit where the record resides.
+
+If **Record ownership across business units** was enabled in your production environment during the Preview period, you need to perform the following to enable this record ownership across business unit:
+
+1. Install the [Organization Settings editor](environment-database-settings.md#install-the-organizationsettingseditor-tool)
+2. Set the **RecomputeOwnershipAcrossBusinessUnits** organization settings to true. When this setting is set to true, the system is locked and can take up to five minutes to do the re-computation. 
+3. Set **AlwaysMoveRecordToOwnerBusinessUnit** to false. This makes the record remain in the original owning business unit when the record ownership is changed.
+
+For all non-production environments, you just need to set **AlwaysMoveRecordToOwnerBusinessUnit** to false to use this capability.
+
 ## Teams (including [group teams](manage-group-teams.md))
 
 Teams are another important security building block. Teams are owned by a Business Unit. Every Business Unit has one default team that is automatically created when the Business Unit is created. The default team members are managed by Dataverse and always contain all users associated with that Business Unit. You can’t manually add or remove members from the default team, they're dynamically adjusted by the system as [new users are associated/disassociated with business units](./create-edit-business-units.md). There are two types of teams, owning teams and access teams.
@@ -146,15 +157,15 @@ Individual records can be shared on a one by one basis with another user. This i
 
 You might be wondering – what determines access to a record? That sounds like a simple question but for any given user it is the combination of all their security roles, the business unit they are associated with, the teams they are members of and the records that are shared with them. The key thing to remember is all access is accumulative across all those concepts in the scope of a Dataverse database environment. These entitlements are only granted within a single database and are individually tracked in each Dataverse database. This all requires they have an appropriate license to access Dataverse.
 
-### Field-level security in Dataverse
+### Column-level security in Dataverse
 
-Sometimes record-level control of access is not adequate for some business scenarios. Dataverse has a field-level security feature to allow more granular control of security at the field level. Field-level security can be enabled on all custom fields and most system fields. Most system fields that include personal identifiable information (PII) are capable of being individually secured. Each field’s metadata defines if that is an available option for the system field.
+Sometimes record-level control of access is not adequate for some business scenarios. Dataverse has a column-level security feature to allow more granular control of security at the column level. Column-level security can be enabled on all custom columns and most system columns. Most system columns that include personal identifiable information (PII) are capable of being individually secured. Each column’s metadata defines if that is an available option for the system column.
 
-Field-level security is enabled on a field by field basis. Access is then managed by creating a Field Security Profile. The profile contains all fields that have field-level security enabled and the access granted by that specific profile. Each field can be controlled within the profile for Create, Update and Read access. Field Security Profiles are then associated with a user or Teams to grant those privileges to the users to the records they already have access to. It’s important to note that field-level security has nothing to do with record-level security. A user must already have access to the record for the Field Security Profile to grant them any access to the fields. Field-level security should be used as needed and not excessively as it can add overhead that is detrimental if over used.
+Column-level security is enabled on a column by column basis. Access is then managed by creating a Column Security Profile. The profile contains all column that have column-level security enabled and the access granted by that specific profile. Each column can be controlled within the profile for Create, Update and Read access. Column Security Profiles are then associated with a user or Teams to grant those privileges to the users to the records they already have access to. It’s important to note that column-level security has nothing to do with record-level security. A user must already have access to the record for the Column Security Profile to grant them any access to the columns. Column-level security should be used as needed and not excessively as it can add overhead that is detrimental if over used.
 
 ### Managing security across multiple environments
 
-Security roles and Field Security Profiles can be packaged up and moved from one environment to the next using Dataverse solutions. Business Units and Teams must be created and managed in each environment along with the assignment of users to the necessary security components.
+Security roles and Column Security Profiles can be packaged up and moved from one environment to the next using Dataverse solutions. Business Units and Teams must be created and managed in each environment along with the assignment of users to the necessary security components.
 
 ### Configuring users environment security
 
@@ -162,7 +173,7 @@ Once roles, teams, and business units are created in an environment, it's time t
 
 In addition, you would assign any security roles that user needs. You would also add them as members of any teams. Remember teams can also have security roles, so the effective rights of the user is the combination of directly assigned security roles combined with those of any teams they're members of. Security is always additive offering the least restrictive permission of any of their entitlements. The following is a good walkthrough of [configuring environment security](database-security.md).
 
-If you have used field-level security, you would need to associate the user or a team of the user to one of the Field Securities Profiles you created.
+If you have used column-level security, you would need to associate the user or a team of the user to one of the Column Securities Profiles you created.
 
 Security is a complex article and is best accomplished as a joint effort between the application makers and the team administering the users permissions. Any major changes should be coordinated well in advance of deploying the changes into the environment.
 

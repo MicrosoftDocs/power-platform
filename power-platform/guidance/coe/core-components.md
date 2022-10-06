@@ -189,16 +189,6 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Error Code
   - Error Message
 
-- **AiBuilderModel** represents an Ai Builder Model. The following information is available for each model:
-  - Display name
-  - ID
-  - Created on
-  - Owner
-  - Modified on
-  - Type (Template)
-  - State
-  - Environment
-
 - **Business Process Flow** represents a business process flow. The following information is available for each BPF:
   - Display name
   - ID
@@ -296,7 +286,6 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 | Admin \| Sync Template v3 (Model Driven Apps) | Automated | triggered by Admin \| Sync Template v3 | This flow gets model-driven app information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. |
 | Admin \| Sync Template v3 (Portals) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Apps Portal information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow if you're using portals in your tenant and are interested in getting a tenant-wide overview. |
 | Admin \| Sync Template v3 (Solutions) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Solution information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of solutions is important. |
-| Admin \| Sync Template v3 (Ai Models) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Platform Ai Model information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow if you're using portals in your tenant and are interested in getting a tenant-wide overview. |
 | Admin \| Sync Template v3 (PVA) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of chatbots is important. |
 | Admin \| Sync Template v3 (Sync Flow Errors) | Scheduled | Daily | This flow sends an email to the admin about environments that failed to sync (with a link to the flow instance). |
 | Admin \| Sync Template v3 (Call Updates) | Scheduled | Daily | Used to trigger these three flows to run on a schedule. Needed so that those flows can be of type button and be used to be run on demand or on a schedule.|
@@ -312,7 +301,6 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 | CLEANUP HELPER - Check Deleted (PVA) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for chatbots  |
 | CLEANUP HELPER - Check Deleted (Solutions) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for solutions  |
 | CLEANUP HELPER - Check Deleted (Custom Connectors) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for custom connectors  |
-| CLEANUP HELPER - Check Deleted (Ai Models) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for Ai Models  |
 | CLEANUP HELPER - Power Apps User Shared With | Child Flow | called from CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With) | runs once per environment to check |
 | HELPER - CanvasAppOperations | Child Flow | Instant | This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
 | HELPER - CloudFlowOperations | Child Flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
