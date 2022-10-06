@@ -30,6 +30,7 @@ ms.collection: virtual-agent
 
 You can use an existing QnA Maker knowledge base in Power Virtual Agents by using a Power Automate flow to connect it to any topic. However it's more useful to connect your knowledge base to your bot's system fallback topic. Questions users ask that aren't covered by other topics can _fallback_ to using content from your knowledge base.
 
+<!-- FIXME: new aka.ms link coming -->
 To learn how to use QnA maker in a fallback topic, see [Add your knowledge base to Power Virtual Agents](/azure/cognitive-services/qnamaker/tutorials/integrate-with-power-virtual-assistant-fallback-topic).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
