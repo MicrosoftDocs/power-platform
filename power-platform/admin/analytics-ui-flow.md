@@ -47,8 +47,8 @@ To access the reports:
 
 1. Sign into [Power Automate]().
 
-   >[!NOTE]
-   >You may have to select your country/region if it's your first time signing in.
+   > [!NOTE]
+   > You may have to select your country/region if it's your first time signing in.
 
 1. Select the **Settings** icon > **Admin Center**.
 
@@ -107,8 +107,8 @@ You can filter your view to display reports from a specific **environment** or f
 
 ## View the created report
 
->[!IMPORTANT]
->You must upgrade the Power Automate Desktop (preview) app to the version of 2.1.43.20312 or later, in order to generate correct data for this report.
+> [!IMPORTANT]
+> You must upgrade the Power Automate Desktop (preview) app to the version of 2.1.43.20312 or later, in order to generate correct data for this report.
 
 1. Select **Created**.
 

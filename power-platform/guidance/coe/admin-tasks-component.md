@@ -82,7 +82,7 @@ The table below describes the fields used to define a task.
 The dashboard is structured in a way to help you focus on what you do, how reactive your team is, and the effect that automation and outsourcing have on overall efficiency.
 
 ### Team, outsourcing, and automation
-
+<!-- Jim, should we use the ::: format for images?, and if so can we please make it so they all have the gray border around them? Otherwise we should edit some of the images to have borders. I'm also going to leave the alt text to you. -->
 ![Screenshot showing Team workload, Outsourcing, and Automation sections in the dashboard.](media\PPAP-TeamOutsourcingAndAutomation.png "Team, outsourcing and automation dashboard section")
 
 The first section of the report contains aggregated administrative task data, illustrating:
