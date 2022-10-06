@@ -286,7 +286,6 @@
         href: teams/gdpr-summary-teams.md
 - name: Power Virtual Agents (preview)
   items:
-
   - name: What's in preview
     href: preview/overview.md
   - name: Quickstart
@@ -309,7 +308,7 @@
         href: preview/authoring-export-import-bots.md
   - name: Author and edit
     items:
-      - name: Use sample topics
+      - name: Start with sample topics
         href: preview/authoring-template-topics.md
       - name: Create and edit topics
         href: preview/authoring-create-edit-topics.md
