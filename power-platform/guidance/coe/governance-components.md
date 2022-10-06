@@ -424,7 +424,7 @@ The operations supported are Delete and Assign (which reassigns owner). It perfo
 This flow runs on a schedule and checks if any apps need quarantining based on the following criteria:
 
 - Environment is included in the quarantine process.
-- Compliance details have been requested, but are not yet submitted, and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
+- Compliance details have been requested and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
 - App is not already quarantined.
 - Admin Risk Assessment status is not complete.
 
