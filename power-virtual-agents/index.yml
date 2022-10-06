@@ -56,6 +56,15 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 conceptualContent:  
   items:
+    - title: Power Virtual Agents preview
+      links:
+        - text: Overview
+          url: ./preview/overview.md
+          itemType: overview
+        - text: Quickstart
+          url: ./preview/quickstart.md
+          itemType: get-started
+
     - title: Get started
       links:
         - text: Sign up for free
@@ -137,16 +146,6 @@ conceptualContent:
         - text: Licensing
           url: ./requirements-licensing-subscriptions.md
           itemType: overview 
-
-    - title: Power Virtual Agents preview
-      links:
-        - text: Overview
-          url: ./preview/overview.md
-          itemType: overview
-        - text: Quickstart
-          url: ./preview/quickstart.md
-          itemType: get-started
-    
     
 
 # additionalContent section (optional)
