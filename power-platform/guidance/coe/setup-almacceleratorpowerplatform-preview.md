@@ -68,6 +68,8 @@ For the ALM Accelerator for Power Platform canvas app to work, the following con
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
 - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
 - ALM Accelerator Custom DevOps (this connector will be created as part of the [accelerator solution import](#importing-the-solution-and-configuring-the-app))
+- [Office 365 Users](/connectors/office365users/)
+- HTTP
 
 ### Creator Kit
 
