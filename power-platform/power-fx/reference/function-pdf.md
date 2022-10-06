@@ -69,10 +69,10 @@ Different configuration options enable different outcomes for the resulting gene
 
 ## Known limitations
 
-- Certain controls are not currently supported. These include charts, Power BI tile, Map, and some configurations of third party PCF controls.
+- Certain controls aren't currently supported. These include charts, Power BI tile, Map, and some configurations of third party PCF controls.
 
-- Nested Galleries are not supported
+- Nested Galleries aren't supported.
 
 - Non-Latin script types and font weights and styles such as bold and italic may not appear in the generated PDF for some fonts.
 
-- Creation of fillable PDFs is not supported
+- Creation of fillable PDFs isn't supported.
