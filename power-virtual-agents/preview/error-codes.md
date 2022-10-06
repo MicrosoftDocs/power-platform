@@ -10,7 +10,10 @@ ms.reviewer: mvakoc
 manager: shellyha
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
+
 # Troubleshoot error codes (preview)
+
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 When a bot encounters a problem during a conversation, it will send an error response.
 

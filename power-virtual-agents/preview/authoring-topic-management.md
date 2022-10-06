@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Manage topics (preview)
 
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+
 Normally, a topic starts when a user sends a message to the bot, based on their message and the topic trigger phrases. To shift the conversation from the current topic to another topic, without starting the conversation over, add a **Redirect** node. When the conversation reaches the end of the new topic, the conversation resumes in the original topic.
 
 ## Prerequisites

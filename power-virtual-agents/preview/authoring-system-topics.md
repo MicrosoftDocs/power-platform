@@ -15,6 +15,8 @@ ms.reviewer: ggupta
 
 # Use system topics in Power Virtual Agents (preview)
 
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+
 System topics are built-in topics, that help your bot respond to common system events, such as escalation, or carry out essential behavior for your bot, such as ending a conversation. You can't delete system topics but, they can be disabled.
 
 When you first create a bot, all system topics are configured to trigger at the appropriate times, in response to related events. However, you can manually trigger system topics by [redirecting](/authoring-create-edit-topics.md#redirect-to-another-topic) to them. Some also have trigger phrases that you can customize to fit your needs.
