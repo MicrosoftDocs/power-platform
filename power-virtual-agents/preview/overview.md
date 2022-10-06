@@ -38,30 +38,3 @@ This evolution brings new features, including:
 For a guided tutorial on how to use these new features, please refer to the [quickstart](quickstart.md).
 
 The Power Virtual Agents preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of public preview](limitations.md).
-
-## For desktop Composer users
-
-There are a number of differences and similarities in how bots are designed in the Bot Framework Composer and the Power Virtual Agents preview.
-The following table lists some key concepts in Composer and describes where to find information about similar concepts in Power Virtual Agents.
-
-<!-- best viewed without wordwrap -->
-| Composer concept               | Power Virtual Agents concept                        | Description                                                                                                                                                                                                                                        |
-| :----------------------------- | :-------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dialogs and triggers           | [Topics][]                                          | Use topics to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the bot should start the topic and a set of _nodes_ that describe the conversation path for the topic.                                |
-| Intents                        | [Trigger phrases][]                                 | Add trigger phrases to a topic for phrases, keywords, and questions that a user is likely to type related to a specific issue. Power Virtual Agents uses natural language understanding to parse what a customer types and find the most appropriate topic. |
-| Actions and prompts            | [Nodes][]                                           | Use nodes on the authoring canvas to create the conversation path for each topic, such as messages, questions, and conditional branches.                                                                                                           |
-| Bot response variation         | [Response variations][] and [question variations][] | Use response and question variations to add variety to your bot's messages and questions.                                                                                                                                                          |
-| Suggested actions              | [Quick replies][]                                   | Use quick replies to provide default reply options to the user.                                                                                                                                                                                    |
-| Entities                       | [Entities][]                                        | Define and use entities to extract semantic information from a user's utterance.                                                                                                                                                                   |
-| State, storage, and properties | [Variables][]                                       | Use variables to track state.                                                                                                                                                                                                                      |
-| Formulas and expressions       | [Power Fx][]                                        | Use Power Fx to create expressions.                                                                                                                                                                                                                |
-
-[Entities]: advanced-entities-slot-filling.md
-[Nodes]: authoring-create-edit-topics.md
-[Power Fx]: advanced-power-fx.md
-[question variations]: authoring-send-message.md#use-message-variations
-[Quick replies]: authoring-send-message.md#use-quick-replies
-[Response variations]: authoring-send-message.md#use-message-variations
-[Topics]: authoring-create-edit-topics.md
-[Trigger phrases]: authoring-create-edit-topics.md
-[Variables]: authoring-variables.md
