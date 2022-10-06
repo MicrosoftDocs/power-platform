@@ -26,7 +26,6 @@ As you build bots, you'll likely run into scenarios where you must display the d
 
 Use these prebuilt entities to identify dates and times.
 
-
 - _Date_: A date without a time in the time zone of the bot user.
 - _Date and time_: A date with a time in the time zone of the bot user.
 - _Date and time (UTC)_: A date with a time in Coordinated Universal Time (UTC).
@@ -36,6 +35,7 @@ Use these prebuilt entities to identify dates and times.
 Use these system-level variables to get information about the user's time zone.
 
 - `Conversation.LocalTimeZone`, read-write, stores the bot user's time zone as a string. You can use any time zone listed on the [Noda Time][] website. For information on how your bot determines local time, see [Time zone determination](#time-zone-determination).
+
 - `Conversation.LocalTimeZoneOffset`, read-only, gets the UTC offset for the local time. This value is stored as a time value.
 
 [Noda Time]: https://nodatime.org/timezones
@@ -45,7 +45,9 @@ Use these system-level variables to get information about the user's time zone.
 Power Virtual Agents uses the following steps, in order, to determine the chatbot user's time zone.
 
 1. If the `Conversation.LocalTimeZone` system variable is set to a valid time zone from [Noda Time][], use that as the time zone.
+
 1. If the channel included the local time zone in the user's message, use that.
+
 1. Otherwise, use UTC as the time zone.
 
 ## Set bot's time zone
@@ -53,11 +55,17 @@ Power Virtual Agents uses the following steps, in order, to determine the chatbo
 For general information on how to set and use variables, see [Use variables (preview)](authoring-variables.md).
 
 1. Open the topic in which to set the user's time zone.
+
 1. Add a **Set Variable Value** node.
+
     1. For **Set variable**, choose the `Conversation.LocalTimeZone` system topic.
+
     1. For **To value**, enter `America/Los_Angeles`, one of the **Zone ID** values from the [Noda Time][] website.
+
 1. Add a **Message** node. In the text box type, enter `The local time zone is: `, then select _Insert variable_ (**{x}**) and insert the system `Conversation.LocalTimeZone` variable.
+
 1. Add a second **Message** node. In the text box type, enter `The local time zone offset is: `, then select _Insert variable_ (**{x}**) and insert the system `Conversation.LocalTimeZoneOffset` variable.
+
 1. Save and test the chatbot.
 
     :::image type="content" source="media/timezone/test-bot.png" alt-text="Screenshot of the test bot pane.":::
