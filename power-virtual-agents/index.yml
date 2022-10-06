@@ -137,6 +137,15 @@ conceptualContent:
         - text: Licensing
           url: ./requirements-licensing-subscriptions.md
           itemType: overview 
+
+    - title: Power Virtual Agents preview
+      links:
+        - text: Overview
+          url: ./preview/overview.md
+          itemType: overview
+        - text: Quickstart
+          url: ./preview/quickstart.md
+          itemType: get-started
     
     
 
