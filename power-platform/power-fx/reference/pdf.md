@@ -1,20 +1,33 @@
-﻿---
+---
 title: PDF function in Power Apps (experimental)
+description: Reference information including syntax and examples for the PDF function in Power Apps.
+author: TashasEv
+ms.topic: reference
+ms.custom: canvas
+ms.reviewer: mkaur
+ms.date: 05/04/2020
+ms.subservice: power-fx
+ms.author: tashas
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+contributors:
+  - TashasEv
+  - mduelae
 ---
 
-\[This article is pre-release documentation and is subject to change.\]
+# PDF function in Power Apps (experimental)
+
+[This article is pre-release documentation and is subject to change.\]
 
 Exports contents from the current screen to an object for use in multiple scenarios.
 
-** Important**
-
--   This is an experimental feature.
-
--   Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. More information: [**Understand experimental, preview, and deprecated features in Power Apps**](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-experimental-preview)
-
--   The behavior that this article describes is available only when the PDF function experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
-
--   Your feedback is very valuable to us - please let us know what you think in the [**Power Apps experimental features community forum**](https://powerusers.microsoft.com/t5/Power-Apps-Experimental-Features/bd-p/PA_ExperimentalFeatures).
+> [!IMPORTANT]
+> - This is an experimental feature.
+> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. More information: [**Understand experimental, preview, and deprecated features in Power Apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview).
+> - The behavior that this article describes is available only when the PDF function experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
+> - Your feedback is very valuable to us - please let us know what you think in the [**Power Apps experimental features community forum**](https://powerusers.microsoft.com/t5/Power-Apps-Experimental-Features/bd-p/PA_ExperimentalFeatures).
 
 ## Description
 
@@ -22,15 +35,12 @@ The PDF function allows you to select a screen or portions of a screen for expor
 
 Different configuration options enable different outcomes for the resulting generated PDF.
 
-**Important**
+> [!IMPORTANT]
+> - PDF generation happens on the device where the app is running. Different devices such as desktop computers and mobile devices will have different capacities when you're generating a PDF.
+> - Generating a PDF with an exceptionally large file size can result in the app crashing. This depends on the capacity of the device that you're running the app on. Be aware of the size and number of images and how much data you want included in the generated PDF, specifically for apps intended for usage on a mobile device.
 
--   PDF generation happens on the device where the app is running. Different devices such as desktop computers and mobile devices will have different capacities when you're generating a PDF.
-
--   Generating a PDF with an exceptionally large file size can result in the app crashing. This depends on the capacity of the device that you're running the app on. Be aware of the size and number of images and how much data you want included in the generated PDF, specifically for apps intended for usage on a mobile device.
-
-**Note**
-
--   You can only generate a PDF from content existing on the screen where you have invoked the PDF function. For example, if you have added the PDF function on screen two then only the content in screen two can be included in the generated PDF.
+> [!NOTE]
+> - You can only generate a PDF from content existing on the screen where you have invoked the PDF function. For example, if you have added the PDF function on screen two then only the content in screen two can be included in the generated PDF.
 
 ## Syntax
 
