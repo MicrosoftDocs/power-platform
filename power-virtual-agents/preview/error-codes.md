@@ -22,7 +22,7 @@ If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.
 
 :::image type="content" source="media/error-codes/c1-error.png" alt-text="Bot error message displayed to bot makers.":::
 
-Errors may also appear in the [Topic Checker](authoring-topic-management.md#topic-errors), where you can easily locate and fix them.
+Errors may also appear in the [Topic Checker](authoring-topic-status.md#topic-errors), where you can easily locate and fix them.
 
 ## Error list
 
@@ -101,7 +101,7 @@ Common problems include, but aren't limited to:
 
 **Error message:** "The Dialog with Id {DialogId} is disabled in the definition. Please Enable the Dialog before using it."
 
-**Resolution:** [Re-enabled the topic](authoring-topic-management.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-a-node).  
+**Resolution:** [Re-enabled the topic](authoring-topic-status.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-a-node).  
 
 ### RedirectToNonExistentDialog
 

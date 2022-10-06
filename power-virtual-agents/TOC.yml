@@ -318,8 +318,8 @@
         href: preview/authoring-ask-a-question.md
       - name: Move between topics
         href: preview/authoring-moving-between-topics.md
-      - name: Manage topics
-        href: preview/authoring-topic-management.md
+      - name: View topic status
+        href: preview/authoring-topic-status.md
       - name: Use system topics
         href: preview/authoring-system-topics.md
       - name: Add comments to bots

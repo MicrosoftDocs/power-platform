@@ -12,7 +12,7 @@ ms.custom: "ceX"
 ms.collection: virtual-agent
 ---
 
-# Manage topics in Power Virtual Agents (preview)
+# View topic status (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -30,18 +30,18 @@ When you save a topic, Power Virtual Agents notifies you if there are errors or 
 
 Errors will prevent the bot from working and must be fixed before you can publish your bot.
 
-:::image type="content" source="media/authoring-topic-management/topics-errors-save.png" alt-text="The message indicates you have errors you should fix.":::
+:::image type="content" source="media/authoring-topic-status/topics-errors-save.png" alt-text="The message indicates you have errors you should fix.":::
 
 You can see the error state of a topic on the Topics page.
 
 > [!NOTE]
 > Unlike warnings, the Topics page only shows errors because they will stop your bot from working.
 
-:::image type="content" source="media/authoring-topic-management/topics-errors.png" alt-text="The topics page identifies the number of errors in your topic.":::
+:::image type="content" source="media/authoring-topic-status/topics-errors.png" alt-text="The topics page identifies the number of errors in your topic.":::
 
 Select the error count to open the authoring canvas to where the first error is. Select **Topic checker** to see a list of the errors. Selecting each error goes directly to the error.  
 
-:::image type="content" source="media/authoring-topic-management/topics-checker.png" alt-text="The topic checker is on the top bar and shows all errors and warnings.":::
+:::image type="content" source="media/authoring-topic-status/topics-checker.png" alt-text="The topic checker is on the top bar and shows all errors and warnings.":::
 
 > [!NOTE]
 > You can save topics with errors but can't publish them.
@@ -71,7 +71,7 @@ When you publish your bot, all topics are published whether they're **On or Off*
 
 You can change this with the toggle in the **Status** column on the Topics page.
 
-:::image type="content" source="media/authoring-topic-management/topics-status.png" alt-text="The Status column shows each topic with an On or Off toggle switch.":::
+:::image type="content" source="media/authoring-topic-status/topics-status.png" alt-text="The Status column shows each topic with an On or Off toggle switch.":::
 
 By default, new topics will be created with their status set to **On**.
 
@@ -84,7 +84,7 @@ Once you have created a few topics, you may want to use a previous topic as a ba
 
 On the Topics page, select the menu icon on a topic's name and then **Make a copy**.
 
-:::image type="content" source="media/authoring-topic-management/topics-menu-icon.png" alt-text="Make a copy from the menu icon." border="false":::
+:::image type="content" source="media/authoring-topic-status/topics-menu-icon.png" alt-text="Make a copy from the menu icon." border="false":::
 
 This option duplicates the selected topic with _(Copy)_ added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
 
