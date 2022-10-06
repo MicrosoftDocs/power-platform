@@ -43,7 +43,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-status.md#topic-er
 | [RedirectToNonExistentDialog](#redirecttononexistentdialog)       | A topic is [redirecting][1] to another topic that no longer exists. |
 | [SystemError](#systemerror)                                       | A system error occurred in Power Virtual Agents.                    |
 
-[1]: authoring-moving-between-topics.md#redirect-to-another-topic
+[1]: authoring-topic-management.md#redirect-to-another-topic
 [2]: advanced-flow.md
 
 ### ContentError
