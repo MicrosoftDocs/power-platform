@@ -26,7 +26,6 @@ As you build bots, you'll likely run into scenarios where you must display the d
 
 Use these prebuilt entities to identify dates and times.
 
-<!-- TODO check back, currently _Date and time_ is the only one enabled so far. -->
 
 - _Date_: A date without a time in the time zone of the bot user.
 - _Date and time_: A date with a time in the time zone of the bot user.
