@@ -59,7 +59,7 @@ Schemas define which fields are sent to the Microsoft 365 Security and Complianc
 |Operation     |Edm.Date         |No         |Name of the message called in the SDK          |
 |UserKey     |Edm.String         |No         |Unique Identifier of the User in AAD. AKA User PUID          |
 |UserType     |Self.UserType         |No         |The Microsoft 365 audit type (Regular, System)          |
-|User     |Edm.String        |No         |UPN of the user          |
+|User     |Edm.String        |No         |Primary email of the user          |
 
 ## Customer engagement apps schema
 The customer engagement apps schema contains fields specific to customer engagement apps and partner teams. 
