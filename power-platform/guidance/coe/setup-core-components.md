@@ -102,6 +102,7 @@ There are several child flows, check to make sure all of these flows are on:
 1. HELPER – CloudFlowOperations
 1. HELPER – CanvasAppOperations
 1. HELPER – ObjectOperations
+1. CLEANUP HELPER - Check Deleted (Ai Models)
 1. CLEANUP HELPER - Check Deleted (Business Process Flows)
 1. CLEANUP HELPER – Check Deleted (Canvas Apps)
 1. CLEANUP HELPER – Check Deleted (Cloud Flows)
@@ -119,15 +120,17 @@ If you get a connection authorization error turning on a flow, you might need to
 
 The following flows support the inventory setup and need to be turned on before proceeding:
 
-- Admin | Add Maker to Group
-- Admin | Excuse Support Envts from Governance Flows
-- Command Center App >  Get M365 Service Messages
-- Command Center App > Initially Populate Bookmarks
-- Command Center App > Set CoE Flows State
-- DLP Editor > Parse impacted resources into CSV
 - Admin | Sync Template v3 CoE Solution Metadata
 - Admin | Sync Template v3 Configure Emails
 - Admin | Sync Template v3 (Connectors)
+- Admin | Add Maker to Group
+- Admin | Excuse Non Inventoried Envts from Governance Flows
+- Admin | Excuse Support Envts from Governance Flows
+- Command Center App >  Get M365 Service Messages
+- Command Center App > Initially Populate Bookmarks
+- Command Center App > Get CoE Flows
+- Command Center App > Set CoE Flows State
+- DLP Editor > Parse impacted resources into CSV
 
 >[!IMPORTANT]
 > Before proceeding, ensure that these flows run and complete successfully, one by one:
@@ -151,6 +154,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow - for example, looking at how is using the Send Email or Get Item actions.
 >This flow temporarily makes the account running the the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow that is using HTTP actions to retrieve further details of those actions (for example, the HTTP host), and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
 
+- Admin | Sync Template v3 (Ai Models)
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Business Process Flows)
 - Admin | Sync Template v3 (Call Updates)
@@ -158,6 +162,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
 - Admin | Sync Template v3 (Desktop flows)
+- Admin | Sync Template v3 (Environment Properties)
 - (optional) Admin | Sync Template v3 (Flow Action Details)
 - Admin | Sync Template v3 (Flows)
 - Admin | Sync Template v3 (Model Driven Apps)
@@ -314,6 +319,7 @@ Environment variables are used to store application and flow configuration data 
 | eMail Header Style | The CSS / Style to use for eMails | [Default CSS](/power-platform/guidance/coe/code-samples/css/default-value-email-header-style) |
 | eMail Body Start | Starting HTML format for eMails | Default style provided |
 | eMail Body Stop | Ending HTML format for eMails | Default style provided |
+| is Full Tenant Inventory |If true, (the default) the CoE inventory tracks all environments. New environments added to the inventory will have their Excuse from Inventory to false. You can opt out individual environments.  If false, the CoE inventory tracks a subset of environments. New environments added to the inventory will have their Excuse from Inventory to true. You can opt in individual environments.  | Yes |
 | FullInventory | Determines whether you want to update only objects that have changed, or all objects. Switching to Yes will cause the flows to inventory every single app, flow, and bot in the tenant every day, and isn't recommended for large tenants.  | No |
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)| Not applicable |
 | Is Teams Install | DO NOT EDIT. This is used to determine whether this installation is in a production environment or Dataverse for Teams environment, and is set for you when you first install the components. | No: Core solution<br>Yes: Core for Teams solution |
