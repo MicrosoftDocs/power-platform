@@ -50,7 +50,8 @@ A variable is associated with a **type**. The type determines what values the va
 | Choice   | A list of string values that have associated synonyms.                                                                |
 | Blank    | A placeholder for "no value" or "unknown value". See [Blanks in Power Fx](/power-platform/power-fx/data-types#blank). |
 
-A variable's type is set based on the first time is has a value assigned.
+A variable's type is set the first time a value is assigned. Order is determined from top to bottom, meaning nodes at the top of the authoring canvas will are considered first over nodes at the bottom. However, when you create branches with condition nodes, branches are ordered from left to right, meaning nodes in the leftmost branch are considered first over nodes in the rightmost branch.
+
 
 Once a variable has been assigned a value, the type for that variable is fixed and it can't be assigned values of any other type. For example, a variable given the starting value of `1` is assigned the type **Number**. Attempting to assign it to a **String** value of `"apples"` will result in an error.
 
@@ -127,12 +128,6 @@ Typically you'll use a [question node](authoring-ask-a-question.md) to save user
    - Use a [literal value](#use-literal-values)
    - Choose an existing variable of the same type from the variable picker. This will set your variable to the same value as the variable you choose.
    - Use a [Power Fx formula](advanced-power-fx.md). This is useful for more complex types, where literal values cannot be used, such as Table and Record types.
-
-## Variable initialization
-
-
-<!-- FIXME: what goes here? -->
-
 
 ## Use literal values
 
