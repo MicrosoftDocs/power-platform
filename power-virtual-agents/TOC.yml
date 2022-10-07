@@ -292,6 +292,8 @@
     href: preview/quickstart.md
   - name: Limitations
     href: preview/limitations.md
+  - name: Key concepts for Composer users
+    href: preview/composer-concepts.md
   - name: Administer and manage
     items:
       - name: Assign licenses
@@ -306,9 +308,7 @@
         href: preview/authoring-export-import-bots.md
   - name: Author and edit
     items:
-      - name: Clone an existing bot
-        href: preview/clone-existing-bot.md
-      - name: Use sample topics
+      - name: Start with sample topics
         href: preview/authoring-template-topics.md
       - name: Create and edit topics
         href: preview/authoring-create-edit-topics.md
@@ -316,14 +316,16 @@
         href: preview/authoring-send-message.md
       - name: Ask a question
         href: preview/authoring-ask-a-question.md
-      - name: Move between topics
-        href: preview/authoring-moving-between-topics.md
       - name: Manage topics
         href: preview/authoring-topic-management.md
+      - name: View topic status
+        href: preview/authoring-topic-status.md
       - name: Use system topics
         href: preview/authoring-system-topics.md
       - name: Add comments to bots
         href: preview/authoring-comments.md
+      - name: Start with existing content
+        href: preview/clone-existing-bot.md
       - name: Test your bot
         href: preview/authoring-test-bot.md
       - name: Troubleshoot error codes
@@ -336,6 +338,8 @@
         href: preview/authoring-variables.md
       - name: Reuse variables across topics
         href: preview/authoring-variables-bot.md
+      - name: Manage date and time in chatbots
+        href: preview/manage-date-and-time.md
       - name: Use expressions using Power Fx
         href: preview/advanced-power-fx.md
       - name: Add user authentication
@@ -378,3 +382,4 @@
         href: preview/configure-sso-teams.md
       - name: Customize the look and feel of the bot
         href: preview/customize-default-canvas.md
+

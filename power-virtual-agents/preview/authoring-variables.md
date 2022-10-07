@@ -1,4 +1,5 @@
 ---
+
 title: "Work with chatbot variables (preview)"
 description: "Use variables with custom and prebuilt entities to created customized bot conversations in Power Virtual Agents preview."
 keywords: "PVA"
@@ -21,6 +22,7 @@ Save customers' responses in a bot conversation to variables and reuse them late
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
+
 Variables can also be passed into, and returned from, [other topics](#receive-values-from-other-topics) and [Power Automate flows](advanced-flow.md).  
 
 ## Variable scopes
@@ -30,6 +32,7 @@ Variables can exist within three scopes:
 - **Topic**: Topic variables can only be referenced within the topics in which they are created. This is the default scope for created variables.
 - **Global**: [Global variables](authoring-variables-bot.md) are available for use across all topics. You can change the scope of any topic variable to make it a global variable.
 - **System**: [System variables](#system-variables) are created automatically and provide additional contextual information about the conversation or the user. They are usually available in all topics.
+
 
 ## Variable types
 
@@ -184,7 +187,7 @@ To receive values from other topics, set the variable's property:
 
 1. Save the topic.
 
-1. Go to a different topic. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirect-to-another-topic) to add a Redirect node to the destination topic.
+1. Go to a different topic. Follow the steps in [Redirect to another topic](authoring-topic-management.md#redirect-to-another-topic) to add a Redirect node to the destination topic.
 
 1. Select **+ Add input**.
 
@@ -220,7 +223,7 @@ To return a variable to the original topic, set the variable's property:
 
 1. Save the topic.
 
-1. Go to the topic that you want to receive a return value. Follow the steps in [Redirect to another topic](authoring-moving-between-topics.md#redirect-to-another-topic) to add a Redirect node to the destination topic.
+1. Go to the topic that you want to receive a return value. Follow the steps in [Redirect to another topic](authoring-topic-management.md#redirect-to-another-topic) to add a Redirect node to the destination topic.
 
     The variable that's being returned to the current topic is shown in the Redirect node. Use the returned variable in your current topic.
 

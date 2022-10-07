@@ -1,16 +1,19 @@
 ---
+
 title: "Troubleshoot error codes (preview)"
 description: "Troubleshoot error responses from your bot in Power Virtual Agents preview."
 author: v-alarioza
 ms.author: v-alarioza
 ms.topic: troubleshooting
 ms.date: 10/10/2022
-
-ms.reviewer: clmori
+ms.reviewer: mvakoc
 manager: shellyha
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
+
 # Troubleshoot error codes (preview)
+
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
 When a bot encounters a problem during a conversation, it will send an error response.
 
@@ -22,7 +25,7 @@ If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.
 
 :::image type="content" source="media/error-codes/c1-error.png" alt-text="Bot error message displayed to bot makers.":::
 
-Errors may also appear in the [Topic Checker](authoring-topic-management.md#topic-errors), where you can easily locate and fix them.
+Errors may also appear in the [Topic Checker](authoring-topic-status.md#topic-errors), where you can easily locate and fix them.
 
 ## Error list
 
@@ -30,6 +33,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 > The term _dialog_ is used in some error messages when referring to a _topic_.
 
 <!-- table best viewed and edited without word wrap -->
+
 | Error code                                                        | Description                                                         |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
 | [ContentError](#contenterror)                                     | There's an error in the topic content.                              |
@@ -42,7 +46,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 | [RedirectToNonExistentDialog](#redirecttononexistentdialog)       | A topic is [redirecting][1] to another topic that no longer exists. |
 | [SystemError](#systemerror)                                       | A system error occurred in Power Virtual Agents.                    |
 
-[1]: authoring-moving-between-topics.md#redirect-to-another-topic
+[1]: authoring-topic-management.md#redirect-to-another-topic
 [2]: advanced-flow.md
 
 ### ContentError
@@ -100,7 +104,7 @@ Common problems include, but aren't limited to:
 
 **Error message:** "The Dialog with Id {DialogId} is disabled in the definition. Please Enable the Dialog before using it."
 
-**Resolution:** [Re-enabled the topic](authoring-topic-management.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-a-node).  
+**Resolution:** [Re-enabled the topic](authoring-topic-status.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-a-node).  
 
 ### RedirectToNonExistentDialog
 

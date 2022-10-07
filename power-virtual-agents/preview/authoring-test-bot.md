@@ -18,8 +18,6 @@ ms.collection: virtual-agent
 
 As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation.
 
-To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step and go to the corresponding node in the authoring canvas.
-
 ## Test a topic in the Test bot pane
 
 1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
@@ -35,10 +33,6 @@ To help you find and fix unexpected behavior, you can enable tracking between to
    The trigger phrase starts the topic's conversation, and the **Test bot** pane displays the bot responses and user response choices you specified.
 
 1. Continue the conversation, testing that it flows in the intended as [designed in the topic](authoring-create-edit-topics.md).
-
-1. Select a response in the **Test bot** pane, which will take you to the response in the conversation editor for that topic. The authoring canvas displays highlighted nodes in green.
-
-  :::image type="content" source="media/authoring-test-bot/test-bot-response.png" alt-text="Select any response in the conversation to see the authoring canvas highlighted to that response." border="false":::
 
 You can return to the authoring canvas for the topic at any time to revise its conversation path. The **Test chat** pane will automatically refresh when you save changes to a topic.
 

@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Use conditions (preview)
 
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+
 You can use **Condition** nodes to branch logic within your topic, comparing the value of a variable to another variable or a specific value. For example, you might check to see if a number variable is greater than a certain number.
 
 ## Prerequisites
