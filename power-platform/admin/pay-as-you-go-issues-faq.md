@@ -4,7 +4,7 @@ description: This article addresses known issues about pay-as-you-go plans and p
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2022
+ms.date: 10/07/2022
 ms.subservice: admin
 ms.author: kaagar 
 ms.reviewer: jimholtz
