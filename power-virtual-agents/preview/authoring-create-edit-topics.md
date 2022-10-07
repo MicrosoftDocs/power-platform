@@ -151,7 +151,6 @@ Once you have used **Cut** or **Copy** to add one or more nodes to the clipboard
 
 - If you select the _add node_ (**+**) menu, then **Paste**, the nodes from the clipboard are added at that point.
 
-<!--
 ## Edit topics with the code editor
 
 The code editor shows the topic in [YAML](https://yaml.org/), a markup language that is easy to read and understand. Use the code editor to copy and paste topics from other bots, even ones created by other authors.
