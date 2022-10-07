@@ -21,6 +21,8 @@ contributors:
 ---
 # Install the Creator Kit
 
+There are two options to install the Creator Kit. You can download and manually install the managed solutions (option 1), or you can install the solution from the AppSource (option 2).
+
 ## Prerequisites
 
 - A [Microsoft Power Platform environment with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
@@ -28,8 +30,9 @@ contributors:
 - The System Customizer security role is needed to use the Creator Kit components.
 - A Power Apps for Microsoft 365 license.
 
-
 ## Option 1: Download and manually install the managed solutions
+
+To download and manually install the managed solutions for the Creator Kit, follow these steps.
 
 ### Step 1 - Install the Creator Kit solution
 
@@ -56,11 +59,11 @@ This will install the following managed solutions:
 - CreatorKitReference(Canvas)
 - CreatorKitReference(MDA)
 
-The following configurations will be modified in the Environment:
+The following configurations will be modified in the environment:
 - *Enable code components for Canvas* is set to **true**
 
 > [!IMPORTANT]
-> Using this AppSource install option will modify the selected Environment's settings. Ensure this automated modification is acceptable for your organization before continuing with this install option.
+> Using this AppSource install option will modify the selected environment's settings. Ensure this automated modification is acceptable for your organization before continuing with this install option.
 
 1. Go to the [Creator Kit page on AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview) page. 
 
