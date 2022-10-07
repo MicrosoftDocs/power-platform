@@ -126,10 +126,6 @@ Typically you'll use a [question node](authoring-ask-a-question.md) to save user
    - Choose an existing variable of the same type from the variable picker. This will set your variable to the same value as the variable you choose.
    - Use a [Power Fx formula](advanced-power-fx.md). This is useful for more complex types, where literal values cannot be used, such as Table and Record types.
 
-## Variable initialization
-
-<!-- FIXME: remove in comment -->
-
 ## Use literal values
 
 Instead of selecting a variable from the menu, you can type a literal value into any variable input field.
