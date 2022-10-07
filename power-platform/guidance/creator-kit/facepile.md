@@ -50,7 +50,7 @@ This code component provides a wrapper around the [Fluent UI Facepile](https://d
 | `Items` | The action items to render. The first item is considered the root item. |
 |`PersonaSize`|Size of the persona to appear on screen|
 |`OverflowButtonType`|To choose which type of Overflow button to appear and whether to appear or not|
-|`MaxDisplayablePersonas`|Maximum number of Persona to appear of the Facepile| Five is the default and recommended number|
+|`MaxDisplayablePersonas`|Maximum number of Persona to appear of the Facepile <br> Five is the default and recommended number|
 |`ImageShouldFadeIn`|Whether the image should have a Fade In effect while appearing|
 |`ShowAddButton`|Whether Add Button should appear in Facepile component|
 |`OverflowButtonLabel`|Aria label for Overflow button|
@@ -61,7 +61,7 @@ This code component provides a wrapper around the [Fluent UI Facepile](https://d
 | Name | Description |
 | ------ | ----------- |
 |`ItemPersonaName`|Display Name of the Persona|
-|`ItemPersonaKey`|The key identify the specific Item| The key must be unique|
+|`ItemPersonaKey`|The key identify the specific Item <br> The key must be unique|
 |`ItemPersonaImage`|The Image Column of Dataverse table that contains Persona Image(Profile Picture)|
 |`ItemPersonaImageInfo`|Url or Base64 Content of Persona Image(Profile Picture)|
 |`ItemPersonaPresence`|Optional - To define the Presence of the persona|
