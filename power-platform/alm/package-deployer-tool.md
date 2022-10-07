@@ -7,9 +7,8 @@ ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 07/27/2022
+ms.date: 10/06/2022
 ms.reviewer: "pehecke"
-
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -20,68 +19,63 @@ search.app:
 
 # Create packages for the Package Deployer tool
 
-Package Deployer lets administrators deploy packages on Microsoft Dataverse instances. A *package* can consist of any or all of the following:  
+Package Deployer lets administrators deploy packages on Microsoft Dataverse instances. A Package Deployer *package* can consist of any or all of the following:  
 
 - One or more Dataverse solution files.  
 - Flat files or exported configuration data file from the Configuration Migration tool. For more information about the tool, see  [Move configuration data across instances and organizations with the Configuration Migration tool](../admin/manage-configuration-data.md).  
 - Custom code that can run before, while, or after the package is deployed to the Dataverse instance.  
-- HTML content specific to the package that can display at the beginning and end of the deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.  
+- HTML content specific to the package that can display at the beginning and end of the deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.
 
-A Visual Studio 2015 or later template (available for download) is used to create packages. After creating a package, use the Package Deployer tool to deploy your package to a Dataverse instance.
+To download Package Deployer and other tools see [Download tools from NuGet](/powerapps/developer/data-platform/download-tools-nuget).
 
-> [!TIP]
-> An alternative method to create a package using the latest version (currently 2022) of Visual Studio is to use [Microsoft Power Platform CLI](../developer/cli/introduction.md). Run the [pac package init](../developer/cli/reference/package.md#pac-package-init) command to create the initial package. More information: [pac package](../developer/cli/reference/package.md)
->
-> In the created project, you will find the ImportConfig.xml file in the PkgAssets folder, and you will be modifying the PackageImportExtension.cs file instead of the PackageTemplate.cs file mentioned below. You will need to read the rest of this article for details on creating your package.
+> [!NOTE]
+> There is another package type called a *plug-in package*. That kind of package is for plug-in dependent assemblies and has no relationship with Package Deployer packages.
 
-<a name="Prereq"></a>
- 
 ## Prerequisites  
 
-- Ensure that you have all the solutions and files ready that you want to include in the package.  
-- Microsoft .NET Framework 4.6.2
-- [Visual Studio 2015 or later version](https://visualstudio.microsoft.com/vs/older-downloads/)
-- [NuGet Package Manager](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d) for Visual Studio 2015
-- Microsoft Dynamics CRM SDK Templates for Visual Studio that contains the package template. You can get it by downloading the [Microsoft Dynamics CRM SDK Templates](https://go.microsoft.com/fwlink/p/?LinkId=400925) and double-click the `CRMSDKTemplates.vsix` file to install the template in Visual Studio.  
+- Ensure that you have all the solution and other files ready that you want to include in the package.  
+- Visual Studio 2019 or later
 
+## Process overview  
 
+To create a Package Deployer package, you will perform the following steps.
 
-<a name="HowTo"></a>
-   
-## Create a package  
+1. Create a Visual Studio project using one of the supported tool extensions
+1. Add solutions and other files to the project  
+1. Update the HTML files
+1. Specify the configuration values for the package
+1. Define custom code for your package
 
- Perform the following five steps to create a package:  
+These steps are described in detail in this topic.
 
-- [Step 1: Create a project using the template](#Step1)  
-- [Step 2: Add your files to the project](#Step2)  
-- [Step 3: Update the HTML files](#Step3)  
-- [Step 4: Specify the configuration values for the package](#Step4)  
-- [Step 5: Define custom code for your package](#Step5)  
+## Create a package
 
-<a name="Step1"></a>  
- 
-#### Step 1: Create a project using the template  
+The first step is to create a Visual Studio project for the package. To do that, you must have one of two available tool extensions installed on your development computer - [Microsoft Power Platform CLI](../developer/cli/introduction#install-microsoft-power-platform-cli.md), or [Power Platform tools for Visual Studio](/power-apps/developer/data-platform/tools/devtools-install). Note that the Power Platform tools extension is currently only available for Visual Studio 2019. However, the created project can be built using Visual Studio 2019 or later.
 
-1. Start Visual Studio, and create a new project.  
-2. In the **New Project** dialog box: 
+### Create a Visual Studio package project
 
-   1. From the list of installed templates, expand **Visual C#**, and select **Dynamics 365 SDK Templates**.  
-   2. Ensure that **.NET Framework 4.6.2** is selected.  
-   3. Select **Dynamics 365 Package**.  
-   4. Specify the name and location of the project, and click **OK**.  
+Select the appropriate tab below to find out how to create a Visual Studio project using the desired extension. Both tools outputs the project in the same format.
 
-    ![New project for creating a custom package.](./media/crm-sdkv6-packagedeployer-01.png)
+#### [Power Platform CLI](#tab/cli)
 
-<a name="Step2"></a>   
+Run the [pac package init](../developer/cli/reference/package.md#pac-package-init) command to create the initial package. More information: [pac package](../developer/cli/reference/package.md)
 
-#### Step 2: Add your files to the project  
+#### [Power Platform tools](#tab/pptools)
+
+Create a new Visual Studio solution, then add a project using the custom Power Platform Package template that was installed as part of the tool extension.
+
+:::image type="content" source="media/pptools-add-package-project.png" alt-text="Add a package project.":::
+
+---
+
+In the created project, you will find the ImportConfig.xml configuration file in the PkgAssets folder, and you will be modifying the PackageImportExtension.cs file as described later in this topic.
+
+### Add your files to the project  
 
 1.  In the **Solutions Explorer** pane, add your solutions and files under the **PkgFolder** folder.  
-2.  For each file that you add under the **PkgFolder** folder, in the **Properties** pane, set the **Copy to Output Directory** value to **Copy Always**.  This ensures that your file is available in the generated package.  
-
-<a name="Step3"></a>  
+2.  For each file that you add under the **PkgFolder** folder, in the **Properties** pane, set the **Copy to Output Directory** value to **Copy Always**.  This ensures that your file is available in the generated package.   
  
-#### Step 3: Update the HTML files: English and other languages  
+Update the HTML files: English and other languages  
 
 1.  In the Solution Explorer pane, expand **PkgFolder** > **Content** > **en-us**. You'll find two folders called `EndHTML` and `WelcomeHTML`. These folders contain the  HTML and associated files that enable you to display information at the end and beginning of the package deployment process. Edit the files in the HTML folder of these folders to add information for your package.  
 
@@ -91,9 +85,7 @@ A Visual Studio 2015 or later template (available for download) is used to creat
     2.  Rename the copied folder to the appropriate language. For example, for the Spanish language, rename it to **es-ES**.  
     3.  Modify the content of the HTML files to add Spanish content.  
 
-<a name="Step4"></a>   
-
-#### Step 4: Specify the configuration values for the package  
+### Specify the configuration values for the package  
 
 1. Define the package configuration by adding information about your package in the **ImportConfig.xml** file available in the **PkgFolder**. Double-click the file to open it for editing. The following list provides information about each parameter and node in the config file.  
 
@@ -324,9 +316,7 @@ A Visual Studio 2015 or later template (available for download) is used to creat
 
    ```  
 
-<a name="Step5"></a>  
- 
-#### Step 5: Define custom code for your package  
+### Define custom code for your package  
 
 1. In the Solution Explorer pane, double-click the **PackageTemplate.cs** file at the root to edit it.  
 
