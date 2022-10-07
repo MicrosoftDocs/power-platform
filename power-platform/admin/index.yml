@@ -86,6 +86,6 @@ landingContent:
        - linkListType: learn
          links:
           - text: Work with Microsoft Power Platform tenants, environments, subscriptions, and Dynamics 365 apps
-            url: /learn/paths/implementing-customer-engagement-apps
+            url: /training/paths/implementing-customer-engagement-apps
           - text: Use best practices to secure and govern Microsoft Power Platform environments
-            url: /learn/paths/best-practices-environments/       
+            url: /training/paths/best-practices-environments/       

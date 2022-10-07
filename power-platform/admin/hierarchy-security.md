@@ -33,7 +33,7 @@ The hierarchy security model is an extension to the existing security models tha
 > [!NOTE]
 > With the Manager hierarchy security model, a manager has access to the records owned by the user or by the team that a user is a member of, and to the records that are directly shared with the user or the team that a user is a member of.  When a record is shared by a user who is outside of the management chain to a direct report user with Read-only access, the direct report's manager only has Read-only access to the shared record. 
 > 
-> When you enabled the [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), manager can have direct reports from different business units. You can use the following [environment database settings](environment-database-settings.md) to remove the business unit restriction.
+> When you enabled the [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), manager can have direct reports from different business units. You can use the following [environment database settings](environment-database-settings.md) to remove the business unit restriction.
 > 
 > **ManagersMustBeInSameOrParentBusinessUnitAsReports**
 > 

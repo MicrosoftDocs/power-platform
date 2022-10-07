@@ -62,7 +62,7 @@ Publisher _myPublisher = new Publisher
    UniqueName = "contoso-publisher",
    FriendlyName = "Contoso publisher",
    SupportingWebsiteUrl =
-      "https://docs.microsoft.com/powerapps/developer/data-platform/overview",
+      "https://learn.microsoft.com/powerapps/developer/data-platform/overview",
    CustomizationPrefix = "contoso",
    EMailAddress = "someone@contoso.com",
    Description = "This publisher was created from sample code"

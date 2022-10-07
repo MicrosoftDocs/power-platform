@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for production environments of Dynamics 365 SaaS applications if there's an Azure region-wide outage. 
 author: MicroSri
-ms.date: 04/19/2022
+ms.date: 09/23/2022
 ms.reviewer: jimholtz
 contributors: 
  - sericks 
@@ -38,7 +38,7 @@ Customer engagement apps adhere to the Microsoft business continuity and disaste
 
 As seen in the preceding diagram, Microsoft provisions compute infrastructure so that it can handle the traffic volume if there's an environment or region-level failover, similar to data storage. 
 
-If an outage is caused by faulty hardware or a network interruption, we route the traffic to the secondary region environments. Recovery Point Objective (RPO) is small and could take up to a few seconds or a couple of minutes.
+If an outage is caused by faulty hardware or a network interruption, we don’t perform region failover to the secondary region environments to avoid potential data loss.
 
 In the event of an unanticipated region-wide outage, such as a natural disaster that affects the entire Azure region, and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary environments. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. Recovery Point Objective (RPO) is small and could take up to a few seconds or couple of minutes.  
 
