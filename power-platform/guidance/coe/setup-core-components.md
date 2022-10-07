@@ -93,6 +93,9 @@ The import can take up to 15 minutes to be completed.
 >[!NOTE]
 >The next steps walk you through turning on flows that. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
 
+>[!NOTE]
+>The steps below will create an inventory of all enviroments in your tenant, if you wish to inventory only a subset of environments, plesae see [Setting up CoE for a subset of environments](faq.md#setting-up-coe-for-a-subset-of-environments) before proceeding.
+
 ## Turn on child flows
 
 There are several child flows, check to make sure all of these flows are on:

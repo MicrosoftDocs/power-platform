@@ -82,6 +82,25 @@ This article will provide you with answers to frequently asked questions and tip
 
 1. After you've updated all run-only users, you can turn on the child flow.
 
+## Setting up CoE for a subset of Environments
+Sometimes tenants want to have individual business organizations run their own smaller CoE. This is how to set that up.
+
+> [!IMPORTANT]
+> This is not a security feature and does not implement data privacy or row level security. The feature is only intended to make monitoring and managing environments easier for organizational units
+
+1. After import of the Core components and before you turn on flows
+1. Set the value of the **is Full Tenant Inventory** environment variable to **No** (Learn more: [update environment variables](#update-environment-variables)).
+1. Return to inventory setup and turn on all inventory flows
+1. Wait for first inventory run of **Admin | Sync Template v3** to complete.
+1. Note that all the environments in the tenant are  added as excused from inventory
+      ![All envts start as opted out](media/tips-Opt-In-Envt1.png "All envts start as opted out")
+
+1. Mark up the environments you wish to monitor and manage
+      ![Opt-in desired environments](media/tips-Opt-In-Envt2.png "Opt-in desired environments")
+
+1. Wait for next run of inventory to complete
+
+
 ## Running a full inventory
 
 The sync flows in the core component solution will only update resources that have changed since the last run. After an upgrade, you'll only see the benefits of bug fixes or changes when you run a full inventory sync by doing the following:
