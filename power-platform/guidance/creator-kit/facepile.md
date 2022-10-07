@@ -1,11 +1,11 @@
 ---
-title: Facepile control reference | Creator Kit
+title: Facepile control reference | Creator Kit (preview)
 description: Learn about the Creator Kit Facepile control.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 09/30/2022
+ms.date: 10/06/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -20,7 +20,9 @@ contributors:
   - slaouist
 ---
 
-# :::no-loc text="Facepile"::: control (Preview)
+# :::no-loc text="Facepile"::: control (preview)
+
+[This article is pre-release documentation and is subject to change.]
 
 A control used to display and interact with images.
 
@@ -28,6 +30,10 @@ A control used to display and interact with images.
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Facepile).
 
 :::image type="content" source="media/facepile.png" alt-text="Facepile control.":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Description
 
@@ -56,10 +62,10 @@ This code component provides a wrapper around the [Fluent UI Facepile](https://d
 | ------ | ----------- |
 |`ItemPersonaName`|Display Name of the Persona|
 |`ItemPersonaKey`|The key identify the specific Item| The key must be unique|
-|`ItemPersonaImage`|The Image Column of Dataverse table which contains Persona Image(Profile Picture)|
+|`ItemPersonaImage`|The Image Column of Dataverse table that contains Persona Image(Profile Picture)|
 |`ItemPersonaImageInfo`|Url or Base64 Content of Persona Image(Profile Picture)|
-|`ItemPersonaPresence`|Optional - To defined the Presence of the persona|
-|`IsImage`| Whether the persona image(ItemPersonaImage) is a Image Column of Dataverse table. This allows the component to render the image based on the type(Url or Image). True incase Image needs to refered from Dataverse table & false, incase, its a Url or Base64 to be referred from ItemPersonaImageInfo property|
+|`ItemPersonaPresence`|Optional - To define the Presence of the persona|
+|`IsImage`| Whether the persona image(ItemPersonaImage) is an Image Column of Dataverse table. <br> This property allows the component to render the image based on the type(Url or Image). True in case Image needs to referred from Dataverse table & false, in case, it's a Url or Base64 to be referred from ItemPersonaImageInfo property|
 |`ItemPersonaClickable`|Whether or not the persona should be clickable|
 
 Example Power Fx formula for `Items`:
@@ -103,7 +109,7 @@ Example Power Fx formula for `Items`:
 
 | Property | Description |
 | -------- | ----------- |
-| `InputEvent` | An event to send to the control. E.g. `SetFocus`. See below. |
+| `InputEvent` | An event to send to the control. For example, [SetFocus](#behavior). |
 
 ## Behavior
 
