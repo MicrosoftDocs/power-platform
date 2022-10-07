@@ -71,6 +71,17 @@ Given the following JSON string in a variable named `JsonString`
     Value( ParseJSON( JsonString ).number )
     ```
 
+In case a field name consists of an invalid identifier name, you can put the field names in single quotes.
+Given the following JSON string in a variable named `JsonString`
+```JSON
+{ "0": { "child-field": "text value" } }
+```
+
+1. The following formula returns the text `text value`:
+    ```powerapps-dot
+    Text( ParseJSON( JsonString ).'0'.'child-field' )
+    ```
+
 ### Blanks
 Given the following JSON string in a variable named `JsonString`
 ```JSON
