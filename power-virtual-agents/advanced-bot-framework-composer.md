@@ -228,7 +228,7 @@ To troubleshoot your bot in Power Virtual Agents, use the [topic checker](author
 To learn more about developing in Bot Framework Composer, see these resources:
 
 - [Bot Framework Composer documentation](/composer/)
-- [Tour of Composer](/composer/quickstart-tour-of-composer)
+- [Tour of Composer](/composer/introduction)
 - [Tutorial: Create a new bot](/composer/tutorial/tutorial-create-bot)
 - [Tutorial: Add cards and buttons to your bot](/composer/tutorial/tutorial-cards)
 - [Tutorial: Add language generation to your bot](/composer/tutorial/tutorial-language-generation)

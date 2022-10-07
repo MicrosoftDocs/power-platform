@@ -159,6 +159,8 @@
                   href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
                 - name: Use with Power Apps portals and Power Pages
                   href: coe/almaccelerator-powerpages.md
+                - name: Use with code first components
+                  href: coe/almaccelerator-codefirst.md
                 - name: Configuring the ALM Accelerator Pipelines
                   href: coe/almaccelerator-pipelines.md
                 - name: Deployment settings for ALM Accelerator
@@ -359,23 +361,7 @@
             - name: Set focus
               href: creator-kit/setfocus.md
     - name: Automation adoption best practices
-      items:
-        - name: Overview
-          href: automation-coe/overview.md
-        - name: Strategy
-          href: automation-coe/strategy.md
-        - name: Holistic enterprise automation techniques
-          href: automation-coe/heat.md
-        - name: Automation admin and governance
-          href: automation-coe/automation-admin-gov.md
-        - name: Automation Kit for Power Platform
-          href: /power-automate/guidance/automation-kit/overview/introduction
-        - name: Manage Power Automate for desktop on Windows
-          href: automation-coe/manage-pad-on-windows.md
-        - name: Automation Maturity Model overview
-          href: automation-coe/automation-maturity-model-overview.md
-        - name: Automation Maturity Model details
-          href: automation-coe/automation-maturity-model-details.md
+      href: /power-automate/guidance/automation-coe/overview
     - name: Real-world architecture examples
       items:
         - name: Overview
@@ -412,7 +398,7 @@
           href: expressroute/setup.md
         - name: ExpressRoute readiness checklist
           href: expressroute/checklist.md
-    - name: Resources      
+    - name: Resources
       items:
         - name: Icons
           href: icons.md
