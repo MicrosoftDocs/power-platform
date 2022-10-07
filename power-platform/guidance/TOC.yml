@@ -324,8 +324,12 @@
                   href: creator-kit/nav.md
                 - name: Pivot
                   href: creator-kit/pivot.md
-            - name: DetailsList
-              href: creator-kit/detailslist.md
+            - name: Lists and Items
+              items:
+                - name: DetailsList
+                  href: creator-kit/detailslist.md
+                - name: Facepile (preview)
+                  href: creator-kit/facepile.md
             - name: Pickers
               items:
                 - name: Calendar (preview)
