@@ -50,7 +50,7 @@ These steps are described in detail in this topic.
 
 ## Create a package
 
-The first step is to create a Visual Studio project for the package. To do that, you must have one of two available tool extensions installed on your development computer - [Microsoft Power Platform CLI](../developer/cli/introduction#install-microsoft-power-platform-cli.md), or [Power Platform tools for Visual Studio](/power-apps/developer/data-platform/tools/devtools-install). Note that the Power Platform tools extension is currently only available for Visual Studio 2019. However, the created project can be built using Visual Studio 2019 or later.
+The first step is to create a Visual Studio project for the package. To do that, you must have one of two available tool extensions installed on your development computer - [Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli), or [Power Platform tools for Visual Studio](/power-apps/developer/data-platform/tools/devtools-install). Note that the Power Platform tools extension is currently only available for Visual Studio 2019. However, the created project can be built using Visual Studio 2019 or later.
 
 ### Create a Visual Studio package project
 
@@ -65,6 +65,8 @@ Run the [pac package init](../developer/cli/reference/package.md#pac-package-ini
 Create a new Visual Studio solution, then add a project using the custom Power Platform Package template that was installed as part of the tool extension.
 
 :::image type="content" source="media/pptools-add-package-project.png" alt-text="Add a package project.":::
+
+More information about using the Power Platform tools extension: [Quickstart: Create a Power Platform Tools project](/power-apps/developer/data-platform/tools/devtools-create-project)
 
 ---
 
