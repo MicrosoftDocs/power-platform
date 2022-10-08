@@ -118,8 +118,8 @@ Make sure you have the System Administrator permission to update the setting.
   
     In the legacy web client, in the **Change Business Unit** dialog box, use the **Lookup** button (![Lookup button.](media/lookup-4.png)) to select a business unit.  
 
-> [!NOTE]
-> If you have enabled [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), you can use the following [environment database settings](environment-database-settings.md) to manage your user security role and how you want to move the user’s records when you are changing the user’s business unit.
+> [!NOTE] 
+> If you have enabled [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use the following [environment database settings](environment-database-settings.md) to manage your user security role and how you want to move the user’s records when you are changing the user’s business unit.
 > 
 > 1. **DoNotRemoveRolesOnChangeBusinessUnit**
 >    default = false  (the user’s assigned security role is removed) 
@@ -144,7 +144,7 @@ Make sure you have the System Administrator permission to update the setting.
 4. In the **Change Business Unit** dialog box, select a business unit. Enable **Move records to new business unit** to move to a new business unit. Select **OK**. 
   
 > [!NOTE]
-> If you have enabled [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), you can use the following [environment database settings](environment-database-settings.md) to manage your team security role and how you want to move the team's records when you are changing the team's business unit.
+> If you have enabled [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use the following [environment database settings](environment-database-settings.md) to manage your team security role and how you want to move the team's records when you are changing the team's business unit.
 > 
 > 1. **DoNotRemoveRolesOnChangeBusinessUnit**
 >    default = false  (the team's assigned security role is removed) 
