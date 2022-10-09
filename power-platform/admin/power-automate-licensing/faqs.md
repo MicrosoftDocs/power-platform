@@ -17,9 +17,6 @@ search.app:
 ---
 
 
-<!-- note from editor: This FAQ includes many mentions of Dynamics without the 365. They should always be together, so I added 365 where needed. -->
-
-
 # Frequently asked questions about Power Automate licensing
 
 ## Power Automate license plans
@@ -250,14 +247,12 @@ The following Power Automate capabilities aren't included in Power Apps licenses
 - [Robotic Process Automation](./types.md#robotic-process-automation)
 - [AI Builder capacity](./types.md#ai-builder-credits)
 
-
 #### Example of Power Automate use within an app created using Power Apps context
 
 A user with a standalone Power Apps license runs an app that uses a SQL database as the data source. The app created using Power Apps also includes flows that do the following:
 
 - Read from or write to a SQL database.
 - Use a built-in Power Apps trigger or action—for example, to send a push notification to the app created using Power Apps.
-
 
 #### Example of Power Automate use outside of an app created using Power Apps context
 
@@ -267,10 +262,6 @@ The same user ([in the example above](#example-of-power-automate-use-within-an-a
 - It doesn't interact in any way with the app created using Power Apps (or its data sources).
 
 In this example, the app created using Power Apps is being used outside the context of Power Apps so the user needs a standalone Power Automate license.
-
-
-<!-- Note from editor: The following heding was identical to the one above, so I modified it. Does that work? -->
-
 
 #### Second example of Power Automate use outside of an app created using Power Apps context
 
@@ -283,7 +274,6 @@ If a premium flow is not in context of any app, you must purchase a standalone P
 ### How can I easily determine if my flow is in context of a Power Apps/Dynamics 365 app?
 
 Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be deleted if the corresponding apps are deleted? If so, the flow is in context. 
-
 
 ## Multiplexing
 
@@ -302,7 +292,7 @@ Here are a few examples of what multiplexing is or isn't:
 Definitions: 
 
 - **Service account**: Azure Active Directory (Azure AD) user account used as a service account. Service accounts are a special type of account that are intended to represent a non-human entity such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, are difficult to track and managing their passwords is a challenge. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. 
- 
+
 - **Service principal**: Azure AD service principal functions as the identity of the application instance. Service principals define who can access the application and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object. Power Automate doesn't yet support a flow to run under service principal; the [feature](/power-platform-release-plan/2022wave1/power-automate/ownership-supported-service-principals) is planned. 
 
 - **Non-interactive users**: Dataverse supports non-interactive users for activities like background processes that migrate data between databases. These do not require a user to interact with the service. There is a maximum limit of 7 non-interactive users per tenant. Non-interactive users are not yet supported by Power Automate. 
@@ -320,26 +310,23 @@ Guidance: This guidance is specific to flows that run under a service account as
   - All the users who have the credentials for the service account and the service account need a Power Apps/Dynamics 365 license. 
   - If they don’t have a Power Apps/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
   - Alternatively, the flow can be licensed with a per flow license and none of the users/service account needs a license. 
-- Multiple users sharing credentials of a service account and using premium flows with one premium per user license assigned to the service account is considered multiplexing and the flow isn't compliant. 
+- Multiple users sharing credentials of a service account and using premium flows with one premium per user license assigned to the service account is considered multiplexing and the flow isn't compliant.
 
 > [!NOTE]
 > The guidance is specific to service accounts used as flow owners or run-only users. Flows using service accounts as connections or co-owners are not impacted by this guidance. 
 > 
-> This is guidance only and not hard enforcement. Admins are responsible for licensing all the flows correctly to stay compliant. 
+> This is guidance only and not hard enforcement. Admins are responsible for licensing all the flows correctly to stay compliant.
 
 
 ### There's a premium flow that sends approval requests to a set of users and then waits for the users to approve or reject the request before it continues running.  Do the approvers need a premium license?
 
-Every user benefiting from the flow needs a license. But, if the flow is a personal automation where only the owner is benefiting from the flow, users who respond to approval requests don't need a premium license. 
+Every user benefiting from the flow needs a license. But, if the flow is a personal automation where only the owner is benefiting from the flow, users who respond to approval requests don't need a premium license.
 
-
-<!-- note from editor: What is the question below and the one after? -->
-
-### Automated flow - User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL database (Premium). Multiple people can add items to the list created using Microsoft Lists.
+### Automated flow - User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL database (Premium). Multiple people can add items to the list created using Microsoft Lists. Do users need a premium license?
 
 It depends on who is getting the value from the flow. If the users are getting value from the flow directly or indirectly, they need a premium license. If the flow is for personal automation, the flow runs in the context of owner's license for automated or scheduled flows and the invoking user's license for instant, Power Apps, or Dataverse-triggered flows. So, the person who added the item to the list created using Microsoft Lists doesn't need a premium license.
 
-### We have an instant flow with run-only users and it uses premium connectors. The maker shares that flow with their team and allows them to run that flow.
+### We have an instant flow with run-only users and it uses premium connectors. The maker shares that flow with their team and allows them to run that flow. Does everyone need a premium license?
 
 Everyone who invokes the flow needs a premium license because it is an instant flow.
 
