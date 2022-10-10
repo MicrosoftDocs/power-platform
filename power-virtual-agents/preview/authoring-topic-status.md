@@ -18,12 +18,6 @@ ms.collection: virtual-agent
 
 There are a number of ways you can manage your topics. Power Virtual Agents includes a topic checker that lets you know if there are errors in your topics, you can turn topics on or off so they don't appear to people chatting with your bot, and you can copy or duplicate topics to make it easier to create new ones.
 
-- [Manage topics in Power Virtual Agents](#manage-topics-in-power-virtual-agents)
-  - [Topic errors](#topic-errors)
-    - [Types of errors](#types-of-errors)
-  - [Topic status](#topic-status)
-  - [Copy a topic](#copy-a-topic)
-
 ## Topic errors
 
 When you save a topic, Power Virtual Agents notifies you if there are errors or warnings. Warnings won't stop the bot from working, but they may cause individual topics not to work as expected, so you should fix them when you see them.
