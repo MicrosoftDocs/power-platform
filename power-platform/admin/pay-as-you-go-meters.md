@@ -168,7 +168,7 @@ The Power Pages authenticated user meter enables organizations to create website
 The Power Pages Authenticated user meter measures total number of unique monthly active authenticated users of each website in a pay-as-you-go environment.
 An active authenticated user is someone who logs in to the website (using any auth provider) at least once in the given month. Repeat logins on the same website by a user isn't counted. However, if a user logs in to multiple websites present in the same environment, they’ll be counted as an active user for each website they log into that month.
 
-For example, an environment has three websites: Website A, Website B, and Website C. This environment is now enabled for pay-as-you-go pricing:
+For example, an environment has three websites: **website A**, **website B**, and **website C**. This environment is now enabled for pay-as-you-go pricing:
 
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
@@ -186,9 +186,9 @@ Example pricing
 
 | Website | Month #1 | Month #2 | Month #3 |
 | - | - | - | - |
-| Website A | two active users | No active users | two active users |
-| Website B | three active users | No active users | two active users |
-| Website C | four active users | No active users | two active users |
+| website A | Two active users | No active users | Two active users |
+| website B | Three active users | No active users | Two active users |
+| website C | Four active users | No active users | Two active users |
 | Total cost: | $36</br>(9 x $4/active user/website) | $0</br>(0 x $0/active user/website) | $24</br>(6 x $4/active user/website) |
 
 Users with Power Apps per-user license or a Dynamics 365 enterprise license that provides access to website won't be counted.

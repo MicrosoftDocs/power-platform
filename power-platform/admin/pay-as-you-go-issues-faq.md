@@ -154,7 +154,7 @@ If an environment already has Power Apps portal logins/page view or Power Page
 
 For Anonymous users, uniqueness is determined through a unique anonymous user ID stored in a browser cookie. 
 
-### What happens if an anonymous user access the website using a different browser/device or cleans up browser cookies? 
+### What happens if an anonymous user accesses the website using a different browser/device or cleans up browser cookies? 
 
 If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new unique anonymous user ID is generated and user would be counted as a different user. 
 

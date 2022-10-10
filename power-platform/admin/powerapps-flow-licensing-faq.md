@@ -415,51 +415,51 @@ Portals are licensed at a monthly rate that is based on a customer’s anticipat
 
 ## Power Pages
 
-### How is Power Pages Licensed?
+### How is Power Pages licensed?
 
 Power Pages licensing is capacity based and offers two types of capacities based on user type: **authenticated users per website per month** and **anonymous users per website per month**.
 
-1. **Authenticated Users**\*
+1. **Authenticated Users**
 
-    1. The **authenticated user capacity** subscription license can be purchased for the anticipated number of unique, authenticated users *employees(internal)* or *non-employees(external)* accessing a website in a month. 
+    1. The **authenticated user capacity** subscription license can be purchased for the anticipated number of unique, authenticated users. For example, **employees (internal)** or **non-employees (external)** accessing a website during a month. 
 
     1. The **authenticated user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of authenticated users who have accessed a website in a month.
 
     **Meter Definition:** Power Pages authenticated user pay-as-you-go meter - A measure of the number of unique authenticated users per website per month.
 
-1. **Anonymous Users**\*
+1. **Anonymous Users**
 
     1. The **anonymous user monthly capacity** subscription license can be purchased for the anticipated number of unique, anonymous users accessing a website in a month.
 
     1. The **anonymous user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of anonymous users who have accessed a website in a month.
 
-    **Meter Definition:** Power Pages Anonymous per user/website pay-as-you-go meter - A measure of the number of unique Anonymous users per website per month.
+    **Meter Definition:** Power Pages Anonymous per user/website pay-as-you-go meter - A measure of the number of unique anonymous users per website per month.
 
-### What is an authenticated user and how are authenticated user/website/month calculated?
+### What is an authenticated user and how are authenticated users/website/month calculated?
 
-Authenticated users are users who obtain secure access to a website by logging in through an authentication provider on the website. 
+Authenticated users are users who obtain secure access to a website by logging in through an authentication provider. 
 
 Authenticated user/website/month are calculated as unique users who log into the website in a calendar month duration. Even if a user logs in multiple times to a website in a calendar month, then that user is counted as one user. Uniqueness is determined by using the ID of the contact record (Microsoft Dataverse contact table) to which the user is mapped.
 
-### What is an anonymous user and how are anonymous user/website/month calculated?
+### What is an anonymous user and how are anonymous users/website/month calculated?
 
 Anonymous users are users who browse a website and don't log in.
 
 Anonymous users/website/month are calculated as unique users who access one or more anonymous pages of the website in a calendar month duration. Uniqueness is determined through a unique anonymous user ID stored in a browser cookie. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new anonymous user ID is generated and user would be counted as a different user.
 
-### What are the scenarios in which a user isn't counted as anonymous user even though user browses an anonymous page on the website?
+### What are the scenarios in which a user isn't counted as anonymous user even though the user browses an anonymous page on the website?
 
-There are several scenarios in which a user who has anonymously browsed the website won't be counted in the meter, some of these are described below: -
+There are several scenarios in which a user who has anonymously browsed the website won't be counted in the meter, some of these are described below: 
 
 1. Any access of a website running in trial mode won't be counted.
 
 1. Any access of a website running in private mode won't be counted.
 
-1. If the user access specific pages on the website, then they aren't counted as anonymous users, these are:
+1. If the user accesses specific pages on the website, then they aren't counted as anonymous users, these are:
 
-    1. Pages related to log in like signin, register, invitation, and externalauthenticationcallback. This is done to ensure if the user is trying to authenticate to the website, they aren't counted as anonymous user.
+    1. Pages related to log in like signin, register, invitation, and externalauthenticationcallback. This is done to ensure if the user is trying to authenticate to the website, they aren't counted as an anonymous user.
 
-    1. System pages like the ones starting with **\_** such as **\_services** and **\_resource**.
+    1. System pages like the ones starting with **\/_** such as **\/_services** and **\/_resource**.
 
     1. If a page returns a redirect response (http 3xx status).
 
@@ -471,7 +471,7 @@ There are several scenarios in which a user who has anonymously browsed the webs
 
 1. If there's a monitoring system setup to test website availability periodically, it will be removed if it sends a non browser user agent. In case your monitoring system sends a user agent that is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend targeting **/\_services/about** page of your website to ensure that it isn't counted in anonymous user access.
 
-1. If a user is accessing only static resources like CSS, JavaScript, and images won't be counted.
+1. If a user is accessing only static resources (CSS, JavaScript, and images) won't be counted.
 
 1. If a user is browsing anonymously and later logs in to the website within same day (UTC timezone), then that user will only be counted as authenticated user and won't be counted as anonymous user.
 
@@ -479,11 +479,11 @@ There are several scenarios in which a user who has anonymously browsed the webs
 
 If a user accesses a site in both an anonymous and an authenticated manner in the same session or even within same day (24 hours using UTC time zone), the user will only be counted as an authenticated user and not as anonymous user.
 
-### If my website is authenticated, however it has an anonymous log in page. Do I need to purchase anonymous user subscription?
+### Access to my website is authenticated, however it has an anonymous log in page. Do I need to purchase anonymous user subscription?
 
 No, log in page access isn't counted for calculating anonymous users. So if the only anonymous page is sign in page, then it will not require anonymous user subscription to be purchased.  
 
-However, it's important to ensure that rest of the site is made authenticated. This can be done by using Page level permissions on home page and only making it available for authenticated user roles. If any other method is used like using a client side (JavaScript) redirect to log in page, then it might lead to some page being available anonymously.
+However, it's important to ensure that rest of the site is made authenticated. This can be done by using Page level permissions on home page and only making it available for authenticated user roles. If any other method is used like using a client side (JavaScript) redirect to log in page, then it might lead to some pages being available anonymously.
 
 ### How much does these licenses cost?
 
@@ -505,7 +505,7 @@ The Power Pages authenticated per user and Power Pages anonymous per user offers
 | Tier 2 | 20 packs | 10,000+ users | $37.50 |   |
 | Tier 3 | 200 packs | 100,000+ users | $25 |   |  
 
-Price quoted above are list prices for commercial channel, special prices are offered for Education and Non-profit customers. 
+Price quoted above are list prices for commercial channel, special prices are offered for education and non-profit customers. 
 
 ### Does Power Pages licenses include Dataverse storage?
 
@@ -515,7 +515,7 @@ Yes, Dataverse database and Dataverse file capacity is included with the authent
 
 | Capacity Type   | Dataverse Database storage per tenant | Dataverse database storage per user | Dataverse file storage per user |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-| Authenticated per user plan  | 5 GB   | 2GMB   | 16 GB   |
+| Authenticated per user plan  | 5 GB   | 2 GB   | 16 GB   |
 | Anonymous per user plan  | 5 GB   | 500 MB   | 4 GB   |
 
 #### Dataverse default capacity - pay-as-you-go plans
@@ -578,7 +578,7 @@ Internal authenticated users of a Power Pages website can use one of the followi
   1. **Pay-as-you-go based**
 
       1. **Power Pages authenticated user pay-as-you-go meter** – Users can access Power Pages website that are present in environments enabled for pay-as-you-go licensing.  
-      If a user accessing the website has a Power Apps per user or a Dynamics 365 enterprise license assigned, then that user won't be counted in Power Pages Authenticated user pay-as-you-go meter.
+      If a user accessing the website has a Power Apps per user or a Dynamics 365 enterprise license assigned, then that user won't be counted in Power Pages authenticated user pay-as-you-go meter.
 
 ### What is the difference between Power Apps portals login capacity and Power Pages authenticated per user/month capacity?
 
@@ -592,8 +592,8 @@ For example, in a scenario where a website was accessed by a total of 100 authen
   1. **Power Apps portal login**</br>
     With Power Apps portal logins, total number of logins would be 100 \* 30 = 3000 (as each user is logging in once every day) and customer will need to purchase capacity for 3000 logins for the website.
 
-### If I create a Power Pages website that can potentially be used by 100,000 authenicationusers, however in a given month it will only be used by 5,000 users (out of the 100,000). Do I need to purchase authenticated per user capacity for 100,000 users or 5,000 users?  
-Power Pages authenticated per users/website is licensed based on the number of unique authenticated users who access the site in a month. In this example, the customer should purchase capacity for 5,000 users.  
+### If I create a Power Pages website that can potentially be used by 100,000 authenicated users, however in a given month it will only be used by 5,000 users (out of the 100,000). Do I need to purchase authenticated per user capacity for 100,000 users or 5,000 users?  
+Power Pages authenticated per user/website is licensed based on the number of unique authenticated users who access the site in a month. In this example, the customer should purchase capacity for 5,000 users.  
 The same is true if the users are anonymous and not authenticated.
 
 ### Do I require additional licensing for Power Pages content delivery network (CDN) and web application firewall (WAF) capabilities?
@@ -604,7 +604,7 @@ No. Both CDN and WAF capabilities are included as part of Power Pages licensing 
 
 1. **Authenticated Users** -&gt; Minimum quantity that needs to be assigned to an environment is 25.
 
-    For example, if you have three websites (in three different environment) and bought one authenticated user pack (100 users), you can assign them in the following ways:
+    For example, if you have three websites (in three different environments) and bought one authenticated user pack (100 users), you can assign them in the following ways:
 
     - Environment 1: 25 (min 25)
     - Environment 2: 35 (min 25)
