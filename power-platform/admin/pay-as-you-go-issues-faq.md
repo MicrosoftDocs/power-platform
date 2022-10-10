@@ -160,7 +160,7 @@ If the user accesses the site using different browsers or devices or cleans up b
 
 ### My website is authenticated however it has an anonymous sign in page. Will the users accessing sign in page be counted as anonymous users? 
 
-If the users are accessing only sign in page, then they won't be counted as anonymous users. There are several types of pages that aren't counted for the anonymous user meter. The pages are described in [Power Pages – Anonymous user meter](pay-as-you-go-meters.md#power-pages-–-anonymous-user-meter).
+If the users are accessing only sign in page, then they won't be counted as anonymous users. There are several types of pages that aren't counted for the anonymous user meter. The pages are described in [Power Pages – Anonymous user meter](pay-as-you-go-meters.md#power-pages--anonymous-user-meter).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
