@@ -4,7 +4,7 @@ description: Admins can configure an automatic cleanup process that removes inac
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/25/2022
+ms.date: 09/30/2022
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: jimholtz
@@ -120,7 +120,7 @@ For more information, see [recover environment](recover-environment.md).
 Administrators can change the length of time Power Platform waits to disable inactive and delete disabled Dataverse for Teams environments.
 
 > [!NOTE]
-> This view is not yet available. We will be rolling out this policy setting this Fall.
+> This view is not yet available. We will be rolling out this policy in a future release.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 

@@ -120,8 +120,8 @@ In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
 
 Users can now run unattended desktop flows within the environment that has the unattended capacity.
 
->[!NOTE]
->The unattended add-on is environment specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. Also, if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the parallel flow runs.
+> [!NOTE]
+> The unattended add-on is environment specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. Also, if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the parallel flow runs.
 
 ### Assign capacity add-on to an environment
 
@@ -159,8 +159,8 @@ It's also possible to do a bulk removal of licenses through PowerShell. See [Rem
 
 Additional guidance about bulk removal of services within a license can be found in the [Disable access to services with Microsoft 365 PowerShell](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell) article.
 
->[!NOTE]
->This action removes the Power Automate tile by default. A user may still choose to use Power Automate as an individual.
+> [!NOTE]
+> This action removes the Power Automate tile by default. A user may still choose to use Power Automate as an individual.
 
 #### Why did 10,000 licenses for Power Automate show up in my Microsoft 365 tenant?
 
@@ -207,8 +207,8 @@ Alternatively, see your [subscription page](https://portal.office.com/account/#s
 
 Yes. To get started, use the [self-service purchase](/microsoft-365/commerce/subscriptions/self-service-purchase-faq) method for Microsoft Power Platform (Power BI, Power Apps, and Power Automate).
 
->[!IMPORTANT]
->This capability isn't available to government, non-profit, or education tenants in the United States.
+> [!IMPORTANT]
+> This capability isn't available to government, non-profit, or education tenants in the United States.
 
 Customers can make a self-service purchase from Power Automate. To do this, they first provide their email address to confirm if they are a user in an existing Azure Active Directory (Azure AD) tenant. Next, they'll need to log in by using their Azure AD credentials. After signing in, the they need to indicate the number subscriptions they want to purchase and provide a credit card for payment. When the purchase is complete, they'll can start using their subscription. The purchaser can also access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
 

@@ -12,7 +12,7 @@ ms.custom: "licensing, admin, ceX"
 ms.collection: virtual-agent
 ---
 
-# Licensing for Power Virtual Agents
+# Get access to Power Virtual Agents
 
 This topic includes details about Power Virtual Agents Licensing. You can also review the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) to learn more.
 
