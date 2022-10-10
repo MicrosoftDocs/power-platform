@@ -144,9 +144,8 @@ First, you need to configure where you're deploying your bot canvas.
                hideUploadButton: true
             };
 
-            // Add your BOT ID below 
-            var BOT_ID = "<ENTER YOUR BOT ID>"; 
-            var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+            // Add your TokenEndpoint URL below 
+            var theURL = "<TokenEndpoint>";
         
           fetch(theURL)
                 .then(response => response.json())
@@ -168,12 +167,12 @@ First, you need to configure where you're deploying your bot canvas.
     </html>
     ```
 
-1. In the *index.html* file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
+1. In the *index.html* file you created, enter your Token Endpoint URL at the line ` var theURL = "<TokenEndpoint>";`. [Retrieve your Power Virtual Agents bot parameters](https://learn.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-custom-application#connect-your-bot-to-a-native-or-custom-app) to learn more about finding your Token Endpoint URL.
 
 1. Open *index.html* using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
 
 1. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (").
+    If you encounter problems, make sure you've published your bot.
 
 ### Customize the bot icon, background color, and name
 
