@@ -3,7 +3,7 @@ title: "Tenant-level analytics (default)"
 description: View tenant-level analytics in a variety of reports
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 10/10/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -30,7 +30,7 @@ To access these reports, sign in to the Power Platform admin center and select *
 ## Who can view these reports?
 
 Administrators with the following roles and a [license](pricing-billing-skus.md) can view the reports in Power Apps analytics:
-- Environment Admin - can view reports for the environments where the admin is member of Contributor or Environment Admin role
+- Environment Admin - can view reports for the environments where the admin is member of Contributor or Environment Admin role.
 - Power Platform admin - can view reports for all environments.
 - Dynamics 365 admin - can view reports for all environments. 
 - Microsoft 365 Global admin - can view reports for all environments.
