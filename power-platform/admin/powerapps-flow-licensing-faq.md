@@ -3,7 +3,7 @@ title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Dataverse for Teams, and AI Builder"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/12/2022
+ms.date: 10/10/2022
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -47,7 +47,7 @@ See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 ### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
-The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to one app (canvas and/or model-driven) or one Power Apps Portal, within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the “per app” license is stackable.
+The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to one app (canvas and/or model-driven) or one Power Apps portal, within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the “per app” license is stackable.
 
 An important part of this feature simplification is that we will no longer require any standalone plans for maker or admin capabilities. Previously admins required a PowerApps P2 license for certain management operations; this will no longer be the case.
 
@@ -410,6 +410,253 @@ Page views: Minimum 50,000 per portal. After that you can assign 1 at a minimum.
 ### Do unused Power Apps Portals logins carry forward to the next month?
 
 Portals are licensed at a monthly rate that is based on a customer’s anticipated login volume. Logins are not accumulated as individual assets that would carry forward month to month.
+
+## Power Pages
+
+### How is Power Pages Licensed?
+
+Power Pages licensing is capacity based and offers two types of capacities based on user type: **authenticated users per website per month** and **anonymous users per website per month**.
+
+1. **Authenticated Users**\*
+
+    1. The **authenticated user capacity** subscription license can be purchased for the anticipated number of unique, authenticated users *employees(internal)* or *non-employees(external)* accessing a website in a month. 
+
+    1. The **authenticated user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of authenticated users who have accessed a website in a month.
+
+    **Meter Definition:** Power Pages authenticated user pay-as-you-go meter - A measure of the number of unique authenticated users per website per month.
+
+1. **Anonymous Users**\*
+
+    1. The **anonymous user monthly capacity** subscription license can be purchased for the anticipated number of unique, anonymous users accessing a website in a month.
+
+    1. The **anonymous user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of anonymous users who have accessed a website in a month.
+
+    **Meter Definition:** Power Pages Anonymous per user/website pay-as-you-go meter - A measure of the number of unique Anonymous users per website per month.
+
+### What is an authenticated user and how are authenticated user/website/month calculated?
+
+Authenticated users are users who obtain secure access to a website by logging in through an authentication provider on the website. 
+
+Authenticated user/website/month are calculated as unique users who logs into the website in a calendar month duration. Even if a user logs in multiple times to a website in a calendar month, then that user is counted as one user. Uniqueness is determined by using the ID of the contact record (Microsoft Dataverse contact table) to which the user is mapped to.
+
+### What is an anonymous user and how are anonymous user/website/month calculated?
+
+Anonymous users are users who browse a website and do not log in.
+
+Anonymous users/website/month are calculated as unique users who access one or more anonymous pages of the website in a calendar month duration. Uniqueness is determined through a unique anonymous user ID stored in a browser cookie. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new anonymous user ID is generated and user would be counted as a different user.
+
+### What are the scenarios in which a user is not counted as anonymous user even though user browses an anonymous page on the website?
+
+There are several scenarios in which a user who has anonymously browsed the website will not be counted in the meter, some of these are described below: -
+
+1. Any access of a website running in trial mode will not be counted.
+
+1. Any access of a website running in private mode will not be counted.
+
+1. If the user access specific pages on the website, then they are not counted as anonymous users, these are
+
+  1. Pages related to login like signin, register, invitation, and externalauthenticationcallback. This is done to ensure if the user is trying to authenticate to the website, they are not counted as anonymous user.
+
+    1. System pages like the ones starting with **\_** such as **\_services** and **\_resource**.
+
+    1. If a page returns a redirect response (http 3xx status).
+
+    1. If a page returns an error response (http 5xx status).
+
+    1. If a page returns 404, or any http 4xx response.
+
+1. Bots and crawler accessing anonymous pages of the website is not counted.
+
+1. If there is a monitoring system setup to test website availability periodically, it will be removed if it sends a non browser user agent. In case your monitoring system sends a user agent which is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend to target **/\_services/about** page of your website to ensure that it is not counted in anonymous user access.
+
+1. If a user is accessing only static resources like CSS,JavaScript, and images will not be counted.
+
+1. If a user is browsing anonymously and later logs in to the website within same day (UTC timezone), then that user will only be counted as authenticated user and will not be counted as anonymous user.
+
+### If a user accesses a site anonymously and then logs in to the site in the same session, will the user be counted as both an anonymous and an authenticated user?
+
+If a user accesses a site in both an anonymous and an authenticated manner in the same session or even within same day (24 hours using UTC time zone), the user will only be counted as an authenticated user and not as anonymous user.
+
+### If my website is completely authenticated, however it has an anonymous login page. Do I need to purchase anonymous user subscription?
+
+No, login page access is not counted for calculating anonymous users. So if the only anonymous page is login page, then it will not require anonymous user subscription to be purchased.  
+
+However, it is important to ensure that rest of the site is made authenticated. This can be done by using Page level permissions on home page and only making it available for authenticated user roles. If any other method is used like using a client side (javascript) redirect to login page, then it might lead to some page being available anonymously.
+
+### How much does these licenses cost?
+
+The Power Pages authenticated per user and Power Pages anonymous per user offers serve both small and large customer scenarios with a low barrier to entry, and easily scale for high-volume growth. Subscription and pay-as-you-go pricing are detailed below.
+
+| Authenticated per user/website subscription capacity packs Pay-as-you-go meters |  |  |  |  |  |
+|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
+| Capacity Pack Tiers | Capacity Packs<br /></br>Minimum purchase | Number of users<br /></br>(100 users/capacity pack) | Price per capacity pack/month |   | Pay-as-you-go |
+| Tier 1 | 1 pack | 100+ users | $200 |   | $4.00<br /></br>per user |
+| Tier 2 | 100 packs | 10,000+ users | $75 |   |  |
+| Tier 3 | 1,000 packs | 100,000+ users | $50 |   |  |
+
+
+| Anonymous per user/website subscription capacity packs Pay as-you-go meters |  |  |  |  |  |
+|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
+| Capacity Pack Tiers | Capacity Packs<br /></br>Minimum purchase | Number of users<br /></br>(500 users/capacity pack) | Price per capacity pack/month |   | Pay-as-you-go |
+| Tier 1 | 1 pack | 500+ users | $75 |   | $0.30<br /></br>per user |
+| Tier 2 | 20 packs | 10,000+ users | 37.50 |   |  |
+| Tier 3 | 200 packs | 100,000+ users | $25 |   |  |
+
+
+### Price quoted above are list prices for commercial channel, special prices are offered for Education and Non profit customers. 
+
+### Does Power Pages licenses includes Dataverse storage?
+
+Yes, Dataverse Database and Dataverse File capacity is included with the Authenticated per user/website and the Anonymous per user/website licenses. Allocated capacities differ between subscription plans and pay-as-you-go plans as detailed below.
+
+| Dataverse Default Capacity - Subscription plans   |  |  |  |
+|-------------------------|-------------------------|-------------------------|-------------------------|
+| Capacity Type   | Dataverse Database storage per tenant | Dataverse Database storage per user | Dataverse File</br>storage per user |
+| Authenticated</br>per user plan  | 5 GB   | 2GMB   | 16 GB   |
+| Anonymous</br>Per user plan  | 5 GB   | 500 MB   | 4 GB   |
+|   |   |   |   |
+| Dataverse Default Capacity - Pay-as-you-go plans   |  |  |  |
+| Capacity Type   | Dataverse Database storage per tenant | Dataverse Database storage per environ.  | Dataverse File</br>storage per environment   |
+| Authenticated</br>per user plan  | N/A   | 1 GB    | 1 GB    |
+| Anonymous</br>per user plan | N/A   | 1 GB   | 1 GB   |
+
+
+### How many users are included in each pack for Power Pages licenses?
+
+1. **<u>Subscription Based</u>**
+
+<!-- -->
+
+1. **Power Pages authenticated user/website subscription** – Each pack consists of 100 users. This is same for all tiers.
+
+2. **Power Pages anonymous user/website subscription –** Each pack consists of 500 users. This is same for all tiers
+
+    1. **<u>Pay-as-you-go based</u>**
+
+        1. **Power Pages** **Authenticated user pay-as-you-go meter** **–** Pay-as-you-go meters are not sold in packs rather are counted as individual users.
+
+        2. **Power Pages Anonymous user pay-as-you-go meter -** Pay-as-you-go meters are not sold in packs rather are counted as individual users.
+
+### 
+
+### What are the Power Pages use rights included with Power Apps and Dynamics 365 enterprise licenses?
+
+Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses, are granted use rights for Power Pages as described below.
+
+1.  Power Apps per app licensed users - 1 Power Pages website.
+
+2.  Power Apps per user licensed users – Unlimited Power Pages websites
+
+3.  Dynamics 365 enterprise licensed users – Unlimited Power Pages websites. These websites must map to the licensed Dynamics 365 application context and map to the same environment as the licensed Dynamics 365 application.
+
+### What are the main differences between Power Pages and Power Apps portals licensing?
+
+| **Parameter** | **Power Apps Portals Licensing** | **Power Pages Licensing** |
+|-------------------------|-------------------------|-------------------------|
+| **Provisioning a website** | Every second website in the environment requires 1 GB of Dataverse capacity | No Dataverse capacity is required to provision a website. |
+| **Qualifying base offers** | Dynamics 365 and Power Apps licenses | No base offer is required and licenses can be purchased standalone |
+| **Licenses Required for Internal Authenticated Users** | Dynamics 365 enterprise licenses</br>Power Apps per app plan</br>Power Apps per user plan</br>Power Apps per app pay-as-you-go meter | Dynamics 365 enterprise licenses</br>Power Apps per app plan</br>Power Apps per user plan</br>[New]Authenticated per user/website subscription</br>[New]Authenticated user pay-as-you-go meter |
+| **Licenses Required for External Authenticated Users** | Power Apps portals logins capacity (login=daily unique login). | Authenticated per user/website subscription</br>Authenticated user pay-as-you-go meter |
+| **Licenses Required for Anonymous users** | Power Apps portals Page View Capacity | Anonymous per user/website subscription</br>Anonymous user pay-as-you-go meter |
+| **Dataverse Storage** | Not included with Power Apps portals logins and page view capacity | Included with Power Pages subscription<br /></br>Included with Power Pages pay-as-you-go meter |
+| **Pay-as-you-go model** | Not available | Available |
+
+
+### If I am building a Power Pages website for my employees who will login using their Azure AD credentials. What Power Pages licenses do I need?
+
+Internal authenticated users of a Power Pages website can use one of the following type of licenses
+
+1. **<u>Subscription Based</u>**
+
+<!-- -->
+
+3.  Power Apps per app – Users can access 1 Power Pages website which should be part of environment to which Power Apps per app capacity licenses are assigned.
+
+4.  Power Apps per user licensed users – Users who have been assigned Power Apps per user licenses can use unlimited Power Pages websites
+
+5.  Dynamics 365 enterprise licensed users – Users who have been assigned Dynamics 365 enterprise licenses can use unlimited Power Pages websites. These websites must map to the licensed Dynamics 365 application context and map to the same environment as the licensed Dynamics 365 application.
+
+6. **Power Pages authenticated user/website subscription** – Users can access 1 Power Pages website to which Power Pages authenticated per user/website capacity is assigned.**  
+ **Also, if a user accessing the website has a power apps per user or a Dynamics 365 enterprise license assigned, then that user will not be counted in Power Pages authenticated user/website capacity.
+
+    1. **<u>Pay-as-you-go based</u>**
+
+        1. **Power Pages** **Authenticated user pay-as-you-go meter** **–** Users can access Power Pages website which are present in environments enabled for Pay-as-you-go licensing.  
+            Also, if a user accessing the website has a power apps per user or a Dynamics 365 enterprise license assigned, then that user will not be counted in Power Pages Authenticated user pay-as-you-go meter.
+
+**What is the difference between Power Apps portals login capacity and Power Pages Authenticated per user/month capacity?**
+
+ Power Pages Authenticated per user/month capacity counts the number of unique users in a month that have accessed the website in an authenticated manner whereas Power Apps login capacity counts the number of total logins all users had on the website over a 24-hour period.    
+    
+For e.g, In a scenario where a website was accessed by a total of 100 authenticated users in a month with each user logging in once every day to the website. In this scenario, if we apply both meters, then this is how they will work. 
+
+1.  Power Pages Authenticated per user
+
+With Power Pages Authenticated per user per website monthly capacity, the total number of users would be 100 and the customer will need to purchase capacity for 100 users for the website. ** **
+
+2.  Power Apps portal login
+
+With Power Apps portal logins, total number of logins would be 100\*30= 3000 (as each user is logging in once every day) and customer will need to purchase capacity for 3000 logins for the website.
+
+**If I create a Power Pages website which can potentially be used by 100,000 users (Authenticated), however in a given month it will only be used by 5,000 users (out of the 100,000). Do I need to purchase authenticated per user capacity for 100,000 users or 5,000 users?  
+**Power Pages authenticated per users/website is licensed based on the number of unique Authenticated users who access the site in a month. So, in this case, the customer should purchase capacity for 5,000 users.  
+The same is true if the users are Anonymous and not Authenticated.
+
+### Do I require additional licensing for Power Pages Content Delivery Network (CDN) and Web Application Firewall (WAF) capabilities?
+
+### No, both CDN and WAF capabilities are included as part of Power Pages licensing and doesn't require any additional licenses to be purchased.
+
+### For subscription based licenses, what is the minimum number of Authenticated and Anonymous user capacity I need to assign to an environment?
+
+1. **Authenticated Users** -&gt; Minimum quantity which needs to be assigned to an environment is 25.
+
+For example, if you have 3 websites (in 3 different environment) and bought 1 authenticated user pack (100 users), you can assign them in the following ways:
+
+-   Environment 1: 25 (min 25)
+
+-   Environment 2: 35 (min 25)
+
+-   Environment 3: 40 (min 25)
+
+    1. **Anonymous Users-&gt;** Minimum 200 per environment. After that you can assign 1 at a minimum.
+
+For example, if you have 2 websites (in 2 different environment) and bought 1 anoynmous user pack (500 users), you can assign them in the following ways:
+
+-   Environment 1: 220 (min 200)
+
+-   Environment 2: 280 (min 200)
+
+**Can I mix Power Pages subscription licenses and pay-as-you-go meters in same environment?**
+
+### Power Pages subscription licenses cannot be used in a pay-as-you-go environment
+
+**Can I still purchase Power Apps portals login and page view subscriptions?**
+
+Power Apps portals login and page view subscriptions will be available for purchase during transition period. This is described below**  
+ **
+
+1. **Existing customers who have Power Apps portals login and page view subscriptions -**
+
+    -   Power Apps portals customers whose agreements expire before March 31, 2023 will have the option to renew their agreements using the existing Power Apps portals SKUs for one more agreement term.
+
+    -   During this transition period, existing customers will also be able to purchase more capacity for existing SKUs to create new websites or augment capacity for existing websites.  
+
+    -   Power Apps portals customers whose agreements expire after March 31, 2023, will need to transition to the new Power Pages licensing upon expiration of their Power Apps portals subscription term.
+
+2. **New customers**
+
+    -   Power Apps portals per login and per pageview SKUs will be available for new customers to purchase until March 31, 2023.
+
+    -   After March 31, 2023, new customers will purchase the new Power Pages SKUs.
+
+### 
+
+### Do unused Power Pages subscription licenses (authenticated per user and anonymous per user) carry forward to the next month?
+
+Power Pages are licensed at a monthly rate that is based on a customer's anticipated user volume. They are not accumulated as individual assets and would not carry forward month to month.
+
+<!- STOP HERE  ->
+
 
 ## AI Builder
 
