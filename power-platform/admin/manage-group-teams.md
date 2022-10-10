@@ -3,7 +3,7 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/27/2022
+ms.date: 10/03/2022
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -35,6 +35,10 @@ Both types of Azure AD groups — Security and Microsoft 365 — with a Membersh
 The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the environments and assign a security role to these group teams. For each Azure AD group, the administrator can create group teams based on the Azure AD group **Members**, and/or **Owners**, or **Guests**. For each Azure AD group, an administrator can create separate group teams for owners, members, guests, and members and guests, and assign a respective security role to each of these teams.
 
 When members of these group teams access these environments, their access rights are automatically granted based on the group team's security role.
+
+> [!TIP]
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Dynamic Azure AD Groups](https://www.microsoft.com/en-us/videoplayer/embed/RE58gAd).  
+
 
 #### Provision and deprovision users 
 

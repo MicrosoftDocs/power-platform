@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 
 # Key concepts - Publish your bot
 
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
