@@ -26,8 +26,8 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 - While co-authoring a bot with another user is possible, it's not a fully supported feature and may lead to data loss.
 - Default values in multiple-choice questions don't work.
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
-- Omnichannel is not supported.
-- No voice support. <!-- FIXME: need to clarify what this means -->
+- Omnichannel isn't supported.
+- Telephony isn't support.
 
 ## Upcoming releases
 
