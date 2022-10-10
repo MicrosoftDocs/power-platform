@@ -3,7 +3,7 @@ title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftD
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2020
+ms.date: 10/10/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -59,7 +59,7 @@ Schemas define which fields are sent to the Microsoft 365 Security and Complianc
 |Operation     |Edm.Date         |No         |Name of the message called in the SDK          |
 |UserKey     |Edm.String         |No         |Unique Identifier of the User in AAD. AKA User PUID          |
 |UserType     |Self.UserType         |No         |The Microsoft 365 audit type (Regular, System)          |
-|User     |Edm.String        |No         |UPN of the user          |
+|User     |Edm.String        |No         |Primary email of the user          |
 
 ## Customer engagement apps schema
 The customer engagement apps schema contains fields specific to customer engagement apps and partner teams. 
