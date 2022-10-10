@@ -221,8 +221,7 @@ The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the 
 1. Select **Configure** to confirm your changes.
 
 ## Configure SSO in your web page
-<!-- FIXME: broken URL -->
-You can use the code provided in the [Power Virtual Agents' GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/1.single-sign-on/index.html) to create an web page for the redirect URL. Copy the code from the GitHub repo and modify it using the instructions provided below.
+You can use the code provided in the [Power Virtual Agents' GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html) to create an web page for the redirect URL. Copy the code from the GitHub repo and modify it using the instructions provided below.
 
 1. To make changes to the code, you will need the **Application (client) ID** and **Directory (tenant) ID** from your canvas app registration. You can get these IDs from the **Overview** page in Azure portal.
 
