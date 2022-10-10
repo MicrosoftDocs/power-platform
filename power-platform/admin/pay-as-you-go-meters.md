@@ -184,7 +184,7 @@ Environment with three websites:
 
 Example pricing
 
-| | Month #1 | Month #2 | Month #3 |
+| Website | Month #1 | Month #2 | Month #3 |
 | - | - | - | - |
 | Website A | two active users | No active users | two active users |
 | Website B | three active users | No active users | two active users |
