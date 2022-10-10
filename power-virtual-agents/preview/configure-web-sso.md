@@ -242,22 +242,21 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
 
 1. Find your bot's ID in Power Virtual Agents:
     1. In the side navigation pane, under **Settings**, select **Channels**.
-        <!-- TODO: mobile app tile is not available/no id shown -->
+
     1. Select **Mobile app**.
 
-        <!-- TODO: screenshot is not up to date -->
-        :::image type="content" source="media/configure-web-sso/pva-bot-id.png" alt-text="Screenshot of copying bot id in Power Virtual Agents" border="false":::
+    1. Under **Token Endpoint**, select **Copy** to copy your bot's token endpoint URL to your clipboard.
 
-    1. Under **Bot ID**, select **Copy** to copy your bot's ID to your clipboard.
+        :::image type="content" source="media/configure-web-sso/pva-bot-id.png" alt-text="Screenshot of copying token endpoint URL in Power Virtual Agents.":::
 
-1. Set the `BOT_ID` variable to your bot's ID you copied in the previous step. For example:
+1. Set the `theURL` variable to your token exchange URL you copied in the previous step. For example:
 
     ```csharp
     (async function main() {
 
         // Add your BOT ID below 
-        var BOT_ID = "88e0d382-2a92-4e45-b721-91304b5493fe";
-        var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+        var BOT_ID = "<BOT ID>";
+        var theURL = "https://11f43429f782efe483e2a3428d3aac0.0.environment.api.powerplatform.com/powervirtualagents/bots/5a0f8092-ed46-4b28-b443-279af3ad99fd/directline/token?api-version=2022-03-01-preview"
     ```
 
 1. Update the value of `userId` to include a customized prefix. For example:
