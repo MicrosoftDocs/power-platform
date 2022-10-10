@@ -14,6 +14,10 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of the bot's default canvas
 
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
+Select the version of Power Virtual Agents you're using here:
+
 > [!div class="op_single_selector"]
 >
 > - [Power Virtual Agents web app](customize-default-canvas.md)
