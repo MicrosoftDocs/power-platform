@@ -242,10 +242,10 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
 
 1. Find your bot's ID in Power Virtual Agents:
     1. In the side navigation pane, under **Settings**, select **Channels**.
-        <!-- TODO: mobile app tile is not available/no id shown -->
+        <!-- FIXME: mobile app tile is not available/no id shown -->
     1. Select **Mobile app**.
 
-        <!-- TODO: screenshot is not up to date -->
+        <!-- FIXME: screenshot is not up to date -->
         :::image type="content" source="media/configure-web-sso/pva-bot-id.png" alt-text="Screenshot of copying bot id in Power Virtual Agents" border="false":::
 
     1. Under **Bot ID**, select **Copy** to copy your bot's ID to your clipboard.
