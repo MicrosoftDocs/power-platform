@@ -67,7 +67,7 @@ The instructions in this document reference the following:
 
 ### Retrieve your Power Virtual Agents bot parameters
 
-To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
+To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name and token endpoint.
 
 1. Copy your bot's name in Power Virtual Agents.
 
@@ -79,29 +79,27 @@ To connect to the bot you have built with Power Virtual Agents, you will need to
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-mobile-app.png" alt-text="Mobile app channel." border="false":::
 
-1. Select **Copy** for the **Bot ID** and **Tenant ID** values. You will need these in the [Get Direct Line token](#get-direct-line-token) step.
+1. Select **Copy** for the **Token Endpoint** value. You will need this in the [Get Direct Line token](#get-direct-line-token) step.
 
-    :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-get-bot-parameters.png" alt-text="Get bot parameters." border="false":::
+    :::image type="content" source="media/publication-connect-bot-to-custom-app/![channel-get-bot-parameters](https://user-images.githubusercontent.com/86117886/194939480-e80a4d74-84b4-48cb-a87e-8e31b2dedff2.png)" alt-text="Get bot parameters." border="false":::
 
 ### Get Direct Line token
 
-To start a conversation with your Power Virtual Agents bot, you need a Direct Line token. You need to add code that retrieves a Direct Line token with the Bot ID and Tenant ID from the previous section to your app.
+To start a conversation with your Power Virtual Agents bot, you need a Direct Line token. You retrieve this Direct Line token using the **Token Endpoint** from the previous section.
 
-To request a Direct Line token, issue a GET request to the endpoint below:
+To request a Direct Line token, issue a GET request to your **Token Endpoint** as shown above.
 
 ```rest-api
-GET /api/botmanagement/v1/directline/directlinetoken
+GET <TokenEndpoint>
 ```
-
-| Query Parameter | Required |
-| --------------- | -------- |
-| `botId`         | yes      |
-| `tenantId`      | yes      |
-
 Example:
 
-```rest-api
-GET https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=<ENTER-YOUR-BOTID>&tenantId=<ENTER-YOUR-TENANTID>
+```response
+{
+  "token": "<token>",
+  "expires_in": 3600,
+  "conversationId": "<ConversationID>"
+}
 ```
 
 If the request is successful, a Direct Line token will be returned for the requested bot.
@@ -114,8 +112,7 @@ The following example uses samples from the [Connector sample code](https://gith
   using (var httpRequest = new HttpRequestMessage())
   {   
       httpRequest.Method = HttpMethod.Get;
-      UriBuilder uriBuilder = new UriBuilder(TokenEndPoint);
-      uriBuilder.Query = $"botId={BotId}&tenantId={TenantId}";
+      UriBuilder uriBuilder = new UriBuilder(TokenEndpoint);
       httpRequest.RequestUri = uriBuilder.Uri;
       using (var response = await s_httpClient.SendAsync(httpRequest))
       {
@@ -138,9 +135,11 @@ The following example uses samples from the [Connector sample code](https://gith
 The response will be:
   
   ```json
-  {
-    "token": "<token>"
-  }
+{
+  "token": "<token>",
+  "expires_in": 3600,
+  "conversationId": "<ConversationID>"
+}
   ```
 
 ### Use Direct Line to communicate with the bot
