@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Data loss prevention example 1 - Block skills in Power Virtual Agents chatbots
 
-Bot makers in your organization can [extend their bots with skills](configuration-add-skills.md). Skills can be a useful way of extending the functionality of your bots, however you may want to restrict their use to help prevent data exfiltration.
+Bot makers in your organization can [extend their bots with skills](../configuration-add-skills.md). Skills can be a useful way of extending the functionality of your bots, however you may want to restrict their use to help prevent data exfiltration.
 
 You can use the Skills with Power Virtual Agents connector in Power Platform data loss prevention (DLP) policies to stop bot makers from adding skills to their bot.
 
@@ -47,7 +47,7 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 You can confirm that this connector is being used in the DLP policy from the Power Virtual Agents web app.
 
-First, open your bot from the environment where the DLP policy is applied, and then try to [add a skill to the bot](configuration-add-skills.md#configure-a-skill).
+First, open your bot from the environment where the DLP policy is applied, and then try to [add a skill to the bot](../configuration-add-skills.md#configure-a-skill).
 
 If the policy is enforced, you'll see an error in the **Add a skill** pane. The error says "Skill not allowed by data loss prevention policy" and suggests you contact an admin to add the skill to the allowlist. The **Skill manifest URL** field will also be highlighted with the message "This skill couldn't be validated. Review details and try again".
 
