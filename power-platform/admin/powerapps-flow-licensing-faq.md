@@ -353,7 +353,7 @@ Please also see [Power Pages](#power-pages).
 
 ### Can you share more details regarding the new Power Apps Portals licensing?
 
-Power Apps Portals can be provisioned without requiring a specific license. User access licensing is based on persona type and details are as below.
+Power Apps portals can be provisioned without requiring a specific license. User access licensing is based on persona type and details are as below.
 
 | **User type**                 | **Model**     | **SKU names**                                                       | **Unit capacity**  | **Price/month** | **Channel** | **Comments**                                                                              |
 |-------------------------------|---------------|---------------------------------------------------------------------|--------------------|-----------------|-------------|-------------------------------------------------------------------------------------------|
@@ -455,9 +455,9 @@ There are several scenarios in which a user who has anonymously browsed the webs
 
 1. Any access of a website running in private mode won't be counted.
 
-1. If the user access specific pages on the website, then they aren't counted as anonymous users, these are
+1. If the user access specific pages on the website, then they aren't counted as anonymous users, these are:
 
-  1. Pages related to log in like signin, register, invitation, and externalauthenticationcallback. This is done to ensure if the user is trying to authenticate to the website, they aren't counted as anonymous user.
+    1. Pages related to log in like signin, register, invitation, and externalauthenticationcallback. This is done to ensure if the user is trying to authenticate to the website, they aren't counted as anonymous user.
 
     1. System pages like the ones starting with **\_** such as **\_services** and **\_resource**.
 
