@@ -451,10 +451,10 @@ Yes, Dataverse database and Dataverse file capacity is included with the authent
 
 #### Dataverse default capacity - subscription plans
 
-| Capacity Type   | Dataverse Database storage per tenant | Dataverse database storage per user | Dataverse file storage per user |
+| Capacity Type   | Dataverse database storage per tenant | Dataverse database storage per user | Dataverse file storage per user |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-| Authenticated per user plan  | 5 GB   | 2 GB   | 16 GB   |
-| Anonymous per user plan  | 5 GB   | 500 MB   | 4 GB   |
+| Authenticated per user plan  | 5 GB | 20 MB | 16 GB |
+| Anonymous per user plan  | 5 GB   | 1 MB   | 4 GB   |
 
 #### Dataverse default capacity - pay-as-you-go plans
 
