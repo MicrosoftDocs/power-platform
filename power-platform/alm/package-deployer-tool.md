@@ -37,12 +37,13 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 ## Process overview  
 
 To create a Package Deployer package, you will perform the following steps.
-
-1. Create a Visual Studio project using one of the supported tool extensions
-1. Add solutions and other files to the project  
-1. Update the HTML files
-1. Specify the configuration values for the package
-1. Define custom code for your package
+> [!div class="checklist"]
+>
+> * Create a Visual Studio project using one of the supported tool extensions
+> * Add solutions and other files to the project  
+> * Update the HTML files
+> * Specify the configuration values for the package
+> * Define custom code for your package
 
 These steps are described in detail in this topic.
 
