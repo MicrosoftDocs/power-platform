@@ -26,8 +26,6 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 - Custom code that can run before, while, or after the package is deployed to the Dataverse instance.  
 - HTML content specific to the package that can display at the beginning and end of the deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.
 
-To download Package Deployer and other tools see [Download tools from NuGet](/powerapps/developer/data-platform/download-tools-nuget).
-
 > [!NOTE]
 > There is another package type called a *plug-in package*. That kind of package is for plug-in dependent assemblies and has no relationship with Package Deployer packages.
 
@@ -78,7 +76,7 @@ C:.
             manifest.ppkg.json
 ```
 
-In the created project, you will find the ImportConfig.xml configuration file in the PkgAssets folder, and you will be modifying the PackageImportExtension.cs file as described later in this topic.
+In the created project, you will find the ImportConfig.xml configuration file in the PkgAssets folder and the PackageImportExtension.cs file which you will be modifying as described later in this topic.
 
 #### [Power Platform tools](#tab/pptools)
 
@@ -87,7 +85,7 @@ You can either create a Visual Studio project using the Power Platform Solution 
 :::image type="content" source="media/pptools-add-package-project.png" alt-text="Add a package project.":::
 
 > [!NOTE]
-> Do not choose the Power Platform Package template. That template if for plug-in packages.
+> Do not choose the Power Platform Package template. That template is for plug-in packages.
 
 The resulting Visual Studio solution and project contains the folders and files shown below. The "Deployment-package" name was used here as an example. The contents of the Content folder is not shown here for brevity.
 
@@ -104,7 +102,7 @@ C:.
 │   └───Content
 ```
 
-In the created project, you will find the ImportConfig.xml configuration file in the PkgFolder folder, and you will be modifying the PackageTemplate.cs file as described later in this topic.
+In the created project, you will find the ImportConfig.xml configuration file in the PkgFolder folder and the PackageTemplate.cs file which you will be modifying as described later in this topic.
 
 More information about using the Power Platform tools extension: [Quickstart: Create a Power Platform Tools project](/power-apps/developer/data-platform/tools/devtools-create-project)
 
@@ -112,22 +110,22 @@ More information about using the Power Platform tools extension: [Quickstart: Cr
 
 ### Add your files to the project  
 
-1.  In the **Solutions Explorer** pane, add your solutions and files under the **PkgFolder** folder.  
-2.  For each file that you add under the **PkgFolder** folder, in the **Properties** pane, set the **Copy to Output Directory** value to **Copy Always**.  This ensures that your file is available in the generated package.   
- 
-Update the HTML files: English and other languages  
+1. In the **Solutions Explorer** pane, add your Dataverse solutions and other files under the **PkgFolder** (or **PkgAssets**) folder.  
+2. For each file that you add under that folder, in the **Properties** pane, set the **Copy to Output Directory** value to **Copy Always**.  This ensures that your file is available in the generated package.
 
-1.  In the Solution Explorer pane, expand **PkgFolder** > **Content** > **en-us**. You'll find two folders called `EndHTML` and `WelcomeHTML`. These folders contain the  HTML and associated files that enable you to display information at the end and beginning of the package deployment process. Edit the files in the HTML folder of these folders to add information for your package.  
+For a package project generated using Power Platform Tools for Visual Studio, update the HTML files: English and other languages  
 
-2.  You can also add the HTML files in your package in other languages so that the content in the HTML appears in the language based on the locale settings of the user's computer. To do so:  
+1. In the **Solution Explorer** pane, expand **PkgFolder** > **Content** > **en-us**. You'll find two folders called `EndHTML` and `WelcomeHTML`. These folders contain the  HTML and associated files that enable you to display information at the end and beginning of the package deployment process. Edit the files in the HTML folder of these folders to add information for your package.  
 
-    1.  Create a copy of the **en-us** folder under **PkgFolder** > **Content**.  
-    2.  Rename the copied folder to the appropriate language. For example, for the Spanish language, rename it to **es-ES**.  
-    3.  Modify the content of the HTML files to add Spanish content.  
+2. You can also add the HTML files in your package in other languages so that the content in the HTML appears in the language based on the locale settings of the user's computer. To do so:  
+
+    1. Create a copy of the **en-us** folder under **PkgFolder** > **Content**.  
+    2. Rename the copied folder to the appropriate language. For example, for the Spanish language, rename it to **es-ES**.  
+    3. Modify the content of the HTML files to add Spanish content.  
 
 ### Specify the configuration values for the package  
 
-1. Define the package configuration by adding information about your package in the **ImportConfig.xml** file available in the **PkgFolder**. Double-click the file to open it for editing. The following list provides information about each parameter and node in the config file.  
+1. Define the package configuration by adding information about your package in the **ImportConfig.xml** file available in **PkgFolder** (or **PkgAssets**). Open the file for editing. The following list provides information about each parameter and node in the config file.  
 
     `installsampledata`  
     `True` or `false`. If `true`, installs sample data to Dataverse instance. This is the same sample data that you can install from **Settings** > **Data Management** area in Dataverse.  
@@ -358,9 +356,9 @@ Update the HTML files: English and other languages
 
 ### Define custom code for your package  
 
-1. In the Solution Explorer pane, double-click the **PackageTemplate.cs** file at the root to edit it.  
+1. In the Solution Explorer pane, double-click the **PackageTemplate.cs** (or **PackageImportExtension.cs**) file in the project's root folder to edit it.  
 
-2. In the PackageTemplate.cs file, you can:  
+2. In the C# file, you can:  
 
    1. Enter custom code to execute when the package is initialized in the override method definition of `InitializeCustomExtension`.  
 
@@ -422,7 +420,7 @@ Update the HTML files: English and other languages
 
    6. Enter custom code to execute after the import completes in the override definition of `AfterPrimaryImport`>method. The remaining flat files that were not imported earlier, before the solution import started, are imported now.  
 
-   7. Change the default name of your package folder from PkgFolder to the package name that you want. To do so, rename the `PkgFolder`>folder in the **Solution Explorer** pane, and then edit the return value under the `GetImportPackageDataFolderName` property.  
+   7. Change the default name of your package folder to the package name that you want. To do so, rename the `PkgFolder` (or **PkgAssets**) folder in the **Solution Explorer** pane, and then edit the return value under the `GetImportPackageDataFolderName` property.  
 
       ```csharp  
       public override string GetImportPackageDataFolderName  
@@ -489,11 +487,7 @@ Update the HTML files: English and other languages
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.DataImportBypass> |Property|Use this to specify whether Dynamics 365 Package Deployer skips all data import operations such as importing Dataverse sample data, flat file data, and data exported from the Configuration Migration tool. Specify true or false. Default is `false`.|
    | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |Property|Use this to specify whether Dynamics 365 Package Deployer will bypass some of its safety checks, which helps in improving the import performance. Specify `true` or `false`. Default is `false`.<br /><br /> You should set this to `true` only if the target Dataverse instance does not contain any data.|
 
-
-4. Save your project, and then build it (**Build** > **Build Solution**) to create the package.
-
-> [!IMPORTANT]
-> Because the template used when creating the package project specifies old versions of the required NuGet packages, you will probably need to update the project's NuGet packages to newer versions prior to building the project.
+4. Save your project, and then build it to create the package.
 
 Your package is the following files under the *\<Project>*\Bin\Debug folder  
 
@@ -502,18 +496,14 @@ Your package is the following files under the *\<Project>*\Bin\Debug folder
    - **\<PackageName>.dll**: The assembly contains the custom code for your package. By default, the name of the assembly is the same as your Visual Studio project name.  
 
      The next step is to deploy your package.  
-
-<a name="UsethePackage"></a> 
   
 ## Deploy a package  
 
  After you create a package, you can deploy it on the Dataverse instance by using the Package Deployer tool, Windows PowerShell, or the CLI command `pac package deploy`.
 
- The package deployer tool is distributed as part of the [Microsoft.CrmSdk.XrmTooling.PackageDeployment](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment) NuGet package. To download the Package Deployer tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget).
+ The Package Deployer tool is distributed as part of the [Microsoft.CrmSdk.XrmTooling.PackageDeployment](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment) NuGet package. To download the Package Deployer tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget).
 
  For detailed information, see [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).  
-
-<a name="BestPractices"></a>   
 
 ## Best practices for creating and deploying packages  
 
@@ -528,6 +518,5 @@ While deploying the packages, Dataverse administrators must:
 ### See also
 
 [Solution Packager tool](solution-packager-tool.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
