@@ -60,17 +60,55 @@ Select the appropriate tab below to find out how to create a Visual Studio proje
 
 Run the [pac package init](../developer/cli/reference/package.md#pac-package-init) command to create the initial package. More information: [pac package](../developer/cli/reference/package.md)
 
+```bash
+pac package init help
+pac package init --outputDirectory DeploymentPackage 
+```
+
+The resulting CLI output contains the folders and files shown below. The "DeploymentPackage" folder name was used here as an example.
+
+```bash
+C:.
+└───DeploymentPackage
+    │   DeploymentPackage.csproj
+    │   PackageImportExtension.cs
+    │
+    └───PkgAssets
+            ImportConfig.xml
+            manifest.ppkg.json
+```
+
+In the created project, you will find the ImportConfig.xml configuration file in the PkgAssets folder, and you will be modifying the PackageImportExtension.cs file as described later in this topic.
+
 #### [Power Platform tools](#tab/pptools)
 
-Create a new Visual Studio solution, then add a project using the custom Power Platform Package template that was installed as part of the tool extension.
+You can either create a Visual Studio project using the Power Platform Solution Template and later add a package project using the Power Platform Package Deployment Project template or just create a project using the Power Platform Package Deployment Project template.
 
 :::image type="content" source="media/pptools-add-package-project.png" alt-text="Add a package project.":::
+
+> [!NOTE]
+> Do not choose the Power Platform Package template. That template if for plug-in packages.
+
+The resulting Visual Studio solution and project contains the folders and files shown below. The "Deployment-package" name was used here as an example. The contents of the Content folder is not shown here for brevity.
+
+```bash
+C:.
+│   Deployment-package.csproj
+│   Deployment-package.sln
+│   GettingStarted.html
+│   PackageTemplate.cs
+│
+├───PkgFolder
+│   │   ImportConfig.xml
+│   │
+│   └───Content
+```
+
+In the created project, you will find the ImportConfig.xml configuration file in the PkgFolder folder, and you will be modifying the PackageTemplate.cs file as described later in this topic.
 
 More information about using the Power Platform tools extension: [Quickstart: Create a Power Platform Tools project](/power-apps/developer/data-platform/tools/devtools-create-project)
 
 ---
-
-In the created project, you will find the ImportConfig.xml configuration file in the PkgAssets folder, and you will be modifying the PackageImportExtension.cs file as described later in this topic.
 
 ### Add your files to the project  
 
