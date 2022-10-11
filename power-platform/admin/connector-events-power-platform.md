@@ -1,5 +1,5 @@
 ---
-title: PowerPlatform connector events
+title: View the Power Platform connector activity logs (preview)
 description: View Power Platform audit logs for events related to connections and custom connectors.
 services: ''
 suite: flow
@@ -21,7 +21,8 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# PowerPlatform connector events
+
+# View the Power Platform connector activity logs (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -52,9 +53,15 @@ As an admin, you can search for connector events related to connections and cust
 
 1. When you see the **PowerPlatform connector events** heading, select the connector events to display.
 
-   :::image type="content" source="./media/audit-logs/connector-events.png" alt-text="Screenshot of the PowerPlatform connector events.":::
+   :::image type="content" source="./media/audit-logs/connector-events.png" alt-text="Screenshot of the Power Platform connector events.":::
 
-The following table lists the connector events.
+    You'll see the event details, as shown in the following example.
+
+    :::image type="content" source="./media/audit-logs/view-events.png" alt-text="Screenshot of the audit search results.":::
+
+### Available connector events
+
+The following table lists the connector events available for searching in the audit logs.
 
 |Connector event  |Description  |
 |---------|---------|
@@ -73,17 +80,15 @@ The following table lists the connector events.
 |Gateway permission added or edited    | When a gateway is shared or the sharing permissions are updated      |
 |Gateway permission removed   | When sharing permissions of a gateway are removed        |
 
-The admin can then view the results, as in the following example.
-
-:::image type="content" source="./media/audit-logs/view-events.png" alt-text="Screenshot of the audit search results.":::
-
 ## Get details on activities for logging
 
-In the **Audit search** screen, the admin can select the log to view the details of the event in a list to the right.
+In the **Audit search** screen, you can select the log to view the details of the event in a list to the right.
 
 :::image type="content" source="./media/audit-logs/event-details.png" alt-text="Screenshot of the event details list for the selected log.":::
 
-The following table lists logging details.
+### Available logging details
+
+The following table lists logging details available in the audit logs.
 
 |Detail  |Description  |
 |---------|---------|
@@ -103,4 +108,7 @@ Id     | Request Correlation ID        |
 |AdditionalInfo     | Additional information about the event:<br/></li><li>EnvironmentName: The unique ID of the environment<br/></li><li>ActionName: The API action that led to the event     |
 |ResourceId     | The unique ID of the resource. Examples: custom api, and connection or gateway     |
 
- 
+### See also
+
+- [Microsoft Purview compliance portal](https://compliance.microsoft.com/)
+- [Microsoft Purview: Search the audit logs](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#search-the-audit-log)
