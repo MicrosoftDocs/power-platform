@@ -65,7 +65,7 @@ pac package init --outputDirectory DeploymentPackage
 
 The resulting CLI output contains the folders and files shown below. The "DeploymentPackage" folder name was used here as an example.
 
-```bash
+```
 C:.
 └───DeploymentPackage
     │   DeploymentPackage.csproj
@@ -89,7 +89,7 @@ You can either create a Visual Studio project using the Power Platform Solution 
 
 The resulting Visual Studio solution and project contains the folders and files shown below. The "Deployment-package" name was used here as an example. The contents of the Content folder is not shown here for brevity.
 
-```bash
+```
 C:.
 │   Deployment-package.csproj
 │   Deployment-package.sln
@@ -110,10 +110,12 @@ More information about using the Power Platform tools extension: [Quickstart: Cr
 
 ### Add your files to the project  
 
+After you have created a package project, you can begin adding solutions and other files to that project.
+
 1. In the **Solutions Explorer** pane, add your Dataverse solutions and other files under the **PkgFolder** (or **PkgAssets**) folder.  
 2. For each file that you add under that folder, in the **Properties** pane, set the **Copy to Output Directory** value to **Copy Always**.  This ensures that your file is available in the generated package.
 
-For a package project generated using Power Platform Tools for Visual Studio, update the HTML files: English and other languages  
+For a package project generated using Power Platform Tools for Visual Studio, update the HTML language specific files.  
 
 1. In the **Solution Explorer** pane, expand **PkgFolder** > **Content** > **en-us**. You'll find two folders called `EndHTML` and `WelcomeHTML`. These folders contain the  HTML and associated files that enable you to display information at the end and beginning of the package deployment process. Edit the files in the HTML folder of these folders to add information for your package.  
 
