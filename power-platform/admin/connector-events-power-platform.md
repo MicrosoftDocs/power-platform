@@ -23,14 +23,14 @@ search.audienceType:
 ---
 # PowerPlatform connector events
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](/includes/cc-beta-prerelease-disclaimer.md)]
 
 Audit logs are logs for important system level events. In the audit log feature, audit logs are available for events related to connections and custom connectors.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](/includes/cc-preview-features-definition.md)]
 
 ## Access the logs
 
