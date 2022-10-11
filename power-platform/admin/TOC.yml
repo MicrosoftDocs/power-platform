@@ -639,7 +639,7 @@
         href: logging-powerapps.md
       - name: Power Automate activity logging
         href: logging-power-automate.md
-      - name: PowerPlatform connector events
+      - name: PowerPlatform connector events (preview)
         href: connector-events-power-platform.md  
 
       - name: Data loss prevention activity logging
