@@ -5,7 +5,7 @@ keywords: Microsoft Power Platform CLI, code components, component framework, CL
 ms.author: jdaly
 author: kkanakas
 ms.reviewer: jdaly
-ms.date: 10/03/2022
+ms.date: 10/11/2022
 ms.topic: overview
 ---
 # What is Microsoft Power Platform CLI?
@@ -78,7 +78,7 @@ To uninstall Power Platform Tools for Visual Studio Code, follow the same steps 
 
 ## Install Power Platform CLI for Windows
 
-To install Power Platform CLI for Windows, download and run the .msi file found here: [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI) and choose the **Remove** option.
+To install Power Platform CLI for Windows, download and run the .msi file found here: [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI) and choose the **Install** option.
 
 ### Update Power Platform CLI for Windows
 
@@ -93,7 +93,7 @@ pac install latest
 
 ### Uninstall Power Platform CLI for Windows
 
-To uninstall Power Platform CLI for Windows, download and run the .msi from [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI).
+To uninstall Power Platform CLI for Windows, download and run the .msi from [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI) and choose the **Remove** option.
 
 ## Common commands
 
