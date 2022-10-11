@@ -227,14 +227,6 @@ There are several scenarios in which a user who has anonymously browsed the webs
 1. If a user is accessing only static resources like CSS, JavaScript, or images won't be counted.
 1. If a user is browsing anonymously and later logs in to the website within same day (UTC timezone), then that user will only be counted as authenticated user and won't be counted as anonymous user.
 
-It's important to note that this is the same technique used by analytics providers like Application Insights or Google Analytics, however their user number can be different due to several reasons like they count usage only on client side whereas we measure usage on server side. This can be due to several reasons described below (not an exhaustive list);
-
-- External analytics providers only operate client side and require JavaScript to be executed to count any user. They won't be counting users that are made when JavaScript can't be executed on users browser. 
-- External analytics provider collects data by posting to certain domains that can be different from the domain of the website. If the requests to external analytics provider domain are blocked by end users network, those users wouldn't be counted. 
-- Typical external analytics providers don't account for AJAX requests by default. AJAX requests aren't counted in their page views. 
-- External analytics providers will count all users irrespective of the http status of the request. However, we won't count a user as active user if all the request made by the user returns either http 3xx, 4xx or 5xx status code. 
-- External analytics providers won't exclude special pages described above which will be excluded in official count. 
-
 If an environment already has Power Apps portal logins/page view or Power Pages Authenticated user/Anonymous user prepaid capacity is assigned and is enabled for pay-as-you-go, all the prepaid capacity is ignored and not consumed. You can reallocate the prepaid capacity to a different environment. 
 
 ### Dataverse capacity meter
