@@ -3,7 +3,7 @@ title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Dataverse for Teams, and AI Builder"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 10/11/2022
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -349,69 +349,7 @@ A list of add-ons applicable to all standalone Power Apps and Power Automate pla
 
 ## Portals
 
-Please also see [Power Pages](#power-pages).
-
-### Can you share more details regarding the new Power Apps Portals licensing?
-
-Power Apps portals can be provisioned without requiring a specific license. User access licensing is based on persona type and details are as below.
-
-| **User type**                 | **Model**     | **SKU names**                                                       | **Unit capacity**  | **Price/month** | **Channel** | **Comments**                                                                              |
-|-------------------------------|---------------|---------------------------------------------------------------------|--------------------|-----------------|-------------|-------------------------------------------------------------------------------------------|
-| External user (authenticated) | Per login     | Power Apps Portals login capacity add-on                             | 100 logins         | $200           | All         | A login provides the authenticated user with access to a single portal for up to 24 hours |
-|                               |               | Power Apps Portals login capacity add-on Tier 2                      | 1000 logins        | $1000          | All         |                                                                                           |
-|                               |               | Power Apps Portals login capacity add-on Tier 3                      | 5000 logins        | $3500          | CSP only    |                                                                                           |
-| External user (anonymous) | Per page view | Power Apps Portals page view capacity add-on                         | 100,000 page views | $100           | All         |                                                                                           |
-| Internal user                 | Via license   | Dynamics 365 (various)                                              | n/a                | n/a             | n/a         | Custom portal use rights are aligned with custom app use rights                           |
-|                               |               | Power Apps per app plan                                              |                    |                 |             |                                                                                           |
-|                               |               | Power Apps per user plan                                             |                    |                 |             |                                                                                           |
-
-- Multiple logins during the 24-hour period count as one billable login
-
-### What exactly is considered a “login” as part of the Power Apps Portals add-on?
-
-Think of a login as a “day pass” to a portal. Once logged in to a portal, subsequent logins (potentially from different devices) during the 24-hour period won't be billable.
-
-### Does a single login provide access to multiple Power Apps Portals during the 24-hour period?
-
-Logins are specific to a single portal. So if you access multiple portals belonging to the same tenant, it will be counted as one login per portal.
-
-
-### What is the difference between Power Apps Portals and Dynamics 365 Portals in terms of licensing?
-
-| **Parameter**                              | **Dynamics 365 Portals**                                            | **New Power Apps Portals**                                                                                                                              |
-|--------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Provisioning a portal environment**      | **Purchase** Dynamics 365 Additional Portal SKU at $500 per month  | **Provision** a portal—no need to purchase portal addons to provision a portal                                                                         |
-| **Qualifying base offers**                 | Dynamics 365 licenses only                                          | Customers can add on portal external login or page view capacity to Dynamics 365, **Power Apps and Power Automate licenses**                            |
-| **Internal use rights**                    | Dynamics 365 enterprise licenses, Dynamics 365 team member license. | Internal users can access portals with a **Power Apps per-app/per-user license. For a Dynamics license it is same as custom Power Apps use rights.** |
-| **Monetization**                           | Per portal environment Per page view                                | **Per log in** Per page view                                                                                                                           |
-| **Entitlement for Dynamics 365 customers** | One portal environment for the first 10 full Dynamics 365 USLs        | Not applicable―Power Apps Portals environments can be provisioned                                                                                       |
-
-### Can I purchase Power Apps Portals add-on licenses with my existing Power Apps P1 or P2 plans or do I have to upgrade to the new plans to benefit from the new portal capability?
-
-Yes. You can purchase Power Apps Portals add-on capacity if you're an existing Power Apps Plan 1 or Plan 2 customer. You can also purchase this capacity if you're a Dynamics 365 customer.
-
-### Can you clarify the use rights to Portals for internal users?
-
-Custom Power Apps Portals use rights: For internal users, use rights to a “custom” portal are aligned with their “custom” Power Apps use rights. For example:
-
-- A Dynamics 365 enterprise application license gets use rights to custom apps within the same environment as the Dynamics 365 application. As such, A Dynamics 365 enterprise application license gets use rights to custom Power Apps Portals within the same environment as the licensed Dynamics 365 enterprise application.
-
-- The Team Member license doesn't get access to custom portal as Team Member licenses doesn't allow access to a custom app.
-
-### What is the minimum number of logins and page view that I need to assign to a specific portal?
-
-Minimum login quantity to be assigned to a portal is 100 logins/month. Once you've assigned 100 logins, you can assign them in units of 1.
-
-For example, if you have three portals and bought four login packs (400 logins), you can assign them in the following ways:
-- Portal 1: 120 (min 100)
-- Portal 2: 151 (min 100)
-- Portal 3: 129 (min 100)
-
-Page views: Minimum 50,000 per portal. After that you can assign 1 at a minimum.
-
-### Do unused Power Apps Portals logins carry forward to the next month?
-
-Portals are licensed at a monthly rate that is based on a customer’s anticipated login volume. Logins aren't accumulated as individual assets that would carry forward month to month.
+See [Power Pages](#power-pages).
 
 ## Power Pages
 
