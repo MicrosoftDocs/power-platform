@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, 3 meters determine how much y
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 10/11/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
@@ -30,8 +30,7 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 | [Power Automate flow runs (preview)](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview)| Flow runs for premium cloud flows and desktop flows. <br/>Flows with standard connectors are excluded from charges. <br /> Users with Power Automate per user licenses (for example Power Automate Per User, Power Automate Per User with attended RPA) are excluded from flow run charges when using a feature within their license entitlements. <br /> Similarly, flows using a Power Automate per flow license are excluded from run charges when using a feature within their license entitlements. | $0.60 per flow run for Power Automate cloud flow runs and desktop flow runs (attended mode) <br /> $3.00 per flow run for Power Automate desktop flow runs (unattended mode)  |
 | Dataverse | For database storage, any usage above 1 GB per pay-as-you-go environment. </br>For file storage, any usage above 1 GB per pay-as-you-go environment. </br>If auditing is enabled, any resulting log storage usage will be counted. | For usage above 1 GB for database: $48 per GB/month</br>For usage above 1 GB for file: $2.40 per GB/month </br>For any log usage: $12 per GB/month |
 | [Power Platform requests (coming soon)](/power-platform/admin/power-automate-licensing/types#pay-as-you-go)| Each user in a pay-as-you-go enabled environment will get a daily entitlement of Power Platform requests based on their license. See [License limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits). This will be sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement will be counted. | 0.00004$ per request/day above the daily entitled limits |
-| Power Pages – Authenticated User | The total number of unique monthly active authenticated users of each website in a pay-as-you-go environment. </br>An active authenticated user is someone who logs in to the website (using any auth provider) at least once in the given month. </br>Repeat access of the website by a user isn't counted. </br>Users with Power Apps per-user license or Dynamics 365 enterprise licenses that provides access to website won't be counted. | $4 per active authenticated user/website/month |
-| Power Pages – Anonymous User | The total number of unique monthly active anonymous users of each website in a pay-as-you-go environment. </br>An active anonymous user is someone who browses any page of the website at least once in the given month. </br>For Anonymous users, uniqueness is determined through a unique anonymous user ID stored in a browser cookie. </br>Repeat access of the website by a user isn't counted as long as the anonymous user ID stored in the cookie remains same. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new unique Anonymous user ID is generated and user would be counted as a different user. | $0.30 per active anonymous user/website/month |
+| Power Pages | Power Pages comes with two meters:</br>**Authenticated per user** -</br> The total number of unique monthly active authenticated users of each website in a pay-as-you-go environment. </br>An active authenticated user is someone who logs in to the website (using any auth provider) at least once in the given month. </br>Repeat access of the website by a user isn't counted. </br>Users with Power Apps per-user license or Dynamics 365 enterprise licenses that provides access to website won't be counted.</br>**Anonymous per user** -</br> The total number of unique monthly active anonymous users of each website in a pay-as-you-go environment. </br>An active anonymous user is someone who browses any page of the website at least once in the given month. </br>For Anonymous users, uniqueness is determined through a unique anonymous user ID stored in a browser cookie. </br>Repeat access of the website by a user isn't counted as long as the anonymous user ID stored in the cookie remains same. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new unique Anonymous user ID is generated and user would be counted as a different user. | **Authenticated per user** - $4 per active authenticated user/website/month</br>**Anonymous per user** - $0.30 per active anonymous user/website/month |
 
 For detailed pricing information, see [Power Apps and Power Automate pricing.](https://powerapps.microsoft.com/pricing/)
 
@@ -161,7 +160,13 @@ Prepaid flows and Pay-as-you-go flows can co-exist in same environments as Pay-a
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
-### Power Pages – authenticated user meter
+### Power Pages
+
+Power Pages comes with two different meters:
+1. Authenticated per user
+1. Anonymous per user
+
+#### Authenticated per user meter
 
 The Power Pages authenticated user meter enables organizations to create websites, which are charged based on the actual authenticated users of the website without having to estimate and purchase authenticated capacity beforehand.
 
@@ -199,7 +204,7 @@ Users with Power Apps per-user license or a Dynamics 365 enterprise license that
 
 If an environment already has Power Apps portal logins/page view or Power Pages authenticated user/anonymous user prepaid capacity is assigned and is enabled for pay-as-you-go, all the prepaid capacity is ignored and not consumed. You can reallocate the prepaid capacity to a different environment.
 
-### Power Pages – anonymous user meter
+#### Anonymous per user meter
 
 The **Power Pages anonymous user meter** enables organizations to create websites that are charged based on the actual anonymous users of the website without having to estimate and purchase anonymous user capacity beforehand.
 
