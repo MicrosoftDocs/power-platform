@@ -349,6 +349,9 @@ A list of add-ons applicable to all standalone Power Apps and Power Automate pla
 
 ## Portals
 
+> [!NOTE]
+> Effective October 12, 2022, Power Apps portals is Power Pages. More information: [Microsoft Power Pages is now generally available (blog)](https://aka.ms/PPagesIgnite22)
+
 See [Power Pages](#power-pages).
 
 ## Power Pages
