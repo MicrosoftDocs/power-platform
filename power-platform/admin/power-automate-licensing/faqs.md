@@ -4,7 +4,7 @@ description: "Power Automate licensing FAQs."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 09/20/2022
+ms.date: 10/12/2022
 ms.author: prkoduku
 ms.reviewer: MSFTMan
 search.audienceType: 
@@ -201,7 +201,7 @@ Your organization has connected Azure DevOps with Dynamics 365 CRM to escalate s
 
 #### Example of Dynamics 365 license using Power Automate outside a Dynamics 365 application context
 
-The same user ([in the previous Dynamics 365 example](#example-of-dynamics-license-using-power-automate-within-a-dynamics-application-context)) now also wants to use a flow that updates an Oracle database. This flow has the following properties:
+The same user ([in the previous Dynamics 365 example](#example-of-dynamics-365-license-using-power-automate-within-a-dynamics-365-application-context)) now also wants to use a flow that updates an Oracle database. This flow has the following properties:
 
 - It's completely unrelated to the Dynamics 365 app.
 - It doesn't interact in any way with the Dynamics 365 app (or its data sources).
