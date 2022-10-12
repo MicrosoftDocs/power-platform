@@ -190,7 +190,7 @@ To make a **Shared DLP Policy** visible to makers, the policy needs to be create
 - Open the **Admin – Environment Request** app.
 - Navigate to the **Data policies** page in the left navigation.
 - Select the policy you want to make visible to makers, then select the **Make visible** option in the ribbon
-  ![Make shared policies visible to makers.](media\dlp-4.png "Make shared policies visible to makers.")
+  :::image type="content" source="media/dlp-4.png" alt-text="Make shared policies visible to makers.":::
 
 ### Share app and instructions with makers
 
@@ -201,14 +201,14 @@ To make a **Shared DLP Policy** visible to makers, the policy needs to be create
 
 Once users have access and begin making requests, admins can see those requests in the **Admin – Environment Request** canvas app.
 
-![View requests in the Admin Environment Request app.](media\dlp-5.png "View requests in the Admin Environment Request app")
+:::image type="content" source="media/dlp-5.png" alt-text="View requests in the Admin Environment Request app":::
  
 To view and respond to the DLP Policy Change requests:
 
 1. Open the **Admin – Environment Request** app.
 1. Navigate to the **Policy Change Requests** page using the left navigation.
 1. View the list of requests. You can filter the request by status using the status filter in the right side of the ribbon.
-   ![View the list of requests.](media\dlp-6.png "View the list of requests")
+   :::image type="content" source="media/dlp-6.png" alt-text="View the list of requests":::
 1. To view the request in more detail, select one of the requests and click the **Details** action in the ribbon.
 1. To approve or deny a request, filter the status to “Pending” and select one of the requests. Only requests with pending status can be responded to in the app.
 1. Once a request is selected, you can choose to “approve” or “reject” the request using the actions in the ribbon.
