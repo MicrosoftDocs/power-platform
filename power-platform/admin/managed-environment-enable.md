@@ -1,15 +1,12 @@
 ---
-title: Enable Managed Environments (preview)
+title: Enable Managed Environments
 description: Learn how to enable Managed Environments for Power Platform in the admin center or PowerShell.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/11/2022
+ms.date: 10/12/2022
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: jimholtz
-contributors:
-  - mikferland-msft
-  - alaug 
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
@@ -20,19 +17,11 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Enable Managed Environments (preview)
+# Enable Managed Environments
 
-<!-- https://go.microsoft.com/fwlink/?linkid=2194805 -->
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+<!-- https://go.microsoft.com/fwlink/?linkid=2194805 and 2211456 -->
 
 Admins can enable, disable, and edit Managed Environments in the Power Platform admin center. Admins can also use PowerShell to disable Managed Environments.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Permissions
 
@@ -47,23 +36,24 @@ Admins can enable, disable, and edit Managed Environments in the Power Platform 
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), in the left panel, select **Environments**.
 
-1. Select the check mark to the left of an environment.
+2. Select the check mark to the left of an environment.
 
-1. On the command bar, select **Enable Managed Environments**. If the environment is already managed, select **Edit Managed Environments**.
+3. On the command bar, select **Enable Managed Environments**. If the environment is already managed, select **Edit Managed Environments**. 
 
-1. Configure the settings, and then select **Enable**.
+4. Configure the settings, and then select **Enable** or **Save**.
 
-:::image type="content" source="media/managed-environment-enable.png" alt-text="Screenshot of the Enable Environment Management screen.":::
+:::image type="content" source="media/managed-environment-enable.png" alt-text="Screenshot of the Enable Managed Environments screen.":::
+
+Use the following settings to increase visibility and control for the selected environment.
 
 | Setting | Description |
 | --- | --- |
-| **[Weekly digest](managed-environment-weekly-digests.md)** | |
-| Include this environment | Select to include the environment in the weekly digest. |
-| Email recipients | Enter email addresses to receive weekly analytics about your top apps and flows, your most impactful makers, and inactive resources you can safely clean up. |
-| **[Limit sharing](managed-environment-sharing-limits.md)** | |
+| **[Limit sharing](managed-environment-sharing-limits.md)** | Help reduce risk by limiting how widely canvas apps can be shared. |
+| Don't set limits | Select to not limit sharing canvas apps. |
 | Exclude sharing with security groups | Select if makers aren't allowed to share canvas apps with any security groups. Admins may share with a limit on who an app can be shared with. |
 | Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, select to limit the number of people makers can share canvas apps with. |
-| **[Data policies](managed-environment-data-policies.md)** | |
+| **[Usage insights](managed-environment-usage-insights.md)** | Select to include insights for this environment in the weekly email digest. |
+| **[Data policies](managed-environment-data-policies.md)** | Help safeguard your organizational data by limiting the connectors available.|
 | See active data policies for this environment | View the policies that define the consumer connectors that specific data can be shared with. |
 
 ## Disable Managed Environments using PowerShell
@@ -80,13 +70,18 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 ```
 
 ## Known limitations
-1. The Managed Environments state cannot be activated on Developer environments. 
-2. In the Power Platform admin center, Environment Admins are not allowed to activate managed environments. Environment Admins are able to see the 'Enable Managed Environment' action in the environment details page.
+
+- The Managed Environments state cannot be activated on developer environments. 
+
 
 ### See also
-[Managed Environments overview](managed-environment-overview.md)  
-[Weekly digests](managed-environment-weekly-digests.md)  
-[Sharing limits](managed-environment-sharing-limits.md)  
-[Data policies](managed-environment-data-policies.md)
+[Managed Environments overview](managed-environment-overview.md)  <br /> 
+[Usage insights](managed-environment-usage-insights.md)  <br />
+[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Data policies](managed-environment-data-policies.md) <br />
+[Licensing](managed-environment-licensing.md)  <br />
+[View license consumption (preview)](view-license-consumption-issues.md) <br />
+[Tenant settings](tenant-settings.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
