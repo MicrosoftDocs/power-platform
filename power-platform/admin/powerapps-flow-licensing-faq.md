@@ -1,9 +1,8 @@
 ---
-title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
-description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Dataverse for Teams, and AI Builder"
-ms.component: pa-admin
+title: Power Platform licensing FAQs| Microsoft Docs
+description: "FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder"
 ms.topic: conceptual
-ms.date: 10/11/2022
+ms.date: 10/12/2022
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -17,9 +16,9 @@ search.app:
   - Flow
 ---
 
-# Power Apps and Power Automate licensing FAQ
+# Power Platform licensing FAQs
 
-We have found some common questions on licensing and plan options. We’ve included several here with their answers. For more details about Microsoft Power Apps and Microsoft Power Automate licensing, see [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+We have found some common questions on licensing and plan options. We’ve included several here with their answers. For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## General licensing questions
 
