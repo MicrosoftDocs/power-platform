@@ -1,8 +1,8 @@
 ---
 title: "Integrate with question answering"
-description: "Use an existing QnA Maker knowledge base as content in your fallback topic."
-keywords: "qna maker, fallback, knowledge base, question, answer, faq"
-ms.date: 07/05/2022
+description: "Use an existing question answering knowledge base as content in your fallback topic."
+keywords: "question answering, fallback, knowledge base, question, answer, faq"
+ms.date: 10/12/2022
 
 ms.topic: article
 author: v-alarioza
@@ -12,7 +12,7 @@ ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-# Integrate with QnA Maker
+# Integrate with question answering
 
 [Question answering](/azure/cognitive-services/language-service/question-answering/overview) provides cloud-based Natural Language Processing (NLP) that allows you to create a natural conversational layer over your data. It is used to find the most appropriate answer for any input from your custom knowledge base of information.
 
@@ -21,7 +21,7 @@ ms.collection: virtual-agent
 - [Configure a fallback topic](authoring-system-fallback-topic.md).
 - [Automate chatbot actions with flows](advanced-flow.md).
 
-## Use QnA Maker in fallback topic
+## Use question answering in fallback topic
 
 You can use an existing knowledge base in Power Virtual Agents by using a Power Automate flow to connect it to any topic. However it's more useful to connect your knowledge base to your bot's system fallback topic. Questions users ask that aren't covered by other topics can _fallback_ to using content from your knowledge base.
 
