@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, 3 meters determine how much y
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/11/2022
+ms.date: 10/12/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
@@ -30,7 +30,7 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 | [Power Automate flow runs (preview)](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview)| Flow runs for premium cloud flows and desktop flows. <br/>Flows with standard connectors are excluded from charges. <br /> Users with Power Automate per user licenses (for example Power Automate Per User, Power Automate Per User with attended RPA) are excluded from flow run charges when using a feature within their license entitlements. <br /> Similarly, flows using a Power Automate per flow license are excluded from run charges when using a feature within their license entitlements. | $0.60 per flow run for Power Automate cloud flow runs and desktop flow runs (attended mode) <br /> $3.00 per flow run for Power Automate desktop flow runs (unattended mode)  |
 | Dataverse | For database storage, any usage above 1 GB per pay-as-you-go environment. </br>For file storage, any usage above 1 GB per pay-as-you-go environment. </br>If auditing is enabled, any resulting log storage usage will be counted. | For usage above 1 GB for database: $48 per GB/month</br>For usage above 1 GB for file: $2.40 per GB/month </br>For any log usage: $12 per GB/month |
 | [Power Platform requests (coming soon)](/power-platform/admin/power-automate-licensing/types#pay-as-you-go)| Each user in a pay-as-you-go enabled environment will get a daily entitlement of Power Platform requests based on their license. See [License limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits). This will be sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement will be counted. | 0.00004$ per request/day above the daily entitled limits |
-| Power Pages | Power Pages comes with two meters:</br>**Authenticated per user** -</br> The total number of unique monthly active authenticated users of each website in a pay-as-you-go environment. </br>An active authenticated user is someone who logs in to the website (using any auth provider) at least once in the given month. </br>Repeat access of the website by a user isn't counted. </br>Users with Power Apps per-user license or Dynamics 365 enterprise licenses that provides access to website won't be counted.</br>**Anonymous per user** -</br> The total number of unique monthly active anonymous users of each website in a pay-as-you-go environment. </br>An active anonymous user is someone who browses any page of the website at least once in the given month. </br>For Anonymous users, uniqueness is determined through a unique anonymous user ID stored in a browser cookie. </br>Repeat access of the website by a user isn't counted as long as the anonymous user ID stored in the cookie remains same. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new unique Anonymous user ID is generated and user would be counted as a different user. | **Authenticated per user** - $4 per active authenticated user/website/month</br>**Anonymous per user** - $0.30 per active anonymous user/website/month |
+| [Power Pages (preview)](#power-pages-meters-preview) | Unique monthly active users of Power Pages websites.</br>An active authenticated user is someone who logs in to the website at least once in the given month.</br>Users who authenticate to a website (by logging in using any auth provider) are counted as authenticated active users. Repeat access by a user within the calendar month is not counted. Users with Power Apps per-user license or Dynamics 365 enterprise licenses that provides access to website won't be counted.</br>Users who do not authenticate to a website are counted as anonymous active users. Repeat access of the website by a user within the calendar month is not counted as long as the anonymous user ID stored in the cookie is not deleted or changed. | $4 per active authenticated user/website/month</br>$0.30 per active anonymous user/website/month |
 
 For detailed pricing information, see [Power Apps and Power Automate pricing.](https://powerapps.microsoft.com/pricing/)
 
@@ -160,74 +160,64 @@ Prepaid flows and Pay-as-you-go flows can co-exist in same environments as Pay-a
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
-### Power Pages
+### Power Pages meters (preview)
 
-Power Pages comes with two different meters:
-1. Authenticated per user
-1. Anonymous per user
+The Power Pages meters enable customers to pay for usage of their Power Pages websites based on the number of unique active users of those websites, instead of estimating and purchasing capacity beforehand.  
 
-#### Authenticated per user meter
-
-The Power Pages authenticated user meter enables organizations to create websites, which are charged based on the actual authenticated users of the website without having to estimate and purchase authenticated capacity beforehand.
-
-The Power Pages Authenticated user meter measures total number of unique monthly active authenticated users of each website in a pay-as-you-go environment.
-An active authenticated user is someone who logs in to the website (using any auth provider) at least once in the given month. Repeat logins on the same website by a user isn't counted. However, if a user logs in to multiple websites present in the same environment, they’ll be counted as an active user for each website they log into that month.
-
-For example, an environment has three websites: **website A**, **website B**, and **website C**. This environment is now enabled for pay-as-you-go pricing:
+There are two different meters:
+1. Authenticated users cost $4 per active user/website/month
+1. Anonymous users cost $0.30 per active user/website/month
 
 > [!NOTE]
-> The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
+> Customers will be able to view usage of the Power Pages meters in the [downloadable Power Platform pay-as-you report](pay-as-you-go-usage-costs.md) effective November 2022. Billing for these meters will be effective December 2022.
 
-Environment with three websites:
+#### Authenticated user meter
+
+The Power Pages Authenticated user meter measures total number of unique monthly authenticated active users of each website in a pay-as-you-go environment.
+ 
+An authenticated active user is someone who logs in to the website (using any auth provider) at least once in the given month. Repeat logins on the same website by a user in the calendar month is not  counted. However, if a user logs in to multiple websites present in the same environment, they will be counted as an active user for each website they log into that month. 
+
+Users with Power Apps per-user license or a Dynamics 365 enterprise license that provides access to website won't be counted. 
+ 
+To make it easy to try websites, any website running in trial mode is not counted in the meter. Similarly to make it easy to do development and testing, any website running in private mode is also not counted in the meter. 
+
+For example, an environment has three websites: **website A**, **website B**, and **website C**. This environment is now enabled for pay-as-you-go pricing:
 
 | Active users | Month #1 | Month #2 | Month #3 |
 | - | - | - | - |
 | Website A | User #1 and #2 | | User #1 and #2 |
 | Website B | User #3, #4, and #5 | | User #1 and #2 |
 | Website C | User #6, #7, #8, and #9 | | User #1 and #2 |
-| Total active users: | 9 = 9 different users each active in one website | 0 website had active usage | 6 = 2 users each active in three websites |
-
-Example pricing
-
-| Website | Month #1 | Month #2 | Month #3 |
-| - | - | - | - |
-| website A | Two active users | No active users | Two active users |
-| website B | Three active users | No active users | Two active users |
-| website C | Four active users | No active users | Two active users |
+| Total active users: | 9 = 9 different users each active in 1 website | 0 website had active usage | 6 = 2 users each active in 3 websites |
 | Total cost: | $36</br>(9 x $4/active user/website) | $0</br>(0 x $0/active user/website) | $24</br>(6 x $4/active user/website) |
 
-Users with Power Apps per-user license or a Dynamics 365 enterprise license that provides access to website won't be counted.
-
 > [!NOTE]
-> - Any website running in trial mode is not counted in the meter. 
-> - For development and testing, any website running in private mode is also not counted in the meter.
+> The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
-If an environment already has Power Apps portal logins/page view or Power Pages authenticated user/anonymous user prepaid capacity is assigned and is enabled for pay-as-you-go, all the prepaid capacity is ignored and not consumed. You can reallocate the prepaid capacity to a different environment.
+#### Anonymous user meter
 
-#### Anonymous per user meter
+The Power Pages anonymous user meter measures total number of unique monthly anonymous active users of each website in a pay-as-you-go environment. 
 
-The **Power Pages anonymous user meter** enables organizations to create websites that are charged based on the actual anonymous users of the website without having to estimate and purchase anonymous user capacity beforehand.
+An anonymous active user is someone who browses any page of the website at least once in the given month.  
+For Anonymous users, uniqueness is determined through a unique anonymous user ID stored in a browser cookie. 
 
-The Power Pages anonymous user meter measures total number of unique monthly active anonymous users of each website in a pay-as-you-go environment.
-An active anonymous user is someone who browses any page of the website at least once in the given month. 
-For anonymous users, uniqueness is determined through a unique anonymous user ID stored in a browser cookie.
-Repeat access of the website by a user isn't counted as long as the anonymous user ID stored in the cookie remains same. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new unique anonymous user ID is generated and user would be counted as a different user.
+Repeat access of the website by a user is not counted as long as the anonymous user ID stored in the cookie remains same. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new unique anonymous user ID is generated and user would be counted as a different user. 
+  
+Also, to make it easy to try websites, any website running in trial mode is not counted in the meter. Similarly to make it easy to do development and testing, any website running in private mode is also not counted in the meter. 
  
 There are several scenarios in which a user who has anonymously browsed the website won't be counted in the meter. The scenarios are described below: 
-1. Any access of a website running in trial mode won't be counted.
-1. Any access of a website running in private mode won't be counted.
-1. If the user accesses specific pages on the website, then they aren't counted as anonymous users, the web pages are:
-    1. Pages related to log in like sign in, register, invitation, and externalauthenticationcallback. If the user is trying to authenticate to the website, they aren't counted as anonymous user.
-    1. System pages like the ones starting with **/_**, for example: **/_services**, and **/_resource**.
-    1. If a page returns a redirect response (http 3xx status).
-    1. If a page returns an error response (http 5xx status).
-    1. If a page returns 404, or any http 4xx response.
-1. Bots and crawler access of the anonymous pages of the website isn't counted.
-1. If there's a monitoring system setup to test website availability periodically, it will be removed if it sends a non browser user agent. In case your monitoring system sends a standard user agent that is of any standard browser, it might be counted. If you need to use a monitoring system to test website availability, we recommend targeting the **/_services/about** page of your website to ensure that it isn't counted in anonymous user access. 
-1. If a user is accessing only static resources like CSS, JavaScript, or images won't be counted.
-1. If a user is browsing anonymously and later logs in to the website within same day (UTC timezone), then that user will only be counted as authenticated user and won't be counted as anonymous user.
 
-If an environment already has Power Apps portal logins/page view or Power Pages Authenticated user/Anonymous user prepaid capacity is assigned and is enabled for pay-as-you-go, all the prepaid capacity is ignored and not consumed. You can reallocate the prepaid capacity to a different environment. 
+- If the user accesses specific pages related to authentication, such as: sign in, register, invitation, and externalauthenticationcallback. 
+- If the user accesses specific pages like the ones starting with **/_**, for example: **/_services**, and **/_resource**.
+- If the user accesses a page that returns a redirect response (http 3xx status), an error response (http 5xx status), or any http 4xx response.
+- If a user is accessing only static resources like CSS, JavaScript, or images.
+- If a user is browsing anonymously and later logs in to the website within same day (UTC timezone), then that user will only be counted as authenticated user and won't be counted as anonymous user.
+- Bots and crawler access of the anonymous pages of the website isn't counted.
+
+If you use a monitoring system setup to test website availability periodically, its usage of the website will not be counted if it sends a non-browser user agent header. If your monitoring system sends a user agent of any standard browser, it might be counted as an anonymous user. We recommend to targeting your monitoring service at the **/_services/about** page of your website to ensure that it is not counted.
+
+> [!NOTE]
+> When an environment is enabled for pay-as-you-go, any capacity for Power Apps portal logins/page views or Power Pages authenticated user/anonymous user prepaid capacity that is assigned to the environment is ignored and not consumed. You can reallocate this capacity to a different environment.
 
 ### Dataverse capacity meter
 
