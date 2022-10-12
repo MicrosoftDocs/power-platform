@@ -71,7 +71,7 @@ For the ALM Accelerator for Power Platform canvas app to work, the following con
 
 The ALM Accelerator includes features that required the installation of the **Creator Kit** in the environment where you install ALM Accelerator for Power Platform.
 
-To install the **Creator Kit** follow steps described here : [Install Creator Kit](https://learn.microsoft.com/en-us/power-platform/guidance/creator-kit/setup)
+To install the **Creator Kit** follow steps described here : [Install Creator Kit](/power-platform/guidance/creator-kit/setup)
 
 ## Azure AD App Registration setup
 
@@ -83,6 +83,7 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 
 > [!NOTE]
 > When separating the responsibilities of Azure App registration you should consider both maintenance and security aspect. Read the [Considerations for App Registrations](almaccelerator-app-registrations.md) page to understand more.
+
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
 2. Go to **Azure Active Directory** > **App registrations**.
