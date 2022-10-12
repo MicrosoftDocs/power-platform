@@ -20,7 +20,7 @@ contributors:
   - slaouist
 ---
 
-# Creator kit overview
+# Creator kit
 
 The Creator Kit helps you create Power Apps experiences on the web and mobile platforms with easy-to-use sample controls and components. The kit contains a component library, several commonly used [Power Apps component framework controls](/power-apps/developer/component-framework/overview), and other utilities that increase developer productivity. 
 
@@ -31,6 +31,8 @@ All controls and components included in the kit use the [Fluent UI](https://deve
 
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
+
+[Install with AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview)
 
 You can also download the reference app solutions: 
 - Canvas apps: [aka.ms/CreatorKitReferenceCanvas](https://aka.ms/CreatorKitReferenceCanvas) 
