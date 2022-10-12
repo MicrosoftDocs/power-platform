@@ -27,7 +27,7 @@ search.app:
 
 **Solution**: The below process can be used by non-admins to request new environments and changes to DLP policies for their environments.
 
-![Environment management process.](media\env-mgmt-process.png "Environment management process")
+:::image type="content" source="media/env-mgmt-process.png" alt-text="Environment management process":::
 
 Developers (non-admins) can:
 
@@ -47,20 +47,20 @@ Developers (non-admins) can request new environments for their admin to triage.
 1. Open **Maker – Environment Request** app.
 1. Select + New
 1. In the fly-out menu, choose the desired connectors that will be needed in the new environment. Then select Next.
-   ![Environment management process.](media\env-mgmt-process.png "Environment management process")
+   :::image type="content" source="media/dev-resources-maker-connectors.png" alt-text="Choose connectors":::
 
 1. Choose the user accounts who will need environment administrator access.
-   ![Choose admins](media\dev-resources-maker-admins.png "Choose admins")
+   :::image type="content" source="media/dev-resources-maker-admins.png" alt-text="Choose admins":::
 
 1. Provide basic details about the desired environment, including the display name, region, type, purpose.
 1. Indicate if the environment can be automatically cleaned up after a certain period of time.
     1. If yes, then provide a duration (in days) from the dropdown that appears. Do this if you only need the environment for a short term project.
     1. If no, the environment will not be deleted automatically. Do this if you need to keep the environment for a long time.
 1. Indicate whether to provision a Dataverse database.
-   ![Environment details](media\dev-resources-maker-env.png "Environment details")
+   :::image type="content" source="media/dev-resources-maker-env.png" alt-text="Environment details":::
 
 1. If a database is needed (toggle=yes), provide the required language and currency values. Optionally provide a security group to restrict access to the environment.
-   ![Choose database settings](media\dev-resources-maker-db.png "Choose database settings")
+   :::image type="content" source="media/dev-resources-maker-db.png" alt-text="Choose database settings":::
 
 1. Submit the form when done by clicking the **Save** button.
 
@@ -68,7 +68,7 @@ Developers (non-admins) can request new environments for their admin to triage.
 
 View any of your submitted requests in the canvas app.
 
-![View requests](media\dev-resources-maker-pending.png "View requests")
+:::image type="content" source="media/dev-resources-maker-pending.png" alt-text="View requests":::
 
 ## Admin: Approve or deny an environment request
 
@@ -81,7 +81,7 @@ As the admin, you can view and triage requests for new environments.
     > By default, pending requests are displayed first. Change the request state filter using the dropdown in the right side of the ribbon.
 
 1. Select a request in the table to view more detail.
-   ![Select request](media\dev-resources-admin.png "Select requests")
+   :::image type="content" source="media/dev-resources-admin.png" alt-text="Select requests":::
 
 1. Read details requested for the new environment:
     1. Environment information, justification.
@@ -91,25 +91,25 @@ As the admin, you can view and triage requests for new environments.
     1. Impacting policies.
     1. Add comments about the decision in the Notes panel.
 
-       ![View details](media\dev-resources-admin-details.png "View details")
+       :::image type="content" source="media/dev-resources-admin-details.png" alt-text="View details":::
 
       > [!NOTE]
       > A banner on the top of the page indicates how the new environment will be impacted based on the existing policies in the tenant. The impact analysis will change when policies are modified.
 
 1. Modify data loss prevention policies in the Impacted Policies table by clicking on the suggested actions (if any are available).
-   ![View actions](media\dev-resources-admin-details-actions.png "View actions")
+   :::image type="content" source="media/dev-resources-admin-details-actions.png" alt-text="View actions":::
 
    > [!WARNING]
    > Only certain types of policies can be added (Organization-level environments that are not "All Environments" type policies).
 
 1. Select "View and modify policies" to see all policies and their impact on the requested connectors. You can add or remove policies to the modify list that will be changed upon approval by selecting a policy and choosing the actions that appear in the ribbon.
-   ![View or modify DLP policies](media\dev-resources-admin-policies.png "View or modify DLP policies")
+   :::image type="content" source="media/dev-resources-admin-policies.png" alt-text="View or modify DLP policies":::
 
 1. Select a policy and click on the **Details** action in the ribbon to view the impact on connectors.
-   ![Policy impact](media\dev-resources-admin-policy-details.png "Policy impact")
+   :::image type="content" source="media/dev-resources-admin-policy-details.png" alt-text="Policy impact":::
 
 1. Approve or reject the request in the top left ribbon.
-   ![Approve or reject](media\dev-resources-admin-details-decision.png "Approve or reject")
+   :::image type="content" source="media/dev-resources-admin-details-decision.png" alt-text="Approve or reject":::
 
 ### Approved path
 
@@ -151,13 +151,12 @@ Makers can use the DLP Policy Change Request system to modify the DLP Policy app
 
 1. Open **Maker – Environment Request** app.
 1. Navigate to the **Data Policy Change Requests** page using the left navigation.
-    ![Data Policy Change Requests screen](media\dlp-1.png "Data Policy Change Requests screen")
+   :::image type="content" source="media/dlp-1.png" alt-text="Data Policy Change Requests screen":::
 1. Select + New
 1. In the "Action Requested" field, choose the "Apply Policy to Environment" option.
 1. In the "Policy" field, select the desired policy.
    1. Confirm if the connectors required by your environment are in the policy by clicking the information icon next to the field header.
-   1. Then search for the connectors you need to confirm if the policy will allow it.
-      ![Confirm your required connectors are allowed by this policy.](media\dlp-2.png "Confirm your required connectors are allowed by this policy.")
+      :::image type="content" source="media/dlp-2.png" alt-text="Confirm your required connectors are allowed by this policy.":::
 1. Choose the environment to apply this policy to. You will only be select environments you are an administrator of.
    1. If you do not see any environments in the drop-down, then you do not have an environment administrator role to any environments.
    1. Provide a reason for the request. For example, it helps to specify your project details and the connectors you require.
