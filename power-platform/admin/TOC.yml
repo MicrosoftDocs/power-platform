@@ -70,8 +70,10 @@
       items:
       - name: Overview
         href: pricing-billing-skus.md
-      - name: About licensing and license management
-        href: wp-license-management.md      
+      - name: About licensing and license management  
+        href: wp-license-management.md     
+      - name: View license consumption (preview)
+        href: view-license-consumption-issues.md          
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
       - name: Administer without a license
@@ -154,7 +156,7 @@
           href: admin-view-apps.md
         - name: Language collations 
           href: language-collations.md            
-      - name: Managed Environments (preview)  
+      - name: Managed Environments   
         items: 
         - name: Overview
           href: managed-environment-overview.md
@@ -162,10 +164,12 @@
           href: managed-environment-enable.md
         - name: Limit sharing 
           href: managed-environment-sharing-limits.md
-        - name: Weekly digests
-          href: managed-environment-weekly-digests.md 
-        - name: Data policies 
+        - name: Usage insights
+          href: managed-environment-usage-insights.md 
+        - name: Data policies
           href: managed-environment-data-policies.md
+        - name: Licensing
+          href: managed-environment-licensing.md
       - name: Environment updates
         items:
         - name: Opt in to early access updates
@@ -176,6 +180,8 @@
           href: manage-maintenance-window.md
       - name: Environment settings 
         items:
+        - name: Tenant settings
+          href: tenant-settings.md
         - name: Power Platform 
           href: power-platform-settings.md
         - name: Microsoft Dataverse settings
