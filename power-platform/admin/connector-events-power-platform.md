@@ -110,7 +110,7 @@ Id     | Request Correlation ID        |
 
 ## Retention
 
-The policy for audit data retention depends on your license agreement. To learn more, go to [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies?view=o365-worldwide). 
+The policy for audit data retention depends on your license agreement. To learn more, go to [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies). 
 
 ### See also
 
