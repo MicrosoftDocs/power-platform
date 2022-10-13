@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 9/15/2022
+ms.date: 10/13/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -70,6 +70,17 @@ This parameter requires no value. It is a switch.
 ## pac paportal list
 
 List all portal websites from the current Dataverse Organization
+
+[!INCLUDE [paportal-list-intro](includes/paportal-list-intro.md)]
+
+
+### Optional Parameters
+
+#### `--verbose` `-v`
+
+Enables verbose mode and furbishes additional details.
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [paportal-list-remarks](includes/paportal-list-remarks.md)]
 
