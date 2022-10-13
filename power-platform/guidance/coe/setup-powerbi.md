@@ -151,6 +151,10 @@ The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit**
 
      ![Select Admin - Access this flow to embed this app into Power BI.](media/coe90.PNG "Select Admin - Access this flow to embed this app into Power BI")
 
+1. If you see an error like this ignore it. The app will not work when browsing directly to the page, only when an app or flow, and envt are sent in
+
+     ![Select Admin - Access this flow to embed this app into Power BI.](media/PBI-setuperror.PNG "Select Admin - Access this flow to embed this app into Power BI")
+
 1. Resize and move the visual to the location you want. Delete the placeholder from the template, and move your embedded app to the same place.
 
 Republish the dashboard, and view it under [app.powerbi.com](https://app.powerbi.com/).
