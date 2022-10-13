@@ -589,7 +589,7 @@ Publishes all customizations
 
 #### `--async` `-a`
 
-Imports solution asynchronously
+Publishes solution asynchronously
 
 This parameter requires no value. It is a switch.
 
