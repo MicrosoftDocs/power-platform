@@ -61,7 +61,6 @@ For environments that require different session timeout values, administrators c
 > 5. Power Apps canvas apps 
 
 ## Configure session timeout 
-
 1. In the Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Product** > **Privacy + Security**.  
@@ -69,6 +68,7 @@ For environments that require different session timeout values, administrators c
 3. Set **Session Expiration** and **Inactivity timeout**. These settings apply to all users.
 
 > [!NOTE]
+> **Session timeout** is a server side feature where life time of all sessions are enforced
 > Default values are:
 > - Maximum Session Length: 1440 minutes
 > - Minimum Session Length: 60 minutes
@@ -77,12 +77,12 @@ For environments that require different session timeout values, administrators c
 > - The updated settings will be effective the next time the user signs in to the application.
 
 ## Inactivity timeout
-
 By default, customer engagement apps do not enforce an inactivity session timeout.  A user can remain logged in the application until the session timeout expires.  You can change this behavior.
 
 - To enforce users too automatically signed out after a pre-determined period of inactivity, admins can set an inactivity timeout period for each of their environments. The application signs out the user when the inactivity session expires.
 
 > [!NOTE]
+> **Inactivity timeout** is a client side feature where client is making decision to primitively sign out based on the inactivity.
 > Inactivity session timeout is not enforced in the following:
 > 1. [!INCLUDE [pn-oc-online-short](../includes/pn-oc-online-short.md)]
 > 2. [!INCLUDE [pn-dyn-365-phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)]
