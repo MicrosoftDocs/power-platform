@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 9/15/2022
+ms.date: 10/13/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -127,6 +127,10 @@ Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
 This parameter requires no value. It is a switch.
 
+#### `--max-async-wait-time` `-wt`
+
+Max asynchronous wait time in minutes. Default value is 60 minutes
+
 #### `--name` `-n`
 
 Name of the target environment
@@ -211,6 +215,10 @@ The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}.
 
 Sets the language used for your environment. [defaults to English]
 
+#### `--max-async-wait-time` `-wt`
+
+Max asynchronous wait time in minutes. Default value is 60 minutes
+
 #### `--name` `-n`
 
 Sets the name of the environment.
@@ -253,6 +261,10 @@ Environment URL or ID of the Environment that needs to be deleted from your tena
 #### `--environment-id` `-id`
 
 **Deprecated**: Use `--environment` instead.
+#### `--max-async-wait-time` `-wt`
+
+Max asynchronous wait time in minutes. Default value is 60 minutes
+
 #### `--url` `-u`
 
 **Deprecated**: Use `--environment` instead.
@@ -374,6 +386,10 @@ The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}.
 
 Sets the language used for your environment. [defaults to English]
 
+#### `--max-async-wait-time` `-wt`
+
+Max asynchronous wait time in minutes. Default value is 60 minutes
+
 #### `--name` `-n`
 
 Sets the name of the environment.
@@ -412,6 +428,10 @@ DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'.
 Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
 This parameter requires no value. It is a switch.
+
+#### `--max-async-wait-time` `-wt`
+
+Max asynchronous wait time in minutes. Default value is 60 minutes
 
 #### `--name` `-n`
 
