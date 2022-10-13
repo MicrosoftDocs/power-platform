@@ -11,9 +11,9 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/12/2022
+ms.date: 10/17/2022
 ms.subservice: admin
-ms.author: anzalziakhan
+ms.author: sameerch
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -41,7 +41,7 @@ Audit logs are logs for important system level events. In the audit log feature,
 
    :::image type="content" source="./media/audit-logs/solutions-audit.png" alt-text="Screenshot of the Audit selection on the Microsoft Purview menu under Solutions.":::
 
-   In the **New Search (preview)** tab you can search for connector events.
+   In the **New Search (preview)** tab, you can search for connector events.
 
    :::image type="content" source="./media/audit-logs/purview-audit.png" alt-text="Screenshot of the Audit screen in the Microsoft Purview compliance portal.":::
 
