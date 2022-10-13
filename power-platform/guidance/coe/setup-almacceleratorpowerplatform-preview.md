@@ -5,7 +5,7 @@ author: jenschristianschroder
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2022
+ms.date: 10/13/2022
 ms.subservice: guidance
 ms.author: jeschro
 ms.reviewer: jimholtz
