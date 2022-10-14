@@ -5,7 +5,7 @@ author: jenschristianschroder
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2022
+ms.date: 10/13/2022
 ms.subservice: guidance
 ms.author: jeschro
 ms.reviewer: jimholtz
@@ -63,10 +63,11 @@ To complete the steps in this section, you'll need the following users and permi
 For the ALM Accelerator for Power Platform canvas app to work, the following connectors must be available to be used together in the environment into which the ALM accelerator is imported:
 
 - [Dataverse (legacy)](/connectors/commondataservice/)
+- HTTP
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
 - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
 - ALM Accelerator Custom DevOps (this connector will be created as part of the [accelerator solution import](#importing-the-solution-and-configuring-the-app))
-
+- [Office 365 Users](/connectors/office365users/)
 ### Creator Kit
 
 The ALM Accelerator includes features that required the installation of the **Creator Kit** in the environment where you install ALM Accelerator for Power Platform.
