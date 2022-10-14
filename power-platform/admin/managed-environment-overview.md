@@ -23,7 +23,7 @@ search.app:
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2206011 and 2211534 -->
 
-Managed Environments is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment except those set up as Developer - [see known limitations page](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-enable#known-limitations). 
+Managed Environments is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment except those set up as Developer - [see known limitations page](https://learn.microsoft.com/power-platform/admin/managed-environment-enable#known-limitations). 
 
 [Learn how to enable Managed Environments](managed-environment-enable.md).
 
