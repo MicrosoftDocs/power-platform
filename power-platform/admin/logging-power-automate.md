@@ -77,7 +77,10 @@ Schemas define the Power Automate fields that are sent to the Microsoft Purview 
 |User type | UserType | Edm.String | No | The audit type (admin, regular, or system)|
 |Flow connector names | FlowConnectorNames | Edm.String | No | Connector names listed in the flow|
 |SharingPermission | SharingPermission | Edm.String | No | Type of permission shared with another user (3 = “Owner”/ReadWrite, 2 = "Run-only user"/Read)|
-|Recipient UPN | RecipientUPN | Edm.String | No | If permission was updated, shows the UPN of the permission recipient |
+|Recipient UPN | RecipientUPN | Edm.String | No | If permission was updated, shows the UPN of the permission recipient|
+|LicenseDisplayName | LicenseDisplayName | Edm.String | No | Display name of the license|
+|UserTypeInititated | UserTypeInititated | Edm.Int32 | No | Which type of user initiated the operation - applicable for delete flow, edit permissions (1 = user, 2 = admin)|
+|UserUPN | UserUPN | Edm.String | No | Unique id of the user. Always equivalent to UserKey|
 |Additional info | More information, for example, the environment name)|
 
 ## Retention
