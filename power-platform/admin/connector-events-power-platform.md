@@ -108,10 +108,6 @@ Id     | Request Correlation ID        |
 |AdditionalInfo     | Additional information about the event:<br/></li><li>EnvironmentName: The unique ID of the environment<br/></li><li>ActionName: The API action that led to the event     |
 |ResourceId     | The unique ID of the resource. Examples: custom api, and connection or gateway     |
 
-## Retention
-
-The policy for audit data retention depends on your license agreement. To learn more, go to [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies). 
-
 ### See also
 
 - [Microsoft Purview compliance portal](https://compliance.microsoft.com/)
