@@ -644,7 +644,10 @@
       - name: Power Apps activity logging
         href: logging-powerapps.md
       - name: Power Automate activity logging
-        href: logging-power-automate.md 
+        href: logging-power-automate.md
+      - name: Power Platform connector activity logging (preview)
+        href: connector-events-power-platform.md  
+
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
       - name: Manage Dataverse auditing
