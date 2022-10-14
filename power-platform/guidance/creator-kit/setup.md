@@ -80,11 +80,15 @@ The following configurations will be modified in the environment:
 ### Method 1: Power Platform CLI
 Install the AppSource package using the [Power Platform cli](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction) ([How to find your Environment Id and Url](https://learn.microsoft.com/en-us/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)).
 
-`pac application install --environment-id 00000000-0000-0000-0000-000000000000 --application-name CreatorKitCore`
+1. Create or select an auth profile (see [pac auth](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/auth) for instructions)
 
-or
+1. Use [`pac application install`](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/application) to install the `CreatorKitCore` option:
 
-`pac application install --environment https://orgname.crm.dynamics.com/ --application-name CreatorKitCore`
+   `pac application install --environment-id 00000000-0000-0000-0000-000000000000 --application-name CreatorKitCore`
+
+   or
+
+   `pac application install --environment https://orgname.crm.dynamics.com/ --application-name CreatorKitCore`
    
 ### Method 2: AppSource install wizard
 The offering page on the AppSource website allows you to install the Creator Kit into your Environment through a wizard experience.
