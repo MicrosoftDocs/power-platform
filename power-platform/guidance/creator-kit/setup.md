@@ -40,11 +40,12 @@ To download and manually install the managed solutions for the Creator Kit, foll
 ### Step 1: Install the Creator Kit solution
 
 1. [Download the CreatorKitCore solution](https://aka.ms/creatorkitdownload).
-2. Ensure the [Power Apps code components for Canvas apps feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) is enabled in the [Environment settings](/power-platform/admin/edit-properties-environment).
-3. In [Power Apps](https://make.powerapps.com), select your Microsoft Power Platform environment.
-4. Import the solution (learn how to [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions)).
 
-5. Read the [component-level documentation](/components.md) to understand how data is rendered. 
+2. Ensure the [Power Apps code components for Canvas apps feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) is enabled in the [Environment settings](/power-platform/admin/edit-properties-environment).
+
+3. In [Power Apps](https://make.powerapps.com), select your Microsoft Power Platform environment.
+
+4. Import the solution (learn how to [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions)).
 
 
 ### Step 2: Install the reference solutions (optional)
@@ -61,7 +62,7 @@ Each solution has specific requirements:
 - [Download the CreatorKitCanvas solution](https://aka.ms/creatorkitreferencecanvas)
 
 ### Upgrading
-Import the updated solution to install the latest version manually. See the latest version at https://aka.ms/CreatorKitLatestRelease.
+Import the updated solution to install the latest version manually. Get the latest version at https://aka.ms/CreatorKitLatestRelease.
 
 ## Option 2: Install from AppSource
 
