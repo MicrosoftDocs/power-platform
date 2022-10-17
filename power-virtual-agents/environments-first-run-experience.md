@@ -29,7 +29,8 @@ An environment is a space to store, manage, and share your organization's busine
 You can use environments in a number of different ways, depending on your business needs:
 
 - You might create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and bots for each audience.
-- You might also create separate environments for different global branches of your company.
+- You might create separate environments for different global branches of your company.
+- You might also create separate environments to satisfy data residency requirments. 
 
 You can also build all your bots in a single environment if you don't need or want to use different ones.
 
