@@ -184,7 +184,7 @@ The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the 
 
 1. Select **Save** to finish the configuration.
 
-### Test your bot using the test bone pane
+### Test your bot using the test pane
 
 1. Publish your bot.
 
