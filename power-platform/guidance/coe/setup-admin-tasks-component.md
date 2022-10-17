@@ -23,9 +23,11 @@ This article will help you set up the [Microsoft Power Platform administration p
 The Microsoft Power Platform administration planning component contains:
 
 - A Microsoft Dataverse table.
+- A security role to grant access to the table.
 - The Admin Tasks model-driven app.
 - A flow that imports sample admin task data.
 - A Power BI dashboard.
+
 
 > [!NOTE]
 > The Microsoft Power Platform administration planning component doesn't have a dependency on other components of the CoE Starter Kit. They can be used independently.
@@ -84,6 +86,12 @@ By default, all tasks are set as Active and task metadata—such as duration, fr
 The dashboard and insights this component provides are derived from admin task data that you interact with through the Admin Tasks app. If you're new to administration in Microsoft Power Platform, review the tasks that you think you'll be performing and update the task metadata where appropriate. If you're already administrating Microsoft Power Platform, review tasks that you perform by using your own actual data.<!--note from editor: Edit okay? Wasn't sure what "the exact data" meant.-->
 
 Open the Admin Tasks app to start adding your own tasks or configuring tasks that you imported from sample data, as described earlier in this article.
+
+## Share apps with other admins
+
+This solution contains an app and pbi report designed to give admins access to planned activities.
+
+Share this app with other Power Platform admins and assign them the **PP Admin Planning - Admin SR** security role.
 
 ## Set up the Power BI dashboard
 
