@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties such as name and ID in bot variables. 
+You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in, retrieve a user token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties such as name and ID in bot variables. 
 
 When you create a bot, a system topic called **Sign in** is added as shown below. 
 
@@ -28,9 +28,7 @@ However, to trigger this topic, you must check the **Require users to sign in** 
 
 :::image type="content" source="media/authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
 
-By checking the **Require users to sign in**, authentication happens when the bot first starts the conversation with the user. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked an instead add the authenticate node in the topic where you wish to require the user to sign in. 
-
-You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md)
+By checking the **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked an instead add the authenticate node in the topic where you wish to require the user to sign in. Regardless of the option you choose, you will need to provide additional settings such as client id, client secret, token exchange url, etc. If your **Service provider** is Azure Active Directory v2, refer to [Create app registration 
 
 ## Prerequisites
 
@@ -136,3 +134,6 @@ Add any logic you might want to treat this case. As an example, we have provided
 Make sure to [test your topic](authoring-test-bot.md) using a real user configured in your identity provider. Ensure both the sign-in success and failure paths are exercised, so there are no surprises if your user fails to sign in or there is an error with the identity provider's sign-in experience.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
+
+## Reference
+You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md)
