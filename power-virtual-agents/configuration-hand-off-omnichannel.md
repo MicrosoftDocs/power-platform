@@ -18,6 +18,8 @@ When your customers need to speak with a human agent, your bot can seamlessly ha
 
 When your bot hands off a conversation, it shares the full history of the conversation and all variables collected in the interaction. Your omnichannel service routes incoming escalations to the right queue, and a live agent can seamlessly resume the conversation. For more information about how to use hand-off in bot conversations, see [Hand off to a live agent](./advanced-hand-off.md).
 
+You can also enable single sign-on (SSO) to allow chatbots to sign users in if they're logged in to the page where the bot is deployed. For more information, see [Configure single sign-on](configure-sso.md).
+
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
@@ -76,7 +78,7 @@ To add [voice capabilities](#voice-based-capabilities) after you've connected yo
 
 ### Bots with ALM
 
-If you've [set up ALM for your bots](/power-platform/alm/basics-alm), and are exporting and importing bots between [development (unmanaged) and test or production (managed) environments](/power-platform/alm/basics-alm#types-of-environments-used-in-alm), you might see a message that we can't determine if omnichannel integration is enabled for the environment.
+If you've [set up Application Lifecycle Management (ALM) for your bots](/power-platform/alm/basics-alm), and are exporting and importing bots between [development (unmanaged) and test or production (managed) environments](/power-platform/alm/basics-alm#types-of-environments-used-in-alm), you might see a message that we can't determine if omnichannel integration is enabled for the environment.
 
 :::image type="content" source="./media/configuration-hand-off-omnichannel/transfer-managed-bot.png" alt-text="Message that we can't determine if this bot has Omnichannel enabled or disabled.":::
 
@@ -209,6 +211,7 @@ Dynamics 365 Customer Service provides [more context variables](/dynamics365/cus
 
 ### Authoring considerations
 
+<!-- FIXME: is this still accurate? -->
 Authentication isn't supported for voice-based hand-off to omnichannel instances. If you've set up authentication for your bot, the [authentication variables](./advanced-end-user-authentication.md) don't include authentication information when they're sent to your omnichannel instance.
 
 > [!WARNING]
