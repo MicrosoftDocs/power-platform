@@ -46,7 +46,7 @@ Power Virtual Agents uses the following steps, in order, to determine the conver
 
 ## Manually set a conversation's time zone
 
-Power Virtual Agents will [automatically determine a user's time zone](#time-zone-determination) when the conversation starts. To manually set the timezone:
+Power Virtual Agents will [automatically determine a user's time zone](#time-zone-determination) when your bot prompts the user for a date and time. To manually set the timezone:
 
 1. Open the topic in which to set the conversation's time zone.
 
@@ -66,7 +66,7 @@ Power Virtual Agents will [automatically determine a user's time zone](#time-zon
 
 ## Display date and time in a local timezone
 
-Since Power Virtual Agents stores date and time in UTC, you'll first need to convert the value to the user's local timezone. To accomplish this, you'll need to add the timezone offset to the date and time you wish to convert.
+Power Virtual Agents stores date and time in UTC. Before displaying a date and time value to customers, add the time zone offset to convert the value to the user's local time zone.
 
 In this example, we get the current date and time using Power Fx's `Now()` function, then add the timezone offset:
 
