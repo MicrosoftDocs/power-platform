@@ -18,13 +18,17 @@ ms.collection: virtual-agent
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-You can authenticate users within a Power Virtual Agents chatbot. When you create a bot, a system topic called **Sign in** is added as shown below. 
+You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties such as name and ID in bot variables. 
 
-:::image type="content" source="media/authentication/system-topic.png" alt-text="Screenshot highlighting app registrations tile on the Azure portal." border="false":::
+When you create a bot, a system topic called **Sign in** is added as shown below. 
 
-However, you must check the "Require users to sign in" to trigger this topic. You can find that setting under **Security** -> **Authentication** 
+:::image type="content" source="media/authentication/system-topic.png" alt-text="Screenshot showing sign in topic." border="false":::
 
-You can either enable authentication when the bot starts the conversation with the user or enable it in a specific topic that requires users to authenticate. User authentication means you prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties such as name and ID in bot variables. 
+However, to trigger this topic, you must check the **Require users to sign in** checkbox under **Security** -> **Authentication** settings of your bot as shown below.
+
+:::image type="content" source="media/authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
+
+By checking the **Require users to sign in**, authentication happens when the bot first starts the conversation with the user. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked an instead add the authenticate node in the topic where you wish to require the user to sign in. 
 
 You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md)
 
