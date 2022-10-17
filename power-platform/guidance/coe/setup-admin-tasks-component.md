@@ -91,7 +91,7 @@ The Power BI dashboard provides visualizations and insights into what your admin
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
-2. In Power BI Desktop, open the file **PowerPlatformAdminPlanner.pbit**, which can be found in the CoE Starter Kit you downloaded and extracted.
+2. In Power BI Desktop, open the file **Power Platform Administration Planning.pbit**, which can be found in the CoE Starter Kit you downloaded and extracted.
 
 3. Enter the URL of the environment where you imported the solution.
 
