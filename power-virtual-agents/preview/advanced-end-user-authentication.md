@@ -18,21 +18,19 @@ ms.collection: virtual-agent
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-You can authente users directly within a Power Virtual Agents. You can either enable authentication when the bot starts the conversation with the user or enable it in a specific topic that requires users to authenticate. User authentication means you prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties such as name and ID in bot variables. 
+You can authenticate users within a Power Virtual Agents chatbot. When you create a bot, a system topic called **Sign in** is added as shown below. 
+
+:::image type="content" source="media/authentication/system-topic.png" alt-text="Screenshot highlighting app registrations tile on the Azure portal." border="false":::
+
+However, you must check the "Require users to sign in" to trigger this topic. You can find that setting under **Security** -> **Authentication** 
+
+You can either enable authentication when the bot starts the conversation with the user or enable it in a specific topic that requires users to authenticate. User authentication means you prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties such as name and ID in bot variables. 
 
 You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md)
 
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- [Configure end-user authentication](configuration-end-user-authentication.md).
-
-
-To enable authentication from the start, in the Security -> Authentication settings, check the "Require users to sign in" box. And then provide the client id, secret, URL token etc. from the app registration you create in the Azure portal.  
-
-
-
-
 
 ## Authentication variables
 
