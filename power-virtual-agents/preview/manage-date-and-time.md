@@ -24,19 +24,9 @@ You can use the **Date and time** entity to capture a date and time in Coordinat
 - [Use conditions](authoring-using-conditions.md)
 - [Create expressions using Power Fx](advanced-power-fx.md)
 
-## System-level variables
-
-Use these system-level variables to get information about the conversation's time zone.
-
-- `Conversation.LocalTimeZone`, read-write, stores the conversation's time zone as a string. You can use any time zone listed on the [Noda Time][] website. For information on how your bot determines local time, see [Time zone determination](#time-zone-determination).
-
-- `Conversation.LocalTimeZoneOffset`, read-only, gets the UTC offset for the local time. This value is stored as a time value.
-
-[Noda Time]: https://nodatime.org/timezones
-
 ## Time zone determination
 
-Power Virtual Agents uses the following steps, in order, to determine the conversation's time zone:
+Power Virtual Agents uses the following steps, in order, to determine the user's time zone:
 
 1. If the `Conversation.LocalTimeZone` system variable is set to a valid time zone from [Noda Time][], use that as the time zone.
 
@@ -44,11 +34,21 @@ Power Virtual Agents uses the following steps, in order, to determine the conver
 
 1. Otherwise, use UTC as the time zone.
 
-## Manually set a conversation's time zone
+## System-level variables
+
+Use these system-level variables to get information about the user's time zone.
+
+- `Conversation.LocalTimeZone` (read-write): Stores the user's time zone as a string. You can optionally set this variable to any time zone listed on the [Noda Time][] website. For information on how your bot determines local time, see [Time zone determination](#time-zone-determination).
+
+- `Conversation.LocalTimeZoneOffset` (read-only): Gets the UTC offset from the user's time zone based on the value of `Conversation.LocalTimeZone`. This value is stored as a time value.
+
+[Noda Time]: https://nodatime.org/timezones
+
+## Manually set a user's time zone
 
 Power Virtual Agents will [automatically determine a user's time zone](#time-zone-determination) when your bot prompts the user for a date and time. To manually set the timezone:
 
-1. Open the topic in which to set the conversation's time zone.
+1. Open the topic in which to set the user's time zone.
 
 1. Add a **Set Variable Value** node.
 
