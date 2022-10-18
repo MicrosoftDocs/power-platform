@@ -19,9 +19,9 @@ search.app:
 ---
 # Licensing
 
-When Managed Environments are activated in an environment every Power App, Power Automate flow, Power Virtual Agents bot, and Power Pages website in that environment requires standalone licenses for access. For example: 
+When Managed Environments are activated in an environment, every app, Power Automate flow, Power Virtual Agents bot, and Power Pages website in that environment requires standalone licenses for access. For example: 
 
-- Every user running a Power App in a Managed Environment must have a Power Apps per user or per app license 
+- Every user running an app in a Managed Environment must have a Power Apps per user or per app license 
 - Every user running a Power Automate flow in a Managed Environment must have a standalone Power Automate per user license, or the flow must have a Power Automate per flow license 
 
 To see your current license usage, select **View license consumption (preview)** in the Power Platform admin center. More information: [View license consumption (preview)](view-license-consumption-issues.md)
