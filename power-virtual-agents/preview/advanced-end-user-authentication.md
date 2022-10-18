@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in, retrieve a user token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties, such as name and id variables.
+You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in, retrieve a access token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties, such as name and id variables.
 
 When you create a bot, PVA automatically adds a system topic called **Sign in**, as shown below.
 
@@ -28,11 +28,11 @@ However, to trigger this topic, you must check the **Require users to sign in** 
 
 :::image type="content" source="media/authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
 
-If you check **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked and instead add the authenticate node in the topic where you want the user to sign in. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. Link to complete the steps to enable authentication for your bot are listed in the prerequisites section. 
+If you check **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked and instead add the authenticate node in the topic where you want the user to sign in. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. This information is provided in the prerequisites section below. 
 
 ## Prerequisites
 
-- Only complete [Create an app registration for your custom website](configure-web-sso#create-an-app-registration-for-your-custom-website) section in the _Configure SSO for your custom website_ topic. _Do not complete_ the instructions listed under "Create a canvas app registration" or "Configure SSO in your webpage" sections.
+- You'll need to only complete [Create an app registration for your custom website](configure-web-sso#create-an-app-registration-for-your-custom-website) section in the _Configure SSO for your custom website_ topic. _Do not complete_ the instructions listed under "Create a canvas app registration" or "Configure SSO in your webpage" sections. 
 
 ## Authentication variables
 After you complete the prerequisites, you will be able to access authentication variables. If your bot is configured with "Manual" authentication option, you will have a set of authentication variables available in your topics. The following table compares authentication variable availability by authentication configuration option:
@@ -77,17 +77,17 @@ Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don'
 
 A typical **Sign in** topic has **Condition** and **Authenticate** nodes. The system checks to see if `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication settings page. If it is set, then the authentication node prompts the user to sign in.  
 
-Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or messages that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor as shown below.
+Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or messages that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor. To open the topic in code editor, click on (...) as shown below.
 
 :::image type="content" source="media/authentication/edit-sign-in-topic.png" alt-text="Screenshot showing sign in system topic and code editor ellipses." border="false":::
 
-In the code editor, you customize the title or greeting as shown below.
+In the code editor, you customize the title or text as shown below.
 
 :::image type="content" source="media/authentication/code-editor.png" alt-text="Screenshot showing code changes in the code editor." border="false":::
 
 ## Add user authentication to a topic
 
-As discussed above, to authenticate a user in a topic, make sure that **Require users to sign in** is not set. You can add _Authenticate_ node and it will prompt a user to log in with a sign-in card. Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code. If a user is already logged in, they won't be prompted again, even if they reach another Authenticate node.
+As discussed above, to authenticate a user in a topic, make sure that **Require users to sign in** is _not_ set. You can add _Authenticate_ node and it will prompt the user to log in with a sign-in card. Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code. If a user is already logged in, they won't be prompted again, even if they reach another Authenticate node.
 
 To add an Authenticate node to your topic:
 
@@ -96,36 +96,6 @@ To add an Authenticate node to your topic:
 1. Open the **Authoring canvas** for the topic you want to add the authentication template to.
 
 1. Select **Add node** (**+**), select **Call an action**, and then select **Authenticate**.
-
-    :::image type="content" source="media/advanced-end-user-authentication/auth-call-action-2.png" alt-text="Select Authenticate." border="false":::
-
-    > [!NOTE]
-    > The **Authenticate** node is only available in the action picker at the end of a dialog tree (as a leaf node). It cannot be added in the middle of a dialog. Once added, other nodes can be added below it.
-
-1. Once selected, a number of new nodes will be added automatically. These nodes include a parent **Authenticate** node, followed by nodes for both a success and a failure path.
-
-    :::image type="content" source="media/advanced-end-user-authentication/auth-template.png" alt-text="New nodes." border="false":::
-
-## AuthToken usage without an Authenticate node
-
-The ```IsLoggedIn``` and ```AuthToken``` variables are available even if you don't use the template provided by the **Call an action** menu entry. If you pass the `AuthToken` variable without first having the user go through the **Authenticate** node, the user will be prompted to sign in at that step.
-
-Passing the `AuthToken` variable can be useful if you always expect the user to be signed in, or if your user is being redirected from a different topic. We suggest you use the template provided by the **Call an action** entry to treat cases where the user fails to sign in.
-
-> [!NOTE]
-> If the user signs out in the middle of a conversation, they will be prompted to sign in again if the topic comes to a node that uses the ```AuthToken``` variable.
-
-### Success path
-
-The success path equates to where ```IsLoggedIn = True``` and accounts for when the user has successfully signed in (or was already signed in).
-
-If you have logic that uses the `AuthToken` variable (for example, to connect to a back-end system using a flow to retrieve a user's information), it should go under this path.
-
-### Failure path
-
-The failure path equates to any condition other than `IsLoggedIn = True`. In most cases the failure path occurs because the user failed to sign in, used the wrong password, or canceled the sign-in experience.
-
-Add any logic you might want to treat this case. As an example, we have provided options for retrying or to [escalate to a live agent](advanced-hand-off.md). Customize the failure path's actions for your particular scenario and usage.
 
 ## Testing your topic
 
