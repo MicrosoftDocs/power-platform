@@ -39,49 +39,47 @@ After you complete the prerequisites, you will be able to access authentication 
 
 | Authentication Variable | No Authentication |   Only for Teams   |       Manual       |
 | ----------------------- | :---------------: | :----------------: | :----------------: |
-| ```UserDisplayName```   |        :x:        |        :x:         | :heavy_check_mark: |
-| ```UserID```            |        :x:        |        :x:         | :heavy_check_mark: |
-| ```IsLoggedIn```        |        :x:        |        :x:         | :heavy_check_mark: |
-| ```AuthToken```         |        :x:        |        :x:         | :heavy_check_mark: |
+| ```User.DisplayName```   |        :x:        |        :x:         | :heavy_check_mark: |
+| ```User.Id```            |        :x:        |        :x:         | :heavy_check_mark: |
+| ```User.IsLoggedIn```    |        :x:        |        :x:         | :heavy_check_mark: |
+| ```User.AccessToken```   |        :x:        |        :x:         | :heavy_check_mark: |
 
 ### UserDisplayName variable
 
-The ```UserDisplayName``` variable contains the user's display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
+The ```User.DisplayName``` variable contains the user's display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
 
 This field value is obtained from the Azure Active Directory (Azure AD) ```name``` claim. For OAuth providers, this is the value stored in the ```name``` claim. Power Virtual Agents automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
 
 ### UserID variable
 
-The ```UserID``` variable contains the user's ID stored in the identity provider. This value can be used by Power Automate flows to call APIs that take the UserID as a value.
+The ```User.Id``` variable contains the user's ID stored in the identity provider. This value can be used by Power Automate flows to call APIs that take the UserID as a value.
 This field value is obtained from the Azure AD ```sub``` claim. For OAuth providers, this is the value stored in the ```sub``` claim. Power Virtual Agents automatically extracts this field into the variable.
 
 > [!WARNING]
-> The ```UserDisplayName``` and ```UserID``` variables are not guaranteed to be filled, and might be empty strings depending on the user configuration in the identity provider. Test with a user from your identification provider to ensure your topics work correctly, even if these variables are empty.
+> The ```User.DisplayName``` and ```User.Id``` variables are not guaranteed to be filled, and might be empty strings depending on the user configuration in the identity provider. Test with a user from your identification provider to ensure your topics work correctly, even if these variables are empty.
 
 ### IsLoggedIn variable
 
-The ```IsLoggedIn``` variable indicates whether the user is signed in (either as a result of signing in or already being signed in, also known as the log-in success path) or not signed in (which would result in the log-in failure path).
+The ```User.IsLoggedIn``` variable indicates whether the user is signed in (either as a result of signing in or already being signed in, also known as the log-in success path) or not signed in (which would result in the log-in failure path).
 
-```IsLoggedIn``` is a boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
+```User.IsLoggedIn``` is a boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
 
-### AuthToken variable
+### AccessToken variable
 
-The ```AuthToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow-input-output.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
+The ```User.AccessToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow-input-output.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
 
 > [!WARNING]
 > Make sure you're passing the `AuthToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
 
-Don't use `AuthToken` inside **Message** nodes, or on flows that you don't trust.
+Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don't trust.
 
 ## Customize Sign in system topic
 
 A typical **Sign in** topic has **Condition** and **Authenticate** nodes. The system checks to see if `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication settings page. If it is set, then the authentication node prompts the user to sign in.  
 
-:::image type="content" source="media/authentication/system-topic-node.png" alt-text="Screenshot showing system sign in topic." border="false":::  
+Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or messages that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor as shown below.
 
-Starting with the preview release of PVA, you can customize **Sign in** topic by opening it in the code editor as shown below.
-
-:::image type="content" source="media/authentication/sign-in-code-editor.png" alt-text="Screenshot showing code editor." border="false":::
+:::image type="content" source="media/authentication/edit-sign-in-topic.png" alt-text="Screenshot showing sign in system topic and code editor ellipses." border="false":::
 
 In the code editor, you customize the title or greeting as shown below.
 
