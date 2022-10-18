@@ -20,7 +20,7 @@ ms.collection: virtual-agent
 
 You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in, retrieve access token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties, such as name and id.
 
-When you create a bot, PVA automatically adds a system topic called **Sign in**, as shown below. This topic performs authentication for the bot by presenting the user with sign in card. 
+When you create a bot, PVA automatically adds a system topic called **Sign in**, as shown below. This topic performs authentication by presenting the user with sign in card. 
 
 :::image type="content" source="media/authentication/system-topic.png" alt-text="Screenshot showing sign in topic." border="false":::
 
@@ -28,7 +28,7 @@ However, to trigger this topic, you must check the **Require users to sign in** 
 
 :::image type="content" source="media/authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
 
-If you check **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked and instead add the authenticate node (discussed later) to a topic where you want the user to sign in. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. - you CAN follow the link in the prerequisites section below to complete this step. 
+If you check **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, leave the checkbox unchecked and instead add the authenticate node (discussed later) to a topic where you want the user to sign in. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. - follow the link in the prerequisites section below to do that. 
 
 ## Prerequisites
 
@@ -73,9 +73,14 @@ The ```User.AccessToken``` variable contains the user's token, obtained after th
 
 Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don't trust.
 
+## SignInReason
+The `SignInReason` is used to determine whether the user must sign at the beginning of the conversation with the bot. If you set the **Require users to sign in** option in the authentication settings page, the `SignInReason` is then set to `SignInRequired` and the user is prompted to sign in. If it is not set, then the you can use the authenticate node in any topic to prompt user to sign in. For details, see _Add user authentication to a topic section_ below. 
+
+If the user has not signed in and you try to use the system variables, the `SignInReason` is set to `Initializer` to indicate that authentication needs to occur.  
+
 ## Customize Sign in system topic
 
-If you have **Require users to sign in** enabled, the **Sign in** system topic will perform the authentication. A typical **Sign in** topic has **Condition** and **Authenticate** nodes as shown below. The system checks to see if `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication settings page. If it is set, then the authentication node prompts the user to sign in.  
+If you have **Require users to sign in** enabled, the **Sign in** system topic will perform the authentication. A typical **Sign in** topic has **Condition** and **Authenticate** nodes as shown below. The system checks to see if `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication settings page. If it is set, then the authentication node prompts the user to sign in. If you aren't signed in, the `SignInReason` is set to `Initializer` and it will then present a sign in at that time. 
 
 Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or messages that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor. To open the topic in code editor, click on (...) as shown below.
 
