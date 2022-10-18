@@ -103,5 +103,5 @@ Make sure to [test your topic](authoring-test-bot.md) using a real user configur
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
 
-## Reference
+## Related links
 You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md).
