@@ -28,14 +28,14 @@ However, to trigger this topic, you must check the **Require users to sign in** 
 
 :::image type="content" source="media/authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
 
-By checking the **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked and instead add the authenticate node in the topic where you want to authenticate the user. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. Complete the steps in the prerequisites section to enable authentication for your bot. 
+If you check **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked and instead add the authenticate node in the topic where you want the user to sign in. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. Link to complete the steps to enable authentication for your bot are listed in the prerequisites section. 
 
 ## Prerequisites
 
-- Complete the section [Create an app registration for your custom website](configure-web-sso#create-an-app-registration-for-your-custom-website) in the _Configure SSO for your custom website_ topic, as these are the exact steps you need. _Do not complete_ the instructions listed under Create a canvas app registration section.
+- Only complete [Create an app registration for your custom website](configure-web-sso#create-an-app-registration-for-your-custom-website) section in the _Configure SSO for your custom website_ topic. _Do not complete_ the instructions listed under "Create a canvas app registration" or "Configure SSO in your webpage" sections.
 
 ## Authentication variables
-After you complete the prerequisites, you will be able to access authentication variables. If your bot is configured with "Manual" authentication options, you will have a set of authentication variables available in your topics. The following table compares authentication variable availability by authentication configuration option:
+After you complete the prerequisites, you will be able to access authentication variables. If your bot is configured with "Manual" authentication option, you will have a set of authentication variables available in your topics. The following table compares authentication variable availability by authentication configuration option:
 
 | Authentication Variable | No Authentication |   Only for Teams   |       Manual       |
 | ----------------------- | :---------------: | :----------------: | :----------------: |
@@ -73,11 +73,25 @@ The ```AuthToken``` variable contains the user's token, obtained after the user 
 
 Don't use `AuthToken` inside **Message** nodes, or on flows that you don't trust.
 
+## Customize Sign in system topic
+
+A typical Sign in system topic has the following structure. 
+
+:::image type="content" source="media/authentication/system-topic-node.png" alt-text="Screenshot showing system sign in topic." border="false":::
+
+The topic has a **Condition** and an **Authenticate** node. The system checks to see if the `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication setting page. If it is set, then the authentication node prompts the user to sign in.  
+
+Starting with the preview release of PVA, you can customize Sign in system topic. For example, you can change the standard greeting. To do that, open the system topic. Click on ellipses on the top right of the PVA canvas as shown belwo.
+
+:::image type="content" source="media/authentication/sign-in-code-editor.png" alt-text="Screenshot showing code editor." border="false":::
+
+
 ## Add user authentication to a topic
 
 The _Authenticate_ node will prompt a user to log in with a sign-in card. If a user is already logged in, they won't be prompted again, even if they reach another Authenticate node.
 
 :::image type="content" source="media/advanced-end-user-authentication/auth-sign-in-user.png" alt-text="Request to sign in." border="false":::
+
 
 Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code, depending on the [channel](publication-fundamentals-publish-channels.md). Some channels, such as Microsoft Teams, do not require the user to enter a validation code.
 
