@@ -78,11 +78,11 @@ The following configurations will be modified in the environment:
 > Using this AppSource install option will **modify the selected Environment's settings**. Ensure this modification is acceptable with your organization's security standards before continuing with this install option.
 
 ### Method 1: Power Platform CLI
-Install the AppSource package using the [Power Platform cli](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction) ([How to find your Environment Id and Url](https://learn.microsoft.com/en-us/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)).
+Install the AppSource package using the [Power Platform cli](/power-platform/developer/cli/introduction) ([How to find your Environment Id and Url](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)).
 
-1. Create or select an auth profile (see [pac auth](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/auth) for instructions)
+1. Create or select an auth profile (see [pac auth](/power-platform/developer/cli/reference/auth) for instructions)
 
-1. Use [`pac application install`](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/application) to install the `CreatorKitCore` option:
+1. Use [`pac application install`](/power-platform/developer/cli/reference/application) to install the `CreatorKitCore` option:
 
    `pac application install --environment-id 00000000-0000-0000-0000-000000000000 --application-name CreatorKitCore`
 

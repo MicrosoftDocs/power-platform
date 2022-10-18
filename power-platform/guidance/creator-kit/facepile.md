@@ -68,13 +68,13 @@ This code component provides a wrapper around the [Fluent UI Facepile](https://d
 |`IsImage`| Whether the persona image(ItemPersonaImage) is an Image Column of Dataverse table. <br> This property allows the component to render the image based on the type(Url or Image). True in case Image needs to referred from Dataverse table & false, in case, it's a Url or Base64 to be referred from ItemPersonaImageInfo property|
 |`ItemPersonaClickable`|Whether or not the persona should be clickable|
 
-Example Power Fx formula for `Items` (uses the [Office 365 Users](https://learn.microsoft.com/en-us/connectors/office365users/) connector) 
+Example Power Fx formula for `Items` (uses the [Office 365 Users](/connectors/office365users/) connector) 
 
 ### Generate `Items` collection with photos using the Office 365 Users connector
 
 A list of users can come from any data source, but the image must be provided to the component. If your data source doesn't have images for the users, you can use the AddColumns() Power Fx function to add the correct attributes to the list and retrieve the user's image, from a list of user Ids or user principal names that map to an active user in your Azure Active Directory.
 
-Generate a collection called `UserPersonas` using [Office 365 Users connector](https://learn.microsoft.com/en-us/connectors/office365users/), by referring to the below sample code, then pass the collection into the `Items` property of the control.
+Generate a collection called `UserPersonas` using [Office 365 Users connector](/connectors/office365users/), by referring to the below sample code, then pass the collection into the `Items` property of the control.
 
 ```powerapps-dot
 ClearCollect(
