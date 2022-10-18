@@ -75,16 +75,17 @@ Don't use `AuthToken` inside **Message** nodes, or on flows that you don't trust
 
 ## Customize Sign in system topic
 
-A typical Sign in system topic has the following structure. 
+A typical **Sign in** topic has a **Condition** and an **Authenticate** node. The system checks to see if the `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication setting page. If it is set, then the authentication node prompts the user to sign in.  
 
-:::image type="content" source="media/authentication/system-topic-node.png" alt-text="Screenshot showing system sign in topic." border="false":::
+:::image type="content" source="media/authentication/system-topic-node.png" alt-text="Screenshot showing system sign in topic." border="false":::  
 
-The topic has a **Condition** and an **Authenticate** node. The system checks to see if the `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication setting page. If it is set, then the authentication node prompts the user to sign in.  
-
-Starting with the preview release of PVA, you can customize Sign in system topic. For example, you can change the standard greeting. To do that, open the system topic. Click on ellipses on the top right of the PVA canvas as shown belwo.
+Starting with the preview release of PVA, you can customize **Sign in** topic by opening it in the code editor as shown below.
 
 :::image type="content" source="media/authentication/sign-in-code-editor.png" alt-text="Screenshot showing code editor." border="false":::
 
+In the code editor, you customize the title or greeting as shown below.
+
+:::image type="content" source="media/authentication/code-editor.png" alt-text="Screenshot showing code changes in the code editor." border="false":::
 
 ## Add user authentication to a topic
 
