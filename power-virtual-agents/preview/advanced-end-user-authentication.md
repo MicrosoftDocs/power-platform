@@ -78,11 +78,9 @@ Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don'
 
 The `SignInReason` variable indicates whether the user must sign in at the beginning of the conversation with the bot or not. If **Require users to sign** in is enabled in the authentication setting, the value of`SignInReason` is set to `SignInRequired` - this lets the bot prompt the user to sign in at the beginning using the **Sign in** system topic. Otherwise, you can use the authenticate node in any topic to prompt the user to sign in. For details, see Add user authentication to a topic section below. The `SignInReason` is set to `Initializer` if the user has not signed in and you try to use the system variables - this indicates that authentication needs to occur. 
 
-## Customize Sign in system topic
+## Sign in system topic
 
-If you have **Require users to sign in** enabled, the **Sign in** system topic will perform the authentication. A typical **Sign in** topic has **Condition** and **Authenticate** nodes as shown below. The system checks to see if `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication settings page. If it is set, then the authentication node prompts the user to sign in. If you aren't signed in, the `SignInReason` is set to `Initializer` and it will then present a sign in at that time. 
-
-Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or messages that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor. To open the topic in code editor, click on (...) as shown below.
+A **Sign in** topic has **Condition** and **Authenticate** nodes as shown below. The **Sign in** system topic checks to see if `SignInReason` is set to `SignInRequied`. If it is set, then the authentication node prompts the user to sign in. Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or message nodes that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor. To open the topic in code editor, click on (...) as shown below.
 
 :::image type="content" source="media/authentication/edit-sign-in-topic.png" alt-text="Screenshot showing sign in system topic and code editor ellipses." border="false":::
 
@@ -90,9 +88,11 @@ In the code editor, you can customize the title or text as shown below.
 
 :::image type="content" source="media/authentication/code-editor.png" alt-text="Screenshot showing code changes in the code editor." border="false":::
 
+If you aren't signed in, the `SignInReason` is set to `Initializer` and the user is prompted to sign in if the bot accesses any of the authentication variables. 
+
 ## Add user authentication to a topic
 
-As discussed above, to authenticate a user in a topic, make sure that **Require users to sign in** checkbox is _unchecked_ before adding the _Authenticate_ node to prompt the user to log in with a sign-in card. Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code. If a user is already logged in, they won't be prompted again, even if they reach another Authenticate node.
+To authenticate a user in a topic (and not at the beginning of the conversation with the bot), make sure that **Require users to sign in** checkbox is _unchecked_ before adding the _Authenticate_ node to prompt the user to log in with a sign-in card. Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code. After a user is already logged in, they won't be prompted again, even if they reach another Authenticate node.
 
 To add an Authenticate node to your topic:
 
