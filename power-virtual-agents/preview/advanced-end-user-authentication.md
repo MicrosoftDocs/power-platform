@@ -24,11 +24,11 @@ When you create a bot, a system topic called **Sign in** is added as shown below
 
 :::image type="content" source="media/authentication/system-topic.png" alt-text="Screenshot showing sign in topic." border="false":::
 
-However, to trigger this topic, you must check the **Require users to sign in** checkbox under **Security** -> **Authentication** settings of your bot as shown below.
+However, to trigger this topic you must check the **Require users to sign in** checkbox, go to **Security** settings and then **Authentication** as shown below.
 
 :::image type="content" source="media/authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
 
-By checking the **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked an instead add the authenticate node in the topic where you wish to require the user to sign in. Regardless of the option you choose, you will need to provide additional settings such as client id, client secret, token exchange url, etc. If your **Service provider** is Azure Active Directory v2, refer to [Create app registration 
+By checking the **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked an instead add the authenticate node in the topic where you wish to require the user to sign in. Regardless of the option you choose, you will need to provide additional settings such as client id, client secret, token exchange url, etc. Refer to the section  [Create an app registration for your custom website](configure-web-sso#create-an-app-registration-for-your-custom-website) in "Configure SSO for your custom website" topic as these are the exact same steps you need. _Do not complete_ insructions that are listed under Create a canvas app registration section.  
 
 ## Prerequisites
 
