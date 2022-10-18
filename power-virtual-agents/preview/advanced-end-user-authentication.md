@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in, retrieve a access token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties, such as name and id variables.
+You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in, retrieve access token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties, such as name and id variables.
 
 When you create a bot, PVA automatically adds a system topic called **Sign in**, as shown below.
 
@@ -28,11 +28,11 @@ However, to trigger this topic, you must check the **Require users to sign in** 
 
 :::image type="content" source="media/authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
 
-If you check **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked and instead add the authenticate node in the topic where you want the user to sign in. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. This information is provided in the prerequisites section below. 
+If you check **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked and instead add the authenticate node in the topic where you want the user to sign in. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. - this information is provided in the prerequisites section below. 
 
 ## Prerequisites
 
-- You'll need to only complete [Create an app registration for your custom website](configure-web-sso#create-an-app-registration-for-your-custom-website) section in the _Configure SSO for your custom website_ topic. _Do not complete_ the instructions listed under "Create a canvas app registration" or "Configure SSO in your webpage" sections. 
+- You'll need to _only complete_ [Create an app registration for your custom website](configure-web-sso#create-an-app-registration-for-your-custom-website) section in the _Configure SSO for your custom website_ topic. _Do not complete_ the instructions listed under "Create a canvas app registration" or "Configure SSO in your webpage" sections. 
 
 ## Authentication variables
 After you complete the prerequisites, you will be able to access authentication variables. If your bot is configured with "Manual" authentication option, you will have a set of authentication variables available in your topics. The following table compares authentication variable availability by authentication configuration option:
@@ -44,13 +44,13 @@ After you complete the prerequisites, you will be able to access authentication 
 | ```User.IsLoggedIn```    |        :x:        |        :x:         | :heavy_check_mark: |
 | ```User.AccessToken```   |        :x:        |        :x:         | :heavy_check_mark: |
 
-### UserDisplayName variable
+### User.DisplayName variable
 
 The ```User.DisplayName``` variable contains the user's display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
 
 This field value is obtained from the Azure Active Directory (Azure AD) ```name``` claim. For OAuth providers, this is the value stored in the ```name``` claim. Power Virtual Agents automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
 
-### UserID variable
+### User.Id variable
 
 The ```User.Id``` variable contains the user's ID stored in the identity provider. This value can be used by Power Automate flows to call APIs that take the UserID as a value.
 This field value is obtained from the Azure AD ```sub``` claim. For OAuth providers, this is the value stored in the ```sub``` claim. Power Virtual Agents automatically extracts this field into the variable.
@@ -58,7 +58,7 @@ This field value is obtained from the Azure AD ```sub``` claim. For OAuth provid
 > [!WARNING]
 > The ```User.DisplayName``` and ```User.Id``` variables are not guaranteed to be filled, and might be empty strings depending on the user configuration in the identity provider. Test with a user from your identification provider to ensure your topics work correctly, even if these variables are empty.
 
-### IsLoggedIn variable
+### User.IsLoggedIn variable
 
 The ```User.IsLoggedIn``` variable indicates whether the user is signed in (either as a result of signing in or already being signed in, also known as the log-in success path) or not signed in (which would result in the log-in failure path).
 
@@ -75,7 +75,7 @@ Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don'
 
 ## Customize Sign in system topic
 
-A typical **Sign in** topic has **Condition** and **Authenticate** nodes. The system checks to see if `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication settings page. If it is set, then the authentication node prompts the user to sign in.  
+A typical **Sign in** topic has **Condition** and **Authenticate** nodes as shown below. The system checks to see if `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication settings page. If it is set, then the authentication node prompts the user to sign in.  
 
 Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or messages that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor. To open the topic in code editor, click on (...) as shown below.
 
