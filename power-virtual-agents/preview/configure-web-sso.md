@@ -235,7 +235,7 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
         (function (){
         var msalConfig = {
             auth: {
-                clientId: '692e92c7-d146-4060-76d3-b381798f4d9c',
+                clientId: 'd146-4060-b388f4d9c',
                 authority: 'https://login.microsoftonline.com/7ef988bf-86f1-51af-01ab-2d7fd011db47'     
             },
     ```
@@ -254,9 +254,7 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
     ```csharp
     (async function main() {
 
-        // Add your BOT ID below 
-        var BOT_ID = "<BOT ID>";
-        var theURL = "https://11f43429f782efe483e2a3428d3aac0.0.environment.api.powerplatform.com/powervirtualagents/bots/5a0f8092-ed46-4b28-b443-279af3ad99fd/directline/token?api-version=2022-03-01-preview"
+        var theURL = "https://1c0.0.environment.api.powerplatform.com/powervirtualagents/bots/5a099fd/directline/token?api-version=2022-03-01-preview"
     ```
 
 1. Update the value of `userId` to include a customized prefix. For example:
