@@ -18,9 +18,9 @@ ms.collection: virtual-agent
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in, retrieve access token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties, such as name and id variables.
+You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in, retrieve access token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties, such as name and id.
 
-When you create a bot, PVA automatically adds a system topic called **Sign in**, as shown below.
+When you create a bot, PVA automatically adds a system topic called **Sign in**, as shown below. This topic performs authentication for the bot by presenting the user with sign in card. 
 
 :::image type="content" source="media/authentication/system-topic.png" alt-text="Screenshot showing sign in topic." border="false":::
 
@@ -28,7 +28,7 @@ However, to trigger this topic, you must check the **Require users to sign in** 
 
 :::image type="content" source="media/authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
 
-If you check **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked and instead add the authenticate node in the topic where you want the user to sign in. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. - this information is provided in the prerequisites section below. 
+If you check **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked and instead add the authenticate node (discussed later) to a topic where you want the user to sign in. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. - you CAN follow the link in the prerequisites section below to complete this step. 
 
 ## Prerequisites
 
@@ -64,24 +64,24 @@ The ```User.IsLoggedIn``` variable indicates whether the user is signed in (eith
 
 ```User.IsLoggedIn``` is a boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
 
-### AccessToken 
+### User.AccessToken 
 
 The ```User.AccessToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow-input-output.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
 
 > [!WARNING]
-> Make sure you're passing the `AuthToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
+> Make sure you're passing the `User.AccessToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
 
 Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don't trust.
 
 ## Customize Sign in system topic
 
-A typical **Sign in** topic has **Condition** and **Authenticate** nodes as shown below. The system checks to see if `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication settings page. If it is set, then the authentication node prompts the user to sign in.  
+If you have **Require users to sign in** enabled, the **Sign in** system topic will perform the authentication. A typical **Sign in** topic has **Condition** and **Authenticate** nodes as shown below. The system checks to see if `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication settings page. If it is set, then the authentication node prompts the user to sign in.  
 
 Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or messages that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor. To open the topic in code editor, click on (...) as shown below.
 
 :::image type="content" source="media/authentication/edit-sign-in-topic.png" alt-text="Screenshot showing sign in system topic and code editor ellipses." border="false":::
 
-In the code editor, you customize the title or text as shown below.
+In the code editor, you can customize the title or text as shown below.
 
 :::image type="content" source="media/authentication/code-editor.png" alt-text="Screenshot showing code changes in the code editor." border="false":::
 
