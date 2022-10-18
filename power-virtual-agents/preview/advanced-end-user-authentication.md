@@ -43,6 +43,7 @@ After you complete the prerequisites, you will be able to access authentication 
 | ```User.Id```            |        :x:        |        :x:         | :heavy_check_mark: |
 | ```User.IsLoggedIn```    |        :x:        |        :x:         | :heavy_check_mark: |
 | ```User.AccessToken```   |        :x:        |        :x:         | :heavy_check_mark: |
+| ```SignInReason    ```   |        :x:        |        :x:         | :heavy_check_mark: |
 
 ### User.DisplayName 
 
@@ -74,9 +75,8 @@ The ```User.AccessToken``` variable contains the user's token, obtained after th
 Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don't trust.
 
 ### SignInReason
-The `SignInReason` is used to determine whether the user must sign at the beginning of the conversation with the bot. If you set the **Require users to sign in** option in the authentication settings page, the `SignInReason` is then set to `SignInRequired` and the user is prompted to sign in. If it is not set, then the you can use the authenticate node in any topic to prompt user to sign in. For details, see _Add user authentication to a topic section_ below. 
 
-If the user has not signed in and you try to use the system variables, the `SignInReason` is set to `Initializer` to indicate that authentication needs to occur.  
+The `SignInReason` variable indicates whether the user must sign in at the beginning of the conversation with the bot or not. If **Require users to sign** in is enabled in the authentication setting, the value of`SignInReason` is set to `SignInRequired` - this lets the bot prompt the user to sign in at the beginning using the **Sign in** system topic. Otherwise, you can use the authenticate node in any topic to prompt the user to sign in. For details, see Add user authentication to a topic section below. The `SignInReason` is set to `Initializer` if the user has not signed in and you try to use the system variables - this indicates that authentication needs to occur. 
 
 ## Customize Sign in system topic
 
