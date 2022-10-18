@@ -76,11 +76,11 @@ Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don'
 
 ### SignInReason
 
-The `SignInReason` variable indicates whether the user must sign in at the beginning of the conversation with the bot or not. If **Require users to sign** in is enabled in the authentication setting, the value of`SignInReason` is set to `SignInRequired` - this lets the bot prompt the user to sign in at the beginning using the **Sign in** system topic. Otherwise, you can use the authenticate node in any topic to prompt the user to sign in. For details, see Add user authentication to a topic section below. The `SignInReason` is set to `Initializer` if the user has not signed in and you try to use the system variables - this indicates that authentication needs to occur. 
+The `SignInReason` variable indicates whether the user must sign in at the beginning of the conversation with the bot or not. If **Require users to sign** in is enabled in the authentication setting, the value of `SignInReason` is set to `SignInRequired` - this lets the bot prompt the user to sign in at the beginning using the **Sign in** system topic. Otherwise, you can use the authenticate node in any topic to prompt the user to sign in. For details, see Add user authentication to a topic section below. The `SignInReason` is set to `Initializer` if the user has not signed in and they try to use the system variables - this indicates that authentication needs to occur. 
 
 ## Sign in system topic
 
-A **Sign in** topic has **Condition** and **Authenticate** nodes as shown below. The **Sign in** system topic checks to see if `SignInReason` is set to `SignInRequied`. If it is set, then the authentication node prompts the user to sign in. Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or message nodes that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor. To open the topic in code editor, click on (...) as shown below.
+A **Sign in** topic has **Condition** and **Authenticate** nodes as shown below. In the condition node a check is done to see if `SignInReason` is set to `SignInRequied`. If it is, then the authentication node prompts the user to sign in. Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or message nodes that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor. To open the topic in code editor, click on (...) as shown below.
 
 :::image type="content" source="media/authentication/edit-sign-in-topic.png" alt-text="Screenshot showing sign in system topic and code editor ellipses." border="false":::
 
