@@ -73,7 +73,7 @@ The ```User.AccessToken``` variable contains the user's token, obtained after th
 
 Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don't trust.
 
-## SignInReason
+### SignInReason
 The `SignInReason` is used to determine whether the user must sign at the beginning of the conversation with the bot. If you set the **Require users to sign in** option in the authentication settings page, the `SignInReason` is then set to `SignInRequired` and the user is prompted to sign in. If it is not set, then the you can use the authenticate node in any topic to prompt user to sign in. For details, see _Add user authentication to a topic section_ below. 
 
 If the user has not signed in and you try to use the system variables, the `SignInReason` is set to `Initializer` to indicate that authentication needs to occur.  
