@@ -75,7 +75,7 @@ Don't use `AuthToken` inside **Message** nodes, or on flows that you don't trust
 
 ## Customize Sign in system topic
 
-A typical **Sign in** topic has a **Condition** and an **Authenticate** node. The system checks to see if the `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication setting page. If it is set, then the authentication node prompts the user to sign in.  
+A typical **Sign in** topic has **Condition** and **Authenticate** nodes. The system checks to see if `SignInReason` is set to `SignInRequied` - this value is set when you check the **Require users to sign in** checkbox in the authentication settings page. If it is set, then the authentication node prompts the user to sign in.  
 
 :::image type="content" source="media/authentication/system-topic-node.png" alt-text="Screenshot showing system sign in topic." border="false":::  
 
@@ -89,29 +89,15 @@ In the code editor, you customize the title or greeting as shown below.
 
 ## Add user authentication to a topic
 
-The _Authenticate_ node will prompt a user to log in with a sign-in card. If a user is already logged in, they won't be prompted again, even if they reach another Authenticate node.
-
-:::image type="content" source="media/advanced-end-user-authentication/auth-sign-in-user.png" alt-text="Request to sign in." border="false":::
-
-
-Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code, depending on the [channel](publication-fundamentals-publish-channels.md). Some channels, such as Microsoft Teams, do not require the user to enter a validation code.
-
-When your bot has [SSO](configure-sso.md) configured, the user won't be prompted to sign in.
+As discussed above, to authenticate a user in a topic, make sure that **Require users to sign in** is not set. You can add _Authenticate_ node and it will prompt a user to log in with a sign-in card. Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code. If a user is already logged in, they won't be prompted again, even if they reach another Authenticate node.
 
 To add an Authenticate node to your topic:
 
-1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
+1. Go to the **Topics page** for the bot you want to edit.
 
 1. Open the **Authoring canvas** for the topic you want to add the authentication template to.
 
-    > [!NOTE]
-    > If your bot is connected to Dynamics 365 Customer Service, the Authentication node can't be part of the conversation path the bot follows when initially greeting users – otherwise the sign-in card will be shown twice. Instead you should add the Authenticate node to another topic that is triggered by a user response.
-
-1. Select **Add node** (**+**) to add a message node. Enter what the bot should say to indicate that a sign-on experience is about to occur.
-
-    :::image type="content" source="media/advanced-end-user-authentication/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
-
-1. Underneath the message node, select **Add node** (**+**), select **Call an action**, and then select **Authenticate**.
+1. Select **Add node** (**+**), select **Call an action**, and then select **Authenticate**.
 
     :::image type="content" source="media/advanced-end-user-authentication/auth-call-action-2.png" alt-text="Select Authenticate." border="false":::
 
