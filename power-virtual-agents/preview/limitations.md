@@ -28,6 +28,7 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
 - Omnichannel isn't supported.
 - Telephony isn't support.
+- Globalization support in Power Fx is limited to en-US . For example, numbers must be in 12,345.678 format. Additionally, if you use Power Fx function that takes parameters, those parameters must be separated by ,(comma) and not ;(semi-colon). 
 
 ## Upcoming releases
 
