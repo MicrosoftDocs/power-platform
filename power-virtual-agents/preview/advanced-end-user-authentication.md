@@ -18,25 +18,24 @@ ms.collection: virtual-agent
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in, retrieve a user token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties such as name and ID in bot variables. 
+You can authenticate users within a Power Virtual Agents chatbot. User authentication means you prompt a user to sign in, retrieve a user token for that user, and then use that token to access information on behalf of the user. In addition, you can also get a user's basic properties, such as name and id variables.
 
-When you create a bot, a system topic called **Sign in** is added as shown below. 
+When you create a bot, PVA automatically adds a system topic called **Sign in**, as shown below.
 
 :::image type="content" source="media/authentication/system-topic.png" alt-text="Screenshot showing sign in topic." border="false":::
 
-However, to trigger this topic you must check the **Require users to sign in** checkbox, go to **Security** settings and then **Authentication** as shown below.
+However, to trigger this topic, you must check the **Require users to sign in** option on the **Authentication** page under **Security** settings, as shown below.
 
 :::image type="content" source="media/authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
 
-By checking the **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked an instead add the authenticate node in the topic where you wish to require the user to sign in. Regardless of the option you choose, you will need to provide additional settings such as client id, client secret, token exchange url, etc. Refer to the section  [Create an app registration for your custom website](configure-web-sso#create-an-app-registration-for-your-custom-website) in "Configure SSO for your custom website" topic as these are the exact same steps you need. _Do not complete_ insructions that are listed under Create a canvas app registration section.  
+By checking the **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, you can leave the checkbox unchecked and instead add the authenticate node in the topic where you want to authenticate the user. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. Complete the steps in the prerequisites section to enable authentication for your bot. 
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- Complete the section [Create an app registration for your custom website](configure-web-sso#create-an-app-registration-for-your-custom-website) in the _Configure SSO for your custom website_ topic, as these are the exact steps you need. _Do not complete_ the instructions listed under Create a canvas app registration section.
 
 ## Authentication variables
-
-If your bot is configured with "Manual" authentication options, you will have a set of authentication variables available in your topics. The following table compares authentication variable availability by authentication configuration option:
+After you complete the prerequisites, you will be able to access authentication variables. If your bot is configured with "Manual" authentication options, you will have a set of authentication variables available in your topics. The following table compares authentication variable availability by authentication configuration option:
 
 | Authentication Variable | No Authentication |   Only for Teams   |       Manual       |
 | ----------------------- | :---------------: | :----------------: | :----------------: |
