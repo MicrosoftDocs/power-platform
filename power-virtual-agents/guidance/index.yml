@@ -42,7 +42,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Bot best practices
-            url: guidance/bot-best-practices.md
+            url: bot-best-practices.md
           - text: Use pro-code RPA with SAP GUI
             url: rpa-sap-playbook/vbscript-based-sap-gui-automation-overview.md
           - text: Use low-code RPA with SAP GUI
