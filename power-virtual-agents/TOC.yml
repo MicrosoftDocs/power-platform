@@ -343,7 +343,7 @@
       - name: Use expressions using Power Fx
         href: preview/advanced-power-fx.md
       - name: Add user authentication
-        href: preview/advanced-end-user-authentication.md
+        href: preview/advanced-user-authentication.md
       - name: Use Power Automate flows
         href: preview/advanced-flow.md
   - name: Publish and integrate
