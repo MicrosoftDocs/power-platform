@@ -37,12 +37,12 @@ landingContent:
             url: planning/deploy-to-production.md
 
   # Card
-  - title: Robotic Process Automation with SAP
+  - title: Building bots
     linkLists:
       - linkListType: overview
         links:
-          - text: Introduction
-            url: rpa-sap-playbook/introduction.md
+          - text: Bot best practices
+            url: guidance/bot-best-practices.md
           - text: Use pro-code RPA with SAP GUI
             url: rpa-sap-playbook/vbscript-based-sap-gui-automation-overview.md
           - text: Use low-code RPA with SAP GUI
