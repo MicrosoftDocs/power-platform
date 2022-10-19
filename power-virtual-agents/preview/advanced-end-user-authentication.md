@@ -22,11 +22,11 @@ You can authenticate users within a Power Virtual Agents chatbot. User authentic
 
 When you create a bot, PVA automatically adds a system topic called **Sign in**, as shown below. This topic performs authentication by presenting the user with sign in card. 
 
-:::image type="content" source="media/authentication/system-topic.png" alt-text="Screenshot showing sign in topic." border="false":::
+:::image type="content" source="media/advanced-user-authentication/system-topic.png" alt-text="Screenshot showing sign in topic." border="false":::
 
 However, to trigger this topic, you must check the **Require users to sign in** option on the **Authentication** page under **Security** settings, as shown below.
 
-:::image type="content" source="media/authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
+:::image type="content" source="media/advanced-user-authentication/require-signin.png" alt-text="Screenshot shows require sign in option." border="false":::
 
 If you check **Require users to sign in**, authentication occurs when the user first starts the conversation with the bot. If you don't want to authenticate the user at the beginning, leave the checkbox unchecked and instead add the authenticate node (discussed later) to a topic where you want the user to sign in. Regardless of your option, you will need to provide additional settings such as client id, client secret, token exchange URL, etc. - follow the link in the prerequisites section below to do that. 
 
@@ -82,11 +82,11 @@ The `SignInReason` variable indicates whether the user must sign in at the begin
 
 A **Sign in** topic has **Condition** and **Authenticate** nodes as shown below. In the condition node a check is done to see if `SignInReason` is set to `SignInRequied`. If it is, then the authentication node prompts the user to sign in. Starting with the preview release of PVA, you can customize **Sign in** topic to add additonal logic or message nodes that are appropriate in your case. You can also customize title and text of the prompt by opening the topic in the code editor. To open the topic in code editor, click on (...) as shown below.
 
-:::image type="content" source="media/authentication/edit-sign-in-topic.png" alt-text="Screenshot showing sign in system topic and code editor ellipses." border="false":::
+:::image type="content" source="media/advanced-user-authentication/edit-sign-in-topic.png" alt-text="Screenshot showing sign in system topic and code editor ellipses." border="false":::
 
 In the code editor, you can customize the title or text as shown below.
 
-:::image type="content" source="media/authentication/code-editor.png" alt-text="Screenshot showing code changes in the code editor." border="false":::
+:::image type="content" source="media/advanced-user-authentication/code-editor.png" alt-text="Screenshot showing code changes in the code editor." border="false":::
 
 If you aren't signed in, the `SignInReason` is set to `Initializer` and the user is prompted to sign in if the bot accesses any of the authentication variables. 
 
