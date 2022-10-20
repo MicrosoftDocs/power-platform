@@ -51,7 +51,7 @@ These steps are described in detail in this topic.
 
 The first step is to create a Visual Studio project for the package. To do that, you must have one of two available tool extensions installed on your development computer - [Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli), or [Power Platform tools for Visual Studio](/power-apps/developer/data-platform/tools/devtools-install). Note that the Power Platform tools extension is currently only available for Visual Studio 2019. However, the created project can be built using Visual Studio 2019 or later.
 
-### Create a Visual Studio package project
+### Create a package project
 
 Select the appropriate tab below to find out how to create a Visual Studio project using the desired extension. Both tools outputs the project in the same format.
 
@@ -109,7 +109,7 @@ More information about using the Power Platform tools extension: [Quickstart: Cr
 
 ---
 
-## Add your files to the project  
+## Add package files
 
 After you have created a package project, you can begin adding solutions and other files to that project.
 
@@ -126,7 +126,7 @@ For a package project generated using Power Platform Tools for Visual Studio, up
     2. Rename the copied folder to the appropriate language. For example, for the Spanish language, rename it to **es-ES**.  
     3. Modify the content of the HTML files to add Spanish content.  
 
-## Specify the configuration values for the package  
+## Configure the package  
 
 1. Define the package configuration by adding information about your package in the **ImportConfig.xml** file available in **PkgFolder** (or **PkgAssets**). Open the file for editing. The following list provides information about each parameter and node in the config file.  
 
@@ -357,7 +357,7 @@ For a package project generated using Power Platform Tools for Visual Studio, up
 
    ```  
 
-## Define custom code for your package  
+## Add custom code  
 
 1. In the Solution Explorer pane, double-click the **PackageTemplate.cs** (or **PackageImportExtension.cs**) file in the project's root folder to edit it.  
 
@@ -500,7 +500,7 @@ Your package is the following files under the *\<Project>*\Bin\Debug folder
 
      The next step is to deploy your package.  
   
-## Build and deploy a package  
+## Build and deploy  
 
  After you create a package, you can deploy it on the Dataverse instance by using the Package Deployer tool, Windows PowerShell, or the CLI command `pac package deploy`.
 
@@ -508,7 +508,7 @@ Your package is the following files under the *\<Project>*\Bin\Debug folder
 
  For detailed information, see [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).  
 
-## Best practices for creating and deploying packages  
+## Best practices  
 
 While creating packages, developers must ensure that the package assemblies are signed.  
 
