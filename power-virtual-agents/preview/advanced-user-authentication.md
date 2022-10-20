@@ -81,6 +81,8 @@ To add an Authenticate node to a custom topic:
 
 1. Select **Add node** (**+**), select **Call an action**, and then select **Authenticate**.
 
+    :::image type="content" source="media/advanced-user-authentication/auth-node.png" alt-text="Screenshot of the authenticate option in the add node menu.":::
+
 1. [Test your topic](authoring-test-bot.md) using a user configured with your identity provider.
 
 > [!TIP]
@@ -108,7 +110,7 @@ When user authentication is configured, you'll have access to authentication var
 ### User.DisplayName
 
 > [!WARNING]
-> This variable isn't guaranteed to contain a value. Test with a user from your identification provider to ensure your topic work correctly.
+> This variable isn't guaranteed to contain a value. Test with a user from your identification provider to ensure your topic works correctly.
 
 The `User.DisplayName` variable contains the user's display name stored in the identity provider. Use this variable to greet or refer to the user without them having to explicitly tell it to the bot, making it more personalized.
 
@@ -117,17 +119,12 @@ Power Virtual Agents automatically sets the value of `User.DisplayName` based on
 - For Azure Active Directory (Azure AD), the value is obtained from the `name` claim.
 - For OAuth providers, the value is obtained from the `name` claim.
 
-> [!IMPORTANT]
-> To allow Power Virtual Agents to obtain this value, the `profile` scope must be defined when configuring manual user authentication.
->
-> :::image type="content" source="media/advanced-user-authentication/profile-scope.png" alt-text="Screenshot of the sign in prompt.":::
->
-> For more information, see [Configure manual authentication with Azure AD](#configure-manual-authentication-with-azure-ad).
+Power Virtual Agents won't be able to obtain this value if the `profile` scope isn't defined when configuring manual user authentication. For more information, see [Configure manual authentication with Azure AD](#configure-manual-authentication-with-azure-ad).
 
 ### User.Id
 
 > [!WARNING]
-> This variable isn't guaranteed to contain a value. Test with a user from your identification provider to ensure your topic work correctly.
+> This variable isn't guaranteed to contain a value. Test with a user from your identification provider to ensure your topic works correctly.
 
 The `User.Id` variable contains the user's ID stored in the identity provider. Use this variable in [Power Automate flows](advanced-flow.md) to call APIs that take the UserID as a value.
 
