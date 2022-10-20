@@ -31,7 +31,7 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 - Globalization support in Power Fx is limited to English (en-US). This means:
   <!-- FIXME: what are the number format requirements? -->
   - Numbers must be in 12,345.678 format.
-  - Power Fx parameters must be separated by comma (**,**) and not semi-colon(**;**).
+  - Power Fx parameters must be separated by commas (,) and not semi-colons (;).
 
 ## Upcoming releases
 
