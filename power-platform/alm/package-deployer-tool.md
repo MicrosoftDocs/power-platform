@@ -109,7 +109,7 @@ More information about using the Power Platform tools extension: [Quickstart: Cr
 
 ---
 
-### Add your files to the project  
+## Add your files to the project  
 
 After you have created a package project, you can begin adding solutions and other files to that project.
 
@@ -126,7 +126,7 @@ For a package project generated using Power Platform Tools for Visual Studio, up
     2. Rename the copied folder to the appropriate language. For example, for the Spanish language, rename it to **es-ES**.  
     3. Modify the content of the HTML files to add Spanish content.  
 
-### Specify the configuration values for the package  
+## Specify the configuration values for the package  
 
 1. Define the package configuration by adding information about your package in the **ImportConfig.xml** file available in **PkgFolder** (or **PkgAssets**). Open the file for editing. The following list provides information about each parameter and node in the config file.  
 
@@ -357,7 +357,7 @@ For a package project generated using Power Platform Tools for Visual Studio, up
 
    ```  
 
-### Define custom code for your package  
+## Define custom code for your package  
 
 1. In the Solution Explorer pane, double-click the **PackageTemplate.cs** (or **PackageImportExtension.cs**) file in the project's root folder to edit it.  
 
@@ -500,7 +500,7 @@ Your package is the following files under the *\<Project>*\Bin\Debug folder
 
      The next step is to deploy your package.  
   
-## Deploy a package  
+## Build and deploy a package  
 
  After you create a package, you can deploy it on the Dataverse instance by using the Package Deployer tool, Windows PowerShell, or the CLI command `pac package deploy`.
 
