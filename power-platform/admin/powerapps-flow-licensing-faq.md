@@ -427,7 +427,7 @@ However, it's important to ensure that rest of the site is made authenticated. T
 
 ### How much does these licenses cost?
 
-The Power Pages authenticated per user and Power Pages anonymous per user offers serve both small and large customer scenarios with a low barrier to entry, and easily scale for high-volume growth. Subscription and pay-as-you-go pricing are detailed below.
+The Power Pages authenticated per user and Power Pages anonymous per user offers serve both small and large customer scenarios with a low barrier to entry, and easily scale for high-volume growth. Subscription and [pay-as-you-go](pay-as-you-go-meters.md?tabs=image#power-pages-meters-preview) pricing are detailed below.
 
 #### Authenticated per user/website subscription capacity packs and pay-as-you-go meters 
 
