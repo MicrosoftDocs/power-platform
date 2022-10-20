@@ -129,7 +129,7 @@ Power Virtual Agents automatically sets the value of `User.DisplayName` based on
 > [!WARNING]
 > This variable isn't guaranteed to contain a value. Test with a user from your identification provider to ensure your topic work correctly.
 
-The `User.Id` variable contains the user's ID stored in the identity provider. Use this variable in [Power Automate flows](advanced-flow-input-output.md) to call APIs that take the UserID as a value.
+The `User.Id` variable contains the user's ID stored in the identity provider. Use this variable in [Power Automate flows](advanced-flow.md) to call APIs that take the UserID as a value.
 
 Power Virtual Agents automatically sets the value of `User.DisplayName` based on the claim from the identity provider:
 
@@ -147,7 +147,7 @@ You can use this variable to create branching logic in your topics that checks f
 > [!WARNING]
 > Make sure you're passing the `User.AccessToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
 
-The `User.AccessToken` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow-input-output.md) so they can connect to back-end APIs and fetch user information, or to take actions on the user's behalf.
+The `User.AccessToken` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow.md) so they can connect to back-end APIs and fetch user information, or to take actions on the user's behalf.
 
 Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don't trust.
 
@@ -161,4 +161,4 @@ Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don'
 
 ## Related links
 
-You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md).
+You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-web-sso.md).
