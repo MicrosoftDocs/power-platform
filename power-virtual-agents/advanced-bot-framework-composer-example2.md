@@ -2,7 +2,7 @@
 title: "Use Bot Framework Composer to display an options list in chatbots"
 description: "Use Bot Framework Composer to add multi-select options to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 01/25/2022
+ms.date: 10/05/2022
 
 ms.topic: article
 author: iaanw
@@ -39,14 +39,12 @@ Open the Power Virtual Agents bot used in [Example 1](advanced-bot-framework-com
 
 While on the **Create** tab in Composer add another Bot Framework dialog. Name your new dialog **DailySpecials** in Composer.
 
-In your new **DailySpecials** dialog in Composer select the **BeginDialog** trigger to open the **Authoring canvas**. Go to **Manage properties** and select **Set a property** to create a new Composer property in the dialog.
-Set the **Property** field to the following on the right side **Set a property** pane:
+In your new **DailySpecials** dialog in Composer select the **BeginDialog** trigger to open the **Authoring canvas**.
 
-```JSON
-conversation.days_array
-```
+On the canvas, select _Add_ (**+**) then **Manage properties** then **Set a property** to create a new **Set a property** action within the **BeginDialog** trigger.
 
-In the **Value** field on **Set a property**, change the type to **\[\]** to indicate that this property is going to be an array. Enter the following data into the **Value** field to create an array populated with days of the week:
+In the **Set a property** pane, set the **Property** to `conversation.days_array`.
+Change the **Value** type to **\[] array**, to indicate this property will contain an array. Set the **Value** to the following array that lists the days of the week:
 
 ```JSON
 ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]

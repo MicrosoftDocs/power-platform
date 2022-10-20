@@ -33,7 +33,7 @@ While the ALM Accelerator pipelines and app have default configurations that all
 
 ### Installing the pipelines in one project and source code in another project
 
-Using the Deployment Profiles in the ALM Accelerator app you can specify a pipeline project in addition to source project. An option has also been added to the coe-cli install to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
+From the ALM Accelerator App and in the Deployment Profiles there's now an option to specify a pipeline project in addition to source project. An option has also been added to the coe-cli to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
 
 ### Run the ALM Accelerator pipelines without installing the ALM Accelerator Canvas App and solution
 
@@ -117,7 +117,7 @@ The ALM Accelerator for Power Platform pipeline templates has several extension 
 
 ### Toggle on/off specific actions in the pipelines
 
-There are several places in the pipelines where pipeline variables are used to dictate whether or not a task should be executed or which specific task should be executed. The following are a list of variables that can be set either on an individual pipeline or via the alm-accelerator-variable-group to apply to all pipelines. If you want to set these variables for specific solutions on export you can create a specific export pipeline based on the export pipeline template using the naming convention export-solution-to-git-SolutionName. The ALM Accelerator app will use this export pipeline for your specific solution rather than the general purpose export-solution-to-git pipeline.
+There are several places in the pipelines where pipeline variables are used to dictate whether or not a task should be executed or which specific task should be executed. The following are a list of variables that can be set either on an individual pipeline or via the alm-accelerator-variable-group to apply to all pipelines. NOTE: That if you want to set these variables for specific solutions on export you can create a specific export pipeline based on the export pipeline template using the naming convention export-solution-to-git-SolutionName. The ALM Accelerator app will use this export pipeline for your specific solution rather than the general purpose export-solution-to-git pipeline.
 
 | Variable                             | Default                     | Description                                                                      |
 | ---------                            | -------                     | -----------                                                                      |
