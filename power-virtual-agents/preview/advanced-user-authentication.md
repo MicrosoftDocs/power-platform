@@ -107,36 +107,57 @@ When user authentication is configured, you'll have access to authentication var
 
 ### User.DisplayName
 
-The `User.DisplayName` variable contains the user's display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
+> [!WARNING]
+> This variable isn't guaranteed to contain a value. Test with a user from your identification provider to ensure your topic work correctly.
 
-This field value is obtained from the Azure Active Directory (Azure AD) `name` claim. For OAuth providers, this is the value stored in the `name` claim. Power Virtual Agents automatically extracts this field into the variable, so ensure you have `profile` as part of your authentication scope setup.
+The `User.DisplayName` variable contains the user's display name stored in the identity provider. Use this variable to greet or refer to the user without them having to explicitly tell it to the bot, making it more personalized.
+
+Power Virtual Agents automatically sets the value of `User.DisplayName` based on the claim from the identity provider:
+
+- For Azure Active Directory (Azure AD), the value is obtained from the `name` claim.
+- For OAuth providers, the value is obtained from the `name` claim.
+
+> [!IMPORTANT]
+> To allow Power Virtual Agents to obtain this value, the `profile` scope must be defined when configuring manual user authentication.
+>
+> :::image type="content" source="media/advanced-user-authentication/profile-scope.png" alt-text="Screenshot of the sign in prompt.":::
+>
+> For more information, see [Configure manual authentication with Azure AD](#configure-manual-authentication-with-azure-ad).
 
 ### User.Id
 
-The `User.Id` variable contains the user's ID stored in the identity provider. This value can be used by Power Automate flows to call APIs that take the UserID as a value.
-This field value is obtained from the Azure AD `sub` claim. For OAuth providers, this is the value stored in the `sub` claim. Power Virtual Agents automatically extracts this field into the variable.
-
 > [!WARNING]
-> The `User.DisplayName` and `User.Id` variables are not guaranteed to be filled, and might be empty strings depending on the user configuration in the identity provider. Test with a user from your identification provider to ensure your topics work correctly, even if these variables are empty.
+> This variable isn't guaranteed to contain a value. Test with a user from your identification provider to ensure your topic work correctly.
+
+The `User.Id` variable contains the user's ID stored in the identity provider. Use this variable in [Power Automate flows](advanced-flow-input-output.md) to call APIs that take the UserID as a value.
+
+Power Virtual Agents automatically sets the value of `User.DisplayName` based on the claim from the identity provider:
+
+- For Azure Active Directory (Azure AD), the value is obtained from the `sub` claim.
+- For OAuth providers, the value is obtained from the `sub` claim.
 
 ### User.IsLoggedIn
 
-The `User.IsLoggedIn` variable indicates whether the user is signed in (either as a result of signing in or already being signed in, also known as the log-in success path) or not signed in (which would result in the log-in failure path).
+`User.IsLoggedIn` is a boolean-type variable containing the signed-in status of the user. A value of `true` indicates the user is signed in and a value of `false` indicates they aren't.
 
-`User.IsLoggedIn` is a boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
+You can use this variable to create branching logic in your topics that checks for a successful sign-in, or to opportunistically fetch user information only if the user is signed in.
 
 ### User.AccessToken
 
-The `User.AccessToken` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow-input-output.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
-
 > [!WARNING]
 > Make sure you're passing the `User.AccessToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
+
+The `User.AccessToken` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow-input-output.md) so they can connect to back-end APIs and fetch user information, or to take actions on the user's behalf.
 
 Don't use `User.AccessToken` inside **Message** nodes, or on flows that you don't trust.
 
 ### SignInReason
 
-The `SignInReason` variable indicates whether the user must sign in at the beginning of the conversation with the bot or not. If **Require users to sign** in is enabled in the authentication setting, the value of `SignInReason` is set to `SignInRequired` - this lets the bot prompt the user to sign in at the beginning using the **Sign in** system topic. Otherwise, you can use the authenticate node in any topic to prompt the user to sign in. For details, see Add user authentication to a topic section below. The `SignInReason` is set to `Initializer` if the user has not signed in and they try to use the system variables - this indicates that authentication needs to occur.
+`SignInReason` is a choice-type variable that indicates when the user must sign in. It has two possible values:
+
+- `SignInRequired` indicates the user must sign in at the beginning of the conversation using the **Sign in** system topic. This is only possible when **Require users to sign in** is turned on.
+
+- `Initializer` indicates that if the user hasn't signed in yet, and they reach a point in the conversation that uses authentication variables, they'll be prompted to sign in.
 
 ## Related links
 
