@@ -515,21 +515,23 @@ You can add custom code that executes before, during, and after the package is i
   
 ## Build and deploy  
 
+In the following sections we will describe how to build and deploy a package.
+
 ### Build
 
-Building your package is describe below.
+Building your package is describe below depending on which tool you are using.
 
 #### [Power Platform CLI](#tab/cli)
 
-To build a package created with the CLI, you could load the .csproj file into Visual Studio, but here we are going to use the dotnet command and MSBuild. The example below assumes the working directory contains the *.csproj file.
+To build a package created with the CLI, you could load the .csproj file into Visual Studio, but instead we are going to use the dotnet command and MSBuild. The example below assumes the working directory contains the *.csproj file.
 
 ```bash
 > dotnet publish
 
-DeploymentPackage -> C:\Users\peter\Downloads\DeploymentPackage \bin\Debug\DeploymentPackage.1.0.0.pdpkg.zip
+DeploymentPackage -> C:\Users\peter\Downloads\DeploymentPackage\bin\Debug\DeploymentPackage.1.0.0.pdpkg.zip
 ```
 
-You can optionally look at the details of the package.
+You can optionally look at the details of the built package.
 
 ```bash
 > pac package show --package .\bin\Debug\DeploymentPackage.1.0.0.pdpkg.zip
@@ -537,13 +539,13 @@ You can optionally look at the details of the package.
 
 #### [Power Platform tools](#tab/pptools)
 
-To build the package, simply press F5 in Visual Studio select **Build** > **Build solution**.
+To build the package, simply press F5 in Visual Studio or select **Build** > **Build solution**.
 
 ---
 
 Your package is made of the following files under the *\<Project>*\Bin\Debug folder.  
 
-   - **\<PackageName> folder**: The folder name is the same as the one you changed for your package folder name in step 2.g of this section (Step 5: Define custom code for your package). This folder contains  all solutions,  configuration data, flat files, and the contents for your package.
+   - **\<PackageName> folder**: The folder name is the same as the one you changed for your package folder name in step 2.g of this section [Add costom code](#add-custom-code). This folder contains all solutions, configuration data, flat files, and the contents for your package.
 
 > [!NOTE]
 > You may see a .NET folder (e.g, net472) containing a pdpublish folder. Your DLL and other project files are in that pdpublish folder.
@@ -554,11 +556,11 @@ Your package is made of the following files under the *\<Project>*\Bin\Debug fol
 
  After you create a package, you can deploy it on the Dataverse instance by using the Package Deployer tool, Windows PowerShell, or a CLI command.
 
- The Package Deployer tool is distributed as part of the [Microsoft.CrmSdk.XrmTooling.PackageDeployment](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment) NuGet package. To download the Package Deployer tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget).
+To deploy using the Package Deployer tool, first download the tool as described in [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget).
 
- For detailed information, see [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).
+ For detailed information on package deployment, see [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).
 
-To deploy using the CLI, use the `deploy` subcommand.
+To deploy using the CLI, use the `pac package deploy` command.
 
 ```bash
 > pac package deploy --package .\bin\Debug\DeploymentPackage.1.0.0.pdpkg.zip
