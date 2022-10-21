@@ -25,7 +25,6 @@ You can enable user authentication directly within a Power Virtual Agents bot co
 
 ## Configure manual authentication with Azure AD
 
-<!-- FIXME: are other authentication options not supported in public preview? -->
 Before using authentication in your topics, you'll first need to configure user authentication with Azure AD. To learn more about configuring user authentication, see [Configure user authentication](configuration-end-user-authentication.md).
 
 During this process, you'll create an app registration which you'll use for authentication:
