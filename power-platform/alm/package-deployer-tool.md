@@ -7,7 +7,7 @@ ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 10/06/2022
+ms.date: 10/20/2022
 ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
@@ -39,34 +39,33 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 To create a Package Deployer package, you will perform the following steps.
 > [!div class="checklist"]
 >
-> * Create a Visual Studio project using one of the supported tool extensions
+> * Create a Visual Studio or MSBuild project
 > * Add solutions and other files to the project  
-> * Update the HTML files
-> * Specify the configuration values for the package
-> * Define custom code for your package
+> * Update provided HTML files (optional)
+> * Specify configuration values for the package
+> * Define custom code for the package
+> * Build and deploy the package
 
 These steps are described in detail in this topic.
 
-## Create a package
+## Create a package project
 
-The first step is to create a Visual Studio project for the package. To do that, you must have one of two available tool extensions installed on your development computer - [Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli), or [Power Platform tools for Visual Studio](/power-apps/developer/data-platform/tools/devtools-install). Note that the Power Platform tools extension is currently only available for Visual Studio 2019. However, the created project can be built using Visual Studio 2019 or later.
+The first step is to create a Visual Studio or MSBuild project for the package. To do that, you must have one of two available tool extensions installed on your development computer. If using Visual Studio Code, install [Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli). Otherwise, if using Visual Studio 2019, install [Power Platform tools for Visual Studio](/power-apps/developer/data-platform/tools/devtools-install). Note that the Power Platform tools extension is currently only available for Visual Studio 2019. However, the created project can be built using Visual Studio 2019 or later.
 
-### Create a package project
+Select the appropriate tab below to find out how to create a project using the desired tool extension. Both tools output the project in a similar format.
 
-Select the appropriate tab below to find out how to create a Visual Studio project using the desired extension. Both tools outputs the project in the same format.
-
-#### [Power Platform CLI](#tab/cli)
+### [Power Platform CLI](#tab/cli)
 
 Run the [pac package init](../developer/cli/reference/package.md#pac-package-init) command to create the initial package. More information: [pac package](../developer/cli/reference/package.md)
 
 ```bash
 pac package init help
-pac package init --outputDirectory DeploymentPackage 
+pac package init --outputDirectory DeploymentPackage
 ```
 
 The resulting CLI output contains the folders and files shown below. The "DeploymentPackage" folder name was used here as an example.
 
-```
+```bash
 C:.
 └───DeploymentPackage
     │   DeploymentPackage.csproj
@@ -77,11 +76,11 @@ C:.
             manifest.ppkg.json
 ```
 
-In the created project, you will find the ImportConfig.xml configuration file in the PkgAssets folder and the PackageImportExtension.cs file which you will be modifying as described later in this topic.
+In the created project, you will find the ImportConfig.xml configuration file in the PkgAssets folder and the PackageImportExtension.cs file. You will be modifying these files as described later in this topic.
 
-#### [Power Platform tools](#tab/pptools)
+### [Power Platform tools](#tab/pptools)
 
-You can either create a Visual Studio project using the Power Platform Solution Template and later add a package project using the Power Platform Package Deployment Project template or just create a project using the Power Platform Package Deployment Project template.
+You can create a Visual Studio project using the Power Platform Solution Template and later add a package project using the Power Platform Package Deployment Project template, or simply create a project directly using the Power Platform Package Deployment Project template.
 
 :::image type="content" source="media/pptools-add-package-project.png" alt-text="Add a package project.":::
 
@@ -90,7 +89,7 @@ You can either create a Visual Studio project using the Power Platform Solution 
 
 The resulting Visual Studio solution and project contains the folders and files shown below. The "Deployment-package" name was used here as an example. The contents of the Content folder is not shown here for brevity.
 
-```
+```bash
 C:.
 │   Deployment-package.csproj
 │   Deployment-package.sln
@@ -103,7 +102,7 @@ C:.
 │   └───Content
 ```
 
-In the created project, you will find the ImportConfig.xml configuration file in the PkgFolder folder and the PackageTemplate.cs file which you will be modifying as described later in this topic.
+In the created project, you will find the ImportConfig.xml configuration file in the PkgFolder folder and the PackageTemplate.cs file. You will be modifying these files as described later in this topic.
 
 More information about using the Power Platform tools extension: [Quickstart: Create a Power Platform Tools project](/power-apps/developer/data-platform/tools/devtools-create-project)
 
@@ -113,18 +112,35 @@ More information about using the Power Platform tools extension: [Quickstart: Cr
 
 After you have created a package project, you can begin adding solutions and other files to that project.
 
-1. In the **Solutions Explorer** pane, add your Dataverse solutions and other files under the **PkgFolder** (or **PkgAssets**) folder.  
-2. For each file that you add under that folder, in the **Properties** pane, set the **Copy to Output Directory** value to **Copy Always**.  This ensures that your file is available in the generated package.
+### [Power Platform CLI](#tab/cli)
 
-For a package project generated using Power Platform Tools for Visual Studio, update the HTML language specific files.  
+When using the CLI, you can add external packages, solutions, and references to your package project using one of the **add** subcommands. Enter `pac package help` to see the list of subcommands. Let's add a solution to our package.
 
-1. In the **Solution Explorer** pane, expand **PkgFolder** > **Content** > **en-us**. You'll find two folders called `EndHTML` and `WelcomeHTML`. These folders contain the  HTML and associated files that enable you to display information at the end and beginning of the package deployment process. Edit the files in the HTML folder of these folders to add information for your package.  
+```bash
+> pac package add-solution help
+
+Commands:
+Usage: pac package add-solution --path [--import-order] [--skip-validation] [--publish-workflows-activate-plugins] [--overwrite-unmanaged-customizations] [--import-mode] [--missing-dependency-behavior] [--dependency-overrides]
+
+> pac package add-solution --path 
+```
+
+### [Power Platform tools](#tab/pptools)
+
+1. In the **Solutions Explorer** pane, add your Dataverse solutions and other files under the **PkgFolder** folder. HTML files belong under the **Content** folder. More about this later.
+2. For each file that you add, in the **Properties** pane, set the **Copy to Output Directory** value to **Copy Always**.  This ensures that your files are available in the generated package.
+
+Next, update the HTML language specific files.  
+
+1. In the **Solution Explorer** pane, expand **PkgFolder** > **Content** > **en-us**. You'll find two folders called `EndHTML` and `WelcomeHTML`. These folders contain the  HTML and associated files that enable you to display (to the user) information at the end and beginning of the package deployment process. Edit the files in the HTML folder of these folders to add information to display for your package.
 
 2. You can also add the HTML files in your package in other languages so that the content in the HTML appears in the language based on the locale settings of the user's computer. To do so:  
 
     1. Create a copy of the **en-us** folder under **PkgFolder** > **Content**.  
     2. Rename the copied folder to the appropriate language. For example, for the Spanish language, rename it to **es-ES**.  
-    3. Modify the content of the HTML files to add Spanish content.  
+    3. Modify the content of the HTML files to add Spanish content. 
+
+---
 
 ## Configure the package  
 
