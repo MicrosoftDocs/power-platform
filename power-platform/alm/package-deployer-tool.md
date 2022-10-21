@@ -122,7 +122,10 @@ When using the CLI, you can add external packages, solutions, and references to 
 Commands:
 Usage: pac package add-solution --path [--import-order] [--skip-validation] [--publish-workflows-activate-plugins] [--overwrite-unmanaged-customizations] [--import-mode] [--missing-dependency-behavior] [--dependency-overrides]
 
-> pac package add-solution --path 
+> cd .\DeploymentPackage\
+> pac package add-solution --path ..\TestSolution_1_0_0_1_managed.zip
+
+The item was added successfully.
 ```
 
 ### [Power Platform tools](#tab/pptools)
@@ -144,7 +147,7 @@ Next, update the HTML language specific files.
 
 ## Configure the package  
 
-1. Define the package configuration by adding information about your package in the **ImportConfig.xml** file available in **PkgFolder** (or **PkgAssets**). Open the file for editing. The following list provides information about each parameter and node in the config file.  
+1. Define the package configuration by adding information about your package in the **ImportConfig.xml** file in the project. Open the file for editing. The following list provides information about each parameter and node in the config file.  
 
     `installsampledata`  
     `True` or `false`. If `true`, installs sample data to Dataverse instance. This is the same sample data that you can install from **Settings** > **Data Management** area in Dataverse.  
@@ -375,7 +378,9 @@ Next, update the HTML language specific files.
 
 ## Add custom code  
 
-1. In the Solution Explorer pane, double-click the **PackageTemplate.cs** (or **PackageImportExtension.cs**) file in the project's root folder to edit it.  
+You can add custom code that executes before, during, and after the package is imported into an environment. To do so, follow these instructions.
+
+1. Edit the **PackageTemplate.cs** (or **PackageImportExtension.cs**) file in the project's root folder.  
 
 2. In the C# file, you can:  
 
@@ -506,29 +511,64 @@ Next, update the HTML language specific files.
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.DataImportBypass> |Property|Use this to specify whether Dynamics 365 Package Deployer skips all data import operations such as importing Dataverse sample data, flat file data, and data exported from the Configuration Migration tool. Specify true or false. Default is `false`.|
    | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |Property|Use this to specify whether Dynamics 365 Package Deployer will bypass some of its safety checks, which helps in improving the import performance. Specify `true` or `false`. Default is `false`.<br /><br /> You should set this to `true` only if the target Dataverse instance does not contain any data.|
 
-4. Save your project, and then build it to create the package.
-
-Your package is the following files under the *\<Project>*\Bin\Debug folder  
-
-   - **\<PackageName> folder**: The folder name is the same as the one you changed for your package folder name in step 2.g of this section (Step 5: Define custom code for your package). This folder contains  all solutions,  configuration data, flat files, and the contents for your package.  
-
-   - **\<PackageName>.dll**: The assembly contains the custom code for your package. By default, the name of the assembly is the same as your Visual Studio project name.  
-
-     The next step is to deploy your package.  
+4. Save your project. The next step is to build the package.   
   
 ## Build and deploy  
 
- After you create a package, you can deploy it on the Dataverse instance by using the Package Deployer tool, Windows PowerShell, or the CLI command `pac package deploy`.
+### Build
+
+Building your package is describe below.
+
+#### [Power Platform CLI](#tab/cli)
+
+To build a package created with the CLI, you could load the .csproj file into Visual Studio, but here we are going to use the dotnet command and MSBuild. The example below assumes the working directory contains the *.csproj file.
+
+```bash
+> dotnet publish
+
+DeploymentPackage -> C:\Users\peter\Downloads\DeploymentPackage \bin\Debug\DeploymentPackage.1.0.0.pdpkg.zip
+```
+
+You can optionally look at the details of the package.
+
+```bash
+> pac package show --package .\bin\Debug\DeploymentPackage.1.0.0.pdpkg.zip
+```
+
+#### [Power Platform tools](#tab/pptools)
+
+To build the package, simply press F5 in Visual Studio select **Build** > **Build solution**.
+
+---
+
+Your package is made of the following files under the *\<Project>*\Bin\Debug folder.  
+
+   - **\<PackageName> folder**: The folder name is the same as the one you changed for your package folder name in step 2.g of this section (Step 5: Define custom code for your package). This folder contains  all solutions,  configuration data, flat files, and the contents for your package.
+
+> [!NOTE]
+> You may see a .NET folder (e.g, net472) containing a pdpublish folder. Your DLL and other project files are in that pdpublish folder.
+
+   - **\<PackageName>.dll**: The assembly contains the custom code for your package. By default, the name of the assembly is the same as your project name.
+
+### Deploy
+
+ After you create a package, you can deploy it on the Dataverse instance by using the Package Deployer tool, Windows PowerShell, or a CLI command.
 
  The Package Deployer tool is distributed as part of the [Microsoft.CrmSdk.XrmTooling.PackageDeployment](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment) NuGet package. To download the Package Deployer tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget).
 
- For detailed information, see [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).  
+ For detailed information, see [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).
+
+To deploy using the CLI, use the `deploy` subcommand.
+
+```bash
+> pac package deploy --package .\bin\Debug\DeploymentPackage.1.0.0.pdpkg.zip
+```
 
 ## Best practices  
 
 While creating packages, developers must ensure that the package assemblies are signed.  
 
-While deploying the packages, Dataverse administrators must:  
+While deploying packages, Dataverse administrators must:  
 
 - Insist on a signed package assembly so that you can track an assembly back to its source.  
 - Test the package on a pre-production instance (preferably a mirror image of the production instance) before running it on a production instance.  
