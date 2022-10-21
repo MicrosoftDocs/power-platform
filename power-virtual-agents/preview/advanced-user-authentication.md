@@ -92,7 +92,6 @@ To add an Authenticate node to a custom topic:
 
 When user authentication is configured, you'll have access to authentication variables in your topics. The following table compares the availability of these variables based on authentication option:
 
-<!-- FIXME: User.Id and User.DisplayName were previously supported in Only For Teams. Has this changed? -->
 | Authentication Variable | No Authentication | Only for Teams | Manual |
 | ----------------------- | :---------------: | :------------: | :----: |
 | [User.DisplayName][1]   |                   |                |   ✓    |
