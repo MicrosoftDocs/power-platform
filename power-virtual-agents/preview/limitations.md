@@ -28,6 +28,15 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
 - Omnichannel isn't supported.
 - Telephony isn't support.
+ 
+## Troubleshooting firewall or network issues
+
+If you have trouble loading PVA, and see a page saying "Try checking your firewall or network connection before trying again." 
+
+1. This might be a transient network issue, try again in a few moments.
+2. Your browser might not support WebAssembly. Make sure you're using a browser that supports it.
+3. If your machine has a firewall running, check if there’s a rule that’s blocking file (.binary files) downloads.
+4. If you have a corporate firewall running, you’ll need to talk to your company’s IT to bypass firewall rules to be able to download WASM assets (.binary files).
 
 ## Upcoming releases
 
