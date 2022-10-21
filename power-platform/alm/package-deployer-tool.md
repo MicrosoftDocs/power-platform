@@ -556,25 +556,31 @@ Your package is made of the following files under the *\<Project>*\Bin\Debug fol
 
  After you create a package, you can deploy it on the Dataverse instance by using the Package Deployer tool, Windows PowerShell, or a CLI command.
 
-To deploy using the Package Deployer tool, first download the tool as described in [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget).
+- To deploy using the Package Deployer tool, first download the tool as described in [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget). Next, follow the detailed information on package deployment in the topic [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).
 
- For detailed information on package deployment, see [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).
+- To deploy using the CLI, use the `pac package deploy` command.
 
-To deploy using the CLI, use the `pac package deploy` command.
-
-```bash
-> pac package deploy --package .\bin\Debug\DeploymentPackage.1.0.0.pdpkg.zip
-```
+    ```bash
+    > pac package deploy --package .\bin\Debug\DeploymentPackage.1.0.0.pdpkg.zip
+    ```
 
 ## Best practices  
 
-While creating packages, developers must ensure that the package assemblies are signed.  
+Listed below are a few best practice tips to follow when working with Package Deployer packages.
 
-While deploying packages, Dataverse administrators must:  
+### Creating packages
 
-- Insist on a signed package assembly so that you can track an assembly back to its source.  
-- Test the package on a pre-production instance (preferably a mirror image of the production instance) before running it on a production instance.  
-- Back up the production instance before deploying the package.  
+When creating packages, developers must:
+
+- *Ensure that package assemblies are signed*.
+
+### Deploying packages
+
+When deploying packages, Dataverse administrators must:  
+
+- *Insist on signed package assemblies* so that you can track an assembly back to its source.  
+- *Test the package on a pre-production instance*, preferably a mirror image of the production instance, before running it on a production instance.  
+- *Back up the production instance* before deploying the package.  
 
 ### See also
 
