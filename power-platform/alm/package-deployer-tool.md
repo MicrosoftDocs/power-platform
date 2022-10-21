@@ -24,7 +24,7 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 - One or more Dataverse solution files.  
 - Flat files or exported configuration data file from the Configuration Migration tool. For more information about the tool, see  [Move configuration data across instances and organizations with the Configuration Migration tool](../admin/manage-configuration-data.md).  
 - Custom code that can run before, while, or after the package is deployed to the Dataverse instance.  
-- HTML content specific to the package that can display at the beginning and end of the deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.
+- HTML content specific to the package that can display at the beginning and end of the deployment process. This content can be useful to provide a description of the solutions and files that are deployed in the package.
 
 > [!NOTE]
 > There is another package type called a *plug-in package*. That kind of package is for plug-in dependent assemblies and has no relationship with Package Deployer packages.
@@ -130,8 +130,8 @@ The item was added successfully.
 
 ### [Power Platform tools](#tab/pptools)
 
-1. In the **Solutions Explorer** pane, add your Dataverse solutions and other files under the **PkgFolder** folder. HTML files belong under the **Content** folder. More about this later.
-2. For each file that you add, in the **Properties** pane, set the **Copy to Output Directory** value to **Copy Always**.  This ensures that your files are available in the generated package.
+1. In the **Solutions Explorer** pane, add your Dataverse solutions and other files under the **PkgFolder** folder. HTML files belong under the **Content** folder. More about this HTML content later.
+2. For each file that you add, in the **Properties** pane, set the **Copy to Output Directory** value to **Copy Always**.  Setting this value ensures that your files are available in the generated package.
 
 Next, update the HTML language specific files.  
 
@@ -150,7 +150,7 @@ Next, update the HTML language specific files.
 1. Define the package configuration by adding information about your package in the **ImportConfig.xml** file in the project. Open the file for editing. The following list provides information about each parameter and node in the config file.  
 
     `installsampledata`  
-    `True` or `false`. If `true`, installs sample data to Dataverse instance. This is the same sample data that you can install from **Settings** > **Data Management** area in Dataverse.  
+    `True` or `false`. If `true`, installs sample data to Dataverse instance. This data is the same sample data that you can install from **Settings** > **Data Management** area in Dataverse.  
 
     `waitforsampledatatoinstall`  
    **True** or **false**. If **true**, and if **installsampledata** is also set to **true**, waits for sample data to install before deploying the package.  
@@ -161,12 +161,12 @@ Next, update the HTML language specific files.
     `agentdesktopzipfile`  
     File name of the zip file to unpack. If you specify a .zip file name here, it adds a screen during the package deployment process that prompts you to select a location where you want to unpack the contents of the file.  
 
-    This is commonly used for creating packages for Unified Service Desk for Dynamics 365. For information about Unified Service Desk, see [Administration Guide for Unified Service Desk 3.0](/dynamics365/unified-service-desk/administration-guide-unified-service-desk-3).  
+    This attribute is commonly used for creating packages for Unified Service Desk for Dynamics 365. For information about Unified Service Desk, see [Administration Guide for Unified Service Desk 3.0](/dynamics365/unified-service-desk/administration-guide-unified-service-desk-3).  
 
     `agentdesktopexename`  
     Name of the .exe or .msi file in the zip file or a URL to be invoked at the end of the deployment process.  
 
-    This is commonly used for creating packages for Unified Service Desk.  
+    This attribute is commonly used for creating packages for Unified Service Desk.  
 
     `crmmigdataimportfile`  
     File name of the default configuration data file (.zip) exported using the Configuration Migration tool.  
@@ -182,11 +182,11 @@ Next, update the HTML language specific files.
 
    - `solutionpackagefilename`: Specify the .zip file name of your solution. Required.  
 
-   - `overwriteunmanagedcustomizations`: Specify whether to overwrite any unmanaged customizations when importing a solution that already exists in the target Dynamics 365 instance. This is optional, and if you do not specify this attribute, by default the unmanaged customizations in the existing solution are maintained on the target Dynamics 365 instance.  
+   - `overwriteunmanagedcustomizations`: Specify whether to overwrite any unmanaged customizations when importing a solution that already exists in the target Dynamics 365 instance. This attribute is optional, and if you do not specify this attribute, by default the unmanaged customizations in the existing solution are maintained on the target Dynamics 365 instance.  
 
-   - `publishworkflowsandactivateplugins`: Specify whether to publish workflows and activate plug-ins in the target Dynamics 365 instance after the solution is imported. This is optional, and if you do not specify not specify this attribute, by default the workflows are published and plug-ins are activated after the solution is imported on the target Dynamics 365 instance.  
+   - `publishworkflowsandactivateplugins`: Specify whether to publish workflows and activate plug-ins in the target Dynamics 365 instance after the solution is imported. This attribute is optional, and if you do not specify not specify this attribute, by default the workflows are published and plug-ins are activated after the solution is imported on the target Dynamics 365 instance.  
 
-     You can add multiple solution file names in a package by adding as many `<configsolutionfile>` nodes. For example, if you want three solution files to be imported, add them like this:  
+     You can add multiple solution file names in a package by adding as many `<configsolutionfile>` nodes. For example, if you want three solution files to be imported, add them as shown below:  
 
    ```xml  
 
@@ -238,12 +238,12 @@ Next, update the HTML language specific files.
 
    ```  
 
-    This has the following attributes:  
+    Below is a list of supported attributes:  
 
    |Attribute|Description|
    |--|-|
    |`filename`| Name of the file that contains the import data. If the file is a .zip file, a `<zipimportdetails>` node must be present with a     `<zipimportdetail>` node for each file in the .zip file. |
-   |`filetype`|This can be csv, xml, or zip.          |
+   |`filetype`|This value can be csv, xml, or zip.          |
    |`associatedmap`|Name of the Dataverse import data map to use with this file. If blank, attempts to use the system determined import data map name for this file.|
    |`importtoentity`| Can be the name of the exe in the zip file, a URL, or an .msi file to provide a link to invoke at the end of the process.|
    |`datadelimiter`| Name of the data delimiter used in the import file. Valid values are singlequote or doublequotes.|
@@ -272,12 +272,12 @@ Next, update the HTML language specific files.
 
    ```  
 
-    This has the following attributes:  
+    Supported attributes are listed below:  
 
    |Attribute|Description|  
    |---------------|-----------------|  
    |`filename`|Name of the file that contains the import data.|  
-   |`filetype`|This can be csv or xml.|  
+   |`filetype`|This value can be csv or xml.|  
    |`importtoentity`|Can be the name of the exe in the zip file, a url, or an .msi file to provide a link to invoke at the end of the process.|  
 
     `<filesmapstoimport>` node  
@@ -417,7 +417,7 @@ You can add custom code that executes before, during, and after the package is i
       }  
       ```  
 
-       This lets the administrator use the command line or the [Import-CrmPackage](/powershell/module/microsoft.xrm.tooling.packagedeployment/import-crmpackage) cmdlet to specify whether to skip the safety checks while running the Package Deployer tool to import the package. More information: [Deploy packages using Package Deployer and Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md)  
+       This code enables the administrator use the command line or the [Import-CrmPackage](/powershell/module/microsoft.xrm.tooling.packagedeployment/import-crmpackage) cmdlet to specify whether to skip the safety checks while running the Package Deployer tool to import the package. More information: [Deploy packages using Package Deployer and Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md)  
 
    2. Enter custom code to execute before the solutions are imported in  the override method definition of `PreSolutionImport` to specify whether to maintain or overwrite customizations while updating the specified solution in a target Dataverse instance, and whether to automatically activate plug-ins and workflows.  
 
@@ -467,7 +467,7 @@ You can add custom code that executes before, during, and after the package is i
       }  
       ```  
 
-       This is the name of your package that will appear on the package selection page in the Dynamics 365 Package Deployer wizard.  
+       This returned value is the name of your package that will appear on the package selection page in the Dynamics 365 Package Deployer wizard.  
 
    9. Change the package description by editing the return value under the `GetImportPackageDescriptionText` property.  
 
@@ -480,7 +480,7 @@ You can add custom code that executes before, during, and after the package is i
 
        ```  
 
-        This is the package description that will appear alongside the package name on the on the package selection page in the Package Deployer wizard.  
+        This returned value is the package description that will appear alongside the package name on the on the package selection page in the Package Deployer wizard.  
 
    10. Change the package long name by editing the return value under the `GetLongNameOfImport` property.  
 
@@ -505,11 +505,11 @@ You can add custom code that executes before, during, and after the package is i
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RaiseFailEvent(System.String,System.Exception)>|Function|Used to fail the current status import with an exception message.|
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.IsRoleAssoicatedWithTeam(System.Guid,System.Guid)>|Function|Used to determine if a role is associated with a specified team.|
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.IsWorkflowActive(System.Guid)>|Function|Used to determine if a specified workflow is active. |
-   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.PackageLog>| Class Pointer|This is a pointer to the initialized logging interface for the package. This interface is used by a package to log messages and exceptions to the package log file.|
-   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RootControlDispatcher>|Property|This is a dispatcher interface used to allow your control to render its own UI during package deployment. Use this interface to wrap any UI elements or commands. It is important to check this variable for null values before using it as it may or may not be set to a value.  |
-   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.CrmSvc>|Property |This is a pointer to <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> class that allows for a package to address Dynamics 365 from within the package. Use this to execute SDK methods and other actions in the overridden methods.|
-   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.DataImportBypass> |Property|Use this to specify whether Dynamics 365 Package Deployer skips all data import operations such as importing Dataverse sample data, flat file data, and data exported from the Configuration Migration tool. Specify true or false. Default is `false`.|
-   | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |Property|Use this to specify whether Dynamics 365 Package Deployer will bypass some of its safety checks, which helps in improving the import performance. Specify `true` or `false`. Default is `false`.<br /><br /> You should set this to `true` only if the target Dataverse instance does not contain any data.|
+   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.PackageLog>| Class Pointer|A pointer to the initialized logging interface for the package. This interface is used by a package to log messages and exceptions to the package log file.|
+   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RootControlDispatcher>|Property|A dispatcher interface used to allow your control to render its own UI during package deployment. Use this interface to wrap any UI elements or commands. It is important to check this variable for null values before using it as it may or may not be set to a value.  |
+   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.CrmSvc>|Property |A pointer to <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> class that allows for a package to address Dynamics 365 from within the package. Use this pointer to execute SDK methods and other actions in the overridden methods.|
+   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.DataImportBypass> |Property|Specify whether Dynamics 365 Package Deployer skips all data import operations such as importing Dataverse sample data, flat file data, and data exported from the Configuration Migration tool. Specify true or false. Default is `false`.|
+   | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |Property|Specify whether Dynamics 365 Package Deployer will bypass some of its safety checks, which helps in improving the import performance. Specify `true` or `false`. Default is `false`.<br /><br /> You should set this property to `true` only if the target Dataverse instance does not contain any data.|
 
 4. Save your project. The next step is to build the package.   
   
