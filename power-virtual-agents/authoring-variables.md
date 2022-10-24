@@ -113,7 +113,7 @@ You can type a literal value into the variable input field in an action node ins
 When you redirect to other topics, you can pass values into variables in the destination topic or get variables back from it. Passing variables between topics is especially useful when you already have information that the topic needs. Your users will appreciate not having to answer the question again. It's also helpful when you refactor and separate your topics into reusable components and you want to pass variables across the topics.
 
 > [!NOTE]
-> Variables of type `Custom Entity`, `Date Time`, and `Duration`, or variables from question nodes set as "Multiple-choice" can't be passed between topics.  
+> Variables of type `Custom Entity`, `Date and Time`, `Duration`, and `Multiple-choice` can't be passed between topics.  
 
 ### Receive values from other topics
 
