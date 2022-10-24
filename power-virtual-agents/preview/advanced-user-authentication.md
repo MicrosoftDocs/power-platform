@@ -17,26 +17,19 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-You can enable user authentication directly within a Power Virtual Agents bot conversation. User authentication means you can get a user's basic properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
+Enable user authentication to access user variables on the authoring canvas. You can use these variables to personalize the conversation for the user, or access back-end systems on the user's behalf.
 
 ## Prerequisites
 
-- [Use variables](authoring-variables.md)
+- [Use variables](authoring-variables.md).
+- [Configure user authentication](configuration-end-user-authentication.md).
 
 ## Configure manual authentication with Azure AD
 
-Before using authentication in your topics, you'll first need to configure user authentication with Azure AD. To learn more about configuring user authentication, see [Configure user authentication](configuration-end-user-authentication.md).
+Before using authentication in your topics, you'll first need to configure user authentication with Azure AD.
 
-During this process, you'll create an app registration which you'll use for authentication:
-
-1. Create an app registration.
-1. Add the redirect URL.
-1. Generate a client secret.
-1. Configure API Permissions.
-1. Define a custom scope for your bot.
-1. Configure manual authentication in Power Virtual Agents.
-
-Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md) then return to this article.
+1. Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md).
+1. Return to this article.
 
 ## Add user authentication with the Signin system topic
 
