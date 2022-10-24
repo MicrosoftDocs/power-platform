@@ -27,6 +27,7 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 - Default values in multiple-choice questions don't work.
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
 - Omnichannel for Customer Service isn't supported. This includes Omnichannel's voice capabilities.
+
 ## Upcoming releases
 
 - Skills
