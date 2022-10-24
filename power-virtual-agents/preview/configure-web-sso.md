@@ -94,6 +94,7 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
 
     For example:
 
+    <!-- the GUID used in the code block below is a randomly generated one, not one pulled from a live bot -->
     ```csharp
     var clientApplication;
         (function (){
