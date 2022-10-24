@@ -91,7 +91,7 @@ During solution import, you'll configure environment variable values. Make sure 
 The import can take up to 15 minutes to be completed.
 
 >[!NOTE]
->The next steps walk you through turning on flows that. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
+>The next steps walk you through turning on flows. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
 
 ## Turn on child flows
 
