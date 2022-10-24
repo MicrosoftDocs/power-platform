@@ -343,7 +343,7 @@
       - name: Use expressions using Power Fx
         href: preview/advanced-power-fx.md
       - name: Add user authentication
-        href: preview/advanced-end-user-authentication.md
+        href: preview/advanced-user-authentication.md
       - name: Use Power Automate flows
         href: preview/advanced-flow.md
   - name: Publish and integrate
@@ -384,6 +384,8 @@
             href: preview/dlp-example-3.md
       - name: Configure user authentication
         href: preview/configuration-end-user-authentication.md
+      - name: Configure user authentication with Azure Active Directory
+        href: preview/configuration-authentication-azure-ad.md
       - name: Configure web and Direct Line channel security
         href: preview/configure-web-security.md
       - name: Configure SSO for your custom website
