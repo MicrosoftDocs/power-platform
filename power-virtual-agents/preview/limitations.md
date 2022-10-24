@@ -26,8 +26,7 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 - While co-authoring a bot with another user is possible, it's not a fully supported feature and may lead to data loss.
 - Default values in multiple-choice questions don't work.
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
-- Omnichannel isn't supported.
-- Telephony isn't support.
+- Omnichannel for Customer Service isn't supported. This includes Omnichannel's voice capabilities.
 - Globalization support in Power Fx is limited to English (en-US). This means:
   - Numbers must be in the US style format, for example, `12,345.678`.
   - Power Fx parameters must be separated by commas (,) and not semi-colons (;).
