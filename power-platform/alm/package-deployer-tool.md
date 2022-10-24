@@ -564,6 +564,9 @@ Your package is made of the following files under the *\<Project>*\Bin\Debug fol
     > pac package deploy --package .\bin\Debug\DeploymentPackage.1.0.0.pdpkg.zip
     ```
 
+  > [!NOTE]
+  > To deploy a package to a target environment using the CLI, you must first set up an authentication profile and select an organization. More information: [pac auth create](../developer/cli/reference/auth.md#commands), [pac org select](../developer/cli/reference/org.md#commands)
+
 ## Best practices  
 
 Listed below are a few best practice tips to follow when working with Package Deployer packages.
