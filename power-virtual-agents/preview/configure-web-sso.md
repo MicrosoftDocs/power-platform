@@ -99,7 +99,7 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
         (function (){
         var msalConfig = {
             auth: {
-                clientId: 'd146-4060-b388f4d9c',
+                clientId: '692e92c7-d146-4060-76d3-b381798f4d9c',
                 authority: 'https://login.microsoftonline.com/7ef988bf-86f1-51af-01ab-2d7fd011db47'     
             },
     ```
