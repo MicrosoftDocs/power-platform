@@ -22,7 +22,7 @@ contributors:
 
 # Creator kit
 
-The Creator Kit helps you create Power Apps experiences on the web and mobile platforms with easy-to-use sample controls and components. The kit contains a component library, several commonly used [Power Apps component framework controls](/power-apps/developer/component-framework/overview), and other utilities that increase developer productivity. 
+The Creator Kit helps create Power Apps experiences on the web and mobile platforms with well-designed components. The kit contains a component library, several commonly used [Power Apps component framework controls](/power-apps/developer/component-framework/overview), and other utilities that increase developer productivity.
 
 All controls and components included in the kit use the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help you easily create consistent, beautiful, and effective user experiences for custom business applications.
 
@@ -32,13 +32,17 @@ All controls and components included in the kit use the [Fluent UI](https://deve
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
 
-[Install with AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview)
+### Quick links
 
-You can also download the reference app solutions: 
-- Canvas apps: [aka.ms/CreatorKitReferenceCanvas](https://aka.ms/CreatorKitReferenceCanvas) 
-- Custom pages: [aka.ms/CreatorKitReferenceMDA](https://aka.ms/Creatorkitreferencemda)
-
-View the [latest version release notes](https://aka.ms/creatorkitlatestrelease) in the [microsoft/powercat-creator-kit GitHub Repository](https://github.com/microsoft/powercat-creator-kit). The code component source code and more detailed component-level is available in the [microsoft/powercat-code-components GitHub repository](https://github.com/microsoft/powercat-code-components).
+| Resource | Description |
+|-|-|
+| **AppSource Page** <br> [aka.ms/creatorkit/appsource](https://appsource.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview) | Offering page for the Creator Kit on AppSource (see [instructions](./setup.md) to learn more). |
+| **Canvas reference solution** <br> [aka.ms/CreatorKitReferenceCanvas](https://aka.ms/CreatorKitReferenceCanvas) | Direct download link for the Canvas reference solution. |
+| **Model Driven App/Custom pages reference solution** <br> [aka.ms/CreatorKitReferenceMDA](https://aka.ms/Creatorkitreferencemda) | Direct download link for the Model Driven App/Custom Pages reference solution |
+| **Latest release notes** [aka.ms/creatorkitlatestrelease](https://aka.ms/creatorkitlatestrelease) | Release notes for the latest version of the Creator Kit | 
+| **GitHub Repository** <br>[microsoft/powercat-creator-kit](https://github.com/microsoft/powercat-creator-kit). | GitHub repository that hosts source code for packaged components (CreatorKitCore) and reference solution assets. |
+| **Code Component Repository** <br> [microsoft/powercat-code-components](https://github.com/microsoft/powercat-code-components) | The code component source code and more detailed component-level documentation. |
+| **Creator Kit Documentation** (this page) <br> [aka.ms/ck](https://aka.ms/ck) | aka.ms link to this page. Use this to quickly access the documentation and reference during development. |
 
 :::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the Creator Kit." border="false":::
 
