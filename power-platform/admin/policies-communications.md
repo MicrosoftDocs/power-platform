@@ -24,7 +24,7 @@ Microsoft regularly communicates work done to maintain and update Microsoft Powe
 
 For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health). For each of these scenarios, communication is provided through the Microsoft 365 admin center in the Message Center, and the Service health dashboard. The Microsoft 365 admin center also has the ability to send email for a weekly digest of all messages, emails for major updates only, and emails for data privacy messages. You can opt in to this communication stream by following the instructions [here](/microsoft-365/admin/manage/message-center#preferences).
 
-**Please note**: From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted Microsoft Dataverse environment, or Microsoft Lifecycle Services project or environment.  
+**Please note**: From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment, or Microsoft Lifecycle Services project or environment.  
   
 - If you’re not sure who your admin is, see [Find your administrator or support person](/powerapps/user/find-admin).  
   
@@ -46,9 +46,9 @@ Minor service updates contain customization changes to support new features, pro
 
 - A link to the Weekly Release Notes that contain the list of fixes that are included 
 
-**Please note**: The date the deployment is applied to the infrastructure is not the date the update will be applied to the environment. The Dataverse environment and any apps are updated by an asynchronous process that runs during subsequent Regional Maintenance Windows. Although there is no expected degradation to service performance or availability, during this maintenance window users may see short, intermittent impact such as transient SQL errors or a redirect to the login screen.  
+**Please note**: The date the deployment is applied to the infrastructure is not the date the update will be applied to the environment. The environment and any apps are updated by an asynchronous process that runs during subsequent Regional Maintenance Windows. Although there is no expected degradation to service performance or availability, during this maintenance window users may see short, intermittent impact such as transient SQL errors or a redirect to the login screen.  
 
-You can verify that the update was completed successfully by checking the version number on the About page of the Dataverse environment, or looking at the environment details on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). A list of service updates can be found on our [Released Versions](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce) page. 
+You can verify that the update was completed successfully by checking the version number on the About page of the environment, or looking at the environment details on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). A list of service updates can be found on our [Released Versions](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce) page. 
 
 ### Major release events
 
@@ -87,17 +87,17 @@ These changes can include:
 
 The Power Platform services and the Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, etc.) may encounter issues that require unplanned changes to protect availability. Microsoft strives to provide as much notification as possible during these events, but because they can’t be predicted, they are not considered planned maintenance. 
 
-When this happens, your organization receives an “Unplanned Maintenance” notification in the Message Center. We also attempt to send an email to all System Administrators in the Dataverse environment that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities in the Message Center.  
+When this happens, your organization receives an “Unplanned Maintenance” notification in the Message Center. We also attempt to send an email to all System Administrators in the environment that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities in the Message Center.  
 
 ### Regional maintenance windows
 
-To limit the impact on customers and their users, we plan the maintenance window according to the region where the Dataverse environments are deployed. The following maintenance timeline list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time). For organizations with users around the globe, we recognize that these Maintenance Windows might affect you differently. We apologize for the impact this may have on your users. 
+To limit the impact on customers and their users, we plan the maintenance window according to the region where the environments are deployed. The following maintenance timeline list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time). For organizations with users around the globe, we recognize that these Maintenance Windows might affect you differently. We apologize for the impact this may have on your users. 
  
 ### Maintenance timeline
 
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
 
-The following are service update times. Database updates run as soon as possible depending on the system load during the maintenance window of the Dataverse environment.
+The following are service update times. Database updates run as soon as possible depending on the system load during the maintenance window of the environment.
 
 |Region | URL | Window (UTC) |
 | ------------- | -------------     | ------------- |

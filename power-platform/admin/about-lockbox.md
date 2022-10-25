@@ -1,10 +1,10 @@
 ---
 title: "Securely access customer data using Customer Lockbox in Power Platform (preview) | MicrosoftDocs"
 description: This topic covers information on how customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed.
-ms.service: power-platform
+ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: jimholtz
@@ -42,7 +42,7 @@ All updates to a lockbox request are recorded and made available to your organiz
 Power Platform applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
  
 > [!NOTE]
-> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (including AI Builder, Power Apps portals), Power Automate, Dataverse, and Customer Insights.
+> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (including AI Builder, Power Apps portals), Power Automate, Power Virtual Agents, Dataverse, and Customer Insights.
 
 ## Workflow 
 
@@ -65,7 +65,7 @@ Power Platform applications and services store customer data in several Azure st
 
 Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. For the duration of the preview, enabling the tenant level policy will apply to all environments in the tenant. It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox. 
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
 2. Select **Policies** > **Lockbox policy (preview)**.
 
@@ -75,7 +75,7 @@ Global administrators or Power Platform administrators can create or update the 
 
 ## Review a lockbox request
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
 2. Select **Policies** > **Customer Lockbox (preview)**.
 

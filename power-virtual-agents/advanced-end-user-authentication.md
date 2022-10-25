@@ -2,7 +2,7 @@
 title: "Add user authentication to chatbot topics"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 2/11/2020
+ms.date: 08/11/2022
 
 ms.topic: article
 author: iaanw
@@ -24,14 +24,12 @@ Select the version of Power Virtual Agents you're using here:
 
 You can enable user authentication directly within a Power Virtual Agents bot conversation. User authentication means you can get a user's basic properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
 
-You can also configure single sign-on (SSO) so your users don't need to sign in manually.
-
-> [!IMPORTANT]
-> Before using this feature, you must follow the [end-user authentication configuration instructions](configuration-end-user-authentication.md).
+You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md) and [Configure SSO for Microsoft Teams](configure-sso-teams.md)
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Configure end-user authentication](configuration-end-user-authentication.md).
 
 ## Authentication variables
 
@@ -68,7 +66,7 @@ The ```IsLoggedIn``` variable indicates whether the user is signed in (either as
 
 ### AuthToken variable
 
-The ```AuthToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
+The ```AuthToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow-input-output.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
 
 > [!WARNING]
 > Make sure you're passing the `AuthToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
@@ -104,38 +102,37 @@ If your authentication option is set to **Only for Teams**, you don't need to ex
 
 ## Add user authentication to a topic
 
-**Insert the authentication node template:**
-
-1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
-
-1. Open the **Authoring canvas** for the topic you want to add the authentication template to.
-
-1. Select the plus (**+**) icon to add a message node. Enter what the bot should say to indicate that a sign-on experience is about to occur.
-
-    :::image type="content" source="media/advanced-end-user-authentication/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
-
-1. Underneath the message node, select the plus (**+**) icon, select **Call an action**, and then select **Authenticate**.
-
-    :::image type="content" source="media/advanced-end-user-authentication/auth-call-action-2.png" alt-text="Select Authenticate." border="false":::
-
-1. Once selected, a number of new nodes will be added automatically. These nodes include a parent **Authenticate** node, followed by nodes for both a success and a failure path.
-
-    :::image type="content" source="media/advanced-end-user-authentication/auth-template.png" alt-text="New nodes." border="false":::
-
-    > [!NOTE]
-    > The **Authenticate** node is only available in the action picker at the end of a dialog tree (as a leaf node). It cannot be added in the middle of a dialog. Once added, other nodes can be added below it.
-
-### Authenticate node
-
-The **Authenticate** node is where the user, if not already signed in, will be prompted with a sign-in card.
+The _Authenticate_ node will prompt a user to log in with a sign-in card. If a user is already logged in, they won't be prompted again, even if they reach another Authenticate node.
 
 :::image type="content" source="media/advanced-end-user-authentication/auth-sign-in-user.png" alt-text="Request to sign in." border="false":::
 
 Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code, depending on the [channel](publication-fundamentals-publish-channels.md). Some channels, such as Microsoft Teams, do not require the user to enter a validation code.
 
-Note that if your bot has [SSO](configure-sso.md) configured, the user will not be prompted to sign in.
+When your bot has [SSO](configure-sso.md) configured, the user won't be prompted to sign in.
 
-Users are only prompted to sign in once during a conversation, even if they encounter another sign in card.
+To add an Authenticate node to your topic:
+
+1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
+
+1. Open the **Authoring canvas** for the topic you want to add the authentication template to.
+
+    > [!NOTE]
+    > If your bot is connected to Dynamics 365 Customer Service, the Authentication node can't be part of the conversation path the bot follows when initially greeting users – otherwise the sign-in card will be shown twice. Instead you should add the Authenticate node to another topic that is triggered by a user response.
+
+1. Select **Add node** (**+**) to add a message node. Enter what the bot should say to indicate that a sign-on experience is about to occur.
+
+    :::image type="content" source="media/advanced-end-user-authentication/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
+
+1. Underneath the message node, select **Add node** (**+**), select **Call an action**, and then select **Authenticate**.
+
+    :::image type="content" source="media/advanced-end-user-authentication/auth-call-action-2.png" alt-text="Select Authenticate." border="false":::
+
+    > [!NOTE]
+    > The **Authenticate** node is only available in the action picker at the end of a dialog tree (as a leaf node). It cannot be added in the middle of a dialog. Once added, other nodes can be added below it.
+
+1. Once selected, a number of new nodes will be added automatically. These nodes include a parent **Authenticate** node, followed by nodes for both a success and a failure path.
+
+    :::image type="content" source="media/advanced-end-user-authentication/auth-template.png" alt-text="New nodes." border="false":::
 
 ## AuthToken usage without an Authenticate node
 

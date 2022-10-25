@@ -4,9 +4,12 @@ description: Provides information about URLs and IP addresses to be added to the
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/17/2022
+ms.date: 09/06/2022
 ms.subservice: admin
 ms.author: jimholtz
+contributors:
+  - shazichuanshuo 
+  - garrettm-msft 
 search.audienceType: 
   - admin
 search.app:
@@ -49,20 +52,19 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://auth.gfx.ms  |   |
 | https://*.windows.net  |    |
 | http://*.passport.net  |    |
-| https://*.crm#.dynamics.com and http://*.crm#.dynamics.com | Required for Dynamics 365 and Dataverse environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. <br /><br />Replace # in http://*.crm#.dynamics.com and https://*.crm#.dynamics.com with your region's number: <ul><li>Asia/Pacific: 5</li><li>Canada: 3 </li><li>Europe, Africa, and Middle East: 15 and 4</li><li>France: 12</li><li>Germany: 16</li><li>India: 8</li><li>Japan: 7</li><li>North America: no number</li><li>Oceania: 6</li><li>South Africa: 14</li><li>South America: 2</li><li>Switzerland: 17</li><li>UAE: 15</li><li>United Kingdom: 11</li><li>Dynamics 365 US Government: 9</li>   |
-| https://www.crmdynint.com  |    |
+| https://*.crm#.dynamics.com and http://*.crm#.dynamics.com | Required for environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. <br /><br />Replace # in http://*.crm#.dynamics.com and https://*.crm#.dynamics.com with your region's number: <ul><li>Asia/Pacific: 5</li><li>Canada: 3 </li><li>Europe, Africa, and Middle East: 15 and 4</li><li>France: 12</li><li>Germany: 16</li><li>India: 8</li><li>Japan: 7</li><li>North America: no number</li><li>Oceania: 6</li><li>South Africa: 14</li><li>South America: 2</li><li>Switzerland: 17</li><li>UAE: 15</li><li>United Kingdom: 11</li><li>Dynamics 365 US Government: 9</li>   |
+| `https://www.crmdynint.com`  |    |
 | https://*.azureedge.net  |    |
 | https://*.microsoftonline.com  | Required for authentication and Microsoft 365 services such as the Microsoft 365 admin center.   |
 | https://go.microsoft.com  | Required for product documentation and context-sensitive help pages.    |
-| https://urs.microsoft.com  |  Required for Microsoft defender SmartScreen filtering.    |
-| http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
+| `https://urs.microsoft.com`  |  Required for Microsoft defender SmartScreen filtering.    |
+| https://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
-| https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products and admin automation scenarios as [documented here](programmability-extensibility-overview.md).
+| https://*.api.powerplatform.com and https://api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products and admin automation scenarios as [documented here](programmability-extensibility-overview.md).
 
 > [!IMPORTANT]
 > - If you are Government cloud customer, go to [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls) 
 > - If you are a customer in China and want to access Dynamics 365 services operated by a local company that stores your data within China, go to [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md)
-
 
 ## IP addresses required
 
@@ -92,7 +94,7 @@ Dataverse exposes ports *1433* and *5558* to expose the [Dataverse Tabular Data 
 
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
- [Work with requirements as a solution architect for Power Platform and Dynamics 365](/learn/modules/work-with-requirements/index)
+ [Work with requirements as a solution architect for Power Platform and Dynamics 365](/training/modules/work-with-requirements/index)
 
 
 

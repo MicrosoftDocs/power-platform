@@ -22,15 +22,11 @@ You should review [recommendations for identifying topics for automation](/dynam
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n7pD]
 >
 
-## Prerequisites to automate topics
+## Prerequisites
 
-You must have the following to automate a topic from Customer Service Insights to Power Virtual Agents:
-
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - A valid license to access Power Virtual Agents. Go to [https://aka.ms/TryPVA](https://aka.ms/TryPVA) for more information and to sign up for a trial.
-
 - A [bot created in Power Virtual Agents](authoring-first-bot.md).
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Automate topics from the topic details page
 

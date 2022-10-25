@@ -84,7 +84,7 @@ Follow the steps below to build a model-driven app.
 
      * Ensure that *Show in navigation* is checked
 
-     ![Open sitemap.](../media/github-actions-tutorial/gh-lab-1.120.gif"Add a table view and form page")
+     ![Open sitemap.](../media/github-actions-tutorial/gh-lab-1.120.gif "Add a table view and form page")
 
 13. Click **Publish**, once the publish action is complete click **Play**.
 

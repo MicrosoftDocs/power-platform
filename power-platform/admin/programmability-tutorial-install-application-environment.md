@@ -28,7 +28,7 @@ In this tutorial, you'll learn how to:
 4.	Poll for status of the Install Operation Get Application Package Install Status API
 5.	Notify by email once install is complete
 
-In this example scenario, a Customer is looking to install Office Groups to a specific Dataverse environment of their choosing. 
+In this example scenario, a Customer is looking to install Office Groups to a specific environment of their choosing. 
 
 > [!IMPORTANT]
 > The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.

@@ -1,0 +1,8 @@
+## Delegation
+When possible, Power Apps will delegate filter and sort operations to the data source and page through the results on demand. For example, when you start an app that shows a **[Gallery](/power-apps/maker/controls/control-gallery)** control filled with data, only the first set of records will be initially brought to the device. As the user scrolls, additional data is brought down from the data source. The result is a faster start time for the app and access to very large data sets.
+
+However, delegation may not always be possible. Data sources vary on what functions and operators they support with delegation. If complete delegation of a formula isn't possible, the authoring environment will flag the portion that can't be delegated with a warning. When possible, consider changing the formula to avoid functions and operators that can't be delegated.  The [delegation list](/power-apps/maker/canvas-apps/delegation-overview#delegable-data-sources) details which data sources and operations can be delegated.
+
+If delegation is not possible, Power Apps will pull down only a small set of records to work on locally. Filter and sort functions will operate on a reduced set of records. What is available in the **[Gallery](/power-apps/maker/canvas-apps/controls/control-gallery)** may not be the complete story, which could be confusing to users. 
+
+See the [delegation overview](/power-apps/maker/canvas-apps/delegation-overview) for more information.

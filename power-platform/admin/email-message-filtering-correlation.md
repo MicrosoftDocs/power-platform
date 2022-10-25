@@ -1,13 +1,12 @@
 ---
 title: "Use email message filtering and correlation to specify which emails are tracked   | MicrosoftDocs"
 description: Use email message filtering and correlation to specify which emails are tracked. 
-author: mduelae
-
+author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 2/4/2022
 ms.subservice: admin
-ms.author: mkaur
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -55,7 +54,10 @@ Dynamics 365 uses the following information from an email to determine if a new 
 
 - **MessageId** (hidden in email client user interface but stamped on the email message header): Uniquely identifies an email message which is stamped on every email message.
 
-- **InreplyTo** (hidden in email client user interface but stamped on the email message header): Contains the **messageId** that the email message is in reply to.
+- **InReplyTo** (hidden in email client user interface but stamped on the email message header): Contains the **messageId** that the email message is in reply to.
+
+   > [!NOTE]
+   > If a user changes the subject of an email when replying from Outlook desktop, Outlook removes the In-Reply-To and Thread-Index values from the message headers. This prevents the email from being able to be correlated to a previous email based on InReplyTo or ConversationIndex.
 
 - **ConversationIndex** (hidden in email client user interface but stamped on the email message header): Contains data that associates an email message to an email thread.
 

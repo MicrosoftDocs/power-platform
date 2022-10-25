@@ -35,15 +35,15 @@ In the following table you can see how the **User Functions** are configured for
 
 | Field        | Value     | Description |
 |--------------|-----------|------------|
-| Import Solutions | Not Allowed  | Settings this to Not Allowed hides the **Import Solution** command in the app.|
-| Delete Solutions | Not Allowed  | Settings this to Not Allowed hides the **Delete Solution** command in the app.|
+| Import Solutions | Not Allowed  | Setting this to Not Allowed hides the **Import Solution** command in the app.|
+| Delete Solutions | Not Allowed  | Setting this to Not Allowed hides the **Delete Solution** command in the app.|
 | Manage Solutions | Allowed  | This function shows the **Manage Solutions** command in the app.|
-| Drillthrough Status | Not Allowed  | Settings this to Not Allowed disables the click through capability to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.|
-| Profile Creation | Not Allowed  | Settings this to Not Allowed disables the capability to create new deployment profiles in the app.|
-| Profile Updates | Not Allowed  | Settings this to Not Allowed disables the capability to update deployment profiles in the app. This setting will also block the user to create new profiles in the app.  |
-| Advanced Promote | Not Allowed  | Settings this to Not Allowed disables the capability to use the advanced promote functionality. Changes will be committed to the default branch for the user|
-| Advanced Deploy | Not Allowed  | Settings this to Not Allowed disables the capability use the advanced deploy functionality. Use can select between target environments that are enabled for deployment|
-| Bypass Prepare | Not Allowed  | Settings this to Not Allowed will force the user to go through the prepare step during the promotion of a solution.|
+| Drillthrough Status | Not Allowed  | Setting this to Not Allowed disables the click through capability to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.|
+| Profile Creation | Not Allowed  | Setting this to Not Allowed disables the capability to create new deployment profiles in the app.|
+| Profile Updates | Not Allowed  | Setting this to Not Allowed disables the capability to update deployment profiles in the app. This setting will also block the user to create new profiles in the app.  |
+| Advanced Promote | Not Allowed  | Setting this to Not Allowed disables the capability to use the advanced promote functionality. Changes will be committed to the default branch for the user|
+| Advanced Deploy | Not Allowed  | Setting this to Not Allowed disables the capability use the advanced deploy functionality. Use can select between target environments that are enabled for deployment|
+| Bypass Prepare | Not Allowed  | Setting this to Not Allowed will force the user to go through the prepare step during the promotion of a solution.|
 | Show All Solutions | Not Allowed  |  Setting this to Not Allowed will only show solutions for which the user has a deployment profile in the user settings. |
 
 The below table shows how the **User Labels** are configured for the **maker** user settings
@@ -64,7 +64,7 @@ The below table shows how the **User Labels** are configured for the **maker** u
 
 1. When prompted to create connections and grant consent, create the necessary connections or accept the consent dialog.
 
-1. If prompted to create an HTTP with Azure AD connection, enter **https&semi;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Azure AD Resource URI**.
+1. If prompted to create an HTTP with Azure AD connection, enter **https://graph.microsoft.com** for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. Select **Create** for each connection when prompted.
 

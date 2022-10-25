@@ -19,7 +19,7 @@ search.app:
 
 # Dynamics 365 US Government  
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by eight discrete functions: 
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are represented by eight discrete functions: 
 
 - Customer Service
 - Customer Voice
@@ -199,11 +199,11 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 ### Discovery (OData V4) RESTful API
 -	GCC:
-    - (Deprecated) Discovery URL: https://disco.crm9.dynamics.com/api/discovery/v9.1/
+    - (Deprecated) Discovery URL: `https://disco.crm9.dynamics.com/api/discovery/v9.1/`
     - Global discovery URL: https://globaldisco.crm9.dynamics.com/api/discovery/v2.0/
 
 -	GCC High:
-    - (Deprecated) Discovery URL: https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/
+    - (Deprecated) Discovery URL: `https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/`
     - Global discovery URL: https://globaldisco.crm.microsoftdynamics.us/api/discovery/v2.0/
 
 -	DoD:
@@ -234,7 +234,7 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 ### Discovery Service (Deprecated)
 - GCC: https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc
-- GCC High: https://disco.crm.microsoftdynamics.us/XRMServices/2011/Discovery.svc
+- GCC High: `https://disco.crm.microsoftdynamics.us/XRMServices/2011/Discovery.svc`
 
 Effective March 2, 2020, the regional Discovery Service will be deprecated. More information: Regional Discovery Service is deprecated.
 

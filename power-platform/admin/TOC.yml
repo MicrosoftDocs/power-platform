@@ -8,67 +8,7 @@
       href: admin-documentation.md
     - name: Working with the Admin Portals 
       href: wp-work-with-admin-portals.md
-    - name: Support
-      items:
-      - name: Get Help + Support 
-        href: get-help-support.md
-      - name: Support overview
-        href: support-overview.md
-      - name: Determine your organization ID and name
-        href: determine-org-id-name.md
-      - name: Manage email notifications to admins
-        href: manage-email-notifications.md
-      - name: Policies and communications
-        href: policies-communications.md
-      - name: Manage maintenance window
-        href: manage-maintenance-window.md
-      - name: Notifications explained
-        href: notifications-explained.md 
-    - name: Licensing
-      items:
-      - name: Overview
-        href: pricing-billing-skus.md
-      - name: About licensing and license management
-        href: wp-license-management.md            
-      - name: Manage licenses in your org
-        href: signup-question-and-answer.md
-      - name: Administer without a license
-        href: global-service-administrators-can-administer-without-license.md
-      - name: Power Apps
-        items:      
-        - name: Purchase Power Apps 
-          href: signup-for-powerapps-admin.md
-        - name: About Power Apps per app plans
-          href: about-powerapps-perapp.md
-      - name: Power Automate
-        items:
-        - name: Overview
-          href: power-automate-licensing/overview.md
-        - name: Types of licenses
-          href: power-automate-licensing/types.md
-        - name: FAQs about licenses
-          href: power-automate-licensing/faqs.md
-        - name: Buy Power Automate licenses
-          href: power-automate-licensing/buy-licenses.md
-        - name: Add-ons
-          href: power-automate-licensing/add-ons.md
-      - name: Power Platform licensing FAQs
-        href: powerapps-flow-licensing-faq.md
-      - name: Pay-as-you-go plan
-        items:
-        - name: Overview
-          href: pay-as-you-go-overview.md
-        - name: Meters
-          href: pay-as-you-go-meters.md
-        - name: Set up
-          href: pay-as-you-go-set-up.md
-        - name: View usage and manage costs 
-          href: pay-as-you-go-usage-costs.md
-        - name: Issues and frequently asked questions
-          href: pay-as-you-go-issues-faq.md
-      - name: Requests limits and allocations
-        href: api-request-limits-allocations.md
-    - name: Getting started
+    - name: Get started
       items:
       - name: What's the role of a Power Platform administrator? 
         href: overview-role-powerapps-admin.md
@@ -108,9 +48,73 @@
           href: update-apps-to-unified-interface.md
         - name: Enable the hybrid experience
           href: enable-hybrid-experience.md
+    - name: Support
+      items:
+      - name: Get Help + Support 
+        href: get-help-support.md
+      - name: Support overview
+        href: support-overview.md
+      - name: Support environments and the consent process
+        href: support-environment.md    
+      - name: Determine your organization ID and name
+        href: determine-org-id-name.md
+      - name: Manage email notifications to admins
+        href: manage-email-notifications.md
+      - name: Policies and communications
+        href: policies-communications.md
+      - name: Manage maintenance window
+        href: manage-maintenance-window.md
+      - name: Notifications explained
+        href: notifications-explained.md 
+    - name: Licensing
+      items:
+      - name: Overview
+        href: pricing-billing-skus.md
+      - name: About licensing and license management  
+        href: wp-license-management.md     
+      - name: View license consumption (preview)
+        href: view-license-consumption-issues.md          
+      - name: Manage licenses in your org
+        href: signup-question-and-answer.md
+      - name: Administer without a license
+        href: global-service-administrators-can-administer-without-license.md
+      - name: Power Apps
+        items:      
+        - name: Purchase Power Apps 
+          href: signup-for-powerapps-admin.md
+        - name: About Power Apps per app plans
+          href: about-powerapps-perapp.md
+      - name: Power Automate
+        items:
+        - name: Overview
+          href: power-automate-licensing/overview.md
+        - name: Types of licenses
+          href: power-automate-licensing/types.md
+        - name: FAQs about licenses
+          href: power-automate-licensing/faqs.md
+        - name: Buy Power Automate licenses
+          href: power-automate-licensing/buy-licenses.md
+        - name: Add-ons
+          href: power-automate-licensing/add-ons.md
+      - name: Power Platform licensing FAQs
+        href: powerapps-flow-licensing-faq.md
+      - name: Pay-as-you-go plan
+        items:
+        - name: Overview
+          href: pay-as-you-go-overview.md
+        - name: Meters
+          href: pay-as-you-go-meters.md
+        - name: Set up
+          href: pay-as-you-go-set-up.md
+        - name: View usage and manage costs 
+          href: pay-as-you-go-usage-costs.md
+        - name: Issues and frequently asked questions
+          href: pay-as-you-go-issues-faq.md
+      - name: Requests limits and allocations
+        href: api-request-limits-allocations.md
     - name: Environments
       items:
-      - name: Manage environments 
+      - name: Administer environments 
         items:
         - name: Environments overview
           href: environments-overview.md
@@ -132,6 +136,8 @@
           href: copy-environment.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
+        - name: Troubleshoot missing environments
+          href: troubleshoot-missing-environments.md
         - name: Business continuity and disaster recovery
           href: business-continuity-disaster-recovery.md
         - name: Edit environment properties
@@ -150,7 +156,21 @@
           href: admin-view-apps.md
         - name: Language collations 
           href: language-collations.md            
-      - name: Manage updates
+      - name: Managed Environments   
+        items: 
+        - name: Overview
+          href: managed-environment-overview.md
+        - name: Enable Managed Environments
+          href: managed-environment-enable.md
+        - name: Limit sharing 
+          href: managed-environment-sharing-limits.md
+        - name: Usage insights
+          href: managed-environment-usage-insights.md 
+        - name: Data policies
+          href: managed-environment-data-policies.md
+        - name: Licensing
+          href: managed-environment-licensing.md
+      - name: Environment updates
         items:
         - name: Opt in to early access updates
           href: opt-in-early-access-updates.md
@@ -158,8 +178,10 @@
           href: general-availability-deployment.md
         - name: "Manage maintenance window (preview)"
           href: manage-maintenance-window.md
-      - name: Manage settings 
+      - name: Environment settings 
         items:
+        - name: Tenant settings
+          href: tenant-settings.md
         - name: Power Platform 
           href: power-platform-settings.md
         - name: Microsoft Dataverse settings
@@ -227,11 +249,11 @@
           - name: Audit settings
             href: system-settings-dialog-box-auditing-tab.md
           - name: Audit summary view 
-            href: audit-data-user-activity.md#view-audit-logging-details
+            href: manage-dataverse-auditing.md#use-the-audit-summary-view
           - name: Entity and field audit settings 
-            href: audit-data-user-activity.md#enable-or-disable-entities-and-fields-for-auditing
+            href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
           - name: System jobs
-            href: monitor-manage-system-jobs.md
+            href: manage-dataverse-auditing.md#monitoring-system-jobs
         - name: Templates
           items:
           - name: Access team templates
@@ -360,6 +382,8 @@
         items:
         - name: Environment cleanup process
           href: automatic-environment-cleanup.md
+        - name: Dataverse for Teams environment cleanup
+          href: inactive-teams-environment.md
         - name: Migrate environment
           href: move-environment-tenant.md          
         - name: Geo to geo migrations
@@ -370,8 +394,6 @@
           href: multiple-online-environments-tenants.md
         - name: Administration mode
           href: admin-mode.md        
-        - name: Support environment
-          href: support-environment.md     
         - name: Automation of tasks with PowerShell 
           href: wp-task-automation-powershell.md
         - name: Automation of tasks with Power Automate
@@ -407,6 +429,8 @@
           href: how-record-access-determined.md
         - name: Email exfiltration controls for connectors
           href: block-forwarded-email-from-power-automate.md
+        - name: Block the cookie replay attack (preview)
+          href: block-cookie-replay-attack.md
         - name: Configure environment security 
           items: 
           - name: Control user access to environments
@@ -449,15 +473,15 @@
             href: dlp-resource-exemption.md
           - name: Known limitations
             href: dlp-known-issues.md          
-        - name: Configure field-level security
+        - name: Configure column-level security
           items:
           - name: Overview
             href: field-level-security.md
-          - name: Set permissions for a field
+          - name: Set permissions for a column
             href: set-up-security-permissions-field.md
-          - name: Enable or disable field security
+          - name: Enable or disable column security
             href: enable-disable-security-field.md
-          - name: Add teams or users to field security profile
+          - name: Add teams or users to column security profile
             href: add-teams-users-field-security-profile.md
         - name: Configure teams and team templates
           items:
@@ -585,6 +609,8 @@
         href: capacity-storage.md
       - name: Legacy capacity storage model
         href: legacy-capacity-storage.md
+      - name: Finance and operations storage capacity
+        href: finance-operations-storage-capacity.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
       - name: Free up storage
@@ -595,6 +621,8 @@
           href: cleanup-asyncoperationbase-table.md
       - name: Add storage capacity
         href: add-storage.md      
+      - name: Manage PrincipalObjectAccess storage
+        href: manage-principalobjectaccess-storage.md
       - name: Access storage with SAS token
         href: storage-sas-token.md 
     - name: Resources
@@ -616,14 +644,14 @@
       - name: Power Apps activity logging
         href: logging-powerapps.md
       - name: Power Automate activity logging
-        href: logging-power-automate.md 
+        href: logging-power-automate.md
+      - name: Power Platform connector activity logging (preview)
+        href: connector-events-power-platform.md  
+
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
-  # remove following before live
-  #    - name: Manage Dataverse Auditing
-  #      href: manage-dataverse-auditing.md
-      - name: Audit data and user activity for Dynamics 365 entities
-        href: audit-data-user-activity.md
+      - name: Manage Dataverse auditing
+        href: manage-dataverse-auditing.md
       - name: Dataverse and model-driven apps
         href: enable-use-comprehensive-auditing.md   
     - name: Programmability and extensibility
@@ -769,8 +797,6 @@
         href: delete-bulk-records.md
       - name: View and take action on bulk deletion jobs
         href: view-take-action-bulk-deletion-jobs.md
-      - name: Monitor and manage system jobs
-        href: monitor-manage-system-jobs.md
       - name: Remove user personal data
         href: remove-user-personal-data.md
       - name: Recover database space by deleting audit logs

@@ -27,6 +27,8 @@ The Governance components solution contains assets relevant to admins and makers
 
 ## Compliance processes
 
+[Watch a walk-through](https://www.youtube.com/watch?v=WXXFjHLt5ss&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the compliance process works.
+
 ### Flows
 
 >[!NOTE]
@@ -193,7 +195,9 @@ All business process flows are disabled by default. To enable them, do the follo
 
 1. Repeat the previous step for **Flow Approval BPF**, **Custom Connector Approval BPF**, and **Chatbot Approval BPF**.
 
-## Inactivity notifications processes
+## Inactivity processes
+
+[Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
 
 ### Tables
 
@@ -208,10 +212,11 @@ Represents inactivity notifications approval tasks started during the Admin | In
 |[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  Triggered by admin \| Sync Template v3 |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
 | [Admin \| Inactivity notifications v2 (Check Approval)](#admin--inactivity-notifications-check-approval) | Schedule | Daily |
-| [Admin \| Inactivity notifications v2 (Clean Up and Delete)]#admin--inactivity-notifications-clean-up-and-delete) | Schedule | Daily |
+| [Admin \| Inactivity notifications v2 (Clean Up and Delete)](#admin--inactivity-notifications-clean-up-and-delete) | Schedule | Daily |
 | [Admin \| Inactivity notifications (Start Approval for Apps)](#admin--inactivity-notifications-v2-start-approval-for-apps) | Schedule | Weekly |
 | [Admin \| Inactivity notifications (Start Approval for Flows)](#admin--inactivity-notifications-v2-start-approval-for-flows) | Schedule | Weekly |
 | [Admin \| Email Managers Ignored Approvals](#admin--email-managers-ignored-inactivity-notifications-approvals) | Instant | Weekly |
+| [Admin \| Broken Connection Cleanup](#admin--broken-connection-cleanup) | Instant | Weekly |
 
 #### Admin \| Inactivity notifications v2 (Start Approval for Apps)
 
@@ -249,17 +254,18 @@ If approved in the past, but before deletion, it sends a reminder to archive the
 
 Runs daily and does two cleanup tasks for the workflow.
 
-1. Deletes timed out requests. Deletes, from the Archive Approval table, all non-approved requests that were created over a month ago.
-
 1. Deletes the flows and apps that were approved for deletion more than three weeks ago (configurable).
-
-**Customize**: By default, this flow won't delete the apps and flows. This is to ensure you explicitly are ready for that to occur. To begin deletion of flows and apps, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#all-environment-variables) to **Yes**.
+1. Deletes expired approval requests that were created over a month ago. If a maker ignores an approval request, their app or flow will not get deleted, however they will receive another approval request again in the future. Additionally, their manager will receive a notification on ignored requests.
 
 #### Admin \| Email Managers Ignored Inactivity notifications Approvals
 
 This flow works with the other Inactivity notifications flows in that it looks for approvals from this system that have been ignored by makers for one month or more and sends their manager a list of these, asking they help by encouraging their employees to approve or reject the request.
 
 ![Mail sent to managers.](media/ArchiveApps1.png "Mail sent to managers")
+
+#### Admin \| Broken Connection Cleanup
+
+Runs weekly deletes connection references that are errored out and which were last modified at least 30 days ago (configurable).
 
 ### Apps
 
@@ -295,6 +301,9 @@ And if the reason is sound, they can choose to exempt the object from future run
 
 ## Microsoft Teams governance
 
+>[!NOTE]
+>These components will not work in GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+
 ### Flows
 
 | Flow | Type | Schedule |
@@ -314,6 +323,10 @@ Save a copy of this flow if you want to change the wording in the emails or adap
 Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
 
 #### Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
+
+>[!NOTE]
+>You can now configure environment policies in Power Platform Admin Center to delete inactive Dataverse for Teams environments. As this feature is now available in Power Platform Admin Center, we will deprecate inactivity based deletion in the CoE Starter Kit effective November 2022.<br>
+>Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](/power-platform/admin/inactive-teams-environment)
 
 > [!IMPORTANT]
 > This flow deletes environments for which no business justification exists, or where the business justification has been rejected. Environment owners have 7 days to provide a business justification before the environment gets deleted.
@@ -340,6 +353,11 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 This flow sends a daily reminder email to environment owners who have been asked for a business justification for their Dataverse for Teams environment but haven't yet provided one. The email additionally provides information on how to turn on flow integration in Microsoft Teams.
 
 ## Cleanup for orphaned resources
+
+>[!NOTE]
+>These components will not work in GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+
+[Watch a walk-through](https://www.youtube.com/watch?v=0zptiBppTNo&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the clean-up for orphaned objects process works.
 
 ### Flows
 
@@ -406,7 +424,7 @@ The operations supported are Delete and Assign (which reassigns owner). It perfo
 This flow runs on a schedule and checks if any apps need quarantining based on the following criteria:
 
 - Environment is included in the quarantine process.
-- Compliance details have been requested and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
+- Compliance details have been requested, but are not yet submitted, and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
 - App is not already quarantined.
 - Admin Risk Assessment status is not complete.
 

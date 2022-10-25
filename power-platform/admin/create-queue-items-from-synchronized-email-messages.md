@@ -3,9 +3,10 @@ title: "Create queue items from synchronized email messages | MicrosoftDocs"
 description: Provides information about creating queue items from synchronized email messages.
 ms.date: 11/18/2021
 ms.topic: conceptual
-author: mduelae
+author: DanaMartens
 ms.subservice: admin
-ms.author: mkaur
+ms.author: dmartens
+ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin

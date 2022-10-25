@@ -4,7 +4,7 @@ description: About creating and manage environments in the Power Platform admin 
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2022
+ms.date: 09/14/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -18,16 +18,6 @@ search.app:
 # Create and manage environments in the Power Platform admin center
 
 An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
-
-## Provisioning a new environment
-You can provision a new environment based on [available capacity](capacity-storage.md). See the section [Create an environment in the Power Platform admin center](#create-an-environment-in-the-power-platform-admin-center).
-
-### What's new in provisioning environments
-We're consolidating how you view, create, and manage environments. 
-
-- **Environments can now be provisioned in the Microsoft Power Platform admin center**: You can create environments in the Power Platform admin center. Previously, environments could only be created in the Dynamics 365 admin center and the Power Apps admin center. 
-- **Admins can govern environment creation**: To limit environment creation to admins (Dynamics 365 admins, Global admins, or Power Platform admins), see [Control who can create environments in the Power Platform admin center](control-environment-creation.md). Previously, limiting was done by controlling who had Power Apps P2 licenses.  
-- **Trial environment provisioning**: You can create one trial environment per user. Previously, you could create two per user. See [About trial environments](trial-environments.md).
 
 ## Who can create environments?
 
@@ -90,13 +80,13 @@ You can store the app/business data in a database with Microsoft Dataverse. You 
 
 You have multiple options when creating an environment:
 
-1. [Create an environment with a Dataverse database](#create-an-environment-with-a-database)
-2. [Create an environment without a Dataverse database](#create-an-environment-without-a-database)
+- [Create an environment with a Dataverse database](#create-an-environment-with-a-database)
+- [Create an environment without a Dataverse database](#create-an-environment-without-a-database)
 
 ### Some important considerations when creating a new environment
 
-- **Why create an environment with a database**: When you create a production or sandbox environment with a Dataverse database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment. 
-- **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Dataverse, and you are creating Power Apps or Power Automate using other data sources, create the environment without the Dataverse database.
+- **Why create an environment with a database**: When you create a production or sandbox environment with a Dataverse database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment.<br>More information about Dataverse: [What is Dataverse?](/power-apps/maker/data-platform/data-platform-intro) and [Why choose Dataverse?](/power-apps/maker/data-platform/why-dataverse-overview) 
+- **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Dataverse, and you are creating canvas apps using Power Apps or flows using Power Automate using other data sources, create the environment without the Dataverse database.
 - **The Enable Dynamics 365 apps decision is not reversible**: Once you create an environment, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment. 
 - **Dynamics 365 apps and trial environments**: Currently, Dynamics 365 apps cannot be enabled for trial environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).
 - The URL can't be that of an environment that's been [deleted](delete-environment.md) or [changed](edit-properties-environment.md) until at least 24 hours have passed since an environment deletion or change.
@@ -120,10 +110,11 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | Choose production, trial, or sandbox.        |
    |Region     | Choose a region for the environment.        |
+   |Type     | Choose production, trial, or sandbox.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes**. |
+   |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
    > [!div class="mx-imgBorder"] 
    > ![Create new environment settings.](./media/new-environment-page1.png "Create new environment settings")
@@ -161,10 +152,11 @@ You need 1GB available database capacity.
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose production or trial.        |
    |Region     | Choose a region for the environment.        |
+   |Type     | You can choose production or trial.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **No**. |
+   |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
    > [!div class="mx-imgBorder"] 
    > ![Create new environment settings.](./media/new-environment-page1-nodb.png "Create new environment settings")

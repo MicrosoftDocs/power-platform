@@ -29,10 +29,12 @@ The Center of Excellence (CoE) Starter Kit will work without this flow, but the 
 >[!IMPORTANT]
 >Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
+[Watch a walk-through](https://www.youtube.com/watch?v=Lsooi7xp6eA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG&index=1&t=1360s) on how to set up the audit log connector.
+
 ## Before you use the audit log connector
 
 1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide)
-1. You must have access to the audit log. The Microsoft Power Platform Service Admin role doesn't give you access to the audit log. More information: [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log)
+1. A Global Admin is required to configure the Azure AD app registration.
 1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
 The Office 365 Management APIs use Azure Active Directory (Azure AD) to provide authentication services that you can use to grant rights for your application to access them.
@@ -163,7 +165,7 @@ You should see a (200) status returned, which means the query was successful.
 > If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
 >
-> - Are audit logs enabled, and do you have permission to view the audit logs? Check [protection.office.com](https://protection.office.com) > **Search** > **Audit Log Search**.
+> - Are audit logs enabled, and do you have permission to view the audit logs? Check [compliance.office.com](https://compliance.microsoft.com) > **Solutions** > **Audit** > **Search**.
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Azure AD app registration?
@@ -210,18 +212,25 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     > [!IMPORTANT]
     > Learn how to about environment variables: [Update Environment Variables](faq.md#update-environment-variables)
 
-    Here are some example configurations for these values:
-
-    | StartTime-Interval | StartTime-Unit | TimeInterval-Interval | TimeInterval-Unit | TimeSegment-CountLimit | Expectation                                                                                                                                               |
-    |--------------------|----------------|-----------------------|-------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |          1         |       day      |           1           |        hour       |           60           | Will   create 24 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past   24 hours |
-    |          2         |       day      |           1           |        hour       |           60           | Will   create 48 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past   48 hours |
-    |          1         |       day      |           5           |       minute      |           300          | Will   create 288 child flows, which is within the limit of 300.<br>Each child flow will do the work to pull back 5 minutes of from the past 24   hours |
-    |          1         |       day      |           15          |       minute      |           100          | Will create 96 child flows, which is within the limit of 100.<br>Each child flow will do the work to pull back 15 minutes of from the past   24 hours   |
-
 1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
    ![Turn audit log flows on.](media/coe-custom4.PNG "Turn audit log flows on")
+
+### Example configurations for environment variables
+
+Here are some example configurations for these values:
+
+| StartTime-Interval | StartTime-Unit | TimeInterval-Interval | TimeInterval-Unit | TimeSegment-CountLimit | Expectation |
+|--------------------|----------------|-----------------------|-------------------|------------------------|-------------|
+| 1 | day | 1 | hour | 60 | Will create 24 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past 24 hours |
+| 2 | day | 1 | hour | 60 | Will create 48 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past 48 hours |
+| 1 | day | 5 | minute | 300 | Will create 288 child flows, which is within the limit of 300.<br>Each child flow will do the work to pull back 5 minutes of from the past 24 hours |
+| 1 | day | 15 | minute | 100 | Will create 96 child flows, which is within the limit of 100.<br>Each child flow will do the work to pull back 15 minutes of from the past 24 hours |
+
+## How to get older data
+
+This solution collects app launches from the moment it's configured, and is not set up to collect historic app launches. Depending on your [Microsoft 365 license](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log), historic data will be available for up to a year using the audit log in Microsoft Purview.
+You can load historic data into the CoE Starter Kit tables manually. Learn more: [How to import old Audit Logs](https://github.com/microsoft/coe-starter-kit/issues/3040)
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 

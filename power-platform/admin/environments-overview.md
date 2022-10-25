@@ -1,10 +1,10 @@
 ---
 title: Environments overview | Microsoft Docs
-description: Learn about environments in Power Apps and how to use them.
+description: Learn about Power Platform environments and how to use them.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/01/2022
+ms.date: 08/25/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -18,15 +18,12 @@ search.app:
 
 # Environments overview
 
-An *environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
+A *Power Platform environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
 
-* You can choose to only build your apps or chatbots in a single environment.
-* You might create separate environments that group the test and production versions of your apps or chatbots.
-* You might create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and apps for each audience.
-* You might also create separate environments for different global branches of your company.  
-
-> [!NOTE]
-> You can get early access to upcoming Power Apps functionality by joining the [Power Apps Preview program](/powerapps/maker/powerapps-preview-program).  
+- You can choose to only build your apps or chatbots in a single environment.
+- You might create separate environments that group the test and production versions of your apps or chatbots.
+- You might create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and apps for each audience.
+- You might also create separate environments for different global branches of your company.  
 
 ## Environment scope
 Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
@@ -42,19 +39,13 @@ You can also move resources between environments. More information: [Migrate res
 ## Environment permissions
 Environments have two built-in roles that provide access to permissions within an environment:
 
-* The *Environment Admin* role can perform all administrative actions on an environment, including the following:
-
-    * Add or remove a user or group from either the Environment Admin or Environment Maker role.
-
-    * Provision a Dataverse database for the environment.
-
-    * View and manage all resources created within the environment.
-
-    * Set data loss prevention policies. More information: [Manage data loss prevention policies](prevent-data-loss.md)
-
-    After creating the database in the environment, you can use the System Administrator role instead of the Environment Admin role.
-
-* The *Environment Maker* role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Power Automate.
+- The *Environment Admin* role can perform all administrative actions on an environment, including the following:
+  - Add or remove a user or group from either the Environment Admin or Environment Maker role.
+  - Provision a Dataverse database for the environment.
+  - View and manage all resources created within the environment.
+  - Set data loss prevention policies. More information: [Manage data loss prevention policies](prevent-data-loss.md)<br />
+  After creating the database in the environment, you can use the System Administrator role instead of the Environment Admin role.
+- The *Environment Maker* role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Power Automate.
 
 Environment makers can also distribute the apps they build in an environment to other users in your organization by sharing the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app)
 
@@ -93,12 +84,12 @@ There are multiple types of environments. The type indicates the purpose of the 
 </tr>
 <tr>
 <td width="20%"> Developer</td>
-<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can't be restricted unless through a support ticket. Developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: <a href="/powerapps/maker/developer-plan">Power Apps Developer Plan</a></td>
+<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can be restricted to admins (see <a href="powerapps-powershell.md#block-trial-licenses-commands">Block trial licenses commands</a>). The developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: <a href="/powerapps/maker/developer-plan">Power Apps Developer Plan</a></td>
 <td width="30%">  The user with the Developer Plan can choose to add other users as makers. </td>
 </tr>
 <tr>
 <td width="20%"> Microsoft Dataverse for Teams</td>
-<td width="50%">  Dataverse for Teams environments are automatically created for the selected team when you create an app in Teams using the Power Apps app for the first time or install a Power Apps app from the app catalog. See <a href="about-teams-environment.md">About the Dataverse for Teams environment</a>. </td>
+<td width="50%">  Dataverse for Teams environments are automatically created for the selected team when you create an app in Teams using the app for the first time or install an app from the app catalog. See <a href="about-teams-environment.md">About the Dataverse for Teams environment</a>. </td>
 <td width="30%">  Limited control. Admins have limited settings available for Teams environments.  No customizations of security role or assignments are available.  Teams members are automatically mapped to their Teams membership type - Owners, Members, and Guests - with a corresponding security role assigned by the system.  </td>
 </tr>
 <tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
@@ -110,8 +101,9 @@ A single default environment is automatically created by Power Apps for each ten
 > [!NOTE]
 > - No users will be added to the Environment Admin role of the default environment automatically. 
 > - You can't delete the default environment.
-> - The default environment can't be backed up.
-> - The default environment has the following included storage capacity: 3GB Dataverse Database Capacity, 3GB Dataverse File Capacity, and 1GB Dataverse Log Capacity.
+> - The default environment can't be manually backed up. System backups are done continuously.
+> - The default environment is limited to 1 TB of storage capacity.  To store more data, you can create a production environment.
+> - The default environment has the following included storage capacity: 3 GB Dataverse Database Capacity, 3GB Dataverse File Capacity, and 1 GB Dataverse Log Capacity.
 > - The capacity check conducted prior to creating new environments will exclude the default environment's included storage capacity when calculating whether you have  sufficient capacity to create a new environment.
 
 The default environment is named as follows: "{Azure AD tenant name} (default)"
@@ -161,12 +153,9 @@ To see the environment history:
 :::image type="content" source="media/environment-history-data.png" alt-text="Environment history data":::
 
 > [!NOTE]
-> -	Some actions such as Edit will show the edit as an action but not details of the action.
-> -	Once an environment is completely deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it's been hard deleted.
+> - Some actions such as Edit will show the edit as an action but not details of the action.
+> - Once an environment is completely deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it's been hard deleted.
 
 ### See also
-[Microsoft Learn: Create and manage environments in Dataverse](/learn/modules/create-manage-environments/)<br />
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

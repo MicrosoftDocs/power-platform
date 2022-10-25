@@ -52,7 +52,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
 
 - The Azure DevOps organization and Azure DevOps project have been created.
 
-- CoE CLI is installed.
+- The latest version of the CoE CLI is installed.
 
 ## Initial install
 
@@ -83,9 +83,9 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
          "test",
          "prod"
       ],
-      "validation": "https://sample-validation.crm.dyamics.com",
-      "test": "https://sample-test.crm.dyamics.com",
-      "prod": "https://sample-prod.crm.dyamics.com",
+      "validation": "https://sample-validation.crm.dynamics.com",
+      "test": "https://sample-test.crm.dynamics.com",
+      "prod": "https://sample-prod.crm.dynamics.com",
       "createSecret": "true",
       "region": [
          "NAM"

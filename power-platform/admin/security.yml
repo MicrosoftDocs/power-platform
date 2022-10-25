@@ -7,7 +7,7 @@ summary: Learn how to set up and maintain security for Power Platform.
 metadata:
   title: Microsoft Power Platform security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to set up and maintain security for Power Platform. # Required; article description that is displayed in search results. < 160 chars.
-  
+  ms.subservice: admin
   ms.topic: landing-page  # Required
   author: jimholtz #Required; your GitHub user alias, with correct capitalization.
   ms.author: jimholtz #Required; microsoft alias of author; optional team alias.
@@ -70,7 +70,7 @@ landingContent:
        - linkListType: learn
          links:
           - text: Get started with security roles in Dataverse
-            url: /learn/modules/get-started-security-roles/
+            url: /training/modules/get-started-security-roles/
   
   # Card
   - title: Data loss prevention policies
@@ -88,7 +88,7 @@ landingContent:
        - linkListType: learn
          links:
           - text: Manage environmental changes
-            url: /learn/modules/manage-environmental-changes/
+            url: /training/modules/manage-environmental-changes/
 
   # Card
   - title: Configure teams and team templates

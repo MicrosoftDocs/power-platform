@@ -2,10 +2,9 @@
 title: "Manage email tracking settings  | MicrosoftDocs"
 description: View and manage email tracking settings for Microsoft Dataverse.
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/31/2020
+ms.date: 09/19/2022
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -18,9 +17,12 @@ search.app:
 ---
 # Manage email tracking settings
 
-Use Email settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, features appear and function.
+Use Email settings to adjust how customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), features appear and function.
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email Tracking**.
+
+> [!TIP]
+> In addition to the settings mentioned below, there are more settings available to control synchronization behavior. For more information, see [OrgDBOrgSettings for server-side synchronization](OrgDbOrgSettings.md).
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
 

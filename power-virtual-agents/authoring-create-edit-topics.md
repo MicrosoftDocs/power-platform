@@ -40,7 +40,7 @@ For bot and topic limits, see [Quotas, limits, and configuration values](require
 
 ## Prerequisites
 
-[!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Use system and sample topics
 
@@ -54,7 +54,7 @@ These automatically created topics fall into two categories:
 
     You can edit lesson topics or delete them entirely.
 
-- System topics are topics you're likely to need during a bot conversation.
+- [System topics](authoring-system-topics.md) are topics you're likely to need during a bot conversation.
 
     You can't delete or disable system topics or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
 
@@ -73,8 +73,6 @@ These automatically created topics fall into two categories:
 1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 
     :::image type="content" source="media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Screenshot of the topic authoring canvas, highlighting adding trigger phrases.":::
-
-    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define.
 
     You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
@@ -106,7 +104,7 @@ These automatically created topics fall into two categories:
 
     When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you.
 
-1. To add a node, select the plus (**+**) icon on the line or branch between or after nodes.
+1. To add a node, select **Add node** (**+**) on the line or branch between or after nodes.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 
@@ -135,7 +133,7 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
 #### Ask a question
 
-1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then select **Ask a question** to add a new **Question** node.
+1. To have the bot ask a question and get a response from the user, select **Add node** (**+**) to add a node, and then select **Ask a question** to add a new **Question** node.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-question.png" alt-text="Screenshot of adding a new question mode.":::
 
@@ -174,7 +172,7 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 #### Show a message
 
-1. To specify a response from the bot, select **+** to add a node, and then select **Show a message** to add a new **Message** node.
+1. To specify a response from the bot, select **Add node** (**+**) to add a node, and then select **Show a message** to add a new **Message** node.
 
 1. Enter what you want the bot to say in the text box.
 
@@ -182,7 +180,7 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 #### Redirect to another topic
 
-1. To have the bot move to a different topic, select **+** to add a node, and then select **Redirect to another topic**.
+1. To have the bot move to a different topic, select **Add node** (**+**) to add a node, and then select **Redirect to another topic**.
 
 1. Select the topic that the bot should divert to. For example, you might send the user to a topic about the closure of a store if they ask about the store's hours.
 
@@ -196,7 +194,7 @@ When the path for the subtopic is finished, the bot will return to the original 
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+If you redirect to any of the following [system topics](authoring-system-topics.md), however, the entire conversation will end:
 
 - End of Conversation
 - Confirmed Success
@@ -225,7 +223,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 #### Add a condition
 
-1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, select **Add a condition**, and then select **Branch based on a condition**.
+1. To add branching logic based on [variables](authoring-variables.md), select **Add node** (**+**) to add a node, select **Add a condition**, and then select **Branch based on a condition**.
 
 1. Select the variable that will determine whether the bot conversation should branch at this point.
 

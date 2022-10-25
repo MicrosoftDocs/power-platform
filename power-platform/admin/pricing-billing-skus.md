@@ -67,7 +67,7 @@ Dataverse functionality required by other Microsoft 365 applications appears as 
 
 This new service plan allows select Microsoft 365 applications to take advantage of Dataverse as a platform for storing application data and use the underlying business logic tier as part of extending application capabilities. This extension also helps these applications to use Dataverse instances within the [default environment](environments-overview.md#the-default-environment). However, if you need to create a Dataverse instance within production or sandbox environments (other than the default environment), you're still required to have a premium Power Apps or Power Automate license. 
 
-These limited capabilities of Dataverse are only available through select Microsoft 365 licenses and can't be used to run any custom Power Apps applications or Power Automate flows, or run any Power Virtual Agent bots, or use any other data that doesn't belong to the Microsoft 365 applications that take advantage of these capabilities. 
+These limited capabilities of Dataverse are only available through select Microsoft 365 licenses and can't be used to run any custom apps or Power Automate flows, or run any Power Virtual Agent bots, or use any other data that doesn't belong to the Microsoft 365 applications that take advantage of these capabilities. 
 
 These limited capabilities aren't the common set included with every Office application. They can be different based on the Microsoft 365 applications that use these capabilities. For the complete list of various limited capabilities, customers should refer to the service description of these Microsoft 365 applications that contain these Dataverse plans. These limited capabilities of Dataverse don't entitle the licensed user to run standalone Power Apps or Power Automate, or any other Microsoft Power Platform applications that use Dataverse. 
 
@@ -93,12 +93,12 @@ Dataverse functionality appears as the **Common Data Service** plan in the *
 
 #### When can Office-licensed users be seen inside of Dataverse?
 
-Users who have any Microsoft Power Platform or Dynamics 365 license are always synced into the Dataverse environments. However, for Office licenses where Dataverse service plans are included, users aren't automatically synced into Dataverse until the Office application is accessed by the user. After this occurs, the user can get access to Dataverse tables and rows based on the additional security roles and privileges that the administrator assigned to this user. Such users, who just have the Office license, aren't automatically assigned any other security roles or privileges, other than the Maker role privilege in the [default environment](environments-overview.md#the-default-environment). As a security best practice, the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not automatically assigned based on the user being synced or present in Dataverse. 
+Users who have any Microsoft Power Platform or Dynamics 365 license are always synced into the environments with a Dataverse database. However, for Office licenses where Dataverse service plans are included, users aren't automatically synced into Dataverse until the Office application is accessed by the user. After this occurs, the user can get access to Dataverse tables and rows based on the additional security roles and privileges that the administrator assigned to this user. Such users, who just have the Office license, aren't automatically assigned any other security roles or privileges, other than the Maker role privilege in the [default environment](environments-overview.md#the-default-environment). As a security best practice, the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not automatically assigned based on the user being synced or present in Dataverse. 
 
 ### Known issues
 
 - If you're an existing customer and a user with this license who comes directly to Dataverse, you might get an error message that states "You are not a member of the organization." We're addressing this problem in the coming weeks.
-- We currently sync some of these Microsoft Dataverse licensed users to all Dataverse environments. We're addressing this right now. Currently, these users won't be able to open Power Apps for Microsoft 365 with this license.
+- We currently sync some of these Microsoft Dataverse licensed users to all environments with a Dataverse database. We're addressing this right now. Currently, these users won't be able to open Power Apps for Microsoft 365 with this license.
 
 ## Developer Plan
 

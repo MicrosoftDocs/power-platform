@@ -25,7 +25,7 @@ The ALM accelerator for Power Platform (AA4PP), apart from the solution componen
 
 ## Before you start
 
-If you're installing the ALM accelerator for the first time, [follow this link](/power-platform/guidance/coe/setup-almacceleratorpowerplatform.md) and skip this document.
+If you're installing the ALM accelerator for the first time, [follow this link](/power-platform/guidance/coe/setup-almacceleratorpowerplatform) and skip this document.
 
 In every release the version of the solution is updated to the date when was created, example: 1.0.20220406.1 would mean version 1.0 created on 20220406 (yyyyMMdd) April 6 of 2022.
 
@@ -42,7 +42,8 @@ Go to [https://make.powerapps.com](https://make.powerapps.com) and select the en
 When the import is completed, the reactivation of the **CustomAzureDevOps** custom connector needs to be done. The following steps need to be done.
 
 1. Select **Data** -> **Custom Connectors** and edit the **CustomAzureDevOps**
-1. Go straight to the Security tab and select **Edit**
+1. Go to the Definition tab and verify if there are 3 **Policies** created and the information is accordingly to [this section](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config#create-the-customazuredevops-custom-connector-policies).
+1. Go to the Security tab and select **Edit**
 1. Add your **ClientId**, **Client Secret** & **ResourceUrl**
 1. Select the **Test** tab and select **Test operation**
 1. Confirm the **status** of the response is Ok and select **Update connector** in the top
@@ -75,3 +76,42 @@ To simplify this process, there's a pipeline template that will automatically sy
 1. Do the following settings: in **SyncFrom** select **Tag** , in **SourceBranchOrTag** enter the tag copied in the previous section (example: **CenterofExcellenceALMAccelerator-May2022**), in  **BranchToCreate** define the name you want, example: update-from-original-repo, in **TargetBranch** define the name you want example: **main**, and then select **Run**.
 
 1. After the pipeline runs, a pull request will be created for the **BranchToCreate** into the **TargetBranch** example: Pull request from **update-from-original-repo** to **main**. To commit the changes, approve and complete the pull request by selecting **Repos** and **Pull requests**.
+
+> [!NOTE]
+> If the generated Pull Request has merge conflicts these needs to be resolved to complete the upgrade. A free Azure DevOps extension called **Pull Request Merge Conflict Extension** developed by Microsoft DevLaps can be install from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.conflicts-tab)
+
+## Create the CustomAzureDevOps custom connector policies
+
+You should have 3 policies under **Definition** tab in the CustomAzureDevOps custom connector. Verify the policies are created accordingly to the following information. You might need to create missing policies.
+
+**Set host to https://vssps.dev.azure.com** policy
+
+| **Field name**         | **Value**   |
+|-------------------|-------------------|
+| Name     | Set host to https://vssps.dev.azure.com|
+| Template| Set host URL
+| Operations | GetIdentities
+| URL Template | https://vssps.dev.azure.com
+
+**Set host to https://app.vssps.visualstudio.com** policy
+
+| **Field name**         | **Value**   |
+|-------------------|-------------------|
+| Name     | Set host to https://app.vssps.visualstudio.com |
+| Template| Set host URL |
+| Operations | GetOrganizations |
+| URL Template | https://app.vssps.visualstudio.com |
+
+**Convert Build Definition Variables to Array** policy
+
+| **Field name**         | **Value**   |
+|-------------------|-------------------|
+| Name     | Convert Build Definition Variables to Array |
+| Template| Convert an object to an array (Preview) |
+| Operations | |
+| Target object or collection path | @body().value |
+| Property subpath | variables |
+| Path of the new property | @item().variables |
+| Property name for the key | key |
+| Property name for the value | value |
+| Run policy on | Response |

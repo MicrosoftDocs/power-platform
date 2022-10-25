@@ -70,7 +70,7 @@ Administrators can export all environments created by a specific user from the [
    > ![Environment details.](media/environment-details.png "Environment details")
 
 ### PowerShell cmdlets for app creators
-Users can export the environments they have access to in Power Apps by using the **Get-PowerAppEnvironment** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export the environments they have access to in Power Apps by using the **Get-PowerAppEnvironment** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
@@ -88,6 +88,7 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
  
 ## Step 2: Export the user's environment permissions
 Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Dataverse, if a database is created within the environment, the role assignments are stored as records within the Dataverse database environment. For more information, see [Administer environments within Power Apps](environments-overview.md).
+
 
 ### For environments without a Dataverse database
 
@@ -161,7 +162,7 @@ Get-AdminApp -Owner $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.j
 Whenever an app is shared with a user, Power Apps stores a record called a *role assignment* that describes the user's permissions (CanEdit or CanUser) to the application. For more information, see [Share an app](/powerapps/maker/canvas-apps/share-app#share-an-app).
 
 ### PowerShell cmdlets for app creators
-Users can export the app role assignments for all apps that they have access to by using the **Get-RoleAssignment** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export the app role assignments for all apps that they have access to by using the **Get-RoleAssignment** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
@@ -198,7 +199,7 @@ Get-AdminAppRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath
 Connections are used in conjunction with connectors when establishing connectivity with other APIs and SaaS systems. Connections include references to the user who created them and, as a result, can be deleted to remove any references to the user.
 
 ### PowerShell cmdlets for app creators
-Users can export all of the connections they have access to by using the **Get-AdminPowerAppConnection** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export all of the connections they have access to by using the **Get-AdminPowerAppConnection** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
@@ -217,7 +218,7 @@ Get-AdminConnection -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "Us
 ## Step 6: Export the user's permissions to shared connections
 
 ### PowerShell cmdlets for app creators
-Users can export the connection role assignments for all connections that they have access to by using the **Get-AdminPowerAppConnectionRoleAssignment** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export the connection role assignments for all connections that they have access to by using the **Get-AdminPowerAppConnectionRoleAssignment** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
@@ -236,8 +237,8 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | 
 ## Step 7: Export personal data contained within custom connectors created by the user
 Custom Connectors supplement the existing out-of-box connectors and allow for connectivity to other APIs, SaaS, and custom-developed systems.
 
-### Power Apps App creator PowerShell cmdlets
-Users can export all custom connectors they've created by using the **Get-AdminPowerAppConnector** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+### App creator PowerShell cmdlets
+Users can export all custom connectors they've created by using the **Get-AdminPowerAppConnector** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount  
@@ -256,7 +257,7 @@ Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "Use
 ## Step 8: Export the user's permissions to custom connectors
 
 ### PowerShell cmdlets for app creators
-Users can export all connector role assignments for the custom connectors to which they have access by using the **Get-ConnectorRoleAssignment** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export all connector role assignments for the custom connectors to which they have access by using the **Get-ConnectorRoleAssignment** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount  
@@ -278,7 +279,7 @@ Power Apps sends several types of notifications to users, including when an app 
 Power Apps also stores several different user preferences and settings that are used to deliver the Power Apps runtime and portal experiences, including when a user last opened an application, pinned an app, etc.
 
 ### PowerShell cmdlets for app creators
-Users can export their own Power Apps notifications, user settings, and user-app settings using the **Get-AdminPowerAppsUserDetails** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export their own Power Apps notifications, user settings, and user-app settings using the **Get-AdminPowerAppsUserDetails** function in the [App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount  
@@ -324,8 +325,8 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 >  We recommend that administrators complete this step for Power Apps users.
 
 
-## Step 12: Export the user's personal data in Dataverse environments
-Anyone with a Power Apps license, provided there is 1GB available database capacity, can create Dataverse environments and create and build apps on Dataverse; this includes the Power Apps Developer Plan, which is a free license that allows users to try out Dataverse in an individual environment. To see which Dataverse capabilities are included in each Power Apps license, see the [Power Apps Pricing page](https://powerapps.microsoft.com/pricing).
+## Step 12: Export the user's personal data in environments
+Anyone with a Power Apps license, provided there is 1GB available database capacity, can create environments and create and build apps on Dataverse; this includes the Power Apps Developer Plan, which is a free license that allows users to try out Dataverse in an individual environment. To see which Dataverse capabilities are included in each Power Apps license, see the [Power Apps Pricing page](https://powerapps.microsoft.com/pricing).
 
 For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 

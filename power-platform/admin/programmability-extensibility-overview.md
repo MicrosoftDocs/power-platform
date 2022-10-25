@@ -44,7 +44,7 @@ Several programmability tools are available for administrators.  These gradually
 Connectors are the easiest to get started if you are new to automation.  With a graphical workflow editor based on Power Automate, these allow admins to quickly get a routine task implemented.  For more information, see [Get started with Power Platform for admins management connectors](connectors-getting-started.md).
 
 ### Power Platform CLI
-[Microsoft Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli) is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and so on.
+[Microsoft Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli) is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with environments, solution packages, portals, code components, and so on.
 
 ### PowerShell cmdlets
 PowerShell is a common automation tool at organizations worldwide.  For more information, see [Get started with PowerShell for Power Platform administrators](powershell-getting-started.md).

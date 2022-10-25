@@ -40,7 +40,7 @@ This is just one example of many use cases of Power Virtual Agents chatbots in T
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Scenario
 
@@ -135,7 +135,7 @@ Enter the text in the existing message node *I can help with questions related t
 
 As an HR employee, you know that the most common time-off questions that employees have are around paid vacation time and national holidays. So add a question node for the bot to ask employees what type of time-off they are looking for, so you can provide better guidance. When a question node with user response options is added, the topic automatically gets a forked branch for each response.
 
-1. Select the **+** below the message node, then select **Ask a question** to add a question node to the topic.
+1. Select **Add node** (**+**) below the message node, then select **Ask a question** to add a question node to the topic.
 
 1. Enter *What information are you looking for?* in the **Ask a question** text box. This is the question the employee will be asked.
 
@@ -155,7 +155,7 @@ Now you can add different responses for each option. For *paid vacation*, we can
 
 1. Add a message node specifically for the *Paid vacation* branch with this message to the user: *For paid vacation time-off, go to www.contoso.com/HR/PaidTimeOff to learn more on how to submit time-off requests.*
 
-2. Add a node by selecting the **+** to end the conversation with a survey. Select **End the conversation**, then **End with survey**. This is the [customer satisfaction survey](analytics-csat-teams.md) pre-built in the bot for everyone to use in their topics.
+2. Add a node by selecting **Add node** (**+**) to end the conversation with a survey. Select **End the conversation**, then **End with survey**. This is the [customer satisfaction survey](analytics-csat-teams.md) pre-built in the bot for everyone to use in their topics.
 
 3. In the *National Holidays* path, add a message node with the following text:
 
@@ -169,7 +169,7 @@ Now you can add different responses for each option. For *paid vacation*, we can
     -   Christmas Eve and Christmas Day: December 24th - 25th
     ```
 
-4. End this path in the topic with a survey as well: add a node by selecting the **+** then **End the conversation** and **End with survey**.
+4. End this path in the topic with a survey as well: add a node by selecting **Add node** (**+**) then **End the conversation** and **End with survey**.
 
 This is what your topic should look like now:
 

@@ -42,6 +42,8 @@
          href: authoring-first-bot.md
        - name: Use lesson topics
          href: authoring-template-topics.md
+       - name: Use system topics
+         href: authoring-system-topics.md
        - name: Create and edit topics
          href: authoring-create-edit-topics.md
        - name: Use system fallback topic
@@ -72,14 +74,24 @@
          href: advanced-create-topics-from-web.md
        - name: Create topics from Customer Service Insights
          href: advanced-create-topics-from-csi.md
-       - name: Add end-user authentication
+       - name: Add user authentication
          href: advanced-end-user-authentication.md
-       - name: Add actions using Power Automate
-         href: advanced-flow.md
        - name: Send proactive messages and cards in Microsoft Teams
          href: advanced-proactive-message.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
+       - name: Use Power Automate flows
+         items:
+          - name: Key Concepts - Flows
+            href: advanced-flow.md
+          - name: Create a flow
+            href: advanced-flow-create.md
+          - name: Call a flow as an action
+            href: advanced-use-flow.md
+          - name: Add input and output variables
+            href: advanced-flow-input-output.md
+          - name: Return a list of results
+            href: advanced-flow-list-of-results.md
     - name: Publish and integrate
       items:
        - name: Key concepts - Publish your bot
@@ -96,6 +108,8 @@
          href: publication-connect-bot-to-custom-application.md
        - name: Add bot to Azure Bot Service channels
          href: publication-connect-bot-to-azure-bot-service-channels.md
+       - name: Integrate with question answering
+         href: integrate-with-question-answering.md
        - name: Integrate with Bot Framework
          items:
           - name: Configure a skill for use in Power Virtual Agents
@@ -136,8 +150,10 @@
       items:
        - name: Key concepts - Configuration
          href: configuration-fundamentals.md
-       - name: Configure end-user authentication
+       - name: Configure user authentication
          href: configuration-end-user-authentication.md
+       - name: Configure user authentication with Azure Active Directory
+         href: configuration-authentication-azure-ad.md
        - name: Configure web and Direct Line channel security
          href: configure-web-security.md
        - name: Configure single sign-on for Web
@@ -192,6 +208,8 @@
          href: teams/authoring-first-bot-teams.md
        - name: Use lesson topics
          href: teams/authoring-template-topics-teams.md
+       - name: Use system topics
+         href: teams/authoring-system-topics-teams.md
        - name: Create and edit topics
          href: teams/authoring-create-edit-topics-teams.md
        - name: Use system fallback topic
@@ -218,7 +236,7 @@
          href: teams/authoring-variables-bot-teams.md
        - name: Create topics from existing support content
          href: teams/advanced-create-topics-from-web-teams.md
-       - name: Add end-user authentication
+       - name: Add user authentication
          href: teams/advanced-end-user-authentication-teams.md
        - name: Add actions using Power Automate
          href: teams/advanced-flow-teams.md
@@ -254,7 +272,7 @@
          href: teams/configuration-fundamentals-teams.md
        - name: Configure web and Direct Line channel security
          href: teams/configure-web-security-teams.md
-       - name: Configure end-user authentication
+       - name: Configure user authentication
          href: teams/configuration-end-user-authentication-teams.md
        - name: Configure how the bot starts the conversation
          href: teams/configure-bot-greeting-teams.md

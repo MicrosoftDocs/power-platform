@@ -1,5 +1,5 @@
 ---
-title: "Delete users from Dynamics 365 environments | MicrosoftDocs"
+title: "Delete users from environments | MicrosoftDocs"
 description: Information about deleting users
 author: jimholtz
 ms.subservice: admin

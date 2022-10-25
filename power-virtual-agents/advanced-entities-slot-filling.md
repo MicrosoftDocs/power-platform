@@ -31,7 +31,7 @@ One fundamental aspect of natural language understanding is to identify *entitie
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Prebuilt entities
 
@@ -133,7 +133,7 @@ Now that you've done the work of giving the bot the knowledge about outdoor gear
 
 1. Open the authoring canvas for the topic you want to add an entity to.
 
-1. Select the plus (**+**) icon and then select **Ask a question**.
+1. Select **Add node** (**+**) and then select **Ask a question**.
 
    :::image type="content" source="media/advanced-entities-slot-filling/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
