@@ -41,7 +41,7 @@ There are no user interface changes or version changes as part of this move. You
 > - Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
 > - Existing source database backups won't be migrated to destination tenant.
 > - Linking a Dataverse organization to a finance and operations organization is not supported.
-> - Tenant-to-tenant migration isn't supported when [Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy) is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
+> - Tenant to tenant migration is subject to [Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy) when enabled in the source tenant.
 
 ### Supported applications and platforms
 
@@ -86,8 +86,6 @@ Once a migration request is submitted, the support team is engaged to review the
 
 If you don't have a paid subscription of Dynamics 365, Power Apps, or Power Virtual Agents in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial to paid, if not already done.
 
-Depending on how many source environments you're migrating, you'll need to create a temporary environment or environments in the destination tenant. The source environment type and destination environment type—production vs non-production (sandbox)—must match. The users to be migrated from one tenant to another need to be created on the target tenant as well.
-
 The destination tenant needs an equal or higher number of active user licenses and equal or greater storage as the source tenant.
 
 When your environment is moved from one tenant to another within the same region, the URL does not change. In order to perform this operation, you'll need to answer some questions including:
@@ -102,19 +100,18 @@ When your environment is moved from one tenant to another within the same region
 You'll also need to provide the following information:
 
 - The environments to be migrated from the source tenant.
-- The destination environments in the target tenant. These environments in the target tenant will act as placeholders and will be replaced with the source instance in the migration process. Make sure that these target environments are enabled for Dynamics 365 apps.
 - The user mapping file for the first environment to be migrated. Each environment will need to have a separate mapping file. Please note that the users need to exist in both the source and target tenants, and need to be licensed and enabled in the environments in order for the migration to succeed. They can have different source and target domains as long as they are active. 
 
 ### Steps to be performed by a global admin, Dynamics 365 admin, or Power Platform admin
 
 1. Be authorized to perform the migration.
-2. Create the Dynamics 365 destination environments (if they're not already created) in the target tenant.
 3. If we'll be moving a production environment, we first need to migrate a sandbox copy. In that case, we'll also need a new environment in the source tenant so we can copy the production environment into the new environment.
 4. Create users in the destination environments in the target tenant. You must:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
 5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this topic</a>.
 6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from [Power Apps](https://make.powerapps.com) and imported again into the new environment after the migration.
+7. Be prepared to approve Lockbox request at the start of the Tenant to Tenant operation, if Lockbox is enabled in the source tenant.
 
 ### Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support:
  
@@ -125,7 +122,6 @@ You'll also need to provide the following information:
 - Power Apps Checker App
 - Café X
 - Forms Pro
-- SharePoint
 - Dynamics 365 Marketing 
 - Mailboxes. If the mapped user has a mailbox in the destination environment, then the mailbox is automatically configured during the migration. For all other users, you will need to reconfigure the mailbox:
   1. If the same mailbox is used in the target tenant (test@microsoft.com) then the mailbox will be enabled by default. Before the tenant-to-tenant process, customers need to migrate/configure their mailboxes on the target tenant.
