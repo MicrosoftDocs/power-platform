@@ -32,7 +32,7 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 ## Prerequisites  
 
 - Ensure that you have all the solution and other files ready that you want to include in the package.  
-- Visual Studio 2019 (or later), or Visual Studio Code
+- Visual Studio 2019 or later, or Visual Studio Code
 
 ## Process overview  
 
