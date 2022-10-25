@@ -92,7 +92,7 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 
 :::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Composer Bot Responses - add activity.":::
 
-Go to the **Create** tab in Composer and select the **Unknown intent** trigger. Add a **Send a response** action. In the **Send a response** pane, and select **Show code** and add the following expression to the **Bot responses** field:
+Go to the **Create** tab in Composer and select the **Unknown intent** trigger. Add a **Send a response** action. In the **Send a response** pane, select **Show code** and add the following expression to the **Bot responses** field:
 
 ```lg
 - ${AdaptiveCardBingSearch(turn.activity.text)}
