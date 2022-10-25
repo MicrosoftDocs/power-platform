@@ -2,7 +2,7 @@
 title: "Use Bot Framework Composer to use Bing search in chatbots"
 description: "Use Bot Framework Composer to fall back to Bing search in your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 10/06/2022
+ms.date: 10/25/2022
 
 ms.topic: article
 author: iaanw
@@ -38,11 +38,11 @@ Open the Power Virtual Agents bot used in the previous examples.
 
 On the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer**.
 
-Select **+ Add new trigger** to add another Bot Framework trigger to **Contoso Meal Delivery Service** dialog. Choose the type **Unknown intent** for your new trigger.
+In Composer, add another trigger to your main dialog. Choose the type **Unknown intent** for your new trigger.
 
 :::image type="content" source="media/Composer_Example3/E3_BingSearch_UnknownIntent.png" alt-text="Composer - add Unknown Intent trigger.":::
 
-After the **Unknown intent** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
+After the **Unknown intent** trigger is added, go to the **Bot Responses** tab for your main dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
 
 ````lg
 # adaptivecardjson_BingSearch(user_utterance)
@@ -92,17 +92,17 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 
 :::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Composer Bot Responses - add activity.":::
 
-Go to the **Create** tab in Composer and select the **Unknown intent** trigger. Add the **Send a response** action and select **Show code**. Add the following expression to the **Bot response** pane:
+Go to the **Create** tab in Composer and select the **Unknown intent** trigger. Add a **Send a response** action. In the **Send a response** pane, and select **Show code** and add the following expression to the **Bot responses** field:
 
 ```lg
--${AdaptiveCardBingSearch(turn.activity.text)}
+- ${AdaptiveCardBingSearch(turn.activity.text)}
 ```
 
 :::image type="content" source="media/Composer_Example3/E3_BingSearch_addBotReponse_BingSearch.png" alt-text="Composer BeginDialog - Send a response.":::
 
 You're now ready to add your Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
 
-Once your new Composer content is successfully published, you can now see that **OnUnknownIntent** was added to the **Topics** page in Power Virtual Agents.
+Once your new Composer content is successfully published, you can now see that **Unknown intent** was added to the **Topics** page in Power Virtual Agents.
 
 > [!NOTE]
 > You might need to refresh your **Topics** page to see the new bot content that has been added from Composer.
