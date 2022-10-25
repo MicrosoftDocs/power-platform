@@ -47,7 +47,7 @@ Preview features are features that aren't complete, but are made available on a 
 
 3. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
 
-4. Select **Features** to expand the category, then select **On** for the feature to enable. Preview features will be labeled as "preview".
+4. Under **Product**, select **Features** to expand the category, then select **On** for the feature to enable. Preview features will be labeled as "preview".
 
    :::image type="content" source="media/turn-on-preview.png" alt-text="Turn on preview features":::
 
@@ -67,7 +67,7 @@ To enable a Preview feature, you must be an administrator.
   
 4. Select **System Settings**, and then select the **Previews** tab.  
   
-5. Read the [Supplemental Terms of Use](https://go.microsoft.com/fwlink/p/?LinkId=511446), and if you agree, select the **I've read and agree to the license terms** check box.  
+5. Read the [license terms](https://go.microsoft.com/fwlink/p/?LinkId=511446), and if you agree, select the **I've read and agree to the license terms** check box.  
   
 6. For each Preview feature you want to enable, select **Yes**.  
   
