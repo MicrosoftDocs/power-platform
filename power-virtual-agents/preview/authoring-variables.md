@@ -96,7 +96,7 @@ Variables can be created in any node that prompts you to select a variable as an
 
 These nodes will automatically create new variables, with the appropriate type, for each of their output variable slots.
 
-You can use the [variable properties pane](#variable-properties-pane) to rename variables.
+To rename a variable, open it in the [variable properties pane](#variable-properties-pane).
 
 You can also create a new variable and assign a value to it immediately using the **Set Variable Value** node.
 

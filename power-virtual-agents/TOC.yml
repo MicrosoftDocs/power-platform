@@ -324,7 +324,7 @@
         href: preview/authoring-system-topics.md
       - name: Add comments to bots
         href: preview/authoring-comments.md
-      - name: Start with existing content
+      - name: Start from existing content
         href: preview/clone-existing-bot.md
       - name: Test your bot
         href: preview/authoring-test-bot.md
