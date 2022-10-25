@@ -219,8 +219,8 @@ The following table describes the permissions required to approve emails.
   <tr>
     <td rowspan="2">Customer engagement apps</td>
     <td>Exchange Online</td>
-    <td colspan="2">Yes<sup>1</sup></td>
-    <td colspan="2">Yes<sup>1</sup></td>
+    <td colspan="2">Yes</td>
+    <td colspan="2">Yes</td>
     <td colspan="2">Yes<sup>1</sup></td>
     <td>No</td>
     <td>No</td>
@@ -261,7 +261,7 @@ The following table describes the permissions required to approve emails.
   </tr>
 </table>
  
-<sup>1</sup> We're updating for customer engagement apps and Exchange Online, for version 9.1.0.5805 or later.  <br />
+<sup>1</sup> We're updating for customer engagement apps and Exchange Online, for version 9.2.22104.118 or later.  <br />
 <sup>2</sup> We'll be updating for customer engagement apps and Exchange (on-premises). Check back for version information.<br>
 <sup>3</sup> We recommend that you include your Exchange admin in the custom business processes your organization follows for this configuration.
 
