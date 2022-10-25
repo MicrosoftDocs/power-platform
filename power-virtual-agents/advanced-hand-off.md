@@ -95,18 +95,20 @@ You can use these variables to automatically determine where the conversation sh
 
 The following table lists the context variables available by default.
 
-| Context                                                      | Purpose                                                                                                                                           | Example                                                   |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| `va_Scope`                                                   | Helps route escalations to a live agent.                                                                                                          | `"bot"`                                                   |
-| `va_LastTopic`                                               | Helps route escalations to a live agent and helps ramp-up a live agent. Includes the last topic that was triggered by an utterance from the user. | `"Return items"`                                          |
-| `va_Topics`                                                  | Helps ramp-up a live agent.                                                                                                                       | `[ "Greetings", "Store Hours", "Return Item" ]`           |
-| `va_LastPhrases`                                             | Helps route escalation to a live agent and helps ramp-up a live agent.                                                                            | `"Can I return my item"`                                  |
-| `va_Phrases`                                                 | Helps ramp-up a live agent.                                                                                                                       | `["Hi", "When does store open", "Can I return my item" ]` |
-| `va_ConversationId`                                          | Helps uniquely identify a bot conversation.                                                                                                       | `GUID`                                                    |
-| `va_AgentMessage`                                            | Helps ramp-up a live agent.                                                                                                                       | `"Got a gift from: HandoffTest"`                          |
-| `va_BotId`                                                   | Helps identify the bot that is handing off a conversation.                                                                                        | `GUID`                                                    |
-| `va_Language`                                                | Helps route escalation to a live agent.                                                                                                           | `"en-us"`                                                 |
-| All [user-defined topic variables](./authoring-variables.md) | Helps ramp-up a live agent.                                                                                                                       | `@StoreLocation = "Bellevue"`                             |
+| Context                               | Purpose                                                                                                                                  | Example                                                   |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| `va_Scope`                            | Route escalations to a live agent.                                                                                                       | `"bot"`                                                   |
+| `va_LastTopic`                        | Route escalations to a live agent and help them ramp-up. Includes the last topic that was triggered by an utterance from the user.       | `"Return items"`                                          |
+| `va_Topics`                           | Ramp-up a live agent. Only includes topics triggered by end user using a trigger phrase. Doesn't include topics that were redirected to. | `[ "Greetings", "Store Hours", "Return Item" ]`           |
+| `va_LastPhrases`                      | Route escalation to a live agent and help them ramp-up.                                                                                  | `"Can I return my item"`                                  |
+| `va_Phrases`                          | Ramp-up a live agent.                                                                                                                    | `["Hi", "When does store open", "Can I return my item" ]` |
+| `va_ConversationId`                   | Uniquely identify a bot conversation.                                                                                                    | `6dba796e-2233-4ea8-881b-4b3ac2b8bbe9`                    |
+| `va_AgentMessage`                     | Ramp-up a live agent.                                                                                                                    | `"Got a gift from: HandoffTest"`                          |
+| `va_BotId`                            | Identify the bot that is handing off a conversation.                                                                                     | `6dba796e-2233-4ea8-881b-4b3ac2b8bbe9`                    |
+| `va_Language`                         | Route escalation to a live agent.                                                                                                        | `"en-us"`                                                 |
+| All [user-defined topic variables][1] | Ramp-up a live agent.                                                                                                                    | `@StoreLocation = "Bellevue"`                             |
+
+[1]: authoring-variables.md
 
 A customer may go through several topics prior to escalating. Power Virtual Agents gathers all contextual variables across topics and merges them before sending to the engagement hub.
 
