@@ -181,12 +181,8 @@ A Dynamics 365 user can approve their own user mailbox if all of these condition
 Decide which approach you want your organization to follow for mailbox approval.
 
 :::image type="complex" source="media/approval-flow-chart.png" alt-text="Flowchart for deciding on your mailbox approval approach.":::
-   Flowchart with the starting condition "You must be an Office 365 Global admin + Dynamics 365 System admin OR an Exchange admin + Dynamics 365 System admin." The first decision point is "Do you want to require mailbox approval?" The "No" path leads to "See 'Remove requirement to approve mailboxes'". The "Yes" path leads to "See Permissions model."
+   Flowchart with the starting condition "You must be an Office 365 Global admin + Dynamics 365 System admin OR an Exchange admin + Dynamics 365 System admin OR a Dynamics 365 Delegated Mailbox Approver + Dynamics 365 System admin.." The first decision point is "Do you want to require mailbox approval?" The "No" path leads to "See 'Remove requirement to approve mailboxes'". The "Yes" path leads to "See Permissions model."
 :::image-end:::
-
-
-> [!NOTE]
-> We're planning to revise the mailbox approval process with scenarios that don't require global admin approval. We'll update this documentation when that becomes available.
 
 ### Permissions model
 
@@ -198,6 +194,14 @@ The following table describes the permissions required to approve emails.
 - **No**: Can't approve email
 - **n/a**: Not applicable
 
+- **Global admin**: Tenant level administrator role
+- **Exchange admin**: Exchange administrator role
+
+> [!NOTE]
+> For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles) 
+
+- **Delegated Mailbox Approver**: Dynamics 365 security role which can be assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. This role can currently only be assigned to individual users. Assigning this role to a team is not currently supported.
+
 > [!NOTE]
 > This permissions model is being gradually rolled out and will be available as soon as it's deployed to your region. Check the version number provided in the following table for when the change will be provided. 
 
@@ -206,6 +210,7 @@ The following table describes the permissions required to approve emails.
     <th colspan="2">Security roles /<br />Applications in use</th>
     <th colspan="2">Both roles required:<br />Global admin<br />and <br />System admin</th>
     <th colspan="2">Both roles required:<br />Exchange admin<br />and <br />System admin</th>
+    <th colspan="2">Both roles required:<br />Delegated Mailbox Approver<br />and <br />System admin</th>
     <th>System admin</th>
     <th>Service admin</th>
     <th>Exchange admin</th>
@@ -216,6 +221,7 @@ The following table describes the permissions required to approve emails.
     <td>Exchange Online</td>
     <td colspan="2">Yes<sup>1</sup></td>
     <td colspan="2">Yes<sup>1</sup></td>
+    <td colspan="2">Yes<sup>1</sup></td>
     <td>No</td>
     <td>No</td>
     <td>No</td>
@@ -223,6 +229,7 @@ The following table describes the permissions required to approve emails.
   </tr>
   <tr>
     <td>Exchange (on-premises)</td>
+    <td colspan="2">Yes<sup>2</sup></td>
     <td colspan="2">Yes<sup>2</sup></td>
     <td colspan="2">Yes<sup>2</sup></td>
     <td>No<sup>2</sup></td>
@@ -236,6 +243,7 @@ The following table describes the permissions required to approve emails.
     <td>Exchange Online</td>
     <td colspan="2">n/a</td>
     <td colspan="2">n/a</td>
+    <td colspan="2">n/a</td>
     <td>Yes<sup>3</sup></td>
     <td>n/a</td>
     <td>n/a</td>
@@ -243,6 +251,7 @@ The following table describes the permissions required to approve emails.
   </tr>
   <tr>
     <td>Exchange (on-premises)</td>
+    <td colspan="2">n/a</td>
     <td colspan="2">n/a</td>
     <td colspan="2">n/a</td>
     <td>Yes<sup>3</sup></td>
