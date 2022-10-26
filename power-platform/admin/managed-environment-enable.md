@@ -71,7 +71,7 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 
 ## Known limitations
 
-- The Managed Environments state cannot be activated on developer environments. 
+The Managed Environments state cannot be activated on developer environments. 
 
 
 ### See also
