@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 9/15/2022
+ms.date: 10/13/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -589,7 +589,7 @@ Publishes all customizations
 
 #### `--async` `-a`
 
-Imports solution asynchronously
+Publishes solution asynchronously
 
 This parameter requires no value. It is a switch.
 

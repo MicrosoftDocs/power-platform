@@ -55,7 +55,8 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/power-platform",
       "feedback_product_url": "https://powerusers.microsoft.com/",
-      "recommendations": true
+      "recommendations": true,
+      "uhfHeaderId": "MSDocsHeader-PowerPlatform"
     },
     "fileMetadata": {
       "searchScope": {

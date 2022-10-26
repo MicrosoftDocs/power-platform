@@ -58,7 +58,7 @@ Learn more about solutions:
 - [Solution concepts](/power-platform/alm/solution-concepts-alm)
 - [How managed solutions are merged](/power-platform/alm/how-managed-solutions-merged)
 - [Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
-- [Manage solutions in Power Apps and Power Automate](/training/modules/manage-solutions-power-automate)
+- [Manage solutions in Power Apps and Power Automate](/learn/modules/manage-solutions-power-automate)
 
 If you plan to make customizations to a large number of CoE Starter Kit components, use multiple unmanaged solutions to organize your extensions better and reduce the size of each solution. Lighter solutions reduce deployment time. Learn more: [Organize solutions](/power-platform/alm/organize-solutions)
 
