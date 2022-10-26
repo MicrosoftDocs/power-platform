@@ -113,7 +113,7 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 >
 
 > [!NOTE]
-> You can only share the bot with users who have Microsoft Power Platform licenses. Users who don't have a license can [sign up for a free trial](sign-up-individual.md) so they can edit the bot.
+> You can only share a bot with users who have a Power Virtual Agents per user license. Users who don't have a license can [sign up for a free trial](sign-up-individual.md).
 
 1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's overview page.
 

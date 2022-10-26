@@ -21,6 +21,10 @@ search.app:
 
 You can take advantage of our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new [Dataverse for Teams environments](../../admin/about-teams-environment.md) and requesting business justifications for newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is used effectively in your tenant and distributed to the most important business use cases. Similar workflows can be used to apply specific data loss prevention (DLP) policies to Dataverse for Teams environments as needed, and to invoke cleanup of unused assets to free up capacity for more compelling scenarios in the tenant.
 
+>[!IMPORTANT]
+>Automatically deleting inactive Dataverse for Teams environment is now part of the product - you can configure Teams environment deletion policies from the Power Platform Admin center. Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md). <br>
+>As there is parity between this feature, and the functionality in the CoE Starter Kit we will remove that portion of the features below from the CoE starter kit once the native support in the product is available broadly in all clouds.
+
 ## Process description
 
 **Problem statement:** Central IT wants to ensure that Dataverse for Teams environments are used effectively in their tenant. Central IT wants to understand the business justification for a Dataverse for Teams environment to be able to distribute capacity to the most effective business use cases.
