@@ -115,6 +115,10 @@ The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit**
 
       ![Go to App Detail page in Power BI Desktop.](media/coe84.PNG "Go to App Detail page in Power BI Desktop")
 
+1. Remove the app if one is already present
+
+      ![Remove existing Power App.](media/coe92.PNG "Remove existing Power App")
+
 1. Select **Power Apps for Power BI** from **Visualizations**.
 
      ![Power Apps in Power BI visual.](media/coe85.PNG "Power Apps in Power BI visual")
@@ -124,7 +128,7 @@ The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit**
 
      ![Select admin_appid from App and add it to the Power Apps Data area on the visual.](media/coe86.PNG "Select admin_appid from App and add it to the Power Apps Data area on the visual")
 
-1. With the visual selected, select the **admin_environmentid** environment (on the **Fields** pane).
+1. With the visual selected, select the **admin_environmentname** from **Environment** environment (on the **Fields** pane).
 
      ![Select admin_environmentid from App for Power Apps Data.](media/coe87.PNG "Select admin_environmentid from App for Power Apps Data")
 
@@ -137,14 +141,16 @@ The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit**
 
      ![Select Admin - Access this app to embed this app into Power BI.](media/coe89.PNG "Select Admin - Access this app to embed this app into Power BI")
 
-1. Resize and move the visual to the location you want. Delete the placeholder from the template, and move your embedded app to the same place.
+1. If you see an error like this ignore it. The app will not work when browsing directly to the page, only when an app or flow, and envt are sent in
+
+     ![Select Admin - Access this flow to embed this app into Power BI.](media/PBI-setuperror.PNG "Select Admin - Access this flow to embed this app into Power BI")
+
+1. Resize and move the visual to the location you want.
 1. Next, go to the **Cloud flow detail** tab.
+1. Remove the app is one already exists.
 1. Select the **Power Apps visual** from **Visualizations**.
    Select the fields from your dataset that you want to use in the app.
-1. With the visual selected, select the **admin_flowid** and **admin_flowenvironment** flows under **Fields**.
-
-     ![Select admin_flowid and admin_flowenvironment from Flow and add it to the Power Apps Data area on the visual.](media/coe91.PNG "Select admin_flowid and admin_flowenvironment from Flow and add it to the Power Apps Data area on the visual")
-
+1. With the visual selected, select the **admin_flowid** from **Flow** and **admin_environmentname** from **Environment** under **Fields**.
 1. In the visual, select the environment of your CoE (where you imported the apps to).
 1. Select **Choose app**.
 1. Select **Admin – Access this flow**.

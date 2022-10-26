@@ -23,9 +23,11 @@ This article will help you set up the [Microsoft Power Platform administration p
 The Microsoft Power Platform administration planning component contains:
 
 - A Microsoft Dataverse table.
+- A security role to grant access to the table.
 - The Admin Tasks model-driven app.
 - A flow that imports sample admin task data.
 - A Power BI dashboard.
+
 
 > [!NOTE]
 > The Microsoft Power Platform administration planning component doesn't have a dependency on other components of the CoE Starter Kit. They can be used independently.
@@ -85,13 +87,19 @@ The dashboard and insights this component provides are derived from admin task d
 
 Open the Admin Tasks app to start adding your own tasks or configuring tasks that you imported from sample data, as described earlier in this article.
 
+## Share apps with other admins
+
+This solution contains an app and pbi report designed to give admins access to planned activities.
+
+Share this app with other Power Platform admins and assign them the **PP Admin Planning - Admin SR** security role.
+
 ## Set up the Power BI dashboard
 
 The Power BI dashboard provides visualizations and insights into what your administration story looks like, based on your task metadata. You can work directly with the Power BI (.pbit) file and Power BI Desktop to configure and modify the Power BI dashboard to reflect your own branding, and include or exclude visuals that you want to see in the dashboard.<!--note from editor: Suggested. Microsoft style is to focus on what the reader needs to do, rather than what our software lets, enables, or gives the reader the flexibility to do.-->
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
-2. In Power BI Desktop, open the file **PowerPlatformAdminPlanner.pbit**, which can be found in the CoE Starter Kit you downloaded and extracted.
+2. In Power BI Desktop, open the file **Power Platform Administration Planning.pbit**, which can be found in the CoE Starter Kit you downloaded and extracted.
 
 3. Enter the URL of the environment where you imported the solution.
 
