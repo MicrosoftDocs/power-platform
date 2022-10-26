@@ -128,7 +128,7 @@ The following flows support the inventory setup and need to be turned on before 
 - Command Center App >  Get M365 Service Messages
 - Command Center App > Initially Populate Bookmarks
 - Command Center App > Set CoE Flows State
-- Command Center App > Get CoE Flows State
+- Command Center App > Get CoE Flows
 - DLP Editor > Parse impacted resources into CSV
 
 
@@ -151,7 +151,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 > Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 
 >[!NOTE]
->Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow - for example, looking at how is using the Send Email or Get Item actions.
+>Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow - for example, looking at who is using the Send Email or Get Item actions.
 >This flow temporarily makes the account running the the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow that is using HTTP actions to retrieve further details of those actions (for example, the HTTP host), and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
 
 - Admin | Sync Template v3 (Ai Models)
