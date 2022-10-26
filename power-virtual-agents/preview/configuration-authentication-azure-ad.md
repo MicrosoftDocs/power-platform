@@ -21,7 +21,7 @@ Adding authentication allows users to sign in, giving your bot access to a restr
 
 This article covers how to configure Azure Active Directory (Azure AD) as your service provider. To learn about other service providers and user authentication in general, see [Configure user authentication](configuration-end-user-authentication.md).
 
-You'll need a tenant administrator to [configure API permissions](#configure-api-permissions).
+If you have tenant administration rights, you can [configure API permissions](#configure-api-permissions). Otherwise, you'll need to ask a tenant administrator to do so for you.
 
 ## Create an app registration
 
@@ -88,7 +88,7 @@ You'll need a tenant administrator to [configure API permissions](#configure-api
 
 1. In the left nav of the app registration blade in Azure portal, go to **API permissions**.
 
-1. Select **Grant admin consent for _your tenant name_** and then select **Yes**. You'll need a tenant administrator to do this.
+1. Select **Grant admin consent for <your tenant name>** and then select **Yes**. If this button is greyed out, you'll need to ask a tenant administrator to do this for you
 
     :::image type="content" source="media/configure-web-sso/api-permission.png" alt-text="Screenshot API permission." border="false":::
 
