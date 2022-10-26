@@ -1,6 +1,6 @@
 ### Examples
 
-#### Simple creations of an environment
+#### Simple creation of an environment
 
 In this example, we'll create a sandbox environment with the default settings:
 
