@@ -89,7 +89,7 @@ Sometimes tenants want to have individual business organizations run their own s
 > This is not a security feature and does not implement data privacy or row level security. The feature is only intended to make monitoring and managing environments easier for organizational units
 
 1. After import of the Core components and before you turn on flows
-1. Set the value of the **is Full Tenant Inventory** environment variable to **No** (Learn more: [update environment variables](#update-environment-variables)).
+1. Set the value of the **is All Environments Inventory** environment variable to **No** (Learn more: [update environment variables](#update-environment-variables)).
 1. Return to inventory setup and turn on all inventory flows
 1. Wait for first inventory run of **Admin | Sync Template v3** to complete.
 1. Note that all the environments in the tenant are  added as excused from inventory
