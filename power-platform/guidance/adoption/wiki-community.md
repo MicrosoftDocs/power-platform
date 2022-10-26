@@ -75,7 +75,7 @@ The steps in this section take you through the process of preparing, and running
 The scripts to deploy the Power Platform communication site template has a dependency on two PowerShell modules:
 
 1. [Download and install](/power-platform/admin/powerapps-powershell#installation) Microsoft.PowerApps.Administration.PowerShell
-1. [Download and install](https://github.com/pnp/powershell) PnP PowerShell
+1. [Download and install](https://pnp.github.io/powershell/articles/installation.html) PnP PowerShell
 
 The PowerShell commands in the Microsoft.PowerApps.Administration.PowerShell module requires Windows PowerShell version 5.x.
 
