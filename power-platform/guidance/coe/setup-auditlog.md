@@ -87,7 +87,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-1. Go to [make.powerapps.com](https://make.powerapps.com) > **Data** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
+1. Go to [make.powerapps.com](https://make.powerapps.com) > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
 1. Select **Edit**.
 
   ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
