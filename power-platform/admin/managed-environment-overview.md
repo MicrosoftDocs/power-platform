@@ -30,7 +30,7 @@ Managed Environments is a suite of capabilities that allows admins to manage Pow
 These are the primary elements of Managed Environments:
 
 - [Limit sharing](managed-environment-sharing-limits.md)
-- [Weekly digests](managed-environment-usage-insights.md)
+- [Weekly usage insights](managed-environment-usage-insights.md)
 - [Data policies](managed-environment-data-policies.md)
 
 > [!NOTE]
