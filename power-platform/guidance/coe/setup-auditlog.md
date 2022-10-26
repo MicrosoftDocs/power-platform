@@ -117,9 +117,10 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, https://manage.office365.us for a GCC high tenant and https://manage.protection.apps.mil for a DoD tenant.
 
+1. Select **Update Connector**.
+
 1. Copy the **Redirect URL** into your text document in Notepad.
 
-1. Select **Update Connector**.
 
 > [!NOTE]
 > If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy.
