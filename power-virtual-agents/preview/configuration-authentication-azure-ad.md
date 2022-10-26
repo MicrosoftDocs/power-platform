@@ -21,6 +21,8 @@ Adding authentication allows users to sign in, giving your bot access to a restr
 
 This article covers how to configure Azure Active Directory (Azure AD) as your service provider. To learn about other service providers and user authentication in general, see [Configure user authentication](configuration-end-user-authentication.md).
 
+If you have tenant administration rights, you can [configure API permissions](#configure-api-permissions). Otherwise, you'll need to ask a tenant administrator to do so for you.
+
 ## Create an app registration
 
 1. Sign in to the [Azure portal](https://portal.azure.com), using an admin account on the same tenant as your bot.
@@ -49,7 +51,7 @@ This article covers how to configure Azure Active Directory (Azure AD) as your s
 
 ## Add the redirect URL
 
-1. In the Azure portal, go to **Authentication** and then select **Add a platform**.
+1. In the left nav of the app registration blade in Azure portal, go to **Authentication** and then select **Add a platform**.
 
     :::image type="content" source="media/configure-web-sso/add-platform.png" alt-text="Screenshot showing authentication." border="false":::
 
@@ -67,7 +69,7 @@ This article covers how to configure Azure Active Directory (Azure AD) as your s
 
 ## Generate a client secret
 
-1. In the Azure portal, go to **Certificates & Secrets**.
+1. In the left nav of the app registration blade in Azure portal, go to **Certificates & Secrets**.
 
 1. Under the **Client secrets** section, select **New client secret**.
 
@@ -82,14 +84,16 @@ This article covers how to configure Azure Active Directory (Azure AD) as your s
 > [!IMPORTANT]
 > If you navigate away from the page, the secret's Value is obfuscated, and you'll need to generate a new client secret.
 
-## Configure API Permissions
+## Configure API permissions
 
-1. Go to **API Permissions**. Select **Grant admin consent for _your tenant name_** and then select **Yes**.
+1. In the left nav of the app registration blade in Azure portal, go to **API permissions**.
 
-    > [!IMPORTANT]
-    > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must grant tenant-wide consent to your app registrations.
+1. Select **Grant admin consent for <your tenant name>** and then select **Yes**. If this button is greyed out, you'll need to ask a tenant administrator to do this for you
 
     :::image type="content" source="media/configure-web-sso/api-permission.png" alt-text="Screenshot API permission." border="false":::
+
+    > [!NOTE]
+    > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator can grant tenant-wide consent to your app registrations.
 
 1. Select **Add a permission**, then **Microsoft Graph**.
 
@@ -109,7 +113,7 @@ This article covers how to configure Azure Active Directory (Azure AD) as your s
 
 [Scopes](/azure/active-directory/develop/developer-glossary#scopes) allow you to determine user and admin roles and access rights. You'll create a custom scope for your canvas app registration that you'll create in a later step.
 
-1. In the Azure portal, go to **Expose an API** and select **Add a scope**.
+1. In the left nav of the app registration blade in Azure portal, go to **Expose an API** and select **Add a scope**.
 
     :::image type="content" source="media/configure-web-sso/expose-api.png" alt-text="Screenshot showing API scopes" border="false":::
 

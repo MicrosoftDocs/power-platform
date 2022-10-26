@@ -53,16 +53,10 @@ To enable SSO, you'll need two separate app registrations:
 
 ### Create an authentication app registration
 
-During this process, you'll create an app registration which you'll use for authentication:
+Before configuring SSO for your website, you'll first need to create an app registration.
 
-1. Create an app registration.
-1. Add the redirect URL.
-1. Generate a client secret.
-1. Configure API Permissions.
-1. Define a custom scope for your bot.
-1. Configure manual authentication in Power Virtual Agents.
-
-Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md) then return to this article.
+1. Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md).
+1. Return to this article.
 
 ## Create a canvas app registration
 
