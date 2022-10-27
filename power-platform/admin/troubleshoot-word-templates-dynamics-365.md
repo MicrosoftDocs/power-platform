@@ -3,10 +3,9 @@ title: "Troubleshooting Word templates | MicrosoftDocs"
 description: How to upload an image for entities that don't include the EntityImage field by default
 author: udaykirang
 manager: shujoshi
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/11/2020
+ms.date: 10/27/2022
 ms.subservice: admin
 ms.author: udag
 search.audienceType: 
@@ -17,7 +16,6 @@ search.app:
   - Powerplatform
   - Flow
 ---
-
 # Troubleshooting Word templates
 
 This article helps you troubleshoot and resolve issues related to Word templates.
@@ -102,6 +100,23 @@ Now, when you download and open a document based on this template, it will conta
   > [!NOTE]
   > Similarly, if you add an image to an entity form, follow this process to upload the image to the Word template.
 
+## Some characters don't export correctly in documents
+
+Certain characters and sets of characters are not currently supported in document export. The documents export successfully but the fields and text that contains the characters between them will be removed. This is currently an intended limitation to support compatibility across products between Dynamics, Excel, Word, and PDF files.
+
+This table describes the characters not supported for document export.
+
+|Character(s)  |Description  |
+|---------|---------|
+|&lt;     | Less than symbol also used to indicate the start of an HTML element        |
+|&gt;     | Greater than symbol also used to indicate the end of an HTML element        |
+|&amp;nbsp;     | Non-breaking space HTML string        |
+
+Here's an example of what happens when you export a document that contains unsupported characters.
+
+1. There's this text in the Word document: *Enter the user &lt;account&gt; number*
+1. The document is exported.
+1. After the export: The *&lt;account&gt;* text in the example above is removed leaving the exported text as *Enter the user number* instead of *Enter the user &lt;account&gt; number*.
 
 ### See also
 
