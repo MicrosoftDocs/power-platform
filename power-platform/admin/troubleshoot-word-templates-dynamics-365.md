@@ -115,7 +115,7 @@ This table describes the characters not supported for document export.
 Here's an example of what happens when you export a document that contains unsupported characters.
 
 1. There's this text in the Word document: *Enter the user &lt;account&gt; number*
-1. The document is exported.
+1. The document is exported from an app in Power Apps or a Dynamics 365 app.
 1. After the export: The *&lt;account&gt;* text in the example above is removed leaving the exported text as *Enter the user number* instead of *Enter the user &lt;account&gt; number*.
 
 ### See also
