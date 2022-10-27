@@ -285,8 +285,6 @@ teamtype
 :::column span="":::
 tenantId
 :::column-end:::
-:::column span="":::
-:::column-end:::
 :::row-end:::
 :::row:::
 :::column span="":::
