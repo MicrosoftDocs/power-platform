@@ -298,7 +298,8 @@ uselocalpackagehostresources
 :::column span="":::
 userteamrole
 :::column-end:::
-:::column span="":::
+:::row-end:::
+
 
 ## Examples
 
