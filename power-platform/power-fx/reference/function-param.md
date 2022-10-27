@@ -201,21 +201,21 @@ hint
 :::column-end:::
 :::column span="":::
 hostclienttype
-:::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 hostmode
 :::column-end:::
 :::column span="":::
 iframecontainerid
 :::column-end:::
-:::row-end:::
-:::row:::
-:::column span="":::
 isfullscreen
 :::column-end:::
 :::column span="":::
 ispreviewmode
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 loader
 :::column-end:::
@@ -228,20 +228,22 @@ locale
 :::column span="":::
 location
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 packagekind
 :::column-end:::
 :::column span="":::
 packageproperties
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 playerresourcespath
 :::column-end:::
 :::column span="":::
 playersessionid
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 powerAppslanguage
 :::column-end:::
@@ -254,11 +256,11 @@ sdkversion
 :::column span="":::
 site
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 skipappmetadata
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 skipiframecreation
 :::column-end:::
@@ -268,11 +270,11 @@ skiplaunchappcache
 :::column span="":::
 source
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 standaloneconsent
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 teamid
 :::column-end:::
@@ -283,9 +285,11 @@ teamtype
 tenantId
 :::column-end:::
 :::column span="":::
-theme
 :::column-end:::
 :::row-end:::
+:::row:::
+:::column span="":::
+theme
 :::row:::
 :::column span="":::
 uselocalpackagehostresources
