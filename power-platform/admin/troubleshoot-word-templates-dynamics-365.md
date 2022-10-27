@@ -102,7 +102,7 @@ Now, when you download and open a document based on this template, it will conta
 
 ## Some characters don't export correctly in documents
 
-Certain characters and sets of characters are not currently supported in document export. When these characters are in a document, the document exports successfully but the fields and text that contains the characters between the unsupported character(s) are removed. This is behavior is by design to support compatibility across products between Dynamics, Excel, Word, and Adobe PDF.
+Certain characters and sets of characters are not supported in document export. When these characters are in a document, the document exports successfully but the fields and text that contains the characters between the unsupported character(s) are removed. This behavior is by design to support compatibility across products between Dynamics, Excel, Word, and Adobe PDF.
 
 This table describes the characters not supported for document export.
 
