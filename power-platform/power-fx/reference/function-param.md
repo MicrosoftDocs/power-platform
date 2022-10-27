@@ -160,11 +160,11 @@ channeltype
 :::column span="":::
 cordovapath
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 correlationid
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 debug
 :::column-end:::
@@ -174,14 +174,14 @@ delegatelaunchurl
 :::column span="":::
 delegatelaunchurl
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 disablepreviewredirect
 :::column-end:::
 :::column span="":::
 embedderorigin
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 enableonbehalfof
 :::column-end:::
