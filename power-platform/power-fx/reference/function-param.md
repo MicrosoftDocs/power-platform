@@ -131,7 +131,7 @@ The **Param** function retrieves a parameter passed to the app when it was launc
 
 ### Reserved parameters
 
-The following keywords are reserved for internal use, and shouldn't be used as a custom parameter in the **Param()** function:
+The following keywords are reserved (regardless of case) for internal use, and shouldn't be used as a custom parameter in the **Param()** function:
 
 :::row:::
 :::column span="":::
