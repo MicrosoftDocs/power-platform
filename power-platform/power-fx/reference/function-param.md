@@ -158,10 +158,16 @@ authmode
 channeltype
 :::column-end:::
 :::column span="":::
+cordovapath
+:::column-end:::
+:::column span="":::
 correlationid
 :::column-end:::
 :::row-end:::
 :::row:::
+:::column span="":::
+debug
+:::column-end:::
 :::column span="":::
 delegatelaunchurl
 :::column-end:::
@@ -211,13 +217,34 @@ isfullscreen
 ispreviewmode
 :::column-end:::
 :::column span="":::
+loader
+:::column-end:::
+:::column span="":::
+loaderType
+:::column-end:::
+:::column span="":::
 locale
+:::column-end:::
+:::column span="":::
+location
+:::column-end:::
+:::column span="":::
+packagekind
 :::column-end:::
 :::column span="":::
 packageproperties
 :::column-end:::
 :::row-end:::
 :::row:::
+:::column span="":::
+playerresourcespath
+:::column-end:::
+:::column span="":::
+playersessionid
+:::column-end:::
+:::column span="":::
+powerAppslanguage
+:::column-end:::
 :::column span="":::
 screencolor
 :::column-end:::
@@ -259,6 +286,9 @@ tenantId
 theme
 :::column-end:::
 :::row-end:::
+:::row:::
+:::column span="":::
+uselocalpackagehostresources
 :::row:::
 :::column span="":::
 userteamrole
