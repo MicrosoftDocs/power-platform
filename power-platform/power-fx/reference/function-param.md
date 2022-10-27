@@ -188,14 +188,14 @@ enableonbehalfof
 :::column span="":::
 groupid
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 hideappsplash
 :::column-end:::
 :::column span="":::
 hidenavbar
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 hint
 :::column-end:::
