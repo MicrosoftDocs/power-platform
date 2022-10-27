@@ -291,14 +291,14 @@ tenantId
 :::row:::
 :::column span="":::
 theme
-:::row:::
+:::column-end:::
 :::column span="":::
 uselocalpackagehostresources
-:::row:::
+:::column-end:::
 :::column span="":::
 userteamrole
 :::column-end:::
-:::row-end:::
+:::column span="":::
 
 ## Examples
 
