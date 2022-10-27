@@ -246,7 +246,7 @@ playersessionid
 :::row-end:::
 :::row:::
 :::column span="":::
-powerAppslanguage
+powerappslanguage
 :::column-end:::
 :::column span="":::
 screencolor
