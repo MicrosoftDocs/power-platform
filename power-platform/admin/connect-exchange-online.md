@@ -175,6 +175,19 @@ A Dynamics 365 user can approve their own user mailbox if all of these condition
 
 - The mailbox is not a queue mailbox.
 
+### Delegate mailbox approval
+
+A user with the Global or Exchange admin role can delegate the mailbox approval process to another user by assigning the **Delegated Mailbox Approver** security role in Dynamics 365. 
+
+> [!IMPORTANT] 
+> You cannot assign the **Delegated Mailbox Approver** role unless you have the Global or Exchange admin role. This role is not currently supported for assigning to a group. The role can be assigned to one or more users per environment. Because this is a Dynamics 365 security role, the role is assigned per environment. 
+
+A user with the **Delegated Mailbox Approver** role can approve mailboxes in the environment without being a Global or Exchange admin. As mentioned below in the permission model section, the user also needs to have the **System Administrator** security role.
+
+> [!NOTE]
+> For more information about assigning security roles in Dynamics 365 or Power Apps, see [Assign a security role to a user](power-platform/admin/assign-security-roles)
+>
+> For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles) 
 
 ### Require admin approval?
 
