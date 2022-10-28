@@ -220,11 +220,11 @@ We won't make other changes to forms or controls.  Makers are encouraged to make
 
 ## Model-driven app controls deprecation (2023 Release Wave 1)
 
-With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in April 2023), some older controls for model-driven apps will be deprecated. These controls include Auto-Complete Control, Input Mask Control, Multimedia player control, Number Input Control, Option set control, Star rating control.
+With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in April 2023), some older controls for model-driven apps will be deprecated. These controls include Auto-complete Control, Input mask Control, Multimedia player control, Number input Control, Option set control, Star rating control.
 
 #### Why is this needed? 
 
--   These controls are outdated and don't conform to our current standards for useability and accessibility. 
+-   These controls are outdated and don't conform to our current standards for usability and accessibility. 
 -   We will be introducing new controls that will replace these controls.
 
 #### Impact
