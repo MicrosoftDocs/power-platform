@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 10/03/2022
+ms.date: 10/28/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
@@ -20,6 +20,23 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Model-driven app controls deprecation (2023 Release Wave 1)
+
+With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in April 2023), some older controls for model-driven apps will be deprecated. These controls include auto-complete, input mask, multimedia player, number input, Option set, and star rating.
+
+#### Why is this needed? 
+
+-   These controls are outdated and don't conform to our current standards for usability and accessibility. 
+-   We will be introducing new controls that will replace these controls.
+
+#### Impact
+
+- Starting April 2023, these controls can no longer be added to forms. 
+- For all other controls, they'll continue to work within existing forms until April 2024.
+
+#### Action required by you
+- Evaluate existing forms that include a deprecated control and replace them with a newer control.
 
 ## Microsoft Dataverse (legacy) connector (CDS 2.0 connector) for Power Automate flows will be deprecated and replaced with another connector
 
@@ -196,7 +213,7 @@ The out of box fields currently on the footer is removed and included on the for
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences. We do this to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
 
-## Model-driven app controls deprecation
+## Model-driven app controls deprecation (2021 Release Wave 1)
 
 With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model-driven apps will be deprecated. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radial Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label (two radio buttons format option).
 
@@ -217,23 +234,6 @@ We won't make other changes to forms or controls.  Makers are encouraged to make
 - Use the Toggle control as a replacement for Flip Label and Flip Switch.
 - Use the Calendar Control (V2) as a replacement for Calendar Control (V1).
 - Evaluate other deprecated controls to determine if they're still useful within existing forms.
-
-## Model-driven app controls deprecation (2023 Release Wave 1)
-
-With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in April 2023), some older controls for model-driven apps will be deprecated. These controls include Auto-complete Control, Input mask Control, Multimedia player control, Number input Control, Option set control, Star rating control.
-
-#### Why is this needed? 
-
--   These controls are outdated and don't conform to our current standards for usability and accessibility. 
--   We will be introducing new controls that will replace these controls.
-
-#### Impact
-
-- Starting April 2023, these controls can no longer be added to forms. 
-- For all other controls, they'll continue to work within existing forms until April 2024.
-
-#### Action required by you
-- Evaluate deprecated controls to determine if they're still useful within existing forms.
 
 ## Microsoft Dynamics 365 Email Router is deprecated
 The Email Router was deprecated on July 17, 2018 and it will no longer function starting April 12, 2021. Although the Email Router might still have worked with Dynamics 365 on-premises, this configuration is no longer supported. All email routing functionality should be migrated to use server-side synchronization. For information on migrating email routing functionality to use the server-side synchronization feature, see: [Migrate settings from the Email Router to server-side synchronization](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn832114(v=crm.8)).
