@@ -118,6 +118,9 @@ The security group is associated with the environment.
    > [!div class="mx-imgBorder"] 
    > ![Security group added.](media/security-group-added.png "Security group added")
 
+> [!NOTE]
+> When a security group is associated with an environment, users who are not members of the security group will not be able to run Canvas apps, regardless of whether the app has been shared with the user. Instead, users will see error message "you are not a member of a security group". 
+
 ## Remove a security group's association with an environment
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
@@ -135,6 +138,8 @@ The security group is associated with the environment.
 4. Confirm removal, select **Remove**, and then select **Save**.
 
 The security group associated with the environment will be removed and the environment's access will no longer be restricted to only users that are members of that group.
+
+## Canvas app access in 
 
 ### See also
 [Create users](create-users.md)
