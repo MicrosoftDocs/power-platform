@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 10/03/2022
+ms.date: 10/28/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
@@ -20,6 +20,23 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Model-driven app controls deprecation (2023 Release Wave 1)
+
+With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in April 2023), some older controls for model-driven apps will be deprecated. These controls include auto-complete, input mask, multimedia player, number input, Option set, and star rating.
+
+#### Why is this needed? 
+
+-   These controls are outdated and don't conform to our current standards for usability and accessibility. 
+-   We will be introducing new controls that will replace these controls.
+
+#### Impact
+
+- Starting April 2023, these controls can no longer be added to forms. 
+- For all other controls, they'll continue to work within existing forms until April 2024.
+
+#### Action required by you
+- Evaluate existing forms that include a deprecated control and replace them with a newer control.
 
 ## Microsoft Dataverse (legacy) connector (CDS 2.0 connector) for Power Automate flows will be deprecated and replaced with another connector
 
