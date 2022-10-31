@@ -50,13 +50,13 @@ This code component provides a wrapper around the [Fluent UI PeoplePicker](https
   - **PersonaImgUrl** - Url or Base64 Content of Persona Image(Profile Picture).
   - **PersonaRole** - Secondary Text, Preferably JobTitle of the Persona
   - **PersonaPresence** - Optional - To defined the Presence of the persona. Value should be from one of the followings :
-    - away
-    - blocked
-    - busy
-    - dnd
-    - none
-    - offline
-    - online
+    - `away`
+    - `blocked`
+    - `busy`
+    - `dnd`
+    - `none`
+    - `offline`
+    - `online`
   - **PersonaOOF** -  True or False, Based on whether the persona if Out of office or not.
 
 - **Suggestions_Items** - List of Suggested members to pick from. This is a required dataset property
@@ -81,7 +81,7 @@ This code component provides a wrapper around the [Fluent UI PeoplePicker](https
   - **Error** - To highlighting the people picker in red to represent that it has certain error which required validation.
   - **ShowSecondaryText** - Specify Yes or no, depending upon whether the Secondary text(e.g. JobTitle) to be shown or not.
 
-### Style Properties
+### Additional Properties
 
 - **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps.
 
@@ -89,86 +89,75 @@ This code component provides a wrapper around the [Fluent UI PeoplePicker](https
 
 ## Examples 
 
-### Usage
+Following are the examples on how to use the `PeoplePicker` component. Note that `PeoplePicker` completely supports other sources from where the input collection can be retrieved.
 
-Following are the exmples on how to use the PeoplePicker component.
+### Office 365 Users Connector
 
-Note that PeoplePicker completely support other sources from where the input collection can be retrieved.
+1. Add the Office 365 Users connector as a data source.
 
-## With Office365Users Connector
+1. Assign the below Power Fx formula to the **On Search** property of the control to create a collection called `UserCollection`.
 
-Step 1) Setup OnSearch Property. Add the below PowerFx command to create a UserCollection.
-
-```Power Fx
-ClearCollect(
-    UserCollection,
-    AddColumns(
-        Office365Users.SearchUser(
-            {
-                searchTerm: Self.SearchText,
-                top: 500
-            }
-        ),
-        "ImageURL",
-        Substitute(
-            JSON(
-                Office365Users.UserPhotoV2(Id),
-                JSONFormat.IncludeBinaryData
+    ```powerapps-dot
+    ClearCollect(
+        UserCollection,
+        AddColumns(
+            Office365Users.SearchUser(
+                {
+                    searchTerm: Self.SearchText,
+                    top: 500
+                }
             ),
-            """",
-            ""
+            "SuggestionImgUrl",
+            Substitute(
+                JSON(
+                    Office365Users.UserPhotoV2(Id),
+                    JSONFormat.IncludeBinaryData
+                ),
+                """",
+                ""
+            ),
+            "SuggestionKey", Mail, 
+            "SuggestionName", DisplayName,
+            "SuggestionRole", JobTitle
         )
     )
-)
-```
+    ```
 
-Step 2) Setup the Suggestions_Items Property by specifying this UserCollection.
+1. Set the `Suggestions_Items` property to `UserCollection`.
 
-```Power Fx
-UserCollection
-```
+    > [!NOTE]
+    > The above formula includes a consecutive request to get UserPhoto, which increases loading time. If you do not need photos and want to decrease search time, use the following formula in the `Suggestions_Items` property of the control instead of `UserCollection`: <br> 
+    ```
+    AddColumns(
+        Office365Users.SearchUser({ searchTerm: Self.SearchText, top: 500 }),
+        "SuggestionKey", Mail, 
+        "SuggestionName", DisplayName,
+        "SuggestionRole", JobTitle
+    )
+    ```
 
-Note : In Step 1, we are making a consecutive request to get UserPhoto. This leads to increase in time of fetching the results. If you want to decrease the fetching time and can compromise on not showing the profile images, then use the below code instead of UserCollection & Skip Step 1) altogether.
+At this point the control is functioning and selected members can be obtained from the `SelectedPeople` property.
 
-```Power Fx
-Office365Users.SearchUser({searchTerm:Self.SearchText,top:500})
-```
-
-Step 3) Map the Columns according your need. Below is an example of Column-Property Mapping
-
-|Property Name|DataSet Column|
-|--|--|
-|SuggestionKey|"Mail"|
-|SuggestionName|"DisplayName"|
-|SuggestionRole|"JobTitle"|
-|SuggestionImgUrl|"ImageURL"|
-
-At this point, the people picker should be working and the selected members can be obtained from SelectedPeople Property.
-
-```Power Fx
+```powerapps-dot
 PeoplePicker1.SelectedPeople
 ```
 
-## With Dataverse tables - AADUsers or Users
+### With Dataverse tables - AAD Users or Users
 
-Step 1) Setup the Suggestions_Items Property by specifying the below code snippet.
+Step 1) Setup the `Suggestions_Items` Property by specifying the below code snippet.
 
-Add Users or specific users(using below code) from table to the items collection(under Suggestions_Items peroperty) of peoplepicker.
+Add Users or specific users(using below code) from table to the items collection(under `Suggestions_Items` peroperty) of `PeoplePicker`.
 
-### For AAD Users table
+#### `AAD Users` table
 
-```Power Fx
-
+```powerapps-dot
 Search('AAD Users', Self.SearchText,"displayname" ,"mail")
-
 ```
 
-### For Users table
+#### `Users` table
 
-```Power Fx
-
+```powerapps-dot
 Search('Users', Self.SearchText,"fullname","internalemailaddress")
-
 ```
 
 Step 2) Map the Columns according your need. Below is an example of Column-Property Mapping
@@ -181,7 +170,7 @@ Step 2) Map the Columns according your need. Below is an example of Column-Prope
 
 At this point, the people picker should be working and the selected members can be obtained from SelectedPeople Property.
 
-```Power Fx
+```powerapps-dot
 PeoplePicker1.SelectedPeople
 ```
 
