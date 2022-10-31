@@ -50,17 +50,38 @@ This code component provides a wrapper around the [Fluent UI Persona](https://de
 
 | Property | Description |
 | -------- | ----------- |
+| `ImageUrl` |  Url to the image to use, should be a square aspect ratio and big enough to fit in the image area. |
+| `ImageInitials` |  The user's initials to display in the image area when there is no image. |
+| `Text` |  Primary text to display, usually the name of the person. |
+| `SecondaryText` |  Secondary text to display, usually the role of the user. |
+| `TertiaryText` |  Tertiary text to display, usually the status of the user. The tertiary text will only be shown when using size72 or size100. |
+| `OptionalText` |  Optional text to display, usually a custom message set. The optional text will only be shown when using size100.|
+| `ImageAlt` |  Alt text for the image to use. | 
+| `HidePersonaDetails` |  Whether to not render persona details, and just render the persona image/initials. |
+| `PersonaSize` |  Size of the persona to appear on screen. |
+| `Presence` |  Presence of the person to display - will not display presence if undefined. Value should be from one of the following: <br>`away`<br>`blocked`<br>`busy`<br>`dnd`<br>`none`<br>`offline`<br>`online` |
 
-## Additional properties
+## Additional Properties
 
 | Property | Description |
 | -------- | ----------- |
 | `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `AccessibilityLabel` | Screen reader aria-label |
 
-## Behavior
+## Example
 
+Following are some example values that could be used in the Persona component:
 
+    | Property | Value |
+    | -------- | ----- |
+    | `Text` | "Megan Browen" |
+    | `SecondaryText` | "Software Engineer" |
+    | `TertiaryText` | "In a meeting" |
+    | `OptionalText` | "Available at 4:00pm" |
+    | `HidePersonaDetails` | false |
+    | `ImageUrl` | User().Image |
+    | `PersonaSize` | PowerCAT.Persona.PersonaSize.Size100 |
+    | `Presence` | PowerCAT.Persona.Presence.Online |
 
 ## Limitations
 
