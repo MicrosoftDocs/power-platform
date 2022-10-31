@@ -59,7 +59,7 @@ This code component provides a wrapper around the [Fluent UI Persona](https://de
 | `ImageAlt` |  Alt text for the image to use. | 
 | `HidePersonaDetails` |  Whether to not render persona details, and just render the persona image/initials. |
 | `PersonaSize` |  Size of the persona to appear on screen. |
-| `Presence` |  Presence of the person to display - will not display presence if undefined. Value should be from one of the following: <br>`away`<br>`blocked`<br>`busy`<br>`dnd`<br>`none`<br>`offline`<br>`online` |
+| `Presence` |  Presence of the person to display - will not display presence if undefined. Value should be from one of the following: `away`, `blocked`, `busy`, `dnd`, `none`, `offline`, `online` |
 
 ### Style Properties
 
@@ -72,16 +72,16 @@ This code component provides a wrapper around the [Fluent UI Persona](https://de
 
 Following are some example values that could be used in the Persona component:
 
-    | Property | Value |
-    | -------- | ----- |
-    | `Text` | "Megan Browen" |
-    | `SecondaryText` | "Software Engineer" |
-    | `TertiaryText` | "In a meeting" |
-    | `OptionalText` | "Available at 4:00pm" |
-    | `HidePersonaDetails` | false |
-    | `ImageUrl` | User().Image |
-    | `PersonaSize` | PowerCAT.Persona.PersonaSize.Size100 |
-    | `Presence` | PowerCAT.Persona.Presence.Online |
+| Property | Value |
+| -------- | ----- |
+| `Text` | "Megan Browen" |
+| `SecondaryText` | "Software Engineer" |
+| `TertiaryText` | "In a meeting" |
+| `OptionalText` | "Available at 4:00pm" |
+| `HidePersonaDetails` | false |
+| `ImageUrl` | User().Image |
+| `PersonaSize` | PowerCAT.Persona.PersonaSize.Size100 |
+| `Presence` | PowerCAT.Persona.Presence.Online |
 
 ## Limitations
 
