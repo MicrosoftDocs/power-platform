@@ -339,7 +339,7 @@ Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector.
 - All new flows must be created with the Microsoft Dataverse connector.
 - Flows that use the Dynamics 365 connector should be re-created to use the Dataverse (Legacy) connector or the Microsoft Dataverse connector. 
 
-  In some cases users will be able to use a migration tool to migrate from the Dynamics 365 connector to the Microsoft Dataverse connector. You will find the tool in Powerapps.Microsoft.com in the detail page of each flow, in the FLow CHecker you will see the message "Migrate this flow to the latest Microsoft Dataverse Connector". You'll be able to open the migration assistant from there. Once completed your flow will be using the Microsoft Dataverse connector.
+In some cases users will be able to use a migration tool to migrate from the Dynamics 365 connector to the Microsoft Dataverse connector. You'll find the tool in Power Apps ([make.powerapps.com](https://makae.powerapps.com)) in the detail page of each flow. In the Flow Checker, you'll see the message "Migrate this flow to the latest Microsoft Dataverse Connector". You'll be able to open the migration assistant from there. Once completed, your flow will be using the Microsoft Dataverse connector.
   
   This should migrate your flow unless:
   - Flow is in the old format. To check this, the customer can confirm whether the Microsoft Dataverse connector is searchable when editing the flow. Most flows created before June 2020 are in the older format.
