@@ -177,7 +177,7 @@ A Dynamics 365 user can approve their own user mailbox if all of these condition
 
 ### Delegate mailbox approval
 
-A user with the Global or Exchange admin role can delegate the mailbox approval process to another user by assigning the **Delegated Mailbox Approver** security role in Dynamics 365. 
+A user with the Global or Exchange admin role can delegate the mailbox approval process to another user by assigning the **Delegated Mailbox Approver** security role in Dynamics 365. A user with the **Delegated Mailbox Approver** role can approve mailboxes in the environment without being a Global or Exchange admin. As mentioned below in the permission model section, the user also needs to have the **System Administrator** security role.
 
 > [!IMPORTANT] 
 > You cannot assign the **Delegated Mailbox Approver** role unless you have the Global or Exchange admin role. If you try to assign this role but are not a Global or Exchange admin, you will receive an error: "You must be an Office 365 Global Administrator or an Exchange Administrator to assign the Delegated Mailbox Approver role." You may also see the error code 0x80090904.
@@ -185,8 +185,6 @@ A user with the Global or Exchange admin role can delegate the mailbox approval 
 > This role is not currently supported for assigning to a group. If you try to assign this role to a group, you will receive an error: "The Delegated Mailbox Approver role cannot be assigned to a team." You may also see error code 0x80090905.
 > 
 >   Because this is a Dynamics 365 security role, the role is assigned per environment. The role can be assigned to one or more users per environment.
-
-A user with the **Delegated Mailbox Approver** role can approve mailboxes in the environment without being a Global or Exchange admin. As mentioned below in the permission model section, the user also needs to have the **System Administrator** security role.
 
 > [!NOTE]
 > For more information about assigning security roles in Dynamics 365 or Power Apps, see [Assign a security role to a user](power-platform/admin/assign-security-roles)
