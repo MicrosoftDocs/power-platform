@@ -30,7 +30,7 @@ A control used to create a loading experience.
 > [!NOTE]
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/peoplepicker).
 
-:::image type="content" source="media/PeoplePicker.png" alt-text="PeoplePicker control.":::
+:::image type="content" source="media/peoplepicker.png" alt-text="PeoplePicker control.":::
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -38,7 +38,7 @@ A control used to create a loading experience.
 
 ## Description
 
-
+The people picker (`PeoplePicker`) is used to select one or more entities, such as people or groups, from a list. It makes composing an email to someone, or adding them to a group, easy if you don’t know their full name or email address.
 
 This code component provides a wrapper around the [Fluent UI PeoplePicker](https://developer.microsoft.com/en-us/fluentui#/controls/web/peoplepicker) control for use in canvas & custom pages. See component documentation for best practices.
 
