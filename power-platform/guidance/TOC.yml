@@ -316,7 +316,7 @@
                   href: creator-kit/breadcrumb.md
                 - name: ContextMenu
                   href: creator-kit/contextmenu.md
-                - name: CommandBar (preview)
+                - name: CommandBar
                   href: creator-kit/commandbar.md
                 - name: Header (experimental)
                   href: creator-kit/header.md
