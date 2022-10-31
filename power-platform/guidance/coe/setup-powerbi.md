@@ -141,9 +141,11 @@ The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit**
 
      ![Select Admin - Access this app to embed this app into Power BI.](media/coe89.PNG "Select Admin - Access this app to embed this app into Power BI")
 
-1. If you see an error like this ignore it. The app will not work when browsing directly to the page, only when an app or flow, and envt are sent in
+1. If you see an error like one of these, ignore it. The app will not work when browsing directly to this page, only when an app is sent in via drillthrough
 
-     ![Select Admin - Access this flow to embed this app into Power BI.](media/PBI-setuperror.PNG "Select Admin - Access this flow to embed this app into Power BI")
+     ![Select Admin - Access this flow to embed this app into Power BI - Error 1.](media/PBI-setuperror.PNG "Select Admin - Access this flow to embed this app into Power BI - Error 1")
+     ![Select Admin - Access this flow to embed this app into Power BI. - Error 2](media/PBI-setuperror2.PNG "Select Admin - Access this flow to embed this app into Power BI - Error 2")
+
 
 1. Resize and move the visual to the location you want.
 1. Next, go to the **Cloud flow detail** tab.
