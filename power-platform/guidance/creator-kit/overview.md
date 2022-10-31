@@ -32,19 +32,21 @@ All controls and components included in the kit use the [Fluent UI](https://deve
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
 
-### Quick links
-
-| Resource | Description |
-|-|-|
-| **AppSource Page** <br> [aka.ms/creatorkit/appsource](https://appsource.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview) | Offering page for the Creator Kit on AppSource (see [instructions](./setup.md) to learn more). |
-| **Canvas reference solution** <br> [aka.ms/CreatorKitReferenceCanvas](https://aka.ms/CreatorKitReferenceCanvas) | Direct download link for the Canvas reference solution. |
-| **Model Driven App/Custom pages reference solution** <br> [aka.ms/CreatorKitReferenceMDA](https://aka.ms/Creatorkitreferencemda) | Direct download link for the Model Driven App/Custom Pages reference solution |
-| **Latest release notes** [aka.ms/creatorkitlatestrelease](https://aka.ms/creatorkitlatestrelease) | Release notes for the latest version of the Creator Kit | 
-| **GitHub Repository** <br>[microsoft/powercat-creator-kit](https://github.com/microsoft/powercat-creator-kit). | GitHub repository that hosts source code for packaged components (CreatorKitCore) and reference solution assets. |
-| **Code Component Repository** <br> [microsoft/powercat-code-components](https://github.com/microsoft/powercat-code-components) | The code component source code and more detailed component-level documentation. |
-| **Creator Kit Documentation** (this page) <br> [aka.ms/ck](https://aka.ms/ck) | aka.ms link to this page. Use this to quickly access the documentation and reference during development. |
 
 :::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the Creator Kit." border="false":::
+
+### Quick links
+
+| Resource | Short Url | Description |
+| -------- | --------- | ----------- |
+| **AppSource Offering** | [aka.ms/creatorkit/appsource](https://aka.ms/creatorkit/appsource) | Offering page for the Creator Kit on AppSource (see [instructions](./setup.md) to learn more). |
+| **Canvas reference solution** | [aka.ms/creatorkit/referencecanvas](https://aka.ms/creatorkitreferencecanvas) | Direct download link for the Canvas reference solution. |
+| **Model Driven App (Custom page) reference solution** | [aka.ms/creatorkit/referenceMDA](https://aka.ms/creatorkitreferencemda) | Direct download link for the Model Driven App/Custom Pages reference solution |
+| **Latest release notes** | [aka.ms/creatorkitlatestrelease](https://aka.ms/creatorkitlatestrelease) | Release notes for the latest version of the Creator Kit | 
+| **GitHub Repository** | [aka.ms/creatorkit/repo](https://github.com/microsoft/powercat-creator-kit) | GitHub repository that hosts source code for packaged components (CreatorKitCore) and reference solution assets. |
+| **Code Component Repository** | [aka.ms/creatorkit/coderepo](https://github.com/microsoft/powercat-code-components) | The code component source code and more detailed component-level documentation. |
+| **Creator Kit Documentation** (this page) | [aka.ms/ck](https://aka.ms/ck) or [aka.ms/creatorkit](https://aka.ms/creatorkit) | aka.ms link to this page. Use this to quickly access the documentation and reference during development. |
+| **Backlog** | [aka.ms/creatorkit/backlog](https://aka.ms/creatorkit/backlog) | Upvote items to help us prioritize controls. |
 
 ## What's included
 
