@@ -61,7 +61,7 @@ This code component provides a wrapper around the [Fluent UI Persona](https://de
 | `PersonaSize` |  Size of the persona to appear on screen. |
 | `Presence` |  Presence of the person to display - will not display presence if undefined. Value should be from one of the following: <br>`away`<br>`blocked`<br>`busy`<br>`dnd`<br>`none`<br>`offline`<br>`online` |
 
-## Additional Properties
+### Style Properties
 
 | Property | Description |
 | -------- | ----------- |
