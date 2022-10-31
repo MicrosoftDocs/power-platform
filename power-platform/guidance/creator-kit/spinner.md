@@ -1,5 +1,5 @@
 ---
-title: Spinner control reference (preview) | Creator Kit
+title: Spinner control reference | Creator Kit
 description: Learn about the details and properties of the Spinner control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
@@ -21,7 +21,7 @@ contributors:
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="Spinner"::: control (preview)
+# :::no-loc text="Spinner"::: control
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -31,10 +31,6 @@ A control used to create a loading experience.
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Spinner).
 
 :::image type="content" source="media/spinner.png" alt-text="Spinner control.":::
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Description
 
