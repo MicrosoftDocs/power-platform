@@ -37,7 +37,7 @@ There are no user interface changes or version changes as part of this move. You
 
 > [!IMPORTANT]
 > - If moving individual environments from one tenant to another requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center by support team. More information: [Geo to geo migrations](geo-to-geo-migrations.md). 
-> - You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, or others.
+> - You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, or others.
 > - Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
 > - Existing source database backups won't be migrated to destination tenant.
 > - Linking a Dataverse organization to a finance and operations organization is not supported.
@@ -112,7 +112,7 @@ You'll also need to provide the following information:
    2. Assign licenses.
 5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this topic</a>.
 6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from [Power Apps](https://make.powerapps.com) and imported again into the new environment after the migration.
-7. Be prepared to approve Lockbox request at the start of the Tenant to Tenant operation, if Lockbox is enabled in the source tenant.
+7. If Lockbox is enabled in the source tenant, be prepared to approve Lockbox request at the start of the Tenant to Tenant operation.
 
 ### Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support:
  
@@ -239,7 +239,7 @@ You'll be provided with a list of pre- and post-requisites for your migration as
 
 | |Before the move:<br/>Notification   |During the move:<br/>Cut-over  |After the move:<br/>Notification and support |
 |---------|---------|---------|---------|
-|**What Microsoft does**   |Your support representative or account manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users and the amount of data. During this period, the environment is not accessible, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There is a step that will require your involvement, which is to provide a user mapping file. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or account manager will assist you in contacting billing to cancel and/or credit your previous subscription, if needed.         |
+|**What Microsoft does**   |Your support representative or account manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users. During this period, the environment is not accessible by the users, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There is a step that will require your involvement, which is to provide a user mapping file. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or account manager will assist you in contacting billing to cancel and/or credit your previous subscription, if needed.         |
 
 We will adhere to the terms of the [Service Level Agreement for Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
 
