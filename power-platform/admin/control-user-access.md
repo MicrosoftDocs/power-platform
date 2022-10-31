@@ -140,8 +140,6 @@ The security group is associated with the environment.
 
 The security group associated with the environment will be removed and the environment's access will no longer be restricted to only users that are members of that group.
 
-## Canvas app access in 
-
 ### See also
 [Create users](create-users.md)
 
