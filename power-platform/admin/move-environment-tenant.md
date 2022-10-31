@@ -1,10 +1,8 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 08/30/2022
+ms.date: 10/31/2022
 ms.topic: conceptual
-applies_to: 
-  - "Dynamics 365 (online)"
 author: matapg007
 contributors:
   - ImadYanni
@@ -112,7 +110,7 @@ You'll also need to provide the following information:
    2. Assign licenses.
 5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this topic</a>.
 6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from [Power Apps](https://make.powerapps.com) and imported again into the new environment after the migration.
-7. If Lockbox is enabled in the source tenant, be prepared to approve Lockbox request at the start of the Tenant to Tenant operation.
+7. If Lockbox is enabled in the source tenant, be prepared to approve Lockbox request at the start of the tenant to tenant operation.
 
 ### Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support:
  
