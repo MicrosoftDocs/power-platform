@@ -103,7 +103,18 @@ Sometimes tenants want to have individual business organizations run their own s
 
 ## Running a full inventory
 
-The sync flows in the core component solution will only update resources that have changed since the last run. After an upgrade, you'll only see the benefits of bug fixes or changes when you run a full inventory sync by doing the following:
+In order to reduce API calls, we do not update all objects with every sync flow, we only udpate objects which have been modified since the object was last inventoried. 
+
+Further since there can be tens of thousands of objects, we do not check each object every day to see if its modified date is more recent than what is in inventory. Instead we do the following:
+
+1. Get all the objects (ex Get Apps as Admin)
+1. Use the Filter operation to reduce the return down to objects who's modified date is greater than 7 days old (configurable via **InventoryFilter_DaysToLookBack**)
+1. Check each object in the filtered result to see if its current modified date is more recent than the inventoried one. 
+1. Update those with more recent modified by date.
+
+If your sync flows were turned off for some period of time, you can therefore go back and update more records by changing the **InventoryFilter_DaysToLookBack** environmnet varible. (Learn more: [update environment variables](#update-environment-variables)).
+
+If you want to have an absolute redo of your inventory, you can do that by changing the **Full inventory** environment variable as shown here:
 
 1. Set the value of the **Full inventory** environment variable to **Yes** (Learn more: [update environment variables](#update-environment-variables)).
 1. Turn all flows in the core solution off and back on.
