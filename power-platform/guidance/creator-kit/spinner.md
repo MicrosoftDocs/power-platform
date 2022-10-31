@@ -23,8 +23,6 @@ contributors:
 
 # :::no-loc text="Spinner"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to create a loading experience.
 
 > [!NOTE]
@@ -40,9 +38,7 @@ Spinners can vary in size, and can be located inline with content or centered. S
 
 This code component provides a wrapper around the [Fluent UI Spinner](https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner) control for use in canvas & custom pages. See component documentation for best practices.
 
-## Properties
-
-### Key properties
+## Key Properties
 
 | Property | Description |
 | -------- | ----------- |
@@ -58,7 +54,7 @@ This code component provides a wrapper around the [Fluent UI Spinner](https://de
 | `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `AccessibilityLabel` | Screen reader aria-label |
 
-## Behavior
+## Example
 
 ### Display the spinner when loading
 
