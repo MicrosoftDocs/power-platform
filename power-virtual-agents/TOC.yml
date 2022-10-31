@@ -110,7 +110,7 @@
          href: publication-connect-bot-to-azure-bot-service-channels.md
        - name: Integrate with question answering
          href: integrate-with-question-answering.md
-       - name: Integrate with Bot Framework
+       - name: Integrate with Bot Framework skills
          items:
           - name: Configure a skill for use in Power Virtual Agents
             href: configuration-add-skills.md
@@ -118,24 +118,24 @@
             href: advanced-use-skills.md
           - name: Use a Power Virtual Agents bot as a skill
             href: advanced-use-pva-as-a-skill.md
-          - name: Use Bot Framework Composer
-            items:
-              - name: Extend your bot with Bot Framework Composer
-                href: advanced-bot-framework-composer.md
-              - name: Open your bot in Composer
-                href: advanced-bot-framework-composer-open-bot.md
-              - name: Modify global variables
-                href: advanced-bot-framework-composer-variables.md
-              - name: Capture telemetry
-                href: advanced-bot-framework-composer-capture-telemetry.md
-              - name: Show an Adaptive Card
-                href: advanced-bot-framework-composer-example1.md
-              - name: Display a multi-select options list
-                href: advanced-bot-framework-composer-example2.md
-              - name: Use Bing Search as a fallback
-                href: advanced-bot-framework-composer-example3.md
-              - name: Display a form with a Submit button
-                href: advanced-bot-framework-composer-example4.md
+       - name: Extend with Bot Framework Composer
+         items:
+          - name: Extend your bot with Bot Framework Composer
+            href: advanced-bot-framework-composer.md
+          - name: Open your bot in Composer
+            href: advanced-bot-framework-composer-open-bot.md
+          - name: Modify global variables
+            href: advanced-bot-framework-composer-variables.md
+          - name: Capture telemetry
+            href: advanced-bot-framework-composer-capture-telemetry.md
+          - name: Show an Adaptive Card
+            href: advanced-bot-framework-composer-example1.md
+          - name: Display a multi-select options list
+            href: advanced-bot-framework-composer-example2.md
+          - name: Use Bing Search as a fallback
+            href: advanced-bot-framework-composer-example3.md
+          - name: Display a form with a Submit button
+            href: advanced-bot-framework-composer-example4.md
     - name: Monitor and diagnose
       items:
        - name: Key concepts - Analytics
