@@ -13,9 +13,6 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
-
-
-
 # Extend your bot with Bot Framework Composer
 
 Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
@@ -43,7 +40,10 @@ Custom dialogs added with Bot Framework Composer are deployed, hosted, and execu
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Introduction to Bot Framework Composer](/composer/introduction)
 
-## Access Bot Framework Composer from within Power Virtual Agents
+## Open your bot in Composer for the first time
+
+> [!IMPORTANT]
+> You should always open Bot Framework Composer from within Power Virtual Agents. This will ensure that Composer has all the necessary plug-ins needed for integration with Power Virtual Agents.
 
 1. Go to the **Topics** tab for the bot you want to edit and select the down-arrow symbol next to **+ New topic**.
 
@@ -51,34 +51,38 @@ Custom dialogs added with Bot Framework Composer are deployed, hosted, and execu
 
     :::image type="content" source="media/advanced-bot-framework-composer/Composer_OpeninBotFrameworkComposerButton_dropdown.png" alt-text="Open Composer from Topics page.":::
 
-If you already have Composer installed, Power Virtual Agents will try to open your bot in Composer.
+1. Select **download Composer**.
 
-> [!IMPORTANT]
-> You should always open Bot Framework Composer from within Power Virtual Agents if you plan to create content for Power Virtual Agents bots. This will ensure that Composer has all the necessary plug-ins needed for integration with Power Virtual Agents.
+    :::image type="content" source="media/advanced-bot-framework-composer/composer-not-present.png" alt-text="Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.":::
 
-If you don't have Composer installed, you can download it from the **download Composer** link. This link takes you to a **Download confirmation** window where you can also learn more about Composer.
+1. In the **Download Bot Framework Composer** window, select **Download Composer**.
 
-:::image type="content" source="media/advanced-bot-framework-composer/composer-not-present.png" alt-text="Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/download-composer.png" alt-text="Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.":::
 
-During installation, make sure to clear the **Run Bot Framework Composer** checkbox, because you'll need to open Composer from within Power Virtual Agents to use it with your bot.
+1. When the download completes, run it to install Composer.
 
-:::image type="content" source="media/advanced-bot-framework-composer/Composer_InstallWizardFinish.png" alt-text="Bot Framework Composer Install Complete.":::
+1. In Power Virtual Agents, go to the **Topics** page and select the down-arrow symbol next to **+ New topic**.
 
-Go back to the Power Virtual Agents **Topics** page and select the down-arrow symbol next to **+ New topic**. Select **Open in Bot Framework Composer** in the dropdown menu and then **Open Composer** to open your bot in Composer.
+1. Select **Open in Bot Framework Composer** in the dropdown menu to open your bot in Composer.
 
-> [!NOTE]
-> In some cases, a firewall might be blocking some features in Composer and you might need to explicitly allow access. Check with your admin for details.
+    > [!NOTE]
+    > In some cases, a firewall might be blocking some features in Composer and you might need to explicitly allow access. Check with your admin for details.
 
-If you're opening Composer from this Power Virtual Agents bot for the first time, you need to specify the **Name** (alphanumeric, no spaces or special characters) for your **Composer project**. You can skip this step if you already have a bot project for this bot by selecting **Cancel** in this step.
+1. The first time you open a Power Virtual Agents bot in Composer, it will be imported into a new Composer project. The name you specified in Power Virtual Agents will automatically be used as the name for the project, but you can also enter a custom name.
 
-:::image type="content" source="media/advanced-bot-framework-composer/ComposerUI_CreateProject.png" alt-text="Create Bot Framework Composer.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/ComposerUI_CreateProject.png" alt-text="Create Bot Framework Composer.":::
 
-Your Power Virtual Agents bot is now open in Composer and you are ready to start developing.
+1. Select **Create** to finish importing your bot into Composer.
 
-:::image type="content" source="media/advanced-bot-framework-composer/ComposerUI_Open_initialView.png" alt-text="Bot Framework Composer Project Initial View.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/ComposerUI_Open_initialView.png" alt-text="Bot Framework Composer Project Initial View.":::
 
-> [!NOTE]
-> In some cases, Power Virtual Agents might be unable to launch Composer automatically. However, you can launch it manually from your browser by selecting **Copy Link** to copy and paste the link to Composer in your web browser.
+If Power Virtual Agents is unable to launch Composer automatically, you can launch it manually:
+
+1. Select **Copy Link** to copy the link to your clipboard.
+
+    :::image type="content" source="media/advanced-bot-framework-composer/copy-link.png" alt-text="Screnshot of copy link button.":::
+
+1. Open a new tab and paste the link in your web browser's address bar.
 
 ## Guidelines for creating bot content for Power Virtual Agents in Composer
 
