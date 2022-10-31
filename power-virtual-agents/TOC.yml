@@ -130,13 +130,13 @@
                 href: advanced-bot-framework-composer-capture-telemetry.md
               - name: Examples
                 items:
-                  - name: Show an Adaptive Card in Power Virtual Agents
+                  - name: Show an Adaptive Card
                     href: advanced-bot-framework-composer-example1.md
-                  - name: Display a multi-select options list in Power Virtual Agents
+                  - name: Display a multi-select options list
                     href: advanced-bot-framework-composer-example2.md
-                  - name: Use Bing Search as a fallback in Power Virtual Agents
+                  - name: Use Bing Search as a fallback
                     href: advanced-bot-framework-composer-example3.md
-                  - name: Display a form with a Submit button in Power Virtual Agents
+                  - name: Display a form with a Submit button
                     href: advanced-bot-framework-composer-example4.md
     - name: Monitor and diagnose
       items:
