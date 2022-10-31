@@ -30,7 +30,7 @@ A control used to create a loading experience.
 > [!NOTE]
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/p ersona).
 
-:::image type="content" source="media/Persona.png" alt-text="Persona control.":::
+:::image type="content" source="media/persona.png" alt-text="Persona control" width=200:::
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -38,7 +38,11 @@ A control used to create a loading experience.
 
 ## Description
 
-Progress indicators are used to show the completion status of an operation lasting more than two seconds. If the state of progress can't be determined, use a [Spinner](spinner.md) or use the `Indeterminate Indicator` type instead. Progress indicators can appear in a new panel, in a flyout window, under the UI that initiated the operation, or they can even replace the initiating UI as long as the UI can return if you cancel or stop the activity.
+A persona is a visual representation of a person across products, typically showcasing the image that person has chosen to upload themselves. The control can also be used to show that person's online status.
+
+The complete control includes an individual's avatar (an uploaded image or a composition of the person’s initials on a background color), their name or identification, and online status.
+
+The persona control is used in the [PeoplePicker](./peoplepicker.md) and [Facepile](./facepile.md) controls.
 
 This code component provides a wrapper around the [Fluent UI Persona](https://developer.microsoft.com/en-us/fluentui#/controls/web/Persona) control for use in canvas & custom pages. See component documentation for best practices.
 
