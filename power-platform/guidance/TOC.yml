@@ -326,27 +326,31 @@
                   href: creator-kit/nav.md
                 - name: Pivot
                   href: creator-kit/pivot.md
-            - name: Lists and Items
+            - name: Items and Lists
               items:
                 - name: DetailsList
                   href: creator-kit/detailslist.md
                 - name: Facepile (preview)
                   href: creator-kit/facepile.md
-            - name: Pickers
-              items:
-                - name: Calendar (preview)
-                  href: creator-kit/calendar.md
-                - name: TagsPicker
-                  href: creator-kit/picker.md
+                - name: Persona (preview)
+                  href: creator-kit/persona.md
                 - name: TagList
                   href: creator-kit/taglist.md
+            - name: Pickers
+              items:
+                - name: Calendar
+                  href: creator-kit/calendar.md
+                - name: PeoplePicker (preview)
+                  href: creator-kit/peoplepicker.md
+                - name: Picker
+                  href: creator-kit/picker.md
             - name: Progress
               items:
-                - name: Shimmer (preview)
+                - name: Shimmer
                   href: creator-kit/shimmer.md
-                - name: Spinner (preview)
+                - name: Spinner
                   href: creator-kit/spinner.md
-                - name: ProgressIndicator (preview)
+                - name: ProgressIndicator
                   href: creator-kit/progressindicator.md
             - name: Surfaces
               items:
