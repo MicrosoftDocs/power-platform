@@ -25,16 +25,16 @@ contributors:
 
 [This article is pre-release documentation and is subject to change.]
 
-A control used to create a loading experience.
+A control designed to display formatted information.
 
 > [!NOTE]
-> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/p ersona).
-
-:::image type="content" source="media/persona.png" alt-text="Persona control" width=200:::
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/persona).
 
 > [!IMPORTANT]
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
+
+:::image type="content" source="media/persona.png" alt-text="Persona control" width=200:::
 
 ## Description
 
