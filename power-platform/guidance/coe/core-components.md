@@ -37,7 +37,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Created on
   - Environment maker (created by)
   - Region
-  - Type (trial, developer, production)
+  - Sku (trial, developer, production)
   - Number of apps (rollup)
   - Number of flows (rollup)
   - Number of custom connectors (rollup)
