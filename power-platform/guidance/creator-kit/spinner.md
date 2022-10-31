@@ -28,7 +28,7 @@ A control used to create a loading experience.
 > [!NOTE]
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Spinner).
 
-:::image type="content" source="media/spinner.png" alt-text="Spinner control.":::
+:::image type="content" source="media/spinner.png" alt-text="Spinner control." width=200px:::
 
 ## Description
 
