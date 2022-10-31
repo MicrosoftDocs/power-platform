@@ -184,7 +184,7 @@ A user with the Global or Exchange admin role can delegate the mailbox approval 
 > 
 > This role is not currently supported for assigning to a group. If you try to assign this role to a group, you will receive an error: "The Delegated Mailbox Approver role cannot be assigned to a team." You may also see error code 0x80090905.
 > 
->   The role can be assigned to one or more users per environment. Because this is a Dynamics 365 security role, the role is assigned per environment. 
+>   Because this is a Dynamics 365 security role, the role is assigned per environment. The role can be assigned to one or more users per environment.
 
 A user with the **Delegated Mailbox Approver** role can approve mailboxes in the environment without being a Global or Exchange admin. As mentioned below in the permission model section, the user also needs to have the **System Administrator** security role.
 
@@ -217,7 +217,7 @@ The following table describes the permissions required to approve emails.
 > [!NOTE]
 > For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles) 
 
-- **Delegated Mailbox Approver**: Dynamics 365 security role which can be assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. This role can currently only be assigned to individual users. Assigning this role to a team is not currently supported.
+- **Delegated Mailbox Approver**: Dynamics 365 security role which can be assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. For additional details, refer to the section above titled **Delegate mailbox approval**.
 
 > [!NOTE]
 > This permissions model is being gradually rolled out and will be available as soon as it's deployed to your region. Check the version number provided in the following table for when the change will be provided. 
