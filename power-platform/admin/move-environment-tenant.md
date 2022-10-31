@@ -103,7 +103,8 @@ You'll also need to provide the following information:
 
 - The environments to be migrated from the source tenant.
 - The destination environments in the target tenant. These environments in the target tenant will act as placeholders and will be replaced with the source instance in the migration process. Make sure that these target environments are enabled for Dynamics 365 apps.
-- The user mapping file for the first environment to be migrated. Each environment will need to have a separate mapping file. Please note that the users need to exist in both the source and target tenants, and need to be licensed and enabled in the environments in order for the migration to succeed. They can have different source and target domains as long as they are active. 
+- The user mapping file for the first environment to be migrated. Each environment will need to have a separate mapping file. Please note that the users need to exist in both the source and target tenants, and need to be licensed and enabled in the environments in order for the migration to succeed. They can have different source and target domains as long as they are active.
+- The security group object id in the target tenant to assign to each environment, if a security group should be assigned. The target tenant security group object id will be assigned during the migration if it is provided. If not provided, the security group can be assigned from the Power Platform admin center after the migration is completed.
 
 ### Steps to be performed by a global admin, Dynamics 365 admin, or Power Platform admin
 
@@ -234,7 +235,6 @@ After moving environments to another tenant:
 - The environment URL, organization ID (OrgID), and the name do not change.
 - The source environment will not be accessible.
 - Users not included in the mapping file will not be migrated and mapped post migration.
-- Security group mapping is handled as part of the manual tenant-to-tenant migration process. At the very least, a security group replacement (or removal) will be needed because the security group won't exist with the same organization ID in the new Azure AD tenant.
 
 ## How the move works
 
