@@ -96,13 +96,19 @@ For a deep-dive on Bot Framework Composer dialogs, events, triggers, and how to 
 
 [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
-## Next steps
+## References
 
-To help you get started using Composer, we've created four examples that detail different scenarios:
+To learn more about developing in Bot Framework Composer, see these resources:
 
-- [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md)
-- [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
-- [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
-- [Example 4 - Display a form with a Submit button in Power Virtual Agents](advanced-bot-framework-composer-example4.md)
+- [Bot Framework Composer documentation](/composer/)
+- [Tour of Composer](/composer/introduction)
+- [Tutorial: Create a new bot](/composer/tutorial/tutorial-create-bot)
+- [Tutorial: Add cards and buttons to your bot](/composer/tutorial/tutorial-cards)
+- [Tutorial: Add language generation to your bot](/composer/tutorial/tutorial-language-generation)
+- [Bot Framework Composer on GitHub](https://github.com/Microsoft/BotFramework-Composer)
+
+## Next step
+
+- [Open your bot in Composer for the first time](advanced-bot-framework-composer-open-bot.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
