@@ -1,5 +1,5 @@
 ---
-title: "Use Bot Framework Composer with chatbots"
+title: "Extend your bot with Bot Framework Composer"
 description: "Use Bot Framework Composer to add Adaptive Cards, multi-select options, and more to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
 ms.date: 06/28/2022
@@ -15,7 +15,7 @@ ms.collection: virtualagent
 
 # Extend your bot with Bot Framework Composer
 
-Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
+Enhance your bot by developing custom topics (also known as "dialogs") with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 Composer is integrated into Power Virtual Agents to allow developers and business users to build bots together. Composer lets you extend your bot with Bot Framework functionality, including:
 
@@ -24,13 +24,13 @@ Composer is integrated into Power Virtual Agents to allow developers and busines
 - Regular expressions (RegEx)
 - Adaptive Cards
 
-Composer with Power Virtual Agents lets you access conversational memory and context, including the variables defined in Power Virtual Agents.
+Composer with Power Virtual Agents lets you access conversational memory and context, including the [variables defined in Power Virtual Agents](advanced-bot-framework-composer-variables.md).
 
-For example, you could create event-driven dynamic dialogs to handle interruptions, cancellations, and context switching. You could also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
+For example, you could create event-driven dynamic topics to handle interruptions, cancellations, and context switching. You could also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
 
 There are a variety of prebuilt functions and expressions in Composer for you to use, as well as the ability to define multiple variations of a phrase for the bot to randomly select at runtime.
 
-Custom dialogs added with Bot Framework Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and don't require any additional Azure hosting.
+Custom topics added with Bot Framework Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and don't require any additional Azure hosting.
 
 > [!IMPORTANT]
 > Bot Framework Composer integration isn't available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
@@ -59,41 +59,35 @@ The following Bot Framework Composer features are not supported with Power Virtu
 
 ## Guidelines for creating bot content for Power Virtual Agents in Composer
 
-<!-- FIXME: cleanup -->
-
-When opened from a Power Virtual Agents bot, Composer launches a **Composer project** and loads in your bot content.
-
-The **main (root) dialog** in your **Composer project** is named after the project name you provided and corresponds to your Power Virtual Agents bot content. In this example, the **main (root) dialog** is **Contoso-Meal-Delivery-Service**:
-
-:::image type="content" source="media/advanced-bot-framework-composer/Gd_mainDialog_initial.png" alt-text="Bot Framework Composer main (root) dialog":::
-
 There are a few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents:
 
-- The Power Virtual Agents topics from your bot will be displayed in Composer. You can't edit these Power Virtual Agents topics in Composer; selecting them will open these topics in Power Virtual Agents for editing.
+- The topics from your Power Virtual Agents bot will be displayed in Composer. You can't edit these topics in Composer; selecting them will open these topics in Power Virtual Agents for editing.
 
-  :::image type="content" source="media/advanced-bot-framework-composer/Gd_PVA_Topics.png" alt-text="Bot Framework Composer - Power Virtual Agents topics.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/Gd_PVA_Topics.png" alt-text="Bot Framework Composer - Power Virtual Agents topics.":::
 
 - Use **Begin a Power Virtual Agents Topic** to call Power Virtual Agents topics in Composer.
 
-  :::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Bot Framework Composer - call Power Virtual Agents topics.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Bot Framework Composer - call Power Virtual Agents topics.":::
 
-- You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**.
+- You can add new Bot Framework triggers of any kind to your main (also known as "root") dialog.
 
-- You can use **Send a response** and **Ask a question** in the new **triggers** added to **main (root) dialog**.
+- You can use **Send a response** and **Ask a question** events in new triggers added to main dialog.
 
-- You can't use the Regular expression recognizer in the **main (root) dialog**. Using the Regular expression recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialogs.
+- You can't use the Regular expression recognizer in the main dialog. Using the Regular expression recognizer in the main dialog will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialog.
 
-- You can create new **Bot Framework dialogs** and add **events** and **triggers** of any kind to them. **Send a response** and **Ask a question** can be used in **triggers** that belong to the new **dialogs**.
+- You can add any events and triggers to newly created Bot Framework dialogs.
 
-- On the **Bot Responses** tab, the **All** section should be empty (that is, the **common.lg** file should be empty). Having any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
+- On the **Bot Responses** tab, the **Common** section should be empty. Using any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
 
-- All **Language Generation** (.lg) and **Language Understanding** (.lu) files should have the corresponding **dialogs**. For example, if you have only one **dialog** with name **dialog1**, then you can have **dialog1.en-us.lg** and **dialog1.en-us.lu**, but you cannot have **extra.en-us.lg**.
+    :::image type="content" source="media/advanced-bot-framework-composer/common-empty.png" alt-text="Screenshot of the common bot responses section empty.":::
 
-- The **main (root) dialog** in Composer should never be deleted, as it corresponds to your Power Virtual Agents bot. The **main (root) dialog** can have zero or more **triggers**.
+- All Language Generation (.lg) and Language Understanding (.lu) files should have the corresponding dialogs. For example, if you have only one dialog with the name `dialog1`, then you can only have `dialog1.en-us.lg` and `dialog1.en-us.lu`.
+
+- The main dialog in Composer should never be deleted, as it corresponds to your Power Virtual Agents bot. The main dialog can have zero or more triggers.
 
 - You can capture telemetry in Composer dialogs and triggers and use [Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze it with [Kusto queries for Adaptive dialogs](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed). Refer to the [Capture telemetry with Application Insights](advanced-bot-framework-composer-capture-telemetry.md) section for more information.
 
-For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers**, and how to create advanced bot content with Bot Framework, refer to the following resources:
+For a deep-dive on Bot Framework Composer dialogs, events, triggers, and how to create advanced bot content with Bot Framework, refer to the following resources:
 
 - [Bot Framework Composer dialogs](/composer/concept-dialog)
 - [Bot Framework Composer events and triggers](/composer/how-to-define-triggers)
