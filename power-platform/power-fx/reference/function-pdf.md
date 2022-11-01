@@ -19,9 +19,9 @@ contributors:
 
 # PDF function in Power Apps (experimental)
 
-[This article is pre-release documentation and is subject to change.\]
+[This article is prerelease documentation and is subject to change.\]
 
-Exports contents from the current screen to an object for use in multiple scenarios.
+Export contents from the current screen to an object for use in multiple scenarios.
 
 > [!IMPORTANT]
 > - This is an experimental feature.
