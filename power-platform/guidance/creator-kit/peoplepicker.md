@@ -43,49 +43,44 @@ The people picker (`PeoplePicker`) is used to select one or more entities, such 
 This code component provides a wrapper around the [Fluent UI PeoplePicker](https://developer.microsoft.com/en-us/fluentui#/controls/web/peoplepicker) control for use in canvas & custom pages. See component documentation for best practices.
 
 ## Key properties
+| Property | Description |
+| -------- | ----------- |
+| `Items` | The Pre-selected Persona(members) to appear on Peoplepicker |
+| `Suggestions_Items` | List of Suggested members to pick from. This is a required dataset property |
+| `PeoplePickerType` | Type of Peoplepicker to be used. |
+| `MaxPeople` | Maximum number of user(s) to be allowed for selection |
+| `NoResultFoundMesage` | Message to be shown if no result are found based on the specified search text. |
+| `MinimumSearchTermLength` | Minimum search term length to be entered before providing the suggestions. |
+| `SearchTermToShortMessage` | Custom message to be shown when the search text is less than *MinimumSearchTermLength*. |
+| `Error` | To highlighting the people picker in red to represent that it has certain error which required validation. |
+| `ShowSecondaryText` | Specify Yes or no, depending upon whether the Secondary text(e.g. JobTitle) to be shown or not. |
 
-- **Items** - The Pre-selected Persona(members) to appear on Peoplepicker
-  - **PersonaName** - Display Name of the Persona.
-  - **PersonaKey** - The key identify the specific Item. The key must be unique.
-  - **PersonaImgUrl** - Url or Base64 Content of Persona Image(Profile Picture).
-  - **PersonaRole** - Secondary Text, Preferably JobTitle of the Persona
-  - **PersonaPresence** - Optional - To defined the Presence of the persona. Value should be from one of the followings :
-    - `away`
-    - `blocked`
-    - `busy`
-    - `dnd`
-    - `none`
-    - `offline`
-    - `online`
-  - **PersonaOOF** -  True or False, Based on whether the persona if Out of office or not.
+### `Items` properties
+| Property | Description |
+| -------- | ----------- |
+| `PersonaName` | Display Name of the Persona. |
+| `PersonaKey` | The key identify the specific Item. The key must be unique. |
+| `PersonaImgUrl` | Url or Base64 Content of Persona Image(Profile Picture). |
+| `PersonaRole` | Secondary Text, Preferably JobTitle of the Persona |
+| `PersonaPresence` | Optional - Presence of the person to display - will not display presence if undefined. Value should be from one of the following: `away`, `blocked`, `busy`, `dnd`, `none`, `offline`, `online` |
+| `PersonaOOF` |  Optional - True or False, Based on whether the persona if Out of office or not. |
 
-- **Suggestions_Items** - List of Suggested members to pick from. This is a required dataset property
-  - **SuggestionName** - Display Name of the Persona.
-  - **SuggestionKey** - The key identify the specific Item. The key must be unique.
-  - **SuggestionImgUrl** - Url or Base64 Content of Persona Image(Profile Picture).
-  - **SuggestionRole** - Secondary Text, Preferably JobTitle of the Persona
-  - **SuggestionPresence** - Optional - To defined the Presence of the persona. Value should be from one of the followings :
-    - away
-    - blocked
-    - busy
-    - dnd
-    - none
-    - offline
-    - online
-  - **SuggestionOOF** -  True or False, Based on whether the persona if Out of office or not.
-  - **PeoplePickerType** - Type of Peoplepicker to be used.
-  - **MaxPeople** - Maximum number of user(s) to be allowed for selection
-  - **NoResultFoundMesage** - Messgae to be shown if no result are found based on the specified search text.
-  - **MinimumSearchTermLength** - Minimum search term length to be entered before providing the suggestions.
-  - **SearchTermToShortMessage** - Custom message to be shown when the search text is less than *MinimumSearchTermLength*.
-  - **Error** - To highlighting the people picker in red to represent that it has certain error which required validation.
-  - **ShowSecondaryText** - Specify Yes or no, depending upon whether the Secondary text(e.g. JobTitle) to be shown or not.
+### `Suggestions_Items` properties
+| Property | Description |
+| -------- | ----------- |
+| `SuggestionName` | Display Name of the Persona. |
+| `SuggestionKey` | The key identify the specific Item. The key must be unique. |
+| `SuggestionImgUrl` | Url or Base64 Content of Persona Image(Profile Picture). |
+| `SuggestionRole` | Secondary Text, Preferably JobTitle of the Persona |
+| `SuggestionPresence` | Optional - Presence of the person to display - will not display presence if undefined. Value should be from one of the following: `away`, `blocked`, `busy`, `dnd`, `none`, `offline`, `online` |
+| `SuggestionOOF` |  Optional - True or False, Based on whether the persona if Out of office or not. |
 
-### Additional Properties
-
-- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps.
-
-- **AccessibilityLabel** - Screen reader aria-label
+### Additional properties
+| Property | Description |
+| -------- | ----------- |
+| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
+| `AccessibilityLabel` | Screen reader aria-label |
+| `InputEvent` | An event to send to the control. Supports [SetFocus](setfocus.md) as an `InputEvent`. |
 
 ## Examples 
 
@@ -101,11 +96,14 @@ Following are the examples on how to use the `PeoplePicker` component. Note that
     ClearCollect(
         UserCollection,
         AddColumns(
-            Office365Users.SearchUser(
-                {
-                    searchTerm: Self.SearchText,
-                    top: 500
-                }
+            Filter(
+                Office365Users.SearchUser(
+                    {
+                        searchTerm: Self.SearchText,
+                        top: 500
+                    }
+                ),
+                !(Mail in Self.SelectedPeople.PersonaKey)
             ),
             "SuggestionImgUrl",
             Substitute(
@@ -116,9 +114,14 @@ Following are the examples on how to use the `PeoplePicker` component. Note that
                 """",
                 ""
             ),
-            "SuggestionKey", Mail, 
-            "SuggestionName", DisplayName,
-            "SuggestionRole", JobTitle
+            "SuggestionKey",
+            Mail,
+            "SuggestionName",
+            DisplayName,
+            "SuggestionRole",
+            JobTitle,
+            "SuggestionPresence",
+            "away"
         )
     )
     ```
@@ -144,47 +147,32 @@ PeoplePicker1.SelectedPeople
 
 ### With Dataverse tables - AAD Users or Users
 
-Step 1) Setup the `Suggestions_Items` Property by specifying the below code snippet.
+1. Setup the `Suggestions_Items` Property by specifying the below code snippet.
 
-Add Users or specific users(using below code) from table to the items collection(under `Suggestions_Items` peroperty) of `PeoplePicker`.
+      Add Users or specific users(using below code) from table to the items collection(under `Suggestions_Items` peroperty) of `PeoplePicker`.
 
-#### `AAD Users` table
+    -**`AAD Users` table**
+      ```powerapps-dot
+      Search('AAD Users', Self.SearchText,"displayname" ,"mail")
+      ```
+   -**`Users` table**
+      ```powerapps-dot
+      Search('Users', Self.SearchText,"fullname","internalemailaddress")
+      ```
 
-```powerapps-dot
-Search('AAD Users', Self.SearchText,"displayname" ,"mail")
-```
+1. Map the Columns according your need using AddColumns(). Below is an example of Column-Property Mapping:
 
-#### `Users` table
-
-```powerapps-dot
-Search('Users', Self.SearchText,"fullname","internalemailaddress")
-```
-
-Step 2) Map the Columns according your need. Below is an example of Column-Property Mapping
-
-|Property Name|AADUser Table Column|User Table Column|
-|--|--|--|
-|SuggestionKey|"mail"|"internalemailaddress"|
-|SuggestionName|"displayname"|"fullname"|
-|SuggestionRole|"jobtitle"|"jobtitle"|
+    |Property Name|AADUser Table Column|User Table Column|
+    |-------------|--------------------|-----------------|
+    |SuggestionKey|"mail"|"internalemailaddress"|
+    |SuggestionName|"displayname"|"fullname"|
+    |SuggestionRole|"jobtitle"|"jobtitle"|
 
 At this point, the people picker should be working and the selected members can be obtained from SelectedPeople Property.
 
 ```powerapps-dot
 PeoplePicker1.SelectedPeople
 ```
-
-### Event Properties
-
-- **InputEvent** - An event to send to the control. E.g. `SetFocus`. See below.
-
-### Setting Focus on the control
-
-When a new dialog is shown, and the default focus should be on the control, an explicit set focus will be needed.
-
-To make calls to the input event, you can set a context variable that is bound to the Input Event property to a string that starts with `SetFocus` and followed by a random element to ensure that the app detects it as a change.
-
-
 
 
 ## Limitations
