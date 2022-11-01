@@ -40,7 +40,7 @@ These are the primary elements of Managed Environments:
 ### See also
 [Enable Managed Environments](managed-environment-enable.md)   <br />
 [Usage insights](managed-environment-usage-insights.md)  <br />
-[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Limit sharing](managed-environment-sharing-limits.md)  <br />
 [Data policies](managed-environment-data-policies.md) <br />
 [Licensing](managed-environment-licensing.md) <br />
 [View license consumption (preview)](view-license-consumption-issues.md) <br />
