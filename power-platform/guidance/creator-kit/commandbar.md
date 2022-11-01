@@ -67,7 +67,8 @@ Each item uses the following schema to visualize data in the component.
 | `ItemParentKey` | Render the option as child item of another option. |
 
 > [!NOTE]
-> `ItemIconColor` will override the component's Theme value and ignore other state colors (e.g., disabled).
+> - `ItemIconColor` will override the component's Theme value and ignore other state colors (e.g., disabled).
+> - `ItemHeader` and `ItemDivider` must be set to true to render as a divider. If set to false, it expects other values and will render blank.
 
 ## Example
 
