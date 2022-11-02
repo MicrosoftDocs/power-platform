@@ -31,6 +31,14 @@ This set of functionality allows you to monitor new Dataverse for Teams environm
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
+>[!IMPORTANT]
+>Automatically deleting inactive Dataverse for Teams environment is now part of the product - you can configure Teams environment deletion policies from the Power Platform Admin center. Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md). <br>
+>As there is parity between this feature, and the functionality in the CoE Starter Kit we will remove that portion of the features below from the CoE starter kit once the native support in the product is available broadly in all clouds.
+
+## Exempt environments from the empty environment processes
+
+You may want to exempt certain environments from the empty environment cleanup process. You can exempt environments from the this process using the Power Platform Admin View app.  
+
 ## Turn on flows
 
 Turn on these flows which are installed as part of the **Governance components** solution:
