@@ -121,7 +121,7 @@ Based on successful experience with customer engagements, here is a list of addi
     
   - Allows all members of IT to manage admin resources (such as test and production environments).
   - Only the service account has admin permissions in the environment.
-  - All other users have end user permissions and cannot create new resources—this is important because if users are given access to a data connection, they cannot create any new interface to interact with the data that wasn’t intended by the developer.
+  - All other users have end user permissions and cannot create new resources—this is important because if users are given access to a data connection, they can create any new interface to interact with the data that wasn’t intended by the developer.
   - IT is aware of production-grade applications that are in deployment since they’re involved in the implementation.
   - Service accounts will need Microsoft Power Platform or Dynamics 365 service admin permission in PIM. Assign additional licenses as needed depending on what connectors need to be used in the request process (for example, if Dataverse and Outlook are used, assign premium Power Apps and Office Enterprise).
   - When displaying the details for an application, it will show the service account as the creator and not the maker. This will help end users know who to contact in case of application issues.
