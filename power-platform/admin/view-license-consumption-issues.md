@@ -115,7 +115,6 @@ To change the standard environment to managed, select **Enable Managed Environme
 [Limit sharing](managed-environment-sharing-limits.md)  <br />
 [Data policies](managed-environment-data-policies.md) <br />
 [Licensing](managed-environment-licensing.md) <br />
-[View license consumption (preview)](view-license-consumption-issues.md) <br />
 [Tenant settings](tenant-settings.md) 
 
 
