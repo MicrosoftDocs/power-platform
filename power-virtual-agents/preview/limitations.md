@@ -30,6 +30,7 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 - Globalization support in Power Fx is limited to English (en-US). This means:
   - Numbers must be in the US style format, for example, `12,345.678`.
   - Power Fx parameters must be separated by commas (,) and not semi-colons (;).
+- Data Loss Prevention (DLP) is not fully implemented.
 
 ## Troubleshoot firewall or network issues
 
