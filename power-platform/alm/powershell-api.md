@@ -1,11 +1,10 @@
 ---
-title: "Work with solutions using PowerShell | Microsoft Docs"
+title: "Manage solutions using PowerShell | Microsoft Docs"
 description: "Learn about the PowerShell APIs, service, and module that are available to analyze solutions against a set of best practice rules."
 keywords: 
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
-manager: kvivek
 ms.custom: ""
 ms.date: 04/09/2021
 ms.reviewer: "pehecke"
@@ -17,7 +16,7 @@ search.app:
   - D365CE
 ---
 
-# Work with solutions using PowerShell
+# Manage solutions using PowerShell
 
 The PowerShell cmdlets let you automate many of the monitoring, management, and quality assurance tasks in Power Platform.
 
@@ -55,6 +54,5 @@ There is a checker task in the Azure DevOps build tools include a checker task. 
 ### See also
 
 [PowerShell modules](/powershell/powerapps/overview)  
-[Power Platform API](/rest/api/power-platform/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

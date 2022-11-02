@@ -61,15 +61,9 @@ define custom functionality in apps based on Dataverse. More information: [Move 
 
 With PowerShell cmdlets for administrators, app makers, and developers, you can
 automate many of the monitoring, management, and quality assurance tasks that
-are only possible manually today in Power Apps or the Power Apps admin center.
+are only possible manually today in Power Apps or the Power Platform admin center.
 
-- [Online management API module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest&preserve-view=true). The online management API PowerShell module is used to manage Dataverse environments.
-
-- [Package deployment module](/powershell/powerapps/get-started-packagedeployment?view=pa-ps-latest&preserve-view=true). The package deployment PowerShell module is used to deploy packages to Dataverse environments and Dynamics 365 Customer Engagement(on-premises) deployments.
-
-- [Power Apps checker module](/powershell/powerapps/get-started-powerapps-checker?view=pa-ps-latest&preserve-view=true). The Power Apps checker PowerShell module interacts with the Power Apps checker service so you can run static analysis jobs and download the results.
-
-More information: [Power Apps PowerShell overview](/powershell/powerapps/overview?view=pa-ps-latest&preserve-view=true)
+More information: [Manage solutions using PowerShell](powershell-api.md)
 
 ### Pipelines (preview)
 
