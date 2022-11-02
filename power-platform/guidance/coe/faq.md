@@ -82,45 +82,45 @@ This article will provide you with answers to frequently asked questions and tip
 
 1. After you've updated all run-only users, you can turn on the child flow.
 
-## Setting up CoE for a subset of Environments
-Sometimes tenants want to have individual business organizations run their own smaller CoE. This is how to set that up.
+## Setting up CoE for a subset of environments
+
+You may want to monitor and govern only certain environments with the CoE Starter Kit - for example, if you're setting the CoE Starter Kit up for individual business organizations running their own smaller CoE or if you want to include your Dynamics 365 environments from the processes in the CoE Starter Kit. The option below describes how to only enable the CoE Starter Kit processes for certain environments.
 
 > [!IMPORTANT]
-> This is not a security feature and does not implement data privacy or row level security. The feature is only intended to make monitoring and managing environments easier for organizational units
+> This is not a security feature and does not implement data privacy or row level security. The feature is only intended to make monitoring and managing environments easier for organizational units.
 
 1. After import of the Core components and before you turn on flows
 1. Set the value of the **is All Environments Inventory** environment variable to **No** (Learn more: [update environment variables](#update-environment-variables)).
-1. Return to inventory setup and turn on all inventory flows
+1. Continue with the [inventory setup](setup-core-components.md#turn-on-child-flows) and turn on all inventory flows.
 1. Wait for first inventory run of **Admin | Sync Template v3** to complete.
-1. Note that all the environments in the tenant are  added as excused from inventory
-      ![All envts start as opted out](media/tips-Opt-In-Envt1.png "All envts start as opted out")
+1. Note that all environments in the tenant are added as excluded from inventory
+      ![All environments start as opted out](media/tips-Opt-In-Envt1.png "All environments start as opted out")
 
-1. Mark up the environments you wish to monitor and manage
+1. Add environments you want to monitor and manage to the inventory by setting the **Excuse from inventory** flag to No.
       ![Opt-in desired environments](media/tips-Opt-In-Envt2.png "Opt-in desired environments")
 
-1. Wait for next run of inventory to complete
-
+1. Wait for next run of inventory to complete, it will now automatically pick up and monitor inventory for the selected environments.
 
 ## Running a full inventory
 
-In order to reduce API calls, we do not update all objects with every sync flow, we only udpate objects which have been modified since the object was last inventoried. 
+In order to reduce API calls, the inventory flows do not update all objects with every sync flow, they only update objects which have been modified since the object was last inventoried.
 
-Further since there can be tens of thousands of objects, we do not check each object every day to see if its modified date is more recent than what is in inventory. Instead we do the following:
+The inventory flows also do not check each object every day to see if its modified date is more recent than what is in inventory. Instead these flows:
 
-1. Get all the objects (ex Get Apps as Admin)
-1. Use the Filter operation to reduce the return down to objects who's modified date is greater than 7 days old (configurable via **InventoryFilter_DaysToLookBack**)
-1. Check each object in the filtered result to see if its current modified date is more recent than the inventoried one. 
-1. Update those with more recent modified by date.
+1. Get all the objects - for example, by calling [Get Apps as Admin](/connectors/powerappsforadmins/#get-apps-as-admin).
+1. Filter the returned list of objects down to objects where the modified date is greater than 7 days old (configurable via **InventoryFilter_DaysToLookBack**).
+1. Check each object in the filtered result to see if its current modified date is more recent than the inventoried one.
+1. Update those objects with the more recent modified by date.
 
-If your sync flows were turned off for some period of time, you can therefore go back and update more records by changing the **InventoryFilter_DaysToLookBack** environmnet varible. (Learn more: [update environment variables](#update-environment-variables)).
+If your sync flows were turned off for longer than 7 days, you can only get the inventory updates you missed by modifying the **InventoryFilter_DaysToLookBack** environment variable.. (Learn more: [Update environment variables](#update-environment-variables)).
 
-If you want to have an absolute redo of your inventory, you can do that by changing the **Full inventory** environment variable as shown here:
+If you want to fully update your entire inventory again, you can do that by changing the **Full inventory** environment variable:
 
-1. Set the value of the **Full inventory** environment variable to **Yes** (Learn more: [update environment variables](#update-environment-variables)).
-1. Turn all flows in the core solution off and back on.
-1. Run the Admin | Sync Template v3 flow.
+1. Set the value of the **Full inventory** environment variable to **Yes** (Learn more: [Update environment variables](#update-environment-variables)).
+1. Turn all flows in the Core components solution off and back on.
+1. Run the **Admin | Sync Template v3** flow.
 1. Set the **Full inventory** environment variable back to **No**.
-1. Turn all flows in the core solution off and back on.
+1. Turn all flows in the Core components solution off and back on.
 
 ## Update environment variables
 
