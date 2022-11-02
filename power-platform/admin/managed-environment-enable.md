@@ -77,7 +77,7 @@ The Managed Environments state cannot be activated on developer environments.
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br /> 
 [Usage insights](managed-environment-usage-insights.md)  <br />
-[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Limit sharing](managed-environment-sharing-limits.md)  <br />
 [Data policies](managed-environment-data-policies.md) <br />
 [Licensing](managed-environment-licensing.md)  <br />
 [View license consumption (preview)](view-license-consumption-issues.md) <br />
