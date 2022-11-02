@@ -19,6 +19,7 @@ search.app:
 ---
 
 # Work with solutions using PowerShell
+
 The Power Apps checker web API provides a mechanism to run static analysis
 checks against customizations and extensions to the Microsoft Dataverse
 platform. It's available for makers and developers to perform rich static
@@ -44,8 +45,8 @@ The checker service provides the logic for the [solution checker feature](/powe
 In addition, there is a checker task in the Azure DevOps build tools include a checker task. For more information about using that task in your build pipeline, see [Quality check](devops-build-tool-tasks.md#quality-check).
 
 ### See also
-[PowerShell modules](tools-apps-used-alm.md#powershell-modules)  
-[Online Management API (REST) to manage environments](/powerapps/developer/data-platform/online-management-api/overview)
 
+[PowerShell modules](/powershell/powerapps/overview)  
+[Power Platform API](/rest/api/power-platform/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
