@@ -30,7 +30,7 @@ With Managed Environments, admins can easily identify all the data policies that
 
 1. In the **Data policies** section, select **See active data policies for this environment**.
 
-    :::image type="content" source="media/managed-environment-weekly-see-active-data-policies.png" alt-text="Screenshot of an Edit Environment Management settings screen, with See active data policies for this environment highlighted.":::
+    :::image type="content" source="media/managed-environment-weekly-see-active-data-policies.png" alt-text="Screenshot of an Edit Environment Managements settings screen, with See active data policies for this environment highlighted.":::
 
 The data policies page opens in a new tab. The view is filtered to display only the data policies that are applied to the managed environment.
 
@@ -45,9 +45,9 @@ If no data policies are applied to the environment, the data policies page is em
 
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br />
-[Enable Managed Environment](managed-environment-enable.md)  <br />
+[Enable Managed Environments](managed-environment-enable.md)  <br />
 [Usage insights](managed-environment-usage-insights.md)  <br />
-[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Limit sharing](managed-environment-sharing-limits.md)  <br />
 [Licensing](managed-environment-licensing.md)  <br />
 [View license consumption (preview)](view-license-consumption-issues.md) <br />
 [Tenant settings](tenant-settings.md)
