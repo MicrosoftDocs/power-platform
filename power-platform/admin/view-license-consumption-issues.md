@@ -26,7 +26,7 @@ You can use the Licenses page to view the number of licenses consumed in individ
 
 - How many licenses have been assigned to users?
 - Which users have these licenses been assigned to?  
-- What type of licenses are users utilizing to launch custom apps? 
+- What type of licenses are being used to launch custom apps? 
 - Which apps are driving which type of license usage?
 
 > [!IMPORTANT]
@@ -44,7 +44,7 @@ To see an overview of license usage:
 
 3. Select the **Overview** tab.
 
-:::image type="content" source="media/licenses-overview-tab.png" alt-text="View license information on the Overview tab":::
+:::image type="content" source="media/licenses-overview-tab.png" alt-text="A screenshot of the Overview tab page.":::
 
 ### What's on the Overview tab page
 
@@ -55,16 +55,21 @@ This tab displays a summary of environments in your tenant requiring licensing a
 | Include standard environments     | Select to see results for standard (unmanaged) environments. By default, managed environments are displayed. In managed environments, all users will need Power Apps licenses to run apps.      |
 | **Environments requiring attention**     | The number of environments having licensing issues. These might require your attention.        |
 | Environment    | Which environments have license issues.      |
-| License issues | The number of license issues for the environment. The number of licensing issues are calculated based on how many different type of licensing actions need to be performed based on the app usage in environments in the tenant. |
+| License issues | The number of license issues for the environment. The number of licensing issues are calculated based on how many different types of licensing actions need to be performed based on the app usage in environments in the tenant. |
 |**Recommended actions**     | See a list of possible actions to remediate your license issues.        |
 
 ## Environment view tab 
 
 Select the **Environment view** tab to see a variety of licensing information related to a selected environment.
 
-:::image type="content" source="media/licenses-environment-view-tab.png" alt-text="View license information on the Environment view tab":::
+:::image type="content" source="media/licenses-environment-view-tab.png" alt-text="Screenshot of the Environment view tab page.":::
 
 ### What's on the Environment view tab page 
+
+
+<!-- Is it correct that "License type" is in this table twice? -->
+
+
 
 | Settings/information |Description  |
 |---------|---------|
@@ -75,30 +80,30 @@ Select the **Environment view** tab to see a variety of licensing information re
 | Recommended actions | Recommended actions, if any, to be considered to convert the environment as a managed environment.  |
 |**Power Apps licensing activity**     | Use filters to query license usage information for licensed users.        |
 | Email | Email ID of the user, who has access to launch an app available in the selected environment. Includes a list of users with whom an app is shared and if the app is installed in the selected environment. <br />Selecting Email takes user to the Microsoft 365 admin portal.  |
-| App name | App name which is launched by the user in the selected time period. |
-| Last active date | Date when last time a selected app was launched by the user in selected time period. |
-| App type | The type of app – canvas app, model-driven app  |
+| App name | App name that is launched by the user in the selected time period. |
+| Last active date | Date when a selected app was last launched by the user in a selected time period. |
+| App type | The type of app: canvas app, model-driven app  |
 | License | Known service plan name of the license being used while launching the app. |
 | License type | Type of license (Dynamics 365, Microsoft 365, per app, per user, pay-as-you-go, trial, or developer) the actual license is mapped to. |
 | Additional available | Any additional entitlement the user has.  | 
 
 ## Opt-in experience
 
-The license experience is not enabled by default for tenants. Admins may need to opt-in. 
+The license experience is not enabled by default for tenants. Admins may need to opt in. 
 
 If you see the message "Licensing information is not yet enabled", select **Enable license reporting** to enable licensing for your tenant. It can take up to a week for license information to be available.
 
-:::image type="content" source="media/managed-environment-optin.png" alt-text="Opt-in required for tenant where license experience is not enabled.":::
+:::image type="content" source="media/managed-environment-optin.png" alt-text="Message explaining that opt-in is required for tenant where license experience is not enabled.":::
 
 ## Other ways to access licensing pages
 
 You can select **View licensing details** from the Enable Managed Environments page to see licensing information. 
 
-:::image type="content" source="media/managed-environment-view-licensing.png" alt-text="Select View licensing details from the Enable Managed Environments page.":::
+:::image type="content" source="media/managed-environment-view-licensing.png" alt-text="Screenshot showing the View licensing details option on the Enable Managed Environments page.":::
 
 If the selected environment is standard, you'll see an alert about license requirements for users with only Microsoft 365 licenses. 
 
-:::image type="content" source="media/managed-environment-open-from-settings.png" alt-text="Environment view page after opening from Managed Environment settings.":::
+:::image type="content" source="media/managed-environment-open-from-settings.png" alt-text="Screenshot showing the alert about license requirements.":::
 
 To change the standard environment to managed, select **Enable Managed Environments** or see [Enable Managed Environments](managed-environment-enable.md).
 
@@ -107,7 +112,7 @@ To change the standard environment to managed, select **Enable Managed Environme
 [Managed Environments overview](managed-environment-overview.md) <br />
 [Enable Managed Environments](managed-environment-enable.md)   <br />
 [Usage insights](managed-environment-usage-insights.md)  <br />
-[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Limit sharing](managed-environment-sharing-limits.md)  <br />
 [Data policies](managed-environment-data-policies.md) <br />
 [Licensing](managed-environment-licensing.md) <br />
 [View license consumption (preview)](view-license-consumption-issues.md) <br />
