@@ -19,7 +19,7 @@ search.app:
 ---
 # Set up the Power BI dashboard
 
-The Power BI dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. Telemetry from the audit log is stored from the moment you set up the Center of Excellence (CoE) Starter Kit, so you can look back and identify trends over time.
+The Power BI dashboard provides a holistic overview with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. Telemetry from the audit log is stored from the moment you set up the Center of Excellence (CoE) Starter Kit, so you can look back and identify trends over time.
 
 :::image type="content" source="media/pb-1.png" alt-text="CoE Starter Kit Power BI dashboard.":::
 
