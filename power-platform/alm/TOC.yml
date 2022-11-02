@@ -63,12 +63,12 @@
     - name: ALM for admins and makers
       href: admins-makers.md
       items:
+        - name: Manage solutions using PowerShell
+          href: powershell-api.md
         - name: Pipelines (preview)
           items:
             - name: What is Power Platform pipeline?
               href: pipelines.md
-            - name: Microsoft Power Platform Build Tools tasks
-              href: devops-build-tool-tasks.md
 
     - name: ALM for developers
       href: alm-for-developers.md
@@ -140,9 +140,6 @@
               href: checker-api/upload-file.md
         - name: Manage solutions using code
           href:
-          items:
-            - name: Use PowerShell
-              href: powershell-api.md
             - name: Work with solutions
               href: solution-api.md
             - name: Stage, import, and export
