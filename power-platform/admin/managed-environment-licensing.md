@@ -38,7 +38,7 @@ To see your current license usage, select **View license consumption (preview)**
 [Managed Environments overview](managed-environment-overview.md)  <br />
 [Enable Managed Environments](managed-environment-enable.md)  <br />
 [Usage insights](managed-environment-usage-insights.md)  <br />
-[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Limist sharing](managed-environment-sharing-limits.md)  <br />
 [Data policies](managed-environment-data-policies.md)  <br />
 [View license consumption (preview)](view-license-consumption-issues.md) <br />
 [Tenant settings](tenant-settings.md) 
