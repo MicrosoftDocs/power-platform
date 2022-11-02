@@ -139,7 +139,7 @@
             - name: Upload a file for analysis
               href: checker-api/upload-file.md
         - name: Manage solutions using code
-          href:
+          items:
             - name: Work with solutions
               href: solution-api.md
             - name: Stage, import, and export
