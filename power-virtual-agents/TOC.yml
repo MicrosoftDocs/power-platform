@@ -124,8 +124,6 @@
             href: advanced-bot-framework-composer.md
           - name: Open your bot in Composer
             href: advanced-bot-framework-composer-open-bot.md
-          - name: Modify global variables
-            href: advanced-bot-framework-composer-variables.md
           - name: Capture telemetry
             href: advanced-bot-framework-composer-capture-telemetry.md
           - name: Show an Adaptive Card
