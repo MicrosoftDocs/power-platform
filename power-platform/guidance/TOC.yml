@@ -308,7 +308,7 @@
                   href: creator-kit/icon.md
                 - name: ResizableTextArea
                   href: creator-kit/resizabletextarea.md
-                - name: SearchBox
+                - name: SearchBox (preview)
                   href: creator-kit/searchbox.md
             - name: Commands, Menus & Navs
               items:
