@@ -1,10 +1,8 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 08/30/2022
+ms.date: 10/31/2022
 ms.topic: conceptual
-applies_to: 
-  - "Dynamics 365 (online)"
 author: matapg007
 contributors:
   - ImadYanni
@@ -37,11 +35,11 @@ There are no user interface changes or version changes as part of this move. You
 
 > [!IMPORTANT]
 > - If moving individual environments from one tenant to another requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center by support team. More information: [Geo to geo migrations](geo-to-geo-migrations.md). 
-> - You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, or others.
+> - You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, or others.
 > - Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
 > - Existing source database backups won't be migrated to destination tenant.
 > - Linking a Dataverse organization to a finance and operations organization is not supported.
-> - Tenant-to-tenant migration isn't supported when [Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy) is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
+> - Tenant to tenant migration is subject to [Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy) when enabled in the source tenant.
 
 ### Supported applications and platforms
 
@@ -86,8 +84,6 @@ Once a migration request is submitted, the support team is engaged to review the
 
 If you don't have a paid subscription of Dynamics 365, Power Apps, or Power Virtual Agents in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial to paid, if not already done.
 
-Depending on how many source environments you're migrating, you'll need to create a temporary environment or environments in the destination tenant. The source environment type and destination environment type—production vs non-production (sandbox)—must match. The users to be migrated from one tenant to another need to be created on the target tenant as well.
-
 The destination tenant needs an equal or higher number of active user licenses and equal or greater storage as the source tenant.
 
 When your environment is moved from one tenant to another within the same region, the URL does not change. In order to perform this operation, you'll need to answer some questions including:
@@ -102,19 +98,19 @@ When your environment is moved from one tenant to another within the same region
 You'll also need to provide the following information:
 
 - The environments to be migrated from the source tenant.
-- The destination environments in the target tenant. These environments in the target tenant will act as placeholders and will be replaced with the source instance in the migration process. Make sure that these target environments are enabled for Dynamics 365 apps.
-- The user mapping file for the first environment to be migrated. Each environment will need to have a separate mapping file. Please note that the users need to exist in both the source and target tenants, and need to be licensed and enabled in the environments in order for the migration to succeed. They can have different source and target domains as long as they are active. 
+- The user mapping file for the first environment to be migrated. Each environment will need to have a separate mapping file. Please note that the users need to exist in both the source and target tenants, and need to be licensed and enabled in the environments in order for the migration to succeed. They can have different source and target domains as long as they are active.
+- The security group object id in the target tenant to assign to each environment, if a security group should be assigned. The target tenant security group object id will be assigned during the migration if it is provided. If not provided, the security group can be assigned from the Power Platform admin center after the migration is completed.
 
 ### Steps to be performed by a global admin, Dynamics 365 admin, or Power Platform admin
 
 1. Be authorized to perform the migration.
-2. Create the Dynamics 365 destination environments (if they're not already created) in the target tenant.
 3. If we'll be moving a production environment, we first need to migrate a sandbox copy. In that case, we'll also need a new environment in the source tenant so we can copy the production environment into the new environment.
 4. Create users in the destination environments in the target tenant. You must:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
 5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this topic</a>.
 6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from [Power Apps](https://make.powerapps.com) and imported again into the new environment after the migration.
+7. If Lockbox is enabled in the source tenant, be prepared to approve Lockbox request at the start of the tenant to tenant operation.
 
 ### Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support:
  
@@ -125,7 +121,6 @@ You'll also need to provide the following information:
 - Power Apps Checker App
 - Café X
 - Forms Pro
-- SharePoint
 - Dynamics 365 Marketing 
 - Mailboxes. If the mapped user has a mailbox in the destination environment, then the mailbox is automatically configured during the migration. For all other users, you will need to reconfigure the mailbox:
   1. If the same mailbox is used in the target tenant (test@microsoft.com) then the mailbox will be enabled by default. Before the tenant-to-tenant process, customers need to migrate/configure their mailboxes on the target tenant.
@@ -234,7 +229,6 @@ After moving environments to another tenant:
 - The environment URL, organization ID (OrgID), and the name do not change.
 - The source environment will not be accessible.
 - Users not included in the mapping file will not be migrated and mapped post migration.
-- Security group mapping is handled as part of the manual tenant-to-tenant migration process. At the very least, a security group replacement (or removal) will be needed because the security group won't exist with the same organization ID in the new Azure AD tenant.
 
 ## How the move works
 
@@ -243,7 +237,7 @@ You'll be provided with a list of pre- and post-requisites for your migration as
 
 | |Before the move:<br/>Notification   |During the move:<br/>Cut-over  |After the move:<br/>Notification and support |
 |---------|---------|---------|---------|
-|**What Microsoft does**   |Your support representative or account manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users and the amount of data. During this period, the environment is not accessible, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There is a step that will require your involvement, which is to provide a user mapping file. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or account manager will assist you in contacting billing to cancel and/or credit your previous subscription, if needed.         |
+|**What Microsoft does**   |Your support representative or account manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users. During this period, the environment is not accessible by the users, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There is a step that will require your involvement, which is to provide a user mapping file. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or account manager will assist you in contacting billing to cancel and/or credit your previous subscription, if needed.         |
 
 We will adhere to the terms of the [Service Level Agreement for Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
 
