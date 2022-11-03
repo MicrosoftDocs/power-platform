@@ -365,8 +365,7 @@ This flow sends a daily reminder email to environment owners who have been asked
 | --- | --- | --- |
 | [Request Orphaned Objects Reassigned (Child)](#request-orphaned-objects-reassigned-child) | Instant | child |
 | [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | daily |
-| [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
-| [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
+
 
 #### Request Orphaned Objects Reassigned (Parent)
 
@@ -391,18 +390,6 @@ This flow is triggered daily for every manager who has objects owned by former e
 If they choose to see the items individually, then they can make these decisions granularly.
 
 ![Orphaned object item.](media/orphanedobjects3.png "Orphaned object item")
-
-#### HELPER - CanvasAppOperations Gov
-
-This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. 
-
-The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory.
-
-#### HELPER - CloudFlowOperations Gov
-
-This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. 
-
-The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory.
 
 ## App Quarantine process
 
