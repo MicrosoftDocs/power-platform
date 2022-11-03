@@ -232,7 +232,7 @@ Add the following expression to the code editor to show the Adaptive Card, and p
 :::image type="content" source="media/Composer_Example1/E1_Meals_AddResponse.png" alt-text="Composer Begin Dialog - add Send a response action.":::
 
 > [!TIP]
-> You can [access Power Virtual Agents global variables in Composer](advanced-bot-framework-composer.md#use-and-update-power-virtual-agents-variables-in-bot-framework-composer) by using the `virtualagent` scope. This scope won't appear in Composer's property reference menu, but you can access it by entering a expression directly.
+> You can access Power Virtual Agents global variables in Composer by using the `virtualagent` scope. This scope won't appear in Composer's property reference menu, but you can access it by entering a expression directly.
 >
 > For example, `${virtualagent.user_city}` will refer to the `user_city` global variable that was created in the Power Virtual Agents bot.
 

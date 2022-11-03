@@ -24,7 +24,7 @@ Composer is integrated into Power Virtual Agents to allow developers and busines
 - Regular expressions (RegEx)
 - Adaptive Cards
 
-Composer with Power Virtual Agents lets you access conversational memory and context, including the [variables defined in Power Virtual Agents](advanced-bot-framework-composer-variables.md).
+Composer with Power Virtual Agents lets you access conversational memory and context, including the variables defined in Power Virtual Agents.
 
 For example, you could create event-driven dynamic topics to handle interruptions, cancellations, and context switching. You could also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
 
@@ -109,6 +109,6 @@ To learn more about developing in Bot Framework Composer, see these resources:
 
 ## Next step
 
-- [Open your bot in Composer for the first time](advanced-bot-framework-composer-open-bot.md)
+- [Open your bot in Composer for the first time](advanced-bot-framework-composer-fundamentals.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
