@@ -1,5 +1,5 @@
 ---
-title: "Power Platform pipelines (preview)"
+title: "Overview of Power Platform pipelines (preview)"
 description: "Overview of Power Platform pipelines."
 author: shmcarth
 ms.subservice: alm
