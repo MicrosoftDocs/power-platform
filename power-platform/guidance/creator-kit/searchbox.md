@@ -5,7 +5,7 @@ author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 11/02/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -34,6 +34,10 @@ A search box (`SearchBox`) provides an input field for searching within a site o
 
 This code component provides a wrapper around the [Fluent UI SearchBox](https://developer.microsoft.com/en-us/fluentui#/controls/web/searchbox) control for use in canvas & custom pages.
 
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
+
 ## Key properties
 
 | Property | Description |
@@ -51,7 +55,6 @@ This code component provides a wrapper around the [Fluent UI SearchBox](https://
 | `Theme` | The Theme object (not Json formatted). See [theming](theme.md) for guidance on how to configure. |
 | `AccessibilityLabel` | Screen reader aria-label. |
 | `InputEvent` | An event to send to the control. E.g. `SetFocus`. |
-
 
 ## Example
 

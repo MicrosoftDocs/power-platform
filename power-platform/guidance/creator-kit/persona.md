@@ -5,7 +5,7 @@ author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 10/25/2022
+ms.date: 11/02/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -50,8 +50,8 @@ This code component provides a wrapper around the [Fluent UI Persona](https://de
 
 | Property | Description |
 | -------- | ----------- |
-| `ImageUrl` |  Url to the image to use, should be a square aspect ratio and big enough to fit in the image area. |
-| `ImageInitials` |  The user's initials to display in the image area when there is no image. |
+| `ImageUrl` |  Url to the image to use, should be a square aspect ratio and large enough to fit in the image area. |
+| `ImageInitials` |  The user's initials to display in the image area when there's no image. |
 | `Text` |  Primary text to display, usually the name of the person. |
 | `SecondaryText` |  Secondary text to display, usually the role of the user. |
 | `TertiaryText` |  Tertiary text to display, usually the status of the user. The tertiary text will only be shown when using size72 or size100. |
@@ -59,7 +59,7 @@ This code component provides a wrapper around the [Fluent UI Persona](https://de
 | `ImageAlt` |  Alt text for the image to use. | 
 | `HidePersonaDetails` |  Whether to not render persona details, and just render the persona image/initials. |
 | `PersonaSize` |  Size of the persona to appear on screen. |
-| `Presence` |  Presence of the person to display - will not display presence if undefined. Value should be from one of the following: `away`, `blocked`, `busy`, `dnd`, `none`, `offline`, `online` |
+| `Presence` |  Presence of the person to display - won't display presence if undefined. Value should be from one of the following: `away`, `blocked`, `busy`, `dnd`, `none`, `offline`, `online` |
 
 ### Style Properties
 
@@ -74,7 +74,7 @@ Following are some example values that could be used in the Persona component:
 
 | Property | Value |
 | -------- | ----- |
-| `Text` | "Megan Browen" |
+| `Text` | "Megan Brown" |
 | `SecondaryText` | "Software Engineer" |
 | `TertiaryText` | "In a meeting" |
 | `OptionalText` | "Available at 4:00pm" |

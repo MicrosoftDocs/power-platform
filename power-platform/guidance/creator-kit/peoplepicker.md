@@ -5,7 +5,7 @@ author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 10/25/2022
+ms.date: 11/02/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -52,8 +52,8 @@ This code component provides a wrapper around the [Fluent UI PeoplePicker](https
 | `NoResultFoundMesage` | Message to be shown if no result are found based on the specified search text. |
 | `MinimumSearchTermLength` | Minimum search term length to be entered before providing the suggestions. |
 | `SearchTermToShortMessage` | Custom message to be shown when the search text is less than *MinimumSearchTermLength*. |
-| `Error` | To highlighting the people picker in red to represent that it has certain error which required validation. |
-| `ShowSecondaryText` | Specify Yes or no, depending upon whether the Secondary text(e.g. JobTitle) to be shown or not. |
+| `Error` | To highlighting the people picker in red to represent that it has certain error that required validation. |
+| `ShowSecondaryText` | Specify Yes or no, depending upon whether the Secondary text(for example, JobTitle) to be shown or not. |
 
 ### `Items` properties
 | Property | Description |
@@ -62,7 +62,7 @@ This code component provides a wrapper around the [Fluent UI PeoplePicker](https
 | `PersonaKey` | The key identify the specific Item. The key must be unique. |
 | `PersonaImgUrl` | Url or Base64 Content of Persona Image(Profile Picture). |
 | `PersonaRole` | Secondary Text, Preferably JobTitle of the Persona |
-| `PersonaPresence` | Optional - Presence of the person to display - will not display presence if undefined. Value should be from one of the following: `away`, `blocked`, `busy`, `dnd`, `none`, `offline`, `online` |
+| `PersonaPresence` | Optional - Presence of the person to display - won't display presence if undefined. Value should be from one of the following: `away`, `blocked`, `busy`, `dnd`, `none`, `offline`, `online` |
 | `PersonaOOF` |  Optional - True or False, Based on whether the persona if Out of office or not. |
 
 ### `Suggestions_Items` properties
@@ -72,7 +72,7 @@ This code component provides a wrapper around the [Fluent UI PeoplePicker](https
 | `SuggestionKey` | The key identify the specific Item. The key must be unique. |
 | `SuggestionImgUrl` | Url or Base64 Content of Persona Image(Profile Picture). |
 | `SuggestionRole` | Secondary Text, Preferably JobTitle of the Persona |
-| `SuggestionPresence` | Optional - Presence of the person to display - will not display presence if undefined. Value should be from one of the following: `away`, `blocked`, `busy`, `dnd`, `none`, `offline`, `online` |
+| `SuggestionPresence` | Optional - Presence of the person to display - won't display presence if undefined. Value should be from one of the following: `away`, `blocked`, `busy`, `dnd`, `none`, `offline`, `online` |
 | `SuggestionOOF` |  Optional - True or False, Based on whether the persona if Out of office or not. |
 
 ### Additional properties
@@ -82,9 +82,9 @@ This code component provides a wrapper around the [Fluent UI PeoplePicker](https
 | `AccessibilityLabel` | Screen reader aria-label |
 | `InputEvent` | An event to send to the control. Supports [SetFocus](setfocus.md) as an `InputEvent`. |
 
-## Examples 
+## Examples
 
-Following are the examples on how to use the `PeoplePicker` component. Note that `PeoplePicker` completely supports other sources from where the input collection can be retrieved.
+`PeoplePicker` supports other sources from where the input collection can be retrieved. Following are the examples on how to use the `PeoplePicker` component.
 
 ### Office 365 Users Connector
 
@@ -147,9 +147,9 @@ PeoplePicker1.SelectedPeople
 
 ### With Dataverse tables - AAD Users or Users
 
-1. Setup the `Suggestions_Items` Property by specifying the below code snippet.
+1. Set up the `Suggestions_Items` Property by specifying the below code snippet.
 
-      Add Users or specific users(using below code) from table to the items collection(under `Suggestions_Items` peroperty) of `PeoplePicker`.
+      Add Users or specific users(using below code) from table to the items collection(under `Suggestions_Items` property) of `PeoplePicker`.
 
     -**`AAD Users` table**
       ```powerapps-dot
@@ -160,7 +160,7 @@ PeoplePicker1.SelectedPeople
       Search('Users', Self.SearchText,"fullname","internalemailaddress")
       ```
 
-1. Map the Columns according your need using AddColumns(). Below is an example of Column-Property Mapping:
+1. Map the columns according to your need using AddColumns(). Below is an example of Column-Property Mapping:
 
     |Property Name|AADUser Table Column|User Table Column|
     |-------------|--------------------|-----------------|
