@@ -21,7 +21,7 @@ search.app:
 
 The most common form of ALM in Power Platform today involves either manual solution export and import or using pro-developer tools, such as Azure DevOps and GitHub. It's an either/or decision where things don't easily work together making it difficult to transition from manual to automated deployments.
 
-With Power Platform pipelines, makers can easily use pre-configured pipelines to perform in-product deployments, and pro-code developers can manage CI/CD of apps, flows and bots with the tools of their choice. Pipelines can integrate with the existing pro dev tool set for CI/CD (including Azure DevOps and GitHub), and be managed as part of the organization’s existing DevOps processes.
+With Power Platform pipelines, makers can easily use pre-configured pipelines to perform in-product deployments, and pro-code developers can manage CI/CD of apps, flows, and bots with the tools of their choice. Pipelines can integrate with the existing pro dev tool set for CI/CD (including Azure DevOps and GitHub), and be managed as part of the organization’s existing DevOps processes.
 
 > [!IMPORTANT]
 > - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
@@ -39,5 +39,9 @@ Admins centrally manage all citizen-led and pro-dev-led projects at scale. Admin
 ## Makers run pre-configured pipelines
 
 Once admins have pipelines in place, makers use the pre-configured pipelines to perform in-product deployments. This ensures any maker can build, share, and update apps, flows, and bots without compromising no-code development with no admin or pro-dev involvement.
+
+## Next steps
+
+[Power Platform pipelines (preview)](admins-makers.md#power-platform-pipelines-preview)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
