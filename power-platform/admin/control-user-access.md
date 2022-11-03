@@ -119,7 +119,7 @@ The security group is associated with the environment.
    > ![Security group added.](media/security-group-added.png "Security group added")
 
 > [!NOTE]
-> When a security group is associated with an environment, users who are not members of the security group won't be able to run canvas apps regardless of whether the app has been shared with the user. Instead, users will see this error message: "You can't open apps in this environment. You are not a member of the environment's security group."
+> For end-users running canvas apps when a security group is associated with the environment of the app, users must be members of the security group to be able to run the canvas app, regardless of whether the app has been shared with them. Otherwise, users will see this error message: "You can't open apps in this environment. You are not a member of the environment's security group."
 
 
 ## Remove a security group's association with an environment
