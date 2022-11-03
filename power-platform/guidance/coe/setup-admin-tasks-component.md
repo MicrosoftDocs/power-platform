@@ -3,7 +3,6 @@ title: "Set up the Power Platform administration planning component | Microsoft 
 description: "Instructions for how to set up the Power Platform administration planning component of the CoE Starter Kit."
 author: stjeffer
 manager: phtopnes
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/07/2022
@@ -89,7 +88,7 @@ Open the Admin Tasks app to start adding your own tasks or configuring tasks tha
 
 ## Share apps with other admins
 
-This solution contains an app and pbi report designed to give admins access to planned activities.
+This solution contains an app and Power BI report designed to give admins access to planned activities.
 
 Share this app with other Power Platform admins and assign them the **PP Admin Planning - Admin SR** security role.
 
