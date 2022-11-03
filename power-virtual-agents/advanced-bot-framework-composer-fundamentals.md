@@ -2,7 +2,7 @@
 title: "Getting started with Bot Framework Composer"
 description: "Import your Power Virtual Agents bot into a Composer project to extend your bot's capabilities."
 keywords: "composer"
-ms.date: 06/28/2022
+ms.date: 11/03/2022
 
 ms.topic: article
 author: iaanw

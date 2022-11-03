@@ -2,7 +2,7 @@
 title: "Capture telemetry with Application Insights"
 description: "Use Bot Framework Composer with Power Virtual Agents to send event data to a telemetry service."
 keywords: "composer, adaptive card"
-ms.date: 06/28/2022
+ms.date: 11/03/2022
 
 ms.topic: article
 author: iaanw
