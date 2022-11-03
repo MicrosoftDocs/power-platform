@@ -26,7 +26,7 @@ You can use the Licenses page to view the number of licenses consumed in individ
 
 - How many licenses have been assigned to users?
 - Which users have these licenses been assigned to?  
-- What type of licenses are being used to launch custom apps? 
+- What types of licenses are being used to launch custom apps? 
 - Which apps are driving which type of license usage?
 
 > [!IMPORTANT]
