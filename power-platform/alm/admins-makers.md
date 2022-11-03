@@ -80,10 +80,13 @@ Once installed the Deployment Pipelines Configuration application will appear in
    - **Name**: The name of the stage. 
    - **Description**: Optional description for the stage.
    - **Previous Deployment Stage**: Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you would add the test stage as the **Previous Deployment Stage**. Note that for the first stage, this field can be left blank.
-   - **Target Deployment Environment**: This is the target environment that is associated with this stage. It is a lookup to the deployment environment records that were created in the previous step.a.In this example, we've created two target stages (test to prod).
+   - **Target Deployment Environment**: This is the target environment that is associated with this stage. It is a lookup to the deployment environment records that were created in the previous step. In this example, two target stages are created (test to prod).
    :::image type="content" source="media/pipeline-target-stages.png" alt-text="Pipeline target stages":::
 
 ### Run pipelines
+
+To run a pipeline, first [grant access to run pipelines](#grant-access-to-run-pipelines).
+Then makers can [run pipelines](#run-pipelines) they have access to.
 
 #### Grant access to run pipelines
 
@@ -96,29 +99,30 @@ Grant access to run one or more pipelines. Typically, makers won’t be allowed 
 #### Run a pipeline
 
 1. Sign into a Power Platform preview environment (make.preview.powerapps.com)and select your development environment.
-1. To enable the feature, append the following to your browserURL:`?cdsCommon.enableAppDeployment=true&powerappsConnections.enableInlineConnectionCreation=true&cdsCommon.enableAppDeploymentPipelinesPolling=true&make.enableMultiEnvironmentGraphQLService=truea`. For example:https://make.preview.powerapps.com?cdsCommon.enableAppDeployment=true&powerappsConnections.enableInlineConnectionCreation=true&cdsCommon.enableAppDeploymentPipelinesPolling=true&make.enableMultiEnvironmentGraphQLService=true
+1. To enable the feature, append the following to your browserURL:`?cdsCommon.enableAppDeployment=true&powerappsConnections.enableInlineConnectionCreation=true&cdsCommon.enableAppDeploymentPipelinesPolling=true&make.enableMultiEnvironmentGraphQLService=true`. For example: https://make.preview.powerapps.com?cdsCommon.enableAppDeployment=true&powerappsConnections.enableInlineConnectionCreation=true&cdsCommon.enableAppDeploymentPipelinesPolling=true&make.enableMultiEnvironmentGraphQLService=true
 1. To deploy a solution using a pipeline, go to **Solutions** and create or select an unmanaged solution to deploy.
-1. Choose between two options to run a pipeline:
+1. Choose between two options to include the solution in the pipeline:
    - Select **Pipelines** from the left navigation pane.
    - Select **Overview** from the left navigation pane, and then select **Deploy** on the command bar.
 1. Select the stage you want, such as *Test Stage*, and then select **Next**. This will initiate validation of the solution against the test environment. This validation can also be referred to as “pre-flight” checks. Missing dependencies and other common issues are checked that might cause a deployment to fail.
-1. If connection reference sor environment variable are present, you’ll be prompted to provide these (just as you would when manually importing solutions).
+1. If connection references or environment variables are present, you’ll be prompted to provide these (just as you would when manually importing solutions).
 1. Select **Deploy**. This initiates an automated deployment to the target environment.
 
 > [!NOTE]
 > You must complete the deployment stages in order. For example, you can't deploy version 1.0.0.1 to production before it has been deployed to test. After deploying to test, that same solution will be deployed to production –even if afterward you made changes to the solution without incrementing the version.
 
-### Monitor deployments
+### Monitor pipeline deployments
 
 The **Pipelines** page in the **Solutions** area displays all deployment activity for the current pipeline and solution.
 
-Select a pipelint to view additional detail as well as error information in case of failure.
+Select a pipeline to view additional detail as well as error information in case of failure.
+:::image type="content" source="media/pipeline-monitoring.png" alt-text="Monitoring a pipeline":::
 
 ### Pipeline security roles
 
 When you install the Power Platform Pipelines package, two security roles are created:
 
-- Deployment Pipeline Administrator. Have full control over all pipeline configuration, without needing system administrator security role membership. 
+- Deployment Pipeline Administrator. Has full control over all pipeline configuration, without needing system administrator security role membership.
 - Deployment Pipeline User. Has privileges to run pipelines that have been shared with them. More information: [Grant access to run pipelines](#grant-access-to-run-pipelines)
 
 
