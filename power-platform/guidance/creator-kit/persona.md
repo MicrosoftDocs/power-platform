@@ -34,7 +34,7 @@ A control designed to display formatted information.
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
-:::image type="content" source="media/persona.png" alt-text="Persona control" width=200:::
+:::image type="content" source="media/persona.png" alt-text="Persona control":::
 
 ## Description
 
