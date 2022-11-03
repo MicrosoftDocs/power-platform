@@ -3,7 +3,6 @@ title: "Limitations | MicrosoftDocs"
 description: "Limitations of some components within the CoE Starter Kit, such as potential timeouts, Government Community Cloud availability, and more."
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/10/2022
@@ -49,7 +48,7 @@ The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Con
 
 ## Flows that have never been turned on
 
-The Admin | Sync Template v3 (Flows) flow will fail to collect flows that have never been turned on, for example if you import a solution with flows that are off, these will not be collected to inventory as they are not returned by the connector.
+The Admin | Sync Template v3 (Flows) flow will fail to collect flows that have never been turned on. For example, if you import a solution with flows that are off, these will not be collected to inventory as they are not returned by the connector.
 
 ## Co-authoring and Connections
 
