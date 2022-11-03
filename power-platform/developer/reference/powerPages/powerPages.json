@@ -105,7 +105,8 @@
             "description": "Accepted",
             "headers": {
               "Operation-Location": {
-                "$ref": "#/headers/Operation-Location"
+                "description": "Location of a website",
+                "type": "string"
               }
             }
           },
@@ -234,7 +235,8 @@
             "description": "Accepted",
             "headers": {
               "Operation-Location": {
-                "$ref": "#/headers/Operation-Location"
+                "description": "Location of a website",
+                "type": "string"
               }
             }
           },
