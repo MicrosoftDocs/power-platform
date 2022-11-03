@@ -22,8 +22,6 @@ contributors:
 
 # :::no-loc text="SearchBox"::: control (Preview)
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to create a search experience.
 
 :::image type="content" source="media/SearchBox.png" alt-text="SearchBox control.":::
