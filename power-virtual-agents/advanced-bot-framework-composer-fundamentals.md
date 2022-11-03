@@ -1,8 +1,7 @@
 ---
-# FIXME: update metadata
-title: "Use Bot Framework Composer with chatbots"
-description: "Use Bot Framework Composer to add Adaptive Cards, multi-select options, and more to your Power Virtual Agents chatbot."
-keywords: "composer, adaptive card"
+title: "Getting started with Bot Framework Composer"
+description: "Import your Power Virtual Agents bot into a Composer project to extend your bot's capabilities."
+keywords: "composer"
 ms.date: 06/28/2022
 
 ms.topic: article
@@ -14,18 +13,18 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
-# Extend your bot with Bot Framework Composer
+# Getting started with Bot Framework Composer
 
-<!-- FIXME: write intro -->
+To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll need to first import your bot into a Composer project.
 
 ## Prerequisites
 
-<!-- FIXME: prereqs -->
+- [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md)
 
 ## Open your bot in Composer for the first time
 
 > [!IMPORTANT]
-> You should always open Bot Framework Composer from within Power Virtual Agents. This will ensure that Composer has all the necessary plug-ins needed for integration with Power Virtual Agents.
+> You should always open Composer from within Power Virtual Agents. This will ensure that Composer has all the necessary plug-ins needed for integration with Power Virtual Agents.
 
 1. Go to the **Topics** tab for the bot you want to edit and select the down-arrow symbol next to **+ New topic**.
 
@@ -68,42 +67,52 @@ If Power Virtual Agents is unable to launch Composer automatically, you can laun
 
 ## Testing Bot Framework content with Power Virtual Agents
 
-<!-- FIXME: cleanup -->
+You can't use the Bot Framework Emulator to test Composer content created for Power Virtual Agents bots. Instead you'll need to publish your Composer content to your Power Virtual Agents bot, then use the [Test bot pane](authoring-test-bot.md).
 
 [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
-Test the content you've created in Bot Framework Composer by publishing it to Power Virtual Agents and using the **Test bot** pane in Power Virtual Agents.
+1. Go to the **Publish** tab in Composer.
 
-1. Publish your Bot Framework content to Power Virtual Agents from the **Publish** tab in Composer.
+    :::image type="content" source="media/advanced-bot-framework-composer/publish-tab.png" alt-text="Screenshot of the publish tab in Composer.":::
 
-    :::image type="content" source="media/advanced-bot-framework-composer/Test_Publish_Success.png" alt-text="Composer Publish tab.":::
+1. Turn on the box next to your bot, then select **Publish selected bots**.
 
-1. After you successfully publish your Bot Framework content, go to the Power Virtual Agents **Test bot** pane to test your bot. Start a conversation by typing in a trigger phrase in the Power Virtual Agents **Test bot** pane:
+    :::image type="content" source="media/advanced-bot-framework-composer/publish-bot.png" alt-text="Screenshot of the bot selected for publish.":::
 
-    :::image type="content" source="media/advanced-bot-framework-composer/Test_image.png" alt-text="Power Virtual Agents test bot.":::
+1. Optionally enter a message for **Comments**, then select **Okay**.
+
+    :::image type="content" source="media/advanced-bot-framework-composer/publish-window.png" alt-text="Screenshot of the publish window":::
+
+1. Once publishing completes, go to Power Virtual Agents. You may need to refresh the page to see the new topics you've added in Composer.
+
+1. Open the **Test bot** pane and start a conversation by typing in a trigger phrase.
+
+## View the publish log
+
+If you're having trouble publishing your Composer content to Power Virtual Agents, you can troubleshoot by reviewing the publish log. The publish log provides a detailed description of any warnings or errors encountered during validation and suggestions on how to fix them.
 
 > [!NOTE]
-> The Bot Framework Emulator cannot be used to test Composer content created for Power Virtual Agents bots.
+> If you're having trouble with your Power Virtual Agents bot, use the [topic checker](authoring-topic-management.md#topic-errors) instead.
 
-## Troubleshooting
+1. Go to the **Publish** tab in Composer.
 
-<!-- FIXME: cleanup -->
+1. Select the right arrow (**>**) next to your bot. You may need to increase the size of the Composer window to make the arrow visible.
 
-If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select your bot and then select the caret icon to see the publish history.
+    :::image type="content" source="media/advanced-bot-framework-composer/open-publish-history.png" alt-text="Composer Publish - See Log.":::
 
-:::image type="content" source="media/advanced-bot-framework-composer/TL_PublishHistory.png" alt-text="Composer Publish - See Log.":::
+1. Under **Publish history**, select **View log**.
 
-Selecting the log will bring up the list of warnings and errors that were encountered during the publish history in Composer, along with suggestions on how to fix the errors:
+   :::image type="content" source="media/advanced-bot-framework-composer/view-log.png" alt-text="Composer Publish - See Log.":::
 
-:::image type="content" source="media/advanced-bot-framework-composer/Tl_PublishError.png" alt-text="Composer Publish - warnings and errors.":::
+1. In the **Publish log** window, review logs for any errors or warnings.
 
-If you encounter issues developing in Bot Framework Composer, you can:
+    :::image type="content" source="media/advanced-bot-framework-composer/Tl_PublishError.png" alt-text="Composer Publish - warnings and errors.":::
+
+If you encounter issues developing in Composer, you can:
 
 - Go to [Bot Framework Composer issues on GitHub](https://github.com/microsoft/BotFramework-Composer/issues).
 
 - See the list of known issues in Composer or [log a new Composer issue](https://github.com/microsoft/BotFramework-Composer/issues/new/choose).
-
-To troubleshoot your bot in Power Virtual Agents, use the [topic checker](authoring-topic-management.md#topic-errors).
 
 ## Next steps
 

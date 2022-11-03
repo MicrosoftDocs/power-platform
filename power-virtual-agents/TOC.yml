@@ -120,10 +120,10 @@
             href: advanced-use-pva-as-a-skill.md
        - name: Extend with Bot Framework Composer
          items:
-          - name: Extend your bot with Bot Framework Composer
+          - name: Overview of Bot Framework Composer
             href: advanced-bot-framework-composer.md
-          - name: Open your bot in Composer
-            href: advanced-bot-framework-composer-open-bot.md
+          - name: Getting started with Composer
+            href: advanced-bot-framework-composer-fundamentals.md
           - name: Capture telemetry
             href: advanced-bot-framework-composer-capture-telemetry.md
           - name: Show an Adaptive Card

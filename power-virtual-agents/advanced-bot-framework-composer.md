@@ -1,5 +1,5 @@
 ---
-title: "Extend your bot with Bot Framework Composer"
+title: "Overview of Bot Framework Composer"
 description: "Use Bot Framework Composer to add Adaptive Cards, multi-select options, and more to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
 ms.date: 06/28/2022
@@ -13,7 +13,7 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
-# Extend your bot with Bot Framework Composer
+# Overview of Bot Framework Composer
 
 Enhance your bot by developing custom topics (also known as "dialogs") with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
