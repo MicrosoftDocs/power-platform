@@ -30,11 +30,11 @@ To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll ne
 
 1. Select **Open in Bot Framework Composer** from the dropdown menu.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/Composer_OpeninBotFrameworkComposerButton_dropdown.png" alt-text="Open Composer from Topics page.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/Composer_OpeninBotFrameworkComposerButton_dropdown.png" alt-text="Screenshot of the button used to open a bot in Composer.":::
 
 1. Select **download Composer**.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/composer-not-present.png" alt-text="Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/composer-not-present.png" alt-text="Screenshot of the download Composer link highlighted.":::
 
 1. In the **Download Bot Framework Composer** window, select **Download Composer**.
 
@@ -51,17 +51,17 @@ To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll ne
 
 1. The first time you open a Power Virtual Agents bot in Composer, it will be imported into a new Composer project. The name you specified in Power Virtual Agents will automatically be used as the name for the project, but you can also enter a custom name.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/ComposerUI_CreateProject.png" alt-text="Create Bot Framework Composer.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/ComposerUI_CreateProject.png" alt-text="Screenshot of the import screen in Composer.":::
 
 1. Select **Create** to finish importing your bot into Composer.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/ComposerUI_Open_initialView.png" alt-text="Bot Framework Composer Project Initial View.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/ComposerUI_Open_initialView.png" alt-text="Screenshot of the import screen in Composer with the create button highlighted.":::
 
 If Power Virtual Agents is unable to launch Composer automatically, you can launch it manually:
 
 1. Select **Copy Link** to copy the link to your clipboard.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/copy-link.png" alt-text="Screnshot of copy link button.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/copy-link.png" alt-text="Screenshot of copy link button.":::
 
 1. Open a new tab and paste the link in your web browser's address bar.
 
@@ -81,7 +81,7 @@ You can't use the Bot Framework Emulator to test Composer content created for Po
 
 1. Optionally enter a message for **Comments**, then select **Okay**.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/publish-window.png" alt-text="Screenshot of the publish window":::
+    :::image type="content" source="media/advanced-bot-framework-composer/publish-window.png" alt-text="Screenshot of the publish window.":::
 
 1. Once publishing completes, go to Power Virtual Agents. You may need to refresh the page to see the new topics you've added in Composer.
 
@@ -98,15 +98,15 @@ If you're having trouble publishing your Composer content to Power Virtual Agent
 
 1. Select the right arrow (**>**) next to your bot. You may need to increase the size of the Composer window to make the arrow visible.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/open-publish-history.png" alt-text="Composer Publish - See Log.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/open-publish-history.png" alt-text="Screenshot of the right arrow button.":::
 
 1. Under **Publish history**, select **View log**.
 
-   :::image type="content" source="media/advanced-bot-framework-composer/view-log.png" alt-text="Composer Publish - See Log.":::
+   :::image type="content" source="media/advanced-bot-framework-composer/view-log.png" alt-text="Screenshot of the View log button under Publish history.":::
 
 1. In the **Publish log** window, review logs for any errors or warnings.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/Tl_PublishError.png" alt-text="Composer Publish - warnings and errors.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/Tl_PublishError.png" alt-text="Screenshot of the public log.":::
 
 If you encounter issues developing in Composer, you can:
 

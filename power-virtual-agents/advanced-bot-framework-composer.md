@@ -63,11 +63,11 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
 - The topics from your Power Virtual Agents bot will be displayed in Composer. You can't edit these topics in Composer; selecting them will open these topics in Power Virtual Agents for editing.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/Gd_PVA_Topics.png" alt-text="Bot Framework Composer - Power Virtual Agents topics.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/pva-topics-in-composer.png" alt-text="Screenshot of the list of topics in Composer that were imported from a Power Virtual Agents bot.":::
 
 - Use **Begin a Power Virtual Agents Topic** to call Power Virtual Agents topics in Composer.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Bot Framework Composer - call Power Virtual Agents topics.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Screenshot of Composer's add node menu.":::
 
 - You can add new Bot Framework triggers of any kind to your main (also known as "root") dialog.
 

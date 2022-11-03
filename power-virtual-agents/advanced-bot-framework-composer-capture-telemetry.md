@@ -26,15 +26,15 @@ To connect to your Application Insights service in Composer, you need to add you
 
 1. Go to the **Configure** tab in Composer.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/configure-tab.png" alt-text="Composer Configure tab - Advanced Settings View.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/configure-tab.png" alt-text="Screenshot of the configure tab.":::
 
 1. Enable **Advanced Settings View (json)**.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/advanced-settings.png" alt-text="Composer Configure tab - Advanced Settings View.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/advanced-settings.png" alt-text="Screenshot of the Advanced Settings View toggle.":::
 
 1. Find the **applicationInsights** section, then add your Application Insights instrumentation key to the **instrumentationKey** setting.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/Configure_AppInsights_Key.png" alt-text="Composer Configure tab - Application Insights Instrumentation key.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/Configure_AppInsights_Key.png" alt-text="Screenshot of the applicationInsight key in the project JSON.":::
 
 To learn more on how to set up and use Application Insights and create queries for Composer's Adaptive dialogs, see these resources:
 
