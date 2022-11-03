@@ -67,7 +67,7 @@
           href: powershell-api.md
         - name: Pipelines (preview)
           items:
-            - name: What is Power Platform pipeline?
+            - name: What are Power Platform pipelines?
               href: pipelines.md
 
     - name: ALM for developers

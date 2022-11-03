@@ -30,7 +30,7 @@ This section describes how you as a Power Platform administrator or app maker ca
 
 ### Create a pipeline
 
-Power Platform administrators can create one or more pipelines.
+Power Platform or administrators can create one or more pipelines.
 
 #### Prerequisites
 
@@ -45,11 +45,10 @@ Before you begin, you’ll need to choose which environments will participate in
 - Production environment. The final destination for a deployment pipeline. This is where end users will run the apps that are deployed.
 
 > [!TIP]
-> Provide environment names that indicate their purpose. For example, *Contoso Host*, *Contoso Dev*, and so on.
+> Use environment names that indicate their purpose. For example, *Contoso Host*, *Contoso Dev*, and so on.
 
 #### Install the Power Platform Pipelines package in your host environment
 
-1. First, copy and paste the Environment ID’s of all environments participating in the pipelines to a notepad. You’ll need these later. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Environments** > **New**, and create a new environment with a Dataverse database or Dataverse plus Dynamics 365 Customer Engagement apps database in either Canada, South America, France, or India.
 1. Select **Frequent** as the **Refresh cadence** to ensure you quickly receive the latest updates. You can change this later by editing the environment details.
 1. Install the Deployment Pipelines application in your host environment. Open a new browser tab and go to [Appsource to get the pipeline app](https://appsource.microsoft.com/product/dynamics-crm/mscrm.4709698f-7284-429e-bed9-fe711a54e8b6-preview?flightCodes=deploymentpipelines).
@@ -63,6 +62,7 @@ Once installed the Deployment Pipelines Configuration application will appear in
 
 #### Configure a deployment pipeline
 
+1. Copy and paste the Environment ID’s of all environments participating in the pipelines to a clear text editor such as notepad. You’ll need these later. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
 1. Once the Deployment Pipeline package installation has completed, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), then select the dedicated host environment (where you’ve just installed the application).
 1. Play the **Deployment Pipeline Configuration** App.
 1. Select **Environments** on the left pane, and then select **New** to create the environment records in Dataverse:
@@ -93,8 +93,8 @@ Then makers can [run pipelines](#run-pipelines) they have access to.
 Grant access to run one or more pipelines. Typically, makers won’t be allowed to create or edit pipelines, nor will they be able to run pipelines they don’t have access to.
 
 1. Assign makers the **Deployment Pipeline User** security role within the host environment. This security role is installed with the Power Platform Pipelines package. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
-1. In the Deployment Pipeline Configuration app, share pipeline record(s) with makers (or AAD groups). [Share rows with a user or team](/power-apps/user/share-row)
-1. Makers must also have security roles within the development, test, and production environments that are linked to the pipeline they’ll use. Note that the same privileges are required as for manually exporting and importing solutions from and to these environments.
+1. In the Deployment Pipeline Configuration app, share pipeline records with makers (or Azure Active Directory groups). [Share rows with a user or team](/power-apps/user/share-row)
+1. Makers must also have appropriate security roles within the development, test, and production environments that are linked to the pipeline they’ll use. Note that the same privileges are required as for manually exporting and importing solutions from and to these environments.
 
 #### Run a pipeline
 
@@ -125,5 +125,8 @@ When you install the Power Platform Pipelines package, two security roles are cr
 - Deployment Pipeline Administrator. Has full control over all pipeline configuration, without needing system administrator security role membership.
 - Deployment Pipeline User. Has privileges to run pipelines that have been shared with them. More information: [Grant access to run pipelines](#grant-access-to-run-pipelines)
 
+## See also
+
+[Overview of Power Platform pipelines (preview)](pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
