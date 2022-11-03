@@ -33,7 +33,7 @@ With Power Platform pipelines, makers can easily use pre-configured pipelines to
 Admins centrally manage all citizen-led and pro-dev-led projects at scale. Admins set up the appropriate safeguards that govern all low-code solution development within their organization. These safeguards not only govern the citizen developer’s initial exploration and eventual solution development, but also provide a path for how and when no-code authored solutions can join in the organization’s more managed ALM process. Benefits include:
 
 - Customization of maker processes with the appropriate safeguards.
-- Automate, review, and approve maker requests (if required).
+- Automate, review, and approve maker requests (if necessary).
 - Achieve compliance, safety, monitoring, and automation goals by having customizations backed by their source control and build automation systems.
 
 ## Makers run pre-configured pipelines
