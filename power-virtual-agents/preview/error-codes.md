@@ -64,6 +64,7 @@ Common problems include, but aren't limited to:
 
 ### DataLossPreventionViolation
 
+<!-- NOTE: this error message is wrong, as the UI has been changed from "Manage" to "Settings". Keeping it for now since it's what the product shows users. -->
 **Error message:** "This environment requires users to sign in before they can use the bot. Go to Manage > Security > Authentication and select the option to require users to sign in."
 
 **Resolution:** Your environment's data loss prevention (DLP) policies requires that user's sign in. To learn how to require users to sign in, see [Configure user authentication](advanced-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
