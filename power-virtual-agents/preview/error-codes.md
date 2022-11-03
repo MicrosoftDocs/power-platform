@@ -37,7 +37,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-status.md#topic-er
 | Error code                                                        | Description                                                         |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
 | [ContentError](#contenterror)                                     | There's an error in the topic content.                              |
-| [DlpPoliciesViolationException](#dlppoliciesviolationexception)   |                                                                     |
+| [DataLossPreventionViolation](#datalosspreventionviolation)       | There was a data loss prevention violation.                         |
 | [FlowActionException](#flowactionexception)                       | An error occurred while executing a [flow][2].                      |
 | [FlowActionBadRequest](#flowactionbadrequest)                     | A request made to a [flow][2] was malformed.                        |
 | [InvalidContent](#invalidcontent)                                 | Invalid content was added to the code editor.                       |
@@ -62,11 +62,11 @@ Common problems include, but aren't limited to:
 - Invalid YAML added with the [code editor](authoring-create-edit-topics.md).
 - An error in a [Power Fx formula](advanced-power-fx.md).
 
-### DlpPoliciesViolationException
+### DataLossPreventionViolation
 
-**Error message:** "Sorry, the bot can't talk for a while. It's something the bot's owner needs to address."
+**Error message:** "This environment requires users to sign in before they can use the bot. Go to Manage > Security > Authentication and select the option to require users to sign in."
 
-**Resolution:** Contact your administrator to review your tenant's data loss prevention (DLP) policies.
+**Resolution:** Your environment's data loss prevention (DLP) policies requires that user's sign in. To learn how to require users to sign in, see [Configure user authentication](advanced-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
 
 ### FlowActionException
 
