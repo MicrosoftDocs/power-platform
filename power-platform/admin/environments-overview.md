@@ -117,7 +117,9 @@ Microsoft 365 Power Platform admins are automatically assigned the Dataverse sec
 
 The default environment is created using the naming convention *TenantName* (default).  Power Platform administrators should consider renaming the default environment to something more descriptive, such as *Personal Productivity Environment* that clearly calls out the intent of the environment. More information: [Edit properties of an environment](edit-properties-environment.md) 
 
-For more information, go to [Manage the default environment](../guidance/adoption/manage-default-environment.md) and [Secure the default environment](../guidance/adoption/secure-default-environment.md).
+### Default environment best practices
+
+For more guidance information with the default environment, go to [Manage the default environment](../guidance/adoption/manage-default-environment.md) and [Secure the default environment](../guidance/adoption/secure-default-environment.md).
 
 ## Production and trial environments
 
