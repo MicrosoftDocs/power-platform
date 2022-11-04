@@ -115,7 +115,7 @@ Microsoft 365 Power Platform administrators are automatically assigned the Datav
 
 ### Rename the default environment
 
-The default environment is created using the naming convention *TenantName* (default).  Power Platform administrators should consider renaming the default environment to something more descriptive, such as *Personal Productivity Environment* that clearly calls out the intent of the environment. 
+The default environment is created using the naming convention {Azure AD tenant name} (default).  Power Platform administrators should consider renaming the default environment to something more descriptive, such as *Personal Productivity Environment* that clearly calls out the intent of the environment. 
 
 > [!NOTE]
 > After you change the name of the default environment, you can still identify it from the Power Platform admin center as the only environment with the environment **Type** of **Default**.
