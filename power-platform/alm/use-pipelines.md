@@ -12,6 +12,8 @@ ms.custom: template-how-to
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
+Create and run pipelines to easily deploy solutions to environments.
+
 > [!IMPORTANT]
 > - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
