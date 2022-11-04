@@ -43,6 +43,6 @@ Once admins have pipelines in place, makers use the pre-configured pipelines to 
 
 ## Next steps
 
-[Power Platform pipelines (preview)](admins-makers.md#power-platform-pipelines-preview)
+[Use Power Platform pipelines (preview)](use-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
