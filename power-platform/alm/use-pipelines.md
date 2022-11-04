@@ -117,3 +117,4 @@ When you install the Power Platform Pipelines package, two security roles are cr
 
 ## Next steps
 
+[Solution concepts](solution-concepts-alm.md)
