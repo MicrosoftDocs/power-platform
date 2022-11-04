@@ -41,6 +41,8 @@
                   href: adoption/environment-strategy.md
                 - name: Manage Dataverse for Teams environments
                   href: adoption/teams-environment-strategy.md
+                - name: Manage the default environment
+                  href: manage-default-environment.md  
             - name: Secure
               items:
                 - name: Establish DLP policies
@@ -49,6 +51,8 @@
                   href: adoption/conditional-access.md
                 - name: Enable cross-tenant isolation
                   href: /power-platform/admin/cross-tenant-restrictions
+                - name: Secure the default environment
+                  href: secure-default-environment.md
             - name: Monitor and alert
               items:
                 - name: Report on resource usage
