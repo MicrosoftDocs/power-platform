@@ -111,11 +111,16 @@ The capacity check conducted prior to creating new environments will exclude the
 
 ### Assign administrators to the default environment
 
-Microsoft 365 Power Platform admins are automatically assigned the Dataverse security administrator security role in the default environment. However, no user is automatically added to the default environment as a system administrator.  To avoid the possibility of an administrative lockout to the default environment, we recommend that you assign the system administrator security role to a few trusted users without assigning those users the Power Platform administrator role. More information: [Environments with a Dataverse database](database-security.md#environments-with-a-dataverse-database)
+Microsoft 365 Power Platform administrators are automatically assigned the Dataverse system administrator security role in the default environment. However, no other users are automatically added to the default environment as an administrator. To avoid the possibility of an administrative lockout to the default environment, we recommend that you assign the system administrator security role to a few trusted users without assigning those users the Power Platform administrator role. More information: [Environments with a Dataverse database](database-security.md#environments-with-a-dataverse-database)
 
 ### Rename the default environment
 
-The default environment is created using the naming convention *TenantName* (default).  Power Platform administrators should consider renaming the default environment to something more descriptive, such as *Personal Productivity Environment* that clearly calls out the intent of the environment. More information: [Edit properties of an environment](edit-properties-environment.md) 
+The default environment is created using the naming convention *TenantName* (default).  Power Platform administrators should consider renaming the default environment to something more descriptive, such as *Personal Productivity Environment* that clearly calls out the intent of the environment. 
+
+> [!NOTE]
+> After you change the name of the default environment, you can still identify it from the Power Platform admin center as the only environment with the environment **Type** of **Default**.
+
+More information: [Edit properties of an environment](edit-properties-environment.md) 
 
 ### Default environment best practices
 
