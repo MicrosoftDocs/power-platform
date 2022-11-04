@@ -28,7 +28,7 @@ To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll ne
 
 1. Go to the **Topics** tab for the bot you want to edit and select the down-arrow symbol next to **+ New topic**.
 
-1. Select **Open in Bot Framework Composer** from the dropdown menu.
+1. Select **Open in Bot Framework Composer** from the drop-down menu.
 
     :::image type="content" source="media/advanced-bot-framework-composer/Composer_OpeninBotFrameworkComposerButton_dropdown.png" alt-text="Screenshot of the button used to open a bot in Composer.":::
 
@@ -65,7 +65,7 @@ If Power Virtual Agents is unable to launch Composer automatically, you can laun
 
 1. Open a new tab and paste the link in your web browser's address bar.
 
-## Testing Bot Framework content with Power Virtual Agents
+## Test Composer content within Power Virtual Agents
 
 You can't use the Bot Framework Emulator to test Composer content created for Power Virtual Agents bots. Instead you'll need to publish your Composer content to your Power Virtual Agents bot, then use the [Test bot pane](authoring-test-bot.md).
 
@@ -75,7 +75,7 @@ You can't use the Bot Framework Emulator to test Composer content created for Po
 
     :::image type="content" source="media/advanced-bot-framework-composer/publish-tab.png" alt-text="Screenshot of the publish tab in Composer.":::
 
-1. Turn on the box next to your bot, then select **Publish selected bots**.
+1. Select your bot in the **Bot** list, then select **Publish selected bots**.
 
     :::image type="content" source="media/advanced-bot-framework-composer/publish-bot.png" alt-text="Screenshot of the bot selected for publish.":::
 

@@ -26,7 +26,7 @@ Composer is integrated into Power Virtual Agents to allow developers and busines
 
 Composer with Power Virtual Agents lets you access conversational memory and context, including the variables defined in Power Virtual Agents.
 
-For example, you could create event-driven dynamic topics to handle interruptions, cancellations, and context switching. You could also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
+For example, you can create topics to handle interruptions, cancellations, and context switching. You can also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
 
 There are a variety of prebuilt functions and expressions in Composer for you to use, as well as the ability to define multiple variations of a phrase for the bot to randomly select at runtime.
 
@@ -65,13 +65,13 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
     :::image type="content" source="media/advanced-bot-framework-composer/pva-topics-in-composer.png" alt-text="Screenshot of the list of topics in Composer that were imported from a Power Virtual Agents bot.":::
 
-- Use **Begin a Power Virtual Agents Topic** to call Power Virtual Agents topics in Composer.
+- Use a **Begin a Power Virtual Agents Topic** action to call Power Virtual Agents topics in Composer.
 
     :::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Screenshot of Composer's add node menu.":::
 
 - You can add new Bot Framework triggers of any kind to your main (also known as "root") dialog.
 
-- You can use **Send a response** and **Ask a question** events in new triggers added to main dialog.
+- You can send messages and ask questions from these Composer triggers.
 
 - You can't use the Regular expression recognizer in the main dialog. Using the Regular expression recognizer in the main dialog will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialog.
 
@@ -81,17 +81,17 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
     :::image type="content" source="media/advanced-bot-framework-composer/common-empty.png" alt-text="Screenshot of the common bot responses section empty.":::
 
-- All Language Generation (.lg) and Language Understanding (.lu) files should have the corresponding dialogs. For example, if you have only one dialog with the name `dialog1`, then you can only have `dialog1.en-us.lg` and `dialog1.en-us.lu`.
+- Each Composer dialog has its own bot response (.lg) and language understanding (.lu) resources. For example, a bot that speaks English (US) and has a dialog named `dialog1` will have one `dialog1.en-us.lg` file and one `dialog1.en-us.lu` file.
 
 - The main dialog in Composer should never be deleted, as it corresponds to your Power Virtual Agents bot. The main dialog can have zero or more triggers.
 
-- You can capture telemetry in Composer dialogs and triggers and use [Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze it with [Kusto queries for Adaptive dialogs](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed). Refer to the [Capture telemetry with Application Insights](advanced-bot-framework-composer-capture-telemetry.md) section for more information.
+- You can capture telemetry in Composer dialogs and triggers and use [Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze it with [Kusto queries for adaptive dialogs](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed). Refer to the [Capture telemetry with Application Insights](advanced-bot-framework-composer-capture-telemetry.md) section for more information.
 
 For a deep-dive on Bot Framework Composer dialogs, events, triggers, and how to create advanced bot content with Bot Framework, refer to the following resources:
 
 - [Bot Framework Composer dialogs](/composer/concept-dialog)
 - [Bot Framework Composer events and triggers](/composer/how-to-define-triggers)
-- [Language Generation](/composer/concept-language-generation)
+- [Language generation](/composer/concept-language-generation)
 - [Conversation flow and memory](/composer/concept-memory)
 
 [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
@@ -107,7 +107,7 @@ To learn more about developing in Bot Framework Composer, see these resources:
 - [Tutorial: Add language generation to your bot](/composer/tutorial/tutorial-language-generation)
 - [Bot Framework Composer on GitHub](https://github.com/Microsoft/BotFramework-Composer)
 
-## Next step
+## Next steps
 
 - [Open your bot in Composer for the first time](advanced-bot-framework-composer-fundamentals.md)
 
