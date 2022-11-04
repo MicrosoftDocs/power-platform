@@ -30,7 +30,7 @@ With Managed Environments, admins can easily identify all the data policies that
 
 1. In the **Data policies** section, select **See active data policies for this environment**.
 
-    :::image type="content" source="media/managed-environment-weekly-see-active-data-policies.png" alt-text="Screenshot of an Edit Environment Managements settings screen, with See active data policies for this environment highlighted.":::
+    :::image type="content" source="media/managed-environment-weekly-see-active-data-policies.png" alt-text="Screenshot of an Edit Environment Management settings screen, with See active data policies for this environment highlighted.":::
 
 The data policies page opens in a new tab. The view is filtered to display only the data policies that are applied to the managed environment.
 
