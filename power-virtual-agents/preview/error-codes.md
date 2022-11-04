@@ -67,7 +67,11 @@ Common problems include, but aren't limited to:
 <!-- NOTE: this error message is wrong, as the UI has been changed from "Manage" to "Settings". Keeping it for now since it's what the product shows users. -->
 **Error message:** "This environment requires users to sign in before they can use the bot. Go to Manage > Security > Authentication and select the option to require users to sign in."
 
-**Resolution:** Your environment's data loss prevention (DLP) policies requires that user's sign in. To learn how to require users to sign in, see [Configure user authentication](advanced-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
+**Resolution:**
+
+- Your environment's data loss prevention (DLP) policies requires that user's sign in. To learn how to require users to sign in, see [Configure user authentication](advanced-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
+- One or more connectors used in the bot are not in the same data group. To learn more about connectors, see [Power Virtual Agents connectors](admin-data-loss-prevention.md#power-virtual-agents-connectors).
+- One or more connectors used in the bot are blocked by the tenant administrator.
 
 ### FlowActionException
 
