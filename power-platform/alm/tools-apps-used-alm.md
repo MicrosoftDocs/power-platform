@@ -65,9 +65,9 @@ are only possible manually today in Power Apps or the Power Platform admin cente
 
 More information: [Manage solutions using PowerShell](powershell-api.md)
 
-### Pipelines (preview)
+## Pipelines
 
-TO DO: Add content
+With Power Platform pipelines, admins create and configure pipelines so makers can use them to deploy solutions to environments with a single click. More information: [Overview of Power Platform pipelines (preview)](pipelines.md)
 
 ## Tools and apps used by developers
 
