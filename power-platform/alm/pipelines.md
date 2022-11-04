@@ -31,7 +31,7 @@ With Power Platform pipelines, makers can easily use pre-configured pipelines to
 
 ## Admins centrally manage and govern pipelines
 
-Admins centrally manage all citizen-led and pro-dev-led projects at scale. Admins set up the appropriate safeguards that govern all low-code solution development within their organization. These safeguards not only govern the citizen developer’s initial exploration and eventual solution development, but also provide a path for how and when no-code authored solutions can join in the organization’s more managed ALM process. Benefits include:
+Admins centrally manage all citizen-led and pro-dev-led projects at scale. Admins set up the appropriate safeguards that govern all low-code solution development within their organization. These safeguards not only govern the citizen developer’s initial exploration and eventual solution development, but also provide a path for how and when no-code authored solutions can join in the organization’s more managed ALM process. Power Platform pipeline central administration benefits include:
 
 - Customization of maker processes with the appropriate safeguards.
 - Automate, review, and approve maker requests (if necessary).

@@ -30,11 +30,11 @@ This section describes how you as a Power Platform administrator or app maker ca
 
 ### Create a pipeline
 
-Power Platform or administrators can create one or more pipelines.
+Power Platform administrators can create one or more pipelines.
 
 #### Prerequisites
 
-- At least two Power Platform environments. Each must include a Microsoft Dataverse database.
+- Four environments are recommended, but you can use as few as two Power Platform environments to create a pipeline. All environments that participate in pipelines should have a Microsoft Dataverse database.
 - Power Platform administrator or Dataverse system administrator role.
 
 Before you begin, you’ll need to choose which environments will participate in pipelines. A common set-up might include the following environments:
@@ -58,18 +58,19 @@ Before you begin, you’ll need to choose which environments will participate in
    > [!IMPORTANT]
    > You only need to install the Deployment Pipelines application in the host environment. You don't need to install it in other environments, such as development, QA or production, that will be part of your pipelines.
 
-Once installed the Deployment Pipelines Configuration application will appear in the list of installed Dynamics 365 apps.
+Once installed the Deployment Pipelines Configuration application will appear in the list of installed apps.
 
 #### Configure a deployment pipeline
 
 1. Copy and paste the Environment IDs of all environments participating in the pipelines to a clear text editor such as notepad. You’ll need these later. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
 1. Once the Deployment Pipeline package installation has completed, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), then select the dedicated host environment (where you’ve installed the application).
-1. Play the **Deployment Pipeline Configuration** App.
+1. **Play** the **Deployment Pipeline Configuration** app.
 1. Select **Environments** on the left pane, and then select **New** to create the environment records in Dataverse:
    - **Name**. Enter the name for the environment record, it's a good idea to include the same name as the actual environment, such as **Contoso Dev**.
    - **EnvironmentType**: Select either **DevEnvironment** or **TargetEnvironment**. Select **DevEnvironment** for all source environments where unmanaged solutions will be exported. Select **TargetEnvironment** for QA and production environments where the managed solution artifacts will be deployed.
    - EnvironmentId: Paste in the environment ID that you copied in the earlier step.
 1. Select **Save**.
+1. Repeat steps 4-5 until all environments that will participate in the pipeline have environment records created.
 1. Select **Pipelines** on the left navigation pane, and then select **New** to create a new deployment pipeline. Note that a pipeline must be linked to a development environment before it can be used:
    - **Name**. Enter a name for the pipeline, such as *Contoso Sales App Deployment Pipeline*.
    - **Description**. Optionally, enter a description for the pipeline.
@@ -93,15 +94,15 @@ Then makers can [run pipelines](#run-pipelines) they have access to.
 Grant access to run one or more pipelines. Typically, makers won’t be allowed to create or edit pipelines, nor will they be able to run pipelines they don’t have access to.
 
 1. Assign makers the **Deployment Pipeline User** security role within the host environment. This security role is installed with the Power Platform Pipelines package. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
-1. In the Deployment Pipeline Configuration app, share pipeline records with makers (or Azure Active Directory groups). [Share rows with a user or team](/power-apps/user/share-row)
+1. In the Deployment Pipeline Configuration app, share pipeline records with makers (or Azure Active Directory groups). More information: [Share rows with a user or team](/power-apps/user/share-row)
 1. Makers must also have appropriate security roles within the development, test, and production environments that are linked to the pipeline they’ll use. Note that the same privileges are required as for manually exporting and importing solutions from and to these environments.
 
 #### Run a pipeline
 
 1. Sign into a Power Platform preview environment (make.preview.powerapps.com) and select your development environment.
-1. To enable the feature, append the following to your browserURL:`?cdsCommon.enableAppDeployment=true&powerappsConnections.enableInlineConnectionCreation=true&cdsCommon.enableAppDeploymentPipelinesPolling=true&make.enableMultiEnvironmentGraphQLService=true`. For example: https://make.preview.powerapps.com?cdsCommon.enableAppDeployment=true&powerappsConnections.enableInlineConnectionCreation=true&cdsCommon.enableAppDeploymentPipelinesPolling=true&make.enableMultiEnvironmentGraphQLService=true
+1. To enable the feature, append the following to your browser URL:`?cdsCommon.enableAppDeployment=true&powerappsConnections.enableInlineConnectionCreation=true&cdsCommon.enableAppDeploymentPipelinesPolling=true&make.enableMultiEnvironmentGraphQLService=true`. For example: https://make.preview.powerapps.com?cdsCommon.enableAppDeployment=true&powerappsConnections.enableInlineConnectionCreation=true&cdsCommon.enableAppDeploymentPipelinesPolling=true&make.enableMultiEnvironmentGraphQLService=true
 1. To deploy a solution using a pipeline, go to **Solutions** and create or select an unmanaged solution to deploy.
-1. Choose between two options to include the solution in the pipeline:
+1. From the **Solutions** area, choose between two options to include the solution in the pipeline:
    - Select **Pipelines** from the left navigation pane.
    - Select **Overview** from the left navigation pane, and then select **Deploy** on the command bar.
 1. Select the stage you want, such as *Test Stage*, and then select **Next**. This will initiate validation of the solution against the test environment. This validation can also be referred to as “pre-flight” checks. Missing dependencies and other common issues are checked that might cause a deployment to fail.
