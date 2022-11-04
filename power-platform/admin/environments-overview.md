@@ -4,7 +4,7 @@ description: Learn about Power Platform environments and how to use them.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/25/2022
+ms.date: 11/04/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -15,7 +15,6 @@ search.app:
   - Powerplatform
   - Flow
 ---
-
 # Environments overview
 
 A *Power Platform environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
@@ -26,6 +25,7 @@ A *Power Platform environment* is a space to store, manage, and share your organ
 - You might also create separate environments for different global branches of your company.  
 
 ## Environment scope
+
 Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
 
 Every environment can have zero or one Microsoft Dataverse database, which provides storage for your apps and chatbots. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
@@ -37,6 +37,7 @@ You can also move resources between environments. More information: [Migrate res
 ![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database.](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
 
 ## Environment permissions
+
 Environments have two built-in roles that provide access to permissions within an environment:
 
 - The *Environment Admin* role can perform all administrative actions on an environment, including the following:
@@ -108,7 +109,16 @@ The default environment is limited to 1 TB of storage capacity. To store more da
 
 The capacity check conducted prior to creating new environments will exclude the default environment's included storage capacity when calculating whether you have  sufficient capacity to create a new environment.
 
+### Assign administrators to the default environment
+
+Microsoft 365 Power Platform admins are automatically assigned the Dataverse security administrator security role in the default environment. However, no user is automatically added to the default environment as a system administrator.  To avoid the possibility of an administrative lockout to the default environment, we recommend that you assign the system administrator security role to a few trusted users without assigning those users the Power Platform administrator role. More information: [Environments with a Dataverse database](database-security.md#environments-with-a-dataverse-database)
+
+### Rename the default environment
+
+The default environment is created using the naming convention *TenantName* (default).  Power Platform administrators should consider renaming the default environment to something more descriptive, such as *Personal Productivity Environment* that clearly calls out the intent of the environment. More information: [Edit properties of an environment](edit-properties-environment.md) 
+
 ## Production and trial environments
+
 You can create environments for different purposes. A trial environment is for trying out the environment and the experience of using a database with Dataverse. It expires after a certain period. 
 
 ## Manage environments in the Power Platform admin center
