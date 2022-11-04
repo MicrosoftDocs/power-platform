@@ -115,10 +115,6 @@ The runtime experience isn't affected. However, we strongly recommend that you r
 
 For now, your account team will work with you to stay within your entitlement limit.  
 
-### Our storage usage is over. Do we owe for past months we've been over?
-
-You won't be billed in arrears for past overage because usage versus entitlements reporting wasn't available in the past.
-
 ### We have multiple Lifecycle Services (LCS) Projects in our tenant with each having its own production and sandbox environment. How does storage reporting work in this case?
 
 Storage reporting covers usage at the tenant and environment level. All environments in all LCS Projects on the tenant will be included in storage reporting.
