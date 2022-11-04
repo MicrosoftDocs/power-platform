@@ -43,7 +43,7 @@ You can use the connectors in DLP policies to protect your organization's data f
 
 The following Power Virtual Agents connectors are available in the Power Platform admin center.
 
-![Screenshot of a list of the connectors available for Power Virtual Agents](media/admin-data-loss-prevention/image1.png)
+:::image type="content" source="media/admin-data-loss-prevention/image1.png" alt-text="Screenshot of a list of the connectors available for Power Virtual Agents":::
 
 | Connector name | Description |
 |-------------------------|-------------------------|
@@ -97,7 +97,7 @@ You may also decide to exempt one or more bots from DLP policy enforcement, depe
 
 You can configure an email and learn-more link using the `Set-PowerAppDlpErrorSettings` PowerShell cmdlet. Your bot makers will see this information when they experience DLP errors.
 
-![Screenshot of the Power Virtual Agents web app showing a DLP related error  with error text highlighted ](media/admin-data-loss-prevention/image2.png)
+:::image type="content" source="media/admin-data-loss-prevention/image2.png" alt-text="Screenshot of the Power Virtual Agents web app showing a DLP related error  with error text highlighted ":::
 
 To add the email and learn-more link for the first time, run the following PowerShell script, replacing the values for the `<email>`, `<URL>`, and `<tenant ID>` parameters with your own.
 
@@ -155,11 +155,11 @@ To find chatbots that could be impacted by your organization's existing DLP poli
 
 1. Use the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/power-bi) to get a list of chatbots in your organization. Go to the Power Virtual Agents Overview page on the CoE Dashboard to see the chatbots and environment names in your organization.
 
-    ![Screenshot of the CoE Starter Kit dashboard opened to the Power Virtual Agents overview.](media/admin-data-loss-prevention/coe-dashboard.png)
+    :::image type="content" source="media/admin-data-loss-prevention/coe-dashboard.png" alt-text="Screenshot of the CoE Starter Kit dashboard opened to the Power Virtual Agents overview.":::
 
 1. Run a campaign with the bot makers in your organization to address DLP errors or updated DLP policies. You can download all DLP errors thrown by a chatbot by selecting **Download details** on the error notification banner in Power Virtual Agents.
 
-    ![Screenshot of the error notification banner showing the option to download details of the error.](media/admin-data-loss-prevention/download-dlp-error-details.png)
+    :::image type="content" source="media/admin-data-loss-prevention/download-dlp-error-details.png" alt-text="Screenshot of the error notification banner showing the option to download details of the error.":::
 
 #### Enable DLP enforcement for chatbots
 

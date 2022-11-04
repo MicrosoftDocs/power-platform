@@ -27,21 +27,21 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
     1. To create a new policy, select **New policy**, enter a name for the policy, and select **Next**.
 
-        ![Screenshot of the Power Platform admin center  open to the Data policies  New Policy section.](media/admin-data-loss-prevention/image3.png)
+        :::image type="content" source="media/admin-data-loss-prevention/image3.png" alt-text="Screenshot of the Power Platform admin center  open to the Data policies  New Policy section.":::
 
     1. To add this connector to an existing DLP policy, select the policy you want to update, and then select **Edit policy**.
 
-        ![Screenshot of the Power Platform admin center  open to the Data policies section  with an existing policy and the Edit Policy button highlighted.](media/admin-data-loss-prevention/image4.png)
+        :::image type="content" source="media/admin-data-loss-prevention/image4.png" alt-text="Screenshot of the Power Platform admin center  open to the Data policies section  with an existing policy and the Edit Policy button highlighted.":::
 
 1. Under **Prebuilt connectors**, find the **HTTP connector**.
 
 1. Select the connector's menu ellipses (shown as three dots in a vertical line next to the connector's name), and then select **Block**. Select **Next**.
 
-    ![Screenshot of the Power Platform admin center  showing the contextual menu for a connector available from the menu icon.](media/admin-data-loss-prevention/image5.png)
+    :::image type="content" source="media/admin-data-loss-prevention/image5.png" alt-text="Screenshot of the Power Platform admin center  showing the contextual menu for a connector available from the menu icon.":::
 
 1. Under **Review**, select **Update policy** to apply the DLP changes.
 
-    ![Screenshot of the review screen when creating a DLP policy ](media/admin-data-loss-prevention/image6.png)
+    :::image type="content" source="media/admin-data-loss-prevention/image6.png" alt-text="Screenshot of the review screen when creating a DLP policy ":::
 
 ## Confirm policy enforcement in Power Virtual Agents
 
@@ -51,6 +51,6 @@ First, open your bot from the environment where the DLP policy is applied. Go to
 
 If the policy is enforced, you'll see an error in the [**Topic checker**](authoring-topic-management.md) that says DLP policies are blocking HTTP requests for the affected node. The error is titled "HTTP requests blocked" and includes a message advising you to remove the HTTP request or contact an admin.
 
-![Screenshot of the Topic checker in Power Virtual Agents with an error message saying HTTP requests are blocked.](media/admin-data-loss-prevention/image9.png)
+:::image type="content" source="media/admin-data-loss-prevention/image9.png" alt-text="Screenshot of the Topic checker in Power Virtual Agents with an error message saying HTTP requests are blocked.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
