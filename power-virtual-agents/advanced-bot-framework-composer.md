@@ -32,6 +32,8 @@ There are a variety of prebuilt functions and expressions in Composer for you to
 
 Custom topics added with Bot Framework Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and don't require any additional Azure hosting.
 
+<!-- TODO: link to table of composer/pva terms once its merged. branch: alarioza/composer-term-map -->
+
 > [!IMPORTANT]
 > Bot Framework Composer integration isn't available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
 
