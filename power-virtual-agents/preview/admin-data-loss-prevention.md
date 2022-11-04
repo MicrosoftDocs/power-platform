@@ -26,15 +26,15 @@ Administrators can govern chatbots in your organization using data loss preventi
 
 ## Prerequisites
 
--   Review concepts about [DLP policies](/power-platform/admin/wp-data-loss-prevention)
+- Review concepts about [DLP policies](/power-platform/admin/wp-data-loss-prevention)
 
 ## Power Virtual Agents connectors
 
 Power Virtual Agents connectors can be classified within a DLP policy under the following data groups, which are presented in the Power Platform admin center when reviewing DLP policies:
 
--   Business
--   Non-business
--   Blocked
+- Business
+- Non-business
+- Blocked
 
 You can use the connectors in DLP policies to protect your organization's data from any malicious or unintentional data exfiltration by your chatbot makers.
 
@@ -54,26 +54,25 @@ The following Power Virtual Agents connectors are available in the Power Platfor
 | Facebook channel in Power Virtual Agents | Block bot makers from enabling or using the Facebook channel. |
 | Omnichannel in Power Virtual Agents | Block bot makers from enabling or using the Omnichannel channel. |
 
-
 ## Example DLP policy configurations
 
 To help you get started with Power Virtual Agents chatbot governance, we created the following examples that detail different scenarios:
 
--   [Example 1 – Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md)
--   [Example 2 – Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md)
--   [Example 3 – Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md)
+- [Example 1 – Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md)
+- [Example 2 – Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md)
+- [Example 3 – Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md)
 
-## Use PowerShell to enable and administer DLP enforcement for chatbots in your organization 
+## Use PowerShell to enable and administer DLP enforcement for chatbots in your organization
 
 You can configure whether DLP policies should be applied to your chatbots with the [`PowerAppDlpErrorSettings`](/powershell/module/microsoft.powerapps.administration.powershell/set-powerappdlperrorsettings) and `PowerVirtualAgentsDlpEnforcement` PowerShell cmdlets.
 
 You can:
 
--   Confirm if DLP is enabled for bots in your tenant
--   Enable or disable DLP in an auditing mode (`-Mode SoftEnabled`) so bot makers can see errors, but aren't prevented from performing actions that would be blocked if DLP enforcement was fully enabled.
--   Enable or disable DLP enforcement, which will show DLP enforcement errors, and prevent bot makers from publishing DLP-affected bots or configuring DLP-related settings.
--   Exempt specific bots from DLP enforcement.
--   Add and update the learn-more and contact email links that are shown to bot makers when they encounter DLP in the Power Virtual Agents web and Teams apps.
+- Confirm if DLP is enabled for bots in your tenant
+- Enable or disable DLP in an auditing mode (`-Mode SoftEnabled`) so bot makers can see errors, but aren't prevented from performing actions that would be blocked if DLP enforcement was fully enabled.
+- Enable or disable DLP enforcement, which will show DLP enforcement errors, and prevent bot makers from publishing DLP-affected bots or configuring DLP-related settings.
+- Exempt specific bots from DLP enforcement.
+- Add and update the learn-more and contact email links that are shown to bot makers when they encounter DLP in the Power Virtual Agents web and Teams apps.
 
 > [!IMPORTANT]
 > Before using the PowerShell cmdlets, or the example scripts shown here, ensure you [Install all necessary modules using PowerShell](/power-platform/admin/powerapps-powershell#installation).
@@ -82,19 +81,19 @@ You can:
 
 Typically, you would use these cmdlets in accordance with a DLP rollout process, which might consist of the following steps, in order:
 
-1.  Add or update the learn-more and admin contact email links that are shown in DLP errors for bot makers.
+1. Add or update the learn-more and admin contact email links that are shown in DLP errors for bot makers.
 
-1.  Determine which (if any) bots currently have DLP policy enforcement enabled.
+1. Determine which (if any) bots currently have DLP policy enforcement enabled.
 
-1.  Use auditing or "soft" mode so makers can see DLP errors in the Power Virtual Agents web and Teams apps.
+1. Use auditing or "soft" mode so makers can see DLP errors in the Power Virtual Agents web and Teams apps.
 
-1.  Mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
+1. Mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
 
-1.  Enable DLP enforcement for chatbots to prevent DLP-affected tasks and features.
+1. Enable DLP enforcement for chatbots to prevent DLP-affected tasks and features.
 
 You may also decide to exempt one or more bots from DLP policy enforcement, depending on the bot's use case and requirements.
 
-### Add and update the learn-more and admin contact email links 
+### Add and update the learn-more and admin contact email links
 
 You can configure an email and learn-more link using the `Set-PowerAppDlpErrorSettings` PowerShell cmdlet. Your bot makers will see this information when they experience DLP errors.
 
@@ -144,8 +143,6 @@ Get-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID>
 > [!NOTE]
 > If you haven't configured Power Virtual Agents DLP, the results from the cmdlet will be empty.
 
-
-
 #### Use auditing or "soft" mode to see DLP errors in the Power Virtual Agents web or Teams apps
 
 Run the following PowerShell script to enable DLP policies in auditing mode. Bot makers will see DLP-related errors when configuring bots in the Power Virtual Agents web and Teams apps, but they won't be blocked from performing DLP-related actions. They can also publish bots as usual.
@@ -164,16 +161,16 @@ To find chatbots that could be impacted by your organization's existing DLP poli
 
     ![Screenshot of the error notification banner showing the option to download details of the error.](media/admin-data-loss-prevention/download-dlp-error-details.png)
 
-#### Enable DLP enforcement for chatbots 
+#### Enable DLP enforcement for chatbots
 
 > [!IMPORTANT]
-> Before enabling DLP enforcement, ensure you know which bots will show errors to your chatbot users due to DLP policiy violations. 
+> Before enabling DLP enforcement, ensure you know which bots will show errors to your chatbot users due to DLP policiy violations.
 >  
 > If you run into issues, you can exempt a bot from DLP policies or disable DLP enforcement while your makers fix the bot to comply with DLP policies.
 
 You can run the following PowerShell command to enforce DLP policies in Power Virtual Agents. Bot makers will be blocked or prevented from performing DLP-affected actions, and end users will see errors if they try to interact with the DLP-impacted features in a bot.
 
-```PowerShell 
+```PowerShell
 Set-PowerVirtualAgentsDlpEnforcement -TenantId <tenant ID> -Mode Enabled -OnlyForBotsCreatedAfter <date>
 ```
 
@@ -184,7 +181,7 @@ If you've enabled DLP enforcement for your tenant but you need to exempt a bot f
 Make sure to replace `<environment ID>`, `<bot ID>`, `<tenant ID>`, and `<policy ID>` with the appropriate IDs for the bot you want to exempt.
 
 >[!TIP]
-> You can find the `<environment ID>` and `<bot ID>` from the chatbot's URL. 
+> You can find the `<environment ID>` and `<bot ID>` from the chatbot's URL.
 >  
 > The `<policy ID>` is listed alongside the error details in the **Download details** file. You can download that file by selecting **Download details** on the error notification banner in Power Virtual Agents.
 
@@ -218,7 +215,7 @@ $resources = New-PowerAppDlpPolicyExemptResources -TenantId $tenantId -PolicyNam
 Write-Host "Added bot to exempt resources"
 ```
 
-#### Disable DLP enforcement for chatbots 
+#### Disable DLP enforcement for chatbots
 
 The following command will disable DLP enforcement in chatbots.
 

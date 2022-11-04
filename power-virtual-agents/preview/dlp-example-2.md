@@ -21,31 +21,29 @@ You can use data loss prevention policies to prevent bot makers from configuring
 
 See the [Configure data loss prevention for Power Virtual Agents chatbots](admin-data-loss-prevention.md) topic for information about other DLP-related connectors.
 
-### Configure DLP to block HTTP requests in the Power Platform admin center
+## Configure DLP to block HTTP requests in the Power Platform admin center
 
-1.  In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Data policies**.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Data policies**.
 
-    1.  To create a new policy, select **New policy**, enter a name for the policy, and select **Next**.
+    1. To create a new policy, select **New policy**, enter a name for the policy, and select **Next**.
 
         ![Screenshot of the Power Platform admin center  open to the Data policies  New Policy section.](media/admin-data-loss-prevention/image3.png)
 
-    1.  To add this connector to an existing DLP policy, select the policy you want to update, and then select **Edit policy**.
+    1. To add this connector to an existing DLP policy, select the policy you want to update, and then select **Edit policy**.
 
         ![Screenshot of the Power Platform admin center  open to the Data policies section  with an existing policy and the Edit Policy button highlighted.](media/admin-data-loss-prevention/image4.png)
 
-1.  Under **Prebuilt connectors**, find the **HTTP connector**.
+1. Under **Prebuilt connectors**, find the **HTTP connector**.
 
-1.  Select the connector's menu ellipses (shown as three dots in a vertical line next to the connector's name), and then select **Block**. Select **Next**.
+1. Select the connector's menu ellipses (shown as three dots in a vertical line next to the connector's name), and then select **Block**. Select **Next**.
 
     ![Screenshot of the Power Platform admin center  showing the contextual menu for a connector available from the menu icon.](media/admin-data-loss-prevention/image5.png)
 
-
-
-1.  Under **Review**, select **Update policy** to apply the DLP changes.
+1. Under **Review**, select **Update policy** to apply the DLP changes.
 
     ![Screenshot of the review screen when creating a DLP policy ](media/admin-data-loss-prevention/image6.png)
 
-### Confirm policy enforcement in Power Virtual Agents
+## Confirm policy enforcement in Power Virtual Agents
 
 You can confirm that this connector is being used in the DLP policy from the Power Virtual Agents web app.
 
