@@ -58,6 +58,8 @@ In some cases, users will be able to use a migration tool to migrate from the Da
 
 If your flow was created prior to June 2020, you won't be able to use the migration tool. To check this, you can confirm whether the Microsoft Dataverse connector is searchable when editing the flow. If this is the case, or if the migration fails, you'll need to manually recreate your flow using the Microsoft Dataverse connector.
 
+Effective October 2023, all existing flows using the deprecated legacy actions and triggers will cease to work. Users will need to review their existing flows to update them to the new actions and triggers.
+
 ## Microsoft Dataverse (legacy) connector (CDS 2.0 connector) for Azure Logic Apps will be deprecated and replaced with another connector
 
 Effective October 2022, the Microsoft Dataverse (legacy) connector, also referred to as the CDS 2.0 connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components. The Microsoft Dataverse connector will be available for use in Azure Logic Apps in Aug 2022. Users will need to modify their existing logic apps or create new logic apps using the Microsoft Dataverse connector before October 2023.
@@ -67,8 +69,8 @@ There will be a phased-in approach before deprecation takes place. Here's the ti
 - **August 30, 2022:** The actions and triggers in CDS 2.0 connector, also referred to as the Dataverse (legacy) connector, will be updated into the Microsoft Dataverse connector.
     - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility for a period of time.
     - All new logic apps will be created using the new actions.
-- **August 2022 through October 2022 preview period:** Both new and legacy actions and triggers will be available during new flow creation.
-- **October 2022 after preview:** No new logic apps can be created using the CDS 2.0/Dataverse (legacy) connector's actions and triggers, but existing logic apps will continue to work.
+- **August 2022 through January 2023 preview period:** Both new and legacy actions and triggers will be available during new flow creation.
+- **April 2023:** No new logic apps can be created using the legacy actions and triggers, but existing logic apps with those actions and triggers will continue to work.
 
 Effective October 2023, all existing logic apps using the deprecated legacy actions and triggers will cease to work. Users will need to review their existing logic apps to update them to the new Azure Logic Apps triggers.
 
