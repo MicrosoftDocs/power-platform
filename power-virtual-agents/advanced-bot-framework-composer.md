@@ -30,12 +30,12 @@ For example, you can create topics to handle interruptions, cancellations, and c
 
 There are a variety of prebuilt functions and expressions in Composer for you to use, as well as the ability to define multiple variations of a phrase for the bot to randomly select at runtime.
 
-Custom topics added with Bot Framework Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and don't require any additional Azure hosting.
+Custom topics added with Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and don't require any additional Azure hosting.
 
 <!-- TODO: link to table of composer/pva terms once its merged. branch: alarioza/composer-term-map -->
 
 > [!IMPORTANT]
-> Bot Framework Composer integration isn't available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
+> Composer integration isn't available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ Custom topics added with Bot Framework Composer are deployed, hosted, and execut
 
 ## Composer features not supported with Power Virtual Agents
 
-The following Bot Framework Composer features are not supported with Power Virtual Agents:
+The following Composer features are not supported with Power Virtual Agents:
 
 <!-- best viewed/edited without wordwrap -->
 | Unsupported feature                             | Additional information                                                                              |
@@ -71,13 +71,13 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
     :::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Screenshot of Composer's add node menu.":::
 
-- You can add new Bot Framework triggers of any kind to your main (also known as "root") dialog.
+- You can add new Composer triggers of any kind to your main (also known as "root") dialog.
 
 - You can send messages and ask questions from these Composer triggers.
 
 - You can't use the Regular expression recognizer in the main dialog. Using the Regular expression recognizer in the main dialog will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialog.
 
-- You can add any events and triggers to newly created Bot Framework dialogs.
+- You can add any Composer events and triggers to newly created dialogs.
 
 - On the **Bot Responses** tab, the **Common** section should be empty. Using any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
 
@@ -89,7 +89,7 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
 - You can capture telemetry in Composer dialogs and triggers and use [Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze it with [Kusto queries for adaptive dialogs](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed). Refer to the [Capture telemetry with Application Insights](advanced-bot-framework-composer-capture-telemetry.md) section for more information.
 
-For a deep-dive on Bot Framework Composer dialogs, events, triggers, and how to create advanced bot content with Bot Framework, refer to the following resources:
+For a deep-dive on Composer dialogs, events, triggers, and how to create advanced bot content with Bot Framework, refer to the following resources:
 
 - [Bot Framework Composer dialogs](/composer/concept-dialog)
 - [Bot Framework Composer events and triggers](/composer/how-to-define-triggers)
@@ -100,7 +100,7 @@ For a deep-dive on Bot Framework Composer dialogs, events, triggers, and how to 
 
 ## References
 
-To learn more about developing in Bot Framework Composer, see these resources:
+To learn more about developing in Composer, see these resources:
 
 - [Bot Framework Composer documentation](/composer/)
 - [Tour of Composer](/composer/introduction)

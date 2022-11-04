@@ -21,33 +21,41 @@ To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll ne
 
 - [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md)
 
-## Open your bot in Composer for the first time
+## Open your bot in Composer
 
 > [!IMPORTANT]
 > You should always open Composer from within Power Virtual Agents. This will ensure that Composer has all the necessary plug-ins needed for integration with Power Virtual Agents.
 
 1. Go to the **Topics** tab for the bot you want to edit and select the down-arrow symbol next to **+ New topic**.
 
-1. Select **Open in Bot Framework Composer** from the drop-down menu.
+1. Select **Open in Bot Framework Composer** in the dropdown menu to open your bot in Composer.
 
     :::image type="content" source="media/advanced-bot-framework-composer/Composer_OpeninBotFrameworkComposerButton_dropdown.png" alt-text="Screenshot of the button used to open a bot in Composer.":::
 
-1. Select **download Composer**.
+1. If you don't have Composer installed already:
 
-    :::image type="content" source="media/advanced-bot-framework-composer/composer-not-present.png" alt-text="Screenshot of the download Composer link highlighted.":::
+    1. Select **download Composer**.
 
-1. In the **Download Bot Framework Composer** window, select **Download Composer**.
+        :::image type="content" source="media/advanced-bot-framework-composer/composer-not-present.png" alt-text="Screenshot of the download Composer link highlighted.":::
 
-    :::image type="content" source="media/advanced-bot-framework-composer/download-composer.png" alt-text="Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.":::
+    1. In the **Download Bot Framework Composer** window, select **Download Composer**.
 
-1. When the download completes, run it to install Composer.
+        :::image type="content" source="media/advanced-bot-framework-composer/download-composer.png" alt-text="Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.":::
 
-1. In Power Virtual Agents, go to the **Topics** page and select the down-arrow symbol next to **+ New topic**.
+    1. When the download completes, run it to install Composer.
 
-1. Select **Open in Bot Framework Composer** in the dropdown menu to open your bot in Composer.
+    1. Once you've installed Composer, go back to Power Virtual Agents. Go to the **Topics** page and select the down-arrow symbol next to **+ New topic**.
 
-    > [!NOTE]
-    > In some cases, a firewall might be blocking some features in Composer and you might need to explicitly allow access. Check with your admin for details.
+        > [!NOTE]
+        > In some cases, a firewall might be blocking some features in Composer and you might need to explicitly allow access. Check with your admin for details.
+
+1. If Power Virtual Agents is unable to launch Composer automatically, you can launch it manually:
+
+    1. Select **Copy Link** to copy the link to your clipboard.
+
+        :::image type="content" source="media/advanced-bot-framework-composer/copy-link.png" alt-text="Screenshot of copy link button.":::
+
+    1. Open a new tab and paste the link in your web browser's address bar.
 
 1. The first time you open a Power Virtual Agents bot in Composer, it will be imported into a new Composer project. The name you specified in Power Virtual Agents will automatically be used as the name for the project, but you can also enter a custom name.
 
@@ -56,14 +64,6 @@ To use Bot Framework Composer to extend your Power Virtual Agents bot, you'll ne
 1. Select **Create** to finish importing your bot into Composer.
 
     :::image type="content" source="media/advanced-bot-framework-composer/ComposerUI_Open_initialView.png" alt-text="Screenshot of the import screen in Composer with the create button highlighted.":::
-
-If Power Virtual Agents is unable to launch Composer automatically, you can launch it manually:
-
-1. Select **Copy Link** to copy the link to your clipboard.
-
-    :::image type="content" source="media/advanced-bot-framework-composer/copy-link.png" alt-text="Screenshot of copy link button.":::
-
-1. Open a new tab and paste the link in your web browser's address bar.
 
 ## Test Composer content within Power Virtual Agents
 
