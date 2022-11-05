@@ -1,7 +1,7 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 10/31/2022
+ms.date: 11/04/2022
 ms.topic: conceptual
 author: matapg007
 contributors:
@@ -93,7 +93,7 @@ When your environment is moved from one tenant to another within the same region
 - Does the destination tenant have a valid Dynamics 365 subscription with enough seats for all the users to be mapped? The users to be provided in the mapping file will need to be active and licensed both in the source and target environments.
 - Does the destination tenant have enough available user licenses?
 - Does the destination tenant have enough storage available for the environments being migrated?
-- Before migrating production environments (or environments with potential business impact), sandbox copy migrations need to be performed first. The goal of these migrations using copies of the important production environments is to allow validation of the migrated environments before proceeding with the business critical environments migrations. Do you have sufficient capacity to provision a copy of your production environment to proceed with this test? For instructions on how to copy an environment, see [Copy an environment](https://learn.microsoft.com/en-us/power-platform/admin/copy-environment).
+- Before migrating production environments (or environments with potential business impact), sandbox copy migrations need to be performed first. The goal of these migrations using copies of the important production environments is to allow validation of the migrated environments before proceeding with the business critical environments migrations. Do you have sufficient capacity to provision a copy of your production environment to proceed with this test? For instructions on how to copy an environment, go to [Copy an environment](copy-environment.md).
 
 You'll also need to provide the following information:
 
