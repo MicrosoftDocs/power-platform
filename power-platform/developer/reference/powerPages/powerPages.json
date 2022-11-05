@@ -13,10 +13,9 @@
     "/powerpages/environments/{environmentId}/websites": {
       "get": {
         "tags": [
-          "GatewayApiV1"
+          "Websites"
         ],
-        "summary": "List Power Pages websites.",
-        "description": "Get a list of all the websites in your environment",
+        "summary": "Get a list of all the websites in your environment.",
         "operationId": "GetWebsites",
         "produces": [
           "application/json"
@@ -65,10 +64,9 @@
       },
       "post": {
         "tags": [
-          "GatewayApiV1"
+          "Websites"
         ],
         "summary": "Create a Power Pages website.",
-        "description": "Trigger the creation of a new website",
         "operationId": "CreateWebsite",
         "consumes": [
           "application/json"
@@ -135,10 +133,9 @@
     "/powerpages/environments/{environmentId}/websites/{id}": {
       "get": {
         "tags": [
-          "GatewayApiV1"
+          "Websites"
         ],
         "summary": "Get the Power Pages website details by specifying its unique identifier (ID).",
-        "description": "Get website details from Website id",
         "operationId": "GetWebsiteById",
         "produces": [
           "application/json"
@@ -194,10 +191,9 @@
       },
       "delete": {
         "tags": [
-          "GatewayApiV1"
+          "Websites"
         ],
-        "summary": "Delete a Power Pages website.",
-        "description": "Trigger the deletion of a website by specifying the website ID",
+        "summary": "Delete a Power Pages website by specifying the website ID.",
         "operationId": "DeleteWebsite",
         "produces": [
           "application/json"
@@ -264,10 +260,9 @@
     "/powerpages/environments/{environmentId}/websites/{id}/restart": {
       "post": {
         "tags": [
-          "GatewayApiV1"
+          "Websites"
         ],
         "summary": "Restart a Power Pages website.",
-        "description": "Restart the website for the given site id",
         "operationId": "RestartWebsite",
         "produces": [
           "application/json"
@@ -352,7 +347,7 @@
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
+          "description": "Language unique identifier (ID) of the website (https://go.microsoft.com/fwlink/?linkid=2208135)",
           "type": "integer"
         },
         "subdomain": {
@@ -360,7 +355,7 @@
           "type": "string"
         },
         "websiteRecordId": {
-          "description": "Dataverse record unique identifier (ID) of the website",
+          "description": "Unique identifier (ID) of the website record in Dataverse",
           "type": "string"
         }
       }
@@ -588,7 +583,7 @@
   },
   "security": [
     {
-      "oauth2": [ ]
+      "oauth2": []
     }
   ]
 }
