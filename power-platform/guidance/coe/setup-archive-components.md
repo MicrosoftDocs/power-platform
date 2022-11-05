@@ -31,10 +31,7 @@ Process to delete connections that have are, and have been broken for some time 
 > [!IMPORTANT]
 > You may see an error like this when running for large environments:  <br>
 > The action 'Get_Connections_as_Admin' has an aggregated page results size more than '209797598' bytes. This exceeded the maximum size '209715200' bytes allowed' <br><br>
-> If this occurs you will need to clean up the connections via Power Shell first in order to use the connector in Power Automate. <br>
-> This article will get you started on [Power Shell for Power Platform](/power-platform/admin/powershell-getting-started) <br>
-> And this call will delete all the errored connections in your default environment <br> 
->(Get-AdminPowerAppConnection -EnvironmentName "Default-yourGUIDhere") | Where { $_.statuses -like "\*Error\*"} | Remove-AdminPowerAppConnection
+> If this occurs you can not use the Broken Connection Cleanup process for that environment. 
 
 ### Turn on flow
 
