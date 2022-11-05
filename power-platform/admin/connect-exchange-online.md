@@ -244,10 +244,10 @@ The following table describes the permissions required to approve emails.
   </tr>
   <tr>
     <td>Exchange (on-premises)</td>
-    <td colspan="2">Yes<sup>2</sup></td>
-    <td colspan="2">Yes<sup>2</sup></td>
-    <td colspan="2">Yes<sup>2</sup></td>
-    <td>No<sup>2</sup></td>
+    <td colspan="2">n/a</td>
+    <td colspan="2">n/a</td>
+    <td colspan="2">n/a</td>
+    <td>Yes<sup>2</sup></td>
     <td>No</td>
     <td>n/a</td>
     <td>n/a</td>
@@ -259,7 +259,7 @@ The following table describes the permissions required to approve emails.
     <td colspan="2">n/a</td>
     <td colspan="2">n/a</td>
     <td colspan="2">n/a</td>
-    <td>Yes<sup>3</sup></td>
+    <td>Yes<sup>2</sup></td>
     <td>n/a</td>
     <td>n/a</td>
     <td>n/a</td>
@@ -269,7 +269,7 @@ The following table describes the permissions required to approve emails.
     <td colspan="2">n/a</td>
     <td colspan="2">n/a</td>
     <td colspan="2">n/a</td>
-    <td>Yes<sup>3</sup></td>
+    <td>Yes<sup>2</sup></td>
     <td>n/a</td>
     <td>n/a</td>
     <td>n/a</td>
@@ -277,8 +277,7 @@ The following table describes the permissions required to approve emails.
 </table>
  
 <sup>1</sup> We're updating for customer engagement apps and Exchange Online, for version 9.2.22104.118 or later.  <br />
-<sup>2</sup> We'll be updating for customer engagement apps and Exchange (on-premises). Check back for version information.<br>
-<sup>3</sup> We recommend that you include your Exchange admin in the custom business processes your organization follows for this configuration.
+<sup>2</sup> We recommend that you include your Exchange admin in the custom business processes your organization follows for this configuration.
 
  To determine your version, sign in, and in the upper-right corner of the screen, select **Settings** ![User profile Settings button.](media/user-profile-settings-button.png) > **About**.  
 
