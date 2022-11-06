@@ -3,7 +3,6 @@ title: "Set up inactivity notifications components | MicrosoftDocs"
 description: "Learn how to set up the inactivity notifications components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2022
@@ -26,12 +25,12 @@ This article will help you to set up the inactivity notifications for unused can
 
 ## Set up connection cleanup (broken connections)
 
-Process to delete connections that have are, and have been broken for some time (30 days by default)
+Process to delete connections that have been broken for some time (30 days by default).
 
 > [!IMPORTANT]
 > You may see an error like this when running for large environments:  <br>
 > The action 'Get_Connections_as_Admin' has an aggregated page results size more than '209797598' bytes. This exceeded the maximum size '209715200' bytes allowed' <br><br>
-> If this occurs you can not use the Broken Connection Cleanup process for that environment. 
+> If this occurs, you can't use the Broken Connection Cleanup process for the environment. 
 
 ### Turn on flow
 
