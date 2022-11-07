@@ -331,6 +331,19 @@ Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector.
 - Microsoft Dataverse – This is the newest connector and will, in time, become the only connector available for Dataverse usage. All new features, performance work, and enhancements will be available on this connector.
 - Microsoft Dataverse (Legacy) – This is the last generation connector for Microsoft Dataverse. It will continue to operate until it is fully deprecated. It will not receive feature or enhancement updates.
 
+Mapping of common actions 
+|Action |Dynamics 365 | Dataverse Legacy  |Microsoft Dataverse |
+|---------|---------|---------|---------|
+|Create Trigger |When a Record is Created (deprecated) |When a row is added |When a row is added, modified, or deleted |
+|Update Trigger |When a Record is Updated (deprecated) |When a row is modified |When a row is added, modified, or deleted |
+|Delete Trigger |When a Record is Deleted (deprecated) |When a row is deleted |When a row is added, modified, or deleted |
+|Create Action |Create a new record (deprecated) |Add a new row (legacy) |Add a new row (preview) |
+|Update Action |Update a record (deprecated) |Update a row (legacy) |Update a row (preview)|
+|Delete Action | Delete a record (deprecated) |Delete a row (legacy) |Delete a row (preview) |
+|Retrieve Action |Get record (deprecated)|Get row (legacy) |Get a row by ID (preview) |
+|Retrieve Multiple Action |List records (deprecated) |List rows (legacy) |List rows (preview) |
+
+
 ### Recommended action by usage
 #### Data integrator
 - All new integrations should be created with the Microsoft Dataverse (Legacy) connector.
