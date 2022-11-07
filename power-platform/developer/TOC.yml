@@ -44,3 +44,5 @@
             href: cli\reference\solution.md
           - name: pac telemetry
             href: cli\reference\telemetry.md
+          - name: pac tool
+            href: cli\reference\tool.md

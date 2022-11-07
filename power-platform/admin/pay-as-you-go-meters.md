@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, 3 meters determine how much y
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/12/2022
+ms.date: 10/12/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
@@ -26,10 +26,11 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 
 | Meter | What is counted? | What is billed? |
 |------|--------|--------|
-| Power Apps per-app | The total number of unique monthly active users of each app and portal in a pay-as-you-go environment. </br>An active user is someone who opens an app/portal at least once in the given month. </br>Repeat access of an app/portal by a user isn't counted. Users with Power Apps per-user licenses aren't counted. Users with a Dynamics 365 license that provides access to per user license won't be counted.| $10 per active user/app/month |
+| Power Apps per-app | The total number of unique monthly active users of each app in a pay-as-you-go environment. </br>An active user is someone who opens an app at least once in the given month. </br>Repeat access of an app by a user isn't counted. Users with Power Apps per-user licenses aren't counted. Users with a Dynamics 365 license that provides access to per user license won't be counted.| $10 per active user/app/month |
 | [Power Automate flow runs (preview)](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview)| Flow runs for premium cloud flows and desktop flows. <br/>Flows with standard connectors are excluded from charges. <br /> Users with Power Automate per user licenses (for example Power Automate Per User, Power Automate Per User with attended RPA) are excluded from flow run charges when using a feature within their license entitlements. <br /> Similarly, flows using a Power Automate per flow license are excluded from run charges when using a feature within their license entitlements. | $0.60 per flow run for Power Automate cloud flow runs and desktop flow runs (attended mode) <br /> $3.00 per flow run for Power Automate desktop flow runs (unattended mode)  |
 | Dataverse | For database storage, any usage above 1 GB per pay-as-you-go environment. </br>For file storage, any usage above 1 GB per pay-as-you-go environment. </br>If auditing is enabled, any resulting log storage usage will be counted. | For usage above 1 GB for database: $48 per GB/month</br>For usage above 1 GB for file: $2.40 per GB/month </br>For any log usage: $12 per GB/month |
 | [Power Platform requests (coming soon)](/power-platform/admin/power-automate-licensing/types#pay-as-you-go)| Each user in a pay-as-you-go enabled environment will get a daily entitlement of Power Platform requests based on their license. See [License limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits). This will be sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement will be counted. | 0.00004$ per request/day above the daily entitled limits |
+| [Power Pages (preview)](#power-pages-meters-preview) | Unique monthly active users of Power Pages websites.</br>An active authenticated user is someone who logs in to the website at least once in the given month.</br>Users who authenticate to a website (by logging in using any auth provider) are counted as authenticated active users. Repeat access by a user within the calendar month is not counted. Users with Power Apps per-user license or Dynamics 365 enterprise licenses that provides access to website won't be counted.</br>Users who do not authenticate to a website are counted as anonymous active users. Repeat access of the website by a user within the calendar month is not counted as long as the anonymous user ID stored in the cookie is not deleted or changed. | $4 per active authenticated user/website/month</br>$0.30 per active anonymous user/website/month |
 
 For detailed pricing information, see [Power Apps and Power Automate pricing.](https://powerapps.microsoft.com/pricing/)
 
@@ -38,9 +39,9 @@ For detailed pricing information, see [Power Apps and Power Automate pricing.](h
 
 ### Power Apps per-app meter 
 
-The Power Apps per-app meter enables users to use any type of app without needing to have a Power Apps license. The Power Apps per-app meter provides access to both canvas and model-driven apps, and portals for authenticated users.
+The Power Apps per-app meter enables users to use any type of app without needing to have a Power Apps license. The Power Apps per-app meter provides access to both canvas, and model-driven apps for authenticated users.
 
-The Power Apps per-app meter measures the number of unique users who opened the app or a portal at least once in an environment over the course of a month. You're only charged for the unique users who actually opened the app, regardless of how many users have access to it. Users can access the same app any number of times over the course of a month and will only be counted as one unique monthly active user of that app. However, if users run multiple apps, they'll be counted as active users for each app they run that month.
+The Power Apps per-app meter measures the number of unique users who opened the app at least once in an environment over the course of a month. You're only charged for the unique users who actually opened the app, regardless of how many users have access to it. Users can access the same app any number of times over the course of a month and will only be counted as one unique monthly active user of that app. However, if users run multiple apps, they'll be counted as active users for each app they run that month.
 
 For example, an environment has three apps: App A, App B, and App C. This environment is now enabled for pay-as-you-go pricing:
 
@@ -62,15 +63,15 @@ Environment with three apps
 |**App A**     | User #1 and #2       |         | User #1 and #2       |
 |**App B**     | User #3, #4, and #5       |         | User #1 and #2          |
 |**App C**     | User #6, #7, #8, and #9        |         | User #1 and #2            |
-| **Total active users:** | **9** = 9 different <br /> users each active <br /> in 1 app |  **0** apps had active <br />usage | **6** = 2 users each <br /> active in 3 apps |
+| **Total active users:** | **9** = 9 different <br /> users each active <br /> in one app |  **0** apps had active <br />usage | **6** = 2 users each <br /> active in three apps |
 
 Example pricing
 
 |   |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
-|**App A**     | 2 active users        | 0 active users         | 2 active users         |
-|**App B**     | 3 active users         | 0 active users         | 2 active users         |
-|**App C**     | 4 active users         | 0 active users         | 2 active users         |
+|**App A**     | Two active users        | No active users         | Two active users         |
+|**App B**     | Three active users         | No active users         | Two active users         |
+|**App C**     | Four active users         | No active users         | Two active users         |
 |**Total cost:**     | **$90** <br /> (9 x $10/active user/app)       | **$0** <br />(0 x $10/active user/app)        | **$60** <br /> (6 x $10/active user/app)       |
 
 ---
@@ -106,7 +107,7 @@ To make it easy to test and fix your flows, no charges will be incurred if you'r
 
 Flow runs of flows with standard connectors aren't charged. Flow runs triggered by users with Power Automate per user licenses (for example Power Automate Per User, Power Automate Per User with attended RPA) aren't charged provided they're using a Power Automate feature within their license entitlements.  
 
-Example: If a user with a Power Automate per user license runs a cloud flow in a pay-as-you-go environment, that flow run won't be charged as it is part of the Power Automate per user license entitlement. But, if the same user runs a flow with attended RPA, that flow run will be charged to the customer’s Azure subscription because RPA isn't part of the Power Automate per user license entitlement.  
+Example: If a user with a Power Automate per user license runs a cloud flow in a pay-as-you-go environment, that flow run won't be charged as it's part of the Power Automate per user license entitlement. But, if the same user runs a flow with attended RPA, that flow run will be charged to the customer’s Azure subscription because RPA isn't part of the Power Automate per user license entitlement.  
 
 If a flow is licensed with a Power Automate per flow plan, any flow runs of that flow won't be changed to the customer’s Azure subscription.  
 
@@ -117,7 +118,7 @@ When determining whether a flow run should be charged or not:
 
 Customers can't use the Power Automate unattended RPA add-on subscription in a pay-as-you-go environment.  
 
-Example: if an environment has Unattended bot add-on units assigned and then PAYG is enabled for that environment, every unattended flow run in the environment will be charged. Any Unattended bots add-on units are ignored and can be reassigned to other environments.  
+Example: if an environment has Unattended bot add on units assigned and then PAYG is enabled for that environment, every unattended flow run in the environment will be charged. Any Unattended bots add-on units are ignored and can be reassigned to other environments.  
 
 If the owner of a flow is service principal, the flow runs will be charged unless the flow has a per-flow license. 
 
@@ -158,6 +159,65 @@ Prepaid flows and Pay-as-you-go flows can co-exist in same environments as Pay-a
  
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
+
+### Power Pages meters (preview)
+
+The Power Pages meters enable customers to pay for usage of their Power Pages websites based on the number of unique active users of those websites, instead of estimating and purchasing capacity beforehand.  
+
+There are two different meters:
+1. Authenticated users cost $4 per active user/website/month
+1. Anonymous users cost $0.30 per active user/website/month
+
+> [!NOTE]
+> Customers will be able to view usage of the Power Pages meters in the [downloadable Power Platform pay-as-you report](pay-as-you-go-usage-costs.md) effective November 2022. Billing for these meters will be effective December 2022.
+
+#### Authenticated user meter
+
+The Power Pages Authenticated user meter measures total number of unique monthly authenticated active users of each website in a pay-as-you-go environment.
+ 
+An authenticated active user is someone who logs in to the website (using any auth provider) at least once in the given month. Repeat logins on the same website by a user in the calendar month is not  counted. However, if a user logs in to multiple websites present in the same environment, they will be counted as an active user for each website they log into that month. 
+
+Users with Power Apps per-user license or a Dynamics 365 enterprise license that provides access to website won't be counted. 
+ 
+To make it easy to try websites, any website running in trial mode is not counted in the meter. Similarly to make it easy to do development and testing, any website running in private mode is also not counted in the meter. 
+
+For example, an environment has three websites: **website A**, **website B**, and **website C**. This environment is now enabled for pay-as-you-go pricing:
+
+| Active users | Month #1 | Month #2 | Month #3 |
+| - | - | - | - |
+| Website A | User #1 and #2 | | User #1 and #2 |
+| Website B | User #3, #4, and #5 | | User #1 and #2 |
+| Website C | User #6, #7, #8, and #9 | | User #1 and #2 |
+| Total active users: | 9 = 9 different users each active in 1 website | 0 website had active usage | 6 = 2 users each active in 3 websites |
+| Total cost: | $36</br>(9 x $4/active user/website) | $0</br>(0 x $0/active user/website) | $24</br>(6 x $4/active user/website) |
+
+> [!NOTE]
+> The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
+
+#### Anonymous user meter
+
+The Power Pages anonymous user meter measures total number of unique monthly anonymous active users of each website in a pay-as-you-go environment. 
+
+An anonymous active user is someone who browses any page of the website at least once in the given month.  
+For Anonymous users, uniqueness is determined through a unique anonymous user ID stored in a browser cookie. 
+
+Repeat access of the website by a user is not counted as long as the anonymous user ID stored in the cookie remains same. If the user accesses the site using different browsers or devices or cleans up browser cookies, then a new unique anonymous user ID is generated and user would be counted as a different user. 
+  
+Also, to make it easy to try websites, any website running in trial mode is not counted in the meter. Similarly to make it easy to do development and testing, any website running in private mode is also not counted in the meter. 
+ 
+There are several scenarios in which a user who has anonymously browsed the website won't be counted in the meter. The scenarios are described below: 
+
+- If the user accesses specific pages related to authentication, such as: sign in, register, invitation, and externalauthenticationcallback. 
+- If the user accesses specific pages like the ones starting with **/_**, for example: **/_services**, and **/_resource**.
+- If the user accesses a page that returns a redirect response (http 3xx status), an error response (http 5xx status), or any http 4xx response.
+- If a user is accessing only static resources like CSS, JavaScript, or images.
+- If a user is browsing anonymously and later logs in to the website within same day (UTC timezone), then that user will only be counted as authenticated user and won't be counted as anonymous user.
+- Bots and crawler access of the anonymous pages of the website isn't counted.
+
+If you use a monitoring system setup to test website availability periodically, its usage of the website will not be counted if it sends a non-browser user agent header. If your monitoring system sends a user agent of any standard browser, it might be counted as an anonymous user. We recommend to targeting your monitoring service at the **/_services/about** page of your website to ensure that it is not counted.
+
+> [!NOTE]
+> When an environment is enabled for pay-as-you-go, any capacity for Power Apps portal logins/page views or Power Pages authenticated user/anonymous user prepaid capacity that is assigned to the environment is ignored and not consumed. You can reallocate this capacity to a different environment.
 
 ### Dataverse capacity meter
 

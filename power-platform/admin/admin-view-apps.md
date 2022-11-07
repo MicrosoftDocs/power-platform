@@ -3,7 +3,7 @@ title: Download a list of apps created in your environments | Microsoft Docs
 description: In this topic, you learn how to download a list of apps created in your environments.
 author: jimholtz
 ms.component: pa-admin
-ms.topic: concept
+ms.topic: conceptual
 ms.date: 08/04/2020
 ms.subservice: admin
 ms.author: jimholtz

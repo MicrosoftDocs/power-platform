@@ -105,9 +105,9 @@ Microsoft reserves the right to enforce  limits for overages. If a customer enco
 
 Customers that observe in reporting that they're frequently using more requests than limits can avoid high usage enforcement by purchasing the Power Platform Request capacity add-on. This add-on allows customers to increase the limits for specific high usage licensed users or high usage non-licensed users. Each capacity add-on raises the request limit by another 50,000 per 24 hours. Multiple capacity add-ons can be assigned to increase limits.
 
-You cannot assign Power Platform requests capacity add-on packs to users or flows during the [transition period](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/types#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. 
+You cannot assign Power Platform requests capacity add-on packs to users or flows during the [transition period](power-automate-licensing/types.md#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. 
 
-If your Power Automate flows are being throttled, try [Pay-as-you-go](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/types#pay-as-you-go) to ensure none of the flows in the environment are throttled. If you cannot use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
+If your Power Automate flows are being throttled, try [Pay-as-you-go](power-automate-licensing/types.md#pay-as-you-go) to ensure none of the flows in the environment are throttled. If you cannot use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
 > [!NOTE]
 > Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users). The functionality for assignment of capacity add-ons will be aligned to the timing of high usage enforcement.
