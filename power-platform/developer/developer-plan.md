@@ -18,15 +18,15 @@ search.app:
 
 # Get started with the Power Platform
 
-The most simple way to get access to a power platform environment is to sign up for the Power Apps Developer plan. You can explore the the power platform at full potential for learn, at no cost. 
+The most simple way to get access to a power platform environment is to sign up for the Power Apps Developer plan. You can explore the the power platform at full potential for learn, at no cost.
 
 To fully use it as a developer, you will need an Azure account and a work account. This article will guide you through the process for creating a Power Platform environment and a test tenant if needed.
 
 ## Where do I start?
 
-If you have a work account, and want to use it to test Power Platform - Sign up for the Power Apps Developer Plan.
+If you have a work account, and want to use it to test Power Platform, Sign up for the Power Apps Developer Plan.
 
-If you don't have a work account or prefer a Sandbox tenant to learn Power Platform - create a test tenant before signing up for the developer environment.
+If you don't have a work account or prefer a Sandbox tenant to learn Power Platform, create a test tenant before signing up for the developer environment.
 
 ## Power Apps Developer Plan
 
