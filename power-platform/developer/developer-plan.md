@@ -73,3 +73,10 @@ You'll need a work account or a microsoft account to sign up. Use either your pe
 You can also [manually create a test tenant](https://learn.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
 
 Now that you have your test tenant, [sign up for the Power Apps Developer Plan](#power-apps-developer-plan)
+
+### See also
+
+[Power Platform for developers](get-started.md)<br/>
+[Fusion Development](fusion-development.md)<br/>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
