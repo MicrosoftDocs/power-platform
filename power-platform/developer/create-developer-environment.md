@@ -1,6 +1,6 @@
 ---
-title: "Get started with the Power Platform"
-description: "Get started with Power Platform"
+title: "Create a developer environment"
+description: "Sign up for the developer plan and create a developer environment"
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
@@ -18,7 +18,7 @@ contributors:
  - phecke 
 ---
 
-# Get started with the Power Platform
+# Create a developer environment
 
 The simplest way to get access to a power platform environment is to sign up for the Power Apps Developer plan. You can explore the power platform at full potential for learn, at no cost.
 
@@ -46,11 +46,13 @@ After signing up for the Developer Plan, you'll be redirected to Power Apps. The
 ![Maker Portal.](media/devplan-makerportal.png "Maker Portal")
 
 > [!IMPORTANT]
+>
 > - Use the developer environment instead of your tenant's default environment to work with certain capabilities such as premium and custom connectors.
 > - You might need to select your developer environment from the top-right corner of the screen.
 > - It might take a couple of minutes for the new environment to be provisioned and become available in the list of the environments. You can see the progress of the environment creation in the [Power Platform admin center](https://admin.powerplatform.com).
 
 > [!WARNING]
+>
 > - In some situations, your admin might have turned off the sign up process. In this case, please contact your administrator, or create a test tenant.
 > ![Viral Blocked.](media/devplan-viralblocked.png "Viral Blocked")
 

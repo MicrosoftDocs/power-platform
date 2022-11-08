@@ -26,8 +26,8 @@ landingContent:
             url: get-started.md
       - linkListType: how-to-guide
         links:
-          - text: "How to create a development environment"
-            url: developer-plan.md
+          - text: "Create a developer environment"
+            url: create-developer-environment.md
       - linkListType: concept
         links:
           - text: "Fusion development"
