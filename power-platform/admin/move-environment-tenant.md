@@ -104,7 +104,7 @@ You'll also need to provide the following information:
 ### Steps to be performed by a global admin, Dynamics 365 admin, or Power Platform admin
 
 1. Be authorized to perform the migration.
-3. If we'll be moving a production environment (or an environment with potential business impact), we first need to migrate a sandbox copy. In that case, we'll also need a new environment in the source tenant so we can copy the production environment into the new environment.
+3. A migration with a sandbox copy should be executed and validated by all parties prior to planning the migration of a business critical environment. In that case, we'll also need a new environment in the source tenant so we can copy the business critical environment into the new environment and perform the test migration.
 4. Create users in the destination environments in the target tenant. You must:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
