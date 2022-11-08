@@ -44,12 +44,12 @@ After signing up for the Developer Plan, you'll be redirected to Power Apps. The
 ![Maker Portal.](media/devplan-makerportal.png "Maker Portal")
 
 > [!IMPORTANT]
-> Use the developer environment instead of your tenant’s default environment to work with certain capabilities such as premium and custom connectors.
-> You might need to select your developer environment from the top-right corner of the screen.
-> It might take a couple of minutes for the new environment to be provisioned and become available in the list of the environments. You can see the progress of the environment creation in the [Power Platform admin center](https://admin.powerplatform.com).
+> - Use the developer environment instead of your tenant’s default environment to work with certain capabilities such as premium and custom connectors.
+> - You might need to select your developer environment from the top-right corner of the screen.
+> - It might take a couple of minutes for the new environment to be provisioned and become available in the list of the environments. You can see the progress of the environment creation in the [Power Platform admin center](https://admin.powerplatform.com).
 
 > [!WARNING]
-> In some situations, your admin might have turned off the sign up process. In this case, please contact your administrator, or create a test tenant.
+> - In some situations, your admin might have turned off the sign up process. In this case, please contact your administrator, or create a test tenant.
 > ![Viral Blocked.](media/devplan-viralblocked.png "Viral Blocked")
 
 For detailed information about the developer plan, visit: [Sign up for the Power Apps Developer Plan](../../power-apps/maker/developer-plan.md).
