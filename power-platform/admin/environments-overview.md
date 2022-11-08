@@ -96,17 +96,17 @@ There are multiple types of environments. The type indicates the purpose of the 
 </table>
 
 ## The default environment
-A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant.
 
-> [!NOTE]
-> - No users will be added to the Environment Admin role of the default environment automatically. 
-> - You can't delete the default environment.
-> - The default environment can't be manually backed up. System backups are done continuously.
-> - The default environment is limited to 1 TB of storage capacity.  To store more data, you can create a production environment.
-> - The default environment has the following included storage capacity: 3 GB Dataverse Database Capacity, 3GB Dataverse File Capacity, and 1 GB Dataverse Log Capacity.
-> - The capacity check conducted prior to creating new environments will exclude the default environment's included storage capacity when calculating whether you have  sufficient capacity to create a new environment.
+A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. No users will be automatically added to the Environment Admin role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant, and is named as follows: "{Azure AD tenant name} (default)".
 
-The default environment is named as follows: "{Azure AD tenant name} (default)"
+You can't delete the default environment. You can't manually back up the default environment; system backups are done continuously. 
+
+The default environment is limited to 1 TB of storage capacity. To store more data, you can create a production environment. The default environment has the following included storage capacity: 
+- 3 GB Dataverse Database Capacity
+- 3 GB Dataverse File Capacity
+- 1 GB Dataverse Log Capacity
+
+The capacity check conducted prior to creating new environments will exclude the default environment's included storage capacity when calculating whether you have  sufficient capacity to create a new environment.
 
 ## Production and trial environments
 You can create environments for different purposes. A trial environment is for trying out the environment and the experience of using a database with Dataverse. It expires after a certain period. 

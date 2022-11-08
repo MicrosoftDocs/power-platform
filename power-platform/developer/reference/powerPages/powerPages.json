@@ -1,0 +1,589 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/powerpages/environments/{environmentId}/websites": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Get a list of all the websites in your environment.",
+        "operationId": "GetWebsites",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "skip",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ODataListWebsitesDto"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Create a Power Pages website.",
+        "operationId": "CreateWebsite",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/NewWebsiteRequest"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "headers": {
+              "Operation-Location": {
+                "description": "Location of a website",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        },
+        "x-codegen-request-body-name": "NewWebsiteRequest"
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Get the Power Pages website details by specifying its unique identifier (ID).",
+        "operationId": "GetWebsiteById",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/WebsiteDto"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Delete a Power Pages website by specifying the website ID.",
+        "operationId": "DeleteWebsite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Operation-Location",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "headers": {
+              "Operation-Location": {
+                "description": "Location of a website",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/restart": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Restart a Power Pages website.",
+        "operationId": "RestartWebsite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "NewWebsiteRequest": {
+      "required": [
+        "name",
+        "dataverseOrganizationId",
+        "templateName",
+        "selectedBaseLanguage",
+        "subdomain"
+      ],
+      "type": "object",
+      "properties": {
+        "dataverseOrganizationId": {
+          "format": "uuid",
+          "description": "Dataverse organization's unique identifier (ID)",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000000"
+        },
+        "name": {
+          "description": "Name of the website",
+          "type": "string"
+        },
+        "templateName": {
+          "description": "Website template name",
+          "enum": [
+            "DefaultPortalTemplate",
+            "PowerPortals_ProgramRegistration",
+            "PowerPortals_BookMeeting"
+          ],
+          "type": "string"
+        },
+        "selectedBaseLanguage": {
+          "format": "int32",
+          "description": "Language unique identifier (ID) of the website (https://go.microsoft.com/fwlink/?linkid=2208135)",
+          "type": "integer"
+        },
+        "subdomain": {
+          "description": "Subdomain for the website URL",
+          "type": "string"
+        },
+        "websiteRecordId": {
+          "description": "Unique identifier (ID) of the website record in Dataverse",
+          "type": "string"
+        }
+      }
+    },
+    "ODataWebsiteDto": {
+      "type": "object",
+      "properties": {
+        "@odata.metadata": {
+          "$ref": "#/definitions/WebsiteDto"
+        }
+      }
+    },
+    "ODataListWebsitesDto": {
+      "type": "object",
+      "properties": {
+        "@odata.metadata": {
+          "type": "string"
+        },
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/WebsiteDto"
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        }
+      }
+    },
+    "ErrorMessage": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "description": "Error code",
+              "type": "string"
+            },
+            "message": {
+              "description": "Error message",
+              "type": "string"
+            },
+            "target": {
+              "description": "Target parameter",
+              "type": "string"
+            },
+            "details": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "description": "Error code",
+                    "type": "string"
+                  },
+                  "message": {
+                    "description": "Error message",
+                    "type": "string"
+                  },
+                  "target": {
+                    "description": "Target parameter",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "WebsiteDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Website unique identifier (ID)",
+          "type": "string"
+        },
+        "name": {
+          "description": "Website name",
+          "type": "string"
+        },
+        "createdOn": {
+          "description": "Website creation time in the ISO 8601 UTC format",
+          "type": "string"
+        },
+        "templateName": {
+          "description": "Website template name",
+          "enum": [
+            "DefaultPortalTemplate",
+            "PowerPortals_ProgramRegistration",
+            "PowerPortals_BookMeeting"
+          ],
+          "type": "string"
+        },
+        "websiteUrl": {
+          "description": "Website URL",
+          "type": "string"
+        },
+        "tenantId": {
+          "description": "Tenant unique identifier (ID) of the website",
+          "type": "string"
+        },
+        "dataverseInstanceUrl": {
+          "description": "Organization URL of the website",
+          "type": "string"
+        },
+        "environmentName": {
+          "description": "Environment name of the website",
+          "type": "string"
+        },
+        "environmentId": {
+          "description": "Environment unique identifier (ID) of the website",
+          "type": "string"
+        },
+        "dataverseOrganizationId": {
+          "description": "Organization unique identifier (ID) of the website",
+          "type": "string"
+        },
+        "selectedBaseLanguage": {
+          "format": "int32",
+          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
+          "type": "integer"
+        },
+        "customHostNames": {
+          "description": "Custom hostnames added for the website",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "websiteRecordId": {
+          "description": "Dataverse record unique identifier (ID) of the website",
+          "type": "string"
+        },
+        "subdomain": {
+          "description": "Subdomain of website",
+          "type": "string"
+        },
+        "packageInstallStatus": {
+          "description": "Package installation status of the website",
+          "enum": [
+            "None",
+            "Installed",
+            "Uninstalled",
+            "InstallRequested",
+            "UninstallRequested",
+            "InstallFailed",
+            "UninstallFailed",
+            "Installing",
+            "Uninstalling",
+            "InstallScheduled",
+            "InstallRetrying",
+            "TemplateInstalled"
+          ],
+          "type": "string"
+        },
+        "type": {
+          "description": "Application type of the website",
+          "enum": [
+            "Trial",
+            "Production"
+          ],
+          "type": "string"
+        },
+        "trialExpiringInDays": {
+          "format": "int32",
+          "description": "Time (in days) to expiration of the website",
+          "type": "integer"
+        },
+        "suspendedWebsiteDeletingInDays": {
+          "format": "int32",
+          "description": "Time (in days) to website deletion, if suspended",
+          "type": "integer"
+        },
+        "packageVersion": {
+          "description": "Package version of the website",
+          "type": "string"
+        },
+        "isEarlyUpgradeEnabled": {
+          "description": "Website eligibility for early upgrade",
+          "type": "boolean"
+        },
+        "isCustomErrorEnabled": {
+          "description": "Custom error enablement for Website",
+          "type": "boolean"
+        },
+        "applicationUserAadAppId": {
+          "description": "Azure Active Directory (AAD) object unique identifier (ID)",
+          "type": "string"
+        },
+        "ownerId": {
+          "description": "User unique identifier (ID) of the website owner",
+          "type": "string"
+        },
+        "status": {
+          "description": "Website status",
+          "enum": [
+            "OperationComplete",
+            "OperationInProgress",
+            "OperationNotStarted",
+            "OperationFailed"
+          ],
+          "type": "string"
+        },
+        "siteVisibility": {
+          "description": "Website visibility status",
+          "enum": [
+            "public",
+            "private"
+          ],
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+      "description": "Azure Active Directory OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": []
+    }
+  ]
+}
