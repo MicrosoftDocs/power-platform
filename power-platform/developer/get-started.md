@@ -105,7 +105,7 @@ Dataverse is a cloud scale data store that builds on Microsoft's data technologi
 
 ### See also
 
-[Create your developer environment](developer-plan.md)
+[Create your developer environment](developer-plan.md)<br/>
 [Fusion Development](fusion-development.md)<br/>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
