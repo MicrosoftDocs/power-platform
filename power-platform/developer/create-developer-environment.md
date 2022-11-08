@@ -63,11 +63,22 @@ The [Microsoft 365 Developer Program](https://learn.microsoft.com/office/develop
 
 You'll need a work account or a microsoft account to sign up. Use either your personal email address or set up a separate email address/Microsoft account to be used when you start the registration process for the Microsoft 365 Developer Program.
 
-1. Select the **Join now** button on the screen.
-2. Sign in with a new Microsoft Account or use an existing (work) account you already have.
-3. On the sign-up page select your region, enter a company name and accept the terms and conditions of the program before you select **Next**.
-4. Select **Set Up Subscription**. Specify the region where you want to create your new tenant, create a username, domain, and enter a password. This step will create a new tenant and the first administrator of the tenant.
-5. Enter the security information, which is needed to protect the administrator account of your new tenant.  This step will set up multi-factor authentication for the account.
+1. Go to [Join the Microsoft 365 Developer Program page](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
+2. In the upper-right corner, choose Sign in to sign in with your Microsoft account or Azure Active Directory-enabled email.
+3. After signing in, choose **Join now**.
+4. On the Microsoft 365 Developer Program Signup page, complete the following fields in the online form:
+    - Contact Email
+    - Country/Region
+    - Company
+5. Review the terms and conditions. You'll need to select the check box before you can join.
+6. Optionally, select the I would like to hear from the Microsoft 365 Developer Program check box if you want to hear from Microsoft about new capabilities and other updates.
+7. Choose Next.
+8. On the Microsoft 365 Developer Program Preferences page, let us know your preferences so we can personalize your experience, including:
+    - The industry that you work in.
+    - The type of applications or solutions that you're interested in developing.
+    - Products, technologies, and programming languages that you're interested in.
+9. When you're finished, choose Join. Your preferences appear on the next page in the top right, and you will see a Welcome message and will receive a welcome email.
+10. Set up a Microsoft 365 developer sandbox to build your solutions independent of your production environment.
 
 ![Sign up for the microsoft 365 developer plan.](media/create-developer-environment-m365-signup.png "Sign-up for the Microsoft 365 Developer Program")
 
