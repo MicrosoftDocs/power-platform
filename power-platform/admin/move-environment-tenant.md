@@ -93,7 +93,7 @@ When your environment is moved from one tenant to another within the same region
 - Does the destination tenant have a valid Dynamics 365 subscription with enough seats for all the users to be mapped? The users to be provided in the mapping file will need to be active and licensed both in the source and target environments.
 - Does the destination tenant have enough available user licenses?
 - Does the destination tenant have enough storage available for the environments being migrated?
-- For production environments, we need to migrate a sandbox copy of it first. Do you have sufficient capacity to provision a copy of your production environment to proceed with this test? 
+- A migration with a sandbox copy should be executed and validated by all parties prior to planning the migration of a business critical environment. Do you have sufficient capacity to provision a copy of your business critical environment to proceed with this test? 
 
 You'll also need to provide the following information:
 
@@ -104,7 +104,7 @@ You'll also need to provide the following information:
 ### Steps to be performed by a global admin, Dynamics 365 admin, or Power Platform admin
 
 1. Be authorized to perform the migration.
-3. If we'll be moving a production environment, we first need to migrate a sandbox copy. In that case, we'll also need a new environment in the source tenant so we can copy the production environment into the new environment.
+3. A migration with a sandbox copy should be executed and validated by all parties prior to planning the migration of a business critical environment. In that case, we'll also need a new environment in the source tenant so we can copy the business critical environment into the new environment and perform the test migration.
 4. Create users in the destination environments in the target tenant. You must:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
