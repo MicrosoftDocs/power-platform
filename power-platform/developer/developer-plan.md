@@ -34,7 +34,7 @@ The Power Apps Developer Plan gives you a free development environment to build 
 
 It's simple to sign up for the Power Apps Developer Plan:
 
-1. Be sure you have a work account. If you don't, create a test tenant first.
+1. Be sure you have a work account. If you don't, [create a test tenant](#how-to-create-a-test-tenant) first.
 2. Sign up on the [Power Apps Developer Plan website](https://aka.ms/PowerAppsDevPlan).
 
 :::image type="content" source="./media/devplan-signup.gif" alt-text="Animation demo of developer plan sign-up.":::
