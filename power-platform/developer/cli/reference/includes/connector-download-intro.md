@@ -1,6 +1,6 @@
 ### Examples
 
-#### Connector download
+#### Basic connector download
 
 This example downloads the specified connector to the current directory.
 
@@ -9,7 +9,7 @@ pac connector download `
   --connector-id 00000000-0000-0000-0000-000000000000 
 ```
 
-#### Connector download from specified environment
+#### Basic connector download from specified environment
 
 This example downloads the specified connector from the specified environment to the current directory.
 
@@ -19,7 +19,7 @@ pac connector download `
   --environment 00000000-0000-0000-0000-000000000000 
 ```
 
-#### Connector download from specified environment to the specified directory
+#### Basic connector download from specified environment to the specified directory
 
 This example downloads the specified connector from the specified environment to the specified directory.
 

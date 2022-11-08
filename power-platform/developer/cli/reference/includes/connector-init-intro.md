@@ -21,7 +21,7 @@ pac connector init `
   --outputDirectory "contoso_Connector"
 ```
 
-#### Connector init with output directory and connection template for anonymous authentication
+#### Advanced connector init with output directory and connection template for anonymous authentication
 
 ```powershell
 pac connector init `
@@ -31,7 +31,7 @@ pac connector init `
   --connection-template "NoAuth"
 ```
 
-#### Connector init with output directory and connection template for OAuth AAD authentication
+#### Advanced connector init with output directory and connection template for OAuth AAD authentication
 
 ```powershell
 pac connector init `
