@@ -26,11 +26,11 @@ To fully use it as a developer, you'll need an Azure account and a work account.
 
 ## Where do I start?
 
-If you have a work account, and want to use it to learn Power Platform, [Sign up for the Power Apps Developer Plan](#power-apps-developer-plan).
+If you have a work account, and want to use it to learn Power Platform, [Sign up for the Power Apps Developer Plan](#sign-up-for-the-power-apps-developer-plan).
 
 If you don't have a work account or prefer a Sandbox tenant to learn Power Platform, [create a test tenant](#how-to-create-a-test-tenant) before signing up for the developer environment.
 
-## Power Apps Developer Plan
+## Sign up for the Power Apps Developer Plan
 
 The Power Apps Developer Plan gives you a free development environment to build and test with Power Apps, Power Automate, and Microsoft Dataverse.
 
@@ -39,11 +39,11 @@ It's simple to sign up for the Power Apps Developer Plan:
 1. Be sure you have a work account. If you don't, [create a test tenant](#how-to-create-a-test-tenant) first.
 2. Sign up on the [Power Apps Developer Plan website](https://aka.ms/PowerAppsDevPlan).
 
-:::image type="content" source="./media/devplan-signup.gif" alt-text="Animation demo of developer plan sign-up.":::
+![Sign up for the developer plan.](media/create-developer-environment-devplan-signup.png "Sign-up for the developer plan")
 
 After signing up for the Developer Plan, you'll be redirected to Power Apps. The environment will be shown with your name, for example "John Doe's environment." If there's already an environment with that name, the developer new environment will be named "John Doe's (1) environment."
 
-![Maker Portal.](media/devplan-makerportal.png "Maker Portal")
+![Maker Portal.](media/create-developer-environment-makerportal.png "Maker Portal")
 
 > [!IMPORTANT]
 >
@@ -51,7 +51,7 @@ After signing up for the Developer Plan, you'll be redirected to Power Apps. The
 > - You might need to select your developer environment from the top-right corner of the screen.
 > - It might take a couple of minutes for the new environment to be provisioned and become available in the list of the environments. You can see the progress of the environment creation in the [Power Platform admin center](https://admin.powerplatform.com).
 > - In some situations, your admin might have turned off the sign up process. In this case, please contact your administrator, or create a test tenant.
-> ![Viral Blocked.](media/devplan-viralblocked.png "Viral Blocked")
+> ![Viral Blocked.](media/create-developer-environment-viralblocked.png "Viral Blocked")
 
 For detailed information about the developer plan, visit: [Sign up for the Power Apps Developer Plan](/power-apps/maker/developer-plan).
 
@@ -59,7 +59,7 @@ For detailed information about the developer plan, visit: [Sign up for the Power
 
 If you don't already have a dedicated test tenant, you can create one for free, using the Microsoft 365 Developer Program or manually create one yourself.
 
-The Microsoft 365 Developer Program is free and can have test user accounts and sample data packs automatically added to the tenant.
+The [Microsoft 365 Developer Program](https://learn.microsoft.com/office/developer-program/microsoft-365-developer-program) is free and can have test user accounts and sample data packs automatically added to the tenant.
 
 You'll need a work account or a microsoft account to sign up. Use either your personal email address or set up a separate email address/Microsoft account to be used when you start the registration process for the Microsoft 365 Developer Program.
 
@@ -69,11 +69,11 @@ You'll need a work account or a microsoft account to sign up. Use either your pe
 4. Select **Set Up Subscription**. Specify the region where you want to create your new tenant, create a username, domain, and enter a password. This step will create a new tenant and the first administrator of the tenant.
 5. Enter the security information, which is needed to protect the administrator account of your new tenant.  This step will set up multi-factor authentication for the account.
 
-:::image type="content" source="./media/devplan-m365signup.gif" alt-text="Animation demo of Microsoft 365 dev sign-up.":::
+![Sign up for the microsoft 365 developer plan.](media/create-developer-environment-m365-signup.png "Sign-up for the Microsoft 365 Developer Program")
 
 You can also [manually create a test tenant](/azure/active-directory/develop/quickstart-create-new-tenant).
 
-Now that you have your test tenant, [sign up for the Power Apps Developer Plan](#power-apps-developer-plan).
+Now that you have your test tenant, [sign up for the Power Apps Developer Plan](#sign-up-for-the-power-apps-developer-plan).
 
 ### See also
 
