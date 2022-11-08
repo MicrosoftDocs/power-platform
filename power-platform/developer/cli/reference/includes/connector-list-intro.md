@@ -13,5 +13,6 @@ pac connector list
 This example lists all the connectors in the specified environment.
 
 ```powershell
-pac connector list --environment 00000000-0000-0000-0000-000000000000
+pac connector list `
+  --environment 00000000-0000-0000-0000-000000000000
 ```
