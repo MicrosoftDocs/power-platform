@@ -187,9 +187,9 @@ A user with the Global or Exchange admin role can delegate the mailbox approval 
 > Because this is a Dynamics 365 security role, the role is assigned per environment. The role can be assigned to one or more users per environment.
 
 > [!NOTE]
-> For more information about assigning security roles in Dynamics 365 or Power Apps, see [Assign a security role to a user](power-platform/admin/assign-security-roles).
+> For more information about assigning security roles in Dynamics 365 or Power Apps, see [Assign a security role to a user](/power-platform/admin/assign-security-roles).
 >
-> For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles). 
+> For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles). 
 
 ### Require admin approval?
 
@@ -213,7 +213,7 @@ The following table describes the permissions required to approve emails.
 - **Exchange admin**: Exchange administrator role
 
 > [!NOTE]
-> For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles) 
+> For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles) 
 
 - **Delegated Mailbox Approver**: Dynamics 365 security role which can be assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. For additional details, refer to the section above titled **Delegate mailbox approval**.
 
