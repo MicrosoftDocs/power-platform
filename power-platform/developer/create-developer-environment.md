@@ -20,7 +20,7 @@ contributors:
 
 # Create a developer environment
 
-The simplest way to get access to a Power Platform environment is to sign up for the Power Apps Developer plan. You can explore Power Platform at full potential for learning at no cost.
+The simplest way to get access to a [Power Platform environment](/power-platform/admin/environments-overview) is to sign up for the Power Apps Developer plan. You can explore Power Platform at full potential for learning at no cost.
 
 To fully use it as a developer, you'll need an Azure account and a work account. This article will guide you through the process for creating a Power Platform environment and a test tenant if needed.
 
