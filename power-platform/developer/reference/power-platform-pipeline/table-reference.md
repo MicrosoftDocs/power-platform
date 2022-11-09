@@ -79,7 +79,7 @@ Stores the deployment stage configuration such as target environment and prerequ
 |`OwnerId`<br/>**Owner**|Owner| Owner Id|
 |`PreviousDeploymentStageId`<br/>**Previous Deployment Stage**| Lookup| Lookup to the previous deployment stage configured in the Pipeline. Previous deployment stages must be run successfully before deployments can be run for the current stage.|
 |`statuscode`<br/>**Status Reason**| Status| Reason for the status of the Deployment Stage.<br />Value:`1`, Label: Active<br />Value:`2`, Label: Inactive|
-|`TargetDeploymentEnvironmentId`<br/>**Target Deployment Environment ID**| LookupType| Lookup to the target deployment environment associated with this deployment stage.|
+|`TargetDeploymentEnvironmentId`<br/>**Target Deployment Environment ID**| Lookup| Lookup to the target deployment environment associated with this deployment stage.|
 
 ## DeploymentStageRun (Deployment Stage Run)
 
@@ -88,12 +88,12 @@ Stores information about a deployment stage execution.
 |SchemaName<br/>Display Name |Type  |Description  |
 |---------|---------|---------|
 |`ArtifactDevCurrentVersion`<br/>**Solution Artifact Current Version**| String| Stores the current version of the solution artifact within a development environment.|
-|`ArtifactId`<br/>**Artifact ID**| LookupType| Internal use only.|
+|`ArtifactId`<br/>**Artifact ID**| Lookup| Internal use only.|
 |`ArtifactName`<br/>**Artifact Name**| String| The name of the Deployment Artifact being deployed by a Stage Run instance.|
 |`ArtifactVersion`<br/>**Solution Artifact Version**| String| The version number of the Deployment Artifact being deployed by a Stage Run instance.|
 |`DeploymentSettingsJson`<br/>**Deployment Settings JSON**| String| Validated JSON payload storing the Connection Reference and Environment Variable information collected when a Deployment Stage is run. |
 |`DeploymentStageId`<br/>**Deployment Stage**| Lookup| Lookup to the Deployment Stage associated with a Deployment Stage Run instance.|
-|`DeploymentStageRunId`<br/>**Deployment Stage Run**| UniqueidentifierType | Unique identifier for Deployment Stage Run instances.|
+|`DeploymentStageRunId`<br/>**Deployment Stage Run**| Uniqueidentifier | Unique identifier for Deployment Stage Run instances.|
 |`DevDeploymentEnvironment`<br/>**Development Deployment Environment ID** | Lookup| Lookup to the development Deployment Environment associated with a Deployment Stage Run.|
 |`DevEnvironmentId`<br/>**Dev Environment Id**| String| For internal use only.|
 |`EndTime`<br/>**End Time**| DateTime| Date and time when the deployment succeeded or failed.|
@@ -106,7 +106,7 @@ Stores information about a deployment stage execution.
 |`OwnerId`<br/>**Owner**| Owner| Owner Id|
 |`RetryCount`<br/>**Retry Count**| Integer| For internal use only.|
 |`StageRunStatus`<br/>**Stage Run Status**| Picklist| Indicates the overall status of a Deployment Stage Run.<br />Value: `200000000`, Label: NotStarted<br />Value: `200000001`, Label: Started<br />Value: `200000002`, Label: Succeeded<br />Value: `200000003`, Label: Failed|
-|`StartTime`<br/>**Start Time**| DateTimeType| Date and time when the deployment started.|
+|`StartTime`<br/>**Start Time**| DateTime| Date and time when the deployment started.|
 |`statuscode`<br/>**Status Reason**| Status| Reason for the status of the Deployment Stage Run.<br />Value:`1`, Label: Active<br />Value:`2`, Label: Inactive|
 |`SubOperation`<br/>**SubOperation**| Picklist| Represents the sub operation of the current deployment operation. This is managed internally.<br />Value: `200000100`, Label: None<br />Value: `200000101`, Label: Executing Pre-step<br />Value: `200000102`, Label: Retrieving Artifact Configuration<br />Value: `200000103`, Label: Validating Artifact Configuration<br />Value: `200000104`, Label: Retrieving Artifact<br />Value: `200000105`, Label: Deploying Artifact<br />Value: `200000106`, Label: Executing Post-step|
 |`TargetDeploymentEnvironment`<br/>**Target Deployment Environment ID**| Lookup| Lookup to the target Deployment Environment associated with a Deployment Stage Run.|
