@@ -14,7 +14,7 @@ search.app:
 ---
 # Power Platform Pipeline table reference
 
-This topic contains the table definitions used in the Power Platform Pipleline solution.
+This topic contains the table definitions used in the Power Platform Pipeline solution.
 
 :::image type="content" source="../media/pipeline-tables.png" alt-text="Diagram showing relationship between pipeline tables":::
 
