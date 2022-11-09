@@ -16,6 +16,8 @@ search.app:
 
 This topic contains the table definitions used in the Power Platform Pipleline solution.
 
+:::image type="content" source="../media/pipeline-tables.png" alt-text="Diagram showing relationship between pipeline tables":::
+
 ## DeploymentArtifact (Deployment Artifact)
 
 Stores solution artifacts which are exported when running Pipelines.
