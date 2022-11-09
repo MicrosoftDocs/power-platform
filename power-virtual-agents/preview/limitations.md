@@ -30,6 +30,10 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 - Globalization support in Power Fx is limited to English (en-US). This means:
   - Numbers must be in the US style format, for example, `12,345.678`.
   - Power Fx parameters must be separated by commas (,) and not semi-colons (;).
+- Data Loss Prevention (DLP) is not fully implemented. This means:
+  - When a DLP error occurs, the error banner is only visible on the bot's home page.
+  - The **Chat without Azure AD Authentication in Power Virtual Agents** connector doesn't work.
+  - Preview bots can't be created in GCC or GCC High environments.
 
 ## Troubleshoot firewall or network issues
 
