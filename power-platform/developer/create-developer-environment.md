@@ -80,7 +80,7 @@ You'll need a work account or a microsoft account to sign up. Use either your pe
     - The industry that you work in.
     - The type of applications or solutions that you're interested in developing.
     - Products, technologies, and programming languages that you're interested in.
-9. When you're finished, select **Join**. Your preferences appear on the next page in the top right, and you will see a Welcome message and will receive a welcome email.
+9. Select **Join**. Your preferences appear on the next page in the top right, and you will see a welcome message and will receive a welcome email.
 10. Set up a Microsoft 365 developer sandbox to build your solutions independent of your production environment.
 
 You can also [manually create a test tenant](/azure/active-directory/develop/quickstart-create-new-tenant).
