@@ -73,7 +73,9 @@ You'll need a work account or a microsoft account to sign up. Use either your pe
 5. Review the terms and conditions. You'll need to select the checkbox before you can join.
 6. Optionally, select the **I would like to hear from the Microsoft 365 Developer Program** checkbox if you want to hear from Microsoft about new capabilities and other updates.
 7. Select **Next**.
+    
     :::image type="content" source="media/create-developer-environment-m365-signup.png" alt-text="Sign-up for the Microsoft 365 Developer Program":::
+    
 8. On the Microsoft 365 Developer Program Preferences page, let us know your preferences so we can personalize your experience, including:
     - The industry that you work in.
     - The type of applications or solutions that you're interested in developing.
