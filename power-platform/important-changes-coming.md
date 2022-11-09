@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 10/28/2022
+ms.date: 11/08/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
@@ -331,7 +331,8 @@ Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector.
 - Microsoft Dataverse – This is the newest connector and will, in time, become the only connector available for Dataverse usage. All new features, performance work, and enhancements will be available on this connector.
 - Microsoft Dataverse (Legacy) – This is the last generation connector for Microsoft Dataverse. It will continue to operate until it is fully deprecated. It will not receive feature or enhancement updates.
 
-Mapping of common actions 
+**Mapping of common actions**
+
 |Action |Dynamics 365 | Dataverse Legacy  |Microsoft Dataverse |
 |---------|---------|---------|---------|
 |Create Trigger |When a Record is Created (deprecated) |When a row is added |When a row is added, modified, or deleted |
