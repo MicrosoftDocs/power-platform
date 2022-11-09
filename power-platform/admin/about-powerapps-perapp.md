@@ -178,7 +178,7 @@ As of October, 2020, the baseline access license is no longer required. Ensure t
 Once the user is allocated a Power Apps per user license, per app license consumption reports will show per app licenses aren’t being consumed.
 
 ### When will I be able to see the list of users who are using the Power Apps per app license?
-We are currently working on this report. Please check back again for more details. This report will be available in the Power Platform admin center. 
+The Power Apps per app plan assignment report is available in [license consumption reports](view-license-consumption-issues.md) in Power Platform admin center. 
 
 ### What are the differences in the admin experience between the Power Apps per app and the Power Apps per user license?
 Power Apps per user plan is a user license assigned by admins from https://admin.microsoft.com. Once the user has this license they can access any number of apps created using Power Apps. However, the Power Apps per app plan provides a capacity to run apps and the management experience for this license is in the Power Platform admin center. The license is assigned to users when apps in the environment are shared with them. Admins allocate the capacity of per app to an environment and the makers share the app with users. This sharing consumes the per app capacity. Once the reporting is available, admins can see the users who are consuming capacity in the Power Platform admin center and not in the Microsoft 365 admin center.
