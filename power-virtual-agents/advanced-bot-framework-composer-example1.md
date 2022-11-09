@@ -244,7 +244,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
     [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
-1. Go to the Power Virtual Agents **Topics** page. Your new **Meals** Bot Framework dialog is now shown on the **Topics** page as part of your Power Virtual Agents bot.
+1. Go to the Power Virtual Agents **Topics** page to see your new **Meals** topic.
 
     :::image type="content" source="media/Composer_Example1/E1_Meals_in_PVA_Topics.png" alt-text="Power Virtual Agents Topics page - new Bot Framework dialog.":::
 

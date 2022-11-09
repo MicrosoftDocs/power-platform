@@ -31,13 +31,13 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 1. [Open your bot in Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
-1. In Composer, go to the **Create** tab. In your bot, select **More options** (**...**) then select **+ Add a dialog**. For **Name** enter "DailySpecials".
+1. In Composer, go to the **Create** tab. In your bot, select **More options** (**...**) then select **+ Add a dialog**. For **Name** enter `DailySpecials`.
 
 1. In your new **DailySpecials** dialog, select the **BeginDialog** trigger to open the authoring canvas.
 
 1. On the canvas, select **Add** (**+**), **Manage properties**, and **Set a property**.
 
-1. In the properties pane, configure the following properties:
+1. In the properties pane, do the following:
 
     1. For **Property**, enter `conversation.days_array`.
 
@@ -100,7 +100,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
     :::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add bot response.":::
 
-1. Select the **User Input (Choice)** node. On the properties pane, select the **User Input** tab. Then configure the following properties:
+1. Select the **User Input (Choice)** node. On the properties pane, select the **User Input** tab then do the following:
 
     1. For **Property**, enter `conversation.day_choice`.
 
@@ -134,7 +134,11 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
     :::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Composer Create_tab - add new trigger.":::
 
-1. Set the type of trigger to **Intent recognized** and name it **Specials**. Add the following trigger phrases for your intent and select **Submit**.
+1. In the **Create a trigger** window, do the following:
+
+    1. For **What is the type of this trigger?**, select **Intent recognized**.
+    1. For **What is the name of this trigger?**, enter `Specials`.
+    1. For **Trigger phrases**, copy and paste the following:
 
     ```lu
     -what specials do you have
@@ -142,27 +146,30 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
     -do you have discounts
     ```
 
-:::image type="content" source="media/Composer_Example2/E2_main_nameNewTrigger.png" alt-text="Composer Create_tab - add new Intent Recognized trigger.":::
+    :::image type="content" source="media/Composer_Example2/E2_main_nameNewTrigger.png" alt-text="Composer Create_tab - add new Intent Recognized trigger.":::
 
-A new trigger **Specials** will be created. Select **Begin a new dialog** under **Dialog management** to create a node that can call another dialog. Select to call **DailySpecials** on the **Begin a new dialog** side pane:
+    1. Select **Submit**.
 
-:::image type="content" source="media/Composer_Example2/E2_main_callDialog.png" alt-text="Composer Create tab - call a new dialog.":::
+1. In the bot explorer, select the **Specials** trigger.
 
-You are now ready to add your Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
+1. On the canvas, select **Add** (**+**), **Dialog management**, then **Begin a new dialog**.
 
-Once your new Composer content is successfully published, go to the Power Virtual Agents **Topics** page to verify that your new Composer content has been uploaded correctly. In your **Topics** list, you can see the new **Specials** and **DailySpecials** content that you have created in Bot Framework Composer.
+1. In the properties pane, for **Dialog name**, select **DailySpecials**
 
-> [!NOTE]
-> You might need to refresh your **Topics** page in Power Virtual Agents to see the new content that has been uploaded from Composer.
+    :::image type="content" source="media/Composer_Example2/E2_main_callDialog.png" alt-text="Composer Create tab - call a new dialog.":::
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_inPVA.png" alt-text="Power Virtual Agents Topics page refresh.":::
+## Test your bot
 
-Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a conversation:
+1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-power-virtual-agents) to make it available in your Power Virtual Agents bot.
 
-- **Do you have any specials?**
+    [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
-:::image type="content" source="media/Composer_Example2/Example2._cropped.png" alt-text="Power Virtual Agents Test pane.":::
+1. Go to the Power Virtual Agents **Topics** page to see your new **Specials** and **DailySpecials** topics.
 
-[!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
+    :::image type="content" source="media/Composer_Example2/E2_DailySpecials_inPVA.png" alt-text="Power Virtual Agents Topics page refresh.":::
+
+1. Open the **Test pane** and make sure **Track between topics** is turned on. Enter the message "Do you have any specials?" to start your conversation.
+
+    :::image type="content" source="media/Composer_Example2/Example2._cropped.png" alt-text="Power Virtual Agents Test pane.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
