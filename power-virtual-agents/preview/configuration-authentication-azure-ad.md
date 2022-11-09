@@ -88,7 +88,7 @@ If you have tenant administration rights, you can [configure API permissions](#c
 
 1. In the left nav of the app registration blade in Azure portal, go to **API permissions**.
 
-1. Select **Grant admin consent for <your tenant name>** and then select **Yes**. If this button is greyed out, you'll need to ask a tenant administrator to do this for you
+1. Select **Grant admin consent for \<your tenant name>** and then select **Yes**. If this button is greyed out, you'll need to ask a tenant administrator to do this for you
 
     :::image type="content" source="media/configure-web-sso/api-permission.png" alt-text="Screenshot API permission." border="false":::
 
