@@ -32,7 +32,7 @@ Stores solution artifacts which are exported when running Pipelines.
 |`GeneratedOn`<br/>**Generated On** |DateTime|Date and time when the artifact record was generated.|
 |`Name`<br/>**Name** |String|The name of the artifact record.|
 |`OwnerId`<br/>**Owner** |Owner|Owner Id|
-|`statuscode`<br/>**Status Reason**|Status|Reason for the status of the Deployment Artifact.<br />Value:`1`, Label: Active<br />Value:`2`, Label: Inactive|
+|`statuscode`<br/>**Status Reason**|Status|Reason for the status of the Deployment Artifact.<br />Value:`1` Label: Active<br />Value:`2` Label: Inactive|
 |`ArtifactFile`<br/>**Managed Artifact File**|File|Stores the managed version of the artifact.<br />**Not valid for Create**|
 |`ArtifactFileUnmanaged`<br/>**Unmanaged Artifact File**|File|Unmanaged Artifact File.<br />**Not valid for Create**|
 
@@ -46,12 +46,12 @@ Stores the environments which are participating in Pipelines and configured in t
 |---------|---------|---------|
 |`DeploymentEnvironmentId`<br/>**Deployment Environment** | Uniqueidentifier| Unique identifier for deployment environment instances|
 |`EnvironmentId`<br/>**Environment ID**| String| The Environment ID of the Power Platform environment.|
-|`EnvironmentType`<br/>**Environment Type**|Picklist| Indicates if the environment is used for development or as a target environment that a Pipeline will deploy to.<br />Value: `200000000`, Label: Development Environment<br />Value: `200000001`, Label: Target Environment |
+|`EnvironmentType`<br/>**Environment Type**|Picklist| Indicates if the environment is used for development or as a target environment that a Pipeline will deploy to.<br />Value: `200000000` Label: Development Environment<br />Value: `200000001` Label: Target Environment |
 |`ErrorMessage`<br/>**Error Message**| String| Stores the Power Platform environment validation failure error messages.|
 |`name`<br/>**Name**|String|The name of the Deployment Environment.|
 |`OwnerId`<br/>**Owner**| Owner| Owner Id|
-|`statuscode`<br/>**Status Reason**|Status| Reason for the status of the Deployment Environment.<br />Value:`1`, Label: Active<br />Value:`2`, Label: Inactive|
-|`ValidationStatus`<br/>Validation Status|Picklist|Indicates if the Environment ID of the Power Platform environment has been validated. <br />**Not valid for Create**<br />Value:`200000000`, Label: Pending<br />Value:`200000001`, Label: Success<br />Value:`200000002`, Label: Failed|
+|`statuscode`<br/>**Status Reason**|Status| Reason for the status of the Deployment Environment.<br />Value:`1` Label: Active<br />Value:`2` Label: Inactive|
+|`ValidationStatus`<br/>Validation Status|Picklist|Indicates if the Environment ID of the Power Platform environment has been validated. <br />**Not valid for Create**<br />Value:`200000000` Label: Pending<br />Value:`200000001` Label: Success<br />Value:`200000002` Label: Failed|
 
 
 ## DeploymentPipeline (Deployment Pipeline)
@@ -64,7 +64,7 @@ Stores the Pipeline configurations.
 |`Description`<br/>**Description**|String| Custom description of the Pipeline.|
 |`Name`<br/>**Name**|String| The name of the Pipeline record.|
 |`OwnerId`<br/>**Owner**|Owner| Owner Id|
-|`statuscode`<br/>**Status Reason**|Status| Reason for the status of the Deployment Pipeline.<br />Value:`1`, Label: Active<br />Value:`2`, Label: Inactive |
+|`statuscode`<br/>**Status Reason**|Status| Reason for the status of the Deployment Pipeline.<br />Value:`1` Label: Active<br />Value:`2` Label: Inactive |
 
 ## DeploymentStage (Deployment Stage)
 
@@ -78,7 +78,7 @@ Stores the deployment stage configuration such as target environment and prerequ
 |`Name`<br/>**Name**|String| The name of the deployment stage instance.|
 |`OwnerId`<br/>**Owner**|Owner| Owner Id|
 |`PreviousDeploymentStageId`<br/>**Previous Deployment Stage**| Lookup| Lookup to the previous deployment stage configured in the Pipeline. Previous deployment stages must be run successfully before deployments can be run for the current stage.|
-|`statuscode`<br/>**Status Reason**| Status| Reason for the status of the Deployment Stage.<br />Value:`1`, Label: Active<br />Value:`2`, Label: Inactive|
+|`statuscode`<br/>**Status Reason**| Status| Reason for the status of the Deployment Stage.<br />Value:`1` Label: Active<br />Value:`2` Label: Inactive|
 |`TargetDeploymentEnvironmentId`<br/>**Target Deployment Environment ID**| Lookup| Lookup to the target deployment environment associated with this deployment stage.|
 
 ## DeploymentStageRun (Deployment Stage Run)
@@ -99,16 +99,15 @@ Stores information about a deployment stage execution.
 |`EndTime`<br/>**End Time**| DateTime| Date and time when the deployment succeeded or failed.|
 |`ErrorMessage`<br/>**Error Message**| String| Stores the deployment failure messages for a stage run instance.|
 |`Name`<br/>**Name**| String| The name of a Deployment Stage Run. This is auto-generated based on the stage name, the artifact name, and the artifact version number. |
-|`Operation`<br/>**Operation**| Picklist| Indicates the current operation the deployment.<br />Value: `200000200`, Label: None<br />Value: `200000201`, Label: Validate<br />Value: `200000202`, Label: Deploy|
+|`Operation`<br/>**Operation**| Picklist| Indicates the current operation the deployment.<br />Value: `200000200` Label: None<br />Value: `200000201` Label: Validate<br />Value: `200000202` Label: Deploy|
 |`OperationDetails`<br/>**Operation Details**| String| Stores the details of the current deployment operation.|
-|`OperationStatus`<br/>**Operation Status**| Picklist| Stores the sub status of the current deployment operation.<br />Value: `200000000`, Label: NotStarted<br />Value: `200000001`, Label: Started<br />Value: `200000002`, Label: Succeeded
-<br />Value: `200000003`, Label: Failed<br />Value: `200000004`, Label: Pending|
+|`OperationStatus`<br/>**Operation Status**| Picklist| Stores the sub status of the current deployment operation.<br />Value: `200000000` Label: NotStarted<br />Value: `200000001` Label: Started<br />Value: `200000002` Label: Succeeded<br />Value: `200000003` Label: Failed<br />Value: `200000004` Label: Pending|
 |`OwnerId`<br/>**Owner**| Owner| Owner Id|
 |`RetryCount`<br/>**Retry Count**| Integer| For internal use only.|
-|`StageRunStatus`<br/>**Stage Run Status**| Picklist| Indicates the overall status of a Deployment Stage Run.<br />Value: `200000000`, Label: NotStarted<br />Value: `200000001`, Label: Started<br />Value: `200000002`, Label: Succeeded<br />Value: `200000003`, Label: Failed|
+|`StageRunStatus`<br/>**Stage Run Status**| Picklist| Indicates the overall status of a Deployment Stage Run.<br />Value: `200000000` Label: NotStarted<br />Value: `200000001` Label: Started<br />Value: `200000002` Label: Succeeded<br />Value: `200000003` Label: Failed|
 |`StartTime`<br/>**Start Time**| DateTime| Date and time when the deployment started.|
-|`statuscode`<br/>**Status Reason**| Status| Reason for the status of the Deployment Stage Run.<br />Value:`1`, Label: Active<br />Value:`2`, Label: Inactive|
-|`SubOperation`<br/>**SubOperation**| Picklist| Represents the sub operation of the current deployment operation. This is managed internally.<br />Value: `200000100`, Label: None<br />Value: `200000101`, Label: Executing Pre-step<br />Value: `200000102`, Label: Retrieving Artifact Configuration<br />Value: `200000103`, Label: Validating Artifact Configuration<br />Value: `200000104`, Label: Retrieving Artifact<br />Value: `200000105`, Label: Deploying Artifact<br />Value: `200000106`, Label: Executing Post-step|
+|`statuscode`<br/>**Status Reason**| Status| Reason for the status of the Deployment Stage Run.<br />Value:`1` Label: Active<br />Value:`2` Label: Inactive|
+|`SubOperation`<br/>**SubOperation**| Picklist| Represents the sub operation of the current deployment operation. This is managed internally.<br />Value: `200000100` Label: None<br />Value: `200000101` Label: Executing Pre-step<br />Value: `200000102` Label: Retrieving Artifact Configuration<br />Value: `200000103` Label: Validating Artifact Configuration<br />Value: `200000104` Label: Retrieving Artifact<br />Value: `200000105` Label: Deploying Artifact<br />Value: `200000106` Label: Executing Post-step|
 |`TargetDeploymentEnvironment`<br/>**Target Deployment Environment ID**| Lookup| Lookup to the target Deployment Environment associated with a Deployment Stage Run.|
 |`TargetEnvironmentId`<br/>**Target Environment Id**| String| For internal use only.|
 |`ValidationResults`<br/> **Validation Results**| String| Stores the artifact validation response.|
@@ -125,13 +124,13 @@ Stores background operation information for a Deployment Stage Run.
 |`EndTime`<br/>**End Time**| DateTime| Date and Time when the deployment operation succeeded or failed.|
 |`ErrorMessage`<br/>**Error Message**| String| Stores any error message associated with the Deployment Stage Run Suboperation.|
 |`Name`<br/>**Name**|String| The name of the Deployment Stage Run Suboperation. This is managed internally.|
-|`Operation`<br/>**Operation**| Picklist| Stores information about the deployment operation being run.<br />Value: `200000200`, Label: None<br />Value: `200000201`, Label: Validate<br />Value: `200000202`, Label: Deploy|
-|`OperationStatus`<br/>**Operation Status**| Picklist| Stores the status of the deployment operation.<br />Value: `200000000`, Label: NotStarted<br />Value: `200000001`, Label: Started<br />Value: `200000002`, Label: Succeeded<br />Value: `200000003`, Label: Failed<br />Value: `200000004`, Label: Pending|
+|`Operation`<br/>**Operation**| Picklist| Stores information about the deployment operation being run.<br />Value: `200000200` Label: None<br />Value: `200000201` Label: Validate<br />Value: `200000202` Label: Deploy|
+|`OperationStatus`<br/>**Operation Status**| Picklist| Stores the status of the deployment operation.<br />Value: `200000000` Label: NotStarted<br />Value: `200000001` Label: Started<br />Value: `200000002` Label: Succeeded<br />Value: `200000003` Label: Failed<br />Value: `200000004` Label: Pending|
 |`OwnerId`<br/>**Owner**| Owner| Owner Id|
 |`RetryCount`<br/>**Retry Count**| Integer| For internal use only.|
 |`StartTime`<br/>**Start Time**| DateTime| Date and time when the deployment operation started.|
-|`statuscode`<br/>**Status Reason**| Status| Reason for the status of the Deployment Stage Run Status.<br />Value:`1`, Label: Active<br />Value:`2`, Label: Inactive|
-|`SubOperation`<br/>**Suboperation**| Picklist| Stores additional information about the background operation.<br />Value: `200000100`, Label: None<br />Value: `200000101`, Label: Executing Pre-step<br />Value: `200000102`, Label: Retrieving Artifact Configuration<br />Value: `200000103`, Label: Validating Artifact Configuration<br />Value: `200000104`, Label: Retrieving Artifact<br />Value: `200000105`, Label: Deploying Artifact<br />Value: `200000106`, Label: Executing Post-step|
+|`statuscode`<br/>**Status Reason**| Status| Reason for the status of the Deployment Stage Run Status.<br />Value:`1` Label: Active<br />Value:`2` Label: Inactive|
+|`SubOperation`<br/>**Suboperation**| Picklist| Stores additional information about the background operation.<br />Value: `200000100` Label: None<br />Value: `200000101` Label: Executing Pre-step<br />Value: `200000102` Label: Retrieving Artifact Configuration<br />Value: `200000103` Label: Validating Artifact Configuration<br />Value: `200000104` Label: Retrieving Artifact<br />Value: `200000105` Label: Deploying Artifact<br />Value: `200000106` Label: Executing Post-step|
 
 ### See Also
 
