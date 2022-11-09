@@ -69,7 +69,7 @@ You'll need a work account or a microsoft account to sign up. Use either your pe
 4. On the Microsoft 365 Developer Program Signup page, complete the following fields in the online form:
     - Country/Region
     - Company
-    - Language preferences
+    - Language preference
 5. Review the terms and conditions. You'll need to select the checkbox before you can join.
 6. Optionally, select the **I would like to hear from the Microsoft 365 Developer Program** checkbox if you want to hear from Microsoft about new capabilities and other updates.
 7. Select **Next**.
