@@ -8,6 +8,8 @@
     href: fusion-development.md
   - name: Create a developer environment
     href: create-developer-environment.md
+  - name: ALM for developers
+    href: /power-platform/alm/alm-for-developers
   - name: Tools
     expanded: true
     items:
