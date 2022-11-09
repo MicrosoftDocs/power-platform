@@ -52,6 +52,7 @@ The role of the professional developer and IT professional is to create a secure
 
 ### See Also
 
+[Create a developer environment](create-developer-environment.md)<br/>
 [Fusion Development ebook](/power-apps/guidance/fusion-dev-ebook/)<br/> 
 [Power Platform ALM for developers](../alm/alm-for-developers.md)<br/>
 [Power Platform for developers](get-started.md)

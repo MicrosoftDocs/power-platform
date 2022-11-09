@@ -6,6 +6,8 @@
     href: get-started.md
   - name: Fusion development
     href: fusion-development.md
+  - name: Create a developer environment
+    href: create-developer-environment.md
   - name: Tools
     expanded: true
     items:
