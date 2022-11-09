@@ -303,11 +303,11 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for data integrations, flows, Azure Logic Apps, and canvas apps is officially deprecated. We recommend that you don't create new connections using this connector. 
 
 ### Impact
-As of October 31st 2022, this connector is shut down for Power Automate Flows and Canvas aps using the Power Apps Player in Windows. All flows and canvas apps must be migrated to the Microsoft Dataverse or Dataverse Legacy connector per recommended actions below.
+As of October 31 2022, this connector is shut down for Power Automate flows and canvas apps using the Power Apps player in Windows. All flows and canvas apps must be migrated to the Microsoft Dataverse or Dataverse Legacy connector per recommended actions below.
 
-As of October 31st 2022, this connector is in the process of shutting down for Logic Apps. All logic apps must be migrated as soon as possible to the Microsoft Dataverse or Dataverse Legacy connector per recommended actions below.
+As of October 31 2022, this connector is in the process of shutting down for Logic Apps. All Logic Apps must be migrated as soon as possible to the Microsoft Dataverse or Dataverse Legacy connector per recommended actions below.
 
-No new connections can be created for data integrations using the Dynamics 365 connector. For these components, shut down is in progress. We recommend use of the Dynamics 365 connector be replaced with an option below ASAP.
+No new connections can be created for data integrations using the Dynamics 365 connector. For these components, shut down is in progress. We recommend use of the Dynamics 365 connector be replaced with an option below as soon as possible.
 
 ### The following behaviors will be observed
 #### Data integrator
@@ -320,7 +320,7 @@ No new connections can be created for data integrations using the Dynamics 365 c
 
 #### Logic Apps
 - Dynamics 365 connector can't be selected for creating a new Logic App.
-- Existing Logic Apps will continue to run but must be migrated ASAP.
+- Existing Logic Apps will continue to run but must be migrated as soon as possible.
 - You will be able to edit an existing Logic App.
 
 #### Canvas apps
