@@ -113,3 +113,24 @@ Stores background operation information for a Deployment Stage Run.
 
 |SchemaName<br/>Display Name |Type  |Description  |
 |---------|---------|---------|
+|`DeploymentStageRunId`<br/>**Deployment Stage Run**| Lookup| Lookup to the owning Deployment Stage Run instance.|
+|`DeploymentStageRunStatusId`<br/>**Deployment Stage Run Suboperation ID** |Uniqueidentifier| Unique identifier for Deployment Stage Run Suboperation instances.|
+|`Details`<br/>**Details**|String| Stores information about the Deployment Stage Run Suboperation.|
+|`EndTime`<br/>**End Time**| DateTime| Date and Time when the deployment operation succeeded or failed.|
+|`ErrorMessage`<br/>**Error Message**| String| Stores any error message associated with the Deployment Stage Run Suboperation.|
+|`Name`<br/>**Name**|String| The name of the Deployment Stage Run Suboperation. This is managed internally.|
+|`Operation`<br/>**Operation**| Picklist| Stores information about the deployment operation being run.|
+|`OperationStatus`<br/>**Operation Status**| Picklist| Stores the status of the deployment operation.|
+|`OwnerId`<br/>**Owner**| Owner| Owner Id|
+|`RetryCount`<br/>**Retry Count**| Integer| For internal use only.|
+|`StartTime`<br/>**Start Time**| DateTime| Date and time when the deployment operation started.|
+|`statuscode`<br/>**Status Reason**| Status| Reason for the status of the Deployment Stage Run Status|
+|`SubOperation`<br/>**Suboperation**| Picklist| Stores additional information about the background operation.|
+
+### See Also
+
+[Overview of Power Platform pipelines (preview)](../../../alm/pipelines.md)
+[Use Power Platform pipelines (preview)](../../../alm/use-pipelines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
