@@ -23,111 +23,124 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- [Introduction to Bot Framework Composer](/composer/introduction).
-- See how to [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md).
 - [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md).
 
-## Display a multi-select options list
+## Create a new dialog
 
-Using Composer, you can create a multi-select options list to be used in your chatbot.
+1. In Power Virtual Agents, open the bot you created in [Example 1](advanced-bot-framework-composer-example1.md).
 
-Open the Power Virtual Agents bot used in [Example 1](advanced-bot-framework-composer-example1.md) and on the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer** to open the bot in Composer.
+1. [Open your bot in Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
-While on the **Create** tab in Composer add another Bot Framework dialog. Name your new dialog **DailySpecials** in Composer.
+1. In Composer, go to the **Create** tab. In your bot, select **More options** (**...**) then select **+ Add a dialog**. For **Name** enter "DailySpecials".
 
-In your new **DailySpecials** dialog in Composer select the **BeginDialog** trigger to open the **Authoring canvas**.
+1. In your new **DailySpecials** dialog, select the **BeginDialog** trigger to open the authoring canvas.
 
-On the canvas, select _Add_ (**+**) then **Manage properties** then **Set a property** to create a new **Set a property** action within the **BeginDialog** trigger.
+1. On the canvas, select **Add** (**+**), **Manage properties**, and **Set a property**.
 
-In the **Set a property** pane, set the **Property** to `conversation.days_array`.
-Change the **Value** type to **\[] array**, to indicate this property will contain an array. Set the **Value** to the following array that lists the days of the week:
+1. In the properties pane, configure the following properties:
 
-```JSON
-["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-```
+    1. For **Property**, enter `conversation.days_array`.
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_setArray.png" alt-text="Composer Create property.":::
+    1. For **Value**, change the type to **\[] array**.
 
-Next, go to the **Bot Responses** tab in Composer and select **DailySpecials**. Select **Show code** and add the following template to the **Bot Responses** tab for **DailySpecials** to create daily offers for all the days of the week:
+    :::image type="content" source="media/Composer_Example2/E2_DailySpecials_setArray.png" alt-text="Screenshot of how to change the type of the value property.":::
 
-```lu
-# DailySpecials(day)
-- SWITCH: ${day}
-- CASE: ${0}
-    - All tofu meals are 10% off on Sundays!
-    - Every Sunday, all tofu entrees are 10% off.
-- CASE: ${1}
-    - All steak options are 10% off on Mondays!
-    - Enjoy your Monday with a special offer of 10% off on all steak dishes!
-- CASE: ${2}
-    - All the chicken meal options are 10% off on Tuesdays!
-    - Tuesday special is 10% off on all the chicken dishes!
-  - CASE: ${3}
-    - All the chicken and tofu meal options are 10% off on Wednesdays!
-    - Wednesday special is 10% off on all the chicken and tofu dishes!
-  - CASE: ${4}
-    - On Thursdays, get a free delivery in Seattle, Bellevue, and Redmond on all orders over $80!
-    - Thursday special is a free delivery on orders over $80 in Seattle, Bellevue, and Redmond.
-- CASE: ${5} 
-    - Friday special - get a 10% discount on all dishes and delivery is free on all orders over $80!
-    - Every Friday, we offer 10% off on all meals and a free delivery on orders over $80!
-- CASE: ${6}
-    - On Saturdays, we have a free delivery on all orders over $50.
-    - Free delivery on all orders over $50 on Saturdays!
-- DEFAULT:
-    - Holiday special - free delivery anywhere in Seattle, Bellevue and Redmond on orders over $70 today!
-    - Holiday Delivery is on us if you are in Seattle, Bellevue and Redmond and your order is over $70 total!
-```
+    1. For **Value**, copy and paste the following array
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Composer Bot Responses tab - bot responses code.":::
+        ```JSON
+        ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        ```
 
-Go back to the **Create** tab in Composer and select **BeginDialog** under **DailySpecials**.
+:::image type="content" source="media/Composer_Example2/begin-dialog-complete.png" alt-text="Screenshot of the completed dialog.":::
 
-Add a new prompt for user input to this dialog by selecting **Multi-choice** under the **Ask a question** menu option.
+## Configure bot responses
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_askaquestion.png" alt-text="Composer Create tab - ask a multi choice questions.":::
+1. Go to the **Bot Responses** tab. Select **DailySpecials**, then select **Show code**.
 
-Enter the following for the **Text** prompt:
-`Please select a day:`
+1. Copy and paste the following template into the **Bot Responses** tab to create daily offers for all the days of the week.
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add bot response.":::
+    ```lu
+    # DailySpecials(day)
+    - SWITCH: ${day}
+    - CASE: ${0}
+        - All tofu meals are 10% off on Sundays!
+        - Every Sunday, all tofu entrees are 10% off.
+    - CASE: ${1}
+        - All steak options are 10% off on Mondays!
+        - Enjoy your Monday with a special offer of 10% off on all steak dishes!
+    - CASE: ${2}
+        - All the chicken meal options are 10% off on Tuesdays!
+        - Tuesday special is 10% off on all the chicken dishes!
+    - CASE: ${3}
+        - All the chicken and tofu meal options are 10% off on Wednesdays!
+        - Wednesday special is 10% off on all the chicken and tofu dishes!
+    - CASE: ${4}
+        - On Thursdays, get a free delivery in Seattle, Bellevue, and Redmond on all orders over $80!
+        - Thursday special is a free delivery on orders over $80 in Seattle, Bellevue, and Redmond.
+    - CASE: ${5} 
+        - Friday special - get a 10% discount on all dishes and delivery is free on all orders over $80!
+        - Every Friday, we offer 10% off on all meals and a free delivery on orders over $80!
+    - CASE: ${6}
+        - On Saturdays, we have a free delivery on all orders over $50.
+        - Free delivery on all orders over $50 on Saturdays!
+    - DEFAULT:
+        - Holiday special - free delivery anywhere in Seattle, Bellevue and Redmond on orders over $70 today!
+        - Holiday Delivery is on us if you are in Seattle, Bellevue and Redmond and your order is over $70 total!
+    ```
 
-Select the **User Input (Choice)** action. On the **Prompt with multi-choice** pane, under **User Input**, set **Property** to `conversation.day_choice`.
+    :::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Composer Bot Responses tab - bot responses code.":::
 
-Set **Output format** to **index** to return the index of the selected option instead of a value.
+## Prompt for user input
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_input_variable.png" alt-text="Composer Create tab - set up choice output property.":::
+1. Go to the **Create** tab. Under **DailySpecials**, select **BeginDialog**.
 
-Next, scroll down the **Prompt with multi-choice** pane and set **List style** to **heroCard** to display our options list vertically.
+1. On the canvas, select **Add** (**+**), **Ask a question**, and **Multi-choice**.
 
-Select **Write an expression** for the **Array of choices** field and set it to use the `conversation.days_array` property we created.
+1. In the properties pane, enter `Please select a day:`
+
+    :::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add bot response.":::
+
+1. Select the **User Input (Choice)** node. On the properties pane, select the **User Input** tab. Then configure the following properties:
+
+    1. For **Property**, enter `conversation.day_choice`.
+
+    1. For **Output format**, choose **index** to return the index of the selected option instead of a value.
+
+    :::image type="content" source="media/Composer_Example2/E2_DailySpecials_input_variable.png" alt-text="Composer Create tab - set up choice output property.":::
+
+    1. For **List style**, choose **heroCard** to display our options list vertically.
+
+    1. For **Array of choices**, change the type to **Write an expression**.
+
+        :::image type="content" source="media/Composer_Example2/array-of-choices.png" alt-text="Composer Create tab - set up array of choices.":::
+
+    1. For **Array of choices**, enter `conversation.days_array`.
 
 :::image type="content" source="media/Composer_Example2/E2_DailySpecials_array_multi_option.png" alt-text="Composer Create tab - set up array of choices.":::
 
-You have created a multi-choice option list that is based on `conversation.days_array` and stores the user selection into the `conversation.day_choice` property.
+## Display daily special
 
-You can use this `conversation.day_choice` property to display the daily special for the selected day.
+1. On the canvas, select **Add** (**+**) then **Send a response**.
 
-Under the **User Input** action, add a **Send a response** action to your **DailySpecials** dialog. On the **Bot response** side pane, select **Show code**. Add the following expression:
+1. In the properties pane, under **Bot responses**, and select **Show code**. Copy and paste the following expression:
 
-```lg
-- ${DailySpecials(conversation.day_choice)}
-```
+    ```lg
+    - ${DailySpecials(conversation.day_choice)}
+    ```
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_addResponse.png" alt-text="Composer Create tab - display Daily Special for the selected day.":::
+    :::image type="content" source="media/Composer_Example2/E2_DailySpecials_addResponse.png" alt-text="Composer Create tab - display Daily Special for the selected day.":::
 
-In the **Bot explorer**, navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. On the on the actions menu, select the **Add new trigger** option.
+1. In the bot explorer, navigate to the main dialog. Select **More options** (**...**) then select **Add new trigger**.
 
-:::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Composer Create_tab - add new trigger.":::
+    :::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Composer Create_tab - add new trigger.":::
 
-Set the type of trigger to **Intent recognized** and name it **Specials**. Add the following trigger phrases for your intent and select **Submit**.
+1. Set the type of trigger to **Intent recognized** and name it **Specials**. Add the following trigger phrases for your intent and select **Submit**.
 
-```lu
--what specials do you have
--any special deals
--do you have discounts
-```
+    ```lu
+    -what specials do you have
+    -any special deals
+    -do you have discounts
+    ```
 
 :::image type="content" source="media/Composer_Example2/E2_main_nameNewTrigger.png" alt-text="Composer Create_tab - add new Intent Recognized trigger.":::
 

@@ -60,7 +60,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
 1. [Open your bot in Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
-1. Go to the **Create** tab in Composer and select **Add a dialog** in the dropdown menu.
+1. Go to the **Create** tab. In your bot, select **More options** (**...**) then select **+ Add a dialog**.
 
     :::image type="content" source="media/Composer_Example1/E1_Meals_creatNewDialog.png" alt-text="Composer Create tab.":::
 
