@@ -31,26 +31,30 @@ In this example, you'll learn how to show an Adaptive Card in Power Virtual Agen
 
 1. In Power Virtual Agents, go to **Topics** and create a new topic called "Meal delivery options".
 
-1. Add the following trigger phrases for this new topic:
+1. Copy and paste the following trigger phrases:
 
-    - what meals can I order
-    - what meal options do you have
-    - what dishes do you deliver
-    - entrees available for delivery
+    ```plaintext
+    what meals can I order
+    what meal options do you have
+    what dishes do you deliver
+    entrees available for delivery
+    ```
 
 1. On the **Authoring canvas**, select the default **Message** node. Select the three vertical dots, then select **Delete**.
 
-1. Under the **Trigger phrases** node, select **Add node** (**+**) and then select **Ask a question**.
+1. Under the **Trigger phrases** node, select **Add node** (**+**) and then select **Ask a question**. Then do the following:
 
-    1. For **Ask a question**, enter "What city are you in?".
+    1. For **Ask a question**, enter `What city are you in?`.
 
     1. For **Identify**, select **City**.
 
-1. In **Save response as**, create a new variable.
+1. In **Save response as**, select the automatically created variable. Then in the variable properties pane do the following:
 
-    1. For **Name**, enter **user_city**.
+    1. For **Name**, enter `user_city`.
 
     1. For **Usage**, select **Bot (any topic can access)**.
+
+1. Select **Save**.
 
 :::image type="content" source="media/Composer_Example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
 
@@ -64,7 +68,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
     :::image type="content" source="media/Composer_Example1/E1_Meals_creatNewDialog.png" alt-text="Composer Create tab.":::
 
-1. Name your new dialog **Meals** and select **OK** to create a new dialog.
+1. For **Name**, enter `Meals` then select **OK**.
 
     :::image type="content" source="media/Composer_Example1/E1_Meals_newDialog.png" alt-text="Composer Create tab new dialog.":::
 
@@ -72,7 +76,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
     :::image type="content" source="media\Composer_Example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
 
-1. In the code window, copy and paste the following bot response. Then replace the three example image URLs with your own.
+1. In the code pane, copy and paste the following bot response. Then replace the three example image URLs with your own.
 
     ```lg
     # Chicken()
@@ -97,7 +101,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
     :::image type="content" source="media/Composer_Example1/E1_Meals_BotResponse_data.png" alt-text="Composer Bot Responses tab with strings.":::
 
-1. Copy and paste the following code to the same window to add an Adaptive Card that displays three images.
+1. Copy and paste the following code into the same code pane to add an Adaptive Card that displays three images.
 
     ````lg
     # adaptivecardjson_meals(location)
@@ -201,25 +205,24 @@ Next, you'll display meal choice images that are available in the user's city us
 
     :::image type="content" source="media/Composer_Example1/E1_Meals_BotReponse_JSON.png" alt-text="Composer Bot Responses tab - Adaptive Card JSON.":::
 
-1. Copy and paste the following code to the same window to add an activity that will display the Adaptive Card.
+1. Copy and paste the following code into same code pane to add an activity that will display the Adaptive Card.
 
     ```lg
     # AdaptiveCardMeals(location)
     [Activity
         Attachments = ${json(adaptivecardjson_meals(location))}
     ]
-
     ```
 
     :::image type="content" source="media/Composer_Example1/E1_Meals_BotResponse_Activity.png" alt-text="Composer Bot Responses tab - Activity.":::
 
 ## Display your Adaptive Card
 
-1. Go back to the **Create** tab in Composer. Select the **Meals** dialog then select the **BeginDialog** trigger.
+1. Go back to the **Create** tab in Composer. In the bot explorer, select the **Meals** dialog then select the **BeginDialog** trigger.
 
 1. On the authoring canvas, select **Add** (**+**) then select **Send a response**. This will add a node that we'll use to display the Adaptive Card.
 
-1. Select the new **Send a response** node to open the **Properties pane**. Under **Bot responses**, select **Show code** to switch to the code editor.
+1. Select the new **Send a response** node to open the properties pane. Under **Bot responses**, select **Show code** to switch to the code editor.
 
     :::image type="content" source="media/Composer_Example1/response_code_editor.png" alt-text="Screenshot of show code button":::
 
@@ -258,10 +261,14 @@ Next, you'll display meal choice images that are available in the user's city us
 
 ## Test your bot
 
-To test your changes in Power Virtual Agents, open the **Test pane** and make sure **Track between topics** is turned on. Enter the message "What meals do you deliver?" to start your conversation.
+To test your changes in Power Virtual Agents, open the **Test pane** and make sure **Track between topics** is turned on. Enter the message `What meals do you deliver?` to start your conversation.
 
 Your bot will trigger the **Meal delivery options** topic which asks the user for their current city. Then the bot will redirect to the Composer dialog **Meals** to display an Adaptive Card.
 
 :::image type="content" source="media/Composer_Example1/Example1_cropped.png" alt-text="Power Virtual Agents Example 1 test.":::
+
+## Next Steps
+
+[Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

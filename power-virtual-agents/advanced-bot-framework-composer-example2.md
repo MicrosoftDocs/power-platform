@@ -35,7 +35,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 1. In your new **DailySpecials** dialog, select the **BeginDialog** trigger to open the authoring canvas.
 
-1. On the canvas, select **Add** (**+**), **Manage properties**, and **Set a property**.
+1. On the authoring canvas, select **Add** (**+**), **Manage properties**, and **Set a property**.
 
 1. In the properties pane, do the following:
 
@@ -92,15 +92,15 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 ## Prompt for user input
 
-1. Go to the **Create** tab. Under **DailySpecials**, select **BeginDialog**.
+1. Go to the **Create** tab. In the bot explorer, under **DailySpecials**, select **BeginDialog**.
 
-1. On the canvas, select **Add** (**+**), **Ask a question**, and **Multi-choice**.
+1. On the authoring canvas, select **Add** (**+**), **Ask a question**, and **Multi-choice**.
 
-1. In the properties pane, enter `Please select a day:`
+1. Select the **User Input (Choice)** node. In the properties pane, under **Responses**, enter `Please select a day:`
 
     :::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add bot response.":::
 
-1. Select the **User Input (Choice)** node. On the properties pane, select the **User Input** tab then do the following:
+1. Select the **User Input** tab in the properties pane, then do the following:
 
     1. For **Property**, enter `conversation.day_choice`.
 
@@ -114,13 +114,13 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
         :::image type="content" source="media/Composer_Example2/array-of-choices.png" alt-text="Composer Create tab - set up array of choices.":::
 
-    1. For **Array of choices**, enter `conversation.days_array`.
+    1. For **Array of choices**, enter `=conversation.days_array`.
 
 :::image type="content" source="media/Composer_Example2/E2_DailySpecials_array_multi_option.png" alt-text="Composer Create tab - set up array of choices.":::
 
 ## Display daily special
 
-1. On the canvas, select **Add** (**+**) then **Send a response**.
+1. On the authoring canvas, select **Add** (**+**) then **Send a response**.
 
 1. In the properties pane, under **Bot responses**, and select **Show code**. Copy and paste the following expression:
 
@@ -130,7 +130,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
     :::image type="content" source="media/Composer_Example2/E2_DailySpecials_addResponse.png" alt-text="Composer Create tab - display Daily Special for the selected day.":::
 
-1. In the bot explorer, navigate to the main dialog. Select **More options** (**...**) then select **Add new trigger**.
+1. In the bot explorer, go to the main dialog. Select **More options** (**...**) then select **Add new trigger**.
 
     :::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Composer Create_tab - add new trigger.":::
 
@@ -152,7 +152,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 1. In the bot explorer, select the **Specials** trigger.
 
-1. On the canvas, select **Add** (**+**), **Dialog management**, then **Begin a new dialog**.
+1. On the authoring canvas, select **Add** (**+**), **Dialog management**, then **Begin a new dialog or topic**.
 
 1. In the properties pane, for **Dialog name**, select **DailySpecials**
 
@@ -168,7 +168,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
     :::image type="content" source="media/Composer_Example2/E2_DailySpecials_inPVA.png" alt-text="Power Virtual Agents Topics page refresh.":::
 
-1. Open the **Test pane** and make sure **Track between topics** is turned on. Enter the message "Do you have any specials?" to start your conversation.
+1. Open the **Test pane** and make sure **Track between topics** is turned on. Enter the message `Do you have any specials?` to start your conversation.
 
     :::image type="content" source="media/Composer_Example2/Example2._cropped.png" alt-text="Power Virtual Agents Test pane.":::
 
