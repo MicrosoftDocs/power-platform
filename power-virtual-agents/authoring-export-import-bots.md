@@ -15,6 +15,8 @@ ms.collection: virtualagent
 
 # Export and import bots using solutions
 
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
