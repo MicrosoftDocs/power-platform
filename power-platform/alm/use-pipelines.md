@@ -86,7 +86,6 @@ Grant access to run one or more pipelines. Typically, makers won’t be allowed 
 ### Run a pipeline
 
 1. Sign into a Power Platform preview environment (make.preview.powerapps.com) and select your development environment.
-1. To enable the feature, append the following to your browser URL:`?cdsCommon.enableAppDeployment=true&powerappsConnections.enableInlineConnectionCreation=true&cdsCommon.enableAppDeploymentPipelinesPolling=true&make.enableMultiEnvironmentGraphQLService=true`. For example: https://make.preview.powerapps.com?cdsCommon.enableAppDeployment=true&powerappsConnections.enableInlineConnectionCreation=true&cdsCommon.enableAppDeploymentPipelinesPolling=true&make.enableMultiEnvironmentGraphQLService=true
 1. To deploy a solution using a pipeline, go to **Solutions** and create or select an unmanaged solution to deploy.
 1. From the **Solutions** area, choose between two options to include the solution in the pipeline:
    - Select **Pipelines** from the left navigation pane.
