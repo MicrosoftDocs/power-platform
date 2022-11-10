@@ -46,15 +46,13 @@ Custom topics added with Composer are deployed, hosted, and executed together wi
 
 Composer uses a different set of terms to describe similar concepts used in Power Virtual Agents. Below is a list of key terms to understand:
 
-- **dialog:** Dialogs are the basic building block in Composer and serve as containers for triggers. Each dialog represents a portion of the bot's functionality that contains instructions for what the bot will do and how it will react to user input.
+- **dialog:** Dialogs are the basic building block in Composer and serve as containers for triggers. Each dialog represents a portion of the bot's functionality that contains instructions for what the bot will do and how it will react to user input. To learn more about dialogs, see [Dialogs as conversational building blocks in Composer](/composer/concept-dialog).
 
-- **main dialog:** A bot's main dialog is the top-level read-only dialog that is created when you import your Power Virtual Agent bot into Composer. The main dialog should never be deleted, as it corresponds to your Power Virtual Agents bot.
+- **main dialog:** A bot's main dialog is the first dialog that appears in the bot explorer and is created when you import your Power Virtual Agent bot into Composer. The main dialog should never be deleted, as it corresponds to your Power Virtual Agents bot.
 
-- **trigger:** Triggers are the main component of a dialog and let you catch and respond to events. Each trigger has a condition and a collection of actions to execute when the condition is met. You can think of triggers as the equivalent of _topics_ in Power Virtual Agents.
+- **trigger:** Triggers are the main component of a dialog and let you catch and respond to events. Each trigger has a condition and a collection of actions to execute when the condition is met. You can think of triggers as the equivalent of _topics_ in Power Virtual Agents. To learn more about triggers, see [Triggers](/composer/concept-events-and-triggers).
 
 - **action:** Actions are the main component of a trigger which enable you to send a response, create and assign values to properties, manipulate the conversational flow, manage dialogs, and many other activities. You can think of actions as the equivalent of _nodes_ in Power Virtual Agents.
-
-To learn more about other Composer terms, see [Glossary for Composer](/composer/glossary).
 
 ## Composer features not supported with Power Virtual Agents
 
