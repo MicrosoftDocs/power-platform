@@ -29,7 +29,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 ## Test a topic in the Test bot pane
 
-1. If the **Test bot** pane is hidden, open it by selecting the test bot icon at the bottom of the side pane.
+1. If the **Test bot** pane is hidden, open it by selecting **Test your bot** in the side pane.
 
    :::image type="content" source="../media/authoring-test-bot/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side pane.":::
 
@@ -53,7 +53,7 @@ You can return to the authoring canvas for the topic  at any time to revise it's
 
 As you fine-tune your bot, it can be useful to enable tracking between topics so you can follow through the conversation path step by step.
 
-1. If the **Test bot** pane is hidden, open it by selecting the test bot icon at the bottom of the side pane.
+1. If the **Test bot** pane is hidden, open it by selecting **Test your bot** in the side pane.
 
    :::image type="content" source="../media/authoring-test-bot/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side pane.":::
 
