@@ -1,5 +1,5 @@
 ---
-title: "Power Platform Pipeline table reference | Microsoft Learn"
+title: "Power Platform Pipeline (Preview) table reference | Microsoft Learn"
 description: "Includes schema information for tables used in the Power Platform Pipeline solution."
 ms.date: 11/11/2022
 ms.service: powerapps
@@ -12,9 +12,12 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Power Platform Pipeline table reference
+# Power Platform Pipeline (Preview) table reference
 
-This topic contains the table definitions used in the Power Platform Pipeline solution.
+This topic contains the table definitions used in the Power Platform Pipeline (Preview) solution.
+
+> [!NOTE]
+> This is a preview feature and the table definitions may change.
 
 :::image type="content" source="../media/pipeline-tables.png" alt-text="Diagram showing relationship between pipeline tables":::
 
