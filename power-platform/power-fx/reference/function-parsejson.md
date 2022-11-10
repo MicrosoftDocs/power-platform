@@ -109,7 +109,7 @@ Given the following JSON string in a variable named `JsonString`
     ```
 2. Converting the single-column table of **untyped object** in the array field, to a single column table of numbers `{ Value: 1 }, { Value: 2 }, { Value: 3 }`:
     ```powerapps-dot
-    ForAll( Table( ParseJSON( JsonString ).array ), Value( ThisRecord.Value ) )
+    ForAll( ParseJSON( JsonString ).array, Value( ThisRecord ) )
     ```
 
 ### Arrays of Records
@@ -121,9 +121,44 @@ Given the following JSON string in a variable named `JsonString`
     ] }
 ```
 
-1. Converting to a typed table of records requires accessing the **untyped object** in the single-column table returned by **Table()**, then using `ThisRecord.Value` in **ForAll()** to access **untyped object** fields and convert them to known types:
+1. Converting to a typed table of records directly with **ForAll()** can be done by using `ThisRecord.[fieldname]` to access **untyped object** fields and convert them to known types:
+
     ```powerapps-dot
-    ForAll( Table( ParseJSON( JsonString ).array ), { id: Value(ThisRecord.Value.id), name: Text(ThisRecord.Value.name) })
+    ForAll( ParseJSON( JsonString ).array, { id: Value(ThisRecord.id), name: Text(ThisRecord.name) })
     ```
+
+### Array to Table
+
+1. Converting **untyped object** to a table by using the **Table()** function results in a single-column table of **untyped objects**. The object needs to then be accessed using `Value` (single) column and be converted to types as explained previously.
+
+Given the following JSON string in a variable named `JsonString`
+```JSON
+{ "array": [1, 2, 3] }
+```
+
+**Table()** returns a single-column table of **untyped objects** with a single-column Value for number in the array...
+
+    ```powerapps-dot
+    Set(untypedTable, Table( ParseJSON( JsonString ).array );
+    
+    Value( Index(untypedTable, 1).Value.Value )
+    ```
+
+Given the following JSON string in a variable named `JsonString`
+```JSON
+{ "array": [
+    { "id": 1, "name": "One"},
+    { "id": 2, "name": "Two"}
+    ] }
+```
+
+**Table()** returns a single-column table of **untyped objects** that represents each json object in the array.
+
+    ```powerapps-dot
+    Set(untypedTable, Table( ParseJSON( JsonString ).array );
+    
+    Text( Index(untypedTable, 1).Value.name )
+    ```
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
