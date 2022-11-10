@@ -261,7 +261,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
 ## Test your bot
 
-To test your changes in Power Virtual Agents, open the **Test pane** and make sure **Track between topics** is turned on. Enter the message `What meals do you deliver?` to start your conversation.
+To test your changes in Power Virtual Agents, open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `What meals do you deliver?` to start your conversation.
 
 Your bot will trigger the **Meal delivery options** topic which asks the user for their current city. Then the bot will redirect to the Composer dialog **Meals** to display an Adaptive Card.
 
