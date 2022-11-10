@@ -19,16 +19,13 @@ search.app:
 
 This section describes how you as a Power Platform administrator or app maker can use available features, tools, and other resources to implement application lifecycle management (ALM) using Microsoft Power Platform.
 
-## Power Platform pipelines
-
-With Power Platform pipelines, admins create and configure pipelines so makers can use them to deploy solutions to environments with a single click. More information: [Overview of Power Platform pipelines (preview)](pipelines.md)
-
 ## Manage solutions using PowerShell
 
 PowerShell cmdlets let admins automate many of the monitoring, management, and quality assurance tasks in Power Platform. More information: [Manage solutions using PowerShell](powershell-api.md)
 
-## See also
+## Power Platform pipelines
 
-[Use Power Platform pipelines (preview)](use-pipelines.md)
+With Power Platform pipelines, admins create and configure pipelines so makers can use them to deploy solutions to environments with a single click. More information: [Overview of Power Platform pipelines (preview)](pipelines.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
