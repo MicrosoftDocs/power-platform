@@ -62,7 +62,7 @@ In this example, you'll learn how to show an Adaptive Card in Power Virtual Agen
 
 Next, you'll display meal choice images that are available in the user's city using Composer.
 
-1. [Open your bot in Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
+1. Open your bot in Composer. For instructions on how to do so, see [Getting started with Bot Framework Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
 1. Go to the **Create** tab. In your bot, select **More options** (**...**) then select **+ Add a dialog**.
 
