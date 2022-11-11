@@ -19,7 +19,7 @@ This topic contains the table definitions used in the Power Platform Pipeline (P
 > [!NOTE]
 > This is a preview feature and the table definitions may change.
 
-:::image type="content" source="../media/pipeline-tables.png" alt-text="Diagram showing relationship between pipeline tables":::
+:::image type="content" source="media/pipeline-tables.png" alt-text="Diagram showing relationship between pipeline tables":::
 
 > [!NOTE]
 > For brevity, common columns found on all tables are not included here. The schema name for these columns are: `CreatedBy`, `CreatedOn`, `ImportSequenceNumber`, `ModifiedBy`, `ModifiedOn`, `OverriddenCreatedOn`, `OwningBusinessUnit`, `OwningTeam`, `OwningUser`, `TimeZoneRuleVersionNumber`, `UTCConversionTimeZoneCode`, `VersionNumber`, and `statecode`.
