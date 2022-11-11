@@ -93,7 +93,12 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
 
 1. On the authoring canvas, select **Add** (**+**) then **Send a response**.
 
-1. In the properties pane, under **Bot responses**, and select **Show code**. Copy and paste the following expression:
+1. In the properties pane, under **Bot responses**, and select **Show code**.
+
+    > [!WARNING]
+    > Adding the expression in the next step to the _response_ editor instead of the _code_ editor will result in the bot responding with raw JSON instead of an Adaptive Card.
+
+1. Copy and paste the following expression:
 
     ```lg
     -${AdaptiveCardBingSearch(turn.activity.text)}

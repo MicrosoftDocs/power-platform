@@ -117,7 +117,7 @@ In this example, you'll learn how to display a form with a Submit button in Powe
 
 1. Go to the **Create** tab in Composer and select the **StartTrial** trigger.
 
-1. On the authoring canvas, select **Add** (**+**), ***Ask a question**, then **Text**.
+1. On the authoring canvas, select **Add** (**+**), **Ask a question**, then **Text**.
 
 1. In the properties pane, under **Bot responses**, and select **Show code**.
 
@@ -139,11 +139,11 @@ In this example, you'll learn how to display a form with a Submit button in Powe
 
     :::image type="content" source="media/Composer-Example4/E4_saveUserInput.png" alt-text="Screenshot of the user input action.":::
 
-1. On the authoring canvas, select **Add** (**+**), ***Manage properties**, then **Set properties**.
+1. On the authoring canvas, select **Add** (**+**), **Manage properties**, then **Set properties**.
 
 1. In the properties pane, do the following:
 
-    1. Select **Add new** to add a **Property** box and a **Value** box.
+    1. Under **Assignments**, select **Add new** to add a **Property** box and a **Value** box.
     1. For **Property**, enter `user.address`
     1. For **Value**, enter `=turn.activity.value.Address`.
     1. Select **Add new** a second time to add another **Property** and **Value**.
