@@ -150,4 +150,4 @@
         - name: Edit the customizations file
           href: when-edit-customization-file.md
         - name: Power Platform Pipeline table reference
-          href: ../developer/power-platform-pipeline/table-reference.md
+          href: ../developer/pipelines/table-reference.md
