@@ -57,7 +57,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 1. Go to the **Bot Responses** tab. Select **DailySpecials**, then select **Show code**.
 
-1. Copy and paste the following template into the **Bot Responses** tab to create daily offers for all the days of the week.
+1. Copy and paste the following template into the code view to create daily offers for all the days of the week.
 
     ```lu
     # DailySpecials(day)
@@ -171,7 +171,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 1. Open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `Do you have any specials?` to start your conversation.
 
     :::image type="content" source="media/Composer_Example2/Example2._cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane..":::
-    
+
 ## Next Steps
 
 [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md).

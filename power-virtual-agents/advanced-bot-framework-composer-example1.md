@@ -29,7 +29,9 @@ In this example, you'll learn how to show an Adaptive Card in Power Virtual Agen
 
 ## Create a new topic
 
-1. In Power Virtual Agents, go to **Topics** and create a new topic called "Meal delivery options".
+1. In Power Virtual Agents, create a new bot named `Contoso Meal Delivery Service`.
+
+1. Go to the **Topics** page and create a new topic called `Meal delivery options`.
 
 1. Copy and paste the following trigger phrases:
 
