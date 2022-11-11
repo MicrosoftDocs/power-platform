@@ -68,12 +68,16 @@ User A can be associated with any of the business units, including the root busi
 3. Select **Settings** > **Product** > **Features**. 
 4. Turn **On** the **Record ownership across business units** switch. 
 
+> [!NOTE]
+> Before you turn on this feature, you need to publish all your customizations first to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that are not working with this feature after you turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](
+https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+
 Once this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security role from different business units to a user. The user also requires a security role from the business unit that the user is assigned to with [user settings privileges](assign-security-roles.md#user-settings-privileges-for-record-ownership-across-business-units) to run model-driven apps. You can refer to the [Basic User](database-security.md#predefined-security-roles) security role to find how these user settings privileges are enabled. 
 
 You can assign a user as record owner in any business unit without the need to assign a security role in the record's owning business unit as long as the user has a security role that has Read privilege to the record table. See [Record Ownership in Modernized Business Units](wp-security-cds.md#record-ownership-in-modernized-business-units). 
 
 > [!NOTE]
-> This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** [environment database settings](environment-database-settings.md) and can also be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](
+> This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** and can be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](
 https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
 ### Associate a business unit with an Azure AD security group
