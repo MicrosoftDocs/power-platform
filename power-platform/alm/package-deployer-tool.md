@@ -191,13 +191,13 @@ Next, update the HTML language specific files.
    ```xml  
 
    <solutions>  
-   <configsolutionfile solutionpackagefilename="SampleSolutionOne_1_0_managed.zip"  
-   overwriteunmanagedcustomizations="false"  
-   publishworkflowsandactivateplugins="true"/>  
-   <configsolutionfile solutionpackagefilename="SampleSolutionTwo_1_0_managed.zip"  
-   overwriteunmanagedcustomizations="false"  
-   publishworkflowsandactivateplugins="true"/>  
-   <configsolutionfile solutionpackagefilename="SampleSolutionThree_1_0_managed.zip" />  
+     <configsolutionfile solutionpackagefilename="SampleSolutionOne_1_0_managed.zip"  
+                         overwriteunmanagedcustomizations="false"  
+                         publishworkflowsandactivateplugins="true"/>  
+     <configsolutionfile solutionpackagefilename="SampleSolutionTwo_1_0_managed.zip"  
+                         overwriteunmanagedcustomizations="false"  
+                         publishworkflowsandactivateplugins="true"/>  
+     <configsolutionfile solutionpackagefilename="SampleSolutionThree_1_0_managed.zip" />  
    </solutions>  
 
    ```  
@@ -211,29 +211,28 @@ Next, update the HTML language specific files.
    ```xml  
 
    <filestoimport>  
-   <configimportfile filename="File.csv"  
-   filetype="CSV"  
-   associatedmap="FileMap"  
-   importtoentity="FileEntity"  
-   datadelimiter=""  
-   fielddelimiter="comma"  
-   enableduplicatedetection="true"  
-   isfirstrowheader="true"  
-   isrecordownerateam="false"  
-   owneruser=""  
-   waitforimporttocomplete="true" />  
-   <configimportfile filename="File.zip"  
-   filetype="ZIP"  
-   associatedmap="FileMapName"  
-   importtoentity="FileEntity"  
-   datadelimiter=""  
-   fielddelimiter="comma"  
-   enableduplicatedetection="true"  
-   isfirstrowheader="true"  
-   isrecordownerateam="false"  
-   owneruser=""  
-   waitforimporttocomplete="true"/>  
-
+     <configimportfile filename="File.csv"  
+                       filetype="CSV"  
+                       associatedmap="FileMap"  
+                       importtoentity="FileEntity"  
+                       datadelimiter=""  
+                       fielddelimiter="comma"  
+                       enableduplicatedetection="true"  
+                       isfirstrowheader="true"  
+                       isrecordownerateam="false"  
+                       owneruser=""  
+                       waitforimporttocomplete="true" />  
+     <configimportfile filename="File.zip"  
+                       filetype="ZIP"  
+                       associatedmap="FileMapName"  
+                       importtoentity="FileEntity"  
+                       datadelimiter=""  
+                       fielddelimiter="comma"  
+                       enableduplicatedetection="true"  
+                       isfirstrowheader="true"  
+                       isrecordownerateam="false"  
+                       owneruser=""  
+                       waitforimporttocomplete="true"/>  
    </filestoimport>  
 
    ```  
@@ -262,12 +261,12 @@ Next, update the HTML language specific files.
 
    ```xml  
    <filestoimport>  
-   ...  
-   ...  
-   <zipimportdetails>  
-   <zipimportdetail filename="subfile1.csv" filetype="csv" importtoentity="account" />  
-   <zipimportdetail filename="subfile2.csv" filetype="csv" importtoentity="contact" />  
-   </zipimportdetails>  
+     ...  
+     ...  
+     <zipimportdetails>  
+       <zipimportdetail filename="subfile1.csv" filetype="csv" importtoentity="account" />  
+       <zipimportdetail filename="subfile2.csv" filetype="csv" importtoentity="contact" />  
+       </zipimportdetails>  
    </filestoimport>  
 
    ```  
@@ -288,7 +287,7 @@ Next, update the HTML language specific files.
 
    ```xml  
    <filesmapstoimport>  
-   <configimportmapfile filename="FileMap.xml" />  
+     <configimportmapfile filename="FileMap.xml" />  
    </filesmapstoimport>  
    ```  
 
@@ -300,8 +299,8 @@ Next, update the HTML language specific files.
 
    ```xml  
    <cmtdatafiles>  
-   <cmtdatafile filename="data_1033.zip" lcid="1033" usermapfilename="UserMap.xml" />  
-   <cmtdatafile filename="data_1041.zip" lcid="1041" usermapfilename="" />  
+     <cmtdatafile filename="data_1033.zip" lcid="1033" usermapfilename="UserMap.xml" />  
+     <cmtdatafile filename="data_1041.zip" lcid="1041" usermapfilename="" />  
    </cmtdatafiles>  
    ```  
 
@@ -314,64 +313,64 @@ Next, update the HTML language specific files.
    ```xml  
    <?xml version="1.0" encoding="utf-16"?>  
    <configdatastorage xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"  
-   xmlns:xsd="https://www.w3.org/2001/XMLSchema"  
-   installsampledata="true"  
-   waitforsampledatatoinstall="true"  
-   agentdesktopzipfile=""  
-   agentdesktopexename=""  
-   crmmigdataimportfile="data_1033.zip">  
-   <solutions>  
-   <configsolutionfile solutionpackagefilename="SampleSolutionOne_1_0_managed.zip"  
-   overwriteunmanagedcustomizations="false"  
-   publishworkflowsandactivateplugins="true"/>  
-   <configsolutionfile solutionpackagefilename="SampleSolutionTwo_1_0_managed.zip"  
-   overwriteunmanagedcustomizations="false"  
-   publishworkflowsandactivateplugins="true"/>  
-   <configsolutionfile solutionpackagefilename="SampleSolutionThree_1_0_managed.zip" />  
-   </solutions>  
-   <filestoimport>  
-   <configimportfile filename="SampleOption.csv"  
-   filetype="CSV"  
-   associatedmap="SampleOption"  
-   importtoentity="sample_option"  
-   datadelimiter=""  
-   fielddelimiter="comma"  
-   enableduplicatedetection="true"  
-   isfirstrowheader="true"  
-   isrecordownerateam="false"  
-   owneruser=""  
-   waitforimporttocomplete="false"/>  
-   <configimportfile filename="File.zip"  
-   filetype="ZIP"  
-   associatedmap="FileMapName"  
-   importtoentity="FileEntity"  
-   datadelimiter=""  
-   fielddelimiter="comma"  
-   enableduplicatedetection="true"  
-   isfirstrowheader="true"  
-   isrecordownerateam="false"  
-   owneruser=""  
-   waitforimporttocomplete="true"/>  
-   <zipimportdetails>  
-   <zipimportdetail filename="subfile1.csv"  
-   filetype="csv"  
-   importtoentity="account" />  
-   <zipimportdetail filename="subfile2.csv"  
-   filetype="csv"  
-   importtoentity="contact" />  
-   </zipimportdetails>  
-   </filestoimport>  
-   <filesmapstoimport>  
-   <configimportmapfile filename="SampleOption.xml" />  
-   </filesmapstoimport>  
-   <cmtdatafiles>  
-   <cmtdatafile filename="data_1033.zip"  
-   lcid="1033"  
-   usermapfilename="UserMap.xml" />  
-   <cmtdatafile filename="data_1041.zip"  
-   lcid="1041"  
-   usermapfilename="" />  
-   </cmtdatafiles>  
+                      xmlns:xsd="https://www.w3.org/2001/XMLSchema"  
+                      installsampledata="true"  
+                      waitforsampledatatoinstall="true"  
+                      agentdesktopzipfile=""  
+                      agentdesktopexename=""  
+                      crmmigdataimportfile="data_1033.zip">  
+     <solutions>  
+       <configsolutionfile solutionpackagefilename="SampleSolutionOne_1_0_managed.zip"  
+                           overwriteunmanagedcustomizations="false"  
+                           publishworkflowsandactivateplugins="true"/>  
+       <configsolutionfile solutionpackagefilename="SampleSolutionTwo_1_0_managed.zip"  
+                           overwriteunmanagedcustomizations="false"  
+                           publishworkflowsandactivateplugins="true"/>  
+       <configsolutionfile solutionpackagefilename="SampleSolutionThree_1_0_managed.zip" />  
+     </solutions>  
+     <filestoimport>  
+       <configimportfile filename="SampleOption.csv"  
+                         filetype="CSV"  
+                         associatedmap="SampleOption"  
+                         importtoentity="sample_option"  
+                         datadelimiter=""  
+                         fielddelimiter="comma"  
+                         enableduplicatedetection="true"  
+                         isfirstrowheader="true"  
+                         isrecordownerateam="false"  
+                         owneruser=""  
+                         waitforimporttocomplete="false"/>  
+       <configimportfile filename="File.zip"  
+                         filetype="ZIP"  
+                         associatedmap="FileMapName"  
+                         importtoentity="FileEntity"  
+                         datadelimiter=""  
+                         fielddelimiter="comma"  
+                         enableduplicatedetection="true"  
+                         isfirstrowheader="true"  
+                         isrecordownerateam="false"  
+                         owneruser=""  
+                         waitforimporttocomplete="true"/>  
+       <zipimportdetails>  
+         <zipimportdetail filename="subfile1.csv"  
+                          filetype="csv"  
+                          importtoentity="account" />  
+         <zipimportdetail filename="subfile2.csv"  
+                          filetype="csv"  
+                          importtoentity="contact" />  
+       </zipimportdetails>  
+     </filestoimport>  
+     <filesmapstoimport>  
+       <configimportmapfile filename="SampleOption.xml" />  
+     </filesmapstoimport>  
+     <cmtdatafiles>  
+       <cmtdatafile filename="data_1033.zip"  
+                    lcid="1033"  
+                    usermapfilename="UserMap.xml" />  
+       <cmtdatafile filename="data_1041.zip"  
+                    lcid="1041"  
+                    usermapfilename="" />  
+     </cmtdatafiles>  
    </configdatastorage>  
 
    ```  
