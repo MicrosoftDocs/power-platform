@@ -433,7 +433,7 @@ You can add custom code that executes before, during, and after the package is i
         | `oldSolutionId` |     GUID of the old solution.      |
         | `newSolutionId` |     GUID of the new solution.      |
         
-   4. Override the method `OverrideSolutionImportDecision` to return a [UserRequestedImportAction](/dotnet/api/microsoft.xrm.tooling.packagedeployment.crmpackageextentionbase.userrequestedimportaction?view=dataverse-sdk-latest) enum controlling whether the import of a solution will be skipped, updated or upgraded (the default).
+   4. Override the method `OverrideSolutionImportDecision` to return a [UserRequestedImportAction](/dotnet/api/microsoft.xrm.tooling.packagedeployment.crmpackageextentionbase.userrequestedimportaction) enum controlling whether the import of a solution will be skipped, updated or upgraded (the default).
 
       ```csharp
       public override UserRequestedImportAction OverrideSolutionImportDecision(string solutionUniqueName, Version organizationVersion, Version packageSolutionVersion, Version inboundSolutionVersion, Version deployedSolutionVersion, ImportAction systemSelectedImportAction)
