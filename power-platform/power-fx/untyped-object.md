@@ -82,7 +82,7 @@ untyped.'my-field'
 
 ## Arrays
 
-An **untyped object** variable can contain an array. Even though the array could be either an array of records or array of simple types, converting the **untyped object** array to a table using the [Table()](./reference/function-table.md) function will always result in a single-column table of **untyped objects**. Functions such as [ForAll()](./reference/function-forall.md) and [Index()](./reference/function-first-last) do not require you to first create a **Table()** and as result don't require you to use the single-column `Value` field,
+An **untyped object** variable can contain an array. Even though the array could be either an array of records or array of simple types, converting the **untyped object** array to a table using the [Table()](./reference/function-table.md) function will always result in a single-column table of **untyped objects**. Functions such as [ForAll()](./reference/function-forall.md) and [Index()](./reference/function-first-last.md) do not require you to first create a **Table()** and as result don't require you to use the single-column `Value` field,
 
 For example, to get the second number in an array of **untyped object** containing number values ( `[1, 2, 3]` ), the following formula can be used to retrieve the second row in the table and convert column to a number:
 
