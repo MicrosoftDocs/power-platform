@@ -15,14 +15,11 @@ ms.collection: virtualagent
 
 # Example 4 - Display a form with a Submit button in Power Virtual Agents
 
-You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
+Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 In this example, you'll learn how to display a form with a Submit button in Power Virtual Agents by using Composer.
 
-Before you begin, ensure you read [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md) to understand how Composer integrates with Power Virtual Agents.
-
-> [!IMPORTANT]
-> Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
+[!INCLUDE [Composer License](includes/composer-license.md)]
 
 ## Prerequisites
 
