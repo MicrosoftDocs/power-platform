@@ -2,7 +2,7 @@
 title: "Use Bot Framework Composer to use Bing search in chatbots"
 description: "Use Bot Framework Composer to fall back to Bing search in your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 01/25/2022
+ms.date: 10/25/2022
 
 ms.topic: article
 author: iaanw
@@ -36,9 +36,9 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
 
 1. In the **Create a trigger** window, for **What is the type of this trigger?**, select **Unknown intent**. Select **Submit**.
 
-    :::image type="content" source="media/Composer_Example3/E3_BingSearch_UnknownIntent.png" alt-text="Screenshot of the Create a trigger window.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_UnknownIntent.png" alt-text="Screenshot of the Create a trigger window.":::
 
-1. Go to the **Bot Responses** tab, select **Contoso Meal Delivery Service**, then select **Show code**.
+1. Go to the **Bot Responses** page, select **Contoso Meal Delivery Service**, then select **Show code**.
 
 1. Copy and paste the following into the code view:
 
@@ -76,7 +76,7 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
     ```
     ````
 
-    :::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_AdaptiveCard.png" alt-text="Screenshot of the Adaptive Card JSON added to bot responses.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_BotResponses_AdaptiveCard.png" alt-text="Screenshot of the Adaptive Card JSON added to bot responses.":::
 
 1. Copy and paste the following code into the same code view:
 
@@ -88,9 +88,9 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
 
     ```
 
-    :::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Screenshot of the activity added to the bot responses.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Screenshot of the activity added to the bot responses.":::
 
-1. Go to the **Create** tab. In the main dialog, select the **Unknown intent** trigger.
+1. Go to the **Create** page. In the main dialog, select the **Unknown intent** trigger.
 
 1. On the authoring canvas, select **Add** (**+**) then **Send a response**.
 
@@ -105,7 +105,7 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
     - ${AdaptiveCardBingSearch(turn.activity.text)}
     ```
 
-    :::image type="content" source="media/Composer_Example3/E3_BingSearch_addBotReponse_BingSearch.png" alt-text="Screenshot of the response for the send a response action.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_addBotReponse_BingSearch.png" alt-text="Screenshot of the response for the send a response action.":::
 
 ## Test your bot
 
@@ -115,11 +115,11 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
 
 1. Go to the Power Virtual Agents **Topics** page to see your new **OnUnknownIntent** topic.
 
-    :::image type="content" source="media/Composer_Example3/E3_BingSearch_inTopicsList.png" alt-text="Screenshot of the new topic visible in Power Virtual Agents.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_inTopicsList.png" alt-text="Screenshot of the new topic visible in Power Virtual Agents.":::
 
 1. Open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `Is tofu vegan?` to start your conversation.
 
-    :::image type="content" source="media/Composer_Example3/Example3_cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/Example3_cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane.":::
 
 ## Next Steps
 

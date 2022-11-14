@@ -78,7 +78,7 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
 - Use a **Begin a Power Virtual Agents Topic** action to call Power Virtual Agents topics in Composer.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Screenshot of Composer's add node menu.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Screenshot of Composer's add action menu.":::
 
 - You can add new Composer triggers of any kind to your main (also known as "root") dialog.
 
@@ -88,7 +88,7 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
 - You can add any Composer events and triggers to newly created dialogs.
 
-- On the **Bot Responses** tab, the **Common** section should be empty. Using any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
+- On the **Bot Responses** page, the **Common** section should be empty. Using any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
 
     :::image type="content" source="media/advanced-bot-framework-composer/common-empty.png" alt-text="Screenshot of the common bot responses section empty.":::
 
@@ -104,8 +104,6 @@ For a deep-dive on Composer dialogs, events, triggers, and how to create advance
 - [Bot Framework Composer events and triggers](/composer/how-to-define-triggers)
 - [Language generation](/composer/concept-language-generation)
 - [Conversation flow and memory](/composer/concept-memory)
-
-[!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
 ## References
 

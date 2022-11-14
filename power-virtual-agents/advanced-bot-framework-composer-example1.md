@@ -58,7 +58,7 @@ In this example, you'll learn how to show an Adaptive Card in Power Virtual Agen
 
 1. Select **Save**.
 
-:::image type="content" source="media/Composer_Example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
+:::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
 
 ## Create an adaptive card
 
@@ -66,19 +66,19 @@ Next, you'll display meal choice images that are available in the user's city us
 
 1. Open your bot in Composer. For instructions on how to do so, see [Getting started with Bot Framework Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
-1. Go to the **Create** tab. In your bot, select **More options** (**...**) then select **+ Add a dialog**.
+1. Go to the **Create** page. In your bot, select **More options** (**...**) then select **+ Add a dialog**.
 
-    :::image type="content" source="media/Composer_Example1/E1_Meals_creatNewDialog.png" alt-text="Composer Create tab.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_creatNewDialog.png" alt-text="Composer Create tab.":::
 
 1. For **Name**, enter `Meals` then select **OK**.
 
-    :::image type="content" source="media/Composer_Example1/E1_Meals_newDialog.png" alt-text="Composer Create tab new dialog.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_newDialog.png" alt-text="Composer Create tab new dialog.":::
 
-1. Go to the **Bot Responses** tab. In the **Meals** section, select **Show code**.
+1. Go to the **Bot Responses** page. In the bot explorer, select **Meals**, then select **Show code**.
 
-    :::image type="content" source="media\Composer_Example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
+    :::image type="content" source="media\advanced-bot-framework-composer-example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
 
-1. In the code pane, copy and paste the following bot response. Then replace the three example image URLs with your own.
+1. In the code view, copy and paste the following bot response. Then replace the three example image URLs with your own.
 
     ```lg
     # Chicken()
@@ -101,9 +101,9 @@ Next, you'll display meal choice images that are available in the user's city us
 
     ```
 
-    :::image type="content" source="media/Composer_Example1/E1_Meals_BotResponse_data.png" alt-text="Composer Bot Responses tab with strings.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_BotResponse_data.png" alt-text="Composer Bot Responses tab with strings.":::
 
-1. Copy and paste the following code into the same code pane to add an Adaptive Card that displays three images.
+1. Copy and paste the following code into the same code view to add an Adaptive Card that displays three images.
 
     ````lg
     # adaptivecardjson_meals(location)
@@ -205,9 +205,9 @@ Next, you'll display meal choice images that are available in the user's city us
     ```
     ````
 
-    :::image type="content" source="media/Composer_Example1/E1_Meals_BotReponse_JSON.png" alt-text="Composer Bot Responses tab - Adaptive Card JSON.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_BotReponse_JSON.png" alt-text="Composer Bot Responses tab - Adaptive Card JSON.":::
 
-1. Copy and paste the following code into same code pane to add an activity that will display the Adaptive Card.
+1. Copy and paste the following code into same code view to add an activity that will display the Adaptive Card.
 
     ```lg
     # AdaptiveCardMeals(location)
@@ -216,17 +216,17 @@ Next, you'll display meal choice images that are available in the user's city us
     ]
     ```
 
-    :::image type="content" source="media/Composer_Example1/E1_Meals_BotResponse_Activity.png" alt-text="Composer Bot Responses tab - Activity.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_BotResponse_Activity.png" alt-text="Composer Bot Responses tab - Activity.":::
 
 ## Display your Adaptive Card
 
-1. Go back to the **Create** tab in Composer. In the bot explorer, select the **Meals** dialog then select the **BeginDialog** trigger.
+1. Go to the **Create** page. In the bot explorer, select the **Meals** dialog then select the **BeginDialog** trigger.
 
 1. On the authoring canvas, select **Add** (**+**) then select **Send a response**. This will add a node that we'll use to display the Adaptive Card.
 
 1. Select the new **Send a response** node to open the properties pane. Under **Bot responses**, select **Show code** to switch to the code editor.
 
-    :::image type="content" source="media/Composer_Example1/response_code_editor.png" alt-text="Screenshot of show code button":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/response_code_editor.png" alt-text="Screenshot of show code button":::
 
     > [!WARNING]
     > Adding the expression in the next step to the _response_ editor instead of the _code_ editor will result in the bot responding with raw JSON instead of an Adaptive Card.
@@ -241,7 +241,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
     In this example `${virtualagent.user_city}` refers to the `user_city` global variable that was created in the Power Virtual Agents bot.
 
-    :::image type="content" source="media/Composer_Example1/E1_Meals_AddResponse.png" alt-text="Composer Begin Dialog - add Send a response action.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_AddResponse.png" alt-text="Composer Begin Dialog - add Send a response action.":::
 
 ## Publish your content
 
@@ -251,13 +251,13 @@ Next, you'll display meal choice images that are available in the user's city us
 
 1. Go to the Power Virtual Agents **Topics** page to see your new **Meals** topic.
 
-    :::image type="content" source="media/Composer_Example1/E1_Meals_in_PVA_Topics.png" alt-text="Power Virtual Agents Topics page - new Bot Framework dialog.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_in_PVA_Topics.png" alt-text="Power Virtual Agents Topics page - new Bot Framework dialog.":::
 
 1. Open the **Meal delivery options** topic.
 
 1. Under the **Question** node, select **Add node** (**+**). Select **Redirect to another topic** then choose **Meals**.
 
-    :::image type="content" source="media/Composer_Example1/E1_MealsDelivery_RedirectToMeals.png" alt-text="Power Virtual Agents - redirect to Bot Framework dialog.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_MealsDelivery_RedirectToMeals.png" alt-text="Power Virtual Agents - redirect to Bot Framework dialog.":::
 
 1. Select **Save** to save the changes to your topic.
 
@@ -267,7 +267,7 @@ To test your changes in Power Virtual Agents, open the **Test bot pane** and mak
 
 Your bot will trigger the **Meal delivery options** topic which asks the user for their current city. Then the bot will redirect to the Composer dialog **Meals** to display an Adaptive Card.
 
-:::image type="content" source="media/Composer_Example1/Example1_cropped.png" alt-text="Power Virtual Agents Example 1 test.":::
+:::image type="content" source="media/advanced-bot-framework-composer-example1/Example1_cropped.png" alt-text="Power Virtual Agents Example 1 test.":::
 
 ## Next Steps
 
