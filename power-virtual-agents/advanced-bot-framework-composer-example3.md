@@ -89,7 +89,7 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
 
     :::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Screenshot of the activity added to the bot responses.":::
 
-1. Go to the **Create** tab and select the **Unknown intent** trigger.
+1. Go to the **Create** tab. In the main dialog, select the **Unknown intent** trigger.
 
 1. On the authoring canvas, select **Add** (**+**) then **Send a response**.
 
