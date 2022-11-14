@@ -49,7 +49,7 @@ In this example, you'll learn how to display a form with a Submit button in Powe
 
     1. Select **Submit**.
 
-    :::image type="content" source="media/Composer-Example4/E4_createStartTrial_trigger.png" alt-text="Screenshot of the Create a trigger window.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_createStartTrial_trigger.png" alt-text="Screenshot of the Create a trigger window.":::
 
 1. Go to the **Bot Responses** tab, select **Contoso Meal Delivery Service**, then select **Show code**.
 
@@ -102,7 +102,7 @@ In this example, you'll learn how to display a form with a Submit button in Powe
 
     Every input field in this Adaptive card has a unique ID: **Name**, **Address**, and **Weeks**.
 
-    :::image type="content" source="media/Composer-Example4/e4_createsubmitform.png" alt-text="Screenshot of the Adaptive Card JSON added to the bot responses.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/e4_createsubmitform.png" alt-text="Screenshot of the Adaptive Card JSON added to the bot responses.":::
 
 1. Copy and paste the following code into the same code view:
 
@@ -113,7 +113,7 @@ In this example, you'll learn how to display a form with a Submit button in Powe
     ]
     ````
 
-    :::image type="content" source="media/Composer-Example4/E4_createSubmitFormActivity.png" alt-text="Screenshot of the activity added to the bot responses.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_createSubmitFormActivity.png" alt-text="Screenshot of the activity added to the bot responses.":::
 
 ## Add conversation logic
 
@@ -132,14 +132,14 @@ In this example, you'll learn how to display a form with a Submit button in Powe
     - ${AdaptiveCard_StartTrialForm()}
     ```
 
-    :::image type="content" source="media/Composer-Example4/e4_call_starttrialform_activity.png" alt-text="Screenshot of the prompt for text response.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/e4_call_starttrialform_activity.png" alt-text="Screenshot of the prompt for text response.":::
 
 1. Select the **User Input** tab in the properties pane, then do the following:
 
     1. For **Property**, enter `user.name`.
     1. For **Value**, enter `=turn.activity.value.Name`.
 
-    :::image type="content" source="media/Composer-Example4/E4_saveUserInput.png" alt-text="Screenshot of the user input action.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_saveUserInput.png" alt-text="Screenshot of the user input action.":::
 
 1. On the authoring canvas, select **Add** (**+**), **Manage properties**, then **Set properties**.
 
@@ -152,7 +152,7 @@ In this example, you'll learn how to display a form with a Submit button in Powe
     1. For **Property**, enter `user.weeks`.
     1. For **Value**, enter `=turn.activity.value.Weeks`.
 
-    :::image type="content" source="media/Composer-Example4/E4_setProperties.png" alt-text="Screenshot of the Set properties action.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_setProperties.png" alt-text="Screenshot of the Set properties action.":::
 
 1. On the authoring canvas, select **Add** (**+**) then **Send a response**.
 
@@ -162,13 +162,13 @@ In this example, you'll learn how to display a form with a Submit button in Powe
     ${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meals will be delivered to this address: ${user.address}.
     ```
 
-    :::image type="content" source="media/Composer-Example4/E4_formSubmit_confirm.png" alt-text="Screenshot of the confirmation response.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_formSubmit_confirm.png" alt-text="Screenshot of the confirmation response.":::
 
 1. On the authoring canvas, select **Add** (**+**) then **Begin a Power Virtual Agents Topic**.
 
 1. In the properties pane, for **Dialog name**, select **End of conversation**.
 
-    :::image type="content" source="media/Composer-Example4/e4_call_pva_end_of_conversation.png" alt-text="Screenshot of the Begin a Power Virtual Agents topic action.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/e4_call_pva_end_of_conversation.png" alt-text="Screenshot of the Begin a Power Virtual Agents topic action.":::
 
 ## Test your bot
 
@@ -178,10 +178,10 @@ In this example, you'll learn how to display a form with a Submit button in Powe
 
 1. Go to the Power Virtual Agents **Topics** page to see your new **StartTrial** topic.
 
-    :::image type="content" source="media/Composer-Example4/E4_StartTrial_inTopicsList.png" alt-text="Screenshot of the new topic visible in Power Virtual Agents.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_StartTrial_inTopicsList.png" alt-text="Screenshot of the new topic visible in Power Virtual Agents.":::
 
 1. Open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `How do I sign up for a trial?` to start your conversation.
 
-    :::image type="content" source="media/Composer-Example4/Example4_cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/Example4_cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

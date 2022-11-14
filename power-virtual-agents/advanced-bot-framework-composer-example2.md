@@ -43,7 +43,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
     1. For **Value**, change the type to **\[] array**.
 
-        :::image type="content" source="media/Composer_Example2/E2_DailySpecials_setArray.png" alt-text="Screenshot of how to change the type of the value property.":::
+        :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_setArray.png" alt-text="Screenshot of how to change the type of the value property.":::
 
     1. For **Value**, copy and paste the following array
 
@@ -51,7 +51,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
         ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
         ```
 
-:::image type="content" source="media/Composer_Example2/begin-dialog-complete.png" alt-text="Screenshot of the completed dialog.":::
+:::image type="content" source="media/advanced-bot-framework-composer-example2/begin-dialog-complete.png" alt-text="Screenshot of the completed dialog.":::
 
 ## Configure bot responses
 
@@ -88,7 +88,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
         - Holiday Delivery is on us if you are in Seattle, Bellevue and Redmond and your order is over $70 total!
     ```
 
-    :::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Screenshot of daily offers logic entered into the code pane.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_BotResponse.png" alt-text="Screenshot of daily offers logic entered into the code pane.":::
 
 ## Prompt for user input
 
@@ -98,7 +98,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 1. Select the **User Input (Choice)** node. In the properties pane, under **Responses**, enter `Please select a day:`
 
-    :::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Screenshot of the bot response set.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_prompt.png" alt-text="Screenshot of the bot response set.":::
 
 1. Select the **User Input** tab in the properties pane, then do the following:
 
@@ -106,17 +106,17 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
     1. For **Output format**, choose **index** to return the index of the selected option instead of a value.
 
-        :::image type="content" source="media/Composer_Example2/E2_DailySpecials_input_variable.png" alt-text="Screenshot of user input set.":::
+        :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_input_variable.png" alt-text="Screenshot of user input set.":::
 
     1. For **List style**, choose **heroCard** to display our options list vertically.
 
     1. For **Array of choices**, change the type to **Write an expression**.
 
-        :::image type="content" source="media/Composer_Example2/array-of-choices.png" alt-text="Screenshot of changing the type of the array of choices property.":::
+        :::image type="content" source="media/advanced-bot-framework-composer-example2/array-of-choices.png" alt-text="Screenshot of changing the type of the array of choices property.":::
 
     1. For **Array of choices**, enter `=conversation.days_array`.
 
-        :::image type="content" source="media/Composer_Example2/E2_DailySpecials_array_multi_option.png" alt-text="Screenshot of the expression entered into the array of choices property.":::
+        :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_array_multi_option.png" alt-text="Screenshot of the expression entered into the array of choices property.":::
 
 ## Display daily special
 
@@ -128,11 +128,11 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
     - ${DailySpecials(conversation.day_choice)}
     ```
 
-    :::image type="content" source="media/Composer_Example2/E2_DailySpecials_addResponse.png" alt-text="Screenshot of the daily specials response set.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_addResponse.png" alt-text="Screenshot of the daily specials response set.":::
 
 1. In the bot explorer, go to the main dialog. Select **More options** (**...**) then select **Add new trigger**.
 
-    :::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Screenshot of the add a new trigger menu item.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_main_addNewTrigger.png" alt-text="Screenshot of the add a new trigger menu item.":::
 
 1. In the **Create a trigger** window, do the following:
 
@@ -146,7 +146,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
         -do you have discounts
         ```
 
-        :::image type="content" source="media/Composer_Example2/E2_main_nameNewTrigger.png" alt-text="Screenshot of trigger phrases added to a new trigger.":::
+        :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_main_nameNewTrigger.png" alt-text="Screenshot of trigger phrases added to a new trigger.":::
 
     1. Select **Submit**.
 
@@ -156,7 +156,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 1. In the properties pane, for **Dialog name**, select **DailySpecials**
 
-    :::image type="content" source="media/Composer_Example2/E2_main_callDialog.png" alt-text="Screenshot of the begin a new dialog action.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_main_callDialog.png" alt-text="Screenshot of the begin a new dialog action.":::
 
 ## Test your bot
 
@@ -166,11 +166,11 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 1. Go to the Power Virtual Agents **Topics** page to see your new **Specials** and **DailySpecials** topics.
 
-    :::image type="content" source="media/Composer_Example2/E2_DailySpecials_inPVA.png" alt-text="Screenshot of the topics added in Composer in the list of topics on Power Virtual Agents.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_inPVA.png" alt-text="Screenshot of the topics added in Composer in the list of topics on Power Virtual Agents.":::
 
 1. Open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `Do you have any specials?` to start your conversation.
 
-    :::image type="content" source="media/Composer_Example2/Example2._cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example2/Example2._cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane.":::
 
 ## Next Steps
 
