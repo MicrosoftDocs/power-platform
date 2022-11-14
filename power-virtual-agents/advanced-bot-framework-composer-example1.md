@@ -66,7 +66,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
 1. Open your bot in Composer. For instructions on how to do so, see [Getting started with Bot Framework Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
-1. Go to the **Create** tab. In your bot, select **More options** (**...**) then select **+ Add a dialog**.
+1. Go to the **Create** page. In your bot, select **More options** (**...**) then select **+ Add a dialog**.
 
     :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_creatNewDialog.png" alt-text="Composer Create tab.":::
 
@@ -74,11 +74,11 @@ Next, you'll display meal choice images that are available in the user's city us
 
     :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_newDialog.png" alt-text="Composer Create tab new dialog.":::
 
-1. Go to the **Bot Responses** tab. In the **Meals** section, select **Show code**.
+1. Go to the **Bot Responses** page. In the bot explorer, select **Meals**, then select **Show code**.
 
     :::image type="content" source="media\advanced-bot-framework-composer-example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
 
-1. In the code pane, copy and paste the following bot response. Then replace the three example image URLs with your own.
+1. In the code view, copy and paste the following bot response. Then replace the three example image URLs with your own.
 
     ```lg
     # Chicken()
@@ -103,7 +103,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
     :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_BotResponse_data.png" alt-text="Composer Bot Responses tab with strings.":::
 
-1. Copy and paste the following code into the same code pane to add an Adaptive Card that displays three images.
+1. Copy and paste the following code into the same code view to add an Adaptive Card that displays three images.
 
     ````lg
     # adaptivecardjson_meals(location)
@@ -207,7 +207,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
     :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_BotReponse_JSON.png" alt-text="Composer Bot Responses tab - Adaptive Card JSON.":::
 
-1. Copy and paste the following code into same code pane to add an activity that will display the Adaptive Card.
+1. Copy and paste the following code into same code view to add an activity that will display the Adaptive Card.
 
     ```lg
     # AdaptiveCardMeals(location)
@@ -220,7 +220,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
 ## Display your Adaptive Card
 
-1. Go back to the **Create** tab in Composer. In the bot explorer, select the **Meals** dialog then select the **BeginDialog** trigger.
+1. Go to the **Create** page. In the bot explorer, select the **Meals** dialog then select the **BeginDialog** trigger.
 
 1. On the authoring canvas, select **Add** (**+**) then select **Send a response**. This will add a node that we'll use to display the Adaptive Card.
 

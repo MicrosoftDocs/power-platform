@@ -38,7 +38,7 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
 
     :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_UnknownIntent.png" alt-text="Screenshot of the Create a trigger window.":::
 
-1. Go to the **Bot Responses** tab, select **Contoso Meal Delivery Service**, then select **Show code**.
+1. Go to the **Bot Responses** page, select **Contoso Meal Delivery Service**, then select **Show code**.
 
 1. Copy and paste the following into the code view:
 
@@ -90,7 +90,7 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
 
     :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Screenshot of the activity added to the bot responses.":::
 
-1. Go to the **Create** tab. In the main dialog, select the **Unknown intent** trigger.
+1. Go to the **Create** page. In the main dialog, select the **Unknown intent** trigger.
 
 1. On the authoring canvas, select **Add** (**+**) then **Send a response**.
 

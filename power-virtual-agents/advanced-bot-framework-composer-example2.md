@@ -31,7 +31,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 1. Open your bot in Composer. For instructions on how to do so, see [Getting started with Bot Framework Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
-1. In Composer, go to the **Create** tab. In your bot, select **More options** (**...**) then select **+ Add a dialog**. For **Name** enter `DailySpecials`.
+1. In Composer, go to the **Create** page. In your bot, select **More options** (**...**) then select **+ Add a dialog**. For **Name** enter `DailySpecials`.
 
 1. In your new **DailySpecials** dialog, select the **BeginDialog** trigger to open the authoring canvas.
 
@@ -55,7 +55,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 ## Configure bot responses
 
-1. Go to the **Bot Responses** tab. Select **DailySpecials**, then select **Show code**.
+1. Go to the **Bot Responses** page, select **DailySpecials**, then select **Show code**.
 
 1. Copy and paste the following template into the code view to create daily offers for all the days of the week.
 
@@ -88,19 +88,19 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
         - Holiday Delivery is on us if you are in Seattle, Bellevue and Redmond and your order is over $70 total!
     ```
 
-    :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_BotResponse.png" alt-text="Screenshot of daily offers logic entered into the code pane.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_BotResponse.png" alt-text="Screenshot of daily offers logic entered into the code view.":::
 
 ## Prompt for user input
 
-1. Go to the **Create** tab. In the bot explorer, under **DailySpecials**, select **BeginDialog**.
+1. Go to the **Create** page. In the bot explorer, under **DailySpecials**, select **BeginDialog**.
 
 1. On the authoring canvas, select **Add** (**+**), **Ask a question**, and **Multi-choice**.
 
-1. Select the **User Input (Choice)** node. In the properties pane, under **Responses**, enter `Please select a day:`
+1. Select the **User Input (Choice)** action. In the properties pane, under **Responses**, enter `Please select a day:`
 
     :::image type="content" source="media/advanced-bot-framework-composer-example2/E2_DailySpecials_prompt.png" alt-text="Screenshot of the bot response set.":::
 
-1. Select the **User Input** tab in the properties pane, then do the following:
+1. Select the **User Input** page in the properties pane, then do the following:
 
     1. For **Property**, enter `conversation.day_choice`.
 

@@ -51,7 +51,7 @@ In this example, you'll learn how to display a form with a Submit button in Powe
 
     :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_createStartTrial_trigger.png" alt-text="Screenshot of the Create a trigger window.":::
 
-1. Go to the **Bot Responses** tab, select **Contoso Meal Delivery Service**, then select **Show code**.
+1. Go to the **Bot Responses** page, select **Contoso Meal Delivery Service**, then select **Show code**.
 
 1. Copy and paste the following into the code view:
 
@@ -117,7 +117,7 @@ In this example, you'll learn how to display a form with a Submit button in Powe
 
 ## Add conversation logic
 
-1. Go to the **Create** tab in Composer and select the **StartTrial** trigger.
+1. Go to the **Create** page and select the **StartTrial** trigger.
 
 1. On the authoring canvas, select **Add** (**+**), **Ask a question**, then **Text**.
 
