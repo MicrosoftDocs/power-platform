@@ -31,7 +31,7 @@ For other navigation information, including the new app switcher, see:
 - [Basic navigation in a model-driven app](/powerapps/user/navigation)
 
 ## Your business apps have moved
-The home for business applications across Dynamics and the Microsoft Power Platform has moved from [https://home.dynamics.com](https://home.dynamics.com) to [office.com](https://office.com/apps). 
+The home for business applications across Dynamics 365 and Microsoft Power Platform has moved from [https://home.dynamics.com](https://home.dynamics.com) to [office.com](https://office.com/apps). 
 
 
 
