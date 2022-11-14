@@ -154,11 +154,11 @@ Given the following JSON string in a variable named `JsonString`
 
 **Table()** returns a single-column table of **untyped objects** that represents each json object in the array.
 
-   ```powerapps-dot
+  ```powerapps-dot
     Set(untypedTable, Table( ParseJSON( JsonString ).array );
     
     Text( Index(untypedTable, 1).Value.name )
-    ```
+   ```
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
