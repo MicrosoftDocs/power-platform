@@ -83,7 +83,7 @@ The dashboard is structured in a way to help you focus on what you do, how react
 
 ### Team, outsourcing, and automation
 
-![Screenshot showing Team workload, Outsourcing, and Automation sections in the dashboard.](media\PPAP-TeamOutsourcingAndAutomation.png "Team, outsourcing and automation dashboard section")
+:::image type="content" source="media/PPAP-TeamOutsourcingAndAutomation.png" alt-text="Screenshot showing Team workload, Outsourcing, and Automation sections in the dashboard.":::
 
 The first section of the report contains aggregated administrative task data, illustrating:
 
@@ -93,13 +93,13 @@ The first section of the report contains aggregated administrative task data, il
 
 ### Task breakdown - proactive & reactive balance
 
-![Screenshot showing the Task breakdown - proactive & reactive balance section of the dashboard.](media\PPAP-TaskBreakdownProactiveAndReactiveBalance.png "Task breakdown - proactive and reactive balance")
+:::image type="content" source="media/PPAP-TaskBreakdownProactiveAndReactiveBalance.png" alt-text="Screenshot showing the Task breakdown - proactive & reactive balance section of the dashboard.":::
 
 This section of the report focuses on how many tasks are reactive ("ad-hoc"). You can filter the list and analyze the percentage of tasks that have been categorized as ad-hoc to look for automation, outsourcing, or innovation opportunities.
 
 ### Task breakdown - experience & personas
 
-![Screenshot showing the Task breakdown - experience & personas section of the dashboard.](media\PPAP-ExperienceAndPersonas.png "Task breakdown - experience and personas")
+:::image type="content" source="media/PPAP-ExperienceAndPersonas.png" alt-text="Screenshot showing the Task breakdown - experience & personas section of the dashboard.":::
 
 This section of the report aggregates duration for all tasks, grouped by task frequency, and provides insight into:
 
@@ -108,7 +108,7 @@ This section of the report aggregates duration for all tasks, grouped by task fr
 
 ### Task overview - categorization
 
-![Screenshot showing the Task breakdown - experience, persona and categorization section of the dashboard.](media/PPAP-TaskOverviewPersonaAndCategorization.png "Task breakdown - experience, persona and categorization")
+:::image type="content" source="media/PPAP-TaskOverviewPersonaAndCategorization.png" alt-text="Screenshot showing the Task breakdown - experience, persona and categorization section of the dashboard.":::
 
 Tasks are categorized to show where your team spends the most time. Tasks have a primary and secondary category to provide further insight into where your administration team spends their time. Selecting a category refines a list of tasks to provide further insight.
 

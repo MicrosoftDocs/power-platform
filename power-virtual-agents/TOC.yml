@@ -74,7 +74,7 @@
          href: advanced-create-topics-from-web.md
        - name: Create topics from Customer Service Insights
          href: advanced-create-topics-from-csi.md
-       - name: Add end-user authentication
+       - name: Add user authentication
          href: advanced-end-user-authentication.md
        - name: Send proactive messages and cards in Microsoft Teams
          href: advanced-proactive-message.md
@@ -108,9 +108,9 @@
          href: publication-connect-bot-to-custom-application.md
        - name: Add bot to Azure Bot Service channels
          href: publication-connect-bot-to-azure-bot-service-channels.md
-       - name: Integrate with QnA Maker
-         href: integrate-with-qna.md
-       - name: Integrate with Bot Framework
+       - name: Integrate with question answering
+         href: integrate-with-question-answering.md
+       - name: Integrate with Bot Framework skills
          items:
           - name: Configure a skill for use in Power Virtual Agents
             href: configuration-add-skills.md
@@ -118,18 +118,22 @@
             href: advanced-use-skills.md
           - name: Use a Power Virtual Agents bot as a skill
             href: advanced-use-pva-as-a-skill.md
-          - name: Use Bot Framework Composer
-            items:
-             - name: Extend your bot with Bot Framework Composer
-               href: advanced-bot-framework-composer.md
-             - name: Example 1 - Show an Adaptive Card in Power Virtual Agents
-               href: advanced-bot-framework-composer-example1.md
-             - name: Example 2 - Display a multi-select options list in Power Virtual Agents
-               href: advanced-bot-framework-composer-example2.md
-             - name: Example 3 - Use Bing Search as a fallback in Power Virtual Agents
-               href: advanced-bot-framework-composer-example3.md
-             - name: Example 4 - Display a form with a Submit button in Power Virtual Agents
-               href: advanced-bot-framework-composer-example4.md
+       - name: Extend with Bot Framework Composer
+         items:
+          - name: Overview of Bot Framework Composer
+            href: advanced-bot-framework-composer.md
+          - name: Getting started with Composer
+            href: advanced-bot-framework-composer-fundamentals.md
+          - name: Capture telemetry
+            href: advanced-bot-framework-composer-capture-telemetry.md
+          - name: Show an Adaptive Card
+            href: advanced-bot-framework-composer-example1.md
+          - name: Display a multi-select options list
+            href: advanced-bot-framework-composer-example2.md
+          - name: Use Bing Search as a fallback
+            href: advanced-bot-framework-composer-example3.md
+          - name: Display a form with a Submit button
+            href: advanced-bot-framework-composer-example4.md
     - name: Monitor and diagnose
       items:
        - name: Key concepts - Analytics
@@ -150,8 +154,10 @@
       items:
        - name: Key concepts - Configuration
          href: configuration-fundamentals.md
-       - name: Configure end-user authentication
+       - name: Configure user authentication
          href: configuration-end-user-authentication.md
+       - name: Configure user authentication with Azure Active Directory
+         href: configuration-authentication-azure-ad.md
        - name: Configure web and Direct Line channel security
          href: configure-web-security.md
        - name: Configure single sign-on for Web
@@ -234,7 +240,7 @@
          href: teams/authoring-variables-bot-teams.md
        - name: Create topics from existing support content
          href: teams/advanced-create-topics-from-web-teams.md
-       - name: Add end-user authentication
+       - name: Add user authentication
          href: teams/advanced-end-user-authentication-teams.md
        - name: Add actions using Power Automate
          href: teams/advanced-flow-teams.md
@@ -270,7 +276,7 @@
          href: teams/configuration-fundamentals-teams.md
        - name: Configure web and Direct Line channel security
          href: teams/configure-web-security-teams.md
-       - name: Configure end-user authentication
+       - name: Configure user authentication
          href: teams/configuration-end-user-authentication-teams.md
        - name: Configure how the bot starts the conversation
          href: teams/configure-bot-greeting-teams.md

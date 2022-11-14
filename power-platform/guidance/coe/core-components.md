@@ -189,16 +189,6 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Error Code
   - Error Message
 
-- **AiBuilderModel** represents an Ai Builder Model. The following information is available for each model:
-  - Display name
-  - ID
-  - Created on
-  - Owner
-  - Modified on
-  - Type (Template)
-  - State
-  - Environment
-
 - **Business Process Flow** represents a business process flow. The following information is available for each BPF:
   - Display name
   - ID
@@ -208,7 +198,17 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Type (Background, Task)
   - State
   - Environment
-  - Primary Entity 
+  - Primary Entity
+
+- **AiBuilderModel** represents an Ai Builder Model. The following information is available for each model:
+  - Display name
+  - ID
+  - Created on
+  - Owner
+  - Modified on
+  - Type (Template)
+  - State
+  - Environment
 
 - **Power Platform Solution** represents a solution. The following information is available for each solution:
   - Display name

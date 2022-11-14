@@ -84,7 +84,7 @@ For the ALM Accelerator for Power Platform canvas app to work, the following con
 
 The ALM Accelerator includes features that required the installation of the **Creator Kit** in the environment where you install ALM Accelerator for Power Platform.
 
-To install the **Creator Kit** follow steps described here : [Install Creator Kit](https://learn.microsoft.com/en-us/power-platform/guidance/creator-kit/setup)
+To install the **Creator Kit** follow steps described here : [Install Creator Kit](/power-platform/guidance/creator-kit/setup)
 
 ## Foundational setup
 

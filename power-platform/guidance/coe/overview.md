@@ -65,6 +65,14 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
     ![Email to welcome new makers.](media/coe5.PNG "Email to welcome new makers")
 
+## How to use the CoE Starter Kit alongside Automation Kit
+
+The [Automation Kit](https://aka.ms/automationcoe) is set of tools that accelerates the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate money saved and return on investment (ROI).
+
+The kit is especially useful to an Automation Center of Excellence (CoE) team, which is a team of experts who support automation within your organization. They have good knowledge about Power Automate for desktop, set up and maintain the Automation Kit, and maintain the configuration data such as departments, process categories, goals, and more.
+
+The Automation Kit can be used standalone or alongside the CoE Starter Kit.
+
 ## How to use the CoE Starter Kit alongside Power Platform Admin Center
 
 ### Managed Environments for Power Platform
@@ -97,7 +105,7 @@ In addition to those three features that have an overlap with Managed Environmen
 
 - Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
 
-- Get started with the Microsoft Power Platform learning path, a free online and interactive training platform [aka.ms/PowerUp](/learn/paths/create-powerapps/?WT.mc_id=twitter-social-donasa).
+- Get started with the Microsoft Power Platform learning path, a free online and interactive training platform [aka.ms/PowerUp](/learn/paths/create-powerapps/).
 
 - As an admin looking after the CoE, you should be familiar with the administration and governance of Microsoft Power Platform. We recommend the following white paper as a resource: [aka.ms/PowerAppsAdminWhitepaper](https://aka.ms/powerappsadminwhitepaper).
 

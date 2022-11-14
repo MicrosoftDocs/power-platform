@@ -131,7 +131,7 @@ The **Param** function retrieves a parameter passed to the app when it was launc
 
 ### Reserved parameters
 
-The following keywords are reserved for internal use, and shouldn't be used as a custom parameter in the **Param()** function:
+The following keywords are reserved (regardless of case) for internal use, and shouldn't be used as a custom parameter in the **Param()** function:
 
 :::row:::
 :::column span="":::
@@ -158,66 +158,96 @@ authmode
 channeltype
 :::column-end:::
 :::column span="":::
-correlationid
+cordovapath
 :::column-end:::
 :::row-end:::
 :::row:::
 :::column span="":::
+correlationid
+:::column-end:::
+:::column span="":::
+debug
+:::column-end:::
+:::column span="":::
 delegatelaunchurl
 :::column-end:::
 :::column span="":::
 delegatelaunchurl
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 disablepreviewredirect
 :::column-end:::
 :::column span="":::
 embedderorigin
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 enableonbehalfof
 :::column-end:::
 :::column span="":::
 groupid
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 hideappsplash
 :::column-end:::
 :::column span="":::
 hidenavbar
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 hint
 :::column-end:::
 :::column span="":::
 hostclienttype
-:::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 hostmode
 :::column-end:::
 :::column span="":::
 iframecontainerid
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 isfullscreen
 :::column-end:::
 :::column span="":::
 ispreviewmode
 :::column-end:::
+:::row-end:::
+:::row:::
+:::column span="":::
+loader
+:::column-end:::
+:::column span="":::
+loaderType
+:::column-end:::
 :::column span="":::
 locale
 :::column-end:::
 :::column span="":::
-packageproperties
+location
 :::column-end:::
 :::row-end:::
 :::row:::
+:::column span="":::
+packagekind
+:::column-end:::
+:::column span="":::
+packageproperties
+:::column-end:::
+:::column span="":::
+playerresourcespath
+:::column-end:::
+:::column span="":::
+playersessionid
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="":::
+powerappslanguage
+:::column-end:::
 :::column span="":::
 screencolor
 :::column-end:::
@@ -227,11 +257,11 @@ sdkversion
 :::column span="":::
 site
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 skipappmetadata
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 skipiframecreation
 :::column-end:::
@@ -241,11 +271,11 @@ skiplaunchappcache
 :::column span="":::
 source
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 standaloneconsent
 :::column-end:::
-:::row-end:::
-:::row:::
 :::column span="":::
 teamid
 :::column-end:::
@@ -255,15 +285,19 @@ teamtype
 :::column span="":::
 tenantId
 :::column-end:::
+:::row-end:::
+:::row:::
 :::column span="":::
 theme
 :::column-end:::
-:::row-end:::
-:::row:::
+:::column span="":::
+uselocalpackagehostresources
+:::column-end:::
 :::column span="":::
 userteamrole
 :::column-end:::
 :::row-end:::
+
 
 ## Examples
 

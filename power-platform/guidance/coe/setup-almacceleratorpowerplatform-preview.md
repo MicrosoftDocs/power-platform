@@ -5,7 +5,7 @@ author: jenschristianschroder
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2022
+ms.date: 10/13/2022
 ms.subservice: guidance
 ms.author: jeschro
 ms.reviewer: jimholtz
@@ -22,7 +22,6 @@ The ALM Accelerator for Microsoft Power Platform components enable makers to app
 
 > [!NOTE]
 > The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
-
 The ALM accelerator doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 ## Document structure
@@ -45,7 +44,6 @@ The ALM accelerator for Microsoft Power Platform must be installed into a Power 
 
 > [!NOTE]
 > Currently, the ALM accelerator isn't compatible with Dataverse for Teams. Both the ALM Accelerator for Power Platform app and the associated Azure DevOps pipelines assume that the full version of Dataverse is being used in all environments.
-
 You'll need to create an environment in which to set up the ALM accelerator for Microsoft Power Platform. We recommend that you install the accelerator in the same environment as other CoE Starter Kit solutions. For more information about how to decide on the best strategy for your organization, go to [Establishing an environment strategy for Microsoft Power Platform](../adoption/environment-strategy.md) and [Environment strategy for ALM](../../alm/environment-strategy-alm.md).
 
 ### Azure DevOps organization
@@ -65,15 +63,16 @@ To complete the steps in this section, you'll need the following users and permi
 For the ALM Accelerator for Power Platform canvas app to work, the following connectors must be available to be used together in the environment into which the ALM accelerator is imported:
 
 - [Dataverse (legacy)](/connectors/commondataservice/)
+- HTTP
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
 - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
 - ALM Accelerator Custom DevOps (this connector will be created as part of the [accelerator solution import](#importing-the-solution-and-configuring-the-app))
-
+- [Office 365 Users](/connectors/office365users/)
 ### Creator Kit
 
 The ALM Accelerator includes features that required the installation of the **Creator Kit** in the environment where you install ALM Accelerator for Power Platform.
 
-To install the **Creator Kit** follow steps described here : [Install Creator Kit](https://learn.microsoft.com/en-us/power-platform/guidance/creator-kit/setup)
+To install the **Creator Kit** follow steps described here : [Install Creator Kit](/power-platform/guidance/creator-kit/setup)
 
 ## Azure AD App Registration setup
 
@@ -110,7 +109,6 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 
         > [!IMPORTANT]
         > You'll use this value later and specifically call it out as the **DevOps Application (client) ID**, which is different from the **Application (client) ID** you'll copy in step 12 of this procedure.
-
       ![Copy the Application client ID.](media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
 
       If you cannot find the Azure DevOps permissions in the **APIs my organization uses** you can get the **DevOps Application (client) ID** by following these steps:
@@ -132,14 +130,12 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 
      > [!IMPORTANT]
      > You'll use this value later and call it out as the **Application (client) ID**, which is different from the **DevOps Application (client) ID** you copied earlier in step 7.
-
 13. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
 
 14. Set the **Redirect URI** to *https://global.consent.azure-apim.net/redirect*.
 
     > [!NOTE]
     > You might need to update this later when configuring your custom connector after you've installed the app, if this URL is different from the **Redirect URI** populated in the custom connector.
-
 15. Select **Configure**.
 
 ### Give Power App Management Permission to your App
@@ -148,7 +144,6 @@ In order for the pipelines to perform certain actions against the environments (
 
 > [!IMPORTANT] 
 > Currently this cmdlet gives elevated permissions (for example, Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed certain capabilities won't work in the AA4PP pipelines.
-
 ```powershell
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber
@@ -191,7 +186,6 @@ The ALM accelerator uses several Azure DevOps extensions, including some third-p
 
     > [!NOTE]
     > When creating a connection for **HTTP with Azure AD**, use **[Microsoft Graph](https://graph.microsoft.com)** for both parameters.
-
 1. Select **Import**, and wait for the solution to complete the import process.
 
 ### Configure the DevOps custom connector

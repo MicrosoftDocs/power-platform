@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 09/09/2022
+ms.date: 10/28/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
@@ -21,9 +21,26 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Model-driven app controls deprecation (2023 Release Wave 1)
+
+With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in April 2023), some older controls for model-driven apps will be deprecated. These controls include auto-complete, input mask, multimedia player, number input, Option set, and star rating.
+
+#### Why is this needed? 
+
+-   These controls are outdated and don't conform to our current standards for usability and accessibility. 
+-   We will be introducing new controls that will replace these controls.
+
+#### Impact
+
+- Starting April 2023, these controls can no longer be added to forms. 
+- For all other controls, they'll continue to work within existing forms until April 2024.
+
+#### Action required by you
+- Evaluate existing forms that include a deprecated control and replace them with a newer control.
+
 ## Microsoft Dataverse (legacy) connector (CDS 2.0 connector) for Power Automate flows will be deprecated and replaced with another connector
 
-Effective October 31, 2022, the Microsoft Dataverse (legacy) connector, also referred to as the CDS 2.0 connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components.
+Effective October 2022, the Microsoft Dataverse (legacy) connector, also referred to as the CDS 2.0 connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components.
 
 Users will need to review their existing Power Automate flows to determine which ones need to be updated. By March 2023, no new flows can be created using the CDS 2.0 connector but existing flows will continue to work.
 
@@ -43,7 +60,7 @@ If your flow was created prior to June 2020, you won't be able to use the migrat
 
 ## Microsoft Dataverse (legacy) connector (CDS 2.0 connector) for Azure Logic Apps will be deprecated and replaced with another connector
 
-Effective October 31, 2022, the Microsoft Dataverse (legacy) connector, also referred to as the CDS 2.0 connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components. The Microsoft Dataverse connector will be available for use in Azure Logic Apps in Aug 2022. Users will need to modify their existing logic apps or create new logic apps using the Microsoft Dataverse connector before October 2023.
+Effective October 2022, the Microsoft Dataverse (legacy) connector, also referred to as the CDS 2.0 connector, will be deprecated. This connector currently can be used to connect to Dataverse for use in multiple clients and components. The Microsoft Dataverse connector will be available for use in Azure Logic Apps in Aug 2022. Users will need to modify their existing logic apps or create new logic apps using the Microsoft Dataverse connector before October 2023.
 
 There will be a phased-in approach before deprecation takes place. Here's the timeline:
 
@@ -51,9 +68,9 @@ There will be a phased-in approach before deprecation takes place. Here's the ti
     - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility for a period of time.
     - All new logic apps will be created using the new actions.
 - **August 2022 through October 2022 preview period:** Both new and legacy actions and triggers will be available during new flow creation.
-- **October 2022 after preview:** No new logic apps can be created using the CDS 2.0/Dataverse (legacy) connector’s actions and triggers, but existing logic apps will continue to work.
+- **October 2022 after preview:** No new logic apps can be created using the CDS 2.0/Dataverse (legacy) connector's actions and triggers, but existing logic apps will continue to work.
 
-Effective October 31, 2023, all existing logic apps using the deprecated legacy actions and triggers will cease to work. Users will need to review their existing logic apps to update them to the new Azure Logic Apps triggers.
+Effective October 2023, all existing logic apps using the deprecated legacy actions and triggers will cease to work. Users will need to review their existing logic apps to update them to the new Azure Logic Apps triggers.
 
 
 ## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
@@ -76,8 +93,8 @@ The legacy read-only grid control has been deprecated in model-driven apps with 
 
 The legacy read-only grid:
 
-- Doesn’t support the latest Microsoft accessibility standards.
-- Doesn’t align with the latest in Microsoft design guidance.
+- Doesn't support the latest Microsoft accessibility standards.
+- Doesn't align with the latest in Microsoft design guidance.
 - Has limited extensibility options.
 
 ### Impact
@@ -110,7 +127,7 @@ Effective November 2021, Data Export Service was deprecated. Data Export Service
 
 ## Dataverse OData v2.0 Service removal
 
-We plan to remove the Dataverse OData v2.0 Organization Data Service on November 11, 2022.
+We plan to remove the Dataverse OData v2.0 Organization Data Service on April 30,2023. This was originally scheduled for November 11, 2022, but the date has been extended.
 
 > [!NOTE]
 > This announcement does not involve the deprecated Organization Service SOAP endpoint. At this time, no date has been announced for the removal of the SOAP endpoint.
@@ -139,7 +156,7 @@ The Analyze feature is being removed because of Cross-Site Scripts (XSS) vulnera
 
 ## Dynamics 365 - Gamification is deprecated
 
-Effective April 1, 2021, Dynamics 365 – Gamification is deprecated. Until September 30, 2021, Microsoft provided limited support for this solution. From October 1, 2021, the Dynamics 365 – Gamification solution won’t be functional. To uninstall Gamification, delete the **GamificationUpdater** and **Gamification** solutions from the Dynamics 365 organization. Note that you must first delete the **GamificationUpdater** solution followed by the **Gamification** solution. More information: [Delete a preferred solution](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn878909(v=crm.8)#Delete%20a%20preferred%20solution).
+Effective April 1, 2021, Dynamics 365 – Gamification is deprecated. Until September 30, 2021, Microsoft provided limited support for this solution. From October 1, 2021, the Dynamics 365 – Gamification solution won't be functional. To uninstall Gamification, delete the **GamificationUpdater** and **Gamification** solutions from the Dynamics 365 organization. Note that you must first delete the **GamificationUpdater** solution followed by the **Gamification** solution. More information: [Delete a preferred solution](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn878909(v=crm.8)#Delete%20a%20preferred%20solution).
 
 ## Skype integration with customer engagement apps is deprecated
 
@@ -147,7 +164,7 @@ Effective July 2019, Skype integration feature with customer engagement apps has
 
 The presence indication backed by Skype for Business will no longer function. This deprecation includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
 
-Plan to transition to Microsoft Teams, because the Team’s capabilities go beyond those of Skype for Business Online. Teams is the next chapter in enterprise communication solution from Microsoft. For more information about Teams capabilities, see [The Total Economic Impact™ of Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
+Plan to transition to Microsoft Teams, because the Team's capabilities go beyond those of Skype for Business Online. Teams is the next chapter in enterprise communication solution from Microsoft. For more information about Teams capabilities, see [The Total Economic Impact&trade; of Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
 
 
 ## Low-density headers in model-driven apps won't be supported with the 2021 release wave 2
@@ -160,7 +177,7 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 - Low-density headers don't promote a highly dense experience and require users to always use the flyout for all controls across view-port sizes from small to very-wide.
 
 ### Impact
-Any current form that is configured to be “low-density” is automatically updated to render in a [high density with flyout](/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) mode in a model driven app. Below is an example of high-density header with flyout:
+Any current form that is configured to be "low-density" is automatically updated to render in a [high density with flyout](/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) mode in a model driven app. Below is an example of high-density header with flyout:
 
 > [!div class="mx-imgBorder"] 
 > ![Header flyout with high-density header.](media/form-header-flyout-high-density.png "Header flyout with high-density header")
@@ -196,14 +213,14 @@ The out of box fields currently on the footer is removed and included on the for
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences. We do this to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
 
-## Model-driven app controls deprecation
+## Model-driven app controls deprecation (2021 Release Wave 1)
 
 With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model-driven apps will be deprecated. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radial Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label (two radio buttons format option).
 
 #### Why is this needed? 
 
--	These controls are outdated and don’t conform to our current standards for useability and accessibility. 
--	For example, we’ve received feedback that the Flip Label control is difficult to determine its intended use and users commonly don’t see the options available to choose from, such as "yes / no" or "enable / disable."
+-   These controls are outdated and don't conform to our current standards for useability and accessibility. 
+-   For example, we've received feedback that the Flip Label control is difficult to determine its intended use and users commonly don't see the options available to choose from, such as "yes / no" or "enable / disable."
 
 #### Impact
 
@@ -237,10 +254,10 @@ Effective February 2021, **Organization data download filter** option that filte
 ## TLS RSA cipher suites are deprecated
 
 Effective October 30, 2020, the following cipher suites are being deprecated from our servers.
-- "TLS_RSA_WITH_AES_256_GCM_SHA384”
-- "TLS_RSA_WITH_AES_128_GCM_SHA256”
-- "TLS_RSA_WITH_AES_256_CBC_SHA256”
-- "TLS_RSA_WITH_AES_128_CBC_SHA256”
+- "TLS_RSA_WITH_AES_256_GCM_SHA384"
+- "TLS_RSA_WITH_AES_128_GCM_SHA256"
+- "TLS_RSA_WITH_AES_256_CBC_SHA256"
+- "TLS_RSA_WITH_AES_128_CBC_SHA256"
 
 Cipher suites are used to encrypt messages to secure a network connection between clients/servers and other servers. We're removing the above list of cipher suites to comply with our current security protocols.
 
@@ -262,7 +279,7 @@ Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and *
 
 ## Online management API PowerShell module and REST API are deprecated
 
-Effective August 26, 2020, the online management API PowerShell module, and the underlying [Online Management REST API](/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi) will be updated in October  2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin)
+Effective August 26, 2020, the online management API PowerShell module, and the underlying [Online Management REST API](/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi) will be updated in October  2020 to point to newer underlying APIs and won't receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin)
 
 ## Company News Timeline solution is deprecated
 
@@ -275,7 +292,7 @@ As an alternative you can install news Power Apps component framework control. F
 
 ## Dynamic 365 Sales bot is deprecated
 
-Effective June 2, 2020, the Dynamics 365 Sales bot, a feature that enables users to retrieve sales information through a bot within Dynamics 365 Sales app for Teams will be deprecated. Until July 31, 2020, Microsoft will continue to provide support for the feature, but won't release any more functionality beyond what is already present.  After July 31, 2020, you'll no longer be able to receive responses to conversations. The bot won’t be available for new customers; existing customers may still be able to access the bot from the Chat, however the bot won't respond to questions.
+Effective June 2, 2020, the Dynamics 365 Sales bot, a feature that enables users to retrieve sales information through a bot within Dynamics 365 Sales app for Teams will be deprecated. Until July 31, 2020, Microsoft will continue to provide support for the feature, but won't release any more functionality beyond what is already present.  After July 31, 2020, you'll no longer be able to receive responses to conversations. The bot won't be available for new customers; existing customers may still be able to access the bot from the Chat, however the bot won't respond to questions.
 
 It is our goal to deliver a powerful bot experience that allows users to retrieve and manage information. Based on usage data and feedback from our customers, we'll be working on a powerful, extensible set of capabilities and features that will allow you to intuitively access and interact with sales information—among other entities—through a bot interface. we'll keep you updated on timing for when this will be available.
 
@@ -436,7 +453,7 @@ Customers must transition to using the [global OData V4 Discovery Service](/powe
 
 As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before December 4, 2020. Microsoft will continue to provide support, security, and other critical updates to the legacy web client until December 4, 2020 but won't release any more functionality beyond what has already been announced.
   
-On December 4, 2020, the legacy web client will no longer be available. Organizations should make the transition to Unified Interface as soon as possible to take advantage of Microsoft’s ongoing investments in reliability, performance, and functionality. 
+On December 4, 2020, the legacy web client will no longer be available. Organizations should make the transition to Unified Interface as soon as possible to take advantage of Microsoft's ongoing investments in reliability, performance, and functionality. 
 
  
 In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 4, 2020. 
