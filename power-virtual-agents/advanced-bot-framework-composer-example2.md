@@ -37,7 +37,7 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 1. On the authoring canvas, select **Add** (**+**), **Manage properties**, and **Set a property**.
 
-1. In the properties pane, do the following:
+1. In the properties pane:
 
     1. For **Property**, enter `conversation.days_array`.
 

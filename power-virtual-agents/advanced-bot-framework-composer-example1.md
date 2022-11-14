@@ -44,13 +44,13 @@ In this example, you'll learn how to show an Adaptive Card in Power Virtual Agen
 
 1. On the **Authoring canvas**, select the default **Message** node. Select the three vertical dots, then select **Delete**.
 
-1. Under the **Trigger phrases** node, select **Add node** (**+**) and then select **Ask a question**. Then do the following:
+1. Under the **Trigger phrases** node, select **Add node** (**+**) and then select **Ask a question**. Then in the **Question** node:
 
     1. For **Ask a question**, enter `What city are you in?`.
 
     1. For **Identify**, select **City**.
 
-1. In **Save response as**, select the automatically created variable. Then in the variable properties pane do the following:
+1. In **Save response as**, select the automatically created variable. Then in the variable properties pane:
 
     1. For **Name**, enter `user_city`.
 
@@ -222,7 +222,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
 1. Go to the **Create** page. In the bot explorer, select the **Meals** dialog then select the **BeginDialog** trigger.
 
-1. On the authoring canvas, select **Add** (**+**) then select **Send a response**. This will add a node that we'll use to display the Adaptive Card.
+1. On the authoring canvas, select **Add** (**+**) then select **Send a response**.
 
 1. Select the new **Send a response** node to open the properties pane. Under **Bot responses**, select **Show code** to switch to the code editor.
 
@@ -237,9 +237,9 @@ Next, you'll display meal choice images that are available in the user's city us
     - ${AdaptiveCardMeals(virtualagent.user_city)}
     ```
 
-    Power Virtual Agents global variables are accessed in Composer by using the `virtualagent` scope. This scope won't appear in Composer's property reference menu, but you can access it by entering a expression directly.
+    Power Virtual Agents global variables are accessed in Composer by using the `virtualagent` scope. This scope won't appear in Composer's property reference menu, but you can access it by entering an expression directly.
 
-    In this example `${virtualagent.user_city}` refers to the `user_city` global variable that was created in the Power Virtual Agents bot.
+    In this example, `${virtualagent.user_city}` refers to the `user_city` global variable that was created in the Power Virtual Agents bot.
 
     :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_AddResponse.png" alt-text="Composer Begin Dialog - add Send a response action.":::
 
@@ -265,7 +265,7 @@ Next, you'll display meal choice images that are available in the user's city us
 
 To test your changes in Power Virtual Agents, open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `What meals do you deliver?` to start your conversation.
 
-Your bot will trigger the **Meal delivery options** topic which asks the user for their current city. Then the bot will redirect to the Composer dialog **Meals** to display an Adaptive Card.
+Your bot will trigger the **Meal delivery options** topic, which asks the user for their current city. Then the bot will redirect to the Composer dialog **Meals** to display an Adaptive Card.
 
 :::image type="content" source="media/advanced-bot-framework-composer-example1/Example1_cropped.png" alt-text="Power Virtual Agents Example 1 test.":::
 

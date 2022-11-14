@@ -24,13 +24,11 @@ Composer is integrated into Power Virtual Agents to allow developers and busines
 - Regular expressions (RegEx)
 - Adaptive Cards
 
-Composer with Power Virtual Agents lets you access conversational memory and context, including the variables defined in Power Virtual Agents.
+Using Composer with Power Virtual Agents lets you access conversational memory and context, including the variables defined in Power Virtual Agents. This lets you create topics to handle interruptions, cancellations, and context switching. You can also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
 
-For example, you can create topics to handle interruptions, cancellations, and context switching. You can also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
+There are various prebuilt functions and expressions in Composer for you to use, and the ability to define multiple variations of a phrase for the bot to randomly select at runtime.
 
-There are a variety of prebuilt functions and expressions in Composer for you to use, as well as the ability to define multiple variations of a phrase for the bot to randomly select at runtime.
-
-Custom topics added with Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and don't require any additional Azure hosting.
+Custom topics added with Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and don't require any more Azure hosting.
 
 [!INCLUDE [Composer License](includes/composer-license.md)]
 
@@ -49,23 +47,23 @@ Composer uses a different set of terms to describe similar concepts used in Powe
 
 - **trigger:** Triggers are the main component of a dialog and let you catch and respond to events. Each trigger has a condition and a collection of actions to execute when the condition is met. You can think of triggers as the equivalent of _topics_ in Power Virtual Agents. To learn more about triggers, see [Triggers](/composer/concept-events-and-triggers).
 
-- **action:** Actions are the main component of a trigger which enable you to send a response, create and assign values to properties, manipulate the conversational flow, manage dialogs, and many other activities. You can think of actions as the equivalent of _nodes_ in Power Virtual Agents.
+- **action:** Actions are the main components of a trigger that enable you to send a response, create and assign values to properties, manipulate the conversational flow, manage dialogs, and many other activities. You can think of actions as the equivalent of _nodes_ in Power Virtual Agents.
 
 ## Composer features not supported with Power Virtual Agents
 
-The following Composer features are not supported with Power Virtual Agents:
+The following Composer features aren't supported with Power Virtual Agents:
 
 <!-- best viewed/edited without wordwrap -->
 | Unsupported feature                             | Additional information                                                                              |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | LUIS Recognizer                                 | Default Recognizer in Composer is set to Power Virtual Agents Natural Language Understanding (NLU). |
-| Bot Framework Orchestrator                      | Bot Framework Orchestrator is not supported in Composer for Power Virtual Agents.                   |
-| Custom recognizer                               | Custom recognizer is not supported in Composer for Power Virtual Agents.                            |
-| Bot skills                                      | Cannot invoke Bot skills in Composer content meant for Power Virtual Agents.                        |
-| QnA Maker                                       | This feature is not available in Composer for Power Virtual Agents.                                 |
-| OAuth Login and User Sign Out                   | These types of actions are not supported in Composer for Power Virtual Agents.                      |
-| Dialog Inputs and Outputs                       | Dialog Inputs and Outputs are not supported in Composer for Power Virtual Agents.                   |
-| Entity detection in trigger phrases in Composer | Cannot use `# getUserName my name is {username=userName}` in Composer.                              |
+| Bot Framework Orchestrator                      | Bot Framework Orchestrator isn't supported in Composer for Power Virtual Agents.                   |
+| Custom recognizer                               | Custom recognizer isn't supported in Composer for Power Virtual Agents.                            |
+| Bot skills                                      | Can't invoke Bot skills in Composer content meant for Power Virtual Agents.                        |
+| QnA Maker                                       | This feature isn't available in Composer for Power Virtual Agents.                                 |
+| OAuth Login and User Sign Out                   | These types of actions aren't supported in Composer for Power Virtual Agents.                      |
+| Dialog Inputs and Outputs                       | Dialog Inputs and Outputs aren't supported in Composer for Power Virtual Agents.                   |
+| Entity detection in trigger phrases in Composer | Can't use `# getUserName my name is {username=userName}` in Composer.                              |
 | Testing in Bot Framework Emulator               | All Composer content should be published and then tested in Power Virtual Agents.                   |
 
 ## Guidelines for creating bot content for Power Virtual Agents in Composer
@@ -96,7 +94,7 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
 - The main dialog in Composer should never be deleted, as it corresponds to your Power Virtual Agents bot. The main dialog can have zero or more triggers.
 
-- You can capture telemetry in Composer dialogs and triggers and use [Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze it with [Kusto queries for adaptive dialogs](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed). Refer to the [Capture telemetry with Application Insights](advanced-bot-framework-composer-capture-telemetry.md) section for more information.
+- You can capture telemetry in Composer dialogs and triggers and use [Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze it with [Kusto queries for adaptive dialogs](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed). For more information, see [Capture telemetry with Application Insights](advanced-bot-framework-composer-capture-telemetry.md).
 
 For a deep-dive on Composer dialogs, events, triggers, and how to create advanced bot content with Bot Framework, refer to the following resources:
 
