@@ -23,6 +23,7 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
 
 ## Prerequisites
 
+- [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md).
 - [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md).
 
 ## Create a fallback trigger

@@ -23,6 +23,8 @@ In this example, you'll learn how to display a form with a Submit button in Powe
 
 ## Prerequisites
 
+- [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md).
+- [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md).
 - [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md).
 
 ## Create a new trigger
