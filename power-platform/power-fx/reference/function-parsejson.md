@@ -138,7 +138,7 @@ Given the following JSON string in a variable named `JsonString`
 
 **Table()** returns a single-column table of **untyped objects** with a single-column Value for number in the array...
 
-    ```powerapps-dot
+   ```powerapps-dot
     Set(untypedTable, Table( ParseJSON( JsonString ).array );
     
     Value( Index(untypedTable, 1).Value.Value )
@@ -154,7 +154,7 @@ Given the following JSON string in a variable named `JsonString`
 
 **Table()** returns a single-column table of **untyped objects** that represents each json object in the array.
 
-    ```powerapps-dot
+   ```powerapps-dot
     Set(untypedTable, Table( ParseJSON( JsonString ).array );
     
     Text( Index(untypedTable, 1).Value.name )
