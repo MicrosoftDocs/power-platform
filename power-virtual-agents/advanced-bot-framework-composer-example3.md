@@ -101,7 +101,7 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
 1. Copy and paste the following expression:
 
     ```lg
-    -${AdaptiveCardBingSearch(turn.activity.text)}
+    - ${AdaptiveCardBingSearch(turn.activity.text)}
     ```
 
     :::image type="content" source="media/Composer_Example3/E3_BingSearch_addBotReponse_BingSearch.png" alt-text="Screenshot of the response for the send a response action.":::

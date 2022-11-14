@@ -33,7 +33,7 @@ In this example, you'll learn how to display a form with a Submit button in Powe
 
 1. In the bot explorer, go to the main dialog. Select **More options** (**...**) then select **Add new trigger**.
 
-1. In the **Create a trigger** window, do the following:
+1. In the **Create a trigger** window:
 
     1. For **What is the type of this trigger?**, select **Intent recognized**.
     1. For **What is the name of this trigger?**, enter `StartTrial`.
@@ -98,7 +98,7 @@ In this example, you'll learn how to display a form with a Submit button in Powe
     ```
     ````
 
-    Note that every input field in this Adaptive card was given an unique ID: **Name**, **Address**, and **Weeks**.
+    Every input field in this Adaptive card has a unique ID: **Name**, **Address**, and **Weeks**.
 
     :::image type="content" source="media/Composer-Example4/e4_createsubmitform.png" alt-text="Screenshot of the Adaptive Card JSON added to the bot responses.":::
 
