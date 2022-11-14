@@ -102,8 +102,6 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. Select **Topics** on the side pane.
 
-    :::image type="content" source="../media/advanced-create-topics-from-web/menu-topics.png" alt-text="Screenshot of the Topics menu item on the side pane." border="false":::
-
 1. Select **Suggest topics**.
 
     :::image type="content" source="../media/advanced-create-topics-from-web/suggest-topics-button.png" alt-text="Screenshot of the Suggest topics button." border="false":::

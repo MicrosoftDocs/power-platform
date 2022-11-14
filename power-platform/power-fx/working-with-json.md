@@ -146,10 +146,10 @@ Set( jsonRecord, Index( orderLines, 2 ) ); // Get the second record in the table
 Set( line2Item, Text( jsonRecord.Value.Item ) ); // "Widget 2"
 ```
 
-To make the use of the order line records easier and more straightforward in other parts of your app, you can convert the whole **Untyped object** to an entirely typed record using the [ForAll()](reference/function-forall.md) function.
+To make the use of the order line records easier and more straightforward in other parts of your app, you can convert the whole **Untyped object** to an entirely typed record using the [ForAll()](reference/function-forall.md) function. Providing the **Untyped object** directly to **ForAll()** means you can access the object fields directly instead of using the single-column `Value` field.
 
 ```powerapps-dot
-Set( typedOrderLines, ForAll( Table( jsonOrder.OrderLines ), { Item : Text( Value.Item ), Quantity : Value( Value.Quantity ) } ) );
+Set( typedOrderLines, ForAll( jsonOrder.OrderLines, { Item : Text( ThisRecord.Item ), Quantity : Value( ThisRecord.Quantity ) } ) );
 ```
 
 The new `typedOrderLines` variable is now a fully typed **Power Fx** table with the following columns and values:

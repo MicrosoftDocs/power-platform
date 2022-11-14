@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 
 # View billed sessions for Power Virtual Agents in Teams
 
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
