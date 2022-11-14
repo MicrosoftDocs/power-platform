@@ -357,7 +357,7 @@ Import the solution into Dataverse.
 
 #### `--activate-flows` `-af`
 
-Turn on workflows specified in the deployment settings file using a specified user
+Turn on Dynamics 365 workflow processes that are specified in the deployment settings file using a specified user
 
 This parameter requires no value. It is a switch.
 
