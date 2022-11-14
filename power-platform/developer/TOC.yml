@@ -6,6 +6,10 @@
     href: get-started.md
   - name: Fusion development
     href: fusion-development.md
+  - name: Create a developer environment
+    href: create-developer-environment.md
+  - name: ALM for developers
+    href: /power-platform/alm/alm-for-developers
   - name: Tools
     expanded: true
     items:
@@ -44,3 +48,5 @@
             href: cli\reference\solution.md
           - name: pac telemetry
             href: cli\reference\telemetry.md
+          - name: pac tool
+            href: cli\reference\tool.md

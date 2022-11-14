@@ -24,6 +24,10 @@ landingContent:
         links:
           - text: "Power Platform for developers"
             url: get-started.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create a developer environment"
+            url: create-developer-environment.md
       - linkListType: concept
         links:
           - text: "Fusion development"

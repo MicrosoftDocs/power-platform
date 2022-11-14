@@ -1,13 +1,13 @@
 ---
 title: "Administrator access for unlicensed Power Platform and Global admins"
 description: "Learn about the levels of permission in customer engagement apps available for Global admins and Microsoft Power Platform admins who don't have a license."
-author: srpoduri 
+author: praveenmantha 
 ms.subservice: admin
-ms.author: sripod
+ms.author: pmantha
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 10/13/2022
 search.audienceType: 
   - admin
 search.app:
@@ -47,9 +47,12 @@ To give these administrators access to additional areas, such as the Sales, Mark
 6. Select  **Save changes**.  
   
 > [!NOTE]
-> Global and Power Platform admins who don't have a license are automatically synced into the environment with an access mode of 'Administrative' while administrators who have a license are synced into the environment with an access mode of 'Read-Write'.  These administrators are assigned a System Administrator security role. 
+> Global and Power Platform admins who don't have a license are automatically synced into the environment with an access mode of **Administrative** while administrators who have a license are synced into the environment with an access mode of **Read-Write**.  These administrators are assigned a System Administrator security role. 
 > 
 > Unlicensed administrators who need to work with Power Apps for Admins PowerShell module or management connectors need to sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) at least once before invoking these administrative commands.
+> 
+> For tenants with special capabilities (like pay-as-you-go, per app plans, special licenses), all users except administrators will have Read-Write access set by default. Microsoft 365 Global Admins, Power Platform Admins, or Dynamics 365 Admins will need a license added in order to be assigned **Read-Write** permission in the Access Mode. See [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
+
 
 ### See also  
 [Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) <br />

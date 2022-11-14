@@ -3,7 +3,7 @@ title: "Tenant-level analytics (default)"
 description: View tenant-level analytics in a variety of reports
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 10/10/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -29,23 +29,23 @@ To access these reports, sign in to the Power Platform admin center and select *
 
 ## Who can view these reports?
 
-Admins with the following roles can view the reports in Power Apps analytics:
-- Tenant-level administrator - has access to all environments
-- Environment-level admin - environment list is filtered to include only environments where the admin has Contributor or Environment Admin role
+Administrators with the following roles and a [license](pricing-billing-skus.md) can view the reports in Power Apps analytics:
+- Environment Admin - can view reports for the environments where the admin is member of Contributor or Environment Admin role.
+- Power Platform admin - can view reports for all environments.
+- Dynamics 365 admin - can view reports for all environments. 
+- Microsoft 365 Global admin - can view reports for all environments.
 
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
 ## How do I enable tenant-level analytics?
 
-Follow these steps to enable the tenant-level analytics preview feature. 
+A member from one of the following admin roles is required to enable tenant-level analytics:
 
-The following admin roles are required:
-
-- Global administrator
-- Service administrator
+- Power Platform admin
+- Dynamics 365 admin
 - Delegated admin 
 
-Environment admins are not able to do these steps. The admin doesn't need to be a licensed user. 
+The admin doesn't need to be a licensed user.  Environment admins will gain access to the tenant-level analytics once the service admin enables the feature using the following steps. 
 
 1. Select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
 
@@ -65,15 +65,13 @@ Environment admins are not able to do these steps. The admin doesn't need to be 
 
 ## How do I disable tenant-level analytics?
 
-Follow these steps to disable the tenant-level analytics preview feature. 
+Administrators with the following roles and a [license](pricing-billing-skus.md) can disable tenant-level analytics:
 
-The following admin roles are required:
-
-- Global administrator
-- Service administrator
+- Power Platform admin
+- Dynamics 365 admin
 - Delegated admin 
 
-Environment admins are not able to do these steps. The admin doesn't need to be a licensed user. 
+Environment admins are not able to disable tenant-level analytics.
 
 > [!IMPORTANT]
 > When you disable the tenant-level analytics preview feature, note the following:
@@ -88,12 +86,11 @@ Environment admins are not able to do these steps. The admin doesn't need to be 
 
 ## Where is this feature available?
 
-The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is not yet available in other sovereign clouds. 
+The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is pending availability in Government & Sovereign Clouds.
 
 ### See also
-[Admin Analytics for Power Apps](analytics-powerapps.md) <br />
-[Preview: Tenant-level analytics](tenant-level-analytics.md) 
-
+[Tenant-level analytics for Power Apps](powerapps-analytics-reports.md) <br />
+[Tenant-level analytics for Power Automate](power-automate-analytics-reports.md) <br />
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

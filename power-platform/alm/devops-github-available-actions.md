@@ -200,11 +200,11 @@ Provides the ability to deploy a package dll or a zip file with a package.
 
 ## Portal tasks
 
-These tasks perform the following actions against Power Apps portals.
+These tasks perform the following actions against Power Pages.
 
 ### upload-paportal
 
-Uploads data to Power Apps portals.
+Uploads data to Power Pages.
 
 | Parameter    | Description       |
 |---------------|-------------------|
