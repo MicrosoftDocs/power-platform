@@ -15,6 +15,8 @@ ms.collection: virtualagent
 
 # Example 4 - Display a form with a Submit button in Power Virtual Agents
 
+[!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
+
 Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 In this example, you'll learn how to display a form with a Submit button in Power Virtual Agents by using Composer.

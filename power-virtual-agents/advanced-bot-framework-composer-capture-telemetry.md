@@ -15,6 +15,8 @@ ms.collection: virtualagent
 
 # Capture telemetry with Application Insights
 
+[!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]s
+
 You can use Bot Framework Composer with Power Virtual Agents to send event data to a telemetry service in [Application Insights](/azure/azure-monitor/app/app-insights-overview). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior, and provides data on availability, performance, and usage.
 
 > [!IMPORTANT]

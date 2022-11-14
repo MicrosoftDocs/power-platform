@@ -15,6 +15,8 @@ ms.collection: virtualagent
 
 # Overview of Bot Framework Composer
 
+[!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
+
 Enhance your bot by developing custom topics with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 Composer is integrated into Power Virtual Agents to allow developers and business users to build bots together. Composer lets you extend your bot with Bot Framework functionality, including:

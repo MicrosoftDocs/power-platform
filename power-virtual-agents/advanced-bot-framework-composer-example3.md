@@ -15,6 +15,8 @@ ms.collection: virtualagent
 
 # Example 3 - Use Bing Search as a fallback in Power Virtual Agents
 
+[!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
+
 Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 In this example, you'll learn how to set Bing search as a fallback answer in Power Virtual Agents by using Composer.

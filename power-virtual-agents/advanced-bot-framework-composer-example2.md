@@ -15,6 +15,8 @@ ms.collection: virtualagent
 
 # Example 2 - Display a multi-select options list in Power Virtual Agents
 
+[!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
+
 Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 In this example, you'll learn how to display a multi-select list in Power Virtual Agents by using Composer.
