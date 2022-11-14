@@ -31,9 +31,9 @@ Follow these steps.
 
 2. Select a record such as an account.
 
-3. Change the **Owner** or **Owner Business Unit** in the form header or form summary.
+3. Change the **Owner** or **Owning Business Unit** in the form header or form summary.
 
-   :::image type="content" source="media/change-owning-business-unit.png" alt-text="Change Owner or Owner Business Unit":::
+   :::image type="content" source="media/change-owning-business-unit.png" alt-text="Change Owner or Owning Business Unit":::
 
 ## Table relationship and cascading behavior 
 
