@@ -211,7 +211,6 @@ Dynamics 365 Customer Service provides [more context variables](/dynamics365/cus
 
 ### Authoring considerations
 
-<!-- FIXME: is this still accurate? -->
 Authentication isn't supported for voice-based hand-off to omnichannel instances. If you've set up authentication for your bot, the [authentication variables](./advanced-end-user-authentication.md) don't include authentication information when they're sent to your omnichannel instance.
 
 > [!WARNING]
