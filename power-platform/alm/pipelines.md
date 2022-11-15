@@ -24,7 +24,7 @@ Pipelines aim to democratize application lifecycle management (ALM) for Power Pl
 :::image type="content" source="media/deployment-pipelines.png" alt-text="Example of the deployment pipelines feature":::
 
 
-Pipelines significantly **reduce** the **effort** and **domain knowledge** previously required to **realize the ROI** (return on investment) from adopting healthy, enterprise-grade, automated ALM processes within your team or throughout your entire company. 
+Pipelines significantly **reduce** the **effort** and **domain knowledge** previously required to **realize the ROI** (return on investment) from adopting healthy, enterprise-grade, automated ALM processes within your team or throughout your entire company. Pipelines simplify ALM for everyone:
 1. **Admins** can now easily configure automated deployment pipelines in minutes (compared to days or weeks). 
 2. **Makers** have an intuitive user experience for deploying their solutions with just a few clicks. 
 3. **Professional developers** can (optionally) run Pipelines using their preferred tools such as the command line interface (CLI).
