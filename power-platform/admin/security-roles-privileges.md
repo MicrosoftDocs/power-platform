@@ -31,7 +31,7 @@ Each security role consists of record-level privileges and task-based privileges
   
 *Record-level privileges* define which tasks a user with access to the record can do, such as Read, Create, Delete, Write, Assign, Share, Append, and Append To. *Append* means to attach another record, such as an activity or note, to a record. *Append to* means to be attached to a record. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)]  [Record-level privileges](#record-level-privileges).
   
-*Task-based privileges*, at the bottom of the form, give a user privileges to perform specific tasks, such as publish articles.  
+*Miscellaneous privileges*, (aka task-based privileges) at the bottom of the form, give a user privileges to perform specific miscellaneous (non-record) tasks, such as publish articles or activate business rules. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)]  [Miscellaneous privileges](miscellaneous-privileges.md).
   
 The colored circles on the security role settings page define the access level for that privilege. Access levels determine how deep or high in the organizational business unit hierarchy the user can perform the specified privilege. The following table lists the levels of access in the app, starting with the level that gives users the most access.  
   

@@ -21,7 +21,7 @@ search.app:
 # ALM accelerator for Microsoft Power Platform pipelines (preview)
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
 
 The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
@@ -80,7 +80,7 @@ The ALM Accelerator Canvas App provides an easy button layer for running the ALM
 
 ### Customize versioning of solutions when exporting / deploying the solution using the ALM Accelerator pipelines
 
-The ALM Accelerator pipelines allow you to customize the versioning of the solution when exporting / deploying the solution. The following is a description of the methods available that can be used to customize the versioning of the solution when exporting / deploying the solution. The default versioning method is to use the name specified in the [deployment pipeline YAML file](https://github.com/microsoft/coe-alm-accelerator-templates/blob/f783a0e967233cd690b5428e1864e957ddff7860/Pipelines/build-deploy-validation-SampleSolution.yml#L20)
+The ALM Accelerator pipelines allow you to customize the versioning of the solution when exporting / deploying the solution. The following is a description of the methods available that can be used to customize the versioning of the solution when exporting / deploying the solution. The default versioning method is to use the name specified in the [deployment pipeline YAML file](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-validation-SampleSolution.yml)
 
 **Use Exported versioning**
 There are scenarios where you may want to use the version number exported by the pipelines as the version number in all of the deployed environments. To achieve this you can create a variable in your export pipeline or a global variable in the variable library for the ALM Accelerator with the name UseSolutionVersionFromDataverse and a value of true. This will ensure that the version number exported in your solution is preserved in downstream environments and will also be reflected in your source control when the solution source is committed.

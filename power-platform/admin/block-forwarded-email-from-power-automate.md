@@ -26,6 +26,9 @@ Microsoft Power Platform has the capability to insert specific SMTP headers in e
 
 For more details on the Microsoft 365 Outlook connector, see: [SMTP headers](/connectors/office365/#smtp-headers). 
 
+>[!NOTE]
+>This method of exfiltration control is not available in GCC High and DoD environments.  In these clouds the x-ms-mail-* headers are not used.
+
 ## Block exfiltration of forwarded emails 
 
 Admins can set up Exchange mail flow rules to monitor or block emails sent by Power Automate and/or Power Apps using the Microsoft 365 Outlook connector. The format of the SMTP header uses a reserved phrase ‘Microsoft Power Automate’ or ‘Microsoft Power Apps’. It's inserted with the header type: ‘x-ms-mail-application’. For example:

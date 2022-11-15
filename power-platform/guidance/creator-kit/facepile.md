@@ -52,7 +52,7 @@ This code component provides a wrapper around the [Fluent UI Facepile](https://d
 |`OverflowButtonType`|To choose which type of Overflow button to appear and whether to appear or not|
 |`MaxDisplayablePersonas`|Maximum number of Persona to appear of the Facepile <br> Five is the default and recommended number|
 |`ImageShouldFadeIn`|Whether the image should have a Fade In effect while appearing|
-|`ShowAddButton`|Whether Add Button should appear in Facepile component|
+|`ShowAddButton`|Whether the Add Button should appear in Facepile component|
 |`OverflowButtonLabel`|Aria label for Overflow button|
 |`AddbuttonAriaLabel`|Aria label for Add button|
 
@@ -68,41 +68,57 @@ This code component provides a wrapper around the [Fluent UI Facepile](https://d
 |`IsImage`| Whether the persona image(ItemPersonaImage) is an Image Column of Dataverse table. <br> This property allows the component to render the image based on the type(Url or Image). True in case Image needs to referred from Dataverse table & false, in case, it's a Url or Base64 to be referred from ItemPersonaImageInfo property|
 |`ItemPersonaClickable`|Whether or not the persona should be clickable|
 
-Example Power Fx formula for `Items`:
+Example Power Fx formula for `Items` (uses the [Office 365 Users](/connectors/office365users/) connector) 
 
-  ```powerapps-dot
-    Table(
-        {
-            ItemKey: "File",
-            ItemIconName: "save",
-            ItemDisplayName: "Save",
-            ItemOverflow:true
-        },
-         {
-            ItemKey: "Delete",
-            ItemIconName: "Delete",
-            ItemDisplayName: "Delete",
-            ItemOverflow:true
-        }
+### Generate `Items` collection with photos using the Office 365 Users connector
+
+A list of users can come from any data source, but the image must be provided to the component. If your data source doesn't have images for the users, you can use the AddColumns() Power Fx function to add the correct attributes to the list and retrieve the user's image, from a list of user Ids or user principal names that map to an active user in your Azure Active Directory.
+
+Generate a collection called `UserPersonas` using [Office 365 Users connector](/connectors/office365users/), by referring to the below sample code, then pass the collection into the `Items` property of the control.
+
+```powerapps-dot
+ClearCollect(
+    UserPersonas,
+    AddColumns(
+       // Get first 10 users who have email ID - optional
+        Filter(
+            Office365Users.SearchUser({top: 10}),
+            Mail <> Blank()
+        ),
+        "ItemPersonaKey",
+        Mail,
+        "ItemPersonaName",
+        DisplayName,
+        "IsImage",
+        false,
+        "ItemPersonaImageInfo",
+        //Get base64 image data
+        Substitute(
+            JSON(
+                Office365Users.UserPhotoV2(Id),
+                JSONFormat.IncludeBinaryData
+            ),
+            """",
+            ""
+        ),
+        "ItemPersonaPresence",
+        "Away",
+        "ItemPersonaClickable",
+        true
     )
-    
-  ```
+);
+```
+> [!NOTE] 
+> The `IsImage` field is set to false because the `ItemPersonaImageInfo` coming from an image Url. To render Dataverse image fields, set `IsImage` field to true and use the `ItemPersonaImage` to pass in the image value instead.
+ 
+ 
+## Usage
 
 ### Style Properties
 
 | Property | Description |
 | -------- | ----------- |
 | `Theme` |Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
-| `Chevron` | Show or hide the down chevron on the root button |
-| `IconColor` | Optional. color of the icon on the context menu button. |
-| `HoverIconColor` | Optional. color of the icon when hovered over the context menu button. |
-| `IconSize` | Optional. In pixels, the size of the icon on the context menu button. |
-| `FontSize` | Optional. In pixels, the size of the text on the context menu button. |
-| `FontColor` | Optional. the color of the text on the context menu button. |
-| `HoverFontColor` | Optional. the color of the text when hovered over the context menu button. |
-| `FillColor` | Optional. the background color of the context menu button. |
-| `HoverFillColor` | Optional. the background color when hovered over the context menu button. |
-| `TextAlignment` | The alignment of the button text. Possible values: Center, Left or Right |
 | `AccessibilityLabel` | Screen reader aria-label |
 
 ### Event Properties
@@ -137,45 +153,6 @@ Example Power Fx formula in `OnSelect` property of `Facepile`:
       Notify("Overflow button clicked");
     )
   ```
-
-## Samples
-
-### Office 365 Users Connector
-
-To generate the input collection using Office365Users connector, to pass as items property, refer the below sample code.
-
-```powerapps-dot
-ClearCollect(
-    UserPersonas,
-    AddColumns(
-       // Get first 10 users who have email ID - optional
-        Filter(
-            Office365Users.SearchUser({top: 10}),
-            Mail <> Blank()
-        ),
-        "ItemPersonaKey",
-        Mail,
-        "ItemPersonaName",
-        DisplayName,
-        "IsImage",
-        false,
-        "ItemPersonaImageInfo",
-        //Get base64 image data
-        Substitute(
-            JSON(
-                Office365Users.UserPhotoV2(Id),
-                JSONFormat.IncludeBinaryData
-            ),
-            """",
-            ""
-        ),
-        "ItemPersonaPresence",
-        "Away",
-        "ItemPersonaClickable",
-        true
-    )
-);
-```
 
 ## Limitations
 

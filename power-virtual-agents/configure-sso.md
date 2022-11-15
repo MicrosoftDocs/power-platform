@@ -15,7 +15,9 @@ ms.collection: virtual-agent
 
 # Configure single sign-on with Azure Active Directory in Power Virtual Agents
 
-Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're logged in to the page where the bot is deployed.  
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
+Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're in to the page where the bot is deployed.  
 
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
@@ -178,7 +180,7 @@ Power Virtual Agents calls into Azure AD to perform the actual exchange.
 
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the correct bot.
 
-1. Select **Manage** on the side pane, and then go to the **Authentication** tab.
+1. Go to **Settings** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
     :::image type="content" source="media/configure-sso/auth-manage-sm.png" alt-text="Go to Manage and then Authentication." border="false":::
 

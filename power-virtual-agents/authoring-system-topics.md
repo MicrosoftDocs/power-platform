@@ -15,6 +15,8 @@ ms.reviewer: ggupta
 
 # Use system topics in Power Virtual Agents
 
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
