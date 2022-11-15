@@ -519,6 +519,7 @@ Use this app to:
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
 | Admin \| Capacity Alerts | Scheduled | Daily | This flow checks actual capacity consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved capacity, or are at 80% of approved capacity. The approved capacity can be set in the Power Platform Admin View model-driven app. |
+| Admin \| Add-Ons Alerts | Scheduled | Daily | This flow checks actual add-on consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved add-on consumption, or are at 80% of approved capacity. The approved capacity can be set in the Power Platform Admin View model-driven app. |
 | Admin \| Welcome Email v3 | Automated | when any sync flow adds a new maker to the Maker table | This flow sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table. You can customize the email sent out by the flow. |
 | App Catalog > Request Access | Instant | from App Catalog | this flow sends an access request approval to the maker. |
 

@@ -70,6 +70,7 @@ During solution import, you'll configure environment variable values. Make sure 
 |CompanyName |The name of the company to be displayed in various apps, emails, and so forth.  |
 |Individual Admin |This is the email address to which communications in the starter kit will be sent which cannot be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You'll use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow and as part of the [Admin | Welcome Email v3](core-components.md#flows-2). More information: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
+| Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform users (for example, end users that apps are shared with). You'll use this to communicate and share apps with them. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)|
 |PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including the trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
@@ -172,6 +173,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - Admin | Sync Template v3 (Model Driven Apps)
 - Admin | Sync Template v3 (Portals)
 - Admin | Sync Template v3 (PVA)
+- Admin | Sync Template v3 (PVA Usage)
 - Admin | Sync Template v3 (Solutions)
 - Admin | Sync Template v3 (Sync Flow Errors)
 - Admin | Sync Template v3
@@ -180,6 +182,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - CLEANUP - Admin | Sync Template v3 (Delete Bad Data)
 - CLEANUP - Admin | Sync Template v3 (Orphaned Makers)
 - CLEANUP - Admin | Sync Template v3 (Power Apps User Shared With)
+- CLEANUP - Admin | Sync Template v3 (PVA Usage)
 
 >[!NOTE]
 > To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 12 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
@@ -313,13 +316,12 @@ Environment variables are used to store application and flow configuration data 
 | Name | Description | Default Value |
 |------|---------------|------|
 |Admin eMail |CoE Admin eMail. Email address used in flows to send notifications to admins; this should be either your email address or a distribution list. | Not applicable |
-|CompanyName |The name of the company to be displayed in various apps, emails, and so forth. | Not applicable |
 | Admin eMail Preferred Language | The preferred language for the emails sent to the admin email alias, which is specified in the Admin eMail environment variable. | en-US |
-|Individual Admin |CThis is the email address to which communications in the starter kit will be sent which cannot be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) | Not applicable |
 |Also Delete from CoE | When running the "Admin \| Sync Template v2 (Check Deleted)" flow, delete the items from CoE (yes) or just mark deleted (no)  | Yes |
 | Command Center - Application Client ID | (optional) The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Secret | (optional) The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable.  Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)| Not applicable |
+|CompanyName |The name of the company to be displayed in various apps, emails, and so forth. | Not applicable |
 | DelayInventory | If Yes, runs a delay step to assist with the Dataverse load balancing. Only set this to No for debugging. | Yes |
 | Disabled Users are Orphaned | If an AD User has property Account enabled as false, will be considered as orphaned. | No |
 | eMail Header Style | The CSS / Style to use for eMails | [Default CSS](/power-platform/guidance/coe/code-samples/css/default-value-email-header-style) |
@@ -327,15 +329,16 @@ Environment variables are used to store application and flow configuration data 
 | eMail Body Stop | Ending HTML format for eMails | Default style provided |
 | FullInventory | Determines whether you want to update only objects that have changed, or all objects. Switching to Yes will cause the flows to inventory every single app, flow, and bot in the tenant every day, and isn't recommended for large tenants.  | No |
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)| Not applicable |
+|Individual Admin |This is the email address to which communications in the starter kit will be sent which cannot be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) | Not applicable |
+| InventoryFilter_DaysToLookBack | When not running a full inventory, we filter back this number of days and then see if the object needs updated.| 7 |
 | is All Environments Inventory |If true, (the default) the CoE inventory tracks all environments. New environments added to the inventory will have their Excuse from Inventory to false. You can opt out individual environments.  If false, the CoE inventory tracks a subset of environments. New environments added to the inventory will have their Excuse from Inventory to true. You can opt in individual environments.  | Yes |
-| Is Teams Install | DO NOT EDIT. This is used to determine whether this installation is in a production environment or Dataverse for Teams environment, and is set for you when you first install the components. | No: Core solution<br>Yes: Core for Teams solution |
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. You'll use this to communicate and share apps with them. This is needed for the inventory setup in the Admin \| Add Maker to Group flow. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) | Not applicable |
+| Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform users (for example, end users that apps are shared with). You'll use this to communicate and share apps with them. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) | Not applicable |
 |Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://make.powerautomate.com/manage/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). | Not applicable |
 |PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). | Not applicable|
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us/> | Not applicable |
 | ProductionEnvironment | Set to No if you're creating a development/test environment. This will allow some flows to set target users to the admin instead of resource owners.| Yes |
 | TenantID | Your Azure Tenant ID. Learn more: [Find Tenant ID through the Azure Portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal)| Not applicable|
-| InventoryFilter_DaysToLookBack | When not running a full inventory, we filter back this number of days and then see if the object needs updated.| 7 |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 

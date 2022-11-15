@@ -40,6 +40,7 @@ This article will help you to setup the remaining components in the Core solutio
 There are several flows which will need to be turned on for these components:  
 
 - [Admin | Capacity Alerts](core-components.md#flows-2)
+- [Admin | Add-Ons Alerts](core-components.md#flows-2)
 - [Admin | Welcome Email v3](core-components.md#flows-2)
 - [App Catalog > Request Access](core-components.md#flows-2)
 
