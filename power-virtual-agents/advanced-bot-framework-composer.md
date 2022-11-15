@@ -78,7 +78,7 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
 - Power Virtual Agents global variables are accessed in Composer by using the `virtualagent` scope. This scope won't appear in Composer's property reference menu, but you can access it by entering an expression directly.
 
-- Publishing content in Composer makes the changes available for testing, but does not automatically publish your Power Virtual Agents bot. Use the [Publish](../publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+- Publishing content in Composer makes the changes available for testing, but does not automatically publish your Power Virtual Agents bot. Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
 
 - Use a **Begin a Power Virtual Agents Topic** action to call Power Virtual Agents topics in Composer.
 
