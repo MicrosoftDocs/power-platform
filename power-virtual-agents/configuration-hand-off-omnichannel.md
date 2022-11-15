@@ -18,7 +18,7 @@ When your customers need to speak with a human agent, your bot can seamlessly ha
 
 When your bot hands off a conversation, it shares the full history of the conversation and all variables collected in the interaction. Your omnichannel service routes incoming escalations to the right queue, and a live agent can seamlessly resume the conversation. For more information about how to use hand-off in bot conversations, see [Hand off to a live agent](./advanced-hand-off.md).
 
-You can also enable single sign-on (SSO) to allow chatbots to sign users in if they're logged in to the page where the bot is deployed. For more information, see [Configure single sign-on](configure-sso.md).
+You can also enable single sign-on (SSO) to allow chatbots to sign users in if they're logged in to the page where the bot is deployed. For more information, see [Configure single sign-on](configure-sso.md) and [Pass authentication token to bot during single sign-on in live chat](/dynamics365/customer-service/pass-auth-token-sso-live-chat).
 
 ## Prerequisites
 
