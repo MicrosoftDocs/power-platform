@@ -36,7 +36,7 @@ Microsoft Power Platform has a rich ecosystem of connectors based on Azure Activ
 Note that Power Platform tenant isolation is different from Azure AD-wide tenant restriction. It *doesn't* impact Azure AD-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or SharePoint. 
 
 > [!WARNING]
-> There is a [known issue](#known-issues)  with [Azure DevOps connector](../connectors/connector-reference.md) that results in tenant isolation policy to not be > enforced for connections established using this connector. If an insider attach vector is a concern, it is recommended to limit using the connector or its actions 
+> There is a [known issue](#known-issues)  with [Azure DevOps connector](/connectors/visualstudioteamservices/) that results in tenant isolation policy to not be > enforced for connections established using this connector. If an insider attach vector is a concern, it is recommended to limit using the connector or its actions 
 > using data policies.
 
 The default configuration in Power Platform with tenant isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Azure AD credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn tenant isolation **On**. 
@@ -162,7 +162,7 @@ Selecting the failed run will show details of the failed flow run.
 
 ## Known issues
 
-1. [Azure DevOps connector](../connectors/connector-reference.md) uses AAD authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration is not from AAD, the tenant isolation policy is not enforced. As a mitigation, we recomend using other types of [data policies](../wp-data-loss-prevention) to limit the use of the connector or its actions.
+1. [Azure DevOps connector](/connectors/visualstudioteamservices) uses AAD authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration is not from AAD, the tenant isolation policy is not enforced. As a mitigation, we recomend using other types of [data policies](/wp-data-loss-prevention.md) to limit the use of the connector or its actions.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
