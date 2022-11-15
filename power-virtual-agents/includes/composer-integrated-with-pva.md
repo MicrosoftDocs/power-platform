@@ -1,2 +1,2 @@
 > [!NOTE]
-> Many of the features discussed on this page are now available within Power Virtual Agents, and no longer require opening your bot in Composer. To learn how to try these new features, see [Overview of the Power Virtual Agents preview](../preview/overview.md).
+> Power Virtual Agents now [supports these features](../preview/overview.md) without Composer.
