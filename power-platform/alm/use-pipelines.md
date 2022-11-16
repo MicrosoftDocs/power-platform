@@ -76,7 +76,7 @@ Once installed the Deployment Pipelines Configuration application will appear in
    :::image type="content" source="media/pipeline-target-stages.png" alt-text="Pipeline target stages":::
 
 
-### Grant access to edit or run pipelines
+## Grant access to edit or run pipelines
 
 Pipeline security is managed within the host environment by assigning security roles. Additionally, users must currently have access to all environments associated with a pipeline in order to create or run a it. 
 
@@ -85,7 +85,7 @@ When you installed the Power Platform Pipelines application, two security roles 
 - Deployment Pipeline User. Has privileges to run pipelines that have been shared with them.
 - Deployment Pipeline Administrator. Has full control over all pipeline configuration, without needing system administrator security role membership.
 
-#### Share with Makers
+### Share with Makers
 The Deployment Pipeline User security role grants access to run one or more pipelines. It does not grant access to create, edit, or delete pipelines. Deployment Pipeline Users will not see the host environment within the environment picker in Power Apps or Power Automate, or otherwise need to be aware of it.
 
 1. Assign makers the **Deployment Pipeline User** security role within the host environment. This security role is installed with the Power Platform Pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
@@ -93,11 +93,22 @@ The Deployment Pipeline User security role grants access to run one or more pipe
 1. Makers must also have permission to export solutions from the source development environment(s), as well as permission to import solutions to the target test and production environments for which the pipeline deploys to. Note that we later intend to support service principal based deployments on-behalf of makers.
 
 
-#### Share with Pipeline Administrators
+### Share with Pipeline Administrators
 Grants full permissions to all pipelines (and tables which store Pipeline information) within the host environment. Also grants access to run all Pipelines associated with the current host. Does not grant permissions to perform other activities within the host environment.
 
 1. Assign the **Deployment Pipeline Administrator** security role to users or Azure Active Directory groups within the host environment. This security role is installed with the Power Platform Pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
 1. Pipeline administrators must also have access to all development, test, and production environments that are associated with pipelines they create or run. 
+
+## Centrally manage and monitor deployments
+The Pipeline configuration app and Host environment provide many other benefits such as:
+a. Centrally viewing all deployment activity (filtered views are also accessible within the maker experience for a given pipeline and solution)
+b. Audit where a certain solution / version is deployed as well as who initiated the request
+c. View error logs, validation results, and deployment settings (environment variables and connections provided during deployment)
+c. Retain backups of all solution artifacts by version
+d. Schedule bulk delete jobs to remove unwanted data and conserve database capacity //[link needed]
+e. A dashboard allows you to visualize deployment metrics. You may also build your own reports using data stored within the host.
+
+Note: we soon plan to automatically store unmanaged solutions, in addition to currently storing managed solutions within the host. This paves the way for enabling experiences to install solutions not already present with your development environment as well as simplifying many professional developer focused tasks for retrieving and unpacking solutions. 
 
 
 ## Next steps
