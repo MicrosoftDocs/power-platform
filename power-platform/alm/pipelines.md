@@ -31,7 +31,7 @@ Pipelines significantly **reduce** the **effort** and **domain knowledge** previ
 
 ## Admins centrally manage and govern pipelines
 
-Pipelines enable admins to centrally govern all citizen-led and pro-dev-led projects at scale - with less effort. Admins set up the appropriate safeguards that govern and facilitate solution development, testing, and delivery across the organization. Other admin benefits include:
+Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects at scale - with less effort. Admins set up the appropriate safeguards that govern and facilitate solution development, testing, and delivery across the organization. Other admin benefits include:
 
 - **Lower total cost of ownership**. 
   - Pipelines significantly **improve maker, developer and admin productivity**, enabling your business solutions to **come to market faster**, with higher **quality**, and through a safe and governed process. 
