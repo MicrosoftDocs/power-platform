@@ -24,36 +24,37 @@ Pipelines aim to democratize application lifecycle management (ALM) for Power Pl
 :::image type="content" source="media/deployment-pipelines.png" alt-text="Example of the deployment pipelines feature":::
 
 
-Pipelines significantly **reduce** the **effort** and **domain knowledge** previously required to **realize the ROI** (return on investment) from adopting healthy, enterprise-grade, automated ALM processes within your team or throughout your entire company. Pipelines simplify ALM for everyone:
-1. **Admins** can now easily configure automated deployment pipelines in minutes (compared to days or weeks). 
-2. **Makers** have an intuitive user experience for deploying their solutions with just a few clicks. 
+Pipelines significantly **reduce** the **effort** and **domain knowledge** previously required to **realize the ROI** (return on investment) from adopting healthy, automated ALM processes within your team or organization. 
+1. **Admins** easily configure automated deployment pipelines in minutes (compared to days or weeks). 
+2. **Makers** have an intuitive user experience for deploying their solutions in a few clicks. 
 3. **Professional developers** can (optionally) run Pipelines using their preferred tools such as the command line interface (CLI).
 
 ## Admins centrally manage and govern pipelines
 
-Admins centrally manage all citizen-led and pro-dev-led projects at scale. Admins set up the appropriate safeguards that govern all low-code solution development within their organization. Power Platform pipelines central administration benefits include:
+Pipelines enable admins to centrally govern all citizen-led and pro-dev-led projects at scale - with less effort. Admins set up the appropriate safeguards that govern and facilitate solution development, testing, and delivery across the organization. Other admin benefits include:
 
 - **Lower total cost of ownership**. 
-  - Pipelines significantly **improve maker, developer and admin productivity**, enabling your business solutions to **come to market faster**, with better **quality**, better **visibility** and **control** for admins, and with **far less effort**. 
+  - Pipelines significantly **improve maker, developer and admin productivity**, enabling your business solutions to **come to market faster**, with higher **quality**, and through a safe and governed process. 
   - **Minimal effort** to implement custom-tailored _change management processes_ across your organization or team.
-  - Pipelines handle the complex background processing and ongoing maintenance so that IT and development teams can **spend more time creating** valuable business solutions **vs developing and maintaining custom processes** to deploy and administer solutions. 
-- Rest easy with **safeguards automatically applied by the system**. Soon you'll even be able to apply your own custom business logic.
-- Create a pipeline once then share it with multiple groups of makers, developers, and/or admins. A **Pipeline can be run** (by those with access) from **within any environment** associated with the pipeline.
-- **Pipelines enable admins** to **scale at their own pace**. Regardless of where you're at in your ALM journey, Pipelines allow you benefit from ALM / CI/CD - without needing to comprehend, license, and adopt more sophisticated DevOps tooling. 
-  - Rest assured, you can later extend Power Platform Pipelines to accomodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. 
-- Achieve compliance, safety, monitoring, and automation goals with **customizations and audit logs saved automatically and easily accessible** by admins at any time.
-- Leverage **out of the box analytics** and/or create your own reports.
-  - Central storage makes reporting much simpler. 
+  - **Save time and money**. The **system handles the heavy lifting** and ongoing maintenance so you don't have to. 
+- **Scale ALM at your own pace**. 
+  - Regardless of where you're at in your ALM journey, you can later extend Power Platform Pipelines to accomodate your evolving business needs. We aim for this upward transition to be as **seamless and effortless** as possible. 
+- Achieve compliance, safety, monitoring, and automation goals with **customizations and audit logs saved automatically and easily accessible**.
+- **Out of the box analytics** and the ability to create your own reports provides **full visibility** within a **central location**.
+  - The system even stores backups of all your solutions!
+ 
 
 
 ## Makers run pre-configured pipelines
 
-- Once pipelines are in place, makers can initiate (or soon request with approval) in-product deployments. This ensures any maker can build, share, and update apps, flows, or any other customization in a healthy and compliant manner.
-- **Citizen developers view this as a guided change management process** - without any prior knowledge of automated ALM processes or developer focused DevOps systems and SDLC (software development lifecycle) best practices. 
-  - Such **complexities are not exposed to citizen developers**, regardless of how sophisticated the processes running in the background might be.
-- Solutions are **pre-validated** against the target environment to prevent mistakes and **improve success rates**. 
-  - For example, missing dependencies and other **issues are detected before deployment** and makers are prompted in-context of where they can take action.
-- **Connections** and **environment variables** are provided upfront and validated before the deployment begins. This helps ensure applications and automations are deployed without needing manual post-processing steps, and are connected to the appropriate data sources within each environment. 
+- Once pipelines are in place, makers can initiate **in-product deployments** with a just **few clicks**. 
+  - They do so **directly within their development environment(s)**
+- No prior knowledge of ALM processes or systems required. Citizen developers often view Pipelines as a **guided change management process**
+- Solution deployments are **pre-validated** against the target environment to prevent mistakes and **improve success rates**. 
+  - For example, missing dependencies and other **issues are detected before deployment** and makers are immidiately guided to take the appropriate action.
+- **Connections** and **environment variables** are provided upfront and validated before the deployment begins. 
+  - This helps ensure applications and automations are deployed without needing manual post-processing steps, and are connected to the appropriate data sources within each environment. 
+  - Admins can even pre-configure certain connections that will be used.
 
 ## Developers can use the same pipelines
 Professional developers are **more productive** with Pipelines now handling the complex background operations. Developers can tell the system _what they want to accomplish_ instead of executing the various underlying tasks necessary to accomplish the same goal. Using the Power Platform CLI (command line interface), developers can:
