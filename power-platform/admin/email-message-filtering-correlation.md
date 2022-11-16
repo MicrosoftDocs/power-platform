@@ -4,7 +4,7 @@ description: Use email message filtering and correlation to specify which emails
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 2/4/2022
+ms.date: 11/16/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
