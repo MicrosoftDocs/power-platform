@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: jimholtz
 contributors:
   - mayadumesh
-  - sabinn-msft
+  - NHelgren
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
@@ -46,7 +46,7 @@ Whether you’re a compliance officer, a decision-maker considering Dynamics 365
 
 Every journey needs a roadmap. Your roadmap to GDPR compliance begins with focusing on four key steps, and Microsoft Dynamics 365 provides robust tools and solutions for tackling each step. Learn more about how Microsoft products and services can help you on the road to GDPR compliance. 
 
-### Asses your organization
+### Assess your organization
 
 **Discover**
 

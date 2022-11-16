@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/16/2022
+ms.date: 10/10/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -31,7 +31,7 @@ For more information about permissions and how to select them, see [Authenticati
 Authorization: Bearer eyJ0eXAiOi...
 Host: api.bap.microsoft.com
 Accept: application/json
-GET https://api.bap.microsoft.com/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/{environmentIdGuid}/addAppUser?api-version=2020-10-01
+POST https://api.bap.microsoft.com/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/{environmentIdGuid}/addAppUser?api-version=2020-10-01
 ```
 
 ## Request headers

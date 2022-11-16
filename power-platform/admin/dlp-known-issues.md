@@ -30,7 +30,7 @@ Below are known limitations to know about when leveraging our suite of data loss
 - Solution flows need to be activated once, to create a runtime representation, before they can be targeted for DLP enforcement exemption using the [Set-PowerAppDlpPolicyExemptResources cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/set-powerappdlppolicyexemptresources). If activation of the flow isn't allowed as-is because of a current DLP violation, then you could make changes to avoid violations, save, activate, add the exemption, then edit as desired with the exemption active.
 
 ## Child flows
-- Blocking the [HTTP with Azure AD](/connectors/webcontents/) connector will also block child flows because those child flows are called using the same HTTP connector technology.
+- Blocking the HTTP connector will also block child flows because those child flows are called using the same HTTP connector technology.
 - If a child flow violates a DLP policy, it will not result in the parent flow becoming non-compliant.
 
 ### Desktop flows

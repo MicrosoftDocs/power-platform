@@ -25,7 +25,7 @@ When your bot hands off a conversation, it shares the full history of the conver
 - Have a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 - Environments:
   - Your bot environment and omnichannel environment must be in the same [geographical region](./data-location.md#data-locations).
-  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Europe, Asia, or Australia geographies](./data-location.md#data-locations).
+  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Europe, Asia, United Kingdom, or Australia geographies](./data-location.md#data-locations).
 - [Register an application with Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application).
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
 
@@ -34,7 +34,7 @@ When your bot hands off a conversation, it shares the full history of the conver
 > [!NOTE]
 > If you connected your bot to omnichannel engagement before November 2021, the settings on the **Omnichannel** tile will look as if they haven't been configured. This is a known issue. It doesn't affect the bot or the omnichannel connection, which will continue to run normally. Select **Enable** to refresh the settings and show the actual connection details.
 
-1. In Power Virtual Agents, edit your bot. In the left panel, select **Manage**, **Agent transfers**, and then select the **Omnichannel** tile.
+1. In Power Virtual Agents, edit your bot. In the left panel, select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-settings.png" alt-text="The bot management Agent transfers page.":::
 
@@ -100,7 +100,7 @@ If your bot doesn't have omnichannel capabilities enabled, the message will alwa
 
 ## Manage your bot's omnichannel capabilities
 
-Select **Manage**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect or disable your bot, refresh the connection, or open the Omnichannel admin center to view the connection details.
+Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect or disable your bot, refresh the connection, or open the Omnichannel admin center to view the connection details.
 
 ### Disconnect your bot from omnichannel or disable the omnichannel connection
 

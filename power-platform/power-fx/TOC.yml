@@ -262,6 +262,8 @@
             href: reference/function-parsejson.md
           - name: Patch
             href: reference/function-patch.md
+          - name: PDF
+            href: reference/function-pdf.md
           - name: Pi
             href: reference/function-trig.md
           - name: PlainText

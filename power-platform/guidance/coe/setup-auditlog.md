@@ -87,7 +87,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-1. Go to [make.powerapps.com](https://make.powerapps.com) > **Data** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
+1. Go to [make.powerapps.com](https://make.powerapps.com) > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
 1. Select **Edit**.
 
   ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
@@ -117,9 +117,9 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, https://manage.office365.us for a GCC high tenant and https://manage.protection.apps.mil for a DoD tenant.
 
-1. Copy the **Redirect URL** into your text document in Notepad.
-
 1. Select **Update Connector**.
+
+1. Copy the **Redirect URL** into your text document in Notepad.
 
 > [!NOTE]
 > If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy.
@@ -165,7 +165,7 @@ You should see a (200) status returned, which means the query was successful.
 > If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
 >
-> - Are audit logs enabled, and do you have permission to view the audit logs? Check [protection.office.com](https://protection.office.com) > **Search** > **Audit Log Search**.
+> - Are audit logs enabled, and do you have permission to view the audit logs? Check [compliance.office.com](https://compliance.microsoft.com) > **Solutions** > **Audit** > **Search**.
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Azure AD app registration?
