@@ -4,7 +4,7 @@ description: Use email message filtering and correlation to specify which emails
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 2/4/2022
+ms.date: 11/16/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -19,6 +19,11 @@ search.app:
 
 With server-side synchronization and Dynamics 365 App for Outlook, you can automatically create email activities in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)). These apps are based on received email messages. 
 
+> [!IMPORTANT]
+> Only emails directly within the Inbox folder of a mailbox are evaluated for automatic tracking. If an email is in a subfolder, the item would only be processed if the folder is configured for [folder-level tracking](../admin/configure-outlook-exchange-folder-level-tracking.md). If an email message was in a subfolder when Server-Side Synchronization processed the mailbox, moving the email back into the Inbox folder will not result in the email being processed during the next sync cycle. Server-Side Sync tracks the received date of the last email that was processed so during the next sync cycle it can evaluate only the emails received after that date/time. To process an email that was not within the Inbox folder, you can use one of the following options:
+> - Manually track the email using [Outlook category tracking](use-outlook-category-track-appointments-emails.md) or [Dynamics 365 App for Outlook](/power-apps/user/use-outlook-app)
+> - Update the Process Emails From date on the mailbox record to a date prior to when the email was received. This field is not exposed on the Mailbox record form by default.
+> - Click the [Test & Enable Mailbox](connect-exchange-online.md#test-the-configuration-of-mailboxes) button within the mailbox record in Dynamics 365. 
 
 With automation to track email messages users can select a filter option that determines which email messages are tracked. 
 
