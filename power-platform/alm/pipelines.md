@@ -41,7 +41,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
   - Regardless of where you're at in your ALM journey, you can later extend Power Platform Pipelines to accomodate your evolving business needs. We aim for this upward transition to be as **seamless and effortless** as possible. 
 - Achieve compliance, safety, monitoring, and automation goals with **customizations and audit logs saved automatically and easily accessible**.
 - **Out of the box analytics** and the ability to create your own reports provides **full visibility** within a **central location**.
-  - The system even stores backups of all your solutions!
+
  
 
 
