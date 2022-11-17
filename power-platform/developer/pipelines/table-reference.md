@@ -14,10 +14,11 @@ search.app:
 ---
 # Power Platform Pipeline (Preview) table reference
 
-This topic contains the table definitions used in the Power Platform Pipeline (Preview) solution.
+This topic contains the table definitions used in the Power Platform Pipeline (Preview) solution. More information: [What are Power Platform pipelines?](../../alm/pipelines.md)
 
 > [!NOTE]
-> This is a preview feature and the table definitions may change.
+> - This is a preview feature and the table definitions might change.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 :::image type="content" source="media/pipeline-tables.png" alt-text="Diagram showing relationship between pipeline tables":::
 
