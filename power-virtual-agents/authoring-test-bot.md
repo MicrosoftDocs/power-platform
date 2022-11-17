@@ -14,6 +14,10 @@ ms.collection: virtual-agent
 
 # Test your Power Virtual Agents bot
 
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
+Select the version of Power Virtual Agents you're using here:
+
 > [!div class="op_single_selector"]
 >
 > - [Power Virtual Agents web app](authoring-test-bot.md)
