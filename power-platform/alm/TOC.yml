@@ -69,7 +69,7 @@
           items:
             - name: What are Power Platform pipelines?
               href: pipelines.md
-            - name: Create Power Platform pipelines
+            - name: Set up pipelines
               href: use-pipelines.md
             - name: Run a pipeline 
               href: run-pipeline
