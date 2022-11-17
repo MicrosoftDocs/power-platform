@@ -15,7 +15,9 @@ ms.custom: template-how-to
 Create and run pipelines to easily deploy solutions to environments.
 
 > [!IMPORTANT]
-> This is a preview feature.
+> - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
+> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Create a pipeline
 
