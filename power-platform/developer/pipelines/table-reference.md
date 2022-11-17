@@ -4,8 +4,8 @@ description: "Includes schema information for tables used in the Power Platform 
 ms.date: 11/11/2022
 ms.service: powerapps
 ms.topic: reference
-author: KumarVivek
-ms.author: kvivek
+author: JimDaly
+ms.author: jdaly
 search.audienceType: 
   - developer
 search.app: 
@@ -14,10 +14,11 @@ search.app:
 ---
 # Power Platform Pipeline (Preview) table reference
 
-This topic contains the table definitions used in the Power Platform Pipeline (Preview) solution.
+This topic contains the table definitions used in the Power Platform Pipeline (Preview) solution. More information: [What are Power Platform pipelines?](../../alm/pipelines.md)
 
 > [!NOTE]
-> This is a preview feature and the table definitions may change.
+> - This is a preview feature and the table definitions might change.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 :::image type="content" source="media/pipeline-tables.png" alt-text="Diagram showing relationship between pipeline tables":::
 
@@ -138,7 +139,6 @@ Stores background operation information for a Deployment Stage Run.
 ### See Also
 
 [Overview of Power Platform pipelines (preview)](../../alm/pipelines.md)<br />
-[Set up Power Platform pipelines (preview)](../../alm/set-up-pipelines.md)
 
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
