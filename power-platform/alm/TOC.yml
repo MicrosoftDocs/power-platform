@@ -70,7 +70,7 @@
             - name: What are Power Platform pipelines?
               href: pipelines.md
             - name: Create Power Platform pipelines
-              href: use-pipelines.md
+              href: set-up-pipelines.md
             - name: Run a pipeline 
               href: run-pipeline
     - name: ALM for developers
