@@ -72,7 +72,7 @@
             - name: Set up pipelines
               href: set-up-pipelines.md
             - name: Run a pipeline 
-              href: run-pipeline
+              href: run-pipeline.md
     - name: ALM for developers
       href: alm-for-developers.md
       items:

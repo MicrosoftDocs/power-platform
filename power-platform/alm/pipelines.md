@@ -68,7 +68,6 @@ Professional developers are more productive with pipelines now handling the comp
   - With pipelines, developers simply provide the required parameters and the system orchestrates all the end-to-end deployment operations in compliance with the organizational policies.
   - No need to connect to multiple environments, export solutions, download solution files, manually create connections and populate deployment settings files, import solutions, or handle various other tasks that were required previously.
 
-
 ## Next steps
 
 [Use Power Platform pipelines (preview)](use-pipelines.md)

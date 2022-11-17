@@ -21,7 +21,7 @@ Pipelines automate solution deployments between Power Platform environments and 
 - You must have access to run a pipeline.
 - You must have privileges to import solutions to the target environment(s) associated with a pipeline.
 
-For more information about these prerequisites, go to [Set up Power Platform pipelines (preview)](use-pipelines.md)
+For more information about these prerequisites, go to [Set up Power Platform pipelines (preview)](set-up-pipelines.md)
 .
 ## Run a pipeline
 
