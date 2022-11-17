@@ -14,11 +14,6 @@ ms.custom: template-how-to
 
 Create and run pipelines to easily deploy solutions to environments.
 
-> [!IMPORTANT]
-> - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
-
 ## Create a pipeline
 
 Power Platform administrators can create one or more pipelines, associate any number of environments, then share access with those that will administer or run pipelines.
@@ -120,4 +115,4 @@ The pipeline configuration app and host environment provide many other benefits 
 
 ## Next steps
 
-[Solution concepts](solution-concepts-alm.md)
+[Run a pipeline](run-pipeline.md)
