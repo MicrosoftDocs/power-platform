@@ -51,8 +51,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
 
 ## Makers run pre-configured pipelines
 
-- Once pipelines are in place, makers can initiate in-product deployments with a just few clicks. 
-  - They do so directly within their development environment(s).
+Once pipelines are in place, makers can initiate in-product deployments with a just few clicks.  They do so directly within their development environment(s). Other benefits to makers include:
 - No prior knowledge of ALM processes or systems required. Citizen developers often view pipelines as a guided change management process.
 - Solution deployments are pre-validated against the target environment to prevent mistakes and improve success rates. 
   - For example, missing dependencies and other issues are detected before deployment and makers are immediately guided to take the appropriate action.

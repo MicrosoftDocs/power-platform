@@ -93,11 +93,11 @@ When you installed the Power Platform pipelines application, two security roles 
 
 ### Share pipelines with makers
 
-The **Deployment Pipeline User** security role grants access to run one or more pipelines. It does not grant access to create, edit, or delete pipelines. Users with the Deployment Pipeline User security role won't see the host environment within the environment picker in Power Apps or Power Automate, or otherwise need to be aware of it.
+The **Deployment Pipeline User** security role grants access to run one or more pipelines. It does not grant access to create, edit, or delete pipelines. Users with the Deployment Pipeline User security role won't see the host environment within the environment picker in Power Apps or Power Automate, or otherwise need to be aware of it. To share pipelines:
 
-1. Assign makers the **Deployment Pipeline User** security role within the host environment. This security role is installed with the Power Platform pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
-1. In the Deployment Pipeline Configuration app, **share** pipeline records with makers (or Azure Active Directory groups). More information: [Share rows with a user or team](/power-apps/user/share-row)
-1. Makers must also have permission to export solutions from the source development environment(s), as well as permission to import solutions to the target test and production environments for which the pipeline deploys to.
+- Assign makers the **Deployment Pipeline User** security role within the host environment. This security role is installed with the Power Platform pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
+- In the deployment pipeline configuration app, **Share** pipeline records with makers (or Azure Active Directory groups). More information: [Share rows with a user or team](/power-apps/user/share-row)
+- Makers must also have privileges to export solutions from the source development environment(s), as well as privileges to import solutions to the target test and production environments for which the pipeline deploys to. By default, system customizer and environment maker roles have these privileges.
 
 ### Share with pipeline administrators
 
