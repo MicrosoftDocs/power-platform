@@ -1,5 +1,5 @@
 ---
-title: Create Power Platform pipelines 
+title: Set up Power Platform pipelines 
 description: Learn how to create, configure, share, and manage Power Platform pipelines.
 author: caburk
 ms.author: matp
@@ -8,16 +8,11 @@ ms.topic: how-to
 ms.date: 11/17/2022
 ms.custom: template-how-to
 ---
-# Setup Power Platform pipelines (preview)
+# Set up Power Platform pipelines (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Create and run pipelines to easily deploy solutions to environments.
-
-> [!IMPORTANT]
-> - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Create a pipeline
 
@@ -120,4 +115,4 @@ The pipeline configuration app and host environment provide many other benefits 
 
 ## Next steps
 
-[Solution concepts](solution-concepts-alm.md)
+[Run a pipeline](run-pipeline.md)
