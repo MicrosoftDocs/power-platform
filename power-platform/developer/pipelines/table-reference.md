@@ -4,8 +4,8 @@ description: "Includes schema information for tables used in the Power Platform 
 ms.date: 11/11/2022
 ms.service: powerapps
 ms.topic: reference
-author: KumarVivek
-ms.author: kvivek
+author: JimDaly
+ms.author: jdaly
 search.audienceType: 
   - developer
 search.app: 
