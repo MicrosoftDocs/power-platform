@@ -70,6 +70,6 @@ Professional developers are more productive with pipelines now handling the comp
 
 ## Next steps
 
-[Use Power Platform pipelines (preview)](use-pipelines.md)
+[Set up Power Platform pipelines (preview)](set-up-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
