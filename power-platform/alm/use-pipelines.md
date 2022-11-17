@@ -1,5 +1,5 @@
 ---
-title: Create Power Platform pipelines 
+title: Set up Power Platform pipelines 
 description: Learn how to create, configure, share, and manage Power Platform pipelines.
 author: caburk
 ms.author: matp
@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 11/17/2022
 ms.custom: template-how-to
 ---
-# Setup Power Platform pipelines (preview)
+# Set up Power Platform pipelines (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
