@@ -12,14 +12,20 @@ ms.custom: template-how-to
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Pipelines automate solution deployments between Power Platform environments and facilitate healthy application management practices with minimal effort. 
+Pipelines automate solution deployments between Power Platform environments and facilitate healthy application management practices with minimal effort.
 
-### Prerequisites
-- One or more Pipelines must already be created and associated with the environment being used for development
-- The development environment must have Dataverse (or Dynamics 365 Customer Engagement)
-- You must have access to run a pipeline
-- You must have permission to import solutions to the target environment(s) associated with a pipeline
+> [!IMPORTANT]
+> This is a preview feature.
 
+## Prerequisites
+
+- One or more pipelines must already be created and associated with the environment that's used for development.
+- The development environment must have Microsoft Dataverse or Dataverse plus Dynamics 365 Customer Engagement apps.
+- You must have access to run a pipeline.
+- You must have privileges to import solutions to the target environment(s) associated with a pipeline.
+
+For more information about these prerequisites, go to [Setup Power Platform pipelines (preview)](use-pipelines.md)
+.
 ## Run a pipeline
 
 1. Sign into a Power Platform environment (make.powerapps.com or make.powerautomate.com) and select your development environment.
@@ -32,13 +38,13 @@ Pipelines automate solution deployments between Power Platform environments and 
 1. Select **Deploy**. This initiates an automated deployment to the target environment.
 
 > [!NOTE]
-> You must complete the deployment stages in order. For example, you can't deploy version 1.0.0.1 to production before it has been deployed to test. After deploying to test, that same exact solution that was deployed will then be deployed to production –even if afterward you made changes to the solution without incrementing the version.
+> You must complete the deployment stages in order. For example, you can't deploy version 1.0.0.1 to production before it has been deployed to test. After deploying to test, that same exact solution that was deployed will then be deployed to production, even if afterward you made changes to the solution without incrementing the version.
 
 ## Monitor pipeline deployments
 
 The **Pipelines** page in the **Solutions** area displays all deployment activity for the current pipeline and solution.
 
-Select a pipeline to view additional detail as well as error information if there was a failure.
+Select a pipeline to view more detail and error information if there was a failure.
 :::image type="content" source="media/pipeline-monitoring.png" alt-text="Monitoring a pipeline":::
 
 ## Next steps

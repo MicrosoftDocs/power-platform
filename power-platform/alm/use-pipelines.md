@@ -5,7 +5,7 @@ author: caburk
 ms.author: matp
 ms.service: powerapps
 ms.topic: how-to
-ms.date: 11/04/2022
+ms.date: 11/17/2022
 ms.custom: template-how-to
 ---
 # Setup Power Platform pipelines (preview)
@@ -14,28 +14,33 @@ ms.custom: template-how-to
 
 Create and run pipelines to easily deploy solutions to environments.
 
+> [!IMPORTANT]
+> This is a preview feature.
+
 ## Create a pipeline
 
 Power Platform administrators can create one or more pipelines, associate any number of environments, then share access with those that will administer or run pipelines.
 
 ### Prerequisites
 
-- Four environments are recommended, but you can use as few as three Power Platform environments to create a pipeline. Unless otherwise stated, all environments that participate in pipelines should be enabled as managed and have a Microsoft Dataverse database.
+- Four environments are recommended, but you can use as few as three Power Platform environments to create a pipeline.
+- Unless otherwise stated, all environments that participate in pipelines must be enabled as a managed environment and have a Microsoft Dataverse database. More information: [Managed environments overview](../admin/managed-environment-overview.md)
 - Power Platform administrator or Dataverse system administrator role.
 
 Before you begin, you’ll need to choose which environments will participate in pipelines. A common set-up might include the following environments:
 
 - **Host environment (required)**. This special-purpose environment acts as the **storage** and management plane for all pipeline configuration, security, and run history. 
    - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated environment** separate from development, testing, and production environments. 
-   - If desired, you may configure multiple different hosts within a tenant, such as for separately managing Pipelines for different business organizations or geographic locations. One host for the entire tenant is also acceptable.
-- **Development (required)**. This is where you’ll develop solutions. "Development" refers to purpose you'll assign to the environment, not the type of environment that can be used.
+   - If desired, you may configure multiple different hosts within a tenant, such as for separately managing pipelines for different business organizations or geographic locations. One host for the entire tenant is also acceptable.
+- **Development (required)**. This is where you’ll develop solutions. Notice that "Development" refers to the *purpose* you'll assign to the environment, not the *type* of environment that can be used.
 - **QA environment (optional).** This is where you’ll deploy solutions for testing prior to moving them to production.
 - **Production (required)** The final destination for a deployment pipeline. This is where end users will run the apps that are deployed. 
 
 > [!TIP]
 > Use environment names that indicate their purpose. For example, *Contoso Host*, *Contoso Development*, *Contoso QA*, and so forth.
 
-### Install the Power Platform Pipelines application in your host environment
+### Install the Power Platform pipelines application in your host environment
+
 This step is only required for the initial host setup. You may skip to the next section if you already have access to a host environment where you'll create pipelines.
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Environments** > **New**, and create a new environment with a Dataverse database or Dataverse plus Dynamics 365 Customer Engagement apps database. Be sure to choose the same region that your development, QA, and production environments are created in.
@@ -44,14 +49,14 @@ This step is only required for the initial host setup. You may skip to the next 
 1. Enter the required information, then select **Continue**.
 1. Select the appropriate host environment, accept the terms, then select **Install**.
    > [!IMPORTANT]
-   > You only need to install the Deployment Pipelines application in the host environment. You don't need to install it in other environments, such as development, QA or production, that will be associated with your pipelines.
+   > You only need to install the deployment pipelines application in the host environment. You don't need to install it in other environments, such as development, QA or production environments that will be associated with your pipelines.
 
-Once installed the Deployment Pipelines Configuration application will appear in the list of installed apps.
+Once installed the deployment pipelines configuration application will appear in the list of installed apps.
 
 ### Configure a deployment pipeline
 
-1. Copy and paste the Environment IDs of all environments participating in the pipelines to a clear text editor such as notepad. You’ll need these later. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
-1. Once the Deployment Pipeline package installation has completed, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), then select the dedicated host environment (where you’ve installed the application).
+1. Copy and paste the environment IDs of all environments participating in the pipelines to a clear text editor such as notepad. You’ll need these later. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
+1. Once the **Deployment Pipeline** package installation has completed, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), then select the dedicated host environment (where you installed the application).
 1. **Play** the **Deployment Pipeline Configuration** app.
 1. Select **Environments** on the left pane, and then select **New** to create the environment records in Dataverse:
    - **Name**. Enter the name for the environment record, it's a good idea to include the same name as the actual environment, such as **Contoso Dev**.
@@ -63,53 +68,53 @@ Once installed the Deployment Pipelines Configuration application will appear in
 1. Select **Pipelines** on the left navigation pane, and then select **New** to create a new deployment pipeline. 
    - **Name**. Enter a name for the pipeline, such as *Contoso Standard Deployment Pipeline* or *Contoso Hotfix Pipeline*.
    - **Description**. Optionally, enter a meaningful description for the pipeline.
-1. Within the **Linked Development Environments grid**, select **Add Existing Development Environment**, then associate one or more development environments. Note that a pipeline must have at lease one development environment and one stage before it can be run.
-2. Within the **Deployment Stages** gird, select **New Deployment Stage.** 
+1. Within the **Linked Development Environments** grid, select **Add Existing Development Environment**, then associate one or more development environments. Note that a pipeline must have at least one development environment and one stage before it can be run.
+2. Within the **Deployment Stages** grid, select **New Deployment Stage.** 
    :::image type="content" source="media/pipeline-stages-icon.png" alt-text="Pipeline stages icon":::
 
 1. Enter the details for each stage:
    - **Name**: The name of the stage. 
    - **Description** (optional): Optional description for the stage.
-   - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you would add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
-   - **Target Deployment Environment**: This is the target environment for which this stage will deploy to. 
+   - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
+   - **Target Deployment Environment**: This is the target environment where this stage will deploy to. 
 1. Repeat the above step for each stage you'd like to add to the pipeline. Note you must have at least one stage, and can add up to seven stages.
    :::image type="content" source="media/pipeline-target-stages.png" alt-text="Pipeline target stages":::
 
-
 ## Grant access to edit or run pipelines
 
-Pipeline security is managed within the host environment by assigning security roles. Additionally, users must currently have access to all environments associated with a pipeline in order to create or run a it. 
+Pipeline security is managed within the host environment by assigning security roles. Additionally, users must currently have access to all environments associated with a pipeline in order to create or run the pipeline. 
 
-When you installed the Power Platform Pipelines application, two security roles were added:
+When you installed the Power Platform pipelines application, two security roles were added:
 
-- Deployment Pipeline User. Has privileges to run pipelines that have been shared with them.
-- Deployment Pipeline Administrator. Has full control over all pipeline configuration, without needing system administrator security role membership.
+- **Deployment Pipeline User**. Has privileges to run pipelines that have been shared with them.
+- **Deployment Pipeline Administrator**. Has full control over all pipeline configuration, without needing system administrator security role membership.
 
-### Share with Makers
-The Deployment Pipeline User security role grants access to run one or more pipelines. It does not grant access to create, edit, or delete pipelines. Deployment Pipeline Users will not see the host environment within the environment picker in Power Apps or Power Automate, or otherwise need to be aware of it.
+### Share pipelines with makers
 
-1. Assign makers the **Deployment Pipeline User** security role within the host environment. This security role is installed with the Power Platform Pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
+The **Deployment Pipeline User** security role grants access to run one or more pipelines. It does not grant access to create, edit, or delete pipelines. Users with the Deployment Pipeline User security role won't see the host environment within the environment picker in Power Apps or Power Automate, or otherwise need to be aware of it.
+
+1. Assign makers the **Deployment Pipeline User** security role within the host environment. This security role is installed with the Power Platform pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
 1. In the Deployment Pipeline Configuration app, **share** pipeline records with makers (or Azure Active Directory groups). More information: [Share rows with a user or team](/power-apps/user/share-row)
-1. Makers must also have permission to export solutions from the source development environment(s), as well as permission to import solutions to the target test and production environments for which the pipeline deploys to. Note that we later intend to support service principal based deployments on-behalf of makers.
+1. Makers must also have permission to export solutions from the source development environment(s), as well as permission to import solutions to the target test and production environments for which the pipeline deploys to.
 
+### Share with pipeline administrators
 
-### Share with Pipeline Administrators
-Grants full permissions to all pipelines (and tables which store Pipeline information) within the host environment. Also grants access to run all Pipelines associated with the current host. Does not grant permissions to perform other activities within the host environment.
+The Deployment Pipeline Administrator security role grants full privileges to all pipelines (and tables which store pipeline information) within the host environment. It also grants access to run all pipelines associated with the current host. The Deployment Pipeline Administrator security role doesn't grant privileges to perform other activities within the host environment.
 
-1. Assign the **Deployment Pipeline Administrator** security role to users or Azure Active Directory groups within the host environment. This security role is installed with the Power Platform Pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
-1. Pipeline administrators must also have access to all development, test, and production environments that are associated with pipelines they create or run. 
+> [!IMPORTANT]
+> Pipeline administrators must also have access to all development, test, and production environments that are associated with pipelines they create or run.
+
+Assign the **Deployment Pipeline Administrator** security role to users or Azure Active Directory groups within the host environment. This security role is installed with the Power Platform Pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
 
 ## Centrally manage and monitor deployments
-The Pipeline configuration app and Host environment provide many other benefits such as:
-a. Centrally viewing all deployment activity (filtered views are also accessible within the maker experience for a given pipeline and solution)
-b. Audit where a certain solution / version is deployed as well as who initiated the request
-c. View error logs, validation results, and deployment settings (environment variables and connections provided during deployment)
-c. Retain backups of all solution artifacts by version
-d. Schedule bulk delete jobs to remove unwanted data and conserve database capacity //[link needed]
-e. A dashboard allows you to visualize deployment metrics. You may also build your own reports using data stored within the host.
 
-Note: we soon plan to automatically store unmanaged solutions, in addition to currently storing managed solutions within the host. This paves the way for enabling experiences to install solutions not already present with your development environment as well as simplifying many professional developer focused tasks for retrieving and unpacking solutions. 
-
+The pipeline configuration app and host environment provide many other benefits such as:
+- Centrally view all deployment activity. Filtered views are also accessible within the maker experience for a given pipeline and solution.
+- Audit where a certain solution version is deployed as well as who initiated the request.
+- View error logs, validation results, and deployment settings. Environment variables and connections are provided during deployment.
+- Retain backups of all solution artifacts by version.
+- Schedule bulk delete jobs to remove unwanted data and conserve database capacity. More information: [Remove a large amount of specific, targeted data with bulk deletion](../admin/delete-bulk-records.md)
+- A dashboard allows you to visualize deployment metrics. You may also build your own reports using data stored within the host.
 
 ## Next steps
 
