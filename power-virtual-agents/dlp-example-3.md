@@ -12,7 +12,9 @@ ms.collection: virtual-agent
 ---
 
 
-# Data loss prevention example 3 - Require end-user authentication for Power Virtual Agents chatbots
+# Data loss prevention example 3 - Require end-user authentication for Power Virtual Agents chatbots (Preview)
+
+[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
 If a Power Virtual Agents chatbot isn't configured to require end-user authentication, then anyone on the internet can chat with the bot.
 
