@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 10/13/2022
+ms.date: 11/18/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -79,7 +79,7 @@ Output directory
 
 #### `--run-npm-install` `-npm`
 
-Auto run 'npm install' after the control is created. Default value is 'true'
+Auto run 'npm install' after the control is created. Default value is 'false'
 
 This parameter requires no value. It is a switch.
 

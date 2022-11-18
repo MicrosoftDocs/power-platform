@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 10/13/2022
+ms.date: 11/18/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -28,7 +28,7 @@ Commands for working with Dataverse solution projects
 |---------|---------|
 |[pac solution add-license](#pac-solution-add-license)|Add license and plan info to solution|
 |[pac solution add-reference](#pac-solution-add-reference)|Adds a reference from the project in the current directory to the project at 'path'|
-|[pac solution add-solution-component](#pac-solution-add-solution-component)|Adds a solution component to the target unmanaged solution in Dataverse.|
+|[pac solution add-solution-component](#pac-solution-add-solution-component)|Add solution component(s) to the target unmanaged solution in Dataverse.|
 |[pac solution check](#pac-solution-check)|Upload a Dataverse Solution project to run against the Power Apps Checker Service|
 |[pac solution clone](#pac-solution-clone)|Create a solution project based on an existing solution in your Organization|
 |[pac solution create-settings](#pac-solution-create-settings)|Create a settings file from solution zip or solution folder.|
@@ -82,7 +82,7 @@ The path to the referenced project
 
 ## pac solution add-solution-component
 
-Adds a solution component to the target unmanaged solution in Dataverse.
+Add solution component(s) to the target unmanaged solution in Dataverse.
 
 [!INCLUDE [solution-add-solution-component-intro](includes/solution-add-solution-component-intro.md)]
 
@@ -589,7 +589,7 @@ Publishes all customizations
 
 #### `--async` `-a`
 
-Publishes solution asynchronously
+Publishes all customizations asynchronously
 
 This parameter requires no value. It is a switch.
 
