@@ -28,7 +28,7 @@ Power Platform administrators can create one or more pipelines, associate any nu
 Before you begin, you’ll need to choose which environments will participate in pipelines. A common set-up might include the following environments:
 
 - **Host environment (required)**. This special-purpose environment acts as the **storage** and management plane for all pipeline configuration, security, and run history. 
-   - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated environment** separate from development, testing, and production environments. 
+   - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated environment** separate from the development and target QA and production environments Pipelines are set up to deploy to. 
    - Deleting this environment will delete all pipelines and run data. Use extreme caution and first understand the impact of data and configuration loss as well as maker access to pipelines hosted here. 
    - If desired, you may configure multiple different hosts within a tenant, such as for separately managing pipelines for different business organizations or geographic locations. One host for the entire tenant is also acceptable as long as all environments are in the same geographic location. 
    - Does not require managed environment. Using a Production Dataverse or Dynamics 365 environment is recommended for long-term use.  
