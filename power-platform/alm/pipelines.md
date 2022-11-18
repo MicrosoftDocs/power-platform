@@ -46,8 +46,8 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
   - Regardless of where you're at in your ALM journey, you can later extend Power Platform pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. 
 - Achieve compliance, safety, monitoring, and automation goals with:
   - Customizations and audit logs saved automatically and easily accessible.
-  - Out of the box analytics.
-  - The ability to create your own reports provides full visibility within a central location.
+  - Out of the box analytics provides better visibility within a central location.
+  - The ability to create your own reports.
 
 ## Makers run pre-configured pipelines
 
