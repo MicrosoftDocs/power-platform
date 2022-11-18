@@ -150,6 +150,8 @@
           href: analytics-billed-sessions.md
       - name: Configure and customize
         items:
+        - name: Key concepts - Configuration
+          href: configuration-fundamentals.md
         - name: Apply and configure data loss prevention policies
           items:
           - name: Configure data loss prevention for chatbots
@@ -160,8 +162,6 @@
             href: dlp-example-2.md
           - name: Example 3 - Use DLP to require end-user authentication
             href: dlp-example-3.md
-        - name: Key concepts - Configuration
-          href: configuration-fundamentals.md
         - name: Configure user authentication
           href: configuration-end-user-authentication.md
         - name: Configure user authentication with Azure Active Directory
