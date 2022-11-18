@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/15/2022
+ms.date: 11/18/2022
 ms.subservice: canvas-maker
 ms.author: gregli
 search.audienceType: 
@@ -196,20 +196,17 @@ The values -5 and -3 are properly filtered out.  The values 0 result in an error
 
 ## Datasource errors
 
-The functions that modify data in datasoruces, such as **Patch**, **Collect**, and **Remove**, report errors in two ways:
-- Each of these functions will return an error value as the result of the operation.  Errors can be replaced or suppressed with **IfError** and **App.OnError** as usual.  
-- After the operation, the **Errors** function will also return these errors.  This can be useful for displaying the error message on a form screen without needing to capture the error in a state variable.
+The functions that modify data in datasoruces, such as **Patch**, **Collect**, **Remove**, **RemoveIf**, **Update**, **UpdateIf**, and **SubmitForm** report errors in two ways:
+- Each of these functions will return an error value as the result of the operation.  Errors can be detected with **IsError** and replaced or suppressed with **IfError** and **App.OnError** as usual.  
+- After the operation, the **Errors** function will also return the errors for previous operations.  This can be useful for displaying the error message on a form screen without needing to capture the error in a state variable.
 
-
-
-The **Errors** function returns information about past errors after performing runtime operations on a data source, such as **Patch**, **Collect**, and **Remove**.  It can be useful for displaying an error on a form screen without needing to capture the error in a state variable.   
-
-These functions will also return errors directly which can be easier to check than using the **Errors** function.  
-
-For example, this formula will check for an error from **Patch** and display a custom error message:
+For example, this formula will check for an error from **Collect** and display a custom error message:
+```powerapps-dot
+IfError( Collect( Names, { Name: "duplicate" } ),
+         Notify( $"OOPS: { FirstError.Message }", Warning ) )
 ```
-// TODO: error code from PPC
-```
+
+The **Errors** function also returns information about past errors during runtime operations.  It can be useful for displaying an error on a form screen without needing to capture the error in a state variable.   
 
 ## Rethrowing errors
 
