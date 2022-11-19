@@ -230,7 +230,7 @@ If you are creating your own errors, it is recommended that you use values above
 | CreatePermission | 3 | The user does not have create record permission for the data source.  For example the **Collect** function was called. |
 | DeletePermissions | 5 | The user does not have delete record permission for the data source.  For example the **Remove** function was called. |
 | Div0 | 13 | Division by zero. |
-| EditPermissions | 4 | The user does not have create record permission for the data source.  For example the **Patch** function was called. | |
+| EditPermissions | 4 | The user does not have create record permission for the data source.  For example the **Patch** function was called. |
 | GeneratedValue | 9 | A value was erroneously passed to the server for a field that is automatically calculated by the server. |
 | InvalidFunctionUsage | 16 | Invalid usage of a function. Often one or more of the arguments to the function is incorrect or used in an invalid way. |
 | FileNotFound | 17 | The **SaveData** storage could not be found. |
