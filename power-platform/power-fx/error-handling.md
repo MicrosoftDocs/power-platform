@@ -20,12 +20,12 @@ contributors:
 
 Errors happen.  Networks go down, storage fills up, unexpected values flow in.  It's important that your logic continues to work properly in the face of potential issues.
 
-By default, errors flow through the formulas of an app and are reported to the end user of the app.  In this way, the end user knows something unexpected happen and they can report a problem to the creator of the app.  
+By default, errors flow through the formulas of an app and are reported to the end user of the app.  In this way, the end user knows something unexpected happened, they can potentially fix the problem themselves with a different input, or they can report the problem to the owner of the app.  
 
 As an app maker, you can take control of errors in your app:
-- Detecting and handling an error.  If there is a chance an error may occur, for example a network problem, the app's formulas can be written to detect the error condition and retry the operation.  The end user need not be concerned that an error occurred because the maker took the possibility into account.  This is done with the [**IfError**, **IsError**, and **IsErrorOrBlank**](reference/function-iferror.md) functions within a formula.
-- Reporting an error.  If an error is not handled in the formula where it was encountered, the error is then bubbled up to the **App.OnError** handler.  Here, the error can no longer be replaced as it has already occurred and is a part of formula calculations.  But you can use **App.OnError** to control how the error is reported to the end user, including suppressing the error reporting all together.  **App.OnError** also provides a common choke point for error reporting across the entire app.
-- Creating and re-throwing an error.  Finally, you may detect an error condition with your own logic, a condition that is specific to your app.  Use the [**Error**](reference/function-iferror.md) function to create custom errors.  The **Error** function is also used to rethrow an error after being interrogated in **IfError** or **App.OnError**.
+- **Detecting and handling an error.**  If there is a chance an error may occur, the app's formulas can be written to detect the error condition and retry the operation.  The end user need not be concerned that an error occurred because the maker took the possibility into account.  This is done with the [**IfError**, **IsError**, and **IsErrorOrBlank**](reference/function-iferror.md) functions within a formula.
+- **Reporting an error.**  If an error is not handled in the formula where it was encountered, the error is then bubbled up to the **App.OnError** handler.  Here, the error can no longer be replaced as it has already occurred and is a part of formula calculations.  But you can use **App.OnError** to control how the error is reported to the end user, including suppressing the error reporting all together.  **App.OnError** also provides a common choke point for error reporting across the entire app.
+- **Creating and rethrowing an error.**  Finally, you may detect an error condition with your own logic, a condition that is specific to your app.  Use the [**Error**](reference/function-iferror.md) function to create custom errors.  The **Error** function is also used to rethrow an error after being interrogated in **IfError** or **App.OnError**.
 
 ## Getting started
 
@@ -41,23 +41,23 @@ Let's start with a simple example.
 ```
 ![Error banner displayed with "the value cannot be converted to a number" for the text input control containing "Text input"](media/error-handling/intro-error-default.png)
 
-We have an error because the default text of a **TextInput** control is **"Text input"**, which cannot be converted to a number.   By default this is a good thing: the end user will get a notification that something isn't working as expected in the app.
+We have an error because the default text of a **TextInput** control is `"Text input"`, which cannot be converted to a number.   By default this is a good thing: the end user will get a notification that something isn't working as expected in the app.
 
-But of course we don't want an error to greet the user each time they start this app.  Likely *"Text input"* isn't the right default for the text input box anyway.  To remedy this, let's change the **Default** property of the **TextInput** control to:
+But of course we don't want an error to greet the user each time they start this app.  Likely `"Text input"` isn't the right default for the text input box anyway.  To remedy this, let's change the **Default** property of the **TextInput** control to:
 
 ```powerapps-dot
 Blank()
 ```
 ![Error banner displayed with "division by zero"](media/error-handling/intro-error-blank.png)
 
-Hmm, now we have a different error.  Mathematical operations with *blank*, such as division, will coerce the blank to a zero.  And that is causing a division by zero error.  To remedy this, we need to decide what the appropriate behavior is for this situation in this app.  The answer may be to show *blank* when the text input is *blank*.  We can accomplish this by wrapping our formula with the **IfError** function:
+Hmm, now we have a different error.  Mathematical operations with *blank*, such as division, will coerce the blank value to a zero.  And that is now causing a division by zero error.  To remedy this, we need to decide what the appropriate behavior is for this situation in this app.  The answer may be to show *blank* when the text input is *blank*.  We can accomplish this by wrapping our formula with the **IfError** function:
 
 ```powerapps-dot
 IfError( 1/Value( TextInput1.Text ), Blank() )
 ```
 ![No error banner displayed](media/error-handling/intro-error-iferror-all.png)
 
-Now the error is replaced with a valid value and the error banner has gone away.  But, we may have overshot, the **IfError** we used covers *all* errors, including typing in a bad value such as **"hello"**.  We can address this by tuning our **IfError** to handle the division by zero case only with and re-throwing all other errors:
+Now the error is replaced with a valid value and the error banner has gone away.  But, we may have overshot, the **IfError** we used covers *all* errors, including typing in a bad value such as `"hello"`.  We can address this by tuning our **IfError** to handle the division by zero case only with and rethrowing all other errors:
 
 ```powerapps-dot
 IfError( 1/Value( TextInput1.Text ), 
@@ -67,7 +67,7 @@ IfError( 1/Value( TextInput1.Text ),
 
 So, let's run our app and try some different values.  
 
-Without any value, as when the app starts due to the default, there is no answer displayed, but also no error as the **IfError** replaces the division by zero error.  
+Without any value, as when the app starts, there is no answer displayed as the default value is *blank*, but there also no error shown as the **IfError** replaces the division by zero error.  
 
 ![No answer displayed and no error banner](media/error-handling/intro-enter-blank.png)
 
@@ -75,19 +75,19 @@ If we type in a 4, we get the expected result of 0.25:
 
 ![0.25 displayed and no error banner](media/error-handling/intro-enter-4.png)
 
-And if we type in something illegal, like "hello", then we will receive an error banner:
+And if we type in something illegal, like `hello`, then we will receive an error banner:
 
 ![no value displayed and error banner shown for the inability to convert "hello" to a number](media/error-handling/intro-enter-hello.png)
 
-This is a very simple introductory example.  There are many directions we could have taken this:
+This is a very simple introductory example.  Error handling can be done many different ways, depending on the needs of the app:
 
-1. Instead of an error banner, we could have shown **"#Error"** in the label control with the formula.  Note that to keep the types of the replacements compatible with the first argument to **IfError** we need to explicitly convert to a text string with the **Text** function.
+1. Instead of an error banner, we could have shown **"#Error"** in the label control with the formula.  Note that to keep the types of the replacements compatible with the first argument to **IfError** we need to explicitly convert the numerical result to a text string with the **Text** function.
     ```powerapps-dot
     IfError( Text( 1/Value( TextInput1.Text ) ), 
              If( FirstError.Kind = ErrorKind.Div0, Blank(), "#Error" )
     ```
     ![no error banner and instead #Error is shown as the result](media/error-handling/intro-error-inlinestring.png)
-2. Instead of wrapping this specific instance with **IfError** we could have written a centralized **App.OnError** handler. Note that we cannot replace the string shown with "#Error" as the error has already happened and **App.OnError** is only about reporting.
+2. Instead of wrapping this specific instance with **IfError** we could have written a centralized **App.OnError** handler. Note that we cannot replace the string shown with "#Error" as the error has already happened and **App.OnError** is only provided to control reporting.
     ```powerapps-dot
     If( FirstError.Kind <> ErrorKind.Div0, Error( FirstError ) )
     ```
@@ -114,7 +114,7 @@ In general, errors do not flow through Power Apps control properties. Let's exte
 
 It's fine that errors don't propagate through a control because the system will observe errors on the input to all control properties.  The error won't be lost.
 
-Most functions and operators follow the "error in, error out" rule, but there are some exceptions.  The functions **IsError**, **IsErrorOrBlank**, and **IfError** are specifically designed for working with errors, as such they may not return an error even if one is passed into them.
+Most functions and operators follow the "error in, error out" rule, but there are some exceptions.  The functions **IsError**, **IsErrorOrBlank**, and **IfError** are specifically designed for working with errors so they may not return an error even if one is passed into them.
 
 ## Observing errors
 
@@ -146,7 +146,7 @@ The scope variables **FirstError** and **AllErrors** provide context information
 
 ## Stopping after an error
 
-Behavior formulas support taking action, modifying databases, and changing state.  These formulas allow more than one action to be done in a sequence using the `;` chaining operator (or `;;` in some locales).
+Behavior formulas support taking action, modifying databases, and changing state.  These formulas allow more than one action to be done in a sequence using the `;` chaining operator (or `;;` depending on the locale).
 
 For example, in this example the grid control is showing what is in the `T` table.  Each button click changes the state in this table with two **Patch** calls:
 
@@ -208,9 +208,9 @@ IfError( Collect( Names, { Name: "duplicate" } ),
 
 The **Errors** function also returns information about past errors during runtime operations.  It can be useful for displaying an error on a form screen without needing to capture the error in a state variable.   
 
-## Re-throwing errors
+## Rethrowing errors
 
-Sometimes some potential errors are expected and can be safely ignored.  Inside **IfError** and **App.OnError**, if an error is detected that should be passed on to the next higher handler, it can be re-thrown with `Error( AllErrors )`.
+Sometimes some potential errors are expected and can be safely ignored.  Inside **IfError** and **App.OnError**, if an error is detected that should be passed on to the next higher handler, it can be rethrown with `Error( AllErrors )`.
 
 ## Creating your own errors
 
