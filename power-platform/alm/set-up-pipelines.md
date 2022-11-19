@@ -46,11 +46,10 @@ Before you begin, you’ll need to choose which environments will participate in
 
 This step is only required for the initial host setup. You may skip to the next section if you already have access to a host environment where you'll create pipelines.
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Environments** > **New**, and create a new environment with a Dataverse database or Dataverse plus Dynamics 365 Customer Engagement apps database. Be sure to choose the same region that your development, QA, and production environments are created in.
-1. **Install** the **Power Platform Pipelines** application in your host environment. Open a new browser tab and go to [AppSource to get the pipeline app](https://appsource.microsoft.com/product/dynamics-crm/mscrm.4709698f-7284-429e-bed9-fe711a54e8b6-preview?flightCodes=deploymentpipelines).
-1. Select **Get it now**.
-1. Enter the required information, then select **Continue**.
-1. Select the appropriate host environment, accept the terms, then select **Install**.
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Environments** > **New**, and create a new environment with a Dataverse database. Be sure to choose the same region that your development, QA, and production environments are created in.
+1. **Install** the **Power Platform Pipelines** application in your host environment by selecting the Host environment, then select **Resources**, **Dynamics 365 apps**.
+2. Select **Install app** and scoll down within the right-hand panel until you find **Power Platform Pipelines**.
+3. Select **Next**, accept the terms, then select **Install**.
    > [!IMPORTANT]
    > You only need to install the deployment pipelines application in the host environment. You don't need to install it in other environments, such as development, QA or production environments that will be associated with your pipelines.
 
