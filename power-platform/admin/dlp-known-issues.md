@@ -29,6 +29,12 @@ Below are known limitations to know about when leveraging our suite of data loss
 - Tabular functions in the [Power Apps expression language](/powerapps/maker/canvas-apps/formula-reference) can't be governed with DLP.
 - Solution flows need to be activated once, to create a runtime representation, before they can be targeted for DLP enforcement exemption using the [Set-PowerAppDlpPolicyExemptResources cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/set-powerappdlppolicyexemptresources). If activation of the flow isn't allowed as-is because of a current DLP violation, then you could make changes to avoid violations, save, activate, add the exemption, then edit as desired with the exemption active.
 
+## Power Apps
+- Power Apps treats [Dataverse native](https://learn.microsoft.com/power-apps/maker/canvas-apps/data-platform-create-app-scratch) and [Microsoft Dataverse (legacy)](https://learn.microsoft.com/connectors/commondataservice/) connections as the same for DLP enforcement. 
+
+  > [!NOTE]
+  > DLP authoring experiences allow [Microsoft Dataverse (legacy)](https://learn.microsoft.com/connectors/commondataservice/) and [Microsoft Dataverse](https://learn.microsoft.com/connectors/commondataserviceforapps/) connectors to be grouped separately. If the following conditions are true, it can cause an app to not be DLP compliant: i) the Dataverse connectors are grouped separately, ii) an app triggers a flow and iii) both the app and flow connect to Dataverse.
+
 ## Child flows
 - Blocking the HTTP connector will also block child flows because those child flows are called using the same HTTP connector technology.
 - If a child flow violates a DLP policy, it will not result in the parent flow becoming non-compliant.
