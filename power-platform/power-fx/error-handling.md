@@ -25,7 +25,7 @@ By default, errors flow through the formulas of an app and are reported to the e
 As an app maker, you can take control of errors in your app:
 - Detecting and handling an error.  If there is a chance an error may occur, for example a network problem, the app's formulas can be written to detect the error condition and retry the operation.  The end user need not be concerned that an error occurred because the maker took the possibility into account.  This is done with the [**IfError**, **IsError**, and **IsErrorOrBlank**](reference/function-iferror.md) functions within a formula.
 - Reporting an error.  If an error is not handled in the formula where it was encountered, the error is then bubbled up to the **App.OnError** handler.  Here, the error can no longer be replaced as it has already occurred and is a part of formula calculations.  But you can use **App.OnError** to control how the error is reported to the end user, including suppressing the error reporting all together.  **App.OnError** also provides a common choke point for error reporting across the entire app.
-- Creating and rethrowing an error.  Finally, you may detect an error condition with your own logic, a condition that is specific to your app.  Use the [**Error**](reference/function-iferror.md) function to create custom errors.  THe **Error** function is also used to rethrow an error after being interrogated in **IfError** or **App.OnError**.
+- Creating and re-throwing an error.  Finally, you may detect an error condition with your own logic, a condition that is specific to your app.  Use the [**Error**](reference/function-iferror.md) function to create custom errors.  The **Error** function is also used to rethrow an error after being interrogated in **IfError** or **App.OnError**.
 
 ## Getting started
 
@@ -50,14 +50,14 @@ Blank()
 ```
 ![Error banner displayed with "division by zero"](media/error-handling/intro-error-blank.png)
 
-Hmm, now we have a different error.  Mathematical operations with *blank*, such as division, will coerce the blank to a zero.  And that is causing a division by zero error.  To remedy this, we need to decide what the appropriate behavior is for this situation in this app.  The answer may be to show *blank* when the text input is *blank*.  We can accomplish this vy wrapping our formula with the **IfError** function:
+Hmm, now we have a different error.  Mathematical operations with *blank*, such as division, will coerce the blank to a zero.  And that is causing a division by zero error.  To remedy this, we need to decide what the appropriate behavior is for this situation in this app.  The answer may be to show *blank* when the text input is *blank*.  We can accomplish this by wrapping our formula with the **IfError** function:
 
 ```powerapps-dot
 IfError( 1/Value( TextInput1.Text ), Blank() )
 ```
 ![No error banner displayed](media/error-handling/intro-error-iferror-all.png)
 
-Now the error is replaced with a valid value and the error banner has gone away.  But, we may have overshot, the **IfError** we used covers *all* errors, including typing in a bad value such as **"hello"**.  We can address this by tuning our **IfError** to handle the division by zero case only with and rethrowing all other errors:
+Now the error is replaced with a valid value and the error banner has gone away.  But, we may have overshot, the **IfError** we used covers *all* errors, including typing in a bad value such as **"hello"**.  We can address this by tuning our **IfError** to handle the division by zero case only with and re-throwing all other errors:
 
 ```powerapps-dot
 IfError( 1/Value( TextInput1.Text ), 
@@ -114,7 +114,7 @@ In general, errors do not flow through Power Apps control properties. Let's exte
 
 It's fine that errors don't propagate through a control because the system will observe errors on the input to all control properties.  The error won't be lost.
 
-Most funcitons and operators follow the "error in, error out" rule, but there are some exceptions.  The functions **IsError**, **IsErrorOrBlank**, and **IfError** are specifically designed for working with errors, as such they may not return an error even if one is passed into them.
+Most functions and operators follow the "error in, error out" rule, but there are some exceptions.  The functions **IsError**, **IsErrorOrBlank**, and **IfError** are specifically designed for working with errors, as such they may not return an error even if one is passed into them.
 
 ## Observing errors
 
@@ -194,9 +194,9 @@ Take this example.  Here, the original table has no errors, but the act of filte
 
 The values -5 and -3 are properly filtered out.  The values 0 result in an error in processing the filter, and so it is unclear if the record should be included or not in the result.  To maximize transparency for end users and help makers debug, we include an error record in place of the original.  In this case, `IsError( Index( output, 2 ) )` returns true.
 
-## Datasource errors
+## Data source errors
 
-The functions that modify data in datasoruces, such as **Patch**, **Collect**, **Remove**, **RemoveIf**, **Update**, **UpdateIf**, and **SubmitForm** report errors in two ways:
+The functions that modify data in data sources, such as **Patch**, **Collect**, **Remove**, **RemoveIf**, **Update**, **UpdateIf**, and **SubmitForm** report errors in two ways:
 - Each of these functions will return an error value as the result of the operation.  Errors can be detected with **IsError** and replaced or suppressed with **IfError** and **App.OnError** as usual.  
 - After the operation, the **Errors** function will also return the errors for previous operations.  This can be useful for displaying the error message on a form screen without needing to capture the error in a state variable.
 
@@ -208,9 +208,9 @@ IfError( Collect( Names, { Name: "duplicate" } ),
 
 The **Errors** function also returns information about past errors during runtime operations.  It can be useful for displaying an error on a form screen without needing to capture the error in a state variable.   
 
-## Rethrowing errors
+## Re-throwing errors
 
-Sometimes some potential errors are expected and can be safely ignored.  Inside **IfError** and **App.OnError**, if an error is detected that should be passed on to the next higher handler, it can be rethrown with `Error( AllErrors )`.
+Sometimes some potential errors are expected and can be safely ignored.  Inside **IfError** and **App.OnError**, if an error is detected that should be passed on to the next higher handler, it can be re-thrown with `Error( AllErrors )`.
 
 ## Creating your own errors
 
