@@ -160,7 +160,16 @@ In a chained behavior formula, actions do not stop after the first error.  Let's
 
 ![Animation showing no changes to either record in table T, because the IfError is preventing the second operation from completing after an error](media/error-handling/pa-behavior-stop-error.gif)
 
-While working through iterations in **ForAll**, an error will stop the processing even if not being used in a behavior formula.  Use **IfError** to replace any potential error values to avoid this.
+If an error is encountered during one of the iterations of **ForAll**, the rest of the iterations will not stop.  **ForAll** is designed to execute each iteration independently, allowing for parallel execution.  When the **ForAll** is complete, an error will be returned, which contains all the errors encountered (by examining **AllErrors** in **IfError** or **App.OnError**).
+
+For example, 
+
+```powerapps-dot
+Clear( Collection ); 
+ForAll( [1,0,2,0,3], If( 1/Value > 0, Collect( Collection, Value ) ) );
+```
+
+will result in **ForAll** returning two errors (for the division by zero for `Value` of 0, twice) and `Collection` will have three records (for when `Value` is not 0): `[1, 2, 3]`.
 
 ## Working with multiple errors
 
@@ -203,7 +212,7 @@ The functions that modify data in data sources, such as **Patch**, **Collect**, 
 For example, this formula will check for an error from **Collect** and display a custom error message:
 ```powerapps-dot
 IfError( Collect( Names, { Name: "duplicate" } ),
-         Notify( $"OOPS: { FirstError.Message }", Warning ) )
+         Notify( $"OOPS: { FirstError.Message }", NotificationType.Warning ) )
 ```
 
 The **Errors** function also returns information about past errors during runtime operations.  It can be useful for displaying an error on a form screen without needing to capture the error in a state variable.   
@@ -240,6 +249,7 @@ If you are creating your own errors, it is recommended that you use values above
 | MissingRequired | 2 | A required field of a record was missing. |
 | Network | 23 | There was a problem with network communications. |
 | None | 0 | System error.  There is no error. |
+| NotApplicable | 27 | No value is available.  Useful to differentiate a *blank* value, that can be treated as a zero in numerical calculations, from blank values that should be flagged as a potential problem if the value is used.  |
 | NotFound | 7 | Record could not be found.  For example, the record to be modified in the **Patch** function. |
 | NotSupported | 20 | Operation not supported by this player or device. |
 | Numeric | 24  | A numeric function was used in an improper way.  For example, **Sqrt** with -1. |
