@@ -1,6 +1,6 @@
 ---
-title: Understand errors in canvas apps
-description: Reference information about working with errors in canvas apps.
+title: Understand errors in Power Fx
+description: Reference information about working with errors in Power Fx.
 author: gregli-msft
 ms.topic: conceptual
 ms.custom: canvas
