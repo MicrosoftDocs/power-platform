@@ -60,7 +60,7 @@ AA4PP is a good match when you verify whether the following apply:
     - Are [pull requests](/azure/devops/repos/git/git-branching-guidance?#review-and-merge-code-with-pull-requests) used to review and merge changes?
     - Are [build pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts) used to integrate and deploy between validation, test, and production environments?
 
-1. Are [fusion development](/training/paths/transform-business-applications-with-fusion-development/) teams engaged to include low code and pro-code teams?
+1. Are [fusion development](/learn/paths/transform-business-applications-with-fusion-development/) teams engaged to include low code and pro-code teams?
 
 1. Are your professional development teams familiar with [branching and merging](../branching-and-merging.md) strategies and able to assist makers?
 

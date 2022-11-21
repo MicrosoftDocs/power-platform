@@ -20,7 +20,7 @@ search.app:
 # ALM accelerator for Microsoft Power Platform pipelines (preview) - Deployment settings
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
 
 The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps. Makers can use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. The ALM accelerator helps makers switch quickly from developing solutions to source-controlling the solution and pushing their apps to other environments with as few interruptions to their work as possible.
 

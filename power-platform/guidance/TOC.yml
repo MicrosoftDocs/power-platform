@@ -143,6 +143,8 @@
             - name: Set up ALM Accelerator for Power Platform components
               href: coe/setup-almacceleratorpowerplatform-cli.md
               items:
+                - name: Set up ALM Accelerator for Power Platform using the Admin App
+                  href: coe/setup-almacceleratorpowerplatform-preview.md
                 - name: Set up ALM Accelerator for Power Platform using CoE CLI
                   href: coe/cli/alm/overview.md
                 - name: Set up ALM Accelerator for Power Platform components manually
@@ -306,7 +308,7 @@
                   href: creator-kit/icon.md
                 - name: ResizableTextArea
                   href: creator-kit/resizabletextarea.md
-                - name: SearchBox
+                - name: SearchBox (preview)
                   href: creator-kit/searchbox.md
             - name: Commands, Menus & Navs
               items:
@@ -314,7 +316,7 @@
                   href: creator-kit/breadcrumb.md
                 - name: ContextMenu
                   href: creator-kit/contextmenu.md
-                - name: CommandBar (preview)
+                - name: CommandBar
                   href: creator-kit/commandbar.md
                 - name: Header (experimental)
                   href: creator-kit/header.md
@@ -324,23 +326,31 @@
                   href: creator-kit/nav.md
                 - name: Pivot
                   href: creator-kit/pivot.md
-            - name: DetailsList
-              href: creator-kit/detailslist.md
-            - name: Pickers
+            - name: Items and Lists
               items:
-                - name: Calendar (preview)
-                  href: creator-kit/calendar.md
-                - name: TagsPicker
-                  href: creator-kit/picker.md
+                - name: DetailsList
+                  href: creator-kit/detailslist.md
+                - name: Facepile (preview)
+                  href: creator-kit/facepile.md
+                - name: Persona (preview)
+                  href: creator-kit/persona.md
                 - name: TagList
                   href: creator-kit/taglist.md
+            - name: Pickers
+              items:
+                - name: Calendar
+                  href: creator-kit/calendar.md
+                - name: PeoplePicker (preview)
+                  href: creator-kit/peoplepicker.md
+                - name: Picker
+                  href: creator-kit/picker.md
             - name: Progress
               items:
-                - name: Shimmer (preview)
+                - name: Shimmer
                   href: creator-kit/shimmer.md
-                - name: Spinner (preview)
+                - name: Spinner
                   href: creator-kit/spinner.md
-                - name: ProgressIndicator (preview)
+                - name: ProgressIndicator
                   href: creator-kit/progressindicator.md
             - name: Surfaces
               items:

@@ -365,8 +365,7 @@ This flow sends a daily reminder email to environment owners who have been asked
 | --- | --- | --- |
 | [Request Orphaned Objects Reassigned (Child)](#request-orphaned-objects-reassigned-child) | Instant | child |
 | [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | daily |
-| [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
-| [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
+
 
 #### Request Orphaned Objects Reassigned (Parent)
 
@@ -392,18 +391,6 @@ If they choose to see the items individually, then they can make these decisions
 
 ![Orphaned object item.](media/orphanedobjects3.png "Orphaned object item")
 
-#### HELPER - CanvasAppOperations Gov
-
-This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. 
-
-The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory.
-
-#### HELPER - CloudFlowOperations Gov
-
-This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. 
-
-The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory.
-
 ## App Quarantine process
 
 ### Environment variables
@@ -424,7 +411,7 @@ The operations supported are Delete and Assign (which reassigns owner). It perfo
 This flow runs on a schedule and checks if any apps need quarantining based on the following criteria:
 
 - Environment is included in the quarantine process.
-- Compliance details have been requested and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
+- Compliance details have been requested, but are not yet submitted, and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
 - App is not already quarantined.
 - Admin Risk Assessment status is not complete.
 
