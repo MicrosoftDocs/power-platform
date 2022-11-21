@@ -18,6 +18,10 @@ contributors:
 ---
 # Error handling
 
+> [!NOTE]
+>
+> - The behavior that this article describes is available only when the _Formula-level error management_ preview feature in [Settings > Upcoming features > Preview](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on.
+
 Errors happen.  Networks go down, storage fills up, unexpected values flow in.  It's important that your logic continues to work properly in the face of potential issues.
 
 By default, errors flow through the formulas of an app and are reported to the end user of the app.  In this way, the end user knows something unexpected happened, they can potentially fix the problem themselves with a different input, or they can report the problem to the owner of the app.  
