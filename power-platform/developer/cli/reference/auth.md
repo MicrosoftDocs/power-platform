@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 9/15/2022
+ms.date: 11/18/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -93,7 +93,7 @@ Default environment (id, url, unique name or partial name)
 **Deprecated**: This parameter will be ignored.
 #### `--name` `-n`
 
-The name you want to give to this authentication profile (maximum 12 characters)
+The name you want to give to this authentication profile (maximum 30 characters)
 
 **Note**: The length of the name should be between 1 and 30
 
@@ -161,7 +161,7 @@ The index of the profile to be named/renamed
 
 #### `--name` `-n`
 
-The name you want to give to this authentication profile (maximum 12 characters)
+The name you want to give to this authentication profile (maximum 30 characters)
 
 **Note**: The length of the name should be between 1 and 30
 
@@ -214,7 +214,7 @@ Default environment (id, url, unique name or partial name)
 
 #### `--name` `-n`
 
-The name you want to give to this authentication profile (maximum 12 characters)
+The name you want to give to this authentication profile (maximum 30 characters)
 
 [!INCLUDE [auth-update-remarks](includes/auth-update-remarks.md)]
 

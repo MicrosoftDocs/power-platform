@@ -110,8 +110,8 @@
           href: publication-connect-bot-to-custom-application.md
         - name: Add bot to Azure Bot Service channels
           href: publication-connect-bot-to-azure-bot-service-channels.md
-        - name: Integrate with QnA Maker
-          href: integrate-with-qna.md
+        - name: Integrate with question answering
+          href: integrate-with-question-answering.md
         - name: Integrate with Bot Framework
           items:
             - name: Configure a skill for use in Power Virtual Agents
@@ -152,6 +152,16 @@
         items:
         - name: Key concepts - Configuration
           href: configuration-fundamentals.md
+        - name: Apply and configure data loss prevention policies
+          items:
+          - name: Configure data loss prevention for chatbots
+            href: admin-data-loss-prevention.md
+          - name: Example 1 - Use DLP to block skills
+            href: dlp-example-1.md
+          - name: Example 2 - Use DLP to block HTTP requests
+            href: dlp-example-2.md
+          - name: Example 3 - Use DLP to require end-user authentication
+            href: dlp-example-3.md
         - name: Configure user authentication
           href: configuration-end-user-authentication.md
         - name: Configure user authentication with Azure Active Directory
@@ -324,7 +334,7 @@
         href: preview/authoring-system-topics.md
       - name: Add comments to bots
         href: preview/authoring-comments.md
-      - name: Start with existing content
+      - name: Start from existing content
         href: preview/clone-existing-bot.md
       - name: Test your bot
         href: preview/authoring-test-bot.md
@@ -343,7 +353,7 @@
       - name: Use expressions using Power Fx
         href: preview/advanced-power-fx.md
       - name: Add user authentication
-        href: preview/advanced-end-user-authentication.md
+        href: preview/advanced-user-authentication.md
       - name: Use Power Automate flows
         href: preview/advanced-flow.md
   - name: Publish and integrate
@@ -372,14 +382,24 @@
         href: preview/analytics-billed-sessions.md
   - name: Configure and customize
     items:
+      - name: Apply and configure data loss prevention policies
+        items:
+          - name: Configure data loss prevention for chatbots
+            href: preview/admin-data-loss-prevention.md
+          - name: Example 1 - Use DLP to block skills
+            href: preview/dlp-example-1.md
+          - name: Example 2 - Use DLP to block HTTP requests
+            href: preview/dlp-example-2.md
+          - name: Example 3 - Use DLP to require end-user authentication
+            href: preview/dlp-example-3.md
       - name: Configure user authentication
         href: preview/configuration-end-user-authentication.md
+      - name: Configure user authentication with Azure Active Directory
+        href: preview/configuration-authentication-azure-ad.md
       - name: Configure web and Direct Line channel security
         href: preview/configure-web-security.md
       - name: Configure SSO for your custom website
         href: preview/configure-web-sso.md
-      - name: Configure SSO for Teams
-        href: preview/configure-sso-teams.md
       - name: Customize the look and feel of the bot
         href: preview/customize-default-canvas.md
 

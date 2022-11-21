@@ -70,7 +70,7 @@ Sends a message to inform the user that an error has occurred, including an erro
 
 ## Signin
 
-Prompts the user to sign in when user authentication is enabled.
+Prompts the user to sign in when user authentication is enabled. For more information, see [Add end-user authentication](advanced-user-authentication.md)
 
 **Trigger:** At the beginning of the conversation when sign in is required, or when the conversation reaches a node that uses authentication variables.
 

@@ -20,14 +20,24 @@ The Power Virtual Agents preview currently doesn't support some of the existing 
 ## Limitations of current features
 
 - Preview bots are only available in English.
-- When sharing a bot, any Power Automate flows used in the conversation logic will not be shared. You'll have to manually share those flows if desired.  
-- [Message variations](authoring-send-message.md#use-message-variations) do not vary in a single conversation. You'll only see differences between different conversations.
 - The **Track between topics** toggle in the [test bot pane](authoring-test-bot.md) doesn't work.
-- While co-authoring a bot with another user is possible, it's not a fully supported feature and may lead to data loss.
 - Default values in multiple-choice questions don't work.
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
-- Omnichannel isn't supported.
-- Telephony isn't support.
+- Omnichannel for Customer Service isn't supported. This includes Omnichannel's voice capabilities.
+- Data Loss Prevention (DLP) is not fully implemented. This means:
+  - When a DLP error occurs, the error banner is only visible on the bot's home page.
+  - The **Chat without Azure AD Authentication in Power Virtual Agents** connector doesn't work.
+- Preview bots can't be created in GCC or GCC High environments.
+
+## Troubleshoot firewall or network issues
+
+If you have trouble loading Power Virtual Agents, and see the message "Try checking your firewall or network connection before trying again", you may be experiencing a temporary network issue; try again in a few moments.
+
+However, if the issue persists, consider the following:
+
+- Your browser might not support WebAssembly (WASM). Make sure you're using a browser that supports it.
+- If your machine has a firewall running, check if there’s a rule that’s blocking WASM binary files (.binary).
+- If you have a corporate firewall running, you’ll need to work with your system administrator to bypass firewall rules to be able to download WASM binary assets (.binary).
 
 ## Upcoming releases
 

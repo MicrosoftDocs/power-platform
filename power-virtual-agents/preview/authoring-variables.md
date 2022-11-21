@@ -22,7 +22,6 @@ Save customers' responses in a bot conversation to variables and reuse them late
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
-
 Variables can also be passed into, and returned from, [other topics](#receive-values-from-other-topics) and [Power Automate flows](advanced-flow.md).  
 
 ## Variable scopes
@@ -32,7 +31,6 @@ Variables can exist within three scopes:
 - **Topic**: Topic variables can only be referenced within the topics in which they are created. This is the default scope for created variables.
 - **Global**: [Global variables](authoring-variables-bot.md) are available for use across all topics. You can change the scope of any topic variable to make it a global variable.
 - **System**: [System variables](#system-variables) are created automatically and provide additional contextual information about the conversation or the user. They are usually available in all topics.
-
 
 ## Variable types
 
@@ -51,7 +49,6 @@ A variable is associated with a **type**. The type determines what values the va
 | Blank    | A placeholder for "no value" or "unknown value". See [Blanks in Power Fx](/power-platform/power-fx/data-types#blank). |
 
 A variable's type is set the first time a value is assigned. Order is determined from top to bottom, meaning nodes at the top of the authoring canvas will are considered first over nodes at the bottom. However, when you create branches with condition nodes, branches are ordered from left to right, meaning nodes in the leftmost branch are considered first over nodes in the rightmost branch.
-
 
 Once a variable has been assigned a value, the type for that variable is fixed and it can't be assigned values of any other type. For example, a variable given the starting value of `1` is assigned the type **Number**. Attempting to assign it to a **String** value of `"apples"` will result in an error.
 
@@ -99,9 +96,13 @@ Variables can be created in any node that prompts you to select a variable as an
 
 These nodes will automatically create new variables, with the appropriate type, for each of their output variable slots.
 
-You can use the [variable properties pane](#variable-properties-pane) to rename variables.
+Variables are automatically assigned a name when created. To rename a variable:
 
-You can also create a new variable and assign a value to it immediately using the **Set Variable Value** node.
+1. Select the variable to open it in the [variable properties pane](#variable-properties-pane).
+
+1. For **Variable Name**, enter a new name for your variable.
+
+To assign a value to a variable immediately, use the **Set Variable Value** node:
 
 1. Select **+** to add a node and then select **Set a variable value**.
 

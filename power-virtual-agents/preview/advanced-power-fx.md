@@ -18,7 +18,12 @@ ms.custom: ceX, advanced-authoring
 
 Power Fx is a low-code language that makers can work with directly in an Excel-like formula bar. Use Power Fx to create complex bot logic via formulas to manipulate data, such as setting the value of variables, parsing a string, or using expressions in conditionals.
 
-For more information, see the [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](https://aka.ms/pfx-reference) documentation.
+For more information, see the [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](/power-platform/power-fx/formula-reference) documentation.
+
+> [!NOTE]
+> Power Virtual Agents uses US-style numbering in Power Fx, where the decimal separator is indicated by a period or dot, for example `12,567.892`.
+>   
+> [This also means Power Fx parameters must be separated by commas (,)](/power-platform/power-fx/expression-grammar#separators).
 
 ## Prerequisites
 

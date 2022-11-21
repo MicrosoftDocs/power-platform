@@ -3,7 +3,6 @@ title: "Set up inactivity notifications components | MicrosoftDocs"
 description: "Learn how to set up the inactivity notifications components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2022
@@ -26,15 +25,12 @@ This article will help you to set up the inactivity notifications for unused can
 
 ## Set up connection cleanup (broken connections)
 
-Process to delete connections that have are, and have been broken for some time (30 days by default)
+Process to delete connections that have been broken for some time (30 days by default).
 
 > [!IMPORTANT]
 > You may see an error like this when running for large environments:  <br>
 > The action 'Get_Connections_as_Admin' has an aggregated page results size more than '209797598' bytes. This exceeded the maximum size '209715200' bytes allowed' <br><br>
-> If this occurs you will need to clean up the connections via Power Shell first in order to use the connector in Power Automate. <br>
-> This article will get you started on [Power Shell for Power Platform](/power-platform/admin/powershell-getting-started) <br>
-> And this this call will delete all the errored connections in your default environment <br> 
->(Get-AdminPowerAppConnection -EnvironmentName "Default-yourGUIDhere") | Where { $_.statuses -like "*Error*"} | Remove-AdminPowerAppConnection
+> If this occurs, you can't use the Broken Connection Cleanup process for the environment. 
 
 ### Turn on flow
 
@@ -141,8 +137,8 @@ Environment variables are used to store application and flow configuration data 
 | Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Teams environment](faq.md#add-apps-to-microsoft-teams) | None |
 | Flow Approvals URL | (Optional) A link to the Power Automate approval page for your CoE environment. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. To get the URL, go to make.powerautomate.com for your CoE environment > **Action Items** > **Approvals**. The URL will end in **approvals/received**.|  None |
 | ProductionEnvironment | Set to **No** if you've installed the solution for development or test purposes. This will send approvals to the admin email instead of the maker. | Yes |
-| Archival-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 (months) |
-| Archival-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month. |
+| InactivityNotifications-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 (months) |
+| InactivityNotifications-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month. |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 

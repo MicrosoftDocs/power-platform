@@ -4,7 +4,7 @@ description: View and manage feature settings for Microsoft Dataverse.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/08/2022
+ms.date: 11/16/2022
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -58,15 +58,16 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**Advanced find options**||  
 > |Modern advanced find in model-driven apps|Default: Off. If **On**, legacy advanced find will be replaced with a modern experience that has enhanced view management capabilities like searching on views and the ability to share, hide, and delete personal views. More information: [Advanced find in model-driven apps](/powerapps/user/advanced-find). This setting only appears if you have enabled 2022 Release Wave 1. |  
 > |Allow users to hide system views|Default: Off. If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. More information: [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you have enabled 2022 Release Wave 1.|
-> |Enable preview of the modern link sharing UI, co-presence, online status in model-driven apps | Default: Off. Turn **On**, to allow users to share links and see each others presence status when they're working on a record. For more information see, [Collaborate with others in model-driven apps](/powerapps/user/collaboration).  |
-> | Co-presence indicator refresh interval | Default: 60 seconds. Configure the number of seconds before the co-presence indicator refreshes. |
-> |End users can add and join Teams meeting from appointments in model-driven apps.  | Default: Off. Turn **On**, to allow users create and join Teams meeting from an appointment. |  
+> |Show advanced lookup in lookup fields within Edit filters|Default: Off. If **On**, users see **Advanced lookup**, an option to see more fields and search for records within a specific view, when looking up a value as part of a condition in Edit filters panel in all model-driven apps.|
+> |Show co-presence of colleagues on forms | Default: Off. Turn **On**, to allow users to see each others presence status on a form when they're working on the same record. For more information see, [Collaborate with others in model-driven apps](/powerapps/user/collaboration).  |
 > | **Activities**   | Default: Off. Select **On** to limit the number of activities showing up in the **New Activity** dropdown list to activities that are relevant to the model-driven app. | 
 > |**Asynchronous merge** | |
 > | Allow records to be merged asynchronously | Default: Off. If **On**, records merged through the Unified Client interface will be merged asynchronously in the background. |
 > |**Search**||  
-> |Dataverse search|Default: Off. If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.|  
-> | Share search analytics with Microsoft | Default: Off. To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. More information: [Help improve Dataverse search](configure-relevance-search-organization.md#help-improve-dataverse-search)      |
+> |Dataverse search|Default: Off. If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.|
+> |Share search analytics with Microsoft | Default: Off. To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. More information: [Help improve Dataverse search](configure-relevance-search-organization.md#help-improve-dataverse-search)      |
+> |Single table search option|Default: Off. If **On**, users will see an additional option to search on a single table on view pages of search-enabled tables in all model-driven apps.|
+> |Prevent slow keyword filter for quick find terms on view pages | Default: Off. If **On**, users will be prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message will be displayed in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip will be displayed indicating the search might be slow. More information: [Grid search](/power-apps/user/grid-filters#grid-search) |
 > |Quick Find record limits|Default: On. If **On**, if more than 10,000 records are found, a message will be displayed that suggests a more selective search. More information: [Configure Dataverse search for the organization](configure-relevance-search-organization.md)| 
 > | Use Quick Find View of an entity for searching on grids and sub-grids| Default Off. Select **Yes** to show the traditional Quick Find search in an entity grid. The traditional Quick Find search applies the [Quick Find View](/powerapps/maker/model-driven-apps/create-edit-views#system-views) filters and displays the Quick Find columns after searching.      |
 > | **Map and address services**   |    |

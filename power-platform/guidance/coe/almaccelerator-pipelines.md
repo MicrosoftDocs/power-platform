@@ -21,7 +21,7 @@ search.app:
 # ALM accelerator for Microsoft Power Platform pipelines (preview)
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
 
 The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
@@ -33,7 +33,7 @@ While the ALM Accelerator pipelines and app have default configurations that all
 
 ### Installing the pipelines in one project and source code in another project
 
-Using the Deployment Profiles in the ALM Accelerator app you can specify a pipeline project in addition to source project. An option has also been added to the coe-cli install to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
+From the ALM Accelerator App and in the Deployment Profiles there's now an option to specify a pipeline project in addition to source project. An option has also been added to the coe-cli to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
 
 ### Run the ALM Accelerator pipelines without installing the ALM Accelerator Canvas App and solution
 
@@ -80,7 +80,7 @@ The ALM Accelerator Canvas App provides an easy button layer for running the ALM
 
 ### Customize versioning of solutions when exporting / deploying the solution using the ALM Accelerator pipelines
 
-The ALM Accelerator pipelines allow you to customize the versioning of the solution when exporting / deploying the solution. The following is a description of the methods available that can be used to customize the versioning of the solution when exporting / deploying the solution. The default versioning method is to use the name specified in the [deployment pipeline YAML file](https://github.com/microsoft/coe-alm-accelerator-templates/blob/f783a0e967233cd690b5428e1864e957ddff7860/Pipelines/build-deploy-validation-SampleSolution.yml#L20)
+The ALM Accelerator pipelines allow you to customize the versioning of the solution when exporting / deploying the solution. The following is a description of the methods available that can be used to customize the versioning of the solution when exporting / deploying the solution. The default versioning method is to use the name specified in the [deployment pipeline YAML file](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-validation-SampleSolution.yml)
 
 **Use Exported versioning**
 There are scenarios where you may want to use the version number exported by the pipelines as the version number in all of the deployed environments. To achieve this you can create a variable in your export pipeline or a global variable in the variable library for the ALM Accelerator with the name UseSolutionVersionFromDataverse and a value of true. This will ensure that the version number exported in your solution is preserved in downstream environments and will also be reflected in your source control when the solution source is committed.
@@ -117,7 +117,7 @@ The ALM Accelerator for Power Platform pipeline templates has several extension 
 
 ### Toggle on/off specific actions in the pipelines
 
-There are several places in the pipelines where pipeline variables are used to dictate whether or not a task should be executed or which specific task should be executed. The following are a list of variables that can be set either on an individual pipeline or via the alm-accelerator-variable-group to apply to all pipelines. If you want to set these variables for specific solutions on export you can create a specific export pipeline based on the export pipeline template using the naming convention export-solution-to-git-SolutionName. The ALM Accelerator app will use this export pipeline for your specific solution rather than the general purpose export-solution-to-git pipeline.
+There are several places in the pipelines where pipeline variables are used to dictate whether or not a task should be executed or which specific task should be executed. The following are a list of variables that can be set either on an individual pipeline or via the alm-accelerator-variable-group to apply to all pipelines. NOTE: That if you want to set these variables for specific solutions on export you can create a specific export pipeline based on the export pipeline template using the naming convention export-solution-to-git-SolutionName. The ALM Accelerator app will use this export pipeline for your specific solution rather than the general purpose export-solution-to-git pipeline.
 
 | Variable                             | Default                     | Description                                                                      |
 | ---------                            | -------                     | -----------                                                                      |
