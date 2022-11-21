@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 11/18/2022
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -59,7 +59,7 @@ Hmm, now we have a different error.  Mathematical operations with *blank*, such 
 ```powerapps-dot
 IfError( 1/Value( TextInput1.Text ), Blank() )
 ```
-![No error banner displayed](media/error-handling/intro-error-iferror-all.png)
+![No error banner displayed, an error due to a blank value has been replaced with a blank](media/error-handling/intro-error-iferror-all.png)
 
 Now the error is replaced with a valid value and the error banner has gone away.  But, we may have overshot, the **IfError** we used covers *all* errors, including typing in a bad value such as `"hello"`.  We can address this by tuning our **IfError** to handle the division by zero case only with and rethrowing all other errors:
 
@@ -67,7 +67,7 @@ Now the error is replaced with a valid value and the error banner has gone away.
 IfError( 1/Value( TextInput1.Text ), 
          If( FirstError.Kind = ErrorKind.Div0, Blank(), Error( FirstError ) ) )
 ```
-![No error banner displayed](media/error-handling/intro-error-iferror-div0.png)
+![No error banner displayed, an error due specifically to division by zero has been replaced by a blank, otherwise the error is re-thrown](media/error-handling/intro-error-iferror-div0.png)
 
 So, let's run our app and try some different values.  
 
@@ -209,7 +209,7 @@ The values -5 and -3 are properly filtered out.  The values 0 result in an error
 
 ## Data source errors
 
-The functions that modify data in data sources, such as **[Patch](function-patch.md)**, **[Collect](function-collect-clearcollect.md)**, **[Remove](function-remove-removeif.md)**, **[RemoveIf](function-remove-removeif.md)**, **[Update](function-update-updateif.md)**, **[UpdateIf](function-update-updateif.md)**, and **[SubmitForm](function-form.md)** report errors in two ways:
+The functions that modify data in data sources, such as **[Patch](reference/function-patch.md)**, **[Collect](reference/function-clear-collect-clearcollect.md)**, **[Remove](reference/function-remove-removeif.md)**, **[RemoveIf](reference/function-remove-removeif.md)**, **[Update](reference/function-update-updateif.md)**, **[UpdateIf](reference/function-update-updateif.md)**, and **[SubmitForm](reference/function-form.md)** report errors in two ways:
 - Each of these functions will return an error value as the result of the operation.  Errors can be detected with **IsError** and replaced or suppressed with **IfError** and **App.OnError** as usual.  
 - After the operation, the **Errors** function will also return the errors for previous operations.  This can be useful for displaying the error message on a form screen without needing to capture the error in a state variable.
 
