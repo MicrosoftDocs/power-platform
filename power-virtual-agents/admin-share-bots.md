@@ -24,14 +24,14 @@ Select the version of Power Virtual Agents you're using here:
 
 Share your bot with other users so they can chat with it or collaborate together to author the bot. You can share bots with users with the **Share** options available in Power Virtual Agents.
 
-## Share a bot
-
-Bot owners and managers from [sharing a bot for collaboration](#share-a-bot-for-collaboration) always have permission to chat with a bot. You can share bots with additional users to only chat with it.
-
-### Prerequisites
+## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization.
+
+## Share a bot for chat
+
+Bot makers that you've [shared your bot with for collaboration](#share-a-bot-for-collaboration) will always have permission to chat with the bot. You can share bots with security groups to only grant them permission to chat with it.
 
 ### Share bot with security groups
 
@@ -44,7 +44,10 @@ You can share your bot with security groups so their members can chat with the b
 1. Specify the security group name that you would like to share the bot with.
 
     > [!NOTE]
-    > You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly. You can manage individual user access by adding or removing users from the security group.
+    > When sharing a bot for _chat_, you can only share a bot with security groups. You can't share it with:
+    >
+    > - Microsoft 365 groups.
+    > - Individual users directly. You can manage individual user access by adding or removing users from the security group.
 
     :::image type="content" source="media/admin-share-bots/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
 
@@ -106,7 +109,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 ## Share a bot for collaboration
 
-Everyone you share the bot with can view, edit, configure, share, and publish the bot. They can't delete the bot.
+Individual users that you share a bot with can view, edit, configure, share, and publish the bot. They can't delete the bot.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4DdcM]
@@ -122,9 +125,11 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 1. Specify the name or email address of each user that you would like to share the bot with.  
 
     > [!NOTE]
-    > You can only share a bot with individual users, which means you can't share it with a security group or distribution group in your organization.  
+    > When sharing a bot for _multi-user collaboration_, you can only share it with individual users. You can't share it with:
     >
-    > You also can't share with users or groups outside of your organization.  
+    > - A security group in your organization.
+    > - Distribution group in your organization.  
+    > - Users or groups outside of your organization.  
 
     :::image type="content" source="media/admin-share-bots/sharing-input-invitee.png" alt-text="Screenshot showing name input in the share window." border="false":::
 
