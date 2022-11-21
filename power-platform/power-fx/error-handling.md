@@ -205,7 +205,7 @@ The values -5 and -3 are properly filtered out.  The values 0 result in an error
 
 ## Data source errors
 
-The functions that modify data in data sources, such as **Patch**, **Collect**, **Remove**, **RemoveIf**, **Update**, **UpdateIf**, and **SubmitForm** report errors in two ways:
+The functions that modify data in data sources, such as **[Patch](function-patch.md)**, **[Collect](function-collect-clearcollect.md)**, **[Remove](function-remove-removeif.md)**, **[RemoveIf](function-remove-removeif.md)**, **[Update](function-update-updateif.md)**, **[UpdateIf](function-update-updateif.md)**, and **[SubmitForm](function-form.md)** report errors in two ways:
 - Each of these functions will return an error value as the result of the operation.  Errors can be detected with **IsError** and replaced or suppressed with **IfError** and **App.OnError** as usual.  
 - After the operation, the **Errors** function will also return the errors for previous operations.  This can be useful for displaying the error message on a form screen without needing to capture the error in a state variable.
 

@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/15/2022
+ms.date: 11/18/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:

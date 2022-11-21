@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/15/2022
+ms.date: 11/18/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -63,7 +63,7 @@ For example, you use `Set(MyAccount, Patch(Accounts, First(Account), 'Account Na
 LookUp(Accounts, Account = MyAccount.Account).'Primary Contact'.'Full Name'
 ```
 
-When you update a data source, one or more issues may arise. Use **[IfError](function-iferror.md)** and **[IsError](function-iferror.md)** with the return value from **Patch** to detect and respond to errors.  You can also use the **[Errors](function-errors.md)** function to identify and examine issues, as [Working with Data Sources](/power-apps/maker/canvas-apps/working-with-data-sources) describes.
+When you update a data source, one or more issues may arise. Use **[IfError](function-iferror.md)** and **[IsError](function-iferror.md)** with the return value from **Patch** to detect and respond to errors, as [Error Handling](../error-handling.md) describes.  You can also use the **[Errors](function-errors.md)** function to identify and examine issues, as [Working with Data Sources](/power-apps/maker/canvas-apps/working-with-data-sources) describes.
 
 Related functions include the **[Update](function-update-updateif.md)** function to replace an entire record, and the **[Collect](function-clear-collect-clearcollect.md)** function to create a record. Use the **[UpdateIf](function-update-updateif.md)** function to modify specific properties of multiple records based on a condition.
 
