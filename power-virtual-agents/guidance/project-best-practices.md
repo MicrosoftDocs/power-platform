@@ -1,13 +1,13 @@
 ---
 title: "Power Virtual Agents project best practices"
 description: "Set of best practices on how to start a PVA project"
-author: nesri
+author: nesrivastava
 
 ms.date: 11/22/2022
 ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
-ms.author: nesri
+ms.author: nesrivastava
 ms.collection: virtual-agent
 ---
 
