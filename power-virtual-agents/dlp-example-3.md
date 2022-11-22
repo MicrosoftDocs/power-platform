@@ -26,7 +26,11 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 ## Configure DLP to require authentication in the Power Platform admin center
 
+### Select or create a policy
+
 [!INCLUDE [Preview documentation notice](includes/dlp-create-or-select-policy.md)]
+
+### Add the connector
 
 1. Use the search box to find the **Chat without Azure AD authentication in Power Virtual Agents** connector.
 

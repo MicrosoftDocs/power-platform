@@ -1,4 +1,4 @@
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), under **Policies**, select **Data policies**. 
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), under **Policies**, select **Data policies**.
 
     :::image type="content" source="../media/dlp-create-or-select-policy/data-policies.png" alt-text="Screenshot of the Data polices option in the navigation menu.":::
 
