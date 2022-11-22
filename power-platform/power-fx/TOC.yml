@@ -24,6 +24,8 @@
           href: tables.md 
         - name: Variables
           href: variables.md
+        - name: Error handling
+          href: error-handling.md
         - name: Formula reference
           items:
           - name: Overview
