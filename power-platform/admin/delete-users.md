@@ -179,7 +179,7 @@ There are two ways to soft delete users.
 
 7. On the User Form, choose the **Delete** button.
 
-The user still exists in the environment as disabled and continues to show in the Disabled Users list. To permanently delete from the environment, see [How to permanently delete users in Dataverse](#how-to-permanently-delete-users-in-dataverse).
+The user still exists in the environment as disabled and continues to show in the Disabled Users list. To permanently delete from the environment, see [Permanently delete users in Dataverse](#permanently-delete-users-in-dataverse).
 
 #### Option B: View and soft delete disabled users who were permanently deleted from Azure AD
 
