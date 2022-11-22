@@ -20,7 +20,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-This article covers the various levels and methods of user deletion that involve three platforms: Microsoft 365 admin center, Azure Active Directory (Azure AD) admin center, and Power Platform admin center.
+This article covers the various levels and methods of user deletion in Microsoft Power Platform that involves the following: Microsoft 365 admin center, Azure Active Directory (Azure AD), and Power Platform admin center.
 
 > [!IMPORTANT]
 >
@@ -31,9 +31,11 @@ This article covers the various levels and methods of user deletion that involve
 
 Admins must use the Microsoft 365 admin center to delete users:
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [**Active users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
+1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com/).
 
-2. Select the names of the users you want to delete, and then select **Delete user**.
+1. Select **Users** > [**Active users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
+
+1. Select the names of the users you want to delete, and then select **Delete user**.
 
 Although you deleted the user's account, you're still paying for the license. To stop paying for the license, follow the procedures in [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide). Or, you can assign the license to another user. It won't be assigned to anyone automatically.
 
