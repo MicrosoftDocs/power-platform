@@ -8,7 +8,7 @@
 
         :::image type="content" source="../media/dlp-create-or-select-policy/new-policy.png" alt-text="Screenshot of the New policy button.":::
 
-    1. If you want to choose an existing policy to edit, select the policy you want to update and select **Edit policy**.
+    1. If you want to choose an existing policy to edit, select the policy and select **Edit policy**.
 
         :::image type="content" source="../media/dlp-create-or-select-policy/edit-policy.png" alt-text="Screenshot of the Edit policy button.":::
 
