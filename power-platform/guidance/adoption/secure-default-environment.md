@@ -11,6 +11,7 @@ ms.service: powerapps
 ---
 # Secure the default environment
 
+This document covers the areas to focus on as you think through the security of your default environment.
 
 ## Managing Administrators
 
@@ -18,7 +19,7 @@ In large organizations, you might want to assign the Environment Admin/System Ad
 
 Additional information:
 
-[Environment Overview](https://docs.microsoft.com/power-platform/admin/environments-overview)
+[Environment Overview](/power-platform/admin/environments-overview)
 
 [Environment Administration](https://docs.microsoft.com/power-platform/admin/environments-administration)
 
@@ -33,7 +34,7 @@ One of the first things a Power Platform CoE can do is to rename their Default E
 Additional information: 
 [Edit properties of an environment - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/edit-properties-environment)
 
-### Power Platform Wiki
+### Power Platform Hub
 
 In addition to renaming the Default Environment, the Power Platform CoE team should setup a central Wiki which contains information about the organization's Power Platform service. This can include but not limited to:
 
@@ -47,7 +48,8 @@ In addition to renaming the Default Environment, the Power Platform CoE team sho
 
 -   Rules around integrating with external services
 
-The CoE Starter Kit team added a feature which allows the CoE team to jumpstart a Power Platform Wiki. Please visit [Create an internal Microsoft Power Platform hub - Power Platform \| Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/wiki-community#get-started-with-the-power-platform-hub-template) to learn more.
+The [Microsoft Power Platform Hub](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/wiki-community#get-started-with-the-power-platform-hub-template) is a SharePoint communication site designed to provide you with a starting point of content and page templates as you're setting up your internal Power Platform communication site.
+
 
 ### Customizing Power Platform Messages
 
@@ -74,17 +76,15 @@ Additional Information:
 
 ## Sharing
 
-Environment makers can distribute the apps they build in an environment to other users in your organization by sharing the app with individual users or security groups. In addition to sharing an app with individuals the platform allows you to share an application with a specific Security Group or Everyone in the organization.
+Environment makers can distribute the apps they build in an environment to other users in your organization by sharing the app with individual users or security groups. In addition the platform allows a maker to share an application with  ["Everyone" in the organization](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/share-app).
 
-However, any app that is shared widely must be evaluated for:
+If your organization would like to use a gated process around widely used applications to enforce mandates such as:
+ - Security Review Policy
+ - Business Review Policy
+ - ALM Requirements
+ - User Experience / Branding
 
--   Business impact: What is the impact to business if the app breaks?
-
--   IT Policy: Does your organization mandate a review for widely shared apps?
-
--   ALM: Does the app need ALM?
-
-If your answer is a "Yes" to any of the questions above, consider disabling the Share with Everyone feature in Power Platform. Once restricted, only a small group of administrators can share an app with "Everyone" in an organization.
+you should consider disabling the Share with Everyone feature in Power Platform. Once restricted, only a small group of administrators are allowed to share an application with “Everyone” in the organization.
 
 To prevent sharing apps with everyone in the organization:
 
@@ -96,7 +96,7 @@ Within the powerPlatform.PowerApps object you can find three flags:
 
 ![Displays the attributes of the the $settings.powerPlatform.PowerApps](./media/securedefaultenvimage2.png)
 
-2.  Use the following command to get the settings object and set the share with everyone to false.
+2.  Use the following command to get the settings object and set the variable to share with everyone to false.
 
 ```powershell
 $settings=Get-TenantSettings 
@@ -112,19 +112,17 @@ Once these commands are run, only admins will have the privilege of sharing an a
 
 ## DLP Policy for Default Environment
 
-Now that we have covered the fundamentals of the Default Environment and DLP policies, let's go over the DLP policy considerations in a Default Environment. This section covers the recommended configuration when setting up a default environment DLP policy.
+This section covers the recommended configuration when setting up a default environment DLP policy.
 
 Related resources: [Create a data loss prevention (DLP) policy](https://docs.microsoft.com/power-platform/admin/create-dlp-policy)
 
-### Configuring Default Data Group
+### Block new connectors in default environment
 
 New connectors which are added to the platform are added to the Non-business group by default. You can configure it such that new connectors land in either the Business or Blocked data group. For the default environment DLP, it is recommended that the default data group (usually, Non-Business) is set to Blocked. This ensures that if any new connector is introduced, it will remain unusable until a Tenant Admin manually unblocks that connector.
 
 ### Prebuilt Connectors
 
-One of the primary purposes of the default environment is to provide a place for employees build small apps and automations for common business apps such as Microsoft Office to assist with their productivity. These include simple workflows and apps associated with their SharePoint lists. For anything more complex or larger scale, the apps or flows should be moved to an environment with more oversight.
-
-To provide your employees with a secure Default Environment, classify the Prebuilt connectors as follows:
+To restrict the access of the employees to only the basic non-blockable connectors and prevent access to the rest of the connectors, classify the Prebuilt connectors as follows:
 
 1.  Move all the connectors which cannot be blocked to the Business data group.
 
@@ -132,7 +130,7 @@ To provide your employees with a secure Default Environment, classify the Prebui
 
 ### Custom Connectors
 
-Custom connectors allow you to create a connector for their own home grown services. These services are generally intended for technical consumers like developers. The general rule of thumb is to **[reduce the footprint]{.underline}** of services that can be **[called/invoked from apps or flows in the default]{.underline}** **[environment]{.underline}**. If you want to ensure that all custom connectors are blocked, create a rule to block all URL patterns. If there are a subset of services that you would like your default environment users to have access to (for example: a service that returns a published list of holidays for the organization), you can configure multiple rules classifying different URL patterns into the Business and Non-Business data groups. Ensure that connections always use the HTTPS protocol. You can read more about configuring DLP policy for custom connectors here: [DLP policy for Custom Connectors](https://learn.microsoft.com/en-us/power-platform/admin/dlp-custom-connector-parity)
+Custom connectors allow you to create a connector for their own home grown services. These services are generally intended for technical consumers like developers. It is  prefered to reduce the footprint of APIs (built by the organization) that can be called/invoked from apps or flows in the default environment. To ensure that makers cannot create and use custom connectors for APIs, create a rule to block all URL patterns. If there are APOs that you would like your default environment users to have access to (for example: a service that returns a published list of holidays for the organization), you can configure multiple rules classifying different URL patterns into the Business and Non-Business data groups. Ensure that connections always use the HTTPS protocol. You can read more about configuring DLP policy for custom connectors here: [DLP policy for Custom Connectors](https://learn.microsoft.com/en-us/power-platform/admin/dlp-custom-connector-parity)
 
 ## Securing Integration with Exchange
 
@@ -143,8 +141,6 @@ Power Automate allows you to build automation at scale via low code. This allows
 The Microsoft Exchange Administrator in your organization can set up rules in the Exchange Server to prevent emails from being sent from apps. It's also possible to exclude specific flows or apps from the rules set up to block outgoing emails. You can combine this rule with an "Allowed List" of email addresses to ensure that outbound mails from Power Apps/Flow can only be sent from a small group of mailboxes.
 
 Whenever an app or flow sends an email (via the Office 365 Outlook connector), it will insert specific SMTP headers in the email. These headers contain reserved phrases that can be used to identify if the email originated from a flow or an app.
-
-Let's look at the SMTP headers and walkthrough some options to scenarios in which outbound emails can be blocked:
 
 The SMTP header inserted into an email sent from a flow looks like the example below:
 
@@ -202,21 +198,19 @@ Header Details:
 
     -   In Logic Apps, it will never be present.
 
-### Potential rules for the Default Environment
+### Potential Exchange Rules for the Default Environment
 
 Some email actions you might want to block:
 
 1.  Block outbound emails to external recipients
 
-**Rule:** Block all outbound emails sent to external recipients from Power Automate andPower Apps. This rule will ensure that citizen developers do not send out emails to external recipients (such as partners, vendors or clients) from apps or flows.
+**Rule:** Block all outbound emails sent to external recipients from Power Automate and Power Apps. This rule will ensure that citizen developers do not send out emails to external recipients (such as partners, vendors or clients) from apps or flows.
 
 2.  Block outbound forwarding
 
 **Rule**: Block all outbound emails forwarded to external recipients from Power Automate and Power Apps where the sender is not from a "Allowed list" of mailboxes
 
-This rule will ensure that users cannot create a flow which will automatically forward inbound
-
-emails to an external recipient.
+This rule will ensure that users cannot create a flow which will automatically forward inbound emails to an external recipient.
 
 Some potential exceptions for the above rules to add flexibility:
 
@@ -226,7 +220,7 @@ Add an exemption list to the rules above so that approved apps or flows can send
 
 2.  Organization-Level Allow List
 
-You can use Power Apps and flows as a part of an enterprise scale solution. In this scenario it would make sense to move the solution into a dedicated environment. If several flows in the environment have to send out bound emails, you can create a blanket exception rule to allow outbound emails from that environment. Of course it goes without saying that the maker and admin permission on that environment has to be tightly controlled and limited.
+In this scenario it would make sense to move the solution into a dedicated environment. If several flows in the environment have to send outbound emails, you can create a blanket exception rule to allow outbound emails from that environment. Of course it goes without saying that the maker and admin permission on that environment has to be tightly controlled and limited.
 
 ## Cross Tenant Isolation
 

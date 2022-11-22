@@ -12,10 +12,8 @@ ms.service: powerapps
 # Manage the default environment
 
 
-
 ## Reactive Governance
-
-Every employee in an organization will have access to the Default Environment in a tenant. It is not possible to remove their Environment Maker Role from the Default Environment. As a part of the monitoring function CoE Starter Kit inventories the organization's Power Platform landscape every day. Reactive Governance is the process where CoE teams, using the information gathered by CoE Starter Kit and a combination of governance tools like Power Platform Power Shell Cmdlets or Admin Connectors of Power Platform, CoE teams can exert further fine grain control on the Default Environments. In the next few sections, we are going to look at some approaches to extend control over the default environment over and above what is offered directly out of the box.
+Every employee in an organization will have access to the Default Environment in a tenant. It is not possible to remove their Environment Maker Role from the Default Environment. Reactive Governance is the process where CoE teams, using the information gathered by CoE Starter Kit and a combination of  tools like Power Platform Power Shell Cmdlets or Admin Connectors of Power Platform. This article provides some best practices for using the data you gather from these sources to manage your default environment.
 
 Additional Information:
 
@@ -31,7 +29,7 @@ Additional Information:
 
 ## Tracking Integrations
 
-Connectors is a service within Power Platform which allows applications and flows to integrate with services. There are over 800+ connectors to different services out of the box that users can use. Using DLP policies explained above, Power Platform administrators can control which integrations are allowed in each environment. However, there are few standard connectors. In some organizations, as Power Platform administrator you would like to prevent users from using a specific non-blockable connector. For example, you might want to track the apps and flows in default environment which use the Exchange connector and encourage the makers to move to a different environment which allows outbound emails.
+Connectors is a service within Power Platform which allows applications and flows to integrate with services. There are over 800+ connectors to different services out of the box that users can use. Using [DLP policies](https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention), Power Platform administrators can control which integrations are allowed in each environment. However, there are some standard [connectors that cannot be blocked](https://learn.microsoft.com/en-us/power-platform/admin/dlp-connector-classification#list-of-connectors-that-cant-be-blocked) (or connectors you don’t want to block), but you do want to know if your users are using them so that you can provide policy guidance. For example, you might want to track the apps and flows in default environment which use the Exchange connector and direct the makers to move to a different environment which allows outbound emails.
 
 The Core Components in CoE Starter Kit contains the schema and flows to retrieve the list of all environments and resources (apps, flows) within each environment. It also records the details of connectors used by the app or flow. This data is refreshed every 24 hours. You can use the CoE dashboards to discover the connections leveraged across the different environments. You can also search for related flows and apps directly from the CoE Dataverse. You can find more information on tracking connectors here:
 
@@ -39,24 +37,26 @@ The Core Components in CoE Starter Kit contains the schema and flows to retrieve
 
 ## Discovering Unused and Abandoned Apps/Flows
 
-As Power Platform adoption in your organizations grows, you are going to run into the issue of abandoned apps and flows. When an employee exits an organization, the apps and flows owned by the employee are in effect abandoned. These apps and flows are called Abandoned Apps/Flows. Sometimes an employee might create an app or a flow which is used for a short duration and then unused. These apps and flows are called Unused apps/flows.
+As Power Platform adoption in your organizations grows, you are going to run into the issue of abandoned and unused apps and flows. 
+* When an employee exits an organization, the apps and flows owned by the employee are in effect abandoned. These apps and flows are called Abandoned Apps/Flows. 
+* An employee might create an app or a flow which is used for a short duration and then remains unused. These apps and flows are called Unused apps/flows.
 
-To maintain the overall hygiene, it makes sense to establish processes and procedures to clean up abandoned and unused flows and apps. This is especially important for the Default Environment as all the users are allowed to create apps and flows here.
+To maintain the overall hygiene, it makes sense to establish processes and procedures to clean up abandoned and unused flows and apps. This is especially important for the Default Environment as all the users are makers.
 
 The CoE Starter Kit defines two different processes to handle abandoned and unused apps/flows:
 
 -   Clean up for abandoned apps: [Set up clean-up for orphaned objects - Power Platform \| Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/guidance/coe/setup-orphan-components)
 
--   Clean up for inactive apps: [Set up inactivity notifications components - Power Platform \| Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/guidance/coe/setup-archive-components)
+-   Clean up for unused apps: [Set up inactivity notifications components - Power Platform \| Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/guidance/coe/setup-archive-components)
 
 You can choose to use the processes as is or modify it to suit the needs of your organization.
 
 ## Discovering Highly Used Power Apps
 
-While the Default Environment is intended to build personal productivity apps/flows, some citizen developers might end up creating apps which become widely adopted or business cirical. While this is a good outcome, it also needs to be managed. When a Personal Productivity app/flow suddenly becomes an app used by more than 10 employees, the Power Platform CoE should evaluate if the app should be moved to it own environment or a shared environment for the team/group. You can use some of the following parameters to determine if you app should be moved out to a dedicated Environment, a shared Environment or best left alone in the Default Environment. You can read more about Environment Strategy and different groups of environments here: [Establishing an environment strategy - Microsoft Power Platform - Power Platform \| Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/environment-strategy)
+While the Default Environment is intended to build personal productivity apps/flows, some citizen developers might end up creating apps which become widely adopted or business critical. While this is a good outcome, it  needs to be managed. When a Personal Productivity app/flow suddenly becomes an app used by more than 10 employees, the Power Platform CoE should evaluate if the app should be moved to it own environment or a shared environment for the team/group. You can use some of the following parameters to determine if you app should be moved out to a dedicated Environment, a shared Environment or best left alone in the Default Environment. You can read more about Environment Strategy and different groups of environments here: [Establishing an environment strategy - Microsoft Power Platform - Power Platform \| Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/environment-strategy)
 
 <table>
-    <th>Parameters</th><th>Definiging Criteria</th><th>Environment</th>
+    <th>Parameters</th><th>Defining Criteria</th><th>Environment</th>
     <tr>
         <td rowspan="3">Number of Users</td>
         <td>1-10 users</td>
@@ -86,23 +86,31 @@ While the Default Environment is intended to build personal productivity apps/fl
      <tr>
         <td rowspan="2">Impact to Business <br/>(monetory or reputation)</td>
         <td>Yes</td>
-        <td>Shared or Default</td>
+        <td>Shared or Dedicated</td>
     </tr>
     <tr>
-        <td>no</td>
+        <td>No</td>
         <td>Default</td>
     </tr>
-    
+      <tr>
+        <td rowspan="2">Requires ALM</td>
+        <td>Yes</td>
+        <td>Shared or Dedicated</td>
+    </tr>
+    <tr>
+        <td>No</td>
+        <td>Default</td>
+    </tr>
 </table>
 
-**NOTE** These are indicative examples of parameters used to take a decision in porting an app from Default Environment to a shared or dedicated environment. Your CoE should determine these parameters and defining criteria in alignment with your business goals
+**NOTE** These are indicative examples of parameters used to take a decision in porting an app from Default Environment to a shared or dedicated environment. Your CoE should determine these parameters and defining criteria in alignment with your business goals.
 
 You can use the CoE Starter Kit to discover highly shared apps and flows. The CoE Starter Kit provides a Power BI dashboard that allows you to surface this information. You can read more about it here: [Identify widely shared apps](https://learn.microsoft.com/en-us/power-platform/guidance/coe/power-bi-govern#identify-widely-shared-apps)
 The Compliance process in the CoE starter kit can be used to track app sharing/usage. You can use this app right out of the box or configure it to meet your organization's process. You can read more about it here: [Example App auditing process - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/guidance/coe/example-processes)
 
 ## Migrating Applications from Default Environment
 
-Solutions can be used to package your applications, flows, table schemas from one environment to another. CoE teams can create a process by which an app created by a Citizen Developer, the table schema and flows into one solution, moved to a target solution and finally delete it from the Default Environment. To successfully migrate the app over to a different environment perform the following steps:
+Solutions can be used to package and deploy your applications, flows, table schemas from one environment to another. CoE teams can create a process to package the solution components, deploy it to a target environment and finally delete it from the Default Environment. To successfully migrate an app or flow over to a different environment perform the following steps:
 
 1.  Create a solution and add the app and all its dependencies into it. The dependencies include the apps, flows, table schemas.
 
@@ -177,4 +185,4 @@ Key points to keep in mind:
 
 ## Backup and Restore of Default Environment
 
-Like every other environment type (sandbox, production, developer), default environment also gets backed up. However, there is no manual backup that you can request for this environment. Restore operation is a possibility like every other environment and needs to go through a support ticket. A big caution on trying to restore default environment is that you need to consider the cleanup of all those test apps and flows that are created.
+Like every other environment type (sandbox, production, developer), default environment also gets archived. However, there is no manual backup that you can request for this environment. Restore operation is a possibility like every other environment and needs to go through a support ticket. A big caution on trying to restore default environment is that you need to consider the cleanup of all those test apps and flows that are created.
