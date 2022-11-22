@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Delete users from environments (preview)
+# Delete users from environment (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -27,7 +27,7 @@ This article covers the various levels and methods of user deletion in Microsoft
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-## Delete users from Microsoft 365 admin center
+## Delete users in Microsoft 365 admin center
 
 Admins must use the Microsoft 365 admin center to delete users:
 
@@ -148,7 +148,7 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 > [!NOTE]
 > You can restore deleted users up to 30 days after deletion. When a deleted user is restored and a license is reassigned, the user's status is set to **Enabled** in the respective environments in which the user was disabled.
 
-## Delete users from Dataverse
+## Delete users in Dataverse
 
 Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in Power Platform environment(s) with a **Disabled** status. These users can now be deleted permanently from Power Platform environments. Deleting users from Power Platform environments goes through the similar deletion stages as in Azure AD. When you first delete the user in the Power Platform environment, the disabled user is first *soft deleted*, and then you can *permanently delete* the user.
 
@@ -216,6 +216,7 @@ The name of the deleted user continues to show in the audit log records where th
 
 - The user must already be soft deleted. See the previous section for information.
 - All records owned by the user must be reassigned to another user. User records can be reassigned from the [User settings page](users-settings.md).
+- You must have turned on the **Enable disabled users (preview)** feature setting for your environment using the Power Platform admin center. More information: [Manage feature settings](settings-features.md).
 
 #### How to permanently delete users
 

@@ -31,7 +31,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > [!NOTE]
 > These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
 
-## Settings 
+## Settings
 
 > [!div class="mx-tableFixed"]
 > |Settings|Description|  
@@ -50,7 +50,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Set the telephony provider|Default: On. Choose which provider to enable outbound calls from within customer engagement apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.|  
 > |Use Skype| Default: enabled. More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)|
 > |Use Skype for Business| Default: not enabled. |
-> | Hosted RPA bots (Preview) | Default: On. If **On**, users can run unattended automation at scale without the need to provide or setup any machine. More information: [Hosted RPA bots (preview)](/power-automate/desktop-flows/hosted-rpa-bots). 
+> | Hosted RPA bots (Preview) | Default: On. If **On**, users can run unattended automation at scale without the need to provide or setup any machine. More information: [Hosted RPA bots (preview)](/power-automate/desktop-flows/hosted-rpa-bots).
 > |**Grids and views**||  
 > | Enable the modern read-only grid experience. | Default: On. If **On**, the Power Apps read-only grid control lets users view and open records from views and subgrids. |
 > |Show the Edit columns button on views | Default: On. If **On**, users can create personal views by adding, removing, and reordering columns on a view accessible to them in a model-driven app. More information: [Edit columns on a grid page](/powerapps/user/grid-filters-advanced#column-editor). This setting only appears if you have enabled 2022 Release Wave 1. |  
@@ -60,7 +60,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Allow users to hide system views|Default: Off. If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. More information: [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you have enabled 2022 Release Wave 1.|
 > |Show advanced lookup in lookup fields within Edit filters|Default: Off. If **On**, users see **Advanced lookup**, an option to see more fields and search for records within a specific view, when looking up a value as part of a condition in Edit filters panel in all model-driven apps.|
 > |Show co-presence of colleagues on forms | Default: Off. Turn **On**, to allow users to see each others presence status on a form when they're working on the same record. For more information see, [Collaborate with others in model-driven apps](/powerapps/user/collaboration).  |
-> | **Activities**   | Default: Off. Select **On** to limit the number of activities showing up in the **New Activity** dropdown list to activities that are relevant to the model-driven app. | 
+> | **Activities**   | Default: Off. Select **On** to limit the number of activities showing up in the **New Activity** dropdown list to activities that are relevant to the model-driven app. |
 > |**Asynchronous merge** | |
 > | Allow records to be merged asynchronously | Default: Off. If **On**, records merged through the Unified Client interface will be merged asynchronously in the background. |
 > |**Search**||  
@@ -68,7 +68,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Share search analytics with Microsoft | Default: Off. To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. More information: [Help improve Dataverse search](configure-relevance-search-organization.md#help-improve-dataverse-search)      |
 > |Single table search option|Default: Off. If **On**, users will see an additional option to search on a single table on view pages of search-enabled tables in all model-driven apps.|
 > |Prevent slow keyword filter for quick find terms on view pages | Default: Off. If **On**, users will be prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message will be displayed in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip will be displayed indicating the search might be slow. More information: [Grid search](/power-apps/user/grid-filters#grid-search) |
-> |Quick Find record limits|Default: On. If **On**, if more than 10,000 records are found, a message will be displayed that suggests a more selective search. More information: [Configure Dataverse search for the organization](configure-relevance-search-organization.md)| 
+> |Quick Find record limits|Default: On. If **On**, if more than 10,000 records are found, a message will be displayed that suggests a more selective search. More information: [Configure Dataverse search for the organization](configure-relevance-search-organization.md)|
 > | Use Quick Find View of an entity for searching on grids and sub-grids| Default Off. Select **Yes** to show the traditional Quick Find search in an entity grid. The traditional Quick Find search applies the [Quick Find View](/powerapps/maker/model-driven-apps/create-edit-views#system-views) filters and displays the Quick Find columns after searching.      |
 > | **Map and address services**   |    |
 > | Limited   | Default: On. Select **On** to allow map display, latitude, and longitude pins, and shapes.  |
@@ -80,6 +80,8 @@ Make sure you have the System Administrator or System Customizer security role o
 > | Enable Custom Help Panes | Default: Off. Select **On** to enable a custom in-product help experience that is tailored to your organization. More information: [Create guided help for your Unified Interface app](/power-apps/maker/data-platform/create-custom-help-pages).
 > |**Power Apps component framework for canvas apps**  |  |
 > |Allow publishing of canvas apps with code components | Default: Off. Enables Power Apps component framework feature that allows the execution of code that may not be generated by Microsoft when a maker adds code components to an app. Make sure that the code component solution is from a trusted source. More information: [Code components for canvas apps](/powerapps/developer/component-framework/component-framework-for-canvas-apps) |
+> |**Delete disabled users (preview)**  |  |
+> |Enable delete disabled users | Default: Off. Delete disabled users permanently from the environment. More information: [Permanently delete users](delete-users.md#permanently-delete-users-in-dataverse) |
 > |**TDS endpoint** | Default: On. Enables [Tabular Data Stream](/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50) (TDS) endpoint (a SQL data connection) for Microsoft Dataverse in an environment. More information: [Use SQL to query data](/powerapps/developer/common-data-service/cds-sql-query) and [View entity data in Power BI Desktop](/powerapps/maker/common-data-service/view-entity-data-power-bi)|
 > | **Record ownership across business units (Preview)**  | Default: Off. Set to **On** to enable the Matrix data access structure. Not recommended for production environments.  More information: [Matrix data access structure (Modernize Business Units - Preview)](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) |
 > | **Dynamics 365 Sales mobile app** |  |
