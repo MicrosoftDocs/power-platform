@@ -4,8 +4,6 @@
       items: 
         - name: Overview
           href: overview.md
-        - name: Error handling
-          href: error-handling.md
         - name: Expression grammar
           href: expression-grammar.md
         - name: YAML formula grammar
@@ -26,6 +24,8 @@
           href: tables.md 
         - name: Variables
           href: variables.md
+        - name: Error handling
+          href: error-handling.md
         - name: Formula reference
           items:
           - name: Overview
