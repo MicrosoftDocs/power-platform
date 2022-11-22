@@ -80,7 +80,7 @@ For this example, we'll be working with the **IceCream** data source:
 
 Through the app, a user loads the Chocolate record into a data-entry form and then changes the value of **Quantity** to 90. The record to be worked with is placed in the [context variable](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable) **EditRecord**:
 
-- **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
+- **UpdateContext( { EditRecord: LookUp( IceCream, Flavor = "Chocolate" ) } )**
 
 To make this change in the data source, the **[Patch](function-patch.md)** function is used:
 
