@@ -27,9 +27,9 @@ This article covers the various levels and methods of user deletion that involve
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-## Delete users from the Microsoft 365 admin center
+## Delete users from Microsoft 365 admin center
 
-Users are deleted in the Microsoft 365 admin center as follows:
+Admins must use the Microsoft 365 admin center to delete users:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [**Active users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
 
@@ -53,9 +53,9 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 > ![Run diagnostics results.](media/run-diagnostics.png "Run diagnostics results")
 
 > [!NOTE]
-> A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for 30 days and can be restored as directed in [Restore a user](/microsoft-365/admin/add-users/restore-user?view=o365-worldwide).
 >
-> After the 30-day window, the user account is permanently deleted by an automatic deletion process. If you want to delete the user permanently without waiting for 30 days, you can [permanently delete the user](/azure/active-directory/fundamentals/active-directory-users-restore) using Azure Active Directory (Azure AD) in the Azure portal.
+> - A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for thirty days and can be restored as mentioned in [Restore deleted users](#restore-deleted-users) later in this article.
+> - After the thirty-day window, the user account is permanently deleted by an automatic deletion process. If you want to delete the user permanently without waiting for 30 days, you can [permanently delete the user](/azure/active-directory/fundamentals/active-directory-users-restore) using Azure Active Directory (Azure AD) in the Azure portal.
 
 ## Disabled Azure AD user stages
 
