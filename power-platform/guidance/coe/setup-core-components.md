@@ -58,8 +58,7 @@ We recommend that you create connections to all connectors used in the solution 
     - [SharePoint](/connectors/sharepointonline/)
     - [HTTP with Azure AD](/connectors/webcontents/)
 1. Create a connection for [HTTP with Azure AD](/connectors/webcontents/), and set **Base Resource URL** and **Azure AD Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
-
-    ![Establish an HTTP with Azure AD connection.](media/httpazuread.png "Establish an HTTP with Azure AD connection.")
+:::image type="content" source="media/httpazuread.png" alt-text="Establish an HTTP with Azure AD connection":::
 
 ## Set up the Inventory components using the Setup Wizard [Preview]
 
@@ -81,6 +80,7 @@ The import can take up to 15 minutes to be completed.
 1. Open the **Center of Excellence - Core Components** solution, once import has finished.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. This app provides a guided step by step experience through the configuration steps.
+    :::image type="content" source="media/coesetupwizard.png" alt-text="CoE Starter Kit Setup Wizard":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
@@ -128,7 +128,7 @@ The import can take up to 15 minutes to be completed.
 >The next steps walk you through turning on flows that gather your tenants inventory. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
 
 >[!NOTE]
->The steps below will create an inventory of all enviroments in your tenant, if you wish to inventory only a subset of environments, plesae see [Setting up CoE for a subset of environments](faq.md#setting-up-coe-for-a-subset-of-environments) before proceeding.
+>The steps below will create an inventory of all environments in your tenant, if you wish to inventory only a subset of environments, please see [Setting up CoE for a subset of environments](faq.md#setting-up-coe-for-a-subset-of-environments) before proceeding.
 
 ### Turn on child flows
 
@@ -235,16 +235,14 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Go to **Azure Active Directory** > **App registrations**.
-
-   ![Azure AD app registration.](media/coe33.png "Azure AD app registration")
+    :::image type="content" source="media/coe33.png" alt-text="Azure AD app registration":::
 
 1. Select **+ New Registration**.
 
 1. Enter a name (for example, **CoE Command Center**), don't change any other setting, and then select **Register**.
 
 1. Select **API Permissions** > **+ Add a permission**.
-
-   ![API Permissions - Add a permission.](media/coe34.png "Add a permission")
+     :::image type="content" source="media/coe34.png" alt-text="API Permissions - Add a permission":::
 
 1. Select **Microsoft Graph**, and configure permissions as follows:
 
@@ -257,8 +255,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 1. Select **Certificates and secrets**.
 
 1. Select **+ New client secret**.
-
-   ![New client secret.](media/coe39.png "New client secret")
+    :::image type="content" source="media/coe9.png" alt-text="Add new client secret":::
 
 1. Add a description and expiration (in line with your organization's policies), and then select **Add**.
 
