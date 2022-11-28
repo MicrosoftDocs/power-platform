@@ -6,7 +6,7 @@ manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 12/07/2022
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
