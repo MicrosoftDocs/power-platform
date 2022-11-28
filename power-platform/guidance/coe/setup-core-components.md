@@ -31,6 +31,12 @@ The flows in this solution sync all your resources into tables and build admin a
 
 ## Before you start
 
+### Import Creator Kit
+
+The CoE Starter Kit includes features that required the installation of the [Creator Kit](https://aka.ms/creatorkit) in the environment where you install the CoE Starter Kit.
+
+[Install the Creator Kit](https://learn.microsoft.com/power-platform/guidance/creator-kit/setup) before proceeding.
+
 ### Create connections
 
 We recommend that you create connections to all connectors used in the solution prior to importing the solution. This will make the setup faster.
@@ -57,6 +63,32 @@ We recommend that you create connections to all connectors used in the solution 
 
     ![Establish an HTTP with Azure AD connection.](media/httpazuread.png "Establish an HTTP with Azure AD connection.")
 
+## Set up the Inventory components using the Setup Wizard [Preview]
+
+### Import the core components solution
+
+1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+
+    >[!IMPORTANT]
+    > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
+
+1. Import the **CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip** solution file from the download.
+
+1. Leave all environment variable values blank.
+
+The import can take up to 15 minutes to be completed.
+
+## Open the Setup Wizard to complete the configuration
+
+1. Open the **Center of Excellence - Core Components** solution, once import has finished.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the Inventory components manually
+
 ### Gather environment variable values
 
 During solution import, you'll configure environment variable values. Make sure to have the following information ready.
@@ -74,10 +106,10 @@ During solution import, you'll configure environment variable values. Make sure 
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)|
 |PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including the trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
-|Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
+|Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://make.powerautomate.com/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
 | TenantID | Your Azure tenant ID. Learn more: [Find Tenant ID through the Azure Portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal)|
 
-## Import the core components solution
+### Import the core components solution
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
@@ -98,7 +130,7 @@ The import can take up to 15 minutes to be completed.
 >[!NOTE]
 >The steps below will create an inventory of all enviroments in your tenant, if you wish to inventory only a subset of environments, plesae see [Setting up CoE for a subset of environments](faq.md#setting-up-coe-for-a-subset-of-environments) before proceeding.
 
-## Turn on child flows
+### Turn on child flows
 
 There are several child flows, check to make sure all of these flows are on:
 
@@ -121,7 +153,7 @@ If you get a connection authorization error turning on a flow, you might need to
 
  ![Connection authorization error when turning on the flow.](media/connerror.png "Connection authorization error when turning on the flow.")
 
-## Turn on setup flows
+### Turn on setup flows
 
 The following flows support the inventory setup and need to be turned on before proceeding:
 
@@ -144,7 +176,7 @@ The following flows support the inventory setup and need to be turned on before 
 > - **Admin | Sync Template v3 Configure Emails**
 > - **Admin | Sync Template v3 (Connectors)**
 
-## Turn on inventory flows
+### Turn on inventory flows
 
 The Admin \| Sync Template flows part of this solution crawl through all the resources stored in your Microsoft Power Platform environments and make a copy of details in each resource (for example, apps and flows) to Microsoft Dataverse tables. Most apps and flows in the CoE Starter Kit rely on this, which means that the inventory flows must be configured for everything else to work. The sync flows run daily, and some of the clean-up flows run every two weeks.
 

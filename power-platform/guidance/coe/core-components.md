@@ -497,7 +497,7 @@ Use this app to:
 
 ![Admin - Environment Request canvas app.](media\dev-resources-admin-details.png "Admin - Environment Request canvas app")
 
-#### Environment Requests
+#### Maker - Environment Requests
 
 A canvas app designed to easily submit requests for Power Platform resources (such as Environment Creation Requests).
 

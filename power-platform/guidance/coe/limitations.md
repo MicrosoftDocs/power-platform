@@ -28,7 +28,7 @@ There are some flows, which crawl the tenant in order to do their work. Specific
 
 To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations)
 
-Larger tenants might require a [Power Automate Per Flow](https://flow.microsoft.com/pricing/) license or may need to set up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) in order for these flows to complete in a timely manner.
+Larger tenants might require a [Power Automate Per Flow](https://powerautomate.microsoft.com/pricing/) license or may need to set up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) in order for these flows to complete in a timely manner.
 
 >[!NOTE]
 >The first run of the sync flows will perform a full inventory and will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not go over Power Platform request entitlements for most tenants.
@@ -98,7 +98,7 @@ If your Power Platform admin role is managed via **[PIM](/azure/active-directory
 
 Monitoring Cloud flow runs is currently not included in the CoE Starter Kit. Monitoring Desktop flow runs is included, although limited.
 
-For more details on managing Desktop flows, check out the [Advanced Power Automate RPA Run Log Analytics with Power BI and Dataverse](https://flow.microsoft.com/blog/advanced-power-automate-rpa-run-log-analytics-with-power-bi-and-dataverse/) solution.
+For more details on managing Desktop flows, check out the [Advanced Power Automate RPA Run Log Analytics with Power BI and Dataverse](https://powerautomate.microsoft.com/blog/advanced-power-automate-rpa-run-log-analytics-with-power-bi-and-dataverse/) solution.
 
 ## Unpublished model-driven apps
 
