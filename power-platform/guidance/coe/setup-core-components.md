@@ -24,8 +24,6 @@ This article will help you set up the inventory components of the Core solution 
 
 The flows in this solution sync all your resources into tables and build admin apps, flows, and dashboards on top of this inventory to help you get a holistic overview into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.
 
-[Watch a walk-through](https://www.youtube.com/embed/Z9Vp2IxFzpU) on how to set up the core components solution.
-
 >[!IMPORTANT]
 >Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes that you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
@@ -88,6 +86,8 @@ The import can take up to 15 minutes to be completed.
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
 ## Set up the Inventory components manually
+
+[Watch a walk-through](https://www.youtube.com/embed/Z9Vp2IxFzpU) on how to set up the core components solution manually.
 
 ### Gather environment variable values
 
