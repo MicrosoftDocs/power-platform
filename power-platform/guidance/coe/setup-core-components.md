@@ -76,7 +76,7 @@ We recommend that you create connections to all connectors used in the solution 
 
 The import can take up to 15 minutes to be completed.
 
-## Open the Setup Wizard to complete the configuration
+### Open the Setup Wizard to complete the configuration
 
 1. Open the **Center of Excellence - Core Components** solution, once import has finished.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
