@@ -392,7 +392,7 @@
                   href: regions-overview.md
                 - name: Multiple online environments or tenants
                   href: multiple-online-environments-tenants.md
-                - name: Migrate default and Dataverse for Teams environment
+                - name: Migrate default and Dataverse for Teams environments
                   href: migrate-default-teams-environment.md
                 - name: Administration mode
                   href: admin-mode.md
