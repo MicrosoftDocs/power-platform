@@ -57,7 +57,7 @@ After you've identified an environment to be, set as the new default environment
 
 After the default environment migration, you may add a Dataverse database to the new default environment and if necessary export apps, flows, and other data from the old (Production) environment and import to the new default environment.
 
-## Migrate Teams environment
+## Migrate Dataverse for Teams environment
 
 Migrating Dataverse for Teams type environments between geographical regions is typically not supported. There are certain conditions that Microsoft support would make an exception and help moving Dataverse for Teams to a different geographical region. Although some of the considerations described above for the default environment also applies to Dataverse for Teams environment, the process is different. For Teams a geo-to-geo move is performed by Microsoft support. More information: [Geo to geo migrations](geo-to-geo-migrations.md)
 
