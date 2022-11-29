@@ -11,19 +11,16 @@ ms.service: powerapps
 ---
 # Manage the default environment
 
-Every employee in an organization will have access to the Power Platform default environment in a tenant. It is not possible to remove the environment maker role from the default environment. CoE teams can gather information using the CoE Starter Kit, PowerShell cmdlets, and Power Platform admin connectors to see what is happening in environments and use that information to guide makers and exert control over their apps and flows. This article provides some best practices for using the data you gather from these sources to manage your default environment.
+Every employee in an organization will have access to the Power Platform default environment in a tenant. It isn't possible to remove the environment maker role from the default environment. Center of Excellence (CoE) teams can gather information using the CoE Starter Kit, PowerShell cmdlets, and Power Platform admin connectors to see what is happening in environments and use that information to guide makers and exert control over their apps and flows. This article provides some best practices for using the data you gather from these sources to manage your default environment.
 
 Additional Information:
 
 - [Power Platform for Admins - Connectors](/connectors/powerplatformforadmins/)
-
 - [Power Automate Management - Connectors](/connectors/flowmanagement/)
-
 - [Power Automate for Admins - Connectors](/connectors/microsoftflowforadmins/)
-
 - [Power Apps for Admins - Connectors](/connectors/powerappsforadmins/)
-
 - [Programmability and Extensibility - PowerShell - Getting started](/power-platform/admin/powershell-getting-started)
+- [What is a Center of Excellence?](../coe/motivation.md)
 
 ## Tracking integrations
 
@@ -31,15 +28,15 @@ Connectors are services within Power Platform that allows applications and flows
 
 However, there are some connectors that that drive core Power Platform functionality so these are [connectors that can't be blocked](/power-platform/admin/dlp-connector-classification#list-of-connectors-that-cant-be-blocked). You'll want to know if your users are using a non-blocking connector so that you can provide policy guidance. For example, you might want to track the apps and flows in the default environment that use the Exchange connector and direct the makers to move to a different environment, which allows outbound emails.
 
-The core components in the CoE Starter Kit contains the schema and flows to retrieve the list of all environments and resources, such as apps and flows, within each environment. The starter kit also records the details of connectors used by the app or flow. This data is refreshed every 24 hours. You can use the CoE dashboards to discover the connections leveraged across the different environments. You can also search for related flows and apps directly from the Dataverse environment where the CoE Starter Kit is installed. You can find more information on tracking connectors here:
+The core components in the CoE Starter Kit contain the schema and flows to retrieve the list of all environments and resources, such as apps and flows, within each environment. The starter kit also records the details of connectors used by the app or flow. This data is refreshed every 24 hours. You can use the CoE dashboards to discover the connections leveraged across the different environments. You can also search for related flows and apps directly from the Dataverse environment where the CoE Starter Kit is installed. You can find more information on tracking connectors here:
 
 [Monitor with the CoE Power BI dashboard](/power-platform/guidance/coe/power-bi-monitor)
 
 ## Discovering unused and abandoned apps and flows
 
-As Power Platform adoption in your organizations grows, you are likely to have abandoned and unused apps and flows in your default environment.
+As Power Platform adoption in your organizations grows, you're likely to have abandoned and unused apps and flows in your default environment.
 * When an employee exits an organization, the apps and flows owned by the employee are in effect abandoned. These apps and flows are called abandoned apps/flows.
-* An employee might create an app or a flow which is used for a short duration and then remains unused. These apps and flows are called unused apps/flows.
+* An employee might create an app or a flow, which is used for a short duration and then remains unused. These apps and flows are called unused apps/flows.
 
 To maintain the overall environment hygiene, establish processes and procedures to clean up abandoned and unused flows and apps. This is especially important for the default environment as all the users in the environment are potential makers.
 
@@ -86,7 +83,7 @@ Below are indicative examples of the parameters used to make a decision in movin
         <td>Default</td>
     </tr>
      <tr>
-        <td rowspan="2">Impact to Business <br/>(monetory or reputation)</td>
+        <td rowspan="2">Impact to Business <br/>(monetary or reputation)</td>
         <td>Yes</td>
         <td>Shared or Dedicated</td>
     </tr>
@@ -131,15 +128,15 @@ More information: [Introduction to solutions](/power-apps/developer/data-platfor
 
 ## Quarantining apps
 
-Power Apps exposes a functionality that allows the Power Platform admin to quarantine a canvas app. Once quarantined, the app can't be played by users the app has been shared with. You can also un-quarantine an app to restore access to shared users. Only admins can change the state of an app. Makers can still edit an app irrespective of the quarantine status of the app.
+Power Apps exposes a functionality that allows the Power Platform admin to quarantine a canvas app. Once quarantined, the app can't be played by users the app has been shared with. You can also unquarantine an app to restore access to shared users. Only admins can change the state of an app. Makers can still edit an app irrespective of the quarantine status of the app.
 
-In the default environment, the app quarantine feature is particularly useful in several scenarios:
+In the default environment, the app quarantine feature is useful in several scenarios:
 
 - The organization wants to disable the app temporarily until the app is reviewed for use.
 
 - Disabling access to an app, which has been shared with many individual users.
 
-- You can use this process to stand in for a "soft-delete" of an app when it is being upgraded or moved to a different environment as discussed in the previous section.
+- You can use this process to stand in for a "soft-delete" of an app when it's being upgraded or moved to a different environment as discussed in the previous section.
 
 Quarantining an app is supported using three PowerShell cmdlets:
 
@@ -148,7 +145,7 @@ Quarantining an app is supported using three PowerShell cmdlets:
 Set-AppAsQuarantined -EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
-- Un-quarantine.
+- Unquarantine.
 ```
 Set-AppAsUnquarantined -EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
@@ -158,11 +155,11 @@ Set-AppAsUnquarantined -EnvironmentName <EnvironmentName> -AppName <AppName>
 Get-AppQuarantineState -EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
-## Designated sharePoint form environment
+## Designated SharePoint form environment
 
-Power Platform is tightly integrated with the rest of the Microsoft enterprise ecosystem. This allows any user, irrespective of their skill developing applications, to build high impact automations and applications for themselves or their teams. One of the most powerful examples is the integration between SharePoint and Power Platform. You can create or customize a SharePoint form using Power Apps. More information: [Customize a Microsoft Lists or SharePoint form by using Power Apps](/power-apps/maker/canvas-apps/customize-list-form)
+Power Platform is tightly integrated with the rest of the Microsoft enterprise ecosystem. This allows any user, irrespective of their skill developing applications, to build important automations and applications for themselves or their teams. One of the most powerful examples is the integration between SharePoint and Power Platform. You can create or customize a SharePoint form using Power Apps. More information: [Customize a Microsoft Lists or SharePoint form by using Power Apps](/power-apps/maker/canvas-apps/customize-list-form)
 
-When a user creates a custom SharePoint form in SharePoint, a canvas app is created in the default environment. In large organizations, this can result in a lot of apps created in the default environment. To avoid this, create a separate environment and designate it to store the custom SharePoint forms. This allows Power Platform admins to separate out the SharePoint forms from the general productivity apps in the default environment.
+When a user creates a custom SharePoint form in SharePoint, a canvas app is created in the default environment. In large organizations, this can result in many apps created in the default environment. To avoid this, create a separate environment and designate it to store the custom SharePoint forms. This allows Power Platform admins to separate out the SharePoint forms from the general productivity apps in the default environment.
 
 To change the SharePoint form environment:
 
@@ -170,7 +167,7 @@ To change the SharePoint form environment:
 
 1. Assign all the users who create or update forms the environment maker role in the new environment.
 
-1. Use the following [Power Shell cmdlet to set the SharePoint form environment](/power-platform/admin/powerapps-powershell#designate-sharepoint-custom-form-environment)
+1. Use the following [PowerShell cmdlet to set the SharePoint form environment](/power-platform/admin/powerapps-powershell#designate-sharepoint-custom-form-environment)
 ```
   Set-AdminPowerAppSharepointFormEnvironment --EnvironmentName '<EnvironmentName>'
 ```
@@ -178,7 +175,7 @@ To change the SharePoint form environment:
 Key points to keep in mind:
 
 - Existing SharePoint forms won't be migrated over to the new SharePoint form environment.
-- If you delete the SharePoint form environment after setting it, the SharePoint forms will be lost and the user interface will revert back to using the default SharePoint form.
+- If you delete the SharePoint form environment after setting it, the SharePoint forms will be lost, and the user interface will revert back to using the default SharePoint form.
 
 1. If a user tries to create a custom SharePoint form after the SharePoint form environment is deleted, the canvas app will be created in the default environment.
 
@@ -186,7 +183,7 @@ Key points to keep in mind:
 
 ## Backup and restore of default environment
 
-Like every other environment type (sandbox, production, developer), the default environment also gets archived. However, there is no manual backup that you can request for the default environment. A restore operation is a possibility like every other environment and requires you to content Microsoft Support. Be aware that when you restore the default environment, you need to consider you may also be restoring all those test apps and flows that were removed after the cleanup.
+Like every other environment type (sandbox, production, developer), the default environment also gets archived. However, there's no manual backup that you can request for the default environment. A restore operation is a possibility like every other environment and requires you to content Microsoft Support. Be aware that when you restore the default environment, you need to consider you may also be restoring all those test apps and flows that were removed after the cleanup.
 
 ## See also
 
