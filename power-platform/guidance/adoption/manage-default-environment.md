@@ -12,8 +12,7 @@ ms.service: powerapps
 # Manage the default environment
 
 
-## Reactive Governance
-Every employee in an organization will have access to the Default Environment in a tenant. It is not possible to remove their Environment Maker Role from the Default Environment. Reactive Governance is the process where CoE teams, using the information gathered by CoE Starter Kit and a combination of  tools like Power Platform Power Shell Cmdlets or Admin Connectors of Power Platform. This article provides some best practices for using the data you gather from these sources to manage your default environment.
+Every employee in an organization will have access to the Default Environment in a tenant. It is not possible to remove their Environment Maker Role from the Default Environment. CoE teams can gather information using the CoE Starter Kit, PowerShell cmdlets, and Power Platform Admin connectors to see what is happening in  environments and use that information to guide makers and exert control over their apps and flows. This article provides some best practices for using the data you gather from these sources to manage your default environment.
 
 Additional Information:
 
