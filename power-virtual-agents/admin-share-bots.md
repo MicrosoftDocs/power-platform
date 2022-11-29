@@ -31,7 +31,7 @@ Share your bot with other users so they can chat with it or collaborate together
 
 ## Share a bot for chat
 
-Bot makers that you've [shared your bot with for collaboration](#share-a-bot-for-collaboration) will always have permission to chat with the bot. You can share bots with security groups to only grant them permission to chat with it.
+Bot makers that you've [shared your bot with for collaboration](#share-a-bot-for-collaborative-authoring) will always have permission to chat with the bot. You can share bots with security groups to only grant them permission to chat with it.
 
 ### Share bot with security groups
 
@@ -107,7 +107,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 1. Select **Share** to stop sharing the bot with everyone in the organization.
 
-## Share a bot for collaboration
+## Share a bot for collaborative authoring
 
 Individual users that you share a bot with can view, edit, configure, share, and publish the bot. They can't delete the bot.
 
@@ -125,7 +125,7 @@ Individual users that you share a bot with can view, edit, configure, share, and
 1. Specify the name or email address of each user that you would like to share the bot with.  
 
     > [!NOTE]
-    > When sharing a bot for _multi-user collaboration_, you can only share it with individual users. You can't share it with:
+    > When sharing a bot for _collaborative authoring_, you can only share it with individual users. You can't share it with:
     >
     > - A security group in your organization.
     > - Distribution group in your organization.  
@@ -201,7 +201,7 @@ You must be a **System administrator** of the environment where the bot is locat
 
 You can assign the **Environment maker** security role when sharing a bot with a user who does not have sufficient environment permissions to run Power Virtual Agents.
 
-When [sharing the bot](#share-a-bot), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that **Environment maker** security role will be assigned to the user so they can use the bot.
+When [sharing the bot](#share-a-bot-for-chat), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that **Environment maker** security role will be assigned to the user so they can use the bot.
 
 :::image type="content" source="media/admin-share-bots/sharing-input-invitee-no-permission.png" alt-text="Share panel with permission notice bubble." border="false":::
 
@@ -216,7 +216,7 @@ Based on the content and target audience of the bot, you may want to give transc
 >
 > In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](./environments-first-run-experience.md#create-a-new-environment-for-your-bots)
 
-When [sharing the bot](#share-a-bot), you can assign the **Bot transcript viewer** role by selecting the check box.
+When [sharing the bot](#share-a-bot-for-chat), you can assign the **Bot transcript viewer** role by selecting the check box.
 
 :::image type="content" source="media/admin-share-bots/sharing-assign-transcript-viewer.png" alt-text="Share panel with Bot transcript viewer role selected." border="false":::
 
