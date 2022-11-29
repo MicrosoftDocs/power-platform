@@ -392,8 +392,8 @@
                   href: regions-overview.md
                 - name: Multiple online environments or tenants
                   href: multiple-online-environments-tenants.md
-                - name: Migrate default environment
-                  href: migrate-default-environment.md
+                - name: Migrate default and Dataverse for Teams environment
+                  href: migrate-default-teams-environment.md
                 - name: Administration mode
                   href: admin-mode.md
                 - name: Automation of tasks with PowerShell
