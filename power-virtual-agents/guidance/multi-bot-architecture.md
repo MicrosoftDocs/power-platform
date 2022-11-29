@@ -1,13 +1,13 @@
 ---
 title: "Power Virtual Agents Multi-bot architecture patterns"
 description: "Multi-bot architecture for PVA"
-author: hyarapotina
+author: hari-yarapotina
 
-ms.date: 11/22/2022
+ms.date: 11/29/2022
 ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
-ms.author: hyarapotina
+ms.author: hari-yarapotina
 ms.collection: virtual-agent
 ---
 
