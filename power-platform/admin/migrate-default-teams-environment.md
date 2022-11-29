@@ -9,7 +9,7 @@ ms.author: iyanni
 ms.reviewer: KumarVivek
 ---
 
-# Migrate default environment
+# Migrate default and Dataverse for Teams environments
 
 The [default](environments-overview.md#the-default-environment) and [Dataverse for Teams](about-teams-environment.md) environments are special types of environments that are created by the system. In most cases, system administrators can't decide the geographical region for these types of environments. This choice is made for them based on the country selected during the account creation.
 
