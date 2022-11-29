@@ -42,8 +42,9 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 1. Select **Next**.
 
-    <!-- FIXME: where has scope selection gone? -->
-1. Under **Environments**, select **Scope**. Apply the DLP policy on the environment where the bot is created, or for all environments.
+1. If you're a tenant admin, or an environment admin for multiple environments, you'll see the **Scope** step. Choose one or more environments that your DLP policy will apply to.
+
+    :::image type="content" source="media/dlp-example-3/scope-step.png" alt-text="Screenshot of the Power Platform admin center showing the contextual menu for a connector available from the menu icon.":::
 
     > [!NOTE]
     > If the policy has a tenant scope, DLP policy will apply to all bots.
