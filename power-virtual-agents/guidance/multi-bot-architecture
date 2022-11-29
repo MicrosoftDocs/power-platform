@@ -1,0 +1,18 @@
+---
+title: "Power Virtual Agents Multi-bot architecture patterns"
+description: "Multi-bot architecture for PVA"
+author: hyarapotina
+
+ms.date: 11/22/2022
+ms.subservice: guidance
+ms.topic: conceptual
+ms.custom: guidance
+ms.author: hyarapotina
+ms.collection: virtual-agent
+---
+
+# Multi-bot Architecture for Power Virtual Agents
+
+Conversational AI management in a multi-bot environment is becoming more and more critical in the organizations implementing AI based chatbots. We see that there are more customers with multiple departments/business functions with each department or task specific bots. These bots can be internal or external facing.  In this blog post, we want to address some best practices for Conversational AI management in a multi-bot environment for Power Virtual Agents. 
+
+<!-- TODO -->
