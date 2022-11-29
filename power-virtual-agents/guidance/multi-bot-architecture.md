@@ -4,10 +4,9 @@ description: "Multi-bot architecture for PVA"
 author: hari-yarapotina
 
 ms.date: 11/29/2022
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
-ms.author: hari-yarapotina
+ms.author: hyarapotina
 ms.collection: virtual-agent
 ---
 
