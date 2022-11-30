@@ -29,7 +29,7 @@ One of the key challenges of the Center of Excellence (CoE) team is communicatin
 
 ### Renaming default environment
 
-One of the first things a Power Platform CoE can do is to rename the default environment. The default environment is created with the name: ***TenantName* (default)**. A Power Platform admin can change the name of the default environment to something more descriptive like *Personal Productivity Environment* clearly calling out the intent.
+One of the first things a Power Platform CoE can do is rename the default environment. The default environment is created with the name: ***TenantName* (default)**. A Power Platform admin can change the name of the default environment to something more descriptive like *Personal Productivity Environment* clearly calling out the intent.
 
 More information: [Edit properties of an environment](/power-platform/admin/edit-properties-environment)
 
@@ -39,7 +39,7 @@ In addition to renaming the default environment, the Power Platform CoE team sho
 
 - Personal productivity use cases.
 - How to build apps and flows?
-- Where to build apps and flow?
+- Where to build apps and flows?
 - How to reach out to the CoE support team?
 - Rules around integrating with external services.
 
@@ -47,7 +47,7 @@ The [Microsoft Power Platform hub](/power-platform/guidance/adoption/wiki-commun
 
 ### Customizing Power Platform messages
 
-When a maker creates an app that violates the DLP policy, you can customize the displayed error message to display the URL to your organization's specific Power Platform Wiki. You can also add your Power Platform team's contact email address. This redirects makers or users to your Power Platform Wiki. This is critical for default environment since all the employees in an organization have access to it. As the CoE team refines the DLP policy over time, you might inadvertently break some existing apps. Ensuring that the DLP policy violation messages contain contact details or URL will provide a way forward for makers.
+When a maker creates an app that violates the DLP policy, you can customize the displayed error message to display the URL to your organization's specific Power Platform Wiki. You can also add your Power Platform team's contact email address. This redirects makers or users to your Power Platform Wiki. This is especially critical for the default environment since all employees in an organization have access to it. As the CoE team refines the DLP policy over time, you might inadvertently break some existing apps. Ensuring that the DLP policy violation messages contain contact details or URL will provide a way forward for makers.
 
 The following PowerShell scripts allow you to customize these messages:
 
@@ -56,24 +56,24 @@ The following PowerShell scripts allow you to customize these messages:
 |Set-PowerAppDlpErrorSettings  |Set governance message   |
 |Set-PowerAppDlpErrorSettings  | Update governance message  |
 
-Additional Information: [Power Platform governance error message commands](/power-platform/admin/powerapps-powershell#governance-error-message-content-commands)
+More information: [Power Platform governance error message commands](/power-platform/admin/powerapps-powershell#governance-error-message-content-commands)
 
 ## Sharing
 
-Environment makers can distribute the apps they build in an environment to other users in your organization by sharing the app with individual users or security groups. In addition the platform allows a maker to share an application with  ["Everyone" in the organization](/power-apps/maker/canvas-apps/share-app).
+Environment makers can distribute the apps they build in an environment to other users in your organization by sharing the app with individual users or security groups. In addition, the platform allows a maker to share an app with  ["Everyone" in the organization](/power-apps/maker/canvas-apps/share-app).
 
-If your organization would like to use a gated process around widely used applications to enforce mandates such as:
+Your organization should consider using a gated process around widely used applications to enforce mandates, such as the following policies and requirements:
 
 - Security review policy.
 - Business review policy.
 - ALM requirements.
-- User experience and branding.
+- User experience and branding requirements.
 
 You should consider disabling the **Share with Everyone** feature in Power Platform. Once restricted, only a small group of administrators are allowed to share an application with "Everyone" in the environment.
 
 To prevent sharing apps with everyone in the environment:
 
-1. Use [Get-TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/get-tenantsettings?view=pa-ps-latest) to retrieve the list of tenant settings for your organization. This cmdlet will return an object with the tenant settings.
+1. Use [Get-TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/get-tenantsettings?view=pa-ps-latest) to retrieve the list of tenant settings for your organization. This cmdlet returns an object with the tenant settings.
 
    ![Output from the Get-TenantSettings powershell cmdlet displaying the different attributes](./media/securedefaultenvimage1.png)
 
@@ -96,15 +96,13 @@ To prevent sharing apps with everyone in the environment:
 
 Once these commands are run, only admins will have the privilege of sharing an app with everyone in the tenant. Makers will be limited to sharing the app with a security group or individuals.
 
-## DLP Policy for default environment
+## Data loss prevention policy for default environment
 
-This section covers the recommended configuration when setting up a default environment DLP policy.
-
-Related resources: [Create a data loss prevention (DLP) policy](/power-platform/admin/create-dlp-policy)
+This section covers the recommended configuration when you set up a default environment data loss prevention (DLP) policy.
 
 ### Block new connectors in the default environment
 
-New connectors that are added to the platform are added to the non-business group by default. You can configure it such that new connectors land in either the business or blocked data group. For the default environment DLP, we recommend that the default data group (usually, non-business) is set to **Blocked**. This ensures that if any new connector is introduced, it will remain unusable until a tenant admin manually unblocks that connector.
+New connectors that are added to the platform are added to the non-business group by default. You can configure it such that new connectors land in either the business or blocked data groups. For the default environment DLP, we recommend that the default data group (usually, non-business) is set to **Blocked**. This ensures that if any new connector is introduced, it will remain unusable until a tenant admin manually unblocks that connector.
 
 ### Prebuilt connectors
 
@@ -116,7 +114,9 @@ To restrict the access of the employees to only the basic non-block-able connect
 
 ### Custom connectors
 
-Custom connectors let you create a connector for your own home grown service. These services are intended for technical consumers like developers. It's preferred to reduce the footprint of APIs (built by the organization) that can be invoked from apps or flows in the default environment. To ensure that makers can't create and use custom connectors for APIs, create a rule to block all URL patterns. If there are APIs that you would like your default environment users to have access to (for example: a service that returns a published list of holidays for the organization), you can configure multiple rules classifying different URL patterns into the business and non-business data groups. Ensure that connections always use the HTTPS protocol. More information about configuring DLP policy for custom connectors: [DLP policy for custom connectors](/power-platform/admin/dlp-custom-connector-parity)
+Custom connectors let you create a connector for your own home grown service. These services are intended for technical consumers like developers. It's preferred to reduce the footprint of APIs (built by the organization) that can be invoked from apps or flows in the default environment. To ensure that makers can't create and use custom connectors for APIs, create a rule to block all URL patterns. If there are APIs that you would like your default environment users to have access to (for example: a service that returns a published list of holidays for the organization), you can configure multiple rules classifying different URL patterns into the business and non-business data groups. Ensure that connections always use the HTTPS protocol. More information: [DLP policy for custom connectors](/power-platform/admin/dlp-custom-connector-parity)
+
+For more information, about Power Platform DLP policies, go to [Create a data loss prevention (DLP) policy](/power-platform/admin/create-dlp-policy).
 
 ## Securing integration with Exchange
 
@@ -139,15 +139,14 @@ The SMTP header inserted into an email sent from a flow looks like the example b
 
 Header details
 
-"x-ms-mail-application" header can have the following values depending on the service used:
-
+The x-ms-mail-application header can have the following values depending on the service used:
 
 |Service  |Value  |
 |---------|---------|
 |Power Automate  |  Microsoft Power Automate; User-Agent: azure-logic-apps/1.0 (workflow &lt;GUID&gt;; version &lt;version number&gt;) microsoft-flow/1.0       |
 |Power Apps  |  Microsoft Power Apps; User-Agent: PowerApps/ (; AppName= &lt;app name&gt;)       |
 
-"x-ms-mail-operation-type" header can use the following values depending on the action being performed:
+The x-ms-mail-operation-type header can use the following values depending on the action being performed:
 
 |Value  |Description  |
 |---------|---------|
@@ -155,7 +154,7 @@ Header details
 |Forward     |  For forward email operations.   |
 |Send     | For send email operations including, SendEmailWithOptions and SendApprovalEmail.   |
 
-"x-ms-mail-environment-id" contains the environment ID value. The presence of this header depends on the product you're using:
+The x-ms-mail-environment-id header contains the environment ID value. The presence of this header depends on the product you're using:
 
 - In Power Apps, it will always be present.
 - In Power Automate, it will be present only in connections created after July 2020.
@@ -171,7 +170,7 @@ Block all outbound emails sent to external recipients from Power Automate and Po
 
 #### Block outbound forwarding
 
-Block all outbound emails forwarded to external recipients from Power Automate and Power Apps where the sender isn't from an "Allowed list" of mailboxes
+Block all outbound emails forwarded to external recipients from Power Automate and Power Apps where the sender isn't from an allowed list of mailboxes
 
 This rule will ensure that users can't create a flow, which will automatically forward inbound emails to an external recipient.
 
@@ -182,7 +181,7 @@ Here are some potential exceptions to the Exchange rules to block email to add f
 - Exempt specific apps and flows. Add an exemption list to the rules above so that approved apps or flows can send emails to external recipients.
 - Organization-level allowlist. In this scenario it makes sense to move the solution into a dedicated environment. If several flows in the environment have to send outbound emails, you can create a blanket exception rule to allow outbound emails from that environment. The maker and admin permission on that environment must be tightly controlled and limited.
 
-## Cross tenant isolation
+## Cross-tenant isolation
 
 Microsoft Power Platform has a system of connectors based on Azure Active Directory (Azure AD) that enable authorized Azure AD users to connect apps and flows to data stores. Tenant isolation allows admins to effectively govern the movement of data from Azure AD authorized data sources to and from their tenant.
 

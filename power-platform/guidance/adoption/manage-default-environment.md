@@ -11,22 +11,13 @@ ms.service: powerapps
 ---
 # Manage the default environment
 
-Every employee in an organization will have access to the Power Platform default environment in a tenant. It isn't possible to remove the environment maker role from the default environment. Center of Excellence (CoE) teams can gather information using the CoE Starter Kit, PowerShell cmdlets, and Power Platform admin connectors to see what is happening in environments and use that information to guide makers and exert control over their apps and flows. This article provides some best practices for using the data you gather from these sources to manage your default environment.
-
-Additional Information:
-
-- [Power Platform for Admins - Connectors](/connectors/powerplatformforadmins/)
-- [Power Automate Management - Connectors](/connectors/flowmanagement/)
-- [Power Automate for Admins - Connectors](/connectors/microsoftflowforadmins/)
-- [Power Apps for Admins - Connectors](/connectors/powerappsforadmins/)
-- [Programmability and Extensibility - PowerShell - Getting started](/power-platform/admin/powershell-getting-started)
-- [What is a Center of Excellence?](../coe/motivation.md)
+Every employee in an organization using the Power Platform has access to the default environment. Since it isn't possible to remove the environment maker role from the default environment, Power Platform admins should consider, and when necessary, implement ways to control the default environment. To that end, Center of Excellence (CoE) teams can gather information using the CoE Starter Kit, PowerShell cmdlets, and Power Platform admin connectors to see what is happening in environments and use that information to guide makers and exert control over their apps and flows. This article provides some best practices for using the data you gather from these sources to manage your default environment.
 
 ## Tracking integrations
 
-Connectors are services within Power Platform that allows applications and flows to integrate with other services. There are over 800 connectors to different services that you can use. Using [DLP policies](/power-platform/admin/wp-data-loss-prevention), Power Platform administrators can control which integrations are allowed in each environment.
+Connectors are services within Power Platform that allows apps and flows to integrate with other services. There are over 800 connectors to different services that you can use. Using [DLP policies](/power-platform/admin/wp-data-loss-prevention), Power Platform administrators can control which integrations are allowed in each environment.
 
-However, there are some connectors that that drive core Power Platform functionality so these are [connectors that can't be blocked](/power-platform/admin/dlp-connector-classification#list-of-connectors-that-cant-be-blocked). You'll want to know if your users are using a non-blocking connector so that you can provide policy guidance. For example, you might want to track the apps and flows in the default environment that use the Exchange connector and direct the makers to move to a different environment, which allows outbound emails.
+However, there are some connectors that drive core Power Platform functionality so these are [connectors that can't be blocked](/power-platform/admin/dlp-connector-classification#list-of-connectors-that-cant-be-blocked). You'll want to know if your users are using a non-blocking connector so that you can provide policy guidance. For example, you might want to track the apps and flows in the default environment that use the Exchange connector and direct the makers to move to a different environment, which allows outbound emails.
 
 The core components in the CoE Starter Kit contain the schema and flows to retrieve the list of all environments and resources, such as apps and flows, within each environment. The starter kit also records the details of connectors used by the app or flow. This data is refreshed every 24 hours. You can use the CoE dashboards to discover the connections leveraged across the different environments. You can also search for related flows and apps directly from the Dataverse environment where the CoE Starter Kit is installed. You can find more information on tracking connectors here:
 
@@ -35,8 +26,8 @@ The core components in the CoE Starter Kit contain the schema and flows to retri
 ## Discovering unused and abandoned apps and flows
 
 As Power Platform adoption in your organizations grows, you're likely to have abandoned and unused apps and flows in your default environment.
-* When an employee exits an organization, the apps and flows owned by the employee are in effect abandoned. These apps and flows are called abandoned apps/flows.
-* An employee might create an app or a flow, which is used for a short duration and then remains unused. These apps and flows are called unused apps/flows.
+* When an employee exits an organization, the apps and flows owned by the employee are in effect abandoned. These apps and flows are called *abandoned apps/flows*.
+* An employee might create an app or a flow, which is used for a short duration and then remains unused. These apps and flows are called *unused apps/flows*.
 
 To maintain the overall environment hygiene, establish processes and procedures to clean up abandoned and unused flows and apps. This is especially important for the default environment as all the users in the environment are potential makers.
 
@@ -50,14 +41,14 @@ You can choose to use the processes from the CoE Starter Kit as-is or modify it 
 
 ## Discovering highly used Power Apps apps and flows
 
-While the default environment is intended to build personal productivity apps and flows, some citizen developers might create apps and flows that become widely adopted or business critical. While this is a good outcome, it should be managed. When a personal productivity app or flow is used by a significant number of employees, such as 10 or more, you can use the Power Platform CoE to evaluate whether the app should be moved to its own environment or a shared environment for the team or group. You can use some of the following parameters to determine if your app should be moved out to a dedicated environment, a shared environment or best left alone in the default environment. More information: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
+While the default environment is intended to build personal productivity apps and flows, some citizen developers might create apps and flows that become widely adopted or business critical. While this is a good outcome, it should be managed. When a personal productivity app or flow is used by a significant number of employees, such as 10 or more, you can use the Power Platform CoE to evaluate whether the app should be moved to its own environment or a shared environment for the team or group. You can use some of the following parameters to determine if your app should be moved out to a dedicated environment, a shared environment, or best left alone in the default environment. More information: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
 
 Below are indicative examples of the parameters used to make a decision in moving an app from the default environment to a shared or dedicated environment. You should determine these parameters and defining criteria in alignment with your business goals.
 
 <table>
-    <th>Parameters</th><th>Defining Criteria</th><th>Environment</th>
+    <th>Parameters</th><th>Defining criteria</th><th>Environment</th>
     <tr>
-        <td rowspan="3">Number of Users</td>
+        <td rowspan="3">Number of users</td>
         <td>1-10 users</td>
         <td>Default</td>
     </tr>
@@ -70,8 +61,8 @@ Below are indicative examples of the parameters used to make a decision in movin
         <td>Dedicated</td>
     </tr>
      <tr>
-        <td rowspan="3">Nature of Data</td>
-        <td>Highly Confidential</td>
+        <td rowspan="3">Nature of data</td>
+        <td>Highly confidential</td>
         <td>Dedicated</td>
     </tr>
     <tr>
@@ -79,13 +70,13 @@ Below are indicative examples of the parameters used to make a decision in movin
         <td>Shared</td>
     </tr>
       <tr>
-        <td>Not Confidential</td>
+        <td>Not confidential</td>
         <td>Default</td>
     </tr>
      <tr>
-        <td rowspan="2">Impact to Business <br/>(monetary or reputation)</td>
+        <td rowspan="2">Impact to business <br/>(monetary or reputation)</td>
         <td>Yes</td>
-        <td>Shared or Dedicated</td>
+        <td>Shared or dedicated</td>
     </tr>
     <tr>
         <td>No</td>
@@ -94,7 +85,7 @@ Below are indicative examples of the parameters used to make a decision in movin
       <tr>
         <td rowspan="2">Requires ALM</td>
         <td>Yes</td>
-        <td>Shared or Dedicated</td>
+        <td>Shared or dedicated</td>
     </tr>
     <tr>
         <td>No</td>
@@ -167,7 +158,7 @@ To change the SharePoint form environment:
 
 1. Assign all the users who create or update forms the environment maker role in the new environment.
 
-1. Use the following [PowerShell cmdlet to set the SharePoint form environment](/power-platform/admin/powerapps-powershell#designate-sharepoint-custom-form-environment)
+1. Use the following [PowerShell cmdlet to set the SharePoint form environment](/power-platform/admin/powerapps-powershell#designate-sharepoint-custom-form-environment).
 ```
   Set-AdminPowerAppSharepointFormEnvironment --EnvironmentName '<EnvironmentName>'
 ```
@@ -176,15 +167,25 @@ Key points to keep in mind:
 
 - Existing SharePoint forms won't be migrated over to the new SharePoint form environment.
 - If you delete the SharePoint form environment after setting it, the SharePoint forms will be lost, and the user interface will revert back to using the default SharePoint form.
-
-1. If a user tries to create a custom SharePoint form after the SharePoint form environment is deleted, the canvas app will be created in the default environment.
-
-1. The Set-AdminPowerAppSharepointFormEnvironment command applies only for SharePoint forms customized by Power Apps. Power Automate flows created from SharePoint always leverage the default environment.
+- If a user tries to create a custom SharePoint form after the SharePoint form environment is deleted, the canvas app will be created in the default environment.
+- The Set-AdminPowerAppSharepointFormEnvironment command applies only for SharePoint forms customized by Power Apps. Power Automate flows created from SharePoint always leverage the default environment.
 
 ## Backup and restore of default environment
 
-Like every other environment type (sandbox, production, developer), the default environment also gets archived. However, there's no manual backup that you can request for the default environment. A restore operation is a possibility like every other environment and requires you to content Microsoft Support. Be aware that when you restore the default environment, you need to consider you may also be restoring all those test apps and flows that were removed after the cleanup.
+Like every other environment type (sandbox, production, developer), the default environment also gets archived. However, there's no manual backup that you can request for the default environment. Like any other environment, a restore operation is possible and requires you to content Microsoft Support. Be aware that when you restore the default environment, you need to consider you might also be restoring all the unused or abandoned apps and flows that were removed after the cleanup.
 
 ## See also
 
 [Secure the default environment](secure-default-environment.md)
+
+[Power Platform for Admins - Connectors](/connectors/powerplatformforadmins/)
+
+[Power Automate Management - Connectors](/connectors/flowmanagement/)
+
+[Power Automate for Admins - Connectors](/connectors/microsoftflowforadmins/)
+
+[Power Apps for Admins - Connectors](/connectors/powerappsforadmins/)
+
+[Programmability and Extensibility - PowerShell - Getting started](/power-platform/admin/powershell-getting-started)
+
+[What is a Center of Excellence?](../coe/motivation.md)
