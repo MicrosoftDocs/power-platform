@@ -47,7 +47,7 @@ You can share your bot with security groups so their members can chat with the b
     > When sharing a bot for _chat_, you can only share a bot with security groups. You can't share it with:
     >
     > - Microsoft 365 groups.
-    > - Individual users directly. You can manage individual user access by adding or removing users from the security group.
+    > - Individual users directly. To manage individual user access, add or remove users from the security group.
 
     :::image type="content" source="media/admin-share-bots/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
 
@@ -201,7 +201,7 @@ You must be a **System administrator** of the environment where the bot is locat
 
 You can assign the **Environment maker** security role when sharing a bot with a user who does not have sufficient environment permissions to run Power Virtual Agents.
 
-When [sharing the bot](#share-a-bot-for-chat), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that **Environment maker** security role will be assigned to the user so they can use the bot.
+When [sharing the bot](#share-a-bot-for-chat), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that the **Environment maker** security role will be assigned to the user so they can use the bot.
 
 :::image type="content" source="media/admin-share-bots/sharing-input-invitee-no-permission.png" alt-text="Share panel with permission notice bubble." border="false":::
 
