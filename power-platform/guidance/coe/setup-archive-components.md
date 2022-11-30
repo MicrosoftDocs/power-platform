@@ -24,22 +24,6 @@ This article will help you to set up the inactivity notifications for unused can
 
 [Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
 
-## Set up connection cleanup (broken connections)
-
-Process to delete connections that have are, and have been broken for some time (30 days by default)
-
-> [!IMPORTANT]
-> You may see an error like this when running for large environments:  <br>
-> The action 'Get_Connections_as_Admin' has an aggregated page results size more than '209797598' bytes. This exceeded the maximum size '209715200' bytes allowed' <br><br>
-> If this occurs you will need to clean up the connections via Power Shell first in order to use the connector in Power Automate. <br>
-> This article will get you started on [Power Shell for Power Platform](/power-platform/admin/powershell-getting-started) <br>
-> And this call will delete all the errored connections in your default environment <br> 
->(Get-AdminPowerAppConnection -EnvironmentName "Default-yourGUIDhere") | Where { $_.statuses -like "\*Error\*"} | Remove-AdminPowerAppConnection
-
-### Turn on flow
-
-- [Admin | Broken Connection Cleanup](governance-components.md#admin--broken-connection-cleanup)
-
 ## Set up inactivity notifications (unused apps and flows)
 
 Processes to ask users if canvas apps and cloud flows are still useful, or to clean them up if they are not.
