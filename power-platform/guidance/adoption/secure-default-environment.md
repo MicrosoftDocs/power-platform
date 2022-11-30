@@ -11,7 +11,7 @@ ms.service: powerapps
 ---
 # Secure the default environment
 
-This document covers the areas to focus on as you think through the security of your default environment.
+This article covers the areas to focus on as you think through the security of your default environment.
 
 ## Managing administrators
 
@@ -51,22 +51,12 @@ When a maker creates an app that violates the DLP policy, you can customize the 
 
 The following PowerShell scripts allow you to customize these messages:
 
-  <table style="width:100%">
-    <th>Command</th>
-    <th>Description</th>
+|Command  |Description  |
+|---------|---------|
+|Set-PowerAppDlpErrorSettings  |Set governance message   |
+|Set-PowerAppDlpErrorSettings  | Update governance message  |
 
-  <tr>
-  <td>New-PowerAppDlpErrorSettings</td>
-  <td>Set Governance Message</td>
-  </tr>
-  <tr>
-  <td>Set-PowerAppDlpErrorSettings</td>
-  <td>Update Governance Message</td>
-  </tr>
-  </table>
-  
-Additional Information: 
-[Power Platform Governance Error Message Commands](https://learn.microsoft.com/en-us/power-platform/admin/powerapps-powershell#governance-error-message-content-commands)
+Additional Information: [Power Platform governance error message commands](/power-platform/admin/powerapps-powershell#governance-error-message-content-commands)
 
 ## Sharing
 
@@ -85,26 +75,26 @@ To prevent sharing apps with everyone in the environment:
 
 1. Use [Get-TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/get-tenantsettings?view=pa-ps-latest) to retrieve the list of tenant settings for your organization. This cmdlet will return an object with the tenant settings.
 
-![Output from the Get-TenantSettings powershell cmdlet displaying the different attributes](./media/securedefaultenvimage1.png)
+   ![Output from the Get-TenantSettings powershell cmdlet displaying the different attributes](./media/securedefaultenvimage1.png)
 
-Within the powerPlatform.PowerApps object you can find three flags:
+   Within the powerPlatform.PowerApps object you can find three flags:
 
-![Displays the attributes of the the $settings.powerPlatform.PowerApps](./media/securedefaultenvimage2.png)
+   ![Displays the attributes of the the $settings.powerPlatform.PowerApps](./media/securedefaultenvimage2.png)
 
-1. Use the following command to get the settings object and set the variable to share with everyone to false.
+1. Use the following commands to get the settings object and set the variable to share with everyone to false.
 
-```powershell
-$settings=Get-TenantSettings 
-$settings.powerPlatform.powerApps.disableShareWithEveryone=$true 
-```
+   ```powershell
+   $settings=Get-TenantSettings 
+   $settings.powerPlatform.powerApps.disableShareWithEveryone=$true 
+   ```
 
-1. Use the Set-TenantSettings with the settings object to prevent makers from sharing their apps with everyone in the environment.
+1. Use the Set-TenantSettings with the settings object to prevent makers from sharing their apps with everyone in the tenant.
 
-```powershell
-  Set-TenantSettings \$settings
-```
+   ```powershell
+     Set-TenantSettings \$settings
+   ```
 
-Once these commands are run, only admins will have the privilege of sharing an app with everyone in the environment. Makers will be limited to sharing the app with a security group or individuals.
+Once these commands are run, only admins will have the privilege of sharing an app with everyone in the tenant. Makers will be limited to sharing the app with a security group or individuals.
 
 ## DLP Policy for default environment
 
@@ -126,7 +116,7 @@ To restrict the access of the employees to only the basic non-block-able connect
 
 ### Custom connectors
 
-Custom connectors let you create a connector for your own home grown service. These services are intended for technical consumers like developers. It's preferred to reduce the footprint of APIs (built by the organization) that can be invoked from apps or flows in the default environment. To ensure that makers can't create and use custom connectors for APIs, create a rule to block all URL patterns. If there are APIs that you would like your default environment users to have access to (for example: a service that returns a published list of holidays for the organization), you can configure multiple rules classifying different URL patterns into the business and non-business data groups. Ensure that connections always use the HTTPS protocol. More information about configuring DLP policy for custom connectors: [DLP policy for Custom Connectors](https://learn.microsoft.com/en-us/power-platform/admin/dlp-custom-connector-parity)
+Custom connectors let you create a connector for your own home grown service. These services are intended for technical consumers like developers. It's preferred to reduce the footprint of APIs (built by the organization) that can be invoked from apps or flows in the default environment. To ensure that makers can't create and use custom connectors for APIs, create a rule to block all URL patterns. If there are APIs that you would like your default environment users to have access to (for example: a service that returns a published list of holidays for the organization), you can configure multiple rules classifying different URL patterns into the business and non-business data groups. Ensure that connections always use the HTTPS protocol. More information about configuring DLP policy for custom connectors: [DLP policy for custom connectors](/power-platform/admin/dlp-custom-connector-parity)
 
 ## Securing integration with Exchange
 
@@ -147,45 +137,23 @@ The SMTP header inserted into an email sent from a flow looks like the example b
  x-ms-mail-environment-id: 0c5781e0-65ec-ecd7-b964-fd94b2c8e71b 
 ```
 
-Header Details:
+Header details
 
 "x-ms-mail-application" header can have the following values depending on the service used:
 
-<table>
-<th>Service</th>
-<th>Value</th>
-<tr>
-  <td>Power Automate</td>
-  <td>Microsoft Power Automate; User-Agent: azure-logic-apps/1.0 (workflow &lt;GUID&gt;; version &lt;version number&gt;) microsoft-flow/1.0</td>
-</tr>
-<tr>
-  <td>Power Apps</td>
-  <td>Microsoft Power Apps; User-Agent: PowerApps/ (; AppName= &lt;app name&gt;)</td>
-</tr>
-<tr>
-  <td>Power Automate</td>
-  <td>Microsoft Power Automate; User-Agent: azure-logic-apps/1.0 (workflow &lt;GUID&gt;; version &lt;version number&gt;) microsoft-flow/1.0</td>
-</tr>
-</table>
+
+|Service  |Value  |
+|---------|---------|
+|Power Automate  |  Microsoft Power Automate; User-Agent: azure-logic-apps/1.0 (workflow &lt;GUID&gt;; version &lt;version number&gt;) microsoft-flow/1.0       |
+|Power Apps  |  Microsoft Power Apps; User-Agent: PowerApps/ (; AppName= &lt;app name&gt;)       |
 
 "x-ms-mail-operation-type" header can use the following values depending on the action being performed:
 
-  <table>
-<th>Value</th>
-<th>Description</th>
-<tr>
-  <td>Reply</td>
-  <td>For reply email operations</td>
-</tr>
-<tr>
-  <td>Forward</td>
-  <td>For forward email operations</td>
-</tr>
-<tr>
-  <td>Send</td>
-  <td>For send email operations (including SendEmailWithOptions and SendApprovalEmail)</td>
-</tr>
-</table>
+|Value  |Description  |
+|---------|---------|
+|Reply     | For reply email operations.    |
+|Forward     |  For forward email operations.   |
+|Send     | For send email operations including, SendEmailWithOptions and SendApprovalEmail.   |
 
 "x-ms-mail-environment-id" contains the environment ID value. The presence of this header depends on the product you're using:
 
@@ -195,31 +163,32 @@ Header Details:
 
 ### Potential Exchange rules for the default environment
 
-Some email actions you might want to block:
+Here are some email actions you might want to block by using Exchange rules.
 
-Block outbound emails to external recipients.
+#### Block outbound emails to external recipients
 
-**Rule:** Block all outbound emails sent to external recipients from Power Automate and Power Apps. This rule will ensure that citizen developers don't send out emails to external recipients (such as partners, vendors or clients) from apps or flows.
+Block all outbound emails sent to external recipients from Power Automate and Power Apps. This rule will ensure that citizen developers don't send out emails to external recipients (such as partners, vendors or clients) from apps or flows.
 
-Block outbound forwarding.
+#### Block outbound forwarding
 
-**Rule**: Block all outbound emails forwarded to external recipients from Power Automate and Power Apps where the sender isn't from an "Allowed list" of mailboxes
+Block all outbound emails forwarded to external recipients from Power Automate and Power Apps where the sender isn't from an "Allowed list" of mailboxes
 
 This rule will ensure that users can't create a flow, which will automatically forward inbound emails to an external recipient.
 
-Some potential exceptions for the above rules to add flexibility:
+#### Exceptions to consider with email block rules
 
-Exempt specific apps and flows. Add an exemption list to the rules above so that approved apps or flows can send emails to external recipients.
+Here are some potential exceptions to the Exchange rules to block email to add flexibility:
 
-Organization-level allowlist. In this scenario it would make sense to move the solution into a dedicated environment. If several flows in the environment have to send outbound emails, you can create a blanket exception rule to allow outbound emails from that environment. The maker and admin permission on that environment must be tightly controlled and limited.
+- Exempt specific apps and flows. Add an exemption list to the rules above so that approved apps or flows can send emails to external recipients.
+- Organization-level allowlist. In this scenario it makes sense to move the solution into a dedicated environment. If several flows in the environment have to send outbound emails, you can create a blanket exception rule to allow outbound emails from that environment. The maker and admin permission on that environment must be tightly controlled and limited.
 
 ## Cross tenant isolation
 
 Microsoft Power Platform has a system of connectors based on Azure Active Directory (Azure AD) that enable authorized Azure AD users to connect apps and flows to data stores. Tenant isolation allows admins to effectively govern the movement of data from Azure AD authorized data sources to and from their tenant.
 
-Tenant Isolation is applied at the tenant level and impacts all environments in the tenant, including the default environment. Since all employees are makers in the default environment, configuring a robust tenant isolation policy is critical to securing the default environment.
+Tenant isolation is applied at the tenant level and impacts all environments in the tenant, including the default environment. Since all employees are makers in the default environment, configuring a robust tenant isolation policy is critical to securing the default environment.
 
-As a recommended practice explicitly configure the tenants that your employees can connect to. All the other tenants should be covered by default rules that block both inbound and outbound flow of data.
+As a recommended practice, explicitly configure the tenants that your employees can connect to. All the other tenants should be covered by default rules that block both inbound and outbound flow of data.
 
 > [!NOTE]
 > - Power Platform tenant isolation is different from Azure AD-wide tenant restriction because it doesn't impact Azure AD-based access outside of Power Platform.
