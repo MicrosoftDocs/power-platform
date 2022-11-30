@@ -25,7 +25,7 @@ Power Platform administrators can create one or more pipelines, associate any nu
 - Power Platform administrator or Dataverse system administrator role.
 - Pipelines is a feature of [Managed environments](../admin/managed-environment-overview.md). You will need access to one or more environments that are enabled as a managed environment as described below.
 > [!IMPORTANT]
-> Use of unmanaged environments is not technically blocked during Pipelines preview. Enforcement will be added for Pipelines GA (general availability). As a result, any pre-existing pipelines will no longer deploy to unmanaged environments except where indicated below.
+> Use of unmanaged environments is not technically blocked during Pipelines preview. Enforcement will be added for Pipelines GA (general availability). As a result, any pre-existing pipelines will no longer deploy from or to unmanaged environments except where indicated below.
 
 
 Before you begin, you’ll need to choose which environments will participate in pipelines. A common set-up might include the following environments:
@@ -40,6 +40,7 @@ Before you begin, you’ll need to choose which environments will participate in
 - **Development (required)**. This is where you’ll develop solutions. Notice that "Development" refers to the *purpose* you'll assign to the environment, not the *type* of environment that can be used.
    - Must be managed environment except when using Developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. 
 - **QA environment (optional).** This is where you’ll deploy solutions for testing prior to moving them to production.
+   - Must be managed environment except when using Developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. Restrictions unrelated to Pipelines may also be present when using Developer and trial environments. 
 - **Production (required)** The final destination for a deployment pipeline. This is where end users will run the apps that are deployed. 
    - Must be managed environment except when using Developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. Restrictions unrelated to Pipelines may also be present when using Developer and trial environments. 
 
