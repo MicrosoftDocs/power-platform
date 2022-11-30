@@ -39,7 +39,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
 
 - Lower total cost of ownership:
   - Pipelines significantly improve maker, developer and admin productivity, enabling your business solutions to come to market faster, with higher quality, and through a safe and governed process.
-  - Minimal effort to implement custom-tailored _change management processes_ across your organization or team.
+  - Minimal effort to implement custom-tailored change management processes across your organization or team.
 - Save time and money:
   - The system handles the heavy lifting and ongoing maintenance so you don't have to.
 - Scale ALM at your own pace:
@@ -61,7 +61,7 @@ Once pipelines are in place, makers can initiate in-product deployments with a j
 
 ## Developers can use the same pipelines
 
-Professional developers are more productive with pipelines now handling the complex background operations. Developers can tell the system _what they want to accomplish_ instead of executing the various underlying tasks necessary to accomplish the same goal. Using the Power Platform CLI, developers can:
+Professional developers are more productive with pipelines now handling the complex background operations. Developers can tell the system what they want to accomplish instead of executing the various underlying tasks necessary to accomplish the same goal. Using the Power Platform CLI, developers can:
 
 - List pipelines to view pertinent details such as which stages and environments are ready to deploy their solutions to.
 - Deploy a solution with a single command:
