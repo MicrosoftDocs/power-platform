@@ -1,6 +1,6 @@
 ---
-title: Set up Power Platform pipelines 
-description: Learn how to create, configure, share, and manage Power Platform pipelines.
+title: Set up Power Platform Pipelines 
+description: Learn how to create, configure, share, and manage Power Platform Pipelines.
 author: caburk
 ms.author: matp
 ms.service: powerapps
@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 11/17/2022
 ms.custom: template-how-to
 ---
-# Set up Power Platform pipelines (preview)
+# Set up Power Platform Pipelines (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -24,11 +24,14 @@ Power Platform administrators can create one or more pipelines, associate any nu
 - Pipelines is a feature of [Managed environments](../admin/managed-environment-overview.md). You will need access to one or more environments that are enabled as a managed environment as described below.
 - All environments used in Pipelines must have a Microsoft Dataverse database. Microsoft Dataverse for Teams environments are not supported for use in Pipelines. 
 - Power Platform administrator or Dataverse system administrator role.
+> [!IMPORTANT]
+> Use of unmanaged environments is not blocked during Pipelines preview. Enforcement will be added for Pipelines GA (general availability). As a result, any pre-existing pipelines will no longer deploy to unmanaged environments.
+
 
 Before you begin, you’ll need to choose which environments will participate in pipelines. A common set-up might include the following environments:
 
 - **Host environment (required)**. This special-purpose environment acts as the **storage** and management plane for all pipeline configuration, security, and run history. 
-   - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated environment** separate from the development and target QA and production environments Pipelines is set up to deploy to. 
+   - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated production environment** separate from the development and target QA and production environments Pipelines is set up to deploy to. 
    - Deleting this environment will delete all pipelines and run data. Use extreme caution and first understand the impact of data and configuration loss as well as maker access to pipelines hosted here. 
    - If desired, you may configure multiple different hosts within a tenant, such as for separately managing pipelines for different business organizations or geographic locations. One host for the entire tenant is also acceptable as long as all environments are in the same geographic location. 
    - Does not require managed environment. Using a Production Dataverse or Dynamics 365 environment is recommended for long-term use.  
