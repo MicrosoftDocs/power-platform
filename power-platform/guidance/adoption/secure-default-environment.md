@@ -1,13 +1,12 @@
 ---
 title: "Secure the Power Platform default environment"
 description: "Guidance for securing the Power Platform default environment."
-author: Mattp123
-manager: tapanm
-ms.component: pa-admin
+author: rranjit83
 ms.topic: conceptual
 ms.date: 11/04/2022
-ms.author: matp 
-ms.service: powerapps
+ms.author: rranjit
+ms.reviewer: matp
+ms.subservice: guidance
 ---
 # Secure the default environment
 
