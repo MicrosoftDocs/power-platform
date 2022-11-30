@@ -26,11 +26,11 @@ An environment is a space to store, manage, and share your organization's busine
 
 ## Leverage environments
 
-You can use environments in a number of different ways, depending on your business needs:
+There are many strategies for using multiple environments. For example, you can:
 
-- You might create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and bots for each audience.
-- You might create separate environments for different global branches of your company.
-- You might also create separate environments to satisfy data residency requirments. 
+- Create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and bots for each audience.
+- Create separate environments for different global branches of your company.
+- Create separate environments to satisfy data residency requirements.
 
 You can also build all your bots in a single environment if you don't need or want to use different ones.
 

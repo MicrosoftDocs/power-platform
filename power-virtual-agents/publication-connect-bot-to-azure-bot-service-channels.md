@@ -60,22 +60,20 @@ If you already have an Azure Bot Service bot, you need to add a Power Virtual Ag
 
 ## Get your Power Virtual Agents bot parameters
 
-To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name and token endpoint!
-.
+To connect to the bot you have built with Power Virtual Agents, you'll need to retrieve your bot's name and token endpoint.
 
 1. Copy your bot's name in Power Virtual Agents.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. On the navigation menu, under **Settings**, select **Channels**.
 
 1. Select the channel you want to connect to. This topic uses Slack as an example.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-slack.png" alt-text="Slack channel." border="false":::
 
-1. Copy and save the *Token Endpoint* value by selecting **Copy**. You will need this when connecting your bot to the Azure Bot Service channel.
+1. Copy and save the _Token Endpoint_ value by selecting **Copy**. You'll need this when connecting your bot to the Azure Bot Service channel.
 
-[channel-get-bot-parameters-slack](https://user-images.githubusercontent.com/86117886/196765778-a4e8c379-0864-4cae-bf17-7c14f19936ca.png)
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-parameters-slack.png" alt-text="Get bot parameters." border="false":::
 
 ## Manage conversation sessions with your Power Virtual Agents bot
