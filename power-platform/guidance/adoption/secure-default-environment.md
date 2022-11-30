@@ -73,7 +73,7 @@ You should consider disabling the **Share with Everyone** feature in Power Platf
 
 To prevent sharing apps with everyone in the environment:
 
-1. Use [Get-TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/get-tenantsettings?view=pa-ps-latest) to retrieve the list of tenant settings for your organization. This cmdlet returns an object with the tenant settings.
+1. Use [Get-TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/get-tenantsettings?view=pa-ps-latest&preserve-view=true) to retrieve the list of tenant settings for your organization. This cmdlet returns an object with the tenant settings.
 
    ![Output from the Get-TenantSettings powershell cmdlet displaying the different attributes](./media/securedefaultenvimage1.png)
 
@@ -197,4 +197,4 @@ As a recommended practice, explicitly configure the tenants that your employees 
 
 [Restrict cross-tenant inbound and outbound access (preview)](/power-platform/admin/cross-tenant-restrictions)
 
-[Get-PowerAppTenantIsolationPolicy (Microsoft.PowerApps.Administration.PowerShell)](/powershell/module/microsoft.powerapps.administration.powershell/get-powerapptenantisolationpolicy?view=pa-ps-latest)
+[Get-PowerAppTenantIsolationPolicy (Microsoft.PowerApps.Administration.PowerShell)](/powershell/module/microsoft.powerapps.administration.powershell/get-powerapptenantisolationpolicy?view=pa-ps-latest&preserve-view=true)

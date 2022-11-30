@@ -58,43 +58,16 @@ Users or security groups can be assigned to either of these two roles by an envi
 
 There are multiple types of environments. The type indicates the purpose of the environment and determines its characteristics. The following table summarizes the current types of environments that you might encounter.
 
-<table style="width:100%">
-<tr>
-<th>Type</th>
-<th>Description</th>
-<th>Security</th>
-</tr>
-<tr>
-<td width="20%"> Production</td>
-<td width="50%">  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1&nbsp;GB available database capacity. These environments are also created for each existing Dataverse database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.        </td>
-<td width="30%"> Full control.  </td>
-</tr>
-<tr>
-<td width="20%"> Default</td>
-<td width="50%"> These are a special type of production environment. Each tenant has a default environment that's created automatically. Its characteristics are discussed in the following section, <a href="#the-default-environment">The default environment</a>. </td>
-<td width="30%">  Limited control. All licensed users* have the Environment Maker role.</td>
-<tr>
-<td width="20%"> Sandbox</td>
-<td width="50%">   These are non-production environments, which offer features like copy and reset. Sandbox environments are used for development and testing, separate from production. Provisioning sandbox environments can be restricted to admins (because production environment creation can be blocked), but converting from a production to a sandbox environment can't be blocked. </td>
-<td width="30%">  Full control. If used for testing, only user access is needed. Developers require Environment Maker access to create resources.</td>
-</tr>
-<tr>
-<td width="20%"> Trial</td>
-<td width="50%">  Trial environments are intended to support short-term testing needs and are automatically cleaned up after a short period of time. They expire after 30 days and are limited to one per user. Provisioning trial environments can be restricted to admins.</td>
-<td width="30%">  Full control.</td>
-</tr>
-<tr>
-<td width="20%"> Developer</td>
-<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can be restricted to admins (see <a href="powerapps-powershell.md#block-trial-licenses-commands">Block trial licenses commands</a>). The developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: <a href="/powerapps/maker/developer-plan">Power Apps Developer Plan</a></td>
-<td width="30%">  The user with the Developer Plan can choose to add other users as makers. </td>
-</tr>
-<tr>
-<td width="20%"> Microsoft Dataverse for Teams</td>
-<td width="50%">  Dataverse for Teams environments are automatically created for the selected team when you create an app in Teams using the app for the first time or install an app from the app catalog. See <a href="about-teams-environment.md">About the Dataverse for Teams environment</a>. </td>
-<td width="30%">  Limited control. Admins have limited settings available for Teams environments.  No customizations of security role or assignments are available.  Teams members are automatically mapped to their Teams membership type - Owners, Members, and Guests - with a corresponding security role assigned by the system.  </td>
-</tr>
-<tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
-</table>
+|Type  |Description  |Security  |
+|---------|---------|---------|
+|Production  |  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1&nbsp;GB available database capacity. These environments are also created for each existing Dataverse database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.     | Full control.     |
+|Default   | These are a special type of production environment. Each tenant has a default environment that's created automatically. Its characteristics are discussed in the following section, [The default environment](#the-default-environment)   |  Limited control. All licensed users<sup>1</sup> have the environment maker role.     |
+|Sandbox  | These are non-production environments, which offer features like copy and reset. Sandbox environments are used for development and testing, separate from production. Provisioning sandbox environments can be restricted to admins (because production environment creation can be blocked), but converting from a production to a sandbox environment can't be blocked.     | Full control. If used for testing, only user access is needed. Developers require environment maker access to create resources.    |
+|Trial    | Trial environments are intended to support short-term testing needs and are automatically cleaned up after a short period of time. They expire after 30 days and are limited to one per user. Provisioning trial environments can be restricted to admins.    |  Full control.    |
+| Developer | Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can be restricted to admins. More information: [Block trial licenses commands](powerapps-powershell.md#block-trial-licenses-commands</a>). The developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: [Power Apps Developer Plan](/powerapps/maker/developer-plan)     |         |
+| Microsoft Dataverse for Teams |  Dataverse for Teams environments are automatically created for the selected team when you create an app in Teams using the app for the first time or install an app from the app catalog. More information: [About the Dataverse for Teams environment](about-teams-environment.md)</a>.     |  Limited control. Admins have limited settings available for Teams environments. No customizations of security role or assignments are available. Teams members are automatically mapped to their Teams membership type - owners, members, and guests - with a corresponding security role assigned by the system.    |
+
+<sup>1</sup>Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.
 
 ## The default environment
 
