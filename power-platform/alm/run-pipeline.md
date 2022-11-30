@@ -41,7 +41,7 @@ For more information about these prerequisites, go to [Set up Power Platform pip
 
 The **Pipelines** page in the **Solutions** area displays all deployment activity for the current pipeline and solution.
 
-Select a pipeline to view more detail and error information if there was a failure.
+Select a pipeline, then **Run history** to view more detail and error information if there was a failure.
 :::image type="content" source="media/pipeline-monitoring.png" alt-text="Monitoring a pipeline":::
 
 ## Next steps
