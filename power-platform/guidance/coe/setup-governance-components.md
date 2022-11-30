@@ -75,6 +75,11 @@ For Production environment turn on these flows that are installed as part of the
 - Admin | Compliance request complete custom connector v3
 - Admin | Compliance request complete flows v3
 - Admin | Compliance Teams Environment BPF kickoff v3
+- Admin | Compliance Details Request eMail (Apps)
+- Admin | Compliance Details Request eMail (Chatbots)
+- Admin | Compliance Details Request eMail (Custom Connectors)
+- Admin | Compliance Details Request eMail (Desktop Flows)
+- Admin | Compliance Details Request eMail (Flows)
 - [**Admin | Compliance detail request v3**](governance-components.md#admin--compliance-detail-request-v3)
 
 For solution installed in a Dataverse for Teams environment, turn on the Admin | Compliance detail request [Teams] v3 flow only that is installed with the Core for Teams components solution.
