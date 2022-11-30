@@ -34,7 +34,7 @@ Before you begin, you’ll need to choose which environments will participate in
    - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated production environment** separate from the development and target QA and production environments Pipelines is set up to deploy to. 
    - Deleting this environment will delete all pipelines and run data. Use extreme caution and first understand the impact of data and configuration loss as well as maker access to pipelines hosted here. 
    - If desired, you may configure multiple different hosts within a tenant, such as for separately managing pipelines for different business organizations or geographic locations. One host for the entire tenant is also acceptable as long as all environments are in the same geographic location. 
-   - Does not require managed environment. Using a Production Dataverse or Dynamics 365 environment is recommended for long-term use.  
+   - Does not require managed environment. Using a Production Dataverse environment is recommended for long-term use.  
 > [!IMPORTANT]
 > Source and target environments can only be managed by one host. Use different environments for each host.
 - **Development (required)**. This is where you’ll develop solutions. Notice that "Development" refers to the *purpose* you'll assign to the environment, not the *type* of environment that can be used.
