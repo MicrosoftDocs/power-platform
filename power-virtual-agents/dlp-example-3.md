@@ -61,10 +61,10 @@ First, open your bot from the environment where the DLP policy is applied.
 
 If the policy is enforced, you'll see an error banner with a **Go to Authentication** button, and a message advising you to contact an admin or configure authentication.
 
-:::image type="content" source="media/dlp-example-3/policy-enforcement-banner.png" alt-text="Screenshot of a chat bot in the Power Virtual Agents web app with a banner that indicates DLP policies are in effect  and that authentication must be configured.":::
+:::image type="content" source="media/dlp-example-3/policy-enforcement-banner.png" alt-text="Screenshot of the banner that indicates DLP policies are in effect  and that authentication must be configured.":::
 
 The bot maker can select the **Go to Authentication** button to be taken directly to the **Authentication** configuration panel. Here, they'll need to configure **Only for Teams** or **Manual** (**Azure Active Directory** or **Azure Active Directory v2**) for the end-user to chat with the bot.
 
-:::image type="content" source="media/dlp-example-3/update-auth.png" alt-text="Screenshot of the authentication configuration panel in Power Virtual Agents  with the Only for Teams and Manual Azure Active Directory options highlighted.":::
+:::image type="content" source="media/dlp-example-3/update-auth.png" alt-text="Screenshot of the authentication configuration panel with the 'Only for Teams' and 'Manual' options highlighted.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
