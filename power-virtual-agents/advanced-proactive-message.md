@@ -237,7 +237,7 @@ In this example, you'll send an order confirmation card that allows the user to 
             },
             {
                 "type": "Action.Submit",
-                "title": "Edit Order",
+                "title": "Edit Order"
             }
         ]
     }

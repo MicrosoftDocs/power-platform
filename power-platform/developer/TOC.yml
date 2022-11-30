@@ -6,6 +6,10 @@
     href: get-started.md
   - name: Fusion development
     href: fusion-development.md
+  - name: Create a developer environment
+    href: create-developer-environment.md
+  - name: ALM for developers
+    href: /power-platform/alm/alm-for-developers
   - name: Tools
     expanded: true
     items:
@@ -30,6 +34,8 @@
             href: cli\reference\data.md
           - name: pac help
             href: cli\reference\help.md
+          - name: pac modelbuilder
+            href: cli\reference\modelbuilder.md
           - name: pac org
             href: cli\reference\org.md
           - name: pac package
