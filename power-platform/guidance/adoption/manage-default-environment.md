@@ -1,5 +1,5 @@
 ---
-title: "Manage the default Power Platform environment"
+title: "Manage the Power Platform default environment"
 description: "Guidance for managing the Power Platform default environment."
 author: Mattp123
 manager: tapanm
