@@ -21,14 +21,14 @@ Power Platform administrators can create one or more pipelines, associate any nu
 ### Prerequisites
 
 - Four environments are recommended, but you can use as few as three Power Platform environments to create a pipeline.
-- Pipelines are a feature of [Managed environments](../admin/managed-environment-overview.md). You will need access to one or more environments that are enabled as a managed environment as described below.
+- Pipelines is a feature of [Managed environments](../admin/managed-environment-overview.md). You will need access to one or more environments that are enabled as a managed environment as described below.
 - All environments used in Pipelines must have a Microsoft Dataverse database. Microsoft Dataverse for Teams environments are not supported for use in Pipelines. 
 - Power Platform administrator or Dataverse system administrator role.
 
 Before you begin, you’ll need to choose which environments will participate in pipelines. A common set-up might include the following environments:
 
 - **Host environment (required)**. This special-purpose environment acts as the **storage** and management plane for all pipeline configuration, security, and run history. 
-   - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated environment** separate from the development and target QA and production environments Pipelines are set up to deploy to. 
+   - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated environment** separate from the development and target QA and production environments Pipelines is set up to deploy to. 
    - Deleting this environment will delete all pipelines and run data. Use extreme caution and first understand the impact of data and configuration loss as well as maker access to pipelines hosted here. 
    - If desired, you may configure multiple different hosts within a tenant, such as for separately managing pipelines for different business organizations or geographic locations. One host for the entire tenant is also acceptable as long as all environments are in the same geographic location. 
    - Does not require managed environment. Using a Production Dataverse or Dynamics 365 environment is recommended for long-term use.  
