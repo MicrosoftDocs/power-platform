@@ -3,7 +3,7 @@ title: "Secure the Power Platform default environment"
 description: "Guidance for securing the Power Platform default environment."
 author: rranjit83
 ms.topic: conceptual
-ms.date: 11/04/2022
+ms.date: 11/30/2022
 ms.author: rranjit
 ms.reviewer: matp
 ms.subservice: guidance
