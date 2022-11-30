@@ -34,7 +34,7 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 1. Use the search box to find the **Chat without Azure AD authentication in Power Virtual Agents** connector.
 
-    :::image type="content" source="media/dlp-example-3/chat-connector.png" alt-text="Screenshot of the Chat without Azure AD authentication in Power Virtual Agents connector..":::
+    :::image type="content" source="media/dlp-example-3/chat-connector.png" alt-text="Screenshot of the Chat without Azure AD authentication in Power Virtual Agents connector.":::
 
 1. Select the connector's **More actions** menu (vertical three dots), and then select **Block**.
 
@@ -51,7 +51,7 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 1. Review your policy, then select **Update policy** to apply the DLP changes.
 
-    :::image type="content" source="media/dlp-example-3/update-policy.png" alt-text="Screenshot of the review screen when creating a DLP policy ":::
+    :::image type="content" source="media/dlp-example-3/update-policy.png" alt-text="Screenshot of the review screen when creating a DLP policy.":::
 
 ## Confirm policy enforcement in Power Virtual Agents
 
