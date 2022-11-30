@@ -1,3 +1,6 @@
+
+### Select or create a policy
+
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), under **Policies**, select **Data policies**.
 
     :::image type="content" source="../media/dlp-create-or-select-policy/data-policies.png" alt-text="Screenshot of the Data policies option in the navigation menu.":::
@@ -16,6 +19,8 @@
 
     :::image type="content" source="../media/dlp-create-or-select-policy/name-policy.png" alt-text="Screenshot of the Name your policy step.":::
 
-1. Choose one or more environments to add to your policy, select **+ Add to policy**, then select **Next**.
+### Choose an environment
 
-    :::image type="content" source="../media/dlp-create-or-select-policy/choose-environments.png" alt-text="Screenshot of the Add an environment step.":::
+Choose one or more environments to add to your policy, select **+ Add to policy**, then select **Next**.
+
+:::image type="content" source="../media/dlp-create-or-select-policy/choose-environments.png" alt-text="Screenshot of the Add an environment step.":::

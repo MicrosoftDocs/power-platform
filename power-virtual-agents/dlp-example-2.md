@@ -25,8 +25,6 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 ## Configure DLP to block HTTP requests in the Power Platform admin center
 
-### Select or create a policy
-
 [!INCLUDE [Preview documentation notice](includes/dlp-create-or-select-policy.md)]
 
 ### Add the connector
