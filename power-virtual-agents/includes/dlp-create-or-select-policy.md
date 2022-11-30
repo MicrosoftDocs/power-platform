@@ -30,6 +30,12 @@ ms.service: power-virtual-agents
 
 ### Choose an environment
 
-Choose one or more environments to add to your policy, select **+ Add to policy**, then select **Next**.
+1. Choose one or more environments to add to your policy.
 
-:::image type="content" source="../media/dlp-create-or-select-policy/choose-environments.png" alt-text="Screenshot of the Add an environment step.":::
+    :::image type="content" source="../media/dlp-create-or-select-policy/choose-environments.png" alt-text="Screenshot of the Add an environment step.":::
+
+1. Select **+ Add to policy**.
+
+    :::image type="content" source="../media/dlp-create-or-select-policy/add-to-policy.png" alt-text="Screenshot of the Add an environment step.":::
+
+1. Select **Next**.
