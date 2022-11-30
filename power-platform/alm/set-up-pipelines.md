@@ -25,7 +25,7 @@ Power Platform administrators can create one or more pipelines, associate any nu
 - Power Platform administrator or Dataverse system administrator role.
 - Pipelines is a feature of [Managed environments](../admin/managed-environment-overview.md). You will need access to one or more environments that are enabled as a managed environment as described below.
 > [!IMPORTANT]
-> Use of unmanaged environments is not technically blocked during Pipelines preview. Enforcement will be added for Pipelines GA (general availability). As a result, any pre-existing pipelines will no longer deploy to unmanaged environments.
+> Use of unmanaged environments is not technically blocked during Pipelines preview. Enforcement will be added for Pipelines GA (general availability). As a result, any pre-existing pipelines will no longer deploy to unmanaged environments except where indicated below.
 
 
 Before you begin, you’ll need to choose which environments will participate in pipelines. A common set-up might include the following environments:
