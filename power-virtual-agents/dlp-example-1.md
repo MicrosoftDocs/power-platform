@@ -25,7 +25,7 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 ## Configure DLP to block skills in the Power Platform admin center
 
-[!INCLUDE [Preview documentation notice](includes/basic-dlp-config.md)]
+[!INCLUDE [Preview documentation notice](includes/dlp-basic-config.md)]
 
 ### Add the connector
 
