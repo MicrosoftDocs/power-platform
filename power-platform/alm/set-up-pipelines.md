@@ -75,9 +75,13 @@ Once installed the deployment pipelines configuration application will appear in
 1. Select **Pipelines** on the left navigation pane, and then select **New** to create a new deployment pipeline. 
    - **Name**. Enter a name for the pipeline, such as *Contoso Standard Deployment Pipeline* or *Contoso Hotfix Pipeline*.
    - **Description**. Optionally, enter a meaningful description for the pipeline.
+    :::image type="content" source="media/Create new pipeline.png" alt-text="New pipeline icon":::
+    
 1. Within the **Linked Development Environments** grid, select **Add Existing Development Environment**, then associate one or more development environments. Note that a pipeline must have at least one development environment and one stage before it can be run.
-2. Within the **Deployment Stages** grid, select **New Deployment Stage.** 
-   :::image type="content" source="media/pipeline-stages-icon.png" alt-text="Pipeline stages icon":::
+:::image type="content" source="media/Pipelines add development environment.png" alt-text="Add development environment icon":::
+
+1. Within the **Deployment Stages** grid, select **New Deployment Stage.** 
+   :::image type="content" source="media/Pipelines create stage QA.png" alt-text="Pipeline stages icon":::
 
 1. Enter the details for each stage:
    - **Name**: The name of the stage. 
@@ -85,7 +89,7 @@ Once installed the deployment pipelines configuration application will appear in
    - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
    - **Target Deployment Environment**: This is the target environment where this stage will deploy to. 
 1. Repeat the above step for each stage you'd like to add to the pipeline. Note you must have at least one stage, and can add up to seven stages.
-   :::image type="content" source="media/pipeline-target-stages.png" alt-text="Pipeline target stages":::
+   :::image type="content" source="media/Pipeline fully configured.png" alt-text="Pipeline fully configured":::
 
 ## Grant access to edit or run pipelines
 
