@@ -68,6 +68,68 @@ Professional developers are more productive with Pipelines now handling the comp
   - With Pipelines, developers simply provide the required parameters and the system orchestrates all the end-to-end deployment operations in compliance with the organizational policies.
   - No need to connect to multiple environments, export solutions, download solution files, manually create connections and populate deployment settings files, import solutions, or handle various other tasks that were required previously.
 
+## Frequently asked questions
+
+### Can an environment be associated with multiple hosts?
+No. However, one environment can be linked to multiple pipelines within the same host. In order to associate an environment with a different host, you must first navigate to the current host environment and play the Deployment Pipeline Configuration app. Next, remove this environment from any associated pipeline stages, then delete the environment record (just the entry in the app, not the actual environment). Now you can associate this environment with a different host. 
+
+### Can I customize or extend the 1st party deployment pipeline application and tables?
+Not currently. Keep an eye out for updates on this topic. For now, do not attempt to customize the app or register plugins on deployment pipeline tables.
+
+### Where can I view and run pipelines?
+Currently only within development environments associated with a pipeline. Pipelines cannot be viewed or run from within target environments. Notice you may also run pipelines from the Power Platform CLI. 
+
+### Can I deploy across geos?
+Not currently. The host and all environments associated with pipelines in a host must be located within the same geo. For example, a pipeline cannot deploy from Germany to Canada. And a host in Germany should not manage environments in Canada. Instead, a separate host and pipelines should be used for Germany and Canada. 
+
+### Should I deploy the same solution using different pipelines?
+This is possible, although we recommend starting with the same pipeline for a given solution. This helps avoid confusion and inadvertent mistakes. Pipeline run information is displayed in context of one pipeline and one solution (within the solution experience). Therefore other pipelines may not show the latest deployed solution version or other important run information associated with different pipeline(s). Notice the Deployment Pipeline Configuration app shows run information across all pipelines and all solutions (for the current host).
+
+### Can the host environment also be used as a development or target environment?
+This is not recommended. 
+
+### What can Pipelines deploy?
+Pipelines deploy solutions as well as configuration for the target environment such as connections / connection references and environment variables. Any Power Platform customization contained in your solution can be deployed using Pipelines. Pipelines (or solutions in general) do not contain data stored within Dataverse tables. 
+
+### Can I use Pipelines in the default environment.
+Not currently. 
+
+### Should my host environment be the same as where I installed the COE toolkit?
+This is possible but the guidance is not to combine preview features with production workloads. 
+
+### Can I deploy unmanaged solutions?
+Not currently. Keep an eye out for updates on this topic.
+
+### Can I deploy multiple solutions at once?
+Not currently. Keep an eye out for updates on this topic. Currently you will need to submit a different deployment for each solution. However, the same pipeline may be used for multiple solutions. 
+
+### Do Pipelines publish unmanaged customizations before exporting the solution?
+Not currently. 
+
+### Can I specify advanced solution import behaviors such as update vs upgrade?
+Not currently. Keep an eye out for updates on this topic. Pipelines default behavior is _Upgrade_ with _Maintain customizations_. 
+
+### Can I use Pipelines for multi-developer teams working in isolated development environments? 
+Pipelines are currently more focused on deployments (CD) than integration (CI). Keep an eye out for advancements in this area and please send us your feedback. 
+
+### Can Pipelines deploy to a different tenant?
+Not currently. We reccommend using Azure DevOps or GitHub for this scenario. 
+
+### Can I deploy using my own service principal?
+Not currently. Keep an eye out for updates on this topic. _Also note deployments are facilitated via a Microsoft provided service principal that impersonates the deploying user. This is secure, compliant, and was designed to accomodate future capabilities._
+
+### How are Pipelines different from the ALM Accelerator?
+Both offer many valuable capabilities and the owning teams work together closely in developing the Pipelines and broader ALM vision for Power Platform. Pipelines are more simplistic in nature and can be setup and managed with less effort. Access to other products and technologies is not required as everything is managed in-house. The ALM Accelerator, on the other hand, is very feature rich and capable of handling more advanced ALM scenarios including source code integration and other areas not currently available in-product.
+
+While there are many additional functional differences, the fundamental difference being Pipelines is an official Microsoft Power Platform product feature - meaning it's designed, architected, engineered, tested, maintained, and supported by Microsoft product engineering. It's built into the product code and can be accessed within native product experiences.
+
+### When should I use Pipelines vs other tools?
+We encourage customers to choose the tool that best suits their ALM needs. Power Platform Pipelines are currently best suited for customers seeking simplicy, fast setup, and lower cost of ownership. Other tools often provide more advanced functionality and source code management. Notice other tools may also be more complicated and costly to setup, use, and maintain. 
+
+### Can Power Platform Pipelines be used with Azure DevOps, GitHub, or the ALM Accelerator?
+Not currently. Keep an eye out for updates on this topic. 
+We aim for these to work together more seamlessly with each iteration. Our goal is such that customers can start simple and incrementally add more advanced workloads as needed. 
+
 ## Next steps
 
 [Set up Power Platform pipelines (preview)](set-up-pipelines.md)
