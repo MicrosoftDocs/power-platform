@@ -32,7 +32,7 @@ You can use [solution checker](/power-apps/maker/data-platform/use-powerapps-che
 
 To enable the solution checker for your Managed Environment:
 
-1. Sign in to Power Platform admin center.
+1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 1. In the navigation pane, select **Environments**, and then select a managed environment.
 1. On the command bar, select **Edit Managed Environments**, and then select the appropriate setting under **Solution checker**.
 
