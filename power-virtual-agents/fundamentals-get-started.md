@@ -99,7 +99,7 @@ In the navigation menu, select **Chatbots** to open the **Chatbots** page and vi
 1. When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify any User or System topic, test out your content changes, or deploy your bot.
 
 > [!TIP]
-> To navigate back to the app-level home page from your bot, in the navigation menu select **Chatbots**.
+> To navigate back to the app-level home page from your bot, in the navigation menu, select **Chatbots**.
 >
 >:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Chatbots button in the navigation menu.":::
 

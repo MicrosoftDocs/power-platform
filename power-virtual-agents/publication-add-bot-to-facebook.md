@@ -160,7 +160,7 @@ After the review is successful, in the app's **Dashboard** under **App Review**,
 
 When you do not want the bot to be reachable in Facebook Messenger, you can remove the bot from Facebook.
 
-1. In Power Virtual Agents, in the navigation menu under **Settings**, and select **Channels**.
+1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Channels**.
 
 1. Select the **Facebook** tile and then **Delete**.
 
