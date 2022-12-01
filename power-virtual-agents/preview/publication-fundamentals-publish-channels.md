@@ -23,7 +23,7 @@ After you've published your bot to at least one channel, you can connect it to m
 
 You need to publish your bot at least once before your customers can interact with it or you can share it with your teammates. You must publish the bot again if you update it. If you don't, your customers won't be engaging with the latest content.
 
-1. With your bot open for editing, on the left side pane, select **Publish**.
+1. With your bot open for editing, in the navigation menu, select **Publish**.
 
 1. Select **Publish**, and then confirm, to make the latest content available to your customers.
 

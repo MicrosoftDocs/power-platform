@@ -48,7 +48,7 @@ Power Virtual Agents has an app-level home page that isn't specific to any bot. 
 
 :::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
-Select **Chatbots** in the side pane to open the **Chatbots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these bots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another bot that you have access to.
+In the navigation menu, select **Chatbots** to open the **Chatbots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these bots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another bot that you have access to.
 
 :::image type="content" source="media/fundamentals-get-started/chatbot-list.png" alt-text="Screenshot of the list of chatbots.":::
 
@@ -69,7 +69,7 @@ Select **Chatbots** in the side pane to open the **Chatbots** page and view all 
     > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
     > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
-1. In the side navigation select **Create**. You can also select **Home** then select **Create a bot**.
+1. In the navigation menu, select **Create**. You can also select **Home** then select **Create a bot**.
 
 1. Choose one of the following options:
 
@@ -99,15 +99,15 @@ Select **Chatbots** in the side pane to open the **Chatbots** page and view all 
 1. When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify any User or System topic, test out your content changes, or deploy your bot.
 
 > [!TIP]
-> To navigate back to the app-level home page from your bot, select **Chatbots** in the side pane.
+> To navigate back to the app-level home page from your bot, in the navigation menu select **Chatbots**.
 >
->:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Chatbots button in the side pane.":::
+>:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Chatbots button in the navigation menu.":::
 
 ## Create a topic
 
 Now that you have full functionality within your bot, you can create your own topic — or, in other words, a dialog tree specifying how your bot responds to a user's question.
 
-1. Select **Topics** on the side pane, then select **New topic** at the top of the page.
+1. In the navigation menu, select **Topics**, then select **New topic** at the top of the page.
 
     :::image type="content" source="media/fundamentals-get-started/topics-new.png" alt-text="New topic." border="false":::
 
@@ -157,17 +157,17 @@ Now that you have some content authored into a dialog tree, it's time to test th
 
 :::image type="content" source="media/fundamentals-get-started/test-bot-panel.png" alt-text="Start bot with latest content." border="false":::
 
-1. If the test bot is not showing on your screen, select **Test your bot** on the side pane.
+1. If the test bot pane is not showing on your screen, in the navigation menu, select **Test your bot**.
 
     :::image type="content" source="media/fundamentals-get-started/test-bot-menu.png" alt-text="Test bot control." border="false":::
 
-1. Try out your newly authored dialog tree by typing into the test bot window.
+1. Try out your newly authored dialog tree by typing into the test bot pane.
 
 1. Turn on **Track between topics** at the top, which enables you to follow along with the bot as it executes your dialog. You'll start to see parts of your dialog tree highlighted as the bot gets to that portion of the dialog.
 
     :::image type="content" source="media/fundamentals-get-started/test-bot-track.png" alt-text="Start conversation." border="false":::
 
-1. Type "hello world" in the chat window, and send the message to the bot. You'll see the top portion of your dialog tree highlighted in green, and you'll see **Seattle** and **Bellevue** presented as user options in the test bot window.
+1. Type "hello world" in the chat window, and send the message to the bot. You'll see the top portion of your dialog tree highlighted in green, and you'll see **Seattle** and **Bellevue** presented as user options in the test bot pane.
 
     The bot is now waiting for you to respond and has provided suggestions on how to respond. These suggestion buttons reflect what you authored within your dialog tree in the 'Ask a question' node.
 
@@ -185,7 +185,7 @@ This test experience empowers you to quickly create and test a conversation to e
 
 Once you're fine with the content authored in your bot, you can publish your bot to a website.
 
-1. Select the **Publish** tab on the side pane.
+1. In the navigation menu, select the **Publish**.
 
 1. Select **Publish** to activate your bot with a single click. If the publish is successful, you'll see a green banner on the top of the page.
 
@@ -203,7 +203,7 @@ For more information on publishing your bot to other channels, see the documenta
 
 ## Analyze the performance of your bot
 
-Once your bot has completed interactions with users, the statistics are available in the **Analytics** tab on the side pane. Here, you can find key performance indicators (KPIs) showing:
+When your bot completes interactions with users, the statistics are recorded in your bot's analytics. To view analytics, in the navigation menu select **Analytics**. Here, you can find key performance indicators (KPIs) showing:
 
 - the volume of sessions your bot has handled
 - how effectively your bot was able to engage end-users and resolve issues

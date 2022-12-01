@@ -25,7 +25,7 @@ You should use the demo website only to try out your bot, or to share it with te
 
 You can edit the demo website's welcome message and trigger phrases as often as you like. The welcome message can explain the purpose of the testing and prompt your teammates for what to ask the bot.
 
-1. In the left side panel, select **Manage**, and then select **Channels**.
+1. In the navigation menu, select **Settings**, and then select **Channels**.
 
 1. Select the **Demo website** tile.
 
@@ -43,7 +43,7 @@ Copy the demo website URL and share it with your teammates.
 
 When your bot is ready for customers, you can add it to your website as an iFrame code snippet. Your live website can be external or internal, like a SharePoint site. You can also add the bot to your Power Platform admin center.
 
-1. In the left side panel, select **Manage**, and then select **Channels**.
+1. In the navigation menu, select **Settings**, and then select **Channels**.
 
 1. Select **Custom website**, and then either:
 

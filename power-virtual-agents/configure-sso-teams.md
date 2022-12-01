@@ -45,7 +45,7 @@ Follow the instructions in [Configure user authentication with Azure AD](configu
 
 1. In Power Virtual Agents, open the bot that you want to configure SSO for.
 
-1. Expand **Manage** on the side pane, and then select **Channels**. Select the **Microsoft Teams** tile.
+1. In the navigation menu under **Settings**, select **Channels**. Select the **Microsoft Teams** tile.
 
 1. Select **Edit details**, expand **More**, and then copy the **App ID** by selecting **Copy**.
 
@@ -151,7 +151,7 @@ To update the Azure AD authentication settings in Power Virtual Agents, you'll n
 
     :::image type="content" source="media/configure-sso-teams/copy-scope.png" alt-text="Screenshot of the Copy to clipboard button..":::
 
-1. In Power Virtual Agents, select **Manage** on the side pane, select **Security**, and then select the **Authentication** tile.
+1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Security**, and then select the **Authentication** tile.
 
 1. For **Token exchange URL (required for SSO)**, paste the scope you copied earlier.
 
@@ -161,7 +161,7 @@ To update the Azure AD authentication settings in Power Virtual Agents, you'll n
 
 ## Add SSO to your bot's Microsoft Teams channel
 
-1. In Power Virtual Agents, expand **Manage** on the side pane, and then select **Channels**.
+1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Channels**.
 
 1. Select the **Microsoft Teams** tile. Select **Edit details** and expand **More**.
 
@@ -183,11 +183,11 @@ To update the Azure AD authentication settings in Power Virtual Agents, you'll n
 
 1. Select **Save**, and then **Close**.
 
-1. On the side pane, select the **Publish** tab.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Publish** to make the latest bot content available to your customers.
 
-1. On the side pane, under **Manage**, select **Channels**.
+1. In the navigation menu, under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**, then select **Open bot**.
 

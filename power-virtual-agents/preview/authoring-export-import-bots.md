@@ -36,7 +36,7 @@ You use solutions to export bots from one environment and import them into anoth
 
 1. Sign in to the Power Virtual Agents bot you want to export.
 
-1. In the side navigation pane, under **Settings**, select **General**. Then select **Export**.
+1. In the navigation menu, under **Settings**, select **General**. Then select **Export**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the export button on the general setting page.":::
 
