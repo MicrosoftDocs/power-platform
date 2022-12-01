@@ -47,7 +47,7 @@ Select one of the following settings:
 | --- | --- |
 | None |  This setting turns off the automatic solution validations during solution import. There won't be any experience or behavioral changes to solution authoring, exports, or imports. |
 | Warn |  All custom solutions are automatically validated during solution import. When a solution with high-critical issue(s) is being imported, you'll be warned about the action but the import itself will proceed and, if everything else with the import is fine, the solution will be imported into the environment. After a successful import, a message is shown with a link to view the validated report. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation. |
-| Block | All custom solutions are automatically validated during solution import. When a solution has high-critical issue(s), the import process will be cancelled and a message is shown with a link to view the validated report. This happens before the actual import, so there won't be any changes to the environment due to the import failure. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation. |
+| Block | All custom solutions are automatically validated during solution import. When a solution has high-critical issue(s), the import process will be cancelled, and a message is shown with a link to view the validated report. This happens before the actual import, so there won't be any changes to the environment due to the import failure. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation. |
 
 ## Email messages to the admin
 
@@ -55,7 +55,7 @@ When the validation mode is set to **Warn** or **Block**, Power Platform admins 
 
 Solutions checked from Power Apps [(make.powerapps.com](https://make.powerapps.com)) will have the results stored in the environment. When this solution is imported into an environment, admins of this environment will get a link to these results in the summary email.
 
-Solutions checked from the [Power Platform Build Tools](/power-platform/alm/devops-build-tools) will have the results returned as a downloadable file of the Power Apps Checker build task. When this solution is imported into an environment, environment admins will only be able to see the count of issues in the solution in the summary email. The summary email in this case will not have a link to the results.  
+Solutions checked from the [Power Platform Build Tools](/power-platform/alm/devops-build-tools) will have the results returned as a downloadable file of the Power Apps Checker build task. When this solution is imported into an environment, environment admins will only be able to see the count of issues in the solution in the summary email. The summary email in this case won't have a link to the results.  
 
 ### See also
 
