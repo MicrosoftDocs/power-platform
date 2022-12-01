@@ -169,7 +169,7 @@ If you add new bot components (such as new topics or flows) to your bot in Power
 
 1. Select **Chatbots** and find your bot in the list.
 
-1. Select the vertical three dots, then select **Add required objects**.
+1. Select **Commands** (**&vellip;**), then select **Add required objects**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-add-required-components.png" alt-text="Screenshot highlighting the Add required components option under the More menu." border="false":::
 
