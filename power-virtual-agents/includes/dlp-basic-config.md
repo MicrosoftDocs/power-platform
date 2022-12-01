@@ -24,7 +24,7 @@ ms.service: power-virtual-agents
 
         :::image type="content" source="../media/dlp-basic-config/edit-policy.png" alt-text="Screenshot of the Edit policy button.":::
 
-1. Enter a name for the policy then select **Next**.
+1. Enter a name for the policy then select **Next**. You can change the name later.
 
     :::image type="content" source="../media/dlp-basic-config/name-policy.png" alt-text="Screenshot of the Name your policy step.":::
 
