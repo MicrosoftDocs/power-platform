@@ -1,14 +1,13 @@
 ---
 title: Use solution checker in Managed Environments (preview)
 description: Learn about using solution checker to automatically run security and reliability validations during solution import.
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/01/2022
 author: sidhartg
 ms.author: sidhartg
-ms.reviewer: jimholtz
+ms.reviewer: Kumarvivek
 ms.subservice: admin
-ms.custom: "admin-security"
+ms.custom: 
 search.audienceType:
 - admin
 search.app:
@@ -37,7 +36,7 @@ To enable the solution checker for your Managed Environment:
 1. In the navigation pane, select **Environments**, and then select a managed environment.
 1. On the command bar, select **Edit Managed Environments**, and then select the appropriate setting under **Solution checker**.
 
-:::image type="content" source="media/managed-environment-solution-checker.png" alt-text="Screenshot of the solution checker settings screen.":::
+    :::image type="content" source="media/managed-environment-solution-checker.png" alt-text="Screenshot of the solution checker settings screen.":::
 
 ## Solution checker settings
 
