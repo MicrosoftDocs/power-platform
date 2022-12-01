@@ -72,7 +72,7 @@ To connect to the bot you have built with Power Virtual Agents, you'll need to r
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-slack.png" alt-text="Slack channel." border="false":::
 
-1. Copy and save the _Token Endpoint_ value by selecting **Copy**. You'll need this when connecting your bot to the Azure Bot Service channel.
+1. To copy and save the **Token Endpoint** value, select **Copy**. You'll need your endpoint to connect your bot to the Azure Bot Service channel.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-parameters-slack.png" alt-text="Get bot parameters." border="false":::
 
