@@ -1,13 +1,12 @@
 ---
-title: "Manage the default Power Platform environment"
+title: "Manage the Power Platform default environment"
 description: "Guidance for managing the Power Platform default environment."
-author: Mattp123
-manager: tapanm
-ms.component: pa-admin
+author: rranjit83
 ms.topic: conceptual
-ms.date: 11/04/2022
-ms.author: matp 
-ms.service: powerapps
+ms.date: 11/30/2022
+ms.author: rranjit
+ms.reviewer: matp
+ms.subservice: guidance
 ---
 # Manage the default environment
 
