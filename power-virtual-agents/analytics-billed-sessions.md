@@ -33,7 +33,7 @@ The consumption of the capacity isn't reported at the tenant level, but can be s
 
 ## Find the number of billed sessions for your bot
 
-1. In Power Virtual Agents, select **Analytics** from the side pane.
+1. In Power Virtual Agents, in the navigation menu, select **Analytics**.
 
 1. Go to the **Billing** tab.
 

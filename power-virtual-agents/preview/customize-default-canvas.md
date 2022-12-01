@@ -32,7 +32,7 @@ Your bot's look and feel is defined by the bot's canvas. You can customize the c
 
 If all you want to change is your bot's name, you can do that easily in your bot's settings in Power Virtual Agents.
 
-1. In the left side panel, select **Settings**, and then select **General**.
+1. In the navigation menu, select **Settings**, and then select **General**.
 
 1. Type a new name for your bot, and then select **Save**.
 
@@ -42,7 +42,7 @@ If all you want to change is your bot's name, you can do that easily in your bot
 
 You'll need to know your bot's app ID and tenant ID to customize the canvas, whether it's the default canvas or a custom one you connect to.
 
-1. In the left side panel, select **Settings**, and then select **General**.
+1. In the navigation menu, select **Settings**, and then select **General**.
 
 1. Select the **Advanced** tab.
 

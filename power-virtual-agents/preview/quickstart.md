@@ -25,7 +25,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 :::image type="content" source="media/quickstart/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
-1. In the side navigation, select **Create** (**+**); or, select **Home**, then **+ Create a bot**.
+1. In the navigation menu, select **Create** (**+**); or, select **Home**, then **+ Create a bot**.
 
 1. Select **Try the unified canvas (preview)** to create a preview bot.
 
@@ -42,7 +42,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 ## Customize the conversation start topic
 
-1. In the side navigation, select **Topics**.
+1. In the navigation menu, select **Topics**.
 1. Select the **System** tab to view the system topics.
 1. Select the **Conversation Start** topic to open it. This topic is triggered when a user joins a new conversation and allows the bot to send a welcome message to the user.
 1. To remove the existing **Message** node, select its _node menu_ (**&vellip;**), then **Delete**.
@@ -88,7 +88,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 ## Add a reservation topic
 
-1. In the side navigation, select **Topics** and then **New topic**.
+1. In the navigation menu, select **Topics** and then **New topic**.
 
 1. Add the following trigger phrases:
     - `Reserve a table`

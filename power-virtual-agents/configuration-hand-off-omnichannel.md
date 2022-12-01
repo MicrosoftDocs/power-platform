@@ -36,7 +36,7 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 > [!NOTE]
 > If you connected your bot to omnichannel engagement before November 2021, the settings on the **Omnichannel** tile will look as if they haven't been configured. This is a known issue. It doesn't affect the bot or the omnichannel connection, which will continue to run normally. Select **Enable** to refresh the settings and show the actual connection details.
 
-1. In Power Virtual Agents, edit your bot. In the left panel, select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile.
+1. In Power Virtual Agents, edit your bot. In the navigation menu, select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-settings.png" alt-text="The bot management Agent transfers page.":::
 
@@ -88,7 +88,7 @@ If you continue to see the message after exporting and importing the latest vers
   
 1. Sign in to Power Apps and select the managed bot's environment.  
 
-1. In the left pane, select **Solutions**, and then select the solution that contains the bot with the unmanaged layer.  
+1. In the navigation menu, select **Solutions**, and then select the solution that contains the bot with the unmanaged layer.  
 
 1. Next to the chatbot component in the solution, select **More commands** (**…**), and then select **See solution layers**.
 

@@ -57,9 +57,9 @@ These automatically created topics fall into two categories:
 
 ## Create a topic
 
-1. Go to the **Topics** tab on the side pane to open the topics page.
+1. In the navigation menu, select **Topics** tab to open the topics page.
 
-   :::image type="content" source="../media/authoring-create-edit-topics/topics-menu-teams.png" alt-text="Select Topics on the side navigation menu." border="false":::
+   :::image type="content" source="../media/authoring-create-edit-topics/topics-menu-teams.png" alt-text="Select Topics on the navigation menu." border="false":::
 
 1. On the topics page, select **New topic** to open the authoring canvas for an empty topic.
 
