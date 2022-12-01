@@ -33,7 +33,7 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
     :::image type="content" source="media/dlp-example-1/skills-connector.png" alt-text="Screenshot of the Skills with Power Virtual Agents connector.":::
 
-1. Select the connector's **More actions** menu (&vellip;), and then select **Block**.
+1. Select the connector's **More actions** menu (**&vellip;**), and then select **Block**.
 
     :::image type="content" source="media/dlp-example-1/block-connector.png" alt-text="Screenshot of the Power Platform admin center  showing the contextual menu for a connector available from the more menu icon.":::
 
