@@ -3,7 +3,6 @@ title: "Set up inactivity notifications components | MicrosoftDocs"
 description: "Learn how to set up the inactivity notifications components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2022

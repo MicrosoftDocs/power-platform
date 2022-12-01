@@ -73,6 +73,8 @@ The appointment organizer is a key field for appointment synchronization. It dri
 > An appointment created in Dynamics 365 will appear as created by SYSTEM if the following conditions are true:
 > - The user who tracked the appointment is not the organizer
 > - The [OrgDBOrgSetting](https://support.microsoft.com/en-us/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba) named DisableImplicitSharingOfCommunicationActivities is set to the default value of False.
+> 
+> If the organizer of the Outlook meeting is a Dynamics 365 user, the owner will be the organizer. If the organizer is not a Dynamics 365 user, the owner will be the user who tracked it.
 
 ### Syncing appointments from Dynamics 365 to Exchange
 

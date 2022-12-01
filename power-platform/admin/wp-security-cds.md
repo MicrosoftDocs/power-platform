@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 9/27/2022
+ms.date: 11/11/2022
 ms.topic: conceptual
 author: paulliew
 ms.subservice: admin
@@ -16,6 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
+
 # Security concepts in Microsoft Dataverse
 
 One of the key features of [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Dataverse database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration and troubleshooting security access related issues.
@@ -61,10 +62,13 @@ User A can be associated with any of the business units, including the root busi
 > [!div class="mx-imgBorder"] 
 > ![Hierarchical data access structure example](media/example-business-unit.png "Hierarchical data access structure example")
 
-#### To enable this Matrix data access structure: 
+#### Enable the Matrix data access structure
 
-1. Sign in to the Power Platform admin center, as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
-2. Select the **Environments** tab, and then choose the environment that you want to enable this feature for. 
+> [!NOTE]
+> Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that are not working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+
+1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
+2. Select **Environments**, and then choose the environment that you want to enable this feature for. 
 3. Select **Settings** > **Product** > **Features**. 
 4. Turn **On** the **Record ownership across business units** switch. 
 
@@ -73,8 +77,7 @@ Once this feature switch is turned on, you can select Business unit when you [as
 You can assign a user as record owner in any business unit without the need to assign a security role in the record's owning business unit as long as the user has a security role that has Read privilege to the record table. See [Record Ownership in Modernized Business Units](wp-security-cds.md#record-ownership-in-modernized-business-units). 
 
 > [!NOTE]
-> This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** [environment database settings](environment-database-settings.md) and can also be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](
-https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+> This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** setting and can be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
 ### Associate a business unit with an Azure AD security group
 
