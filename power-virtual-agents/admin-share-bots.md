@@ -24,8 +24,8 @@ Select the version of Power Virtual Agents you're using here:
 
 You can share your bots with others to grant them special permissions. There are two different sharing methods:
 
-1. Share a bot with a security group, or your whole organization, to grant users permission to chat with the bot.
-1. Share a bot with individual users to allow collaborative authoring and also allow them to chat with the bot.
+1. Grant security groups, or your whole organization, permission to chat with the bot.
+1. Invite users to collaborate on your bot project. Collaborators always have permission to chat with the bot.
 
 ## Prerequisites
 
@@ -209,7 +209,7 @@ You must be a **System administrator** of the environment where the bot is locat
 
 You can assign the **Environment maker** security role when sharing a bot with a user who does not have sufficient environment permissions to run Power Virtual Agents.
 
-When [sharing the bot](#share-a-bot-for-chat), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that the **Environment maker** security role will be assigned to the user so they can use the bot.
+When [sharing the bot for chat](#share-a-bot-for-chat), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that the **Environment maker** security role will be assigned to the user so they can use the bot.
 
 :::image type="content" source="media/admin-share-bots/sharing-input-invitee-no-permission.png" alt-text="Share panel with permission notice bubble." border="false":::
 
@@ -224,7 +224,7 @@ Based on the content and target audience of the bot, you may want to give transc
 >
 > In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](./environments-first-run-experience.md#create-a-new-environment-for-your-bots)
 
-When [sharing the bot](#share-a-bot-for-chat), you can assign the **Bot transcript viewer** role by selecting the check box.
+When [sharing the bot for chat](#share-a-bot-for-chat), you can assign the **Bot transcript viewer** role by selecting the check box.
 
 :::image type="content" source="media/admin-share-bots/sharing-assign-transcript-viewer.png" alt-text="Share panel with Bot transcript viewer role selected." border="false":::
 
