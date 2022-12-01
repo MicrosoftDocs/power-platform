@@ -80,7 +80,7 @@ Not currently. Keep an eye out for updates on this topic. For now, do not attemp
 Currently only within development environments associated with a pipeline. Pipelines cannot be viewed or run from within target environments. Notice you may also run pipelines from the Power Platform CLI. 
 
 ### Can I deploy across geos?
-Not currently. The host and all environments associated with pipelines in a host must be located within the same geo. For example, a pipeline cannot deploy from Germany to Canada. And a host in Germany should not manage environments in Canada. Instead, a separate host and pipelines should be used for Germany and Canada. 
+Not currently. The host and all environments associated with pipelines in a host must be located within the same geographic location (as specified when creating environments). For example, a pipeline cannot deploy from Germany to Canada. And a host in Germany should not manage environments in Canada. Instead, separate hosts should be used for Germany and Canada.
 
 ### Should I deploy the same solution using different pipelines?
 This is possible, although we recommend starting with the same pipeline for a given solution. This helps avoid confusion and inadvertent mistakes. Pipeline run information is displayed in context of one pipeline and one solution (within the solution experience). Therefore other pipelines may not show the latest deployed solution version or other important run information associated with different pipeline(s). Notice the Deployment Pipeline Configuration app shows run information across all pipelines and all solutions (for the current host).
@@ -104,8 +104,8 @@ Not currently. Keep an eye out for updates on this topic.
 Not currently. Keep an eye out for updates on this topic. Currently you will need to submit a different deployment for each solution. However, the same pipeline may be used for multiple solutions. 
 
 ### Do Pipelines publish unmanaged customizations before exporting the solution?
-Not currently. 
-
+Not currently. The best practice is to publish individual objects as they're saved. _Note that only certain solution objects require publishing.
+_
 ### Can I specify advanced solution import behaviors such as update vs upgrade?
 Not currently. Keep an eye out for updates on this topic. Pipelines default behavior is _Upgrade_ with _Maintain customizations_. 
 
