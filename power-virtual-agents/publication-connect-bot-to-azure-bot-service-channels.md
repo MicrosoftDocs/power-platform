@@ -60,7 +60,7 @@ If you already have an Azure Bot Service bot, you need to add a Power Virtual Ag
 
 ## Get your Power Virtual Agents bot parameters
 
-To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
+To connect to the bot you have built with Power Virtual Agents, you'll need to retrieve your bot's name and token endpoint.
 
 1. Copy your bot's name in Power Virtual Agents.
 
@@ -72,7 +72,7 @@ To connect to the bot you have built with Power Virtual Agents, you will need to
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-slack.png" alt-text="Slack channel." border="false":::
 
-1. Copy and save the _Bot ID_ and _Tenant ID_ value by selecting **Copy**. You will need these when connecting your bot to the Azure Bot Service channel.
+1. To copy and save the **Token Endpoint** value, select **Copy**. You'll need your endpoint to connect your bot to the Azure Bot Service channel.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-parameters-slack.png" alt-text="Get bot parameters." border="false":::
 
@@ -93,7 +93,6 @@ The following example uses samples from the [relay bot sample code](https://gith
     {   
         httpRequest.Method = HttpMethod.Get;
         UriBuilder uriBuilder = new UriBuilder(TokenEndPoint);
-        uriBuilder.Query = $"botId={BotId}&tenantId={TenantId}";
         httpRequest.RequestUri = uriBuilder.Uri;
         using (var response = await s_httpClient.SendAsync(httpRequest))
         {
