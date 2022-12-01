@@ -107,7 +107,7 @@ New connectors that are added to the platform are added to the non-business grou
 
 To restrict the access of the employees to only the basic non-block-able connectors and prevent access to the rest of the connectors, classify the prebuilt connectors as follows:
 
-1. Move all the connectors, which can't be blocked to the business data group.
+1. Move all the connectors that can't be blocked to the business data group.
 
 1. Move all the block-able connectors to the blocked data group.
 
