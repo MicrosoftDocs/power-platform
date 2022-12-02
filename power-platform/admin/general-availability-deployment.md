@@ -4,10 +4,10 @@ description: About general availability deployment
 author: samathur
 ms.subservice: admin
 ms.author: samathur 
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 12/02/2022
 search.audienceType: 
   - admin
 search.app:
@@ -38,12 +38,12 @@ The general availability deployment is based on the regions where environments a
 
 |Regions  |Schedule for 2022 wave 2 general availability deployment|
 |---------|---------|
-| Canada<br />France<br />Germany<br />India<br />Norway <br />South Africa<br />South America<br />South Korea<br />Switzerland  | Friday, September 30th to Sunday, October 2nd     |
-|Asia Pacific<br /> Australia <br /> Great Britain<br />Japan<br />United Arab Emirates     | Friday, October 7th to Sunday, October 9th        |
-|Europe    | Friday, October 14th to Sunday, October 16th      |
-|North America     |  Friday, October 21st to Sunday, October 23rd             |
-|China | Friday, October 28th to Sunday, October 30th       |
-|GCC<br />GCC High<br />DOD  | Friday, October 28th to Sunday, October 30th    <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
+| Canada<br />France<br />Germany<br />India<br />Norway <br />South Africa<br />South America<br />South Korea<br />Switzerland  | Friday, March 31 2023 to Sunday, April 2 2023     |
+|Asia Pacific<br /> Australia <br /> Great Britain<br />Japan<br />United Arab Emirates     | Friday, April 7 2023 to Sunday, April 9 2023        |
+|Europe    | Friday, April 14 2023 to Sunday, April 16 2023      |
+|North America     |  Friday, April 21 2023 to Sunday, April 23 2023             |
+|China | Friday, April 28 2023 to Sunday, April 30 2023       |
+|GCC<br />GCC High<br />DOD  | Friday, April 28 2023 to Sunday, April 30 2023    <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
 
 ### See also
 [Dynamics 365 release schedule](/dynamics365/get-started/release-schedule) <br />
