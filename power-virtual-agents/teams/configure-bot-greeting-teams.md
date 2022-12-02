@@ -43,7 +43,7 @@ You can also combine the customized greeting with [customization to the look and
 
 ## Change the bot's default greeting
 
-1. Select **Topics** on the side navigation pane, then select the **Greeting** topic row.
+1. In the navigation menu, select **Topics**, then select the **Greeting** topic row.
 
     :::image type="content" source="../media/configure-bot-greeting/select-greeting-topic-teams.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted.":::
 

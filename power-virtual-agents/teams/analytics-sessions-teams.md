@@ -32,7 +32,7 @@ By default, you can download up to seven days of bot conversation transcript ses
 
 ## Download session transcript information from the Power Virtual Agents app in Teams
 
-1. Select **Analytics** on the side pane and go to the **Sessions** tab.
+1. In the navigation menu, select **Analytics** and go to the **Sessions** tab.
 
     If your bot had a high number of sessions, they'll be broken down into multiple rows. Each row contains 2500 sessions.
 

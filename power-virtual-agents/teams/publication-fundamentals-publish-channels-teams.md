@@ -38,7 +38,7 @@ After the first publish, you can do subsequent publishes whenever you would like
 
 **Publish the latest bot content:**
 
-1. Go to the **Publish** tab on the side pane.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Publish** to make the latest bot content available to your customers.
 

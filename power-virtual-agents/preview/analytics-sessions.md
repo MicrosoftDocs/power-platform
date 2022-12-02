@@ -22,7 +22,7 @@ You can download bot session or conversation transcripts from the past 30 days i
 
 ## Download session transcripts in Power Virtual Agents
 
-1. In the left side panel, select **Analytics**. Select the **Sessions** tab.
+1. In the navigation menu, select **Analytics**. Select the **Sessions** tab.
 
     If your bot has many sessions, they're broken down into multiple rows. Each row contains 2,500 sessions.
 
@@ -52,7 +52,7 @@ The session transcript is a comma-separated values (CSV) file that contains the 
 
 ## Download conversation transcripts in Power Apps
 
-1. In the left side panel, select **Dataverse**, and then select **Tables**.
+1. In the navigation menu, select **Dataverse**, and then select **Tables**.
 
 1. Select **All**. In the search box at the upper-right corner, type **Conversation**.
 

@@ -43,7 +43,7 @@ With the knowledge granted by entities, a bot can smartly recognize the relevant
 
 To help understand that notion, the **Money** entity can be used as an example.
 
-1. In Power Virtual Agents, go to the **Entities** tab on the side pane.
+1. In Power Virtual Agents, in the navigation menu, select **Entities**.
 
    :::image type="content" source="media/advanced-entities-slot-filling/entities-menu.png" alt-text="Go to the Entities tab.":::
 
@@ -67,7 +67,7 @@ For instance, let's say you want to build a bot for an outdoor store. In this ca
 
 To do this, you need to create a custom entity. In this case, you can create an entity that gives the bot the knowledge of all outdoor product categories.
 
-1. In Power Virtual Agents, go to the **Entities** tab on the side pane.
+1. In Power Virtual Agents, in the navigation menu, select **Entities**.
 
    :::image type="content" source="media/advanced-entities-slot-filling/entities-menu.png" alt-text="Go to the Entities tab to create a new entity.":::
 

@@ -100,7 +100,7 @@ You can use the code provided in the [Power Virtual Agents' GitHub repo](https:/
     ```
 
 1. Find your bot's ID in Power Virtual Agents:
-    1. In the side navigation pane, under **Settings**, select **Channels**.
+    1. In the navigation menu, under **Settings**, select **Channels**.
 
     1. Select **Mobile app**.
 

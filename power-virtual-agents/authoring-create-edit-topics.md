@@ -62,7 +62,7 @@ These automatically created topics fall into two categories:
 
 ## Create a topic
 
-1. In the left pane, select **Topics**.
+1. In the navigation menu, select **Topics**.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::
 
