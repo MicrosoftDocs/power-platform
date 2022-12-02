@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 11/04/2022
 ms.custom: template-how-to
 ---
-# Run Power Platform pipelines (preview)
+# Run Power Platform Pipelines (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -21,7 +21,7 @@ Pipelines automate solution deployments between Power Platform environments and 
 - You must have access to run a pipeline.
 - You must have privileges to import solutions to the target environment(s) associated with a pipeline.
 
-For more information about these prerequisites, go to [Set up Power Platform pipelines (preview)](set-up-pipelines.md)
+For more information about these prerequisites, go to [Set up Power Platform Pipelines (preview)](set-up-pipelines.md)
 .
 ## Run a pipeline
 
@@ -41,7 +41,7 @@ For more information about these prerequisites, go to [Set up Power Platform pip
 
 The **Pipelines** page in the **Solutions** area displays all deployment activity for the current pipeline and solution.
 
-Select a pipeline to view more detail and error information if there was a failure.
+Select a pipeline, then **Run history** to view more detail and error information if there was a failure.
 :::image type="content" source="media/pipeline-monitoring.png" alt-text="Monitoring a pipeline":::
 
 ## Next steps
