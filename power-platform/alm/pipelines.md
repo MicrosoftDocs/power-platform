@@ -98,7 +98,8 @@ Not currently.
 This is possible but the guidance is not to combine preview features with production workloads. 
 
 ### Can I deploy unmanaged solutions?
-Not currently. Keep an eye out for updates on this topic.
+No. Best practices are to deploy managed solutions to non-development environments. 
+Keep an eye out for different ways to hydrate development environments with unmnaged solutions.
 
 ### Can I deploy multiple solutions at once?
 Not currently. Keep an eye out for updates on this topic. Currently you will need to submit a different deployment for each solution. However, the same pipeline may be used for multiple solutions. 
@@ -110,7 +111,7 @@ _
 Not currently. Keep an eye out for updates on this topic. Pipelines default behavior is _Upgrade_ with _Maintain customizations_. 
 
 ### Can I use Pipelines for multi-developer teams working in isolated development environments? 
-Pipelines are currently more focused on deployments (CD) than integration (CI). Keep an eye out for advancements in this area and please send us your feedback. 
+The current implementation caters to using a single development environment for a given solution. Keep an eye out for advancements in this area and please send us your feedback. 
 
 ### Can Pipelines deploy to a different tenant?
 Not currently. We reccommend using Azure DevOps or GitHub for this scenario. 
