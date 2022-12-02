@@ -14,15 +14,20 @@ ms.custom: template-how-to
 
 Pipelines automate solution deployments between Power Platform environments and facilitate healthy application management practices with minimal effort.
 
+> [!IMPORTANT]
+> - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
+> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
+
 ## Prerequisites
 
 - One or more pipelines must already be created and associated with the environment that's used for development.
 - The development environment must have Microsoft Dataverse or Dataverse plus Dynamics 365 Customer Engagement apps.
-- You must have access to run a pipeline.
-- You must have privileges to import solutions to the target environment(s) associated with a pipeline.
+- You must have access to run a pipeline. More information: [Grant access to edit or run pipelines](set-up-pipelines.md#grant-access-to-edit-or-run-pipelines)
+- You must have privileges to import solutions to the target environments associated with a pipeline.
 
-For more information about these prerequisites, go to [Set up Power Platform Pipelines (preview)](set-up-pipelines.md)
-.
+For more information about these prerequisites, go to [Set up Power Platform Pipelines (preview)](set-up-pipelines.md).
+
 ## Run a pipeline
 
 1. Sign into a Power Platform environment (make.powerapps.com or make.powerautomate.com) and select your development environment.

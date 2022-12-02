@@ -96,7 +96,7 @@ Once installed the deployment pipelines configuration application will appear in
    - **Description** (optional): Optional description for the stage.
    - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
    - **Target Deployment Environment**: This is the target environment where this stage will deploy to. 
-1. Repeat the previous two steps for each stage you'd like to add to the pipeline. Note that you must have at least one stage You can add up to seven stages.
+1. Repeat the previous two steps for each stage you'd like to add to the pipeline. Note that you must have at least one stage. You can add up to seven stages.
    :::image type="content" source="media/Pipeline fully configured.png" alt-text="Pipeline fully configured":::
 
 ## Grant access to edit or run pipelines
@@ -110,7 +110,7 @@ When you installed the Power Platform pipelines application, two security roles 
 
 ### Share pipelines with makers
 
-The **Deployment Pipeline User** security role grants access to run one or more pipelines. It does not grant access to create, edit, or delete pipelines. Users with the Deployment Pipeline User security role won't see the host environment within the environment picker in Power Apps or Power Automate, or otherwise need to be aware of it.
+The **Deployment Pipeline User** security role grants access to run one or more pipelines. It doesn't grant access to create, edit, or delete pipelines. Users with the Deployment Pipeline User security role won't see the host environment within the environment picker in Power Apps or Power Automate, or otherwise need to be aware of it.
 
 To share pipelines:
 
@@ -120,7 +120,7 @@ To share pipelines:
 
 ### Share with pipeline administrators
 
-The Deployment Pipeline Administrator security role grants full privileges to all pipelines (and tables which store pipeline information) within the host environment. It also grants access to run all pipelines associated with the current host. The Deployment Pipeline Administrator security role doesn't grant privileges to perform other activities within the host environment.
+The Deployment Pipeline Administrator security role grants full privileges to all pipelines (and tables, which store pipeline information) within the host environment. It also grants access to run all pipelines associated with the current host. The Deployment Pipeline Administrator security role doesn't grant privileges to perform other activities within the host environment.
 
 > [!IMPORTANT]
 > Pipeline administrators must also have access to all development, test, and production environments that are associated with pipelines they create or run.
