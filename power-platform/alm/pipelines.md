@@ -7,7 +7,7 @@ ms.author: matp
 ms.custom: ""
 ms.date: 11/02/2022
 ms.reviewer: "matp"
-ms.topic: "article"
+ms.topic: "overview"
 search.audienceType: 
   - maker
 search.app: 
