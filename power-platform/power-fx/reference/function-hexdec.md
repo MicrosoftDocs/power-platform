@@ -3,11 +3,11 @@ title: Hex2Dec and Dec2Hex functions in Power Fx
 description: Reference information including syntax and examples for the Hex2Dec and Dec2Hex functions in Power Fx.
 author: gregli-msft
 manager: kvivek
-ms.service: powerapps
+ms.subservice: power-fx
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: nabuthuk
-ms.date: 08/24/2021
+ms.date: 12/03/2022
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -24,11 +24,11 @@ Use the **Dec2Hex** function to convert a number to a hexadecimal text string.  
 
 Use the **Hex2Dec** function to convert a text string containing hexadecimal digits (`0` through `9` and `A` through `F`) to a number.  Uppwer and lower case characters are accepted.  No more than 10 hexadecimal characters can be passed to **Hex2Dec**.
 
-Both these functions work with a 40 bit, two's-complement, whole number. The range of acceptaed values for both functions is hexadecimal 8000000000 or decimal -549755813888 to hexadecimal 7FFFFFFFFF or decimal 549755813887.
+Both these functions work with a 40 bit, two's-complement, whole number. The range of accepted values for both functions is hexadecimal 8000000000 or decimal -549755813888 to hexadecimal 7FFFFFFFFF or decimal 549755813887.
 
 If you pass a single number or text string to these functions, the return value is a single result.  If you pass a single-column [table](../working-with-tables.md) the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](../working-with-tables.md) describes.  At this time, the *Places* argument to **Dec2Hex** cannot be used with single-column tables.
 
-If the input value is out of range or includes invalid hexadecimal characters in the case of **Hex2Dec**, an **ErrorKind.Numeric** error is returned.  In the case of a single column table, the error will embedded in the output table.
+If the input value is out of range or includes invalid hexadecimal characters in the case of **Hex2Dec**, an **ErrorKind.Numeric** error is returned.  In the case of a single column table, the error will be embedded in the output table.
 
 ## Syntax
 
@@ -87,4 +87,3 @@ If the input value is out of range or includes invalid hexadecimal characters in
 | `Dec2Hex( -45780, 6 )`  | "FFFFFF4D2C" | 
 | `Dec2Hex( -45780, 10 )` | "FFFFFF4D2C" | 
 | `Dec2Hex( -45780, 11 )` | *error* (out of range) | 
-
