@@ -36,7 +36,7 @@ Power Apps treats [Dataverse native](/power-apps/maker/canvas-apps/data-platform
 > DLP authoring experiences allow [Dataverse (legacy)](/connectors/commondataservice/) and [Dataverse](/connectors/commondataserviceforapps/) connectors to be grouped separately. If the following conditions are true, it can cause an app to not be DLP compliant:
 > - The Dataverse connectors are grouped separately
 > - An app triggers a flow 
-> - Both the app and flow connect to Dataverse.
+> - Both the app and flow connect to Dataverse
 
 ## Child flows
 - Blocking the HTTP connector will also block child flows because those child flows are called using the same HTTP connector technology.
