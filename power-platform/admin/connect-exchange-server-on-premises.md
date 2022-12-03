@@ -4,9 +4,9 @@ description: Connect to Exchange Server (on-premises)
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/24/2021
-author: jimholtz
+author: DanaMartens
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin

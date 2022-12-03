@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 8/11/2022
+ms.date: 11/18/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac data
 
-Import and export data from Dataverse environment
+Import and export data from Dataverse.
 
 [!INCLUDE [data-intro](includes/data-intro.md)]
 
@@ -77,13 +77,16 @@ Import data
 
 ### Required Parameters
 
-#### `--dataDirectory` `-dd`
+#### `--data` `-d`
 
-Directory name with data for import
+Zip file or directory name with data for import
 
 
 ### Optional Parameters
 
+#### `--dataDirectory` `-dd`
+
+**Deprecated**: This parameter will be ignored.
 #### `--environment` `-env`
 
 Environment (id, org id, url, unique name or partial name)

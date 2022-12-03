@@ -18,6 +18,8 @@ When your customers need to speak with a human agent, your bot can seamlessly ha
 
 When your bot hands off a conversation, it shares the full history of the conversation and all variables collected in the interaction. Your omnichannel service routes incoming escalations to the right queue, and a live agent can seamlessly resume the conversation. For more information about how to use hand-off in bot conversations, see [Hand off to a live agent](./advanced-hand-off.md).
 
+You can also enable single sign-on (SSO) to allow chatbots to sign users in if they're logged in to the page where the bot is deployed. For more information, see [Configure single sign-on](configure-sso.md) and [Pass authentication token to bot during single sign-on in live chat](/dynamics365/customer-service/pass-auth-token-sso-live-chat).
+
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
@@ -25,7 +27,7 @@ When your bot hands off a conversation, it shares the full history of the conver
 - Have a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 - Environments:
   - Your bot environment and omnichannel environment must be in the same [geographical region](./data-location.md#data-locations).
-  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Europe, Asia, or Australia geographies](./data-location.md#data-locations).
+  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Europe, Asia, United Kingdom, or Australia geographies](./data-location.md#data-locations).
 - [Register an application with Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application).
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
 
@@ -34,7 +36,7 @@ When your bot hands off a conversation, it shares the full history of the conver
 > [!NOTE]
 > If you connected your bot to omnichannel engagement before November 2021, the settings on the **Omnichannel** tile will look as if they haven't been configured. This is a known issue. It doesn't affect the bot or the omnichannel connection, which will continue to run normally. Select **Enable** to refresh the settings and show the actual connection details.
 
-1. In Power Virtual Agents, edit your bot. In the left panel, select **Manage**, **Agent transfers**, and then select the **Omnichannel** tile.
+1. In Power Virtual Agents, edit your bot. In the navigation menu, select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-settings.png" alt-text="The bot management Agent transfers page.":::
 
@@ -76,7 +78,7 @@ To add [voice capabilities](#voice-based-capabilities) after you've connected yo
 
 ### Bots with ALM
 
-If you've [set up ALM for your bots](/power-platform/alm/basics-alm), and are exporting and importing bots between [development (unmanaged) and test or production (managed) environments](/power-platform/alm/basics-alm#types-of-environments-used-in-alm), you might see a message that we can't determine if omnichannel integration is enabled for the environment.
+If you've [set up Application Lifecycle Management (ALM) for your bots](/power-platform/alm/basics-alm), and are exporting and importing bots between [development (unmanaged) and test or production (managed) environments](/power-platform/alm/basics-alm#types-of-environments-used-in-alm), you might see a message that we can't determine if omnichannel integration is enabled for the environment.
 
 :::image type="content" source="./media/configuration-hand-off-omnichannel/transfer-managed-bot.png" alt-text="Message that we can't determine if this bot has Omnichannel enabled or disabled.":::
 
@@ -86,7 +88,7 @@ If you continue to see the message after exporting and importing the latest vers
   
 1. Sign in to Power Apps and select the managed bot's environment.  
 
-1. In the left pane, select **Solutions**, and then select the solution that contains the bot with the unmanaged layer.  
+1. In the navigation menu, select **Solutions**, and then select the solution that contains the bot with the unmanaged layer.  
 
 1. Next to the chatbot component in the solution, select **More commands** (**…**), and then select **See solution layers**.
 
@@ -100,7 +102,7 @@ If your bot doesn't have omnichannel capabilities enabled, the message will alwa
 
 ## Manage your bot's omnichannel capabilities
 
-Select **Manage**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect or disable your bot, refresh the connection, or open the Omnichannel admin center to view the connection details.
+Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect or disable your bot, refresh the connection, or open the Omnichannel admin center to view the connection details.
 
 ### Disconnect your bot from omnichannel or disable the omnichannel connection
 

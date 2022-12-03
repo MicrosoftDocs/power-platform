@@ -26,7 +26,7 @@ Generates a JSON text string for a table, a record, or a value.
 
 The **JSON** function returns the JavaScript Object Notation (JSON) representation of a data structure as text so that it's suitable for storing or transmitting across a network. [ECMA-404](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259) describe the format, which is widely used by JavaScript and other programming languages.
 
-Canvas apps support the [data types](data-types.md) that this table lists with details about their text representation:
+Canvas apps support the [data types](../data-types.md) that this table lists with details about their text representation:
 
 | Data type           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Result example                                                                 |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -90,11 +90,13 @@ If a column has both a display name and a logical name, the result contains the 
 
    The **CitiesByCountry** collection is created with this data structure, which you can show by selecting **Collections** on the **File** menu and then selecting the name of the collection.
 
-   > [!div class="mx-imgBorder"] > ![CitiesByCountry collection.](media/function-json/cities-grouped.png)
+    > [!div class="mx-imgBorder"] 
+    > ![CitiesByCountry collection.](media/function-json/cities-grouped.png)
 
    You can also show this collection by selecting **Settings** > **Upcoming features** > **Enable formula bar result view**, selecting the name of the collection in the formula bar, and then selecting the down arrow next to the name of the collection under the formula bar.
 
-   > [!div class="mx-imgBorder"] > ![Collection in the formula bar's result view.](media/function-json/cities-grouped-resultview.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Collection in the formula bar's result view.](media/function-json/cities-grouped-resultview.png)
 
 1. Insert another button, and set its **OnSelect** property to this formula:
 

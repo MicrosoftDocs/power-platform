@@ -81,12 +81,12 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
 **AsType**( _RecordReference_, _TableType_ )
 
 - _RecordReference_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
-- _TableType_ - Required. The specific table for which to test.
+- _TableType_ - Required. The specific table to which the record should be cast.
 
 **IsType**( _RecordReference_, _TableType_ )
 
 - _RecordReference_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
-- _TableType_ - Required. The specific table to which the record should be cast.
+- _TableType_ - Required. The specific table for which to test.
 
 ## Example
 

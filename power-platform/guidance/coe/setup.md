@@ -35,9 +35,11 @@ The CoE Starter Kit requires access to your tenant's Power Platform environments
 - Power Apps Per User license (non-trial) and Microsoft 365 license.
 - Power Automate Per User or Per Flow license (non-trial).
 - The identity must be email-enabled.
-- If you'd like to collect telemetry information, such as app launches and unique users per app, the identity must have access to the [Microsoft 365 audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log).
+- If you'd like to collect telemetry information, such as app launches and unique users per app, you must be granted access to the Audit Log and work with a Global Admin who has access to [Microsoft 365 audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log) to complete the setup.
 
 These roles and licenses must be available to this user continuously; if admin access is granted only temporarily via [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management), this won't be sufficient to run the CoE Starter Kit.
+
+Multi-factor authentication can be used for the account setting up the CoE Starter Kit, if **MaxAgeMultiFactor** is set to **Until-Revoked** instead of a fixed time. Learn more: [Conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
 
 Additionally, if you'd like to share the [Power BI report](power-bi.md) that's part of the CoE Starter Kit, this identity needs to have the Power BI Pro license.  
 
@@ -57,10 +59,10 @@ In particular, consider the following:
 - **User persona**
   - Power Platform users to be contacted by Power Platform admins.
 
-We recommend using three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups#microsoft-365-groups) for this, one for each persona. This group type is an email-enabled security group and can be associated with a Microsoft team for collaboration between the people in the group. 
+We recommend using three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups#microsoft-365-groups) for this, one for each persona. This group type is an email-enabled security group and can be associated with a Microsoft team for collaboration between the people in the group.
 
 >[!IMPORTANT]
->The admin configuring the [inventory components](setup-core-components.md) needs to be an owner of these groups. 
+>The admin configuring the [inventory components](setup-core-components.md) needs to be an owner of these groups.
 
 Some processes part of the CoE Starter Kit send [Power Automate Approvals](/power-automate/get-started-approvals) and [Adaptive Cards for Microsoft Teams](/power-automate/overview-adaptive-cards). These can't be assigned to a group. You therefore also need an individual named admin that these communications can go to. In addition to the above groups, you will therefore also need:
 
@@ -71,6 +73,11 @@ Some processes part of the CoE Starter Kit send [Power Automate Approvals](/powe
 ## Prepare your environment
 
 ### Decide what environment type to use (production or Dataverse for Teams)
+
+> [!IMPORTANT]
+> Effective October 2022, we will stop investing in the CoE Starter Kit version for Dataverse for Teams. Existing customers can continue using the Dataverse for Teams version and you can continue to [download the latest available versions](https://aka.ms/CoEStarterKitD4T) for Dataverse for Teams, but we will no longer implement new features or fix bugs for this version.
+>
+>We recommend that customers transition to installing the CoE starter Kit in a [Production environment](/power-platform/admin/environments-overview#types-of-environments) and setting up [pay-as-you-go plans](/power-platform/admin/pay-as-you-go-overview) for the usage of apps within the CoE Starter Kit.
 
 The CoE Starter Kit can be used in both production environments and Dataverse for Teams environments. Where you install it will depend on your organizational setup, your adoption of Microsoft Power Platform so far, and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs. Dataverse for Teams](/powerapps/teams/data-platform-compare) and review the impact on CoE Starter Kit features based on where you install it.
 
@@ -91,7 +98,7 @@ The CoE Starter Kit can be used in both production environments and Dataverse fo
 | Sharing the App Catalog app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go. |
 | Sharing the Training in a day app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
 | Sharing the Admin - Command Center app | Sharing requires users to have a Power Apps Per User or Per App license  | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go. |
-| Data Permissions | Team members have full access, and [pre-built table permissions](/powerapps/teams/set-perms-and-share#assign-table-permissions) can be applied to colleagues with access | Granular permissions through [Dataverse security roles](../../admin/security-roles-privileges.md) that can be tailored to your requirements |
+| Data Permissions | Team members have full access, and [pre-built table permissions](/powerapps/teams/set-perms-and-share#assign-table-permissions) can be applied to colleagues with access | Granular permissions through [Dataverse security roles](/power-platform/admin/security-roles-privileges) that can be tailored to your requirements |
 | Sharing apps | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
 | Accessing apps | Apps can only be accessed within Microsoft Teams | Apps can be viewed in the browser or mobile app |
 | Application Lifecycle Management | No | Yes |

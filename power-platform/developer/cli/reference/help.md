@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 8/11/2022
+ms.date: 11/18/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac help
 
-Show help for the Microsoft PowerPlatform CLI
+Show help for the Microsoft Power Platform CLI
 
 [!INCLUDE [help-intro](includes/help-intro.md)]
 

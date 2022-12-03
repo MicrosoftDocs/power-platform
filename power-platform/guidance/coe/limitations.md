@@ -3,7 +3,6 @@ title: "Limitations | MicrosoftDocs"
 description: "Limitations of some components within the CoE Starter Kit, such as potential timeouts, Government Community Cloud availability, and more."
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/10/2022
@@ -34,7 +33,12 @@ Larger tenants might require a [Power Automate Per Flow](https://flow.microsoft.
 >[!NOTE]
 >The first run of the sync flows will perform a full inventory and will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not go over Power Platform request entitlements for most tenants.
 
-## Dataverse for Teams
+## Installing the CoE Starter Kit in Dataverse for Teams
+
+> [!IMPORTANT]
+> Effective October 2022, we will stop investing in the CoE Starter Kit version for Dataverse for Teams. Existing customers can continue using the Dataverse for Teams version and you can continue to [download the latest available versions](https://aka.ms/CoEStarterKitD4T) for Dataverse for Teams, but we will no longer implement new features or fix bugs for this version.
+>
+>We recommend that customers transition to installing the CoE starter Kit in a [Production environment](/power-platform/admin/environments-overview#types-of-environments) and setting up [pay-as-you-go plans](/power-platform/admin/pay-as-you-go-overview) for the usage of apps within the CoE Starter Kit.
 
 Model Driven Apps, Business Process Flows, and Custom Connectors are not available in Dataverse for Teams. If you are installing the CoE Starter Kit in Dataverse for Teams, you will notice those components missing.
 
@@ -42,9 +46,9 @@ Model Driven Apps, Business Process Flows, and Custom Connectors are not availab
 
 The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
 
-## Flows that are imported or owned by a service principal
+## Flows that have never been turned on
 
-The Admin | Sync Template v3 (Flows) flow will fail to collect inventory information for flows that were imported or are owned by a service principal.
+The Admin | Sync Template v3 (Flows) flow will fail to collect flows that have never been turned on. For example, if you import a solution with flows that are off, these will not be collected to inventory as they are not returned by the connector.
 
 ## Co-authoring and Connections
 

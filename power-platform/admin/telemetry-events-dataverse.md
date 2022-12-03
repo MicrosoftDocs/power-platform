@@ -91,7 +91,7 @@ These are logs for SDK operations triggered as a part of an incoming request. Th
 
 ```kusto
 dependencies
-| where type starts with "SDK"
+| where type startswith "SDK"
 | take 10
 ```
 

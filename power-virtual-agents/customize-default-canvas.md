@@ -14,6 +14,10 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of the bot's default canvas
 
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
+Select the version of Power Virtual Agents you're using here:
+
 > [!div class="op_single_selector"]
 >
 > - [Power Virtual Agents web app](customize-default-canvas.md)
@@ -45,11 +49,11 @@ Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (w
 ## Change the bot name and icon
 
 > [!IMPORTANT]
-> If your bot is connected to [Omnichannel for Customer Service](configuration-hand-off-omnichannel.md), the bot's name is defined by the **Display name** property in the Azure portal registration. 
+> If your bot is connected to [Omnichannel for Customer Service](configuration-hand-off-omnichannel.md), the bot's name is defined by the **Display name** property in the Azure portal registration.
 
 You can change the bot's name and icon. This will affect the icon in all channels where you publish your bot.
 
-1. Select **Manage** on the side pane, and then go to the **Details** tab.
+1. In the navigation menu, under **Settings**, select **Details**.
 
 1. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons)
 
@@ -192,7 +196,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
                 botAvatarInitials: 'BT',
                 accent: '#00809d',
                 botAvatarBackgroundColor: "#FFFFFF",
-                botAvatarImage: 'https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg',
+                botAvatarImage: 'https://learn.microsoft.com/azure/bot-service/v4sdk/media/logo_bot.svg',
                 userAvatarImage: 'https://avatars.githubusercontent.com/u/661465'
             };  
     ```

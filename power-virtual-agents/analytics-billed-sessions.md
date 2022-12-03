@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 
 # View billed sessions for Power Virtual Agents in Teams
 
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
@@ -31,7 +33,7 @@ The consumption of the capacity isn't reported at the tenant level, but can be s
 
 ## Find the number of billed sessions for your bot
 
-1. In Power Virtual Agents, select **Analytics** from the side pane.
+1. In Power Virtual Agents, in the navigation menu, select **Analytics**.
 
 1. Go to the **Billing** tab.
 

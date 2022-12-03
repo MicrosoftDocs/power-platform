@@ -67,7 +67,7 @@ Imports a solution into a target environment.
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-| environment-url| (Required) The URL for the target environment that you want to import the solution into (for example, https://YourOrg.crm.dynamics.com).|
+| environment-url| (Required) The URL for the target environment that you want to import the solution into (for example, `https://YourOrg.crm.dynamics.com`).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
 | password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
 | solution-file        | (Required) The path and name of the solution file you want to import.   |
@@ -81,7 +81,7 @@ Exports a solution from a source environment.
 
 | Parameter      | Description     |
 |-----------------|---------------------|
-| environment-url| (Required) The URL for the environment that you want to export the solution from (for example, https://YourOrg.crm.dynamics.com).|
+| environment-url| (Required) The URL for the environment that you want to export the solution from (for example, `https://YourOrg.crm.dynamics.com`).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
 | password-secret | (Required) If you're using username/password authentication, the password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. You can't retrieve a secret after it has been defined and saved. |
 |app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
@@ -117,7 +117,7 @@ Publishes the solution customizations.
 
 | Parameter    | Description       |
 |---------------|-------------------|
-| environment-url| (Required) The URL for the  environment that you want to publish the solution into (for example, https://YourOrg.crm.dynamics.com).|
+| environment-url| (Required) The URL for the  environment that you want to publish the solution into (for example, `https://YourOrg.crm.dynamics.com`).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
 | password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
 | solution-file        | (Required) The path and name of the solution file you want to import.   |
@@ -131,7 +131,7 @@ Clones the solution for a given environment.
 
 | Parameter    | Description       |
 |---------------|-------------------|
-| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, https://YourOrg.crm.dynamics.com).|
+| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, `https://YourOrg.crm.dynamics.com`).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
 | password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
 | solution-file        | (Required) The path and name of the solution file you want to import.   |
@@ -149,7 +149,7 @@ Checks the solution file to detect inconsistencies.
 
 | Parameter    | Description       |
 |---------------|-------------------|
-| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, https://YourOrg.crm.dynamics.com).|
+| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, `https://YourOrg.crm.dynamics.com`).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
 | password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
 |app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
@@ -166,7 +166,7 @@ Provides the ability to upgrade the solution.
 
 | Parameter    | Description       |
 |---------------|-------------------|
-| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, https://YourOrg.crm.dynamics.com).|
+| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, `https://YourOrg.crm.dynamics.com`).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
 | password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
 | solution-file        | (Required) The path and name of the solution file you want to import.   |
@@ -190,7 +190,7 @@ Provides the ability to deploy a package dll or a zip file with a package.
 
 | Parameter    | Description       |
 |---------------|-------------------|
-| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, https://YourOrg.crm.dynamics.com).|
+| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, `https://YourOrg.crm.dynamics.com`).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
 | password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
 |app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
@@ -200,15 +200,15 @@ Provides the ability to deploy a package dll or a zip file with a package.
 
 ## Portal tasks
 
-These tasks perform the following actions against Power Apps portals.
+These tasks perform the following actions against Power Pages.
 
 ### upload-paportal
 
-Uploads data to Power Apps portals.
+Uploads data to Power Pages.
 
 | Parameter    | Description       |
 |---------------|-------------------|
-|environment-url| (Required) The URL for the  environment that you want to import the solution into (for example, https://YourOrg.crm.dynamics.com).|
+|environment-url| (Required) The URL for the  environment that you want to import the solution into (for example, `https://YourOrg.crm.dynamics.com`).|
 |app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
 |client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|

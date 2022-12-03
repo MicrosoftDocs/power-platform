@@ -65,6 +65,14 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
     ![Email to welcome new makers.](media/coe5.PNG "Email to welcome new makers")
 
+## How to use the CoE Starter Kit alongside Automation Kit
+
+The [Automation Kit](https://aka.ms/automationcoe) is set of tools that accelerates the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate money saved and return on investment (ROI).
+
+The kit is especially useful to an Automation Center of Excellence (CoE) team, which is a team of experts who support automation within your organization. They have good knowledge about Power Automate for desktop, set up and maintain the Automation Kit, and maintain the configuration data such as departments, process categories, goals, and more.
+
+The Automation Kit can be used standalone or alongside the CoE Starter Kit.
+
 ## How to use the CoE Starter Kit alongside Power Platform Admin Center
 
 ### Managed Environments for Power Platform
@@ -77,7 +85,7 @@ Our recommendation is to start with the out of the box capabilities in Power Pla
 
 Let's now look at individual features of Managed Environments to see how they compare to what's in the CoE Starter Kit:
 
-**[Weekly digest](/power-platform/admin/managed-environment-weekly-digests)**: The CoE Starter Kit doesn't have a weekly digest for admins; instead admins self-serve information through the [Power BI dashboard](/power-platform/guidance/coe/power-bi). Inactive apps and flows are highlighted in the Weekly digest email. In the CoE Starter Kit, a similar goal is achieved with the [inactivity notification process](governance-components.md#inactivity-notifications-processes), which notifies makers of their inactive resources and asks for approval to delete them. One of the main goals of Managed Environments and the CoE Starter Kit is to provide more insights thus allowing admins to take action. The CoE kit provides more capabilities, which can reduce the burden on the admin dealing with inactive resources, as the CoE can direct resource management to the maker thus making the owner responsible for their own resources.
+**[Weekly digest](/power-platform/admin/managed-environment-weekly-digests)**: The CoE Starter Kit doesn't have a weekly digest for admins; instead admins self-serve information through the [Power BI dashboard](/power-platform/guidance/coe/power-bi). Inactive apps and flows are highlighted in the Weekly digest email. In the CoE Starter Kit, a similar goal is achieved with the [inactivity notification process](governance-components.md#inactivity-processes), which notifies makers of their inactive resources and asks for approval to delete them. One of the main goals of Managed Environments and the CoE Starter Kit is to provide more insights thus allowing admins to take action. The CoE kit provides more capabilities, which can reduce the burden on the admin dealing with inactive resources, as the CoE can direct resource management to the maker thus making the owner responsible for their own resources.
 
 **[Sharing limits](/power-platform/admin/managed-environment-sharing-limits)**: The CoE Starter Kit can't limit sharing on resources, proactive governance like this can only be done via Managed Environments. The [Compliance process](example-processes.md) in the CoE Starter Kit offers a reactive way to identify highly shared resources. This process identifies highly shared resources and asks makers to provide additional information, so that admins can better support those solutions (for example, move them to a dedicated environment). With the Power BI dashboard admins can also identify highly shared resources.
 
@@ -97,7 +105,7 @@ In addition to those three features that have an overlap with Managed Environmen
 
 - Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
 
-- Get started with the Microsoft Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](/learn/paths/create-powerapps/?WT.mc_id=twitter-social-donasa).
+- Get started with the Microsoft Power Platform learning path, a free online and interactive training platform [aka.ms/PowerUp](/learn/paths/create-powerapps/).
 
 - As an admin looking after the CoE, you should be familiar with the administration and governance of Microsoft Power Platform. We recommend the following white paper as a resource: [aka.ms/PowerAppsAdminWhitepaper](https://aka.ms/powerappsadminwhitepaper).
 

@@ -3,7 +3,7 @@ title: "Use of Basic authentication with Exchange Online   | MicrosoftDocs"
 description: Article discusses the impact of the deprecation of Basic authentication.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/19/2022
+ms.date: 09/22/2022
 author: DanaMartens 
 ms.subservice: admin
 ms.author: dmartens 
@@ -19,7 +19,7 @@ search.app:
 # Use of Basic authentication with Exchange Online 
 
 > [!IMPORTANT]
-> Microsoft Exchange [plans](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online) to disable the use of Basic authentication (also known as Legacy authentication) when connecting to Exchange Online starting October 1, 2022.  
+> Microsoft Exchange [plans](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online) to disable the use of Basic authentication (also known as Legacy authentication) when connecting to Exchange Online starting October 1, 2022. On September 1, 2022, the Exchange Online team announced a one-time extension of this deadline. For additional details including the required steps, see [Basic Authentication Deprecation in Exchange Online – September 2022 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-september/ba-p/3609437).  
 
 ## Overview
 
@@ -140,13 +140,14 @@ The default Exchange Online profile included with Dynamics 365 Online uses serve
 Use the steps provided [here](connect-exchange-online.md) to create a new Exchange Online profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes. 
 
 
+### How can I identify who is using Basic authentication and from where? 
+Use the [Azure AD Sign-in Logs](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/new-tools-to-block-legacy-authentication-in-your-organization/ba-p/1225302) page in the Azure portal. To identify requests from server-side synchronization, you can start by using the Add filters option with a condition of **Client app** = Exchange Web Services. Requests to Exchange Web Services from server-side synchronization will have a **User agent** value that starts with CRM. The requests will include the username used to authenticate as well as the source IP address. To view the requests including the user agent value, you need to use the Download option. It is important to choose the JSON format as the user agent value isn't included in the CSV format option. An example request from Dynamics 365 on-premises would start with CRM/9.0.0.0/OnPremise where the middle value is the major version number. An example request to Dynamics 365 online would have a user agent value of CRM/9.0.0.0/Live.
+
+:::image type="content" source="media/client-app-ews.png" alt-text="Select Add filters with the Client app = Exchange Web Services":::
+
 
 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-
-
-
-
 

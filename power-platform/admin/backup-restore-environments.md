@@ -210,14 +210,14 @@ The newly restored environment is placed in administration mode. To disable admi
 
 ### What steps are needed after a restore to ensure flows are working as expected?
 
-- **Flows** - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows will be disabled so enable flows as needed.
+- **Flows** - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows will be disabled so enable flows as needed. Solution flows need to be enabled or turned on for the PowerShell and API commands to work with these flows.
 - **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
 - **Custom Connectors** - Custom connectors should be reviewed and, if needed, deleted and reinstalled.
 
 ### Are apps shared with Everyone still shared with Everyone in a restored environment? 
 No. Apps shared with Everyone in an environment that's backed up aren't shared with Everyone in the restored environment. Alternatively, a canvas app can be shared with a security group and the app in the restored environment will be shared with that security group. 
 
-### Are Power Apps app identifiers the same after backup and restore operations?
+### Are app identifiers the same after backup and restore operations?
 No for canvas apps. The app ID for a canvas app is different in a restored environment than the ID value when an environment was backed up. 
 
 ## Troubleshooting

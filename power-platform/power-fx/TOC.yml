@@ -12,6 +12,10 @@
           href: global.md
         - name: Data types
           href: data-types.md 
+        - name: Untyped objects (experimental)
+          href: untyped-object.md
+        - name: Working with JSON (experimental)
+          href: working-with-json.md
         - name: Imperatives
           href: imperative.md
         - name: Operators
@@ -20,6 +24,8 @@
           href: tables.md 
         - name: Variables
           href: variables.md
+        - name: Error handling
+          href: error-handling.md
         - name: Formula reference
           items:
           - name: Overview
@@ -56,6 +62,8 @@
             href: reference/function-navigate.md
           - name: Blank
             href: reference/function-isblank-isempty.md
+          - name: Boolean
+            href: reference/function-boolean.md
           - name: Calendar
             href: reference/function-clock-calendar.md
           - name: Char
@@ -100,8 +108,6 @@
             href: reference/function-table-counts.md
           - name: CountRows
             href: reference/function-table-counts.md
-          - name: Data types
-            href: reference/data-types.md
           - name: DataSourceInfo
             href: reference/function-datasourceinfo.md
           - name: Date
@@ -258,8 +264,12 @@
             href: reference/function-param.md
           - name: Parent
             href: reference/operators.md#self-and-parent-operators
+          - name: ParseJSON (experimental)
+            href: reference/function-parsejson.md
           - name: Patch
             href: reference/function-patch.md
+          - name: PDF
+            href: reference/function-pdf.md
           - name: Pi
             href: reference/function-trig.md
           - name: PlainText

@@ -5,7 +5,7 @@ author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 11/02/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -20,9 +20,7 @@ contributors:
   - slaouist
 ---
 
-# :::no-loc text="SearchBox"::: control
-
-[This article is pre-release documentation and is subject to change.]
+# :::no-loc text="SearchBox"::: control (Preview)
 
 A control used to create a search experience.
 
@@ -32,33 +30,44 @@ A control used to create a search experience.
 
 A search box (`SearchBox`) provides an input field for searching within a site or app to find specific items.
 
-This canvas component mimics the style and behavior of the [Fluent UI SearchBox control](https://developer.microsoft.com/fluentui#/controls/web/searchbox).
+This code component provides a wrapper around the [Fluent UI SearchBox](https://developer.microsoft.com/en-us/fluentui#/controls/web/searchbox) control for use in canvas & custom pages.
 
-[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
-
-## Limitations
-
-This canvas component can only be used in canvas apps and custom pages.
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `HintText` | The hint text displayed when there's no text. |
-| `Text` | The value of the text in the search box. |
+| `SearchText` | Text that is input by the user. Refer to this as the input for search functions. |
+| `IconName` | Name of the Fluent UI icon (see [Fluent UI Icons](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons)). |
+| `Underlined` | Whether or not the SearchBox is underlined. |
+| `DisableAnimation` | Whether or not to animate the SearchBox icon on focus. |
+| `PlaceholderText` | Placeholder for the search box. |
 
-## Configure search behavior
+### Additional properties
 
-Add the `SearchBox` control to your app where you need a search interface that's coupled with a gallery, `DetailsList`, or some control that can display a dataset.
+| Property | Description |
+| -------- | ----------- |
+| `Theme` | The Theme object (not Json formatted). See [theming](theme.md) for guidance on how to configure. |
+| `AccessibilityLabel` | Screen reader aria-label. |
+| `InputEvent` | An event to send to the control. E.g. `SetFocus`. |
 
-Create a search experience by using the [Search() or Filter()](/power-apps/maker/canvas-apps/functions/function-filter-lookup) expressions that use the value of the `Text` property in the `SearchBox`.
+## Example
+
+### Configure search behavior
+
+Add this control to your app where a search interface is needed, usually coupled with a gallery, [`DetailsList`](detailslist.md), or any control that can display a dataset.
+
+Create a search experience by using the [Search() or Filter()](/power-apps/maker/canvas-apps/functions/function-filter-lookup) expressions that use the value of the `SearchText` property in the `SearchBox`.
 
 ```powerapps-dot
-Search( Accounts, SearchBox.Text, "name" )
+Search( Accounts, SearchBox.SearchText, "name" )
 ```
 
-## Best practices
+## Limitations
 
-Go to [Fluent UI SearchBox control best practices](https://developer.microsoft.com/fluentui#/controls/web/searchbox).
+This code component can only be used in canvas apps and custom pages.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

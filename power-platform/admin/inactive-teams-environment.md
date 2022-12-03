@@ -4,7 +4,7 @@ description: Admins can configure an automatic cleanup process that removes inac
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/24/2022
+ms.date: 09/30/2022
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: jimholtz
@@ -91,7 +91,7 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 
 ### Trigger activity for an inactive Dataverse for Teams environment 
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments**, and then select the inactive Dataverse for Teams environment.
 
@@ -99,7 +99,7 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 
 ### Re-enable a disabled Dataverse for Teams environment
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments**, and then select the disabled Dataverse for Teams environment.
 
@@ -107,7 +107,7 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 
 ### Recover a deleted Dataverse for Teams environment
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments**, and then select **Recover deleted environments**.
 
@@ -117,12 +117,12 @@ For more information, see [recover environment](recover-environment.md).
 
 ## Set Dataverse for Teams environment deletion policy
 
-Administrators can change the length of time Power Platform waits to disable inactive and delete disabled Dataverse for Teams environments.
+Feature will be turned on with default policy of 90 days. Administrators can change the length of time Power Platform waits to disable inactive and delete disabled Dataverse for Teams environments.The permissible range of values are: 15 days, 30 days, 45 days and 60 days of inactivity.
 
 > [!NOTE]
-> We are in the process of rolling out this policy setting to all customers.
+> This view is not yet available. We will be rolling out this policy in a future release.
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Policies** > **Environment policies**.
 
@@ -131,7 +131,7 @@ Administrators can change the length of time Power Platform waits to disable ina
 4. In **Delete the disabled environment after**, select the number of days Power Platform should wait to delete a Dataverse for Teams environment that has been disabled.
 
    > [!NOTE]
-   > Ninety days is the maximum number of days you can set for Power Platform to wait to disable a Dataverse for Teams environment that becomes inactive. The permissible range of values are: 15 days, 30 days, 45 days, 60 days, and 90 days of inactivity.
+   > Ninety days is the maximum number of days you can set for Power Platform to wait to disable a Dataverse for Teams environment due to inactivity. The permissible range of values are: 15 days, 30 days, 45 days, 60 days, and 90 days of inactivity.
 
 
 5. Select **Save**.

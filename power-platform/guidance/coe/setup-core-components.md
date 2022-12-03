@@ -73,7 +73,7 @@ During solution import, you'll configure environment variable values. Make sure 
 |PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including the trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
 |Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
-| TenantID | Your Azure tenant ID.|
+| TenantID | Your Azure tenant ID. Learn more: [Find Tenant ID through the Azure Portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal)|
 
 ## Import the core components solution
 
@@ -91,7 +91,10 @@ During solution import, you'll configure environment variable values. Make sure 
 The import can take up to 15 minutes to be completed.
 
 >[!NOTE]
->The next steps walk you through turning on flows that. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
+>The next steps walk you through turning on flows that gather your tenants inventory. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
+
+>[!NOTE]
+>The steps below will create an inventory of all enviroments in your tenant, if you wish to inventory only a subset of environments, plesae see [Setting up CoE for a subset of environments](faq.md#setting-up-coe-for-a-subset-of-environments) before proceeding.
 
 ## Turn on child flows
 
@@ -102,6 +105,7 @@ There are several child flows, check to make sure all of these flows are on:
 1. HELPER – CloudFlowOperations
 1. HELPER – CanvasAppOperations
 1. HELPER – ObjectOperations
+1. CLEANUP HELPER - Check Deleted (Ai Models)
 1. CLEANUP HELPER - Check Deleted (Business Process Flows)
 1. CLEANUP HELPER – Check Deleted (Canvas Apps)
 1. CLEANUP HELPER – Check Deleted (Cloud Flows)
@@ -119,23 +123,24 @@ If you get a connection authorization error turning on a flow, you might need to
 
 The following flows support the inventory setup and need to be turned on before proceeding:
 
-- Admin | Add Maker to Group
-- Admin | Excuse Support Envts from Governance Flows
+- Admin | Sync Template v3 CoE Solution Metadata
 - Admin | Sync Template v3 Configure Emails
+- Admin | Sync Template v3 (Connectors)
+- Admin | Add Maker to Group
+- Admin | Excuse Non Inventoried Envts from Governance Flows
+- Admin | Excuse Support Envts from Governance Flows
 - Command Center App >  Get M365 Service Messages
 - Command Center App > Initially Populate Bookmarks
 - Command Center App > Get CoE Flows
 - Command Center App > Set CoE Flows State
 - DLP Editor > Parse impacted resources into CSV
-- Admin | Sync Template v3 (Connectors)
-- Admin | Sync Template v3 CoE Solution Metadata
 
 >[!IMPORTANT]
-> Before proceeding, ensure that these flows run and complete successfully:
+> Before proceeding, ensure that these flows run and complete successfully, one by one:
 >
+> - **Admin | Sync Template v3 CoE Solution Metadata**
 > - **Admin | Sync Template v3 Configure Emails**
 > - **Admin | Sync Template v3 (Connectors)**
-> - **Admin | Sync Template v3 CoE Solution Metadata**
 
 ## Turn on inventory flows
 
@@ -149,15 +154,18 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 > Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 
 >[!NOTE]
->Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow - for example, looking at how is using the Send Email or Get Item actions.
+>Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow - for example, looking at who is using the Send Email or Get Item actions.
 >This flow temporarily makes the account running the the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow that is using HTTP actions to retrieve further details of those actions (for example, the HTTP host), and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
 
+- Admin | Sync Template v3 (Ai Models)
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Business Process Flows)
+- Admin | Sync Template v3 (Call Updates)
 - Admin | Sync Template v3 (Connection Identities)
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
 - Admin | Sync Template v3 (Desktop flows)
+- Admin | Sync Template v3 (Environment Properties)
 - (optional) Admin | Sync Template v3 (Flow Action Details)
 - Admin | Sync Template v3 (Flows)
 - Admin | Sync Template v3 (Model Driven Apps)
@@ -241,7 +249,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 >If your CoE Starter Kit is installed in a commercial or GCC tenant, you can skip this step.
 
 1. If your CoE Starter Kit is installed in a GCC High or DoD tenant, update the **Authority** in HTTP action:
-    1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+    1. Go to [make.powerautomate.com](https://make.powerautomate.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
     1. Edit the **Command Center App >  Get M365 Service Messages** flow.
     1. Update the **List serviceAnnouncements from Graph** action and change the **Authority** to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
     1. **Save** this flow.
@@ -316,18 +324,18 @@ Environment variables are used to store application and flow configuration data 
 | eMail Body Stop | Ending HTML format for eMails | Default style provided |
 | FullInventory | Determines whether you want to update only objects that have changed, or all objects. Switching to Yes will cause the flows to inventory every single app, flow, and bot in the tenant every day, and isn't recommended for large tenants.  | No |
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)| Not applicable |
+| is All Environments Inventory |If true, (the default) the CoE inventory tracks all environments. New environments added to the inventory will have their Excuse from Inventory to false. You can opt out individual environments.  If false, the CoE inventory tracks a subset of environments. New environments added to the inventory will have their Excuse from Inventory to true. You can opt in individual environments.  | Yes |
 | Is Teams Install | DO NOT EDIT. This is used to determine whether this installation is in a production environment or Dataverse for Teams environment, and is set for you when you first install the components. | No: Core solution<br>Yes: Core for Teams solution |
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. You'll use this to communicate and share apps with them. This is needed for the inventory setup in the Admin \| Add Maker to Group flow. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) | Not applicable |
-|Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). | Not applicable |
+|Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://make.powerautomate.com/manage/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). | Not applicable |
 |PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). | Not applicable|
-|PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> | Not applicable |
+|PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us/> | Not applicable |
 | ProductionEnvironment | Set to No if you're creating a development/test environment. This will allow some flows to set target users to the admin instead of resource owners.| Yes |
-| TenantID | Your Azure Tenant ID.| Not applicable|
+| TenantID | Your Azure Tenant ID. Learn more: [Find Tenant ID through the Azure Portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal)| Not applicable|
+| InventoryFilter_DaysToLookBack | When not running a full inventory, we filter back this number of days and then see if the object needs updated.| 7 |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
 To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

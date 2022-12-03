@@ -25,12 +25,12 @@ Many training resources are available, from the [training days](in-a-day.md) alr
 
 Check out:
 
-- [Microsoft Learn content for Microsoft Power Platform](/learn/powerplatform/)
-- [Microsoft Power Platform Fundamentals (Certification)](/learn/certifications/power-platform-fundamentals)
+- [Microsoft Learn training for Microsoft Power Platform](/training/powerplatform/)
+- [Microsoft Power Platform Fundamentals (Certification)](/certifications/power-platform-fundamentals)
 - [Microsoft Power Platform documentation](/power-platform)
 - [Business Applications communities](https://powerusers.microsoft.com)
 - [Find a local user group](https://www.powerappsug.com/home)
-- [Leverage Microsoft Learn in your organization](/learn/support/integrations) 
+- [Use Microsoft Learn training in your organization](/training/support/integrations)
 
 ## Grow your pool of talented people
 

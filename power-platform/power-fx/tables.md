@@ -25,8 +25,8 @@ In Microsoft Power Fx, you can write a formula that accesses information in Micr
 
 You can build a variety of formulas that take the name of a table as an argument, just as a formula in Excel takes one or more cell references as arguments. Some formulas in Power Fx return a table that reflects the other arguments that you specify. For example, you might create a formula:
 
-* to update a record in a table by specifying that table as one of multiple arguments for the **[Patch](/powerapps/maker/canvas-apps/functions/function-patch)** function
-* to add, remove, and rename columns in a table by specifying that table as an argument for the **[AddColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)**, **[DropColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)**, or **[RenameColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)** function. None of those functions modifies the original table. Instead, the function returns another table based on the other arguments that you specify.
+* to update a record in a table by specifying that table as one of multiple arguments for the **[Patch](reference/function-patch.md)** function
+* to add, remove, and rename columns in a table by specifying that table as an argument for the **[AddColumns](reference/function-table-shaping.md)**, **[DropColumns](reference/function-table-shaping.md)**, or **[RenameColumns](reference/function-table-shaping.md)** function. None of those functions modifies the original table. Instead, the function returns another table based on the other arguments that you specify.
 
 ## Elements of a table
 
@@ -42,7 +42,7 @@ A field is an individual piece of information in a record. You can visualize thi
 
 Just as with a control, you refer to a field of a record by using the **.** [operator](operators.md) on the record.  For example, **First(Products).Name** returns the **Name** field for the first record in the **Products** table.
 
-A field can contain another record or table, as the example for the **[GroupBy](/powerapps/maker/canvas-apps/functions/function-groupby)** function shows. You can nest as many levels of records and tables as you want.
+A field can contain another record or table, as the example for the **[GroupBy](reference/function-groupby.md)** function shows. You can nest as many levels of records and tables as you want.
 
 ### Columns
 A column refers to the same field for one or more records in a table. In the above example, each product has a price field, and that price is in the same column for all products.  The above table has four columns, shown horizontally across the top:
@@ -63,7 +63,7 @@ A table comprises one or more records, each with multiple fields that have consi
 
 Any table that's stored in a data source or a collection has a name, which you use to refer to the table and pass it to functions that take tables as arguments.  Tables can also be the result of a function or a formula.
 
-As in the following example, you can express a table in a formula by using the **[Table](/powerapps/maker/canvas-apps/functions/function-table)** function with a set of records, which you express in curly braces:
+As in the following example, you can express a table in a formula by using the **[Table](reference/function-table.md)** function with a set of records, which you express in curly braces:
 
 `Table( { Value: "Strawberry" }, { Value: "Vanilla" } )`
 
@@ -81,7 +81,7 @@ In both cases, the calculated value changes automatically if you change the valu
 
 Similarly, you can use formulas to access and manipulate data in tables and records. You can use names of tables as arguments in some formulas, such as **Min(Catalog, Price)** to show the lowest value in the **Price** column of the **Catalog** table. Other formulas provide whole tables as return values, such as **RenameColumns(Catalog, "Price", "Cost")**, which returns all the records from the **Catalog** table but changes the name of the **Price** column to **Cost**.
 
-Just as with numbers, formulas that involve tables and records are automatically recalculated as the underlying table or record changes. If the cost of a product in the **Catalog** table is lowered below the previous minimum, the return value of the **[Min](/powerapps/maker/canvas-apps/functions/function-aggregates)** formula will automatically change to match it.
+Just as with numbers, formulas that involve tables and records are automatically recalculated as the underlying table or record changes. If the cost of a product in the **Catalog** table is lowered below the previous minimum, the return value of the **[Min](reference/function-aggregates.md)** formula will automatically change to match it.
 
 ## Table functions and control properties
 
@@ -263,7 +263,7 @@ Enclose each column name that contains a special character, such as a space or a
 Note that the value in the **Price** column doesn't include a currency symbol, such as a dollar sign. That formatting will be applied when the value is displayed.  
 
 ## Inline tables
-You can create a table by using the **[Table](/powerapps/maker/canvas-apps/functions/function-table)** function and a set of records. You can express the table at the start of this topic by using this formula:
+You can create a table by using the **[Table](reference/function-table.md)** function and a set of records. You can express the table at the start of this topic by using this formula:
 
 ```powerapps-dot
 Table( 

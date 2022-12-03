@@ -3,7 +3,7 @@ title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftD
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2020
+ms.date: 10/10/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -59,7 +59,7 @@ Schemas define which fields are sent to the Microsoft 365 Security and Complianc
 |Operation     |Edm.Date         |No         |Name of the message called in the SDK          |
 |UserKey     |Edm.String         |No         |Unique Identifier of the User in AAD. AKA User PUID          |
 |UserType     |Self.UserType         |No         |The Microsoft 365 audit type (Regular, System)          |
-|User     |Edm.String        |No         |UPN of the user          |
+|User     |Edm.String        |No         |Primary email of the user          |
 
 ## Customer engagement apps schema
 The customer engagement apps schema contains fields specific to customer engagement apps and partner teams. 
@@ -137,7 +137,7 @@ You can create your own reports to review your audit data. See [Search the audit
 
 ## What's logged
 
-For a list of what's logged with Activity Logging, see [Microsoft.Crm.Sdk.Messages Namespace](/dotnet/api/microsoft.crm.sdk.messages?view=dynamics-general-ce-9).
+For a list of what's logged with Activity Logging, see [Microsoft.Crm.Sdk.Messages Namespace](/dotnet/api/microsoft.crm.sdk.messages).
 
 We log all SDK messages except the following:
 
@@ -202,7 +202,7 @@ The following are some examples of logs created with Activity Logging.
 |   EntityName    |                                                       Account                                                       |
 |      Query      |                                                         N/A                                                         |
 |  QueryResults   |                                                         N/A                                                         |
-|     ItemURL     | https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=0a0d8709-711e-e811-a952-000d3a732d76 |
+|     ItemURL     | `https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=0a0d8709-711e-e811-a952-000d3a732d76` |
 
 ### Example 2 – Logs generated when user sees Account records in a Grid (Export to Microsoft Excel logs are like this) 
 
@@ -241,7 +241,7 @@ When audit log search in the Microsoft 365 Security and Compliance Center is tur
 
 ### See also
 [Manage Dataverse auditing](manage-dataverse-auditing.md)<br />
-[Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide) <br />
+[Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) <br />
 Search the audit log for user activity using [Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)
 
 

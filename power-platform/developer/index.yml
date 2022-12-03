@@ -24,6 +24,10 @@ landingContent:
         links:
           - text: "Power Platform for developers"
             url: get-started.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create a developer environment"
+            url: create-developer-environment.md
       - linkListType: concept
         links:
           - text: "Fusion development"
@@ -35,9 +39,9 @@ landingContent:
       - linkListType: learn
         links:
           - text: Introduction to developing with Power Platform
-            url: /learn/paths/intro-developing-power-platform/
+            url: /training/paths/intro-developing-power-platform/
           - text: Transform your business applications with fusion development
-            url: /learn/paths/transform-business-applications-with-fusion-development/
+            url: /training/paths/transform-business-applications-with-fusion-development/
 
   # Card
   - title: Tools

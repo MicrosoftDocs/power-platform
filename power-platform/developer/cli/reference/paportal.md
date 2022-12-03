@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 8/11/2022
+ms.date: 11/18/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac paportal
 
-Commands for working with PowerApps portal website
+Commands for working with Power Pages website
 
 [!INCLUDE [paportal-intro](includes/paportal-intro.md)]
 
@@ -26,14 +26,14 @@ Commands for working with PowerApps portal website
 
 |Command|Description|
 |---------|---------|
-|[pac paportal download](#pac-paportal-download)|Download portal website content from the current Dataverse Organization|
-|[pac paportal list](#pac-paportal-list)|List all portal websites from the current Dataverse Organization|
-|[pac paportal upload](#pac-paportal-upload)|Upload portal website content to current Dataverse Organization|
+|[pac paportal download](#pac-paportal-download)|Download Power Pages website content from the current Dataverse Organization|
+|[pac paportal list](#pac-paportal-list)|List all Power Pages websites from the current Dataverse Organization|
+|[pac paportal upload](#pac-paportal-upload)|Upload Power Pages website content to current Dataverse Organization|
 
 
 ## pac paportal download
 
-Download portal website content from the current Dataverse Organization
+Download Power Pages website content from the current Dataverse Organization
 
 [!INCLUDE [paportal-download-intro](includes/paportal-download-intro.md)]
 
@@ -46,7 +46,7 @@ Path where the website content will be downloaded
 
 #### `--webSiteId` `-id`
 
-Portal website id to download
+Power Pages website id to download
 
 
 ### Optional Parameters
@@ -61,7 +61,7 @@ Download only the entities specified for this argument in comma separated entity
 
 #### `--overwrite` `-o`
 
-Portal website content to overwrite
+Power Pages website content to overwrite
 
 This parameter requires no value. It is a switch.
 
@@ -69,13 +69,13 @@ This parameter requires no value. It is a switch.
 
 ## pac paportal list
 
-List all portal websites from the current Dataverse Organization
+List all Power Pages websites from the current Dataverse Organization
 
 [!INCLUDE [paportal-list-remarks](includes/paportal-list-remarks.md)]
 
 ## pac paportal upload
 
-Upload portal website content to current Dataverse Organization
+Upload Power Pages website content to current Dataverse Organization
 
 [!INCLUDE [paportal-upload-intro](includes/paportal-upload-intro.md)]
 
