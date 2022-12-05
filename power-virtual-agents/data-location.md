@@ -44,7 +44,7 @@ Power Virtual Agents supports the following display formatting locales:
 - en-IN
 - en-US
 
-For example, if the user's browser locale setting is *en-GB*, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is *en-US*, the same date equates to **February 3**.
+For example, if the user's browser locale setting is _en-GB_, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is _en-US_, the same date equates to **February 3**.
 
 ## Data locations
 
@@ -74,7 +74,7 @@ Data will be stored in the United States if a bot author's tenant location isn't
 | United Kingdom                    | UK South (London), UK West (Cardiff, Durham)                                                                                                                                              |
 | United States                     | East US (Virginia), South Central US (Texas), West US 2 (Washington)                                                                                                         |
 
-## Customer data  
+## Customer data
 
 Microsoft won't transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when:
 
@@ -92,8 +92,8 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
 
   - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks), which might store multi-factor authentication data globally.
 
-  - Customer data collected during the onboarding process by the [Microsoft 365 admin center](/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true).
-  
+  - Customer data collected during the onboarding process by the [Microsoft 365 admin center](/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true).
+
   - Services that provide global routing functions and don't process or store customer data. This includes Azure DNS, which provides domain name services that route to different regions; or preview, beta, or other pre-release services, which typically store customer data in the United States but might store it globally.
 
   - Additionally, certain types of customer data (specifically the application name, application description, and application logo) will be stored globally, rather than in the primary storage geographic location.
