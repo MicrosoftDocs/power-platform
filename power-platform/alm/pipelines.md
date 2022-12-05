@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Pipelines aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and CI/CD capabilities into the product in a manner that's more approachable for all makers, admins, and developers.
+Pipelines aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and CI/CD capabilities into the service in a manner that's more approachable for all makers, admins, and developers.
 
 :::image type="content" source="media/deployment-pipelines.png" alt-text="Example of the deployment Pipelines feature":::
 
@@ -44,7 +44,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
 - Save time and money:
   - The system handles the heavy lifting and ongoing maintenance so you don't have to.
 - Scale ALM at your own pace:
-  - Regardless of where you're at in your ALM journey, you can later extend Power Platform pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible.
+  - Regardless of where you're at in your ALM journey, you can extend Power Platform pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible.
 - Achieve compliance, safety, monitoring, and automation goals with:
   - Customizations and audit logs saved automatically and are easily accessible.
   - Out of the box analytics provides better visibility within a central location.

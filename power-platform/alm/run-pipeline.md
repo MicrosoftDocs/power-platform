@@ -25,6 +25,7 @@ Pipelines automate solution deployments between Power Platform environments and 
 - The development environment must have Microsoft Dataverse or Dataverse plus Dynamics 365 Customer Engagement apps.
 - You must have access to run a pipeline. More information: [Grant access to edit or run pipelines](set-up-pipelines.md#grant-access-to-edit-or-run-pipelines)
 - You must have privileges to import solutions to the target environments associated with a pipeline.
+- The **Power Platform Pipelines** application must be installed in your pipeline host environment. More information: [Install the Power Platform pipelines application in your host environment](set-up-pipelines.md#install-the-power-platform-pipelines-application-in-your-host-environment)
 
 For more information about these prerequisites, go to [Set up Power Platform Pipelines (preview)](set-up-pipelines.md).
 
