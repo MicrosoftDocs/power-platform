@@ -36,6 +36,9 @@ Each component of the CSP header value controls the assets that can be downloade
 
 This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self';`. In our roadmap, we have the ability to modify currently non-customizable headers.
 
+## Prerequisites
+CSP is only available on online environments and in on-premises environments with version 9.1 and newer.
+
 ## Configuring CSP
 
 CSP can be toggled and configured through the Power Platform admin center. **It is important to enable on a dev/test environment first** since enabling this could start blocking scenarios if the policy is violated.  We also support a "report-only mode" to allow for easier ramp-up in production.
@@ -124,9 +127,6 @@ CSP can be configured without using the UI by modifying the following organizati
 
 ## Configuring CSP without UI
 Especially for environments not in the Power Platform admin center such as on-premises configurations, admins may want to configure CSP using scripts to directly modify settings.
-
-> [!NOTE]
-> For on-premises, CSP is only available in version 9.1 and newer.
 
 ### Enabling CSP without UI
 Steps:
