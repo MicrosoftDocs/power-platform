@@ -125,6 +125,9 @@ CSP can be configured without using the UI by modifying the following organizati
 ## Configuring CSP without UI
 Especially for environments not in the Power Platform admin center such as on-premises configurations, admins may want to configure CSP using scripts to directly modify settings.
 
+> [!NOTE]
+> For on-premises, CSP is only available in version 9.1 and newer.
+
 ### Enabling CSP without UI
 Steps:
 - Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
