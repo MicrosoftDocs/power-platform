@@ -40,7 +40,7 @@ Lastly, you can manage the retention period for transcripts. This can be useful 
 
 ## Download session transcript information from the Power Virtual Agents portal
 
-1. Select **Analytics** on the side pane. Go to the **Sessions** tab.
+1. In the navigation menu, select **Analytics**. Go to the **Sessions** tab.
 
     If your bot had a high number of sessions, they'll be broken down into multiple rows. Each row contains 2500 sessions.
 

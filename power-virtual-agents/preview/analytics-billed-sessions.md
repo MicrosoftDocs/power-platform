@@ -21,7 +21,7 @@ The consumption of the capacity isn't reported at the tenant level, however, you
 
 ## View your bot's billed sessions
 
-1. In Power Virtual Agents, in the left side panel, select **Analytics**.
+1. In Power Virtual Agents, in the navigation menu, select **Analytics**.
 
 1. Select the **Billing** tab.
 

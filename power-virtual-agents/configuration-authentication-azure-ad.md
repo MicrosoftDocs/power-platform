@@ -74,7 +74,7 @@ This article covers how to configure Azure Active Directory (Azure AD) as your s
 
 ## Configure manual authentication
 
-1. In Power Virtual Agents, select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
+1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Security**. Then select the **Authentication** card.
 
     :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of selecting the Authentication card.":::
 
