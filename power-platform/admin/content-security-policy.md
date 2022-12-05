@@ -36,8 +36,8 @@ Each component of the CSP header value controls the assets that can be downloade
 
 This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self';`. In our roadmap, we have the ability to modify currently non-customizable headers.
 
-## Prerequisites
-CSP is only available on online environments and in on-premises environments with version 9.1 and newer.
+### Prerequisites
+- CSP is only available on online environments and in on-premises environments with version 9.1 and newer.
 
 ## Configuring CSP
 
