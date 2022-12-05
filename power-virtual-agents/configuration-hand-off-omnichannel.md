@@ -52,7 +52,7 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 
     If you haven't set up Omnichannel for Customer Service in that environment, you'll see a message inviting you to begin a trial.
 
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/transfer-no-oc.png" alt-text="Message that says you haven't set up Omnichannel integration in this environment.":::
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/transfer-no-oc.png" alt-text="Message that says you haven't set up Omnichannel for Customer Service integration in this environment.":::
 
 1. Select **See how to register a new Application ID** and follow the steps to find or create the app registration for Power Virtual Agents.
 
@@ -77,17 +77,18 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 To add [voice capabilities](#voice-based-capabilities) after you've connected your bot to Omnichannel for Customer Service, you must disconnect the bot from your Omnichannel for Customer Service and reconnect it.
 
 <a id="managed-bot-oc"></a>
+<a id="bots-with-alm"></a>
 
-### Bots with ALM
+### Bots with Application Lifecycle Management
 
 If you've [set up Application Lifecycle Management (ALM) for your bots](/power-platform/alm/basics-alm), and are exporting and importing bots between [development (unmanaged) and test or production (managed) environments](/power-platform/alm/basics-alm#types-of-environments-used-in-alm), you might see a message that we can't determine if Omnichannel for Customer Service integration is enabled for the environment.
 
-:::image type="content" source="./media/configuration-hand-off-omnichannel/transfer-managed-bot.png" alt-text="Message that we can't determine if this bot has Omnichannel enabled or disabled.":::
+:::image type="content" source="./media/configuration-hand-off-omnichannel/transfer-managed-bot.png" alt-text="Message that we can't determine if this bot has omnichannel capabilities enabled or disabled.":::
 
 If the bot you exported has omnichannel capabilities enabled, you can ignore this message. The bot will still work properly. The message will disappear after you export the latest version of your bot from your development environment, and then import it into a targeted test or production environment with managed bots.
 
 If you continue to see the message after exporting and importing the latest version of your managed bot, make sure to remove any unmanaged layers:
-  
+
 1. Sign in to Power Apps and select the managed bot's environment.  
 
 1. In the navigation menu, select **Solutions**, and then select the solution that contains the bot with the unmanaged layer.
@@ -150,13 +151,13 @@ Use this action to ask callers for their preferred language.
 
 1. Select **Add input for destination topic**, and then select **customerLocale (string)**.
 
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-set-locale-add.png" alt-text="Add a Set customer locale and handoff to Omnichannel action to a node in Power Virtual Agents.":::
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-set-locale-add.png" alt-text="Add a Set customer locale and handoff to Omnichannel for Customer Service action to a node in Power Virtual Agents.":::
 
 1. Select a variable that defines the locale code, or enter a locale code.
 
     Refer to the list of [languages supported in Omnichannel for Customer Service](/dynamics365/customer-service/voice-channel-multi-language-contact-center#supported-languages-and-locale-codes) for valid locale codes. Only a subset of these languages is supported in Power Virtual Agents. For more information, see [Supported languages](./authoring-language-support.md#list-of-supported-languages).
 
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-set-locale.png" alt-text="Set the response for the Set customer locale and handoff to Omnichannel action.":::
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-set-locale.png" alt-text="Set the response for the Set customer locale and handoff to Omnichannel for Customer Service action.":::
 
 ### Send uninterruptible voice message
 
