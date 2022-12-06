@@ -19,3 +19,5 @@ This example creates a canvas app (as a *.msapp file) based on an Open API Defin
 ```powershell
 pac canvas create --msapp HelloWorld.msapp --connector-id 00000000-0000-0000-0000-000000000000
 ```
+
+Either `connector-display-name` or `connector-id` are required.
