@@ -23,8 +23,8 @@ landingContent:
       - linkListType: overview
         links:
           - text: "Power Platform for developers"
-            url: get-started.md
-      - linkListType: how-to-guide
+            url: get-started.md      
+      - linkListType: quickstart
         links:
           - text: "Create a developer environment"
             url: create-developer-environment.md
