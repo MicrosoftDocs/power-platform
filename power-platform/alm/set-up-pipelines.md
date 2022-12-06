@@ -1,6 +1,6 @@
 ---
 title: Set up Power Platform Pipelines 
-description: Learn how to create, configure, share, and manage Power Platform Pipelines.
+description: Learn how to create, configure, share, and manage Power Platform pipelines.
 author: caburk
 ms.author: matp
 ms.service: powerapps
@@ -8,16 +8,11 @@ ms.topic: how-to
 ms.date: 11/17/2022
 ms.custom: template-how-to
 ---
-# Set up Power Platform Pipelines (preview)
+# Set up Power Platform pipelines (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Create and run pipelines to easily deploy solutions to environments.
-
-> [!IMPORTANT]
-> - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Create a pipeline
 
@@ -97,7 +92,7 @@ Once installed the deployment pipelines configuration application will appear in
    - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
    - **Target Deployment Environment**: This is the target environment where this stage will deploy to. 
 1. Repeat the previous two steps for each stage you'd like to add to the pipeline. Note that you must have at least one stage. You can add up to seven stages.
-   :::image type="content" source="media/Pipeline fully configured.png" alt-text="Pipeline fully configured":::
+   :::image type="content" source="media/Pipeline fully configured.png" alt-text="A fully configured pipeline.":::
 
 ## Grant access to edit or run pipelines
 
