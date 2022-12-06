@@ -181,7 +181,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - CLEANUP - Admin | Sync Template v3 (Power Apps User Shared With)
 
 >[!NOTE]
-> To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 12 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
+> To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 15 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
 
 The first run of these flows will perform a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. Consider setting up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) to avoid these flows getting throttled. More: [Long running flows](limitations.md#long-running-flows).
 
