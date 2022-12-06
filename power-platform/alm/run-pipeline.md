@@ -14,11 +14,6 @@ ms.custom: template-how-to
 
 Pipelines automate solution deployments between Power Platform environments and facilitate healthy application management practices with minimal effort.
 
-> [!IMPORTANT]
-> - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
-
 ## Prerequisites
 
 - One or more pipelines must already be created and associated with the environment that's used for development.
