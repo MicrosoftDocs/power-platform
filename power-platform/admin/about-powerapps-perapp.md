@@ -22,8 +22,6 @@ Power Apps per app plan allows individual users to run one application or one po
 
 > [!IMPORTANT]
 > - Power Apps per app plans don't appear on the **Billing > Licenses** page in the [Microsoft 365 admin center](https://admin.microsoft.com). Admins should allocate Power Apps per app plans in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they are assigned when apps are shared with users in the environment.
-> - Power Apps for Windows isn't supported if you have the Power Apps per app plan.
-
 
 ## Steps for using per app plans 
 
