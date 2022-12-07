@@ -5,7 +5,7 @@ author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2022
+ms.date: 12/07/2022
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -142,13 +142,13 @@ To update environment variables, you can use the [Admin - Command Center](core-c
 If you aren't using the [Admin - Command Center](core-components.md#admin---command-center) app, do the following to update environment variables:
 
 1. If you've installed the solution in a production environment, do the following:
-   1. Go to [make.powerautomate.com](https://make.powerautomate.com).
+   1. Go to [Power Automate](https://make.powerautomate.com).
    1. On the left pane, select **Solutions**.
    1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
    1. Select a variable that you want to update, and then configure its **Current Value**.
 
 1. If you've installed the solution in a Dataverse for Teams environment, do the following:
-   1. Go to [make.powerautomate.com](https://make.powerautomate.com).
+   1. Go to [Power Automate](https://make.powerautomate.com).
    1. On the left pane, select **Solutions**.
    1. Select **Common Data Services Default Solution**.
    1. Select **+ Add > Environment Variables**.
