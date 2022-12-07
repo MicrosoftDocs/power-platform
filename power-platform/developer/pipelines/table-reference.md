@@ -1,7 +1,7 @@
 ---
 title: "Power Platform Pipeline (Preview) table reference | Microsoft Learn"
 description: "Includes schema information for tables used in the Power Platform Pipeline solution."
-ms.date: 11/11/2022
+ms.date: 12/06/2022
 ms.service: powerapps
 ms.topic: reference
 author: JimDaly
@@ -105,7 +105,7 @@ Stores information about a deployment stage execution.
 |`Name`<br/>**Name**| String| The name of a Deployment Stage Run. This is auto-generated based on the stage name, the artifact name, and the artifact version number. |
 |`Operation`<br/>**Operation**| Picklist| Indicates the current operation the deployment.<br />Value: `200000200` Label: None<br />Value: `200000201` Label: Validate<br />Value: `200000202` Label: Deploy|
 |`OperationDetails`<br/>**Operation Details**| String| Stores the details of the current deployment operation.|
-|`OperationStatus`<br/>**Operation Status**| Picklist| Stores the sub status of the current deployment operation.<br />Value: `200000000` Label: NotStarted<br />Value: `200000001` Label: Started<br />Value: `200000002` Label: Succeeded<br />Value: `200000003` Label: Failed<br />Value: `200000004` Label: Pending|
+|`OperationStatus`<br/>**Operation Status**| Picklist| Stores the status of the current deployment operation.<br />Value: `200000000` Label: NotStarted<br />Value: `200000001` Label: Started<br />Value: `200000002` Label: Succeeded<br />Value: `200000003` Label: Failed<br />Value: `200000004` Label: Pending|
 |`OwnerId`<br/>**Owner**| Owner| Owner Id|
 |`RetryCount`<br/>**Retry Count**| Integer| For internal use only.|
 |`StageRunStatus`<br/>**Stage Run Status**| Picklist| Indicates the overall status of a Deployment Stage Run.<br />Value: `200000000` Label: NotStarted<br />Value: `200000001` Label: Started<br />Value: `200000002` Label: Succeeded<br />Value: `200000003` Label: Failed|
@@ -129,7 +129,7 @@ Stores background operation information for a Deployment Stage Run.
 |`ErrorMessage`<br/>**Error Message**| String| Stores any error message associated with the Deployment Stage Run Suboperation.|
 |`Name`<br/>**Name**|String| The name of the Deployment Stage Run Suboperation. This is managed internally.|
 |`Operation`<br/>**Operation**| Picklist| Stores information about the deployment operation being run.<br />Value: `200000200` Label: None<br />Value: `200000201` Label: Validate<br />Value: `200000202` Label: Deploy|
-|`OperationStatus`<br/>**Operation Status**| Picklist| Stores the status of the deployment operation.<br />Value: `200000000` Label: NotStarted<br />Value: `200000001` Label: Started<br />Value: `200000002` Label: Succeeded<br />Value: `200000003` Label: Failed<br />Value: `200000004` Label: Pending|
+|`OperationStatus`<br/>**Operation Status**| Picklist| Stores the status of the deployment sub operation.<br />Value: `200000000` Label: NotStarted<br />Value: `200000001` Label: Started<br />Value: `200000002` Label: Succeeded<br />Value: `200000003` Label: Failed<br />Value: `200000004` Label: Pending|
 |`OwnerId`<br/>**Owner**| Owner| Owner Id|
 |`RetryCount`<br/>**Retry Count**| Integer| For internal use only.|
 |`StartTime`<br/>**Start Time**| DateTime| Date and time when the deployment operation started.|
