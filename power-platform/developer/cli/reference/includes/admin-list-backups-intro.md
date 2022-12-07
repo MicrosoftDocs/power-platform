@@ -1,5 +1,10 @@
 ### Examples
 
+The following examples show the use of the `pac admin list-backups` command.
+
+- [List backups from an environment by ID](#list-backups-from-an-environment-by-id)
+- [List backups from an environment by URL](#list-backups-from-an-environment-by-url)
+
 #### List backups from an environment by ID
 
 This example lists the backups of an environment based on the environment ID.

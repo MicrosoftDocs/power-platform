@@ -1,4 +1,9 @@
-### Example
+### Examples
+
+The following examples use the `pac admin list-app-templates` command:
+
+- [List all supported Dataverse database templates](#list-all-supported-dataverse-database-templates)
+- [List all supported Dataverse database templates of model-driven apps in Dynamics 365 for region Europe](#list-all-supported-dataverse-database-templates-of-model-driven-apps-in-dynamics-365-for-region-europe)
 
 #### List all supported Dataverse database templates
 

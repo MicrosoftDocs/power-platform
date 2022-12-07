@@ -1,5 +1,10 @@
 ### Examples
 
+The following examples show the use of the `pac admin restore` command:
+
+- [Restore the latest backup](#restore-the-latest-backup)
+- [Restore a backup based on a timestamp](#restore-a-backup-based-on-a-timestamp)
+
 #### Restore the latest backup
 
 This example restores the latest backup from the source environment with ID `00000000-0000-0000-0000-000000000000` to the environment that's currently selected in the currently active auth profile.

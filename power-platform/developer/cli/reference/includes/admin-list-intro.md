@@ -1,4 +1,9 @@
-### Example
+### Examples
+
+The following examples show the use of the `pac admin list` command.
+
+- [List all environments in the tenant](#list-all-environments-in-the-tenant)
+- [List all sandbox environments in the tenant](#list-all-sandbox-environments-in-the-tenant)
 
 #### List all environments in the tenant
 
