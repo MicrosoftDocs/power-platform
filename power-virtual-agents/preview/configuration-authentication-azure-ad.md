@@ -3,7 +3,7 @@ title: Configure user authentication with Azure Active Directory (preview)
 description: Use Azure Active Directory as your service provider for user authentication in Power Virtual Agents preview.
 keywords: "Authentication, IdP, PVA, AAD"
 ms.date: 12/07/2022
-ms.topic: article
+ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
@@ -22,7 +22,7 @@ Adding authentication to your bot allows users to sign in, giving your bot acces
 
 This article covers how to configure Azure Active Directory (Azure AD) as your service provider. To learn about other service providers and user authentication in general, see [Configure user authentication](configuration-end-user-authentication.md).
 
-If you have tenant administration rights, you can [configure API permissions](#configure-api-permissions). Otherwise, you'll need to ask a tenant administrator to do this for you.
+If you have tenant administration rights, you can [configure API permissions](#configure-api-permissions). Otherwise, you'll need to ask a tenant administrator to do it for you.
 
 You'll complete the first several steps in the Azure portal. You'll complete the final two steps in Power Virtual Agents.
 
@@ -36,7 +36,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Select **New registration** and enter a name for the registration.
 
-    It can be helpful later to use the name of your bot. For example, if your bot is called "Contoso sales help," you might name the app registration "ContosoSalesReg."
+    It can be helpful later to use the name of your bot. For example, if your bot is called "Contoso sales help," you might name the app registration "ContosoSalesReg".
 
 1. Under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 
@@ -46,7 +46,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. After the registration is complete, go to **Overview**.
 
-1. Copy the **Application (client) ID** and paste it in a temporary file. You'll need this in later steps.
+1. Copy the **Application (client) ID** and paste it in a temporary file. You'll need it in later steps.
 
 ## Add the redirect URL
 
