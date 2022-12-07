@@ -2,7 +2,7 @@
 title: Use solution checker in Managed Environments (preview)
 description: Learn about using solution checker to automatically run security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 12/01/2022
+ms.date: 12/06/2022
 author: sidhartg
 ms.author: sidhartg
 ms.reviewer: Kumarvivek
@@ -44,11 +44,11 @@ Select one of the following settings:
 
 | Setting | Description |
 | --- | --- |
-| None |  This setting turns off the automatic solution validations during solution import. There won't be any experience or behavioral changes to solution authoring, exports, or imports. |
-| Warn |  All custom solutions are automatically verified during solution import. When a solution with high-critical issue(s) is being imported, you'll be warned about the action but the import itself will proceed and, if everything else with the import is fine, the solution will be imported into the environment. After a successful import, a message that the imported solution had validation issues is shown. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation. |
-| Block | All custom solutions are automatically verified during solution import. When a solution has high-critical issue(s), the import process will be cancelled, and a message that the imported solution had validation issues is shown. This happens before the actual import, so there won't be any changes to the environment due to the import failure. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation.|
+| None |  Turns off the automatic solution validations during solution import. There won't be any experience or behavioral changes to solution authoring, exports, or imports. |
+| Warn |  All custom solutions are automatically verified during solution import. When a solution with highly-critical issues is being imported, you'll be warned about the action but the import itself will proceed, and if everything else with the import is fine, the solution will be imported into the environment. After a successful import, a message stating that the imported solution had validation issues is shown. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation. |
+| Block | All custom solutions are automatically verified during solution import. When a solution has highly-critical issues, the import process will be canceled, and a message stating that the imported solution had validation issues is shown. This happens before the actual import, so there won't be any changes to the environment due to the import failure. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation.|
 
-When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step the verification of solutions will fail and in 'block' mode, solution imports will be blocked.
+When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step, the verification of solutions will fail and in the **Block** mode, solution imports will be blocked.
 
 ## Email messages to the admin
 
