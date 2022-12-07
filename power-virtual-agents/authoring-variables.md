@@ -119,7 +119,7 @@ When you redirect to other topics, you can pass values into variables in the des
 
 ### Receive values from other topics
 
-When a topic defines a variable (for example, by a question node), the bot asks the user the question to fill in the variable’s value. If the bot has already acquired the value, there's no reason to ask the question again. In these cases, you can define the variable as **Receive values from other topics**. When another topic redirects to this one, it can pass a variable (or [literal values](#using-literal-values-on-variable-inputs)) into this variable and skip the question. The experience for the user talking to the bot is seamless.
+When a topic defines a variable (for example, by a question node), the bot asks the user the question to fill in the variable's value. If the bot has already acquired the value, there's no reason to ask the question again. In these cases, you can define the variable as **Receive values from other topics**. When another topic redirects to this one, it can pass a variable (or [literal values](#using-literal-values-on-variable-inputs)) into this variable and skip the question. The experience for the user talking to the bot is seamless.
 
 To receive values from other topics, set the variable's property:
 

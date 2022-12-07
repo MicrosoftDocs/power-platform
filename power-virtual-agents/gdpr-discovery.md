@@ -1,6 +1,6 @@
 ---
 title: "Responding to GDPR Data Subject Discovery Requests"
-description: "Learn how to respond​ to GDPR Data Subject Requests for Power Virtual Agents."
+description: "Learn how to respond to GDPR Data Subject Requests for Power Virtual Agents."
 keywords: "PVA"
 ms.date: 9/22/2020
 
