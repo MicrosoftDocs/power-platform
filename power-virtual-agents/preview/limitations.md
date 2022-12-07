@@ -36,8 +36,8 @@ If you have trouble loading Power Virtual Agents, and see the message "Try check
 However, if the issue persists, consider the following:
 
 - Your browser might not support WebAssembly (WASM). Make sure you're using a browser that supports it.
-- If your machine has a firewall running, check if there’s a rule that’s blocking WASM binary files (.binary).
-- If you have a corporate firewall running, you’ll need to work with your system administrator to bypass firewall rules to be able to download WASM binary assets (.binary).
+- If your machine has a firewall running, check if there's a rule that's blocking WASM binary files (.binary).
+- If you have a corporate firewall running, you'll need to work with your system administrator to bypass firewall rules to be able to download WASM binary assets (.binary).
 
 ## Upcoming releases
 
