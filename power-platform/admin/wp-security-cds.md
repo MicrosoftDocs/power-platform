@@ -147,7 +147,7 @@ If **Record ownership across business units** was enabled in your production env
 For all non-production environments, you just need to set **AlwaysMoveRecordToOwnerBusinessUnit** to false to use this capability.
 
 > [!NOTE]
-> If you turn off either the **Record ownership across business units** feature or set the **RecomputeOwnershipAcrossBusinessUnits** setting to false using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm), you won't be able to set or update the [Owning Business unit](wp-security-cds.md#owning-business-unit) field, and all records where the [Owning Business unit](wp-security-cds.md#owning-business-unit) field is different from the user owner's Business unit will be updated to the user owner's Business unit. 
+> If you turn off either the **Record ownership across business units** feature or set the **RecomputeOwnershipAcrossBusinessUnits** setting to false using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm), you won't be able to set or update the [Owning Business unit](wp-security-cds.md#owning-business-unit) field, and all records where the [Owning Business unit](wp-security-cds.md#owning-business-unit) field is different from the owner's business unit will be updated to the owner's business unit. 
 
 ## Teams (including [group teams](manage-group-teams.md))
 
