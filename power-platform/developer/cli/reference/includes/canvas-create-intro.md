@@ -4,6 +4,11 @@ Makers can import the generated `.msapp` into Power Apps Studio to play the app,
 
 ### Examples
 
+The following examples show the use of the `pac canvas create` command.
+
+- [Create a canvas app based on an Open API Definition by display name](#create-a-canvas-app-based-on-an-open-api-definition-by-display-name)
+- [Create a canvas app based on an Open API Definition by id](#create-a-canvas-app-based-on-an-open-api-definition-by-id)
+
 #### Create a canvas app based on an Open API Definition by display name
 
 This example creates a canvas app (as a *.msapp file) based on an Open API Definition by using the display name of the connector.

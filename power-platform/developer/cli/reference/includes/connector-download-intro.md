@@ -1,5 +1,11 @@
 ### Examples
 
+The following examples show the use of the `pac connector download` command.
+
+- [Basic connector download](#basic-connector-download)
+- [Basic connector download from specified environment](#basic-connector-download-from-specified-environment)
+- [Basic connector download from specified environment to the specified directory](#basic-connector-download-from-specified-environment-to-the-specified-directory)
+
 #### Basic connector download
 
 This example downloads the specified connector to the current directory.
