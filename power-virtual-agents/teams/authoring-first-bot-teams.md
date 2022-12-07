@@ -83,11 +83,8 @@ The first time you create a bot in a team, it will take 1 to 10 minutes to build
 
 You can delete bots to remove them from your team.
 
-1. Select the settings cog icon at the bottom of the Power Virtual Agents navigation menu.
-
-    :::image type="content" source="../media/authoring-first-bot/settings-cog.png" alt-text="The settings icon is at the bottom of the navigation menu and looks like a cog or gear.":::
-
-1. On the **General** tab, select **Delete bot**.
+1. Go to Manage -> details -> delete
+![image](https://user-images.githubusercontent.com/54648890/206285829-0ebf7005-2fc8-4a80-b83e-bf8c5b58020f.png)
 
 You'll be asked to confirm the deletion of the bot by entering the bot's name, after which all bot content is immediately deleted.
 
