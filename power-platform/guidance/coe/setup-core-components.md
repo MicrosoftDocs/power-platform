@@ -3,7 +3,6 @@ title: "Set up inventory components | MicrosoftDocs"
 description: "Setup instructions for how to set up the inventory components solution of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/07/2022
@@ -64,12 +63,11 @@ We recommend that you create connections to all connectors used in the solution 
 
 ### Import the core components solution
 
-1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+1. Download the CoE Starter Kit [compressed file](https://aka.ms/CoeStarterKitDownload) to your computer.
 
-    >[!IMPORTANT]
-    > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
+1. Extract the compressed (zip) file. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
 
-1. Import the **CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip** solution file from the download.
+1. Import the **CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip** solution file from the extracted folder.
 
 1. Leave all environment variable values blank.
 
@@ -77,7 +75,7 @@ The import can take up to 15 minutes to be completed.
 
 ### Open the Setup Wizard to complete the configuration
 
-1. Open the **Center of Excellence - Core Components** solution, once import has finished.
+1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. This app provides a guided step by step experience through the configuration steps.
     :::image type="content" source="media/coesetupwizard.png" alt-text="CoE Starter Kit Setup Wizard":::
@@ -111,14 +109,13 @@ During solution import, you'll configure environment variable values. Make sure 
 
 ### Import the core components solution
 
-1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+1. Download the CoE Starter Kit [compressed file](https://aka.ms/CoeStarterKitDownload) to your computer.
 
-    >[!IMPORTANT]
-    > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
+1. Extract the compressed (zip) file. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
 
 1. Import the solution:
-    1. If you're [installing to a production environment](faq.md#installing-a-solution-in-a-production-environment), use the CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip solution file from the download.
-    1. If you're [installing to a Dataverse for Teams environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment), use the CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip solution file from the download.
+    1. If you're [installing to a production environment](faq.md#installing-a-solution-in-a-production-environment), use the CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip solution file from the extracted folder.
+    1. If you're [installing to a Dataverse for Teams environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment), use the CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip solution file from the extracted folder.
 
 1. Update environment variable values by using the [relevant information](#gather-environment-variable-values). The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
 
