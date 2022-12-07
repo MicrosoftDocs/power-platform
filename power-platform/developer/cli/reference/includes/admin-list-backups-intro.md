@@ -10,9 +10,10 @@ pac admin list-backups --environment 00000000-0000-0000-0000-000000000000
 
 An example of the output is displayed below.
 
-| Index | Id                                           | Label  | Expiry              | Point Date          |
-|-------|----------------------------------------------|--------|---------------------|---------------------|
-| 1     | 00000000 - 0000 - 0000 - 0000 - 000000000000 | Backup | 14/12/2022 12:50:38 | 07/12/2022 12:50:38 |
+```powershell
+ Index   Id                                                 Label        Expiry                Point Date
+ 1          00000000 - 0000 - 0000 - 0000 - 000000000000    Backup       14/12/2022 12:50:38   07/12/2022 12:50:38
+```
 
 #### List backups from an environment by URL
 
