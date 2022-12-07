@@ -22,15 +22,15 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: "Power Platform for developers"
-            url: get-started.md      
+          - text: 'Power Platform for developers'
+            url: get-started.md
       - linkListType: quickstart
         links:
-          - text: "Create a developer environment"
+          - text: 'Create a developer environment'
             url: create-developer-environment.md
       - linkListType: concept
         links:
-          - text: "Fusion development"
+          - text: 'Fusion development'
             url: fusion-development.md
       - linkListType: reference
         links:
@@ -50,6 +50,72 @@ landingContent:
         links:
           - text: Power Platform CLI
             url: ./cli/introduction.md
+
+  # Card
+  - title: Power Apps
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Power Apps component framework
+            url: /power-apps/developer/component-framework/overview
+          - text: Custom connectors
+            url: /connectors/custom-connectors/
+          - text: JavaScript and the Client API
+            url: /power-apps/developer/model-driven-apps/client-scripting
+          - text: HTML web resources
+            url: /power-apps/developer/model-driven-apps/webpage-html-web-resources
+
+  # Card
+  - title: Power Automate
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Custom connectors
+            url: /connectors/custom-connectors/
+          - text: Use workflow definition functions
+            url: /power-automate/developer/custom-cds-for-apps-workflow-activities
+
+  # Card
+  - title: Power BI
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Custom visuals
+            url: /power-bi/developer/visuals/power-bi-custom-visuals
+
+  # Card
+  - title: Power Pages
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Work with Liquid templates
+            url: /power-apps/maker/portals/liquid/liquid-overview
+          - text: Power Pages Web API
+            url: /power-apps/maker/portals/web-api-overview
+          - text: Use Visual Studio Code and Microsoft Power Platform CLI
+            url: /power-pages/configure/cli-tutorial
+
+  # Card
+  - title: Power Virtual Agents
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Bot Framework Composer
+            url: /power-virtual-agents/advanced-bot-framework-composer
+
+  # Card
+  - title: Dataverse
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Plug-ins
+            url: /power-apps/developer/data-platform/plug-ins
+          - text: Webhooks
+            url: /power-apps/developer/data-platform/use-webhooks
+          - text: Custom APIs
+            url: /power-apps/developer/data-platform/custom-api
+          - text: Virtual Tables
+            url: /power-apps/developer/data-platform/virtual-entities/get-started-ve
 
   # Card
   - title: Related resources
