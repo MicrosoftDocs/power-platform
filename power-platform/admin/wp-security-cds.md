@@ -65,7 +65,7 @@ User A can be associated with any of the business units, including the root busi
 #### Enable the Matrix data access structure
 
 > [!NOTE]
-> Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that are not working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). Setting **RecomputeOwnershipAcrossBusinessUnits** to true allows the [Owning Business unit] (wp-security-cds.md#owning-business-unit) field to be set and updated.
+> Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that are not working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). Setting **RecomputeOwnershipAcrossBusinessUnits** to true allows the [Owning Business unit](wp-security-cds.md#owning-business-unit) field to be set and updated.
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
 2. Select **Environments**, and then choose the environment that you want to enable this feature for. 
