@@ -2,7 +2,7 @@
 title: "Fundamentals - Analyze chatbot usage (contains video)"
 description: "Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents."
 keywords: "PVA"
-ms.date: 01/25/2022
+ms.date: 12/07/2022
 
 ms.topic: overview
 author: iaanw
@@ -41,6 +41,12 @@ Multiple charts show you trends and usage for your bot's topics. These charts us
 ## Analytics in Power Virtual Agents
 
 The analytics section is divided into a number of pages to give you multiple ways to understand bot performance.
+
+The following terms are used in this section.
+
+- A _conversation_ is an ongoing interaction between a specific user, or group of users, on a channel and your bot. Conversations can pause and resume later, or be transferred to a live agent. The conversation may be one-way, either from the end -user to the bot, or from the bot to the end user, but is more commonly a back-and-forth interaction between the end user and the bot.
+- An _analytics session_ is...
+- A _billing session_ is...
 
 > [!NOTE]
 > Although transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
