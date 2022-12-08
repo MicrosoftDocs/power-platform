@@ -7,10 +7,9 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: onboarding, ceX
+ms.custom: onboarding, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 # Working with environments (preview)
 

@@ -9,9 +9,8 @@ ms.author: v-alarioza
 ms.reviewer: kamrani
 manager: iawilt
 ms.collection: virtual-agent
-ms.custom: ceX, advanced-authoring
+ms.custom: ceX, advanced-authoring, bap-template
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 
 # Manage date and time in chatbots (preview)<!-- EDITOR QUESTION: Do you feel this title is inaccurate? The article is about displaying date and time in the user's time zone. As a maker, I'd find a title that reflected that much more helpful than the vague "manage date and time." -->

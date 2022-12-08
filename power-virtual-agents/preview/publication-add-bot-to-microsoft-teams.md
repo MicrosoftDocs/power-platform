@@ -7,10 +7,9 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "publication, authoring, ceX, teams"
+ms.custom: publication, authoring, ceX, teams, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 
 # Add a chatbot to Microsoft Teams (preview)

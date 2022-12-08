@@ -7,10 +7,9 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "customization, ce06102020"
+ms.custom: customization, ce06102020, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 
 # Customize the look and feel of your bot (preview)

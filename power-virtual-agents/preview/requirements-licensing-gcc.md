@@ -7,10 +7,9 @@ ms.topic: concept
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "licensing, admin, ceX"
+ms.custom: licensing, admin, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 
 # Power Virtual Agents for US Government customers (preview)

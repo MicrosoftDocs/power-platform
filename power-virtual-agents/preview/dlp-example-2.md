@@ -7,10 +7,9 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: admin, dlp
+ms.custom: admin, dlp, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 
 # Data loss prevention example 2 - Block HTTP requests (preview)

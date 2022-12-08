@@ -8,10 +8,9 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: clmori
-ms.custom: configuration, ceX
+ms.custom: configuration, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 
 # Configure web and Direct Line channel security (preview)

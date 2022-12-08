@@ -8,10 +8,9 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
-ms.custom: authentication, ceX
+ms.custom: authentication, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 
 # Configure user authentication (preview)

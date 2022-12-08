@@ -6,12 +6,11 @@ ms.topic: overview
 author: v-alarioza
 ms.author: v-alarioza
 manager: shellyha
-ms.custom: fundamentals, ceX, intro-internal
+ms.custom: fundamentals, ceX, intro-internal, bap-template
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 
 # Overview (preview)

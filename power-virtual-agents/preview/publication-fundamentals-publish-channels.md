@@ -7,10 +7,9 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "publication, fundamentals, ceX"
+ms.custom: publication, fundamentals, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 
 # Publish your bot (preview)

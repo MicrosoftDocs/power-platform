@@ -8,10 +8,9 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: kamrani
-ms.custom: authentication, ceX
+ms.custom: authentication, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
-ms.custom: bap-template
 ---
 
 # Configure single sign-on for your custom website (preview)
