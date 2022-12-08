@@ -1,7 +1,7 @@
 ---
 title: "Content security policy"
 description: "Use content security policy to prevent clickjacking in Power Apps."  
-ms.date: 09/02/2022
+ms.date: 12/05/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
@@ -35,6 +35,9 @@ Each component of the CSP header value controls the assets that can be downloade
 | [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self'` | Yes |
 
 This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self';`. In our roadmap, we have the ability to modify currently non-customizable headers.
+
+### Prerequisites
+- For Dynamics 365 Customer Engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 Customer Engagement (on-premises), version 9.1 or later version.
 
 ## Configuring CSP
 

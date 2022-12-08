@@ -118,10 +118,6 @@ The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit**
 1. Remove the existing Power Apps visual.
    :::image type="content" source="media/delete-old-pa-visualization.png" alt-text="Delete existing Power Apps visualization.":::
 
-1. Remove the app if one is already present
-
-      ![Remove existing Power App.](media/coe92.PNG "Remove existing Power App")
-
 1. Select **Power Apps for Power BI** from **Visualizations**.
 
    :::image type="content" source="media/coe85.PNG" alt-text="Power Apps in Power BI visual.":::
