@@ -65,7 +65,7 @@ User A can be associated with any of the business units, including the root busi
 #### Enable the Matrix data access structure
 
 > [!NOTE]
-> Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that are not working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). Setting **RecomputeOwnershipAcrossBusinessUnits** to true allows the [Owning Business unit] (wp-security-cds.md#owning-business-unit) field to be set and updated.
+> Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that are not working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). Setting **RecomputeOwnershipAcrossBusinessUnits** to true allows the [Owning Business Unit](#owning-business-unit) field to be set and updated.
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
 2. Select **Environments**, and then choose the environment that you want to enable this feature for. 
@@ -95,7 +95,7 @@ In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-mode
 
 ### Owning Business Unit
 
-Each record has an Owning Business Unit column which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
+Each record has an **Owning Business Unit** column which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
 
 > [!NOTE]
 > When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using Organization Service to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
@@ -147,7 +147,7 @@ If **Record ownership across business units** was enabled in your production env
 For all non-production environments, you just need to set **AlwaysMoveRecordToOwnerBusinessUnit** to false to use this capability.
 
 > [!NOTE]
-> If you turn off either the **Record ownership across business units** feature or set the **RecomputeOwnershipAcrossBusinessUnits** setting to false using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm), you won't be able to set or update the [Owning Business unit](wp-security-cds.md#owning-business-unit) field, and all records where the [Owning Business unit](wp-security-cds.md#owning-business-unit) field is different from the owner's business unit will be updated to the owner's business unit. 
+> If you turn off either the **Record ownership across business units** feature or set the **RecomputeOwnershipAcrossBusinessUnits** setting to false using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm), you won't be able to set or update the [Owning Business unit](wp-security-cds.md#owning-business-unit) field, and all records where the [Owning Business Unit](#owning-business-unit) field is different from the owner's business unit will be updated to the owner's business unit. 
 
 ## Teams (including [group teams](manage-group-teams.md))
 

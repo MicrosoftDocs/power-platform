@@ -32,7 +32,7 @@ These are the primary elements of Managed Environments:
 - [Limit sharing](managed-environment-sharing-limits.md)
 - [Weekly usage insights](managed-environment-usage-insights.md)
 - [Data policies](managed-environment-data-policies.md)
-- [Set up Power Platform pipelines]([Setup Power Platform pipelines (preview)](../alm/set-up-pipelines.md))
+- [Set up Power Platform pipelines](../alm/set-up-pipelines.md)
 
 > [!NOTE]
 > - Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
