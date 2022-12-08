@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/alm/maintain-managed-solutions.md",
+      "redirect_url": "/power-apps/maker/data-platform/update-solutions",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/managed-environment-weekly-digests.md",
       "redirect_url": "managed-environment-usage-insights",
       "redirect_document_id": "false"
