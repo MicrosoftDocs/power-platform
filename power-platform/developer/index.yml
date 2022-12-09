@@ -50,6 +50,22 @@ landingContent:
             url: /training/paths/transform-business-applications-with-fusion-development/
 
   # Card
+  - title: ALM for developers
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Build Tools for Azure DevOps
+            url: /power-platform/alm/devops-build-tools
+          - text: GitHub Actions
+            url: /power-platform/alm/devops-github-actions
+          - text: Create packages using Package Deployer
+            url: /power-platform/alm/package-deployer-tool
+          - text: Power Apps checker web API
+            url: /power-platform/alm/checker-api/overview
+          - text: Work with solutions using SDK
+            url: /power-platform/alm/solution-api
+
+  # Card
   - title: Power Apps
     linkLists:
       - linkListType: reference
