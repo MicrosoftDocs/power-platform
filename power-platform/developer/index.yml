@@ -110,6 +110,10 @@ landingContent:
             url: /connectors/custom-connectors/
           - text: Use workflow definition functions
             url: /power-automate/developer/custom-cds-for-apps-workflow-activities
+          - text: Use Web API
+            url: /power-automate/web-api
+          - text: Use APIs with desktop flows
+            url: /power-automate/developer/desktop-flow-public-apis
 
   # Card
   - title: Power BI
