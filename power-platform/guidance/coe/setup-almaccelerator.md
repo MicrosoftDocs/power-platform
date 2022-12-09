@@ -92,7 +92,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 ## Import the solution
 
-1. Download the ALM Accelerator for Makers solution zip file from the CoE Starter Kit repository ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)—download the file ALMAcceleratorForMakers_x.x.xxxxxxxx.x_managed.zip under "Assets").
+1. Download the file ALMAcceleratorForMakers_x.x.xxxxxxxx.x_managed.zip under "Assets" from the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit/releases/tag/CoEStarterKit-November2022).
 
 1. Go to [make.powerapps.com](https://make.powerapps.com).
 
@@ -205,7 +205,6 @@ If a paid GitHub org plan exists for your org, turn on the **GitHub Plan Exists*
 1. Repeat the previous step for all users who will use the ALM Accelerator for Makers app.
 
 1. Select **Save and Close**.
-
 
 ## Configure GitHub org secrets
 

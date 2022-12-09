@@ -157,8 +157,7 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 
 In order for the pipelines to perform certain actions against the environments (for example, Sharing Apps and setting component ownership) in your Power Platform tenant you will need to grant Power App Management permissions to your App registration. To do so you will need to run the following PowerShell cmdlet as an interactive user that has Power Apps administrative privileges. You will need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp). Learn more: [**New-PowerAppManagementApp** cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp)
 
-> [!IMPORTANT]
-
+> [!IMPORTANT] 
 > Currently this cmdlet gives elevated permissions (for example, Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed certain capabilities won't work in the AA4PP pipelines.
 
 ```powershell
@@ -186,7 +185,6 @@ The ALM accelerator uses several Azure DevOps extensions, including some third-p
       ![Image of the SARIF SAST Scans tab in Azure DevOps.](media/almacceleratorpowerplatform-components/image-20210217102344719.png)
 
 <a name="clone-the-yaml-pipelines-from-github-to-your-devops-instance"></a>
-
 ### Clone the YAML pipelines from GitHub to your Azure DevOps instance
 
 1. Go to <https://dev.azure.com/> and sign in to **DevOps (AzDO)**.
@@ -344,7 +342,7 @@ Each Dataverse environment—development, validation, test, or production—must
 
 1. In order for users to be able to use the service connection from the ALM Accelerator for Power Platform app, the service connections must provide user permissions to all users. Update permissions as follows for environments that users need to be able to access from the app (for example, maker environments):
 
-    1. From the **Service Connections** list, select the service connection to be shared with users
+    1. From the **Service Connections** list, select the service connection to be shared with users 
 
     1. Select **More (...)** in the upper-right corner, and then select **Security**.
 

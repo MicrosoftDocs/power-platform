@@ -49,7 +49,7 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 
 ## Import the solution
 
-1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+1. Download the file Theming_x.x_managed.zip under "Assets" from the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit/releases/tag/CoEStarterKit-November2022).
 
 1. Extract the zip file.
 
@@ -76,6 +76,5 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 1. Select **Close**.
 
 You can now [use the theming components](theming-components.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
