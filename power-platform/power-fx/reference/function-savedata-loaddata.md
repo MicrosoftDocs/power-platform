@@ -67,17 +67,17 @@ The loaded data will be appended to the collection. Use the **[Clear](function-c
 
 ## Data security
 
-Consider carefully the isolation and encryption of data stored with **SaveData** and decide if it is appropriate for your needs, especially if devices are shared by multiple users.
+Consider carefully the isolation and encryption of data stored with **SaveData** and decide if it's appropriate for your needs, especially if devices are shared by multiple users.
 
-Data stored with **SaveData** is isolated from other Power Apps apps by the Power Apps players.  Data is stored based on the app's App ID, automatically isolating the **SaveData** name space between Power Apps apps.
+Data stored with **SaveData** is isolated from other Power Apps by the Power Apps players. Data is stored based on the app's App ID, automatically isolating the **SaveData** name space between Power Apps.
 
-The operating system and/or browser is responsible for isolating data between Power Apps and other apps on a device and with websites.  For example, the operating system is responsible for isolating data stored in Microsoft Outlook from data stored in Microsoft Power Apps, and also isolating that data from websites such as Bing.com or PowerApps.com.  The operating system's built in app sandbox facilities are used for **SaveData** storage which is usually not accessible to or hidden from the user.
+The operating system and browser is responsible for isolating data between Power Apps and other apps on a device and with websites. For example, the operating system is responsible for isolating data stored in Microsoft Outlook from data stored in Power Apps, and also isolating that data from websites such as Bing.com or PowerApps.com. The operating system's built in app sandbox facilities are used for **SaveData** storage which is usually not accessible to or hidden from the user.
  
-When using the same Power Apps app, the operating system and/or browser is also responsible for isolating the data between different operating system level users.  For example, if two different users share a computer and use two different Windows login credentials, the operating system is responsible for isolating data between the two Windows users.
+When using the same app, the operating system and browser is also responsible for isolating the data between different operating system level users. For example, if two different users share a computer and use two different Windows login credentials, the operating system is responsible for isolating data between the two Windows users.
 
-Data may or may not be isolated between different Power Apps users if the operating system user is the same.  Not every Power Apps player treats this the same way.  For example, while logged in as the same Windows user, in the Power Apps player, the user signs out of Power Apps and signs in as a different Power Apps user.  Data stored in a Power Apps app before the change of Power Apps user, may be accessible to the second Power Apps user within the same app.  The data may also be removed and the first Power Apps user may no longer be able to access it; behavior varies between Power Apps players.
+Data may or may not be isolated between different Power Apps users if the operating system user is the same. Not every Power Apps player treats this the same way. For example, while logged in as the same Windows user, in the Power Apps player, the user signs out of Power Apps and signs in as a different Power Apps user. Data stored in an app before the change of Power Apps user, may be accessible to the second Power Apps user within the same app. The data may also be removed and the first Power Apps user may no longer be able to access it. The behavior varies between Power Apps players.
 
-The operating system may also encrypt the data; or you can use a mobile device management tool such as [Microsoft Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune). Data stored when playing an app in a web browser is not encrypted.
+The operating system may also encrypt the data or you can use a mobile device management tool such as [Microsoft Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune). Data stored when playing an app in a web browser is not encrypted.
 
 ## Syntax
 
