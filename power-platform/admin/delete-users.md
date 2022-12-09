@@ -211,16 +211,12 @@ The name of the deleted user continues to show in the audit log records where th
 
 You can delete and remove users with disabled status in Power Platform. You may want to delete users with disabled status because of the following reasons: 
 
-- Who are no longer active in the tenant 
-
-- Who moved out of the environment’s security group  
-
-- Who no longer has a license to use the application 
-
-- To comply with regulatory compliance, eg GDPR
+- They are no longer active in the tenant
+- They moved out of the environment’s security group
+- They no longer have a license to use the application
+- To comply with regulatory compliance, such as GDPR
 
 > [!IMPORTANT]
->
 > - Permanently deleting a user is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
