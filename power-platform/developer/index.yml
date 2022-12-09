@@ -68,6 +68,22 @@ landingContent:
             url: /power-platform/alm/solution-api
 
   # Card
+  - title: Dataverse
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Dataverse developer docs
+            url: /power-apps/developer/data-platform
+          - text: Plug-ins
+            url: /power-apps/developer/data-platform/plug-ins
+          - text: Webhooks
+            url: /power-apps/developer/data-platform/use-webhooks
+          - text: Custom APIs
+            url: /power-apps/developer/data-platform/custom-api
+          - text: Virtual tables
+            url: /power-apps/developer/data-platform/virtual-entities/get-started-ve
+
+  # Card
   - title: Power Apps
     linkLists:
       - linkListType: reference
@@ -124,19 +140,3 @@ landingContent:
             url: /power-pages/configure/cli-tutorial
           - text: Use code components
             url: /power-pages/configure/component-framework
-
-  # Card
-  - title: Dataverse
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Dataverse developer docs
-            url: /power-apps/developer/data-platform
-          - text: Plug-ins
-            url: /power-apps/developer/data-platform/plug-ins
-          - text: Webhooks
-            url: /power-apps/developer/data-platform/use-webhooks
-          - text: Custom APIs
-            url: /power-apps/developer/data-platform/custom-api
-          - text: Virtual tables
-            url: /power-apps/developer/data-platform/virtual-entities/get-started-ve
