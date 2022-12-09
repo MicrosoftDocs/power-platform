@@ -1,5 +1,5 @@
 ---
-title: "Delete users from environments (preview) | MicrosoftDocs"
+title: "Delete users from environments | MicrosoftDocs"
 description: Information about deleting users
 ms.subservice: admin
 author: paulliew
@@ -16,16 +16,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Delete users from environment (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Delete users from environment
 
 This article covers the various levels and methods of user deletion in Microsoft Power Platform that involves the following: Microsoft 365 admin center, Azure Active Directory (Azure AD), and Power Platform admin center.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Delete users in Microsoft 365 admin center
 
@@ -55,11 +48,45 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 > ![Run diagnostics results.](media/run-diagnostics.png "Run diagnostics results")
 
 > [!NOTE]
->
-> - A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for thirty days and can be restored as mentioned in [Restore deleted users](#restore-deleted-users) later in this article.
-> - After the thirty-day window, the user account is permanently deleted by an automatic deletion process. If you want to delete the user permanently without waiting for 30 days, you can [permanently delete the user](/azure/active-directory/fundamentals/active-directory-users-restore) using Azure Active Directory (Azure AD) in the Azure portal.
+> A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for thirty days and can be restored as mentioned in [Restore deleted users](#restore-deleted-users) later in this article. 
 
-## Disabled Azure AD user stages
+## Permanently delete users from Azure AD
+
+Users can be deleted from Azure AD in 2 ways:
+
+- After the thirty-day window, the user account is permanently deleted by an automatic deletion process. 
+- If you want to delete the user permanently without waiting for 30 days, you can [permanently delete the user](/azure/active-directory/fundamentals/active-directory-users-restore#permanently-delete-a-user) using Azure Active Directory (Azure AD) in the Azure portal.
+
+
+## View the list of disabled users
+
+1. In the Power Platform admin center, select an environment.
+
+2. Select **Settings** > **Users + permissions** > **Users**.
+
+3. In the top menu bar, select **Manage users in Dynamics 365**.
+
+4. From the drop-down menu, select **Disabled users**.
+
+## Restore deleted users
+
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [**Deleted users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
+
+2. Select the name of the user you want to re-enable, select **Restore user**, and then proceed through various pages.
+
+3. Reassign licenses as needed to the user in the Microsoft 365 admin center.
+
+> [!NOTE]
+> You can restore deleted users up to 30 days after deletion. When a deleted user is restored and a license is reassigned, the user's status is set to **Enabled** in the respective environments in which the user was disabled.
+
+## Delete users in Power Platform
+
+Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in Power Platform environment(s) with a **Disabled** status. These users can now be deleted permanently from Power Platform environments. Deleting users from Power Platform environments goes through the similar deletion stages as in Azure AD. When you first delete the user in the Power Platform environment, the disabled user is first *soft deleted*, and then you can *permanently delete* the user.
+
+> [!NOTE]
+> Not all users with a **Disabled** status can be deleted. A user can be in a **Disabled** status in Power Platform environment and still be active in Azure AD. The user can be in this disabled state when the license was removed or the user was removed from the security group of the environment. The user can also be disabled by updating the **Status** field. Customizing the User form by allowing the Status field to be updated is required.
+
+### Disabled Azure AD user stages
 
 <table>
 <thead>
@@ -127,34 +154,6 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 </tbody>
 </table>
 
-## View the list of disabled users
-
-1. In the Power Platform admin center, select an environment.
-
-2. Select **Settings** > **Users + permissions** > **Users**.
-
-3. In the top menu bar, select **Manage users in Dynamics 365**.
-
-4. From the drop-down menu, select **Disabled users**.
-
-## Restore deleted users
-
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [**Deleted users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
-
-2. Select the name of the user you want to re-enable, select **Restore user**, and then proceed through various pages.
-
-3. Reassign licenses as needed to the user in the Microsoft 365 admin center.
-
-> [!NOTE]
-> You can restore deleted users up to 30 days after deletion. When a deleted user is restored and a license is reassigned, the user's status is set to **Enabled** in the respective environments in which the user was disabled.
-
-## Delete users in Dataverse
-
-Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in Power Platform environment(s) with a **Disabled** status. These users can now be deleted permanently from Power Platform environments. Deleting users from Power Platform environments goes through the similar deletion stages as in Azure AD. When you first delete the user in the Power Platform environment, the disabled user is first *soft deleted*, and then you can *permanently delete* the user.
-
-> [!NOTE]
-> Not all users with a **Disabled** status can be deleted. A user can be in a **Disabled** status in Power Platform environment and still be active in Azure AD. The user can be in this disabled state when the license was removed or the user was removed from the security group of the environment. The user can also be disabled by updating the **Status** field. Customizing the User form by allowing the Status field to be updated is required.
-
 ### Soft delete users in Dataverse
 
 At the Azure AD soft deleted stage, the user can't be deleted from Dataverse because the user can be restored from the [Microsoft 365 admin center](https://admin.microsoft.com/). When the user is restored, the user is automatically restored in Power Platform environments with an **Enabled** status and the above fields are reset back to its original state.
@@ -210,7 +209,22 @@ The user still exists in the environment as disabled and continues to show in th
 
 The name of the deleted user continues to show in the audit log records where the user was the creator or modifier of the record.
 
-### Permanently delete users in Dataverse
+### Permanently delete users in Dataverse (preview)
+
+You can delete and remove users with disabled status in Power Platform. You may want to delete users with disabled status because of the following reasons: 
+
+- Who are no longer active in the tenant 
+
+- Who moved out of the environment’s security group  
+
+- Who no longer has a license to use the application 
+
+- To comply with regulatory compliance, eg GDPR
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 #### Prerequisites
 
