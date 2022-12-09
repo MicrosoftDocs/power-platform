@@ -583,6 +583,10 @@ Power Apps portals login and page view subscriptions will be available for purch
 
 Power Pages are licensed at a monthly rate that is based on a customer's anticipated user volume. They aren't accumulated as individual assets and wouldn't carry forward month to month.
 
+### How do I apply Power Pages licenses to my site?
+
+<!--link to both Pay as you and allocate licenses-->
+
 ## AI Builder
 
 ### How is AI Builder licensed?
