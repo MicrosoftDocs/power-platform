@@ -65,7 +65,7 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 
 After the thirty-day window from the date you delete users in the Microsoft 365 admin center, the user account is permanently deleted in Azure AD by an automatic deletion process. 
 
-If you want to delete the user permanently without waiting for thirty days, you can [permanently delete the user](/azure/active-directory/fundamentals/active-directory-users-restore#permanently-delete-a-user) by using Azure AD in the Azure portal.
+If you want to permanently delete the user manually without waiting for thirty days when the user account is automatically deleted, you can do so by using the Azure AD option in the Azure portal by following the instructions here: [Permanently delete a user](/azure/active-directory/fundamentals/active-directory-users-restore#permanently-delete-a-user).
 
 ## Delete users in Power Platform
 
