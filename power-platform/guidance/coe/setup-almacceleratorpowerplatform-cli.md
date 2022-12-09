@@ -30,7 +30,7 @@ The ALM accelerator doesn't have a dependency on other components of the CoE Sta
 
 The ALM Accelerator for Power Platform Administration app includes functionality to help you setup your Azure DevOps projects using the Azure DevOps Project wizard.
 
-Follow the steps in [Set up ALM accelerator for Microsoft Power Platform](setup-almacceleratorpowerplatform-preview.md)
+Follow the steps in [Set up ALM accelerator for Microsoft Power Platform](setup-almacceleratorpowerplatform-preview.md).
 
 ## Set up the ALM accelerator by using the CoE CLI
 
