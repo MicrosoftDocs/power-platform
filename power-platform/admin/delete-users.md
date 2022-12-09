@@ -20,6 +20,11 @@ search.app:
 
 This article covers the various levels and methods of user deletion in Microsoft Power Platform that involves the following: Microsoft 365 admin center, Azure Active Directory (Azure AD), and Power Platform admin center.
 
+Watch this video for a detailed walkthrough of the process to delete users from your environment:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE5ddyh] 
+
+
 ## Delete users in Microsoft 365 admin center
 
 Admins must use the Microsoft 365 admin center to delete users:
