@@ -24,10 +24,10 @@ landingContent:
         links:
           - text: Power Platform for developers
             url: get-started.md
-      - linkListType: reference
+      - linkListType: how-to-guide
         links:
-          - text: Power Platform CLI
-            url: ./cli/introduction.md
+          - text: Create a developer environment
+            url: create-developer-environment.md
       - linkListType: learn
         links:
           - text: Introduction to developing with Power Platform
@@ -60,10 +60,10 @@ landingContent:
             url: /power-platform/alm/devops-build-tools
           - text: GitHub Actions
             url: /power-platform/alm/devops-github-actions
+          - text: Power Platform CLI
+            url: cli/introduction.md
           - text: Create packages using Package Deployer
             url: /power-platform/alm/package-deployer-tool
-          - text: Power Apps checker web API
-            url: /power-platform/alm/checker-api/overview
           - text: Work with solutions using SDK
             url: /power-platform/alm/solution-api
 
