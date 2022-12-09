@@ -98,8 +98,6 @@ landingContent:
             url: /connectors/custom-connectors/
           - text: JavaScript and the Client API
             url: /power-apps/developer/model-driven-apps/client-scripting
-          - text: HTML web resources
-            url: /power-apps/developer/model-driven-apps/webpage-html-web-resources
 
   # Card
   - title: Power Automate
