@@ -4,10 +4,10 @@ description: Information about deleting users
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 12/08/2022
+ms.date: 12/09/2022
 search.audienceType: 
   - admin
 search.app:
