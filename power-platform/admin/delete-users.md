@@ -69,7 +69,7 @@ If you want to delete the user permanently without waiting for thirty days, you 
 
 ## Delete users in Power Platform
 
-Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in Power Platform environment(s) with a **Disabled** status. These users can now be deleted permanently from Power Platform environments. Deleting users from Power Platform environments goes through the similar deletion stages as in Azure AD. When you first delete the user in the Power Platform environment, the disabled user is first *soft deleted*, and then you can *permanently delete* the user.
+Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in Power Platform environment(s) with a **Disabled** status. These users can be deleted permanently from Power Platform environments. Deleting users from Power Platform environments goes through the similar deletion stages as in Azure AD. When you first delete the user in the Power Platform environment, the disabled user is first *soft deleted*, and then you can *permanently delete* the user.
 
 > [!NOTE]
 > Not all users with a **Disabled** status can be deleted. A user can be in a **Disabled** status in Power Platform environment and still be active in Azure AD. The user can be in this disabled state when the license was removed or the user was removed from the security group of the environment. The user can also be disabled by updating the **Status** field. Customizing the User form by allowing the Status field to be updated is required.
@@ -117,16 +117,16 @@ Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/
     <td>1b</td>
     <td>Admin restores user</td>
     <td>Active​</td>
-    <td>Active​</td>
+    <td>Active</td>
     <td>User management process activates user and restores UPN</td>
     <td>Not allowed - Delete button is hidden​ </td>
-    <td>N/A​ </td>
+    <td>N/A </td>
   </tr>
   <tr>
     <td>2</td>
     <td>Admin permanently deletes user​ </td>
     <td>Hard deleted – user no longer exists in Azure AD</td>
-    <td>Disabled​</td>
+    <td>Disabled</td>
     <td>User Details should check if user exists in Azure AD, and if user doesn’t exist, delete is allowed</td>
     <td>Allowed – Delete button is visible​ </td>
     <td>User is hard deleted in Azure AD and can't be restored. User can now be soft deleted in Dataverse.</td>
@@ -135,9 +135,9 @@ Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/
     <td>3</td>
     <td></td>
     <td></td>
-    <td>Disabled​</td>
+    <td>Disabled</td>
     <td>Dataverse admin deletes the user </td>
-    <td>Allowed – Delete button is visible​ </td>
+    <td>Allowed – Delete button is visible</td>
     <td>User is soft deleted in Dataverse. User can now be permanently deleted in Dataverse.</td>
   </tr>
   <tr>
@@ -152,11 +152,11 @@ Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/
 </tbody>
 </table>
 
-### Soft delete users in Dataverse
+### Soft delete users in Power Platform
 
-At the Azure AD soft deleted stage, the user can't be deleted from Dataverse because the user can be restored from the [Microsoft 365 admin center](https://admin.microsoft.com/). When the user is restored, the user is automatically restored in Power Platform environments with an **Enabled** status and the above fields are reset back to its original state.
+At the Azure AD soft deleted stage, the user can't be deleted in Power Platform because the user can be restored from the [Microsoft 365 admin center](https://admin.microsoft.com/). When the user is restored, the user is automatically restored in Power Platform environments with an **Enabled** status and the above fields are reset back to its original state.
 
-To soft delete a user in a Power Platform environment, the user must first be deleted permanently in Azure AD. This applies to regular users and not the [application users](manage-application-users.md#create-an-application-user) or [stub users](create-users.md#how-stub-users-are-created). Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) are deleted permanently after 30-days or they can be [permanently deleted](/azure/active-directory/fundamentals/active-directory-users-restore#permanently-delete-a-user) manually.
+To soft delete a user in a Power Platform environment, the user must first be deleted permanently in Azure AD. This applies to regular users and not the [application users](manage-application-users.md#create-an-application-user) or [stub users](create-users.md#how-stub-users-are-created). Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) are deleted permanently after 30-days or they can be [permanently deleted](#permanently-delete-users-in-azure-ad) manually.
 
 There are two ways to soft delete users.
 
@@ -196,6 +196,9 @@ The user still exists in the environment as disabled and continues to show in th
 
 7. Select **Refresh list** to update the list and confirm deletion.
 
+> [!NOTE]
+> All records that are owned by the soft deleted user must first be reassigned to another user before the user record can be permanently deleted. You can reassign the records from the same **User details** panel under the **Manager** section.
+
 ### What happens when a user is soft deleted?
 
 - The user record still exists in the environment and continues to have a **Disabled** status.
@@ -222,9 +225,9 @@ You can delete and remove users with disabled status in Power Platform. You may 
 
 #### Prerequisites
 
-- The user must already be soft deleted. See the previous section for information.
+- The user must already be soft deleted. See [Soft delete users in Power Platform](#soft-delete-users-in-power-platform) earlier in this article.
 - All records owned by the user must be reassigned to another user. User records can be reassigned from the [User settings page](users-settings.md).
-- You must have turned on the **Enable disabled users (preview)** feature setting for your environment using the Power Platform admin center. More information: [Manage feature settings](settings-features.md).
+- You must have turned on the **Delete disabled users (preview)** > **Enable delete disabled users** feature setting for your environment using the Power Platform admin center. More information: [Manage feature settings](settings-features.md).
 
 #### How to permanently delete users
 
