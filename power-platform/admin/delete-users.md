@@ -69,7 +69,7 @@ If you want to permanently delete the user manually without waiting for thirty d
 
 ## Delete users in Power Platform (preview)
 
-Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in Power Platform environment(s) with a **Disabled** status. These users can be deleted permanently from Power Platform environments. Deleting users from Power Platform environments goes through the similar deletion stages as in Azure AD. When you first delete the user in the Power Platform environment, the disabled user is first *soft deleted*, and then you can *permanently delete* the user.
+Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in Power Platform environments with a **Disabled** status. These users can be deleted permanently from Power Platform environments. Deleting users from Power Platform environments goes through the similar deletion stages as in Azure AD. When you first delete the user in the Power Platform environment, the disabled user is first *soft deleted*, and then you can *permanently delete* the user.
 
 > [!IMPORTANT]
 > - Deleting users in Power Platform is a preview feature.
