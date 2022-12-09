@@ -52,12 +52,10 @@ landingContent:
   # Card
   - title: ALM for developers
     linkLists:
-      - linkListType: overview
+      - linkListType: reference
         links:
           - text: Power Platform ALM basics
             url: /power-platform/alm/basics-alm
-      - linkListType: reference
-        links:
           - text: Build Tools for Azure DevOps
             url: /power-platform/alm/devops-build-tools
           - text: GitHub Actions
