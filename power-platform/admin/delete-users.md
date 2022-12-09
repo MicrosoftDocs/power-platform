@@ -50,7 +50,7 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 > [!NOTE]
 > A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for thirty days and can be restored as mentioned in next section.
 
-## Restore deleted users
+### Restore deleted users
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [**Deleted users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
 
@@ -74,7 +74,7 @@ Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/
 > [!NOTE]
 > Not all users with a **Disabled** status can be deleted. A user can be in a **Disabled** status in Power Platform environment and still be active in Azure AD. The user can be in this disabled state when the license was removed or the user was removed from the security group of the environment. The user can also be disabled by updating the **Status** field. Customizing the User form by allowing the Status field to be updated is required.
 
-## View the list of disabled users
+### View the list of disabled users
 
 1. In the Power Platform admin center, select an environment.
 
