@@ -41,6 +41,9 @@ For users to be able to access resources in Dataverse when running the ALM Accel
 
 1. On the **Manage security roles** page, select the **ALM Power App Access** and **Basic User** roles, and then select **Save**.
 
+> [!TIP]
+> To learn more about team management please read the [Microsoft Dataverse teams management](https://learn.microsoft.com/en-us/power-platform/admin/manage-teams) article.
+
 ## Azure DevOps user setup
 
 For users to use the service connection from the ALM Accelerator for Power Platform app, the service connections must provide user privileges to all users who need access to the service connections. Update privileges as follows for environments that users need to access from the app (for example, development environments):
