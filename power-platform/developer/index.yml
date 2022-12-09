@@ -102,7 +102,7 @@ landingContent:
             url: /power-apps/maker/portals/liquid/liquid-overview
           - text: Power Pages Web API
             url: /power-apps/maker/portals/web-api-overview
-          - text: Use Visual Studio Code and Microsoft Power Platform CLI
+          - text: Use Visual Studio Code and Power Platform CLI
             url: /power-pages/configure/cli-tutorial
 
   # Card
