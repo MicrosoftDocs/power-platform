@@ -52,7 +52,7 @@ For **Name**, enter **user_city**.  For **Usage**, select **Bot (any topic can a
 
 :::image type="content" source="media/Composer_Example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
 
-Next, we'll instruct the topic, **Meal delivery options**, to display meal choice images that are available in the user’s city. We'll retrieve the images from Bot Framework Composer content.
+Next, we'll instruct the topic, **Meal delivery options**, to display meal choice images that are available in the user's city. We'll retrieve the images from Bot Framework Composer content.
 
 On the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer**.
 

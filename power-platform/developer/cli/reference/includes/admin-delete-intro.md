@@ -1,5 +1,10 @@
 ### Examples
 
+The following examples show the use of the `pac admin delete` command.
+
+- [Delete environment by GUID](#delete-environment-by-guid)
+- [Delete environment by URL](#delete-environment-by-url)
+
 #### Delete environment by GUID
 
 ```powershell

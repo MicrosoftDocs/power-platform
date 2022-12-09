@@ -138,7 +138,7 @@ If you have tenant administration rights, you can [configure API permissions](#c
 
 The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the requested access token.
 
-1. In Power Virtual Agents side navigation pane, under **Settings**, select **Security**. Then select **Authentication**.
+1. In Power Virtual Agents navigation menu, under **Settings**, select **Security**. Then select **Authentication**.
 
     :::image type="content" source="media/configure-web-sso/pva-security-auth.png" alt-text="Screenshot Power Virtual Agents security and authentication page" border="false":::
 

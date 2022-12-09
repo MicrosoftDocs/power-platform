@@ -29,9 +29,9 @@ The analytics section is divided into pages to give you multiple ways to underst
 
 ### View analytics
 
-- In Power Virtual Agents, in the left side panel, select **Analytics**.
+- In Power Virtual Agents, in the navigation menu, select **Analytics**.
 
-    :::image type="content" source="media/analytics-overview/analytics-open.png" alt-text="Screenshot of part of the Analytics dashboard, with Analytics highlighted in the left side panel.":::
+    :::image type="content" source="media/analytics-overview/analytics-open.png" alt-text="Screenshot of part of the Analytics dashboard, with Analytics highlighted in the navigation menu.":::
 
 ### See also
 

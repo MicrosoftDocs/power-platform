@@ -39,7 +39,7 @@ When you create a bot, Power Virtual Agents automatically adds a system topic ca
 
 To trigger this topic, you must turn on **Require users to sign in**:
 
-1. In the side pane, under **Settings**, select **Security**.
+1. In the navigation menu under **Settings**, select **Security**.
 
 1. Select the **Authentication** tile.
 
@@ -61,13 +61,13 @@ Once the user enters their username and password in the prompt, they might be pr
 
 To add an Authenticate node to a custom topic:
 
-1. In the side pane, under **Settings**, select **Security**.
+1. In the navigation menu under **Settings**, select **Security**.
 
 1. Select the **Authentication** tile.
 
 1. Turn off **Require users to sign in**.
 
-1. In the side pane, select **Topics**.
+1. In the navigation menu, select **Topics**.
 
 1. Open the topic you want to add the authentication to.
 

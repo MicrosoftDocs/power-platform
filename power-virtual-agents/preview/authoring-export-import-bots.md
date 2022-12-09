@@ -36,7 +36,7 @@ You use solutions to export bots from one environment and import them into anoth
 
 1. Sign in to the Power Virtual Agents bot you want to export.
 
-1. In the side navigation pane, under **Settings**, select **General**. Then select **Export**.
+1. In the navigation menu, under **Settings**, select **General**. Then select **Export**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the export button on the general setting page.":::
 
@@ -53,7 +53,7 @@ You use solutions to export bots from one environment and import them into anoth
     | Field        | Description                                                                                                                                                                                                                                                                                                                     |
     | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
     | Display name | The name that is shown in the list of solutions. You can change this later.                                                                                                                                                                                                                                                     |
-    | Name         | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can’t change it.                                                                                                               |
+    | Name         | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can't change it.                                                                                                               |
     | Publisher    | You can select the default publisher or create a new publisher. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. For more information, go to [Solution publisher overview](/powerapps/maker/common-data-service/change-solution-publisher-prefix). |
     | Version      | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.                                                                                                                                         |
 
@@ -127,7 +127,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 1. You might need to wait a few moments while the import completes. View the results and then select **Close**.
 
-    If the import isn’t successful, you'll see a report showing any errors or warnings that were captured. Select **Download Log File** to capture details about what caused the import to fail in an XML file.  
+    If the import isn't successful, you'll see a report showing any errors or warnings that were captured. Select **Download Log File** to capture details about what caused the import to fail in an XML file.  
 
     The most common cause for an import to fail is that the solution didn't contain some required components. For example, you might not have any upgraded bots in the environment.
 

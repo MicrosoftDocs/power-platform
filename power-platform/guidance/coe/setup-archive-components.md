@@ -23,19 +23,6 @@ This article will help you to set up the inactivity notifications for unused can
 
 [Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
 
-## Set up connection cleanup (broken connections)
-
-Process to delete connections that have been broken for some time (30 days by default).
-
-> [!IMPORTANT]
-> You may see an error like this when running for large environments:  <br>
-> The action 'Get_Connections_as_Admin' has an aggregated page results size more than '209797598' bytes. This exceeded the maximum size '209715200' bytes allowed' <br><br>
-> If this occurs, you can't use the Broken Connection Cleanup process for the environment. 
-
-### Turn on flow
-
-- [Admin | Broken Connection Cleanup](governance-components.md#admin--broken-connection-cleanup)
-
 ## Set up inactivity notifications (unused apps and flows)
 
 Processes to ask users if canvas apps and cloud flows are still useful, or to clean them up if they are not.
@@ -131,7 +118,6 @@ Environment variables are used to store application and flow configuration data 
 
 | Name | Description | Default value |
 |------|---------------|------|
-|Delete Broken Connections Age (Days)| Delete Broken Connections this many days since they were last modified |30|
 | Individual Admin | This is separate from the Admin Email environment variable because you can't use a distribution list for approvals. This environment variable holds the individual or shared account who will be charged with approving the removal of unused orphaned objects. | None |
 | Auto Delete on Archive | Determines whether apps andd flows are deleted when they're approved for deletion in the following flow: Admin \|Inactivity notifications v2 (Check Approval) and Admin \|Inactivity notifications v2 (Clean Up and Delete). The value must be Yes or No.  | Yes |
 | Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Teams environment](faq.md#add-apps-to-microsoft-teams) | None |
