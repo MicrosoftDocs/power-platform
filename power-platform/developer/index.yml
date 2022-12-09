@@ -46,7 +46,7 @@ landingContent:
             url: /power-apps/guidance/fusion-dev-ebook
       - linkListType: learn
         links:
-          - text: Transform your business applications with fusion development
+          - text: Transform business apps with fusion development
             url: /training/paths/transform-business-applications-with-fusion-development/
 
   # Card
@@ -104,6 +104,8 @@ landingContent:
             url: /power-apps/maker/portals/web-api-overview
           - text: Use Visual Studio Code and Power Platform CLI
             url: /power-pages/configure/cli-tutorial
+          - text: Use code components
+            url: /power-pages/configure/component-framework
 
   # Card
   - title: Dataverse
