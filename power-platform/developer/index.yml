@@ -108,8 +108,6 @@ landingContent:
             url: /connectors/custom-connectors/
           - text: Use workflow definition functions
             url: /power-automate/developer/custom-cds-for-apps-workflow-activities
-          - text: Use Web API
-            url: /power-automate/web-api
           - text: Use APIs with desktop flows
             url: /power-automate/developer/desktop-flow-public-apis
 
@@ -134,9 +132,11 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+          - text: Custom page layouts
+            url: /power-pages/configure/custom-page-layouts
           - text: Work with Liquid templates
-            url: /power-apps/maker/portals/liquid/liquid-overview
+            url: /power-pages/configure/liquid-overview
           - text: Power Pages Web API
-            url: /power-apps/maker/portals/web-api-overview
+            url: /power-pages/configure/web-api-overview
           - text: Use Visual Studio Code and Power Platform CLI
             url: /power-pages/configure/cli-tutorial
