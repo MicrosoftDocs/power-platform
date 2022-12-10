@@ -35,7 +35,7 @@ While the ALM Accelerator pipelines and app have default configurations that all
 
 From the ALM Accelerator App and in the Deployment Profiles there's now an option to specify a pipeline project in addition to source project. An option has also been added to the coe-cli to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
 
-### Run the ALM Accelerator Azure DevOps pipelines without installing the ALM Accelerator Canvas App and solution
+### Run the ALM Accelerator Azure DevOps pipelines without installing the ALM Accelerator canvas app and solution
 
 The ALM Accelerator Canvas App provides an easy button layer for running the ALM Accelerator pipelines. However, the Pipelines themselves, are the engine of the ALM Accelerator and can be run independent of the App. If you want to use the pipelines independently, you can run the pipelines directly from the command line or build your own app to invoke the pipelines via the [Azure DevOps API](/rest/api/azure/devops). Additionally, the ALM Accelerator solution includes a custom connector for the Azure DevOps API that can be used to invoke the pipelines via Flow or other Power Platform technologies. The key to using the pipelines independently is understanding the parameters that are passed to the various pipelines.
 
