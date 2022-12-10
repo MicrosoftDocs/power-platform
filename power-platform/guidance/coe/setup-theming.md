@@ -49,7 +49,7 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 
 ## Import the solution
 
-1. Go to the the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit/releases/tag/CoEStarterKit-November2022), and download the Theming_x.x_managed.zip file from under **Assets**.
+1. Go to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit/releases/tag/CoEStarterKit-November2022), and download the Theming_x.x_managed.zip file from under **Assets**.
 
 1. Extract the zip file.
 
