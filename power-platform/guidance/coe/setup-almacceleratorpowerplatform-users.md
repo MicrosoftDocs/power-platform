@@ -2,10 +2,8 @@
 title: "Configuring the ALM Accelerator for Power Platform app user permissions | MicrosoftDocs"
 description: "Configuring user permissions to access the ALM Accelerator for Power Platform app and pipelines."
 author: jenschristianschroder
-manager: devkeydet
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021
+ms.date: 12/09/2022
 ms.subservice: guidance
 ms.author: jeschro
 ms.reviewer: jimholtz
@@ -21,7 +19,7 @@ search.app:
 The ALM Accelerator for Power Platform (AA4PP) app is intended to be used by makers to increase productivity while developing solutions in Microsoft Power Platform. The following instructions are for setting up a maker's user account in Microsoft Dataverse and Azure DevOps.
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The ALM accelerator for Microsoft Power Platform is currently in preview. While in preview, we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform, all we can do is pass on the feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 ## Dataverse user setup
 
@@ -42,7 +40,7 @@ For users to be able to access resources in Dataverse when running the ALM Accel
 1. On the **Manage security roles** page, select the **ALM Power App Access** and **Basic User** roles, and then select **Save**.
 
 > [!TIP]
-> To learn more about team management please read the [Microsoft Dataverse teams management](/power-platform/admin/manage-teams) article.
+> To learn more about team management, go to [Microsoft Dataverse teams management](/power-platform/admin/manage-teams).
 
 ## Azure DevOps user setup
 
