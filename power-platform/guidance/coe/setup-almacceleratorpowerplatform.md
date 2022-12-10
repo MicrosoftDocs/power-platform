@@ -611,6 +611,8 @@ If your solution requires these other configuration settings or data, follow the
 
 ### Install the ALM accelerator in Dataverse
 
+1. The ALM Accelerator solution has a dependency on the [Creator Kit](/power-platform/guidance/creator-kit/overview). To install the Creator, go to [Install the Creator Kit](/power-platform/guidance/creator-kit/setup).
+
 1. Download the latest managed solution file from [GitHub](https://github.com/microsoft/coe-starter-kit/releases): CenterofExcellenceALMAccelerator_`[latest version]`_managed.zip.
 
 1. Go to [Power Apps](https://make.powerapps.com) and select the environment you want to use to host the ALM Accelerator for Power Platform app.
