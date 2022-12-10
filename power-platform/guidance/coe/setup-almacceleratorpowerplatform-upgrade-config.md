@@ -2,10 +2,8 @@
 title: "Upgrade of ALM accelerator for Power Platform | MicrosoftDocs"
 description: "Upgrade the ALM accelerator for Microsoft Power Platform."
 author: rsantos00
-manager: devkeydet
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2022
+ms.date: 12/09/2022
 ms.subservice: guidance
 ms.author: rusant
 ms.reviewer: jimholtz
@@ -37,7 +35,7 @@ To get the latest tag of the pipelines [follow this link](https://github.com/mic
 
 ## Installing the ALM accelerator for Power Platform solution
 
-Go to [https://make.powerapps.com](https://make.powerapps.com) and select the environment you plan to use. Select **Solutions** -> **Import solution** -> **Browse** to select the location of the zip file downloaded in the previous section, example: **centerofexcellencealmaccelerator_1.0.20220517.1_managed.zip**. Select **Next** and expand the **Advanced settings**, make sure the **Update** is selected. Select **Import** to finalize the upgrade.
+Go to [Power Apps](https://make.powerapps.com) and select the environment you plan to use. Select **Solutions** -> **Import solution** -> **Browse** to select the location of the zip file downloaded in the previous section, example: **centerofexcellencealmaccelerator_1.0.20220517.1_managed.zip**. Select **Next** and expand the **Advanced settings**, make sure **Update** is selected. Select **Import** to finalize the upgrade.
 
 When the import is completed, the reactivation of the **CustomAzureDevOps** custom connector needs to be done. The following steps need to be done.
 
