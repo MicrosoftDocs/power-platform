@@ -2,11 +2,8 @@
 title: "Core components | MicrosoftDocs"
 description: "The CoE Starter Kit core components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment."
 author: manuelap-msft
-manager: devkeydet
-
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2021
+ms.date: 12/07/2022
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -497,7 +494,7 @@ Use this app to:
 
 ![Admin - Environment Request canvas app.](media\dev-resources-admin-details.png "Admin - Environment Request canvas app")
 
-#### Environment Requests
+#### Maker - Environment Requests
 
 A canvas app designed to easily submit requests for Power Platform resources (such as Environment Creation Requests).
 
@@ -518,8 +515,9 @@ Use this app to:
 
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
-| Admin \| Capacity Alerts | Scheduled | Daily | This flow checks actual capacity consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved capacity, or are at 80% of approved capacity. The approved capacity can be set in the Power Platform Admin View model-driven app. |
-| Admin \| Welcome Email v3 | Automated | when any sync flow adds a new maker to the Maker table | This flow sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table. You can customize the email sent out by the flow. |
+| Admin| Capacity Alerts | Scheduled | Daily | This flow checks actual capacity consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved capacity, or are at 80% of approved capacity. The approved capacity can be set in the Power Platform Admin View model-driven app. |
+| Admin| Add-Ons Alerts | Scheduled | Daily | This flow checks actual add-on consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved add-on consumption, or are at 80% of approved capacity. The approved capacity can be set in the Power Platform Admin View model-driven app. |
+| Admin| Welcome Email v3 | Automated | when any sync flow adds a new maker to the Maker table | This flow sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table. You can customize the email sent out by the flow. |
 | App Catalog > Request Access | Instant | from App Catalog | this flow sends an access request approval to the maker. |
 
 ### Apps

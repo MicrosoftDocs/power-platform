@@ -4,10 +4,10 @@
     href: ./index.yml
   - name: Power Platform for developers
     href: get-started.md
-  - name: Fusion development
-    href: fusion-development.md
   - name: Create a developer environment
     href: create-developer-environment.md
+  - name: Fusion development
+    href: fusion-development.md    
   - name: ALM for developers
     href: /power-platform/alm/alm-for-developers
   - name: Tools

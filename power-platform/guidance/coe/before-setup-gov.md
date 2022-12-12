@@ -30,7 +30,7 @@ Many flows in the solution use the built-in approval actions of Power Automate, 
 
 If you're installing the solution in a new environment or one in which approvals haven't been used in the past, the approval tables must be initialized before you can install the solution. The easiest way to do this is to create a "dummy" approval flow.
 
-1. Go to [flow.microsoft.com](https://flow.microsoft.com) and select your CoE environment.
+1. Go to [Power Automate](https://make.powerautomate.com) and select your CoE environment.
 
 1. Select **+ Create**. 
  

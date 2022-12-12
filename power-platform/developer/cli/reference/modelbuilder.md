@@ -80,7 +80,7 @@ The namespace for the generated code.  The default namespace is the global names
 
 #### `--optionsetstypesfolder` `-otf`
 
-Folder name that will contain messages.  default is OptionSets
+Folder name that will contain OptionSets.  default is OptionSets
 
 #### `--outdirectory` `-o`
 
