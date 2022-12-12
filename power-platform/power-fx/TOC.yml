@@ -94,6 +94,8 @@
             href: reference/function-concatenate.md
           - name: Concurrent
             href: reference/function-concurrent.md
+          - name: Confirm
+            href: reference/function-confirm.md
           - name: Connection
             href: reference/signals.md
           - name: Count
