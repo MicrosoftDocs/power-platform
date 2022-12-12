@@ -59,9 +59,9 @@ dependencies
 - **Name/Target**: The fully qualified type name for the plug-in being executed.
 - **Duration**: The amount of time it took for the plug-in to be executed.
 - **CustomDimensions**: 
-  - **Depth**: The current [depth](/dotnet/api/microsoft.xrm.sdk.iexecutioncontext.depth?view=dynamics-general-ce-9) of the execution in the call stack.
+  - **Depth**: The current [Depth](xref:Microsoft.Xrm.Sdk.IExecutionContext.Depth) of the execution in the call stack.
   - **EntityName**: The name of the entity being acted on by the plug-in.
-  - **IsolationType**: A [value](/dotnet/api/microsoft.xrm.sdk.iexecutioncontext.isolationmode?view=dynamics-general-ce-9) indicating whether the plug-in is being executed in the sandbox:
+  - **IsolationType**: A [value](xref:Microsoft.Xrm.Sdk.IExecutionContext.IsolationMode) indicating whether the plug-in is being executed in the sandbox:
     - 1: None
     - 2: Sandbox
     - 3: External
