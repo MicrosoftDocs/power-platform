@@ -146,6 +146,8 @@
                   href: admin-mode.md
                 - name: Customer managed encryption key
                   href: manage-encryption-key.md
+                - name: Customer managed key (preview)
+                  href: customer-managed-key.md
                 - name: Trial environments
                   href: trial-environments.md
                 - name: Sandbox environment
