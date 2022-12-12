@@ -293,8 +293,8 @@ The "Active Dynamics 365 Customer Engagement Plan Users by Application" report a
 > |Chart element|Description|  
 > |--------------|-----------------|  
 > | Active users by device type  | List of active users by device type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)].  |
-> | Active users by business unit  | List of active users by their business unit.   |
-> | Active users by security role  | List of active users by their security roles.  |
+> | Active users by business unit  | List of active users by their business unit. NOTE: This is not specific to UI calls and will include system calls in the context the user  |
+> | Active users by security role  | List of active users by their security roles. NOTE: This is not specific to UI calls and will include system calls in the context the user |
 > | Active users by client  | List of active users, by client type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)].  |
 > | Active users by entities | List of active users distributed by entity.   |
 > | Most active users performing operations | List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`. |
