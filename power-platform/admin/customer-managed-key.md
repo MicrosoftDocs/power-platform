@@ -1,7 +1,7 @@
 ---
 title: Manage your encryption key in the Power Platform
 description: Learn how to manage your encryption key. 
-author: Mattp123
+author: paulliew
 ms.author: paulliew
 ms.reviewer: matp
 ms.service: powerapps
@@ -17,31 +17,37 @@ Customers have data privacy and compliance requirements to secure their data by 
 
 > [!IMPORTANT]
 > This is a preview feature.
+> 
+> These encryption key operations are available with this release:
+>  1. Migrate key
+>  1. Set and apply key
+>  1. Change key
+>  1. Revert key
 
 By default, data is encrypted with Microsoft managed keys. For additional control over encryption keys, you can manage your own keys. Customer managed keys must be stored in Azure Key vault.
 
-In our upgraded customer managed key (CMK) feature, customers can use their own Azure Key Vault encryption key to encrypt their data stored in Power Platform Dataverse storage. This provides an additional level of security by protecting Microsoft support staff from having access to the encryption key.
+In our upgraded customer managed key (CMK) feature, customers can use their own Azure Key Vault encryption key to encrypt their data stored in Microsoft Dataverse. This provides an additional level of security by protecting Microsoft support staff from having access to the encryption key.
 
-Another benefit in this feature is the ability to encrypt data in all the storage types used in Dataverse, eg SQL, Azure File, CosmosDB, Datalake, and Search. 
+Another benefit with this feature is the ability to encrypt data in all the Azure storage types used in Dataverse, such as SQL, Azure File, Cosmos DB, data lake, and Azure Cognitive Search.
 
 Environments with finance and operations apps where Power Platform integration is enabled can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Enable the Microsoft Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
 
 :::image type="content" source="media/cmk-power-platform-diagram.png" alt-text="Customer managed encryption key in the Power Platform":::
+
+First, the key vault admin creates a key in their key vault and creates an enterprise Azure Policy. When the enterprise policy is created, a special Azure AD managed identity is also created. Next, the key vault admin returns to the key vault and grants the enterprise policy/managed identity access to the encryption key.
 
 ## Prerequisites
 
 - An Azure subscription that includes Azure Key Vault.
 - Global tenant admin or an Azure Active Directory (Azure AD) with contributor permission to the Azure AD subscription and permission to create a key vault and key. This is required to set up the key vault.
 
-## Azure Key Vault and Power Platform admin
-
-First, the key vault admin creates a key in their key vault and creates an enterprise Azure Policy. When the enterprise policy is created, a special Azure AD managed identity is also created. Next, the key vault admin returns to the key vault and grants the enterprise policy/managed identity access to the encryption key.
+## Azure key vault and Power Platform admin tasks
 
 ### Create the key and grant access
 
 The key vault admin performs these steps in Azure:
 
-1. Create an Azure paid subscription and key vault. Ignore this step if if you already have a subscription that includes Azure Key Vault.
+1. Create an Azure paid subscription and key vault. Ignore this step if you already have a subscription that includes Azure Key Vault.
 1. Go to the Azure Key Vault service, and create a key.
 1. Enable the Power Platform enterprise policies service for your Azure subscription. Do this only once.
 1. Create a Power Platform enterprise Azure Policy.
@@ -133,7 +139,7 @@ In the Azure portal, register Power Platform as a resource provider:
 
 A deployment is started. When it's done, the enterprise policy is created.
 
-#### Json template
+### Json template
 
 ```json
  {
@@ -169,28 +175,28 @@ A deployment is started. When it's done, the enterprise policy is created.
    }
 ```
 
-#### Field definitions for json template
+### Field definitions for json template
 
 - **name**. Name of the enterprise policy. This is the name of the policy that appears in Power Platform admin center.
-- **location**. One of the following. This is the location of the enterprise policy and it must be correspond with the Dataverse environment’s region:
+- **location**. One of the following. This is the location of the enterprise policy and it must correspond with the Dataverse environment’s region:
 
-  - "unitedstates"
-  - "southafrica"
-  - "switzerland”
-  - "germany"
-  - "unitedarabemirates"
-  - "france"
-  - "uk”
-  - "japan"
-  - "india"
-  - "canada"
-  - "southamerica"
-  - "europe"
-  - "asia"
-  - "australia"
-  - "korea"
-  - "norway"
-  - "singapore"
+  - `"unitedstates"`
+  - `"southafrica"`
+  - `"switzerland”`
+  - `"germany"`
+  - `"unitedarabemirates"`
+  - `"france"`
+  - `"uk”`
+  - `"japan"`
+  - `"india"`
+  - `"canada"`
+  - `"southamerica"`
+  - `"europe"`
+  - `"asia"`
+  - `"australia"`
+  - `"korea"`
+  - `"norway"`
+  - `"singapore"`
 - **keyVaultId**, **keyName**, **keyVersion**: Copy these values from your key vault properties in the Azure portal.
 
 ## Grant enterprise policy permissions to access key vault
@@ -201,7 +207,7 @@ Once the enterprise policy is created, the key vault admin grants the enterprise
 1. Select the key vault where the key was assigned to the enterprise policy.
 1. Select the **Access policies** tab.
 1. Select **+ Add Access Policy**.
-1. Under **Key Management Operations**, select the **Get** option, and under **Crytographic Operations**, select the **Unwrap key**, and **Wrap key** options.
+1. Under **Key Management Operations**, select the **Get** option, and under **Cryptographic Operations**, select the **Unwrap key**, and **Wrap key** options.
    :::image type="content" source="media/cmk-keyvault-access-policy.png" alt-text="Key vault add access policy":::
 1. In the **Principal** panel, select the deployment enterprise policy name.
 1. Select **Add**, to add the access policy, and then select **Save**.
@@ -226,8 +232,8 @@ Admins who have Azure global, Dynamics 365, and Power Platform administration ro
    1. Select **Run Query**.
    1. Scroll to the right of the results page and select the **See details** link.
    1. On the **Details** page, copy the ID.
-   1. Start the Cloud Shell, and run the following command replacing objId with the user’s object ID and the enterprise policy resource ID with the enterprisepolicies ID found in the previous steps: 
-    New-AzRoleAssignment -ObjectId { objId} -RoleDefinitionName Reader -Scope {EP Resource Id}
+   1. Start the Cloud Shell, and run the following command replacing objId with the user’s object ID and the enterprise policy resource ID with the `enterprisepolicies` ID found in the previous steps:
+    `New-AzRoleAssignment -ObjectId { objId} -RoleDefinitionName Reader -Scope {EP Resource Id}`
 
 ### Add environments to the enterprise policy
 
@@ -236,7 +242,7 @@ To do this task, you need the following permission:
 - Azure AD active user who has the Power Platform and/or Dynamics 365 licenses.
 - Azure AD user who has either a global tenant admin, Power Platform or Dynamics 365 service admin role.
 
-The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data and encrypt it with the customer managed key.
+The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data, and encrypt it with the customer managed key.
 
 > [!IMPORTANT]
 > The environment is disabled temporarily during this process and re-enabled to allow users to access while the encryption process continues. It can take up to 3 days to complete the encryption process.
