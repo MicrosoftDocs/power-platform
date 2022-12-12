@@ -20,13 +20,13 @@ Display a confirmation dialog box to the user.
 ## Description
 
 > [!NOTE]
-> At this time, the **Confirm** function is only available when writing Power Fx commands for Model-driven apps.
+> At this time, the **Confirm** function is only available when writing Power Fx commands for model-driven apps.
 
-The **Confirm** function displays a dialog box on top of the current screen.  Two buttons are provided: a *confirm* button and a *cancel* button, which default to localized versions of "OK" and "Cancel" respectively.  The user must confirm or cancel before the dialog box is dismissed and the function returns.  Besides the dialog button, *cancel* can also be selected with the **Esc** key or other gestures that are platform specific.
+The **Confirm** function displays a dialog box on top of the current screen. Two buttons are provided: a *confirm* button and a *cancel* button, which default to localized versions of "OK" and "Cancel" respectively. The user must confirm or cancel before the dialog box is dismissed and the function returns. Besides the dialog button, *cancel* can also be selected with the **Esc** key or other gestures that are platform specific.
 
-The *Message* parameter is displayed in the body of the dialog box.  If the message is very long, it may be truncated or a scroll bar may be provided.
+The *Message* parameter is displayed in the body of the dialog box. If the message is long, it may be truncated, or a scroll bar may be provided.
 
-Use the *OptionsRecord* parameter to specify options for the dialog box.  Not all options are available on every platform and are handled on a "best effort" basis.  At this time, in Canvas apps, none of these options are supported.
+Use the *OptionsRecord* parameter to specify options for the dialog box. Not all options are available on every platform and are handled on a best effort basis. These options are not supported in canvas apps.
 
 | Option Field | Description |
 |--------------|-------------|
@@ -77,4 +77,4 @@ Asks the user for their favorite color, capturing the result into a global varia
 Confirm( "There was a problem, please review your order." )
 ```
 
-Displays a message much like the **Notify** function does, but is modal and requires the user to select a button to proceed.  Use when it's important that the user acknowledge the message before proceeding.  In this situation, which button was selected isn't important and the result isn't checked.
+Displays a message much like the **Notify** function does, but is modal and requires the user to select a button to proceed.  Use when it's important that the user acknowledges the message before proceeding.  In this situation, which button was selected isn't important and the result isn't checked.
