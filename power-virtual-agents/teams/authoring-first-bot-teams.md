@@ -81,10 +81,9 @@ The first time you create a bot in a team, it will take 1 to 10 minutes to build
 
 ## Delete a bot
 
-You can delete bots to remove them from your team.
+You can delete bots to remove them from your team. In the navigation menu, under **Settings**, select **Details**. Then select **Delete**.
 
-1. Go to Manage -> details -> delete
-![image](https://user-images.githubusercontent.com/54648890/206285829-0ebf7005-2fc8-4a80-b83e-bf8c5b58020f.png)
+:::image type="content" source="../media/authoring-first-bot-teams/delete-bot.png" alt-text="The create a new bot window lets you enter a name and choose a language for the bot.":::
 
 You'll be asked to confirm the deletion of the bot by entering the bot's name, after which all bot content is immediately deleted.
 
