@@ -2,7 +2,7 @@
 title: "Use chatbot variables to carry content across topics (preview)"
 description: "Global variables can be used to store and retrieve information across multiple topics within the same bot and user session in Power Virtual Agents preview."
 keywords: "PVA"
-ms.date: 10/10/2022
+ms.date: 12/12/2022
 
 ms.topic: article
 author: iaanw
@@ -62,7 +62,7 @@ After you've created a global variable, you can see where it's first defined and
 
 ## Global variables lifecycle and resetting its value
 
-Global variables are accessible from any topic, and the global variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session).
+Global variables are accessible from any topic, and the global variable's assigned value persists throughout [the session](analytics-billed-sessions.md).
 
 The values of global variables are cleared automatically by the **Clear Variable Values** node. This node is used in the [Reset Conversation system topic](authoring-system-topics.md#reset-conversation) which can be triggered either by redirection from the bot or when the user triggers it directly (for example, by typing "Start over"). In this case, all global variables are reset.
 
