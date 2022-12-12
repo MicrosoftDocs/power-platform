@@ -4,7 +4,7 @@ description: About telemetry events for Microsoft Dataverse
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 12/12/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -27,7 +27,7 @@ These are calls made to the Dataverse API. They can be from Unified Interface (U
 
 - **Name**: The type of request. These fall into two categories:
   - **Web API Request**: A request to the OData v4 endpoint that's commonly used by Unified Interface and modern clients. This request is transformed into an operation that's common to both. Web API is a "wrapper" to enable the RESTful programming model, but after data is received, everything becomes the same within the server. When the response is returned, it's converted to JSON if the request came from the Web API.
-  - **Organization Service Request**: A request to the SOAP endpoint used by SDK clients or the legacy web client.
+  - **Organization Service Request**: A request to the Organization API endpoint used by SDK clients or the legacy web client.
 - **Duration**: The amount of time the server took to respond to the request.
 - **Url**: The URL to which the call was made.
 - **CustomDimensions**:
