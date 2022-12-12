@@ -133,23 +133,7 @@ In the Azure portal, register Power Platform as a resource provider:
 
 A deployment is started. When it's done, the enterprise policy is created.
 
-## Grant enterprise policy permissions to access key vault
-
-Once the enterprise policy is created, the key vault admin grants the enterprise policy’s managed identity to access the encryption key.
-
-1. Sign into the Azure portal and go to the key vault.
-1. Select the key vault where the key was assigned to the enterprise policy.
-1. Select the **Access policies** tab.
-1. Select **+ Add Access Policy**.
-1. Under **Key Management Operations**, select the **Get** option, and under **Crytographic Operations**, select the **Unwrap key**, and **Wrap key** options.
-   :::image type="content" source="media/cmk-keyvault-access-policy.png" alt-text="Key vault add access policy":::
-1. In the **Principal** panel, select the deployment enterprise policy name.
-1. Select **Add**, to add the access policy, and then select **Save**.
-
-
-
-
-### Json template
+#### Json template
 
 ```json
  {
@@ -209,8 +193,99 @@ Once the enterprise policy is created, the key vault admin grants the enterprise
   - "singapore"
 - **keyVaultId**, **keyName**, **keyVersion**: Copy these values from your key vault properties in the Azure portal.
 
+## Grant enterprise policy permissions to access key vault
 
+Once the enterprise policy is created, the key vault admin grants the enterprise policy’s managed identity to access the encryption key.
 
+1. Sign into the Azure portal and go to the key vault.
+1. Select the key vault where the key was assigned to the enterprise policy.
+1. Select the **Access policies** tab.
+1. Select **+ Add Access Policy**.
+1. Under **Key Management Operations**, select the **Get** option, and under **Crytographic Operations**, select the **Unwrap key**, and **Wrap key** options.
+   :::image type="content" source="media/cmk-keyvault-access-policy.png" alt-text="Key vault add access policy":::
+1. In the **Principal** panel, select the deployment enterprise policy name.
+1. Select **Add**, to add the access policy, and then select **Save**.
+
+## Grant the Power Platform admin to read enterprise policy
+
+Admins who have Azure global, Dynamics 365, and Power Platform administration roles can access the Power Platform admin center to assign environments to the enterprise policy. To access the enterprise policies, the global admin with Azure key vault access is required to grant the **Reader** role to the Power Platform admin. Once the **Reader** role is granted, the Power Platform admins will be able to view the enterprise policies on the Power Platform admin center.  
+
+> [!NOTE]
+> Only the Power Platform and Dynamics 365 admins who are granted the reader role to the enterprise policy can add an environment to the policy. Other Power Platform or Dynamics 365 admins might be able to view the enterprise policy but they'll get an error when they try to **Add environment** to the policy.
+
+### Grant reader role to a Power Platform admin
+
+1. Sign into the Azure portal.
+1. Obtain the Power Platform or Dynamics 365 admin’s object ID. To do this:
+   1. Go to to the **Users** area in Azure.
+   1. In the All users list, find the user with Power Platform or Dynamics 365 admin permissions using **Search**. 
+   1. Open the user record, on the **Overview** tab copy the user’s **Object ID**. Paste this into a text editor such as NotePad for later.
+1. Get the enterprise policy resource ID. To do this:
+   1. Open Azure Resource Graph Explorer.
+   1. Search for `microsoft.powerplatform/enterprisepolicies`, and then select the **microsoft.powerplatform/enterprisepolicies** resource.
+   1. Select **Run Query**.
+   1. Scroll to the right of the results page and select the **See details** link.
+   1. On the **Details** page, copy the ID.
+   1. Start the Cloud Shell, and run the following command replacing objId with the user’s object ID and the enterprise policy resource ID with the enterprisepolicies ID found in the previous steps: 
+    New-AzRoleAssignment -ObjectId { objId} -RoleDefinitionName Reader -Scope {EP Resource Id}
+
+### Add environments to the enterprise policy
+
+To do this task, you need the following permission:
+
+- Azure AD active user who has the Power Platform and/or Dynamics 365 licenses.
+- Azure AD user who has either a global tenant admin, Power Platform or Dynamics 365 service admin role.
+
+The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data and encrypt it with the customer managed key.
+
+> [!IMPORTANT]
+> The environment is disabled temporarily during this process and re-enabled to allow users to access while the encryption process continues. It can take up to 3 days to complete the encryption process.
+
+## Add an environment to the enterprise policy to encrypt data
+
+> [!IMPORTANT]
+> The environment will be disabled when it is added to the enterprise policy for data encryption.
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
+1. Select a policy, and then on the command bar select **Edit**.
+1. Select **Add environments**, select the environment you want, and then select **Continue**.
+   :::image type="content" source="media/cmk-add-environments-enterprise-policy.png" alt-text="Add environment to enterprise policy on Power Platform admin center":::
+1. Select **Save**, and then select **Confirm**.
+
+## Remove environments from policy to return to Microsoft managed key
+
+> [!IMPORTANT]
+> The environment will be disabled when it is removed from the enterprise policy to return data encryption using the Microsoft managed key.
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
+1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer managed key.
+1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
+   :::image type="content" source="media/cmk-ppac-remove-env-policy.png" alt-text="Remove an environment from customer managed key":::
+1. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
+1. Select **Save**.
+
+## Change the key
+
+To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
+
+1. In Azure portal, create a new key and a new enterprise policy. More information: [Create the key and grant access](#create-the-key-and-grant-access) and [Create an enterprise policy](#create-an-enterprise-policy)
+1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
+1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer managed key.
+1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
+   :::image type="content" source="media/cmk-ppac-remove-env-policy.png" alt-text="Remove an environment from customer managed key":::
+1. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
+1. Select **Save**.
+1. Repeat steps 2-6 until all environments in the enterprise policy have been removed.
+
+  > [!IMPORTANT]
+  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to Microsoft managed key.
+
+1. Once all the environments are removed, from the Power Platform admin center go to **Enterprise policies**.
+1. Select the new enterprise policy, and then select **Edit policy**.
+1. Select **Add environment**, select the environments that you want to add, and then select **Continue**.
+
+> [!IMPORTANT]
+> The environment will be disabled when it's added to the new enterprise policy.
 
 ## Next steps
 
