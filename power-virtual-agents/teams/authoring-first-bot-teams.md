@@ -40,7 +40,7 @@ The very first step is to add the Power Virtual Agents app. Then you can create 
 
     :::image type="content" source="../media/authoring-first-bot-teams/first-bot-teams-apps.png" alt-text="The apps icon is at the bottom of the Teams side navigating bar.":::
 
-1. In the search box, type *power virtual agents* and then select the tile that appears. Select **Add for me** in the description window that pops up. This adds the app to the side pane.
+1. In the search box, type _power virtual agents_ and then select the tile that appears. Select **Add for me** in the description window that pops up. This adds the app to the side pane.
 
     :::image type="content" source="../media/authoring-first-bot-teams/first-bot-add-app.png" alt-text="The search box has power virtual agents in it, and the Power Virtual Agents tile appears next to it":::
 
