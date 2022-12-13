@@ -79,7 +79,7 @@ First, you need to configure where you're deploying your bot canvas.
 1. [Create and publish a bot](fundamentals-get-started.md).
 
 1. Copy and paste the HTML code below and save it as *index.html*.  
-    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
+    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your *Token Endpoint*. To learn how to get your *Token Endpoint*, see [Azure Bot Service Channels]([http://publication-connect-bot-to-azure-bot-service-channels.md/](https://learn.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-azure-bot-service-channels#get-your-power-virtual-agents-bot-parameters)) 
 
     ```HTML
     <!DOCTYPE html>
@@ -147,17 +147,30 @@ First, you need to configure where you're deploying your bot canvas.
                // Add styleOptions to customize Web Chat canvas
                hideUploadButton: true
             };
-
-            // Add your BOT ID below 
-            var BOT_ID = "<ENTER YOUR BOT ID>"; 
-            var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+ 
+            var theURL = "<YOUR TOKEN ENDPOINT>";
         
+            var environmentEndPoint = theURL.slice(0,theURL.indexOf('/powervirtualagents'));
+            var apiVersion = theURL.slice(theURL.indexOf('api-version')).split('=')[1];
+            var regionalChannelSettingsURL = `${environmentEndPoint}/powervirtualagents/regionalchannelsettings?api-version=${apiVersion}`; 
+            
+         var directline;
+            fetch(regionalChannelSettingsURL)
+                 .then((response) => {
+                    return response.json();
+                    })
+                 .then((data) => {
+                    directline = data.channelUrlsById.directline;
+                    })
+                 .catch(err => console.error("An error occurred: " + err));
+         
           fetch(theURL)
                 .then(response => response.json())
                 .then(conversationInfo => {
                     window.WebChat.renderWebChat(
                         {
                             directLine: window.WebChat.createDirectLine({
+                                domain: `${directline}v3/directline`,
                                 token: conversationInfo.token,
                             }),
                             styleOptions
@@ -172,12 +185,12 @@ First, you need to configure where you're deploying your bot canvas.
     </html>
     ```
 
-1. In the *index.html* file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
+1. In the *index.html* file you created, enter your *Token Endpoint* at the line `var theURL = "<YOUR TOKEN ENDPOINT>";`. To learn how to get your *Token Endpoint*, see [Azure Bot Service Channels]([http://publication-connect-bot-to-azure-bot-service-channels.md/](https://learn.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-azure-bot-service-channels#get-your-power-virtual-agents-bot-parameters))
 
 1. Open *index.html* using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
 
 1. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (").
+    If you encounter problems, make sure you've published your bot, and that your Token Endpoint has been inserted in the correct place. It should be after the equals sign (=) at the line `var theURL = "<YOUR TOKEN ENDPOINT>";`, and surrounded by double quotation marks (").
 
 ### Customize the bot icon, background color, and name
 
