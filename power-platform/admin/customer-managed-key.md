@@ -19,14 +19,14 @@ Customers have data privacy and compliance requirements to secure their data by 
 > This is a preview feature.
 > 
 > These encryption key operations are available with this release:
->  1. Migrate key
->  1. Set and apply key
->  1. Change key
->  1. Revert key
+>  - Migrate key
+>  - Set and apply key
+>  - Revert key
+>  - Change key
 
 By default, data is encrypted with Microsoft managed keys. For additional control over encryption keys, you can manage your own keys. Customer managed keys must be stored in Azure Key vault.
 
-In our upgraded customer managed key (CMK) feature, customers can use their own Azure Key Vault encryption key to encrypt their data stored in Microsoft Dataverse. This provides an additional level of security by protecting Microsoft support staff from having access to the encryption key.
+In our upgraded customer managed key (CMK) feature, customers can use their own Azure Key Vault encryption key to encrypt their data stored in Microsoft Dataverse. This provides an additional level of security by not allowing Microsoft support staff to have access to the encryption key.
 
 Another benefit with this feature is the ability to encrypt data in all the Azure storage types used in Dataverse, such as SQL, Azure File, Cosmos DB, data lake, and Azure Cognitive Search.
 
@@ -34,12 +34,12 @@ Environments with finance and operations apps where Power Platform integration i
 
 :::image type="content" source="media/cmk-power-platform-diagram.png" alt-text="Customer managed encryption key in the Power Platform":::
 
-First, the key vault admin creates a key in their key vault and creates an enterprise Azure Policy. When the enterprise policy is created, a special Azure AD managed identity is also created. Next, the key vault admin returns to the key vault and grants the enterprise policy/managed identity access to the encryption key.
+To enable customer managed keys, first the key vault admin creates a key in their key vault and also creates an enterprise Azure Policy. When the enterprise policy is created, a special Azure Active Directory (Azure AD) managed identity is also created. Next, the key vault admin returns to the key vault and grants the enterprise policy/managed identity access to the encryption key.
 
 ## Prerequisites
 
 - An Azure subscription that includes Azure Key Vault.
-- Global tenant admin or an Azure Active Directory (Azure AD) with contributor permission to the Azure AD subscription and permission to create a key vault and key. This is required to set up the key vault.
+- Global tenant admin or an  Azure AD with contributor permission to the Azure AD subscription and permission to create a key vault and key. This is required to set up the key vault.
 
 ## Azure key vault and Power Platform admin tasks
 
@@ -83,9 +83,9 @@ Similarly, if you didn’t enable these audit or search functionalities and enab
 
 ## Create an Azure paid subscription and key vault
 
-This step isn't needed if the tenant already has a subscription. In Azure, perform the following steps:
+In Azure, perform the following steps:
 
-1. Create a Pay-as-you-go subscription.
+1. Create a Pay-as-you-go subscription. This step isn't needed if the tenant already has a subscription.
 1. Create a resource group.
 1. Create a key vault using the paid subscription with the resource group you created in the previous step. More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
 
