@@ -2,7 +2,7 @@
 title: Use entities in Power Virtual Agents bots (preview)
 description: Use entities to capture information in bot conversations using natural language understanding in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 12/08/2022
+ms.date: 12/13/2022
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -12,6 +12,7 @@ ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ---
 <!-- EDITOR'S NOTE: This article doesn't mention "slot filling" at all, and it's not a particularly advanced use of entities. Would it make sense to change the file name to reflect its actual contents? -->
+<!-- EDITOR'S NOTE: Also, this version of this article, unlike the production version, doesn't mention custom entities. Is that because custom entities aren't available in the preview yet? They seem to be; at the time of this writing, I can create a custom entity in my preview bot. If custom entities ARE available now in the preview, please add that section to this article. -->
 
 # Use entities in Power Virtual Agents bots (preview)
 
