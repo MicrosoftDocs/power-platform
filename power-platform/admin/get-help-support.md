@@ -6,7 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/22/2022
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: kvivek 
 search.audienceType: 
   - admin
 search.app:
@@ -17,14 +17,14 @@ search.app:
 ---
 # Get Help + Support
 
-Admins can use the **Help + support** experience in the [Power Platform admin center](admin-documentation.md) to get self-help solutions in ***real-time*** for their issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative.
+Admins can use the **Help + support** experience in the [Power Platform admin center](admin-documentation.md) to get self-help solutions in real-time for their issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative.
 
 An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 > [!div class="mx-imgBorder"] 
 > ![List of possible solutions.](media/support-solutions-list.png "List of possible solutions")
 
-### Prerequisites
+## Prerequisites
 
 - You have a security role that is enabled for creating support requests. Users having one of these security roles can create support requests:
 
@@ -60,7 +60,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 >   - If you have a non-Unified/Premier Support plan, please verify the plan is active. For support information, see [Community Forums](https://community.dynamics.com/f).
 
 
-### View solutions or enter a support request through the new support center
+## View solutions or create a support request
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
 
