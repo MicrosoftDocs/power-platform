@@ -113,7 +113,7 @@ Without a premium support plan, you can only submit request on technical issues.
 > [!NOTE]
 > This is a preview feature available only to a limited set of customers to try out. If you don't see the **Report Outage** link, don't worry! We'll be bringing this feature to all customers in the future.
 
-If you're experiencing a service outage, select the **Report outage** link to report the outage so that we can timely review and act on it. . 
+If you're experiencing a service outage, select the **Report outage** link to report the outage so that we can timely review and act on it. 
 
 > [!div class="mx-imgBorder"]
 > ![Report outage.](media/new-report-outage.png "Report outage")
