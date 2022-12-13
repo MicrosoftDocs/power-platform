@@ -96,7 +96,8 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 Once you submit your request it will appear in the list of support requests.
 
-![List of support requests.](media/support-ticket-list.png "List of support requests")
+> [!div class="mx-imgBorder"]
+> ![List of support requests.](media/support-ticket-list.png "List of support requests")
 
 You can check the status and edit your request on this page.
 
@@ -113,11 +114,13 @@ Without a premium support plan, you can only submit request on technical issues.
 
 If you're experiencing a service outage, select the **Report outage** link to report the outage so that we can timely review and act on it. . 
 
-![Report outage.](media/new-report-outage.png "Report outage")
+> [!div class="mx-imgBorder"]
+> ![Report outage.](media/new-report-outage.png "Report outage")
 
 Fill out the pages and then submit to have your support request receive an expedited review.
 
-![Fill in outage info.](media/report-outage-page-one.png "Fill in outage info")
+> [!div class="mx-imgBorder"]
+> ![Fill in outage info.](media/report-outage-page-one.png "Fill in outage info")
 
 We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited preview, please fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
 
