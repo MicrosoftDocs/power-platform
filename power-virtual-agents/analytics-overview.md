@@ -2,7 +2,7 @@
 title: "Fundamentals - Analyze chatbot usage (contains video)"
 description: "Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents."
 keywords: "PVA"
-ms.date: 12/07/2022
+ms.date: 12/13/2022
 
 ms.topic: overview
 author: iaanw
@@ -45,8 +45,8 @@ The analytics section is divided into a number of pages to give you multiple way
 The following terms are used in this section.
 
 - A _conversation_ is an ongoing interaction between a specific user, or group of users, on a channel and your bot. Conversations can pause and resume later, or be transferred to a live agent. The conversation may be one-way, either from the end -user to the bot, or from the bot to the end user, but is more commonly a back-and-forth interaction between the end user and the bot.
-- An _analytics session_ is...
-- A _billing session_ is...
+- _Analytics sessions_ track user engagement for your bot. Each  task a user asks of your bot defines an analytics session.
+- _Billed sessions_ are independent of analytics sessions. Billed sessions are used to measure resource consumption.
 
 > [!NOTE]
 > Although transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.

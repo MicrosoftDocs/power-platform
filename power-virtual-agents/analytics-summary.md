@@ -2,7 +2,7 @@
 title: "Report analytics, performance, and usage (contains video)"
 description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 12/13/2022
 
 ms.topic: article
 author: iaanw
@@ -27,22 +27,20 @@ Select the version of Power Virtual Agents you're using here:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mQpm]
 >
 
-The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
+The **Summary** page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
 :::image type="content" source="media/analytics-summary/overview-analytics.png" alt-text="The Analytics summary page." border="false":::
 
-The Summary page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
+The **Summary** page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
 
-- [Analyze bot performance and usage in Power Virtual Agents](#analyze-bot-performance-and-usage-in-power-virtual-agents)
-  - [Prerequisites](#prerequisites)
-  - [Summary charts](#summary-charts)
-  - [Engagement over time chart](#engagement-over-time-chart)
-  - [Session outcomes over time chart](#session-outcomes-over-time-chart)
-  - [Resolution rate drivers chart](#resolution-rate-drivers-chart)
-  - [Escalation rate drivers chart](#escalation-rate-drivers-chart)
-  - [Abandon rate drivers chart](#abandon-rate-drivers-chart)
+- [Summary charts](#summary-charts)
+- [Engagement over time chart](#engagement-over-time-chart)
+- [Session outcomes over time chart](#session-outcomes-over-time-chart)
+- [Resolution rate drivers chart](#resolution-rate-drivers-chart)
+- [Escalation rate drivers chart](#escalation-rate-drivers-chart)
+- [Abandon rate drivers chart](#abandon-rate-drivers-chart)
 
-The Engagement Rate Drivers, Abandon Rate Drivers, and Resolution Rate Drivers charts use natural language understanding to group issues as topics. These charts show you the topics that are having the most impact on the performance of your bot.
+The Engagement rate drivers, Abandon rate drivers, and Resolution rate drivers charts use natural language understanding to group issues as topics. These charts show you the topics that are having the most impact on the performance of your bot.
 
 By default, the page shows you key performance indicators for the last seven days. To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
 
@@ -54,13 +52,13 @@ By default, the page shows you key performance indicators for the last seven day
 
 :::image type="content" source="media/analytics-summary/summary-charts.png" alt-text="Summary charts." border="false":::
 
-The Summary charts summarize the key performance indicators for the specified time period and the percent change over the period.
+The summary charts summarize the key performance indicators for the specified time period and the percent change over the period.
 
 | Description     | Details                                                                                                                                                                                                                                                                                                      |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Total sessions  | The total number of sessions within the specified time period.                                                                                                                                                                                                                                               |
 | Engagement rate | The percentage of total sessions that are engaged sessions. An engaged session is a session in which a user-created topic (as opposed to a system topic) is triggered, or the session ends in escalation. Engaged sessions can have one of three outcomes—they are either resolved, escalated, or abandoned. |
-| Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question *"Did that answer your question?"* and the user either does not respond or responds *Yes*.                                    |
+| Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question _"Did that answer your question?"_ and the user either does not respond or responds _Yes_.                                    |
 | Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent.                                                                                                                                                                        |
 | Abandon rate    | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.                                                                                                                   |
 | CSAT            | The graphical view of the average of customer satisfaction (CSAT) scores for sessions in which customers respond to an end-of-session request to take the survey.                                                                                                                                            |
@@ -69,7 +67,7 @@ A blue up-and-down indicator next to the value indicates the percent change in a
 
 ## Engagement over time chart
 
-The Engagement over time chart provides a graphical view of the number of engaged and unengaged sessions over time. An engaged session is a session in which a user-created topic is triggered or the session ends in escalation.
+The **Engagement over time** chart provides a graphical view of the number of engaged and unengaged sessions over time. An engaged session is a session in which a user-created topic is triggered or the session ends in escalation.
 
 | Description | Details                                 |
 | ----------- | --------------------------------------- |
@@ -78,22 +76,22 @@ The Engagement over time chart provides a graphical view of the number of engage
 
 ## Session outcomes over time chart
 
-The Session outcomes over time chart provides a graphical view of the daily resolution rate, escalation rate, and abandon rate over the specified time period.
+The **Session outcomes over time** chart provides a graphical view of the daily resolution rate, escalation rate, and abandon rate over the specified time period.
 
 | Description | Details                                                                                                                                                                                                                                                  |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Resolved    | The daily rate of resolved sessions. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question *"Did that answer your question?"* and the user either does not respond or responds *Yes*. |
+| Resolved    | The daily rate of resolved sessions. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question _"Did that answer your question?"_ and the user either does not respond or responds _Yes_. |
 | Escalated   | The daily rate of escalated sessions. An escalated session is an engaged session that is escalated to a human agent.                                                                                                                                     |
 | Abandoned   | The daily rate of abandoned sessions. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.                                                                                |
 
 ## Resolution rate drivers chart
 
-The Resolution rate drivers chart displays topics in order of their impact on the resolution rate over the specified time period.
+The **Resolution rate drivers** chart displays topics in order of their impact on the resolution rate over the specified time period.
 
 | Description | Details                                                                                                                                                                                                                                   |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Topic       | A Power Virtual Agents topic.                                                                                                                                                                                                             |
-| Rate        | The percentage of engaged sessions for the topic that are resolved. A resolved session is an engaged session in which a customer receives an end-of-conversation survey and either does not respond to the survey or responds with *Yes*. |
+| Rate        | The percentage of engaged sessions for the topic that are resolved. A resolved session is an engaged session in which a customer receives an end-of-conversation survey and either does not respond to the survey or responds with _Yes_. |
 | Impact      | The topic's resolution rate impact score. The resolution rate impact score is the overall resolution rate including the topic minus the overall resolution rate excluding the topic.                                                      |
 
 The chart displays the impact as a red or blue bar. A red bar indicates that the topic's resolution rate is greater than the average resolution rate, resulting in a negative impact on overall resolution rate. A blue bar indicates that the resolution time is shorter, resulting in a positive impact on overall resolution rate performance.
@@ -104,7 +102,7 @@ To see additional information about each topic, select the **Detail** link to di
 
 ## Escalation rate drivers chart
 
-The Escalation Rate Drivers chart displays topics in order of their impact on the escalation rate over the specified time period.
+The **Escalation rate drivers** chart displays topics in order of their impact on the escalation rate over the specified time period.
 
 | Description | Details                                                                                                                                                                              |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -120,7 +118,7 @@ To see additional information about each topic, select the **Detail** link to di
 
 ## Abandon rate drivers chart
 
-The Abandon Rate Drivers chart displays topics in order of their impact on the abandon rate over the specified time period.
+The **Abandon rate drivers** chart displays topics in order of their impact on the abandon rate over the specified time period.
 
 | Description | Details                                                                                                                                                                                                      |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
