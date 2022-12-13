@@ -68,7 +68,15 @@ You can change the bot's name and icon. This will affect the icon in all channel
 
 To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details.
 
-You can get the token endpoint by [going to the Mobile app tile under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters).
+1. In the navigation menu under **Settings**, select **Channels**.
+
+1. Select **Mobile app**.
+
+    :::image type="content" source="media/customize-default-canvas/channel-mobile-app.png" alt-text="Screenshot of the mobile app channel tile.":::
+
+1. Next to **Token Endpoint**, select **Copy**.
+
+    :::image type="content" source="media/customize-default-canvas/token-endpoint.png" alt-text="Screenshot of the endpoint token id.":::
 
 ## Customize the default canvas (simple)
 
