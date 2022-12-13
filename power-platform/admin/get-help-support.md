@@ -4,7 +4,7 @@ description: Use the Help + support experience to contact a Microsoft support re
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/22/2022
+ms.date: 12/13/2022
 ms.subservice: admin
 ms.author: kvivek 
 search.audienceType: 
@@ -65,7 +65,8 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 2. Select **Help + support** > **New support request**.
 
-   ![New support request.](media/new-support-request.png "New support request")
+   > [!div class="mx-imgBorder"] 
+   > ![New support request.](media/new-support-request.png "New support request")
 
 3. Select the product with the issue. Fill in the problem type, a description of the issue, and then select **See solutions**.
 
