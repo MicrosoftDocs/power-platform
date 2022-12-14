@@ -375,6 +375,8 @@ Power Pages licensing is capacity based and offers two types of capacities based
 
     **Meter Definition:** Power Pages Anonymous per user/website pay-as-you-go meter - A measure of the number of unique anonymous users per website per month.
 
+More information: [Power Pages meters](pay-as-you-go-meters.md#power-pages-meters-preview)
+
 ### What is an authenticated user and how are authenticated users/website/month calculated?
 
 Authenticated users are users who obtain secure access to a website by logging in through an authentication provider. 
@@ -453,10 +455,10 @@ Yes, Dataverse database and Dataverse file capacity is included with the authent
 
 #### Dataverse default capacity - subscription plans
 
-| Capacity Type   | Dataverse database storage per tenant | Dataverse database storage per user | Dataverse file storage per user |
+| Capacity Type   | Dataverse database storage per tenant | Dataverse database storage per capacity pack | Dataverse file storage per capacity pack |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-| Authenticated per user plan  | 5 GB | 20 MB | 16 GB |
-| Anonymous per user plan  | 5 GB   | 1 MB   | 4 GB   |
+| Authenticated per user plan  | 5 GB | 2 GB | 16 GB |
+| Anonymous per user plan  | 5 GB   | 500 MB  | 4 GB   |
 
 #### Dataverse default capacity - pay-as-you-go plans
 
