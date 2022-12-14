@@ -97,11 +97,7 @@ You use solutions to export bots from one environment and import them into anoth
 >
 > Removing or changing the chatbot subcomponents from within Power Apps will cause the export and import to fail.
 
-## Export and import bots
-
-You export and import bots by exporting and importing their containing solutions from one environment to another.
-
-### Export the solution with your bot
+## Export the solution with your bot
 
 You can only export solutions that are _unmanaged_. By default, a new solution is created as unmanaged. If you later change it to _managed_, you won't be able to export it.
 
@@ -123,7 +119,7 @@ You can only export solutions that are _unmanaged_. By default, a new solution i
 
 The export can take several minutes to complete. Once finished, a .zip file will be downloaded by your web browser. The file will be in the format `SolutionName_Version_ManagementType.zip`.
 
-### Import the solution with your bot
+## Import the solution with your bot
 
 1. On the top menu, select the environment name and select the environment where you want to import your bot.
 
