@@ -27,11 +27,11 @@ Select the version of Power Virtual Agents you're using here:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mQpm]
 >
 
-The **Summary** page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
+The **Summary** tab on the **Analytics** page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
 :::image type="content" source="media/analytics-summary/overview-analytics.png" alt-text="The Analytics summary page." border="false":::
 
-The **Summary** page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
+The summary tab includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
 
 - [Summary charts](#summary-charts)
 - [Engagement over time chart](#engagement-over-time-chart)
@@ -40,9 +40,9 @@ The **Summary** page includes a variety of charts with graphical views of your b
 - [Escalation rate drivers chart](#escalation-rate-drivers-chart)
 - [Abandon rate drivers chart](#abandon-rate-drivers-chart)
 
-The Engagement rate drivers, Abandon rate drivers, and Resolution rate drivers charts use natural language understanding to group issues as topics. These charts show you the topics that are having the most impact on the performance of your bot.
+Each task a user asks of your bot defines an _analytics session_. These charts measure how well your bot is doing and help you find the topics with the most impact on your bot's performance.
 
-By default, the page shows you key performance indicators for the last seven days. To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
+By default, the page shows you key performance indicators for the last seven days. To change the time period, use the date controls at the top of the page.
 
 ## Prerequisites
 
@@ -54,14 +54,14 @@ By default, the page shows you key performance indicators for the last seven day
 
 The summary charts summarize the key performance indicators for the specified time period and the percent change over the period.
 
-| Description     | Details                                                                                                                                                                                                                                                                                                      |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Total sessions  | The total number of sessions within the specified time period.                                                                                                                                                                                                                                               |
-| Engagement rate | The percentage of total sessions that are engaged sessions. An engaged session is a session in which a user-created topic (as opposed to a system topic) is triggered, or the session ends in escalation. Engaged sessions can have one of three outcomes—they are either resolved, escalated, or abandoned. |
-| Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question _"Did that answer your question?"_ and the user either does not respond or responds _Yes_.                                    |
-| Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent.                                                                                                                                                                        |
-| Abandon rate    | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.                                                                                                                   |
-| CSAT            | The graphical view of the average of customer satisfaction (CSAT) scores for sessions in which customers respond to an end-of-session request to take the survey.                                                                                                                                            |
+| Description | Details |
+|---|---|
+| Total sessions | The total number of sessions within the specified time period. |
+| Engagement rate | The percentage of total sessions that are engaged sessions. An engaged session is a session in which a user topic (as opposed to a system topic) is triggered, or the session ends in escalation. Engaged sessions can have one of three outcomes—they are either resolved, escalated, or abandoned. |
+| Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question _"Did that answer your question?"_ and the user either does not respond or responds _Yes_. |
+| Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent. |
+| Abandon rate | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session. |
+| CSAT | The graphical view of the average of customer satisfaction (CSAT) scores for sessions in which customers respond to an end-of-session request to take the survey. |
 
 A blue up-and-down indicator next to the value indicates the percent change in a positive direction. A red indicator indicates the percent change in a negative direction.
 
