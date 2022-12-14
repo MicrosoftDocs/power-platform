@@ -38,24 +38,30 @@ If all you want to change is your bot's name, you can do that easily in your bot
 
     :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="Screenshot of a bot's general settings page, with the bot name highlighted.":::
 
-## Find your bot's app ID and tenant ID
+## Retrieve token endpoint
 
-You'll need to know your bot's app ID and tenant ID to customize the canvas, whether it's the default canvas or a custom one you connect to.
+To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details.
 
-1. In the navigation menu, select **Settings**, and then select **General**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
-1. Select the **Advanced** tab.
+1. Select **Mobile app**.
 
-    :::image type="content" source="media/customize-default-canvas/bot-id-tenant-id.png" alt-text="Screenshot of a bot's metadata on the general settings page, with the bot app ID and tenant ID highlighted.":::
+    :::image type="content" source="media/customize-default-canvas/channel-mobile-app.png" alt-text="Screenshot of the mobile app channel tile.":::
+
+1. Next to **Token Endpoint**, select **Copy**.
+
+    :::image type="content" source="media/customize-default-canvas/token-endpoint.png" alt-text="Screenshot of the endpoint token id.":::
 
 ## Customize the default canvas (simple)
 
-You can customize your bot's default canvas with some simple CSS and JavaScript styling in an HTML file.
+Configure how the chat canvas looks with some simple CSS and JavaScript styling options.
+
+First, you need to configure where you're deploying your bot canvas.
 
 1. [Publish your bot](publication-connect-bot-to-web-channels.md).
 
-1. Copy the HTML code below and save it to a local drive as *index.html*.  
-    If you just want to try it out, you can paste the code into the [w3schools.com Tryit Editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) instead of saving it to a file.  
+1. Copy and paste the HTML code below and save it as _index.html_.  
+    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You'll still need to add your token endpoint.  
 
     ```HTML
     <!DOCTYPE html>
@@ -124,9 +130,22 @@ You can customize your bot's default canvas with some simple CSS and JavaScript 
                hideUploadButton: true
             };
 
-            // Add your BOT ID below 
-            var BOT_ID = "<ENTER YOUR BOT ID>"; 
-            var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+            
+            var theURL = "<YOUR TOKEN ENDPOINT>";
+          
+            var environmentEndPoint = theURL.slice(0,theURL.indexOf('/powervirtualagents'));
+            var apiVersion = theURL.slice(theURL.indexOf('api-version')).split('=')[1];
+            var regionalChannelSettingsURL = `${environmentEndPoint}/powervirtualagents/regionalchannelsettings?api-version=${apiVersion}`; 
+            
+            var directline;
+                fetch(regionalChannelSettingsURL)
+                    .then((response) => {
+                        return response.json();
+                        })
+                    .then((data) => {
+                        directline = data.channelUrlsById.directline;
+                        })
+                    .catch(err => console.error("An error occurred: " + err));
         
           fetch(theURL)
                 .then(response => response.json())
@@ -148,13 +167,13 @@ You can customize your bot's default canvas with some simple CSS and JavaScript 
     </html>
     ```
 
-1. In the HTML code, find the line that starts with `var BOT_ID =` and replace `<ENTER YOUR BOT ID>` with your bot's app ID.
+1. In the _index.html_ file you created, enter your token endpoint at the line `var theURL = "<YOUR TOKEN ENDPOINT>";`.
 
-1. Open *index.html* in a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.  
-    If you're using the Tryit Editor, select **Run**.
+1. Open _index.html_ using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
 
-1. Test the bot to make sure it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that you inserted your bot ID in the right place. It should be after the equals sign (=) in the line `var BOT_ID`, and surrounded by double quotation marks (").
+1. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
+
+    If you encounter problems, make sure you've published your bot, and that your token endpoint has been inserted in the correct place. It should be after the equals sign (=) at the line `var theURL = "<YOUR TOKEN ENDPOINT>"`, and surrounded by double quotation marks (").
 
 ### Customize the bot icon, background color, and name
 

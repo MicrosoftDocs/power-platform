@@ -3,11 +3,11 @@ title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/14/2021
+ms.date: 12/09/2022
 author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -68,7 +68,7 @@ The malicious administrator signs in to the Power Platform admin center, goes to
 These actions will result in disabling all the environments within the tenant from online access and make all database backups un-restorable.
   
 > [!IMPORTANT]
-> To prevent the malicious administrator from interrupting the business operations by locking the database, the managed keys feature doesn't allow tenant environments to be locked for 72 hours after the encryption key has changed or activated. Additionally, anytime an encryption key is changed for a tenant, all administrators receive an email message alerting them of the key change. This provides up to 72 hours for other administrators to roll back any unauthorized key changes. 
+> To prevent the malicious administrator from interrupting the business operations by locking the database, the managed keys feature doesn't allow tenant environments to be locked for 72 hours after the encryption key has changed or activated. This provides up to 72 hours for other administrators to roll back any unauthorized key changes. 
   
 <a name="KM_details"></a>   
 
@@ -119,7 +119,6 @@ Use this procedure to set the manage key feature the first time for an environme
 
 6. Select **Next**. 
 
-7. Email notification is sent to all administrators. More information: [Encryption key change notification](#encryption-key-change-notification).
 
 #### Generate a new key (.pfx)   
 1.    Enter a password, and then re-enter the password to confirm.
@@ -142,8 +141,8 @@ Once an encryption key is generated or uploaded for the tenant, it can be activa
 2.    Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar.
 1.  Select **Confirm** to acknowledge the manage key risk.
 2.  Select a key that has an **Available** state and then select **Activate key** on the toolbar.
-3.  Select **Confirm** to acknowledge the key change and that all administrators will be notified.
-    More information: [Encryption key change notification](#encryption-key-change-notification)
+3.  Select **Confirm** to acknowledge the key change.
+  
 
 When you activate a key for the tenant, it takes a while for the key management service to activate the key. The status of the **Key state** displays the key as **Installing** when the new or uploaded key is activated. 
 Once the key is activated, the following occurs: 
@@ -258,9 +257,6 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 3. [Reset](sandbox-environments.md#reset-a-sandbox-environment)
    The environment's encrypted data will be deleted including backups. After the environment is reset, the environment encryption will revert back to the Microsoft managed key. 
 
-## Encryption key change notification
-> [!IMPORTANT]
-> When an encryption key is activated or changed, all administrators receive an email message alerting them of the change. This provides a means to allow other administrators to verify and confirm that the key was updated by an authorized administrator.  Since it takes time to activate the key and to encrypt all the environments, and to send out the email notification, an encryption key can only be updated once every 24 hours.
 
 ### See also  
 
