@@ -75,7 +75,7 @@ You use solutions to export bots from one environment and import them into anoth
 > Removing a bot from a solution doesn't remove its components from a solution. Removal of the components should be done separately.  
 
 > [!WARNING]
-> Do not remove any unmanaged chatbot subcomponents (such as bot topics) directly from the Power Apps portal, unless you have removed the bot itself from the solution.  
+> Don't remove any unmanaged chatbot subcomponents (such as bot topics) directly from the Power Apps portal, unless you have removed the bot itself from the solution.  
 >
 > You should only make changes to topics from within the Power Virtual Agents portal.  
 >
@@ -87,16 +87,14 @@ You export and import bots by exporting and importing their containing solutions
 
 ### Export the solution with your bot
 
+You can only export solutions that are _unmanaged_. By default, a new solution is created as unmanaged. If you later change it to _managed_, you won't be able to export it.
+
+> [!IMPORTANT]
+> If your bot has a large number of components (for example, more than 250 topics or more than 100 entities), see [Export using the classic experience](/power-apps/maker/data-platform/export-solutions#export-using-the-classic-experience).
+
 1. In the list of solutions, select the solution that contains the bot you want to export. Select **Export solution**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-solution.png" alt-text="Screenshot of the solution export button.":::
-
-    > [!NOTE]
-    > You can't export managed solutions. When you create a solution, by default it will not be managed. If you change it to a managed solution you won't be able to export it, and will need to create a new solution.
-    >
-    > If your bot has a large number of components (for example, more than 250 topics or more than 100 entities), export the bot using classic Power Apps portal instead.
-    >
-    > :::image type="content" source="media/authoring-export-import-bots/export-switch-classic.png" alt-text="Switch to classic view." border="false":::
 
 1. Select **Next** in the **Before you export** pane.
 
