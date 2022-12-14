@@ -1,4 +1,4 @@
----
+3090110---
 title: Power Platform licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder"
 ms.topic: conceptual
@@ -375,6 +375,8 @@ Power Pages licensing is capacity based and offers two types of capacities based
 
     **Meter Definition:** Power Pages Anonymous per user/website pay-as-you-go meter - A measure of the number of unique anonymous users per website per month.
 
+More information: [Power Pages meters](pay-as-you-go-meters.md#power-pages-meters-preview)
+
 ### What is an authenticated user and how are authenticated users/website/month calculated?
 
 Authenticated users are users who obtain secure access to a website by logging in through an authentication provider. 
@@ -453,10 +455,10 @@ Yes, Dataverse database and Dataverse file capacity is included with the authent
 
 #### Dataverse default capacity - subscription plans
 
-| Capacity Type   | Dataverse database storage per tenant | Dataverse database storage per user | Dataverse file storage per user |
+| Capacity Type   | Dataverse database storage per tenant | Dataverse database storage per capacity pack | Dataverse file storage per capacity pack |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-| Authenticated per user plan  | 5 GB | 20 MB | 16 GB |
-| Anonymous per user plan  | 5 GB   | 1 MB   | 4 GB   |
+| Authenticated per user plan  | 5 GB | 2 GB | 16 GB |
+| Anonymous per user plan  | 5 GB   | 500 MB  | 4 GB   |
 
 #### Dataverse default capacity - pay-as-you-go plans
 
@@ -582,10 +584,6 @@ Power Apps portals login and page view subscriptions will be available for purch
 ### Do unused Power Pages subscription licenses (authenticated per user and anonymous per user) carry forward to the next month?
 
 Power Pages are licensed at a monthly rate that is based on a customer's anticipated user volume. They aren't accumulated as individual assets and wouldn't carry forward month to month.
-
-### How do I apply Power Pages licenses to my site?
-
-<!--link to both Pay as you and allocate licenses-->
 
 ## AI Builder
 
