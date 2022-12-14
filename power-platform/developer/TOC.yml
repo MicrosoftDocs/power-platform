@@ -44,6 +44,8 @@
             href: cli\reference\paportal.md
           - name: pac pcf
             href: cli\reference\pcf.md
+          - name: pac pipeline
+            href: cli\reference\pipeline.md
           - name: pac plugin
             href: cli\reference\plugin.md
           - name: pac solution
@@ -52,3 +54,5 @@
             href: cli\reference\telemetry.md
           - name: pac tool
             href: cli\reference\tool.md
+          - name: pac virtual-agent
+            href: cli\reference\virtual-agent.md
