@@ -40,11 +40,9 @@ This can be useful if you use different environments for different purposes, or 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - A maker will require the minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](/power-platform/admin/database-security).
 
-## Add a bot to a solution
+## Create a solution to manage export and import
 
 You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots, and you can import multiple bots in one solution.
-
-### Create a solution to manage export and import
 
 1. Sign in to the Power Virtual Agents bot you want to export.
 
@@ -71,7 +69,7 @@ You use solutions to export bots from one environment and import them into anoth
 
 1. Select **Create**.
 
-### Add your bot to the solution
+## Add your bot to the solution
 
 1. Select the solution you just created.
 
