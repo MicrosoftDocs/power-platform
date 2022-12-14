@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ---
 
-# Redirect and end topics (preview)
+# Redirect and end topics (preview)<!-- EDITOR'S NOTE: I changed the title to more accurately reflect the content of the article. While the menu item is named "Topic management," the article doesn't discuss the other options on that menu. -->
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

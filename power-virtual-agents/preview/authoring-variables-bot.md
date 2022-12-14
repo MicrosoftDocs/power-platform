@@ -1,15 +1,15 @@
 ---
-title: "Use chatbot variables to carry content across topics (preview)"
-description: "Global variables can be used to store and retrieve information across multiple topics within the same bot and user session in Power Virtual Agents preview."
+title: Reuse variables across topics (preview)
+description: Use global variables to store and retrieve information across topics in the same bot and user session in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 12/12/2022
-
-ms.topic: article
+ms.date: 12/14/2022
+ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring, ce06122020
+ms.custom: authoring, ce06122020, bap-template
 ms.collection: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 # Reuse variables across topics (preview)
