@@ -1,3 +1,4 @@
+---
 title: Power Platform licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder"
 ms.topic: conceptual
@@ -13,6 +14,7 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+---
 
 # Power Platform licensing FAQs
 
