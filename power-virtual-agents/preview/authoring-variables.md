@@ -3,7 +3,7 @@
 title: Use variables (preview)
 description: Use variables with custom and prebuilt entities to created customized bot conversations in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 12/14/2022
+ms.date: 12/15/2022
 ms.service: power-virtual-agents
 ms.topic: how-to
 author: iaanw
@@ -192,7 +192,115 @@ To use system variables in a Power Fx formula, you must add `System.` before the
 
 [activity]: /azure/bot-service/bot-activity-handler-concept
 
-## Related links
+## Pass variables between topics
+
+When you redirect one topic to another, you can pass the values of variables between the original topic and the destination topic. Passing variables between topics is especially useful when an earlier topic already collected information that a later topic needs. Your users will appreciate not having to answer the same questions again.
+
+### Receive values from other topics
+
+When a topic defines a variable (for example, in a Question node), the bot asks the user the question to fill in the variable's value. If the bot has already acquired the value in an earlier topic, there's no reason to ask the question again. In these cases, you can set the variable to **Receive values from other topics**. When another topic redirects to this one, it can pass either the value of a variable (or a [literal value](#use-literal-values)) to this variable and skip the question. The experience for the user talking to the bot is seamless.
+
+In this example, we'll use two topics, Greeting and Talk to Customer. Both topics ask for the customer's name. However, if the Greeting topic runs first, the Talk to Customer topic skips its question. Instead, it uses the value of the variable that's passed from the Greeting topic.
+
+Here's the flow of the Talk to Customer topic:
+
+:::image type="content" source="media/authoring-variables/authoring-variables-passed-ex3.png" alt-text="Screenshot of the Talk to Customer topic conversation flow.":::
+
+As shown in the Test bot pane, if this topic is triggered first, it asks the user, "What should I call you?" It stores the value in a string variable called `userName`. The `userName` variable is also set to get its value from other topics. The topic concludes with the message, "I hope you're having a wonderful day, {userName}!"
+
+Here's the flow of the Greeting topic:
+
+:::image type="content" source="media/authoring-variables/authoring-variables-passed-ex1.png" alt-text="Screenshot of the Greeting topic conversation flow.":::
+
+As shown in the Test bot pane, if this topic is triggered first, it asks the user, "What's your name?" It stores the value in a string variable called `UserName`. The topic sends the message, "Pleased to meet you, {UserName}!" It then redirects to the Talk to Customer topic, which sends the message, "I hope you're having a wonderful day, {userName}!" Note, however, that the Talk to Customer topic skipped asking for the user's name again. Instead, it used the value of the `UserName` variable passed from the Greeting topic.
+
+Finally, here's that second conversation again, this time from the perspective of the Talk to Customer topic:
+
+:::image type="content" source="media/authoring-variables/authoring-variables-passed-ex2.png" alt-text="Screenshot of the Talk to Customer topic conversation flow when the Greeting topic is triggered first.":::
+
+Let's walk through the steps to set up a topic to receive values from other topics. We'll use our current example, but the same steps will work anytime a topic needs to get a value from an earlier topic.
+
+#### Set up the destination topic
+
+The destination topic is the topic being redirected to, the one that will receive values from other topics. In our example, it's Talk to Customer.
+
+1. Create or go to your destination topic.
+
+1. [Add a Question node](../authoring-create-edit-topics.md#ask-a-question) and enter `What should I call you?` for the message.
+
+1. Under **Identify**, select the pre-built entity **Person name**.
+
+1. Select the variable to open the **Variable properties** pane. Name it `userName`, and then select **Receive values from other topics**.
+
+    :::image type="content" source="media/authoring-variables/authoring-variables-passed-destination.png" alt-text="Screenshot of the Talk to Customer topic with the userName variable and its properties highlighted.":::
+
+1. [Add a Message node](../authoring-create-edit-topics.md#show-a-message).
+
+1. In the message box, type `I hope you're having a wonderful day, `.
+
+1. Select the **Insert variable** icon (**{x}**), and then select **userName**.
+
+1. Select the space after the variable and type `!`.
+
+1. Save the topic.
+
+#### Set up the source topic
+
+The source topic is the topic doing the redirecting, the one that provides the value that will be passed to the destination topic. In our example, it's Greeting.
+
+1. Go to the source topic.
+
+1. [Add a Redirect node](authoring-topic-management.md#redirect-to-another-topic) and select the destination topic.
+
+1. Select **+ Add input**, and then select the variable from the destination topic that you want to pass a value to.
+
+    :::image type="content" source="media/authoring-variables/authoring-variables-passed-source.png" alt-text="Screenshot of the Greeting topic with the userName variable added as input in a redirect node.":::
+
+1. Select the **>** icon, and then select the variable whose value you want to pass.
+
+    :::image type="content" source="media/authoring-variables/authoring-variables-passed-source-selected.png" alt-text="Screenshot of the Greeting topic with the UserName variable value selected.":::
+
+    The Redirect node should look like this:
+
+    :::image type="content" source="media/authoring-variables/authoring-variables-passed-source-final.png" alt-text="Screenshot of the Greeting topic with the completed Redirect node.":::
+
+1. Save the topic.
+
+### Return values to original topics
+
+When a topic is redirected to and obtains a variable by asking a question or in some other way, the variable can be returned to the original topic. The variable becomes part of the original topic and can be used like any other variable. Information the bot obtains is thus available across topics, reducing the need for [global variables](../authoring-variables-bot.md).
+
+Let's continue with the example from the previous section. We'll ask a new question in the Talk to Customer topic, and then return the answer to the Greeting topic.
+
+#### Set up the source topic for a returned variable
+
+When you're returning a variable to a topic, the source topic is the topic being redirected to, the one that provides the value that will be passed back to the original topic. In this example, it's Talk to Customer.
+
+1. Go to the source topic.
+
+1. [Add a Question node](../authoring-create-edit-topics.md#ask-a-question) and enter `What city do you live in?` for the message.
+
+1. Under **Identify**, select the pre-built entity **City**.
+
+1. Select the variable to open the **Variable properties** pane. Name it `userCity`, and then select **Return values to original topics**.
+
+    :::image type="content" source="media/authoring-variables/authoring-variables-returned-source.png" alt-text="Screenshot of the Talk to Customer topic with the userCity variable and its properties highlighted.":::
+
+1. Save the topic.
+
+#### Set up the destination topic for a returned variable
+
+When you're returning a variable to a topic, the destination topic is the topic doing the redirecting, the one that will receive values from other topics. In our example, it's Greeting.
+
+1. Go to the destination topic.
+
+1. The variable you selected in the source topic should appear in the Redirect node as an output variable.
+
+    :::image type="content" source="media/authoring-variables/authoring-variables-returned-destination.png" alt-text="Screenshot of the Greeting topic conversation flow with a returned variable in a Redirect node.":::
+
+1. Save the topic.
+
+### See also
 
 - [Reuse variables across topics](authoring-variables-bot.md)
 - [Customize the look and feel of the bot](customize-default-canvas.md)
