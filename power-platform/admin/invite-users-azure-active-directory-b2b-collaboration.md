@@ -3,11 +3,11 @@ title: "Invite users with Azure Active Directory B2B collaboration  | MicrosoftD
 description: Invite users with Azure Active Directory B2B collaboration
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/15/2022
+ms.date: 12/15/2022
 author: jimholtz
 ms.subservice: admin
-ms.author: jimholtz
-ms.reviewer: jimholtz
+ms.author: kvivek
+ms.reviewer: kvivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
