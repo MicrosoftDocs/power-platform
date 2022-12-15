@@ -151,7 +151,10 @@ When a tracked appointment or an exception appointment is deleted in Exchange, t
 
 - **Address synchronization:** See [Address synchronization for contacts](/dynamics365/outlook-addin/admin-guide/configure-synchronization-appointments-contacts-tasks#address-synchronization-for-contacts).
 
-- **Deleted contacts:** Contacts that are deleted in Dynamics 365 are deleted in Exchange only if the syncing user isn't the owner of the original contact.
+- **Deleted contacts:**    
+  - Contacts deleted in Dynamics 365 are deleted in Exchange only if the user isn't the owner of the contact.
+  - Contacts deleted in Exchange are deleted in Dynamics 365 only if the user is the owner of the contact.
+
 
 ## Syncing tasks
 
