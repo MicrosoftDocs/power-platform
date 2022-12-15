@@ -17,15 +17,16 @@ search.app:
   - Flow
 ---
 
-# Automatic deletion of inactive Microsoft Dataverse for Teams environments 
+# Automatic deletion of inactive environments 
 
-Power Platform provides a cleanup mechanism that automatically removes inactive [Dataverse for Teams environments](about-teams-environment.md) from your tenant. Dataverse for Teams environments that are considered inactive are first disabled. They're deleted after a period of time if no action is taken by the administrators.
+Power Platform provides a cleanup mechanism that automatically removes inactive [Dataverse for Teams environments](about-teams-environment.md) from your tenant. 
+Environments will be first disabled after being inactive for 90 days, the environment will then be deleted after 30 days of being disabled if no action is taken by the administrators. A disabled or deleted environment will not affect any any other Microsoft Teams assets (teams, channels, SharePoint sites, Teams-connected sites, etc.) and applies only to Dataverse integrations.The process is automatic. If you no longer need an inactive Dataverse for Teams environment, you don't need to do anything.
 
-The process is automatic. If you no longer need an inactive Dataverse for Teams environment, you don't need to do anything.
-
-Administrators can [set the Teams environment deletion policy](#set-dataverse-for-teams-environment-deletion-policy) to configure how long an environment can be inactive before it's automatically disabled. The permissible range of values are: 15 days, 30 days, 45 days, 60 days, and 90 days of inactivity. The policy also determines how long an environment can be disabled before it's automatically deleted. 
-
-Disabling a Dataverse for Teams environment prevents any meaningful use of the environment and its resources. Apps can't be launched, flows are suspended, chatbots can't be interacted with, and so on.
+Dataverse instance are considered as inactive if either of below activities are not perfomed for 90 days.
+1) No user logged into the instance
+2) No apps, bots, reports or flows have accessed the data contained in the instance
+3) No new apps, bots, reports, or flows were installed on or imported into the instance
+4) No other actions or activities registered in this instance through API or background processing jobs.
 
 For information on automatic cleanup of production and sandbox environments, see [Automatic environment cleanup](automatic-environment-cleanup.md).
 
@@ -114,31 +115,6 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 3. Select an environment to recover, and then select **Recover**.
 
 For more information, see [recover environment](recover-environment.md).
-
-## Set Dataverse for Teams environment deletion policy
-
-Feature will be turned on with default policy of 90 days. Administrators can change the length of time Power Platform waits to disable inactive and delete disabled Dataverse for Teams environments.The permissible range of values are: 15 days, 30 days, 45 days and 60 days of inactivity.
-
-> [!NOTE]
-> This view is not yet available. We will be rolling out this policy in a future release.
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-
-2. Select **Policies** > **Environment policies**.
-
-3. In **Disable the environment after**, select the number of days Power Platform should wait to disable a Dataverse for Teams environment that becomes inactive.
-
-4. In **Delete the disabled environment after**, select the number of days Power Platform should wait to delete a Dataverse for Teams environment that has been disabled.
-
-   > [!NOTE]
-   > Ninety days is the maximum number of days you can set for Power Platform to wait to disable a Dataverse for Teams environment due to inactivity. The permissible range of values are: 15 days, 30 days, 45 days, 60 days, and 90 days of inactivity.
-
-
-5. Select **Save**.
-
-   :::image type="content" source="media/inactive-environment-deletion-policy.png" alt-text="Screenshot of the Teams environment deletion policy settings in Power Platform admin center.":::
-
-
 
 ### See also
 [Microsoft Dataverse for Teams environments](about-teams-environment.md)<br />
