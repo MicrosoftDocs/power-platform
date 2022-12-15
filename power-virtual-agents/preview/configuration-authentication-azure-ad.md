@@ -59,7 +59,7 @@ If you have tenant administration rights, you can [configure API permissions](#c
 
     :::image type="content" source="media/configure-web-sso/configure-platform.png" alt-text="Screenshot showing add a platform." border="false":::
 
-1. Under **Redirect URIs**, enter `https://unitedstates.token.botframework.com/.auth/web/redirect`.
+1. Under **Redirect URIs**, enter `https://unitedstates.token.botframework.com/.auth/web/redirect` and `https://europe.token.botframework.com/.auth/web/redirect`.
 
 1. Under the **Implicit grant and hybrid flows** section, turn on both **ID tokens (used for implicit and hybrid flows)** and **Access tokens (used for implicit flows)**.
 
