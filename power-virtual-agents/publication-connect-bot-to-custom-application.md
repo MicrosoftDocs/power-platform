@@ -32,7 +32,7 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 ## Connect your bot to a web-based app
 
-1. In the Power Virtual Agents side pane, go to **Manage** > **Channels**.
+1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Channels**.
 
 1. Select the **Mobile app** tile to open the configuration window.
 
@@ -67,19 +67,19 @@ The instructions in this document reference the following:
 
 ### Retrieve your Power Virtual Agents bot parameters
 
-To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
+To connect to the bot you have built with Power Virtual Agents, you'll need to retrieve your bot's name and token endpoint to identify it.
 
 1. Copy your bot's name in Power Virtual Agents.
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
 
-1. On the side pane, go to **Manage** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Mobile app**.
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-mobile-app.png" alt-text="Mobile app channel." border="false":::
 
-1. Select **Copy** for the **Bot ID** and **Tenant ID** values. You will need these in the [Get Direct Line token](#get-direct-line-token) step.
+1. Next to **Token Endpoint**, select **Copy**. You'll need this in the [Get Direct Line token](#get-direct-line-token) step.
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-get-bot-parameters.png" alt-text="Get bot parameters." border="false":::
 

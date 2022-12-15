@@ -3,10 +3,9 @@ title: "Limitations | MicrosoftDocs"
 description: "Limitations of some components within the CoE Starter Kit, such as potential timeouts, Government Community Cloud availability, and more."
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 12/07/2022
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -29,7 +28,7 @@ There are some flows, which crawl the tenant in order to do their work. Specific
 
 To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations)
 
-Larger tenants might require a [Power Automate Per Flow](https://flow.microsoft.com/pricing/) license or may need to set up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) in order for these flows to complete in a timely manner.
+Larger tenants might require a [Power Automate Per Flow](https://powerautomate.microsoft.com/pricing/) license or may need to set up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) for these flows to complete in a timely manner.
 
 >[!NOTE]
 >The first run of the sync flows will perform a full inventory and will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not go over Power Platform request entitlements for most tenants.
@@ -47,9 +46,9 @@ Model Driven Apps, Business Process Flows, and Custom Connectors are not availab
 
 The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
 
-## Flows that are imported or owned by a service principal
+## Flows that have never been turned on
 
-The Admin | Sync Template v3 (Flows) flow will fail to collect inventory information for flows that were imported or are owned by a service principal.
+The Admin | Sync Template v3 (Flows) flow will fail to collect flows that have never been turned on. For example, if you import a solution with flows that are off, these will not be collected to inventory as they are not returned by the connector.
 
 ## Co-authoring and Connections
 
@@ -99,7 +98,7 @@ If your Power Platform admin role is managed via **[PIM](/azure/active-directory
 
 Monitoring Cloud flow runs is currently not included in the CoE Starter Kit. Monitoring Desktop flow runs is included, although limited.
 
-For more details on managing Desktop flows, check out the [Advanced Power Automate RPA Run Log Analytics with Power BI and Dataverse](https://flow.microsoft.com/blog/advanced-power-automate-rpa-run-log-analytics-with-power-bi-and-dataverse/) solution.
+For more details on managing Desktop flows, check out the [Advanced Power Automate RPA Run Log Analytics with Power BI and Dataverse](https://powerautomate.microsoft.com/blog/advanced-power-automate-rpa-run-log-analytics-with-power-bi-and-dataverse/) solution.
 
 ## Unpublished model-driven apps
 

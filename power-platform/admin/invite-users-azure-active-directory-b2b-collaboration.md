@@ -3,11 +3,11 @@ title: "Invite users with Azure Active Directory B2B collaboration  | MicrosoftD
 description: Invite users with Azure Active Directory B2B collaboration
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/15/2022
+ms.date: 12/15/2022
 author: jimholtz
 ms.subservice: admin
-ms.author: jimholtz
-ms.reviewer: jimholtz
+ms.author: kvivek
+ms.reviewer: kvivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -161,6 +161,7 @@ After the B2B guest users are given the required permissions to create and edit 
 ### Known limitations
 1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to an Azure Active Directory tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
 2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they’ll need a license with Dataverse use rights assigned to them in the resource tenant.
+3. B2B makers are currently not supported across sovereign cloud boundaries. For example, a B2B guest from a commercial tenant can't make apps in a GCC tenant. The same is applicable for GCC to GCC High, commercial to China cloud, and so on.
 
 ### See also  
 [Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)  

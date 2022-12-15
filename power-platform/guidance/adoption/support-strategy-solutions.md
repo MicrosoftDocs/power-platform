@@ -84,7 +84,7 @@ The help desk is operated as a shared service by the IT department.
 
 The help desk can:
 
-- Support technical issues that cannot be resolved without IT involvement—for example, Power Platform service issues that require an admin to [raise a support ticket](/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in the [Power Platform admin center](https://aka.ms/ppac).
+- Support technical issues that cannot be resolved without IT involvement—for example, Power Platform service issues that require an admin to [raise a support ticket](/power-platform/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in the [Power Platform admin center](https://aka.ms/ppac).
 - Answering user and governance-related questions, such as how to request access to applications or where to find applications.
 - Routing issues with critical apps to the correct support team.
 

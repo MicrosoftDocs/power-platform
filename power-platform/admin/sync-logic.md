@@ -73,6 +73,8 @@ The appointment organizer is a key field for appointment synchronization. It dri
 > An appointment created in Dynamics 365 will appear as created by SYSTEM if the following conditions are true:
 > - The user who tracked the appointment is not the organizer
 > - The [OrgDBOrgSetting](https://support.microsoft.com/en-us/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba) named DisableImplicitSharingOfCommunicationActivities is set to the default value of False.
+> 
+> If the organizer of the Outlook meeting is a Dynamics 365 user, the owner will be the organizer. If the organizer is not a Dynamics 365 user, the owner will be the user who tracked it.
 
 ### Syncing appointments from Dynamics 365 to Exchange
 
@@ -170,7 +172,7 @@ How tasks sync between Dynamics 365 and Exchange depends on the sync direction a
 
 - **Complete date:** The task actual end date syncs to Exchange as the task complete date.
 
-- **Deleted tasks:** Tasks that are deleted in Dynamics 365 are deleted in Exchange only if their status in Exchange isn't **Completed**. By default, faxes, letters, phone calls, and tasks that are deleted in Exchange are also deleted in Dynamics 365. This behavior can be changed by toggling the OrgDbOrgSetting *SSSTaskDeletionSyncBehaviorFromExchange*.
+- **Deleted tasks:** Tasks that are deleted in Dynamics 365 are deleted in Exchange only if their status in Exchange isn't **Completed**. 
 
 - **Task auto-completion:** Tasks that are marked as **Complete** in Dynamics 365 have a value in the **actualEnd** field. If a task's **actualEnd** field is populated and the date is in the past, the task syncs to Exchange as **Completed** automatically. If you use customizations to reactivate a task, be sure to clear the **actualEnd** date to avoid server-side sync auto-completing it.
 
@@ -182,7 +184,7 @@ How tasks sync between Dynamics 365 and Exchange depends on the sync direction a
 
 - **Task actual start:** When a task that's created in Exchange syncs to Dynamics 365, its **actualStart** field is set to the current timestamp.
 
-- **Deleted tasks:** Faxes, letters, phone calls, and tasks that are deleted in Exchange are deleted in Dynamics 365.
+- **Deleted tasks:** By default, faxes, letters, phone calls, and tasks that are deleted in Exchange are also deleted in Dynamics 365. This behavior can be changed by toggling the OrgDbOrgSetting *SSSTaskDeletionSyncBehaviorFromExchange*.
 
 - **Percent Complete:** Tasks that are set as 100% complete sync to Dynamics 365 as **Completed**.
 

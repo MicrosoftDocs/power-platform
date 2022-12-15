@@ -59,7 +59,7 @@ There are some specific features that further improve how the AI in Power Virtua
 
 Topic overlap detection helps improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
 
-[After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), go to **Analytics** on the side navigation pane, then go to the **Topic triggering (preview)** tab, where a list of overlapped topics will be displayed.
+[After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), you can view a list of overlapped topics. In the navigation menu, select **Analytics**, then select the **Topic triggering (preview)** tab. 
 
 :::image type="content" source="media/advanced-ai-features/overlapped-topics.png" alt-text="Screenshot showing the overlapping topics tile lists topics with their similarity score.":::
 
@@ -153,7 +153,7 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 ## Enable or disable AI capabilities
 
 1. Open a bot you want to enable or disable the features for.
-1. Expand the **Manage** tab, then select **AI capabilities**.
+1. Expand the **Settings** tab, then select **AI capabilities**.
 1. For each feature, select the checkbox to turn the feature on or off.
 1. Select **Save** at the top of the tab.
 

@@ -17,8 +17,7 @@ search.app:
   - Flow
 ---
 # Opt-out of automatic license-based user roles management 
-
-You can request to turn off Microsoft Power Platform from automatically adding and removing the user security roles based on the licenses the user has. 
+ 
 
 ## How to request my organization opt-outs?
 

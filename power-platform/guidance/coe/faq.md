@@ -3,10 +3,9 @@ title: "Frequently asked questions | MicrosoftDocs"
 description: "Frequently asked questions, tips, and how-to's about getting the CoE Starter Kit set up"
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 12/07/2022
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -82,15 +81,44 @@ This article will provide you with answers to frequently asked questions and tip
 
 1. After you've updated all run-only users, you can turn on the child flow.
 
+## Setting up CoE for a subset of environments
+
+You may want to monitor and govern only certain environments with the CoE Starter Kit. For example, if you're setting the CoE Starter Kit up for individual business organizations running their own smaller CoE or if you want to include your Dynamics 365 environments from the processes in the CoE Starter Kit. The option below describes how to only enable the CoE Starter Kit processes for certain environments.
+
+> [!IMPORTANT]
+> This is not a security feature and doesn't implement data privacy or row-level security. The feature is only intended to make monitoring and managing environments easier for organizational units.
+
+1. After import of the Core components and before you turn on flows, set the value of the **is All Environments Inventory** environment variable to **No**. Learn more: [Update environment variables](#update-environment-variables)).
+1. Continue with the [inventory setup](setup-core-components.md#turn-on-child-flows) and turn on all inventory flows.
+1. Wait for first inventory run of **Admin | Sync Template v3** to complete.
+1. Note that all environments in the tenant are added as excluded from inventory
+      ![All environments start as opted out](media/tips-Opt-In-Envt1.png "All environments start as opted out")
+
+1. Add environments you want to monitor and manage to the inventory by selecting **No** for the **Excuse from inventory** configuration.
+      ![Opt-in desired environments](media/tips-Opt-In-Envt2.png "Opt-in desired environments")
+
+1. Wait for next run of inventory to complete. It will now automatically pick up and monitor inventory for the selected environments.
+
 ## Running a full inventory
 
-The sync flows in the core component solution will only update resources that have changed since the last run. After an upgrade, you'll only see the benefits of bug fixes or changes when you run a full inventory sync by doing the following:
+To reduce API calls, the inventory flows do not update all objects with every sync flow, they only update objects which have been modified since the object was last inventoried.
 
-1. Set the value of the **Full inventory** environment variable to **Yes** (Learn more: [update environment variables](#update-environment-variables)).
-1. Turn all flows in the core solution off and back on.
-1. Run the Admin | Sync Template v3 flow.
-1. Set the **Full inventory** environment variable back to **No**.
-1. Turn all flows in the core solution off and back on.
+The inventory flows also don't check each object every day to see if its modified date is more recent than what is in inventory. Instead these flows:
+
+1. Get all the objects. For example, by calling [Get Apps as Admin](/connectors/powerappsforadmins/#get-apps-as-admin).
+1. Filter the returned list of objects down to objects where the modified date is greater than 7 days old (configurable via **InventoryFilter_DaysToLookBack**).
+1. Check each object in the filtered result to see if its current modified date is more recent than the inventoried one.
+1. Update these objects with the more recent modified by date.
+
+If your sync flows were turned off for longer than 7 days, you can only get the inventory updates you missed by modifying the **InventoryFilter_DaysToLookBack** environment variable. Learn more: [Update environment variables](#update-environment-variables)).
+
+If you want to fully update your entire inventory again, you can do that by changing the **Full inventory** environment variable:
+
+1. Set the value of the **Full inventory** environment variable to **Yes**. Learn more: [Update environment variables](#update-environment-variables)).
+1. Turn all flows in the Core components solution off and then on.
+1. Run the **Admin | Sync Template v3** flow.
+1. Set the **Full inventory** environment variable to **No**.
+1. Turn all flows in the Core components solution off and then on.
 
 ## Update environment variables
 
@@ -114,13 +142,13 @@ To update environment variables, you can use the [Admin - Command Center](core-c
 If you aren't using the [Admin - Command Center](core-components.md#admin---command-center) app, do the following to update environment variables:
 
 1. If you've installed the solution in a production environment, do the following:
-   1. Go to [Power Automate](https://flow.microsoft.com).
+   1. Go to [Power Automate](https://make.powerautomate.com).
    1. On the left pane, select **Solutions**.
    1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
    1. Select a variable that you want to update, and then configure its **Current Value**.
 
 1. If you've installed the solution in a Dataverse for Teams environment, do the following:
-   1. Go to [Power Automate](https://flow.microsoft.com).
+   1. Go to [Power Automate](https://make.powerautomate.com).
    1. On the left pane, select **Solutions**.
    1. Select **Common Data Services Default Solution**.
    1. Select **+ Add > Environment Variables**.
@@ -203,6 +231,7 @@ If you aren't using the [Admin - Command Center](core-components.md#admin---comm
 The Dataverse connector might experience some throttling limits if the tenant has many resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
 
 **Configure the retry policy**
+
   1. Open **Admin \| Sync Template v3**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Expand the step **Apply to each Environment**
@@ -211,6 +240,7 @@ The Dataverse connector might experience some throttling limits if the tenant ha
      ![Configure the retry policy.](media/coe72.PNG "Configure the retry policy")
 
 **Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
+
   1. Open **Admin \| Sync Template v3**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Go to **Settings** for the **Apply to each Environment** step.

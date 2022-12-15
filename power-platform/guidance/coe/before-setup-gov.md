@@ -30,7 +30,7 @@ Many flows in the solution use the built-in approval actions of Power Automate, 
 
 If you're installing the solution in a new environment or one in which approvals haven't been used in the past, the approval tables must be initialized before you can install the solution. The easiest way to do this is to create a "dummy" approval flow.
 
-1. Go to [flow.microsoft.com](https://flow.microsoft.com) and select your CoE environment.
+1. Go to [Power Automate](https://make.powerautomate.com) and select your CoE environment.
 
 1. Select **+ Create**. 
  
@@ -71,15 +71,5 @@ If you're installing the solution in a new environment or one in which approvals
     1. If you're [installing to a Dataverse for Teams environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment), use the solution file CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip from the download.
 
 1. Leave all environment variables blank on import.
-
-## Turn on child flows
-
-There are several child flows which will need to be turned on in this order:
-
-1. HELPER – CloudFlowOperations Gov
-1. HELPER – CanvasAppOperations Gov
-1. HELPER – ObjectOperations Gov
-
-If you get an error turning on the flow, you might need to set the [run-only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

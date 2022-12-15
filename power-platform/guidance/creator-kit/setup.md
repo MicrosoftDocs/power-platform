@@ -21,7 +21,10 @@ contributors:
 ---
 # Install the Creator Kit
 
-There are two options to install the Creator Kit. You can download and manually install the managed solutions (option 1), or you can install the solution from the AppSource (option 2).
+There are two ways to install the Creator Kit: 
+
+1. Download and manually install the managed solutions
+2. Install the solution directly into your Environment from AppSource
 
 ## Prerequisites
 
@@ -30,31 +33,40 @@ There are two options to install the Creator Kit. You can download and manually 
 - The System Customizer security role is needed to use the Creator Kit components.
 - A Power Apps for Microsoft 365 license.
 
-## Option 1: Download and manually install the managed solutions
+## Option 1: Manually install the solutions
 
-To download and manually install the managed solutions for the Creator Kit, follow these steps.
+To download and manually install the managed solutions for the Creator Kit, follow the steps below.
 
-### Step 1 - Install the Creator Kit solution
+### Step 1: Install the Creator Kit solution
 
-1. [Download the `CreatorKitCore` solution](https://aka.ms/creatorkitdownload).
+1. [Download the CreatorKitCore solution](https://aka.ms/creatorkitdownload).
+
 2. Ensure the [Power Apps code components for Canvas apps feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) is enabled in the [Environment settings](/power-platform/admin/edit-properties-environment).
+
 3. In [Power Apps](https://make.powerapps.com), select your Microsoft Power Platform environment.
-4. Import the solution. More information: [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions)
+
+4. Import the solution (learn how to [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions)).
 
 
-### Step 2 - Install the Reference solutions (optional)
-The reference solutions can optionally be installed after the `CreatorKitCore` solution is installed.
+### Step 2: Install the reference solutions (optional)
+The reference solutions can optionally be installed after the `CreatorKitCore` solution is installed (just like any app made with Creator Kit components). 
 
-Solution-specific prerequisites:
+Each solution has specific requirements:
 
 | Solution | Notes |
 |-|-|
 | [`CreatorKitReference(MDA)`](https://aka.ms/creatorkitreferencemda) | <li>Reference App is a Model Driven app that requires a premium license to play</li><li>Reference App uses the Dataverse connector; Environment's DLP Policies must allow the connector.</li> |
-| [`CreatorKitReference(Canvas)`](https://aka.ms/creatorkitreferencecanvas) | <li>Before installation, enable the Environment setting 'Power Apps code components for canvas apps'</li> |
+| [`CreatorKitReference(Canvas)`](https://aka.ms/creatorkitreferencecanvas) | <li>Before installation, [enable the Environment setting 'Power Apps code components for canvas apps'](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature)</li> |
+
+- [Download the CreatorKitMDA solution](https://aka.ms/creatorkitreferencemda)
+- [Download the CreatorKitCanvas solution](https://aka.ms/creatorkitreferencecanvas)
+
+### Upgrading
+Import the updated solution to install the latest version manually. Get the latest version at https://aka.ms/CreatorKitLatestRelease.
 
 ## Option 2: Install from AppSource
 
-This will install the following managed solutions:
+The AppSource package will install the latest version of the following managed solutions from Creator Kit into your selected Environment:
 - CreatorKitCore
 - CreatorKitReference(Canvas)
 - CreatorKitReference(MDA)
@@ -63,11 +75,27 @@ The following configurations will be modified in the environment:
 - *Enable code components for Canvas* is set to **true**
 
 > [!IMPORTANT]
-> Using this AppSource install option will modify the selected environment's settings. Ensure this automated modification is acceptable for your organization before continuing with this install option.
+> Using this AppSource install option will **modify the selected Environment's settings**. Ensure this modification is acceptable with your organization's security standards before continuing with this install option.
+
+### Method 1: Power Platform CLI
+Install the AppSource package using the [Power Platform cli](/power-platform/developer/cli/introduction) ([How to find your Environment Id and Url](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)).
+
+1. Create or select an auth profile (see [pac auth](/power-platform/developer/cli/reference/auth) for instructions)
+
+1. Use [`pac application install`](/power-platform/developer/cli/reference/application) to install the `CreatorKitCore` option:
+
+   `pac application install --environment-id 00000000-0000-0000-0000-000000000000 --application-name CreatorKitCore`
+
+   or
+
+   `pac application install --environment https://orgname.crm.dynamics.com/ --application-name CreatorKitCore`
+   
+### Method 2: AppSource install wizard
+The offering page on the AppSource website allows you to install the Creator Kit into your Environment through a wizard experience.
 
 1. Go to the [Creator Kit page on AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview) page. 
 
-   Make sure you're signed in to the account that has System Administrator permissions to the Environment you want to install the Creator Kit in.
+   Sign in to an account that has System Administrator permissions in the target Environment.
 
 1. Select the button **Get it now**. 
 

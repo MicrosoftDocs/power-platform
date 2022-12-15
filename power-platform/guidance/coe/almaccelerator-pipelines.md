@@ -1,6 +1,6 @@
 ---
-title: "Using and Configuring the ALM accelerator pipelines for Microsoft Power Platform | MicrosoftDocs"
-description: "Customizing the ALM Accelerator for Power Platform can be achieved in several ways without affecting the upgrade path of the solution and pipelines. This document describes how to customize Accelerator pipelines for Microsoft Power Platform."
+title: "Using and Configuring the ALM Accelerator Azure DevOps pipelines for Microsoft Power Platform | MicrosoftDocs"
+description: "Customizing the ALM Accelerator for Power Platform can be achieved in several ways without affecting the upgrade path of the solution and Azure DevOps pipelines. This document describes how to customize ALM Accelerator Azure DevOps pipelines for Microsoft Power Platform."
 author: mikefactorial
 manager: devkeydet
 
@@ -18,24 +18,24 @@ search.app:
   - Powerplatform
 ---
 
-# ALM accelerator for Microsoft Power Platform pipelines (preview)
+# Configuring the ALM Accelerator Azure DevOps pipelines
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
 
 The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
 The ALM accelerator doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
-## ALM Accelerator for Power Platform Pipelines
+## ALM Accelerator Azure DevOps pipelines
 
 While the ALM Accelerator pipelines and app have default configurations that allow you to get started quickly with ALM for the Power Platform. The ALM Accelerator Pipelines have been developed in a way that makes it possible for many different ALM scenarios to be covered based on your organizations’ requirements. The following is a description of some common scenarios and how they can be covered through configuration of the pipelines and the related deployment profiles and steps in the ALM Accelerator App or via the pipeline directly.
 
-### Installing the pipelines in one project and source code in another project
+### Installing the Azure DevOps pipelines in one project and source code in another project
 
 From the ALM Accelerator App and in the Deployment Profiles there's now an option to specify a pipeline project in addition to source project. An option has also been added to the coe-cli to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
 
-### Run the ALM Accelerator pipelines without installing the ALM Accelerator Canvas App and solution
+### Run the ALM Accelerator Azure DevOps pipelines without installing the ALM Accelerator canvas app and solution
 
 The ALM Accelerator Canvas App provides an easy button layer for running the ALM Accelerator pipelines. However, the Pipelines themselves, are the engine of the ALM Accelerator and can be run independent of the App. If you want to use the pipelines independently, you can run the pipelines directly from the command line or build your own app to invoke the pipelines via the [Azure DevOps API](/rest/api/azure/devops). Additionally, the ALM Accelerator solution includes a custom connector for the Azure DevOps API that can be used to invoke the pipelines via Flow or other Power Platform technologies. The key to using the pipelines independently is understanding the parameters that are passed to the various pipelines.
 
@@ -80,7 +80,7 @@ The ALM Accelerator Canvas App provides an easy button layer for running the ALM
 
 ### Customize versioning of solutions when exporting / deploying the solution using the ALM Accelerator pipelines
 
-The ALM Accelerator pipelines allow you to customize the versioning of the solution when exporting / deploying the solution. The following is a description of the methods available that can be used to customize the versioning of the solution when exporting / deploying the solution. The default versioning method is to use the name specified in the [deployment pipeline YAML file](https://github.com/microsoft/coe-alm-accelerator-templates/blob/f783a0e967233cd690b5428e1864e957ddff7860/Pipelines/build-deploy-validation-SampleSolution.yml#L20)
+The ALM Accelerator pipelines allow you to customize the versioning of the solution when exporting / deploying the solution. The following is a description of the methods available that can be used to customize the versioning of the solution when exporting / deploying the solution. The default versioning method is to use the name specified in the [deployment pipeline YAML file](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-validation-SampleSolution.yml)
 
 **Use Exported versioning**
 There are scenarios where you may want to use the version number exported by the pipelines as the version number in all of the deployed environments. To achieve this you can create a variable in your export pipeline or a global variable in the variable library for the ALM Accelerator with the name UseSolutionVersionFromDataverse and a value of true. This will ensure that the version number exported in your solution is preserved in downstream environments and will also be reflected in your source control when the solution source is committed.

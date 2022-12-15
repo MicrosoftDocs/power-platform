@@ -3,7 +3,6 @@ title: "Set up inactivity notifications components | MicrosoftDocs"
 description: "Learn how to set up the inactivity notifications components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2022
@@ -23,22 +22,6 @@ search.app:
 This article will help you to set up the inactivity notifications for unused canvas apps and cloud flows, and for how to clean up unused connection references.
 
 [Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
-
-## Set up connection cleanup (broken connections)
-
-Process to delete connections that have are, and have been broken for some time (30 days by default)
-
-> [!IMPORTANT]
-> You may see an error like this when running for large environments:  <br>
-> The action 'Get_Connections_as_Admin' has an aggregated page results size more than '209797598' bytes. This exceeded the maximum size '209715200' bytes allowed' <br><br>
-> If this occurs you will need to clean up the connections via Power Shell first in order to use the connector in Power Automate. <br>
-> This article will get you started on [Power Shell for Power Platform](/power-platform/admin/powershell-getting-started) <br>
-> And this this call will delete all the errored connections in your default environment <br> 
->(Get-AdminPowerAppConnection -EnvironmentName "Default-yourGUIDhere") | Where { $_.statuses -like "*Error*"} | Remove-AdminPowerAppConnection
-
-### Turn on flow
-
-- [Admin | Broken Connection Cleanup](governance-components.md#admin--broken-connection-cleanup)
 
 ## Set up inactivity notifications (unused apps and flows)
 
@@ -135,14 +118,13 @@ Environment variables are used to store application and flow configuration data 
 
 | Name | Description | Default value |
 |------|---------------|------|
-|Delete Broken Connections Age (Days)| Delete Broken Connections this many days since they were last modified |30|
 | Individual Admin | This is separate from the Admin Email environment variable because you can't use a distribution list for approvals. This environment variable holds the individual or shared account who will be charged with approving the removal of unused orphaned objects. | None |
 | Auto Delete on Archive | Determines whether apps andd flows are deleted when they're approved for deletion in the following flow: Admin \|Inactivity notifications v2 (Check Approval) and Admin \|Inactivity notifications v2 (Clean Up and Delete). The value must be Yes or No.  | Yes |
 | Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Teams environment](faq.md#add-apps-to-microsoft-teams) | None |
 | Flow Approvals URL | (Optional) A link to the Power Automate approval page for your CoE environment. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. To get the URL, go to make.powerautomate.com for your CoE environment > **Action Items** > **Approvals**. The URL will end in **approvals/received**.|  None |
 | ProductionEnvironment | Set to **No** if you've installed the solution for development or test purposes. This will send approvals to the admin email instead of the maker. | Yes |
-| Archival-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 (months) |
-| Archival-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month. |
+| InactivityNotifications-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 (months) |
+| InactivityNotifications-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month. |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 

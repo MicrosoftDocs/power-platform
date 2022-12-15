@@ -14,6 +14,10 @@ ms.collection: virtual-agent
 
 # Test your Power Virtual Agents bot
 
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
+Select the version of Power Virtual Agents you're using here:
+
 > [!div class="op_single_selector"]
 >
 > - [Power Virtual Agents web app](authoring-test-bot.md)
@@ -31,7 +35,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
 
-   :::image type="content" source="media/authoring-test-bot/test-bot-menu.png" alt-text="The Test your bot button is at the bottom of the side pane." border="false":::
+   :::image type="content" source="media/authoring-test-bot/test-bot-menu.png" alt-text="The Test your bot button is at the bottom of the navigation menu." border="false":::
 
 1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
 

@@ -89,9 +89,8 @@ Environment admins are not able to disable tenant-level analytics.
 The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is pending availability in Government & Sovereign Clouds.
 
 ### See also
-[Admin Analytics for Power Apps](analytics-powerapps.md) <br />
-[Preview: Tenant-level analytics](tenant-level-analytics.md) 
-
+[Tenant-level analytics for Power Apps](powerapps-analytics-reports.md) <br />
+[Tenant-level analytics for Power Automate](power-automate-analytics-reports.md) <br />
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
