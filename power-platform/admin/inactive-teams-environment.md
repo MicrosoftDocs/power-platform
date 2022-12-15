@@ -19,14 +19,11 @@ search.app:
 
 # Automatic deletion of inactive environments 
 
-Power Platform provides a cleanup mechanism that automatically removes inactive [Dataverse for Teams environments](about-teams-environment.md) from your tenant. 
-Environments will be first disabled after being inactive for 90 days, the environment will then be deleted after 30 days of being disabled if no action is taken by the administrators. A disabled or deleted environment will not affect any any other Microsoft Teams assets (teams, channels, SharePoint sites, Teams-connected sites, etc.) and applies only to Dataverse integrations.The process is automatic. If you no longer need an inactive Dataverse for Teams environment, you don't need to do anything.
+Power Platform provides a cleanup mechanism that automatically removes inactive [Dataverse for Teams environments](about-teams-environment.md) from your tenant that are left inactive. Environments will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments.
 
-Dataverse instance are considered as inactive if either of below activities are not perfomed for 90 days.
-1) No user logged into the instance
-2) No apps, bots, reports or flows have accessed the data contained in the instance
-3) No new apps, bots, reports, or flows were installed on or imported into the instance
-4) No other actions or activities registered in this instance through API or background processing jobs.
+A disabled or deleted environment will not affect any any other Microsoft Teams assets (teams, channels, SharePoint sites, Teams-connected sites, and so on) and applies only to Dataverse integrations. This cleanup process is automatic. If you no longer need an inactive Dataverse for Teams environment, you don't need to do anything.
+
+Disabling a Dataverse for Teams environment prevents any meaningful use of the environment and its resources. Apps can't be launched, flows are suspended, chatbots can't be interacted with, and so on.
 
 For information on automatic cleanup of production and sandbox environments, see [Automatic environment cleanup](automatic-environment-cleanup.md).
 
