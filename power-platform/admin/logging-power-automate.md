@@ -3,7 +3,7 @@ title: View Power Automate audit logs. | Microsoft Docs
 description: View Power Automate logs in the Microsoft Purview compliance portal.
 author: msftman
 ms.topic: conceptual
-ms.date: 03/23/2021
+ms.date: 12/15/2022
 ms.subservice: admin
 ms.author: deonhe
 ms.reviewer: deonhe
