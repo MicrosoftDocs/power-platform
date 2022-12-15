@@ -75,6 +75,11 @@ For Production environment turn on these flows that are installed as part of the
 - Admin | Compliance request complete custom connector v3
 - Admin | Compliance request complete flows v3
 - Admin | Compliance Teams Environment BPF kickoff v3
+- Admin | Compliance Details Request eMail (Apps)
+- Admin | Compliance Details Request eMail (Chatbots)
+- Admin | Compliance Details Request eMail (Custom Connectors)
+- Admin | Compliance Details Request eMail (Desktop Flows)
+- Admin | Compliance Details Request eMail (Flows)
 - [**Admin | Compliance detail request v3**](governance-components.md#admin--compliance-detail-request-v3)
 
 For solution installed in a Dataverse for Teams environment, turn on the Admin | Compliance detail request [Teams] v3 flow only that is installed with the Core for Teams components solution.
@@ -107,12 +112,9 @@ Environment variables are used to store application and flow configuration data 
 | Compliance – Apps – Number Days Since Published | If an app is broadly shared and was last published this many days ago or older, makers are asked to republish the app to stay compliant | 60 |
 | Compliance – Apps – Number Groups Shared | If the app is shared with this many or more groups, makers are asked for a business justification | 1 |
 | Compliance – Apps – Number Launches Last 30 Days | If the app was launched at least this many times in the last 30 days, makers are asked for a business justification | 30 |
-| Compliance – Apps – Number Users Shared | If the app is shared with this many or more users, makers are asked for a business justification | 20 |
+| Compliance – Apps - Number Users Shared | If the app is shared with this many or more users, makers are asked for a business justification | 20 |
 | Compliance – Chatbots – Number Launches | If the chatbot is launched this many or more times, makers are asked for a business justification | 50 |
 | Exclude Default environment from Compliance Request flows | **(DEPRECATED)** Use [exempt environments from the compliance process](#exempt-environments-from-the-compliance-process) instead. Set to Yes if you want to Exclude the Default environment from the Admin \| Compliance Details request flows | No |
-| Archival-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 |
-| Archival-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month |
-
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
