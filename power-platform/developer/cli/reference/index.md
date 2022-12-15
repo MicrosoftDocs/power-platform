@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 11/18/2022
+ms.date: 12/14/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -34,10 +34,12 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac package](package.md)|Commands for working with Dataverse package projects|
 |[pac paportal](paportal.md)|Commands for working with Power Pages website|
 |[pac pcf](pcf.md)|Commands for working with Power Apps component framework projects|
+|[pac pipeline](pipeline.md)|Work with Pipelines|
 |[pac plugin](plugin.md)|Commands for working with Dataverse plug-in class library|
 |[pac solution](solution.md)|Commands for working with Dataverse solution projects|
 |[pac telemetry](telemetry.md)|Manage telemetry settings|
 |[pac tool](tool.md)|Power Platform tools that can be installed and launched|
+|[pac virtual-agent](virtual-agent.md)|Commands for working with Power Virtual Agent bots|
 
 
 [!INCLUDE [index-remarks](includes/index-remarks.md)]

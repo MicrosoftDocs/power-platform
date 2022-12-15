@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 11/18/2022
+ms.date: 12/14/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,7 +26,8 @@ Work with your Power Platform Admin Account
 
 |Command|Description|
 |---------|---------|
-|[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target environment.|
+|[pac admin assign-group](#pac-admin-assign-group)|Assign group to target Dataverse environment with specified security role.|
+|[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target Dataverse environment with specified security role.|
 |[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
 |[pac admin copy](#pac-admin-copy)|Copy Source Environment to Destination Environment|
 |[pac admin create](#pac-admin-create)|Creates a Dataverse database in your tenant.|
@@ -39,9 +40,65 @@ Work with your Power Platform Admin Account
 |[pac admin status](#pac-admin-status)|This command will list the status of all the operations in progress.|
 
 
+## pac admin assign-group
+
+Assign group to target Dataverse environment with specified security role.
+
+[!INCLUDE [admin-assign-group-intro](includes/admin-assign-group-intro.md)]
+
+
+### Required Parameters
+
+#### `--environment` `-env`
+
+ID or URL of the environment to assign a user to.
+
+#### `--group` `-g`
+
+AAD object id of group to assign to target Dataverse environment.
+
+#### `--group-name` `-gn`
+
+Name of group/team that will created in Dataverse.
+
+#### `--membership-type` `-mt`
+
+Team membership type.
+
+Use one of these values:
+
+- `MembersAndGuests`
+- `Members`
+- `Owners`
+- `Guests`
+
+#### `--role` `-r`
+
+Name or ID of security role to be applied to user
+
+#### `--team-type` `-tt`
+
+Type of team.
+
+Use one of these values:
+
+- `Owner`
+- `Access`
+- `AadSecurityGroup`
+- `AadOfficeGroup`
+
+
+### Optional Parameters
+
+#### `--business-unit` `-bu`
+
+ID of business unit to associate application user with.
+
+[!INCLUDE [admin-assign-group-remarks](includes/admin-assign-group-remarks.md)]
+
 ## pac admin assign-user
 
-Assign a user to a target environment.
+Assign a user to a target Dataverse environment with specified security role.
 
 [!INCLUDE [admin-assign-user-intro](includes/admin-assign-user-intro.md)]
 
