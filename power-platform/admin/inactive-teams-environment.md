@@ -4,7 +4,7 @@ description: Admins can configure an automatic cleanup process that removes inac
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2022
+ms.date: 12/16/2022
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: jimholtz
@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 
-# Automatic deletion of Microsoft Dataverse for Teams inactive environments 
+# Automatic deletion of inactive Microsoft Dataverse for Teams environments
 
 Power Platform provides a cleanup mechanism that automatically removes [Dataverse for Teams environments](about-teams-environment.md) from your tenant that are left inactive. An environments will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments.
 
