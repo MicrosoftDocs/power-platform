@@ -15,7 +15,7 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
 ---
 
 # DateAdd, DateDiff, and TimeZoneOffset functions in Power Apps

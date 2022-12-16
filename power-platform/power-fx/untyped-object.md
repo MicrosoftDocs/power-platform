@@ -15,7 +15,7 @@ search.app:
   - PowerApps
 contributors:
   - jorisdg
-  - tapanm-msft
+  - mduelae
 ---
 # Untyped object data type (experimental)
 

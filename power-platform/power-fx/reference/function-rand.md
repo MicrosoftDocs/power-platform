@@ -14,7 +14,7 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
 ---
 
 # Rand and RandBetween functions in Power Apps

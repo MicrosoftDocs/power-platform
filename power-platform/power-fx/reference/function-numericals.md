@@ -15,7 +15,7 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
 ---
 
 # Abs, Exp, Ln, Power, Log, and Sqrt functions in Power Apps

@@ -16,7 +16,7 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
 ---
 
 # Blank, Coalesce, IsBlank, and IsEmpty functions in Power Apps

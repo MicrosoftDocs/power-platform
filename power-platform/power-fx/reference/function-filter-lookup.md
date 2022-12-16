@@ -14,7 +14,7 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
 ---
 
 # Filter, Search, and LookUp functions in Power Apps

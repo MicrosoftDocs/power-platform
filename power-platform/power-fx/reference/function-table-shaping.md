@@ -15,7 +15,7 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
 ---
 
 # AddColumns, DropColumns, RenameColumns, and ShowColumns functions in Power Apps

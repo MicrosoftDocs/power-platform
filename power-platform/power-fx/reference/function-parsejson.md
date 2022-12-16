@@ -15,7 +15,7 @@ search.app:
   - PowerApps
 contributors:
   - jorisdg
-  - tapanm-msft
+  - mduelae
 ---
 # ParseJSON function in Power Apps (experimental)
 Interprets a JSON string and returns an [untyped object](../untyped-object.md).

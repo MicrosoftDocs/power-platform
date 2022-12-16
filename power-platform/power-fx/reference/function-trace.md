@@ -1,7 +1,7 @@
 ---
 title: Trace function in Power Apps Test Studio
 description: Reference information including syntax and examples for the Trace function in Power Apps Test Studio.
-author: tapanm-msft
+author: mduelae
 
 ms.topic: reference
 ms.custom: canvas
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
 ---
 
 # Trace function in Power Apps Test Studio
