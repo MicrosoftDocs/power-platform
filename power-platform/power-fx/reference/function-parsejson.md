@@ -5,7 +5,7 @@ author: jorisdg
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: jorisde
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
 contributors:
   - jorisdg
-  - tapanm-msft
+  - mduelae
 ---
 # ParseJSON function in Power Apps (experimental)
 Interprets a JSON string and returns an [untyped object](../untyped-object.md).
