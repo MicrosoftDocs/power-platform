@@ -256,7 +256,7 @@ Once permanently deleted, the name of the deleted user no longer shows in the au
 
 #### Created by and Modified by name
 
-Once permanently deleted, the name of the deleted user no longer shows in the **Created by** and the **Modified by** fields for records that the deleted user created and for records that the deleted user last modified. These fields will show **No Name** and if you clicked on it, you will see an message that the 'Record is unavailable'. The deleted user's systemuserid is still in these records.
+Once permanently deleted, the name of the deleted user no longer shows in the **Created by** and the **Modified by** fields for records that the deleted user created and for records that the deleted user last modified. These fields will show **No Name** and if you clicked on it, you will see a message that the 'Record is unavailable'. The deleted user's systemuserid is still in these records.
 
 ### See also
 
