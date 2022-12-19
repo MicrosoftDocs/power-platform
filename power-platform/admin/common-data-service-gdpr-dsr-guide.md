@@ -98,13 +98,13 @@ To find a user and his or her personal data, go to the [Power Platform admin cen
 
 1. Select **Environments**, and then select an environment from the list.
 
-2. Select **Open environment**.
+2. Go to **Settings** > **Users + permissions** > **Users**.
 
-3. Go to **Settings** > **Security** > **Users**.
+3. Enter the name of the user in the **Search** box, and press **Enter**.
 
-4. Enter the name of the user in the **Search** box, and then select **Search**.
+4. To view the user's personal data, click or double-tap the user's name.
 
-5. To view the user's personal data, double-click or double-tap the user's name.
+5. To make changes to the Contact Information, expand on the ellipse and click **Manage user in Dynamics 365**
 
     ![Power Apps User Form.](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
 
@@ -155,7 +155,7 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 ### Delete
 
 #### User
-To avoid interruption to business applications that may be critical to your organization's operations, a user's records are not automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application.
+To avoid interruption to business applications that may be critical to your organization's operations, a user's records are not automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application or delete the user from each Dataverse environment. You can remove the user's personal data or [permanently delete the user](https://learn.microsoft.com/power-platform/admin/delete-users#permanently-delete-users-in-power-platform).
 
 #### Remove a user's personal data from the user's Summary page
 When a user record is deleted from the Azure Active Directory, the following message is displayed on the user's Summary page:
@@ -195,6 +195,9 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 10. Select the Excel template file in the **Upload data file** dialog box and make all the necessary changes in the **Map Fields** window.
 
 12. Select **Next**, and then select **Submit**.
+
+#### Permanently delete user
+You can either remove user's personal data or permanently delete the user record from the Datavese user table. Please see [Permanently delete users in Power Platform](https://learn.microsoft.com/power-platform/admin/delete-users#permanently-delete-users-in-power-platform). When the user record is permanently deleted, the user's name in all records where the deleted user was the creator or last modified by, and the audit logs will show as **No Name**.
 
 #### Remove audit history from the Audit Summary View page
 
