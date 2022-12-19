@@ -42,7 +42,7 @@ This can be useful if you use different environments for different purposes, or 
 
 ## Create a solution to manage export and import
 
-You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots, and you can import multiple bots in one solution.
+You use solutions to export bots from one environment and import them into another. The solution acts as a _carrier_ for the bots, and you can import multiple bots in one solution.
 
 1. Sign in to the Power Virtual Agents bot you want to export.
 
@@ -148,7 +148,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
         - [Microsoft Teams documentation](publication-add-bot-to-microsoft-teams.md)
         - [Facebook documentation](publication-add-bot-to-facebook.md)
 
-1. Use the filter menu to select **Chatbot**. Then select the bot's name to open the bot in the Power Virtual Agents portal.
+1. In the **Objects** pane select **Chatbot**. Then select the bot's name to open the bot in the Power Virtual Agents portal.
 
     :::image type="content" source="media/authoring-export-import-bots/select-bot.png" alt-text="List of bots and environments in Power Virtual Agents.":::
 
