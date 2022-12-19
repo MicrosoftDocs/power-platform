@@ -125,7 +125,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 1. If your bot has [user authentication](configuration-end-user-authentication.md) enabled, you'll need to re-configure user authentication in the bot after import.
 
-1. Use the filter menu to select **Chatbot**. Then select the bot's name to open the bot in the Power Virtual Agents portal.
+1. In the **Objects** pane select **Chatbot**. Then select the bot's name to open the bot in the Power Virtual Agents portal.
 
     :::image type="content" source="media/authoring-export-import-bots/select-bot.png" alt-text="List of bots and environments in Power Virtual Agents.":::
 
