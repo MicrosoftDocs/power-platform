@@ -75,6 +75,65 @@ The following topics have information that could be helpful to understand the mo
 - [About Microsoft Cloud Japan](about-microsoft-cloud-japan.md)  
 - [About Microsoft Cloud India](about-microsoft-cloud-india.md)  
 
+### Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps Portals, and Marketing before and after the migration: 
+
+#### For Power Apps and Power Automate: 
+
+-	Any Power Apps and Power Automate flows must be manually exported. 
+-	We do not support the migration of Customer Connectors, Connections, or Gateways. If you have any of these components set up, they must be manually reconfigured after the migration. 
+
+##### For apps which are solution aware
+
+Before the migration: 
+1. For apps which are solution aware, you can go to https://make.powerapps.com/, navigate to the Solutions page, and export all apps/solutions (either individually or group them together in a single solution if they're not already)
+
+After the migration: 
+1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
+2. Select **Import** and use the file selector to pick the packages exported from the above steps.
+3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
+
+##### For apps which are not solution aware
+
+Before the migration: 
+1. Go to https://make.powerapps.com, and then select **Apps**.
+2. For each app that you want to move, select **More Commands** (…), and then select **Export package (preview)**. 
+3. Fill in the details required to perform the export of the app, and then select **Export**. Once the export completes, a download should begin. The resulting file contains the app package that was selected. 
+4. Repeat these steps until all apps have been exported. 
+
+After the migration: 
+1. Go to https://make.powerapps.com.
+2. Select the new environment from the environment picker in the upper-right.
+3. Select **Apps**.
+4. Select **Import canvas app**.
+5. Upload the app package file.
+6. Complete all of the import option selections, and then select **Import**.
+7. Repeat these steps until all apps have been imported. 
+
+#### For Power Virtual Agents: 
+
+-	Any Power Virtual Agents chatbots must be manually exported. 
+-	Some chatbots' dependent components must be manually reconfigured during or after the migration - for example, connections, environment variables, custom connectors. 
+
+Before the migration: 
+1. Chatbots are solution aware. You can go to https://make.powerapps.com/, navigate to the Solutions page, and export all chatbots'solutions - either individually or group them together in a single solution. For more information, see [Export and import bots using solutions](/power-virtual-agents/authoring-export-import-bots).
+
+After the migration: 
+1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
+2. Select **Import** and use the file selector to pick the packages exported from the above steps.
+3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
+
+#### For Power Apps Portals (must be done for each portal in the environment(s)): 
+              
+Before the migration: 
+1. Sign in to the environment.
+2. Open the [Power Apps Portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
+3. [Reset](/powerapps/maker/portals/admin/reset-portal) the portal.
+
+After the migration: 
+1. Sign in to the environment.
+2. Open the [Power Apps Portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
+3. Provision the portal with the same portal type and language.
+
 ## How the move works  
 You'll be provided with a list of prerequisites and post-requisites for your migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move. 
 
