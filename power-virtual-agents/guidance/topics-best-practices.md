@@ -12,42 +12,48 @@ ms.collection: virtual-agent
 ---
 
 #  What are topics in Power Virtual Agents?
-In Power Virtual Agents, topics can be seen as competencies your chatbot can use and run. There are two ways to trigger a topic: the first is based on the user inputs, also known as utterences, that the chatbot can recognized based on its Natural Language Understanding capabilities and based on the trigger phrases that have been configured for the topic. The second way to trigger a topic is simply by redirecting directly to it, for example from an existing topic based on a condition.  
+In Power Virtual Agents, topics can be seen as a set of competencies a chatbot can use and run. 
 
-When setting up a new chatbot, some topics get automatically created to quickly get you started (e.g. Greetings). There are other a few system topics that are used to manage specific events:
-- Fallback: this is a specific topic for when the user input isn’t recognized and can’t be associated with confidence with any topic.
-- Did you mean: when multiple topics could potentially address the user input, the user is presented with the topics that score with sufficient confidence.
-- End of conversation: at the end of each conversation, you should redirect your topic to the ‘End of conversation’ topic so that the user can either confirm success or failure, and fill out a CSAT survey.
-- Escalate: this is to hand off the conversation to a live agent (when configured).
-- Conversation start: this is the topic that starts the conversation in the unified authoring experience, so your users can be greeted with a message even before they’ve started with any input.
+There are two main ways to trigger a topic: 
+- The first is based on the user inputs, also known as utterences, that the chatbot can recognize based on its Natural Language Understanding (NLU) capabilities, and based on the trigger phrases that have been configured for the topic. 
+- The second way to trigger a topic is by redirecting from another topic to it, with a redirect node.
 
-[TO DO: diagram that shows both topics that get triggered with trigger phrases and those triggered by other topics – and potentially system topics too]
+> [!TIP] When setting up a new chatbot, several system topics are automatically created to  make the chatbot readily operational with some basic and core capabilities (e.g. Greetings, Goodbye, Thank you, etc.).
+>
+> There are also a few system topics that are used to manage specific events:
+> - **Fallback**: this is a specific topic that gets triggered when the user intent isn’t understood and can’t be associated with confidence with any existing topic.
+> - **Did you mean**: this topic is triggered when multiple topics can potentially address the user input. The user can choose from the topics that score with sufficient confidence.
+> - **End of conversation**: at the end of each conversation, you should redirect your topic to the ‘End of conversation’ topic, so that the user can either confirm success or failure, and fill out a statisfaction survey.
+> - **Escalate**: this topic is used to hand off the conversation to a live agent (when configured - for example to Dynamics 365 Omnichannel for Customer Service).
+> - **Conversation start**: this is the topic that starts the conversation in the unified authoring experience. Users can be greeted with messages by the chatbot, even before they’ve started entering any input.
+
+<!-- [TO DO: diagram that shows both topics that get triggered with trigger phrases and those triggered by other topics – and potentially system topics too] -->
  
 # Choosing the right topics 
 Defining the best topics for your chatbot requires understanding the questions your users will ask or tasks they will try accomplish, and the kind of information and automation you’ll need to provide. Obvious places to start are:
 - Any existing Frequently Asked Questions (FAQ) or knowledge base (KB).
 - Common subjects raised by your employees or customers in internal or customer service scenarios. For example, if you’re building a customer service chatbot, talk with existing service representatives to learn what the most common questions are and the order in which they’re typically asked.
 
-For example, a retail chatbot might start by asking the user which of four things they want to do: find a store, place an order, check the status of an order, or return a purchased product. Their answer could lead them into one of four topics, each with its own topic dialog. 
+> [!TIP] For example, a retail chatbot might start by asking the user which of four things they want to do: find a store, place an order, check the status of an order, or return a purchased product. Their answer could lead them into one of four topics, each with its own topic dialog. 
 
-When you are considering which business processes to automate, look for the ones with the highest traffic and those where the task can be completed in the chatbot without the need for human involvement. Don’t just replicate what your website can already do – most customers are familiar with websites and will accomplish these tasks themselves without needing to interact with a chatbot. Look to create topics for things which generate a high volume of calls. Build automations for those to start with, and then work on the longer tail of other topics over a period of time. 
+When you are considering which business processes to fully automate, look for the ones with the highest traffic and those where the task can be completed in the chatbot without the need for human involvement. Don’t just replicate what your website can already do – most customers are familiar with websites and will accomplish these tasks themselves without needing to interact with a chatbot. Look to create topics for things which generate a high volume of chats or calls. Build automations for those to start with, and then work on the longer tail of other topics over a period of time. 
 
-When designing a topic, you should try to be as thorough as possible in your design and all the potential scenarios that your users might ask for fall into.
+When designing a topic, you should try to be as thorough as possible in your design and all the potential scenarios that your users might ask or fall into.
 
-**Identify the topic**
+### Identify the topic
 - Choose a topic your bot audience will ask about
 - Focus on high-impact topics first
 - Put your customer empathy hat on … topic design requires understanding both sides of the conversation 
 
-**List all scenarios**
+### List all scenarios
 - List all possible scenarios 
 - Think about informational needs, task completion, and troubleshooting
 
-**Design a high-level conversation tree**
+### Design a high-level conversation tree
 - Use your favorite tool to draw the conversation tree
 - What is the fewest number of questions you can ask to understand the situation enough to provide the right solution?
 
-**Validate and iterate on the design**
+### Validate and iterate on the design
 - Read the dialog out loud before publishing
 - Get analytics and read session transcripts for further optimization
 
@@ -59,7 +65,7 @@ People will use your chatbot with a specific issue (“topic”) to address or r
 
 **Informational**, **Task Completion**, and **Troubleshooting** are different types of topics that the chatbot can support. You may also need some topics that are just there to take ambiguous user questions (“I need help” or “shopping”) and ask for clarification so you can then route the user to the correct topic.
 
-## Leverage the Suggest Topics feature
+### Leverage the Suggest Topics feature
 For existing FAQs, Power Virtual Agents includes a Suggest Topics feature. You supply URLs, then let Power Virtual Agents crawl these webpages for FAQ information. The feature will automatically import suggestions that you can promote to preformatted topics, including trigger phrases. You’re also free to edit or delete these suggestions before they’re promoted to topics. 
 
 ## Expect to create both single-turn and multi-turn interactions
