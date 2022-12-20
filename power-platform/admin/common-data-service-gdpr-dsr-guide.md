@@ -2,12 +2,12 @@
 title: Responding to DSR requests for Microsoft Dataverse customer data | Microsoft Docs
 description: Walkthrough of how to respond to DSR requests for Microsoft Dataverse customer data
 author: jimholtz
-ms.reviewer: paulliew
+ms.reviewer: kvivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/01/2022
+ms.date: 12/19/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: paulliew
 search.audienceType: 
   - admin
 search.app:
@@ -19,7 +19,6 @@ search.app:
 
 # Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data
 
-## Introduction to DSR requests
 The European Union (EU) General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that's been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects the right to do the following, as it pertains to their personal data:
 
 - Obtain copies
@@ -100,9 +99,9 @@ To find a user and his or her personal data, go to the [Power Platform admin cen
 
 2. Go to **Settings** > **Users + permissions** > **Users**.
 
-3. Enter the name of the user in the **Search** box, and press **Enter**.
+3. Enter the name of the user in the **Search** box, and select **Enter**.
 
-4. To view the user's personal data, click or double-tap the user's name.
+4. To view the user's personal data, select the user's name by clicking or double-tapping.
 
 5. To make changes to the Contact Information, expand on the ellipse and click **Manage user in Dynamics 365**
 
@@ -155,7 +154,7 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 ### Delete
 
 #### User
-To avoid interruption to business applications that may be critical to your organization's operations, a user's records are not automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application or delete the user from each Dataverse environment. You can remove the user's personal data or [permanently delete the user](https://learn.microsoft.com/power-platform/admin/delete-users#permanently-delete-users-in-power-platform).
+To avoid interruption to business applications that may be critical to your organization's operations, a user's records are not automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application or delete the user from each environment. You can remove the user's personal data or [permanently delete the user](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform).
 
 #### Remove a user's personal data from the user's Summary page
 When a user record is deleted from the Azure Active Directory, the following message is displayed on the user's Summary page:
@@ -197,7 +196,9 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 12. Select **Next**, and then select **Submit**.
 
 #### Permanently delete user
-You can either remove user's personal data or permanently delete the user record from the Datavese user table. Please see [Permanently delete users in Power Platform](https://learn.microsoft.com/power-platform/admin/delete-users#permanently-delete-users-in-power-platform). When the user record is permanently deleted, the user's name in all records where the deleted user was the creator or last modified by, and the audit logs will show as **No Name**.
+You can either remove user's personal data or permanently delete the user record from the Datavese user table. More information: [Permanently delete users in Power Platform](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform). 
+
+When the user record is permanently deleted, the user's name in all records where the deleted user was the creator or last modified by and in the audit logs will show as **No Name**.
 
 #### Remove audit history from the Audit Summary View page
 
