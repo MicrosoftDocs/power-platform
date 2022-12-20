@@ -19,11 +19,11 @@ search.app:
 ---
 # Power Apps activity logging
 
-Power Apps activities are tracked from the [Microsoft 365 Security & Compliance Center](/microsoft-365/). 
+Power Apps activities are tracked from the [Microsoft Purview compliance portal](https://support.office.com/article/go-to-the-office-365-security-compliance-center). 
 
 Follow these steps.
 
-1. Sign in to the [Security & Compliance Center](https://protection.office.com) as a tenant admin.
+1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) as a tenant admin.
 
 2. Select **Search** > **Audit log search**. 
 
@@ -51,7 +51,7 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Deleted app permission |Every time a user's permissions to the app is removed  |
 
 ## Base schema
-Schemas define which Power Apps fields are sent to the Microsoft 365 Security and Compliance Center.  Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to Power Apps. The Base schema contains the common fields. 
+Schemas define which Power Apps fields are sent to the Microsoft Purview compliance portal.  Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Apps. The Base schema contains the common fields. 
 
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
@@ -66,9 +66,9 @@ Schemas define which Power Apps fields are sent to the Microsoft 365 Security an
 |UserType     |Self.UserType         |No         |The audit type (Admin, Regular, System)         |
 |Additional Info     |Edm.String        |No         |Additional information if any (e.g. the environment name)       |
 
-## Review your audit data using reports in Microsoft 365 Security and Compliance Center
+## Review your audit data using reports in Microsoft Purview compliance portal
 
-You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide).
+You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide).
 
 To use the preconfigured Power Apps reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Power Apps app activities** tab.
 
