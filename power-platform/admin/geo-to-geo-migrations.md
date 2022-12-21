@@ -31,6 +31,7 @@ The Geo Migration feature will allow customers to move their environments in a s
 > - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances).
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
 > - Dataverse organization linked to a finance and operations organization is not supported.
+> - There are important and critical preparation steps mentioned below that need to be performed for Power Apps/Power Automate, etc. prior to the geo migration. If these steps are missed, it is difficult to recover Power Apps/Power Automate solutions.
 
 ### Supported environment types
 
@@ -79,7 +80,7 @@ The following topics have information that could be helpful to understand the mo
 
 #### For Power Apps and Power Automate: 
 
--	Any Power Apps and Power Automate flows must be manually exported. 
+-	Any Power Apps and Power Automate flows must be manually exported prior to the date and time arranged for performing the Geo-to-Geo migration.
 -	We do not support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration. 
 
 ##### For apps which are solution aware
