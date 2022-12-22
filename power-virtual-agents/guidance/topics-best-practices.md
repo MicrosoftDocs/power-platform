@@ -11,26 +11,40 @@ ms.author: hejammes
 ms.collection: virtual-agent
 ---
 
-#  What are topics in Power Virtual Agents?
-In Power Virtual Agents, topics can be seen as a set of competencies a chatbot can use and run. 
+# Best practices to manage topics in Power Virtual Agents
 
-There are two main ways to trigger a topic: 
-- The first is based on the user inputs, also known as utterences, that the chatbot can recognize based on its Natural Language Understanding (NLU) capabilities, and based on the trigger phrases that have been configured for the topic. 
-- The second way to trigger a topic is by redirecting from another topic to it, with a redirect node.
+[Topics](/power-virtual-agents/authoring-fundamentals) are the core building blocks of your bot. They can be seen as the bot competencies, and they define how a conversation plays out, by being discrete conversation paths that, when used together within a single bot, allow for users to have a conversation with a bot that feels natural and flows appropriately. 
 
-> [!TIP] When setting up a new chatbot, several system topics are automatically created to  make the chatbot readily operational with some basic and core capabilities (e.g. Greetings, Goodbye, Thank you, etc.).
+To author topics, you can:
+- Customize provided [templates](/power-virtual-agents/authoring-template-topics), 
+- Create [new topics](/power-virtual-agents/authoring-create-edit-topics) from scratch, 
+- Or [use content from existing webpages](/power-virtual-agents/advanced-create-topics-from-web). This is useful if you already have help or support content, such as FAQ pages or support sites.
+
+A topic can have trigger phrases and typically contains conversation nodes:
+- **Trigger phrases** are phrases, keywords, and questions that a user is likely to use that are related to a specific topic. 
+- **Conversation nodes** define how a bot should respond to a trigger phrase and what it should do.
+
+> [!TIP] 
+> When setting up a new bot, several [system topics](/power-virtual-agents/preview/authoring-system-topics) are automatically created to  make the bot readily operational with some basic and core capabilities (e.g. Greetings, Goodbye, Thank you, etc.).
 >
 > There are also a few system topics that are used to manage specific events:
-> - **Fallback**: this is a specific topic that gets triggered when the user intent isn’t understood and can’t be associated with confidence with any existing topic.
-> - **Did you mean**: this topic is triggered when multiple topics can potentially address the user input. The user can choose from the topics that score with sufficient confidence.
-> - **End of conversation**: at the end of each conversation, you should redirect your topic to the ‘End of conversation’ topic, so that the user can either confirm success or failure, and fill out a statisfaction survey.
-> - **Escalate**: this topic is used to hand off the conversation to a live agent (when configured - for example to Dynamics 365 Omnichannel for Customer Service).
-> - **Conversation start**: this is the topic that starts the conversation in the unified authoring experience. Users can be greeted with messages by the chatbot, even before they’ve started entering any input.
+> - **[Conversation Start](/power-virtual-agents/preview/authoring-system-topics#conversation-start)**: this is the a that proactlvely starts the conversation in the unified authoring experience. Users can be greeted with messages by the bot, even before they’ve started entering any input.
+> - **[Multiple Topics Matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched)** (also known as 'Did You Mean' or DYM): this topic is triggered when multiple topics can potentially address the user input and the bot doesn't have sufficient confidence to trigger one over the others. When a 'Multiple Topics Matched' topic is triggered, the user is presented with a list of topics and can choose the most appropriate one.
+> - **[End of conversation](/power-virtual-agents/preview/authoring-system-topics#end-of-conversation)**: at the end of each conversation with a bot, you should redirect the user to the ‘end of conversation’ topic, so that the user can either confirm success or failure, and fill out a statisfaction survey.
+> - **[Escalate](/power-virtual-agents/preview/authoring-system-topics#escalate)**: this topic is used to hand off the conversation to a live agent (when configured – for example to [Dynamics 365 Omnichannel for Customer Service](/power-virtual-agents/configuration-hand-off-omnichannel)).
+> - **[Fallback](/power-virtual-agents/preview/authoring-system-topics#fallback)**: this is a specific topic that gets triggered when the user intent isn’t understood and can’t be associated with confidence with any existing topic.
 
-<!-- [TO DO: diagram that shows both topics that get triggered with trigger phrases and those triggered by other topics – and potentially system topics too] -->
+## Triggering topics
+
+There are two main ways to trigger a topic: 
+- Based on the user inputs, also known as utterances. The AI uses natural language understanding (NLU) to parse what a user says and find the most appropriate trigger phrase or node. 
+- By redirecting to it from another topic, with a redirect node.
+
+<!-- [Image needs to be uploaded] -->
  
-# Choosing the right topics 
-Defining the best topics for your chatbot requires understanding the questions your users will ask or tasks they will try accomplish, and the kind of information and automation you’ll need to provide. Obvious places to start are:
+## Defining topics 
+
+Defining the best topics for your bot requires understanding the questions users will ask or tasks they will try accomplish, and the kind of information and automation you’ll need to provide. Obvious places to start are:
 - Any existing Frequently Asked Questions (FAQ) or knowledge base (KB).
 - Common subjects raised by your employees or customers in internal or customer service scenarios. For example, if you’re building a customer service chatbot, talk with existing service representatives to learn what the most common questions are and the order in which they’re typically asked.
 
@@ -66,43 +80,55 @@ People will use your chatbot with a specific issue (“topic”) to address or r
 **Informational**, **Task Completion**, and **Troubleshooting** are different types of topics that the chatbot can support. You may also need some topics that are just there to take ambiguous user questions (“I need help” or “shopping”) and ask for clarification so you can then route the user to the correct topic.
 
 ### Leverage the Suggest Topics feature
+
 For existing FAQs, Power Virtual Agents includes a Suggest Topics feature. You supply URLs, then let Power Virtual Agents crawl these webpages for FAQ information. The feature will automatically import suggestions that you can promote to preformatted topics, including trigger phrases. You’re also free to edit or delete these suggestions before they’re promoted to topics. 
 
 ## Expect to create both single-turn and multi-turn interactions
+
 For simple interactions, you’ll create single-turn conversations with just one question and one answer. All of the interactions generated from FAQs by the Power Virtual Agents Suggest Topics feature are single-turn today. But more substantive topics require a multi-turn conversation with multiple back-and-forth interactions between the user and your chatbot. 
 For instance, if a user asks a retail chatbot whether there are any stores nearby, the chatbot might respond with a question such as “What city do you live in” or “What is your postal code?” to narrow down its possible responses. The user’s response to this will determine the chatbot’s next response in the conversation.
 
 ## Creating new topics with the end-user in mind
+
 You’ll also need to create some topics yourself; working with an existing FAQ won’t be enough. Think about topics from your user’s point of view. Never forget that they might know much less about this area then you do. In fact, if the chatbot you create is helpful to you, it’s probably too advanced to be a good fit for less-knowledgeable users. 
 
 # Leveraging the Fallback topic
+
 The Fallback topic gets triggered when Power Virtual Agents doesn’t understand a user utterance and doesn’t have sufficient confidence to trigger any of the existing topics.
 There are multiple ways to leverage the Fallback topic and offer a great user experience.
 
 ## Offloading single question/answer pairs.
+
 If you have a large number question/answer pairs for single-turn conversations you can also consider offloading them to the Fallback topic and integrate with external services such as custom question answering in Azure Language Studio (part of Azure Cognitive Services). It will also help Power Virtual Agents Natural Language Understanding focus on the trigger phrases you have configured for your topics.
 
 ## Providing your chatbot with a personality 
+
 When user inputs are not understood, you can also leverage Custom Question Answering in the Azure Cognitive Services Language Studio. “Chitchat” skills of various tone (professional, familiar, etc.) are available. This allows your chatbot to be able to answer trivial questions, such as “how are you feeling today, bot?”.
 
 ## Learning from the Fallback topic
+
 You should track what your customers are saying that doesn’t trigger a standard Power Virtual Agents topic. These could be used to enrich an existing topic’s trigger phrases (typically when the user utterance should have triggered a topic) or lead to the creation of new topics to better serve your users as you understand better what they’re trying to accomplish.
 
 # Plan your conversation tree and topic dialogs 
+
 Chatbots typically interact with their users by asking questions. To make your chatbot as effective as possible, you should carefully think about what these questions should be and how a user will navigate through them from the most general to the most specific. 
 
 ## Think hard about your question hierarchy
+
 To do this, think holistically about your chatbot’s overall conversation tree. What are the initial questions a user asks to choose a particular topic? Once you’ve worked out what these should be, define your topic dialogs, i.e., the hierarchy of questions asked inside each topic.
 
 ## Keep the conversation short, simple and efficient
+
 Your goal is to understand what the user wants while still keeping the interaction simple, asking as few questions as possible. It’s also a good idea to keep your responses short; strive to be both precise and concise. Long paragraphs can be hard to read in a typical chatbot user interface. 
 Whatever the details of your chatbot interaction, you should carefully plan your question hierarchy. The more thought you put in ahead of time, the better your chatbot will be. 
 Make answers clear and concise so users can scan information quickly
 
 # Organizing your topics
+
 Chatbot topic authoring is an iterative process, and it involves authors observe bot/end-user interactions with each authoring iteration.
 
 ## Create bite-size topics
+
 It’s often more manageable to create many bite-size topics rather than a few large topics. Taking this approach also helps making triggering more effective, by clearly mapping trigger phrases to the specific topics that address those areas.
 Bite-size topics doesn’t mean that all topics should have trigger phrases, as topics triggered with trigger phrases can in turn redirect to other topics based on additional user inputs and answers.
 The number of topics is a Conversational Design preference and decision, as it either results in having a few bigger topic (in case of joining) or having more smaller topics (in case of splitting). 
