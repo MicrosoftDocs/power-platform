@@ -4,7 +4,7 @@ description: Reference information for functions, signals, and enumerations in P
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm-msft
+ms.reviewer: mkaur-msft
 ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: gregli
@@ -13,7 +13,7 @@ search.audienceType:
 search.app:
   - PowerApps
 contributors:
-  - tapanm-msft
+  - mduelae
   - gregli-msft
   - jorisdg
 ---

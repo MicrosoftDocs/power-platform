@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 11/18/2022
+ms.date: 12/14/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,14 +26,14 @@ Commands for working with Power Pages website
 
 |Command|Description|
 |---------|---------|
-|[pac paportal download](#pac-paportal-download)|Download Power Pages website content from the current Dataverse Organization|
-|[pac paportal list](#pac-paportal-list)|List all Power Pages websites from the current Dataverse Organization|
-|[pac paportal upload](#pac-paportal-upload)|Upload Power Pages website content to current Dataverse Organization|
+|[pac paportal download](#pac-paportal-download)|Download Power Pages website content from the current Dataverse environment|
+|[pac paportal list](#pac-paportal-list)|List all Power Pages websites from the current Dataverse environment|
+|[pac paportal upload](#pac-paportal-upload)|Upload Power Pages website content to current Dataverse environment|
 
 
 ## pac paportal download
 
-Download Power Pages website content from the current Dataverse Organization
+Download Power Pages website content from the current Dataverse environment
 
 [!INCLUDE [paportal-download-intro](includes/paportal-download-intro.md)]
 
@@ -42,11 +42,11 @@ Download Power Pages website content from the current Dataverse Organization
 
 #### `--path` `-p`
 
-Path where the website content will be downloaded
+Path where the Power Pages website content will be downloaded
 
 #### `--webSiteId` `-id`
 
-Power Pages website id to download
+Power Pages website ID to download
 
 
 ### Optional Parameters
@@ -69,13 +69,13 @@ This parameter requires no value. It is a switch.
 
 ## pac paportal list
 
-List all Power Pages websites from the current Dataverse Organization
+List all Power Pages websites from the current Dataverse environment
 
 [!INCLUDE [paportal-list-remarks](includes/paportal-list-remarks.md)]
 
 ## pac paportal upload
 
-Upload Power Pages website content to current Dataverse Organization
+Upload Power Pages website content to current Dataverse environment
 
 [!INCLUDE [paportal-upload-intro](includes/paportal-upload-intro.md)]
 
@@ -84,7 +84,7 @@ Upload Power Pages website content to current Dataverse Organization
 
 #### `--path` `-p`
 
-Path from where the website content will be uploaded
+Path from where the Power Pages website content will be uploaded
 
 
 ### Optional Parameters

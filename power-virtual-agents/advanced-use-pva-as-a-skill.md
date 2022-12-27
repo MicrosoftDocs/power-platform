@@ -201,7 +201,7 @@ Instead of relying on what a user says to trigger a Power Virtual Agents skill t
 
 ### Pass an input variable to a Power Virtual Agents skill topic
 
-Bot Framework Composer can pass a variable to a Power Virtual Agents skill topic as an input. To learn how to create Power Virtual Agents topics that accept input variables, see [Passing variables between topics](/authoring-variables#passing-variables-between-topics).
+Bot Framework Composer can pass a variable to a Power Virtual Agents skill topic as an input. To learn how to create Power Virtual Agents topics that accept input variables, see [Passing variables between topics](authoring-variables#passing-variables-between-topics).
 
 If a Power Virtual Agents topic that can receive an input variable is listed in your skill manifest, you can pass a Composer variable to it.
 
