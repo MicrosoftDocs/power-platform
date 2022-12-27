@@ -144,7 +144,7 @@ If you add new bot components (such as new topics or flows) to your bot in Power
 
 1. Select **Chatbots** and find your bot in the list.
 
-1. Select **Commands** (vertical three dots), select **Advanced**, and then select **+Add required objects**.
+1. Select **Commands** (**&vellip;**), select **Advanced**, and then select **+Add required objects**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-add-required-components.png" alt-text="Screenshot highlighting the Add required components option under the More menu.":::
 
@@ -162,7 +162,7 @@ To show the latest updates, you'll need to remove the unmanaged "Active" layer.
 
 Use the **See solution layers** option to see all solutions that a component is a part of. You can also see one "Active" solution on top of all other solutions if you have changed something directly.
 
-1. Select **Commands** (vertical three dots), select **Advanced**, and then select **See solution layers**.
+1. Select **Commands** (**&vellip;**), select **Advanced**, and then select **See solution layers**.
 
    :::image type="content" source="media/authoring-export-import-bots/export-solution-layers.png" alt-text="See solution layers option." border="false":::
 
