@@ -31,7 +31,7 @@ After you know there are duplicate records, you can merge the duplicates and ret
 When duplicates are found while you create or update records, you can either ignore the duplicate detection dialog box and save the record or you can merge the duplicate records to keep your data clean.
 
 > [!NOTE]
-> The Merge option is available only for Account, Lead, and Contact entities.
+> The Merge option is available only for Account, Lead, and Contact entities. The Merge option will only be enabled if a duplicate record of the same table is selected. Merging duplicate records from different tables is not supported.
 
 When saving a new record or updated records, a **Duplicate records found** dialog box is shown if duplicates are found based on the duplicate detection rules set up for your organization. More information: [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md)
 
