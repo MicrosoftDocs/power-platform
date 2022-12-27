@@ -49,7 +49,7 @@ This article covers how to configure Azure Active Directory (Azure AD) as your s
 
 1. Under **Platform configurations** select **Add a platform**, then select **Web**.
 
-1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect`.
+1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect` and `https://europe.token.botframework.com/.auth/web/redirect`.
 
 1. Under the **Implicit grant and hybrid flows** section, turn on both **ID tokens (used for implicit and hybrid flows)** and **Access tokens (used for implicit flows)**.
 
@@ -74,7 +74,7 @@ This article covers how to configure Azure Active Directory (Azure AD) as your s
 
 ## Configure manual authentication
 
-1. In Power Virtual Agents, select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
+1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Security**. Then select the **Authentication** card.
 
     :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of selecting the Authentication card.":::
 

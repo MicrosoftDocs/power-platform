@@ -5,7 +5,7 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.component: canvas
 ms.date: 05/24/2021
 ms.subservice: power-fx
@@ -16,7 +16,7 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
 ---
 
 # Blank, Coalesce, IsBlank, and IsEmpty functions in Power Apps

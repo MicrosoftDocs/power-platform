@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 11/18/2022
+ms.date: 12/14/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -91,6 +91,12 @@ Default environment (id, url, unique name or partial name)
 #### `--kind` `-k`
 
 **Deprecated**: This parameter will be ignored.
+#### `--managedIdentity` `-mi`
+
+Use Azure Managed Identity.
+
+This parameter requires no value. It is a switch.
+
 #### `--name` `-n`
 
 The name you want to give to this authentication profile (maximum 30 characters)

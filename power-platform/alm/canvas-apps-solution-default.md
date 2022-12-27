@@ -27,7 +27,7 @@ search.app:
 
 Enable the canvas apps in solution by default through the environment setting **Create new canvas apps as Dataverse solutions (preview)**.
 
-To learn about enabling the setting, go to [Environment settings](../admin/settings-features.md). More information: [Add canvas apps to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default)
+To learn about enabling the setting, go to [Environment settings](../admin/settings-features.md). More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default)
 
 ### See also
 [ALM for developers](alm-for-developers.md)
