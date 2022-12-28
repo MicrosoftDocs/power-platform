@@ -17,7 +17,7 @@ ms.custom: handoff, ceX, advanced-authoring
 
 With Power Virtual Agents, you can hand off conversations to live agents seamlessly and contextually.
 
-When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. Having access to this context means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
+When you hand off a conversation, you share the full history of the conversation (the context) and all user-defined variables. With this context, a live agent that uses a connected engagement hub can be: notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
 For more information about how to configure hand-off with [Omnichannel for Customer Service](/dynamics365/customer-service/configure-bot-virtual-agent), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
 
@@ -49,15 +49,15 @@ Upon triggering the hand-off topic, Power Virtual Agents starts the hand-off to 
 
 ### Implicit triggers
 
-In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there is no [topic](./authoring-create-edit-topics.md), or there is no matching option within a topic.
+In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there's no [topic](./authoring-create-edit-topics.md), or no matching option within a topic.
 
 In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid-way into a conversation.
 
-When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-create-edit-topics.md). This type of trigger is known as *implicit triggering*.
+When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-create-edit-topics.md). This type of trigger is known as _implicit triggering_.
 
 ### Explicit triggers
 
-When creating topics for your bot, you may determine that some topics require interaction with a human. This type of trigger is known as *explicit triggering*.
+When creating topics for your bot, you may determine that some topics require interaction with a human. This type of trigger is known as _explicit triggering_.
 
 In these instances, you must add a **Transfer to agent** node into the topic.
 
