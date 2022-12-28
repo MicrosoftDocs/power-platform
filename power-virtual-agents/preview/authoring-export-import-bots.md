@@ -41,7 +41,7 @@ Move your bots across [environments](/power-platform/admin/environments-overview
 
 - You'll need the minimum System Customizer security roles to export and import bots using solutions. Learn more about [configuring user security to resources in an environment](/power-platform/admin/database-security).
 
-## Add a bot to a solution
+## Create a solution to manage export and import
 
 You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots. You can export and import multiple bots in one solution.
 
@@ -72,7 +72,7 @@ You use solutions to export bots from one environment and import them into anoth
 
 1. Select **Create**.
 
-### Add your bot to the solution
+## Add your bot to the solution
 
 1. The solution you created should be open. If it isn't, select it in the list of solutions.
 
@@ -80,11 +80,12 @@ You use solutions to export bots from one environment and import them into anoth
 
 1. In the **Add existing chatbots** list, select the bot or bots you want to export, and then select **Add**.
 
-## Export and import bots
+## Export the solution with your bot
 
 You export and import bots by exporting and importing the solutions that contain them from one environment to another.
 
-### Export the solution with your bot
+> [!IMPORTANT]
+> If your bot has a large number of components (for example, more than 250 topics or more than 100 entities), see [Export using the classic experience](/power-apps/maker/data-platform/export-solutions#export-using-the-classic-experience).
 
 1. In the Power Apps **Solutions** page, select the solution that contains your bot, and then select **Export solution**.
 
@@ -103,7 +104,7 @@ You export and import bots by exporting and importing the solutions that contain
 
 The export can take several minutes to complete. Watch the status message at the top of the **Solutions** page. When the export is finished, your browser downloads a .zip file. The file name is in the format `SolutionName_Version_ManagementType.zip`; for example, MyBotPublisher_1.0.0.0.1_Unmanaged.zip.
 
-### Import the solution with your bot
+## Import the solution with your bot
 
 1. In Power Apps, select the environment where you want to import your bot.
 
@@ -123,7 +124,7 @@ The export can take several minutes to complete. Watch the status message at the
 
 1. If your bot has [user authentication](configuration-end-user-authentication.md) enabled, you'll need to configure it again.
 
-1. Use the filter menu to select **Chatbot**. Then select the bot's name to open the bot in the Power Virtual Agents portal.
+1. In the **Objects** pane select **Chatbot**. Then select the bot's name to open the bot in the Power Virtual Agents portal.
 
     :::image type="content" source="media/authoring-export-import-bots/select-bot.png" alt-text="Screenshot of a list of bots and environments in Power Virtual Agents.":::
 

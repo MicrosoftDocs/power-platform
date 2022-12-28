@@ -5,7 +5,7 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 05/13/2021
 ms.subservice: power-fx
 ms.author: gregli
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
 ---
 
 # Remove and RemoveIf functions in Power Apps
