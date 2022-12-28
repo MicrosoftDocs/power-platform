@@ -2,9 +2,9 @@
 title: "Hand off to a live agent (contains video)"
 description: "Learn how to hand off a bot conversation to a human agent, complete with context and conversation history."
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 12/28/2022
 
-ms.topic: article
+ms.topic: how-to
 author: iaanw 
 ms.author: iawilt
 ms.reviewer: pawant
@@ -19,7 +19,7 @@ With Power Virtual Agents, you can hand off conversations to live agents seamles
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. Having access to this context means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
-For more information about how to configure hand-off with [omnichannel for Customer Service](/dynamics365/customer-service/configure-bot-virtual-agent), see the [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
+For more information about how to configure hand-off with [Omnichannel for Customer Service](/dynamics365/customer-service/configure-bot-virtual-agent), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n4G1]
@@ -39,7 +39,7 @@ For more information about how to configure hand-off with [omnichannel for Custo
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - A bot built with [Power Virtual Agents](https://aka.ms/TryPVA).
-- An engagement hub that is being used by live agents, such as [omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
+- An engagement hub that is being used by live agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Triggering hand-off to a live agent
 
