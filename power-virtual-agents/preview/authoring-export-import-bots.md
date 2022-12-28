@@ -28,11 +28,9 @@ This can be useful if you use different environments for different purposes, or 
 
 - A maker will require the minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](/power-platform/admin/database-security).
 
-## Add a bot to a solution
+## Create a solution to manage export and import
 
 You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots, and you can import multiple bots in one solution.
-
-### Create a solution to manage export and import
 
 1. Sign in to the Power Virtual Agents bot you want to export.
 
@@ -59,7 +57,7 @@ You use solutions to export bots from one environment and import them into anoth
 
 1. Select **Create**.
 
-### Add your bot to the solution
+## Add your bot to the solution
 
 1. Select the solution you just created.
 
@@ -75,28 +73,22 @@ You use solutions to export bots from one environment and import them into anoth
 > Removing a bot from a solution doesn't remove its components from a solution. Removal of the components should be done separately.  
 
 > [!WARNING]
-> Do not remove any unmanaged chatbot subcomponents (such as bot topics) directly from the Power Apps portal, unless you have removed the bot itself from the solution.  
+> Don't remove any unmanaged chatbot subcomponents (such as bot topics) directly from the Power Apps portal, unless you have removed the bot itself from the solution.  
 >
 > You should only make changes to topics from within the Power Virtual Agents portal.  
 >
 > Removing or changing the chatbot subcomponents from within Power Apps will cause the export and import to fail.
 
-## Export and import bots
+## Export the solution with your bot
 
-You export and import bots by exporting and importing their containing solutions from one environment to another.
+You can only export solutions that are _unmanaged_. By default, a new solution is created as unmanaged. If you later change it to _managed_, you won't be able to export it.
 
-### Export the solution with your bot
+> [!IMPORTANT]
+> If your bot has a large number of components (for example, more than 250 topics or more than 100 entities), see [Export using the classic experience](/power-apps/maker/data-platform/export-solutions#export-using-the-classic-experience).
 
 1. In the list of solutions, select the solution that contains the bot you want to export. Select **Export solution**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-solution.png" alt-text="Screenshot of the solution export button.":::
-
-    > [!NOTE]
-    > You can't export managed solutions. When you create a solution, by default it will not be managed. If you change it to a managed solution you won't be able to export it, and will need to create a new solution.
-    >
-    > If your bot has a large number of components (for example, more than 250 topics or more than 100 entities), export the bot using classic Power Apps portal instead.
-    >
-    > :::image type="content" source="media/authoring-export-import-bots/export-switch-classic.png" alt-text="Switch to classic view." border="false":::
 
 1. Select **Next** in the **Before you export** pane.
 
@@ -109,7 +101,7 @@ You export and import bots by exporting and importing their containing solutions
 
 The export can take several minutes to complete. Once finished, a .zip file will be downloaded by your web browser. The file will be in the format `SolutionName_Version_ManagementType.zip`.
 
-### Import the solution with your bot
+## Import the solution with your bot
 
 1. On the top menu, select the environment name and select the environment where you want to import your bot.
 
@@ -133,7 +125,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 1. If your bot has [user authentication](configuration-end-user-authentication.md) enabled, you'll need to re-configure user authentication in the bot after import.
 
-1. Use the filter menu to select **Chatbot**. Then select the bot's name to open the bot in the Power Virtual Agents portal.
+1. In the **Objects** pane select **Chatbot**. Then select the bot's name to open the bot in the Power Virtual Agents portal.
 
     :::image type="content" source="media/authoring-export-import-bots/select-bot.png" alt-text="List of bots and environments in Power Virtual Agents.":::
 
@@ -152,7 +144,7 @@ If you add new bot components (such as new topics or flows) to your bot in Power
 
 1. Select **Chatbots** and find your bot in the list.
 
-1. Select **Commands** (vertical three dots), select **Advanced**, and then select **+Add required objects**.
+1. Select **Commands** (**&vellip;**), select **Advanced**, and then select **+Add required objects**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-add-required-components.png" alt-text="Screenshot highlighting the Add required components option under the More menu.":::
 
@@ -170,7 +162,7 @@ To show the latest updates, you'll need to remove the unmanaged "Active" layer.
 
 Use the **See solution layers** option to see all solutions that a component is a part of. You can also see one "Active" solution on top of all other solutions if you have changed something directly.
 
-1. Select **Commands** (vertical three dots), select **Advanced**, and then select **See solution layers**.
+1. Select **Commands** (**&vellip;**), select **Advanced**, and then select **See solution layers**.
 
    :::image type="content" source="media/authoring-export-import-bots/export-solution-layers.png" alt-text="See solution layers option." border="false":::
 
