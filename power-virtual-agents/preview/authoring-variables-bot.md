@@ -22,7 +22,6 @@ By default, a variable's value can only be used in the topic where the variable 
 
 One way to reuse a variable is to [pass the variable between topics](../authoring-variables.md#passing-variables-between-topics). The other way is to make the variable global in scope, and that's what this article covers. **Global variables** are called that because they're available in all topics across the entire bot.
 
-By default, global variables apply during a single user session. You can keep their values between sessions if needed.<!-- EDITOR'S NOTE: Shouldn't this article mention how to preserve global variables between sessions? -->
 
 ## Create a global variable
 

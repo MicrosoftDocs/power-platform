@@ -11,7 +11,6 @@ ms.custom: authoring, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ---
-<!-- EDITOR'S NOTE: This article doesn't mention "slot filling" at all, and it's not a particularly advanced use of entities. Would it make sense to change the file name to reflect its actual contents? -->
 
 # Use entities in Power Virtual Agents bots (preview)
 
