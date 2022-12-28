@@ -37,15 +37,15 @@ Variables can exist at three levels, or scopes:
 A variable is associated with a **base type**. The type determines what values the variable can contain and the operators that you can use when you construct a logical expression with it.
 
 <!-- best viewed without wordwrap -->
-| Type     | Description                                                                                                          |
-| -------- | -------------------------------------------------------------------------------------------------------------------- |
-| String   | A sequence of characters used to represent text                                                                      |
-| Boolean  | A logical value that can only be `true` or `false`                                                                   |
-| Number   | Any real number                                                                                                      |
-| Table    | A list of values, but all values must be of the same type                                                            |
-| Record   | A collection of name-value pairs where values can be of any type                                                     |
-| DateTime | A date, time, day of the week, or month relative to a point in time                                                  |
-| Choice   | A list of string values that have associated synonyms                                                                |
+| Type     | Description                                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| String   | A sequence of characters used to represent text                                                                                            |
+| Boolean  | A logical value that can only be `true` or `false`                                                                                         |
+| Number   | Any real number                                                                                                                            |
+| Table    | A list of values, but all values must be of the same type                                                                                  |
+| Record   | A collection of name-value pairs where values can be of any type                                                                           |
+| DateTime | A date, time, day of the week, or month relative to a point in time                                                                        |
+| Choice   | A list of string values that have associated synonyms                                                                                      |
 | Blank    | A placeholder for "no value" or "unknown value"; for more information, see [Blanks in Power Fx](/power-platform/power-fx/data-types#blank) |
 
 A variable's type is set the first time a value is assigned to it. After that, the type for that variable is fixed and it can't be assigned values of any other type. For example, a variable given the starting value of `1` is assigned the type **Number**. Attempting to assign it to a **String** value of `"apples"` will result in an error.
@@ -168,27 +168,27 @@ Not all system variables are shown in the list. You must access these hidden sys
 
 To use system variables in a Power Fx formula, you must add `System.` before the variable name. For example, to include the system variable `User.DisplayName` in a formula, you'd need to refer to it as `System.User.DisplayName`.
 
-| Name                           | Type   | Hidden | Definition  |
-| ------------------------------ | ------ | ------ | ----------- |
-| Activity.Channel               | choice |        | The channel ID of the current conversation |
-| Activity.ChannelData           | any    | ✔      | An object that contains channel-specific content |
-| Activity.ChannelId             | string | ✔      | The channel ID of the current conversation, as a string |
-| Activity.From.Id               | string | ✔      | The channel-specific unique ID of the sender |
-| Activity.From.Name             | string | ✔      | The channel-specific user-friendly name of the sender |
-| Activity.Name                  | string |        | The name of the event |
-| Activity.Text                  | string |        | The last message sent by the user |<!-- EDITOR'S NOTE: This is the same definition as LastMessage.Text -->
-| Activity.Type                  | choice |        | Type of [activity][] |
-| Activity.TypeId                | string | ✔      | Type of [activity][], as a string |
-| Activity.Value                 | any    | ✔      | Open-ended value |
-| Bot.Name                       | string |        | The name of your bot |
-| Channel.DisplayName            | string | ✔      | The display the name of the channel |
-| Conversation.Id                | string |        | The unique ID of the current conversation |
-| LastActivity.Id                | string |        | The ID of the previously sent [activity][] |
-| LastMessage.Id                 | string |        | The ID of the last message sent by the user |
-| LastMessage.Text               | string |        | The last message sent by the user |
+| Name                           | Type   | Hidden | Definition                                                  |
+| ------------------------------ | ------ | ------ | ----------------------------------------------------------- |
+| Activity.Channel               | choice |        | The channel ID of the current conversation                  |
+| Activity.ChannelData           | any    | ✔      | An object that contains channel-specific content            |
+| Activity.ChannelId             | string | ✔      | The channel ID of the current conversation, as a string     |
+| Activity.From.Id               | string | ✔      | The channel-specific unique ID of the sender                |
+| Activity.From.Name             | string | ✔      | The channel-specific user-friendly name of the sender       |
+| Activity.Name                  | string |        | The name of the event                                       |
+| Activity.Text                  | string |        | The last message sent by the user                           |
+| Activity.Type                  | choice |        | Type of [activity][]                                        |
+| Activity.TypeId                | string | ✔      | Type of [activity][], as a string                           |
+| Activity.Value                 | any    | ✔      | Open-ended value                                            |
+| Bot.Name                       | string |        | The name of your bot                                        |
+| Channel.DisplayName            | string | ✔      | The display the name of the channel                         |
+| Conversation.Id                | string |        | The unique ID of the current conversation                   |
+| LastActivity.Id                | string |        | The ID of the previously sent [activity][]                  |
+| LastMessage.Id                 | string |        | The ID of the last message sent by the user                 |
+| LastMessage.Text               | string |        | The last message sent by the user                           |
 | Recognizer.TriggerMessage.Id   | string |        | The ID of the user message that triggered the current topic |
-| Recognizer.TriggerMessage.Text | string |        | The user message that triggered the current topic |
-| User.DisplayName               | string |        | The display name of the signed-in user |
+| Recognizer.TriggerMessage.Text | string |        | The user message that triggered the current topic           |
+| User.DisplayName               | string |        | The display name of the signed-in user                      |
 
 [activity]: /azure/bot-service/bot-activity-handler-concept
 

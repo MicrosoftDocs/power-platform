@@ -35,7 +35,7 @@ To shift the conversation from the current topic to another topic without starti
 
     :::image type="content" source="media/authoring-topic-management/topics-redirect-select-topic.png" alt-text="Screenshot of the list of topics to redirect to.":::
 
-1. [Pass variables between topics](authoring-variables.md#passing-variables-between-topics) if needed. If the topic you're redirecting to requires any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables, enter or select a value for each one.
+1. [Pass variables between topics](authoring-variables.md#pass-variables-between-topics) if needed. If the topic you're redirecting to requires any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables, enter or select a value for each one.
 
 1. Save your topic, and then use the **Test bot** pane to confirm that your bot successfully calls the redirect topic.
 

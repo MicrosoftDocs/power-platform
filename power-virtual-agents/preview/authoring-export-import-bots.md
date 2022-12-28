@@ -35,8 +35,6 @@ Move your bots across [environments](/power-platform/admin/environments-overview
 
 - If your bot has a large number of components (for example, more than 250 topics or more than 100 entities), export it using the classic Power Apps portal instead.
 
-    :::image type="content" source="media/authoring-export-import-bots/export-switch-classic.png" alt-text="Screenshot of the Switch to classic button in Power Apps.":::
-
 ## Prerequisites
 
 - You'll need the minimum System Customizer security roles to export and import bots using solutions. Learn more about [configuring user security to resources in an environment](/power-platform/admin/database-security).
