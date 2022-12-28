@@ -29,7 +29,7 @@ Variables can also be passed to, and returned from, [other topics](authoring-var
 Variables can exist at three levels, or scopes:
 
 - **Topic** variables can only be used in the topics in which they're created. This scope is the default for variables that you create.
-- [**Global** variables](authoring-variables-bot.md) can be used in all topics. You can change the scope of a topic variable to make it a global variable. You can't change a global variable back to a topic variable, however.
+- [**Global** variables](authoring-variables-bot.md) can be used in all topics. You can change the scope of a topic variable to make it a global variable.
 - [**System** variables](#system-variables) are created automatically with your bot. They provide more contextual information about the conversation or the user. They're available in all topics.
 
 ## Variable types
@@ -114,7 +114,7 @@ Variables are automatically assigned a name when you create them. A best practic
 
 Typically you'll use a [**Question** node](authoring-ask-a-question.md) to save user input to a variable. There may be situations where you want to set the value yourself, however. In those cases, use a **Set Variable Value** node.
 
-1. Select **+** to add a node, and then select **Set a variable value**.
+1. Select **Add node** (**+**) to add a node, and then select **Set a variable value**.
 
 1. Select the box under **Set variable**, and then select **Create a new variable**.
 
@@ -192,6 +192,7 @@ To use system variables in a Power Fx formula, you must add `System.` before the
 
 [activity]: /azure/bot-service/bot-activity-handler-concept
 
+<!-- TODO: this section needs to be re-written with a specific scenario so that its less confusing -->
 ## Pass variables between topics
 
 When you redirect one topic to another, you can pass the values of variables between the original topic and the destination topic. Passing variables between topics is especially useful when an earlier topic already collected information that a later topic needs. Your users will appreciate not having to answer the same questions again.

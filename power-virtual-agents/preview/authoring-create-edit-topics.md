@@ -81,7 +81,7 @@ When you create a topic, a **Trigger phrases** node is inserted for you. Add mor
 
 1. Open your bot and select **Topics**, and then select a topic.
 
-1. To add a node, select the plus (**+**) icon on the line or branch between or after a node.
+1. To add a node, select **Add node** (**+**) on the line or branch between or after a node.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of the Add node button in the Power Virtual Agents authoring canvas.":::
 

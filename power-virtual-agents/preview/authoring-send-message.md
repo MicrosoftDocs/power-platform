@@ -103,7 +103,7 @@ A basic card is a general-purpose card that you can use to add text, images, and
 
 1. [Add a **Message** node](#send-a-text-message).
 
-1. In the node's menu bar, select **Add**, and then select **Adaptive card**.<!-- EDITOR'S NOTE: Can you please ask the UI team to change "Adaptive card" to "Adaptive Card" in the Add menu? -->
+1. In the node's menu bar, select **Add**, and then select **Adaptive card**.
 
 1. Under **Edit JSON**, enter the JSON for your card.
 

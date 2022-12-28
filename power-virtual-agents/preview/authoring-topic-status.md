@@ -63,7 +63,6 @@ When you publish your bot, all topics are published whether they're **On** or **
 :::image type="content" source="media/authoring-topic-status/topics-status.png" alt-text="Screenshot of the Topics page, with the Status column highlighted.":::
 
 ## Copy a topic
-<!-- EDITOR'S NOTE: I didn't see any options but Delete on the More actions menu in my preview bots. I only saw the Go to analytics and Make a copy options in my production bots. -->
 
 After you've created a few topics, you may want to use a previous topic as a baseline when creating new topics.
 

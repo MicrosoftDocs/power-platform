@@ -326,7 +326,7 @@
         href: preview/authoring-send-message.md
       - name: Ask a question
         href: preview/authoring-ask-a-question.md
-      - name: Redirect and end topics
+      - name: Manage topics
         href: preview/authoring-topic-management.md
       - name: View topic status
         href: preview/authoring-topic-status.md
@@ -368,7 +368,7 @@
     items:
       - name: Analyze your bot's performance and usage
         href: preview/analytics-overview.md
-      - name: Summarize your bot's performance and usage
+      - name: Analyze bot performance and usage
         href: preview/analytics-summary.md
       - name: Analyze your bot's customer satisfaction metrics
         href: preview/analytics-csat.md

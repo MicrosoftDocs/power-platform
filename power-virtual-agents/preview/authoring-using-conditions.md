@@ -61,13 +61,13 @@ For example, you might have a number variable and want three branches for when:
 
 1. To add another **Condition** branch, select the **+** _above_ an existing **Condition** branch and select **Add a condition**.
 
-    If you select the **+** _below_ the **Condition** branch, you'll add an entire new **Condition** and **All Other Conditions** node, not a new **Condition** branch.
+    If you select **Add node** (**+**) _below_ the **Condition** branch, you'll add an entire new **Condition** and **All Other Conditions** node, not a new **Condition** branch.
 
     :::image type="content" source="media/authoring-condition-node/authoring-condition-node-multiple-conditions.png" alt-text="Screenshot showing multiple Condition branches and an All Other Conditions branch in a topic.":::
 
 ## Use Power Fx to define a condition
 
-The default condition editor is good for most scenarios. If you need more flexibility, use Power FX in the **Condition** branch.
+The default condition editor is good for most scenarios. If you need more flexibility, use Power Fx in the **Condition** branch.
 
 1. In the **Condition** branch, select the _Node Menu_ (**&vellip;**), and then select **Change to formula**.
 

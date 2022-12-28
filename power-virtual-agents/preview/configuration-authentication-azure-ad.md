@@ -126,13 +126,13 @@ You'll complete the first several steps in the Azure portal. You'll complete the
    | State                      | Select **Enabled**                         |
 
    > [!NOTE]
-   > The scope name `Test.Read` is a placeholder value. Replace it with a name that makes sense in your environment.<!-- EDITOR QUESTION: Does this note mean that the "Test.Read" value should be replaced in Admin consent display name, too? -->
+   > The value `Test.Read` is a placeholder. Replace it with a name that makes sense in your environment.
 
-1. Select **Add** scope.<!-- EDITOR QUESTION: Is the button text "Add" or "Add scope"? -->
+1. Select **Add scope**.
 
 ## Configure authentication in Power Virtual Agents
 
-The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the requested access token.<!-- EDITOR QUESTION: Where does the token exchange URL come from? And can you please rewrite this sentence to be easier to understand? I'm not clear enough on what it means to try rewriting it myself. -->
+The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the requested access token.
 
 1. In Power Virtual Agents, under **Settings**, select **Security**, and then select **Authentication**.
 

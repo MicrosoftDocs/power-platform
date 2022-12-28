@@ -13,7 +13,7 @@ ms.custom: ceX, advanced-authoring, bap-template
 ms.service: power-virtual-agents
 ---
 
-# Manage date and time in chatbots (preview)<!-- EDITOR QUESTION: Do you feel this title is inaccurate? The article is about displaying date and time in the user's time zone. As a maker, I'd find a title that reflected that much more helpful than the vague "manage date and time." -->
+# Manage date and time in chatbots (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -75,6 +75,7 @@ Power Virtual Agents stores the date and time in UTC. Before displaying a date a
 
 In this example, we'll get the current date and time using the Power Fx `Now()` function, and then add the time zone offset. It isn't possible to use the `Conversation.LocalTimeZoneOffset` system variable directly in a Power Fx formula. Instead, we'll use a **Set Variable Value** node to create a variable and then assign it the value of `Conversation.LocalTimeZoneOffset`.
 
+<!-- At time of writing, there was no way to use the Conversation.LocalTimeZoneOffset system variable directly in a Power Fx formula. As a workaround, the following instructions have you use a Set Variable Vale node to create a new variable and assign it to the value of Conversation.LocalTimeZoneOffset  -->
 1. Create a topic and add the trigger phrase `what time is it`.
 
 1. In the authoring canvas, select **Add node** (**+**). Select **Set a variable value**.

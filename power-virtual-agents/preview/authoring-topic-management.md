@@ -1,5 +1,5 @@
 ---
-title: Redirect and end topics (preview)
+title: Manage topics (preview)
 description: Learn how to switch to other topics and end a topic in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 12/13/2022
@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ---
 
-# Redirect and end topics (preview)<!-- EDITOR'S NOTE: I changed the title to more accurately reflect the content of the article. While the menu item is named "Topic management," the article doesn't discuss the other options on that menu. -->
+# Manage topics (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

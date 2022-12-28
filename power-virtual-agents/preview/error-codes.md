@@ -129,4 +129,4 @@ Common problems include:
 
 **Error message:** This error doesn't produce an error message
 
-**Resolution:** Contact customer support for more details.<!-- EDITOR QUESTION: Is there a "contact Microsoft support" page we can link to? -->
+**Resolution:** [Contact customer support](../fundamentals-support.md) for more details.

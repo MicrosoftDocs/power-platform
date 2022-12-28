@@ -12,7 +12,6 @@ ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ---
 <!-- EDITOR'S NOTE: This article doesn't mention "slot filling" at all, and it's not a particularly advanced use of entities. Would it make sense to change the file name to reflect its actual contents? -->
-<!-- EDITOR'S NOTE: Also, this version of this article, unlike the production version, doesn't mention custom entities. Is that because custom entities aren't available in the preview yet? They seem to be; at the time of this writing, I can create a custom entity in my preview bot. If custom entities ARE available now in the preview, please add that section to this article. -->
 
 # Use entities in Power Virtual Agents bots (preview)
 
@@ -26,7 +25,7 @@ Power Virtual Agents comes with prebuilt entities that represent the types of in
 
 ## Use entities in a conversation
 
-1. Go to your bot's [**Topics page**](./authoring-create-edit-topics.md) and open the authoring canvas for the topic you want to add an entity to.
+1. Go to your bot's [**Topics page**](authoring-create-edit-topics.md) and open the authoring canvas for the topic you want to add an entity to.
 
 1. Select the plus (**+**) icon to add a node, and then select **Ask a question**.
 

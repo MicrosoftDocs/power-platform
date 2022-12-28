@@ -70,7 +70,7 @@ In this example, we'll use a Power Fx expression to store the customer's name an
 
 1. Under the **Question** node, select **+** and then select **Set a variable value**.
 
-1. Select the box under **Set variable**, and then select **Create a new variable** and name it `capsName`.
+1. Select the box under **Set variable**, and then select **Create new** and name it `capsName`.
 
 1. In the **To value** box, select the **>** arrow, and then select the **Formula** tab.
 
