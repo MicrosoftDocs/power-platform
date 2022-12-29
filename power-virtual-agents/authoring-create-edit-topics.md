@@ -2,7 +2,7 @@
 title: Use topics to design a chatbot conversation
 description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 12/29/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -170,7 +170,7 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
 To [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md), select **Call an action**.
 
-If you've configured hand-off to omnichannel with voice-based capabilities, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
+If you've enabled voice-based capabilities for your bot, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
 
 #### Show a message
 
