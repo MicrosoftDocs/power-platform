@@ -30,9 +30,9 @@ In Power Virtual Agents, a topic defines a how a bot conversation plays out.
 
 To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
 
-A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
+A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that relate to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
 
-The AI uses natural language understanding (NLU) to parse what a customer types and find the most appropriate trigger phrase or node.
+The AI uses natural language understanding (NLU) to parse what a customer typed and find the most appropriate trigger phrase or node.
 
 For example, a user might type "Open hours" into your bot. The AI matches that to the **Store hours** topic, begins a conversation that asks which store the customer is interested in, and then displays the hours the store is open.
 

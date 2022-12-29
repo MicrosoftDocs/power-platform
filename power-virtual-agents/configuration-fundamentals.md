@@ -21,9 +21,9 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](configuration-fundamentals.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/configuration-fundamentals-teams.md)
 
-Power Virtual Agents has a number of advanced features that let you extend the capabilities of what bot conversations can do.
+Power Virtual Agents has many advanced features that let you extend the capabilities of what bot conversations can do.
 
-These features go beyond basic topic authoring and bot conversations and allow you to create a personalized look and feel to your bot, as well as give you more flexibility in what you users can ask your bot to do.
+These features allow you to personalize the look and feel of your bot and give you more flexibility in what your users can ask your bot to do.
 
 You can sign-in to backend systems, seamlessly integrate between virtual support conversations, and customize the look and feel of your bot.
 
