@@ -176,7 +176,7 @@ To use system variables in a Power Fx formula, you must add `System.` before the
 | Activity.From.Id               | string | ✔      | The channel-specific unique ID of the sender                |
 | Activity.From.Name             | string | ✔      | The channel-specific user-friendly name of the sender       |
 | Activity.Name                  | string |        | The name of the event                                       |
-| Activity.Text                  | string |        | The last message sent by the user                           |
+| Activity.Text                  | string |        | The most recent message sent by the user                    |
 | Activity.Type                  | choice |        | Type of [activity][]                                        |
 | Activity.TypeId                | string | ✔      | Type of [activity][], as a string                           |
 | Activity.Value                 | any    | ✔      | Open-ended value                                            |
@@ -184,8 +184,8 @@ To use system variables in a Power Fx formula, you must add `System.` before the
 | Channel.DisplayName            | string | ✔      | The display the name of the channel                         |
 | Conversation.Id                | string |        | The unique ID of the current conversation                   |
 | LastActivity.Id                | string |        | The ID of the previously sent [activity][]                  |
-| LastMessage.Id                 | string |        | The ID of the last message sent by the user                 |
-| LastMessage.Text               | string |        | The last message sent by the user                           |
+| LastMessage.Id                 | string |        | The ID of the previous message sent by the user             |
+| LastMessage.Text               | string |        | The previous message sent by the user                       |
 | Recognizer.TriggerMessage.Id   | string |        | The ID of the user message that triggered the current topic |
 | Recognizer.TriggerMessage.Text | string |        | The user message that triggered the current topic           |
 | User.DisplayName               | string |        | The display name of the signed-in user                      |

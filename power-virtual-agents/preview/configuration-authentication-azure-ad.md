@@ -2,7 +2,7 @@
 title: Configure user authentication with Azure Active Directory (preview)
 description: Use Azure Active Directory as your service provider for user authentication in Power Virtual Agents preview.
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 12/07/2022
+ms.date: 12/29/2022
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -117,16 +117,13 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Set the following properties. You can leave the other properties blank.
 
-   | Property                   | Value                                      |
-   | -------------------------- | ------------------------------------------ |
-   | Scope name                 | Enter `Test.Read`                          |
-   | Who can consent?           | Select **Admins and users**                |
-   | Admin consent display name | Enter `Test.Read`                          |
-   | Admin consent description  | Enter `Allows the app to sign the user in.`|
-   | State                      | Select **Enabled**                         |
-
-   > [!NOTE]
-   > The value `Test.Read` is a placeholder. Replace it with a name that makes sense in your environment.
+   | Property                   | Value                                                                  |
+   | -------------------------- | ---------------------------------------------------------------------- |
+   | Scope name                 | Enter a name that makes sense in your environment, such as `Test.Read` |
+   | Who can consent?           | Select **Admins and users**                                            |
+   | Admin consent display name | Enter a name that makes sense in your environment, such as `Test.Read` |
+   | Admin consent description  | Enter `Allows the app to sign the user in.`                            |
+   | State                      | Select **Enabled**                                                     |
 
 1. Select **Add scope**.
 
