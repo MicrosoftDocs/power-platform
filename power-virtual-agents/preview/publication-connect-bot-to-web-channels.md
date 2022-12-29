@@ -1,14 +1,15 @@
 ---
-title: Publish your bot on your own or a demo website (preview)
+title: Customize the demo website or publish your bot on your website (preview)
 description: Customize a prebuilt demo website to try out your bot, or publish your bot to your own website in Power Virtual Agents preview.
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
-ms.date: 10/10/2022
-ms.topic: article
+ms.date: 12/07/2022
+ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "publication, authoring, ceX"
+ms.custom: publication, authoring, ceX, bap-template
 ms.collection: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 # Customize the demo website or publish your bot on your website (preview)
@@ -23,7 +24,7 @@ You should use the demo website only to try out your bot, or to share it with te
 
 ## Customize the demo website
 
-You can edit the demo website's welcome message and trigger phrases as often as you like. The welcome message can explain the purpose of the testing and prompt your teammates for what to ask the bot.
+Edit the demo website's welcome message and trigger phrases as often as you like. The welcome message can explain the purpose of the testing and prompt your teammates for what to ask the bot.
 
 1. In the navigation menu, select **Settings**, and then select **Channels**.
 
@@ -35,13 +36,13 @@ You can edit the demo website's welcome message and trigger phrases as often as 
 
     Trigger phrases are what initiate specific topics, so you could enter trigger phrases for topics that you want your teammates to test.
 
-    :::image type="content" source="media/publication-connect-bot-to-web-channels/channel-share-demo-website.png" alt-text="Screenshot of the demo website customization options.":::
+    :::image type="content" source="media/publication-connect-bot-to-web-channels/channel-share-demo-website.png" alt-text="Screenshot of demo website customization options.":::
 
 Copy the demo website URL and share it with your teammates.
 
 ## Add your bot to your website
 
-When your bot is ready for customers, you can add it to your website as an iFrame code snippet. Your live website can be external or internal, like a SharePoint site. You can also add the bot to your Power Platform admin center.
+When your bot is ready for customers, add it to your website as an IFrame code snippet. Your live website can be external or internal, like a SharePoint site. You can also add the bot to your Power Platform admin center.
 
 1. In the navigation menu, select **Settings**, and then select **Channels**.
 
@@ -50,7 +51,7 @@ When your bot is ready for customers, you can add it to your website as an iFram
     - Select **Copy** to copy the embed code to the clipboard.
     - Select **Share to email** to open a compose window in your default email app, with the code snippet included.
 
-    :::image type="content" source="media/publication-connect-bot-to-web-channels/channel-custom-website.png" alt-text="Add bot to custom website." border="false":::
+    :::image type="content" source="media/publication-connect-bot-to-web-channels/channel-custom-website.png" alt-text="Screenshot of adding a bot to a custom website.":::
 
 1. Provide the snippet to your web developer to add the bot to your website.
 

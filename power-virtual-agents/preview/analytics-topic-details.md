@@ -1,15 +1,16 @@
 ---
-title: Analyze topic performance (preview)
-description: See how your bot topics are performing and determine what you can do to improve customer satisfaction in Power Virtual Agents preview.
+title: Analyze your bot's topic performance (preview)
+description: See how your bot topics are performing and determine what improvements will increase customer satisfaction in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 10/10/2022
-ms.topic: article
+ms.date: 12/09/2022
+ms.topic: overview
 author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: mboninco
-ms.custom: analysis, ceX
+ms.custom: analysis, ceX, bap-template
 ms.collection: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 # Analyze your bot's topic performance (preview)
@@ -42,17 +43,28 @@ The following charts on a topic details page provide graphical views of the topi
 - [Impact summary charts](#impact-summary-charts)
 - [Topic volume by date chart](#topic-volume-by-date-chart)
 
+## Definitions
+
+The following table defines terms that are used in the charts.
+
+| Term | Definition |
+| --- | --- |
+| Engaged session | A session in which a user-created topic (as opposed to a system topic) is triggered or the session ends in escalation; engaged sessions can have one of three outcomes: resolved, escalated, or abandoned |
+| Resolved session | An engaged session in which the user receives an end-of-conversation survey that asks the question "Did that answer your question?" and the user either doesn't respond or responds "Yes" |
+| Escalated session | An engaged session that's escalated to a human agent |
+| Abandoned session | An engaged session that's not resolved or escalated after one hour from the beginning of the session |
+
 ## Topic summary charts
 
 The topic summary charts summarize the topic's performance indicators for the specified time period and the percent change over the period.
 
 | Description | Details |
 | --- | --- |
-| Total sessions | The total number of sessions. |
-| Average CSAT | The average customer satisfaction (CSAT) survey score. |
-| Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-session survey and either doesn't respond or responds "Yes." |
-| Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that's escalated to a human agent. |
-| Abandon rate | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that's not resolved or escalated after one hour from the beginning of the session. |
+| Total sessions | The total number of sessions |
+| Average CSAT | The average customer satisfaction (CSAT) survey score |
+| Resolution rate | The percentage of engaged sessions that are resolved |
+| Escalation rate | The percentage of engaged sessions that are escalated |
+| Abandon rate | The percentage of engaged sessions that are abandoned |
 
 A blue indicator below the value indicates the percent change in a positive direction. A red indicator indicates the percent change in a negative direction.
 
@@ -62,10 +74,10 @@ The impact summary charts summarize the impact of the topic on key performance i
 
 | Description | Details |
 | --- | --- |
-| CSAT impact | The topic's customer satisfaction impact score. The customer satisfaction impact score is the overall average CSAT survey score including the topic minus the overall average CSAT survey score excluding the topic. |
-| Resolution rate impact | The topic's resolution rate impact score. The resolution rate impact score is the overall resolution rate including the topic minus the resolution rate excluding the topic. |
-| Escalation rate impact | The topic's escalation rate impact score. The escalation rate impact score is the overall escalation rate including the topic minus the escalation rate excluding the topic. |
-| Abandon rate impact | The topic's abandon rate impact score. The abandon rate impact score is the overall abandon rate including the topic minus the abandon rate excluding the topic. |
+| CSAT impact | The overall average CSAT survey score including the topic minus the overall average CSAT survey score excluding the topic |
+| Resolution rate impact | The overall resolution rate including the topic minus the resolution rate excluding the topic |
+| Escalation rate impact | The overall escalation rate including the topic minus the escalation rate excluding the topic |
+| Abandon rate impact | The overall abandon rate including the topic minus the abandon rate excluding the topic |
 
 ## Topic volume by date chart
 
