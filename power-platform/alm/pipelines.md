@@ -1,6 +1,6 @@
 ---
 title: "Overview of Power Platform pipelines (preview)"
-description: "Overview of Power Platform pipelines."
+description: "Overview of Power Platform pipelines and frequently asked questions."
 author: caburk
 ms.subservice: alm
 ms.author: matp
