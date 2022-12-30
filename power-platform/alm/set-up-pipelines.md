@@ -55,16 +55,16 @@ Before you begin, you’ll need to choose which environments will participate in
 
 ### Install the Power Platform pipelines application in your host environment
 
-This step is only required for the initial host set up. You may skip to the next section if you already have access to a host environment where you'll create pipelines.
+This step is only required for the initial host setup. You may skip to the next section if you already have access to a host environment where you'll create pipelines.
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Environments** > **New**, and create a new environment with a Dataverse database. Be sure to choose the same region that your development, QA, and production environments are created in.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Environments** > **New**, and create a new environment with a Dataverse database. Be sure to choose the same region that your development, QA, and production environments are created in.
 1. **Install** the **Power Platform Pipelines** application in your host environment by selecting the host environment, then select **Resources**, **Dynamics 365 apps**.
-2. Select **Install app** and scroll down within the right-hand panel until you find **Power Platform Pipelines**.
+2. Select **Install app** and scroll down within the right-side panel until you find **Power Platform Pipelines**.
 3. Select **Next**, if you agree, accept the terms, and then select **Install**.
    > [!IMPORTANT]
    > You only need to install the deployment pipelines application in the host environment. You don't need to install it in other environments, such as development, QA or production environments that will be associated with your pipelines.
 
-Once installed the deployment pipelines configuration application will appear in the list of installed apps.
+Once installed, the deployment pipelines configuration application will appear in the list of installed apps.
 
 ### Configure a deployment pipeline
 
@@ -72,30 +72,37 @@ Once installed the deployment pipelines configuration application will appear in
 1. Once the **Deployment Pipeline** package installation has completed, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), then select the dedicated host environment (where you installed the application).
 1. **Play** the **Deployment Pipeline Configuration** app.
 1. Select **Environments** on the left pane, and then select **New** to create the environment records in Dataverse:
-   - **Name**. Enter the name for the environment record, it's a good idea to include the same name as the actual environment, such as **Contoso Dev**.
+   - **Name**: Enter the name for the environment record. It's a good idea to include the same name as the actual environment, such as **Contoso Dev**.
    - **Environment Type**: Select either **Development Environment** or **Target Environment**. Select **Development Environment** for all source environments where unmanaged solutions will be developed. Select **Target Environment** for QA and production environments where the managed solution artifacts will be deployed.
-   - **Environment Id:** Paste in the environment ID that you copied in the earlier step.
+   - **Environment Id**: Paste in the environment ID that you copied in the earlier step.
 1. Select **Save**.
-1. Refresh the form then verify **Validation Status** equals **Success**.
+1. Refresh the form, then verify **Validation Status** equals **Success**.
 1. Repeat steps 4-6 until all environments that will participate in the pipeline have environment records created.
 1. Select **Pipelines** on the left navigation pane, and then select **New** to create a new deployment pipeline:
-   - **Name**. Enter a name for the pipeline, such as *Contoso Standard Deployment Pipeline* or *Contoso Hotfix Pipeline*.
-   - **Description**. Optionally, enter a meaningful description for the pipeline.
-    :::image type="content" source="media/Create new pipeline.png" alt-text="New pipeline icon":::
+   - **Name**: Enter a name for the pipeline, such as *Contoso Standard Deployment Pipeline* or *Contoso Hotfix Pipeline*.
+   - **Description**: Optionally, enter a meaningful description for the pipeline.
+
+   :::image type="content" source="media/Create new pipeline.png" alt-text="New pipeline icon":::
     
 1. Within the **Linked Development Environments** grid, select **Add Existing Development Environment**, then associate one or more development environments. Note that a pipeline must have at least one development environment and one stage before it can be run.
-:::image type="content" source="media/Pipelines add development environment.png" alt-text="Add development environment icon":::
+ 
+   :::image type="content" source="media/Pipelines add development environment.png" alt-text="Add development environment icon":::
 
-1. Within the **Deployment Stages** grid, select **New Deployment Stage**, to display the quick create pane. 
+1. Within the **Deployment Stages** grid, select **New Deployment Stage** to display the quick create pane. 
+   
    :::image type="content" source="media/Pipelines create stage QA.png" alt-text="Pipeline stages icon":::
 
 1. Enter the details for each stage, and then select **Save and Close**:
    - **Name**: The name of the stage. 
    - **Description** (optional): Optional description for the stage.
-   - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
+   - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this should be left blank.
    - **Target Deployment Environment**: This is the target environment where this stage will deploy to. 
 1. Repeat the previous two steps for each stage you'd like to add to the pipeline. Note that you must have at least one stage. You can add up to seven stages.
+   
    :::image type="content" source="media/Pipeline fully configured.png" alt-text="A fully configured pipeline.":::
+
+
+
 
 ## Grant access to edit or run pipelines
 
