@@ -10,6 +10,12 @@ ms.custom: template-how-to
 ---
 # Set up Power Platform pipelines (preview)
 
+
+<!-- note from editor: this article mentions Managed Environments and managed environment. Because Managed Environments is listed in the style guide (https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=60466), I followed the capitalization for that. But I lowercased "managed environment" because that looks to be a singular environment, not the set of capabilities. -->
+
+
+
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Create and run pipelines to easily deploy solutions to environments.
@@ -85,7 +91,12 @@ Once installed, the deployment pipelines configuration application will appear i
    :::image type="content" source="media/Create new pipeline.png" alt-text="New pipeline icon":::
     
 1. Within the **Linked Development Environments** grid, select **Add Existing Development Environment**, then associate one or more development environments. Note that a pipeline must have at least one development environment and one stage before it can be run.
- 
+
+
+<!-- Note from editor: The image shows "Add existing deployment environment" being selected, not "development." Should this step match the image? -->
+
+
+
    :::image type="content" source="media/Pipelines add development environment.png" alt-text="Add development environment icon":::
 
 1. Within the **Deployment Stages** grid, select **New Deployment Stage** to display the quick create pane. 
