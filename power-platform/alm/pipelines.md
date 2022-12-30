@@ -41,10 +41,13 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
 - Lower total cost of ownership:
   - Pipelines significantly improve maker, developer, and admin productivity. Pipelines enable your business solutions to come to market faster, with higher quality, through a safe and governed process.
   - Minimal effort to implement custom-tailored change management processes across your organization or team.
+
 - Save time and money:
   - The system handles the heavy lifting and ongoing maintenance so you don't have to.
+
 - Scale ALM at your own pace:
   - Regardless of where you're at in your ALM journey, you can extend Power Platform pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI](../developer/cli/introduction.md)
+
 - Achieve compliance, safety, monitoring, and automation goals with:
   - Customizations and audit logs saved automatically and are easily accessible.
   - Out-of-the-box analytics provides better visibility within a central location.
