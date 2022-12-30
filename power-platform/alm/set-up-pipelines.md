@@ -101,17 +101,14 @@ Once installed, the deployment pipelines configuration application will appear i
    
    :::image type="content" source="media/Pipeline fully configured.png" alt-text="A fully configured pipeline.":::
 
-
-
-
 ## Grant access to edit or run pipelines
 
 Pipeline security is managed within the host environment by assigning security roles. Additionally, users must currently have access to all environments associated with a pipeline in order to create or run the pipeline.
 
 When you installed the Power Platform pipelines application, two security roles were added:
 
-- **Deployment Pipeline User**. Has privileges to run pipelines that have been shared with them.
-- **Deployment Pipeline Administrator**. Has full control over all pipeline configuration, without needing system administrator security role membership.
+- **Deployment Pipeline User**: Has privileges to run pipelines that have been shared with them.
+- **Deployment Pipeline Administrator**: Has full control over all pipeline configuration, without needing system administrator security role membership.
 
 ### Share pipelines with makers
 
@@ -130,7 +127,7 @@ The Deployment Pipeline Administrator security role grants full privileges to al
 > [!IMPORTANT]
 > Pipeline administrators must also have access to all development, test, and production environments that are associated with pipelines they create or run.
 
-Assign the **Deployment Pipeline Administrator** security role to users or Azure Active Directory groups within the host environment. This security role is installed with the Power Platform Pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
+Assign the **Deployment Pipeline Administrator** security role to users or Azure Active Directory groups within the host environment. This security role is installed with the Power Platform pipelines application. More information: [Assign a security role to a user](../admin/assign-security-roles.md)
 
 ## Centrally manage and monitor deployments
 
@@ -141,7 +138,7 @@ The pipeline configuration app and host environment provide many other benefits 
 - View error logs, validation results, and deployment settings. Environment variables and connections are provided during deployment.
 - Retain backups of all solution artifacts by version.
 - Schedule bulk delete jobs to remove unwanted data and conserve database capacity. More information: [Remove a large amount of specific, targeted data with bulk deletion](../admin/delete-bulk-records.md)
-- A dashboard allows you to visualize deployment metrics. You may also build your own reports using data stored within the host.
+- Use a dashboard to visualize deployment metrics. You may also build your own reports using data stored within the host.
 
 ## Next steps
 
