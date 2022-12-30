@@ -47,7 +47,7 @@ The **Pipelines** page in the **Solutions** area displays all deployment activit
 
 Select a pipeline, then select **Run history** to view more detail and error information if there was a failure.
 
-:::image type="content" source="media/pipeline-monitoring.png" alt-text="Monitoring a pipeline":::
+:::image type="content" source="media/pipeline-monitoring.png" alt-text="Screenshot of the pipelines page":::
 
 ## Next steps
 
