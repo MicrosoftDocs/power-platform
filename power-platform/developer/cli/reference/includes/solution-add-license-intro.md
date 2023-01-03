@@ -8,7 +8,7 @@ pac solution add-license --planDefinitionFile ../ISV_Plan_Definition.csv --planM
 
 #### Plan Definition File
 
-Below you will find an example of the plan denifition file:
+Below you will find an example of the plan definition file:
 
 ```csv
 ServiceID,Display name,More info URL
