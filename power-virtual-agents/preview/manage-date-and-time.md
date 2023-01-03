@@ -1,6 +1,6 @@
 ---
-title: Manage date and time in chatbots (preview)
-description: Learn how to manage date and time in Power Virtual Agents bots.
+title: Accommodate time zones (preview)
+description: Learn how Power Virtual Agents bots collect and store date and time. Learn how to adjust the user's time zone and to display dates and times correctly in their time zone.
 keywords: "PVA"
 ms.date: 12/07/2022
 ms.topic: how-to
@@ -13,7 +13,7 @@ ms.custom: ceX, advanced-authoring, bap-template
 ms.service: power-virtual-agents
 ---
 
-# Manage date and time in chatbots (preview)
+# Accommodate time zones (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
