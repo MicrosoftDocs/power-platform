@@ -1,6 +1,6 @@
 ### Examples
 
-The following examples show the use of the pac auth create command.
+The following examples show the use of the pac auth update command.
 
 - [Update auth profile with environment URL](#update-auth-profile-with-environment-url)
 - [Update auth profile with environment ID](#update-auth-profile-with-environment-id)
