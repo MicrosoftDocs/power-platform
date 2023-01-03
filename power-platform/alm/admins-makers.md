@@ -25,6 +25,6 @@ PowerShell cmdlets let admins automate many of the monitoring, management, and q
 
 ## Pipelines
 
-With pipelines in Power Platform, admins create and configure pipelines so makers can use them to deploy solutions to environments with a single click. More information: [Overview of pipelines in Power Platform (preview)](pipelines.md)
+With pipelines in Power Platform, admins create and configure pipelines so makers can use them to deploy solutions to environments with a single click. More information: [Overview of pipelines in Power Platform](pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
