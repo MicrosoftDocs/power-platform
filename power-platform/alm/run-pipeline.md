@@ -26,7 +26,7 @@ For more information about these prerequisites, go to [Set up pipelines (preview
 
 ## Run a pipeline
 
-1. Sign into a Power Platform environment using Power Apps ([make.powerapps.com](https://make.powerapps.com)) or Power Automate ([make.powerautomate.com](https://make.powerautomate.com])) and select your development environment.
+1. Sign into a Power Platform environment using Power Apps ([make.powerapps.com](https://make.powerapps.com)) or Power Automate ([make.powerautomate.com](https://make.powerautomate.com)) and select your development environment.
 1. To deploy a solution using a pipeline, go to **Solutions** and create or select an unmanaged solution to deploy.
 1. From the **Solutions** area, choose between two options to include the solution in the pipeline:
    - Select **Pipelines** from the left navigation pane.
