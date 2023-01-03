@@ -8,7 +8,7 @@ pac solution add-license --planDefinitionFile ../ISV_Plan_Definition.csv --planM
 
 #### Plan Definition File
 
-Below you will find an example of the plan definition file:
+Below you'll find an example of the plan definition file:
 
 ```csv
 ServiceID,Display name,More info URL
@@ -19,7 +19,7 @@ test_isvconnect1599092224747.d365_isvconnect_prod_licensable.goldplan,Fabrikam G
 
 #### Plan Mapping File
 
-Below you will find an example of the plan mapping file:
+Below you'll find an example of the plan mapping file:
 
 ```csv
 Service ID,Component name
