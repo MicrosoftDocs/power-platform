@@ -32,7 +32,7 @@ The flows in this solution sync all your resources into tables and build admin a
 
 The CoE Starter Kit includes features that required the installation of the [Creator Kit](/creator-kit/overview) in the environment where you install the CoE Starter Kit.
 
-[Install the Creator Kit](/creator-kit/setup) before proceeding.
+[Install the Creator Kit](https://learn.microsoft.com/en-us/power-platform/guidance/creator-kit/setup) before proceeding.
 
 ### Create connections
 
