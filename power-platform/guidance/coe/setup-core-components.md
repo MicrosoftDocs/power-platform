@@ -131,20 +131,20 @@ The import can take up to 15 minutes to be completed.
 
 There are several child flows, check to make sure all of these flows are on:
 
-1. HELPER – Send Email
-1. HELPER – Maker Check
-1. HELPER – CloudFlowOperations
-1. HELPER – CanvasAppOperations
-1. HELPER – ObjectOperations
+1. HELPER - Send Email
+1. HELPER - Maker Check
+1. HELPER - CloudFlowOperations
+1. HELPER - CanvasAppOperations
+1. HELPER - ObjectOperations
 1. CLEANUP HELPER - Check Deleted (Ai Models)
 1. CLEANUP HELPER - Check Deleted (Business Process Flows)
-1. CLEANUP HELPER – Check Deleted (Canvas Apps)
-1. CLEANUP HELPER – Check Deleted (Cloud Flows)
-1. CLEANUP HELPER – Check Deleted (Custom Connectors)
-1. CLEANUP HELPER – Check Deleted (Model Driven Apps)
-1. CLEANUP HELPER – Check Deleted (PVA)
+1. CLEANUP HELPER - Check Deleted (Canvas Apps)
+1. CLEANUP HELPER - Check Deleted (Cloud Flows)
+1. CLEANUP HELPER - Check Deleted (Custom Connectors)
+1. CLEANUP HELPER - Check Deleted (Model Driven Apps)
+1. CLEANUP HELPER - Check Deleted (PVA)
 1. CLEANUP HELPER - Check Deleted (Solutions)
-1. CLEANUP HELPER – Power Apps User Shared With
+1. CLEANUP HELPER - Power Apps User Shared With
 
 If you get a connection authorization error turning on a flow, you might need to set the [run-only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
 
