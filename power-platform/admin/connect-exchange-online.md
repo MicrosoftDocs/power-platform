@@ -171,7 +171,7 @@ A Dynamics 365 user can approve their own user mailbox if all of these condition
 
 - Their UPN matches the email address on the mailbox.
 
-- The user has **Approve Email Addresses for Users or Queues** privilege.
+- The OrgDBOrgSetting [RequirePrivilegeToSelfApproveEmailAddress](../admin/OrgDbOrgSettings.md) is disabled (default) or the user has the [Approve Email Addresses for Users or Queues](connect-exchange-online.md#add-the-approve-email-addresses-for-users-or-queues-privilege) privilege.
 
 - The mailbox is not a queue mailbox.
 
