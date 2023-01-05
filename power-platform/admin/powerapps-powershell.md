@@ -460,6 +460,12 @@ Get-DlpPolicy
 
 Gets policy objects for the signed-in admin's tenant.
 
+> [!NOTE]
+> - When viewing a DLP policy via PowerShell, the display name of connectors will reflect the names of the connectors when the DLP policy was created or when those specific connectors were last moved within the policy.  In other words, changes to the display names of connectors will not be reflected.
+> - When viewing a DLP policy via PowerShell, new connectors (those which are in the default group and have never been moved) will not be returned.
+> 
+> For both of these known issues, a workaround is to move the affected connector to another group within the policy, and then move it back to the correct group.  After doing this, each of the connectors will be visible with their correct name.
+
 #### Update a DLP policy
 
 ```powershell
@@ -475,6 +481,8 @@ Remove-DlpPolicy
 ```
 
 Deletes a DLP policy.
+
+
 
 ### DLP resource exemption cmdlets 
 
