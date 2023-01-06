@@ -136,6 +136,6 @@ Stores background operation information for a Deployment Stage Run.
 
 ### See Also
 
-[Overview of Power Platform pipelines (preview)](../../alm/pipelines.md)<br />
+[Overview of pipelines in Power Platform](../../alm/pipelines.md)<br />
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
