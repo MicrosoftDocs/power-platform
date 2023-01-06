@@ -140,3 +140,5 @@ landingContent:
             url: /power-pages/configure/web-api-overview
           - text: Use Visual Studio Code and Power Platform CLI
             url: /power-pages/configure/cli-tutorial
+          - text: Using code components
+            url: /power-pages/configure/component-framework
