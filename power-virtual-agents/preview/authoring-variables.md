@@ -168,27 +168,27 @@ Not all system variables are shown in the list. You must access these hidden sys
 
 To use system variables in a Power Fx formula, you must add `System.` before the variable name. For example, to include the system variable `User.DisplayName` in a formula, you'd need to refer to it as `System.User.DisplayName`.
 
-| Name                           | Type   | Hidden | Definition                                                  |
-| ------------------------------ | ------ | ------ | ----------------------------------------------------------- |
-| Activity.Channel               | choice |        | The channel ID of the current conversation                  |
-| Activity.ChannelData           | any    | ✔      | An object that contains channel-specific content            |
-| Activity.ChannelId             | string | ✔      | The channel ID of the current conversation, as a string     |
-| Activity.From.Id               | string | ✔      | The channel-specific unique ID of the sender                |
-| Activity.From.Name             | string | ✔      | The channel-specific user-friendly name of the sender       |
-| Activity.Name                  | string |        | The name of the event                                       |
-| Activity.Text                  | string |        | The most recent message sent by the user                    |
-| Activity.Type                  | choice |        | Type of [activity][]                                        |
-| Activity.TypeId                | string | ✔      | Type of [activity][], as a string                           |
-| Activity.Value                 | any    | ✔      | Open-ended value                                            |
-| Bot.Name                       | string |        | The name of your bot                                        |
-| Channel.DisplayName            | string | ✔      | The display the name of the channel                         |
-| Conversation.Id                | string |        | The unique ID of the current conversation                   |
-| LastActivity.Id                | string |        | The ID of the previously sent [activity][]                  |
-| LastMessage.Id                 | string |        | The ID of the previous message sent by the user             |
-| LastMessage.Text               | string |        | The previous message sent by the user                       |
-| Recognizer.TriggerMessage.Id   | string |        | The ID of the user message that triggered the current topic |
-| Recognizer.TriggerMessage.Text | string |        | The user message that triggered the current topic           |
-| User.DisplayName               | string |        | The display name of the signed-in user                      |
+| Name                           | Type   | Hidden  | Definition                                                  |
+|--------------------------------|--------|---------|-------------------------------------------------------------|
+| Activity.Channel               | choice | visible | The channel ID of the current conversation                  |
+| Activity.ChannelData           | any    | hidden  | An object that contains channel-specific content            |
+| Activity.ChannelId             | string | hidden  | The channel ID of the current conversation, as a string     |
+| Activity.From.Id               | string | hidden  | The channel-specific unique ID of the sender                |
+| Activity.From.Name             | string | hidden  | The channel-specific user-friendly name of the sender       |
+| Activity.Name                  | string | visible | The name of the event                                       |
+| Activity.Text                  | string | visible | The most recent message sent by the user                    |
+| Activity.Type                  | choice | visible | Type of [activity][]                                        |
+| Activity.TypeId                | string | hidden  | Type of [activity][], as a string                           |
+| Activity.Value                 | any    | hidden  | Open-ended value                                            |
+| Bot.Name                       | string | visible | The name of your bot                                        |
+| Channel.DisplayName            | string | hidden  | The display the name of the channel                         |
+| Conversation.Id                | string | visible | The unique ID of the current conversation                   |
+| LastActivity.Id                | string | visible | The ID of the previously sent [activity][]                  |
+| LastMessage.Id                 | string | visible | The ID of the previous message sent by the user             |
+| LastMessage.Text               | string | visible | The previous message sent by the user                       |
+| Recognizer.TriggerMessage.Id   | string | visible | The ID of the user message that triggered the current topic |
+| Recognizer.TriggerMessage.Text | string | visible | The user message that triggered the current topic           |
+| User.DisplayName               | string | visible | The display name of the signed-in user                      |
 
 [activity]: /azure/bot-service/bot-activity-handler-concept
 
