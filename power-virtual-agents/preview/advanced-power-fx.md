@@ -1,29 +1,26 @@
 ﻿---
-title: "Create expressions using Power Fx (preview)"
-description: "Use Power Fx to create complex bot logic using formulas to manipulate data in Power Virtual Agents preview."
+title: Create expressions using Power Fx (preview)
+description: Use Power Fx to create complex bot logic using formulas to manipulate data in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 10/10/2022
-ms.topic: article
+ms.date: 12/08/2022
+ms.topic: how-to
 author: v-alarioza
 ms.author: v-alarioza
 ms.reviewer: kamrani
 manager: iawilt
 ms.collection: virtual-agent
-ms.custom: ceX, advanced-authoring
+ms.custom: ceX, advanced-authoring, bap-template
+ms.service: power-virtual-agents
 ---
 
 # Create expressions using Power Fx (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-Power Fx is a low-code language that makers can work with directly in an Excel-like formula bar. Use Power Fx to create complex bot logic via formulas to manipulate data, such as setting the value of variables, parsing a string, or using expressions in conditionals.
-
-For more information, see the [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](/power-platform/power-fx/formula-reference) documentation.
+Power Fx is a low-code language that uses Excel-like formulas. Use Power Fx to create complex logic that allows your bots to manipulate data. For instance, a Power Fx formula can set the value of a variable, parse a string, or use an expression in a condition. For more information, see the [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](/power-platform/power-fx/formula-reference).
 
 > [!NOTE]
-> Power Virtual Agents uses US-style numbering in Power Fx, where the decimal separator is indicated by a period or dot, for example `12,567.892`.
->   
-> [This also means Power Fx parameters must be separated by commas (,)](/power-platform/power-fx/expression-grammar#separators).
+> Power Fx formulas in Power Virtual Agents use US-style numbering. That is, the decimal separator is a period or dot, as in `12,567.892`. This means [Power Fx parameters must be separated by commas (,)](/power-platform/power-fx/expression-grammar#separators).
 
 ## Prerequisites
 
@@ -32,19 +29,19 @@ For more information, see the [Power Fx overview](/power-platform/power-fx/overv
 
 ## Use variables in a formula
 
-To use a variable in a Power Fx formula, you must add a prefix depending on the variable's scope:
+To use a variable in a Power Fx formula, you must add a prefix to its name to indicate the variable's scope:
 
 - For [system variables](authoring-variables.md#system-variables), use `System.`
 - For [global variables](authoring-variables-bot.md), use `Global.`
 - For [topic variables](authoring-variables.md), use `Topic.`
 
-For example, you'd need to use `System.Conversation.Id` to access the respective [system variable](authoring-variables.md#system-variables).
+For example, to use the system variable `Conversation.Id` in a formula, you'd need to refer to it as `System.Conversation.Id`.
 
-:::image type="content" source="media/advanced-power-fx/variable-prefix.png" alt-text="Screenshot of the Enter formula pane with an expression containing the System variable.":::
+:::image type="content" source="media/advanced-power-fx/variable-prefix.png" alt-text="Screenshot of the Enter formula pane with an expression that contains a system variable.":::
 
-## Use literal values
+## Use literal values in a formula
 
-Instead of using a variable, you can also enter literal values. To use a literal value, you must enter the value in the format that corresponds to its [type](authoring-variables.md#variable-types):
+In addition to using variables in a Power Fx formula, you can enter literal values. To use a literal value in a formula, you must enter it in the format that corresponds to its [type](authoring-variables.md#variable-types). The following table lists the data types and the format of their corresponding literal values.
 
 | Type     | Format examples                                                                         |
 | -------- | --------------------------------------------------------------------------------------- |
@@ -59,66 +56,62 @@ Instead of using a variable, you can also enter literal values. To use a literal
 
 ## Use Power Fx to set a variable
 
-In this example, a Power Fx expression is used to convert the user's name to uppercase.
+In this example, we'll use a Power Fx expression to store the customer's name and output it in capital letters.
 
-1. Create a new topic.
+1. Create a topic and add a **Question** node.
 
-1. Select the **+** icon and then choose **Ask a question**.
+1. For **Enter a message**, enter `What is your name?`.
 
-1. For **Enter a response**, enter `What is your name?`.
+1. Under **Identify**, select the entity **Person name**.
 
-1. Select the **Identify** box, and in the flyout menu, choose **Person name**.
+1. Select the box under **Save response as**, and then select the variable `Var1` and name it `customerName`.
 
-1. In the **Save response as** box, select the **>** arrow and **Create a new variable** named `Var1`.
+    :::image type="content" source="media/advanced-power-fx/uppercase-question-node.png" alt-text="Screenshot of a Question node with a variable named Var1 highlighted.":::
 
-    :::image type="content" source="media/advanced-power-fx/uppercase-question-node.png" alt-text="Screenshot of the Question node with the user's response set to a variable named Var1.":::
+1. Under the **Question** node, select **+** and then select **Set a variable value**.
 
-1. Under the **Question** node, select **+** and choose **Set a property**.
+1. Select the box under **Set variable**, and then select **Create new** and name it `capsName`.
 
-1. In the **Set variable** box, select the **>** arrow and **Create a new variable** named `Var2`.
+1. In the **To value** box, select the **>** arrow, and then select the **Formula** tab.
 
-1. In the **To value** box, select the **>** arrow.
+1. In the **fx** box, enter `Upper(Text(Topic.customerName))`, and then select **Insert**.
 
-1. Select the **Formula** tab. In the **fx** box, enter `Upper(Text(Topic.Var1))` and select **Insert**.
+    :::image type="content" source="media/advanced-power-fx/uppercase-pfx-formula.png" alt-text="Screenshot of a Power Fx formula in a Set a Variable node with the Formula tab highlighted.":::
 
-    :::image type="content" source="media/advanced-power-fx/uppercase-pfx-formula.png" alt-text="Screenshot of the Set a Variable node with a Power Fx formula.":::
+1. Under the **Question** node, select **+** and then select **Send a message**.
 
-1. Under the **Question** node, select **+** and choose **Send a message**.
-
-1. Enter the `User Name:` and then add `Var2`.
+1. Enter `HELLO `, select **{x}**, and then select `capsName`.
 
     :::image type="content" source="media/advanced-power-fx/uppercase-send-message.png" alt-text="Screenshot of the Send a Message node with a message defined.":::
 
-## Use Power Fx as a condition
+## Use a Power Fx formula as a condition
 
-To evaluate more complex expressions, set up Condition nodes to use Power Fx formulas.
+To evaluate more complex expressions, set up **Condition** nodes to use Power Fx formulas.
 
-In this example, the bot will determine if a booking date qualifies for a discount. To do this, it checks if the booking date provided by the user is 14 days or more from the current date.
+In this example, the bot determines if a booking date qualifies for a discount. To do that, it checks whether the booking date provided by the customer is 14 days or more from the current date.
 
-1. Create a new topic.
+1. Create a topic and add a **Question** node.
 
-1. Select the **+** icon and then choose **Ask a question**.
+1. For **Enter a message**, enter `Booking date?`.
 
-1. For **Enter a response**, enter the `Booking date?`.
+1. Under **Identify**, select the entity **Date and time**.
 
-1. In the **Identify** box, select the **>** arrow and choose **Date and time**.
+1. Select the box under **Save response as**, and then select the variable `Var1` and name it `bookingDate`.
 
-1. In the **Save response as** box, select the **>** arrow and **Create a new variable** named `Var1`.
+    :::image type="content" source="media/advanced-power-fx/condition-question-node.png" alt-text="Screenshot of a Question node with a date and time entity chosen and a variable set.":::
 
-    :::image type="content" source="media/advanced-power-fx/condition-question-node.png" alt-text="Screenshot of question node with date and time entity chosen and variable set.":::
+1. Select the **+** icon and then select **Add a condition**.
 
-1. Select the **+** icon and then choose **Add a condition**.
+1. In the **Condition** node, select the **Node menu** (**&#8942;**), and then select **Change to formula**.
 
-1. In the **ConditionItem** node, select the **Node menu** (vertical three dots), then **Change to formula**.
+    :::image type="content" source="media/advanced-power-fx/condition-change-to-formula.png" alt-text="Screenshot of a Condition node with the Node Menu icon and Change to formula highlighted.":::
 
-1. In the **Enter or select a value** box, select the **>**.
+1. In the **Function** box, select the **>** arrow, and then select the **Formula** tab.
 
-1. Select the **Formula** tab. In the **fx** box enter `Topic.Var1 > (DateAdd (Now(), 14))` and select **Insert**.
+1. Replace the contents of the **fx** box with the formula `Topic.bookingDate > (DateAdd (Now(), 14))`, and then select **Insert**.
 
-    :::image type="content" source="media/advanced-power-fx/condition-formula.png" alt-text="Screenshot of Power Fx formula entered into condition node.":::
+1. Under the **Condition** node, add a **Send a message** node and enter the message `You qualify for a discount`.
 
-1. Under the **ConditionItem** node, add a **Send a message** node to let the user know they qualify for a discount. Enter the message `You qualify for a discount`.
+1. Under the **All Other Conditions** node, add a **Send a message** node and enter the message, `Sorry, you don't qualify for a discount`.
 
-1. Under the **All Other Conditions** node, add a **Send a message** node. Enter the message, `Sorry, you don't qualify for a discount`.
-
-    :::image type="content" source="media/advanced-power-fx/condition-messages.png" alt-text="Screenshot of message nodes in condition branches.":::
+    :::image type="content" source="media/advanced-power-fx/condition-messages.png" alt-text="Screenshot of Message nodes in a Condition node.":::

@@ -49,7 +49,7 @@ This article covers how to configure Azure Active Directory (Azure AD) as your s
 
 1. Under **Platform configurations** select **Add a platform**, then select **Web**.
 
-1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect`.
+1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect` and `https://europe.token.botframework.com/.auth/web/redirect`.
 
 1. Under the **Implicit grant and hybrid flows** section, turn on both **ID tokens (used for implicit and hybrid flows)** and **Access tokens (used for implicit flows)**.
 

@@ -1,5 +1,5 @@
 ---
-title: Set up Power Platform Pipelines 
+title: Set up pipelines in Power Platform (preview)
 description: Learn how to create, configure, share, and manage Power Platform pipelines.
 author: caburk
 ms.author: matp
@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 11/17/2022
 ms.custom: template-how-to
 ---
-# Set up Power Platform pipelines (preview)
+# Set up pipelines in Power Platform (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -34,28 +34,31 @@ Power Platform administrators can create one or more pipelines, associate any nu
 Before you begin, you’ll need to choose which environments will participate in pipelines. A common set-up might include the following environments:
 
 - **Host environment (required)**. This special-purpose environment acts as the **storage** and management plane for all pipeline configuration, security, and run history.
-   - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated production environment** separate from the development and target QA and production environments that participate in pipelines.
-   - If desired, you can configure multiple different hosts within a tenant, such as for separately managing pipelines for different business organizations or geographic locations. One host for the entire tenant is also acceptable as long as all environments are in the same geographic location.
-   - Doesn't require the environment be a Managed Environment. Using a production Dataverse environment type is recommended for long-term use.
+  - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated production environment** separate from the development and target QA and production environments that participate in pipelines.
+  - If desired, you can configure multiple different hosts within a tenant, such as for separately managing pipelines for different business organizations or geographic locations. One host for the entire tenant is also acceptable as long as all environments are in the same geographic location.
+  - Doesn't require the environment be a Managed Environment. Using a production Dataverse environment type is recommended for long-term use.
 
    > [!IMPORTANT]
-   > - Deleting the host environment deletes all pipelines and run data. Use caution and understand the impact of data and configuration loss as well as maker access to pipelines hosted in the environment. 
+   >
+   > - Deleting the host environment deletes all pipelines and run data. Use caution and understand the impact of data and configuration loss as well as maker access to pipelines hosted in the environment.
    > - Source and target environments can only be managed by one host. Use different environments for each host.
+   >
 - **Development (required)**. This is where you’ll develop solutions. Notice that "development" refers to the *purpose* you'll assign to the environment, not the *type* of environment that can be used.
-   - Must be a Managed Environment except when you use developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned.
+  - Must be a Managed Environment except when you use developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned.
 - **QA environment (optional).** This is where you’ll deploy solutions for testing prior to moving them to production.
-   - Must be a Managed Environment except when using developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. Restrictions unrelated to pipelines might also be present when using developer and trial environments.
+  - Must be a Managed Environment except when using developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. Restrictions unrelated to pipelines might also be present when using developer and trial environments.
 - **Production (required)** The final destination for a deployment pipeline. This is where end users will run the apps that are deployed.
-   - Must be a Managed Environment except when using developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. Restrictions unrelated to Pipelines may also be present when using Developer and trial environments.
+  - Must be a Managed Environment except when using developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. Restrictions unrelated to Pipelines may also be present when using Developer and trial environments.
+
 > [!TIP]
 > Use environment names that indicate their purpose. For example, *Contoso Host*, *Contoso Development*, *Contoso QA*, and so forth.
 
-### Install the Power Platform pipelines application in your host environment
+### Install the pipelines application in your host environment
 
 This step is only required for the initial host set up. You may skip to the next section if you already have access to a host environment where you'll create pipelines.
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Environments** > **New**, and create a new environment with a Dataverse database. Be sure to choose the same region that your development, QA, and production environments are created in.
-1. **Install** the **Power Platform Pipelines** application in your host environment by selecting the host environment, then select **Resources**, **Dynamics 365 apps**.
+1. Install the **Power Platform Pipelines** application in your host environment by selecting the host environment, then select **Resources** > **Dynamics 365 apps**.
 2. Select **Install app** and scroll down within the right-hand panel until you find **Power Platform Pipelines**.
 3. Select **Next**, if you agree, accept the terms, and then select **Install**.
    > [!IMPORTANT]
@@ -79,18 +82,18 @@ Once installed the deployment pipelines configuration application will appear in
    - **Name**. Enter a name for the pipeline, such as *Contoso Standard Deployment Pipeline* or *Contoso Hotfix Pipeline*.
    - **Description**. Optionally, enter a meaningful description for the pipeline.
     :::image type="content" source="media/Create new pipeline.png" alt-text="New pipeline icon":::
-    
+
 1. Within the **Linked Development Environments** grid, select **Add Existing Development Environment**, then associate one or more development environments. Note that a pipeline must have at least one development environment and one stage before it can be run.
 :::image type="content" source="media/Pipelines add development environment.png" alt-text="Add development environment icon":::
 
-1. Within the **Deployment Stages** grid, select **New Deployment Stage**, to display the quick create pane. 
+1. Within the **Deployment Stages** grid, select **New Deployment Stage**, to display the quick create pane.
    :::image type="content" source="media/Pipelines create stage QA.png" alt-text="Pipeline stages icon":::
 
 1. Enter the details for each stage, and then select **Save and Close**:
-   - **Name**: The name of the stage. 
+   - **Name**: The name of the stage.
    - **Description** (optional): Optional description for the stage.
    - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
-   - **Target Deployment Environment**: This is the target environment where this stage will deploy to. 
+   - **Target Deployment Environment**: This is the target environment where this stage will deploy to.
 1. Repeat the previous two steps for each stage you'd like to add to the pipeline. Note that you must have at least one stage. You can add up to seven stages.
    :::image type="content" source="media/Pipeline fully configured.png" alt-text="A fully configured pipeline.":::
 
@@ -135,4 +138,4 @@ The pipeline configuration app and host environment provide many other benefits 
 
 ## Next steps
 
-[Run a pipeline](run-pipeline.md)
+[Run pipelines in Power Platform](run-pipeline.md)
