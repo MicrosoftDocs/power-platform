@@ -1,6 +1,6 @@
 ---
-title: "Power Platform Pipeline (Preview) table reference | Microsoft Learn"
-description: "Includes schema information for tables used in the Power Platform Pipeline solution."
+title: "Pipeline (preview) table reference | Microsoft Learn"
+description: "Includes schema information for tables used in the pipeline solution."
 ms.date: 12/06/2022
 ms.service: powerapps
 ms.topic: reference
@@ -12,9 +12,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Power Platform Pipeline (Preview) table reference
+# Pipeline (preview) table reference
 
-This topic contains the table definitions used in the Power Platform Pipeline (Preview) solution. More information: [What are Power Platform pipelines?](../../alm/pipelines.md)
+This topic contains the table definitions used in the Pipeline (preview) solution. More information: [What are Power Platform pipelines?](../../alm/pipelines.md)
 
 > [!NOTE]
 > - This is a preview feature and the table definitions might change.
@@ -27,7 +27,7 @@ This topic contains the table definitions used in the Power Platform Pipeline (P
 
 ## DeploymentArtifact (Deployment Artifact)
 
-Stores solution artifacts which are exported when running Pipelines.
+Stores solution artifacts which are exported when running pipelines.
 
 |SchemaName<br/>Display Name |Type  |Description  |
 |---------|---------|---------|
@@ -44,7 +44,7 @@ Stores solution artifacts which are exported when running Pipelines.
 
 ## DeploymentEnvironment (Deployment Environment)
 
-Stores the environments which are participating in Pipelines and configured in the deployment stages.
+Stores the environments which are participating in pipelines and configured in the deployment stages.
 
 |SchemaName<br/>Display Name |Type  |Description  |
 |---------|---------|---------|
@@ -60,11 +60,11 @@ Stores the environments which are participating in Pipelines and configured in t
 
 ## DeploymentPipeline (Deployment Pipeline)
 
-Stores the Pipeline configurations.
+Stores the pipeline configurations.
 
 |SchemaName<br/>Display Name |Type  |Description  |
 |---------|---------|---------|
-|`DeploymentPipelineId`<br/>**Deployment Pipeline** |Uniqueidentifier | Unique identifier for the Pipeline instances|
+|`DeploymentPipelineId`<br/>**Deployment Pipeline** |Uniqueidentifier | Unique identifier for the pipeline instances|
 |`Description`<br/>**Description**|String| Custom description of the Pipeline.|
 |`Name`<br/>**Name**|String| The name of the Pipeline record.|
 |`OwnerId`<br/>**Owner**|Owner| Owner Id|
