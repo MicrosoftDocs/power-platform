@@ -22,7 +22,7 @@ Operational processes for datacenters periodically identify environments for ten
 > [!TIP]
 > If you get notifications about exceeding your entitled storage capacity, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements) for actions you can take. 
 > 
-> For information on automatic cleanup of Microsoft Dataverse for Teams environments, see [Automatic deletion of inactive Microsoft Dataverse for Teams environments (preview)](inactive-teams-environment.md).
+> For information on automatic cleanup of Microsoft Dataverse for Teams environments, see [Automatic deletion of inactive Microsoft Dataverse for Teams environments](inactive-teams-environment.md).
 
 To see the status of your environments:
 
