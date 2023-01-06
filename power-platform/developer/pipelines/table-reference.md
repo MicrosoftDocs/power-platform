@@ -14,7 +14,7 @@ search.app:
 ---
 # Pipeline (preview) table reference
 
-This article contains the table definitions used in the Pipeline (preview) solution. More information: [What are Power Platform pipelines?](../../alm/pipelines.md)
+This article contains the table definitions used in the Pipeline (preview) solution. More information: [Overview of pipelines in Power Platform](../../alm/pipelines.md)
 
 > [!NOTE]
 >
