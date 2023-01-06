@@ -1,6 +1,6 @@
 ---
-title: Run a pipeline
-description: Learn how to deploy solutions using Power Platform pipelines.
+title: Run pipelines in Power Platform
+description: Learn how to deploy solutions using pipelines.
 author: caburk
 ms.author: matp
 ms.service: powerapps
@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 11/04/2022
 ms.custom: template-how-to
 ---
-# Run Power Platform pipelines (preview)
+# Run pipelines in Power Platform (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -16,20 +16,17 @@ Pipelines automate solution deployments between Power Platform environments and 
 
 ## Prerequisites
 
-<!-- note from editor: customer engagement should be lowercase; it's better to name the apps than to use customer engagement. https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=48172 -->
-
-
 - One or more pipelines must already be created and associated with the environment that's used for development.
 - The development environment must have Microsoft Dataverse or Dataverse plus Dynamics 365 customer engagement apps.
 - You must have access to run a pipeline. More information: [Grant access to edit or run pipelines](set-up-pipelines.md#grant-access-to-edit-or-run-pipelines)
 - You must have privileges to import solutions to the target environments associated with a pipeline.
-- The **Power Platform pipelines** application must be installed in your pipeline host environment. More information: [Install the Power Platform pipelines application in your host environment](set-up-pipelines.md#install-the-power-platform-pipelines-application-in-your-host-environment)
+- The **Power Platform Pipelines** application must be installed in your pipeline host environment. More information: [Install the pipelines application in your host environment](set-up-pipelines.md#install-the-pipelines-application-in-your-host-environment)
 
-For more information about these prerequisites, go to [Set up Power Platform pipelines (preview)](set-up-pipelines.md).
+For more information about these prerequisites, go to [Set up pipelines (preview)](set-up-pipelines.md).
 
 ## Run a pipeline
 
-1. Sign in to a Power Platform environment (make.powerapps.com or make.powerautomate.com) and select your development environment.
+1. Sign in to a Power Platform environment using Power Apps ([make.powerapps.com](https://make.powerapps.com)) or Power Automate ([make.powerautomate.com](https://make.powerautomate.com)) and select your development environment.
 1. To deploy a solution using a pipeline, go to **Solutions** and create or select an unmanaged solution to deploy.
 1. From the **Solutions** area, choose between two options to include the solution in the pipeline:
    - Select **Pipelines** from the left navigation pane.
@@ -49,6 +46,6 @@ Select a pipeline, then select **Run history** to view more detail and error inf
 
 :::image type="content" source="media/pipeline-monitoring.png" alt-text="Screenshot of the pipelines page":::
 
-## Next steps
+### See also
 
 [Solution concepts](solution-concepts-alm.md)

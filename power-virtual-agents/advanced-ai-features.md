@@ -59,7 +59,7 @@ There are some specific features that further improve how the AI in Power Virtua
 
 Topic overlap detection helps improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
 
-[After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), you can view a list of overlapped topics. In the navigation menu, select **Analytics**, then select the **Topic triggering (preview)** tab. 
+[After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), you can view a list of overlapped topics. In the navigation menu, select **Analytics**, then select the **Topic triggering (preview)** tab.
 
 :::image type="content" source="media/advanced-ai-features/overlapped-topics.png" alt-text="Screenshot showing the overlapping topics tile lists topics with their similarity score.":::
 
@@ -111,7 +111,7 @@ In the following screenshot, the first time the bot comes across a question it d
 
 Before auto-triggering improvements, a bot user asks a question with a spelling error "I'd like to purchase somethign," to which the bot says "Sorry, I didn't get that. Did you mean:" and then provides a few options such as **Buy items** or **Buy service**. In this case, the bot user selected **Buy items**.
 
-The next time someone asks the same question, the bot doesn't ask for clarification – it knows from previous interactions what the bot user is likely asking to buy items, so it goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?"
+The next time someone asks the same question, the bot doesn't ask for clarification. It knows from previous interactions that the bot user is likely asking to buy items. The bot goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?"
 
 In this example, it also understands the misspelling of "somethign" to mean "something," so it's able to carry over the improved intent triggering even though the bot user's question is spelled differently.
 

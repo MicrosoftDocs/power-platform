@@ -1,6 +1,6 @@
 ---
-title: "Overview of Power Platform pipelines (preview)"
-description: "Overview of Power Platform pipelines and frequently asked questions."
+title: "Overview of pipelines in Power Platform (preview)"
+description: "Overview of pipelines in Power Platform and fequently asked questions."
 author: caburk
 ms.subservice: alm
 ms.author: matp
@@ -14,16 +14,16 @@ search.app:
   - PowerApps
   - D365CE
 ---
-
-# Overview of Power Platform pipelines (preview)
+# Overview of pipelines in Power Platform (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Pipelines aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.
+Pipelines in Power Platform aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.
 
 :::image type="content" source="media/deployment-pipelines.png" alt-text="Example of the deployment Pipelines feature":::
 
 > [!IMPORTANT]
+>
 > - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
@@ -46,8 +46,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
   - The system handles the heavy lifting and ongoing maintenance so you don't have to.
 
 - Scale ALM at your own pace:
-  - Regardless of where you're at in your ALM journey, you can extend Power Platform pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI](../developer/cli/introduction.md)
-
+  - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI](../developer/cli/introduction.md)
 - Achieve compliance, safety, monitoring, and automation goals with:
   - Customizations and audit logs saved automatically and are easily accessible.
   - Out-of-the-box analytics provides better visibility within a central location.
@@ -100,7 +99,7 @@ This isn't recommended.
 
 ### What do pipelines deploy?
 
-Pipelines deploy solutions as well as configuration for the target environment such as connections, connection references, and environment variables. Any Power Platform customization contained in your solution can be deployed using pipelines. Pipelines, or solutions in general, don't contain data stored within Dataverse tables. 
+Pipelines deploy solutions as well as configuration for the target environment such as connections, connection references, and environment variables. Any Power Platform customization contained in your solution can be deployed using pipelines. Pipelines, or solutions in general, don't contain data stored within Dataverse tables.
 
 ### Can I use pipelines in the default environment?
 
@@ -154,6 +153,6 @@ Not currently. We aim for these to work together more seamlessly in the future.
 
 ## Next steps
 
-[Set up Power Platform pipelines (preview)](set-up-pipelines.md)
+[Set up pipelines (preview)](set-up-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

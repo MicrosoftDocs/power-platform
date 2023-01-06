@@ -157,7 +157,7 @@ Other elements include:
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
 
-**[Error](reference/function-iferror.md)** – Create a custom error or pass throguh an error.
+**[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
 **[Errors](reference/function-errors.md)** – Provides error information for previous changes to a data source.
 

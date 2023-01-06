@@ -23,9 +23,8 @@ This section describes how you as a Power Platform administrator or app maker ca
 
 PowerShell cmdlets let admins automate many of the monitoring, management, and quality assurance tasks in Power Platform. More information: [Manage solutions using PowerShell](powershell-api.md)
 
-## Power Platform pipelines
+## Pipelines
 
-With Power Platform pipelines, admins create and configure pipelines so makers can use them to deploy solutions to environments with a single click. More information: [Overview of Power Platform pipelines (preview)](pipelines.md)
-
+With pipelines in Power Platform, admins create and configure pipelines so makers can use them to deploy solutions to environments with a single click. More information: [Overview of pipelines in Power Platform](pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

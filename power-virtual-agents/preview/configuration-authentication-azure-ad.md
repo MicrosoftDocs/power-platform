@@ -2,7 +2,7 @@
 title: Configure user authentication with Azure Active Directory (preview)
 description: Use Azure Active Directory as your service provider for user authentication in Power Virtual Agents preview.
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 12/07/2022
+ms.date: 12/29/2022
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -117,28 +117,23 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Set the following properties. You can leave the other properties blank.
 
-   | Property                   | Value                                      |
-   | -------------------------- | ------------------------------------------ |
-   | Scope name                 | Enter `Test.Read`                          |
-   | Who can consent?           | Select **Admins and users**                |
-   | Admin consent display name | Enter `Test.Read`                          |
-   | Admin consent description  | Enter `Allows the app to sign the user in.`|
-   | State                      | Select **Enabled**                         |
-
-   > [!NOTE]
-   > The value `Test.Read` is a placeholder. Replace it with a name that makes sense in your environment.
+   | Property                   | Value                                                                  |
+   | -------------------------- | ---------------------------------------------------------------------- |
+   | Scope name                 | Enter a name that makes sense in your environment, such as `Test.Read` |
+   | Who can consent?           | Select **Admins and users**                                            |
+   | Admin consent display name | Enter a name that makes sense in your environment, such as `Test.Read` |
+   | Admin consent description  | Enter `Allows the app to sign the user in.`                            |
+   | State                      | Select **Enabled**                                                     |
 
 1. Select **Add scope**.
 
 ## Configure authentication in Power Virtual Agents
 
-The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the requested access token.
-
 1. In Power Virtual Agents, under **Settings**, select **Security**, and then select **Authentication**.
 
     :::image type="content" source="media/configure-web-sso/pva-security-auth.png" alt-text="Screenshot of the Power Virtual Agents Security page with Settings, Security, and Authentication highlighted.":::
 
-1. Select **Manual (for any channel including Teams)**.
+1. Select **Manual (for custom website)**.
 
 1. Turn on **Require users to sign in**.
 
@@ -152,6 +147,9 @@ The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the 
    | Scopes                     | Enter `profile openid`                     |
 
 1. Select **Save**.
+
+> [!TIP]
+> The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the requested access token. For more information, see [Configure single sign-on for your custom website (preview)](configure-web-sso.md).
 
 ## Test your bot
 

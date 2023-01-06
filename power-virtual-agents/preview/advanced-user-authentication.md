@@ -70,13 +70,13 @@ When customers enter their username and password, they might be prompted to ente
 
 When you've configured user authentication for your bot, you can use authentication variables in your topics. The following table compares the availability of these variables based on the authentication option you chose.
 
-| Authentication Variable | No Authentication | Only for Teams | Manual |
-| ----------------------- | :---------------: | :------------: | :----: |
-| [User.DisplayName][1]   |                   |                |   ✓    |
-| [User.Id][2]            |                   |                |   ✓    |
-| [User.IsLoggedIn][3]    |                   |                |   ✓    |
-| [User.AccessToken][4]   |                   |                |   ✓    |
-| [SignInReason][5]       |                   |                |   ✓    |
+| Authentication Variable | No Authentication | Only for Teams | Manual    |
+|-------------------------|:-----------------:|:--------------:|:---------:|
+| [User.DisplayName][1]   | not available     | not available  | available |
+| [User.Id][2]            | not available     | not available  | available |
+| [User.IsLoggedIn][3]    | not available     | not available  | available |
+| [User.AccessToken][4]   | not available     | not available  | available |
+| [SignInReason][5]       | not available     | not available  | available |
 
 [1]: #userdisplayname
 [2]: #userid
