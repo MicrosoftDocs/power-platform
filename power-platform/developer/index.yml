@@ -118,6 +118,10 @@ landingContent:
         links:
           - text: Custom visuals
             url: /power-bi/developer/visuals/power-bi-custom-visuals
+          - text: Using the Power BI REST APIs
+            url: /rest/api/power-bi/
+          - text: Analysis Services developer documentation
+            url: /analysis-services/analysis-services-developer-documentation/
 
   # Card
   - title: Power Virtual Agents
