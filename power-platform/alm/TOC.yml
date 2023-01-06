@@ -149,5 +149,5 @@
               href: create-patches-simplify-solution-updates.md
         - name: Edit the customizations file
           href: when-edit-customization-file.md
-        - name: Power Platform Pipeline table reference
+        - name: Pipeline table reference
           href: ../developer/pipelines/table-reference.md
