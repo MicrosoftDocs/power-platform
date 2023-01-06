@@ -38,8 +38,8 @@ With the ALM Accelerator, you can source control your code first components (tha
 
 Follow these steps to set up a plug-in project for the first time:
 
-1. [Install Power Platform CLI](/power-platform/developer/cli/introduction.md)
-1. Trigger [pac plugin init command](/power-platform/developer/cli/reference/plugin.md)
+1. [Install Power Platform CLI](/power-platform/developer/cli/introduction)
+1. Trigger [pac plugin init command](/power-platform/developer/cli/reference/plugin)
 1. pac plugin init generates a folder structure as below
    :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-pac-plugins-init.png" alt-text="Pac plugin init folder structure":::
 1. Continue adding your plugin class files to the folder structure
@@ -48,8 +48,8 @@ Follow these steps to set up a plug-in project for the first time:
 
 Follow these steps to migrate your legacy plug-in projects to the new folder structure:
 
-1. [Install Power Platform CLI](/power-platform/developer/cli/introduction.md)
-1. Trigger [pac plugin init command](/power-platform/developer/cli/reference/plugin.md)
+1. [Install Power Platform CLI](/power-platform/developer/cli/introduction)
+1. Trigger [pac plugin init command](/power-platform/developer/cli/reference/plugin)
 1. pac plugin init generates a folder structure.
 1. Copy the legacy plug-in project files to the new folder structure
 

@@ -348,7 +348,8 @@
         href: preview/authoring-variables.md
       - name: Reuse variables across topics
         href: preview/authoring-variables-bot.md
-      - name: Manage date and time in chatbots
+      - name: Accommodate time zones
+        displayName: user date and time
         href: preview/manage-date-and-time.md
       - name: Use expressions using Power Fx
         href: preview/advanced-power-fx.md
@@ -360,25 +361,25 @@
     items:
       - name: Key concepts - Publish your bot
         href: preview/publication-fundamentals-publish-channels.md
-      - name: Add bot to your live website
+      - name: Add your bot to your live website
         href: preview/publication-connect-bot-to-web-channels.md
-      - name: Add bot to Microsoft Teams
+      - name: Add your bot to Microsoft Teams
         href: preview/publication-add-bot-to-microsoft-teams.md
   - name: Monitor and diagnose
     items:
-      - name: Key concepts - Analytics
+      - name: Analyze your bot's performance and usage
         href: preview/analytics-overview.md
       - name: Analyze bot performance and usage
         href: preview/analytics-summary.md
-      - name: Analyze customer satisfaction
+      - name: Analyze your bot's customer satisfaction metrics
         href: preview/analytics-csat.md
-      - name: Analyze session information
+      - name: Download bot session transcripts
         href: preview/analytics-sessions.md
-      - name: Work with conversation transcripts
+      - name: Download bot conversation transcripts
         href: preview/analytics-sessions-transcripts.md
-      - name: Analyze topic usage
+      - name: Analyze your bot's topic performance
         href: preview/analytics-topic-details.md
-      - name: Analyze billed session information
+      - name: View billed sessions
         href: preview/analytics-billed-sessions.md
   - name: Configure and customize
     items:
@@ -402,4 +403,3 @@
         href: preview/configure-web-sso.md
       - name: Customize the look and feel of the bot
         href: preview/customize-default-canvas.md
-

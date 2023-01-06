@@ -2,9 +2,9 @@
 title: "Hand off to a live agent (contains video)"
 description: "Learn how to hand off a bot conversation to a human agent, complete with context and conversation history."
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 12/28/2022
 
-ms.topic: article
+ms.topic: how-to
 author: iaanw 
 ms.author: iawilt
 ms.reviewer: pawant
@@ -17,9 +17,9 @@ ms.custom: handoff, ceX, advanced-authoring
 
 With Power Virtual Agents, you can hand off conversations to live agents seamlessly and contextually.
 
-When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. Having access to this context means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
+When you hand off a conversation, you share the full history of the conversation (the context) and all user-defined variables. With this context, a live agent that uses a connected engagement hub can be: notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
-For more information about how to configure hand-off with [omnichannel for Customer Service](/dynamics365/customer-service/configure-bot-virtual-agent), see the [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
+For more information about how to configure hand-off with [Omnichannel for Customer Service](/dynamics365/customer-service/configure-bot-virtual-agent), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n4G1]
@@ -39,7 +39,7 @@ For more information about how to configure hand-off with [omnichannel for Custo
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - A bot built with [Power Virtual Agents](https://aka.ms/TryPVA).
-- An engagement hub that is being used by live agents, such as [omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
+- An engagement hub that is being used by live agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Triggering hand-off to a live agent
 
@@ -49,15 +49,15 @@ Upon triggering the hand-off topic, Power Virtual Agents starts the hand-off to 
 
 ### Implicit triggers
 
-In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there is no [topic](./authoring-create-edit-topics.md), or there is no matching option within a topic.
+In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there's no [topic](./authoring-create-edit-topics.md), or no matching option within a topic.
 
 In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid-way into a conversation.
 
-When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-create-edit-topics.md). This type of trigger is known as *implicit triggering*.
+When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-create-edit-topics.md). This type of trigger is known as _implicit triggering_.
 
 ### Explicit triggers
 
-When creating topics for your bot, you may determine that some topics require interaction with a human. This type of trigger is known as *explicit triggering*.
+When creating topics for your bot, you may determine that some topics require interaction with a human. This type of trigger is known as _explicit triggering_.
 
 In these instances, you must add a **Transfer to agent** node into the topic.
 

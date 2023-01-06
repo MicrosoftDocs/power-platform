@@ -4,7 +4,7 @@ description: Reference information for functions, signals, and enumerations in P
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm-msft
+ms.reviewer: mkaur-msft
 ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: gregli
@@ -13,7 +13,7 @@ search.audienceType:
 search.app:
   - PowerApps
 contributors:
-  - tapanm-msft
+  - mduelae
   - gregli-msft
   - jorisdg
 ---
@@ -157,7 +157,7 @@ Other elements include:
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
 
-**[Error](reference/function-iferror.md)** – Create a custom error or pass throguh an error.
+**[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
 **[Errors](reference/function-errors.md)** – Provides error information for previous changes to a data source.
 

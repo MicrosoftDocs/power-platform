@@ -54,14 +54,14 @@ By default, the page shows you key performance indicators for the last seven day
 
 The summary charts summarize the key performance indicators for the specified time period and the percent change over the period.
 
-| Description | Details |
-|---|---|
-| Total sessions | The total number of sessions within the specified time period. |
-| Engagement rate | The percentage of total sessions that are engaged sessions. An engaged session is a session in which a user topic (as opposed to a system topic) is triggered, or the session ends in escalation. Engaged sessions can have one of three outcomes—they are either resolved, escalated, or abandoned. |
-| Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question _"Did that answer your question?"_ and the user either does not respond or responds _Yes_. |
-| Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent. |
-| Abandon rate | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session. |
-| CSAT | The graphical view of the average of customer satisfaction (CSAT) scores for sessions in which customers respond to an end-of-session request to take the survey. |
+| Description     | Details                                                                                                                                                                                                                                                                                                      |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Total sessions  | The total number of sessions within the specified time period.                                                                                                                                                                                                                                               |
+| Engagement rate | The percentage of total sessions that are engaged sessions. An engaged session is a session in which a user-created topic (as opposed to a system topic) is triggered, or the session ends in escalation. Engaged sessions can have one of three outcomes: resolved, escalated, or abandoned. |
+| Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question _"Did that answer your question?"_ and the user either does not respond or responds _Yes_.                                    |
+| Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent.                                                                                                                                                                        |
+| Abandon rate    | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.                                                                                                                   |
+| CSAT            | The graphical view of the average of customer satisfaction (CSAT) scores for sessions in which customers respond to an end-of-session request to take the survey.                                                                                                                                            |
 
 A blue up-and-down indicator next to the value indicates the percent change in a positive direction. A red indicator indicates the percent change in a negative direction.
 

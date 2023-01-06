@@ -67,7 +67,7 @@ The instructions in this document reference the following:
 
 ### Retrieve your Power Virtual Agents bot parameters
 
-To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
+To connect to the bot you have built with Power Virtual Agents, you'll need to retrieve your bot's name and token endpoint to identify it.
 
 1. Copy your bot's name in Power Virtual Agents.
 
@@ -79,7 +79,7 @@ To connect to the bot you have built with Power Virtual Agents, you will need to
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-mobile-app.png" alt-text="Mobile app channel." border="false":::
 
-1. Select **Copy** for the **Bot ID** and **Tenant ID** values. You will need these in the [Get Direct Line token](#get-direct-line-token) step.
+1. Next to **Token Endpoint**, select **Copy**. You'll need this in the [Get Direct Line token](#get-direct-line-token) step.
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-get-bot-parameters.png" alt-text="Get bot parameters." border="false":::
 
