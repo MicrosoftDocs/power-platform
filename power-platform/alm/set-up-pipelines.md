@@ -45,9 +45,9 @@ Before you begin, you’ll need to choose which environments will participate in
    >
 - **Development (required)**. This is where you’ll develop solutions. Notice that "development" refers to the *purpose* you'll assign to the environment, not the *type* of environment that can be used.
   - Must be a Managed Environment except when you use developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned.
-- **QA environment (optional).** This is where you’ll deploy solutions for testing prior to moving them to production.
+- **QA environment (optional)**. This is where you’ll deploy solutions for testing prior to moving them to production.
   - Must be a managed environment except when using developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. Restrictions unrelated to pipelines might also be present when using developer and trial environments.
-- **Production (required)** The final destination for a deployment pipeline. This is where end users will run the apps that are deployed.
+- **Production (required)**. The final destination for a deployment pipeline. This is where end users will run the apps that are deployed.
   - Must be a managed environment except when using developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. Restrictions unrelated to pipelines may also be present when using developer and trial environments.
 
 > [!TIP]
