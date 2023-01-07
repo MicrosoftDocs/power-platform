@@ -1,6 +1,6 @@
 ---
 title: "Securely access customer data using Customer Lockbox in Power Platform | MicrosoftDocs"
-description: This topic covers information on how customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed.
+description: This article covers information on how customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
@@ -18,7 +18,7 @@ search.app:
 ---
 # Securely access customer data using Customer Lockbox in Power Platform
 
-Most operations, support, and troubleshooting performed by Microsoft personnel (including sub-processors) don't require access to customer data. With Power Platform Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
+Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. With Power Platform Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
 
 This article covers how to enable Customer Lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits.
 
@@ -56,7 +56,7 @@ Power Platform applications and services store customer data in several Azure st
 
    :::image type="content" source="media/lockbox-request.png" alt-text="A sample lockbox request.":::
 
-4. The approver signs into the Power Platform admin center and approves the request. If the request is rejected or not approved within 4 days, it expires, and no access is granted to the Microsoft engineer.
+4. The approver signs into the Power Platform admin center and approves the request. If the request is rejected or not approved within four days, it expires, and no access is granted to the Microsoft engineer.
 
 5. After the approver from your organization approves the request, the Microsoft engineer obtains the elevated permissions that were initially requested and fixes your issue. Microsoft engineers have a set amount of time - 8 hours - to fix the issue, after which, access is automatically revoked.
 
@@ -65,7 +65,7 @@ Power Platform applications and services store customer data in several Azure st
 Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy will apply only to environments that are activated for [Managed Environments](managed-environment-enable.md). It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Use the Tenant settings page to review and manage tenant-level settings. To view tenant-level settings select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site and select **Power Platform settings** > **Settings** > **Tenant settings** in the left-side navigation pane.
+2. Use the Tenant settings page to review and manage tenant-level settings. To view tenant-level settings, select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site and select **Power Platform settings** > **Settings** > **Tenant settings** in the left-side navigation pane.
 
 3. Set **Customer Lockbox policy** to **Enable**.
 
