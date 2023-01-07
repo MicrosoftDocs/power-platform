@@ -1,13 +1,13 @@
 ---
-title: "Securely access customer data using Customer Lockbox in Power Platform (preview) | MicrosoftDocs"
+title: "Securely access customer data using Customer Lockbox in Power Platform | MicrosoftDocs"
 description: This topic covers information on how customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 01/11/2023
 author: mihaelablendea
 ms.author: mihaelab
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -16,22 +16,18 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Securely access customer data using Customer Lockbox in Power Platform (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Securely access customer data using Customer Lockbox in Power Platform
 
 Most operations, support, and troubleshooting performed by Microsoft personnel (including sub-processors) don't require access to customer data. With Power Platform Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
 
 This article covers how to enable Customer Lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits. 
 
 > [!IMPORTANT]
-> - Customer Lockbox for Power Platform is available in preview at no cost. When this feature becomes generally available, there will be a cost associated with environments protected with Customer Lockbox.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Summary
 
-You can enable Customer Lockbox for your data sources within your tenant. For the duration of the preview, enabling Customer Lockbox will apply to all environments in the respective tenant. Global administrators and Power Platform administrators can enable the lockbox policy. 
+You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox will enforce the policy only for environments that are activated for [Managed Environments](managed-environment-enable.md). Global administrators and Power Platform administrators can enable the lockbox policy. 
 
 For more information, go to [Enable the lockbox policy](#enable-the-lockbox-policy).
 
@@ -42,7 +38,10 @@ All updates to a lockbox request are recorded and made available to your organiz
 Power Platform applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
  
 > [!NOTE]
-> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (including AI Builder, Power Apps portals), Power Automate, Power Virtual Agents, Dataverse, Customer Insights, and the real-time marketing feature area of the Marketing app.
+> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Power Virtual Agents, Dataverse, Customer Insights, Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services) and the real-time marketing feature area of the Marketing app.
+
+> [!IMPORTANT]
+> Customers should disable Lucene.NET search from their website and move to Dataverse Search to be able to use Customer Lockbox. More information: [Portals search using Lucene.NET search is deprecated](/power-apps/maker/portals/important-changes-deprecations#portals-search-using-lucenenet-search).
 
 ## Workflow 
 
@@ -63,13 +62,12 @@ Power Platform applications and services store customer data in several Azure st
 
 ## Enable the lockbox policy
 
-Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. For the duration of the preview, enabling the tenant level policy will apply to all environments in the tenant. It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox. 
+Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy will apply only to environments that are activated for [Managed Environments](managed-environment-enable.md). It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+2. Use the Tenant settings page to review and manage tenant-level settings. To view tenant-level settings select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site and select **Power Platform settings** > **Settings** > **Tenant settings** in the left-side navigation pane. 
 
-2. Select **Policies** > **Lockbox policy (preview)**.
-
-3. Set **Lockbox policy (preview)** to **On**.
+3. Set **Customer Lockbox policy** to **Enable**.
 
    :::image type="content" source="media/lockbox-turn-on.png" alt-text="Turn on the lockbox policy.":::
 
@@ -77,7 +75,7 @@ Global administrators or Power Platform administrators can create or update the 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. Select **Policies** > **Customer Lockbox (preview)**.
+2. Select **Policies** > **Customer Lockbox**.
 
 3. Review the request details.
 
@@ -128,6 +126,17 @@ Admins can directly export the result set based on the filter criteria.
 
 :::image type="content" source="media/lockbox-audit-search-results.png" alt-text="Lockbox audit search results.":::
 
+## Licensing requirements for Customer Lockbox 
+
+Access to Customer Lockbox for Microsoft Power Platform and Dynamics 365 requires users in the environments where the Lockbox policy is enforced to have any of these subscriptions:
+- Microsoft 365 or Office 365 A5/E5/G5
+- Microsoft 365 A5/E5/F5/G5 Compliance
+- Microsoft 365 F5 Security & Compliance
+- Microsoft 365 A5/E5/F5/G5 Insider Risk Management
+[Learn more](https://go.microsoft.com/fwlink/?linkid=2214240) about applicable licenses.
+
+Customer Lockbox policy will be enforced only on environments that are activated for Managed Environments. [Learn more](https://aka.ms/PowerPlatformLockbox).
+
 ## Exclusions
 
 Lockbox requests aren't triggered in the following engineering support scenarios:
@@ -140,9 +149,7 @@ Customer Lockbox requests are also not triggered by external legal demands for d
 
 ## Known issues
 
-- The consent process for creating a support instance and support user access isn't integrated with Customer Lockbox. Once the support instance is created after initial customer consent, a support engineer with support user permissions will have access to the data stored in the support instance for troubleshooting purposes. 
-
-- Customer Lockbox Preview isn't available in sovereign clouds at this time. 
+- Customer Lockbox isn't available in sovereign clouds at this time. 
 
 - Tenant-to-tenant migration isn't supported when Customer Lockbox is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
 
