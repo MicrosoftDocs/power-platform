@@ -66,7 +66,7 @@ Global administrators or Power Platform administrators can create or update the 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. Use the Tenant settings page to review and manage tenant-level settings. To view tenant-level settings, select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site and select **Power Platform settings** > **Settings** > **Tenant settings** in the left-side navigation pane.
 
-3. Set **Customer Lockbox policy** to **Enable**.
+3. Set **Customer Lockbox** to **Enable**.
 
    :::image type="content" source="media/lockbox-turn-on.png" alt-text="Turn on the lockbox policy.":::
 
