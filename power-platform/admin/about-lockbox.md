@@ -4,7 +4,7 @@ description: This topic covers information on how customers can review and appro
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/05/2023
+ms.date: 01/11/2023
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: kvivek
@@ -27,7 +27,7 @@ This article covers how to enable Customer Lockbox and how lockbox requests are 
 
 ## Summary
 
-You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox will enforce the policy only for environments that are activated for Managed Environments (https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-enable). Global administrators and Power Platform administrators can enable the lockbox policy. 
+You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox will enforce the policy only for environments that are activated for [Managed Environments](managed-environment-enable.md). Global administrators and Power Platform administrators can enable the lockbox policy. 
 
 For more information, go to [Enable the lockbox policy](#enable-the-lockbox-policy).
 
@@ -41,7 +41,7 @@ Power Platform applications and services store customer data in several Azure st
 > Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Power Virtual Agents, Dataverse, Customer Insights, Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services) and the real-time marketing feature area of the Marketing app.
 
 > [!IMPORTANT]
-> Customers should disable Lucene.NET search from their website and move to Dataverse Search to be able to use Customer Lockbox. [Learn more](https://learn.microsoft.com/en-us/power-apps/maker/portals/important-changes-deprecations#portals-search-using-lucenenet-search).
+> Customers should disable Lucene.NET search from their website and move to Dataverse Search to be able to use Customer Lockbox. More information: [Portals search using Lucene.NET search is deprecated](/power-apps/maker/portals/important-changes-deprecations#portals-search-using-lucenenet-search).
 
 ## Workflow 
 
@@ -62,7 +62,7 @@ Power Platform applications and services store customer data in several Azure st
 
 ## Enable the lockbox policy
 
-Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy will apply only to environments that are activated for Managed Environments (https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-enable). It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox. 
+Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy will apply only to environments that are activated for [Managed Environments](managed-environment-enable.md). It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 2. Use the Tenant settings page to review and manage tenant-level settings. To view tenant-level settings select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site and select **Power Platform settings** > **Settings** > **Tenant settings** in the left-side navigation pane. 
