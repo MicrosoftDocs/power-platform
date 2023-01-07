@@ -50,15 +50,15 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 
 The following table details the [channels](publication-fundamentals-publish-channels.md) that currently support SSO. You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
-| Channel                                           | Supported |
-| ------------------------------------------------- | :-------: |
-| [Azure Bot Service channels][6]                   |           |
-| [Custom Website][3]                               |     ✔     |
-| [Demo Website][2]                                 |           |
-| [Facebook][5]                                     |           |
-| [Microsoft Teams][1]<sup>1</sup>                  |     ✔     |
-| [Mobile App][4]                                   |           |
-| [Omnichannel for Customer Service][7]<sup>2</sup> |     ✔     |
+| Channel                                           | Supported     |
+|---------------------------------------------------|:-------------:|
+| [Azure Bot Service channels][6]                   | Not supported |
+| [Custom Website][3]                               | Supported     |
+| [Demo Website][2]                                 | Not supported |
+| [Facebook][5]                                     | Not supported |
+| [Microsoft Teams][1]<sup>1</sup>                  | Supported     |
+| [Mobile App][4]                                   | Not supported |
+| [Omnichannel for Customer Service][7]<sup>2</sup> | Supported     |
 
 [1]: publication-add-bot-to-microsoft-teams.md
 [2]: publication-connect-bot-to-web-channels.md#demo-website
