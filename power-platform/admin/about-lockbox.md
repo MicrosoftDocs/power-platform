@@ -23,8 +23,7 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 This article covers how to enable Customer Lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits.
 
 > [!IMPORTANT]
->
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
+> This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Summary
 
