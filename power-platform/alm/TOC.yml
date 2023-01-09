@@ -65,11 +65,11 @@
           href: powershell-api.md
         - name: Pipelines (preview)
           items:
-            - name: What are Power Platform pipelines?
+            - name: What are pipelines?
               href: pipelines.md
             - name: Set up pipelines
               href: set-up-pipelines.md
-            - name: Run a pipeline 
+            - name: Run pipelines
               href: run-pipeline.md
     - name: ALM for developers
       href: alm-for-developers.md
@@ -149,5 +149,5 @@
               href: create-patches-simplify-solution-updates.md
         - name: Edit the customizations file
           href: when-edit-customization-file.md
-        - name: Power Platform Pipeline table reference
+        - name: Pipeline table reference
           href: ../developer/pipelines/table-reference.md

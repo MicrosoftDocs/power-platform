@@ -93,7 +93,7 @@ If you continue to see the message after exporting and importing the latest vers
 
 1. In the navigation menu, select **Solutions**, and then select the solution that contains the bot with the unmanaged layer.
 
-1. Next to the chatbot component in the solution, select **More commands** (**…**), and then select **See solution layers**.
+1. Next to the chatbot component in the solution, select **More commands** (**&vellip;**), and then select **See solution layers**.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-see-layers.png" alt-text="Selecting solution layers in Power Apps.":::
 
@@ -187,7 +187,9 @@ Use this action to transfer the call to a different phone number.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-transfer.png" alt-text="Set the phone number for the Transfer the call to a different phone number action.":::
 
-    > [!NOTE]
+    > [!WARNING]
+    > Don't add a plus symbol, "+", before the phone number.
+    >
     > The phone number you enter must have the "Make calls" privilege. Without it, transfers to the number will fail.
 
 ### Hang up
