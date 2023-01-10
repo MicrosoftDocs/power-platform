@@ -11,7 +11,7 @@ manager: shellyha
 ms.reviewer: makolomi
 ms.custom: "cex"
 ms.service: power-virtual-agents
-ms.collection: virtualagent
+ms.collection: virtual-agent
 ---
 
 # Example 3 - Use Bing Search as a fallback in Power Virtual Agents

@@ -11,7 +11,7 @@ manager: shellyha
 ms.reviewer: makolomi
 ms.custom: "cex"
 ms.service: power-virtual-agents
-ms.collection: virtualagent
+ms.collection: virtual-agent
 ---
 
 # Example 1 - Show an Adaptive Card in Power Virtual Agents

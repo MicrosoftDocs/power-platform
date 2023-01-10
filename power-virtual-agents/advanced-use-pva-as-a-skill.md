@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtualagent
+ms.collection: virtual-agent
 ---
 
 # Use a Power Virtual Agents bot as a skill

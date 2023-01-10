@@ -11,7 +11,7 @@ ms.reviewer: digantak
 manager: shellyha
 ms.custom: "customization, ceX"
 ms.service: power-virtual-agents
-ms.collection: virtualagent
+ms.collection: virtual-agent
 ---
 
 # Export and import bots using solutions

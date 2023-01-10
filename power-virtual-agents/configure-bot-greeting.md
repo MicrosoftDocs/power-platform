@@ -11,7 +11,7 @@ ms.reviewer: digantak
 manager: shellyha
 ms.custom: "customization, ce06102020"
 ms.service: power-virtual-agents
-ms.collection: virtualagent
+ms.collection: virtual-agent
 ---
 
 # Configure your bot to start the conversation automatically
