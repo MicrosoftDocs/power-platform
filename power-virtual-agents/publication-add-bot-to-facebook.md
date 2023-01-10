@@ -10,6 +10,7 @@ ms.author: iawilt
 ms.reviewer: micchow
 manager: shellyha
 ms.custom: "publication, authoring, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -52,7 +53,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 1. Under **Settings** on the side menu pane, select **Basic** .
 
-1. Copy the *App ID* and *App Secret*. You will need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
+1. Copy the _App ID_ and _App Secret_. You will need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-get-app-id-secret.png" alt-text="Get Facebook App ID and secret.":::
 
@@ -90,7 +91,7 @@ You will then need to submit your app for Facebook review before you can publish
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-page-messenger-capability.png" alt-text="Messenger permission for page." border="false":::
 
-1. Copy the *Page ID* and *Token* for each of the pages that you want to add the bot to. You'll need to select **Generate Token** for each page. You'll need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
+1. Copy the _Page ID_ and _Token_ for each of the pages that you want to add the bot to. You'll need to select **Generate Token** for each page. You'll need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-get-page-id-token.png" alt-text="Get page ID and token." border="false":::
 
@@ -102,7 +103,7 @@ You will then need to submit your app for Facebook review before you can publish
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb.png" alt-text="Facebook channel.":::
 
-1. Paste the *App ID*, *App Secret*, *Page ID*, and *Token* you retrieved earlier into their corresponding fields.
+1. Paste the _App ID_, _App Secret_, _Page ID_, and _Token_ you retrieved earlier into their corresponding fields.
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-add-channel.png" alt-text="Provide Facebook app and page information." border="false":::
 
@@ -110,7 +111,7 @@ You will then need to submit your app for Facebook review before you can publish
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-add-pages.png" alt-text="Provide multiple Facebook pages' information." border="false":::
 
-1. Select **Add** and wait for the success confirmation message. Once successful, copy the *Callback URL* and *Verify token*. You'll need these when you [connect your Facebook app to Power Virtual Agents](#connect-your-facebook-app-to-power-virtual-agents).
+1. Select **Add** and wait for the success confirmation message. Once successful, copy the _Callback URL_ and _Verify token_. You'll need these when you [connect your Facebook app to Power Virtual Agents](#connect-your-facebook-app-to-power-virtual-agents).
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-get-callback-info.png" alt-text="Get callback information for Facebook." border="false":::
 
@@ -124,7 +125,7 @@ You will then need to submit your app for Facebook review before you can publish
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-add-callbackurl.png" alt-text="Set up webhooks for Facebook app." border="false":::
 
-1. Provide the *Callback URL* and *Verify token* from the [Configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents) section and select **Verify and Save**.
+1. Provide the _Callback URL_ and _Verify token_ from the [Configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents) section and select **Verify and Save**.
 
    :::image type="content" source="media/publication-add-bot-to-facebook/channel-fb-webhook-setting.png" alt-text="Add Callback URL and Verify Token." border="false":::
 

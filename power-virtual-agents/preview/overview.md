@@ -2,15 +2,16 @@
 title: Overview of the Power Virtual Agents preview (preview)
 description: Overview of new features and improvements in Power Virtual Agents preview.
 ms.date: 12/07/2022
+
 ms.topic: overview
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 manager: shellyha
 ms.custom: fundamentals, ceX, intro-internal, bap-template
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
-ms.service: power-virtual-agents
 ---
 
 # Overview (preview)

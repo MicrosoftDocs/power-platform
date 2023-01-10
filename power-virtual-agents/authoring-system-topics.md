@@ -5,10 +5,11 @@ keywords: "PVA"
 ms.date: 04/20/2022
 
 ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 manager: shellyha
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.reviewer: ggupta
 ---
