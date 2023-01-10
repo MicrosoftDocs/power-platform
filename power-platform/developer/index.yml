@@ -10,9 +10,9 @@ metadata:
   ms.subservice: developer
   ms.topic: landing-page
   ms.collection: collection
-  author: marcelbf
-  ms.author: marcelbf
-  ms.date: 06/13/2022
+  author: KumarVivek
+  ms.author: kvivek
+  ms.date: 01/06/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -118,7 +118,7 @@ landingContent:
         links:
           - text: Custom visuals
             url: /power-bi/developer/visuals/power-bi-custom-visuals
-          - text: Using the Power BI REST APIs
+          - text: Use Power BI REST APIs
             url: /rest/api/power-bi/
           - text: Analysis Services developer documentation
             url: /analysis-services/analysis-services-developer-documentation/
@@ -144,5 +144,5 @@ landingContent:
             url: /power-pages/configure/web-api-overview
           - text: Use Visual Studio Code and Power Platform CLI
             url: /power-pages/configure/cli-tutorial
-          - text: Using code components
+          - text: Use code components
             url: /power-pages/configure/component-framework

@@ -3,14 +3,15 @@ title: Use system topics in Power Virtual Agents (preview)
 description: Learn how to use system topics in conversations in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 12/13/2022
+
 ms.topic: conceptual
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 manager: shellyha
-ms.custom: authoring, ceX, bap-template
-ms.collection: virtual-agent
-ms.service: power-virtual-agents
 ms.reviewer: ggupta
+ms.custom: authoring, ceX, bap-template
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Use system topics in Power Virtual Agents (preview)

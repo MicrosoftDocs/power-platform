@@ -1,14 +1,16 @@
 ---
 title: Troubleshoot error codes (preview)
 description: Troubleshoot error responses from your bot in Power Virtual Agents preview.
-author: v-alarioza
-ms.author: v-alarioza
-ms.topic: troubleshooting
 ms.date: 12/07/2022
-ms.reviewer: mvakoc
+
+ms.topic: troubleshooting
+author: iaanw
+ms.author: iawilt
 manager: shellyha
+ms.reviewer: mvakoc
 ms.service: power-virtual-agents
 ms.custom: bap-template
+
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
 

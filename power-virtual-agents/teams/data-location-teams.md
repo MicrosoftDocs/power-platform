@@ -8,6 +8,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: digantak
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: "multi-geo, gdpr, ce06102020, teams"
 ---
@@ -45,7 +46,7 @@ Power Virtual Agents supports the following display formatting locales:
 - en-IN
 - en-US
 
-For example, if the user's browser locale setting is *en-GB*, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is *en-US*, the same date equates to **February 3**.
+For example, if the user's browser locale setting is _en-GB_, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is _en-US_, the same date equates to **February 3**.
 
 > [!NOTE]
 > Microsoft Teams supports a larger set of languages. If the selected language for Microsoft Teams is not supported by Power Virtual Agents, the displayed language will be en-US.

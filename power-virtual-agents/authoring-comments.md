@@ -10,6 +10,7 @@ ms.author: iawilt
 ms.reviewer: gitikag
 manager: shellyha
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"

@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: analysis, ceX, teams
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -63,7 +64,7 @@ The Topic summary charts summarize the topic's performance indicators for the sp
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Total sessions  | The total number of sessions within the specified time period.                                                                                                                                    |
 | Average CSAT    | The average customer satisfaction (CSAT) survey score for the specified time period.                                                                                                              |
-| Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-session survey and either does not respond or responds *Yes*. |
+| Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-session survey and either does not respond or responds _Yes_. |
 | Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent.                                                             |
 | Abandon rate    | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.        |
 
