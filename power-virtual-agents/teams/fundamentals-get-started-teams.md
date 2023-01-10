@@ -8,7 +8,8 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals, teams, intro-inernal
+ms.custom: fundamentals, teams, intro-internal
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -107,7 +108,7 @@ Now that the bot is created, we can go ahead and start adding content to the bot
 
 ### Build an employee time-off topic for common time-off queries
 
-Go to the topic list by selecting **Topics** in the side pane.
+Go to the topic list by selecting **Topics** in the navigation menu.
 
 A bot comes with a collection of topics that defines the bot's interaction with end users. The core of building a bot in Power Virtual Agents is to build topics that can respond to different user inquiries. Let's build a topic to answer employee questions about taking time-off.
 
@@ -262,7 +263,7 @@ Now that Bob has the time-off topic created, he can save the topic and add other
 
 Once the topics are constructed and the bot is tested, you are ready to publish the bot. Publishing the bot will make the latest bot content updates available to end users.
 
-1. Select the **Publish** icon in the side pane.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Publish**.
 
@@ -275,7 +276,7 @@ You'll need to follow a few more actions to actually make the bot available to e
 
 Before making the bot available to employees in your organization, there is an option to add the bot in Teams for yourself to chat with and experience it like any employee would.
 
-On the **Publish** tab in the side pane, there is an option to **Open the bot**.
+On the **Publish** page, there is an option to **Open the bot**.
 
 This will give you the chance to add your bot in Teams and chat with it.
 
@@ -283,7 +284,7 @@ This will give you the chance to add your bot in Teams and chat with it.
 
 Now you're ready to make the bot discoverable for other employees in the Teams app store, so they can install and chat with it.
 
-1. Go to the **Publish** page from the side pane.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Share the bot** which will open a pane with some customization options.
 

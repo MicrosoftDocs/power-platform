@@ -3,10 +3,10 @@ title: Licensing
 description: Learn about licensing Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/12/2022
+ms.date: 12/15/2022
 author: mikferland-msft 
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
@@ -19,10 +19,10 @@ search.app:
 ---
 # Licensing
 
-When Managed Environments is activated in an environment, every app, Power Automate flow, Power Virtual Agents bot, and Power Pages website in that environment requires standalone licenses for access. For example: 
+Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. When Managed Environments is activated in an environment, every app, Power Automate flow, Power Virtual Agents bot, and Power Pages website in that environment requires standalone licenses for accessing respective resources. For example: 
 
-- Every user running an app in a managed environment must have a Power Apps per user or per app license. 
-- Every user running a Power Automate flow in a managed environment must have a standalone Power Automate per user license, or the flow must have a Power Automate per flow license. 
+- Every user running an app in a managed environment must have a Power Apps per user or per app license or a Dynamics 365 license that give premium Power Apps usage rights. 
+- Every user running a Power Automate cloud flow in a managed environment must have a standalone Power Automate per user license, a Power Automate per flow license, or a Dynamics 365 license with premium Power Automate usage rights. Power Automate cloud flows that are triggered within apps or in context of apps or chatbots are covered by the respective Power Apps or Power Virtual Agents standalone licenses.
 
 To see your current license usage, select **View license consumption (preview)** in the Power Platform admin center. More information: [View license consumption (preview)](view-license-consumption-issues.md)
 

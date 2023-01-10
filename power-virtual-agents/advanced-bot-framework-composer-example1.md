@@ -2,7 +2,7 @@
 title: "Use Bot Framework Composer adaptive cards in chatbots"
 description: "Use Bot Framework Composer to add Adaptive Cards to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 06/27/2022
+ms.date: 01/10/2023
 
 ms.topic: article
 author: iaanw
@@ -10,7 +10,8 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtualagent
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Example 1 - Show an Adaptive Card in Power Virtual Agents

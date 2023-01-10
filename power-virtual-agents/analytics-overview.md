@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: analysis, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -47,7 +48,7 @@ The analytics section is divided into a number of pages to give you multiple way
 
 ### View analytics
 
-- In Power Virtual Agents, select **Analytics** on the side pane.
+- In Power Virtual Agents, in the navigation menu, select **Analytics**.
 
     :::image type="content" source="media/analytics-overview/analytics-open.png" alt-text="Opening the Analytics dashboard." border="false":::
 

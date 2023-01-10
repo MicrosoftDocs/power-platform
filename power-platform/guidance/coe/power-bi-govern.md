@@ -200,8 +200,6 @@ The **Archive Score** is the sum of multiple criteria:
 
 - How complex is the flow, based on the number of unique actions? (-1 if it's complex, because that indicates a user has spent a lot of time putting it together)
 
-A tooltip shows additional details like the number of launches and last launched date, in addition to the scores for the above criteria.
-
 ![Flow Archive.](media/pb-24.png "Flow Archive")
 
 The **desktop flow Archive** page is sorted by highest archive score. You can target specific makers, date ranges, environments, departments, or connectors.

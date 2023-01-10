@@ -23,7 +23,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Model-driven app controls deprecation (2023 Release Wave 1)
 
-With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in April 2023), these controls for model-driven apps will be deprecated; auto-complete, input mask, multimedia player, number input, option set, and star rating.
+With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in April 2023), these controls for model-driven apps will be deprecated: auto-complete, input mask, multimedia player, number input, option set, and star rating.
 
 #### Why is this needed? 
 
@@ -125,7 +125,7 @@ On June 20, 2022 [Power Apps for Windows](https://apps.microsoft.com/store/detai
 
 ## Data Export Service deprecation
 
-Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on will not be available for download for new customers. Existing customers will be able to download and use this add-on from AppSource. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
+Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on will not be available for download for all customers. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
 
 ## Dataverse OData v2.0 Service removal
 

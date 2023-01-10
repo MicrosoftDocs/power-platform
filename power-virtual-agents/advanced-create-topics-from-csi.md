@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "advanced-authoring, CSI, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

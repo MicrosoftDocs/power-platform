@@ -8,9 +8,10 @@ ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza
 manager: shellyha
-ms.custom: authoring, ceX
-ms.collection: virtual-agent
 ms.reviewer: ggupta
+ms.custom: authoring, ceX
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Use system topics in Microsoft Teams

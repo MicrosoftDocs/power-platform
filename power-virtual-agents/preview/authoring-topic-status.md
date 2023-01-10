@@ -1,91 +1,81 @@
 ---
-title: "Fix errors, set status, and copy topics (preview)"
-description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time in Power Virtual Agents preview."
+title: View topic status (preview)
+description: Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 10/10/2022
-
-ms.topic: article
+ms.date: 12/14/2022
+ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "ceX"
+ms.custom: ceX, bap-template
 ms.collection: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 # View topic status (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-There are a number of ways you can manage your topics. Power Virtual Agents includes a topic checker that lets you know if there are errors in your topics, you can turn topics on or off so they don't appear to people chatting with your bot, and you can copy or duplicate topics to make it easier to create new ones.
+Power Virtual Agents offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
 
 ## Topic errors
 
-When you save a topic, Power Virtual Agents notifies you if there are errors or warnings. Warnings won't stop the bot from working, but they may cause individual topics not to work as expected, so you should fix them when you see them.
+When you save a topic, Power Virtual Agents notifies you if it contains an error or raises a warning. Errors will stop your bot from working. You must fix them before you can publish your bot. Warnings won't stop your bot from working, but they may cause individual topics not to work as expected. You should fix them when you see them.
 
-Errors will prevent the bot from working and must be fixed before you can publish your bot.
+:::image type="content" source="media/authoring-topic-status/topics-errors-save.png" alt-text="Screenshot of the message that indicates a topic has errors that you must fix.":::
 
-:::image type="content" source="media/authoring-topic-status/topics-errors-save.png" alt-text="The message indicates you have errors you should fix.":::
+You can see whether a topic has errors, and how many errors it has, in the Topics page. The Topics page only shows errors, not warnings, because errors will prevent your bot from working.
 
-You can see the error state of a topic on the Topics page.
+:::image type="content" source="media/authoring-topic-status/topics-errors.png" alt-text="Screenshot of the Topics page, with the number of errors in a topic highlighted.":::
 
-> [!NOTE]
-> Unlike warnings, the Topics page only shows errors because they will stop your bot from working.
+### View topic errors
 
-:::image type="content" source="media/authoring-topic-status/topics-errors.png" alt-text="The topics page identifies the number of errors in your topic.":::
+1. In the **Topics** page, select the error count to open the authoring canvas to where the first error is.
 
-Select the error count to open the authoring canvas to where the first error is. Select **Topic checker** to see a list of the errors. Selecting each error goes directly to the error.  
+1. Select **Topic checker** to view a list of the topic's errors and warnings.
 
-:::image type="content" source="media/authoring-topic-status/topics-checker.png" alt-text="The topic checker is on the top bar and shows all errors and warnings.":::
+    :::image type="content" source="media/authoring-topic-status/topic-checker.png" alt-text="Screenshot of the Topic checker and the list of errors in the topic.":::
 
-> [!NOTE]
-> You can save topics with errors but can't publish them.
+1. Select an error to go directly to the node that contains the error.  
 
 ### Types of errors
 
-There are four types of errors that appear in the topic checker and the authoring canvas:
+The topic checker flags four types of errors:
 
-- _Node_: The entire node is incorrect and is highlighted in red.
-- _Field_: The field might be missing required data and is highlighted in red.
-- _Expression_: The expression might be invalid and is highlighted in red.
-- _Variable deletion_: A variable in a topic was deleted and is highlighted in red wherever it was used. This causes the variable to become "orphaned" and must be either removed or replaced.
+- _Node_: The entire node is incorrect. It's highlighted in red.
+- _Field_: The field might be missing required data. It's highlighted in red.
+- _Expression_: The expression might be invalid. It's highlighted in red.
+- _Variable deletion_: A variable was deleted, causing it to become "orphaned." It must be either removed or replaced. It's highlighted in red wherever it was used.
 
 ## Topic status
 
-Topics can have a status of **On** or **Off**. This refers to their ability to be used or triggered in a bot conversation.
+Topics can have a status of **On** or **Off** to indicate whether they can be used or triggered in a bot conversation. By default, new topics are created with their status set to **On**. Change it using the toggle in the **Status** column in the Topics page.
 
-When a topic is **On**, it will trigger as expected, either as a result of its trigger phrases or when it is redirected from another topic. The majority of your topics are likely to be in the **On** state.
+When a topic is **On**, it will trigger as expected, either as a result of its trigger phrases or when another topic redirects to it.
 
-When a topic is **Off**, it will not trigger at all. This means that if its trigger phrases are used in a bot conversation, it will not trigger, just as if the topic doesn't exist. An **Off** topic will also not be redirected to, even if another topic has specified that it should be.
+When a topic is **Off**, it won't trigger at all. It won't trigger if its trigger phrases are used in a conversation or if another topic redirects to it. As far as your bot knows, the topic doesn't exist. The topic checker will identify an error if another topic redirects to an **Off** topic.
 
-When you publish your bot, all topics are published whether they're **On or Off**. Topics that are **Off** won't trigger, however.
+When you publish your bot, all topics are published whether they're **On** or **Off**.
+
 > [!TIP]
-> Turning a topic to **Off** allows you to work on a particular topic and leave it in a draft state while publishing changes to other topics that are ready to go live.  
->
-> Leave the topic that you are still working on as **Off** before publishing the bot.
+> Turn a topic **Off** to work on it in a draft state. Leave its status at **Off** while publishing changes to other topics that are ready to go live.
 
-You can change this with the toggle in the **Status** column on the Topics page.
-
-:::image type="content" source="media/authoring-topic-status/topics-status.png" alt-text="The Status column shows each topic with an On or Off toggle switch.":::
-
-By default, new topics will be created with their status set to **On**.
-
-> [!NOTE]
-> The Topic Checker will identify an error if a topic redirects to an 'off' topic.
+:::image type="content" source="media/authoring-topic-status/topics-status.png" alt-text="Screenshot of the Topics page, with the Status column highlighted.":::
 
 ## Copy a topic
 
-Once you have created a few topics, you may want to use a previous topic as a baseline when creating new topics.
+After you've created a few topics, you may want to use a previous topic as a baseline when creating new topics.
 
-On the Topics page, select the menu icon on a topic's name and then **Make a copy**.
+In the **Topics** page, select the **More actions** menu (**&vellip;**), and then select **Make a copy**.
 
-:::image type="content" source="media/authoring-topic-status/topics-menu-icon.png" alt-text="Make a copy from the menu icon." border="false":::
+:::image type="content" source="media/authoring-topic-status/topics-menu-icon.png" alt-text="Screenshot of a topic's More actions menu, with the Make a copy option highlighted.":::
 
-This option duplicates the selected topic with _(Copy)_ added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
+This option duplicates the selected topic with _(Copy)_ added to the name. All the topic content, such as the description, trigger phrases, and the entire conversation, is copied over to the new topic.
 
 A copied topic is **Off** by default to avoid confusion with the original topic, which has the same trigger phrases.
 
-Once you are done editing the new topic, you can turn it **On** to [test it in the Test bot](authoring-test-bot.md) and, when ready, publish the new topic.
+When you're done editing the new topic, turn it **On** to [test it](authoring-test-bot.md). When it's ready, publish the new topic.
 
-There is no limit to the number of times you can copy a topic. A number will be added to the name and each topic will have its own internal ID.
+There's no limit to the number of times you can copy a topic. A number will be added to the name and each topic will have its own internal ID.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
