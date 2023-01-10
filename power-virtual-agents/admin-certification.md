@@ -8,6 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: "certification, ceX"
 ---
