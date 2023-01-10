@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: analysis, ceX, teams
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
