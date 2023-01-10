@@ -1,5 +1,5 @@
 ---
-title: "Securely access customer data using Customer Lockbox in Power Platform | MicrosoftDocs"
+title: "Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365 | MicrosoftDocs"
 description: This article covers information on how customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed.
 ms.subservice: admin
 ms.component: pa-admin
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Securely access customer data using Customer Lockbox in Power Platform
+# Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365
 
 Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. With Power Platform Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
 
@@ -35,7 +35,7 @@ In the rare occasion when Microsoft attempts to access customer data that's stor
 
 All updates to a lockbox request are recorded and made available to your organization as audit logs. For more information, go to [Audit lockbox requests](#audit-lockbox-requests).
 
-Power Platform applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
+Power Platform and Dynamics 365 applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
 
 > [!NOTE]
 >
@@ -127,15 +127,15 @@ Admins can directly export the result set based on the filter criteria.
 
 ## Licensing requirements for Customer Lockbox
 
-Access to Customer Lockbox for Microsoft Power Platform and Dynamics 365 requires users in the environments where the Lockbox policy is enforced to have any of these subscriptions:
+Customer Lockbox policy will be enforced only on environments that are activated for Managed Environments. Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+
+In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamics 365 requires users in the environments where the Lockbox policy is enforced to have any of these subscriptions:
 
 - Microsoft 365 or Office 365 A5/E5/G5
 - Microsoft 365 A5/E5/F5/G5 Compliance
 - Microsoft 365 F5 Security & Compliance
 - Microsoft 365 A5/E5/F5/G5 Insider Risk Management
 [Learn more](https://go.microsoft.com/fwlink/?linkid=2214240) about applicable licenses.
-
-Customer Lockbox policy will be enforced only on environments that are activated for Managed Environments. [Learn more](https://aka.ms/PowerPlatformLockbox).
 
 ## Exclusions
 
