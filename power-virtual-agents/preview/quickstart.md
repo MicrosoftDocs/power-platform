@@ -2,12 +2,13 @@
 title: Power Virtual Agents preview quickstart (preview)
 description: Discover the new features introduced in the Power Virtual Agents preview.
 ms.date: 12/07/2022
+
 ms.topic: how-to
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 manager: shellyha
-ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ms.custom: bap-template
 ---
 

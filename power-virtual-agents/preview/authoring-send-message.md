@@ -3,14 +3,15 @@ title: Send a message (preview)
 description: Use the Message node to send a message from the bot to a user in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 12/12/2022
+
 ms.topic: how-to
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 ms.reviewer: gapretty
 manager: shellyha
 ms.custom: authoring, topics, message, question, bap-template
-ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Send a message (preview)

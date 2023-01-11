@@ -3,15 +3,15 @@ title: "Use DLP to block skills in chatbots"
 description: "Block skills from being used in Power Virtual Agents chatbots."
 keywords: "PVA"
 ms.date: 10/07/2022
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: admin, dlp
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
-
-
 
 # Data loss prevention example 1 - Block skills in Power Virtual Agents chatbots (Preview)
 
