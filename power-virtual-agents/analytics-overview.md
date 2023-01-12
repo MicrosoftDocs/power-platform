@@ -2,7 +2,7 @@
 title: "Fundamentals - Analyze chatbot usage (contains video)"
 description: "Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents."
 keywords: "PVA"
-ms.date: 01/06/2023
+ms.date: 01/12/2023
 
 ms.topic: overview
 author: iaanw
@@ -46,8 +46,8 @@ The analytics section is divided into a number of pages to give you multiple way
 The following terms are used in this section.
 
 - A _conversation_ is an ongoing interaction between a specific user, or group of users, on a channel and your bot. Conversations can pause and resume later, or be transferred to a live agent. The conversation may be one-way, either from the end user to the bot, or from the bot to the end user, but is more commonly a back-and-forth interaction between the end user and the bot.
-- _Analytics sessions_ track user engagement for your bot. Each task a user asks of your bot defines an analytics session.
-- _Billed sessions_ are independent of analytics sessions. Billed sessions are used to measure resource consumption.
+- _Analytics sessions_ track user engagement for your bot. Analytics sessions try to capture how well your bot handles user tasks.
+- _Billed sessions_ are used to measure resource consumption. Billed sessions are independent of analytics sessions.
 
 > [!NOTE]
 > Although transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
@@ -61,7 +61,7 @@ The following terms are used in this section.
 ### See also
 
 | Topic                                                              | Description                                                                                                |
-| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [Analyze bot performance and usage](analytics-summary.md)          | Review overall analytics for your bots.                                                                    |
 | [Analyze customer satisfaction](analytics-csat.md)                 | Identify overall trends in customer satisfaction, and where satisfaction is falling behind.                |
 | [Analyze topic usage](analytics-topic-details.md)                  | See how individual topics are doing and how well they're working at resolving issues.                      |
