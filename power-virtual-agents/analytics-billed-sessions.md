@@ -79,11 +79,11 @@ The following table helps illustrate which sessions are going to be billed and w
 
 ### What's the difference between total sessions, engaged sessions, and billed sessions?
 
-The number of **billed sessions** is used to measure capacity, and is allocated when you purchase a license.
+- _Billed sessions_ are used to measure capacity, and is allocated when you purchase a license.
+- _Total sessions_ and _engaged sessions_ are metrics of _analytics sessions_, used to determine how efficient a bot is in addressing a user's questions.
+- _Billed sessions_ and _analytics sessions_ are distinct and independent.
 
-**Total sessions** and **engaged sessions** are metrics used to determine how efficient a bot is in addressing a user's questions.
-
-More information: [Analyze bot performance and usage in Power Virtual Agents](analytics-summary.md)
+For more information, see [Analyze bot performance and usage in Power Virtual Agents](analytics-summary.md).
 
 ### Where can I see the total number of billed sessions for my organization?
 

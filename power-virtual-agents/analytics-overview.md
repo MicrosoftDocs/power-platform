@@ -54,9 +54,9 @@ The following terms are used in this section.
 
 ### View analytics
 
-- In Power Virtual Agents, in the navigation menu, select **Analytics**.
+In Power Virtual Agents, in the navigation menu, select **Analytics**.
 
-    :::image type="content" source="media/analytics-overview/analytics-open.png" alt-text="Opening the Analytics dashboard." border="false":::
+:::image type="content" source="media/analytics-overview/analytics-open.png" alt-text="Opening the Analytics dashboard." border="false":::
 
 ### See also
 
