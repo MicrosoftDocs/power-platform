@@ -21,13 +21,13 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Model-driven app controls deprecation (2023 Release Wave 1)
+## Model-driven app controls deprecation
 
-With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in April 2023), these controls for model-driven apps will be deprecated: auto-complete, input mask, multimedia player, number input, option set, and star rating.
+Effective January 2023, the following controls for model-driven apps are deprecated: auto-complete, input mask, multimedia player, number input, option set, and star rating.
 
 #### Why is this needed? 
 
--   We will be introducing new Fluent controls which have better usability, accessibility and dark mode support. 
+We will be introducing new Fluent UI controls that have better usability, accessibility, and dark mode support. 
 
 #### Impact
 
