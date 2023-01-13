@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 11/08/2022
+ms.date: 01/13/2023
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
@@ -36,7 +36,7 @@ We will be introducing new Fluent UI controls that have better usability, access
 
 #### Action required by you
 
-- Evaluate existing forms that include a deprecated control and replace them with a newer control.
+Evaluate existing forms that include a deprecated control and replace them with a newer control.
 
 ## Microsoft Dataverse (legacy) connector (CDS 2.0 connector) for Power Automate flows will be deprecated and replaced with another connector
 
