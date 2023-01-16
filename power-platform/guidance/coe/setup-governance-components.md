@@ -95,7 +95,7 @@ More information:
 
 Your app, flow, and bot makers will use the Developer Compliance Center app to provide further information about the resources they're building. Get familiar with the [audit process](example-processes.md) and share the app with your makers.
 
-Consider adding this app to the **Maker - Command Center** for makers to easily find and access it.
+Consider adding this app to the **CoE Maker Command Center** for makers to easily find and access it.
 
 ## All environment variables
 

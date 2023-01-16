@@ -49,7 +49,7 @@ There are several flows which will need to be turned on for these components:
 
 ## Share apps with admins and makers
 
-Share the **Maker - Command Center** with your makers and assign them the **Power Platform Maker SR**.
+Share the **CoE Maker Command Center** with your makers and assign them the **Power Platform Maker SR**.
 Share the [**App Catalog**](core-components.md#app-catalog) with your end users and assign them the **Power Platform User SR**.
 
 More information:

@@ -33,7 +33,7 @@ The CoE Starter Kit requires access to your tenant's Power Platform environments
 
 - [Microsoft Power Platform service admin](../../admin/use-service-admin-role-manage-tenant.md#power-platform-administrator), global tenant admin, or Dynamics 365 service admin.
 - Power Apps Per User license (non-trial) and Microsoft 365 license.
-- Power Automate Per User or Per Flow license (non-trial).
+- Power Automate Per User license, or Per Flow licenses (non-trial) to turn on the flows that are part of the CoE Starter Kit solutions.
 - The identity must be email-enabled.
 - If you'd like to collect telemetry information, such as app launches and unique users per app, you must be granted access to the Audit Log and work with a Global Admin who has access to [Microsoft 365 audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log) to complete the setup.
 
@@ -71,53 +71,13 @@ Some processes part of the CoE Starter Kit send [Power Automate Approvals](/powe
   - Individual to receive chat bot chats
   - Individual to receive approvals
 
-## Prepare your environment
+## Create your environment
 
-### Decide what environment type to use (production or Dataverse for Teams)
-
-> [!IMPORTANT]
-> Effective October 2022, we will stop investing in the CoE Starter Kit version for Dataverse for Teams. Existing customers can continue using the Dataverse for Teams version and you can continue to [download the latest available versions](https://aka.ms/CoEStarterKitD4T) for Dataverse for Teams, but we will no longer implement new features or fix bugs for this version.
->
->We recommend that customers transition to installing the CoE starter Kit in a [Production environment](/power-platform/admin/environments-overview#types-of-environments) and setting up [pay-as-you-go plans](/power-platform/admin/pay-as-you-go-overview) for the usage of apps within the CoE Starter Kit.
-
-The CoE Starter Kit can be used in both production environments and Dataverse for Teams environments. Where you install it will depend on your organizational setup, your adoption of Microsoft Power Platform so far, and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs. Dataverse for Teams](/powerapps/teams/data-platform-compare) and review the impact on CoE Starter Kit features based on where you install it.
-
-> [!IMPORTANT]
-> The governance and nurture solutions of the CoE Starter Kit have a dependency on the core solution and need to be installed in the same environment.
-
-| Feature | Dataverse for Teams environment | Production environment |
-| --- | --- | --- |
-| Syncing inventory to Dataverse tables | Yes, will require a Power Automate Per User/Per Flow license due to [action request limits and pagination settings](/power-automate/limits-and-config) | Yes, will require a Power Automate Per User/Per Flow license due to [action request limits and pagination settings](/power-automate/limits-and-config)|
-| Data capacity | 2 GB | Unlimited through capacity purchases |
-| Collecting telemetry information from the audit log | No | Yes
-| Power Platform admin view to view and filter resources | Canvas app | Model-driven app |
-| Power BI Dashboard | Yes, except the [Compliance and Adoption dashboard](power-bi-compliance.md). Only DirectQuery is supported. | Yes, all dashboards |
-| Canvas apps part of core components (DLP Editor, Set App Permissions and Set Flow Permissions apps) | Yes | Yes |
-| Apps and flows part of governance components | Yes | Yes |
-| Apps and flows part of nurture components | Yes | Yes |
-| Sharing the Developer Compliance Center with makers | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
-| Sharing the App Catalog app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go. |
-| Sharing the Training in a day app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
-| Sharing the Admin - Command Center app | Sharing requires users to have a Power Apps Per User or Per App license  | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go. |
-| Data Permissions | Team members have full access, and [pre-built table permissions](/powerapps/teams/set-perms-and-share#assign-table-permissions) can be applied to colleagues with access | Granular permissions through [Dataverse security roles](/power-platform/admin/security-roles-privileges) that can be tailored to your requirements |
-| Sharing apps | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
-| Accessing apps | Apps can only be accessed within Microsoft Teams | Apps can be viewed in the browser or mobile app |
-| Application Lifecycle Management | No | Yes |
-| Update Dataverse properties | Not available | Dataverse settings and values for choices can get updated |
-
-### Create your environment
-
-If you decide to use a production environment:
+Create a production environment to install the CoE Starter Kit solutions:
 
 - [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database).
 - Don't add sample apps and datasets.
 - Don't restrict environment access with a security group, because some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
-
-If you decide to use a Dataverse for Teams environment:
-
-- Decide which team to add the CoE Starter Kit solution to, or [create a new team](https://support.microsoft.com/office/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b).
-- [Install the Power Apps personal app in Microsoft Teams](/powerapps/teams/install-personal-app).
-- [Create your first app](/powerapps/teams/create-first-app). At least one app is required in the environment to enable the solution import experience.
 
 ### Validate data loss prevention (DLP) policies
 
@@ -145,7 +105,6 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 
 - The HTTP and HTTP with Azure AD connectors connect to [https://graph.microsoft.com](https://developer.microsoft.com/graph) for commercial tenants; if your tenant is in GCC, GCC High or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints). <br>
 You cannot set up [DLP endpoint filtering](/power-platform/admin/dlp-granular-controls#endpoint-filtering) for these connectors, as dynamic endpoint evaluation is not supported by DLP Policies.
-
 
 - If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business group. Configure the [https://manage.office.com/](/office/office-365-management-api/office-365-management-apis-overview) endpoint in the business group of your tenant-level policy. Learn more: [Configure custom connector endpoints in tenant-level policies](../../admin/dlp-connector-classification.md#tenant-level-dlp-policies).
 

@@ -108,8 +108,6 @@
       items:
         - name: Overview
           href: coe/overview.md
-        - name: Establishing a Center of Excellence
-          href: coe/motivation.md
         - name: Set up the CoE starter kit
           items:
             - name: Get started with setup

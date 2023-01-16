@@ -28,19 +28,10 @@ There are some flows, which crawl the tenant in order to do their work. Specific
 
 To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations)
 
-Larger tenants might require a [Power Automate Per Flow](https://powerautomate.microsoft.com/pricing/) license or may need to set up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) for these flows to complete in a timely manner.
+Larger tenants might require a [Power Automate Per Flow](https://powerautomate.microsoft.com/pricing/) license for these flows to complete in a timely manner.
 
 >[!NOTE]
 >The first run of the sync flows will perform a full inventory and will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not go over Power Platform request entitlements for most tenants.
-
-## Installing the CoE Starter Kit in Dataverse for Teams
-
-> [!IMPORTANT]
-> Effective October 2022, we will stop investing in the CoE Starter Kit version for Dataverse for Teams. Existing customers can continue using the Dataverse for Teams version and you can continue to [download the latest available versions](https://aka.ms/CoEStarterKitD4T) for Dataverse for Teams, but we will no longer implement new features or fix bugs for this version.
->
->We recommend that customers transition to installing the CoE starter Kit in a [Production environment](/power-platform/admin/environments-overview#types-of-environments) and setting up [pay-as-you-go plans](/power-platform/admin/pay-as-you-go-overview) for the usage of apps within the CoE Starter Kit.
-
-Model Driven Apps, Business Process Flows, and Custom Connectors are not available in Dataverse for Teams. If you are installing the CoE Starter Kit in Dataverse for Teams, you will notice those components missing.
 
 ## Flows that use the Microsoft Dataverse connector
 

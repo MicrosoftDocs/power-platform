@@ -315,14 +315,14 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 | HELPER - CloudFlowOperations | Child Flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
 | HELPER - ObjectOperations | Child Flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. It calls either the The operations supported are Delete and Assign (which reassigns owner). It calls either the **HELPER - CloudFlowOperations** or the **HELPER - CanvasAppOperations** child flow depending on its last parameter, objectType. It is needed due to a product bug in which you cannot call child flows with the Dataverse Connector from Canvas Apps. |
 | HELPER - Send Email | Child Flow | Instant | This flow is called from all other flows and handles sending emails. |
-| Command Center > Get M365 Service Messages | Instant | from Admin - Command Center canvas apps | This flow connects to [Microsoft Graph](/graph/api/serviceannouncement-list-messages) to list Power Platform Message Center service updates and returns them to the Admin - Command Center canvas app. |
-| Command Center > Initially Populate Bookmarks | Instant | from Admin - Command Center canvas app | This flow runs once to get all CoE Starter Kit apps in the environment and store them to the Command Center Config table as bookmarks used in both the Admin - Command Center and Maker - Command Center canvas apps. |
-| Command Center > Set CoE Flows State | Instant | from Admin - Command Center canvas app | Turns a flow on or off when called from a Canvas App. |
+| Command Center > Get M365 Service Messages | Instant | from CoE Admin Command Center canvas apps | This flow connects to [Microsoft Graph](/graph/api/serviceannouncement-list-messages) to list Power Platform Message Center service updates and returns them to the CoE Admin Command Center canvas app. |
+| Command Center > Initially Populate Bookmarks | Instant | from CoE Admin Command Center canvas app | This flow runs once to get all CoE Starter Kit apps in the environment and store them to the Command Center Config table as bookmarks used in both the CoE Admin Command Center and CoE Maker Command Center canvas apps. |
+| Command Center > Set CoE Flows State | Instant | from CoE Admin Command Center canvas app | Turns a flow on or off when called from a Canvas App. |
 | DLP Editor > Parse impacted resources into CSV | Instant | from DLP Editor v2 | This flow creates a CSV file of flows and apps impacted by DLP changes and sends it to the admin. |
 
 ### Apps
 
-#### Admin - Command Center
+#### CoE Admin Command Center
 
 A canvas app used by admins as a starting point to launch other apps in the CoE Starter Kit and review content relevant to admins.
 
@@ -344,7 +344,7 @@ Use this app to:
 >[!NOTE]
 > When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Additionally add other relevant bookmarks such as links to the Power BI dashboard and your Power Platform wiki and community by selecting **Edit bookmarks**.
 
-![Admin - Command Center canvas app](media\commandcenter1.png "Admin - Command Center canvas app")
+![CoE Admin Command Center canvas app](media\commandcenter1.png "CoE Admin Command Center canvas app")
 
 #### DLP Editor v2
 
@@ -490,7 +490,7 @@ Use this app to:
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.  If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. 
 
 ![Admin - Environment Request canvas app.](media\dev-resources-admin-details.png "Admin - Environment Request canvas app")
 
@@ -505,7 +505,7 @@ Use this app to:
 
 **Permission**: As soon as you're using this process, you can share the app with all authorized Makers or the entire organization, depending on which users you want to allow Environment ownership. Requires the Power Platform Maker SR (security role) to use the Dataverse tables.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Maker - Environment Request canvas app.](media\dev-resources-maker-env.png "Maker - Environment Request canvas app")
 
@@ -530,7 +530,7 @@ When you first open the app catalog, you won't see any apps there. There's a fie
 
 **Permission**: As soon as you're using this process, you can share the app catalog with the entire organization.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![App Catalog.](media/coe67.png "App Catalog")
 

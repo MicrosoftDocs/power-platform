@@ -37,36 +37,6 @@ This article will provide you with answers to frequently asked questions and tip
     ![Update environment variable values.](media/msi-envvar.png "Update environment variable values")
 1. Select **Import**.
 
-## Installing a solution in a Dataverse for Teams environment
-
-> [!IMPORTANT]
-> Effective October 2022, we will stop investing in the CoE Starter Kit version for Dataverse for Teams. Existing customers can continue using the Dataverse for Teams version and you can continue to [download the latest available versions](https://aka.ms/CoEStarterKitD4T) for Dataverse for Teams, but we will no longer implement new features or fix bugs for this version.
->
->We recommend that customers transition to installing the CoE starter Kit in a [Production environment](/power-platform/admin/environments-overview#types-of-environments) and setting up [pay-as-you-go plans](/power-platform/admin/pay-as-you-go-overview) for the usage of apps within the CoE Starter Kit.
-
-1. Select the Microsoft Teams group you want to add the solution to.
-1. [Install the Power Apps personal app in Microsoft Teams](/powerapps/teams/install-personal-app).
-1. [Create your first app](/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
-1. Open the Power Apps app in Teams, select **Build**, and then select the team you want to add the solution to.
-1. Select **See All**
-
-    ![Open the Power Apps app in Teams to import a new solution.](media/ibteams-1.png "Open the Power Apps app in Teams to import a new solution.")
-
-1. Select **Import**
-1. In the pop-up window, select **Choose File**.
-1. Select the solution from the CoE Starter Kit download.
-1. When the compressed (.zip) file has been loaded, select **Next**.
-1. Establish connections to the required connectors. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
-
-     ![Establish connections to all connectors used in the solution.](media/coreteams-1.png "Establish connections to all connectors used in the solution.")
-
-1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
-1. Select **Import**.  
-   After the import is complete, your solution will be available when you select **Installed apps**.
-1. Select **See all** to see all tables, apps, and flows that are part of the solution.
-
-    ![Select Installed Apps to view your imported solution.](media/tips-coeteams1.png "Select Installed Apps to view your imported solution")
-
 ## Set flow run-only users properties
 
 1. Remove [unmanaged layers](after-setup.md) for all flows.
@@ -128,18 +98,18 @@ The following limitations apply when updating environment variables:
 - You need to always add or update a current value, not the default value, because the default value will be overwritten when you install an upgrade.
 - Environment variables are cached in cloud flows until the flow is reset (for example, by turning the cloud flow off and back on).
 
-To update environment variables, you can use the [Admin - Command Center](core-components.md#admin---command-center)
+To update environment variables, you can use the [CoE Admin Command Center](core-components.md#admin---command-center)
 
 1. Go to [make.powerapps.com](https://make.powerapps.com), and then select your CoE environment
-1. Open the **Admin - Command Center** app.
+1. Open the **CoE Admin Command Center** app.
 1. Select the tool icon, and update the current value.
 
-    ![Update environment variable values in the Admin - Command Center app.](media/tips-command1.png "Update environment variable values in the Admin - Command Center app")
+    ![Update environment variable values in the CoE Admin Command Center app.](media/tips-command1.png "Update environment variable values in the CoE Admin Command Center app")
 
 >[!NOTE]
 >After changing the value of an environment variable, you'll need to turn off and on all the flows that use that environment variable to make sure the flows use the latest value.
 
-If you aren't using the [Admin - Command Center](core-components.md#admin---command-center) app, do the following to update environment variables:
+If you aren't using the [CoE Admin Command Center](core-components.md#admin---command-center) app, do the following to update environment variables:
 
 1. If you've installed the solution in a production environment, do the following:
    1. Go to [Power Automate](https://make.powerautomate.com).

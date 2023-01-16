@@ -105,7 +105,7 @@ More information:
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
 - [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
-Consider adding this app to the **Maker - Command Center** for makers to easily find and access it.
+Consider adding this app to the **CoE Maker Command Center** for makers to easily find and access it.
 
 ## All environment variables
 

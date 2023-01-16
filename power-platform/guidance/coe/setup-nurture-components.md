@@ -41,7 +41,7 @@ The video hub has two apps:
 1. Video hub - admin: a model driven app, designed for administrators to add content, moderate comments and curate shared playlists.
 1. Video hub: a canvas app that all users access.
 
-### Manage content in the Video hub - admin app
+### Manage content in the Nurture apps - admin app
 
 #### Video content
 
@@ -96,7 +96,7 @@ The canvas app has two features that can be enabled:
 1. Comments
 2. Related video
 
-Either, or both can be enabled by updating the following environment variables in the Admin - Command Center app:
+Either, or both can be enabled by updating the following environment variables in the CoE Admin Command Center app:
 
 1. Video Hub - Enable Comments
 1. Video Hub - Related Videos
@@ -120,7 +120,7 @@ When enabled, video hub users will see a list of similar videos to the one that 
 
 The video hub components consist of two apps:
 
-- [**Video hub - admin**](nurture-components.md#video-hub---admin) app to manage content, playlists and comments. Share this app with other admins, and assign them the Power Platform SR security role.
+- [**Nurture apps - admin**](nurture-components.md#video-hub---admin) app to manage content, playlists and comments. Share this app with other admins, and assign them the Power Platform SR security role.
 - [**Video hub**](nurture-components.md#video-hub) canvas app for video content. Share this app with your makers and assign them the Power Platform SR security role.
 
 More information:
@@ -161,8 +161,8 @@ There are several flows which will need to be turned on for the training in a da
 
 The training in a day components consist of two apps:
 
-- [**Power Platform Training Management**](nurture-components.md#training-in-a-day--management) app for training organizers to view and manage events and registrations. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
-- [**Power Platform Training Registration**](nurture-components.md#training-in-a-day--registration) app for attendees to register to training events. Share this app with your makers, and assign them the Power Platform Maker SR security role.
+- [**Nurture apps - Admin**](nurture-components.md#training-in-a-day--management) app for training organizers to view and manage events and registrations. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
+- [**Nurture apps - Maker**](nurture-components.md#training-in-a-day--registration) app for attendees to register to training events. Share this app with your makers, and assign them the Power Platform Maker SR security role.
 
 More information:
 
@@ -195,8 +195,8 @@ Run the **Add Maker Assessment Starter Data** flow once to add starter data for 
 
 The maker assessment components consist of two apps:
 
-- [**Maker Assessment Admin app**](nurture-components.md#maker-assessment-admin-app) app for admins to manage assessment questions. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
-- [**Maker Assessment**](nurture-components.md#maker-assessment) app for makers to complete assessments. Share this app with your makers, and assign them the Power Platform Maker SR security role.
+- [**Nurture apps - Admin**](nurture-components.md#maker-assessment-admin-app) app for admins to manage assessment questions. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
+- [**Nurture apps - Maker**](nurture-components.md#maker-assessment) app for makers to complete assessments. Share this app with your makers, and assign them the Power Platform Maker SR security role.
 
 More information:
 
@@ -252,7 +252,7 @@ If you have existing templates that you'd like to share with your makers (for ex
 
 The template catalog components consist of one apps:
 
-- [**Template Catalog**](nurture-components.md#template-catalog) app for makers and end users to browse available templates. Share this app with end users, and assign them the Power Platform User SR security role.
+- [**Nurture apps - Maker**](nurture-components.md#template-catalog) app for makers and end users to browse available templates. Share this app with end users, and assign them the Power Platform User SR security role.
 
 More information:
 
