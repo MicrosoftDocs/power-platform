@@ -5,7 +5,7 @@ author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/07/2022
+ms.date: 02/07/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -85,10 +85,8 @@ If your sync flows were turned off for longer than 7 days, you can only get the 
 If you want to fully update your entire inventory again, you can do that by changing the **Full inventory** environment variable:
 
 1. Set the value of the **Full inventory** environment variable to **Yes**. Learn more: [Update environment variables](#update-environment-variables)).
-1. Turn all flows in the Core components solution off and then on.
 1. Run the **Admin | Sync Template v3** flow.
 1. Set the **Full inventory** environment variable to **No**.
-1. Turn all flows in the Core components solution off and then on.
 
 ## Update environment variables
 
@@ -96,18 +94,14 @@ The following limitations apply when updating environment variables:
 
 - You can't update the values for environment variables from within the imported solution.
 - You need to always add or update a current value, not the default value, because the default value will be overwritten when you install an upgrade.
-- Environment variables are cached in cloud flows until the flow is reset (for example, by turning the cloud flow off and back on).
 
 To update environment variables, you can use the [CoE Admin Command Center](core-components.md#admin---command-center)
 
 1. Go to [make.powerapps.com](https://make.powerapps.com), and then select your CoE environment
 1. Open the **CoE Admin Command Center** app.
-1. Select the tool icon, and update the current value.
+1. Select **Environment Variables**, and update the current value.
 
     ![Update environment variable values in the CoE Admin Command Center app.](media/tips-command1.png "Update environment variable values in the CoE Admin Command Center app")
-
->[!NOTE]
->After changing the value of an environment variable, you'll need to turn off and on all the flows that use that environment variable to make sure the flows use the latest value.
 
 If you aren't using the [CoE Admin Command Center](core-components.md#admin---command-center) app, do the following to update environment variables:
 
@@ -117,14 +111,31 @@ If you aren't using the [CoE Admin Command Center](core-components.md#admin---co
    1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
    1. Select a variable that you want to update, and then configure its **Current Value**.
 
-1. If you've installed the solution in a Dataverse for Teams environment, do the following:
-   1. Go to [Power Automate](https://make.powerautomate.com).
-   1. On the left pane, select **Solutions**.
-   1. Select **Common Data Services Default Solution**.
-   1. Select **+ Add > Environment Variables**.
-   1. Select the existing environment variables from the managed solution that you want to update.
-   1. Change the filter to show **Environment Variables**.
-   1. Select a variable that you want to update, and then configure its **Current Value**.
+## Which flows in the CoE Starter Kit send emails or notifications to makers or end users?
+
+There are a number of processes in the CoE Starter Kit that send emails or notifications to makers and end users. Each processes is off by default and has to be opted in by configuring it. Each process is described in the [What's in the kit](starter-kit-explained.md) section, the list below provides a summary of the different processes that communicate with your makers and end users.
+
+- [Welcome email](core-components.md#flows-2) sends a welcome email to a maker if they create an app, flow, bot etc for the first time.
+
+- [Capacity alerts](core-components.md#flows-2) send capacity alerts to the configured admin group if environments are over the approved capacity.
+
+- [Add-on alerts](core-components.md#flows-2) send add-on capacity alerts to the configured admin group if environments are over the approved capacity.
+
+- [Environment Request management](core-components.md#flows-1) sends emails to the admin about requested environments, and to the requestor about the outcome of the requested environment (approved/rejected).
+
+- [Compliance process](governance-components.md#compliance-processes) sends emails to app and bot makers if their resources are over specific thresholds (e.g. shared with more than x people, launched more than x times).
+
+- [Inactivity process](governance-components.md#inactivity-processes) sends approval tasks to makers if their flows or apps are inactive.
+
+- [Microsoft Teams governance](governance-components.md#microsoft-teams-governance) sends asks for business justifications as Teams adaptive cards to anyone who creates a new Dataverse for Teams environment
+
+- [Clean up of orphaned resources process](governance-components.md#cleanup-for-orphaned-resources) sends emails to managers if someone that previously reported to them left the org and left behind apps and flows that need new owners.
+
+- [Quarantine process](governance-components.md#app-quarantine-process) as part of the Compliance process you can quarantine apps and this also triggers notifications if you do that.
+
+- [Training in a day](nurture-components.md#training-in-a-day-components) sends emails to users that register for upcoming training events
+
+- [Pulse survey](nurture-components.md#pulse-survey-components) sends Teams adaptive cards to makers to get feedback from them.
 
 ## Share an app from a production environment
 
@@ -142,30 +153,6 @@ If you aren't using the [CoE Admin Command Center](core-components.md#admin---co
 
 1. Select **Share**.
 
-## Share an app from a Dataverse for Teams environment
-
-1. Open the Power Apps app in Teams, select **Build**, and then select the team you've installed the CoE Starter Kit in.
-1. Select **Share with colleagues**. You must be a team owner to see this option.
-1. Search for and select the security group you want to share the apps and tables with.
-1. Select the apps you want to share with members of this security group.
-
-      ![Search for a group to share apps with.](media/coe-share3.png "Search for a group to share apps with")
-
-1. Select **Save**.
-1. Select **Installed apps**.
-1. Select **See all** on the Center of Excellence - Core for Teams solution.
-1. On the left pane, select **Tables**.
-1. Select the table you want to manage, and then select **Manage Permissions**.
-1. Assign [table permissions](/powerapps/teams/set-perms-and-share#assign-table-permissions) to the security group. The level of permissions will depend on the app you're sharing. Perform this step for all tables used by the app you're sharing.
-
-      ![Assign table permissions to your colleagues.](media/coe-share4.png "Assign table permissions to your colleagues")
-
-1. To access the app, colleagues with access can go to Microsoft Teams > **Apps** > **Built by your colleagues**, and select the app from there.
-
-      ![Find apps in the Microsoft Teams app store.](media/coe-share5.png "Find apps in the Microsoft Teams app store")
-
-      Note that apps are only accessible from within Microsoft Teams.
-
 ## Get a Power Apps URL from a production environment
 
 1. Go to [make.powerapps.com](https://make.powerapps.com), and then select your CoE environment.
@@ -176,31 +163,11 @@ If you aren't using the [CoE Admin Command Center](core-components.md#admin---co
 
       ![Get the web link for a canvas app.](media/tips-link1.png "Get the web link for a canvas app")
 
-## Add apps to Microsoft Teams
-
-1. Open the Power Apps app in Teams, select **Build**.
-1. Select the team you've installed the CoE Starter Kit in, and then select **Installed apps**.
-1. Select **Apps**, and then select **Edit** for the app you want to add to Teams.
-
-      ![Edit the app in Teams.](media/tips-link2.png "Edit the app in teams")
-
-1. Select **Publish to Teams** > **Next**.
-
-      ![Publish the app to your Microsoft Teams channel.](media/tips-link3.png "Publish the app to your Microsoft Teams channel")
-
-1. Select **Add to a Channel** > **Save and close**.
-
-      ![Select a channel to add the app to.](media/tips-link4.png "Select a channel to add the app to")
-
-1. If you'd like to save the app URL, go to that channel in Microsoft Teams, open the app, and then select **Copy link to tab**.
-
-      ![Copy the link to this tab.](media/tips-link5.png "Copy the link to this tab")
-
 ## Timeouts in the Admin | Sync Template v3
 
 The Dataverse connector might experience some throttling limits if the tenant has many resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
 
-**Configure the retry policy**
+### Configure the retry policy
 
   1. Open **Admin \| Sync Template v3**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Table**.
@@ -209,7 +176,7 @@ The Dataverse connector might experience some throttling limits if the tenant ha
 
      ![Configure the retry policy.](media/coe72.PNG "Configure the retry policy")
 
-**Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
+### Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls
 
   1. Open **Admin \| Sync Template v3**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Table**.
