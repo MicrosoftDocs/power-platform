@@ -39,12 +39,11 @@ _Analytics sessions_ track user engagement for your bot. The summary charts meas
 
 - A session starts when a user interacts with your bot or the bot sends a proactive message to the user. The session begins in an _unengaged_ state.
 - A session becomes _engaged_ when a non-system topic is triggered or the session is escalated. Once it's engaged, it remains engaged. An engaged session will have one of the following outcomes: _resolved_, _escalated_, or _abandoned_.
-- When the **Escalate** topic is triggered or a **Transfer to agent** node is run, the session ends and is considered _escalated_. (The current analytics session ends, whether the conversation transfers to a live agent or not.)
-- When the **End of Conversation** topic is triggered:
-  - If your bot doesn't present an end-of-conversation survey, the session ends and is considered _resolved_.
-  - If your bot does present an end-of-conversation survey and the user confirms that the interaction was a success or lets the session time out, the session also ends and is considered _resolved_.
-  - Otherwise, the session continues, and the user can attempt a new task or question.
-- An engaged session is considered _abandoned_ when the session times out and it did not reach a resolved or escalated state.
+- A session ends and is considered _escalated_ when the **Escalate** topic is triggered or a **Transfer to agent** node is run. (The current analytics session ends, whether the conversation transfers to a live agent or not.)
+- A session ends and is considered _resolved_ when either:
+  - The **Confirmed Success** topic is triggered.
+  - The **End of Conversation** topic is triggered and the user confirms that the interaction was a success or lets the session time out.
+- A session ends and is considered _abandoned_ when an engaged session times out and it did not reach a resolved or escalated state.
 
 The summary tab includes a variety of charts with graphical views of your bot's key performance indicators. The remainder of this article describes each chart in more detail.
 
