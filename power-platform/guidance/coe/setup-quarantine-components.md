@@ -30,7 +30,7 @@ This article will help you to set up the app quarantine components of the govern
 You'll [update these environment variables](faq.md#update-environment-variables) after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
 
 >[!TIP]
->Learn how to update environment variables for production and Dataverse for Teams environments: [Update environment variables](faq.md#update-environment-variables).
+>Learn how to update environment variables: [Update environment variables](faq.md#update-environment-variables).
 
 | Name | Description | Default value |
 |------|---------------|------|
@@ -42,10 +42,6 @@ You might want to exempt some environments from the app quarantine process—for
 
 You can exempt environments from the app quarantine process by using the Power Platform Admin View app.  
 
-### Production environment
-
-If your solution is installed in a production environment, your app will be a model-driven app. Follow these steps:
-
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. Go to your Center of Excellence (CoE) environment.
 1. Open the **Power Platform Admin View** app.
@@ -56,19 +52,6 @@ If your solution is installed in a production environment, your app will be a mo
 1. Select **Save**.
 
    ![Exclude an environment from the app quarantine process in a production environment.](media/quarantine1.png "Exclude an environment from the app quarantine process in a production environment")
-
-### Dataverse for Teams environment
-
-1. Open the Power Apps app in Teams, select **Build**, and then select the team that you've installed the CoE Starter Kit solutions in.
-1. Select **Center of Excellence - Core for Teams** > **See All**.
-1. Open the **Power Platform Admin View** app.
-1. Select **Environments**, and then select the environment you want to exempt.
-1. Set the **Excuse From App Quarantine Flow** field to **Yes** to exempt the environment from the app quarantine flow. Set the **Excuse From App Quarantine Flow** field to **No** to include the environment in the app quarantine flow.
-    >[!NOTE]
-    >Due to the impact of quarantining apps, all environments are initially exempt from the quarantine process and you will have to manually update environments to include them in the quarantine process.
-1. Select **Save**.
-
-   ![Exclude an environment from the app quarantine process in Dataverse for Teams.](media/quarantine2.png "Exclude an environment from the app quarantine process in Dataverse for Teams")
 
 ## Turn on flows
 

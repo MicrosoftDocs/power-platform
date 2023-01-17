@@ -29,9 +29,7 @@ Multiple nurture components are provided in the Center of Excellence (CoE) Start
 
 The core components solution is required for the nurture components solution to work.
 
-1. Import the solution
-    1. If [Installing to Production Environment](faq.md#installing-a-solution-in-a-production-environment) – use the solution file from the download called  CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip.
-    1. If [Installing to Dataverse for Teams Environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment) – use the solution file from the download called  CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip.
+1. Import the solution: Use the CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip file from the download to [install the solution](faq.md#installing-a-solution-in-a-production-environment).
 1. Leave all environment variables blank on import.
 
 ## Set up video hub components

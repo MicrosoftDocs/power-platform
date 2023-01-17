@@ -34,21 +34,17 @@ This set of functionality allows you to detect frequently used apps and chatbots
 This step will be completed after you import the solution. Environment variables are used to store application and flow configuration data. Using environment variables means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
 
 >[!TIP]
->Learn how to update environment variables for Production and Dataverse for Teams environments: [Update Environment Variables](faq.md#update-environment-variables).
+>Learn how to update environment variables: [Update Environment Variables](faq.md#update-environment-variables).
 
 | Name | Description |
 |------|---------------|
-| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams). If you've installed the CoE Starter Kit components in a Dataverse for Teams environment, this app is called: Developer Compliance Center (Teams version) and is part of the Core for Teams solution. If you've installed the CoE starter Kit in a  Production environment, this app is called Developer Compliance Center and is part of the Governance components solution.
+| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) |
 
 ## Exempt environments from the compliance process
 
 You may want to exempt certain environments from the compliance process - for example, dedicated environments that are already well managed or the environment you've installed the CoE Starter Kit in. Learn more: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
 
 You can exempt environments from the compliance process using the Power Platform Admin View app.  
-
-### Production environment
-
-If your solution is installed in a Production Environment, your app will be a model driven app.  
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. Go to your CoE environment.
@@ -57,18 +53,9 @@ If your solution is installed in a Production Environment, your app will be a mo
 
     ![Exclude an environment from the compliance process in a Production environment](media/coe-compliance1.png "Exclude an environment from the compliance process in a Production environment")
 
-### Dataverse for Teams environment
-
-1. Open to the Power Apps app in Teams, select **Build**, and select the Team you've installed the CoE Starter Kit solutions in.
-1. Select **Center of Excellence - Core for Teams > See All**.
-1. Open the **Power Platform Admin View** app.
-1. Select Environments > Chose the environment you want to exempt > Set the **Excuse From Compliance Flows** field to Yes > **Save**.
-
-   ![Exclude an environment from the compliance process in Dataverse for Teams](media/coe-compliance2.png "Exclude an environment from the compliance process in Dataverse for Teams")
-
 ## Turn on flows
 
-For Production environment turn on these flows that are installed as part of the Core components solution:
+Turn on these flows that are installed as part of the Core components solution:
 
 - Admin | Compliance request complete apps v3
 - Admin | Compliance request complete bots v3
@@ -82,7 +69,6 @@ For Production environment turn on these flows that are installed as part of the
 - Admin | Compliance Details Request eMail (Flows)
 - [**Admin | Compliance detail request v3**](governance-components.md#admin--compliance-detail-request-v3)
 
-For solution installed in a Dataverse for Teams environment, turn on the Admin | Compliance detail request [Teams] v3 flow only that is installed with the Core for Teams components solution.
 
 ## Share apps with makers
 
@@ -108,7 +94,7 @@ Environment variables are used to store application and flow configuration data 
 
 | Name | Description | Default Value |
 |------|---------------|------|
-| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams). If you've installed the CoE Starter Kit components in a Dataverse for Teams environment, this app is called: Developer Compliance Center (Teams version) and is part of the Core for Teams solution. If you've installed the CoE starter Kit in a  Production environment, this app is called Developer Compliance Center and is part of the Governance components solution. | n/a |
+| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) | n/a |
 | Compliance – Apps – Number Days Since Published | If an app is broadly shared and was last published this many days ago or older, makers are asked to republish the app to stay compliant | 60 |
 | Compliance – Apps – Number Groups Shared | If the app is shared with this many or more groups, makers are asked for a business justification | 1 |
 | Compliance – Apps – Number Launches Last 30 Days | If the app was launched at least this many times in the last 30 days, makers are asked for a business justification | 30 |
