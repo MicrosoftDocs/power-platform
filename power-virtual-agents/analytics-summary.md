@@ -45,7 +45,7 @@ _Analytics sessions_ track user engagement for your bot. The summary charts meas
   - The **End of Conversation** topic is triggered and the user confirms that the interaction was a success or lets the session time out.
 - A session ends and is considered _abandoned_ when an engaged session times out and it did not reach a resolved or escalated state.
 
-The summary tab includes a variety of charts with graphical views of your bot's key performance indicators. The remainder of this article describes each chart in more detail.
+The summary tab includes various charts with graphical views of your bot's key performance indicators. The remainder of this article describes each chart in more detail.
 
 ## Prerequisites
 
@@ -66,7 +66,7 @@ The summary charts summarize the key performance indicators for the specified ti
 | Abandon rate | The percentage of engaged sessions that were abandoned. |
 | CSAT | The graphical view of the average of customer satisfaction (CSAT) scores for sessions in which customers respond to an end-of-session request to take the survey. |
 
-A blue up-down indicator next to the the percent change indicates it was a positive trend. A red indicator indicates it was a negative trend.
+A blue up-down indicator next to the percent change indicates it was a positive trend. A red indicator indicates it was a negative trend.
 
 ## Engagement over time chart
 
