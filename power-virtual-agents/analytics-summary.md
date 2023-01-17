@@ -43,7 +43,7 @@ _Analytics sessions_ track user engagement for your bot. The summary charts meas
 - A session ends and is considered _resolved_ when either:
   - The **Confirmed Success** topic is triggered.
   - The **End of Conversation** topic is triggered and the user confirms that the interaction was a success or lets the session time out.
-- A session ends and is considered _abandoned_ when an engaged session times out and it did not reach a resolved or escalated state.
+- A session ends and is considered _abandoned_ when an engaged session times out and it didn't reach a resolved or escalated state.
 
 The summary tab includes various charts with graphical views of your bot's key performance indicators. The remainder of this article describes each chart in more detail.
 
