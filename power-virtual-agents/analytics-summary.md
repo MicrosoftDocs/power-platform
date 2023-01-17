@@ -2,7 +2,7 @@
 title: "Report analytics, performance, and usage (contains video)"
 description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
 keywords: "PVA"
-ms.date: 01/12/2023
+ms.date: 01/17/2023
 
 ms.topic: article
 author: iaanw
@@ -35,16 +35,16 @@ The **Summary** tab on the **Analytics** page gives you a broad overview of your
 > [!TIP]
 > By default, the page shows you key performance indicators for the last seven days. To change the time period, use the date controls at the top of the page.
 
-_Analytics sessions_ track user engagement for your bot. These charts measure how well your bot is doing and help you find the topics with the most impact on your bot's performance. A session will time out after 30&nbsp;minutes of inactivity.
+_Analytics sessions_ track user engagement for your bot. The summary charts measure how well your bot is doing and help you find the topics with the most impact on your bot's performance. A session will time out after 30&nbsp;minutes of inactivity.
 
 - A session starts when a user interacts with your bot or the bot sends a proactive message to the user. The session begins in an _unengaged_ state.
-- A session becomes _engaged_ when a non-system topic is triggered or the session is escalated. Once it's engaged, it remains engaged.
-- When the **Escalate** topic is triggered or a **Transfer to agent** node is run, the session ends and is considered _escalated_. (The current session ends, whether the conversation transfers to a live agent or not.)
+- A session becomes _engaged_ when a non-system topic is triggered or the session is escalated. Once it's engaged, it remains engaged. An engaged session will have one of the following outcomes: _resolved_, _escalated_, or _abandoned_.
+- When the **Escalate** topic is triggered or a **Transfer to agent** node is run, the session ends and is considered _escalated_. (The current analytics session ends, whether the conversation transfers to a live agent or not.)
 - When the **End of Conversation** topic is triggered:
   - If your bot doesn't present an end-of-conversation survey, the session ends and is considered _resolved_.
   - If your bot does present an end-of-conversation survey and the user confirms that the interaction was a success or lets the session time out, the session also ends and is considered _resolved_.
   - Otherwise, the session continues, and the user can attempt a new task or question.
-- A session is considered _abandoned_ when the session times out and it did not reach a resolved or escalated state.
+- An engaged session is considered _abandoned_ when the session times out and it did not reach a resolved or escalated state.
 
 The summary tab includes a variety of charts with graphical views of your bot's key performance indicators. The remainder of this article describes each chart in more detail.
 
@@ -93,14 +93,14 @@ The **Session outcomes over time** chart provides a graphical view of the daily 
 The **Resolution rate drivers** chart displays topics in order of their impact on the resolution rate over the specified time period.
 
 | Description | Details |
-|---|---|
-| Topic | A Power Virtual Agents topic. |
-| Rate | The percentage of engaged sessions for the topic that are resolved. |
-| Impact | The topic's resolution rate impact score. The resolution rate impact score is the overall resolution rate including the topic minus the overall resolution rate excluding the topic. |
+|-------------|---|
+| Topic       | A Power Virtual Agents topic. |
+| Rate        | The percentage of engaged sessions for the topic that were resolved. |
+| Impact      | The topic's resolution rate impact score. The resolution rate impact score is the overall resolution rate including the topic minus the overall resolution rate excluding the topic. |
 
-The chart displays the impact as a red or blue bar. A red bar indicates that the topic's resolution rate is greater than the average resolution rate, resulting in a negative impact on overall resolution rate. A blue bar indicates that the resolution time is shorter, resulting in a positive impact on overall resolution rate performance.
+The chart displays the impact as a percentage. Topics with a positive impact percentage are topics with a higher than average resolution rate&mdash;they increased the overall resolution rate of your bot.
 
-Improving the resolution rate for the top resolution-rate topics in red has the greatest impact on improving the overall resolution rate.
+Increase the resolution rate of topics with high negative impact percentages to more quickly improve the overall resolution rate for your bot.
 
 To see additional information about each topic, select the **Detail** link to display the topic details page. For more information, see [Topic details page](analytics-topic-details.md).
 
@@ -109,14 +109,14 @@ To see additional information about each topic, select the **Detail** link to di
 The **Escalation rate drivers** chart displays topics in order of their impact on the escalation rate over the specified time period.
 
 | Description | Details |
-|---|---|
-| Topic | A Power Virtual Agents topic. |
-| Rate | The percentage of engaged sessions for the topic that are escalated. |
-| Impact | The topic's escalation rate impact score. The escalation rate impact score is the overall escalation rate including the topic minus the overall escalation rate excluding the topic. |
+|-------------|---|
+| Topic       | A Power Virtual Agents topic. |
+| Rate        | The percentage of engaged sessions for the topic that were escalated. |
+| Impact      | The topic's escalation rate impact score. The escalation rate impact score is the overall escalation rate including the topic minus the overall escalation rate excluding the topic. |
 
-The chart displays the impact as a red or blue bar. A red bar indicates that the topic's escalation rate is greater than the average escalation rate, resulting in a negative impact on overall escalation rate. A blue bar indicates that the escalation rate is smaller, resulting in a positive impact on overall escalation rate performance.
+The chart displays the impact as a percentage. Topics with a positive impact percentage are topics with a greater than average escalation rate&mdash;they increased the overall escalation rate of your bot.
 
-Lowering the escalation rate for the topics in red has the greatest impact on improving the overall escalation rate.
+Lower the escalation rate of topics with high impact percentages to more quickly decrease the escalation rate for your bot.
 
 To see additional information about each topic, select the **Detail** link to display the topic details page. For more information, see [Topic details page](analytics-topic-details.md).
 
@@ -125,14 +125,14 @@ To see additional information about each topic, select the **Detail** link to di
 The **Abandon rate drivers** chart displays topics in order of their impact on the abandon rate over the specified time period.
 
 | Description | Details |
-|---|---|
-| Topic | A Power Virtual Agents topic. |
-| Rate | The percentage of engaged sessions for the topic that are abandoned. |
-| Impact | The topic's abandon rate impact score. The abandon rate impact score is the overall abandon rate including the topic minus the overall abandon rate excluding the topic. |
+|-------------|---|
+| Topic       | A Power Virtual Agents topic. |
+| Rate        | The percentage of engaged sessions for the topic that were abandoned. |
+| Impact      | The topic's abandon rate impact score. The abandon rate impact score is the overall abandon rate including the topic minus the overall abandon rate excluding the topic. |
 
-The chart displays the impact as a red or blue bar. A red bar indicates that the topic's abandon rate is greater than the average abandon rate, resulting in a negative impact on overall abandon rate. A blue bar indicates that the abandon rate is smaller, resulting in a positive impact on overall abandon rate performance.
+The chart displays the impact as a percentage. Topics with a positive impact percentage are topics with a greater than average abandon rate&mdash;they increased the overall abandon rate of your bot.
 
-Improving the abandon rate for the top abandon-rate topics in red has the greatest impact on improving the overall abandon rate.
+Lower the abandon rate of topics with high impact percentages to more quickly decrease the abandon rate for your bot.
 
 To see additional information about each topic, select the **Detail** link to display the topic details page. For more information, see [Topic details page](analytics-topic-details.md).
 

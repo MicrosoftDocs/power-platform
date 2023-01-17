@@ -27,7 +27,7 @@ Power Virtual Agents has a comprehensive set of analytics that show you the key 
 Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest impact on your bot's performance.
 
 > [!NOTE]
-> Sessions transcripts are unavailable for download on the Power Virtual Agents app in Teams. To review and export session information, you'll need to sign up for the [Power Virtual Agents web app](../requirements-licensing-subscriptions.md)
+> Sessions transcripts are unavailable for download on the Power Virtual Agents app in Teams. To review and export session information, you'll need to sign up for the [Power Virtual Agents web app](../requirements-licensing-subscriptions.md).
 
 ## Prerequisites
 
