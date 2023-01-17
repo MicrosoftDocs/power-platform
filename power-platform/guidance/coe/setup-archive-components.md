@@ -23,9 +23,17 @@ This article will help you to set up the inactivity notifications for unused can
 
 [Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
 
-## Set up inactivity notifications (unused apps and flows)
+## Set up the Inactivity process components using the Setup Wizard [Preview]
 
-Processes to ask users if canvas apps and cloud flows are still useful, or to clean them up if they are not.
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Inactivity notifications process**.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the Inactivity process components manually
 
 ### Update environment variables values for unused apps and flows
 

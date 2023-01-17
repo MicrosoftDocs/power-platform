@@ -25,7 +25,19 @@ This article will help you to set up the app quarantine components of the govern
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
-## Configure mandatory environment variables
+## Set up the App quarantine components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Compliance process**.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the App quarantine components manually
+
+### Configure mandatory environment variables
 
 You'll [update these environment variables](faq.md#update-environment-variables) after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
 
@@ -36,7 +48,7 @@ You'll [update these environment variables](faq.md#update-environment-variables)
 |------|---------------|------|
 | Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify whether you want to quarantine apps if they're not compliant and for how many days.  | 7 days |
 
-## Add or exempt environments from the app quarantine process
+### Add or exempt environments from the app quarantine process
 
 You might want to exempt some environments from the app quarantine process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
 
@@ -53,7 +65,7 @@ You can exempt environments from the app quarantine process by using the Power P
 
    ![Exclude an environment from the app quarantine process in a production environment.](media/quarantine1.png "Exclude an environment from the app quarantine process in a production environment")
 
-## Turn on flows
+### Turn on flows
 
 Turn on the following flows, which are installed as part of the governance components solution:
 

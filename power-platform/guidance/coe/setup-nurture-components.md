@@ -34,6 +34,18 @@ The core components solution is required for the nurture components solution to 
 
 ## Set up video hub components
 
+## Set up the Video hub components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Video hub**.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the Video hub components manually
+
 The video hub has two apps:
 
 1. Video hub - admin: a model driven app, designed for administrators to add content, moderate comments and curate shared playlists.
@@ -127,6 +139,18 @@ More information:
 
 ## Set up training in a day components
 
+## Set up the training in a day components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Training in a day**.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the training in a day components manually
+
 ### Update environment variables values
 
 [Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
@@ -169,6 +193,18 @@ More information:
 
 ## Set up maker assessment components
 
+## Set up the maker assessment components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Maker Assessment**.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the maker assessment components manually
+
 ### Update environment variables values
 
 [Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
@@ -206,6 +242,18 @@ More information:
 >[!NOTE]
 >The flows supporting this processes post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams is not available in GCC, GCC High and DoD. These flows should remain turned off in these regions as they will not work.
 
+## Set up the Pulse feedback survey components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Pulse feedback**.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the Pulse feedback survey components manually
+
 ### Update environment variables values
 
 [Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
@@ -235,7 +283,19 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ## Set up template catalog
 
-## Add your own templates to the Template Catalog
+## Set up the template catalog components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Template Catalog**.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the template catalog components manually
+
+### Add your own templates to the Template Catalog
 
 If you have existing templates that you'd like to share with your makers (for example, template apps, brand guidelines, or app and flow samples), add them to the CoE Templates table so they show up in the template catalog.
 

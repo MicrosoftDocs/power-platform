@@ -27,36 +27,17 @@ This article will help you to set up the environment request components of the c
 
 [Watch a walk-through](https://www.youtube.com/watch?v=16mspbGz1zA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the environment and DLP request process works.
 
-## Set up the Inventory components using the Setup Wizard [Preview]
+## Set up the Environment request components using the Setup Wizard [Preview]
 
-### Import the core components solution
-
-1. Download the CoE Starter Kit [compressed file](https://aka.ms/CoeStarterKitDownload) to your computer.
-
-1. Extract the compressed (zip) file. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
-
-1. Import the **CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip** solution file from the extracted folder.
-
-1. Leave all environment variable values blank.
-
-The import can take up to 15 minutes to be completed.
-
->[!NOTE]
-> After solution import, you may see the following warning: *Solution "Center of Excellence - Core components" imported successfully with warnings: Flow client error returned with status code Bad Request*. This warning message can be ignored, and you can proceed with opening the **Setup Wizard** app to continue the setup and configuration of the solution.
->
-> :::image type="content" source="media/coewizardflows.png" alt-text="Ignore any warnings related to flows not turning on.":::
-
-### Open the Setup Wizard to complete the configuration
-
-1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
+1. Open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Environment Request management**.
 1. This app provides a guided step by step experience through the configuration steps.
-    :::image type="content" source="media/coesetupwizard.png" alt-text="CoE Starter Kit Setup Wizard":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
-## Before you start
+## Set up the Environment request components manually
 
 ### Update environment variables values
 

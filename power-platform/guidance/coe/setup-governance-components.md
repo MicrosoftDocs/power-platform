@@ -29,7 +29,19 @@ This set of functionality allows you to detect frequently used apps and chatbots
 
 [Watch a walk-through](https://www.youtube.com/watch?v=WXXFjHLt5ss&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the compliance process works.
 
-## Configure mandatory environment variables
+## Set up the Developer Compliance  components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Compliance process**.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the Developer Compliance  request components manually
+
+### Configure mandatory environment variables
 
 This step will be completed after you import the solution. Environment variables are used to store application and flow configuration data. Using environment variables means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
 
@@ -40,7 +52,7 @@ This step will be completed after you import the solution. Environment variables
 |------|---------------|
 | Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) |
 
-## Exempt environments from the compliance process
+### Exempt environments from the compliance process
 
 You may want to exempt certain environments from the compliance process - for example, dedicated environments that are already well managed or the environment you've installed the CoE Starter Kit in. Learn more: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
 
@@ -53,7 +65,7 @@ You can exempt environments from the compliance process using the Power Platform
 
     ![Exclude an environment from the compliance process in a Production environment](media/coe-compliance1.png "Exclude an environment from the compliance process in a Production environment")
 
-## Turn on flows
+### Turn on flows
 
 Turn on these flows that are installed as part of the Core components solution:
 
@@ -69,8 +81,7 @@ Turn on these flows that are installed as part of the Core components solution:
 - Admin | Compliance Details Request eMail (Flows)
 - [**Admin | Compliance detail request v3**](governance-components.md#admin--compliance-detail-request-v3)
 
-
-## Share apps with makers
+### Share apps with makers
 
 The Governance Components solution contains the [**Developer Compliance Center**](governance-components.md#developer-compliance-center) canvas app, which is used by makers to update the compliance details of their applications. Share these apps with your Power Platform makers and assign them the **Power Platform Maker SR** security role.
 
