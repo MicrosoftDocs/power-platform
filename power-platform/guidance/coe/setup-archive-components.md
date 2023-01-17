@@ -21,7 +21,19 @@ search.app:
 
 This article will help you to set up the inactivity notifications for unused canvas apps and cloud flows, and for how to clean up unused connection references.
 
+>[!NOTE]
+>These flows used to be called called "archive" flows, however they did not automatically archive apps and flows. The name has recently changed to "inactivity notifications", however if you are on an older version of the Governance components solution they may still be called "archive" flows.
+
+You use this functionality to detect unused objects, and ask makers to either archive or unshare them to keep your tenant tidy.
+
+>[!IMPORTANT]
+>This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+
 [Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
+
+## Grant makers environment access
+
+Make sure your environment isn't restricted with an [environment security group](limitations.md#security-groups-and-approvals).
 
 ## Set up the Inactivity process components using the Setup Wizard [Preview]
 
@@ -34,20 +46,6 @@ This article will help you to set up the inactivity notifications for unused can
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
 ## Set up the Inactivity process components manually
-
-### Update environment variables values for unused apps and flows
-
->[!NOTE]
->These flows used to be called called "archive" flows, however they did not automatically archive apps and flows. The name has recently changed to "inactivity notifications", however if you are on an older version of the Governance components solution they may still be called "archive" flows.
-
-You use this functionality to detect unused objects, and ask makers to either archive or unshare them to keep your tenant tidy.
-
->[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
-
-### Grant makers environment access
-
-Make sure your environment isn't restricted with an [environment security group](limitations.md#security-groups-and-approvals).
 
 ### Configure mandatory environment variables
 

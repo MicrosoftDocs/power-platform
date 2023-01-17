@@ -34,7 +34,7 @@ The core components solution is required for the nurture components solution to 
 
 ## Set up video hub components
 
-## Set up the Video hub components using the Setup Wizard [Preview]
+### Set up the Video hub components using the Setup Wizard [Preview]
 
 1. Open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
@@ -44,12 +44,45 @@ The core components solution is required for the nurture components solution to 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
-## Set up the Video hub components manually
+### Set up the Video hub components manually
 
-The video hub has two apps:
+#### Review and enable video hub canvas app features
 
-1. Video hub - admin: a model driven app, designed for administrators to add content, moderate comments and curate shared playlists.
-1. Video hub: a canvas app that all users access.
+The canvas app has two features that can be enabled:
+
+1. Comments
+2. Related video
+
+Either, or both can be enabled by updating the following environment variables in the CoE Admin Command Center app:
+
+1. Video Hub - Enable Comments
+1. Video Hub - Related Videos
+
+Follow [detailed instructions for setting environment variables](/power-platform/guidance/coe/faq#update-environment-variables).
+
+##### Enable Comments
+
+When enabled, video hub users will be able to comment on selected videos. Comment moderation is managed through the admin app - comments must be approved prior to them becoming visible in the video hub.
+
+Approve comments in the admin app by
+![Approve comments](media/Approve-or-reject-comment.png)
+
+##### Related video
+
+When enabled, video hub users will see a list of similar videos to the one that they've selected. This is filtered by the 'content category' value of content.  
+
+![Related video enabled](media/Video-hub-RelatedVideoEnabled.png)
+
+#### Share apps with admins and makers
+
+The video hub components consist of two apps:
+
+- [**Nurture apps - admin**](nurture-components.md#video-hub---admin) app to manage content, playlists and comments. Share this app with other admins, and assign them the Power Platform SR security role.
+- [**Video hub**](nurture-components.md#video-hub) canvas app for video content. Share this app with your makers and assign them the Power Platform SR security role.
+
+More information:
+
+- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
 
 ### Manage content in the Nurture apps - admin app
 
@@ -99,47 +132,9 @@ Comments have the following schema:
 | Comment status | Choice | Approved or rejected.  Only approved comments will appear in the video hub canvas app |
 | Community hub content | Lookup | Represents the video related to the comment |
 
-### Review and enable video hub canvas app features
-
-The canvas app has two features that can be enabled:
-
-1. Comments
-2. Related video
-
-Either, or both can be enabled by updating the following environment variables in the CoE Admin Command Center app:
-
-1. Video Hub - Enable Comments
-1. Video Hub - Related Videos
-
-Follow [detailed instructions for setting environment variables](/power-platform/guidance/coe/faq#update-environment-variables).
-
-#### Enable Comments
-
-When enabled, video hub users will be able to comment on selected videos. Comment moderation is managed through the admin app - comments must be approved prior to them becoming visible in the video hub.
-
-Approve comments in the admin app by
-![Approve comments](media/Approve-or-reject-comment.png)
-
-#### Related video
-
-When enabled, video hub users will see a list of similar videos to the one that they've selected. This is filtered by the 'content category' value of content.  
-
-![Related video enabled](media/Video-hub-RelatedVideoEnabled.png)
-
-### Share apps with admins and makers
-
-The video hub components consist of two apps:
-
-- [**Nurture apps - admin**](nurture-components.md#video-hub---admin) app to manage content, playlists and comments. Share this app with other admins, and assign them the Power Platform SR security role.
-- [**Video hub**](nurture-components.md#video-hub) canvas app for video content. Share this app with your makers and assign them the Power Platform SR security role.
-
-More information:
-
-- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-
 ## Set up training in a day components
 
-## Set up the training in a day components using the Setup Wizard [Preview]
+### Set up the training in a day components using the Setup Wizard [Preview]
 
 1. Open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
@@ -149,9 +144,9 @@ More information:
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
-## Set up the training in a day components manually
+### Set up the training in a day components manually
 
-### Update environment variables values
+#### Update environment variables values
 
 [Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
 
@@ -160,7 +155,7 @@ More information:
 | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    |
 | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
 
-### Set up a feedback form for your Training in a day
+#### Set up a feedback form for your Training in a day
 
 1. Open this [template form](https://forms.office.com/Pages/ShareFormPage.aspx?id=v4j5cvGGr0GRqy180BHbR8FBqAfISVJDqMM6DZbPmghUMUxUS1EwSVkxRExKVzdET1lZTTdWQ0FaOS4u&sharetoken=xjgXNluBcJOrLb2xg0TI).
 1. Select **Duplicate it**.
@@ -171,7 +166,7 @@ More information:
 
 1. When importing the solution, update thee *Training in a day - Feedback Form* with this value.
 
-### Turn on flows
+#### Turn on flows
 
 There are several flows which will need to be turned on for the training in a day components to work:
 
@@ -179,7 +174,7 @@ There are several flows which will need to be turned on for the training in a da
 - Training in a day \| Registration Confirmation
 - Training in a day \| Reminder 3 days prior to event
 
-### Share apps with admins and makers
+#### Share apps with admins and makers
 
 The training in a day components consist of two apps:
 
@@ -193,7 +188,7 @@ More information:
 
 ## Set up maker assessment components
 
-## Set up the maker assessment components using the Setup Wizard [Preview]
+### Set up the maker assessment components using the Setup Wizard [Preview]
 
 1. Open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
@@ -203,9 +198,9 @@ More information:
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
-## Set up the maker assessment components manually
+### Set up the maker assessment components manually
 
-### Update environment variables values
+#### Update environment variables values
 
 [Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
 
@@ -213,11 +208,11 @@ More information:
 |------|---------------|
 | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
 
-### Import starter data set for the Maker Assessment app
+#### Import starter data set for the Maker Assessment app
 
 Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
 
-### Turn on flow
+#### Turn on flow
 
 Turn on the flow:
 
@@ -225,7 +220,7 @@ Turn on the flow:
 
 Run the **Add Maker Assessment Starter Data** flow once to add starter data for the Maker Assessment apps: categories, questions, and answers.
 
-### Share apps with admins and makers
+#### Share apps with admins and makers
 
 The maker assessment components consist of two apps:
 
@@ -242,7 +237,7 @@ More information:
 >[!NOTE]
 >The flows supporting this processes post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams is not available in GCC, GCC High and DoD. These flows should remain turned off in these regions as they will not work.
 
-## Set up the Pulse feedback survey components using the Setup Wizard [Preview]
+### Set up the Pulse feedback survey components using the Setup Wizard [Preview]
 
 1. Open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
@@ -252,9 +247,9 @@ More information:
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
-## Set up the Pulse feedback survey components manually
+### Set up the Pulse feedback survey components manually
 
-### Update environment variables values
+#### Update environment variables values
 
 [Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
 
@@ -262,14 +257,14 @@ More information:
 |------|---------------|
 | Pulse - How many makers to survey? | The Pulse survey is send to makers to provide feedback on their experience working with the CoE and Power Platform. Provide the number of makers you want to survey regularly here. If you set this number to 5, the survey will be sent to 5 random makers per week. A Default value of 1 is provided. |
 
-### Turn on flows to start collecting feedback
+#### Turn on flows to start collecting feedback
 
 There are several flows which will need to be turned on for the Pulse feedback survey components to work:
 
 - Pulse [Child] - post adaptive cards to maker
 - Pulse - Survey Makers for CoE feedback
 
-### Set up the Power BI dashboard to view feedback
+#### Set up the Power BI dashboard to view feedback
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 1. Enable the [TDS endpoint](/power-platform//admin/settings-features) on your environment.
@@ -283,7 +278,7 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ## Set up template catalog
 
-## Set up the template catalog components using the Setup Wizard [Preview]
+### Set up the template catalog components using the Setup Wizard [Preview]
 
 1. Open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
@@ -293,9 +288,9 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
-## Set up the template catalog components manually
+### Set up the template catalog components manually
 
-### Add your own templates to the Template Catalog
+#### Add your own templates to the Template Catalog
 
 If you have existing templates that you'd like to share with your makers (for example, template apps, brand guidelines, or app and flow samples), add them to the CoE Templates table so they show up in the template catalog.
 
@@ -306,7 +301,7 @@ If you have existing templates that you'd like to share with your makers (for ex
 1. Select **Data**.
 1. Select **+ Add Record** to add your template description and file.
 
-### Share apps with admins and makers
+#### Share apps with admins and makers
 
 The template catalog components consist of one apps:
 

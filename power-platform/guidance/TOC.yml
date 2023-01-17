@@ -132,7 +132,7 @@
               href: coe/setup-quarantine-components.md
             - name: Collect audit log data
               href: coe/setup-auditlog.md
-            - name: Set-up Power BI reporting
+            - name: Set up Power BI reports
               href: coe/setup-powerbi.md
             - name: Set up nurture components
               href: coe/setup-nurture-components.md
