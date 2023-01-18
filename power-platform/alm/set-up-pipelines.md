@@ -24,31 +24,35 @@ Power Platform administrators can create one or more pipelines, associate any nu
 - All environments used in pipelines must have a Microsoft Dataverse database.
 - Microsoft Dataverse for Teams environments aren't supported for use with pipelines.
 - You must have a Power Platform administrator or Dataverse system administrator role.
-- Pipelines are a feature of Managed Environments. You'll need access to one or more environments that are enabled as a managed environment as described below. More information: [Managed Environments](../admin/managed-environment-overview.md)
+- Pipelines are a feature of Managed Environments and development and target environments must be enabled as a managed environment. Standalone licenses will not be required when you use developer or trial environments. More information: [Managed Environments](../admin/managed-environment-overview.md)
 
 > [!IMPORTANT]
-> Use of environments that aren't Managed Environments isn't blocked during pipelines preview. Enforcement is anticipated for pipelines upon general availability (GA). As a result, any pre-existing pipelines will no longer deploy from or to unmanaged environments except where indicated in this article.
+> - Use of development and target environments that aren't Managed Environments isn't blocked during pipelines preview. 
+> - Enforcement is anticipated for pipelines upon general availability (GA). As a result, any pre-existing pipelines may no longer function until enabled as a managed environment. 
+> - End users within any production environment(s) linked to pipelines will require a Standalone license for either Power Apps, Power Automate, or Dynamics 365. Makers generally won't unless they're also an end user.
 
 #### Choose environments for pipelines
 
-Before you begin, you’ll need to choose which environments will participate in pipelines. A common setup might include the following environments:
+Before you begin, you’ll need to choose which environments will participate in pipelines. A common setup might include the following:
+
+| **Environment purpose** | **Environment type** | **Managed environment** | **Standalone license required** |
+|--------------|:-----:|----|-----------:|
+| Host | Production | No | No |
+| Development | Developer | Yes at GA | No |
+| QA |  Developer | Yes at GA | No |
+| Production |  Production | Yes at GA | Yes for end users at GA |
 
 - **Host environment (required)**. This special-purpose environment acts as the **storage** and management plane for all pipeline configuration, security, and run history.
   - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated production environment** separate from the development and target QA and production environments that participate in pipelines.
   - If desired, you can configure multiple different hosts within a tenant, such as for separately managing pipelines for different business organizations or geographic locations. One host for the entire tenant is also acceptable as long as all environments are in the same geographic location.
-  - Doesn't require the environment be a managed environment. Using a production Dataverse environment type is recommended for long-term use.
 
    > [!IMPORTANT]
    >
-   > - Deleting the host environment deletes all pipelines and run data. Use caution and understand the impact of data and configuration loss as well as maker access to pipelines hosted in the environment.
-   > - Source and target environments can only be managed by one host. Use different environments for each host.
+   > Deleting the host environment deletes all pipelines and run data. Use caution and understand the impact of data and configuration loss as well as maker access to pipelines hosted in the environment.
    >
-- **Development (required)**. This is where you’ll develop solutions. Notice that "development" refers to the *purpose* you'll assign to the environment, not the *type* of environment that can be used.
-  - Must be a Managed Environment except when you use developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned.
+- **Development (required)**. This is where you’ll develop solutions. 
 - **QA environment (optional)**. This is where you’ll deploy solutions for testing prior to moving them to production.
-  - Must be a managed environment except when using developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. Restrictions unrelated to pipelines might also be present when using developer and trial environments.
 - **Production (required)**. The final destination for a deployment pipeline. This is where end users will run the apps that are deployed.
-  - Must be a managed environment except when using developer or trial environments. Notice that *Developer* and *Trial* refer to *environment type* and not the *purpose* the environment is assigned. Restrictions unrelated to pipelines may also be present when using developer and trial environments.
 
 > [!TIP]
 > Use environment names that indicate their purpose. For example, *Contoso Host*, *Contoso Development*, *Contoso QA*, and so forth.
