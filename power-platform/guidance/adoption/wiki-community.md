@@ -152,6 +152,10 @@ If you can't connect to SharePoint Online, this could be caused by PnP PowerShel
 
 If you get an error message telling you the PowerShell script can't be loaded as it is not signed, you have to [update the execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) to [remove the execution policy from the current user](/powershell/module/microsoft.powershell.security/set-executionpolicy#example-5-remove-the-execution-policy-for-the-current-user).
 
+#### My tenant uses SharePoint Vanity URLs
+
+There's a few companies around the world that use vanity URLs. If you are one of these companies, make sure to hard code the URLs in the `$adminURL` & `$newSiteURL` variables in the scripts. This will make sure the script will connect to the right tenant and site.
+
 #### Still seeing issues?
 
 If you continue to face issues with the setup, have questions or would like to raise feature requests please report your issues here: [aka.ms/pphub-issues](https://aka.ms/pphub-issues).
