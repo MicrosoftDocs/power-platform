@@ -22,7 +22,7 @@ contributors:
 
 Use **Trace** to record real-time diagnostic information so that you can better understand your logic and debug issues.
 
-When used in Power Apps, the output from **Trace** appears in the [Power Apps Monitor](/power-apps/maker/monitor-overview.md) tool along with other app activities.  If you have allowed your app to send telemetry data to [Azure Application Insights](/power-apps/maker/canvas-apps/application-insights), the **Trace** function can also be used to send information to your Application Insights resource. **Trace** can only be used in [behavior formulas](../imperative.md). 
+When used in Power Apps, the output from **Trace** appears in the [Power Apps Monitor](/power-apps/maker/monitor-overview) tool along with other app activities.  If you have allowed your app to send telemetry data to [Azure Application Insights](/power-apps/maker/canvas-apps/application-insights), the **Trace** function can also be used to send information to your Application Insights resource. **Trace** can only be used in [behavior formulas](../imperative). 
 
 When used with Test Studio, **Trace** is an optional expression that can be used to provide additional information in your test results from the **OnTestCaseComplete** event. Trace event messages, as well as any messages for both passed and failed assertions, are contained in a Traces table in the TestCaseResult record. The Traces table has two properties, Message and Timestamp.  Trace information used in Tests will also be recorded in Application Insights. Test trace information will not be available in the Monitor tool as the Monitor is connected to the app when it is played from the Canvas studio.
 
@@ -53,6 +53,7 @@ Usually **Trace** returns _true_.  If _Message_ contains an error, it will be re
 
 ### See Also
 
+[Power Apps Monitor Overview](/power-apps/maker/monitor-overview) <br>
 [Test Studio Overview](/power-apps/maker/canvas-apps/test-studio) <br>
 [Working with Test Studio](/power-apps/maker/canvas-apps/working-with-test-studio)
 
