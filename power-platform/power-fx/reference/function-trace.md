@@ -45,11 +45,11 @@ Usually **Trace** returns _true_.  If _Message_ contains an error, it will be re
   Set( x, x+1 );
   Trace( x );
   ```
-3. Open the Power Apps Monitor.
-4. Press your button a few times.
-5. View the monitor.
-
-The Monitor will display an event for each button click and for each **Trace** value:
+3. Open the Power Apps Monitor.  Select the "Advanced tools" icon (wrench and screwdriver) in the left hand navigation pane in Power Apps Studio and select "Open monitor":
+  [entry point for Power Apps monitor](media/function-trace/open-monitor.png)
+4. Select your button four times.  Use Alt-click with a mouse if in app editing mode.
+5. View the monitor which will display an event for each button click and for each **Trace** value of the variable that is being incremented:
+  [monitor trace showing button being pressed four times and corresponding increments of a variable](media/function-trace/increment-trace.png)
 
 ### See Also
 
