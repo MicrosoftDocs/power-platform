@@ -26,14 +26,14 @@ When used in Power Apps, the output from **Trace** appears in the [Power Apps Mo
 
 When used with Test Studio, **Trace** is an optional expression that can be used to provide additional information in your test results from the **OnTestCaseComplete** event. Trace event messages, as well as any messages for both passed and failed assertions, are contained in a Traces table in the TestCaseResult record. The Traces table has two properties, Message and Timestamp.  Trace information used in Tests will also be recorded in Application Insights. Test trace information will not be available in the Monitor tool as the Monitor is connected to the app when it is played from the Canvas studio.
 
-Usually **Trace** returns _true_.  If _Message_ contains an error, it will be reported in the Monitor and/or App Insights but will otherwise be suppreseed by **Trace**.  Errors in the other arguments will result in an error being reported to the app.
+Usually **Trace** returns _true_.  If _Message_ contains an error, it will be reported as an error in the Monitor and/or App Insights but will otherwise the error will be suppreseed by **Trace** in the app.  Errors in the other arguments will result in an error being reported to the app.
 
 ## Syntax
 
-**Trace**( _Message_ [ , _TraceSeverity_ [ , _CustomRecord_ [ , _TraceOptions_ ] ] ] )_
+**Trace**( _Message_ [ , _TraceSeverity_ [ , _CustomRecord_ [ , _TraceOptions_ ] ] ] )
 
 - _Message_ – Required. The information to be traced. Numbers, Dates, Booleans and any other data type that can be coerced to Text.
-- _TraceSeverity_ – Optional. The severity level of the Trace recorded in Monitor and Application Insights. Options are **TraceSeverity.Information**, **TraceSeverity.Warning** or **TraceSeverity.Error**.
+- _TraceSeverity_ – Optional. The severity level of the Trace recorded in Monitor and Application Insights. Options are **TraceSeverity.Information** (default), **TraceSeverity.Warning** or **TraceSeverity.Error**.
 - _CustomRecord_ – Optional. A record containing custom data that will be recorded in Monitor or Application Insights.
 - _TraceOptions_ – Optional. Options are **TraceOptions.None** (default) and **TraceOptions.IgnoreUnsupportedTypes** which will ignore data types in _CustomRecord_ that cannot be serialized.  
 
