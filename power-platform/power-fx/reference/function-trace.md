@@ -20,7 +20,7 @@ contributors:
 
 # Trace function in Power Apps
 
-Use **Trace** to record real-time diagnostic information so that you can better understand your logic and debug issues.
+Often there is a lot of logic working behind the scenes in an app.  Sometimes the impact is obvious, for example a control's value or color changing, but sometimes it isn't and it can be difficult to visualize what is happening inside the app.  Use the **Trace** function to record diagnostic information from behind the scenes, creating a timeline of what actually happened, to better understand how your app is operating and to help debug issues.
 
 When used in Power Apps, the output from **Trace** appears in the [Power Apps Monitor](/power-apps/maker/monitor-overview) tool along with other app activities.  If you've allowed your app to send telemetry data to [Azure Application Insights](/power-apps/maker/canvas-apps/application-insights), the **Trace** function can also be used to send information to your Application Insights resource. **Trace** can only be used in [behavior formulas](../imperative.md). 
 
