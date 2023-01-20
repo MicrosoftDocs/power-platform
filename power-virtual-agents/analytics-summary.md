@@ -2,7 +2,7 @@
 title: "Report analytics, performance, and usage (contains video)"
 description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
 keywords: "PVA"
-ms.date: 01/17/2023
+ms.date: 01/20/2023
 
 ms.topic: article
 author: iaanw
@@ -35,7 +35,9 @@ The **Summary** tab on the **Analytics** page gives you a broad overview of your
 > [!TIP]
 > By default, the page shows you key performance indicators for the last seven days. To change the time period, use the date controls at the top of the page.
 
-_Analytics sessions_ track user engagement for your bot. The summary charts measure how well your bot is doing and help you find the topics with the most impact on your bot's performance. A session will time out after 30&nbsp;minutes of inactivity.
+_Analytics sessions_ track user engagement with your bot and try to capture how well your bot handles user tasks. A single conversation can contain one or more analytics sessions. Each session is associated with a specific topic. The last non-system topic triggered&mdash;or the first system topic triggered, if no non-system topics were triggered&mdash;is associated with the analytic session.
+
+The summary charts measure how well your bot is doing and help you find the topics with the most impact on your bot's performance. A session will time out after 30&nbsp;minutes of inactivity.
 
 - A session starts when a user interacts with your bot or the bot sends a proactive message to the user. The session begins in an _unengaged_ state.
 - A session becomes _engaged_ when a non-system topic is triggered or the session is escalated. Once it's engaged, it remains engaged. An engaged session will have one of the following outcomes: _resolved_, _escalated_, or _abandoned_.

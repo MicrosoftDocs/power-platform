@@ -25,16 +25,14 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](analytics-topic-details.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/analytics-topic-details-teams.md)
 
-The topic details page provides a view into the performance of individual topics and how they can be improved.
+The topic analytics pane provides a view into the performance of an individual topic and how it can be improved.
 
-You can display the topic details page by selecting the **Detail** link in one of the following charts on the [Summary](analytics-summary.md) and [Customer Satisfaction](analytics-CSAT.md) pages:
+To display the topic analytics pane, select the **Detail** link for the topic in one of the following charts on the [Summary](analytics-summary.md) or [Customer Satisfaction](analytics-CSAT.md) tab:
 
-- [Escalation rate drivers (Summary page)](analytics-summary.md#escalation-rate-drivers-chart)
-- [Abandon rate drivers (Summary page)](analytics-summary.md#abandon-rate-drivers-chart)
-- [Resolution rate drivers (Summary page)](analytics-summary.md#resolution-rate-drivers-chart)
-- [Customer satisfaction drivers (Customer Satisfaction page)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
-
-:::image type="content" source="media/analytics-topic-details/topic-details-link.png" alt-text="Topic details link." border="false":::
+- [Escalation rate drivers (Summary tab)](analytics-summary.md#escalation-rate-drivers-chart)
+- [Abandon rate drivers (Summary tab)](analytics-summary.md#abandon-rate-drivers-chart)
+- [Resolution rate drivers (Summary tab)](analytics-summary.md#resolution-rate-drivers-chart)
+- [Customer satisfaction drivers (Customer Satisfaction tab)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
 
 The topic details page can also be displayed by opening an individual topic from the [Topics page](authoring-create-edit-topics.md) and selecting **Analytics** at the top of the page.
 
