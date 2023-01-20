@@ -20,13 +20,13 @@ contributors:
 
 # Trace function in Power Apps
 
-Often there is a lot of logic working behind the scenes in an app.  Sometimes the impact is obvious, for example a control's value or color changing, but sometimes it isn't and it can be difficult to visualize what is happening inside the app.  Use the **Trace** function to record diagnostic information from behind the scenes, creating a timeline of what actually happened, to better understand how your app is operating and to help debug issues.
+Often there is a lot of logic working behind the scenes in an app.  Sometimes the impact is obvious, for example a control's value or color changes, confirming the logic operated correctly.  But sometimes it isn't obvious and it can be difficult to visualize and understand what is happening inside the app.  Use the **Trace** function to record diagnostic information from behind the scenes, creating a timeline of what actually happened, to better understand how your app is operating and to help debug issues.
 
 When used in Power Apps, the output from **Trace** appears in the [Power Apps Monitor](/power-apps/maker/monitor-overview) tool along with other app activities.  If you've allowed your app to send telemetry data to [Azure Application Insights](/power-apps/maker/canvas-apps/application-insights), the **Trace** function can also be used to send information to your Application Insights resource. **Trace** can only be used in [behavior formulas](../imperative.md). 
 
 When used with Test Studio, **Trace** is an optional expression that can be used to provide additional information in your test results from the **OnTestCaseComplete** event. **Trace** event messages are combined with passed and failed assertion messages in the **Traces** table of the **TestCaseResult** record. The **Traces** table has two properties, **Message** and **Timestamp**.  Trace information used in tests will also be recorded in Application Insights. Test trace information won't be available in the Monitor tool as the Monitor is connected to the app when it's played from the Power Apps Studio.
 
-Usually **Trace** returns _true_.  If _Message_ contains an error, it will be reported as an error in the Power Apps Monitor or App Insights but will otherwise the error will be suppresed by **Trace** in the app.  Errors in the other arguments will result in an error being reported to the app.
+Usually **Trace** returns _true_.  If _Message_ contains an error, it will be reported as an error in the Power Apps Monitor or App Insights, but it will not be returned as an error in the app (_true_ will be returned from **Trace**).  Errors in the other arguments will result in an error being reported to the app.
 
 ## Syntax
 
@@ -39,15 +39,15 @@ Usually **Trace** returns _true_.  If _Message_ contains an error, it will be re
 
 ## Examples
 
-1. Create a button control in Power Apps.
+1. Create a button control in Power Apps Studio.
 2. Set the **OnSelect** formula to the formula:
   ```powerapps-dot
   Set( x, x+1 );
   Trace( x );
   ```
-3. Open the Power Apps Monitor by selecting the "Advanced tools" icon (wrench and screwdriver) in the left hand navigation pane in Power Apps Studio and select "Open monitor" which will open a new browser window:
+3. Open the Power Apps Monitor in another browser window by selecting the "Advanced tools" icon in the left hand pane and select "Open monitor":
   ![entry point for Power Apps monitor](media/function-trace/open-monitor.png)
-4. Select your button four times.  Use Alt-click with a mouse if in app editing mode.
+4. Return to the original Studio browser window and select your button four times.  Use **Alt-click** on your mouse if in design mode.
 5. View the Power Apps Monitor.  
 6. The Monitor's grid will contain an event for each button click and for each **Trace** call, which will show the value of the variable after each increment.  Drill into a Trace event to see where the **Trace** was initiated, and the expression used for the message, in the right hand panel:
   ![monitor trace showing button being pressed four times and corresponding increments of a variable](media/function-trace/increment-trace.png)
