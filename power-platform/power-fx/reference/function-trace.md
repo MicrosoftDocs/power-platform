@@ -22,20 +22,20 @@ contributors:
 
 Use **Trace** to record real-time diagnostic information so that you can better understand your logic and debug issues.
 
-When used in Power Apps, the output from **Trace** appears in the [Power Apps Monitor](/power-apps/maker/monitor-overview) tool along with other app activities.  If you have allowed your app to send telemetry data to [Azure Application Insights](/power-apps/maker/canvas-apps/application-insights), the **Trace** function can also be used to send information to your Application Insights resource. **Trace** can only be used in [behavior formulas](../imperative.md). 
+When used in Power Apps, the output from **Trace** appears in the [Power Apps Monitor](/power-apps/maker/monitor-overview) tool along with other app activities.  If you've allowed your app to send telemetry data to [Azure Application Insights](/power-apps/maker/canvas-apps/application-insights), the **Trace** function can also be used to send information to your Application Insights resource. **Trace** can only be used in [behavior formulas](../imperative.md). 
 
-When used with Test Studio, **Trace** is an optional expression that can be used to provide additional information in your test results from the **OnTestCaseComplete** event. Trace event messages, as well as any messages for both passed and failed assertions, are contained in a Traces table in the TestCaseResult record. The Traces table has two properties, Message and Timestamp.  Trace information used in Tests will also be recorded in Application Insights. Test trace information will not be available in the Monitor tool as the Monitor is connected to the app when it is played from the Canvas studio.
+When used with Test Studio, **Trace** is an optional expression that can be used to provide additional information in your test results from the **OnTestCaseComplete** event. **Trace** event messages are combined with passed and failed assertion messages in the **Traces** table of the **TestCaseResult** record. The **Traces** table has two properties, **Message** and **Timestamp**.  Trace information used in tests will also be recorded in Application Insights. Test trace information won't be available in the Monitor tool as the Monitor is connected to the app when it's played from the Power Apps Studio.
 
-Usually **Trace** returns _true_.  If _Message_ contains an error, it will be reported as an error in the Monitor and/or App Insights but will otherwise the error will be suppreseed by **Trace** in the app.  Errors in the other arguments will result in an error being reported to the app.
+Usually **Trace** returns _true_.  If _Message_ contains an error, it will be reported as an error in the Power Apps Monitor or App Insights but will otherwise the error will be suppresed by **Trace** in the app.  Errors in the other arguments will result in an error being reported to the app.
 
 ## Syntax
 
-**Trace**( _Message_ [ , _TraceSeverity_ [ , _CustomRecord_ [ , _TraceOptions_ ] ] ] )
+**Trace**( _Message_ [, _TraceSeverity_ [, _CustomRecord_ [, _TraceOptions_ ] ] ] )
 
 - _Message_ – Required. The information to be traced. Numbers, Dates, Booleans and any other data type that can be coerced to Text.
 - _TraceSeverity_ – Optional. The severity level of the Trace recorded in Monitor and Application Insights. Options are **TraceSeverity.Information** (default), **TraceSeverity.Warning** or **TraceSeverity.Error**.
 - _CustomRecord_ – Optional. A record containing custom data that will be recorded in Monitor or Application Insights.
-- _TraceOptions_ – Optional. Options are **TraceOptions.None** (default) and **TraceOptions.IgnoreUnsupportedTypes** which will ignore data types in _CustomRecord_ that cannot be serialized.  
+- _TraceOptions_ – Optional. Options are **TraceOptions.None** (default) and **TraceOptions.IgnoreUnsupportedTypes** which will ignore data types in _CustomRecord_ that can't be serialized.  
 
 ## Examples
 
@@ -45,10 +45,11 @@ Usually **Trace** returns _true_.  If _Message_ contains an error, it will be re
   Set( x, x+1 );
   Trace( x );
   ```
-3. Open the Power Apps Monitor.  Select the "Advanced tools" icon (wrench and screwdriver) in the left hand navigation pane in Power Apps Studio and select "Open monitor":
+3. Open the Power Apps Monitor by selecting the "Advanced tools" icon (wrench and screwdriver) in the left hand navigation pane in Power Apps Studio and select "Open monitor" which will open a new browser window:
   ![entry point for Power Apps monitor](media/function-trace/open-monitor.png)
 4. Select your button four times.  Use Alt-click with a mouse if in app editing mode.
-5. View the monitor which will display an event for each button click and for each **Trace** value of the variable that is being incremented.  Drill into a Trace event to see where the **Trace** was initiated, and the expression used for the message, in the right hand panel:
+5. View the Power Apps Monitor.  
+6. The Monitor's grid will contain an event for each button click and for each **Trace** call, which will show the value of the variable after each increment.  Drill into a Trace event to see where the **Trace** was initiated, and the expression used for the message, in the right hand panel:
   ![monitor trace showing button being pressed four times and corresponding increments of a variable](media/function-trace/increment-trace.png)
 
 ### See Also
