@@ -20,11 +20,11 @@ contributors:
 
 # Trace function in Power Apps
 
-Often there is a lot of logic working behind the scenes in an app.  Sometimes the impact is obvious, for example a control's value or color changes, confirming the logic operated correctly.  But sometimes it isn't obvious and it can be difficult to visualize and understand what is happening inside the app.  Use the **Trace** function to record diagnostic information from behind the scenes, creating a timeline of what actually happened, to better understand how your app is operating and to help debug issues.
+Often there is a lot of logic working behind the scenes in an app. Sometimes the impact is obvious, for example a control's value or color changes, confirming the logic operated correctly. However, sometimes it isn't obvious and it can be difficult to visualize and understand what is happening inside the app. Use the **Trace** function to record diagnostic information from behind the scenes, creating a timeline of what actually happened, to better understand how your app is operating and to help debug issues.
 
-When used in Power Apps, the output from **Trace** appears in the [Power Apps Monitor](/power-apps/maker/monitor-overview) tool along with other app activities.  If you've allowed your app to send telemetry data to [Azure Application Insights](/power-apps/maker/canvas-apps/application-insights), the **Trace** function can also be used to send information to your Application Insights resource. **Trace** can only be used in [behavior formulas](../imperative.md). 
+When used in Power Apps, the output from **Trace** appears in the [Power Apps Monitor](/power-apps/maker/monitor-overview) tool along with other app activities. If you've allowed your app to send telemetry data to [Azure Application Insights](/power-apps/maker/canvas-apps/application-insights), the **Trace** function can also be used to send information to your Application Insights resource. **Trace** can only be used in [behavior formulas](../imperative.md). 
 
-When used with [Test Studio](/power-apps/maker/canvas-apps/test-studio), **Trace** is an optional expression that can be used to provide additional information in your test results from the **OnTestCaseComplete** event. **Trace** event messages are combined with passed and failed assertion messages in the **Traces** table of the **TestCaseResult** record. The **Traces** table has two properties, **Message** and **Timestamp**.  Trace information used in tests will also be recorded in Application Insights. Test trace information won't be available in the Monitor tool as the Monitor is connected to the app when it's played from the Power Apps Studio.
+When used with [Test Studio](/power-apps/maker/canvas-apps/test-studio), **Trace** is an optional expression that can be used to provide additional information in your test results from the **OnTestCaseComplete** event. **Trace** event messages are combined with passed and failed assertion messages in the **Traces** table of the **TestCaseResult** record. The **Traces** table has two properties, **Message** and **Timestamp**. Trace information used in tests will also be recorded in Application Insights. Test trace information won't be available in the Monitor tool as the Monitor is connected to the app when it's played from the Power Apps Studio.
 
 ## Syntax
 
@@ -47,7 +47,7 @@ When used with [Test Studio](/power-apps/maker/canvas-apps/test-studio), **Trace
   ![entry point for Power Apps monitor](media/function-trace/open-monitor.png)
 4. Return to the original Studio browser window and select your button four times.  Use **Alt-click** on your mouse if in design mode.
 5. View the Power Apps Monitor.  
-6. The Monitor's grid will contain an event for each button click and for each **Trace** call, which will show the value of the variable after each increment.  Drill into a Trace event to see where the **Trace** was initiated, and the expression used for the message, in the right hand panel:
+6. The Monitor's grid will contain an event for each button click and for each **Trace** call, which will show the value of the variable after each increment. Drill into a Trace event to see where the **Trace** was initiated, and the expression used for the message, in the right hand panel:
   ![monitor trace showing button being pressed four times and corresponding increments of a variable](media/function-trace/increment-trace.png)
 
 ## See Also
