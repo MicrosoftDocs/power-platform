@@ -38,7 +38,7 @@ There are no user interface changes or version changes as part of this move. You
 > - You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, or others.
 > - Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
 > - Existing source database backups won't be migrated to destination tenant.
-> - Linking a Dataverse organization to a finance and operations organization is not supported.
+> - A Dataverse organization linked to a finance and operations organization cannot be migrated to a different tenant.
 > - Tenant to tenant migration is subject to [Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy) when enabled in the source tenant.
 
 ### Supported applications and platforms
@@ -53,7 +53,7 @@ There are no user interface changes or version changes as part of this move. You
 
 | Supported | Not supported |
 |-------------------------|-------------------------|
-| <ul><li>Migrating production environment</li><li>Migrating sandbox environment</li><li>Migrating tenants from GCC to GCC</li><li>One or multiple environments</li></ul> | <ul><li>Migrating default environment</li><li>Migrating teams environment</li><li>Migrating trial environment</li><li>Migrating demo environment</li><li>Migrating  developer environment</li><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></ul> |
+| <ul><li>Migrating production environment</li><li>Migrating sandbox environment</li><li>Migrating tenants from GCC to GCC</li><li>One or multiple environments</li></ul> | <ul><li>Migrating default environment</li><li>Migrating teams environment</li><li>Migrating trial environment</li><li>Migrating demo environment</li><li>Migrating  developer environment</li><li>Migrating tenants from GCC to another geo or from another geo to GCC</li><li>Migrating a Dataverse organization linked to a finance and operations organization</li></ul> |
 
 ### Migration flow
 Once a migration request is submitted, the support team is engaged to review the request manually. Below is the list of steps performed during the entire migration process.
@@ -90,7 +90,7 @@ When your environment is moved from one tenant to another within the same region
 
 - What is the source tenant domain and its region? (Example: EMEA, NA, APAC)
 - What is the destination tenant domain and its region? (Example: EMEA, NA, APAC)
-- Does the destination tenant have a valid Dynamics 365 subscription with enough seats for all the users to be mapped? The users to be provided in the mapping file will need to be active and licensed both in the source and target environments.
+- Does the destination tenant have a valid Dynamics 365 subscription with enough seats for all the users to be mapped? The users to be provided in the mapping file will need to be active and licensed both in the source and target tenants.
 - Does the destination tenant have enough available user licenses?
 - Does the destination tenant have enough storage available for the environments being migrated?
 - Before migrating production environments (or environments with potential business impact), sandbox copy migrations need to be performed first. The goal of these migrations using copies of the important production environments is to allow validation of the migrated environments before proceeding with the business critical environments migrations. Do you have sufficient capacity to provision a copy of your production environment to proceed with this test? For instructions on how to copy an environment, go to [Copy an environment](copy-environment.md).
@@ -105,7 +105,7 @@ You'll also need to provide the following information:
 
 1. Be authorized to perform the migration.
 3. A migration with a sandbox copy should be executed and validated by all parties prior to planning the migration of a business critical environment. In that case, we'll also need a new environment in the source tenant so we can copy the business critical environment into the new environment and perform the test migration.
-4. Create users in the destination environments in the target tenant. You must:
+4. Create users in the target tenant. You must:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
 5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this topic</a>.
@@ -122,7 +122,7 @@ You'll also need to provide the following information:
 - Café X
 - Forms Pro
 - Dynamics 365 Marketing 
-- Mailboxes. If the mapped user has a mailbox in the destination environment, then the mailbox is automatically configured during the migration. For all other users, you will need to reconfigure the mailbox:
+- Mailboxes. If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you will need to reconfigure the mailbox:
   1. If the same mailbox is used in the target tenant (test@microsoft.com) then the mailbox will be enabled by default. Before the tenant-to-tenant process, customers need to migrate/configure their mailboxes on the target tenant.
   2. If you are using the default onmicrosoft domain (test@sourcecompanyname.onmicrosoft.com), the post migration domain name is changed (test@targetcompanyname.onmicrosoft.com). Customers need to reconfigure the mailbox. To configure the mailbox, see [Connect to Exchange Online](connect-exchange-online.md).
 
@@ -136,7 +136,7 @@ For full access users:
 5. Select **Add Columns** > **Windows Live ID**.
 6. Select **OK** > **Results** to see the list of full access users.
 7. Select all the records, select **Export Users** in the ribbon, and then choose **Static Worksheet**. 
-8. Follow steps 1-7 above for the destination environment. You should now have two separate Excel sheets—one for source and one for target.
+8. Follow steps 1-7 above for the destination tenant, if possible. You should now have two separate Excel sheets—one for source and one for target tenant.
 9. Open the files for editing.
 10.	Starting with the source Excel sheet, copy the records under the **Windows Live ID** column into Notepad. Do not copy the header.
 11.	Save the Notepad file.
@@ -174,7 +174,7 @@ Before the migration:
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
 2. Select **Import** and use the file selector to pick the packages exported from the above steps.
-3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
+3. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
 ##### For apps which are not solution aware
 
@@ -204,7 +204,7 @@ Before the migration:
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
 2. Select **Import** and use the file selector to pick the packages exported from the above steps.
-3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
+3. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
 #### For Power Apps Portals (must be done for each portal in the environment(s)): 
               
@@ -246,8 +246,8 @@ We will adhere to the terms of the [Service Level Agreement for Microsoft Online
 ### Are background operations enabled during tenant-to-tenant migration?
 Administration mode is enabled during tenant-to-tenant migration, therefore background operations don't run. Go to: [Administration mode - Power Platform](admin-mode.md)
 
-### Can we migrate all users from the source to the destination environment?
-We can migrate all source users to the destination environment only if users exist in the destination environment. For example:
+### Can we migrate all users of the Dataverse organization?
+We can migrate all users of the Dataverse organization only if users exist in the destination tenant. For example:
 
 user001@source.com,user001@destination.com <br />
 user002@source.com,user002@destination.com        
