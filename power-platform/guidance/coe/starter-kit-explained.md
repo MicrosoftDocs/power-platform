@@ -55,7 +55,7 @@ Admin tasks are defined in a model-driven app and insights provided in a Power B
 
 Set up your own SharePoint Hub or Teams site to share success stories, upcoming events, rules of engagement and guidelines with your maker community. 
 
-The Power Platform communication site template is a SharePoint Online site is designed to provide you with a starting point of content and page templates as your're setting up your internal Power Platform wiki and community site
+The Power Platform communication site is a SharePoint Online template, designed to provide a starting point of content and page templates as your're setting up your internal Power Platform wiki and community site.
 
 More information: [Get starter with the Power Platform communication site template](wiki-community#get-started-with-the-power-platform-communication-site-template)
 
