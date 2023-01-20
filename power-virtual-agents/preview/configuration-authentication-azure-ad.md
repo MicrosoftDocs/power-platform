@@ -3,14 +3,15 @@ title: Configure user authentication with Azure Active Directory (preview)
 description: Use Azure Active Directory as your service provider for user authentication in Power Virtual Agents preview.
 keywords: "Authentication, IdP, PVA, AAD"
 ms.date: 12/29/2022
+
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: kamrani
 ms.custom: authentication, ceX, bap-template
-ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Configure user authentication with Azure Active Directory (preview)

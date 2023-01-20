@@ -7,6 +7,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: "multi-geo, gdpr, ce06102020"
 ---
@@ -100,15 +101,15 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
 
 - Customers configure external services to extend Power Virtual Agents. Such customer configurations might cause customer data to be transferred outside of the selected geographic location. Examples of customer configurable external services include:
 
-  - [Customer Service Hand-off](advanced-hand-off.md) - Configurable external services that hand-off bot escalations to a human agent.
+  - [Customer Service Hand-off](advanced-hand-off.md), Configurable external services that hand-off bot escalations to a human agent.
 
-  - Multi-channel – Configurable to external channels such as Facebook and internal non&ndash;Power Virtual Agents services (Microsoft Teams).
+  - Multi-channel, Configurable to external channels such as Facebook and internal, non Power Virtual Agents services, such as Microsoft Teams.
 
     - [Facebook documentation](publication-add-bot-to-facebook.md)
 
     - [Microsoft Teams documentation](publication-add-bot-to-microsoft-teams.md)
 
-  - [Dynamics 365 Customer Service Insights Topic suggestion](advanced-create-topics-from-csi.md) - Topic suggestions from Customer Service Insights are automated into Power Virtual Agents with a single click. Data might go to a bot in a different geographic region than the workspace region in Customer Service Insights.
+  - [Dynamics 365 Customer Service Insights Topic suggestion](advanced-create-topics-from-csi.md), Topic suggestions from Customer Service Insights are automated into Power Virtual Agents with a single click. Data might go to a bot in a different geographic region than the workspace region in Customer Service Insights.
 
 ## See also
 

@@ -8,7 +8,8 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals, teams, intro-inernal
+ms.custom: fundamentals, teams, intro-internal
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

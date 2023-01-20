@@ -3,14 +3,15 @@ title: Accommodate time zones (preview)
 description: Learn how Power Virtual Agents bots collect and store date and time. Learn how to adjust the user's time zone and to display dates and times correctly in their time zone.
 keywords: "PVA"
 ms.date: 12/07/2022
+
 ms.topic: how-to
-author: v-alarioza
-ms.author: v-alarioza
-ms.reviewer: kamrani
+author: iaanw
+ms.author: iawilt
 manager: iawilt
+ms.reviewer: kamrani
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring, bap-template
-ms.service: power-virtual-agents
 ---
 
 # Accommodate time zones (preview)

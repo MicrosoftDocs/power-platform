@@ -10,6 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.custom: handoff, ceX
 ms.reviewer: pawant
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

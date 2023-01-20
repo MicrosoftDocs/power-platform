@@ -3,14 +3,15 @@ title: Ask a question (preview)
 description: Use a Question node to ask the user a question and store their response in a variable in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 12/09/2022
+
 ms.topic: how-to
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 ms.reviewer: gapretty
 manager: shellyha
 ms.custom: authoring, topics, message, question, bap-template
-ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Ask a question (preview)

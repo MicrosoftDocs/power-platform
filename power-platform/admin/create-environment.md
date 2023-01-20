@@ -4,9 +4,9 @@ description: About creating and manage environments in the Power Platform admin 
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/14/2022
+ms.date: 01/13/2023
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: kvivek
 search.audienceType: 
   - admin 
 search.app:
@@ -85,7 +85,7 @@ You have multiple options when creating an environment:
 
 ### Some important considerations when creating a new environment
 
-- **Why create an environment with a database**: When you create a production or sandbox environment with a Dataverse database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment.<br>More information about Dataverse: [What is Dataverse?](/power-apps/maker/data-platform/data-platform-intro) and [Why choose Dataverse?](/power-apps/maker/data-platform/why-dataverse-overview) 
+- **Why create an environment with a database**: When you create a production or sandbox environment with a Dataverse database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by selecting **Yes** for **Enable Dynamics 365 apps**). Currently, if you don't select **Yes** for **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment. You must have an appropriate Dynamics 365 license to select **Yes** for **Enable Dynamics 365 apps**. <br>More information about Dataverse: [What is Dataverse?](/power-apps/maker/data-platform/data-platform-intro) and [Why choose Dataverse?](/power-apps/maker/data-platform/why-dataverse-overview) 
 - **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Dataverse, and you are creating canvas apps using Power Apps or flows using Power Automate using other data sources, create the environment without the Dataverse database.
 - **The Enable Dynamics 365 apps decision is not reversible**: Once you create an environment, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment. 
 - **Dynamics 365 apps and trial environments**: Currently, Dynamics 365 apps cannot be enabled for trial environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).
@@ -126,7 +126,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Language     | The default language for this environment. More information: [Dataverse language collations](language-collations.md)     |
    | URL         | Enter your organization name. Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won't be available. |
    |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. If you don't select **Yes** at the time of database provisioning, you won’t be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
+   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. You must have an appropriate Dynamics 365 license to select **Yes**. If you don't select **Yes** at the time of database provisioning, you won’t be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
    |Security group | Select a security group to restrict access to this environment. |
 
