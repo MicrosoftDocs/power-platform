@@ -33,11 +33,11 @@ Usually **Trace** returns _true_.  If _Message_ contains an error, it will be re
 **Trace**( _Message_ [, _TraceSeverity_ [, _CustomRecord_ [, _TraceOptions_ ] ] ] )
 
 - _Message_ – Required. The information to be traced. Numbers, Dates, Booleans and any other data type that can be coerced to Text.
-- _TraceSeverity_ – Optional. The severity level of the Trace recorded in Monitor and Application Insights. Options are **TraceSeverity.Information** (default), **TraceSeverity.Warning** or **TraceSeverity.Error**.
+- _TraceSeverity_ – Optional. The severity level of the Trace recorded in Monitor and Application Insights. Options are **TraceSeverity.Information** (default), **TraceSeverity.Warning**, **TraceSeverity.Error**, or **TraceSeverity.Critical**.
 - _CustomRecord_ – Optional. A record containing custom data that will be recorded in Monitor or Application Insights.
 - _TraceOptions_ – Optional. Options are **TraceOptions.None** (default) and **TraceOptions.IgnoreUnsupportedTypes** which will ignore data types in _CustomRecord_ that can't be serialized.  
 
-## Examples
+## Example
 
 1. Create a button control in Power Apps Studio.
 2. Set the **OnSelect** formula to the formula:
@@ -52,7 +52,7 @@ Usually **Trace** returns _true_.  If _Message_ contains an error, it will be re
 6. The Monitor's grid will contain an event for each button click and for each **Trace** call, which will show the value of the variable after each increment.  Drill into a Trace event to see where the **Trace** was initiated, and the expression used for the message, in the right hand panel:
   ![monitor trace showing button being pressed four times and corresponding increments of a variable](media/function-trace/increment-trace.png)
 
-### See Also
+## See Also
 
 [Power Apps Monitor Overview](/power-apps/maker/monitor-overview) <br>
 [Test Studio Overview](/power-apps/maker/canvas-apps/test-studio) <br>
