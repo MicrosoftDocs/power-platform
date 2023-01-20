@@ -71,8 +71,8 @@ In all of these examples, assume that the current date and time is **July 15, 20
 
 | Formula                                              | Description                                                                                                                                                                 | Result |
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| **DateDiff( Now(), DateValue("1/1/2014") )**         | Returns the difference between the two units in the default units of **Days**                                                                                               | 170    |
-| **DateDiff( Now(), DateValue("1/1/2014"), Months )** | Returns the difference between the two values in **Months**                                                                                                                 | 6      |
+| **DateDiff( DateValue("1/1/2022"), Now())**         | Returns the difference between the two units in the default units of **Days**                                                                                               | 204    |
+| **DateDiff( DateValue("1/1/2022"), Now(), Months )** | Returns the difference between the two values in **Months**                                                                                                                 | 18      |
 | **DateDiff( Now(), Today(), Minutes )**              | Returns the difference between the current date/time and the current date only (no time) in minutes. Since the **Now** is later than **Today** the result will be negative. | -782   |
 
 ### Difference of dates with fractional results
