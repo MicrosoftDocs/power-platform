@@ -45,6 +45,20 @@ We recommend becoming familiar with the CoE core components solution before you 
 
 ## Standalone add-ons
 
+### Center of Excellence - Power Platform Administration Planner
+
+Behind the scenes, your IT and Center of Excellence team spends time configuring, managing and nurturing the adoption of Microsoft Power Platform. Understanding how that time is spent can help you plan who you need on your team and find the highest impact opportunities to streamline the administrative effort.
+
+Admin tasks are defined in a model-driven app and insights provided in a Power BI dashboard. More information: [Use Microsoft Power Platform administration planning](admin-tasks-component)
+
+### Center of Excellence - Power Platform communication site template
+
+Set up your own SharePoint Hub or Teams site to share success stories, upcoming events, rules of engagement and guidelines with your maker community. 
+
+The Power Platform communication site template is a SharePoint Online site is designed to provide you with a starting point of content and page templates as your're setting up your internal Power Platform wiki and community site
+
+More information: [Get starter with the Power Platform communication site template](wiki-community#get-started-with-the-power-platform-communication-site-template)
+
 ### Center of Excellence – theming components
 
 A frequent ask from organizations in which makers create canvas apps is the ability to apply themes&mdash;specifically, the ability to create apps that match the organizational brand. The assets in this solution will help you create, manage, and share themes.
