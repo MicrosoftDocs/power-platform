@@ -114,7 +114,7 @@ You can check for unmanaged layers on the inventory flows using the [Admin - Com
 >The [feature described below](https://github.com/microsoft/coe-starter-kit/issues/2108) was made available with the April 2022 release of the CoE Starter Kit, and requires the April or [later release](https://github.com/microsoft/coe-starter-kit/releases) to be installed.
 
 1. Open the **Admin - Command Center** app from your CoE environment.
-1. Select **Sync flows** from the navigation.
+1. Select **CoE Flows** from the navigation.
 1. Check if any of the flows show the layer icon, indicating they have unmanaged layers
  
    ![Screenshot showing the layer icon in the Admin Command Center app](media/coe-upgrade6.png "Detect unmanaged layers on flows in the Admin Command Center app")
