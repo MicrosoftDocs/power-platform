@@ -171,9 +171,9 @@ You can approve your own user mailbox if all of these conditions are met:
 
 - Your User Principal Name (UPN) matches the email address in your mailbox record.
 
-- The OrgDBOrgSetting [RequirePrivilegeToSelfApproveEmailAddress](../admin/OrgDbOrgSettings.md) is disabled (default) or you have the [Approve Email Addresses for Users or Queues](connect-exchange-online.md#add-the-approve-email-addresses-for-users-or-queues-privilege) privilege.
+- The OrgDBOrgSetting [RequirePrivilegeToSelfApproveEmailAddress](../admin/OrgDbOrgSettings.md) setting is disabled (default) or you have the [Approve Email Addresses for Users or Queues](connect-exchange-online.md#add-the-approve-email-addresses-for-users-or-queues-privilege) privilege.
 
-- You have a minimum of User level Write privileges on the Mailbox table.   
+- You have a minimum of User-level Write privileges on the Mailbox table.   
 
 - The mailbox is not a queue mailbox.
 
