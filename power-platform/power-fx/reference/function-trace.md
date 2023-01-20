@@ -48,7 +48,7 @@ Usually **Trace** returns _true_.  If _Message_ contains an error, it will be re
 3. Open the Power Apps Monitor.  Select the "Advanced tools" icon (wrench and screwdriver) in the left hand navigation pane in Power Apps Studio and select "Open monitor":
   ![entry point for Power Apps monitor](media/function-trace/open-monitor.png)
 4. Select your button four times.  Use Alt-click with a mouse if in app editing mode.
-5. View the monitor which will display an event for each button click and for each **Trace** value of the variable that is being incremented:
+5. View the monitor which will display an event for each button click and for each **Trace** value of the variable that is being incremented.  Drill into a Trace event to see where the **Trace** was initiated, and the expression used for the message, in the right hand panel:
   ![monitor trace showing button being pressed four times and corresponding increments of a variable](media/function-trace/increment-trace.png)
 
 ### See Also
