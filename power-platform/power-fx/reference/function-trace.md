@@ -26,8 +26,6 @@ When used in Power Apps, the output from **Trace** appears in the [Power Apps Mo
 
 When used with [Test Studio](/power-apps/maker/canvas-apps/test-studio), **Trace** is an optional expression that can be used to provide additional information in your test results from the **OnTestCaseComplete** event. **Trace** event messages are combined with passed and failed assertion messages in the **Traces** table of the **TestCaseResult** record. The **Traces** table has two properties, **Message** and **Timestamp**.  Trace information used in tests will also be recorded in Application Insights. Test trace information won't be available in the Monitor tool as the Monitor is connected to the app when it's played from the Power Apps Studio.
 
-Usually **Trace** returns _true_.  If _Message_ contains an error, it will be reported as an error in the Power Apps Monitor or App Insights, but it will not be returned as an error in the app (_true_ will be returned from **Trace**).  Errors in the other arguments will result in an error being reported to the app.
-
 ## Syntax
 
 **Trace**( _Message_ [, _TraceSeverity_ [, _CustomRecord_ [, _TraceOptions_ ] ] ] )
