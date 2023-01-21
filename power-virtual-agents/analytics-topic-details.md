@@ -34,7 +34,7 @@ To display the topic analytics pane, select the **Detail** link for the topic in
 - [Resolution rate drivers (Summary tab)](analytics-summary.md#resolution-rate-drivers-chart)
 - [Customer satisfaction drivers (Customer Satisfaction tab)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
 
-The topic details page can also be displayed by opening an individual topic from the [Topics page](authoring-create-edit-topics.md) and selecting **Analytics** at the top of the page.
+Alternatively, open an individual topic from the [Topics page](authoring-create-edit-topics.md) and select **Analytics** at the top of the page.
 
 :::image type="content" source="media/analytics-topic-details/canvas-button.png" alt-text="From the Topic details page, select the Analytics tab.":::
 
