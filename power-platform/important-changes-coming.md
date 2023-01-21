@@ -1,8 +1,8 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 01/13/2023
-ms.topic: "article"
+ms.date: 01/23/2023
+ms.topic: conceptual
 ms.subservice: admin
 searchScope:
   - "Power Platform"  
@@ -20,6 +20,17 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## AI Builder image classification model by Lobe is deprecated
+<br/>
+<br/>
+<br/>
+<!--
+- Overview of the feature being deprecated.
+- Why is this needed?
+- Impact (to customers using the feature).
+- Replacement feature (for example, what should be used to replace the feature/functionality that is deprecated?)
+-->
 
 ## Model-driven app controls deprecation
 
