@@ -2,7 +2,7 @@
 title: "Analyze topic performance"
 description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
 keywords: "PVA"
-ms.date: 01/12/2023
+ms.date: 01/23/2023
 
 ms.topic: article
 author: iaanw

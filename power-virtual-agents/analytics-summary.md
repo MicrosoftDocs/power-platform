@@ -68,8 +68,6 @@ The summary charts summarize the key performance indicators for the specified ti
 | Abandon rate | The percentage of engaged sessions that were abandoned. |
 | CSAT | The graphical view of the average of customer satisfaction (CSAT) scores for sessions in which customers respond to an end-of-session request to take the survey. |
 
-A blue up-down indicator next to the percent change indicates it was a positive trend. A red indicator indicates it was a negative trend.
-
 ## Engagement over time chart
 
 The **Engagement over time** chart provides a graphical view of the number of engaged and unengaged sessions over time.

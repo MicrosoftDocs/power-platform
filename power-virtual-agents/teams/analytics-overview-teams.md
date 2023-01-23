@@ -2,7 +2,7 @@
 title: "Fundamentals - Analyze chatbot usage in Microsoft Teams"
 description: "Analyze customer satisfaction, topic usage, and bot performance in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
-ms.date: 01/06/2023
+ms.date: 01/23/2023
 
 ms.topic: overview
 author: iaanw
@@ -40,11 +40,11 @@ The analytics section is divided into a number of pages to give you multiple way
 The following terms are used in this section.
 
 - A _conversation_ is an ongoing interaction between a specific user, or group of users, on a channel and your bot. Conversations can pause and resume later, or be transferred to a live agent. The conversation may be one-way, either from the end user to the bot, or from the bot to the end user, but is more commonly a back-and-forth interaction between the end user and the bot.
-- _Analytics sessions_ track user engagement for your bot. Each task a user asks of your bot defines an analytics session.
-- _Billed sessions_ are independent of analytics sessions. Billed sessions are used to measure resource consumption.
+- _Analytics sessions_ track user engagement for your bot. Analytics sessions try to capture how well your bot handles user tasks.
+- _Billed sessions_ are used to measure resource consumption. Billed sessions are independent of analytics sessions.
 
 > [!NOTE]
-> The analytics dashboards are updated every hour, so there will be some delay before you see all data.
+> Although transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
 
 ### View analytics
 
