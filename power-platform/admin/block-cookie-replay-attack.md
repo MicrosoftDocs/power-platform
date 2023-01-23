@@ -15,16 +15,12 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Block cookie replay attacks in Dataverse (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Block cookie replay attacks in Dataverse
 
 Prevent session hijacking exploits in Dataverse with IP address-based cookie binding. Let's say that a malicious user copies a valid session cookie from an authorized computer that has cookie IP binding enabled. The user then tries to use the cookie on a different computer to gain unauthorized access to Dataverse. In real time, Dataverse compares the IP address of the cookie's origin against the IP address of the computer making the request. If the two are different, the attempt is blocked, and an error message is shown.
 
 IP-based cookie binding is available in all environments across all tenants, including government clouds. The feature is disabled by default during the public preview. To participate in the public preview, enable the feature in the Power Platform admin center.
 
-> [!IMPORTANT]
-> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Enable IP address-based cookie binding
 
@@ -34,7 +30,7 @@ IP-based cookie binding is available in all environments across all tenants, inc
 
 1. Select **Settings** > **Product**, and then select **Privacy + Security**.
 
-1. Under **IP address settings**, select **Enable IP address-based cookie binding (Preview)**.
+1. Under **IP address settings**, select **Enable IP address-based cookie binding**.
 
 1. Select **Save**.
 
@@ -65,7 +61,8 @@ IP-based cookie binding sets the IP address claim in the session cookie. Each re
 
 ## Exclusions
 
-If the user connects to Dataverse from the same IP address with the old, valid cookie, Dataverse will accept the cookie.
+1. If the user connects to Dataverse from the same IP address with the old, valid cookie, Dataverse will accept the cookie.
+2. If the traffic between your network and Power Platform is configured to use reverse proxy having dynamic IP address, then in that case, IP based cookie binding would not work
 
 ## FAQ 
 
