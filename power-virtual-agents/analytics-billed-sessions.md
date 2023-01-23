@@ -2,7 +2,7 @@
 title: "View billed sessions"
 description: "See Power Virtual Agents billed sessions for the last 30 or 7 days."
 keywords: "PVA"
-ms.date: 01/12/2023
+ms.date: 01/23/2023
 
 ms.topic: article
 author: iaanw
@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# View billed sessions for Power Virtual Agents in Teams
+# View billed sessions for Power Virtual Agents web app
 
 [!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
@@ -79,7 +79,7 @@ The following table helps illustrate which sessions are going to be billed and w
 
 ### What's the difference between total sessions, engaged sessions, and billed sessions?
 
-- _Billed sessions_ are used to measure capacity, and is allocated when you purchase a license.
+- _Billed sessions_ are used to measure usage against the capacity that is allocated when you purchase a license. For more information, see the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 - _Total sessions_ and _engaged sessions_ are metrics of _analytics sessions_, used to determine how efficient a bot is in addressing a user's questions.
 - _Billed sessions_ and _analytics sessions_ are distinct and independent.
 

@@ -38,10 +38,6 @@ Alternatively, open an individual topic from the [Topics page](authoring-create-
 
 :::image type="content" source="media/analytics-topic-details/canvas-button.png" alt-text="From the Topic details page, select the Analytics tab.":::
 
-You can also hover over each topic in the Topics page and select the **Go to analytics** icon.
-
-:::image type="content" source="media/analytics-topic-details/topic-button.png" alt-text="Hovering shows the Go to analytics icon." border="false":::
-
 The topic details page includes a variety of charts with graphical views of a topic's key performance indicators. For information about each chart, see:
 
 - [Topic summary charts](#topic-summary-charts)
@@ -63,8 +59,6 @@ The Topic summary charts summarize the topic's performance indicators for the sp
 | Resolution rate | The percentage of engaged sessions that are resolved.                                |
 | Escalation rate | The percentage of engaged sessions that are escalated.                               |
 | Abandon rate    | The percentage of engaged sessions that are abandoned.                               |
-
-A blue up-and-down indicator below the value indicates the percent change in a positive direction. A red indicator indicates the percent change in a negative direction.
 
 ## Impact summary charts
 
