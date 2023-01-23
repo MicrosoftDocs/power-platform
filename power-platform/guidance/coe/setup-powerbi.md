@@ -30,7 +30,6 @@ The Power BI dashboard provides a holistic overview with visualizations and insi
 You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files:
 
 - Use the **Production_CoEDashboard_MMMYY.pbit** file if you've installed the CoE Starter Kit in a Production environment.
-- Use the **Teams_CoEDashboard_MMMYY.pbit** if you've installed the CoE Starter Kit in a Dataverse for Teams environment. This version connects to Microsoft Dataverse using the TDS endpoint, therefore the TDS Endpoint has to be enabled for the environment: [Manage feature settings](../../admin/settings-features.md).
 - Use the **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit** file in addition to the above dashboards to gain further actionable governance and compliance insights into your adoption. This report is only available if you've installed the CoE Starter Kit in a Production environment.
 
 > [!NOTE]
@@ -43,25 +42,12 @@ You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compre
 
 You need the environment URL of the Microsoft Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the Microsoft Dataverse tables in that environment.
 
-- If you've installed the CoE Starter Kit in a Production environment:
-    1. Go to the [Power Platform admin center](https://aka.ms/ppac).
-
-    1. Select **Environments**, and select the environment where the CoE solution is installed.
-
-    1. Copy the organization URL in the details window.
-
-       :::image type="content" source="media/coe19.png" alt-text="Power Platform admin center, with the environment URL highlighted.":::
-
-       If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
-
-       :::image type="content" source="media/coe20.png" alt-text="Environment settings available in the Power Platform admin center.":::
-
-- If you've installed the CoE Starter Kit in a Dataverse for Teams environment:
-    1. Open the Power Apps app in Teams
-    1. Select **Build** and select your CoE environment
-       :::image type="content" source="media/coe-dft-bi1.png" alt-text="Select your CoE environment in the Power Apps app in Teams.":::
-    1. Select **About** > **Session Details** and copy the Instance URL from there.
-       :::image type="content" source="media/coe-dft-bi2.png" alt-text="Select the Instance URL of your environment.":::
+1. Go to the [Power Platform admin center](https://aka.ms/ppac).
+1. Select **Environments**, and select the environment where the CoE solution is installed.
+1. Copy the organization URL in the details window.
+   :::image type="content" source="media/coe19.png" alt-text="Power Platform admin center, with the environment URL highlighted.":::
+   If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
+   :::image type="content" source="media/coe20.png" alt-text="Environment settings available in the Power Platform admin center.":::
 
 ## Configure the Power BI dashboard
 

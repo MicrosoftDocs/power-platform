@@ -21,14 +21,6 @@ search.app:
 
 This article will help you to set up the inactivity notifications for unused canvas apps and cloud flows, and for how to clean up unused connection references.
 
-[Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
-
-## Set up inactivity notifications (unused apps and flows)
-
-Processes to ask users if canvas apps and cloud flows are still useful, or to clean them up if they are not.
-
-### Update environment variables values for unused apps and flows
-
 >[!NOTE]
 >These flows used to be called called "archive" flows, however they did not automatically archive apps and flows. The name has recently changed to "inactivity notifications", however if you are on an older version of the Governance components solution they may still be called "archive" flows.
 
@@ -37,18 +29,30 @@ You use this functionality to detect unused objects, and ask makers to either ar
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
-### Grant makers environment access
+[Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
 
-If your solution is installed in a production environment, make sure your environment isn't restricted with an [environment security group](limitations.md#security-groups-and-approvals).
+## Grant makers environment access
 
-If your solution is installed in a Dataverse for Teams environment, you first need to grant access to makers who aren't part of your team in Microsoft Teams so they can participate in approval workflows. [Share an app in a Teams environment](faq.md#share-an-app-from-a-dataverse-for-teams-environment) with your [Power Platform maker group](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users).
+Make sure your environment isn't restricted with an [environment security group](limitations.md#security-groups-and-approvals).
+
+## Set up the Inactivity process components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Inactivity notifications process**.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the Inactivity process components manually
 
 ### Configure mandatory environment variables
 
 You'll [update these environment variables](faq.md#update-environment-variables) after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
 
 >[!TIP]
->Learn how to update environment variables for production and Dataverse for Teams environments: [Update environment variables](faq.md#update-environment-variables).
+>Learn how to update environment variables: [Update environment variables](faq.md#update-environment-variables).
 
 | Name | Description |
 |------|---------------|
@@ -62,10 +66,6 @@ You might want to exempt some environments from the inactivity notification proc
 
 You can exempt environments from the inactivity notification process by using the Power Platform Admin View app.  
 
-#### Production environment
-
-If your solution is installed in a production environment, your app will be a model-driven app. Follow these steps:
-
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. Go to your CoE environment.
 1. Open the **Power Platform Admin View** app.
@@ -74,17 +74,6 @@ If your solution is installed in a production environment, your app will be a mo
 1. Select **Save**.
 
    ![Exclude an environment from the inactivity notification process in a production environment.](media/coe-archive2.png "Exclude an environment from the inactivity notification in a production environment")
-
-#### Dataverse for Teams environment
-
-1. Open the Power Apps app in Teams, select **Build**, and then select the team that you've installed the CoE Starter Kit solutions in.
-1. Select **Center of Excellence - Core for Teams** > **See All**.
-1. Open the **Power Platform Admin View** app.
-1. Select **Environments**, and then select the environment you want to exempt.
-1. Set the **Excuse From Archival Flows** field to **Yes**.
-1. Select **Save**.
-
-   ![Exclude an environment from the inactivity notification process in Dataverse for Teams.](media/coe-archive1.png "Exclude an environment from the inactivity notification process in Dataverse for Teams")
 
 ### Turn on flows
 

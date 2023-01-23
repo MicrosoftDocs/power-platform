@@ -32,7 +32,7 @@ The Governance components solution contains assets relevant to admins and makers
 ### Flows
 
 >[!NOTE]
->These flows are part of the Core components solution; however, most of its functionality is implemented in the Governance components solution. This is in order to facilitate easier shipping for Dataverse for Teams.
+>These flows are part of the Core components solution; however, most of its functionality is implemented in the Governance components solution.
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
@@ -75,7 +75,7 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. 
 
 #### Compliance Status
 
@@ -109,9 +109,6 @@ Makers can achieve compliance by providing additional information through the **
 :::row-end:::
 
 ### Business process flows
-
-> [!NOTE]
-> Business process flows (BPFs) are not available if you have installed the Core Components in Dataverse for Teams.
 
 #### Power Apps App Approval BPF
 

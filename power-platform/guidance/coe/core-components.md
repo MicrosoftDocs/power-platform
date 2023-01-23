@@ -339,7 +339,7 @@ Use this app to:
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
 
-**Prerequisite**: This app uses Microsoft Dataverse and other premium connectors. A premium license is required for every app user in both Production and Dataverse for Teams environments.
+**Prerequisite**: This app uses Microsoft Dataverse and other premium connectors. A premium license is required for every app user.
 
 >[!NOTE]
 > When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Additionally add other relevant bookmarks such as links to the Power BI dashboard and your Power Platform wiki and community by selecting **Edit bookmarks**.
@@ -400,9 +400,6 @@ You can also use this app to find flows that have been orphaned by the owner's h
 ![Set Flow Permissions.](media/SetFlowPerms.png "Set Flow Permissions")
 
 #### Power Platform Admin View
-
-> [!NOTE]
-> This app is not available if you have installed the Core Components in Dataverse for Teams. A canvas app is available to browse tenant inventory.
 
 Power Platform Admin View is a model-driven app that provides an interface used to browse items in Dataverse custom tables. It provides access to views and forms for the custom tables in the solution.
 
