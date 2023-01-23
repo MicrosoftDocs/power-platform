@@ -171,7 +171,7 @@ Key points to keep in mind:
 
 ## Backup and restore of default environment
 
-Like every other environment type (sandbox, production, developer), the default environment also gets archived. However, there's no manual backup that you can request for the default environment. Like any other environment, a restore operation is possible and requires you to content Microsoft Support. Be aware that when you restore the default environment, you need to consider you might also be restoring all the unused or abandoned apps and flows that were removed after the cleanup.
+Like every other environment type (sandbox, production, developer), the default environment also gets archived. However, there's no manual backup that you can request for the default environment. Like any other environment, a restore operation is possible and requires you to contact Microsoft Support. Be aware that when you restore the default environment, you need to consider you might also be restoring all the unused or abandoned apps and flows that were removed after the cleanup.
 
 ## See also
 
