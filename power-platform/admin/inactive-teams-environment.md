@@ -65,7 +65,7 @@ The following users will receive email notifications on the schedule described i
 
 - The user who created the environment 
 
-Additionally, users and makers are notified on the Environments list page and Environment page when the Dataverse for Teams environment is disabled.
+Additionally, users and makers are notified on the Environment's list page and Environment page when the Dataverse for Teams environment is disabled.
 
 ### Definition of user activity
 
