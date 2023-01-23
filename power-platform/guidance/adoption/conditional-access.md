@@ -38,10 +38,10 @@ To learn how to set up Conditional Access policies, see [Plan a Conditional Acce
 > [!NOTE]
 > If you’re using Conditional Access polices to limit access to Power Platform and it’s features, the following apps must be included in **Cloud apps** policy application:
 > 
-> - Microsoft Dataverse
+> - Common Data Service
 > - Power Platform API
 > - Microsoft Power Apps
-> - Microsoft Power Automate
+> - Microsoft Flow
 > - Microsoft Azure Management
 > 
 > To learn how to set up Conditional Access policies, go to [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access) and [Blog: Control Access to Power Apps and Power Automate with Azure AD Conditional Access Policies](https://devblogs.microsoft.com/premier-developer/control-access-to-power-apps-and-power-automate-with-azure-ad-conditional-access-policies).
