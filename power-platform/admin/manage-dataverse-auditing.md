@@ -3,11 +3,11 @@ title: "Manage Dataverse auditing"
 description: "Learn how to use Dataverse auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/21/2022
+ms.date: 01/24/2023
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
-ms.reviewer: jimholtz 
+ms.reviewer: matp 
 search.audienceType: 
   - admin
 search.app:
@@ -17,8 +17,6 @@ search.app:
   - Flow
 ---
 # Manage Dataverse auditing
-
-<!-- legacy procedure -->
 
 The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Dataverse auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. 
 
@@ -224,7 +222,7 @@ System administrators or customizers can change the default audit settings for e
   
    By default, when you start or stop auditing for an entity, you also start or stop auditing for all the fields of this entity.  
    
-   If you have enabled the **Read Logs** in the Environment's Audit settings, you will need to enable the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** Auditing settings to see the Read audit logs from this table. See [Activity logging](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing).
+   If you have enabled the **Read Logs** in the environment's audit settings, you'll need to enable the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. More information: [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
   
 6. Select **Save**.  
   
