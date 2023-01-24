@@ -35,7 +35,7 @@ These are the primary elements of Managed Environments:
 - [Set up Power Platform pipelines](../alm/set-up-pipelines.md)
 
 > [!NOTE]
-> - Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+> Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 ### See also
 [Enable Managed Environments](managed-environment-enable.md)   <br />
