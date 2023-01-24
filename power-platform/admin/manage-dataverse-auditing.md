@@ -223,6 +223,8 @@ System administrators or customizers can change the default audit settings for e
 5. To start auditing, on the **General** tab, in the **Data Services** section, select the **Auditing** check box to enable auditing, or clear the **Auditing** check box to disable it.  
   
    By default, when you start or stop auditing for an entity, you also start or stop auditing for all the fields of this entity.  
+   
+   If you have enabled the **Read Logs** in the Environment's Audit settings, you will need to enable the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** Auditing settings to see the Read audit logs from this table. See [Activity logging](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing).
   
 6. Select **Save**.  
   
