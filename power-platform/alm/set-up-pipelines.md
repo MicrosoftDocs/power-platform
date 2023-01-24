@@ -5,7 +5,7 @@ author: caburk
 ms.author: matp
 ms.service: powerapps
 ms.topic: how-to
-ms.date: 11/17/2022
+ms.date: 01/23/2023
 ms.custom: template-how-to
 ---
 # Set up pipelines in Power Platform (preview)
@@ -24,19 +24,20 @@ Power Platform administrators can create one or more pipelines, associate any nu
 - All environments used in pipelines must have a Microsoft Dataverse database.
 - Microsoft Dataverse for Teams environments aren't supported for use with pipelines.
 - You must have a Power Platform administrator or Dataverse system administrator role.
-- Pipelines are a feature of Managed Environments and development and target environments must be enabled as a managed environment. Standalone licenses will not be required when you use developer or trial environments. More information: [Managed Environments](../admin/managed-environment-overview.md)
+- Pipelines are a feature of Managed Environments. As such, the development and target environments used in a pipeline must be enabled as a managed environment. Standalone licenses won't be required when you use developer or trial environments with pipelines. More information: [Managed Environments](../admin/managed-environment-overview.md)
 
 > [!IMPORTANT]
-> - Use of development and target environments that aren't Managed Environments isn't blocked during pipelines preview. 
-> - Enforcement is anticipated for pipelines upon general availability (GA). As a result, any pre-existing pipelines may no longer function until enabled as a managed environment. 
-> - End users within any production environment(s) linked to pipelines will require a Standalone license for either Power Apps, Power Automate, or Dynamics 365. Makers generally won't unless they're also an end user.
+>
+> - Use of development and target environments that aren't Managed Environments isn't blocked during pipelines preview.
+> - Managed environment enforcement is anticipated for pipelines upon general availability (GA). As a result, any pre-existing pipelines may no longer function until enabled as a managed environment. 
+> - End users within any production environment(s) linked to pipelines will require a standalone license for either Power Apps, Power Automate, or Dynamics 365. Makers generally won't require a standalone license unless they're also an end user.
 
 #### Choose environments for pipelines
 
 Before you begin, you’ll need to choose which environments will participate in pipelines. A common setup might include the following:
 
-| **Environment purpose** | **Environment type** | **Managed environment** | **Standalone license required** |
-|--------------|:-----:|----|-----------:|
+| Environment purpose | Environment type | Managed environment | Standalone license required |
+|--------------|-----|----|-----------|
 | Host | Production | No | No |
 | Development | Developer | Yes at GA | No |
 | QA |  Developer | Yes at GA | No |

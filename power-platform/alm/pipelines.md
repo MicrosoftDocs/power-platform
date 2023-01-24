@@ -1,11 +1,11 @@
 ---
 title: "Overview of pipelines in Power Platform (preview)"
-description: "Overview of pipelines in Power Platform and fequently asked questions."
+description: "Overview of pipelines in Power Platform and frequently asked questions."
 author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 11/02/2022
+ms.date: 01/23/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
 search.audienceType: 
@@ -77,15 +77,15 @@ Professional developers are more productive with pipelines now handling the comp
 
 Pipelines deploy solutions as well as configuration for the target environment such as connections, connection references, and environment variables. Any Power Platform customization contained in your solution can be deployed using pipelines. Pipelines, or solutions in general, don't contain data stored within Dataverse tables.
 
-### Are Standalone licenses required to use pipelines?
+### Are standalone licenses required to use pipelines?
 
-- No pipelines specific enforcement will be added until pipelines becomes general available.
-- Standalone licenses **won't** be required to use Developer or Trial type environments in pipelines. 
-- When pipelines becomes generally available, end users within any production environment(s) linked to pipelines **will** require a Standalone license for either Power Apps, Power Automate, or Dynamics 365. Makers generally won't unless they're also an end user. 
+- No pipelines specific enforcement will be added until pipelines become general available.
+- Standalone licenses **won't** be required to use developer or trial type environments in pipelines.
+- When pipelines become generally available, end users within any production environment(s) linked to pipelines **will** require a standalone license for either Power Apps, Power Automate, or Dynamics 365. Makers generally won't require a standalone license unless they're also an end user.
 
 A common setup example:
-| **Environment purpose** | **Environment type** | **Standalone license required** |
-|--------------|:-----:|-----------:|
+| Environment purpose | Environment type |  Standalone license required |
+|--------------|-----|-----------|
 | Host | Production | No |
 | Development | Developer | No |
 | QA |  Developer | No |
@@ -105,22 +105,23 @@ You should delete the environment record and update the pipeline configuration w
 
 ### Can I use pipelines in the default environment?
 
-Yes. However, using the default environment as the pipelines host is not recommended. Customers should carefully evaluate the intended purpose and state of their default environment when deciding if ALM and pipelines is appropriate.  
+Yes. However, using the default environment as the pipelines host isn't recommended. You should carefully evaluate the intended purpose and state of your default environment when deciding if ALM and pipelines is appropriate.  
 
 ### Can I deploy using my own service principal?
 
-Not currently. Note that deployments are facilitated via a Microsoft-provided service principal that impersonates the deploying user. This is secure, compliant, and was designed to accommodate future capabilities.
+Not currently. Note that deployments are facilitated via a Microsoft-provided service principal that impersonates the deploying user. This is secure, compliant, and is designed to accommodate future capabilities.
 
 ### Can pipelines be used with Azure DevOps, GitHub, or the ALM Accelerator?
 
 Not currently. We aim for these to work together more seamlessly in the future.
 
 ### Can I roll back to a previous version?
+
 Not currently. The same is true when manually importing solutions.
 
 ### Can I specify advanced solution import behaviors such as update versus upgrade?
 
-Not currently. Pipelines default behavior is _Upgrade_ with _Maintain customizations_.
+Not currently. Pipelines default import behavior is _Upgrade_ with _Maintain customizations_.
 
 ### Can an environment be associated with multiple hosts?
 
@@ -132,7 +133,7 @@ Not currently. For now, don't attempt to customize the app or register plug-ins 
 
 ### Where can I view and run pipelines?
 
-Currently within any development environments associated with a pipeline. Pipelines can't be viewed or run from within target environments. Notice you may also retrieve and run pipelines from the Power Platform CLI.
+Currently within any development environments associated with a pipeline. Pipelines can't be viewed or run from within target environments. Notice you can also retrieve and run pipelines from the Power Platform CLI.
 
 ### Can I deploy across regions?
 
@@ -147,7 +148,8 @@ Yes, this is possible, although we recommend starting with the same pipeline for
 This isn't recommended.
 
 ### How can I view what changed between different versions?
-Today, pipelines do not show these details. However, you can view XML diffs if using a source control system. Within the solution interface, you can see the layers of objects within a solution as well as what changed between layers. Additionally, you can see XML diffs between layers for model-driven apps, site maps, and forms. 
+
+Currently, pipelines don't show these details. However, you can view XML diffs if you're using a source control system. Within the solution interface, you can see the layers of objects within a solution as well as what changed between layers. Additionally, you can see XML diffs between layers for model-driven apps, site maps, and forms. 
 
 ### Should my host environment be the same as where I installed the COE toolkit?
 
