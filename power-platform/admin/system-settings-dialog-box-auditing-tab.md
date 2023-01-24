@@ -42,6 +42,8 @@ Enable auditing to track changes to your organization's data and maintain a log 
 | Audit user access | Default: Off. If enabled, customer engagement apps (such as Dynamics 365 Sales and Customer Service) track when the user started accessing customer engagement apps and whether or not the user accessed the application by using the web application or Dynamics 365 for Outlook.  |  
 | Start Read Auditing | Default: Off. Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage). |
 
+> [!NOTE]
+> Enabling **Start Read Auditing** setting is only applicable to [Production environments and a Microsoft/Office 365 E1 or greater license](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing). It also requires [enabling the table's Auditing settings for **Single record auditing** and **Multiple record auditing**](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing#enable-auditing).
 
 Specify to audit specific areas of the product, as described in the following table. 
 
