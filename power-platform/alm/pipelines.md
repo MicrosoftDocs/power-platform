@@ -84,6 +84,7 @@ Pipelines deploy solutions as well as configuration for the target environment s
 - When pipelines become generally available, end users within any production environment(s) linked to pipelines **will** require a standalone license for either Power Apps, Power Automate, or Dynamics 365. Makers generally won't require a standalone license unless they're also an end user.
 
 A common setup example:
+
 | Environment purpose | Environment type |  Standalone license required |
 |--------------|-----|-----------|
 | Host | Production | No |
