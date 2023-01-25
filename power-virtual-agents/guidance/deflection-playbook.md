@@ -111,16 +111,18 @@ Conversation transcript review summary:
    •	Expected dialog path: Go to “OrderInfo” action and provide the order status to end user. 
 
  New dialog paths identified by reviewing transcripts: 
+ 
    •	Dialog path 1: OrderInfoSkill replies with “order info adaptive card” but the user’s query is related to missing package, so the user decides to escalate (7 out of 10 sessions)
    •	Dialog path 2: OrderInfo action replies with: “your order contains multiple shipments” but does not show shipping information for all the orders, so the user decides to escalate (2 out of 10 sessions)
    •	Dialog path 3: Other: (order number mismatch), user was unaware that they were entering an incorrect order number, so the user decides to escalate  (1 out of 10 sessions)
 
  Recommendations for the dialog path groups:
+ 
    •	Path 1: Add a new topic for handling missing order 
    •	Path 2: Enhance the OrderInfo action to support providing multiple order shipping information
    •	Path 3: Enhance the OrderInfo action to validate the order ID format and provide error message for incorrect order IDs
 
-#STEP 4: Make targeted improvements in selected topics
+# STEP 4: Make targeted improvements in selected topics
 Based on the outcome of the review of conversation transcripts, you can now make targeted improvements in those selected topics. Some of the techniques you can apply for reducing topic level escalation rates include adding self-serve capabilities so the user does not have to rely on human agents for an action (e.g. checking shipping status), improve the triggering performance to make sure the right topics are presented to the user instead of having to escalate to a human agent (this includes adding missing trigger phrases and updating existing trigger phrases)
 
 
