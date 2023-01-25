@@ -2,7 +2,7 @@
 title: "Advanced AI features (contains video)"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 01/17/2023
+ms.date: 01/20/2023
 
 ms.topic: how-to
 author: iaanw
@@ -14,7 +14,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Enable advanced AI features in Power Virtual Agents (Preview)
+# Enable advanced AI features in Power Virtual Agents
 
 [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -46,7 +46,7 @@ Shorter trigger phrases are better, and you should aim for 2 to 10 words. You ju
 Entities used in corresponding topics will automatically be identified in user intents when matched with their trigger phrases. For example the user intent "I want to book a ticket to Boston" will match with the trigger phrase "I want to book a ticket to Paris".
 
 > [!NOTE]
-> The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
+> The AI capabilities that are in preview are only available to bots created with English as the set language.
 
 ## Advanced AI features overview
 
@@ -59,6 +59,9 @@ There are some specific features that further improve how the AI in Power Virtua
 ## Topic overlap detection
 
 Topic overlap detection helps improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
+
+> [!TIP]
+> Topic overlap detection is in general availability and supports [all languages supported in Power Virtual Agents](authoring-language-support.md).
 
 [After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), you can view a list of overlapped topics. In the navigation menu, select **Analytics**, then select the **Topic triggering** tab.
 
