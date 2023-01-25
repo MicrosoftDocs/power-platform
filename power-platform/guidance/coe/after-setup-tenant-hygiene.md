@@ -207,8 +207,9 @@ Here are a few strategies for effectively communicating governance to your maker
 
 | Article | Link |
 |-----|-----|
-| Power Platform community site template  | |
+| Power Platform community site template  | [Link](power-platform/guidance/adoption/wiki-community) |
 | Set up the Power Platform community site template | |
+| Welcome new makers to the platform | [Link](power-platform/guidance/adoption/onboard-makers) |
 
 ## Administration of the platform
 
@@ -222,7 +223,7 @@ More information about the Power Platform Administration planning tool
 
 | Article | Link |
 |-----|-----|
-| Learn about the administration planning tool | |
-| Install/ set up the administration planning tool | |
+| Learn about the administration planning tool | [Link](https://www.youtube.com/watch?v=q6738IKJW1Q) |
+| Install/ set up the administration planning tool | [Link](https://powerapps.microsoft.com/en-us/blog/power-platform-administration-planning/) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
