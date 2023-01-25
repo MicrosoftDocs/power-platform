@@ -19,114 +19,205 @@ search.app:
 
 # Introduction
 
-After installing and configuring the Center of Excellence (CoE) Starter Kit, your organization has insight into all Power Platform components in your tenant. This insight often uncovers new information about the number of environments, app, cloud flows and bots.  This document provides guidance and suggestions to implement tenant hygiene and robust governance based on the most common scenarios, using the features of the CoE Starter Kit.
-
-The following sections provide guidance and recommendations to get the most value from your installation of the CoE Starter Kit.
-
-## Getting started
-
-Organic growth of the Microsoft Power Platform often does not align to the strategies organizations design (e.g. environment strategy). This leads to varying (depending on the number of environments, apps, cloud flows and bots) amounts of effort for CoE's to  understand what apps, environments, cloud flows and bots are being used for. This guidance provides admin and governance best practices, examples of tooling available in the CoE Starter Kit and out-of-the-box capabilities in product.
+After successfully deploying the Center of Excellence (CoE) Starter Kit, your organization now has a comprehensive view of all Power Platform components within your tenant. This can reveal previously unknown information about the number of environments, apps, cloud flows, and bots that are in use. To take full advantage of this new insight, this document provides guidance and suggestions for implementing effective tenant hygiene and robust governance, based on the most common scenarios encountered. By utilizing the features of the CoE Starter Kit, you can ensure the optimal performance and security of your Power Platform solutions.
 
 ## Establishing tenant hygiene
 
-### Managing existing environments
+The natural expansion of the Microsoft Power Platform can sometimes conflict with an organization's established strategies, such as their environment strategy. This can make it difficult for Center of Excellence (CoE) teams to fully understand the purpose and usage of the various apps, environments, cloud flows, and bots that are in use. To address this challenge, this guidance document offers best practices for administration and governance, as well as examples of the tooling available in the CoE Starter Kit, and out-of-the-box capabilities to help CoE teams effectively manage and optimize their Power Platform solutions.
 
-You will find there are environments in your tenant that you were unaware of. An environment strategy is critical for sustained, governed adoption of the Power Platform, and communicating it clearly is even more important to ensure that makers are developing solutions in the correct environment. Establishing control over environments can be achieved using the developer compliance center in the governance component of the CoE Starter Kit where environment owners are asked to provide business justification for keeping their environment. Some benefits of using the developer compliance center:
+## Managing existing environments
+
+As you gain visibility into your tenant's Power Platform environments, you may discover environments that were previously unknown to you. Having a well-defined environment strategy is crucial for sustained and governed adoption of the Power Platform. Communicating this strategy clearly to your organization is even more important in ensuring that makers are developing solutions in the appropriate environment. The CoE Starter Kit's governance component includes the Developer Compliance Center, which can be used to establish control over environments by requiring environment owners to provide a business justification for maintaining their environment. This helps ensure that all environments in your tenant are aligned with your organization's overall strategy and goals. 
+
+Some benefits of using the developer compliance center:
 
 1. Identifying trial, developer, sandbox and production environments that can be deleted.
 1. Managing capacity in your tenant.
 1. Reducing the potential impact of DLP policy changes to existing apps and flows.
 1. Increased visibility into what environments are being used for.
 
-#### More information about managing environments
+### More information about managing environments
 
 | Topic | Guidance |
+|-----|-----|
 | Defining an environment strategy | |
 | Communicating Power Platform governance | |
 | CoE Starter Kit - developer compliance center | |
 | CoE Starter Kit - Power BI dashboard | |
 | CoE Starter Kit - Compliance and adoption dashboard | |
 
-### Securing your environments
+## Managing new environment creation and environment requests
 
-With over 900 connectors available to your organization, establishing a Data Loss (DLP) Prevention strategy to control connector availability it critical. However, when you're getting started, you may be unaware of the impact changing a DLP policy will have on your makers apps and flows. The CoE Starter Kit contains a reference example of an environment and DLP request management process. Utilizing this solution puts your CoE in a great position for managing future environment and DLP requests. Making changes to existing, or creating new DLP policies introduces the risk of not seeing the impact to existing app and cloud flows. To mitigate this risk, use the DLP editor (impact analysis) tool, before you apply changes.
+One of the key best practices for managing Power Platform environments is to implement controls and processes that restrict who can create new environments. The CoE Starter Kit includes a reference example for an environment and DLP request management process that can be used to effectively manage future environment and DLP requests. By understanding and utilizing this solution, your CoE team will be well-positioned to manage and govern the environments in your tenant. Additionally, it is important to periodically check for new Power Platform connectors that may have been added to your tenant, in order to ensure that they align with your organization's DLP and governance policies.
 
-#### More information about securing your environments
-
-| Topic | Guidance | 
-| Establishing a DLP strategy | |
-| DLP editor impact analysis | |
-
-### Managing new environment creation and environment requests
-
-Following best practices, having controls and processes to restrict who can create environments is a good first step in controlling environment creation. The CoE Starter Kit contains a reference example for an environment and DLP request management process.  Understanding this solution puts your CoE in a great position for managing future environment and DLP requests.  You should also consider checking periodically for new Power Platform connectors
-
-#### More information about environment creation and environment requests
+### More information about environment creation and environment requests
 
 | Topic | Guidance |
+|-----|-----|
 | Environment strategy best practices | |
 | Environment creation security guide | |
 | Power Automate cloud flow template - check for new connectors |
 
-### Managing Dataverse for Teams environments
+## Managing the 'default environment'
 
-Dataverse for Teams delivers a low-code data platform for Microsoft Teams. Dataverse for Teams environments are provisioned per 'Team' automatically when an app or bot is created (in Microsoft Teams) for the first time, or an app is installed from the app catalogue.
-
-Microsoft Power Platform provides a clean-up mechanism that automatically removes Dataverse for Teams environments from your tenant that are left inactive for 90 days. From a compliance perspective, organizations often require information about an environment:
-
-1. What is the purpose of the environment?
-1. What type(s) of data will be used?
-1. What connectors are required?
-1. etc.
-
-To remain in a compliant state and ensure that Dataverse for Teams environments are used effectively, you can configure the Dataverse for Teams environment management <thing> in the Governance component of the CoE Starter Kit, which provides a useful business justification process.  Consider a daily running process to check for new Dataverse for Teams environments.
-
-#### More information about Dataverse for Teams environments
-
-| Topic | Guidance |
-| Automatically remove Dataverse for Teams environments | | 
-| Business justification process | |
-| Check for new Dataverse for Teams environments | |
-
-### Managing the 'default environment'
-
-Every tenant has a special type of environment: the default environment, and this is where your organic growth of apps and cloud flows happens.  It can't be deleted, however you can rename the default environment to better communicate its intent. Consider securing the environment to better manage access (including sharing), DLP and cross-tenant isolation.  Identifying the business value and risk of components, along with identifying unused apps and flows in the default environment are the first steps in establishing control, identifying apps that should be moved to more appropriate environments or levels of support. Look at quarantining apps that are not compliant and consider a process for cleaning up 'orphaned resources' - e.g. apps and flows that do not have an owner.  Use the Power BI dashboard to identify the most popular apps in your organization.
+Every tenant in the Power Platform has a unique environment called the default environment, which is where organic growth of apps and cloud flows typically occurs. While the default environment cannot be deleted, it can be renamed to better communicate its intended purpose. To better manage access, data loss prevention, and cross-tenant isolation, consider securing the environment (see below). One of the first steps in establishing control over the default environment is identifying the business value and risk of its components, as well as identifying any unused apps and flows. This can help you determine which apps should be moved to more appropriate environments or levels of support. Additionally, consider quarantining apps that are not compliant and creating a process for cleaning up orphaned resources, such as apps and flows without an owner. The Power BI dashboard can also be used to identify the most popular apps within your organization.
 
 Summary of benefits in managing the default environment:
 
 1. Identify unused apps and cloud flows: 
     1. Remove unused components from your environment
 
-#### More information about managing the default environment
+### More information about managing the default environment
 
 | Topic | Guidance |
+|-----|-----|
 | Renaming the default environment | |
 | Secure the default environment | |
 | Identify unused apps and cloud flows | |
 | Quarantined non-compliant apps | |
 | Clean up orphaned resources | |
 
-### Managing apps and cloud flows
+## Managing Dataverse for Teams environments
+
+Dataverse for Teams is a powerful low-code data platform that enables the creation of custom apps and bots directly within Microsoft Teams. One of the key features of Dataverse for Teams is that it automatically provisions new environments for each team within an organization, as soon as an app or bot is created or installed from the app catalogue. This allows teams to easily access and manage their own data, while also providing a level of isolation and security to protect data from other teams. This makes Dataverse for Teams an ideal solution for organizations that need to manage a large number of teams or need to implement strict data governance policies.
+
+The Microsoft Power Platform includes a built-in mechanism for automatically cleaning up Dataverse for Teams environments that have been inactive for 90 days. While this feature helps to ensure the efficiency and security of your tenant, it also presents some compliance challenges for organizations. To mitigate these challenges, it's important to keep track of the purpose, data types, connectors, and other information associated with each environment. This information will be useful when creating an environment and DLP request management process, and when evaluating the impact of changes to existing or new DLP policies. Additionally, it will help organizations to respond to any compliance related queries that may arise.
+
+Maintaining compliance and ensuring effective use of Dataverse for Teams environments can be challenging. However, the Governance component of the CoE Starter Kit provides a useful tool to configure Dataverse for Teams environment management and implement a business justification process. Additionally, by implementing a daily process of checking for new Dataverse for Teams environments, organizations can ensure that they are aware of all environments in use and that they align with the organization's compliance and governance policies. This can help organizations to identify and address any potential compliance issues and ensure that their Dataverse for Teams environments are being used effectively.
+
+### More information about Dataverse for Teams environments
+
+| Topic | Guidance |
+|-----|-----|
+| Automatically remove Dataverse for Teams environments | | 
+| Business justification process | |
+| Check for new Dataverse for Teams environments | |
+
+## Securing your environments
+
+With over 900 connectors available to your organization, it is critical to establish a Data Loss Prevention (DLP) strategy to control connector availability. However, when getting started, you may be unaware of the impact that changing a DLP policy will have on your makers' apps and flows. To help mitigate this risk, the CoE Starter Kit includes a reference example of an environment and DLP request management process that can be used to effectively manage future environment and DLP requests. The DLP editor (impact analysis) tool is available to you to use before making changes to existing, or creating new DLP policies. This will give you a clearer picture of the impact of changes on existing apps and cloud flows, and help you make informed decisions.
+
+### More information about securing your environments
+
+| Topic | Guidance | 
+|-----|-----|
+| Establishing a DLP strategy | |
+| DLP editor impact analysis | |
+
+## Managing apps and cloud flows
 
 There are common scenarios to consider for managing apps and cloud flows in your organization.
 
-#### Managing existing apps and flows
+### Scenario - Managing existing apps and cloud flows
 
 Within this scenario, there are two conditions:
 
 1. Usage
 1. Compliance
 
-##### Usage
+#### Usage
 
-Identifying apps and cloud flows that are heavily used in your organization provides critical insight to ensure that these apps and cloud flows meet your compliance policies.  The Power BI dashboard in the CoE Starter Kit provides an overview of the most used apps and flows in your organization. Below are some screenshots of the useful information it provides:
+Identifying the apps and cloud flows that are heavily used within your organization is crucial in order to ensure that they are in compliance with your organizational policies. 
 
-<SCREENSHOT>
+The Power BI dashboard in the CoE Starter Kit offers a comprehensive view of the most used apps and flows in your organization, providing valuable information that can help you make informed decisions. The dashboard can provide a quick overview of the most popular apps, the number of users, usage patterns, and any other relevant information that can help you identify potential compliance issues and ensure that your apps and flows are being used effectively. 
 
-##### Compliance
+##### CoE Starter Kit - Power BI dashboard
 
-Evaluating risk exposure for apps and cloud flows puts your CoE in the position of being able to define processes where high risk apps are identified. For example: migration of high risk apps, support of high value apps, etc. Most organizations will have hundreds (as a minimum) of apps and cloud flows and reaching out manually to owners to establish risk is not an option. In the CoE Starter Kit there are components that assist your CoE in capturing compliance information:
+The Power BI dashboard in the CoE Starter Kit provides a wealth of useful information, including visual representations of usage patterns, the number of users, and any other relevant data that can help you identify compliance issues and ensure that your apps and cloud flows are being used effectively. These visualizations can be extremely valuable in understanding how your organization is using the Power Platform and identifying areas that may need attention. By providing clear and actionable insights, the dashboard can help you ensure that your Power Platform solutions are secure, compliant, and aligned with your organizational policies.
 
-1. Admin compliance detail request is a cloud flow
+<!screenshots>
+
+#### Compliance
+
+Evaluating the risk exposure of apps and cloud flows is an important step in managing the Power Platform effectively. By identifying high-risk apps, your CoE team can define processes for mitigating those risks, such as migrating high-risk apps or providing additional support for high-value apps. Since most organizations have hundreds, if not thousands of apps and cloud flows, manually reaching out to owners to establish risk is not a scalable option. The CoE Starter Kit includes components that can assist your CoE team in capturing compliance information and identifying high-risk apps. These tools can automate the process of assessing risk, saving your team time and resources while also helping to ensure that your organization's Power Platform solutions are secure and compliant.
+
+The **Admin compliance detail request** is a powerful cloud flow that can help your CoE team establish compliance with organizational policies by iterating over the inventory of apps and bots.
+
+ This flow allows your team to set compliance thresholds and automatically checks apps and bots against these thresholds. If an app or bot is found to be non-compliant, the flow will prompt the owner to submit a business justification and additional information about the application. This enables your CoE team to quickly and efficiently identify and address compliance issues, while also providing a clear and transparent process for app and bot owners.
+
+More information about compliance features in the CoE Starter Kit
+
+| Topic | Guidance |
+|-----|-----|
+| App and flow compliance | |
+| How the compliance process works in the CoE Starter Kit | |
+
+### Scenario - managing future apps and cloud flows
+
+Implementing the inactivity notification process, the admin compliance detail request, and the developer compliance app is an essential step in effectively managing compliance for your Power Platform solutions. 
+
+To get the most value out of these tools and to ensure compliance, here are a few considerations to keep in mind:
+
+1. Exclude development and production environments from compliance and inactivity notifications.
+1. Quarantining apps that are not compliant.
+
+More information about managing future apps and cloud flows:
+
+| Topic | Guidance |
+|-----|-----|
+| Exclude environments from the compliance processes | |
+| Exclude environments from inactivity notifications | |
+| Quarantine non-compliant apps | |
+
+### Scenario - managing apps and cloud flows when the owner leaves the organization
+
+When an employee who is responsible for an app or flow within the Microsoft Power Platform leaves the organization, they may leave behind components they've built, known as "orphaned resources." These resources can pose a security risk if they are not properly managed or maintained. To address this issue, the Microsoft Power Platform Center of Excellence (CoE) Starter Kit includes a governance component called "Cleanup for Orphaned Resources." 
+
+This component is designed to run daily checks for any resources that are owned by former employees, ensuring that these resources are either reassigned to a new owner or removed from the tenant if they are not needed. This component can help to ensure that your tenant's Power Platform solutions are secure and compliant, even when employee turnover occurs.
+
+<!SCREENSHOT>
+
+## Highly used apps
+
+Highly used apps in your organization often have a compelling story behind their success, such as how they were created, the challenges they overcame and the value they provide to the business. Discovering and sharing these stories can be a great way to drive further adoption and provide confidence to other makers in your organization. 
+
+The CoE Starter Kit includes a standalone component called the Power Platform Community Site Template, which provides useful templates for promoting success stories, events, hackathons, and other relevant information. This can be a powerful tool for encouraging collaboration and knowledge sharing within your organization, as well as for encouraging the adoption of best practices and standards for Power Platform development.
+
+## Active makers
+
+Identifying the most active makers in your organization can provide valuable insights and resources for your organization's Power Platform community. These makers are likely to be highly engaged and knowledgeable about the platform and can be valuable allies in helping to drive adoption and improve the quality of your organization's solutions. Some of the ways you can utilize the active makers in your organization include:
+
+Skills matching: Active makers can be matched with projects or teams that align with their skills and interests.
+
+Hackathons and training delivery: Active makers can be invited to participate in hackathons, training sessions, and other community events to share their knowledge and experiences
+
+COE Advisors: Active makers can be invited to join your COE as advisors, providing input and guidance on future policies, events, and other initiatives
+
+Promoting Success stories: Active makers can be encouraged to share their success stories and experiences to help drive adoption and inspire others in the organization.
+
+By identifying and leveraging the expertise and enthusiasm of your organization's most active makers, you can help to build a more engaged and effective Power Platform community.
+
+## Communicating governance to your makers
+
+Communicating governance to your makers is an important aspect of managing the Power Platform effectively. Governance policies and guidelines help ensure that solutions are secure, compliant and aligned with organizational goals. 
+However, if makers do not understand or are aware of these policies, they may not be able to create solutions that meet these requirements.
+
+Here are a few strategies for effectively communicating governance to your makers:
+
+1. Clearly communicate the purpose and benefits of governance policies: Explain how governance policies help to protect organizational data and ensure compliance with regulations.
+1. Make governance policies and guidelines easily accessible: Place them in a central location, such as the Power Platform community site template, that is easily accessible to all makers.
+1. Provide training and support: Offer training sessions and resources to help makers understand and comply with governance policies.
+1. Encourage open communication: Create a culture of open communication where makers can ask questions and raise concerns about governance policies.
+1. Incorporate governance into the development process: Make compliance a part of the development process, for example, by requiring a compliance review before deploying a solution.
+
+### More information about the Power Platform Community site template
+
+| Topic | Guidance | 
+|-----|-----|
+| Power Platform community site template  | |
+| Setup the Power Platform community site template | |
+
+## Administration of the platform
+
+The Power Platform Administration planning tool is a comprehensive resource that provides guidance and best practices for Power Platform administration.  It's designed to help organizations of all sizes and levels of experience with the Power Platform optimize their administrative efforts, whether they are just getting started or are looking for ways to improve their existing support.
+
+The tool covers all aspects of Power Platform administration, including environments, security, data loss prevention, monitoring and reporting. It provides a useful starting point for creating a solid foundation of administration and governance for Power Platform within your organization.
+
+More information about the Power Platform Administration planning tool
+
+| Topic | Guidance |
+|-----|-----|
+| Learn about the administration planning tool | |
+| Install/ setup the administration planning tool | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
