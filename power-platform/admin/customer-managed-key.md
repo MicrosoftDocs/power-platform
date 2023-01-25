@@ -1,12 +1,12 @@
 ---
-title: Manage your encryption key in the Power Platform
+title: Manage your encryption key in Power Platform
 description: Learn how to manage your encryption key. 
 author: paulliew
 ms.author: paulliew
 ms.reviewer: matp
 ms.service: powerapps
 ms.topic: how-to
-ms.date: 12/12/2022
+ms.date: 01/25/2023
 ms.custom: template-how-to
 ---
 # Manage your encryption key (preview)
@@ -54,6 +54,8 @@ The key vault admin performs these steps in Azure:
 1. Grant enterprise policy permissions to access the key vault.
 1. Grant Power Platform and Dynamics 365 admins permission to read the enterprise policy.
 
+More information: [Azure Key Vault documentation](/azure/key-vault/general/)
+
 ### Configure Power Platform environments
 
 The Power Platform admin performs these steps in Power Platform admin center:
@@ -77,9 +79,9 @@ You can create a new enterprise policy with a new key or use an existing enterpr
 > - Environments are disabled during encryption key migration.
 > - When BYOK enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
 
-If you have enabled audit and search in the BYOK environment and have uploaded files and created a data lake, all these storages will automatically be created and encrypted with the encryption key.
+If you have enabled audit and search in the BYOK environment and have uploaded files and created a data lake, all these storages will be automatically created and encrypted with the encryption key.
 
-Similarly, if you didn’t enable these audit or search functionalities and enabled them after your environment is encrypted with this feature, all these storages will automatically be created and encrypted with the encryption key.
+Similarly, if you didn’t enable these audit or search functionalities and enabled them after your environment is encrypted with this feature, all these storages will be automatically created and encrypted with the encryption key.
 
 ## Create an Azure paid subscription and key vault
 
@@ -90,7 +92,7 @@ In Azure, perform the following steps:
 1. Create a key vault using the paid subscription with the resource group you created in the previous step. More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
 
 > [!IMPORTANT]
-> - To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings.
+> - To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings. More information: [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview)
 > - During preview, your key vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet.
 
 ## Create a key in the key vault
@@ -203,7 +205,7 @@ A deployment is started. When it's done, the enterprise policy is created.
 
 Once the enterprise policy is created, the key vault admin grants the enterprise policy’s managed identity to access the encryption key.
 
-1. Sign into the Azure portal and go to the key vault.
+1. Sign into the [Azure portal](https://ms.portal.azure.com/) and go to the key vault.
 1. Select the key vault where the key was assigned to the enterprise policy.
 1. Select the **Access policies** tab.
 1. Select **+ Add Access Policy**.
@@ -221,9 +223,9 @@ Admins who have Azure global, Dynamics 365, and Power Platform administration ro
 
 ### Grant reader role to a Power Platform admin
 
-1. Sign into the Azure portal.
+1. Sign into the [Azure portal](https://ms.portal.azure.com/).
 1. Obtain the Power Platform or Dynamics 365 admin’s object ID. To do this:
-   1. Go to to the **Users** area in Azure.
+   1. Go to the **Users** area in Azure.
    1. In the All users list, find the user with Power Platform or Dynamics 365 admin permissions using **Search**. 
    1. Open the user record, on the **Overview** tab copy the user’s **Object ID**. Paste this into a text editor such as NotePad for later.
 1. Get the enterprise policy resource ID. To do this:
@@ -274,7 +276,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 
 To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
 
-1. In Azure portal, create a new key and a new enterprise policy. More information: [Create the key and grant access](#create-the-key-and-grant-access) and [Create an enterprise policy](#create-an-enterprise-policy)
+1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information: [Create the key and grant access](#create-the-key-and-grant-access) and [Create an enterprise policy](#create-an-enterprise-policy)
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
 1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer managed key.
 1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.

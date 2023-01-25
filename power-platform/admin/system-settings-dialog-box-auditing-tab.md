@@ -1,13 +1,12 @@
 ---
 title: "System Settings Auditing tab  | MicrosoftDocs"
 description: System Settings Auditing tab 
-author: jimholtz
-
+author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/05/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: matp
 search.audienceType: 
   - admin
 search.app:
@@ -43,7 +42,7 @@ Enable auditing to track changes to your organization's data and maintain a log 
 | Start Read Auditing | Default: Off. Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage). |
 
 > [!NOTE]
-> Enabling **Start Read Auditing** setting is only applicable to [Production environments and a Microsoft/Office 365 E1 or greater license](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing). It also requires [enabling the table's Auditing settings for **Single record auditing** and **Multiple record auditing**](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing#enable-auditing).
+> Enabling the **Start Read Auditing** setting is only applicable to [production environments and a Microsoft/Office 365 E1 or greater license](/power-platform/admin/enable-use-comprehensive-auditing). It also requires [enabling the table's auditing settings for **Single record auditing** and **Multiple record auditing**](/power-platform/admin/enable-use-comprehensive-auditing#enable-auditing).
 
 Specify to audit specific areas of the product, as described in the following table. 
 
