@@ -31,22 +31,18 @@ A basic understanding of available PVA analytics is required to be able to deter
 
 These metrics need to be continuously improved to optimize  the bot ROI. However, each organization may have their own definition of what deflection rate means to them. For example, an organization may consider “Abandon rate” along with “escalation rate” as part of deflection calculation while another organization may look purely at escalation rate. Despite having different definitions for deflection rate, the above listed PVA metrics will still provide the foundation to calculate deflection.
 Based on our experience with various customers, we have seen that in the context of deflection, resolution rate and escalation rate play a major role. Increasing the resolution rate and reducing the escalation rate typically has a direct impact on the overall bot deflection metrics.
- <Insert Image>
-  
-  
-  
-  
+
+# Key Techniques
+![deflection playbook techniques](./media/introduction/df-key-techniques.png)
+ 
   
 
 # Technique 1: topic escalation analysis
   
 Escalation is the conversation flow during which the bot couldn’t handle the conversation and escalated to a human agent. When a topic does not escalate to a human agent it is considered as deflection. The ideal goal is to increase the deflection rate of a bot by reducing the number of escalations. 
 PVA has multiple ways to handle escalation, the direct way of initiating an escalation to human agent is through the “Escalate” system topic. This system topic enables PVA to understand that the bot is no longer able to address the customer request and would need to escalate to a human agent. Through the “Escalate” topic, one can enable the bot to transfer the conversation to an agent service desk tool like Dynamics 365 Omnichannel for Customer Service for the live agent transfer or an asynchronous support experience like creating a ticket, scheduling a call back etc. A common way of triggering this escalation is through the “Transfer to agent” node in the PVA authoring canvas.
-<Insert Image>
-  
-  
-  
-  
+![transfer to agent](./media/introduction/df-transfer-agent.png)
+    
   
 
 Power Virtual Agents has two types of escalations:
@@ -57,9 +53,8 @@ Power Virtual Agents has two types of escalations:
 	“speak with agent”
 	“talk to a representative”
 2.	Indirect escalation: in this case, the user gets escalated to an agent during the conversation. These can be grouped to expected vs unexpected escalations. Expected escalations happen when the topic is designed to escalate at some point during the conversation, or the user chooses to escalate since the bot did not answer their query while unexpected escalation can happen when the bot errors out due to other issues.
+![escalation analysis steps](./media/introduction/df-escalation-analysis-steps.png)
 
-<Insert Image>
-  
   
   
   
@@ -75,8 +70,7 @@ The chart also shows the “impact” as a red or blue bar. The escalation rate 
 A red bar indicates that the topic's escalation rate is greater than the average escalation rate, resulting in a negative impact on overall escalation rate. A blue bar indicates that the escalation rate is smaller, resulting in a positive impact on overall escalation rate performance. Lowering the escalation rate for the topics in red has the greatest impact on improving the overall escalation rate.
 
 Note: The impact score is not represented as a number but as a bar chart in PVA.
- 
- <Insert Image>
+![impact score](./media/introduction/df-impact-score.png)
   
 Custom analytics:
   
@@ -86,7 +80,7 @@ You can also build on your own custom analytics on top of the conversation trans
  
 # STEP 2: Select the top Escalation topics 
 The general guidance is to target the top 5-10 topics under “Escalation rate drivers” to start with for the purpose of deflection rate optimization. On a ball park estimate, if you improve the rate of escalation by 10% for each of the top 5 topics, you can improve the overall deflection by 1% for the chatbot.
-<Insert Image>
+![top escalation topics](./media/introduction/df-top-escalation-topics.png)
  
 # STEP 3: Review conversations for selected topics
 Analyzing the conversation transcripts for the top escalation topics can provide more insights into reasons for escalation. Conversation transcripts capture the turn by turn, as “user says” and “bot says”. It also captures the topic name that was triggered and the session outcome (e.g. Resolved, Escalated etc.). 
@@ -101,7 +95,7 @@ Below is the step-by-step guidance you can use for dissecting the chat transcrip
 7.	Implement the recommendations in the PVA bot topics and observe the change in the escalation rate and deflection.
 
 Applying the above approach for the “Check Order Status” Topic example below would look like this:
-<Insert Image>
+![check order example](./media/introduction/df-check-order.png)
 
  Topic description: “Check Order Status” is supposed to provide order and shipping information for the user
 
@@ -133,10 +127,11 @@ PVA has a built-in fallback system topic that is set to fire when the AI is not 
    3.	Unmapped user queries that are not relevant to any existing or new topics.
    4.	Other categories including, user queries that triggered a DYM followed by fallback, unclear user queries that hit fallback, user queries from incomplete conversations that led to fallback.
 Of the 4 categories above, 1 and 2 are immediately actionable. Based on the findings from 1 and 2, you can enrich the topics by adding more trigger phrases for existing topics or creating new topics.
+ ![enrichment or fallback analysis](./media/introduction/df-enrichment-analysis.png)
 
 Topic enrichment through out-of-the-box PVA Analytics.
 PVA provides some advanced AI capabilities out of box to identify the list of newly suggested topics, by enabling the “Advanced AI capabilities” in PVA for “Topic Suggestions based on Transcripts” when the author does not want to set up a fall back. This info can also be used to create new Topics to improve deflection rate.
- <Insert Image>
+![OOB enrichment analysis](./media/introduction/df-oob-enrichment.png)
  
 Other approach topic enrichment exercise
 •	Install the custom analytics for PVA (https://aka.ms/PVAAnalytics) that includes a "deflection analysis” page.
@@ -157,7 +152,7 @@ Using semantically similar trigger phrases for two different topics can lead to 
 A topic confusion analysis exercise will help you improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
 Identifying semantically similar trigger phrases can also help you determine if you have topics that themselves are similar and could be consolidated to simplify the bot authoring process or edited to make the topics more distinct with high triggering accuracy which in turn improves the deflection rate.
 You can identify the list of topics causing confusion during triggering, by enabling the “AI capabilities” in PVA for “topic overlap detection”. This standard capability will help you to identify the trigger phrases causing confusion and remove duplicates, and consolidate similar topics.
- <Insert Image>
+![topic confusion analysis](./media/introduction/df-topic-confusion-analysis.png)
   
 # Technique 4: alternate escalation paths 
 There are a few strategies you can use to deflect the user from reaching the human agent when the bot user decides to escalate, without deprecating the user experience. These are some of those:
