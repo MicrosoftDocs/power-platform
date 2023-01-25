@@ -23,6 +23,14 @@ Customers have data privacy and compliance requirements to secure their data by 
 >  - Set and apply key
 >  - Revert key
 >  - Change key
+>
+> This feature is gradually being rolled out following this deployment schedule:
+>
+> |Region station  |Est. public preview availability  |Regions in station  |
+> |---------|---------|---------|
+> |1 & 2     | March 1, 2023        | Canada, France, Germany, India, Norway, South Africa, South America, South Korea, Switzerland, Australia        |
+> |3 & 4     |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
+> |5     | September 2023     |  North America       |
 
 By default, data is encrypted with Microsoft managed keys. For additional control over encryption keys, you can manage your own keys. Customer managed keys must be stored in Azure Key vault.
 
