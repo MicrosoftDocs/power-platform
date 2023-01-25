@@ -186,4 +186,12 @@ The Dataverse connector might experience some throttling limits if the tenant ha
 
   1. Use the slider to reduce the value of **Degree of Parallelism**. The default value is 50; reducing the parallelism here will increase the runtime of the flow, so we suggest gradually lowering the number.
 
+## Which license should I assign to the user that's running the Flows ?
+
+Part of the setup we suggest you assign the Power Automate Per User or Per Flow license. Different license type will have different API Limits and enforcements might take place. Use the following guide to avoid your flows get throttled.
+
+  1. Start by assign Power Automate Per user license. Typically, some of the CLEANUP flows as well as the Sync Template (Flows) and Sync Template (Apps) are often ones that make high API calls, monitor those to observe any throttle situation.
+  1. In case your Flow is being throttled, use a different user in that Flow, by using a different user you are load-balancing the API limits.
+  1. In case your Flows are continuing to be throttled, add them to a Per Flow plan, that guarantee a higher API Limit, but in some tenants, with a high number of Environments, makers, or flow/apps modifications this might not be sufficient and customization might be needed to load balance the operations.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
