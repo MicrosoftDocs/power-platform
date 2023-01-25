@@ -128,7 +128,7 @@ Comments have the following schema:
 |Column|Column type|Description|
 |------|-----|------|
 | Name | Text | Unused in admin app. The name column is populated when comments are created via video hub canvas app|
-| Comment text | Text | Represents the users comment text| 
+| Comment text | Text | Represents the users comment text|
 | Comment status | Choice | Approved or rejected.  Only approved comments will appear in the video hub canvas app |
 | Community hub content | Lookup | Represents the video related to the comment |
 
