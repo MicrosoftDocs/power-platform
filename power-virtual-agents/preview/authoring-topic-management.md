@@ -3,14 +3,15 @@ title: Manage topics (preview)
 description: Learn how to switch to other topics and end a topic in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 12/13/2022
+
 ms.topic: how-to
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 ms.reviewer: gapretty
 manager: shellyha
 ms.custom: authoring, topics, bap-template
-ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Manage topics (preview)

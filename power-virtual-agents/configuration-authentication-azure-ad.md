@@ -3,12 +3,14 @@ title: Configure user authentication with Azure Active Directory
 description: Use Azure Active Directory as your service provider for user authentication.
 keywords: "Authentication, IdP, PVA, AAD"
 ms.date: 08/18/2022
+
 ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 manager: shellyha
 ms.reviewr: micchow
 ms.custom: authentication, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

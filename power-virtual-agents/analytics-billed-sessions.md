@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "analysis, licensing, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -43,7 +44,7 @@ You can change the date range to filter the **Total billed sessions over time** 
 
 ## Definition of a billed session
 
-A *billed session* is an interaction between a customer and a bot, and represents one unit of consumption.
+A _billed session_ is an interaction between a customer and a bot, and represents one unit of consumption.
 
 The billed session begins when a user topic or premium functionality (as indicated in the [Common scenarios](#common-scenarios) section) is triggered. For more information, see [Use system and sample topics section](authoring-create-edit-topics.md#use-system-and-sample-topics)
 
@@ -55,7 +56,7 @@ A session ends for one of the following reasons:
 - The session is longer than 60 minutes.  
     The first message that occurs after 60 minutes starts a new session.
 
-- The session has more than 100 turns. A *turn* is defined as one exchange between a user and the bot.  
+- The session has more than 100 turns. A _turn_ is defined as one exchange between a user and the bot.  
  The one-hundred-and-first turn starts a new session.
 
 ## Common scenarios

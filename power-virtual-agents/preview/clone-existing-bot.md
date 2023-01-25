@@ -2,13 +2,14 @@
 title: Create a preview bot from the content of an existing bot (preview)
 description: Create a preview bot by cloning the content of an existing bot in Microsoft Power Virtual Agents preview.
 ms.date: 12/07/2022
+
 ms.topic: how-to
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 ms.reviewer: gapretty
 manager: shellyha
-ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ms.custom: bap-template
 ---
 

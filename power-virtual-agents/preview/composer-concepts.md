@@ -2,15 +2,16 @@
 title: Key concepts for Bot Framework Composer users (preview)
 description: Overview of how key concepts in Microsoft Bot Framework Composer translate to concepts in Power Virtual Agents preview.
 ms.date: 12/07/2022
+
 ms.topic: conceptual
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 manager: shellyha
 ms.custom: fundamentals, ceX, intro-internal, bap-template
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
-ms.service: power-virtual-agents
 ---
 
 # Key concepts for Bot Framework Composer users (preview)
