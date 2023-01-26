@@ -444,7 +444,7 @@ If the app is released from quarantine, an email is sent to the maker to inform 
 
 ![The app maker gets an email notification to inform them their app has been released from quarantine.](media/quarantine3.png "The app maker gets an email notification to inform them their app has been released from quarantine.")
 
-Apps that are quarantined are also flagged in the [Developer Compliance Center](#developer-compliance-center).
+Apps that are quarantined are also flagged in the [Developer Compliance Center](#developer-compliance-center) as **Non-Compliant**.
 
 ![Quarantined apps are highlighted as such in the Developer Compliance Center app.](media/quarantine5.png "Quarantined apps are highlighted as such in the Developer Compliance Center app.")
 
