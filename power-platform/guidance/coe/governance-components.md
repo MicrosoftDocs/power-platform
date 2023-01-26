@@ -79,20 +79,32 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. 
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 #### Compliance Status
 
-A traffic light indicates how compliant the resource is in relation to a predefined rule set.
+The Developer Compliance Center allows makers to check the compliance status and submit additional details for the following resources:
 
-- **Apps** are compliant if the app description is populated, the business justification is submitted, and the app has been published in the past 60 days.
-- **Flows** are compliant if the flow description is populated, the business justification is submitted, and the flow isn't suspended.
-- **Chatbots** are compliant if the chatbot description and the business justification are populated, and the chatbot isn't suspended.
-- **Custom connectors** are compliant if the custom connector description, business justification, and conditions of use are populated.
+- Canvas Apps
+- Model-Driven Apps
+- Flows
+- Bots
+- Custom connectors
+- Desktop Flows
+- Solutions
+- Environments
 
-**Customize**: Verify that the compliance criteria matches your requirements, and update if necessary.
+Based on the resource, makers can filter their resources to the following compliance status:
 
-Makers can achieve compliance by providing additional information through the **Support Details** form:
+- **Missing Details** indicates that the compliance process or an admin has requested additional details to be submitted to bring the resource back into compliance.
+- **Flagged as inactive** indicates that the resource has been marked as inactive.
+- **Non-compliant** indicates that the resource is currently non compliant with existing DLP or billing policies, often this means that the resource can not be used until the problem is resolved.
+- **Re-publish needed** (for canvas apps only) indicates that the app has not been published in the past 60 days.
+- **Missing description** indicates that the resource needs a description populated to help the admin understand what the resource is used for.
+
+:::image type="content" source="media/coe56.png" alt-text="Developer Compliance Center overview":::
+
+For **Missing Details**, makers can achieve compliance by providing additional information through the **Support Details** form:
 
 - **Business Justification**: Describe the business need and the problem you're solving with this solution.
 - **Business Impact**: Define the operational impact this solution has on the people using it.
@@ -103,14 +115,7 @@ Makers can achieve compliance by providing additional information through the **
 
 **Customize**: Verify that the **Support Details** form matches your requirements, and update if necessary.
 
-:::row:::
-   :::column span="":::
-      ![Developer Compliance Center overview.](media/coe56.png "Developer Compliance Center overview")
-   :::column-end:::
-   :::column span="":::
-      ![Developer Compliance Center app detail.](media/coe57.png "Developer Compliance Center app detail")
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="media/coe57.png" alt-text="Developer Compliance Center app details":::
 
 ### Business process flows
 
