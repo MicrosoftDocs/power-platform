@@ -45,7 +45,7 @@ This article will help you to setup the remaining components in the Core solutio
 |------|---------------|
 |Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams). It is needed for the flow: Admin \| Welcome Email v3. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
 
-## Turn on flows
+### Turn on flows
 
 There are several flows which will need to be turned on for these components:  
 
@@ -57,7 +57,7 @@ There are several flows which will need to be turned on for these components:
 >[!IMPORTANT]
 > The [Admin | Welcome Email v3](core-components.md#flows-2) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. See: See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)
 
-## Share apps with admins and makers
+### Share apps with admins and makers
 
 Share the **CoE Maker Command Center** with your makers and assign them the **Power Platform Maker SR**.
 Share the [**App Catalog**](core-components.md#app-catalog) with your end users and assign them the **Power Platform User SR**.

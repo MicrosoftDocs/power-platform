@@ -44,28 +44,9 @@ If you face issues with:
 
 This CoE Starter Kit and this guidance are targeted toward the person or department responsible for setting up a Microsoft Power Platform CoE in their organization. The goal of this guidance is to help you understand what the motivation for&mdash;and the responsibilities of&mdash;a Center of Excellence are, in addition to walking you through the prerequisites, setup instructions, and individual components of the CoE Starter Kit.
 
-## How to get started
+## How to get started using the CoE Starter Kit
 
-After you've [installed the CoE Starter Kit solution](setup.md), get familiar with the resources in your tenant.
-
-> [!NOTE]
-> The following steps are just examples of what you can do with the components in the CoE Starter Kit. Explore the rest of the guidance here to see what's available and how to make the most of the kit.
-
-1. Open the Power BI dashboard, and familiarize yourself with resources and makers that are already in your environments.
-
-    ![CoE Power BI dashboard.](media/coe1.PNG "CoE Power BI dashboard")
-
-1. Identify orphaned apps, and assign them to new owners by using the embedded app in the Power BI dashboard.
-
-    ![Set App Permissions canvas app.](media/SetAppPerms.PNG "Set App Permission canvas app")
-
-1. Start planning your governance strategy by identifying your requirements for what makes a compliant app or maker, what information you'll need per app or per maker, what happens to noncompliant apps and makers, how you'll support your maker community in building compliant apps that follow best practices, and what actions you'll drive based on this information.
-
-    ![Developer Compliance Center canvas app.](media/coe4.PNG "Developer Compliance Center canvas app")
-
-1. Embrace your maker community and develop a nurture and adoption strategy. Think about how to onboard new makers. Organize internal events such as training workshops and hackathons. Put together templates and best practices for your makers to use.
-
-    ![Email to welcome new makers.](media/coe5.PNG "Email to welcome new makers")
+See [new article]().
 
 ## How to use the CoE Starter Kit alongside Automation Kit
 

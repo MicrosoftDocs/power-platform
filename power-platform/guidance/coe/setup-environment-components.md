@@ -47,7 +47,7 @@ This article will help you to set up the environment request components of the c
 |------|---------------|
 |Environment Request Admin App Url | Update this environment variable with the URL for the Admin - Environment Request canvas app. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Teams environment](faq.md#add-apps-to-microsoft-teams) |
 
-## Turn on flows
+### Turn on flows
 
 There are several flows which will need to be turned on for these components:  
 
@@ -61,7 +61,7 @@ There are several flows which will need to be turned on for these components:
 - Env Request | Notify admin when new request submitted
 - Env Request | Notify requestor when rejected
 
-## Share apps with admins and makers
+### Share apps with admins and makers
 
 The environment request components consist of two apps:
 
