@@ -416,6 +416,7 @@ Use this app to:
 - Set approved capacity for environments, and see capacity and add-on information per environment.
 - Complete [app audits](example-processes.md).
 - Manage capacity alerts.
+- Set app and flow permissions for individual resources.
 
 **Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
