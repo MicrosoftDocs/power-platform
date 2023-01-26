@@ -64,7 +64,9 @@ Additionally, it's important to periodically check for new Power Platform connec
 
 ## Managing the 'default environment'
 
-Every tenant in the Power Platform has a unique environment called the default environment, which is where organic growth of apps and cloud flows typically occurs. While the default environment can't be deleted, it can be renamed to better communicate its intended purpose. To better manage access, data loss prevention, and cross-tenant isolation, consider securing the environment. One of the first steps in establishing control over the default environment is identifying the business value and risk of its components, as well as identifying any unused apps and flows. This can help you determine which apps should be moved to more appropriate environments or levels of support. Additionally, consider quarantining apps that aren't compliant and creating a process for cleaning up orphaned resources, such as apps and flows without an owner. The Power BI dashboard can also be used to identify the most popular apps within your organization.
+Every tenant in the Power Platform has a unique environment called the default environment, which is where organic growth of apps and cloud flows typically occurs. While the default environment can't be deleted, it can be renamed to better communicate its intended purpose. One of the first steps in establishing control over the default environment is identifying the business value and risk of its components, as well as identifying any unused apps and flows. This can help you determine which apps should be moved to more appropriate environments or levels of support
+
+Additionally, consider quarantining apps that aren't compliant and creating a process for cleaning up orphaned resources, such as apps and flows without an owner (see clean up orphaned resources). The Power BI dashboard in the CoE Starter Kit can also be used to identify the most popular apps within your organization.
 
 ### More information about managing the default environment
 
@@ -78,11 +80,13 @@ Every tenant in the Power Platform has a unique environment called the default e
 
 ## Managing Dataverse for Teams environments
 
-Dataverse for Teams is a powerful low-code data platform that enables the creation of custom apps and bots directly within Microsoft Teams. One of the key features of Dataverse for Teams is that it automatically provisions new environments for each team within an organization, as soon as an app or bot is created or installed from the app catalogue. This allows teams to easily access and manage their own data, while also providing a level of isolation and security to protect data from other teams. This makes Dataverse for Teams an ideal solution for organizations that need to manage a large number of teams or need to implement strict data governance policies.
+Dataverse for Teams is a powerful low-code data platform that enables the creation of custom apps and bots directly within Microsoft Teams. One of the key features of Dataverse for Teams is that it automatically provisions new environments for each team within an organization, as soon as an app or bot is created or installed from the app catalogue. This allows teams to easily access and manage their own data, while also providing a level of isolation and security to protect data from other teams.
 
-The Microsoft Power Platform includes a built-in mechanism for automatically cleaning up Dataverse for Teams environments that have been inactive for 90 days. While this feature helps to ensure the efficiency and security of your tenant, it also presents some compliance challenges for organizations. To mitigate these challenges, it's important to keep track of the purpose, data types, connectors, and other information associated with each environment. This information will be useful when creating an environment and DLP request management process, and when evaluating the impact of changes to existing or new DLP policies. Additionally, it will help organizations to respond to any compliance related queries that may arise.
+The Microsoft Power Platform includes a built-in mechanism for automatically cleaning up Dataverse for Teams environments that have been inactive for 90 days. While this feature helps to ensure the efficiency and security of your tenant, it also presents some compliance challenges for organizations. To mitigate these challenges, it's important to keep track of the purpose, data types, connectors, and other information associated with each environment. 
 
-Maintaining compliance and ensuring effective use of Dataverse for Teams environments can be challenging. However, the Governance component of the CoE Starter Kit provides a useful tool to configure Dataverse for Teams environment management and implement a business justification process. Additionally, by implementing a daily process of checking for new Dataverse for Teams environments, organizations can ensure that they're aware of all environments in use and that they align with the organization's compliance and governance policies. This can help organizations to identify and address any potential compliance issues and ensure that their Dataverse for Teams environments are being used effectively.
+The Governance component of the CoE Starter Kit provides a useful tool for Dataverse for Teams environment management. The business justification process that requires environment owners to provide business justification for the environment. Additionally, by implementing a daily process of checking for new Dataverse for Teams environments, organizations can ensure that they're aware of all environments in use and that they align with the organization's compliance and governance policies.
+
+<!screenshots here>
 
 ### More information about Dataverse for Teams environments
 
@@ -95,6 +99,8 @@ Maintaining compliance and ensuring effective use of Dataverse for Teams environ
 ## Securing your environments
 
 With over 900 connectors available to your organization, it's critical to establish a Data Loss Prevention (DLP) strategy to control connector availability. However, when getting started, you may be unaware of the impact that changing a DLP policy will have on your makers' apps and flows. To help mitigate this risk, the CoE Starter Kit includes a reference example of an environment and DLP request management process that can be used to effectively manage future environment and DLP requests. The DLP editor (impact analysis) tool is available to you to use before making changes to existing, or creating new DLP policies. This will give you a clearer picture of the impact of changes on existing apps and cloud flows, and help you make informed decisions.
+
+<!screenshots here>
 
 ### More information about securing your environments
 
