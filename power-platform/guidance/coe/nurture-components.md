@@ -96,7 +96,11 @@ If you're planning to run an internal Training in a Day event (such as App in a 
 
 ![Training in a Day Management app.](media/training2.png "Training in a Day Management app")
 
-#### Nurture apps - Maker
+#### Training in a day pages in Nurture apps - Maker app
+
+>[!NOTE]
+>In the February 2023 release, the **Training in a day registration** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Training in a day registration canvas app has been renamed to [deprecated] Training in a day registration and will be removed from the solution by June 2023.
+>The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
 If you're planning to run a Training in a Day event, use this page in the Nurture apps - Maker app to enable your users to register for upcoming events.
 
@@ -134,7 +138,11 @@ A page inside the Nurture apps - Admin app that the Solution Assessment admin us
 
 ![Maker Journey Admin app.](media/MakerJourneyAdminApp.png "Maker Journey Admin app")
 
-#### Solution Assessment page in Nurture apps - Maker
+#### Solution Assessment page in Nurture apps - Maker apps
+
+>[!NOTE]
+>In the February 2023 release, the **Maker Assessment** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Maker Assessment canvas app has been renamed to [deprecated] Maker Assessment and will be removed from the solution by June 2023.
+>The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
 The Solution Assessment page can be used to ask users a series of questions regarding the target audience, data and support of the solution they are planning and informing them about governance, support and license considerations a maker needs to keep in mind before starting the development of their solution.
 
@@ -186,7 +194,11 @@ The dashboard also provides the ability to view detailed feedback with and filte
 
 ### Apps
 
-#### Template Catalog page in Nurture apps - Maker
+#### Template Catalog page in Nurture apps - Maker app
+
+>[!NOTE]
+>In the February 2023 release, the **Template Catalog** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Template Catalog canvas app has been renamed to [deprecated] Template Catalog and will be removed from the solution by June 2023.
+>The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
 A custom page that CoE admins can use to share app and component templates, in addition to best practice documents, with their makers.
 

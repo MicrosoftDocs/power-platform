@@ -240,7 +240,7 @@ Additional to the above listed inventory tables, the following helper tables sup
   - Environment
   - Created on
 
-- **CoE Solution Metadata** holds meta-data about flows and apps part of the CoE Starter Kit in a table and is used in the [Admin | Command Center](#admin---command-center):
+- **CoE Solution Metadata** holds meta-data about flows and apps part of the CoE Starter Kit in a table and is used in the [CoE Admin Command Center](#coe-admin-command-center):
   - CoE Solution (Core, Governance, Nurture, Audit Log)
   - CoE Solution Area (for example, Inventory, Compliance, ...)
   - Object Type (app or flow)
@@ -258,7 +258,6 @@ Additional to the above listed inventory tables, the following helper tables sup
   - CC
   - ReplyTo
   - Send on Behalf
-
 
 > [!NOTE]
 > To easily explore and manage data stored in Dataverse, we recommend that you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
@@ -325,8 +324,8 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 #### CoE Admin Command Center
 
 >[!NOTE]
->The **Admin - Command Center** canvas app has been replaced with the CoE Admin Command Center model-driven app with the February 2023 release. The new app uses model-driven app features and custom pages. The Admin - Command Center app has been renamed to [deprecated] Admin - Command Center and will be removed from the solution by June 2023.
->The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components.
+>In the February 2023 release, the **Admin - Command Center** canvas app has been replaced with the CoE Admin Command Center model-driven app. The new app uses model-driven app features and custom pages. The Admin - Command Center app has been renamed to [deprecated] Admin - Command Center and will be removed from the solution by June 2023.
+>The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
 A canvas app used by admins as a starting point to launch other apps in the CoE Starter Kit and review content relevant to admins.
 

@@ -71,6 +71,10 @@ You can customize the email sent out by the flow; by default, it will look like 
 
 #### Developer Compliance Center
 
+>[!NOTE]
+>In the February 2023 release, the **Developer Compliance Center** canvas app has been replaced with the Developer Compliance Center model-driven app. The new app uses model-driven app features and custom pages. The Developer Compliance Center canvas app has been renamed to [deprecated] Developer Compliance Center and will be removed from the solution by June 2023.
+>The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
+
 This app is used in the [auditing process](example-processes.md) as a tool for users to check whether their app, flow, chatbot or custom connector is compliant, and to submit information to the CoE admins as business justification to stay in compliance.
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
