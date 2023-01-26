@@ -32,7 +32,19 @@ You use this functionality to identify objects where the maker has left the orga
 
 [Watch a walk-through](https://www.youtube.com/watch?v=0zptiBppTNo&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the clean-up for orphaned objects process works.
 
-## Turn on flows
+## Set up the Clean-up for orphaned objects components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Clean-up for orphaned resources**.
+1. This app provides a guided step by step experience through the configuration steps.
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up the Clean-up for orphaned objects components manually
+
+### Turn on flows
 
 Turn on the following flows, which are installed as part of the governance components solution:
 

@@ -19,9 +19,11 @@ search.app:
 ---
 # Center of Excellence (CoE) overview
 
-A Center of Excellence (CoE) drives innovation and improvement, and brings together like-minded people with similar business goals to share knowledge and success, while providing standards, consistency, and governance.
+Establishing a Microsoft Power Platform Center of Excellence (CoE) means investing in and nurturing organic growth while maintaining governance and control. A CoE is designed to drive innovation and improvement, and as a central function it can break down geographic and organizational silos. A CoE can be a powerful way for an organization to align around business goals rather than individual department metrics.
 
-The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform.
+A key principle is to clarify why you're setting up a CoE, what you aim to accomplish, and the key business outcomes you hope to achieve. Then get started, and learn and evolve along the way. For many, the CoE is the first step in fostering greater creativity and innovation across the organization by empowering business units to digitize and automate their business processes, while maintaining the necessary level of central oversight and governance.
+
+The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform. The CoE Starter Kit is a reference implementation, and the templates within it might not match every organization's requirements, so we recommend that you extend the solution to fit your organization's requirements as defined by your CoE.
 
 You can download the most recently updated assets from the [GitHub repository](https://aka.ms/CoEStarterKitRepo).
 
@@ -73,6 +75,34 @@ The kit is especially useful to an Automation Center of Excellence (CoE) team, w
 
 The Automation Kit can be used standalone or alongside the CoE Starter Kit.
 
+## Admin tools available to you
+
+A Microsoft Power Platform CoE takes ownership of Microsoft Power Platform administration, nurturing, and operations support. To do that, you'll need to use the administrative functions in Microsoft Power Platform.
+
+Admin and governance tools fall into three broad categories:
+
+:::row:::
+   :::column span="":::
+      **Admin center** <br>The core, most important capabilities for admins and makers are the functions in the core product [admin center](https://admin.powerplatform.microsoft.com/). These features are designed to be the easiest and most robust way to complete tasks, and are fully supported by the engineering team:
+      - Environment and environment security management
+      - Data loss prevention (DLP) policy management
+      - Data integration and gateway management
+      - Admin analytics (to view capacity and activity on Microsoft Dataverse, Power Apps, and Power Automate)
+      - Support ticket requests
+
+   :::column-end:::
+   :::column span="":::
+       **Platform extensions** <br>Four connectors provide access to the same APIs that the products and admin centers use. These have been exposed through the connectors library to give users the ability to create custom solutions to execute administrative or governance-related tasks.
+       - [Power Platform for Admins](/connectors/powerplatformforadmins/)
+       - [Power Apps for Admins](/connectors/powerappsforadmins/)
+       - [Power Automate Management](/connectors/flowmanagement/)
+       - [Power Apps for Makers](/connectors/powerappsforappmakers/)
+   :::column-end:::
+    :::column span="":::
+      **Templates and customizations** <br>The [CoE Starter Kit](setup.md) falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. The nature of a template is to provide a good solution for a specific task, but it might not have the exact functionality that you need. You might have to adjust it to achieve what you're looking for.
+   :::column-end:::
+:::row-end:::
+
 ## How to use the CoE Starter Kit alongside Power Platform Admin Center
 
 ### Managed Environments for Power Platform
@@ -108,6 +138,5 @@ In addition to those three features that have an overlap with Managed Environmen
 - Get started with the Microsoft Power Platform learning path, a free online and interactive training platform [aka.ms/PowerUp](/learn/paths/create-powerapps/).
 
 - As an admin looking after the CoE, you should be familiar with the administration and governance of Microsoft Power Platform. We recommend the following white paper as a resource: [aka.ms/PowerAppsAdminWhitepaper](https://aka.ms/powerappsadminwhitepaper).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
