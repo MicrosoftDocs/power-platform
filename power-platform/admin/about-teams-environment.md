@@ -1,12 +1,12 @@
 ---
 title: "About the Microsoft Dataverse for Teams environment | MicrosoftDocs"
 description: Administer and manage Microsoft Dataverse for Teams environment
-author: jimholtz
+author: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 01/24/2023
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: matp
 search.audienceType: 
   - admin
 search.app:
@@ -80,7 +80,7 @@ This section summarizes user access to Dataverse for Teams environments and reso
 
 ### Conceptual model
 
-Every team in Microsoft Teams is linked 1:1 to a [Microsoft 365 group](/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide).
+Every team in Microsoft Teams is linked 1:1 to a [Microsoft 365 group](/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide&preserve-view=true).
 
 Microsoft 365 Groups supports two user membership types: owners and members. Members can be users from the customer's own tenant or from a guest tenant. Any user management (addition, removal, user type change) made in a team will be reflected in the Microsoft 365 group, and vice versa.
 
@@ -109,7 +109,7 @@ There's a difference in the models for adding users to an environment with a Dat
 </tr>
 <tr>
 <td width="20%"> Teams member </td>
-<td width="50%"> Members can view the Dataverse for Teams environment's resources, run all apps and resources, and create or update their own resources. They have full access to all data. </td>
+<td width="50%"> Members can view the Dataverse for Teams environment's resources, run all apps and resources, and create or update all resources. They have full access to all data. </td>
 <td width="30%"> Teams Member </td>
 </tr>
 <tr>
