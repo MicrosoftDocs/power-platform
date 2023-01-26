@@ -109,7 +109,7 @@ There's a difference in the models for adding users to an environment with a Dat
 </tr>
 <tr>
 <td width="20%"> Teams member </td>
-<td width="50%"> Members can view the Dataverse for Teams environment's resources, run all apps and resources, and create or update their own resources. They have full access to all data. </td>
+<td width="50%"> Members can view the Dataverse for Teams environment's resources, run all apps and resources, and create or update all resources. They have full access to all data. </td>
 <td width="30%"> Teams Member </td>
 </tr>
 <tr>
