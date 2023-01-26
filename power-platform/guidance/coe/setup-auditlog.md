@@ -34,8 +34,9 @@ The Center of Excellence (CoE) Starter Kit will work without this flow, but the 
 ## Before you use the audit log connector
 
 1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide)
-1. A Global Admin is required to configure the Azure AD app registration.
+1. The user identity running the flow must have permission to the audit logs. Minimum permissions for this described here: [Before you search the audt logs](https://learn.microsoft.com/microsoft-365/compliance/audit-log-search?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log)
 1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+1. A Global Admin is required to configure the Azure AD app registration.
 
 The Office 365 Management APIs use Azure Active Directory (Azure AD) to provide authentication services that you can use to grant rights for your application to access them.
 
@@ -165,7 +166,7 @@ You should see a (200) status returned, which means the query was successful.
 > If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
 >
-> - Are audit logs enabled, and do you have permission to view the audit logs? Check [compliance.office.com](https://compliance.microsoft.com/auditlogsearch) > **Solutions** > **Audit** > **Search**.
+> - Are audit logs enabled, and do you have permission to view the audit logs? Check by seeing if you can search in the [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Azure AD app registration?
