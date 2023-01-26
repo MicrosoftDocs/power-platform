@@ -345,7 +345,7 @@ Use this app to:
 **Prerequisite**: This app uses Microsoft Dataverse and other premium connectors. A premium license is required for every app user.
 
 >[!NOTE]
-> When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Additionally add other relevant bookmarks such as links to the Power BI dashboard and your Power Platform wiki and community by selecting **Edit bookmarks**.
+> When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Add other relevant bookmarks such as links to the Power BI dashboard and your Power Platform wiki and community by selecting **Edit bookmarks**.
 
 ![CoE Admin Command Center canvas app](media\commandcenter1.png "CoE Admin Command Center canvas app")
 
@@ -424,6 +424,14 @@ Use this app to:
 You can use this app to see who an app is shared with, what roles (editor or viewer) the users have, and&mdash;for groups&mdash;what the size of the group is, all in a quick glance.
 
 ![Use Power Platform Admin View to see who an app is shared with.](media/coe-mda2.png "Use Power Platform Admin View to see who an app is shared with")
+
+You can use this app to see manage permissions for apps and flows by selecting **Manage Permissions** from the command bar.
+
+:::image type="content" source="media/ppadmin-setapp.png" alt-text="CoE Starter Kit Setup Wizard":::
+
+You can use this app to email app owners and app users by selecting **Email Users** from the command bar.
+
+:::image type="content" source="media/ppadmin-email.png" alt-text="CoE Starter Kit Setup Wizard":::
 
 ### Power BI report
 
