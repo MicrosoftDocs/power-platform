@@ -61,6 +61,7 @@ Additionally, it's important to periodically check for new Power Platform connec
 | Environment strategy best practices | [Link](/microsoft-365/community/defining-a-power-platform-environment-strategy#recommendations--best-practices) |
 | Environment creation security guide | [Link](/power-platform/admin/create-environment#who-can-create-environments) |
 | Power Automate cloud flow template - check for new connectors | [Link](https://powerautomate.microsoft.com/en-US/templates/details/0b2ffb0174724ad6b4681728c0f53062/get-a-list-of-new-apps-flows-and-connectors/) |
+| What is the environment and dlp request management component (YouTube) | [Link](https://youtu.be/16mspbGz1zA) |
 | Setup environment request components | [Link](power-platform/guidance/coe/setup-environment-components) |
 
 ## Managing the 'default environment'
