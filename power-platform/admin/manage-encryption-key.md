@@ -3,7 +3,7 @@ title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/09/2022
+ms.date: 01/27/2023
 author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
@@ -72,16 +72,14 @@ These actions will result in disabling all the environments within the tenant fr
   
 <a name="KM_details"></a>   
 
+### Encryption key requirements
+
+If you provide your own encryption key, your key must meet  these  requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
   
-### Encryption key requirements  
- If you provide your own encryption key, your key must meet  these  requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
-  
--   The encryption key file format must be PFX or BYOK.  
-  
--   2048-bit RSA 
--   RSA-HSM key type (via a BYOK Support ticket)
-  
--   PFX encryption key files must be password protected.  
+- The encryption key file format must be PFX or BYOK.  
+- 2048-bit RSA.
+- RSA-HSM key type (requires a Microsoft Support request).
+- PFX encryption key files must be password protected.  
   
 For more information about generating and transferring an HSM-protected key over the Internet see [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys).  Only [nCipher Vendor HSM key](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) is supported. Before generating your HSM key, go to the Power Platform admin center **Manage encryption keys**/**Create New key** window to obtain the subscription ID for your environment region. You need to copy and paste this subscription ID into your HSM to create the key. This will ensure that only our Azure Key Vault can open your file.
   
