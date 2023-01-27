@@ -29,7 +29,7 @@ The natural expansion of the Microsoft Power Platform can sometimes conflict wit
 
 As you gain visibility into your tenant's Power Platform environments, you may discover environments that were previously unknown to you. Having a well-defined environment strategy is crucial for sustained and governed adoption of the Power Platform. Communicating this strategy clearly to your organization is even more important in ensuring that makers are developing solutions in the appropriate environment.
 
-The CoE Starter Kit's governance component includes the developer compliance center, which can be used to establish control over environments by requiring environment owners to provide a business justification for maintaining their environment. This helps ensure that all environments in your tenant are aligned with your organization's overall strategy and goals.
+The CoE Starter Kit's governance component includes the **developer compliance center**, which can be used to establish control over environments by requiring environment owners to provide a business justification for maintaining their environment. This helps ensure that all environments in your tenant are aligned with your organization's overall strategy and goals.
 
 Some benefits of using the developer compliance center:
 
@@ -50,7 +50,7 @@ Some benefits of using the developer compliance center:
 
 ## Managing new environment creation and environment requests
 
-One of the key best practices for managing Power Platform environments is to implement controls and processes that restrict who can create new environments. The CoE Starter Kit includes a reference example for an environment and DLP request management process that can be used to effectively manage future environment and DLP requests. By understanding and utilizing this solution, your CoE team will be well-positioned to manage and govern the environments in your tenant. 
+One of the key best practices for managing Power Platform environments is to implement controls and processes that restrict who can create new environments. The CoE Starter Kit includes a reference example for an **environment and DLP request management process** that can be used to effectively manage future environment and DLP requests. By understanding and utilizing this solution, your CoE team will be well-positioned to manage and govern the environments in your tenant. 
 
 Additionally, it's important to periodically check for new Power Platform connectors that may have been added to your tenant, in order to ensure that they align with your organization's DLP and governance policies.
 
@@ -66,7 +66,7 @@ Additionally, it's important to periodically check for new Power Platform connec
 
 Every tenant in the Power Platform has a unique environment called the default environment, which is where organic growth of apps and cloud flows typically occurs. While the default environment can't be deleted, it can be renamed to better communicate its intended purpose. One of the first steps in establishing control over the default environment is identifying the business value and risk of its components, as well as identifying any unused apps and flows. This can help you determine which apps should be moved to more appropriate environments or levels of support
 
-Additionally, consider quarantining apps that aren't compliant and creating a process for cleaning up orphaned resources, such as apps and flows without an owner (see clean up orphaned resources). The Power BI dashboard in the CoE Starter Kit can also be used to identify the most popular apps within your organization.
+Additionally, consider quarantining apps that aren't compliant and creating a process for cleaning up orphaned resources, such as apps and flows without an owner (see clean up orphaned resources). The **Power BI dashboard** in the CoE Starter Kit can also be used to identify the most popular apps within your organization.
 
 ### More information about managing the default environment
 
@@ -130,8 +130,18 @@ The Power BI dashboard in the CoE Starter Kit offers a comprehensive view of the
 
 The Power BI dashboard in the CoE Starter Kit provides a wealth of useful information, including visual representations of usage patterns, the number of users, and any other relevant data that can help you identify compliance issues and ensure that your apps and cloud flows are being used effectively. These visualizations can be extremely valuable in understanding how your organization is using the Power Platform and identifying areas that may need attention. By providing clear and actionable insights, the dashboard can help you ensure that your Power Platform solutions are secure, compliant, and aligned with your organizational policies.
 
-<!screenshots>
+##### CoE Starter Kit - inactivity notifications
 
+The inactivity notification process in the CoE Starter Kit is a features that automatically detects apps that have been inactive for a certain period of time and sends notifications to the app owner, asking them to confirm if the app is still needed or can be safely deleted.  This process helps organizations manage their Power Platform apps more efficiently by identifying and removing unused or redundant apps.  The inactivity threshold can be configured by the CoE team.
+
+![Screenshot of the inactivity notification mail sent to an app owner](media/coe58.PNG)
+
+More information about the inactivity notification process
+
+| Article | Link |
+|----|----|
+| Inactivity notifications (YouTube) | [Link](https://youtu.be/PZ5u_2E9uUI) |
+| Set up inactivity notifications | [Link](power-platform/guidance/coe/setup-archive-components) |
 #### Compliance
 
 Evaluating the risk exposure of apps and cloud flows is an important step in managing the Power Platform effectively. By identifying high-risk apps, your CoE team can define processes for mitigating those risks, such as migrating high-risk apps or providing additional support for high-value apps. Since most organizations have hundreds, if not thousands of apps and cloud flows, manually reaching out to owners to establish risk isn't a scalable option. The CoE Starter Kit includes components that can assist your CoE team in capturing compliance information and identifying high-risk apps. These tools can automate the process of assessing risk, saving your team time and resources while also helping to ensure that your organization's Power Platform solutions are secure and compliant.
@@ -140,7 +150,7 @@ The **Admin compliance detail request** is a powerful cloud flow that can help y
 
  This flow allows your team to set compliance thresholds and automatically checks apps and bots against these thresholds. If an app or bot is found to be non-compliant, the flow will prompt the owner to submit a business justification and additional information about the application. This enables your CoE team to quickly and efficiently identify and address compliance issues, while also providing a clear and transparent process for app and bot owners.
 
-[Screenshot of compliance email sent to owner](/media/coe55.PNG)
+![Screenshot of compliance email sent to owner](media/coe55.PNG)
 
 More information about compliance features in the CoE Starter Kit
 
@@ -155,8 +165,8 @@ Implementing the inactivity notification process, the admin compliance detail re
 
 To get the most value out of these tools and to ensure compliance, here are a few considerations to keep in mind:
 
-1. Exclude development and production environments from compliance and inactivity notifications.
-1. Quarantining apps that aren't compliant.
+1. **Exclude development and production environments** from compliance and inactivity notifications.
+1. **Quarantining apps** that aren't compliant.
 
 More information about managing future apps and cloud flows:
 
