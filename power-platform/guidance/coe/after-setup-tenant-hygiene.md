@@ -39,13 +39,11 @@ Some benefits of using the developer compliance center:
 
 **Learn more:**
 
-| Article | Link |
-|-----|-----|
-| Defining an environment strategy | [Link](/power-platform/guidance/adoption/environment-strategy) |
-| Communicating Power Platform governance | [Link](/power-platform/guidance/adoption/environment-strategy#clearly-communicate-your-organizations-environment-strategy-to-makers) |
-| CoE Starter Kit - developer compliance center | [Link](/power-platform/guidance/coe/governance-components#developer-compliance-center) |
-| CoE Starter Kit - Power BI dashboard | [Link](/power-platform/guidance/coe/power-bi-monitor#environments) |
-| CoE Starter Kit - Compliance and adoption dashboard | [Link](/power-platform/guidance/coe/power-bi-compliance) |
+- [Defining an environment strategy](/power-platform/guidance/adoption/environment-strategy)
+- [Communicating Power Platform governance](/power-platform/guidance/adoption/environment-strategy#clearly-communicate-your-organizations-environment-strategy-to-makers)
+- [CoE Starter Kit - developer compliance center](/power-platform/guidance/coe/governance-components#developer-compliance-center)
+- [CoE Starter Kit - Power BI dashboard](/power-platform/guidance/coe/power-bi-monitor#environments)
+- [CoE Starter Kit - Compliance and adoption dashboard](/power-platform/guidance/coe/power-bi-compliance)
 
 ## Managing new environment creation and environment requests
 
@@ -55,13 +53,11 @@ Additionally, it's important to periodically check for new Power Platform connec
 
 **Learn more:**
 
-| Article | Link |
-|-----|-----|
-| Environment strategy best practices | [Link](/microsoft-365/community/defining-a-power-platform-environment-strategy#recommendations--best-practices) |
-| Environment creation security guide | [Link](/power-platform/admin/create-environment#who-can-create-environments) |
-| Power Automate cloud flow template - check for new connectors | [Link](https://powerautomate.microsoft.com/en-US/templates/details/0b2ffb0174724ad6b4681728c0f53062/get-a-list-of-new-apps-flows-and-connectors/) |
-| What is the environment and dlp request management component (YouTube) | [Link](https://youtu.be/16mspbGz1zA) |
-| Setup environment request components | [Link](power-platform/guidance/coe/setup-environment-components) |
+- [Environment strategy best practices](/microsoft-365/community/defining-a-power-platform-environment-strategy#recommendations--best-practices)
+- [Environment creation security guide](/power-platform/admin/create-environment#who-can-create-environments)
+- [Power Automate cloud flow template - check for new connectors](https://powerautomate.microsoft.com/en-US/templates/details/0b2ffb0174724ad6b4681728c0f53062/get-a-list-of-new-apps-flows-and-connectors/)
+- [What is the environment and dlp request management component (YouTube)](https://youtu.be/16mspbGz1zA)
+- [Setup environment request components](power-platform/guidance/coe/setup-environment-components)
 
 ## Managing the Default environment
 
