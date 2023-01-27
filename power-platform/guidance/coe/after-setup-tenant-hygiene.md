@@ -136,7 +136,7 @@ The Power BI dashboard in the CoE Starter Kit provides a wealth of useful inform
 
 The inactivity notification process in the CoE Starter Kit is a features that automatically detects apps that have been inactive for a certain period of time and sends notifications to the app owner, asking them to confirm if the app is still needed or can be safely deleted.  This process helps organizations manage their Power Platform apps more efficiently by identifying and removing unused or redundant apps.  The inactivity threshold can be configured by the CoE team.
 
-![Screenshot of the inactivity notification mail sent to an app owner](media/coe58.PNG)
+:::image type="content" source="media/coe58.png" alt-text="Screenshot of the inactivity notification mail sent to an app owner":::
 
 **Learn more:**
 
@@ -151,12 +151,12 @@ The **Admin compliance detail request** is a powerful cloud flow that can help y
 
  This flow allows your team to set compliance thresholds and automatically checks apps and bots against these thresholds. If an app or bot is found to be non-compliant, the flow will prompt the owner to submit a business justification and additional information about the application. This enables your CoE team to quickly and efficiently identify and address compliance issues, while also providing a clear and transparent process for app and bot owners.
 
-![Screenshot of compliance email sent to owner](media/coe55.PNG)
+:::image type="content" source="media/coe55.png" alt-text="Screenshot of compliance email sent to an owner":::
 
 **Learn more:**
 
 - [App and flow compliance detail request](/power-platform/guidance/coe/governance-components#admin--compliance-detail-request-v3)
-- [How the compliance process works in the CoE Starter Kit](https://youtu.be/WXXFjHLt5ss) |
+- [How the compliance process works in the CoE Starter Kit](https://youtu.be/WXXFjHLt5ss)
 
 ### Scenario - managing future apps and cloud flows
 
