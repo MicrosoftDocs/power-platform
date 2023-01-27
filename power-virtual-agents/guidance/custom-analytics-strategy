@@ -1,3 +1,16 @@
+---
+title: "Custom Analytics strategy for Power Virtual Agents"
+description: "Set of best practices on custom analytics for Power Virtual Agents"
+author: athinesh
+
+ms.date: 1/20/2023
+ms.subservice: guidance
+ms.topic: conceptual
+ms.custom: guidance
+ms.author: athinesh
+ms.collection: virtual-agent
+---
+# Introduction 
 Custom Analytics StrategyPower Virtual Agents provides comprehensive out-of-the-box analytics in the PVA portal that will allow customers to understand a bot’s usage. 
 Customers can view reports related to:
 - Performance and usage•Customer satisfaction
