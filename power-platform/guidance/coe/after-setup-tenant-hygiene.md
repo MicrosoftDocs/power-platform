@@ -178,11 +178,17 @@ More information about managing future apps and cloud flows:
 
 ### Scenario - managing apps and cloud flows when the owner leaves the organization
 
-When an employee who is responsible for an app or flow within the Microsoft Power Platform leaves the organization, they may leave behind components they've built, known as "orphaned resources." These resources can pose a security risk if they aren't properly managed or maintained. To address this issue, the Microsoft Power Platform Center of Excellence (CoE) Starter Kit includes a governance component called "Cleanup for Orphaned Resources." 
+When an employee who is responsible for an app or flow within the Microsoft Power Platform leaves the organization, they may leave behind components they've built, known as "orphaned resources." These resources can pose a security risk if they aren't properly managed or maintained. To address this issue, the Microsoft Power Platform Center of Excellence (CoE) Starter Kit includes a governance component called "Cleanup for Orphaned Resources."
 
 This component is designed to run daily checks for any resources that are owned by former employees, ensuring that these resources are either reassigned to a new owner or removed from the tenant if they aren't needed. This component can help to ensure that your tenant's Power Platform solutions are secure and compliant, even when employee turnover occurs.
 
-<!SCREENSHOT>
+![Screenshot of orphaned resources adaptive card sent to line manager](media/orphanedobjects2.png)
+
+More information about managing apps and cloud flows when the owner leaves the organization
+| Article | Link |
+|----|----|
+| Managing apps and cloud flows when the owner leaves the organization (YouTube) | [Link](https://youtu.be/0zptiBppTNo) |
+| Cleanup for orphaned resources | [Link](power-platform/guidance/coe/governance-components#cleanup-for-orphaned-resources) |
 
 ## Highly used apps
 
