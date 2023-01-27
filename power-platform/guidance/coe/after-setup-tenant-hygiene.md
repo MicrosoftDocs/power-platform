@@ -49,7 +49,7 @@ Some benefits of using the developer compliance center:
 
 ## Managing new environment creation and environment requests
 
-One of the key best practices for managing Power Platform environments is to implement controls and processes that restrict who can create new environments. The CoE Starter Kit includes a reference example for an **environment and DLP request management process** that can be used to effectively manage future environment and DLP requests. By understanding and utilizing this solution, your CoE team will be well-positioned to manage and govern the environments in your tenant.
+One of the key best practices for managing Power Platform environments is to implement controls and processes that restrict who can create new environments. The CoE Starter Kit includes a reference example for an **environment and DLP request management process** that can be used to effectively manage future environment and DLP requests. Understanding and utilizing this solution, your CoE team will be well-positioned to manage and govern the environments in your tenant.
 
 Additionally, it's important to periodically check for new Power Platform connectors that may have been added to your tenant, in order to ensure that they align with your organization's DLP and governance policies.
 
