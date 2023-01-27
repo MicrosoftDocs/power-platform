@@ -111,6 +111,8 @@ With over 900 connectors available to your organization, it's critical to establ
 | Establishing a DLP strategy | [Link](/power-platform/guidance/adoption/dlp-strategy) |
 | DLP editor impact analysis | [Link](https://powerapps.microsoft.com/en-us/blog/new-in-the-coe-starter-kit-review-the-impact-of-dlp-policy-changes/) |
 | Configure user security to resources in an environment | [Link](power-platform/admin/database-security) |
+| Security in Microsoft Power Platform | [Link](power-platform/admin/security/overview) |
+| Security and governance considerations | [Link](power-platform/admin/governance-considerations) |
 
 ## Managing apps and cloud flows
 
