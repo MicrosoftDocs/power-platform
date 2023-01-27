@@ -88,7 +88,7 @@ The Microsoft Power Platform includes a built-in mechanism for automatically cle
 
 The Governance component of the CoE Starter Kit provides a useful tool for Dataverse for Teams environment management. The business justification process that requires environment owners to provide business justification for the environment. Additionally, by implementing a daily process of checking for new Dataverse for Teams environments, organizations can ensure that they're aware of all environments in use and that they align with the organization's compliance and governance policies.
 
-<!screenshots here>
+<!screenshots here of new UI>
 
 ### More information about Dataverse for Teams environments
 
@@ -100,9 +100,9 @@ The Governance component of the CoE Starter Kit provides a useful tool for Datav
 
 ## Securing your environments
 
-With over 900 connectors available to your organization, it's critical to establish a Data Loss Prevention (DLP) strategy to control connector availability. However, when getting started, you may be unaware of the impact that changing a DLP policy will have on your makers' apps and flows. To help mitigate this risk, the CoE Starter Kit includes a reference example of an environment and DLP request management process that can be used to effectively manage future environment and DLP requests. The DLP editor (impact analysis) tool is available to you to use before making changes to existing, or creating new DLP policies. This will give you a clearer picture of the impact of changes on existing apps and cloud flows, and help you make informed decisions.
+With over 900 connectors available to your organization, it's critical to establish a Data Loss Prevention (DLP) strategy to control connector availability. However, when getting started, you may be unaware of the impact that changing a DLP policy will have on your makers' apps and flows. To help mitigate this risk, the CoE Starter Kit includes a reference example of an **environment and DLP request management process** that can be used to effectively manage future environment and DLP requests. The **DLP editor (impact analysis) tool** is available to you to use before making changes to existing, or creating new DLP policies. This will give you a clearer picture of the impact of changes on existing apps and cloud flows, and help you make informed decisions.
 
-<!screenshots here>
+<!screenshots here of new UI>
 
 ### More information about securing your environments
 
@@ -110,6 +110,7 @@ With over 900 connectors available to your organization, it's critical to establ
 |-----|-----|
 | Establishing a DLP strategy | [Link](/power-platform/guidance/adoption/dlp-strategy) |
 | DLP editor impact analysis | [Link](https://powerapps.microsoft.com/en-us/blog/new-in-the-coe-starter-kit-review-the-impact-of-dlp-policy-changes/) |
+| Configure user security to resources in an environment | [Link](power-platform/admin/database-security) |
 
 ## Managing apps and cloud flows
 
