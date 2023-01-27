@@ -43,10 +43,10 @@ Some benefits of using the developer compliance center:
 | Article | Link |
 |-----|-----|
 | Defining an environment strategy | [Link](/power-platform/guidance/adoption/environment-strategy) |
-| Communicating Power Platform governance | [Link](power-platform/guidance/adoption/environment-strategy#clearly-communicate-your-organizations-environment-strategy-to-makers) |
-| CoE Starter Kit - developer compliance center | [Link](power-platform/guidance/coe/governance-components#developer-compliance-center) |
-| CoE Starter Kit - Power BI dashboard | [Link](power-platform/guidance/coe/power-bi-monitor#environments) |
-| CoE Starter Kit - Compliance and adoption dashboard | [Link](power-platform/guidance/coe/power-bi-compliance) |
+| Communicating Power Platform governance | [Link](/power-platform/guidance/adoption/environment-strategy#clearly-communicate-your-organizations-environment-strategy-to-makers) |
+| CoE Starter Kit - developer compliance center | [Link](/power-platform/guidance/coe/governance-components#developer-compliance-center) |
+| CoE Starter Kit - Power BI dashboard | [Link](/power-platform/guidance/coe/power-bi-monitor#environments) |
+| CoE Starter Kit - Compliance and adoption dashboard | [Link](/power-platform/guidance/coe/power-bi-compliance) |
 
 ## Managing new environment creation and environment requests
 
@@ -58,8 +58,8 @@ Additionally, it's important to periodically check for new Power Platform connec
 
 | Article | Link |
 |-----|-----|
-| Environment strategy best practices | [Link](microsoft-365/community/defining-a-power-platform-environment-strategy#recommendations--best-practices) |
-| Environment creation security guide | [Link](power-platform/admin/create-environment#who-can-create-environments) |
+| Environment strategy best practices | [Link](/microsoft-365/community/defining-a-power-platform-environment-strategy#recommendations--best-practices) |
+| Environment creation security guide | [Link](/power-platform/admin/create-environment#who-can-create-environments) |
 | Power Automate cloud flow template - check for new connectors | [Link](https://powerautomate.microsoft.com/en-US/templates/details/0b2ffb0174724ad6b4681728c0f53062/get-a-list-of-new-apps-flows-and-connectors/) |
 
 ## Managing the 'default environment'
@@ -72,17 +72,17 @@ Additionally, consider quarantining apps that aren't compliant and creating a pr
 
 | Article | Link |
 |-----|-----|
-| Renaming the default environment | [Link](power-platform/admin/edit-properties-environment) |
-| Secure the default environment | [Link](power-platform/guidance/adoption/secure-default-environment) |
-| Identify unused apps and cloud flows | [Link](power-platform/guidance/coe/governance-components#app-and-flow-inactivity-notifications-clean-up-view) |
-| Quarantined non-compliant apps | [Link](power-platform/guidance/coe/governance-components#app-quarantine-process) |
-| Clean up orphaned resources | [Link](power-platform/guidance/coe/governance-components#cleanup-for-orphaned-resources) |
+| Renaming the default environment | [Link](/power-platform/admin/edit-properties-environment) |
+| Secure the default environment | [Link](/power-platform/guidance/adoption/secure-default-environment) |
+| Identify unused apps and cloud flows | [Link](/power-platform/guidance/coe/governance-components#app-and-flow-inactivity-notifications-clean-up-view) |
+| Quarantined non-compliant apps | [Link](/power-platform/guidance/coe/governance-components#app-quarantine-process) |
+| Clean up orphaned resources | [Link](/power-platform/guidance/coe/governance-components#cleanup-for-orphaned-resources) |
 
 ## Managing Dataverse for Teams environments
 
 Dataverse for Teams is a powerful low-code data platform that enables the creation of custom apps and bots directly within Microsoft Teams. One of the key features of Dataverse for Teams is that it automatically provisions new environments for each team within an organization, as soon as an app or bot is created or installed from the app catalogue. This allows teams to easily access and manage their own data, while also providing a level of isolation and security to protect data from other teams.
 
-The Microsoft Power Platform includes a built-in mechanism for automatically cleaning up Dataverse for Teams environments that have been inactive for 90 days. While this feature helps to ensure the efficiency and security of your tenant, it also presents some compliance challenges for organizations. To mitigate these challenges, it's important to keep track of the purpose, data types, connectors, and other information associated with each environment. 
+The Microsoft Power Platform includes a built-in mechanism for automatically cleaning up Dataverse for Teams environments that have been inactive for 90 days, helping to ensure the efficiency and security of your tenant. It also presents some compliance challenges for organizations. To mitigate these challenges, it's important to keep track of the purpose, data types, connectors, and other information associated with each environment.
 
 The Governance component of the CoE Starter Kit provides a useful tool for Dataverse for Teams environment management. The business justification process that requires environment owners to provide business justification for the environment. Additionally, by implementing a daily process of checking for new Dataverse for Teams environments, organizations can ensure that they're aware of all environments in use and that they align with the organization's compliance and governance policies.
 
@@ -92,9 +92,9 @@ The Governance component of the CoE Starter Kit provides a useful tool for Datav
 
 | Article | Link |
 |-----|-----|
-| Automatically remove Dataverse for Teams environments | [Link](power-platform/admin/inactive-teams-environment) |
-| Business justification process | [Link](power-platform/guidance/coe/teams-governance#business-justification-process) |
-| Check for new Dataverse for Teams environments | [Link](power-platform/guidance/coe/governance-components#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) |
+| Automatically remove Dataverse for Teams environments | [Link](/power-platform/admin/inactive-teams-environment) |
+| Business justification process | [Link](/power-platform/guidance/coe/teams-governance#business-justification-process) |
+| Check for new Dataverse for Teams environments | [Link](/power-platform/guidance/coe/governance-components#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) |
 
 ## Securing your environments
 
@@ -106,7 +106,7 @@ With over 900 connectors available to your organization, it's critical to establ
 
 | Article | Link |
 |-----|-----|
-| Establishing a DLP strategy | [Link](power-platform/guidance/adoption/dlp-strategy) |
+| Establishing a DLP strategy | [Link](/power-platform/guidance/adoption/dlp-strategy) |
 | DLP editor impact analysis | [Link](https://powerapps.microsoft.com/en-us/blog/new-in-the-coe-starter-kit-review-the-impact-of-dlp-policy-changes/) |
 
 ## Managing apps and cloud flows
@@ -122,9 +122,9 @@ Within this scenario, there are two conditions:
 
 #### Usage
 
-Identifying the apps and cloud flows that are heavily used within your organization is crucial in order to ensure that they are in compliance with your organizational policies. 
+Identifying the apps and cloud flows that are heavily used within your organization is crucial in order to ensure that they are in compliance with your organizational policies.
 
-The Power BI dashboard in the CoE Starter Kit offers a comprehensive view of the most used apps and flows in your organization, providing valuable information that can help you make informed decisions. The dashboard can provide a quick overview of the most popular apps, the number of users, usage patterns, and any other relevant information that can help you identify potential compliance issues and ensure that your apps and flows are being used effectively. 
+The Power BI dashboard in the CoE Starter Kit offers a comprehensive view of the most used apps and flows in your organization, providing valuable information that can help you make informed decisions. The dashboard can provide a quick overview of the most popular apps, the number of users, usage patterns, and any other relevant information that can help you identify potential compliance issues and ensure that your apps and flows are being used effectively.
 
 ##### CoE Starter Kit - Power BI dashboard
 
@@ -140,11 +140,13 @@ The **Admin compliance detail request** is a powerful cloud flow that can help y
 
  This flow allows your team to set compliance thresholds and automatically checks apps and bots against these thresholds. If an app or bot is found to be non-compliant, the flow will prompt the owner to submit a business justification and additional information about the application. This enables your CoE team to quickly and efficiently identify and address compliance issues, while also providing a clear and transparent process for app and bot owners.
 
+[Screenshot of compliance email sent to owner](/media/coe55.PNG)
+
 More information about compliance features in the CoE Starter Kit
 
 | Article | Link |
 |-----|-----|
-| App and flow compliance detail request | [Link](power-platform/guidance/coe/governance-components#admin--compliance-detail-request-v3) |
+| App and flow compliance detail request | [Link](/power-platform/guidance/coe/governance-components#admin--compliance-detail-request-v3) |
 | How the compliance process works in the CoE Starter Kit | [Link](https://youtu.be/WXXFjHLt5ss) |
 
 ### Scenario - managing future apps and cloud flows
@@ -160,9 +162,9 @@ More information about managing future apps and cloud flows:
 
 | Article | Link |
 |-----|-----|
-| Exclude environments from the compliance processes | [Link](power-platform/guidance/adoption/onboard-makers) |
-| Exclude environments from inactivity notifications | [Link](power-platform/guidance/coe/setup-archive-components#exempt-environments-from-the-inactivity-notifications-process) |
-| Quarantine non-compliant apps | [Link](power-platform/guidance/coe/governance-components#admin--quarantine-non-compliant-apps) |
+| Exclude environments from the compliance processes | [Link](/power-platform/guidance/adoption/onboard-makers) |
+| Exclude environments from inactivity notifications | [Link](/power-platform/guidance/coe/setup-archive-components#exempt-environments-from-the-inactivity-notifications-process) |
+| Quarantine non-compliant apps | [Link](/power-platform/guidance/coe/governance-components#admin--quarantine-non-compliant-apps) |
 
 ### Scenario - managing apps and cloud flows when the owner leaves the organization
 
@@ -196,7 +198,7 @@ By identifying and applying the expertise and enthusiasm of your organization's 
 
 | Article | Link |
 |----|----|
-| Skills match overview | [Link](power-platform-release-plan/2022wave2/power-apps/skills-match-power-apps-makers) |
+| Skills match overview | [Link](/power-platform-release-plan/2022wave2/power-apps/skills-match-power-apps-makers) |
 
 ## Communicating governance to your makers
 
@@ -215,9 +217,9 @@ Here are a few strategies for effectively communicating governance to your maker
 
 | Article | Link |
 |-----|-----|
-| Power Platform community site template  | [Link](power-platform/guidance/adoption/wiki-community) |
+| Power Platform community site template  | [Link](/power-platform/guidance/adoption/wiki-community) |
 | Set up the Power Platform community site template | |
-| Welcome new makers to the platform | [Link](power-platform/guidance/adoption/onboard-makers) |
+| Welcome new makers to the platform | [Link](/power-platform/guidance/adoption/onboard-makers) |
 
 ## Administration of the platform
 
