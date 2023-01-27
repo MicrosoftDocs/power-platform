@@ -259,7 +259,7 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 
 ### See also  
 
-[SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
+[SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017&preserve-view=true)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
