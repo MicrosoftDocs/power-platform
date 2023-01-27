@@ -102,7 +102,7 @@ The Governance component of the CoE Starter Kit provides a useful tool for Datav
 
 With over 900 connectors available to your organization, it's critical to establish a Data Loss Prevention (DLP) strategy to control connector availability. However, when getting started, you may be unaware of the impact that changing a DLP policy will have on your makers' apps and flows. To help mitigate this risk, the CoE Starter Kit includes a reference example of an **environment and DLP request management process** that can be used to effectively manage future environment and DLP requests. The **DLP editor (impact analysis) tool** is available to you to use before making changes to existing, or creating new DLP policies. This will give you a clearer picture of the impact of changes on existing apps and cloud flows, and help you make informed decisions.
 
-<!screenshots here of new UI>
+<!screenshots here of new UI!>
 
 ### More information about securing your environments
 
