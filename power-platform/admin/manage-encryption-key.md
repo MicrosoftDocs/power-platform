@@ -78,7 +78,8 @@ These actions will result in disabling all the environments within the tenant fr
   
 -   The encryption key file format must be PFX or BYOK.  
   
--   2048-bit RSA or RSA-HSM key type.  
+-   2048-bit RSA 
+-   RSA-HSM key type (via a BYOK Support ticket)
   
 -   PFX encryption key files must be password protected.  
   
