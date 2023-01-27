@@ -18,10 +18,6 @@ search.app:
 
 # Introduction
 
-The Center of Excellence (CoE) Starter Kit provides a comprehensive view of all Power Platform components within your tenant. It can reveal previously unknown information about the number of environments, apps, cloud flows, and bots that are in use. To take full advantage of this new insight, this document provides guidance and suggestions for implementing effective tenant hygiene and robust governance, based on the most common scenarios encountered.
-
-- OR (stjeffer) - which intro is better?
-
 The natural expansion of the Microsoft Power Platform can sometimes conflict with an organization's established strategies, such as their environment strategy. This can make it difficult for Center of Excellence (CoE) teams to fully understand the purpose and usage of the various apps, environments, cloud flows, and bots that are in use. To address this challenge, this guidance document offers best practices for administration and governance, as well as examples of the tooling available in the CoE Starter Kit and out-of-the-box capabilities to help CoE teams effectively manage and optimize their Power Platform solutions.
 
 ## Managing existing environments
