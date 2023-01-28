@@ -23,17 +23,17 @@ An environment is a space to store, manage, and share your organization's busine
 
 Your license determines whether you can create environments.
 
-| License | Trial | Production |
-| --- | --- | --- |
-| Microsoft 365 Plans |No | No |
-| Dynamics 365 Teams Plans   |No | No |
-| Power Apps Developer Plan   |No | No |
-| Dynamics 365 trial | Yes (one) | No|
-| Dynamics 365 Plans |Yes (one)| Yes |
-| Power Apps plan |Yes (one)| Yes |
-| Power Apps trial |Yes (one)| Yes |
-| Power Virtual Agents trial plan |Yes | No |
-| Power Virtual Agents plan | No | Yes |
+| License | Trial | Production | Developer |
+| --- | --- | --- | --- |
+| Microsoft 365 Plans |No | No | No | Yes |
+| Dynamics 365 Teams Plans   |No | No | No |
+| Power Apps Developer Plan   |No | No | Yes |
+| Dynamics 365 trial | Yes (one) | No| No |
+| Dynamics 365 Plans |Yes (one)| Yes | Yes |
+| Power Apps plan |Yes (one)| Yes | Yes |
+| Power Apps trial |Yes (one)| Yes | No |
+| Power Virtual Agents trial plan |Yes | No | No |
+| Power Virtual Agents plan | No | Yes | Yes |
 
 To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
@@ -41,17 +41,17 @@ To create an environment, all the following must be true:
 
 1. The user has a license (Yes below) that allows environment creation. This requirement is waived for Global admins and Power Platform admins.
 
-   | License | Trial | Production |
-   | --- | --- | --- |
-   | Microsoft 365 Plans |No | No |
-   | Dynamics 365 Teams Plans   |No | No |
-   | Power Apps Developer Plan   |No | No |
-   | Dynamics 365 trial | Yes (one) | No|
-   | Dynamics 365 Plans |Yes (one)| Yes |
-   | Power Apps plan |Yes (one)| Yes |
-   | Power Apps trial |Yes (one)| Yes |
-   | Power Virtual Agents trial plan |Yes | No |
-   | Power Virtual Agents plan | No | Yes |
+   | License | Trial | Production | Developer |
+   | --- | --- | --- | --- |
+   | Microsoft 365 Plans |No | No | Yes |
+   | Dynamics 365 Teams Plans   |No | No | No |
+   | Power Apps Developer Plan   |No | No | Yes |
+   | Dynamics 365 trial | Yes (one) | No| No |
+   | Dynamics 365 Plans |Yes (one)| Yes | Yes |
+   | Power Apps plan |Yes (one)| Yes | Yes |
+   | Power Apps trial |Yes (one)| Yes | No |
+   | Power Virtual Agents trial plan |Yes | No | No |
+   | Power Virtual Agents plan | No | Yes | Yes |
 
    To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
