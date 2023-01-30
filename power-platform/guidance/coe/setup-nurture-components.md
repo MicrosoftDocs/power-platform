@@ -195,7 +195,7 @@ More information:
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. Open the **More features** page and select **Maker Assessment**.
 1. This app provides a guided step by step experience through the configuration steps.
- :::image type="content" source="media/setupwizard-assessment.png" alt-text="CoE Starter Kit Setup Wizard":::
+ :::image type="content" source="media/setupwizard-assessment.png" alt-text="CoE Starter Kit Setup Wizard - Solution Assessment":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
@@ -244,7 +244,7 @@ More information:
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. Open the **More features** page and select **Pulse feedback**.
 1. This app provides a guided step by step experience through the configuration steps.
- :::image type="content" source="media/setupwizard-pulse.png" alt-text="CoE Starter Kit Setup Wizard":::
+ :::image type="content" source="media/setupwizard-pulse.png" alt-text="CoE Starter Kit Setup Wizard - Pulse Feedback":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
@@ -286,7 +286,7 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. Open the **More features** page and select **Template Catalog**.
 1. This app provides a guided step by step experience through the configuration steps.
- :::image type="content" source="media/setupwizard-template.png" alt-text="CoE Starter Kit Setup Wizard":::
+ :::image type="content" source="media/setupwizard-template.png" alt-text="CoE Starter Kit Setup Wizard - Template Catalog":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
