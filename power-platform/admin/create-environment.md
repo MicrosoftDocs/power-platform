@@ -37,7 +37,7 @@ Your license determines whether you can create environments.
 | Power Virtual Agents trial plan |Yes | No | Yes |
 | Power Virtual Agents plan | No | Yes | Yes |
 
-To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true).
 
 To create an environment, all the following must be true:
 
@@ -55,7 +55,7 @@ To create an environment, all the following must be true:
    | Power Virtual Agents trial plan |Yes | No | Yes |
    | Power Virtual Agents plan | No | Yes | Yes |
 
-   To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+   To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true).
 
 2. The tenant (or user in the case of email trials) must have the following:
 
@@ -133,7 +133,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Security group | Select a security group to restrict access to this environment. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings.](./media/new-environment-page2-enable-apps.png "Create new environment settings")
+   > ![Create new environment add database.](./media/new-environment-page2-enable-apps.png "Create new environment add database")
    
 ## Create an environment without a database 
 You can create an environment without a database and use your own data store.
@@ -161,7 +161,7 @@ You need 1GB available database capacity.
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings.](./media/new-environment-page1-nodb.png "Create new environment settings")
+   > ![Create new environment.](./media/new-environment-page1-nodb.png "Create new environment ")
 
 ## Setting an environment refresh cadence
 You can indicate how often you would prefer an environment to receive updates and features to certain Microsoft Power Platform services. You have two options to choose from after creating an environment.
