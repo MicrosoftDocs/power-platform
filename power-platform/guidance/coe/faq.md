@@ -198,10 +198,11 @@ The Dataverse connector might experience some throttling limits if the tenant ha
 
 ## Which license should I assign to the user that's running the Flows ?
 
-Part of the setup we suggest you assign the Power Automate Per User or Per Flow license. Different license type will have different API Limits and enforcements might take place. Use the following guide to avoid your flows get throttled.
+The pre-requisite for installing the CoE Starter Kit is that the user installing it has a Power Automate Per User license, or for flows to be covered with a Per Flow license - often a combination of these licenses is required to successfully run the CoE Starter Kit. The combination depends on factors like how many resources (apps, flows, environments) you have in your tenant, how many makers you have, and how often new resources are created and modified. Different Power Automate license types will have different API Limits and enforcements - if your license type is not sufficient, the flow may get throttled or run for a long time. Use the following guide to identify which license to pick.
 
-  1. Start by assign Power Automate Per user license. Typically, some of the CLEANUP flows as well as the Sync Template (Flows) and Sync Template (Apps) are often ones that make high API calls, monitor those to observe any throttle situation.
-  1. In case your Flow is being throttled, use a different user in that Flow, by using a different user you are load-balancing the API limits.
-  1. In case your Flows are continuing to be throttled, add them to a Per Flow plan, that guarantee a higher API Limit, but in some tenants, with a high number of Environments, makers, or flow/apps modifications this might not be sufficient and customization might be needed to load balance the operations.
+  1. Understand the [Power Automate request limits](/power-platform/admin/api-request-limits-allocations).
+  1. Start by assign Power Automate Per user license and turn on all the required flows. Monitor the flows with **CLEANUP**, **Sync Template (Flows)** and **Sync Template (Apps)** in the name - these often consume a high number of API requests. You can use [**action analytics**](https://powerautomate.microsoft.com/blog/introduction-action-usage-analytics-in-power-automate/) to monitor the API requests of these flows.
+  1. If the flow runs too many actions, [change the flow owner](/power-automate/change-cloud-flow-owner) to a different account with a Power Automate Per User license. This will load balance the API requests/
+  1. If the flow continues to run too many actions, assign a [Per Flow](/power-platform/admin/power-automate-licensing/types#standalone-plans) plan to this flow. This will reserve capacity and API requests for the flow.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
