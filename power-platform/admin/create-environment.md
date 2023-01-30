@@ -105,7 +105,7 @@ To create an environment with a database, you need 1GB available database capaci
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment.](./media/new-environment.png "Create new environment")
+   > ![Create a new environment.](./media/new-environment.png "Create a new environment")
 
 3. Enter the following, and then select **Next**.
 
@@ -147,7 +147,7 @@ You need 1GB available database capacity.
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment.](./media/new-environment.png "Create new environment")
+   > ![Create new environment without database.](./media/new-environment.png "Create new environment  without database")
 
 3. Enter the following, and then select **Save**.
    
