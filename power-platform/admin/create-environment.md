@@ -25,7 +25,7 @@ Your license determines whether you can create environments.
 
 | License | Trial | Production | Developer |
 | --- | --- | --- | --- |
-| Microsoft 365 Plans |No | No | No | Yes |
+| Microsoft 365 Plans |No | No | Yes |
 | Dynamics 365 Teams Plans   |No | No | Yes |
 | Power Apps Developer Plan   |No | No | Yes |
 | Dynamics 365 trial | Yes (one) | No| Yes |
