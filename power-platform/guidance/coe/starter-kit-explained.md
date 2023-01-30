@@ -49,7 +49,7 @@ We recommend becoming familiar with the CoE core components solution before you 
 
 Behind the scenes, your IT and Center of Excellence team spends time configuring, managing and nurturing the adoption of Microsoft Power Platform. Understanding how that time is spent can help you plan who you need on your team and find the highest impact opportunities to streamline the administrative effort.
 
-Admin tasks are defined in a model-driven app and insights provided in a Power BI dashboard. More information: [Use Microsoft Power Platform administration planning](admin-tasks-component)
+Admin tasks are defined in a model-driven app and insights provided in a Power BI dashboard. More information: [Use Microsoft Power Platform administration planning](admin-tasks-component.md)
 
 ### Center of Excellence - Power Platform communication site template
 
@@ -57,7 +57,7 @@ Set up your own SharePoint Hub or Teams site to share success stories, upcoming 
 
 The Power Platform communication site is a SharePoint Online template, designed to provide a starting point of content and page templates as your're setting up your internal Power Platform wiki and community site.
 
-More information: [Get starter with the Power Platform communication site template](wiki-community#get-started-with-the-power-platform-communication-site-template)
+More information: [Get starter with the Power Platform communication site template](../adoption/wiki-community.md#get-started-with-the-power-platform-communication-site-template)
 
 ### Center of Excellence – theming components
 

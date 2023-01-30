@@ -108,6 +108,8 @@
       items:
         - name: Overview
           href: coe/overview.md
+        - name: Strategies for using the CoE Starter kit
+          href: coe/after-setup-tenant-hygiene.md
         - name: Set up the CoE starter kit
           items:
             - name: Get started with setup
