@@ -1,10 +1,10 @@
 ---
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
 description: About creating and manage environments in the Power Platform admin center
-author: jimholtz
+author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/13/2023
+ms.date: 01/30/2023
 ms.subservice: admin
 ms.author: kvivek
 search.audienceType: 
@@ -14,6 +14,8 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+contributors:
+  - marcelbf
 ---
 # Create and manage environments in the Power Platform admin center
 

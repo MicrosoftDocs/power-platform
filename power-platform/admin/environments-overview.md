@@ -1,12 +1,12 @@
 ---
 title: Environments overview | Microsoft Docs
 description: Learn about Power Platform environments and how to use them.
-author: jimholtz
+author: Mattp123
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 11/04/2022
+ms.date: 01/30/2023
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: matp
 search.audienceType: 
   - admin
 search.app:
@@ -14,6 +14,8 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+contributors:
+  - marcelbf
 ---
 # Environments overview
 
