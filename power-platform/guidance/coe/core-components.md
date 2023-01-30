@@ -3,7 +3,7 @@ title: "Core components | MicrosoftDocs"
 description: "The CoE Starter Kit core components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment."
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 12/07/2022
+ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz

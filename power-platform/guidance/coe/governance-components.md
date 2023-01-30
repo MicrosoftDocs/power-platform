@@ -5,7 +5,7 @@ author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2021
+ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz

@@ -6,7 +6,7 @@ manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -31,6 +31,7 @@ This article will help you to setup the remaining components in the Core solutio
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. Open the **More features** page and select **Capacity alerts and Welcome email**.
 1. This app provides a guided step by step experience through the configuration steps.
+ :::image type="content" source="media/setupwizard-other.png" alt-text="CoE Starter Kit Setup Wizard":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
@@ -65,7 +66,6 @@ Share the [**App Catalog**](core-components.md#app-catalog) with your end users 
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## All environment variables
 

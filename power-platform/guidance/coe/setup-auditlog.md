@@ -31,7 +31,7 @@ The Center of Excellence (CoE) Starter Kit will work without this flow, but the 
 ## Before you use the audit log connector
 
 1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide)
-1. The user identity running the flow must have permission to the audit logs. Minimum permissions for this described here: [Before you search the audt logs](https://learn.microsoft.com/microsoft-365/compliance/audit-log-search?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log)
+1. The user identity running the flow must have permission to the audit logs. Minimum permissions for this described here: [Before you search the audit logs](/microsoft-365/compliance/audit-log-search?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log)
 1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 1. A Global Admin is required to configure the Azure AD app registration.
 
@@ -185,12 +185,13 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. [Remove the unmanaged layer](after-setup.md) from the **\[Child\] Admin | Sync Logs**.
 1. Select the **\[Child\] Admin | Sync Logs**.
 1. Edit the **Run only users** settings.
+   :::image type="content" source="media/coe49.png" alt-text="Child flow - run only users.":::
 
-   ![Child flow - run only users.](media/coe49.png "Child flow - run only users")
+1. For the  Office 365 Management API custom connector and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
+   :::image type="content" source="media/coe50.png" alt-text="Configure run only users.":::
 
-1. For the  Office 365 Management API custom connector, Dataverse and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
-
-   ![Configure run only users.](media/coe50.png "Configure run only users")
+1. For the Microsoft Dataverse connector, leave the run-only permission value blank and confirm that the connection reference for the **CoE Audit Logs - Dataverse** connection is configured correctly. If the connection is showing an error, [update the connection reference](faq.md#update-connection-references) for the **CoE Audit Logs - Dataverse** connection reference.
+   :::image type="content" source="media/auditlogdv.png" alt-text="Confirm Dataverse connection reference is set to your account.":::
 
 1. Select **Save**, and then close the **Flow details** tab.
 

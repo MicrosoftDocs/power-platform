@@ -6,7 +6,7 @@ manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/21/2022
+ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -181,12 +181,11 @@ There are several flows which will need to be turned on for the training in a da
 The training in a day components consist of two apps:
 
 - [**Nurture apps - Admin**](nurture-components.md#nurture-apps---admin) app for training organizers to view and manage events and registrations. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
-- [**Nurture apps - Maker**](nurture-components.md#training-in-a-day--registration) app for attendees to register to training events. Share this app with your makers, and assign them the Power Platform Maker SR security role.
+- [**Nurture apps - Maker**](nurture-components.md#training-in-a-day-pages-in-nurture-apps---maker-app) app for attendees to register to training events. Share this app with your makers, and assign them the Power Platform Maker SR security role.
 
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Set up maker assessment components
 
@@ -213,7 +212,7 @@ More information:
 
 #### Import starter data set for the Maker Assessment app
 
-Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
+Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#solution-assessment-page-in-nurture-apps---maker-apps) app. You can add your own questions or customize the existing ones using the admin app for this solution.
 
 #### Turn on flow
 
@@ -227,13 +226,12 @@ Run the **Add Maker Assessment Starter Data** flow once to add starter data for 
 
 The maker assessment components consist of two apps:
 
-- [**Nurture apps - Admin**](nurture-components.md#maker-assessment-admin-app) app for admins to manage assessment questions. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
-- [**Nurture apps - Maker**](nurture-components.md#maker-assessment) app for makers to complete assessments. Share this app with your makers, and assign them the Power Platform Maker SR security role.
+- [**Nurture apps - Admin**](nurture-components.md#nurture-apps---admin) app for admins to manage assessment questions. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
+- [**Nurture apps - Maker**](nurture-components.md#solution-assessment-page-in-nurture-apps---maker-apps) app for makers to complete assessments. Share this app with your makers, and assign them the Power Platform Maker SR security role.
 
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Set up Pulse feedback survey
 
@@ -310,12 +308,11 @@ If you have existing templates that you'd like to share with your makers (for ex
 
 The template catalog components consist of one apps:
 
-- [**Nurture apps - Maker**](nurture-components.md#template-catalog) app for makers and end users to browse available templates. Share this app with end users, and assign them the Power Platform User SR security role.
+- [**Nurture apps - Maker**](nurture-components.md#template-catalog-page-in-nurture-apps---maker-app) app for makers and end users to browse available templates. Share this app with end users, and assign them the Power Platform User SR security role.
 
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Set up product newsletter
 
@@ -346,52 +343,3 @@ Environment variables are used to store application and flow configuration data 
 To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
-<!--## Import starter data set for the Maker Assessment app
-
-Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
-
-### Upload starter data to SharePoint Online
-
-The initial set of assessment questions is provided in an Excel spreadsheet.
-
-1. Upload the **MakerAssessmentStarterData.xlsx** file to the Documents library of a SharePoint site in your tenant. You will find this file in the initial download of the CoEStarterKit.zip. 
-
-1. Note down the document library URL in this format, including the prefix and the trailing slash: [https://mytenant.sharepoint.com/sites/TargetSite/Shared%20Documents/](https://mytenant.sharepoint.com/sites/TargetSite/Shared%20Documents/)
-
-This file is only needed once for import, and can be deleted after the dataflow runs.
-
-### Update and run the Dataflow to load initial data into Dataverse
-
-Now load the initial data from SharePoint Online into Dataverse using a Dataflow:
-
-1. In your CoE environment, browse to **Data > Dataflows**, and edit the **Maker Assessment Starter Dataflow**
-   ![Edit the Dataflow.](media/MakerJourneyDataSetup1.png "Edit the Dataflow")
-
-1. Select **SPFolder** under Queries. Enter the document library you have uploaded the file to, including prefix and trailing slash.
-   ![Update the parameter with your SharePoint document library.](media/MakerJourneyDataSetup2.png "Update the parameter with your SharePoint document library")
-
-1. Select **assessmentCategoriesTable** under Queries and select **Configure connection**
-   ![Configure the connection for the dataflow.](media/MakerJourneyDataSetup3.png "Configure the connection for the dataflow")
-
-1. Choose an existing connection or create a new one and select **Connect**
-
-   ![Choose connection for the dataflow to connect to SharePoint.](media/MakerJourneyDataSetup5.png "Choose connection for the dataflow to connect to SharePoint")
-
-1. Data should now be loaded into the editor. If you see a connection error instead, make sure the **SPFolder** parameter is correct. Select **Next**.
-
-   ![Initial data will be loaded into the table view.](media/MakerJourneyDataSetup6.png "Initial data will be loaded into the table view")
-
-1. Select **Next** without changing any default setting.
-
-   ![Select Next without changing any default settings.](media/MakerJourneyDataSetup7.png "Select Next without changing any default settings")
-
-1. Select **Publish now** to create the Dataflow.
-
-1. Wait while the Dataflow refresh is in progress.
-
-   ![Wait while the Dataflow refresh is in progress.](media/MakerJourneyDataSetup9.png "Wait while the Dataflow refresh is in progress")
-
->[!TIP]
->If you see connection error, please select **Refresh** as the connection may not have resolved in time for the initial load:
-   ![Error.](media/MakerJourneyDataSetup10.png "Error")-->
