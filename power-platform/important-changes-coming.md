@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 11/08/2022
+ms.date: 01/13/2023
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
@@ -21,13 +21,13 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Model-driven app controls deprecation (2023 Release Wave 1)
+## Model-driven app controls deprecation
 
-With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in April 2023), these controls for model-driven apps will be deprecated; auto-complete, input mask, multimedia player, number input, option set, and star rating.
+Effective January 2023, the following controls for model-driven apps are deprecated: auto-complete, input mask, multimedia player, number input, option set, and star rating.
 
 #### Why is this needed? 
 
--   We will be introducing new Fluent controls which have better usability, accessibility and dark mode support. 
+We will be introducing new Fluent UI controls that have better usability, accessibility, and dark mode support. 
 
 #### Impact
 
@@ -36,7 +36,7 @@ With the upcoming 2023 release wave 1 (public preview in February 2023 and GA in
 
 #### Action required by you
 
-- Evaluate existing forms that include a deprecated control and replace them with a newer control.
+Evaluate existing forms that include a deprecated control and replace them with a newer control.
 
 ## Microsoft Dataverse (legacy) connector (CDS 2.0 connector) for Power Automate flows will be deprecated and replaced with another connector
 
@@ -125,7 +125,7 @@ On June 20, 2022 [Power Apps for Windows](https://apps.microsoft.com/store/detai
 
 ## Data Export Service deprecation
 
-Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on will not be available for download for new customers. Existing customers will be able to download and use this add-on from AppSource. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
+Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on will not be available for download for all customers. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
 
 ## Dataverse OData v2.0 Service removal
 

@@ -10,6 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.custom: "publication, authoring, ceX, teams"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -85,7 +86,7 @@ After you have published a bot, you can add the bot to your own version of Micro
 > [!IMPORTANT]
 > New content in a freshly published bot won't appear in conversations that are currently ongoing. After 30 minutes of idle time, the bot will be updated.  
 >
-> You can type *Start over* in an existing conversation to start a new conversation right away and see the latest updates to the bot.
+> You can type _Start over_ in an existing conversation to start a new conversation right away and see the latest updates to the bot.
 
 You should add your bot to your own version of Teams before sharing it with others.
 

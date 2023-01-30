@@ -10,11 +10,9 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtualagent
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
-
-
-
 
 # Extend your bot with Bot Framework Composer
 

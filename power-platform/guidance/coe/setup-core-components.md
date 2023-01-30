@@ -30,9 +30,9 @@ The flows in this solution sync all your resources into tables and build admin a
 
 ### Import Creator Kit
 
-The CoE Starter Kit includes features that required the installation of the [Creator Kit](/power-platform/guidance/creator-kit/overview) in the environment where you install the CoE Starter Kit.
+The CoE Starter Kit includes features that required the installation of the [Creator Kit](../creator-kit/overview.md) in the environment where you install the CoE Starter Kit.
 
-[Install the Creator Kit](/power-platform/guidance/creator-kit/setup) before proceeding.
+[Install the Creator Kit](../creator-kit/setup.md) before proceeding.
 
 ### Create connections
 
@@ -134,20 +134,20 @@ The import can take up to 15 minutes to be completed.
 
 There are several child flows, check to make sure all of these flows are on:
 
-1. HELPER – Send Email
-1. HELPER – Maker Check
-1. HELPER – CloudFlowOperations
-1. HELPER – CanvasAppOperations
-1. HELPER – ObjectOperations
+1. HELPER - Send Email
+1. HELPER - Maker Check
+1. HELPER - CloudFlowOperations
+1. HELPER - CanvasAppOperations
+1. HELPER - ObjectOperations
 1. CLEANUP HELPER - Check Deleted (Ai Models)
 1. CLEANUP HELPER - Check Deleted (Business Process Flows)
-1. CLEANUP HELPER – Check Deleted (Canvas Apps)
-1. CLEANUP HELPER – Check Deleted (Cloud Flows)
-1. CLEANUP HELPER – Check Deleted (Custom Connectors)
-1. CLEANUP HELPER – Check Deleted (Model Driven Apps)
-1. CLEANUP HELPER – Check Deleted (PVA)
+1. CLEANUP HELPER - Check Deleted (Canvas Apps)
+1. CLEANUP HELPER - Check Deleted (Cloud Flows)
+1. CLEANUP HELPER - Check Deleted (Custom Connectors)
+1. CLEANUP HELPER - Check Deleted (Model Driven Apps)
+1. CLEANUP HELPER - Check Deleted (PVA)
 1. CLEANUP HELPER - Check Deleted (Solutions)
-1. CLEANUP HELPER – Power Apps User Shared With
+1. CLEANUP HELPER - Power Apps User Shared With
 
 If you get a connection authorization error turning on a flow, you might need to set the [run-only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
 
@@ -217,7 +217,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - CLEANUP - Admin | Sync Template v3 (PVA Usage)
 
 >[!NOTE]
-> To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 12 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
+> To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 15 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
 
 The first run of these flows will perform a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
 

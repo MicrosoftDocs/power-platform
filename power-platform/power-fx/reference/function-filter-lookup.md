@@ -4,7 +4,7 @@ description: Reference information including syntax and examples for the Filter,
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 02/05/2017
 ms.subservice: power-fx
 ms.author: gregli
@@ -14,7 +14,7 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
 ---
 
 # Filter, Search, and LookUp functions in Power Apps
