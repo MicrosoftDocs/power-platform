@@ -40,7 +40,7 @@ The core components solution is required for the nurture components solution to 
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. Open the **More features** page and select **Video hub**.
 1. This app provides a guided step by step experience through the configuration steps.
-   :::image type="content" source="media/setupwizard-vide.png" alt-text="CoE Starter Kit Setup Wizard":::
+   :::image type="content" source="media/setupwizard-vide.png" alt-text="CoE Starter Kit Setup Wizard - Video hub":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
@@ -141,7 +141,7 @@ Comments have the following schema:
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. Open the **More features** page and select **Training in a day**.
 1. This app provides a guided step by step experience through the configuration steps.
-   :::image type="content" source="media/setupwizard-training.png" alt-text="CoE Starter Kit Setup Wizard":::
+   :::image type="content" source="media/setupwizard-training.png" alt-text="CoE Starter Kit Setup Wizard - Training in a day":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
@@ -180,7 +180,7 @@ There are several flows which will need to be turned on for the training in a da
 
 The training in a day components consist of two apps:
 
-- [**Nurture apps - Admin**](nurture-components.md#training-in-a-day--management) app for training organizers to view and manage events and registrations. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
+- [**Nurture apps - Admin**](nurture-components.md#nurture-apps---admin) app for training organizers to view and manage events and registrations. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
 - [**Nurture apps - Maker**](nurture-components.md#training-in-a-day--registration) app for attendees to register to training events. Share this app with your makers, and assign them the Power Platform Maker SR security role.
 
 More information:

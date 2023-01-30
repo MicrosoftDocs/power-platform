@@ -81,7 +81,7 @@ Currently, internal (Stream) videos, and external (YouTube) are the only two typ
 | Flow | Type | Schedule | Description |
 | --- | --- | --- | --- |
 | Training in a Day \| Feedback Reminder | Schedule | Daily | Sends an email to attendees of a training event on the day, and requests feedback. |
-| Training in a Day \| Registration Confirmation Automated | Automated | when a user registers for an event using the [Training in a day](#training-in-a-day--registration) app | Sends an email to attendees of a training event on the day, and requests feedback. |
+| Training in a Day \| Registration Confirmation Automated | Automated | when a user registers for an event using the [Training in a day](#training-in-a-day-pages-in-nurture-apps---maker-app) app | Sends an email to attendees of a training event on the day, and requests feedback. |
 | Training in a Day \| Reminder 3 days prior to event | Schedule | Daily | Sends a reminder email to an attendee of a Training in a Day event three days before the event. |
 
 ### Apps

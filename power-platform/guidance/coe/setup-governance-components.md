@@ -35,6 +35,7 @@ This set of functionality allows you to detect frequently used apps and chatbots
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. Open the **More features** page and select **Compliance process**.
 1. This app provides a guided step by step experience through the configuration steps.
+        :::image type="content" source="media/setupwizard-compliance.png" alt-text="CoE Starter Kit Setup Wizard":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
@@ -88,7 +89,6 @@ The Governance Components solution contains the [**Developer Compliance Center**
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 Your app, flow, and bot makers will use the Developer Compliance Center app to provide further information about the resources they're building. Get familiar with the [audit process](example-processes.md) and share the app with your makers.
 

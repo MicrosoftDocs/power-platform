@@ -108,7 +108,7 @@ Your first check before installing the upgrade is removing unmanaged layers from
 >[!NOTE]
 >You may have unknowingly created an unmanaged layer by selecting **Edit** to look at flow actions or by modifying the run-only properties of the flow.
 
-You can check for unmanaged layers on the inventory flows using the [Coe Admin Command Center](core-components.md#admin---command-center) app.
+You can check for unmanaged layers on the inventory flows using the [Coe Admin Command Center](core-components.md#coe-admin-command-center) app.
 
 >[!NOTE]
 >The [feature described below](https://github.com/microsoft/coe-starter-kit/issues/2108) was made available with the April 2022 release of the CoE Starter Kit, and requires the April or [later release](https://github.com/microsoft/coe-starter-kit/releases) to be installed.

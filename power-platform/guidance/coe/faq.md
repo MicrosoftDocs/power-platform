@@ -44,7 +44,7 @@ This article will provide you with answers to frequently asked questions and tip
 
     ![Find the setting for run-only users.](media/tips-flow2.png "Find the setting for run-only users")
 
-1. You'll see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**.
+1. You'll see all the connections in the child flow. For each one except Microsoft Dataverse, change the value to **Use this connection (userPrincipalName\@company.com)**. For Microsoft Dataverse, leave the value blank.
 1. If there's no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
 
     ![Configure run-only users.](media/tips-flow1.png "Configure run only users")
@@ -95,7 +95,7 @@ The following limitations apply when updating environment variables:
 - You can't update the values for environment variables from within the imported solution.
 - You need to always add or update a current value, not the default value, because the default value will be overwritten when you install an upgrade.
 
-To update environment variables, you can use the [CoE Admin Command Center](core-components.md#admin---command-center)
+To update environment variables, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center)
 
 1. Go to [make.powerapps.com](https://make.powerapps.com), and then select your CoE environment
 1. Open the **CoE Admin Command Center** app.
@@ -103,17 +103,27 @@ To update environment variables, you can use the [CoE Admin Command Center](core
 
     ![Update environment variable values in the CoE Admin Command Center app.](media/tips-command1.png "Update environment variable values in the CoE Admin Command Center app")
 
-If you aren't using the [CoE Admin Command Center](core-components.md#admin---command-center) app, do the following to update environment variables:
+If you aren't using the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, do the following to update environment variables:
 
-1. If you've installed the solution in a production environment, do the following:
-   1. Go to [Power Automate](https://make.powerautomate.com).
-   1. On the left pane, select **Solutions**.
-   1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
-   1. Select a variable that you want to update, and then configure its **Current Value**.
+1. Go to [Power Automate](https://make.powerautomate.com).
+1. On the left pane, select **Solutions**.
+1. Select the **Default Solution**, and change the filter to show **Environment variables**.
+1. Select a variable that you want to update, and then configure its **Current Value**.
+
+## Update connection references
+
+1. Go to [Power Automate](https://make.powerautomate.com).
+1. On the left pane, select **Solutions**.
+1. Select the **Default Solution**, and change the filter to show **Connection References**.
+1. Select a connection reference.
+1. Set the value by selecting an existing connection from the drop down or creating a new one.
+1. Select **Save** and confirm you want to save the changes.
 
 ## Which flows in the CoE Starter Kit send emails or notifications to makers or end users?
 
 There are a number of processes in the CoE Starter Kit that send emails or notifications to makers and end users. Each processes is off by default and has to be opted in by configuring it. Each process is described in the [What's in the kit](starter-kit-explained.md) section, the list below provides a summary of the different processes that communicate with your makers and end users.
+
+Use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) to update the email subject and body.
 
 - [Welcome email](core-components.md#flows-2) sends a welcome email to a maker if they create an app, flow, bot etc for the first time.
 

@@ -224,11 +224,11 @@ The first run of these flows will perform a full inventory of every Power Platfo
 ## Set up the CoE Admin Command Center App
 
 >[!IMPORTANT]
-> Only complete these steps if you want to review Power Platform–related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the **[CoE Admin Command Center](core-components.md#admin---command-center)** canvas app. The **CoE Admin Command Center** app can be used without this configuration.
+> Only complete these steps if you want to review Power Platform–related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the **[CoE Admin Command Center](core-components.md#coe-admin-command-center)** canvas app. The **CoE Admin Command Center** app can be used without this configuration.
 
 ### Create an Azure AD app registration to connect to Microsoft Graph
 
-The [CoE Admin Command Center](core-components.md#admin---command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates.
+The [CoE Admin Command Center](core-components.md#coe-admin-command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates.
 
 Using these steps, you'll set up an Azure AD app registration that will be used in a cloud flow to connect to the Graph API. More information: [Use the Microsoft Graph API](/graph/use-the-api)
 
@@ -301,18 +301,17 @@ The core components solution contains apps designed to give admins better visibi
 
 Share these apps with other Power Platform admins and assign them the **Power Platform Admin SR** security role:
 
-- [CoE Admin Command Center](core-components.md#admin---command-center)
+- [CoE Admin Command Center](core-components.md#coe-admin-command-center)
 - [DLP Editor v2](core-components.md#dlp-editor-v2)
 - [Power Platform Admin View](core-components.md#power-platform-admin-view)
 - [Set App Permissions](core-components.md#set-app-permissions)
 - [Set Flow Permissions](core-components.md#set-flow-permissions)
 
-Take a look at the [CoE Admin Command Center](core-components.md#admin---command-center) app, which is your central place to open all CoE Starter Kit apps from.
+Take a look at the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, which is your central place to open all CoE Starter Kit apps from.
 
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Wait for flows to finish
 
@@ -320,7 +319,7 @@ After the sync flows have finished running, you're ready to use many of the feat
 
 The first run of the inventory can take a few hours depending on the number of environments and resources in your tenants. Future runs will be faster, because they'll only look at new and modified resources.
 
-**To check the status of a flow**
+### To check the status of a flow
 
 1. Select **Admin \| Sync Template v3**.
 

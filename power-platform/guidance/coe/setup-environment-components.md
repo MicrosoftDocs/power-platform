@@ -33,6 +33,7 @@ This article will help you to set up the environment request components of the c
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. Open the **More features** page and select **Environment Request management**.
 1. This app provides a guided step by step experience through the configuration steps.
+        :::image type="content" source="media/setupwizard-env.png" alt-text="CoE Starter Kit Setup Wizard":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
@@ -45,7 +46,7 @@ This article will help you to set up the environment request components of the c
 
 | Name | Description |
 |------|---------------|
-|Environment Request Admin App Url | Update this environment variable with the URL for the Admin - Environment Request canvas app. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Teams environment](faq.md#add-apps-to-microsoft-teams) |
+|Environment Request Admin App Url | Update this environment variable with the URL for the Admin - Environment Request canvas app. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) |
 
 ### Turn on flows
 
@@ -71,7 +72,6 @@ The environment request components consist of two apps:
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## All environment variables
 
@@ -79,7 +79,7 @@ This section includes the full list of environment variables that affect the env
 
 | Name | Description | Default value
 |------|---------------|------|
-|Environment Request Admin App Url | Update this environment variable with the URL for the Admin - Environment Request canvas app. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Microsoft Teams environment](faq.md#add-apps-to-microsoft-teams) | None |
+|Environment Request Admin App Url | Update this environment variable with the URL for the Admin - Environment Request canvas app. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) | None |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
