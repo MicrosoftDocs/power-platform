@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 11/18/2022
+ms.date: 12/14/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -354,12 +354,6 @@ Import the solution into Dataverse.
 
 
 ### Optional Parameters
-
-#### `--activate-flows` `-af`
-
-Turn on workflows specified in the deployment settings file using a specified user
-
-This parameter requires no value. It is a switch.
 
 #### `--activate-plugins` `-ap`
 
@@ -808,9 +802,10 @@ Updates build version for 'Solution.xml' file using specified strategy. If using
 
 Use one of these values:
 
-- `gittags`
-- `filetracking`
-- `solution`
+- `None`
+- `GitTags`
+- `FileTracking`
+- `Solution`
 
 [!INCLUDE [solution-version-remarks](includes/solution-version-remarks.md)]
 

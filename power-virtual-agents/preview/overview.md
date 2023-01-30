@@ -1,12 +1,14 @@
 ---
-title: "Overview of the Power Virtual Agents preview (preview)"
-description: "Overview of new features and improvements in Power Virtual Agents preview."
-ms.date: 10/10/2022
+title: Overview of the Power Virtual Agents preview (preview)
+description: Overview of new features and improvements in Power Virtual Agents preview.
+ms.date: 12/07/2022
+
 ms.topic: overview
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals, ceX, intro-internal
+ms.custom: fundamentals, ceX, intro-internal, bap-template
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
@@ -16,25 +18,22 @@ searchScope:
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-We are excited to announce the evolution of Power Virtual Agents.
+Power Virtual Agents is evolving. The new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer's "pro-code" capabilities with the simplicity of the Power Virtual Agents low-code platform. It's even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot-building studio.
 
-The new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer pro-code capabilities with the simplicity of the Power Virtual Agents low-code platform, making it even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot building studio.
+This evolution brings several exciting new features:
 
-This evolution brings new features, including:
+- A new authoring experience
 
-- Updates to authoring experience
-
-  - [Add Images / Videos / Cards to a message](authoring-send-message.md)
-  - [YAML code editor](authoring-create-edit-topics.md)
+  - [Add images, videos, and cards to a message](authoring-send-message.md)
   - [Message variations](authoring-send-message.md#use-message-variations)
   - [Quick replies](authoring-send-message.md#use-quick-replies)
   - [Speech authoring](authoring-send-message.md#use-ssml-to-customize-speech-responses)
-
+  - [YAML code editor](authoring-create-edit-topics.md)
 
 - Power FX and variable management
   - [Enhanced variable management](authoring-variables.md)
   - [Power Fx support](advanced-power-fx.md)
 
-For a guided tutorial on how to use these new features, please refer to the [quickstart](quickstart.md).
+Check out the [Quickstart](quickstart.md) for a guided tutorial on how to use the new features.
 
-The Power Virtual Agents preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of public preview](limitations.md).
+The Power Virtual Agents preview doesn't yet support some of the features you're used to in Power Virtual Agents, such as agent transfers and bot authoring in Teams. For the complete list, see [Limitations of the Power Virtual Agents preview](limitations.md).

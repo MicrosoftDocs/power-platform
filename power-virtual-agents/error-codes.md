@@ -1,15 +1,18 @@
 ---
 title: "Error Codes"
 description: "Troubleshoot error code responses from your bot."
-author: v-alarioza
-ms.author: v-alarioza
-ms.topic: troubleshooting
 ms.date: 03/07/2022
 
-ms.reviewer: clmori
+ms.topic: troubleshooting
+author: iaanw
+ms.author: iawilt
 manager: shellyha
+ms.reviewer: clmori
+ms.service: power-virtual-agents
+
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
+
 # Error codes: Power Virtual Agents
 
 [!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]

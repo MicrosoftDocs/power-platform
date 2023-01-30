@@ -26,7 +26,7 @@ With SharePoint you can store and manage documents in the context of a record on
   
 - Users sign in once, and therefore don't have to sign in to both customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
-- No another software is required to install on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
+- No other software is required to install on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] documents will display in lists.  
   

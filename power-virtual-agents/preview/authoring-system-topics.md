@@ -1,77 +1,78 @@
 ---
-title: "Use system topics in Power Virtual Agents (preview)"
-description: "Learn how system topics are used in conversations in Power Virtual Agents preview."
+title: Use system topics in Power Virtual Agents (preview)
+description: Learn how to use system topics in conversations in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 10/10/2022
+ms.date: 12/13/2022
 
-ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
+ms.topic: conceptual
+author: iaanw
+ms.author: iawilt
 manager: shellyha
-ms.custom: authoring, ceX
-ms.collection: virtual-agent
 ms.reviewer: ggupta
+ms.custom: authoring, ceX, bap-template
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Use system topics in Power Virtual Agents (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-System topics are built-in topics, that help your bot respond to common system events, such as escalation, or carry out essential behavior for your bot, such as ending a conversation. You can't delete system topics but, they can be disabled.
+Unlike topics that you create, system topics are built into Power Virtual Agents. They're added to a bot automatically when you create it. System topics help your bot respond to common system events, such as escalation, or carry out essential behavior, such as ending a conversation. You can't delete system topics. You can disable ones that you don't need, however.
 
-When you first create a bot, all system topics are configured to trigger at the appropriate times, in response to related events. However, you can manually trigger system topics by [redirecting](/authoring-create-edit-topics.md#redirect-to-another-topic) to them. Some also have trigger phrases that you can customize to fit your needs.
+When you create a bot, all system topics are configured to trigger at the appropriate times, in response to related events. However, you can manually trigger system topics by [redirecting](/authoring-create-edit-topics.md#redirect-to-another-topic) to them. Some also have trigger phrases that you can customize to fit your needs.
 
 > [!TIP]
-> You can edit the content and nodes within system topics, however, we recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
+> Although you can edit the content and nodes in system topics, we recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
 
-Below are the system topics included with a bot, their intended purpose, and details of when they're triggered.
+Following are the system topics that are included with a bot, their intended purpose, and details about when they're triggered.
 
 ## Conversation Start
 
-Provides an initial greeting to the user, introducing the bot and it's capabilities.
+Greets users and introduces the bot and its capabilities.
 
-**Trigger:** When a bot first engages with a user in conversation.
+Triggers when a bot first engages with a user in conversation.
 
 ## End of Conversation
 
-Confirms with the customer if their query has been answered.
+Confirms with customers that their query has been answered.
 
-**Trigger:** When manually redirected to. You should call this topic from your custom topics when you're ready to end a conversation.
+Triggers when redirected to. You should call this topic from your custom topics when you're ready to end a conversation.
 
 ## Escalate
 
-Sends a message to the customer with information of how they can speak to a real person.
+Informs customers about how they can speak to a human.
 
-**Trigger:** When a trigger phrase is matched (such as "talk to agent") OR when the Escalate system event is triggered, such as when a [Question node](authoring-ask-a-question.md#configure-question-behavior) is configured to escalate if it does not receive a valid answer from a customer.
+Triggers when a trigger phrase such as "talk to agent" is matched or when the Escalate system event is triggered. For example, [**Question** nodes](authoring-ask-a-question.md#configure-question-behavior) can be configured to escalate if they don't receive a valid answer from the customer.
 
 ## Fallback
 
-Informs the user that their query could not be matched to a topic and asks them to try again.
+Informs users that their query couldn't be matched to a topic and asks them to try again.
 
-**Trigger:** When the bot cannot match the user's message to an topic
+Triggers when the bot can't match the user's message to a topic.
 
 ## Multiple Topics Matched
 
-Prompts the user to choose their intended topic and sets a system variable to determine which topic is ultimately triggered.
+Prompts users to choose their intended topic and sets a system variable to identify the topic that's ultimately triggered.
 
-**Trigger:** When a user's message closely matches multiple topics.
+Triggers when a user's message closely matches multiple topics.
 
 ## Reset Conversation
 
 Resets the conversation by clearing variable values and forcing the bot to use the latest published bot content.
 
-**Trigger:** When manually redirected to.
+Triggers when redirected to.
 
 ## On Error
 
-Sends a message to inform the user that an error has occurred, including an error code, conversation ID, and error time, which can be used later for debugging. If the bot is being used within the test bot pane, a more detailed error message is also included to help the bot author diagnose the issue. See [Troubleshoot error codes](error-codes.md).
+Informs customers that an error has occurred. The message includes an error code, the conversation ID, and the error timestamp, which can be used later for debugging. If the conversation is taking place in the Test bot pane, a more detailed error message is also included to help the bot author diagnose the issue. Learn how to [troubleshoot error codes](error-codes.md).
 
-**Trigger:** When an error occurs during the conversation.
+Triggers when an error occurs during the conversation.
 
 ## Signin
 
-Prompts the user to sign in when user authentication is enabled. For more information, see [Add end-user authentication](advanced-user-authentication.md)
+Prompts customers to sign in when user authentication is enabled. Learn how to [add user authentication](advanced-user-authentication.md).
 
-**Trigger:** At the beginning of the conversation when sign in is required, or when the conversation reaches a node that uses authentication variables.
+Triggers at the beginning of the conversation when users are required to sign in, or when the conversation reaches a node that uses authentication variables.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

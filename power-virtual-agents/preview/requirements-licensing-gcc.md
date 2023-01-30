@@ -1,15 +1,15 @@
 ---
-title: "Understand the US Government plans available (preview)"
-description: "This document lists the capabilities, requirements, and features for US Government plans in Power Virtual Agents preview."
+title: Power Virtual Agents for US Government customers (preview)
+description: Learn about the capabilities, requirements, and features for US Government plans in Power Virtual Agents preview."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 12/02/2021
-
-ms.topic: article
+ms.date: 12/07/2022
+ms.topic: concept
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "licensing, admin, ceX"
+ms.custom: licensing, admin, ceX, bap-template
 ms.collection: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 # Power Virtual Agents for US Government customers (preview)
@@ -17,4 +17,4 @@ ms.collection: virtual-agent
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-This feature is available in the preview and has not changed. For more information, see [Power Virtual Agents for US Government customers (production)](../requirements-licensing-gcc.md).
+This feature is available in the preview and hasn't changed. For more information, see [Power Virtual Agents for US Government customers (production)](../requirements-licensing-gcc.md).

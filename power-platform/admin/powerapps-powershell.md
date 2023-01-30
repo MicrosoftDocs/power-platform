@@ -2,10 +2,10 @@
 title: PowerShell support | Microsoft Docs
 description: Description of the different PowerShell cmdlets and a walkthrough of how to install and run them.
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 09/06/2022
+ms.date: 01/20/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -438,9 +438,6 @@ Get-AdminPowerAppConnector
 Returns a list of all custom connector details in the tenant. Does not return custom connectors that are in a solution. This is a known limitation.
 
 ### Data loss prevention (DLP) policy commands 
-
-> [!NOTE]
-> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center are currently in public preview. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in public preview. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](/connectors/)
 
 These cmdlets control the DLP policies on your tenant.
 
