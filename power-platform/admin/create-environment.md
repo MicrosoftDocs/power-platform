@@ -26,13 +26,13 @@ Your license determines whether you can create environments.
 | License | Trial | Production | Developer |
 | --- | --- | --- | --- |
 | Microsoft 365 Plans |No | No | No | Yes |
-| Dynamics 365 Teams Plans   |No | No | No |
+| Dynamics 365 Teams Plans   |No | No | Yes |
 | Power Apps Developer Plan   |No | No | Yes |
-| Dynamics 365 trial | Yes (one) | No| No |
+| Dynamics 365 trial | Yes (one) | No| Yes |
 | Dynamics 365 Plans |Yes (one)| Yes | Yes |
 | Power Apps plan |Yes (one)| Yes | Yes |
-| Power Apps trial |Yes (one)| Yes | No |
-| Power Virtual Agents trial plan |Yes | No | No |
+| Power Apps trial |Yes (one)| Yes | Yes |
+| Power Virtual Agents trial plan |Yes | No | Yes |
 | Power Virtual Agents plan | No | Yes | Yes |
 
 To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
@@ -44,13 +44,13 @@ To create an environment, all the following must be true:
    | License | Trial | Production | Developer |
    | --- | --- | --- | --- |
    | Microsoft 365 Plans |No | No | Yes |
-   | Dynamics 365 Teams Plans   |No | No | No |
+   | Dynamics 365 Teams Plans   |No | No | Yes |
    | Power Apps Developer Plan   |No | No | Yes |
-   | Dynamics 365 trial | Yes (one) | No| No |
+   | Dynamics 365 trial | Yes (one) | No| Yes |
    | Dynamics 365 Plans |Yes (one)| Yes | Yes |
    | Power Apps plan |Yes (one)| Yes | Yes |
-   | Power Apps trial |Yes (one)| Yes | No |
-   | Power Virtual Agents trial plan |Yes | No | No |
+   | Power Apps trial |Yes (one)| Yes | Yes |
+   | Power Virtual Agents trial plan |Yes | No | Yes |
    | Power Virtual Agents plan | No | Yes | Yes |
 
    To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
