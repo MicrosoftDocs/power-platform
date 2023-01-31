@@ -21,7 +21,7 @@ contributors:
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="SubwayNav"::: control
+# :::no-loc text="SubwayNav"::: control (preview)
 
 A control used to guide users through a process.
 
