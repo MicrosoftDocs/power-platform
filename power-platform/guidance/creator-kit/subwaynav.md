@@ -35,35 +35,36 @@ The `SubwayNav` control allows you to visualize the steps required for a given w
 
 This code component provides a wrapper around a forked version of the [Office 365 Admin Control `SubwayNav`](https://admincontrolsdemoapps.blob.core.windows.net/release/admin-controls/45.0.2/index.html#/examples/subwaynav). 
 
-> [!WARNING]
+> [!IMPORTANT]
 > **Do not open bugs with the Admin Controls team** - always submit issues to the Creator Kit Github Repository at [aka.ms/creatorkit/bug](https://aka.ms/creatorkit/bug).
-
-Always report bugs
 
 
 ## Key properties
 
 | Name                 | Description | 
 |----------------------|-------------|
-| `Items`        | The table of Items (steps) to render |
+| `Items`        | The table of Items (steps) to render (see `Items` table schema below). |
 | `WizardCompleteorError` | Shown as "SubwayNav state" |
 
 ### `Items` table properties
+
+Each object in the `Items` input table must use the following properties to render correctly:
+
 | Name                   | Description |
 |------------------------|-------------|
 | `ItemLabel`            | Label for the step |
 | `ItemKey`              | The key to use to indicate which item/step is selected. The keys must be unique. |
-| `ParentItemKey`        | ItemKey of the parent |
-| `ItemState`            | Specifying the state of the step. Supported states available: <br>
-`Current` | `NotStarted` | `Completed` | `Unsaved` | `ViewedNotCompleted` | `Error` | `CurrentWithSubSteps` | `Skipped` | `WizardComplete` |
-| `ItemDisabled`         | Whether the step is disabled |
-| `ItemVisuallyDisabled` | Whether the step is visually disabled. |
+| `ParentItemKey`        | Optional. ItemKey of the parent, used for rendering substeps. |
+| `ItemState`            | Specifying the state of the step. The following supported states are available: <br>
+`Current`, `NotStarted`, `Completed`, `Unsaved`, `ViewedNotCompleted`, `Error`, `CurrentWithSubSteps`, `Skipped`,  `WizardComplete` |
+| `ItemDisabled`         | Optional. Whether the step is disabled. |
+| `ItemVisuallyDisabled` | Optional. Whether the step is visually disabled. |
 
 ## Additional properties
 
 | Name                 | Description | 
 |----------------------| -------------|
-| `AccessibilityLabel` | Screen reader aria-label |
+| `AccessibilityLabel` | Screen reader aria-label. |
 | `InputEvent`         | An event to send to the control. E.g. `SetFocus`. See below. |
 | `Theme`              | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
 
@@ -71,7 +72,7 @@ Always report bugs
 
 - Supports [SetFocus](setfocus.md) as an `InputEvent`.
 
-Example of input collection value for Items property
+Example of input collection value for Items property:
 
 ```PowerFx
 Table(
@@ -84,7 +85,7 @@ Table(
 )
 ```
 
-To get the selected step by the user, use the `OnSelect` or `OnChange` property.
+To get the selected step by the user, use the `OnSelect` or `OnChange` property of the `SubwayNav` control.
 
 Example code:
 
