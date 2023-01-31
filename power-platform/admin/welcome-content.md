@@ -23,12 +23,12 @@ search.app:
 >This is a preview feature.
 >[!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
-In Managed Environments, admins can provide makers with thier own customized content to help makers get started with [Power Apps](https://make.powerapps.com). When you enable your own welcome content, it will replace the default Power Apps first-time help experience for makers. 
+In Managed Environments, admins can provide customized welcome content to help makers get started with [Power Apps](https://make.powerapps.com). When you add your own  help content, it replaces the default Power Apps first-time help experience for makers. 
 
 > [!div class="mx-imgBorder"] 
 > ![Welcome content for makers.](media/welcome/maker-welcome-1.png "Welcome content for makers") 
 
-## Enable welcome content
+## Add welcome content
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
