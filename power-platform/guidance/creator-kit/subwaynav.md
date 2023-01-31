@@ -55,8 +55,7 @@ Each object in the `Items` input table must use the following properties to rend
 | `ItemLabel`            | Label for the step |
 | `ItemKey`              | The key to use to indicate which item/step is selected. The keys must be unique. |
 | `ParentItemKey`        | Optional. ItemKey of the parent, used for rendering substeps. |
-| `ItemState`            | Specifying the state of the step. The following supported states are available: <br>
-`Current`, `NotStarted`, `Completed`, `Unsaved`, `ViewedNotCompleted`, `Error`, `CurrentWithSubSteps`, `Skipped`,  `WizardComplete` |
+| `ItemState`            | Specifying the state of the step. The following supported states are available:<br>`Current`, `NotStarted`, `Completed`, `Unsaved`, `ViewedNotCompleted`, `Error`, `CurrentWithSubSteps`, `Skipped`, `WizardComplete` |
 | `ItemDisabled`         | Optional. Whether the step is disabled. |
 | `ItemVisuallyDisabled` | Optional. Whether the step is visually disabled. |
 
