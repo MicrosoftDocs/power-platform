@@ -330,6 +330,8 @@
                   href: creator-kit/nav.md
                 - name: Pivot
                   href: creator-kit/pivot.md
+                - name: SubwayNav
+                  href: creator-kit/subwaynav.md
             - name: Items and Lists
               items:
                 - name: DetailsList
