@@ -19,9 +19,8 @@ search.app:
 ---
 # Enable maker welcome content (Preview)
 
->[!IMPORTANT]
->This is a preview feature.
->[!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 In Managed Environments, admins can provide customized welcome content to help makers get started with [Power Apps](https://make.powerapps.com). When you add your own  help content, it replaces the default Power Apps first-time help experience for makers. 
 
