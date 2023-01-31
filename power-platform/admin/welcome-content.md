@@ -17,21 +17,18 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Enable maker welcome content
-
-Provide makers with your own customized content to help them get started with Power Apps.
-
-> [!div class="mx-imgBorder"] 
-> ![Welcome content for makers.](media/learn/maker-welcome-1.png "Welcome content for makers") 
-
-If you're a Power Platform administrator you enable your own welcome content, it will replace the default Power Apps first-time help experience.
+# Enable maker welcome content (Preview)
 
 >[!IMPORTANT]
 >This is a preview feature.
 >[!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
-> [!NOTE]
-> This feature only works with Managed Environments. More information: [Managed Environments overview](/power-platform/admin/managed-environment-overview)
+In Managed Environments, admins can provide makers with your own customized content to help them get started with [Power Apps](https://make.powerapps.com).
+
+> [!div class="mx-imgBorder"] 
+> ![Welcome content for makers.](media/welcome/maker-welcome-1.png "Welcome content for makers") 
+
+When you enable your own welcome content, it will replace the default Power Apps first-time help experience for makers. 
 
 ## Enable welcome content
 
@@ -44,7 +41,7 @@ If you're a Power Platform administrator you enable your own welcome content, it
 4. Enter your own link to a wiki, internal site, or other reference material in the **Learn more URL** box.
 
 > [!div class="mx-imgBorder"] 
-> ![Enter your welcome content.](media/learn/maker-welcome-2.png "Enter your welcome content") 
+> ![Enter your welcome content.](media/welcome/maker-welcome-2.png "Enter your welcome content") 
  
 
 5.  Select **Preview in a new tab** to see how the text you entered, or markdown will render.
