@@ -34,8 +34,8 @@ In Managed Environments, admins can provide customized welcome content to help m
 
 2. Select **Environments** in the left navigation pane, select a managed environment, and then select **Edit Managed Environment** on the top menu bar.
 
-  > [!div class="mx-imgBorder"] 
-  > ![Edit Managed Environment.](media/welcome/edit-managed-environment.png "*Edit Managed Environment") 
+   > [!div class="mx-imgBorder"] 
+   > ![Edit Managed Environment.](media/welcome/edit-managed-environment.png "*Edit Managed Environment") 
 
 3. On the **Edit Management Environments** pane, enter your organization specific information in the text box under **Maker Welcome content** such as the exmaple below:
    
@@ -50,8 +50,8 @@ In Managed Environments, admins can provide customized welcome content to help m
        
     ```
  
-   > [!div class="mx-imgBorder"] 
-   > ![Enter your welcome content.](media/welcome/maker-welcome-2.png "Enter your welcome content") 
+    > [!div class="mx-imgBorder"] 
+    > ![Enter your welcome content.](media/welcome/maker-welcome-2.png "Enter your welcome content") 
    
 
     
