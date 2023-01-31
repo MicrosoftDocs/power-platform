@@ -22,7 +22,7 @@ search.app:
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 
-In Managed Environments, admins can provide customized welcome content to help makers get started with [Power Apps](https://make.powerapps.com). When you add your own  help content, it replaces the default Power Apps first-time help experience for makers. 
+In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com). When you add your own help content, it replaces the default Power Apps first-time help experience for makers. 
 
 > [!div class="mx-imgBorder"] 
 > ![Welcome content for makers.](media/welcome/maker-welcome-1.png "Welcome content for makers") 
