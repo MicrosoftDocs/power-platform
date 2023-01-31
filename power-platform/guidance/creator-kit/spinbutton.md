@@ -49,7 +49,7 @@ This code component provides a wrapper around the [Fluent UI Spinbutton](https:/
 | `DefaultValue` | Intial value of the control when first rendered. |
 | `Suffix` | Suffix to define any unit (e.g. cm, kg, ml) |
 
-### Additional properties
+## Additional properties
 
 | Name                 | Description | 
 |----------------------| ------------|
