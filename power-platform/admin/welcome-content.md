@@ -36,13 +36,13 @@ In Managed Environments, admins can provide customized welcome content to help t
    > [!div class="mx-imgBorder"] 
    > ![Edit Managed Environment.](media/welcome/edit-managed-environment.png "*Edit Managed Environment") 
 
-3. Enter the help contnent in the text box under **Maker Welcome content**. 
+3. Enter the help content in the text box under **Maker Welcome content**. 
  
     > [!div class="mx-imgBorder"] 
     > ![Enter your welcome content.](media/welcome/maker-welcome-2.png "Enter your welcome content") 
    
    
-    You can enter plain text or use Markdown, as in this exmaple:
+    You can enter plain text or use Markdown, as demonstrated in this example.
    
      ```
     ![Contoso](https://i.ibb.co/SNSTCx3/something.png)
@@ -67,7 +67,7 @@ In Managed Environments, admins can provide customized welcome content to help t
 
 ## First-time help experience for makers
 
-Once the maker welcome content is enabled, when a maker signs in to Power Apps, they will see the customized getting started information.
+When the welcome content is enabled, upon signing in to Power Apps, the maker will be greeted with customized getting started information.
 
    > [!div class="mx-imgBorder"] 
    > ![Maker welcome screen.](media/welcome/maker-welcome-4.png "Maker welcome screen") 
