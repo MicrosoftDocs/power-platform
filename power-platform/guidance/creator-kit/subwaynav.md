@@ -74,7 +74,7 @@ Each object in the `Items` input table must use the following properties to rend
 
 Example of input collection value for Items property:
 
-```PowerFx
+```powerapps-dot
 Table(
     { ItemKey:"1", ItemLabel:"Step 1", ItemState:"Current" },
     { ItemKey:"2", ItemLabel:"Step 2", ItemState:"Completed" },
@@ -116,13 +116,13 @@ Table(
 
 State of each item (step) changes as we select or move to different step happens internally, especially the `Current` & `CurrentWithSubStep`. The current status can be determined using Output property called `Steps`.
 
-Example code below
+Example code (referenced from the `SubwayNav` control):
 
 ```powerapps-dot
 Self.Steps
 ```
 
-Or
+Example code (referencing the steps from another control):
 
 ```powerapps-dot
 SubwayNav1.Steps
