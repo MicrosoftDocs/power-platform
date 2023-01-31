@@ -85,6 +85,14 @@ The import can take up to 15 minutes to be completed.
 1. This app provides a guided step by step experience through the configuration steps.
     :::image type="content" source="media/coesetupwizard.png" alt-text="CoE Starter Kit Setup Wizard":::
 
+#### Troubleshooting
+
+If you see an *Error Loading Control* warning when opening the Setup Wizard app, it means some of the flows required to run the wizard couldn't be turned on automatically. Navigate to the solution and turn on the following flows manually, then return to the Setup Wizard to continue the setup:
+
+1. SetupWizard>GetCurrentEnvironment
+1. SetupWizard>GetTenantID
+1. SetupWizard>GetUserDetails
+
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
