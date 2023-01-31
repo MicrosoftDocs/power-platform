@@ -23,18 +23,20 @@ search.app:
 >This is a preview feature.
 >[!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
-In Managed Environments, admins can provide makers with your own customized content to help them get started with [Power Apps](https://make.powerapps.com).
+In Managed Environments, admins can provide makers with your own customized content to help them get started with [Power Apps](https://make.powerapps.com). When you enable your own welcome content, it will replace the default Power Apps first-time help experience for makers. 
 
 > [!div class="mx-imgBorder"] 
 > ![Welcome content for makers.](media/welcome/maker-welcome-1.png "Welcome content for makers") 
-
-When you enable your own welcome content, it will replace the default Power Apps first-time help experience for makers. 
 
 ## Enable welcome content
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments** in the left navigation pane, select a managed environment, and then select **Edit Managed Environment** on the top menu bar.
+
+> [!div class="mx-imgBorder"] 
+> ![Edit Managed Environment.](media/welcome/edit-managed-environment.png "*Edit Managed Environment") 
+
 
 3. On the **Edit Management Environments** pane, enter your organization specific information under **Maker Welcome content**. For help with Markdown, see [Getting Started](https://www.markdownguide.org/getting-started/).
 
