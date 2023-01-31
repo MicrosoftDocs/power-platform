@@ -66,9 +66,9 @@ In Managed Environments, admins can provide customized welcome content to help m
    > ![Preview content.](media/welcome/maker-welcome-3.png "Preview content") 
 
 
-## First-time experience for makers
+## First-time help experience for makers
 
-Once the maker welcome content is enabled, when a maker signs in Power Apps with a managed environment, they will see the customized getting started information.
+Once the maker welcome content is enabled, when a maker signs in to Power Apps, they will see the customized getting started information.
 
    > [!div class="mx-imgBorder"] 
    > ![Maker welcome screen.](media/welcome/maker-welcome-4.png "Maker welcome screen") 
