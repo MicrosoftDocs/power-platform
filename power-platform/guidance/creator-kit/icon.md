@@ -42,9 +42,10 @@ For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/flu
 | `IconSize` | The size of the icon (pixels) |
 | `Text` | Text displayed (works for type `Action button`) |
 | `TextAlignment` | Position of the text (works for types `Action button` and `Icon only`) |
+| `Tooltip` | Text displayed in a tooltip when the user hovers over the icon. |
 
 
-### Style properties
+## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
@@ -60,16 +61,11 @@ For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/flu
 | `BorderRadius` | Roundness of the corners (works for types `Action button` and `Icon button`) |
 | `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `AccessibilityLabel` | Screen reader aria-label |
-
-### Event properties
-
-| Name | Description |
-| ------ | ----------- |
 | `InputEvent` |  An event to send to the control. |
 
 ## Behavior
 
-Supports [SetFocus](setfocus.md) as an `InputEvent`.
+- Supports [SetFocus](setfocus.md) as an `InputEvent`.
 
 ## Limitations
 
