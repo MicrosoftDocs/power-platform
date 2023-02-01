@@ -31,9 +31,7 @@ This control renders Fluent UI icons based on the name. You can use it to easily
 
 For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/fluentui#/styles/web/icons).
 
-## Properties
-
-### Key properties
+## Key properties
 
 | Property | Description |
 | -------- | ----------- |
