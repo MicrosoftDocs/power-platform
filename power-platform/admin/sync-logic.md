@@ -1,13 +1,13 @@
 ---
 title: Synchronization logic for appointments, contacts, and tasks
 description: Learn how appointments, contacts, and tasks are synchronized between Dynamics 365 and Outlook.
-author: jimholtz
+author: danamartens
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: kvivek
 search.audienceType: 
   - admin
 search.app:
