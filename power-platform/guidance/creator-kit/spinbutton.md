@@ -33,7 +33,7 @@ A control used to accept user input.
 ## Description
 A spin button (`SpinButton`) allows someone to incrementally adjust a value in small steps. It’s mainly used for numeric values, but other values are supported too.
 
-This code component provides a wrapper around the [Fluent UI Spinbutton](https://developer.microsoft.com/en-us/fluentui#/controls/web/spinbutton) control for use in canvas & custom pages.
+This code component provides a wrapper around the [Fluent UI SpinButton](https://developer.microsoft.com/en-us/fluentui#/controls/web/spinbutton) control for use in canvas & custom pages.
 
 
 ## Key properties
