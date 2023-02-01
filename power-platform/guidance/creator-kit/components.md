@@ -26,6 +26,11 @@ contributors:
 
 The following table lists the components included with the Creator Kit, and describes whether the component has Fluent UI and which app type supports it&mdash;canvas apps, custom pages, or model-driven apps.
 
+Release status key:
+- **Stable**: Stable release, recommended for production app use
+- **Preview**: Stable release but subject to change, not recommended for production app use yet
+- **Experimental**: Subject to change, not recommended for production app use
+
 | Code component | Type | Overview | Fluent UI | Canvas apps | Custom pages | Model-driven apps | Release status |
 | ---------------------------------------- | -------------- | ------------------------------------------------------------ | --------- | ----------- | ------------ | ----------------- | - |
 | [`AutoWidthLabel`](autowidthlabel.md) | User interface | Has behavior similar to the standard canvas app label, but expands dynamically in width to accommodate the text. This functionality is currently not supported in canvas apps today. | No | Yes | Yes| No | Stable |
@@ -54,10 +59,5 @@ The following table lists the components included with the Creator Kit, and desc
 | [`Spinner`](spinner.md) | User Interface | Mimics the style and behavior of the [Fluent UI `Spinner` component](https://developer.microsoft.com/fluentui#/controls/web/spinner) from inside canvas apps and custom pages. | Yes | Yes | Yes| No | Stable |
 | [`SubwayNav`](subwaynav.md) | User Interface | Provides a wrapper around the [Office 365 Admin SubwayNav](https://admincontrolsdemoapps.blob.core.windows.net/release/admin-controls/45.0.2/index.html#/examples/subwaynav) control for use in canvas & custom pages. | Yes | Yes | Yes| No | Preview |
 | [`TagList`](taglist.md) | User Interface | Provides a tag list that provides flexible-width rendering bound to a collection. | Yes | Yes | Yes| No | Stable |
-
-Release status key:
-- **Stable**: Stable release, recommended for production app use
-- **Preview**: Stable release but subject to change, not recommended for production app use yet
-- **Experimental**: Subject to change, not recommended for production app use
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
