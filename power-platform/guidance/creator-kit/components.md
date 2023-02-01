@@ -57,7 +57,7 @@ The following table lists the components included with the Creator Kit, and desc
 
 Release status key:
 - **Stable**: Stable release, recommended for production app use
-- **Preview**: Stable release but still collecting feedback, not recommended for production app use yet
-- **Experimental**: Not necessarily stable and not recommended for production app use
+- **Preview**: Stable release but subject to change, not recommended for production app use yet
+- **Experimental**: Subject to change, not recommended for production app use
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -23,6 +23,8 @@ contributors:
 
 # :::no-loc text="SpinButton"::: control (preview)
 
+[This article is pre-release documentation and is subject to change.]
+
 A control used to accept user input.
 
 > [!NOTE]
