@@ -154,7 +154,7 @@ If you get an error message telling you the PowerShell script can't be loaded as
 
 #### My tenant uses SharePoint Vanity URLs
 
-There's a few companies around the world that use vanity URLs. If you are one of these companies, make sure to hard code the URLs in the `$adminURL` & `$newSiteURL` variables in the scripts. This will make sure the script will connect to the right tenant and site.
+There are few companies around the world that use vanity URLs. If you are one of these companies, make sure to hard code the URLs in the `$adminURL` & `$newSiteURL` variables in the scripts. This will make sure the script will connect to the right tenant and site.
 
 #### Still seeing issues?
 
