@@ -1,5 +1,5 @@
 ---
-title: SpinButton control reference | Creator Kit
+title: SpinButton control reference (preview) | Creator Kit
 description: Learn about the details and properties of the SpinButton control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
@@ -29,6 +29,10 @@ A control used to accept user input.
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/SpinButton).
 
 :::image type="content" source="media/spinbutton.png" alt-text="SpinButton control.":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Description
 A spin button (`SpinButton`) allows someone to incrementally adjust a value in small steps. It’s mainly used for numeric values, but other values are supported too.

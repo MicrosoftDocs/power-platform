@@ -1,5 +1,5 @@
 ---
-title: SubwayNav control reference | Creator Kit
+title: SubwayNav control reference (preview) | Creator Kit
 description: Learn about the details and properties of the SubwayNav control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
@@ -29,6 +29,10 @@ A control used to guide users through a process.
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/SubwayNav).
 
 :::image type="content" source="media/subwaynav.png" alt-text="SubwayNav control.":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Description
 The `SubwayNav` control allows you to visualize the steps required for a given wizard. The Wizard is a component that guides users to complete predefined steps to achieve a setup or creation task.
