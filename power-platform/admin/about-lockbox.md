@@ -22,9 +22,6 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 
 This article covers how to enable Customer Lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits.
 
-> [!IMPORTANT]
-> This feature is being gradually rolled out across regions and might not be available yet in your region.
-
 ## Summary
 
 You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox will enforce the policy only for environments that are activated for [Managed Environments](managed-environment-enable.md). Global administrators and Power Platform administrators can enable the lockbox policy.
