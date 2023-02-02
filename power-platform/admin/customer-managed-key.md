@@ -13,16 +13,23 @@ ms.custom: template-how-to
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Customers have data privacy and compliance requirements to secure their data by encrypting their data at-rest. This secures the data from being exposed in an event where a copy of the database is stolen. With data encryption at-rest, the stolen database data is protected from being restored to a different server without the encryption key.
+Customers have data privacy and compliance requirements to secure their data by encrypting their data at-rest. This secures the data from being exposed in an event where a copy of the database is stolen. With data encryption at-rest, the stolen database data is protected from being restored to a different server without the encryption key. 
+All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. However, we provide customer-managed encryption key for added data protection control so customer can manage their own encryption keys. When customer-managed key is used, all customer data is encrypted with a user-provided key from your own Azure Key Vault. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
 > [!IMPORTANT]
 > This is a preview feature.
 > 
 > These encryption key operations are available with this release:
->  - Migrate key
->  - Set and apply key
->  - Revert key
->  - Change key
+> 1.	Create a RSA key from your Azure Key vault.
+> 2.	Create a Power Platform Enterprise Policy (EP) for your key.
+> 3.	Grant the Power Platform EP permission to access your key vault.
+> 4.	Grant the Power Platform service admin to read the EP.
+> 5.	Apply encryption key to your environment.
+> 6.	Revert/remove environment’s CMK encryption to Microsoft-managed key.
+> 7.	Change key by creating a new EP, removing the environment from CMK and re-apply CMK with new EP.
+> 8.	Lock CMK environments by revoking CMK key vault and/or key permissions.
+> 9.	Migrate Bring-your-own-key (BYOK) environments to CMK by applying CMK key.
+
 >
 > This feature is gradually being rolled out following this deployment schedule:
 >
