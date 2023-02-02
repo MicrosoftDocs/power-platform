@@ -50,6 +50,14 @@ Set( release, DateValue ( untyped.ReleaseDate ) );
 Set( preorder, Boolean ( untyped.AvailableForPreOrder ) );
 ```
 
+It is generally a good idea to explicitly convert an untyped object's value to a specific type, but in most cases untyped object values will convert to a specific type automatically ("coerce") when used as function parameters where the type is a simple type like boolean, number or text, and the function's parameter profile does not have potential conflicting overloads.
+
+```powerapps-dot
+Left( untyped.ItemName, 1 ); // "W"
+Radians( untyped.Quantity ); // 0.80285146
+If (untyped.AvailableForPreOrder, "Available", "Not Available" ); // "Available"
+```
+
 In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
 
 ```powerapps-dot
