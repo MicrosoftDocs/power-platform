@@ -132,10 +132,10 @@ Steps to format content in a panel:
 
     |Property|Value|
     |-|-|
-    |`X`| `cmp_panel.X` |
-    |`Y`| `cmp_panel.X` |
-    |`Width`| `cmp_panel.X` |
-    |`Height`| `cmp_panel.X` |
+    |`X`| `cmp_panel.ContentX` |
+    |`Y`| `cmp_panel.ContentY` |
+    |`Width`| `cmp_panel.ContentWidth` |
+    |`Height`| `cmp_panel.ContentHeight` |
     |`Visible`| `cmp_panel.Visible` | 
 
 ## Limitations
