@@ -182,6 +182,8 @@ While there are many additional functional differences, the fundamental differen
 
 We encourage customers to choose the tool that best suits their ALM needs. Power Platform pipelines are currently best suited for customers seeking simplicity, fast setup, and lower cost of ownership. Other tools often provide more advanced functionality and source code management. Notice other tools may also be more complicated and costly to set up, use, and maintain.
 
+### Can I use impersonation to deploy on behalf of another user?
+This is not supported.
 
 ## Next steps
 
