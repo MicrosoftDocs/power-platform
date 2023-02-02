@@ -314,6 +314,8 @@
                   href: creator-kit/resizabletextarea.md
                 - name: SearchBox (preview)
                   href: creator-kit/searchbox.md
+                - name: SpinButton (preview)
+                  href: creator-kit/spinbutton.md
             - name: Commands, Menus & Navs
               items:
                 - name: Breadcrumb
@@ -330,6 +332,8 @@
                   href: creator-kit/nav.md
                 - name: Pivot
                   href: creator-kit/pivot.md
+                - name: SubwayNav (preview)
+                  href: creator-kit/subwaynav.md
             - name: Items and Lists
               items:
                 - name: DetailsList
