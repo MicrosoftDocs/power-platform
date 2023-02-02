@@ -37,8 +37,6 @@ Panels are overlays that contain supplementary content and are used for complex 
 
 This canvas component mimics the style and behavior of the [Fluent UI Panel control](https://developer.microsoft.com/fluentui#/controls/web/Panel).
 
-[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
-
 ## Properties
 
 ### Key properties
