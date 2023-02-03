@@ -307,9 +307,7 @@ Admins who have Azure global, Dynamics 365, and Power Platform administration ro
 
 ## Manage environment's encryption
 
-### Add environments to the enterprise policy
-
-To do this task, you need the following permission:
+To manage environment's encryption, you need the following permission:
 
 - Azure AD active user who has the Power Platform and/or Dynamics 365 licenses.
 - Azure AD user who has either a global tenant admin, Power Platform or Dynamics 365 service admin role.
@@ -328,10 +326,10 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Select **Save**, and then select **Confirm**.
 
 > [!IMPORTANT]
-> The environment is disabled temporarily during this process and re-enabled to allow users to access while the encryption process continues. It can take up to 3 days to complete the encryption process.
+> The environment is disabled temporarily during this process and re-enabled to allow users to access while the encryption process continues. It can take up to a day to complete the encryption process.
+> 
  > [!NOTE]
    > During preview, you can only add non-Production environments.
-
 
 ### Remove environments from policy to return to Microsoft managed key
 
@@ -383,6 +381,15 @@ Key access revocation can be triggered by any of the following steps:
   > Note the following about environments locking:
   > Environment cannot be restored from backup.
   > Production environment is deleted if it is not unlocked after 28 days.
+
+### View the list of encrypted environments
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
+1. On the **Enterprise policies** page, click on the **Environments with policies** tab.
+1. The list of environments that were added to enterprise policies will be displayed.
+
+> [!Note]
+  > During preview, there might be situations where the **Environment status** or the **Encryption Status** show **Failed** status. Submit a Microsoft Support request for help.
 
 ## Unlock environments
 To unlock environments, all key access permissions must be restored for the original encryption key. Submit a Microsoft Support request to unlock and enable the environments. The environments can only be enabled when the original encryption key that was used to encrypt the customer data is restored. 
