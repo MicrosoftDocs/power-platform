@@ -14,6 +14,7 @@ ms.custom: template-how-to
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Customers have data privacy and compliance requirements to secure their data by encrypting their data at-rest. This secures the data from being exposed in an event where a copy of the database is stolen. With data encryption at-rest, the stolen database data is protected from being restored to a different server without the encryption key. 
+
 All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. However, we provide customer-managed encryption key for added data protection control so customer can manage their own encryption keys. When customer-managed key is used, all customer data is encrypted with a user-provided key from your own Azure Key Vault. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
 > [!IMPORTANT]
@@ -21,14 +22,14 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > 
 > These encryption key operations are available with this release:
 > 1.	Create a RSA key from your Azure Key vault.
-> 2.	Create a Power Platform Enterprise Policy (EP) for your key.
-> 3.	Grant the Power Platform EP permission to access your key vault.
-> 4.	Grant the Power Platform service admin to read the EP.
-> 5.	Apply encryption key to your environment.
-> 6.	Revert/remove environment’s CMK encryption to Microsoft-managed key.
-> 7.	Change key by creating a new EP, removing the environment from CMK and re-apply CMK with new EP.
-> 8.	Lock CMK environments by revoking CMK key vault and/or key permissions.
-> 9.	Migrate Bring-your-own-key (BYOK) environments to CMK by applying CMK key.
+> 1.	Create a Power Platform Enterprise Policy (EP) for your key.
+> 1.	Grant the Power Platform EP permission to access your key vault.
+> 1.	Grant the Power Platform service admin to read the EP.
+> 1.	Apply encryption key to your environment.
+> 1.	Revert/remove environment’s CMK encryption to Microsoft-managed key.
+> 1.	Change key by creating a new EP, removing the environment from CMK and re-apply CMK with new EP.
+> 1.	Lock CMK environments by revoking CMK key vault and/or key permissions.
+> 1.	Migrate Bring-your-own-key (BYOK) environments to CMK by applying CMK key.
 
 >
 > This feature is gradually being rolled out following this deployment schedule:
@@ -39,24 +40,37 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > |3 & 4     |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
 > |5     | September 2023     |  North America       |
 
-By default, data is encrypted with Microsoft managed keys. For additional control over encryption keys, you can manage your own keys. Customer managed keys must be stored in Azure Key vault.
-
-In our upgraded customer managed key (CMK) feature, customers can use their own Azure Key Vault encryption key to encrypt their data stored in Microsoft Dataverse. This provides an additional level of security by not allowing Microsoft support staff to have access to the encryption key.
-
-Another benefit with this feature is the ability to encrypt data in all the Azure storage types used in Dataverse, such as SQL, Azure File, Cosmos DB, data lake, and Azure Cognitive Search.
-
+The following services support using customer-managed key:
+>
+>1. Dataverse (In-house/Custom solutions and Microsoft 1st party services) 
+>1. Chat for Dynamics 365
+>1. Dynamics 365 Sales
+>1. Dynamics 365 Customer Service
+>1. Dynamics 365 Customer Insights
+>1. Dynamics 365 Omnichannel
+>1. Dynamics 365 Commerce (FnO)
+>1. Dynamics 365 Field Service
+>1. Dynamics 365 Retail
+>1. Dynamics 365 Finance (FnO)
+>1. Dynamics 365 Intelligent Order Management (FnO)
+>1. Dynamics 365 Project Operations (FnO)
+>1. Dynamics 365 Supply Chain Management (FnO)
+>1. Dynamics 365 Fraud Protection (FnO)
+>
 Environments with finance and operations apps where Power Platform integration is enabled can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Enable the Microsoft Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
 
 :::image type="content" source="media/cmk-power-platform-diagram.png" alt-text="Customer managed encryption key in the Power Platform":::
 
-To enable customer managed keys, first the key vault admin creates a key in their key vault and also creates an enterprise Azure Policy. When the enterprise policy is created, a special Azure Active Directory (Azure AD) managed identity is also created. Next, the key vault admin returns to the key vault and grants the enterprise policy/managed identity access to the encryption key.
+## Azure Key Vault and Power Platform/Dynamics 365 service admin
+To enable customer managed keys, first the key vault admin creates a key in their key vault and also creates a Power Platform enterprise Azure Policy. When the enterprise policy is created, a special Azure Active Directory (Azure AD) managed identity is created. Next, the key vault admin returns to the key vault and grants the enterprise policy/managed identity access to the encryption key.
 
-## Prerequisites
+The key vault admin then grants the Power Platform/Dynamics 365 service admin Read access to the enterprise policy. Once Read permission is granted, the Power Platform/Dynamics 365 service can go to the Power Platform Admin Center and add environment(s) to the enterprise policy. All added environment(s) customer data is then encrypted with the customer-managed key from the enterprise policy.
+
+## Azure key vault admin tasks
+### Prerequisites
 
 - An Azure subscription that includes Azure Key Vault.
 - Global tenant admin or an  Azure AD with contributor permission to the Azure AD subscription and permission to create a key vault and key. This is required to set up the key vault.
-
-## Azure key vault and Power Platform admin tasks
 
 ### Create the key and grant access
 
@@ -71,17 +85,22 @@ The key vault admin performs these steps in Azure:
 
 More information: [Azure Key Vault documentation](/azure/key-vault/general/)
 
-### Configure Power Platform environments
+## Power Platform/Dynamics 365 service admin Power Platform admin center tasks
+### Prerequisite
+
+- Power Platform admin must be assigned to either the Power Platform or Dynamics 365 Service admin AAD role
+
+### Add environment
 
 The Power Platform admin performs these steps in Power Platform admin center:
 
 1. Add the Power Platform environments to the enterprise policy to encrypt data with the customer managed key.
 1. Remove environments from enterprise policy to return encryption to Microsoft managed key.
-1. Change the key by removing environments from the old enterprise policy and adding environments to the new enterprise policy.
+1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy.
 
 ## For customers using the previous key management solution
 
-For customers using the previous [manage the encryption key](manage-encryption-key.md) (BYOK) feature, the current managed encryption key can encrypt their existing environments with this key management feature. You can add both type of environments:
+For customers using the previous [manage the encryption key](manage-encryption-key.md) (BYOK) feature, they can use this new customer-managed key to encrypt their  environments. You can add both type of environments:
 
 - Add non-BYOK enabled environments – these are environments that you haven’t encrypted with your own key.
 - Migrate BYOK enabled environments – these are environments that you have encrypted with your own key.
@@ -94,7 +113,7 @@ You can create a new enterprise policy with a new key or use an existing enterpr
 > - Environments are disabled during encryption key migration.
 > - When BYOK enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
 
-If you have enabled audit and search in the BYOK environment and have uploaded files and created a data lake, all these storages will be automatically created and encrypted with the encryption key.
+If you have enabled audit and search in the BYOK environment and have uploaded files and created a data lake, all these storages will be automatically created and encrypted with the customer-managed encryption key.
 
 Similarly, if you didn’t enable these audit or search functionalities and enabled them after your environment is encrypted with this feature, all these storages will be automatically created and encrypted with the encryption key.
 
@@ -102,7 +121,7 @@ Similarly, if you didn’t enable these audit or search functionalities and enab
 
 In Azure, perform the following steps:
 
-1. Create a Pay-as-you-go subscription. This step isn't needed if the tenant already has a subscription.
+1. Create a Pay-as-you-go or its equivalent Azure subscription. This step isn't needed if the tenant already has a subscription.
 1. Create a resource group.
 1. Create a key vault using the paid subscription with the resource group you created in the previous step. More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
 
@@ -115,17 +134,20 @@ In Azure, perform the following steps:
 1. Make sure you have the [prerequisites](#prerequisites).
 1. Go to Azure portal > **Key Vault** and locate the key vault where you want to generate an encryption key.
 1. Create or import a key. 
-1. Enable purge protection in Azure key vault:
+>  Key Type = **RSA** and RSA Key size = **2048**
+>  
+1. Verify Azure key vault settings:
+   1. Access the key vault from Azure portal.
    1. Select **Properties** under **Settings**.
-   1. Under **Soft-delete**, select the **Enable recovery of this vault and its objects** option.
-   1. Set the retention period for the soft delete.
+   1. Under **Soft-delete**, verify that it is set to **Soft delete has been enabled on this key vault** option.
+   1. Under **Purge protection**, set or verify that **Enable purge protection (enforce a mandatory retention period for deleted vaults and vault objects)** is enabled.
    1. Select **Save**.
 
    :::image type="content" source="media/cmk-key-vault-purge-protect.png" alt-text="Enable purge protection on the key vault":::
 
 ## Enable the Power Platform enterprise policies service for your Azure subscription
 
-In the Azure portal, register Power Platform as a resource provider:
+In the Azure portal, register Power Platform as a resource provider (this only needed to be done once):
 
 1. Go to **Subscription** > **Resource providers**.
 1. Search for **Microsoft.PowerPlatform** and **Register** it.
