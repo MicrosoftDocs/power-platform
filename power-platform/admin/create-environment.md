@@ -1,10 +1,10 @@
 ---
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
 description: About creating and manage environments in the Power Platform admin center
-author: jimholtz
+author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/13/2023
+ms.date: 01/30/2023
 ms.subservice: admin
 ms.author: kvivek
 search.audienceType: 
@@ -14,6 +14,8 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+contributors:
+  - marcelbf
 ---
 # Create and manage environments in the Power Platform admin center
 
@@ -23,37 +25,37 @@ An environment is a space to store, manage, and share your organization's busine
 
 Your license determines whether you can create environments.
 
-| License | Trial | Production |
-| --- | --- | --- |
-| Microsoft 365 Plans |No | No |
-| Dynamics 365 Teams Plans   |No | No |
-| Power Apps Developer Plan   |No | No |
-| Dynamics 365 trial | Yes (one) | No|
-| Dynamics 365 Plans |Yes (one)| Yes |
-| Power Apps plan |Yes (one)| Yes |
-| Power Apps trial |Yes (one)| Yes |
-| Power Virtual Agents trial plan |Yes | No |
-| Power Virtual Agents plan | No | Yes |
+| License | Trial | Production | Developer |
+| --- | --- | --- | --- |
+| Microsoft 365 Plans |No | No | Yes |
+| Dynamics 365 Teams Plans   |No | No | Yes |
+| Power Apps Developer Plan   |No | No | Yes |
+| Dynamics 365 trial | Yes (one) | No| Yes |
+| Dynamics 365 Plans |Yes (one)| Yes | Yes |
+| Power Apps plan |Yes (one)| Yes | Yes |
+| Power Apps trial |Yes (one)| Yes | Yes |
+| Power Virtual Agents trial plan |Yes | No | Yes |
+| Power Virtual Agents plan | No | Yes | Yes |
 
-To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true).
 
 To create an environment, all the following must be true:
 
 1. The user has a license (Yes below) that allows environment creation. This requirement is waived for Global admins and Power Platform admins.
 
-   | License | Trial | Production |
-   | --- | --- | --- |
-   | Microsoft 365 Plans |No | No |
-   | Dynamics 365 Teams Plans   |No | No |
-   | Power Apps Developer Plan   |No | No |
-   | Dynamics 365 trial | Yes (one) | No|
-   | Dynamics 365 Plans |Yes (one)| Yes |
-   | Power Apps plan |Yes (one)| Yes |
-   | Power Apps trial |Yes (one)| Yes |
-   | Power Virtual Agents trial plan |Yes | No |
-   | Power Virtual Agents plan | No | Yes |
+   | License | Trial | Production | Developer |
+   | --- | --- | --- | --- |
+   | Microsoft 365 Plans |No | No | Yes |
+   | Dynamics 365 Teams Plans   |No | No | Yes |
+   | Power Apps Developer Plan   |No | No | Yes |
+   | Dynamics 365 trial | Yes (one) | No| Yes |
+   | Dynamics 365 Plans |Yes (one)| Yes | Yes |
+   | Power Apps plan |Yes (one)| Yes | Yes |
+   | Power Apps trial |Yes (one)| Yes | Yes |
+   | Power Virtual Agents trial plan |Yes | No | Yes |
+   | Power Virtual Agents plan | No | Yes | Yes |
 
-   To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+   To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true).
 
 2. The tenant (or user in the case of email trials) must have the following:
 
@@ -103,7 +105,7 @@ To create an environment with a database, you need 1GB available database capaci
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment.](./media/new-environment.png "Create new environment")
+   > ![Create a new environment.](./media/new-environment.png "Create a new environment")
 
 3. Enter the following, and then select **Next**.
 
@@ -131,7 +133,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Security group | Select a security group to restrict access to this environment. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings.](./media/new-environment-page2-enable-apps.png "Create new environment settings")
+   > ![Create new environment add database.](./media/new-environment-page2-enable-apps.png "Create new environment add database")
    
 ## Create an environment without a database 
 You can create an environment without a database and use your own data store.
@@ -145,7 +147,7 @@ You need 1GB available database capacity.
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment.](./media/new-environment.png "Create new environment")
+   > ![Create new environment without database.](./media/new-environment.png "Create new environment  without database")
 
 3. Enter the following, and then select **Save**.
    
@@ -159,7 +161,7 @@ You need 1GB available database capacity.
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings.](./media/new-environment-page1-nodb.png "Create new environment settings")
+   > ![Create new environment.](./media/new-environment-page1-nodb.png "Create new environment ")
 
 ## Setting an environment refresh cadence
 You can indicate how often you would prefer an environment to receive updates and features to certain Microsoft Power Platform services. You have two options to choose from after creating an environment.
