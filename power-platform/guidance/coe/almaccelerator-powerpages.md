@@ -46,7 +46,7 @@ Follow these steps to include Power Pages website during solution commit:
 
 ## Upload the changes using deployment profile
 
-When working with multiple different environments, you may consider using deployment profiles to ensure the changes are uploaded to the correct environment using [deployment profile](https://learn.microsoft.com/power-apps/maker/portals/power-apps-cli-tutorial#upload-the-changes-using-deployment-profile).
+When working with multiple different environments, you may consider using deployment profiles to ensure the changes are uploaded to the correct environment using deployment profiles.
 
 Follow these steps to use deployment profile along with Power Pages website in the ALM Accelerator:
 
@@ -54,9 +54,10 @@ Follow these steps to use deployment profile along with Power Pages website in t
 1. Create a folder named deployment-profiles, under 'PowerPages' folder -> Website folder.
 1. Inside deployment-profiles folder, create a deployment YAML file that contains the environment-specific changes. deployment YAML filename must start with your 'Environment' name. For example, development environment can be called "dev.deployment.yml" and validation environment can be called "validation.deployment.yml".
 
-   :::image type="content" source="media/setup-almacceleratorpowerplatform/deployment-profile-yml-files.png" alt-text="Power Pages website update website":::
+   :::image type="content" source="media/setup-almacceleratorpowerplatform/deployment-profile-yml-files.png" alt-text="Power Pages website deployment profiles":::
 
-1. Please refer [working with deployment profiles](https://learn.microsoft.com/power-apps/maker/portals/power-apps-cli-tutorial#upload-the-changes-using-deployment-profile) to update the deployment YAML files.
+1. Please refer [Portal CLI documentation](../../developer/cli/reference/paportal.md) on the usage and preparation of deployment profiles.
+1. When the 'deployment-profiles' folder presents in your repository, during deployment, 'ALM Accelerator' checks for a YAML file starts with Environment Name
 1. No other steps are required to use deployment profiles for Power Pages website.
 
 ## Upload website to downstream environments
