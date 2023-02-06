@@ -143,9 +143,9 @@ The below table shows how the **User Labels** are configured for the **advanced 
       :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-group-teams.png" alt-text="Group Teams configuration":::
 
       - This screen allows the user to configure new Dataverse Teams of type AAD Security Group that can be used for sharing Flows and Custom Connectors
-      - Click the **'+'** icon to add a new Group Team configuration
-      - Enter a **Team Name**, select an **AAD Group** that the team should be linked to and select **Security Roles** as required. The list of security roles is based on those available in the currently selected development environment. Make sure to add any custom security roles to the solution to ensure the security roles are available in the target environment.
-      - Users can add multiple Group Team configurations by clicking the **'+'** to add additional rows
+      - Select the **'+'** icon to add a new Group Team configuration
+      - Enter a **Team Name**, select an **AAD Group** that the team should be linked to and select **Security Roles** as required. The list of security roles is based on the roles available in the currently selected development environment. Make sure to add any custom security roles to the solution to ensure the security roles are available in the target environment.
+      - Users can add multiple Group Team configurations by clicking the **'+'** to add more rows
 
    - **Flows**
 
@@ -156,7 +156,7 @@ The below table shows how the **User Labels** are configured for the **advanced 
       - Use the **Owner** dropdown list to select a Dataverse user to own the flow in the downstream environment.
       - Use the **Team Sharing** dropdown list to select the Dataverse Team to share the flow to. Note, this dropdown will list Dataverse Teams in the downstream environment and Dataverse teams configured in the Group Teams configuration.
       - Use the **Activation User** dropdown list to select the user that will be used to activate the flow
-      - In the **Flows to Activate and Order** column, the checkbox can be used to configure whether a specific flow should be activated or not. The up and down arrows can be used to organize the rows into the desired sequence in which the flows will be activated. The sequencing of activation is particularly useful if the solution include parent and child flows where child flows must be activated before parent flows.
+      - In the **Flows to Activate and Order** column, the checkbox can be used to configure whether a specific flow should be activated or not. The up and down arrows can be used to organize the rows into the desired sequence in which the flows will be activated. The sequencing of activation is useful if the solution includes parent and child flows where child flows must be activated before parent flows.
 
    - **Custom Connectors**
 
@@ -169,7 +169,7 @@ The below table shows how the **User Labels** are configured for the **advanced 
 
       :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-webhooks.png" alt-text="Deployment settings WebHooks":::
 
-      - This screen lists all of the WebHooks in your solution. Users can configure the endpoint url of the WebHooks in a downstream environment. If the urls is left empty the WebHook url will be the same as the url in the development environment.
+      - This screen lists all of the WebHooks in your solution. Users can configure the endpoint url of the WebHooks in a downstream environment. If the url is left empty, the WebHook url will be the same as the url in the development environment.
   
 1. After you've configured your solution, you can push your changes to Git by using the **Commit Solution** command for your solution. Depending on the permissions you're given, a **Show Advanced** toggle might appear. You can select **Show Advanced** to choose an existing branch or to create a new one with a specific naming convention. If you haven't been granted permissions to these options, the app creates a new branch based on your username and deployment profile data.
 
