@@ -97,7 +97,7 @@ The following limitations apply when updating environment variables:
 
 To update environment variables, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center)
 
-1. Go to [make.powerapps.com](https://make.powerapps.com), and then select your CoE environment
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment
 1. Open the **CoE Admin Command Center** app.
 1. Select **Environment Variables**, and update the current value.
 
@@ -149,7 +149,7 @@ Use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) 
 
 ## Share an app from a production environment
 
-1. Go to [make.powerapps.com](https://make.powerapps.com), and then select your CoE environment.
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
 1. On the app that you want to share, select **...** > **Share**.
 
       ![Select the user or group to share the app with.](media/tips-share1.png "Select the user or group to share the app with")
@@ -165,7 +165,7 @@ Use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) 
 
 ## Get a Power Apps URL from a production environment
 
-1. Go to [make.powerapps.com](https://make.powerapps.com), and then select your CoE environment.
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
 1. Select **Apps**.
 1. Select the app of which you need the URL from.
 1. Select **...** > **Details**.
