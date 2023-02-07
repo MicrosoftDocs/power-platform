@@ -24,7 +24,7 @@ search.app:
 
 # DLP resource exemption
 
-You can define a list of exempted resources (canvas app, cloud flow, or chat bot) that will not be evaluated by a DLP policy by using [DLP resource exemption PowerShell cmdlets](powerapps-powershell.md#dlp-resource-exemption-cmdlets). You can exempt up to 2,000 low-code assets per DLP policy.
+You can define a list of exempted resources (canvas app, cloud flow, desktop flow, or chat bot) that will not be evaluated by a DLP policy by using [DLP resource exemption PowerShell cmdlets](powerapps-powershell.md#dlp-resource-exemption-cmdlets). You can exempt up to 2,000 low-code resources per DLP policy.
 
 
 
