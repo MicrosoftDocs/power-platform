@@ -1,15 +1,12 @@
 ---
-title: "Overview  | MicrosoftDocs"
+title: "Center of Excellence (CoE) overview  | MicrosoftDocs"
 description: Overview of the CoE Starter Kit
 author: manuelap-msft
-manager: devkeydet
-
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 search.audienceType: 
   - admin
 search.app: 
