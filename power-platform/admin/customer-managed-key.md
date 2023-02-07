@@ -127,7 +127,7 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 
 ##### Enterprise policy
 
-You can create a new enterprise policy with a new key or use an existing enterprise policy. Follow the same steps as [Configure Power Platform environments](#configure-power-platform-environments) to add your non-BYOK enabled and BYOK enabled environments.
+You can create a new enterprise policy with a new key or use an existing enterprise policy. Follow the same steps as [Manage environment's encryption](#manage-environments-encryption) to add your non-BYOK enabled and BYOK enabled environments.
 
 > [!IMPORTANT]
 > - Environments are disabled during encryption key migration.
@@ -347,7 +347,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 
 To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
 
-1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information: [Create the key and grant access](#create-the-key-and-grant-access) and [Create an enterprise policy](#create-an-enterprise-policy)
+1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information: [Create the key and grant access](#create-the-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
 1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer managed key.
 1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
