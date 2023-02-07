@@ -41,21 +41,21 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > |5     | September 2023     |  North America       |
 
 The following services support using customer-managed key:
->
->1. Dataverse (In-house/Custom solutions and Microsoft 1st party services) 
->1. Chat for Dynamics 365
->1. Dynamics 365 Sales
->1. Dynamics 365 Customer Service
->1. Dynamics 365 Customer Insights
->1. Dynamics 365 Omnichannel
->1. Dynamics 365 Commerce (FnO)
->1. Dynamics 365 Field Service
->1. Dynamics 365 Retail
->1. Dynamics 365 Finance (FnO)
->1. Dynamics 365 Intelligent Order Management (FnO)
->1. Dynamics 365 Project Operations (FnO)
->1. Dynamics 365 Supply Chain Management (FnO)
->1. Dynamics 365 Fraud Protection (FnO)
+
+- Dataverse (In-house/Custom solutions and Microsoft 1st party services) 
+- Chat for Dynamics 365
+- Dynamics 365 Sales
+- Dynamics 365 Customer Service
+- Dynamics 365 Customer Insights
+- Dynamics 365 Omnichannel
+- Dynamics 365 Commerce (finance and operations)
+- Dynamics 365 Field Service
+- Dynamics 365 Retail
+- Dynamics 365 Finance (finance and operations)
+- Dynamics 365 Intelligent Order Management (finance and operations)
+- Dynamics 365 Project Operations (finance and operations)
+- Dynamics 365 Supply Chain Management (finance and operations)
+- Dynamics 365 Fraud Protection (finance and operations)
 >
 Environments with finance and operations apps where Power Platform integration is enabled can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Enable the Microsoft Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
 
