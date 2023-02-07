@@ -428,7 +428,7 @@ You can use this app to see who an app is shared with, what roles (editor or vie
 
 ![Use Power Platform Admin View to see who an app is shared with.](media/coe-mda2.png "Use Power Platform Admin View to see who an app is shared with")
 
-You can use this app to see manage permissions for apps and flows by selecting **Manage Permissions** from the command bar.
+You can use this app to manage permissions for apps and flows by selecting **Manage Permissions** from the command bar.
 
 :::image type="content" source="media/ppadmin-setapp.png" alt-text="Update app and flow permissions using the Set App/Flow Permissions custom page":::
 
