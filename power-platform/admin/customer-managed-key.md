@@ -36,7 +36,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 >
 > |Region station  |Est. public preview availability  |Regions in station  |
 > |---------|---------|---------|
-> |1 & 2     | March 1, 2023        | Canada, France, Germany, India, Norway, South Africa, South America, South Korea, Switzerland, Australia        |
+> |1 & 2     | March 2023        | Canada, France, Germany, India, Norway, South Africa, South America, South Korea, Switzerland, Australia        |
 > |3 & 4     |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
 > |5     | September 2023     |  North America       |
 
