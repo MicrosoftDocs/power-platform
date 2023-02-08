@@ -15,6 +15,13 @@ searchScope:
 ---
 
 # FAQ for GPT Answers feature 
+
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!WARNING]
+>  
+> This doc is still under construction. Headings, titles, page names, and TOC entries are placeholders.
+
 ## General
 ### What is GPT Answers  ?
 GPT Answers increases the number of topics your bot is conversational in, without requiring any manual dialog tree authoring. When a user asks the bot a question for which no topic is configured, instead of defaulting to a fallback, we search for relevant content on a website of your choosing and then use GPT    to summarize that information into a response that is returned to the user. 

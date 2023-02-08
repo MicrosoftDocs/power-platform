@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Overview of GTP
 description: Desc for overview
 keywords: "PVA"
 ms.date: 2/8/2023
@@ -15,8 +15,12 @@ searchScope:
 ---
 # Overview of GTP in PVA (WIP)
 
-[!INCLUDE [Preview disclaimer](..includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!WARNING]
+>  
+> This doc is still under construction. Headings, titles, page names, and TOC entries are placeholders.
 
 [[WIP]]
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

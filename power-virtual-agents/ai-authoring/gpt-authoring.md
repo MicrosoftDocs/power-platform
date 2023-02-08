@@ -16,7 +16,11 @@ searchScope:
 
 # Create and edit topics using natural language (preview)
 
-[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!WARNING]
+>  
+> This doc is still under construction. Headings, titles, page names, and TOC entries are placeholders.
 
 In addition to the traditional method for [creating and editing topics](../authoring-create-edit-topics.md), Power Virtual Agents allows you to use create and iterate on topics by describing what you want and having AI build it for you, boosting your productivity as an author significantly. 
 
@@ -62,4 +66,4 @@ You can make additions or changes to a topic, regardless of how the topic was cr
 
 > You can provide feedback about the outcomes of your request using the thumbs up / down icons available within the panel. If you indicate that a request didn't do what you were expecting using the thumbs down icon, you can optionally provide additional details relating to your request to help us understand how we can improve the quality of future results. 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]
