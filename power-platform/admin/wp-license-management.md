@@ -32,7 +32,7 @@ Power Apps and Power Automate use connectors to interact with services. Connecto
 
 Trial plans are available for both Power Apps and Power Automate. Free trials last 30 days for Power Apps and 90 days for Power Automate plans. Users can self-service sign up for these trials in your organization. This can be done by explicitly visiting the pricing pages or by being prompted when they attempt an action in the apps that require additional licensing.
 
-For Power Automate, an unlicensed user who signs into flow.microsoft.com will be set up with the *free* Power Automate plan. If later they try to perform an action like sharing a flow, they'll be prompted to sign up for a *trial*. In this example, if the user accepted the offer for trial they would be signed up for a Power Automate trial. This trial wouldn't show up under the user licenses in the Microsoft 365
+For Power Automate, an unlicensed user who signs into make.powerautomate.com will be set up with the *free* Power Automate plan. If later they try to perform an action like sharing a flow, they'll be prompted to sign up for a *trial*. In this example, if the user accepted the offer for trial they would be signed up for a Power Automate trial. This trial wouldn't show up under the user licenses in the Microsoft 365
 Portal, however you can see it in the Power Apps license report discussed later in the security section.
 
 For Power Apps, if a user signs up for a Power Apps trial, they'll get a Power Apps per user trial if needed for any of the actions they take such as creating an environment.

@@ -72,7 +72,7 @@ In addition to the ability to save SharePoint custom form resources to a non-def
 > [!NOTE]
 > The ability to distinguish SharePoint custom form makers from general Environment Makers requires Dataverse in the environment where the privilege is to be changed.
 >
-> A user with only the SharePoint custom form maker role in an environment will not see the environment in the environment list in https://make.powerapps.com or https://flow.microsoft.com.
+> A user with only the SharePoint custom form maker role in an environment will not see the environment in the environment list in https://make.powerapps.com or https://make.powerautomate.com.
 
 Do the following to limit maker privileges to only be able to create and edit SharePoint custom forms in a non-default environment. 
 

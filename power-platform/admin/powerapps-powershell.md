@@ -345,7 +345,7 @@ Associate flows in context of an app to the app to create a dependency between t
 EnvironmentName and FlowName can be found in the flow url:
 
  - For a Non-Solution flow, the URL will look like this:
-   https://preview.flow.microsoft.com/manage/environments/839eace6-59ab-4243-97ec-a5b8fcc104e7/flows/6df8ec2d-3a2b-49ef-8e91-942b8be3202t/details
+   https://make.powerautomate.com/manage/environments/839eace6-59ab-4243-97ec-a5b8fcc104e7/flows/6df8ec2d-3a2b-49ef-8e91-942b8be3202t/details
    <br />The GUID after environments/ is the EnvironmentName and the GUID after flows/ is the FlowName
  - For Solution flow, the URL will look like this:
    https://us.flow.microsoft.com/manage/environments/66495a1d-e34e-e330-9baf-0be559e6900b/solutions/fd140aaf-4df4-11dd-bd17-0019b9312238/flows/53d829c4-a5db-4f9f-8ed8-4fb49da69ee1/details

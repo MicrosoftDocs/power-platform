@@ -22,15 +22,15 @@ Organizations gain rights to use Power Automate via licenses (paid or trial) tha
 
 ## Standalone plans
 
-Customers who need to create fully flexible, general-purpose workflows with either [business process automation](/power-automate/business-process-flows-overview) or [Robotic Process Automation (RPA)](/power-automate/desktop-flows/introduction) capabilities, should consider [purchasing standalone Power Automate licenses](https://flow.microsoft.com/pricing/).
+Customers who need to create fully flexible, general-purpose workflows with either [business process automation](/power-automate/business-process-flows-overview) or [Robotic Process Automation (RPA)](/power-automate/desktop-flows/introduction) capabilities, should consider [purchasing standalone Power Automate licenses](https://make.powerautomate.com/pricing/).
 
 Plan|Description
 --------|------
-Power Automate per user plan|This plan provides a user with rights to run an unlimited number of flows (within service limits) with the full capabilities of Power Automate, including [standard connectors](https://preview.flow.microsoft.com/connectors/?filter=&category=standard),[premium connectors](#premium-connectors),[business process flows](#business-process-flows), [custom connectors](#custom-connectors),[on-premises gateways](#on-premises-gateway) based on their unique needs for a monthly fixed cost for each user.
+Power Automate per user plan|This plan provides a user with rights to run an unlimited number of flows (within service limits) with the full capabilities of Power Automate, including [standard connectors](https://make.powerautomate.com/connectors/?filter=&category=standard),[premium connectors](#premium-connectors),[business process flows](#business-process-flows), [custom connectors](#custom-connectors),[on-premises gateways](#on-premises-gateway) based on their unique needs for a monthly fixed cost for each user.
 Power Automate per user with attended RPA plan|This plan spans legacy and modern applications, allowing makers to create unlimited flows for API-based automation and automate legacy applications with desktop flows [through Robotic Process Automation (RPA)](#robotic-process-automation) and AI. This plan includes all Power Automate per user plan capabilities and the ability for users to run an attended RPA bot on their workstation. Additionally, this plan includes access to [AI Builder capacity](#ai-builder-credits), supporting scenarios like forms processing, object detection, prediction, text classification, and recognition. This plan can be purchased for a monthly fixed cost for each user.
 Power Automate per flow plan|  With this plan, organizations can implement flows with reserved capacity that serve a team, a department, or an entire organization without having to license each user separately. This plan starts with a fixed monthly cost for five active flows.There is a monthly fee for each additional active flow (beyond the five flows that are included in the base fee).
 Power Automate pay-as-you-go plan(preview)| With this plan, organizations can get started building flows without any license commitment or upfront costs and use their Azure subscription to [pay only when their flows run](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview). 
-Power Automate P1 and P2 plans (grand fathered)| These plans are no longer available for purchase nor via auto-renewal after December 31, 2020. Organizations with these plan licenses with renewals that are due on or after January 1, 2021 need to transition to either the Power Automate per user or per flow plan or to the Power Apps per user or per app plan to continue using the Microsoft Power Platform services. Customers with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Contact your Microsoft account representative for more information or [purchase licenses](https://flow.microsoft.com/pricing/?ef_id=dd65eaf79fda13e945118bbef5cc361a:G:s&amp;OCID=AID2200054_SEM_dd65eaf79fda13e945118bbef5cc361a:G:s&amp;msclkid=dd65eaf79fda13e945118bbef5cc361a).
+Power Automate P1 and P2 plans (grand fathered)| These plans are no longer available for purchase nor via auto-renewal after December 31, 2020. Organizations with these plan licenses with renewals that are due on or after January 1, 2021 need to transition to either the Power Automate per user or per flow plan or to the Power Apps per user or per app plan to continue using the Microsoft Power Platform services. Customers with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Contact your Microsoft account representative for more information or [purchase licenses](https://make.powerautomate.com/pricing/?ef_id=dd65eaf79fda13e945118bbef5cc361a:G:s&amp;OCID=AID2200054_SEM_dd65eaf79fda13e945118bbef5cc361a:G:s&amp;msclkid=dd65eaf79fda13e945118bbef5cc361a).
 
 ## Seeded plans
 
@@ -292,7 +292,7 @@ You can consult this [requests limits frequently asked questions](../api-request
 
 ## Free plan
 
-If you sign in with work or school email address, you get all [Power Automate capabilities included in Office 365](faqs.md). But if you have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate with the free plan. Go to [Power Automate](https://flow.microsoft.com/) and then select **Try free**.
+If you sign in with work or school email address, you get all [Power Automate capabilities included in Office 365](faqs.md). But if you have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate with the free plan. Go to [Power Automate](https://make.powerautomate.com/) and then select **Try free**.
 
 > [!NOTE]
 > You cannot share flows when you use the free plan.
@@ -341,7 +341,7 @@ After the free trial starts, go to **Billing** > **Licenses** to see the 25 new 
 
 ### User trial
 
-Users start these types of trials, either from the [pricing](https://flow.microsoft.com/pricing/?ef_id=dd65eaf79fda13e945118bbef5cc361a:G:s&amp;OCID=AID2200054_SEM_dd65eaf79fda13e945118bbef5cc361a:G:s&amp;msclkid=dd65eaf79fda13e945118bbef5cc361a) page or from within Power Automate. This trial gives premium connector access, attended RPA, and unattended RPA. This trial is for 90 days.
+Users start these types of trials, either from the [pricing](https://make.powerautomate.com/pricing/?ef_id=dd65eaf79fda13e945118bbef5cc361a:G:s&amp;OCID=AID2200054_SEM_dd65eaf79fda13e945118bbef5cc361a:G:s&amp;msclkid=dd65eaf79fda13e945118bbef5cc361a) page or from within Power Automate. This trial gives premium connector access, attended RPA, and unattended RPA. This trial is for 90 days.
 
 ![The Power Automate pricing page](../media/power-automate-licensing/pricing.png)
 

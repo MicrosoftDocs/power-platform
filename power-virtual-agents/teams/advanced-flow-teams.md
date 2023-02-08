@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-flow.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-flow-teams.md)
 
-[Power Automate](https://flow.microsoft.com) is a service that you can use to build automated processes using low-code, drag-and-drop tools. By using [cloud flows](/power-automate/overview-cloud) in Power Virtual Agents, you can extend the capabilities of your bot to automate complex activities or query back-end systems.
+[Power Automate](https://make.powerautomate.com) is a service that you can use to build automated processes using low-code, drag-and-drop tools. By using [cloud flows](/power-automate/overview-cloud) in Power Virtual Agents, you can extend the capabilities of your bot to automate complex activities or query back-end systems.
 
 See the [Power Virtual Agents web app documentation on using Flows](../advanced-flow.md) for more detailed and complex scenarios.
 

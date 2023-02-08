@@ -111,7 +111,7 @@ Many customers choose to work with partners on their Power Platform adoption, in
 Microsoft support is used to raise platform-related technical issues. Based on your [support plan](/admin/support-overview), different technical support and advisory services are available to you.
 
 >[!TIP]
->Before raising a support ticket, also check [Power Apps support](https://powerapps.microsoft.com/support/), [Power Automate support](https://flow.microsoft.com/support/), and [Power Virtual Agents support](https://powervirtualagents.microsoft.com/support/) for high-priority issues that broadly affect all customers.
+>Before raising a support ticket, also check [Power Apps support](https://powerapps.microsoft.com/support/), [Power Automate support](https://make.powerautomate.com/support/), and [Power Virtual Agents support](https://powervirtualagents.microsoft.com/support/) for high-priority issues that broadly affect all customers.
 
 ## Considerations and key actions
 

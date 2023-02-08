@@ -100,7 +100,7 @@ Follow these steps to allocate add-ons to an environment.
 
    After you assign a per flow plan add-on to an environment, you can choose which flows can use that add-on.
 
-1. In [Power Automate](https://flow.microsoft.com/), choose the flow to which you want to add the license. Owners, co-owners of the flow and admins can assign a per flow license to a flow.
+1. In [Power Automate](https://make.powerautomate.com/), choose the flow to which you want to add the license. Owners, co-owners of the flow and admins can assign a per flow license to a flow.
 
    When you select a flow, you'll now see a new section in the details pane that tells you if the flow is assigned to a user, or if it is part of the per-flow plan. The default for a flow is to use the license of the user.
 
@@ -242,7 +242,7 @@ Any customer can sign up for a free trial. Microsoft 365 admins can buy Power Au
 
 Yes.
 
-1. Go to the [Microsoft Power Automate](https://flow.microsoft.com/pricing/) pricing page and select **Buy now** for the license that you need.
+1. Go to the [Microsoft Power Automate](https://make.powerautomate.com/pricing/) pricing page and select **Buy now** for the license that you need.
 
    ![An image that displays a view of the Power Automate pricing page on the Internet.](../media/power-automate-licensing/pricing.png)
 

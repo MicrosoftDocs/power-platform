@@ -144,7 +144,7 @@ You use a different set of URLs to access Power Apps US Government environments,
 |--------------------------------|---------------------------------------|
 | <https://make.powerapps.com>    | <https://make.gov.powerapps.us> (GCC)<br/><https://make.high.powerapps.us> (GCC High)<br /> <https://make.apps.appsplatform.us> (DoD)  |
 | <https://create.powerapps.com> | <https://make.gov.powerapps.us> (GCC)<br /><https://make.high.powerapps.us> (GCC High) <br />  <https://make.apps.appsplatform.us> (DoD) |
-| <https://flow.microsoft.com/connectors> | <https://gov.flow.microsoft.us/connectors><br /><https://high.flow.microsoft.us/connectors> (GCC High) <br /><https://flow.appsplatform.us> (DoD)  |
+| <https://make.powerautomate.com/connectors> | <https://gov.flow.microsoft.us/connectors><br /><https://high.flow.microsoft.us/connectors> (GCC High) <br /><https://flow.appsplatform.us> (DoD)  |
 | <https://admin.powerplatform.microsoft.com> | <https://gcc.admin.powerplatform.microsoft.us><br /><https://high.admin.powerplatform.microsoft.us> (GCC High) <br /><https://admin.appsplatform.us> (DoD)|
 | <https://apps.powerapps.com> | <https://play.apps.appsplatform.us> (GCC)<br /> <https://apps.high.powerapps.us> (GCC High)<br /><https://play.apps.appsplatform.us> (DoD) |
 
