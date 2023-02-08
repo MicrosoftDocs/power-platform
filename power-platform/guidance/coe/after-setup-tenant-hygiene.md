@@ -59,7 +59,7 @@ Every tenant in Power Platform has a [default environment](/power-platform/admin
 
 Additionally, consider quarantining apps that aren't compliant and creating a process for cleaning up orphaned resources, such as apps and flows without an owner.
 
-The **Default environment** page in the CoE Starter Kit's **Compliance and adoption dashboard** can help you gain valuable insights of the adoption in your default environment, such as identifying top connectors, top most launched apps and top makers. 
+The **Default environment** page in the CoE Starter Kit's **Compliance and adoption dashboard** can help you gain valuable insights of the adoption in your default environment, such as identifying top connectors, top most launched apps and top makers.
 
 :::image type="content" source="media/pbi-compliance3.png" alt-text="Default environment tech debt insights":::
 
@@ -129,7 +129,7 @@ The Power BI dashboard in the CoE Starter Kit offers a comprehensive view of the
 
 ##### CoE Starter Kit - Power BI dashboard
 
-The Power BI dashboard in the CoE Starter Kit provides a wealth of useful information, including visual representations of usage patterns, the number of users, and any other relevant data that can help you identify compliance issues and ensure that your apps and cloud flows are being used effectively. These visualizations can be extremely valuable in understanding how your organization is using the Power Platform and identifying areas that may need attention. By providing clear and actionable insights, the dashboard can help you ensure that your Power Platform solutions are secure, compliant, and aligned with your organizational policies.
+The Power BI dashboard in the CoE Starter Kit provides a wealth of useful information, including visual representations of usage patterns, the number of users, and any other relevant data that can help you identify compliance issues and ensure that your apps and cloud flows are being used effectively. These visualizations can be valuable in understanding how your organization is using the Power Platform and identifying areas that may need attention. By providing clear and actionable insights, the dashboard can help you ensure that your Power Platform solutions are secure, compliant, and aligned with your organizational policies.
 
 ##### CoE Starter Kit - inactivity notifications
 
@@ -144,7 +144,7 @@ Learn more:
 
 #### Compliance
 
-Evaluating the risk exposure of apps and cloud flows is an important step in managing the Power Platform effectively. By identifying high-risk apps, your CoE team can define processes for mitigating those risks, such as migrating high-risk apps or providing additional support for high-value apps. Since most organizations have hundreds, if not thousands of apps and cloud flows, manually reaching out to owners to establish risk isn't a scalable option. The CoE Starter Kit includes components that can assist your CoE team in capturing compliance information and identifying high-risk apps. These tools can automate the process of assessing risk, saving your team time and resources while also helping to ensure that your organization's Power Platform solutions are secure and compliant.
+Evaluating the risk exposure of apps and cloud flows is an important step in managing the Power Platform effectively. By identifying high-risk apps, your CoE team can define processes for mitigating those risks, such as migrating high-risk apps or providing more support for high-value apps. Since most organizations have hundreds, if not thousands of apps and cloud flows, manually reaching out to owners to establish risk isn't a scalable option. The CoE Starter Kit includes components that can assist your CoE team in capturing compliance information and identifying high-risk apps. These tools can automate the process of assessing risk, saving your team time and resources while also helping to ensure that your organization's Power Platform solutions are secure and compliant.
 
 The **Admin compliance detail request** is a powerful cloud flow that can help your CoE team establish compliance with organizational policies by iterating over the inventory of apps and bots.
 
@@ -177,7 +177,7 @@ Learn more:
 
 When an employee who is responsible for an app or flow within Power Platform leaves the organization, they may leave behind components they've built, known as orphaned resources. These resources can pose a security risk if they aren't properly managed or maintained. To address this issue, the CoE Starter Kit includes a process to identify and clean up orphaned resources.
 
-This process is designed to run daily checks for any resources that are owned by former employees, ensuring that these resources are either reassigned to a new owner or removed from the tenant if they are no longer needed. This component can help keep your Power Platform solutions are secure and compliant, even when employee turnover occurs.
+This process is designed to run daily checks for any resources that are owned by former employees, ensuring that these resources are either reassigned to a new owner or removed from the tenant if they're no longer needed. This component can help keep your Power Platform solutions are secure and compliant, even when employee turnover occurs.
 
 ![Screenshot of orphaned resources adaptive card sent to line manager](media/orphanedobjects2.png)
 
@@ -186,7 +186,7 @@ Learn more:
 - [Managing apps and cloud flows when the owner leaves the organization (Video)](https://youtu.be/0zptiBppTNo)
 - [CoE Starter Kit - Cleanup for orphaned resources process](governance-components.md#cleanup-for-orphaned-resources)
 
-## Highly-used apps
+## Highly used apps
 
 Highly used apps in your organization often have a compelling story behind their success, such as how they were created, the challenges they overcame and the value they provide to the business. Discovering and sharing these stories can be a great way to drive further adoption and provide confidence to other makers in your organization.
 
