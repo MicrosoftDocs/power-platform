@@ -16,8 +16,8 @@ searchScope:
 
 # Authoring FAQ (TBA)
 
-[!INCLUDE [Preview disclaimer](..includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](/includes/public-preview-disclaimer.md)]
 
 [[WIP]]
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](/includes/footer-banner.md)]
