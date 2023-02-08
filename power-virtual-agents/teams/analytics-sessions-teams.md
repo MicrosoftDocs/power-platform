@@ -2,7 +2,7 @@
 title: "Download chatbot sessions in Microsoft Teams"
 description: "Download Power Virtual Agents chatbot session information from the last 30 days in the app in Microsoft Teams."
 keywords: "PVA, teams"
-ms.date: 01/25/2022
+ms.date: 01/23/2023
 
 ms.topic: article
 author: iaanw
@@ -54,10 +54,10 @@ The downloaded file contains the following information:
 
 - TopicName: Name of the last authored topic that was triggered in this session.
 
-- ChatTranscript: Transcript of the session in the following format:
-  - ***User says:**" "; **Bot says:**" ";* structure
+- ChatTranscript: Transcript of the session in the following format, `User says: <message-text>; Bot says: <message-text>;`.
   - Conversation turns are separated by semicolons
-  - **Bot says** doesn't include the options presented to the user.  
+  - _Bot says_ doesn't include the options presented to the user.
+
     Example:
 
     ```text
