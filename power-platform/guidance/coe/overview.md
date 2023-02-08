@@ -24,7 +24,7 @@ The Microsoft Power Platform CoE Starter Kit is a collection of components and t
 
 You can download the most recently updated assets from the [GitHub repository](https://aka.ms/CoEStarterKitRepo).
 
-The kit doesn't represent the entire CoE, because managing a CoE requires more than tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences. More information: [What is a Center of Excellence?](motivation.md)
+The kit doesn't represent the entire CoE, because managing a CoE requires more than tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences.
 
 The kit provides some automation and tooling to help teams build monitoring and automation necessary to support a CoE. The foundation of the kit is a Microsoft Dataverse data model and workflows to collect resource information across the environments in the tenant. The kit includes multiple apps and Power BI analytics to view and interact with the data you collect. The kit also provides several templates and suggested patterns and practices for implementing CoE efforts.
 
