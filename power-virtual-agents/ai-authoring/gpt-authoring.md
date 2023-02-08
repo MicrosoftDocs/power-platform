@@ -1,14 +1,13 @@
 ---
-title: Create and edit topics using natural language (preview)
-description: Create and edit topics by describing what you want in natural language.
+title: Authoring
+description: Desc for authoring
 keywords: "PVA"
-ms.date: 12/12/2022
+ms.date: 2/8/2023
 ms.topic: how-to
-author: gapretty
+author: iaanw
 ms.author: iawilt
-ms.reviewer: clmori
+ms.reviewer: 
 manager: shellyha
-ms.custom: authoring, topics, variables, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 searchScope:
@@ -17,9 +16,9 @@ searchScope:
 
 # Create and edit topics using natural language (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+[!INCLUDE [Preview disclaimer](../includes/public-preview-disclaimer.md)]
 
-In addition to the traditional method for [creating and editing topics](authoring-create-edit-topics.md), Power Virtual Agents allows you to use create and iterate on topics by describing what you want and having AI build it for you, boosting your productivity as an author significantly. 
+In addition to the traditional method for [creating and editing topics](../authoring-create-edit-topics.md), Power Virtual Agents allows you to use create and iterate on topics by describing what you want and having AI build it for you, boosting your productivity as an author significantly. 
 
 ## Creating a topic
 
@@ -41,7 +40,7 @@ In addition to the traditional method for [creating and editing topics](authorin
    
 4. Click **Create**.
    
-5. The authoring canvas will now open and a new Topic, which can include a generated title and trigger phrases, as well as one or more nodes, will be created for you. You can now review the content that has been generated for you and make any changes required, which you can do either via [natural language descriptions]() or using the [other authoring canvas tools](authoring-create-edit-topics.md).
+5. The authoring canvas will now open and a new Topic, which can include a generated title and trigger phrases, as well as one or more nodes, will be created for you. You can now review the content that has been generated for you and make any changes required, which you can do either via [natural language descriptions]() or using the [other authoring canvas tools](../authoring-create-edit-topics.md).
 
 ## Making changes to a topic
 
@@ -63,4 +62,4 @@ You can make additions or changes to a topic, regardless of how the topic was cr
 
 > You can provide feedback about the outcomes of your request using the thumbs up / down icons available within the panel. If you indicate that a request didn't do what you were expecting using the thumbs down icon, you can optionally provide additional details relating to your request to help us understand how we can improve the quality of future results. 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
