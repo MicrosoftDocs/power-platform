@@ -50,7 +50,7 @@ The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 mod
    
 4. Select **Create**.
    
-5. The authoring canvas will open and a new topic, including a generated title and trigger phrases as well as one or more nodes, will be created for you. You can [use AI to further refine and update the topic](#use-gpt-ai-to-modify-a-topic), in addition to the [usual ways of editing topics](../authoring-create-edit-topics.md).
+5. The authoring canvas will open and a new topic, including a generated title and trigger phrases as well as one or more nodes, will be created for you. You can [use AI to further refine and update the topic](#use-gpt-ai-to-edit-a-topic), in addition to the [usual ways of editing topics](../authoring-create-edit-topics.md).
 
 
 ## Use GPT AI to edit a topic
