@@ -6,7 +6,7 @@ manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -25,7 +25,18 @@ This article will help you to setup the remaining components in the Core solutio
 >[!IMPORTANT]
 >Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
-## Before you start
+## Set up other core components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Capacity alerts and Welcome email**.
+1. This app provides a guided step by step experience through the configuration steps.
+ :::image type="content" source="media/setupwizard-other.png" alt-text="CoE Starter Kit Setup Wizard":::
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+## Set up other core components manually
 
 ### Update environment variables
 
@@ -35,7 +46,7 @@ This article will help you to setup the remaining components in the Core solutio
 |------|---------------|
 |Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams). It is needed for the flow: Admin \| Welcome Email v3. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
 
-## Turn on flows
+### Turn on flows
 
 There are several flows which will need to be turned on for these components:  
 
@@ -47,15 +58,14 @@ There are several flows which will need to be turned on for these components:
 >[!IMPORTANT]
 > The [Admin | Welcome Email v3](core-components.md#flows-2) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. See: See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)
 
-## Share apps with admins and makers
+### Share apps with admins and makers
 
-Share the **Maker - Command Center** with your makers and assign them the **Power Platform Maker SR**.
+Share the **CoE Maker Command Center** with your makers and assign them the **Power Platform Maker SR**.
 Share the [**App Catalog**](core-components.md#app-catalog) with your end users and assign them the **Power Platform User SR**.
 
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## All environment variables
 
