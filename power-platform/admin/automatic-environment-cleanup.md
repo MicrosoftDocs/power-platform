@@ -22,7 +22,7 @@ Operational processes for datacenters periodically identify environments for ten
 > [!TIP]
 > If you get notifications about exceeding your entitled storage capacity, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements) for actions you can take. 
 > 
-> For information on automatic cleanup of Microsoft Dataverse for Teams environments, see [Automatic deletion of inactive Microsoft Dataverse for Teams environments (preview)](inactive-teams-environment.md).
+> For information on automatic cleanup of Microsoft Dataverse for Teams environments, see [Automatic deletion of inactive Microsoft Dataverse for Teams environments](inactive-teams-environment.md).
 
 To see the status of your environments:
 
@@ -49,15 +49,96 @@ Here's what you can expect to receive if you, as an admin or someone in your org
 ## Actions you can take to prevent environment disabling and deletion
 
 Anytime prior to the environment deletion you can purchase licenses. Be sure to purchase enough licenses and/or capacity to cover all the production environments in your tenant. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
-[Automatic deletion of inactive Microsoft Dataverse for Teams environments (preview)](inactive-teams-environment.md)
 Within 24 hours after the licenses and capacity are applied to your tenant, the environment is automatically enabled. If your environment has already been deleted, it is possible to recover it within a limited window of time. See [Recover environment](recover-environment.md).
 
 > [!IMPORTANT] 
 > Please allow ample time to take appropriate action. Your organization may have a central admin and purchasing group and might be purchasing through Microsoft partners. Please plan accordingly. 
 
+## Inactivity based environment cleanup
+Power Platform provides a cleanup mechanism that automatically removes environments from your tenant that are left inactive. An environment will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments.This cleanup process is automatic.
+
+## Scope
+Developer and dataverse for teams environment are affected by the inactvity based clean up.
+
+## Timeline for inactive environments
+
+The following table describes the schedule of notifications and actions for environments that are considered inactive.
+
+| State of environment | Power Platform action |
+| --- | --- |
+| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Update the environment state on the Environments list page<sup>1</sup> and the Environment page<sup>2</sup>. |
+| 87 days after no user activity | Send a warning that the environment will be disabled. Update the inactive environment state on the Environments list page<sup>1</sup> and the Environment page<sup>2</sup>. |
+| 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the Environments list page<sup>1</sup> and the Environment page<sup>3</sup>. |
+| 113 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the Environments list page<sup>1</sup> and the Environment page<sup>3</sup>. |
+| 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the Environments list page<sup>1</sup> and the Environment page<sup>3</sup>. |
+| 120 days after no user activity | Delete the environment. Send a notice that the environment has been deleted. |
+
+<sup>1</sup> **Environment state on the Environments list page in Power Platform admin center**
+:::image type="content" source="media/inactive-environment-state.png" alt-text="Screenshot of the Environments list page in Power Platform admin center, with the environment state column highlighted.":::
+
+<sup>2</sup>**Inactive environment alert on the Environment page in Power Platform admin center**
+:::image type="content" source="media/inactive-environment-state-box.png" alt-text="Screenshot of the inactive environment alert on the Environment page, with the Trigger environment activity checkbox highlighted.":::
+
+> [!NOTE]
+> The **Environment inactive** warning tile only displays if the environment is <= 7 days until disablement.
+
+<sup>3</sup>**Disabled environment alert on the Environment page in Power Platform admin center**
+:::image type="content" source="media/disabled-environment-state-box.png" alt-text="Screenshot of the disabled environment alert on the Environment page, with the Re-enable environment checkbox highlighted.":::
+
+> [!NOTE]
+> The **Environment disabled** tile displays anytime a environment is disabled due to inactivity.
+
+### Notification recipients
+
+The following users will receive email notifications on the schedule described in the timeline:
+
+- The environment's system administrators
+- The user who created the environment 
+
+Additionally, users and makers are notified on the Environment's list page and Environment page when the environment is disabled.
+
+### Definition of user activity
+
+Power Platform calculates a single measure of inactivity for each environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Virtual Agents, and Dataverse.
+
+Most create, read, update, and delete operations on the environment and its resources that a user, maker, or admin initiates are considered activity. Most read operations aren't accounted for.
+
+Here are some examples of the types of activities that are included in the measure:
+
+- **User activity**: Launch an app, execute a flow (whether automatic or not), chat with a Power Virtual Agents bot
+- **Maker activity**: Create, read, update, or delete an app, flow (desktop and cloud flows), Power Virtual Agents bot, custom connector
+- **Admin activity**: Environment operations such as copy, delete, back up, recover, reset  
+
+Activity includes automated behaviors such as scheduled flow runs. For example, if there's no user, maker, or admin activity in an environment, but it contains a cloud flow that runs daily, then the environment is considered active.
+
+## Trigger activity, re-enable, and recover environment
+
+By default, administrators have 30 days to re-enable an environment. If the environment remains disabled for 30 days, it's automatically deleted. Administrators have seven days to recover a deleted environment. See [Recover a deleted environment](#recover-a-deleted-environment).
+
+### Trigger activity for an inactive environment 
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. Select **Environments**, and then select the inactive environment.
+3. On the Environment page, select **Trigger environment activity**.
+
+### Re-enable a disabled environment
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. Select **Environments**, and then select the disabled Dataverse for Teams environment.
+3. On the Environment page, select **Re-enable environment**.
+
+### Recover a deleted environment
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. Select **Environments**, and then select **Recover deleted environments**.
+3. Select an environment to recover, and then select **Recover**.
+
+For more information, see [recover environment](recover-environment.md).
+
 ### See also
 [Backup and restore environments](backup-restore-environments.md) <br />
 [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md)<br />
+[Automatic deletion of inactive Microsoft Dataverse for Teams environments](inactive-teams-environment.md) <br />
 [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 
