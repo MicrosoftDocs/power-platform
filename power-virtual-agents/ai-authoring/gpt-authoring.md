@@ -22,25 +22,31 @@ searchScope:
 >  
 > This doc is still under construction. Headings, titles, page names, and TOC entries are placeholders.
 
-In addition to the traditional method for [creating and editing topics](../authoring-create-edit-topics.md), Power Virtual Agents allows you to use create and iterate on topics by describing what you want and having AI build it for you, boosting your productivity as an author significantly. 
+In addition to the traditional method for [creating and editing topics](../authoring-create-edit-topics.md), Power Virtual Agents lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
+
+The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 model (which is also used in Bing).
+
+> [!WARNING]
+>
+> Need to update with official branding. cw Jack.
 
 ## Creating a topic
 
 1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic** and then **Describe it to build it (preview)**.
 
-   :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
+    :::image type="content" source="media/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
 
-2. In the **Describe it to build it (preview)** window that appears, enter a description of the topic you would like to create. 
-   
-   You can include details of the questions you want your topic to ask your users and messages and even details of specific behavior you want your topic to have. Below are some examples of requests you could make, based on the same, but increasing in their detail.
-   
-   - create a topic to let a user check the status of a flight
-   - create a topic to let a user check the status of a flight, asking the user for their flight date and flight number.
-   - create a topic to let a user check the status of a flight, asking the user for their flight date and flight number. Repeat the users responses back to them and add 3 message variations to each question.
+2. In the **Describe it to build it (preview)** window that appears, describe the topic you want to create. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.
 
-3. Optionally, enter a name for your topic in the **Name your topic** input.
+    :::image type="content" source="media/describe-it-create-topic.png" alt-text="Screenshot of the Describe it to build it pop-up window.":::
    
-   > Giving your topic a name can help to improve the topic that is built for, because it adds content to your request. 
+    You can select any of the examples to automatically insert them into the **Create a topic to...** field. Select **View more examples** to generate new suggestions. 
+
+3. Enter a name for your topic in the **Name your topic** field. You can include punctuation in the trigger phrase, but it's best to use short phrases rather than long sentences.
+   
+   > [!TIP]
+   > 
+   > Giving your topic a name can help improve the topic that is built for, because it adds content to your request. 
    
 4. Click **Create**.
    

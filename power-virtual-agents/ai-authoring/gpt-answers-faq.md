@@ -20,7 +20,7 @@ searchScope:
 
 > [!WARNING]
 >  
-> This doc is still under construction. Headings, titles, page names, and TOC entries are placeholders.
+> This doc is under stakeholder review and is not final.
 
 ## General
 
