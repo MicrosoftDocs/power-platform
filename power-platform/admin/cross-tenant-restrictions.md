@@ -67,6 +67,9 @@ Similarly, users signed in to Power Platform in the Fabrikam tenant can’t esta
 
 ![Restrict outbound and inbound cross-tenant access.](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
 
+> [!NOTE]
+> A connection attempt initiated by a guest user from their host tenant, targeting data sources within the same host tenant is not evaluated by the tenant isolation rules.
+
 ## Tenant isolation with allowlists
 
 One-way tenant isolation or inbound isolation will block connection establishment attempts to your tenant from other tenants. 
