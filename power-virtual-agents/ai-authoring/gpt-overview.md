@@ -23,4 +23,9 @@ searchScope:
 
 [[WIP]]
 
+## Limitations
+
+Answers inc. from Gary 2/13
+Authoring inc. from Elliot TBA
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]
