@@ -25,7 +25,7 @@ This article will help you to setup the remaining components in the Core solutio
 >[!IMPORTANT]
 >Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
-## Set up other core components using the Setup Wizard [Preview]
+## Set up other core components using the Setup Wizard (preview)
 
 1. Open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
