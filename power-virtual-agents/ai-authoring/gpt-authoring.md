@@ -73,7 +73,7 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 
 > [!TIP]
 >
->If you have any nodes selected on your canvas, they will be used to provide further context to your request. 
+>If you have any nodes selected on your canvas, they will be used to provide further context to your request.  
 >For example, if you have a question node selected, you could write, _add a speech response_, instead of _add a speech response to the question node_.
 
 3. Click **Update**. The AI will make updates based on your directions.
@@ -86,7 +86,7 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 
 > [!TIP]
 >  
-> You can provide feedback on how well the AI did by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Describe it** panel. 
+> You can provide feedback on how well the AI did by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Describe it** panel.  
 > If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback will to improve the quality of the AI.
 >  
 > :::image type="content" source="media/describe-it-feedback.png" alt-text="Screenshot of the Power Virtual Agents Describe it feedback panel.":::
