@@ -21,6 +21,17 @@ searchScope:
 > [!WARNING]
 >  
 > This doc is under stakeholder review and is not final. Feature names are not final.
+>
+
+
+> [!CAUTION]
+> ## TODO
+> - [ ] Connect to intro and hub  
+> - [ ] Update naming/branding wording
+> - [ ] Add mgmt proc
+> - [ ] Get lims
+
+
 
 In addition to the traditional method for [creating and editing topics](../authoring-create-edit-topics.md), Power Virtual Agents lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
 

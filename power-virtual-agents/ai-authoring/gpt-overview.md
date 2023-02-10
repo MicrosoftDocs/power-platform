@@ -21,7 +21,11 @@ searchScope:
 >  
 > This doc is still under construction. Headings, titles, page names, and TOC entries are placeholders.
 
-[[WIP]]
+> [!CAUTION]
+> ## TODO
+> - [ ] Connect to subs and hub  
+> - [ ] Check naming/branding wording
+
 
 ## Limitations
 

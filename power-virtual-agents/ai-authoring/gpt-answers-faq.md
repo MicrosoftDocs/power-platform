@@ -22,6 +22,14 @@ searchScope:
 >  
 > This doc is under stakeholder review and is not final.
 
+> [!CAUTION]
+> ## TODO
+> - [ ] Connect to intro and hub  
+> - [ ] Update naming/branding wording
+> - [ ] Link to Bing announcement
+> - [ ] Get lims
+> - [ ] Confirm sub path limits
+
 ## General
 
 ### What is GPT Answers?
