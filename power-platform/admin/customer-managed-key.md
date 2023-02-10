@@ -30,7 +30,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > - Revert/remove environment’s CMK encryption to Microsoft-managed key.
 > - Change key by creating a new enterprise policy, removing the environment from CMK and re-apply CMK with new enterprise policy.
 > - Lock CMK environments by revoking CMK key vault and/or key permissions.
-> - Migrate [bring-your-own-key (BYOK)](https://learn.microsoft.com/power-platform/admin/manage-encryption-key) environments to CMK by applying CMK key.
+> - Migrate [bring-your-own-key (BYOK)](/power-platform/admin/manage-encryption-key) environments to CMK by applying CMK key.
 
 >
 > This feature is gradually being rolled out following this deployment schedule:
