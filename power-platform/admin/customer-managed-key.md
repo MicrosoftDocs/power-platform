@@ -1,5 +1,5 @@
 ---
-title: Manage your encryption key in Power Platform
+title: Manage your customer-managed encryption key in Power Platform 
 description: Learn how to manage your encryption key. 
 author: paulliew
 ms.author: paulliew
@@ -9,13 +9,13 @@ ms.topic: how-to
 ms.date: 01/25/2023
 ms.custom: template-how-to
 ---
-# Manage your encryption key (preview)
+# Manage your customer-managed encryption key (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Customers have data privacy and compliance requirements to secure their data by encrypting their data at-rest. This secures the data from being exposed in an event where a copy of the database is stolen. With data encryption at-rest, the stolen database data is protected from being restored to a different server without the encryption key.
 
-All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
+All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
 > [!IMPORTANT]
 > This is a preview feature.
@@ -30,7 +30,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > - Revert/remove environment’s CMK encryption to Microsoft-managed key.
 > - Change key by creating a new enterprise policy, removing the environment from CMK and re-apply CMK with new enterprise policy.
 > - Lock CMK environments by revoking CMK key vault and/or key permissions.
-> - Migrate bring-your-own-key (BYOK) environments to CMK by applying CMK key.
+> - Migrate [bring-your-own-key (BYOK)](https://learn.microsoft.com/power-platform/admin/manage-encryption-key) environments to CMK by applying CMK key.
 
 >
 > This feature is gradually being rolled out following this deployment schedule:
@@ -41,7 +41,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > |3 & 4     |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
 > |5     | September 2023     |  North America       |
 
-The following services support using customer-managed key:
+All your customer data stored in the following services can be encrypted with CMK:
 
 - Dataverse (Custom solutions and Microsoft services)
 - Chat for Dynamics 365
@@ -306,9 +306,12 @@ Administrators who have Azure Global, Dynamics 365, and Power Platform administr
    1. Open the user record, on the **Overview** tab copy the user’s **Object ID**. Paste this into a text editor such as NotePad for later.
 1. Get the enterprise policy resource ID. To do this:
    1. Open Azure Resource Graph Explorer.
-   1. Search for `microsoft.powerplatform/enterprisepolicies`, and then select the **microsoft.powerplatform/enterprisepolicies** resource.
-   1. Select **Run Query**.
-   1. Scroll to the right of the results page and select the **See details** link.
+   1. Click on the **Table** tab.
+   1. Enter `microsoft.powerplatform/enterprisepolicies` in the Search box, and then select the **microsoft.powerplatform/enterprisepolicies** resource.
+   1. Click **Run Query** on the command bar.
+   1. A list of all the Power Platform enterprise policies will display.
+   1. Locate the enterprise policy the you want to grant access.
+   1. Scroll to the right of the located enterprise policy and click the **See details** link.
    1. On the **Details** page, copy the ID.
    1. Start the Cloud Shell, and run the following command replacing objId with the user’s object ID and the enterprise policy resource ID with the `enterprisepolicies` ID found in the previous steps:
     `New-AzRoleAssignment -ObjectId { objId} -RoleDefinitionName Reader -Scope {EP Resource Id}`
@@ -413,7 +416,7 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 
 1. Create a new encryption key and a new enterprise policy.
 1. Or use an existing enterprise policy.
-1. Add the non-BYOK or BYOK environment to the policy - see ### Add an environment to the enterprise policy to encrypt data
+1. Add the non-BYOK or BYOK environment to the policy - see [Add an environment](#Add-an-environment-to-the-enterprise-policy-to-encrypt-data) to the enterprise policy to encrypt data.
 
 > [!Note]
   > The environment is disabled during migration of the BYOK key to the customer-managed key. The downtime is short as we only need to change the encryption key for the SQL storage. Once the environment is migrated to customer-managed key, the audit log is automatically moved to CosmosDB, the upload files/images are moved to File Storage and they are encrypted automatically with the customer-managed key.
