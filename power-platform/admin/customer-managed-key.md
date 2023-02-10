@@ -378,6 +378,7 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 > The environment will be disabled when it's added to the new enterprise policy.
 
 ##	Lock environments by revoking key vault and/or key permission access
+
 Since separate encryption keys can be used to encrypt different Dataverse environment(s), you can separately lock these environments by revoking key vault access to the respective enterprise policy. Locking key vault or key access can only be done by the Azure Key Vault admin. There is no advance warning to the Power Platform admin and/or users when an Azure Key Vault admin revoked key access. 
 Key access revocation can be triggered by any of the following steps:
 >1. Revoking key vault permissions from the enterprise policy.
@@ -403,12 +404,14 @@ Key access revocation can be triggered by any of the following steps:
   > During preview, there might be situations where the **Environment status** or the **Encryption Status** show **Failed** status. Submit a Microsoft Support request for help.
 
 ## Unlock environments
+
 To unlock environments, all key access permissions must be restored for the original encryption key. Submit a Microsoft Support request to unlock and enable the environments. The environments can only be enabled when the original encryption key that was used to encrypt the customer data is restored. 
 
-> [!Note]
+> [!NOTE]
   > During preview, locked environments cannot be enabled by administrator when the key access permissions are restored. Environments remain disabled until a Microsoft Support request is received.
 
-##	Migrate Bring-your-own-key (BYOK) environments to customer-managed key
+##	Migrate bring-your-own-key (BYOK) environments to customer-managed key
+
 For customers using the previous [manage the encryption key](manage-encryption-key.md) (BYOK) feature, they can change their BYOK enabled environment's encryption to use the new customer-managed key. You can also add your existing non-BYOK enabled environments to use the new customer-managed key.
 
 - Add non-BYOK enabled environments – these are environments that you haven’t encrypted with your own key.
@@ -416,7 +419,7 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 
 1. Create a new encryption key and a new enterprise policy.
 1. Or use an existing enterprise policy.
-1. Add the non-BYOK or BYOK environment to the policy - see [Add an environment](#Add-an-environment-to-the-enterprise-policy-to-encrypt-data) to the enterprise policy to encrypt data.
+1. Add the non-BYOK or BYOK environment to the policy - see [Add an environment](#add-an-environment-to-the-enterprise-policy-to-encrypt-data) to the enterprise policy to encrypt data.
 
 > [!Note]
   > The environment is disabled during migration of the BYOK key to the customer-managed key. The downtime is short as we only need to change the encryption key for the SQL storage. Once the environment is migrated to customer-managed key, the audit log is automatically moved to CosmosDB, the upload files/images are moved to File Storage and they are encrypted automatically with the customer-managed key.
