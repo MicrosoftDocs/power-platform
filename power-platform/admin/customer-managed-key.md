@@ -84,7 +84,9 @@ The malicious key vault administrator creates a key and an enterprise policy on 
 > [!Note]
 > - Azure Key Vault has built-in safeguard to assist in restoring the key and it is required to have the **Soft Delete** and **Purge protection** Key Vault settings  enabled. Another safeguard to be considered is to make sure that there is separation of duty where the Azure Key Vault administrator is not granted access to the Power Platform admin center.
 
-## Separation of duty 
+## Separation of duty
+
+This section describes the customer managed key feature tasks that each admin role is responsible for.
 
 ### Azure Key Vault and Power Platform/Dynamics 365 service admin overview
 
@@ -92,7 +94,7 @@ To enable customer-managed keys, first the key vault administrator creates a key
 
 The key vault administrator then grants the respective Power Platform/Dynamics 365 service admin read access to the enterprise policy. Once read permission is granted, the Power Platform/Dynamics 365 service admin can go to the Power Platform Admin Center and add environment(s) to the enterprise policy. All added environment(s) customer data is then encrypted with the customer-managed key linked to this enterprise policy.
 
-#### Azure Key Vault administrator tasks
+### Azure Key Vault administrator tasks
 
 #### Prerequisites
 
