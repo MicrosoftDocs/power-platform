@@ -4,11 +4,11 @@
     href: ai-authoring/gpt-overview.md
   - name: Expand conversational reach
     href: ai-authoring/gpt-answers.md
-  - name: ChatGPT AI modelling FAQ (Authoring)
+  - name: GPT AI modeling FAQ (Answers)
     href: ai-authoring/gpt-answers-faq.md
   - name: Create and modify bots with AI
     href: ai-authoring/gpt-authoring.md
-  - name: ChatGPT AI modelling FAQ (Answers)
+  - name: GPT AI modelling FAQ (authoring)
     href: ai-authoring/gpt-authoring-faq.md
   - name: Quickstart with GPT
     href: ai-authoring/gpt-quickstart.md
