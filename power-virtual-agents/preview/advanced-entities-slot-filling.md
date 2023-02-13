@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ---
 
-# Use entities and slot filling in Power Virtual Agents bots
+# Use entities and slot filling in Power Virtual Agents bots (preview)
 
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
