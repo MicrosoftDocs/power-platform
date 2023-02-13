@@ -21,7 +21,6 @@ search.app:
 
 >[!IMPORTANT]
 > The reports on this page are part of a separate dashboard, **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit**. See: [Setup Power BI dashboard](setup-powerbi.md).
-> This dashboard is currently not available if you have installed the CoE Starter Kit in a Dataverse for Teams environment.
 
 The **Compliance and Adoption** dashboard highlights governance, compliance and security insights, allows you to gain a high level view into your adoption and provides a tech debt report of the [Default environment](/power-platform/admin/environments-overview#the-default-environment).
 
