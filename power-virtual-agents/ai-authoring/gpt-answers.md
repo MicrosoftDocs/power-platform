@@ -25,7 +25,7 @@ searchScope:
 > - [ ] Connect to intro and hub (when written...)
 > - [ ] Update naming/branding wording (waiting on final)
 > - [ ] Add mgmt proc
-> - [ ] Get lims (waiting for Elliott's reply 2/14@1116)
+> - [ ] Get lims (if usage exceeded then turn off GPT for test bot, otherwise contact admin?; single-turn convo; only publically available URLs indexed by Bing)()
  -->
 
 <INTRO>
