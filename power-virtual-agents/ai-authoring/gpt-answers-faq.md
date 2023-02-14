@@ -18,16 +18,6 @@ searchScope:
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-
-
-
-<!-- ## TODO
-> - [ ] Connect to intro and hub  
-> - [ ] Update naming/branding wording
-> - [ ] Link to Bing announcement
-> - [ ] Confirm sub path limits
--->
-
 This FAQ document answers common questions about the AI that is used when creating new topics, or modifying existing topics, in Power Virtual Agents.
 
 It should be read alongside the [GPT Answers Learn topic](gpt-answers.md). 
@@ -72,11 +62,9 @@ Additional evaluation was performed over custom datasets for offensive and malic
 
 ### How does a bot maker get the most out of GPT Answers?
 
-GPT Answers works best when you designate a trusted and valid website from which content should be queried. In particular answers are most accurate when you specify a top-level domain, or avoid using a URL that contains multiple levels or "paths". See the [GPT Answers Learn topic](gpt-answers.md) for examples and suggestions. All webpages that belong to this domain will be searched for a match against the user’s question.
+GPT Answers works best when you designate a trusted and valid website from which content should be queried. In particular answers are most accurate when you specify a top-level domain, or avoid using a URL that contains multiple levels or "paths". See the [GPT Answers Learn topic](gpt-answers.md) for examples and suggestions. ==All webpages that belong to this domain== [^1] will be searched for a match against the user’s question.
 
-> [!WARNING]
->  
-> Does the last sentence mean that even if you put in a subURL (microsoft.com/rewards/earning), GPT will look at everything under microsoft.com? Or only at content in that path, eg microsoft.com/rewards/earning/help and microsoft.com/rewards/earning/redeem would be used, but microsoft.com/systems/review would not?
+[^1]: Does the last sentence mean that even if you put in a subURL (microsoft.com/rewards/earning), GPT will look at everything under microsoft.com? Or only at content in that path, eg microsoft.com/rewards/earning/help and microsoft.com/rewards/earning/redeem would be used, but microsoft.com/systems/review would not?
 
 
 ### How can a customer contribute?

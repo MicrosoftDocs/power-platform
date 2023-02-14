@@ -1,14 +1,14 @@
-- name: Use ChatGPT-powered AI
+- name: GPT-3 AI in Power Virtual Agents
   items:
-  - name: Create bots by using AI
+  - name: GPT AI in Power Virtual Agents
     href: ai-authoring/gpt-overview.md
-  - name: Expand conversational reach
+  - name: How to use GPT AI to generate a bot's responses
     href: ai-authoring/gpt-answers.md
-  - name: GPT AI modeling FAQ (Answers)
+  - name: GPT AI response generation training, model, and usage FAQ
     href: ai-authoring/gpt-answers-faq.md
-  - name: Create and modify bots with AI
+  - name: How to use GPT AI to create and edit a bot's topics
     href: ai-authoring/gpt-authoring.md
-  - name: GPT AI modelling FAQ (authoring)
+  - name: GPT AI topic creation training, model, and usage FAQ
     href: ai-authoring/gpt-authoring-faq.md
   - name: Quickstart with GPT
     href: ai-authoring/gpt-quickstart.md
