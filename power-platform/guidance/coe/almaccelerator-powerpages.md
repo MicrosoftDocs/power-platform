@@ -2,13 +2,11 @@
 title: "Configuring and using the ALM accelerator for Power Apps portal and Power Pages | MicrosoftDocs"
 description: "Committing Power Apps Portal/Power Pages website can be achieved by including the website during solution commit. This document describes how to commit Power Apps Portal/Power Pages website and deploy to test environments."
 author: rajeevpentyala
-manager: devkeydet
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/14/2022
+ms.date: 02/13/2023
 ms.subservice: guidance
 ms.author: rajeevpe
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 search.audienceType: 
   - admin
 search.app: 
@@ -26,7 +24,7 @@ The application lifecycle management (ALM) accelerator components enable makers 
 
 With the ALM Accelerator, you can source control your Power Pages websites, transport them to downstream environments, and include them during solution commit.
 
-## Prerequisites for Power Apps portal or Power Pages website ALM
+## Prerequisites for Power Pages website ALM
 
 - An active website created using [Power Pages](/power-pages/introduction).
 - [ALM accelerator for Power Platform app](almacceleratorpowerplatform-components.md)
@@ -50,15 +48,15 @@ When working with multiple different environments, you may consider using deploy
 
 Follow these steps to use deployment profile along with Power Pages website in the ALM Accelerator:
 
-1. Post committing the solution by including Power Pages website. Open the solution branch.
-1. Create a folder named deployment-profiles, under 'PowerPages' folder -> Website folder.
-1. Inside deployment-profiles folder, create a deployment YAML file that contains the environment-specific changes. deployment YAML filename must start with your 'Environment' name. For example, development environment can be called "dev.deployment.yml" and validation environment can be called "validation.deployment.yml".
+1. After committing the solution by including Power Pages website. Open the solution branch.
+1. Create a folder named deployment-profiles, under **PowerPages** folder > **Website** folder.
+1. In the **deployment-profiles** folder, create a deployment YAML file that contains the environment-specific changes. The deployment YAML filename must start with your [Environment] name. For example, development environment can be called "dev.deployment.yml" and validation environment can be called "validation.deployment.yml".
 
    :::image type="content" source="media/setup-almacceleratorpowerplatform/deployment-profile-yml-files.png" alt-text="Power Pages website deployment profiles":::
 
-1. Please refer [Portal CLI documentation](../../developer/cli/reference/paportal.md) on the usage and preparation of deployment profiles.
-1. When the 'deployment-profiles' folder presents in your repository, during deployment, 'ALM Accelerator' checks for a YAML file starts with Environment Name
-1. No other steps are required to use deployment profiles for Power Pages website.
+Go to [Portal CLI documentation](../../developer/cli/reference/paportal.md) on the usage and preparation of deployment profiles.
+
+When the **deployment-profiles** folder is present in your repository, the ALM Accelerator automatically checks for the deployment YAML file starting with the environment name during deployment.
 
 ## Upload website to downstream environments
 
@@ -69,10 +67,10 @@ No other steps are required to upload Power Pages website to downstream environm
 Follow these steps to update the website record once the website has been deployed to your downstream environments:
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select the downstream environment and under 'Resources', select 'Power Pages sites'.
-1. You will be redirected to 'Power Pages sites' page. Select the website and click on 'Manage'.
-1. Under 'Site Details' section, select 'Edit' which opens up 'Edit Details' side panel.
-1. Under 'Website Record' dropdown select the website that got transported from your maker/dev environment and select **Save**.
+1. Select the downstream environment, and under **Resources**, select **Power Pages sites**.
+1. You will be redirected to **Power Pages sites** page. Select the website and select **Manage**.
+1. Under the **Site Details** section, select **Edit**.
+1. From **Website Record** list, select the website that got transported from your maker/ or dev environment, and select **Save**.
 
    :::image type="content" source="media/setup-almacceleratorpowerplatform/Portal-Update-Bindings.png" alt-text="Power Pages website update website":::
 
