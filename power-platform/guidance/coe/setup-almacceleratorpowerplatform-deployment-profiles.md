@@ -2,13 +2,11 @@
 title: "Configuring the ALM Accelerator for Power Platform deployment user settings and profiles | MicrosoftDocs"
 description: "Deployment user settings and profiles direct the ALM Accelerator for Power Platform app on how to display UI components and how to source-control and deploy solutions."
 author: jenschristianschroder
-manager: devkeydet
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021
+ms.date: 02/13/2023
 ms.subservice: guidance
 ms.author: jeschro
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 search.audienceType: 
   - admin
 search.app: 
@@ -57,9 +55,9 @@ To create user settings for the ALM accelerator for Microsoft Power Platform, fo
     - **Commit Portals** - This function provides the user with the ability to include the Power Apps Portal/Power Pages website during the solution commit to source control. They can select the Power Apps Portal/Power Pages website before committing to source control.
     - **Commit Portals Default** - If the **Commit Portals** is **Allowed**, this function prepopulates the **Include Power Apps Portal/Power Pages** toggle control in the ALM Accelerator App. If the **Commit Portals Default** set as Allowed the **Include Power Apps Portal/Power Pages** toggle control would be preset to True and vice versa.
     - **Publish Customizations** - This function provides the user with the ability to publish customizations during the solution commit to source control. They can select the publish customizations toggle before committing to source control or turn off the toggle to skip publishing which can save time in the commit process.
-    - **Publish Customizations Default** If the **Publish Customizations** is **Allowed**, this function prepopulates the **Publish Customizations** toggle control in the ALM Accelerator App. If the **Bypass Approval Default** set as Allowed the **Bypass Approval** toggle control would be preset to True and vice versa.
+    - **Publish Customizations Default** - If the **Publish Customizations** is **Allowed**, this function prepopulates the **Publish Customizations** toggle control in the ALM Accelerator App. If the **Bypass Approval Default** set as Allowed the **Bypass Approval** toggle control would be preset to True and vice versa.
     - **Allow Import Managed** - This function provides the user with the ability to import managed solutions during the solution import. They can select the import managed toggle before importing the solution or turn off the toggle to import unmanaged solutions into their maker environment.
-    - **Allow Import Managed Default** If the **Allow Import Managed** is **Allowed**, this function prepopulates the **Allow Import Managed** toggle control in the ALM Accelerator App. If the **Allow Import Managed Default** set as Allowed the **Allow Import Managed** toggle control would be preset to True and vice versa.
+    - **Allow Import Managed Default** - If the **Allow Import Managed** is **Allowed**, this function prepopulates the **Allow Import Managed** toggle control in the ALM Accelerator App. If the **Allow Import Managed Default** set as Allowed the **Allow Import Managed** toggle control would be preset to True and vice versa.
 
 1. Update **User Labels**. The following areas are configurable in the app related to user labels for functions. These values also appear in the **Deployment History** view under the action that was executed:
 
