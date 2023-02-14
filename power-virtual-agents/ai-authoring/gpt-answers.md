@@ -20,19 +20,15 @@ searchScope:
 
 
 
-> [!WARNING]
->  
-> This doc is still under construction. Headings, titles, page names, and TOC entries are placeholders.
 
-> [!CAUTION]
-> ## TODO
-> - [ ] Connect to intro and hub  
-> - [ ] Update naming/branding wording
+<!-- TODO
+> - [ ] Connect to intro and hub (when written...)
+> - [ ] Update naming/branding wording (waiting on final)
 > - [ ] Add mgmt proc
-> - [ ] Get lims
+> - [ ] Get lims (waiting for Elliott's reply 2/14@1116)
+ -->
 
-
-INTRO
+<INTRO>
 
 ##Prerequisites
 - Feature needs to be enabled for each bot (prob more like cuation/alert)

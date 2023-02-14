@@ -18,17 +18,14 @@ searchScope:
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-> [!WARNING]
->  
-> This doc is under stakeholder review and is not final.
 
-> [!CAUTION]
-> ## TODO
+<!-- ## TODO
 > - [ ] Connect to intro and hub  
 > - [ ] Update naming/branding wording
 > - [ ] Link to Bing announcement
-> - [ ] Get lims
 > - [ ] Confirm sub path limits
+-->
+
 
 ## General
 
