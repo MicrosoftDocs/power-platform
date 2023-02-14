@@ -25,7 +25,8 @@ searchScope:
 > - [ ] Connect to intro and hub (when written...)
 > - [ ] Check all naming/branding wording (descriptive vs named)
 > - [ ] Add mgmt proc
-> - [ ] Get lims (if usage exceeded then turn off GPT for test bot, otherwise contact MSFT support (sim to allowing publishing); single-turn convo; only publically available URLs indexed by Bing)()
+> - [ ] Get lims (if usage exceeded then turn off GPT for test bot, otherwise contact MSFT support (sim to allowing publishing); single-turn convo; only publically available URLs indexed by Bing)
+> - [ ] Confirm sub path limits (looks like 2 or 3 - recheck the en-us)
  -->
 
 <INTRO>

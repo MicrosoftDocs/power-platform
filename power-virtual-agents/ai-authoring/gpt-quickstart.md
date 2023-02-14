@@ -18,10 +18,6 @@ searchScope:
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-> [!WARNING]
->  
-> This doc is still under construction. Headings, titles, page names, and TOC entries are placeholders.
 
-[[WIP]]
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

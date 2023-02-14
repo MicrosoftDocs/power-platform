@@ -17,19 +17,14 @@ searchScope:
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-> [!WARNING]
->  
-> This doc is still under construction. Headings, titles, page names, and TOC entries are placeholders.
-
-> [!CAUTION]
-> ## TODO
+<!--
 > - [ ] Connect to subs and hub  
 > - [ ] Check naming/branding wording
-
+-->
 
 ## Limitations
 
-Answers inc. from Gary 2/13
-Authoring inc. from Elliot TBA
+<!-- Answers inc. from Gary 2/21? Check with Mahesh -->
+
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
