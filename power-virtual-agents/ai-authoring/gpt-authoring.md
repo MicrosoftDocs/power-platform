@@ -31,11 +31,15 @@ In addition to the traditional method for [creating and editing topics](../autho
 
 The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 model (which is also used in Bing).
 
+
+
 ## Prerequisites
 - Feature needs to be enabled (1. Settings > General settings > Enable "Intelligent authoring support (preview)") it's on by default
 - Need PVA2 preview
 
 ## Use GPT AI to create a topic
+
+When create a new topic, you can select **Describe it** and ask the AI to make it for you. You need to do this for each topic you want to create, and you can't create multiple topics in one description.
 
 1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic** and then **Describe it to build it (preview)**.
 
@@ -52,6 +56,7 @@ The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 mod
    > [!TIP]
    > 
    > Giving your topic a name helps the AI to construct your topic, as it adds context to your request. 
+
    
 4. Select **Create**.
    

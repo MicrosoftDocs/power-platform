@@ -19,6 +19,8 @@ searchScope:
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
+
+
 <!-- ## TODO
 > - [ ] Connect to intro and hub  
 > - [ ] Update naming/branding wording
@@ -26,6 +28,9 @@ searchScope:
 > - [ ] Confirm sub path limits
 -->
 
+This FAQ document answers common questions about the AI that is used when creating new topics, or modifying existing topics, in Power Virtual Agents.
+
+It should be read alongside the [GPT Answers Learn topic](gpt-answers.md). 
 
 ## General
 
@@ -65,7 +70,7 @@ Additionally, we use the [ROUGE-1](https://en.wikipedia.org/wiki/ROUGE_(metric))
 
 Additional evaluation was performed over custom datasets for offensive and malicious prompts and responses where precision and recall was measured on a labeled dataset.
 
-### How does a customer get the most out of GPT Answers?
+### How does a bot maker get the most out of GPT Answers?
 
 GPT Answers works best when you designate a trusted and valid website from which content should be queried. In particular answers are most accurate when you specify a top-level domain, or avoid using a URL that contains multiple levels or "paths". See the [GPT Answers Learn topic](gpt-answers.md) for examples and suggestions. All webpages that belong to this domain will be searched for a match against the user’s question.
 
@@ -83,7 +88,7 @@ This feedback will be used to improve system quality.
 
 ### Will GPT Answers work as well using languages other than  English?
 
-GPT Answers only supports English. Inaccurate responses may be returned when users converse with the system in languages other than English.
+The system only supports English. Inaccurate responses may be returned when users converse with the system in languages other than English.
 
 ## Privacy
 

@@ -22,6 +22,23 @@ searchScope:
 > - [ ] Check naming/branding wording
 -->
 
+
+
+## Prerequisites
+
+
+## Topics in this section
+
+Topic | Description
+-|-
+Create a topic | ...
+Edit a topic | ...
+Use existing web content to answer questions | ...
+Authoring RAI FAQ | ...
+Answers RAI FAQ | ...
+Quickstart | ...
+
+
 ## Limitations
 
 <!-- Answers inc. from Gary 2/21? Check with Mahesh -->
