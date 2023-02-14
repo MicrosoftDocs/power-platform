@@ -34,8 +34,7 @@ The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 mod
 
 
 ## Prerequisites
-- Feature needs to be enabled (1. Settings > General settings > Enable "Intelligent authoring support (preview)") it's on by default
-- Need PVA2 preview
+- You must be using the preview version of Power Virtual Agents, and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name.
 
 ## Use GPT AI to create a topic
 
@@ -44,6 +43,12 @@ When create a new topic, you can select **Describe it** and ask the AI to make i
 1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic** and then **Describe it to build it (preview)**.
 
     :::image type="content" source="media/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
+
+    >[!CAUTION]
+    >If you don't see the **Describe it** option, confirm that **Intelligent authoring support** in the Power Virtual Agents **Settings** page is set to **On**:
+    >>1. Select the **Settings** cogwheel icon on the main menu bar, and then select **General settings**.
+    >>    :::image type="content" source="media/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents top menu with the Settings icon open.":::
+    >>2. Confirm the toggle switch under **Intelligent authoring support (preview)** is set to **On**.
 
 2. In the **Describe it to build it (preview)** window that appears, describe the topic you want to create in simple, plain English. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.
 
