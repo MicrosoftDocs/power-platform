@@ -34,6 +34,9 @@ searchScope:
 
 INTRO
 
+##Prerequisites
+- Feature needs to be enabled for each bot (prob more like cuation/alert)
+- Need PVA2 preview
 
 ## Use GPT AI to provide answers
 
