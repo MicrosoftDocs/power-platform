@@ -26,10 +26,10 @@ searchScope:
 
 > [!CAUTION]
 > ## TODO
-> - [ ] Connect to intro and hub  
-> - [ ] Update naming/branding wording
-> - [ ] Add mgmt proc
-> - [ ] Get lims
+> - [ ] Connect to intro and hub (when written...)
+> - [ ] Update naming/branding wording (waiting on final)
+> - [x] Add mgmt proc
+> - [x] Get lims
 
 
 
@@ -40,6 +40,10 @@ The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 mod
 > [!WARNING]
 >
 > Need to update with official branding. cw Jack.
+
+## Prerequisites
+- Feature needs to be enabled (1. Settings > General settings > Enable "Intelligent authoring support (preview)")
+- Need PVA2 preview
 
 ## Use GPT AI to create a topic
 

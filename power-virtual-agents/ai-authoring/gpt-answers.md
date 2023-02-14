@@ -32,6 +32,11 @@ searchScope:
 > - [ ] Get lims
 
 
-[[WIP]]
+INTRO
+
+
+## Use GPT AI to provide answers
+
+
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
