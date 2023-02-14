@@ -23,7 +23,9 @@ searchScope:
 
 ### What is GPT Builder?
 
-PT Builder makes it possible to more quickly create bot Topics by describing what you want to build in natural language, alleviating the need to manually build dialogs in the authoring canvas or code editor. For example, to get started on a flight tracking topic, you may ask the system to “create a topic to allow a user to check the status of a flight, accepting the flight date and number and then summarizing the information in a card and confirming it with the user.” Once a Topic has been created, you can continue to iterate on the Topic content in natural language. For example, you may choose to ask GPT Builder to “add a question to ask the user for the flight origin.” GPT Builder also provides suggestions for improvement to Topics. 
+When GPT Builder is enabled, your chatbot will use AI, powered by the Azure OpenAI GPT-3 model (which is also used in Bing), to create bot topics based upon a simple description of what you want to achieve.
+
+You can also modify and update any topic in your bot in the same manner, by describing the changes you want to make. 
 
 What data has GPT Builder been trained on?
 GPT Builder is powered by Azure OpenAI’s GPT-3 model (davinchidanvinci-003). GPT models are pretrained on a wide body of publicly available free text data. This data is sourced from a combination of web crawling, English-language Wikipedia, and more. Learn more about Azure OpenAI. 
