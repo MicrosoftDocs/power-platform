@@ -23,18 +23,26 @@ searchScope:
 
 <!-- TODO
 > - [ ] Connect to intro and hub (when written...)
-> - [ ] Update naming/branding wording (waiting on final)
+> - [ ] Check all naming/branding wording (descriptive vs named)
 > - [ ] Add mgmt proc
-> - [ ] Get lims (if usage exceeded then turn off GPT for test bot, otherwise contact admin?; single-turn convo; only publically available URLs indexed by Bing)()
+> - [ ] Get lims (if usage exceeded then turn off GPT for test bot, otherwise contact MSFT support (sim to allowing publishing); single-turn convo; only publically available URLs indexed by Bing)()
  -->
 
 <INTRO>
 
 ##Prerequisites
-- Feature needs to be enabled for each bot (prob more like cuation/alert)
+- Feature needs to be enabled for each bot (prob more like cuation/alert), they're not on by default
 - Need PVA2 preview
 
 ## Use GPT AI to provide answers
+
+1. Open your bot.
+
+1. Go to Settings > AI capabilities (left nav)
+
+1. Enable and add a publically available URL.
+
+1. Click save (highlight this)
 
 
 

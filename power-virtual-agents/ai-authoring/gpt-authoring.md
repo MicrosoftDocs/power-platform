@@ -21,7 +21,7 @@ searchScope:
 
 <!-- TODO
 - [ ] Connect to intro and hub (when written...)
-- [ ] Update naming/branding wording (waiting on final)
+- [ ] Check all naming/branding wording (desciptive vs named)
 - [x] Add mgmt proc
 - [x] Get lims
 - [ ] Edit prereqs
@@ -31,12 +31,8 @@ In addition to the traditional method for [creating and editing topics](../autho
 
 The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 model (which is also used in Bing).
 
-> [!WARNING]
->
-> Need to update with official branding. cw Jack.
-
 ## Prerequisites
-- Feature needs to be enabled (1. Settings > General settings > Enable "Intelligent authoring support (preview)")
+- Feature needs to be enabled (1. Settings > General settings > Enable "Intelligent authoring support (preview)") it's on by default
 - Need PVA2 preview
 
 ## Use GPT AI to create a topic
