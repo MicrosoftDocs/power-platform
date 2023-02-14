@@ -48,8 +48,8 @@ When working with multiple different environments, you may consider using deploy
 
 Follow these steps to use deployment profile along with Power Pages website in the ALM Accelerator:
 
-1. After committing the solution by including Power Pages website. Open the solution branch.
-1. Create a folder named deployment-profiles, under **PowerPages** folder > **Website** folder.
+1. After committing the solution by including Power Pages website, open the solution branch.
+1. Create a folder named **deployment-profiles**, under **PowerPages** folder > **Website** folder.
 1. In the **deployment-profiles** folder, create a deployment YAML file that contains the environment-specific changes. The deployment YAML filename must start with your [Environment] name. For example, development environment can be called "dev.deployment.yml" and validation environment can be called "validation.deployment.yml".
 
    :::image type="content" source="media/setup-almacceleratorpowerplatform/deployment-profile-yml-files.png" alt-text="Power Pages website deployment profiles":::
