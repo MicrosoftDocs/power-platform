@@ -1,7 +1,7 @@
 - name: GPT-3 AI in Power Virtual Agents
   items:
-  - name: GPT AI in Power Virtual Agents
-    href: ai-authoring/gpt-overview.md
+#  - name: GPT AI in Power Virtual Agents
+#    href: ai-authoring/gpt-overview.md
   - name: How to use GPT AI to generate a bot's responses
     href: ai-authoring/gpt-answers.md
   - name: GPT AI response generation training, model, and usage FAQ
@@ -10,8 +10,8 @@
     href: ai-authoring/gpt-authoring.md
   - name: GPT AI topic creation training, model, and usage FAQ
     href: ai-authoring/gpt-authoring-faq.md
-  - name: Quickstart with GPT
-    href: ai-authoring/gpt-quickstart.md
+##  - name: Quickstart with GPT
+##    href: ai-authoring/gpt-quickstart.md
 - name: Power Virtual Agents (production)
   items:
   - name: Overview

@@ -16,6 +16,11 @@ searchScope:
 
 # GPT Answers training, model, and usage FAQ
 
+- [] Headings and terminology used to describe the features will change. I will update as info comes in.
+- [] The UI is changing daily, so consider all screenshots as placeholders. I will do a final sweep the day before we go live to ensure all screens and associated labels/descriptions are updated.
+- [] Please ignore the indentation/formatting of lists.
+- [] When you say "all webpages that belong to this domain", does this mean that even if you put in a subURL (microsoft.com/rewards/earning), GPT will look at everything under microsoft.com? Or only at content in that path, eg microsoft.com/rewards/earning/*?
+
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 This FAQ document answers common questions about the AI that is used when creating new topics, or modifying existing topics, in Power Virtual Agents.
@@ -45,7 +50,7 @@ The system is designed to query knowledge from the website of your choosing and 
   We have implemented mitigations to prevent GPT from using its training corpus as a source for answers, however it is possible for answers to include content from websites other than the one you selected. 
 
 - The system does not perform an accuracy check, so if the selected website contains inaccurate information this could be shown to your chatbot users. We have implemented mitigations to filter out irrelevant and offensive responses, and the feature is designed not to respond when offensive language is detected. These filters and mitigations are not foolproof.  
-  You should always test and review your bots before publishing them. Publishing bots that have GPT Answers enabled requires admin approval. During the preview, your admin will need to contact Microsoft support to enable publication.
+  You should always test and review your bots before publishing them. Publishing bots that have GPT Answers enabled requires administrator approval. During the preview, your admin will need to contact Microsoft support to enable publication.
 
 
 ### How was GPT Answers evaluated? What metrics are used to measure performance?   
@@ -62,9 +67,9 @@ Additional evaluation was performed over custom datasets for offensive and malic
 
 ### How does a bot maker get the most out of GPT Answers?
 
-GPT Answers works best when you designate a trusted and valid website from which content should be queried. In particular answers are most accurate when you specify a top-level domain, or avoid using a URL that contains multiple levels or "paths". See the [GPT Answers Learn topic](gpt-answers.md) for examples and suggestions. ==All webpages that belong to this domain== [^1] will be searched for a match against the user’s question.
+GPT Answers works best when you designate a trusted and valid website from which content should be queried. In particular answers are most accurate when you specify a top-level domain, or avoid using a URL that contains multiple levels or "paths". See the [GPT Answers Learn topic](gpt-answers.md) for examples and suggestions. All webpages that belong to this domain will be searched for a match against the user’s question.
 
-[^1]: Does the last sentence mean that even if you put in a subURL (microsoft.com/rewards/earning), GPT will look at everything under microsoft.com? Or only at content in that path, eg microsoft.com/rewards/earning/help and microsoft.com/rewards/earning/redeem would be used, but microsoft.com/systems/review would not?
+
 
 
 ### How can a customer contribute?

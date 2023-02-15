@@ -18,10 +18,11 @@ searchScope:
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
+Notes for reviewers:
 
-<!-- TODO
-- [] Get/Add limitations
--->
+- [] Headings and terminology used to describe the features will change. I will update as info comes in.
+- [] The UI is changing daily, so consider all screenshots as placeholders. I will do a final sweep the day before we go live to ensure all screens and associated labels/descriptions are updated.
+- [] Please ignore the indentation/formatting of lists. 
 
 In addition to the traditional method for [creating and editing topics](../authoring-create-edit-topics.md), Power Virtual Agents lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
 
@@ -31,6 +32,7 @@ The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 mod
 
 ## Prerequisites
 - You must be using the preview version of Power Virtual Agents, and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name.
+- Review the [GPT AI topic creation training, model, and usage FAQ](gpt-authoring-faq.md).
 
 ## Use GPT AI to create a topic
 
@@ -98,7 +100,7 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 > [!TIP]
 >  
 > You can provide feedback on how well the AI did by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Describe it** panel.  
-> If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback will to improve the quality of the AI.
+> If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback to improve the quality of the AI.
 >  
 > :::image type="content" source="media/describe-it-feedback.png" alt-text="Screenshot of the Power Virtual Agents Describe it feedback panel.":::
 

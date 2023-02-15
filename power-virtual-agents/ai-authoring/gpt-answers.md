@@ -16,107 +16,66 @@ searchScope:
 
 # How to use GPT AI to generate a bot's responses
 
+Notes for reviewers:
+
+- [] Headings and terminology used to describe the features will change. I will update as info comes in.
+- [] The UI is changing daily, so consider all screenshots as placeholders. I will do a final sweep the day before we go live to ensure all screens and associated labels/descriptions are updated.
+- [] I will update with the feedback screenshot when I'm able to get it to show. I haven't been able to do this since Friday 2/10.
+<!-- - [] End to end "create a bot and then enable this stuff, test it, and share it" quick start guide will be drafted once the other docs are all in review. -->
+- [] What is the CSS escalation process (What happens when a customer asks us to enable publishing? Is there a specific type of support request they need to initiate? Do we have an sla for enabling publication? Will someone be reviewing each request before enabling it? Do we have any other requirements/recommendations for when they request support?)
+
+
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
+When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. However, by utilizing the GPT-based AI in Power Virtual Agents, your bot can find and present information from an external source - even if you haven't created a topic for it.
 
-
-##Prerequisites
-- Feature needs to be enabled for each bot (prob more like cuation/alert), they're not on by default
-- Need PVA2 preview
+## Prerequisites
+- You must enable the **Boost conversations** option for each bot.
+- You must be using the preview version of Power Virtual Agents, and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
+- Review the [GPT AI response generation training, model, and usage FAQ](gpt-answers-faq.md).
 
 ## Use GPT AI to provide answers
 
-1. Open your bot.
 
-1. Go to Settings > AI capabilities (left nav)
+1. Open or create a preview bot that you want to configure. Preview chatbots have **(preview)** added to their name in the list of bots. If you're creating a new bot, ensure you select **Try the unified canvas (preview)**.
 
-1. Enable and add a publically available URL.
+==need to update this and copy to other docs, also add to QSG==
 
-1. Click save (highlight this)
+    :::image type="content" source="media/responses-create-preview-bot.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
 
+1. Expand the **Settings** tab, then select **AI capabilities**.
 
+1. Under **Boost conversational coverage (preview)**, select the checkbox for **Boost conversations**.
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+1. In the field under the checkbox, add a publicly available URL. You can't use websites or URLs that require authentication or that aren't indexed by Bing, and aren't publicly viewable.
 
-
-In addition to the traditional method for [creating and editing topics](../authoring-create-edit-topics.md), Power Virtual Agents lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
-
-The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 model (which is also used in Bing).
-
-
-
-## Prerequisites
-- You must be using the preview version of Power Virtual Agents, and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name.
-
-## Use GPT AI to create a topic
-
-When create a new topic, you can select **Describe it** and ask the AI to make it for you. You need to do this for each topic you want to create, and you can't create multiple topics in one description.
-
-1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic** and then **Describe it to build it (preview)**.
-
-    :::image type="content" source="media/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
-
-    >[!CAUTION]
-    >If you don't see the **Describe it** option, confirm that **Intelligent authoring support** in the Power Virtual Agents **Settings** page is set to **On**:
-    >>1. Select the **Settings** cogwheel icon on the main menu bar, and then select **General settings**.
-    >>    :::image type="content" source="media/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents top menu with the Settings icon open.":::
-    >>2. Confirm the toggle switch under **Intelligent authoring support (preview)** is set to **On**.
-
-2. In the **Describe it to build it (preview)** window that appears, describe the topic you want to create in simple, plain English. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.
-
-    :::image type="content" source="media/describe-it-create-topic.png" alt-text="Screenshot of the Describe it to build it pop-up window.":::
-   
-    You can select any of the examples to automatically insert them into the **Create a topic to...** field. Select **View more examples** to generate new suggestions. 
-
-3. Enter a name for your topic in the **Name your topic** field. You can include punctuation in the trigger phrase, but it's best to use short phrases rather than long sentences.
-   
-   > [!TIP]
-   > 
-   > Giving your topic a name helps the AI to construct your topic, as it adds context to your request. 
-
-   
-4. Select **Create**.
-   
-5. The authoring canvas will open and a new topic, including a generated title and trigger phrases as well as one or more nodes, will be created for you. You can [use AI to further refine and update the topic](#use-gpt-ai-to-edit-a-topic), in addition to the [usual ways of editing topics](../authoring-create-edit-topics.md).
-
-
-## Use GPT AI to edit a topic
-
-You can use AI to help you modify any topic in your bot. The topic doesn't need to have been created with the **Describe it** feature.
-
-1. Open your bot and select **Topics**. Select the topic you want to modify, and then **Describe it** on the menu bar just above the topic's conversation path.
-
-    :::image type="content" source="media/describe-it-toolbar.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it button highlighted.":::
-   
-2. Describe what you want to change or add in the topic. 
-
-    :::image type="content" source="media/describe-it-modify.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it side panel open.":::
-
-    Use simple, plain English to direct the AI with what you want it to do, as in the these examples:
-
-    - _add a question to ask the user for their date of birth_
-    - _add 2 message variations to all questions in the topic_
-    - _update the content within the topic to be more appropriate for customer service_
+    :::image type="content" source="media/responses-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
 
 > [!TIP]
 >
->If you have any nodes selected on your canvas, they will be used to provide further context to your request.  
->For example, if you have a question node selected, you could write, _add a speech response_, instead of _add a speech response to the question node_.
+> The AI works best when you specify a top-level domain as the URL. 
+> 
+> If the URL you specify is more than two levels deep into the domain (it has more than two forward slashes (`/`)), you'll see an error and won't be able to select **Save**. 
+>
+> Your URL can have a trailing forward slash, and this won't be included in the limit of two slashes. For example, the URLs `www.contoso.com`, `www.fabrikam.com/engines/rotary`, or `www.fabrikam.com/engines/rotary/` are valid. The URL `www.fabrikam.com/engines/rotary/dual-shaft` is not.
 
-3. Click **Update**. The AI will make updates based on your directions.
-   
-4. Once the update has been applied, you can review the changes and continue to edit your topic, either in the [usual ways of editing topics](../authoring-create-edit-topics.md) or by describing more things you want to change. 
-    
-    If you don't like the changes, select the **Undo** button. You can then change your directions and try again.
+1. Select **Save** at the top of the **AI capabilities**.
 
-    :::image type="content" source="media/describe-it-modify-undo.png" alt-text="Screenshot of the Power Virtual Agents Describe it side panel open, showing the Undo button.":::
+You can test the AI-generated responses in the **Test bot** panel.
 
 > [!TIP]
 >  
-> You can provide feedback on how well the AI did by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Describe it** panel.  
+> You can provide feedback on how well the AI does by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Describe it** panel.  
 > If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback will to improve the quality of the AI.
 >  
-> :::image type="content" source="media/describe-it-feedback.png" alt-text="Screenshot of the Power Virtual Agents Describe it feedback panel.":::
+> 
+
+### Publish a bot with AI-generated responses enabled
+
+During the Preview of this feature you'll need to contact Microsoft Support if you want to publish a bot that has **Boost conversations** enabled.
+
+
+
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -17,10 +17,7 @@ searchScope:
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-<!--
-> - [ ] Connect to subs and hub  
-> - [ ] Check naming/branding wording
--->
+
 
 
 
