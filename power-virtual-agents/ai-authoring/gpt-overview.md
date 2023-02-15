@@ -1,7 +1,7 @@
 ---
 title: Overview of GTP
-description: Desc for overview
-keywords: "PVA"
+description: Create instantly useful chatbots that answer people's questions about any information on your organization's website.
+keywords: "Power Virtual Agents, chatbot, ChatGPT, Open AI"
 ms.date: 2/14/2023
 ms.topic: how-to
 author: iaanw
