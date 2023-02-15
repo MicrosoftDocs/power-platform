@@ -17,4 +17,4 @@ ms.service: power-virtual-agents
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-This feature is available in the preview and hasn't changed. For more information, see [Use entities and slot filling in Power Virtual Agents bots](../advanced-entities-slot-filling.md).
+This feature is available in the preview and is the same as the production version. For more information, see [Use entities and slot filling in Power Virtual Agents bots (production)](../advanced-entities-slot-filling.md).
