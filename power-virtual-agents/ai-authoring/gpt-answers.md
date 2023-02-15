@@ -35,7 +35,9 @@ When designing and creating a chatbot, you'll likely encounter situations where 
 
     :::image type="content" source="media/responses-create-preview-bot.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
 
-1. Expand the **Settings** tab, then select **AI capabilities**.
+1. Click **Create**.
+
+3. Expand the **Settings** tab, then select **AI capabilities**.
 
 1. Under **Boost conversational coverage (preview)**, select the checkbox for **Boost conversations**.
 
