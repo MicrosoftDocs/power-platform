@@ -1,12 +1,13 @@
 ---
 title: "Use email message filtering and correlation to specify which emails are tracked   | MicrosoftDocs"
 description: Use email message filtering and correlation to specify which emails are tracked. 
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/16/2022
+ms.date: 02/15/2023
 ms.subservice: admin
 ms.author: jimholtz
+ms.contributor: dmartens
 search.audienceType: 
   - admin
 search.app:
