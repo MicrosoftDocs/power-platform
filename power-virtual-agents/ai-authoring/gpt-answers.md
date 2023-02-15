@@ -16,13 +16,6 @@ searchScope:
 
 # How to use GPT AI to generate a bot's responses (Preview)
 
-Notes for reviewers:
-
-- [] Headings and terminology used to describe the features will change. I will update as info comes in.
-- [] The UI is changing daily, so consider all screenshots as placeholders. I will do a final sweep the day before we go live to ensure all screens and associated labels/descriptions are updated.
-- [] I will update with the feedback screenshot when I'm able to get it to show. I haven't been able to do this since Friday 2/10.
-<!-- - [] End to end "create a bot and then enable this stuff, test it, and share it" quick start guide will be drafted once the other docs are all in review. -->
-- [] What is the CSS escalation process (What happens when a customer asks us to enable publishing? Is there a specific type of support request they need to initiate? Do we have an sla for enabling publication? Will someone be reviewing each request before enabling it? Do we have any other requirements/recommendations for when they request support?)
 
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]

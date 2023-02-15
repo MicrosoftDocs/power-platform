@@ -18,11 +18,7 @@ searchScope:
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Notes for reviewers:
 
-- [] Headings and terminology used to describe the features will change. I will update as info comes in.
-- [] The UI is changing daily, so consider all screenshots as placeholders. I will do a final sweep the day before we go live to ensure all screens and associated labels/descriptions are updated.
-- [] Please ignore the indentation/formatting of lists. 
 
 In addition to the traditional method for [creating and editing topics](../authoring-create-edit-topics.md), Power Virtual Agents lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
 
@@ -42,7 +38,7 @@ When create a new topic, you can select **Describe it** and ask the AI to make i
 
     :::image type="content" source="media/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
 
-    >[!CAUTION]
+    >[!NOTE]
     >If you don't see the **Describe it** option, confirm that **Intelligent authoring support** in the Power Virtual Agents **Settings** page is set to **On**:
     >>1. Select the **Settings** cogwheel icon on the main menu bar, and then select **General settings**.
     >>    :::image type="content" source="media/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents top menu with the Settings icon open.":::
@@ -56,7 +52,7 @@ When create a new topic, you can select **Describe it** and ask the AI to make i
 
 3. Enter a name for your topic in the **Name your topic** field. You can include punctuation in the trigger phrase, but it's best to use short phrases rather than long sentences.
    
-   > [!TIP]
+   > [!NOTE]
    > 
    > Giving your topic a name helps the AI to construct your topic, as it adds context to your request. 
 
@@ -106,3 +102,4 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
+
