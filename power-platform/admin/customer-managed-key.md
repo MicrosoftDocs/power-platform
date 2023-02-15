@@ -84,7 +84,7 @@ The malicious key vault administrator creates a key and an enterprise policy on 
 > [!Note]
 > - Azure Key Vault has built-in safeguard to assist in restoring the key and it is required to have the **Soft Delete** and **Purge protection** Key Vault settings  enabled. Another safeguard to be considered is to make sure that there is separation of duty where the Azure Key Vault administrator is not granted access to the Power Platform admin center.
 
-## Separation of duty
+## Separation of tasks
 
 This section describes the customer managed key feature tasks that each admin role is responsible for.
 
@@ -111,8 +111,6 @@ The Azure Key Vault administrator performs these steps in Azure:
 1. Create a Power Platform enterprise policy.
 1. Grant enterprise policy permissions to access the key vault.
 1. Grant Power Platform and Dynamics 365 administrators permission to read the enterprise policy.
-
-More information: [Azure Key Vault documentation](/azure/key-vault/general/)
 
 ### Power Platform/Dynamics 365 service admin Power Platform admin center tasks
 
@@ -163,12 +161,12 @@ In Azure, perform the following steps:
 
 1. Create a Pay-as-you-go or its equivalent Azure subscription. This step isn't needed if the tenant already has a subscription.
 1. Create a resource group. More information: [Create resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
-1. Create a key vault using the paid subscription that includes soft-delete and purge protection with the resource group you created in the previous step. 
+1. Create a key vault using the paid subscription that includes soft-delete and purge protection with the resource group you created in the previous step.
    > [!IMPORTANT]
    > - To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings. More information: [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview) More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
    > - During preview, your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet. 
 
-### Create a key in the key vault
+#### Create a key in the key vault
 
 1. Make sure you have the [prerequisites](#prerequisites).
 1. Go to the [Azure portal](https://ms.portal.azure.com/) > **Key Vault** and locate the key vault where you want to generate an encryption key.
@@ -212,7 +210,7 @@ Register Power Platform as a resource provider (this only needed to be done once
 1. Install PowerShell MSI. More information: [Install PowerShell on Windows, Linux, and macOS](https://ms.portal.azure.com/#create/Microsoft.Template)
 1. After the PowerShell MSI is installed, go back to [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure.
 1. Select the **Build your own template in the editor** link.
-1. Copy the JSON template into a text editor such as Notepad. More information: [Json template](#json-template)
+1. Copy the JSON template into a text editor such as Notepad. More information: [Enterprise policy json template](#enterprise-policy-json-template)
 1. Replace the values in the JSON template for: *EnterprisePolicyName*, *location where EnterprisePolicy needs to be created*, *keyVaultId*, *keyName*, and *keyVersion*. More information: [Field definitions for json template](#field-definitions-for-json-template)
 1. Copy the updated template from your text editor then paste it into the **Edit template** of the **Custom deployment** in Azure, and select **Save**.
    :::image type="content" source="media/cmk-keyvault-template.png" alt-text="Azure key vault template":::
@@ -369,7 +367,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 
 To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
 
-1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information: [Create the key and grant access](#create-the-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
+1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create the key and grant access](#create-the-key-and-grant-access-overview) and [Create an enterprise policy](#create-enterprise-policy)
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
 1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
 1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
