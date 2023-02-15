@@ -6,7 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/15/2023
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.contributor: dmartens
 search.audienceType: 
   - admin
