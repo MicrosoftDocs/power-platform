@@ -1,7 +1,7 @@
 ---
 title: Overview of GTP
-description: Create instantly useful chatbots that answer people's questions about any information on your organization's website.
-keywords: "Power Virtual Agents, chatbot, ChatGPT, Open AI"
+description: Create instantly useful chatbots that answer people's questions about any information on your website, including topics you haven't built conversations for. Reduce your escalation rate, and publish bots quickly with AI capabilities in Power Virtual Agents.
+keywords: "Power Virtual Agents, bot, chatbot, ChatGPT, Open AI"
 ms.date: 2/14/2023
 ms.topic: how-to
 author: iaanw
@@ -13,22 +13,22 @@ ms.service: power-virtual-agents
 searchScope:
   - "Power Virtual Agents"
 ---
-# Overview of GTP in PVA (WIP)
+# Overview of 
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Use GPT AI-based features in Power Virtual Agents to:
 
 - Quickly and easily create bot topics
-- Provide responses to answers that you don't have a topic for
+- Create instantly useful chatbots that answer people's questions about any information on your website, including about topics you haven't built conversations for. 
 
 
 The AI for these features is powered by the Azure OpenAI GPT-3 (text-davinci-003) model. [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
 
-
+//do you need an OpenAI account?
 ## Prerequisites
-- You must be using the preview version of Power Virtual Agents, and the bot type must be **Preview**.  
-  Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
+- Use the preview version of Power Virtual Agents.  
+- When you create a new bot, select **Try the unified canvas (preview)**.
 
 
 ## GTP AI in Power Virtual Agents
