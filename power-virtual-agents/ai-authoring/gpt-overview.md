@@ -1,7 +1,7 @@
 ---
-title: Overview of GTP
+title: Overview of AI in Power Virtual Agents
 description: Create instantly useful chatbots and publish them quickly with AI capabilities in Power Virtual Agents.
-keywords: "Power Virtual Agents, bot, chatbot, ChatGPT, Open AI"
+keywords: "Power Virtual Agents, bot, chatbot, ChatGPT, GPT, Open AI"
 ms.date: 2/14/2023
 ms.topic: how-to
 author: iaanw
@@ -13,19 +13,18 @@ ms.service: power-virtual-agents
 searchScope:
   - "Power Virtual Agents"
 ---
-# Overview of 
+# Overview of bot-building using AI in Power Virtual Agents
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Power Virtual Agents to:
+Through recent advancements in GPT-based language models, Power Virtual Agents speeds up building and publishing bots, and helps reduce esclations to live agents. Here's what AI capabilities in Power Virtual Agents can do for you:
 
-- Create an instantly useful chatbot for you. The chatbot will be able to answer questions about any information on your website, including topics you haven't built conversations for, with no configuration. 
-- Author a topic by describing in natural language what you want the chatbot to do. Power Virtual Agents uses AI to generate the content of the conversation for you. Use the suggested topic as is, or as a starting point for further iteration.
+- **Create an instantly useful chatbot.** The chatbot will be able to answer questions about any information on your website, including topics you haven't built conversations for, with no configuration. 
+- **Author a topic by describing in natural language what you want the chatbot to do.** Power Virtual Agents uses AI to generate the content of the conversation for you. Use the suggested topic as is, or as a starting point for further iteration.
 
+The AI for these capabilities is powered by the Azure OpenAI GPT-3 (text-davinci-003) model. [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
 
-The AI for these features is powered by the Azure OpenAI GPT-3 (text-davinci-003) model. [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
-
-
+///to try it out, you need...
 
 ## GTP AI in Power Virtual Agents
 
