@@ -37,7 +37,7 @@ When designing and creating a chatbot, you'll likely encounter situations where 
 
 1. Click **Create**.
 
-3. Expand the **Settings** tab, then select **AI capabilities**.
+3. Expand the **Settings** tab, then select **General Settings**.
 
 1. Under **Boost conversational coverage (preview)**, select the checkbox for **Boost conversations**.
 
