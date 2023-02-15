@@ -1,62 +1,56 @@
 ---
-title: "Start with sample topics to understand capabilities (preview)"
-description: "Start with template topics to understand the capabilities when authoring topics for use in Power Virtual Agents preview."
+title: Start with sample topics (preview)
+description: Start with template topics to understand the capabilities when authoring topics for use in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 10/10/2022
-
-ms.topic: article
+ms.date: 12/13/2022
+ms.topic: conceptual
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring, ceX
+ms.custom: authoring, ceX, bap-template
 ms.collection: virtual-agent
+ms.service: power-virtual-agents
 ---
 
-# Start with sample topics in Power Virtual Agents (preview)
+# Start with sample topics (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-Power Virtual Agents includes a set of three samples from which you can see examples of topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
+Power Virtual Agents includes sample topics with every new bot to help you understand the capabilities of bot topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md), [variables](authoring-variables.md), and [custom entities](advanced-entities-slot-filling.md).
 
-## Access and use sample topics for new bots
+The topics are functional, but they aren't designed for production use. They're examples to help you learn how to create content for your bots.
 
-When a bot is created, several samples are automatically created as topics.
+## Use sample topics to understand how topics work
 
-While the topics are functional, they are examples to learn how to create content for your bots. The topics aren't designed for production use.
+1. Open your bot, or create one, and go to the **Topics** tab.
 
-**Use sample topics to understand how topics work:**
+   > [!IMPORTANT]
+   > The sample topics are listed on the **Topics** page when you create a bot. If you don't see them in an existing bot, create one.
 
-1. Go to the **Topics** tab.
+1. To view the bot's conversation flow, select each topic in turn to open it in the authoring canvas.
 
-1. Select **Sample 1** and work through to **Sample 3**. Review the title and description, and see which trigger phrases are used.  
+    The flow includes the bot's comments, expected user responses, decision points, and entity references used in each topic. Review these and the topic's title, description, and trigger phrases.
 
-1. To see the bot's flow, select each topic. The flow includes the bot's comments, expected user responses, decision points, and entity references.
-
-   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="List of sample topics." border="false":::
-
-> [!IMPORTANT]
-> You will see these samples when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.
+   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of sample topics in Power Virtual Agents.":::
 
 ## Available sample topics
 
-Each sample is designed to teach you how to use the authoring canvas to create basic and advanced bot conversations.
+Each sample is designed to teach you how to use the authoring canvas to create basic and advanced bot conversations. We recommend that you start with **Lesson 1** and work through each topic in order.
 
-You should start with **Sample 1** and work through each sample in order.
+### Lesson 1 - A simple topic
 
-### Sample 1 - Text variation with quick replies
+This sample shows you how to create a topic that responds to a question about store hours.
 
-This sample shows you how to create a simple topic with multiple text variation responses and a quick reply.
+### Lesson 2 - A simple topic with a condition and a variable
 
-### Sample 2 - Question with images, quick replies, and a condition
+This sample shows you how to create a question that asks customers which store they're interested in and stores the response in a variable. The condition uses the variable to determine which store's hours to return.
 
-This sample shows you how to create a simple question with an image and quick reply that identifies an [entity](advanced-entities-slot-filling.md) and stores it as [a variable](authoring-variables.md), a condition, and a redirect to the [next sample topic](#sample-3---set-variable-with-function).
+### Lesson 3 - A topic with a condition, variables, and a pre-built entity
 
-When you use entities in your topic, the bot identifies key information from user responses and automatically fills in that information into your variables. A variable is a name for an item that will be used later in the topic flow.
+This sample asks customers to enter the state to ship their order to. The bot uses the pre-built **State** [entity](advanced-entities-slot-filling.md) to recognize the US state in the user's response, and stores it in the **State** variable. A condition uses this variable to determine which shipping message to send the user. Another condition uses the customer's response to a multiple-choice question, stored in the variable **Item**, to determine which product to order.
 
-In this sample, the bot uses the State entity to recognize any US state the user enters and stores it as the `state` variable. This variable is used in the condition to determine which shipping message to send the user. The topic ends by redirecting to the next sample topic.
+### Lesson 4 - A topic with a condition, variables, and custom entity
 
-### Sample 3 - Set variable with function
-
-Sample 3 shows you how to create a topic with [a variable](authoring-variables.md) and set it to the value of a function. The shipping time message uses the variable and finishes by redirecting to the End of Conversation topic.
+This sample uses [a custom entity](advanced-entities-slot-filling.md), **Usage Type**, to recognize the user's response to a multiple-choice question, and stores it in the **UsageType** variable. A condition uses this variable to suggest a product to order.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "publication, authoring, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -40,7 +41,7 @@ You can edit the welcome message and suggested trigger phrases for the demo webs
 
 ### Update the demo website
 
-1. On the side pane, select **Settings** then **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select the **Demo website** tile.
 
@@ -60,7 +61,7 @@ You can also add the bot to your Power Platform admin center.
 
 ### Add bot to your website
 
-1. On the side pane, select **Settings** then **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Custom website** and then select **Copy** to copy it directly to the clipboard, or **Share to email** to open a new email message with the snippet included, in your default email app.
 

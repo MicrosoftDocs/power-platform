@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 11/18/2022
+ms.date: 12/14/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -80,7 +80,7 @@ The namespace for the generated code.  The default namespace is the global names
 
 #### `--optionsetstypesfolder` `-otf`
 
-Folder name that will contain messages.  default is OptionSets
+Folder name that will contain OptionSets.  default is OptionSets
 
 #### `--outdirectory` `-o`
 

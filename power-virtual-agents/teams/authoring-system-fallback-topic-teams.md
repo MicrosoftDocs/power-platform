@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: authoring, ceX, teams
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -35,7 +36,7 @@ This topic also includes the unique variable `UnrecognizedTriggerPhrase` to capt
 
 ## Add a system fallback topic
 
-1. At the bottom of the side pane, select **Settings** :::image type="content" source="../media/authoring-system-fallback-topic/settings-icon-teams.png" alt-text="Settings icon." border="false":::, and then select **System fallback**.
+1. At the bottom of the navigation menu, select **Settings** :::image type="content" source="../media/authoring-system-fallback-topic/settings-icon-teams.png" alt-text="Settings icon." border="false":::, and then select **System fallback**.
 
 1. Select **"+Add"**.
 

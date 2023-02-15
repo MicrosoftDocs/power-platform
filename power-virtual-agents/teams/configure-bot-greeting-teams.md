@@ -10,7 +10,8 @@ ms.author: iawilt
 ms.reviewer: digantak
 manager: shellyha
 ms.custom: "customization, ce06102020, teams"
-ms.collection: virtualagent
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Configure how the bot starts the conversation
@@ -43,7 +44,7 @@ You can also combine the customized greeting with [customization to the look and
 
 ## Change the bot's default greeting
 
-1. Select **Topics** on the side navigation pane, then select the **Greeting** topic row.
+1. In the navigation menu, select **Topics**, then select the **Greeting** topic row.
 
     :::image type="content" source="../media/configure-bot-greeting/select-greeting-topic-teams.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted.":::
 

@@ -1,22 +1,24 @@
 ---
-title: "Manage date and time in Power Virtual Agents (preview)"
-description: "How to manage date and time in Power Virtual Agents bots."
+title: Accommodate time zones (preview)
+description: Learn how Power Virtual Agents bots collect and store date and time. Learn how to adjust the user's time zone and to display dates and times correctly in their time zone.
 keywords: "PVA"
-ms.date: 10/10/2022
-ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
-ms.reviewer: kamrani
+ms.date: 12/07/2022
+
+ms.topic: how-to
+author: iaanw
+ms.author: iawilt
 manager: iawilt
+ms.reviewer: kamrani
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
-ms.custom: ceX, advanced-authoring
+ms.custom: ceX, advanced-authoring, bap-template
 ---
 
-# Manage date and time in chatbots (preview)
+# Accommodate time zones (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-You can use the **Date and time** entity to capture a date and time in Coordinated Universal Time (UTC). However, as you build bots you'll likely run into scenarios where you want to display the date and time based on the user's current location.
+The **Date and time** entity captures a date and time in Coordinated Universal Time (UTC). However, you may want to display the date and time based on the user's location instead.
 
 ## Prerequisites
 
@@ -24,9 +26,9 @@ You can use the **Date and time** entity to capture a date and time in Coordinat
 - [Use conditions](authoring-using-conditions.md)
 - [Create expressions using Power Fx](advanced-power-fx.md)
 
-## Time zone determination
+## How Power Virtual Agents determines the user's time zone
 
-Power Virtual Agents uses the following steps, in order, to determine the user's time zone:
+Power Virtual Agents follows these steps, in order, to determine the user's time zone:
 
 1. If the `Conversation.LocalTimeZone` system variable is set to a valid time zone from [Noda Time][], use that as the time zone.
 
@@ -34,55 +36,60 @@ Power Virtual Agents uses the following steps, in order, to determine the user's
 
 1. Otherwise, use UTC as the time zone.
 
-## System-level variables
+## Get the user's time zone
 
-Use these system-level variables to get information about the user's time zone.
+Use these system-level variables to get information about the user's time zone:
 
-- `Conversation.LocalTimeZone` (read-write): Stores the user's time zone as a string. You can optionally set this variable to any time zone listed on the [Noda Time][] website. For information on how your bot determines local time, see [Time zone determination](#time-zone-determination).
+- `Conversation.LocalTimeZone` (read-write): Stores the user's time zone as a string. You can optionally set this variable to any time zone listed on the [Noda Time][] website.
 
-- `Conversation.LocalTimeZoneOffset` (read-only): Gets the UTC offset from the user's time zone based on the value of `Conversation.LocalTimeZone`. This value is stored as a time value.
+- `Conversation.LocalTimeZoneOffset` (read-only): Gets the UTC offset from `Conversation.LocalTimeZone` and stores it as a time value.
 
 [Noda Time]: https://nodatime.org/timezones
 
-## Manually set a user's time zone
+## Manually set the user's time zone
 
-Power Virtual Agents will [automatically determine a user's time zone](#time-zone-determination) when your bot prompts the user for a date and time. To manually set the timezone:
+Power Virtual Agents [automatically determines the user's time zone](#how-power-virtual-agents-determines-the-users-time-zone) when your bot prompts the user for a date and time. You can also manually set the timezone.
 
-1. Open the topic in which to set the user's time zone.
+1. Open the topic in which you want to set the user's time zone.
 
 1. Add a **Set Variable Value** node.
 
-    1. For **Set variable**, choose the `Conversation.LocalTimeZone` system topic.
+    - For **Set variable**, choose the `Conversation.LocalTimeZone` system topic.
 
-    1. For **To value**, enter `America/Los_Angeles`, one of the **Zone ID** values from the [Noda Time][] website.
+    - For **To value**, enter one of the **Zone ID** values from the [Noda Time][] website; for example, `America/Los_Angeles`.
 
-1. Add a **Message** node. In the text box type, enter `The local time zone is: `, then select _Insert variable_ (**{x}**) and insert the system `Conversation.LocalTimeZone` variable.
+1. Add a **Message** node.
 
-1. Add a second **Message** node. In the text box type, enter `The local time zone offset is: `, then select _Insert variable_ (**{x}**) and insert the system `Conversation.LocalTimeZoneOffset` variable.
+1. In the text box type, enter `The local time zone is: `, then select _Insert variable_ (**{x}**), and insert the system variable `Conversation.LocalTimeZone`.
+
+1. Add a second **Message** node.
+
+1. In the text box type, enter `The local time zone offset is: `, then select _Insert variable_ (**{x}**), and insert the system variable `Conversation.LocalTimeZoneOffset`.
 
 1. Save and test the chatbot.
 
-    :::image type="content" source="media/manage-date-and-time/test-bot.png" alt-text="Screenshot of the test bot pane.":::
+    :::image type="content" source="media/manage-date-and-time/test-bot.png" alt-text="Screenshot of the Test bot pane.":::
 
-## Display date and time in a local timezone
+## Display the date and time in the local time zone
 
-Power Virtual Agents stores date and time in UTC. Before displaying a date and time value to customers, add the time zone offset to convert the value to the user's local time zone.
+Power Virtual Agents stores the date and time in UTC. Before displaying a date and time to customers, add the time zone offset to convert the value to the user's local time zone.
 
-In this example, we get the current date and time using Power Fx's `Now()` function, then add the timezone offset:
+In this example, we'll get the current date and time using the Power Fx `Now()` function, and then add the time zone offset. It isn't possible to use the `Conversation.LocalTimeZoneOffset` system variable directly in a Power Fx formula. Instead, we'll use a **Set Variable Value** node to create a variable and then assign it the value of `Conversation.LocalTimeZoneOffset`.
 
 <!-- At time of writing, there was no way to use the Conversation.LocalTimeZoneOffset system variable directly in a Power Fx formula. As a workaround, the following instructions have you use a Set Variable Vale node to create a new variable and assign it to the value of Conversation.LocalTimeZoneOffset  -->
+1. Create a topic and add the trigger phrase `what time is it`.
 
-1. Create a new topic and add the trigger phrase `what time is it`.
+1. In the authoring canvas, select **Add node** (**+**). Select **Set a variable value**.
 
-1. On the authoring canvas, select **Add node** (**+**). Select **Set a variable value** to add a new **Set Variable Value** node.
-    1. For **Set variable**, create a new variable named `offset`.
-    1. For **To value**, choose the system variable **Conversation.LocalTimeZoneOffset**.
+    - For **Set variable**, create a variable named `offset`.
+    - For **To value**, select the system variable `Conversation.LocalTimeZoneOffset`.
 
     :::image type="content" source="media/manage-date-and-time/time-offset.png" alt-text="Screenshot of a Set Variable Value node assigning a value to the offset variable.":::
 
 1. Add a second **Set Variable Value** node.
-    1. For **Set variable**, create a new variable named `nowLocal`.
-    1. For **To value**, enter the Power Fx formula `DateAdd(Now(), Topic.offset)`.
+
+    - For **Set variable**, create a variable named `nowLocal`.
+    - For **To value**, enter the Power Fx formula `DateAdd(Now(), Topic.offset)`.
 
     :::image type="content" source="media/manage-date-and-time/time-convert.png" alt-text="Screenshot of a Set Variable Value node assigning a value to the nowLocal variable.":::
 
@@ -90,10 +97,10 @@ In this example, we get the current date and time using Power Fx's `Now()` funct
 
     :::image type="content" source="media/manage-date-and-time/time-send-message.png" alt-text="Screenshot of a Message node.":::
 
-1. Test your bot in the test bot pane to get the current date and time.
+1. Test your bot in the **Test bot** pane to get the date and time in your time zone.
 
     :::image type="content" source="media/manage-date-and-time/time-test-bot.png" alt-text="Screenshot of a bot replying with the current date and time in the test bot pane.":::
 
 ## Reference
 
-[Power Fx date time reference](/power-platform/power-fx/data-types#date-time-and-datetime)
+[Power Fx date and time reference](/power-platform/power-fx/data-types#date-time-and-datetime)

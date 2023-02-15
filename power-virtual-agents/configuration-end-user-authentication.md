@@ -3,12 +3,14 @@ title: Configure user authentication
 description: Configure authentication with your identity provider to enable users to sign in when having a bot conversation.
 keywords: "Authentication, IdP, PVA, AAD"
 ms.date: 08/18/2022
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.reviewr: micchow
 ms.custom: authentication, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -46,7 +48,7 @@ Power Virtual Agents supports the following authentication providers:
 
 Power Virtual Agents supports several authentication options. Choose the one that meets your needs.
 
-To change your bot's authentication settings, go to **Settings** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
+To change your bot's authentication settings, in the navigation menu under **Settings**, go to the **Security** tab and select the **Authentication** card.
 
 :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of the Security page under the Settings menu, highlighting the Authentication card.":::
 
@@ -167,7 +169,7 @@ The following are all the fields you may see when you're configuring manual auth
 
 ## Remove the authentication configuration
 
-1. Edit your bot and select **Settings** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
+1. In the navigation menu, under **Settings**, select **Security**. Then select the **Authentication** card.
 1. Select **No authentication**.
 1. Publish the bot.
 

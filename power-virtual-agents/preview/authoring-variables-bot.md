@@ -1,105 +1,95 @@
 ---
-title: "Use chatbot variables to carry content across topics (preview)"
-description: "Global variables can be used to store and retrieve information across multiple topics within the same bot and user session in Power Virtual Agents preview."
+title: Reuse variables across topics (preview)
+description: Use global variables to store and retrieve information across topics in the same bot and user session in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 10/10/2022
-
-ms.topic: article
+ms.date: 12/15/2022
+ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring, ce06122020
+ms.custom: authoring, ce06122020, bap-template
 ms.collection: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 # Reuse variables across topics (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-[Variables](authoring-variables.md) let you save responses from your customers. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
+[Variables](authoring-variables.md) store your customers' responses to questions from your bot. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
-By default, a variable's value can only be used in the topic where this variable gets created. However, you might want the bot to use the same value across topics. The bot can remember the necessary context when a conversation spans multiple topics.
+By default, a variable's value can only be used in the topic where the variable is created. However, it's possible to reuse the same value across topics. For example, a Welcome topic asks for the customer's name and email address. In the Appointment Booking topic, you want the bot to remember what the customer entered and not ask again.
 
-For example, in a "Welcome" topic, the bot asks for the customer's name and email. Then when the conversation goes to another topic, such as an "Appointment booking" topic, you want the bot to remember this customer's name and email address.
+One way to reuse a variable is to [pass the variable between topics](../authoring-variables.md#passing-variables-between-topics). The other way is to make the variable global in scope, and that's what this article covers. **Global variables** are called that because they're available in all topics across the entire bot.
 
-These variables are called **global variables** because they apply across the entire bot. By default, global variables apply during a single user session.
-
-> [!TIP]
-> An alternative to making a variable global, is to [pass variables between topics](authoring-variables.md#passing-variables-between-topics).
 
 ## Create a global variable
 
-1. Create a [new variable](authoring-variables.md#create-a-variable) or [use the variables pane](authoring-variables.md#variables-pane) to open an existing variable.
+You create a global variable by changing the scope of a topic variable.
 
-1. On the **Variable properties** pane, under **Usage**, select **Global (any topic can access)**.
+1. [Create a variable](authoring-variables.md#create-a-variable) or [use the **Variables** pane](authoring-variables.md#variables-pane) to open an existing variable.
 
-1. The variable name will be given a prefix string `global.`, to differentiate it from the topic-level variables. For example, the variable `UserName` is displayed as `global.UserName`.
+1. On the **Variable properties** pane, select **Global (any topic can access)**.
 
-:::image type="content" source="media/authoring-variables-bot/bot-variable-set.png" alt-text="Screenshot showing the Variable Properties pane, with the Usage section highlighted":::
+    The variable name is given the prefix `Global.` to differentiate it from topic-level variables. For example, the variable `UserName` is displayed as `Global.UserName`.
 
-> [!NOTE]
-> A global variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change.
+    :::image type="content" source="media/authoring-variables-bot/bot-variable-set.png" alt-text="Screenshot showing the Variable Properties pane, with the Global setting highlighted.":::
+
+1. Save the topic.
+
+    A global variable's name must be unique across all topics. If there's a conflict, you'll need to rename the variable before saving your topic.
 
 ## Use global variables
 
-After you set a global variable, it will be available to all topics.
+When you're composing a bot message in a Message node or a Question node, select the **{x}** icon to view the variables that are available to the topic. Global variables appear in the **Custom** tab along with any topic variables. Variables are listed in alphabetical order.
 
-When you're composing a bot message in a message node or question node, select the `{x}` button to see available variables. Global variables are listed within the **Custom** tab, alongside any topic variables. Variables are sorted in alphabetical order.
+:::image type="content" source="media/authoring-variables-bot/bot-variable-select.png" alt-text="Screenshot showing selection of a global variable.":::
 
-:::image type="content" source="media/authoring-variables-bot/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
+## Find all topics using a global variable
 
-## Manage global variables
+You can find where a global variable is defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-using-conditions.md).
 
-After you've created a global variable, you can see where it's first defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-using-conditions.md).
+1. Select a global variable in the authoring canvas, or open the [**Variables** pane](../authoring-variables.md#using-the-variables-pane) and select a global variable.
 
-### Find all topics using a global variable
+1. On the **Variable properties** pane, in the **Reference** section, select any of the topics where the variable is used to go directly to that topic and node.
 
-1. Select any global variable in the authoring canvas.
+    :::image type="content" source="media/authoring-variables-bot/bot-variable-used-by.png" alt-text="Screenshot showing the list of topics used by a variable in the Variable properties pane.":::
 
-1. On the **Variable properties** pane, in the **Reference** section, select any of the topics where the variable is used to go straight to that topic and node.
+## Lifecycle of global variables
 
-:::image type="content" source="media/authoring-variables-bot/bot-variable-used-by.png" alt-text="Screenshot showing the list of topics used by a variable in the Variable Properties pane.":::
-
-## Global variables lifecycle and resetting its value
-
-Global variables are accessible from any topic, and the global variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session).
-
-The values of global variables are cleared automatically by the **Clear Variable Values** node. This node is used in the [Reset Conversation system topic](authoring-system-topics.md#reset-conversation) which can be triggered either by redirection from the bot or when the user triggers it directly (for example, by typing "Start over"). In this case, all global variables are reset.
+By default, the value of a global variable persists until [the session](analytics-billed-sessions.md) ends. The **Clear Variable Values** node resets the values of global variables and is used in the [Reset Conversation system topic](authoring-system-topics.md#reset-conversation). That topic can be triggered either by redirection or when the user types a trigger phrase such as "Start over." In that case, all global variables are reset.
 
 ## Set a global variable's value from external sources
 
-If you want to make sure the bot starts a conversation with some context, you can initialize a global variable with an external source.
+If you want to make sure the bot starts a conversation with some context, you can initialize a global variable with an external source. Let's say that your site requires users to sign in. Since your bot already knows a user's name, it can greet customers by name before they start typing their first question.
 
-For example, if your site already knows a user's name, then when they bring up a bot chat, you can let the bot know the customer's name before they start typing their first question. This lets the bot have a more intelligent conversation with the customer without asking for their name again.
+1. Select a global variable.
 
-### Allow external source to set global variable
+1. On the **Variable properties** pane, select **External sources can set values**.
 
-1. Select any variable in the authoring canvas.
+### Set global variables in an embedded bot
 
-1. On the **Variable properties** pane, in the **Usage** section, select the checkbox **External sources can set values**.
+If you're [embedding your bot in a simple web page](publication-connect-bot-to-web-channels.md#add-your-bot-to-your-website), you can append variables and their definitions to the bot's URL. Or, if you'd like a little more control, you can use a `<script>` code block to call and use variables programmatically.
 
-    :::image type="content" source="media/authoring-variables-bot/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
+The variable name in the query string of the URL must match the name of the global variable without the `Global.` prefix. For example, a global variable `Global.UserName` would be referred to as `UserName` in the query.
 
-### Set global variable in an embedded bot
+The examples that follow provide a simple declaration for the variables. In a production scenario, you might pass in as the query parameter or variable definition another variable that has already stored the user's name (for example, if you have the user name from a sign-in script).
 
-If you're [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#add-your-bot-to-your-website), you can append the variables and their definitions. Or, if you'd like a little more control, you can use a `<script>` code block to call and use variables programmatically.
+Append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) in the format `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`.
 
-> [!NOTE]
-> The variable name in the query string must match the global variable without the `global.` prefix. For example, a global variable `global.UserName` must be rendered as `UserName=`.
+For example:
 
-The described examples make a simple declaration for the variables. In a production scenario, you might pass in as the query parameter or variable definition another variable that has already stored the user's name (for example, if you have the user name from a sign-in script).
+- You have a global variable named `Global.UserName`.
+- Your bot's URL is _https://web.powerva.microsoft.com/webchat/bots/12345_.
+- To pass in the user's name when starting a bot conversation on your website, attach the `UserName=` query string as: _https://web.powerva.microsoft.com/webchat/bots/12345?UserName=Renata_.
 
-1. Append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`). For example:
+The parameter name is case-insensitive. `username=Renata` will also work in this example.
 
-    - You have a global variable named `global.UserName`.
-    - Your bot's URL is _https://web.powerva.microsoft.com/webchat/bots/12345_.
-    - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: _https://web.powerva.microsoft.com/webchat/bots/12345?UserName=Renata_.
+### Add global variables to a custom canvas
 
-1. The parameter name is case-insensitive. This means `username=Renata` will also work in this example.
+You can also add the variable to a [custom canvas](customize-default-canvas.md).
 
-**To add the variable to a [custom canvas](customize-default-canvas.md)**
-
-1. In the `<script>` section on the page where you have your bot, define the variables as follows, substituting `variableName1` for the variable name without the `global.` prefix and `variableDefinition1` for the definition. Separate multiple variables with commas `,`.
+1. In the `<script>` section on the page where you have your bot, define the variables as follows, substituting `variableName1` for the variable name without the `Global.` prefix and `variableDefinition1` for the definition. Separate multiple variables with commas (`,`).
 
     ```html
        const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
@@ -119,7 +109,7 @@ The described examples make a simple declaration for the variables. In a product
         });
     ```
 
-1. Within your `<script>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
+1. In your `<script>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your bot's ID):
 
     ```html
     const BOT_ID = "12345-5678";
@@ -142,7 +132,7 @@ The described examples make a simple declaration for the variables. In a product
         .catch(err => console.error("An error occurred: " + err));
     ```
 
-## Related links
+### See also
 
 - [Use variables](authoring-variables.md)
 - [Customize the look and feel of the bot](customize-default-canvas.md)

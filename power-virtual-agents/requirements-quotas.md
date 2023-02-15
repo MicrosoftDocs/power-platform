@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: quotas, admin, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -69,8 +70,8 @@ Configure all [required services for Power Automate](/power-automate/ip-address-
 <!-- best viewed/edited without wordwrap -->
 | Domains                            | Required | Protocols | Uses                                                                                                                                          |
 | ---------------------------------- | -------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| directline.botframework.com        | Yes      | HTTPS     | Access to Bot Framework Web Chat                                                                                                              |
-| directline.botframework.com        | Yes      | WS        | Web socket connection to support Chat                                                                                                         |
+| *.directline.botframework.com        | Yes      | HTTPS     | Access to Bot Framework Web Chat                                                                                                              |
+| *.directline.botframework.com        | Yes      | WS        | Web socket connection to support Chat                                                                                                         |
 | pipe.aria.microsoft.com            | No       | HTTPS     | Telemetry data gathered by Microsoft (strongly recommended to ensure Microsoft team can adequately respond to client-side bot editing issues) |
 | \*.powerva.microsoft.com           | Yes      | HTTPS     | Power Virtual Agents authoring experience and APIs                                                                                            |
 | \*.analysis.windows.net            | Yes      | HTTPS     | Analytics reports shown in Power Virtual Agents (through Power BI)                                                                            |

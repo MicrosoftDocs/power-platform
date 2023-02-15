@@ -30,7 +30,7 @@ Many flows in the solution use the built-in approval actions of Power Automate, 
 
 If you're installing the solution in a new environment or one in which approvals haven't been used in the past, the approval tables must be initialized before you can install the solution. The easiest way to do this is to create a "dummy" approval flow.
 
-1. Go to [flow.microsoft.com](https://flow.microsoft.com) and select your CoE environment.
+1. Go to [Power Automate](https://make.powerautomate.com) and select your CoE environment.
 
 1. Select **+ Create**. 
  
@@ -66,9 +66,7 @@ If you're installing the solution in a new environment or one in which approvals
     >[!IMPORTANT]
     > Extract the zip file after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
 
-1. Import the solution:
-    1. If you're [installing to a production environment](faq.md#installing-a-solution-in-a-production-environment), use the CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip solution file from the download.
-    1. If you're [installing to a Dataverse for Teams environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment), use the solution file CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip from the download.
+1. Import the solution: Use the CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip solution file from the download when [installing the solution in your production environment](faq.md#installing-a-solution-in-a-production-environment).
 
 1. Leave all environment variables blank on import.
 
