@@ -51,12 +51,7 @@ When create a new topic, you can select **Describe it** and ask the AI to make i
     You can select any of the examples to automatically insert them into the **Create a topic to...** field. Select **View more examples** to generate new suggestions. 
 
 3. Enter a name for your topic in the **Name your topic** field. You can include punctuation in the trigger phrase, but it's best to use short phrases rather than long sentences.
-   
-   > [!NOTE]
-   > 
-   > Giving your topic a name helps the AI to construct your topic, as it adds context to your request. 
-
-   
+      
 4. Select **Create**.
    
 5. The authoring canvas will open and a new topic, including a generated title and trigger phrases as well as one or more nodes, will be created for you. You can [use AI to further refine and update the topic](#use-gpt-ai-to-edit-a-topic), in addition to the [usual ways of editing topics](../authoring-create-edit-topics.md).
