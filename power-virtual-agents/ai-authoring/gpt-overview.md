@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 searchScope:
   - "Power Virtual Agents"
 ---
-# Overview of bot-building using AI in Power Virtual Agents
+# Overview of bot-building with AI in Power Virtual Agents
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
