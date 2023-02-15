@@ -170,6 +170,10 @@ For administrative access users:
 
 Before the migration: 
 1. For apps which are solution aware, you can go to https://make.powerapps.com/, navigate to the Solutions page, and export all apps/solutions (either individually or group them together in a single solution if they're not already)
+2. Once the Canvas apps have been exported, delete the apps in the environment.
+
+> [!IMPORTANT]
+> Any Canvas apps, custom pages, or component libraries that are not deleted in the environment prior to migration will be in a corrupted state after migration.
 
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
