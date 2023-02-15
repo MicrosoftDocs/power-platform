@@ -101,7 +101,7 @@ The key vault administrator then grants the respective Power Platform/Dynamics 3
 - An Azure subscription that includes Azure Key Vault.
 - Global tenant admin or an  Azure AD with contributor permission to the Azure AD subscription and permission to create a Azure Key Vault and key. This is required to set up the key vault.
 
-#### Create the key and grant access
+#### Create the key and grant access overview
 
 The Azure Key Vault administrator performs these steps in Azure:
 
@@ -120,7 +120,7 @@ More information: [Azure Key Vault documentation](/azure/key-vault/general/)
 
 - Power Platform administrator must be assigned to either the Power Platform or Dynamics 365 Service administrator Azure AD role
 
-### Manage environment's encryption 
+### Manage environment's encryption overview
 
 The Power Platform administrator performs these steps in Power Platform admin center:
 
@@ -290,47 +290,48 @@ A deployment is started. When it's done, the enterprise policy is created.
 
 Once the enterprise policy is created, the key vault administrator grants the enterprise policy’s managed identity access to the encryption key.
 
-1. Sign into the [Azure portal](https://ms.portal.azure.com/) and go to the key vault.
+1. Sign into the [Azure portal](https://ms.portal.azure.com/) and go to **Key vaults**.
 1. Select the key vault where the key was assigned to the enterprise policy.
-1. Select the **Access policies** tab.
-1. Select **+ Add Access Policy**.
-1. Under **Key Management Operations**, select the **Get** option, and under **Cryptographic Operations**, select the **Unwrap key**, and **Wrap key** options.
+1. Select the **Access policies** tab, and then select **+ Add Access Policy**.
+1. Next to **Select principal**, select **None selected**.
+1. In the right **Principal** pane, enter the enterprise policy name, and then **Select** it.
+1. In the **Add access policy** screen, select the **Key permissions** dropdown list. Then, select these options: 
+   - **Get**
+   - **Unwrap key**
+   - **Wrap key**
    :::image type="content" source="media/cmk-keyvault-access-policy.png" alt-text="Key vault add access policy":::
-1. In the **Principal** panel, select the deployment enterprise policy name.
-1. Select **Add**, to add the access policy, and then select **Save**.
+1. Select **Add**.
 
 ### Grant the Power Platform admin privilege to read enterprise policy
 
-Administrators who have Azure Global, Dynamics 365, and Power Platform administration roles can access the Power Platform admin center to assign environments to the enterprise policy. To access the enterprise policies, the Global admin with Azure key vault access is required to grant the **Reader** role to the Power Platform admin. Once the **Reader** role is granted, the Power Platform administrator will be able to view the enterprise policies on the Power Platform admin center.  
+Administrators who have Azure global, Dynamics 365, and Power Platform administration roles can access the Power Platform admin center to assign environments to the enterprise policy. To access the enterprise policies, the global admin with Azure key vault access is required to grant the **Reader** role to the Power Platform admin. Once the **Reader** role is granted, the Power Platform administrator will be able to view the enterprise policies on the Power Platform admin center.  
 
 > [!NOTE]
-> Only the Power Platform and Dynamics 365 administrators who are granted the reader role to the enterprise policy can add an environment to the policy. Other Power Platform or Dynamics 365 administratorss might be able to view the enterprise policy but they'll get an error when they try to **Add environment** to the policy.
+> Only Power Platform and Dynamics 365 administrators who are granted the reader role to the enterprise policy can add an environment to the policy. Other Power Platform or Dynamics 365 administrators might be able to view the enterprise policy but they'll get an error when they try to **Add environment** to the policy.
 
 ### Grant reader role to a Power Platform administrator
 
 1. Sign into the [Azure portal](https://ms.portal.azure.com/).
-1. Obtain the Power Platform or Dynamics 365 admin’s object ID. To do this:
+1. Copy the Power Platform or Dynamics 365 admin’s object ID. To do this:
    1. Go to the **Users** area in Azure.
-   1. In the All users list, find the user with Power Platform or Dynamics 365 admin permissions using **Search**. 
+   1. In the **All users** list, find the user with Power Platform or Dynamics 365 admin permissions using **Search users**.
    1. Open the user record, on the **Overview** tab copy the user’s **Object ID**. Paste this into a text editor such as NotePad for later.
-1. Get the enterprise policy resource ID. To do this:
-   1. Open Azure Resource Graph Explorer.
-   1. Click on the **Table** tab.
-   1. Enter `microsoft.powerplatform/enterprisepolicies` in the Search box, and then select the **microsoft.powerplatform/enterprisepolicies** resource.
-   1. Click **Run Query** on the command bar.
-   1. A list of all the Power Platform enterprise policies will display.
-   1. Locate the enterprise policy the you want to grant access.
-   1. Scroll to the right of the located enterprise policy and click the **See details** link.
-   1. On the **Details** page, copy the ID.
-   1. Start the Cloud Shell, and run the following command replacing objId with the user’s object ID and the enterprise policy resource ID with the `enterprisepolicies` ID found in the previous steps:
+1. Copy the enterprise policy resource ID. To do this:
+   1. Go to **Resource Graph Explorer** in Azure.
+   1. Enter `microsoft.powerplatform/enterprisepolicies` in the **Search** box, and then select the **microsoft.powerplatform/enterprisepolicies** resource.
+   1. Select **Run query** on the command bar. A list of all the Power Platform enterprise policies is displayed.
+   1. Locate the enterprise policy where you want to grant access.
+   1. Scroll to the right of the enterprise policy, and then scroll to the right and select **See details**.
+   1. On the **Details** page, copy the **id**.
+1. Start [Azure Cloud Shell](https://azure.microsoft.com/get-started/azure-portal/cloud-shell/#features), and run the following command replacing *objId* with the user’s object ID and *EP Resource Id* with the `enterprisepolicies` ID copied in the previous steps:
     `New-AzRoleAssignment -ObjectId { objId} -RoleDefinitionName Reader -Scope {EP Resource Id}`
 
 ## Manage environment's encryption
 
-To manage environment's encryption, you need the following permission:
+To manage the environment's encryption, you need the following permission:
 
 - Azure AD active user who has the Power Platform and/or Dynamics 365 licenses.
-- Azure AD user who has either a Global tenant admin, Power Platform or Dynamics 365 service admin role.
+- Azure AD user who has either a global tenant admin, Power Platform or Dynamics 365 service admin role.
 
 The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer-managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data, and encrypt it with the customer-managed key.
 
@@ -346,10 +347,11 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Select **Save**, and then select **Confirm**.
 
 > [!IMPORTANT]
-> The environment is disabled temporarily during this process and re-enabled to allow users to access while the encryption process continues. It can take up to a day to complete the encryption process.
-> 
- > [!NOTE]
-   > During preview, you can only add non-Production environments.
+> - The environment is disabled temporarily during this process and re-enabled to allow users to access while the encryption process continues. It can take up to a day to complete the encryption process.
+> - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
+
+> [!NOTE]
+> During preview, you can only add non-production environments.
 
 ### Remove environments from policy to return to Microsoft managed key
 
@@ -433,9 +435,9 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 > [!Note]
   > The environment is disabled during migration of the BYOK key to the customer-managed key. The downtime is short as we only need to change the encryption key for the SQL storage. Once the environment is migrated to customer-managed key, the audit log is automatically moved to CosmosDB, the upload files/images are moved to File Storage and they are encrypted automatically with the customer-managed key.
 
-### Known Issue
-Upon migrating your BYOK environment to use the customer-managed key, the environment will show up in the **Environments with policies** list. However, it shows as **Microsoft-managed** on the **Environment Settings\Environment** encryption page
+### Known issue
 
+Upon migrating your BYOK environment to use the customer-managed key, the environment will show up in the **Environments with policies** list. However, it shows as **Microsoft-managed** on the **Environment Settings\Environment** encryption page
 
 ## Next steps
 
