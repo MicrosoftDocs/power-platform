@@ -16,40 +16,44 @@ contributors:
 ---
 # Host object in Power Apps
 
-Provides information about the current host running the app.
+The Host object in Power Apps provides information about the current host running the app.
 
 ## Description
 
-Like a control or [the **App** object](object-app.md), the **Host** object provides properties that identify information from the host running the app. Every app has a **Host** object.
+Similar to a control or [the **App** object](object-app.md), the **Host** object provides properties that identify information from the host running the app. Every app has a **Host** object.
 
-At the top of the **Tree view** pane, expand [the **App** object](object-app.md) and select the **Host** object as you would any other control or screen. At this time however, the **Host** object does not have any properties that accept formulas.
+
+
+To access the **Host** object, expand the  [**App**](object-app.md) object at the top of the **Tree view** pane and then select it. In this example, the **Host** object doesn't have any properties that accept formulas.
 
 > [!div class="mx-imgBorder"]
 > ![The Host object in the Tree view pane.](media/object-host/hostobject.png)
 
 ## BrowserUserAgent property
 
-The **BrowserUserAgent** text property contains the full user agent string as presented by the browser running the app.
+The text property **BrowserUserAgent** contains the complete user agent string that the browser uses to identify itself when running the app
 
-An example browser user agent string could be: `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78`
+For example, a browser user agent string might be: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78`
 
 > [!NOTE]
-> Even when running a Power App in a native app or using [the wrap feature in Power Apps](/power-apps/maker/common/wrap/wrap-how-to), the Power App is displayed through a browser control which will provide a user agent string.
+> If you're running Power Apps in a native app or using the [the wrap](/power-apps/maker/common/wrap/wrap-how-to) feature in Power Apps, the app is presented via a browser control, which supplies a user agent string.
+
 
 ## OSType property
-The **OSType** property provides the name of the operating system in which the app is running. The OS type is determined from the user agent string the browser is sending to Power Apps. Some examples of common values of **OSType**:
+
+The **OSType** property provides the name of the operating system where the app is running. The **OSType** is determined from the user agent string sent by the browser to Power Apps. The following are examples of common values for **OSType**:
 
 | Value |
 | --- |
 | Windows |
-| Mac OS |
+| macOS |
 | iOS |
 | Android |
 | Linux |
 | ... |
 
 > [!NOTE]
-> We strongly discourage using the **OSType** to change experience or functionality of your app based on the reported operating system.
+> Don't using the **OSType** to change experience or functionality of your app based on the reported operating system.
 
 The **OSType** text can be used in any formula, such as showing it in a label's text property:
 
