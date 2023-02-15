@@ -16,15 +16,7 @@ searchScope:
 
 # GPT Builder training, model, and usage FAQ
 
-Notes for reviewers:
 
-- [] Headings and terminology used to describe the features will change. I will update as info comes in.
-- [] The UI is changing daily, so consider all screenshots as placeholders. I will do a final sweep the day before we go live to ensure all screens and associated labels/descriptions are updated.
-- [] Please ignore the indentation/formatting of lists.
-- [] Is the model "text-davinci-003"? Is this model used in the Answers feature as well?
-- [] What do you mean by "monitor output"? What does "monitor" mean, and what sort of "output" are you monitoring?
-- [] What is "synthetic generation"?
-- [] We don't mention the testing methods (rogue/blue) in this authoring faq, but we do in the answers faq. Should it be here as well?
 
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
@@ -43,11 +35,7 @@ You can also modify and update any topic in your bot in the same manner, by desc
 
 ### What data has GPT Builder been trained on?
 
-GPT Builder is powered by the Azure OpenAI GPT-3 (==text-davinci-003==[^da3]) model. GPT models are trained on a corpus consisting of a wide body of publicly available free text data. This data is sourced from a combination of web crawling, English-language Wikipedia, and more. [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
-
-
-[^da3]: is it text-davinci-003? Is this the same for Answers?
-
+GPT Builder is powered by the Azure OpenAI GPT-3 (text-davinci-003) model. GPT models are trained on a corpus consisting of a wide body of publicly available free text data. This data is sourced from a combination of web crawling, English-language Wikipedia, and more. [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
 
 ### Does GPT Builder produce perfect Topics? Does it produce offensive outputs or topics?
 

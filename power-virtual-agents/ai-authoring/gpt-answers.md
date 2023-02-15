@@ -14,7 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# How to use GPT AI to generate a bot's responses
+# How to use GPT AI to generate a bot's responses (Preview)
 
 Notes for reviewers:
 
@@ -39,7 +39,6 @@ When designing and creating a chatbot, you'll likely encounter situations where 
 
 1. Open or create a preview bot that you want to configure. Preview chatbots have **(preview)** added to their name in the list of bots. If you're creating a new bot, ensure you select **Try the unified canvas (preview)**.
 
-==need to update this and copy to other docs, also add to QSG==
 
     :::image type="content" source="media/responses-create-preview-bot.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
 

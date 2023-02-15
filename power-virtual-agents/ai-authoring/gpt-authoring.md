@@ -14,7 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Use GPT AI to create and edit topics (Preview)
+# How to use GPT AI to create and edit topics (Preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
