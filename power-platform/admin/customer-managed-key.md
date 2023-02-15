@@ -61,7 +61,7 @@ All your customer data stored in the following services can be encrypted with CM
 Environments with Finance and Operations apps where Power Platform integration is enabled can also be encrypted. Finance and Operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Enable the Microsoft Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
 
 :::image type="content" source="media/cmk-power-platform-diagram.png" alt-text="Customer-managed encryption key in the Power Platform":::
- 
+
 ## Introduction to customer-managed key
 
 With customer-managed key, administrators can provide their own encryption key from their own Azure Key Vault to the Power Platform storage services to encrypt their customer data. Microsoft doesn't have direct access to your Azure Key Vault. For Power Platform services to access the encryption key from your Azure Key Vault, the administrator creates a Power Platform enterprise policy which references the encryption key and grants this enterprise policy access to read the key from your Azure Key Vault. 
@@ -128,7 +128,7 @@ The Power Platform administrator performs these steps in Power Platform admin ce
 1. Remove environments from enterprise policy to return encryption to Microsoft managed key.
 1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy.
 
-#### Migrating environment's encryption (for customers using the previous key management solution)
+#### Migrate environment's encryption
 
 Customers using the previous [manage the encryption key](manage-encryption-key.md) (BYOK) feature, can use this new customer-managed key to encrypt their  environments. They can add both type of environments:
 
@@ -150,9 +150,10 @@ Similarly, if you didn’t enable these audit or search functionalities and enab
 ## Key management tasks
 
 To simplify the key management tasks, the tasks are broken down to three areas:
->1. Create encryption key.
->1. Create enterprise policy.
->1. Manage environment's encryption.
+
+1. Create encryption key.
+1. Create enterprise policy.
+1. Manage environment's encryption.
 
 ## Create encryption key
 
@@ -161,45 +162,48 @@ To simplify the key management tasks, the tasks are broken down to three areas:
 In Azure, perform the following steps:
 
 1. Create a Pay-as-you-go or its equivalent Azure subscription. This step isn't needed if the tenant already has a subscription.
-1. Create a resource group.
-1. Create a key vault using the paid subscription with the resource group you created in the previous step. More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
-
-> [!IMPORTANT]
-> - To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings. More information: [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview)
-> - During preview, your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet.
+1. Create a resource group. More information: [Create resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
+1. Create a key vault using the paid subscription that includes soft-delete and purge protection with the resource group you created in the previous step. 
+   > [!IMPORTANT]
+   > - To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings. More information: [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview) More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
+   > - During preview, your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet. 
 
 ### Create a key in the key vault
 
 1. Make sure you have the [prerequisites](#prerequisites).
-1. Go to Azure portal > **Key Vault** and locate the key vault where you want to generate an encryption key.
-1. Create or import a key. 
->  Key Type = **RSA** or **RSA-HSM** and RSA Key size = **2048**
->  
-1. Verify Azure key vault settings:
-   1. Access the key vault from Azure portal.
+1. Go to the [Azure portal](https://ms.portal.azure.com/) > **Key Vault** and locate the key vault where you want to generate an encryption key.
+1. Verify the Azure key vault settings:
    1. Select **Properties** under **Settings**.
-   1. Under **Soft-delete**, verify that it is set to **Soft delete has been enabled on this key vault** option.
+   1. Under **Soft-delete**, set or verify that it is set to **Soft delete has been enabled on this key vault** option.
    1. Under **Purge protection**, set or verify that **Enable purge protection (enforce a mandatory retention period for deleted vaults and vault objects)** is enabled.
-   1. Select **Save**.
+   1. If you made changes, select **Save**.
 
    :::image type="content" source="media/cmk-key-vault-purge-protect.png" alt-text="Enable purge protection on the key vault":::
+1. Create or import a key that has these properties: 
+   1. On the **Key Vault** properties pages, select **Keys**.
+   1. Select **Generate/Import**.
+   1. On the **Create a key** screen set the following values, and then select **Create**.
+      - **Options**: **Generate**
+      - **Name**: Provide a name for the key
+      - **Key type**: **RSA** or **RSA-HSM**
+      - **RSA key size**: **2048**
 
 ### Enable the Power Platform enterprise policies service for your Azure subscription
 
-In the Azure portal, register Power Platform as a resource provider (this only needed to be done once):
+Register Power Platform as a resource provider (this only needed to be done once):
 
-1. Go to **Subscription** > **Resource providers**.
-1. Search for **Microsoft.PowerPlatform** and **Register** it.
+1. Sign in to the [Azure portal](https://ms.portal.azure.com/) and go to **Subscription** > **Resource providers**.
+1. In the list of **Resource providers**, search for **Microsoft.PowerPlatform**, and **Register** it.
 
 ### Enable Power Platform enterprise policies service
 
-1. Azure CLI is required on your local machine. Download and install from https://aka.ms/InstallAzureCliWindows.
+1. Azure CLI is required on your local machine. [Download Azure CLI](https://aka.ms/InstallAzureCliWindows).
 1. Run the downloaded Azure cli.MSI.
 1. Download the ARMClient - [ARMClient/README.md projectkudu/ARMClient GitHub](https://github.com/projectkudu/ARMClient/blob/master/README.md).
 1. Start PowerShell and run the ARMClient to sign into your Azure subscription.
    > [!NOTE]
    > Depending on where you are running the command from, you could either use armclient.login from PowerShell, or armclient.azlogin from Azure CLI.
-1. Enable `enterprisePoliciesPreview` feature for your subscription. Replace {subscriptionId} with your *subscriptionId* number
+1. Enable `enterprisePoliciesPreview` feature for your subscription. Replace {subscriptionId} with your *subscriptionId* number. More information: [Find your Azure subscription](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription)
 
    `PS C:\> ARMClient.exe POST https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Features/providers/Microsoft.PowerPlatform/features/enterprisePoliciesPreview/register?api-version=2014-08-01-preview`
 
@@ -208,9 +212,9 @@ In the Azure portal, register Power Platform as a resource provider (this only n
 1. Install PowerShell MSI. More information: [Install PowerShell on Windows, Linux, and macOS](https://ms.portal.azure.com/#create/Microsoft.Template)
 1. After the PowerShell MSI is installed, go back to [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure.
 1. Select the **Build your own template in the editor** link.
-1. Copy the json template into a text editor such as Notepad. More information: [Json template](#json-template)
-1. Replace the values in the json template for: *EnterprisePolicyName*, *location where EnterprisePolicy needs to be created*, *keyVaultId*, *keyName*, and *keyVersion*. More information: [Field definitions for json template](#field-definitions-for-json-template)
-1. Copy the updated template from your text editor to the **Edit template** of the **Custom deployment** in Azure and select **Save**.
+1. Copy the JSON template into a text editor such as Notepad. More information: [Json template](#json-template)
+1. Replace the values in the JSON template for: *EnterprisePolicyName*, *location where EnterprisePolicy needs to be created*, *keyVaultId*, *keyName*, and *keyVersion*. More information: [Field definitions for json template](#field-definitions-for-json-template)
+1. Copy the updated template from your text editor then paste it into the **Edit template** of the **Custom deployment** in Azure, and select **Save**.
    :::image type="content" source="media/cmk-keyvault-template.png" alt-text="Azure key vault template":::
 1. Select a **Subscription** and **Resource group** where the enterprise policy is to be created.
 1. Select **Review + create**, and then select **Create**.
@@ -219,7 +223,7 @@ A deployment is started. When it's done, the enterprise policy is created.
  > [!NOTE]
    > During preview, you can only create up to two enterprise policies.
 
-### Json template
+### Enterprise policy json template
 
 ```json
  {
@@ -255,7 +259,7 @@ A deployment is started. When it's done, the enterprise policy is created.
    }
 ```
 
-### Field definitions for json template
+### Field definitions for JSON template
 
 - **name**. Name of the enterprise policy. This is the name of the policy that appears in Power Platform admin center.
 - **location**. One of the following. This is the location of the enterprise policy and it must correspond with the Dataverse environment’s region:
@@ -277,7 +281,10 @@ A deployment is started. When it's done, the enterprise policy is created.
   - `"korea"`
   - `"norway"`
   - `"singapore"`
-- **keyVaultId**, **keyName**, **keyVersion**: Copy these values from your key vault properties in the Azure portal.
+- Copy these values from your key vault properties in the Azure portal. 
+  - **keyVaultId**: Go to **Key vaults** > select your key vault > **Overview**. Next to **Essentials** select **JSON View**. Copy the **Resource ID** to the clipboard and paste the entire contents into your JSON template.
+  - **keyName**: Go to **Key vaults** > select your key vault > **Keys**. Notice the key **Name** and type the name into your JSON template.
+  - **keyVersion**: Go to **Key vaults** > select your key vault > **Keys**. Select the key, copy the **CURRENT VERSION** number, and then paste it into your JSON template.
 
 ### Grant enterprise policy permissions to access key vault
 
