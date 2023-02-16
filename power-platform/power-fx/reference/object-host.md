@@ -33,7 +33,11 @@ To access the **Host** object, expand the  [**App**](object-app.md) object at th
 
 The text property **BrowserUserAgent** contains the complete user agent string that the browser uses to identify itself when running the app
 
-For example, a browser user agent string might be: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78`
+For example, a browser user agent string might be:
+
+- Mozilla/5.0 (Windows NT 10.0; Win64; x64) 
+- AppleWebKit/537.36 (KHTML, like Gecko) 
+- Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78`
 
 > [!NOTE]
 > If you're running Power Apps in a native app or using the [the wrap](/power-apps/maker/common/wrap/wrap-how-to) feature in Power Apps, the app is presented via a browser control, which supplies a user agent string.
@@ -72,7 +76,8 @@ Label1.Text: $"Provide session ID { Host.SessionID } to your administrator."
 ```
 
 ## TenantID property
-The **TenantID** property returns the GUID that identifies the AAD tenant currently logged in user authenticated with.
+
+The **TenantID** property provides the Globally Unique Identifier (GUID) that specifies the Azure Active Directory (AAD) tenant associated with the presently authenticated user.
 
 > [!NOTE]
 > Similar to **SessionID**, in embedded scenarios such as Power Apps in Power BI, the tenant ID is the tenant used for the Power Apps session authentication.
