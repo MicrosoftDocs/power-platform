@@ -22,11 +22,9 @@ By leveraging recent advancements in AI language models, Power Virtual Agents (p
 Here's what you can do with the two new AI capabilities in Power Virtual Agents (preview):
 
 - **Create an instantly useful chatbot.** With no manual authoring, an "empty" chatbot will be able to respond to users with information from your website, including topics you haven't already created conversations for. 
-- **Author a topic by describing in natural language how you want a chatbot to respond to user input.** Power Virtual Agents (preview) uses AI to generate the content of the conversation automatically for you. Use the suggested topic as is, or as a starting point for further iteration.
+- **Author a topic by describing in natural language how you want a chatbot to respond to user input.** Power Virtual Agents (preview) uses AI to generate the content and business logic of a conversation automatically for you. Use the suggested topic as is, or as a starting point for further iteration.
 
 The AI for these capabilities is powered by the Azure OpenAI GPT-3 (text-davinci-003) model. [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
-
-///to try it out, you need...
 
 ## GTP AI in Power Virtual Agents
 
