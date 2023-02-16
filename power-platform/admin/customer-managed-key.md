@@ -70,8 +70,8 @@ The Power Platform service administrator can then add Dataverse environment(s) t
 
 The administrator can lock the customer-managed key environments by revoking key access from the enterprise policy and unlock the environments by restoring the key access. 
 
-> [!Warning]
-> - When environments are locked, they can't be accessed by anyone, including Microsoft support. Environments are disabled and there can be potential data loss.
+> [!WARNING]
+> When environments are locked, they can't be accessed by anyone, including Microsoft support. Environments that are locked become disabled and data loss can occur.
 
 ## Understand the potential risk when you manage your keys
 
@@ -81,8 +81,10 @@ Consider the following sequence of events.
 
 The malicious key vault administrator creates a key and an enterprise policy on the Azure portal. The Azure Key Vault administrator goes to Power Platform admin center, and add environment(s) to the enterprise policy. The malicious administrator then returns to the Azure portal and revokes key access to the enterprise policy thus locking all the environments. This causes business interruptions as all the environments become inaccessible, and if this event isn't resolved, that is, the key access restored, the environment data can be potentially lost.
 
-> [!Note]
-> - Azure Key Vault has built-in safeguard to assist in restoring the key and it is required to have the **Soft Delete** and **Purge protection** Key Vault settings  enabled. Another safeguard to be considered is to make sure that there is separation of duty where the Azure Key Vault administrator is not granted access to the Power Platform admin center.
+> [!NOTE]
+>
+> - Azure Key Vault has built-in safeguards that assist in restoring the key, which require the **Soft Delete** and **Purge protection** key vault settings enabled.
+> - Another safeguard to be considered is to make sure that there is separation of tasks where the Azure Key Vault administrator isn't granted access to the Power Platform admin center.
 
 ## Separation of tasks
 
