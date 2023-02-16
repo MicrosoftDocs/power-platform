@@ -60,7 +60,8 @@ All your customer data stored in the following services can be encrypted with cu
 
    > [!NOTE]
    > During preview, the connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
-   > Contact the representative for services not listed above for information about customer-managed key support.
+   >
+   > Contact a representative for services not listed above for information about customer-managed key support.
 
 Environments with finance and operations apps where Power Platform integration is enabled can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Enable the Microsoft Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
 
