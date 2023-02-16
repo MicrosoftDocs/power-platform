@@ -87,6 +87,12 @@ The following connectors can't be blocked by using DLP policies.
 > [!NOTE]
 > If a currently unblockable connector is already in the **Blocked** group (for example, because it was blocked when restrictions were different), it will remain in the same group until you edit the policy. You'll get an error message stopping you from saving the policy until you move the unblockable connector to a **Business** or **Non-Business** group.
 
+## Viewing the classification of connectors
+
+When editing DLP policies in the Power Platform Admin Center, all available and visible connectors are shown, regardless of whether they have been classified in a policy. However, when viewing a DLP policy in PowerShell or via the Power Platform for Admins connector, you will only see the connectors that have been explicitly classified (i.e. classified in the Business, Non-business, or Blocked categories). DLP policies viewed from PowerShell or the Power Platform for Admins connector may include stale references to connectors that are no longer available or visible.
+
+In general, the list of Power Platform connectors can differ depending on where you are viewing them, and there are several reasons for this. Some connectors may require specific licensing, and if your license doesn't include them, they will not be visible. Different environments can also have different connectors available due to compliance and regulatory requirements. Microsoft may release updates to connectors, which may not be immediately available across all Power Platform components. Some connectors may only be available in Power Automate and not in Power Apps. Depending on your role and permissions, you may not have access to all connectors.
+
 ## Custom connector classification
 
 ### Environment-level DLP policies 
