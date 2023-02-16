@@ -41,7 +41,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > |3 & 4     |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
 > |5     | September 2023     |  North America       |
 
-All your customer data stored in the following services can be encrypted with CMK:
+All your customer data stored in the following services can be encrypted with customer-managed key:
 
 - Dataverse (Custom solutions and Microsoft services)
 - Chat for Dynamics 365
@@ -49,34 +49,35 @@ All your customer data stored in the following services can be encrypted with CM
 - Dynamics 365 Customer Service
 - Dynamics 365 Customer Insights
 - Dynamics 365 Omnichannel
-- Dynamics 365 Commerce (Finance and Operations)
+- Dynamics 365 Commerce (Finance and operations)
 - Dynamics 365 Field Service
 - Dynamics 365 Retail
-- Dynamics 365 Finance (Finance and Operations)
-- Dynamics 365 Intelligent Order Management (Finance and Operations)
-- Dynamics 365 Project Operations (Finance and Operations)
-- Dynamics 365 Supply Chain Management (Finance and Operations)
-- Dynamics 365 Fraud Protection (Finance and Operations)
+- Dynamics 365 Finance (Finance and operations)
+- Dynamics 365 Intelligent Order Management (Finance and operations)
+- Dynamics 365 Project Operations (Finance and operations)
+- Dynamics 365 Supply Chain Management (Finance and operations)
+- Dynamics 365 Fraud Protection (Finance and operations)
 
- > [!NOTE]
-   > During preview, the connection settings in Connectors continue to be encrypted with Microsoft-managed key. Please check with your service to get a status of their CMK support.
+   > [!NOTE]
+   > During preview, the connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
+   > Contact the representative for services not listed above for information about customer-managed key support.
 
-Environments with Finance and Operations apps where Power Platform integration is enabled can also be encrypted. Finance and Operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Enable the Microsoft Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
+Environments with finance and operations apps where Power Platform integration is enabled can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Enable the Microsoft Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
 
 :::image type="content" source="media/cmk-power-platform-diagram.png" alt-text="Customer-managed encryption key in the Power Platform":::
 
 ## Introduction to customer-managed key
 
-With customer-managed key, administrators can provide their own encryption key from their own Azure Key Vault to the Power Platform storage services to encrypt their customer data. Microsoft doesn't have direct access to your Azure Key Vault. For Power Platform services to access the encryption key from your Azure Key Vault, the administrator creates a Power Platform enterprise policy, which references the encryption key and grants this enterprise policy access to read the key from your Azure Key Vault. 
+With customer-managed key, administrators can provide their own encryption key from their own Azure Key Vault to the Power Platform storage services to encrypt their customer data. Microsoft doesn't have direct access to your Azure Key Vault. For Power Platform services to access the encryption key from your Azure Key Vault, the administrator creates a Power Platform enterprise policy, which references the encryption key and grants this enterprise policy access to read the key from your Azure Key Vault.
 
-The Power Platform service administrator can then add Dataverse environment(s) to the enterprise policy to start encrypting all the customer data in the environment with your encryption key. Administrator can change the environment's encryption key by creating another enterprise policy and add the environment (after removing it) to the new enterprise policy. In an event that the environment no longer needed to be encrypted using your customer-managed key, the administrator can remove the Dataverse environment from the enterprise policy to revert the data encryption back to Microsoft-managed key.
+The Power Platform service administrator can then add Dataverse environments to the enterprise policy to start encrypting all the customer data in the environment with your encryption key. Administrator can change the environment's encryption key by creating another enterprise policy and add the environment (after removing it) to the new enterprise policy. In the event that the environment no longer needs to be encrypted using your customer-managed key, the administrator can remove the Dataverse environment from the enterprise policy to revert the data encryption back to Microsoft-managed key.
 
-The administrator can lock the customer-managed key environments by revoking key access from the enterprise policy and unlock the environments by restoring the key access. 
+The administrator can lock the customer-managed key environments by revoking key access from the enterprise policy and unlock the environments by restoring the key access.
 
 > [!WARNING]
 > When environments are locked, they can't be accessed by anyone, including Microsoft support. Environments that are locked become disabled and data loss can occur.
 
-## Understand the potential risk when you manage your keys
+## Understand the potential risk when you manage your key
 
 As with any business critical application, personnel within your organization who have administrative-level access must be trusted. Before you use the key management feature, you should understand the risk when you manage your database encryption keys. It's conceivable that a malicious administrator (a person who is granted or has gained administrator-level access with intent to harm an organization's security or business processes) working within your organization might use the manage keys feature to create a key and use it to lock your environments in the tenant.
 
