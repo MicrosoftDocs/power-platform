@@ -1,8 +1,1 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
-
-### Remarks
-
-Add remarks here...
-
--->
+More information: [Upload the changes](/power-apps/maker/portals/power-apps-cli-tutorial#step-5-upload-the-changes)

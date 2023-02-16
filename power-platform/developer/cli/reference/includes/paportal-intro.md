@@ -1,4 +1,1 @@
-<!-- 
-Instructions: Remove comments and this line. Add any content needed to introduce this command group
-
--->
+See [Tutorial: Use Microsoft Power Platform CLI with portals](/power-apps/maker/portals/power-apps-cli-tutorial) for information about using Power Platform CLI commands with Power Pages.
