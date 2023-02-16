@@ -58,6 +58,9 @@ All your customer data stored in the following services can be encrypted with CM
 - Dynamics 365 Supply Chain Management (Finance and Operations)
 - Dynamics 365 Fraud Protection (Finance and Operations)
 
+ > [!NOTE]
+   > During preview, the connection settings in Connectors continue to be encrypted with Microsoft-managed key. Please check with your service to get a status of their CMK support.
+
 Environments with Finance and Operations apps where Power Platform integration is enabled can also be encrypted. Finance and Operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Enable the Microsoft Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
 
 :::image type="content" source="media/cmk-power-platform-diagram.png" alt-text="Customer-managed encryption key in the Power Platform":::
@@ -368,6 +371,8 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 ## Change the environment's encryption key
 
 To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
+ > [!NOTE]
+   > During preview, using **New key version** and setting **Rotation policy** to rotate your encryption key is not supported. Activating new key version and disabling the current version will lock the environment.
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create the key and grant access](#create-the-key-and-grant-access-overview) and [Create an enterprise policy](#create-enterprise-policy)
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
