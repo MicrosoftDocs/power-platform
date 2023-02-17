@@ -21,14 +21,14 @@ By leveraging recent advancements in AI language models, Power Virtual Agents (p
 
 Here's what you can do with the two new AI capabilities in Power Virtual Agents (preview):
 
-- **Create an instantly useful chatbot.** With no manual authoring, an "empty" chatbot will be able to respond to users with information from your website, including topics you haven't already created conversations for. 
-- **Author a topic by describing in natural language how you want a chatbot to respond to user input.** Power Virtual Agents (preview) uses AI to generate the content and business logic of a conversation for you automatically. Use the suggested topic as is, or as a starting point for further iteration.
+- **Create an instantly useful chatbot.** With no manual authoring, an "empty" chatbot will be able to respond to users with information from your website, including in conversations you haven't already created a topic for. 
+- **Author a topic by describing in natural language how you want a chatbot to respond to user input.** Power Virtual Agents (preview) uses AI to generate the content and business logic of the conversation for you. Use the suggested topic as is, or as a starting point for further iteration.
 
 The AI for these capabilities is powered by the Azure OpenAI GPT-3 (text-davinci-003) model. [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
 
 ## How AI works in Power Virtual Agents (preview)
 
-Power Virtual Agents (preview) uses an underlying natural language understanding (NLU) model to interpret a bot user's question and then respond correctly. Typically, a [bot maker authors multiple topics](../authoring-create-edit-topics.md) within a bot to account for common questions a user might ask. However, it's impossible to anticipate every question, so occasionally the bot receives input with no pre-built topic. That's where AI steps in. 
+Power Virtual Agents (preview) uses a natural language understanding (NLU) model to interpret a bot user's question and then respond correctly. Typically, a [bot maker authors multiple topics](../authoring-create-edit-topics.md) within a bot to account for the most common questions a user might ask. However, it's impossible to anticipate every question, so occasionally the bot receives input with no pre-built topic. That's where AI steps in. 
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](../authoring-system-fallback.md).
 
