@@ -29,7 +29,7 @@ Reset a sandbox environment to delete and reprovision it. Consider a reset when 
 
  **An example scenario**  
   
- Thomas is looking at the storage consumed by the various Contoso environments. He is getting concerned that they'll run out of space in one of their production environments.  Thomas also wants to free up some space so that he can give the production environment some extra storage.  He's also been notified that the Legal department has a retention policy regarding the use of production data in test environments.  
+ Thomas is looking at the storage consumed by the various Contoso environments. Thomas is getting concerned that they'll run out of space in one of their production environments. Thomas also wants to free up some space to give the production environment some extra storage. Thomas has also been notified that the Legal department has a retention policy regarding the use of production data in test environments.  
   
  After contacting Elisa, Thomas resets the Sales department's complete sandbox environment. The environment has been reprovisioned to factory settings. It's now ready for future use as a sandbox environment for a future project.  
  
