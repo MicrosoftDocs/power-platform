@@ -27,6 +27,7 @@ We'll start off talking a little about team development and then dive into Azure
 
 To learn more about key ALM concepts and working with solutions, see [Overview of application lifecycle management](overview-alm.md) and watch this video.
 
+
 > [!VIDEO https://learn-video.azurefd.net/vod/player?ev=powerful-devs-conference&session=how-to-do-alm-with-power-platform]
 
 ## Team development
