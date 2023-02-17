@@ -31,15 +31,14 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > - Change key by creating a new enterprise policy, removing the environment from CMK and re-apply CMK with new enterprise policy.
 > - Lock CMK environments by revoking CMK key vault and/or key permissions.
 > - Migrate [bring-your-own-key (BYOK)](/power-platform/admin/manage-encryption-key) environments to CMK by applying CMK key.
-
 >
-> This feature is gradually being rolled out following this deployment schedule:
+> This feature is made available following this schedule:
 >
-> |Region station  |Est. public preview availability  |Regions in station  |
-> |---------|---------|---------|
-> |1 & 2     | March 2023        | Canada, France, Germany, India, Norway, South Africa, South America, South Korea, Switzerland, Australia        |
-> |3 & 4     |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
-> |5     | September 2023     |  North America       |
+> |Est. public preview availability  |Regions  |
+> |---------|---------|
+> | March 2023        | Canada, France, Germany, India, Norway, South Africa, South America, South Korea, Switzerland, Australia        |
+> |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
+> | September 2023     |  North America       |
 
 All your customer data stored in the following services can be encrypted with customer-managed key:
 
