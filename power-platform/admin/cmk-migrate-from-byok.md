@@ -11,12 +11,17 @@ ms.custom: template-how-to
 ---
 # Migrate bring-your-own-key environments to customer-managed key (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 For customers using the previous [manage the encryption key](manage-encryption-key.md) (BYOK) feature, they can change their BYOK enabled environment's encryption to use the new customer-managed key. You can also add your existing non-BYOK enabled environments to use the new customer-managed key.
 
 - Add non-BYOK enabled environments – these are environments that you haven’t encrypted with your own key.
 - Migrate BYOK enabled environments – these are environments that you have encrypted with your own key.
 
-1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy.
+> [!IMPORTANT]
+> This is a preview feature.
+
+1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy. 
 1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data: More information: [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data) [Add an environment](#add-an-environment-to-the-enterprise-policy-to-encrypt-data) 
 
 > [!IMPORTANT]

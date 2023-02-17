@@ -11,7 +11,7 @@ ms.custom: template-how-to
 ---
 # Lock environments by revoking key vault and/or key permission access (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../../../../../repos/power-platform-pr/power-platform/includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Since separate encryption keys can be used to encrypt different Microsoft Dataverse environments, you can separately lock these environments by revoking key vault access to the respective enterprise policy. Locking key vault or key access can only be done by the Azure Key Vault admin. There's no advanced warning to the Power Platform admin or users when an Azure Key Vault admin revoked key access.
 

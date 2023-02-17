@@ -146,14 +146,14 @@
                   href: admin-mode.md
                 - name: Encryption key management
                   items:
-                  - name: Self-managed key (BYOK)
-                  - href: manage-encryption-key.md
-                  - name: Customer managed key (preview)
-                    href: customer-managed-key.md
-                  - name: Lock and unlock environments (preview)
-                    href: cmk-lock-unlock.md
-                  - name: Migrate from BYOK (preview)
-                    href: cmk-migrate-from-byok.md  
+                    - name: Self-managed key (BYOK)
+                    - href: manage-encryption-key.md
+                    - name: Customer managed key (preview)
+                      href: customer-managed-key.md
+                    - name: Lock and unlock environments (preview)
+                      href: cmk-lock-unlock.md
+                    - name: Migrate from BYOK (preview)
+                      href: cmk-migrate-from-byok.md  
                 - name: Trial environments
                   href: trial-environments.md
                 - name: Sandbox environment
