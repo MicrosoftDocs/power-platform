@@ -891,7 +891,7 @@
                       items:
                         - name: Configure incoming and outgoing email synchronization
                           href: set-incoming-outgoing-email-synchronization.md
-                        - name: Configure correlation settings for incoming email
+                        - name: Specify which emails are automatically tracked
                           href: email-message-filtering-correlation.md
                         - name: Associate an email address with a row
                           href: associate-email-address.md
