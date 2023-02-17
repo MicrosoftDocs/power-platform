@@ -25,8 +25,7 @@ The articles in this section describe how you as a developer can use available A
 
 We'll start off talking a little about team development and then dive into Azure DevOps and available build tools.
 
-To learn more about key ALM concepts and working with solutions, see [Overview of application lifecycle management](overview-alm.md) and watch this video.
-
+To learn more about key ALM concepts and working with solutions, see [Overview of application lifecycle management](overview-alm.md) and watch the following video.<p/>
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?ev=powerful-devs-conference&session=how-to-do-alm-with-power-platform]
 
