@@ -146,7 +146,7 @@
                   href: admin-mode.md
                 - name: Encryption key management
                   items:
-                  - name: Customer managed encryption key
+                  - name: Self-managed key (BYOK)
                   - href: manage-encryption-key.md
                   - name: Customer managed key (preview)
                     href: customer-managed-key.md
