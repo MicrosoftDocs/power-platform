@@ -17,7 +17,7 @@ searchScope:
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-By leveraging recent advancements in AI language models, Power Virtual Agents (preview) transforms how you build chatbots, increasing a chatbot's ability to respond to user input while at the same time reducing or eliminating manual authoring and configuration.
+By leveraging recent advancements in AI language models, Power Virtual Agents (preview) transforms how you build chatbots, increasing a chatbot's ability to respond to user input while at the same time significantly reducing manual authoring and configuration.
 
 Here's what you can do with the two new AI capabilities in Power Virtual Agents (preview):
 
