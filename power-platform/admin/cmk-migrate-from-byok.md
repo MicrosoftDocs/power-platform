@@ -21,8 +21,8 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 > [!IMPORTANT]
 > This is a preview feature.
 
-1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy. 
-1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data: More information: [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data) [Add an environment](#add-an-environment-to-the-enterprise-policy-to-encrypt-data) 
+1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy. More information: [Create encryption key](customer-managed-key.md#create-encryption-key) and [Create enterprise policy](customer-managed-key.md#create-enterprise-policy)
+1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data: More information: [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
 
 > [!IMPORTANT]
 > The environment is disabled during migration of the BYOK key to the customer-managed key. The downtime is short as we only need to change the encryption key for the SQL storage. Once the environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB, the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key.

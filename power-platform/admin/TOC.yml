@@ -147,7 +147,7 @@
                 - name: Encryption key management
                   items:
                     - name: Self-managed key (BYOK)
-                    - href: manage-encryption-key.md
+                      href: manage-encryption-key.md
                     - name: Customer managed key (preview)
                       href: customer-managed-key.md
                     - name: Lock and unlock environments (preview)
