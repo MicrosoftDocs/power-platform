@@ -22,9 +22,15 @@ For deprecation information of other products, see [Other deprecation articles](
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 ## AI Builder image classification model by Lobe is deprecated
-<br/>
-<br/>
-<br/>
+
+Effective January 2023, the image classification model by Lobe (preview) was deprecated.
+
+The model allowed you to quickly create and train models to classify images into different categories. This was useful for classifying objects in images, such as animals, plants, and vehicles. The model was not aligned with other models offered with AI Builder, which offer an in-browser training and model usage experience.
+
+The deprecation of this capability means that you'll no longer be able to use the model to classify images. You'll no longer be able to download the Lobe application. Models built with Lobe might continue to work and serve their purpose, but they won't be supported by the AI Builder team. Your Lobe installation might also continue to function, but the application won't be supported.
+
+You can use other computer vision models like object detection and image description. Users who are impacted by the deprecation can use other methods to classify images, such as using [Azure Cognitive Services for Custom Vision](/azure/cognitive-services/Custom-Vision-Service/overview).
+
 <!--
 - Overview of the feature being deprecated.
 - Why is this needed?
