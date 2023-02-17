@@ -22,31 +22,22 @@ By leveraging recent advancements in AI language models, Power Virtual Agents (p
 Here's what you can do with the two new AI capabilities in Power Virtual Agents (preview):
 
 - **Create an instantly useful chatbot.** With no manual authoring, an "empty" chatbot will be able to respond to users with information from your website, including topics you haven't already created conversations for. 
-- **Author a topic by describing in natural language how you want a chatbot to respond to user input.** Power Virtual Agents (preview) uses AI to generate the content and business logic of a conversation automatically for you. Use the suggested topic as is, or as a starting point for further iteration.
+- **Author a topic by describing in natural language how you want a chatbot to respond to user input.** Power Virtual Agents (preview) uses AI to generate the content and business logic of a conversation for you automatically. Use the suggested topic as is, or as a starting point for further iteration.
 
 The AI for these capabilities is powered by the Azure OpenAI GPT-3 (text-davinci-003) model. [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
 
-## GTP AI in Power Virtual Agents
+## How AI works in Power Virtual Agents (preview)
 
-There are two core scenarios where you can use GPT AI in Power Virtual Agents.
+Power Virtual Agents (preview) uses an underlying natural language understanding (NLU) model to interpret a bot user's question and then respond correctly. Typically, a [bot maker authors multiple topics](../authoring-create-edit-topics.md) within a bot to account for common questions a user might ask. However, it's impossible to anticipate every question, so occasionally the bot receives input with no pre-built topic. That's where AI steps in. 
 
-### Generate a bot's responses
+In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](../authoring-system-fallback.md).
 
-Power Virtual Agents uses an underlying natural language understanding model for understanding a bot user's question and determining the right topic. Typically, a [bot maker creates multiple topics](../authoring-create-edit-topics.md) within a bot to account for what a user might ask. But, sometimes, a bot user might ask a question for which there is no built topic. 
+Now, before involving a live agent, the bot uses natural language processing to:
+- Parse what a user types to determine what they're asking
+- From a specified URL (for example, your website), find, collate, and parse relevant information
+- Create a plain language response and then deliver that to the bot user
 
-When this happens, by default the bot prompts the user to rephrase their query. If, after two prompts, the bot still can't determine the user's intent, the bot escalates to a live agent through the [system **Escalate** topic](../authoring-system-fallback.md).
-
-You can specify a [system fallback topic](../authoring-system-fallback-topic.md) to customize the response and actions the bot takes - but this isn't always helpful for the bot user.
-
-The **Boost conversations** option in Power Virtual Agents preview helps to solve that issue by connecting the natural language processing capabilities of GPT with [the AI already in Power Virtual Agents](../advanced-ai-features.md) (including transformer-based natural language understanding) to:
-
-- Understand a user's intent by parsing what they type, and determining what they're asking
-- Find, collate, and parse relevant information from a URL you specify
-- Create a plain language response and deliver that to the bot user
-
-In other words, if the bot doesn't already have an answer for what the user is asking, it can get the information and create one "on-the-fly".
-
-See [How to use GPT AI to generate a bot's responses](gpt-answers.md) for how to set up and use the feature, along with tips for getting the best from the AI.
+See [How to use GPT AI to generate a bot's responses](gpt-answers.md) for how to set up and use the **boost conversations** capability.
 
 ### Create and edit topics by talking to AI
 
