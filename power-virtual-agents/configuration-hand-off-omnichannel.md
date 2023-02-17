@@ -25,11 +25,11 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- Sign in with an account that has the [Omnichannel for Customer Service administrator role](/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges).
+- Sign in with an account that has the System Administrator role.
 - Have a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 - Environments:
   - Your bot environment and Omnichannel for Customer Service environment must be in the same [geographical region](./data-location.md#data-locations).
-  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Europe, Asia, United Kingdom, or Australia geographies](./data-location.md#data-locations).
+  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Canada, Europe, Asia, United Kingdom, or Australia geographies](./data-location.md#data-locations).
 - [Register an application with Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application).
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
 
@@ -221,7 +221,7 @@ Dynamics 365 Customer Service provides [more context variables](/dynamics365/cus
 Authentication isn't supported for voice-based hand-off to Omnichannel for Customer Service instances. If you've set up authentication for your bot, the [authentication variables](./advanced-end-user-authentication.md) don't include authentication information when they're sent to your Omnichannel for Customer Service instance.
 
 > [!WARNING]
-> For voice-based hand-off capabilities to work, both your bot and Omnichannel for Customer Service environments must be hosted in a datacenter in the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations). Otherwise, voice capabilities don't work, and you won't receive any error messages or warnings.
+> For voice-based hand-off capabilities to work, both your bot and Omnichannel for Customer Service environments must be hosted in a datacenter in the [United States, Canada, Europe, United Kingdom, Asia, or Australia geographies](data-location.md#data-locations). Otherwise, voice capabilities don't work, and you won't receive any error messages or warnings.
 
 If your bot incorporates adaptive cards, make sure you use [Bot Framework Composer](./advanced-bot-framework-composer.md) so that the voice bot correctly reads their "speak" property.
 

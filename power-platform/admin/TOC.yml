@@ -433,7 +433,7 @@
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors
                   href: block-forwarded-email-from-power-automate.md
-                - name: Block the cookie replay attack (preview)
+                - name: Block cookie replay attacks
                   href: block-cookie-replay-attack.md
                 - name: Configure environment security
                   items:
@@ -889,7 +889,7 @@
                       items:
                         - name: Configure incoming and outgoing email synchronization
                           href: set-incoming-outgoing-email-synchronization.md
-                        - name: Configure correlation settings for incoming email
+                        - name: Specify which emails are automatically tracked
                           href: email-message-filtering-correlation.md
                         - name: Associate an email address with a row
                           href: associate-email-address.md
