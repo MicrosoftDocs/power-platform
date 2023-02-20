@@ -20,14 +20,14 @@ search.app:
 
 Contracts, cases, articles, quotes, orders, invoices, marketing campaigns, categories, and knowledge articles are automatically numbered. If your organization has standard numbering formats, you can change the default three-character prefixes and number format to match your organization.  
 
-These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Auto numbering**.
+These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Administration** > **Auto numbering**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
   
-1.  Select an environment and go to **Settings** > **Data management** > **Auto numbering**.
+1.  Select an environment and go to **Settings** > **Administration** > **Auto numbering**.
   
 2.  In the **Set Auto-Numbering** dialog box, select the record type that you want to change.  
   
