@@ -102,7 +102,7 @@ To run the PowerShell cmdlets for app creators, do the following:
    Get-Help Get-AdminPowerAppEnvironment -Detailed
    ```
 
-## Power Apps cmdlets for makers
+## Power Apps cmdlets for app creators
 
 ### Prerequisite
 Users with a valid Power Apps license can perform the operations in these cmdlets, but they will only have access to the resources (for example, apps, flows, etc.) that have been created or shared with them.
@@ -365,9 +365,9 @@ EnvironmentName and FlowName can be found in the flow url:
    https://us.flow.microsoft.com/manage/environments/66495a1d-e34e-e330-9baf-0be559e6900b/solutions/fd140aaf-4df4-11dd-bd17-0019b9312238/flows/53d829c4-a5db-4f9f-8ed8-4fb49da69ee1/details
    <br />The GUID after environments/ is the EnvironmentName and the GUID after flows/ is the FlowName
  - The AppName for canvas app can be found in Canvas app details page.
-   ![image](https://user-images.githubusercontent.com/62711514/178654001-94235e7a-db95-4785-8175-a2994e0039e3.png)
+   ![AppName for Canvas](https://user-images.githubusercontent.com/62711514/178654001-94235e7a-db95-4785-8175-a2994e0039e3.png)
  - The AppName for model driven app can be found in solution explorer.
-   ![image](https://user-images.githubusercontent.com/62711514/178653658-1f0a347d-d68b-4faa-881b-5396e5c29361.png)
+   ![AppName for MDA](https://user-images.githubusercontent.com/62711514/178653658-1f0a347d-d68b-4faa-881b-5396e5c29361.png)
    - To see the examples, type: "get-help Add-AdminFlowPowerAppContext -examples".
    - For more information, type: "get-help Add-AdminFlowPowerAppContext -detailed".
    - For technical information, type: "get-help Add-AdminFlowPowerAppContext -full".
