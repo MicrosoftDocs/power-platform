@@ -63,7 +63,7 @@ In particular, consider the following:
 We recommend using three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups#microsoft-365-groups) for this, one for each persona. This group type is an email-enabled security group and can be associated with a Microsoft team for collaboration between the people in the group.
 
 >[!IMPORTANT]
->The admin configuring the [inventory components](setup-core-components.md) needs to be an owner of these groups.
+>As part of the [inventory of a tenants Power Platform resources](setup-core-components.md), makers are added to the group you define for the **Power Platform Maker persona**. You can share apps and other resources relevant to makers with this group. In order for makers to be added to the group, the admin or service account setting up the [inventory components](setup-core-components.md) needs to be an owner of these groups.
 
 Some processes part of the CoE Starter Kit send [Power Automate Approvals](/power-automate/get-started-approvals) and [Adaptive Cards for Microsoft Teams](/power-automate/overview-adaptive-cards). These can't be assigned to a group. You therefore also need an individual named admin that these communications can go to. In addition to the above groups, you will therefore also need:
 
@@ -71,11 +71,23 @@ Some processes part of the CoE Starter Kit send [Power Automate Approvals](/powe
   - Individual to receive chat bot chats
   - Individual to receive approvals
 
-## Create your environment
+## Decide what data source your Power Platform inventory is coming from?
 
-Create a production environment to install the CoE Starter Kit solutions:
+At the heart of the CoE Starter Kit are processes that gather information about your tenants Power Platform inventory and adoption to provide a holistic overview and tenant-wide processes to manage, govern and nurture Power Platform adoption in your tenant.
+
+The CoE Starter Kit offers two mechanisms to gather this data:
+
+- **Data Export (preview)**: You can export Power Platform inventory and usage data directly into Azure Data Lake Storage. Because the data is provided by the admin center, this is high in performance. Note, Data Export has to be configured in advance from the Power Platform Admin Center to use this option: [Set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant). This option requires an Azure Storage account, and is recommend for larger tenants with more than 10,000 apps or flows.
+- **Cloud flows**: Cloud flows use Power Platform admin connectors to query and crawl your tenant and store inventory and usage data in Dataverse tables. This method is suitable for small tenants but can cause performance issues in larger tenants. If you have more than 10,000 apps or flows consider using Data Export instead.
+
+## Create your environments
+
+We recommend creating two environments to install the CoE Starter Kit solution - one for testing updates and customizations, and one for production use. Learn more: [Updating the CoE Starter Kit](after-setup.md)
+
+Create two production environments to install the CoE Starter Kit solutions:
 
 - [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database).
+- Choose English as the default language.
 - Don't add sample apps and datasets.
 - Don't restrict environment access with a security group, because some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
 
