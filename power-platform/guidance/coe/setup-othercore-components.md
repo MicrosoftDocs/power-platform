@@ -28,7 +28,7 @@ This article will help you to setup the remaining components in the Core solutio
 ## Set up other core components using the Setup Wizard (preview)
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
 1. Open the **More features** page and select **Capacity alerts and Welcome email**.
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-other.png" alt-text="CoE Starter Kit Setup Wizard":::

@@ -162,14 +162,12 @@ Once you've removed unmanaged layers, you can import the new solution version:
 1. The [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) will also show you if the upgrade has failed and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
  
    ![View solution operation error details](/power-platform/guidance/coe/media/coe-upgrade4.png "View solution operation error details")
-    
-1. Make sure to check the setup instructions of the solution you're upgrading to see if any new steps are necessary to use the solution and its new features.
- 
-   1. [Set up core components](/power-platform/guidance/coe/setup-core-components)
-   1. [Set up governance components](/power-platform/guidance/coe/before-setup-gov)
-   1. [Set up nurture components](/power-platform/guidance/coe/setup-nurture-components)
 
-1. When the upgrade has completed processing, move on to [testing](#testing-strategy).
+1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. This app provides a guided step by step experience through the configuration steps. During an upgrade, it will show you the solution history, any components with unmanaged layers and any new apps, flows and environment variables that have been added during this upgrade.
+
+1. Once you have finished this step, move on to [testing](#testing-strategy).
 
 ## Testing strategy
 

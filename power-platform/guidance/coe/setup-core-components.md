@@ -81,7 +81,7 @@ The import can take up to 15 minutes to be completed.
 ### Open the Setup Wizard to complete the configuration
 
 1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
 1. This app provides a guided step by step experience through the configuration steps.
     :::image type="content" source="media/coesetupwizard.png" alt-text="CoE Starter Kit Setup Wizard":::
 
