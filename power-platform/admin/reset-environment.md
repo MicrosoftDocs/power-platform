@@ -1,12 +1,12 @@
 ---
 title: "Reset an environment to delete and reprovision"
 description: "This page explains how to reset a Power Platform environment if you want to create a new project, free up storage space, or delete personal information."
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/13/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 search.app:
