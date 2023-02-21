@@ -6,7 +6,7 @@ ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.service: powerapps
 ms.topic: how-to
-ms.date: 01/25/2023
+ms.date: 02/17/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key (preview)
@@ -92,7 +92,7 @@ The malicious key vault administrator creates a key and an enterprise policy on 
 
 ### Separation of duty to mitigate the risk
 
-This section describes the customer managed key feature duties that each admin role is responsible for. Separating these tasks helps mitigate the risk involved with self-managed keys.
+This section describes the customer-managed key feature duties that each admin role is responsible for. Separating these tasks helps mitigate the risk involved with customer-managed keys.
 
 ### Azure Key Vault and Power Platform/Dynamics 365 service admin overview
 
@@ -124,15 +124,15 @@ The Azure Key Vault administrator performs these steps in Azure:
 
 - Power Platform administrator must be assigned to either the Power Platform or Dynamics 365 Service administrator Azure AD role.
 
-### Manage environment's encryption overview
+### Manage environment's encryption in Power Platform admin center
 
-The Power Platform administrator performs these steps in Power Platform admin center:
+The Power Platform administrator performs these tasks in Power Platform admin center:
 
 1. Add the Power Platform environments to the enterprise policy to encrypt data with the customer-managed key.
 1. Remove environments from enterprise policy to return encryption to Microsoft managed key.
 1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy.
 
-##### Enterprise policy
+#### Enterprise policy
 
 You can create a new enterprise policy with a new key or use an existing enterprise policy. Follow the same steps as [Manage environment's encryption](#manage-environments-encryption) to add your non-BYOK enabled and BYOK enabled environments.
 
