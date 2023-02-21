@@ -1,13 +1,13 @@
 ---
 title: "Sandbox environments  | MicrosoftDocs"
 description: Manage sandbox environments.
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/24/2020
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 search.audienceType: 
   - admin
 search.app:
