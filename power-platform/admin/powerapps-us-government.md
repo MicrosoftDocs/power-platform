@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: macarrer
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
