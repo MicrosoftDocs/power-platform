@@ -38,7 +38,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > |---------|---------|
 > | March 2023        | Canada, France, Germany, India, Norway, South Africa, South America, South Korea, Switzerland, Australia        |
 > |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
-> | September 2023     |  North America       |
+> | July 2023     |  North America       |
 
 All your customer data stored in the following services can be encrypted with customer-managed key:
 
@@ -72,7 +72,13 @@ With customer-managed key, administrators can provide their own encryption key f
 
 The Power Platform service administrator can then add Dataverse environments to the enterprise policy to start encrypting all the customer data in the environment with your encryption key. Administrators can change the environment's encryption key by creating another enterprise policy and add the environment (after removing it) to the new enterprise policy. In the event that the environment no longer needs to be encrypted using your customer-managed key, the administrator can remove the Dataverse environment from the enterprise policy to revert the data encryption back to Microsoft-managed key.
 
-The administrator can lock the customer-managed key environments by revoking key access from the enterprise policy and unlock the environments by restoring the key access.
+The administrator can lock the customer-managed key environments by revoking key access from the enterprise policy and unlock the environments by restoring the key access. More information: [Lock environments by revoking key vault and/or key permission access (preview)](cmk-lock-unlock.md)
+
+To simplify the key management tasks, the tasks are broken down into three main areas:
+
+1. Create encryption key.
+1. Create enterprise policy and grant access.
+1. Manage environment's encryption.
 
 > [!WARNING]
 > When environments are locked, they can't be accessed by anyone, including Microsoft support. Environments that are locked become disabled and data loss can occur.
@@ -107,7 +113,7 @@ The key vault administrator then grants the respective Power Platform/Dynamics 3
 
 ##### Create the key and grant access overview
 
-The Azure Key Vault administrator performs these steps in Azure:
+The Azure Key Vault administrator performs these tasks in Azure.
 
 1. Create an Azure paid subscription and Key Vault. Ignore this step if you already have a subscription that includes Azure Key Vault.
 1. Go to the Azure Key Vault service, and create a key.
@@ -115,6 +121,8 @@ The Azure Key Vault administrator performs these steps in Azure:
 1. Create a Power Platform enterprise policy.
 1. Grant enterprise policy permissions to access the key vault.
 1. Grant Power Platform and Dynamics 365 administrators permission to read the enterprise policy.
+
+More information: [Create encryption key and grant access](#create-encryption-key-and-grant-access)
 
 #### Power Platform/Dynamics 365 service admin Power Platform admin center tasks
 
@@ -124,33 +132,14 @@ The Azure Key Vault administrator performs these steps in Azure:
 
 ##### Manage environment's encryption in Power Platform admin center
 
-The Power Platform administrator performs these tasks in Power Platform admin center:
+The Power Platform administrator manages customer-managed key tasks related to the environment in Power Platform admin center.
 
 1. Add the Power Platform environments to the enterprise policy to encrypt data with the customer-managed key.
 1. Remove environments from enterprise policy to return encryption to Microsoft managed key.
-1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy.
+1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy. More information: [Manage environment's encryption](#manage-environments-encryption)
+1. Migrate from BYOK. If you are using the earlier self-managed encryption key feature, you can migrate your key to customer managed key. More information: [Migrate bring-your-own-key environments to customer-managed key (preview)](cmk-migrate-from-byok.md)
 
-### Enterprise policy admin task
-
-The enterprise policy admin creates a new enterprise policy with a new key or use an existing enterprise policy. Follow the steps in [Manage environment's encryption](#manage-environments-encryption) to add your non-BYOK enabled and BYOK enabled environments.
-
-> [!IMPORTANT]
-> - Environments are disabled during encryption key migration.
-> - When BYOK enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
-
-If you have enabled audit and search in the BYOK environment and have uploaded files and created a data lake, all these storages will be automatically created and encrypted with the customer-managed encryption key.
-
-Similarly, if you didn’t enable these audit or search functionalities and enabled them after your environment is encrypted with this feature, all these storages will be automatically created and encrypted with the encryption key.
-
-## Key management tasks
-
-To simplify the key management tasks, the tasks are broken down to three areas:
-
-1. Create encryption key.
-1. Create enterprise policy.
-1. Manage environment's encryption.
-
-## Create encryption key
+## Create encryption key and grant access
 
 ### Create an Azure paid subscription and key vault
 
@@ -348,7 +337,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 > [!NOTE]
 > During preview, you can only add non-production environments.
 
-## Remove environments from policy to return to Microsoft managed key
+### Remove environments from policy to return to Microsoft managed key
 
 Follow these steps if you want to return to a Microsoft managed encryption key.
 
@@ -362,7 +351,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 1. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
 1. Select **Save**.
 
-## Change the environment's encryption key
+### Change the environment's encryption key
 
 To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
  > [!NOTE]
@@ -387,7 +376,7 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 > [!IMPORTANT]
 > The environment will be disabled when it's added to the new enterprise policy.
 
-## View the list of encrypted environments
+### View the list of encrypted environments
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
 1. On the **Enterprise policies** page, select the **Environments with policies** tab. The list of environments that were added to enterprise policies are displayed.
