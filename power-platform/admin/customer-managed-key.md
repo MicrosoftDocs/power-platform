@@ -336,7 +336,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
 
 > [!NOTE]
-> During preview, you can only add non-production environments.
+> During preview, you can only add sandbox environments.
 
 ### Remove environments from policy to return to Microsoft managed key
 
