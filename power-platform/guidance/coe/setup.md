@@ -3,7 +3,6 @@ title: "Set up the CoE Starter Kit | MicrosoftDocs"
 description: "Prerequisites and instructions for setting up the Center of Excellence (CoE) Starter Kit for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate"
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2022
@@ -71,14 +70,24 @@ Some processes part of the CoE Starter Kit send [Power Automate Approvals](/powe
   - Individual to receive chat bot chats
   - Individual to receive approvals
 
-## Decide what data source your Power Platform inventory is coming from?
+## What data source should I use for my Power Platform inventory?
 
 At the heart of the CoE Starter Kit are processes that gather information about your tenants Power Platform inventory and adoption to provide a holistic overview and tenant-wide processes to manage, govern and nurture Power Platform adoption in your tenant.
 
 The CoE Starter Kit offers two mechanisms to gather this data:
 
 - **Data Export (preview)**: You can export Power Platform inventory and usage data directly into Azure Data Lake Storage. Because the data is provided by the admin center, this is high in performance. Note, Data Export has to be configured in advance from the Power Platform Admin Center to use this option: [Set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant). This option requires an Azure Storage account, and is recommend for larger tenants with more than 10,000 apps or flows.
-- **Cloud flows**: Cloud flows use Power Platform admin connectors to query and crawl your tenant and store inventory and usage data in Dataverse tables. This method is suitable for small tenants but can cause performance issues in larger tenants. If you have more than 10,000 apps or flows consider using Data Export instead.
+- **Cloud flows**: Cloud flows use Power Platform admin connectors to query and crawl your tenant and store inventory and usage data in Dataverse tables. This method is suitable for small tenants but can cause performance issues in larger tenants. If you have more than 10,000 apps or flows or are currently hitting performance and throttling issues with this mechanism consider using Data Export instead.
+
+Review the below requirements and scenarios to pick the right data source for the CoE Starter Kit:
+
+| Scenario | Data Export | Cloud flows |
+| --- | --- | --- |
+| Requires Azure resources (Storage Account) | Yes | No |
+| Requires Global Admin for initial setup | Yes | No |
+| Supports private endpoints | No | n/a |
+| Power Platform inventory size | Unlimited | Works best for small to medium Power Platform adoption, less than 10,000 apps and flows |
+| License requirement for the admin/service account managing the CoE kit | Power Apps Per User, Power Automate Per User, Power BI Premium | Power Apps Per User, Power Automate Per User and (depending on tenant size) Per Flow, Power BI Pro |
 
 ## Create your environments
 

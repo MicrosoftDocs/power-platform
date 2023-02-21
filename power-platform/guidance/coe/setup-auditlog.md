@@ -187,7 +187,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Edit the **Run only users** settings.
    :::image type="content" source="media/coe49.png" alt-text="Child flow - run only users.":::
 
-1. For the  Office 365 Management API custom connector and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
+1. For the  Office 365 Management API custom connector change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
    :::image type="content" source="media/coe50.png" alt-text="Configure run only users.":::
 
 1. For the Microsoft Dataverse connector, leave the run-only permission value blank and confirm that the connection reference for the **CoE Audit Logs - Dataverse** connection is configured correctly. If the connection is showing an error, [update the connection reference](faq.md#update-connection-references) for the **CoE Audit Logs - Dataverse** connection reference.

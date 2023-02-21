@@ -96,6 +96,47 @@ If you see an *Error Loading Control* warning when opening the Setup Wizard app,
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
+#### Configure dataflows
+
+If your inventory is coming from [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory), you'll have to configure dataflows as part of the setup. Follow the steps in the setup wizard, it will link to the below instructions at the relevant points.
+
+##### Copy Azure Storage Account URL
+
+1. Navigate to [portal.azure.com].
+1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
+1. Select **Endpoints**.
+1. Copy the Data Lake Storage URL.
+
+##### Copy Environment Web API endpoint
+
+1. Navigate to [make.powerapps.com](https://make.powerapps.com).
+1. Select the environment you've installed the CoE Starter Kit in.
+1. Select the cog > Developer resources.
+1. Copy the Web API endpoint.
+
+##### Configure connections to data sources
+
+1. Navigate to [make.powerapps.com](https://make.powerapps.com).
+1. Select the environment you've installed the CoE Starter Kit in.
+1. Select **Dataflows**.
+1. Edit the **CoE BYODL Makers** dataflow.
+    1. Update the *DatalakeURL* parameter with the link to your Data Lake Storage URL.
+    1. Update the *EnvironmentAPI* parameter with the link to your Environment Web API endpoint.
+    1. Select each table shown in the Queries section and select to configure the connection from the notification.
+    1. For each connection, select Organizational account and login with your account.
+    1. Once all connections are configured and there are no more warnings, select Next.
+    1. Select Publish. Do not change any data mapping configuration.
+1. The **CoE BYODL Makers** will now start refreshing - wait for the refresh to finish, then edit the **CoE BYODL Environments** dataflow and complete the steps to update the parameters and configure the connections.
+1. Once you publish the **CoE BYODL Environments** dataflow, it will start refreshing. Wait for the refresh to finish, then edit the **CoE BYODL Apps** and **CoE BYDODL Flows** dataflow to configure the parameters and configure the connections.
+
+##### Configure scheduled refresh
+
+1. Navigate to [make.powerapps.com](https://make.powerapps.com).
+1. Select the environment you've installed the CoE Starter Kit in.
+1. Select **Dataflows**.
+1. Select **Edit refresh settings** for the **CoE BYODL Makers** dataflow.
+1. Select **Refresh automatically** and configure a daily refresh.
+
 ## Set up the Inventory components manually
 
 [Watch a walk-through](https://www.youtube.com/embed/Z9Vp2IxFzpU) on how to set up the core components solution manually.

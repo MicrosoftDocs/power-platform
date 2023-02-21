@@ -29,8 +29,9 @@ The Power BI dashboard provides a holistic overview with visualizations and insi
 
 You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files:
 
-- Use the **Production_CoEDashboard_MMMYY.pbit** file if you've installed the CoE Starter Kit in a Production environment.
-- Use the **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit** file in addition to the above dashboards to gain further actionable governance and compliance insights into your adoption. This report is only available if you've installed the CoE Starter Kit in a Production environment.
+- Use the **Production_CoEDashboard_MMMYY.pbit** file if your Power Platform inventory data source is retrieved via [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory).
+- Use the **BYODL_CoEDashboard_MMMYY.pbit** file if your Power Platform inventory data source is retrieved via [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory).
+- Use the **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit** file in addition to the above dashboards to gain further actionable governance and compliance insights into your adoption.
 
 > [!NOTE]
 >
@@ -49,7 +50,16 @@ You need the environment URL of the Microsoft Power Platform environment the CoE
    If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
    :::image type="content" source="media/coe20.png" alt-text="Environment settings available in the Power Platform admin center.":::
 
-## Configure the Power BI dashboard
+## Copy Azure Storage Account URL
+
+You need the Azure Storage Account URL if your inventory is retrieved via [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory). Power BI dataflows will connect to the data in the storage account.
+
+1. Navigate to [portal.azure.com].
+1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
+1. Select **Endpoints**.
+1. Copy the Data Lake Storage URL.
+
+## Configure the Production and Governance Power BI dashboard
 
 You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop. Using Power BI Desktop gives you flexibility to modify the dashboard to your own branding, and including (or excluding) pages or visuals you want to see (or not see) in the dashboard.
 
@@ -57,9 +67,48 @@ You can configure and modify the Power BI dashboard by working directly with the
 
 1. In Power BI Desktop, open the .pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-1. Enter the URL of your environment instance. If you're using the **Teams_CoEDashboard_MMMYY.pbit**, don't include the https:// prefix or / postfix for **OrgUrl**. If you're using the **Production_CoEDashboard_MMMYY.pbit** and **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit**, include the https:// prefix for **OrgUrl**. If prompted, sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
+1. Enter the URL of your environment instance. If you're using the **Production_CoEDashboard_MMMYY.pbit** and **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit**, include the https:// prefix for **OrgUrl**. If prompted, sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
 
    :::image type="content" source="media/pbit.png" alt-text="Enter OrgUrl to configure Power BI dashboard.":::
+
+1. Save the dashboard locally, or select **Publish** and choose the workspace you want to publish the report to.
+
+1. [Configure scheduled refresh](/power-bi/connect-data/refresh-data#configure-scheduled-refresh) for your Power BI Dataset to update the report daily.
+
+You can find the report later by going to [app.powerbi.com](https://app.powerbi.com/).
+
+## Configure the BYODL Power BI dashboard
+
+### Import Power BI Dataflows
+
+Power BI dataflows are used to transform data from the Azure Storage Account into tables usable by the dashboard. You'll first have configure the Power BI dataflows.
+
+1. Navigate to [app.powerbi.com](https://app.powerbi.com).
+1. Select **Workspaces** > **Create a workspace**.
+1. Provide a name and description, select **Advanced** and choose Premium per user or Premium per capacity depending on what’s available in your tenant. You can also use an existing premium workspace, if available. 
+1. Select **+ New** > **Dataflow** (if prompted select “No, create dataflow” instead of datamart).
+1. Select **Import Model** and upload the PowerPlatformAdminAnalytics-DF.json file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
+1. From the workspace, select **Datasets + Dataflows** to see your imported dataflow.
+1. Edit the dataflow.
+1. Select **Edit tables**.
+1. Select the Datalake URL parameter.
+1. Paste in the Azure Storage Account URL and make sure it doesn’t include a trailing /.
+1. Select one table after the other to configure connections and login with your account. If creating the connection fails, try selecting **Source** under Applied steps and retry configuring the connection.
+1. Select **Continue** when you see a notification about connecting data from multiple sources. 
+1. Select **Save and Close** – the validation running when you Save should succeed.
+1. Go back to the Dataflow overview by selecting **Close**.
+1. Select … > Settings on the dataflow
+1. Look at Schedule refresh and configure a daily schedule refresh. Check when data typically arrives in your data storage account and schedule the refresh for some time after that so it’s in sync.
+1. Refresh the dataflow. The initial refresh may take 1-2hrs to run, depending on how big your inventory is. Check the Refresh History to see when it completes.
+1. Copy the Power BI workspace and dataflow ID
+    1. You can get the Workspace ID by looking at the URL copying the GUID after /groups/.
+    1. You can get the Dataflow ID by looking at the URL and copying the GUID after /dataflows/.
+
+### Configure the Power BI dashboard
+
+1. In Power BI Desktop, open the **BYODL_CoEDashboard_MMMYY.pbit** file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
+
+1. Enter the URL of your environment instance include the https:// prefix for **OrgUrl**. Enter the ID to your Power BI Workspace for **Power BI Workspace ID**. Enter the ID to your Power BI Dataflow for **Power BI Dataflow ID**. If prompted, sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
 
 1. Save the dashboard locally, or select **Publish** and choose the workspace you want to publish the report to.
 
