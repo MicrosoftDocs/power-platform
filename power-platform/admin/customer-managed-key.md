@@ -39,6 +39,8 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > | March 2023        | Canada, France, Germany, India, Norway, South Africa, South America, South Korea, Switzerland, Australia        |
 > |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
 > | July 2023     |  North America       |
+>
+> There's no additional Power Platform licensing requirement during this preview.
 
 All your customer data stored in the following services can be encrypted with customer-managed key:
 
