@@ -34,6 +34,7 @@ The deployment settings payload for the ALM Accelerator export pipeline is used 
 
   | Setting                     | Required | Description |
   | -------                     | -------- | ----------- |
+  | ApprovalType                | No       | The type of approval to use in the deployment pipeline. |
   | BuildName                   | Yes      | The name of the build pipeline. |
   | BuildTemplate               | No       | The name of the build pipeline template. |
   | DeploymentEnvironmentName   | Yes      | The name of the deployment environment. |
