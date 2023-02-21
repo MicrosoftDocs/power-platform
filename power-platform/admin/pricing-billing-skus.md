@@ -2,14 +2,11 @@
 title: Licensing overview for Microsoft Power Platform | Microsoft Docs
 description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, Power BI, AI Builder, Dataverse, portals).
 author: dileepsinghmicrosoft
-
-ms.component: pa-admin
 ms.topic: overview
-
 ms.date: 06/16/2021
 ms.subservice: admin
 ms.author: dileeps
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -31,9 +28,9 @@ For information about:
 
 ## Power Apps and Power Automate Standalone plans
 
-Standalone Power Apps and Microsoft flow plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to Dataverse to store and manage data. Learn more: [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
+Standalone Power Apps and Power Automate plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to [Dataverse](/powerapps/maker/data-platform/data-platform-intro) to store and manage data.
 
-More details around pricing and capabilities of standalone plans can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+More details around pricing and capabilities of standalone plans can be found in [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## Power Apps/Power Automate for Microsoft 365
 
