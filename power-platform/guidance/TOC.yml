@@ -108,8 +108,8 @@
       items:
         - name: Overview
           href: coe/overview.md
-        - name: Establishing a Center of Excellence
-          href: coe/motivation.md
+        - name: Establishing tenant hygiene
+          href: coe/after-setup-tenant-hygiene.md
         - name: Set up the CoE starter kit
           items:
             - name: Get started with setup
@@ -134,7 +134,7 @@
               href: coe/setup-quarantine-components.md
             - name: Collect audit log data
               href: coe/setup-auditlog.md
-            - name: Set-up Power BI reporting
+            - name: Set up Power BI reports
               href: coe/setup-powerbi.md
             - name: Set up nurture components
               href: coe/setup-nurture-components.md
@@ -314,6 +314,8 @@
                   href: creator-kit/resizabletextarea.md
                 - name: SearchBox (preview)
                   href: creator-kit/searchbox.md
+                - name: SpinButton (preview)
+                  href: creator-kit/spinbutton.md
             - name: Commands, Menus & Navs
               items:
                 - name: Breadcrumb
@@ -330,6 +332,8 @@
                   href: creator-kit/nav.md
                 - name: Pivot
                   href: creator-kit/pivot.md
+                - name: SubwayNav (preview)
+                  href: creator-kit/subwaynav.md
             - name: Items and Lists
               items:
                 - name: DetailsList

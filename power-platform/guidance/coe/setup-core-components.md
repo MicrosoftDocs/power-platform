@@ -5,7 +5,7 @@ author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/07/2022
+ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -73,12 +73,25 @@ We recommend that you create connections to all connectors used in the solution 
 
 The import can take up to 15 minutes to be completed.
 
+>[!NOTE]
+> After solution import, you may see the following warning: *Solution "Center of Excellence - Core components" imported successfully with warnings: Flow client error returned with status code Bad Request*. This warning message can be ignored, and you can proceed with opening the **Setup Wizard** app to continue the setup and configuration of the solution.
+>
+> :::image type="content" source="media/coewizardflows.png" alt-text="Ignore any warnings related to flows not turning on.":::
+
 ### Open the Setup Wizard to complete the configuration
 
 1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
 1. This app provides a guided step by step experience through the configuration steps.
     :::image type="content" source="media/coesetupwizard.png" alt-text="CoE Starter Kit Setup Wizard":::
+
+#### Troubleshooting
+
+If you see an *Error Loading Control* warning when opening the Setup Wizard app, it means some of the flows required to run the wizard couldn't be turned on automatically. Navigate to the solution and turn on the following flows manually and then return to the Setup Wizard to continue the setup:
+
+- SetupWizard>GetCurrentEnvironment
+- SetupWizard>GetTenantID
+- SetupWizard>GetUserDetails
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
@@ -113,9 +126,7 @@ During solution import, you'll configure environment variable values. Make sure 
 
 1. Extract the compressed (zip) file. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
 
-1. Import the solution:
-    1. If you're [installing to a production environment](faq.md#installing-a-solution-in-a-production-environment), use the CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip solution file from the extracted folder.
-    1. If you're [installing to a Dataverse for Teams environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment), use the CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip solution file from the extracted folder.
+1. Import the solution: Use the CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip solution file from the extracted folder to [install the solution](faq.md#installing-a-solution-in-a-production-environment).
 
 1. Update environment variable values by using the [relevant information](#gather-environment-variable-values). The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
 
@@ -216,16 +227,16 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >[!NOTE]
 > To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 15 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
 
-The first run of these flows will perform a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. Consider setting up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) to avoid these flows getting throttled. More: [Long running flows](limitations.md#long-running-flows).
+The first run of these flows will perform a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
 
-## Set up the Admin - Command Center App
+## Set up the CoE Admin Command Center App
 
 >[!IMPORTANT]
-> Only complete these steps if you want to review Power Platform–related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the **[Admin - Command Center](core-components.md#admin---command-center)** canvas app. The **Admin - Command Center** app can be used without this configuration.
+> Only complete these steps if you want to review Power Platform–related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the **[CoE Admin Command Center](core-components.md#coe-admin-command-center)** canvas app. The **CoE Admin Command Center** app can be used without this configuration.
 
 ### Create an Azure AD app registration to connect to Microsoft Graph
 
-The [Admin - Command Center](core-components.md#admin---command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates.
+The [CoE Admin Command Center](core-components.md#coe-admin-command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates.
 
 Using these steps, you'll set up an Azure AD app registration that will be used in a cloud flow to connect to the Graph API. More information: [Use the Microsoft Graph API](/graph/use-the-api)
 
@@ -298,18 +309,17 @@ The core components solution contains apps designed to give admins better visibi
 
 Share these apps with other Power Platform admins and assign them the **Power Platform Admin SR** security role:
 
-- [Admin - Command Center](core-components.md#admin---command-center)
+- [CoE Admin Command Center](core-components.md#coe-admin-command-center)
 - [DLP Editor v2](core-components.md#dlp-editor-v2)
 - [Power Platform Admin View](core-components.md#power-platform-admin-view)
 - [Set App Permissions](core-components.md#set-app-permissions)
 - [Set Flow Permissions](core-components.md#set-flow-permissions)
 
-Take a look at the [Admin - Command Center](core-components.md#admin---command-center) app, which is your central place to open all CoE Starter Kit apps from.
+Take a look at the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, which is your central place to open all CoE Starter Kit apps from.
 
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Wait for flows to finish
 
@@ -317,7 +327,7 @@ After the sync flows have finished running, you're ready to use many of the feat
 
 The first run of the inventory can take a few hours depending on the number of environments and resources in your tenants. Future runs will be faster, because they'll only look at new and modified resources.
 
-**To check the status of a flow**
+### To check the status of a flow
 
 1. Select **Admin \| Sync Template v3**.
 
