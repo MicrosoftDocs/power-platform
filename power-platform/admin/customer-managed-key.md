@@ -94,20 +94,20 @@ The malicious key vault administrator creates a key and an enterprise policy on 
 
 This section describes the customer-managed key feature duties that each admin role is responsible for. Separating these tasks helps mitigate the risk involved with customer-managed keys.
 
-### Azure Key Vault and Power Platform/Dynamics 365 service admin overview
+#### Azure Key Vault and Power Platform/Dynamics 365 service admin overview
 
 To enable customer-managed keys, first the key vault administrator creates a key in the Azure key vault and creates a Power Platform enterprise policy. When the enterprise policy is created, a special Azure Active Directory (Azure AD) managed identity is created. Next, the key vault administrator returns to the Azure key vault and grants the enterprise policy/managed identity access to the encryption key.
 
 The key vault administrator then grants the respective Power Platform/Dynamics 365 service admin read access to the enterprise policy. Once read permission is granted, the Power Platform/Dynamics 365 service admin can go to the Power Platform Admin Center and add environments to the enterprise policy. All added environments customer data is then encrypted with the customer-managed key linked to this enterprise policy.
 
-### Azure Key Vault administrator tasks
+##### Azure Key Vault administrator tasks
 
-#### Prerequisites
+###### Prerequisites
 
 - An Azure subscription that includes Azure Key Vault.
 - Global tenant admin or an  Azure AD with contributor permission to the Azure AD subscription and permission to create an Azure Key Vault and key. This is required to set up the key vault.
 
-#### Create the key and grant access overview
+###### Create the key and grant access overview
 
 The Azure Key Vault administrator performs these steps in Azure:
 
@@ -124,7 +124,7 @@ The Azure Key Vault administrator performs these steps in Azure:
 
 - Power Platform administrator must be assigned to either the Power Platform or Dynamics 365 Service administrator Azure AD role.
 
-### Manage environment's encryption in Power Platform admin center
+#### Manage environment's encryption in Power Platform admin center
 
 The Power Platform administrator performs these tasks in Power Platform admin center:
 
@@ -132,7 +132,7 @@ The Power Platform administrator performs these tasks in Power Platform admin ce
 1. Remove environments from enterprise policy to return encryption to Microsoft managed key.
 1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy.
 
-#### Enterprise policy
+### Enterprise policy
 
 You can create a new enterprise policy with a new key or use an existing enterprise policy. Follow the same steps as [Manage environment's encryption](#manage-environments-encryption) to add your non-BYOK enabled and BYOK enabled environments.
 
