@@ -1,6 +1,6 @@
 ---
-title: Answers
-description: Desc for answers
+title: Use GPT AI to generate a bot's responses (Preview)
+description: Provide answers and information for your bot users, even if you haven't created a topic for their issue.
 keywords: "PVA"
 ms.date: 2/8/2023
 ms.topic: how-to
@@ -14,7 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# How to use GPT AI to generate a bot's responses (Preview)
+# Use GPT AI to generate a bot's responses (Preview)
 
 
 
@@ -59,15 +59,19 @@ You can test the AI-generated responses in the **Test bot** panel.
 >  
 > You can provide feedback on how well the AI does by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Describe it** panel.  
 > If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback will to improve the quality of the AI.
->  
-> 
 
-### Publish a bot with AI-generated responses enabled
+### Limitations during the preview
 
-During the Preview of this feature you'll need to contact Microsoft Support if you want to publish a bot that has **Boost conversations** enabled.
+#### Publishing
 
+During Power Virtual Agents preview, you won't be able to publish bots that have **Boost conversations** enabled. <!-- we need to call this out in the publishing topic, and the preview limitations topic -->
 
+If you'd like to publish a bot that has **Boost conversations** enabled, you'll need to ask your admin to start a support request. We'll review your request and get in touch with your admin. 
 
+#### Quotas
 
+Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. During preview, bots with "Boost conversations" enabled will have a limit on the amount of queries they can make that reach out to the URL you specified.
+
+During preview, bots with "Boost conversations" enabled will have a limit on the amount of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](../requirements-quotas#quotas)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
