@@ -19,8 +19,8 @@ There are two main ways to trigger a topic:
 
 **Example 1: The "Store Locations" topic gets triggered based on the user utterance and the matching trigger phrases.**
 
-:::image type="content" source="media/topics/topic-triggering-with-trigger-phrases.png" alt-text="Diagram showing a Power Virtual Agents being triggered with a matching trigger phrase":::
+![Diagram showing a Power Virtual Agents being triggered with a matching trigger phrase](./media/topics/topic-triggering-with-trigger-phrases.png)
 
 **Example 2: The "Request New Location" topic gets triggered when it is called from another topic with a redirect.**
 
-:::image type="content" source="media/topics/topic-triggering-with-redirect.png" alt-text="Diagram showing a Power Virtual Agents being triggered by a redirect from another topic":::
+![Diagram showing a Power Virtual Agents being triggered by a redirect from another topic](./media/topics/topic-triggering-with-redirect.png)
