@@ -50,7 +50,7 @@ Set( release, DateValue ( untyped.ReleaseDate ) );
 Set( preorder, Boolean ( untyped.AvailableForPreOrder ) );
 ```
 
-It is generally a good idea to explicitly convert an untyped object's value to a specific type, but in most cases untyped object values will convert to a specific type automatically ("coerce") when used as function parameters where the type is a simple type like boolean, number or text, and the function's parameter profile does not have potential conflicting overloads.
+It is generally a good idea to explicitly convert an untyped object's value to a specific type. Setting an untyped object as a variable value makes the variable an **Untyped object** as well, so converting such value explicitly when setting to a variable is likely needed. But in most cases untyped object values will convert to a specific type automatically ("coerce") when used as function parameters where the type is a simple type like boolean, number or text, and the function's parameter profile does not have potential conflicting overloads.
 
 ```powerapps-dot
 Left( untyped.ItemName, 1 ); // "W"
@@ -64,6 +64,15 @@ In case a field name consists of an invalid identifier name, for example when th
 untyped.'01'
 untyped.'my-field'
 ```
+
+In addition to automatically converting the type in function calls, untyped objects will also be converted when assigned to control properties where possible.
+
+```powerapps-dot
+Label1.Text: untyped.Quantity
+InputText1.Default: untyped.ItemName
+```
+
+Note that **JSON** does not have a **GUID**, **Color**, **Time** or **DateTime** type. These values are represented as a string. If you assign a **JSON** untyped object value containing a date to a text property directly, the original text of the **JSON** will be used. This may be important when dealing with time zones, date formats, etc. In such cases you should explicitly convert the values using **GUID()**, **ColorValue()**, **DateValue()**, **DateTimeValue()**, etc.
 
 Power Fx won't evaluate the existence of the field until the formula is run. This allows flexibility in the incoming **JSON**. For example, the previous **JSON** may sometimes contain an extra field called `Discount`. But in our previous example, this field isn't present. Writing a formula that uses the `Discount` field won't result in any errors, during the app making process or when users use the app. If the field is missing when the formula runs, the value will just result in a [Blank()](reference/function-isblank-isempty.md) value.
 
