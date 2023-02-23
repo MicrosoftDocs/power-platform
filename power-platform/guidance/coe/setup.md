@@ -89,6 +89,22 @@ Review the below requirements and scenarios to pick the right data source for th
 | Power Platform inventory size | Unlimited | Works best for small to medium Power Platform adoption, less than 10,000 apps and flows |
 | License requirement for the admin/service account managing the CoE kit | Power Apps Per User, Power Automate Per User, Power BI Premium | Power Apps Per User, Power Automate Per User and (depending on tenant size) Per Flow, Power BI Pro |
 
+### Frequently asked questions
+
+#### Can I migrate from using cloud flows to retrieve inventory to using Data Export?
+
+Yes
+
+#### What will happen to my existing data when I upgrade?
+
+The CoE Starter Kits inventory is based on unique identifiers (GUIDs). App, flow, environment metadata is stored in Dataverse tables, and each app, flow and environment has a unique identifier that is used as the key to the row in the table. This GUID is the same
+
+#### What will happen to custom columns that I have crated as part of customizations, if they are not part of data from datalake?
+
+#### Will I see any data changes between what is coming from Data Export and what already exists? 
+
+How is data integrity kept between the 2? Will there be duplication of rows? how are data conflicts resolved. 
+
 >[!IMPORTANT]
 >If you're using Data Export as a mechanism to retrieve inventory and telemetry, [set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) and only proceed once you see inventory data files in your storage account. This can take up to 5 days after initial configuration.
 

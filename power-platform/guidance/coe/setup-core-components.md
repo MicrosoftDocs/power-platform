@@ -275,10 +275,6 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Select **Edit refresh settings** for the **CoE BYODL Makers** dataflow.
 1. Select **Refresh automatically** and configure a daily refresh.
 
-### Troubleshooting
-
-troubleshooting steps.
-
 ## Set up the CoE Admin Command Center App
 
 >[!IMPORTANT]
