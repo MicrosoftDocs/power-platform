@@ -1,15 +1,17 @@
 - name: Power Virtual Agents
   items:
   - name: What is Power Virtual Agents
-    href: fundamentals-what-is-power-virtual-agents.md
-  - name: Get access to Power Virtual Agents
-    href: requirements-licensing-subscriptions.md
-  - name: Compliance offerings
-    href: admin-certification.md
-  - name: Quotas, limits, and configuration values
-    href: requirements-quotas.md
-  - name: Community help and support
-    href: fundamentals-support.md
+    items: 
+    - name: Power Virtual Agents overview
+      href: fundamentals-what-is-power-virtual-agents.md
+    - name: Get access to Power Virtual Agents
+      href: requirements-licensing-subscriptions.md
+    - name: Compliance offerings
+      href: admin-certification.md
+    - name: Quotas, limits, and configuration values
+      href: requirements-quotas.md
+    - name: Community help and support
+      href: fundamentals-support.md
   - name: What is the (preview) version
     items:
     - name: What's in preview
