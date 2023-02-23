@@ -15,6 +15,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # First, FirstN, Index, Last, and LastN functions in Power Apps

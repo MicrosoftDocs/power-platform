@@ -15,6 +15,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Error, IfError, IsError, IsBlankOrError functions in Power Apps
