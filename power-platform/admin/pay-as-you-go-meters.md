@@ -76,7 +76,7 @@ Example pricing
 
 ---
 
-If a user has a Power Apps per-user license, the user isn't counted in the meter. If a user has a [Microsoft 365 license](pricing-billing-skus.md#power-appspower-automate-for-microsoft-365), which provides access to Power Apps and is using an app with standard connectors, the user is also not counted in the meter. See below for more on how users are counted in the Power Apps per-app meter. 
+If a user has a Power Apps per-user license, the user isn't counted in the meter. If a user has a [Microsoft 365 license](pricing-billing-skus.md##power-apps-and-power-automate-for-microsoft-365), which provides access to Power Apps and is using an app with standard connectors, the user is also not counted in the meter. See below for more on how users are counted in the Power Apps per-app meter. 
 
 |License type  |App with standard connectors|App with premium connectors|
 |----|------|-------|
