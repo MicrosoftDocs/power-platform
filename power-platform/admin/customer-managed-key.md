@@ -42,7 +42,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 >
 > There's no additional Power Platform licensing requirement during this preview.
 
-All your customer data stored in the following services can be encrypted with customer-managed key:
+Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
 
 - Dataverse (Custom solutions and Microsoft services)
 - Chat for Dynamics 365
