@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # DateValue, TimeValue, and DateTimeValue functions in Power Apps

@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Acceleration, App, Compass, Connection, and Location signals in Power Apps
