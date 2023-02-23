@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 01/23/2023
+ms.date: 02/23/2023
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -25,18 +25,11 @@ For deprecation information of other products, see [Other deprecation articles](
 
 Effective January 2023, the image classification model by Lobe (preview) was deprecated.
 
-The model allowed you to quickly create and train models to classify images into different categories. This was useful for classifying objects in images, such as animals, plants, and vehicles. The model was not aligned with other models offered with AI Builder, which offer an in-browser training and model usage experience.
+The model allowed you to quickly create and train models to classify images into different categories. This was useful for classifying objects in images, such as animals, plants, and vehicles. The deprecation of this capability was needed because the model wasn't aligned with other models in AI Builder, which offer an in-browser training and model usage experience. These other models don't require a download and install.
 
-The deprecation of this capability means that you'll no longer be able to use the model to classify images. You'll no longer be able to download the Lobe application. Models built with Lobe might continue to work and serve their purpose, but they won't be supported by the AI Builder team. Your Lobe installation might also continue to function, but the application won't be supported.
+The impact of the deprecation of this capability is that you'll no longer be able to use the model to classify images and you won't be able to download the Lobe application. Models built with Lobe might continue to work and serve their purpose, but they won't be supported by the AI Builder team. Your Lobe installation might also continue to function, but won't be supported.
 
-You can use other computer vision models like object detection and image description. Users who are impacted by the deprecation can use other methods to classify images, such as using [Azure Cognitive Services for Custom Vision](/azure/cognitive-services/Custom-Vision-Service/overview).
-
-<!--
-- Overview of the feature being deprecated.
-- Why is this needed?
-- Impact (to customers using the feature).
-- Replacement feature (for example, what should be used to replace the feature/functionality that is deprecated?)
--->
+ If you're impacted by the deprecation of this feature, you can use other methods to classify images, such as [Azure Cognitive Services for Custom Vision](/azure/cognitive-services/Custom-Vision-Service/overview). Custom Vision is a cloud-based image classification service that enables you to quickly and easily create custom image classifiers. With Custom Vision, you can upload your own images and label them with the categories you want the model to recognize. The service then uses machine learning to train a custom model that can accurately identify the categories in new images. The service also provides a range of tools to evaluate and improve your models, such as testing accuracy and providing feedback on how to improve the model. You can also create custom image classifiers that can be used for a variety of applications, such as object recognition, facial recognition, and more.
 
 ## Model-driven app controls deprecation
 
