@@ -21,10 +21,12 @@ search.app:
 
 This article will help you set up the inventory components of the Core solution of the Center of Excellence (CoE) Starter Kit. The inventory is the heart of the CoE; before embarking on your Microsoft Power Platform adoption journey, you'll want to first understand whether you have existing apps, flows, and makers, and lay the foundation to monitor new apps and flows being created.
 
-The flows in this solution sync all your resources into tables and build admin apps, flows, and dashboards on top of this inventory to help you get a holistic overview into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.
+The flows and dataflows in this solution sync all your resources into tables and build admin apps, flows, and dashboards on top of this inventory to help you get a holistic overview into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.
 
 >[!IMPORTANT]
 >Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes that you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>
+>If you are using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as a mechanism to retrieve inventory and telemetry we recommend you test this in a dedicated test environment before using this feature in production.
 
 ## Before you start
 

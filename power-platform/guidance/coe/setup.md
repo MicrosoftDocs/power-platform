@@ -89,6 +89,9 @@ Review the below requirements and scenarios to pick the right data source for th
 | Power Platform inventory size | Unlimited | Works best for small to medium Power Platform adoption, less than 10,000 apps and flows |
 | License requirement for the admin/service account managing the CoE kit | Power Apps Per User, Power Automate Per User, Power BI Premium | Power Apps Per User, Power Automate Per User and (depending on tenant size) Per Flow, Power BI Pro |
 
+>[!IMPORTANT]
+>If you're using Data Export as a mechanism to retrieve inventory and telemetry, [set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) and only proceed once you see inventory data files in your storage account. This can take up to 5 days after initial configuration.
+
 ## Create your environments
 
 We recommend creating two environments to install the CoE Starter Kit solution - one for testing updates and customizations, and one for production use. Learn more: [Updating the CoE Starter Kit](after-setup.md)
@@ -99,6 +102,9 @@ Create two production environments to install the CoE Starter Kit solutions:
 - Choose English as the default language.
 - Don't add sample apps and datasets.
 - Don't restrict environment access with a security group, because some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
+
+>[!IMPORTANT]
+>Using Data Export as a mechanism to retrieve inventory and telemetry is currently in preview - we recommend you test this in a dedicated test environment before using this feature in production.
 
 ### Validate data loss prevention (DLP) policies
 
