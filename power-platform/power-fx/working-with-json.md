@@ -14,6 +14,8 @@ search.audienceType:
 search.app: 
   - PowerApps
 contributors:
+  - gregli-msft
+  - mduelae
   - jorisdg
 ---
 # Working with JSON (experimental)

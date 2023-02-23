@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Color enumeration and ColorFade, ColorValue, and RGBA functions in Power Apps

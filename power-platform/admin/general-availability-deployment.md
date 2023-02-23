@@ -7,7 +7,7 @@ ms.author: samathur
 ms.reviewer: kvivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/02/2022
+ms.date: 02/22/20232
 search.audienceType: 
   - admin
 search.app:
@@ -39,11 +39,11 @@ The general availability deployment is based on the regions where environments a
 |Regions  |Schedule for 2023 wave 1 general availability deployment|
 |---------|---------|
 | Canada<br />France<br />Germany<br />India<br />Norway <br />South Africa<br />South America<br />South Korea<br />Switzerland  | Friday, March 31, 2023 to Sunday, April 2, 2023     |
-|Asia Pacific<br /> Australia <br /> Great Britain<br />Japan<br />United Arab Emirates     | Friday, April 7, 2023 to Sunday, April 9, 2023        |
+|Asia Pacific<br /> Australia <br /> Great Britain<br />Japan<br />United Arab Emirates<br />GCC High     | Friday, April 7, 2023 to Sunday, April 9, 2023        |
 |Europe    | Friday, April 14, 2023 to Sunday, April 16, 2023      |
 |North America     |  Friday, April 21, 2023 to Sunday, April 23, 2023             |
 |China | Friday, April 28, 2023 to Sunday, April 30, 2023       |
-|GCC<br />GCC High<br />DOD  | Friday, April 28, 2023 to Sunday, April 30, 2023    <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
+|GCC<br />DOD  | Friday, April 28, 2023 to Sunday, April 30, 2023    <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
 
 ### See also
 

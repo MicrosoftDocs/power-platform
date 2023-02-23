@@ -12,6 +12,10 @@ search.audienceType:
   - maker
 search.app: 
   - PowerApps
+contributors:
+  - gregli-msft
+  - mduelae
+  - jorisdg
 ---
 # Operators and Identifiers
 
