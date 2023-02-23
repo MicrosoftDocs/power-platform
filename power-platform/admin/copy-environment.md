@@ -61,7 +61,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 ### Tables truncated in customizations and schemas only copy 
  The following tables will be truncated when you do a customizations and schemas only copy:  
 
-| Tables |  |  |
+| Tables    |  &nbsp;    |  &nbsp;   |
 |-----------|-----------|-----------| 
 | Account | InterProcessLock | SocialActivity |
 | AccountLeads | Invoice | SocialInsightsConfiguration |
