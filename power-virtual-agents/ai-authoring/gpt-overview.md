@@ -1,4 +1,7 @@
 ---
+title: AI in Power Virtual Agents overview
+description: Create instantly useful chatbots and publish them quickly with AI capabilities in Power Virtual Agents.
+keywords: "Power Virtual Agents, bot, chatbot, ChatGPT, GPT, Open AI"
 title: Develop chatbots with AI
 description: Desc for overview
 keywords: "PVA"
@@ -13,15 +16,20 @@ ms.service: power-virtual-agents
 searchScope:
   - "Power Virtual Agents"
 ---
-# Develop chatbots with AI
+# AI in Power Virtual Agents overview 
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Use AI-based features in Power Virtual Agents preview to:
+By leveraging recent advancements in AI language models, Power Virtual Agents (preview) transforms how you build chatbots, increasing a chatbot's ability to respond to user input while at the same time significantly reducing manual authoring and configuration.
 
-- Quickly and easily create bot topics
-- Provide responses to answers that you don't have a topic for
+Here's what you can do with the two new AI capabilities in Power Virtual Agents (preview):
 
+- **Create an instantly useful chatbot.** With no manual authoring, an "empty" chatbot will be able to respond to users with information from your website, including in conversations you haven't already created a topic for. 
+- **Author a topic by describing in natural language how you want a chatbot to respond to user input.** Power Virtual Agents (preview) uses AI to generate the content and business logic of the conversation for you. Use the suggested topic as is, or as a starting point for further iteration.
+
+## How AI works in Power Virtual Agents (preview)
+
+Power Virtual Agents (preview) uses a natural language understanding (NLU) model to interpret a bot user's input and then respond correctly. Typically, you author [multiple topics](../authoring-create-edit-topics.md) within a bot to account for the most common questions a user might ask. However, it's impossible to anticipate every question, so occasionally the bot receives input with no pre-built topic. That's where AI steps in. 
 
 The AI for these features is powered by Azure OpenAI, which includes use of OpenAI's GPT-3 series of models. [Learn more about Azure OpenAI](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note). 
 
@@ -32,6 +40,14 @@ The AI for these features is powered by Azure OpenAI, which includes use of Open
   
   Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
 
+In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](../authoring-system-fallback.md).
+
+Now, before involving a live agent, the bot uses natural language processing to:
+- Parse what a user types to determine what they're asking
+- From a specified URL (for example, your website), find, collate, and parse relevant information
+- Create a plain language response and then deliver that to the bot user
+
+See [How to use GPT AI to generate a bot's responses](gpt-answers.md) for how to set up and use the **boost conversations** capability.
 
 ## AI in Power Virtual Agents
 
@@ -71,8 +87,6 @@ The **Describe it** option in the Power Virtual Agents preview canvas lets bot m
 Put simply, effort that previously might have taken several hours can instead take minutes to complete.
 
 See [Use AI to create and edit topics](gpt-authoring.md) for how to set up and use the feature, along with tips the best from the AI.
-
-
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
