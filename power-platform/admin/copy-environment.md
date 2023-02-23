@@ -7,7 +7,7 @@ ms.date: 05/26/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
