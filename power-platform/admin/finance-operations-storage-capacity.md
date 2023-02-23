@@ -113,7 +113,9 @@ A new report will provide Log, and File consumption analytics for Finance and Op
 
 ### What happens if my consumption is over the entitled limit?
 
-The runtime experience isn't affected. You're not expected to take any action currently in the public preview phase for File and Log capacity analytics for Finance and Operations. This article will be updated with the steps to stay within the storage limit when File capacity analytics for Finance and Operations will be generally available.
+The runtime experience isn't affected. However, we strongly recommend that you review your database storage consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity if needed.
+
+For File and Log capacity analytics for Finance and Operations, you're not expected to take any action currently in the public preview phase. This article will be updated with the steps to stay within the storage limit when File capacity analytics for Finance and Operations will be generally available.
 
 ### How is Microsoft helping customers stay within their storage entitlement limits?
 
