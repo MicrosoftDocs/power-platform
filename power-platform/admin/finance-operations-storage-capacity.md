@@ -1,12 +1,12 @@
 ---
 title: Finance and operations storage capacity
 description: Learn to use the finance and operations storage capacity report to understand your storage usage vs. your entitlement and get answers to frequently asked questions.
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/13/2022
+ms.date: 02/22/2023
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 ms.reviewer: 
 search.audienceType: 
   - admin
@@ -105,14 +105,15 @@ Details at the table level aren't available in the initial launch of reporting. 
 
 ### Is there any reporting for file capacity?
 
-![image](https://user-images.githubusercontent.com/8249151/220792964-3294b6e2-39fe-408e-9fd8-904f516ac665.png)
-
 File capacity reporting is in public preview. Capacity reports for Finance and Operations File is not generally available. 
-A new report will provide Log, and File consumption analytics for Finance and Operations and is expected to be available during the calendar year 2023.The new report will provide enhanced precision for file consumption analytics.
+
+:::image type="content" source="media/finance-operations-storage-capacity/finance-operations-database.png" alt-text="Screenshot of the Finance and operations File.":::
+
+A new report will provide Log, and File consumption analytics for Finance and Operations and is expected to be available during the calendar year 2023. The new report will provide enhanced precision for file consumption analytics.
 
 ### What happens if my consumption is over the entitled limit?
 
-The runtime experience isn't affected. Customers are not expected to take any action currently in the public preview phase for File and Log capacity analytics for Finance and Operations. We will update this space with steps to stay within the storage limit, when File capacity analytics for Finance and Operations will be generally available.
+The runtime experience isn't affected. You're not expected to take any action currently in the public preview phase for File and Log capacity analytics for Finance and Operations. This article will be updated with the steps to stay within the storage limit when File capacity analytics for Finance and Operations will be generally available.
 
 ### How is Microsoft helping customers stay within their storage entitlement limits?
 
