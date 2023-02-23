@@ -47,12 +47,6 @@ Before we explain how to extend the CoE Starter Kit, here's some guidance on wha
 - Cloud flows that are responsible for [gathering inventory](core-components.md#flows) should not be customized. These flows are frequently updated to fix bugs, gather additional data, or improve performance. If you have additional requirements for what inventory to gather, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues) or create separate flows for your requirements.
 - Power BI dashboards do not support merging. We recommend creating a copy of the dashboard, creating your own custom reports and publishing them to same workspace as the main CoE dashboard for your admins to have a seamless experience between out of the box CoE kit reports and your custom reports.
 
-## What are the limitations of extending the kit?
-
-- You can't create a copy of cloud flows that use child flows. This is a known limitation of Power Automate.
-    :::image type="content" source="media/coe-extend-flows.png.png" alt-text="Error when trying to create a copy of a flow that uses a child flow.":::
-
-
 ## What's the mechanism to extend the CoE Starter Kit?
 
 The CoE Starter Kit is composed of components made by using the capabilities of Microsoft Power Platform. It can be extended by using Power Platform itself. The following article gives guidelines on how to properly customize and deploy your customizations.
