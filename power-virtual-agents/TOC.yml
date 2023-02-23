@@ -12,16 +12,16 @@
       href: requirements-quotas.md
     - name: Community help and support
       href: fundamentals-support.md
-  - name: What is the (preview) version
-    items:
-    - name: What's in preview
-      href: preview/overview.md
-    - name: Quickstart guide
-      href: preview/quickstart.md
-    - name: Limitations
-      href: preview/limitations.md
-    - name: Key concepts for Composer users
-      href: preview/composer-concepts.md
+    - name: Power Virtual Agents preview
+      items:
+        - name: What's in preview
+          href: preview/overview.md
+        - name: Quickstart guide
+          href: preview/quickstart.md
+        - name: Limitations
+          href: preview/limitations.md
+        - name: Key concepts for Composer users
+          href: preview/composer-concepts.md
   - name: Power Virtual Agents web app
     items:
       - name: Overview
