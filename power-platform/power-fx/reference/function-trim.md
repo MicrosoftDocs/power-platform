@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Trim and TrimEnds functions in Power Apps
