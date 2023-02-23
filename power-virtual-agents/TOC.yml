@@ -1,6 +1,6 @@
-- name: Power Virtual Agents (production)
+- name: Power Virtual Agents
   items:
-  - name: Overview
+  - name: What is Power Virtual Agents
     href: fundamentals-what-is-power-virtual-agents.md
   - name: Get access to Power Virtual Agents
     href: requirements-licensing-subscriptions.md
@@ -10,6 +10,16 @@
     href: requirements-quotas.md
   - name: Community help and support
     href: fundamentals-support.md
+  - name: What is the (preview) version
+    items:
+    - name: What's in preview
+      href: preview/overview.md
+    - name: Quickstart guide
+      href: preview/quickstart.md
+    - name: Limitations
+      href: preview/limitations.md
+    - name: Key concepts for Composer users
+      href: preview/composer-concepts.md
   - name: Power Virtual Agents web app
     items:
       - name: Overview
@@ -34,6 +44,8 @@
           href: admin-share-bots.md
         - name: Export and import bots using solutions
           href: authoring-export-import-bots.md
+        - name: Export and import bots using solutions  (preview)
+          href: preview/authoring-export-import-bots.md
         - name: Regional settings and data locations for organizations
           href: data-location.md
       - name: Author and edit
@@ -46,20 +58,40 @@
           href: authoring-template-topics.md
         - name: Use system topics
           href: authoring-system-topics.md
+        - name: Use system topics (preview)
+          href: preview/authoring-system-topics.md
         - name: Create and edit topics
           href: authoring-create-edit-topics.md
+        - name: Create and edit topics (preview)
+          href: preview/authoring-create-edit-topics.md
+        - name: Start with sample topics (preview)
+          href: preview/authoring-template-topics.md
+        - name: Start from existing content (preview)
+          href: preview/clone-existing-bot.md
+        - name: Send a message (preview)
+          href: preview/authoring-send-message.md
         - name: Use system fallback topic
           href: authoring-system-fallback-topic.md
         - name: Manage topics
           href: authoring-topic-management.md
+        - name: Manage topics (preview)
+          href: preview/authoring-topic-management.md
+        - name: Ask a question (preview)
+          href: preview/authoring-ask-a-question.md
+        - name: View topic status (preview)
+          href: preview/authoring-topic-status.md
         - name: Add comments to bots
           href: authoring-comments.md
         - name: Test your bot
           href: authoring-test-bot.md
+        - name: Test your bot (preview)
+          href: preview/authoring-test-bot.md
         - name: Supported languages
           href: authoring-language-support.md
         - name: Troubleshoot error codes
           href: error-codes.md
+        - name: Troubleshoot error codes (preview)
+          href: preview/error-codes.md
       - name: Enhance and improve
         items:
         - name: Key concepts - Enhanced authoring
@@ -70,16 +102,27 @@
           href: advanced-entities-slot-filling.md
         - name: Use variables
           href: authoring-variables.md
+        - name: Use variables (preview)
+          href: preview/authoring-variables.md
         - name: Reuse variables across topics
           href: authoring-variables-bot.md
+        - name: Reuse variables across topics (preview)
+          href: preview/authoring-variables-bot.md
         - name: Create topics from existing support content
           href: advanced-create-topics-from-web.md
         - name: Create topics from Customer Service Insights
           href: advanced-create-topics-from-csi.md
         - name: Add user authentication
           href: advanced-end-user-authentication.md
+        - name: Add user authentication (preview)
+          href: preview/advanced-user-authentication.md
+        - name: Use expressions using Power Fx (preview)
+          href: preview/advanced-power-fx.md
         - name: Send proactive messages and cards in Microsoft Teams
           href: advanced-proactive-message.md
+        - name: Accommodate time zones (preview)
+          displayName: User date and time (preview)
+          href: preview/manage-date-and-time.md
         - name: Trigger hand-off to a live agent
           href: advanced-hand-off.md
         - name: Use Power Automate flows
@@ -98,8 +141,12 @@
         items:
         - name: Key concepts - Publish your bot
           href: publication-fundamentals-publish-channels.md
+        - name: Key concepts - Publish your bot (preview)
+          href: preview/publication-fundamentals-publish-channels.md
         - name: Add bot to your live website
           href: publication-connect-bot-to-web-channels.md
+        - name: Add your bot to your live website (preview)
+          href: preview/publication-connect-bot-to-web-channels.md
         - name: Add bot to Power Apps portal
           href: publication-add-bot-to-power-apps-portal.md
         - name: Add bot to Microsoft Teams
@@ -140,18 +187,32 @@
         items:
         - name: Key concepts - Analytics
           href: analytics-overview.md
+        - name: Key concepts - Analytics (preview)
+          href: preview/analytics-overview.md
         - name: Analyze bot performance and usage
           href: analytics-summary.md
+        - name: Analyze bot performance and usage (preview)
+          href: preview/analytics-summary.md
         - name: Analyze customer satisfaction
           href: analytics-csat.md
+        - name: Analyze customer satisfaction metrics (preview)
+          href: preview/analytics-csat.md
         - name: Analyze session information
           href: analytics-sessions.md
+        - name: Analyze session information (preview)
+          href: preview/analytics-sessions.md
         - name: Work with conversation transcripts
           href: analytics-sessions-transcripts.md
         - name: Analyze topic usage
           href: analytics-topic-details.md
         - name: Analyze billed session information
           href: analytics-billed-sessions.md
+        - name: Download bot conversation transcripts (preview)
+          href: preview/analytics-sessions-transcripts.md
+        - name: Analyze your bot's topic performance (preview)
+          href: preview/analytics-topic-details.md
+        - name: View billed sessions (preview)
+         href: preview/analytics-billed-sessions.md
       - name: Configure and customize
         items:
         - name: Key concepts - Configuration
@@ -170,12 +231,16 @@
           href: configuration-end-user-authentication.md
         - name: Configure user authentication with Azure Active Directory
           href: configuration-authentication-azure-ad.md
+        - name: Configure user authentication with Azure Active Directory (preview)
+          href: preview/configuration-authentication-azure-ad.md
         - name: Configure web and Direct Line channel security
           href: configure-web-security.md
         - name: Configure single sign-on for Web
           href: configure-sso.md
         - name: Configure single sign-on for Teams
           href: configure-sso-teams.md
+        - name: Configure SSO for your custom website (preview)
+          href: preview/configure-web-sso.md
         - name: Configure hand-off to a generic engagement hub
           href: configure-generic-handoff.md
         - name: Configure voice and text hand off to Dynamics 365 Customer Service
@@ -184,6 +249,8 @@
           href: configure-bot-greeting.md
         - name: Customize the look and feel of the bot
           href: customize-default-canvas.md
+        - name: Customize the look and feel of the bot (preview)
+          href: preview/customize-default-canvas.md
       - name: Respond to GDPR Data Subject Rights (DSR) requests
         items:
         - name: Key concepts - GDPR compliance
@@ -298,112 +365,3 @@
           href: teams/configuration-add-skills-teams.md
       - name: GDPR compliance
         href: teams/gdpr-summary-teams.md
-- name: Power Virtual Agents (preview)
-  items:
-  - name: What's in preview
-    href: preview/overview.md
-  - name: Quickstart
-    href: preview/quickstart.md
-  - name: Limitations
-    href: preview/limitations.md
-  - name: Key concepts for Composer users
-    href: preview/composer-concepts.md
-  - name: Administer and manage
-    items:
-      - name: Assign licenses
-        href: preview/requirements-licensing.md
-      - name: Power Virtual Agents for US Government customers
-        href: preview/requirements-licensing-gcc.md
-      - name: Working with environments
-        href: preview/environments-first-run-experience.md
-      - name: Share bots with users in your organization
-        href: preview/admin-share-bots.md
-      - name: Export and import bots using solutions
-        href: preview/authoring-export-import-bots.md
-  - name: Author and edit
-    items:
-      - name: Start with sample topics
-        href: preview/authoring-template-topics.md
-      - name: Create and edit topics
-        href: preview/authoring-create-edit-topics.md
-      - name: Send a message
-        href: preview/authoring-send-message.md
-      - name: Ask a question
-        href: preview/authoring-ask-a-question.md
-      - name: Manage topics
-        href: preview/authoring-topic-management.md
-      - name: View topic status
-        href: preview/authoring-topic-status.md
-      - name: Use system topics
-        href: preview/authoring-system-topics.md
-      - name: Add comments to bots
-        href: preview/authoring-comments.md
-      - name: Start from existing content
-        href: preview/clone-existing-bot.md
-      - name: Test your bot
-        href: preview/authoring-test-bot.md
-      - name: Troubleshoot error codes
-        href: preview/error-codes.md
-  - name: Enhance and improve
-    items:
-      - name: Use entities and slot filling
-        href: preview/advanced-entities-slot-filling.md
-      - name: Use variables
-        href: preview/authoring-variables.md
-      - name: Reuse variables across topics
-        href: preview/authoring-variables-bot.md
-      - name: Accommodate time zones
-        displayName: user date and time
-        href: preview/manage-date-and-time.md
-      - name: Use expressions using Power Fx
-        href: preview/advanced-power-fx.md
-      - name: Add user authentication
-        href: preview/advanced-user-authentication.md
-      - name: Use Power Automate flows
-        href: preview/advanced-flow.md
-  - name: Publish and integrate
-    items:
-      - name: Key concepts - Publish your bot
-        href: preview/publication-fundamentals-publish-channels.md
-      - name: Add your bot to your live website
-        href: preview/publication-connect-bot-to-web-channels.md
-      - name: Add your bot to Microsoft Teams
-        href: preview/publication-add-bot-to-microsoft-teams.md
-  - name: Monitor and diagnose
-    items:
-      - name: Analyze your bot's performance and usage
-        href: preview/analytics-overview.md
-      - name: Analyze bot performance and usage
-        href: preview/analytics-summary.md
-      - name: Analyze your bot's customer satisfaction metrics
-        href: preview/analytics-csat.md
-      - name: Download bot session transcripts
-        href: preview/analytics-sessions.md
-      - name: Download bot conversation transcripts
-        href: preview/analytics-sessions-transcripts.md
-      - name: Analyze your bot's topic performance
-        href: preview/analytics-topic-details.md
-      - name: View billed sessions
-        href: preview/analytics-billed-sessions.md
-  - name: Configure and customize
-    items:
-      - name: Apply and configure data loss prevention policies
-        items:
-          - name: Configure data loss prevention for chatbots
-            href: preview/admin-data-loss-prevention.md
-          - name: Example 1 - Use DLP to block skills
-            href: preview/dlp-example-1.md
-          - name: Example 2 - Use DLP to block HTTP requests
-            href: preview/dlp-example-2.md
-          - name: Example 3 - Use DLP to require end-user authentication
-            href: preview/dlp-example-3.md
-      - name: Configure user authentication
-        href: preview/configuration-end-user-authentication.md
-      - name: Configure user authentication with Azure Active Directory
-        href: preview/configuration-authentication-azure-ad.md
-      - name: Configure web and Direct Line channel security
-        href: preview/configure-web-security.md
-      - name: Configure SSO for your custom website
-        href: preview/configure-web-sso.md
-      - name: Customize the look and feel of the bot
-        href: preview/customize-default-canvas.md
