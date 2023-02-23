@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions in Power Apps

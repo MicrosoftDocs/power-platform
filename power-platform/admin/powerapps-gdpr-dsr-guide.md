@@ -28,7 +28,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 * Delete it
 * Receive it in electronic format so it can be moved to another controller
 
-A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
+A formal request by a data subject to a controller to take an action on their personal data is called a Data Subject Rights (DSR) request.
 
 This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Power Apps, Power Automate, and Microsoft Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
@@ -110,7 +110,7 @@ Data subjects may request that you restrict processing of their personal data.  
 * Delete the account and associated data residing within Microsoft systems.
 
 ## Export
-The "right of data portability" allows a data subject to request a copy of his or her personal data in an electronic format (that's a "structured, commonly used, machine read-able and interoperable format") that may be transmitted to another data controller.
+The "right of data portability" allows a data subject to request a copy of their personal data in an electronic format (that's a "structured, commonly used, machine read-able and interoperable format") that may be transmitted to another data controller.
 
 See [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md) for details.
 

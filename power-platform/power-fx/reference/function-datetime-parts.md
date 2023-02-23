@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Day, Month, Year, Hour, Minute, Second, and Weekday functions in Power Apps

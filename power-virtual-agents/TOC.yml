@@ -126,26 +126,30 @@
           href: publication-connect-bot-to-azure-bot-service-channels.md
         - name: Integrate with question answering
           href: integrate-with-question-answering.md
-        - name: Integrate with Bot Framework
+        - name: Integrate with Bot Framework skills
           items:
-            - name: Configure a skill for use in Power Virtual Agents
-              href: configuration-add-skills.md
-            - name: Use Bot Framework Skills
-              href: advanced-use-skills.md
-            - name: Use a Power Virtual Agents bot as a skill
-              href: advanced-use-pva-as-a-skill.md
-            - name: Use Bot Framework Composer
-              items:
-              - name: Extend your bot with Bot Framework Composer
-                href: advanced-bot-framework-composer.md
-              - name: Example 1 - Show an Adaptive Card in Power Virtual Agents
-                href: advanced-bot-framework-composer-example1.md
-              - name: Example 2 - Display a multi-select options list in Power Virtual Agents
-                href: advanced-bot-framework-composer-example2.md
-              - name: Example 3 - Use Bing Search as a fallback in Power Virtual Agents
-                href: advanced-bot-framework-composer-example3.md
-              - name: Example 4 - Display a form with a Submit button in Power Virtual Agents
-                href: advanced-bot-framework-composer-example4.md
+          - name: Configure a skill for use in Power Virtual Agents
+            href: configuration-add-skills.md
+          - name: Use Bot Framework Skills
+            href: advanced-use-skills.md
+          - name: Use a Power Virtual Agents bot as a skill
+            href: advanced-use-pva-as-a-skill.md
+        - name: Extend with Bot Framework Composer
+          items:
+          - name: Overview of Bot Framework Composer
+            href: advanced-bot-framework-composer.md
+          - name: Getting started with Composer
+            href: advanced-bot-framework-composer-fundamentals.md
+          - name: Capture telemetry
+            href: advanced-bot-framework-composer-capture-telemetry.md
+          - name: Show an Adaptive Card
+            href: advanced-bot-framework-composer-example1.md
+          - name: Display a multi-select options list
+            href: advanced-bot-framework-composer-example2.md
+          - name: Use Bing Search as a fallback
+            href: advanced-bot-framework-composer-example3.md
+          - name: Display a form with a Submit button
+            href: advanced-bot-framework-composer-example4.md
       - name: Monitor and diagnose
         items:
         - name: Key concepts - Analytics
