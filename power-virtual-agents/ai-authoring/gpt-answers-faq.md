@@ -16,10 +16,7 @@ searchScope:
 
 # GPT Answers training, model, and usage FAQ
 
-- [] Headings and terminology used to describe the features will change. I will update as info comes in.
-- [] The UI is changing daily, so consider all screenshots as placeholders. I will do a final sweep the day before we go live to ensure all screens and associated labels/descriptions are updated.
-- [] Please ignore the indentation/formatting of lists.
-- [] When you say "all webpages that belong to this domain", does this mean that even if you put in a subURL (microsoft.com/rewards/earning), GPT will look at everything under microsoft.com? Or only at content in that path, eg microsoft.com/rewards/earning/*?
+
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

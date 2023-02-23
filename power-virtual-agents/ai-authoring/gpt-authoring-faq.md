@@ -17,8 +17,6 @@ searchScope:
 # GPT Builder training, model, and usage FAQ
 
 
-
-
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 This FAQ document answers common questions about the AI that is used when creating new topics, or modifying existing topics, in Power Virtual Agents.
