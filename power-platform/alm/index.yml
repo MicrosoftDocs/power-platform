@@ -93,11 +93,12 @@ landingContent:
             url: devops-build-tools.md
           - text: Use GitHub Actions for Power Platform
             url: devops-github-actions.md
+          - text: "Deploy solutions using pipelines"
+            url: pipelines.md
           - text: "CoE: Set up ALM Accelerator"
             url: ../guidance/coe/setup-almacceleratorpowerplatform-cli.md
           - text: "CoE: Use ALM Accelerator"
             url: ../guidance/coe/almacceleratorpowerplatform-components.md
-  
   
   # Card
   - title: Related docs
