@@ -15,6 +15,7 @@ search.app:
 contributors:
   - mduelae
   - gregli-msft
+  - jorisdg
 ---
 # Error handling
 
