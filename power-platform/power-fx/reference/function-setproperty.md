@@ -8,7 +8,7 @@ ms.custom: canvas
 ms.reviewer: mkaur
 ms.date: 12/19/2018
 ms.subservice: power-fx
-ms.author: aheaney
+ms.author: jorisdg
 search.audienceType:
   - maker
 search.app:

@@ -107,17 +107,21 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
 
 1. Set the gallery's layout to **Title and subtitle**.
 
-   > [!div class="mx-imgBorder"] > ![Open the layout picker from the properties pane.](media/function-astype-istype/contacts-customer-layout.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Open the layout picker from the properties pane.](media/function-astype-istype/contacts-customer-layout.png)
 
-   > [!div class="mx-imgBorder"] > ![Set layout to Title and subtitle.](media/function-astype-istype/contacts-customer-flyout.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Set layout to Title and subtitle.](media/function-astype-istype/contacts-customer-flyout.png)
 
 1. In the **Data** pane, open the **Title1** list, and then select **Full Name**.
 
-   > [!div class="mx-imgBorder"] > ![Set title value.](media/function-astype-istype/contacts-customer-title.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Set title value.](media/function-astype-istype/contacts-customer-title.png)
 
 1. Select the **Subtitle1** label control.
 
-   > [!div class="mx-imgBorder"] > ![Set subtitle value.](media/function-astype-istype/contacts-customer-subtitle.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Set subtitle value.](media/function-astype-istype/contacts-customer-subtitle.png)
 
 1. Set the **Text** property of **Subtitle1** to this formula:
 
@@ -129,7 +133,8 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
    )
    ```
 
-   > [!div class="mx-imgBorder"] > ![Screen is now complete showing accounts and contacts intermixed in the gallery.](media/function-astype-istype/contacts-customer-complete.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Screen is now complete showing accounts and contacts intermixed in the gallery.](media/function-astype-istype/contacts-customer-complete.png)
 
    The subtitle in the gallery shows these values:
 
