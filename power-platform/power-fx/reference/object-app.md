@@ -14,6 +14,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 # App object in Power Apps
 
