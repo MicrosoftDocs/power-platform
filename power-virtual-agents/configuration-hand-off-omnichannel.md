@@ -127,6 +127,8 @@ It's a good idea to refresh the connection after you add your bot to an Omnichan
 
 The [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension) adds several actions and variables to Power Virtual Agents.
 
+:::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-oc-voice-vars.png" alt-text="List of voice-related actions that can be added to a node in Power Virtual Agents.":::
+
 Select **Enable voice** to turn voice capabilities on or off for the entire bot, not for individual bot sessions or connections. When voice is enabled, any connection with the bot can use voice, text, or both voice and text.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/voice-toggle.png" alt-text="Screenshot of the Power Virtual Agents Omnichannel section with the Enable voice toggle highlighted.":::
@@ -134,7 +136,6 @@ Select **Enable voice** to turn voice capabilities on or off for the entire bot,
 > [!IMPORTANT]
 > If a bot is connected to an Omnichannel voice workstream or queue and taking calls, and the voice is disabled, the calls will start to fail. Ensure that the bot is disconnected from Omnichannel workstreams or queues before disabling voice in the Power Virtual Agents configuration.
 
-:::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-oc-voice-vars.png" alt-text="List of voice-related actions that can be added to a node in Power Virtual Agents.":::
 
 ### Set survey consent
 
