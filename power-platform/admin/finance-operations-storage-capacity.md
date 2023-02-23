@@ -105,11 +105,14 @@ Details at the table level aren't available in the initial launch of reporting. 
 
 ### Is there any reporting for file capacity?
 
-File capacity reporting isn't available in the initial launch of reporting. File capacity analytics will be available in a future release.
+![image](https://user-images.githubusercontent.com/8249151/220792964-3294b6e2-39fe-408e-9fd8-904f516ac665.png)
+
+File capacity reporting is in public preview. Capacity reports for Finance and Operations File is not generally available. 
+A new report will provide Log, and File consumption analytics for Finance and Operations and is expected to be available during the calendar year 2023.The new report will provide enhanced precision for file consumption analytics.
 
 ### What happens if my consumption is over the entitled limit?
 
-The runtime experience isn't affected. However, we strongly recommend that you review your data consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity if needed.
+The runtime experience isn't affected. Customers are not expected to take any action currently in the public preview phase for File and Log capacity analytics for Finance and Operations. We will update this space with steps to stay within the storage limit, when File capacity analytics for Finance and Operations will be generally available.
 
 ### How is Microsoft helping customers stay within their storage entitlement limits?
 
