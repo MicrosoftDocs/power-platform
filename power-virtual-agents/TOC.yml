@@ -212,7 +212,7 @@
         - name: Analyze your bot's topic performance (preview)
           href: preview/analytics-topic-details.md
         - name: View billed sessions (preview)
-         href: preview/analytics-billed-sessions.md
+          href: preview/analytics-billed-sessions.md
       - name: Configure and customize
         items:
         - name: Key concepts - Configuration
