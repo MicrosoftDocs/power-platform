@@ -5,7 +5,7 @@ author: stjeffer
 manager: topness-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/10/2022
+ms.date: 03/08/2023
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: jimholtz
@@ -110,17 +110,14 @@ Your first check before installing the upgrade is removing unmanaged layers from
 
 You can check for unmanaged layers on the inventory flows using the [Coe Admin Command Center](core-components.md#coe-admin-command-center) app.
 
->[!NOTE]
->The [feature described below](https://github.com/microsoft/coe-starter-kit/issues/2108) was made available with the April 2022 release of the CoE Starter Kit, and requires the April or [later release](https://github.com/microsoft/coe-starter-kit/releases) to be installed.
-
 1. Open the **CoE Admin Command Center** app from your CoE environment.
 1. Select **Sync flows** from the navigation.
 1. Check if any of the flows show the layer icon, indicating they have unmanaged layers
- 
+
    ![Screenshot showing the layer icon in the Admin Command Center app](media/coe-upgrade6.png "Detect unmanaged layers on flows in the Admin Command Center app")
-    
+
 1. Select the layer icon to go to the solution layer page of the flow and remove the unmanaged layer.
- 
+
    ![Screenshot showing the Remove unmanaged layer action](media/upgrade2.png "Remove unmanaged layers")
 
 ### Removing other customizations

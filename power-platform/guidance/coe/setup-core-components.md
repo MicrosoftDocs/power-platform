@@ -5,7 +5,7 @@ author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 03/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -55,13 +55,14 @@ We recommend that you create connections to all connectors used in the solution 
     - [Power Automate for Admins](/connectors/microsoftflowforadmins/)
     - [Power Automate Management](/connectors/flowmanagement/)
     - [Power Platform for Admins](/connectors/powerplatformforadmins/)
+    - [Power Query Dataflows](/connectors/dataflows/)
     - [RSS](/connectors/rss/)
     - [SharePoint](/connectors/sharepointonline/)
     - [HTTP with Azure AD](/connectors/webcontents/)
 1. Create a connection for [HTTP with Azure AD](/connectors/webcontents/), and set **Base Resource URL** and **Azure AD Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 :::image type="content" source="media/httpazuread.png" alt-text="Establish an HTTP with Azure AD connection":::
 
-## Set up the Inventory components using the Setup Wizard [Preview]
+## Set up the Inventory components using the Setup Wizard
 
 ### Import the core components solution
 
@@ -94,50 +95,6 @@ If you see an *Error Loading Control* warning when opening the Setup Wizard app,
 - SetupWizard>GetCurrentEnvironment
 - SetupWizard>GetTenantID
 - SetupWizard>GetUserDetails
-
->[!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
-
-#### Configure dataflows
-
-If your inventory is coming from [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory), you'll have to configure dataflows as part of the setup. Follow the steps in the setup wizard, it will link to the below instructions at the relevant points.
-
-##### Copy Azure Storage Account URL
-
-1. Navigate to [portal.azure.com].
-1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
-1. Select **Endpoints**.
-1. Copy the Data Lake Storage URL.
-
-##### Copy Environment Web API endpoint
-
-1. Navigate to [make.powerapps.com](https://make.powerapps.com).
-1. Select the environment you've installed the CoE Starter Kit in.
-1. Select the cog > Developer resources.
-1. Copy the Web API endpoint.
-
-##### Configure connections to data sources
-
-1. Navigate to [make.powerapps.com](https://make.powerapps.com).
-1. Select the environment you've installed the CoE Starter Kit in.
-1. Select **Dataflows**.
-1. Edit the **CoE BYODL Makers** dataflow.
-    1. Update the *DatalakeURL* parameter with the link to your Data Lake Storage URL.
-    1. Update the *EnvironmentAPI* parameter with the link to your Environment Web API endpoint.
-    1. Select each table shown in the Queries section and select to configure the connection from the notification.
-    1. For each connection, select Organizational account and login with your account.
-    1. Once all connections are configured and there are no more warnings, select Next.
-    1. Select Publish. Do not change any data mapping configuration.
-1. The **CoE BYODL Makers** will now start refreshing - wait for the refresh to finish, then edit the **CoE BYODL Environments** dataflow and complete the steps to update the parameters and configure the connections.
-1. Once you publish the **CoE BYODL Environments** dataflow, it will start refreshing. Wait for the refresh to finish, then edit the **CoE BYODL Apps** and **CoE BYDODL Flows** dataflow to configure the parameters and configure the connections.
-
-##### Configure scheduled refresh
-
-1. Navigate to [make.powerapps.com](https://make.powerapps.com).
-1. Select the environment you've installed the CoE Starter Kit in.
-1. Select **Dataflows**.
-1. Select **Edit refresh settings** for the **CoE BYODL Makers** dataflow.
-1. Select **Refresh automatically** and configure a daily refresh.
 
 ## Set up the Inventory components manually
 
@@ -180,6 +137,8 @@ The import can take up to 15 minutes to be completed.
 
 >[!NOTE]
 >The steps below will create an inventory of all environments in your tenant, if you wish to inventory only a subset of environments, please see [Setting up CoE for a subset of environments](faq.md#setting-up-coe-for-a-subset-of-environments) before proceeding.
+
+In your test environment, [update the *ProductionEnvironment* environment variable](faq.md#update-environment-variables) to no before proceeding.
 
 ### Turn on child flows
 
@@ -271,6 +230,54 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 > To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 15 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
 
 The first run of these flows will perform a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
+
+## Set up dataflows to retrieve your inventory from Data Export
+
+If your inventory is coming from [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory), you'll have to configure dataflows as part of the setup.
+
+>[!NOTE]
+> Only complete these steps if you've configured [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
+
+### Copy Azure Storage Account URL
+
+1. Navigate to [portal.azure.com].
+1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
+1. Select **Endpoints**.
+1. Copy the Data Lake Storage URL.
+
+### Copy Environment Web API endpoint
+
+1. Navigate to [make.powerapps.com](https://make.powerapps.com).
+1. Select the environment you've installed the CoE Starter Kit in.
+1. Select the cog > Developer resources.
+1. Copy the Web API endpoint.
+
+### Configure connections to data sources
+
+1. Navigate to [make.powerapps.com](https://make.powerapps.com).
+1. Select the environment you've installed the CoE Starter Kit in.
+1. Select **Dataflows**.
+1. Edit the **CoE BYODL Makers** dataflow.
+    1. Update the *DatalakeURL* parameter with the link to your Data Lake Storage URL.
+    1. Update the *EnvironmentAPI* parameter with the link to your Environment Web API endpoint.
+    1. Select each table shown in the Queries section and select to configure the connection from the notification.
+    1. For each connection, select Organizational account and login with your account.
+    1. Once all connections are configured and there are no more warnings, select Next.
+    1. Select Publish. Do not change any data mapping configuration.
+1. The **CoE BYODL Makers** will now start refreshing - wait for the refresh to finish, then edit the **CoE BYODL Environments** dataflow and complete the steps to update the parameters and configure the connections.
+1. Once you publish the **CoE BYODL Environments** dataflow, it will start refreshing. Wait for the refresh to finish, then edit the **CoE BYODL Apps** and **CoE BYDODL Flows** dataflow to configure the parameters and configure the connections.
+
+### Configure scheduled refresh
+
+1. Navigate to [make.powerapps.com](https://make.powerapps.com).
+1. Select the environment you've installed the CoE Starter Kit in.
+1. Select **Dataflows**.
+1. Select **Edit refresh settings** for the **CoE BYODL Makers** dataflow.
+1. Select **Refresh automatically** and configure a daily refresh.
+
+### Troubleshooting
+
+troubleshooting steps.
 
 ## Set up the CoE Admin Command Center App
 

@@ -5,7 +5,7 @@ author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 03/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -92,9 +92,19 @@ Review the below requirements and scenarios to pick the right data source for th
 >[!IMPORTANT]
 >If you're using Data Export as a mechanism to retrieve inventory and telemetry, [set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) and only proceed once you see inventory data files in your storage account. This can take up to 5 days after initial configuration.
 
+## Plan your upgrade strategy
+
+A new version of the CoE Starter Kit is released monthly, usually in the first full week of each month. This release cadence is important to know so you can review, organize, plan, and test the latest version. We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Microsoft Power Platform, leaving updates longer than three months could result in unexpected issues when you do update.
+
+We recommend testing upgrades in a dedicated test environment, before upgrading your production environment. Focus your test efforts on the features of the CoE Starter Kit that you use. Verify that components you use still work, any new features added to those components meet your requirements.
+
+In your test environment, set the *ProductionEnvironment* variable to no - this means no emails will be sent to makers and end users as you test features.
+
+Learn more: [Updating the Center of Excellence (CoE) Starter Kit](after-setup.md)
+
 ## Create your environments
 
-We recommend creating two environments to install the CoE Starter Kit solution - one for testing updates and customizations, and one for production use. Learn more: [Updating the CoE Starter Kit](after-setup.md)
+We recommend creating two environments to install the CoE Starter Kit solution - one for testing, and one for production use. Learn more: [Updating the CoE Starter Kit](after-setup.md)
 
 Create two production environments to install the CoE Starter Kit solutions:
 
@@ -102,6 +112,7 @@ Create two production environments to install the CoE Starter Kit solutions:
 - Choose English as the default language.
 - Don't add sample apps and datasets.
 - Don't restrict environment access with a security group, because some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
+- After [importing the solution](setup-core-components.md) and completing the setup steps, set the *ProductionEnvironment* variable to no in your test environment. This means you can test the coE Starter Kit processes without impacting makers and end users.
 
 >[!IMPORTANT]
 >Using Data Export as a mechanism to retrieve inventory and telemetry is currently in preview - we recommend you test this in a dedicated test environment before using this feature in production.
@@ -124,6 +135,7 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [Power Automate for Admins](/connectors/microsoftflowforadmins/)
 - [Power Automate Management](/connectors/flowmanagement/)
 - [Power Platform for Admins](/connectors/powerplatformforadmins/)
+- [Power Query Dataflows](/connectors/dataflows/)
 - [RSS](/connectors/rss/)
 - [SharePoint](/connectors/sharepointonline/)
 
