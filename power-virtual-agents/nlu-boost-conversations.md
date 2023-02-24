@@ -23,7 +23,7 @@ searchScope:
 
 When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. However, by utilizing the boosted conversations in Power Virtual Agents, your bot can find and present information from an external source - even if you haven't created a topic for it.
 
-In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback.md).
+In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
 Now, before involving a live agent, the bot uses natural language processing to:
 - Parse what a user types to determine what they're asking
@@ -43,7 +43,7 @@ Now, before involving a live agent, the bot uses natural language processing to:
 
 1. Create a preview bot. Select **Try the unified canvas (preview)**. Preview chatbots have **(preview)** added to their name in the list of bots.
 
-    :::image type="content" source="media/responses-create-preview-bot.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
+    :::image type="content" source="media/nlu-authoring/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
     
 1. Enter a name for the bot.
 
@@ -57,7 +57,7 @@ Now, before involving a live agent, the bot uses natural language processing to:
 
 1. In the field under the checkbox, add a publicly available URL, if one isn't there. You can't use websites or URLs that require authentication or that aren't indexed by Bing, and that aren't publicly viewable.
 
-    :::image type="content" source="media/responses-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
+    :::image type="content" source="media/nlu-authoring/responses-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
 
 1. Select **Save** at the top of the **AI capabilities**.
 
@@ -94,7 +94,7 @@ If you'd like to publish a bot that has **Boost conversations** enabled, you'll 
 
 Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. During preview, bots with "Boost conversations" enabled will have a limit on the amount of queries they can make that reach out to the URL you specified.
 
-During the preview, bots with **Boost conversations** enabled will have a limit on the amount of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas#quotas)
+During the preview, bots with **Boost conversations** enabled will have a limit on the amount of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas)
 
 
 
