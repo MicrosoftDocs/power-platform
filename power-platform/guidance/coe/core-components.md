@@ -3,7 +3,7 @@ title: "Core components | MicrosoftDocs"
 description: "The CoE Starter Kit core components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment."
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 02/24/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -16,6 +16,13 @@ search.app:
 ---
 
 # Use core components
+
+> [!IMPORTANT]
+>
+> This article covers topics related to legacy systems. Migrate your flows created with these solutions to Power Automate for desktop or delete them.
+>
+> - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
+> - Windows recorder (V1) is deprecated and no longer works.
 
 These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the Set App Permissions help with daily admin tasks. The core components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md) and [Watch](https://www.youtube.com/embed/l0kJQAeKthw) how to use the core components solution.
 
