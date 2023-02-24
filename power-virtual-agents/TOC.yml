@@ -12,15 +12,23 @@
       href: requirements-quotas.md
     - name: Community help and support
       href: fundamentals-support.md
+    - name: Automated authoring in Power Virtual Agents
+      items:
+      - name: Automated authoring overview (preview)
+        href: nlu-authoring-overview.md
+      - name: Automated authoring quickstart guide (preview)
+        href: nlu-authoring-quickstart.md
+      - name: Boost conversations (preview)
+        href: nlu-boost-conversations.md
     - name: Power Virtual Agents preview
       items:
-        - name: What's in preview
+        - name: What's currently in preview
           href: preview/overview.md
-        - name: Quickstart guide
+        - name: Quickstart guide (preview)
           href: preview/quickstart.md
-        - name: Limitations
+        - name: Limitations (preview)
           href: preview/limitations.md
-        - name: Key concepts for Composer users
+        - name: Key concepts for Composer users (preview)
           href: preview/composer-concepts.md
   - name: Power Virtual Agents web app
     items:
