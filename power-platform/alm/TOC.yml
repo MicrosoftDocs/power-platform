@@ -67,10 +67,11 @@
           items:
             - name: What are pipelines?
               href: pipelines.md
+              displayName: release management change management deploy solutions 
             - name: Set up pipelines
-              href: set-up-pipelines.md
+              href: set-up-pipelines.md              
             - name: Run pipelines
-              href: run-pipeline.md
+              href: run-pipeline.md              
     - name: ALM for developers
       href: alm-for-developers.md
       items:
@@ -78,6 +79,7 @@
           items:
             - name: Use Microsoft Power Platform Build Tools
               href: devops-build-tools.md
+              displayName: release management change management deploy solutions
             - name: Microsoft Power Platform Build Tools tasks
               href: devops-build-tool-tasks.md
             - name: Pre-populate connection references and environment variables
@@ -86,6 +88,7 @@
           items:
             - name: Use GitHub Actions for Microsoft Power Platform
               href: devops-github-actions.md
+              displayName: release management change management deploy solutions
             - name: Available GitHub Actions for Power Platform development
               href: devops-github-available-actions.md
             - name: Available GitHub Actions for Power Platform administration
