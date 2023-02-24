@@ -289,9 +289,9 @@ Example: In a Dataverse for Teams environment, accessing premium connectors in t
 ### Can I use AI Builder with Dataverse for Teams?
 No. Tables for AI Builder aren't included in Dataverse for Teams.
 
-### Can I use UI Flows with Dataverse for Teams?
+### Can I use desktop flows with Dataverse for Teams?
 
-No. UI Flows aren't supported in Dataverse for Teams.
+No. Desktop flows aren't supported in Dataverse for Teams.
 
 ### Can I use custom connectors in Dataverse for Teams?
 Custom connectors aren't supported in Dataverse for Teams but [support for Azure API Management (API-M)](https://powerapps.microsoft.com/blog/azure-api-management-connector-on-the-power-platform/) will be available later in Dataverse for Teams.
