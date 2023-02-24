@@ -583,7 +583,7 @@
               items:
                 - name: Analytics for cloud flows
                   href: analytics-flow.md
-                - name: Analytics for UI flows
+                - name: Analytics for desktop flows
                   href: analytics-ui-flow.md
             - name: Reports
               items:
