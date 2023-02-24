@@ -1,8 +1,8 @@
 ---
-title: Overview of GTP
+title: Overview of GTP in Power Virtual Agents (preview)
 description: Desc for overview
-keywords: "PVA"
-ms.date: 2/8/2023
+keywords: "PVA, Chat GPT, AI, artificial intelligence, machine learning, Power Virtual Agengts, chatbot, chatbots, bot, bots"
+ms.date: 3/6/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 searchScope:
   - "Power Virtual Agents"
 ---
-# Overview of GTP in PVA (WIP)
+# Overview of GTP in Power Virtual Agents (preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -21,9 +21,6 @@ searchScope:
 > - [ ] Connect to subs and hub  
 > - [ ] Check naming/branding wording
 -->
-
-
-
 ## Prerequisites
 
 

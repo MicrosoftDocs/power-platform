@@ -1,8 +1,8 @@
 ---
 title: Quickstart guide for AI authoring
 description: Quickstart guide for AI authoring
-keywords: "PVA"
-ms.date: 2/23/2023
+keywords: "PVA, Chat GPT, AI, artificial intelligence, machine learning, Power Virtual Agengts, chatbot, chatbots, bot, bots"
+ms.date: 3/6/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt

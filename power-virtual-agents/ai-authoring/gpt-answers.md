@@ -1,8 +1,8 @@
 ---
-title: Answers
+title: Use GPT Answers to expand conversational reach (preview)
 description: Desc for answers
-keywords: "PVA"
-ms.date: 2/8/2023
+keywords: "PVA, Chat GPT, AI, artificial intelligence, machine learning, Power Virtual Agengts, chatbot, chatbots, bot, bots"
+ms.date: 3/6/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -14,14 +14,14 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Answers docs (WIP)
+# Use GPT Answers to expand conversational reach (preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
 
 
-<!-- TODO
+<!-- Work in Progress - TODO
 > - [ ] Connect to intro and hub (when written...)
 > - [ ] Check all naming/branding wording (descriptive vs named)
 > - [ ] Add mgmt proc
@@ -31,7 +31,8 @@ searchScope:
 
 <INTRO>
 
-##Prerequisites
+## Prerequisites
+
 - Feature needs to be enabled for each bot (prob more like cuation/alert), they're not on by default
 - Need PVA2 preview
 

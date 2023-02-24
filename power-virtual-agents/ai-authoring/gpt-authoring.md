@@ -1,8 +1,8 @@
 ---
-title: Authoring
+title: Use GPT AI to create and edit topics (preview)
 description: Desc for authoring
-keywords: "PVA"
-ms.date: 2/8/2023
+keywords: "PVA, Chat GPT, AI, artificial intelligence, machine learning, Power Virtual Agengts, chatbot, chatbots, bot, bots"
+ms.date: 3/6/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -14,7 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Use GPT AI to create and edit topics (Preview)
+# Use GPT AI to create and edit topics (preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -29,11 +29,10 @@ searchScope:
 
 In addition to the traditional method for [creating and editing topics](../authoring-create-edit-topics.md), Power Virtual Agents lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
 
-The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 model (which is also used in Bing).
-
-
+The AI behind the GPT Authoring feature is powered by the Azure OpenAI GPT-3 model (also used in Bing),
 
 ## Prerequisites
+
 - Feature needs to be enabled (1. Settings > General settings > Enable "Intelligent authoring support (preview)") it's on by default
 - Need PVA2 preview
 
@@ -55,9 +54,8 @@ When create a new topic, you can select **Describe it** and ask the AI to make i
    
    > [!TIP]
    > 
-   > Giving your topic a name helps the AI to construct your topic, as it adds context to your request. 
+   > Give your topic a name to help the AI to construct your topic, as it adds context to your request. 
 
-   
 4. Select **Create**.
    
 5. The authoring canvas will open and a new topic, including a generated title and trigger phrases as well as one or more nodes, will be created for you. You can [use AI to further refine and update the topic](#use-gpt-ai-to-edit-a-topic), in addition to the [usual ways of editing topics](../authoring-create-edit-topics.md).
