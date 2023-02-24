@@ -1,7 +1,7 @@
 ---
-title: Quickstart guide for AI authoring
-description: Quickstart guide for AI authoring
-keywords: "PVA"
+title: Quickstart guide for boosting bot conversations (preview)
+description: Build bots quickly and provide the most relevant information to your customers with natural language understanding advancements in Power Virtual Agents preview.
+keywords: "PVA, GPT, NLU"
 ms.date: 2/23/2023
 ms.topic: how-to
 author: iaanw
@@ -14,124 +14,115 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Quickstart guide for AI authoring (preview)
+# Quickstart guide for boosting bot conversations (preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Microsoft has made bot building even simpler with the Power Virtual Agents (preview) version. Whether you're new to conversational AI or a seasoned developer, Microsoft's new GPT AI intelligence platform is with you and your team every step of the way. 
+Microsoft has made bot building even simpler with AI-powered capabilities in Power Virtual Agents (preview). Whether you're new to conversational AI or a seasoned developer, our intelligence platform is with you and your team every step of the way. 
 
-With Power Virtual Agents (preview), now you can build natural language understanding (NLU) capabilities into your chatbots using our improved bot authoring canvas, GPT Builder.
+This quickstart guide will introduce you to the core steps in creating and boosting a chatbot with expanded natural language understanding (NLU) capabilities.
 
 ## Prerequisites 
 
-- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be in Preview. 
+- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be in Preview. 
 
-- Preview chatbots have (preview) added to their name. When you create a new bot, select **Try the unified canvas (preview)**. 
+- Preview chatbots have (preview) added to their name. When you create a new bot, select **Try the unified canvas (preview)**. 
  
 > [!IMPORTANT] 
-> During the Chat GPT preview period, if you create a bot that has Boost conversations enabled, you'll need to contact Microsoft Support for pre-authorization before you can publish it. 
+> During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need to [contact Microsoft Support before you can publish your bot](nlu-boost-conversations.md#publishing). 
 
-Previously, Power Virtual Agent bots would parse what a user typed into the bot message prompt and respond with the most appropriate trigger phrase or node. For example, if a user typed "Open hours", then the bot would parse that phrase to locate a **Store hours** topic, starting a conversation that then would ask the user which store location is the customer interested in, and then displaying the hours that the requested store located is open.  
+## How bot conversations work
 
-What makes the improved preview version of Power Virtual Agents so powerful is the new AI feature, **GPT Answers**. Now when you create a bot that is linked to your organization’s website, Power Virtual Agents (preview) can now harness the power of the natural language understanding (NLU) by providing custom responses to any user question without depending upon the bot builder to create topics for the bot to parse and respond to. 
+Power Virtual Agent bots use a [customized NLU model and AI capabilities](advanced-ai-features.md) to understand what a user types and respond with the most appropriate bot topic. A bot topic is a sequence of nodes that logically flow from one step to the other. See [Create and edit topics (preview)](preview/authoring-create-edit-topics.md) for details on how bot topics work.
 
-Now, a user can type anything into the bot, and **GPT Answers** uses its built-in intelligence to interpret the user’s intent. Over time you train the language model so that the bot can extract meaning from any phrase the user types and respond more and more intelligently to answer the user’s questions, as the bot is trained. 
+For example, you might create a bot for your customers to ask common questions about your business, thus reducing your support overhead by deflecting support calls. In the bot, you could create a topic that includes details about your store opening hours and call it **Store hours**. 
+
+When a customer asks a question such as "When do you open?" or "What are your opening hours?", the bot uses NLU to understand the _intent_ behind the question (in this case, that the customer wants to know about hours of operation), and matches that intent to the most appropriate bot topic (which would be the **Store hours** topic). 
+
+The bot then follows the _conversation flow_ that you've defined in the **Store hours** topic, which might be a series of questions that use if/else arguments, or logic gates, to ask the customer which store location they're interested in. The final output of the topic might be to then display the hours and contact information for that location.  
+
+However, you may not be able to anticipate all the types of questions your customers ask. To help mitigate this, Power Virtual Agents (preview) incorporates a powerful new AI-powered capability that uses the latest advancements in NLU models. When you have **Boost conversations** enabled in your bot, and linked to a publicly available, Bing-indexed website, your bot can provide automatically generated, conversationally friendly, plain language responses without depending upon the bot builder to create topics for every eventuality. 
 
 Ready to get started? The first step is to create your bot.  
 
-## Create your GPT AI bot 
+## Create a boosted bot 
 
-Simply choose a few initial topics or let the new **AI topic builder** do the heavy lifting by converting your existing content. You can then one or more conversation starters and unlock the power of AI bots, enabling natural language responses from information located on your organization’s own website.  
-
-1. From the **Power Virtual Agents (preview)** main screen, in the left navigation menu, select **Home**, and then select **+ Create a bot**. 
+1. From the **Power Virtual Agents (preview)** main screen, on the side navigation menu, select **Home**, then **+ Create a bot**. 
 
    :::image type="content" source="media/nlu-authoring/nlu-quickstart-home.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
 
 2. Select **Try the unified canvas (preview)** to create a preview bot. 
-   - An opt-in confirmation appears the first time you create or view a preview bot. 
+   - An opt-in confirmation message appears the first time you create or view a preview bot that describes some of their benefits.
 
    :::image type="content" source="media/nlu-authoring/nlu-quickstart-create-bot.png" alt-text="Screenshot of the Create a chatbot page.":::
 
-3. Name your bot, and then select **Create**. 
+3. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic. Select **Create**. 
 
    :::image type="content" source="media/nlu-authoring/nlu-quickstart-boost-create.png" alt-text="Screenshot of the Boost your conversation preview option.":::
 
 There you have it! You’ve created a new bot.  
 
-With **GPT Answers**, when you create an AI intelligent bot, you can associate it with your organization’s own information, such as located on your website domain. Once you’ve done this, any message that a user asks a bot that isn’t matched to a manually defined topic, Power Virtual Agents (preview) triggers the new AI feature. To learn more, see How to use **GPT Answers** to create and edit topics. 
+For any user-sent message that can't be matched to an existing topic, your bot looks for an answer on the website you've specified, and turns the answer into a simple message that it sends to the user. See the [Boost conversations (preview)](nlu-boost-conversations.md) topic for more details on the capability, including instructions for enabling boosted conversations in preview bots you've already created.
 
-## Choose a message starter topic 
+Before you begin testing your bot, you might like to add an initial welcome-style bot topic. This will help you understand how bot topics work and start you on your journey to creating fully functional bots.
 
-Topics begin with *trigger phrases* and/or *conversation topic nodes*. Trigger phrases are phrases, keywords, and questions that a user is likely to type that relate to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do. 
+## Add a welcome topic
 
-Next, create your first topic.   
+Bot topics usually begin with *trigger phrases*. Trigger phrases are phrases, keywords, and questions that a user is likely to type that relate to a specific issue. This is what the bot uses to match a user's intent with the appropriate topic. See [Create and edit topics (preview)](preview/authoring-create-edit-topics.md) for more details on how trigger phrases work.
+
+After the trigger phrase, you add *conversation nodes* to define how the bot should respond to a trigger phrase and what it should do. 
 
 1. In the left navigation menu, select **Topics**, **+ New topic**, and then **From blank**. 
  
-    :::image type="content" source="nlu-authoring/nlu-quickstart-create-topic.png" alt-text="Screenshot of the Create a new topic from blank option.":::
+    :::image type="content" source="media/nlu-authoring/nlu-quickstart-create-topic.png" alt-text="Screenshot of the Create a new topic from blank option.":::
 
-2.  To add a new Message node, select the *+ sign* on the Trigger phases node, and then click the *add node (+)* button.
+2.  To add a new Message node, select the *+ sign* on the Trigger phases node, and then select the *add node (+)* button.
 
-    :::image type="content" source="nlu-authoring/nlu-quickstart-add-node.png" alt-text="Screenshot of the Add node button.":::
+    :::image type="content" source="media/nlu-authoring/nlu-quickstart-add-node.png" alt-text="Screenshot of the Add node button.":::
    
 3. Select **Send a message**.
 
-    :::image type="content" source="nlu-authoring/nlu-quickstart-message-node.png" alt-text="Screenshot of the Send a message option.":::
+    :::image type="content" source="media/nlu-authoring/nlu-quickstart-message-send.png" alt-text="Screenshot of the Send a message option.":::
 
-4. Type a message. In this example, type How can I help you today? in the **Type your message** prompt. 
+4. Type a message. In this example, type *How can I help you today?* in the **Type your message** prompt. 
 
-    :::image type="content" source="media/gpt-quickstart7.png" alt-text="Screenshot of the Message node.":::
+    :::image type="content" source="media/nlu-authoring/nlu-quickstart-message-node.png" alt-text="Screenshot of the Message node.":::
 
 5. Repeat the above steps to add as many message variations as you like.  
  
-6. When you’re finished, Click **Save** to save your bot. 
+6. When you’re finished, select **Save**. 
 
    When you add message variations, the bot randomly picks one of them to use each time the node is triggered. 
 
-In addition to the traditional method for creating and editing topics, Power Virtual Agents with GPT AI now lets you choose the **Describe it to build with GPT (preview)** feature. You can choose to utilize this powerful new option that includes pre-built AI models and elicits responses based on natural language understanding (NLU).  
+Next, it's time to test your bot! 
 
-By describing what you want and having AI build it for you, this significantly decreases the time it takes to create and update bots. For more information, see How to use [Use AI to create and edit topics (preview)](). 
+## Test your bot's boosted conversational reach 
 
-Next, you can test your bot! 
+Once you create a bot, you can immediately test the bot and try out different phrases for your bot to reply to. 
 
-## Test your bot with GPT Answers power 
-
-Once you create a bot, you can immediately test the bot and try out different phrases for **GPT Answers** to parse. Then, any question a user asks the bot triggers **GPT Answers**, even phrases a user types in the bot that don’t match a defined topic to elicit manual or trigger-defined responses. For example, you can ask the bot about your organization’s return policy, and **GTP Answers** performs a Microsoft Bing search over the customer’s website to parse and return relevant content, using powerful GPT AI technology to summarize the results using natural language understanding (NLU).  
-
-> [!NOTE]
-> **GPT Answers** AI-generated responses have been Microsoft pre-trained, that is modeled and compared against ideal responses using semantic similarity. 
-
-The **Test bot** pane shows how a bot conversation plays out at every step. You can also use test your bot to fine-tune a topic directly within the **Power Virtual Agents (preview)** portal. 
+The **Test bot** pane shows how a bot conversation plays out at every step and you can fine-tune a topic directly within the **Power Virtual Agents (preview)** portal:
  
-1. From the top right navigation bar, select **Test bot**. 
+1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the bottom of the side navigation menu. 
 
-    :::image type="content" source="media/gpt-quickstart8.png" alt-text="Screenshot of Test bot option.":::
+    :::image type="content" source="media/nlu-authoring/nlu-quickstart-test-bot.png" alt-text="Screenshot of Test bot option.":::
 
-2. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to in the [Boost your conversation]() step. For example, you could type “What is your return policy?”. 
+2. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to. For example, you could type *What is your return policy?*. 
  
-   This first phrase you type starts the conversation. The Test bot pane displays the bot's responses in the test canvas. 
-
-3. Next, ask the bot other questions.  
+   The bot retrieves information from the website returns a response. The response provides a link to where it found that information and allows you to provide feedback.
  
-   The bot searches the website using Microsoft Bing to find relevant information and then returns a response. The response typically provides a link to where it found that information.  
- 
-4. (Optional) Try asking the bot a non-sensical question, such as “Why is the sky blue”? The bot then falls back to a standard defined topic that relates to not understanding the question. The bot then asks you to rephrase the question. 
+4. (Optional) Try asking the bot about something you know is not on the website you specified, such as "Why is the sky blue"? Because the bot can't find a relevant bot topic or a relevant answer on the specified website it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
 
-    :::image type="content" source="media/gpt-quickstart9.png" alt-text="Screenshot of Test bot pane.":::
+    :::image type="content" source="media/nlu-authoring/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
  
 > [!NOTE]
-> After you test your bot, you can select the reset icon at the top of the Test bot pane to clear previous conversations. Resetting makes it easier to follow the flow of the current topic without getting confused by previous conversations.
+> After you test your bot, you can select the reset icon at the top of the **Test bot** pane to clear previous conversations. Resetting makes it easier to follow the flow of the current topic without getting confused by previous conversations.
 
-:::image type="content" source="media/gpt-quickstart10.png" alt-text="Screenshot of Test bot pane refresh button.":::
+:::image type="content" source="media/nlu-quickstart-test-reset.png" alt-text="Screenshot of Test bot pane reset button that looks like a an arrow in a circle shap.":::
 
-You can return to the authoring canvas at any time to revise the conversation path. The Test bot pane automatically refreshes when you select **Save** to save topic changes. 
-
-> [!NOTE]
-> This example shows you how **GPT Answers** strictly adheres to locating information that is available on the website. Or you can configure the bot to not respond to questions a user asks that are not related to information provided on the website you selected. 
+You can return to the authoring canvas at any time to revise the conversation path. The **Test bot** pane automatically refreshes when you select **Save**. 
 
 ## Learn more: Add features to further develop your bot 
 
-After you've completed your bot’s basic building blocks, it's easy to take the conversation up a notch, by giving your bot a voice of its own. You can add images and video clips, as well as adaptive cards, entities, and variable expressions. You can also create more complex variable expressions using power effects or integrate with backend APIs using [Power Automate](). 
-
+It's easy to take your bot's conversations up a notch by giving your bot a voice of its own. You can add images and video clips, as well as adaptive cards, entities, and variable expressions. See the [Key concepts - Enhanced authoring](advanced-fundamentals.md) for more details, or continue your bot-building journey by checking out the rest of the [Power Virtual Agents documentation](index.yml).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
