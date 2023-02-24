@@ -24,9 +24,9 @@ With Power Virtual Agents (preview), now you can build natural language understa
 
 ## Prerequisites 
 
-- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be  Preview. 
+- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be in Preview. 
 
-- Preview chatbots have (preview)  added to their name. When you create a new bot, select Try the unified canvas (preview). 
+- Preview chatbots have (preview) added to their name. When you create a new bot, select **Try the unified canvas (preview)**. 
  
 > [!IMPORTANT] 
 > During the Chat GPT preview period, if you create a bot that has Boost conversations enabled, you'll need to contact Microsoft Support for pre-authorization before you can publish it. 
@@ -45,16 +45,16 @@ Simply choose a few initial topics or let the new **AI topic builder** do the he
 
 1. From the **Power Virtual Agents (preview)** main screen, in the left navigation menu, select **Home**, and then select **+ Create a bot**. 
 
-  :::image type="content" source="media/gpt-quickstart1.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
+   :::image type="content" source="media/gpt-quickstart1.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
 
 2. Select **Try the unified canvas (preview)** to create a preview bot. 
    - An opt-in confirmation appears the first time you create or view a preview bot. 
 
-  :::image type="content" source="media/gpt-quickstart2.png" alt-text="Screenshot of the Create a chatbot page.":::
+   :::image type="content" source="media/gpt-quickstart2.png" alt-text="Screenshot of the Create a chatbot page.":::
 
-3. Name your bot, and then select Create. 
+3. Name your bot, and then select **Create**. 
 
-  :::image type="content" source="media/gpt-quickstart3.png" alt-text="Screenshot of the Boost your conversation preview option.":::
+   :::image type="content" source="media/gpt-quickstart3.png" alt-text="Screenshot of the Boost your conversation preview option.":::
 
 There you have it! You’ve created a new bot.  
 
@@ -62,41 +62,41 @@ With **GPT Answers**, when you create an AI intelligent bot, you can associate i
 
 ## Choose a message starter topic 
 
- Topics begin with *trigger phrases* and/or *conversation topic nodes*. Trigger phrases are phrases, keywords, and questions that a user is likely to type that relate to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do. 
+Topics begin with *trigger phrases* and/or *conversation topic nodes*. Trigger phrases are phrases, keywords, and questions that a user is likely to type that relate to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do. 
 
- Next, choose your first topic. You can start with a blank canvas, or you can have the AI topic builder do the work for you. In this example, we’ll choose a blank canvas.  
+Next, choose your first topic. You can start with a blank canvas, or you can have the AI topic builder do the work for you. In this example, we’ll choose a blank canvas.  
 
 1. In the left navigation menu, select **Topics**, **+ New topic**, and then **From blank**. 
  
-   :::image type="content" source="media/gpt-quickstart4.png" alt-text="Screenshot of the Create a new topic from blank option.":::
+    :::image type="content" source="media/gpt-quickstart4.png" alt-text="Screenshot of the Create a new topic from blank option.":::
 
 2.  To add a new Message node, select the *+ sign* on the Trigger phases node, and then click the *add node (+)* button.
 
-   :::image type="content" source="media/gpt-quickstart5.png" alt-text="Screenshot of the Add node button.":::
+    :::image type="content" source="media/gpt-quickstart5.png" alt-text="Screenshot of the Add node button.":::
    
 3. Select **Send a message**.
 
-   :::image type="content" source="media/gpt-quickstart6.png" alt-text="Screenshot of the Send a message option.":::
+    :::image type="content" source="media/gpt-quickstart6.png" alt-text="Screenshot of the Send a message option.":::
 
 4. Type a message. In this example, type How can I help you today? in the **Type your message** prompt. 
 
-   :::image type="content" source="media/gpt-quickstart7.png" alt-text="Screenshot of the Message node.":::
+    :::image type="content" source="media/gpt-quickstart7.png" alt-text="Screenshot of the Message node.":::
 
 5. Repeat the above steps to add as many message variations as you like.  
  
 6. When you’re finished, Click **Save** to save your bot. 
 
-  When you add message variations, the bot randomly picks one of them to use each time the node is triggered. 
+   When you add message variations, the bot randomly picks one of them to use each time the node is triggered. 
 
 In addition to the traditional method for creating and editing topics, Power Virtual Agents with GPT AI now lets you choose the **Describe it to build with GPT (preview)** feature. You can choose to utilize this powerful new option that includes pre-built AI models and elicits responses based on natural language understanding (NLU).  
 
-By describing what you want and having AI build it for you, this significantly decreases the time it takes to create and update bots.  For more information, see How to use [Use AI to create and edit topics (preview)](). 
+By describing what you want and having AI build it for you, this significantly decreases the time it takes to create and update bots. For more information, see How to use [Use AI to create and edit topics (preview)](). 
 
 Next, you can test your bot! 
 
 ## Test your bot with GPT Answers power 
 
- Once you create a bot, you can immediately test the bot and try out different phrases for **GPT Answers** to parse. Then, any question a user asks the bot triggers **GPT Answers**, even phrases a user types in the bot that don’t match a defined topic to elicit manual or trigger-defined responses. For example, you can ask the bot about your organization’s return policy, and **GTP Answers** performs a Microsoft Bing search over the customer’s website to parse and return relevant content, using powerful GPT AI technology to summarize the results using natural language understanding (NLU).  
+Once you create a bot, you can immediately test the bot and try out different phrases for **GPT Answers** to parse. Then, any question a user asks the bot triggers **GPT Answers**, even phrases a user types in the bot that don’t match a defined topic to elicit manual or trigger-defined responses. For example, you can ask the bot about your organization’s return policy, and **GTP Answers** performs a Microsoft Bing search over the customer’s website to parse and return relevant content, using powerful GPT AI technology to summarize the results using natural language understanding (NLU).  
 
 > [!NOTE]
 > **GPT Answers** AI-generated responses have been Microsoft pre-trained, that is modeled and compared against ideal responses using semantic similarity. 
@@ -105,24 +105,24 @@ The **Test bot** pane shows how a bot conversation plays out at every step. You 
  
 1. From the top right navigation bar, select **Test bot**. 
 
-   :::image type="content" source="media/gpt-quickstart8.png" alt-text="Screenshot of Test bot option.":::
+    :::image type="content" source="media/gpt-quickstart8.png" alt-text="Screenshot of Test bot option.":::
 
 2. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to in the [Boost your conversation]() step. For example, you could type “What is your return policy?”. 
  
-  This first phrase you type starts the conversation. The Test bot pane displays the bot's responses in the test canvas. 
+   This first phrase you type starts the conversation. The Test bot pane displays the bot's responses in the test canvas. 
 
 3. Next, ask the bot other questions.  
  
-  The bot searches the website using Microsoft Bing to find relevant information and then returns a response. The response typically provides a link to where it found that information.  
+   The bot searches the website using Microsoft Bing to find relevant information and then returns a response. The response typically provides a link to where it found that information.  
  
 4. (Optional) Try asking the bot a non-sensical question, such as “Why is the sky blue”? The bot then falls back to a standard defined topic that relates to not understanding the question. The bot then asks you to rephrase the question. 
 
-   :::image type="content" source="media/gpt-quickstart9.png" alt-text="Screenshot of Test bot pane.":::
-
+    :::image type="content" source="media/gpt-quickstart9.png" alt-text="Screenshot of Test bot pane.":::
+ 
 > [!NOTE]
 > After you test your bot, you can select the reset icon at the top of the Test bot pane to clear previous conversations. Resetting makes it easier to follow the flow of the current topic without getting confused by previous conversations.
 
-   :::image type="content" source="media/gpt-quickstart10.png" alt-text="Screenshot of Test bot pane refresh button.":::
+:::image type="content" source="media/gpt-quickstart10.png" alt-text="Screenshot of Test bot pane refresh button.":::
 
 You can return to the authoring canvas at any time to revise the conversation path. The Test bot pane automatically refreshes when you select **Save** to save topic changes. 
 

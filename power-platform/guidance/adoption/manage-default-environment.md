@@ -187,4 +187,4 @@ Like every other environment type (sandbox, production, developer), the default 
 
 [Programmability and Extensibility - PowerShell - Getting started](/power-platform/admin/powershell-getting-started)
 
-[What is a Center of Excellence?](../coe/motivation.md)
+

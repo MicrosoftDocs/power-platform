@@ -17,4 +17,4 @@ ms.service: power-virtual-agents
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-This feature is available in the preview and hasn't changed. For more information, see [Assign licenses and manage access (production)](../requirements-licensing.md).
+This feature is available in the preview and is the same as the production version. For more information, see [Assign licenses and manage access (production)](../requirements-licensing.md).

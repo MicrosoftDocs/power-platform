@@ -1,5 +1,5 @@
 ---
-title: Automated authoring overview
+title: Automated authoring overview (preview)
 description: Create instantly useful chatbots quickly with natural language understanding-based authoring capabilities in Power Virtual Agents.
 keywords: "Power Virtual Agents, bot, chatbot, GPT, OpenAI, PVA"
 ms.date: 2/14/2023
@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 searchScope:
   - "Power Virtual Agents"
 ---
-# Automated authoring overview 
+# Automated authoring overview (preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
