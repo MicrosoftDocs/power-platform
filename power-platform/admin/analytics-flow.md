@@ -4,7 +4,7 @@ description: "Admins can view Microsoft Power Automate analytics in the Power Pl
 author: "MSFTMan"
 manager: kvivek
 ms.topic: conceptual
-ms.date: 06/01/2022
+ms.date: 02/23/2023
 ms.subservice: admin
 ms.author: deonhe
 search.audienceType: 
