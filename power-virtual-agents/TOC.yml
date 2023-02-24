@@ -2,7 +2,7 @@
   items:
   - name: Automated authoring overview
     href: nlu-authoring-overview.md
-  - name: Quickstart with GPT (preview)
+  - name: Automated authoring quickstart guide (preview)
     href: nlu-authoring-quickstart.md
   - name: Boost conversations (preview)
     href: nlu-boost-conversations.md

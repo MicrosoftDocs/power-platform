@@ -45,16 +45,16 @@ Simply choose a few initial topics or let the new **AI topic builder** do the he
 
 1. From the **Power Virtual Agents (preview)** main screen, in the left navigation menu, select **Home**, and then select **+ Create a bot**. 
 
-  :::image type="content" source="media/ai-authoring/gpt-quickstart1.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
+  :::image type="content" source="media/gpt-quickstart1.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
 
 2. Select **Try the unified canvas (preview)** to create a preview bot. 
    - An opt-in confirmation appears the first time you create or view a preview bot. 
 
-  :::image type="content" source="media/ai-authoring/gpt-quickstart2.png" alt-text="Screenshot of the Create a chatbot page.":::
+  :::image type="content" source="media/gpt-quickstart2.png" alt-text="Screenshot of the Create a chatbot page.":::
 
 3. Name your bot, and then select Create. 
 
-  :::image type="content" source="media/ai-authoring/gpt-quickstart3.png" alt-text="Screenshot of the Boost your conversation preview option.":::
+  :::image type="content" source="media/gpt-quickstart3.png" alt-text="Screenshot of the Boost your conversation preview option.":::
 
 There you have it! You’ve created a new bot.  
 
@@ -68,19 +68,19 @@ With **GPT Answers**, when you create an AI intelligent bot, you can associate i
 
 1. In the left navigation menu, select **Topics**, **+ New topic**, and then **From blank**. 
  
-   :::image type="content" source="media/ai-authoring/gpt-quickstart4.png" alt-text="Screenshot of the Create a new topic from blank option.":::
+   :::image type="content" source="media/gpt-quickstart4.png" alt-text="Screenshot of the Create a new topic from blank option.":::
 
 2.  To add a new Message node, select the *+ sign* on the Trigger phases node, and then click the *add node (+)* button.
 
-   :::image type="content" source="media/ai-authoring/gpt-quickstart5.png" alt-text="Screenshot of the Add node button.":::
+   :::image type="content" source="media/gpt-quickstart5.png" alt-text="Screenshot of the Add node button.":::
    
 3. Select **Send a message**.
 
-   :::image type="content" source="media/ai-authoring/gpt-quickstart6.png" alt-text="Screenshot of the Send a message option.":::
+   :::image type="content" source="media/gpt-quickstart6.png" alt-text="Screenshot of the Send a message option.":::
 
 4. Type a message. In this example, type How can I help you today? in the **Type your message** prompt. 
 
-   :::image type="content" source="media/ai-authoring/gpt-quickstart7.png" alt-text="Screenshot of the Message node.":::
+   :::image type="content" source="media/gpt-quickstart7.png" alt-text="Screenshot of the Message node.":::
 
 5. Repeat the above steps to add as many message variations as you like.  
  
@@ -105,7 +105,7 @@ The **Test bot** pane shows how a bot conversation plays out at every step. You 
  
 1. From the top right navigation bar, select **Test bot**. 
 
-   :::image type="content" source="media/ai-authoring/gpt-quickstart8.png" alt-text="Screenshot of Test bot option.":::
+   :::image type="content" source="media/gpt-quickstart8.png" alt-text="Screenshot of Test bot option.":::
 
 2. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to in the [Boost your conversation]() step. For example, you could type “What is your return policy?”. 
  
@@ -117,12 +117,12 @@ The **Test bot** pane shows how a bot conversation plays out at every step. You 
  
 4. (Optional) Try asking the bot a non-sensical question, such as “Why is the sky blue”? The bot then falls back to a standard defined topic that relates to not understanding the question. The bot then asks you to rephrase the question. 
 
-   :::image type="content" source="media/ai-authoring/gpt-quickstart9.png" alt-text="Screenshot of Test bot pane.":::
+   :::image type="content" source="media/gpt-quickstart9.png" alt-text="Screenshot of Test bot pane.":::
 
 > [!NOTE]
 > After you test your bot, you can select the reset icon at the top of the Test bot pane to clear previous conversations. Resetting makes it easier to follow the flow of the current topic without getting confused by previous conversations.
 
-   :::image type="content" source="media/ai-authoring/gpt-quickstart10.png" alt-text="Screenshot of Test bot pane refresh button.":::
+   :::image type="content" source="media/gpt-quickstart10.png" alt-text="Screenshot of Test bot pane refresh button.":::
 
 You can return to the authoring canvas at any time to revise the conversation path. The Test bot pane automatically refreshes when you select **Save** to save topic changes. 
 
