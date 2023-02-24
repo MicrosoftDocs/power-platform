@@ -1,18 +1,10 @@
 ---
-title: View desktop flows analytics in the Power Platform admin center | Microsoft Docs
+title: View analytics for Power Automate desktop flows | Microsoft Docs
 description: Learn about trends, usage patterns, and more analytics for desktop flows in the Power Platform admin center.
-services: ''
-suite: flow
-documentationcenter: na
 author: msftman
-manager: kvivek
-editor: ''
-tags: ''
 ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 02/01/2021
+ms.date: 02/23/2023
 ms.subservice: admin
 ms.author: DeonHe
 search.app: 
