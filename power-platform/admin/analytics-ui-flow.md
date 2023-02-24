@@ -21,23 +21,23 @@ search.audienceType:
   - flowadmin
 ---
 
-# View analytics for Desktop flows
+# View analytics for desktop flows
 
 As an admin, you will need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with Desktop flows:
 
-1. The Power Platform admin center.
-1. The Center of Excellence (CoE) Starter Kit.
+- The Power Platform admin center.
+- The Center of Excellence (CoE) Starter Kit.
 
-This article discusses the viewing Desktop flows analytics reports in the Power Platform admin center.
+This article discusses the viewing desktop flows analytics reports in the Power Platform admin center.
 
 
-The easiest option for an admin to view analytics for the Desktop flows in their organization is to visit Power Platform admin center (PPAC). In the PPAC by default, you will find the following three reports:
+The easiest option for an admin to view analytics for the desktop flows in their organization is to visit Power Platform admin center. You'll find the following three reports:
 
 Report | Description
 --- | ---
-Runs | This report gives you an overview of the daily, weekly, and monthly desktop flows run statistics. This report also provides trend lines and run results (success/failure/cancel). This report gives insights on how actively Desktop flows are used in each environment.
+Runs | This report gives you an overview of the daily, weekly, and monthly desktop flows run statistics. This report also provides trend lines and run results (success/failure/cancel). This report gives insights on how actively desktop flows are used in each environment.
 Usage | This report shows you the Desktop flows that are being used most, giving you insights into your automation inventory.
-Created | This report shows you analytics against recently created Desktop flows, giving you insights into your most active Desktop flows makers.
+Created | This report shows you analytics against recently created desktop flows, giving you insights into your most active desktop flows makers.
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ You must have the **environment admin** privilege to access the Power Platform a
 
 To access the reports:
 
-1. Sign into [Power Automate]().
+1. Sign into [Power Automate](https://make.powerautomate.com).
 
    > [!NOTE]
    > You may have to select your country/region if it's your first time signing in.
