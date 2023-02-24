@@ -144,8 +144,16 @@
                   href: edit-properties-environment.md
                 - name: Administration mode
                   href: admin-mode.md
-                - name: Customer managed encryption key
-                  href: manage-encryption-key.md
+                - name: Encryption key management
+                  items:
+                    - name: Self-managed key (BYOK)
+                      href: manage-encryption-key.md
+                    - name: Customer managed key (preview)
+                      href: customer-managed-key.md
+                    - name: Lock and unlock environments (preview)
+                      href: cmk-lock-unlock.md
+                    - name: Migrate from BYOK (preview)
+                      href: cmk-migrate-from-byok.md
                 - name: Trial environments
                   href: trial-environments.md
                 - name: Sandbox environment
@@ -575,9 +583,9 @@
               href: analytics-powerapps.md
             - name: Power Automate
               items:
-                - name: Analytics for flows
+                - name: Analytics for cloud flows
                   href: analytics-flow.md
-                - name: Analytics for UI flows
+                - name: Analytics for desktop flows
                   href: analytics-ui-flow.md
             - name: Reports
               items:

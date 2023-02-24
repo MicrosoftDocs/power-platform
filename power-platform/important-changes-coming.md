@@ -1,8 +1,8 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 01/13/2023
-ms.topic: "article"
+ms.date: 02/23/2023
+ms.topic: conceptual
 ms.subservice: admin
 searchScope:
   - "Power Platform"  
@@ -20,6 +20,16 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## AI Builder image classification model by Lobe is deprecated
+
+Effective January 2023, the image classification model by Lobe (preview) was deprecated.
+
+The model allowed you to quickly create and train models to classify images into different categories. This was useful for classifying objects in images, such as animals, plants, and vehicles. The deprecation of this capability was needed because the model wasn't aligned with other models in AI Builder, which offer an in-browser training and model usage experience. These other models don't require a download and install.
+
+The impact of the deprecation of this capability is that you'll no longer be able to use the model to classify images and you won't be able to download the Lobe application. Models built with Lobe might continue to work and serve their purpose, but they won't be supported by the AI Builder team. Your Lobe installation might also continue to function, but won't be supported.
+
+ If you're impacted by the deprecation of this feature, you can use other methods to classify images, such as [Azure Cognitive Services for Custom Vision](/azure/cognitive-services/Custom-Vision-Service/overview). Custom Vision is a cloud-based image classification service that enables you to quickly and easily create custom image classifiers. With Custom Vision, you can upload your own images and label them with the categories you want the model to recognize. The service then uses machine learning to train a custom model that can accurately identify the categories in new images. The service also provides a range of tools to evaluate and improve your models, such as testing accuracy and providing feedback on how to improve the model. You can also create custom image classifiers that can be used for a variety of applications, such as object recognition, facial recognition, and more.
 
 ## Model-driven app controls deprecation
 

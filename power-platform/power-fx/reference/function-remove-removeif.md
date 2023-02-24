@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Remove and RemoveIf functions in Power Apps

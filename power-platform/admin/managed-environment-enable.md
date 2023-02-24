@@ -58,7 +58,7 @@ Use the following settings to increase visibility and control for the selected e
 
 ## Disable Managed Environments using PowerShell
 
-Admins can use PowerShell to remove the Managed Environments property on an environment. The environment must not be using any Managed Environments capabilities.
+Admins can use PowerShell to remove the Managed Environments property on an environment. Before disabling Managed Environments, the administrator must ensure that none of the Managed Environments capabilities are in use.
 
 Here's an example PowerShell script that calls the API to set the Managed Environments property:
 
