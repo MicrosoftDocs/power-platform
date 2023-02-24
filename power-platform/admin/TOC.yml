@@ -170,6 +170,8 @@
                   href: managed-environment-overview.md
                 - name: Enable Managed Environments
                   href: managed-environment-enable.md
+                - name: Enable maker welcome content (preview)
+                  href: welcome-content.md
                 - name: Limit sharing
                   href: managed-environment-sharing-limits.md
                 - name: Usage insights
