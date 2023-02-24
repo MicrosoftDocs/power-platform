@@ -1,13 +1,13 @@
 ---
 title: Responding to Data Subject Rights (DSR) requests to export Power Apps customer data | Microsoft Docs
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to export Power Apps customer data.
-author: jimholtz
+author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/07/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 search.app:
