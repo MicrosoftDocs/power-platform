@@ -45,16 +45,16 @@ Simply choose a few initial topics or let the new **AI topic builder** do the he
 
 1. From the **Power Virtual Agents (preview)** main screen, in the left navigation menu, select **Home**, and then select **+ Create a bot**. 
 
-   :::image type="content" source="media/gpt-quickstart1.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
+   :::image type="content" source="media/nlu-authoring/nlu-quickstart-home.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
 
 2. Select **Try the unified canvas (preview)** to create a preview bot. 
    - An opt-in confirmation appears the first time you create or view a preview bot. 
 
-   :::image type="content" source="media/gpt-quickstart2.png" alt-text="Screenshot of the Create a chatbot page.":::
+   :::image type="content" source="media/nlu-authoring/nlu-quickstart-create-bot.png" alt-text="Screenshot of the Create a chatbot page.":::
 
 3. Name your bot, and then select **Create**. 
 
-   :::image type="content" source="media/gpt-quickstart3.png" alt-text="Screenshot of the Boost your conversation preview option.":::
+   :::image type="content" source="media/nlu-authoring/nlu-quickstart-boost-create.png" alt-text="Screenshot of the Boost your conversation preview option.":::
 
 There you have it! You’ve created a new bot.  
 
@@ -64,19 +64,19 @@ With **GPT Answers**, when you create an AI intelligent bot, you can associate i
 
 Topics begin with *trigger phrases* and/or *conversation topic nodes*. Trigger phrases are phrases, keywords, and questions that a user is likely to type that relate to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do. 
 
-Next, choose your first topic. You can start with a blank canvas, or you can have the AI topic builder do the work for you. In this example, we’ll choose a blank canvas.  
+Next, create your first topic.   
 
 1. In the left navigation menu, select **Topics**, **+ New topic**, and then **From blank**. 
  
-    :::image type="content" source="media/gpt-quickstart4.png" alt-text="Screenshot of the Create a new topic from blank option.":::
+    :::image type="content" source="nlu-authoring/nlu-quickstart-create-topic.png" alt-text="Screenshot of the Create a new topic from blank option.":::
 
 2.  To add a new Message node, select the *+ sign* on the Trigger phases node, and then click the *add node (+)* button.
 
-    :::image type="content" source="media/gpt-quickstart5.png" alt-text="Screenshot of the Add node button.":::
+    :::image type="content" source="nlu-authoring/nlu-quickstart-add-node.png" alt-text="Screenshot of the Add node button.":::
    
 3. Select **Send a message**.
 
-    :::image type="content" source="media/gpt-quickstart6.png" alt-text="Screenshot of the Send a message option.":::
+    :::image type="content" source="nlu-authoring/nlu-quickstart-message-node.png" alt-text="Screenshot of the Send a message option.":::
 
 4. Type a message. In this example, type How can I help you today? in the **Type your message** prompt. 
 
