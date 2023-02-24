@@ -1,14 +1,14 @@
 ---
 title: Responding to DSR requests for system-generated logs in Power Apps, Power Automate, and Microsoft Dataverse  | Microsoft Docs
 description: Walkthrough of how to respond to DSR requests for system-generated logs in Power Apps, Power Automate, and Microsoft Dataverse
-author: jimholtz
+author: sericks007
 ms.reviewer: paulliew
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 search.app:
