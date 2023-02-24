@@ -16,7 +16,9 @@ searchScope:
 
 # Quickstart guide for boosting bot conversations (preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [AI tech disclosure](includes/disclosure-ai-preview.md)]
+[!INCLUDE [AI tech disclosure - Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
+
 
 Microsoft has made bot building even simpler with AI-powered capabilities in Power Virtual Agents (preview). Whether you're new to conversational AI or a seasoned developer, our intelligence platform is with you and your team every step of the way. 
 
