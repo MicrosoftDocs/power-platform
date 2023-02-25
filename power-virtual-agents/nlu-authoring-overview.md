@@ -15,8 +15,7 @@ searchScope:
 ---
 # Automated authoring overview (preview)
 
-[!INCLUDE [AI tech disclosure](includes/disclosure-ai-preview.md)]
-[!INCLUDE [AI tech disclosure - Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
+[!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
 By leveraging recent advancements in AI language models, Power Virtual Agents (preview) transforms how you build chatbots, increasing a chatbot's ability to respond to user input while at the same time significantly reducing manual authoring and configuration.
 
@@ -28,5 +27,10 @@ For example, if, during a conversation, a user asks a question for which the cha
   
   Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
 
+
+## Next steps
+
+- Get up and running with the [Quickstart guide for boosting bot conversations (preview)](nlu-authoring-quickstart.md)
+- Dive in and start using the [Boost conversations (preview)](nlu-boost-conversations.md) capability in your chatbots
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

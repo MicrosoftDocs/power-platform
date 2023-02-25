@@ -18,8 +18,7 @@ searchScope:
 
 # Boost conversations (preview)
 
-[!INCLUDE [AI tech disclosure](includes/disclosure-ai-preview.md)]
-[!INCLUDE [AI tech disclosure - Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
+[!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
 When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. However, by utilizing the boosted conversations in Power Virtual Agents, your bot can find and present information from an external source - even if you haven't created a topic for it.
 
