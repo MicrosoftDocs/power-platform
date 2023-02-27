@@ -8,20 +8,20 @@
       href: admin-certification.md
     - name: Quotas, limits, and configuration values
       href: requirements-quotas.md
+- name: Use GPT capabilities in Power Virtual Agents
+  items:
+    - name: Automated authoring overview (preview)
+      href: nlu-authoring-overview.md
+    - name: Automated authoring quickstart guide (preview)
+      href: nlu-authoring-quickstart.md
+    - name: Boost conversations (preview)
+      href: nlu-boost-conversations.md
 - name: Get started
   items:
     - name: Get access to Power Virtual Agents
       href: requirements-licensing-subscriptions.md
     - name: Community help and support
       href: fundamentals-support.md
-    - name: Automated authoring in Power Virtual Agents
-      items:
-        - name: Automated authoring overview (preview)
-          href: nlu-authoring-overview.md
-        - name: Automated authoring quickstart guide (preview)
-          href: nlu-authoring-quickstart.md
-        - name: Boost conversations (preview)
-          href: nlu-boost-conversations.md
     - name: Power Virtual Agents preview
       items:
         - name: What's currently in preview
