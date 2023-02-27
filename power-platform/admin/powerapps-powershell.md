@@ -28,8 +28,6 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 - [Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell)
 - [Maker](https://www.powershellgallery.com/packages/Microsoft.PowerApps.PowerShell) 
 
-For information on the Power Apps admin module, see [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin) and [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell).
-
 > [!NOTE]
 > **Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:**
 > 
@@ -90,19 +88,56 @@ To run the PowerShell cmdlets for app creators, do the following:
     Add-PowerAppsAccount -Username user@contoso.com -Password $pass
     ```
 
+5. Use `Get-Help 'CmdletName'` to get a list of examples.
+
+     ![Get-Help command.](media/get-help-cmdlet.png "Get-Help command")
+
+   To cycle through the possible options for input tags, click on the tab key after typing out the dash (-) character, after the cmdlet name.
+
+   You can use additional parameter to get example commands:
+
+   ```powershell
+   Get-Help Get-AdminPowerAppEnvironment
+   Get-Help Get-AdminPowerAppEnvironment -Examples
+   Get-Help Get-AdminPowerAppEnvironment -Detailed
+   ```
+
 ## Power Apps cmdlets for app creators
 
 ### Prerequisite
 Users with a valid Power Apps license can perform the operations in these cmdlets, but they will only have access to the resources (for example, apps, flows, etc.) that have been created or shared with them.
 
-### Cmdlet list - Maker Cmdlets
+### Cmdlet list
+
+| Purpose | Cmdlet |
+| --- | --- |
+| Read environments | Get-PowerAppEnvironment <br> Get-FlowEnvironment |
+| Read and delete connections | Get-PowerAppConnection <br> Remove-PowerAppConnection |
+| Read, update and delete connection permissions | Get-PowerAppConnectionRoleAssignment <br> Set-PowerAppConnectionRoleAssignment <br> Remove-PowerAppConnectionRoleAssignment |
+| Read and delete connectors | Get-PowerAppConnector <br> Remove-PowerAppConnector |
+| Read, update and delete connector permissions | Get-PowerAppConnectorRoleAssignment <br> Set-PowerAppConnectorRoleAssignment <br> Remove-PowerAppConnectorRoleAssignment |
+| Manage canvas applications | Get-PowerApp <br> Remove-PowerApp <br> Publish-PowerApp <br> Set-PowerAppDisplayName <br> Get-PowerAppVersion <br> Restore-PowerAppVersion <br> Set-PowerAppAsSolutionAware |
+| Read, update and delete canvas app permissions | Get-PowerAppRoleAssignment <br> Set-PowerAppRoleAssignment <br> Remove-PowerAppRoleAssignment |
+| Manage flows | Get-Flow <br> Enable-Flow <br> Disable-Flow <br> Remove-Flow <br> Set-FlowAsSolutionAware |
+| Read flow run history | Get-FlowRun |
+| Read, update and delete flow owner permissions | Get-FlowOwnerRole <br> Set-FlowOwnerRole <br> Remove-FlowOwnerRole |
+| Manage flow approvals | Get-FlowApproval <br> Get-FlowApprovalRequest <br> Approve-FlowApprovalRequest <br> Deny-FlowApprovalRequest |
+
+
+## Power Apps cmdlets for administrators
+
+* For information on Power Apps cmdlets for admins, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md)
+* For overview on the module, see [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin)
+* For detailed documentation and **full list** on the cmdlet reference, see [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell)
+
+### Cmdlet lists
+
 > [!NOTE]
 > We have updated some of the cmdlets function names in the latest release in order to add appropriate prefixes to prevent collisions. See the table below for an overview of what has changed.
 
 | Purpose | Cmdlet |
 | --- | --- |
-| Add a canvas app to a Microsoft Dataverse solution | Set-PowerAppAsSolutionAware |
-| Read and update environments | [Get-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappenvironment) *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)*|
+| Read and update environments | [Get-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappenvironment) *(previously Get-PowerAppsEnvironment)* <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)*|
 | Read, update, and delete a canvas app | [Get-AdminPowerApp](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapp) *(previously Get-App)*<br> [Remove-AdminPowerApp](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerapp)  *(previously Remove-App)* <br> Publish-AdminPowerApp *(previously Publish-App)* |
 | Read, update, and delete canvas app permissions | [Get-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapproleassignment) *(previously Get-AppRoleAssignment)* <br>  [Remove-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerapproleassignment) *(previously Remove-AppRoleAssignment)* |
 | Read, update, and delete a flow | [Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow) <br> [Enable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/enable-adminflow) <br> [Disable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/disable-adminflow) <br> [Remove-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflow) |
@@ -111,31 +146,10 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 | Read and delete connections | [Get-AdminPowerAppConnection](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnection) *(previously Get-Connection)* <br> [Remove-AdminPowerAppConnection](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerappconnection) *(previously Remove-Connection)* |
 | Read, update, and delete connection permissions | [Get-AdminPowerAppConnectionRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnectionroleassignment) *(previously Get-ConnectionRoleAssignment)* <br> [Set-AdminPowerAppConnectionRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/set-adminpowerappconnectionroleassignment) *(previously Set-ConnectionRoleAssignment)* <br> [Remove-AdminPowerAppConnectionRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerappconnectionroleassignment) *(previously Remove-ConnectionRoleAssignment)* |
 | Read, and delete connectors | [Get-AdminPowerAppConnector](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnector) *(previously Get-Connector)* <br> [Remove-AdminPowerAppConnector](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerappconnector) *(previously Remove-Connector)* |
-| Add, read, update, and delete custom connector permissions | [Get-AdminPowerAppConnectorRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnectorroleassignment) *(previously Get-ConnectorRoleAssignment)* <br> [Get-PowerAppConnectorRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnectorroleassignment) *(previously Set-ConnectorRoleAssignment)* <br> [Remove-PowerAppConnectorRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerappconnectorroleassignment) *(previously Remove-ConnectorRoleAssignment)*  |
+| Add, read, update, and delete custom connector permissions | [Get-AdminPowerAppConnectorRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnectorroleassignment) *(previously Get-ConnectorRoleAssignment)* <br> [Set-AdminPowerAppConnectorRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/set-adminpowerappconnectorroleassignment) *(previously Set-ConnectorRoleAssignment)* <br> [Remove-PowerAppConnectorRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerappconnectorroleassignment) *(previously Remove-ConnectorRoleAssignment)*  |
 | Read, add, and remove policy URL patterns | [Get-PowerAppPolicyUrlPatterns](/powershell/module/microsoft.powerapps.administration.powershell/get-powerapppolicyurlpatterns)<br />[New-PowerAppPolicyUrlPatterns](/powershell/module/microsoft.powerapps.administration.powershell/new-powerapppolicyurlpatterns)<br />[Remove-PowerAppPolicyUrlPatterns](/powershell/module/microsoft.powerapps.administration.powershell/remove-powerapppolicyurlpatterns) |
 | Read, register, and remove management apps | [Get-PowerAppManagementApp](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappmanagementapp)<br /> [Get-PowerAppManagementApps](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappmanagementapps) <br /> [New-PowerAppManagementApp](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp) <br /> [Remove-PowerAppManagementApp](/powershell/module/microsoft.powerapps.administration.powershell/remove-powerappmanagementapp)|
 | Read, create, update, and import protection keys | [Get-PowerAppRetrieveAvailableTenantProtectionKeys](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappretrieveavailabletenantprotectionkeys)<br />[Get-PowerAppGenerateProtectionKey](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappgenerateprotectionkey)<br /> [Get-PowerAppRetrieveTenantProtectionKey](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappretrievetenantprotectionkey)<br />[New-PowerAppImportProtectionKey](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappimportprotectionkey) <br /> [Set-PowerAppTenantProtectionKey](/powershell/module/microsoft.powerapps.administration.powershell/set-powerapptenantprotectionkey) |
-
-
-## Power Apps cmdlets for administrators
-
-For information on Power Apps cmdlets for admins, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md)
-
-## Tips
-
-- Use Get-Help 'CmdletName' to get a list of examples.
-
-     ![Get-Help command.](media/get-help-cmdlet.png "Get-Help command")
-
-- To cycle through the possible options for input tags, click on the tab key after typing out the dash (-) character, after the cmdlet name.
-
-Example commands:
-
-```powershell
-Get-Help Get-AdminPowerAppEnvironment
-Get-Help Get-AdminPowerAppEnvironment -Examples
-Get-Help Get-AdminPowerAppEnvironment -Detailed
-```
 
 ## Operation examples
 
@@ -351,9 +365,9 @@ EnvironmentName and FlowName can be found in the flow url:
    https://us.flow.microsoft.com/manage/environments/66495a1d-e34e-e330-9baf-0be559e6900b/solutions/fd140aaf-4df4-11dd-bd17-0019b9312238/flows/53d829c4-a5db-4f9f-8ed8-4fb49da69ee1/details
    <br />The GUID after environments/ is the EnvironmentName and the GUID after flows/ is the FlowName
  - The AppName for canvas app can be found in Canvas app details page.
-   ![image](https://user-images.githubusercontent.com/62711514/178654001-94235e7a-db95-4785-8175-a2994e0039e3.png)
+   ![AppName for Canvas](https://user-images.githubusercontent.com/62711514/178654001-94235e7a-db95-4785-8175-a2994e0039e3.png)
  - The AppName for model driven app can be found in solution explorer.
-   ![image](https://user-images.githubusercontent.com/62711514/178653658-1f0a347d-d68b-4faa-881b-5396e5c29361.png)
+   ![AppName for MDA](https://user-images.githubusercontent.com/62711514/178653658-1f0a347d-d68b-4faa-881b-5396e5c29361.png)
    - To see the examples, type: "get-help Add-AdminFlowPowerAppContext -examples".
    - For more information, type: "get-help Add-AdminFlowPowerAppContext -detailed".
    - For technical information, type: "get-help Add-AdminFlowPowerAppContext -full".
