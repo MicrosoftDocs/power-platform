@@ -50,7 +50,7 @@ You need the environment URL of the Microsoft Power Platform environment the CoE
    If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
    :::image type="content" source="media/coe20.png" alt-text="Environment settings available in the Power Platform admin center.":::
 
-## Copy Azure Storage Account URL
+## Copy Azure Storage Account URL (Data Export only)
 
 You need the Azure Storage Account URL if your inventory is retrieved via [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory). Power BI dataflows will connect to the data in the storage account.
 
