@@ -24,6 +24,7 @@ This evolution brings several exciting new features:
 
 - A new authoring experience
 
+  - [Use GPT-based capabilities to expand your bot's reach](../nlu-authoring-overview.md)
   - [Add images, videos, and cards to a message](authoring-send-message.md)
   - [Message variations](authoring-send-message.md#use-message-variations)
   - [Quick replies](authoring-send-message.md#use-quick-replies)
