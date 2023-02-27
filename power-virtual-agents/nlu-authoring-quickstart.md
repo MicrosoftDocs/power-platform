@@ -25,9 +25,8 @@ This quickstart guide will introduce you to the core steps in creating and boost
 
 ## Prerequisites 
 
-- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be in Preview. 
-
-- Preview chatbots have (preview) added to their name. When you create a new bot, select **Try the unified canvas (preview)**. 
+- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
+- Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
  
 > [!IMPORTANT] 
 > During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need to [contact Microsoft Support before you can publish your bot](nlu-boost-conversations.md#publishing). 
@@ -63,7 +62,9 @@ Ready to get started? The first step is to create your bot.
 
 There you have it! You’ve created a new bot.  
 
-For any user-sent message that can't be matched to an existing topic, your bot looks for an answer on the website you've specified, and turns the answer into a simple message that it sends to the user. See the [Boost conversations (preview)](nlu-boost-conversations.md) topic for more details on the capability, including instructions for enabling boosted conversations in preview bots you've already created.
+For any user-sent message that can't be matched to an existing topic, your bot looks for an answer on the website you've specified, and turns the answer into a simple message that it sends to the user. 
+
+See the [Boost conversations (preview)](nlu-boost-conversations.md) topic for more details on the capability, including instructions for enabling boosted conversations in preview bots you've already created.
 
 Before you begin testing your bot, you might like to add an initial welcome-style bot topic. This will help you understand how bot topics work and start you on your journey to creating fully functional bots.
 
@@ -73,11 +74,11 @@ Bot topics usually begin with *trigger phrases*. Trigger phrases are phrases, ke
 
 After the trigger phrase, you add *conversation nodes* to define how the bot should respond to a trigger phrase and what it should do. 
 
-1. In the left navigation menu, select **Topics**, **+ New topic**, and then **From blank**. 
+1. On the side navigation menu, select **Topics**, **+ New topic**, and then **From blank**. 
  
     :::image type="content" source="media/nlu-authoring/nlu-quickstart-create-topic.png" alt-text="Screenshot of the Create a new topic from blank option.":::
 
-2.  To add a new Message node, select the *+ sign* on the Trigger phases node, and then select the *add node (+)* button.
+2.  To add a new **Message** node, select the **+ sign** on the trigger phrases node, and then select **Add node**.
 
     :::image type="content" source="media/nlu-authoring/nlu-quickstart-add-node.png" alt-text="Screenshot of the Add node button.":::
    
@@ -85,7 +86,7 @@ After the trigger phrase, you add *conversation nodes* to define how the bot sho
 
     :::image type="content" source="media/nlu-authoring/nlu-quickstart-message-send.png" alt-text="Screenshot of the Send a message option.":::
 
-4. Type a message. In this example, type *How can I help you today?* in the **Type your message** prompt. 
+4. Type a message. In this example, type *How can I help you today?* in the node's text field. 
 
     :::image type="content" source="media/nlu-authoring/nlu-quickstart-message-node.png" alt-text="Screenshot of the Message node.":::
 
@@ -103,27 +104,29 @@ Once you create a bot, you can immediately test the bot and try out different ph
 
 The **Test bot** pane shows how a bot conversation plays out at every step and you can fine-tune a topic directly within the **Power Virtual Agents (preview)** portal:
  
-1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the bottom of the side navigation menu. 
+1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the side navigation menu. 
 
     :::image type="content" source="media/nlu-authoring/nlu-quickstart-test-bot.png" alt-text="Screenshot of Test bot option.":::
 
 2. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to. For example, you could type *What is your return policy?*. 
  
-   The bot retrieves information from the website returns a response. The response provides a link to where it found that information and allows you to provide feedback.
+   The bot retrieves information from the website and returns a response. The response provides a link to where it found that information and allows you to provide feedback.
  
-4. (Optional) Try asking the bot about something you know is not on the website you specified, such as "Why is the sky blue"? Because the bot can't find a relevant bot topic or a relevant answer on the specified website it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
+4. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue?*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
 
     :::image type="content" source="media/nlu-authoring/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
  
 > [!NOTE]
 > After you test your bot, you can select the reset icon at the top of the **Test bot** pane to clear previous conversations. Resetting makes it easier to follow the flow of the current topic without getting confused by previous conversations.
-
-:::image type="content" source="media/nlu-authoring/nlu-quickstart-test-reset.png" alt-text="Screenshot of Test bot pane reset button that looks like a an arrow in a circle shap.":::
+>  
+> :::image type="content" source="media/nlu-authoring/nlu-quickstart-test-reset.png" alt-text="Screenshot of Test bot pane reset button that looks like a an arrow in a circle shap.":::
 
 You can return to the authoring canvas at any time to revise the conversation path. The **Test bot** pane automatically refreshes when you select **Save**. 
 
-## Learn more: Add features to further develop your bot 
+## Add features to further develop your bot 
 
-It's easy to take your bot's conversations up a notch by giving your bot a voice of its own. You can add images and video clips, as well as adaptive cards, entities, and variable expressions. See the [Key concepts - Enhanced authoring](advanced-fundamentals.md) for more details, or continue your bot-building journey by checking out the rest of the [Power Virtual Agents documentation](index.yml).
+It's easy to take your bot's conversations up a notch by giving your bot a voice of its own. You can add images and video clips, as well as adaptive cards, entities, and variable expressions. 
+
+See the [Key concepts - Enhanced authoring](advanced-fundamentals.md) for more details, or continue your bot-building journey by checking out the rest of the [Power Virtual Agents documentation](index.yml).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

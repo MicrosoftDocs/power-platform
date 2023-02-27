@@ -34,9 +34,9 @@ Now, before involving a live agent, the bot uses natural language processing to:
 
 
 ## Prerequisites
-- Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
-- You must be using the preview version of Power Virtual Agents, and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
+- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
 - You must enable the **Boost conversations** option for each bot.
+- Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
 
 ## Boost your bot's reach
 
@@ -50,7 +50,9 @@ Now, before involving a live agent, the bot uses natural language processing to:
 
 3. Click **Create**.
 
-3. After the bot is created, expand the **Settings** tab on left pane, then select **AI Capabilities**.
+After your bot is created and ready for you to use, it'll open to the '
+
+1. After the bot is created, expand the **Settings** tab on left pane, then select **AI Capabilities**.
 
 1. Under **Boost conversational coverage (preview)**, ensure that you've selected the checkbox for **Boost conversations**.
 
@@ -95,6 +97,9 @@ Quotas are default constraints applied to chatbots that limit how often messages
 
 During the preview, bots with **Boost conversations** enabled will have a limit on the amount of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas)
 
+### Pricing
+
+During the preview, the use of the boosted conversations capability is not billable and will follow the [usual quotas and limitations](requirements-quotas.md#quotas).
 
 
 ## AI response generation training, model, and usage notes

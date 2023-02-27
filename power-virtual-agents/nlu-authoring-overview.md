@@ -23,9 +23,7 @@ For example, if, during a conversation, a user asks a question for which the cha
 
 
 ## Prerequisites
-- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**.  
-  
-  Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
+- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
 
 
 ## Next steps
