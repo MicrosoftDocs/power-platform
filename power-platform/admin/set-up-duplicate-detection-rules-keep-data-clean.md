@@ -33,7 +33,7 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
 
 3. Select **Settings** > **Data management** > **Duplicate detection rules**.
 
-    :::image type="content" source="../media/dup-detection-rule.png" alt-text="Create or manage duplicate detection rule":::  
+    :::image type="content" source="media/dup-detection-rule.png" alt-text="Create or manage duplicate detection rule":::  
 
 4. To create a new duplicate detection rule, select **New**. Type a name and description.  
   
