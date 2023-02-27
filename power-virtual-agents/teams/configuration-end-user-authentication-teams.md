@@ -1,7 +1,7 @@
 ---
 title: "Configure user authentication in Microsoft Teams"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation in the Power Virtual Agents app in Microsoft Teams."
-keywords: "Authentication, IdP, PVA, AAD"
+keywords: "Authentication, IdP, PVA, AAD, Teams"
 ms.date: 9/22/2020
 
 ms.topic: article
