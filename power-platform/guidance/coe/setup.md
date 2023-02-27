@@ -73,22 +73,23 @@ Some processes part of the CoE Starter Kit send [Power Automate Approvals](/powe
 
 ## What data source should I use for my Power Platform inventory?
 
-At the heart of the CoE Starter Kit are processes that gather information about your tenants Power Platform inventory and adoption to provide a holistic overview and tenant-wide processes to manage, govern and nurture Power Platform adoption in your tenant.
+At the heart of the CoE Starter Kit are processes that gather information about your tenants Power Platform inventory to provide a holistic overview and tenant-wide processes to manage, govern and nurture Power Platform adoption in your tenant.
 
 The CoE Starter Kit offers two mechanisms to gather this data:
 
-- **Data Export (preview)**: You can export Power Platform inventory and usage data directly into Azure Data Lake Storage. Because the data is provided by the admin center, this is high in performance. Note, Data Export has to be configured in advance from the Power Platform Admin Center to use this option: [Set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant). This option requires an Azure Storage account, and is recommend for larger tenants with more than 10,000 apps or flows.
-- **Cloud flows**: Cloud flows use Power Platform admin connectors to query and crawl your tenant and store inventory and usage data in Dataverse tables. This method is suitable for small tenants but can cause performance issues in larger tenants. If you have more than 10,000 apps or flows or are currently hitting performance and throttling issues with this mechanism consider using Data Export instead.
+- **Data Export (preview)**: You can export Power Platform inventory and usage data directly into Azure Data Lake Storage using the [Data Export](/power-platform/admin/self-service-analytics) feature in the Power Platform Admin Center. Because the data is provided by the admin center, this is high in performance. Data Export has to be configured in advance from the Power Platform Admin Center to use this option: [Set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
+- **Cloud flows**: Cloud flows use Power Platform admin connectors to query and crawl your tenant and store inventory and usage data in Dataverse tables. This method is suitable for small tenants but can cause performance issues in larger tenants.
 
 ### Frequently asked questions
 
 #### What are the requirement for using Data Export with the CoE Starter Kit?
 
 You have to configure [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) in the Power Platform Admin Center first. This feature requires a Global Admin for initial setup, and an Azure Storage account to store data. Before you can set up Data Export, you also have to enable [tenant-level analytics](/power-platform/admin/tenant-level-analytics).
+In addition to the current requirements of needing an environment, you will also need a [Power BI Premium](/power-bi/enterprise/service-premium-features) per user or per capacity workspace.
 
 #### What are the license requirements and costs for using Data Export with the CoE Starter Kit?
 
-The identity setting up the CoE Starter Kit will need a Power Apps Per User, Power Automate Per User and Power BI Premium (per user or per capacity) license. You will also need a Azure Datalake Gen 2 Storage Account to receive data from the Data Export feature.
+The identity setting up the CoE Starter Kit will need a Power Apps Per User and Power Automate Per User access, and either a and Power BI Premium per user license or access to a Power BI Premium per capacity workspace. You will also need a Azure Datalake Gen 2 Storage Account to receive data from the Data Export feature.
 
 #### Why do you recommend moving from using cloud flows to retrieve inventory to using Data Export?
 
