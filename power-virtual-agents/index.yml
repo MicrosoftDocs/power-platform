@@ -28,14 +28,14 @@ highlightedContent:
       url: ./fundamentals-what-is-power-virtual-agents.md
 
     # Card
+    - title: Use GPT to build bots faster
+      itemType: concept
+      url: ./nlu-authoring-overview.md
+
+    # Card
     - title: What's new in Power Virtual Agents?
       itemType: whats-new
       url: https://go.microsoft.com/fwlink/?linkid=2082154
-
-    # Card
-    - title: "Power Virtual Agents videos"
-      itemType: video
-      url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
 
     # Card
     - title: "Power Virtual Agents Community"
@@ -43,9 +43,9 @@ highlightedContent:
       url: https://go.microsoft.com/fwlink/?linkid=2058639
 
     # Card
-    - title: Power Virtual Agents training
-      itemType: learn
-      url: /training/browse/?expanded=power-platform&products=power-virtual-agents
+    - title: "Power Virtual Agents videos"
+      itemType: video
+      url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
 
     # Card
     - title: Register for a free virtual Power Virtual Agents in a Day workshop
