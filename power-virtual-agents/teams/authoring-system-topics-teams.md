@@ -5,8 +5,8 @@ keywords: "PVA, Teams"
 ms.date: 04/20/2022
 
 ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iaanw
 manager: shellyha
 ms.reviewer: ggupta
 ms.custom: authoring, ceX
