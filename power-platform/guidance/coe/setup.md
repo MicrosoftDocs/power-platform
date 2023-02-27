@@ -84,16 +84,23 @@ The CoE Starter Kit offers two mechanisms to gather this data:
 
 #### What are the requirement for using Data Export with the CoE Starter Kit?
 
-You have to configure [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) in the Power Platform Admin Center first. This feature requires a Global Admin for initial setup, and an Azure Storage account to store data. Before you can set up Data Export, you also have to enable [tenant-level analytics](/power-platform/admin/tenant-level-analytics).
-In addition to the current requirements of needing an environment, you will also need a [Power BI Premium](/power-bi/enterprise/service-premium-features) per user or per capacity workspace.
+To receive the data, you have to configure [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) in the Power Platform Admin Center first. This feature requires a Global Admin for initial setup, and an Azure Storage account to store data. Before you can set up Data Export, you also have to enable [tenant-level analytics](/power-platform/admin/tenant-level-analytics).
+For the CoE Starter Kit capabilities, you will also need a [Power BI Premium](/power-bi/enterprise/service-premium-features) per user or per capacity workspace.
 
 #### What are the license requirements and costs for using Data Export with the CoE Starter Kit?
 
-The identity setting up the CoE Starter Kit will need a Power Apps Per User and Power Automate Per User access, and either a and Power BI Premium per user license or access to a Power BI Premium per capacity workspace. You will also need a Azure Datalake Gen 2 Storage Account to receive data from the Data Export feature.
+The identity setting up the CoE Starter Kit needs a Power Apps Per User and Power Automate Per User license, and either a Power BI Premium per user license or access to a Power BI Premium per capacity workspace. You will also need an Azure Datalake Gen 2 Storage Account to receive data from the Data Export feature.
+
+#### What permissions are required for the CoE Starter Kit to consume Data Export data?
+
+The identity setting up the CoE Starter Kit needs Storage Data Reader permissions to the Azure Storage account that receives data from the Data Export feature.
 
 #### Why do you recommend moving from using cloud flows to retrieve inventory to using Data Export?
 
-The cloud flows that sync inventory to Dataverse consume a high number of API calls, and can hit throttling and scale limits if you have a large number of Power Platform resources (environments, apps, flows) in your tenant. They work best for small to medium sized tenants that have less than 10,000 apps and flows. The Data Export feature uses Power BI and Power Platform dataflows which are powerful at transforming and handling large amounts of data. Using Data Export with the CoE Starter Kit will increase performance and scale.
+>[!NOTE]
+>The CoE Starter kit using Data Export data is currently in preview. We recommend you test the CoE Starter Kit with Data Export in a dedicated test environment before using this feature in production or upgrading your production environment.
+
+The cloud flows that sync inventory to Dataverse consume a high number of API calls, and can hit throttling and scale limits if you have a large number of Power Platform resources (environments, apps, flows) in your tenant. These cloud flows work best for small to medium sized tenants that have less than 10,000 apps and flows. The Data Export feature uses Power BI and Power Platform dataflows which are powerful at transforming and handling large amounts of data. Using Data Export with the CoE Starter Kit will increase performance and scale.
 
 #### Will the CoE Starter Kit still have inventory of resources not yet available in the Data Export feature?
 
@@ -104,7 +111,7 @@ Currently, the Data Export features provides inventory on environments, apps and
 There's two mechanisms the CoE Starter Kit uses to consume data from the Data Export feature:
 
 - [Power BI dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service) are used to transform the data for Power BI. These dataflows prepare all the data in the storage account ready for reporting. The Power BI dashboard is then based on the data prepared by the Power BI dataflows.
-- [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) are used to transform the data and write a small amount of data back to existing Dataverse tables used by the CoE Starter Kit apps and flows. These dataflows merge and summarize data so only data needed by the admin and governance processes of the CoE Starter Kit are written back to the Dataverse - for example, instead of storing the entire usage data in Dataverse, only the last launched date (single date) is stored in Dataverse.
+- [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) are used to transform the data and write a small amount of data back to existing Dataverse tables used by the CoE Starter Kit apps and flows. These dataflows merge and summarize data so only data needed by the admin and governance processes of the CoE Starter Kit are written back to the Dataverse. For example, instead of storing the entire usage data in Dataverse, only the last launched date of an app (single date) is stored in Dataverse.
 
 #### Can I migrate from using cloud flows to retrieve inventory to using Data Export?
 
@@ -115,7 +122,7 @@ Yes, this is a seamless process - use the [Setup Wizard](setup-core-components.m
 
 #### What will happen to my existing data when I upgrade?
 
-The CoE Starter Kits inventory is based on unique identifiers (GUIDs). App, flow, environment metadata is stored in Dataverse tables, and each app, flow and environment has a unique identifier that is used as the key to the row in the table. This GUID is the same if the inventory is retrieved via cloud flows and if the inventory is retrieved via Data Export. If you switch from using cloud flows to using Data Export, a
+The CoE Starter Kits inventory is based on unique identifiers (GUIDs). App, flow, environment metadata is stored in Dataverse tables, and each app, flow and environment has a unique identifier that is used as the key to the row in the table. This GUID is the same if the inventory is retrieved with cloud flows and if the inventory is retrieved with Data Export. If you switch from using cloud flows to using Data Export, the dataflows will recognize existing rows via their GUID and update those rows, and add new records if the GUID does not yet exist. There will not be a duplication of rows.
 
 #### What will happen to custom columns that I have created as part of customizations, if they are not part of data from datalake?
 
@@ -124,7 +131,7 @@ If you're only using the custom columns in apps and flows, there is no change re
 
 #### Will I see any data changes between what is coming from Data Export and what already exists?
 
-Data integrity between moving from cloud flows to retrieve inventory to using Data Export to retrieve inventory is kept via the unique identifiers (GUIDs) of each resource (enviornment, app, flow). The dataflows will recognize existing rows via their GUID and update those, and add new records if the GUID does not yet exist. There will not be a duplication of rows.
+Data integrity between moving from cloud flows to retrieve inventory to using Data Export to retrieve inventory is kept via the unique identifiers (GUIDs) of each resource (environment, app, flow). The dataflows will recognize existing rows via their GUID and update those, and add new records if the GUID does not yet exist. There will not be a duplication of rows.
 
 #### Will all apps and flows in the CoE Starter Kit continue to work (e.g. inactivity notifications, compliance process, identifying orphaned resources)
 
