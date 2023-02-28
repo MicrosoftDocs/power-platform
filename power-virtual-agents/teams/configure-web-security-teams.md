@@ -10,6 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: clmori
 ms.custom: configuration, ceX, teams
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

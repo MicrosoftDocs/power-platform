@@ -154,6 +154,7 @@ First, you need to configure where you're deploying your bot canvas.
                     window.WebChat.renderWebChat(
                         {
                             directLine: window.WebChat.createDirectLine({
+                                domain: `${directline}v3/directline`,
                                 token: conversationInfo.token,
                             }),
                             styleOptions

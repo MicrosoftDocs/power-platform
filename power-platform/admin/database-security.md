@@ -4,13 +4,13 @@ description: Configure user security in environment
 ms.subservice: admin
 ms.author: paulliew
 author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 contributors:
   - hamenon-ms 
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2022
+ms.date: 01/23/2022
 search.audienceType: 
   - admin
 search.app:
@@ -56,8 +56,8 @@ For users who make apps that connect to the database and need to create or updat
 | Security role  | Database privileges*  | Description |
 |---------|---------|---------|
 | Environment Maker     |  Customizations       | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data within an environment. More information: [Environments overview](./environments-overview.md) <br /> <br />Environment makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app)       |
-| System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](/dynamics365/customer-engagement/customize/privileges-required-customization)        |
-| System Customizer     | Create (self), Read (self), Write (self), Delete (self), Customizations         | Has full permission to customize the environment. However, users with this role can only view records for environment entities that they create. More information: [Privileges required for customization](/dynamics365/customer-engagement/customize/privileges-required-customization)        |
+| System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
+| System Customizer     | Create, Read, Write, Delete, Customizations         | Has full permission to customize the environment. Can view all custom table data in the environment. However, users with this role can only view rows (records) that they create in Account, Contact, Activity tables. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
 | Basic User   |  Read (self), Create (self), Write (self), Delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role) <br /><br />  **Note**: the Common Data Service User security role was renamed to Basic User. There is no action required - this is just a name changed and it doesn't impact the user privileges or role assignment.  If you have a Solution with the Common Data Service User security role, you can inadvertently update the security role name back to Common Data Service User when you import the Solution. Please update the Solution before re-importing.|
 | Service Reader | Read | Has full Read permission to all entities including custom entities. This is primarily used by backend service that requires reading all entities.    |
 | Service Writer | Create, Read, Write | Has full Create, Read, and Write permission to all entities including custom entities. This is primarily used by backend service that requires creating and updating records.    |

@@ -9,7 +9,7 @@ ms.author: iawilt
 ms.reviewer: digantak
 manager: shellyha
 ms.custom: customization, ceX, bap-template
-ms.collection: virtualagent
+ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ---
 

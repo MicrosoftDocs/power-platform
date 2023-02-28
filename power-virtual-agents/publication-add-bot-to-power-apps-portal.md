@@ -5,10 +5,11 @@ keywords: "Publish, channel, connector, sample code, developer, extensibility, P
 ms.date: 01/24/2022
 
 ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 manager: shellyha
 ms.custom: "publication, authoring, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

@@ -3,14 +3,15 @@ title: Ask a question (preview)
 description: Use a Question node to ask the user a question and store their response in a variable in Power Virtual Agents preview.
 keywords: "PVA"
 ms.date: 12/09/2022
+
 ms.topic: how-to
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
 ms.reviewer: gapretty
 manager: shellyha
 ms.custom: authoring, topics, message, question, bap-template
-ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Ask a question (preview)
@@ -36,7 +37,7 @@ Just like **Message** nodes, **Question** nodes can include images, videos, card
 
 1. In the **Enter a message** box, type the question you want to ask.
 
-1. Select the box under **Identify**, and then either create or select an entity to determine what the bot should listen for in the user's response. [Learn how to use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
+1. Select the box under **Identify**, then either create or select an entity to determine what the bot should listen for in the user's response. [Learn how to use entities in a conversation](../advanced-entities-slot-filling.md#use-entities-in-a-conversation).
 
 1. Depending which **Identify** option you selected, you may have more properties you need to set.
 
