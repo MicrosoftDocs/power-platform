@@ -29,7 +29,7 @@ highlightedContent:
 
     # Card
     - title: Use GPT to build bots faster
-      itemType: concept
+      itemType: whats-new
       url: ./nlu-authoring-overview.md
 
     # Card
