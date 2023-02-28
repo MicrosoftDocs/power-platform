@@ -318,6 +318,6 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
 [Troubleshooting Word templates](troubleshoot-word-templates-dynamics-365.md)
 
-[](../includes/disclaimer-ai-generated-description.md)
+[!INCLUDE[Disclaimer AI-generated description]](../includes/disclaimer-ai-generated-description.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
