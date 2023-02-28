@@ -8,9 +8,7 @@ ms.topic: how-to
 ms.date: 11/04/2022
 ms.custom: template-how-to
 ---
-# Run pipelines in Power Platform (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Run pipelines in Power Platform
 
 Pipelines automate solution deployments between Power Platform environments and facilitate healthy application management practices with minimal effort.
 
@@ -22,7 +20,7 @@ Pipelines automate solution deployments between Power Platform environments and 
 - You must have privileges to import solutions to the target environments associated with a pipeline.
 - The **Power Platform Pipelines** application must be installed in your pipeline host environment. More information: [Install the pipelines application in your host environment](set-up-pipelines.md#install-the-pipelines-application-in-your-host-environment)
 
-For more information about these prerequisites, go to [Set up pipelines (preview)](set-up-pipelines.md).
+For more information about these prerequisites, go to [Set up pipelines](set-up-pipelines.md).
 
 ## Run a pipeline
 

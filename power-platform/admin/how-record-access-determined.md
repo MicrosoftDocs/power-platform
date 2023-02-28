@@ -6,8 +6,8 @@ ms.topic: conceptual
 ms.date: 11/30/2021
 author: jimholtz
 ms.subservice: admin
-ms.author: jimholtz
-ms.reviewer: jimholtz
+ms.author: KumarVivek
+ms.reviewer: KumarVivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.app:
 
 # How access to a record is determined
 
-There are different ways to obtain access to a particular record in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). To be able to do a certain action with an table (Create, Read, Write, Delete, Append, Append to, Assign, Share), two major checks are done: privilege and access checks. 
+There are different ways to obtain access to a particular record in Dataverse. To be able to do a certain action with a table (Create, Read, Write, Delete, Append, Append to, Assign, Share), two major checks are done: privilege and access checks. 
  
 ## Privilege check
  
@@ -70,7 +70,7 @@ A user can have access to a particular record because either they own the record
  
 Users can have access to perform an action on a record because of the security roles they hold. In this case, the access level of the privilege a role has is taken into account. There are four major scenarios that correspond to the different access levels that are not User, which is covered in the ownership case.
 
-|  |  |
+| &nbsp;  | &nbsp;  |
 |---------|---------|
 | **The record belongs to the user or to a team the user is a member of**     | In this case, the user must either have or belong to a team that has a role assigned with at least User-level access privilege. <sup>*</sup>See **Note** below.    |
 |**The record belongs to the same business unit as the user**  | In this case, the user must either have or belong to a team that has a role assigned with at least Business Unit-level access privilege.         |
@@ -89,7 +89,7 @@ Users can have access to perform an action on a record because of the security r
 Another way to get access to a record without having an explicit role assigned that allows this is through shared access. Shared access is obtained when a record is shared with a user, team, or organization by a user that has appropriate share rights. There are five ways in which a user can have shared access to a record.
 
 
-|  | |
+|&nbsp;   |&nbsp;  |
 |---------|---------|
 |**The record was shared with the user directly**    | If a record is shared with the user to perform a certain action, then the user would have access to do that action provided the user passed the privilege check.        |
 |**A related record was shared with the user directly**     |  The following scenario takes place when a record A is related to a record B. If the user has shared access to perform a certain action on the record A, it would then have inherited access to perform the same action on the record B, provided the user passed the privilege check.       |
