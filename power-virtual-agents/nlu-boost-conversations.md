@@ -34,19 +34,24 @@ Now, before involving a live agent, the bot uses natural language processing to:
 
 
 ## Prerequisites
-- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
+- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
+
+    :::image type="content" source="media/nlu-authoring/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
+
 - You must enable the **Boost conversations** option for each bot.
+
 - Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
 
 ## Boost your bot's reach
 
 1. Create a preview bot. Select **Try the unified canvas (preview)**. Preview chatbots have **(preview)** added to their name in the list of bots.
-
-    :::image type="content" source="media/nlu-authoring/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
     
 1. Enter a name for the bot.
 
 3. Provide a website you'd like the bot to use for generating answers.
+
+
+    :::image type="content" source="media/nlu-authoring/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
 3. Click **Create**.
 
