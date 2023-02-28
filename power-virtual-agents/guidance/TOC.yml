@@ -1,8 +1,34 @@
-- name: Planning a Power Virtual Agents project
-  href: introduction.md
-- name: Group example
+- name: Power Virtual Agents Guidance
+  href: index.yml
+- name: Building chatbots
   items:
-    - name: Topic authoring best practices
-      href: topic-authoring-best-practices.md
-    - name: Another page that doesn't exist
-      href: /
+    - name: Topics best practices
+      items:
+      - name: Topics in Power Virtual Agents
+        href: topics-in-pva.md
+      - name: Triggering topics
+        href: triggering-topics.md
+      - name: Defining chatbot topics
+        href: defining-chatbot-topics.md
+      - name: Topic authoring best practices
+        href: topic-authoring-best-practices.md
+      - name: Leveraging the Fallback topic
+        href: fallback-topic.md
+- name: Measuring and improving chatbots
+  items:
+    - name: Deflection optimization
+      items:
+      - name: Deflection overview
+        href: deflection-overview.md
+      - name: Topic escalation analysis
+        href: topic-escalation-analysis.md        
+      - name: Topic enrichment analysis  
+        href: topic-enrichment-analysis.md                      
+      - name: Topic confusion analysis
+        href: topic-confusion-analysis.md
+      - name: Alternate escalation paths
+        href: alternate-escalation-paths.md        
+      - name: Transcripts analysis
+        href: transcripts-analysis.md
+    - name: Custom analytics strategy
+      href: custom-analytics-strategy.md
