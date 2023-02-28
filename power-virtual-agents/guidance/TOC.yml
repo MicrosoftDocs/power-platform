@@ -21,14 +21,14 @@
       - name: Deflection overview
         href: deflection-overview.md
       - name: Topic escalation analysis
-        href: topic-escalation-analysis.md        
+        href: deflection-topic-escalation-analysis.md   
       - name: Topic enrichment analysis  
-        href: topic-enrichment-analysis.md                      
+        href: deflection-topic-enrichment-analysis.md                
       - name: Topic confusion analysis
-        href: topic-confusion-analysis.md
+        href: deflection-topic-confusion-analysis.md
       - name: Alternate escalation paths
-        href: alternate-escalation-paths.md        
+        href: deflection-alternate-escalation-paths.md    
       - name: Transcripts analysis
-        href: transcripts-analysis.md
+        href: deflection-transcripts-analysis.md
     - name: Custom analytics strategy
       href: custom-analytics-strategy.md
