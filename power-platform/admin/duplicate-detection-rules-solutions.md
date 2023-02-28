@@ -66,7 +66,7 @@ To create a duplicate detection rule, you must create a separate solution for th
 
     1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 
-    1. Select your environment where you want to create the rule, and select **Settings** > **Data Management** > **Duplicate Detection Rules**.
+    1. Select your environment where you want to create the rule, and select **Settings** > **Data management** > **Duplicate detection rules**.
 
         :::image type="content" source="media/dup-detection-rule.png" alt-text="Create or manage duplicate detection rule":::
 
@@ -98,7 +98,7 @@ To create a duplicate detection rule, you must create a separate solution for th
 
     1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 
-    1. Select your environment where you imported the solution, and select **Settings** > **Data Management** > **Duplicate Detection Rules**.
+    1. Select your environment where you imported the solution, and select **Settings** > **Data management** > **Duplicate detection rules**.
 
     1. You will see your rule in unpublished state. Open the rule definition to verify if it contains all the configurations and conditions that you defined earlier. Publish the rule to use it.
 
@@ -110,7 +110,7 @@ The process is similar to creating of the rule where you update the rule definit
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 
-1. Select your source environment where you originally created the rule, and select **Settings** > **Data Management** > **Duplicate Detection Rules**.
+1. Select your source environment where you originally created the rule, and select **Settings** > **Data management** > **Duplicate detection rules**.
 
 1. Open the duplicate detection rule, delete the rule conditions as required, and save the rule.
 
@@ -132,7 +132,7 @@ The process is similar to creating of the rule where you update the rule definit
 
     1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 
-    1. Select your environment where you imported the solution, and select **Settings** > **Data Management** > **Duplicate Detection Rules**.
+    1. Select your environment where you imported the solution, and select **Settings** > **Data management** > **Duplicate detection rules**.
 
     1. You will see your rule in unpublished state. Open the rule definition to verify if it contains all the changes you made earlier. Publish the rule to use it.
 
