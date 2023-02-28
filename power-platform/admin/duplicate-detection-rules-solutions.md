@@ -58,4 +58,46 @@ More information about solutions: [Solution concepts](/power-platform/alm/soluti
 
 - The solution export and import is possible only across environments having the same language.
 
+## Create a duplicate detection rule using solution
+
+To create a duplicate detection rule, you must create a separate solution for the rule and maintain the solution for the rule related changes.
+
+1. Create a duplicate detection rule in your environment.
+
+    1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
+
+    1. Select your environment where you want to create the rule, and select **Settings** > **Data Management** > **Duplicate Detection Rules**.
+
+    1. Follow steps 4-7 in the [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md) article to create a duplicate detection rule.
+
+1. Create a solution and add the rule to the solution.
+
+    1. Sign in to [Power Apps](https://make.powerapps.com/) and select the environment from the environment picker in the top-right where you created your duplicate detection rule.
+
+    1. In the left navigation pane, select **Solutions**, and then select **New solution**. For details about creating a solution, go to [Create a solution](/power-apps/maker/data-platform/create-solution).
+
+    1. After you’ve created your solution, add the duplicate detection rule you created earlier to the solution. With the solution open, select **Add existing** > **More** > **Other** > **Duplicate Detection Rule**.
+
+    1. From the list of available rules, select the rule you want to add to the solution, and select **Add**.
+
+    1. Select the rule you added, and then select **Advanced** > **Add required objects**.
+
+        :::image type="content" source="media/add-req-obj.png" alt-text="Add required objects for the rule":::
+
+    1. Select **Publish all customizations** to publish the solution.
+
+1. Select the solution and export it as a **managed** solution. More information: [Export solutions](/power-apps/maker/data-platform/export-solutions).
+
+1. In Power Apps, select the target environment from the environment picker on the top right where you want to import the solution to create the duplicate detection rule.
+
+1. In the left navigation pane, select **Solutions**, and then select **Import solution**. More information: [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions).
+
+1. Verify that the rules are created in the target environment.
+
+    1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
+
+    1. Select your environment where you imported the solution, and select **Settings** > **Data Management** > **Duplicate Detection Rules**.
+
+    1. You will see your rule in unpublished state. Open the rule definition to verify if it contains all the configurations and conditions that you defined earlier. Publish the rule to use it.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
