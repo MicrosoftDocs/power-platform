@@ -24,13 +24,13 @@ PVA provides some advanced AI capabilities out of box to identify the list of ne
 ![OOB enrichment analysis](./media/introduction/df-oob-enrichment.png)
  
 Other approach topic enrichment exercise (COMING SOON!)
-•	Install the custom analytics for PVA (https://aka.ms/PVAAnalytics) that includes a "deflection analysis” page.
-•	Analyze a representative set of conversation transcripts for this exercise.
-•	Under the deflection analysis report, you will find charts of session clusters with word cloud based on user queries and their occurrences. This will contain the following info:
-    o	Word clouds of user queries similar to existing topics
-    o	Word clouds of user queries for new topics  
+1. Install the custom analytics for PVA (https://aka.ms/PVAAnalytics) that includes a "deflection analysis” page.
+2. Analyze a representative set of conversation transcripts for this exercise.
+3. Under the deflection analysis report, you will find charts of session clusters with word cloud based on user queries and their occurrences. This will contain the following info:
+    1. Word clouds of user queries similar to existing topics
+    2. Word clouds of user queries for new topics  
 
-•	Label and organize the top list of user queries you want to address for topic enrichment in an Excel sheet based on the word clouds.
-•	Rephrase the “user queries” to create topic trigger phrases.
-•	For the trigger phrases from "similar to existing topics" bucket , add them to the appropriate existing topics in the bot. This will improve the triggering of the topic and increase the deflection.
-•	For the trigger phrases from "Newly suggested topics" bucket, create new topics and add the trigger phrases to those topics. This will address the top user queries missed by the bot are now handled by the bot through these new topics, hence improving the deflection.
+3. Label and organize the top list of user queries you want to address for topic enrichment in an Excel sheet based on the word clouds.
+4. Rephrase the “user queries” to create topic trigger phrases.
+5. For the trigger phrases from "similar to existing topics" bucket , add them to the appropriate existing topics in the bot. This will improve the triggering of the topic and increase the deflection.
+6. For the trigger phrases from "Newly suggested topics" bucket, create new topics and add the trigger phrases to those topics. This will address the top user queries missed by the bot are now handled by the bot through these new topics, hence improving the deflection.
