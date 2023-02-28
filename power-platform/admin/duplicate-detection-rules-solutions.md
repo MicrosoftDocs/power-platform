@@ -102,21 +102,19 @@ To create a duplicate detection rule, you must create a separate solution for th
 
     1. You will see your rule in unpublished state. Open the rule definition to verify if it contains all the configurations and conditions that you defined earlier. Publish the rule to use it.
 
-## Delete existing rule conditions using solution
+## Add or delete existing rule conditions using solution
 
-To delete existing duplicate detection rule conditions through importing a solution, you must use the same solution that was used in for creating the duplicate detection rule.
-
-The process is similar to creating of the rule where you update the rule definition in the solution in the source environment, and then import it in the target environment to update the rule conditions.
+To add new rule conditions or delete existing rule conditions by importing a solution, you must use the same solution that was used for creating the duplicate detection rule.
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 
 1. Select your source environment where you originally created the rule, and select **Settings** > **Data management** > **Duplicate detection rules**.
 
-1. Open the duplicate detection rule, delete the rule conditions as required, and save the rule.
+1. Open the duplicate detection rule, and add new rule conditions or delete existing rule conditions as required. Save the rule.
 
-1. Sign in to [Power Apps](https://make.powerapps.com/) and select the environment from the environment picker in the top-right where you edited your duplicate detection rule.
+1. Sign in to [Power Apps](https://make.powerapps.com/) and select the source environment from the environment picker in the top-right.
 
-1. In the left navigation pane, select **Solutions**, and then select your solution that contains the duplicate detection rule.
+1. In the left navigation pane, select **Solutions**, and then select your solution that contains the duplicate detection rule you edited.
 
 1. Select the rule you edited, and then select **Advanced** > **Add required objects**.
 
@@ -134,6 +132,6 @@ The process is similar to creating of the rule where you update the rule definit
 
     1. Select your environment where you imported the solution, and select **Settings** > **Data management** > **Duplicate detection rules**.
 
-    1. You will see your rule in unpublished state. Open the rule definition to verify if it contains all the changes you made earlier. Publish the rule to use it.
+    1. You will see your rule in unpublished state. Open the rule definition to verify if it contains all the rule condition changes you made earlier. Publish the rule to use it.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
