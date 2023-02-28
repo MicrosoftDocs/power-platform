@@ -12,7 +12,7 @@
   items:
     - name: Automated authoring overview (preview)
       href: nlu-authoring-overview.md
-    - name: Automated authoring quickstart guide (preview)
+    - name: Boost conversations quickstart guide (preview)
       href: nlu-authoring-quickstart.md
     - name: Boost conversations (preview)
       href: nlu-boost-conversations.md
