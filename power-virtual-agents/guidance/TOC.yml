@@ -2,7 +2,7 @@
   href: introduction.md
 - name: Group example
   items:
-    - name: A page that doesn't exist
-      href: /
+    - name: Topic authoring best practices
+      href: topic-authoring-best-practices.md
     - name: Another page that doesn't exist
       href: /
