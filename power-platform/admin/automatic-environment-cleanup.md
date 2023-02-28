@@ -1,12 +1,12 @@
 ---
 title: "Automatic cleanup of inactive environments"
 description: "Learn about the automatic process to identify and disable environments with an inactive subscription, and the actions you can take to prevent deletion."
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/30/2022
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 search.audienceType: 
   - admin
 search.app:
