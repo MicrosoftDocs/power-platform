@@ -30,7 +30,7 @@ This topic discusses the contents of the data exported from Power Platform to Az
 
 # Structure of the data output
 
-When you export Power Apps and Power Automate usage data to your Data Lake Storage, self-service analytics makes the data available in a [Common Data Model](/common-data-model/) schema format. This Common Data Model&ndash;based metadata makes it possible for you to share your data across applications and business processes, such as Power Apps, Power Automate, Power BI, Dynamics 365, and Azure.
+When you export Power Apps and Power Automate inventory and usage data to your Data Lake Storage, self-service analytics makes the data available in a [Common Data Model](/common-data-model/) schema format. This Common Data Model&ndash;based metadata makes it possible for you to share your data across applications and business processes, such as Power Apps, Power Automate, Power BI, Dynamics 365, and Azure.
 
 The data export file includes:  
 
