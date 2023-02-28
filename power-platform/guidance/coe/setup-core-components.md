@@ -247,6 +247,14 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Select **Endpoints**.
 1. Copy the Data Lake Storage URL.
 
+### Confirm Storage Account permission
+
+1. Navigate to [portal.azure.com].
+1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
+1. Select **Access Control (IAM)**.
+1. Select **View my access**
+1. Confirm you have the Storage Blob Data Reader role assigned.
+
 ### Copy Environment Web API endpoint
 
 1. Navigate to [make.powerapps.com](https://make.powerapps.com).
