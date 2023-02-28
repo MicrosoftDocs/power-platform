@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Now, Today, IsToday, UTCNow, UTCToday, IsUTCToday functions in Power Apps
