@@ -41,7 +41,7 @@ To determine which license a user has, sign in to the [Microsoft 365 admin cente
 
 To create an environment, all the following must be true:
 
-1. The user has a license (Yes below) that allows environment creation. This requirement is waived for Global admins and Power Platform admins.
+1. The user has a license (Yes below) that allows environment creation. This requirement is waived for Global admins and Power Platform admins except for trial (standard) environments; see #2 later.
 
    | License | Trial | Production | Developer |
    | --- | --- | --- | --- |
@@ -59,9 +59,9 @@ To create an environment, all the following must be true:
 
 2. The tenant (or user in the case of email trials) must have the following:
 
-   - For production and sandbox environments, the tenant must have at least 1GB of database storage capacity available.
-   - For trial (subscription-based) environments, each offer-based trial (also known as "admin trial") subscription entitles the tenant to three subscription-based trial environments. Only tenant-level admins are able to provision trial (subscription-based) environments.
-   - For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments (refer to the table above). This applies to tenant-level admins, as well. 
+   1. For production and sandbox environments, the tenant must have at least 1GB of database storage capacity available.
+   1. For trial (subscription-based) environments, each offer-based trial (also known as "admin trial") subscription entitles the tenant to three subscription-based trial environments. Only tenant-level admins are able to provision trial (subscription-based) environments.
+   1. For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments (refer to the table above). This applies to tenant-level admins, as well. 
    
    Users wanting to create a standard trial can get the necessary license for free by signing up for a Power Apps trial via one of these paths:
 
