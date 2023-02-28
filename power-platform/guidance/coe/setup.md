@@ -37,9 +37,9 @@ The CoE Starter Kit requires access to your tenant's Power Platform environments
 - The identity must be email-enabled.
 - If you'd like to collect telemetry information, such as app launches and unique users per app, you must be granted access to the Audit Log and work with a Global Admin who has access to [Microsoft 365 audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log) to complete the setup.
 
-These roles and licenses must be available to this user continuously; if admin access is granted only temporarily via [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management), this won't be sufficient to run the CoE Starter Kit.
+These roles and licenses must be available to this user continuously; if admin access is granted only temporarily via [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management), this won't be sufficient to run the CoE Starter Kit. The CoE Starter Kit works by using admin connectors in cloud flows (for example, [Power Apps for Admins](/connectors/powerappsforadmins/) to query your tenant on a daily basis and check for new and updated Power Platform resources. These connectors require to be run by an account that has Power Platform Admin access to retrieve the inventory of all environments - a role with lesser privileges would not see all resources in the inventory. The flows using these connectors run on a schedule and on event-based triggers and can take a long time to run. Therefore it's not possible to use an identity that has time-based access via PIM to run these flows, as if the identity running the flows loses access whilst the flows run, not all the inventory would be retrieved.
 
-Multi-factor authentication can be used for the account setting up the CoE Starter Kit, if **MaxAgeMultiFactor** is set to **Until-Revoked** instead of a fixed time. Learn more: [Conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
+Multi-factor authentication can be used for the account setting up the CoE Starter Kit, if **MaxAgeMultiFactor** is set to **Until-Revoked** instead of a fixed time. This ensures that Flow connections keep working, and is a based on the recommended settings for using MFA with Power Automate. Learn more: [Conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
 
 Additionally, if you'd like to share the [Power BI report](power-bi.md) that's part of the CoE Starter Kit, this identity needs to have the Power BI Pro license.  
 
@@ -77,8 +77,8 @@ At the heart of the CoE Starter Kit are processes that gather information about 
 
 The CoE Starter Kit offers two mechanisms to gather this data:
 
-- **Data Export (preview)**: You can export Power Platform inventory and usage data directly into Azure Data Lake Storage using the [Data Export](/power-platform/admin/self-service-analytics) feature in the Power Platform Admin Center. Because the data is provided by the admin center, this is high in performance. Data Export has to be configured in advance from the Power Platform Admin Center to use this option: [Set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
-- **Cloud flows**: Cloud flows use Power Platform admin connectors to query and crawl your tenant and store inventory and usage data in Dataverse tables. This method is suitable for small tenants but can cause performance issues in larger tenants.
+- **Data Export (preview)**: You can export Power Platform inventory and usage data directly into Azure Data Lake Storage using the [Data Export](/power-platform/admin/self-service-analytics) feature in the Power Platform Admin Center. Because the data is provided by the admin center, this is high in performance. Data Export has to be configured in advance from the Power Platform Admin Center to use this option: [Set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant). The CoE Starter Kit using Data Export for inventory is currently in preview, we recommend testing it in a dedicated test environment before using it in production.
+- **Cloud flows**: Cloud flows use Power Platform admin connectors to query and crawl your tenant and store inventory and usage data in Dataverse tables. This method is suitable for small to medium sized tenants but can cause performance issues in tenants where Power Platform inventory exceeds 10,000 objects (combined number of environments, apps, flows).
 
 ### Frequently asked questions
 
@@ -89,16 +89,16 @@ For the CoE Starter Kit capabilities, you will also need a [Power BI Premium](/p
 
 #### What are the license requirements and costs for using Data Export with the CoE Starter Kit?
 
-The identity setting up the CoE Starter Kit needs a Power Apps Per User and Power Automate Per User license, and either a Power BI Premium per user license or access to a Power BI Premium per capacity workspace. You will also need an Azure Datalake Gen 2 Storage Account to receive data from the Data Export feature.
+The identity setting up the CoE Starter Kit needs a Power Apps Per User and Power Automate Per User license, and either a Power BI Premium per user license or access to a Power BI Premium per capacity workspace. You will also need an [Azure Datalake Gen 2 Storage Account](/pricing/details/storage/data-lake/) to receive data from the Data Export feature.
 
 #### What permissions are required for the CoE Starter Kit to consume Data Export data?
 
-The identity setting up the CoE Starter Kit needs Storage Data Reader permissions to the Azure Storage account that receives data from the Data Export feature.
+The identity setting up the CoE Starter Kit needs Storage Data Reader permissions to the Azure Storage account that receives data from the Data Export feature. Learn more: [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access?tabs=portal)
 
 #### Why do you recommend moving from using cloud flows to retrieve inventory to using Data Export?
 
 >[!NOTE]
->The CoE Starter kit using Data Export data is currently in preview. We recommend you test the CoE Starter Kit with Data Export in a dedicated test environment before using this feature in production or upgrading your production environment.
+>The CoE Starter kit using Data Export data is currently in preview. We recommend you test the CoE Starter Kit with Data Export in a dedicated test environment before using this feature in production or upgrading your production environment. If you experience issues with the CoE Starter Kit using Data Export, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with using cloud flows to gather inventory.
 
 The cloud flows that sync inventory to Dataverse consume a high number of API calls, and can hit throttling and scale limits if you have a large number of Power Platform resources (environments, apps, flows) in your tenant. These cloud flows work best for small to medium sized tenants that have less than 10,000 apps and flows. The Data Export feature uses Power BI and Power Platform dataflows which are powerful at transforming and handling large amounts of data. Using Data Export with the CoE Starter Kit will increase performance and scale.
 
@@ -118,7 +118,7 @@ There's two mechanisms the CoE Starter Kit uses to consume data from the Data Ex
 Yes, this is a seamless process - use the [Setup Wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to change your data source for the CoE Starter Kit to Data Export and continue configuring the inventory components using the Setup Wizard.
 
 >[!NOTE]
->The CoE Starter kit using Data Export data is currently in preview. We recommend you test the CoE Starter Kit with Data Export in a dedicated test environment before using this feature in production or upgrading your production environment.
+>The CoE Starter kit using Data Export data is currently in preview. We recommend you test the CoE Starter Kit with Data Export in a dedicated test environment before using this feature in production or upgrading your production environment. If you experience issues with the CoE Starter Kit using Data Export, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with using cloud flows to gather inventory.
 
 #### What will happen to my existing data when I upgrade?
 
@@ -133,12 +133,16 @@ If you're only using the custom columns in apps and flows, there is no change re
 
 Data integrity between moving from cloud flows to retrieve inventory to using Data Export to retrieve inventory is kept via the unique identifiers (GUIDs) of each resource (environment, app, flow). The dataflows will recognize existing rows via their GUID and update those, and add new records if the GUID does not yet exist. There will not be a duplication of rows.
 
-#### Will all apps and flows in the CoE Starter Kit continue to work (e.g. inactivity notifications, compliance process, identifying orphaned resources)
+#### Will all apps and flows in the CoE Starter Kit continue to work (e.g. inactivity notifications, compliance process, identifying orphaned resources)?
 
 Yes, there will be no change in functionality.
 
 >[!IMPORTANT]
 >If you're using Data Export as a mechanism to retrieve inventory and telemetry, [set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) and only proceed once you see inventory data files in your storage account. This can take up to 5 days after initial configuration.
+
+#### I want to try out this feature, but have additional questions or have found a bug
+
+If you have additional questions about the CoE Starter Kit using Data Export, please [raise them on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION). If you have tried out the CoE Starter Kit using Data Export and found a bug, please [raise an issue on GitHub](https://aka.ms/coe-starter-kit-issues).
 
 ## Plan your upgrade strategy
 
