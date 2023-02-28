@@ -68,6 +68,8 @@ To create a duplicate detection rule, you must create a separate solution for th
 
     1. Select your environment where you want to create the rule, and select **Settings** > **Data Management** > **Duplicate Detection Rules**.
 
+        :::image type="content" source="media/dup-detection-rule.png" alt-text="Create or manage duplicate detection rule":::
+
     1. Follow steps 4-7 in the [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md) article to create a duplicate detection rule.
 
 1. Create a solution and add the rule to the solution.
