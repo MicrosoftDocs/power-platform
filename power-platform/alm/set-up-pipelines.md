@@ -1,16 +1,14 @@
 ---
-title: Set up pipelines in Power Platform (preview)
+title: Set up pipelines in Power Platform
 description: Learn how to create, configure, share, and manage Power Platform pipelines.
 author: caburk
 ms.author: matp
 ms.service: powerapps
 ms.topic: how-to
-ms.date: 01/23/2023
+ms.date: 02/28/2023
 ms.custom: template-how-to
 ---
-# Set up pipelines in Power Platform (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Set up pipelines in Power Platform
 
 Create and run pipelines to easily deploy solutions to environments.
 
@@ -28,8 +26,7 @@ Power Platform administrators can create one or more pipelines, associate any nu
 
 > [!IMPORTANT]
 >
-> - Use of development and target environments that aren't Managed Environments isn't blocked during pipelines preview.
-> - Managed environment enforcement is anticipated for pipelines upon general availability (GA). As a result, any pre-existing pipelines may no longer function until enabled as a managed environment. 
+> - Managed environment enforcement is enabled for pipelines upon general availability (GA). As a result, any pre-existing pipelines during preview may no longer function until enabled as a managed environment.
 > - End users within any production environment(s) linked to pipelines will require a standalone license for either Power Apps, Power Automate, or Dynamics 365. Makers generally won't require a standalone license unless they're also an end user.
 
 #### Choose environments for pipelines

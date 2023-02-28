@@ -63,7 +63,7 @@
       items:
         - name: Manage solutions using PowerShell
           href: powershell-api.md
-        - name: Deploy solutions using pipelines (preview)
+        - name: Deploy solutions using pipelines
           items:
             - name: What are pipelines?
               href: pipelines.md
