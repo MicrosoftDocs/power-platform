@@ -6,8 +6,8 @@ ms.topic: conceptual
 ms.date: 11/30/2021
 author: jimholtz
 ms.subservice: admin
-ms.author: jimholtz
-ms.reviewer: jimholtz
+ms.author: KumarVivek
+ms.reviewer: KumarVivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.app:
 
 # How access to a record is determined
 
-There are different ways to obtain access to a particular record in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). To be able to do a certain action with an table (Create, Read, Write, Delete, Append, Append to, Assign, Share), two major checks are done: privilege and access checks. 
+There are different ways to obtain access to a particular record in Dataverse. To be able to do a certain action with a table (Create, Read, Write, Delete, Append, Append to, Assign, Share), two major checks are done: privilege and access checks. 
  
 ## Privilege check
  
