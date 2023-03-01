@@ -1,13 +1,16 @@
 ---
+title: Troubleshoot error codes (preview)
+description: Troubleshoot error responses from your bot in Power Virtual Agents preview.
+ms.date: 12/07/2022
 
-title: "Troubleshoot error codes (preview)"
-description: "Troubleshoot error responses from your bot in Power Virtual Agents preview."
-author: v-alarioza
-ms.author: v-alarioza
 ms.topic: troubleshooting
-ms.date: 10/10/2022
-ms.reviewer: mvakoc
+author: iaanw
+ms.author: iawilt
 manager: shellyha
+ms.reviewer: mvakoc
+ms.service: power-virtual-agents
+ms.custom: bap-template
+
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
 
@@ -15,15 +18,15 @@ manager: shellyha
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-When a bot encounters a problem during a conversation, it will send an error response.
+When a bot encounters a problem during a conversation, it sends an error response.
 
-If you're a bot user, the response will contain an **error code** for the specific problem that was encountered which should be given to your administrator.
+If you're a bot user, the response contains an error code that identifies the problem. You should give this error code to your administrator.
 
-:::image type="content" source="media/error-codes/c2-error.png" alt-text="Bot error message displayed to users.":::
+:::image type="content" source="media/error-codes/c2-error.png" alt-text="Screenshot of a bot error message displayed to users.":::
 
-If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.md), in addition to the error code, you'll also see an **error message** that gives more context about the problem.
+If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.md), the bot's response includes the error code and an error message that gives more context about the problem.
 
-:::image type="content" source="media/error-codes/c1-error.png" alt-text="Bot error message displayed to bot makers.":::
+:::image type="content" source="media/error-codes/c1-error.png" alt-text="Screenshot of a bot error message displayed to bot makers.":::
 
 Errors may also appear in the [Topic Checker](authoring-topic-status.md#topic-errors), where you can easily locate and fix them.
 
@@ -54,13 +57,13 @@ Errors may also appear in the [Topic Checker](authoring-topic-status.md#topic-er
 
 **Error message:** This error produces dynamic messages based on the context of the error.
 
-**Resolution:** This is a catch-all error for various problems related to your bot's content. Refer to the error message for more details.
+**Resolution:** This is a catch-all error for problems related to your bot's content. Refer to the error message for more details.
 
-Common problems include, but aren't limited to:
+Common problems include:
 
-- A node missing required properties.
-- Invalid YAML added with the [code editor](authoring-create-edit-topics.md).
-- An error in a [Power Fx formula](advanced-power-fx.md).
+- A node is missing required properties.
+- Invalid YAML was added with the [code editor](authoring-create-edit-topics.md).
+- A [Power Fx formula](advanced-power-fx.md) contains an error.
 
 ### DataLossPreventionViolation
 
@@ -69,16 +72,16 @@ Common problems include, but aren't limited to:
 
 **Resolution:**
 
-- Your environment's data loss prevention (DLP) policies requires that user's sign in. To learn how to require users to sign in, see [Configure user authentication](advanced-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
-- One or more connectors used in the bot are not in the same data group. To learn more about connectors, see [Power Virtual Agents connectors](../admin-data-loss-prevention.md#power-virtual-agents-connectors).
-- One or more connectors used in the bot are blocked by the tenant administrator.
+- Your environment's data loss prevention (DLP) policies require that users sign in. See [Configure user authentication](advanced-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
+- One or more connectors that are used in the bot aren't in the same data group. See [Power Virtual Agents connectors](../admin-data-loss-prevention.md#power-virtual-agents-connectors).
+- One or more connectors that are used in the bot are blocked by the tenant administrator.
 
 ### FlowActionException
 
 **Error messages:**
 
 - "No output was received from flow {FlowName} ({FlowId}), even though output was expected as per the bot definition."
-- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the response data. Please refresh the flow, or ensure the flow returns this value."
+- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the response data. Refresh the flow, or ensure the flow returns this value."
 - "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the output schema. Please refresh the flow."
 
 **Resolution:** [Check the flow for errors](/power-automate/error-checker).
@@ -110,13 +113,13 @@ Common problems include, but aren't limited to:
 
 **Error message:** "Unable to retrieve the latest published version of the bot."
 
-**Resolution:** To use this bot, [publish it in Power Virtual Agents](publication-fundamentals-publish-channels.md).  
+**Resolution:** [Publish the bot](publication-fundamentals-publish-channels.md).  
 
 ### RedirectToDisabledDialog
 
-**Error message:** "The Dialog with Id {DialogId} is disabled in the definition. Please Enable the Dialog before using it."
+**Error message:** "The Dialog with Id {DialogId} is disabled in the definition. Please enable the Dialog before using it."
 
-**Resolution:** [Re-enabled the topic](authoring-topic-status.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-a-node).  
+**Resolution:** [Re-enable the topic](authoring-topic-status.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-a-node).  
 
 ### RedirectToNonExistentDialog
 
@@ -128,4 +131,4 @@ Common problems include, but aren't limited to:
 
 **Error message:** This error doesn't produce an error message
 
-**Resolution:** Contact customer support for more details.
+**Resolution:** [Contact customer support](../fundamentals-support.md) for more details.

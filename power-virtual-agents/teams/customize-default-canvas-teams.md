@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "customization, ceX, teams"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

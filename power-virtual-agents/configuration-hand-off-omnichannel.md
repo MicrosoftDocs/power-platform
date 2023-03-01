@@ -3,11 +3,13 @@ title: Configure hand-off to Dynamics 365 Customer Service
 description: Escalate bot conversations to live agents using omnichannel engagement capabilities of Dynamics 365 Customer Service.
 keywords: "PVA"
 ms.date: 12/05/2022
+
 ms.topic: article
 author: iaanw  
 ms.author: iawilt
 ms.reviewer: clmori
 manager: shellyha
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: handoff, ceX
 ---
@@ -23,11 +25,11 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- Sign in with an account that has the [Omnichannel for Customer Service administrator role](/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges).
+- Sign in with an account that has the System Administrator role.
 - Have a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 - Environments:
   - Your bot environment and Omnichannel for Customer Service environment must be in the same [geographical region](./data-location.md#data-locations).
-  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Europe, Asia, United Kingdom, or Australia geographies](./data-location.md#data-locations).
+  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Canada, Europe, Asia, United Kingdom, or Australia geographies](./data-location.md#data-locations).
 - [Register an application with Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application).
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
 
@@ -93,7 +95,7 @@ If you continue to see the message after exporting and importing the latest vers
 
 1. In the navigation menu, select **Solutions**, and then select the solution that contains the bot with the unmanaged layer.
 
-1. Next to the chatbot component in the solution, select **More commands** (**…**), and then select **See solution layers**.
+1. Next to the chatbot component in the solution, select **More commands** (**&vellip;**), and then select **See solution layers**.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-see-layers.png" alt-text="Selecting solution layers in Power Apps.":::
 
@@ -125,9 +127,15 @@ It's a good idea to refresh the connection after you add your bot to an Omnichan
 
 The [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension) adds several actions and variables to Power Virtual Agents.
 
+:::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-oc-voice-vars.png" alt-text="List of voice-related actions that can be added to a node in Power Virtual Agents.":::
+
 Select **Enable voice** to turn voice capabilities on or off for the entire bot, not for individual bot sessions or connections. When voice is enabled, any connection with the bot can use voice, text, or both voice and text.
 
-:::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-oc-voice-vars.png" alt-text="List of voice-related actions that can be added to a node in Power Virtual Agents.":::
+:::image type="content" source="./media/configuration-hand-off-omnichannel/voice-toggle.png" alt-text="Screenshot of the Power Virtual Agents Omnichannel section with the Enable voice toggle highlighted.":::
+
+> [!IMPORTANT]
+> If a bot is connected to an Omnichannel voice workstream or queue and taking calls, and the voice is disabled, the calls will start to fail. Ensure that the bot is disconnected from Omnichannel workstreams or queues before disabling voice in the Power Virtual Agents configuration.
+
 
 ### Set survey consent
 
@@ -187,7 +195,9 @@ Use this action to transfer the call to a different phone number.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-transfer.png" alt-text="Set the phone number for the Transfer the call to a different phone number action.":::
 
-    > [!NOTE]
+    > [!WARNING]
+    > Don't add a plus symbol, "+", before the phone number.
+    >
     > The phone number you enter must have the "Make calls" privilege. Without it, transfers to the number will fail.
 
 ### Hang up
@@ -217,7 +227,7 @@ Dynamics 365 Customer Service provides [more context variables](/dynamics365/cus
 Authentication isn't supported for voice-based hand-off to Omnichannel for Customer Service instances. If you've set up authentication for your bot, the [authentication variables](./advanced-end-user-authentication.md) don't include authentication information when they're sent to your Omnichannel for Customer Service instance.
 
 > [!WARNING]
-> For voice-based hand-off capabilities to work, both your bot and Omnichannel for Customer Service environments must be hosted in a datacenter in the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations). Otherwise, voice capabilities don't work, and you won't receive any error messages or warnings.
+> For voice-based hand-off capabilities to work, both your bot and Omnichannel for Customer Service environments must be hosted in a datacenter in the [United States, Canada, Europe, United Kingdom, Asia, or Australia geographies](data-location.md#data-locations). Otherwise, voice capabilities don't work, and you won't receive any error messages or warnings.
 
 If your bot incorporates adaptive cards, make sure you use [Bot Framework Composer](./advanced-bot-framework-composer.md) so that the voice bot correctly reads their "speak" property.
 

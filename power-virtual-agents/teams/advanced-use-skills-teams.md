@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "Azure, advanced-authoring, ceX, teams"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

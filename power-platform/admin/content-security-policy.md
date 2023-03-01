@@ -1,18 +1,12 @@
 ---
 title: "Content security policy"
 description: "Use content security policy to prevent clickjacking in Power Apps."  
-ms.date: 12/05/2022
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.date: 01/31/2023
 ms.topic: conceptual
-applies_to: 
-  - "Dynamics 365 (online)"
-ms.assetid: 
-caps.latest.revision: 63
 author: JesseParsons
 ms.subservice: admin
 ms.author: jeparson
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -73,8 +67,7 @@ Leaving the default directive toggled on uses the default value specified in the
 ![Setting custom CSP directives](media/csp-default-directive.png "Setting custom CSP directives")
 
 ### Important considerations
-- Turning off the default directive doesn't send the default value as part of the response. For example, using custom `frame-ancestors` wouldn't send `'self'` as part of the directive. Admins would need to manually add `'self'` to the list.
-- Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
+Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
 
 ## Examples
 
