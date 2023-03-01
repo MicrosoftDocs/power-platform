@@ -3,7 +3,7 @@ title: "Establishing an environment strategy - Microsoft Power Platform | Micros
 description: Develop an environment strategy to securely manage resources in Power Platform environments while allowing productive development.
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 2/23/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
