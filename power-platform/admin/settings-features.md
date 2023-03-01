@@ -1,6 +1,6 @@
 ---
 title: "Manage feature settings | MicrosoftDocs"
-description: Manage feature settings to adjust how features appear and function in Power Apps model-driven apps and Dynamics 365 model-driven apps.
+description: Manage feature settings to adjust how features appear and function in Power Platform.
 author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
