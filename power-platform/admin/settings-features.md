@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 2/23/2023
 ms.subservice: admin
 ms.author: kvivek 
-ms.contributors:
+contributors:
     - ProfessorKendrick
 search.audienceType: 
   - admin

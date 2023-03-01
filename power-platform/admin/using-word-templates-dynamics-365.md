@@ -9,7 +9,7 @@ author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: jimholtz
-ms.contributors: 
+contributors: 
     - ProfessorKendrick
 search.audienceType: 
   - admin

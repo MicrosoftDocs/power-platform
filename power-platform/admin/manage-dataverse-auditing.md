@@ -8,7 +8,7 @@ author: paulliew
 ms.subservice: admin
 ms.author: paulliew 
 ms.reviewer: matp 
-ms.contributors: 
+contributors: 
     - ProfessorKendrick
 search.audienceType: 
   - admin

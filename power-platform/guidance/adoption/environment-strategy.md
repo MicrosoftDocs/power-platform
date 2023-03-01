@@ -7,7 +7,7 @@ ms.date: 2/23/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
-ms.contributors:
+contributors:
     - ProfessorKendrick
 search.audienceType: 
   - admin

@@ -8,7 +8,7 @@ ms.date: 2/28/2023
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: jimholtz
-ms.contributors: 
+contributors: 
     - ProfessorKendrick
 search.audienceType: 
   - admin
