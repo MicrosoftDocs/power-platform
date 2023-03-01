@@ -70,6 +70,36 @@ Microsoft manages the address prefixes encompassed by the service tag, and autom
 
 Power Platform has an extensive set of [Data Loss Prevention (DLP) features](../prevent-data-loss.md) to help you manage the security of your data.  
 
+### SAS IP Binding
+
+This feature set is a tenant specific functionality that restricts Storage Shared   Access Signature (SAS) tokens and is controlled via a menu in the  [Power Platform Admin Center](https://admin.powerplatform.microsoft.com). This setting will IP-restrict   who can use enterprise SAS tokens with the intent of making them more secure. These settings can be found in a Dataverse environment’s Privacy + Security settings page in the admin center. 
+
+Admins can enable one of these four configurations for this setting :
+
+| **#** | Setting                 | Description                                                                                                                    |
+|-------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| 1     | IP Binding              | This will restrict SAS keys to the requester’s IP.                                                                             |
+| 2     | IP Firewall             | This will restrict using SAS keys to only work within an admin specified range.                                                |
+| 3     | IP Binding and Firewall | This will restrict using SAS keys to work within an admin specified range and only to the requestor's IP.                      |
+| 4     | IP Binding or Firewall  | Allows SAS keys to be used within the specified range. If the request comes from outside the range, IP Binding will be applied |
+
+#### Products enforcing IP Binding when enabled:
+- Dataverse
+- Power Automate
+- Custom Connectors
+- Power Apps
+
+#### Impact on Power App experiences
+1. The following screenshot illustrates the end-user experience when a user, that do not meet an environment’s IP address restrictions, attempts to launch an app. 
+
+![image](https://user-images.githubusercontent.com/11514622/222267525-56442161-58f7-4939-9602-6aa29cc866e3.png)
+
+2. This experience will be updated to provide more contextual information to the user as to why the app couldn’t be launched.
+3. The end user experience when launching an app while meeting the IP address requirements will:
+a. observe a banner with a message: “Your organization configured IP Address restrictions limiting where Power Apps is accessible. This app may not be accessible when you use another network. Contact your admin for more details.” This banner appears for a matter of seconds after the app opens and then disappears. 
+b. Potentially observe slower app loading than if IP address restrictions weren’t in place. The extra enforcement for resource access requirements eliminates the ability for the platform to use some performance capabilities (that enable faster load times).
+4. If an end user launches an app while meeting the IP Address requirements and moves to a new network which no longer meets the IP Address requirements, the user may observe app contents such as images, embedded media and links may not load or be accessible. 
+
 ### Related articles
 
 [Security in Microsoft Power Platform](./overview.md)  
