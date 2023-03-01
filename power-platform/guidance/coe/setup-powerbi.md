@@ -50,15 +50,6 @@ You need the environment URL of the Microsoft Power Platform environment the CoE
    If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
    :::image type="content" source="media/coe20.png" alt-text="Environment settings available in the Power Platform admin center.":::
 
-## Copy Azure Storage Account URL (Data Export only)
-
-You need the Azure Storage Account URL if your inventory is retrieved via [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory). Power BI dataflows will connect to the data in the storage account.
-
-1. Navigate to [portal.azure.com].
-1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
-1. Select **Endpoints**.
-1. Copy the Data Lake Storage URL.
-
 ## Configure the Production and Governance Power BI dashboard
 
 You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop. Using Power BI Desktop gives you flexibility to modify the dashboard to your own branding, and including (or excluding) pages or visuals you want to see (or not see) in the dashboard.
@@ -79,30 +70,53 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ## Configure the BYODL Power BI dashboard
 
+### Copy Azure Storage Account URL
+
+1. Navigate to [portal.azure.com].
+1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
+1. Select **Endpoints**.
+1. Copy the Data Lake Storage URL to notepad.
+    :::image type="content" source="media/byodl-1.png" alt-text="Copy Data Lake Storage URL from Storage Account endpoints.":::
+1. Append */powerplatform* to the URL.
+
 ### Import Power BI Dataflows
 
 Power BI dataflows are used to transform data from the Azure Storage Account into tables usable by the dashboard. You'll first have configure the Power BI dataflows.
 
 1. Navigate to [app.powerbi.com](https://app.powerbi.com).
 1. Select **Workspaces** > **Create a workspace**.
-1. Provide a name and description, select **Advanced** and choose Premium per user or Premium per capacity depending on what’s available in your tenant. You can also use an existing premium workspace, if available. 
+1. Provide a name and description, select **Advanced** and choose Premium per user or Premium per capacity depending on what’s available in your tenant. Select **Large dataset storage format**. You can also use an existing premium workspace, if available.
+    :::image type="content" source="media/byodlbi-1.png" alt-text="Create a new premium workspace.":::
+
+   > [!NOTE]
+   > A Power BI Premium trial is sufficient, if you are only testing out the [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) feature in the CoE Starter Kit.
+
 1. Select **+ New** > **Dataflow** (if prompted select “No, create dataflow” instead of datamart).
+    :::image type="content" source="media/byodlbi-2.png" alt-text="Create a dataflow.":::
 1. Select **Import Model** and upload the PowerPlatformAdminAnalytics-DF.json file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
+    :::image type="content" source="media/byodlbi-3.png" alt-text="Import a dataflow model.":::
 1. From the workspace, select **Datasets + Dataflows** to see your imported dataflow.
 1. Edit the dataflow.
+    :::image type="content" source="media/byodlbi-4.png" alt-text="Edit the imported dataflow.":::
 1. Select **Edit tables**.
+    :::image type="content" source="media/byodlbi-5.png" alt-text="Edit the tables of the imported dataflow.":::
 1. Select the Datalake URL parameter.
-1. Paste in the Azure Storage Account URL and make sure it doesn’t include a trailing /.
-1. Select one table after the other to configure connections and login with your account. If creating the connection fails, try selecting **Source** under Applied steps and retry configuring the connection.
-1. Select **Continue** when you see a notification about connecting data from multiple sources. 
+      :::image type="content" source="media/byodlbi-6.png" alt-text="Update the Datalake URL parameter to point to your Azure Storage Account URL.":::
+1. Paste in the Azure Storage Account URL and make sure it ends with /powerplatform and doesn’t include a trailing /.
+1. From the **Queries** view, select one table after the other to configure connections and login with your account. If creating the connection fails, try selecting **Source** under Applied steps and retry configuring the connection.
+    :::image type="content" source="media/byodlbi-7.png" alt-text="Configure connections for the data sources.":::
+1. Select **Continue** when you see a notification about connecting data from multiple sources.
 1. Select **Save and Close** – the validation running when you Save should succeed.
-1. Go back to the Dataflow overview by selecting **Close**.
-1. Select … > Settings on the dataflow
-1. Look at Schedule refresh and configure a daily schedule refresh. Check when data typically arrives in your data storage account and schedule the refresh for some time after that so it’s in sync.
-1. Refresh the dataflow. The initial refresh may take 1-2hrs to run, depending on how big your inventory is. Check the Refresh History to see when it completes.
+1. Select **Close**.
+1. Select **… > Settings** on the dataflow.
+1. Configure a daily schedule refresh. Check when data typically arrives in your data storage account and schedule the refresh for some time after that so it’s in sync.
+      :::image type="content" source="media/byodlbi-8.png" alt-text="Configure scheduled refresh for the dataflow.":::
+1. Refresh the dataflow manually. The initial refresh may take 1-2hrs to run, depending on how big your inventory is. Check the Refresh History to see when it completes.
 1. Copy the Power BI workspace and dataflow ID
-    1. You can get the Workspace ID by looking at the URL copying the GUID after /groups/.
-    1. You can get the Dataflow ID by looking at the URL and copying the GUID after /dataflows/.
+    1. Select the dataflow and copy the Workspace ID by looking at the URL copying the GUID after /groups/.
+      :::image type="content" source="media/byodlbi-9.png" alt-text="Copy workspace ID":::
+    1. Select the dataflow and copy the Dataflow ID by looking at the URL and copying the GUID after /dataflows/.
+        :::image type="content" source="media/byodlbi-10.png" alt-text="Copy dataflow ID":::
 
 ### Configure the Power BI dashboard
 

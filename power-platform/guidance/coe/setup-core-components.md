@@ -25,8 +25,11 @@ The flows and dataflows in this solution sync all your resources into tables and
 
 >[!IMPORTANT]
 >Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes that you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+
+>[!NOTE]
+> If you are trying out [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, we recommend you don't depend on it just yet and test it in a dedicated test environment first. Trying out this feature will help us to validate that the feature is what you need and that we're not introducing unintended side effects. Your feedback is critical to this process. Please post your feedback by [raise an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 >
->If you are using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as a mechanism to retrieve inventory and telemetry we recommend you test this in a dedicated test environment before using this feature in production.
+>Setting up the inventory components using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) is only supported through the [setup wizard](#set-up-the-inventory-components-using-the-setup-wizard). Manual setup instructions will be available after the experimental preview.
 
 ## Before you start
 
@@ -140,8 +143,6 @@ The import can take up to 15 minutes to be completed.
 
 In your test environment, [update the *ProductionEnvironment* environment variable](faq.md#update-environment-variables) to no before proceeding.
 
-If you're using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, [update the *Inventory and Telemetry in Azure Data Storage account* environment variable](faq.md#update-environment-variables) to yes before proceeding.
-
 ### Turn on child flows
 
 There are several child flows, check to make sure all of these flows are on:
@@ -245,7 +246,9 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Navigate to [portal.azure.com].
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
 1. Select **Endpoints**.
-1. Copy the Data Lake Storage URL.
+1. Copy the Data Lake Storage URL to notepad.
+    :::image type="content" source="media/byodl-1.png" alt-text="Copy Data Lake Storage URL from Storage Account endpoints.":::
+1. Append */powerplatform* to the URL.
 
 ### Confirm Storage Account permission
 
@@ -254,13 +257,16 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Select **Access Control (IAM)**.
 1. Select **View my access**
 1. Confirm you have the Storage Blob Data Reader role assigned.
+     :::image type="content" source="media/byodl-2.png" alt-text="Confirm your account has the Storage Blob Data Reader role.":::
 
 ### Copy Environment Web API endpoint
 
 1. Navigate to [make.powerapps.com](https://make.powerapps.com).
 1. Select the environment you've installed the CoE Starter Kit in.
 1. Select the cog > Developer resources.
+    :::image type="content" source="media/byodl-3.png" alt-text="Navigate to Developer Resources.":::
 1. Copy the Web API endpoint.
+    :::image type="content" source="media/byodl-4.png" alt-text="Copy the Environment Web API endpoint.":::
 
 ### Configure connections to data sources
 
@@ -268,14 +274,46 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Select the environment you've installed the CoE Starter Kit in.
 1. Select **Dataflows**.
 1. Edit the **CoE BYODL Makers** dataflow.
-    1. Update the *DatalakeURL* parameter with the link to your Data Lake Storage URL.
-    1. Update the *EnvironmentAPI* parameter with the link to your Environment Web API endpoint.
+    :::image type="content" source="media/byodl-7.png" alt-text="Edit the CoE BYODL Makers dataflow.":::
+
+    1. Update the *DatalakeURL* parameter with the link to your Data Lake Storage URL and the *EnvironmentAPI* parameter with the link to your Environment Web API endpoint.
+        :::image type="content" source="media/byodl-8.png" alt-text="Update the DatalakeURL and EnvironmentAPI parameters":::
     1. Select each table shown in the Queries section and select to configure the connection from the notification.
+        :::image type="content" source="media/byodl-9.png" alt-text="Select a table to configure the connection":::
     1. For each connection, select Organizational account and login with your account.
+        :::image type="content" source="media/byodl-10.png" alt-text="Configure the connection using your organizational account.":::
     1. Once all connections are configured and there are no more warnings, select Next.
     1. Select Publish. Do not change any data mapping configuration.
-1. The **CoE BYODL Makers** will now start refreshing - wait for the refresh to finish, then edit the **CoE BYODL Environments** dataflow and complete the steps to update the parameters and configure the connections.
-1. Once you publish the **CoE BYODL Environments** dataflow, it will start refreshing. Wait for the refresh to finish, then edit the **CoE BYODL Apps** and **CoE BYDODL Flows** dataflow to configure the parameters and configure the connections.
+        :::image type="content" source="media/byodl-11.png" alt-text="Publish the dataflow without making any changes.":::
+1. The **CoE BYODL Makers** will now start refreshing - wait for the refresh to finish.
+            :::image type="content" source="media/byodl-12.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
+1. Now edit the **CoE BYODL Environments** dataflow and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
+1. Publish the **CoE BYODL Environments** dataflow and wait for the refresh to finish.
+    :::image type="content" source="media/byodl-13.png" alt-text="Wait for the CoE BYODL Environments dataflow to finish.":::
+1. Now edit the **CoE BYODL Apps** and **CoE BYDODL Flows** dataflows and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
+1. Publish the **CoE BYODL Apps** and **CoE BYDODL Flows** dataflows and wait for the refresh to finish.
+    :::image type="content" source="media/byodl-17.png" alt-text="Wait for the CoE BYODL Environments dataflow to finish.":::
+1. Now edit the **CoE BYODL Apps Connection, CoE BYODL Apps Last Launched Date, CoE BYODL Flows Connection, CoE BYODL Flows Last Run Date** dataflows and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
+1. Publish the **CoE BYODL Apps Connection, CoE BYODL Apps Last Launched Date, CoE BYODL Flows Connection, CoE BYODL Flows Last Run Date** dataflows and wait for the refresh to finish.
+     :::image type="content" source="media/byodl-19.png" alt-text="Wait for the remaining dataflows to finish.":::
+
+#### Troubleshooting
+
+If you receive a DataFormat.Error after updating the *DatalakeURL* and *EnvironmentAPI* parameters, this may mean you've entered the incorrect URLs. Verify that the *DatalakeURL* parameter points to your Azure Storage Account URL - the URL should contain dfs.core and and end with /powerplatform. Verify that the *EnvironmentAPI* points to your Environment Web API the URL should contain api.crm and end with /api/data/v9.2
+
+:::image type="content" source="media/byodl-18.png" alt-text="Data Format error after updating the parameters.":::
+
+If the publish or refresh has failed, click on the error to review the status alert:
+
+:::image type="content" source="media/byodl-15.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
+
+The refresh may fail if you've missed to configure connections to all data sources uses by the dataflow. Edit the dataflow again and verify you've configured connections to all data sources - select all the queries individually to check for warnings.
+
+:::image type="content" source="media/byodl-14.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
+
+If you have configured connections in the dataflow, but the **Publish** button remains disabled and you see a warning message, this may indicate you've missed to configure connections to all data sources used by the dataflow. Select **Back** and review all queries for connection warnings. 
+
+:::image type="content" source="media/byodl-16.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
 
 ### Configure scheduled refresh
 
@@ -283,7 +321,9 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Select the environment you've installed the CoE Starter Kit in.
 1. Select **Dataflows**.
 1. Select **Edit refresh settings** for the **CoE BYODL Makers** dataflow.
-1. Select **Refresh automatically** and configure a daily refresh.
+    :::image type="content" source="media/byodl-5.png" alt-text="Edit refresh settings for the CoE BYODL Makers dataflow.":::
+1. Select **Refresh automatically** and configure a daily refresh. Tip: Check when files are usually written to your storage account by the Data Export feature, and set the daily refresh of the dataflow up for after that. This means the dataflow will run after data is exported to your storage account.
+    :::image type="content" source="media/byodl-6.png" alt-text="Configure a daily refresh for the CoE BYODL Makers dataflow.":::
 
 ## Set up the CoE Admin Command Center App
 
