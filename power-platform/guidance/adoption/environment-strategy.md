@@ -1,12 +1,14 @@
 ---
 title: "Establishing an environment strategy - Microsoft Power Platform | MicrosoftDocs"
-description: "This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them."
+description: Develop an environment strategy to securely manage resources in Power Platform environments while allowing productive development.
 author: manuelap-msft
 ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
+ms.contributors:
+    - ProfessorKendrick
 search.audienceType: 
   - admin
 search.app: 
@@ -196,5 +198,6 @@ Set up a [SharePoint site or a wiki](wiki-community.md) that clearly communicate
 
 Also clearly communicate your organization’s [DLP policies to makers](dlp-strategy.md#clearly-communicate-your-organizations-dlp-policies-to-makers).
 
+[!INCLUDE[Disclaimer AI-generated description](../includes/disclaimer-ai-generated-description.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
