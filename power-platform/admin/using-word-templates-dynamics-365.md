@@ -1,7 +1,6 @@
 ---
 title: "Use Word templates to create standardized documents  | MicrosoftDocs"
-description: Create a standardized document with one click using Word templates in customer engagement apps.
-
+description: Create a standardized document with one click using Word templates in Power Platform.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 2/28/2023
