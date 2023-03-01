@@ -198,6 +198,6 @@ Set up a [SharePoint site or a wiki](wiki-community.md) that clearly communicate
 
 Also clearly communicate your organization’s [DLP policies to makers](dlp-strategy.md#clearly-communicate-your-organizations-dlp-policies-to-makers).
 
-[!INCLUDE[Disclaimer AI-generated description](../includes/disclaimer-ai-generated-description.md)]
+[!INCLUDE[Disclaimer AI-generated description](../../includes/disclaimer-ai-generated-description.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
