@@ -2,10 +2,10 @@
 title: Use solution checker in Managed Environments (preview)
 description: Learn about using solution checker to automatically run security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 12/06/2022
+ms.date: 03/01/2023
 author: sidhartg
 ms.author: sidhartg
-ms.reviewer: Kumarvivek
+ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: 
 search.audienceType:
@@ -52,7 +52,7 @@ When the solution checker enforcement is turned on, all solutions should be vali
 
 ### Suppress validation emails
 
-By default, emails are sent when a solution fails validation for medium and above severities. When the "Suppress validation emails" checkbox is selected, emails will not be sent in warn mode, and emails will not be sent in block mode except for critical violations which block solution import.
+By default, emails are sent when a solution fails validation for medium and above severities. When the **Suppress validation emails** checkbox is selected, emails will not be sent in warn mode. Emails will not be sent in block mode, as well, except for critical violations which block solution import.
 
 ## Email messages to the admin
 
