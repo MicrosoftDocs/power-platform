@@ -81,7 +81,7 @@ Configure all [required services for Power Automate](/power-automate/ip-address-
 
 ## IP addresses
 
-Requests from Power Virtual Agents to Microsoft Bot Framework skills use the following IP addresses in their respective regions. If you are using an Azure service, we recommend you use the **PowerPlatformInfra** and **PowerPlatformPlex** service tags; which will automatically implement the proper IP addresses. You can also manually enter IP addresses in your traffic configuration rules.
+Requests from Power Virtual Agents to Microsoft Bot Framework skills use the following IP addresses in their respective regions. If you are using an Azure service, we recommend you use the **PowerPlatformInfra** and **PowerPlatformPlex** service tags, which will automatically implement the proper IP addresses. You can also manually enter IP addresses in your traffic configuration rules.
 
 Configure all [connectors for IP addresses](/power-automate/ip-address-configuration#connectors) for Power Automate in addition to Power Virtual Agents to use both together.
 
