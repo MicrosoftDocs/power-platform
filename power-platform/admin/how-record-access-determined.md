@@ -109,6 +109,15 @@ In this case, the user would have access to the record if both of the following 
   - The record was shared to perform the required action with a direct report. 
   - The record was shared to perform the required action with a team a direct report belongs to.
 
+## Record access check on how user got access to the record and the list of users who have access to the record
+
+For each record that is displayed on the web client, the user has the ability to see how the user was granted access to the record via the [Check Access](https://learn.microsoft.com/power-apps/user/access-checker) option on the command bar. User can also see which other users who have accecssed to the record and what access level they have, such as read, write, create, delete, append, append to, share, and assign.
+
+> [!NOTE]
+> There are 2 environment database settings to configure to use the **Who has access**. [Install the Organization settings editor tool](https://learn.microsoft.com/power-platform/admin/environment-database-settings#install-the-organizationsettingseditor-tool) and set the following to true:
+1.  *IsAccessCheckerAllUsersEnabled*. This allows the admin to see who has access to the row.
+2.  *IsAccessCheckerNonAdminAllUsersEnabled*. This allows the admin, owner of the record and users who have access to the row to see who has access.
+
 ### See also
 [Security roles and privileges](security-roles-privileges.md) <br />
 [Create users](create-users.md) <br />
