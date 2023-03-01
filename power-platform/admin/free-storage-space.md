@@ -1,15 +1,16 @@
 ---
 title: "Free up storage space  | MicrosoftDocs"
-description: Methods for reducing storage space consumed.
+description: Reduce storage space usage by deleting notes, attachments, import history, and other data with one-time or recurring jobs.
 author: peakerbl 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2022
+ms.date: 2/28/2023
 ms.subservice: admin
 ms.author: peakerbl  
 ms.reviewer: jimholtz
 contributors:
   - DanaMartens
+  - ProfessorKendrick
 search.audienceType: 
   - admin
 search.app:
@@ -503,6 +504,7 @@ See [Delete approval history from Power Automate](/power-automate/gdpr-dsr-delet
 ### See also
 [Dataverse storage capacity](capacity-storage.md)
 
+[!INCLUDE[Disclaimer AI-generated description](../includes/disclaimer-ai-generated-description.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
