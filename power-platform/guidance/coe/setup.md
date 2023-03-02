@@ -80,15 +80,22 @@ The CoE Starter Kit offers two mechanisms to gather this data:
     >[!IMPORTANT]
     >The CoE Starter Kit using data provided by Data Export for inventory is currently in experimental preview, we recommend you don't depend on it just yet and test it in a dedicated test environment first. Trying out this feature will help us to validate that the feature is what you need and that we're not introducing unintended side effects.
     >
-    >[Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant. Your feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
+    >Try out the feature by enabling the [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) feature in your tenant first. Proceed with the CoE Starter Kit configuration only when you see inventory data files in your storage account. This can take up to 5 days after initial configuration.
+    >Then, [download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant. Your feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 
 - **Cloud flows**: Cloud flows use Power Platform admin connectors to query and crawl your tenant and store inventory and usage data in Dataverse tables. This method is suitable for small to medium sized tenants but can cause performance issues in tenants where Power Platform inventory exceeds 10,000 objects (combined number of environments, apps, flows).
 
 ### Frequently asked questions
 
+#### How can I try this feature out?
+
+First, enable the [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) feature in your tenant. Proceed with the CoE Starter Kit configuration only when you see inventory data files in your storage account. This can take up to 5 days after initial configuration.
+
+[Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant. Your feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
+
 #### Why is this feature in preview?
 
-The [Data Export](/power-platform/admin/self-service-analytics) feature itself is currently in public preview. Using Data Export for the CoE Starter Kit is a fundamental change to the underlying architecture of the CoE Starter Kit. To help balance improvement with the potential impact on your existing CoE kit deployment, we are introducing this feature as a preview feature. If you're an early adopter and think this feature could be useful to you, please try it out and help test the feature. We recommend you don't depend on it just yet and test it in a dedicated test environment first. Trying out this feature will help us to validate that the feature is what you need and that we're not introducing unintended side effects. Your feedback is critical to this process. Please post your feedback by [raise an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
+The [Data Export](/power-platform/admin/self-service-analytics) feature itself is currently in public preview. Using Data Export for the CoE Starter Kit is a fundamental change to the underlying architecture of the CoE Starter Kit. To help balance improvement with the potential impact on your existing CoE kit deployment, we are introducing this feature as a preview feature. If you're an early adopter and think this feature could be useful to you, please try it out and help test the feature. We recommend you don't depend on it just yet and try it out it in a dedicated test environment first. Trying out this feature will help us validate that the feature is what you need and that we're not introducing unintended side effects. Your feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 
 #### What are the requirement for using Data Export with the CoE Starter Kit?
 
@@ -118,15 +125,12 @@ Currently, the Data Export features provides inventory on environments, apps and
 
 There's two mechanisms the CoE Starter Kit uses to consume data from the Data Export feature:
 
-- [Power BI dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service) are used to transform the data for Power BI. These dataflows prepare all the data in the storage account ready for reporting. The Power BI dashboard is then based on the data prepared by the Power BI dataflows.
-- [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) are used to transform the data and write a small amount of data back to existing Dataverse tables used by the CoE Starter Kit apps and flows. These dataflows merge and summarize data so only data needed by the admin and governance processes of the CoE Starter Kit are written back to the Dataverse. For example, instead of storing the entire usage data in Dataverse, only the last launched date of an app (single date) is stored in Dataverse.
+- [Power BI dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service) are used to transform the data for Power BI. These dataflows prepare all the data provided by the Data Export feature ready for reporting. The Power BI dashboard is then based on the data prepared by the Power BI dataflows.
+- [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) are used to transform the data and write a small amount of data back to existing Dataverse tables used by the CoE Starter Kit apps and flows. These dataflows merge and summarize data so only data needed by the admin and governance processes of the CoE Starter Kit is written back to the Dataverse. For example, instead of storing the entire usage data in Dataverse, only the last launched date of an app is stored in Dataverse.
 
 #### Can I migrate from using cloud flows to retrieve inventory to using Data Export?
 
 Yes, this is a seamless process - use the [Setup Wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to change your data source for the CoE Starter Kit to Data Export and continue configuring the inventory components using the Setup Wizard.
-
->[!NOTE]
->The CoE Starter Kit using Data Export for inventory is currently in experimental preview, we recommend you don't depend on it just yet and test it in a dedicated test environment first. Trying out this feature will help us to validate that the feature is what you need and that we're not introducing unintended side effects. Your feedback is critical to this process. Please post your feedback by [raise an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 
 #### What will happen to my existing data when I upgrade?
 
@@ -145,16 +149,13 @@ Data integrity between moving from cloud flows to retrieve inventory to using Da
 
 Yes, there will be no change in functionality.
 
->[!IMPORTANT]
->If you're using Data Export as a mechanism to retrieve inventory and telemetry, [set up data export for your tenant](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) and only proceed once you see inventory data files in your storage account. This can take up to 5 days after initial configuration.
-
 #### I want to try out this feature, but have additional questions or have found a bug
 
-If you have additional questions about the CoE Starter Kit using Data Export, please [raise them on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION). If you have tried out the CoE Starter Kit using Data Export and found a bug, please [raise an issue on GitHub](https://aka.ms/coe-starter-kit-issues).
+If you have additional questions about the CoE Starter Kit using Data Export, please [raise a question on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION). If you have tried out the CoE Starter Kit using Data Export and found a bug, please [raise an issue on GitHub](https://aka.ms/coe-starter-kit-issues).
 
 ### Known limitations
 
-- Unpublished cloud flows (flows imported in a managed solution but never turned on) and cloud flows triggered from canvas apps with no actions other than a response are not returned through the Data Export feature. They are not part of the inventory.
+- Unpublished cloud flows (flows imported in a managed solution that have never been turned on) and cloud flows triggered from canvas apps with no actions other than a response are not returned through the Data Export feature. They are not part of the inventory.
 - Component Libraries are not returned through the Data Export feature. They are not part of the inventory.
 
 ## Plan your upgrade strategy

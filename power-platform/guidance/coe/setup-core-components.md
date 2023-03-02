@@ -27,7 +27,7 @@ The flows and dataflows in this solution sync all your resources into tables and
 >Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes that you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 >[!NOTE]
-> If you are trying out [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, we recommend you don't depend on it just yet and test it in a dedicated test environment first. Trying out this feature will help us to validate that the feature is what you need and that we're not introducing unintended side effects. Your feedback is critical to this process. Please post your feedback by [raise an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
+> If you are trying out [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, [download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant. We recommend you don't depend on this feature just yet and test it in a dedicated test environment first. Trying out this feature will help us to validate that the feature is what you need and that we're not introducing unintended side effects. our feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 >
 >Setting up the inventory components using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) is only supported through the [setup wizard](#set-up-the-inventory-components-using-the-setup-wizard). Manual setup instructions will be available after the experimental preview.
 
@@ -87,7 +87,7 @@ The import can take up to 15 minutes to be completed.
 ### Open the Setup Wizard to complete the configuration
 
 1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. This app provides a guided step by step experience through the configuration steps.
     :::image type="content" source="media/coesetupwizard.png" alt-text="CoE Starter Kit Setup Wizard":::
 
@@ -243,7 +243,7 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 
 ### Copy Azure Storage Account URL
 
-1. Navigate to [portal.azure.com].
+1. Navigate to [portal.azure.com](https://portal.azure.com).
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
 1. Select **Endpoints**.
 1. Copy the Data Lake Storage URL to notepad.
@@ -252,7 +252,7 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 
 ### Confirm Storage Account permission
 
-1. Navigate to [portal.azure.com].
+1. Navigate to [portal.azure.com](https://portal.azure.com).
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
 1. Select **Access Control (IAM)**.
 1. Select **View my access**
@@ -278,12 +278,12 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 
     1. Update the *DatalakeURL* parameter with the link to your Data Lake Storage URL and the *EnvironmentAPI* parameter with the link to your Environment Web API endpoint.
         :::image type="content" source="media/byodl-8.png" alt-text="Update the DatalakeURL and EnvironmentAPI parameters":::
-    1. Select each table shown in the Queries section and select to configure the connection from the notification.
+    1. Select each table shown in the Queries section and configure the connection.
         :::image type="content" source="media/byodl-9.png" alt-text="Select a table to configure the connection":::
-    1. For each connection, select Organizational account and login with your account.
+    1. For each connection, select Organizational account and sign in with your account.
         :::image type="content" source="media/byodl-10.png" alt-text="Configure the connection using your organizational account.":::
-    1. Once all connections are configured and there are no more warnings, select Next.
-    1. Select Publish. Do not change any data mapping configuration.
+    1. Once all connections are configured and there are no more warnings, select **Next**.
+    1. Select **Publish**. Do not change any data mapping configuration.
         :::image type="content" source="media/byodl-11.png" alt-text="Publish the dataflow without making any changes.":::
 1. The **CoE BYODL Makers** will now start refreshing - wait for the refresh to finish.
             :::image type="content" source="media/byodl-12.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
@@ -299,7 +299,7 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 
 #### Troubleshooting
 
-If you receive a DataFormat.Error after updating the *DatalakeURL* and *EnvironmentAPI* parameters, this may mean you've entered the incorrect URLs. Verify that the *DatalakeURL* parameter points to your Azure Storage Account URL - the URL should contain dfs.core and and end with /powerplatform. Verify that the *EnvironmentAPI* points to your Environment Web API the URL should contain api.crm and end with /api/data/v9.2
+If you receive a DataFormat.Error after updating the *DatalakeURL* and *EnvironmentAPI* parameters, this may mean you've entered the incorrect URLs. Verify that the *DatalakeURL* parameter points to your Azure Storage Account URL - the URL should contain dfs.core and and end with /powerplatform. Verify that the *EnvironmentAPI* points to your Environment Web API the URL should contain api.crm and end with /api/data/v9.2.
 
 :::image type="content" source="media/byodl-18.png" alt-text="Data Format error after updating the parameters.":::
 
@@ -307,7 +307,7 @@ If the publish or refresh has failed, click on the error to review the status al
 
 :::image type="content" source="media/byodl-15.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
 
-The refresh may fail if you've missed to configure connections to all data sources uses by the dataflow. Edit the dataflow again and verify you've configured connections to all data sources - select all the queries individually to check for warnings.
+The refresh may fail if you've missed to configure connections to all data sources used by the dataflow. Edit the dataflow again and verify you've configured connections to all data sources - select all the queries individually to check for warnings.
 
 :::image type="content" source="media/byodl-14.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
 
@@ -322,7 +322,7 @@ If you have configured connections in the dataflow, but the **Publish** button r
 1. Select **Dataflows**.
 1. Select **Edit refresh settings** for the **CoE BYODL Makers** dataflow.
     :::image type="content" source="media/byodl-5.png" alt-text="Edit refresh settings for the CoE BYODL Makers dataflow.":::
-1. Select **Refresh automatically** and configure a daily refresh. Tip: Check when files are usually written to your storage account by the Data Export feature, and set the daily refresh of the dataflow up for after that. This means the dataflow will run after data is exported to your storage account.
+1. Select **Refresh automatically** and configure a daily refresh. Check when files are usually written to your storage account by the Data Export feature, and set the daily refresh of the dataflow up for after that. This means the dataflow will run after data is exported to your storage account.
     :::image type="content" source="media/byodl-6.png" alt-text="Configure a daily refresh for the CoE BYODL Makers dataflow.":::
 
 ## Set up the CoE Admin Command Center App

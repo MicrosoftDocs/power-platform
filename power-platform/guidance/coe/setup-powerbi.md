@@ -47,6 +47,7 @@ You need the environment URL of the Microsoft Power Platform environment the CoE
 1. Select **Environments**, and select the environment where the CoE solution is installed.
 1. Copy the organization URL in the details window.
    :::image type="content" source="media/coe19.png" alt-text="Power Platform admin center, with the environment URL highlighted.":::
+
    If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
    :::image type="content" source="media/coe20.png" alt-text="Environment settings available in the Power Platform admin center.":::
 
@@ -72,7 +73,7 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ### Copy Azure Storage Account URL
 
-1. Navigate to [portal.azure.com].
+1. Navigate to [portal.azure.com](htts://portal.azure.com).
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
 1. Select **Endpoints**.
 1. Copy the Data Lake Storage URL to notepad.
@@ -81,7 +82,7 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ### Import Power BI Dataflows
 
-Power BI dataflows are used to transform data from the Azure Storage Account into tables usable by the dashboard. You'll first have configure the Power BI dataflows.
+Power BI dataflows are used to transform data from the Azure Storage account into tables that are then used by the dashboard. You'll first have to configure the Power BI dataflows.
 
 1. Navigate to [app.powerbi.com](https://app.powerbi.com).
 1. Select **Workspaces** > **Create a workspace**.
@@ -89,11 +90,11 @@ Power BI dataflows are used to transform data from the Azure Storage Account int
     :::image type="content" source="media/byodlbi-1.png" alt-text="Create a new premium workspace.":::
 
    > [!NOTE]
-   > A Power BI Premium trial is sufficient, if you are only testing out the [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) feature in the CoE Starter Kit.
+   > A Power BI Premium trial is sufficient, if you are only testing out the integration of the [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) feature with the CoE Starter Kit.
 
 1. Select **+ New** > **Dataflow** (if prompted select “No, create dataflow” instead of datamart).
     :::image type="content" source="media/byodlbi-2.png" alt-text="Create a dataflow.":::
-1. Select **Import Model** and upload the PowerPlatformAdminAnalytics-DF.json file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
+1. Select **Import Model** and upload the **PowerPlatformAdminAnalytics-DF.json** file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
     :::image type="content" source="media/byodlbi-3.png" alt-text="Import a dataflow model.":::
 1. From the workspace, select **Datasets + Dataflows** to see your imported dataflow.
 1. Edit the dataflow.
@@ -106,10 +107,10 @@ Power BI dataflows are used to transform data from the Azure Storage Account int
 1. From the **Queries** view, select one table after the other to configure connections and login with your account. If creating the connection fails, try selecting **Source** under Applied steps and retry configuring the connection.
     :::image type="content" source="media/byodlbi-7.png" alt-text="Configure connections for the data sources.":::
 1. Select **Continue** when you see a notification about connecting data from multiple sources.
-1. Select **Save and Close** – the validation running when you Save should succeed.
-1. Select **Close**.
+1. Select **Save and Close** and wait for the validation to finish.
+1. Select **Close** to close the edit tables view.
 1. Select **… > Settings** on the dataflow.
-1. Configure a daily schedule refresh. Check when data typically arrives in your data storage account and schedule the refresh for some time after that so it’s in sync.
+1. Configure a daily schedule refresh. Check when files are usually written to your storage account by the Data Export feature, and set the daily refresh of the dataflow up for after that. This means the dataflow will run after data is exported to your storage account.
       :::image type="content" source="media/byodlbi-8.png" alt-text="Configure scheduled refresh for the dataflow.":::
 1. Refresh the dataflow manually. The initial refresh may take 1-2hrs to run, depending on how big your inventory is. Check the Refresh History to see when it completes.
 1. Copy the Power BI workspace and dataflow ID
