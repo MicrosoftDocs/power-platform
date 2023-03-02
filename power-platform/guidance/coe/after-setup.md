@@ -161,7 +161,7 @@ Once you've removed unmanaged layers, you can import the new solution version:
    ![View solution operation error details](/power-platform/guidance/coe/media/coe-upgrade4.png "View solution operation error details")
 
 1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. This app provides a guided step by step experience through the configuration steps. During an upgrade, it will show you the solution history, any components with unmanaged layers and any new apps, flows and environment variables that have been added during this upgrade.
 
 1. Once you have finished this step, move on to [testing](#testing-strategy).
