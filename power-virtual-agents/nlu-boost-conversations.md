@@ -48,32 +48,39 @@ Now, before involving a live agent, the bot uses natural language processing to:
     
 1. Enter a name for the bot.
 
-3. Provide a website you'd like the bot to use for generating answers.
+3. Provide a website you'd like the bot to use for generating answers. You can't use websites or URLs that require authentication or that aren't indexed by Bing, and that aren't publicly viewable.
 
+    > [!WARNING]
+    >
+    > The AI works best when you specify a top-level domain as the URL. 
+    > 
+    > If the URL you specify is more than two levels deep into the domain (it has more than two forward slashes (/), you'll see an error and won't be able to continue.
+    >
+    > Your URL can have a trailing forward slash, and this won't be included in the limit of two slashes. For example, the URLs *www.contoso.com*, *www.fabrikam.com/engines/rotary*, or *www.fabrikam.com/engines/rotary/* are valid. The URL *www.fabrikam.com/engines/rotary/dual-shaft* is not.
+    >
+    > You'll also see an error if you include non-standard characters in the URL, such as a period (.).
 
     :::image type="content" source="media/nlu-authoring/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
 3. Click **Create**.
 
-After your bot is created and ready for you to use, it'll open to the '
+After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that **Boost conversations** is enabled, or choose to change the URL you want to use.
 
-1. After the bot is created, expand the **Settings** tab on left pane, then select **AI Capabilities**.
+You can also change the URL, disable **Boost conversations**, or change the level of content moderation in the settings for the bot:
 
-1. Under **Boost conversational coverage (preview)**, ensure that you've selected the checkbox for **Boost conversations**.
+1. With a bot open, expand **Settings** on the side navigation pane and select **AI Capabilities**.
 
-1. In the field under the checkbox, add a publicly available URL, if one isn't there. You can't use websites or URLs that require authentication or that aren't indexed by Bing, and that aren't publicly viewable.
+    1. Under **Boost conversational coverage (preview)**, use the checkbox for **Boost conversations** to enable or disable the capability.
+
+    1. In the field under the checkbox, add or change the URL. The same limits apply for the URL as when enabling the capability when you create a bot.
 
     :::image type="content" source="media/nlu-authoring/responses-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
 
-1. Select **Save** at the top of the **AI capabilities**.
+    1. Under **Bot content moderation**, select the level you want for your bot.
 
-> [!TIP]
->
-> The AI works best when you specify a top-level domain as the URL. 
-> 
-> If the URL you specify is more than two levels deep into the domain (it has more than two forward slashes (`/`)), you'll see an error and won't be able to select **Save**. 
->
-> Your URL can have a trailing forward slash, and this won't be included in the limit of two slashes. For example, the URLs `www.contoso.com`, `www.fabrikam.com/engines/rotary`, or `www.fabrikam.com/engines/rotary/` are valid. The URL `www.fabrikam.com/engines/rotary/dual-shaft` is not.
+1. Select **Save** at the top of the **AI capabilities** page.
+
+
 
 ## Test your bot's boosted conversational reach 
 
