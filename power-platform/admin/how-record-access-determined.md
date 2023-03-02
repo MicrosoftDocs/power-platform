@@ -114,7 +114,8 @@ In this case, the user would have access to the record if both of the following 
 For each record that is displayed in the web client, the user has the ability to see how they were granted access to the record through the [**Check Access**](/power-apps/user/access-checker.md) option on the command bar. The user can also see which other users have accecss to the record and their access level, such as read, write, create, delete, append, append to, share, and assign.
 
 > [!NOTE]
-> There are two environment database settings to configure to use the **Who has access** feature. [Install the Organization settings editor tool](https://learn.microsoft.com/power-platform/admin/environment-database-settings#install-the-organizationsettingseditor-tool) and set the following to true:
+> There are two environment database settings to configure to use the **Who has access** feature. [Install the **Organization settings editor** tool](environment-database-settings.md#install-the-organizationsettingseditor-tool) and set the following to true:
+> 
 > - **IsAccessCheckerAllUsersEnabled**: This allows the admin to see who has access to the row.
 > - **IsAccessCheckerNonAdminAllUsersEnabled**: This allows the admin, owner of the record and users who have access to the row to see who has access.
 
