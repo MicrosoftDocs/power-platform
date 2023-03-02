@@ -105,6 +105,8 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
    ![Edit OAuth configuration.](media/coe42.png "Edit OAuth configuration")
 
+1. Change Identity Provider to **Azure Active Directory**
+
 1. Paste the application (client) ID you copied from the app registration into **Client Id**.
 
 1. Paste the client secret you copied from the app registration into **Client secret**.
