@@ -116,7 +116,7 @@ For each record that is displayed in the web client, the user has the ability to
 There are two environment database settings to configure to use the **Who has access** feature. [Install the **OrganizationSettingsEditor** tool](environment-database-settings.md#install-the-organizationsettingseditor-tool) and set the following to true:
  
 - **IsAccessCheckerAllUsersEnabled**: This allows the admin to see who has access to the row.
-- **IsAccessCheckerNonAdminAllUsersEnabled**: This allows the admin, owner of the record and users who have access to the row to see who has access.
+- **IsAccessCheckerNonAdminAllUsersEnabled**: This allows the admin, owner of the record, and users who have access to the row to see who has access.
 
 ### See also
 [Security roles and privileges](security-roles-privileges.md) <br />
