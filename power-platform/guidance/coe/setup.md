@@ -72,7 +72,7 @@ Some processes part of the CoE Starter Kit send [Power Automate Approvals](/powe
 
 ## What data source should I use for my Power Platform inventory?
 
-At the heart of the CoE Starter Kit are processes that gather information about your tenants Power Platform inventory to provide a holistic overview and tenant-wide processes to manage, govern and nurture Power Platform adoption in your tenant.
+At the heart of the CoE Starter Kit are processes that gather information about your tenants Power Platform inventory to provide an overview of your Power Platform adoption and processes to manage, govern and nurture Power Platform adoption in your tenant.
 
 The CoE Starter Kit offers two mechanisms to gather this data:
 
