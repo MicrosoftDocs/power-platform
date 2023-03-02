@@ -269,10 +269,6 @@ This flow works with the other Inactivity notifications flows in that it looks f
 
 ![Mail sent to managers.](media/ArchiveApps1.png "Mail sent to managers")
 
-#### Admin \| Broken Connection Cleanup
-
-Runs weekly deletes connection references that are errored out and which were last modified at least 30 days ago (configurable).
-
 ### Apps
 
 #### Cleanup Old Objects App
