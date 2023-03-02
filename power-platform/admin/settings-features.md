@@ -92,6 +92,4 @@ Make sure you have the System Administrator or System Customizer security role o
 > | Share ideas query data to help improve ideas results. | Default: Off. To help Microsoft improve Power Apps Ideas, you can share your ideas query data with Microsoft. More information: [Power Apps Ideas (preview)](/power-apps/maker/canvas-apps/power-apps-ideas).
 > | **Create new canvas apps as Dataverse solutions (preview)**  | Default: Off. Set to **On** to add all newly created canvas apps to the default environment solution.  More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) |
 
-[!INCLUDE[Disclaimer AI-generated description](../includes/disclaimer-ai-generated-description.md)]
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
