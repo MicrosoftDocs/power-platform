@@ -73,7 +73,7 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ### Copy Azure Storage Account URL
 
-1. Navigate to [portal.azure.com](htts://portal.azure.com).
+1. Navigate to [portal.azure.com](https://portal.azure.com).
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
 1. Select **Endpoints**.
 1. Copy the Data Lake Storage URL to notepad.
@@ -123,7 +123,7 @@ Power BI dataflows are used to transform data from the Azure Storage account int
 
 1. In Power BI Desktop, open the **BYODL_CoEDashboard_MMMYY.pbit** file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-1. Enter the URL of your environment instance include the https:// prefix for **OrgUrl**. Enter the ID to your Power BI Workspace for **Power BI Workspace ID**. Enter the ID to your Power BI Dataflow for **Power BI Dataflow ID**. If prompted, sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
+1. Enter the URL of your environment instance, including the https:// prefix for **OrgUrl**. Enter the ID to your Power BI Workspace for **Power BI Workspace ID**. Enter the ID to your Power BI Dataflow for **Power BI Dataflow ID**. If prompted, sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
 
 1. Save the dashboard locally, or select **Publish** and choose the workspace you want to publish the report to.
 

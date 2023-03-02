@@ -155,10 +155,10 @@ You can now safely edit your own copy.
 > [!NOTE]
 > Creating a copy of a canvas app to extend and customize it means you'll no longer receive updates for this app during an upgrade.
 
-
 ### Working with cloud flows
 
 > [!CAUTION]
+>
 > - Due to a product limitation, you can't create a copy of a parent cloud flows triggering child flows. Most CoE Starter Kit flows use child flows.
 > - Customizations to cloud flows can be made on the existing flows as unmanaged.
 > - Unmanaged changes will take precedence over the managed ones; therefore, customized flows won't be updated as part of a CoE upgrade.
@@ -221,36 +221,23 @@ Create your own model-driven app instead of extending the existing one to avoid 
 
 First, create a new model-driven application:
 
-1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-   
-1. Go to your CoE development environment.
-   
+1. Go to [make.powerapps.com](<https://make.powerapps.com>)
+1. 1. Go to your CoE development environment.
 1. Go to **Solutions**.
-   
 1. Select your solution.
-   
 1. Select **+ New**.
-   
 1. Select **App** > **Model-driven app**.
-   
 1. Enter a **Name** and click **Create**.
-
       ![Screenshot showing where to enter Name and Unique Name](media/coe-extension-16.png "Screenshot showing where to enter Name and Unique Name")
-        
+
 Then, configure the new model-driven application:
 
 1. In the **App Designer**, use the menu to select the components for your app.
-   
-1. Configure the app navigation (site map) to show the elements in your app's menu by defining groups and subareas
-
-   ![Screenshot that shows how to configure the application](media/coe-extension-17.png "Screenshot that shows how to configure the application")
-        
-1. Configure what type of content you want to add to the app like tables, dashboards and links
-   
-   ![Screenshot that shows how to configure the application](media/coe-extension-17b.png "Screenshot that shows how to configure the application")
-
-1. Select **Save** and **Publish**
-   
+1. Configure the app navigation (site map) to show the elements in your app's menu by defining groups and subareas.
+   ![Configure the app navigation (site map) to show the elements in your app's menu by defining groups and subareas.](media/coe-extension-17.png "Configure the app navigation (site map) to show the elements in your app's menu by defining groups and subareas.")
+1. Configure what type of content you want to add to the app like tables, dashboards and links.
+   ![Configure what type of content you want to add to the app like tables, dashboards and links.](media/coe-extension-17b.png "Configure what type of content you want to add to the app like tables, dashboards and links.")
+1. Select **Save** and **Publish**.
 1. Select **Play** to test the app.
 
 ### Add a new column to an existing table
@@ -272,7 +259,7 @@ Start by adding the table you want to add the field to, if it's not already in y
    
 1. Search for the table(s) you want to add and select **Next**.
 
-   ![Screenshot showing the Include all objects and Include table metadata checkboxes](media/coe-extension-28.png "Screenshot showing the Include all objects and Include table metadata checkboxes")
+   ![Screenshot showing the search for a table and select it](media/coe-extension-28.png "Screenshot showing the search for a table and select it")
 
    > [!IMPORTANT]
    > If you only want to add new fields and not modify the views and forms of the table, don't check the options to include **metadata** or **objects**.
@@ -330,7 +317,7 @@ Learn more: [Merge form customizations](/power-platform/alm/how-managed-solution
                 
     1. Select the form(s) you want to customize and select **Add**
    
-         ![Select form](media/coe-extension-31.png "Select form")
+      ![Select the form you want to customize](media/coe-extension-31.png "Select the form you want to customize")
 
 1. Customize the form:
 
@@ -338,7 +325,7 @@ Learn more: [Merge form customizations](/power-platform/alm/how-managed-solution
    
     1. Select **...** and then select **Edit form** to edit the form.
    
-         ![Select form](media/coe-extension-32.png "Select form")
+         ![Edit form](media/coe-extension-32.png "Edit form")
     
          > [!NOTE]
          > Depending on the goal of your customization, you can also create a new form or duplicate the existing form.

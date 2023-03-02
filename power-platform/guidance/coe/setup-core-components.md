@@ -24,7 +24,7 @@ This article helps you set up the inventory components of the Core solution of t
 The flows and dataflows in this solution sync all your resources into tables and build admin apps, flows, and dashboards on top of this inventory to help you get a holistic overview into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.
 
 >[!IMPORTANT]
->Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes that you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes that you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 >[!NOTE]
 > If you are trying out [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, [download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant. We recommend you don't depend on this feature just yet and test it in a dedicated test environment first. Trying out this feature will help us to validate that the feature is what you need and that we're not introducing unintended side effects. our feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
@@ -305,15 +305,15 @@ If you receive a DataFormat.Error after updating the *DatalakeURL* and *Environm
 
 If the publish or refresh has failed, select on the error to review the status alert:
 
-:::image type="content" source="media/byodl-15.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
+:::image type="content" source="media/byodl-15.png" alt-text="Review the status alert if the publish or refresh failed.":::
 
 The refresh may fail if you've missed configuring connections to all data sources used by the dataflow. Edit the dataflow again and verify you've configured connections to all data sources - select all the queries individually to check for warnings.
 
-:::image type="content" source="media/byodl-14.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
+:::image type="content" source="media/byodl-14.png" alt-text="Check the error message of the status alert and verify all connections are configured.":::
 
-If you have configured connections in the dataflow, but the **Publish** button remains disabled and you see a warning message, this may indicate you've missed configuring connections to all data sources used by the dataflow. Select **Back** and review all queries for connection warnings. 
+If you have configured connections in the dataflow, but the **Publish** button remains disabled and you see a warning message, this may indicate you've missed configuring connections to all data sources used by the dataflow. Select **Back** and review all queries for connection warnings.
 
-:::image type="content" source="media/byodl-16.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
+:::image type="content" source="media/byodl-16.png" alt-text="Check all connections are configured if publish remains disabled.":::
 
 ### Configure scheduled refresh
 
@@ -469,13 +469,13 @@ Environment variables are used to store application and flow configuration data 
 | InventoryFilter_DaysToLookBack | When not running a full inventory, we filter back this number of days and then see if the object needs updated.| 7 |
 | is All Environments Inventory |If true, (the default) the CoE inventory tracks all environments. New environments added to the inventory have their Excuse from Inventory set to false. You can opt out individual environments.  If false, the CoE inventory tracks a subset of environments. New environments added to the inventory have their Excuse from Inventory set to true. You can opt in individual environments.  | Yes |
 | Maker Dataflow ID | Dataflow ID of the CoE BYODL Makers dataflow.  Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
-| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. You'll use this to communicate and share apps with them. This is needed for the inventory setup in the Admin \| Add Maker to Group flow. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
-| Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform users (for example, end users that apps are shared with). You'll use this to communicate and share apps with them. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
+| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group, which will contain all your Power Platform makers. You use this to communicate and share apps with them. This is needed for the inventory setup in the Admin \| Add Maker to Group flow. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
+| Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group, which will contain all your Power Platform users (for example, end users that apps are shared with). You use this to communicate and share apps with them. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
 |Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://make.powerautomate.com/manage/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). | Not applicable |
 |PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). | Not applicable|
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us/> | Not applicable |
-| ProductionEnvironment | Set to No if you're creating a development/test environment. This will allow some flows to set target users to the admin instead of resource owners.| Yes |
-| TenantID | Your Azure Tenant ID. Learn more: [Find Tenant ID through the Azure Portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal)| Not applicable|
+| ProductionEnvironment | Set to No if you're creating a development/test environment. This allows some flows to set target users to the admin instead of resource owners.| Yes |
+| TenantID | Your Azure Tenant ID. Learn more: [Find Tenant ID through the Azure portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal)| Not applicable|
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 

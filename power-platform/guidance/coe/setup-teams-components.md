@@ -29,7 +29,7 @@ This article will help you to setup the Dataverse for Teams environment manageme
 This set of functionality allows you to monitor new Dataverse for Teams environments.
 
 >[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environments), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 >[!IMPORTANT]
 >Automatically deleting inactive Dataverse for Teams environment is now part of the product - you can configure Teams environment deletion policies from the Power Platform Admin center. Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md). <br>
