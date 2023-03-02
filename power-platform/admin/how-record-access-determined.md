@@ -109,7 +109,7 @@ In this case, the user would have access to the record if both of the following 
   - The record was shared to perform the required action with a direct report. 
   - The record was shared to perform the required action with a team a direct report belongs to.
 
-## Record access check on how user got access to the record and the list of users who have access to the record
+## Record access check
 
 For each record that is displayed in the web client, the user has the ability to see how they were granted access to the record through the [**Check Access**](/power-apps/user/access-checker.md) option on the command bar. The user can also see other users who have accecss to the record and and their respective access level.
 
