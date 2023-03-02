@@ -148,6 +148,11 @@ Yes, there will be no change in functionality.
 
 If you have additional questions about the CoE Starter Kit using Data Export, please [raise them on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION). If you have tried out the CoE Starter Kit using Data Export and found a bug, please [raise an issue on GitHub](https://aka.ms/coe-starter-kit-issues).
 
+### Known limitations
+
+- Unpublished cloud flows (flows imported in a managed solution but never turned on) and cloud flows triggered from canvas apps with no actions other than a response are not returned through the Data Export feature. They are not part of the inventory.
+- Component Libraries are not returned through the Data Export feature. They are not part of the inventory.
+
 ## Plan your upgrade strategy
 
 A new version of the CoE Starter Kit is released monthly, usually in the first full week of each month. This release cadence is important to know so you can review, organize, plan, and test the latest version. We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Microsoft Power Platform, leaving updates longer than three months could result in unexpected issues when you do update.
