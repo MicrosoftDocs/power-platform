@@ -1,6 +1,6 @@
 ---
 title: "Set up inventory components | MicrosoftDocs"
-description: "Setup instructions for how to set up the inventory components solution of the CoE Starter Kit"
+description: "Set up instructions for how to set up the inventory components solution of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
@@ -19,7 +19,7 @@ search.app:
 
 # Set up inventory components
 
-This article will help you set up the inventory components of the Core solution of the Center of Excellence (CoE) Starter Kit. The inventory is the heart of the CoE; before embarking on your Microsoft Power Platform adoption journey, you'll want to first understand whether you have existing apps, flows, and makers, and lay the foundation to monitor new apps and flows being created.
+This article helps you set up the inventory components of the Core solution of the Center of Excellence (CoE) Starter Kit. The inventory is the heart of the CoE; before embarking on your Microsoft Power Platform adoption journey, you want to first understand whether you have existing apps, flows, and makers, and lay the foundation to monitor new apps and flows being created.
 
 The flows and dataflows in this solution sync all your resources into tables and build admin apps, flows, and dashboards on top of this inventory to help you get a holistic overview into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.
 
@@ -41,11 +41,11 @@ The CoE Starter Kit includes features that required the installation of the [Cre
 
 ### Create connections
 
-We recommend that you create connections to all connectors used in the solution prior to importing the solution. This will make the setup faster.
+We recommend that you create connections to all connectors used in the solution prior to importing the solution. This makes the setup faster.
 
 1. Go to [make.powerautomate.com](https://make.powerautomate.com/).
 1. Select your CoE environment, and go to **Data** > **Connections** > **+ New connection**.
-1. Create connections for the following:
+1. Create connections for the following connectors:
     - [Approvals](/connectors/approvals/)
     - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
     - [Microsoft Dataverse (legacy)](/connectors/commondataservice/)
@@ -105,7 +105,7 @@ If you see an *Error Loading Control* warning when opening the Setup Wizard app,
 
 ### Gather environment variable values
 
-During solution import, you'll configure environment variable values. Make sure to have the following information ready.
+During solution import, you configure environment variable values. Make sure to have the following information ready.
 
 > [!IMPORTANT]
 > Mandatory environment variables for gathering inventory information are listed in the table below. Leave other environment variables empty during import - we'll update them later on as we configure different parts of the CoE Starter Kit.
@@ -114,14 +114,14 @@ During solution import, you'll configure environment variable values. Make sure 
 |------|---------------|
 |Admin eMail |This is the email address to which most admin communications in the starter kit will be sent. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
 |CompanyName |The name of the company to be displayed in various apps, emails, and so forth.  |
-|Individual Admin |This is the email address to which communications in the starter kit will be sent which cannot be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
-| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You'll use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow and as part of the [Admin | Welcome Email v3](core-components.md#flows-2). More information: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) |
-| Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform users (for example, end users that apps are shared with). You'll use this to communicate and share apps with them. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) |
-| Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)|
+|Individual Admin |This is the email address to which communications in the starter kit will be sent which can't be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
+| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group, which will contain all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow and as part of the [Admin | Welcome Email v3](core-components.md#flows-2). More information: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) |
+| Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group, which will contain all your Power Platform users (for example, end users that apps are shared with). You use this to communicate and share apps with them. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) |
+| Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)|
 |PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including the trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
 |Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://make.powerautomate.com/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
-| TenantID | Your Azure tenant ID. Learn more: [Find Tenant ID through the Azure Portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal)|
+| TenantID | Your Azure tenant ID. Learn more: [Find Tenant ID through the Azure portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal)|
 
 ### Import the core components solution
 
@@ -232,11 +232,11 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >[!NOTE]
 > To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 15 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
 
-The first run of these flows will perform a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
+The first run of these flows perform a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
 
 ## Set up dataflows to retrieve your inventory from Data Export
 
-If your inventory is coming from [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory), you'll have to configure dataflows as part of the setup.
+If your inventory is coming from [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory), you have to configure dataflows as part of the setup.
 
 >[!NOTE]
 > Only complete these steps if you've configured [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
@@ -283,7 +283,7 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
     1. For each connection, select Organizational account and sign in with your account.
         :::image type="content" source="media/byodl-10.png" alt-text="Configure the connection using your organizational account.":::
     1. Once all connections are configured and there are no more warnings, select **Next**.
-    1. Select **Publish**. Do not change any data mapping configuration.
+    1. Select **Publish**. Don't change any data mapping configuration.
         :::image type="content" source="media/byodl-11.png" alt-text="Publish the dataflow without making any changes.":::
 1. The **CoE BYODL Makers** will now start refreshing - wait for the refresh to finish.
             :::image type="content" source="media/byodl-12.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
@@ -299,19 +299,19 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 
 #### Troubleshooting
 
-If you receive a DataFormat.Error after updating the *DatalakeURL* and *EnvironmentAPI* parameters, this may mean you've entered the incorrect URLs. Verify that the *DatalakeURL* parameter points to your Azure Storage Account URL - the URL should contain dfs.core and and end with /powerplatform. Verify that the *EnvironmentAPI* points to your Environment Web API the URL should contain api.crm and end with /api/data/v9.2.
+If you receive a DataFormat.Error after updating the *DatalakeURL* and *EnvironmentAPI* parameters, this may mean you've entered the incorrect URLs. Verify that the *DatalakeURL* parameter points to your Azure Storage Account URL - the URL should contain dfs.core and end with /powerplatform. Verify that the *EnvironmentAPI* points to your Environment Web API the URL should contain api.crm and end with /api/data/v9.2.
 
 :::image type="content" source="media/byodl-18.png" alt-text="Data Format error after updating the parameters.":::
 
-If the publish or refresh has failed, click on the error to review the status alert:
+If the publish or refresh has failed, select on the error to review the status alert:
 
 :::image type="content" source="media/byodl-15.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
 
-The refresh may fail if you've missed to configure connections to all data sources used by the dataflow. Edit the dataflow again and verify you've configured connections to all data sources - select all the queries individually to check for warnings.
+The refresh may fail if you've missed configuring connections to all data sources used by the dataflow. Edit the dataflow again and verify you've configured connections to all data sources - select all the queries individually to check for warnings.
 
 :::image type="content" source="media/byodl-14.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
 
-If you have configured connections in the dataflow, but the **Publish** button remains disabled and you see a warning message, this may indicate you've missed to configure connections to all data sources used by the dataflow. Select **Back** and review all queries for connection warnings. 
+If you have configured connections in the dataflow, but the **Publish** button remains disabled and you see a warning message, this may indicate you've missed configuring connections to all data sources used by the dataflow. Select **Back** and review all queries for connection warnings. 
 
 :::image type="content" source="media/byodl-16.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
 
@@ -322,7 +322,7 @@ If you have configured connections in the dataflow, but the **Publish** button r
 1. Select **Dataflows**.
 1. Select **Edit refresh settings** for the **CoE BYODL Makers** dataflow.
     :::image type="content" source="media/byodl-5.png" alt-text="Edit refresh settings for the CoE BYODL Makers dataflow.":::
-1. Select **Refresh automatically** and configure a daily refresh. Check when files are usually written to your storage account by the Data Export feature, and set the daily refresh of the dataflow up for after that. This means the dataflow will run after data is exported to your storage account.
+1. Select **Refresh automatically** and configure a daily refresh. Check when files are written to your storage account by the Data Export feature, and set the daily refresh of the dataflow up for after that time. This means the dataflow will run after data is exported to your storage account.
     :::image type="content" source="media/byodl-6.png" alt-text="Configure a daily refresh for the CoE BYODL Makers dataflow.":::
 
 ## Set up the CoE Admin Command Center App
@@ -334,7 +334,7 @@ If you have configured connections in the dataflow, but the **Publish** button r
 
 The [CoE Admin Command Center](core-components.md#coe-admin-command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates.
 
-Using these steps, you'll set up an Azure AD app registration that will be used in a cloud flow to connect to the Graph API. More information: [Use the Microsoft Graph API](/graph/use-the-api)
+Using these steps, you set up an Azure AD app registration that is used in a cloud flow to connect to the Graph API. More information: [Use the Microsoft Graph API](/graph/use-the-api)
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
@@ -378,7 +378,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 |------|---------------|
 | Command Center - Application Client ID | The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. |
 | Command Center - Client Secret | The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
-| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. Note that this variable expects the Azure Key Vault reference, not the secret. Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)|
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. This variable expects the Azure Key Vault reference, not the secret. Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)|
 
 ### Modify the Command Center App > Get M365 Service Messages flow for a GCC High or DoD tenant
 
@@ -393,7 +393,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 ## Set up Audit Logs solution
 
-The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The CoE Starter Kit will work without this flow; however, usage information (app launches, unique users) in the Power BI dashboard will be blank. More information: [Set up the audit log connector](setup-auditlog.md)
+The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The CoE Starter Kit works without this flow; however, usage information (app launches, unique users) in the Power BI dashboard will be blank. More information: [Set up the audit log connector](setup-auditlog.md)
 
 ## Set up the Power BI dashboard
 
@@ -421,13 +421,13 @@ More information:
 
 After the sync flows have finished running, you're ready to use many of the features of the CoE Starter Kit core solution.  
 
-The first run of the inventory can take a few hours depending on the number of environments and resources in your tenants. Future runs will be faster, because they'll only look at new and modified resources.
+The first run of the inventory can take a few hours depending on the number of environments and resources in your tenants. Future runs are faster, because they'll only look at new and modified resources.
 
 ### To check the status of a flow
 
 1. Select **Admin \| Sync Template v3**.
 
-   This will open a new tab to the **Flow detail** page.
+   This opens a new tab to the **Flow detail** page.
 
 1. View **Runs**.
 
@@ -463,11 +463,11 @@ Environment variables are used to store application and flow configuration data 
 | eMail Body Stop | Ending HTML format for eMails | Default style provided |
 | Environment Dataflow ID | Dataflow ID of the CoE BYODL Environments dataflow.  Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
 | Flow Dataflow ID | Dataflow ID of the CoE BYODL Flows dataflow.  Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
-| FullInventory | Determines whether you want to update only objects that have changed, or all objects. Switching to Yes will cause the flows to inventory every single app, flow, and bot in the tenant every day, and isn't recommended for large tenants.  | No |
+| FullInventory | Determines whether you want to update only objects that have changed, or all objects. Switching to Yes causes the flows to inventory every single app, flow, and bot in the tenant every day, and isn't recommended for large tenants.  | No |
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)| Not applicable |
-|Individual Admin |This is the email address to which communications in the starter kit will be sent which cannot be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
+|Individual Admin |This is the email address to which communications in the starter kit will be sent which can't be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
 | InventoryFilter_DaysToLookBack | When not running a full inventory, we filter back this number of days and then see if the object needs updated.| 7 |
-| is All Environments Inventory |If true, (the default) the CoE inventory tracks all environments. New environments added to the inventory will have their Excuse from Inventory to false. You can opt out individual environments.  If false, the CoE inventory tracks a subset of environments. New environments added to the inventory will have their Excuse from Inventory to true. You can opt in individual environments.  | Yes |
+| is All Environments Inventory |If true, (the default) the CoE inventory tracks all environments. New environments added to the inventory have their Excuse from Inventory set to false. You can opt out individual environments.  If false, the CoE inventory tracks a subset of environments. New environments added to the inventory have their Excuse from Inventory set to true. You can opt in individual environments.  | Yes |
 | Maker Dataflow ID | Dataflow ID of the CoE BYODL Makers dataflow.  Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. You'll use this to communicate and share apps with them. This is needed for the inventory setup in the Admin \| Add Maker to Group flow. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
 | Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform users (for example, end users that apps are shared with). You'll use this to communicate and share apps with them. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
