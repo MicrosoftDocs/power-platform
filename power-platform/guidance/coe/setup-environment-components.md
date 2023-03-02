@@ -27,10 +27,10 @@ This article will help you to set up the environment request components of the c
 
 [Watch a walk-through](https://www.youtube.com/watch?v=16mspbGz1zA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the environment and DLP request process works.
 
-## Set up the Environment request components using the Setup Wizard [Preview]
+## Set up the Environment request components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Environment Request management**.
 1. This app provides a guided step by step experience through the configuration steps.
         :::image type="content" source="media/setupwizard-env.png" alt-text="CoE Starter Kit Setup Wizard":::

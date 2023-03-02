@@ -34,10 +34,10 @@ The core components solution is required for the nurture components solution to 
 
 ## Set up video hub components
 
-### Set up the Video hub components using the Setup Wizard [Preview]
+### Set up the Video hub components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Video hub**.
 1. This app provides a guided step by step experience through the configuration steps.
    :::image type="content" source="media/setupwizard-vide.png" alt-text="CoE Starter Kit Setup Wizard - Video hub":::
@@ -135,10 +135,10 @@ Comments have the following schema:
 
 ## Set up training in a day components
 
-### Set up the training in a day components using the Setup Wizard [Preview]
+### Set up the training in a day components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Training in a day**.
 1. This app provides a guided step by step experience through the configuration steps.
    :::image type="content" source="media/setupwizard-training.png" alt-text="CoE Starter Kit Setup Wizard - Training in a day":::
@@ -189,10 +189,10 @@ More information:
 
 ## Set up maker assessment components
 
-### Set up the maker assessment components using the Setup Wizard [Preview]
+### Set up the maker assessment components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Maker Assessment**.
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-assessment.png" alt-text="CoE Starter Kit Setup Wizard - Solution Assessment":::
@@ -238,10 +238,10 @@ More information:
 >[!NOTE]
 >The flows supporting this processes post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams is not available in GCC, GCC High and DoD. These flows should remain turned off in these regions as they will not work.
 
-### Set up the Pulse feedback survey components using the Setup Wizard [Preview]
+### Set up the Pulse feedback survey components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Pulse feedback**.
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-pulse.png" alt-text="CoE Starter Kit Setup Wizard - Pulse Feedback":::
@@ -280,10 +280,10 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ## Set up template catalog
 
-### Set up the template catalog components using the Setup Wizard [Preview]
+### Set up the template catalog components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Template Catalog**.
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-template.png" alt-text="CoE Starter Kit Setup Wizard - Template Catalog":::

@@ -25,10 +25,10 @@ This article will help you to set up the app quarantine components of the govern
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
-## Set up the App quarantine components using the Setup Wizard [Preview]
+## Set up the App quarantine components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Compliance process**.
 1. This app provides a guided step by step experience through the configuration steps.
      :::image type="content" source="media/setupwizard-compliance.png" alt-text="CoE Starter Kit Setup Wizard":::

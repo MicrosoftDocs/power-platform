@@ -35,10 +35,10 @@ You use this functionality to detect unused objects, and ask makers to either ar
 
 Make sure your environment isn't restricted with an [environment security group](limitations.md#security-groups-and-approvals).
 
-## Set up the Inactivity process components using the Setup Wizard [Preview]
+## Set up the Inactivity process components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Inactivity notifications process**.
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-inact.png" alt-text="CoE Starter Kit Setup Wizard":::
