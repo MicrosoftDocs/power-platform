@@ -104,7 +104,7 @@ For the CoE Starter Kit capabilities, you'll also need a [Power BI Premium](/pow
 
 #### What are the license requirements and costs for using Data Export with the CoE Starter Kit?
 
-The identity setting up the CoE Starter Kit needs a Power Apps Per User and Power Automate Per User license, and either a Power BI Premium per user license or access to a Power BI Premium per capacity workspace. You'll also need an [Azure Datalake Gen 2 Storage Account](/pricing/details/storage/data-lake/) to receive data from the Data Export feature.
+The identity setting up the CoE Starter Kit needs a Power Apps Per User and Power Automate Per User license, and either a Power BI Premium per user license or access to a Power BI Premium per capacity workspace. You'll also need an [Azure Datalake Gen 2 Storage Account](/azure/storage/common/storage-plan-manage-costs) to receive data from the Data Export feature.
 
 #### What permissions are required for the CoE Starter Kit to consume Data Export data?
 
