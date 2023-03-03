@@ -104,7 +104,7 @@ During the Preview of this feature you'll need to contact Microsoft Support if y
 
 > [!TIP]
 >  
-> You can provide feedback on how well the AI does by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Describe it** panel.  
+> You can provide feedback on how well the AI does by selecting the "thumbs up" or "thumbs down" icon underneath the generated response.
 > If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback will to improve the quality of the AI.
 
 ## Limitations during the preview
