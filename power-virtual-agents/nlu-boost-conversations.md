@@ -115,15 +115,12 @@ During the preview, the use of the boosted conversations capability is not billa
 
 ## Internal document search preview
 
-Testing for this opportunity will be limited to customers who are willing to:
-•	Sign a marketing/PR agreement permitting the potential use of your scenario and experiences to inform product decisions and marketing (such as Case Study, Blog Post Reference, Event Presentation, etc.)
--	Work closely with the PVA PG (Product Group) to help inform and develop a solution that would be used in the customer’s actual production scenario(s).
-To apply for this opportunity: 
-•	Submit feedback on this feature by selecting the priority. 
-•	Provide a contact email address where the PVA PG can follow up, if selected
-•	In Feedback Request details, include that you would like to be considered for early access, along with:
-o	Which internal knowledge source(s) currently in use by your organization that you would use for testing 
-o	Your intended use cases or scenarios
+Early access for internal document search will be opening up shortly.
+
+Internal document search will allow your chatbot to securely return answers generated from your internal or authenticated content.
+
+When early access is open, a link to apply will be published here. You'll also be able to sign up from within the AI Capabilities page, under the **Boost conversations** section.
+
 Confirmation that you can provide regular feedback on the feature, and that you are willing to sign a marketing/PR agreement.  You should only apply if you have a use case for how you would use the feature in a production scenario.
 If successful, you’ll be contacted with the next steps. You won’t be contacted if your application is unsuccessful.
 
