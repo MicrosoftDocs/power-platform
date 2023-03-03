@@ -12,6 +12,10 @@ search.audienceType:
   - maker
 search.app: 
   - PowerApps
+contributors:
+  - gregli-msft
+  - mduelae
+  - jorisdg
 ---
 # Variables
 
@@ -52,7 +56,7 @@ Notice that the **Label1** control is selected, showing its **[Text](/powerapps/
 
 The formula for **Label1** has been automatically recalculated, showing the new value.
 
-In Power Fx, you can use formulas to determine not only the primary value of a control but also properties such as formatting. In the next example, a formula for the **[Color](/powerapps/maker/canvas-apps/controls/properties-color-border)** property of the label will automatically show negative values in red. The **[If](/powerapps/maker/canvas-apps/functions/function-if)** function should look familiar from Excel:
+In Power Fx, you can use formulas to determine not only the primary value of a control but also properties such as formatting. In the next example, a formula for the **[Color](/powerapps/maker/canvas-apps/controls/properties-color-border)** property of the label will automatically show negative values in red. The **[If](reference/function-if.md)** function should look familiar from Excel:
 
 `If( Value(Label1.Text) < 0, Red, Black )`
 
@@ -100,7 +104,7 @@ To create our adding machine, we require a variable to hold the running total. T
 
 How global variables work:
 
-* You set the value of the global variable with the **[Set](/powerapps/maker/canvas-apps/functions/function-set)** function.  **Set( MyVar, 1 )** sets the global variable **MyVar** to a value of **1**.
+* You set the value of the global variable with the **[Set](reference/function-set.md)** function.  **Set( MyVar, 1 )** sets the global variable **MyVar** to a value of **1**.
 * You use the global variable by referencing the name used with the **Set** function.  In this case, **MyVar** will return **1**.
 * Global variables can hold any value, including strings, numbers, records, and [tables](tables.md).
 
@@ -116,7 +120,7 @@ Let's rebuild our adding machine by using a global variable:
 
     The mere existence of this formula establishes **RunningTotal** as a global variable that holds a number because of the **+** operator. You can reference **RunningTotal** anywhere in the app. Whenever the user opens this app, **RunningTotal** has an initial value of *blank*.
 
-    The first time that a user selects the **Add** button and **[Set](/powerapps/maker/canvas-apps/functions/function-set)** runs, **RunningTotal** is set to the value **RunningTotal + TextInput1**.
+    The first time that a user selects the **Add** button and **[Set](reference/function-set.md)** runs, **RunningTotal** is set to the value **RunningTotal + TextInput1**.
 
     ![OnSelect property of the Add button is set to Set function.](media/variables/global-variable-1.png)
 
@@ -150,14 +154,14 @@ Power Fx has two types of variables:
 
 | Variables type | Scope | Description | Functions that establish |
 | --- | --- | --- | --- |
-| Global variables |App |Simplest to use. Holds a number, text string, Boolean, record, table, etc. that can be references from anywhere in the app. |[**Set**](/powerapps/maker/canvas-apps/functions/function-set) |
-| Collections |App |Holds a table that can be referenced from anywhere in the app. Allows the contents of the table to be modified rather than being set as a whole. Can be saved to the local device for later use. |[**Collect**](/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect)<br>[**ClearCollect**](/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect) |
+| Global variables |App |Simplest to use. Holds a number, text string, Boolean, record, table, etc. that can be references from anywhere in the app. |[**Set**](reference/function-set.md) |
+| Collections |App |Holds a table that can be referenced from anywhere in the app. Allows the contents of the table to be modified rather than being set as a whole. Can be saved to the local device for later use. |[**Collect**](reference/function-clear-collect-clearcollect.md)<br>[**ClearCollect**](reference/function-clear-collect-clearcollect.md) |
 
 When used in Power Apps, there is a third type of variable:
 
 | Variables type | Scope | Description | Functions that establish |
 | --- | --- | --- | --- |
-| Context variables |Screen |Great for passing values to a screen, much like parameters to a procedure in other languages. Can be referenced from only one screen. |[**UpdateContext**](/powerapps/maker/canvas-apps/functions/function-updatecontext)<br>[**Navigate**](/powerapps/maker/canvas-apps/functions/function-navigate) |
+| Context variables |Screen |Great for passing values to a screen, much like parameters to a procedure in other languages. Can be referenced from only one screen. |[**UpdateContext**](reference/function-updatecontext.md)<br>[**Navigate**](reference/function-navigate.md) |
 
 ## Create and remove variables
 
@@ -173,7 +177,7 @@ You remove a variable by removing all the **Set**, **UpdateContext**, **Navigate
 
 All variables are held in memory while the app runs. After the app closes, the values that the variables held are lost.
 
-You can store the contents of a variable in a data source by using the **Patch** or **Collect** functions. You can also store values in collections on the local device by using the [**SaveData**](/powerapps/maker/canvas-apps/functions/function-savedata-loaddata) function.
+You can store the contents of a variable in a data source by using the **Patch** or **Collect** functions. You can also store values in collections on the local device by using the [**SaveData**](reference/function-savedata-loaddata.md) function.
 
 When the user opens the app, all variables have an initial value of *blank*.
 
@@ -187,7 +191,7 @@ Then you can simply use **Radius** anywhere that you can use a number, and it wi
 
 `Pi() * Power( Radius, 2 )`
 
-If you give a context variable the same name as a global variable or a collection, the context variable takes precedence. However, you can still reference the global variable or collection if you use the [disambiguation operator](/powerapps/maker/canvas-apps/functions/operators) **[@Radius]**.
+If you give a context variable the same name as a global variable or a collection, the context variable takes precedence. However, you can still reference the global variable or collection if you use the [disambiguation operator](reference/operators.md) **[@Radius]**.
 
 ## Use a context variable (Power Apps only)
 
@@ -213,7 +217,7 @@ Let's rebuild our adding machine by using a context variable:
 
     The mere existence of this formula establishes **RunningTotal** as a context variable that holds a number because of the **+** operator. You can reference **RunningTotal** anywhere in this screen. Whenever the user opens this app, **RunningTotal** has an initial value of *blank*.
 
-    The first time that the user selects the **Add** button and **[UpdateContext](/powerapps/maker/canvas-apps/functions/function-updatecontext)** runs, **RunningTotal** is set to the value **RunningTotal + TextInput1**.
+    The first time that the user selects the **Add** button and **[UpdateContext](reference/function-updatecontext.md)** runs, **RunningTotal** is set to the value **RunningTotal + TextInput1**.
 
     ![OnSelect property of the Add button.](media/variables/context-variable-1.png "OnSelect property of the Add button")
 
@@ -221,7 +225,7 @@ Let's rebuild our adding machine by using a context variable:
 
     **UpdateContext( { RunningTotal: 0 } )**
 
-    Again, **[UpdateContext](/powerapps/maker/canvas-apps/functions/function-updatecontext)** is used with the formula **UpdateContext( { RunningTotal: 0 } )**.
+    Again, **[UpdateContext](reference/function-updatecontext.md)** is used with the formula **UpdateContext( { RunningTotal: 0 } )**.
 
     ![OnSelect property of the Clear button.](media/variables/context-variable-2.png "OnSelect property of the Clear button")
 

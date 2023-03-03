@@ -2,13 +2,14 @@
 title: "Hand off to a live agent (contains video)"
 description: "Learn how to hand off a bot conversation to a human agent, complete with context and conversation history."
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 12/28/2022
 
-ms.topic: article
+ms.topic: how-to
 author: iaanw 
 ms.author: iawilt
 ms.reviewer: pawant
 manager: shellyha
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: handoff, ceX, advanced-authoring
 ---
@@ -17,9 +18,9 @@ ms.custom: handoff, ceX, advanced-authoring
 
 With Power Virtual Agents, you can hand off conversations to live agents seamlessly and contextually.
 
-When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. Having access to this context means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
+When you hand off a conversation, you share the full history of the conversation (the context) and all user-defined variables. With this context, a live agent that uses a connected engagement hub can be: notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
-For more information about how to configure hand-off with [omnichannel for Customer Service](/dynamics365/customer-service/configure-bot-virtual-agent), see the [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
+For more information about how to configure hand-off with [Omnichannel for Customer Service](/dynamics365/customer-service/configure-bot-virtual-agent), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n4G1]
@@ -28,7 +29,7 @@ For more information about how to configure hand-off with [omnichannel for Custo
 > [!NOTE]
 > You can choose to escalate a bot conversation without linking to an engagement hub:
 >
-> 1. In the **Authoring canvas** for the topic you want to add an escalation option to, at the end of the topic, select the plus (+) icon to add a new node.
+> 1. In the **Authoring canvas** for the topic you want to add an escalation option to, at the end of the topic, select **Add node** (**+**) to add a new node.
 > 1. Select **Go to another topic** and then **Escalate**.
 >
 > **Escalate** is a [system topic](authoring-create-edit-topics.md#use-system-and-sample-topics) that, by default, provides a simple message to a user if they ask for a human agent.
@@ -37,9 +38,9 @@ For more information about how to configure hand-off with [omnichannel for Custo
 
 ## Prerequisites
 
-- You need a bot built with [Power Virtual Agents](https://aka.ms/TryPVA)
-- You need to have an engagement hub that is being used by live agents, such as [omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- A bot built with [Power Virtual Agents](https://aka.ms/TryPVA).
+- An engagement hub that is being used by live agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Triggering hand-off to a live agent
 
@@ -49,15 +50,15 @@ Upon triggering the hand-off topic, Power Virtual Agents starts the hand-off to 
 
 ### Implicit triggers
 
-In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there is no [topic](./authoring-create-edit-topics.md), or there is no matching option within a topic.
+In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there's no [topic](./authoring-create-edit-topics.md), or no matching option within a topic.
 
 In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid-way into a conversation.
 
-When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-create-edit-topics.md). This type of trigger is known as *implicit triggering*.
+When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-create-edit-topics.md). This type of trigger is known as _implicit triggering_.
 
 ### Explicit triggers
 
-When creating topics for your bot, you may determine that some topics require interaction with a human. This type of trigger is known as *explicit triggering*.
+When creating topics for your bot, you may determine that some topics require interaction with a human. This type of trigger is known as _explicit triggering_.
 
 In these instances, you must add a **Transfer to agent** node into the topic.
 
@@ -66,17 +67,17 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 > [!NOTE]
 > Conversations that reach this node will be marked as **Escalated** sessions in [reporting analytics](./analytics-overview.md).
 
-**Add a**Transfer to agent**node into a topic:**
+**Add a "Transfer to agent" node into a topic:**
 
 1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the bot you want to edit.
 
 1. Open the authoring canvas for the topic you want to add the **Transfer to agent** node to.
 
-1. Click the plus (+) icon to add a message node. Enter what the bot should say to indicate that transferal to a live agent is about to occur.
+1. Select **Add node** (**+**) to add a message node. Enter what the bot should say to indicate that transferal to a live agent is about to occur.
 
     :::image type="content" source="media/advanced-hand-off/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
-1. Underneath the message node, click the plus (+) icon, go to **End the conversation** and then select **Transfer to agent**
+1. Underneath the message node, select **Add node** (**+**), go to **End the conversation** and then select **Transfer to agent**
 
     :::image type="content" source="media/advanced-hand-off/handoff-add-transfer-node.png" alt-text="Screenshot of adding the node." border="false":::
 
@@ -95,18 +96,20 @@ You can use these variables to automatically determine where the conversation sh
 
 The following table lists the context variables available by default.
 
-| Context                                                      | Purpose                                                                                                                                           | Example                                                   |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| `va_Scope`                                                   | Helps route escalations to a live agent.                                                                                                          | `"bot"`                                                   |
-| `va_LastTopic`                                               | Helps route escalations to a live agent and helps ramp-up a live agent. Includes the last topic that was triggered by an utterance from the user. | `"Return items"`                                          |
-| `va_Topics`                                                  | Helps ramp-up a live agent.                                                                                                                       | `[ "Greetings", "Store Hours", "Return Item" ]`           |
-| `va_LastPhrases`                                             | Helps route escalation to a live agent and helps ramp-up a live agent.                                                                            | `"Can I return my item"`                                  |
-| `va_Phrases`                                                 | Helps ramp-up a live agent.                                                                                                                       | `["Hi", "When does store open", "Can I return my item" ]` |
-| `va_ConversationId`                                          | Helps uniquely identify a bot conversation.                                                                                                       | `GUID`                                                    |
-| `va_AgentMessage`                                            | Helps ramp-up a live agent.                                                                                                                       | `"Got a gift from: HandoffTest"`                          |
-| `va_BotId`                                                   | Helps identify the bot that is handing off a conversation.                                                                                        | `GUID`                                                    |
-| `va_Language`                                                | Helps route escalation to a live agent.                                                                                                           | `"en-us"`                                                 |
-| All [user-defined topic variables](./authoring-variables.md) | Helps ramp-up a live agent.                                                                                                                       | `@StoreLocation = "Bellevue"`                             |
+| Context                               | Purpose                                                                                                                                  | Example                                                   |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| `va_Scope`                            | Route escalations to a live agent.                                                                                                       | `"bot"`                                                   |
+| `va_LastTopic`                        | Route escalations to a live agent and help them ramp-up. Includes the last topic that was triggered by an utterance from the user.       | `"Return items"`                                          |
+| `va_Topics`                           | Ramp-up a live agent. Only includes topics triggered by end user using a trigger phrase. Doesn't include topics that were redirected to. | `[ "Greetings", "Store Hours", "Return Item" ]`           |
+| `va_LastPhrases`                      | Route escalation to a live agent and help them ramp-up.                                                                                  | `"Can I return my item"`                                  |
+| `va_Phrases`                          | Ramp-up a live agent.                                                                                                                    | `["Hi", "When does store open", "Can I return my item" ]` |
+| `va_ConversationId`                   | Uniquely identify a bot conversation.                                                                                                    | `6dba796e-2233-4ea8-881b-4b3ac2b8bbe9`                    |
+| `va_AgentMessage`                     | Ramp-up a live agent.                                                                                                                    | `"Got a gift from: HandoffTest"`                          |
+| `va_BotId`                            | Identify the bot that is handing off a conversation.                                                                                     | `6dba796e-2233-4ea8-881b-4b3ac2b8bbe9`                    |
+| `va_Language`                         | Route escalation to a live agent.                                                                                                        | `"en-us"`                                                 |
+| All [user-defined topic variables][1] | Ramp-up a live agent.                                                                                                                    | `@StoreLocation = "Bellevue"`                             |
+
+[1]: authoring-variables.md
 
 A customer may go through several topics prior to escalating. Power Virtual Agents gathers all contextual variables across topics and merges them before sending to the engagement hub.
 

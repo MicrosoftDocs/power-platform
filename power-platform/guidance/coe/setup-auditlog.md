@@ -19,9 +19,6 @@ search.app:
 ---
 # Set up the audit log connector
 
-> [!NOTE]
-> This Audit Log solution is not available for Dataverse for Teams.
-
 The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The flow uses a custom connector to connect to the Audit Log. In the following instructions, you'll set up the custom connector and configure the flow.
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
@@ -29,11 +26,14 @@ The Center of Excellence (CoE) Starter Kit will work without this flow, but the 
 >[!IMPORTANT]
 >Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
+[Watch a walk-through](https://www.youtube.com/watch?v=Lsooi7xp6eA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG&index=1&t=1360s) on how to set up the audit log connector.
+
 ## Before you use the audit log connector
 
 1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide)
-1. You must have access to the audit log. The Microsoft Power Platform Service Admin role doesn't give you access to the audit log. More information: [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log)
+1. The user identity running the flow must have permission to the audit logs. Minimum permissions for this described here: [Before you search the audit logs](/microsoft-365/compliance/audit-log-search?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log)
 1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+1. A Global Admin is required to configure the Azure AD app registration.
 
 The Office 365 Management APIs use Azure Active Directory (Azure AD) to provide authentication services that you can use to grant rights for your application to access them.
 
@@ -85,7 +85,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-1. Go to [make.powerapps.com](https://make.powerapps.com) > **Data** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
+1. Go to [make.powerapps.com](https://make.powerapps.com) > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
 1. Select **Edit**.
 
   ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
@@ -115,9 +115,9 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, https://manage.office365.us for a GCC high tenant and https://manage.protection.apps.mil for a DoD tenant.
 
-1. Copy the **Redirect URL** into your text document in Notepad.
-
 1. Select **Update Connector**.
+
+1. Copy the **Redirect URL** into your text document in Notepad.
 
 > [!NOTE]
 > If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy.
@@ -159,9 +159,11 @@ You should see a (200) status returned, which means the query was successful.
 ![Successful status being returned from the StartSubscription activity.](media/coe44.png "Successful status being returned from the StartSubscription activity")
 
 > [!IMPORTANT]
-> If you don't see a (200) response, the request has failed. There's an error with your setup that's keeping the flow from working. Common issues to check are: 
+> If you have previously enabled the subscription, you will see a **(400) The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
+> If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
-> - Are audit logs enabled, and do you have permission to view the audit logs? Check [protection.office.com](https://protection.office.com) > **Search** > **Audit Log Search**.
+>
+> - Are audit logs enabled, and do you have permission to view the audit logs? Check by seeing if you can search in the [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Azure AD app registration?
@@ -171,7 +173,7 @@ You should see a (200) status returned, which means the query was successful.
 
 ### Set up the Power Automate flow
 
-A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Microsoft Dataverse table, which is then used in the Power BI dashboard to report on sessions and unique users of an app.
+A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Microsoft Dataverse table. This table is then used in the Power BI dashboard to report on sessions and unique users of an app.
 
 1. Follow the instructions in [Set up core components](setup-core-components.md) to download the solution.
 1. Go to [make.powerapps.com](https://make.powerapps.com).
@@ -180,23 +182,24 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     ![Import the CoE audit log components solution.](media/coe-custom2.png "Import the CoE audit log components solution")
 
 1. Open the **Center of Excellence – Audit Log solution**.
-1. [Remove the unmanaged layer](after-setup.md#installing-upgrades) from the **\[Child\] Admin | Sync Logs**.
+1. [Remove the unmanaged layer](after-setup.md) from the **\[Child\] Admin | Sync Logs**.
 1. Select the **\[Child\] Admin | Sync Logs**.
 1. Edit the **Run only users** settings.
+   :::image type="content" source="media/coe49.png" alt-text="Child flow - run only users.":::
 
-   ![Child flow - run only users.](media/coe49.png "Child flow - run only users")
+1. For the  Office 365 Management API custom connector and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
+   :::image type="content" source="media/coe50.png" alt-text="Configure run only users.":::
 
-1. For the custom connector, Dataverse and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
-
-   ![Configure run only users.](media/coe50.png "Configure run only users")
+1. For the Microsoft Dataverse connector, leave the run-only permission value blank and confirm that the connection reference for the **CoE Audit Logs - Dataverse** connection is configured correctly. If the connection is showing an error, [update the connection reference](faq.md#update-connection-references) for the **CoE Audit Logs - Dataverse** connection reference.
+   :::image type="content" source="media/auditlogdv.png" alt-text="Confirm Dataverse connection reference is set to your account.":::
 
 1. Select **Save**, and then close the **Flow details** tab.
 
-1. (Optional) Edit the TimeInterval-Unit and TimeInterval-Interval environment variables to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You will receive an alert from this solution if the Audit Log fails to collect all data with your configured time interval.
+1. (Optional) Edit the TimeInterval-Unit and TimeInterval-Interval environment variables to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You'll receive an alert from this solution if the Audit Log fails to collect all data with your configured time interval.
 
     | Name | Description |
     |------|---------------|
-    |StartTime-Interval | Must be a whole number to represent the start time for how far back to fetch. <br> Default value: 1 (for 1 day back) |
+    |StartTime-Interval | Must be a whole number to represent the start time for how far back to fetch. <br> Default value: 1 (for one day back) |
     |StartTime-Unit | Determines units for how far back in time to go to fetch data. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br> Example legal values: Minute, Hour, Day <br>Default value: Day |
     |TimeInterval-Unit | Determines units for chunking the time since start. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br> Example legal values: Minute, Hour, Day <br>Default value: Hour |
     |TimeInterval-Interval | Must be a whole number to represent the number of chunks of type unit (above).<br> Default value: 1 (for 1 hour chunks) |
@@ -208,18 +211,25 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     > [!IMPORTANT]
     > Learn how to about environment variables: [Update Environment Variables](faq.md#update-environment-variables)
 
-    Here are some example configurations for these values:
-
-    | StartTime-Interval | StartTime-Unit | TimeInterval-Interval | TimeInterval-Unit | TimeSegment-CountLimit | Expectation                                                                                                                                               |
-    |--------------------|----------------|-----------------------|-------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |          1         |       day      |           1           |        hour       |           60           | Will   create 24 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past   24 hours |
-    |          2         |       day      |           1           |        hour       |           60           | Will   create 48 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past   48 hours |
-    |          1         |       day      |           5           |       minute      |           300          | Will   create 288 child flows, which is within the limit of 300.<br>Each child flow will do the work to pull back 5 minutes of from the past 24   hours |
-    |          1         |       day      |           15          |       minute      |           100          | Will create 96 child flows, which is within the limit of 100.<br>Each child flow will do the work to pull back 15 minutes of from the past   24 hours   |
-
 1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
    ![Turn audit log flows on.](media/coe-custom4.PNG "Turn audit log flows on")
+
+### Example configurations for environment variables
+
+Here are some example configurations for these values:
+
+| StartTime-Interval | StartTime-Unit | TimeInterval-Interval | TimeInterval-Unit | TimeSegment-CountLimit | Expectation |
+|--------------------|----------------|-----------------------|-------------------|------------------------|-------------|
+| 1 | day | 1 | hour | 60 | Will create 24 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past 24 hours |
+| 2 | day | 1 | hour | 60 | Will create 48 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past 48 hours |
+| 1 | day | 5 | minute | 300 | Will create 288 child flows, which is within the limit of 300.<br>Each child flow will do the work to pull back 5 minutes of from the past 24 hours |
+| 1 | day | 15 | minute | 100 | Will create 96 child flows, which is within the limit of 100.<br>Each child flow will do the work to pull back 15 minutes of from the past 24 hours |
+
+## How to get older data
+
+This solution collects app launches from the moment it's configured, and is not set up to collect historic app launches. Depending on your [Microsoft 365 license](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log), historic data will be available for up to a year using the audit log in Microsoft Purview.
+You can load historic data into the CoE Starter Kit tables manually. Learn more: [How to import old Audit Logs](https://github.com/microsoft/coe-starter-kit/issues/3040)
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 

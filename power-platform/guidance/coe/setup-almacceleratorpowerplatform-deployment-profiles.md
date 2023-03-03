@@ -2,13 +2,11 @@
 title: "Configuring the ALM Accelerator for Power Platform deployment user settings and profiles | MicrosoftDocs"
 description: "Deployment user settings and profiles direct the ALM Accelerator for Power Platform app on how to display UI components and how to source-control and deploy solutions."
 author: jenschristianschroder
-manager: devkeydet
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021
+ms.date: 02/13/2023
 ms.subservice: guidance
 ms.author: jeschro
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 search.audienceType: 
   - admin
 search.app: 
@@ -19,7 +17,7 @@ search.app:
 # Configuring deployment user settings and profiles for the ALM Accelerator for Power Platform app (preview)
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform see [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 Depending on a user's role, you can configure the application lifecycle management (ALM) accelerator by turning on and off certain features in the UI, based on user preference and experience. To help all users use the app effectively, a common scenario is to create both a maker experience (for users who are unfamiliar with ALM) and an advanced maker experience (for users who are very familiar with ALM concepts). Deployment profiles are linked to user settings. The app uses deployment profiles to make decisions for the user on where and how to create branches and approvals for deployment.
 
@@ -46,10 +44,20 @@ To create user settings for the ALM accelerator for Microsoft Power Platform, fo
     - **Drillthrough Status** - This function allows users to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.
     - **Profile Creation** - This function provides users with the ability to create new deployment profiles in the app.
     - **Profile Updates** - This function provides users with the ability to update deployment profiles settings in the app.
-    - **Advanced Promote** - This function provides users with the ability to change between using the advanced promote functionality. They can specify a source and target branch, or create a new branch.
     - **Advanced Deploy** - This function provides users with the ability to switch between using the advanced deploy functionality. They can specify a source and target branch for a pull request.
+    - **Advanced Promote** - This function provides users with the ability to change between using the advanced promote functionality. They can specify a source and target branch, or create a new branch.
     - **Bypass Prepare** - This function provides the user with the ability to skip the preparation step during the promotion of a solution. They can bypass needing to configure deployment settings before committing to source control.
+    - **Bypass Prepare Default** - If the **Bypass Prepare** is **Allowed**, this function prepopulates the **Bypass Prepare** toggle control in the ALM Accelerator App. If the **Bypass Prepare Default** set as Allowed the **Bypass Prepare** toggle control would be preset to True and vice versa.
+    - **Deployment Configuration** - This function provides the user with the ability to skip the preparation step during the promotion of a solution. They can bypass needing to configure deployment settings before committing to source control.
     - **Show All Solutions** - This function provides users with the ability to see all solutions in the selected environment.
+    - **Bypass Approval** - This function provides the user with the ability to skip the approval of Pull Request during the deployment of a solution. They can bypass needing to approve the Pull Request before deploying to test environments.
+    - **Bypass Approval Default** - If the **Bypass Approval** is **Allowed**, this function prepopulates the **Bypass Approval** toggle control in the ALM Accelerator App. If the **Bypass Approval Default** set as Allowed the **Bypass Approval** toggle control would be preset to True and vice versa.
+    - **Commit Portals** - This function provides the user with the ability to include the Power Apps Portal/Power Pages website during the solution commit to source control. They can select the Power Apps Portal/Power Pages website before committing to source control.
+    - **Commit Portals Default** - If the **Commit Portals** is **Allowed**, this function prepopulates the **Include Power Apps Portal/Power Pages** toggle control in the ALM Accelerator App. If the **Commit Portals Default** set as Allowed the **Include Power Apps Portal/Power Pages** toggle control would be preset to True and vice versa.
+    - **Publish Customizations** - This function provides the user with the ability to publish customizations during the solution commit to source control. They can select the publish customizations toggle before committing to source control or turn off the toggle to skip publishing which can save time in the commit process.
+    - **Publish Customizations Default** - If the **Publish Customizations** is **Allowed**, this function prepopulates the **Publish Customizations** toggle control in the ALM Accelerator App. If the **Bypass Approval Default** set as Allowed the **Bypass Approval** toggle control would be preset to True and vice versa.
+    - **Allow Import Managed** - This function provides the user with the ability to import managed solutions during the solution import. They can select the import managed toggle before importing the solution or turn off the toggle to import unmanaged solutions into their maker environment.
+    - **Allow Import Managed Default** - If the **Allow Import Managed** is **Allowed**, this function prepopulates the **Allow Import Managed** toggle control in the ALM Accelerator App. If the **Allow Import Managed Default** set as Allowed the **Allow Import Managed** toggle control would be preset to True and vice versa.
 
 1. Update **User Labels**. The following areas are configurable in the app related to user labels for functions. These values also appear in the **Deployment History** view under the action that was executed:
 
@@ -108,7 +116,7 @@ To share user settings created for a particular user profile, we recommend that 
 
    1. Under **Access -Teams**, select **See all**, and then select **Create Team**.
 
-   1. Enter the required fields, and select **AAD Group Team** as the **Team Type**.
+   1. Enter the required fields, and select **AAD Group Team** (AAD Security Group or AAD Office Group) as the **Team Type**.
 
    1. Select the **AAD Group** to use for this team, and then select **Next**.
 

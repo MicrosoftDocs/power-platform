@@ -4,11 +4,11 @@ description: Create or edit a security role
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2022
+ms.date: 01/13/2023
 search.audienceType: 
   - admin
 search.app:
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Create or edit a security role to manage access
+# Create or edit a security role to manage access 
 
 You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
   
@@ -116,7 +116,7 @@ For information on predefined security roles, see [Predefined security roles](da
  
  We've created a solution you can import that provides a security role with the required minimum privileges.
 
-Start by downloading the solution from the Download Center: [Microsoft Dataverse minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_2.zip).
+Start by downloading the solution from the Microsoft Download Center: [Microsoft Dataverse minimum privilege security role](https://go.microsoft.com/fwlink/?linkid=2221577).
 
 Then, follow the directions to import the solution: [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
 

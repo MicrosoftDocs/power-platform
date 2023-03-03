@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "fundamentals, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -30,7 +31,7 @@ Check community forums to see if other users have posted a solution that might h
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Microsoft support
 

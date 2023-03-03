@@ -10,6 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: jameslew
 ms.custom: "publication, azure, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -28,14 +29,13 @@ Adding your bot to Azure Bot Service channels requires considerable developer ex
 
 ## Prerequisites
 
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - An [Azure Bot Service subscription](https://azure.microsoft.com/services/bot-service/).
 - An Azure Bot Service bot using v4 SDK.
 - [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1.
 - Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine).
 - A bot created in Power Virtual Agents that you want to connect to an Azure Bot Service channel.
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
-You should also read [Connect your bot to mobile and custom apps](publication-connect-bot-to-custom-application.md) before following the instructions in this topic.
+- [Connect your bot to mobile and custom apps](publication-connect-bot-to-custom-application.md).
 
 ### Code samples
 
@@ -61,19 +61,19 @@ If you already have an Azure Bot Service bot, you need to add a Power Virtual Ag
 
 ## Get your Power Virtual Agents bot parameters
 
-To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
+To connect to the bot you have built with Power Virtual Agents, you'll need to retrieve your bot's name and token endpoint.
 
 1. Copy your bot's name in Power Virtual Agents.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
 
-1. On the side pane, go to **Manage** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select the channel you want to connect to. This topic uses Slack as an example.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-slack.png" alt-text="Slack channel." border="false":::
 
-1. Copy and save the *Bot ID* and *Tenant ID* value by selecting **Copy**. You will need these when connecting your bot to the Azure Bot Service channel.
+1. To copy and save the **Token Endpoint** value, select **Copy**. You'll need your endpoint to connect your bot to the Azure Bot Service channel.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-parameters-slack.png" alt-text="Get bot parameters." border="false":::
 
@@ -94,7 +94,6 @@ The following example uses samples from the [relay bot sample code](https://gith
     {   
         httpRequest.Method = HttpMethod.Get;
         UriBuilder uriBuilder = new UriBuilder(TokenEndPoint);
-        uriBuilder.Query = $"botId={BotId}&tenantId={TenantId}";
         httpRequest.RequestUri = uriBuilder.Uri;
         using (var response = await s_httpClient.SendAsync(httpRequest))
         {

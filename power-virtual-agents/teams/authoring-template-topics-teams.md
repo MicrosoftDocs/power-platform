@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: authoring, ceX, teams
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -25,7 +26,7 @@ Power Virtual Agents includes a set of four lessons from which you can see examp
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Access and use lesson topics for new bots
 
@@ -41,7 +42,7 @@ While the topics are functional, they are examples for the purposes of learning 
 
 1. Select each topic to see the bot's flow; including the bot's comments, expected user responses, decision points, and entity references.
 
-   :::image type="content" source="../media/authoring-template-topics/template-list.png" alt-text="List of lesson topics." border="false":::
+   :::image type="content" source="../media/authoring-template-topics/template-list-teams.png" alt-text="List of lesson topics." border="false":::
 
 > [!IMPORTANT]
 > You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.

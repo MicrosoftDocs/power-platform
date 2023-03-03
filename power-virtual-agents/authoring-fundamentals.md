@@ -9,10 +9,13 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "authoring, fundamentals, ce06092020"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Key concepts - Authoring Power Virtual Agents bots
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -29,13 +32,13 @@ Creating a bot with Power Virtual Agents is easy to do with the [no-code authori
 
 It's also easy to [test the bot](authoring-test-bot.md) without having to fully deploy the bot whenever you make a small change.
 
-There are also [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, as well as default [system topics](authoring-create-edit-topics.md#use-system-and-sample-topics).
+If you need, use the [lesson topics](authoring-template-topics.md) to help guide you through topic authoring&mdash;from simple to complex scenarios, as well as default [system topics](authoring-system-topics.md).
 
-You can also [choose what language you want your bot to use](authoring-language-support.md).
+Finally, you can [choose what language you want your bot to use](authoring-language-support.md) to best fit your needs.
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Accessibility
 
@@ -56,7 +59,7 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 - ```Alt + Shift + B``` will read out the target node.
 
 > [!NOTE]
-> If you are using a screen reader, note that the sidebar menu entry labeled **Manage** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded. This is a known issue with our menu control which will be fixed at a future date.
+> If you are using a screen reader, note that the navigation menu entry labeled **Settings** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded. This is a known issue with our menu control which will be fixed at a future date.
 
 ## In this section
 

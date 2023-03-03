@@ -5,7 +5,7 @@ author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2021
+ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -27,10 +27,12 @@ The Governance components solution contains assets relevant to admins and makers
 
 ## Compliance processes
 
+[Watch a walk-through](https://www.youtube.com/watch?v=WXXFjHLt5ss&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the compliance process works.
+
 ### Flows
 
 >[!NOTE]
->These flows are part of the Core components solution; however, most of its functionality is implemented in the Governance components solution. This is in order to facilitate easier shipping for Dataverse for Teams.
+>These flows are part of the Core components solution; however, most of its functionality is implemented in the Governance components solution.
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
@@ -69,24 +71,40 @@ You can customize the email sent out by the flow; by default, it will look like 
 
 #### Developer Compliance Center
 
+> [!NOTE]
+> - In the February 2023 release, the **Developer Compliance Center** canvas app has been replaced with the Developer Compliance Center model-driven app. The new app uses model-driven app features and custom pages. The Developer Compliance Center canvas app has been renamed to [deprecated] Developer Compliance Center and will be removed from the solution by June 2023.
+> - The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
+
 This app is used in the [auditing process](example-processes.md) as a tool for users to check whether their app, flow, chatbot or custom connector is compliant, and to submit information to the CoE admins as business justification to stay in compliance.
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 #### Compliance Status
 
-A traffic light indicates how compliant the resource is in relation to a predefined rule set.
+The Developer Compliance Center allows makers to check the compliance status and submit additional details for the following resources:
 
-- **Apps** are compliant if the app description is populated, the business justification is submitted, and the app has been published in the past 60 days.
-- **Flows** are compliant if the flow description is populated, the business justification is submitted, and the flow isn't suspended.
-- **Chatbots** are compliant if the chatbot description and the business justification are populated, and the chatbot isn't suspended.
-- **Custom connectors** are compliant if the custom connector description, business justification, and conditions of use are populated.
+- Canvas apps
+- Model-driven apps
+- Flows
+- Bots
+- Custom connectors
+- Desktop Flows
+- Solutions
+- Environments
 
-**Customize**: Verify that the compliance criteria matches your requirements, and update if necessary.
+Based on the resource, makers can filter their resources to the following compliance status:
 
-Makers can achieve compliance by providing additional information through the **Support Details** form:
+- **Missing Details** indicates that the compliance process or an admin has requested additional details to be submitted to bring the resource back into compliance.
+- **Flagged as inactive** indicates that the resource has been marked as inactive.
+- **Non-compliant** indicates that the resource is currently non compliant with existing DLP or billing policies, often this means that the resource can not be used until the problem is resolved.
+- **Re-publish needed** (for canvas apps only) indicates that the app has not been published in the past 60 days.
+- **Missing description** indicates that the resource needs a description populated to help the admin understand what the resource is used for.
+
+:::image type="content" source="media/coe56.png" alt-text="Developer Compliance Center overview":::
+
+For **Missing Details**, makers can achieve compliance by providing additional information through the **Support Details** form:
 
 - **Business Justification**: Describe the business need and the problem you're solving with this solution.
 - **Business Impact**: Define the operational impact this solution has on the people using it.
@@ -97,19 +115,9 @@ Makers can achieve compliance by providing additional information through the **
 
 **Customize**: Verify that the **Support Details** form matches your requirements, and update if necessary.
 
-:::row:::
-   :::column span="":::
-      ![Developer Compliance Center overview.](media/coe56.png "Developer Compliance Center overview")
-   :::column-end:::
-   :::column span="":::
-      ![Developer Compliance Center app detail.](media/coe57.png "Developer Compliance Center app detail")
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="media/coe57.png" alt-text="Developer Compliance Center app details":::
 
 ### Business process flows
-
-> [!NOTE]
-> Business process flows (BPFs) are not available if you have installed the Core Components in Dataverse for Teams.
 
 #### Power Apps App Approval BPF
 
@@ -193,7 +201,9 @@ All business process flows are disabled by default. To enable them, do the follo
 
 1. Repeat the previous step for **Flow Approval BPF**, **Custom Connector Approval BPF**, and **Chatbot Approval BPF**.
 
-## Inactivity notifications processes
+## Inactivity processes
+
+[Watch a walk-through](https://www.youtube.com/watch?v=PZ5u_2E9uUI&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the inactivity process works.
 
 ### Tables
 
@@ -208,10 +218,11 @@ Represents inactivity notifications approval tasks started during the Admin | In
 |[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  Triggered by admin \| Sync Template v3 |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
 | [Admin \| Inactivity notifications v2 (Check Approval)](#admin--inactivity-notifications-check-approval) | Schedule | Daily |
-| [Admin \| Inactivity notifications v2 (Clean Up and Delete)]#admin--inactivity-notifications-clean-up-and-delete) | Schedule | Daily |
+| [Admin \| Inactivity notifications v2 (Clean Up and Delete)](#admin--inactivity-notifications-clean-up-and-delete) | Schedule | Daily |
 | [Admin \| Inactivity notifications (Start Approval for Apps)](#admin--inactivity-notifications-v2-start-approval-for-apps) | Schedule | Weekly |
 | [Admin \| Inactivity notifications (Start Approval for Flows)](#admin--inactivity-notifications-v2-start-approval-for-flows) | Schedule | Weekly |
 | [Admin \| Email Managers Ignored Approvals](#admin--email-managers-ignored-inactivity-notifications-approvals) | Instant | Weekly |
+| [Admin \| Broken Connection Cleanup](#admin--broken-connection-cleanup) | Instant | Weekly |
 
 #### Admin \| Inactivity notifications v2 (Start Approval for Apps)
 
@@ -249,17 +260,18 @@ If approved in the past, but before deletion, it sends a reminder to archive the
 
 Runs daily and does two cleanup tasks for the workflow.
 
-1. Deletes timed out requests. Deletes, from the Archive Approval table, all non-approved requests that were created over a month ago.
-
 1. Deletes the flows and apps that were approved for deletion more than three weeks ago (configurable).
-
-**Customize**: By default, this flow won't delete the apps and flows. This is to ensure you explicitly are ready for that to occur. To begin deletion of flows and apps, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#all-environment-variables) to **Yes**.
+1. Deletes expired approval requests that were created over a month ago. If a maker ignores an approval request, their app or flow will not get deleted, however they will receive another approval request again in the future. Additionally, their manager will receive a notification on ignored requests.
 
 #### Admin \| Email Managers Ignored Inactivity notifications Approvals
 
 This flow works with the other Inactivity notifications flows in that it looks for approvals from this system that have been ignored by makers for one month or more and sends their manager a list of these, asking they help by encouraging their employees to approve or reject the request.
 
 ![Mail sent to managers.](media/ArchiveApps1.png "Mail sent to managers")
+
+#### Admin \| Broken Connection Cleanup
+
+Runs weekly deletes connection references that are errored out and which were last modified at least 30 days ago (configurable).
 
 ### Apps
 
@@ -295,6 +307,9 @@ And if the reason is sound, they can choose to exempt the object from future run
 
 ## Microsoft Teams governance
 
+>[!NOTE]
+>These components will not work in GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+
 ### Flows
 
 | Flow | Type | Schedule |
@@ -314,6 +329,10 @@ Save a copy of this flow if you want to change the wording in the emails or adap
 Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
 
 #### Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
+
+>[!NOTE]
+>You can now configure environment policies in Power Platform Admin Center to delete inactive Dataverse for Teams environments. As this feature is now available in Power Platform Admin Center, we will deprecate inactivity based deletion in the CoE Starter Kit effective November 2022.<br>
+>Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](/power-platform/admin/inactive-teams-environment)
 
 > [!IMPORTANT]
 > This flow deletes environments for which no business justification exists, or where the business justification has been rejected. Environment owners have 7 days to provide a business justification before the environment gets deleted.
@@ -341,14 +360,18 @@ This flow sends a daily reminder email to environment owners who have been asked
 
 ## Cleanup for orphaned resources
 
+>[!NOTE]
+>These components will not work in GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+
+[Watch a walk-through](https://www.youtube.com/watch?v=0zptiBppTNo&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the clean-up for orphaned objects process works.
+
 ### Flows
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
 | [Request Orphaned Objects Reassigned (Child)](#request-orphaned-objects-reassigned-child) | Instant | child |
 | [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | daily |
-| [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
-| [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
+
 
 #### Request Orphaned Objects Reassigned (Parent)
 
@@ -374,18 +397,6 @@ If they choose to see the items individually, then they can make these decisions
 
 ![Orphaned object item.](media/orphanedobjects3.png "Orphaned object item")
 
-#### HELPER - CanvasAppOperations Gov
-
-This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. 
-
-The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory.
-
-#### HELPER - CloudFlowOperations Gov
-
-This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. 
-
-The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory.
-
 ## App Quarantine process
 
 ### Environment variables
@@ -406,7 +417,7 @@ The operations supported are Delete and Assign (which reassigns owner). It perfo
 This flow runs on a schedule and checks if any apps need quarantining based on the following criteria:
 
 - Environment is included in the quarantine process.
-- Compliance details have been requested and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
+- Compliance details have been requested, but are not yet submitted, and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
 - App is not already quarantined.
 - Admin Risk Assessment status is not complete.
 
@@ -433,7 +444,7 @@ If the app is released from quarantine, an email is sent to the maker to inform 
 
 ![The app maker gets an email notification to inform them their app has been released from quarantine.](media/quarantine3.png "The app maker gets an email notification to inform them their app has been released from quarantine.")
 
-Apps that are quarantined are also flagged in the [Developer Compliance Center](#developer-compliance-center).
+Apps that are quarantined are also flagged in the [Developer Compliance Center](#developer-compliance-center) as **Non-Compliant**.
 
 ![Quarantined apps are highlighted as such in the Developer Compliance Center app.](media/quarantine5.png "Quarantined apps are highlighted as such in the Developer Compliance Center app.")
 

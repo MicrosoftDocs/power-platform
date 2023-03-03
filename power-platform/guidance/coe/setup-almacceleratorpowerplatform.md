@@ -21,7 +21,7 @@ search.app:
 The ALM accelerator for Microsoft Power Platform components enable makers to apply source-control strategies with Azure DevOps, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of the downstream technologies and be able to switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform see [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 The ALM accelerator doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
@@ -80,6 +80,12 @@ For the ALM Accelerator for Power Platform canvas app to work, the following con
 - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
 - ALM Accelerator Custom DevOps (this connector will be created as part of the [accelerator solution import](#importing-the-solution-and-configuring-the-app))
 
+### Creator Kit
+
+The ALM Accelerator includes features that required the installation of the **Creator Kit** in the environment where you install ALM Accelerator for Power Platform.
+
+To install the **Creator Kit** follow steps described here : [Install Creator Kit](/power-platform/guidance/creator-kit/setup)
+
 ## Foundational setup
 
 The following steps guide you through setting up the foundations of the ALM accelerator for Microsoft Power Platform. These steps are general to the functionality of the ALM accelerator, and aren't project-specific or solution-specific.
@@ -88,22 +94,25 @@ The following steps guide you through setting up the foundations of the ALM acce
 
 Creating an app registration for the ALM accelerator is a one-time setup step to grant permissions to the app and the associated pipelines, permissions required to perform operations in Azure DevOps and Power Apps or Dataverse. The following steps show how to create a single app registration with permissions for both Dataverse and Azure DevOps. However, you might want to separate responsibilities specifically into Dataverse and Azure DevOps by creating separate app registrations.
 
+> [!NOTE]
+> When separating the responsibilities of Azure App registration you should consider both maintenance and security aspect. Read the [Considerations for App Registrations](almaccelerator-app-registrations.md) page to understand more.
+
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. Go to **Azure Active Directory** > **App registrations**.
+2. Go to **Azure Active Directory** > **App registrations**.
 
-1. Select **New registration**, and then give the registration a name, such as **ALMAcceleratorServicePrincipal**. Leave all other options as default, and then select **Register**.
+3. Select **New registration**, and then give the registration a name, such as **ALMAcceleratorServicePrincipal**. Leave all other options as default, and then select **Register**.
 
-1. Select **API permissions** > **+ Add a permission**.
+4. Select **API permissions** > **+ Add a permission**.
 
-1. Select **Dynamics CRM**, and configure permissions as follows:
+5. Select **Dynamics CRM**, and configure permissions as follows:
 
     - Select **Delegated permissions**.
     - Select **user_impersonation**.
 
-1. Select **Add permissions**.
+6. Select **Add permissions**.
 
-1. Repeat the preceding steps for the following permissions:
+7. Repeat the preceding steps for the following permissions:
     - **PowerApps-Advisor (Analysis All)**. This is required for running static analysis via the [app checker](../../alm/checker-api/overview.md). This permission can be found under **APIs my organization uses**.
 
     - **DevOps**. This is required for connecting to Azure DevOps via the custom connector in the ALM accelerator app. This permission can either be found under Microsoft APIs or under **APIs my organization uses**.
@@ -118,37 +127,37 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
       If you cannot find the Azure DevOps permissions in the **APIs my organization uses** you can get the **DevOps Application (client) ID** by following these steps:
 
       1. Open a private browser session and go to `https://dev.azure.com/[your devops organization]/_apis`
-      1. After being redirected to the login page, copy the value of the **client_id** parameter in the url on the login page
+      2. After being redirected to the login page, copy the value of the **client_id** parameter in the url on the login page
 
       ![Copy the value of the client id parameter.](media/almacceleratorpowerplatform-components/aa4pp-devops-clientid.png)
 
-1. After adding permissions in your app registration, select **Grant Admin consent for (your tenant)**.
+8. After adding permissions in your app registration, select **Grant Admin consent for (your tenant)**.
 
-1. Select **Certificates & Secrets**, and then select **New client secret**.
+9. Select **Certificates & Secrets**, and then select **New client secret**.
 
-1. Set the **Expiration**, and then select **Add**.
+10. Set the **Expiration**, and then select **Add**.
 
-1. After adding the secret, copy the value and store it for safekeeping to be used later.
+11. After adding the secret, copy the value and store it for safekeeping to be used later.
 
-1. Return to the **Overview** section of your app registration, and copy the **Application (client) ID** and **Directory (tenant) ID**.
+12. Return to the **Overview** section of your app registration, and copy the **Application (client) ID** and **Directory (tenant) ID**.
 
      > [!IMPORTANT]
      > You'll use this value later and call it out as the **Application (client) ID**, which is different from the **DevOps Application (client) ID** you copied earlier in step 7.
 
-1. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
+13. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
 
-1. Set the **Redirect URI** to *https://global.consent.azure-apim.net/redirect*.
+14. Set the **Redirect URI** to *https://global.consent.azure-apim.net/redirect*.
 
     > [!NOTE]
     > You might need to update this later when configuring your custom connector after you've installed the app, if this URL is different from the **Redirect URI** populated in the custom connector.
 
-1. Select **Configure**.
+15. Select **Configure**.
 
 ### Give Power App Management Permission to your App
 
 In order for the pipelines to perform certain actions against the environments (for example, Sharing Apps and setting component ownership) in your Power Platform tenant you will need to grant Power App Management permissions to your App registration. To do so you will need to run the following PowerShell cmdlet as an interactive user that has Power Apps administrative privileges. You will need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp). Learn more: [**New-PowerAppManagementApp** cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Currently this cmdlet gives elevated permissions (for example, Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed certain capabilities won't work in the AA4PP pipelines.
 
 ```powershell
@@ -176,6 +185,7 @@ The ALM accelerator uses several Azure DevOps extensions, including some third-p
       ![Image of the SARIF SAST Scans tab in Azure DevOps.](media/almacceleratorpowerplatform-components/image-20210217102344719.png)
 
 <a name="clone-the-yaml-pipelines-from-github-to-your-devops-instance"></a>
+
 ### Clone the YAML pipelines from GitHub to your Azure DevOps instance
 
 1. Go to <https://dev.azure.com/> and sign in to **DevOps (AzDO)**.
@@ -544,6 +554,54 @@ To execute the build pipeline for your solution when a pull request is created, 
 
    ![Select settings for validation build policy.](media/almacceleratorpowerplatform-components/image-20210301104042544.png)
 
+### Setting resource access permissions for pipelines
+
+For Pipelines to run they need to be able to access required resources, such as repositories, variable groups and service connections. To allow access you have the following three options:
+
+1. You can assign access when prompted on first run of a pipeline that requires access to a resource that the pipeline isn't already permitted to access.
+To do so, trigger the pipeline and open the pipeline run in Azure DevOps. Select the **View** button on the permission required banner. Select the **Permit** button for each required resource
+1. You can give explicit permissions for each of your pipelines to access required resources such as repositories, variable groups and service connections.
+
+   To give explicit permissions to repositories, follow these steps:
+
+   1. Open **Project Settings**, select **Repositories and select the repository for which you want to set pipeline access.
+   2. Select the **Security** tab.
+   3. Scroll down to **Pipeline permissions** and select the **+** button.
+   4. Select the pipeline that you want to give access to the repository.
+
+   To give explicit permissions to variable groups, follow these steps:
+
+   1. Open the **Pipelines** menu, select **Library** and select the relevant variable group.
+   2. Select **Pipeline permissions**.
+   3. Select **+** and select the pipeline that you want to give access to the variable group.
+
+   To give explicit permissions to service connections, follow these steps:
+
+   1. Open **Project Settings** and select **Service Connections**.
+   2. Select the **Service Connection** for which you want to give access, select the **More actions** button and select **Security**
+   3. In the Pipeline permissions section, select the **+** button and select the pipeline that you want to give access to the service connection.
+
+1. You can give access to all pipelines (existing and future) to access a repository, variable groups and service connections.
+
+   To give all pipelines access a repository, follow these steps:
+
+   1. Open **Project Settings**, select **Repositories** and select the repository for which you want to set pipeline access.
+   2. Select the **Security** tab.
+   3. Scroll down to **Pipeline permissions**.
+   4. Select the **More actions** button, select **Open access** and confirm.
+
+   To give all pipelines access to a variable group, follow these steps:
+
+   1. Open the **Pipelines** menu, select **Library** and select the relevant variable group.
+   2. Select **Pipeline permissions**
+   3. Select the **More actions** button, select **Open access** and confirm.
+
+   To give all pipelines access to a service connection, follow these steps:
+
+   1. Open **Project Settings** and select **Service Connections**.
+   2. Select the **Service Connection** for which you want to give access, select the **More actions** button and select **Security**
+   3. In the **Pipeline permissions** section, select the **More actions** button, select **Open access** and confirm.
+
 ### Create deployment configuration (optional)
 
 There are several configurations that need to be made in a target environment after a solution is deployed. These configurations are specific to the environment into which the solution is being deployed. Included are connection references, environment variables, and setting permissions for Azure AD Groups and Dataverse teams, in addition to sharing canvas apps and updating the ownership of solution components such as Power Automate flows. In addition to these configurations, sample or configuration data associated with Dataverse tables in the solution is frequently required in a target environment, to provide a full end-to-end ALM experience.
@@ -553,6 +611,8 @@ If your solution requires these other configuration settings or data, follow the
 ## Importing the solution and configuring the app
 
 ### Install the ALM accelerator in Dataverse
+
+1. The ALM Accelerator solution has a dependency on the [Creator Kit](/power-platform/guidance/creator-kit/overview). To install the Creator, go to [Install the Creator Kit](/power-platform/guidance/creator-kit/setup).
 
 1. Download the latest managed solution file from [GitHub](https://github.com/microsoft/coe-starter-kit/releases): CenterofExcellenceALMAccelerator_`[latest version]`_managed.zip.
 

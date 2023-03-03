@@ -2,7 +2,7 @@
 title: "Advanced AI features (contains video)"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 01/25/2022
+ms.date: 01/20/2023
 
 ms.topic: how-to
 author: iaanw
@@ -10,10 +10,11 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: eaglez
 ms.custom: "advanced-authoring, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Enable advanced AI features in Power Virtual Agents (Preview)
+# Enable advanced AI features in Power Virtual Agents
 
 [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -23,6 +24,10 @@ Select the version of Power Virtual Agents you're using here:
 >
 > - [Power Virtual Agents web app](advanced-ai-features.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/advanced-ai-features-teams.md)
+
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## AI models in Power Virtual Agents - background
 
@@ -35,24 +40,30 @@ Traditionally, intent triggering (how an AI model determines the intent of a que
 Power Virtual Agents, however, employs a language understanding model that uses an example-based approach, powered by a deep neural model. This type of large-scale model only needs to be trained once with large amounts of data using AI supercomputing, and can then be used for specific tasks with few examples without further training. The use of this model is part of the [AI at Scale](https://innovation.microsoft.com/ai-at-scale) initiative by Microsoft, and means the way AI is developed and used is changing. Specifically for Power Virtual Agents, the use of this model allows for an intuitive way for bot makers to work on their bot content confidently, without having to involve AI experts.
 
 With the Power Virtual Agents model, you only need to provide a few examples when you craft trigger phrases for a topic. The examples for a single topic usually consist of 5 to 10 phrases.
+
 Shorter trigger phrases are better, and you should aim for 2 to 10 words. You just need to make sure trigger phrases are semantically different: changing a single verb or noun could be enough to expand a topic's coverage. Adding things like new articles (changing or adding 'the' or 'a' or 'an'), changing capitalization, adding contractions (you're or don't), or adding plurals won't improve the triggering because contractions are already accounted for in the AI model.
 
+Entities used in corresponding topics will automatically be identified in user intents when matched with their trigger phrases. For example the user intent "I want to book a ticket to Boston" will match with the trigger phrase "I want to book a ticket to Paris".
+
 > [!NOTE]
-> The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
+> The AI capabilities that are in preview are only available to bots created with English as the set language.
 
 ## Advanced AI features overview
 
 There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.  
 
->  
+>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
 >
 
-## Topic overlap detection (preview)
+## Topic overlap detection
 
 Topic overlap detection helps improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
 
-[After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), go to **Analytics** on the side navigation pane, then go to the **Topic triggering (preview)** tab, where a list of overlapped topics will be displayed.
+> [!TIP]
+> Topic overlap detection is in general availability and supports [all languages supported in Power Virtual Agents](authoring-language-support.md).
+
+[After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), you can view a list of overlapped topics. In the navigation menu, select **Analytics**, then select the **Topic triggering** tab.
 
 :::image type="content" source="media/advanced-ai-features/overlapped-topics.png" alt-text="Screenshot showing the overlapping topics tile lists topics with their similarity score.":::
 
@@ -60,11 +71,11 @@ The list shows each overlapping topic along with a similarity score, which repre
 
 You can sort the list by its similarity score, topic name, or number of trigger phrase overlaps.
 
-If you click an item in the list, the **Topic overlap details** pane will open.
+If you select an item in the list, the **Topic overlap details** pane will open.
 
 :::image type="content" source="media/advanced-ai-features/topic-overlap-details.png" alt-text="Screenshot of the Topic overlap details pane showing overlaps related to Microsoft 365 language topics.":::
 
-In this example, there's one trigger phrase in the "Languages support in Microsoft 365?" topic (*For which languages is Microsoft 365 available?*) that semantically overlaps with a trigger phrase in the "Use Microsoft 365 in other languages?" topic (*Can I use Microsoft 365 in languages other than the one I originally purchased?*). Here, the AI has determined that both trigger phrases are semantically similar (they contain similar phrases, words, and grammar).
+In this example, there's one trigger phrase in the "Languages support in Microsoft 365?" topic (_For which languages is Microsoft 365 available?_) that semantically overlaps with a trigger phrase in the "Use Microsoft 365 in other languages?" topic (_Can I use Microsoft 365 in languages other than the one I originally purchased?_). Here, the AI has determined that both trigger phrases are semantically similar (they contain similar phrases, words, and grammar).
 
 Using semantically similar trigger phrases for two different topics can lead to confusion as the bot may not know which topic to open, and will need to ask follow-up questions to the bot user.
 
@@ -86,7 +97,7 @@ This feature analyzes sessions between your bot and users and surfaces suggestio
 
 The topic suggestion analyzer automatically runs once every one to two hours. It scans through all new queries made since the analyzer last ran, groups together queries to which it couldn't match an existing topic, and presents them in the list. Your bot will need at least 100 new conversations (from the last time any suggestion was generated) to trigger the process, and only those suggestions with more than three user sessions will be shown.
 
-When you click on an item in the suggestion list, a topic suggestion window will appear, showing the topic with some suggested trigger phrases. The suggested trigger phrases are based on the queries made by the bot users that couldn't be matched to an existing topic.
+When you select an item in the suggestion list, a topic suggestion window will appear, showing the topic with some suggested trigger phrases. The suggested trigger phrases are based on the queries made by the bot users that couldn't be matched to an existing topic.
 
 After reviewing the suggested trigger phrases, you can choose to delete the entire suggested topic (for example, if it's irrelevant to the bot) or add it to your list of topics by selecting **Add to topics**.
 
@@ -104,7 +115,7 @@ In the following screenshot, the first time the bot comes across a question it d
 
 Before auto-triggering improvements, a bot user asks a question with a spelling error "I'd like to purchase somethign," to which the bot says "Sorry, I didn't get that. Did you mean:" and then provides a few options such as **Buy items** or **Buy service**. In this case, the bot user selected **Buy items**.
 
-The next time someone asks the same question, the bot doesn't ask for clarification – it knows from previous interactions what the bot user is likely asking to buy items, so it goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?"
+The next time someone asks the same question, the bot doesn't ask for clarification. It knows from previous interactions that the bot user is likely asking to buy items. The bot goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?"
 
 In this example, it also understands the misspelling of "somethign" to mean "something," so it's able to carry over the improved intent triggering even though the bot user's question is spelled differently.
 
@@ -146,7 +157,7 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 ## Enable or disable AI capabilities
 
 1. Open a bot you want to enable or disable the features for.
-1. Expand the **Manage** tab, then select **AI capabilities**.
+1. Expand the **Settings** tab, then select **AI capabilities**.
 1. For each feature, select the checkbox to turn the feature on or off.
 1. Select **Save** at the top of the tab.
 

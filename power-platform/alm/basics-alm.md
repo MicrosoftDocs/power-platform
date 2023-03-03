@@ -32,14 +32,14 @@ This article describes the components, tools, and processes needed to implement 
 Environments are a space to store, manage, and share your organization's
 business data, apps, and business processes. They also serve as containers to
 separate apps that might have different roles, security requirements, or target
-audiences. Each environment can have only one Microsoft Dataverse database.
+audiences. Each environment can have only one Microsoft Dataverse database. More information: [Environments overview](/power-platform/admin/environments-overview)
 
 > [!IMPORTANT]
 > When you create an environment, you can choose to install Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Marketing. It is important to determine at that time if these apps are required or not because they can't be uninstalled or installed later. If you aren't building on these apps and will not require them in the future, we recommend that you not install them in your environments. This will help avoid dependency complications when you distribute solutions between environments.
 
 ### Types of environments used in ALM
 
-Using the Power Platform admin center, you can create these types of Dataverse environments:
+Using the Power Platform admin center, you can create these types of Power Platform environments:
 
 -   **Sandbox**  A sandbox environment is any non-production environment of Dataverse. Isolated from production, a sandbox environment is the place
     to safely develop and test application changes with low risk. Sandbox

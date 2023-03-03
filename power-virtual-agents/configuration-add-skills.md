@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "azure, extend, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -27,7 +28,7 @@ This article is intended for system administrators or IT professionals who are f
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Review restrictions and validation for skills used in Power Virtual Agents](/azure/bot-service/skill-pva)
 
 > [!IMPORTANT]
@@ -56,7 +57,7 @@ You can get your bot's ID from the **Add skill** window.
 
 **Add a skill to your bot:**
 
-1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), expand the **Manage** tab on the side and select **Skills**.
+1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), expand the **Settings** tab on the side and select **Skills**.
 
    :::image type="content" source="media/configuration-add-skills/skills-menu.png" alt-text="Select Manage, then Skills.":::
 

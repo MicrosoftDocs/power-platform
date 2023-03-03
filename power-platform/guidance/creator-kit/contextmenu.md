@@ -1,11 +1,11 @@
 ---
 title: ContextMenu control reference | Creator Kit
-description: Learn about the details and properties of ContextMenu control in the Creator Kit.
+description: Learn about the details and properties of the ContextMenu control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 11/02/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -22,45 +22,51 @@ contributors:
 
 # :::no-loc text="ContextMenu"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to input commands.
+
+> [!NOTE]
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/ContextMenu).
 
 :::image type="content" source="media/context-menu.png" alt-text="ContextMenu control.":::
 
 ## Description
 
-A contextual menu (`ContextMenu`) is a list of commands that are based on the context of selection, mouse hover or keyboard focus. They're one of the most effective and highly used command surfaces, and can be used in various places.
+A contextual menu (`ContextMenu`) is a list of commands that are based on the context of selection, mouse hover, or keyboard focus. They're one of the most effective and highly used command surfaces, and can be used in various places.
 
-This code component provides a wrapper around the [Fluent UI `ContextMenu`](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas apps and custom pages.
+This code component provides a wrapper around the [Fluent UI ContextualMenu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas apps and custom pages.
 
-> [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+## Properties
 
-## Limitations
-
-This code component can only be used in canvas apps and custom pages.
-
-## Key properties
+### Key Properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Items` | Table with the component items. |
-| `Chevron` | Set to true to display the chevron icon, indicating more options. |
-| `Input event` | Action that is triggered upon button-click. |
+| `Items` | The action items to render. The first item is considered the root item. |
 
-## Items structure
-
-Each item uses the below schema to visualize data in the component.
+#### `Items` Properties
 
 | Name | Description |
 | ------ | ----------- |
-| `ItemKey` | Arbitrary unique string associated with the item. |
-| `ItemDisplayName` | Text to display in the `ContextMenu` item. |
-| `ItemIconName` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
-| `ItemOverflow` | Set to true for overflow behavior |
+| `ItemDisplayName` |The Display Name of the menu item. |
+| `ItemKey` |The key to use to indicate which item is selected, and when adding sub items. The keys must be unique. |
+| `ItemEnabled` |Set to false if the option is disabled. |
+| `ItemVisible` |Set to false if the option is not visible. |
+| `ItemChecked` |Set to true if the option is checked. |
+| `ItemIconName` |The Fluent UI icon to use (see [Fluent UI icons](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons)) |
+| `ItemIconColor` |The color to render the icon as (e.g. named, rgb or hex value). |
+| `ItemIconOnly` |Do not show the text label - only the icon. |
+| `ItemHeader` |Render the item as a section header. If there are items that have their `ItemParentKey` set to the key of this item, then they are added as semantically grouped items under this section. |
+| `ItemTopDivider` | Render a divider at the top of the section. |
+| `ItemDivider` |Render the item as a section divider - or if the item is a header (`ItemHeader` = true), then controls whether to render a divider at the bottom of the section. |
+| `ItemParentKey` |Render the option as child item of another option. |
 
-Example:
+> [!NOTE]
+> - `ItemIconColor` will override the component's Theme value and ignore other state colors (e.g., disabled).
+> - `ItemHeader` and `ItemDivider` must be set to true to render as a divider. If set to false, it expects other values and will render blank.
+
+## Example
+
+Example Power Fx formula for `Items`:
 
   ```powerapps-dot
     Table(
@@ -80,7 +86,34 @@ Example:
     
   ```
 
-## Configure 'On Select' behavior
+### Style Properties
+
+| Property | Description |
+| -------- | ----------- |
+| `Theme` |Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
+| `Chevron` | Show or hide the down chevron on the root button |
+| `IconColor` | Optional. color of the icon on the context menu button. |
+| `HoverIconColor` | Optional. color of the icon when hovered over the context menu button. |
+| `IconSize` | Optional. In pixels, the size of the icon on the context menu button. |
+| `FontSize` | Optional. In pixels, the size of the text on the context menu button. |
+| `FontColor` | Optional. the color of the text on the context menu button. |
+| `HoverFontColor` | Optional. the color of the text when hovered over the context menu button. |
+| `FillColor` | Optional. the background color of the context menu button. |
+| `HoverFillColor` | Optional. the background color when hovered over the context menu button. |
+| `TextAlignment` | The alignment of the button text. Possible values: Center, Left or Right |
+| `AccessibilityLabel` | Screen reader aria-label |
+
+### Event Properties
+
+| Property | Description |
+| -------- | ----------- |
+| `InputEvent` | An event to send to the control. E.g. `SetFocus`. See below. |
+
+## Behavior
+
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
+
+### Configure 'On Select' behavior
 
 Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
@@ -99,8 +132,22 @@ Replace the `false` values with appropriate expressions in the Power Fx language
     )
   ```
 
-## Best practices
+### Setting Focus on the control
 
-See [Fluent UI `ContextMenu` control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu).
+When a new dialog is shown, and the default focus should be on the control, an explicit set focus will be needed. 
+
+To make calls to the input event, you can set a context variable that is bound to the Input Event property to a string that starts with `SetFocus` and followed by a random element to ensure that the app detects it as a change.
+
+E.g.
+
+```vb
+UpdateContext({ctxResizableTextareaEvent:"SetFocus" & Text(Rand())}));
+```
+
+The context variable `ctxResizableTextareaEvent` would then be bound to the property `Input Event` property.
+
+## Limitations
+
+This code component can only be used in canvas apps and custom pages.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

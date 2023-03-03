@@ -10,6 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.custom: "publication, authoring, ceX, teams"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -39,7 +40,7 @@ You can:
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 - [Share with users](admin-share-bots-teams.md) so they can install and chat with the bot in Microsoft Teams.
 - Your organization needs to allow Microsoft Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Teams or find it in the **Built by your colleagues** section in the Teams app store. Work with your admin to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) if it has been disabled for your organization.
 - Bots that are approved for the **Built by your organization** section (after submission to an admin) are managed separately by admins in the Microsoft Teams admin center's [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
@@ -49,7 +50,7 @@ You can:
 
 Providing the right description and appearance for the bot before making it available to other users is important, as it educates them on what the bot's purpose is and its branding (when applicable).
 
-1. Go to the **Publish** tab on the side pane and select **Make available to others**.
+1. In the navigation menu, select **Publish** and then select **Make available to others**.
 
 1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the Microsoft Teams app store and the app's About tab after the user installs it. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
 
@@ -85,7 +86,7 @@ After you have published a bot, you can add the bot to your own version of Micro
 > [!IMPORTANT]
 > New content in a freshly published bot won't appear in conversations that are currently ongoing. After 30 minutes of idle time, the bot will be updated.  
 >
-> You can type *Start over* in an existing conversation to start a new conversation right away and see the latest updates to the bot.
+> You can type _Start over_ in an existing conversation to start a new conversation right away and see the latest updates to the bot.
 
 You should add your bot to your own version of Teams before sharing it with others.
 
@@ -95,7 +96,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 1. Open the bot you want to add.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Open the bot** to have the installation prompt launch in Microsoft Teams. Select **Add** to have it added as an app in Teams. This only installs the bot for you.
 
@@ -107,7 +108,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 1. Open the bot you want to share.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Make the bot available to others**.
 
@@ -141,7 +142,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 1. Open the bot you want to show in the Microsoft Teams app store.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Make the bot available to others**.
 
@@ -172,7 +173,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 
 1. Open the bot you want to remove.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Make the bot available to others**.
 
@@ -207,7 +208,7 @@ Before submitting the bot to your organization, make sure:
 
 1. Open the bot you want to submit.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Make the bot available to others**.
 
@@ -269,7 +270,7 @@ To add a bot to the team it was created in:
 
 1. Open the bot you want to add to the team.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Make the bot available to others**.
 
@@ -296,7 +297,7 @@ To allow users to add a bot to a team:
 
 1. Open the bot you want to allow users to add to any team.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Make the bot available to others**.
 
@@ -322,7 +323,7 @@ To disallow users from adding a bot to a team:
 
 1. Open the bot you want to disallow users to add to any team.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Make the bot available to others**.
 
@@ -348,7 +349,7 @@ To configure a when a bot sends a private greeting:
 
 1. Open the bot you want to modify.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Make the bot available to others**.
 
@@ -370,7 +371,7 @@ You can download the bot's Teams app manifest to make detail changes to the mani
 
 1. Open the bot you want to download.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Make the bot available to others**.
 
@@ -404,7 +405,7 @@ For bots that are approved by an admin, the bots will continue to be shown in th
 
 1. Open the bot you want to disconnect.
 
-1. On the side pane, select **Publish**.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Make the bot available to others**.
 
@@ -419,7 +420,7 @@ You can always reconnect your bot after disconnecting it by selecting **Turn on 
 ## Known limitations
 
 - Currently, only the **Personal** and **Team** scopes are supported for Microsoft Teams. **Group chat** is not supported.
-- [Setting the bot avatar icon](customize-default-canvas-teams.md) from the side pane under **Manage** > **Details** will not show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
+- [Setting the bot avatar icon](customize-default-canvas-teams.md) on the details page won't show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Disconnecting your bot might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
 

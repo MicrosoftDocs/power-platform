@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: advanced-authoring, ceX, teams
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -31,13 +32,17 @@ You can read more about the AI behind Power Virtual Agents in the [Enable advanc
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
 >  
 
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
+
 ## Enable or disable AI capabilities
 
 To use these advanced AI capabilities in Power Virtual Agents:
 
 1. Open a bot you want to enable or disable the features for.
 
-1. Expand **Manage** on the side pane, then go to the **AI capabilities** tab.
+1. In the navigation menu, under **Settings**, select **AI capabilities**.
 
 1. For each feature, select the checkbox to turn the feature on or off.
 

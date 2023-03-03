@@ -12,6 +12,10 @@ search.audienceType:
   - maker
 search.app: 
   - PowerApps
+contributors:
+  - gregli-msft
+  - mduelae
+  - jorisdg
 ---
 # Imperative logic
 
@@ -31,8 +35,8 @@ By selecting a **Button** control, the user initiates a sequence of actions, or 
 * Change the screen that's displayed: **Back** functions.
 * Control a signal (Power Apps only): **Enable** and **Disable** functions.
 * Refresh, update, or remove items in a [data source](/powerapps/maker/canvas-apps/working-with-data-sources): **Refresh**, **Update**, **UpdateIf**, **Patch**, **Remove**, **RemoveIf** functions.
-* Update a context variable (Power Apps canvas only):  **[UpdateContext](/powerapps/maker/canvas-apps/functions/function-updatecontext)** function.
-* Create, update, or remove items in a [collection](/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect):  **Collect**, **Clear**, **ClearCollect** functions.
+* Update a context variable (Power Apps canvas only):  **[UpdateContext](reference/function-updatecontext.md)** function.
+* Create, update, or remove items in a [collection](reference/function-clear-collect-clearcollect.md):  **Collect**, **Clear**, **ClearCollect** functions.
 
 Because these functions change the state of the app, they can't be automatically recalculated. You can use them in the formulas for the **OnSelect**, **OnVisible**, **OnHidden**, and other **On...** properties, which are called behavior formulas.
 

@@ -9,10 +9,13 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "publication, fundamentals, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Key concepts - Publish your bot
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -33,13 +36,13 @@ Each time you want to update your bot, you publish it again from within the Powe
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Publish the latest bot content
 
 You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you'd like your customers to engage with the latest bot content.
 
-1. On the left side pane, select the **Publish** tab.
+1. In the navigation menu, select the **Publish** tab.
 
 1. Select **Publish** to make the latest bot content available to your customers.
 
@@ -66,8 +69,8 @@ After publishing your bot at least once, you can add channels to make the bot re
 
 To configure channels:
 
-1. Select **Manage**.
-1. In the left side pane, select the **Channels** tab.
+1. Select **Settings**.
+1. In the navigation menu, select the **Channels** tab.
 
 :::image type="content" source="media/publication-fundamentals-publish-channels/channel-channels-menu.png" alt-text="Channel settings." border="false":::
 
@@ -99,8 +102,8 @@ Different channels have different end-user experiences. The following table show
 | [Customer satisfaction survey](authoring-create-edit-topics.md#insert-nodes)      | Adaptive card | Text-only                                                                                               | Text-only                                                                                                  | Text-only                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes)           | Supported     | [Supported up to six (as hero card)](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#suggested-actions-support)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | [Markdown](https://daringfireball.net/projects/markdown/)                         | Supported     | [Partially Supported](/microsoftteams/platform/bots/how-to/format-your-bot-messages#text-only-messages) | [Partially supported](https://www.facebook.com/help/147348452522644?helpref=related)                       | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#preview-support-for-formatted-messages)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [Welcome message](authoring-create-edit-topics.md#insert-nodes)                   | Supported     | Supported                                                                                               | Not supported                                                                                              | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams) and [Chat](/dynamics365/customer-service/set-up-chat-widget). Not supported for other channels.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [Did-You-Mean](advanced-ai-features.md#automatic-triggering-improvements-preview) | Supported     | Supported                                                                                               | Supported                                                                                                  | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams), [Chat](/dynamics365/customer-service/set-up-chat-widget), Facebook, and text-only channels (SMS via [TeleSign](/dynamics/customer-service/configure-sms-channel) and [Twilio](/dynamics365/customer-service-configure-sms-channel-twilio), [WhatsApp](/dynamics365/customer-service/configure-whatsapp-channel), [WeChat](/dynamics365/customer-service/configure-wechat-channel), and [Twitter](/dynamics365/customer-service/configure-twitter-channel)).</br>Suggested actions will be presented as a text-only list; users will need to retype an option to respond |
+| [Welcome message](authoring-create-edit-topics.md#insert-nodes)                   | Supported     | Supported                                                                                               | Not supported                                                                                              | Supported for [Chat](/dynamics365/customer-service/set-up-chat-widget). Not supported for other channels.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [Did-You-Mean](advanced-ai-features.md#automatic-triggering-improvements-preview) | Supported     | Supported                                                                                               | Supported                                                                                                  | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams), [Chat](/dynamics365/customer-service/set-up-chat-widget), Facebook, and text-only channels (SMS via [TeleSign](/dynamics365/customer-service/configure-sms-channel) and [Twilio](/dynamics365/customer-service/configure-sms-channel-twilio), [WhatsApp](/dynamics365/customer-service/configure-whatsapp-channel), [WeChat](/dynamics365/customer-service/configure-wechat-channel), and [Twitter](/dynamics365/customer-service/configure-twitter-channel)).</br>Suggested actions will be presented as a text-only list; users will need to retype an option to respond |
 
 > [!IMPORTANT]
 > Users can't send attachments to Power Virtual Agents chatbots. If they try to upload a file (including media, such as images), the bot will say:

@@ -10,6 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.custom: "multi-author, admin, ceX, teams"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -24,21 +25,22 @@ Select the version of Power Virtual Agents you're using here:
 
 Share your bot with other users so they can chat with the bot or collaborate together to author it.
 
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
+- To manage who can chat with the bot in your organization, the bot's [end user authentication setting](configuration-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider and **Require user sign-in** enabled.  
+
 ## Share bots for users to chat with
 
 A user can always chat with a bot if it was created in the same team. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
-
-### Prerequisites
-
-- To manage who can chat with the bot in your organization, the bot's [end user authentication setting](configuration-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider and **Require user sign-in** enabled.  
 
 ### Share bot with security groups
 
 You can share your bot with security groups so their members can chat with the bot.
 
-1. Select **Share** at the top of the bot's home page.
+1. Select **Share** at the top of the bot's overview page.
 
-    :::image type="content" source="../media/admin-share-bots/sharing-bot-homepage-teams.PNG" alt-text="Sharing UI entry point in bot homepage.":::
+    :::image type="content" source="../media/admin-share-bots/sharing-bot-homepage-teams.PNG" alt-text="Sharing UI entry point in bot overview page.":::
 
 1. Specify the security group name that you would like to share the bot with.
 
@@ -66,7 +68,7 @@ You can share your bot with security groups so their members can chat with the b
 
 You can share your bot to allow everyone in the same organization as the bot to chat with it.
 
-1. Select **Share** at the top of the bot's home page.
+1. Select **Share** at the top of the bot's overview page.
 
 1. Select **Everyone in _your organization's name_**.
 
@@ -85,7 +87,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 ### Stop sharing with a security group
 
-1. Select **Share** at the top of the bot's home page.
+1. Select **Share** at the top of the bot's overview page.
 
 1. Select **X** next to the security groups that you want to stop sharing the bot with.
 
@@ -95,7 +97,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 ### Stop sharing with everyone in the organization
 
-1. Select **Share** on the bot's homepage.
+1. Select **Share** on the bot's overview page.
 
 1. Select **Everyone in _your organization's name_**.
 
@@ -133,11 +135,11 @@ You can see a list of the teams you belong to, and each bot within that team by 
 
 You can open bots for editing by selecting the bot's name.
 
-If you select the check mark next to the bot's name, you can go straight to the Topics or Analytics page for that bot. You can also select **Edit** to go to the bot's homepage.
+If you select the check mark next to the bot's name, you can go straight to the Topics or Analytics page for that bot. You can also select **Edit** to go to the bot's overview page.
 
 :::image type="content" source="../media/admin-share-bots/admin-share-bots-edit.png" alt-text="The Topics and Analytics buttons appear when a bot is selected.":::
 
-If you select the menu icon next the bot's name you can then select **Edit** to go to the bot's homepage, or go to the Topics or Analytics pages.
+If you select the menu icon next the bot's name you can then select **Edit** to go to the bot's overview page, or go to the Topics or Analytics pages.
 
 :::image type="content" source="../media/admin-share-bots/admin-share-bots-hamburger.png" alt-text="The bot's menu lets you edit details, topics, and see analytics":::
 
@@ -149,7 +151,7 @@ To make sure users who chat with your bot can run the [Power Automate](advanced-
 
 ## Collaborate on bots
 
-In the **Topics** list, you can see who's working on a topic under the **Editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email.
+In the **Topics** list, you can see who's working on a topic under the **Editing** column. You can select the person's icon to quickly chat with them in Teams or send them an email.
 
 This can help prevent conflicts if multiple people are working on the same topic.
 

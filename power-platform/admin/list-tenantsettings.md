@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/22/2021
+ms.date: 10/10/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -30,7 +30,7 @@ For more information about permissions and how to select them, see [Authenticati
 Authorization: Bearer eyJ0eXAiOi...
 Host: api.bap.microsoft.com
 Accept: application/json
-GET https://api.bap.microsoft.com/providers/Microsoft.BusinessAppPlatform/listtenantsettings?api-version=2020-10-01
+POST https://api.bap.microsoft.com/providers/Microsoft.BusinessAppPlatform/listtenantsettings?api-version=2020-10-01
 ```
 
 ## Request headers
@@ -93,7 +93,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.search.disableDocsSearch | Boolean | When this setting is true, users in the environment will see a message that Microsoft Learn and Documentation search categories have been turned off by the administrator in the search results page.  Default is false.|
 |powerPlatform.search.disableCommunitySearch | Boolean | When this setting is true, users in the environment will see a message that Community and Blog search categories have been turned off by the administrator in the search results page.  Default is false.|
 |powerPlatform.search.disableBingVideoSearch | Boolean | When this setting is true, users in the environment will see a message that Video search categories have been turned off by the administrator in the search results page.  Default is false.|
-|powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share a Power App built on Microsoft Teams.  Default is 10000 but can be increased or decreased as required.|
+|powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams.  Default is 10000 but can be increased or decreased as required.|
 |powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the Share With Everyone capability in all Power Apps.  Default is false.|
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps.  Default is false.|
 

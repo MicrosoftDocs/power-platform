@@ -1,6 +1,6 @@
 ---
 title: Breadcrumb control reference | Creator Kit
-description: Learn about the details and properties of Breadcrumb control in the Creator Kit.
+description: Learn about the details and properties of the Breadcrumb control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -22,44 +22,39 @@ contributors:
 
 # :::no-loc text="Breadcrumb"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to provide navigation.
+
+> [!NOTE]
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Breadcrumb).
 
 :::image type="content" source="media/breadcrumb.png" alt-text="Breadcrumb control.":::
 
 ## Description
 
-`Breadcrumb` controls should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. Breadcrumb also provides one-click access to higher levels of that hierarchy.
+`Breadcrumb` controls should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. A breadcrumb also provides one-click access to higher levels of that hierarchy.
 
-This code component provides a wrapper around the [Fluent UI `Breadcrumb`](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas and custom pages. 
+This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas apps and custom pages. 
 
-> [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
-## Limitations
-
-This code component can only be used in canvas apps and custom pages.
-
-## Key properties
+## Properties
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Items` | Table with the items |
-| `Max displayed items` | Maximum number of items that can be displayed |
-| `Overflow index` | The index where overflow items are visualized (when all items can't fit in the control width) |
+| `SelectedKey ` | This denotes the key selected. This will be updated via the OnChange event when the user interacts with the control. |
+| `Items` | The action items to render |
 
-## Items structure
+#### `Items` properties
 
-Each item uses the below schema to visualize data in the component. 
+Each item uses the following schema to visualize data in the component. 
 
 | Name | Description |
 | ------ | ----------- |
-| `ItemKey` | Arbitrary unique string associated with the breadcrumb item. |
-| `ItemDisplayName` | Text to display in the breadcrumb item. |
-| `ItemClickable` | If set to true, enables the item to be clickable. |
+| `ItemDisplayName` | The Display Name of the breadcrumb item |
+| `ItemKey` | The key to use to indicate which item is selected, and when adding sub items. The keys must be unique. |
+| `ItemClickable` | Set to false incase the specific breadcrumb item be non-clickable. |
 
-Example:
+Example Power Fx formula:
 
   ```powerapps-dot
   Table(
@@ -76,14 +71,31 @@ Example:
   )
   ```
 
+### Style properties
 
-## Configure "On Select" behavior
+| Name | Description |
+| ------ | ----------- |
+| `Theme ` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
+| `AccessibilityLabel` | Screen reader aria-label |
+| `MaxDisplayedItems` | The maximum number of breadcrumbs to display before coalescing. If zero, then all breadcrumbs will be rendered. |
+| `OverflowIndex` | Optional index where overflow items will be collapsed. By default it is set to zero. |
+
+### Event properties
+| Name | Description |
+| ------ | ----------- |
+| `InputEvent ` | An event to send to the control. E.g. `SetFocus`. See below. |
+
+## Behavior
+
+Supports [SetFocus](setfocus.md) as an `InputEvent`.
+
+### Configure "On Select" behavior
 
 Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language. 
 
-As this control is used for navigation, a logical action is to use [navigation functions](/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevant screen with the related data loaded).
+Because this control is used for navigation, a logical action is to use [navigation functions](/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevant screen with the related data loaded).
 
   ```powerapps-dot
     Switch( Self.Selected.ItemKey,
@@ -97,9 +109,20 @@ As this control is used for navigation, a logical action is to use [navigation f
           false
     )
   ```
+### Setting focus on the control
+When a new dialog is shown, and the default focus should be on the control, an explicit set focus will be needed.
 
-## Best practices
+To make calls to the input event, you can set a context variable that is bound to the Input Event property to a string that starts with `SetFocus` and followed by a random element to ensure that the app detects it as a change.
 
-See [Fluent UI `Breadcrumb` control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb).
+Example Power Fx formula:
+```powerapps-dot
+UpdateContext({ ctxResizableTextareaEvent:"SetFocus" & Text(Rand()) }));
+```
+
+The context variable `ctxResizableTextareaEvent` would then be bound to the property Input Event property.
+
+## Limitations
+
+This code component can only be used in canvas apps and custom pages.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

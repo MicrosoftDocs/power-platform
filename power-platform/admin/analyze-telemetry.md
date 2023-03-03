@@ -41,7 +41,7 @@ You can also use telemetry to observe overall performance trends so you can proa
 
 ## How does it work?
 
-Microsoft already gathers extensive telemetry on Dataverse and model-driven apps. With Application Insights integration, an environment or tenant admin provides the Application Insights instrumentation key while setting up the data export process in the Power Platform admin center. As soon as setup is complete, telemetry that Microsoft gathers about your Dataverse environment and any model-driven apps that use Application Insights are sent to your Application Insights environment. More information: [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource)
+Microsoft already gathers extensive telemetry on Dataverse and model-driven apps. With Application Insights integration, an environment or tenant admin provides the Application Insights instrumentation key while setting up the data export process in the Power Platform admin center. As soon as setup is complete, telemetry that Microsoft gathers about your environment and any model-driven apps that use Application Insights are sent to your Application Insights environment. More information: [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource)
 
 If you decide to opt out, you can go to the Power Platform admin center and delete the data export connection. This will stop the data export process. You can restart the process any time.
 

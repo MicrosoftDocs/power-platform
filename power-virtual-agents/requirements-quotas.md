@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: quotas, admin, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -22,11 +23,11 @@ Quotas are default constraints applied to chatbots that limit how often messages
 
 Quotas are applied to your chatbots alongside the capacity constraints you gained by purchasing a [Power Virtual Agents plan](https://powervirtualagents.microsoft.com/pricing). Also see [Licensing and capacity considerations](requirements-licensing.md).
 
-The following quotas, defined as requests per minute (RPM), apply to Power Virtual Agents chatbots.
+The following quotas, defined as requests per minute (RPM), apply to Power Virtual Agents chatbots' Dataverse environment.
   
-| Action                                                                                                                                     | Quota with the paid plan |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
-| **Messages to a chatbot**<br/>(Includes any message from a user or integrations, such as Azure Bot Framework skills, to a single chatbot.) | 800 RPM per bot          |
+| Action                                                                                                                                     | Quota with the paid plan          |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
+| **Messages to a chatbot**<br/>(Includes any message from a user or integrations, such as Azure Bot Framework skills, to a single chatbot.) | 800 RPM per Dataverse environment |
 
 If the quota for **messages to a chatbot** is met, the user chatting with the chatbot will see a failure notice when they try to send a message. They'll be prompted to retry.
 
@@ -43,7 +44,7 @@ These limits apply to the Power Virtual Agents web app and the Power Virtual Age
 | Bots            | N/A                                    | 50 per team                                                                                                             |
 | Topics          | 1000 per bot in Dataverse environments | 250 per bot in Dataverse for Teams environments<sup>1</sup> <br/>1000 per bot in Dataverse environments (after upgrade) |
 | Trigger phrases | 200 per topic                          | 200 per topic                                                                                                           |
-| Skills          | 100 per bot                            | 100 per bot<sup>2</sup>                                                                                                             |
+| Skills          | 100 per bot                            | 100 per bot<sup>2</sup>                                                                                                 |
 
 <sup>1</sup> If you're approaching limits in Dataverse for Teams environments, you can [upgrade Dataverse for Teams](teams/admin-upgrade-dataverse-teams.md) to continue adding topics.
 
@@ -51,10 +52,10 @@ These limits apply to the Power Virtual Agents web app and the Power Virtual Age
 
 ### Power Virtual Agents subscription limits
 
-| Feature                             | Standard subscription              | Teams (select Microsoft 365 subscriptions)                                                                                                                   |
-| ----------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Feature                             | Standard subscription              | Teams (select Microsoft 365 subscriptions)                                                                                                                               |
+| ----------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Sessions                            | N/A                                | Chat sessions are unlimited per tenant every month, but a service limit of 10 sessions per user every 24 hours across all bots in a tenant will be enforced.<sup>1</sup> |
-| Power Platform requests<sup>2</sup> | 250,000 every 24 hours<sup>3</sup> | 6,000 every 24 hours                                                                                                                                         |
+| Power Platform requests<sup>2</sup> | 250,000 every 24 hours<sup>3</sup> | 6,000 every 24 hours                                                                                                                                                     |
 
 <sup>1</sup> Power Virtual Agents [sessions](analytics-sessions.md) that are included with [Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) aren't pooled.  
 <sup>2</sup> These requests are consumed by Power Automate flows that are triggering by Power Virtual Agents chatbots. Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations).  
@@ -69,8 +70,8 @@ Configure all [required services for Power Automate](/power-automate/ip-address-
 <!-- best viewed/edited without wordwrap -->
 | Domains                            | Required | Protocols | Uses                                                                                                                                          |
 | ---------------------------------- | -------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| directline.botframework.com        | Yes      | HTTPS     | Access to Bot Framework Web Chat                                                                                                              |
-| directline.botframework.com        | Yes      | WS        | Web socket connection to support Chat                                                                                                         |
+| *.directline.botframework.com        | Yes      | HTTPS     | Access to Bot Framework Web Chat                                                                                                              |
+| *.directline.botframework.com        | Yes      | WS        | Web socket connection to support Chat                                                                                                         |
 | pipe.aria.microsoft.com            | No       | HTTPS     | Telemetry data gathered by Microsoft (strongly recommended to ensure Microsoft team can adequately respond to client-side bot editing issues) |
 | \*.powerva.microsoft.com           | Yes      | HTTPS     | Power Virtual Agents authoring experience and APIs                                                                                            |
 | \*.analysis.windows.net            | Yes      | HTTPS     | Analytics reports shown in Power Virtual Agents (through Power BI)                                                                            |

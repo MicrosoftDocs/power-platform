@@ -1,15 +1,18 @@
 ---
 title: "Error Codes in Microsoft Teams"
 description: "Troubleshoot error code responses from your bot in Microsoft Teams."
-author: v-alarioza
-ms.author: v-alarioza
-ms.topic: troubleshooting
 ms.date: 02/07/2022
 
-ms.reviewer: clmori
+ms.topic: troubleshooting
+author: iaanw
+ms.author: iawilt
 manager: shellyha
+ms.reviewer: clmori
+ms.service: power-virtual-agents
+
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
+
 # Error codes: Power Virtual Agents in Teams
 
 Select the version of Power Virtual Agents you're using here:
@@ -33,6 +36,10 @@ Errors may also appear in the [Topic Checker](authoring-topic-management-teams.m
 
 > [!NOTE]
 > The following errors can only occur in Microsoft Teams. To view the full list of errors that can appear in both the web app and Teams, please refer to [the web app version of this topic](../error-codes.md).
+
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Error List
 

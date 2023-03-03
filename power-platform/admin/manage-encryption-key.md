@@ -3,11 +3,11 @@ title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/14/2021
+ms.date: 01/27/2023
 author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -48,7 +48,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
   
  The manage keys feature lets you perform the following tasks.  
   
-- Enable the ability to self-manage database encryption keys that are associated with Dataverse environments.  
+- Enable the ability to self-manage database encryption keys that are associated with environments.  
   
 - Generate new encryption keys or upload existing .PFX or .BYOK encryption key files.  
   
@@ -68,19 +68,18 @@ The malicious administrator signs in to the Power Platform admin center, goes to
 These actions will result in disabling all the environments within the tenant from online access and make all database backups un-restorable.
   
 > [!IMPORTANT]
-> To prevent the malicious administrator from interrupting the business operations by locking the database, the managed keys feature doesn't allow tenant environments to be locked for 72 hours after the encryption key has changed or activated. Additionally, anytime an encryption key is changed for a tenant, all administrators receive an email message alerting them of the key change. This provides up to 72 hours for other administrators to roll back any unauthorized key changes. 
+> To prevent the malicious administrator from interrupting the business operations by locking the database, the managed keys feature doesn't allow tenant environments to be locked for 72 hours after the encryption key has changed or activated. This provides up to 72 hours for other administrators to roll back any unauthorized key changes. 
   
 <a name="KM_details"></a>   
 
+### Encryption key requirements
+
+If you provide your own encryption key, your key must meet  these  requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
   
-### Encryption key requirements  
- If you provide your own encryption key, your key must meet  these  requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
-  
--   The encryption key file format must be PFX or BYOK.  
-  
--   2048-bit RSA or RSA-HSM key type.  
-  
--   PFX encryption key files must be password protected.  
+- The encryption key file format must be PFX or BYOK.  
+- 2048-bit RSA.
+- RSA-HSM key type (requires a Microsoft Support request).
+- PFX encryption key files must be password protected.  
   
 For more information about generating and transferring an HSM-protected key over the Internet see [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys).  Only [nCipher Vendor HSM key](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) is supported. Before generating your HSM key, go to the Power Platform admin center **Manage encryption keys**/**Create New key** window to obtain the subscription ID for your environment region. You need to copy and paste this subscription ID into your HSM to create the key. This will ensure that only our Azure Key Vault can open your file.
   
@@ -119,7 +118,6 @@ Use this procedure to set the manage key feature the first time for an environme
 
 6. Select **Next**. 
 
-7. Email notification is sent to all administrators. More information: [Encryption key change notification](#encryption-key-change-notification).
 
 #### Generate a new key (.pfx)   
 1.    Enter a password, and then re-enter the password to confirm.
@@ -142,8 +140,8 @@ Once an encryption key is generated or uploaded for the tenant, it can be activa
 2.    Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar.
 1.  Select **Confirm** to acknowledge the manage key risk.
 2.  Select a key that has an **Available** state and then select **Activate key** on the toolbar.
-3.  Select **Confirm** to acknowledge the key change and that all administrators will be notified.
-    More information: [Encryption key change notification](#encryption-key-change-notification)
+3.  Select **Confirm** to acknowledge the key change.
+  
 
 When you activate a key for the tenant, it takes a while for the key management service to activate the key. The status of the **Key state** displays the key as **Installing** when the new or uploaded key is activated. 
 Once the key is activated, the following occurs: 
@@ -195,7 +193,7 @@ Since there is only one active key per tenant, locking the encryption for the te
 > - You must wait at least one hour after you lock active environments before you can unlock them. 
 > - Once the lock process begins, all encryption keys with either an Active or Available state are deleted. The lock process can take up to an hour and during this time unlocking locked environments is not allowed. 
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
 2. Select the **Environments** tab and then on the command bar select **Manage encryption keys**. 
 3. Select the **Active** key and then select **Lock active environments**. 
 4. On the right pane select **Upload active key**, browse to and select the key, enter the password, and then select **Lock**. 
@@ -210,7 +208,7 @@ To unlock environments you must first [upload](#upload-a-key-pfx-or-byok) and th
 > - You can't generate a new or upload an existing key until all locked environments are unlocked. 
 
 ##### Unlock encryption key
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
 2. Select the **Environments** tab and then select **Manage encryption keys**.  
 3. Select the key that has a **Locked** state, and then on the command bar select **Unlock key**. 
 4. Select **Upload locked key**, browse to and select the key that was used to lock the tenant, enter the password, and then select **Unlock**. 
@@ -258,13 +256,10 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 3. [Reset](sandbox-environments.md#reset-a-sandbox-environment)
    The environment's encrypted data will be deleted including backups. After the environment is reset, the environment encryption will revert back to the Microsoft managed key. 
 
-## Encryption key change notification
-> [!IMPORTANT]
-> When an encryption key is activated or changed, all administrators receive an email message alerting them of the change. This provides a means to allow other administrators to verify and confirm that the key was updated by an authorized administrator.  Since it takes time to activate the key and to encrypt all the environments, and to send out the email notification, an encryption key can only be updated once every 24 hours.
 
 ### See also  
 
-[SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
+[SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017&preserve-view=true)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

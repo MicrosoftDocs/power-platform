@@ -1,14 +1,13 @@
 ---
 title: "Connect Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue | MicrosoftDocs"
 description: Connect Gmail accounts, POP3 email server, or SMTP email server using credentials specified by a user or queue 
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/20/2022
-author: mduelae
+author: DanaMartens
 ms.subservice: admin
-ms.author: mkaur
-ms.reviewer: mkaur
+ms.author: dmartens
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

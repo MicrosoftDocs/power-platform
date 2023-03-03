@@ -1,16 +1,15 @@
 ---
 title: Requests limits and allocations | Microsoft Docs
 description: Requests limits and allocations
-author: cpdSeattle
+author: MicroSri
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/29/2022
+ms.date: 09/20/2022
 ms.subservice: admin
-ms.author: camdebay 
+ms.author: sriknair 
 ms.reviewer: jimholtz
 contributors: 
-  - viveke 
-  - snandi 
+  - ShawnNandiMSFT 
   - PriyaKodukula 
 search.audienceType: 
   - admin
@@ -72,13 +71,13 @@ A separate limit is established for certain activities(for example: A background
 - [Application users](create-users.md#create-an-application-user)
 - [Non-interactive users](create-users.md#create-a-non-interactive-user-account)
 - [Administrative users](create-users.md#create-an-administrative-user-account)
-- [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
+- [SYSTEM user](/power-apps/developer/data-platform/webapi/reference/systemuser#operations)
 
 Additionally, there are special free ($0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#user-and-portal-licensing) for more details.
 
 For these non-licensed identities, every tenant will get an initial base request limit per tenant determined by what paid licenses are on the tenant, plus accrued limits determined by the quantity of paid Dynamics 365 Enterprise and Professional licenses.<sup>1</sup> This pool can only be used by these non-licensed users and not by users with assigned interactive user licenses.
 
-| Products                                                    | Pooled non-licensed tenant-level requests per 24 hours                              |
+| Products                                                        | Pooled non-licensed tenant-level requests per 24 hours                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | Dynamics 365 Enterprise & Professional applications<sup>1</sup> | 500,000 base requests + 5,000 requests accrued per USL<sup>1</sup> up to 10,000,000 max<sup>2</sup> |
 | Power Apps (all licenses)                                       | 25,000 base requests with no per-license accrual for the tenant                         |
@@ -105,6 +104,10 @@ Microsoft reserves the right to enforce  limits for overages. If a customer enco
 ## Power Platform Request capacity add-on
 
 Customers that observe in reporting that they're frequently using more requests than limits can avoid high usage enforcement by purchasing the Power Platform Request capacity add-on. This add-on allows customers to increase the limits for specific high usage licensed users or high usage non-licensed users. Each capacity add-on raises the request limit by another 50,000 per 24 hours. Multiple capacity add-ons can be assigned to increase limits.
+
+You cannot assign Power Platform requests capacity add-on packs to users or flows during the [transition period](power-automate-licensing/types.md#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. 
+
+If your Power Automate flows are being throttled, try [Pay-as-you-go](power-automate-licensing/types.md#pay-as-you-go) to ensure none of the flows in the environment are throttled. If you cannot use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
 > [!NOTE]
 > Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users). The functionality for assignment of capacity add-ons will be aligned to the timing of high usage enforcement.
@@ -183,7 +186,7 @@ The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-requ
 | Caller ID	| The unique identifier of the calling identity. This can be null or empty. |
 | Caller Type	| The type of caller identity. Applicable values are System, Non-Interactive/Application.   |
 | Resource Type	| The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate. |
-| Resource ID	| The unique resource identifier. Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty. |
+| Resource ID	| The unique resource identifier. Based on the Resource Type, this could be an app ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty. |
 | Meter Category	| The top level meter in this case Power Platform request.    |
 | Meter Subcategory  | 	The detailed classification of what generated the request. This can be Dataverse, Power Apps, or Power Automate. |
 | Usage Datetime | 	The date and time of when the usage was captured (UTC). |
@@ -216,11 +219,11 @@ Here's a sample of a detailed usage report:
 
 ### What tools can I use to monitor and analyze Power Platform requests across the platform?
 
-Reporting for Power Platform Request usage in preview is available now in the Power Platform admin center.
+Reporting for Power Platform Request usage in preview is available in the Power Platform admin center.
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests started rolling out in May 2022. It might take a few weeks to reach all customers. Any potential high usage enforcement won't start until at least six months after reports have been made generally available. However, note that Power Automate will continue to throttle at transition limits until enforcement. See [FAQs](power-automate-licensing/types.md#faqs).
+The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests rolled out in June 2022. Following a public preview period, the reports will move to general availability. There is no current ETA for when this will happen.  Any potential high usage enforcement won't start until at least six months after reports have been made generally available.  However, note that Power Automate will continue to throttle at transition limits until enforcement. See [FAQs](power-automate-licensing/types.md#faqs).
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 

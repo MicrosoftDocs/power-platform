@@ -22,15 +22,9 @@ search.app:
 
 To install the CoE CLI:
 
-1. Download the zip file or clone the repository [coe-starter-kit](https://github.com/microsoft/coe-starter-kit).
-
-1. Go to the unzipped or cloned repository.
-
-   ```bash
-   cd coe-starter-kit
-   ```
-
-1. Go to the **coe-cli** folder.
+1. Download the [CoE Starter Kit compressed file](https://aka.ms/CoEStarterKitCurrentMonthRelease).
+1. Extract the zip file after downloading.
+1. Open unzipped folder and open the **coe-cli** folder
 
    ```bash
    cd coe-cli
@@ -43,14 +37,28 @@ Next, select either [local install](#local-install) or [Docker install](#docker-
 ### Prerequisites
 
 To run the CoE CLI application, you'll need to install the components below.
+> [!NOTE]
+> The CoE CLI has been tested with Azure CLI version up to 2.38.0
 
 1. An installation of Node 16+.
 
    a. [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
-1. Azure CLI (version 2.24.0 or later) is required for user authentication and Azure Active Directory integration.
+1. Azure CLI (version 2.37.0+) is required for user authentication and Azure Active Directory integration.
 
    a. [Install Azure CLI](/cli/azure/install-azure-cli)
+
+1. PowerShell Core (version 7.2+)
+
+   a. [/powershell/scripting/install/installing-powershell](/powershell/scripting/install/installing-powershell)
+
+1. Git CLI (version 2.37.2+)
+
+   a. [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+### Non Administrator Install
+
+If you do not have administration rights you can use the [Non Administration Install](./non-administrator-local-install.md)
 
 ### Checking prerequisites
 
@@ -106,7 +114,7 @@ To run the CoE CLI application, you'll need the following software.
 
 ### Docker install steps
 
-> [!Note]
+> [!NOTE]
 > On some operating systems, you may need to use `sudo` before each of the Docker commands.
 
 1. Build docker image.

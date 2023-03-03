@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "customization, ceX, teams"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -29,13 +30,13 @@ and the bot name at any time, and add a long and short description when you publ
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Change the bot avatar icon and name
 
-1. On the side pane, select **Manage** > **Details**.
+1. In the navigation menu, under **Settings**, select **Details**.
 
-    :::image type="content" source="../media/customize-default-canvas/custom-canvas-details-teams.png" alt-text="The Details tab is found in the Manage section on the side pane.":::
+    :::image type="content" source="../media/customize-default-canvas/custom-canvas-name-icon-teams.png" alt-text="The Details tab is found in the Manage section in the navigation menu.":::
 
 1. Make changes to the **Bot name** and bot avatar icon.  
     The avatar icon needs to be an image type and can be any size - it will be automatically resized and positioned so it is in the middle of the colored square.

@@ -6,7 +6,7 @@ manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/21/2022
+ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -29,14 +29,126 @@ Multiple nurture components are provided in the Center of Excellence (CoE) Start
 
 The core components solution is required for the nurture components solution to work.
 
-1. Import the solution
-    1. If [Installing to Production Environment](faq.md#installing-a-solution-in-a-production-environment) – use the solution file from the download called  CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip.
-    1. If [Installing to Dataverse for Teams Environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment) – use the solution file from the download called  CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip.
+1. Import the solution: Use the CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip file from the download to [install the solution](faq.md#installing-a-solution-in-a-production-environment).
 1. Leave all environment variables blank on import.
+
+## Set up video hub components
+
+### Set up the Video hub components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Video hub**.
+1. This app provides a guided step by step experience through the configuration steps.
+   :::image type="content" source="media/setupwizard-vide.png" alt-text="CoE Starter Kit Setup Wizard - Video hub":::
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+### Set up the Video hub components manually
+
+#### Review and enable video hub canvas app features
+
+The canvas app has two features that can be enabled:
+
+1. Comments
+2. Related video
+
+Either, or both can be enabled by updating the following environment variables in the CoE Admin Command Center app:
+
+1. Video Hub - Enable Comments
+1. Video Hub - Related Videos
+
+Follow [detailed instructions for setting environment variables](/power-platform/guidance/coe/faq#update-environment-variables).
+
+##### Enable Comments
+
+When enabled, video hub users will be able to comment on selected videos. Comment moderation is managed through the admin app - comments must be approved prior to them becoming visible in the video hub.
+
+Approve comments in the admin app by
+![Approve comments](media/Approve-or-reject-comment.png)
+
+##### Related video
+
+When enabled, video hub users will see a list of similar videos to the one that they've selected. This is filtered by the 'content category' value of content.  
+
+![Related video enabled](media/Video-hub-RelatedVideoEnabled.png)
+
+#### Share apps with admins and makers
+
+The video hub components consist of two apps:
+
+- [**Nurture apps - admin**](nurture-components.md#video-hub---admin) app to manage content, playlists and comments. Share this app with other admins, and assign them the Power Platform SR security role.
+- [**Video hub**](nurture-components.md#video-hub) canvas app for video content. Share this app with your makers and assign them the Power Platform SR security role.
+
+More information:
+
+- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+
+### Manage content in the Nurture apps - admin app
+
+#### Video content
+
+Administrators manage video content in the admin app. The following table describes the schema for video content:
+
+|Column|Column type|Description|
+|------|-----|------|
+|Name| Text | The title of the video, for example 'Building responsive Power Apps'|
+|Owner| User| The creator of the record|
+|Content description| Text | Detailed description of the video |
+| Content URL | Text (URL) | The URL to the video | 
+| View count | Number | This is updated via the video hub canvas app. When a user watches a video, the view count is updated |
+| Power Platform product | Choice | Categorizes the video based on Power Platform product |
+| Content category | Choice | Select the type of video; for example: How-to, Success story, Community session |
+
+#### Playlists
+
+Playlists are managed by administrators.  Playlists are curated lists of video content.  Playlists have the following schema:
+
+|Column|Column type|Description|
+|------|-----|------|
+| Name | Text | Represents the display name for the playlist |
+| Owner | User | The creator of the record | 
+| Playlist description | Text | Represents a detailed description of the playlist |
+| Playlist type | Choice | Represents the playlist type.  Options available are personal or shared. Shared playlists are visible to all users, private playlists are only visible to the person that created it. **Note** - private playlists are coming in a future release. |
+
+Playlists are a curated collection of videos. One playlist has many playlist items, the schema for a playlist item is represented in the following table:
+
+|Column|Column type|Description|
+|------|-----|------|
+| Name | Text | This can be set to any value, it is not used in the video hub canvas app |
+| Playlist | Lookup | This lookup column returns a list of playlists|
+| Community hub content | Lookup| This lookup column returns a list of video content |
+
+#### Comments
+
+Comments are created by users of the video hub canvas app.  Comments are moderated and only visible when an administrator has set the **Comment status** column value to **Approved**.
+
+Comments have the following schema:
+
+|Column|Column type|Description|
+|------|-----|------|
+| Name | Text | Unused in admin app. The name column is populated when comments are created via video hub canvas app|
+| Comment text | Text | Represents the users comment text|
+| Comment status | Choice | Approved or rejected.  Only approved comments will appear in the video hub canvas app |
+| Community hub content | Lookup | Represents the video related to the comment |
 
 ## Set up training in a day components
 
-### Update environment variables values
+### Set up the training in a day components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Training in a day**.
+1. This app provides a guided step by step experience through the configuration steps.
+   :::image type="content" source="media/setupwizard-training.png" alt-text="CoE Starter Kit Setup Wizard - Training in a day":::
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+### Set up the training in a day components manually
+
+#### Update environment variables values
 
 [Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
 
@@ -45,7 +157,7 @@ The core components solution is required for the nurture components solution to 
 | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    |
 | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
 
-### Set up a feedback form for your Training in a day
+#### Set up a feedback form for your Training in a day
 
 1. Open this [template form](https://forms.office.com/Pages/ShareFormPage.aspx?id=v4j5cvGGr0GRqy180BHbR8FBqAfISVJDqMM6DZbPmghUMUxUS1EwSVkxRExKVzdET1lZTTdWQ0FaOS4u&sharetoken=xjgXNluBcJOrLb2xg0TI).
 1. Select **Duplicate it**.
@@ -56,7 +168,7 @@ The core components solution is required for the nurture components solution to 
 
 1. When importing the solution, update thee *Training in a day - Feedback Form* with this value.
 
-### Turn on flows
+#### Turn on flows
 
 There are several flows which will need to be turned on for the training in a day components to work:
 
@@ -64,21 +176,33 @@ There are several flows which will need to be turned on for the training in a da
 - Training in a day \| Registration Confirmation
 - Training in a day \| Reminder 3 days prior to event
 
-### Share apps with admins and makers
+#### Share apps with admins and makers
 
 The training in a day components consist of two apps:
 
-- [**Power Platform Training Management**](nurture-components.md#training-in-a-day--management) app for training organizers to view and manage events and registrations. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
-- [**Power Platform Training Registration**](nurture-components.md#training-in-a-day--registration) app for attendees to register to training events. Share this app with your makers, and assign them the Power Platform Maker SR security role.
+- [**Nurture apps - Admin**](nurture-components.md#nurture-apps---admin) app for training organizers to view and manage events and registrations. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
+- [**Nurture apps - Maker**](nurture-components.md#training-in-a-day-pages-in-nurture-apps---maker-app) app for attendees to register to training events. Share this app with your makers, and assign them the Power Platform Maker SR security role.
 
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Set up maker assessment components
 
-### Update environment variables values
+### Set up the maker assessment components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Maker Assessment**.
+1. This app provides a guided step by step experience through the configuration steps.
+ :::image type="content" source="media/setupwizard-assessment.png" alt-text="CoE Starter Kit Setup Wizard - Solution Assessment":::
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+### Set up the maker assessment components manually
+
+#### Update environment variables values
 
 [Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
 
@@ -86,11 +210,11 @@ More information:
 |------|---------------|
 | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
 
-### Import starter data set for the Maker Assessment app
+#### Import starter data set for the Maker Assessment app
 
-Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
+Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#solution-assessment-page-in-nurture-apps---maker-apps) app. You can add your own questions or customize the existing ones using the admin app for this solution.
 
-### Turn on flow
+#### Turn on flow
 
 Turn on the flow:
 
@@ -98,24 +222,36 @@ Turn on the flow:
 
 Run the **Add Maker Assessment Starter Data** flow once to add starter data for the Maker Assessment apps: categories, questions, and answers.
 
-### Share apps with admins and makers
+#### Share apps with admins and makers
 
 The maker assessment components consist of two apps:
 
-- [**Maker Assessment Admin app**](nurture-components.md#maker-assessment-admin-app) app for admins to manage assessment questions. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
-- [**Maker Assessment**](nurture-components.md#maker-assessment) app for makers to complete assessments. Share this app with your makers, and assign them the Power Platform Maker SR security role.
+- [**Nurture apps - Admin**](nurture-components.md#nurture-apps---admin) app for admins to manage assessment questions. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
+- [**Nurture apps - Maker**](nurture-components.md#solution-assessment-page-in-nurture-apps---maker-apps) app for makers to complete assessments. Share this app with your makers, and assign them the Power Platform Maker SR security role.
 
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Set up Pulse feedback survey
 
 >[!NOTE]
->The flows supporting this processes use the [Microsoft Teams](/connectors/teams/) connector. Due to limitations of this connector, this process is currently not available in US Government (GCC High) and US Department of Defense (DoD).
+>The flows supporting this processes post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams is not available in GCC, GCC High and DoD. These flows should remain turned off in these regions as they will not work.
 
-### Update environment variables values
+### Set up the Pulse feedback survey components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Pulse feedback**.
+1. This app provides a guided step by step experience through the configuration steps.
+ :::image type="content" source="media/setupwizard-pulse.png" alt-text="CoE Starter Kit Setup Wizard - Pulse Feedback":::
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+### Set up the Pulse feedback survey components manually
+
+#### Update environment variables values
 
 [Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
 
@@ -123,14 +259,14 @@ More information:
 |------|---------------|
 | Pulse - How many makers to survey? | The Pulse survey is send to makers to provide feedback on their experience working with the CoE and Power Platform. Provide the number of makers you want to survey regularly here. If you set this number to 5, the survey will be sent to 5 random makers per week. A Default value of 1 is provided. |
 
-### Turn on flows to start collecting feedback
+#### Turn on flows to start collecting feedback
 
 There are several flows which will need to be turned on for the Pulse feedback survey components to work:
 
 - Pulse [Child] - post adaptive cards to maker
 - Pulse - Survey Makers for CoE feedback
 
-### Set up the Power BI dashboard to view feedback
+#### Set up the Power BI dashboard to view feedback
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 1. Enable the [TDS endpoint](/power-platform//admin/settings-features) on your environment.
@@ -144,7 +280,20 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ## Set up template catalog
 
-## Add your own templates to the Template Catalog
+### Set up the template catalog components using the Setup Wizard [Preview]
+
+1. Open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **More features** page and select **Template Catalog**.
+1. This app provides a guided step by step experience through the configuration steps.
+ :::image type="content" source="media/setupwizard-template.png" alt-text="CoE Starter Kit Setup Wizard - Template Catalog":::
+
+>[!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+
+### Set up the template catalog components manually
+
+#### Add your own templates to the Template Catalog
 
 If you have existing templates that you'd like to share with your makers (for example, template apps, brand guidelines, or app and flow samples), add them to the CoE Templates table so they show up in the template catalog.
 
@@ -155,16 +304,15 @@ If you have existing templates that you'd like to share with your makers (for ex
 1. Select **Data**.
 1. Select **+ Add Record** to add your template description and file.
 
-### Share apps with admins and makers
+#### Share apps with admins and makers
 
 The template catalog components consist of one apps:
 
-- [**Template Catalog**](nurture-components.md#template-catalog) app for makers and end users to browse available templates. Share this app with end users, and assign them the Power Platform User SR security role.
+- [**Nurture apps - Maker**](nurture-components.md#template-catalog-page-in-nurture-apps---maker-app) app for makers and end users to browse available templates. Share this app with end users, and assign them the Power Platform User SR security role.
 
 More information:
 
 - [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Set up product newsletter
 
@@ -179,66 +327,19 @@ Here is the full list of environment variables that impact the nurture solution,
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
-| Name | Description |
-|------|---------------|
-| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    |
-| Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. *Currently not used.* |
-| Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
-| Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
-| Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
-| Pulse - How many makers to survey? | The Pulse survey is send to makers to provide feedback on their experience working with the CoE and Power Platform. Provide the number of makers you want to survey regularly here. If you set this number to 5, the survey will be sent to 5 random makers per week. A Default value of 1 is provided. |
+| Name | Description | Default Value
+|------|---------------|------|
+| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    | n/a |
+| Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. *Currently not used.* |  n/a |
+| Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app | n/a |
+| Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app | n/a |
+| Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) | n/a |
+| Pulse - How many makers to survey? | The Pulse survey is send to makers to provide feedback on their experience working with the CoE and Power Platform. Provide the number of makers you want to survey regularly here. If you set this number to 5, the survey will be sent to 5 random makers per week. | 1 |
+| Video Hub - Enable comments | Enable or disable end users to leave comments on videos published via the Video Hub. Disabled by default.  | No |
+| Video Hub - Related Videos | Enable or disable showing related videos in the Video Hub. Enabled by default. | Yes |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
 To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
-<!--## Import starter data set for the Maker Assessment app
-
-Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
-
-### Upload starter data to SharePoint Online
-
-The initial set of assessment questions is provided in an Excel spreadsheet.
-
-1. Upload the **MakerAssessmentStarterData.xlsx** file to the Documents library of a SharePoint site in your tenant. You will find this file in the initial download of the CoEStarterKit.zip. 
-
-1. Note down the document library URL in this format, including the prefix and the trailing slash: [https://mytenant.sharepoint.com/sites/TargetSite/Shared%20Documents/](https://mytenant.sharepoint.com/sites/TargetSite/Shared%20Documents/)
-
-This file is only needed once for import, and can be deleted after the dataflow runs.
-
-### Update and run the Dataflow to load initial data into Dataverse
-
-Now load the initial data from SharePoint Online into Dataverse using a Dataflow:
-
-1. In your CoE environment, browse to **Data > Dataflows**, and edit the **Maker Assessment Starter Dataflow**
-   ![Edit the Dataflow.](media/MakerJourneyDataSetup1.png "Edit the Dataflow")
-
-1. Select **SPFolder** under Queries. Enter the document library you have uploaded the file to, including prefix and trailing slash.
-   ![Update the parameter with your SharePoint document library.](media/MakerJourneyDataSetup2.png "Update the parameter with your SharePoint document library")
-
-1. Select **assessmentCategoriesTable** under Queries and select **Configure connection**
-   ![Configure the connection for the dataflow.](media/MakerJourneyDataSetup3.png "Configure the connection for the dataflow")
-
-1. Choose an existing connection or create a new one and select **Connect**
-
-   ![Choose connection for the dataflow to connect to SharePoint.](media/MakerJourneyDataSetup5.png "Choose connection for the dataflow to connect to SharePoint")
-
-1. Data should now be loaded into the editor. If you see a connection error instead, make sure the **SPFolder** parameter is correct. Select **Next**.
-
-   ![Initial data will be loaded into the table view.](media/MakerJourneyDataSetup6.png "Initial data will be loaded into the table view")
-
-1. Select **Next** without changing any default setting.
-
-   ![Select Next without changing any default settings.](media/MakerJourneyDataSetup7.png "Select Next without changing any default settings")
-
-1. Select **Publish now** to create the Dataflow.
-
-1. Wait while the Dataflow refresh is in progress.
-
-   ![Wait while the Dataflow refresh is in progress.](media/MakerJourneyDataSetup9.png "Wait while the Dataflow refresh is in progress")
-
->[!TIP]
->If you see connection error, please select **Refresh** as the connection may not have resolved in time for the initial load:
-   ![Error.](media/MakerJourneyDataSetup10.png "Error")-->

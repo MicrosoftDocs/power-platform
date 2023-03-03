@@ -1,14 +1,13 @@
 ---
 title: "Email service configurations supported by server-side synchronization"
 description: "Learn about the email service configurations supported by server-side synchronization when using customer engagement apps and Microsoft Power Platform."
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/13/2022
-author: mduelae
+ms.date: 06/23/2022
+author: gattimassimo 
 ms.subservice: admin
 ms.author: magatti
-ms.reviewer: magatti
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -68,8 +67,7 @@ Customers can connect to a Microsoft Exchange online deployment hosted in a diff
 - [!INCLUDE[pn_ms_Exchange_Server_2003_short](../includes/pn-ms-exchange-server-2003-short.md)] and [!INCLUDE[pn_ms_Exchange_Server_2007_short](../includes/pn-ms-exchange-server-2007-short.md)]  
 - Server-side synchronization in customer engagement apps requires a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)]/SMTP email server that is also FIPS 140-2 compliant. Some email servers are not FIPS 140-2 compliant, such as MSN, Outlook.com, or Windows Live Mail
 - Multi-factor authentication isn't supported for customer engagement apps to Exchange Server (on-premises), and Customer Engagement (on-premises) to Exchange Online
-
-For Dynamics 365 on-premises situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system](integrate-synchronize-your-email-system.md)  
+ 
   
 > [!NOTE]
 > We recommend that you don't use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated data not synchronizing to all attendees.  

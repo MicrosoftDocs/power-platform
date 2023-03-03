@@ -1,15 +1,14 @@
-﻿---
-title: "Establishing an Environment Strategy - Microsoft Power Platform | MicrosoftDocs"
-description: "Environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization users to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them."
+---
+title: "Establishing an environment strategy - Microsoft Power Platform | MicrosoftDocs"
+description: Develop an environment strategy to securely manage resources in Power Platform environments while allowing productive development.
 author: manuelap-msft
-manager: devkeydet
-
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 2/23/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
+contributors:
+    - ProfessorKendrick
 search.audienceType: 
   - admin
 search.app: 
@@ -19,9 +18,7 @@ search.app:
 ---
 # Establishing an environment strategy
 
-
-
-Environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization members to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them. More information: [Microsoft Power Platform environments overview](../../admin/environments-overview.md)
+Power Platform environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization members to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them. More information: [Microsoft Power Platform environments overview](../../admin/environments-overview.md)
 
 Developing an environment strategy means configuring environments and other layers of data security in a way that supports productive development in your organization, while securing and organizing resources. A strategy to manage environment provisioning and access, and controlling resources within them, is important to:
 
@@ -126,7 +123,7 @@ Based on successful experience with customer engagements, here is a list of addi
     
   - Allows all members of IT to manage admin resources (such as test and production environments).
   - Only the service account has admin permissions in the environment.
-  - All other users have end user permissions and cannot create new resources—this is important because if users are given access to a data connection, they cannot create any new interface to interact with the data that wasn’t intended by the developer.
+  - All other users have end user permissions and cannot create new resources—this is important because if users are given access to a data connection, they can create any new interface to interact with the data that wasn’t intended by the developer.
   - IT is aware of production-grade applications that are in deployment since they’re involved in the implementation.
   - Service accounts will need Microsoft Power Platform or Dynamics 365 service admin permission in PIM. Assign additional licenses as needed depending on what connectors need to be used in the request process (for example, if Dataverse and Outlook are used, assign premium Power Apps and Office Enterprise).
   - When displaying the details for an application, it will show the service account as the creator and not the maker. This will help end users know who to contact in case of application issues.
@@ -201,5 +198,6 @@ Set up a [SharePoint site or a wiki](wiki-community.md) that clearly communicate
 
 Also clearly communicate your organization’s [DLP policies to makers](dlp-strategy.md#clearly-communicate-your-organizations-dlp-policies-to-makers).
 
+[!INCLUDE[Disclaimer AI-generated description](../../includes/disclaimer-ai-generated-description.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

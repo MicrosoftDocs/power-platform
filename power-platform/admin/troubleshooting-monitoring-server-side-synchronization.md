@@ -1,14 +1,13 @@
 ---
 title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftDocs"
 description: Troubleshooting and monitoring server-side synchronization
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
-author: mduelae
+ms.date: 02/28/2023
+author: DanaMartens
 ms.subservice: admin
-ms.author: mkaur
-ms.reviewer: mkaur
+ms.author: dmartens
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -264,6 +263,9 @@ This is a known issue and is not supported. If the organizer is someone outside 
   
 ### Be aware of Exchange Online receiving and sending limits  
  For enterprise customers with a large mail flow, make sure you're not running up against Exchange Online receiving and sending limits. See [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)  
+ 
+### A sent email is created with a Direction value of Incoming
+The **Direction** (DirectionCode) of an email created by server-side synchronization is dependent on whether the original email exists in the **Sent Items** folder. If the original email is located in the **Sent Items** folder, the **Direction** is designated as **Outgoing**. In contrast, if the email is not discovered in the **Sent Items** folder, it is created with the **Direction** value set to **Incoming**.
   
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) <br />

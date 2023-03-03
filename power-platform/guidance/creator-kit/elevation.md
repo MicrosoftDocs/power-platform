@@ -1,6 +1,6 @@
 ---
 title: Elevation control reference | Creator Kit
-description: Learn about the details and properties of Elevation control in the Creator Kit.
+description: Learn about the details and properties of the Elevation control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -22,41 +22,69 @@ contributors:
 
 # :::no-loc text="Elevation"::: control
 
-[This article is pre-release documentation and is subject to change.]
+A control used to construct cards and flyout menus.
 
-A control used to construct cards and flyouts.
-
-:::image type="content" source="media/elevation.png" alt-text="Elevation control":::
+:::image type="content" source="media/elevation.png" alt-text="Elevation control.":::
 
 ## Description
 
-Fluent UI `Elevation` support with mouse hover events.
+`Elevation` is used to draw focus to an experience and add a physical materiality to the app. Shallow levels are reserved for items that are closely connected to the canvas or view, such as tiles. Deeper levels create a prominent frame around the surface, drawing strong focus to self-contained experiences like dialogs. Supports mouse hover events.
 
-> [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+Go to [Fluent UI Elevation style](https://developer.microsoft.com/fluentui#/styles/web/elevation) page for best practices.
+
+## Properties
+
+### Key properties
+
+| Property | Description |
+| -------- | ----------- |
+| `Depth` | The depth of the shadow. |
+| `HoverDepth` | The depth of the shadow that appears on hover. |
+
+### Style properties
+
+| Property | Description |
+| -------- | ----------- |
+| `FillColor` | The background color of the `Elevation` control. |
+| `HoverFillColor` | The background color of the `Elevation` control that appears on hover. |
+| `PaddingLeft` | Left edge gap between card and control boundary |
+| `PaddingRight` | Right edge gap between card and control boundary |
+| `PaddingTop` | Top edge gap between card and control boundary |
+| `PaddingBottom` | Bottom edge gap between card and control boundary |
+| `DarkOverlay` | When enabled, displays a dark overlay effect in the padded area. |
+
+### Formatting content over `Elevation` with layout containers
+
+1. Add a [`Container`](/power-apps/maker/canvas-apps/controls/control-container) control to the screen (not `Horizontal container` or `Vertical container`).
+
+1. Add an `Elevation` component in the container
+1. Set `Elevation` properties to fit it's parent `Container`:
+
+    |Property|Value|
+    |-|-|
+    |`X`| `0` |
+    |`Y`| `0` |
+    |`Width`|`Parent.Width`|
+    |`Height`|`Parent.Height`|
+
+1. Set `PaddingRight`, `PaddingTop` and `PaddingBottom` properties to reference `Self.PaddingLeft`
+1. Choose desired `Depth` and adjust the value of `PaddingLeft` to provide enough gap for the shadow not to get cut off. 
+1. Insert a [`Vertical container`](/power-apps/maker/canvas-apps/controls/control-vertical-container) into the same parent `Container`. This is used to host the content of the card.
+1. Set the `Vertical container` properties to visually align to the `Elevation` component's edges:
+
+    |Property|Value|
+    |-|-|
+    |`X`| `Elevation.PaddingLeft` |
+    |`Y`| `Elevation.PaddingLeft` |
+    |`Width`|`Parent.Width - Elevation.PaddingLeft * 2`|
+    |`Height`|`Parent.Height - Elevation.PaddingLeft * 2`|
+
+1. Add contents into the `Vertical container` to populate the card.
+
+:::image type="content" source="media/elevation-sample.png" alt-text="Elevation example.":::
 
 ## Limitations
 
 This code component can only be used in canvas apps and custom pages.
-
-## Key properties
-
-| Property | Description |
-| -------- | ----------- |
-| `Fill color` | Background color of the `Elevation` control. |
-| `Depth` | Depth of the shadow. |
-
-## Additional properties
-
-| Property | Description |
-| -------- | ----------- |
-| `Hover fill color` | Background color of the `Elevation` control while hovering. |
-| `Hover depth` | Depth of the shadow while hovering. |
-| `Padding` | Distance between the `Elevation` card and the edge of the control (in each direction: left, right, top, and bottom). |
-| `Dark overlay padding` | Enable for a dark overlay effect in the padded area. |
-
-## Best practices
-
-See [Fluent UI `Elevation` control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

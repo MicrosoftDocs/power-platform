@@ -20,7 +20,7 @@ search.app:
 # Set up ALM Accelerator for Power Platform
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform see [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 As a first step you'll need to complete the initial steps of an ALM deployment as an administrator. The commands below allow you to quickly automate the install. When you've completed these steps, you can add makers and set up connections to their Power Platform development environments.
 
@@ -52,7 +52,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
 
 - The Azure DevOps organization and Azure DevOps project have been created.
 
-- CoE CLI is installed.
+- The latest version of the CoE CLI is installed.
 
 ## Initial install
 
@@ -83,9 +83,9 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
          "test",
          "prod"
       ],
-      "validation": "https://sample-validation.crm.dyamics.com",
-      "test": "https://sample-test.crm.dyamics.com",
-      "prod": "https://sample-prod.crm.dyamics.com",
+      "validation": "https://sample-validation.crm.dynamics.com",
+      "test": "https://sample-test.crm.dynamics.com",
+      "prod": "https://sample-prod.crm.dynamics.com",
       "createSecret": "true",
       "region": [
          "NAM"

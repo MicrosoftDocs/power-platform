@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "authoring, fundamentals, ce06092020"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -27,7 +28,7 @@ Topics are discrete conversation paths that, when used together within a single 
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Accessibility
 
@@ -50,7 +51,7 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 - ```Alt + Shift + B``` will read out the target node.
 
 > [!NOTE]
-> If you are using a screen reader, note that the sidebar menu entry labeled **Manage** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded.
+> If you are using a screen reader, note that the navigation menu entry labeled **Settings** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded.
 
 ## In this section
 

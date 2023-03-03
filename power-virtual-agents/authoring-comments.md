@@ -10,6 +10,7 @@ ms.author: iawilt
 ms.reviewer: gitikag
 manager: shellyha
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
@@ -33,7 +34,7 @@ Comment threads are created when someone replies to an existing comment. Using t
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Manage comments
 

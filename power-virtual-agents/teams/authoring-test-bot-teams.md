@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -25,13 +26,13 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Test a topic in the Test bot pane
 
-1. If the **Test bot** pane is hidden, open it by selecting the test bot icon at the bottom of the side pane.
+1. If the **Test bot** pane is hidden, open it by selecting **Test your bot** in the navigation menu.
 
-   :::image type="content" source="../media/authoring-test-bot/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side pane.":::
+   :::image type="content" source="../media/authoring-test-bot/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the navigation menu.":::
 
 1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
 
@@ -53,9 +54,9 @@ You can return to the authoring canvas for the topic  at any time to revise it's
 
 As you fine-tune your bot, it can be useful to enable tracking between topics so you can follow through the conversation path step by step.
 
-1. If the **Test bot** pane is hidden, open it by selecting the test bot icon at the bottom of the side pane.
+1. If the **Test bot** pane is hidden, open it by selecting **Test your bot** in the navigation menu.
 
-   :::image type="content" source="../media/authoring-test-bot/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side pane.":::
+   :::image type="content" source="../media/authoring-test-bot/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the navigation menu.":::
 
 1. At the top of the **Test bot** pane, set **Track between topics** to **On**.
 

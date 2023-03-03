@@ -8,7 +8,8 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals, teams, intro-inernal
+ms.custom: fundamentals, teams, intro-internal
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -40,7 +41,7 @@ This is just one example of many use cases of Power Virtual Agents chatbots in T
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Scenario
 
@@ -107,7 +108,7 @@ Now that the bot is created, we can go ahead and start adding content to the bot
 
 ### Build an employee time-off topic for common time-off queries
 
-Go to the topic list by selecting **Topics** in the side pane.
+Go to the topic list by selecting **Topics** in the navigation menu.
 
 A bot comes with a collection of topics that defines the bot's interaction with end users. The core of building a bot in Power Virtual Agents is to build topics that can respond to different user inquiries. Let's build a topic to answer employee questions about taking time-off.
 
@@ -135,7 +136,7 @@ Enter the text in the existing message node *I can help with questions related t
 
 As an HR employee, you know that the most common time-off questions that employees have are around paid vacation time and national holidays. So add a question node for the bot to ask employees what type of time-off they are looking for, so you can provide better guidance. When a question node with user response options is added, the topic automatically gets a forked branch for each response.
 
-1. Select the **+** below the message node, then select **Ask a question** to add a question node to the topic.
+1. Select **Add node** (**+**) below the message node, then select **Ask a question** to add a question node to the topic.
 
 1. Enter *What information are you looking for?* in the **Ask a question** text box. This is the question the employee will be asked.
 
@@ -155,7 +156,7 @@ Now you can add different responses for each option. For *paid vacation*, we can
 
 1. Add a message node specifically for the *Paid vacation* branch with this message to the user: *For paid vacation time-off, go to www.contoso.com/HR/PaidTimeOff to learn more on how to submit time-off requests.*
 
-2. Add a node by selecting the **+** to end the conversation with a survey. Select **End the conversation**, then **End with survey**. This is the [customer satisfaction survey](analytics-csat-teams.md) pre-built in the bot for everyone to use in their topics.
+2. Add a node by selecting **Add node** (**+**) to end the conversation with a survey. Select **End the conversation**, then **End with survey**. This is the [customer satisfaction survey](analytics-csat-teams.md) pre-built in the bot for everyone to use in their topics.
 
 3. In the *National Holidays* path, add a message node with the following text:
 
@@ -169,7 +170,7 @@ Now you can add different responses for each option. For *paid vacation*, we can
     -   Christmas Eve and Christmas Day: December 24th - 25th
     ```
 
-4. End this path in the topic with a survey as well: add a node by selecting the **+** then **End the conversation** and **End with survey**.
+4. End this path in the topic with a survey as well: add a node by selecting **Add node** (**+**) then **End the conversation** and **End with survey**.
 
 This is what your topic should look like now:
 
@@ -262,7 +263,7 @@ Now that Bob has the time-off topic created, he can save the topic and add other
 
 Once the topics are constructed and the bot is tested, you are ready to publish the bot. Publishing the bot will make the latest bot content updates available to end users.
 
-1. Select the **Publish** icon in the side pane.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Publish**.
 
@@ -275,7 +276,7 @@ You'll need to follow a few more actions to actually make the bot available to e
 
 Before making the bot available to employees in your organization, there is an option to add the bot in Teams for yourself to chat with and experience it like any employee would.
 
-On the **Publish** tab in the side pane, there is an option to **Open the bot**.
+On the **Publish** page, there is an option to **Open the bot**.
 
 This will give you the chance to add your bot in Teams and chat with it.
 
@@ -283,7 +284,7 @@ This will give you the chance to add your bot in Teams and chat with it.
 
 Now you're ready to make the bot discoverable for other employees in the Teams app store, so they can install and chat with it.
 
-1. Go to the **Publish** page from the side pane.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Share the bot** which will open a pane with some customization options.
 

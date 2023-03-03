@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "authoring, fundamentals, ce06092020"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -23,6 +24,10 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-language-support-teams.md)
 
 You can create chatbots in Power Virtual Agents in a number of languages. This means that your bots can reach a much broader audience and engage with more markets all around the world.
+
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Specify a language for your bot
 
@@ -54,11 +59,14 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 | ---------------------- | -------------------- |
 | Chinese (Simplified)   | Preview              |
 | Chinese (Traditional)  | Preview              |
+| Czech                  | Preview              |
 | Danish                 | General availability |
 | Dutch                  | General availability |
 | English                | General availability |
+| Finnish                | Preview              |
 | French                 | General availability |
 | German                 | General availability |
+| Greek                  | Preview              |
 | Hindi                  | Preview              |
 | Indonesian             | General availability |
 | Italian                | General availability |
@@ -70,6 +78,7 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 | Russian                | General availability |
 | Spanish                | General availability |
 | Swedish                | General availability |
+| Thai                   | Preview              |
 | Turkish                | General availability |
 
 ### See also

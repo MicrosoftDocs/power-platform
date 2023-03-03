@@ -2,10 +2,10 @@
 title: PowerShell support | Microsoft Docs
 description: Description of the different PowerShell cmdlets and a walkthrough of how to install and run them.
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/14/2022
+ms.date: 01/20/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -40,7 +40,7 @@ For information on the Power Apps admin module, see [Get started using the Power
 > ```
 
 ## Requirements
-PowerShell in this topic requires PowerShell version 5.x. To check the version of PowerShell running on your machine, run the following command:
+PowerShell in this topic requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
 
 > ```powershell
 > $PSVersionTable.PSVersion
@@ -66,13 +66,11 @@ To run the PowerShell cmdlets for app creators, do the following:
     Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber
     ```
 
-    Alternatively, if you don't have admin rights on your computer, you can use the following to use these modules:
+    Alternatively, if you don't have admin rights on your computer, you can use the `-Scope CurrentUser` paramater for installation:
 
     ```powershell
-    Save-Module -Name Microsoft.PowerApps.Administration.PowerShell -Path
-    Import-Module -Name Microsoft.PowerApps.Administration.PowerShell
-    Save-Module -Name Microsoft.PowerApps.PowerShell -Path
-    Import-Module -Name Microsoft.PowerApps.PowerShell
+    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Scope CurrentUser
+    Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Scope CurrentUser
     ```
 
 3. If you are prompted to accept the change to *InstallationPolicy* value of the repository, accept [A] Yes to all modules by typing 'A' and pressing **Enter** for each module.
@@ -104,8 +102,8 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 | Purpose | Cmdlet |
 | --- | --- |
 | Add a canvas app to a Microsoft Dataverse solution | Set-PowerAppAsSolutionAware |
-| Read environments | Get-PowerAppEnvironment *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment |
-| Read, update, and delete a canvas app | Get-PowerApp *(previously Get-App)* <br> Remove-PowerApp *(previously Remove-App)* <br> Publish-PowerApp *(previously Publish-App)*<br />Set-AppDisplayName *(previously Set-PowerAppDisplayName)*<br> Get-PowerAppVersion *(previously Get-AppVersion)* <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)* |
+| Read and update environments | [Get-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappenvironment) *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)*|
+| Read, update, and delete a canvas app | [Get-AdminPowerApp](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapp) *(previously Get-App)*<br> [Remove-AdminPowerApp](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerapp)  *(previously Remove-App)* <br> Publish-AdminPowerApp *(previously Publish-App)* |
 | Read, update, and delete canvas app permissions | [Get-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapproleassignment) *(previously Get-AppRoleAssignment)* <br>  [Remove-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerapproleassignment) *(previously Remove-AppRoleAssignment)* |
 | Read, update, and delete a flow | [Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow) <br> [Enable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/enable-adminflow) <br> [Disable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/disable-adminflow) <br> [Remove-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflow) |
 | Read, update, and delete flow permissions | [Get-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflowownerrole) <br> [Set-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/set-adminflowownerrole) <br> [Remove-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflowownerrole) |
@@ -334,8 +332,43 @@ Set-TenantSettings -RequestBody $settings
 
 ##### Surface your organization’s governance error message content 
 
-If you specify governance error message content to appear in error messages, it will be included in the error message displayed when makers observe they don’t have permission to share apps with 'Everyone'. See [PowerShell governance error message content commands.](powerapps-powershell.md#governance-error-message-content-commands).
+If you specify governance error message content to appear in error messages, it will be included in the error message displayed when makers observe they don’t have permission to share apps with 'Everyone'. See [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
+#### Associate in context flows to an app
+
+Associate flows in context of an app to the app to create a dependency between the app and flows. To learn more about context flows, see [What Power Automate capabilities are included in Power Apps licenses?](power-automate-licensing/faqs.md#what-power-automate-capabilities-are-included-in-power-apps-licenses)
+
+```powershell
+   Add-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion <String>] [<CommonParameters>]
+```
+
+EnvironmentName and FlowName can be found in the flow url:
+
+ - For a Non-Solution flow, the URL will look like this:
+   https://preview.flow.microsoft.com/manage/environments/839eace6-59ab-4243-97ec-a5b8fcc104e7/flows/6df8ec2d-3a2b-49ef-8e91-942b8be3202t/details
+   <br />The GUID after environments/ is the EnvironmentName and the GUID after flows/ is the FlowName
+ - For Solution flow, the URL will look like this:
+   https://us.flow.microsoft.com/manage/environments/66495a1d-e34e-e330-9baf-0be559e6900b/solutions/fd140aaf-4df4-11dd-bd17-0019b9312238/flows/53d829c4-a5db-4f9f-8ed8-4fb49da69ee1/details
+   <br />The GUID after environments/ is the EnvironmentName and the GUID after flows/ is the FlowName
+ - The AppName for canvas app can be found in Canvas app details page.
+   ![The AppName for canvas app can be found in Canvas app details page.](https://user-images.githubusercontent.com/62711514/178654001-94235e7a-db95-4785-8175-a2994e0039e3.png)
+ - The AppName for model driven app can be found in solution explorer.
+   ![The AppName for model driven app can be found in solution explorer.](https://user-images.githubusercontent.com/62711514/178653658-1f0a347d-d68b-4faa-881b-5396e5c29361.png)
+   - To see the examples, type: "get-help Add-AdminFlowPowerAppContext -examples".
+   - For more information, type: "get-help Add-AdminFlowPowerAppContext -detailed".
+   - For technical information, type: "get-help Add-AdminFlowPowerAppContext -full".
+
+#### Remove in context flows of an app
+Remove the dependency between flows and an app with this PowerShell command. The Remove-AdminFlowPowerAppContext removes app context from the specific flow.
+  
+```powershell
+    Remove-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion <String>] [<CommonParameters>]
+
+    - To see the examples, type: "get-help Remove-AdminFlowPowerAppContext -examples".
+    - For more information, type: "get-help Remove-AdminFlowPowerAppContext -detailed".
+    - For technical information, type: "get-help Remove-AdminFlowPowerAppContext -full".
+```
+ 
 ### Power Automate commands
 
 Use these commands to view and modify data related to Power Automate.
@@ -394,7 +427,7 @@ View and manage API connections in your tenant.
 Get-AdminPowerAppEnvironment -Default | Get-AdminPowerAppConnection
 ```
 
-Displays a list of all API connections you have in the default environment. Native connections are found under the **Data** > **Connections** tab in [Power Apps](https://make.powerapps.com).
+Displays a list of all API connections you have in the default environment. Native connections are found under the **Dataverse** > **Connections** tab in [Power Apps](https://make.powerapps.com).
 
 #### Display all custom connectors in the tenant
 
@@ -402,12 +435,9 @@ Displays a list of all API connections you have in the default environment. Nati
 Get-AdminPowerAppConnector
 ```
 
-Returns a list of all custom connector details in the tenant.
+Returns a list of all custom connector details in the tenant. Does not return custom connectors that are in a solution. This is a known limitation.
 
 ### Data loss prevention (DLP) policy commands 
-
-> [!NOTE]
-> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center are currently in public preview. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in public preview. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](/connectors/)
 
 These cmdlets control the DLP policies on your tenant.
 
@@ -427,6 +457,12 @@ Get-DlpPolicy
 
 Gets policy objects for the signed-in admin's tenant.
 
+> [!NOTE]
+> - When viewing a DLP policy using PowerShell, the display name of connectors will reflect the names of the connectors when the DLP policy was created or when the specific connectors were last moved within the policy. In other words, changes to the display names of connectors won't be reflected.
+> - When viewing a DLP policy using PowerShell, new connectors that are in the default group and have never been moved won't be returned.
+> 
+> For both of these known issues, a workaround is to move the affected connector to another group within the policy and then move it back to the correct group.  After doing this, each of the connectors will be visible with their correct name.
+
 #### Update a DLP policy
 
 ```powershell
@@ -442,6 +478,8 @@ Remove-DlpPolicy
 ```
 
 Deletes a DLP policy.
+
+
 
 ### DLP resource exemption cmdlets 
 
@@ -538,10 +576,10 @@ The governance error message URL and email can be shown independently or togethe
 
 |     #    |     Experience                                                                                                     |     Availability           |
 |----------|--------------------------------------------------------------------------------------------------------------------|----------------------------|
-|     1    |     User launches a Power Apps app that’s not DLP compliant                                                        |     Generally available    |
+|     1    |     User launches an app created using Power Apps that’s not DLP compliant                                                        |     Generally available    |
 |     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                          |     Generally available    |
 |     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’       |     Generally available    |
-|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Generally available    |
+|     4    |     Maker saves an app created using Power Apps that’s not DLP compliant                                                          |     Generally available    |
 |     5    |     Maker saves a Power Automate flow that’s not DLP compliant                                                     |     Generally available    |
 
 #### Display governance error message content 
@@ -575,7 +613,7 @@ Add-AllowedConsentPlans
 Get-AllowedConsentPlans
 ```
 
-The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or developer plans that users can sign themselves up for via Power Apps/Power Automate portals. "Ad-hoc subscription" or "Viral" consent plans are trial licenses that users can sign themselves up for via https://signup.microsoft.com or admins can assign to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal. 
+The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or developer plans that users can sign themselves up for via Power Apps/Power Automate portals/Power Automate for desktop. "Ad-hoc subscription" or "Viral" consent plans are trial licenses that users can sign themselves up for via https://signup.microsoft.com or admins can assign to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal. 
 
 By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command as well as disabling the setting *AllowAdHocSubscriptions* in Azure AD. 
 

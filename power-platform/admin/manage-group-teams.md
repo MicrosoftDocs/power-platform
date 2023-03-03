@@ -3,11 +3,11 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/11/2022
+ms.date: 02/06/2023
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: matp
 search.audienceType: 
   - admin
 search.app:
@@ -22,21 +22,23 @@ search.app:
 
 ## About group teams
 
-Applies to Microsoft Dataverse
-
-An Azure Active Directory (Azure AD) *group* team. Similar to *owner* team, an Azure AD group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership. 
+An Azure Active Directory (Azure AD) *group* team. Similar to *owner* team, an Azure AD group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Microsoft 365. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership. 
 
 ### Using Azure Active Directory groups to manage a user's app and data access 
 
 The administration of app and data access for Microsoft Dataverse has been extended to allow administrators to use their organization's Azure Active Directory (Azure AD) groups to manage access rights for licensed Dataverse users.
 
-Both types of Azure AD groups—Office and Security—can be used to secure user-access rights. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
+Both types of Azure AD groups—Security and Microsoft 365—can be used to secure user-access rights. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 
-Both types of Azure AD groups — Office and Security — with a Membership type *Assigned* can be used to secure user-access rights. Membership type *Dynamic User* and *Dynamic Device* is not supported. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
+Both types of Azure AD groups — Security and Microsoft 365 — with a Membership type *Assigned* and *Dynamic User* can be used to secure user-access rights. Membership type *Dynamic Device* isn't supported. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 
-The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the Dataverse environments and assign a security role to these group teams. For each Azure AD group, the administrator can create group teams based on the Azure AD group **Members**, and/or **Owners**, or **Guests**. For each Azure AD group, an administrator can create separate group teams for owners, members, guests, and members and guests, and assign a respective security role to each of these teams.
+The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the environments and assign a security role to these group teams. For each Azure AD group, the administrator can create group teams based on the Azure AD group **Members**, and/or **Owners**, or **Guests**. For each Azure AD group, an administrator can create separate group teams for owners, members, guests, and members and guests, and assign a respective security role to each of these teams.
 
 When members of these group teams access these environments, their access rights are automatically granted based on the group team's security role.
+
+> [!TIP]
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Dynamic Azure AD Groups](https://www.microsoft.com/en-us/videoplayer/embed/RE58gAd).  
+
 
 #### Provision and deprovision users 
 
@@ -104,7 +106,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 
 6. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
-   - **Group name:** Start entering text to select an existing Azure AD group names.These groups are pre-created in Azure AD.
+   - **Group name:** Start entering text to select an existing Azure AD group name.These groups are pre-created in Azure AD.
    - **Membership type:** Select the membership type from the dropdown list. See [How Azure AD security group members match to Dataverse group team members](#how-azure-ad-security-group-members-match-to-dataverse-group-team-members).
    
    :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="Screenshot of settings for a new Azure AD team.":::
@@ -152,6 +154,7 @@ Review the following table for how members in Azure AD groups match to Dataverse
 > - **Azure AD group members are also added to the group team with [impersonation calls](/powerapps/developer/common-data-service/impersonate-another-user)**. You can use create group members in the group team on behalf of another user using impersonation. 
 > - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission.
+> - The group team name is not automatically updated when the Azure AD group name is changed. There is no impact in system operation with group name changes, but we recommend you update it via the Power Platform admin center Teams settings. 
 
 ## Manage the security roles of a team
 
@@ -167,6 +170,21 @@ Review the following table for how members in Azure AD groups match to Dataverse
 
 ## Change the business unit for a team  
 See [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
+
+## Add group team types to the default lookup view
+
+When manually assigning a record or sharing a record using the built in form, the default options list does not pick up some group team types such as Azure AD. You can edit the filter on the default lookup view of the teams table so that it includes these groups.
+
+1.	Sign in to [Power Apps](https://make.powerapps.com).
+
+2.	Select **Dataverse** > **Tables** > **Team** > **Views** > **Teams Lookup View** > **Edit Filters**
+
+3.	Set **Team Type**, **Equals** to:  **AAD Office Group**, **AAD Security Group**, **Owner**
+
+   :::image type="content" source="media/team-type-edit-filters.png" alt-text="Add AAD Office Group and AAD Security Group to the Team type.":::
+    
+4.	Select **OK** > **Save** > **Publish**.
+
 
 ## Other team operations  
 See:

@@ -1,6 +1,6 @@
 ---
 title: Icon control reference | Creator Kit
-description: Learn about the details and properties of Icon control in the Creator Kit.
+description: Learn about the details and properties of the Icon control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -21,52 +21,52 @@ contributors:
 ---
 # :::no-loc text="Icon"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to display Fluent UI icons.
 
 :::image type="content" source="media/icon.png" alt-text="Icon control.":::
 
 ## Description
 
-This control renders Fluent UI icons based on the name. Allows you to easily create an Icon Button and Action Button with custom styling.
+This control renders Fluent UI icons based on the name. You can use it to easily create an icon button and action button with custom styling.
 
 For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/fluentui#/styles/web/icons).
-
-> [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
-
-## Limitations
-
-This code component can only be used in canvas apps and custom pages.
 
 ## Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Icon name` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
-| `Icon type` | Renders the icon as an action button, icon button, or icon only. |
-| `Text` | Text displayed (action button type only) |
-| `Text alignment` | Position of the text (action button type only) |
-| `Icon color` | Color of the icon |
-| `Icon size` | Size of the icon |
-| `Font size` | Size of the font (action button type only) |
-| `Font color` | Color of the font |
-| `Fill color` | Background fill color of the icon |
-| `Border color` | Border color of the icon |
-| `Border radius` | Roundness of the corners |
+| `ItemIconName` | The Fluent UI icon to use (see [Fluent UI Icons](https://uifabricicons.azurewebsites.net/)) |
+| `IconType` | Renders the icon as types `Action button`, `Icon button`, or `Icon only` |
+| `IconSize` | The size of the icon (pixels) |
+| `Text` | Text displayed (works for type `Action button`) |
+| `TextAlignment` | Position of the text (works for types `Action button` and `Icon only`) |
+| `Tooltip` | Text displayed in a tooltip when the user hovers over the icon. |
+
 
 ## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Hover icon color` | Color of the icon while hovering |
-| `Hover font color` | Color of the font while hovering |
-| `Hover fill color` | Color of the fill while hovering |
-| `Hover border color` | Color of the border while hovering |
+| `FontSize` | Size of the font (works for type `Action button`) |
+| `IconColor` | Color of the icon |
+| `HoverIconColor` | Color of the icon that appears on hover |
+| `FontColor` | Color of the font |
+| `HoverFontColor` | Color of the font that appears on hover |
+| `FillColor` | Color of the background fill of the icon (works for types `Action button` and `Icon button`) |
+| `HoverFillColor` | Color of the fill that appears on hover (works for types `Action button` and `Icon button`) |
+| `BorderColor` | Color of the border of the icon (works for types `Action button` and `Icon button`) |
+| `HoverBorderColor` | The color of the border that appears on hover |
+| `BorderRadius` | Roundness of the corners (works for types `Action button` and `Icon button`) |
+| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
+| `AccessibilityLabel` | Screen reader aria-label |
+| `InputEvent` |  An event to send to the control. |
 
-## Best practices
+## Behavior
 
-See [Fluent UI `Icon` control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
+- Supports [SetFocus](setfocus.md) as an `InputEvent`.
+
+## Limitations
+
+This code component can only be used in canvas apps and custom pages.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

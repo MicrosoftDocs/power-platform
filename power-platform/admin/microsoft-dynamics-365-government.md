@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 04/14/2022
 ms.subservice: admin
 ms.author: macarrer
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -19,7 +19,7 @@ search.app:
 
 # Dynamics 365 US Government  
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by eight discrete functions: 
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are represented by eight discrete functions: 
 
 - Customer Service
 - Customer Voice
@@ -183,7 +183,7 @@ Power Platform and Dynamics 365 apps provide the ability to integrate third-part
 
 Azure Active Directory (Azure AD) and Azure Active Directory Government (Azure AD Government) are not part of the Dynamics 365 US Government accreditation boundary. Government customers are responsible for using ADFS to uniquely identify and authenticate their organizational users. Notwithstanding, it is important to note that Azure AD and Azure AD Government provide critical functionality to both Dynamics 365 US Government and ADFS, whose dependencies are described in detailed in the Dynamics 365 US Government SSP (Service Security Plan).
 
-When a user of an organization employing ADFS attempts to access Dynamics 365, the user is redirected to a login page hosted on the organization’s ADFS server. The user provides his or her credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. The customer ADFS server signs this ticket using one half of an asymmetric key pair and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP and Azure Government SSP. 
+When a user of an organization employing ADFS attempts to access Dynamics 365, the user is redirected to a login page hosted on the organization’s ADFS server. The user provides their credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. The customer ADFS server signs this ticket using one half of an asymmetric key pair and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP and Azure Government SSP. 
 
 ## Dynamics 365 US Government URLs
 
@@ -199,11 +199,11 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 ### Discovery (OData V4) RESTful API
 -	GCC:
-    - (Deprecated) Discovery URL: https://disco.crm9.dynamics.com/api/discovery/v9.1/
+    - (Deprecated) Discovery URL: `https://disco.crm9.dynamics.com/api/discovery/v9.1/`
     - Global discovery URL: https://globaldisco.crm9.dynamics.com/api/discovery/v2.0/
 
 -	GCC High:
-    - (Deprecated) Discovery URL: https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/
+    - (Deprecated) Discovery URL: `https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/`
     - Global discovery URL: https://globaldisco.crm.microsoftdynamics.us/api/discovery/v2.0/
 
 -	DoD:
@@ -234,7 +234,7 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 ### Discovery Service (Deprecated)
 - GCC: https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc
-- GCC High: https://disco.crm.microsoftdynamics.us/XRMServices/2011/Discovery.svc
+- GCC High: `https://disco.crm.microsoftdynamics.us/XRMServices/2011/Discovery.svc`
 
 Effective March 2, 2020, the regional Discovery Service will be deprecated. More information: Regional Discovery Service is deprecated.
 

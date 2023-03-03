@@ -2,7 +2,7 @@
 title: Use topics to design a chatbot conversation
 description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 12/29/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -17,6 +17,8 @@ searchScope:
 
 # Create and edit topics in your Power Virtual Agents bot
 
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
@@ -28,9 +30,9 @@ In Power Virtual Agents, a topic defines a how a bot conversation plays out.
 
 To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
 
-A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
+A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that relate to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
 
-The AI uses natural language understanding (NLU) to parse what a customer types and find the most appropriate trigger phrase or node.
+The AI uses natural language understanding (NLU) to parse what a customer typed and find the most appropriate trigger phrase or node.
 
 For example, a user might type "Open hours" into your bot. The AI matches that to the **Store hours** topic, begins a conversation that asks which store the customer is interested in, and then displays the hours the store is open.
 
@@ -40,7 +42,7 @@ For bot and topic limits, see [Quotas, limits, and configuration values](require
 
 ## Prerequisites
 
-[!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Use system and sample topics
 
@@ -54,13 +56,13 @@ These automatically created topics fall into two categories:
 
     You can edit lesson topics or delete them entirely.
 
-- System topics are topics you're likely to need during a bot conversation.
+- [System topics](authoring-system-topics.md) are topics you're likely to need during a bot conversation.
 
     You can't delete or disable system topics or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
 
 ## Create a topic
 
-1. In the left pane, select **Topics**.
+1. In the navigation menu, select **Topics**.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::
 
@@ -73,8 +75,6 @@ These automatically created topics fall into two categories:
 1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 
     :::image type="content" source="media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Screenshot of the topic authoring canvas, highlighting adding trigger phrases.":::
-
-    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define.
 
     You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
@@ -106,7 +106,7 @@ These automatically created topics fall into two categories:
 
     When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you.
 
-1. To add a node, select the plus (**+**) icon on the line or branch between or after nodes.
+1. To add a node, select **Add node** (**+**) on the line or branch between or after nodes.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 
@@ -135,7 +135,7 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
 #### Ask a question
 
-1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then select **Ask a question** to add a new **Question** node.
+1. To have the bot ask a question and get a response from the user, select **Add node** (**+**) to add a node, and then select **Ask a question** to add a new **Question** node.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-question.png" alt-text="Screenshot of adding a new question mode.":::
 
@@ -170,11 +170,11 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
 To [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md), select **Call an action**.
 
-If you've configured hand-off to omnichannel with voice-based capabilities, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
+If you've enabled voice-based capabilities for your bot, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
 
 #### Show a message
 
-1. To specify a response from the bot, select **+** to add a node, and then select **Show a message** to add a new **Message** node.
+1. To specify a response from the bot, select **Add node** (**+**) to add a node, and then select **Show a message** to add a new **Message** node.
 
 1. Enter what you want the bot to say in the text box.
 
@@ -182,7 +182,7 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 #### Redirect to another topic
 
-1. To have the bot move to a different topic, select **+** to add a node, and then select **Redirect to another topic**.
+1. To have the bot move to a different topic, select **Add node** (**+**) to add a node, and then select **Redirect to another topic**.
 
 1. Select the topic that the bot should divert to. For example, you might send the user to a topic about the closure of a store if they ask about the store's hours.
 
@@ -196,7 +196,7 @@ When the path for the subtopic is finished, the bot will return to the original 
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+If you redirect to any of the following [system topics](authoring-system-topics.md), however, the entire conversation will end:
 
 - End of Conversation
 - Confirmed Success
@@ -225,7 +225,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 #### Add a condition
 
-1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, select **Add a condition**, and then select **Branch based on a condition**.
+1. To add branching logic based on [variables](authoring-variables.md), select **Add node** (**+**) to add a node, select **Add a condition**, and then select **Branch based on a condition**.
 
 1. Select the variable that will determine whether the bot conversation should branch at this point.
 

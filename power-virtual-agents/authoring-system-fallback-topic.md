@@ -9,10 +9,13 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Configure the system fallback topic in Power Virtual Agents
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -25,11 +28,13 @@ During a conversation, a Power Virtual Agents bot [triggers the appropriate topi
 
 In some scenarios, you might want to customize how the bot behaves when user input doesn't trigger any topic. For example, you can build a catchall topic to capture unrecognized user intent, or use a topic to call back-end systems or route to existing services.
 
-You customize these fallback behaviors by adding the system **Fallback** topic. You can also customize the **Fallback** topic, similar to most other system topics.
+Customize these fallback behaviors by adding the system **Fallback** topic. You can also customize the **Fallback** topic itself, similar to most other system topics.
+
+This topic also includes the unique variable `UnrecognizedTriggerPhrase` to capture the unrecognized input.
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Add a system fallback topic
 
@@ -55,7 +60,7 @@ When you open this topic in the authoring canvas, you'll see that the default fa
 
 :::image type="content" source="media/authoring-system-fallback-topic/system-fallback-default-content.png" alt-text="Fallback topic default content." border="false":::
 
-You can customize this topic as with any other [system topic](authoring-create-edit-topics.md). You can also use the *_UnrecognizedTriggerPhrase_ variable that stores the user input the bot couldn't understand. For example, you can use the variable as an input and pass it to a [Power Automate flow](advanced-flow.md) or [Bot Framework skill](advanced-use-skills.md).
+You can customize this topic as with any other [system topic](authoring-create-edit-topics.md). You can also use the *_UnrecognizedTriggerPhrase_ variable that stores the user input the bot couldn't understand. For example, you can use the variable as an input and pass it to a [Power Automate flow](advanced-flow-input-output.md) or [Bot Framework skill](advanced-use-skills.md).
 
 > [!NOTE]
 > The system fallback topic doesn't have a trigger phrase.

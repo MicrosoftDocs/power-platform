@@ -43,9 +43,9 @@ highlightedContent:
       url: https://go.microsoft.com/fwlink/?linkid=2058639
 
     # Card
-    - title: Power Virtual Agents training on Microsoft Learn
+    - title: Power Virtual Agents training
       itemType: learn
-      url: /learn/browse/?expanded=power-platform&products=power-virtual-agents
+      url: /training/browse/?expanded=power-platform&products=power-virtual-agents
 
     # Card
     - title: Register for a free virtual Power Virtual Agents in a Day workshop
@@ -56,6 +56,18 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 conceptualContent:  
   items:
+    - title: Power Virtual Agents preview
+      links:
+        - text: Overview
+          url: ./preview/overview.md
+          itemType: overview
+        - text: Limitations
+          url: ./preview/limitations.md
+          itemType: overview
+        - text: Quickstart
+          url: ./preview/quickstart.md
+          itemType: get-started
+
     - title: Get started
       links:
         - text: Sign up for free
@@ -137,7 +149,6 @@ conceptualContent:
         - text: Licensing
           url: ./requirements-licensing-subscriptions.md
           itemType: overview 
-    
     
 
 # additionalContent section (optional)

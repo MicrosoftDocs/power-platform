@@ -1,13 +1,13 @@
 ---
 title: Data Integration for Admins customer data
 description: Identifying, exporting and deleting personal data in data integration for Admins for Microsoft Dataverse
-author: sabinn-msft
-
+author: NHelgren
 ms.topic: how-to
 ms.component: cds
 ms.date: 05/20/2018
 ms.subservice: admin
-ms.author: sabinn
+ms.author: nhelgren
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -28,7 +28,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 - Delete it
 - Receive it in electronic format so it can be moved to another controller
 
-A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
+A formal request by a data subject to a controller to take an action on their personal data is called a Data Subject Rights (DSR) request.
 
 This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Data Integration for Admins via the administrator portal in Dataverse . You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 

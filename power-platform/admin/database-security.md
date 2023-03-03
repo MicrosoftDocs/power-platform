@@ -4,13 +4,13 @@ description: Configure user security in environment
 ms.subservice: admin
 ms.author: paulliew
 author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 contributors:
   - hamenon-ms 
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/27/2022
+ms.date: 01/23/2022
 search.audienceType: 
   - admin
 search.app:
@@ -56,8 +56,8 @@ For users who make apps that connect to the database and need to create or updat
 | Security role  | Database privileges*  | Description |
 |---------|---------|---------|
 | Environment Maker     |  Customizations       | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data within an environment. More information: [Environments overview](./environments-overview.md) <br /> <br />Environment makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app)       |
-| System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](/dynamics365/customer-engagement/customize/privileges-required-customization)        |
-| System Customizer     | Create (self), Read (self), Write (self), Delete (self), Customizations         | Has full permission to customize the environment. However, users with this role can only view records for environment entities that they create. More information: [Privileges required for customization](/dynamics365/customer-engagement/customize/privileges-required-customization)        |
+| System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
+| System Customizer     | Create, Read, Write, Delete, Customizations         | Has full permission to customize the environment. Can view all custom table data in the environment. However, users with this role can only view rows (records) that they create in Account, Contact, Activity tables. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
 | Basic User   |  Read (self), Create (self), Write (self), Delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role) <br /><br />  **Note**: the Common Data Service User security role was renamed to Basic User. There is no action required - this is just a name changed and it doesn't impact the user privileges or role assignment.  If you have a Solution with the Common Data Service User security role, you can inadvertently update the security role name back to Common Data Service User when you import the Solution. Please update the Solution before re-importing.|
 | Service Reader | Read | Has full Read permission to all entities including custom entities. This is primarily used by backend service that requires reading all entities.    |
 | Service Writer | Create, Read, Write | Has full Create, Read, and Write permission to all entities including custom entities. This is primarily used by backend service that requires creating and updating records.    |
@@ -68,32 +68,39 @@ For users who make apps that connect to the database and need to create or updat
 
 *The scope of these privileges is global, unless specified otherwise.
 
-Other security roles you have that are not in the above table might have been provided when you installed Dynamics 365 apps.
+In addition to the predefined security roles listed above for Dataverse, there might be other security roles available in your environment depending on the Power Platform components (Power Apps, Power Automate, Power Virtual Agents) you have. 
 
-### Dataverse for Teams environments
+|Power Platform component  | Information  |
+|---------|---------|
+|Power Apps     |    [Predefined security roles for environments with a Dataverse database](#environments-with-a-dataverse-database)    |
+|Power Automate     |  [Security and privacy ](/power-automate/process-advisor-security)   |
+|Power Virtual Agents     |   [Assign environment security roles](/power-virtual-agents/admin-share-bots#assign-environment-security-roles) |
+
+### Dataverse for Teams environments 
 
 For information on Dataverse for Teams environment security roles, see [User access to Dataverse for Teams environments](about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
 
 ## App-specific security roles 
 
-If you deploy Dynamics 365 apps in your Dataverse environment, such as Dynamics 365 Sales or Dynamics 365 Field Service,  additional security roles get added as a result of deploying these apps. For information about these additional security roles, see the respective apps’ documentation:
+If you deploy Dynamics 365 apps in your environment, such as Dynamics 365 Sales or Dynamics 365 Field Service,  additional security roles get added as a result of deploying these apps. For information about these additional security roles, see the respective apps’ documentation:
 
 |Dynamics 365 app  |Security role docs  |
 |---------|---------|
-| Dynamics 365 Sales     | [Assign a security role to a user](/dynamics365/sales-professional/manage-users)        |
-| Dynamics 365 Marketing  |  [Manage user accounts, user licenses, and security roles](/dynamics365/marketing/admin-users-licenses-roles) <br />[Manage roles for a team  ](/dynamics365/marketing/manage-teams) <br />[Enable users to work with the LinkedIn Lead Gen connector](/dynamics365/marketing/linkedin-configuration)     |
-| Dynamics 365 Field Service     | [Set up Dynamics 365 Field Service users and security profiles](/dynamics365/field-service/view-user-accounts-security-roles) <br /> [Security roles for Connected Field Service](/dynamics365/field-service/cfs-security-roles) <br />  [Assign security roles to the Field Service mobile app](/dynamics365/field-service/mobile-power-app-get-started)     |
-| Dynamics 365 Customer Service    | [Assign roles and enable users for Omnichannel for Customer Service ](/dynamics365/customer-service/add-users-assign-roles) <br /> [Manage users in Omnichannel for Customer Service](/dynamics365/customer-service/users-user-profiles)     |
-| Dynamics 365 Customer Insights        | [User permissions](/dynamics365/customer-insights/permissions)        |
+| Dynamics 365 Sales     | [Predefined security roles for Sales](/dynamics365/sales/security-roles-for-sales)        |
+| Dynamics 365 Marketing  |  [Security roles added by Dynamics 365 Marketing](/dynamics365/marketing/admin-users-licenses-roles#security-roles-added-by-dynamics-365-marketing)   |
+| Dynamics 365 Field Service     | [Dynamics 365 Field Service roles + definitions ](/dynamics365/field-service/view-user-accounts-security-roles#dynamics-365-field-service-roles--definitions)  |
+| Dynamics 365 Customer Service    | [Roles in Omnichannel for Customer Service](/dynamics365/customer-service/add-users-assign-roles#roles-in-omnichannel-for-customer-service)  |
+| Dynamics 365 Customer Insights        | [Customer Insights roles](/dynamics365/customer-insights/permissions)        |
 | App profile manager        | [Roles and privileges associated with app profile manager](/dynamics365/app-profile-manager/security-roles)        |
-| Finance and Operations (in Power Platform) | [Security roles in Microsoft Power Platform](/dynamics365/fin-ops-core/dev-itpro/power-platform/authentication-and-authorization)     |
+| Dynamics 365 Finance | [Security roles in the public sector](/dynamics365/finance/public-sector/security-roles-public-sector)   |
+| Finance and operations apps | [Security roles in Microsoft Power Platform](/dynamics365/fin-ops-core/dev-itpro/power-platform/authentication-and-authorization)  |
 
 ## Summary of resources available for predefined security roles 
 The following table describes which resources can be authored by each security role.
 
 |Resource  |Environment Maker  |Environment Admin  |System Customizer  |System Admin  |
 |---------|---------|---------|---------|---------|
-|Canvas app     |X         |X         |-         |X         |
+|Canvas app     |X         |X         |X        |X         |
 |Cloud flow     |X (non-solution aware)         |X         |X (solution aware)         |X         |
 |Connector     |X         |X         |-         |X         |
 |Connection     |X         |X         |-         |X         |
