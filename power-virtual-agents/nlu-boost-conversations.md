@@ -29,6 +29,15 @@ Now, before involving a live agent, the bot uses natural language processing to:
 - Find, collate, and parse relevant information from a specified URL (for example, your company's website) with Bing Search
 - Create a plain language response and then deliver that to the bot user
 
+This means you can very quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers might end up asking.
+
+Your workflow might be like this:
+
+1. You create a bot and enable this capability. You test it thoroughly.
+
+1. After testing it, you publish your bot so you can instantly provide answers, help, and guidance to your customers or bot users.
+
+1. 1. You create individual topics for the most important or most often-asked questions from your customers (which you might have developed based on [analytics from previous bots](analytics-overview.md) or existing support issues). This could take a while and some specialized knowledge - but with **Boost conversations** enabled you're up and running from day one.
 
 
 
@@ -58,19 +67,7 @@ Now, before involving a live agent, the bot uses natural language processing to:
     
 1. Enter a name for the bot.
 
-3. Provide a website you'd like the bot to use for generating answers. You can't use websites or URLs that require authentication or that aren't indexed by Bing, and that aren't publicly viewable.
-
-    > [!WARNING]
-    >
-    > The AI works best when you specify a top-level domain as the URL. Entering the URL for a search engine, such as *www.bing.com*, can return unexpected or undesirable responses.
-    > 
-    > If the URL you specify is more than two levels deep into the domain (it has more than two forward slashes (/), you'll see an error and won't be able to continue.
-    >
-    > Your URL can have a trailing forward slash, and this won't be included in the limit of two slashes. For example, the URLs *www.contoso.com*, *www.fabrikam.com/engines/rotary*, or *www.fabrikam.com/engines/rotary/* are valid. The URL *www.fabrikam.com/engines/rotary/dual-shaft* is not.
-    >
-    > You'll also see an error if you include non-standard characters in the URL, such as a period (.).
-    >  
-    > 
+3. Provide a website you'd like the bot to use for generating answers. See the [URL considerations](#url-considerations) section for what types of URLs you can use.
 
     :::image type="content" source="media/nlu-gpt/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
@@ -84,13 +81,53 @@ You can also change the URL, disable **Boost conversations**, or change the leve
 
     1. Under **Boost conversational coverage (preview)**, use the checkbox for **Boost conversations** to enable or disable the capability.
 
-    1. In the field under the checkbox, add or change the URL. The same limits apply for the URL as when enabling the capability when you create a bot.
+    1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](#url-considerations) as when enabling the capability when you create a bot.
 
     :::image type="content" source="media/nlu-gpt/responses-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
 
-    1. Under **Bot content moderation**, select the level you want for your bot.
+    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot will generate more answers, but the answers may be irrelevant or undesirable.
 
 1. Select **Save** at the top of the **AI capabilities** page.
+
+You can now test your bot to see how well it responds to questions related to the content on the URL you specified.
+
+> [!NOTE]
+>  
+> During the Preview of this feature you'll need to contact Microsoft Support if you want to publish a bot that has **Boost conversations** enabled.
+
+### URL considerations
+
+The URL you provide represents the scope of content that will be used for generating responses. 
+
+There are some requirements on the type and structure of the URL you use:
+
+The URL can have up to two levels of depth (or "sub-paths", indicated by forward slashes (/)). Your URL can have a trailing forward slash, and this won't be included in the limit of two slashes. 
+
+- The URLs *www.contoso.com*, *www.fabrikam.com/engines/rotary*, or *www.fabrikam.com/engines/rotary/* would be valid. The URL *www.fabrikam.com/engines/rotary/dual-shaft* would not.
+
+If the URL you specify redirects to another top-level site, that content won't be included in results.
+
+- If, when visited in a browser, *www.fabrikam.com* redirected to *www.contoso.fabrikam.com*, then the bot wouldn't generate responses from content on either of those URLs.
+
+The capability won't work if you use a URL that points to a website that requires authentication or that isn't indexed by Bing. 
+    Wikis, SharePoint sites, and other types of websites that require authentication, for example *fabrikam.visualstudio.com/project/_wiki* or *fabrikam.sharepoint.com*, can't be used. The bot won't be able to generate responses from content that requires authentication to access.
+
+You should also be aware of the following characteristics of the capability:
+
+The bot will generate responses from any publicly viewable content under the URL you specify. This includes subdomains under a top-level domain.
+
+- If you were to use the URL *www.fabrikam.com/engines/rotary*, the content on *www.fabrikam.com/engines/rotary/dual-shaft* would also be used by the bot to generate responses. Content from *www.fabrikam.com/tools* would not be used.  
+- 
+- If you were to use *www.fabrikam.com*, the bot won't generate responses from content on *news.fabrikam.com*, as *news.* is a subdomain under the top-level domain *fabrikam.com*. If you were to use *fabrikam.com*, then content from *www.fabrikam.com* and *news.fabrikam.com* would be used, as they sit "under" the top-level domain *fabrikam.com*.
+
+The bot may generate nonsensical, irrelevant, or inappropriate answers if you use a forum or social network site as your URL.
+
+- Community content on social networks can often increase the risk of more answers being rejected due to inappropriate, offensive, and malicious content that is more common on those sites. See the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) for more information on how the AI is trained to avoid generating malicious and offensive responses.
+
+
+The URL you specify should host the content you want the bot to generate answers from; it should not be the URL for a search engine. 
+
+-  Using *bing.com* or other search engines in the URL won't provide useful responses. 
 
 
 
@@ -99,13 +136,31 @@ You can also change the URL, disable **Boost conversations**, or change the leve
 1. Click on **Test your bot** at the bottom of the side navigation pane. 
 1. In the **Test bot** panel, ask the bot questions that take advantage of **Boost conversations** capability.
 
-During the Preview of this feature you'll need to contact Microsoft Support if you want to publish a bot that has **Boost conversations** enabled.
+The boost conversation preview works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
 
+- personal questions 
+- questions that require authenticated access to content
+- questions for each there is no related content at the specified URL
+ 
+You should also be aware of some of the characteristics of the AI, and how to get the most out of the questions you ask:
+
+- The bot can have difficulty answering questions that require calculations, comparisons, or form submissions to provide answers. This includes questions that use comparative and superlative terms such as better or best, latest, or cheapest. 
+
+- The boost conversation capability doesn't remember context across multiple questions in the conversation (also known as "multi-turn questions"). Therefore, you should treat each question you ask the bot as part of testing this capability in isolation.
+
+- If the bot can't generate an answer to a question, it will ask you to rephrase the question. After two of these prompts, the bot will initiate the [system **Escalate** topic](authoring-system-fallback-topic.md).
+
+- To learn more about how the question is being interpreted by Bing against the URL you specify, add "site: <your URL here>" to the end of your question to see the top Bing results for the question. 
 
 > [!TIP]
 >  
 > You can provide feedback on how well the AI does by selecting the "thumbs up" or "thumbs down" icon underneath the generated response.
-> If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback will to improve the quality of the AI.
+>  
+> If you encounter irrelevant or inappropriate generated response, select the thumbs down icon to let us know. You can also include more verbose feedback. 
+>  
+> We'll use this feedback to improve the quality of the AI.
+
+
 
 ## Limitations during the preview
 
