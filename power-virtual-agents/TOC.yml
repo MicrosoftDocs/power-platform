@@ -10,10 +10,10 @@
       href: requirements-quotas.md
 - name: Use GPT capabilities in Power Virtual Agents
   items:
-    - name: Automated authoring overview (preview)
-      href: nlu-authoring-overview.md
+    - name: AI-based boosted conversations overview (preview)
+      href: nlu-gpt-overview.md
     - name: Boost conversations quickstart guide (preview)
-      href: nlu-authoring-quickstart.md
+      href: nlu-gpt-quickstart.md
     - name: Boost conversations (preview)
       href: nlu-boost-conversations.md
 - name: Get started

@@ -26,15 +26,15 @@ For example, if, during a conversation, a user asks a question for which the cha
 - You'll need an account for Power Virtual Agents. 
 
     > [!NOTE]
-    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for boosting bot conversations (preview)](nlu-authoring-quickstart.md).
+    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for boosting bot conversations (preview)](nlu-gpt-quickstart.md).
 
 - You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
 
-    :::image type="content" source="media/nlu-authoring/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
+    :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
 ## Next steps
 
-- Get up and running with the [Quickstart guide for boosting bot conversations (preview)](nlu-authoring-quickstart.md)
+- Get up and running with the [Quickstart guide for boosting bot conversations (preview)](nlu-gpt-quickstart.md)
 - Dive in and start using the [Boost conversations (preview)](nlu-boost-conversations.md) capability in your chatbots
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

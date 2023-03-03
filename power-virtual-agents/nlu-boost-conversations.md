@@ -38,11 +38,11 @@ Now, before involving a live agent, the bot uses natural language processing to:
 - You'll need an account for Power Virtual Agents. 
 
     > [!NOTE]
-    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for boosting bot conversations (preview)](nlu-authoring-quickstart.md).
+    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for boosting bot conversations (preview)](nlu-gpt-quickstart.md).
 
 - You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
 
-    :::image type="content" source="media/nlu-authoring/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
+    :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
 - You must enable the **Boost conversations** option for each bot.
 
@@ -72,7 +72,7 @@ Now, before involving a live agent, the bot uses natural language processing to:
     >  
     > 
 
-    :::image type="content" source="media/nlu-authoring/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
+    :::image type="content" source="media/nlu-gpt/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
 3. Click **Create**.
 
@@ -86,7 +86,7 @@ You can also change the URL, disable **Boost conversations**, or change the leve
 
     1. In the field under the checkbox, add or change the URL. The same limits apply for the URL as when enabling the capability when you create a bot.
 
-    :::image type="content" source="media/nlu-authoring/responses-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
+    :::image type="content" source="media/nlu-gpt/responses-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
 
     1. Under **Bot content moderation**, select the level you want for your bot.
 

@@ -36,7 +36,7 @@ This quickstart guide will introduce you to the core steps in creating and boost
 
 - You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
 
-    :::image type="content" source="media/nlu-authoring/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
+    :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
 - Review the [AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
  
@@ -63,16 +63,16 @@ Ready to get started? The first step is to create your bot.
 
 1. In the side navigation menu select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
 
-   :::image type="content" source="media/nlu-authoring/nlu-quickstart-home.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-home.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
 
 2. Select **Try the unified canvas (preview)** to create a preview bot. 
    - An opt-in confirmation message appears the first time you create or view a preview bot that describes some of their benefits.
 
-   :::image type="content" source="media/nlu-authoring/nlu-quickstart-create-bot.png" alt-text="Screenshot of the Create a chatbot page.":::
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-create-bot.png" alt-text="Screenshot of the Create a chatbot page.":::
 
 3. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic. Select **Create**. 
 
-   :::image type="content" source="media/nlu-authoring/nlu-quickstart-boost-create.png" alt-text="Screenshot of the Boost your conversation preview option.":::
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-create.png" alt-text="Screenshot of the Boost your conversation preview option.":::
 
 There you have it! You’ve created a new bot.  
 
@@ -90,19 +90,19 @@ After the trigger phrase, you add *conversation nodes* to define how the bot sho
 
 1. On the side navigation menu, select **Topics**, **+ New topic**, and then **From blank**. 
  
-    :::image type="content" source="media/nlu-authoring/nlu-quickstart-create-topic.png" alt-text="Screenshot of the Create a new topic from blank option.":::
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-create-topic.png" alt-text="Screenshot of the Create a new topic from blank option.":::
 
 2.  To add a new **Message** node, select the **+ sign** on the trigger phrases node, and then select **Add node**.
 
-    :::image type="content" source="media/nlu-authoring/nlu-quickstart-add-node.png" alt-text="Screenshot of the Add node button.":::
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-add-node.png" alt-text="Screenshot of the Add node button.":::
    
 3. Select **Send a message**.
 
-    :::image type="content" source="media/nlu-authoring/nlu-quickstart-message-send.png" alt-text="Screenshot of the Send a message option.":::
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-message-send.png" alt-text="Screenshot of the Send a message option.":::
 
 4. Type a message. In this example, type *How can I help you today?* in the node's text field. 
 
-    :::image type="content" source="media/nlu-authoring/nlu-quickstart-message-node.png" alt-text="Screenshot of the Message node.":::
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-message-node.png" alt-text="Screenshot of the Message node.":::
 
 5. Repeat the above steps to add as many message variations as you like.  
  
@@ -120,7 +120,7 @@ The **Test bot** pane shows how a bot conversation plays out at every step and y
  
 1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the side navigation menu. 
 
-    :::image type="content" source="media/nlu-authoring/nlu-quickstart-test-bot.png" alt-text="Screenshot of Test bot option.":::
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-bot.png" alt-text="Screenshot of Test bot option.":::
 
 2. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to. For example, you could type *What is your return policy?*. 
  
@@ -128,12 +128,12 @@ The **Test bot** pane shows how a bot conversation plays out at every step and y
  
 4. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue?*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
 
-    :::image type="content" source="media/nlu-authoring/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
  
 > [!NOTE]
 > After you test your bot, you can select the reset icon at the top of the **Test bot** pane to clear previous conversations. Resetting makes it easier to follow the flow of the current topic without getting confused by previous conversations.
 >  
-> :::image type="content" source="media/nlu-authoring/nlu-quickstart-test-reset.png" alt-text="Screenshot of Test bot pane reset button that looks like a an arrow in a circle shap.":::
+> :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-reset.png" alt-text="Screenshot of Test bot pane reset button that looks like a an arrow in a circle shap.":::
 
 You can return to the authoring canvas at any time to revise the conversation path. The **Test bot** pane automatically refreshes when you select **Save**. 
 
