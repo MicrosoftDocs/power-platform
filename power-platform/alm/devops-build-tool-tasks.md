@@ -725,10 +725,11 @@ steps:
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
 | `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the source environment that you want to restore from (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the source environment that you want to restore from (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `TargetEnvironmentUrl`<br/>Target environment URL | (Required) The URL for the target environment that you want to restore. |
-| `RestoreLatestBackup`<br/>Latest backup to restore | Latest backup to restore (true\|false). |
+| `RestoreLatestBackup`<br/>Latest backup to restore | Whether to restore latest backup or provide RestoreTimeStamp (true\|false). |
 | `RestoreTimeStamp`<br/>DateTime of the backup | DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'. |
+| `TargetEnvironmentUrl`<br/>Target environment URL | (Required) The URL for the target environment that you want to restore. |
 | `FriendlyName`<br/>Name of the restored environment | (Optional) Name of the restored environment. |
+| `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
 
 ## Build and release pipelines
 
