@@ -157,6 +157,7 @@ If you have more questions about the CoE Starter Kit using Data Export, [raise a
 
 - Unpublished cloud flows (flows imported in a managed solution that have never been turned on) and cloud flows triggered from canvas apps with no actions other than a response aren't returned through the Data Export feature. They aren't part of the inventory.
 - Component Libraries aren't returned through the Data Export feature. They aren't part of the inventory.
+- Apps and flows in the legacy environment are assigned to the default environment. That's because the legacy and default environment have the same GUID.
 
 ## Plan your upgrade strategy
 
