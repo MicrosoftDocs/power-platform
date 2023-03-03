@@ -129,7 +129,7 @@ We'll deprecate these ciphers at the right time, based on the Microsoft Crypto B
 
 ### Why does Power Automate expose MD5 content hashes in trigger/action inputs and outputs?
 
-Power Automate passes the optional content-MD5 hash value returned by Azure Storage as-is to its clients. This hash is used by Azure Storage to verify the integrity of the page during transport as a checksum algorithm and it isn't used as a cryptographic hash function for security purposes in Power Automate. You can find more details of this in the Azure Storage documentation on how to [Get Blob Properties](https://learn.microsoft.com/rest/api/storageservices/get-blob-properties#response) and how to work with [Request Headers](https://learn.microsoft.com/rest/api/storageservices/put-page#request-headers).
+Power Automate passes the optional content-MD5 hash value returned by Azure Storage as-is to its clients. This hash is used by Azure Storage to verify the integrity of the page during transport as a checksum algorithm and it isn't used as a cryptographic hash function for security purposes in Power Automate. You can find more details of this in the Azure Storage documentation on how to [Get Blob Properties](/rest/api/storageservices/get-blob-properties#response) and how to work with [Request Headers](/rest/api/storageservices/put-page#request-headers).
 
 ### How does Power Platform protect against Distributed Denial of Service (DDoS) attacks?
 
