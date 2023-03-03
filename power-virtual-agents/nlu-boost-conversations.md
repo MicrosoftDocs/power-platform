@@ -117,12 +117,12 @@ During the preview, the use of the boosted conversations capability is not billa
 
 Early access for internal document search will be opening up shortly.
 
-Internal document search will allow your chatbot to securely return answers generated from your internal or authenticated content.
+Internal document search will allow your chatbot to securely return answers generated from your internal knowledge sources.
 
 When early access is open, a link to apply will be published here. You'll also be able to sign up from within the AI Capabilities page, under the **Boost conversations** section.
 
-Confirmation that you can provide regular feedback on the feature, and that you are willing to sign a marketing/PR agreement.  You should only apply if you have a use case for how you would use the feature in a production scenario.
-If successful, you’ll be contacted with the next steps. You won’t be contacted if your application is unsuccessful.
+As part of your application, you'll need to confirm that you can provide regular feedback on the feature, and that you are willing to sign a marketing/PR agreement. You should only apply if you have a use case for how you would use the feature in a production scenario.
+
 
 
 
