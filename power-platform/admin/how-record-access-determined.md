@@ -3,11 +3,11 @@ title: How access to a record is determined | Microsoft Docs
 description: How access to a record is determined 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/30/2021
-author: jimholtz
+ms.date: 03/02/2023
+author: sericks007
 ms.subservice: admin
-ms.author: KumarVivek
-ms.reviewer: KumarVivek
+ms.author: sericks
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -108,6 +108,15 @@ In this case, the user would have access to the record if both of the following 
   - A direct report is a member of the owner team. 
   - The record was shared to perform the required action with a direct report. 
   - The record was shared to perform the required action with a team a direct report belongs to.
+
+## Record access check
+
+For each record that is displayed in the web client, the user has the ability to see how they were granted access to the record through the [**Check Access**](/power-apps/user/access-checker.md) option on the command bar. The user can also see other users who have accecss to the record and their respective access level.
+
+There are two environment database settings to configure to use the **Who has access** feature. [Install the **OrganizationSettingsEditor** tool](environment-database-settings.md#install-the-organizationsettingseditor-tool) and set the following to true:
+ 
+- **IsAccessCheckerAllUsersEnabled**: This allows the admin to see who has access to the row.
+- **IsAccessCheckerNonAdminAllUsersEnabled**: This allows the admin, owner of the record, and users who have access to the row to see who has access.
 
 ### See also
 [Security roles and privileges](security-roles-privileges.md) <br />
