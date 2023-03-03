@@ -67,9 +67,9 @@ Leaving the default directive toggled on uses the default value specified in the
 ![Setting custom CSP directives](media/csp-default-directive.png "Setting custom CSP directives")
 
 ### Common configurations
-- For Microsoft Teams integration using the [Dynamics 365 app](https://learn.microsoft.com/dynamics365/teams-integration/teams-integration), add the following to `frame-ancestors`:
-  - `https://teams.microsoft.com/`
-  - `https://msteamstabintegration.dynamics.com/`
+For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-integration/teams-integration), add the following to `frame-ancestors`:
+- `https://teams.microsoft.com/`
+- `https://msteamstabintegration.dynamics.com/`
 
 ### Important considerations
 Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
