@@ -86,7 +86,7 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
     :::image type="content" source="media/analytics-sessions/view-scripts1.png" alt-text="Screenshot of the Power Apps window with Data and Entities selected.":::
 
-1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Table**.
+1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Tables**.
 
     :::image type="content" source="media/analytics-sessions/view-scripts2.png" alt-text="Screenshot showing Conversation Transcript selected.":::
 
@@ -104,7 +104,7 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
     :::image type="content" source="media/analytics-sessions/export-scripts1.png" alt-text="Click path to export data.":::
 
-1. Type **Conversation** in the **Search** textbox at the top right. Select **ConversationTranscript** under **Table**.
+1. Type **Conversation** in the **Search** textbox at the top right. Select **ConversationTranscript** under **Tables**.
 
     :::image type="content" source="media/analytics-sessions/export-scripts2.png" alt-text="Select entities for export.":::
 
