@@ -669,6 +669,67 @@ steps:
 | `FriendlyName`<br/>Friendly name | The friendly name of the target environment. |
 | `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
 
+### Power Platform Reset Environment
+
+Reset environment from your tenant.
+
+#### YAML snippet (Reset-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.reset-environment.PowerPlatformResetEnvironment@2
+  displayName: 'Power Platform Reset Environment '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: Build
+    CurrencyName: ALL
+    Purpose: 'Reset Environment'
+    AppsTemplate: 'D365_CustomerService,D365_CDSSampleApp'
+```
+
+#### Parameters (Reset-env)
+
+| Parameters     | Description     |
+|----------------|-----------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the source environment that you want to reset (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the source environment that you want to reset (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `CurrencyName`<br/>Currency used for the environment. | The currency used for your environment. |
+| `Purpose`<br/>Description used for association | The description used to associate the environment with a specific intent. |
+| `AppsTemplate`<br/>Dynamics365 app template | Dynamics365 app that needs to be deployed. |
+
+### Power Platform Restore Environment
+
+Restores an environment to a given backup.
+
+#### YAML snippet (Restore-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.restore-environment.PowerPlatformRestoreEnvironment@2
+  displayName: 'Power Platform Restore Environment '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: Build
+    TargetEnvironmentUrl: 'https://contoso-test.crm.dynamics.com'
+    RestoreLatestBackup: false
+    RestoreTimeStamp: '12/01/2022 09:00'
+    FriendlyName: 'Contoso Test'
+```
+
+#### Parameters (Restore-env)
+
+| Parameters     | Description     |
+|----------------|-----------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the source environment that you want to restore from (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the source environment that you want to restore from (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `TargetEnvironmentUrl`<br/>Target environment URL | (Required) The URL for the target environment that you want to restore. |
+| `RestoreLatestBackup`<br/>Latest backup to restore | Latest backup to restore (true\|false). |
+| `RestoreTimeStamp`<br/>DateTime of the backup | DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'. |
+| `FriendlyName`<br/>Name of the restored environment | (Optional) Name of the restored environment. |
+
 ## Build and release pipelines
 
 Now that we've identified what can be done using the build tools, let's see
