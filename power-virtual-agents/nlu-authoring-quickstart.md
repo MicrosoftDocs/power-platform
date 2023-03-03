@@ -30,6 +30,15 @@ This quickstart guide will introduce you to the core steps in creating and boost
 
     :::image type="content" source="media/nlu-authoring/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
+- You'll need an account for Power Virtual Agents. 
+
+    > [!NOTE]
+    > If you don't have a Power Virtual Agents account, you can go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA), select **Start free**, and then sign in with your work email address. Also see the [Quickstart guide for creating a Power Virtual Agents bot](fundamentals-get-started.md).
+    >  
+    > Personal Microsoft accounts aren't supported. 
+    >  
+    > Supported browsers include Microsoft Edge, Chrome, and Firefox.
+
 - Review the [AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
  
 > [!IMPORTANT] 
@@ -51,7 +60,9 @@ Ready to get started? The first step is to create your bot.
 
 ## Create a boosted bot 
 
-1. From the **Power Virtual Agents (preview)** main screen, on the side navigation menu, select **Home**, then **+ Create a bot**. 
+1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/). 
+
+1. In the side navigation menu select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
 
    :::image type="content" source="media/nlu-authoring/nlu-quickstart-home.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
 

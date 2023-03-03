@@ -27,6 +27,9 @@ For example, if, during a conversation, a user asks a question for which the cha
 
     :::image type="content" source="media/nlu-authoring/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
+> [!NOTE]
+> If this is your first time creating a bot in Power Virtual Agents, please see [Create your first bot](fundamentals-get-started.md)
+
 
 ## Next steps
 

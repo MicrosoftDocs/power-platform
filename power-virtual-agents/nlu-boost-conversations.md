@@ -44,7 +44,18 @@ Now, before involving a live agent, the bot uses natural language processing to:
 
 ## Boost your bot's reach
 
-1. Create a preview bot. Select **Try the unified canvas (preview)**. Preview chatbots have **(preview)** added to their name in the list of bots.
+> [!NOTE]
+> If you don't have a Power Virtual Agents account, you can go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA), select **Start free**, and then sign in with your work email address. Also see the [Quickstart guide for creating a Power Virtual Agents bot](fundamentals-get-started.md).
+>  
+> Personal Microsoft accounts aren't supported. 
+>  
+> Supported browsers include Microsoft Edge, Chrome, and Firefox.
+
+1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/). 
+
+1. In the side navigation menu select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
+
+1. Select **Try the unified canvas (preview)**. Preview chatbots have **(preview)** added to their name in the list of bots.
     
 1. Enter a name for the bot.
 
@@ -52,13 +63,15 @@ Now, before involving a live agent, the bot uses natural language processing to:
 
     > [!WARNING]
     >
-    > The AI works best when you specify a top-level domain as the URL. 
+    > The AI works best when you specify a top-level domain as the URL. Entering the URL for a search engine, such as *www.bing.com*, can return unexpected or undesirable responses.
     > 
     > If the URL you specify is more than two levels deep into the domain (it has more than two forward slashes (/), you'll see an error and won't be able to continue.
     >
     > Your URL can have a trailing forward slash, and this won't be included in the limit of two slashes. For example, the URLs *www.contoso.com*, *www.fabrikam.com/engines/rotary*, or *www.fabrikam.com/engines/rotary/* are valid. The URL *www.fabrikam.com/engines/rotary/dual-shaft* is not.
     >
     > You'll also see an error if you include non-standard characters in the URL, such as a period (.).
+    >  
+    > 
 
     :::image type="content" source="media/nlu-authoring/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
@@ -115,13 +128,13 @@ During the preview, the use of the boosted conversations capability is not billa
 
 ## Internal document search preview
 
-Early access for internal document search will be opening up shortly.
+Early access to the internal document search capability preview will open shortly.
 
-Internal document search will allow your chatbot to securely return answers generated from your internal knowledge sources.
+The internal document search capability will allow your chatbot to return answers generated from your internal knowledge sources.
 
-When early access is open, a link to apply will be published here. You'll also be able to sign up from within the AI Capabilities page, under the **Boost conversations** section.
+When early access is open, a link to apply will be published here. You'll also be able to sign up from within the **AI Capabilities** page.
 
-As part of your application, you'll need to confirm that you can provide regular feedback on the feature, and that you are willing to sign a marketing/PR agreement. You should only apply if you have a use case for how you would use the feature in a production scenario.
+As part of your application, you'll need to confirm that you can provide regular feedback on the feature, and that you are willing to sign a marketing and PR agreement. You should only apply if you have a use case for how you would use the feature in a production scenario.
 
 
 
