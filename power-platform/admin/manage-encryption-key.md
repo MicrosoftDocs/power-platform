@@ -28,14 +28,14 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
 > 
 > We recommend using [customer-managed encryption key](customer-managed-key.md) (preview) instead of self-managed database encryption keys. 
 
-> Encryption key management is only applicable to Azure SQL environment databases. The following features and services continue to use the Microsoft-managed encryption key to encrypt their data and can't be encrypted with the self-managed encryption key:
-> - Dataverse search
-> - Elastic tables
-> - Mobile Offline
-> - Activity Log (Microsoft 365 portal)
-> - Exchange (Server-side sync)
-> 
-> Note the following: 
+Encryption key management is only applicable to Azure SQL environment databases. The following features and services continue to use the Microsoft-managed encryption key to encrypt their data and can't be encrypted with the self-managed encryption key:
+- Dataverse search
+- Elastic tables
+- Mobile Offline
+- Activity Log (Microsoft 365 portal)
+- Exchange (Server-side sync)
+ 
+> [!NOTE] 
 > - The self-manage database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
 > - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.  
 > - Support of [File](/powerapps/developer/data-platform/file-attributes) and [Image](/powerapps/developer/data-platform/image-attributes) with size < 128MB can be enabled if your environment has version 9.2.21052.00103 or higher.
