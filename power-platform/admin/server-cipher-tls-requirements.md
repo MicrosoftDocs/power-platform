@@ -97,6 +97,4 @@ To comply with our security policy for a secure connection, your server must hav
 [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls)  <br />
 [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)  
 
-[!INCLUDE[Disclaimer AI-generated description](../includes/disclaimer-ai-generated-description.md)]
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
