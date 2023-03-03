@@ -504,8 +504,6 @@ See [Delete approval history from Power Automate](/power-automate/gdpr-dsr-delet
 ### See also
 [Dataverse storage capacity](capacity-storage.md)
 
-[!INCLUDE[Disclaimer AI-generated description](../includes/disclaimer-ai-generated-description.md)]
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
 
