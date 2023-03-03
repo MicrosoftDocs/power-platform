@@ -34,7 +34,13 @@ Now, before involving a live agent, the bot uses natural language processing to:
 
 
 ## Prerequisites
-- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
+
+- You'll need an account for Power Virtual Agents. 
+
+    > [!NOTE]
+    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for boosting bot conversations (preview)](nlu-authoring-quickstart.md).
+
+- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
 
     :::image type="content" source="media/nlu-authoring/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
@@ -43,13 +49,6 @@ Now, before involving a live agent, the bot uses natural language processing to:
 - Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
 
 ## Boost your bot's reach
-
-> [!NOTE]
-> If you don't have a Power Virtual Agents account, you can go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA), select **Start free**, and then sign in with your work email address. Also see the [Quickstart guide for creating a Power Virtual Agents bot](fundamentals-get-started.md).
->  
-> Personal Microsoft accounts aren't supported. 
->  
-> Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
 1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/). 
 
@@ -126,16 +125,13 @@ During the preview, bots with **Boost conversations** enabled will have a limit 
 
 During the preview, the use of the boosted conversations capability is not billable and will follow the [usual quotas and limitations](requirements-quotas.md#quotas).
 
-## Internal document search preview
-
-Early access to the internal document search capability preview will open shortly.
+## Application for the internal document search preview
 
 The internal document search capability will allow your chatbot to return answers generated from your internal knowledge sources.
 
-When early access is open, a link to apply will be published here. You'll also be able to sign up from within the **AI Capabilities** page.
+To be considered for early access to the internal document search capability preview, you can apply [here](https://aka.ms/PVAGPTInterest). You can also apply by following the link on the **AI Capabilities** page.
 
 As part of your application, you'll need to confirm that you can provide regular feedback on the feature, and that you are willing to sign a marketing and PR agreement. You should only apply if you have a use case for how you would use the feature in a production scenario.
-
 
 
 

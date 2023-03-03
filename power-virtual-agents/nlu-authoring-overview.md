@@ -1,5 +1,5 @@
 ---
-title: Automated authoring overview (preview)
+title: AI-based boosted conversations overview (preview)
 description: Create instantly useful chatbots quickly with natural language understanding-based authoring capabilities in Power Virtual Agents.
 keywords: "Power Virtual Agents, bot, chatbot, GPT, OpenAI, PVA"
 ms.date: 2/14/2023
@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 searchScope:
   - "Power Virtual Agents"
 ---
-# Automated authoring overview (preview)
+# AI-based boosted conversations overview (preview)
 
 [!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
@@ -23,13 +23,14 @@ For example, if, during a conversation, a user asks a question for which the cha
 
 
 ## Prerequisites
+- You'll need an account for Power Virtual Agents. 
+
+    > [!NOTE]
+    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for boosting bot conversations (preview)](nlu-authoring-quickstart.md).
+
 - You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
 
     :::image type="content" source="media/nlu-authoring/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
-
-> [!NOTE]
-> If this is your first time creating a bot in Power Virtual Agents, please see [Create your first bot](fundamentals-get-started.md)
-
 
 ## Next steps
 

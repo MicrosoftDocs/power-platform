@@ -25,11 +25,6 @@ This quickstart guide will introduce you to the core steps in creating and boost
 
 ## Prerequisites 
 
-
-- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
-
-    :::image type="content" source="media/nlu-authoring/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
-
 - You'll need an account for Power Virtual Agents. 
 
     > [!NOTE]
@@ -38,6 +33,10 @@ This quickstart guide will introduce you to the core steps in creating and boost
     > Personal Microsoft accounts aren't supported. 
     >  
     > Supported browsers include Microsoft Edge, Chrome, and Firefox.
+
+- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
+
+    :::image type="content" source="media/nlu-authoring/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
 - Review the [AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
  
