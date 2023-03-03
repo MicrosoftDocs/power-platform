@@ -143,7 +143,7 @@ The tenant ID is the value of the `ObjectId` property that is returned from `Get
 
 ## Authentication and authorization
 
- Querying for rules and rulesets do not require an OAuth token, but all of the other APIs do require the token. The APIs do support authorization discovery by calling any of the APIs that require a token. The response will be an unauthorized HTTP status code of 401 with a WWW-Authenticate header, the authorization URI, and the resource ID. You should also provide your tenant ID in the `x-ms-tenant-id` header. Refer to [Power Apps Checker authentication and authorization](/powershell/powerapps/overview#powerapps-checker-authentication-and-authorization) for more information. Below is an example of the response header returned from an API request:
+ Querying for rules and rulesets do not require an OAuth token, but all of the other APIs do require the token. The APIs do support authorization discovery by calling any of the APIs that require a token. The response will be an unauthorized HTTP status code of 401 with a WWW-Authenticate header, the authorization URI, and the resource ID. You should also provide your tenant ID in the `x-ms-tenant-id` header. Refer to [Power Apps Checker authentication and authorization](/powershell/powerapps/get-started-powerapps-checker#powerapps-checker-authentication-and-authorization) for more information. Below is an example of the response header returned from an API request:
 
 ```http
 WWW-Authenticate →Bearer authorization_uri="https://login.microsoftonline.com/0082fff7-33c5-44c9-920c-c2009943fd1e", resource_id="https://api.advisor.powerapps.com/"
