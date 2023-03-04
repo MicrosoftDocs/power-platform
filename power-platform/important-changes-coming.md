@@ -21,6 +21,14 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## jQuery 2.1.1 support deprecated in Microsoft Power Apps service
+
+As part of a service update designed to improve security within Microsoft Power Apps, we have upgraded jQuery from version 2.1.1 to version 3.6.0.
+
+Effective March 2023, jquery-2.1.1.min.js support in Power Apps is deprecated. If you're using hard-coded links to the earlier jQuery version in custom code, ensure that you change the URL from `https://[Your org name].crm.dynamics.com/_static/_common/scripts/jquery-2.1.1.min.js` to `https://[Your org name].crm.dynamics.com/_static/_common/scripts/jquery-3.6.0.min.js`.
+
+jQuery 2.1.1 support will be removed after October 2023. 
+
 ## AI Builder image classification model by Lobe is deprecated
 
 Effective January 2023, the image classification model by Lobe (preview) was deprecated.
