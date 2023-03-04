@@ -148,6 +148,4 @@ We will adhere to the terms of the [Microsoft Online Services Service Level Agre
 
 ### See also  
 
-[!INCLUDE[Disclaimer AI-generated description](../includes/disclaimer-ai-generated-description.md)]
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
