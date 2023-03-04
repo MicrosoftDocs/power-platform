@@ -25,8 +25,6 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
 
 > [!IMPORTANT]
 > Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses, or more than 1000 Dynamics 365 Enterprise licenses, or more than 1000 licenses from a combination of both in a single tenant. To opt in to this program, submit a [support request](./support-overview.md#using-support).
-> 
-> We recommend using [customer-managed encryption key](customer-managed-key.md) (preview) instead of self-managed database encryption keys. 
 
 Encryption key management is only applicable to Azure SQL environment databases. The following features and services continue to use the Microsoft-managed encryption key to encrypt their data and can't be encrypted with the self-managed encryption key:
 - Dataverse search
