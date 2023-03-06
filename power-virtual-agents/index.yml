@@ -66,7 +66,7 @@ conceptualContent:
           itemType: overview
         - text: Quickstart
           url: ./preview/quickstart.md
-          itemType: get-started
+          itemType: quickstart
 
     - title: Get started
       links:
@@ -80,18 +80,18 @@ conceptualContent:
           url: ./teams/fundamentals-what-is-power-virtual-agents-teams.md
           itemType: overview      
     
-    - title: Create intelligent bots
+    - title: Create bots with GPT-powered AI
       links:
-        - text: Create and delete bots
-          url: ./authoring-first-bot.md
-          itemType: how-to-guide
-        - text: Create and edit topics
-          url: ./authoring-create-edit-topics.md
-          itemType: how-to-guide
-        - text: Test your bot
-          url: ./authoring-test-bot.md
-          itemType: how-to-guide             
-    
+        - text: AI-based boosted conversations overview (preview)
+          url: ./nlu-gpt-overview.md
+          itemType: overview
+        - text: Boost conversations (preview)
+          url: ./nlu-boost-conversations.md
+          itemType: tutorial
+        - text: Boost conversations quickstart guide (preview)
+          url: ./nlu-gpt-quickstart.md
+          itemType: quickstart
+
     - title: Enhance and improve your bots
       links:
         - text: Use entities and slot filling
