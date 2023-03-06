@@ -35,7 +35,7 @@ Notes on the format of the string:
 - The string may be include a percent sign (**%**) at the end, indicating that it is a percentage. The number will be divided by 100 before being returned. Percentages and currency symbols cannot be mixed.
 - The string may be in scientific notation, with 12 x 10<sup>3</sup> expressed as "12e3".
 
-If the number is not in a proper format, **Value** will return _blank_.
+If the number is not in a proper format, **Value** will return an error.
 
 To convert date and time values, use the [**DateValue**](function-datevalue-timevalue.md), [**TimeValue**](function-datevalue-timevalue.md), or [**DateTimeValue**](function-datevalue-timevalue.md) functions.
 
