@@ -426,6 +426,4 @@ Select the system job name to open details about your delete job.
 [Auditing overview](/power-apps/developer/data-platform/auditing-overview) <br />
 [Audit user access](/power-apps/developer/data-platform/audit-user-access)
 
-[!INCLUDE[Disclaimer AI-generated description](../includes/disclaimer-ai-generated-description.md)]
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
