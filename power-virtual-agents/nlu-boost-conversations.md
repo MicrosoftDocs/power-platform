@@ -113,10 +113,10 @@ The capability won't generate responses from a URL that points to a website that
 You should also be aware of the following characteristics of the capability:
   
 The bot will generate responses from any publicly viewable content under the URL you specify. This includes subdomains under a top-level domain:
-- If you were to use the URL *<span>www</span>.fabrikam.com/engines/rotary*, the content on *\www.fabrikam.com/engines/rotary/dual-shaft* would also be used by the bot to generate responses.  
-Content from *\www.fabrikam.com/tools* would not be used.  
-- If you were to use *\www.fabrikam.com*, the bot wouldn't generate responses from content on *\news.fabrikam.com*, as *news.* is a subdomain under the top-level domain *\fabrikam.com*.  
-- If you were to use *\fabrikam.com*, then content from *\www.fabrikam.com* and *\news.fabrikam.com* would be used, as they sit "under" the top-level domain *\fabrikam.com*.  
+- If you were to use the URL *<span>www</span>.fabrikam.com/engines/rotary*, the content on *<span>www</span>.fabrikam.com/engines/rotary/dual-shaft* would also be used by the bot to generate responses.  
+Content from *<span>www</span>.fabrikam.com/tools* would not be used.  
+- If you were to use *<span>www</span>.fabrikam.com*, the bot wouldn't generate responses from content on *<span>news</spam>.fabrikam.com*, as *news.* is a subdomain under the top-level domain *<span>fabrikam</span>.com*.  
+- If you were to use *<span>fabrikam</span>.com*, then content from *\www.fabrikam.com* and *\news.fabrikam.com* would be used, as they sit "under" the top-level domain *\fabrikam.com*.  
 
 The bot may generate nonsensical, irrelevant, or inappropriate answers if you use a forum or social network site as your URL:  
 - Community content on social networks can often increase the risk of more answers being rejected due to inappropriate, offensive, and malicious content that is more common on those sites.  
