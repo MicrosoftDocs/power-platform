@@ -10,6 +10,7 @@ ms.reviewer:
 manager: shellyha
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.search.region: USA
 searchScope:
   - "Power Virtual Agents"
 ---

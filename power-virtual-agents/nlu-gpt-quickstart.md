@@ -2,7 +2,7 @@
 title: Quickstart guide for boosting bot conversations (preview)
 description: Build bots quickly and provide the most relevant information to your customers with natural language understanding advancements in Power Virtual Agents preview.
 keywords: "PVA, GPT, NLU"
-ms.date: 2/23/2023
+ms.date: 3/6/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -10,6 +10,7 @@ ms.reviewer:
 manager: shellyha
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.search.region: USA
 searchScope:
   - "Power Virtual Agents"
 ---
