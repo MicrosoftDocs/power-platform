@@ -82,13 +82,13 @@ conceptualContent:
     
     - title: Create bots with GPT-powered AI
       links:
-        - text: AI-based boosted conversations overview (preview)
+        - text: Use AI to boost your bot's coverage
           url: ./nlu-gpt-overview.md
           itemType: overview
-        - text: Boost conversations (preview)
+        - text: Learn how to boost your bots
           url: ./nlu-boost-conversations.md
           itemType: tutorial
-        - text: Boost conversations quickstart guide (preview)
+        - text: Build a boosted bot from the ground up
           url: ./nlu-gpt-quickstart.md
           itemType: quickstart
 
