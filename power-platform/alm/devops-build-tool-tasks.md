@@ -599,7 +599,7 @@ steps:
 | Parameters       | Description         |
 |------------------|---------------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to delete the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to reset the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to delete the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 
 ### Power Platform Backup Environment
@@ -668,35 +668,6 @@ steps:
 | `OverrideFriendlyName`<br/>Override friendly name | Change the target environment's friendly name to another name (true\|false). |
 | `FriendlyName`<br/>Friendly name | The friendly name of the target environment. |
 | `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
-
-### Power Platform Reset Environment
-
-Reset environment from your tenant.
-
-#### YAML snippet (Reset-env)
-
-```yml
-steps:
-- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.reset-environment.PowerPlatformResetEnvironment@2
-  displayName: 'Power Platform Reset Environment '
-  inputs:
-    authenticationType: PowerPlatformSPN
-    PowerPlatformSPN: Build
-    CurrencyName: ALL
-    Purpose: 'Reset Environment'
-    AppsTemplate: 'D365_CustomerService,D365_CDSSampleApp'
-```
-
-#### Parameters (Reset-env)
-
-| Parameters     | Description     |
-|----------------|-----------------|
-| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the source environment that you want to reset (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the source environment that you want to reset (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `CurrencyName`<br/>Currency used for the environment. | The currency used for your environment. |
-| `Purpose`<br/>Description used for association | The description used to associate the environment with a specific intent. |
-| `AppsTemplate`<br/>Dynamics365 app template | Dynamics365 app that needs to be deployed. |
 
 ### Power Platform Restore Environment
 
