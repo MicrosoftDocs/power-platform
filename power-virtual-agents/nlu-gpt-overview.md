@@ -2,7 +2,7 @@
 title: AI-based boosted conversations overview (preview)
 description: Create instantly useful chatbots quickly with natural language understanding-based authoring capabilities in Power Virtual Agents.
 keywords: "Power Virtual Agents, bot, chatbot, GPT, OpenAI, PVA"
-ms.date: 2/14/2023
+ms.date: 3/6/2023
 ms.topic: overview
 author: iaanw
 ms.author: iawilt
@@ -10,6 +10,7 @@ ms.reviewer:
 manager: shellyha
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.search.region: USA
 searchScope:
   - "Power Virtual Agents"
 ---
