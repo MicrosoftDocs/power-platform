@@ -1,12 +1,13 @@
 ---
-title: "Use email message filtering and correlation to specify which emails are tracked   | MicrosoftDocs"
+title: Specify which emails are automatically tracked
 description: Use email message filtering and correlation to specify which emails are tracked. 
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/16/2022
+ms.date: 02/15/2023
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
+ms.contributor: dmartens
 search.audienceType: 
   - admin
 search.app:
@@ -15,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Use email message filtering and correlation to specify which emails are tracked 
+# Specify which emails are automatically tracked
 
 With server-side synchronization and Dynamics 365 App for Outlook, you can automatically create email activities in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)). These apps are based on received email messages. 
 
@@ -62,7 +63,7 @@ Dynamics 365 uses the following information from an email to determine if a new 
 - **InReplyTo** (hidden in email client user interface but stamped on the email message header): Contains the **messageId** that the email message is in reply to.
 
    > [!NOTE]
-   > If a user changes the subject of an email when replying from Outlook desktop, Outlook removes the In-Reply-To and Thread-Index values from the message headers. This prevents the email from being able to be correlated to a previous email based on InReplyTo or ConversationIndex.
+   > Server-side synchronization uses the In-Reply-To header of an email to identify an email that is a reply to another email. However, Dynamics 365 isn't able to control the behavior of different email clients that may be used to reply to an email. For example, if you reply to an email and change the subject, some email clients may remove the In-Reply-To value from the message headers. This prevents Dynamics 365 from being able to correlate the email to a previous email based on In-Reply-To. A [recent update](/officeupdates/semi-annual-enterprise-channel-preview#outlook-4) to the desktop version of Microsoft Outlook changed behavior so the In-Reply-To header isn't removed when replying to an email and the subject was changed.
 
 - **ConversationIndex** (hidden in email client user interface but stamped on the email message header): Contains data that associates an email message to an email thread.
 
@@ -105,6 +106,20 @@ The email correlation logic goes through each of theses correlation options, in 
 
 
 <a name="BKMK_tracking-token"></a>   
+
+## How to determine if and why an email was automatically tracked
+As mentioned above in [Use conversations to track emails](email-message-filtering-correlation.md#use-conversations-to-track-emails), emails may be automatically tracked based on the settings configured for your organization and the settings of individual users or queues. There are multiple columns in the email table which can be used to identify if and why an email was automatically tracked. These columns can be added to an Advanced Find view of emails to help understand why an email was tracked and if it was correlated with a previously tracked email.
+
+|                  Column                   |            Description           |
+|-----------------------------------------|------------------------------------|
+|                 Accepting Entity             |    The user or queue that received the email and was configured to automatically track it. For instance, if an email is received by a queue named Sales (`sales@contoso.com`) that has been configured to track all emails, then the Sales queue would be considered the Accepting Entity. |
+|                 Correlated Activity ID       |  Indicates whether an email was associated to a previously tracked email. For example, if an email was sent from Dynamics 365 and a subsequent reply was automatically tracked, the Correlated Activity ID of the reply would reference the original email that was sent.
+| Correlation Method | The correlation method used to automatically track an email. It's not currently available for Advanced Find or other views and forms, but you can use the Web API to view it. To see the correlation method for a specific email, use this URL format: <br><br>`https://YourDynamics365URL/api/data/v9.2/emails(IDofEmail)?$select=subject,correlationmethod` <br><br>For example, if your Dynamics 365 URL is `https://contoso.crm.dynamics.com`, you can use this URL to view the correlation method used for an email with an ID of fd372987-7fac-ed11-aad1-0022480819b5: <br><br>`https://**contoso.crm.dynamics.com**/api/data/v9.2/emails(**fd372987-7fac-ed11-aad1-0022480819b5**)?$select=subject,correlationmethod` <br><br>To find the ID of an email, open the email and check the URL. <br><br>In the above example, the URL for the email would end with **&id=fd372987-7fac-ed11-aad1-0022480819b5**. The value you see for correlation method will be a number, which corresponds to a specific correlation method. Refer to the table in the correlation method section of the [email EntityType](/power-apps/developer/data-platform/webapi/reference/email?view=dataverse-latest#properties&preserve-view=true) to understand which correlation method is represented by the number. For example, a value of 3 indicates that the email was correlated based on the InReplyTo method.
+|     Parent Activity ID   |     This column is used to reference a previously tracked email if the current email is correlated with it. However, the column will only be populated if the email was correlated using the InReplyTo or ConversationIndex correlation method. <br><br>For instance, if an email was sent from Dynamics 365 and a reply to that email was automatically tracked based on the InReplyTo or ConversationIndex methods, the Parent Activity ID column of the email reply would reference the sent email. In cases where the email was correlated using a different method, such as Tracking Token, the Parent Activity ID column would be empty.   |
+|         Receiving Mailbox     |      This column displays the mailbox that was processed by server-side synchronization when an email was detected to contain a user or queue that was configured to automatically track it. If the [OrgDBOrgSetting](../admin/OrgDbOrgSettings.md) called SSSForceFilteringMethodForUserMailboxes is disabled (which is the default setting), the value of this column may differ from the Accepting Entity. <br><br>For instance, suppose an email is sent to a user named Paul Cannon, who is configured to automatically track only replies to existing emails. The same email is also received by a queue named Sales (`sales@contoso.com`) that is set up to track all emails. Server-side synchronization may process Paul's mailbox first and recognize that there is a recipient of the email (Sales) that is configured to automatically track the email. In this case, the Accepting Entity would be the Sales queue, but the Receiving Mailbox would be Paul Cannon's mailbox.  |
+
+## Automatic population of Regarding column
+The Regarding column is present in each email row and is used to link the email to another row. For instance, the email might be linked to an opportunity, order, or case. If you are manually creating or updating an email row, you have the option to use the Regarding column to connect the email to a row from any table that has been set up to permit activities. If the email is tracked automatically because it was correlated with a previously tracked email, the Regarding column is automatically assigned the same value as the already tracked email.
 
 ## How customer engagement apps use tracking tokens  
 A tracking token is an alphanumeric string generated by customer engagement apps and appended to the end of an email subject line. It matches email activities with email messages.

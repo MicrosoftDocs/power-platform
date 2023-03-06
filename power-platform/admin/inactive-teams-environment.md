@@ -19,7 +19,7 @@ search.app:
 
 # Automatic deletion of inactive Microsoft Dataverse for Teams environments
 
-Power Platform provides a cleanup mechanism that automatically removes [Dataverse for Teams environments](about-teams-environment.md) from your tenant that are left inactive. An environments will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments.
+Power Platform provides a cleanup mechanism that automatically removes [Dataverse for Teams environments](about-teams-environment.md) from your tenant that are left inactive. An environment will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments.
 
 A disabled or deleted environment will not affect any any other Microsoft Teams assets (Teams, channels, SharePoint sites, Teams-connected sites, and so on) and applies only to Dataverse integrations. This cleanup process is automatic. If you no longer need an inactive Dataverse for Teams environment, you don't need to do anything.
 
@@ -65,7 +65,7 @@ The following users will receive email notifications on the schedule described i
 
 - The user who created the environment 
 
-Additionally, users and makers are notified on the Environments list page and Environment page when the Dataverse for Teams environment is disabled.
+Additionally, users and makers are notified on the Environment's list page and Environment page when the Dataverse for Teams environment is disabled.
 
 ### Definition of user activity
 

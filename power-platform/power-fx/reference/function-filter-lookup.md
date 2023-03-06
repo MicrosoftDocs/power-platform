@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 02/05/2017
+ms.date: 01/30/2023
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -15,6 +15,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Filter, Search, and LookUp functions in Power Apps

@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions in Power Apps
@@ -34,7 +35,7 @@ These functions change the state of the **Edit form** control. The form control 
 
 ## Description
 
-These functions are often invoked from the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** formula of a **[Button](/power-apps/maker/canvas-apps/controls/control-button.md)** or **[Image](/power-apps/maker/canvas-apps/controls/control-image)** control so that the user can save edits, abandon edits, or create a record. You can [use controls and these functions together](/power-apps/maker/canvas-apps/working-with-forms) to create a complete solution.
+These functions are often invoked from the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** formula of a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** or **[Image](/power-apps/maker/canvas-apps/controls/control-image)** control so that the user can save edits, abandon edits, or create a record. You can [use controls and these functions together](/power-apps/maker/canvas-apps/working-with-forms) to create a complete solution.
 
 These functions return no values.
 
@@ -46,12 +47,12 @@ Use the **SubmitForm** function in the **[OnSelect](/power-apps/maker/canvas-app
 
 Before submitting any changes, this function checks for validation issues with any field that's marked as required or that has one or more constraints on its value. This behavior matches that of the **[Validate](function-validate.md)** function.
 
-**SubmitForm** also checks the **[Valid](/power-apps/maker/canvas-apps/controls/control-form-detail.md)** property of the Form, which is an aggregation of all the **[Valid](/power-apps/maker/canvas-apps/controls/control-card.md)** properties of the **[Card](/power-apps/maker/canvas-apps/controls/control-card.md)** controls that the Form control contains. If a problem occurs, the data isn't submitted, and the **[Error](/power-apps/maker/canvas-apps/controls/control-form-detail)** and **[ErrorKind](/power-apps/maker/canvas-apps/controls/control-form-detail)** properties of the Form control are set accordingly.
+**SubmitForm** also checks the **[Valid](/power-apps/maker/canvas-apps/controls/control-form-detail)** property of the Form, which is an aggregation of all the **[Valid](/power-apps/maker/canvas-apps/controls/control-card)** properties of the **[Card](/power-apps/maker/canvas-apps/controls/control-card)** controls that the Form control contains. If a problem occurs, the data isn't submitted, and the **[Error](/power-apps/maker/canvas-apps/controls/control-form-detail)** and **[ErrorKind](/power-apps/maker/canvas-apps/controls/control-form-detail)** properties of the Form control are set accordingly.
 
 If validation passes, **SubmitForm** submits the change to the data source.
 
-- If successful, the Form's **[OnSuccess](/power-apps/maker/canvas-apps/controls/control-form-detail.md)** behavior runs, and the **[Error](/power-apps/maker/canvas-apps/controls/control-form-detail)** and **[ErrorKind](/power-apps/maker/canvas-apps/controls/control-form-detail)** properties are cleared. If the form was in **FormMode.New** mode, it is returned to **FormMode.Edit** mode.
-- If unsuccessful, the Form's **[OnFailure](/power-apps/maker/canvas-apps/controls/control-form-detail.md)** behavior runs, and the **[Error](/power-apps/maker/canvas-apps/controls/control-form-detail)** and **[ErrorKind](/power-apps/maker/canvas-apps/controls/control-form-detail)** properties are set accordingly. The mode of the form is unchanged.
+- If successful, the Form's **[OnSuccess](/power-apps/maker/canvas-apps/controls/control-form-detail)** behavior runs, and the **[Error](/power-apps/maker/canvas-apps/controls/control-form-detail)** and **[ErrorKind](/power-apps/maker/canvas-apps/controls/control-form-detail)** properties are cleared. If the form was in **FormMode.New** mode, it is returned to **FormMode.Edit** mode.
+- If unsuccessful, the Form's **[OnFailure](/power-apps/maker/canvas-apps/controls/control-form-detail)** behavior runs, and the **[Error](/power-apps/maker/canvas-apps/controls/control-form-detail)** and **[ErrorKind](/power-apps/maker/canvas-apps/controls/control-form-detail)** properties are set accordingly. The mode of the form is unchanged.
 
 ### EditForm
 

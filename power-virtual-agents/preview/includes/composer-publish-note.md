@@ -1,4 +1,4 @@
 > [!IMPORTANT]
-> Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+> Selecting **Publish** in Composer makes the changes available for testing, but doesn't automatically publish your bot.  
 >
-> Use the [Publish](../publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+> [Publish](../publication-fundamentals-publish-channels.md) your bot in Power Virtual Agents to update your bot across all the channels it's connected to.

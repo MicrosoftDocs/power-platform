@@ -13,6 +13,10 @@ search.audienceType:
   - maker
 search.app: 
   - PowerApps
+contributors:
+  - gregli-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Power Fx YAML formula grammar
