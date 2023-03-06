@@ -15,7 +15,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Quickstart guide for boosting bot conversations (preview)
+# Boost conversations quickstart guide (preview)
 
 [!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
@@ -107,8 +107,7 @@ After the trigger phrase, you add *conversation nodes* to define how the bot sho
 
 5. Repeat the above steps to add as many message variations as you like.  
  
-6. When you’re finished, select **Save**. 
-
+6. When you’re finished, select **Save**.  
    When you add message variations, the bot randomly picks one of them to use each time the node is triggered. 
 
 Next, it's time to test your bot! 
