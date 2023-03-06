@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Int, Round, RoundDown, RoundUp, and Trunc functions in Power Apps

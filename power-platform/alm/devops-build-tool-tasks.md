@@ -205,6 +205,35 @@ steps:
 | `UseDeploymentSettingsFile`<br/>Use deployment settings file | Connection references and environment variable values can be set using a [deployment settings](conn-ref-env-variables-build-tools.md#deployment-settings-file) file (true\|false). |
 | `DeploymentSettingsFile`<br/>Deployment settings file | (Required when `UseDeploymentSettingsFile`=**true**) The path and file name of the deployment settings file. |
 
+### Power Platform Add Solution Component
+
+Adds a solution component to an unmanaged solution.
+
+#### YAML snippet (Add)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.add-solution-component.PowerPlatformAddSolutionComponent@2
+  displayName: 'Power Platform Add Solution Component '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: Build
+    SolutionName: 'SampleSolution '
+    Component: contact
+    ComponentType: 1
+    AddRequiredComponents: false
+```
+
+#### Parameters (Add)
+
+| Parameters           | Description        |
+|----------------------|--------------------------|
+| `ComponentId`<br/>ID of the solution component | The schema name or ID of the component to add to the target solution. |
+| `ComponentType`<br/>Power Platform environment URL | The value that represents the solution component that you are adding. See [Use predefined component types](/power-apps/developer/data-platform/reference/entities/solutioncomponent#componenttype-choicesoptions) for a comprehensive list of component values. |
+| `SolutionUniqueName`<br/>Name of the solution | Unique name of the solution. |
+| `AddRequiredComponents`<br/>Any components required from other solution dependent on the solution component | (Optional) Indicates whether other solution components that are required by the solution component that you are adding should also be added to the unmanaged solution.  |
+| `Environment`<br/>Environment URL or ID | (Optional) Environment URL or ID of the target environment. |
+
 ### Power Platform Apply Solution Upgrade
 
 Upgrades a solution that has been imported as a holding solution.

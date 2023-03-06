@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Composer integration isn't available to users who only have the [Teams Power Virtual Agents license](../requirements-licensing-subscriptions.md). You must have a [trial](../sign-up-individual.md) or full Power Virtual Agents license.

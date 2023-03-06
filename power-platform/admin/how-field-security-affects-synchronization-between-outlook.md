@@ -1,12 +1,12 @@
 ---
 title: "How field security affects synchronization between customer engagement apps and Outlook  | MicrosoftDocs"
 description: How field security affects synchronization between customer engagement apps and Outlook 
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -35,7 +35,7 @@ Securing a field with field-level security can impact synchronization between cu
   
  ![Job Title field.](../admin/media/job-title-field.png "Job Title field")  
   
- He did the following steps:  
+ John did the following steps:  
 
 1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
@@ -60,7 +60,7 @@ Securing a field with field-level security can impact synchronization between cu
   
  ![Field Security Profile.](../admin/media/field-security-profile.png "Field Security Profile")  
   
- He did the following to create the field security profile:  
+ John did the following to create the field security profile:  
 
 1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
@@ -77,7 +77,7 @@ Securing a field with field-level security can impact synchronization between cu
 7. Select users and then celect **Select** > **Add**.  
   
 ### Set field permissions  
- With a field security profile created and users added to the profile, John can now set permissions on the fields to match his organization's requirements.  
+ With a field security profile created and users added to the profile, John can now set permissions on the fields to match the organization's requirements.  
   
  ![Edit Field Security form.](../admin/media/edit-field-security.png "Edit Field Security form")  
   
@@ -96,7 +96,7 @@ Securing a field with field-level security can impact synchronization between cu
   
  ![Contact Rene Valdes form.](../admin/media/contact-form-example.png "Contact Rene Valdes form")  
   
- When Nancy synchronizes with customer engagement apps, she notices that the Job Title field is gone from the contact. This is because Nancy doesn't have update rights for the Job Title field.  
+ When Nancy synchronizes with customer engagement apps, the Job Title field is gone from the contact. This is because Nancy doesn't have update rights for the Job Title field.  
   
  ![Rene contact with no Job Title.](../admin/media/contact-no-job-title.png "Rene contact with no Job Title")  
   

@@ -21,7 +21,7 @@ search.app:
 
 Power Platform resources periodically emit telemetry data for various operations and user activities across environments and extensions. Tenant-level analytics allows admins to view and compare insights derived from the Platform telemetry data across environments they manage. Tenant admins can view reports containing analytics that apply to all environments within the tenant. 
 
-Once enabled, this feature will copy data from environments that are associated with a tenant to the tenet location geo regardless of the location of the environment. A tenant-level administrator role is required for one time operation of granting consent for tenant-level analytics. 
+Once enabled, this feature will copy data from environments that are associated with a tenant to the default environment region regardless of the location of the environment. A tenant-level administrator role is required for one time operation of granting consent for tenant-level analytics. 
 
 To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. In the upper-right corner, select **Tenant level analytics** from the dropdown list. 
 
