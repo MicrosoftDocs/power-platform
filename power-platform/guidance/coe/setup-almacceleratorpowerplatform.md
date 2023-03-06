@@ -2,13 +2,13 @@
 title: "Set up ALM accelerator for Microsoft Power Platform components manually | MicrosoftDocs"
 description: "The ALM accelerator for Microsoft Power Platform helps you follow ALM patterns and practices to source-control and move your solutions from your development environment to test and production environments by using Azure DevOps. This guide walks through the manual setup steps of the accelerator."
 author: jenschristianschroder
-manager: devkeydet
+manager: tapanm-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/13/2022
 ms.subservice: guidance
 ms.author: jeschro
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app: 
