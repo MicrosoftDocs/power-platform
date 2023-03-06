@@ -30,7 +30,7 @@ Now, before involving a live agent, the bot uses natural language processing to:
 - Find, collate, and parse relevant information from a specified URL (for example, your company's website) with Bing Search
 - Create a plain language response and then deliver that to the bot user
 
-This means you can very quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers might end up asking.
+This means you can quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers might end up asking.
 
 Your workflow might be like this:
 
@@ -60,7 +60,7 @@ Your workflow might be like this:
 
 1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/). 
 
-1. In the side navigation menu select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
+1. In the side navigation menu, select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
 
 1. Select **Try the unified canvas (preview)**. Preview chatbots have **(preview)** added to their name in the list of bots.
     
