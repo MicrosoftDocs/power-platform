@@ -30,7 +30,7 @@ highlightedContent:
     # Card
     - title: Use GPT to build bots faster
       itemType: whats-new
-      url: ./nlu-authoring-overview.md
+      url: ./nlu-gpt-overview.md
 
     # Card
     - title: What's new in Power Virtual Agents?
