@@ -281,15 +281,15 @@ The **Product Showcase** tablet layout template was used for the following examp
 
 1. Close the app player and edit the app.
 1. Select **App** from the Tree view on left navigation.
-1. Select **OnStart** property on top left.
-1. Enter the formula as `If(Param("screen")="techspecs",Navigate(TechSpecs,Fade))`.
+1. Select **StartScreen** property on top left.
+1. Enter the formula as `If( Param("screen") = "techspecs", TechSpecs )`.
 
    ![Param example for navigation.](media/function-param/param-example-screen.png "Param example for navigation")
 
-   [If function](function-if.md) in [OnStart](object-app.md#onstart-property) property checks if parameter equals a certain value, in this case the value _techspecs_. And if it matches, the app navigates to _TechSpecs_ screen.
+   [If function](function-if.md) in [StartScreen](object-app.md#startscreen-property) property checks if parameter equals a certain value, in this case the value _techspecs_. And if it matches, returns the _TechSpecs_ screen control to the **StartScreen** property.
 
    > [!NOTE]
-   > Replace **TechSpecs** screen name in the Navigate function with name of a screen in your own app if you're not using the **Product Showcase** app template.
+   > Replace the **TechSpecs** control name in the **If** function with the name of a screen control in your own app if you're not using the **Product Showcase** app template.
 
 1. Save and publish the app.
 1. Open a new browser.
@@ -297,7 +297,7 @@ The **Product Showcase** tablet layout template was used for the following examp
 
    ![Web address for TechSpecs screen.](media/function-param/param-example-web-address-techspecs.png "Web address for TechSpecs screen")
 
-1. The app directly launches with **TechSpecs** or a screen you entered in Navigate function.
+1. The app directly launches with **TechSpecs** as the startscreen.
 
 ### See also
 
