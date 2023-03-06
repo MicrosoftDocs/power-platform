@@ -29,7 +29,7 @@ The **DateAdd** function adds a number of units to a date/time value. The result
 
 The **DateDiff** function returns the difference between two date/time values. The result is a whole number of units.
 
-For both functions, units can be **Milliseconds**, **Seconds**, **Minutes**, **Hours**, **Days**, **Months**, **Quarters**, or **Years**. By default, both functions use **Days** as units.
+For both functions, units can be **Units.Milliseconds**, **Units.Seconds**, **Units.Minutes**, **Units.Hours**, **Units.Days**, **Units.Months**, **Units.Quarters**, or **Units.Years**. By default, both functions use **Units.Days** as units.
 
 The **TimeZoneOffset** function returns the number of minutes between the user's local time and UTC (Coordinated Universal Time).
 
@@ -43,13 +43,13 @@ Also see [Date, Time, and DateTime data types](/power-apps/maker/canvas-apps/fun
 
 - _DateTime_ - Required. Date/time value to operate on.
 - _Addition_ - Required. Number, in _Units_, to add to the _DateTime_.
-- _Units_ - Optional. The type of _Units_ to add: **Milliseconds**, **Seconds**, **Minutes**, **Hours**, **Days**, **Months**, **Quarters**, or **Years**. If not specified, **Days** are used.
+- _Units_ - Optional. The type of _Units_ to add: **Units.Milliseconds**, **Units.Seconds**, **Units.Minutes**, **Units.Hours**, **Units.Days**, **Units.Months**, **Units.Quarters**, or **Units.Years**. If not specified, **Units.Days** are used.
 
 **DateDiff**( _StartDateTime_, _EndDateTime_ [, *Units* ] )
 
 - _StartDateTime_ - Required. Starting date/time value.
 - _EndDateTime_ - Required. Ending date/time value.
-- _Units_ - Optional. The type of _Units_ to subtract: **Milliseconds**, **Seconds**, **Minutes**, **Hours**, **Days**, **Months**, **Quarters**, or **Years**. If not specified, **Days** are used.
+- _Units_ - Optional. The type of _Units_ to subtract: **Units.Milliseconds**, **Units.Seconds**, **Units.Minutes**, **Units.Hours**, **Units.Days**, **Units.Months**, **Units.Quarters**, or **Units.Years**. If not specified, **Units.Days** are used.
 
 **TimeZoneOffset**( [ *DateTime* ] )
 
@@ -64,17 +64,17 @@ In all of these examples, assume that the current date and time is **July 15, 20
 | Formula                                                                 | Description                                                                                    | Result             |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------ |
 | **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )**                  | Adds three days (default units) to the current date and time.                                  | "18-07-2013 13:02" |
-| **Text( DateAdd( Now(), 4, Hours ),<br>"dd-mm-yyyy hh:mm" )**           | Add four hours to the current date and time.                                                   | "15-07-2013 17:02" |
-| **Text( DateAdd( Today(), 1, Months ),<br>"dd-mm-yyyy hh:mm" )**        | Adds one month to the current date, without time as **Today** doesn't return a time component. | "15-08-2013 00:00" |
-| **Text( DateAdd( Now(), &#8209;30, Minutes ),<br>"dd-mm-yyyy hh:mm" )** | Subtracts 30 minutes from the current date and time.                                           | "15-07-2013 12:32" |
+| **Text( DateAdd( Now(), 4, Units.Hours ),<br>"dd-mm-yyyy hh:mm" )**           | Add four hours to the current date and time.                                                   | "15-07-2013 17:02" |
+| **Text( DateAdd( Today(), 1, Units.Months ),<br>"dd-mm-yyyy hh:mm" )**        | Adds one month to the current date, without time as **Today** doesn't return a time component. | "15-08-2013 00:00" |
+| **Text( DateAdd( Now(), &#8209;30, Units.Minutes ),<br>"dd-mm-yyyy hh:mm" )** | Subtracts 30 minutes from the current date and time.                                           | "15-07-2013 12:32" |
 
 ### Simple DateDiff
 
 | Formula                                              | Description                                                                                                                                                                 | Result |
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| **DateDiff( Now(), DateValue("1/1/2014") )**         | Returns the difference between the two units in the default units of **Days**                                                                                               | 170    |
-| **DateDiff( Now(), DateValue("1/1/2014"), Months )** | Returns the difference between the two values in **Months**                                                                                                                 | 6      |
-| **DateDiff( Now(), Today(), Minutes )**              | Returns the difference between the current date/time and the current date only (no time) in minutes. Since the **Now** is later than **Today** the result will be negative. | -782   |
+| **DateDiff( Now(), DateValue("1/1/2014") )**         | Returns the difference between the two units in the default units of **Units.Days**                                                                                               | 170    |
+| **DateDiff( Now(), DateValue("1/1/2014"), Units.Months )** | Returns the difference between the two values in **Units.Months**                                                                                                                 | 6      |
+| **DateDiff( Now(), Today(), Units.Minutes )**              | Returns the difference between the current date/time and the current date only (no time) in minutes. Since the **Now** is later than **Today** the result will be negative. | -782   |
 
 ### Difference of dates with fractional results
 
@@ -82,9 +82,9 @@ The function DateDiff only returns a whole number of the units being subtracted,
 
 | Formula                                                                    | Description                                                                                                        | Result |
 | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------ |
-| **DateDiff( TimeValue("09:45:00"), TimeValue("10:15:36"), Hours )**        | The minutes/seconds are ignored, the difference is based on the time up to the hour.                               | 1      |
-| **DateDiff( TimeValue("09:45:00"), TimeValue("10:15:36"), Minutes )/60**   | The minutes are used in the difference, and the result is divided by 60 to have the difference in hours.           | 0.5    |
-| **DateDiff( TimeValue("09:45:00"), TimeValue("10:15:36"), Seconds )/3600** | The minutes and seconds are used in the difference; the result is divided by 3600 to have the difference in hours. | 0.51   |
+| **DateDiff( TimeValue("09:45:00"), TimeValue("10:15:36"), Units.Hours )**        | The minutes/seconds are ignored, the difference is based on the time up to the hour.                               | 1      |
+| **DateDiff( TimeValue("09:45:00"), TimeValue("10:15:36"), Units.Minutes )/60**   | The minutes are used in the difference, and the result is divided by 60 to have the difference in hours.           | 0.5    |
+| **DateDiff( TimeValue("09:45:00"), TimeValue("10:15:36"), Units.Seconds )/3600** | The minutes and seconds are used in the difference; the result is divided by 3600 to have the difference in hours. | 0.51   |
 
 ### Converting to UTC
 
@@ -92,7 +92,7 @@ To convert to UTC (Coordinated Universal Time), add the **TimeZoneOffset** for t
 
 For example, imagine the current date and time is **July 15, 2013, 1:02 PM** in Pacific Daylight Time (PDT, UTC-7). To determine the current time in UTC, use:
 
-- **DateAdd( Now(), TimeZoneOffset(), Minutes )**
+- **DateAdd( Now(), TimeZoneOffset(), Units.Minutes )**
 
 **TimeZoneOffset** defaults to the current time, so you don't need to pass it an argument.
 
@@ -104,7 +104,7 @@ To convert from UTC, subtract the **TimeZoneOffset** (by adding the negative) fo
 
 For example, imagine the UTC date and time **July 15, 2013, 8:02 PM** is stored in a variable named **StartTime**. To adjust the time for the user's time zone, use:
 
-- **DateAdd( StartTime, &minus;TimeZoneOffset( StartTime ), Minutes )**
+- **DateAdd( StartTime, &minus;TimeZoneOffset( StartTime ), Units.Minutes )**
 
 Note the negative sign before **TimeZoneOffset** to subtract the offset rather than add it.
 
