@@ -1,23 +1,23 @@
 ---
-title: Add a condition (preview)
+title: Use conditions (preview)
 description: Learn how to add conditional branching to a topic and the conversational path in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 10/10/2022
-
-ms.topic: article
+ms.date: 12/14/2022
+ms.topic: how-to
 author: v-alarioza
 ms.author: v-alarioza
 ms.reviewer: gapretty
 manager: shellyha
-ms.custom: authoring, topics, message, question
+ms.custom: authoring, topics, message, question, bap-template
 ms.collection: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 # Use conditions (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-You can use **Condition** nodes to branch logic within your topic, comparing the value of a variable to another variable or a specific value. For example, you might check to see if a number variable is greater than a certain number.
+You can use **Condition** nodes to add branches in your topic, comparing the value of one variable to that of another variable or to a specific value. For example, if the value of `isClubMember` is `True`, then the topic offers a discount; if the value is `False`, the topic presents the standard item price.
 
 ## Prerequisites
 
@@ -26,51 +26,59 @@ You can use **Condition** nodes to branch logic within your topic, comparing the
 ## Add a condition
 
 1. Open your topic.
-1. Select **+** to add a node, then select **Add a condition**, to add a condition node to the canvas.
 
-    This adds two branches to your topic where you can add nodes. One branch starts with a **Condition** node defines the conversation path for when the condition is true. The other branch starts with an **All Other Conditions** node and defines the path for when the condition is false.
+1. Select **+** to add a node, and then select **Add a condition**.
 
-    To build your condition in the **Condition** node, you can select a variable, a logical operator, and a value.
+    This action adds two branches to your topic. One branch starts with a **Condition** node and defines the conversation path for when the condition is true. The other branch starts with an **All Other Conditions** node and defines the path for when the condition is false.
 
-    - The logical operators available depend on the type of the variable you selected. For example, **Is equal to** is available for all variable types, but **Is greater than** is available for number types, but not for string types.
-    - You can enter a literal value or use _select variable_ (**>**) to select a variable. The value or variable to compare to must be a compatible type, based on the variable and the operator. Some operators, such as **Is Blank** or **Is not Blank**, do not require you to add a comparison value.
+    :::image type="content" source="media/authoring-condition-node/authoring-condition-node-new-condition.png" alt-text="Screenshot showing a Condition branch and an All Other Conditions branch in a topic.":::
 
-1. Choose **Select a variable** and use the variable picker to select the variable that will be compared.
+    To build your condition in the **Condition** branch, select a variable, a logical operator, and a value.
 
-    :::image type="content" source="media/authoring-condition-node/authoring-condition-node-new-condition.png" alt-text="Screenshot showing new condition with default simple editor and an all other conditions branch.":::
+1. Select **Select a variable** and select the variable to compare.
 
-1. By default, the operator dropdown is set to _is equal to_, but you can choose to change this to another operator (the available list of operators can change depending on the type of variable you are comparing).
+1. By default, the operator is set to _is equal to_. Select another operator if needed.
 
-1. Finally, enter a value to compare with your variable. For simple types&mdash;such as text, number, or Boolean&mdash;you enter a literal value, or use _select variable_ (**>**) to select an existing variable or use a Power Fx formula.
+    The logical operators available depend on the type of the variable you selected. For example, **is equal to** is available for all variable types. **is greater than** is available for number types, but not for string types.
 
-## Add more condition branches
+1. Enter a value to compare with your variable. For simple types, such as text, number, or Boolean, type a literal value. Select _Select variable_ (**>**) to select a variable or use a Power Fx formula.
 
-Initially, you have two condition branches, one for when your condition is true, and one for when it is false. You can add more condition branches. Each condition will be evaluated in order. The first branch with a condition that evaluates to true is followed. If all conditions evaluate to false, the **All other conditions** branch is followed.
+    The value or variable to compare must be of a compatible type, based on the variable and the operator. Some operators, such as **is Blank** or **is not Blank**, don't require you to add a comparison value.
 
-For example, you might have a number variable and want 3 branches for when:
+1. Select **+ New condition** if you need to add more criteria to your condition. Select **And** to make the criteria cumulative, or select **Or** to make them exclusive of one another.
+
+    :::image type="content" source="media/authoring-condition-node/authoring-condition-node-or-condition.png" alt-text="Screenshot showing a Condition branch with an Or condition.":::
+
+## Add more Condition branches
+
+Initially, a **Condition** node inserts two branches, a **Condition** branch for when your condition is true, and an **All Other Conditions** branch for when it's false. You can add as many **Condition** branches as you need. Each condition is evaluated in order. The first branch with a condition that evaluates to true is followed. If all conditions evaluate to false, the **All Other Conditions** branch is followed.
+
+For example, you might have a number variable and want three branches for when:
 
 - The number is less than 10.
 - The number is greater than 50.
-- All other numbers&mdash;greater than 10 and less than 50.
+- All other numbers&mdash;the number is greater than 10 and less than 50.
 
-1. To add an additional condition branch, select the **+** above an existing condition node and select **Add a condition**.
+1. To add another **Condition** branch, select the **+** _above_ an existing **Condition** branch and select **Add a condition**.
 
-    :::image type="content" source="media/authoring-condition-node/authoring-condition-node-multiple-conditions.png" alt-text="Screenshot showing multiple condition branches and an all other conditions branch.":::
+    If you select **Add node** (**+**) _below_ the **Condition** branch, you'll add an entire new **Condition** and **All Other Conditions** node, not a new **Condition** branch.
 
-## Use Power Fx to author a condition
+    :::image type="content" source="media/authoring-condition-node/authoring-condition-node-multiple-conditions.png" alt-text="Screenshot showing multiple Condition branches and an All Other Conditions branch in a topic.":::
 
-The default condition editor is good for most scenarios. If you need more flexibility to express the condition to define, you can instead use Power FX in the **Condition** node.
+## Use Power Fx to define a condition
 
-1. In the **Condition** node, select the _node menu_ (**&vellip;**), then **Change to formula**.
+The default condition editor is good for most scenarios. If you need more flexibility, use Power Fx in the **Condition** branch.
 
-    :::image type="content" source="media/authoring-condition-node/authoring-condition-node-change-to-formula.png" alt-text="Screenshot showing the menu where you can switch the node to use a formula.":::
+1. In the **Condition** branch, select the _Node Menu_ (**&vellip;**), and then select **Change to formula**.
 
-    The node switches to the formula editor control. If you had defined a condition earlier, the formula behind that condition is now shown in the formula editor.
+    :::image type="content" source="media/authoring-condition-node/authoring-condition-node-change-to-formula.png" alt-text="Screenshot showing the Node Menu where you can switch to use a Power Fx formula as the condition.":::
 
-    :::image type="content" source="media/authoring-condition-node/authoring-condition-node-formula-mode.png" alt-text="Screenshot showing the formula editor for a condition node.":::
+    The node switches to the formula editor control. If you defined a condition earlier, the formula behind that condition is shown in the formula editor.
 
-1. To add or update the formula, use use _select variable_ (**>**) to open the Power Fx formula editor. The formula you enter here must return a Boolean (true or false) value.
+    :::image type="content" source="media/authoring-condition-node/authoring-condition-node-formula-mode.png" alt-text="Screenshot showing the formula editor for a Condition node.":::
 
-    See [Microsoft Power Fx in Power Virtual Agents](advanced-power-fx.md) for more details about using the Power Fx formula editor.
+1. To change the formula, select _Select variable_ (**>**) to open the Power Fx formula editor. The formula you enter here must return a Boolean (true or false) value.
 
-To switch back to the simple condition editor, select the _node menu_ (**&vellip;**), then **Reset node**.
+Learn how to use [Microsoft Power Fx in Power Virtual Agents](advanced-power-fx.md).
+
+To switch back to the simple condition editor, select the _Node Menu_ (**&vellip;**), and then select **Reset node**.

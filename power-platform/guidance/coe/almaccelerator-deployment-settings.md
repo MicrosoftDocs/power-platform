@@ -34,6 +34,7 @@ The deployment settings payload for the ALM Accelerator export pipeline is used 
 
   | Setting                     | Required | Description |
   | -------                     | -------- | ----------- |
+  | ApprovalType                | No       | The type of approval to use in the deployment pipeline. |
   | BuildName                   | Yes      | The name of the build pipeline. |
   | BuildTemplate               | No       | The name of the build pipeline template. |
   | DeploymentEnvironmentName   | Yes      | The name of the deployment environment. |
@@ -55,6 +56,8 @@ The deployment settings payload for the ALM Accelerator export pipeline is used 
   | activateflow.order.flow-name.flow-id                                    | No       | The order in which to activate the flow. Setting the order is useful when activating parent / child flows. However, the pipelines will attempt to activate flows as long as there are flows to activate if the order isn't set.  |
   | activateflow.activate.flow-name.flow-id                                 | No       | This configuration sets whether or not activate this flow. In certain cases flows may intentionally be left in an off state in a deployment environment. This setting will trigger the pipelines to either turn on the flow or not when deployed. |
   | connector.teamname.connector-name.connector-id                          | No       | The Dataverse Azure AD Group Team to share the connector record associated with the custom connector after import of the solution in the deployment environment. |
+  | groupTeam.teamid.aadGroupId                                             | No       | Dataverse Group Teams to create in the deployment environment. |
+  | businessUnit.teamid.aadGroupId                                          | No       | Dataverse Business Unit associated with the Group Teams being created by groupTeam.teamid.aadGroupId. |
   | TriggerSolutionUpgrade                                                  | No       | True or false based on whether to apply solution upgrade during deployment to this environment. |
 
 ### Deployment Settings Schema

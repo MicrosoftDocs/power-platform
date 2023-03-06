@@ -1,7 +1,11 @@
-- name: Docs
+- name: Learn
   href: /
   topicHref: /
   items:
   - name: Power Platform
     tocHref: /power-platform/
     topicHref: /power-platform/
+    items:
+    - name: Power Fx
+      tocHref: /power-platform/power-fx/
+      topicHref: /power-platform/power-fx/overview/

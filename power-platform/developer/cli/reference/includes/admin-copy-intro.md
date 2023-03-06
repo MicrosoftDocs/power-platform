@@ -1,5 +1,10 @@
 ### Examples
 
+The following examples show the use of the `pac admin copy` command.
+
+- [Copy an environment from a source environment to a target environment using a minimal copy](#copy-an-environment-from-a-source-environment-to-a-target-environment-using-a-minimal-copy)
+- [Copy an environment from a source environment to a target environment using a full copy](#copy-an-environment-from-a-source-environment-to-a-target-environment-using-a-full-copy)
+
 #### Copy an environment from a source environment to a target environment using a minimal copy
 
 This example copies over customizations and schemas only from a source environment to a target environment.

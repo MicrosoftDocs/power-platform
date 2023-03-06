@@ -10,7 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtualagent
+ms.collection: virtual-agent
 ---
 
 # Use a Power Virtual Agents bot as a skill
@@ -48,7 +48,7 @@ Add the Bot Framework bot's app ID to the allowlist for the Power Virtual Agents
 
 1. In Power Virtual Agents, open the bot you want to use as a skill.
 
-1. In the left pane, go to **Settings** and select **Security**. Then select **Allowlist**.
+1. In the navigation menu, go to **Settings** and select **Security**. Then select **Allowlist**.
 
     :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_ManageAllowlistSecurity.png" alt-text="Screenshot highlighting the Allowlist tile on the Security page.":::
 
@@ -109,7 +109,7 @@ Both skill manifests are shown on the **Manage allowlist** panel.
 
 :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_Manifest1.png" alt-text="Screenshot of the Manage allowlist panel showing the Power Virtual Agents bot manifests.":::
 
-The skill manifests are also shown on the bot's Details page. In the left pane, select **Settings**, and then select **Details**. The Details page shows other metadata, including **Environment ID**, **Tenant ID**, and **Bot app ID**.
+The skill manifests are also shown on the bot's Details page. In the navigation menu, select **Settings**, and then select **Details**. The Details page shows other metadata, including **Environment ID**, **Tenant ID**, and **Bot app ID**.
 
 :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_Manifest2.png" alt-text="Screenshot of the Details page highlighting where to download the Power Virtual Agents bot manifests.":::
 
@@ -201,7 +201,7 @@ Instead of relying on what a user says to trigger a Power Virtual Agents skill t
 
 ### Pass an input variable to a Power Virtual Agents skill topic
 
-Bot Framework Composer can pass a variable to a Power Virtual Agents skill topic as an input. To learn how to create Power Virtual Agents topics that accept input variables, see [Passing variables between topics](/authoring-variables#passing-variables-between-topics).
+Bot Framework Composer can pass a variable to a Power Virtual Agents skill topic as an input. To learn how to create Power Virtual Agents topics that accept input variables, see [Passing variables between topics](authoring-variables.md#passing-variables-between-topics).
 
 If a Power Virtual Agents topic that can receive an input variable is listed in your skill manifest, you can pass a Composer variable to it.
 

@@ -2,13 +2,14 @@
 title: "Download chatbot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
 keywords: "PVA"
-ms.date: 01/25/2022
+ms.date: 01/23/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: analysis, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -40,7 +41,7 @@ Lastly, you can manage the retention period for transcripts. This can be useful 
 
 ## Download session transcript information from the Power Virtual Agents portal
 
-1. Select **Analytics** on the side pane. Go to the **Sessions** tab.
+1. In the navigation menu, select **Analytics**. Go to the **Sessions** tab.
 
     If your bot had a high number of sessions, they'll be broken down into multiple rows. Each row contains 2500 sessions.
 
@@ -54,10 +55,9 @@ The downloaded file contains the following information:
 - StartDateTime: Time at which the session started. Entries are sorted by this column in descending order.
 - InitialUserMessage: First message typed by the user.
 - TopicName: Name of the last authored topic that was triggered in this session.
-- ChatTranscript: Transcript of the session in the following format:
-  - ***User says:**" "; **Bot says:**" ";* structure
+- ChatTranscript: Transcript of the session in the following format, `User says: <message-text>; Bot says: <message-text>;`.
   - Conversation turns are separated by semicolons
-  - **Bot says** doesn't include the options presented to the user.
+  - _Bot says_ doesn't include the options presented to the user.
 
     Example:
 
@@ -71,6 +71,8 @@ The downloaded file contains the following information:
 
 > [!NOTE]
 > The download will start when you select the time period. It will be downloaded into your default browser download's location.
+>
+> Sessions may be grouped into multiple date ranges for download when the selected time window does not include the most recent day or when there are more than 2,500 sessions.
 
 ## View and export bot conversation transcripts from the Power Apps portal
 

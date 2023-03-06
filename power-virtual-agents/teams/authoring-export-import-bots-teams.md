@@ -10,7 +10,8 @@ ms.author: iawilt
 ms.reviewer: digantak
 manager: shellyha
 ms.custom: "customization, ceX, teams"
-ms.collection: virtualagent
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Export and import chatbots made in Teams

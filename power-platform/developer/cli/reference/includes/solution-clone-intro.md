@@ -1,5 +1,11 @@
 ### Examples
 
+The following examples show the use of the `pac solution clone` command.
+
+- [Basic clone](#basic-clone)
+- [Clone with general and auto numbering settings included](#clone-with-general-and-auto-numbering-settings-included)
+- [Clone with canvas app unpack](#clone-with-canvas-app-unpack)
+
 #### Basic clone
 
 This example clones the solution `sampleSolution` to the current directory.

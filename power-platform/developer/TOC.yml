@@ -4,10 +4,10 @@
     href: ./index.yml
   - name: Power Platform for developers
     href: get-started.md
-  - name: Fusion development
-    href: fusion-development.md
   - name: Create a developer environment
     href: create-developer-environment.md
+  - name: Fusion development
+    href: fusion-development.md    
   - name: ALM for developers
     href: /power-platform/alm/alm-for-developers
   - name: Tools
@@ -34,6 +34,8 @@
             href: cli\reference\data.md
           - name: pac help
             href: cli\reference\help.md
+          - name: pac modelbuilder
+            href: cli\reference\modelbuilder.md
           - name: pac org
             href: cli\reference\org.md
           - name: pac package
@@ -42,6 +44,8 @@
             href: cli\reference\paportal.md
           - name: pac pcf
             href: cli\reference\pcf.md
+          - name: pac pipeline
+            href: cli\reference\pipeline.md
           - name: pac plugin
             href: cli\reference\plugin.md
           - name: pac solution
@@ -50,3 +54,5 @@
             href: cli\reference\telemetry.md
           - name: pac tool
             href: cli\reference\tool.md
+          - name: pac virtual-agent
+            href: cli\reference\virtual-agent.md
