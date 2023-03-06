@@ -148,7 +148,9 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 - If the bot can't generate an answer to a question, it will ask you to rephrase the question. After two of these prompts, the bot will initiate the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
-- To learn more about how the question is being interpreted by Bing against the URL you specify, add "site: \<your URL here>" to the end of your question to see the top Bing results for the question. 
+- To learn more about how the question is being interpreted by Bing against the URL you specify, add "site: \<your URL here>" to the end of your question to see the top Bing results for the question.  
+
+- You may need to disable the [sample topics that are created automatically](authoring-template-topics.md) when you create a bot. 
 
 > [!TIP]
 >  
