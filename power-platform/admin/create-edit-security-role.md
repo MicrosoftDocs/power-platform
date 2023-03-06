@@ -112,22 +112,15 @@ For information on predefined security roles, see [Predefined security roles](da
 6. When you have finished configuring the security role, on the toolbar, select or tap **Save and Close**.  
   
 ## Minimum privileges for common tasks  
- It's helpful to keep in mind the minimum privileges that are needed for some common tasks. This means that a user is required to have a security role with these privileges in order to run applications. 
+ It's helpful to keep in mind the minimum privileges that are needed for some common tasks including opening Model-driven apps. This means that a user is required to have a security role with these privileges in order to run applications.
  
- We've created a solution you can import that provides a security role with the required minimum privileges.
-
-Start by downloading the solution from the Microsoft Download Center: [Microsoft Dataverse minimum privilege security role](https://go.microsoft.com/fwlink/?linkid=2221577).
-
-Then, follow the directions to import the solution: [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
-
-When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
-
-> [!IMPORTANT]
-> You should try out the solution in a development environment before importing into a production environment. 
+ We've retired the downloadable solution for the **min prv apps use** role from the Microsoft Download Center: [Microsoft Dataverse minimum privilege security role](https://go.microsoft.com/fwlink/?linkid=2221577), and replaced it with a [Predefined security roles](database-security.md#predefined-security-roles) called **App Opener**.
+ 
+When you create a custom security role, you can copy (see: [Create a security role by Copy Role](#create-a-security-role-by-copy-role)) the **App Opener** security role. When Copying Role is complete, select your newly created custom security role and navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
   
-- When logging in to customer engagement apps:  
+- When logging in to customer engagement apps (Model-driven apps):  
   
-  -   Assign the min prv apps use security role or a copy of this security role to your user.
+  -   Assign the **App Opener** security role or a copy of this security role to your user.
   
   -   To render an table grid (that is, to view lists of records and other data), assign the following privileges on the Core Records tab: Read privilege on the table, Read Saved View, Create/Read/Write User Entity UI Settings
       and assign the following privilege on the Business Management tab: Read User.   
