@@ -90,13 +90,9 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
     :::image type="content" source="media/analytics-sessions/view-scripts2.png" alt-text="Screenshot showing Conversation Transcript selected.":::
 
-1. A page for the **ConversationTranscript** table will open and show the available data.
+1. A page for the **ConversationTranscript** table will open and show a list of data available to view.
 
     :::image type="content" source="media/analytics-sessions/view-scripts3.png" alt-text="Screenshot showing Active conversation transcripts expanded.":::
-
-1. View the bot's conversation transcripts.
-
-    :::image type="content" source="media/analytics-sessions/export-view-sessions.png" alt-text="Screenshot showing sample bot transcript entries.":::
 
 ### Export conversation transcripts
 
