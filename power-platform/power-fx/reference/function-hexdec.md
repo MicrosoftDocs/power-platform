@@ -26,7 +26,7 @@ Use the **Hex2Dec** function to convert a text string containing hexadecimal dig
 
 Both these functions work with a 40 bit, two's-complement, whole number. The range of accepted values for both functions is hexadecimal 8000000000 or decimal -549755813888 to hexadecimal 7FFFFFFFFF or decimal 549755813887.
 
-If you pass a single number or text string to these functions, the return value is a single result.  If you pass a single-column [table](../working-with-tables.md) the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](../working-with-tables.md) describes.  
+If you pass a single number or text string to these functions, the return value is a single result.  If you pass a single-column [table](../working-with-tables.md) the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.  
 
 If the input value is out of range or includes invalid hexadecimal characters in the case of **Hex2Dec**, an **ErrorKind.Numeric** error is returned.  In the case of a single column table, the error will be embedded in the output table.
 
