@@ -15,6 +15,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
   - mikepenaMS
   - anuitz
 ---

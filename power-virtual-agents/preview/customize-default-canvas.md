@@ -2,22 +2,23 @@
 title: Customize your bot (preview)
 description: Change the name, icon, and color of your bot with CSS and JavaScript styling in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 10/10/2022
-ms.topic: article
+ms.date: 12/07/2022
+ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "customization, ce06102020"
+ms.custom: customization, ce06102020, bap-template
 ms.collection: virtual-agent
+ms.service: power-virtual-agents
 ---
 
 # Customize the look and feel of your bot (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-Your bot's look and feel is defined by the bot's canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
+Your bot's look and feel is defined by its canvas. To customize your bot, you must customize its canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
 
-- [Customize the default canvas](#customize-the-default-canvas-simple) with JavaScript-based styling in the HTML code of the website where you deploy your bot.  
+- [Customize the default canvas](#customize-the-default-canvas-simple) with JavaScript styling in the HTML code of the website where you deploy your bot.  
     This approach is useful if you want to make small customizations without investing in code development.
 
 - [Use a custom canvas](#customize-and-host-your-chat-canvas-advanced) that's based on the [Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
@@ -28,13 +29,13 @@ Your bot's look and feel is defined by the bot's canvas. You can customize the c
 >
 > Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
-## Change your bot's name
+## Change your bot's name and icon
 
-If all you want to change is your bot's name, you can do that easily in your bot's settings in Power Virtual Agents.
+If all you want to change is your bot's name and icon, you can do that easily in your bot's settings in Power Virtual Agents.
 
 1. In the navigation menu, select **Settings**, and then select **General**.
 
-1. Type a new name for your bot, and then select **Save**.
+1. Type a new name for your bot, select a new icon if you like, and then select **Save**.
 
     :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="Screenshot of a bot's general settings page, with the bot name highlighted.":::
 
@@ -60,15 +61,15 @@ First, you need to configure where you're deploying your bot canvas.
 
 1. [Publish your bot](publication-connect-bot-to-web-channels.md).
 
-1. Copy and paste the HTML code below and save it as _index.html_.  
-    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You'll still need to add your token endpoint.  
+1. Copy the HTML code below and save it to a local drive as _index.html_.  
+    If you just want to try it out, paste the code into the [w3schools.com Tryit Editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) instead of saving it to a file.  
 
     ```HTML
     <!DOCTYPE html>
     <html>
     <head>
         <title>Contoso Sample Web Chat</title> 
-        <!-- This styling is for the Web Chat demonstration purposes. It is recommended that style is moved to separate file for organization in larger projects -->
+        <!-- This styling is for the Web Chat demonstration purposes. It is recommended that style is moved to a separate file for organization in larger projects. -->
         <style>
             html, body {
                 height: 100%;
@@ -126,7 +127,7 @@ First, you need to configure where you're deploying your bot canvas.
       <script>
             const styleOptions = {
 
-               // Add styleOptions to customize Web Chat canvas
+               // Add styleOptions to customize the Web Chat canvas
                hideUploadButton: true
             };
 
@@ -153,6 +154,7 @@ First, you need to configure where you're deploying your bot canvas.
                     window.WebChat.renderWebChat(
                         {
                             directLine: window.WebChat.createDirectLine({
+                                domain: `${directline}v3/directline`,
                                 token: conversationInfo.token,
                             }),
                             styleOptions
@@ -167,9 +169,10 @@ First, you need to configure where you're deploying your bot canvas.
     </html>
     ```
 
-1. In the _index.html_ file you created, enter your token endpoint at the line `var theURL = "<YOUR TOKEN ENDPOINT>";`.
+1. In the HTML code, find the line that starts with`var theURL = "<YOUR TOKEN ENDPOINT>";` with your bot's token endpoint.
 
-1. Open _index.html_ using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
+1. Open _index.html_ in a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.  
+    If you're using the Tryit Editor, select **Run**.
 
 1. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
 
@@ -183,7 +186,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 #### Change the bot icon
 
-1. Add the following sample code to the *index.html* file:
+1. Add the following sample code to the _index.html_ file:
 
     ```js
     const styleOptions = {
@@ -200,7 +203,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 #### Change the background color
 
-1. Update the *index.html* file with following sample code:
+1. Update the _index.html_ file with following sample code:
 
     ```js
     const styleOptions = {
@@ -214,41 +217,40 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 #### Change the bot's name
 
-1. Update the `<h1>` text in the *index.html* file with the following code:
+1. Change the `<h1>` text in the _index.html_ file to your bot's new name:
 
     ```HTML
     <body>
         <div id="heading">
              <!-- Change the h1 text to change the bot name -->
-             <h1><img src="contosobot-teams.png"> Contoso Bot Name</h1>
+             <h1><img src="contosobot-teams.png">Contoso Bot Name</h1>
         </div>
 
     ```
 
-1. Change the text to whatever you want to call your bot. You can also insert an image, although you may need to style it to make sure it fits in the heading section.
+1. You can also insert an image, as in the example above, although you may need to style it to make sure it fits in the heading section.
 
 ## Customize and host your chat canvas (advanced)
 
-The other way to change your bot's look and feel is to connect it to a custom canvas that's hosted as a web app. This approach is best if you need to embed a customized iFrame across multiple web pages.
+The other way to change your bot's look and feel is to connect it to a custom canvas that's hosted as a web app. This approach is best if you need to embed a customized IFrame across multiple web pages.
 
-> [!NOTE]
-> Hosting a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a good understanding of developer tools, utilities, and IDEs.
+Hosting a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a good understanding of developer tools, utilities, and IDEs.
 
 ### Pick a sample to customize
 
 We recommend starting with one of these samples custom-built to work with Power Virtual Agents:
 
-- [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Power Virtual Agents. For example:
+- [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing rich content from Power Virtual Agents. For example:
 
-  :::image type="content" source="media/customize-default-canvas/custom-canvas-full-bundle.png" alt-text="Full bundle custom canvas." border="false":::
+  :::image type="content" source="media/customize-default-canvas/custom-canvas-full-bundle.png" alt-text="Screenshot of a Full bundle custom canvas.":::
 
 - [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) is a custom canvas capable of getting a user's location and sending it to a bot using Power Virtual Agents. For example:
 
-  :::image type="content" source="media/customize-default-canvas/custom-canvas-location-file-upload.png" alt-text="Location and file uploading custom canvas." border="false":::
+  :::image type="content" source="media/customize-default-canvas/custom-canvas-location-file-upload.png" alt-text="Screenshot of a Location and file uploading custom canvas.":::
 
 Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Bot Framework.
 
-### Customize the canvas using `stylesetOptions`
+### Customize the canvas using stylesetOptions
 
 As with customizing the default canvas, you can use `styleSetOptions` to customize the custom canvas. All customizable properties are listed in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/main/packages/api/src/defaultStyleOptions.ts). For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true).
 
@@ -258,7 +260,7 @@ Deploy all files to a web app.
 
 ## See also
 
-- [Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
-- [Generating a direct line token](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?preserve-view=true&view=azure-bot-service-4.0#generate-token)
+- [Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)e
+- [Generating a Direct Line token](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?preserve-view=true&view=azure-bot-service-4.0#generate-token)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

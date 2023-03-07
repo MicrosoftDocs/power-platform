@@ -24,7 +24,7 @@ Additional information:
 
 ## Communicating intent
 
-One of the key challenges of the Center of Excellence (CoE) team is communicating how they want employees to use the default environment. This section highlights a few ways in which you can communicate default environment usage with makers across the organization. More information: [What is a Center of Excellence?](../coe/motivation.md)
+One of the key challenges of the Center of Excellence (CoE) team is communicating how they want employees to use the default environment. This section highlights a few ways in which you can communicate default environment usage with makers across the organization. 
 
 ### Renaming default environment
 

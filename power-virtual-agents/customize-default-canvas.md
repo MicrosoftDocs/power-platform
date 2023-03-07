@@ -9,6 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: "customization, ce06102020"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -179,6 +180,7 @@ First, you need to configure where you're deploying your bot canvas.
                     window.WebChat.renderWebChat(
                         {
                             directLine: window.WebChat.createDirectLine({
+                                domain: `${directline}v3/directline`,
                                 token: conversationInfo.token,
                             }),
                             styleOptions
@@ -211,7 +213,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 #### Change the bot icon
 
-1. Update the *index.html* file with the following sample code:
+1. Update the _index.html_ file with the following sample code:
 
     ```js
     const styleOptions = {
@@ -228,7 +230,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 #### Change the background color
 
-1. Update the *index.html* file with following sample code:
+1. Update the _index.html_ file with following sample code:
 
     ```js
     const styleOptions = {
@@ -242,7 +244,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 #### Change the bot name
 
-1. Update the `<h1>` text in the *index.html* file with the following:
+1. Update the `<h1>` text in the _index.html_ file with the following:
 
     ```HTML
     <body>
