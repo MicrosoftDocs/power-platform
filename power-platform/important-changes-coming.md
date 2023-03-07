@@ -35,9 +35,11 @@ If your code isn't already in a source code repository, you should export your s
 
 ### What to do if you are impacted?
 
-If your web resources have a dependency on this library, you should replace the reference with a newer version of JQuery
+If your web resources have a dependency on this library, you should replace the reference with a newer version of JQuery.
 
 Note, there may be breaking changes between versions. For information about upgrading, see [jQuery Core Upgrade Guides](https://jquery.com/upgrade-guide/).
+
+Choose one of these options:
 
 - Create a new JavaScript web resource with the minified version of jQuery. The library is available here: [jQuery Core – All Versions](https://releases.jquery.com/jquery/). More information: [Create or edit model-driven app web resources to extend an app](/power-apps/maker/model-driven-apps/create-edit-web-resources).
 - Locate the URL of a CDN for a newer version of jQuery. For example [jQuery-libraries-cdnjs](https://cdnjs.com/libraries/jquery).
