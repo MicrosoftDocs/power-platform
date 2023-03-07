@@ -8,7 +8,7 @@ ms.date: 03/07/2023
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass 
-ms.reviewer: jimholtz 
+ms.reviewer: sericks 
 search.audienceType: 
   - admin
 search.app:
@@ -68,7 +68,7 @@ Schemas define which Power Apps fields are sent to the Microsoft Purview complia
 
 ## Review your audit data using reports in Microsoft Purview compliance portal
 
-You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide).
+You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true).
 
 To use the preconfigured Power Apps reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Power Apps app activities** tab.
 
@@ -76,7 +76,7 @@ To use the preconfigured Power Apps reports, go to https://protection.office.com
 > ![Audit log search Power Apps.](media/audit-log-search-pa.png "Audit log search Power Apps")
 
 ### See also
- [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide)<br/>
+ [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true)<br/>
  [Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)<br/>
  [Permissions in the Security & Compliance Center](/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
 
