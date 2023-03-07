@@ -21,13 +21,34 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## jQuery 2.1.1 support deprecated in Microsoft Power Apps
+## jQuery 2.1.1 to be removed in model-driven apps
 
-As part of a service update designed to improve security within Microsoft Power Apps, we have upgraded jQuery from version 2.1.1 to version 3.6.0.
+As part of a service update designed to improve security within Microsoft Power Apps we are removing jQuery version 2.1.1 from model-driven applications. In October 2023 we are removing the library located here: `/_static/_common/scripts/jquery-2.1.1.min.js`.
 
-Effective March 2023, jquery-2.1.1.min.js support in Power Apps is deprecated. If you're using hard-coded links to the earlier jQuery version in custom code, ensure that you change the URL from `https://[Your org name].crm.dynamics.com/_static/_common/scripts/jquery-2.1.1.min.js` to `https://[Your org name].crm.dynamics.com/_static/_common/scripts/jquery-3.6.0.min.js`.
+If custom code in web resources has a dependency on this library it will stop working when this library is removed. We do not support use of any model-driven application client-side code, including libraries that model-driven apps depend on. These libraries might change without warning. More information: [Unsupported customizations](/power-apps/developer/model-driven-apps/supported-customizations#unsupported-customizations).
 
-jQuery 2.1.1 support in Power Apps will be removed after October 2023. 
+### Are you impacted?
+
+To determine if you are impacted, search your web resource code for this line: `/_static/_common/scripts/jquery-2.1.1.min.js`.
+
+If your code isn't already in a source code repository, you should export your solutions and extract the contents. There are many tools you may use to search the contents. For example, you can use the search capabilities of Visual Studio Code. More information: [Visual Studio Code: Basic Editing > Search across files](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
+
+### What do do if you are impacted?
+
+If your web resources have a dependency on this library, you should consider the following:
+
+#### Updating your code to remove JQuery
+
+jQuery provided many cross-browser capabilities that were missing from earlier versions of the JavaScript language. Today, the consensus is that modern browsers and new JavaScript language capabilities can provide the same functionality without the JQuery library. More information: [You might not need JQuery](https://youmightnotneedjquery.com/)
+
+#### Replacing the reference with a newer version of JQuery
+
+If you need to, or prefer to continue to use jQuery, you should upgrade to a newer version. Note, there may be breaking changes between versions. For information about upgrading, see [jQuery Core Upgrade Guides](https://jquery.com/upgrade-guide/).
+
+- Create a new JavaScript web resource with the minified version of jQuery. The library is available here: [jQuery Core – All Versions](https://releases.jquery.com/jquery/). More information: [Create or edit model-driven app web resources to extend an app](/power-apps/maker/model-driven-apps/create-edit-web-resources).
+- Locate the URL of a CDN for a newer version of jQuery. For example [jQuery-libraries-cdnjs](https://cdnjs.com/libraries/jquery).
+
+Replace the reference to `/_static/_common/scripts/jquery-2.1.1.min.js` with the name of the web resource you created or the URL to the CDN resource with a newer version of jQuery.
 
 ## AI Builder image classification model by Lobe is deprecated
 
