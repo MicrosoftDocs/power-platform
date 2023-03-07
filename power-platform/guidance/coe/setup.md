@@ -130,7 +130,7 @@ There's two mechanisms the CoE Starter Kit uses to consume data from the Data Ex
 
 #### Can I migrate from using cloud flows to retrieve inventory to using Data Export?
 
-Yes, migrating from cloud flows to Data Export is a seamless process - use the [Setup Wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to change your data source for the CoE Starter Kit to Data Export and continue configuring the inventory components using the Setup Wizard.
+Yes, migrating from cloud flows to Data Export will be a seamless process - use the [Setup Wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to change your data source for the CoE Starter Kit to Data Export and continue configuring the inventory components using the Setup Wizard. However, we suggest you don't upgrade just yet and instead try this feature out in a test environment first.
 
 #### What will happen to my existing data when I upgrade?
 
