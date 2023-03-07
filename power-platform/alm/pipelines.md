@@ -1,11 +1,11 @@
 ---
-title: "Overview of pipelines in Power Platform (preview)"
-description: "Overview of pipelines in Power Platform and fequently asked questions."
+title: "Overview of pipelines in Power Platform"
+description: "Overview of pipelines in Power Platform and frequently asked questions."
 author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 11/02/2022
+ms.date: 02/28/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
 search.audienceType: 
@@ -14,19 +14,11 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Overview of pipelines in Power Platform (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Overview of pipelines in Power Platform
 
 Pipelines in Power Platform aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.
 
 :::image type="content" source="media/deployment-pipelines.png" alt-text="Example of the deployment Pipelines feature":::
-
-> [!IMPORTANT]
->
-> - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 Pipelines significantly reduce the effort and domain knowledge previously required to realize the ROI from adopting healthy, automated ALM processes within your team or organization.
 
@@ -73,6 +65,57 @@ Professional developers are more productive with pipelines now handling the comp
 
 ## Frequently asked questions
 
+### What do pipelines deploy?
+
+Pipelines deploy solutions as well as configuration for the target environment such as connections, connection references, and environment variables. Any Power Platform customization contained in your solution can be deployed using pipelines. Pipelines, or solutions in general, don't contain data stored within Dataverse tables.
+
+### Are standalone licenses required to use pipelines?
+
+- No pipelines specific enforcement will be added until pipelines become general available.
+- Standalone licenses **won't** be required to use developer or trial type environments in pipelines.
+- When pipelines become generally available, end users within any production environment(s) linked to pipelines **will** require a standalone license for either Power Apps, Power Automate, or Dynamics 365. Makers generally won't require a standalone license unless they're also an end user.
+
+A common setup example:
+
+| Environment purpose | Environment type |  Standalone license required |
+|--------------|-----|-----------|
+| Host | Production | No |
+| Development | Developer | No |
+| QA |  Developer | No |
+| Production |  Production | Yes |
+
+### Can I configure approvals for deployments?
+
+Not currently.
+
+### Can pipelines deploy to a different tenant?
+
+Not currently. We recommend using Azure DevOps or GitHub for this scenario.
+
+### What should I do if my development or target environment is reset or deleted?
+
+You should delete the environment record and update the pipeline configuration when needed. If an environment is reset, you re-create the environment record then associate it with your pipeline. 
+
+### Can I use pipelines in the default environment?
+
+Yes. However, using the default environment as the pipelines host isn't recommended. You should carefully evaluate the intended purpose and state of your default environment when deciding if ALM and pipelines is appropriate.  
+
+### Can I deploy using my own service principal?
+
+Not currently. Note that deployments are facilitated via a Microsoft-provided service principal that impersonates the deploying user. This is secure, compliant, and is designed to accommodate future capabilities.
+
+### Can pipelines be used with Azure DevOps, GitHub, or the ALM Accelerator?
+
+Not currently. We aim for these to work together more seamlessly in the future.
+
+### Can I roll back to a previous version?
+
+Not currently. The same is true when manually importing solutions.
+
+### Can I specify advanced solution import behaviors such as update versus upgrade?
+
+Not currently. Pipelines default import behavior is _Upgrade_ with _Maintain customizations_.
+
 ### Can an environment be associated with multiple hosts?
 
 No. However, one environment can be linked to multiple pipelines within the same host. In order to associate an environment with a different host, you must first navigate to the current host environment and play the Deployment Pipeline Configuration app. Next, remove this environment from any associated pipeline stages, then delete the environment record (just the entry in the app, not the actual environment). Now you can associate this environment with a different host.
@@ -83,7 +126,7 @@ Not currently. For now, don't attempt to customize the app or register plug-ins 
 
 ### Where can I view and run pipelines?
 
-Currently only within development environments associated with a pipeline. Pipelines can't be viewed or run from within target environments. Notice you may also run pipelines from the Power Platform CLI.
+Currently within any development environments associated with a pipeline. Pipelines can't be viewed or run from within target environments. Notice you can also retrieve and run pipelines from the Power Platform CLI.
 
 ### Can I deploy across regions?
 
@@ -97,17 +140,13 @@ Yes, this is possible, although we recommend starting with the same pipeline for
 
 This isn't recommended.
 
-### What do pipelines deploy?
+### How can I view what changed between different versions?
 
-Pipelines deploy solutions as well as configuration for the target environment such as connections, connection references, and environment variables. Any Power Platform customization contained in your solution can be deployed using pipelines. Pipelines, or solutions in general, don't contain data stored within Dataverse tables.
-
-### Can I use pipelines in the default environment?
-
-Not currently.
+Currently, pipelines don't show these details. However, you can view XML diffs if you're using a source control system. Within the solution interface, you can see the layers of objects within a solution as well as what changed between layers. Additionally, you can see XML diffs between layers for model-driven apps, site maps, and forms. 
 
 ### Should my host environment be the same as where I installed the COE toolkit?
 
-This is possible, but we don't recommend you combine preview features with production workloads.
+This is a valid configuration and should be evaluated based on the needs and policies within your organization.
 
 ### Can I deploy unmanaged solutions?
 
@@ -121,21 +160,9 @@ Not currently. You'll need to submit a different deployment for each solution. H
 
 Not currently. We recommend you publish individual objects as they're saved. Note that only certain solution objects require publishing.
 
-### Can I specify advanced solution import behaviors such as update versus upgrade?
-
-Not currently. Pipelines default behavior is _Upgrade_ with _Maintain customizations_.
-
 ### Can I use pipelines for multi-developer teams working in isolated development environments?
 
 The current implementation uses a single development environment for a given solution.
-
-### Can pipelines deploy to a different tenant?
-
-Not currently. We recommend using Azure DevOps or GitHub for this scenario.
-
-### Can I deploy using my own service principal?
-
-Not currently. Note that deployments are facilitated via a Microsoft-provided service principal that impersonates the deploying user. This is secure, compliant, and was designed to accommodate future capabilities.
 
 ### How are pipelines different from the ALM Accelerator?
 
@@ -147,12 +174,11 @@ While there are many additional functional differences, the fundamental differen
 
 We encourage customers to choose the tool that best suits their ALM needs. Power Platform pipelines are currently best suited for customers seeking simplicity, fast setup, and lower cost of ownership. Other tools often provide more advanced functionality and source code management. Notice other tools may also be more complicated and costly to set up, use, and maintain.
 
-### Can pipelines be used with Azure DevOps, GitHub, or the ALM Accelerator?
-
-Not currently. We aim for these to work together more seamlessly in the future.
+### Can I use impersonation to deploy on behalf of another user?
+This is not supported.
 
 ## Next steps
 
-[Set up pipelines (preview)](set-up-pipelines.md)
+[Set up pipelines](set-up-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

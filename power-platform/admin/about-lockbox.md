@@ -22,9 +22,6 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 
 This article covers how to enable Customer Lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits.
 
-> [!IMPORTANT]
-> This feature is being gradually rolled out across regions and might not be available yet in your region.
-
 ## Summary
 
 You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox will enforce the policy only for environments that are activated for [Managed Environments](managed-environment-enable.md). Global administrators and Power Platform administrators can enable the lockbox policy.
@@ -39,7 +36,7 @@ Power Platform and Dynamics 365 applications and services store customer data in
 
 > [!NOTE]
 >
-> - Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Power Virtual Agents, Dataverse, Customer Insights, Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services), and the real-time marketing feature area of the Marketing app.
+> - Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Power Virtual Agents (excluding GPT AI features), Dataverse, Customer Insights, Customer Service, Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services), and the real-time marketing feature area of the Marketing app.
 > - You must disable Lucene.NET search from your website and move to Dataverse Search to be able to use Customer Lockbox. More information: [Portals search using Lucene.NET search is deprecated](/power-apps/maker/portals/important-changes-deprecations#portals-search-using-lucenenet-search).
 
 ## Workflow
