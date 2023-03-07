@@ -5,7 +5,7 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 02/07/2020
 ms.subservice: power-fx
 ms.author: gregli
@@ -15,7 +15,8 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Left, Mid, and Right functions in Power Apps

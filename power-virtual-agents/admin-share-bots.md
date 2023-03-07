@@ -10,6 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.custom: "multi-author, admin, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

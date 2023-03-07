@@ -30,7 +30,6 @@ The Power BI dashboard provides a holistic overview with visualizations and insi
 You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files:
 
 - Use the **Production_CoEDashboard_MMMYY.pbit** file if you've installed the CoE Starter Kit in a Production environment.
-- Use the **Teams_CoEDashboard_MMMYY.pbit** if you've installed the CoE Starter Kit in a Dataverse for Teams environment. This version connects to Microsoft Dataverse using the TDS endpoint, therefore the TDS Endpoint has to be enabled for the environment: [Manage feature settings](../../admin/settings-features.md).
 - Use the **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit** file in addition to the above dashboards to gain further actionable governance and compliance insights into your adoption. This report is only available if you've installed the CoE Starter Kit in a Production environment.
 
 > [!NOTE]
@@ -43,25 +42,12 @@ You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compre
 
 You need the environment URL of the Microsoft Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the Microsoft Dataverse tables in that environment.
 
-- If you've installed the CoE Starter Kit in a Production environment:
-    1. Go to the [Power Platform admin center](https://aka.ms/ppac).
-
-    1. Select **Environments**, and select the environment where the CoE solution is installed.
-
-    1. Copy the organization URL in the details window.
-
-       :::image type="content" source="media/coe19.png" alt-text="Power Platform admin center, with the environment URL highlighted.":::
-
-       If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
-
-       :::image type="content" source="media/coe20.png" alt-text="Environment settings available in the Power Platform admin center.":::
-
-- If you've installed the CoE Starter Kit in a Dataverse for Teams environment:
-    1. Open the Power Apps app in Teams
-    1. Select **Build** and select your CoE environment
-       :::image type="content" source="media/coe-dft-bi1.png" alt-text="Select your CoE environment in the Power Apps app in Teams.":::
-    1. Select **About** > **Session Details** and copy the Instance URL from there.
-       :::image type="content" source="media/coe-dft-bi2.png" alt-text="Select the Instance URL of your environment.":::
+1. Go to the [Power Platform admin center](https://aka.ms/ppac).
+1. Select **Environments**, and select the environment where the CoE solution is installed.
+1. Copy the organization URL in the details window.
+   :::image type="content" source="media/coe19.png" alt-text="Power Platform admin center, with the environment URL highlighted.":::
+   If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
+   :::image type="content" source="media/coe20.png" alt-text="Environment settings available in the Power Platform admin center.":::
 
 ## Configure the Power BI dashboard
 
@@ -108,39 +94,24 @@ The solution in this case is to clear the permissions:
 
 ### (Optional) Configure embedded apps in the CoE dashboard
 
-The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit** dashboards can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to configure the Power Apps visuals in the Power BI dashboard before you can use them.
+The **Production_CoEDashboard_MMMYY.pbit**  can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to configure the Power Apps visuals in the Power BI dashboard before you can use them.
 
 1. Open the CoE Power BI dashboard in **Power BI Desktop**.
 1. Go to the **App Detail** page.
 
    :::image type="content" source="media/coe84.PNG" alt-text="Go to App Detail page in Power BI Desktop.":::
 
-1. Remove the existing Power Apps visual.
-   :::image type="content" source="media/delete-old-pa-visualization.png" alt-text="Delete existing Power Apps visualization.":::
+1. Select the existing Power Apps visual, select **Format visual** and select **Reset to default**.
 
-1. Remove the app if one is already present
+    :::image type="content" source="media/coebireset.PNG" alt-text="Select Reset to default to format the visual.":::
 
-      ![Remove existing Power App.](media/coe92.PNG "Remove existing Power App")
+1. Select **Choose app**.
 
-1. Select **Power Apps for Power BI** from **Visualizations**.
-
-   :::image type="content" source="media/coe85.PNG" alt-text="Power Apps in Power BI visual.":::
-
-1. Select the fields from your dataset that you want to use in the app.
-1. With the visual selected, select **admin_appid** from **App** (on the **Fields** pane).
-
-   :::image type="content" source="media/coe86.PNG" alt-text="Select admin_appid from App and add it to the Power Apps Data area on the visual.":::
-
-1. With the visual selected, select the **admin_environmentname** from **Environment** environment (on the **Fields** pane).
-
-   :::image type="content" source="media/coe87.PNG" alt-text="Select admin_environmentname from App for Power Apps Data.":::
-
-1. In the Power Apps for Power BI visual, select the environment of your CoE (where you imported the apps to).
+1. Select the environment of your CoE (where you imported the apps to).
 
    :::image type="content" source="media/coe88.PNG" alt-text="Select the environment in Power Apps for the Power BI visual.":::
 
-1. Select **Choose app**.
-1. Select **Admin – Access this app**.
+1. Search for and select **Admin – Access this app**.
 
    :::image type="content" source="media/coe89.PNG" alt-text="Select Admin - Access this app to embed this app into Power BI.":::
 
@@ -149,20 +120,7 @@ The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit**
      ![Select Admin - Access this flow to embed this app into Power BI - Error 1.](media/PBI-setuperror.PNG "Select Admin - Access this flow to embed this app into Power BI - Error 1")
      ![Select Admin - Access this flow to embed this app into Power BI. - Error 2](media/PBI-setuperror2.PNG "Select Admin - Access this flow to embed this app into Power BI - Error 2")
 
-1. Resize and move the visual to the location you want.
-1. Next, go to the **Cloud flow detail** tab.
-1. Remove the app is one already exists.
-1. Select the **Power Apps visual** from **Visualizations**.
-   Select the fields from your dataset that you want to use in the app.
-1. With the visual selected, select the **admin_flowid** from **Flow** and **admin_environmentname** from **Environment** under **Fields**.
-
-1. In the visual, select the environment of your CoE (where you imported the apps to).
-1. Select **Choose app**.
-1. Select **Admin – Access this flow**.
-
-   :::image type="content" source="media/coe90.PNG" alt-text="Select Admin - Access this flow to embed this app into Power BI.":::
-
-1. Resize and move the visual to the location you want. Delete the placeholder from the template, and move your embedded app to the same place.
+1. Next, go to the **Cloud flow detail** tab and repeat the above steps, selecting the **Admin - Access this flow** app this time.
 
 Republish the dashboard, and view it under [app.powerbi.com](https://app.powerbi.com/).
 

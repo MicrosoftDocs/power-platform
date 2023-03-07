@@ -1,12 +1,9 @@
 ---
-title: "Using and Configuring the ALM accelerator pipelines for Microsoft Power Platform | MicrosoftDocs"
-description: "Customizing the ALM Accelerator for Power Platform can be achieved in several ways without affecting the upgrade path of the solution and pipelines. This document describes how to customize Accelerator pipelines for Microsoft Power Platform."
+title: "Using and Configuring the ALM Accelerator Azure DevOps pipelines for Microsoft Power Platform | MicrosoftDocs"
+description: "Customizing the ALM Accelerator for Power Platform can be achieved in several ways without affecting the upgrade path of the solution and Azure DevOps pipelines. This document describes how to customize ALM Accelerator Azure DevOps pipelines for Microsoft Power Platform."
 author: mikefactorial
-manager: devkeydet
-
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021
+ms.date: 02/13/2023
 ms.subservice: guidance
 ms.author: rusant
 ms.reviewer: jimholtz
@@ -18,7 +15,7 @@ search.app:
   - Powerplatform
 ---
 
-# ALM accelerator for Microsoft Power Platform pipelines (preview)
+# Configuring the ALM Accelerator Azure DevOps pipelines
 
 > [!NOTE]
 > The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
@@ -27,15 +24,15 @@ The application lifecycle management (ALM) accelerator components enable makers 
 
 The ALM accelerator doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
-## ALM Accelerator for Power Platform Pipelines
+## ALM Accelerator Azure DevOps pipelines
 
 While the ALM Accelerator pipelines and app have default configurations that allow you to get started quickly with ALM for the Power Platform. The ALM Accelerator Pipelines have been developed in a way that makes it possible for many different ALM scenarios to be covered based on your organizations’ requirements. The following is a description of some common scenarios and how they can be covered through configuration of the pipelines and the related deployment profiles and steps in the ALM Accelerator App or via the pipeline directly.
 
-### Installing the pipelines in one project and source code in another project
+### Installing the Azure DevOps pipelines in one project and source code in another project
 
 From the ALM Accelerator App and in the Deployment Profiles there's now an option to specify a pipeline project in addition to source project. An option has also been added to the coe-cli to specify a separate pipeline project and repo. This is useful if you want to segment the storage of solutions within your organization based on users, corporate structure, or other factors. The pipelines will be stored in the pipeline project along with the export, import and delete pipelines themselves, while the solution source code will be stored in the source project along with the deployment pipelines.
 
-### Run the ALM Accelerator pipelines without installing the ALM Accelerator Canvas App and solution
+### Run the ALM Accelerator Azure DevOps pipelines without installing the ALM Accelerator canvas app and solution
 
 The ALM Accelerator Canvas App provides an easy button layer for running the ALM Accelerator pipelines. However, the Pipelines themselves, are the engine of the ALM Accelerator and can be run independent of the App. If you want to use the pipelines independently, you can run the pipelines directly from the command line or build your own app to invoke the pipelines via the [Azure DevOps API](/rest/api/azure/devops). Additionally, the ALM Accelerator solution includes a custom connector for the Azure DevOps API that can be used to invoke the pipelines via Flow or other Power Platform technologies. The key to using the pipelines independently is understanding the parameters that are passed to the various pipelines.
 
@@ -125,5 +122,6 @@ There are several places in the pipelines where pipeline variables are used to d
 | UseDeploymentSettingsPlaceholders    | true                        | If false then the deployment settings won't use placeholders and all values for the deployment settings will be saved in the deploymentSettings.json and customDeploymentSettings.json. IMPORTANT: Sensitive information may be saved in plain text in your deployment settings and any users with access to source control will be able to read these values. Take care when settings this variable. |
 | DisableFlows                         | false                       | If true then all flows will be turned off in the unpacked solution source code before committing. |
 | UseSolutionVersionFromDataverse      | false                       | If true then the version number exported in your solution will be preserved in downstream environments and will also be reflected in your source control when the solution source is committed. |
-| DoNotExportCurrentEnvironmentVariableValues | false                     | If true then the current environment variable values be removed from the unpacked solution source code. |
-| PublishCustomizationsBeforeExport | true                     | If false then the customizations won't be published before the solution is exported. This is useful if you're working in a shared environment and only want to export the latest published customizations. |
+| DoNotExportCurrentEnvironmentVariableValues | false                | If true then the current environment variable values will be removed from the unpacked solution source code. |
+| PublishCustomizationsBeforeExport     | true                       | If false then the customizations won't be published before the solution is exported. This is useful if you're working in a shared environment and only want to export the latest published customizations. |
+| CacheEnabled                          | true                       | If false then the caching of powershell modules will be disabled. This is useful if you're pipelines execute cleanup of the cache directory after execution of the pipelines. |

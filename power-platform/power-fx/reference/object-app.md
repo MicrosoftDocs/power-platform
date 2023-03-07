@@ -4,7 +4,7 @@ description: Reference information including syntax and examples for the App obj
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 09/16/2022
 ms.author: gregli
 search.audienceType: 
@@ -13,7 +13,8 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 # App object in Power Apps
 

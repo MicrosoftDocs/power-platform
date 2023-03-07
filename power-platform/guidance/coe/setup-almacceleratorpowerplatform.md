@@ -2,13 +2,13 @@
 title: "Set up ALM accelerator for Microsoft Power Platform components manually | MicrosoftDocs"
 description: "The ALM accelerator for Microsoft Power Platform helps you follow ALM patterns and practices to source-control and move your solutions from your development environment to test and production environments by using Azure DevOps. This guide walks through the manual setup steps of the accelerator."
 author: jenschristianschroder
-manager: devkeydet
+manager: tapanm-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/13/2022
 ms.subservice: guidance
 ms.author: jeschro
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app: 
@@ -79,6 +79,8 @@ For the ALM Accelerator for Power Platform canvas app to work, the following con
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
 - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
 - ALM Accelerator Custom DevOps (this connector will be created as part of the [accelerator solution import](#importing-the-solution-and-configuring-the-app))
+- [Office 365 Users](/connectors/office365users/)
+- HTTP
 
 ### Creator Kit
 
@@ -157,7 +159,7 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 
 In order for the pipelines to perform certain actions against the environments (for example, Sharing Apps and setting component ownership) in your Power Platform tenant you will need to grant Power App Management permissions to your App registration. To do so you will need to run the following PowerShell cmdlet as an interactive user that has Power Apps administrative privileges. You will need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp). Learn more: [**New-PowerAppManagementApp** cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Currently this cmdlet gives elevated permissions (for example, Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed certain capabilities won't work in the AA4PP pipelines.
 
 ```powershell
@@ -185,6 +187,7 @@ The ALM accelerator uses several Azure DevOps extensions, including some third-p
       ![Image of the SARIF SAST Scans tab in Azure DevOps.](media/almacceleratorpowerplatform-components/image-20210217102344719.png)
 
 <a name="clone-the-yaml-pipelines-from-github-to-your-devops-instance"></a>
+
 ### Clone the YAML pipelines from GitHub to your Azure DevOps instance
 
 1. Go to <https://dev.azure.com/> and sign in to **DevOps (AzDO)**.
@@ -610,6 +613,8 @@ If your solution requires these other configuration settings or data, follow the
 ## Importing the solution and configuring the app
 
 ### Install the ALM accelerator in Dataverse
+
+1. The ALM Accelerator solution has a dependency on the [Creator Kit](/power-platform/guidance/creator-kit/overview). To install the Creator, go to [Install the Creator Kit](/power-platform/guidance/creator-kit/setup).
 
 1. Download the latest managed solution file from [GitHub](https://github.com/microsoft/coe-starter-kit/releases): CenterofExcellenceALMAccelerator_`[latest version]`_managed.zip.
 

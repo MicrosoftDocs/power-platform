@@ -10,6 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: pawant
 ms.custom: authentication, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -50,15 +51,15 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 
 The following table details the [channels](publication-fundamentals-publish-channels.md) that currently support SSO. You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
-| Channel                                           | Supported |
-| ------------------------------------------------- | :-------: |
-| [Azure Bot Service channels][6]                   |           |
-| [Custom Website][3]                               |     ✔     |
-| [Demo Website][2]                                 |           |
-| [Facebook][5]                                     |           |
-| [Microsoft Teams][1]<sup>1</sup>                  |     ✔     |
-| [Mobile App][4]                                   |           |
-| [Omnichannel for Customer Service][5]<sup>2</sup> |     ✔     |
+| Channel                                           | Supported     |
+|---------------------------------------------------|:-------------:|
+| [Azure Bot Service channels][6]                   | Not supported |
+| [Custom Website][3]                               | Supported     |
+| [Demo Website][2]                                 | Not supported |
+| [Facebook][5]                                     | Not supported |
+| [Microsoft Teams][1]<sup>1</sup>                  | Supported     |
+| [Mobile App][4]                                   | Not supported |
+| [Omnichannel for Customer Service][7]<sup>2</sup> | Supported     |
 
 [1]: publication-add-bot-to-microsoft-teams.md
 [2]: publication-connect-bot-to-web-channels.md#demo-website
@@ -66,7 +67,7 @@ The following table details the [channels](publication-fundamentals-publish-chan
 [4]: publication-connect-bot-to-custom-application.md
 [5]: publication-add-bot-to-facebook.md
 [6]: publication-connect-bot-to-azure-bot-service-channels.md
-[5]: configuration-hand-off-omnichannel.md
+[7]: configuration-hand-off-omnichannel.md
 
 <sup>1</sup> If you also have the Teams channel enabled, you need to follow the configuration instructions on the [Configure SSO for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will cause your users to always fail authentication when using the Teams channel.
 
@@ -184,7 +185,7 @@ Power Virtual Agents calls into Azure AD to perform the actual exchange.
 
     :::image type="content" source="media/configure-sso/auth-manage-sm.png" alt-text="Go to Manage and then Authentication." border="false":::
 
-1. Enter the full scope URI from the **Expose an API** blade for the bot’s authentication app registration in the **Token exchange URL** field. The URI will be in the format of `api://1234-4567/scope.name`.
+1. Enter the full scope URI from the **Expose an API** blade for the bot's authentication app registration in the **Token exchange URL** field. The URI will be in the format of `api://1234-4567/scope.name`.
 
     :::image type="content" source="media/configure-sso/sso-api.png" alt-text="Screenshot highlighting the scope's API." border="false":::  
 
