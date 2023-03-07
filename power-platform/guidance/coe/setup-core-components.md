@@ -291,8 +291,8 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Publish the **CoE BYODL Environments** dataflow and wait for the refresh to finish.
     :::image type="content" source="media/byodl-13.png" alt-text="Wait for the CoE BYODL Environments dataflow to finish.":::
 1. Now edit the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps** and **CoE BYDODL Flows** dataflows and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
-1. Publish the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps** and **CoE BYDODL Flows** dataflows and wait for the refresh to finish.
-    :::image type="content" source="media/byodl-17.png" alt-text="Wait for the CoE BYODL Apps, Model Driven Apps and Flows dataflows to finish.":::
+1. Publish the **CoE BYODL Apps** and **CoE BYDODL Flows** dataflows and wait for the refresh to finish.
+    :::image type="content" source="media/byodl-17.png" alt-text="Wait for the CoE BYODL Apps and Flows dataflows to finish.":::
 1. Now edit the **CoE BYODL Apps Connection, CoE BYODL Apps Last Launched Date, CoE BYODL Flows Connection, CoE BYODL Flows Last Run Date** dataflows and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
 1. Publish the **CoE BYODL Apps Connection, CoE BYODL Apps Last Launched Date, CoE BYODL Flows Connection, CoE BYODL Flows Last Run Date** dataflows and wait for the refresh to finish.
      :::image type="content" source="media/byodl-19.png" alt-text="Wait for the remaining dataflows to finish.":::
