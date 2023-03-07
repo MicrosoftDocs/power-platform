@@ -4,7 +4,7 @@ description: Activity logging for Power Apps
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/20/2020
+ms.date: 03/07/2023
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass 
@@ -19,7 +19,7 @@ search.app:
 ---
 # Power Apps activity logging
 
-Power Apps activities are tracked from the [Microsoft Purview compliance portal](https://support.office.com/article/go-to-the-office-365-security-compliance-center). 
+Power Apps activities are tracked from the [Microsoft Purview compliance portal](/purview/purview). 
 
 Follow these steps.
 
