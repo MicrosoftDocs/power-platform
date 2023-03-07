@@ -1,13 +1,15 @@
 ---
 title: "Geo to geo migrations  | MicrosoftDocs"
-description: Geo to geo migrations
+description: Move your environment in a single tenant from one region to another with the Geo Migration feature.
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/20/2022
+ms.date: 2/28/2023
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: jimholtz
+contributors: 
+    - ProfessorKendrick
 search.audienceType: 
   - admin
 search.app:
@@ -145,7 +147,5 @@ You'll be provided with a list of prerequisites and post-requisites for your mig
 We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
 
 ### See also  
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
