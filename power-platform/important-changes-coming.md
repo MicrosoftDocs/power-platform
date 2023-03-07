@@ -33,7 +33,7 @@ To determine if you are impacted, search your web resource code for this line: `
 
 If your code isn't already in a source code repository, you should export your solutions and extract the contents. There are many tools you may use to search the contents. For example, you can use the search capabilities of Visual Studio Code. More information: [Visual Studio Code: Basic Editing > Search across files](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
 
-### What do do if you are impacted?
+### What to do if you are impacted?
 
 If your web resources have a dependency on this library, you should consider the following:
 
