@@ -84,7 +84,7 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
 1. In the side pane select the **Tables** node. At the top, select **All**.
 
-    :::image type="content" source="media/analytics-sessions/view-scripts1.png" alt-text="Screenshot of the Power Apps window with Data and Entities selected.":::
+    :::image type="content" source="media/analytics-sessions/view-scripts1.png" alt-text="Screenshot showing All selected on the Tables node.":::
 
 1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Tables**.
 
@@ -106,7 +106,7 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
 1. Expand the **Export** menu item at the top of the screen and select **Export data**. It may take a few minutes for the data to be compiled for export.
 
-    :::image type="content" source="media/analytics-sessions/export-scripts3.png" alt-text="Download exported data.":::
+    :::image type="content" source="media/analytics-sessions/export-scripts3.png" alt-text="Selecting Export data from the Export menu.":::
 
 1. Select **Download exported data** to download the content.
 
