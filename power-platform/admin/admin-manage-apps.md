@@ -100,7 +100,9 @@ No, a maker that doesn’t have a security role called out in the [Choose enviro
 As a complement to [Power Platform’s data loss prevention policies](wp-data-loss-prevention.md), Power platform enables admins to 'quarantine' a resource, setting guardrails for low-code development. A resource’s quarantine state is managed by admins and controls whether a resource is accessible to end users. In Power Apps, this capability allows admins to directly limit availability of apps that may need attention to meet an organization’s compliance requirements. 
 
 > [!NOTE]
-> A quarantined app will not be accessible to users who have never previously launched the app. A quarantined app may be accessible, momentarily, for users who played an app before it was quarantined. The period of time that users may be able to play a quarantined app is on the order of seconds if they had previously launched the same app and, shortly after launching a quarantined app these users are presented the "app is quarantined" message. 
+> A quarantined app will not be accessible to users who have never previously launched the app. 
+> 
+> A quarantined app may be accessible, momentarily, to users who have played the app before it was quarantined. These users may be able to use the quarantined app for a few seconds if they've used it in the past. But after that, they'll get a message telling them that the app is quarantined if they try to open it again.
 
 The following table outlines how the quarantine state impacts experiences for admins, makers, and end users. 
 
