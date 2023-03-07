@@ -7,7 +7,7 @@ ms.subservice: power-fx
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: nabuthuk
-ms.date: 12/03/2022
+ms.date: 03/07/2023
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -22,11 +22,11 @@ Convert between hexadecimal text strings and numbers.
 
 Use the **Dec2Hex** function to convert a number to a hexadecimal text string.  **Dec2Hex** will only emit `0` through `9` and upper case characters `A` through `F`; use the [**Lower**](function-lower-upper-proper.md) function to convert the result to lower case if desired.  **Dec2Hex** will truncate the input number to a whole number as if the [**Trunc**](function-round.md) function had been applied first.  Use *Places* to pad a positive number with leading `0`s (zeros) and limit the length of the output; *Places* is ignored if the input is negative.
 
-Use the **Hex2Dec** function to convert a text string containing hexadecimal digits (`0` through `9` and `A` through `F`) to a number.  Uppwer and lower case characters are accepted.  No more than 10 hexadecimal characters can be passed to **Hex2Dec**.
+Use the **Hex2Dec** function to convert a text string containing hexadecimal digits (`0` through `9` and `A` through `F`) to a number.  Upper and lower case characters are accepted.  No more than 10 hexadecimal characters can be passed to **Hex2Dec**.
 
 Both these functions work with a 40 bit, two's-complement, whole number. The range of accepted values for both functions is hexadecimal 8000000000 or decimal -549755813888 to hexadecimal 7FFFFFFFFF or decimal 549755813887.
 
-If you pass a single number or text string to these functions, the return value is a single result.  If you pass a single-column [table](../working-with-tables.md) the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](../working-with-tables.md) describes.  At this time, the *Places* argument to **Dec2Hex** cannot be used with single-column tables.
+If you pass a single number or text string to these functions, the return value is a single result.  If you pass a single-column [table](../working-with-tables.md) the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](../working-with-tables.md) describes.  
 
 If the input value is out of range or includes invalid hexadecimal characters in the case of **Hex2Dec**, an **ErrorKind.Numeric** error is returned.  In the case of a single column table, the error will be embedded in the output table.
 
@@ -35,7 +35,7 @@ If the input value is out of range or includes invalid hexadecimal characters in
 **Dec2Hex**( *Number* [, *Places*] )
 
 - *Number* - Required.  Number to convert to hexadecimal.
-- *Places* - Optional.  The number of characters to use if the number is positive. If places is omitted, **Dec2Hex** uses the minimum number of characters necessary. If this parameter is provided, and the result does not fit in the space provided, an **ErrorKind.Numeric** error is returned.  *Places* is ignored if the number to convert is negative.
+- *Places* - Optional.  The number of characters to use if the number is positive. If *Places* is omitted, **Dec2Hex** uses the minimum number of characters necessary. If this parameter is provided, and the result does not fit in the space provided, an **ErrorKind.Numeric** error is returned.  *Places* is ignored if the number to convert is negative.
 
 **Hex2Dec**( *HexString* )
 
@@ -87,3 +87,11 @@ If the input value is out of range or includes invalid hexadecimal characters in
 | `Dec2Hex( -45780, 6 )`  | "FFFFFF4D2C" | 
 | `Dec2Hex( -45780, 10 )` | "FFFFFF4D2C" | 
 | `Dec2Hex( -45780, 11 )` | *error* (out of range) | 
+
+### Basic usage of Dec2Hex with single column tables and Places argument
+
+| Formula | Result |
+| --- | --- |
+| `Dec2Hex( [ 10, 255, -16 ], [ 1, 2, 3 ] )`      | [ "A", "FF", "FFFFFFFFF0" ] |
+| `Dec2Hex( [ 10, 255, -16 ], 4 )`   | [ "000A", "00FF", "FFFFFFFFF0" ] |
+| `Dec2Hex( 255, [0, 1, 2, 3] )`   | [ *error* (not enough space), *error* (not enough space), "FF", "0FF" ] |
