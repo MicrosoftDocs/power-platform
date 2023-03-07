@@ -78,7 +78,7 @@ What if you already have a flow and don't want to create one from scratch to use
 
 ### Open a flow in Power Automate
 
-1. Go to the [Power Automate portal](https://make.powerautomate.com).
+1. Go to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Solutions** and select **Default Solution**. If you [moved your flow to another solution](#optionally-move-the-flow-to-another-solution), select that one instead.
 
@@ -147,7 +147,7 @@ The next step is to [turn off asynchronous responses in your flow](#turn-off-asy
 
 To be available to bots in your environment, flows must be stored in a [solution](/power-platform/alm/solution-concepts-alm) in Power Automate. If you don't want to use the **Default Solution**, you can move your flows to a different one.
 
-1. Go to the [Power Automate portal](https://make.powerautomate.com).
+1. Go to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Solutions** and either select an existing solution or create a solution for your flows.
 
