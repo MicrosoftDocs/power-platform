@@ -115,7 +115,7 @@ For information on predefined security roles, see [Predefined security roles](da
 
 It's helpful to keep in mind the minimum privileges that are needed for some common tasks including opening model-driven apps. This means that a user is required to have a security role with these privileges to run applications.
  
-You must no longer use the downloadable solution for the **min prv apps use** role available in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2221577), which will be retired soon. Instead, you must use of the new predefined security role called **App Opener**.
+You must no longer use the downloadable solution for the **min prv apps use** role available in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2221577), which will be retired soon. Instead, you must use the new predefined security role called **App Opener**.
  
 Copy the **App Opener** security role to create a custom security role by following the instructions here: [Create a security role by Copy Role](#create-a-security-role-by-copy-role). When you have finished creating a custom seurity role, select your newly created custom security role and navigate to each tab, **Core Records**, **Business Management**, **Customization**, etc, and set the appropriate privileges. 
   
