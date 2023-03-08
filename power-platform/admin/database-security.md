@@ -1,16 +1,16 @@
 ---
 title: Configure user security in an environment | Microsoft Docs
-description: Configure user security in environment
+description: This article explains how to create the security artifacts that you must have to help secure resources in an environment.
 ms.subservice: admin
 ms.author: paulliew
 author: paulliew
-ms.reviewer: kvivek
+ms.reviewer: sericks
 contributors:
   - hamenon-ms 
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/23/2022
+ms.date: 03/08/2023
 search.audienceType: 
   - admin
 search.app:
@@ -55,7 +55,7 @@ For users who make apps that connect to the database and need to create or updat
 
 | Security role  | Database privileges*  | Description |
 |---------|---------|---------|
-| App Opener | Create(self), Read,Write (self), Delete (self)  | Has [minimum privileges for common tasks](https://learn.microsoft.com/power-platform/admin/create-edit-security-role#minimum-privileges-for-common-tasks). This is primarily used when creating a new security role for **Model-driven apps** where a copy of the role is created before applying data access to your tables. This role is protected and cannot be updated.    |
+| App Opener | Create(self), Read,Write (self), Delete (self)  | Has [minimum privileges for common tasks](create-edit-security-role.md#minimum-privileges-for-common-tasks). This is primarily used when creating a new security role for model-driven apps, where a copy of the role is created before applying data access to your tables. This role is protected and cannot be updated.    |
 | Environment Maker     |  Customizations       | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data within an environment. More information: [Environments overview](./environments-overview.md) <br /> <br />Environment makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app)       |
 | System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
 | System Customizer     | Create, Read, Write, Delete, Customizations         | Has full permission to customize the environment. Can view all custom table data in the environment. However, users with this role can only view rows (records) that they create in Account, Contact, Activity tables. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
