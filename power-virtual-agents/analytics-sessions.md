@@ -98,7 +98,7 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
 1. In the side pane, select the **Tables** node. At the top, select **All**.
 
-    :::image type="content" source="media/analytics-sessions/export-scripts1.png" alt-text="Screenshot showing All selected on the Tables node.":::
+    :::image type="content" source="media/analytics-sessions/export-scripts1.png" alt-text="Select All selected on the Tables node.":::
 
 1. Type **Conversation** in the **Search** textbox at the top right. Select **ConversationTranscript** under **Tables**.
 
