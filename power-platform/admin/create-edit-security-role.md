@@ -8,7 +8,7 @@ ms.reviewer: kvivek
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/13/2023
+ms.date: 03/07/2023
 search.audienceType: 
   - admin
 search.app:
@@ -113,7 +113,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 ## Minimum privileges for common tasks  
 
-It's helpful to keep in mind the minimum privileges that are needed for some common tasks including opening model-driven apps. This means that a user is required to have a security role with these privileges in order to run applications.
+It's helpful to keep in mind the minimum privileges that are needed for some common tasks including opening model-driven apps. This means that a user is required to have a security role with these privileges to run applications.
  
 You must no longer use the downloadable solution for the **min prv apps use** role available in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2221577), which will be retired soon. Instead, you must use of the new predefined security role called **App Opener**.
  
