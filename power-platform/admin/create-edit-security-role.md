@@ -1,14 +1,14 @@
 ---
-title: "Create or edit a security role  | MicrosoftDocs"
-description: Create or edit a security role
+title: Create or edit a security role to manage access 
+description: You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/07/2023
+ms.date: 03/08/2023
 search.audienceType: 
   - admin
 search.app:
@@ -113,11 +113,11 @@ For information on predefined security roles, see [Predefined security roles](da
   
 ## Minimum privileges for common tasks  
 
-It's helpful to keep in mind the minimum privileges that are needed for some common tasks including opening model-driven apps. This means that a user is required to have a security role with these privileges to run applications.
+It's helpful to keep in mind the minimum privileges that are needed for some common tasks, including opening model-driven apps. This means that a user is required to have a security role with these privileges to run applications.
  
-You must no longer use the downloadable solution for the **min prv apps use** role available in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2221577), which will be retired soon. Instead, you must use the new predefined security role called **App Opener**.
+Don't use the downloadable solution for the **min prv apps use** role, available in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2221577), which will be retired soon. Instead, you must use the new predefined security role called **App Opener**.
  
-Copy the **App Opener** security role to create a custom security role by following the instructions here: [Create a security role by Copy Role](#create-a-security-role-by-copy-role). When you have finished creating a custom seurity role, select your newly created custom security role and navigate to each tab, **Core Records**, **Business Management**, **Customization**, etc, and set the appropriate privileges. 
+Copy the **App Opener** security role to create a custom security role by following the [Create a security role by Copy Role](#create-a-security-role-by-copy-role) instructions. When you have finished creating a custom seurity role, select it and navigate to each tab, such as **Core Records**, **Business Management**, and **Customization** to set the appropriate privileges. 
   
 - When logging in to model-driven apps or any of the customer engagement apps:  
   
