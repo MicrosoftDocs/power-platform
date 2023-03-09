@@ -1,7 +1,7 @@
 ---
 title: "Use chatbot variables to carry content across topics in Microsoft Teams"
 description: "Bot variables can be used in the Power Virtual Agents app in Microsoft Teams to store and retrieve information across multiple topics within the same bot."
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 9/22/2020
 
 ms.topic: article

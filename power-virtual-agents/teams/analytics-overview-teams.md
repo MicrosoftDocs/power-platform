@@ -1,9 +1,8 @@
 ---
 title: "Fundamentals - Analyze chatbot usage in Microsoft Teams"
 description: "Analyze customer satisfaction, topic usage, and bot performance in the Power Virtual Agents app in Microsoft Teams."
-keywords: "PVA"
-ms.date: 02/02/2023
-
+keywords: "PVA, Teams"
+ms.date: 01/23/2023
 ms.topic: overview
 author: iaanw
 ms.author: iawilt
