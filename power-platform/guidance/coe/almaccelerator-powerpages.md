@@ -46,6 +46,16 @@ Follow these steps to include Power Pages website during solution commit:
 
 When working with multiple different environments, you may consider using deployment profiles to ensure the changes are uploaded to the correct environment using deployment profiles.
 
+There are two ways you can provide deployment profile(s) in ALM Accelerator.
+
+### Upload deployment profile(s) from the 'Deployment Settings' of 'ALM Accelerator'
+
+From the 'ALM Accelerator' application, open the 'Deployment Settings' of a solution and upload the deployment profile file for each environment.
+
+![Power Pages Website commit.](media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png)
+
+### Add deployment profile(s) manually to the solution branch
+
 Follow these steps to use deployment profile along with Power Pages website in the ALM Accelerator:
 
 1. After committing the solution by including Power Pages website, open the solution branch.
