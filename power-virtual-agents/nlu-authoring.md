@@ -36,17 +36,17 @@ When create a new topic, you can select **Describe it** and ask the AI to make i
 
 1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic** and then **Describe it to build it (preview)**.
 
-    :::image type="content" source="media/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
 
     >[!NOTE]
     >If you don't see the **Describe it** option, confirm that **Intelligent authoring support** in the Power Virtual Agents **Settings** page is set to **On**:
     >>1. Select the **Settings** cogwheel icon on the main menu bar, and then select **General settings**.
-    >>    :::image type="content" source="media/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents top menu with the Settings icon open.":::
+    >>    :::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents top menu with the Settings icon open.":::
     >>2. Confirm the toggle switch under **Intelligent authoring support (preview)** is set to **On**.
 
 2. In the **Describe it to build it (preview)** window that appears, describe the topic you want to create in simple, plain English. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.
 
-    :::image type="content" source="media/describe-it-create-topic.png" alt-text="Screenshot of the Describe it to build it pop-up window.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-create-topic.png" alt-text="Screenshot of the Describe it to build it pop-up window.":::
    
     You can select any of the examples to automatically insert them into the **Create a topic to...** field. Select **View more examples** to generate new suggestions. 
 
@@ -63,11 +63,11 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 
 1. Open your bot and select **Topics**. Select the topic you want to modify, and then **Describe it** on the menu bar just above the topic's conversation path.
 
-    :::image type="content" source="media/describe-it-toolbar.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it button highlighted.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-toolbar.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it button highlighted.":::
    
 2. Describe what you want to change or add in the topic. 
 
-    :::image type="content" source="media/describe-it-modify.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it side panel open.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-modify.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it side panel open.":::
 
     Use simple, plain English to direct the AI with what you want it to do, as in the these examples:
 
@@ -86,14 +86,14 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
     
     If you don't like the changes, select the **Undo** button. You can then change your directions and try again.
 
-    :::image type="content" source="media/describe-it-modify-undo.png" alt-text="Screenshot of the Power Virtual Agents Describe it side panel open, showing the Undo button.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-modify-undo.png" alt-text="Screenshot of the Power Virtual Agents Describe it side panel open, showing the Undo button.":::
 
 > [!TIP]
 >  
 > You can provide feedback on how well the AI did by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Describe it** panel.  
 > If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback to improve the quality of the AI.
 >  
-> :::image type="content" source="media/describe-it-feedback.png" alt-text="Screenshot of the Power Virtual Agents Describe it feedback panel.":::
+> :::image type="content" source="media/nlu-gpt/describe-it-feedback.png" alt-text="Screenshot of the Power Virtual Agents Describe it feedback panel.":::
 
 
 ## What's supported
