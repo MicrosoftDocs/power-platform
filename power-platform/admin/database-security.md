@@ -176,20 +176,19 @@ If your app uses a custom entity, its privileges must be explicitly granted in a
 For more information about access and scope privileges, see [Security roles and privileges](security-roles-privileges.md). 
 
 ### Create a custom security role with minimum privileges to run an app
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and select the environment for which you want to update a security role. 
-2. Select the environment's URL. 
-   > [!div class="mx-imgBorder"] 
-   > ![Select environment URL.](media/select-environment-url.png "Select environment URL")
-3. Go to Settings/Users + Permissions and click on **Security roles**.
-4. Select the **App Opener** role.
-5. Click on the **Copy** button on the action bar.
-6. Enter a role name for your custom role.
-7. From the list of security roles, locate your newly created custom role.
-8. Select your custom role.
-9. Click on the **Edit** button.
-10. On the role editor, click on the **Custom Entities** tab to set permissions on your custom table.
-7. Select the privileges **Read, Write, Append**.
-8. Select **Save and Close**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and select **Environments** for which you want to update a security role. 
+2. Select the environment for which you want to update a security role.
+3. Select **Settings** in the action bar.
+4. Select **Users + permissions** > **Security roles**.
+5. Select the check mark next to the **App Opener** role.
+6. Select **Copy** on the action bar.
+7. Enter a role name for your custom role, and then select **Copy**.
+8. From the list of security roles, locate your newly created custom role.
+9. Select your custom role.
+10. Select the More actions (...) icon, and then select Edit.
+11. On the role editor, click on the **Custom Entities** tab to set permissions on your custom table.
+12. Select the privileges **Read, Write, Append**.
+13. Select **Save and Close**.
 
 ### Create a customer security role from scratch
 
