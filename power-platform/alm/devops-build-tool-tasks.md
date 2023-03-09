@@ -576,6 +576,32 @@ steps:
 | `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to delete the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to delete the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 
+### Power Platform Reset Environment
+
+Resets an environment.
+
+#### YAML snippet (Reset-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.reset-environment.PowerPlatformResetEnvironment@2
+  displayName: 'Power Platform Reset Environment '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: Build
+    CurrencyName: ALL
+    Purpose: 'Reset to PointInTime'
+    AppsTemplate: 'D365_CustomerService,D365_FieldService'
+```
+
+#### Parameters (Reset-env)
+
+| Parameters       | Description         |
+|------------------|---------------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to reset the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to reset the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+
 ### Power Platform Backup Environment
 
 Backs up an environment.
@@ -641,6 +667,39 @@ steps:
 | `CopyType`<br/>Copy type | The type of copy to perform: FullCopy or MinimalCopy |
 | `OverrideFriendlyName`<br/>Override friendly name | Change the target environment's friendly name to another name (true\|false). |
 | `FriendlyName`<br/>Friendly name | The friendly name of the target environment. |
+| `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
+
+### Power Platform Restore Environment
+
+Restores an environment to a given backup.
+
+#### YAML snippet (Restore-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.restore-environment.PowerPlatformRestoreEnvironment@2
+  displayName: 'Power Platform Restore Environment '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: Build
+    TargetEnvironmentUrl: 'https://contoso-test.crm.dynamics.com'
+    RestoreLatestBackup: false
+    RestoreTimeStamp: '12/01/2022 09:00'
+    FriendlyName: 'Contoso Test'
+```
+
+#### Parameters (Restore-env)
+
+| Parameters     | Description     |
+|----------------|-----------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the source environment that you want to restore from (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the source environment that you want to restore from (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `RestoreLatestBackup`<br/>Latest backup to restore | Whether to restore latest backup or provide RestoreTimeStamp (true\|false). |
+| `RestoreTimeStamp`<br/>DateTime of the backup | DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'. |
+| `TargetEnvironmentUrl`<br/>Target environment URL | (Required) The URL for the target environment that you want to restore. |
+| `FriendlyName`<br/>Name of the restored environment | (Optional) Name of the restored environment. |
 | `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
 
 ## Build and release pipelines
