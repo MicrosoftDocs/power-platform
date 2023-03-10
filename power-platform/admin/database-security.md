@@ -203,7 +203,7 @@ For more information about access and scope privileges, see [Security roles an
 9. Select **Save and Close**.
 
 ## Minimum privileges to run an app
-When you create a custom security role, you need to include a set of minimum privileges into the security role in order for a user to run an app. We've created a solution you can import that provides a security role that includes the [required minimum privileges.](create-edit-security-role.md#minimum-privileges-for-common-tasks) 
+When you create a custom security role, the role must have a set of minimum privileges in order for a user to run an app. We've created a solution you can import that provides a security role that includes the [required minimum privileges.](create-edit-security-role.md#minimum-privileges-for-common-tasks) 
 
 
 ### See also
