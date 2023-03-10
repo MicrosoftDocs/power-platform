@@ -2,7 +2,7 @@
 title: "Fundamentals - Analyze chatbot usage (contains video)"
 description: "Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents."
 keywords: "PVA"
-ms.date: 01/12/2023
+ms.date: 02/02/2023
 
 ms.topic: overview
 author: iaanw
@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Analysis in Power Virtual Agents
+# Key concepts – Analytics in Power Virtual Agents
 
 Select the version of Power Virtual Agents you're using here:
 

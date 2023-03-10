@@ -1,7 +1,7 @@
 ---
 title: "Report analytics, performance, and usage in Microsoft Teams"
 description: "The Summary analytics page in the Power Virtual Agents app in Microsoft Teams shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 1/23/2023
 
 ms.topic: article

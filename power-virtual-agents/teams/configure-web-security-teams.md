@@ -1,7 +1,7 @@
 ---
 title: "Configure web channel security in Microsoft Teams"
 description: "Use Direct Line tokens or secrets to secure access to your bots in the Power Virtual Agents app in Microsoft Teams."
-keywords: "direct line, token, secret, access, secure, security, channels, PVA"
+keywords: "direct line, token, secret, access, secure, security, channels, PVA, Teams"
 ms.date: 9/22/2020
 
 ms.topic: article
