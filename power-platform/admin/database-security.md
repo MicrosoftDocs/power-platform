@@ -177,7 +177,7 @@ For more information about access and scope privileges, see [Security roles an
 
 ### Create a custom security role with minimum privileges to run an app
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and select **Environments** in the navigation pane.
-2. Select the environment for which you want to update a security role.
+2. Select the environment for which you want to create a security role.
 3. Select **Settings** in the action bar.
 4. Select **Users + permissions** > **Security roles**.
 5. Select the check mark next to the **App Opener** role.
