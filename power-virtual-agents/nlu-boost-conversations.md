@@ -54,7 +54,7 @@ Your workflow might be like this:
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
 - You must enable the **Boost conversations** option for each bot.
-- Review these topics: [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
+- [Review AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
 ## Boost your bot's reach
 
@@ -66,7 +66,7 @@ Your workflow might be like this:
     
 1. Enter a name for the bot.
 
-3. Provide a website you'd like the bot to use for generating answers, then click **Create**. See the [URL considerations](#url-considerations) section for what types of URLs you can use. 
+3. Provide a website you'd like the bot to use for generating answers, and click **Create**. See the [URL considerations](#url-considerations) section for what types of URLs you can use. 
 
     :::image type="content" source="media/nlu-gpt/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
@@ -74,7 +74,7 @@ After your bot is created and ready for you to use, it'll open to the bot's **Ov
 
 You can also change the URL, disable **Boost conversations**, or change the level of content moderation in the settings for the bot:
 
-1. With a bot open, expand **Settings** on the side navigation pane and, then select **AI Capabilities**.
+1. With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
 
     1. Under **Boost conversational coverage (preview)**, use the checkbox for **Boost conversations** to enable or disable the capability.
 
