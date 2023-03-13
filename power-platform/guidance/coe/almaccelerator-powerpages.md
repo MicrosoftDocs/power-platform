@@ -78,7 +78,7 @@ Follow these steps to update the website record once the website has been deploy
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select the downstream environment, and under **Resources**, select **Power Pages sites**.
-1. You will be redirected to **Power Pages sites** page. Select the website and select **Manage**.
+1. You are redirected to **Power Pages sites** page. Select the website and select **Manage**.
 1. Under the **Site Details** section, select **Edit**.
 1. From **Website Record** list, select the website that got transported from your maker/ or dev environment, and select **Save**.
 

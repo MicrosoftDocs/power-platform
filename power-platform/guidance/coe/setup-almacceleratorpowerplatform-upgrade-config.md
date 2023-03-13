@@ -42,6 +42,7 @@ When the import is completed, the reactivation of the **CustomAzureDevOps** cust
 1. Select **Data** -> **Custom Connectors** and edit the **CustomAzureDevOps**
 1. Go to the Definition tab and verify if there are 3 **Policies** created and the information is accordingly to [this section](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config#create-the-customazuredevops-custom-connector-policies).
 1. Go to the Security tab and select **Edit**
+1. Select **Azure Active Directory** as the **Identity Provider**
 1. Add your **ClientId**, **Client Secret** & **ResourceUrl**
 1. Select the **Test** tab and select **Test operation**
 1. Confirm the **status** of the response is Ok and select **Update connector** in the top

@@ -641,6 +641,8 @@ If your solution requires these other configuration settings or data, follow the
 
    | Name | Value |
    |--|--|
+   | **Authentication Type** | **OAuth 2.0** |
+   | **Identity provider** | **Azure Active Directory** |
    | **Client ID** | The **Application (client) ID** you copied when [creating the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
    | **Client secret** | The **Application (client) Secret** you copied when [creating the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
    | **Tenant ID** | Leave as the default, **common** |
