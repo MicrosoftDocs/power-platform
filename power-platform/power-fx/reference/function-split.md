@@ -35,6 +35,9 @@ Use the **[MatchAll](function-ismatch.md)** function to split a string using a r
 
 The examples show how **Split** can be used with the **[First](function-first-last.md)** and **[Last](function-first-last.md)** functions to extract a single delimited substring. The **[Match](function-ismatch.md)** function is often a more concise and powerful choice for those familiar with regular expressions.
 
+> [!NOTE]
+> - From authoring version v3.23024.21 this function returns a field called **Value** whereas earlier versions return a field called **Result**.
+
 ## Syntax
 
 **Split**( _Text_, _Separator_ )
