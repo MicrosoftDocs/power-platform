@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI solution command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI solution command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 12/14/2022
+author: snizar007
+ms.author: snizar
+ms.date: 3/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -795,6 +795,10 @@ Tracker CSV file name to be used when using filetracking as a strategy. Default 
 Revision version for solution
 
 **Note**: The value must be a positive integer
+
+#### `--solutionPath` `-sp`
+
+Path to Dataverse solution directory or Solution.xml file.
 
 #### `--strategy` `-s`
 

@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI modelbuilder command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI modelbuilder command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 12/14/2022
+author: snizar007
+ms.author: snizar
+ms.date: 3/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -46,7 +46,7 @@ This parameter requires no value. It is a switch.
 
 #### `--entitynamesfilter` `-enf`
 
-Filters the list of entities are retrieved when reading data from Dataverse. Passed in as a semicolon separated list.  Using the form \<entitylogicalname>;\<entitylogicalname>
+Filters the list of entities are retrieved when reading data from Dataverse. Passed in as a semicolon separated list.  Using the form <entitylogicalname>;<entitylogicalname>
 
 #### `--entitytypesfolder` `-etf`
 
@@ -68,7 +68,7 @@ The language to use for the generated proxy code.  This can be either 'CS' or 'V
 
 #### `--messagenamesfilter` `-mnf`
 
-Filters the list of messages that are retrieved when reading data from Dataverse. Passed in as a semicolon separated list, required messages ( Create, Update, Delete, Retrieve, RetrieveMultiple, Associate and Disassociate) are always included. An * can be used to proceed or trail an message allowing for all messages starting with or ending with a string.  Using the form \<messagename>;\<messagename>
+Filters the list of messages that are retrieved when reading data from Dataverse. Passed in as a semicolon separated list, required messages ( Create, Update, Delete, Retrieve, RetrieveMultiple, Associate and DisAssociate) are always included. An * can be used to proceed or trail an message allowing for all messages starting with or ending with a string.  Using the form <messagename>;<messagename>
 
 #### `--messagestypesfolder` `-mtf`
 
@@ -80,7 +80,7 @@ The namespace for the generated code.  The default namespace is the global names
 
 #### `--optionsetstypesfolder` `-otf`
 
-Folder name that will contain OptionSets.  default is OptionSets
+Folder name that will contain option sets.  default is OptionSets
 
 #### `--outdirectory` `-o`
 
