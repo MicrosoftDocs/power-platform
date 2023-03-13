@@ -117,7 +117,7 @@ It's helpful to keep in mind the minimum privileges that are needed for some com
  
 Don't use the downloadable solution for the **min prv apps use** role, available in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2221577), which will be retired soon. Instead, you must use the new predefined security role called **App Opener**.
  
-Copy the **App Opener** security role to create a custom security role by following the [Create a security role by Copy Role](#create-a-security-role-by-copy-role) instructions. When you have finished creating a custom seurity role, select it and navigate to each tab, such as **Core Records**, **Business Management**, and **Customization** to set the appropriate privileges. 
+Copy the **App Opener** security role to create a custom security role by following the [Create a security role by Copy Role](#create-a-security-role-by-copy-role) instructions. When you have finished creating a custom security role, select it and navigate to each tab, such as **Core Records**, **Business Management**, and **Customization** to set the appropriate privileges. 
   
 - When logging in to model-driven apps or any of the customer engagement apps:  
   
