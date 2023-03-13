@@ -20,7 +20,7 @@ searchScope:
 
 By leveraging recent advancements in AI language models, Power Virtual Agents (preview) transforms how you build chatbots, increasing a chatbot's ability to respond to user input while at the same time significantly reducing manual authoring and configuration.
 
-For example, if, during a conversation, a user asks a question for which the chatbot doesn't already have a topic, it can generate a response based on the information available in a "fallback" website. The response is presented in a natural, conversational tone. 
+For example, if during a conversation a user asks a question for which the chatbot doesn't already have a topic, it can generate a response based on the information available in a "fallback" website. The response is presented in a natural, conversational tone. 
 
 
 ## Prerequisites
