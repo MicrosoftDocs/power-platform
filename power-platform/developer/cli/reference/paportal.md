@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI paportal command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI paportal command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 12/14/2022
+author: snizar007
+ms.author: snizar
+ms.date: 3/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -92,6 +92,12 @@ Path from where the Power Pages website content will be uploaded
 #### `--deploymentProfile` `-dp`
 
 Deployment profile name to be used. Defaults to 'default'
+
+#### `--forceUploadAll` `-f`
+
+Upload all Power Pages website content to the current Dataverse environment
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [paportal-upload-remarks](includes/paportal-upload-remarks.md)]
 
