@@ -1,12 +1,14 @@
 ---
 title: "Manage feature settings | MicrosoftDocs"
-description: View and manage feature settings for Microsoft Dataverse.
+description: Manage feature settings to adjust how features appear and function in Power Platform.
 author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/16/2022
+ms.date: 03/08/2023
 ms.subservice: admin
 ms.author: kvivek 
+contributors:
+    - ProfessorKendrick
 search.audienceType: 
   - admin
 search.app:
@@ -45,6 +47,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**Power BI components**  ||
 > |Allow creation of Power BI components  | Default: On. If **Off**, the environment will not have access to Power BI. Environments with a Dataverse database will have this setting. Creating a Power BI component will generate a dedicated Power BI workspace for that environment. All the Power BI artifacts corresponding to the Power BI components created in an environment will be generated in that dedicated Power BI environment workspace. See [Permission sync between Power Apps environment and Power BI workspace](/power-apps/maker/model-driven-apps/customize-manage-powerbi-components#permission-sync-between-power-apps-environment-and-power-bi-workspace) for more information. |
 > |Automatically assign permission to Power BI workspaces |Default: On. If **On**, synchronization will take place between pre-defined role privileges and the permissions of the dedicated Power BI environment workspace. The following roles will be assigned with permissions:<br/><br/>System administrator:Power BI workspace admin > Power BI workspace admin permission.<br/><br/> System Customizer:Power BI workspace contributor > Power BI workspace contributor permission.<br/><br/> Power BI workspace viewer > Power BI workspace viewer permission.<br/><br/> [Learn more about Power BI workspace permission](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles). |
+> |Allow information sharing between this environment and Power BI workspaces in other geographic regions |Default: On. When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. For more information, see [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |
 > |**Communications**| |
 > |Country/region code prefixing for numbers|Default: On. If **On**, customer engagement apps will prefix the country/region code to numbers that users are trying to call.|  
 > |Set the telephony provider|Default: On. Choose which provider to enable outbound calls from within customer engagement apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.|  

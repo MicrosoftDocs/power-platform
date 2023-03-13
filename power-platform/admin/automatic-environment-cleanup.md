@@ -1,12 +1,12 @@
 ---
 title: "Automatic cleanup of inactive environments"
 description: "Learn about the automatic process to identify and disable environments with an inactive subscription, and the actions you can take to prevent deletion."
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/30/2022
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 search.audienceType: 
   - admin
 search.app:
@@ -22,7 +22,7 @@ Operational processes for datacenters periodically identify environments for ten
 > [!TIP]
 > If you get notifications about exceeding your entitled storage capacity, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements) for actions you can take. 
 > 
-> For information on automatic cleanup of Microsoft Dataverse for Teams environments, see [Automatic deletion of inactive Microsoft Dataverse for Teams environments (preview)](inactive-teams-environment.md).
+> For information on automatic cleanup of Microsoft Dataverse for Teams environments, see [Automatic deletion of inactive Microsoft Dataverse for Teams environments](inactive-teams-environment.md).
 
 To see the status of your environments:
 

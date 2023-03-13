@@ -12,7 +12,12 @@ search.audienceType:
   - maker
 search.app: 
   - PowerApps
+contributors:
+  - gregli-msft
+  - mduelae
+  - jorisdg
 ---
+
 # Confirm function in Power Apps
 
 Display a confirmation dialog box to the user.

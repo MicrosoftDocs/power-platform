@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Average, Max, Min, StdevP, Sum, and VarP functions in Power Apps

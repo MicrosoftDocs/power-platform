@@ -2,10 +2,10 @@
 title: Use solution checker in Managed Environments (preview)
 description: Learn about using solution checker to automatically run security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 12/06/2022
+ms.date: 03/01/2023
 author: sidhartg
 ms.author: sidhartg
-ms.reviewer: Kumarvivek
+ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: 
 search.audienceType:
@@ -48,7 +48,7 @@ Select one of the following settings:
 | Warn |  All custom solutions are automatically verified during solution import. When a solution with highly-critical issues is being imported, you'll be warned about the action but the import itself will proceed, and if everything else with the import is fine, the solution will be imported into the environment. After a successful import, a message stating that the imported solution had validation issues is shown. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation. |
 | Block | All custom solutions are automatically verified during solution import. When a solution has highly-critical issues, the import process will be canceled, and a message stating that the imported solution had validation issues is shown. This happens before the actual import, so there won't be any changes to the environment due to the import failure. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation.|
 
-When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step, the verification of solutions will fail and in the **Block** mode, solution imports will be blocked.
+When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step, the verification of solutions will fail and in the **Block** mode, solution imports will be blocked. Solution checker must be run within a 90 day window of the import.
 
 ## Email messages to the admin
 
@@ -57,6 +57,12 @@ When the validation mode is set to **Warn** or **Block**, Power Platform admins 
 Solutions checked from Power Apps [(make.powerapps.com](https://make.powerapps.com)) will have the results stored in the source environment. When this solution is imported into an environment, admins of this environment will get a link to these results in the summary email.
 
 Solutions checked from the [Power Platform Build Tools](/power-platform/alm/devops-build-tools) will have the results returned as a downloadable file of the Power Apps Checker build task. When this solution is imported into an environment, environment admins will only be able to see the count of issues in the solution in the summary email. The summary email in this case won't have a link to the results.  
+
+### Suppress validation emails
+
+By default, emails are sent when a solution fails validation for medium and above severities. When the checkbox is selected, emails will not be sent in warn mode. Emails will not be sent in block mode, as well, except for critical violations which block solution import.
+
+:::image type="content" source="media/managed-environment-solution-checker-checkbox.png" alt-text="Screenshot of the solution checker email checkbox.":::
 
 ### See also
 
