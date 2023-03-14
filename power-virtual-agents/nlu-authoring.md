@@ -101,7 +101,7 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 
 ## What's supported
 
-As Copilot in is currently in preview, it is limited in terms of its support for PVA topics and its understanding of the available nodes used within them.
+Copilot in is currently in preview, it is limited in terms of its support for PVA topics and its understanding of the available nodes used within them.
 
 - Copilot is currently able to use Message, Question and Condition nodes when building and iterating on topics. Other node types are not currently supported.
 
