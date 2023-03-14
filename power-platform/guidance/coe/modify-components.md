@@ -2,19 +2,12 @@
 title: "Extend and customize CoE Starter Kit components"
 description: "Extend and modify the components of the Power Platform Center of Excellence (CoE) Starter Kit."
 author: conorto
-manager: topness-msft
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/28/2022
 ms.subservice: guidance
 ms.author: conorto
-ms.reviewer: jimholtz 
-search.audienceType: 
-  - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
+ms.reviewer: kvivek 
+
 ---
 
 # Extend and customize CoE Starter Kit components
@@ -148,7 +141,7 @@ Next, create a copy of the canvas app:
 
    ![Remove from solution](media/coe-extension-11.png "Remove from solution")
 
-   Verify that app in the CoE solution from where you copied does not have unmanaged layer created. if it does, then remove [unmanaged layers](after-setup.md#removing-other-customizations) to continue receiving updates to the original app. You may want to compare them to your changes.
+   Verify that app in the CoE solution from where you copied does not have unmanaged layer created. If it does, then remove [unmanaged layers](after-setup.md#removing-other-customizations) to continue receiving updates to the original app. You may want to compare them to your changes.
 
 You can now safely edit your own copy.
 
