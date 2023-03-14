@@ -1,10 +1,10 @@
 ---
-title: "Create a developer environment"
-description: "Sign up for the developer plan and create a developer environment"
+title: "Create a developer environment with the Power Apps Developer Plan"
+description: "Sign up for the Power Apps Developer Plan and create a developer environment"
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-ms.date: 11/08/2022
+ms.date: 03/14/2023
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
@@ -17,7 +17,7 @@ contributors:
  - JimDaly
  - phecke 
 ---
-# Create a developer environment
+# Create a developer environment with the Power Apps Developer Plan
 
 If you don't already have a Power Platform subscription, the simplest way to get access to a [Power Platform environment](/power-platform/admin/environments-overview) is to sign up for the Power Apps Developer plan. You can explore Power Platform at full potential for learning at no cost.
 
@@ -25,7 +25,7 @@ To fully use it as a developer, you'll need an Azure account and a work account.
 
 ## Who can sign up for the Power Apps Developer Plan?
 
-Anyone with a [work or school email address](signup-for-powerapps.md#faq) backed by [Azure Active Directory](/azure/active-directory/fundamentals/sign-up-organization) can sign up for the Power Apps Developer Plan.
+Anyone with a [work or school email address](/power-apps/maker/signup-for-powerapps#faq) backed by [Azure Active Directory](/azure/active-directory/fundamentals/sign-up-organization) can sign up for the Power Apps Developer Plan.
 
 ## Where do I start?
 
@@ -145,7 +145,7 @@ You can't increase capacity by applying add-ons to the quantities we include. If
 
 Do you have an app that you'd like to share with customers? We now support Power Apps solutions on [Microsoft AppSource](https://appsource.microsoft.com/) as a way for you to share apps and flows with customers, and generate leads for your
 business. For more information, see [Publish your app on
-AppSource](../developer/data-platform/publish-app-appsource.md).
+AppSource](/power-apps/maker/developer/data-platform/publish-app-appsource).
 
 ## FAQ
 
@@ -167,7 +167,7 @@ page](https://powerapps.microsoft.com/pricing/).
 ### Can I transfer the apps, flows, and other resources created in the developer environment to another environment?
 
 Yes, you should be able to export the resources from this environment to other environments. For more information,
-see [Solutions](data-platform/solutions-overview.md).
+see [Solutions](/power-apps/data-platform/solutions-overview).
 
 ### Will my Power Apps Developer Plan subscription ever expire?
 
@@ -189,7 +189,7 @@ expires, you can purchase a plan. If you're already using Power Apps with Office
 ### Can I sign up with my personal account?
 
 No, we currently don't support signing up with a personal account. You can only sign up with your [work or school
-account](signup-for-powerapps.md#faq).
+account](/power-apps/maker/signup-for-powerapps#faq).
 
 ### Can I reset or delete my developer environment?
 
