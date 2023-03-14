@@ -54,7 +54,7 @@ When creating a new topic, you can select **Describe it** and ask the AI to make
       
 4. Select **Create**.
    
-5. The authoring canvas will open and a new topic, with trigger phrases, as well as one or more nodes, created for you. You can [use Copilot to further refine and update the topic](#use-copilot-to-edit-a-topic), in addition to the [usual ways of editing topics](authoring-create-edit-topics.md).
+5. The authoring canvas will open and a new topic, with trigger phrases, as well as one or more nodes, is created for you. You can [use Copilot to further refine and update the topic](#use-copilot-to-edit-a-topic), in addition to the [usual ways of editing topics](authoring-create-edit-topics.md).
 
 
 ## Use Copilot to edit a topic
