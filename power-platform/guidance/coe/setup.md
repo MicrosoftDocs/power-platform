@@ -94,7 +94,7 @@ First, enable the [Data Export](/power-platform/admin/self-service-analytics#set
 
 #### Why is this feature in preview?
 
-The [Data Export](/power-platform/admin/self-service-analytics) feature itself is currently in public preview. Using Data Export for the CoE Starter Kit is a fundamental change to the underlying architecture of the CoE Starter Kit. To help balance improvement with the potential impact on your existing CoE kit deployment, we're introducing this feature as a preview feature. If you're an early adopter and think this feature could be useful to you, please try it out and help test the feature. We recommend you don't depend on it yet and try it out it in a dedicated test environment first. Trying out this feature helps us validate that the feature is what you need and that we're not introducing unintended side effects. Your feedback is critical to this process. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
+The [Data Export](/power-platform/admin/self-service-analytics) feature itself is currently in public preview. Using Data Export for the CoE Starter Kit is a fundamental change to the underlying architecture of the CoE Starter Kit. To help balance improvement with the potential impact on your existing CoE kit deployment, we're introducing this feature as a preview feature. If you're an early adopter and think this feature could be useful to you, try it out and help test the feature. We recommend you don't depend on it yet and first try it out it in a dedicated test environment. Trying out this feature helps us validate that the feature meets your needs and that we're not introducing unintended side effects. Your feedback is critical to this process. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 
 #### What are the requirement for using Data Export with the CoE Starter Kit?
 
@@ -111,10 +111,10 @@ The identity setting up the CoE Starter Kit needs Storage Data Reader permission
 
 #### Why do you recommend moving from using cloud flows to retrieve inventory to using Data Export?
 
->[!NOTE]
->The CoE Starter Kit using Data Export for inventory is currently in experimental preview, we recommend you don't depend on it just yet and test it in a dedicated test environment first. Trying out this feature will help us to validate that the feature is what you need and that we're not introducing unintended side effects. Your feedback is critical to this process. Please post your feedback by [raise an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
-
 The cloud flows that sync inventory to Dataverse consume a high number of API calls, and can hit throttling and scale limits if you have a large number of Power Platform resources (environments, apps, flows) in your tenant. These cloud flows work best for small to medium sized tenants that have less than 10,000 apps and flows. The Data Export feature uses Power BI and Power Platform dataflows, which are powerful at transforming and handling large amounts of data. Once we've validated this feature works as intended, using Data Export with the CoE Starter Kit will increase performance and scale.
+
+> [!IMPORTANT]
+> The CoE Starter Kit using Data Export for inventory is currently in experimental preview, we recommend you don't depend on it just yet and first test it in a dedicated test environment. Trying out this feature will help us validate that the feature meets your needs and that we're not introducing unintended side effects. Your feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 
 #### Will the CoE Starter Kit still have inventory of resources not yet available in the Data Export feature?
 
