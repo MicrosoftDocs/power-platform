@@ -125,11 +125,9 @@ During solution import, you configure environment variable values. Make sure to 
 
 The import can take up to 15 minutes to be completed.
 
->[!NOTE]
->The next steps walk you through turning on flows that gather your tenants inventory. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
-
->[!NOTE]
->The steps below will create an inventory of all environments in your tenant, if you wish to inventory only a subset of environments, please see [Setting up CoE for a subset of environments](faq.md#setting-up-coe-for-a-subset-of-environments) before proceeding.
+> [!NOTE]
+> - The next steps walk you through turning on flows that gather your tenants inventory. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
+> - The steps later will create an inventory of all environments in your tenant, if you wish to inventory only a subset of environments, please see [Setting up CoE for a subset of environments](faq.md#setting-up-coe-for-a-subset-of-environments) before proceeding.
 
 In your test environment, [update the *ProductionEnvironment* environment variable](faq.md#update-environment-variables) to no before proceeding.
 
