@@ -80,7 +80,7 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
     :::image type="content" source="media/byodl-1.png" alt-text="Copy Data Lake Storage URL from Storage Account endpoints.":::
 1. Append */powerplatform* to the URL.
 
-### Import Power BI Dataflows
+### Import Power BI dataflows
 
 Power BI dataflows are used to transform data from the Azure Storage account into tables that are then used by the dashboard. You'll first have to configure the Power BI dataflows.
 
@@ -92,7 +92,7 @@ Power BI dataflows are used to transform data from the Azure Storage account int
    > [!NOTE]
    > A Power BI Premium trial is sufficient, if you are only testing out the integration of the [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) feature with the CoE Starter Kit.
 
-1. Select **+ New** > **Dataflow** (if prompted select “No, create dataflow” instead of datamart).
+1. Select **+ New** > **Dataflow** (if prompted select **No, create dataflow** instead of datamart).
     :::image type="content" source="media/byodlbi-2.png" alt-text="Create a dataflow.":::
 1. Select **Import Model** and upload the **PowerPlatformAdminAnalytics-DF.json** file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
     :::image type="content" source="media/byodlbi-3.png" alt-text="Import a dataflow model.":::
@@ -103,7 +103,7 @@ Power BI dataflows are used to transform data from the Azure Storage account int
     :::image type="content" source="media/byodlbi-5.png" alt-text="Edit the tables of the imported dataflow.":::
 1. Select the Datalake URL parameter.
       :::image type="content" source="media/byodlbi-6.png" alt-text="Update the Datalake URL parameter to point to your Azure Storage Account URL.":::
-1. Paste in the Azure Storage Account URL and make sure it ends with /powerplatform and doesn’t include a trailing /.
+1. Paste the Azure Storage Account URL and make sure it ends with /powerplatform and doesn’t include a trailing /.
 1. From the **Queries** view, select one table after the other to configure connections and login with your account. If creating the connection fails, try selecting **Source** under Applied steps and retry configuring the connection.
     :::image type="content" source="media/byodlbi-7.png" alt-text="Configure connections for the data sources.":::
 1. Select **Continue** when you see a notification about connecting data from multiple sources.
