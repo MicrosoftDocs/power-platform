@@ -144,8 +144,7 @@ You can't increase capacity by applying add-ons to the quantities we include. If
 ## Publishing to Microsoft AppSource
 
 Do you have an app that you'd like to share with customers? We now support Power Apps solutions on [Microsoft AppSource](https://appsource.microsoft.com/) as a way for you to share apps and flows with customers, and generate leads for your
-business. For more information, see [Publish your app on
-AppSource](/power-apps/maker/developer/data-platform/publish-app-appsource).
+business. For more information, see [Publish your app on AppSource](/power-apps/developer/data-platform/publish-app-appsource).
 
 ## FAQ
 
@@ -167,7 +166,7 @@ page](https://powerapps.microsoft.com/pricing/).
 ### Can I transfer the apps, flows, and other resources created in the developer environment to another environment?
 
 Yes, you should be able to export the resources from this environment to other environments. For more information,
-see [Solutions](/power-apps/data-platform/solutions-overview).
+see [Solutions](/power-apps/maker/data-platform/solutions-overview).
 
 ### Will my Power Apps Developer Plan subscription ever expire?
 
