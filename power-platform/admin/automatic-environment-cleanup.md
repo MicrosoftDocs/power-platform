@@ -34,11 +34,10 @@ To see the status of your environments:
 > [!div class="mx-imgBorder"] 
 > ![Inactive environment.](media/inactive-environment.png "Inactive environment")
 
-## Scope
-
+## Types of environments affected
 Only production and sandbox environments are affected by the automatic cleanup.
 
-## Admin notification because of environment cleanup 
+## Admin notification
 
 Here's what you can expect to receive if you, as an admin or someone in your organization, has created an environment that is marked for clean up. 
 
@@ -58,10 +57,10 @@ Within 24 hours after the licenses and capacity are applied to your tenant, the 
 ## Environment cleanup based on inactivity
 Power Platform provides a cleanup mechanism that automatically removes environments from your tenant that are left inactive. An environment will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments. This cleanup process is automatic.
 
-## Scope
+### Scope
 Developer and Dataverse for Teams environment are affected by the inactvity based cleanup.
 
-## Timeline for inactive environments
+### Timeline for inactive environments
 
 The following table describes the schedule of notifications and actions for environments that are considered inactive.
 
