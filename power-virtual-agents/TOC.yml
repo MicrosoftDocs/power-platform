@@ -12,7 +12,7 @@
   items:
     - name: AI-based boosted conversations overview (preview)
       href: nlu-gpt-overview.md
-    - name: Boost conversations quickstart guide (preview)
+    - name: Quickstart guide for integrating AI-powered capabilities (preview)
       href: nlu-gpt-quickstart.md
     - name: Boost conversations (preview)
       href: nlu-boost-conversations.md

@@ -1,8 +1,8 @@
 ---
-title: Quickstart guide for boosting bot conversations (preview)
+title: Quickstart guide for integrating AI-powered capabilities (preview)
 description: Build bots quickly and provide the most relevant information to your customers with natural language understanding advancements in Power Virtual Agents preview.
 keywords: "PVA, GPT, NLU"
-ms.date: 3/6/2023
+ms.date: 3/16/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
@@ -15,14 +15,14 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Boost conversations quickstart guide (preview)
+# Integrate AI-powered capabilities quickstart guide (preview)
 
 [!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
 
 Microsoft has made bot building even simpler with AI-powered capabilities in Power Virtual Agents (preview). Whether you're new to conversational AI or a seasoned developer, our intelligence platform is with you and your team every step of the way. 
 
-This quickstart guide will introduce you to the core steps in creating and boosting a chatbot with expanded natural language understanding (NLU) capabilities.
+This quickstart guide introduces you to the minimal steps necessary to get started quickly in creating and boosting a chatbot with expanded natural language understanding (NLU) capabilities. Using the intelligent authoring of AI-powered bots, you can now create a new topic or edit an existing one by describing what you want to happen. 
 
 ## Prerequisites 
 
@@ -56,6 +56,8 @@ The bot then follows the _conversation flow_ that you've defined in the **Store 
 
 However, you may not be able to anticipate all the types of questions your customers ask. To help mitigate this, Power Virtual Agents (preview) incorporates a powerful new AI-powered capability that uses the latest advancements in NLU models. When you have **Boost conversations** enabled in your bot, and linked to a publicly available, Bing-indexed website, your bot can provide automatically generated, conversationally friendly, plain language responses without depending upon the bot builder to create topics for every eventuality. 
 
+Also, with Power Virtual Agents new Copilot feature, your chatbot uses AI, powered by the Azure OpenAI GPT-3 model (which is also used in Bing), to create bot topics based upon a simple description of what you want to achieve. You can also modify and update any topic in your bot in the same manner, by describing the changes you want to make.
+
 Ready to get started? The first step is to create your bot.  
 
 ## Create a boosted bot 
@@ -81,34 +83,40 @@ For any user-sent message that can't be matched to an existing topic, your bot l
 
 See the [Boost conversations (preview)](nlu-boost-conversations.md) topic for more details on the capability, including instructions for enabling boosted conversations in preview bots you've already created.
 
+## Create a new topic using Copilot (preview)
+
+1. From the left navigation, select **Topics**, **+ New topic**, and **Create with Copilot (preview)**.
+
+2. Name you topic and include a description of what you'd like your bot to do. 
+
+3. Click **Create** to generate your new topic. 
+
+Once your topic is created, your bot is ready for testing. It's that simple! 
+
+
+## Edit your new topic with the power of AI authoring
+
+With the new **Edit with Copilot (preview)** pane, you can make changes to your topic using the power of AI natural language understanding (NLU). For example, if you want to make updates to your bot, such as moving and updating the nodes. 
+
+Think of this new capability as a powerful wizard-like feature that walks you through the editing a topic process to fine tune you bot's topics without having to work directly in the authoring canvas. You can also make additions and changes to existing nodes, and tell Copilot (preview) what you want it to do.
+
+1. Select the + node that you want to edit.
+
+2. In the **Edit with CoPilot (preview) pane**, describe what you want to change or add in the topic. 
+
+3. Use simple, plain English to direct the AI with what you want it to do, as in the the following examples:
+
+    - Add a question to for the user's birth date day and month
+    - Add two message variations to all questions in the topic
+    - Update the content within the topic to be more appropriate for customer service
+
+4. Click **Update**. The AI will make updates based on your directions. 
+
+If you don't like the changes, select the **Undo** button. You can then change your directions and try again.
+
+To learn more, see [How to use GPT AI to create and edit topics (preview)](). 
+
 Before you begin testing your bot, you might like to add an initial welcome-style bot topic. This will help you understand how bot topics work and start you on your journey to creating fully functional bots.
-
-## Add a welcome topic
-
-Bot topics usually begin with *trigger phrases*. Trigger phrases are phrases, keywords, and questions that a user is likely to type that relate to a specific issue. This is what the bot uses to match a user's intent with the appropriate topic. See [Create and edit topics (preview)](preview/authoring-create-edit-topics.md) for more details on how trigger phrases work.
-
-After the trigger phrase, you add *conversation nodes* to define how the bot should respond to a trigger phrase and what it should do. 
-
-1. On the side navigation menu, select **Topics**, **+ New topic**, and then **From blank**. 
- 
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-create-topic.png" alt-text="Screenshot of the Create a new topic from blank option.":::
-
-2.  To add a new **Message** node, select the **+ sign** on the trigger phrases node, and then select **Add node**.
-
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-add-node.png" alt-text="Screenshot of the Add node button.":::
-   
-3. Select **Send a message**.
-
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-message-send.png" alt-text="Screenshot of the Send a message option.":::
-
-4. Type a message. In this example, type *How can I help you today?* in the node's text field. 
-
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-message-node.png" alt-text="Screenshot of the Message node.":::
-
-5. Repeat the above steps to add as many message variations as you like.  
- 
-6. When you’re finished, select **Save**.  
-   When you add message variations, the bot randomly picks one of them to use each time the node is triggered. 
 
 Next, it's time to test your bot! 
 
@@ -126,7 +134,7 @@ The **Test bot** pane shows how a bot conversation plays out at every step and y
  
    The bot retrieves information from the website and returns a response. The response provides a link to where it found that information and allows you to provide feedback.
  
-4. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue?*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
+3. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue?*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
 
     :::image type="content" source="media/nlu-gpt/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
  
