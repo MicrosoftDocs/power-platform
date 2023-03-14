@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 02/15/2022
+ms.date: 03/14/2023
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -9,7 +9,7 @@ ms.custom:
 author: lancedMicrosoft
 ms.subservice: admin
 ms.author: lanced
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -72,15 +72,15 @@ Power Platform has an extensive set of [Data Loss Prevention (DLP) features](../
 
 ### SAS IP Binding
 
-This feature set is a tenant specific functionality that restricts Storage Shared   Access Signature (SAS) tokens and is controlled via a menu in the  [Power Platform Admin Center](https://admin.powerplatform.microsoft.com). This setting will IP-restrict   who can use enterprise SAS tokens with the intent of making them more secure. These settings can be found in a Dataverse environment’s Privacy + Security settings page in the admin center. 
+This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting will who, based on IP, can use enterprise SAS tokens with the intent of making them more secure. These settings can be found in a Dataverse environment’s **Privacy + Security** settings in the admin center. 
 
-Admins can enable one of these four configurations for this setting :
+Admins can enable one of these four configurations for this setting:
 
 | **#** | Setting                 | Description                                                                                                                    |
 |-------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | 1     | IP Binding              | This will restrict SAS keys to the requester’s IP.                                                                             |
 | 2     | IP Firewall             | This will restrict using SAS keys to only work within an admin specified range.                                                |
-| 3     | IP Binding and Firewall | This will restrict using SAS keys to work within an admin specified range and only to the requestor's IP.                      |
+| 3     | IP Binding and Firewall | This will restrict using SAS keys to work within an admin-specified range and only to the requestor's IP.                      |
 | 4     | IP Binding or Firewall  | Allows SAS keys to be used within the specified range. If the request comes from outside the range, IP Binding will be applied |
 
 #### Products enforcing IP Binding when enabled:
@@ -90,9 +90,9 @@ Admins can enable one of these four configurations for this setting :
 - Power Apps
 
 #### Impact on Power App experiences
-1. The following screenshot illustrates the end-user experience when a user, that do not meet an environment’s IP address restrictions, attempts to launch an app. 
+1. The following image illustrates the end user experience when a user, who doesn't meet an environment’s IP address restrictions, attempts to launch an app. 
 
-![image](https://user-images.githubusercontent.com/11514622/222267525-56442161-58f7-4939-9602-6aa29cc866e3.png)
+    ![image](https://user-images.githubusercontent.com/11514622/222267525-56442161-58f7-4939-9602-6aa29cc866e3.png)
 
 2. This experience will be updated to provide more contextual information to the user as to why the app couldn’t be launched.
 3. The end user experience when launching an app while meeting the IP address requirements will:
