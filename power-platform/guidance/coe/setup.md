@@ -118,7 +118,7 @@ The cloud flows that sync inventory to Dataverse consume a high number of API ca
 
 #### Will the CoE Starter Kit still have inventory of resources not yet available in the Data Export feature?
 
-Currently, the Data Export feature provides inventory on environments, apps and cloud flows. For resources not yet available via Data Export (Desktop flows, chatbots, solutions, AI Builder models, Power Pages), the CoE Starter Kit continues to use cloud flows to retrieve inventory.
+Currently, the Data Export feature provides inventory on environments, apps and cloud flows. For resources not yet available via Data Export (desktop flows, chatbots, solutions, AI Builder models, Power Pages websites), the CoE Starter Kit continues to use cloud flows to retrieve the inventory.
 
 #### How does the CoE Starter Kit consume data from the Data Export feature?
 
