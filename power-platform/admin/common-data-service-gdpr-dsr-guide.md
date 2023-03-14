@@ -27,7 +27,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 - Delete it
 - Receive it in electronic format so it can be moved to another controller
 
-A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
+A formal request by a data subject to a controller to take an action on their personal data is called a Data Subject Rights (DSR) request.
 
 This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Power Apps, Power Automate, and Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
@@ -93,7 +93,7 @@ You can find personal data from Dataverse users within the following resources:
 #### User
 User personal data is stored in the Azure Active Directory and is automatically synced to all environments with a Dataverse database. System administrators cannot update this personal data directly in Dataverse while the user is active&mdash;they must update the data from within the Microsoft 365 admin center. System administrators can add personal data (for example, custom attributes) directly to Dataverse, but they must manually manage this data.
 
-To find a user and his or her personal data, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and do the following:
+To find a user and their personal data, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and do the following:
 
 1. Select **Environments**, and then select an environment from the list.
 
@@ -217,7 +217,7 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 ### Prerequisites
 You may be storing personal data from individuals (such as your own customers) within your Dataverse tables.  
 
-Dataverse System Administrators are responsible for maintaining an inventory of where personal data is being stored within various tables for each individual so that he or she can locate that data in response to any DSR requests.  
+Dataverse System Administrators are responsible for maintaining an inventory of where personal data is being stored within various tables for each individual so that they can locate that data in response to any DSR requests.  
 
 Personal data can then be exported, rectified, or deleted in a table using the in-product functionality.  
 
@@ -295,7 +295,7 @@ From the Dataverse search results, to the following:
 ### Prerequisites
 You may be storing personal data from individuals (such as your own customers) within your Dataverse tables.  
 
-Dataverse System Administrators are responsible for maintaining an inventory of where personal data is being stored within various tables for each individual so that he or she can locate that data in response to any DSR requests.  
+Dataverse System Administrators are responsible for maintaining an inventory of where personal data is being stored within various tables for each individual so that they can locate that data in response to any DSR requests.  
 
 Personal data can then be exported, rectified, or deleted in an table using the in-product functionality.  
 
