@@ -1,12 +1,13 @@
 ---
 title: "Automatic cleanup of inactive environments"
 description: "Learn about the automatic process to identify and disable environments with an inactive subscription, and the actions you can take to prevent deletion."
-author: jimholtz
+author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 03/14/2023
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: matgupta 
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -54,11 +55,11 @@ Within 24 hours after the licenses and capacity are applied to your tenant, the 
 > [!IMPORTANT] 
 > Please allow ample time to take appropriate action. Your organization may have a central admin and purchasing group and might be purchasing through Microsoft partners. Please plan accordingly. 
 
-## Inactivity based environment cleanup
-Power Platform provides a cleanup mechanism that automatically removes environments from your tenant that are left inactive. An environment will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments.This cleanup process is automatic.
+## Environment cleanup based on inactivity
+Power Platform provides a cleanup mechanism that automatically removes environments from your tenant that are left inactive. An environment will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments. This cleanup process is automatic.
 
 ## Scope
-Developer and dataverse for teams environment are affected by the inactvity based clean up.
+Developer and Dataverse for Teams environment are affected by the inactvity based cleanup.
 
 ## Timeline for inactive environments
 
@@ -66,11 +67,11 @@ The following table describes the schedule of notifications and actions for envi
 
 | State of environment | Power Platform action |
 | --- | --- |
-| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Update the environment state on the Environments list page<sup>1</sup> and the Environment page<sup>2</sup>. |
-| 87 days after no user activity | Send a warning that the environment will be disabled. Update the inactive environment state on the Environments list page<sup>1</sup> and the Environment page<sup>2</sup>. |
-| 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the Environments list page<sup>1</sup> and the Environment page<sup>3</sup>. |
-| 113 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the Environments list page<sup>1</sup> and the Environment page<sup>3</sup>. |
-| 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the Environments list page<sup>1</sup> and the Environment page<sup>3</sup>. |
+| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Update the environment state on the **Environments** list page<sup>1</sup> and the **Environment** page<sup>2</sup>. |
+| 87 days after no user activity | Send a warning that the environment will be disabled. Update the inactive environment state on the **Environments** list page<sup>1</sup> and the **Environment** page<sup>2</sup>. |
+| 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page<sup>3</sup>. |
+| 113 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page<sup>3</sup>. |
+| 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page<sup>3</sup>. |
 | 120 days after no user activity | Delete the environment. Send a notice that the environment has been deleted. |
 
 <sup>1</sup> **Environment state on the Environments list page in Power Platform admin center**
