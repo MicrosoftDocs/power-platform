@@ -57,7 +57,7 @@ Within 24 hours after the licenses and capacity are applied to your tenant, the 
 ## Environment cleanup based on inactivity
 Power Platform provides a cleanup mechanism that automatically removes environments from your tenant that are left inactive. An environment will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments. This cleanup process is automatic.
 
-### Scope
+### Types of environments affected
 Developer and Dataverse for Teams environment are affected by the inactvity based cleanup.
 
 ### Timeline for inactive environments
@@ -119,13 +119,13 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. Select **Environments**, and then select the inactive environment.
-3. On the Environment page, select **Trigger environment activity**.
+3. On the **Environment** page, select **Trigger environment activity**.
 
 ### Re-enable a disabled environment
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. Select **Environments**, and then select the disabled Dataverse for Teams environment.
-3. On the Environment page, select **Re-enable environment**.
+3. On the **Environment** page, select **Re-enable environment**.
 
 ### Recover a deleted environment
 
