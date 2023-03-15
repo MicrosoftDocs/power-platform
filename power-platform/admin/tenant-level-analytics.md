@@ -42,7 +42,7 @@ For more information on the different roles for managing your tenant across the 
 A member from one of the following admin roles is required to enable tenant-level analytics:
 
 - Power Platform admin
-- Dynamics 365 admin
+- Microsoft 365 Global admin
 - Delegated admin 
 
 The admin doesn't need to be a licensed user.  Environment admins will gain access to the tenant-level analytics once the service admin enables the feature using the following steps. 
@@ -68,7 +68,7 @@ The admin doesn't need to be a licensed user.  Environment admins will gain acce
 Administrators with the following roles and a [license](pricing-billing-skus.md) can disable tenant-level analytics:
 
 - Power Platform admin
-- Dynamics 365 admin
+- Microsoft 365 Global admin
 - Delegated admin 
 
 Environment admins are not able to disable tenant-level analytics.
