@@ -87,6 +87,7 @@ conceptualContent:
           itemType: overview
         - text: Tell your bot what it should do
           url: ./nlu-authoring.md
+          itemType: tutorial
         - text: Make your bot useful from day one
           url: ./nlu-boost-conversations.md
           itemType: tutorial
