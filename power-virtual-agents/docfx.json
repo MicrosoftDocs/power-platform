@@ -54,7 +54,8 @@
       "feedback_github_repo": "MicrosoftDocs/power-platform",
       "feedback_product_url": "https://powerusers.microsoft.com/t5/Power-Apps-Ideas/idb-p/PowerAppsIdeas/label-name/power%20virtual%20agents",
       "search.app": [
-        "capaedac-pva"
+        "capaedac-pva",
+        "powervirtualagents-docs"
       ],
       "search.audienceType": [
         "maker"
@@ -64,9 +65,11 @@
     },
     "fileMetadata": {
       "searchScope": {
-	        "**.*": [ "Power Virtual Agents" ]
+        "**.*": [
+          "Power Virtual Agents"
+        ]
       },
-      "ms.service":{
+      "ms.service": {
         "**.*": "power-virtual-agents"
       }
     },
