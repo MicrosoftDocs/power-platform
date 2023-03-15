@@ -132,6 +132,7 @@ The URL you specify should host the content you want the bot to generate answers
 ## Test your bot's boosted conversational reach 
 
 1. Click on **Test your bot** at the bottom of the side navigation pane. 
+
 1. In the **Test bot** panel, ask the bot questions that take advantage of **Boost conversations** capability.
 
 The boost conversation preview works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:

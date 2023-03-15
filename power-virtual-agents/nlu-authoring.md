@@ -111,6 +111,9 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 >  
 > :::image type="content" source="media/nlu-gpt/describe-it-feedback.png" alt-text="Screenshot of the Power Virtual Agents Describe it feedback panel.":::
 
+## Disable Copilot in Power Virtual Agents
+
+Admins can disable Copilot for their organization by starting a support request with Microsoft.
 
 ## What's supported
 

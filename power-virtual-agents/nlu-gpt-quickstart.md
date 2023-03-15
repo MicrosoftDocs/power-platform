@@ -142,8 +142,6 @@ Think of this new capability as a powerful wizard-like feature that walks you th
     
     If you don't like the changes, select the **Undo** button. You can then change your directions and try again.
 
-    :::image type="content" source="media/nlu-gpt/describe-it-modify-undo.png" alt-text="Screenshot of the Power Virtual Agents Describe it side panel open, showing the Undo button.":::
-
     You can always see the last thing you asked Copilot to do under the **What you asked for** label.
 
 > [!TIP]
