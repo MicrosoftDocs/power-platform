@@ -1,48 +1,61 @@
 ---
-title: Authoring
-description: Copilot for authoring
+title: Create (and edit) with Copilot (Preview)
+description: Use AI powered by GPT to create and edit bot topics, and get your chatbot ready for your users in minutes.
 keywords: "PVA"
-ms.date: 2/8/2023
+ms.date: 3/16/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: 
-manager: shellyha
+manager: leeclontz
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
+ms.search.region: USA
 searchScope:
   - "Power Virtual Agents"
 ---
 
-# How to use Copilot to create and edit topics (Preview)
+# Create (and edit) with Copilot (Preview)
 
-[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [AI tech disclosure](includes/disclosure-ai-preview.md)]
 
 
 
 In addition to the traditional method for [creating and editing topics](authoring-create-edit-topics.md), Power Virtual Agents lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
 
-The AI behind the Copilot feature is powered by the Azure OpenAI GPT-3 model (which is also used in Bing).
+This means you can quickly create and deploy a functional bot, without having to first manually author multiple topics.
 
+The capability uses AI to understand what you want to do, and then automatically creates a functioning topic, complete with different node types and conversational responses.
+
+See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for more examples and descriptions of how this capability works, and how to use it with the [Boost conversations (preview)](nlu-boost-conversations.md) capability.
 
 
 ## Prerequisites
-- You must be using the preview version of Power Virtual Agents, and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name.
-- Review the [Copilot topic creation training, model, and usage FAQ](nlu-authoring-faq.md).
+> [!NOTE]
+> If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
+
+- You'll need an account for Power Virtual Agents. 
+- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
+
+    :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
+
+- Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
 
 ## Use Copilot to create a topic
 
-When creating a new topic, you can select **Describe it** and ask the AI to make it for you. You need to do this for each topic you want to create, and you can't create multiple topics in one description.
+When creating a new topic, you can select **Create with Copilot** and ask the AI to make it for you. You need to do this for each topic you want to create, and you can't create multiple topics in one description.
 
 1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic** and then **Create with Copilot (preview)**.
 
     :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
 
-    >[!NOTE]
-    >If you don't see the **Copilot** option, confirm that **Intelligent authoring support** in the Power Virtual Agents **Settings** page is set to **On**:
-    >>1. Select the **Settings** cogwheel icon on the main menu bar, and then select **General settings**.
-    >>    :::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents top menu with the Settings icon open.":::
-    >>2. Confirm the toggle switch under **Intelligent authoring support (preview)** is set to **On**.
+    > [!NOTE]
+    >  
+    > If you don't see the **Copilot** option, you may need to enable **Intelligent authoring support**:
+    > 1. Select the **Settings** icon on the top menu and then **General settings**.
+    >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents menu with the Settings icon open.":::
+    >  
+    > 2. Set the switch under **Intelligent authoring support (preview)** to **On**.
 
 2. In the **Create it with Copilot (preview)** window that appears, enter a name for your topic in the **Name your topic** field. 
 
@@ -54,12 +67,12 @@ When creating a new topic, you can select **Describe it** and ask the AI to make
       
 4. Select **Create**.
    
-5. The authoring canvas will open and a new topic, with trigger phrases, as well as one or more nodes, is created for you. You can [use Copilot to further refine and update the topic](#use-copilot-to-edit-a-topic), in addition to the [usual ways of editing topics](authoring-create-edit-topics.md).
+5. The authoring canvas will generate and open a new topic, with trigger phrases and one or more nodes, based on what you asked for. You can [use Copilot to further refine and update the topic](#use-copilot-to-edit-a-topic), in addition to the [usual ways of editing topics](preview/authoring-create-edit-topics.md).
 
 
 ## Use Copilot to edit a topic
 
-You can use AI to help you modify any topic in your bot. The topic doesn't need to have been created with the **Copilot** feature.
+You can use AI to help you modify any topic in your bot. The topic doesn't need to have been created with Copilot.
 
 1. Open your bot and select **Topics**. Select the topic you want to modify, and then **Edit with Copilot** on the menu bar just above the topic's conversation path.
 
@@ -75,11 +88,11 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
     - _add 2 message variations to all questions in the topic_
     - _summarize the information collected from the user in an Adaptive Card_
 
-> [!TIP]
->
->If you have any nodes selected on your canvas, they will be used to scope your request.  
->For example, if you have a question node selected, you could write, _add a speech response_, instead of _add a speech response to the question node_.
-> You can see if you have any nodes selected, and how many, next to the **Update** button.
+    > [!TIP]
+    >
+    >If you have any nodes selected on your canvas, they will be used to scope your request.  
+    >For example, if you have a question node selected, you could write, _add a speech response_, instead of _add a speech response to the question node_.
+    > You can see the nodes you've selected next to the **Update** button.
 
 3. Click **Update**. The AI will make updates based on your directions.
    
@@ -89,7 +102,7 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 
     :::image type="content" source="media/nlu-gpt/describe-it-modify-undo.png" alt-text="Screenshot of the Power Virtual Agents Describe it side panel open, showing the Undo button.":::
 
-    You can always see the last thing you asked **Copilot** to do under the **What you asked for** label.
+    You can always see the last thing you asked Copilot to do under the **What you asked for** label.
 
 > [!TIP]
 >  
@@ -101,13 +114,52 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 
 ## What's supported
 
-Copilot in is currently in preview, it is limited in terms of its support for PVA topics and its understanding of the available nodes used within them.
+### Topic node support
 
-- Copilot is currently able to use Message, Question and Condition nodes when building and iterating on topics. Other node types are not currently supported.
+During this preview, Copilot can create Message, Question, and Condition nodes when building and iterating on topics. Other node types during the preview aren't currently supported.
 
-- Copilot currently understands the required properties on Message, Question and Condition nodes, such as the text to use when prompting the user, or generating appropriate output variables. However, Copilot does not currently understand all of the available, more advanced, properties (such as reprompt and interruption settings on a Question node). You can use the authoring canvas to make changes to these.
+There are some additional limitations on how Copilot works with nodes:
 
-- Condition nodes that are created by Copilot, to branch a topic following a multiple choice question, will currently have errors within the generated conditions. You will need to fix these conditions manually.
+- Copilot understands the required properties on Message, Question, and Condition nodes, such as the text to use when prompting the user, or generating appropriate output variables. However, Copilot doesn't understand all of the more advanced properties that can be configured in these nodes, such as the reprompt and interruption settings on a Question node. 
+    - You can still configure these properties manually by editing the generated topic in the authoring canvas, just as you would when [normally creating topics](preview/authoring-create-edit-topics.md).
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+- Condition nodes that are created by Copilot, to branch a topic following a multiple choice question, will show errors in the generated conditions. 
+    - You'll need to resolve these errors manually in the [authoring canvas](preview/authoring-create-edit-topics.md).
 
+## AI response generation training, model, and usage notes
+
+This FAQ answers common questions about the AI that is used when creating new topics, or modifying existing topics, in Power Virtual Agents.
+
+
+### Does the capability produce perfect topics?   
+
+Topics generated by the **Copilot** capability are not always perfect, and may not accurately reflect the logic you wanted to implement. 
+
+The system is designed to generate a single bot topic from a human-written description. We have implemented mitigations to filter out irrelevant and offensive language from appearing in the configured topic, and the system is designed not to respond when offensive language is detected. 
+
+We also monitor output and the feedback that bot users provide to continually improve our content filters.
+
+These filters and mitigations are not foolproof.
+
+You should always test and review your bots before publishing them.
+
+### How was the capability evaluated? What metrics are used to measure performance?   
+
+The capability was evaluated on a collection of manually curated prompt-and-topic datasets, covering common, edge-case, and offensive content, as well as synthetic generation.
+
+During evaluation, topics generated from the capability were manually reviewed and scored for relevance to the input prompt, usefulness, and offensiveness. 
+
+## Fairness and broader impact
+
+### Will the capability work as well using languages other than English?
+
+The system only supports English. Inaccurate responses may be returned when users converse with the system in languages other than English.
+
+## Privacy
+
+### What data does the capability collect? How is the data used?
+The capability collects user prompts, the returned configured Topics, and any feedback you provide. 
+
+We use this data to evaluate and improve the quality of the capability. More information on what data is collected is available in the [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520). 
+
+[!INCLUDE[footer-include](includes/footer-banner.md)] 
