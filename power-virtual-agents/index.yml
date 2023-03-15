@@ -28,7 +28,7 @@ highlightedContent:
       url: ./fundamentals-what-is-power-virtual-agents.md
 
     # Card
-    - title: Use GPT to build bots faster
+    - title: Build bots fast with generative AI
       itemType: whats-new
       url: ./nlu-gpt-overview.md
 
