@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI admin command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI admin command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 12/14/2022
+author: snizar007
+ms.author: snizar
+ms.date: 3/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -59,7 +59,7 @@ AAD object id of group to assign to target Dataverse environment.
 
 #### `--group-name` `-gn`
 
-Name of group/team that will created in Dataverse.
+Name of group/team that will be created in Dataverse.
 
 #### `--membership-type` `-mt`
 
@@ -128,10 +128,7 @@ This parameter requires no value. It is a switch.
 
 #### `--async` `-a`
 
-Optional boolean argument to run pac verbs asynchronously, defaults to false.
-
-This parameter requires no value. It is a switch.
-
+**Deprecated**: This parameter will be ignored.
 #### `--business-unit` `-bu`
 
 ID of business unit to associate application user with.
