@@ -57,10 +57,6 @@
         "capaedac-pva",
         "powervirtualagents-docs"
       ],
-      "search.audienceType": [
-        "maker"
-      ],
-      "search.appverid": "met150",
       "recommendations": true
     },
     "fileMetadata": {
