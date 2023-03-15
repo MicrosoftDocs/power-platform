@@ -3,10 +3,10 @@ title: "Configuring and using the ALM accelerator for Power Apps portal and Powe
 description: "Committing Power Apps Portal/Power Pages website can be achieved by including the website during solution commit. This document describes how to commit Power Apps Portal/Power Pages website and deploy to test environments."
 author: rajeevpentyala
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 03/15/2023
 ms.subservice: guidance
 ms.author: rajeevpe
-ms.reviewer: kvivek
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app: 
@@ -48,13 +48,13 @@ When working with multiple different environments, you may consider using deploy
 
 There are two ways you can provide deployment profile(s) in ALM Accelerator.
 
-### Upload deployment profile(s) from the 'Deployment Settings' of 'ALM Accelerator'
+### Upload deployment profiles from the Deployment Settings of ALM Accelerator
 
-From the 'ALM Accelerator' application, open the 'Deployment Settings' of a solution and upload the deployment profile file for each environment.
+From the ALM Accelerator application, open the **Deployment Settings** of a solution and upload the deployment profile file for each environment.
 
 ![Upload the deployment profile.](media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png)
 
-### Add deployment profile(s) manually to the solution branch
+### Add deployment profiles manually to the solution branch
 
 Follow these steps to use deployment profile along with Power Pages website in the ALM Accelerator:
 
