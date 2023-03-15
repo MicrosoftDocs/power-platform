@@ -52,7 +52,7 @@ There are two ways you can provide deployment profile(s) in ALM Accelerator.
 
 From the ALM Accelerator application, open the **Deployment Settings** of a solution and upload the deployment profile file for each environment.
 
-![Upload the deployment profile.](media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png)
+:::image type="content" source="media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png" alt-text="Upload the deployment profile.":::
 
 ### Add deployment profiles manually to the solution branch
 
