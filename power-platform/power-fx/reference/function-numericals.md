@@ -31,7 +31,7 @@ The **Exp** function returns _e_ raised to the power of its argument. The transc
 
 The **Ln** function returns the natural logarithm (base _e_) of its argument.
 
-The **Power** function returns a number raised to a power. It is equivalent to using the [**^** operator](operators.md).
+The **Power** function returns a number raised to a power. It's equivalent to using the [**^** operator](operators.md).
 
 The **Log** function returns the logarithm of its first argument in the base specified by its second argument (or 10 if not specified).
 
@@ -39,7 +39,7 @@ The **Sqrt** function returns the number that, when multiplied by itself, equals
 
 If you pass a single number, the return value is a single result based on the function called. If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains numbers, the return value is a single-column table of results in a **Value** column, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
 
-If an argument would result in an undefined valued, the result is _blank_. This can happen, for example, with square roots and logarithms of negative numbers.
+If an argument would result in an undefined valued, the result is _blank_. Which can happen with square roots and logarithms of negative numbers.
 
 ## Syntax
 
