@@ -5,7 +5,7 @@ author: jenschristianschroder
 manager: tapanm-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/13/2022
+ms.date: 03/15/2023
 ms.subservice: guidance
 ms.author: jeschro
 ms.reviewer: sericks
@@ -69,7 +69,6 @@ For the ALM Accelerator for Power Platform canvas app to work, the following con
 - ALM Accelerator Custom DevOps (this connector will be created as part of the [accelerator solution import](#importing-the-solution-and-configuring-the-app))
 - [Office 365 Users](/connectors/office365users/)
 - HTTP
-
 
 ### Creator Kit
 
@@ -135,7 +134,7 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
      > You'll use this value later and call it out as the **Application (client) ID**, which is different from the **DevOps Application (client) ID** you copied earlier in step 7.
 13. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
 
-14. Set the **Redirect URI** to *https://global.consent.azure-apim.net/redirect*.
+14. Set the **Redirect URI** to `https://global.consent.azure-apim.net/redirect`.
 
     > [!NOTE]
     > You might need to update this later when configuring your custom connector after you've installed the app, if this URL is different from the **Redirect URI** populated in the custom connector.
@@ -145,7 +144,7 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 
 In order for the pipelines to perform certain actions against the environments (for example, Sharing Apps and setting component ownership) in your Power Platform tenant you will need to grant Power App Management permissions to your App registration. To do so you will need to run the following PowerShell cmdlet as an interactive user that has Power Apps administrative privileges. You will need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp). Learn more: [**New-PowerAppManagementApp** cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Currently this cmdlet gives elevated permissions (for example, Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed certain capabilities won't work in the AA4PP pipelines.
 ```powershell
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
@@ -199,6 +198,8 @@ The ALM accelerator uses several Azure DevOps extensions, including some third-p
 
    | Name | Value |
    |--|--|
+   | **Authentication Type** | **OAuth 2.0** |
+   | **Identity provider** | **Azure Active Directory** |
    | **Client ID** | The **Application (client) ID** you copied when [creating the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
    | **Client secret** | The **Application (client) Secret** you copied when [creating the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
    | **Tenant ID** | Leave as the default, **common** |
@@ -206,7 +207,7 @@ The ALM accelerator uses several Azure DevOps extensions, including some third-p
 
 1. Select **Update connector**.
 
-1. Verify that the **Redirect URL** is populated on the **Security** page with the URL <https://global.consent.azure-apim.net/redirect>. If the redirect URL is other than <https://global.consent.azure-apim.net/redirect>, copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-azure-ad-environment) and update the redirect URI you set earlier to the updated URL.
+1. Verify that the **Redirect URL** is populated on the **Security** page with the URL `https://global.consent.azure-apim.net/redirect`. If the redirect URL is other than `https://global.consent.azure-apim.net/redirect`, copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-azure-ad-environment) and update the redirect URI you set earlier to the updated URL.
 
 1. After you've completed the preceding steps, verify the connector from the **Test** menu:
 
