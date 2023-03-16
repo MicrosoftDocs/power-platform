@@ -95,7 +95,7 @@ Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondat
 
 There will be a phased-in approach before deprecation takes place. Here's the timeline:
 
-- **August 30, 2022:** The actions and triggers in Dataverse legacy connector will be avaiable into the Microsoft Dataverse connector.
+- **August 30, 2022:** The actions and triggers in Dataverse legacy connector will be avaible in the Dataverse connector.
     - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility for a period of time with additional timelines available in August 2023.
     - All new logic apps will be created using the new actions.
     - **August 2022 through preview period: ** Both new and legacy actions and triggers will be available during new flow creation. By August 2023, a date for the move to GA will be provided. 
