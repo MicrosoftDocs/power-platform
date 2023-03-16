@@ -1,5 +1,5 @@
 ---
-title: Create (and edit) with Copilot (Preview)
+title: Create (and edit) with Copilot (preview)
 description: Use AI powered by GPT to create and edit bot topics, and get your chatbot ready for your users in minutes.
 keywords: "PVA"
 ms.date: 3/16/2023
@@ -15,7 +15,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Create (and edit) with Copilot (Preview)
+# Create (and edit) with Copilot (preview)
 
 [!INCLUDE [AI tech disclosure](includes/disclosure-ai-preview.md)]
 
