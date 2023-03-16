@@ -3,7 +3,6 @@ title: Set up pipelines in Power Platform
 description: Learn how to create, configure, share, and manage Power Platform pipelines.
 author: caburk
 ms.author: matp
-ms.service: powerapps
 ms.topic: how-to
 ms.date: 02/28/2023
 ms.custom: template-how-to
@@ -48,7 +47,7 @@ Before you begin, you’ll need to choose which environments will participate in
    >
    > Deleting the host environment deletes all pipelines and run data. Use caution and understand the impact of data and configuration loss as well as maker access to pipelines hosted in the environment.
    >
-- **Development (required)**. This is where you’ll develop solutions. 
+- **Development (required)**. This is where you’ll develop solutions.
 - **QA environment (optional)**. This is where you’ll deploy solutions for testing prior to moving them to production.
 - **Production (required)**. The final destination for a deployment pipeline. This is where end users will run the apps that are deployed.
 
@@ -97,7 +96,7 @@ Once installed, the deployment pipelines configuration application will appear i
    - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
    - **Target Deployment Environment**: This is the target environment where this stage will deploy to.
 1. Repeat the previous two steps for each stage you'd like to add to the pipeline. Note that you must have at least one stage. You can add up to seven stages.
-   
+
    :::image type="content" source="media/Pipeline fully configured.png" alt-text="A fully configured pipeline.":::
 
 ## Grant access to edit or run pipelines
