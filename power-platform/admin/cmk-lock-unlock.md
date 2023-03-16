@@ -4,7 +4,6 @@ description: Learn how to lock and unlock self-managed key environments
 author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
-ms.service: powerapps
 ms.topic: how-to 
 ms.date: 02/17/2023
 ms.custom: template-how-to
