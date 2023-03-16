@@ -35,6 +35,10 @@ By leveraging recent advancements in AI large language models, Power Virtual Age
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
+- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported during the preview.
+
+- This capability may be subject to usage limits or capacity throttling.
+
 ## Generate a bot's responses on-the-fly
 
 Power Virtual Agents uses an underlying natural language understanding model for understanding a bot user's question and determining the right topic. Typically, [you create multiple topics](preview/authoring-create-edit-topics.md) within a bot to account for what a user might ask. But, sometimes, a bot user might ask a question for which there is no built topic. 
