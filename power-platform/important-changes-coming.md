@@ -328,12 +328,9 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 
 ## Dynamics 365 Connector is deprecated
 
-> [!NOTE] There has been an update to the deprecation timelines for the Dynamics 365 Connector. The shutdown of the connector is being delayed with the next timeline
-> announcement to occur in summer 2023. At that time the shutdown schedule will be announced and will be 1 year from the date of announcement.
-
 Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for data integrations, flows, Azure Logic Apps, and canvas apps is officially deprecated. We recommend that you don't create new connections using this connector. 
 
-In summer of 2023, an announcement will be made indicating the timeline for final shutdown of the connector. This is to provide full feature parity in the replacement connector. At the point of announcement there will be a 1 year period for users to move to the new connector.
+In August 2023, we'll announce the timeline for final shutdown of the connector. This is to provide full feature parity in the replacement connector. Users will have one year from the date of announcement to move to the new connector.
 
 ### Impact
 As of October 31 2022, this connector is shut down for Power Automate flows and canvas apps using the Power Apps player in Windows. All flows and canvas apps must be migrated to the Microsoft Dataverse or Dataverse Legacy connector per recommended actions below.
@@ -342,7 +339,7 @@ As of October 31 2022, this connector is in the process of shutting down for Log
 
 No new connections can be created for data integrations using the Dynamics 365 connector. For these components, shut down is in progress. We recommend use of the Dynamics 365 connector be replaced with an option below as soon as possible.
 
-This connector is shut down for new Power Automate flows, all newly created flows must use the Microsoft Dataverse Legacy connector (also referred to as the CDS 2.0 connector) or the Preview Microsoft Dataverse connector (GA date will be provided in Summer 2023). 
+This connector is shut down for new Power Automate flows; all newly created flows must use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (also referred to as the CDS 2.0 connector) or the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector (GA date will be provided in August 2023). 
 
 Canvas apps can no longer use the Power Apps player in Windows. All Canvas apps must migrate to the new player.
 
