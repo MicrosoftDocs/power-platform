@@ -83,7 +83,7 @@ Customers should use the [Microsoft Dataverse](/connectors/commondataservicefora
 - Connector actions connecting to environments other than the current environment.
 - **When a row is selected** trigger.
 
-If you use one of the above features not available in the Dataverse connector, you won't be able to migrate until this functionality is available with an announcement due by August 2023. Otherwise, you can start migrating your flows to use the Dataverse connector in October 2022. In some cases, users will be able to use a migration tool to migrate from the Dataverse (legacy) connector to the Dataverse connector. On the detail page of each flow, you'll see the message *Migrate this flow to the latest Microsoft Dataverse connector". You'll be able to open the migration assistant from there.
+If you use one of the above features not available in the Dataverse connector, you won't be able to migrate until this functionality is available with an announcement due by August 2023. Otherwise, you can start migrating your flows to use the Dataverse connector in October 2022. In some cases, users will be able to use a migration tool to migrate from the Dataverse (legacy) connector to the Dataverse connector. On the detail page of each flow, you'll see the following message: *Migrate this flow to the latest Microsoft Dataverse connector*. You'll be able to open the migration assistant from there.
 
 If your flow was created prior to June 2020, you won't be able to use the migration tool. To check this, you can confirm whether the Dataverse connector is searchable when editing the flow. If this is the case, or if the migration fails, you'll need to manually recreate your flow using the Dataverse connector.
 
@@ -98,7 +98,7 @@ There will be a phased-in approach before deprecation takes place. Here's the ti
 - **August 30, 2022:** The actions and triggers in Dataverse legacy connector will be avaible in the Dataverse connector.
     - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility for a period of time with additional timelines available in August 2023.
     - All new logic apps will be created using the new actions.
-    - **August 2022 through preview period: ** Both new and legacy actions and triggers will be available during new flow creation. By August 2023, a date for the move to GA will be provided. 
+- **August 2022 through preview period:** Both new and legacy actions and triggers will be available during new flow creation. By August 2023, a date for the move to GA will be provided. 
 - **Date TBD:** No new logic apps can be created using the legacy actions and triggers, but existing logic apps with those actions and triggers will continue to work. Updates will be provided in August 2023.
 
 In August 2023, we'll provide a timeline when all existing logic apps using the deprecated legacy actions and triggers will stop working. Users will need to review their existing logic apps to update them to the new Azure Logic Apps triggers by the specified timeline (typically one year from the announcement date).
