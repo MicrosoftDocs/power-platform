@@ -4,7 +4,6 @@ description: Learn how to manage your encryption key.
 author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
-ms.service: powerapps
 ms.topic: how-to
 ms.date: 02/17/2023
 ms.custom: template-how-to
@@ -19,8 +18,9 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 
 > [!IMPORTANT]
 > This is a preview feature.
-> 
+>
 > These encryption key operations are available with this release of customer-managed key (CMK):
+>
 > - Create a RSA (RSA-HSM) key from your Azure Key vault.
 > - Create a Power Platform enterprise policy for your key.
 > - Grant the Power Platform enterprise policy permission to access your key vault.
@@ -151,7 +151,7 @@ In Azure, perform the following steps:
    > [!IMPORTANT]
    >
    > - To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings. More information: [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview) More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
-   > - During preview, your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet. 
+   > - During preview, your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet.
 
 #### Create a key in the key vault
 
@@ -164,7 +164,7 @@ In Azure, perform the following steps:
    1. If you made changes, select **Save**.
 
    :::image type="content" source="media/cmk-key-vault-purge-protect.png" alt-text="Enable purge protection on the key vault":::
-1. Create or import a key that has these properties: 
+1. Create or import a key that has these properties:
    1. On the **Key Vault** properties pages, select **Keys**.
    1. Select **Generate/Import**.
    1. On the **Create a key** screen set the following values, and then select **Create**.
@@ -280,7 +280,7 @@ Once the enterprise policy is created, the key vault administrator grants the en
 1. Select the **Access policies** tab, and then select **+ Add Access Policy**.
 1. Next to **Select principal**, select **None selected**.
 1. In the right **Principal** pane, enter the enterprise policy name, and then **Select** it.
-1. In the **Add access policy** screen, select the **Key permissions** dropdown list. Then, select these options: 
+1. In the **Add access policy** screen, select the **Key permissions** dropdown list. Then, select these options:
    - **Get**
    - **Unwrap key**
    - **Wrap key**
@@ -332,6 +332,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Select **Save**, and then select **Confirm**.
 
 > [!IMPORTANT]
+>
 > - The environment is disabled temporarily during this process and re-enabled to allow users to access while the encryption process continues. It can take up to a day to complete the encryption process.
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
 

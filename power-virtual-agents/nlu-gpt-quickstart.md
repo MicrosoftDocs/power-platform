@@ -1,13 +1,13 @@
 ---
-title: Quickstart guide for boosting bot conversations (preview)
+title: Quickstart guide for building bots with GPT (preview)
 description: Build bots quickly and provide the most relevant information to your customers with natural language understanding advancements in Power Virtual Agents preview.
 keywords: "PVA, GPT, NLU"
-ms.date: 3/6/2023
+ms.date: 3/16/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: 
-manager: shellyha
+manager: leeclontz
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ms.search.region: USA
@@ -15,16 +15,23 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Boost conversations quickstart guide (preview)
+# Quickstart guide for building bots with GPT (preview)
 
 [!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
 
 Microsoft has made bot building even simpler with AI-powered capabilities in Power Virtual Agents (preview). Whether you're new to conversational AI or a seasoned developer, our intelligence platform is with you and your team every step of the way. 
 
-This quickstart guide will introduce you to the core steps in creating and boosting a chatbot with expanded natural language understanding (NLU) capabilities.
+This quickstart guide introduces you to the minimal steps necessary to get started quickly in creating and boosting a chatbot with expanded natural language understanding (NLU) capabilities. Using the intelligent authoring of AI-powered bots, you can now create a new topic or edit an existing one by describing what you want to happen or have your bot generate conversational responses even if there isn't a matching topic.
 
 ## Prerequisites 
+
+> [!CAUTION] 
+>  
+> Your bot must be created in the US region. 
+>  
+> Other regions, and languages other than English, aren't supported during the preview.
+
 
 - You'll need an account for Power Virtual Agents. 
 
@@ -39,7 +46,9 @@ This quickstart guide will introduce you to the core steps in creating and boost
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
-- Review the [AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
+- Review the [AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
+
+- This capability may be subject to usage limits or capacity throttling.
  
 > [!IMPORTANT] 
 > During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need to [contact Microsoft Support before you can publish your bot](nlu-boost-conversations.md#publishing). 
@@ -56,7 +65,9 @@ The bot then follows the _conversation flow_ that you've defined in the **Store 
 
 However, you may not be able to anticipate all the types of questions your customers ask. To help mitigate this, Power Virtual Agents (preview) incorporates a powerful new AI-powered capability that uses the latest advancements in NLU models. When you have **Boost conversations** enabled in your bot, and linked to a publicly available, Bing-indexed website, your bot can provide automatically generated, conversationally friendly, plain language responses without depending upon the bot builder to create topics for every eventuality. 
 
-Ready to get started? The first step is to create your bot.  
+Also, with Power Virtual Agents new Copilot feature, your chatbot uses AI, powered by the Azure OpenAI GPT model (which is also used in Bing), to create bot topics based upon a simple description of what you want to achieve. You can also modify and update any topic in your bot in the same manner, by describing the changes you want to make.
+
+Ready to get started? The first step is to create your bot.
 
 ## Create a boosted bot 
 
@@ -81,34 +92,73 @@ For any user-sent message that can't be matched to an existing topic, your bot l
 
 See the [Boost conversations (preview)](nlu-boost-conversations.md) topic for more details on the capability, including instructions for enabling boosted conversations in preview bots you've already created.
 
-Before you begin testing your bot, you might like to add an initial welcome-style bot topic. This will help you understand how bot topics work and start you on your journey to creating fully functional bots.
+## Create a new topic using Copilot (preview)
 
-## Add a welcome topic
+1. With your bot open, select **Topics**. On the **Topics** page, select **+ New topic** and then **Create with Copilot (preview)**.
 
-Bot topics usually begin with *trigger phrases*. Trigger phrases are phrases, keywords, and questions that a user is likely to type that relate to a specific issue. This is what the bot uses to match a user's intent with the appropriate topic. See [Create and edit topics (preview)](preview/authoring-create-edit-topics.md) for more details on how trigger phrases work.
+    :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
 
-After the trigger phrase, you add *conversation nodes* to define how the bot should respond to a trigger phrase and what it should do. 
+    > [!NOTE]
+    >  
+    > If you don't see the **Copilot** option, you may need to enable **Intelligent authoring support**:
+    >1. Select the **Settings** icon on the top menu and then **General settings**.
+    >:::image type="content" source="media/nlu-gpt/describe-it-enable.png" alt-text="Screenshot of the Power Virtual Agents menu with the Settings icon open.":::  
+    >  
+    >2. Set the switch under **Intelligent authoring support (preview)** to **On**.
 
-1. On the side navigation menu, select **Topics**, **+ New topic**, and then **From blank**. 
- 
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-create-topic.png" alt-text="Screenshot of the Create a new topic from blank option.":::
+2. In the **Create it with Copilot (preview)** window that appears, enter a name for your topic in the **Name your topic** field. 
 
-2.  To add a new **Message** node, select the **+ sign** on the trigger phrases node, and then select **Add node**.
+3. In the **Create a topic to...** field, describe the topic you want to create in simple, plain English. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.
 
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-add-node.png" alt-text="Screenshot of the Add node button.":::
+    :::image type="content" source="media/nlu-gpt/describe-it-create-topic.png" alt-text="Screenshot of the Describe it to build it pop-up window.":::
    
-3. Select **Send a message**.
+    You can select any of the examples to automatically insert them into the **Create a topic to...** field. Select **View more examples** to generate new suggestions. 
+      
+4. Select **Create**.
 
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-message-send.png" alt-text="Screenshot of the Send a message option.":::
+Once your topic is created, your bot is ready for testing. It's that simple! 
 
-4. Type a message. In this example, type *How can I help you today?* in the node's text field. 
 
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-message-node.png" alt-text="Screenshot of the Message node.":::
+## Edit your new topic with Copilot
 
-5. Repeat the above steps to add as many message variations as you like.  
- 
-6. When you’re finished, select **Save**.  
-   When you add message variations, the bot randomly picks one of them to use each time the node is triggered. 
+With the new **Edit with Copilot (preview)** pane, you can make changes to your topic using the power of NLU. For example, if you want to make updates to your bot, such as moving and updating the nodes, all you need to do is describe what you want with Copilot.
+
+Think of this new capability as a powerful wizard-like feature that walks you through the editing a topic process to fine-tune your bot's topics without having to work directly in the authoring canvas. You can also make additions and changes to existing nodes, and tell Copilot what you want it to do.
+
+1. Select the topic you want to modify, and then **Edit with Copilot** on the menu bar just above the topic's conversation path.
+
+    > [!TIP]
+    >
+    >If you have selected any nodes on the canvas, they will be used to scope your request.  
+    >For example, if you have a **Question** node selected, you could write _add a speech response_, instead of _add a speech response to the question node_.
+    > You can see the nodes you've selected next to the **Update** button.
+
+    :::image type="content" source="media/nlu-gpt/describe-it-toolbar.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it button highlighted.":::
+   
+2. In the **What do you want to do** field, describe what you want to change or add in the topic. 
+
+    :::image type="content" source="media/nlu-gpt/describe-it-modify.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it side panel open.":::
+
+    Use simple, plain English to direct the AI with what you want it to do, as in the these examples:
+
+    - _add a question to ask the user for their date of birth_
+    - _add 2 message variations to all questions in the topic_
+    - _summarize the information collected from the user in an Adaptive Card_
+
+3. Click **Update**. The AI will make updates based on your directions.
+   
+4. Once the update has been applied, you can review the changes and continue to edit your topic, either in the [usual ways of editing topics](authoring-create-edit-topics.md) or by describing more things you want to change. 
+    
+    If you don't like the changes, select the **Undo** button. You can then change your directions and try again.
+
+    You can always see the last thing you asked Copilot to do under the **What you asked for** label.
+
+> [!TIP]
+>  
+> You can provide feedback on how well the AI did by selecting the "thumbs up" or "thumbs down" icon at the bottom of the **Edit with Copilot** panel.  
+> If you select the thumbs down icon, you can also include more verbose feedback. We'll use this feedback to improve the quality of the AI.
+>  
+> :::image type="content" source="media/nlu-gpt/describe-it-feedback.png" alt-text="Screenshot of the Power Virtual Agents Describe it feedback panel.":::
 
 Next, it's time to test your bot! 
 
@@ -126,7 +176,7 @@ The **Test bot** pane shows how a bot conversation plays out at every step and y
  
    The bot retrieves information from the website and returns a response. The response provides a link to where it found that information and allows you to provide feedback.
  
-4. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue?*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
+3. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue?*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
 
     :::image type="content" source="media/nlu-gpt/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
  
@@ -136,6 +186,8 @@ The **Test bot** pane shows how a bot conversation plays out at every step and y
 > :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-reset.png" alt-text="Screenshot of Test bot pane reset button that looks like a an arrow in a circle shap.":::
 
 You can return to the authoring canvas at any time to revise the conversation path. The **Test bot** pane automatically refreshes when you select **Save**. 
+
+
 
 ## Add features to further develop your bot 
 

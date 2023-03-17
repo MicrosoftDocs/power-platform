@@ -163,7 +163,7 @@
                   href: coe/setup-almacceleratorpowerplatform-users.md
                 - name: Configuring deployment user settings and profiles
                   href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
-                - name: Use with Power Apps portals and Power Pages
+                - name: Use with Power Pages
                   href: coe/almaccelerator-powerpages.md
                 - name: Use with code first components
                   href: coe/almaccelerator-codefirst.md
