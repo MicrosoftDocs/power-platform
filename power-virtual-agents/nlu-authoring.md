@@ -30,18 +30,24 @@ The capability uses AI to understand what you want to do, and then automatically
 See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for more examples and descriptions of how this capability works, and how to use it with the [Boost conversations (preview)](nlu-boost-conversations.md) capability.
 
 ## Prerequisites
-> [!NOTE]
-> If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
+
+> [!CAUTION] 
+>  
+> Your bot must be created in the US region. 
+>  
+> Other regions, and languages other than English, aren't supported during the preview.
 
 - You'll need an account for Power Virtual Agents. 
+
+    > [!NOTE]
+    >  
+    > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
 
 - You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
-- Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
-
-- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported during the preview.
+- Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
 
 - This capability may be subject to usage limits or capacity throttling.
 
