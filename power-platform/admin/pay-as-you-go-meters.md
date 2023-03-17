@@ -99,7 +99,7 @@ A flow can either run in the cloud, on a desktop with a user in attended mode, o
 - Premium flows that run with hosted machine group cost $3.00 per run (preview)
 
 > [!NOTE]
-> Premium flows that run with hosted machine group is currently available in preview will be reported under the 'Unattended RPA Flow Run' meter subcategory and that the pricing is subject to change.
+> Premium flows that run with the hosted machine group are currently available in preview and will be reported under the 'Unattended RPA Flow Run' meter subcategory. It is important to note that the pricing for this feature is subject to change when it becomes Generally Available (GA).
 
 To make it easy to test and fix your flows, no charges will be incurred if you're testing your flow in the designer or resubmitting failed runs. Additionally, if you use the "Child flow" feature for cloud flows or attended flows, there will only be a single charge for the parent flow run, no charges will be incurred for child flow runs. For unattended flows, both parent and child flow runs will be charged. 
 
