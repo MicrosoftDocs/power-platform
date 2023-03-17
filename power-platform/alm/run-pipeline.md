@@ -3,9 +3,8 @@ title: Run pipelines in Power Platform
 description: Learn how to deploy solutions using pipelines.
 author: caburk
 ms.author: matp
-ms.service: powerapps
 ms.topic: how-to
-ms.date: 11/04/2022
+ms.date: 03/07/2023
 ms.custom: template-how-to
 ---
 # Run pipelines in Power Platform
@@ -29,7 +28,7 @@ For more information about these prerequisites, go to [Set up pipelines](set-up-
 1. From the **Solutions** area, choose between two options to include the solution in the pipeline:
    - Select **Pipelines** from the left navigation pane.
    - Select **Overview** from the left navigation pane, and then select **Deploy** on the command bar.
-1. Select the stage to deploy to, such as *Deploy to Test*, and then select **Next**. This will initiate validation of the solution against the test environment. This validation can also be referred to as “pre-flight” checks. Missing dependencies and other common issues are checked that might cause a deployment to fail.
+1. Select the stage to deploy to, such as *Deploy to Test*, select **Deploy here**, and then select  **Next** on the right pane. This initiates validation of the solution against the test environment. This validation can also be referred to as “pre-flight” checks. Missing dependencies and other common issues are checked that might cause a deployment to fail.
 1. If connection references or environment variables are present, you’ll be prompted to provide these (just as you would when manually importing solutions).
 1. Select **Deploy**. This initiates an automated deployment to the target environment.
 

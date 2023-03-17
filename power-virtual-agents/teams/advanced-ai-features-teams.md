@@ -1,7 +1,7 @@
 ---
 title: "Advanced AI features in Microsoft Teams (contains video)"
 description: "There are a number of advanced features for managing and utilizing AI within the Power Virtual Agents app in Microsoft Teams."
-keywords: "PVA, teams, AI, nlu"
+keywords: "PVA, Teams, AI, nlu"
 ms.date: 01/25/2022
 
 ms.topic: article

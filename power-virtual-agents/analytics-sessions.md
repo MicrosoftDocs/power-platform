@@ -82,35 +82,35 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
 ### View conversation transcripts
 
-1. In the side pane, expand the **Data** node. Select **Entities**. On the top right, expand **Default** and select **All**.
+1. In the side pane select the **Tables** node. At the top, select **All**.
 
-    :::image type="content" source="media/analytics-sessions/powerapps-data-entities-view.png" alt-text="Screenshot of the Power Apps window with Data and Entities selected.":::
+    :::image type="content" source="media/analytics-sessions/view-scripts1.png" alt-text="Screenshot showing All selected on the Tables node.":::
 
-1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Entities**.
+1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Tables**.
 
-    :::image type="content" source="media/analytics-sessions/export-view-transcript.png" alt-text="Screenshot showing Conversation Transcript selected.":::
+    :::image type="content" source="media/analytics-sessions/view-scripts2.png" alt-text="Screenshot showing Conversation Transcript selected.":::
 
-1. Select **Data** tab. Expand **Active conversationtranscripts** and then select **All fields**.
+1. A page for the **ConversationTranscript** table will open and show a list of data available to view.
 
-    :::image type="content" source="media/analytics-sessions/export-view-all-fields.png" alt-text="Screenshot showing Active conversation transcripts expanded.":::
-
-1. View the bot's conversation transcripts.
-
-    :::image type="content" source="media/analytics-sessions/export-view-sessions.png" alt-text="Screenshot showing sample bot transcript entries.":::
+    :::image type="content" source="media/analytics-sessions/view-scripts3.png" alt-text="Screenshot showing Active conversation transcripts expanded.":::
 
 ### Export conversation transcripts
 
-1. In the side pane, expand the **Data** node. Select **Entities** and then **Export data**.
+1. In the side pane, select the **Tables** node. At the top, select **All**.
 
-    :::image type="content" source="media/analytics-sessions/export-3.png" alt-text="Click path to export data.":::
+    :::image type="content" source="media/analytics-sessions/export-scripts1.png" alt-text="Select All on the Tables node.":::
 
-1. On the Export data screen, select **ConversationTranscript** from the entity list. Select **Export data** at the top. Your data will take a couple of minutes to be compiled for export.
+1. Type **Conversation** in the **Search** textbox at the top right. Select **ConversationTranscript** under **Tables**.
 
-    :::image type="content" source="media/analytics-sessions/export-select-transcript.png" alt-text="Select entities for export.":::
+    :::image type="content" source="media/analytics-sessions/export-scripts2.png" alt-text="Select the transcript for export.":::
+
+1. Expand the **Export** menu item at the top of the screen and select **Export data**. It may take a few minutes for the data to be compiled for export.
+
+    :::image type="content" source="media/analytics-sessions/export-scripts3.png" alt-text="Selecting Export data from the Export menu.":::
 
 1. Select **Download exported data** to download the content.
 
-    :::image type="content" source="media/analytics-sessions/powerapps-download-1.png" alt-text="Download exported data.":::
+    :::image type="content" source="media/analytics-sessions/export-scripts4.png" alt-text="Download exported data.":::
 
 ## Change the default period of session transcript retention
 
