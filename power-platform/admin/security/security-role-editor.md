@@ -18,15 +18,15 @@ ms.contributors:
 
 # Security role editor (preview)
 
-The current security role management experience in the Power Platform Admin Center leverages the legacy web client user interface. The PPAC Authorization and User Management team is modernizing the user interface and bringing many new features to this experience.
+The current security role management experience in the Power Platform admin center leverages a legacy user interface. The interface has been updated, as explained in this article.
 
-# Enabling the new security role editor
+## Enabling the new security role editor
 
 The new security role editor private preview will need to be enabled on your environment. You will first need to provide to the team a **tenant Id** where you would like the feature to be enabled.
 
 Once our team has enabled the feature at the tenant level, you will need to use a specific feature flag to activate the new experience. Instructions will be provided once tenant is signed up for the new Security Role editor experience.
 
-# Accessing the security role editor
+## Accessing the security role editor
 
 Once the security role editor private preview has been enabled on your environment, follow these steps to access the editor:
 
@@ -46,7 +46,7 @@ You should see a list of the existing security roles in your environment.
 
 ![List of security roles for a specific environment in the Power Platform admin center ](media/image1.png)
 
-# Security roles
+## Security roles
 
 Microsoft Dataverse comes with a set of predefined security roles and additional roles are available if the Dynamics 365 apps have been enabled.
 
@@ -66,7 +66,7 @@ The following actions are available when a security role is selected or by choos
 | Delete     | Allows you to delete the selected custom security role.                |
 | Members    | Allows you to view and edit the members of the selected security role. |
 
-# Creating a new security role
+## Creating a new security role
 
 To create a new security role, select **New role** from the main menu.
 
@@ -74,15 +74,15 @@ You will need to give the role a name and select the corresponding business unit
 
 Select **Save** to save the role, and it will open the security role editor.
 
-# Editing an existing security role
+## Editing an existing security role
 
 To edit an existing security role, either select the role name, or select the row and choose **Edit.**
 
-# Copy a security role
+## Copy a security role
 
 Select the security role and choose copy. You will need to give the role a new name. Note that only the privileges will be copied, the assigned members and teams will not be assigned to the copied role.
 
-# Security role editor
+## Security role editor
 
 The security role editor allows you to define the privileges and properties of a specific security role.
 
@@ -106,11 +106,11 @@ Each set of privilege types are separated by a tab, and for each tab you can fil
 
 ![The security role editor page displaying the drop down to display specific table views  show all tables  show only assigned tables and show only unassigned tables ](media/image2.png)
 
-# Search by table name or table privilege name
+## Search by table name or table privilege name
 
 You can locate a specific table or privilege by entering the name in the search box and selecting the magnifying glass icon or by pressing **Enter**. This will display a filtered list based on your search criteria. Select the **X** icon to clear your search.
 
-# Table groupings
+## Table groupings
 
 Tables are by default grouped into the following categories:
 
@@ -132,7 +132,7 @@ Tables are by default grouped into the following categories:
 
 -   ServiceTab
 
-# Configuring permissions
+## Configuring permissions
 
 In the security role editor, the tables are organized by groupings that align to their module or application.
 
@@ -180,7 +180,7 @@ For each table, select the appropriate type for each privilege. Select **Save** 
 
 ![Selecting the permission level for each privilege type of a table ](media/image3.png)
 
-# Copy table permissions
+## Copy table permissions
 
 Updating settings for each table can be very time-consuming and tedious. To expedite the process, you can select a table and choose **Copy table permissions**, then search and choose the tables to which you want to replicate the permissions. Note that this will overwrite existing configuration. Select **Save** to update the permissions.
 
@@ -200,7 +200,7 @@ Note : The behavior of the copy table permission will be as follows:
 
     2.  Similarly, if the permissions DOES NOT exist in the source and EXISTS in the target, then the current depth of that permission will be retained in the target and the copy for the remaining permissions will be successful.
 
-# Permission Settings
+## Permission Settings
 
 Another option to expedite configuration of table permissions is to use predefined groups of permissions and assign them to tables.
 
