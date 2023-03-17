@@ -58,11 +58,11 @@ Within 24 hours after the licenses and capacity are applied to your tenant, the 
 Power Platform provides a cleanup mechanism that automatically removes environments from your tenant that are left inactive. An environment will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments. This cleanup process is automatic.
 
 ### Types of environments affected
-Developer and Dataverse for Teams environment are affected by the inactvity based cleanup.
+Developer and Dataverse for Teams environments are affected by the inactvity-based cleanup.
 
 ### Timeline for inactive environments
 
-The following table describes the schedule of notifications and actions for environments that are considered inactive.
+The following table describes the schedule of notifications and action taken for environments that are considered inactive.
 
 | State of environment | Power Platform action |
 | --- | --- |
@@ -80,7 +80,7 @@ The following table describes the schedule of notifications and actions for envi
 :::image type="content" source="media/inactive-environment-state-box.png" alt-text="Screenshot of the inactive environment alert on the Environment page, with the Trigger environment activity checkbox highlighted.":::
 
 > [!NOTE]
-> The **Environment inactive** warning tile only displays if the environment is <= 7 days until disablement.
+> The **Environment inactive** warning tile only displays if the environment is 7 days or less until disablement.
 
 <sup>3</sup>**Disabled environment alert on the Environment page in Power Platform admin center**
 :::image type="content" source="media/disabled-environment-state-box.png" alt-text="Screenshot of the disabled environment alert on the Environment page, with the Re-enable environment checkbox highlighted.":::
@@ -95,7 +95,7 @@ The following users will receive email notifications on the schedule described i
 - The environment's system administrators
 - The user who created the environment 
 
-Additionally, users and makers are notified on the Environment's list page and Environment page when the environment is disabled.
+Additionally, users and makers are notified on the **Environments** list page and **Environment** page when the environment is disabled.
 
 ### Definition of user activity
 
@@ -107,7 +107,7 @@ Here are some examples of the types of activities that are included in the measu
 
 - **User activity**: Launch an app, execute a flow (whether automatic or not), chat with a Power Virtual Agents bot
 - **Maker activity**: Create, read, update, or delete an app, flow (desktop and cloud flows), Power Virtual Agents bot, custom connector
-- **Admin activity**: Environment operations such as copy, delete, back up, recover, reset  
+- **Admin activity**: Environment operations such as copy, delete, back up, recover, and reset  
 
 Activity includes automated behaviors such as scheduled flow runs. For example, if there's no user, maker, or admin activity in an environment, but it contains a cloud flow that runs daily, then the environment is considered active.
 
