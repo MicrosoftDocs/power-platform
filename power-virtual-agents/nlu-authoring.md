@@ -49,8 +49,6 @@ See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for
 
 - Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
 
-- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported during the preview.
-
 - This capability may be subject to usage limits or capacity throttling.
 
 ## Use Copilot to create a topic
