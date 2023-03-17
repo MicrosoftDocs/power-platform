@@ -48,7 +48,14 @@ Select one of the following settings:
 | Warn |  All custom solutions are automatically verified during solution import. When a solution with highly-critical issues is being imported, you'll be warned about the action but the import itself will proceed, and if everything else with the import is fine, the solution will be imported into the environment. After a successful import, a message stating that the imported solution had validation issues is shown. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation. |
 | Block | All custom solutions are automatically verified during solution import. When a solution has highly-critical issues, the import process will be canceled, and a message stating that the imported solution had validation issues is shown. This happens before the actual import, so there won't be any changes to the environment due to the import failure. Additionally, Power Platform environment admins will receive a summary email with details of the solution validation.|
 
-When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step, the verification of solutions will fail and in the **Block** mode, solution imports will be blocked. Solution checker must be run within a 90 day window of the import.
+When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step, the verification of solutions will fail and in the **Block** mode, solution imports will be blocked.
+
+### Considerations
+- Solution checker must be run with the Solution Checker ruleset. The easiest ways to do this are:
+  - Simply running Checker through the [Maker Portal](/power-apps/maker/data-platform/use-powerapps-checker) where the Solution Checker ruleset is used
+  - Using [pac solution check](../developer/cli/reference/solution#pac-solution-check) where the Solution checker ruleset is used by default
+- Solution checker must be run within a 90 day window of the import.
+- When invoking Solution checker, do not pass any file exclusions or rule overrides. These may be supported for solution checker enforcement in the future.
 
 ## Email messages to the admin
 
