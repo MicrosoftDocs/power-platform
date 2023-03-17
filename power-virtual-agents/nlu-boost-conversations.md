@@ -60,7 +60,7 @@ Your workflow might be like this:
 
 - You must enable the **Boost conversations** option for each bot.
 
-- Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
+- Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
 
 - This capability may be subject to usage limits or capacity throttling.
 
