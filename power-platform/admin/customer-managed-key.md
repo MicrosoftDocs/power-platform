@@ -32,7 +32,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > - Lock CMK environments by revoking CMK key vault and/or key permissions.
 > - Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
 >
-> This feature will be available in all regions March 2023.
+> This feature will be available in all public cloud regions March 2023.
 >
 > There's no additional Power Platform licensing requirement during this preview.
 
