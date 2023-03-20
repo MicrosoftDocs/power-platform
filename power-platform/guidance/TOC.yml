@@ -286,10 +286,10 @@
 
         - name: FAQ and Tips
           items:
-            name: Questions, Tips and How To's
-            href: coe/faq.md
-            name: Questions related to the Data Export integration
-            href: coe/faq-dataexport.md
+            - name: Questions, Tips and How To's
+              href: coe/faq.md
+            - name: Questions related to the Data Export integration
+              href: coe/faq-dataexport.md
         - name: Limitations
           href: coe/limitations.md
         - name: Release notes
