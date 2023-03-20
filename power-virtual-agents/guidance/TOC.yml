@@ -35,4 +35,4 @@
     - name: How to's
       items:
       - name: Embed a chatbot on a webpage
-        href: ../power-pages/guidance/integrate-pva.md
+        href: /power-pages/guidance/integrate-pva.md
