@@ -90,15 +90,16 @@ Admins can enable one of these four configurations for this setting:
 - Power Apps
 
 #### Impact on Power App experiences
-1. The following image illustrates the end user experience when a user, who doesn't meet an environment’s IP address restrictions, attempts to launch an app. 
+Note the following impact on users:
 
-    ![image](https://user-images.githubusercontent.com/11514622/222267525-56442161-58f7-4939-9602-6aa29cc866e3.png)
+- **When a user, who doesn't meet an environment’s IP address restrictions, opens an app**: The following message is dispalyed: "This app stopped working. Try refreshing your browser." This experience will be updated to provide more contextual information to the user as to why the app couldn’t be launched.
 
-2. This experience will be updated to provide more contextual information to the user as to why the app couldn’t be launched.
-3. The end user experience when launching an app while meeting the IP address requirements will:
-a. observe a banner with a message: “Your organization configured IP Address restrictions limiting where Power Apps is accessible. This app may not be accessible when you use another network. Contact your admin for more details.” This banner appears for a matter of seconds after the app opens and then disappears. 
-b. Potentially observe slower app loading than if IP address restrictions weren’t in place. The extra enforcement for resource access requirements eliminates the ability for the platform to use some performance capabilities (that enable faster load times).
-4. If an end user launches an app while meeting the IP Address requirements and moves to a new network which no longer meets the IP Address requirements, the user may observe app contents such as images, embedded media and links may not load or be accessible. 
+- **When a user, who does meet the IP address restrictions, opens an app**: The following will occur:
+
+  1. A banner with the following message is displayed: “Your organization configured IP address restrictions limiting where Power Apps is accessible. This app may not be accessible when you use another network. Contact your admin for more details.” This banner appears for a few seconds and then disappears. 
+  2. The app may load slower than if IP address restrictions weren’t in place. The IP address restrictions prevents the platform from using some performance capabilities that enable faster load times.
+
+  If a user opens an app, while meeting the IP address requirements and then moves to a new network which no longer meets the IP address requirements, the user may observe app contents such as images, embedded media, and links may not load or be accessible. 
 
 ### Related articles
 
