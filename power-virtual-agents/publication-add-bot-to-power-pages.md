@@ -23,11 +23,12 @@ ms.collection: virtual-agent
 - [Create a Power Page](/powerapps/maker/portals/create-portal).
 - [Create a Power Virtual Agents bot](authoring-first-bot.md).
 
-## Add a bot to your Power Apps portal
+## Add a bot to your Power Pages
 
-Power Pages [design studio](/power-pages/getting-started/use-design-studio) is a no-code experience used to create and customize Power Pages. It contains various options to add and configure webpages, components, forms, and lists. You can *not* use Power Pages design studio to add a chatbot component to a web page using the components panel. You can use the alternate method provided [here](/power-pages/guidance/integrate-pva) to embed a Power Virtual Agent chatbot on a Power Pages website.
+Power Pages [design studio](/power-pages/getting-started/use-design-studio) is a no-code experience used to create and customize Power Pages. It contains various options to add and configure webpages, components, forms, and lists.
 
-<!-- FIXME: as of 9/22 there doesn't seem to be an equivalent article in the power pages docset https://learn.microsoft.com/en-us/power-pages/ -->
+To learn about how to add a chatbot to a web page in a Power Pages website, see [How to: Embed a chatbot on a webpage](/power-pages/guidance/integrate-pva).
+
 To learn how to add a chatbot with design studio, see [Add chatbot to a page](/powerapps/maker/portals/add-chatbot).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
