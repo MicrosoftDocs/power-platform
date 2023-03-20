@@ -2,7 +2,6 @@
 title: "Pipeline table reference | Microsoft Learn"
 description: "Includes schema information for tables used in the pipeline solution."
 ms.date: 03/01/2023
-ms.service: powerapps
 ms.topic: reference
 author: JimDaly
 ms.author: jdaly

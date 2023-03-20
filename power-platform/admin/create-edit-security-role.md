@@ -1,14 +1,14 @@
 ---
-title: "Create or edit a security role  | MicrosoftDocs"
-description: Create or edit a security role
+title: Create or edit a security role to manage access 
+description: You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/13/2023
+ms.date: 03/08/2023
 search.audienceType: 
   - admin
 search.app:
@@ -112,22 +112,16 @@ For information on predefined security roles, see [Predefined security roles](da
 6. When you have finished configuring the security role, on the toolbar, select or tap **Save and Close**.  
   
 ## Minimum privileges for common tasks  
- It's helpful to keep in mind the minimum privileges that are needed for some common tasks. This means that a user is required to have a security role with these privileges in order to run applications. 
+
+It's helpful to keep in mind the minimum privileges that are needed for some common tasks, including opening model-driven apps. This means that a user is required to have a security role with these privileges to run applications.
  
- We've created a solution you can import that provides a security role with the required minimum privileges.
-
-Start by downloading the solution from the Microsoft Download Center: [Microsoft Dataverse minimum privilege security role](https://go.microsoft.com/fwlink/?linkid=2221577).
-
-Then, follow the directions to import the solution: [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
-
-When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
-
-> [!IMPORTANT]
-> You should try out the solution in a development environment before importing into a production environment. 
+Don't use the downloadable solution for the **min prv apps use** role, available in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2221577), which will be retired soon. Instead, you must use the new predefined security role called **App Opener**.
+ 
+Copy the **App Opener** security role to create a custom security role by following the [Create a security role by Copy Role](#create-a-security-role-by-copy-role) instructions. When you have finished creating a custom security role, select it and navigate to each tab, such as **Core Records**, **Business Management**, and **Customization** to set the appropriate privileges. 
   
-- When logging in to customer engagement apps:  
+- When logging in to model-driven apps or any of the customer engagement apps:  
   
-  -   Assign the min prv apps use security role or a copy of this security role to your user.
+  -   Assign the **App Opener** security role or the custom security role you created (by copying the **App Opener** security role) to your user.
   
   -   To render an table grid (that is, to view lists of records and other data), assign the following privileges on the Core Records tab: Read privilege on the table, Read Saved View, Create/Read/Write User Entity UI Settings
       and assign the following privilege on the Business Management tab: Read User.   
