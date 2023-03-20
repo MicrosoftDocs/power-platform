@@ -576,6 +576,35 @@ steps:
 | `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to delete the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to delete the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 
+### Power Platform Assign User
+
+Assign a user to a target environment with specified security role.
+
+#### YAML snippet (AssignUser-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.assign-user.PowerPlatformAssignUser@2
+  displayName: 'Power Platform Assign User '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: Build
+    User: EnvironmentUsername
+    Role: 'Environment Maker'
+    ApplicationUser: true
+```
+
+#### Parameters (AssignUser-env)
+
+| Parameters       | Description         |
+|------------------|---------------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to delete the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to delete the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `User`<br/>Power Platform Username | Azure AD Object ID or user's principal name to assign to the target environment. |
+| `Role`<br/>Security role name or ID | Security role name or id to assign to the user. |
+| `ApplicationUser`<br/>Power Platform Username | Specifies whether the input user is an application user (true\|false). |
+
 ### Power Platform Reset Environment
 
 Resets an environment.
@@ -701,6 +730,61 @@ steps:
 | `TargetEnvironmentUrl`<br/>Target environment URL | (Required) The URL for the target environment that you want to restore. |
 | `FriendlyName`<br/>Name of the restored environment | (Optional) Name of the restored environment. |
 | `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
+
+## Power Pages management tasks
+
+Tasks for working with Power Pages website.
+
+### Power Platform Download PAPortal
+
+Download Power Pages website content from the current Dataverse environment.
+
+#### YAML snippet (download-paportal)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.download-paportal.PowerPlatformDownloadPaportal@2
+  displayName: 'Power Platform Download PAPortal '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: Build
+    DownloadPath: 'C:\portals'
+    WebsiteId: 'f88b70cc-580b-4f1a-87c3-41debefeb902'
+    Overwrite: true
+```
+
+#### Parameters (download-paportal)
+
+| Parameters   | Description   |
+|--------------|---------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to back up the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `WebsiteId`<br/>Portal website ID | Power Pages website ID to download. |
+| `Overwrite`<br/>Content overwrite | Power Pages website content to overwrite (true\|false). |
+
+### Power Platform Upload PAPortal
+
+Upload Power Pages website content to current Dataverse environment.
+
+#### YAML snippet (upload-paportal)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.upload-paportal.PowerPlatformUploadPaportal@2
+  displayName: 'Power Platform Upload PAPortal '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: Build
+    UploadPath: 'C:\portals\starter-portal'
+```
+
+#### Parameters (upload-paportal)
+
+| Parameters   | Description   |
+|--------------|---------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to back up the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `UploadPath`<br/>Upload content path | Path from where the Power Pages website content will be uploaded. |
 
 ## Build and release pipelines
 
