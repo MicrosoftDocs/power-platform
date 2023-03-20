@@ -730,6 +730,58 @@ steps:
 | `FriendlyName`<br/>Name of the restored environment | (Optional) Name of the restored environment. |
 | `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
 
+### Export Dataverse Data
+
+Power Platform export data from the an environment with provided schema.
+
+#### YAML snippet (exportdata-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.export-data.PowerPlatformExportData@2
+  displayName: 'Power Platform Export Data '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: Build
+    SchemaFile: 'C:\tempschema.xml'
+    DataFile: exportdata.zip
+    Overwrite: true
+```
+
+#### Parameters (exportdata-env)
+
+| Parameters   | Description   |
+|--------------|---------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to back up the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `SchemaFile`<br/>Schema XML file name | Schema XML file name. It can be created using Configuration Migration Tool. |
+| `DataFile`<br/>Data file name | File name for data to export (zip file). |
+| `Overwrite`<br/>Content overwrite | Power Pages website content to overwrite (true\|false). |
+
+### Import Dataverse Data
+
+Power Platform import data to an environment.
+
+#### YAML snippet (importdata-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-data.PowerPlatformImportData@2
+  displayName: 'Power Platform Import Data '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: Build
+    DataFile: 'C:\Data\Import.zip'
+```
+
+#### Parameters (importdata-env)
+
+| Parameters   | Description   |
+|--------------|---------------|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to back up the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `DataFile`<br/>Data file name | File name for data zip file, or folder with data-schema.xml and data.xml, to be imported. |
+
 ## Power Pages management tasks
 
 Tasks for working with Power Pages website.
@@ -784,6 +836,7 @@ steps:
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to back up the environment (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `UploadPath`<br/>Upload content path | Path from where the Power Pages website content will be uploaded. |
+
 
 ## Build and release pipelines
 
