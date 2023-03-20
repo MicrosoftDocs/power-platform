@@ -602,6 +602,7 @@ EXEC SP_EXECUTESQL @sql;
   
 > [!NOTE]
 > North America customers should add IP addresses to an approved list for both East US and West US.
+> In order to prevent any disruptions to data synchronization, Customers should keep new IP address and old IP address
 
 ## Known issues  
   
