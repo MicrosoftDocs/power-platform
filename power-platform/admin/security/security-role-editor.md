@@ -24,65 +24,32 @@ The security role management experience in the Power Platform admin center has b
 
 [!include [preview](../../includes/cc-preview-features-definition.md)]
 
-## Enabling the new security role editor
-
-The new security role editor preview will need to be enabled on your environment. You will first need to provide to the team a **tenant Id** where you would like the feature to be enabled.
-
-Once our team has enabled the feature at the tenant level, you will need to use a specific feature flag to activate the new experience. Instructions will be provided once tenant is signed up for the new Security Role editor experience.
-
-## Accessing the security role editor
+## Access the security role editor
 
 Once the security role editor private preview has been enabled on your environment, follow these steps to access the editor:
 
-1.  Go to the Power Platform Admin center (<https://aka.ms/ppac>)
-
-2.  Choose **Environments**
-
-3.  Select the environment.
-
-4.  Go to **Settings**.
-
-5.  Expand **Users + Permissions**
-
+1.  Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2.  Select **Environments** in the navigation pane.
+3.  Select the check mark next to the environment you want to use.
+4.  Select **Settings**.
+5.  Expand **Users + Permissions**.
 6.  Select **Security roles**.
 
 You should see a list of the existing security roles in your environment.
 
-![List of security roles for a specific environment in the Power Platform admin center ](media/image1.png)
+### Create a new security role
 
-## Security roles
+1. Select **New role** from the command bar. The **Create New Role** pane appears.
+2. I the Role Name field, enter a name for the new role.
+3. In the Business unit field, select the corresponding business unit the role will belong to.
+4. Indicate if team members should inherit the role. If enabled and the role is assigned to a team, all team members will inherit all the privileges associated with this role.
+5. Select **Save** to save the role, and it will open the security role editor.
 
-Microsoft Dataverse comes with a set of predefined security roles and additional roles are available if the Dynamics 365 apps have been enabled.
-
-The following actions are available from the main menu when no security role is selected
-
-| **Action**   | **Description**                                               |
-|--------------|---------------------------------------------------------------|
-| New role     | Allows you to create a new security role.                     |
-| Go to legacy | Will open the legacy web client interface for security roles. |
-
-The following actions are available when a security role is selected or by choosing the ellipses (…) from the selected security role.
-
-| **Action** | **Description**                                                        |
-|------------|------------------------------------------------------------------------|
-| Copy       | Will allow you to copy the selected security role.                     |
-| Edit       | Allows you to edit the properties of the selected security role.       |
-| Delete     | Allows you to delete the selected custom security role.                |
-| Members    | Allows you to view and edit the members of the selected security role. |
-
-## Creating a new security role
-
-To create a new security role, select **New role** from the main menu.
-
-You will need to give the role a name and select the corresponding business unit the role will belong to.
-
-Select **Save** to save the role, and it will open the security role editor.
-
-## Editing an existing security role
+### Editing an existing security role
 
 To edit an existing security role, either select the role name, or select the row and choose **Edit.**
 
-## Copy a security role
+### Copy a security role
 
 Select the security role and choose copy. You will need to give the role a new name. Note that only the privileges will be copied, the assigned members and teams will not be assigned to the copied role.
 
