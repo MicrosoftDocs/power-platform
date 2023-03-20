@@ -383,6 +383,9 @@ Using these steps, you set up an Azure AD app registration that is used in a clo
 
 ## Set up Audit Logs solution
 
+>[!NOTE]
+> Only set up the Audit Log solution if you've chosen [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
+
 The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The CoE Starter Kit works without this flow; however, usage information (app launches, unique users) in the Power BI dashboard will be blank. More information: [Set up the audit log connector](setup-auditlog.md)
 
 ## Set up the Power BI dashboard
