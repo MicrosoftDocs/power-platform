@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 03/15/2023
+ms.date: 03/20/2023
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -72,11 +72,13 @@ Power Platform has an extensive set of [Data Loss Prevention (DLP) features](../
 
 ### SAS IP Binding
 
-This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting will restrict who, based on IP, can use enterprise SAS tokens. These settings can be found in a Dataverse environment’s **Privacy + Security** settings in the admin center. 
+This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting will restrict who, based on IP, can use enterprise SAS tokens. 
+
+These settings can be found in a Dataverse environment’s **Privacy + Security** settings in the admin center. You must turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
 
 Admins can enable one of these four configurations for this setting:
 
-| **#** | Setting                 | Description                                                                                                                    |
+| #     | Setting                 | Description                                                                                                                    |
 |-------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | 1     | IP Binding              | This will restrict SAS keys to the requester’s IP.                                                                             |
 | 2     | IP Firewall             | This will restrict using SAS keys to only work within an admin specified range.                                                |
