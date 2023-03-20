@@ -26,6 +26,13 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 
 ## Prerequisites 
 
+> [!CAUTION] 
+>  
+> Your bot must be created in the US region. 
+>  
+> Other regions, and languages other than English, aren't supported during the preview.
+
+
 - You'll need an account for Power Virtual Agents. 
 
     > [!NOTE]

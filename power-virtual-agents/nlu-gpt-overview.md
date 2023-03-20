@@ -25,6 +25,12 @@ By leveraging recent advancements in AI large language models, Power Virtual Age
 - **Author topics by describing what you want.** Describe what you want your topic to do, and Power Virtual Agents creates it for you, complete with conversational responses and multiple types of nodes. Use the suggested topic as is, or as a starting point for further iteration. 
 
 ## Prerequisites
+
+> [!CAUTION] 
+> Your bot must be created in the US region. 
+>  
+> Other regions, and languages other than English, aren't supported during the preview.
+
 - You'll need an account for Power Virtual Agents. 
 
     > [!NOTE]
@@ -34,7 +40,7 @@ By leveraging recent advancements in AI large language models, Power Virtual Age
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
-- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported during the preview.
+
 
 - This capability may be subject to usage limits or capacity throttling.
 
