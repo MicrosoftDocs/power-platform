@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 02/17/2023
+ms.date: 03/20/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key (preview)
@@ -32,13 +32,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > - Lock CMK environments by revoking CMK key vault and/or key permissions.
 > - Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
 >
-> This feature is made available following this schedule:
->
-> |Est. public preview availability  |Regions  |
-> |---------|---------|
-> | March 2023        | Canada, France, Germany, India, Norway, South Africa, South America, South Korea, Switzerland, Australia        |
-> |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
-> | July 2023     |  North America       |
+> This feature will be available in all regions March 2023.
 >
 > There's no additional Power Platform licensing requirement during this preview.
 
