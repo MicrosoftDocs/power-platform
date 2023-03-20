@@ -2,7 +2,7 @@
 title: Use solution checker in Managed Environments (preview)
 description: Learn about using solution checker to automatically run security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 03/01/2023
+ms.date: 03/20/2023
 author: sidhartg
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -51,11 +51,11 @@ Select one of the following settings:
 When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step, the verification of solutions will fail and in the **Block** mode, solution imports will be blocked.
 
 ### Considerations
-- Solution checker must be run with the Solution Checker ruleset. The easiest ways to do this are:
-  - Simply running Checker through the [Maker Portal](/power-apps/maker/data-platform/use-powerapps-checker) where the Solution Checker ruleset is used
-  - Using [pac solution check](../developer/cli/reference/solution#pac-solution-check) where the Solution checker ruleset is used by default
+- Solution checker must be run with the solution checker ruleset. The easiest ways to do this are:
+  - Run solution checker in the [maker portal](/power-apps/maker/data-platform/use-powerapps-checker) where the solution checker ruleset is used.
+  - Use [pac solution check](../developer/cli/reference/solution#pac-solution-check) where the solution checker ruleset is used by default.
 - Solution checker must be run within a 90 day window of the import.
-- When invoking Solution checker, do not pass any file exclusions or rule overrides. These may be supported for solution checker enforcement in the future.
+- When invoking solution checker, do not pass any file exclusions or rule overrides. These may be supported for solution checker enforcement in the future.
 
 ## Email messages to the admin
 
