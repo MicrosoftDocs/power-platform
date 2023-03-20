@@ -1,12 +1,12 @@
 ---
 title: Security role editor (preview)
-description: Description goes here.
-ms.date: 03/17/2023
+description: The security role management experience in the Power Platform admin center has been updated so that you no longer need to use the legacy user interface. 
+ms.date: 03/20/2023
 ms.service: power-platform
 ms.topic: overview
-author: lancedMicrosoft
+author: sericks007
 ms.subservice: admin
-ms.author: lanced
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -18,11 +18,11 @@ ms.contributors:
 
 # Security role editor (preview)
 
-The current security role management experience in the Power Platform admin center leverages a legacy user interface. The interface has been updated, as explained in this article.
+The security role management experience in the Power Platform admin center has been updated so that you no longer need to use the legacy user interface. 
 
 ## Enabling the new security role editor
 
-The new security role editor private preview will need to be enabled on your environment. You will first need to provide to the team a **tenant Id** where you would like the feature to be enabled.
+The new security role editor preview will need to be enabled on your environment. You will first need to provide to the team a **tenant Id** where you would like the feature to be enabled.
 
 Once our team has enabled the feature at the tenant level, you will need to use a specific feature flag to activate the new experience. Instructions will be provided once tenant is signed up for the new Security Role editor experience.
 
