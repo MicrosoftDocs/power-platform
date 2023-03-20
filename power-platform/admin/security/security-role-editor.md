@@ -20,13 +20,9 @@ ms.contributors:
 
 [This article is pre-release documentation and is subject to change.]
 
-The security role management experience in the Power Platform admin center has been updated so that you no longer need to use the legacy user interface. 
+The security role management experience in the Power Platform admin center has been updated. Use the security role editor to manage seruity roles for your organization. You no longer need to use the legacy user interface. 
 
-[!include [preview](../../includes/cc-preview-features-definition.md)]
-
-## Access the security role editor
-
-Once the security role editor private preview has been enabled on your environment, follow these steps to access the editor:
+To access the security role editor:
 
 1.  Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2.  Select **Environments** in the navigation pane.
@@ -37,7 +33,9 @@ Once the security role editor private preview has been enabled on your environme
 
 You should see a list of the existing security roles in your environment.
 
-### Create a new security role
+[!include [preview](../../includes/cc-preview-features-definition.md)]
+
+## Create a new security role
 
 1. Select **New role** from the command bar. The **Create New Role** pane appears.
 2. I the Role Name field, enter a name for the new role.
@@ -45,11 +43,11 @@ You should see a list of the existing security roles in your environment.
 4. Indicate if team members should inherit the role. If enabled and the role is assigned to a team, all team members will inherit all the privileges associated with this role.
 5. Select **Save** to save the role, and it will open the security role editor.
 
-### Editing an existing security role
+## Editing an existing security role
 
 To edit an existing security role, either select the role name, or select the row and choose **Edit.**
 
-### Copy a security role
+## Copy a security role
 
 Select the security role and choose copy. You will need to give the role a new name. Note that only the privileges will be copied, the assigned members and teams will not be assigned to the copied role.
 
