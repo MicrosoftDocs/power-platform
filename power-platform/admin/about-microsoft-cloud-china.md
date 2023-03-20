@@ -1,19 +1,12 @@
 ---
 title: "Power Platform and Dynamics 365 apps operated by 21Vianet in China  | MicrosoftDocs"
-description: Provides information about Power Platform and Dynamics 365 apps ((Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation) that are operated by 21Vianet in China
-author: jimholtz
+description: Provides information about Power Platform and Dynamics 365 apps ((Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) that are operated by 21Vianet in China
+author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/23/2022
+ms.date: 03/20/2023
 ms.subservice: admin
-ms.author: jimholtz
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.author: kvivek
 ---
 # Power Platform and Dynamics 365 apps - operated by 21Vianet in China
 
@@ -61,8 +54,7 @@ Due to certain technological dependencies, the following features listed will no
   - Geofencing
   - Resource Scheduling Optimization (RSO)
   - Connected Field Service (CFS) for Azure IoT Central
-  - Connected Field Service (CFS) for Azure IoT Hub
-  - Field Service Mobile App
+  - Connected Field Service (CFS) for Azure IoT Hub  
 - The following [Sales](/dynamics365/customer-engagement/sales-enterprise/help-hub) features will be unavailable: 
   - [LinkedIn’s Organization Chart feature](/dynamics365/sales-enterprise/live-org-chart#embedded--sales-navigator-control)
   - [Integrate LinkedIn Sales Navigator solutions](/dynamics365/linkedin/integrate-sales-navigator)

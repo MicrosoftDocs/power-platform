@@ -26,6 +26,13 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 
 ## Prerequisites 
 
+> [!CAUTION] 
+>  
+> Your bot must be created in the US region. 
+>  
+> Other regions, and languages other than English, aren't supported during the preview.
+
+
 - You'll need an account for Power Virtual Agents. 
 
     > [!NOTE]
@@ -39,9 +46,7 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
-- Review the [AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note)
-
-- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported during the preview.
+- Review the [AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
 
 - This capability may be subject to usage limits or capacity throttling.
  
