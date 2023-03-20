@@ -17,6 +17,12 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+contributors: 
+- alaug
+ms.contributors:
+- alaug
+- nyarbrough
+- jacobstokes
 ---
 # Data storage and governance in Power Platform
 
