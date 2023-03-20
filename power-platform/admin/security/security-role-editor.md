@@ -18,7 +18,11 @@ ms.contributors:
 
 # Security role editor (preview)
 
+[This article is pre-release documentation and is subject to change.]
+
 The security role management experience in the Power Platform admin center has been updated so that you no longer need to use the legacy user interface. 
+
+[!include [preview](../../includes/cc-preview-features-definition.md)]
 
 ## Enabling the new security role editor
 
