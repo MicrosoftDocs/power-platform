@@ -78,12 +78,12 @@ These settings can be found in a Dataverse environment’s **Privacy + Security*
 
 Admins can enable one of these four configurations for this setting:
 
-| #     | Setting                 | Description                                                                                                                    |
-|-------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| 1     | IP Binding              | This will restrict SAS keys to the requester’s IP.                                                                             |
-| 2     | IP Firewall             | This will restrict using SAS keys to only work within an admin specified range.                                                |
-| 3     | IP Binding and Firewall | This will restrict using SAS keys to work within an admin-specified range and only to the requestor's IP.                      |
-| 4     | IP Binding or Firewall  | Allows SAS keys to be used within the specified range. If the request comes from outside the range, IP Binding will be applied |
+| Setting                 | Description                                                                                                                    |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| IP Binding Only         | This will restrict SAS keys to the requester’s IP.                                                                             |
+| IP Firewall Only        | This will restrict using SAS keys to only work within an admin specified range.                                                |
+| IP Binding and Firewall | This will restrict using SAS keys to work within an admin-specified range and only to the requestor's IP.                      |
+| IP Binding or Firewall  | Allows SAS keys to be used within the specified range. If the request comes from outside the range, IP Binding will be applied |
 
 #### Products enforcing IP Binding when enabled:
 - Dataverse
