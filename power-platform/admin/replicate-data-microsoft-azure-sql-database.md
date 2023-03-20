@@ -3,7 +3,7 @@ title: "Replicate data to Azure SQL Database using Data Export Service | Microso
 description: Replicate data to Azure SQL Database using Data Export Service 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2022
+ms.date: 03/20/2023
 ms.subservice: admin
 ms.author: nhelgren
 author: NHelgren
@@ -649,7 +649,6 @@ Exporting attachments such as documentbody on *Annotation* table is not supporte
   
 ### See also  
  [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)<br />
- [AppSource: Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)   <br />
  [Data Export Service](/powerapps/developer/common-data-service/data-export-service) <br />
  [Team Blog: Introduction to Data Export Service](https://blogs.msdn.microsoft.com/crm/2017/04/11/introduction-to-dynamics-365-data-export-service/)
 
