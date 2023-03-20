@@ -704,6 +704,11 @@
       "source_path": "power-platform/guidance/coe/motivation.md",
       "redirect_url": "overview",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/publication-add-bot-to-power-apps-portal.md",
+      "redirect_url": "power-virtual-agents/publication-add-bot-to-power-pages.md",
+      "redirect_document_id": "false"
     }
   ]
 }
