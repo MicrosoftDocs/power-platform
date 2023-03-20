@@ -10,8 +10,8 @@ ms.custom: guidance
 ms.author: athinesh
 ms.collection: virtual-agent
 ---
-# Introduction 
-## Custom Analytics Strategy
+
+# Custom Analytics Strategy
 Power Virtual Agents provides comprehensive out-of-the-box analytics in the PVA portal that will allow customers to understand a bot’s usage. 
 Customers can view reports related to:
 - Performance and usage
@@ -31,7 +31,7 @@ Important! Before implementing this with a customer – it is critical that they
 
 Below we will walk through the components in the report and how they work together.
 
-# Dataverse
+## Dataverse
 The analytics shown in the PVA portal come from a data service residing within PVA itself. At the same time, usage data is also written to a customer’s Dataverse instance. Both sources have a data retention of 30 days (the customer can change this for Dataverse all-up – although there is a different approach – see below).
 The important tables used for custom analytics are as follows:
 - Bot – details of each bot in an environment. Generally a small amount of data.
@@ -39,7 +39,7 @@ The important tables used for custom analytics are as follows:
 - ConversationTranscript – the details of the activity for all the bots in your environment. Data size is related to amount of bot usage and can be quite large. 
 More detailed description of this table can be found here – work withconversation transcripts.
 
-# Azure Synapse Link (Azure Data Lake Storage V2) 
+## Azure Synapse Link (Azure Data Lake Storage V2) 
 For customers with larger PVA bots (roughly  10k sessions/month, greater than 80MB of transcript data), the recommended approach is to export bot data to Azure Data Lake Storage v2 using Azure Synapse Link. 
 This has additional benefits of creating an archive of bot data, allowing reports on data greater than 30 days. The export will create an incremental sync of configured tables in Azure using the Common Data Model format. 
 There is some work on top of the base template to do this: 
@@ -47,7 +47,7 @@ There is some work on top of the base template to do this:
 - Browse to the ConversationTranscript (only, the other tables do not support incremental)table in Dataverse and select “Azure Synapse Link” to set up incremental export.
 - Follow the guidance for setting up Power BI DataFlows to process the incoming data.
 
-# Power BI 
+## Power BI 
 The Custom Analytics solution includes a Power BI report that processes the raw transcript data (using PowerQuery) into to a report matching the PVA Portal analytics. 
 In addition, users have access to: 
 - Data for all bots in an environment

@@ -13,8 +13,7 @@ ms.collection: virtual-agent
 
 # Leveraging the Fallback topic
 
-> [!TIP]
-> The Fallback topic gets triggered when Power Virtual Agents doesn’t understand a user utterance and doesn’t have sufficient confidence to trigger any of the existing topics.
+The Fallback topic gets triggered when Power Virtual Agents doesn’t understand a user utterance and doesn’t have sufficient confidence to trigger any of the existing topics.
 There are multiple ways to leverage the Fallback topic and offer a great user experience.
 
 ## Offloading single question/answer pairs.

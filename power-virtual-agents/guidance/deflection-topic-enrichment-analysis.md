@@ -10,7 +10,7 @@ ms.custom: guidance
 ms.author: athinesh
 ms.collection: virtual-agent
 ---
-# Technique 2: topic enrichment analysis  
+# Topic enrichment analysis  
 PVA has a built-in fallback system topic that is set to fire when the AI is not able to find a matching intent/topic for a given user query. If most fallback topic conversations are escalated to a human agent – i.e. not deflected – there is an opportunity to improve the deflection by addressing the usage patterns of the user that triggers fallback consistently. Topic enrichment is an offline data analysis exercise, focusing on repurposing such user queries that triggered a fallback topic into triggering relevant topics in PVA. The analyzed user queries from the fallback topic typically fall into these buckets below:
    1.	User queries that are expected to trigger existing topics, but are somehow missed by the Natural Language Understanding (NLU) of the bot.
    2.	User queries that can be converted to newly suggested topics.

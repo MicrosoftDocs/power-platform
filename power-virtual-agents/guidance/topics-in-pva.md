@@ -13,8 +13,6 @@ ms.collection: virtual-agent
 
 # Topics in Power Virtual Agents
 
-## Topic definition
-
 [Topics](/power-virtual-agents/authoring-fundamentals) are the core building blocks of your bot. They can be seen as the bot competencies, and they define how a conversation dialog plays out, by being discrete conversation paths that, when used together within a single bot, allow for users to have a conversation with a bot that feels natural and flows appropriately. 
 
 To author topics, you can:

@@ -10,7 +10,7 @@ ms.custom: guidance
 ms.author: athinesh
 ms.collection: virtual-agent
 ---
-# Technique 1: topic escalation analysis
+# Topic escalation analysis
   
 Escalation is the conversation flow during which the bot couldn’t handle the conversation and escalated to a human agent. When a topic does not escalate to a human agent it is considered as deflection. The ideal goal is to increase the deflection rate of a bot by reducing the number of escalations. 
 PVA has multiple ways to handle escalation, the direct way of initiating an escalation to human agent is through the “Escalate” system topic. This system topic enables PVA to understand that the bot is no longer able to address the customer request and would need to escalate to a human agent. Through the “Escalate” topic, one can enable the bot to transfer the conversation to an agent service desk tool like Dynamics 365 Omnichannel for Customer Service for the live agent transfer or an asynchronous support experience like creating a ticket, scheduling a call back etc. A common way of triggering this escalation is through the “Transfer to agent” node in the PVA authoring canvas.
@@ -31,7 +31,7 @@ Power Virtual Agents has two types of escalations:
   
   
   
-# STEP 1: Monitor and review topics performance
+## STEP 1: Monitor and review topics performance
 Identifying and optimizing escalation rate drivers can be done through the built-in analytics provided in PVA or through custom analytics.
 
 Built-in analytics:
@@ -51,11 +51,11 @@ You can also build on your own custom analytics on top of the conversation trans
 <Insert Image>
  
  
-# STEP 2: Select the top Escalation topics 
+## STEP 2: Select the top Escalation topics 
 The general guidance is to target the top 5-10 topics under “Escalation rate drivers” to start with for the purpose of deflection rate optimization. On a ball park estimate, if you improve the rate of escalation by 10% for each of the top 5 topics, you can improve the overall deflection by 1% for the chatbot.
 ![top escalation topics](./media/introduction/df-top-escalation-topics.png)
  
-# STEP 3: Review conversations for selected topics
+## STEP 3: Review conversations for selected topics
 Analyzing the conversation transcripts for the top escalation topics can provide more insights into reasons for escalation. Conversation transcripts capture the turn by turn, as “user says” and “bot says”. It also captures the topic name that was triggered and the session outcome (e.g. Resolved, Escalated etc.). 
 Now, you can filter these sessions based on outcome for “Top escalated topics” and review a few sample conversations to see what caused the escalation. This will help you identify the pattern that is causing the escalation. This exercise can be repeated in periodic cadence to keep improving the deflection rate and reducing the escalation rates.
 Below is the step-by-step guidance you can use for dissecting the chat transcripts and coming up with the right recommendations for improving the topic performance,
@@ -91,5 +91,5 @@ Conversation transcript review summary:
    •	Path 2: Enhance the OrderInfo action to support providing multiple order shipping information
    •	Path 3: Enhance the OrderInfo action to validate the order ID format and provide error message for incorrect order IDs
 
-# STEP 4: Make targeted improvements in selected topics
+## STEP 4: Make targeted improvements in selected topics
 Based on the outcome of the review of conversation transcripts, you can now make targeted improvements in those selected topics. Some of the techniques you can apply for reducing topic level escalation rates include adding self-serve capabilities so the user does not have to rely on human agents for an action (e.g. checking shipping status), improve the triggering performance to make sure the right topics are presented to the user instead of having to escalate to a human agent (this includes adding missing trigger phrases and updating existing trigger phrases)
