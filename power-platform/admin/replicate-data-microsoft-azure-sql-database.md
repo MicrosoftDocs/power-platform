@@ -7,7 +7,7 @@ ms.date: 03/20/2023
 ms.subservice: admin
 ms.author: nhelgren
 author: NHelgren
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -601,8 +601,9 @@ EXEC SP_EXECUTESQL @sql;
 
   
 > [!NOTE]
-> North America customers should add IP addresses to an approved list for both East US and West US.
-> In order to prevent any disruptions to data synchronization, Customers should keep new IP address and old IP address
+> North American customers should add IP addresses to an approved list for both East US and West US.
+> 
+> To prevent any disruptions to data synchronization, customers should keep new IP address and old IP address.
 
 ## Known issues  
   
