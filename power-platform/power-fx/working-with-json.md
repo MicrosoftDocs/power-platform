@@ -5,7 +5,7 @@ author: jorisdg
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: jorisde
@@ -14,6 +14,8 @@ search.audienceType:
 search.app: 
   - PowerApps
 contributors:
+  - gregli-msft
+  - mduelae
   - jorisdg
 ---
 # Working with JSON (experimental)
@@ -48,6 +50,13 @@ Set( item, Text ( untyped.ItemName ) );
 Set( quantity, Value ( untyped.Quantity ) );
 Set( release, DateValue ( untyped.ReleaseDate ) );
 Set( preorder, Boolean ( untyped.AvailableForPreOrder ) );
+```
+
+In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
+
+```powerapps-dot
+untyped.'01'
+untyped.'my-field'
 ```
 
 Power Fx won't evaluate the existence of the field until the formula is run. This allows flexibility in the incoming **JSON**. For example, the previous **JSON** may sometimes contain an extra field called `Discount`. But in our previous example, this field isn't present. Writing a formula that uses the `Discount` field won't result in any errors, during the app making process or when users use the app. If the field is missing when the formula runs, the value will just result in a [Blank()](reference/function-isblank-isempty.md) value.
@@ -139,10 +148,10 @@ Set( jsonRecord, Index( orderLines, 2 ) ); // Get the second record in the table
 Set( line2Item, Text( jsonRecord.Value.Item ) ); // "Widget 2"
 ```
 
-To make the use of the order line records easier and more straightforward in other parts of your app, you can convert the whole **Untyped object** to an entirely typed record using the [ForAll()](reference/function-forall.md) function.
+To make the use of the order line records easier and more straightforward in other parts of your app, you can convert the whole **Untyped object** to an entirely typed record using the [ForAll()](reference/function-forall.md) function. Providing the **Untyped object** directly to **ForAll()** means you can access the object fields directly instead of using the single-column `Value` field.
 
 ```powerapps-dot
-Set( typedOrderLines, ForAll( Table( jsonOrder.OrderLines ), { Item : Text( Value.Item ), Quantity : Value( Value.Quantity ) } ) );
+Set( typedOrderLines, ForAll( jsonOrder.OrderLines, { Item : Text( ThisRecord.Item ), Quantity : Value( ThisRecord.Quantity ) } ) );
 ```
 
 The new `typedOrderLines` variable is now a fully typed **Power Fx** table with the following columns and values:

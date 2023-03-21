@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI canvas command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI canvas command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 8/11/2022
+author: snizar007
+ms.author: snizar
+ms.date: 3/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,14 +26,14 @@ Operating with Power Apps .msapp files
 
 |Command|Description|
 |---------|---------|
-|[pac canvas create](#pac-canvas-create)|Generate Power App from custom connector|
+|[pac canvas create](#pac-canvas-create)|Generate a canvas app from a custom connector|
 |[pac canvas pack](#pac-canvas-pack)|(Preview) Pack sources into an msapp file|
 |[pac canvas unpack](#pac-canvas-unpack)|(Preview) Extract an msapp file into sources|
 
 
 ## pac canvas create
 
-Generate Power App from custom connector
+Generate a canvas app from a custom connector
 
 [!INCLUDE [canvas-create-intro](includes/canvas-create-intro.md)]
 
@@ -57,7 +57,7 @@ The ID of the Connector from which the Power App will be generated
 
 #### `--environment`
 
-The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.
+The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [canvas-create-remarks](includes/canvas-create-remarks.md)]
 

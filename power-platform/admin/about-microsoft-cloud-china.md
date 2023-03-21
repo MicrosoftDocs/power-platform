@@ -1,19 +1,12 @@
 ---
 title: "Power Platform and Dynamics 365 apps operated by 21Vianet in China  | MicrosoftDocs"
-description: Provides information about Power Platform and Dynamics 365 apps ((Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation) that are operated by 21Vianet in China
-author: jimholtz
+description: Provides information about Power Platform and Dynamics 365 apps ((Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) that are operated by 21Vianet in China
+author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/23/2022
+ms.date: 03/20/2023
 ms.subservice: admin
-ms.author: jimholtz
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.author: kvivek
 ---
 # Power Platform and Dynamics 365 apps - operated by 21Vianet in China
 
@@ -46,9 +39,9 @@ Due to certain technological dependencies, the following features listed will no
 - [Portals](/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365) for the Dataverse services will be unavailable.
 - [Dynamics 365 for phones and tablets](/dynamics365/customer-engagement/mobile-app/overview) will be unavailable.
 - The following Microsoft AppSource hosted solutions for the Dataverse services will not be available:
-  - [Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)
+  - [Data Export Service](/power-platform/important-changes-coming#data-export-service-deprecation)
   - [Connector for LinkedIn Lead Gen Forms](https://appsource.microsoft.com/product/dynamics-365/mscrm.dd228afa-64e7-4c9f-92ad-77e7f1334547?tab=overview)
-  - [Gamification](https://appsource.microsoft.com/product/dynamics-365/mscrm.f6d23ec7-255c-4bd8-8c99-dc041d5cb8b3)
+  - [Gamification](/power-platform/important-changes-coming#dynamics-365---gamification-is-deprecated)
   - DXC Health360 Care Coordination
 - [Voice of the Customer](/dynamics365/customer-engagement/voice-of-customer/help-hub) solution used for sending surveys to customers and get their valuable feedback will not be available.
 - [Live Assist for Microsoft Dynamics 365](/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x) Powered by [CaféX](https://www.cafex.com/products/live-assist-365/) is an integrated omnichannel solution for Dataverse services that will not be available.
@@ -61,8 +54,7 @@ Due to certain technological dependencies, the following features listed will no
   - Geofencing
   - Resource Scheduling Optimization (RSO)
   - Connected Field Service (CFS) for Azure IoT Central
-  - Connected Field Service (CFS) for Azure IoT Hub
-  - Field Service Mobile App
+  - Connected Field Service (CFS) for Azure IoT Hub  
 - The following [Sales](/dynamics365/customer-engagement/sales-enterprise/help-hub) features will be unavailable: 
   - [LinkedIn’s Organization Chart feature](/dynamics365/sales-enterprise/live-org-chart#embedded--sales-navigator-control)
   - [Integrate LinkedIn Sales Navigator solutions](/dynamics365/linkedin/integrate-sales-navigator)

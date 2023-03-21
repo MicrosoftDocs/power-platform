@@ -1,13 +1,15 @@
 ---
 title: "Geo to geo migrations  | MicrosoftDocs"
-description: Geo to geo migrations
+description: Move your environment in a single tenant from one region to another with the Geo Migration feature.
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/18/2022
+ms.date: 2/28/2023
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: jimholtz
+contributors: 
+    - ProfessorKendrick
 search.audienceType: 
   - admin
 search.app:
@@ -31,6 +33,7 @@ The Geo Migration feature will allow customers to move their environments in a s
 > - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances).
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
 > - Dataverse organization linked to a finance and operations organization is not supported.
+> - There are important and critical preparation steps mentioned below that need to be performed for Power Apps/Power Automate, etc. prior to the geo migration. If these steps are missed, it is difficult to recover Power Apps/Power Automate solutions.
 
 ### Supported environment types
 
@@ -57,7 +60,7 @@ The other significant change is to your organization URL. Each of the regional d
 - United Kingdom (UK) = *.crm11.dynamics.com  
 - United Arab Emirates (UAE) = *.crm15.dynamics.com 
 
-For example, if your existing organization URL is https://myorg.crm<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be https://myorg.crm<strong>6</strong>.dynamics.com.  
+For example, if your existing organization URL is `https://myorg.crm`<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be `https://myorg.crm`<strong>6</strong>.dynamics.com.  
 
 You'll need to update any direct references to your organization URL.  
 
@@ -75,6 +78,65 @@ The following topics have information that could be helpful to understand the mo
 - [About Microsoft Cloud Japan](about-microsoft-cloud-japan.md)  
 - [About Microsoft Cloud India](about-microsoft-cloud-india.md)  
 
+### Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps portals, and marketing before and after the migration: 
+
+#### For Power Apps and Power Automate: 
+
+-	Any Power Apps and Power Automate flows must be manually exported prior to the date and time arranged for performing the Geo-to-Geo migration.
+-	We do not support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration. 
+
+##### For apps which are solution aware
+
+Before the migration: 
+1. For apps that are solution aware, you can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all apps/solutions either individually or group them together into a single solution (if they're not already).
+
+After the migration: 
+1. Select the new environment from https://make.powerapps.com/ and navigate to the **Solutions** page.
+2. Select **Import**,                and use the file selector to pick the packages exported from the above steps.
+3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
+
+##### For apps which are not solution aware
+
+Before the migration: 
+1. Go to https://make.powerapps.com, and then select **Apps**.
+2. For each app that you want to move, select **More Commands** (…), and then select **Export package (preview)**. 
+3. Fill in the details required to perform the export of the app, and then select **Export**. Once the export completes, a download should begin. The resulting file contains the app package that was selected. 
+4. Repeat these steps until all apps have been exported. 
+
+After the migration: 
+1. Go to https://make.powerapps.com.
+2. Select the new environment from the environment picker in the upper-right.
+3. Select **Apps**.
+4. Select **Import canvas app**.
+5. Upload the app package file.
+6. Complete all of the import option selections, and then select **Import**.
+7. Repeat these steps until all apps have been imported. 
+
+#### For Power Virtual Agents: 
+
+-	Any Power Virtual Agents chatbots must be manually exported. 
+-	Some chatbots' dependent components must be manually reconfigured during or after the migration - for example, connections, environment variables, custom connectors. 
+
+Before the migration: 
+1. Chatbots are solution aware. You can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all chatbots'solutions - either individually or group them together in a single solution. For more information, see [Export and import bots using solutions](/power-virtual-agents/authoring-export-import-bots).
+
+After the migration: 
+1. Select the new environment from https://make.powerapps.com/, and navigate to the **Solutions** page.
+2. Select **Import**, and use the file selector to pick the packages exported from the above steps.
+3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
+
+#### For Power Apps portals (must be done for each portal in the environment(s)): 
+              
+Before the migration: 
+1. Sign in to the environment.
+2. Open the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
+3. [Reset](/powerapps/maker/portals/admin/reset-portal) the portal.
+
+After the migration: 
+1. Sign in to the environment.
+2. Open the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
+3. Provision the portal with the same portal type and language.
+
 ## How the move works  
 You'll be provided with a list of prerequisites and post-requisites for your migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move. 
 
@@ -85,7 +147,5 @@ You'll be provided with a list of prerequisites and post-requisites for your mig
 We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
 
 ### See also  
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

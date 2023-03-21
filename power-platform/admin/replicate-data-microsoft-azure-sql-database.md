@@ -3,11 +3,11 @@ title: "Replicate data to Azure SQL Database using Data Export Service | Microso
 description: Replicate data to Azure SQL Database using Data Export Service 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2022
+ms.date: 03/20/2023
 ms.subservice: admin
 ms.author: nhelgren
 author: NHelgren
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -15,6 +15,8 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+contributors: 
+- JasonHQX
 ---
 # Replicate data to Azure SQL Database using Data Export Service
 
@@ -86,7 +88,7 @@ For information about the programmatic interface for managing configuration and 
   
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution must be installed.  
     - Go to **Settings** > **Microsoft Appsource** > search or browse to **Microsoft Dynamics 365 - Data Export Service**, and then select **Get it now**. 
-    - Or, find it on [Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448).  
+    - Or, find it on [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365).  
   
 - The entities that will be added to the Export Profile must be enabled with change tracking. To ensure a standard or custom entity can be synchronized go to **Customization** > **Customize the System**, and then select the entity. On the **General** tab make sure the **Change Tracking** option under the **Data Services** section is enabled.  
   
@@ -382,9 +384,9 @@ The statement has been terminated.
 
 - To help improve query performance we recommend the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database max degree of parallelism (MAXDOP) be set to 1. More information: [MSDN: Server Memory Options](/sql/database-engine/configure-windows/server-memory-server-configuration-options)
 
-- Frequently assess the amount of fragmentation, and when necessary, rebuild the indexes in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Reorganize and Rebuild Indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-2017)
+- Frequently assess the amount of fragmentation, and when necessary, rebuild the indexes in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Reorganize and Rebuild Indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes)
 
-- Periodically update database statistics on tables and indexed views in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Update Statistics](/sql/relational-databases/statistics/update-statistics?view=sql-server-2017) 
+- Periodically update database statistics on tables and indexed views in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Update Statistics](/sql/relational-databases/statistics/update-statistics) 
 
 - Monitor the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database's utilization. More information: [Perf monitoring](/azure/sql-database/sql-database-single-database-monitor)
 
@@ -580,28 +582,30 @@ EXEC SP_EXECUTESQL @sql;
  In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], select **Set server firewall**, turn **Allow access to Azure services** to **OFF**, select **Add client IP**, and then add the IP addresses appropriate for the region of your environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
   
 |Region| New IP address| Old IP address |
-|------------|----------------|  
-|West US|13.64.148.9  |40.112.139.218|  
-|East US|20.228.153.81  |23.96.92.86|  
-|East Asia|No change  |104.208.84.217|  
-|Southeast Asia|20.205.153.14  |52.163.231.218|  
-|Central India| No change |20.198.113.107|  
-|South India| No change |104.211.204.18|  
-|West Europe| 40.68.244.253 |40.68.252.224|  
-|North Europe| 20.238.83.32 |52.169.117.212|  
-|Japan West| No change |104.214.144.93|  
-|Japan East| No change |20.89.138.246|  
-|Brazil South| No change |20.197.186.17|  
-|Australia Southeast|20.70.112.80  |40.115.78.163|  
-|Australia East|20.213.58.3  |13.73.202.160|  
-|Canada Central|No change  |52.228.26.31|  
-|Canada East|52.229.109.91  |40.86.251.81|  
-|United Kingdom West|20.68.113.18  |51.141.44.218|  
-|United Kingdom South|20.117.89.184  |51.140.71.166|  
+|------------|----------------|----------------|  
+|West US|20.245.127.60  |13.64.148.9 |  
+|East US|172.174.41.63  |20.228.153.81 |  
+|East Asia|20.239.192.9 |104.208.84.217 |  
+|Southeast Asia|20.24.15.60 |20.205.153.14 |  
+|Central India|20.219.158.75 |20.198.113.107 |  
+|South India|52.140.54.95 |104.211.204.18 |  
+|West Europe|20.126.43.104 |40.68.244.253 |  
+|North Europe|20.166.94.137 |20.238.83.32 |  
+|Japan West| No change |104.214.144.93 |  
+|Japan East|52.253.104.175 |20.89.138.246 |  
+|Brazil South|4.228.211.102 |20.197.186.17 |  
+|Australia Southeast| No change |20.70.112.80 |  
+|Australia East|20.5.88.96 |20.213.58.3 |  
+|Canada Central|20.220.227.230 |20.151.173.107 |  
+|Canada East|40.86.216.207 |52.229.109.91 |  
+|United Kingdom West|51.142.173.150 |20.68.113.18 |  
+|United Kingdom South|20.117.159.198 |20.117.89.184 |  
 
   
 > [!NOTE]
-> North America customers should add IP addresses to an approved list for both East US and West US.
+> North American customers should add IP addresses to an approved list for both East US and West US.
+> 
+> To prevent any disruptions to data synchronization, customers should keep new IP address and old IP address.
 
 ## Known issues  
   
@@ -649,7 +653,6 @@ Exporting attachments such as documentbody on *Annotation* table is not supporte
   
 ### See also  
  [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)<br />
- [AppSource: Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)   <br />
  [Data Export Service](/powerapps/developer/common-data-service/data-export-service) <br />
  [Team Blog: Introduction to Data Export Service](https://blogs.msdn.microsoft.com/crm/2017/04/11/introduction-to-dynamics-365-data-export-service/)
 

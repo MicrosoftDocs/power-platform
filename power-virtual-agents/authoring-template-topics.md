@@ -9,10 +9,13 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Use lesson topics in Power Virtual Agents
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 Select the version of Power Virtual Agents you're using here:
 

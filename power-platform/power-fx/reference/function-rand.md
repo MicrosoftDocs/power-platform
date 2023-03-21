@@ -4,7 +4,7 @@ description: Reference information including syntax and examples for the Rand an
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 04/18/2022
 ms.subservice: power-fx
 ms.author: gregli
@@ -14,7 +14,8 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Rand and RandBetween functions in Power Apps

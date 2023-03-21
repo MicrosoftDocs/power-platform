@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: macarrer
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -98,7 +98,7 @@ Power Apps support and service engineering staff do not have standing access to 
 
 ## Certifications and accreditations
 
-Power Apps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to [DoD DISA IL2](https://iase.disa.mil/cloud_security/cloudsrg/Pages/ImpactLevels.aspx). FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an Authority to Operate (ATO). 
+Power Apps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to [DoD DISA IL2](/compliance/regulatory/offering-dod-il2). FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an Authority to Operate (ATO). 
 
 > [!NOTE]
 > Power Apps has been authorized as a service within the Azure Government FedRAMP ATO.  More information, including how to access the FedRAMP documents, can be found in the FedRAMP Marketplace: https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government
@@ -126,7 +126,7 @@ We recommend that you review the privacy and compliance statements provided by t
 The Power Apps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the Power Apps US Government accreditation boundary, but takes a reliance on a customer's [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
 When a user of an organization employing AD FS attempts to access Power Apps US Government, the user is redirected to a login page hosted on the organization's AD FS server.
-The user provides his or her credentials to their organization's AD FS server. The organization's AD FS server attempts to authenticate the credentials using the organization's Active Directory infrastructure.
+The user provides their credentials to their organization's AD FS server. The organization's AD FS server attempts to authenticate the credentials using the organization's Active Directory infrastructure.
 
 If authentication is successful, the organization's AD FS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user's identity and group membership.
 

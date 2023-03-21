@@ -2,189 +2,196 @@
 title: "Configure single sign-on for the Power Virtual Agents app in Teams"
 description: "Enable your bot to authenticate an already-signed-in Teams user"
 keywords: "Single Sign-on, Teams SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 06/23/2022
+ms.date: 08/18/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: clmori
+ms.reviewer: kamrani
 ms.custom: authentication, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Configure single sign-on with Azure Active Directory for Power Virtual Agents chatbots in Microsoft Teams
+# Configure single sign-on with Azure Active Directory for Power Virtual Agents bots in Microsoft Teams
 
-The Power Virtual Agents app in Microsoft Teams supports single sign-on (SSO), which means chatbots can sign the user in silently, without having the user sign in again.
+The Power Virtual Agents app in Microsoft Teams supports single sign-on (SSO), which means bots can automatically sign-in users with their Microsoft Teams credentials.
 
-When using Teams the user is already signed-in, so Power Virtual Agents chatbots can use this information for scenarios that require user-specific information like a user's name or other details.
+SSO in the Power Virtual Agents app in Teams is only supported when using Azure Active Directory (Azure AD) v2. Other service providers, such as Azure AD v1, don't support SSO in the Power Virtual Agents app in Microsoft Teams.
 
 > [!IMPORTANT]
->
-> - SSO in the Power Virtual Agents app in Teams is only supported for Azure Active Directory v2 apps (Azure AD v2 apps). Other app types, such as Azure AD v1, do not support SSO in the Power Virtual Agents app in Microsoft Teams.
-> - If you have SSO configured for the web publication channel, you must follow this document for authentication to work in Teams bots, otherwise authentication in the Teams channel will fail without an error message.
-> - SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
+> SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- [Register a new app with Azure AD](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
-- [Add an authentication topic to your bot](advanced-end-user-authentication.md).
-- Make sure your bot and Azure AD app are under the same tenant.
+- [Learn how to use user authentication in a topic](advanced-end-user-authentication.md).
+- [Add your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
 
-## Configure SSO
+## Configure user authentication
 
-The steps required to configure SSO for the Power Virtual Agents app in Microsoft Teams include:
+Before you can turn on SSO, you'll need to configure user authentication with Azure AD. During this process, you'll create an app registration which you'll use to setup SSO.
 
-1. [Create your Azure AD app.](#create-your-azure-ad-app)
-1. [Update your Azure AD app registration.](#update-your-azure-ad-app-registration)
-1. [Update the Azure AD authentication created in the Power Virtual Agents web app.](#update-the-azure-ad-authentication-created-in-the-power-virtual-agents-web-app)
+1. Create an app registration.
+1. Add the redirect URL.
+1. Generate a client secret.
+1. Configure manual authentication.
 
-This topic describes how to do these three steps. After you've finished these steps, you should:
+Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md) then return to this article.
 
-1. [Publish your changes in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md).
-1. Test that SSO is working as expected in all the channels your bot is available.
+<!-- Note: the following sections are nearly identical to https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/tab-sso-register-aad. They were mirrored here to give more specific guidance on the values that needed to be entered. -->
 
-## Create your Azure AD app
+## Locate your Microsoft Teams channel app ID
 
-Follow the instructions for [SSO support for tabs](/microsoftteams/platform/tabs/how-to/authentication/tab-sso-register-aad) to create your Azure AD app.
+1. In Power Virtual Agents, open the bot that you want to configure SSO for.
 
-## Update your Azure AD app registration
+1. In the navigation menu under **Settings**, select **Channels**. Select the **Microsoft Teams** tile.
 
-You will need to update your Azure AD app registration by doing the following tasks:
+1. Select **Edit details**, expand **More**, and then copy the **App ID** by selecting **Copy**.
 
-1. Add your Teams app ID to your Azure AD app registration to link the two together.
-1. Grant admin consent for your app registration so users don't have to consent every time.
-1. Define a custom scope for your bot to enable admin consent.
-1. Add authorized client apps to allow your app registration to interface with the Teams web and desktop apps.
-
-### Add your Teams app ID to your Azure AD app registration
-
-You will need to get your Teams app ID:
-
-1. Log in to the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) and open the bot that you want to configure SSO for.
-
-1. Expand **Manage** on the side pane, and then select **Channels**. Select the **Microsoft Teams** tile.
-
-1. In the pane that appears to the side, select **Edit detail**, expand **More** and then copy the app ID by selecting **Copy**.
-
-    :::image type="content" source="media/configure-sso-teams/teams-sso-app-id.PNG" alt-text="Edit bot detail showing App ID.":::
+:::image type="content" source="media/configure-sso-teams/copy-teams-channel-app-id.png" alt-text="Screenshot of the Teams channel details pane, with the App ID copy button highlighted.":::
 
 > [!NOTE]
-> If you haven't already enabled the Teams channel, you will see instead see a notice that you need to enable Teams. Select **Turn on Teams** and then re-try Step 1 to get the app ID.  
+> If you haven't already turned on the Microsoft Teams channel, you'll be notified that it's currently turned off. Select **Turn on Teams** and then re-try step 1 to get the app ID.
 >
-> :::image type="content" source="media/configure-sso-teams/image2.png" alt-text="Teams channel pane showing that the channel is turned off.":::
+> :::image type="content" source="media/configure-sso-teams/turn-on-teams-channel.png" alt-text="Screenshot of the Teams channel pane showing that the channel is turned off.":::
 
-Now you can add the app ID URI to your Azure AD app registration:
+## Add your Microsoft Teams channel app ID to your app registration
 
-1. Go to the [Azure AD portal](https://portal.azure.com) and find the Azure AD app that you registered and configured as part of the [prerequisites](#prerequisites).
+1. Go to the [Azure portal](https://portal.azure.com/). Open the app registration blade for the app registration you created when you configured user authentication for your bot.
 
-1. Select **Expose an API** on the side pane and set the **Application ID URI** to be in format of `api://botid-{teamsbotid}`, where you replace `{teamsbotid}` with the  app ID you copied.
+1. Select **Expose an API** on the side pane. For **Application ID URI**, select **Set**.
+
+    :::image type="content" source="media/configure-sso-teams/set-app-id-uri.png" alt-text="Screenshot of the location of the Set button for the Application ID URI.":::
+
+1. Enter `api://botid-{teamsbotid}` and replace `{teamsbotid}` with your [Teams channel app ID](#locate-your-microsoft-teams-channel-app-id) that you found earlier.
+
+    :::image type="content" source="media/configure-sso-teams/enter-app-id-uri.png" alt-text="Screenshot of a correctly formatted URI entered into the Application ID URI box.":::
 
 1. Select **Save**.
 
-    :::image type="content" source="media/configure-sso-teams/image3.png" alt-text="Setting the correct App ID in Azure portal.":::
+## Grant admin consent
 
-### Grant admin consent
+Applications are authorized to call APIs when they are granted permissions by users/admins as part of the consent process. To learn more about consent, see [Permissions and consent in the Microsoft identity platform](/azure/active-directory/develop/v2-permissions-and-consent)
 
-To grant admin consent:
+The admin consent option may be greyed out if it's not enabled by your tenant administrator. However, if it's available, you'll need to grant consent:
 
-1. In the app registration screen for your Azure AD app, go to **API Permissions**.
+1. In the Azure portal on your app registration blade, go to **API Permissions**.
 
 1. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
 
-    :::image type="content" source="media/configure-sso-teams/image4.png" alt-text="Screenshot showing granting admin consent to tenant.":::
+    :::image type="content" source="media/configure-sso-teams/grant-admin-consent.png" alt-text="Screenshot of the Grant admin consent button highlighted.":::
+
+> [!TIP]
+> To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator can [grant tenant-wide](/azure/active-directory/manage-apps/grant-admin-consent) consent to your application registrations.
+
+## Add API permissions
+
+1. In the Azure portal on your app registration blade, go to **API Permissions**.
+
+1. Select **Add a permission** and choose **Microsoft Graph**.
+
+1. Select **Delegated permissions**. A list of permissions will appear below. Expand **OpenId permissions** and turn on **openid** and **profile**.
+
+1. Select **Add permissions**.
+
+:::image type="content" source="media/configure-sso-teams/add-permissions.png" alt-text="Screenshot of the openid and profile permissions turned on.":::
+
+## Define a custom scope for your bot
+
+1. In the Azure portal on your app registration blade, go to **Expose an API**.
+
+1. Select **Add a scope**.
+
+    :::image type="content" source="media/configure-sso-teams/add-a-scope.png" alt-text="Screenshot of the Add a scope button highlighted.":::
+
+1. Set the following properties:
+
+   | Property                   | Value                                      |
+   | -------------------------- | ------------------------------------------ |
+   | Scope name                 | Enter `Test.Read`                          |
+   | Who can consent?           | Select **Admins and users**                |
+   | Admin consent display name | Enter `Test.Read`                          |
+   | Admin consent description  | Enter `Allows the app to log in the user.` |
+   | State                      | Select **Enabled**                         |
+
+   > [!NOTE]
+   > The scope name `Test.Read` is a placeholder value and should be replaced with a name that makes sense in your environment.
+
+1. Select **Add scope**.
+
+## Add Microsoft Teams client IDs
 
 > [!IMPORTANT]
-> To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
+> In the following steps, the values provided for Microsoft Teams client IDs should be used literally because they are the same across all tenants.
 
-### Define a custom scope for your bot
+1. In the Azure portal on your app registration blade, go to **Expose an API** and select **Add a client application**.
 
-To define a custom scope for your bot:
+    :::image type="content" source="media/configure-sso-teams/add-client-application.png" alt-text="Screenshot of the Add a client application button highlighted.":::
 
-1. In the app registration screen for your Azure AD app, go to **Expose an API** on the side pane.
+1. In the **Client ID** field, enter the client ID for Microsoft Teams mobile/desktop, which is  `1fec8e78-bce4-4aaf-ab1b-5451cc387264`. Select the checkbox for [the scope that you created earlier](#define-a-custom-scope-for-your-bot).
 
-1. Select **Add a scope**.
-
-    :::image type="content" source="media/configure-sso-teams/image5.png" alt-text="Screenshot displaying adding scope to Expose an API section.":::
-
-1. Enter a name for the scope, along with the display information that should be shown to users when they come to the SSO screen.
-
-1. Select **Add a scope**.
-
-1. Enter a **Scope name**, **Admin consent display name**, **Admin consent description**.
-
-    :::image type="content" source="media/configure-sso-teams/image6.png" alt-text="Screenshot displaying adding scope details name, consent display name, and consent description.":::
-
-### Add authorized client app IDs
-
-> [!NOTE]
-> Remember to replace the example IDs and values below with your own Azure AD configured values.
-
-Now you'll need to add the Teams client app IDs, which are:
-
-- Teams mobile/desktop application: `1fec8e78-bce4-4aaf-ab1b-5451cc387264`
-
-- Teams on the web: `5e3ce6c0-2b1f-4285-8d4b-75ee78787346`
-
-1. In the **Expose an API** section in the app registration screen for your Azure AD app, select **Add a client application**.
-
-1. Enter the first client app ID, `1fec8e78-bce4-4aaf-ab1b-5451cc387264`, into the **Client ID** field. Select the checkbox for the listed scope that you created.
+    :::image type="content" source="media/configure-sso-teams/enter-client-id.png" alt-text="Screenshot of the client ID entered into the Add a client application pane.":::
 
 1. Select **Add application**.
 
-    :::image type="content" source="media/configure-sso-teams/image7.png" alt-text="Screenshot showing Add Client Application.":::
+1. Repeat the steps above, but for **Client ID**, enter the client ID for Microsoft Teams on the web, which is `5e3ce6c0-2b1f-4285-8d4b-75ee78787346`.
 
-1. Repeat from Step 1, this time using `5e3ce6c0-2b1f-4285-8d4b-75ee78787346` as the second client app ID and make sure to select the scope checkbox.
+1. Confirm the **Expose an API** page lists the Microsoft Teams client app IDs.
 
-The **Expose an API** page should have these values:
+    :::image type="content" source="media/configure-sso-teams/client-ids-added.png" alt-text="Screenshot of the Expose an API page that correctly lists the Microsoft Teams client IDs.":::
 
-:::image type="content" source="media/configure-sso-teams/image8.png" alt-text="Screenshot showing correctly filled values for Expose an API screen.":::
+## Add token exchange URL
 
-## Update the Azure AD authentication created in the Power Virtual Agents web app
+To update the Azure AD authentication settings in Power Virtual Agents, you'll need to add the token exchange URL to allow Microsoft Teams and Power Virtual Agents to share information.
 
-You'll now need to update the Azure AD authentication settings in the Power Virtual Agents web app that you configured as part of the [prerequisites](#prerequisites).
+1. In the Azure portal on your app registration blade, go to **Expose an API**.
 
-You'll need to add the token exchange URL to allow Teams and Power Virtual Agents to share information, and you'll need to do the final configuration of the SSO information.
+1. Under **Scopes**, select **Copy to clipboard**.
 
-To add the token exchange url:
+    :::image type="content" source="media/configure-sso-teams/copy-scope.png" alt-text="Screenshot of the Copy to clipboard button..":::
 
-1. Go to the Azure AD authentication you configured when following the steps to [create the new Azure AD authentication in the Power Virtual Agents web app](configuration-end-user-authentication.md#configure-manual-authentication).
+1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Security**, and then select the **Authentication** tile.
 
-1. Add the Token Exchange URL as described in the [Configure SSO with Azure AD](configure-sso.md#configure-authentication-in-power-virtual-agents-to-enable-sso) topic, under the **Configure authentication in Power Virtual Agents to Enable SSO** heading.
+1. For **Token exchange URL (required for SSO)**, paste the scope you copied earlier.
 
-    :::image type="content" source="media/configure-sso-teams/image9.png" alt-text="Screenshot displaying correct Token Exchange URL configuration.":::
+    :::image type="content" source="media/configure-sso-teams/token-exchange-url.png" alt-text="Screenshot of the Application ID URI entered as the Token exchange URL in Power Virtual Agents.":::
 
-To add Teams SSO configuration information in the Power Virtual Agents bot:
+1. Select **Save**.
 
-1. Log in to the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) and open the bot that you want to configure SSO for.
+## Add SSO to your bot's Microsoft Teams channel
 
-1. Expand **Manage** on the side pane, and then select **Channels**. Select the **Microsoft Teams** tile.
+1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Channels**.
 
-1. Select **Edit details**.
+1. Select the **Microsoft Teams** tile. Select **Edit details** and expand **More**.
 
-1. Select **More** to see the Teams SSO configuration details. Scroll all the way to the bottom of the pane. Add the following information:
+1. For **AAD application's client ID**, enter the **Application (client) ID** from your app registration.
 
-    - **AAD application's client ID**: Add the **Application ID** from the **Overview** page of the Azure AD app registration. This ID is the same client ID that was added in the **Client ID** field when creating the Azure AD authentication in the Power Virtual Agents web app.
+   :::image type="content" source="media/configure-sso-teams/add-sso-application-id.png" alt-text="Screenshot of the Application (client) ID entered as the AAD application's client ID in Power Virtual Agents.":::
 
-    - **Resource URI**: This URI is the **Application ID** URI from the **Expose an API** page in the Azure AD app registration.
+    To obtain this value, open the Azure portal. Then on your app registration blade, go to **Overview**. Copy the value in the **Application (client) ID** box.
 
-1. Save and close.
+   :::image type="content" source="media/configure-sso-teams/azure-application-id.png" alt-text="Screenshot of where to find the Application (client) ID in Azure portal.":::
 
-    :::image type="content" source="media/configure-sso-teams/image10.png" alt-text="Screenshot displaying correct Teams channel SSO configuration.":::
+1. For **Resource URI**, enter the **Application ID URI** from your app registration.
 
-These steps update the manifest file for the bot. Now you can download the manifest file (as a .zip file) and upload to Teams for test or distribution, or submit for your admin approval. For more information, see the [Add bot to Microsoft Teams in Teams](publication-add-bot-to-microsoft-teams.md) topic.
+   :::image type="content" source="media/configure-sso-teams/add-sso-resource-uri.png" alt-text="Screenshot of the Application ID URI entered as the Resource URI in Power Virtual Agents.":::
 
-1. Select **Availability options**.
+    To obtain this value, open the Azure portal. Then on your app registration blade, go to **Expose an API**. Copy the value in the **Application ID URI** box.
 
-1. Select **Download .zip** to get the new manifest.
+    :::image type="content" source="media/configure-sso-teams/application-id-uri.png" alt-text="Screenshot of where to find the Application ID URI in Azure portal.":::
 
-    :::image type="content" source="media/configure-sso-teams/add-bot-to-teams-download-zip.png" alt-text="Screenshot displaying Download .zip button highlighted.":::
+1. Select **Save**, and then **Close**.
 
-> [!IMPORTANT]
-> If your users have used the manifest to install the bot, they will need to get a new manifest after this configuration is complete and install the bot again for the Teams SSO to work. The Teams manifest does not refresh automatically. Alternatively, if you submit for Admin approval, the manifest is updated automatically.
+1. In the navigation menu, select **Publish**.
 
-> [!NOTE]
-> Make sure to test your bot authentication functionality in all channels to ensure they are working as intended.
+1. Select **Publish** to make the latest bot content available to your customers.
+
+1. In the navigation menu, under **Settings**, select **Channels**.
+
+1. Select **Microsoft Teams**, then select **Open bot**.
+
+1. Start a new conversation with your bot in Microsoft Teams to test if it automatically signs you in.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

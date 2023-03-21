@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI auth command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI auth command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 8/11/2022
+author: snizar007
+ms.author: snizar
+ms.date: 3/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -54,6 +54,14 @@ Create and store authentication profiles on this computer
 
 Optional: The application id to authenticate with
 
+#### `--certificateDiskPath` `-cdp`
+
+Optional: The certificate disk path to authenticate with
+
+#### `--certificatePassword` `-cp`
+
+Optional: The certificate password to authenticate with
+
 #### `--clientSecret` `-cs`
 
 Optional: The client secret to authenticate with
@@ -83,9 +91,15 @@ Default environment (id, url, unique name or partial name)
 #### `--kind` `-k`
 
 **Deprecated**: This parameter will be ignored.
+#### `--managedIdentity` `-mi`
+
+Use Azure Managed Identity.
+
+This parameter requires no value. It is a switch.
+
 #### `--name` `-n`
 
-The name you want to give to this authentication profile (maximum 12 characters)
+The name you want to give to this authentication profile (maximum 30 characters)
 
 **Note**: The length of the name should be between 1 and 30
 
@@ -95,7 +109,7 @@ Optional: The password to authenticate with
 
 #### `--tenant` `-t`
 
-Tenant id if using application id & secret.
+Tenant id if using application id/client secret or application id/client certificate.
 
 #### `--url` `-u`
 
@@ -153,7 +167,7 @@ The index of the profile to be named/renamed
 
 #### `--name` `-n`
 
-The name you want to give to this authentication profile (maximum 12 characters)
+The name you want to give to this authentication profile (maximum 30 characters)
 
 **Note**: The length of the name should be between 1 and 30
 
@@ -206,7 +220,7 @@ Default environment (id, url, unique name or partial name)
 
 #### `--name` `-n`
 
-The name you want to give to this authentication profile (maximum 12 characters)
+The name you want to give to this authentication profile (maximum 30 characters)
 
 [!INCLUDE [auth-update-remarks](includes/auth-update-remarks.md)]
 

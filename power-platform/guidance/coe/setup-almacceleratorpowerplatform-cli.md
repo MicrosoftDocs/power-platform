@@ -26,6 +26,12 @@ The application lifecycle management (ALM) accelerator components enable makers 
 
 The ALM accelerator doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
+## Set up the ALM accelerator by using the ALM Accelerator for Power Platform Administration app
+
+The ALM Accelerator for Power Platform Administration app includes functionality to help you setup your Azure DevOps projects using the Azure DevOps Project wizard.
+
+Follow the steps in [Set up ALM accelerator for Microsoft Power Platform](setup-almacceleratorpowerplatform-preview.md).
+
 ## Set up the ALM accelerator by using the CoE CLI
 
 The following articles guide you through setting up the Center of Excellence (CoE) CLI and using the CoE CLI to install the ALM accelerator in your tenant.

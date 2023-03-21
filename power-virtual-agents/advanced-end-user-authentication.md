@@ -10,6 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: clmori
 ms.custom: authentication, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -24,14 +25,12 @@ Select the version of Power Virtual Agents you're using here:
 
 You can enable user authentication directly within a Power Virtual Agents bot conversation. User authentication means you can get a user's basic properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
 
-You can also configure single sign-on (SSO) so your users don't need to sign in manually.
-
-> [!IMPORTANT]
-> Before using this feature, you must follow the [end-user authentication configuration instructions](configuration-end-user-authentication.md).
+You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md) and [Configure SSO for Microsoft Teams](configure-sso-teams.md)
 
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Configure end-user authentication](configuration-end-user-authentication.md).
 
 ## Authentication variables
 
@@ -119,7 +118,7 @@ To add an Authenticate node to your topic:
 1. Open the **Authoring canvas** for the topic you want to add the authentication template to.
 
     > [!NOTE]
-    > If your bot is connected to Dynamics 365 Customer Service, the Authentication node can't be part of the conversation path the bot follows when initially greeting users – otherwise the sign-in card will be shown twice. Instead you should add the Authenticate node to another topic that is triggered by a user response.
+    > If your bot is connected to Dynamics 365 Customer Service, the Authentication node can't be part of the conversation path the bot follows when initially greeting users; otherwise, the sign-in card will be shown twice. Instead you should add the Authenticate node to another topic that is triggered by a user response.
 
 1. Select **Add node** (**+**) to add a message node. Enter what the bot should say to indicate that a sign-on experience is about to occur.
 

@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI Command Groups| Microsoft Docs
 description: "Descriptions for Power Platform Command Line Interface commands."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 8/11/2022
+author: snizar007
+ms.author: snizar
+ms.date: 3/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -22,19 +22,24 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 
 |Command Group|Description|
 |---------|---------|
-|[pac admin](admin.md)|Work with your PowerPlatform Admin Account|
+|[pac admin](admin.md)|Work with your Power Platform Admin Account|
 |[pac application](application.md)|Commands for listing and installing available Dataverse applications from AppSource|
 |[pac auth](auth.md)|Manage how you authenticate to various services|
 |[pac canvas](canvas.md)|Operating with Power Apps .msapp files|
-|[pac data](data.md)|Import and export data from Dataverse environment|
-|[pac help](help.md)|Show help for the Microsoft PowerPlatform CLI|
+|[pac connector](connector.md)|(Preview) Commands for working with Power Platform Connectors|
+|[pac data](data.md)|Import and export data from Dataverse.|
+|[pac help](help.md)|Show help for the Microsoft Power Platform CLI|
+|[pac modelbuilder](modelbuilder.md)|Code Generator for Dataverse APIs and Tables|
 |[pac org](org.md)|Work with your Dataverse Organization|
 |[pac package](package.md)|Commands for working with Dataverse package projects|
-|[pac paportal](paportal.md)|Commands for working with PowerApps portal website|
-|[pac pcf](pcf.md)|Commands for working with PowerApps component framework projects|
-|[pac plugin](plugin.md)|Commands for working with Dataverse plugin class library|
+|[pac paportal](paportal.md)|Commands for working with Power Pages website|
+|[pac pcf](pcf.md)|Commands for working with Power Apps component framework projects|
+|[pac pipeline](pipeline.md)|Work with Pipelines|
+|[pac plugin](plugin.md)|Commands for working with Dataverse plug-in class library|
 |[pac solution](solution.md)|Commands for working with Dataverse solution projects|
 |[pac telemetry](telemetry.md)|Manage telemetry settings|
+|[pac tool](tool.md)|Power Platform tools that can be installed and launched|
+|[pac virtual-agent](virtual-agent.md)|Commands for working with Power Virtual Agent bots|
 
 
 [!INCLUDE [index-remarks](includes/index-remarks.md)]

@@ -2,13 +2,13 @@
 title: "Create users | MicrosoftDocs"
 description: About creating users.
 author: jimholtz
-ms.reviewer: jimholtz
+ms.reviewer: Kumarvivek
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: kvivek
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/19/2022
+ms.date: 09/26/2022
 search.audienceType: 
   - admin
 search.app:
@@ -92,9 +92,11 @@ The following table shows the fields that are managed in the **Users** section o
 </thead>
 <tbody>
 <tr><td>User Name</td><td>Username</td></tr>
-<tr><td>Full Name  </td><td>First name + Last name </td></tr>
+<tr><td>Full Name*  </td><td>Display Name </td></tr>
 <tr><td>Title </td><td>Job title </td></tr>
-<tr><td>Primary Email* </td><td>Email </td></tr>
+ <tr><td>First Name </td><td>First Name </td></tr>
+ <tr><td>Last Name </td><td>Last Name </td></tr>
+<tr><td>Primary Email** </td><td>Email </td></tr>
 <tr><td>Main Phone </td><td>Office phone</td></tr>
 <tr><td>Mobile Phone  </td><td>Mobile phone</td></tr>
 <tr><td>Fax  </td><td>Fax number  </td></tr>
@@ -102,8 +104,8 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>Address   </td><td>City   </td></tr>
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
-<tr><td>AzureActiveDirectoryObjectId**     </td><td>ObjectId   </td></tr>
-<tr><td colspan="2">* To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br />**object ID of a user or a service principal in Azure Active Directory</td></tr>
+<tr><td>AzureActiveDirectoryObjectId***     </td><td>ObjectId   </td></tr>
+<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br />** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br />*** object ID of a user or a service principal in Azure Active Directory.<br /></td></tr>
 </tbody>
 </table>
 
@@ -208,7 +210,7 @@ For users to have access to applications and data in an environment, at a minimu
 > [!TIP]
 > Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
 
-1. A system background process runs every 30 minutes to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of [requirements](#requirements-for-successfully-adding-users-in-dataverse). The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Azure AD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
+1. A system background process runs periodically to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of [requirements](#requirements-for-successfully-adding-users-in-dataverse). The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Azure AD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
 
    > [!NOTE]
    > Not all users added in Azure AD will be pickup by the automatic synchronization process. [This section](#user-types) details the eligibility criteria the system background process applies to add a user from Azure AD into Dataverse.
@@ -454,7 +456,7 @@ Assigning an Azure AD security group to the environment is a best practice in ge
 
 ### See also
 [User settings](users-settings.md) <br />
-[Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/) <br />
+[Get started with security roles in Dataverse](/training/modules/get-started-security-roles/) <br />
 [Assign a security role to a user](assign-security-roles.md) <br />
 [Opt-out of automatic license-based user roles management](opt-out-automatic-license.md)
 

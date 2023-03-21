@@ -1,15 +1,12 @@
 ---
-title: Data policies (preview)
+title: Data policies 
 description: View the data policies that are in effect in your managed environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/07/2022
+ms.date: 10/12/2022
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: jimholtz
-contributors:
-  - mikferland-msft
-  - alaug 
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
@@ -21,11 +18,9 @@ search.app:
   - Flow
 ---
 
-# Data policies (preview)
+# Data policies 
 
-<!-- https://go.microsoft.com/fwlink/?linkid=2193887 -->
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+<!-- https://go.microsoft.com/fwlink/?linkid=2193887 and 2211178-->
 
 With Managed Environments, admins can easily identify all the data policies that are applied to an environment. Data policies define the consumer connectors that data can be shared with. They make sure that data is managed in a uniform manner across your organization. They also prevent important business data from being accidentally published to connectors like social media sites. For more information about data policies, go to [Data loss prevention policies](wp-data-loss-prevention.md).
 
@@ -49,10 +44,13 @@ To remove the environment filter and view data policies applied to all environme
 If no data policies are applied to the environment, the data policies page is empty. We highly recommend that you protect all environments in your tenant with a data policy.
 
 ### See also
+[Managed Environments overview](managed-environment-overview.md)  <br />
+[Enable Managed Environments](managed-environment-enable.md)  <br />
+[Usage insights](managed-environment-usage-insights.md)  <br />
+[Limit sharing](managed-environment-sharing-limits.md)  <br />
+[Licensing](managed-environment-licensing.md)  <br />
+[View license consumption (preview)](view-license-consumption-issues.md) <br />
+[Tenant settings](tenant-settings.md)
 
-[Managed Environments overview](managed-environment-overview.md)  
-[Enable Managed Environment](managed-environment-enable.md)  
-[Weekly digests](managed-environment-weekly-digests.md)  
-[Sharing limits](managed-environment-sharing-limits.md)  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

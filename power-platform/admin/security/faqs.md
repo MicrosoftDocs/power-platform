@@ -1,7 +1,7 @@
 ---
 title: Power Platform security FAQs
 description: Get answers to common questions about Power Platform security.
-ms.date: 05/27/2022
+ms.date: 11/07/2022
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -9,7 +9,8 @@ ms.custom:
 author: lancedMicrosoft
 ms.subservice: admin
 ms.author: lanced
-ms.reviewer: jimholtz
+ms.reviewer: sericks
+ms.contributors: JesseParsons
 search.audienceType: 
   - admin
 search.app:
@@ -126,6 +127,10 @@ Microsoft weighs the relative risk and disruption to customer operations in choo
 
 We'll deprecate these ciphers at the right time, based on the Microsoft Crypto Board's continuous assessment.
 
+### Why does Power Automate expose MD5 content hashes in trigger/action inputs and outputs?
+
+Power Automate passes the optional content-MD5 hash value returned by Azure Storage as-is to its clients. This hash is used by Azure Storage to verify the integrity of the page during transport as a checksum algorithm and it isn't used as a cryptographic hash function for security purposes in Power Automate. You can find more details of this in the Azure Storage documentation on how to [Get Blob Properties](/rest/api/storageservices/get-blob-properties#response) and how to work with [Request Headers](/rest/api/storageservices/put-page#request-headers).
+
 ### How does Power Platform protect against Distributed Denial of Service (DDoS) attacks?
 
 Power Platform is built on Microsoft Azure and uses [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-standard-features) to guard against [DDoS attacks](https://owasp.org/www-project-automated-threats-to-web-applications/assets/oats/EN/OAT-015_Denial_of_Service.html).
@@ -161,6 +166,23 @@ Microsoft has assessed that no Log4j vulnerabilities impact Power Platform. See 
 ### How can we ensure there are no unauthorized transactions due to browser extensions or Unified Interface Client APIs allowing disabled controls to be enabled?
 
 The Power Apps security model doesn't include the concept of disabled controls. Disabling controls is a UI enhancement. You shouldn't rely on disabled controls to provide security. Instead, use Dataverse controls such as field-level security to prevent unauthorized transactions.
+
+### Which HTTP security headers are used to protect response data?
+
+| Name | Details |
+| ---- | ------- |
+| [Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security) | This is set to `max-age=31536000; includeSubDomains` on all responses. |
+| [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) | This is deprecated in favor of CSP. |
+| [X-Content-Type-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options) | This is set to `nosniff` on all asset responses. |
+| [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) | This is set if user [enables CSP](/power-platform/admin/content-security-policy). |
+| [X-XSS-Protection](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection) | This is deprecated in favor of CSP. |
+
+### Where can I find Power Platform or Dynamics 365 penetration tests?
+
+The latest penetration tests and security assessments can be found on the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/viewpage/PenTest). 
+
+> [!NOTE]
+> To access some of the resources on the Service Trust Portal, you must sign in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft non-disclosure agreement for compliance materials.
 
 ### Related articles
 

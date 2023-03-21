@@ -1,16 +1,17 @@
 ---
 title: "Use system topics in Microsoft Teams"
 description: "Learn how system topics are used in conversations in Microsoft Teams."
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 04/20/2022
 
 ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iaanw
 manager: shellyha
-ms.custom: authoring, ceX
-ms.collection: virtual-agent
 ms.reviewer: ggupta
+ms.custom: authoring, ceX
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Use system topics in Microsoft Teams

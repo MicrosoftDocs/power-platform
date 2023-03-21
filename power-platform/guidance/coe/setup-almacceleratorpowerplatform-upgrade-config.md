@@ -2,13 +2,11 @@
 title: "Upgrade of ALM accelerator for Power Platform | MicrosoftDocs"
 description: "Upgrade the ALM accelerator for Microsoft Power Platform."
 author: rsantos00
-manager: devkeydet
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2022
+ms.date: 03/15/2023
 ms.subservice: guidance
 ms.author: rusant
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app: 
@@ -37,16 +35,17 @@ To get the latest tag of the pipelines [follow this link](https://github.com/mic
 
 ## Installing the ALM accelerator for Power Platform solution
 
-Go to [https://make.powerapps.com](https://make.powerapps.com) and select the environment you plan to use. Select **Solutions** -> **Import solution** -> **Browse** to select the location of the zip file downloaded in the previous section, example: **centerofexcellencealmaccelerator_1.0.20220517.1_managed.zip**. Select **Next** and expand the **Advanced settings**, make sure the **Upgrade** is selected. Select **Import** to finalize the upgrade.
+Go to [Power Apps](https://make.powerapps.com) and select the environment you plan to use. Select **Solutions** -> **Import solution** -> **Browse** to select the location of the zip file downloaded in the previous section, example: **centerofexcellencealmaccelerator_1.0.20220517.1_managed.zip**. Select **Next** and expand the **Advanced settings**, make sure **Update** is selected. Select **Import** to finalize the upgrade.
 
 When the import is completed, the reactivation of the **CustomAzureDevOps** custom connector needs to be done. The following steps need to be done.
 
-1. Select **Data** -> **Custom Connectors** and edit the **CustomAzureDevOps**
+1. Select **Data** -> **Custom Connectors** and edit the **CustomAzureDevOps**.
 1. Go to the Definition tab and verify if there are 3 **Policies** created and the information is accordingly to [this section](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config#create-the-customazuredevops-custom-connector-policies).
-1. Go to the Security tab and select **Edit**
-1. Add your **ClientId**, **Client Secret** & **ResourceUrl**
-1. Select the **Test** tab and select **Test operation**
-1. Confirm the **status** of the response is Ok and select **Update connector** in the top
+1. Go to the Security tab and select **Edit**.
+1. Select **Azure Active Directory** as the **Identity Provider**.
+1. Add your **ClientId**, **Client Secret** & **ResourceUrl**.
+1. Select the **Test** tab and select **Test operation**.
+1. Confirm the **status** of the response is Ok and select **Update connector** in the top.
 
 > [!NOTE]
 > If you already followed these steps before, you could run the **sync-pipeline-repo** pipeline with the new tag copied in the previous section, and **approve** and **complete** the pull request.
@@ -78,7 +77,7 @@ To simplify this process, there's a pipeline template that will automatically sy
 1. After the pipeline runs, a pull request will be created for the **BranchToCreate** into the **TargetBranch** example: Pull request from **update-from-original-repo** to **main**. To commit the changes, approve and complete the pull request by selecting **Repos** and **Pull requests**.
 
 > [!NOTE]
-> If the generated Pull Request has merge conflicts these needs to be resolved to complete the upgrade. A free Azure DevOps extension called **Pull Request Merge Conflict Extension** developed by Microsoft DevLaps can be install from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.conflicts-tab)
+> If the generated Pull Request has merge conflicts these needs to be resolved to complete the upgrade. A free Azure DevOps extension called **Pull Request Merge Conflict Extension** developed by Microsoft DevLaps can be install from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.conflicts-tab).
 
 ## Create the CustomAzureDevOps custom connector policies
 

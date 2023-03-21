@@ -10,6 +10,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: jameslew
 ms.custom: "publication, azure, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -32,7 +33,7 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 ## Connect your bot to a web-based app
 
-1. In the Power Virtual Agents side pane, go to **Manage** > **Channels**.
+1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Channels**.
 
 1. Select the **Mobile app** tile to open the configuration window.
 
@@ -67,19 +68,19 @@ The instructions in this document reference the following:
 
 ### Retrieve your Power Virtual Agents bot parameters
 
-To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
+To connect to the bot you have built with Power Virtual Agents, you'll need to retrieve your bot's name and token endpoint to identify it.
 
 1. Copy your bot's name in Power Virtual Agents.
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
 
-1. On the side pane, go to **Manage** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Mobile app**.
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-mobile-app.png" alt-text="Mobile app channel." border="false":::
 
-1. Select **Copy** for the **Bot ID** and **Tenant ID** values. You will need these in the [Get Direct Line token](#get-direct-line-token) step.
+1. Next to **Token Endpoint**, select **Copy**. You'll need this in the [Get Direct Line token](#get-direct-line-token) step.
 
     :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-get-bot-parameters.png" alt-text="Get bot parameters." border="false":::
 
@@ -192,7 +193,7 @@ The following example uses samples from the [Connector sample code](https://gith
       {
           // To get the first response set string watermark = null
           // More information about watermark is available at
-          // https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-receive-messages?view=azure-bot-service-4.0
+          // https://learn.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-receive-messages?view=azure-bot-service-4.0
           
           // response from bot is of type Microsoft.Bot.Connector.DirectLine.ActivitySet
           ActivitySet response = await directLineClient.Conversations.GetActivitiesAsync(conversationtId, watermark);
@@ -235,6 +236,6 @@ If your application needs to hand off to a live agent provider, you will need to
 
 ### Trigger a welcome message
 
-If you want your bot to send the Greeting system topic automatically when a user starts a conversation, you can send an activity with `Type=event` and `Name=startsConversation`.
+If you want your bot to send the Greeting system topic automatically when a user starts a conversation, you can send an activity with `Type=event` and `Name=startConversation`.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

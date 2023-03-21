@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI package command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI package command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 8/11/2022
+author: snizar007
+ms.author: snizar
+ms.date: 3/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,17 +26,17 @@ Commands for working with Dataverse package projects
 
 |Command|Description|
 |---------|---------|
-|[pac package add-external-package](#pac-package-add-external-package)|Adds an external package to a PD Package project|
+|[pac package add-external-package](#pac-package-add-external-package)|Adds a package that is external to the Dataverse solution system to a PD Package project|
 |[pac package add-reference](#pac-package-add-reference)|Adds reference to Dataverse solution project|
 |[pac package add-solution](#pac-package-add-solution)|Adds a prebuilt Dataverse solution file to a PD Package project|
-|[pac package deploy](#pac-package-deploy)|Deploys package to Dataverse environment|
+|[pac package deploy](#pac-package-deploy)|Deploys package to Dataverse|
 |[pac package init](#pac-package-init)|Initializes a directory with a new Dataverse package project|
 |[pac package show](#pac-package-show)|Shows details of Dataverse package|
 
 
 ## pac package add-external-package
 
-Adds an external package to a PD Package project
+Adds a package that is external to the Dataverse solution system to a PD Package project
 
 [!INCLUDE [package-add-external-package-intro](includes/package-add-external-package-intro.md)]
 
@@ -101,22 +101,6 @@ Use one of these values:
 
 A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.
 
-#### `--layer-order-behavior`
-
-This argument is applicable only for 1st party solutions.
-
-Use one of these values:
-
-- `above`
-- `base`
-- `below`
-
-#### `--layer-order-solution-unique-names`
-
-This argument is applicable only for 1st party solutions.
-
-**Note**: Use a semicolon delimited list of solution uniquenames.
-
 #### `--missing-dependency-behavior`
 
 Specifies the behavior on import when a dependency of this solution is missing from the target environment.
@@ -137,7 +121,7 @@ Use one of these values:
 
 #### `--publish-workflows-activate-plugins`
 
-Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.
+Explicitly indicates whether to publish the workflows and activate plug-ins when this solution is imported.
 
 Use one of these values:
 
@@ -181,22 +165,6 @@ Use one of these values:
 
 A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.
 
-#### `--layer-order-behavior`
-
-This argument is applicable only for 1st party solutions.
-
-Use one of these values:
-
-- `above`
-- `base`
-- `below`
-
-#### `--layer-order-solution-unique-names`
-
-This argument is applicable only for 1st party solutions.
-
-**Note**: Use a semicolon delimited list of solution uniquenames.
-
 #### `--missing-dependency-behavior`
 
 Specifies the behavior on import when a dependency of this solution is missing from the target environment.
@@ -217,7 +185,7 @@ Use one of these values:
 
 #### `--publish-workflows-activate-plugins`
 
-Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.
+Explicitly indicates whether to publish the workflows and activate plug-ins when this solution is imported.
 
 Use one of these values:
 
@@ -234,7 +202,7 @@ This parameter requires no value. It is a switch.
 
 ## pac package deploy
 
-Deploys package to Dataverse environment
+Deploys package to Dataverse
 
 [!INCLUDE [package-deploy-intro](includes/package-deploy-intro.md)]
 
@@ -258,6 +226,18 @@ This parameter requires no value. It is a switch.
 
 Log file path
 
+#### `--settings` `-s`
+
+Runtime Package Settings that are passed to the package that is being deployed.  The format of the string must be `key=value|key=value`.
+
+**Note**: The format of the string must be `key=value|key=value`.
+
+#### `--verbose` `-vdbg`
+
+Emit Verbose logs to the log outputs
+
+This parameter requires no value. It is a switch.
+
 [!INCLUDE [package-deploy-remarks](includes/package-deploy-remarks.md)]
 
 ## pac package init
@@ -269,12 +249,6 @@ Initializes a directory with a new Dataverse package project
 
 ### Optional Parameters
 
-#### `--include-PkgAssets-Content`
-
-Indicates whether to also include some sample files for the PkgAssets/Content folder.
-
-This parameter requires no value. It is a switch.
-
 #### `--outputDirectory` `-o`
 
 Output directory
@@ -282,15 +256,6 @@ Output directory
 #### `--package-name`
 
 Sets the default name of the package. Applies to the generation of ImportExtension.GetNameOfImport.
-
-#### `--template`
-
-The name of the template to instantiate. Note: the template 'legacy' will be removed in a future release.
-
-Use one of these values:
-
-- `sdk-style`
-- `legacy`
 
 [!INCLUDE [package-init-remarks](includes/package-init-remarks.md)]
 
@@ -306,6 +271,19 @@ Shows details of Dataverse package
 #### `--package` `-p`
 
 path to a package dll or zip file with a package
+
+
+### Optional Parameters
+
+#### `--logFile` `-lf`
+
+Log file path
+
+#### `--verbose` `-vdbg`
+
+Emit Verbose logs to the log outputs
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [package-show-remarks](includes/package-show-remarks.md)]
 

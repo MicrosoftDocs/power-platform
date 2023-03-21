@@ -20,7 +20,7 @@ search.app:
 # ALM accelerator for Microsoft Power Platform pipelines (preview) - Deployment settings
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [our GitHub repo](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md) to see the items to be completed prior to general availability.
 
 The application lifecycle management (ALM) accelerator components enable makers to apply source-control strategies with Azure DevOps. Makers can use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. The ALM accelerator helps makers switch quickly from developing solutions to source-controlling the solution and pushing their apps to other environments with as few interruptions to their work as possible.
 
@@ -34,6 +34,7 @@ The deployment settings payload for the ALM Accelerator export pipeline is used 
 
   | Setting                     | Required | Description |
   | -------                     | -------- | ----------- |
+  | ApprovalType                | No       | The type of approval to use in the deployment pipeline. |
   | BuildName                   | Yes      | The name of the build pipeline. |
   | BuildTemplate               | No       | The name of the build pipeline template. |
   | DeploymentEnvironmentName   | Yes      | The name of the deployment environment. |
@@ -55,12 +56,14 @@ The deployment settings payload for the ALM Accelerator export pipeline is used 
   | activateflow.order.flow-name.flow-id                                    | No       | The order in which to activate the flow. Setting the order is useful when activating parent / child flows. However, the pipelines will attempt to activate flows as long as there are flows to activate if the order isn't set.  |
   | activateflow.activate.flow-name.flow-id                                 | No       | This configuration sets whether or not activate this flow. In certain cases flows may intentionally be left in an off state in a deployment environment. This setting will trigger the pipelines to either turn on the flow or not when deployed. |
   | connector.teamname.connector-name.connector-id                          | No       | The Dataverse Azure AD Group Team to share the connector record associated with the custom connector after import of the solution in the deployment environment. |
+  | groupTeam.teamid.aadGroupId                                             | No       | Dataverse Group Teams to create in the deployment environment. |
+  | businessUnit.teamid.aadGroupId                                          | No       | Dataverse Business Unit associated with the Group Teams being created by groupTeam.teamid.aadGroupId. |
   | TriggerSolutionUpgrade                                                  | No       | True or false based on whether to apply solution upgrade during deployment to this environment. |
 
 ### Deployment Settings Schema
 
-The schema of the deployment settings is based on the various components that require post deployment configuration in a Dataverse solution and will be updated when new capabilities are added to the ALM Accelerator. The schema is defined in the [deployment-settings.schema.json](https://github.com/microsoft/coe-alm-accelerator-templates/deployment-settings.schema.json) file.
+The schema of the deployment settings is based on the various components that require post deployment configuration in a Dataverse solution and will be updated when new capabilities are added to the ALM Accelerator. The schema is defined in the [deployment-settings.schema.json](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/deployment-settings.schema.json) file.
 
 ### Deployment Settings Sample Payload
 
-The sample payload contains an example of a common payload for the ALM Accelerator pipelines. The sample payload is defined in the [deployment-settings.sample.json](https://github.com/microsoft/coe-alm-accelerator-templates/deployment-settings.sample.json) file. The data contained in this sample payload is passed to the [export pipeline as a parameter](/power-platform/guidance/coe/almaccelerator-pipelines). The UserSettings array contains a list of all of the deployment pipeline variables that are set on the deployment pipeline(s). When the export pipeline is run, the deployment settings and custom deployment settings files are generated using placeholders for these values. When the deployment pipeline is run, the placeholders are replaced with the values from the deployment settings payload. The only exception is specific reserved pipeline variables that are created on the pipeline, but not included in the deployment settings or custom deployment settings (for example, TriggerSolutionUpgrade). Additionally, if the UseDeploymentSettingsPlaceholders variable is set to false, the placeholders aren't used and the values are set directly in the deployment settings and custom deployment settings files.
+The sample payload contains an example of a common payload for the ALM Accelerator pipelines. The sample payload is defined in the [deployment-settings.sample.json](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/deployment-settings.sample.json) file. The data contained in this sample payload is passed to the [export pipeline as a parameter](/power-platform/guidance/coe/almaccelerator-pipelines). The UserSettings array contains a list of all of the deployment pipeline variables that are set on the deployment pipeline(s). When the export pipeline is run, the deployment settings and custom deployment settings files are generated using placeholders for these values. When the deployment pipeline is run, the placeholders are replaced with the values from the deployment settings payload. The only exception is specific reserved pipeline variables that are created on the pipeline, but not included in the deployment settings or custom deployment settings (for example, TriggerSolutionUpgrade). Additionally, if the UseDeploymentSettingsPlaceholders variable is set to false, the placeholders aren't used and the values are set directly in the deployment settings and custom deployment settings files.

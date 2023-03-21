@@ -5,7 +5,7 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm tapanm
+ms.reviewer: mkaur tapanm
 ms.date: 11/07/2015
 ms.subservice: power-fx
 ms.author: gregli
@@ -15,7 +15,8 @@ search.app:
   - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Table function in Power Apps

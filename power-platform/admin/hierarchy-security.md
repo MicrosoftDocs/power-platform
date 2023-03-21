@@ -33,7 +33,7 @@ The hierarchy security model is an extension to the existing security models tha
 > [!NOTE]
 > With the Manager hierarchy security model, a manager has access to the records owned by the user or by the team that a user is a member of, and to the records that are directly shared with the user or the team that a user is a member of.  When a record is shared by a user who is outside of the management chain to a direct report user with Read-only access, the direct report's manager only has Read-only access to the shared record. 
 > 
-> When you enabled the [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), manager can have direct reports from different business units. You can use the following [environment database settings](environment-database-settings.md) to remove the business unit restriction.
+> When you enabled the [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), manager can have direct reports from different business units. You can use the following [environment database settings](environment-database-settings.md) to remove the business unit restriction.
 > 
 > **ManagersMustBeInSameOrParentBusinessUnitAsReports**
 > 
@@ -59,7 +59,7 @@ The hierarchy security model is an extension to the existing security models tha
   
 -   User 2 has Business Unit read access on the Account table. This allows User 2 to view all of the accounts for the business unit, including all of the accounts owned by User 1 and User 3.  
   
--   User 1, as a direct manager of User 2, has access to the accounts owned by or shared with User 2, and any accounts that are shared with or owned by a team that User 2 is a member of. However, User 1 doesn’t have access to the accounts of User 3, even though his or her direct report may have access to User 3 accounts.  
+-   User 1, as a direct manager of User 2, has access to the accounts owned by or shared with User 2, and any accounts that are shared with or owned by a team that User 2 is a member of. However, User 1 doesn’t have access to the accounts of User 3, even though their direct report may have access to User 3 accounts.  
   
 ## Position hierarchy  
  The Position hierarchy is not based on the direct reporting structure, like the Manager hierarchy. A user doesn’t have to be an actual manager of another user to access user’s data. As an administrator, you will define various job positions in the organization and arrange them in the Position hierarchy. Then, you add users to any given position, or, as we also say, “tag” a user with a particular position. A user can be tagged only with one position in a given hierarchy, however, a position can be used for multiple users. Users at the higher positions in the hierarchy have access to the data of the users at the lower positions, in the direct ancestor path. The direct higher positions have Read, Write, Append, AppendTo access to the lower positions’ data in the direct ancestor path. The non-direct higher positions, have Read-only access to the lower positions’ data in the direct ancestor path.  
@@ -98,7 +98,7 @@ Make sure you have the System Administrator permission to update the setting.
 > ![Set up hierarchy security.](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security")
 
   
- Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access his or her accounts and the accounts of the reports two levels deep. In our example, if you log in into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
+ Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you log in into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
 
 > [!div class="mx-imgBorder"] 
 > ![Read access for VP of Sales.](../admin/media/sales-vp-access.png "Read access for VP of Sales")
