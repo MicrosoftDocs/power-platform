@@ -46,7 +46,7 @@ You should see a list of the existing security roles in your environment.
 6. [Define the privileges and properties of the security role](#define-the-privileges-and-properties-of-a-security-role).
 
 
-## Editing an existing security role
+## Edit an existing security role
 
 To edit an existing security role, either select the role name, or select the row and choose **Edit.**
 
