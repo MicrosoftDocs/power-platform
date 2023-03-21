@@ -15,6 +15,8 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+contributors: 
+- JasonHQX
 ---
 # Replicate data to Azure SQL Database using Data Export Service
 
