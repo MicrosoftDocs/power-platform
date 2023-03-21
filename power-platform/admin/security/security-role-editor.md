@@ -30,7 +30,10 @@ To access the security role editor:
 4.  Select **Settings**.
 5.  Expand **Users + Permissions**.
 6.  Select **Security roles**. A list of the existing security roles in your environment is displayed.
-7.  
+7.  Complete the appropriate task:
+    - [Create a new security role](#create-a-new-security-role)
+    - [Edit an existing security role](#edit-an-existing-security-role)
+    - [Copy a security role](#copy-a-security-role)
 
 > [!Important]
 > [!include [preview](../../includes/cc-preview-features-definition.md)]
@@ -51,7 +54,7 @@ To edit an existing security role, either select the role name, or select the ro
 
 ## Copy a security role
 
-Select the security role and choose copy. You will need to give the role a new name. Note that only the privileges will be copied, the assigned members and teams will not be assigned to the copied role.
+Select the security role and choose copy. You will need to give the role a new name. Note that only the privileges will be copied, the assigned members and teams will not be assigned to the copied role. [Edit the security role](#edit-an-existing-security-role), as needed.
 
 ## Define the privileges and properties of a security role
 
