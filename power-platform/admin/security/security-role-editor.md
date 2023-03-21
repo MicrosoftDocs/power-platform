@@ -42,7 +42,9 @@ You should see a list of the existing security roles in your environment.
 2. In the **Role Name** field, enter a name for the new role.
 3. In the **Business unit** field, select the corresponding business unit the role will belong to.
 4. Indicate if team members should inherit the role. If enabled and the role is assigned to a team, all team members will inherit all the privileges associated with this role.
-5. Select **Save** to save the role, and it will open the security role editor.
+5. Select **Save** to save the role.
+6. [Define the privileges and properties of the security role](#define-the-privileges-and-properties-of-a-security-role).
+
 
 ## Editing an existing security role
 
@@ -52,7 +54,7 @@ To edit an existing security role, either select the role name, or select the ro
 
 Select the security role and choose copy. You will need to give the role a new name. Note that only the privileges will be copied, the assigned members and teams will not be assigned to the copied role.
 
-## Security role editor overview
+## Define the privileges and properties of a security role
 
 The security role editor allows you to define the privileges and properties of a specific security role.
 
@@ -141,27 +143,27 @@ Updating settings for each table can be very time-consuming and tedious. To expe
 
 ![Selecting a table and copying the permissions to other tables ](media/image4.png)
 
-Note : The behavior of the copy table permission will be as follows:
+The behavior of the copy table permission will be as follows:
 
-1.  For permissions that exist in both source and target :
+1.  For permissions that exist in both source and target:
 
-    1.  If the source permission settings depth exists in the target, then the copy table permissions will be successful
+    - If the source permission settings depth exists in the target, then the copy table permissions will be successful.
 
-    2.  If the source permission settings depth DOES NOT exist in target, then there will an error message thrown letting the user know that the copy process failed.
+    - If the source permission settings depth **does not** exist in target, then there will an error message displayed indicating that the copy process failed.
 
 2.  For permissions that only exist in EITHER source OR target:
 
-    1.  If the permission exists in the source and not in the target, then it will be ignored in the target and the copy for the remaining permissions will be successful.
+    - If the permission exists in the source and not in the target, then it will be ignored in the target and the copy for the remaining permissions will be successful.
 
-    2.  Similarly, if the permissions DOES NOT exist in the source and EXISTS in the target, then the current depth of that permission will be retained in the target and the copy for the remaining permissions will be successful.
+    - Similarly, if the permissions DOES NOT exist in the source and EXISTS in the target, then the current depth of that permission will be retained in the target and the copy for the remaining permissions will be successful.
 
-## Permission Settings
+## Permission settings
 
 Another option to expedite configuration of table permissions is to use predefined groups of permissions and assign them to tables.
 
 The following permission setting groups are available:
 
-| **Permission Setting** | **Details**                                               |
+| **Permission setting** | **Details**                                               |
 |------------------------|-----------------------------------------------------------|
 | No Access              | No access to the table.                                   |
 | Full Access            | Full access to the table.                                 |
