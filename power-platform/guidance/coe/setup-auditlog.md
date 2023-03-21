@@ -165,7 +165,7 @@ You should see a (200) status returned, which means the query was successful.
 > If you have previously enabled the subscription, you will see a **(400) The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
 > If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
->
+> - Validate that the identity provider on the **Security** tab is set to Azure Active Directory.
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check by seeing if you can search in the [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
@@ -173,6 +173,8 @@ You should see a (200) status returned, which means the query was successful.
 > - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
 > - Validate that you correctly followed the steps in [Azure AD app registration](#create-an-azure-ad-app-registration-for-the-office-365-management-api)
 > - Validate that you correctly updated the security settings of the custom connector, as described in [step 6 of the custom connector setup](#set-up-the-custom-connector) procedure earlier in this article.
+>
+> If you are still seeing failures, your connection may be in a bad state. Learn more: [Step-by-step instructions to repair Audit Log connection](https://github.com/microsoft/coe-starter-kit/issues/4961)
 
 ### Set up the Power Automate flow
 

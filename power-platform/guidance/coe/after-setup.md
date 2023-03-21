@@ -158,6 +158,10 @@ Once you've removed unmanaged layers, you can import the new solution version:
 
 1. Once you have finished this step, move on to [testing](#testing-strategy).
 
+## Updating the Audit Log solution
+
+Connections to custom connectors have to be re-established after solution upgrade. If you are using the Audit Log solution, [reset the connection](https://github.com/microsoft/coe-starter-kit/issues/1424) to the custom connector.
+
 ## Testing strategy
 
 As with installing any update, testing prior to installation in a production environment increases the likelihood of success.
