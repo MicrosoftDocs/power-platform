@@ -123,12 +123,12 @@ The following table provides details about each specific table privilege:
 
 For each specific privilege, there is a drop-down menu that allows you to define the access level. Access levels determine how deep or high in the business unit hierarchy the user can perform the specified privilege in the organization. 
 
-The following table lists the levels of access in the app, starting with the level that gives users the most access. Note that for organization-owned tables, miscellaneous privileges, and privacy-related privileges will only have **Organization** or **None** types.
+The following table lists the levels of access in the app, starting with the level that gives users the most access.. Note that for organization-owned tables, miscellaneous privileges, and privacy-related privileges will only have **Organization** or **None** types.
 
 | **Type** | **Description** |
 |-------------------------|-------------------------|
-| Organization | This access level gives a user access to all records in the organization, regardless of the business unit, hierarchical level that the environment or the user belongs to. Users who have organization access automatically have the other types of access listed below as well.<br /></br><br /></br>Because this access level gives access to information throughout the organization, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the organization. |
-| Parent-Child Business Units | This access level gives a user access to records in the user's business unit and all business units subordinate to the user's business unit.<br /></br><br /></br>Users who have the access automatically have business unit and user access.<br /></br><br /></br>Because this access level gives access to information throughout the business unit and subordinate business units, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the business units. |
+| Organization | This access level gives a user access to all records in the organization, regardless of the business unit hierarchical level that the environment or the user belongs to. Users who have organization access automatically have the other types of access listed below as well.<br /></br><br /></br>Because this access level gives access to information throughout the organization, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the organization. |
+| Parent: Child Business Unit | This access level gives a user access to records in the user's business unit and all business units subordinate to the user's business unit.<br /></br><br /></br>Users who have the access automatically have business unit and user access.<br /></br><br /></br>Because this access level gives access to information throughout the business unit and subordinate business units, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the business units. |
 | Business Unit | This access level gives a user access to records in the user's business unit.<br /></br><br /></br>Users who have business unit access automatically have user access.<br /></br><br /></br>Because this access level gives access to information throughout the business unit, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the business unit. |
 | User | This access level gives a user access to records that the user owns, objects that are shared with the organization, objects that are shared with the user, and objects that are shared with a team that the user is a member of.<br /></br><br /></br>This is the typical level of access for sales and service representatives. |
 | None | No access is allowed. |
@@ -155,7 +155,7 @@ The behavior of the copy table permission will be as follows:
 
     - If the permission exists in the source and not in the target, then it will be ignored in the target and the copy for the remaining permissions will be successful.
 
-    - Similarly, if the permissions DOES NOT exist in the source and EXISTS in the target, then the current depth of that permission will be retained in the target and the copy for the remaining permissions will be successful.
+    - Similarly, if the permissions **does not** exist in the source and exists in the target, then the current depth of that permission will be retained in the target and the copy for the remaining permissions will be successful.
 
 ## Permission settings
 
