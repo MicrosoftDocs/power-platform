@@ -29,9 +29,8 @@ To access the security role editor:
 3.  Select the check mark next to the environment you want to use.
 4.  Select **Settings**.
 5.  Expand **Users + Permissions**.
-6.  Select **Security roles**.
-
-You should see a list of the existing security roles in your environment.
+6.  Select **Security roles**. A list of the existing security roles in your environment is displayed.
+7.  
 
 > [!Important]
 > [!include [preview](../../includes/cc-preview-features-definition.md)]
@@ -48,7 +47,7 @@ You should see a list of the existing security roles in your environment.
 
 ## Edit an existing security role
 
-To edit an existing security role, either select the role name, or select the row and choose **Edit.**
+To edit an existing security role, either select the role name, or select the row and choose **Edit.** Then [define the privileges and properties of the security role](#define-the-privileges-and-properties-of-a-security-role).
 
 ## Copy a security role
 
@@ -90,7 +89,7 @@ Tables are, by default, grouped into the following categories:
 -   Service
 -   Service Management
   
-### Configuring permissions
+### Configure permissions
 
 In the security role editor, the tables are organized by groupings that align to their module or application.
 
