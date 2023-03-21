@@ -4,18 +4,14 @@ description: The security role management experience in the Power Platform admin
 ms.date: 03/20/2023
 ms.service: power-platform
 ms.topic: overview
-author: sericks007
+author: DhruAvenger1976
 ms.subservice: admin
-ms.author: sericks
+ms.author: pmantha
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
   - Powerplatform
-ms.contributors:
-- pmantha
-contributors:
-- DhruAvenger1976
 ---
 
 # Security role editor (preview)
