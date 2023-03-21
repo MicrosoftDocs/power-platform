@@ -143,17 +143,15 @@ For each table, select the appropriate type for each privilege. Select **Save** 
 
 Updating settings for each table can be very time-consuming and tedious. To expedite the process, you can select a table and choose **Copy table permissions**, then search and choose the tables to which you want to replicate the permissions. Note that this will overwrite existing configuration. Select **Save** to update the permissions.
 
-![Selecting a table and copying the permissions to other tables ](media/image4.png)
-
 The behavior of the copy table permission will be as follows:
 
 1.  For permissions that exist in both source and target:
 
     - If the source permission settings depth exists in the target, then the copy table permissions will be successful.
 
-    - If the source permission settings depth **does not** exist in target, then there will an error message displayed indicating that the copy process failed.
+    - If the source permission settings depth **does not** exist in target, an error message is displayed indicating that the copy process failed.
 
-2.  For permissions that only exist in EITHER source OR target:
+2.  For permissions that only exist in either the source or target:
 
     - If the permission exists in the source and not in the target, then it will be ignored in the target and the copy for the remaining permissions will be successful.
 
@@ -173,10 +171,8 @@ The following permission setting groups are available:
 | Private                | Full access to tables owned by the specific user or team. |
 | Reference              | Read only access to the table.                            |
 
-To set or update a table's permission setting, select the table, and choose **Permission Settings** from the main menu or by menu made visible by selecting the ellipses (…).
+To set or update a table's permission setting, select the table and choose **Permission Settings** in the command bar or by selecting the ellipses (**…**) in the row.
 
 Select the appropriate setting and select **Save**. Note that this will overwrite the existing permissions of the table.
 
 For tables where you have specified the individual permission settings will show as having a **Custom** permission setting.
-
-![Selecting the permission setting for a specific table ](media/image5.png)
