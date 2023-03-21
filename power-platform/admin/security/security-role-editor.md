@@ -14,6 +14,8 @@ search.app:
   - Powerplatform
 ms.contributors:
 - pmantha
+contributors:
+- DhruAvenger1976
 ---
 
 # Security role editor (preview)
