@@ -9,6 +9,8 @@ ms.subservice: admin
 ms.author: sericks
 ms.contributors:
 - macarrer
+- pvayner
+- shailesn
 ---
 # Power Platform and Dynamics 365 apps - operated by 21Vianet in China
 
