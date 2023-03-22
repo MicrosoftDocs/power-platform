@@ -1,6 +1,6 @@
 ---
 title: "Power Platform and Dynamics 365 apps operated by 21Vianet in China  | MicrosoftDocs"
-description: Provides information about Power Platform and Dynamics 365 apps ((Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) that are operated by 21Vianet in China
+description: Provides information about Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) that are operated by 21Vianet in China
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
