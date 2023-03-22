@@ -14,7 +14,8 @@ ms.collection: virtual-agent
 # Triggering topics
 
 There are two main ways to trigger a topic: 
-- **Based on the user query** (also known as utterance). Topic triggering based on what an end-user writes or says is also referred to as intent recognition. The AI uses natural language understanding (NLU) to parse what a user says and find the most appropriate trigger phrase or node. 
+- **Based on the user query** (also known as utterance). Topic triggering based on what an end-user writes or says is also referred to as *intent recognition*. <br>
+The AI uses Natural Language Understanding (NLU) to parse what a user says and finds the most appropriate trigger phrase or node. 
 - **By redirecting** to it from another topic, with a redirect node.
 
 ## Triggering topics based on a user qurey

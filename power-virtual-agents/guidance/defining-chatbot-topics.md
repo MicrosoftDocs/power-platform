@@ -48,3 +48,6 @@ You may also need some topics that are just there to take ambiguous user questio
 ## Expect to create both single-turn and multi-turn interactions
 
 For simple interactions, you’ll create single-turn conversations with just one question and one answer. But more substantive topics require a multi-turn conversation with multiple back-and-forth interactions between the user and your bot. For instance, if a user asks a retail bot whether there are any stores nearby, the chatbot might respond with a question such as *"What city do you live in*" or "*What is your postal code?*" to narrow down its possible responses. The user’s response to this will determine the bot’s next response in the conversation.
+
+> [!div class="nextstepaction"]
+> [Topic authoring best practices](topic-authoring-best-practices.md)
