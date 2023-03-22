@@ -20,9 +20,9 @@ Microsoft Power Platform and Dynamics 365 apps services operated by 21Vianet is 
 
 Customers in China have two options from which to select how they want to access Power Platform and Dynamics 365 apps.
 
-- Services operated by 21Vianet in China - 21Vianet operates and offers Dataverse services in China. This option provides a consistent Power Platform and Dynamics 365 apps experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
+- **Services operated by 21Vianet in China** - 21Vianet operates and offers Dataverse services in China. This option provides a consistent Power Platform and Dynamics 365 apps experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
-- Services operated by Microsoft – This option is for customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Power Platform and Dynamics 365 apps, and Office using an Enterprise Agreement, Microsoft 365 and/or Power Platform and Dynamics 365 apps can co-exist on the tenant. 
+- **Services operated by Microsoft** – This option is for customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Power Platform and Dynamics 365 apps, and Office using an Enterprise Agreement, Microsoft 365 and/or Power Platform and Dynamics 365 apps can co-exist on the tenant. 
 
 For information on provisioning environments, see [Create and manage environments in the Power Platform admin center](./create-environment.md).
 
