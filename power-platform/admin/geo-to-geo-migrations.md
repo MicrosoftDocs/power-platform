@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 2/28/2023
 ms.subservice: admin
 ms.author: matgupta 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors: 
     - ProfessorKendrick
 search.audienceType: 
@@ -89,6 +89,10 @@ The following topics have information that could be helpful to understand the mo
 
 Before the migration: 
 1. For apps that are solution aware, you can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all apps/solutions either individually or group them together into a single solution (if they're not already).
+2. Once the canvas apps have been exported, delete the apps in the environment.
+
+> [!IMPORTANT]
+> Any canvas apps, custom pages, or component libraries that are not deleted in the environment prior to migration, will be in a corrupted state after migration.
 
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/ and navigate to the **Solutions** page.
