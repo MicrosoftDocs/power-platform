@@ -34,16 +34,17 @@ There is no need to leave speficic words out, as the model is already designed t
 
 | Tip | Examples |
 |----------|-----------|
-| **Have at least 5-10 trigger phrases per topic** <br>Iterate and add more as your learn from users | - |
-| **Vary sentence structure and key terms** | <ul><li>*"Find my nearest store"*</li><li>*"Check shop location"*</li></ul> |
-| **Use short trigger phrases** <br> Usually less than 10 words | - |
-| **Avoid single-word trigger phrases** | - |
-| **Use complete phrases** | - |
-| **Have unique verb/noun or combinations of those** | - |
-| **When using examples from entities, avoid using the same  variation** <br> You also don't need to use all of the examples from the entity value, as the NLU will automatically consider all the variations. | <ul><li>*I want to order a **burger***</li><li>*I would like a **pizza***</li><li>*I want **chicken nuggets***</li></ul> |
+| **Have at least 5-10 trigger phrases per topic** <br>Iterate and add more as your learn from users | |
+| **Vary sentence structure and key terms** | *"Find my nearest store"*<br>*"Check shop location"* |
+| **Use short trigger phrases** <br> Usually less than 10 words | |
+| **Avoid single-word trigger phrases** | |
+| **Use complete phrases** | |
+| **Have unique verb/noun or combinations of those** | |
+| **When using examples from entities, avoid using the same  variation** <br> You also don't need to use all of the examples from the entity value, as the NLU will automatically consider all the variations. | *I want to order a **burger*** <br> *I would like a **pizza***<br> *I want **chicken nuggets*** |
 
-## Assessing the impact of your changes to an existing chatbot
+## Assessing the impact of your changes
 
 When updating trigger phrases, or when merging or splitting topics, there are two ways to assess the changes:
-> - An immediate change in chatbot behavior which can be observed through the "test bot" canvas (e.g. a topic that is now triggering or not based on trigger phrases updates).
-2.	A change after bot deployment and facing traffic, which translates to higher/lower deflection (non-escalation) rates. This can be observed from the analytics tab in PVA.
+> [!div class="checklist"]
+> * An immediate change in chatbot behavior, which can be observed through the "test bot" canvas (e.g. a topic that is now triggering or not based on trigger phrases updates).
+> * A change after bot deployment and facing traffic, which translates to higher/lower deflection (non-escalation) rates. This can be observed from the analytics tab in Power Virtual Agents.
