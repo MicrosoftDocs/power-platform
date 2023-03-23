@@ -90,6 +90,8 @@ Connections are independent from license checks. You can have multiple user conn
 
 If the flow is a solution-aware flow, you can [change the owner](/power-automate/change-cloud-flow-owner) in Power Automate, or use [Power Automate Web API](/power-automate/web-api#update-a-cloud-flow) to ensure the flow works without interruptions. If the flow is a non-solution-aware flow, any co-owners can add it to a solution and then change the owner. If not, assign a per flow license to the flow to ensure it continues to run. Alternatively, any co-owners of the flow can export and import the flow. When imported, the flow will be a new flow and the co-owner will now become the owner of the flow. And the flow will use the license of the new owner. 
 
+The flow will be downgraded to lower performance and all flow owners will be notified and the flow will be turned off in 14 days if no action is taken.
+
 ### The owner of the flow no longer has a premium license, but the flow is a premium flow. What happens?
 
 The flow will be downgraded to lower performance and all flow owners will be notified and the flow will be turned off in 14 days if no action is taken.
@@ -131,7 +133,7 @@ Office 365 licenses include the following Power Automate capabilities:
   
 - Create and execute automated, scheduled, and button flows.
 - Access to [standard connectors](./types.md#standard-connectors).
-- 2,000 [Power Platform requests/day](./types.md#power-platform-requests). 10,000 requests/day during [transition period](./types.md#transition-period).
+- 6,000 [Power Platform requests/day](./types.md#power-platform-requests). 10,000 requests/day during [transition period](./types.md#transition-period).
   
 The following Power Automate capabilities aren't included:
   
@@ -239,7 +241,7 @@ A limited set of Power Automate capabilities are included as part of a Power App
 - [Business process flows](./types.md#business-process-flows) within app context.
 - [Custom connectors](./types.md#custom-connectors) within app context.
 - [On-premises gateways](./types.md#on-premises-gateway) within app context.
-- Power Platform request limits: Power Apps per user gets 5,000 requests/day (25,000 requests/day during the [transition period](./types.md#transition-period)) and Power Apps per app gets 1,000 requests/day (10,000 requests/day during the [transition period](./types.md#transition-period)).
+- Power Platform request limits: Power Apps per user gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)) and Power Apps per app gets 6,000 requests/day (10,000 requests/day during the [transition period](./types.md#transition-period)).
 - Power Apps per user gets 250 MB Dataverse database capacity and 2 GB Dataverse file capacity. Power Apps per app gets 50 MB Dataverse database capacity and 400 MB Dataverse file capacity. Flows invoked by the app created using Power Apps that handle complex objects will consume this storage limit. For example, if a flow parses a 100-page document and makes updates to it, the storage it needs to retain the document in run history for future troubleshooting will consume this limit.
 
 The following Power Automate capabilities aren't included in Power Apps licenses:
@@ -267,13 +269,38 @@ In this example, the app created using Power Apps is being used outside the cont
 
 An environment has multiple apps. There are flows for data management that do not directly support the app but ensure the data quality. The user needs a standalone Power Automate license. 
 
+### How can i assosciate incontext flows to apps 
 Flows created to support apps built with Power Apps must run within the context of the app, meaning the flow must use the same data sources for triggers or actions as the app. Flows that are triggered from the app are automatically considered as being in context of the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the apps using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app). Once the flow is linked, a dependency is established between the app and the flow and they can be managed together. If the linked app is deleted or unused, the flow will be turned off.
 
 If a premium flow is not in context of any app, you must purchase a standalone Power Automate license.
 
-### How can I easily determine if my flow is in context of a Power Apps/Dynamics 365 app?
+### How can I easily determine if my flow is in context of a Power Apps/Dynamics 365 app
 
-Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be deleted if the corresponding apps are deleted? If so, the flow is in context. 
+Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be deleted if the corresponding apps are deleted? Is the flow talking to the same data sources as the app? If so, the flow is in context. 
+
+### How can i identify flows that need premium licenses to avoid interruptions
+Admins have a Powershell command to see the flows that need their attention like the following: 
+1. Premium flows where flow owner left the organization.
+2. Premium flows where the flow owner doesnt have a premium license(owner previously had a trial/license that is expired now)
+3. Premium flows created by flow owner with Power Apps license but the flow is not triggered by the Power App.
+4. Premium flows created by flow owner with D365 license but the flow is not in a Dynamics environment or the flow is not interacting with Dynamics entities. 
+5. Environments where there are more per flow plans assigned to the flows than active per flow licenses assigned to the environment. 
+
+Assign a per user license to the owner of the flow or assign a per flow license to the flow to avoid the flow being turned off. see [flow expiration limits](/power-automate/limits-and-config#expiration-limits)
+
+To update the modules:
+Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force
+Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Force 
+ 
+Command:
+Get-AdminFlowAtRiskOfSuspension 
+ 
+Command example with export: 
+Get-AdminFlowAtRiskOfSuspension -EnvironmentName  <ENV_NAME> -ApiVersion '2016-11-01' | Export-Csv -Path suspensionList.csv -NoTypeInformation
+
+
+
+Makers can find a premium icon next to the name of a premium flow 
 
 ## Multiplexing
 
@@ -293,7 +320,7 @@ Definitions:
 
 - **Service account**: Azure Active Directory (Azure AD) user account used as a service account. Service accounts are a special type of account that are intended to represent a non-human entity such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, are difficult to track and managing their passwords is a challenge. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. 
 
-- **Service principal**: Azure AD service principal functions as the identity of the application instance. Service principals define who can access the application and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object. Power Automate doesn't yet support a flow to run under service principal; the [feature](/power-platform-release-plan/2022wave1/power-automate/ownership-supported-service-principals) is planned. 
+- **Service principal**: Azure AD service principal functions as the identity of the application instance. Service principals define who can access the application and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object. 
 
 - **Non-interactive users**: Dataverse supports non-interactive users for activities like background processes that migrate data between databases. These do not require a user to interact with the service. There is a maximum limit of 7 non-interactive users per tenant. Non-interactive users are not yet supported by Power Automate. 
 
