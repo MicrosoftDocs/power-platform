@@ -42,7 +42,7 @@ Beginning in April, 2023, current and future Microsoft Business Applications cus
 
 These cutting-edge datacenters provide the necessary capacity and robustness to sustain the ongoing expansion and demand of Business Applications in China, and offer the opportunity to introduce new capabilities and offerings that are currently not available in the region. This development represents an exciting and promising advancement for the future of Business Applications in China.
 
-As of April 10, 2023, new Power Platform Dataverse environments will be created in China 3. Subsequently, throughout April, May, June, July, and August 2023, the Microsoft product engineering teams will transition existing Power Platform Dataverse to Microsoft Azure China 3.  There will be no changes to the Environment IDs, Org IDs, Tenant IDs, URLs or URIs used to access Business Applications Environments, nor will there be any functionality impact. 
+As of April 17, 2023, new Power Platform Dataverse environments will be created in China 3. Subsequently, throughout April, May, June, July, and August 2023, the Microsoft product engineering teams will transition existing Power Platform Dataverse to Microsoft Azure China 3.  There will be no changes to the Environment IDs, Org IDs, Tenant IDs, URLs or URIs used to access Business Applications Environments, nor will there be any functionality impact. 
 
 As customer tenants are selected for transition, notifications will be distributed to the Microsoft 365 Message Center notifying administrators of this maintenance activity, specifically indicating when this will take place for their environments. It is expected this will take place between 15:00 UTC and 21:00 UTC. Both non-production and production environments will be transitioned without customer involvement; but is expected to cause a minor service communication interruption lasting less than 10 minutes.
 
@@ -51,7 +51,7 @@ Existing workloads are not expected to require customer reconfiguration or updat
 
 [Download Azure IP Ranges and Service Tags – China Cloud from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/confirmation.aspx?id=57062))
 
-Within the JSON file linked through Download Center, above, Business Applications engineering team suggests a focused review on defined IP filtering related to the following tags:
+Within the JSON file linked through Download Center, above, the Business Applications engineering team suggests a focused review on defined IP filtering related to the following tags:
 - PowerPlatformInfra.ChinaEast3
 - PowerPlatformInfra.ChinaNorth3
 - PowerPlatformPlex.ChinaEast3
@@ -82,7 +82,7 @@ This will take place sometime during the maintenance window, which will be publi
 #### What is our escalation path should this transition not complete, as expected?
 Microsoft engineers will be actively monitoring this transition and will take actions to mitigate unforeseen circumstances, should they present themselves. Of course, we encourage our customers to raise a high severity ticket through their established processes whenever there is a need to engage 21-V and Microsoft support for urgent assistance.  Our engineering team will be on high alert for those environments that are executing the transition to the China 3 datacenters.  
 
-#### I have created a new environment after April 15, 2023. However, we have not updated our IP filters and, thus, are unable to connect to our environment.
+#### I have created a new environment after April 17, 2023. However, we have not updated our IP filters and, thus, are unable to connect to our environment.
 We encourage you to update your IP filters per the guidance above. If this is not possible in the timeframes you require, please follow your established support request procedure to raise a support ticket. The support engineers will work to follow an established procedure to manually provision your environment to China 2. This new environment will be transitioned when your tenant is scheduled for transition into China 3.
 
 #### Who should I contact with additional questions?
