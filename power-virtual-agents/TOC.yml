@@ -27,20 +27,20 @@
     - name: Power Virtual Agents preview
       items:
         - name: What's currently in preview
-          href: preview/overview.md
+          href: overview-preview.md
         - name: Quickstart guide (preview)
-          href: preview/quickstart.md
+          href: quickstart-preview.md
         - name: Limitations (preview)
-          href: preview/limitations.md
+          href: limitations-preview.md
         - name: Key concepts for Composer users (preview)
-          href: preview/composer-concepts.md
+          href: composer-concepts-preview.md
 - name: Power Virtual Agents web app
   items:
     - name: Overview
       items:
-        - name: Power Virtual Agents online overview
+        - name: Power Virtual Agents overview
           href: fundamentals-what-is-power-virtual-agents-portal.md
-        - name: Use pre-built chatbot templates
+        - name: Use pre-built chatbot templates in Microsoft Teams
           href: fundamentals-templates.md
         - name: Quickstart - Create and deploy a chatbot
           href: fundamentals-get-started.md
@@ -58,8 +58,6 @@
           href: admin-share-bots.md
         - name: Export and import bots using solutions
           href: authoring-export-import-bots.md
-        - name: Export and import bots using solutions  (preview)
-          href: preview/authoring-export-import-bots.md
         - name: Regional settings and data locations for organizations
           href: data-location.md
     - name: Author and edit
@@ -68,44 +66,30 @@
           href: authoring-fundamentals.md
         - name: Create and delete bots
           href: authoring-first-bot.md
-        - name: Use lesson topics
+        - name: Start with sample topics
           href: authoring-template-topics.md
         - name: Use system topics
           href: authoring-system-topics.md
-        - name: Use system topics (preview)
-          href: preview/authoring-system-topics.md
         - name: Create and edit topics
           href: authoring-create-edit-topics.md
-        - name: Create and edit topics (preview)
-          href: preview/authoring-create-edit-topics.md
-        - name: Start with sample topics (preview)
-          href: preview/authoring-template-topics.md
         - name: Start from existing content (preview)
-          href: preview/clone-existing-bot.md
+          href: clone-existing-bot.md
         - name: Send a message (preview)
-          href: preview/authoring-send-message.md
+          href: authoring-send-message.md
         - name: Use system fallback topic
           href: authoring-system-fallback-topic.md
         - name: Manage topics
           href: authoring-topic-management.md
-        - name: Manage topics (preview)
-          href: preview/authoring-topic-management.md
-        - name: Ask a question (preview)
-          href: preview/authoring-ask-a-question.md
-        - name: View topic status (preview)
-          href: preview/authoring-topic-status.md
-        - name: Add comments to bots
+        - name: Add comments to bots (preview)
           href: authoring-comments.md
+        - name: Author using conditions (preview)
+          href: authoring-using-conditions
         - name: Test your bot
           href: authoring-test-bot.md
-        - name: Test your bot (preview)
-          href: preview/authoring-test-bot.md
         - name: Supported languages
           href: authoring-language-support.md
         - name: Troubleshoot error codes
           href: error-codes.md
-        - name: Troubleshoot error codes (preview)
-          href: preview/error-codes.md
     - name: Enhance and improve
       items:
         - name: Key concepts - Enhanced authoring
@@ -116,27 +100,21 @@
           href: advanced-entities-slot-filling.md
         - name: Use variables
           href: authoring-variables.md
-        - name: Use variables (preview)
-          href: preview/authoring-variables.md
         - name: Reuse variables across topics
           href: authoring-variables-bot.md
-        - name: Reuse variables across topics (preview)
-          href: preview/authoring-variables-bot.md
         - name: Create topics from existing support content
           href: advanced-create-topics-from-web.md
         - name: Create topics from Customer Service Insights
           href: advanced-create-topics-from-csi.md
         - name: Add user authentication
           href: advanced-end-user-authentication.md
-        - name: Add user authentication (preview)
-          href: preview/advanced-user-authentication.md
         - name: Use expressions using Power Fx (preview)
-          href: preview/advanced-power-fx.md
+          href: advanced-power-fx.md
         - name: Send proactive messages and cards in Microsoft Teams
           href: advanced-proactive-message.md
         - name: Accommodate time zones (preview)
           displayName: User date and time (preview)
-          href: preview/manage-date-and-time.md
+          href: manage-date-and-time.md
         - name: Trigger hand-off to a live agent
           href: advanced-hand-off.md
         - name: Use Power Automate flows
@@ -155,12 +133,8 @@
       items:
         - name: Key concepts - Publish your bot
           href: publication-fundamentals-publish-channels.md
-        - name: Key concepts - Publish your bot (preview)
-          href: preview/publication-fundamentals-publish-channels.md
         - name: Add bot to your live website
           href: publication-connect-bot-to-web-channels.md
-        - name: Add your bot to your live website (preview)
-          href: preview/publication-connect-bot-to-web-channels.md
         - name: Add bot to Power Apps portal
           href: publication-add-bot-to-power-apps-portal.md
         - name: Add bot to Microsoft Teams
@@ -171,6 +145,8 @@
           href: publication-connect-bot-to-custom-application.md
         - name: Add bot to Azure Bot Service channels
           href: publication-connect-bot-to-azure-bot-service-channels.md
+        - name: Create a privacy statement for Microsoft Teams bots
+          href: publication-terms-of-use-teams
         - name: Integrate with question answering
           href: integrate-with-question-answering.md
         - name: Integrate with Bot Framework skills
@@ -201,32 +177,18 @@
       items:
         - name: Key concepts - Analytics
           href: analytics-overview.md
-        - name: Key concepts - Analytics (preview)
-          href: preview/analytics-overview.md
         - name: Analyze bot performance and usage
           href: analytics-summary.md
-        - name: Analyze bot performance and usage (preview)
-          href: preview/analytics-summary.md
         - name: Analyze customer satisfaction
           href: analytics-csat.md
-        - name: Analyze customer satisfaction metrics (preview)
-          href: preview/analytics-csat.md
         - name: Analyze session information
           href: analytics-sessions.md
-        - name: Analyze session information (preview)
-          href: preview/analytics-sessions.md
         - name: Work with conversation transcripts
           href: analytics-sessions-transcripts.md
-        - name: Analyze topic usage
+        - name: Analyze your bot's topic performance
           href: analytics-topic-details.md
-        - name: Analyze billed session information
+        - name: View billed sessions
           href: analytics-billed-sessions.md
-        - name: Download bot conversation transcripts (preview)
-          href: preview/analytics-sessions-transcripts.md
-        - name: Analyze your bot's topic performance (preview)
-          href: preview/analytics-topic-details.md
-        - name: View billed sessions (preview)
-          href: preview/analytics-billed-sessions.md
     - name: Configure and customize
       items:
         - name: Key concepts - Configuration
@@ -245,16 +207,12 @@
           href: configuration-end-user-authentication.md
         - name: Configure user authentication with Azure Active Directory
           href: configuration-authentication-azure-ad.md
-        - name: Configure user authentication with Azure Active Directory (preview)
-          href: preview/configuration-authentication-azure-ad.md
         - name: Configure web and Direct Line channel security
           href: configure-web-security.md
         - name: Configure single sign-on for Web
           href: configure-sso.md
         - name: Configure single sign-on for Teams
-          href: configure-sso-teams.md
-        - name: Configure SSO for your custom website (preview)
-          href: preview/configure-web-sso.md
+          href: configure-sso.md
         - name: Configure hand-off to a generic engagement hub
           href: configure-generic-handoff.md
         - name: Configure voice and text hand off to Dynamics 365 Customer Service
@@ -263,8 +221,6 @@
           href: configure-bot-greeting.md
         - name: Customize the look and feel of the bot
           href: customize-default-canvas.md
-        - name: Customize the look and feel of the bot (preview)
-          href: preview/customize-default-canvas.md
     - name: Respond to GDPR Data Subject Rights (DSR) requests
       items:
         - name: Key concepts - GDPR compliance
@@ -275,107 +231,3 @@
           href: gdpr-delete.md
         - name: Requests to discover data
           href: gdpr-discovery.md
-- name: Power Virtual Agents in Teams
-  items:
-    - name: Overview
-      items:
-        - name: Power Virtual Agents in Teams overview
-          href: teams/fundamentals-what-is-power-virtual-agents-teams.md
-        - name: Use pre-built chatbot templates
-          href: teams/fundamentals-templates-teams.md
-        - name: Quickstart - Create and deploy a chatbot
-          href: teams/fundamentals-get-started-teams.md
-    - name: Administer and manage
-      items:
-        - name: Licensing for Virtual Power Agents in Teams
-          href: teams/requirements-licensing-teams.md
-        - name: Share bot with users in your organization
-          href: teams/admin-share-bots-teams.md
-        - name: Upgrade a Dataverse for Teams environment
-          href: teams/admin-upgrade-dataverse-teams.md
-        - name: Export and import chatbots made in Teams
-          href: teams/authoring-export-import-bots-teams.md
-        - name: Regional settings and data locations for organizations
-          href: teams/data-location-teams.md
-    - name: Author and edit
-      items:
-        - name: Key concepts - Authoring
-          href: teams/authoring-fundamentals-teams.md
-        - name: Create and delete bots
-          href: teams/authoring-first-bot-teams.md
-        - name: Use lesson topics
-          href: teams/authoring-template-topics-teams.md
-        - name: Use system topics
-          href: teams/authoring-system-topics-teams.md
-        - name: Create and edit topics
-          href: teams/authoring-create-edit-topics-teams.md
-        - name: Use system fallback topic
-          href: teams/authoring-system-fallback-topic-teams.md
-        - name: Manage topics
-          href: teams/authoring-topic-management-teams.md
-        - name: Test your bot
-          href: teams/authoring-test-bot-teams.md
-        - name: Supported languages
-          href: teams/authoring-language-support-teams.md
-        - name: Troubleshoot error codes
-          href: teams/error-codes-teams.md
-    - name: Enhance and improve
-      items:
-        - name: Key concepts - Enhanced authoring
-          href: teams/advanced-fundamentals-teams.md
-        - name: Enable advanced AI features
-          href: teams/advanced-ai-features-teams.md
-        - name: Use entities and slot filling
-          href: teams/advanced-entities-slot-filling-teams.md
-        - name: Use variables
-          href: teams/authoring-variables-teams.md
-        - name: Reuse variables across topics
-          href: teams/authoring-variables-bot-teams.md
-        - name: Create topics from existing support content
-          href: teams/advanced-create-topics-from-web-teams.md
-        - name: Add user authentication
-          href: teams/advanced-end-user-authentication-teams.md
-        - name: Add actions using Power Automate
-          href: teams/advanced-flow-teams.md
-        - name: Send proactive messages and cards
-          href: teams/advanced-proactive-message-teams.md
-        - name: Use Bot Framework Skills
-          href: teams/advanced-use-skills-teams.md
-    - name: Publish and integrate
-      items:
-        - name: Key concepts - Publish your bot
-          href: teams/publication-fundamentals-publish-channels-teams.md
-        - name: Add bot to Microsoft Teams
-          href: teams/publication-add-bot-to-microsoft-teams-teams.md
-        - name: Create a privacy statement and terms of use
-          href: teams/publication-terms-of-use-teams.md
-    - name: Monitor and diagnose
-      items:
-        - name: Key concepts - Analytics
-          href: teams/analytics-overview-teams.md
-        - name: Analyze bot performance and usage
-          href: teams/analytics-summary-teams.md
-        - name: Analyze customer satisfaction
-          href: teams/analytics-csat-teams.md
-        - name: Analyze session information
-          href: teams/analytics-sessions-teams.md
-        - name: Analyze topic usage
-          href: teams/analytics-topic-details-teams.md
-        - name: Analyze billed session information
-          href: teams/analytics-billed-sessions-teams.md
-    - name: Configure and customize
-      items:
-        - name: Key concepts - Configuration
-          href: teams/configuration-fundamentals-teams.md
-        - name: Configure web and Direct Line channel security
-          href: teams/configure-web-security-teams.md
-        - name: Configure user authentication
-          href: teams/configuration-end-user-authentication-teams.md
-        - name: Configure how the bot starts the conversation
-          href: teams/configure-bot-greeting-teams.md
-        - name: Customize the look and feel of the bot
-          href: teams/customize-default-canvas-teams.md
-        - name: Enable and configure Bot Framework Skills
-          href: teams/configuration-add-skills-teams.md
-    - name: GDPR compliance
-      href: teams/gdpr-summary-teams.md

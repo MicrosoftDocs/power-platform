@@ -2,13 +2,13 @@
 title: Configure hand-off to Dynamics 365 Customer Service
 description: Escalate bot conversations to live agents using omnichannel engagement capabilities of Dynamics 365 Customer Service.
 keywords: "PVA"
-ms.date: 12/05/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw  
 ms.author: iawilt
 ms.reviewer: clmori
-manager: shellyha
+manager: leeclontz
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: handoff, ceX

@@ -2,13 +2,13 @@
 title: "Hand off to a live agent (contains video)"
 description: "Learn how to hand off a bot conversation to a human agent, complete with context and conversation history."
 keywords: "PVA"
-ms.date: 12/28/2022
+ms.date: 03/24/2023
 
 ms.topic: how-to
 author: iaanw 
 ms.author: iawilt
 ms.reviewer: pawant
-manager: shellyha
+manager: leeclontz
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: handoff, ceX, advanced-authoring
