@@ -24,7 +24,13 @@ SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse c
 
 ## Where to find the SolutionPackager tool  
 
- The SolutionPackager tool is distributed as part of the [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGet package. See [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget) for information about how to download it.
+ The SolutionPackager tool is distributed as part of the [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGet package. To install the program, follow these steps.
+
+1. Download the NuGet package.
+1. Rename the package filename extension from .nupkg to .zip.
+1. Extract the contents of the compressed (zip) file.
+
+You will find the SolutionPackager.exe executable in the <extracted-folder-name>/contents/bin/coretools folder. Run the program from the coretools folder or add that folder to your PATH.
   
 <a name="arguments"></a>   
 
