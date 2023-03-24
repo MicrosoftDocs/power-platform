@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 search.audienceType: 
   - admin
 search.app: 
