@@ -35,7 +35,7 @@ These security roles can be assigned to the user, [owner team](manage-teams.md#t
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
 > [!IMPORTANT]
-> The predefined security roles that are available in your environment depends on the environment type and the apps you have installed in your environment. Read on to know about all the predefined security roles available in an environment.
+> The predefined security roles that are available in your environment depend on the environment type and the apps you have installed in your environment. Read on to know about all the predefined security roles available in an environment.
 
 ### Environments without a Dataverse database
 
