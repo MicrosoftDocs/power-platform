@@ -20,9 +20,6 @@ search.app:
 
 There are situations where you need to update a record’s owner, an Owning Business Unit, or both an owner and Owning Business Unit because the record changes ownership. If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure), you can update the record’s owning business unit. 
 
-> [!NOTE]
-> Changing the **Owning Business Unit** is a preview feature and is being rolled out over time.
-
 To update the record owner and owning business unit, you can add the Owning Business Unit in the header of the form and in the summary of the form.
 
 Follow these steps.
@@ -34,6 +31,19 @@ Follow these steps.
 3. Change the **Owner** or **Owner Business Unit** in the form header or form summary.
 
    :::image type="content" source="media/change-owning-business-unit.png" alt-text="Change Owner or Owner Business Unit":::
+
+## Record Ownership
+To prevent the situation where a record ownership was updated to a new owner and the new owner cannot access the record, the following privilege is required and enforced:
+1. The new owner must be in an **Enabled** user status, and 
+1. The new owner must be assigned with a security role which has a **Read** privilege of User level or above on the table, or
+2. The new owner belongs to a team which has a **Member's privilege inheritance** of Direct User access level that has a **Read** privilege of User level or above on the table, or
+3. The new owner belongs to a team which has a **Member's privilege inheritance** of Team privileges only that has a **Read** privilege of organization level on the table.
+
+If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure), and your users are assigned to teams, the team's security role **Member's privilege inheritance** must be set to Direct User access to allow team members to own records.
+
+> [!NOTE]
+> If you want to update the record ownership to a disabled user and also [share reports](/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them, you need to assign a security role to user with the above criteria. To assign a security role to a disabled user, you need to enable the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+
 
 ## Table relationship and cascading behavior 
 
