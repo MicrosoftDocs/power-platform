@@ -17,10 +17,16 @@
           items:
             - name: Establishing a Center of Excellence
               href: adoption/coe.md
+            - name: Measure business value
+              href: adoption/business-value.md
             - name: Roles and responsibilities
               href: adoption/roles.md
+            - name: Executive sponsorship
+              href: adoption/executive-sponsorship.md
             - name: Delivery models
               href: adoption/delivery-models.md
+            - name: License assignment strategies
+              href: adoption/developing-a-license-assignment-strategy.md
             - name: "Case study: Success Hub"
               items:
                 - name: Overview
