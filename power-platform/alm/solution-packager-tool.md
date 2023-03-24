@@ -30,7 +30,7 @@ SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse c
 1. Rename the package filename extension from .nupkg to .zip.
 1. Extract the contents of the compressed (zip) file.
 
-You will find the SolutionPackager.exe executable in the <extracted-folder-name>/contents/bin/coretools folder. Run the program from the coretools folder or add that folder to your PATH.
+You will find the SolutionPackager.exe executable in the \<extracted-folder-name\>/contents/bin/coretools folder. Run the program from the coretools folder or add that folder to your PATH.
   
 <a name="arguments"></a>   
 
