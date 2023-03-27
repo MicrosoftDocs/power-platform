@@ -35,4 +35,4 @@ More information: [GitHub Actions for Power Platform](/power-platform/alm/devops
 [Power Platform ALM guide](/power-platform/alm)<br/>
 [Power Platform ALM for developers](/power-platform/alm/alm-for-developers)<br/>
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
