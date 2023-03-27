@@ -29,9 +29,10 @@ Managed Environments is included as an entitlement in standalone Power Apps, Pow
 To see your current license usage, select **View license consumption (preview)** in the Power Platform admin center. More information: [View license consumption (preview)](view-license-consumption-issues.md)
 
 > [!IMPORTANT]
-> Enabling [pay-as-you-go](pay-as-you-go-overview.md) for a managed environment will not be sufficient to meet Managed Environments licensing requirements, if:
+> At this time, enabling [pay-as-you-go](pay-as-you-go-overview.md) for a managed environment will not be sufficient to meet Managed Environments licensing requirements, if:
 > - There are users without standalone Power Apps licenses using Power Apps in that environment.
 > - There are users without standalone Power Automate licenses using flows in that environment, or users using flows without Power Automate per flow licenses in that environment, or users using flows without Power Automate per flow licenses in that environment.
+
 
 > [!NOTE]
 > Trial licenses and Developer plans can be used to license users in Managed Environments, but the restrictions specific to these types of licenses still apply. For example, trial licenses can be used to licenses users for 30 days, while the Developer plan can be used to license users for dev/test purposes only in Developer environments.
