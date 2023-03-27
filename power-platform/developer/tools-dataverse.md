@@ -17,7 +17,9 @@ Microsoft Dataverse is the underlying data platform for Power Platform that stor
 - [What is Dataverse](/power-apps/maker/data-platform/data-platform-intro)
 - [Developers: Get started with Microsoft Dataverse](/power-apps/developer/data-platform/get-started-developers)
 
-Dataverse provides various tools for developers to extend the data platform capabilities. The following topic in the Dataverse developer guide provides a list of all the developer tools: [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget)  
+Dataverse provides various tools for developers to extend the data platform capabilities, such as Configuration Migration tool, Package Deployer tool, Plug-in Registration tool, SolutionPackager tool, and Code Generation tool.
+
+Go to this article in the Dataverse developer guide to find detailed information about how to download, launch, and use these tools: [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget)  
 
 ### See also
 
