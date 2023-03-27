@@ -61,10 +61,10 @@
         - name: Power Platform Tools for Visual Studio
           items:
             - name: What is Power Platform Tools
-              href: devtools.md
+              href: devtools-vs.md
             - name: "Quickstart: Create a Power Platform Tools project"
-              href: devtools-create-project.md
+              href: devtools-vs-create-project.md
         - name: ALM developer tools
-          href: alm.md
+          href: tools-alm.md
         - name: Dataverse developer tools
-          href: dataverse.md
+          href: tools-dataverse.md
