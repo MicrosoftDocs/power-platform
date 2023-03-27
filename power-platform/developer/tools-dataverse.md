@@ -1,6 +1,6 @@
 ---
-title: "Introduction to Microsoft Power Platform developer tools"
-description: "Overview of how developers can extend Power Platform using various tools."
+title: "Dataverse developer tools"
+description: "List of tools that developers can use to extend Dataverse capabilities."
 author: KumarVivek
 ms.subservice: developer
 ms.author: kvivek
@@ -10,29 +10,17 @@ ms.reviewer: kvivek
 ms.topic: "article"
 ---
 
-# Microsoft Power Platform ALM developer tools
+# Dataverse developer tools
 
-Use the following ALM developer tools to create and manage projects for testing, deployment, maintenance, and governance of applications.
+Microsoft Dataverse is the underlying data platform for Power Platform that stores business data for building apps, workflows, websites, intelligent virtual agents, reports, and analytics. More info:
 
-## Power Platform Build Tools for Azure DevOps
+- [What is Dataverse](/power-apps/maker/data-platform/data-platform-intro)
+- [Developers: Get started with Microsoft Dataverse](/power-apps/developer/data-platform/get-started-developers)
 
-Use Microsoft Power Platform Build Tools for Azure DevOps to automate common build and deployment tasks related to apps built on Microsoft Power Platform.
-
-More information: [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools)
-
-## GitHub actions for Power Platform
-
-With GitHub actions for Microsoft Power Platform, you can:
-
-- Create workflows in your repository to build, test, package, release, and deploy apps
-- Perform automation
-- Manage bots and other components built on Power Platform
-
-More information: [GitHub Actions for Power Platform](/power-platform/alm/devops-github-actions)
+Dataverse provides various tools for developers to extend the data platform capabilities. The following topic in the Dataverse developer guide provides a list of all the developer tools: [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget)  
 
 ### See also
 
-[Power Platform ALM guide](/power-platform/alm)<br/>
-[Power Platform ALM for developers](/power-platform/alm/alm-for-developers)<br/>
+[Dataverse developer guide](/power-apps/developer/data-platform/)<br/>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)
