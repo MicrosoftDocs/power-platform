@@ -1,5 +1,5 @@
 ---
-title: "What is Power Platform Tools | Microsoft Docs"
+title: "What is Power Platform Tools for Visual Studio | Microsoft Docs"
 description: "Learn about the Power Platform Tools extension for Visual Studio and how to install and uninstall it."
 ms.custom: ""
 ms.date: 01/27/2023
@@ -10,7 +10,7 @@ ms.subservice: developer
 ms.author: "pehecke" # MSFT alias of Microsoft employees only
 ---
 
-# What is Power Platform Tools
+# What is Power Platform Tools for Visual Studio
 
 Power Platform Tools for Visual Studio supports the rapid creation, debugging, and deployment of plug-ins. Other capabilities include development of custom workflow activities, web resources, integration technologies like Azure Service endpoints and webhooks, and more.
 
@@ -76,6 +76,7 @@ You can find a few Power Platform Tools options in Visual Studio by choosing **T
 
 ### See Also
 
-[Quickstart: Create a Power Platform Tools project](devtools-create-project.md)  
+[Quickstart: Create a Power Platform Tools project](devtools-create-project.md)<br/>
+[Quickstart: Create a plug-in using Power Platform Tools](/power-apps/developer/data-platform/tools/devtools-create-plugin)<br/>
 [Power Platform Tools extension for Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatformTools)  
 [Power Platform Tools extension for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatformToolsVS2022)
