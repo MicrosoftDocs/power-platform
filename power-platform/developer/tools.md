@@ -1,16 +1,16 @@
 ---
 title: "Microsoft Power Platform developer tools"
-description: "Overview of how developers can extend Power Platform using various tools."
+description: "Overview of various developer tools for extending Power Platform."
 author: KumarVivek
 ms.subservice: developer
 ms.author: kvivek
 ms.custom: ""
-ms.date: 11/09/2022
+ms.date: 03/27/2023
 ms.reviewer: kvivek
 ms.topic: "article"
 ---
 
-# Microsoft Power Platform developer tools
+# Power Platform developer tools
 
 Microsoft Power Platform provides various tools for developers to extend platform features and capabilities using code.
 
