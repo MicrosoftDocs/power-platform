@@ -1,58 +1,70 @@
 - name: For developers
   items:
-  - name: Microsoft Power Platform developer documentation
-    href: ./index.yml
-  - name: Power Platform for developers
-    href: get-started.md
-  - name: Create a developer environment
-    href: create-developer-environment.md
-  - name: Fusion development
-    href: fusion-development.md    
-  - name: ALM for developers
-    href: /power-platform/alm/alm-for-developers
-  - name: Tools
-    expanded: true
-    items:
-      - name: Power Platform CLI 
-        items:
-        - name: What is Power Platform CLI
-          href: cli\introduction.md
-        - name: Power Platform CLI Reference
-          href: cli\reference\index.md
+    - name: Microsoft Power Platform developer documentation
+      href: ./index.yml
+    - name: Power Platform for developers
+      href: get-started.md
+    - name: Create a developer environment
+      href: create-developer-environment.md
+    - name: Fusion development
+      href: fusion-development.md
+    - name: ALM for developers
+      href: /power-platform/alm/alm-for-developers
+    - name: Tools
+      expanded: true
+      items:
+        - name: Power Platform developer tools
+          href: tools.md
+        - name: Power Platform CLI
           items:
-          - name: pac admin
-            href: cli\reference\admin.md
-          - name: pac application
-            href: cli\reference\application.md
-          - name: pac auth
-            href: cli\reference\auth.md
-          - name: pac canvas
-            href: cli\reference\canvas.md
-          - name: pac connector
-            href: cli\reference\connector.md
-          - name: pac data
-            href: cli\reference\data.md
-          - name: pac help
-            href: cli\reference\help.md
-          - name: pac modelbuilder
-            href: cli\reference\modelbuilder.md
-          - name: pac org
-            href: cli\reference\org.md
-          - name: pac package
-            href: cli\reference\package.md
-          - name: pac paportal
-            href: cli\reference\paportal.md
-          - name: pac pcf
-            href: cli\reference\pcf.md
-          - name: pac pipeline
-            href: cli\reference\pipeline.md
-          - name: pac plugin
-            href: cli\reference\plugin.md
-          - name: pac solution
-            href: cli\reference\solution.md
-          - name: pac telemetry
-            href: cli\reference\telemetry.md
-          - name: pac tool
-            href: cli\reference\tool.md
-          - name: pac virtual-agent
-            href: cli\reference\virtual-agent.md
+            - name: What is Power Platform CLI
+              href: cli\introduction.md
+            - name: Power Platform CLI reference
+              href: cli\reference\index.md
+              items:
+                - name: pac admin
+                  href: cli\reference\admin.md
+                - name: pac application
+                  href: cli\reference\application.md
+                - name: pac auth
+                  href: cli\reference\auth.md
+                - name: pac canvas
+                  href: cli\reference\canvas.md
+                - name: pac connector
+                  href: cli\reference\connector.md
+                - name: pac data
+                  href: cli\reference\data.md
+                - name: pac help
+                  href: cli\reference\help.md
+                - name: pac modelbuilder
+                  href: cli\reference\modelbuilder.md
+                - name: pac org
+                  href: cli\reference\org.md
+                - name: pac package
+                  href: cli\reference\package.md
+                - name: pac paportal
+                  href: cli\reference\paportal.md
+                - name: pac pcf
+                  href: cli\reference\pcf.md
+                - name: pac pipeline
+                  href: cli\reference\pipeline.md
+                - name: pac plugin
+                  href: cli\reference\plugin.md
+                - name: pac solution
+                  href: cli\reference\solution.md
+                - name: pac telemetry
+                  href: cli\reference\telemetry.md
+                - name: pac tool
+                  href: cli\reference\tool.md
+                - name: pac virtual-agent
+                  href: cli\reference\virtual-agent.md
+        - name: Power Platform tools for Visual Studio
+          items:
+            - name: What is Power Platform Tools
+              href: devtools.md
+            - name: "Quickstart: Create a Power Platform Tools project"
+              href: devtools-create-project.md
+        - name: ALM developer tools
+          href: alm-dev-tools.md
+        - name: Dataverse developer tools
+          href: dataverse-devtools.md
