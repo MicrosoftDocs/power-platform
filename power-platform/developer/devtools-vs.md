@@ -4,17 +4,10 @@ description: "Learn how to install the Power Platform Tools extension for Visual
 ms.custom: ""
 ms.date: 01/27/2023
 ms.reviewer: "pehecke"
-
 ms.topic: "article"
 author: "phecke" # GitHub ID
 ms.subservice: developer
 ms.author: "pehecke" # MSFT alias of Microsoft employees only
-manager: "kvivek" # MSFT alias of manager or PM counterpart
-search.audienceType: 
-  - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Install Power Platform Tools
@@ -86,5 +79,3 @@ You can find a few Power Platform Tools options in Visual Studio by choosing **T
 [Quickstart: Create a Power Platform Tools project](devtools-create-project.md)  
 [Power Platform Tools extension for Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatformTools)  
 [Power Platform Tools extension for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatformToolsVS2022)
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
