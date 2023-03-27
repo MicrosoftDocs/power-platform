@@ -60,9 +60,9 @@
                   href: cli\reference\virtual-agent.md
         - name: Power Platform Tools for Visual Studio
           items:
-            - name: What is Power Platform Tools
+            - name: What is Power Platform Tools for Visual Studio
               href: devtools-vs.md
-            - name: "Quickstart: Create a Power Platform Tools project"
+            - name: Create a Power Platform Tools project"
               href: devtools-vs-create-project.md
         - name: ALM developer tools
           href: tools-alm.md
