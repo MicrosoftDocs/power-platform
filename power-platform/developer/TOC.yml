@@ -58,13 +58,13 @@
                   href: cli\reference\tool.md
                 - name: pac virtual-agent
                   href: cli\reference\virtual-agent.md
-        - name: Power Platform tools for Visual Studio
+        - name: Power Platform Tools for Visual Studio
           items:
             - name: What is Power Platform Tools
               href: devtools.md
             - name: "Quickstart: Create a Power Platform Tools project"
               href: devtools-create-project.md
         - name: ALM developer tools
-          href: alm-dev-tools.md
+          href: alm.md
         - name: Dataverse developer tools
-          href: dataverse-devtools.md
+          href: dataverse.md
