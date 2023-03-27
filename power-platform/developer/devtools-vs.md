@@ -1,6 +1,6 @@
 ---
-title: "Install Power Platform Tools | Microsoft Docs"
-description: "Learn how to install the Power Platform Tools extension for Visual Studio."
+title: "What is Power Platform Tools | Microsoft Docs"
+description: "Learn about the Power Platform Tools extension for Visual Studio and how to install and uninstall it."
 ms.custom: ""
 ms.date: 01/27/2023
 ms.reviewer: "pehecke"
@@ -10,7 +10,7 @@ ms.subservice: developer
 ms.author: "pehecke" # MSFT alias of Microsoft employees only
 ---
 
-# Install Power Platform Tools
+# What is Power Platform Tools
 
 Power Platform Tools for Visual Studio supports the rapid creation, debugging, and deployment of plug-ins. Other capabilities include development of custom workflow activities, web resources, integration technologies like Azure Service endpoints and webhooks, and more.
 
@@ -33,7 +33,7 @@ Before installing Power Platform Tools into Visual Studio you must have the foll
 
 In addition, you must also have access to a Microsoft Dataverse environment. A [trial environment](https://powerplatform.microsoft.com/dataverse/) will be sufficient.
 
-## Install Power Platform Tools extension into Visual Studio
+## Install Power Platform Tools extension for Visual Studio
 
 To install Power Platform Tools, follow these steps:
 
