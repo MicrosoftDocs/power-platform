@@ -107,4 +107,4 @@ Only projects created from Power Platform Tools templates should be added to a s
 
 ### See Also
 
-[Create a plug-in using Power Platform Tools](/power-apps/developer/data-platform/tools/devtools-create-plugin)
+[Quickstart: Create a plug-in using Power Platform Tools](/power-apps/developer/data-platform/tools/devtools-create-plugin)
