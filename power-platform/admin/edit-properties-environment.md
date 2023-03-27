@@ -48,18 +48,27 @@ Administrators can edit properties of an environment, such as the friendly name,
      >   1. **Synchronize offline data**. Dynamics 365 for Outlook users connected to this environment who work offline must synchronize by using the previous URL. If you run the Configuration Wizard and change the URL before completing this step, offline data may be lost.  
      >   2. **Run the Configuration Wizard**. After a URL name change is saved and any offline data is synchronized, users of Dynamics 365 for Outlook must run the Configuration Wizard to update the URL.  
   
-        After a URL name change is saved, all users who access that environment must be notified of the change. Users will be able to access the environment for up to 24 hours by using the previous URL. After the 24-hour period has passed, the previous URL will not work.  
+        After a URL name change is saved, all users who access that environment must be notified of the change. Users will be able to access the environment for up to 24 hours by using the most recent previous URL. After the 24-hour period has passed, the most recent previous URL will not work.
   
-        Notice that interim URL names are discarded when there are multiple changes within 24 hours. For example, consider the following situation:  
+        If the URL name is changed more than once during a 24-hour period, the original URL is released and cannot be used to access the environment anymore. For example, consider the following situation:  
   
-     - The original URL of your environment is *fourthcoffeesales.crm.dynamics.com*.  
+     - The original URL of environment A is domain01.crm.dynamics.com.<br>
+       _Most recent previous URL: NULL_<br>
+       _Active URL: domain01.crm.dynamics.com_<br>
   
-     - Using the environment picker, you change the URL name from *fourthcoffeesales.crm.dynamics.com* to *fourthcoffeemktg.crm.dynamics.com*.  
+     - The URL of environment A is changed to domain02.crm.dynamics.com.<br>
+       _At this point, users can still use domain01.crm.dynamics.com to access the environment for a period of 24 hours, but they should now use domain02.crm.dynamics.com. Note that during this 24 hours period, no other environment can use the domain domain01.crm.dynamics.com._<br>
+     _Most recent previous URL (usable for 24 more hours): domain01.crm.dynamics.com_<br>
+     _Active URL: domain02.crm.dynamics.com_<br>
   
-     - Within 24 hours of the URL name change, you change the URL name again, this time from *fourthcoffeemktg.crm.dynamics.com* to *fourthcoffeesalesandmktg.crm.dynamics.com*.  
-  
-       In this situation, the first URL name change to *fourthcoffeemktg.crm.dynamics.com* will be immediately removed from the system. The new URL, *fourthcoffeesalesandmktg.crm.dynamics.com*, will become active. Additionally, the original URL, *fourthcoffeesales.crm.dynamics.com*, will be active for up to 24 hours.  
-  
+     - The URL of environment A is changed to domain03.crm.dynamics.com.<br>
+     _At this point, users can still use domain02.crm.dynamics.com to access the environment for a period of 24 hours, but they should now use domain03.crm.dynamics.com. However, they can no longer use domain01.crm.dynamics.com to access the environment, since this is not the most recent previous URL. The URL domain01.crm.dynamics.com is now available for use by any other environment._<br>
+     _Most recent previous URL (usable for 24 more hours): domain02.crm.dynamics.com_<br>
+     _Active URL: domain03.crm.dynamics.com_<br>
+
+     - The URL of environment B is changed to domain01.crm.dynamics.com.<br>
+     _This is possible because environment A's URL was changed twice in a row, effectively removing domain01.crm.dynamics.com from environment A's most recent previous URL, and therefore making it available for use by any other environment_
+
    - **Type**. Change the environment type from production to sandbox or sandbox to production.
 
    - **Purpose**. Specify the purpose of the environment. 
