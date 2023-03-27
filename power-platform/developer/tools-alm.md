@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Microsoft Power Platform developer tools"
+title: "Microsoft Power Platform ALM developer tools"
 description: "Overview of how developers can extend Power Platform using various tools."
 author: KumarVivek
 ms.subservice: developer
@@ -10,7 +10,7 @@ ms.reviewer: kvivek
 ms.topic: "article"
 ---
 
-# Microsoft Power Platform ALM developer tools
+# Power Platform ALM developer tools
 
 Use the following ALM developer tools to create and manage projects for testing, deployment, maintenance, and governance of applications.
 
