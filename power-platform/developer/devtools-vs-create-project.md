@@ -19,7 +19,7 @@ Like any Visual Studio solution, you begin by creating a new project. In the new
 - Visual Studio 2019 or 2022
 - Power Platform Tools for Visual Studio
 - C# language
-- .NET Framework 4.6.2 or greater - (plug-in and custom workflow activity development requires v4.6.2)
+- .NET Framework 4.6.2 or later; plug-in and custom workflow activity development requires v4.6.2
 - Power Apps subscription or a trial environment
 - Windows Workflow Foundation (only for custom workflow activity development)
 
