@@ -12,7 +12,7 @@ ms.topic: "article"
 
 # Power Platform ALM developer tools
 
-Use the following application lifecycle management (ALM) developer tools to create and manage projects for testing, deployment, maintenance, and governance of applications.
+Use the following application lifecycle management (ALM) developer tools to create and manage projects for testing, deployment, maintenance, and governance of solutions.
 
 ## Power Platform Build Tools for Azure DevOps
 
