@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 04/01/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: kviek
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app: 
