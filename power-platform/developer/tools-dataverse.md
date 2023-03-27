@@ -25,4 +25,4 @@ Go to this article in the Dataverse developer guide to find detailed information
 
 [Dataverse developer guide](/power-apps/developer/data-platform/)<br/>
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
