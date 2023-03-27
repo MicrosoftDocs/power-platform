@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Microsoft Power Platform developer tools"
+title: "Microsoft Power Platform developer tools"
 description: "Overview of how developers can extend Power Platform using various tools."
 author: KumarVivek
 ms.subservice: developer
