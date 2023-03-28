@@ -65,7 +65,7 @@ The **Environment** tab displays licensing information related to a selected env
 | License                             | Actual SKU name of the license.     |
 | Last active date                    | Date when a selected app was last launched by the user in a selected time.     |
 | **License Type: Power App Per App** | If the selected environment has per app licenses assigned, you can view the list of apps consuming app pass licenses, number of users the app has been shared with, and the count of users who have launched the app using per app licenses.     |
-| **Download**                        | Download the information in CSV format. <br><br>To download the details available in the drill-down section, select a specific license type to initiate a download. Once a CSV file is generated, you can re-download the same file within five days; you don't have to re-initiate a new download.|
+| Download                        | Download the information in CSV format. <br><br>To download the details available in the drill-down section, select a specific license type to initiate a download. Once a CSV file is generated, you can re-download the same file within five days; you don't have to re-initiate a new download.|
                                                                                                       
 
 ## Other ways to access licensing pages
