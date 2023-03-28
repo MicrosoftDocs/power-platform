@@ -22,7 +22,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-You can use the Licenses page to see how different licenses are consumed in your environment and you can also see if there are environments might require licensing attention. In the environment page you can select an environment to see how different licenses consumed in your environment, based on last thirty days app launch activity in your environment. You can get answers to questions like:
+You can use the **Licenses** page to see how different licenses are consumed in your environment and you can also see if there are environments that might require licensing attention. In the environment page you can select an environment to see how different licenses consumed in your environment, based on last thirty days app launch activity in your environment. You can get answers to questions like:
 
 -   What types of licenses are being used to launch apps?
 
@@ -59,7 +59,7 @@ This tab displays a summary of environments in your tenant requiring licensing a
 | License issues                       | The number of license issues for the environment. The number of licensing issues are calculated based on how many different types of licensing actions need to be performed based on the app usage in environments in the tenant. |
 | **Recommended actions**              | See a list of possible actions to remediate your license issues.        |
 
-### Environment view tab
+## Environment view tab
 
 Select the **Environment view** tab to see a variety of licensing information related to a selected environment.
 
@@ -79,8 +79,7 @@ Select the **Environment view** tab to see a variety of licensing information 
 | **License Type: Power App Per App** | If the selected environment has got Per app licenses assigned, you can view the list of apps consuming app pass licenses, number of users the app has been shared with and the count of users who have launched app using per app licenses     |
 |                                     |                                              |
 | **Download**                        | You can download the information available in the overview section and information available in the drill down section in csv format. To download the details available in the drill down section, You can select a specific license type and from the drill down section initiate a download. Once a csv file is generated you can re- download the same file within 5 days , no need to re-initiate a new |
-|                                     | Download .             |
-|                                     |                                                                                                                                                                                                                                                                                                         
+|                                     | Download .             |                                                                                                                      
 
 ## Other ways to access licensing pages
 
@@ -88,5 +87,5 @@ You can select **View licensing details** from the Enable Managed Environments
 
 If the selected environment is standard, you'll see an alert about license requirements for users with only Microsoft 365 licenses.
 
-To change the standard environment to managed, select **Enable Managed Environments** or see [Enable Managed Environments](hmanaged-environment-enable.md).
+To change the standard environment to managed, select **Enable Managed Environments** or see [Enable Managed Environments](managed-environment-enable.md).
 
