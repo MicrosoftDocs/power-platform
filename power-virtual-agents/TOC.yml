@@ -59,7 +59,7 @@
       - name: Regional settings and data locations for organizations
         href: data-location.md
   - name: Author and edit
-      items:
+    items:
       - name: Key concepts - Authoring
         href: authoring-fundamentals.md
       - name: Create and delete bots
