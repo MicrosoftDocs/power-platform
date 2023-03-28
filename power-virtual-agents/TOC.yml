@@ -34,14 +34,14 @@
           href: limitations-preview.md
         - name: Key concepts for Composer users (preview)
           href: composer-concepts-preview.md
-  - name: Overview
-    items:
-      - name: Power Virtual Agents overview
-        href: fundamentals-what-is-power-virtual-agents-portal.md
-      - name: Use pre-built chatbot templates in Microsoft Teams
-        href: fundamentals-templates.md
-      - name: Quickstart - Create and deploy a chatbot
-        href: fundamentals-get-started.md
+- name: Overview
+  items:
+    - name: Power Virtual Agents overview
+      href: fundamentals-what-is-power-virtual-agents-portal.md
+    - name: Use pre-built chatbot templates in Microsoft Teams
+      href: fundamentals-templates.md
+    - name: Quickstart - Create and deploy a chatbot
+      href: fundamentals-get-started.md
   - name: Administer and manage
     items:
       - name: Assign licenses
