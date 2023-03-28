@@ -36,10 +36,10 @@ Follow these steps.
 To access a record, a new owner must have an **Enabled** user status and one of the following statements must be true:
 
 - The new owner must be assigned to a security role that has **Read** privileges on the table.
-- The new owner belongs to a team that has **Member's privilege inheritance** set to **Direct User (Basic) access level** and has **Read** privileges of user level or above on the table.
+- The new owner belongs to a team that has **Member's privilege inheritance** set to **Direct User (Basic) access level and Team privileges** and has **Read** privileges of user level or above on the table.
 - The new owner belongs to a team that has **Member's privilege inheritance** set to **Team privileges only** and has **Read** privileges of organization level on the table.
 
-If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure), and your users are assigned to teams, the team's security role **Member's privilege inheritance** must be set to Direct User access to allow team members to own records.
+If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) option, and your users are assigned to teams, the team's security role **Member's privilege inheritance** must be set to **Direct User (Basic) access level and Team privileges** to allow team members to own records.
 
 > [!NOTE]
 > If you want to update the record ownership to a disabled user and also [share reports](/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them, you need to assign a security role to user with the above criteria. To assign a security role to a disabled user, you need to enable the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
