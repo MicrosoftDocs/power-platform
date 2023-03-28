@@ -311,7 +311,7 @@ You can customize how the bot looks when added as an app in Microsoft Teams. You
 
 ### Change the bot color and description
 
-When [preparing a bot ready for sharing with other users in your team](publication-add-bot-to-microsoft-teams.md#install-a-bot-as-an-app-in-microsoft-teams), you can also change the bot's icon, color, and short and long descriptions. You can also enter more [information about who built the bot](publication-terms-of-use.md).
+When [preparing a bot ready for sharing with other users in your team](publication-add-bot-to-microsoft-teams.md#install-a-bot-as-an-app-in-microsoft-teams), you can also change the bot's icon, color, and short and long descriptions. You can also enter more [information about who built the bot](publication-terms-of-use-teams.md).
 
 ---
 

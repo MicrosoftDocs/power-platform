@@ -50,7 +50,7 @@ This means if you create a bot with the Power Virtual Agents app in Microsoft Te
     - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use.
 
     > [!IMPORTANT]
-    > If you choose to create a preview bot, please refer to the [preview documentation](preview/overview.md).
+    > If you choose to create a preview bot, please refer to the [preview documentation](overview_preview.md).
 
 1. For **Name your bot**, enter a name for your bot.
 

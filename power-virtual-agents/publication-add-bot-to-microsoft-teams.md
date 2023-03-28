@@ -83,7 +83,7 @@ Providing the right description and appearance for the bot before making it avai
     - Privacy Statement
     - Terms of use
 
-       You should provide this information to keep your user informed about the bot. See the [Privacy statement and terms of use](publication-terms-of-use.md) topic for more details and examples.
+       You should provide this information to keep your user informed about the bot. See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
 
 1. Select **Save** to return to the screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
 
@@ -253,7 +253,7 @@ In Microsoft Teams, you can [add bots to teams](/microsoftteams/platform/bots/ho
 
 This option allows users to add the bot to any team that they're part of when adding the bot in Microsoft Teams.
 
-After enabling this option, any user who [installs the bot from the Teams app store](teams/publication-add-bot-to-microsoft-teams.md#install-a-bot-as-an-app-in-microsoft-teams) or via the [installation link](teams/publication-add-bot-to-microsoft-teams.md#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
+After enabling this option, any user who [installs the bot from the Teams app store](publication-add-bot-to-microsoft-teams.md#install-a-bot-as-an-app-in-microsoft-teams) or via the [installation link](publication-add-bot-to-microsoft-teams.md#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
 
 > [!IMPORTANT]
 > The bot will be configured to allow everyone in the organization to chat with it. This ensures all team members have permission to chat with the bot in team channels. It's highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.

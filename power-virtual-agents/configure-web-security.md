@@ -21,7 +21,7 @@ When you create a Power Virtual Agents bot, it is immediately available in the *
 For the Microsoft Teams app, you can configure advanced web channel security options.
 
 > [!NOTE]
-> If you have a [Teams-only license, you can't generate secrets to enable secure access](../requirements-licensing-subscriptions.md). Secure access tokens are created automatically for you and secure access is enabled by default.
+> If you have a [Teams-only license, you can't generate secrets to enable secure access](requirements-licensing-subscriptions.md). Secure access tokens are created automatically for you and secure access is enabled by default.
 
 Users can find the bot ID directly from within Power Virtual Agents or by receiving it from someone. But, depending on the bot's capability and sensitivity that might not be desirable.
 

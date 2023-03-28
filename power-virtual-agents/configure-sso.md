@@ -183,7 +183,7 @@ The following table details the [channels](publication-fundamentals-publish-chan
 | [Omnichannel for Customer Service][7]<sup>2</sup> | Supported     |
 
 [1]: publication-add-bot-to-microsoft-teams.md
-[2]: publication-connect-bot-to-web-channels.md#demo-website
+[2]: publication-connect-bot-to-web-channels.md
 [3]: publication-connect-bot-to-web-channels.md#custom-website
 [4]: publication-connect-bot-to-custom-application.md
 [5]: publication-add-bot-to-facebook.md

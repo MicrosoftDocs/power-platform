@@ -112,7 +112,7 @@ Microsoft Teams supports a larger set of languages than the Web app. If the sele
 
 ### Data locations
 
-Power Virtual Agents in Teams can be created in the [supported data locations](../data-location.md). You can create a bot if your tenant's location is supported, or you can use the Power Virtual Agents web app by choosing the datacenter you want to use when [setting up your environment](../environments-first-run-experience.md).
+Power Virtual Agents in Teams can be created in the [supported data locations](data-location.md). You can create a bot if your tenant's location is supported, or you can use the Power Virtual Agents web app by choosing the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 
 ---
 

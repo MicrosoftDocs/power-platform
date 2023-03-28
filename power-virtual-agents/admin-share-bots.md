@@ -62,7 +62,7 @@ You can share your bot with security groups so their members can chat with the b
 1. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
     > [!NOTE]
-    > Only security groups with email enabled will receive an email invitation. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md#demo-website) and share it with users directly so they can chat with the bot.
+    > Only security groups with email enabled will receive an email invitation. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md) and share it with users directly so they can chat with the bot.
 
 1. Select **Share** to share the bot with the new security groups.
 
@@ -79,7 +79,7 @@ You can share your bot to allow everyone in the same organization the bot to cha
    :::image type="content" source="media/admin-share-bots/sharing-share-everyone-in-org.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
 
    > [!NOTE]
-   > Power Virtual Agents will not send email invitations to everyone in the organization. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md#demo-website) and share it with users directly so they can chat with the bot.
+   > Power Virtual Agents will not send email invitations to everyone in the organization. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md) and share it with users directly so they can chat with the bot.
 
 1. Select **Share** to share the bot with everyone in the organization.
 
@@ -380,5 +380,3 @@ Power Virtual Agents will detect this and prevent you from overwriting your cowo
 :::image type="content" source="media/admin-share-bots/sharing-multi-conflict.png" alt-text="Screenshot showing a prompt that says Updated content available and gives you options to discard your changes or save a copy." border="false":::
 
 If you save your changes to a new topic, you can then review your coworker's changes and merge the two topics, deleting the copy of the topic once you've finished.
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

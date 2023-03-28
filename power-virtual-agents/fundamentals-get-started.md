@@ -64,7 +64,7 @@ In the navigation menu, select **Chatbots** to open the **Chatbots** page and vi
 
     - Use **Build for production** to create production bots that are intended to be deployed to your customers. If you choose this option, continue to [Create a bot](#create-a-bot).
 
-    - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use. If you choose this option, refer to the [quickstart for preview bots](preview/quickstart.md) to continue creating your bot.
+    - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use. If you choose this option, refer to the [quickstart for preview bots](quickstart_preview.md) to continue creating your bot.
 
 ### Create a bot
 
@@ -233,27 +233,7 @@ Once this bot is published, Contoso employees can access HR information in Micro
 
 ### Bot building steps
 
-- [Quickstart: Create and deploy a human resources Power Virtual Agents bot in Teams](#quickstart-create-and-deploy-a-human-resources-power-virtual-agents-bot-in-teams)
-  - [Prerequisites](#prerequisites)
-  - [Scenario](#scenario)
-  - [Steps in bot building](#steps-in-bot-building)
-  - [Detailed steps: Bot author experience](#detailed-steps-bot-author-experience)
-    - [Install the Power Virtual Agents app in Microsoft Teams](#install-the-power-virtual-agents-app-in-microsoft-teams)
-    - [Create a new bot in a team](#create-a-new-bot-in-a-team)
-    - [Build an employee time-off topic for common time-off queries](#build-an-employee-time-off-topic-for-common-time-off-queries)
-    - [Test bot for expected behavior](#test-bot-for-expected-behavior)
-    - [Enhance topic to handle more complex queries by escalating to HR experts](#enhance-topic-to-handle-more-complex-queries-by-escalating-to-hr-experts)
-    - [Publish the bot](#publish-the-bot)
-    - [Open the bot in Teams to chat with it like any employee would](#open-the-bot-in-teams-to-chat-with-it-like-any-employee-would)
-    - [Make the bot available to other employees](#make-the-bot-available-to-other-employees)
-      - [Edit bot details](#edit-bot-details)
-      - [Share the bot with your team](#share-the-bot-with-your-team)
-      - [Share the bot with your organization](#share-the-bot-with-your-organization)
-  - [Detailed steps: End User Experience](#detailed-steps-end-user-experience)
-    - [Finding the bot in the Teams app store](#finding-the-bot-in-the-teams-app-store)
-    - [Employee chats with the bot to ask about time-off](#employee-chats-with-the-bot-to-ask-about-time-off)
-  - [Conclusion](#conclusion)
-
+See the [Quickstart: Create and deploy a human resources Power Virtual Agents bot in Teams](#quickstart-preview.md).
 
 This next section of the guide looks at how you - as the bot author - can create and publish a bot.
 

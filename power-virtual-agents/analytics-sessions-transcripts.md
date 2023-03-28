@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Work with conversation transcripts
 
-You can download transcripts of customer interactions with your bot in both Power Apps and Power Virtual Agents. The information that each app exports is slightly different. This article covers downloading conversation transcripts in Power Apps and using them to create reports in Power BI. [Download bot session transcripts in Power Virtual Agents](../analytics-sessions.md).
+You can download transcripts of customer interactions with your bot in both Power Apps and Power Virtual Agents. The information that each app exports is slightly different. This article covers downloading conversation transcripts in Power Apps and using them to create reports in Power BI. [Download bot session transcripts in Power Virtual Agents](analytics-sessions.md).
 
 By default, Power Apps downloads conversation transcripts from the last 30 days. [You can change the retention period](#change-the-default-retention-period).
 

@@ -24,7 +24,7 @@ This evolution brings several exciting new features:
 
 - A new authoring experience
 
-  - [Use GPT-based capabilities to expand your bot's reach](../nlu-gpt-overview.md)
+  - [Use GPT-based capabilities to expand your bot's reach](nlu-gpt-overview.md)
   - [Add images, videos, and cards to a message](authoring-send-message.md)
   - [Message variations](authoring-send-message.md#use-message-variations)
   - [Quick replies](authoring-send-message.md#use-quick-replies)
@@ -37,7 +37,7 @@ This evolution brings several exciting new features:
 
 Check out the [Quickstart](quickstart.md) for a guided tutorial on how to use the new features.
 
-The Power Virtual Agents preview doesn't yet support some of the features you're used to in Power Virtual Agents, such as agent transfers and bot authoring in Teams. For the complete list, see [Limitations of the Power Virtual Agents preview](limitations.md).
+The Power Virtual Agents preview doesn't yet support some of the features you're used to in Power Virtual Agents, such as agent transfers and bot authoring in Teams. For the complete list, see [Limitations of the Power Virtual Agents preview](limitations-preview.md).
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

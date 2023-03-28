@@ -112,8 +112,7 @@ The following table lists the types of nodes you can insert in a topic:
 
 | Option                                                            | Description                                           |
 | :---------------------------------------------------------------- | :---------------------------------------------------- |
-| [**Send a message**](authoring-send-message.md)                   | Send the customer a message.                         |
-| [**Ask a question**](authoring-ask-a-question.md)                 | Ask the customer a question.                          |
+| [**Send a message**](authoring-send-message.md)                   | Send the customer a message.                         |                       |
 | [**Add a condition**](authoring-using-conditions.md)              | Branch your conversation based on a condition.        |
 | [**Set a variable value**](authoring-variables.md#set-a-variable) | Set a value for a new or existing variable.           |
 | [**Topic management**](authoring-topic-management.md)             | Redirect, transfer, or end the topic or conversation. |
@@ -135,7 +134,7 @@ Just like **Message** nodes, **Question** nodes can include images, videos, card
 
 1. In the **Enter a message** box, type the question you want to ask.
 
-1. Select the box under **Identify**, then either create or select an entity to determine what the bot should listen for in the user's response. [Learn how to use entities in a conversation](../advanced-entities-slot-filling.md#use-entities-in-a-conversation).
+1. Select the box under **Identify**, then either create or select an entity to determine what the bot should listen for in the user's response. [Learn how to use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
 
 1. Depending which **Identify** option you selected, you may have more properties you need to set.
 
@@ -630,7 +629,7 @@ You can consider the redirected topic as a "subtopic".
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](../authoring-system-topics.md), however, the entire conversation will end:
+If you redirect to any of the following [system topics](authoring-system-topics.md), however, the entire conversation will end:
 
 - End of Conversation
 - Confirmed Success

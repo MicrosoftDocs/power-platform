@@ -102,7 +102,7 @@ To configure channels:
 The connection steps are different for each channel. See the related article in the list below more information:
 
 - [Microsoft Teams](publication-add-bot-to-microsoft-teams.md)
-- [Demo Website](publication-connect-bot-to-web-channels.md#demo-website)
+- [Demo Website](publication-connect-bot-to-web-channels.md)
 - [Custom Website](publication-connect-bot-to-web-channels.md#custom-website)
 - [Mobile App](publication-connect-bot-to-custom-application.md)
 - [Facebook](publication-add-bot-to-facebook.md)
@@ -193,7 +193,7 @@ You can also install the bot for your own use in Microsoft Teams by selecting **
 | Topic                                                                            | Description                                                                  |
 | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md)    | Make your bot available to users in Microsoft Teams.                         |
-| [Create a privacy statement and terms of use](publication-terms-of-use.md) | Create and link to a privacy statement and terms of use for bots you create. |
+| [Create a privacy statement and terms of use](publication-terms-of-use-teams.md) | Create and link to a privacy statement and terms of use for bots you create. |
 
 ---
 

@@ -49,7 +49,7 @@ Upgraded environments are shown with a diamond icon next to their name in the li
 :::image type="content" source="media/admin-upgrade-dataverse-teams/upgraded-list-of-environments.png" alt-text="Screenshot of the Power Virtual Agents app in Teams with a list of bots in an upgrade environment, and showing a diamond icon next to the environment name.":::
 
 > [!NOTE]
-> To access the Power Virtual Agents web app, users need a [standalone PVA license](../requirements-licensing-subscriptions.md) or an individual [trial](../sign-up-individual.md).
+> To access the Power Virtual Agents web app, users need a [standalone PVA license](requirements-licensing-subscriptions.md) or an individual [trial](sign-up-individual.md).
 
 After the upgrade, the bot will continue to work as it did before the upgrade without you having to take any action.
 
@@ -57,5 +57,3 @@ If bot authors want to share a bot with other authors after you've upgraded an e
 
 > [!IMPORTANT]
 > After upgrading, qualified sessions will be considered as billed even if they do not leverage premium functionality such as premium connectors, non-Microsoft Teams channels or Azure Framework extensibility. For more information, see the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

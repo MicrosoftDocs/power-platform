@@ -28,7 +28,7 @@ If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.
 Errors may also appear in the [Topic Checker](authoring-topic-management.md#topic-errors) where you can easily locate and fix them.
 
 > [!NOTE]
-> The following errors can occur in both the web app and Microsoft Teams. To view errors that are exclusive to Teams, please refer to [the Teams version of this topic](teams/error-codes.md).
+> The following errors can occur in both the web app and Microsoft Teams. To view errors that are exclusive to Teams, please refer to [the Teams version of this topic](error-codes.md).
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.
 
 :::image type="content" source="media/error-codes/c1-error.png" alt-text="Screenshot of a bot error message displayed to bot makers.":::
 
-Errors may also appear in the [Topic Checker](authoring-topic-status.md#topic-errors), where you can easily locate and fix them.
+Errors may also appear in the [Topic Checker](authoring-topic-management.md), where you can easily locate and fix them.
 
 ### Error list
 
@@ -93,8 +93,8 @@ Common problems include:
 
 **Resolution:**
 
-- Your environment's data loss prevention (DLP) policies require that users sign in. See [Configure user authentication](advanced-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
-- One or more connectors that are used in the bot aren't in the same data group. See [Power Virtual Agents connectors](../admin-data-loss-prevention.md#power-virtual-agents-connectors).
+- Your environment's data loss prevention (DLP) policies require that users sign in. See [Configure user authentication](advanced-end-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
+- One or more connectors that are used in the bot aren't in the same data group. See [Power Virtual Agents connectors](admin-data-loss-prevention.md#power-virtual-agents-connectors).
 - One or more connectors that are used in the bot are blocked by the tenant administrator.
 
 #### FlowActionException
@@ -140,7 +140,7 @@ Common problems include:
 
 **Error message:** "The Dialog with Id {DialogId} is disabled in the definition. Please enable the Dialog before using it."
 
-**Resolution:** [Re-enable the topic](authoring-topic-status.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-a-node).  
+**Resolution:** [Re-enable the topic](authoring-topic-management.md) or [remove the redirect node](authoring-create-edit-topics.md#delete-a-node).  
 
 #### RedirectToNonExistentDialog
 
@@ -152,7 +152,7 @@ Common problems include:
 
 **Error message:** This error doesn't produce an error message
 
-**Resolution:** [Contact customer support](../fundamentals-support.md) for more details.
+**Resolution:** [Contact customer support](fundamentals-support.md) for more details.
 
 
 # [Web app](#tab/web)

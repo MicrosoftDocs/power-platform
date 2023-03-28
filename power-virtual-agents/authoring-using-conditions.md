@@ -4,8 +4,8 @@ description: Learn how to add conditional branching to a topic and the conversat
 keywords: "PVA"
 ms.date: 03/24/2023
 ms.topic: how-to
-author: iianw
-ms.author: iianw
+author: iawilt
+ms.author: iawilt
 ms.reviewer: gapretty
 manager: leeclontz
 ms.custom: authoring, topics, message, question, bap-template

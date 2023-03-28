@@ -88,7 +88,7 @@ You can only assign the "Power Virtual Agent User License" to specific users. Yo
 To create and manage Power Virtual Agents chatbots in Teams, you need:
 
 - [A license to use Teams](/MicrosoftTeams/user-access)
-- [Licenses to use Power Virtual Agents](../requirements-licensing.md)
+- [Licenses to use Power Virtual Agents](requirements-licensing.md)
 
 In some instances you may see a diamond icon or other indicator when a particular feature requires a different type of license. You'll be prompted about upgrading if you try to use that feature. For example, you'll see diamond icons when publishing to additional channels:
 

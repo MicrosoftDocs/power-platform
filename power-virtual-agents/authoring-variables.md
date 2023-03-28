@@ -98,7 +98,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 
 ### Create a variable
 
-Any node that prompts you to select a variable as an output, such as a [**Question** node](authoring-ask-a-question.md), automatically creates an output variable of the appropriate type.
+Any node that prompts you to select a variable as an output, such as a **Question** node, automatically creates an output variable of the appropriate type.
 
 :::image type="content" source="media/authoring-variables/authoring-variables-default-variable.png" alt-text="Screenshot of a Question node, with the name and type of the default variable highlighted.":::
 
@@ -118,7 +118,7 @@ Variables are automatically assigned a name when you create them. A best practic
 
 ### Set a variable
 
-Typically you'll use a [**Question** node](authoring-ask-a-question.md) to save user input to a variable. There may be situations where you want to set the value yourself, however. In those cases, use a **Set Variable Value** node.
+Typically you'll use a **Question** nodeto save user input to a variable. There may be situations where you want to set the value yourself, however. In those cases, use a **Set Variable Value** node.
 
 1. Select **Add node** (**+**) to add a node, and then select **Set a variable value**.
 
@@ -232,7 +232,7 @@ The destination topic is the topic being redirected to, the one that will receiv
 
 1. Create or go to your destination topic.
 
-1. [Add a Question node](../authoring-create-edit-topics.md#ask-a-question) and enter `What should I call you?` for the message.
+1. Add a Question node and enter `What should I call you?` for the message.
 
 1. Under **Identify**, select the pre-built entity **Person name**.
 
@@ -240,7 +240,7 @@ The destination topic is the topic being redirected to, the one that will receiv
 
     :::image type="content" source="media/authoring-variables/authoring-variables-passed-destination.png" alt-text="Screenshot of the Talk to Customer topic with the userName variable and its properties highlighted.":::
 
-1. [Add a Message node](../authoring-create-edit-topics.md#show-a-message).
+1. [Add a Message node](authoring-create-edit-topics.md#show-a-message).
 
 1. In the message box, type `I hope you're having a wonderful day, `.
 
@@ -274,7 +274,7 @@ The source topic is the topic doing the redirecting, the one that provides the v
 
 ### Return values to original topics
 
-When a topic is redirected to and obtains a variable by asking a question or in some other way, the variable can be returned to the original topic. The variable becomes part of the original topic and can be used like any other variable. Information the bot obtains is thus available across topics, reducing the need for [global variables](../authoring-variables-bot.md).
+When a topic is redirected to and obtains a variable by asking a question or in some other way, the variable can be returned to the original topic. The variable becomes part of the original topic and can be used like any other variable. Information the bot obtains is thus available across topics, reducing the need for [global variables](authoring-variables-bot.md).
 
 Let's continue with the example from the previous section. We'll ask a new question in the Talk to Customer topic, and then return the answer to the Greeting topic.
 
@@ -284,7 +284,7 @@ When you're returning a variable to a topic, the source topic is the topic being
 
 1. Go to the source topic.
 
-1. [Add a Question node](../authoring-create-edit-topics.md#ask-a-question) and enter `What city do you live in?` for the message.
+1. Add a Question node and enter `What city do you live in?` for the message.
 
 1. Under **Identify**, select the pre-built entity **City**.
 

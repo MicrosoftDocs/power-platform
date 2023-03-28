@@ -59,7 +59,7 @@ Triggers when redirected to. You should call this topic from your custom topics 
 
 Informs customers about how they can speak to a human.
 
-Triggers when a trigger phrase such as "talk to agent" is matched or when the Escalate system event is triggered. For example, [**Question** nodes](authoring-ask-a-question.md#configure-question-behavior) can be configured to escalate if they don't receive a valid answer from the customer.
+Triggers when a trigger phrase such as "talk to agent" is matched or when the Escalate system event is triggered. For example, **Question** nodes can be configured to escalate if they don't receive a valid answer from the customer.
 
 ### Fallback
 
@@ -87,7 +87,7 @@ Triggers when an error occurs during the conversation.
 
 ### Signin
 
-Prompts customers to sign in when user authentication is enabled. Learn how to [add user authentication](advanced-user-authentication.md).
+Prompts customers to sign in when user authentication is enabled. Learn how to [add user authentication](advanced-end-user-authentication.md).
 
 Triggers at the beginning of the conversation when users are required to sign in, or when the conversation reaches a node that uses authentication variables.
 
@@ -96,7 +96,7 @@ Triggers at the beginning of the conversation when users are required to sign in
 
 The table below lists all available system topics, their intended purpose, and a small sample of the built-in trigger phrases.
 
-To see all trigger phrases for a system topic, [open the topic to view them in the trigger phrases pane](authoring-create-edit-topics.md#create-a-topic).
+To see all trigger phrases for a system topic, [open the topic to view them in the trigger phrases pane](authoring-create-edit-topics.md).
 
 <!-- best viewed without wordwrap -->
 | System topic        | Trigger phrases                                      | Purpose                                                                                                                                                                         |
@@ -122,5 +122,3 @@ To see all trigger phrases for a system topic, [open the topic to view them in t
 > - Start over
 
 ---
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

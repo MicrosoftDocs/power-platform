@@ -200,7 +200,7 @@ You can now test your bot by going to the webpage where you deployed your bot's 
 ### Create a new user topic
 
 > [!WARNING]
-> Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the topic [Analyze billed session information](analytics-billed-sessions.md).
+> Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the topic [Analyze billed session information](analytics-billed-sessions.md).
 
 1. In the navigation menu, select **Topics**.
 

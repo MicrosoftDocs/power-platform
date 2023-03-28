@@ -21,7 +21,7 @@ ms.collection: virtual-agent
 The **Message** node sends a message from the bot to the user. Messages are usually simple text messages, but can also include richer components, such as images, videos, quick replies, and cards.
 
 > [!TIP]
-> All capabilities of the **Message** node are also available to the [**Question** node](authoring-ask-a-question.md).
+> All capabilities of the **Message** node are also available to the **Question** node.
 
 ## Prerequisites
 
@@ -134,7 +134,7 @@ To remove a card from a node, select the trashcan icon (**Remove**) at the upper
 
 Add quick replies to a message to provide suggested responses or actions for the user. If the user selects a quick reply, it sends a message back to the bot. The quick reply text is shown in the chat history as if the user had typed the message. The quick reply buttons are removed from the chat history when the bot or user sends another activity.
 
-Users can choose to use a quick reply or ignore it. To require the user to choose an option from a list, use a multiple-choice [**Question** node](authoring-ask-a-question.md) instead.
+Users can choose to use a quick reply or ignore it. To require the user to choose an option from a list, use a multiple-choice **Question** node instead.
 
 ### Add a quick reply
 

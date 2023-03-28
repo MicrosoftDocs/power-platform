@@ -20,7 +20,7 @@ ms.collection: virtual-agent
 
 By default, a variable's value can only be used in the topic where the variable is created. However, it's possible to reuse the same value across topics. For example, a Welcome topic asks for the customer's name and email address. In the Appointment Booking topic, you want the bot to remember what the customer entered and not ask again.
 
-One way to reuse a variable is to [pass the variable between topics](../authoring-variables.md#passing-variables-between-topics). The other way is to make the variable global in scope, and that's what this article covers. **Global variables** are called that because they're available in all topics across the entire bot.
+One way to reuse a variable is to [pass the variable between topics](authoring-variables.md#passing-variables-between-topics). The other way is to make the variable global in scope, and that's what this article covers. **Global variables** are called that because they're available in all topics across the entire bot.
 
 ## Prerequisites
 
@@ -57,7 +57,7 @@ When you're composing a bot message in a Message node or a Question node, select
 
 You can find where a global variable is defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-using-conditions.md).
 
-1. Select a global variable in the authoring canvas, or open the [**Variables** pane](../authoring-variables.md#using-the-variables-pane) and select a global variable.
+1. Select a global variable in the authoring canvas, or open the [**Variables** pane](authoring-variables.md#using-the-variables-pane) and select a global variable.
 
 1. On the **Variable properties** pane, in the **Reference** section, select any of the topics where the variable is used to go directly to that topic and node.
 
@@ -209,7 +209,7 @@ In this situation, the flow or skill will still run and fill in the variable, ov
 
 ### Bot variables lifecycle and resetting its value
 
-Bot variables are accessible from any topic, and the bot variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session).
+Bot variables are accessible from any topic, and the bot variable's assigned value persists throughout [the session](analytics-billed-sessions.md).
 
 The value is only cleared when the bot user is redirected to [the **Start over** system topic](authoring-system-topics.md), or when the user triggers this topic directly (for example, by typing *Start over*). In this case, all bot variables will be reset and won't have any values.
 
@@ -334,7 +334,7 @@ Topics with nodes that contain references to deleted bot variables might stop wo
 
 ### Advanced use of bot variables
 
-For more details on complex and advanced scenarios using bot variables, including authentication, external sources, and initialization flows, [see the Power Virtual Agents web app version of this topic](../authoring-variables-bot.md).
+For more details on complex and advanced scenarios using bot variables, including authentication, external sources, and initialization flows, [see the Power Virtual Agents web app version of this topic](authoring-variables-bot.md).
 
 ---
 

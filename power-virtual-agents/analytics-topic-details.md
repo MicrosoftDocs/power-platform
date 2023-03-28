@@ -25,7 +25,7 @@ To display the topic analytics pane, select the **Detail** link for the topic in
 - [Escalation rate drivers (Summary tab)](analytics-summary.md#escalation-rate-drivers-chart)
 - [Abandon rate drivers (Summary tab)](analytics-summary.md#abandon-rate-drivers-chart)
 - [Resolution rate drivers (Summary tab)](analytics-summary.md#resolution-rate-drivers-chart)
-- [Customer satisfaction drivers (Customer Satisfaction tab)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
+- [Customer satisfaction drivers (Customer Satisfaction tab)](analytics-CSAT.md)
 
 > [!IMPORTANT]
 > For Microsoft Teams, you need a license for [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/licensing-case-capacity) to access the topic details charts.

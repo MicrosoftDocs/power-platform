@@ -194,7 +194,7 @@ Some of the features available in the commercial version of Power Virtual Agents
 | Feature or capability                                                                                           | Available in GCC | Available in GCC High |
 | --------------------------------------------------------------------------------------------------------------- | ---------------- | --------------------- |
 | [Power Virtual Agents Analytics](analytics-overview.md)&nbsp;<a id="LimsRef1" href="#LimsFn1"><sup>1</sup></a>  | &#X2716;</br>No  | &#X2716;</br>No       |
-| [Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents.md) | &#X2716;</br>No  | &#X2716;</br>No       |
+| [Power Virtual Agents Microsoft Teams app experience](fundamentals-what-is-power-virtual-agents.md) | &#X2716;</br>No  | &#X2716;</br>No       |
 | [Teams channel in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md)                  | &#X2714;</br>Yes | &#X2716;</br>No       |
 | [Transfer to agents](configuration-hand-off-omnichannel.md)                                                     | &#X2714;</br>Yes | &#X2716;</br>No       |
 

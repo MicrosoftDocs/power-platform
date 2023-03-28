@@ -15,7 +15,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Power Virtual Agents overview
+# Power Virtual Agents portal overview
 
 [!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
@@ -84,7 +84,7 @@ Some of the scenarios where you might want to create a Power Virtual Agents chat
 - A human resources (HR) employee creates a bot that can answer questions about vacation balance, time off, and benefits.
 - A member of the finance department creates a chatbot that helps their teammates in the finance team to fill out expense reports
 
-The Power Virtual Agents app in Microsoft Teams makes it easy to fulfill any scenario, especially those that arise within an organization. If you're looking to create a chatbot you can share externally, such as one that interacts with customers outside your organization, see the [Power Virtual Agents web app version of this topic](../fundamentals-what-is-power-virtual-agents-portal.md).
+The Power Virtual Agents app in Microsoft Teams makes it easy to fulfill any scenario, especially those that arise within an organization. If you're looking to create a chatbot you can share externally, such as one that interacts with customers outside your organization, see the [Power Virtual Agents web app version of this topic](fundamentals-what-is-power-virtual-agents-portal.md).
 
 With Power Virtual Agents in Microsoft Teams you can:
 
