@@ -219,7 +219,7 @@
     - name: Customize the look and feel of the bot
       href: customize-default-canvas.md
 - name: Respond to GDPR Data Subject Rights (DSR) requests
-    items:
+  items:
     - name: Key concepts - GDPR compliance
       href: gdpr-summary.md
     - name: Requests to export and download data
