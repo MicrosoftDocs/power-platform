@@ -1,16 +1,13 @@
 ---
-title: Set up pipelines in Power Platform (preview)
+title: Set up pipelines in Power Platform
 description: Learn how to create, configure, share, and manage Power Platform pipelines.
 author: caburk
 ms.author: matp
-ms.service: powerapps
 ms.topic: how-to
-ms.date: 01/23/2023
+ms.date: 02/28/2023
 ms.custom: template-how-to
 ---
-# Set up pipelines in Power Platform (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Set up pipelines in Power Platform
 
 Create and run pipelines to easily deploy solutions to environments.
 
@@ -28,8 +25,7 @@ Power Platform administrators can create one or more pipelines, associate any nu
 
 > [!IMPORTANT]
 >
-> - Use of development and target environments that aren't Managed Environments isn't blocked during pipelines preview.
-> - Managed environment enforcement is anticipated for pipelines upon general availability (GA). As a result, any pre-existing pipelines may no longer function until enabled as a managed environment. 
+> - Managed environment enforcement is enabled for pipelines upon general availability (GA). As a result, any pre-existing pipelines during preview may no longer function until enabled as a managed environment.
 > - End users within any production environment(s) linked to pipelines will require a standalone license for either Power Apps, Power Automate, or Dynamics 365. Makers generally won't require a standalone license unless they're also an end user.
 
 #### Choose environments for pipelines
@@ -51,7 +47,7 @@ Before you begin, you’ll need to choose which environments will participate in
    >
    > Deleting the host environment deletes all pipelines and run data. Use caution and understand the impact of data and configuration loss as well as maker access to pipelines hosted in the environment.
    >
-- **Development (required)**. This is where you’ll develop solutions. 
+- **Development (required)**. This is where you’ll develop solutions.
 - **QA environment (optional)**. This is where you’ll deploy solutions for testing prior to moving them to production.
 - **Production (required)**. The final destination for a deployment pipeline. This is where end users will run the apps that are deployed.
 
@@ -100,7 +96,7 @@ Once installed, the deployment pipelines configuration application will appear i
    - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
    - **Target Deployment Environment**: This is the target environment where this stage will deploy to.
 1. Repeat the previous two steps for each stage you'd like to add to the pipeline. Note that you must have at least one stage. You can add up to seven stages.
-   
+
    :::image type="content" source="media/Pipeline fully configured.png" alt-text="A fully configured pipeline.":::
 
 ## Grant access to edit or run pipelines

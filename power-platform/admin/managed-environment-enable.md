@@ -69,11 +69,6 @@ $UpdatedGovernanceConfiguration = [pscustomobject]@{
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentID> -UpdatedGovernanceConfiguration $UpdatedGovernanceConfiguration
 ```
 
-## Known limitations
-
-The Managed Environments state cannot be activated on developer environments. 
-
-
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br /> 
 [Usage insights](managed-environment-usage-insights.md)  <br />
