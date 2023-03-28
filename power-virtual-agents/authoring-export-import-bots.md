@@ -26,7 +26,8 @@ This can be useful if you use different environments for different purposes, or 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CsHl]
 >
 
-You can't export [topic-level or node-level comments](authoring-comments.md) when you export a bot.
+> [!NOTE]
+> You can't export [topic-level or node-level comments](authoring-comments.md) when you export a bot.
 
 ## Prerequisites
 
@@ -55,7 +56,8 @@ Move your bots across [environments](/power-platform/admin/environments-overview
 
 - If your bot has a large number of components (for example, more than 250 topics or more than 100 entities), export it using the classic Power Apps portal instead.
 
-> [!NOTE]> You'll need the minimum System Customizer security roles to export and import bots using solutions. Learn more about [configuring user security to resources in an environment](/power-platform/admin/database-security).
+> [!NOTE]
+> You'll need the minimum System Customizer security roles to export and import bots using solutions. Learn more about [configuring user security to resources in an environment](/power-platform/admin/database-security).
 
 ### Create a solution to manage export and import
 
