@@ -56,7 +56,7 @@ The **Environment** tab displays licensing information related to a selected env
 | Setting                  | Description     |
 |-------------------------------------|-------------------|
 | Select environment                  | Select an environment to see the license usage in the environment. You can see if the selected environment is a standard or a managed environment. You can also view the license usage for the selected environment.        |
-| **Power Apps licensing overview**   | Summary count of users actively using licenses based on last thirty days, and indicates if actions are recommended. If you change a standard environment to a managed environment, any current user launching an app---with only a Microsoft 365 license---will require a standalone Power Apps license to run the app.     |
+| **Power Apps licensing overview**   | Summary count of users actively using licenses based on last thirty days, and indicates if actions are recommended. If you change a standard environment to a managed environment, any current user launching an app&mdash;with only a Microsoft 365 license&mdash;will require a standalone Power Apps license to run the app.     |
 | License type                        | Type of license (Dynamics 365, Microsoft 365, per app, per user, pay-as-you-go, trial, or developer) the actual license is mapped to.       |
 | Active users                        | Count of unique users launching apps within the environment at least once within the last 30 days.    |
 | Recommended actions                 | Recommended actions, if any, to be considered to convert the environment as a managed environment.   |
