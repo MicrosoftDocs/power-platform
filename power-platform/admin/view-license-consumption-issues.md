@@ -3,7 +3,7 @@ title: View license consumption (preview)
 description: Review license consumption and potential license issues. 
 author: amiyapatr-zz
 ms.date: 10/12/2022
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
 ms.author: ampatra
@@ -22,48 +22,36 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-You can use the **Licenses** page to see how different licenses are consumed in your environment and you can also see if there are environments that might require licensing attention. In the environment page you can select an environment to see how different licenses consumed in your environment, based on last thirty days app launch activity in your environment. You can get answers to questions like:
+You can use the **Licenses** (**Billings > Licenses**) page to see how different licenses are consumed and if there are environments that might require licensing attention. You can get answers to questions like:
 
 -   What types of licenses are being used to launch apps?
 
--   How many users are actively consuming Power app licenses in a specific environment.
+-   How many users are actively consuming Power Apps licenses in a specific environment.
 
--   Who are the users who are actively consuming Power app licenses.
+-   Who are the users who are actively consuming Power Apps licenses.
 
--   Are there users in my environment who need standalone power app licenses.
+-   Are there users in my environment who need standalone Power Apps licenses.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-## Overview page
+## Overview tab
 
-To see an overview of license usage:
+The **Overview** tab displays a summary of environments in your tenant requiring licensing attention.
 
-1.  Sign in to the [<u>Power Platform admin center</u>](https://admin.powerplatform.microsoft.com/).
-
-2.  Select **Billing** &gt; **Licenses**.
-
-3.  Select the **Overview** tab.
-
-### What's on the Overview tab page
-
-This tab displays a summary of environments in your tenant requiring licensing attention.
-
-| Settings/information          | Description        |
+| Setting        | Description        |
 |--------------------------------------|------------------------------------------------------------|
-| Include standard environments        | Select to see results for standard (unmanaged) environments. By default, managed environments are displayed. In managed environments, all users will need standalone Power Apps licenses to run apps.           |
-| **Environments requiring attention** | The number of environments having licensing issues. These might require your attention.       |
-| Environment                          | Which environments have license issues.               |
-| License issues                       | The number of license issues for the environment. The number of licensing issues are calculated based on how many different types of licensing actions need to be performed based on the app usage in environments in the tenant. |
-| **Recommended actions**              | See a list of possible actions to remediate your license issues.        |
+| Include standard environments        | Select this option to see results for standard (unmanaged) environments. By default, managed environments are displayed. In managed environments, all users will need standalone Power Apps licenses to run apps.           |
+| Environments requiring attention | Shows the number of environments having licensing issues. These envrionments require your attention.       |
+| Environment                          | Indicates which environments have licensing issues.               |
+| License issues                       | The number of licensing issues for the environment. The number of licensing issues are calculated based on how many different types of licensing actions need to be performed based on the app usage in the environment. |
+| Recommended actions              | See a list of possible actions to remediate your licensing issues.        |
 
-## Environment view tab
+## Environment tab
 
-Select the **Environment view** tab to see a variety of licensing information related to a selected environment.
-
-### What's on the Environment view tab page
+The **Environment** tab displays licensing information related to a selected environment, based on the last thirty days. 
 
 | Information                  | Description     |
 |-------------------------------------|-------------------|
