@@ -22,12 +22,12 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-create-edit-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-create-edit-topics-teams.md)
 
-In Power Virtual Agents, a topic determines a how a bot responds to a question from a user.
+In Power Virtual Agents, a topic determines how a bot responds to a question from a user.
 You can create topics by [customizing provided templates](authoring-template-topics-teams.md), create new topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web-teams.md).
 
 All topics have trigger phrases and conversation nodes.
 
-- Trigger phrases: phrases, keywords, or questions that a user is likely to type that is related to a specific issue. You don't need to be exact with trigger phrases - the bot can determine what the user meant (their "intent") and match it to the right topic.
+- Trigger phrases: phrases, keywords, or questions that a user is likely to type that are related to a specific issue. You don't need to be exact with trigger phrases - the bot can determine what the user meant (their "intent") and match it to the right topic.
 - Conversation nodes: what you use to determine how a bot should respond and what it should do.
 
 For example, a user might type "Open hours" into your bot, which will match that to the trigger phrases for the **Store hours** topic. The bot then asks which store the customer is interested in, and displays the hours the store is open.
@@ -86,7 +86,7 @@ These automatically created topics fall into two categories:
 
    The display name is used when the bot needs to ask the person chatting which topic they're asking about.
 
-   The description is never shown to users. Use the description to describe the purpose of the topic to yourself and other bot makers.
+   The description is never shown to users. Use the description to describe the purpose of the topic for yourself and other bot makers.
 
    :::image type="content" source="../media/authoring-create-edit-topics/details-pane.png" alt-text="The Topic details pane contains a name, display name, and description":::
 
@@ -150,7 +150,7 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
    For example, if you select **Multiple choice options**, you can then enter the options the user can specify in the **Options for user** field. Each option is presented as a multiple choice button to the user, but users can also type in their answer in the bot.
 
-   The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate path for each user response. You can add additional nodes to create branching logic, and specify what the bot should respond with for each variable.
+   The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate path for each user response. You can add additional nodes to create branching logic, and specify what the bot should respond with for each value.
 
 1. You can [save the user response in a variable](authoring-variables-teams.md) to be used later.
 
@@ -183,7 +183,7 @@ You can [call Power Automate Flows](advanced-flow-teams.md) by selecting **Call 
 
 1. To specify a response from the bot, select **Add node** (**+**) to add a node, and then **Show a message** to add a new **Message** node.
 
-1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, and numbering.
+1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, ordered + unordered lists, and hyperlinks.
 
    You can also [use variables that you have defined elsewhere](authoring-variables-teams.md) in your bot conversation.
 
