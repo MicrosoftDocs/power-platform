@@ -196,6 +196,3 @@ We only want to accept reservations for up to six people, so let's add a validat
 
 1. Test your bot using the [demo website](publication-connect-bot-to-web-channels.md).
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
-

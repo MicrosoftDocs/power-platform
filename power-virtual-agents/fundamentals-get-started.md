@@ -64,7 +64,7 @@ In the navigation menu, select **Chatbots** to open the **Chatbots** page and vi
 
     - Use **Build for production** to create production bots that are intended to be deployed to your customers. If you choose this option, continue to [Create a bot](#create-a-bot).
 
-    - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use. If you choose this option, refer to the [quickstart for preview bots](quickstart_preview.md) to continue creating your bot.
+    - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use. If you choose this option, refer to the [quickstart for preview bots](quickstart-preview.md) to continue creating your bot.
 
 ### Create a bot
 
@@ -233,7 +233,7 @@ Once this bot is published, Contoso employees can access HR information in Micro
 
 ### Bot building steps
 
-See the [Quickstart: Create and deploy a human resources Power Virtual Agents bot in Teams](#quickstart-preview.md).
+See the [Quickstart: Create and deploy a human resources Power Virtual Agents bot in Teams](quickstart-preview.md).
 
 This next section of the guide looks at how you - as the bot author - can create and publish a bot.
 
