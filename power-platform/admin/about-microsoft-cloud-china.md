@@ -70,7 +70,7 @@ No. There may be some Business Application services continuing to serve workload
 #### We have extended our solution to leverage our own Azure resources, such as API Hubs, Logic Apps, and Azure Storage. Do we need to coordinate this transition and also move those workloads and resources to China 3 datacenters?
 No.  As the URIs to the Business Applications platform are not changing, this transition does not necessitate a coordinate migration of a customer’s Azure resources to the China 3 datacenters.
 
-#### If our Azure resources are operating in China 2 datacenters, but our Power Platfrom environments with a Dataverse database and related Business Applications are migrated to China 3, will this introduce measurable latency in our application’s performance? 
+#### If our Azure resources are operating in China 2 datacenters, but our Power Platfrom environment with a Dataverse database and related Business Applications are migrated to China 3, will this introduce measurable latency in our application’s performance? 
 As these datacenters are connected through Microsoft Azure’s network backbone, we do not expect there to be a measurable effect on communication latency. Customers can measure latency expectations through tools such as the [Azure Speed Test](https://www.azurespeed.com/Azure/Latency).
 
 #### Do Business Applications that rely upon connection to my Azure resources, require that they are located in the same datacenter?
