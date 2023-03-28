@@ -49,7 +49,7 @@ As customer tenants are selected for transition, notifications will be distribut
 ### IP updates
 Existing workloads are not expected to require customer reconfiguration or updates. However, we understand that some of our customers apply firewall filters sensitive to recognizable IPs.  In these situations, a review of these configurations is required to ensure the following IP ranges are configured as trusted Microsoft Azure, operated by 21 Vianet, IP ranges:
 
-[Download Azure IP Ranges and Service Tags – China Cloud from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/confirmation.aspx?id=57062))
+[Download Azure IP Ranges and Service Tags – China Cloud from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/confirmation.aspx?id=57062)
 
 Within the JSON file linked through Download Center, above, the Business Applications engineering team suggests a focused review on defined IP filtering related to the following tags:
 - PowerPlatformInfra.ChinaEast3
