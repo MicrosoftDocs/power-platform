@@ -47,8 +47,6 @@ To see an overview of license usage:
 
 3.  Select the **Overview** tab.
 
-![A screenshot of the Overview tab page ](media/image1.png)
-
 ### What's on the Overview tab page
 
 This tab displays a summary of environments in your tenant requiring licensing attention.
@@ -64,8 +62,6 @@ This tab displays a summary of environments in your tenant requiring licensing a
 ### Environment view tab
 
 Select the **Environment view** tab to see a variety of licensing information related to a selected environment.
-
-![](media/image2.png)
 
 ### What's on the Environment view tab page
 
@@ -84,15 +80,11 @@ Select the **Environment view** tab to see a variety of licensing information 
 |                                     |                                              |
 | **Download**                        | You can download the information available in the overview section and information available in the drill down section in csv format. To download the details available in the drill down section, You can select a specific license type and from the drill down section initiate a download. Once a csv file is generated you can re- download the same file within 5 days , no need to re-initiate a new |
 |                                     | Download .             |
-|                                     |                                                                                                                                                                                                                                                                                                                                                                                                             |
-
-![Table Description automatically generated](media/image3.png)
+|                                     |                                                                                                                                                                                                                                                                                                         
 
 ## Other ways to access licensing pages
 
 You can select **View licensing details** from the Enable Managed Environments page to see licensing information.
-
-![Screenshot showing the View licensing details option on the Enable Managed Environments page ](media/image4.png)
 
 If the selected environment is standard, you'll see an alert about license requirements for users with only Microsoft 365 licenses.
 
