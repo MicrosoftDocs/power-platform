@@ -3,11 +3,11 @@ title: "Update a record Owner and Owning Business Unit"
 description: "Learn to update a record’s owner, an Owning Business Unit, or both an Owner and Owning Business Unit because the record changes ownership."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 03/28/2023
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -32,12 +32,12 @@ Follow these steps.
 
    :::image type="content" source="media/change-owning-business-unit.png" alt-text="Change Owner or Owner Business Unit":::
 
-## Record Ownership
-To prevent the situation where a record ownership was updated to a new owner and the new owner cannot access the record, the following privilege is required and enforced:
-1. The new owner must be in an **Enabled** user status, and 
-1. The new owner must be assigned with a security role which has a **Read** privilege of User level or above on the table, or
-2. The new owner belongs to a team which has a **Member's privilege inheritance** of Direct User access level that has a **Read** privilege of User level or above on the table, or
-3. The new owner belongs to a team which has a **Member's privilege inheritance** of Team privileges only that has a **Read** privilege of organization level on the table.
+## Record ownership
+To access a record, a new owner must have an **Enabled** user status and one of the following statements must be true:
+
+- The new owner must be assigned to a security role that has **Read** privileges on the table.
+- The new owner belongs to a team that has **Member's privilege inheritance** set to **Direct User (Basic) access level** and has **Read** privileges of user level or above on the table.
+- The new owner belongs to a team that has **Member's privilege inheritance** set to **Team privileges only** and has **Read** privileges of organization level on the table.
 
 If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure), and your users are assigned to teams, the team's security role **Member's privilege inheritance** must be set to Direct User access to allow team members to own records.
 
