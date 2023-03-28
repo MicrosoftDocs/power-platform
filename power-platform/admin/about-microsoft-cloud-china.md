@@ -20,9 +20,9 @@ Microsoft Power Platform and Dynamics 365 apps services operated by 21Vianet is 
 
 Customers in China have two options from which to select how they want to access Power Platform and Dynamics 365 apps.
 
-- **Services operated by 21Vianet in China** - 21Vianet operates and offers Dataverse services in China. This option provides a consistent Power Platform and Dynamics 365 apps experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
+- **Services operated by 21Vianet in China**: 21Vianet operates and offers Power Platform and Dynamics 365 services in China. This option provides a consistent Power Platform and Dynamics 365 apps experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
-- **Services operated by Microsoft** – This option is for customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Power Platform and Dynamics 365 apps, and Office using an Enterprise Agreement, Microsoft 365 and/or Power Platform and Dynamics 365 apps can co-exist on the tenant. 
+- **Services operated by Microsoft**: This option is for customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Power Platform and Dynamics 365 apps, and Office using an Enterprise Agreement, Microsoft 365 and/or Power Platform and Dynamics 365 apps can co-exist on the tenant. 
 
 For information on provisioning environments, see [Create and manage environments in the Power Platform admin center](./create-environment.md).
 
@@ -42,14 +42,14 @@ Beginning in April, 2023, current and future Microsoft Business Applications cus
 
 These cutting-edge datacenters provide the necessary capacity and robustness to sustain the ongoing expansion and demand of Business Applications in China, and offer the opportunity to introduce new capabilities and offerings that are currently not available in the region. This development represents an exciting and promising advancement for the future of Business Applications in China.
 
-As of April 17, 2023, new Power Platform Dataverse environments will be created in China 3. Subsequently, throughout April, May, June, July, and August 2023, the Microsoft product engineering teams will transition existing Power Platform Dataverse to Microsoft Azure China 3.  There will be no changes to the Environment IDs, Org IDs, Tenant IDs, URLs or URIs used to access Business Applications Environments, nor will there be any functionality impact. 
+As of April 17, 2023, new [Power Platform environments with Dataverse database](create-environment.md#create-an-environment-in-the-power-platform-admin-center) will be created in China 3. Subsequently, throughout April, May, June, July, and August 2023, the Microsoft product engineering teams will transition existing Power Platform Dataverse to Microsoft Azure China 3.  There will be no changes to the Environment IDs, Org IDs, Tenant IDs, URLs or URIs used to access Business Applications Environments, nor will there be any functionality impact. 
 
 As customer tenants are selected for transition, notifications will be distributed to the Microsoft 365 Message Center notifying administrators of this maintenance activity, specifically indicating when this will take place for their environments. It is expected this will take place between 15:00 UTC and 21:00 UTC. Both non-production and production environments will be transitioned without customer involvement; but is expected to cause a minor service communication interruption lasting less than 10 minutes.
 
 ### IP updates
 Existing workloads are not expected to require customer reconfiguration or updates. However, we understand that some of our customers apply firewall filters sensitive to recognizable IPs.  In these situations, a review of these configurations is required to ensure the following IP ranges are configured as trusted Microsoft Azure, operated by 21 Vianet, IP ranges:
 
-[Download Azure IP Ranges and Service Tags – China Cloud from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/confirmation.aspx?id=57062))
+[Download Azure IP Ranges and Service Tags – China Cloud from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/confirmation.aspx?id=57062)
 
 Within the JSON file linked through Download Center, above, the Business Applications engineering team suggests a focused review on defined IP filtering related to the following tags:
 - PowerPlatformInfra.ChinaEast3
@@ -60,7 +60,7 @@ Within the JSON file linked through Download Center, above, the Business Applica
 Further, we encourage an evaluation of other tags that have been referenced to pinpoint IP filtering. With that, consider the ChinaEast3 and ChinaNorth3 variations of those service tags, if they exist.  If a China3 variation does not exist in your current IP filter configurations, consider adding them to the IPs from that tag’s list that are present in this file.
 
 ### Dynamics 365 Finance and Supply Chain Management
-In the coming months, Microsoft will also share details about the transition of Dynamics 365 Supply Chain Management and Dynamics 365 Finance workloads to China 3.  Our product engineering teams are in the process of minimizing downtime that users and automated processes will experience with these migrations to the China 3 Region.  As such, more details will be shared to work with and prepare customers for these migrations. Microsoft will not transition Dataverse environments for customers that also have an active Dynamics 365 Finance and/or Supply Chain Management LCS project.  These Dataverse transitions will take place with a migration of the Dynamics 365 Finance/Supply Chain Management LCS project and related environments.
+In the coming months, Microsoft will also share details about the transition of Dynamics 365 Supply Chain Management and Dynamics 365 Finance workloads to China 3.  Our product engineering teams are in the process of minimizing downtime that users and automated processes will experience with these migrations to the China 3 Region.  As such, more details will be shared to work with and prepare customers for these migrations. Microsoft won't transition Power Platform environments with Dataverse database for customers that also have an active Dynamics 365 Finance and Supply Chain Management Lifecycle Services (LCS) project. These transitions will take place with a migration of the Dynamics 365 Finance and Supply Chain Management LCS project and related environments.
 
 ### Frequently asked questions
 
