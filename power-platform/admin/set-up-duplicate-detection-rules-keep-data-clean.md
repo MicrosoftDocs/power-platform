@@ -7,13 +7,6 @@ ms.topic: conceptual
 ms.date: 02/14/2022
 ms.subservice: admin
 ms.author: gned
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Set up duplicate detection rules to keep your data clean
 
