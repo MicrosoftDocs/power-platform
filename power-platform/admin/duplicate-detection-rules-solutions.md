@@ -29,7 +29,7 @@ More information about solutions: [Solution concepts](/power-platform/alm/soluti
 
 - When a rule condition is added through active layer customizations and if for existing condition, two fields, **No of characters** and **Ignore blank values** have changed through solution import, then the system will overwrite the existing row. However, if any fields other than these two fields have been changed in the existing condition then new rule condition will be added instead of overwriting the existing row.  
 
-- If rule conditions are inserted through the previous versions of the same solution then the system will overwrite the existing condition.
+- If rule conditions are inserted through the previous versions of the same solution, the system will overwrite the existing condition.
 
 - We recommend publishing and unpublishing rules only on the target environment.
 
@@ -93,7 +93,7 @@ To create a duplicate detection rule, you must create a separate solution for th
 
     1. Select your environment where you imported the solution, and select **Settings** > **Data management** > **Duplicate detection rules**.
 
-    1. You will see your rule in unpublished state. Open the rule definition to verify if it contains all the configurations and conditions that you defined earlier. Publish the rule to use it.
+    1. You'll see your rule in unpublished state. Open the rule definition to verify if it contains all the configurations and conditions that you defined earlier. Publish the rule to use it.
 
 ## Add or delete existing rule conditions using solution
 
@@ -125,6 +125,6 @@ To add new rule conditions or delete existing rule conditions by importing a sol
 
     1. Select your environment where you imported the solution, and select **Settings** > **Data management** > **Duplicate detection rules**.
 
-    1. You will see your rule in unpublished state. Open the rule definition to verify if it contains all the rule condition changes you made earlier. Publish the rule to use it.
+    1. You'll see your rule in unpublished state. Open the rule definition to verify if it contains all the rule condition changes you made earlier. Publish the rule to use it.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
