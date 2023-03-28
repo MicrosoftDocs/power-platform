@@ -59,15 +59,14 @@ The **Environment** tab displays licensing information related to a selected env
 | **Power Apps licensing overview**   | Summary count of users actively using licenses based on last thirty days, and indicates if actions are recommended. If you change a standard environment to a managed environment, any current user launching an app&mdash;with only a Microsoft 365 license&mdash;will require a standalone Power Apps license to run the app.     |
 | License type                        | Type of license (Dynamics 365, Microsoft 365, per app, per user, pay-as-you-go, trial, or developer) the actual license is mapped to.       |
 | Active users                        | Count of unique users launching apps within the environment at least once within the last 30 days.    |
-| Recommended actions                 | Recommended actions, if any, to be considered to convert the environment as a managed environment.   |
-| Usage details for a License Type    | Select a license type in the Power Apps licensing overview section to see the list of users of users consuming specific license type.                    |
-| Email                               | Email ID/or UPN of the user, who has launched an app available in the selected environment. Includes a list of users with whom an app is shared and if the app is installed in the selected environment. Selecting Email takes users to the Microsoft 365 admin portal.     |
-| License                             | Actual SKU Name of the license.     |
+| Recommended actions                 | Actions to consider to convert the environment to a managed environment.   |
+| Usage details for a License Type    | Select a license type in the **Power Apps licensing overview** section to see the list of users consuming specific license type.                    |
+| Email                               | Email ID or UPN of the user, who has launched an app available in the selected environment. Includes a list of users with whom an app is shared, and if the app is installed in the selected environment. Selecting the email link takes users to the Microsoft 365 admin portal.     |
+| License                             | Actual SKU name of the license.     |
 | Last active date                    | Date when a selected app was last launched by the user in a selected time.     |
-| **License Type: Power App Per App** | If the selected environment has got Per app licenses assigned, you can view the list of apps consuming app pass licenses, number of users the app has been shared with and the count of users who have launched app using per app licenses     |
-|                                     |                                              |
-| **Download**                        | You can download the information available in the overview section and information available in the drill down section in csv format. To download the details available in the drill down section, You can select a specific license type and from the drill down section initiate a download. Once a csv file is generated you can re- download the same file within 5 days , no need to re-initiate a new |
-|                                     | Download .             |                                                                                                                      
+| **License Type: Power App Per App** | If the selected environment has per app licenses assigned, you can view the list of apps consuming app pass licenses, number of users the app has been shared with, and the count of users who have launched the app using per app licenses.     |
+| **Download**                        | Download the information in CSV format. <br><br>To download the details available in the drill-down section, select a specific license type to initiate a download. Once a CSV file is generated, you can re-download the same file within five days; you don't have to re-initiate a new download.|
+                                                                                                      
 
 ## Other ways to access licensing pages
 
