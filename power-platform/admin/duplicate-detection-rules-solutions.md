@@ -4,17 +4,10 @@ description: "Learn about how you can create and manage duplicate detection rule
 author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/26/2023
+ms.date: 03/28/2023
 ms.subservice: admin
 ms.author: gned
 ms.reviewer: kvivek
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Create and manage duplicate detection rules using solutions
 
@@ -34,9 +27,9 @@ More information about solutions: [Solution concepts](/power-platform/alm/soluti
 
 - Introduce new conditions on existing rules through solution import only.  
 
-- When a rule condition is added through active layer customizations and if for existing condition, two fields,"no of characters" and "ignore blank values" have changed through solution import, then the system will overwrite the existing row. However, if any fields other than these two fields have been changed in the existing condition then new rule condition will be added instead of overwriting the existing row.  
+- When a rule condition is added through active layer customizations and if for existing condition, two fields, **No of characters** and **Ignore blank values** have changed through solution import, then the system will overwrite the existing row. However, if any fields other than these two fields have been changed in the existing condition then new rule condition will be added instead of overwriting the existing row.  
 
-- If rule conditions are inserted through the previous versions of the same solution, then the system will overwrite the existing condition.
+- If rule conditions are inserted through the previous versions of the same solution then the system will overwrite the existing condition.
 
 - We recommend publishing and unpublishing rules only on the target environment.
 
