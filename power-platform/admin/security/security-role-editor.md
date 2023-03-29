@@ -143,17 +143,17 @@ Updating settings for each table can be very time-consuming and tedious. To expe
 
 The behavior of the copy table permission will be as follows:
 
--For permissions that exist in both source and target:
+- For permissions that exist in both source and target:
 
-    - If the source permission settings depth exists in the target, then the copy table permissions will be successful.
+  - If the source permission settings depth exists in the target, then the copy table permissions will be successful.
 
-    - If the source permission settings depth **does not** exist in target, an error message is displayed indicating that the copy process failed.
+  - If the source permission settings depth **does not** exist in target, an error message is displayed indicating that the copy process failed.
 
 - For permissions that only exist in either the source or target:
 
-    - If the permission exists in the source and not in the target, then it will be ignored in the target and the copy for the remaining permissions will be successful.
+  - If the permission exists in the source and not in the target, then it will be ignored in the target and the copy for the remaining permissions will be successful.
 
-    - Similarly, if the permissions **does not** exist in the source and exists in the target, then the current depth of that permission will be retained in the target and the copy for the remaining permissions will be successful.
+  - Similarly, if the permissions **does not** exist in the source and exists in the target, then the current depth of that permission will be retained in the target and the copy for the remaining permissions will be successful.
 
 ## Permission settings
 
