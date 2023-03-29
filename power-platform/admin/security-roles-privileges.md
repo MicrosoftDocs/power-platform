@@ -53,7 +53,7 @@ Each security role consists of the following privilege types:
 
 Each set of privilege types are separated by a tab, and for each tab you can filter the view by all privileges, assigned privileges or unassigned privileges for the selected security role.
 
-:::image type="content" source="media/privilege-types.png" alt-text="The security role editor page displaying the drop-down menu that enables you to view privilege types.":::
+:::image type="content" source="security/media/privilege-types.png" alt-text="The security role editor page displaying the drop-down menu that enables you to view privilege types.":::
 
 ### Search by table name or table privilege name
 
@@ -118,7 +118,7 @@ The following table lists the levels of access in the app, starting with the lev
 
 For each table, select the appropriate type for each privilege. Select **Save** when you have completed your updates.
 
-:::image type="content" source="media/permission-level.png" alt-text="Selecting the permission level for each privilege type of a table.":::
+:::image type="content" source="security/media/permission-level.png" alt-text="Selecting the permission level for each privilege type of a table.":::
 
 ### Copy table permissions
 
