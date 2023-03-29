@@ -40,11 +40,11 @@ This tutorial uses the sample ASP.NET Weather web API to create a custom connect
 1. On the menu bar, select File > New > Project.
 2. On the Create a new project page, type "web api" into the search box.
 3. Select the ASP.NET Core Web API, and then click Next.
-    :::image type="content" source="media/vs-step1-1.png" alt-text="Create a new project screen":::
+:::image type="content" source="media/vs-step1-1.png" alt-text="Create a new project screen":::
 4. Enter “WeatherSample” into Project name, and then click Next.
-    :::image type="content" source="media/vs-step1-2.png" alt-text="Configure your new project screen":::
+:::image type="content" source="media/vs-step1-2.png" alt-text="Configure your new project screen":::
 5. Click Create.
-    :::image type="content" source="media/vs-step1-3.png" alt-text="Additional information screen":::
+:::image type="content" source="media/vs-step1-3.png" alt-text="Additional information screen":::
 
 A Solution WeatherSample will be created with a Project WeatherSample. This project contains an example controller for a RESTful HTTP service.
 
