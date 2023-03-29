@@ -4,7 +4,7 @@ description: "Learn how to edit the properties of an environment in Power Platfo
 author: LaurentPepin 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/08/2021
+ms.date: 03/29/2023
 ms.subservice: admin
 ms.author: lapepin
 ms.reviewer: sericks
@@ -66,8 +66,8 @@ Administrators can edit properties of an environment, such as the friendly name,
        - Most recent, previous URL: **domain02.crm.dynamics.com** (usable for 24 more hours)
        - Active URL: **domain03.crm.dynamics.com**
 
-     - The URL of environment B is changed to domain01.crm.dynamics.com.<br>
-     _This is possible because environment A's URL was changed twice in a row, effectively removing domain01.crm.dynamics.com from environment A's most recent previous URL, and therefore making it available for use by any other environment_
+     - The URL of environment B is changed to: **domain01.crm.dynamics.com**
+       - This is possible because the URL of environment A was changed twice in a row, effectively removing **domain01.crm.dynamics.com** from environment A's most recent, previous URL, and therefore making it available for use by any other environment.
 
    - **Type**. Change the environment type from production to sandbox or sandbox to production.
 
