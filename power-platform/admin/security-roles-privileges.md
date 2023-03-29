@@ -28,7 +28,7 @@ You can assign security roles using the new, modern UI, or using the the legacy 
 
 ## Security roles and the new, modern UI (preview feature)
 > [!Important]
-> [!include [preview](../../includes/cc-preview-features-definition.md)]
+> [!include [preview](../includes/cc-preview-features-definition.md)]
 
 A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles.
   
