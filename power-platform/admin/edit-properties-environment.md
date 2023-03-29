@@ -1,13 +1,13 @@
 ---
 title: "Edit properties of an environment"
 description: "Learn how to edit the properties of an environment in Power Platform admin center, including URL, friendly name, type, and security group."
-author: jimholtz
-
+author: LaurentPepin 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/08/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: lapepin
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
