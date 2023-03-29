@@ -164,6 +164,9 @@ To add a security role to an owner team, group team, or a user who has Enabled s
 ## Create, edit, or copy a security role using the new, modern UI (preview feature)
 You can easily create, edit, or copy a security role and customize it to meet your needs.
 
+> [!Important]
+> [!include [preview](../../includes/cc-preview-features-definition.md)]
+
 1.  Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2.  Select **Environments** in the navigation pane.
 3.  Select the check mark next to the environment you want to use.
@@ -174,9 +177,6 @@ You can easily create, edit, or copy a security role and customize it to meet yo
     - [Create a new security role](#create-a-new-security-role)
     - [Edit an existing security role](#edit-an-existing-security-role)
     - [Copy a security role](#copy-a-security-role)
-
-> [!Important]
-> [!include [preview](../../includes/cc-preview-features-definition.md)]
 
 #### Create a new security role
 
