@@ -56,3 +56,4 @@
             href: cli\reference\tool.md
           - name: pac virtual-agent
             href: cli\reference\virtual-agent.md
+      - name: Visual Studio Integration (preview)
