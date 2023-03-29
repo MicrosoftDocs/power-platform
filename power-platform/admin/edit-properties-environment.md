@@ -48,7 +48,7 @@ Administrators can edit properties of an environment, such as the friendly name,
      >   1. **Synchronize offline data**. Dynamics 365 for Outlook users connected to this environment who work offline must synchronize by using the previous URL. If you run the Configuration Wizard and change the URL before completing this step, offline data may be lost.  
      >   2. **Run the Configuration Wizard**. After a URL name change is saved and any offline data is synchronized, users of Dynamics 365 for Outlook must run the Configuration Wizard to update the URL.  
   
-        After a URL name change is saved, all users who access that environment must be notified of the change. For 24 hours after the change, users will be able to access the environment using the most recent previous URL and no other environment will be able to use the most recent URL. After the 24-hour period has passed, users will not be able to access the environment using the most recent previous URL and other environments will be able to use the most recent URL.
+        After a URL name change is saved, all users who access that environment must be notified of the change. For 24 hours after the change, users will be able to access the environment using the most recent, previous URL. No other environment will be able to use the most recent URL. After the 24-hour period has passed, users won't be able to access the environment using the most recent, previous URL. Other environments will be able to use the most recent URL.
   
         If the URL name is changed more than once during a 24-hour period, the original URL is released and cannot be used to access the environment anymore. For example, consider the following situation:  
   
