@@ -20,7 +20,7 @@ search.app:
 ---
 # Security roles and privileges
 
-To control data access, you must set up an organizational structure that both protects sensitive data and enables collaboration. To help secure your data, assign users to securit roles. This article explains security roles and their associated privileges.
+To control data access, you must set up an organizational structure that both protects sensitive data and enables collaboration. To help secure your data, assign users to security roles. This article explains security roles and their associated privileges.
 
 You can assign security roles using the new, modern UI, or using the the legacy UI:
 
