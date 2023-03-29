@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 09/20/2022
 ms.subservice: admin
 ms.author: sriknair 
-ms.reviewer: jimholtz
+ms.reviewer: angieandrews
 contributors: 
   - ShawnNandiMSFT 
   - PriyaKodukula 
@@ -21,7 +21,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Originally announced in October 2019, Power Platform Request limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Power Virtual Agents, and Dynamics 365 applications.
+Power Platform Request limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Power Virtual Agents, and Dynamics 365 applications.
 
 ## What is a Microsoft Power Platform request?
 

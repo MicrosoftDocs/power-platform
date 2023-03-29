@@ -4,7 +4,7 @@ description: Learn about types of Power Automate licenses.
 author: PriyaKodukula
 ms.subservice: admin
 ms.topic: overview
-ms.date: 03/28/2023
+ms.date: 03/29/2023
 ms.author: prkoduku
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -195,7 +195,7 @@ Here is an example of an email that was sent for a flow that was consistently ex
 
 ![An overage email example](../media/power-automate-licensing/email-overage-example.png)
 
-The Power Platform admin center contains [reports on Power Automate requests](..api-request-limits-allocations.md#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). This reporting will help you to quickly view adoption and user metrics for your organization.
+The Power Platform admin center contains [reports on Power Automate requests](../api-request-limits-allocations.md#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). This reporting will help you to quickly view adoption and user metrics for your organization.
 
 Additionally, you can see the action usage for a given flow by selecting the  **Analytics**  action from the flow properties page, and this works across all types of actions. This helps you to understand how many actions are running each day. It can help you understand usage patterns to optimize for capacity.
 
@@ -203,11 +203,11 @@ Additionally, you can see the action usage for a given flow by selecting the  **
 
 #### As an admin, what tools do I have to analyze my environment's usage?
 
-The Power Platform admin center contains[reports on Power Automate requests](..api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). These reports are currently in public preview. Admins have two reports available in the Power Platform admin center.
-- [User report](..api-request-limits-allocations.md#licensed-user-report) – This report displays the Power Platform request usage by every user in the environment, compared to their assigned limits.
-- [Per flow report](..api-request-limits-allocations.md#per-flow-report) - This report displays the Power Platform request usage by every flow in the environment that has a per flow license.
+The Power Platform admin center contains[reports on Power Automate requests](../api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). These reports are currently in public preview. Admins have two reports available in the Power Platform admin center.
+- [User report](../api-request-limits-allocations.md#licensed-user-report) – This report displays the Power Platform request usage by every user in the environment, compared to their assigned limits.
+- [Per flow report](../api-request-limits-allocations.md#per-flow-report) - This report displays the Power Platform request usage by every flow in the environment that has a per flow license.
 
-- [Non-licened user report](..api-request-limits-allocations.md#non-licensed-user-report) - This report displays the Power Platform request usage for non-licensed users and the total entitlement for non-licensed users for that tenant. In future, power platform requests usage of flows running under service principal will be displayed in this report. 
+- [Non-licensed user report](../api-request-limits-allocations.md#non-licensed-user-report) - This report displays the Power Platform request usage for non-licensed users and the total entitlement for non-licensed users for that tenant. In future, power platform requests usage of flows running under service principal will be displayed in this report. 
 
 After the reports are generally available, users will have time to react and purchase higher licenses before enforcement begins.
 
@@ -330,7 +330,7 @@ You can consult this [requests limits frequently asked questions](../api-request
 
 ## Free plan
 
-If you sign in with work or school email address, you get all [Power Automate capabilities included in Office 365](power-platform-requests-faqs.md). But if you have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate with the free plan. Go to [Power Automate](https://flow.microsoft.com/) and then select **Try free**.
+If you sign in with work or school email address, you get all [Power Automate capabilities included in Office 365](#power-platform-requests-faqs). If you have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate with the free plan. Go to [Power Automate](https://flow.microsoft.com/) and then select **Try free**.
 
 > [!NOTE]
 > You cannot share flows when you use the free plan.
