@@ -38,7 +38,7 @@ Administrators can edit properties of an environment, such as the friendly name,
    - **URL**. The URL is used to construct the URL for users to sign in to customer engagement apps. We recommend that you limit the length of the URL name to reduce the overall length of the URL.  
   
      > [!WARNING]
-     > For up to 24 - 48hrs after you have updated the URL, you will not be able to open or edit Power Automate flows in the environment that have connections to Dataverse. You will see the error "It looks like something went wrong." while the edit flow page is pointing to the old environment URL. The flows will still run in the background and can be turned on or off via Solutions.
+     > For up to 24-48 hours after you have updated the URL, you will not be able to open or edit Power Automate flows in the environment that have connections to Dataverse. You will see the error "It looks like something went wrong." while the edit flow page is pointing to the old environment URL. The flows will still run in the background and can be turned on or off via Solutions.
      > 
      >  There are important tasks that you must communicate to your users immediately following a URL name change.  
      > 
@@ -52,19 +52,19 @@ Administrators can edit properties of an environment, such as the friendly name,
   
         If the URL name is changed more than once during a 24-hour period, the original URL is released and cannot be used to access the environment anymore. For example, consider the following situation:  
   
-     - The original URL of environment A: **domain01.crm.dynamics.com.**
+     - The original URL of environment A: **domain01.crm.dynamics.com**
         - Most recent, previous URL: NULL
         - Active URL: **domain01.crm.dynamics.com**
   
-     - The URL of environment A is changed to domain02.crm.dynamics.com.<br>
-       _At this point, users can still use domain01.crm.dynamics.com to access the environment for a period of 24 hours, but they should now use domain02.crm.dynamics.com. Note that during this 24 hours period, no other environment can use the domain domain01.crm.dynamics.com._<br>
-     _Most recent previous URL (usable for 24 more hours): domain01.crm.dynamics.com_<br>
-     _Active URL: domain02.crm.dynamics.com_<br>
+     - The URL of environment A is changed to: **domain02.crm.dynamics.com**
+       - At this point, users can still use **domain01.crm.dynamics.com** to access the environment for a period of 24 hours; however, they should now use the **domain02.crm.dynamics.com** URL. Note that during this 24-hour period, no other environment can use the domain **domain01.crm.dynamics.com**.
+       - Most recent, previous URL: **domain01.crm.dynamics.com** (usable for 24 more hours)
+       - Active URL: **domain02.crm.dynamics.com**
   
-     - The URL of environment A is changed to domain03.crm.dynamics.com.<br>
-     _At this point, users can still use domain02.crm.dynamics.com to access the environment for a period of 24 hours, but they should now use domain03.crm.dynamics.com. However, they can no longer use domain01.crm.dynamics.com to access the environment, since this is not the most recent previous URL. The URL domain01.crm.dynamics.com is now available for use by any other environment._<br>
-     _Most recent previous URL (usable for 24 more hours): domain02.crm.dynamics.com_<br>
-     _Active URL: domain03.crm.dynamics.com_<br>
+     - The URL of environment A is changed to: **domain03.crm.dynamics.com**
+       - At this point, users can still use **domain02.crm.dynamics.com** to access the environment for a period of 24 hours; however, they should now use the **domain03.crm.dynamics.com** URL. Users can no longer use **domain01.crm.dynamics.com** to access the environment, since this is not the most recent, previous URL. The URL **domain01.crm.dynamics.com** is now available for use by any other environment.
+       - Most recent, previous URL: **domain02.crm.dynamics.com** (usable for 24 more hours)
+       - Active URL: **domain03.crm.dynamics.com**
 
      - The URL of environment B is changed to domain01.crm.dynamics.com.<br>
      _This is possible because environment A's URL was changed twice in a row, effectively removing domain01.crm.dynamics.com from environment A's most recent previous URL, and therefore making it available for use by any other environment_
