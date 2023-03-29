@@ -115,7 +115,6 @@ The following table describes which resources can be authored by each security r
 
 <sup>*</sup>Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
 
-
 ## Assign security roles to users in an environment that has no Dataverse database 
 
 For environments with no Dataverse database, security roles can be assigned to individual users or groups from Azure AD. A user who has the Environment Admin role in the environment can take these steps.
@@ -165,7 +164,7 @@ To add a security role to an owner team, group team, or a user who has Enabled s
 You can easily create, edit, or copy a security role and customize it to meet your needs.
 
 > [!Important]
-> [!include [preview](../../includes/cc-preview-features-definition.md)]
+> [!include [preview](includes/cc-preview-features-definition.md)]
 
 1.  Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2.  Select **Environments** in the navigation pane.
