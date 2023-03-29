@@ -31,6 +31,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 |Application | Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations. |System admin |
 | | App Management User | capam@microsoft.com | To allow App Management Services to query tenant details such as Tenant country | System admin |
+| | CAP Package Deployer Service DVClient | CAPPackageDeployerServiceDVClient@onmicrosoft.com | To import solutions into customer environments for customer driven installs from Power Platform Admin Center. | System admin |
 | | Dataverse Dataverse search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | System admin |
 | | Dynamics 365 Office Data Service | diofficedata@microsoft.com |Service Application to perform data integration between Microsoft Dataverse and Microsoft 365. | DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
