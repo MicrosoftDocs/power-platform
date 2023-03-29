@@ -41,6 +41,7 @@ Each security role consists of record-level privileges and task-based privileges
 5.  Expand **Users + Permissions**.
 6.  Select **Security roles**. A list of the existing security roles in your environment is displayed.
 
+### Define the privileges and properties of a security role
 You have the option to enable or disable the **Team members inherit role** option. If enabled and the role is assigned to a team, all team members will inherit all the privileges associated with this role.
 
 Each security role consists of the following privilege types:
@@ -55,11 +56,11 @@ Each set of privilege types are separated by a tab, and for each tab you can fil
 
 :::image type="content" source="security/media/privilege-types.png" alt-text="The security role editor page displaying the drop-down menu that enables you to view privilege types.":::
 
-### Search by table name or table privilege name
+#### Search by table name or table privilege name
 
 You can locate a specific table or privilege by entering the name in the search box and selecting the magnifying glass icon or by pressing **Enter**. This will display a filtered list based on your search criteria. Select the **X** icon to clear your search.
 
-### Table groupings
+#### Table groupings
 
 Tables are, by default, grouped into the following categories:
 
@@ -73,7 +74,7 @@ Tables are, by default, grouped into the following categories:
 -   Service
 -   Service Management
   
-### Configure permissions
+#### Configure permissions
 
 Tables are organized by groupings that align to their module or application.
 
