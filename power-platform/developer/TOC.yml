@@ -57,3 +57,6 @@
           - name: pac virtual-agent
             href: cli\reference\virtual-agent.md
       - name: Visual Studio Integration (preview)
+        items:
+          - name: Use Visual Studio and Power Apps to create a front-end app for ASP.NET web API
+            href: visual-studio-connected-service.md
