@@ -10,7 +10,7 @@ contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/10/2023
+ms.date: 03/29/2023
 search.audienceType: 
   - admin
 search.app:
@@ -174,6 +174,44 @@ If your app uses a custom entity, its privileges must be explicitly granted in a
 > - Other users might need all the privileges that Type A users have, plus the ability to create, append to, delete, and share. The security role for these users will have create, read, write, append, delete, assign, append to, and share privileges. 
 
 For more information about access and scope privileges, see [Security roles and privileges](security-roles-privileges.md). 
+
+### Create, edit, and copya security role in the new, modern UI (preview feature)
+The security role management experience in the Power Platform admin center has been updated. Use the security role editor to manage seruity roles for your organization. You no longer need to use the legacy user interface. 
+
+To access the security role editor:
+
+1.  Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2.  Select **Environments** in the navigation pane.
+3.  Select the check mark next to the environment you want to use.
+4.  Select **Settings**.
+5.  Expand **Users + Permissions**.
+6.  Select **Security roles**. A list of the existing security roles in your environment is displayed.
+7.  Complete the appropriate task:
+    - [Create a new security role](#create-a-new-security-role)
+    - [Edit an existing security role](#edit-an-existing-security-role)
+    - [Copy a security role](#copy-a-security-role)
+
+> [!Important]
+> [!include [preview](../../includes/cc-preview-features-definition.md)]
+
+#### Create a new security role
+
+1. Select **New role** from the command bar. The **Create New Role** pane appears.
+2. In the **Role Name** field, enter a name for the new role.
+3. In the **Business unit** field, select the corresponding business unit the role will belong to.
+4. Indicate if team members should inherit the role. If enabled and the role is assigned to a team, all team members will inherit all the privileges associated with this role.
+5. Select **Save** to save the role.
+6. [Define the privileges and properties of the security role](#define-the-privileges-and-properties-of-a-security-role).
+
+
+#### Edit an existing security role
+
+To edit an existing security role, either select the role name, or select the row and choose **Edit.** Then [define the privileges and properties of the security role](#define-the-privileges-and-properties-of-a-security-role).
+
+#### Copy a security role
+
+Select the security role and choose copy. You will need to give the role a new name. Note that only the privileges will be copied, the assigned members and teams will not be assigned to the copied role. [Edit the security role](#edit-an-existing-security-role), as needed.
+
 
 ### Create a custom security role with minimum privileges to run an app
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and select **Environments** in the navigation pane.
