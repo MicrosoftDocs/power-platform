@@ -26,15 +26,20 @@ You can assign security roles using the new, modern UI, or using the the legacy 
 - [Security roles and the new, modern UI (preview feature)](security-roles-privileges.md#security-roles-and-the-new-modern-ui-preview-feature)
 - [Security roels and the legacy UI](security-roles-privileges.md#security-roles-and-the-legacy-ui)
 
-## Security roles in the new, modern UI (preview feature)
+## Security roles and the new, modern UI (preview feature)
 > [!Important]
 > [!include [preview](../../includes/cc-preview-features-definition.md)]
 
 A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles.
   
-Security role privileges are cumulative: having more than one security role gives a user privileges available in each role that is assigned.  
-  
-Each security role consists of record-level privileges and task-based privileges. The new, modern UI allows you to define the privileges and properties of a specific security role.
+Each security role consists of record-level privileges and task-based privileges. The new, modern UI allows you to define the privileges and properties of a specific security role. To do so:
+
+1.  Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2.  Select **Environments** in the navigation pane.
+3.  Select the check mark next to the environment you want to use.
+4.  Select **Settings**.
+5.  Expand **Users + Permissions**.
+6.  Select **Security roles**. A list of the existing security roles in your environment is displayed.
 
 You have the option to enable or disable the **Team members inherit role** option. If enabled and the role is assigned to a team, all team members will inherit all the privileges associated with this role.
 
@@ -70,7 +75,7 @@ Tables are, by default, grouped into the following categories:
   
 ### Configure permissions
 
-In the security role editor, the tables are organized by groupings that align to their module or application.
+Tables are organized by groupings that align to their module or application.
 
 > [!Note]
 > You can only update the one selected table at a time. You can copy settings from one table to multiple tables in a single action.
