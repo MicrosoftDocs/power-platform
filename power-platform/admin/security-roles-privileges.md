@@ -32,7 +32,7 @@ You can assign security roles using the new, modern UI, or using the the legacy 
 
 A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles.
   
-Each security role consists of record-level privileges and task-based privileges. The new, modern UI allows you to define the privileges and properties of a specific security role. To do so:
+Each security role consists of record-level privileges and task-based privileges. To view a list of security roles in your environment, do the following:
 
 1.  Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2.  Select **Environments** in the navigation pane.
@@ -52,9 +52,9 @@ Each security role consists of the following privilege types:
 
 - **Privacy-related privileges**: These privileges give a user permission to perform tasks where data is integrated or downloaded or exported outside of Dataverse, such as exporting data to Microsoft Excel or printing.
 
-Each set of privilege types are separated by a tab, and for each tab you can filter the view by all privileges, assigned privileges or unassigned privileges for the selected security role.
+Each set of privilege types are separated by a tab. For each tab, you can filter the view by all privileges, assigned privileges or unassigned privileges for the selected security role.
 
-:::image type="content" source="security/media/privilege-types.png" alt-text="The security role editor page displaying the drop-down menu that enables you to view privilege types.":::
+:::image type="content" source="security/media/privilege-types.png" alt-text="Select the privilege types you want to view.":::
 
 #### Search by table name or table privilege name
 
@@ -107,7 +107,7 @@ The following table provides details about each specific table privilege:
 
 For each specific privilege, there is a drop-down menu that allows you to define the access level. Access levels determine how deep or high in the business unit hierarchy the user can perform the specified privilege in the organization. 
 
-The following table lists the levels of access in the app, starting with the level that gives users the most access.. Note that for organization-owned tables, miscellaneous privileges, and privacy-related privileges will only have **Organization** or **None** types.
+The following table lists the levels of access in the app, starting with the level that gives users the most access. Note that for organization-owned tables, miscellaneous privileges, and privacy-related privileges will only have **Organization** or **None** types.
 
 | **Type** | **Description** |
 |-------------------------|-------------------------|
