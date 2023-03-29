@@ -157,7 +157,7 @@ For tables where you have specified the individual permission settings will show
 ## Security roles and the legacy UI  
 A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles. See [Predefined security roles](database-security.md#predefined-security-roles).
   
-Security role privileges are cumulative: having more than one security role gives a user every privilege available in every role.  
+Security role privileges are cumulative: having more than one security role gives a user privileges available in each role that is assigned.  
   
 Each security role consists of record-level privileges and task-based privileges.  
   
