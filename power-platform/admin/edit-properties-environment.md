@@ -52,9 +52,9 @@ Administrators can edit properties of an environment, such as the friendly name,
   
         If the URL name is changed more than once during a 24-hour period, the original URL is released and cannot be used to access the environment anymore. For example, consider the following situation:  
   
-     - The original URL of environment A is domain01.crm.dynamics.com.<br>
-       _Most recent previous URL: NULL_<br>
-       _Active URL: domain01.crm.dynamics.com_<br>
+     - The original URL of environment A: **domain01.crm.dynamics.com.**
+        - Most recent, previous URL: NULL
+        - Active URL: **domain01.crm.dynamics.com**
   
      - The URL of environment A is changed to domain02.crm.dynamics.com.<br>
        _At this point, users can still use domain01.crm.dynamics.com to access the environment for a period of 24 hours, but they should now use domain02.crm.dynamics.com. Note that during this 24 hours period, no other environment can use the domain domain01.crm.dynamics.com._<br>
