@@ -66,7 +66,7 @@ The **Connection** signal returns the information about the network connection. 
 
 | Property                 | Description                                                                                                |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| **Connection.Connected** | Returns a Boolean **true** or **false** value that indicates whether the device is connected to a Wi-Fi network. Please note that this does not necessarily imply an active internet connection. |
+| **Connection.Connected** | Returns a Boolean true or false value that indicates whether the device is connected to a Wi-Fi or cellular network. Please note that this does not guarantee an active internet connection.|
 | **Connection.Metered**   | Returns a Boolean **true** or **false** value that indicates whether the connection is metered.            |
 
 ### Location
