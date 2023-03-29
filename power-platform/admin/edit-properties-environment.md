@@ -33,9 +33,9 @@ Administrators can edit properties of an environment, such as the friendly name,
 
 4. Select any of the following field values that you want to change.  
   
-   - **Name**. This is typically the name of your organization and is displayed in the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). After you save the change, it may take up to 5 minutes for the friendly name to appear in the application.  
+   - **Name:** This is typically the name of your organization and is displayed in the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). After you save the change, it may take up to 5 minutes for the friendly name to appear in the application.  
   
-   - **URL**. The URL is used to construct the URL for users to sign in to customer engagement apps. We recommend that you limit the length of the URL name to reduce the overall length of the URL.  
+   - **URL:** The URL is used to construct the URL for users to sign in to customer engagement apps. We recommend that you limit the length of the URL name to reduce the overall length of the URL.  
   
      > [!WARNING]
      > For up to 24-48 hours after you have updated the URL, you will not be able to open or edit Power Automate flows in the environment that have connections to Dataverse. You will see the error "It looks like something went wrong." while the edit flow page is pointing to the old environment URL. The flows will still run in the background and can be turned on or off via Solutions.
@@ -69,11 +69,11 @@ Administrators can edit properties of an environment, such as the friendly name,
      - The URL of environment B is changed to: **domain01.crm.dynamics.com**
        - This is possible because the URL of environment A was changed twice in a row, effectively removing **domain01.crm.dynamics.com** from environment A's most recent, previous URL, and therefore making it available for use by any other environment.
 
-   - **Type**. Change the environment type from production to sandbox or sandbox to production.
+   - **Type:** Change the environment type from production to sandbox or sandbox to production.
 
-   - **Purpose**. Specify the purpose of the environment. 
+   - **Purpose:** Specify the purpose of the environment. 
   
-   - **Edit Security group**. This value is used to determine the security group that includes the users who will have access to this environment. See [Control user access to environments: security groups and licenses](control-user-access.md).
+   - **Edit Security group:** This value is used to determine the security group that includes the users who will have access to this environment. See [Control user access to environments: security groups and licenses](control-user-access.md).
   
      > [!IMPORTANT]
      >  If you do not specify a security group, all users who have a license will be added to this environment.  
