@@ -273,21 +273,30 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
     1. For each connection, select Organizational account and sign in with your account.
         :::image type="content" source="media/byodl-10.png" alt-text="Configure the connection using your organizational account.":::
     1. Once all connections are configured and there are no more warnings, select **Next**.
+    1. Select the **Makers** table and confirm this table is configured to load data to the existing **admin_Maker** table.
+        :::image type="content" source="media/byodl-20.png" alt-text="Confirm the table mapping.":::
+        >[!NOTE]
+        >If the table is configured to map to a new table or you don't see a mapping configured between source and destination columns, select **Cancel** and start again.
     1. Select **Publish**. Don't change any data mapping configuration.
         :::image type="content" source="media/byodl-11.png" alt-text="Publish the dataflow without making any changes.":::
 1. The **CoE BYODL Makers** will now start refreshing - wait for the refresh to finish.
             :::image type="content" source="media/byodl-12.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
-1. Now edit the **CoE BYODL Environments** dataflow and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
+1. Now edit the **CoE BYODL Environments** dataflow and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow. 
+1. Select **Next**. Select the **Environments** table and confirm this table is configured to load data to the existing **admin_Environment** table.
 1. Publish the **CoE BYODL Environments** dataflow and wait for the refresh to finish.
     :::image type="content" source="media/byodl-13.png" alt-text="Wait for the CoE BYODL Environments dataflow to finish.":::
-1. Now edit the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps** and **CoE BYDODL Flows** dataflows and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
+1. Now edit the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps** and **CoE BYDODL Flows** dataflows and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow. Confirm the **CoE BYODL Apps** and **CoE BYODL Model Driven Apps** dataflows are configured to load data to the existing **admin_App** table and the **CoE BYDODL Flows** dataflow is configured to load data to the existing **admin_Flow** table.
 1. Publish the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps** and **CoE BYDODL Flows** dataflows and wait for the refresh to finish.
     :::image type="content" source="media/byodl-17.png" alt-text="Wait for the CoE BYODL Apps, Model Driven Apps and Flows dataflows to finish.":::
-1. Now edit the **CoE BYODL Apps Connection, CoE BYODL Apps Last Launched Date, CoE BYODL Flows Connection, CoE BYODL Flows Last Run Date** dataflows and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
+1. Now edit the **CoE BYODL Apps Connection, CoE BYODL Apps Last Launched Date, CoE BYODL Flows Connection, CoE BYODL Flows Last Run Date** dataflows and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow. Confirm the **CoE BYODL Apps Connection** and **CoE BYODL Apps Last Launched Date**  dataflows are configured to load data to the existing **admin_App** table and the **CoE BYODL Flows Connection** and **CoE BYODL Flows Last Run Date** dataflows are configured to load data to the existing **admin_Flow** table.
 1. Publish the **CoE BYODL Apps Connection, CoE BYODL Apps Last Launched Date, CoE BYODL Flows Connection, CoE BYODL Flows Last Run Date** dataflows and wait for the refresh to finish.
      :::image type="content" source="media/byodl-19.png" alt-text="Wait for the remaining dataflows to finish.":::
 
 #### Troubleshooting
+
+If you receive a "The specified path does not exist" DataSource.Error this means that you have only recently configured the Data Export and not all required folders and files are yet available in the storage account. After initial setup, it can take up to five days for folders to populate.
+
+:::image type="content" source="media/byodl-21.png" alt-text="Data source error if required folders are not yet available in the storage account.":::
 
 If you receive a DataFormat.Error after updating the *DatalakeURL* and *EnvironmentAPI* parameters, this may mean you've entered the incorrect URLs. Verify that the *DatalakeURL* parameter points to your Azure Storage Account URL - the URL should contain dfs.core and end with /powerplatform. Verify that the *EnvironmentAPI* points to your Environment Web API the URL should contain api.crm and end with /api/data/v9.2.
 

@@ -59,6 +59,12 @@ If you plan to make customizations to a large number of CoE Starter Kit componen
  >[!IMPORTANT]
  >Any extensions or customizations to the CoE Starter Kit components should be made in a **nonproduction environment** before being deployed to your production environment as managed.
 
+## What are some limitations?
+
+- The Power Automate "Save As" capability to copy a flow is not supported for flows that call child flows. The only way to customize flows with child flows is by editing the flow in the managed solution and creating an unmanaged layer.
+- Canvas apps and cloud flows do not support merging. These resources can only be extended and customized by creating a copy in your own unmanaged solution.
+- Power BI dashboards do not support merging.
+
 ## Creating a new solution
 
 To create a new unmanaged solution:
