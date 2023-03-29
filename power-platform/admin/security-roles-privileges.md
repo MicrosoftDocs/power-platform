@@ -1,15 +1,14 @@
 ---
 title: "Security roles and privileges | MicrosoftDocs"
-description: Overview of security roles and privileges
+description: To control data access, you must set up an organizational structure that both protects sensitive data and enables collaboration. To help secure your data, assign users to security roles. This article explains security roles and their associated privileges.
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/16/2021
+ms.date: 03/29/2023
 search.audienceType: 
   - admin
 search.app:
