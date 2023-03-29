@@ -1,7 +1,7 @@
 ---
 title: Security role editor (preview)
 description: The security role management experience in the Power Platform admin center has been updated so that you no longer need to use the legacy user interface. 
-ms.date: 03/20/2023
+ms.date: 03/29/2023
 ms.service: power-platform
 ms.topic: overview
 author: DhruAvenger1976
@@ -143,13 +143,13 @@ Updating settings for each table can be very time-consuming and tedious. To expe
 
 The behavior of the copy table permission will be as follows:
 
-1.  For permissions that exist in both source and target:
+-For permissions that exist in both source and target:
 
     - If the source permission settings depth exists in the target, then the copy table permissions will be successful.
 
     - If the source permission settings depth **does not** exist in target, an error message is displayed indicating that the copy process failed.
 
-2.  For permissions that only exist in either the source or target:
+- For permissions that only exist in either the source or target:
 
     - If the permission exists in the source and not in the target, then it will be ignored in the target and the copy for the remaining permissions will be successful.
 
