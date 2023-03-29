@@ -164,7 +164,7 @@ To add a security role to an owner team, group team, or a user who has Enabled s
 You can easily create, edit, or copy a security role and customize it to meet your needs.
 
 > [!Important]
-> [!include [preview](includes/cc-preview-features-definition.md)]
+> [!include [preview](../includes/cc-preview-features-definition.md)]
 
 1.  Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2.  Select **Environments** in the navigation pane.
