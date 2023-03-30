@@ -123,8 +123,6 @@ Copy the **App Opener** security role to create a custom security role by follow
   - To render an table grid: assign Read privilege on the table  
   
   - To render tables: assign Read privilege on the table 
-
- > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/%7BID%7D]
   
 ## Privacy notices  
 [!INCLUDE[cc_privacy_crm_for_phones](../includes/cc-privacy-crm-for-phones.md)]
