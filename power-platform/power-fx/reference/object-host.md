@@ -22,6 +22,8 @@ The Host object in Power Apps provides information about the current host runnin
 
 Similar to a control or [the **App** object](object-app.md), the **Host** object provides properties that identify information from the host running the app. Every app has a **Host** object.
 
+> [!NOTE]
+> The host object is currently only available in custom pages and canvas apps.
 
 
 To access the **Host** object, expand the  [**App**](object-app.md) object at the top of the **Tree view** pane and then select it. In this example, the **Host** object doesn't have any properties that accept formulas.
