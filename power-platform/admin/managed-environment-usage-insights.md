@@ -93,7 +93,7 @@ Set-TenantSettings -RequestBody $tenantSettings
 To resubscribe everyone, set the value for `$tenantSettings.powerPlatform.governance.disableAdminDigest` to `$False`.
 
 ### Known issues
-Usage insights are not available in sovereign clouds (GCC, GCCH, DoD, Mooncake) at this time.
+Usage insights are not available in sovereign clouds at this time. For example, usage insights are not available in Power Apps Government Community Cloud (GCC), Power Apps Government Community Cloud – High (GCC High), and Power Apps Department of Defense (DoD).
 
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br />
