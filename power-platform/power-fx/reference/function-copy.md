@@ -21,6 +21,9 @@ Copies text to the clipboard of the device where the app is running.
 
 The **Copy** function takes any text value and copies it to the clipboard. Regardless of the contents of the text, the clipboard will contain plain text without any special mime type. The function is considered a side-effects function and as a result it can only be used in behavior properties.
 
+> [!NOTE]
+> The **Copy()** function is limited to the access given to clipboard by the host of the app. As a result, embedded apps scenarios such as Power Apps in SharePoint, embedded apps in Power BI, etc. do not support **Copy()**. We encourage makers to use **[IfError()](./function-iferror.md)** to ensure the action to copy to clipboard was effective and if not, to properly alert the user that the copy failed.
+
 ## Syntax
 
 **Copy**( _text_ )
