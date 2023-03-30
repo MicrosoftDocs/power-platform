@@ -189,7 +189,10 @@ Other elements include:
 
 **[HashTags](reference/function-hashtags.md)** – Extracts the hashtags (#strings) from a string.
 
+**[Host](reference/object-host.md)** - Provides information about the current host running the app.
+
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
+
 
 ## I
 
