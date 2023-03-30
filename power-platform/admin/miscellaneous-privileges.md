@@ -135,7 +135,7 @@ The following table lists the miscellaneous privileges of customization records.
 | Export Customizations | prvExportCustomization | [ExportSolution message privileges](https://review.learn.microsoft.com/en-us/powerapps/maker/common-data-service/import-update-export-solutions) |
 | Import Customizations | prvImportCustomization | [ImportSolution message privileges](https://review.learn.microsoft.com/en-us/powerapps/maker/common-data-service/import-update-export-solutions) |
 | ISV Extensions | prvISVExtensions | Not currently in use. |
-| Learning Path Authoring |  | [On-off switch for Learning Path](https://review.learn.microsoft.com/en-us/power-platform/admin/on-off-switch-for-learning-path-guided-help) |
+| Learning Path Authoring | Not applicable  | [On-off switch for Learning Path](https://review.learn.microsoft.com/en-us/power-platform/admin/on-off-switch-for-learning-path-guided-help) |
 | Publish Customizations | prvPublishCustomization | [PublishXml message privileges](https://review.learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations)</br>[PublishAllXml message privileges](https://review.learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations) |
 | Retrieve Multiple Social Insights | prvRetrieveMultipleSocialInsights | Not applicable |
 | Run Flows | Not applicable | [Run attended and unattended UI flows](https://review.learn.microsoft.com/en-us/power-automate/ui-flows/run-ui-flow) |
