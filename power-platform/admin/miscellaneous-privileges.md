@@ -486,11 +486,11 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="even">
 <td><p>ISV Extensions</p></td>
 <td><p>prvISVExtensions</p></td>
-<td><p>Not currently in use.</p></td>
+<td><p>Not applicable</p></td>
 </tr>
 <tr>
 <td><p>Learning Path Authoring</p></td>
-<td><p></p></td>
+<td><p>Not applicable</p></td>
 <td><p><a href="/power-platform/admin/on-off-switch-for-learning-path-guided-help">On-off switch for Learning Path</a></p></td>  
 </tr>
 <tr class="even">
