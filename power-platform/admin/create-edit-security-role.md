@@ -43,12 +43,6 @@ For information on predefined security roles, see [Predefined security roles](da
   
 5. Specify privileges for each security role using the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience.
   
-    To change the access level for a privilege, select the symbol until you see the symbol you want. The possible access levels depend on whether the record type is organization-owned or user-owned.  
-  
-   > [!TIP]
-   >  To cycle through the access levels, you can also select the privilege column heading, or select the record type multiple times.  
-   >  There are a set of minimum privileges that are required in order for the new security role to be used - see below Minimum Privileges for common tasks.
-  
 6. When you have finished configuring the security role, on the toolbar, select or tap **Save and Close**.  
   
 ## Create a security role by Copy Role
