@@ -1,12 +1,13 @@
 ---
 title: "Miscellaneous privileges  | MicrosoftDocs"
 description: About miscellaneous privileges
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/21/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
