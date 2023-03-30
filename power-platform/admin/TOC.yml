@@ -336,6 +336,8 @@
                       href: run-bulk-system-jobs-detect-duplicate-records.md
                     - name: Duplicate detection rules
                       href: set-up-duplicate-detection-rules-keep-data-clean.md
+                    - name: Duplicate detection rules using solutions
+                      href: duplicate-detection-rules-solutions.md
                     - name: Duplicate detection settings
                       href: turn-duplicate-detection-rules-off-whole-organization.md
                     - name: Asynchronous processing of cascading transactions
