@@ -37,7 +37,7 @@ In addition, you must also have access to a Microsoft Dataverse environment. A [
 
 To install Power Platform Tools, follow these steps:
 
-1. Launch Visual Studio, and select **Continue without code** in the dialog. Optionally, you can open an existing project or create a new one.
+1. Start Visual Studio, and select **Continue without code** in the dialog. Optionally, you can open an existing project or create a new one.
 
 1. Select **Extensions** > **Manage extensions**.
 
@@ -74,9 +74,11 @@ You can find a few Power Platform Tools options in Visual Studio by choosing **T
 
 :::image type="content" source="media/tools/devtools-options.png" alt-text="Tool options":::
 
-### See Also
+### Next steps
 
-[Quickstart: Create a Power Platform Tools project](devtools-create-project.md)<br/>
+[Quickstart: Create a Power Platform Tools project](devtools-vs-create-project.md)<br/>
 [Quickstart: Create a plug-in using Power Platform Tools](/power-apps/developer/data-platform/tools/devtools-create-plugin)<br/>
+
+### See also
 [Power Platform Tools extension for Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatformTools)  
 [Power Platform Tools extension for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatformToolsVS2022)
