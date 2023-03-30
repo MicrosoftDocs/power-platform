@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 02/17/2023
+ms.date: 03/20/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key (preview)
@@ -32,16 +32,10 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > - Lock CMK environments by revoking CMK key vault and/or key permissions.
 > - Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
 >
-> This feature is made available following this schedule:
+> This feature will be available in all public cloud regions March 2023.
 >
-> |Est. public preview availability  |Regions  |
-> |---------|---------|
-> | March 2023        | Canada, France, Germany, India, Norway, South Africa, South America, South Korea, Switzerland, Australia        |
-> |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
-> | July 2023     |  North America       |
->
-> There's no additional Power Platform licensing requirement during this preview.
-
+> There's no additional Power Platform licensing requirement during this preview. When this feature becomes generally available, there will be a licensing requirement.
+> 
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
 
 - Dataverse (Custom solutions and Microsoft services)
@@ -64,7 +58,7 @@ Currently, all your customer data stored *only* in the following apps and servic
    >
    > Contact a representative for services not listed above for information about customer-managed key support.
 
-Environments with finance and operations apps where Power Platform integration is enabled can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Enable the Microsoft Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
+Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys)
 
 :::image type="content" source="media/cmk-power-platform-diagram.png" alt-text="Customer-managed encryption key in the Power Platform":::
 
