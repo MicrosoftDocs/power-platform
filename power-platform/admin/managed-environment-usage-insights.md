@@ -3,10 +3,10 @@ title: Usage insights
 description: Stay informed about your managed environments with weekly digests.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/12/2022
-author: jimholtz
+ms.date: 03/30/2023
+author: mihaelablendea 
 ms.author: caitlinshaw
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
@@ -29,7 +29,7 @@ To enable a weekly email digest, select **Environments** in the navigation pane 
 :::image type="content" source="media/managed-environment-weekly-digest-include-environmenta.png" alt-text="Screenshot of the Managed Environments settings, with the Include this environment option highlighted.":::
 
 > [!NOTE]
-> You must [enable tenant-level analytics](tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics) to get usage insights. Usage insights is not available in all regions, see [Known isues](#known-issues) for impacted regions.
+> You must [enable tenant-level analytics](tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics) to get usage insights. Usage insights are not available in all regions, see [Known isues](#known-issues) for impacted regions.
 
 ## What information is provided in the weekly digest?
 
