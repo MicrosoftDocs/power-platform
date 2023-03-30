@@ -20,13 +20,11 @@ search.app:
 
 This article provides more information about **Miscellaeous privileges** that are available with security roles.
 
-A blank cell means that there is no privilege for that combination of table and action.
+Specify privileges for each security role using the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience.
 
-Specify privileges for each security role using the new or legacy experience.
+## Core Records
 
-## Core Records tab
-
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the core records tab.
+The following table lists the miscellaneous privileges for core tables.
 
 <table>
 <colgroup>
@@ -135,9 +133,9 @@ The following table lists the privileges shown in the security role editor misce
 </tbody>
 </table>
 
-## Marketing tab
+## Marketing
 
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the marketing tab.
+The following table lists the miscellaneous privileges for marketing tables.
 
 <table>
 <colgroup>
@@ -171,9 +169,9 @@ The following table lists the privileges shown in the security role editor misce
 </tbody>
 </table>
 
-## Sales tab
+## Sales
 
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the sales tab.
+The following table lists the miscellaneous privileges for sales tables.
 
 <table>
 <colgroup>
@@ -217,9 +215,9 @@ The following table lists the privileges shown in the security role editor misce
 </tbody>
 </table>
 
-## Service tab
+## Service
 
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the service tab.
+The following table lists the miscellaneous privileges for service tabes.
 
 <table>
 <colgroup>
@@ -253,9 +251,9 @@ The following table lists the privileges shown in the security role editor misce
 </tbody>
 </table>
 
-## Business Management tab
+## Business Management
 
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the business management tab.
+The following table lists the miscellaneous privileges for business management tables.
 
 <table>
 <colgroup>
@@ -379,9 +377,9 @@ The following table lists the privileges shown in the security role editor misce
 </tbody>
 </table>
 
-## Service Management tab
+## Service Management
 
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the service management tab.
+The following table lists the miscellaneous privileges for service management tables.
 
 <table>
 <colgroup>
@@ -430,9 +428,9 @@ The following table lists the privileges shown in the security role editor misce
 </tbody>
 </table>
 
-## Customization tab
+## Customization
 
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the customization tab.
+The following table lists the miscellaneous privileges for customization tables.
 
 <table>
 <colgroup>
