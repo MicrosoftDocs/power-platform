@@ -23,7 +23,7 @@ This article provides more information about **Miscellaeous privileges** that ar
 
 Specify privileges for each security role using the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience.
 
-## Core Records
+## Core records
 
 The following table lists the miscellaneous privileges for core records.
 
@@ -80,7 +80,7 @@ The following table lists the miscellaneous privileges of service records.
 | Publish Articles             | prvPublishArticle          | [<u>Create and manage knowledge articles</u>](https://review.learn.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
 | Publish Knowledge Articles   | prvPublishKnowledgeArticle | [<u>Create and manage knowledge articles</u>](https://review.learn.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
 
-## Business Management 
+## Business management 
 
 The following table lists the miscellaneous privileges of business management records.
 
@@ -108,7 +108,7 @@ The following table lists the miscellaneous privileges of business management re
 | Send Invitation                                                  | prvSendInviteForLive                      | [<u>Invite users with Azure Active Directory B2B collaboration</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration) |
 | Web Mail Merge                                                   | prvWebMailMerge                           | [<u>Work with mail merge templates</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/work-mail-merge-templates)                                                         |
 
-## Service Management 
+## Service management 
 
 The following table lists the miscellaneous privileges of service management records.
 
