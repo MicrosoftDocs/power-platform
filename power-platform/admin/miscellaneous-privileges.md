@@ -18,10 +18,11 @@ search.app:
 
 # Miscellaneous privileges
 
-This topic provides a mapping of the security role user interface to the privilege names. Each section in this topic corresponds to a tab in the user interface (Power Platform admin center > **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security Roles** > select a role). A blank cell means that there is no privilege for that combination of table and action.
+This article provides more information about **Miscellaeous privileges** that are available with security roles.
 
-> [!div class="mx-imgBorder"] 
-> ![Miscellaneous privileges.](media/miscellaneous-privileges.png "Miscellaneous privileges")
+A blank cell means that there is no privilege for that combination of table and action.
+
+Specify privileges for each security role using the new or legacy experience.
 
 ## Core Records tab
 
@@ -59,7 +60,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr>
 <td><p>Delete Audit Record Change History</p></td>
 <td><p>prvDeleteRecordChangeHistory</p></td>
-<td><p></p></td>
+<td><p>Not applicable</p></td>
 </tr>
 <tr class="even">
 <td><p>Manage Data Encryption key - Activate</p></td>
@@ -83,7 +84,7 @@ The following table lists the privileges shown in the security role editor misce
 </tr>
 <tr>
 <td><p>Promote User to Microsoft Dynamics 365 Administrator Role</p></td>
-<td><p></p></td>
+<td><p>Not applicable</p></td>
 <td><p><a href="/power-platform/admin/database-security">Configure user security to resources in an environment</a></p></td>
 </tr>
 <tr class="even">
@@ -113,7 +114,7 @@ The following table lists the privileges shown in the security role editor misce
 </tr>
 <tr>
 <td><p>Turn On Tracing</p></td>
-<td><p></p></td>
+<td><p>Not applicable</p></td>
 <td><p><a href="/power-platform/admin/system-settings-dialog-box-customization-tab">Plug-in and custom workflow activity tracing</a></p></td>
 </tr>
 <tr class="odd">
@@ -399,7 +400,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="odd">
 <td><p>Browse availability</p></td>
 <td><p>prvBrowseAvailability</p></td>
-<td><p></p>
+<td><p>Not applicable</p>
 <p></p></td>
 </tr>
 <tr class="odd">
@@ -420,11 +421,11 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="even">
 <td><p>Search Availability</p></td>
 <td><p>prvSearchAvailability</p></td>
-<td><p> </p></td>
+<td><p>Not applicable</p></td>
 <tr class="even">
 <td><p>Write own calendar</p></td>
 <td><p>prvWriteOwnCalendar</p></td>
-<td><p></p></td>
+<td><p>Not applicable</p></td>
 </tr>
 </tbody>
 </table>
@@ -501,7 +502,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="odd">
 <td><p>Retrieve Multiple Social Insights</p></td>
 <td><p>prvRetrieveMultipleSocialInsights</p></td>
-<td><p></p></td>
+<td><p>Not applicable</p></td>
 </tr>
 <tr>
 <td><p>Run Flows</p></td>
