@@ -300,6 +300,8 @@ Other elements include:
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
+**[PDF](reference/function-pdf.md)** - Export contents from the current screen to an object for use in multiple scenarios.
+
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
 
 **[PlainText](reference/function-encode-decode.md)** – Removes HTML and XML tags from a string.

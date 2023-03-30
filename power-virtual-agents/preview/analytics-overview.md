@@ -2,7 +2,7 @@
 title: Analyze your bot's usage and performance (preview)
 description: Analyze your bot's customer satisfaction, topic usage, and performance in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 12/09/2022
+ms.date: 02/02/2023
 ms.topic: overview
 author: iaanw
 ms.author: iawilt
@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ---
 
-# Analyze your bot's usage and performance (preview)
+# Analytics in Power Virtual Agents (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 

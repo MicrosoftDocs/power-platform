@@ -1,13 +1,15 @@
 ---
 title: "Geo to geo migrations  | MicrosoftDocs"
-description: Geo to geo migrations
+description: Move your environment in a single tenant from one region to another with the Geo Migration feature.
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/20/2022
+ms.date: 3/29/2023
 ms.subservice: admin
 ms.author: matgupta 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
+contributors: 
+    - ProfessorKendrick
 search.audienceType: 
   - admin
 search.app:
@@ -87,6 +89,10 @@ The following topics have information that could be helpful to understand the mo
 
 Before the migration: 
 1. For apps that are solution aware, you can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all apps/solutions either individually or group them together into a single solution (if they're not already).
+2. Once the canvas apps have been exported, delete the apps in the environment.
+
+> [!IMPORTANT]
+> Any canvas apps, custom pages, or component libraries that are not deleted in the environment prior to migration, will be in a corrupted state after migration.
 
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/ and navigate to the **Solutions** page.
@@ -140,12 +146,10 @@ You'll be provided with a list of prerequisites and post-requisites for your mig
 
 |   |    Before the move   |  During the move | After the move |
 |-----|------|---|----|
-| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager will work with you to request a move and scheduling. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend.<br /><br /> There is a step that will require your involvement, which is to re-enter the encryption key. This can happen at a time that suits you but the migration process will be on hold until you complete this action. | Notification and support <br /><br /> You will be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your geo has migrated you can perform the post requisite steps - primarily changing your new URLs with any associated plugins or services. |
+| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager will work with you to request a move and scheduling. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You will be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your geo has migrated you can perform the post requisite steps, primarily changing your new URLs with any associated plugins or services. |
 
 We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
 
 ### See also  
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

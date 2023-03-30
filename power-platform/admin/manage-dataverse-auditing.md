@@ -1,13 +1,15 @@
 ---
 title: "Manage Dataverse auditing"
-description: "Learn how to use Dataverse auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
+description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/24/2023
+ms.date: 2/28/2023
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
 ms.reviewer: matp 
+contributors: 
+    - ProfessorKendrick
 search.audienceType: 
   - admin
 search.app:
@@ -423,8 +425,5 @@ Select the system job name to open details about your delete job.
 ### See also
 [Auditing overview](/power-apps/developer/data-platform/auditing-overview) <br />
 [Audit user access](/power-apps/developer/data-platform/audit-user-access)
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

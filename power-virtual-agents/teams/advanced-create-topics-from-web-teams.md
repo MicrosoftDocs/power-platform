@@ -1,7 +1,7 @@
 ---
 title: "Get topic suggestions from support pages in Microsoft Teams"
 description: "Get suggestions on what topics to include from existing support content, such as FAQs, help sites, and Word and Excel documents"
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 08/24/2022
 
 ms.topic: article

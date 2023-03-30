@@ -3,11 +3,11 @@ title: "Update a record Owner and Owning Business Unit"
 description: "Learn to update a record’s owner, an Owning Business Unit, or both an Owner and Owning Business Unit because the record changes ownership."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 03/28/2023
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app:
@@ -20,9 +20,6 @@ search.app:
 
 There are situations where you need to update a record’s owner, an Owning Business Unit, or both an owner and Owning Business Unit because the record changes ownership. If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure), you can update the record’s owning business unit. 
 
-> [!NOTE]
-> Changing the **Owner Business Unit** is a preview feature and is being rolled out over time.
-
 To update the record owner and owning business unit, you can add the Owning Business Unit in the header of the form and in the summary of the form.
 
 Follow these steps.
@@ -34,6 +31,19 @@ Follow these steps.
 3. Change the **Owner** or **Owner Business Unit** in the form header or form summary.
 
    :::image type="content" source="media/change-owning-business-unit.png" alt-text="Change Owner or Owner Business Unit":::
+
+## Record ownership
+To access a record, a new owner must have an **Enabled** user status and one of the following statements must be true:
+
+- The new owner must be assigned to a security role that has **Read** privileges on the table.
+- The new owner belongs to a team that has **Member's privilege inheritance** set to **Direct User (Basic) access level and Team privileges** and has **Read** privileges of user level or above on the table.
+- The new owner belongs to a team that has **Member's privilege inheritance** set to **Team privileges only** and has **Read** privileges of organization level on the table.
+
+If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) option, and your users are assigned to teams, the team's security role **Member's privilege inheritance** must be set to **Direct User (Basic) access level and Team privileges** to allow team members to own records.
+
+> [!NOTE]
+> If you want to update the record ownership to a disabled user and also [share reports](/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them, you need to assign a security role to user with the above criteria. To assign a security role to a disabled user, you need to enable the allowRoleAssignmentOnDisabledUsers role. More information: [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm)
+
 
 ## Table relationship and cascading behavior 
 
