@@ -16,7 +16,7 @@ contributors:
 ---
 # Host object in Power Apps
 
-The Host object in Power Apps provides information about the current host running the app.
+The **Host** object in Power Apps provides information about the current host running the app.
 
 ## Description
 
