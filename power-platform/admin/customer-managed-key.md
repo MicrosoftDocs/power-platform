@@ -34,7 +34,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 >
 > This feature will be available in all public cloud regions March 2023.
 >
-> There's no additional Power Platform licensing requirement during this preview. When this feature becomes generally available, there will be licensing requirement.  
+> There's no additional Power Platform licensing requirement during this preview. When this feature becomes generally available, there will be a licensing requirement.
 > 
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
 
