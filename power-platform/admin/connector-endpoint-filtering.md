@@ -1,4 +1,4 @@
---
+---
 title: "Connector endpoint filtering | MicrosoftDocs"
 description: Description goes here.
 ms.component: pa-admin
