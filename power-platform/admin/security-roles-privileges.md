@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2023
+ms.date: 03/31/2023
 search.audienceType: 
   - admin
 search.app:
@@ -42,13 +42,16 @@ Each security role consists of record-level privileges and task-based privileges
 6.  Select **Security roles**. A list of the existing security roles in your environment is displayed.
 
 ### Define the privileges and properties of a security role
-You have the option to enable or disable the **Team members inherit role** option. If enabled and the role is assigned to a team, all team members will inherit all the privileges associated with this role.
+You have the option to enable or disable the **Team members inherit role** option. 
+
+- If this option is **enabled** and the role is assigned to a team, all team members will inherit all the privileges associated with this role. For team members who do not have user privileges of their own, they can only create records with the team as the owner and they have access to records owned by the Team when Basic access level for Create and Read were given.
+- If this option is **not enabled**, a user is granted privileges directly when a security role is assigned to the user. A user can create and has access to records created and owned by the user when Basic access level for Create and Read were given. This is the default setting for new security roles.
 
 Each security role consists of the following privilege types:
 
 - **Tables**: Table privileges define which tasks a user with access to a table record can do, such as Read, Create, Delete, Write, Assign, Share, Append, and Append To. *Append* means to attach another record, such as an activity or note, to a record. *Append to* means to be attached to a record.
 
-- **Miscellaneous privileges**: These task-based privileges give a user permission to perform specific, miscellaneous (non-record) tasks, such as publish articles or activate business rules.
+- **Miscellaneous privileges**: These task-based privileges give a user permission to perform specific, miscellaneous (non-record) tasks, such as publish articles or activate business rules. More information: [Miscellaneous privileges](miscellaneous-privileges.md)
 
 - **Privacy-related privileges**: These privileges give a user permission to perform tasks where data is integrated or downloaded or exported outside of Dataverse, such as exporting data to Microsoft Excel or printing.
 
