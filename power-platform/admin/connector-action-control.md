@@ -54,3 +54,80 @@ Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
 |CurrentWeather     | Microsoft.ProcessSimple/apis/apiOperations        | @{summary=Get current weather; description=Get the current weather for a location.; visibility=advanced; pageable=Fa...        |
 |TomorrowsForecast     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=Get the forecast for tomorrow; description=Get the forecast for tomorrow in the specified location.; visib...       |
 |OnCurrentConditionsChange     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=When the current conditions change; description=Triggers a new flow when the conditions change for a locat...       |
+
+#### Configure connector action rules for a policy
+The object that contains connector action rules for a policy is referred to below as the connector configurations.
+The connector configurations object has the following structure:
+
+```powershell
+$ConnectorConfigurations = @{ 
+  connectorActionConfigurations = @( # array – one entry per connector
+    @{  
+      connectorId # string
+      actionRules = @( # array – one entry per rule 
+        @{ 
+          actionId # string
+          behavior # supported values: Allow/Block
+        }
+      ) 
+      defaultConnectorActionRuleBehavior # supported values: Allow/Block
+    } 
+  ) 
+}
+``` 
+
+**Retrieve existing connector configurations for a DLP policy**
+```powershell
+Get-PowerAppDlpPolicyConnectorConfigurations 
+``` 
+
+**Create connector configurations for a DLP policy**
+```powershell
+New-PowerAppDlpPolicyConnectorConfigurations
+``` 
+
+**Update connector configurations for a DLP policy**
+```powershell
+Set-PowerAppDlpPolicyConnectorConfigurations
+``` 
+
+**Example**
+
+Goal:
+-	Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions.
+-	Allow action GetRepositoryById of connector GitHub; block all other actions.
+
+> [!NOTE]
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
+
+```powershell
+$ConnectorConfigurations = @{ 
+  connectorActionConfigurations = @(
+    @{  
+      connectorId = "/providers/Microsoft.PowerApps/apis/shared_msnweather" 
+      actionRules = @(
+        @{ 
+          actionId = "TodaysForecast" 
+          behavior = "Block"
+        }, 
+        @{ 
+          actionId = "CurrentWeather" 
+          behavior = "Block"
+        } 
+      ) 
+      defaultConnectorActionRuleBehavior = "Allow"
+    },
+    @{  
+      connectorId = "/providers/Microsoft.PowerApps/apis/shared_github" 
+      actionRules = @(
+        @{ 
+          actionId = "GetRepositoryById" 
+          behavior = "Allow"
+        }
+      ) 
+      defaultConnectorActionRuleBehavior = "Block"
+    } 
+  ) 
+}
+New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
+``` 
