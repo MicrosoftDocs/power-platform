@@ -20,24 +20,24 @@ search.app:
 
 Premium licensing provides advanced features, greater flexibility, scalability, and enhanced security and compliance features for organizations.
 
-Establishing a license assignment strategy is therefore important to:
+Establishing a license assignment strategy is important for:
 
-- **Return on investment**: Assigning any licenses that your organization has purchased ensures that users have access to the advanced features of the Power Platform.
+- **Return on investment**: Assigning any licenses that your organization has purchased ensures that users have access to the advanced features of Power Platform.
 - **User adoption**: By assigning the right licenses to the right users, organizations can ensure that users have access to the tools they need to do their jobs effectively.
-- **Governance**: Helping to ensure that the Power Platform is being used in accordance with their governance policies
+- **Governance**: Helps to ensure that Power Platform is being used in accordance with governance policies.
 - **Optimizing costs**: One of the main reasons to develop a license assignment strategy is to optimize costs.
 
 ## Common license assignment strategies
 
-The following are the most common license assignment strategies
+The following are the most common license assignment strategies.
 
 | Approach | Description | Pro | Con |
 |----------|-------------|-----|-----|
-| Assigning licenses manually | The most straightforward method but labor intensive, where an administrator assigns licenses to individual users. | Works well in smaller organizations with limited number of users | This approach can be time consuming, there is a higher risk of human error and can overwhelm administrators. License assignment also needs to keep pace with new apps and sharing to ensure all users have access. |
-| Bulk license assignment | For larger organizations, it may be more efficient to assign in bulk. | This method allows administrators to quickly assign licenses to multiple users at once, which can save time and reduce the risk of error. | Depending on the approach taken, this can require expertise and can be difficult to customize or maintain for more complex licensing scenarios  |
-| Group-based licensing | With group-based licensing, administrators can assign licenses to groups of users based on their roles or responsibilities within the organization. | This method allows for more granular control over license assignment, and can simplify the process of adding or removing licenses as users' roles change. | Requires careful planning to ensure that licenses are assigned appropriately. There is also more limited control over assignment when compared with manual assignment. |
-| By request (and approval) | Where licenses are assigned to individuals, or groups only upon request. Usually some form of business justification is required and must be approved by line managers or licensing authority within an organization. |
-| On-demand | On-demand licensing is a model that allows organizations to assign licenses to users as needed, rather that assigning licenses to specific users in advance. | Cost effective and flexible, it helps organizations to optimize their license usage and reduce unnecessary costs | Limited control: On-demand licensing can limit the organizations control over license assignment. |
+| Assigning licenses manually | This approach is the most straightforward method, but it is labor intensive. | This approach Works well in smaller organizations with limited number of users. | This approach can be time consuming. There is a higher risk of human error, and it can overwhelm administrators. License assignment also needs to keep pace with new apps and sharing to ensure all users have access. |
+| Bulk license assignment | For larger organizations, it may be more efficient to assign in bulk. | This method allows administrators to quickly assign licenses to multiple users at once, which can save time and reduce the risk of error. | Depending on the approach taken, this can require expertise and can be difficult to customize or maintain for more complex, licensing scenarios.  |
+| Group-based licensing | With group-based licensing, administrators can assign licenses to groups of users based on their roles or responsibilities within the organization. | This method allows for more granular control over license assignment, and can simplify the process of adding or removing licenses as users' roles change. | This approach requires careful planning to ensure that licenses are assigned appropriately. There is also more limited control over assignment when compared with manual assignment. |
+| By request (and approval) | With this approach, licenses are assigned to individuals or groups only upon request. Usually some form of business justification is required and must be approved by line managers or licensing authority within an organization. | X | X |
+| On-demand | On-demand licensing is a model that allows organizations to assign licenses to users as needed, rather that assigning licenses to specific users in advance. | This approach is cost effective and flexible. It helps organizations to optimize their license usage and reduce unnecessary costs. | On-demand licensing can limit the organizations control over license assignment. |
 
 ### Assigning licenses manually
 
