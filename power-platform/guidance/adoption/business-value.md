@@ -37,7 +37,7 @@ The applications typically help improve one or more business value drivers, such
 - **Risk mitigation**: Applications that help organizations mitigate risks by improving data security, ensuring compliance with regulator requirements, and reducing the risk of errors, such as reducing the risk of a process outage and data breach.
 - **Business transformation**: Applications that help organizations transform their operations and business models. For example, this might include enabling businesses to adapt to changing market conditions, introduce new products or services, or replace aging legacy systems.
 
-### Talking to business users
+## Talking to business users
 
 Talking to business users is one method of establishing the business value of Power Platform solutions. Asking targeted questions and actively listening to responses, businesses can gain valuable insight into what drives behaviors, how challenges are faced, and how the Power Platform can solve problems.
 
@@ -45,7 +45,7 @@ Assessing the business value *before* building a solution is essential to ensure
 
 Sometimes, it may not be feasible to measure the business value before development due to the natural expansion of the platform. Seeking feedback from key stakeholders of existing Power Platform solutions can help establish the business value, and identify areas for improvement by modifying the solution.
 
-### Performance improvements and direct or indirect cost savings
+## Performance improvements and direct or indirect cost savings
 
 Measuring the improvements Power Platform solutions have on existing processes can be achieved in several ways.
 
@@ -55,7 +55,7 @@ Measuring the improvements Power Platform solutions have on existing processes c
 | Error reduction | One way to measure improvements in efficiency is by assessing the error rate. Automated processes are designed to minimize errors. Tracking the number of errors before and after implementation can be a good indication of the improvement in performance. |
 | Productivity improvements | You can measure the productivity improvements of automated processes by comparing the output achieved before and after implementation. Include the number of completed tasks or the amount of work completed in a given time period. |
 
-#### Example questions
+### Example questions
 
 Here are some example questions you could ask to establish time and cost savings, error reductions, and productivity improvements:
 
@@ -68,7 +68,7 @@ Here are some example questions you could ask to establish time and cost savings
 - How has the automated process improved the speed at which tasks are completed?
 - Are there examples of tasks that were time-consuming or difficult to complete manually that have been made easier and faster with automation?
 
-### Mitigating risk
+## Mitigating risk
 
 Measuring the impact that a new application has on mitigating risk can be measured in several ways.
 
@@ -78,7 +78,7 @@ Measuring the impact that a new application has on mitigating risk can be measur
 | Compliance improvement | If the new application is designed to improve compliance, you can measure the impact by assessing the compliance rate before and after implementation. You could identify the regulations or standards that the application is designed to comply with and track the compliance rate over time. |
 | Incident response time | You can compare the time taken to identify the source of an issue over the time taken to resolve the issue before and after implementation.|
 
-#### Example questions
+### Example questions
 
 Here are some example questions you could ask to establish risk reduction, compliance improvement, and incident response times:
 
@@ -87,7 +87,7 @@ Here are some example questions you could ask to establish risk reduction, compl
 - Are there examples of situations where the Power Platform solution has helped to identify or mitigate risks and issues before they become significant problems?
 - What was the average response time for incidents before the Power Platform solution was developed, and how does this compare to the current average response time?
 
-### Business transformation
+## Business transformation
 
 There are many different metrics that can be used to measure the impact new applications and solutions have on business transformation. The most appropriate metrics depend on the specific application or process being implemented and the goals of the business transformation initiative. Here are some common methods:
 
@@ -99,7 +99,7 @@ There are many different metrics that can be used to measure the impact new appl
 | Total Cost of Ownership (TCO) | For an on-premises or in-house system, you could assess the total cost of ownership. This includes all the costs associated with owning, operating, and maintaining the system over its lifetime. For example, you could include hardware and software costs, maintenance costs, energy and cooling costs, personnel, downtime, and replacement costs. These can then be compared to the cost of Power Platform. |
 | Employee satisfaction | Conducting surveys, interviews, focus groups, and analytics can be used to measure the impact of a new system or process. Using a combination of these methods, organizations can get a comprehensive view of employee satisfaction before and after a new system or process is implemented. |
 
-#### Example questions
+### Example questions
 
 Here are some example questions you could ask to establish efficiency improvement, increased revenue, employee productivity gains and TCO:
 
@@ -110,15 +110,15 @@ Here are some example questions you could ask to establish efficiency improvemen
 - Has the team been able to take on extra tasks or responsibilities since the new Power Platform solution was implemented?
 - What are the ongoing maintenance costs for the on-premises system, including software updates, hardware, and technical support?
 
-#### Scenario: How to measure business value
+## Scenario: How to measure business value
 
 Consider the following situation in which you've been asked to measure the business value of digitizing an existing paper-based process. Consider factors such as cost savings, increased productivity, improved compliance, reduction of risk, and better data management.  
 
-##### The existing process
+### The existing process
 
 Before beginning their work, the field engineering team of your organization is tasked with performing safety inspections of their vehicles (1000 vehicles) on a daily basis. This involves identifying any faults or damage, recording the mileage, and noting any other relevant details. Currently the team uses paper forms to document this information, which is then stored in filing cabinets at each depot. This process takes between 2 to 3 minutes per vehicle and poses challenges for tracking and analyzing the data collected and remaining compliant.
 
-##### Measuring tangible value
+### Measuring tangible value
 
 - **Employee productivity and efficiency improvement**: Digitizing the process has the potential to streamline the experience of submitting and processing vehicle safety checks. There will be some effort required by the engineers in submitting vehicle checks, for example they may need to follow new guidelines to ensure the requests are completed accurately. The tangible value of digitizing through the measures of employee productivity and efficiency are low, or difficult to calculate at this point.
 
@@ -126,7 +126,7 @@ Before beginning their work, the field engineering team of your organization is 
 
     Based on analysis on time saving, the potential cost saving of digitizing the process may not be as large as expected. However, there may be intangible benefits of a digitized process, such as improved data accuracy and faster access to information that are difficult to quantify but still add value to the organization.
 
-##### Measuring intangible value
+### Measuring intangible value
 
 Forms are stored in filing cabinets at each depot, which means there's no central visibility or assurance that checks are being performed in a compliant manner. By digitizing the process and establishing a central view on compliance, you can:
 
@@ -135,7 +135,7 @@ Forms are stored in filing cabinets at each depot, which means there's no centra
 - **Improved employee experience**: Improved with a simplified process.
 - **Improved customer experience**: Improved with less disruption.
 
-##### Business value assessment outcome
+### Business value assessment outcome
 
 By talking to the subject matter expert and looking at the as-is process, you've been able to establish the value of digitizing a process using many measures:
 
@@ -156,9 +156,7 @@ Aligning the business value of Power Platform solutions to the organizations key
 
 By aligning Power Platform solutions to KPIs and OKRs, organizations ensure that they're addressing the most critical business needs and driving the most significant impact. This can help ensure that Power Platform solutions are seen as valuable investments by senior leaders and decision makers who are often responsible for approving resource allocation. To assist with this, there are various tools and calculators available.
 
-### Tools
-
-#### CoE Starter Kit - Innovation Backlog
+### CoE Starter Kit - Innovation Backlog
 
 The Innovation Backlog is a feature of the Center of Excellence Starter Kit that is designed to help organizations prioritize and manage innovative ideas for Power Platform solutions. It's a repository of ideas submitted by employees and stakeholders that can help improve business processes, increase efficiency, or generate new innovations.
 
@@ -188,8 +186,5 @@ Learn more about customers realizing the value of Power Platform solutions:
 
 - [Do more with less blog](https://powerapps.microsoft.com/blog/category/do-more-with-less/)
 
-Learn more about the Power Platform maturity model (business value maturity):
-
-- [Maturity levels of business value](power-platform/guidance/adoption/maturity-model-details#business-value)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
