@@ -107,7 +107,7 @@ _Licensing auto-claim for Power Apps_ simplifies license assignment for administ
 
 Administrators can create an _auto-claim policy_ for Power Apps per user licenses in the Microsoft 365 admin center just like they can for other Microsoft licenses.
 
-Learn more about on demand license assignment
+Learn more about on demand license assignment:
 
 - [Licensing auto-claim for Power Apps](/power-platform/release-plan/2023wave1/power-platform-governance-administration/license-autoclaim-power-apps-licenses)
 - [Auto-claim policies](/microsoft-365/commerce/licenses/manage-auto-claim-policies)
