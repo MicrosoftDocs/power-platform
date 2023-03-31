@@ -79,8 +79,8 @@ foreach ($user in $usersToAssign) {
 ```
 Learn more about the Microsoft Graph SDK:
 
-- [Install the Microsoft Graph SDK](/powershell/microsoftgraph/installation?view=graph-powershell-1.0)
-- [Assigning licenses using the Microsoft Graph SDK](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#use-the-microsoft-graph-powershell-sdk)
+- [Install the Microsoft Graph SDK](/powershell/microsoftgraph/installation?view=graph-powershell-1.0&preserve-view=true)
+- [Assigning licenses using the Microsoft Graph SDK](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#use-the-microsoft-graph-powershell-sdk&preserve-view=true)
 
 ### Group-based licensing
 
