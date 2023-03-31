@@ -101,7 +101,7 @@ Learn more about access packages:
 - [Power CAT architecture series](https://youtu.be/qd8o154HlUY)
 - [Create an access package](/azure/active-directory/governance/entitlement-management-access-package-create)
 
-### On demand
+### On-demand
 
 _Licensing auto-claim for Power Apps_ simplifies license assignment for administrators. The feature enables their Power Apps users to automatically claim Power Apps per user licenses when they're needed, instead of requiring an administrator to identify users who need licenses in advance. For example, when a user without a standalone license opens an app that requires a premium license, the user will automatically be assigned a Power Apps per user license.
 
