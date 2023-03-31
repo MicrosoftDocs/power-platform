@@ -45,9 +45,9 @@ Assigning licenses manaully is the most straight-forward method of assigning lic
 
 Licenses are assigned in the following ways:
 
-- The [Licenses](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-licenses-page-to-assign-licenses-to-users) page in the Microsoft 365 admin portal. 
-- The [Active users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-active-users-page-to-assign-licenses) page in the Microsoft 365 admin portal. 
-- [PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide) scripts.
+- The [Licenses](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-licenses-page-to-assign-licenses-to-users&preserve-view=true) page in the Microsoft 365 admin portal. 
+- The [Active users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-active-users-page-to-assign-licenses&preserve-view=true) page in the Microsoft 365 admin portal. 
+- [PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true) scripts.
 
 ### Bulk user assighments the Microsoft 365 admin portal
 
