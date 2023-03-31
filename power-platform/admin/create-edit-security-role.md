@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2023
+ms.date: 03/31/2023
 search.audienceType: 
   - admin
 search.app:
@@ -117,6 +117,8 @@ Copy the **App Opener** security role to create a custom security role by follow
   - To render an table grid: assign Read privilege on the table  
   
   - To render tables: assign Read privilege on the table 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW10lgO]
   
 ## Privacy notices  
 [!INCLUDE[cc_privacy_crm_for_phones](../includes/cc-privacy-crm-for-phones.md)]
