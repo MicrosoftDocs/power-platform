@@ -148,16 +148,17 @@ The following permission setting groups are available:
 | **Permission setting** | **Details**                                               |
 |------------------------|-----------------------------------------------------------|
 | No Access              | No access to the table.                                   |
-| Full Access            | Full access to the table.                                 |
-| Collaborate            | Ability to create and read tables.                        |
-| Private                | Full access to tables owned by the specific user or team. |
-| Reference              | Read only access to the table.                            |
+| Full Access            | Allows end users to see and edit all records in the table.
+
+.                                 |
+| Collaborate            | Allows end users to see all records, but they can only edit their own records.                        |
+| Private                | Allows end users to only view and edit their own data. |
+| Reference              | Provides a read-only view of data for end users.                           |
+| Custom                 | Individual permission settings for a table.               |
 
 To set or update a table's permission setting, select the table and choose **Permission Settings** in the command bar or by selecting the ellipses (**…**) in the row.
 
 Select the appropriate setting and select **Save**. Note that this will overwrite the existing permissions of the table.
-
-For tables where you have specified the individual permission settings will show as having a **Custom** permission setting.
 
 ## Security roles and the legacy UI  
 A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles. See [Predefined security roles](database-security.md#predefined-security-roles).
