@@ -148,13 +148,11 @@ The following permission setting groups are available:
 | **Permission setting** | **Details**                                               |
 |------------------------|-----------------------------------------------------------|
 | No Access              | No access to the table.                                   |
-| Full Access            | Allows end users to see and edit all records in the table.
-
-.                                 |
-| Collaborate            | Allows end users to see all records, but they can only edit their own records.                        |
+| Full Access            | Allows end users to see and edit all records in the table.|
+| Collaborate            | Allows end users to see all records, but they can only edit their own records.|
 | Private                | Allows end users to only view and edit their own data. |
-| Reference              | Provides a read-only view of data for end users.                           |
-| Custom                 | Individual permission settings for a table.               |
+| Reference              | Provides a read-only view of data for end users. |
+| Custom                 | Individual permission settings for a table.  |
 
 To set or update a table's permission setting, select the table and choose **Permission Settings** in the command bar or by selecting the ellipses (**…**) in the row.
 
