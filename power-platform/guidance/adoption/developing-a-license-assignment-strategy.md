@@ -86,8 +86,6 @@ Learn more about the Microsoft Graph SDK:
 
 [Group based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign) is most useful for administrators who need to assign licenses to groups of users based on roles or responsibilities within the organization. For example, suppose an administrator is required to assign Power Apps per user licenses to all users within the Human Resources department. Group-based licensing allows for more granular control over license assignment and simplifies the process of adding or removing licenses as users and their roles change. It requires careful planning to ensure that licenses are assigned appropriately.
 
-![Screenshot of admin portal page](/azure/active-directory/enterprise-users/media/licensing-groups-assign/licenses-all-products-assign.png)
-
 Learn more about group based licensing:
 
 - [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)
