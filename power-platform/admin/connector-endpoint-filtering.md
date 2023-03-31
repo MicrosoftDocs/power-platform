@@ -1,6 +1,6 @@
 ---
 title: "Connector endpoint filtering | MicrosoftDocs"
-description: Description goes here.
+description: A description goes here.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/31/2023
