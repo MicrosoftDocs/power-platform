@@ -3,13 +3,12 @@ title: "License assignment strategies  - Microsoft Power Platform | MicrosoftDoc
 description: "Guidance for license assignment."
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 03/31/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: kvivek
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app: 
@@ -17,16 +16,16 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Introduction to license assignment
+# License assignment strategies
 
 Premium licensing provides advanced features, greater flexibility, scalability, and enhanced security and compliance features for organizations.
 
 Establishing a license assignment strategy is therefore important to:
 
-- Getting a return on investment: by assigning any licenses that your organization has purchased ensures that users have access to the advanced features of the Power Platform.
-- User adoption: By assigning the right licenses to the right users, organizations can ensure that users have access to the tools they need to do their jobs effectively.
-- Governance: Helping to ensure that the Power Platform is being used in accordance with their governance policies
-- Optimizing costs: One of the main reasons to develop a license assignment strategy is to optimize costs.
+- **Return on investment**: Assigning any licenses that your organization has purchased ensures that users have access to the advanced features of the Power Platform.
+- **User adoption**: By assigning the right licenses to the right users, organizations can ensure that users have access to the tools they need to do their jobs effectively.
+- **Governance**: Helping to ensure that the Power Platform is being used in accordance with their governance policies
+- **Optimizing costs**: One of the main reasons to develop a license assignment strategy is to optimize costs.
 
 ## Common license assignment strategies
 
