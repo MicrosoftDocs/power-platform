@@ -19,7 +19,7 @@ search.app:
 
 # Miscellaneous privileges
 
-This article provides more information about **Miscellaeous privileges** that are available with security roles.
+This article provides information about **Miscellaeous privileges** that are available with security roles.
 
 Specify privileges for each security role using the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience.
 
