@@ -16,7 +16,7 @@ ms.contributors:
 - stjeffer
 - robertsmith-bvm
 - jean-romero
-ms.reviewer: 
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 search.app: 
@@ -24,50 +24,47 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Introduction
+# Measuring business value of Power Platform solutions
 
-Measuring business value in the Power Platform is a critical aspect of ensuring success and the return on investment.  The Power Platform offers organizations a low-code/ no-code platform for building applications, automating tasks/ streamlining business processes, chat bots and infusing AI into your solutions.  These capabilities can bring significant benefits and it's important to track and measure the value to the business that the platform is delivering.
+Measuring business value in Power Platform is a critical aspect of ensuring success and return on investment. Power Platform offers organizations a low-code/no-code platform for building applications, automating tasks, streamlining business processes, and infusing AI into your solutions. These capabilities can bring significant benefits and it's important to track and measure the value to the business that the platform is delivering.
 
-## Measuring business value of Power Platform
+The business value of the platform is often seen through two lenses: IT benefits and the value of the applications that run on it. From an IT perspective, core benefits include reducing development and maintenance costs, reducing third-party license spend, and reducing technical debt.
 
-The business value of the platform is often seen through two lenses: IT benefits and the value of the applications that run on it. From an IT perspective, core benefits include reducing development and maintenance costs, reduce 3rd party license spend and reducing technical debt.
+The applications typically help improve one or more business value drivers, such as:
 
-The applications themselves typically help improve one or more business value drivers such as:
-
-- **Performance improvement**: applications that help businesses improve their operational efficiency and effectiveness, improve outcomes and increase employee and customer satisfaction. We see measurable impact in KPIs such as sales growth, time-to-market and improved customer satisfaction.
-- **Direct or indirect cost savings**: applications that help organizations reduce their operational costs by automating manual processes, reducing errors and improving resource utilization.  They can also help organizations save money indirectly by improving the quality of products or services (avoiding failures, etc), reducing paper, fuel, or other resources.
-- **Risk mitigation**: applications that help organizations mitigate risks by improving data security, ensuring compliance with regulator requirements and reducing the risk of errors as well as reduced risk of process outage and data breach.
-- **Business transformation**: applications that help organizations transform their operations and business models, allowing them to adapt to changing market conditions, introduce new products or services, replace aging legacy systems.
+- **Performance improvement**: Applications that help businesses improve their operational efficiency and effectiveness, improve outcomes, and increase employee and customer satisfaction. We see measurable impact in key performance indicators (KPIs) such as sales growth, time-to-market, and improved customer satisfaction.
+- **Direct or indirect cost savings**: Applications that help organizations reduce their operational costs by automating manual processes, reducing errors, and improving resource utilization. They can also help organizations save money indirectly by improving the quality of products or services, such as by reducing paper, fuel, or other resources.
+- **Risk mitigation**: Applications that help organizations mitigate risks by improving data security, ensuring compliance with regulator requirements, and reducing the risk of errors, such as reducing the risk of a process outage and data breach.
+- **Business transformation**: Applications that help organizations transform their operations and business models. For example, this might include enabling businesses to adapt to changing market conditions, introduce new products or services, or replace aging legacy systems.
 
 ### Talking to business users
 
-Talking to  business users is one method of establishing the business value of Power Platform solutions. Asking targeted questions and actively listening to responses, businesses can gain valuable insight into what drives behaviors, challenges that are faced and how the Power Platform can solve problems.
+Talking to business users is one method of establishing the business value of Power Platform solutions. Asking targeted questions and actively listening to responses, businesses can gain valuable insight into what drives behaviors, how challenges are faced, and how the Power Platform can solve problems.
 
-Assessing the business value _before_ building a solution is essential to ensure that the solution addresses the specific needs and goals of the business and validate that it aligns to the KPIs and OKRs of your organization.
-Evaluating the business value beforehand, companies can identify areas that require improvement, potential risks and areas where cost savings can be achieved.
+Assessing the business value *before* building a solution is essential to ensure that the solution addresses the specific needs and goals of the business and validates that it aligns to the KPIs of your organization. Evaluating the business value beforehand, companies can identify areas that require improvement, potential risks, and areas where cost savings can be achieved.
 
-Sometimes, it may not be feasible to measure the business value before development due to the natural expansion of the platform. Seeking feedback from key stakeholders of existing Power Platform solutions, using the approaches described in this document can help establish the business value, and identify areas for improvement by modifying the solution.
+Sometimes, it may not be feasible to measure the business value before development due to the natural expansion of the platform. Seeking feedback from key stakeholders of existing Power Platform solutions can help establish the business value, and identify areas for improvement by modifying the solution.
 
-### Performance improvements & direct or indirect cost savings
+### Performance improvements and direct or indirect cost savings
 
 Measuring the improvements Power Platform solutions have on existing processes can be achieved in several ways.
 
 | Measure | Description |
 |---------|-------------|
-| _Time and cost savings_ | One way to measure the improvement in operational efficiency is by calculating the time and cost savings achieved by implementing an automated process. Compare the time taken to complete a task before and after automation, as well as the associated costs such as labor, materials and equipment.  Savings can be calculated in terms of hours saved per week/month, reduction in errors and costs savings per task or overall. |
-| _Error reduction_ | Another way to measure improvements in efficiency is by assessing the error rate. Automated processes are designed to minimize errors, and so tracking the number of errors before and after implementation can be a good indication of the improvement in performance. |
-| _Productivity improvements_ | You can measure the productivity improvement of automated processes by comparing the output achieved before and after implementation. Include the number of completed tasks, or the amount of work completed in a given time period. |
+| Time and cost savings | One way to measure the improvement in operational efficiency is by calculating the time and cost savings achieved by implementing an automated process. Compare the time taken to complete a task before and after automation, as well as the associated costs such as labor, materials, and equipment.  Savings can be calculated in terms of hours saved per week or month, reduction in errors, and costs savings per task. |
+| Error reduction | One way to measure improvements in efficiency is by assessing the error rate. Automated processes are designed to minimize errors. Tracking the number of errors before and after implementation can be a good indication of the improvement in performance. |
+| Productivity improvements | You can measure the productivity improvements of automated processes by comparing the output achieved before and after implementation. Include the number of completed tasks or the amount of work completed in a given time period. |
 
 #### Example questions
 
-Here are some example questions you could ask to establish _time and cost savings, error reductions and productivity improvements_:
+Here are some example questions you could ask to establish time and cost savings, error reductions, and productivity improvements:
 
 - What was the average time it took to complete this process before automation, and what is the average time it takes now that it's automated?
 - What would it mean to complete a process faster with fewer errors?
-- What would you do with the time freed up/ increased non-value-add time?
+- What would you do with the time freed up?
 - How much money did you spend on labor costs for this process before automation, and how much have you saved since it has been automated?
 - Can you provide any examples of errors or mistakes that occurred during this process before automation, and how has automation helped reduce or eliminate those errors?
-- What is the current volume of work handled by the automated process, compared to the previous manual process?
+- What is the current volume of work handled by the automated process compared to the previous, manual process?
 - How has the automated process improved the speed at which tasks are completed?
 - Are there examples of tasks that were time-consuming or difficult to complete manually that have been made easier and faster with automation?
 
@@ -77,13 +74,13 @@ Measuring the impact that a new application has on mitigating risk can be measur
 
 | Measure | Description |
 |---------|-------------|
-| _Risk reduction_ | You can identify the risks that the application is designed to mitigate and track the number of incidents or issues related to those risks before and after implementation. You can also calculate the financial impact of these incidents and compare the costs, before and after implementation. |
-| _Compliance improvement_ | If the new application is designed to improve compliance, you can measure the impact by assessing the compliance rate before and after implementation. You could identify the regulations or standards that the application is designed to comply with and track the compliance rate over time. |
-| _Incident response time_ | You can compare the time taken to identify the source of an issue over the time taken to resolve the issue before and after implementation. |
+| Risk reduction | You can identify the risks that the application is designed to mitigate and track the number of incidents or issues related to those risks before and after implementation. You can also calculate the financial impact of these incidents and compare the costs, before and after implementation. |
+| Compliance improvement | If the new application is designed to improve compliance, you can measure the impact by assessing the compliance rate before and after implementation. You could identify the regulations or standards that the application is designed to comply with and track the compliance rate over time. |
+| Incident response time | You can compare the time taken to identify the source of an issue over the time taken to resolve the issue before and after implementation.|
 
 #### Example questions
 
-Here are some example questions you could ask to establish risk reduction, compliance improvement and incident response times:
+Here are some example questions you could ask to establish risk reduction, compliance improvement, and incident response times:
 
 - How has the Power Platform solution helped to reduce the likelihood of errors or mistakes occurring in the process or function it support?
 - How has the Power Platform solution helped to increase the security and compliance measures for the process or function it supports?
@@ -96,30 +93,30 @@ There are many different metrics that can be used to measure the impact new appl
 
 | Measure | Description |
 |---------|-------------|
-| _Efficiency improvement_ |  Assess the efficiency improvement achieved by implementing the solution by comparing the time taken to complete a task or process before and after implementation. |
-| _Revenue increase_ |  Another way to measure the impact of a new application or process is by analyzing the impact on revenue, before and after implementation. |
-| _Employee productivity_ | You could assess the productivity of employees before and after implementation. This could include comparing the output achieved, or tracking the time taken to complete a task. |
-| _Total Cost of Ownership (TCO)_ | For an on-premises or in-house system, you could assess the total cost of ownership. This includes all the costs associated with owning, operating and maintaining the system over its lifetime. For example, you could include hardware and software costs, maintenance costs, energy and cooling costs, personnel, downtime and replacement costs. These can then be compared to the cost of Power Platform. |
-| _Employee satisfaction_ | Conducting surveys, interviews, focus groups and analytics can be used to measure the impact of a new system or process. Using a combination of these methods, organizations can get a comprehensive view of employee satisfaction before and after a new system or process is implemented. |
+| Efficiency improvement |  Assess the efficiency improvement achieved by implementing the solution by comparing the time taken to complete a task or process before and after implementation. |
+| Revenue increase |  One way to measure the impact of a new application or process is by analyzing the impact on revenue, before and after implementation. |
+| Employee productivity | You could assess the productivity of employees before and after implementation. This could include comparing the output achieved, or tracking the time taken to complete a task. |
+| Total Cost of Ownership (TCO) | For an on-premises or in-house system, you could assess the total cost of ownership. This includes all the costs associated with owning, operating, and maintaining the system over its lifetime. For example, you could include hardware and software costs, maintenance costs, energy and cooling costs, personnel, downtime, and replacement costs. These can then be compared to the cost of Power Platform. |
+| Employee satisfaction | Conducting surveys, interviews, focus groups, and analytics can be used to measure the impact of a new system or process. Using a combination of these methods, organizations can get a comprehensive view of employee satisfaction before and after a new system or process is implemented. |
 
 #### Example questions
 
 Here are some example questions you could ask to establish efficiency improvement, increased revenue, employee productivity gains and TCO:
 
-- How much has the time to complete a particular task or process has been reduced since implementing the Power Platform solution?
+- How much has the time to complete a particular task or process been reduced since implementing the Power Platform solution?
 - Are you able to complete more tasks within the same amount of time since implementing the Power Platform solution?
 - Have the number of errors or defects been reduced since implementing the Power Platform solution?
 - Has the team been able to meet deadlines more consistently since the new Power Platform solution was implemented?
 - Has the team been able to take on extra tasks or responsibilities since the new Power Platform solution was implemented?
-- What are the ongoing maintenance costs for the on-premises system, including software updates, hardware and technical support?
+- What are the ongoing maintenance costs for the on-premises system, including software updates, hardware, and technical support?
 
-#### Scenario: how to measure  business value
+#### Scenario: How to measure business value
 
-Consider the following situation, which you've been asked to measure the business value of digitizing an existing paper-based process. Consider factors such as cost savings, increased productivity, improved compliance, reduction of risk and better data management.  
+Consider the following situation in which you've been asked to measure the business value of digitizing an existing paper-based process. Consider factors such as cost savings, increased productivity, improved compliance, reduction of risk, and better data management.  
 
 ##### The existing process
 
-Before beginning their work, the field engineering team of your organization is tasked with performing safety inspections of their vehicles (1000 vehicles) on a daily basis. This involves identifying any faults or damage, recording the mileage and noting any other relevant details. Currently the team uses paper forms to document this information, which is then stored in filing cabinets at each depot. This process takes between 2 to 3 minutes per vehicle and poses challenges for tracking and analyzing the data collected and remaining compliant.
+Before beginning their work, the field engineering team of your organization is tasked with performing safety inspections of their vehicles (1000 vehicles) on a daily basis. This involves identifying any faults or damage, recording the mileage, and noting any other relevant details. Currently the team uses paper forms to document this information, which is then stored in filing cabinets at each depot. This process takes between 2 to 3 minutes per vehicle and poses challenges for tracking and analyzing the data collected and remaining compliant.
 
 ##### Measuring tangible value
 
