@@ -120,68 +120,61 @@ Before beginning their work, the field engineering team of your organization is 
 
 ##### Measuring tangible value
 
-###### _Employee productivity and efficiency improvement_
+- **Employee productivity and efficiency improvement**: Digitizing the process has the potential to streamline the experience of submitting and processing vehicle safety checks. There will be some effort required by the engineers in submitting vehicle checks, for example they may need to follow new guidelines to ensure the requests are completed accurately. The tangible value of digitizing through the measures of employee productivity and efficiency are low, or difficult to calculate at this point.
 
-Digitizing the process has the potential to streamline the experience of submitting and processing vehicle safety checks. There will be some effort required by the engineers in submitting vehicle checks, for example they may need to follow new guidelines to ensure the requests a completed accurately. The tangible value of digitizing through the measures of employee productivity and efficiency are low, or difficult to calculate at this point.
+- **Cost savings**: Based on the hourly rate of $50 for a field engineer, and assuming each engineer spends 12 hours per year on the process, the total cost to the organization is $600 per engineer, per year.
 
-###### _Cost savings_
-
-Based on the hourly rate of $50 for a field engineer and assuming each engineer spends 12 hours per year on the process (as-is), the total cost to the organization is $600 per engineer, per year.
-
-Based on analysis on time saving, the potential cost saving of digitizing the process may not be as large as expected.  However, there may be intangible benefits of a digitized process, such as improved data accuracy and faster access to information that are difficult to quantify but still add value to the organization.
+    Based on analysis on time saving, the potential cost saving of digitizing the process may not be as large as expected. However, there may be intangible benefits of a digitized process, such as improved data accuracy and faster access to information that are difficult to quantify but still add value to the organization.
 
 ##### Measuring intangible value
 
-Forms are stored in filing cabinets at each depot, which means there's no central visibility, or assurance that checks are being performed in a compliant manner. By digitizing the process and establishing a central view on compliance, you can:
+Forms are stored in filing cabinets at each depot, which means there's no central visibility or assurance that checks are being performed in a compliant manner. By digitizing the process and establishing a central view on compliance, you can:
 
-- _Reduction of risk_: reducing the number of unsafe vehicles being used and increasing the number of vehicle checks being carried out (improved vehicle safety).
-- _Reduction of cost_: of vehicle maintenance by identifying issues earlier.
-- _Improved employee experience_: with a simplified process.
-- _Improved customer experience_: with less disruption.
+- **Reduction of risk**: Reduce the number of unsafe vehicles being used and increasing the number of vehicle checks being carried out.
+- **Reduction of cost**: Reduce vehicle maintenance by identifying issues earlier.
+- **Improved employee experience**: Improved with a simplified process.
+- **Improved customer experience**: Improved with less disruption.
 
 ##### Business value assessment outcome
 
-By talking to the SME and looking at the as-is process, you've been able to establish the value of digitizing a process using many measures:
+By talking to the subject matter expert and looking at the as-is process, you've been able to establish the value of digitizing a process using many measures:
 
 | Measure | Business value | Value type | Value level |
 |---------|----------------|------------|-------------|
-| _Employee productivity_ | Digitizing this process is unlikely to reduce the amount of time engineers spend completing paper-based forms | Tangible | Low |
-| _Efficiency improvement_ | Digitizing the process will increase early detection of faults | Intangible | High |
-| _Reduction of risk_ | Digitizing this process will increase the compliance of the daily safety check, leading to a reduction in unsafe vehicles. | Intangible | High |
-| _Reduction of cost_ | There may be earlier detection of vehicle faults creating a reduction in fleet maintenance costs. | Intangible | High |
-| _Employee experience_ | By simplifying this process, this may lead to improved employee satisfaction and engagement as they can complete their tasks with greater ease and efficiency. | Intangible | Medium |
-| _Customer experience_ | Less disruption with faulty vehicles | Intangible | High |
+| Employee productivity | Digitizing this process is unlikely to reduce the amount of time engineers spend completing paper-based forms. | Tangible | Low |
+| Efficiency improvement | Digitizing the process will increase early detection of faults. | Intangible | High |
+| Reduction of risk | Digitizing this process will increase the compliance of the daily safety check and lead to a reduction in unsafe vehicles. | Intangible | High |
+| Reduction of cost_| There may be earlier detection of vehicle faults creating a reduction in fleet maintenance costs. | Intangible | High |
+| Employee experience | By simplifying this process, this may lead to improved employee satisfaction and engagement as empoyees can complete their tasks with greater ease and efficiency. | Intangible | Medium |
+| Customer experience | Less disruption with faulty vehicles. | Intangible | High |
 
-Learn more:
-
-[How Microsoft measures business value](https://youtu.be/cOkJI_e0Ni0)
+Learn more: [How Microsoft measures business value](https://youtu.be/cOkJI_e0Ni0)
 
 ## Aligning to the organization KPIs and OKRs
 
-Aligning the business value of Power Platform solutions to the organizations Key Performance Indicators (KPIs), and Objectives & Key Results (OKRs) is important to maximize the impact these solutions have.
-By aligning Power Platform solutions to KPIs and OKRs, organizations ensure that they're addressing the most critical business needs and driving the most significant impact. This can help ensure that Power Platform solutions are seen as valuable investments by senior leaders and decision-makers who are often responsible for approving resource allocation. To assist with this, there are various tools and calculators available.
+Aligning the business value of Power Platform solutions to the organizations key performance indicators (KPIs), and objectives and key results (OKRs) is important to maximize the impact these solutions have.
+
+By aligning Power Platform solutions to KPIs and OKRs, organizations ensure that they're addressing the most critical business needs and driving the most significant impact. This can help ensure that Power Platform solutions are seen as valuable investments by senior leaders and decision makers who are often responsible for approving resource allocation. To assist with this, there are various tools and calculators available.
 
 ### Tools
 
 #### CoE Starter Kit - Innovation Backlog
 
-The Innovation Backlog is a feature of the Center of Excellence Starter Kit that is designed to help organizations prioritize and manage innovative ideas for Power Platform solutions.
+The Innovation Backlog is a feature of the Center of Excellence Starter Kit that is designed to help organizations prioritize and manage innovative ideas for Power Platform solutions. It's a repository of ideas submitted by employees and stakeholders that can help improve business processes, increase efficiency, or generate new innovations.
 
-It's a repository of ideas submitted by employees and stakeholders that can help improve business processes, increase efficiency or generate new innovations.
-
-It provides a great starting point for assessing the actual business value of solutions, ensuring that innovative ideas aren't overlooked and the most promising ideas that align with company goals, potential impact and feasibility are given the resources and support needed to be developed into Power Platforms solutions.
+It provides a great starting point for assessing the actual business value of solutions and ensuring that innovative ideas aren't overlooked.
 
 Learn more:
 
-- [Uncovering apps & value using the innovation Backlog - Power CAT Live](https://youtu.be/1CMYTxvKhXk)
+- [Uncovering apps and value using the innovation backlog - Power CAT Live](https://youtu.be/1CMYTxvKhXk)
 - [Set up the Innovation Backlog components](/power-platform/guidance/coe/setup-innovationbacklog)
 - [Use the Innovation Backlog app](/power-platform/guidance/coe/use-innovationbacklog)
 
 ## Summary
 
-Measuring the business value of Power Platform solutions is important because it provides insights into how these solutions are contributing to the overall success of the organization. By measuring the business value, organizations determine how their investment in the Power Platform is yielding the expected results, contributing to the success of the organizations digital transformation strategy and identify opportunities to improve processes, automate tasks and optimize resources.
+Measuring the business value of Power Platform solutions is important because it provides insights into how these solutions are contributing to the overall success of the organization. By measuring the business value, organizations determine how their investment in Power Platform is yielding the expected results, contributing to the success of the organization's digital transformation strategy, and identify opportunities to improve processes, automate tasks, and optimize resources.
 
-The guidance in this document is designed to help you better understand the various measures that can be used to define the value of a Power Platform solution. By asking questions to process owners, focus groups, user groups and app makers you to understand the user needs, identify common use cases, evaluate existing solutions and demonstrate the ROI to stakeholders.
+This guidance is designed to help you better understand the various measures that can be used to define the value of a Power Platform solution. By asking questions to process owners, focus groups, user groups, and app makers you to understand the user needs, identify common use cases, evaluate existing solutions, and demonstrate the return on inventment to stakeholders.
 
 ## Useful resources
 
