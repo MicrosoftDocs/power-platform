@@ -41,20 +41,24 @@ The following are the most common license assignment strategies.
 
 ### Assigning licenses manually
 
-This is the most straight-forward method of assigning licenses where your administrator assigns licenses to individual users. This works well with smaller organizations, however it can be time consuming, and there is a higher risk of human error, or delays causing the organization to not be able to use the apps or resources it needs.
+Assigning licenses manaully is the most straight-forward method of assigning licenses where your administrator assigns licenses to individual users. This works well with smaller organizations. However, it can be time consuming, and there is a higher risk of human error or delays causing the organization to not be able to use the apps or resources it needs.
 
-Licenses are assigned either through the M365 admin portals [Licenses](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-licenses-page-to-assign-licenses-to-users) page, the [Active users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-active-users-page-to-assign-licenses) page, or through [PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide) scripts.
+Licenses are assigned in the following ways:
 
-### Bulk user assignment
+- The [Licenses](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-licenses-page-to-assign-licenses-to-users) page in the Microsoft 365 admin portal. 
+- The [Active users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-active-users-page-to-assign-licenses) page in the Microsoft 365 admin portal. 
+- [PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide) scripts.
+
+### Bulk user assighments the Microsoft 365 admin portal
 
 Bulk licensing commonly occurs in the following scenarios:
 
-- _New employee onboarding_: Where a company hires a large number of new employees at once, it may be necessary to assign license in bulk.
-- _Departmental or team changes, project initiation_: When a department or team change (grows or changes), or a new project initiates, it may be necessary to assign licenses to accommodate new users.
+- **New employee onboarding**: When a company hires a large number of new employees at one time, it may be necessary to assign license in bulk.
+- **Department or team changes or project initiation**: When a department or team changes or when a new project initiates, it may be necessary to assign licenses to accommodate new users.
 
-#### Assign licenses to user accounts via PowerShell
+#### Assign licenses to user accounts with PowerShell
 
-Assign licenses to multiple user accounts, using the Microsoft Graph PowerShell SDK to assign licenses from a CSV file:
+You can assign licenses to multiple user accounts using the Microsoft Graph PowerShell SDK to assign licenses from a CSV file.
 
 ```powershell
 # Connect to Microsoft 365 tenant.
@@ -66,7 +70,7 @@ $pAppsPerUser = Get-MgSubscribedSku | Where-Object {$_.SkuPartNumber -eq "POWERA
 # Import list of users and assign license to each.
 $usersToAssign = Import-Csv "C:\UserImport\userEmail.csv" -Encoding ASCII
 
-# Assign Power Apps Per User license
+# Assign Power Apps per user license
 foreach ($user in $usersToAssign) {
     $userCurrent = Get-MgUser -UserId $user.UserEmail
     Set-MgUserLicense -UserId $userCurrent.Mail -AddLicenses @{SkuId = $pAppsPerUser.SkuId} -RemoveLicenses @()  
@@ -78,9 +82,9 @@ Learn more about the Microsoft Graph SDK:
 - [Install the Microsoft Graph SDK](/powershell/microsoftgraph/installation?view=graph-powershell-1.0)
 - [Assigning licenses using the Microsoft Graph SDK](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#use-the-microsoft-graph-powershell-sdk)
 
-### Group based licensing
+### Group-based licensing
 
-[Group based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign) is most useful for administrators that need to assign licenses to groups of users based on roles or responsibilities within the organization. For example, the administrators is required to assign Power Apps Per User licenses to all users within the HR department.  This method allows for more granular control over license assignment and simplifies the process of adding or removing licenses as users and their roles change. It requires careful planning to ensure that licenses are assigned appropriately.
+[Group based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign) is most useful for administrators who need to assign licenses to groups of users based on roles or responsibilities within the organization. For example, suppose an administrator is required to assign Power Apps per user licenses to all users within the Human Resources department. Group-based licensing allows for more granular control over license assignment and simplifies the process of adding or removing licenses as users and their roles change. It requires careful planning to ensure that licenses are assigned appropriately.
 
 ![Screenshot of admin portal page](/azure/active-directory/enterprise-users/media/licensing-groups-assign/licenses-all-products-assign.png)
 
@@ -90,7 +94,7 @@ Learn more about group based licensing:
 
 ### By request using access packages
 
-Commonly used in enterprise environments, _access packages_ are a collection of permissions and privileges assigned to a group of users.  They simplify the process of managing user access to various resources. In the context of Microsoft Power Platform this could represent access to environments, apps and other solutions.
+Commonly used in enterprise environments, access packages are a collection of permissions and privileges assigned to a group of users. They simplify the process of managing user access to various resources. In the context of Power Platform, this could represent access to environments, apps, and other solutions.
 
 Learn more about access packages:
 
@@ -99,7 +103,7 @@ Learn more about access packages:
 
 ### On demand
 
-_Licensing auto-claim for Power Apps_ simplifies license assignment for administrators.  The feature enables their Power Apps users to automatically claim Power Apps per user licenses when they're needed instead of requiring an administrator to identify users who need licenses in advance. For example, when a user without a standalone license opens an app that requires a premium license, the user will automatically be assigned a Power Apps per user license.
+_Licensing auto-claim for Power Apps_ simplifies license assignment for administrators. The feature enables their Power Apps users to automatically claim Power Apps per user licenses when they're needed, instead of requiring an administrator to identify users who need licenses in advance. For example, when a user without a standalone license opens an app that requires a premium license, the user will automatically be assigned a Power Apps per user license.
 
 Administrators can create an _auto-claim policy_ for Power Apps per user licenses in the Microsoft 365 admin center just like they can for other Microsoft licenses.
 
