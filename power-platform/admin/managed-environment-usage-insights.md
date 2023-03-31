@@ -8,14 +8,7 @@ author: mihaelablendea
 ms.author: caitlinshaw
 ms.reviewer: sericks
 ms.subservice: admin
-ms.custom: "admin-security"
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.custom:
 ---
 
 # Usage insights
@@ -29,7 +22,8 @@ To enable a weekly email digest, select **Environments** in the navigation pane 
 :::image type="content" source="media/managed-environment-weekly-digest-include-environmenta.png" alt-text="Screenshot of the Managed Environments settings, with the Include this environment option highlighted.":::
 
 > [!NOTE]
-> You must [enable tenant-level analytics](tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics) to get usage insights. Usage insights are not available in all regions, see [Known isues](#known-issues) for impacted regions.
+> - You must [enable tenant-level analytics](tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics) to get usage insights. 
+> - Currently, usage insights aren’t available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud – High (GCC High), Department of Defense (DoD), and Power Platform and Dynamics 365 services in China.
 
 ## What information is provided in the weekly digest?
 
@@ -91,9 +85,6 @@ Set-TenantSettings -RequestBody $tenantSettings
 ```
 
 To resubscribe everyone, set the value for `$tenantSettings.powerPlatform.governance.disableAdminDigest` to `$False`.
-
-### Known issues
-Usage insights are not available in sovereign clouds at this time. For example, usage insights are not available in Power Apps Government Community Cloud (GCC), Power Apps Government Community Cloud – High (GCC High), and Power Apps Department of Defense (DoD).
 
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br />
