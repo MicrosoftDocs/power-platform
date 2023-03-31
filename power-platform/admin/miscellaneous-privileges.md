@@ -29,24 +29,24 @@ The following table lists the miscellaneous privileges for core records.
 
 | Miscellaneous privilege                          | Privilege name            | More information       |
 |--------------------------------|----------------------|------------|
-| Add Reporting Services Reports                            | prvPublishRSReport             | [<u>Download reports</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/analytics-common-data-service#download-reports)                                           |
-| Bulk Delete                                               | prvBulkDelete                  | [<u>Bulk delete</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/delete-bulk-records)                                                                           |
-| Delete Audit Partitions                                   | prvDeleteAuditPartitions       | [<u>Recover database space by deleting audit logs</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/recover-database-space-deleting-audit-logs)                  |
+| Add Reporting Services Reports                            | prvPublishRSReport             | [<u>Download reports</u>](analytics-common-data-service.md#download-reports)                                           |
+| Bulk Delete                                               | prvBulkDelete                  | [<u>Bulk delete</u>](delete-bulk-records.md)      |
+| Delete Audit Partitions                                   | prvDeleteAuditPartitions       | [<u>Recover database space by deleting audit logs</u>](recover-database-space-deleting-audit-logs.md)                  |
 | Delete Audit Record Change History                        | prvDeleteRecordChangeHistory   | Not applicable         |
-| Manage Data Encryption key - Activate                     | prvRestoreSqlEncryptionKey     | [<u>Activate an encryption key for a tenant</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/manage-encryption-key#activate-an-encryption-key-for-a-tenant)     |
-| Manage Data Encryption key - Change                       | prvChangeSqlEncryptionKey      | [<u>Manage encryption for an environment</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/manage-encryption-key#manage-encryption-for-an-environment)           |
-| Manage Data Encryption key - Read                         | prvReadSqlEncryptionKey        | [<u>Manage the encryption key</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/manage-encryption-key)                                                           |
-| Manage User Synchronization Filters                       | prvAdminFilter                 | [<u>Control field synchronization with Outlook</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/control-field-synchronization-outlook)                          |
-| Promote User to Microsoft Dynamics 365 Administrator Role |     Not applicable                           | [<u>Configure user security to resources in an environment</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/database-security)                                  |
-| Publish Duplicate Detection Rules                         | prvPublishDuplicateRule        | [<u>Set up duplicate detection rules to keep your data clean</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/set-up-duplicate-detection-rules-keep-data-clean) |
-| Publish Email Templates                                   | prvCreateOrgEmailTemplates     | [<u>Create templates for email</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/create-templates-email)                                                         |
-| Publish Mail Merge Templates to Organization              | prvPublishOrgMailMergeTemplate | [<u>Work with mail merge templates</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/work-mail-merge-templates)                                                  |
-| Publish Reports                                           | prvPublishOrgReport            | [<u>Common Data Service analytics</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/analytics-common-data-service)                                               |
-| Run SharePoint Integration Wizard                         | prvConfigureSharePoint         | [<u>Set up SharePoint integration</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/set-up-sharepoint-integration)                                               |
-| Turn On Tracing                   |        Not applicable                        | [<u>Plug-in and custom workflow activity tracing</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/system-settings-dialog-box-customization-tab)                 |
-| View Audit History                                        | prvReadRecordAuditHistory      | [<u>Audit history</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/common-data-service-gdpr-dsr-guide#audit-history)                                            |
-| View Audit Partitions                                     | prvReadAuditPartitions         | [<u>Audit data and user activity for security and compliance</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/manage-dataverse-auditing)                        |
-| View Audit Summary                                        | prvReadAuditSummary            | [<u>Power Apps activity logging</u>](https://review.learn.microsoft.com/en-us/power-platform/admin/logging-powerapps)                                                             |
+| Manage Data Encryption key - Activate                     | prvRestoreSqlEncryptionKey     | [<u>Activate an encryption key for a tenant</u>](manage-encryption-key.md#activate-an-encryption-key-for-a-tenant)     |
+| Manage Data Encryption key - Change                       | prvChangeSqlEncryptionKey      | [<u>Manage encryption for an environment</u>](manage-encryption-key.md#manage-encryption-for-an-environment)           |
+| Manage Data Encryption key - Read                         | prvReadSqlEncryptionKey        | [<u>Manage the encryption key</u>](manage-encryption-key.md)    |
+| Manage User Synchronization Filters                       | prvAdminFilter                 | [<u>Control field synchronization with Outlook</u>](control-field-synchronization-outlook.md)                          |
+| Promote User to Microsoft Dynamics 365 Administrator Role |     Not applicable                           | [<u>Configure user security to resources in an environment</u>](database-security.md)                                  |
+| Publish Duplicate Detection Rules                         | prvPublishDuplicateRule        | [<u>Set up duplicate detection rules to keep your data clean</u>](set-up-duplicate-detection-rules-keep-data-clean.md) |
+| Publish Email Templates                                   | prvCreateOrgEmailTemplates     | [<u>Create templates for email</u>](create-templates-email.md)     |
+| Publish Mail Merge Templates to Organization              | prvPublishOrgMailMergeTemplate | [<u>Work with mail merge templates</u>](work-mail-merge-templates.md)  |
+| Publish Reports                                           | prvPublishOrgReport            | [<u>Common Data Service analytics</u>](analytics-common-data-service.md) |
+| Run SharePoint Integration Wizard                         | prvConfigureSharePoint         | [<u>Set up SharePoint integration</u>](set-up-sharepoint-integration.md) |
+| Turn On Tracing                   |        Not applicable                        | [<u>Plug-in and custom workflow activity tracing</u>](system-settings-dialog-box-customization-tab.md)                 |
+| View Audit History                                        | prvReadRecordAuditHistory      | [<u>Audit history</u>](common-data-service-gdpr-dsr-guide#audit-history.md)                                            |
+| View Audit Partitions                                     | prvReadAuditPartitions         | [<u>Audit data and user activity for security and compliance</u>](manage-dataverse-auditing.md)                        |
+| View Audit Summary                                        | prvReadAuditSummary            | [<u>Power Apps activity logging</u>](logging-powerapps.md)                                                             |
 
 ## Marketing 
 
@@ -54,9 +54,9 @@ The following table lists the miscellaneous privileges of marketing records.
 
 | Miscellaneous privilege      | Privilege name           | More information   |
 |------------------|----------------------|-------------------|
-| Configure Internet Marketing module | prvConfigureInternetMarketing | [<u>Create and deploy marketing pages</u>](https://review.learn.microsoft.com/en-us/dynamics365/marketing/create-deploy-marketing-pages)                                                          |
-| Create Quick Campaign               | prvAllowQuickCampaign         | [<u>Create a quick campaign using in-app marketing (Sales)</u>](https://review.learn.microsoft.com/en-us/dynamics365/sales-enterprise/create-quick-campaign-using-app-marketing-sales)            |
-| Use internet marketing module       | prvUseInternetMarketing       | [<u>Create a quick campaign using in-app marketing (Sales)</u>](https://review.learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/sample-distribute-a-quick-campaign) |
+| Configure Internet Marketing module | prvConfigureInternetMarketing | [<u>Create and deploy marketing pages</u>](/dynamics365/marketing/create-deploy-marketing-pages)                                                          |
+| Create Quick Campaign               | prvAllowQuickCampaign         | [<u>Create a quick campaign using in-app marketing (Sales)</u>](/dynamics365/sales-enterprise/create-quick-campaign-using-app-marketing-sales)            |
+| Use internet marketing module       | prvUseInternetMarketing       | [<u>Create a quick campaign using in-app marketing (Sales)</u>](/dynamics365/customerengagement/on-premises/developer/sample-distribute-a-quick-campaign) |
 
 ## Sales 
 
@@ -64,11 +64,11 @@ The following table lists the miscellaneous privileges of sales records.
 
 | Miscellaneous privilege      | Privilege name           | More information   |
 |------------------|----------------------|-------------------|
-| Override Invoice Pricing            | prvOverridePriceEngineInvoice     | [<u>Create or edit invoices (Sales and Sales Hub)</u>](https://review.learn.microsoft.com/en-us/dynamics365/sales-enterprise/create-edit-invoice-sales)                                                        |
-| Override Opportunity Pricing        | prvOverridePriceEngineOpportunity | [<u>Add products to an opportunity (Sales Hub)</u>](https://review.learn.microsoft.com/en-us/dynamics365/sales-enterprise/add-products-opportunity)                                                            |
-| Override Order Pricing              | prvOverridePriceEngineOrder       | [<u>Create or edit orders (Sales and Sales Hub)</u>](https://review.learn.microsoft.com/en-us/dynamics365/sales-enterprise/create-edit-order-sales)                                                            |
-| Override Quote Order Invoice Delete | prvQOIOverrideDelete              | [<u>Create or edit quotes (Sales and Sales Hub)</u>](https://review.learn.microsoft.com/en-us/dynamics365/sales-enterprise/create-edit-quote-sales)                                                            |
-| Override Quote Pricing              | prvOverridePriceEngineQuote       | [<u>Price calculation for opportunity, quote, order, and invoice records</u>](https://review.learn.microsoft.com/en-us/dynamics365/sales-enterprise/price-calculation-opportunity-quote-order-invoice-records) |
+| Override Invoice Pricing            | prvOverridePriceEngineInvoice     | [<u>Create or edit invoices (Sales and Sales Hub)</u>](/dynamics365/sales-enterprise/create-edit-invoice-sales)                                                        |
+| Override Opportunity Pricing        | prvOverridePriceEngineOpportunity | [<u>Add products to an opportunity (Sales Hub)</u>](/dynamics365/sales-enterprise/add-products-opportunity)                                                            |
+| Override Order Pricing              | prvOverridePriceEngineOrder       | [<u>Create or edit orders (Sales and Sales Hub)</u>](/dynamics365/sales-enterprise/create-edit-order-sales)                                                            |
+| Override Quote Order Invoice Delete | prvQOIOverrideDelete              | [<u>Create or edit quotes (Sales and Sales Hub)</u>](/dynamics365/sales-enterprise/create-edit-quote-sales)                                                            |
+| Override Quote Pricing              | prvOverridePriceEngineQuote       | [<u>Price calculation for opportunity, quote, order, and invoice records</u>](/dynamics365/sales-enterprise/price-calculation-opportunity-quote-order-invoice-records) |
 
 ## Service 
 
@@ -76,9 +76,9 @@ The following table lists the miscellaneous privileges of service records.
 
 | Miscellaneous privilege      | Privilege name           | More information   |
 |------------------|----------------------|-------------------|
-| Approve Knowledge Articles   | prvApproveKnowledgeArticle | [<u>Create and manage knowledge articles</u>](https://review.learn.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
-| Publish Articles             | prvPublishArticle          | [<u>Create and manage knowledge articles</u>](https://review.learn.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
-| Publish Knowledge Articles   | prvPublishKnowledgeArticle | [<u>Create and manage knowledge articles</u>](https://review.learn.microsoft.com/en-us/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
+| Approve Knowledge Articles   | prvApproveKnowledgeArticle | [<u>Create and manage knowledge articles</u>](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
+| Publish Articles             | prvPublishArticle          | [<u>Create and manage knowledge articles</u>](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
+| Publish Knowledge Articles   | prvPublishKnowledgeArticle | [<u>Create and manage knowledge articles</u>](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
 
 ## Business management 
 
@@ -115,9 +115,9 @@ The following table lists the miscellaneous privileges of service management rec
 | Miscellaneous privilege      | Privilege name           | More information   |
 |------------------|----------------------|-------------------|
 | Browse availability          | prvBrowseAvailability |  Not applicable|
-| Create own calendar          | prvCreateOwnCalendar  | [<u>Create and customize marketing calendars</u>](https://review.learn.microsoft.com/en-us/dynamics365/marketing/customize-marketing-calendars) |
-| Delete own calendar          | prvDeleteOwnCalendar  | [<u>Create and customize marketing calendars</u>](https://review.learn.microsoft.com/en-us/dynamics365/marketing/customize-marketing-calendars) |
-| Read own calendar            | prvReadOwnCalendar    | [<u>Create and customize marketing calendars</u>](https://review.learn.microsoft.com/en-us/dynamics365/marketing/customize-marketing-calendars) |
+| Create own calendar          | prvCreateOwnCalendar  | [<u>Create and customize marketing calendars</u>](/dynamics365/marketing/customize-marketing-calendars) |
+| Delete own calendar          | prvDeleteOwnCalendar  | [<u>Create and customize marketing calendars</u>](/dynamics365/marketing/customize-marketing-calendars) |
+| Read own calendar            | prvReadOwnCalendar    | [<u>Create and customize marketing calendars</u>](/dynamics365/marketing/customize-marketing-calendars) |
 | Search Availability          | prvSearchAvailability |    Not applicable |
 | Write own calendar           | prvWriteOwnCalendar   |   Not applicable |
 
@@ -127,15 +127,15 @@ The following table lists the miscellaneous privileges of customization records.
 
 | Miscellaneous privilege      | Privilege name           | More information   |
 |------------------|----------------------|-------------------|
-| Activate Business Process Flows | prvActivateBusinessProcessFlow | [Model business process flows](https://review.learn.microsoft.com/en-us/power-automate/business-process-flows-overview) |
-| Activate Business Rules | prvActivateBusinessRule | [Model business process flows](https://review.learn.microsoft.com/en-us/power-automate/business-process-flows-overview) |
-| Activate Real-time Processes | prvActivateSynchronousWorkflow | [Model business process flows](https://review.learn.microsoft.com/en-us/power-automate/business-process-flows-overview) |
+| Activate Business Process Flows | prvActivateBusinessProcessFlow | [Model business process flows](/power-automate/business-process-flows-overview) |
+| Activate Business Rules | prvActivateBusinessRule | [Model business process flows](/power-automate/business-process-flows-overview) |
+| Activate Real-time Processes | prvActivateSynchronousWorkflow | [Model business process flows](/power-automate/business-process-flows-overview) |
 | Configure Yammer | prvConfigureYammer | [Yammer resources](https://resources.techcommunity.microsoft.com/yammer/adoption/) |
-| Execute Workflow Job | prvWorkflowExecution | [Configure background workflow stages and steps](https://review.learn.microsoft.com/en-us/power-automate/configure-workflow-steps) |
-| Export Customizations | prvExportCustomization | [ExportSolution message privileges](https://review.learn.microsoft.com/en-us/powerapps/maker/common-data-service/import-update-export-solutions) |
-| Import Customizations | prvImportCustomization | [ImportSolution message privileges](https://review.learn.microsoft.com/en-us/powerapps/maker/common-data-service/import-update-export-solutions) |
+| Execute Workflow Job | prvWorkflowExecution | [Configure background workflow stages and steps](/power-automate/configure-workflow-steps) |
+| Export Customizations | prvExportCustomization | [ExportSolution message privileges](/powerapps/maker/common-data-service/import-update-export-solutions) |
+| Import Customizations | prvImportCustomization | [ImportSolution message privileges](/powerapps/maker/common-data-service/import-update-export-solutions) |
 | ISV Extensions | prvISVExtensions | Not currently in use. |
-| Learning Path Authoring | Not applicable  | [On-off switch for Learning Path](https://review.learn.microsoft.com/en-us/power-platform/admin/on-off-switch-for-learning-path-guided-help) |
-| Publish Customizations | prvPublishCustomization | [PublishXml message privileges](https://review.learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations)</br>[PublishAllXml message privileges](https://review.learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations) |
+| Learning Path Authoring | Not applicable  | [On-off switch for Learning Path](/power-platform/admin/on-off-switch-for-learning-path-guided-help) |
+| Publish Customizations | prvPublishCustomization | [PublishXml message privileges](/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations)</br>[PublishAllXml message privileges](/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations) |
 | Retrieve Multiple Social Insights | prvRetrieveMultipleSocialInsights | Not applicable |
-| Run Flows | Not applicable | [Run attended and unattended UI flows](https://review.learn.microsoft.com/en-us/power-automate/ui-flows/run-ui-flow) |
+| Run Flows | Not applicable | [Run attended and unattended UI flows](/power-automate/ui-flows/run-ui-flow) |
