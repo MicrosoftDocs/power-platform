@@ -73,6 +73,58 @@ All the privileges explained earlier are grouped by various tabs. The following 
     - Configure Internet Marketing module
     - Create Quick Campaign
     - Use internet marketing module
+- **Sales tab**
+    - Override Invoice Pricing
+    - Override Opportunity Pricing
+    - Override Order Pricing
+    - Override Quote Order Invoice Delete
+    - Override Quote Pricing
+- **Service tab**
+    - Approve Knowledge Articles
+    - Publish Articles
+    - Publish Knowledge Articles
+- **Business Management tab**
+    - Act on Behalf of Another User
+    - Approve Email Addresses for Users or Queues
+    - Assign manager for a user
+    - Assign position for a user
+    - Assign Territory to User
+    - Bulk Edit
+    - Change Hierarchy Security Settings
+    - Dynamics 365 Address Book
+    - Enable or Disable a Business Unit
+    - Enable or Disable User
+    - Language Settings
+    - Merge
+    - Override Created on or Created by for Records during Data Import
+    - Perform in sync rollups on goals
+    - Read License info
+    - Reparent Business unit
+    - Reparent team
+    - Reparent user
+    - Send Email as Another User
+    - Send Invitation
+    - Web Mail Merge
+- **Service Management tab**
+    - Browse availability
+    - Create own calendar
+    - Delete own calendar
+    - Read own calendar
+    - Search Availability
+    - Write own calendar
+- **Customization tab**
+    - Activate Business Process Flows
+    - Activate Business Rules
+    - Activate Real-time Processes
+    - Configure Yammer
+    - Execute Workflow Job
+    - Export Customizations
+    - Import Customizations
+    - ISV Extensions
+    - Learning Path Authoring
+    - Publish Customizations
+    - Retrieve Multiple Social Insights
+    - Run Flows
 
 
 The following table lists the miscellaneous privileges for core records.
