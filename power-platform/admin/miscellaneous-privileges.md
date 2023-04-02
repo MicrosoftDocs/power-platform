@@ -4,7 +4,7 @@ description: About miscellaneous privileges
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/21/2021
+ms.date: 04/02/2023
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -48,12 +48,31 @@ Specify privileges for each security role using the [new](security-roles-privile
 
 ## Legacy experience
 
-All the privileges explained earlier are grouped by various tabs. The following table shows the availability of privileges under various tabs:
+All the privileges explained earlier are grouped by various tabs. The following list shows the availability of privileges under various tabs:
 
 - **Core tab**
     -  Add Reporting Services Reports
-    -  Blah
-- Marketing tab  
+    -  Bulk Delete
+    -  Delete Audit Partitions
+    -  Delete Audit Record Change History
+    -  Manage Data Encryption key - Activate
+    -  Manage Data Encryption key - Change
+    -  Manage Data Encryption key - Read
+    -  Manage User Synchronization Filters
+    -  Promote User to Microsoft Dynamics 365 Administrator Role
+    -  Publish Duplicate Detection Rules
+    -  Publish Email Templates
+    -  Publish Mail Merge Templates to Organization
+    -  Publish Reports
+    -  Run SharePoint Integration Wizard
+    -  Turn On Tracing
+    -  View Audit History
+    -  View Audit Partitions
+    -  View Audit Summary
+- **Marketing tab**  
+    - Configure Internet Marketing module
+    - Create Quick Campaign
+    - Use internet marketing module
 
 
 The following table lists the miscellaneous privileges for core records.
