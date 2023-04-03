@@ -57,12 +57,12 @@ After the admin assigns the license, it can take up to seven (7) days for the sy
 
 The admin will be notified of incoming licensing requests on the Microsoft 365 Home page.
 
-1. The admin can approve or reject multiple requests at once and include a message for their users. To learn more, go to [Approve or deny a license request](/microsoft-365/commerce/licenses/manage-license-requests?view=o365-worldwide#approve-or-deny-a-license-request).
+1. The admin can approve or reject multiple requests at once and include a message for their users. To learn more, go to [Approve or deny a license request](/microsoft-365/commerce/licenses/manage-license-requests#approve-or-deny-a-license-request).
 
-1. If the organization already has a request process, an admin can continue using their organization’s custom license request process. To learn more, go to [Use your own request process](/microsoft-365/commerce/licenses/manage-license-requests?view=o365-worldwide#use-your-own-request-process).
+1. If the organization already has a request process, an admin can continue using their organization’s custom license request process. To learn more, go to [Use your own request process](/microsoft-365/commerce/licenses/manage-license-requests#use-your-own-request-process).
 
 1. If a custom license request process is set, the requestor will get a message from the admin with instructions for using the organization's custom process.  
 
-To learn more about how to manage all license requests and settings, go to [Manage self-service license requests](/microsoft-365/commerce/licenses/manage-license-requests?view=o365-worldwide).
+To learn more about how to manage all license requests and settings, go to [Manage self-service license requests](/microsoft-365/commerce/licenses/manage-license-requests).
 
  
