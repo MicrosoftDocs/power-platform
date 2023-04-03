@@ -74,9 +74,9 @@ CLU integration supports recognized external intents that utilize the `System.Re
 | TopicId       | String      | The Dataverse schema name of the topic |
 | TriggerId     | String      | The unique ID of the trigger within the AdaptiveDialog topic |
 
-For a complete list of PVA variables, including system variables, see Use variables - Power Virtual Agents | Microsoft Learn.
+For a complete list of PVA variables, including system variables, see [Use variables - Power Virtual Agents](authoring-variables.md).
 
-# ## Mix and match entity component types 
+## Mix and match entity component types 
 
 CLU entities include relevant information extracted from NLU utterances. An entity can be extracted using different methods. They can be learned through context, mixed and matched from a list, or detected by a prebuilt recognized entity. For a complete list of entity component types, see [Component Types](https://learn.microsoft.com/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components#component-types).
 
@@ -85,7 +85,7 @@ CLU entities include relevant information extracted from NLU utterances. An enti
 Other bot building features that CLU integration supports include:
 
 - System topics: [Use system topics in Power Virtual Agents](authoring-system-topics.md)
-- Entities and slot filling: [See ]Create and use entities in Power Virtual Agents](advanced-entities-slot-filling.md)
+- Entities and slot filling: [Create and use entities in Power Virtual Agents](advanced-entities-slot-filling.md)
 - CLU best practices: [Conversational language understanding best practices - Azure Cognitive Services](https://learn.microsoft.com/azure/cognitive-services/language-service/conversational-language-understanding/concepts/best-practices)
 - Topic flow interruptions: [Design and control conversation flow - Bot Service](https://learn.microsoft.com/azure/bot-service/bot-service-design-conversation-flow)
 - Power Fx expressions: [Create expressions using Power Fx](advanced-power-fx.md)

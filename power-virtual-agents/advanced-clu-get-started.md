@@ -21,10 +21,10 @@ Let’s get started.
 
 Below are the steps to create a bot using an existing CLU model:
 
-1. Prepare your environment
+1. [Prepare your environment](#prepare-your-environment)
 1. Map CLU intents and entities
-    1. Use the wizard to automatically import CLU intents and entities
-    1. Manually map intents and entities
+    1. [Use the wizard to automatically import CLU intents and entities](#map-clu-intents-and-entities-to-pva-topics)
+    1. [Manually map intents and entities](#manually-map-clu-entities-to-pva-pre-built-data-types)
 1. Map a CLU model to PVA data types
 1. Create an “Analyze Text” system topic
 1. Trigger a new PVA topic with a CLU-derived intent
@@ -34,22 +34,23 @@ Below are the steps to create a bot using an existing CLU model:
 
 ## Prepare your environment
 
-1. Enabled the CLU model project name and deployment name.
-1. Created a new PVA bot. For more information, see [Authoring your first bot](authoring-first-bot.md).
+1. Before you begin, make sure that you have your CLU model project name and deployment name.
+1. Create a new PVA bot. For more information, see [Authoring your first bot](authoring-first-bot.md).
 1. From the left navigation, choose **Language**.
 1. From the **NLU Resource** drop-down list, choose **Power Virtual Agent NLU**.
     :::image type="content" source="media/advanced-clu-integration/clu-image1.png" alt-text="Language option to select NLU resource." border="false":::
 
 1. In Power Apps, choose the **Connections** menu, select **…More**, and then search for **Azure Cognitive Service for Language**.
-     :::image type="content" source="media/advanced-clu-integration/clu-image2.png" alt-text="Azure Cognitive Service for Language." border="false":::
+
+    :::image type="content" source="media/advanced-clu-integration/clu-image2.png" alt-text="Azure Cognitive Service for Language." border="false":::
 
 1. Select the **+ (plus sign)** on the to the right of the connector name, to display the authentication settings page. 
 1. Enter the account key, appointment info, prediction URL, then select **Create**. Once Power Apps creates the connector, return to your PVA bot.
     :::image type="content" source="media/advanced-clu-integration/clu-image3.png" alt-text="Type display name, authentication type, account key, and Site URL." border="false"::: 
 
-1. To view it in the **Connections** list, then right click the **Azure Cognitive Service for Language** connector and select **Edit**. 
+1. To view it in the **Connections** list, right click the **Azure Cognitive Service for Language** connector and select **Edit**. 
 1. Change the display name to something else to distinguish it from other CLU connectors. The name you type to change can be any name you choose.
-1. From the left navigation in PVA, choose **Language**, then in the **NLU Resource** drop-down list, choose <the new name you typed in step 9>, then select **Save**.
+1. From the left navigation in PVA, choose **Language**, then in the **NLU Resource** drop-down list, choose *the new name you typed in step 9* then select **Save**.
 1. In the **Delete example trigger phrases?** option, select **Save snapshot**. This saves the bot content, including trigger phrases, bot dialogues into a backlogs file in YAML format.
     :::image type="content" source="media/advanced-clu-integration/clu-image4.png" alt-text="Click Save snapshot to delete example trigger phrases." border="false"::: 
  
