@@ -24,7 +24,6 @@ search.app:
 # Connector action control
 
 > [!NOTE]
-> - **Connector action control** is generally available.
 > - Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
 
 You can use connector action control to allow or block individual actions within a given connector. On the **Connectors** page, right-click the connector, and then select **Configure connector** > **Connector actions**.
@@ -35,7 +34,32 @@ This opens a side panel where you can allow or deny specific actions. You can al
 
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
-### PowerShell support for Connector action control
+## Known limitations
+- Some Power Apps last published before October 1st 2020 need to be re-published for DLP connector action rules to be enforced. The script below helps admins and makers identify the apps that must be re-published.
+
+```powershell
+Add-PowerAppsAccount
+
+$GranularDLPDate = Get-Date -Date "2020-10-01 00:00:00Z"
+
+ForEach ($app in Get-AdminPowerApp){
+
+    $versionAsDate = [datetime]::Parse($app.LastModifiedTime)
+    
+    $olderApp = $versionAsDate -lt $GranularDLPDate
+
+    $wasBackfilled = $app.Internal.properties.executionRestrictions -ne $null -and $app.Internal.properties.executionRestrictions.dataLossPreventionEvaluationResult -ne $null -and ![string]::IsNullOrEmpty($app.Internal.properties.executionRestrictions.dataLossPreventionEvaluationResult.lastAdvancedBackfillDate) 
+
+    If($($olderApp -and !$wasBackfilled)){
+        Write-Host "App must be republished to be Granular DLP compliant: " $app.AppName " "  $app.Internal.properties.displayName " " $app.Internal.properties.owner.email
+    } 
+    Else{ 
+        Write-Host "App is already Granular DLP compliant: " $app.AppName 
+    }
+}
+``` 
+
+## PowerShell support for Connector Action Control
 
 **Retrieve a list of available actions for a connector**
 ```powershell
@@ -130,4 +154,6 @@ $ConnectorConfigurations = @{
   ) 
 }
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
-``` 
+```
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
