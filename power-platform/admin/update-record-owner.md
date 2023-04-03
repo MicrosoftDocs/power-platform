@@ -34,7 +34,7 @@ To access a record, a new owner must have an **Enabled** user status and one of 
 
 If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) option, and your users are assigned to teams, the team's security role **Member's privilege inheritance** must be set to **Direct User (Basic) access level and Team privileges** to allow team members to own records.
 
-You can also make a user with the **Disabled** status to be the owner of the record provided the user has **Read** privilege on the table. This means that the user with **Disabled** status must be assigned with a security role with the privilege. When an active user is deleted from the tenant, the user's status is set to **Disabled** in the system but the assigned security role is retained. So, you can continue to make this user as owner of records. 
+You can also set a user with the **Disabled** status as the owner of a record (row) provided the user has **Read** privilege on the table. This means that the user with the **Disabled** status must be assigned with a security role with the privilege. When an active user is deleted from the tenant, the user's status is set to **Disabled** in the system with the assigned security role retained. So, you can continue to make this user as owner of records. 
 
 > [!NOTE]
 > If there is no security role assigned to the user with **Disabled** status and you want to change record ownership to this user, you can enable the `allowRoleAssignmentOnDisabledUsers` setting using the [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm) tool to assign role to this user.
