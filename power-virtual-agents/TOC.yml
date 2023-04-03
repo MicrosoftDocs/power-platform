@@ -18,6 +18,14 @@
       href: nlu-boost-conversations.md
     - name: Create (and edit) with Copilot (preview)
       href: nlu-authoring.md
+- name: Use CLU capabilities in Power Virtual Agents
+  items:
+    - name: Automate bot creation with CLU integration (preview)
+      href: advanced-clu-integration.md
+    - name: Get started with CLU integration (preview)
+      href: advanced-clu-get-started.md
+    - name: CLU entity registration (preview)
+      href: advanced-clu-entity-registration.md
 - name: Get started
   items:
     - name: Get access to Power Virtual Agents
