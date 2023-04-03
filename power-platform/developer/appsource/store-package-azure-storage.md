@@ -30,40 +30,40 @@ Azure Storage Explorer lets you easily manage the contents of your storage accou
 To upload your package to Azure Blob storage:
 
 1. Create a free trial or pay as you go Azure account at [https://azure.microsoft.com](https://azure.microsoft.com).
-2. Sign in to Azure Management portal at [https://portal.azure.com](https://portal.azure.com).
-3. Create a new Storage account by clicking  > **Storage** > **Storage account - blob, file, table, queue**.
+1. Sign in to Azure Management portal at [https://portal.azure.com](https://portal.azure.com).
+1. Create a new Storage account by clicking  > **Storage** > **Storage account - blob, file, table, queue**.
     
    :::image type="content" source="media/appsource-storageaccount-pic1.png" alt-text="Create a Storage account":::
 
-4. On the **Create storage account** page, specify **Name**, **Resource group**, and **Location** for your storage account. Leave the rest of the columns with the default options. Click **Create**. 
+1. On the **Create storage account** page, specify **Name**, **Resource group**, and **Location** for your storage account. Leave the rest of the columns with the default options. Click **Create**. 
 
    :::image type="content" source="media/appsource-storageaccount-pic2.png" alt-text="Specifying account values":::
   
-5. After your storage account is created, navigate to the newly created resource group, and create a new Blob container. Under **Blob Service**, select **Containers**, and then **+ Container**.
+1. After your storage account is created, navigate to the newly created resource group, and create a new Blob container. Under **Blob Service**, select **Containers**, and then **+ Container**.
 
    :::image type="content" source="media/appsource-storageaccount-pic3.png" alt-text="Create a new Blob container.":::
 
-6. Specify a name for your container, and select the **Public access level** as **Blob**. Click **OK**.
+1. Specify a name for your container, and select the **Public access level** as **Blob**. Click **OK**.
 
    :::image type="content" source="media/appsource-storageaccount-pic4.png" alt-text="Set access level of the Blob.":::
 
-7. Start Azure Storage Explorer on your computer, and connect to your Azure Storage account by signing in using the same account with which you created your Azure Storage account.
+1. Start Azure Storage Explorer on your computer, and connect to your Azure Storage account by signing in using the same account with which you created your Azure Storage account.
 
-8. In Azure Storage Explorer, select the newly created container, and then select **Upload** > **Upload Files** to upload the app source package that you created in [Step 4: Create an AppSource package for your app](create-package-app.md). 
+1. In Azure Storage Explorer, select the newly created container, and then select **Upload** > **Upload Files** to upload the app source package that you created in [Step 4: Create an AppSource package for your app](create-package-app.md). 
 
    :::image type="content" source="media/appsource-storageaccount-pic5.png" alt-text="Upload the app source package.":::
 
-9. Browse to the AppSource package file on your computer, and select to upload it.
+1. Browse to the AppSource package file on your computer, and select to upload it.
 
-10. Right-click on the uploaded AppSource package file, and select **Get Shared Access Signature**.
+1. Right-click on the uploaded AppSource package file, and select **Get Shared Access Signature**.
 
    :::image type="content" source="media/appsource-storageaccount-pic6.png" alt-text="Selecting Shared Access Signature":::
 
-11. On the **Shared Access Signature** page, modify the **Expiry time** value to make the Shared Access Signature (SAS) active for a month from the **Start time**. Click **Create**.
+1. On the **Shared Access Signature** page, modify the **Expiry time** value to make the Shared Access Signature (SAS) active for a month from the **Start time**. Click **Create**.
 
    :::image type="content" source="media/appsource-storageaccount-pic7.png" alt-text="Set an expiration time":::
 
-12. The next page displays information about the generated SAS information. Copy the **URL** value and save it for later. You will need to specify this URL while creating an offer in Partner Center.
+1. The next page displays information about the generated SAS information. Copy the **URL** value and save it for later. You will need to specify this URL while creating an offer in Partner Center.
 
    :::image type="content" source="media/appsource-storageaccount-pic8.png" alt-text="Copying the SAS URL":::
 

@@ -69,8 +69,8 @@ The App names and icons are from AppSource.
 
 ### See also
 
-[Introduction to ISV Studio for the Power Platform](index.md)  
-[App page](app.md)<br/>  
-[Tenant page](tenant.md)<br/> 
-[AppSource checker](appsource-checker.md)<br/> 
+[Introduction to ISV Studio for the Power Platform](index.md)<br/>
+[App page](app.md)<br/>
+[Tenant page](tenant.md)<br/>
+[AppSource checker](appsource-checker.md)<br/>
 [Connector Certification](connector-certification.md)
