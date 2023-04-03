@@ -42,15 +42,21 @@ Specify privileges for each security role using the [new](security-roles-privile
 | Delete Audit Partitions                                   | prvDeleteAuditPartitions       | [<u>Recover database space by deleting audit logs</u>](recover-database-space-deleting-audit-logs.md)                  |
 | Delete Audit Record Change History                        | prvDeleteRecordChangeHistory   | Not applicable         |
 | Dynamics 365 Address Book                                        | prvAddressBook                            | [<u>Set schedule for address book synchronization</u>](system-settings-dialog-box-outlook-tab.md)                             |
+| Enable or Disable a Business Unit                                | prvDisableBusinessUnit                    | [<u>Create or edit business units</u>](create-edit-business-units.md)                                                         |
+| Enable or Disable User                                           | prvDisableUser                            | [<u>Enable or disable user accounts</u>](create-users.md#enable-or-disable-user-accounts)                                     |
+| Language Settings                                                | prvLanguageSettings                       | [<u>Regional and language options for your environment</u>](enable-languages.md)                                              |
 | Manage Data Encryption key - Activate                     | prvRestoreSqlEncryptionKey     | [<u>Activate an encryption key for a tenant</u>](manage-encryption-key.md#activate-an-encryption-key-for-a-tenant)     |
 | Manage Data Encryption key - Change                       | prvChangeSqlEncryptionKey      | [<u>Manage encryption for an environment</u>](manage-encryption-key.md#manage-encryption-for-an-environment)           |
 | Manage Data Encryption key - Read                         | prvReadSqlEncryptionKey        | [<u>Manage the encryption key</u>](manage-encryption-key.md)    |
 | Manage User Synchronization Filters                       | prvAdminFilter                 | [<u>Control field synchronization with Outlook</u>](control-field-synchronization-outlook.md)                          |
+| Merge                                                            | prvMerge                                  | [<u>Merge data</u>](merge-data.md)   |
+| Override Created on or Created by for Records during Data Import | prvOverrideCreatedOnCreatedBy             | [<u>Import data (all record types) from multiple sources</u>](import-data-all-record-types.md)                                |
 | Override Invoice Pricing            | prvOverridePriceEngineInvoice     | [<u>Create or edit invoices (Sales and Sales Hub)</u>](/dynamics365/sales-enterprise/create-edit-invoice-sales)                                                        |
 | Override Opportunity Pricing        | prvOverridePriceEngineOpportunity | [<u>Add products to an opportunity (Sales Hub)</u>](/dynamics365/sales-enterprise/add-products-opportunity)                                                            |
 | Override Order Pricing              | prvOverridePriceEngineOrder       | [<u>Create or edit orders (Sales and Sales Hub)</u>](/dynamics365/sales-enterprise/create-edit-order-sales)                                                            |
 | Override Quote Order Invoice Delete | prvQOIOverrideDelete              | [<u>Create or edit quotes (Sales and Sales Hub)</u>](/dynamics365/sales-enterprise/create-edit-quote-sales)                                                            |
 | Override Quote Pricing              | prvOverridePriceEngineQuote       | [<u>Price calculation for opportunity, quote, order, and invoice records</u>](/dynamics365/sales-enterprise/price-calculation-opportunity-quote-order-invoice-records) |
+| Perform in sync rollups on goals                                 | prvRollupGoal                             | [<u>Create or edit goals (Sales and Sales Hub)</u>](/dynamics365/sales-enterprise/create-edit-goal-sales)                                        |
 | Promote User to Microsoft Dynamics 365 Administrator Role |     Not applicable                           | [<u>Configure user security to resources in an environment</u>](database-security.md)                                  |
 | Publish Articles             | prvPublishArticle          | [<u>Create and manage knowledge articles</u>](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
 | Publish Duplicate Detection Rules                         | prvPublishDuplicateRule        | [<u>Set up duplicate detection rules to keep your data clean</u>](set-up-duplicate-detection-rules-keep-data-clean.md) |
@@ -58,12 +64,19 @@ Specify privileges for each security role using the [new](security-roles-privile
 | Publish Knowledge Articles   | prvPublishKnowledgeArticle | [<u>Create and manage knowledge articles</u>](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
 | Publish Mail Merge Templates to Organization              | prvPublishOrgMailMergeTemplate | [<u>Work with mail merge templates</u>](work-mail-merge-templates.md)  |
 | Publish Reports                                           | prvPublishOrgReport            | [<u>Common Data Service analytics</u>](analytics-common-data-service.md) |
+| Read License info                                                | prvReadLicense                            | [<u>What users are licensed</u>](wp-license-management.md#what-users-are-licensed)                                            |
+| Reparent Business unit                                           | prvReparentBusinessUnit                   | [<u>Assign a business unit a different parent business</u>](assign-business-unit-different-parent.md)                         |
 | Run SharePoint Integration Wizard                         | prvConfigureSharePoint         | [<u>Set up SharePoint integration</u>](set-up-sharepoint-integration.md) |
+| Reparent team                                                    | prvReparentTeam                           | [<u>Manage teams</u>](manage-teams.md)      |
+| Reparent user                                                    | prvReparentUser                           | [<u>Create users</u>](create-users.md)      |
+| Send Email as Another User                                       | prvSendAsUser                             | [<u>Delegate users</u>](use-outlook-category-track-appointments-emails.md#delegate-users)                                     |
+| Send Invitation                                                  | prvSendInviteForLive                      | [<u>Invite users with Azure Active Directory B2B collaboration</u>](invite-users-azure-active-directory-b2b-collaboration.md) |
 | Turn On Tracing                   |        Not applicable                        | [<u>Plug-in and custom workflow activity tracing</u>](system-settings-dialog-box-customization-tab.md)                 |
 | Use internet marketing module       | prvUseInternetMarketing       | [<u>Create a quick campaign using in-app marketing (Sales)</u>](/dynamics365/customerengagement/on-premises/developer/sample-distribute-a-quick-campaign) |
 | View Audit History                                        | prvReadRecordAuditHistory      | [<u>Audit history</u>](common-data-service-gdpr-dsr-guide.md#audit-history)                                            |
 | View Audit Partitions                                     | prvReadAuditPartitions         | [<u>Audit data and user activity for security and compliance</u>](manage-dataverse-auditing.md)                        |
-| View Audit Summary                                        | prvReadAuditSummary            | [<u>Power Apps activity logging</u>](logging-powerapps.md)                                                             |
+| View Audit Summary                                        | prvReadAuditSummary            | [<u>Power Apps activity logging</u>](logging-powerapps.md)    
+| Web Mail Merge                                                   | prvWebMailMerge                           | [<u>Work with mail merge templates</u>](work-mail-merge-templates.md)                                                         |
 
 
 ## Legacy experience
@@ -145,23 +158,6 @@ All the privileges explained earlier are grouped by various tabs. The following 
     - Publish Customizations
     - Retrieve Multiple Social Insights
     - Run Flows
-
-
-
-
-| Enable or Disable a Business Unit                                | prvDisableBusinessUnit                    | [<u>Create or edit business units</u>](create-edit-business-units.md)                                                         |
-| Enable or Disable User                                           | prvDisableUser                            | [<u>Enable or disable user accounts</u>](create-users.md#enable-or-disable-user-accounts)                                     |
-| Language Settings                                                | prvLanguageSettings                       | [<u>Regional and language options for your environment</u>](enable-languages.md)                                              |
-| Merge                                                            | prvMerge                                  | [<u>Merge data</u>](merge-data.md)   |
-| Override Created on or Created by for Records during Data Import | prvOverrideCreatedOnCreatedBy             | [<u>Import data (all record types) from multiple sources</u>](import-data-all-record-types.md)                                |
-| Perform in sync rollups on goals                                 | prvRollupGoal                             | [<u>Create or edit goals (Sales and Sales Hub)</u>](/dynamics365/sales-enterprise/create-edit-goal-sales)                                        |
-| Read License info                                                | prvReadLicense                            | [<u>What users are licensed</u>](wp-license-management.md#what-users-are-licensed)                                            |
-| Reparent Business unit                                           | prvReparentBusinessUnit                   | [<u>Assign a business unit a different parent business</u>](assign-business-unit-different-parent.md)                         |
-| Reparent team                                                    | prvReparentTeam                           | [<u>Manage teams</u>](manage-teams.md)      |
-| Reparent user                                                    | prvReparentUser                           | [<u>Create users</u>](create-users.md)      |
-| Send Email as Another User                                       | prvSendAsUser                             | [<u>Delegate users</u>](use-outlook-category-track-appointments-emails.md#delegate-users)                                     |
-| Send Invitation                                                  | prvSendInviteForLive                      | [<u>Invite users with Azure Active Directory B2B collaboration</u>](invite-users-azure-active-directory-b2b-collaboration.md) |
-| Web Mail Merge                                                   | prvWebMailMerge                           | [<u>Work with mail merge templates</u>](work-mail-merge-templates.md)                                                         |
 
 ## Service management 
 
