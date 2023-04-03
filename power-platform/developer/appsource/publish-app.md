@@ -1,5 +1,5 @@
 ---
-title: "Publish your app on AppSource (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
+title: "Publish your app on AppSource | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "Learn about how to publish your Power Apps on Microsoft AppSource so that subscribers can find it, try it, and buy it." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.date: 04/03/2023
 ms.reviewer: pehecke

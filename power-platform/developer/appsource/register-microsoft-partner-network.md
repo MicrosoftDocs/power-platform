@@ -1,5 +1,5 @@
 ---
-title: "Step 1: Create a Microsoft Partner Center account (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
+title: "Step 1: Create a Microsoft Partner Center account | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "App builders must be members of Microsoft Partner Network (MPN) to publish apps on AppSource." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.date: 04/03/2023
 ms.reviewer: pehecke
