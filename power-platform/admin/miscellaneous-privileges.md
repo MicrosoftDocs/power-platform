@@ -21,9 +21,11 @@ search.app:
 
 This article provides information about **Miscellaeous privileges** that are available with security roles.
 
-Specify privileges for each security role using the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience.
+You can specify privileges for each security role using the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience.
 
 ## New experience (preview)
+
+Miscellaneous privileges in the new, modern UI are listed alphabetically on the **Miscellaneous privileges** tab of the security role editor.
 
 | Miscellaneous privilege                          | Privilege name            | More information       |
 |--------------------------------|----------------------|------------|
