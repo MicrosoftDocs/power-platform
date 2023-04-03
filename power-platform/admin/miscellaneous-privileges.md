@@ -28,6 +28,9 @@ Specify privileges for each security role using the [new](security-roles-privile
 | Miscellaneous privilege                          | Privilege name            | More information       |
 |--------------------------------|----------------------|------------|
 | Act on Behalf of Another User                                    | prvActOnBehalfOfAnotherUser               | [<u>Impersonate another user</u>](/powerapps/developer/common-data-service/impersonate-another-user)                                             |
+| Activate Business Process Flows | prvActivateBusinessProcessFlow | [Model business process flows](/power-automate/business-process-flows-overview) |
+| Activate Business Rules | prvActivateBusinessRule | [Model business process flows](/power-automate/business-process-flows-overview) |
+| Activate Real-time Processes | prvActivateSynchronousWorkflow | [Model business process flows](/power-automate/business-process-flows-overview) |
 | Add Reporting Services Reports                            | prvPublishRSReport             | [<u>Download reports</u>](analytics-common-data-service.md#download-reports)                                           |
 | Approve Email Addresses for Users or Queues                      | prvApproveRejectEmailAddress              | [<u>Approve email</u>](connect-exchange-online.md#approve-email)                                                              |
 | Approve Knowledge Articles   | prvApproveKnowledgeArticle | [<u>Create and manage knowledge articles</u>](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
@@ -39,6 +42,7 @@ Specify privileges for each security role using the [new](security-roles-privile
 | Bulk Delete                                               | prvBulkDelete                  | [<u>Bulk delete</u>](delete-bulk-records.md)      |
 | Change Hierarchy Security Settings                               | prvWriteHierarchicalSecurityConfiguration | [<u>Hierarchy security to control access</u>](hierarchy-security.md)                                                          |
 | Configure Internet Marketing module | prvConfigureInternetMarketing | [<u>Create and deploy marketing pages</u>](/dynamics365/marketing/create-deploy-marketing-pages)  |
+| Configure Yammer | prvConfigureYammer | [Yammer resources](https://resources.techcommunity.microsoft.com/yammer/adoption/) |
 | Create own calendar          | prvCreateOwnCalendar  | [<u>Create and customize marketing calendars</u>](/dynamics365/marketing/customize-marketing-calendars) |
 | Create Quick Campaign               | prvAllowQuickCampaign         | [<u>Create a quick campaign using in-app marketing (Sales)</u>](/dynamics365/sales-enterprise/create-quick-campaign-using-app-marketing-sales)            |
 | Delete Audit Partitions                                   | prvDeleteAuditPartitions       | [<u>Recover database space by deleting audit logs</u>](recover-database-space-deleting-audit-logs.md)                  |
@@ -47,7 +51,12 @@ Specify privileges for each security role using the [new](security-roles-privile
 | Dynamics 365 Address Book                                        | prvAddressBook                            | [<u>Set schedule for address book synchronization</u>](system-settings-dialog-box-outlook-tab.md)                             |
 | Enable or Disable a Business Unit                                | prvDisableBusinessUnit                    | [<u>Create or edit business units</u>](create-edit-business-units.md)                                                         |
 | Enable or Disable User                                           | prvDisableUser                            | [<u>Enable or disable user accounts</u>](create-users.md#enable-or-disable-user-accounts)                                     |
+| Execute Workflow Job | prvWorkflowExecution | [Configure background workflow stages and steps](/power-automate/configure-workflow-steps) |
+| Export Customizations | prvExportCustomization | [ExportSolution message privileges](/powerapps/maker/common-data-service/import-update-export-solutions) |
+| Import Customizations | prvImportCustomization | [ImportSolution message privileges](/powerapps/maker/common-data-service/import-update-export-solutions) |
+| ISV Extensions | prvISVExtensions | Not currently in use. |
 | Language Settings                                                | prvLanguageSettings                       | [<u>Regional and language options for your environment</u>](enable-languages.md)                                              |
+| Learning Path Authoring | Not applicable  | [On-off switch for Learning Path](/power-platform/admin/on-off-switch-for-learning-path-guided-help) |
 | Manage Data Encryption key - Activate                     | prvRestoreSqlEncryptionKey     | [<u>Activate an encryption key for a tenant</u>](manage-encryption-key.md#activate-an-encryption-key-for-a-tenant)     |
 | Manage Data Encryption key - Change                       | prvChangeSqlEncryptionKey      | [<u>Manage encryption for an environment</u>](manage-encryption-key.md#manage-encryption-for-an-environment)           |
 | Manage Data Encryption key - Read                         | prvReadSqlEncryptionKey        | [<u>Manage the encryption key</u>](manage-encryption-key.md)    |
@@ -64,12 +73,15 @@ Specify privileges for each security role using the [new](security-roles-privile
 | Publish Articles             | prvPublishArticle          | [<u>Create and manage knowledge articles</u>](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
 | Publish Duplicate Detection Rules                         | prvPublishDuplicateRule        | [<u>Set up duplicate detection rules to keep your data clean</u>](set-up-duplicate-detection-rules-keep-data-clean.md) |
 | Publish Email Templates                                   | prvCreateOrgEmailTemplates     | [<u>Create templates for email</u>](create-templates-email.md)     |
+| Publish Customizations | prvPublishCustomization | [PublishXml message privileges](/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations)</br>[PublishAllXml message privileges](/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations) |
 | Publish Knowledge Articles   | prvPublishKnowledgeArticle | [<u>Create and manage knowledge articles</u>](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
 | Publish Mail Merge Templates to Organization              | prvPublishOrgMailMergeTemplate | [<u>Work with mail merge templates</u>](work-mail-merge-templates.md)  |
 | Publish Reports                                           | prvPublishOrgReport            | [<u>Common Data Service analytics</u>](analytics-common-data-service.md) |
 | Read License info                                                | prvReadLicense                            | [<u>What users are licensed</u>](wp-license-management.md#what-users-are-licensed)                                            |
 | Read own calendar            | prvReadOwnCalendar    | [<u>Create and customize marketing calendars</u>](/dynamics365/marketing/customize-marketing-calendars) |
 | Reparent Business unit                                           | prvReparentBusinessUnit                   | [<u>Assign a business unit a different parent business</u>](assign-business-unit-different-parent.md)                         |
+| Retrieve Multiple Social Insights | prvRetrieveMultipleSocialInsights | Not applicable |
+| Run Flows | Not applicable | [Run attended and unattended UI flows](/power-automate/ui-flows/run-ui-flow) |
 | Run SharePoint Integration Wizard                         | prvConfigureSharePoint         | [<u>Set up SharePoint integration</u>](set-up-sharepoint-integration.md) |
 | Reparent team                                                    | prvReparentTeam                           | [<u>Manage teams</u>](manage-teams.md)      |
 | Reparent user                                                    | prvReparentUser                           | [<u>Create users</u>](create-users.md)      |
@@ -164,16 +176,3 @@ All the privileges explained earlier are grouped by various tabs. The following 
     - Publish Customizations
     - Retrieve Multiple Social Insights
     - Run Flows
-
-| Activate Business Process Flows | prvActivateBusinessProcessFlow | [Model business process flows](/power-automate/business-process-flows-overview) |
-| Activate Business Rules | prvActivateBusinessRule | [Model business process flows](/power-automate/business-process-flows-overview) |
-| Activate Real-time Processes | prvActivateSynchronousWorkflow | [Model business process flows](/power-automate/business-process-flows-overview) |
-| Configure Yammer | prvConfigureYammer | [Yammer resources](https://resources.techcommunity.microsoft.com/yammer/adoption/) |
-| Execute Workflow Job | prvWorkflowExecution | [Configure background workflow stages and steps](/power-automate/configure-workflow-steps) |
-| Export Customizations | prvExportCustomization | [ExportSolution message privileges](/powerapps/maker/common-data-service/import-update-export-solutions) |
-| Import Customizations | prvImportCustomization | [ImportSolution message privileges](/powerapps/maker/common-data-service/import-update-export-solutions) |
-| ISV Extensions | prvISVExtensions | Not currently in use. |
-| Learning Path Authoring | Not applicable  | [On-off switch for Learning Path](/power-platform/admin/on-off-switch-for-learning-path-guided-help) |
-| Publish Customizations | prvPublishCustomization | [PublishXml message privileges](/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations)</br>[PublishAllXml message privileges](/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations) |
-| Retrieve Multiple Social Insights | prvRetrieveMultipleSocialInsights | Not applicable |
-| Run Flows | Not applicable | [Run attended and unattended UI flows](/power-automate/ui-flows/run-ui-flow) |
