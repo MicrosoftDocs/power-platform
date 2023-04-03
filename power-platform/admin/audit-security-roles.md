@@ -1,6 +1,6 @@
 ---
 title: Audit security roles
-description: Audit secuirty roles to better understand change made to your security.
+description: Audit security roles to better understand change made to your security.
 author: sericks007
 ms.subservice: admin
 ms.author: pmantha
@@ -19,7 +19,7 @@ search.app:
 ---
 # Audit security roles
 
-You can audit secuirty roles to better understand changes made to security.
+You can audit security roles to better understand changes made to security in your Power Platform environment.
 
 ## Configure auditing for an environment
 
@@ -30,9 +30,9 @@ You can audit secuirty roles to better understand changes made to security.
 
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Entity and field audit settings**.
+2. Go to **Environments** > [select an environment] > **Settings** > **Audit and logs** > **Entity and field audit settings**.
 
-3. In the left pane, under **Entities** select **Secuirty Role**. 
+3. In the left pane, under **Entities** select **Security Role**. 
   
 4. On the **Gerneral** tab, under the **Data Services** area, select **Auditing**. 
   
@@ -40,12 +40,12 @@ You can audit secuirty roles to better understand changes made to security.
 
 ## Change a security role
 
-Change a security role, as needed.
+Change a security role, as needed. More information: [Create, edit, or copy a security role using the new, modern UI](database-security.md#create-edit-or-copy-a-security-role-using-the-new-modern-ui-preview-feature).
 
 ## View the audit report
 
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
-2. Go to **Environments** > [select an environment] > **Settings** > expand **Users + permissions ** > **Security roles**.
+2. Go to **Environments** > [select an environment] > **Settings** > **Users + permissions ** > **Security roles**.
 3. Select **Audit report** in the command bar.
 4. A report showing the changes that have been made to security roles is displayed.
 
