@@ -1,5 +1,5 @@
 ---
-title: Audit security roles
+title: Audit security roles (preview)
 description: Audit security roles to better understand change made to your security.
 author: sericks007
 ms.subservice: admin
@@ -17,9 +17,12 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Audit security roles
+# Audit security roles (preview)
 
 You can audit security roles to better understand changes made to security roles in your Power Platform environment.
+
+> [!Important]
+> [!include [preview](../includes/cc-preview-features-definition.md)]
 
 ## Configure auditing for an environment
 
