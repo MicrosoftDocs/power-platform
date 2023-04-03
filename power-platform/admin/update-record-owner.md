@@ -37,7 +37,7 @@ If you have enabled the [allow record ownership across business units](wp-securi
 You can also make a user with the **Disabled** status to be the owner of the record provided the user has **Read** privilege on the table. This means that the user with **Disabled** status must be assigned with a security role with the privilege. When an active user is deleted from the tenant, the user's status is set to **Disabled** in the system but the assigned security role is retained. So, you can continue to make this user as owner of records. 
 
 > [!NOTE]
-In an event that there is no security role assigned to the user with **Disabled** status and you want to make/change record ownership to this user, you can enable the `allowRoleAssignmentOnDisabledUsers` setting to assign role to this user. More information: [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm)
+> In an event that there is no security role assigned to the user with **Disabled** status and you want to change record ownership to this user, you can enable the `allowRoleAssignmentOnDisabledUsers` setting to assign role to this user using the [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm) tool.
 
 
 ## Table relationship and cascading behavior 
