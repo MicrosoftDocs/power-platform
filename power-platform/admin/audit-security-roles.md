@@ -44,8 +44,8 @@ Change a security role, as needed. More information: [Create, edit, or copy a se
 
 ## View the audit report
 
-1. Browse to the Power Platform admin center and sign in using administrator credentials. 
-2. Go to **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security roles**.
+1. Go to the Power Platform admin center and sign in using administrator credentials. 
+2. Select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security roles**.
 3. Select **Audit report** in the command bar.
 4. A report showing the changes that have been made to security roles is displayed.
 
