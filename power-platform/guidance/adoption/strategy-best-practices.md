@@ -30,7 +30,6 @@ The following articles can help you understand how to get started with your ente
 > * [Delivery models](delivery-models.md)
 > * [Measure business value](business-value.md)
 > * [Executive sponsorship](executive-sponsorship.md)
-> * [License assignment strategies](developing-a-license-assignment-strategy.md)
 
    :::column-end:::
 :::row-end:::
