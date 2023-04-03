@@ -21,6 +21,12 @@ search.app:
 
 This article provides information about **Privacy-related privileges** that are available with security roles.
 
+You can specify privileges for each security role using the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience.
+
+## New experience (preview)
+
+Privacy-related privileges in the new, modern UI are listed alphabetically on the **Privacy-related privileges** tab of the security role editor.
+
 |Privacy-related privilege  | Technical name | Privilege level |
 |---------------------------|-----------------|-----------|
 |Document Generation	|prvDocumentGeneration	|Organization|
@@ -32,3 +38,6 @@ This article provides information about **Privacy-related privileges** that are 
 |Sync to Outlook	|prvSyncToOutlook	|Organization|
 |Use Dynamics 365 App for Outlook	|prvUseOfficeApps	|Organization|
 		
+## Legacy experience
+All the privileges listed earlier are grouped together on the **Business Management** tab of the legacy UI.
+
