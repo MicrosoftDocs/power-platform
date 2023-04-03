@@ -36,7 +36,7 @@ You can audit security roles to better understand changes made to security in yo
 
 ## Change a security role
 
-Change a security role, as needed. More information: [Create, edit, or copy a security role using the new, modern UI](database-security.md#create-edit-or-copy-a-security-role-using-the-new-modern-ui-preview-feature).
+Change a security role, as needed. More information: [Create, edit, or copy a security role using the new, modern UI](database-security.md#create-edit-or-copy-a-security-role-using-the-new-modern-ui-preview-feature)
 
 ## View the audit report
 
