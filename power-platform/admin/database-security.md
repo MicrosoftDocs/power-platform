@@ -10,7 +10,7 @@ contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2023
+ms.date: 04/03/2023
 search.audienceType: 
   - admin
 search.app:
@@ -194,6 +194,9 @@ To edit an existing security role, either select the role name, or select the ro
 #### Copy a security role
 
 Select the security role and choose copy. You will need to give the role a new name. Note that only the privileges will be copied, the assigned members and teams will not be assigned to the copied role. [Edit the security role](#edit-an-existing-security-role), as needed.
+
+#### Audit security roles
+[Audit security roles](audit-security-roles.md) to better understand changes made to security in your Power Platform environment.
 
 ## Create or configure a custom security role 
 
