@@ -1,10 +1,10 @@
 ---
 title: "Measuring business value of Power Platform solutions - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance for measuring the business value of Power Platform solutions."
-author: manuelap-msft
+author: stjeffer
 manager: devkeydet
 contributors: 
-- stjeffer
+- manuelap-msft
 - robertsmith-bvm
 - jean-romero
 ms.component: pa-admin
@@ -13,7 +13,7 @@ ms.date: 03/31/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.contributors: 
-- stjeffer
+- manuelap-msft
 - robertsmith-bvm
 - jean-romero
 ms.reviewer: sericks
