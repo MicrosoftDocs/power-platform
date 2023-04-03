@@ -101,7 +101,7 @@ Specify privileges for each security role using the [new](security-roles-privile
 
 All the privileges explained earlier are grouped by various tabs. The following list shows the availability of privileges under various tabs:
 
-- **Core tab**
+- **Core Records tab**
     -  Add Reporting Services Reports
     -  Bulk Delete
     -  Delete Audit Partitions
