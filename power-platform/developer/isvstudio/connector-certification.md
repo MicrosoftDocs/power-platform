@@ -1,12 +1,11 @@
 ---
 title: Connector certification from ISV Studio | Microsoft Docs
 description: Learn how to submit a custom connector for certification by using ISV Studio.
-ms.date: 04/01/2022
+ms.date: 04/03/2023
+ms.reviewer: pehecke
 author: mikkelsen2000
 ms.author: pemikkel
-ms.reviewer: pehecke
-manager: jstrauss
-ms.subservice: dataverse-developer
+ms.subservice: developer
 search.audienceType: 
   - developer
 search.app: 
@@ -19,9 +18,7 @@ contributors:
 
 # Connector certification
 
-If you own a service or API&mdash;or you've built a custom connector that you want to connect to Power Apps, Power Automate, Azure Logic Apps, or Power Query&mdash;you need to submit your connector to Microsoft for certification. 
-
-[!INCLUDE[cc-terminology](includes/cc-terminology.md)]
+If you own a service or API, or you've built a custom connector that you want to connect to Power Apps, Power Automate, Azure Logic Apps, or Power Query, you need to submit your connector to Microsoft for certification.
 
 Connector certification is now included in ISV Studio, so you can use it to manage and track your connector certification submission. More information: [Submit your connector for Microsoft certification](/connectors/custom-connectors/submit-certification)
 
@@ -34,31 +31,24 @@ Connector certification is now included in ISV Studio, so you can use it to mana
 
 2. Select the type of connector to certify, and then select **Submit**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Connector certification.](media/connector-certification-submit.png "Connector certification")
+   :::image type="content" source="media/connector-certification-submit.png" alt-text="Connector certification":::
 
 3. On the **Connector submission** page, read the agreement details, select the **Accept terms** check box, and then select **Next**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Consent form.](media/connector-certification-consent-form.png "Consent form")
+   :::image type="content" source="media/connector-certification-consent-form.png" alt-text="Consent form":::
 
 4. Select **Choose a file** to upload the custom connector from your local machine. 
 
-   > [!div class="mx-imgBorder"]
-   > ![Choose file.](media/connector-certification-choose-file.png "Choose file")
+   :::image type="content" source="media/connector-certification-choose-file.png" alt-text="Choose file":::
 
-5. Enter the required details, and then select **Submit for review**. 
+5. Enter the required details, and then select **Submit for review**.
    
-   > [!div class="mx-imgBorder"]
-   > ![Submit for review.](media/connector-certification-submit-for-review.png "Submit for review")
+   :::image type="content" source="media/connector-certification-submit-for-review.png" alt-text="Submit for review":::
 
 After you submit your connector for review, you'll receive an email from Microsoft.
 
 ### See also
 
-[Home page](isv-app-management-homepage.md)<br/>
-[App page](isv-app-management-apppage.md)<br/>
-[Tenant page](isv-app-management-tenantpage.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Home page](home.md)<br/>
+[App page](app.md)<br/>
+[Tenant page](tenant.md)

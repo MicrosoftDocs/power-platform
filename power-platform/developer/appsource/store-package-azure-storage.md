@@ -1,15 +1,12 @@
 ---
 title: "Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "To maintain security of your files, all app developers must store their AppSource package file in a Microsoft Azure Blob storage account, and use a Shared Access Signature (SAS) key to share the package file. Your package file is retrieved from your Azure Storage location for certification, and then for AppSource trials." # 115-145 characters including spaces. This abstract displays in the search result.
-ms.custom: ""
-ms.date: 12/20/2019
-ms.reviewer: "pehecke"
-
-ms.topic: "article"
-author: "shmcarth" # GitHub ID
-ms.subservice: dataverse-developer
-ms.author: "jdaly" # MSFT alias of Microsoft employees only
-manager: "ryjones" # MSFT alias of manager or PM counterpart
+ms.date: 04/03/2023
+ms.reviewer: pehecke
+ms.topic: article
+author: shmcarth # GitHub ID
+ms.author: shmcarth
+ms.subservice: developer
 search.audienceType: 
   - developer
 search.app: 
@@ -17,8 +14,6 @@ search.app:
   - D365CE
 ---
 # Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key
-
-
 
 Microsoft Azure Storage is a Microsoft-managed cloud service that provides storage that is highly available, secure, durable, scalable, and redundant. More information: [Introduction to Microsoft Azure Storage](/azure/storage/common/storage-introduction).
 
@@ -38,43 +33,40 @@ To upload your package to Azure Blob storage:
 2. Sign in to Azure Management portal at [https://portal.azure.com](https://portal.azure.com).
 3. Create a new Storage account by clicking  > **Storage** > **Storage account - blob, file, table, queue**.
     
-   ![Create a Storage account.](media/appsource-storageaccount-pic1.png)
+   :::image type="content" source="media/appsource-storageaccount-pic1.png" alt-text="Create a Storage account":::
 
 4. On the **Create storage account** page, specify **Name**, **Resource group**, and **Location** for your storage account. Leave the rest of the columns with the default options. Click **Create**. 
 
-   ![Specifying account values.](media/appsource-storageaccount-pic2.png)
+   :::image type="content" source="media/appsource-storageaccount-pic2.png" alt-text="Specifying account values":::
   
 5. After your storage account is created, navigate to the newly created resource group, and create a new Blob container. Under **Blob Service**, select **Containers**, and then **+ Container**.
 
-   ![Create a new Blob container.](media/appsource-storageaccount-pic3.png)
+   :::image type="content" source="media/appsource-storageaccount-pic3.png" alt-text="Create a new Blob container.":::
 
 6. Specify a name for your container, and select the **Public access level** as **Blob**. Click **OK**.
 
-   ![Set access level of the Blob.](media/appsource-storageaccount-pic4.png)
+   :::image type="content" source="media/appsource-storageaccount-pic4.png" alt-text="Set access level of the Blob.":::
 
 7. Start Azure Storage Explorer on your computer, and connect to your Azure Storage account by signing in using the same account with which you created your Azure Storage account.
 
-8. In Azure Storage Explorer, select the newly created container, and then select **Upload** > **Upload Files** to upload the app source package that you created in [Step 4: Create an AppSource package for your app](create-package-app-appsource.md). 
+8. In Azure Storage Explorer, select the newly created container, and then select **Upload** > **Upload Files** to upload the app source package that you created in [Step 4: Create an AppSource package for your app](create-package-app.md). 
 
-   ![Upload the app source package.](media/appsource-storageaccount-pic5.png)
+   :::image type="content" source="media/appsource-storageaccount-pic5.png" alt-text="Upload the app source package.":::
 
 9. Browse to the AppSource package file on your computer, and select to upload it.
 
 10. Right-click on the uploaded AppSource package file, and select **Get Shared Access Signature**.
 
-    ![Selecting Shared Access Signature.](media/appsource-storageaccount-pic6.png)
+   :::image type="content" source="media/appsource-storageaccount-pic6.png" alt-text="Selecting Shared Access Signature":::
 
 11. On the **Shared Access Signature** page, modify the **Expiry time** value to make the Shared Access Signature (SAS) active for a month from the **Start time**. Click **Create**.
 
-    ![Set an expiration time.](media/appsource-storageaccount-pic7.png)
+   :::image type="content" source="media/appsource-storageaccount-pic7.png" alt-text="Set an expiration time":::
 
 12. The next page displays information about the generated SAS information. Copy the **URL** value and save it for later. You will need to specify this URL while creating an offer in Partner Center.
 
-    ![Copying the SAS URL.](media/appsource-storageaccount-pic8.png)
+   :::image type="content" source="media/appsource-storageaccount-pic8.png" alt-text="Copying the SAS URL":::
 
 
 > [!div class="nextstepaction"]
 > [Next steps: Submit your app on Partner Center](next-steps-submit-app-cloud-partner-portal.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

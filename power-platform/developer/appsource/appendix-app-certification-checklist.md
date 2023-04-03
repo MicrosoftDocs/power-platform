@@ -1,14 +1,12 @@
 ---
 title: "Appendix: App certification checklist (PowerApps) | Microsoft Docs"
 description: "The app certification checklist provides you information about the checks that your model-driven, canvas apps and flows have to go through before it can be published on AppSource."
-ms.custom: ""
-ms.date: 11/29/2022
-ms.reviewer: "pehecke"
-ms.topic: "article"
-author: "omarcdoc" 
-ms.subservice: dataverse-developer
-ms.author: "omarc" 
-manager: "AnnBe" 
+ms.date: 04/03/2023
+ms.reviewer: pehecke
+ms.topic: article
+author: mikkelsen2000
+ms.author: pemikkel
+ms.subservice: developer
 search.audienceType: 
   - developer
 search.app: 
@@ -18,9 +16,7 @@ search.app:
 # Appendix: App certification checklist
 
 
-The following checklist provides the list of validations performed by Microsoft during the certification process after you [submit](next-steps-submit-app-cloud-partner-portal.md) your app. 
-
-[!INCLUDE[cc-terminology](includes/cc-terminology.md)]
+The following checklist provides the list of validations performed by Microsoft during the certification process after you [submit](next-steps-submit-app-cloud-partner-portal.md) your app.
 
 <table>
 <tbody>
@@ -134,17 +130,8 @@ The following checklist provides the list of validations performed by Microsoft 
 
 For information on best practices for creating:
 - Canvas apps, see [Canvas App Coding Standard and Guidelines](https://aka.ms/powerappscanvasguidelines)
-- Model-driven apps, see [Understand model-driven app components](../../maker/model-driven-apps/model-driven-app-components.md)
+- Model-driven apps, see [Understand model-driven app components](/power-apps/maker/model-driven-apps/model-driven-app-components)
 
 ### See also
 
 [Partner Center documentation](/partner-center/)
-
-
-
-
-  
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

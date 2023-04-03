@@ -1,13 +1,13 @@
 ---
 title: Auto app updates (preview) | Microsoft Docs
 description: Learn about the latest auto update feature for apps.
-ms.date: 03/22/2023
+ms.date: 04/03/2023
+ms.reviewer: jdaly
 author: angela21k
 ms.author: angelakim
-ms.reviewer: jdaly
 suite: powerapps
 ms.topic: article
-ms.subservice: dataverse-developer
+ms.subservice: developer
 search.audienceType: 
   - developer
 search.app: 
@@ -78,10 +78,8 @@ As a publisher with access to ISV Studio, you can view details about your automa
 
 ### See also
 
-[Introduction to ISV Studio for the Power Platform](isv-app-management.md)  
-[Home page](isv-app-management-homepage.md)<br/> 
-[App page](isv-app-management-apppage.md)<br/> 
-[AppSource checker](isv-app-management-appsource-checker.md)<br/> 
-[Connector Certification](isv-app-management-certification.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Introduction to ISV Studio for the Power Platform](index.md)  
+[Home page](home.md)<br/> 
+[App page](app.md)<br/> 
+[AppSource checker](appsource-checker.md)<br/> 
+[Connector Certification](connector-certification.md)

@@ -1,13 +1,13 @@
 ---
 title: Embed Pay-as-you-go for ISVs (preview) | Microsoft Docs
 description: Learn how to access the Embed PAYG reports in ISV Studio.
-ms.date: 10/10/2022
+ms.date: 04/03/2023
+ms.reviewer: jdaly
 author: angela21k
 ms.author: angelakim
-ms.reviewer: jdaly
 suite: powerapps
 ms.topic: article
-ms.subservice: dataverse-developer
+ms.subservice: developer
 search.audienceType: 
   - developer
 search.app: 
@@ -62,10 +62,8 @@ ISV Studio is a portal designed for third-party publishers to view how well thei
 
 ### See also
 
-[Introduction to ISV Studio for the Power Platform](isv-app-management.md)<br/>
-[Home page](isv-app-management-homepage.md)<br/>
-[App page](isv-app-management-apppage.md)<br/>
-[AppSource checker](isv-app-management-appsource-checker.md)<br/>
-[Connector Certification](isv-app-management-certification.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Introduction to ISV Studio for the Power Platform](index.md)<br/>
+[Home page](home.md)<br/>
+[App page](app.md)<br/>
+[AppSource checker](appsource-checker.md)<br/>
+[Connector Certification](connector-certification.md)

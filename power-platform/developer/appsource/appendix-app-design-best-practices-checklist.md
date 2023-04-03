@@ -1,15 +1,12 @@
 ---
 title: "Appendix: App design best practices checklist (PowerApps) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "Use the app design checklist to evaluate your app design in Power Apps." # 115-145 characters including spaces. This abstract displays in the search result.
-ms.custom: ""
-ms.date: 03/20/2019
-ms.reviewer: "pehecke"
-
-ms.topic: "article"
-author: "omarcdoc" 
-ms.subservice: dataverse-developer
-ms.author: "omarc" 
-manager: "AnnBe" 
+ms.date: 04/03/2023
+ms.reviewer: pehecke
+ms.topic: article
+author: mikkelsen2000
+ms.author: pemikkel
+ms.subservice: developer
 search.audienceType: 
   - developer
 search.app: 
@@ -18,9 +15,7 @@ search.app:
 ---
 # Appendix: App design best practices checklist
 
-[!INCLUDE[cc-terminology](includes/cc-terminology.md)]
-
-Use the following checklist to evaluate your app design. 
+Use the following checklist to evaluate your app design.
 
 <table>
 <tbody>
@@ -122,14 +117,3 @@ intended flow of user actions to achieve that scenario</td>
 
 
 For information on best practices for creating Canvas apps, see [Canvas App Coding Standard and Guidelines](https://aka.ms/powerappscanvasguidelines).
-
-  
-
-
-
-
-  
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

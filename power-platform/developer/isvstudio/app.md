@@ -1,14 +1,13 @@
 ---
 title: App page of ISV Studio | Microsoft Docs
 description: Learn about the App page capabilities provided by the ISV Studio portal.
-ms.date: 04/01/2022
+ms.date: 04/03/2023
 author: mikkelsen2000
 ms.author: pemikkel
 ms.reviewer: jdaly
-manager: jstrauss
 suite: powerapps
 ms.topic: article
-ms.subservice: dataverse-developer
+ms.subservice: developer
 search.audienceType: 
   - developer
 search.app: 
@@ -21,10 +20,7 @@ contributors:
 
 After the user selects an app, the user is navigated to the app's detail page, which provides a view to analyze the install history across tenants for that particular app. The app description is from [AppSource](https://appsource.microsoft.com/).
 
-[!INCLUDE[cc-terminology](includes/cc-terminology.md)]
-
-> [!div class="mx-imgBorder"]
-> ![App detail page.](media/isv-portal-apppage-appname.png)
+:::image type="content" source="media/isv-portal-apppage-appname.png" alt-text="App detail page":::
 
 The app detail page contains the following graphs and metrics.
 
@@ -36,8 +32,7 @@ When hovering over the graph, the following information is shown:
 
 Install Count: Number of app installations happened on a particular date.
 
-> [!div class="mx-imgBorder"]
-> ![Package installs by environment type.](media/isv-portal-apppage-graph1.png)
+:::image type="content" source="media/isv-portal-apppage-graph1.png" alt-text="Package installs by environment type":::
 
 ## Installs by geo
 
@@ -48,9 +43,7 @@ When hovering over the graph, the following information is shown:
 1. Geo
 2. Install Count
 
-
-> [!div class="mx-imgBorder"]
-> ![Package install attempts by tenant (last 28 days).](media/isv-portal-apppage-graph2.png)
+:::image type="content" source="media/isv-portal-apppage-graph2.png" alt-text="Package install attempts by tenant (last 28 days).":::
 
 ## Installs by environment
 
@@ -61,8 +54,7 @@ When hovering over the graph, the following information is shown:
 1. Environment
 2. Install Count
 
-> [!div class="mx-imgBorder"]
-> ![Package installs by location of tenants.](media/isv-portal-apppage-graph3.png)
+:::image type="content" source="media/isv-portal-apppage-graph3.png" alt-text="Package installs by location of tenants":::
 
 ## Installs by tenant
 
@@ -70,14 +62,13 @@ The column chart shown below displays the package unique names where versions of
 
 When hovering over any item of the graph, the following information is shown:
 
-1. Tenant 
+1. Tenant
 1. Count
-1. Package 
-1. Version 
+1. Package
+1. Version
 1. Environment
 
-> [!div class="mx-imgBorder"]
-> ![Package and version installs by tenant.](media/isv-portal-apppage-graph4.png)
+:::image type="content" source="media/isv-portal-apppage-graph4.png" alt-text="Package and version installs by tenant":::
 
 ## Filtering the app page
 
@@ -85,11 +76,8 @@ ISVs can filter the app page using the filters available. For example, an ISV ca
 
 ### See also
 
-[Introduction to ISV Studio for the Power Platform](isv-app-management.md)  
-[Home page](isv-app-management-homepage.md)<br/>
-[Tenant page](isv-app-management-tenantpage.md)<br/>
-[AppSource checker](isv-app-management-appsource-checker.md)<br/>
-[Connector Certification](isv-app-management-certification.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Introduction to ISV Studio for the Power Platform](index.md)  
+[Home page](home.md)<br/>
+[Tenant page](tenant.md)<br/>
+[AppSource checker](appsource-checker.md)<br/>
+[Connector Certification](connector-certification.md)
