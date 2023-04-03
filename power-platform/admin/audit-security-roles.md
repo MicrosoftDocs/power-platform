@@ -19,7 +19,7 @@ search.app:
 ---
 # Audit security roles
 
-You can audit security roles to better understand changes made to security in your Power Platform environment.
+You can audit security roles to better understand changes made to security roles in your Power Platform environment.
 
 ## Configure auditing for an environment
 
