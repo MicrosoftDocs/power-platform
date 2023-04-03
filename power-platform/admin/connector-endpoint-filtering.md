@@ -55,11 +55,34 @@ After saving your connector endpoint filtering rules and the DLP policy in which
 :::image type="content" source="media/EF_CloudFlow.png" alt-text="DLP error because of endpoint filtering rules.":::
 
 ## Known limitations
-- Endpoint filtering rules for SQL Server and Azure Blob Storage are not enforced if the connections are authenticated with Azure Active Directory.
-- Endpoint filtering rules are not enforced on environment variables, custom inputs and dynamically bound endpoints during runtime. Only static endpoints known and selected when building an app, flow, or chatbot during design time are enforced. In the two screenshots below, a maker has built a cloud flow that defines the SQL server and database inside variables, and then uses those variables as input to the connection definition. Therefore, the endpoint filtering rules are not evaluated and the cloud flow can execute successfully.
+- Endpoint filtering rules are not enforced on environment variables, custom inputs and dynamically bound endpoints during runtime. Only static endpoints known and selected when building an app, flow, or chatbot during design time are enforced. This implies that connector endpoint filtering rules for SQL Server and Azure Blob Storage are not enforced if the connections are authenticated with Azure Active Directory. In the two screenshots below, a maker has built a cloud flow that defines the SQL server and database inside variables, and then uses those variables as input to the connection definition. Therefore, the endpoint filtering rules are not evaluated and the cloud flow can execute successfully.
 
 :::image type="content" source="media/EF_KnownLimitation_1.png" alt-text="Cloud flow uses variables to connect to SQL.":::
 :::image type="content" source="media/EF_KnownLimitation_2.png" alt-text="Cloud flow runs successfully.":::
+
+- Some Power Apps last published before October 1st 2020 need to be re-published for DLP connector action rules and DLP connector endpoint rules to be enforced. The following script enables admins and makers to identify apps that must be re-published to respect these new DLP granular control rules:
+
+```powershell
+Add-PowerAppsAccount
+
+$GranularDLPDate = Get-Date -Date "2020-10-01 00:00:00Z"
+
+ForEach ($app in Get-AdminPowerApp){
+
+    $versionAsDate = [datetime]::Parse($app.LastModifiedTime)
+    
+    $olderApp = $versionAsDate -lt $GranularDLPDate
+
+    $wasBackfilled = $app.Internal.properties.executionRestrictions -ne $null -and $app.Internal.properties.executionRestrictions.dataLossPreventionEvaluationResult -ne $null -and ![string]::IsNullOrEmpty($app.Internal.properties.executionRestrictions.dataLossPreventionEvaluationResult.lastAdvancedBackfillDate) 
+
+    If($($olderApp -and !$wasBackfilled)){
+        Write-Host "App must be republished to be Granular DLP compliant: " $app.AppName " "  $app.Internal.properties.displayName " " $app.Internal.properties.owner.email
+    } 
+    Else{ 
+        Write-Host "App is already Granular DLP compliant: " $app.AppName 
+    }
+}
+``` 
 
 ## Endpoint input formats and examples 
 
