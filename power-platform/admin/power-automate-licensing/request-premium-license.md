@@ -61,7 +61,9 @@ The admin will be notified of incoming licensing requests on the Microsoft 365 H
 
 1. If the organization already has a request process, an admin can continue using their organization’s custom license request process. To learn more, go to [Use your own request process](/microsoft-365/commerce/licenses/manage-license-requests#use-your-own-request-process).
 
-1. If a custom license request process is set, the requestor will get a message from the admin with instructions for using the organization's custom process.  
+1. If a custom license request process is set, the requestor will get a message from the admin with instructions for using the organization's custom process, as in the following example.  
+
+    :::image type="content" source="../media/power-automate-licensing/custom.png" alt-text="Screenshot of the 'Make a license request' screen.":::
 
 To learn more about how to manage all license requests and settings, go to [Manage self-service license requests](/microsoft-365/commerce/licenses/manage-license-requests).
 
