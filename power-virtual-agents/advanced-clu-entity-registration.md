@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # CLU entity registration
 
-This topic defines the datatype mapping between CLU entity and PVA datatypes. The entities are composed of the following boolean, string, and number datatypes.
+This article defines the datatype mapping between CLU entity and PVA datatypes. The entities are composed of the following boolean, string, and number datatypes.
 
 - Choice.Boolean --> `BooleanDatatype`
 - Geography.Location, Regex , List, General.Event, General.Organization, Phone Number, IpAddress, Person.Name, Phone Number. URL --> `StringDatatype`
@@ -27,13 +27,13 @@ This topic defines the datatype mapping between CLU entity and PVA datatypes. Th
 
 ## JSON Schema table
 
-Bot creators can use sample JSON code to register entities that resolve to complex datatypes. You can manually map CLU entities to PVA datatypes by using the following JSON code blocks. 
+Bot creators can use sample JSON code to register [entities](advanced-entities-slot-filling.md). Entities resolve to complex datatypes. You can manually map CLU entities to PVA datatypes by using the following JSON code blocks. 
 
 To register the following data types, copy/paste the relative code block listed in the table by clicking the **Copy code** button.
 
 
-| Datatype      | Code        |
-|---------------|-------------|
+| Datatype      | Code                                                                                                    |
+|---------------|--------------------------------------------------------------------------------------------------------|
 | Age           | `{<br>    "unit": "Year",<br>    "value": 10<br> }`|
 | Currency      |`{<br>    "unit": "Egyptian pound",<br>    "ISO4217": "EGP",<br>    "value": 30<br> }`|
 | Date          |`{<br>    "dateTimeSubKind": "Date",<br>    "timex": "1995-01-01",<br>    "value": "1995-01-01"<br> }`|
