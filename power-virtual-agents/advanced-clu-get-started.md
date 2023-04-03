@@ -25,12 +25,12 @@ Below are the steps to create a bot using an existing CLU model:
 1. Map CLU intents and entities
     1. [Use the wizard to automatically import CLU intents and entities](#map-clu-intents-and-entities-to-pva-topics)
     1. [Manually map intents and entities](#manually-map-clu-entities-to-pva-pre-built-data-types)
-1. Map a CLU model to PVA data types
-1. Create an “Analyze Text” system topic
-1. Trigger a new PVA topic with a CLU-derived intent
-1. Slot-fill an external CLU entity inside a PVA question node
-1. Bind CLU Intents to PVA topics using bulk JSON format import
-1. Troubleshooting tips: Error handling and validations
+1. Map a CLU model to PVA data types (TBD)
+1. Create an “Analyze Text” system topic (TBD)
+1. Trigger a new PVA topic with a CLU-derived intent (TBD)
+1. Slot-fill an external CLU entity inside a PVA question node (TBD)
+1. Bind CLU Intents to PVA topics using bulk JSON format import (TBD)
+1. Troubleshooting tips: Error handling and validations (TBD)
 
 ## Prepare your environment
 
@@ -60,11 +60,11 @@ Below are the steps to create a bot using an existing CLU model:
 1. Switch back to Power Virtual Agents. Changing back to the NLU environment in PVA will remove the "Analyze text" system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
     :::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Power Virtual Agents NLU." border="false"::: 
 
-Now that you’ve completed preparing your environment, you’re ready to **Add topics and CLU intents from model data**. Now follow the procedure below, so you can upload your model data file and map CLU intents to your PVA bot.
+Now that you’ve completed preparing your environment, you’re ready to **Add topics and CLU intents from model data**. 
+
+Next, follow the procedure below, so you can upload your model data file and map CLU intents to your PVA bot.
 
 ## Map CLU intents and entities to PVA topics
-
-**To automatically map intents and entities using the CLU wizard:**
 
 You create a new bot by mapping existing topics to CLU intents using the **Map intents and entities** wizard. With the wizard, your bot can utilize existing intents from your CLU model rather than trigger phrases to determine which topic to map to. 
 
@@ -77,8 +77,8 @@ You create a new bot by mapping existing topics to CLU intents using the **Map i
 1.	Review your selections, then select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image9.png" alt-text="Review your selection and then select Save." border="false"::: 
 
-1.	(Optional) For those intents that are not mapped to an existing PVA topic, you can create new topics for each intent. 
-•	In the wizard, you’ll see a list of CLU intents that haven’t been mapped to a PVA topic. In the field **Create a new topic**, type a name for each of the topics that you want to create, and then select **Next**.  
+1.	(Optional) For those intents that are not mapped to an existing PVA topic, you can create new topics for each intent. \
+    In the wizard, you’ll see a list of CLU intents that haven’t been mapped to a PVA topic. In the field **Create a new topic**, type a name for each of the topics that you want to create, and then select **Next**.  
     :::image type="content" source="media/advanced-clu-integration/clu-image10.png" alt-text="Create new topics for CLU intents." border="false"::: 
 
 1.	Once all CLU intents and entities are mapped to PVA topics, select **Done**.
@@ -91,6 +91,7 @@ Once you’ve competed this procedure, your bot topics now appear in the PVA **T
 ## Manually map CLU entities to PVA pre-built data types
 
 1.	From the left navigation, select **Entities**.
+
     :::image type="content" source="media/advanced-clu-integration/clu-image13.png" alt-text="Choose Entities from the left navigation." border="false"::: 
 
 1. Select **New entity** on the **Entities** page.
