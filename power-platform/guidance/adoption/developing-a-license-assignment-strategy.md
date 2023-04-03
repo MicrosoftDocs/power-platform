@@ -1,13 +1,13 @@
 ---
 title: "License assignment strategies  - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance for license assignment."
-author: manuelap-msft
+author: stjeffer
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/31/2020
 ms.subservice: guidance
-ms.author: mapichle
+ms.author: stjeffer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
