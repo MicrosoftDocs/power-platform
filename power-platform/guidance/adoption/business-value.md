@@ -1,5 +1,5 @@
 ---
-title: "Measuring business value of Power Platform solutions - Microsoft Power Platform | MicrosoftDocs"
+title: "Measure business value of Power Platform solutions - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance for measuring the business value of Power Platform solutions."
 author: stjeffer
 manager: devkeydet
@@ -24,7 +24,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Measuring business value of Power Platform solutions
+# Measure business value of Power Platform solutions
 
 Measuring business value in Power Platform is a critical aspect of ensuring success and return on investment. Power Platform offers organizations a low-code/no-code platform for building applications, automating tasks, streamlining business processes, and infusing AI into your solutions. These capabilities can bring significant benefits and it's important to track and measure the value to the business that the platform is delivering.
 
