@@ -1,6 +1,6 @@
 ---
 title: "CLU entity registration"
-description: "Get started creating bots in Power Virtual Agents bots with CLU entity registration"
+description: "Add language understanding entities to a Power Virtual Agents bot"
 keywords: "Cognitive language understanding, PVA, CLU, CLU models"
 ms.date: 4/03/2023
 
@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # CLU entity registration
 
-This article defines the datatype mapping between CLU entity and PVA datatypes. The entities are composed of the following boolean, string, and number datatypes.
+This topic discusses adding language understanding entities to a Power Virtual Agents bot. The entities are composed of the following boolean, string, and number datatypes.
 
 - Choice.Boolean --> `BooleanDatatype`
 - Geography.Location, Regex , List, General.Event, General.Organization, Phone Number, IpAddress, Person.Name, Phone Number. URL --> `StringDatatype`
@@ -29,17 +29,82 @@ This article defines the datatype mapping between CLU entity and PVA datatypes. 
 
 Bot creators can use sample JSON code to register [entities](advanced-entities-slot-filling.md). Entities resolve to complex datatypes. You can manually map CLU entities to PVA datatypes by using the following JSON code blocks. 
 
-To register the following data types, copy/paste the relative code block listed in the table by clicking the **Copy code** button.
+To register the following datatypes, copy/paste the relative code block listed below by selecting **Copy code**.
 
+### Age
 
-| Datatype      | Code                                                                                                    |
-|---------------|--------------------------------------------------------------------------------------------------------|
-| Age           | `{<br>    "unit": "Year",<br>    "value": 10<br> }`|
-| Currency      |`{<br>    "unit": "Egyptian pound",<br>    "ISO4217": "EGP",<br>    "value": 30<br> }`|
-| Date          |`{<br>    "dateTimeSubKind": "Date",<br>    "timex": "1995-01-01",<br>    "value": "1995-01-01"<br> }`|
-| DateTime      |`{<br>    "dateTimeSubKind": "Date",<br>    "timex": "XXXX-04-12",<br>    "value": "2022-04-12"<br> }`|
-| Temperature   |`{<br>    "unit": "Fahrenheit",<br>    "value": 88<br> }`|
-| Ordinal       |`{<br>    "offset": "3",<br>    "relativeTo": "Start",<br>    "value": "3"<br> }`|
-| Dimensions    |`{<br>    "unit": "KilometersPerHour",<br>    "value": 24<br> }`|
-| DatetimeRange |`{<br>    "duration": "PT2702H",<br>     "begin": "2022-01-03 06:00:00",<br>    "end": "2022-04-25 20:00:00"<br> }`|
+```json
+{
+    "unit": "Year",
+    "value": 10
+}
+```
 
+### Currency
+
+```json
+{
+    "unit": "Egyptian pound",
+    "ISO4217": "EGP",
+    "value": 30
+}
+```
+
+### Date
+
+```json
+{
+    "dateTimeSubKind": "Date",
+    "timex": "1995-01-01",
+    "value": "1995-01-01"
+}
+```
+
+### DateTime
+
+```json
+{
+    "dateTimeSubKind": "Date",
+    "timex": "XXXX-04-12",
+    "value": "2022-04-12"
+}
+```
+
+### Temperature
+
+```json 
+{
+    "unit": "Fahrenheit",
+    "value": 88
+}
+```
+
+### Ordinal
+
+```json
+{
+    "offset": "3",
+    "relativeTo": "Start",
+    "value": "3"
+}
+```
+
+### Dimensions
+
+```json
+{
+    "unit": "KilometersPerHour",
+    "value": 24
+}
+```
+
+### DatetimeRange
+
+```json
+{
+    "duration": "PT2702H",
+    "begin": "2022-01-03 06:00:00",
+    "end": "2022-04-25 20:00:00"
+}
+```
+ 

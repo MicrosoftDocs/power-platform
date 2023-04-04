@@ -14,10 +14,9 @@ ms.collection: virtual-agent
 
 ---
 
-# Get started with CLU integration
+# Get started with language understanding
 
-This topic includes step-by-step procedures you need to get started with CLU integration.
-Let’s get started.
+This topic includes step-by-step procedures you need to get started with [CLU integration](advanced-clu-integration.md). Let’s get started.
 
 Below are the steps to create a bot using an existing CLU model:
 
@@ -25,11 +24,6 @@ Below are the steps to create a bot using an existing CLU model:
 1. Map CLU intents and entities
     1. [Use the wizard to automatically import CLU intents and entities](#map-clu-intents-and-entities-to-pva-topics)
     1. [Manually map intents and entities](#manually-map-clu-entities-to-pva-pre-built-data-types)
-1. Map a CLU model to PVA data types (TBD)
-1. Create an “Analyze Text” system topic (TBD)
-1. Trigger a new PVA topic with a CLU-derived intent (TBD)
-1. Slot-fill an external CLU entity inside a PVA question node (TBD)
-1. Bind CLU Intents to PVA topics using bulk JSON format import (TBD)
 1. Troubleshooting tips: Error handling and validations (TBD)
 
 ## Prepare your environment
@@ -107,13 +101,7 @@ For more information, see [Entity registration](advanced-clu-entity-registration
 
 [Perhaps add a conceptual image would be good to shows users what an external JSON file with entities and how they map to PVA entities?]
 
-## Related topics
 
-[Peter, do we need these additional procedures for GA?]
+## Troubleshooting tips: Error handling and validations
 
-- Create an “Analyze Text” system topic
-- Trigger a new PVA topic with a CLU-derived intent
-- Slot-fill an external CLU entity inside a PVA question node
-- Bind CLU Intents to PVA topics using bulk JSON format import
-- Troubleshooting tips: Error handling and validations
-
+TBD 
