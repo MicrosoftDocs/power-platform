@@ -73,7 +73,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
     Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
     
     > [!NOTE]
-    > We have made changes to the product listing when creating a New support request in the Help + support page within the Power Platform admin center. The following products, which were previously listed as problem subtypes under the Dynamics 365 Customer Engagement product, are now available in the primary product selection menu:
+    > We've made changes to the product listing when creating a new support request. The following products, which were previously listed as problem sub-types under the Dynamics 365 Customer Engagement product, are now available in the primary product selection menu:
     > 
     > - Dynamics 365 Sales
     > - Dynamics 365 Marketing
@@ -82,7 +82,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
     > - Microsoft Dataverse
     > - Power Platform Administration
     > 
-    > This change will not have any functional impact on your licenses.
+    > This change won't have any impact on your licenses.
 
    > [!div class="mx-imgBorder"] 
    > ![See solutions.](media/create-support-ticket.png "See solutions")
