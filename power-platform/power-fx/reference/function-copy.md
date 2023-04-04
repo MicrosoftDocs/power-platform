@@ -15,7 +15,7 @@ search.app:
 ---
 # Copy function in Power Apps
 
-Copies text to the clipboard on the device where the app is running
+Copies text to the clipboard on the device where the app is running.
 
 ## Description
 
