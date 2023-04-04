@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 04/04/2023
 search.audienceType: 
   - admin
 search.app:
@@ -23,12 +23,14 @@ To control data access, you must set up an organizational structure that both pr
 
 You can assign security roles using the new, modern UI, or using the the legacy UI:
 
-- [Security roles and the new, modern UI (preview)](security-roles-privileges.md#security-roles-and-the-new-modern-ui-preview-feature)
+- [Security roles and the new, modern UI (preview)](security-roles-privileges.md#security-roles-and-the-new-modern-ui-preview)
 - [Security roels and the legacy UI](security-roles-privileges.md#security-roles-and-the-legacy-ui)
 
 ## Security roles and the new, modern UI (preview)
 > [!Important]
 > [!include [preview](../includes/cc-preview-features-definition.md)]
+> 
+> This capability is in process of rolling out, and may not be available in your region yet.
 
 A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles.
   
@@ -56,8 +58,6 @@ Each security role consists of the following privilege types:
 - **Privacy-related privileges**: These privileges give a user permission to perform tasks where data is integrated or downloaded or exported outside of Dataverse, such as exporting data to Microsoft Excel or printing. More inforamtion: [Privacy-related privileges](privacy-related-privileges.md)
 
 Each set of privilege types are separated by a tab. For each tab, you can filter the view by all privileges, assigned privileges or unassigned privileges for the selected security role.
-
-:::image type="content" source="security/media/privilege-types.png" alt-text="Select the privilege types you want to view.":::
 
 #### Search by table name or table privilege name
 
@@ -122,8 +122,6 @@ The following table lists the levels of access in the app, starting with the lev
 
 For each table, select the appropriate type for each privilege. Select **Save** when you have completed your updates.
 
-:::image type="content" source="security/media/permission-level.png" alt-text="Selecting the permission level for each privilege type of a table.":::
-
 ### Copy table permissions
 
 Updating settings for each table can be very time-consuming and tedious. To expedite the process, you can select a table and choose **Copy table permissions**, then search and choose the tables to which you want to replicate the permissions. Note that this will overwrite existing configuration. Select **Save** to update the permissions.
@@ -155,7 +153,7 @@ The following permission setting groups are available:
 | Collaborate            | Allows end users to see all records, but they can only edit their own records.|
 | Private                | Allows end users to only view and edit their own data. |
 | Reference              | Provides a read-only view of data for end users. |
-| Custom                 | Individual permission settings for a table. Also indicates that permission settings have been changed from the default value.  |
+| Custom                 | Indicates that permission settings have been changed from the default value.  |
 
 To set or update a table's permission setting, select the table and choose **Permission Settings** in the command bar or by selecting the ellipses (**…**) in the row.
 
