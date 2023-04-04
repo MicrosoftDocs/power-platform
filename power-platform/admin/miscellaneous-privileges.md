@@ -27,6 +27,12 @@ You can specify privileges for each security role using the [new](security-roles
 
 Miscellaneous privileges in the new, modern UI are listed alphabetically on the **Miscellaneous privileges** tab of the security role editor.
 
+> [!Important]
+> [!include [preview](../includes/cc-preview-features-definition.md)]
+> 
+> This capability is in process of rolling out, and may not be available in your region yet.
+
+
 | Miscellaneous privilege                          | Privilege name            | More information       |
 |--------------------------------|----------------------|------------|
 | Act on Behalf of Another User                                    | prvActOnBehalfOfAnotherUser               | [<u>Impersonate another user</u>](/powerapps/developer/common-data-service/impersonate-another-user)                                             |
