@@ -73,7 +73,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
     Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
     
     > [!NOTE]
-    > We've made changes to the product listing when creating a new support request. The following products, which were previously listed as problem sub-types under the Dynamics 365 Customer Engagement product, are now available in the primary product selection menu:
+    > We've made changes to the product listing when creating a new support request. The following products are now available from the **Product** menu:
     > 
     > - Dynamics 365 Sales
     > - Dynamics 365 Marketing
