@@ -179,7 +179,7 @@ This guidance is designed to help you better understand the various measures tha
 Learn more about measuring business value:
 
 - [How Microsoft measures business value](https://youtu.be/cOkJI_e0Ni0)
-- [Defining the value of a business problem](https://learn.microsoft.com/power-apps/guidance/planning/defining-business-value)
+- [Defining the value of a business problem](/power-apps/guidance/planning/defining-business-value)
 - [Total Economic Impact of Power Platform Premium Capabilities (Forrester)](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html?LCID=EN-US)
 
 Learn more about customers realizing the value of Power Platform solutions:
