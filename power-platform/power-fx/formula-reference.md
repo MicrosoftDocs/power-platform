@@ -107,7 +107,7 @@ Other elements include:
 
 **[Connection](reference/signals.md)** – Returns information about your network connection.
 
-**[Copy](reference/function-copy.md)** - Copies text to the clipboard from the device where the app is running.
+**[Copy](reference/function-copy.md)** - Copies text to the clipboard on the device where the app is running.
 
 **[Count](reference/function-table-counts.md)** – Counts table records that contain numbers.
 
