@@ -16,9 +16,9 @@ ms.collection: virtual-agent
 
 # Automate bot creation with CLU integration
 
-Cognitive language understanding (CLU) model integration with Power Virtual Agents lets users import Azure CLU models directly into PVA. For bots created with this capability, bot creators can now access existing CLU model intents and entities without having to directly access the model in [Azure Language Studio](https://aka.ms/languageStudio). Azure Language Studio is a cloud-based service from Azure Cognitive Service for Language, providing natural language processing (NLP) features for understanding and analyzing conversational text. For more information, see [Conversational Language Understanding](https://learn.microsoft.com/azure/cognitive-services/language-service/conversational-language-understanding/overview).
+Cognitive language understanding (CLU) model integration lets users import Azure CLU models directly into PVA bots. For bots created with this capability, bot creators can now access existing CLU model intents and entities without having to directly access the model in [Azure Language Studio](https://aka.ms/languageStudio). Azure Language Studio is a cloud-based service from Azure Cognitive Service for Language, providing users with natural language processing (NLP) features for analyzing conversational text. For more information, see [Conversational Language Understanding](https://learn.microsoft.com/azure/cognitive-services/language-service/conversational-language-understanding/overview).
 
-With this new capability, PVA users can import CLU models directly into the PVA authoring canvas. Entities imported from the CLU model appear in PVA on the Entities page. Then, bot creators can add new question nodes in a PVA topic and select available entities and intents from the imported CLU model. CLU entities are bound to equivalent PVA objects. For each entity, users can specify the name, the datatype, and the JSON structure of a custom datatype, if required. 
+With this new capability, PVA users can now import CLU models directly into the PVA authoring canvas. Entities imported from the CLU model appear in PVA on the Entities page. Bot creators can add new question nodes in a PVA topic and select available entities and intents from the imported CLU model. CLU entities are bound to equivalent PVA objects. Users specify the name, the datatype, and the JSON structure of a custom datatype, if necessary for each entity. 
 
 > [!NOTE]
 > For existing bots that you want to take advantage of CLU integration, you'll need to import the bot into PVA (unless it’s been previously created in PVA), then manually or bulk update the bot’s trigger phrases to bind each topic to a corresponding CLU intent. 
@@ -35,7 +35,7 @@ With this new capability, PVA users can import CLU models directly into the PVA 
 
 ### CLU connectors
 
-A *connector* is a wrapper around an API that allows the Azure Cognitive Service services to talk to Power Virtual Agents. It provides a way for users to connect their accounts and leverage a set of prebuilt actions and triggers to build their apps and workflows. For more information, see [Azure Cognitive Service for Language - Connectors](https://learn.microsoft.com/connectors/cognitiveservicestextanalytics). 
+A *connector* is a wrapper around an API that allows the Azure Cognitive Service services to talk to Power Virtual Agents. It provides a way for users to connect their accounts and apply a set of prebuilt actions and triggers to build their apps and workflows. For more information, see [Azure Cognitive Service for Language - Connectors](https://learn.microsoft.com/connectors/cognitiveservicestextanalytics). 
 
 Power Platform connectors allow Microsoft services to talk to the CLU API. For more information, see [Power Platform and Azure Logic Apps connectors documentation - Connectors](https://learn.microsoft.com/connectors). Although you can import any connector types, PVA doesn’t currently validate connectors. 
 
@@ -43,7 +43,7 @@ Power Platform connectors allow Microsoft services to talk to the CLU API. For m
 
 A [connection](https://learn.microsoft.com/power-automate/add-manage-connections) is a stored [authentication credential](https://learn.microsoft.com/connectors/custom-connectors/connection-parameters#authentication-types) for a connector, for example OAuth credentials for the SharePoint connector. A connection reference is a solution component that contains a reference to a connection about a specific connector.
 
-PVA connections are environment specific. When you import a bot, you need to set up a connection for it. There is a standard way of achieving this in Power Platform by way of a Connection reference. For more information, see [Connection references in solutions - Power Apps[(https://learn.microsoft.com/power-apps/maker/data-platform/create-connection-reference). 
+PVA connections are environment specific. When you import a bot, you need to set up a connection for it. We offer a standard way of achieving this capability in Power Platform by way of a Connection reference. For more information, see [Connection references in solutions - Power Apps[(https://learn.microsoft.com/power-apps/maker/data-platform/create-connection-reference). 
 
 
 ### External recognizers 
