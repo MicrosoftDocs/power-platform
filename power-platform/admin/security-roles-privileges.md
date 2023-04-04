@@ -26,7 +26,7 @@ You can assign security roles using the new, modern UI, or using the the legacy 
 - [Security roles and the new, modern UI (preview feature)](security-roles-privileges.md#security-roles-and-the-new-modern-ui-preview-feature)
 - [Security roels and the legacy UI](security-roles-privileges.md#security-roles-and-the-legacy-ui)
 
-## Security roles and the new, modern UI (preview feature)
+## Security roles and the new, modern UI (preview)
 > [!Important]
 > [!include [preview](../includes/cc-preview-features-definition.md)]
 
@@ -39,7 +39,7 @@ Each security role consists of record-level privileges and task-based privileges
 3.  Select the check mark next to the environment you want to use.
 4.  Select **Settings**.
 5.  Expand **Users + Permissions**.
-6.  Select **Security roles**. A list of the existing security roles in your environment is displayed.
+6.  Select **Security roles (Preview)**. A list of the existing security roles in your environment is displayed.
 
 ### Define the privileges and properties of a security role
 You have the option to enable or disable the **Team members inherit role** option. 
@@ -53,7 +53,7 @@ Each security role consists of the following privilege types:
 
 - **Miscellaneous privileges**: These task-based privileges give a user permission to perform specific, miscellaneous (non-record) tasks, such as publish articles or activate business rules. More information: [Miscellaneous privileges](miscellaneous-privileges.md)
 
-- **Privacy-related privileges**: These privileges give a user permission to perform tasks where data is integrated or downloaded or exported outside of Dataverse, such as exporting data to Microsoft Excel or printing.
+- **Privacy-related privileges**: These privileges give a user permission to perform tasks where data is integrated or downloaded or exported outside of Dataverse, such as exporting data to Microsoft Excel or printing. More inforamtion: [Privacy-related privileges](privacy-related-privileges.md)
 
 Each set of privilege types are separated by a tab. For each tab, you can filter the view by all privileges, assigned privileges or unassigned privileges for the selected security role.
 
