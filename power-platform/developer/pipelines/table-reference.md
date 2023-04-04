@@ -1,8 +1,7 @@
 ---
-title: "Pipeline (preview) table reference | Microsoft Learn"
+title: "Pipeline table reference | Microsoft Learn"
 description: "Includes schema information for tables used in the pipeline solution."
-ms.date: 01/06/2022
-ms.service: powerapps
+ms.date: 03/01/2023
 ms.topic: reference
 author: JimDaly
 ms.author: jdaly
@@ -12,14 +11,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Pipeline (preview) table reference
+# Pipeline table reference
 
-This article contains the table definitions used in the Pipeline (preview) solution. More information: [Overview of pipelines in Power Platform](../../alm/pipelines.md)
-
-> [!NOTE]
->
-> - This is a preview feature and the table definitions might change.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
+This article contains the table definitions used in the Pipeline solution. More information: [Overview of pipelines in Power Platform](../../alm/pipelines.md)
 
 :::image type="content" source="media/pipeline-tables.png" alt-text="Diagram showing relationship between pipeline tables":::
 

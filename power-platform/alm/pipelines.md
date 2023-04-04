@@ -1,11 +1,11 @@
 ---
-title: "Overview of pipelines in Power Platform (preview)"
+title: "Overview of pipelines in Power Platform"
 description: "Overview of pipelines in Power Platform and frequently asked questions."
 author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 01/23/2023
+ms.date: 02/28/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
 search.audienceType: 
@@ -14,19 +14,11 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Overview of pipelines in Power Platform (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Overview of pipelines in Power Platform
 
 Pipelines in Power Platform aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service in a manner that's more approachable for all makers, admins, and developers.
 
 :::image type="content" source="media/deployment-pipelines.png" alt-text="Example of the deployment Pipelines feature":::
-
-> [!IMPORTANT]
->
-> - This is a preview feature. More information: [Model-driven apps and app management](/power-apps/maker/powerapps-preview-program#model-driven-apps-and-app-management)
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 Pipelines significantly reduce the effort and domain knowledge previously required to realize the ROI from adopting healthy, automated ALM processes within your team or organization.
 
@@ -76,6 +68,11 @@ Professional developers are more productive with pipelines now handling the comp
 ### What do pipelines deploy?
 
 Pipelines deploy solutions as well as configuration for the target environment such as connections, connection references, and environment variables. Any Power Platform customization contained in your solution can be deployed using pipelines. Pipelines, or solutions in general, don't contain data stored within Dataverse tables.
+
+   > [!IMPORTANT]
+   >
+   > Power BI Dashboards (preview) and Power BI Datasets (preview) are not currently supported in pipelines. 
+   >
 
 ### Are standalone licenses required to use pipelines?
 
@@ -154,7 +151,7 @@ Currently, pipelines don't show these details. However, you can view XML diffs i
 
 ### Should my host environment be the same as where I installed the COE toolkit?
 
-This is possible, but we don't recommend you combine preview features with production workloads.
+This is a valid configuration and should be evaluated based on the needs and policies within your organization.
 
 ### Can I deploy unmanaged solutions?
 
@@ -187,6 +184,6 @@ This is not supported.
 
 ## Next steps
 
-[Set up pipelines (preview)](set-up-pipelines.md)
+[Set up pipelines](set-up-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Distinct function in Power Apps
@@ -24,7 +25,7 @@ Summarizes [records](/power-apps/maker/canvas-apps/working-with-tables#records) 
 
 ## Description
 
-The **Distinct** function evaluates a formula across each record of a table and returns a one-column table of the results with duplicate values removed. The name of the column is **Result**.
+The **Distinct** function evaluates a formula across each record of a table and returns a one-column table of the results with duplicate values removed. The name of the column is **Value**.
 
 [!INCLUDE [record-scope](../../includes/record-scope.md)]
 
@@ -54,7 +55,7 @@ The **Distinct** function evaluates a formula across each record of a table and 
 
 1. Select the button while holding down the Alt key.
 
-   The formula is evaluatd and the **CityPopulations** collection is created which you can show by selecting **CityPopulations** in the formula bar:
+   The formula is evaluated and the **CityPopulations** collection is created which you can show by selecting **CityPopulations** in the formula bar:
 
     > [!div class="mx-imgBorder"] 
     > ![CityPopulations collection shown in result view.](media/function-distinct/citypopulations-create.png)
@@ -70,7 +71,7 @@ The **Distinct** function evaluates a formula across each record of a table and 
     > [!div class="mx-imgBorder"] 
     > ![Output from Distinct function shown in result view.](media/function-distinct/citypopulations-distinct.png)
 
-1. Use the **Edit fields** link in the data table's properties pane to add the **Result** column:
+1. Use the **Edit fields** link in the data table's properties pane to add the **Value** column:
 
     > [!div class="mx-imgBorder"] 
     > ![Output from Distinct function shown in data table.](media/function-distinct/citypopulations-datatable.png)
@@ -78,7 +79,7 @@ The **Distinct** function evaluates a formula across each record of a table and 
 1. Insert a [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control, and set its **Text** property to the formula:
 
    ```powerapps-dot
-   First( Sort( Distinct( CityPopulations, Country ), Result ) ).Result
+   First( Sort( Distinct( CityPopulations, Country ), Value ) ).Value
    ```
 
    This formula sorts the results from **Distinct** with the [**Sort**](function-sort.md) function, takes the first record from the resulting table with the [**First**](function-first-last.md) function, and extracts the **Result** field to obtain just the country name.

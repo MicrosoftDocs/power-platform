@@ -4,9 +4,8 @@ description: Learn how to manage your encryption key.
 author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
-ms.service: powerapps
 ms.topic: how-to
-ms.date: 02/17/2023
+ms.date: 03/20/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key (preview)
@@ -19,8 +18,9 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 
 > [!IMPORTANT]
 > This is a preview feature.
-> 
+>
 > These encryption key operations are available with this release of customer-managed key (CMK):
+>
 > - Create a RSA (RSA-HSM) key from your Azure Key vault.
 > - Create a Power Platform enterprise policy for your key.
 > - Grant the Power Platform enterprise policy permission to access your key vault.
@@ -32,21 +32,15 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > - Lock CMK environments by revoking CMK key vault and/or key permissions.
 > - Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
 >
-> This feature is made available following this schedule:
+> This feature will be available in all public cloud regions March 2023.
 >
-> |Est. public preview availability  |Regions  |
-> |---------|---------|
-> | March 2023        | Canada, France, Germany, India, Norway, South Africa, South America, South Korea, Switzerland, Australia        |
-> |  May 2023       |  United Arab Emirates, Japan, Asia-Pacific, Great Britain, Oceania, Asia Pacific, Europe       |
-> | July 2023     |  North America       |
->
-> There's no additional Power Platform licensing requirement during this preview.
-
-All your customer data stored in the following services can be encrypted with customer-managed key:
+> There's no additional Power Platform licensing requirement during this preview. When this feature becomes generally available, there will be a licensing requirement.
+> 
+Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
 
 - Dataverse (Custom solutions and Microsoft services)
 - Chat for Dynamics 365
-- Dynamics 365 Sales
+- [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
 - Dynamics 365 Customer Service
 - Dynamics 365 Customer Insights
 - Dynamics 365 Omnichannel
@@ -64,7 +58,7 @@ All your customer data stored in the following services can be encrypted with cu
    >
    > Contact a representative for services not listed above for information about customer-managed key support.
 
-Environments with finance and operations apps where Power Platform integration is enabled can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Enable the Microsoft Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
+Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys)
 
 :::image type="content" source="media/cmk-power-platform-diagram.png" alt-text="Customer-managed encryption key in the Power Platform":::
 
@@ -151,7 +145,7 @@ In Azure, perform the following steps:
    > [!IMPORTANT]
    >
    > - To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings. More information: [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview) More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
-   > - During preview, your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet. 
+   > - During preview, your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet.
 
 #### Create a key in the key vault
 
@@ -164,7 +158,7 @@ In Azure, perform the following steps:
    1. If you made changes, select **Save**.
 
    :::image type="content" source="media/cmk-key-vault-purge-protect.png" alt-text="Enable purge protection on the key vault":::
-1. Create or import a key that has these properties: 
+1. Create or import a key that has these properties:
    1. On the **Key Vault** properties pages, select **Keys**.
    1. Select **Generate/Import**.
    1. On the **Create a key** screen set the following values, and then select **Create**.
@@ -280,7 +274,7 @@ Once the enterprise policy is created, the key vault administrator grants the en
 1. Select the **Access policies** tab, and then select **+ Add Access Policy**.
 1. Next to **Select principal**, select **None selected**.
 1. In the right **Principal** pane, enter the enterprise policy name, and then **Select** it.
-1. In the **Add access policy** screen, select the **Key permissions** dropdown list. Then, select these options: 
+1. In the **Add access policy** screen, select the **Key permissions** dropdown list. Then, select these options:
    - **Get**
    - **Unwrap key**
    - **Wrap key**
@@ -332,6 +326,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Select **Save**, and then select **Confirm**.
 
 > [!IMPORTANT]
+>
 > - The environment is disabled temporarily during this process and re-enabled to allow users to access while the encryption process continues. It can take up to a day to complete the encryption process.
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
 

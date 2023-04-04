@@ -2,10 +2,10 @@
 title: Use solution checker in Managed Environments (preview)
 description: Learn about using solution checker to automatically run security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 12/06/2022
+ms.date: 03/20/2023
 author: sidhartg
 ms.author: sidhartg
-ms.reviewer: Kumarvivek
+ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: 
 search.audienceType:
@@ -50,6 +50,13 @@ Select one of the following settings:
 
 When the solution checker enforcement is turned on, all solutions should be validated explicitly using the solution checker in the source environment before importing into a target environment. Without this step, the verification of solutions will fail and in the **Block** mode, solution imports will be blocked.
 
+### Considerations
+- Solution checker must be run with the solution checker ruleset. The easiest ways to do this are:
+  - Run solution checker in the [maker portal](/power-apps/maker/data-platform/use-powerapps-checker) where the solution checker ruleset is used.
+  - Use [pac solution check](../developer/cli/reference/solution.md#pac-solution-check) where the solution checker ruleset is used by default.
+- Solution checker must be run within a 90 day window of the import.
+- When invoking solution checker, do not pass any file exclusions or rule overrides. These may be supported for solution checker enforcement in the future.
+
 ## Email messages to the admin
 
 When the validation mode is set to **Warn** or **Block**, Power Platform admins will receive summary emails when a solution is imported or blocked. The contents of the email differ depending on the way solution was checked.
@@ -57,6 +64,12 @@ When the validation mode is set to **Warn** or **Block**, Power Platform admins 
 Solutions checked from Power Apps [(make.powerapps.com](https://make.powerapps.com)) will have the results stored in the source environment. When this solution is imported into an environment, admins of this environment will get a link to these results in the summary email.
 
 Solutions checked from the [Power Platform Build Tools](/power-platform/alm/devops-build-tools) will have the results returned as a downloadable file of the Power Apps Checker build task. When this solution is imported into an environment, environment admins will only be able to see the count of issues in the solution in the summary email. The summary email in this case won't have a link to the results.  
+
+### Suppress validation emails
+
+By default, emails are sent when a solution fails validation for medium and above severities. When the checkbox is selected, emails will not be sent in warn mode. Emails will not be sent in block mode, as well, except for critical violations which block solution import.
+
+:::image type="content" source="media/managed-environment-solution-checker-checkbox.png" alt-text="Screenshot of the solution checker email checkbox.":::
 
 ### See also
 
