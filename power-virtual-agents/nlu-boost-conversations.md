@@ -181,7 +181,13 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 During this preview, you won't be able to publish bots that have **Boost conversations** enabled. 
 
-If you'd like to publish a bot that has **Boost conversations** enabled, you'll need to ask your admin to start a support request. We'll review your request and get in touch with your admin. 
+If you'd like to publish a bot that has **Boost conversations** enabled, you'll need to ask your admin to enable it for your tenant in the **Power Platform admin center**. 
+
+
+:::image type="content" source="media/nlu-gpt/nlu-boost-conversation.jpg" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
+
+
+If your admin wants to enable it only for some environments instead of your tenant, they can start a support request. We'll review your request and get in touch with your admin.
 
 ### Quotas
 
