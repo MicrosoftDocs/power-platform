@@ -18,14 +18,15 @@ ms.collection: virtual-agent
 
 This article discusses adding language understanding entities to a Power Virtual Agents bot. The entities are composed of the following boolean, string, and number datatypes.
 
-- Choice.Boolean --> `BooleanDatatype`
-- Geography.Location, Regex , List, General.Event, General.Organization, Phone Number, IpAddress, Person.Name, Phone Number, URL --> `StringDatatype`
-- Number -> `NumberDatatype`
+
+- BooleanDatatype: `Choice.Boolean`
+- StringDatatype: `Geography.Location, Regex , List, General.Event, General.Organization, Phone Number, IpAddress, Person.Name, Phone Number, URL`
+- NumberDatatype: `Number`
 
 > [!NOTE] 
 > Composite entities (entities with multiple components) map to the `StringDataype`. 
 
-## JSON Schema table
+## Schema table
 
 Bot creators can use sample JSON code to register [entities](advanced-entities-slot-filling.md). Entities resolve to complex datatypes. You can manually map CLU entities to PVA datatypes by using the following JSON code blocks. 
 
