@@ -168,6 +168,8 @@
             href: reference/function-guid.md
           - name: HashTags
             href: reference/function-hashtags.md
+          - name: Host
+            href: reference/object-host.md
           - name: Hour
             href: reference/function-datetime-parts.md
           - name: Identifiers
