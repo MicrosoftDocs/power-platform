@@ -44,10 +44,11 @@ Each security role consists of record-level privileges and task-based privileges
 6.  Select **Security roles (Preview)**. A list of the existing security roles in your environment is displayed.
 
 ### Define the privileges and properties of a security role
-You have the option to enable or disable the **Team members inherit role** option. 
+You can set the **Member's privilege inheritance** option to:
 
-- If this option is **enabled** and the role is assigned to a team, all team members will inherit all the privileges associated with this role. For team members who do not have user privileges of their own, they can only create records with the team as the owner and they have access to records owned by the Team when Basic access level for Create and Read were given.
-- If this option is **not enabled**, a user is granted privileges directly when a security role is assigned to the user. A user can create and has access to records created and owned by the user when Basic access level for Create and Read were given. This is the default setting for new security roles.
+- **Team privileges only**: User is granted these privileges as member of the team. For team members who do not have user privileges of their own, they can only create records with the team as the owner and they have access to records owned by the Team when **User** access level for Create and Read privileges were given.
+
+- **Direct User (Basic) access level and Team privileges**:  User is granted these privileges directly when a security role is assigned to the user. A user can create and have access to records created/owned by the user when the **User** access level for Create and Read privileges were given. This is the default setting for new security roles.
 
 Each security role consists of the following privilege types:
 
