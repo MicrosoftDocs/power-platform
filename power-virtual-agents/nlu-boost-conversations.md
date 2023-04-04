@@ -25,7 +25,7 @@ When designing and creating a chatbot, you'll likely encounter situations where 
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
-Now, before involving a live agent, the bot uses natural language processing to:
+Now, before involving a live agent, the bot uses natural language processing (NLP) to:
 - Parse what a user types to determine what they're asking
 - Find, collate, and parse relevant information from a specified URL (for example, your company's website) with Bing Search
 - Create a plain language response and then deliver that to the bot user
@@ -60,7 +60,9 @@ Your workflow might be like this:
 
 - You must enable the **Boost conversations** option for each bot.
 
-- Review the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
+- [Review AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
+
+- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported during the preview.
 
 - This capability may be subject to usage limits or capacity throttling.
 
@@ -74,7 +76,7 @@ Your workflow might be like this:
     
 1. Enter a name for the bot.
 
-3. Provide a website you'd like the bot to use for generating answers. See the [URL considerations](#url-considerations) section for what types of URLs you can use. Click **Create**.
+3. Provide a website you'd like the bot to use for generating answers, and click **Create**. See the [URL considerations](#url-considerations) section for what types of URLs you can use. 
 
     :::image type="content" source="media/nlu-gpt/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
@@ -82,7 +84,7 @@ After your bot is created and ready for you to use, it'll open to the bot's **Ov
 
 You can also change the URL, disable **Boost conversations**, or change the level of content moderation in the settings for the bot:
 
-1. With a bot open, expand **Settings** on the side navigation pane and select **AI Capabilities**.
+1. With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
 
     1. Under **Boost conversational coverage (preview)**, use the checkbox for **Boost conversations** to enable or disable the capability.
 
@@ -125,7 +127,7 @@ The bot will generate responses from any publicly viewable content under the URL
 Content from *<span>www</span>.fabrikam.com/tools* would not be used.  
 
 - If you were to use *<span>www</span>.fabrikam.com*, the bot wouldn't generate responses from content on *<span>news</spam>.fabrikam.com*, as *news.* is a subdomain under the top-level domain *<span>fabrikam</span>.com*.  
-- 
+ 
 - If you were to use *<span>fabrikam</span>.com*, then content from *<span>www</span>.fabrikam.com* and *<span>news</span>.fabrikam.com* would be used, as they sit "under" the top-level domain *<span>fabrikam</span>.com*.  
 
 The bot may generate nonsensical, irrelevant, or inappropriate answers if you use a forum or social network site as your URL:  
@@ -214,7 +216,9 @@ The system is designed to query knowledge from the website of your choosing and 
   We have implemented mitigations to prevent the model from using its training corpus as a source for answers, however it is possible for answers to include content from websites other than the one you selected. 
 
 - The system does not perform an accuracy check, so if the selected website contains inaccurate information this could be shown to your chatbot users. We have implemented mitigations to filter out irrelevant and offensive responses, and the feature is designed not to respond when offensive language is detected. These filters and mitigations are not foolproof.  
-  You should always test and review your bots before publishing them. During the preview, your admin will need to contact Microsoft support to enable publication.
+
+> [!NOTE]
+> You should always test and review your bots before publishing them. During the preview, your admin will need to contact Microsoft support to enable publication.
 
 
 ### How was the capability evaluated? What metrics are used to measure performance?   
