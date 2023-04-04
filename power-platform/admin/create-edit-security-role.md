@@ -37,7 +37,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 2. In the Microsoft Power Platform admin center, select an environment. 
 
-3. Select **Settings** > **Users + permissions** > **Security roles**.  
+3. Select **Settings** > **Users + permissions** > **Security roles (Preview)**.  
    
 4. On the Actions toolbar, select **New**.  
   
@@ -57,7 +57,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 2. In the Power Platform admin center, select an environment. 
 
-3. Select **Settings** > **Users + permissions** > **Security roles**.  
+3. Select **Settings** > **Users + permissions** > **Security roles (Preview)**.  
   
 4. Select the Security role you want to copy from.
 
@@ -87,7 +87,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 2. In the Power Platform admin center, select an environment. 
 
-3. Select **Settings** > **Users + permissions** > **Security roles**.  
+3. Select **Settings** > **Users + permissions** > **Security roles (Preview)**.  
   
 4. In the list of security roles, double-select or tap a name to open the page associated with that security role.  
   
