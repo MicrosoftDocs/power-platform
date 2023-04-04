@@ -23,7 +23,7 @@ To control data access, you must set up an organizational structure that both pr
 
 You can assign security roles using the new, modern UI, or using the the legacy UI:
 
-- [Security roles and the new, modern UI (preview feature)](security-roles-privileges.md#security-roles-and-the-new-modern-ui-preview-feature)
+- [Security roles and the new, modern UI (preview)](security-roles-privileges.md#security-roles-and-the-new-modern-ui-preview-feature)
 - [Security roels and the legacy UI](security-roles-privileges.md#security-roles-and-the-legacy-ui)
 
 ## Security roles and the new, modern UI (preview)
