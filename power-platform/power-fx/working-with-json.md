@@ -58,18 +58,18 @@ Radians( untyped.Quantity ); // 0.80285146
 If (untyped.AvailableForPreOrder, "Available", "Not Available" ); // "Available"
 ```
 
+In addition to automatically converting the type in function calls, untyped objects will also be converted when assigned to control properties, where possible.
+
+```powerapps-dot
+Label1.Text: untyped.Quantity
+InputText1.Default: untyped.ItemName
+```
+
 In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
 
 ```powerapps-dot
 untyped.'01'
 untyped.'my-field'
-```
-
-In addition to automatically converting the type in function calls, untyped objects will also be converted when assigned to control properties where possible.
-
-```powerapps-dot
-Label1.Text: untyped.Quantity
-InputText1.Default: untyped.ItemName
 ```
 
 Note that **JSON** does not have a **GUID**, **Color**, **Time** or **DateTime** type. These values are represented as a string. If you assign a **JSON** untyped object value containing a date to a text property directly, the original text of the **JSON** will be used. This may be important when dealing with time zones, date formats, etc. In such cases you should explicitly convert the values using **GUID()**, **ColorValue()**, **DateValue()**, **DateTimeValue()**, etc.
