@@ -27,6 +27,11 @@ You can specify privileges for each security role using the [new](security-roles
 
 Privacy-related privileges in the new, modern UI are listed alphabetically on the **Privacy-related privileges** tab of the security role editor.
 
+> [!Important]
+> [!include [preview](../includes/cc-preview-features-definition.md)]
+> 
+> This capability is in process of rolling out, and may not be available in your region yet.
+
 |Privacy-related privilege  | Privilege name | 
 |---------------------------|-----------------|
 |Document Generation	|prvDocumentGeneration	|
