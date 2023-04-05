@@ -266,6 +266,8 @@
                       href: manage-dataverse-auditing.md#use-the-audit-summary-view
                     - name: Entity and field audit settings
                       href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
+                    - name: Audit security roles
+                      href: audit-security-roles.md
                     - name: System jobs
                       href: manage-dataverse-auditing.md#monitoring-system-jobs
                 - name: Templates
@@ -543,6 +545,8 @@
                   href: use-service-admin-role-manage-tenant.md
                 - name: Miscellaneous privileges
                   href: miscellaneous-privileges.md
+                - name: Privacy-related privileges
+                  href: privacy-related-privileges.md
                 - name: Create or edit a security role
                   href: create-edit-security-role.md
                 - name: Copy a security role
