@@ -29,7 +29,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
-## Settings for end user experiences
+## End user experiences
 
 > [!div class="mx-tableFixed"]
 > |Settings|Description|  
@@ -43,7 +43,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |**Team Integration**||  
 > |Show record name and type to unauthorized users when unfurling links in Teams chats| Description |
 
-## Settings for app authoring experiences
+## App authoring experiences
 > [!div class="mx-tableFixed"]
 > |Settings|Description|  
 > |--------------|-----------------|  
