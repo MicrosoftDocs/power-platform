@@ -6,7 +6,7 @@ manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 03/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -24,7 +24,7 @@ The Audit Log Sync flow connects to the Microsoft 365 audit log to gather teleme
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
 >[!IMPORTANT]
->Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 [Watch a walk-through](https://www.youtube.com/watch?v=Lsooi7xp6eA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG&index=1&t=1360s) on how to set up the audit log connector.
 
@@ -85,10 +85,10 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-1. Go to [make.powerapps.com](https://make.powerapps.com) > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
+1. Go to [Power Apps](https://make.powerapps.com) > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
 1. Select **Edit**.
 
-  ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
+    ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
 
 1. If your tenant is a commercial tenant, leave the **General** page as is.
 
@@ -111,9 +111,9 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Don't change the **Tenant ID**.
 
-1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
+1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://<span>login</span>.microsoftonline.us/ for a GCC High or DoD tenant.
 
-1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, https://manage.office365.us for a GCC high tenant and https://manage.protection.apps.mil for a DoD tenant.
+1. Set the **Resource URL** to https://<span>manage</span>.office.com for a commercial tenant, https://<span>manage</span>-gcc.office.com for a GCC tenant, https://<span>manage</span>.office365.us for a GCC high tenant and https://<span>manage</span>.protection.apps.mil for a DoD tenant.
 
 1. Select **Update Connector**.
 
@@ -187,7 +187,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Edit the **Run only users** settings.
    :::image type="content" source="media/coe49.png" alt-text="Child flow - run only users.":::
 
-1. For the  Office 365 Management API custom connector and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
+1. For the  Office 365 Management API custom connector change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
    :::image type="content" source="media/coe50.png" alt-text="Configure run only users.":::
 
 1. For the Microsoft Dataverse connector, leave the run-only permission value blank and confirm that the connection reference for the **CoE Audit Logs - Dataverse** connection is configured correctly. If the connection is showing an error, [update the connection reference](faq.md#update-connection-references) for the **CoE Audit Logs - Dataverse** connection reference.

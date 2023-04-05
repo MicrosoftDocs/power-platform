@@ -5,7 +5,7 @@ author: jenschristianschroder
 manager: tapanm-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2022
+ms.date: 05/15/2022
 ms.subservice: guidance
 ms.author: jeschro
 ms.reviewer: sericks
@@ -148,7 +148,7 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 
 13. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
 
-14. Set the **Redirect URI** to *https://global.consent.azure-apim.net/redirect*.
+14. Set the **Redirect URI** to `https://global.consent.azure-apim.net/redirect`.
 
     > [!NOTE]
     > You might need to update this later when configuring your custom connector after you've installed the app, if this URL is different from the **Redirect URI** populated in the custom connector.
@@ -330,7 +330,8 @@ Each Dataverse environment—development, validation, test, or production—must
 
 1. Select **Create/New service connection**, search for Power Platform, and then select the **Power Platform** service connection type. Select **Next**.
 
-1. In the **Server URL**, enter your environment URL, for example **https://myorg.crm.dynamics.com/**.
+1. In the **Server URL**, enter your environment URL, for example `https://myorg.crm.dynamics.com/`.
+
    > [!IMPORTANT]
    > You must include the trailing forward slash after the URL (**.com/**, in the preceding example).
 
@@ -641,6 +642,8 @@ If your solution requires these other configuration settings or data, follow the
 
    | Name | Value |
    |--|--|
+   | **Authentication Type** | **OAuth 2.0** |
+   | **Identity provider** | **Azure Active Directory** |
    | **Client ID** | The **Application (client) ID** you copied when [creating the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
    | **Client secret** | The **Application (client) Secret** you copied when [creating the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
    | **Tenant ID** | Leave as the default, **common** |
@@ -648,7 +651,7 @@ If your solution requires these other configuration settings or data, follow the
 
 1. Select **Update connector**.
 
-1. Verify that the **Redirect URL** is populated on the **Security** page with the URL <https://global.consent.azure-apim.net/redirect>. If the redirect URL is other than <https://global.consent.azure-apim.net/redirect>, copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-azure-ad-environment) and update the redirect URI you set earlier to the updated URL.
+1. Verify that the **Redirect URL** is populated on the **Security** page with the URL `https://global.consent.azure-apim.net/redirect`. If the redirect URL is other than `https://global.consent.azure-apim.net/redirect`, copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-azure-ad-environment) and update the redirect URI you set earlier to the updated URL.
 
 1. After you've completed the preceding steps, verify the connector from the **Test** menu:
 
