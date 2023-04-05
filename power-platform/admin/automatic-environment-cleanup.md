@@ -66,10 +66,10 @@ The following table describes the schedule of notifications and action taken for
 
 | State of environment | Power Platform action |
 | --- | --- |
-| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Show days untill disablement in the environment state on the **Environments** list page and the **Environment** page. |
+| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Display the number of days until disablement in the **Environment state** on the **Environments** list page and the **Environment** page. |
 | 87 days after no user activity | Send a second warning that the environment will be disabled. |
 | 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the **Environments** list page and the **Environment** page. |
-| 23 days after environment disabled | Send first warning that the environment will be deleted. Show days until deletion in the environment state on the **Environments** list page and the **Environment** page. |
+| 23 days after environment disabled | Send first warning that the environment will be deleted. Show days until deletion in the **Environment state** field on the **Environments** list page and the **Environment** page. |
 | 27 days after environment disabled | Send second warning that the environment will be deleted. |
 | 30 days after environment disabled | Delete the environment. Send a notice that the environment has been deleted. |
 
