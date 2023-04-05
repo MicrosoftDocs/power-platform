@@ -66,11 +66,11 @@ The following table describes the schedule of notifications and action taken for
 
 | State of environment | Power Platform action |
 | --- | --- |
-| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Update the environment state on the **Environments** list page<sup>1</sup> and the **Environment** page. |
-| 87 days after no user activity | Send a warning that the environment will be disabled. Update the inactive environment state on the **Environments** list page<sup>1</sup> and the **Environment** page. |
-| 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page. |
-| 113 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page. |
-| 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page. |
+| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Update the environment state on the **Environments** list page and the **Environment** page. |
+| 87 days after no user activity | Send a warning that the environment will be disabled. Update the inactive environment state on the **Environments** list page and the **Environment** page. |
+| 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the **Environments** list page and the **Environment** page. |
+| 113 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page and the **Environment** page. |
+| 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page and the **Environment** page. |
 | 120 days after no user activity | Delete the environment. Send a notice that the environment has been deleted. |
 
 ### Notification recipients
