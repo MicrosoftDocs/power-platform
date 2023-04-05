@@ -35,6 +35,11 @@ Builds a code model for Dataverse APIs and Tables
 
 [!INCLUDE [modelbuilder-build-intro](includes/modelbuilder-build-intro.md)]
 
+### Required Parameters
+
+#### `--outdirectory` `-o`
+
+Write Directory for entity, message and optionset files
 
 ### Optional Parameters
 
@@ -82,9 +87,7 @@ The namespace for the generated code.  The default namespace is the global names
 
 Folder name that will contain option sets.  default is OptionSets
 
-#### `--outdirectory` `-o`
 
-Write Directory for entity, message and optionset files
 
 #### `--serviceContextName` `-sctx`
 
