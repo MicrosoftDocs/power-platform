@@ -86,7 +86,7 @@ Additionally, users and makers are notified on the **Environments** list page an
 
 Power Platform calculates a single measure of inactivity for each environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Virtual Agents, and Dataverse.
 
-Most create, read, update, and delete operations on the environment&mdash;and its resources that a user, maker, or admin initiates&mdash;are considered activity. Most read operations like visits to the home page, solution explorer, Power Apps or Power Automate designer are not considered as actvitiy.
+Most create, read, update, and delete operations on the environment&mdash;and its resources that a user, maker, or admin initiates&mdash;are considered activity. Most read operations like visits to the home page, solution explorer, Power Apps or Power Automate designer are not considered as activity.
 
 Here are some examples of the types of activities that are included in the measure:
 
