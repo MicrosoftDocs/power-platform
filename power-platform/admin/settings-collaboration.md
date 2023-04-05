@@ -20,7 +20,7 @@ search.app:
 
 Use Collaboration settings to adjust how how collaboration features work in Power Platform.
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** >**Collaboration**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Collaboration**.
 
 Make sure you have the System Administrator security role or equivalent permissions to update the Collaboration settings.
 
