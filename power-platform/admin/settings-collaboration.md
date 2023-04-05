@@ -35,13 +35,12 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Settings|Description|  
 > |--------------|-----------------|  
 > |**Model-driven apps**||  
-> |Show other people when they're using the same form.| More information: [Collaborate with others in model-driven apps](/power-apps/user/collaboration)| 
-> |End users can add and join Teams meetings from appointments in model-driven apps.| More inforamtion: [Create and join a Teams meeting from an appointment](/power-apps/user/join-teams-meeting-from-appointments) |
-> | Show modern share on views and dashboards (preview) | 
+> | Show modern share on views and dashboards (preview) | Description goes here. |
 > |**Enable sharing**||  
-> |Allow users to share read-only links to records with other users from this environment.|Description |  
+> |Allow users to share read-only links to records with other users from this environment.|Description goes here.|  
 > |**Team Integration**||  
-> |Show record name and type to unauthorized users when unfurling links in Teams chats| Description |
+> |Show record name and type to unauthorized users when unfurling links in Teams chats| Description goes here.|
+> Intall the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams.| Description goes here. |
 
 ## App authoring experiences
 > [!div class="mx-tableFixed"]
@@ -49,3 +48,5 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |--------------|-----------------|  
 > |**Coauthoring (preview)**||  
 > |Enable coauthoring, which lets people simultaneously edit model-driven apps together. | Description. More information: [Coauthoring in model-driven apps (preview)](/power-apps/maker/model-driven-apps/coauthoring)| 
+> Coauthoring in canvas apps | Description goes here. |
+> Copresence in cavas studio | Descripion goes here. |
