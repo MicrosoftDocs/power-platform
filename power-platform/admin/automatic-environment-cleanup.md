@@ -4,7 +4,7 @@ description: "Learn about the automatic process to identify and disable environm
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/14/2023
+ms.date: 04/05/2023
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
@@ -66,27 +66,12 @@ The following table describes the schedule of notifications and action taken for
 
 | State of environment | Power Platform action |
 | --- | --- |
-| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Update the environment state on the **Environments** list page<sup>1</sup> and the **Environment** page<sup>2</sup>. |
-| 87 days after no user activity | Send a warning that the environment will be disabled. Update the inactive environment state on the **Environments** list page<sup>1</sup> and the **Environment** page<sup>2</sup>. |
-| 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page<sup>3</sup>. |
-| 113 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page<sup>3</sup>. |
-| 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page<sup>3</sup>. |
+| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Update the environment state on the **Environments** list page<sup>1</sup> and the **Environment** page. |
+| 87 days after no user activity | Send a warning that the environment will be disabled. Update the inactive environment state on the **Environments** list page<sup>1</sup> and the **Environment** page. |
+| 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page. |
+| 113 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page. |
+| 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page<sup>1</sup> and the **Environment** page. |
 | 120 days after no user activity | Delete the environment. Send a notice that the environment has been deleted. |
-
-<sup>1</sup> **Environment state on the Environments list page in Power Platform admin center**
-:::image type="content" source="media/inactive-environment-state.png" alt-text="Screenshot of the Environments list page in Power Platform admin center, with the environment state column highlighted.":::
-
-<sup>2</sup>**Inactive environment alert on the Environment page in Power Platform admin center**
-:::image type="content" source="media/inactive-environment-state-box.png" alt-text="Screenshot of the inactive environment alert on the Environment page, with the Trigger environment activity checkbox highlighted.":::
-
-> [!NOTE]
-> The **Environment inactive** warning tile only displays if the environment is 7 days or less until disablement.
-
-<sup>3</sup>**Disabled environment alert on the Environment page in Power Platform admin center**
-:::image type="content" source="media/disabled-environment-state-box.png" alt-text="Screenshot of the disabled environment alert on the Environment page, with the Re-enable environment checkbox highlighted.":::
-
-> [!NOTE]
-> The **Environment disabled** tile displays anytime a environment is disabled due to inactivity.
 
 ### Notification recipients
 
