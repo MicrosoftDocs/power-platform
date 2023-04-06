@@ -30,7 +30,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
 
 ## Create a schema and export configuration data  
   
-1. Start the Configuration Migration tool. Double-click **DataMigrationUtility.exe** in the folder where you dowmloaded the tool: \[your folder]\Tools\ConfigurationMigration\  
+1. Start the Configuration Migration tool. Double-click **DataMigrationUtility.exe** in the folder where you downloaded the tool: \[your folder]\Tools\ConfigurationMigration\  
   
 2. On the main screen, click **Create schema**, and click **Continue**.  
   
