@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # CLU entity registration
 
-This article discusses adding language understanding entities to a Power Virtual Agents bot. The entities are composed of the following boolean, string, and number datatypes. For more information, see [Data types](https://learn.microsoft.com/power-platform/power-fx/data-types). 
+This article discusses adding language understanding entities to a Power Virtual Agents bot. The entities are composed of the following boolean, string, and number datatypes. For more information, see [Data types](/power-platform/power-fx/data-types). 
 
 
 - BooleanDatatype: `Choice.Boolean`
