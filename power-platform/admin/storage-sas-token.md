@@ -61,7 +61,7 @@ This section describes the prerequisites necessary to access the storage with th
 8. Use the below link to construct the SAS URL.
 
 ```http
-    https://<ContainerURL>/CDS?<SASToken>'
+    https://<ContainerURL>/CDS?<SASToken>
 ```
 
 > [!NOTE]
