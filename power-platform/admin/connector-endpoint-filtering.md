@@ -35,7 +35,7 @@ Connector endpoint filtering allows admins to govern which specific endpoints ma
 When a maker tries to connect their app, flow, or chatbot to a blocked endpoint, they will encounter a DLP error message.
 
 > [!WARNING]
-> Endpoint filtering rules are not enforced on environment variables, custom inputs, or any endpoint that is dynamically created at run-time. Only static endpoints are evaluated in the app, flow, or chatbot designers. For more information, see [].
+> Endpoint filtering rules are not enforced on environment variables, custom inputs, or any endpoint that is dynamically created at run-time. Only static endpoints are evaluated in the app, flow, or chatbot designers. For more information, see [Known limitations](#known-limitations).
 
 > [!Important]
 > [!include [preview](../includes/cc-preview-features-definition.md)]
