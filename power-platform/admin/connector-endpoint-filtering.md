@@ -99,7 +99,9 @@ After saving your connector endpoint filtering rules and the DLP policy in which
 
 ## Endpoint input formats and examples 
 
-Each connector has a different notion of what an endpoint means. Further, some endpoints can be defined in multiple formats. Therefore, endpoints have to be entered in all possible formats to block makers from using them while creating apps and flows. Admins can either enter the full endpoint name or use pattern matching with the wildcard character (`*`) when creating an endpoint filtering rule. These rules are entered and presented in an ordered list of endpoint patterns, meaning that they'll be evaluated in ascending order by number. Note that the last rule for any given connector is always `*` Allow or `*` Deny (Allow by default, which can be changed to Deny). The following guidance describes how to enter connector endpoints while creating rules to allow or deny them. 
+Each connector has a different notion of what an endpoint means. Further, some endpoints can be defined in multiple formats. Therefore, endpoints have to be entered in all possible formats to block makers from using them while creating apps and flows. Admins can either enter the full endpoint name or use pattern matching with the wildcard character (`*`) when creating an endpoint filtering rule. These rules are entered and presented in an ordered list of endpoint patterns, meaning that they'll be evaluated in ascending order by number. Note that the last rule for any given connector is always `*` Allow or `*` Deny. Allow is the default, which can be changed to Deny. 
+
+The following guidance describes how to enter connector endpoints while creating rules to allow or deny them. 
 
 ### SQL Server 
 
@@ -111,19 +113,21 @@ SQL Server connection endpoints have to be listed in `<Server_name, database_nam
 
 - There's no special logic to handle relative addresses such as `localhost`. Therefore, if you block `*localhost*`, it will block makers from using any endpoints by using `localhost` as part of the SQL Server endpoint. However, it won't stop them from accessing the endpoint by using the absolute address, unless the absolute address has also been blocked by the admin. 
 
-Below are examples of a few scenarios: 
+The following are examples: 
 
 - Allow only Azure SQL Server instances: 
   1. Allow `*.database.windows.net*` 
   2. Deny `*`
 
-- Allow only a specific IP range (note that the IP addresses that aren't allowed can still be entered by the maker in `<machine_name\named_instance>` format): 
+- Allow only a specific IP range: (Note that the IP addresses that aren't allowed can still be entered by the maker in `<machine_name\named_instance>` format.) 
   1. Allow `11.22.33*` 
   2. Deny `*`
 
 ### Dataverse 
 
-Dataverse endpoints are represented by the [organization ID](determine-org-id-name.md); for example, 7b97cd5c-ce38-4930-9497-eec2a95bf5f7. Please note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors are not in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. Therefore, a rule that says the following:
+Dataverse endpoints are represented by the [organization ID](determine-org-id-name.md), such as, 7b97cd5c-ce38-4930-9497-eec2a95bf5f7. Please note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors are not in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. 
+
+Therefore, a rule that says the following:
 
 1. Allow `7b97cd5c-ce38-4930-9497-eec2a95bf5f7`
 2. Deny `*`
@@ -164,6 +168,7 @@ Allow access to only the Azure subscriptions page within `https://management.azu
 
 ### Configure endpoint filtering rules for a policy
 The object that contains endpoint filtering rules for a policy is referred to below as the connector configurations.
+
 The connector configurations object has the following structure:
 
 ```powershell
@@ -185,21 +190,23 @@ $ConnectorConfigurations = @{
 ``` 
 
 **Notes**
-
--	The last rule for each connector should always be applied to URL “*”, to ensure that all URLs are covered by the rules
--	The order property of the rules for each connector should be populated with numbers 1 to N, where N is the number of rules for that connector
+-	The last rule for each connector should always be applied to URL `*`, to ensure that all URLs are covered by the rules.
+-	The order property of the rules for each connector should be populated with numbers 1 to N, where N is the number of rules for that connector.
 
 **Retrieve existing connector configurations for a DLP policy**
+
 ```powershell
 Get-PowerAppDlpPolicyConnectorConfigurations 
 ``` 
 
 **Create connector configurations for a DLP policy**
+
 ```powershell
 New-PowerAppDlpPolicyConnectorConfigurations
 ``` 
 
 **Update connector configurations for a DLP policy**
+
 ```powershell
 Set-PowerAppDlpPolicyConnectorConfigurations
 ``` 
@@ -218,7 +225,7 @@ For the SMTP connector:
   -	Deny all other addresses
 
 For the HTTP connector:
-  -	Allow endpoints https://mywebsite.com/allowedPath1 and https://mywebsite.com/allowedPath2 
+  -	Allow endpoints `https://mywebsite.com/allowedPath1` and `https://mywebsite.com/allowedPath2` 
   -	Deny all other URLs
 
 > [!NOTE]
