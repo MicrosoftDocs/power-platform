@@ -33,6 +33,8 @@ With this new capability, PVA users can now CLU intents to trigger PVA dialogs i
 
 ## Key concepts
 
+The concepts discussed in this article help you understand how to integrate CLU model with PVA projects. For more information, see [Get started with CLU integration](advanced-clu-get-started.md).
+
 ### CLU connectors
 
 A *connector* is a wrapper around an API that allows the Azure Cognitive Service services to talk to Power Virtual Agents. It provides a way for users to connect their accounts and apply a set of prebuilt actions and triggers to build their apps and workflows. For more information, see [Azure Cognitive Service for Language - Connectors](/connectors/cognitiveservicestextanalytics). 
