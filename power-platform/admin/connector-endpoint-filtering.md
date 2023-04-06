@@ -63,7 +63,7 @@ After a pattern has been added, you can edit or delete these patterns by selecti
 
 :::image type="content" source="media/dlp-delete-pattern.png" alt-text="Delete a pattern.":::
 
-After saving your connector endpoint filtering rules and the DLP policy in which they are defined, they become instantly enforced on the targeted environments. Below is an example where a maker tried to connect their cloud flow to a SQL server and database that is not allowed. To help the maker troubleshoot, you should personnalize your DLP error messages by following the instructions here.
+After saving your connector endpoint filtering rules and the DLP policy in which they are defined, they become instantly enforced on the targeted environments. Below is an example where a maker tried to connect their cloud flow to a SQL server and database that is not allowed.
 
 :::image type="content" source="media/EF_CloudFlow.png" alt-text="DLP error because of endpoint filtering rules.":::
 
