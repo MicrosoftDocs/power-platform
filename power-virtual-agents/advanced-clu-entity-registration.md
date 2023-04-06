@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # CLU entity registration
 
-This article discusses adding language understanding entities to a Power Virtual Agents bot. The entities are composed of the following boolean, string, and number datatypes. For more information, see [Data types](/power-platform/power-fx/data-types). 
+This article discusses adding language understanding entities to a Power Virtual Agents bot. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). 
 
 
 - BooleanDatatype: `Choice.Boolean`
@@ -28,9 +28,9 @@ This article discusses adding language understanding entities to a Power Virtual
 
 ## Schema table
 
-Bot creators can use sample JSON code to register [entities](advanced-entities-slot-filling.md). Entities resolve to complex datatypes. You can manually map CLU entities to PVA datatypes by using the following JSON code blocks. 
+Bot creators can use sample JSON code to register [entities](advanced-entities-slot-filling.md). Entities resolve to complex data types. You can manually map CLU entities to PVA data types by using the following JSON code blocks. 
 
-To register the following datatypes, copy/paste the relative code block listed below by selecting **Copy code**.
+To register the following data types, copy/paste the relative code block listed below by selecting **Copy code**.
 
 ### Age
 

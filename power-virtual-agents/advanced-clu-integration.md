@@ -33,7 +33,7 @@ With this new capability, PVA users can now CLU intents to trigger PVA dialogs i
 
 ## Key concepts
 
-The concepts discussed in this article help you understand how to integrate CLU model with PVA projects. For more information, see [Get started with CLU integration](advanced-clu-get-started.md).
+The concepts discussed in this article help you understand how to integrate CLU models with PVA projects. For more information, see [Get started with CLU integration](advanced-clu-get-started.md).
 
 ### CLU connectors
 
