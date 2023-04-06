@@ -1,9 +1,9 @@
 ---
 title: "Connector action control | MicrosoftDocs"
-description: Description goes here.
+description: You can use connector action control to allow or block individual actions within a given connector.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 04/06/2023
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -23,19 +23,19 @@ search.app:
 
 # Connector action control
 
-> [!NOTE]
-> - Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
-
 You can use connector action control to allow or block individual actions within a given connector. On the **Connectors** page, right-click the connector, and then select **Configure connector** > **Connector actions**.
 
 :::image type="content" source="media/dlp-connector-actions.png" alt-text="Select Configure connector > Connector actions.":::
+
+> [!NOTE]
+> - Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
 
 This opens a side panel where you can allow or deny specific actions. You can also set the default value (Allow or Deny) for any new connector actions that will be added to the connector in the future.
 
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
-## Known limitations
-- Some Power Apps last published before October 1st 2020 need to be re-published for DLP connector action rules to be enforced. The script below helps admins and makers identify the apps that must be re-published.
+## Identify the apps that must be re-published
+Some Power Apps last published before October 1, 2020, need to be re-published for DLP connector action rules to be enforced. The script below helps admins and makers identify the apps that must be re-published.
 
 ```powershell
 Add-PowerAppsAccount
@@ -59,7 +59,7 @@ ForEach ($app in Get-AdminPowerApp){
 }
 ``` 
 
-## PowerShell support for Connector Action Control
+## PowerShell support for connector action control
 
 **Retrieve a list of available actions for a connector**
 ```powershell
@@ -81,6 +81,7 @@ Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
 
 #### Configure connector action rules for a policy
 The object that contains connector action rules for a policy is referred to below as the connector configurations.
+
 The connector configurations object has the following structure:
 
 ```powershell
