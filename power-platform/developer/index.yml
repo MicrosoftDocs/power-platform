@@ -68,6 +68,32 @@ landingContent:
             url: /power-platform/alm/solution-api
 
   # Card
+  - title: For ISVs
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Publish your app on AppSource
+            url: appsource/publish-app.md
+      - linkListType: how-to-guide
+        links:
+          - text: Monitor your app in ISV Studio
+            url: isvstudio/index.md
+
+  # Card
+  - title: Tools for Developers
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Power Platform CLI
+            url: cli/introduction.md
+          - text: Power Platform Tools for Visual Studio
+            url: devtools-vs.md
+          - text: ALM developer tools
+            url: tools-alm.md 
+          - text: Dataverse developer tools
+            url: tools-dataverse.md                                 
+      
+  # Card
   - title: Dataverse
     linkLists:
       - linkListType: reference
