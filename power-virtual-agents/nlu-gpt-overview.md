@@ -22,7 +22,6 @@ By leveraging recent advancements in AI large language models, Power Virtual Age
 
 - **Create an instantly useful chatbot.** With no manual authoring, an "empty" chatbot can respond to your users with relevant information, even if you haven't manually created a topic for it. 
 
-
 - **Author topics by describing what you want.** Describe what you want your topic to do, and Power Virtual Agents creates it for you, complete with conversational responses and multiple types of nodes. Use the suggested topic as is, or as a starting point for further iteration. 
 
 ## Prerequisites
