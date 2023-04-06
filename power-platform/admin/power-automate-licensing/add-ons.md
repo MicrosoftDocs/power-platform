@@ -8,11 +8,6 @@ ms.author: deonhe
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Add-ons for Power Automate licensing
