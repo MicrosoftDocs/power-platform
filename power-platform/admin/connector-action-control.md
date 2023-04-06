@@ -35,7 +35,7 @@ When configuring the connector, use the side panel to allow or deny specific act
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
 ## Identify the apps that must be re-published
-Some Power Apps last published before October 1, 2020, need to be re-published for DLP connector action rules to be enforced. The script below helps admins and makers identify the apps that must be re-published.
+Some Power Apps last published before October 1, 2020, need to be re-published for connector action rules for data loss prevention (DLP) to be enforced. The script below helps admins and makers identify the apps that must be re-published.
 
 ```powershell
 Add-PowerAppsAccount
