@@ -467,10 +467,10 @@
                       href: data-loss-prevention-sdk.md
                     - name: Basic connector classification
                       href: dlp-connector-classification.md
-                    - name: Advanced granular controls
-                      href: dlp-granular-controls.md
-                    - name: Endpoint input examples
-                      href: dlp-endpoint-input-formats-examples.md
+                    - name: Connector action control
+                      href: connector-action-control.md
+                    - name: Connector endpoint filtering (preview)
+                      href: connector-endpoint-filtering.md
                     - name: DLP for custom connectors
                       href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
