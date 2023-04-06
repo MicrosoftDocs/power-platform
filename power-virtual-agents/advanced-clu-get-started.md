@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # Get started with language understanding
 
-This topic includes step-by-step procedures you need to get started with [CLU integration](advanced-clu-integration.md). Let’s get started.
+This topic includes the step-by-step procedures you need to get started with [CLU integration](advanced-clu-integration.md). Let’s get started.
 
 Below are the steps to create a bot using an existing CLU model:
 
