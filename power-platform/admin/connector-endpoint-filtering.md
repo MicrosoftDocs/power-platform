@@ -24,7 +24,7 @@ search.app:
 # Connector endpoint filtering (preview)
 [This article is pre-release documentation and is subject to change.]
 
-Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It is configured within a DLP policy, and it is exclusively available for six connectors: 
+Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It is configured within a data loss prevention (DLP) policy, and it is exclusively available for six connectors: 
 - HTTP
 - HTTP with Azure Active Directory (AD)
 - HTTP Webhook
