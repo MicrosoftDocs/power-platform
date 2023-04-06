@@ -16,12 +16,12 @@ ms.collection: virtual-agent
 
 # Automate bot creation with CLU integration
 
-Cognitive language understanding (CLU) model integration lets users import Azure CLU models directly into PVA bots. For bots created with this capability, bot creators can now access existing CLU model intents and entities without having to directly access the model in [Azure Language Studio](https://aka.ms/languageStudio). Azure Language Studio is a cloud-based service from Azure Cognitive Service for Language, providing users with natural language processing (NLP) features for analyzing conversational text. For more information, see [Conversational Language Understanding](https://learn.microsoft.com/azure/cognitive-services/language-service/conversational-language-understanding/overview).
+Cognitive language understanding (CLU) model integration lets users use their CLU models with PVA projects. For bots created with this capability, bot creators can now access existing CLU model intents and entities directly in PVA. [Azure Language Studio](https://aka.ms/languageStudio) is a cloud-based service from Azure Cognitive Service for Language, providing users with natural language processing (NLP) features for analyzing conversational text. For more information, see [Conversational Language Understanding](https://learn.microsoft.com/azure/cognitive-services/language-service/conversational-language-understanding/overview).
 
-With this new capability, PVA users can now import CLU models directly into the PVA authoring canvas. Entities imported from the CLU model appear in PVA on the Entities page. Bot creators can add new question nodes in a PVA topic and select available entities and intents from the imported CLU model. CLU entities are bound to equivalent PVA objects. Users specify the name, the datatype, and the JSON structure of a custom datatype, if necessary for each entity. 
+With this new capability, PVA users can now CLU intents to trigger PVA dialogs in the same way as PVA [utterance triggers](advanced-hand-off.md). Entities imported from the CLU model appear in PVA on the [Entities](advanced-entities-slot-filling.md) page. Bot creators can add new [question nodes](authoring-ask-a-question.md) in a PVA topic and select available entities and intents from the imported CLU model. CLU entities are bound to equivalent PVA objects. Users specify the name, the data type, and the [JSON structure](advanced-clu-entity-registration.md) of a custom data type, if desired for each entity. 
 
 > [!NOTE]
-> For existing bots that you want to take advantage of CLU integration, you'll need to import the bot into PVA (unless it’s been previously created in PVA), then manually or bulk update the bot’s trigger phrases to bind each topic to a corresponding CLU intent. 
+> For existing bots that you want to take advantage of CLU integration, you'll need to map the CLU model to PVA, then you can update the bot’s trigger phrases to bind each topic to a corresponding CLU intent. You can also manually manage the relationship between the CLU model and PVA.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ Power Platform connectors allow Microsoft services to talk to the CLU API. For m
 
 A [connection](https://learn.microsoft.com/power-automate/add-manage-connections) is a stored [authentication credential](https://learn.microsoft.com/connectors/custom-connectors/connection-parameters#authentication-types) for a connector, for example OAuth credentials for the SharePoint connector. A connection reference is a solution component that contains a reference to a connection about a specific connector.
 
-PVA connections are environment specific. When you import a bot, you need to set up a connection for it. We offer a standard way of achieving this capability in Power Platform by way of a Connection reference. For more information, see [Connection references in solutions - Power Apps[(https://learn.microsoft.com/power-apps/maker/data-platform/create-connection-reference). 
+PVA connections are environment specific. When you import a bot, you need to set up a connection for it. We offer a standard way of achieving this capability in Power Platform by way of a Connection reference. For more information, see [Connection references in solutions - Power Apps](https://learn.microsoft.com/power-apps/maker/data-platform/create-connection-reference). 
 
 
 ### External recognizers 
@@ -79,6 +79,9 @@ For a complete list of PVA variables, including system variables, see [Use varia
 ## Mix and match entity component types 
 
 CLU entities include relevant information extracted from NLU utterances. An entity can be extracted using different methods. They can be learned through context, mixed and matched from a list, or detected by a prebuilt recognized entity. For a complete list of entity component types, see [Component Types](https://learn.microsoft.com/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components#component-types).
+
+> [!NOTE]
+> You can also use PVA [pre-built entities](authoring-variables.md) along with CLU entities.
 
 ## Related topics
 

@@ -112,16 +112,10 @@
           href: advanced-fundamentals.md
         - name: Enable advanced AI features
           href: advanced-ai-features.md
+        - name: Create a PVA bot with language understanding (preview)
+          href: advanced-clu-integration.md
         - name: Use entities and slot filling
           href: advanced-entities-slot-filling.md
-        - name: Create a PVA bot with language understanding
-          items:
-            - name: Automate bot creation with CLU integration (preview)
-              href: advanced-clu-integration.md
-            - name: Get started with language understanding (preview)
-              href: advanced-clu-get-started.md
-            - name: CLU entity registration (preview)
-              href: advanced-clu-entity-registration.md
         - name: Use variables
           href: authoring-variables.md
         - name: Use variables (preview)
