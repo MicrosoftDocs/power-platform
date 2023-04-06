@@ -60,3 +60,7 @@
         items:
           - name: Use Visual Studio and Power Apps to create a front-end app for ASP.NET web API
             href: visual-studio-connected-service.md
+          - name: Tutorials
+            items:
+            - name: Use Visual Studio and Power Apps to create a front-end app for ASP.NET web API
+              href: visual-studio-create-canvas-app.md
