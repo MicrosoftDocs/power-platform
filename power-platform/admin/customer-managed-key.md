@@ -271,15 +271,19 @@ Once the enterprise policy is created, the key vault administrator grants the en
 
 1. Sign into the [Azure portal](https://ms.portal.azure.com/) and go to **Key vaults**.
 1. Select the key vault where the key was assigned to the enterprise policy.
-1. Select the **Access policies** tab, and then select **+ Add Access Policy**.
-1. Next to **Select principal**, select **None selected**.
-1. In the right **Principal** pane, enter the enterprise policy name, and then **Select** it.
-1. In the **Add access policy** screen, select the **Key permissions** dropdown list. Then, select these options:
+1. Select the **Access policies** tab, and then click on **+ Create**.
+1. Under the **Key permissions** section,
+   Key Management Operations, select this option:
    - **Get**
+
+   Cryptographic Operations, select these options:
    - **Unwrap key**
    - **Wrap key**
    :::image type="content" source="media/cmk-keyvault-access-policy.png" alt-text="Key vault add access policy":::
-1. Select **Add**.
+1. Click **Next**.
+1. On the **Principal** page, enter your Enterprise policy and select it.
+1. Click **Next**.
+1. Click **Create**.
 
 ### Grant the Power Platform admin privilege to read enterprise policy
 
