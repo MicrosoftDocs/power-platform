@@ -7,7 +7,6 @@ ms.topic: overview
 author: iaanw
 ms.author: iawilt
 ms.reviewer: 
-manager: leeclontz
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ms.search.region: USA
@@ -21,7 +20,6 @@ searchScope:
 By leveraging recent advancements in AI large language models, Power Virtual Agents (preview) transforms how you build chatbots, increasing a chatbot's usefulness and significantly reducing manual authoring and configuration. You can:
 
 - **Create an instantly useful chatbot.** With no manual authoring, an "empty" chatbot can respond to your users with relevant information, even if you haven't manually created a topic for it. 
-
 
 - **Author topics by describing what you want.** Describe what you want your topic to do, and Power Virtual Agents creates it for you, complete with conversational responses and multiple types of nodes. Use the suggested topic as is, or as a starting point for further iteration. 
 

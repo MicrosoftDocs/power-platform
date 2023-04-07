@@ -2,20 +2,14 @@
 title: "Microsoft Power Platform strategy and vision best practices | MicrosoftDocs"
 description: "Microsoft Power Platform adoption practices provide admin and governance, nurture and strategy, and vision best practices."
 author: manuelap-msft
-manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 03/31/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Strategy and vision best practices
 
@@ -29,6 +23,8 @@ The following articles can help you understand how to get started with your ente
 > * [Establish a Center of Excellence](coe.md)
 > * [Roles and responsibilities](roles.md)
 > * [Delivery models](delivery-models.md)
+> * [Measure business value](business-value.md)
+> * [Executive sponsorship](executive-sponsorship.md)
 
    :::column-end:::
 :::row-end:::

@@ -10,11 +10,6 @@ ms.author: sericks
 ms.reviewer: 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Finance and operations storage capacity

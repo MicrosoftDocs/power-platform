@@ -7,8 +7,6 @@ ms.topic: conceptual
 ms.date: 02/23/2023
 ms.subservice: admin
 ms.author: DeonHe
-search.app: 
-  - Flow
 search.audienceType: 
   - flowadmin
 ---

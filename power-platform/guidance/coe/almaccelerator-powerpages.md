@@ -9,10 +9,6 @@ ms.author: rajeevpe
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform 
 ---
 
 # Configuring and using the ALM accelerator for Power Pages

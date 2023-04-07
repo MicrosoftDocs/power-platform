@@ -7,7 +7,6 @@ ms.date: 10/22/2021
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: onboarding, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

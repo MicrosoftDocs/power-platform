@@ -2,7 +2,6 @@
 title: "Configuring the ALM Accelerator for Power Platform hook extensions | MicrosoftDocs"
 description: "The ALM Accelerator for Power Platform pipelines has extension points that allows users to customize the pipelines by using the available hooks to run custom yaml templates."
 author: jenschristianschroder
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/27/2022
@@ -11,10 +10,6 @@ ms.author: jeschro
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Configuring the ALM Accelerator for Power Platform hook extensions (preview)
 

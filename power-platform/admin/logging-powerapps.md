@@ -11,11 +11,6 @@ ms.author: tjvass
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Power Apps activity logging
 

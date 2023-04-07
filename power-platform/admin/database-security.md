@@ -10,14 +10,9 @@ contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/10/2023
+ms.date: 04/04/2023
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Configure user security to resources in an environment
@@ -116,7 +111,6 @@ The following table describes which resources can be authored by each security r
 
 <sup>*</sup>Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
 
-
 ## Assign security roles to users in an environment that has no Dataverse database 
 
 For environments with no Dataverse database, security roles can be assigned to individual users or groups from Azure AD. A user who has the Environment Admin role in the environment can take these steps.
@@ -161,6 +155,45 @@ To add a security role to an owner team, group team, or a user who has Enabled s
 
    > [!div class="mx-imgBorder"] 
    > ![Add people.](media/security-role-add-people.png "Add people")
+
+## Create, edit, or copy a security role using the new, modern UI (preview)
+You can easily create, edit, or copy a security role and customize it to meet your needs.
+
+> [!Important]
+> [!include [preview](../includes/cc-preview-features-definition.md)]
+> 
+> This capability is in process of rolling out, and may not be available in your region yet.
+
+1.  Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2.  Select **Environments** in the navigation pane.
+3.  Select the check mark next to the environment you want to use.
+4.  Select **Settings**.
+5.  Expand **Users + Permissions**.
+6.  Select **Security roles (Preview)**. A list of the existing security roles in your environment is displayed.
+7.  Complete the appropriate task:
+    - [Create a new security role](#create-a-new-security-role)
+    - [Edit an existing security role](#edit-an-existing-security-role)
+    - [Copy a security role](#copy-a-security-role)
+
+#### Create a new security role
+
+1. Select **New role** from the command bar. The **Create New Role** pane appears.
+2. In the **Role Name** field, enter a name for the new role.
+3. In the **Business unit** field, select the corresponding business unit the role will belong to.
+4. Indicate if team members should inherit the role. If enabled and the role is assigned to a team, all team members will inherit all the privileges associated with this role.
+5. Select **Save** to save the role.
+6. [Define the privileges and properties of the security role](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
+
+#### Edit an existing security role
+
+To edit an existing security role, either select the role name, or select the row and choose **Edit.** Then [define the privileges and properties of the security role](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
+
+#### Copy a security role
+
+Select the security role and choose copy. You will need to give the role a new name. Note that only the privileges will be copied, the assigned members and teams will not be assigned to the copied role. [Edit the security role](#edit-an-existing-security-role), as needed.
+
+#### Audit security roles
+[Audit security roles](audit-security-roles.md) to better understand changes made to security in your Power Platform environment.
 
 ## Create or configure a custom security role 
 
