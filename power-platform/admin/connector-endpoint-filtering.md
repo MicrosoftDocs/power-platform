@@ -73,7 +73,7 @@ After saving your connector endpoint filtering rules and the DLP policy in which
     :::image type="content" source="media/EF_KnownLimitation_1.png" alt-text="Cloud flow uses variables to connect to SQL.":::
     :::image type="content" source="media/EF_KnownLimitation_2.png" alt-text="Cloud flow runs successfully.":::
 
-- Some Power Apps last published before October 1, 2020, need to be re-published for DLP connector action rules and endpoint rules to be enforced. The following script enables admins and makers to identify apps that must be re-published to respect these new DLP granular control rules:
+- Some Power Apps published before October 1, 2020, need to be re-published for DLP connector action rules and endpoint rules to be enforced. The following script enables admins and makers to identify apps that must be re-published to respect these new DLP granular control rules:
 
     ```powershell
     Add-PowerAppsAccount
