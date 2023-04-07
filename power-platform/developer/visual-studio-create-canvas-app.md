@@ -52,7 +52,7 @@ Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. 
    
    1. In the field **Name**, type `SampleTunnel`.
    1. Select **Tunnel Type**: **Persistent**.
-   <!-- I don't see the option to select Tunnel Type or Access after upgrading to VS 2022 v17.5.3  -->
+   <!-- I don't see the option to select Tunnel Type or Access after upgrading to VS 2022 v17.5.3 I don't have the preview version installed  -->
    1. Select **Access** : **public**.
    1. Select **OK**.
    
@@ -71,7 +71,7 @@ When a tunnel is active and Visual Studio runs a web app, the web browser opens 
 1. Type "WeatherSample" in the search box. Select the **WeatherSample_Connector**, and select **Connect**. More information: [Add connections to your canvas app](/power-apps/maker/canvas-apps/add-data-connection)
 <!-- Above didn't work for me with VS 2022 v17.5.3. I don't have the preview version installed -->
 1. In the menu, select **Insert**, **Button**. Drag and drop the button to the bottom of the form. Change the **Text** to **Load Data**.
-1. Add the following formula to the OnSelect Property:
+1. Add the following formula to the **OnSelect** property:
    
    ```powerapps-dot
    ClearCollect(weatherCollection, WeatherSample_Connector.GetWeatherForecast())
