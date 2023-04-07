@@ -7,7 +7,6 @@ ms.date: 01/20/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: eaglez
 ms.custom: "advanced-authoring, ceX"
 ms.service: power-virtual-agents

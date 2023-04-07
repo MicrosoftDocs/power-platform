@@ -11,11 +11,6 @@ ms.reviewer: paulliew
 contributors:
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage PrincipalObjectAccess storage
 

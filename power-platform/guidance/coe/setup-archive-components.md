@@ -2,7 +2,6 @@
 title: "Set up inactivity notifications components | MicrosoftDocs"
 description: "Learn how to set up the inactivity notifications components of the CoE Starter Kit"
 author: manuelap-msft
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/08/2023
@@ -11,10 +10,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up inactivity processes

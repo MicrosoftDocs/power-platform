@@ -5,7 +5,6 @@ keywords:
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
-manager: kvivek
 ms.custom: ""
 ms.date: 02/17/2023
 ms.reviewer: "pehecke"
@@ -14,9 +13,6 @@ ms.topic: "article"
 ms.assetid: 
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # ALM for developers

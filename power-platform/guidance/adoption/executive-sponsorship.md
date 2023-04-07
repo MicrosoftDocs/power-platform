@@ -2,7 +2,6 @@
 title: "Executive sponsorship - Microsoft Power Platform | MicrosoftDocs"
 description: "Consider how you wil get buy-in from an executive leader for your Power Platform adoption journey, learn about their role and activities and how to identify an executive sponsor."
 author: manuelap-msft
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/31/2023
@@ -11,10 +10,6 @@ ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Executive sponsorship
 

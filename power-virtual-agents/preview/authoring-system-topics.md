@@ -7,7 +7,6 @@ ms.date: 12/13/2022
 ms.topic: conceptual
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: ggupta
 ms.custom: authoring, ceX, bap-template
 ms.service: power-virtual-agents

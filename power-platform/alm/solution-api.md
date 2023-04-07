@@ -4,16 +4,12 @@ description: "Learn about the .NET APIs that are available to manage Microsoft D
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
-manager: kvivek
 ms.custom: ""
 ms.date: 04/05/2022
 ms.reviewer: pehecke
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Work with solutions using the Dataverse SDK

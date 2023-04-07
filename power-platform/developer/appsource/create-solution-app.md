@@ -9,9 +9,6 @@ ms.author: pemikkel
 ms.subservice: developer
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Step 2: Create a managed solution for your app
 

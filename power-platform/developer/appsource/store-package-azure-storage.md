@@ -9,9 +9,6 @@ ms.author: shmcarth
 ms.subservice: developer
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key
 

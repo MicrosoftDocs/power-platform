@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: paulliew
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data
