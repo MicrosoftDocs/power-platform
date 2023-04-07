@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio Integration (Preview)"
+title: "Visual Studio connected service (Preview)"
 description: "Add Power Platform as a connected service in Visual Studio to create a Custom Connector."
 author: marcelbf
 ms.subservice: developer
@@ -10,7 +10,7 @@ ms.topic: article
 search.audienceType: 
   - developer
 ---
-# Visual Studio Integration (Preview)
+# Visual Studio connected service (Preview)
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 

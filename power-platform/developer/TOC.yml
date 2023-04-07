@@ -58,9 +58,7 @@
             href: cli\reference\virtual-agent.md
       - name: Visual Studio Integration (preview)
         items:
-          - name: Visual Studio Integration (Preview)
+          - name: Visual Studio connected service (Preview)
             href: visual-studio-connected-service.md
-          - name: Tutorials
-            items:
-            - name: Use Visual Studio and Power Apps to create a front-end app for ASP.NET web API
-              href: visual-studio-create-canvas-app.md
+          - name: Create a Canvas App front end for your ASP.NET web API
+            href: visual-studio-create-canvas-app.md

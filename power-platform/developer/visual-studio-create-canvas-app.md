@@ -1,18 +1,18 @@
 ---
 title: "Create a Canvas App front end for your ASP.NET web API"
-description: "Use the Power Platform connected service integration with Visual Studio to create a canvas Power App for your ASP.NET web API"
+description: "Learn how to use the Power Platform connected service integration with Visual Studio to create a canvas Power App for your ASP.NET web API"
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
 ms.date: 04/06/2023
 ms.reviewer: jdaly
-ms.topic: tutorial
+ms.topic: how-to
 search.audienceType: 
   - developer
 ---
 # Create a Canvas App front end for your ASP.NET web API
 
-Power Platform enables web API developers to quickly build mobile or web applications using a Power Apps canvas app as a front end. With the Power Platform connected service in Visual Studio, ASP.NET web API developers can create a custom connector to be used with Power Apps and Power Automate.
+Power Platform enables web API developers to quickly build mobile or web applications using a Power Apps canvas app as a front end. With the Power Platform connected service in Visual Studio, ASP.NET web API developers can create a custom connector you can use with Power Apps and Power Automate.
 
 You can start creating a canvas app before publishing your API to a public endpoint using Visual Studio *dev tunnels*. Dev Tunnels allows the web API to be running locally, while you build a Power App during the inner loop and debug in real time.
 
@@ -33,11 +33,11 @@ This tutorial uses the sample ASP.NET Weather web API to create a custom connect
 
 1. On the menu bar, select **File** > **New** > **Project**.
 1. On the **Create a new project** page, type `web api` into the search box.
-1. Select **ASP.NET Core Web API**, and then click **Next**.
-1. Type `WeatherSample` into **Project name**, and then click **Next**.
-1. Click **Create**.
+1. Select **ASP.NET Core Web API**, and then select **Next**.
+1. Type `WeatherSample` into **Project name**, and then select **Next**.
+1. Select **Create**.
 
-This creates a solution named `WeatherSample` with a `WeatherSample` project. This project contains an example controller for a RESTful HTTP service.
+Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. This project contains an example controller for a RESTful HTTP service.
 
 ## Step 2: Add Power Platform as a connected service
 
@@ -46,31 +46,31 @@ This creates a solution named `WeatherSample` with a `WeatherSample` project. Th
 1. In **Solution Explorer**, right-click the **Connected Services** node, and, from the context menu, select **Manage Connected Services**.
 1. In the **Connected Services** tab, select the + icon for **Service Dependencies**.
 1. On the **Add dependency** dialog, type `Power Platform` into the search box.
-1. Select **Microsoft Power Platform**, and then click **Next**.
-1. If you aren't signed in already, sign into your Microsoft Power Platform account. If you don't have an Power Platform account, [Create a Developer Environment](create-developer-environment.md).
+1. Select **Microsoft Power Platform**, and then select **Next**.
+1. If you aren't signed in already, sign into your Microsoft Power Platform account. If you don't have a Power Platform account, [Create a Developer Environment](create-developer-environment.md).
 1. In the **Connect to Microsoft Power Platform** screen: select your developer environment.
 1. In **Custom connectors name**, the value `WeatherSample_Connector` should already be set.
-1. In **Select a public dev tunnel**, click the **+** icon.
+1. In **Select a public dev tunnel**, select the **+** icon.
    
    1. In the field **Name**, type `SampleTunnel`.
    1. Select **Tunnel Type**: **Persistent**.
    1. Select **Access** : **public**.
-   1. Click **OK**.
+   1. Select **OK**.
    
-1. Click **Finish**
-1. Once the connected service is configured, click **Close**.
+1. Select **Finish**
+1. Once the connected service is configured, select **Close**.
 
 ## Step 3: Create a Power App with the Custom Connector
 
-When a tunnel is active and Visual Studio runs a web app, the web browser opens to a tunnel URL instead of a localhost URL. With you Visual Studio Solution running:
+When a tunnel is active and Visual Studio runs a web app, the web browser opens to a tunnel URL instead of a localhost URL. With your Visual Studio Solution running:
 
 1. In Visual Studio, press F5, or choose **Debug** > **Start Debugging** from the Visual Studio menu, or select the green **Start** arrow.
-1. The browser will open. A warning page is show on the first request sent to the tunnel URL. Click **Continue**.
+1. The browser opens. A warning page is show on the first request sent to the tunnel URL. Select **Continue**.
 1. With the web API running, in a new browser, open [Power Apps](https://make.powerapps.com). Select your developer environment in the top right corner.
 1. [Create a blank canvas app](/power-apps/maker/canvas-apps/create-blank-app). Select **Phone** as the format.
 1. In the top menu, select **Add data**.
-1. Type "WeatherSample" in the search box. Select the **WeatherSample_Connector**, and click **Connect**. More information: [Add connections to your canvas app](/power-apps/maker/canvas-apps/add-data-connection)
-<!-- Above didn't work for me -->
+1. Type "WeatherSample" in the search box. Select the **WeatherSample_Connector**, and select **Connect**. More information: [Add connections to your canvas app](/power-apps/maker/canvas-apps/add-data-connection)
+<!-- Above didn't work for me I don't have the preview version installed -->
 1. In the menu, select **Insert**, **Button**. Drag and drop the button to the bottom of the form. Change the **Text** to **Load Data**.
 1. Add the following formula to the OnSelect Property:
    
@@ -78,12 +78,12 @@ When a tunnel is active and Visual Studio runs a web app, the web browser opens 
    ClearCollect(weatherCollection, WeatherSample_Connector.GetWeatherForecast())
    ```
    
-1. In the menu, click [Insert Vertical Gallery](/power-apps/maker/canvas-apps/add-gallery). Select the **weatherCollection** as the data source. Change the layout to title and subtitle.
+1. In the menu, select [Insert Vertical Gallery](/power-apps/maker/canvas-apps/add-gallery). Select the **weatherCollection** as the data source. Change the layout to title and subtitle.
 1. Run the app
 
 ## Step 4: Debug your API
 
-With you power app running you can set a breakpoint, and debug your Power Apps app or Power Automate flow. You can also use [Hot Reload](/visualstudio/debugger/hot-reload?view=vs-2022)
+With your power app running you can set a breakpoint, and debug your Power Apps app or Power Automate flow. You can also use [Hot Reload](/visualstudio/debugger/hot-reload?view=vs-2022)
 
 
 ### See Also
