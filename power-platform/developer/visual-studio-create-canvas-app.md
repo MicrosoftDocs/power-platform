@@ -41,7 +41,7 @@ Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. 
 
 :::image type="content" source="media/vs-step2-1.png" alt-text="Add service dependency":::
 
-1. In **Solution Explorer**, right-click the **Connected Services** node, and, from the context menu, select **Manage Connected Services**.
+1. In **Solution Explorer**, right-click the **Connected Services** node and select **Manage Connected Services** from the context menu.
 1. In the **Connected Services** tab, select the **+** icon for **Service Dependencies**.
 1. On the **Add dependency** dialog, type `Power Platform` into the search box.
 1. Select **Microsoft Power Platform**, and then select **Next**.
@@ -64,7 +64,7 @@ Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. 
 When a tunnel is active and Visual Studio runs a web app, the web browser opens to a tunnel URL instead of a localhost URL. With your Visual Studio Solution running:
 
 1. In Visual Studio, start debugging. You can press **F5** or your preferred method.
-1. The browser opens. You will see a warning page on the first request sent to the tunnel URL. Select **Continue**.
+1. The browser opens. You'll see a warning page on the first request sent to the tunnel URL. Select **Continue**.
 1. With the web API running, in a new browser, open [Power Apps](https://make.powerapps.com). Select your developer environment in the top right corner.
 1. [Create a blank canvas app](/power-apps/maker/canvas-apps/create-blank-app). Select **Phone** as the format.
 1. In the top menu, select **Add data**.
