@@ -64,13 +64,13 @@ Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. 
 When a tunnel is active and Visual Studio runs a web app, the web browser opens to a tunnel URL instead of a localhost URL. With your Visual Studio Solution running:
 
 1. In Visual Studio, start debugging. You can press **F5** or your preferred method.
-1. The browser opens. A warning page is show on the first request sent to the tunnel URL. Select **Continue**.
+1. The browser opens. You will see a warning page on the first request sent to the tunnel URL. Select **Continue**.
 1. With the web API running, in a new browser, open [Power Apps](https://make.powerapps.com). Select your developer environment in the top right corner.
 1. [Create a blank canvas app](/power-apps/maker/canvas-apps/create-blank-app). Select **Phone** as the format.
 1. In the top menu, select **Add data**.
-1. Type "WeatherSample" in the search box. Select the **WeatherSample_Connector**, and select **Connect**. More information: [Add connections to your canvas app](/power-apps/maker/canvas-apps/add-data-connection)
+1. Type `WeatherSample` in the search box. Select the **WeatherSample_Connector**, and select **Connect**. More information: [Add connections to your canvas app](/power-apps/maker/canvas-apps/add-data-connection)
 <!-- Above didn't work for me with VS 2022 v17.5.3. I don't have the preview version installed -->
-1. In the menu, select **Insert**, **Button**. Drag and drop the button to the bottom of the form. Change the **Text** to **Load Data**.
+1. In the menu, select **Insert** > **Button**. Drag and drop the button to the bottom of the form. Change the **Text** to **Load Data**.
 1. Add the following formula to the **OnSelect** property:
    
    ```powerapps-dot
@@ -78,7 +78,7 @@ When a tunnel is active and Visual Studio runs a web app, the web browser opens 
    ```
    
 1. In the menu, select [Insert Vertical Gallery](/power-apps/maker/canvas-apps/add-gallery). Select the **weatherCollection** as the data source. Change the layout to title and subtitle.
-1. Run the app
+1. Run the app. You should see the result as shown at the top this article.
 
 ## Step 4: Debug your API
 
