@@ -2,7 +2,6 @@
 title: "Release notes and latest version of the CoE starter kit ALM Accelerator for Makers | MicrosoftDocs"
 description: "Release notes and latest version of the CoE Starter Kit ALM Accelerator for Makers 1.11."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Released version ALM Accelerator for Makers 1.11

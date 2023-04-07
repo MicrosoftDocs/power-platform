@@ -5,16 +5,12 @@ keywords:
 author: shmcarth
 ms.subservice: alm
 ms.author: shmcarth
-manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Overview of application lifecycle management with Microsoft Power Platform

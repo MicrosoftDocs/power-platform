@@ -10,8 +10,6 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - mduelae
   - gregli-msft
@@ -107,6 +105,8 @@ Other elements include:
 
 **[Connection](reference/signals.md)** – Returns information about your network connection.
 
+**[Copy](reference/function-copy.md)** - Copies text to the clipboard on the device where the app is running.
+
 **[Count](reference/function-table-counts.md)** – Counts table records that contain numbers.
 
 **[Cos](reference/function-trig.md)** – Returns the cosine of an angle specified in radians.
@@ -189,7 +189,10 @@ Other elements include:
 
 **[HashTags](reference/function-hashtags.md)** – Extracts the hashtags (#strings) from a string.
 
+**[Host](reference/object-host.md)** - Provides information about the current host running the app.
+
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
+
 
 ## I
 
@@ -296,6 +299,8 @@ Other elements include:
 **[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
+
+**[PDF](reference/function-pdf.md)** - Export contents from the current screen to an object for use in multiple scenarios.
 
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
 

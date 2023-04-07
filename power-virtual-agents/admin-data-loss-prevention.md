@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Apply data loss prevention policies to chatbots"
 description: "Use and configure DLP policies with PowerShell cmdlets to help prevent accidental data exfiltration or data loss."
 keywords: "PVA"
@@ -7,7 +7,6 @@ ms.date: 10/07/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: admin, dlp
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

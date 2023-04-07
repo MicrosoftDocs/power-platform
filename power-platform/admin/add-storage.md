@@ -12,11 +12,6 @@ ms.topic: conceptual
 ms.date: 08/24/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Add Microsoft Dataverse storage capacity
 

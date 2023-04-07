@@ -10,11 +10,6 @@ ms.author: tjvass
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Set up Microsoft Power Platform self-service analytics to export Power Platform inventory and usage data (preview)

@@ -5,7 +5,6 @@ keywords:
 author: tapanm-msft
 ms.subservice: alm
 ms.author: hasharaf
-manager: kvivek
 ms.custom: ""
 ms.date: 08/08/2022
 ms.reviewer: tapanm
@@ -13,9 +12,6 @@ ms.reviewer: tapanm
 ms.topic: "article"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Scenario 7: Add canvas apps and cloud flows to solutions by default for a healthy ALM (preview)
 

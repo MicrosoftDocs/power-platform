@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # PowerShell support for Power Apps 
@@ -435,7 +430,10 @@ Displays a list of all API connections you have in the default environment. Nati
 Get-AdminPowerAppConnector
 ```
 
-Returns a list of all custom connector details in the tenant. Does not return custom connectors that are in a solution. This is a known limitation.
+Returns a list of all custom connector details in the tenant. 
+
+> [!Note]
+> `Get-AdminPowerAppConnector` does not list custom connectors that are in a solution. This is a known limitation.
 
 ### Data loss prevention (DLP) policy commands 
 

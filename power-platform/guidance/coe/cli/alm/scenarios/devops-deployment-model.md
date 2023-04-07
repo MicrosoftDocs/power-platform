@@ -4,7 +4,6 @@ description: "Overview of deployment models for the ALM Accelerator using the Ce
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-manager: pladhani
 ms.custom: ""
 ms.date: 11/30/2021
 
@@ -12,9 +11,6 @@ ms.topic: "article"
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
 # CoE ALM Accelerator for Power Platform DevOps deployment model
