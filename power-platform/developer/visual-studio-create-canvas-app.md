@@ -84,7 +84,7 @@ When a tunnel is active and Visual Studio runs a web app, the web browser opens 
 
 ## Step 4: Debug your API
 
-With your power app running you can set a breakpoint, and debug your Power Apps app or Power Automate flow. You can also use [Hot Reload](/visualstudio/debugger/hot-reload?view=vs-2022)
+With your power app running you can set a breakpoint, and debug your Power Apps app or Power Automate flow. You can also use [Hot Reload](/visualstudio/debugger/hot-reload)
 
 
 ### See Also
