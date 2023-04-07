@@ -31,9 +31,7 @@ This tutorial uses the sample ASP.NET Weather web API to create a custom connect
 
 ## Step 1: Create a new ASP.NET project in Visual Studio
 
-1. On the menu bar, select **File** > **New** > **Project**.
-1. On the **Create a new project** page, type `web api` into the search box.
-1. Select **ASP.NET Core Web API**, and then select **Next**.
+1. Create a new **ASP.NET Core Web API** project, and then select **Next**.
 1. Type `WeatherSample` into **Project name**, and then select **Next**.
 1. Select **Create**.
 
@@ -44,7 +42,7 @@ Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. 
 :::image type="content" source="media/vs-step2-1.png" alt-text="Add service dependency":::
 
 1. In **Solution Explorer**, right-click the **Connected Services** node, and, from the context menu, select **Manage Connected Services**.
-1. In the **Connected Services** tab, select the + icon for **Service Dependencies**.
+1. In the **Connected Services** tab, select the **+** icon for **Service Dependencies**.
 1. On the **Add dependency** dialog, type `Power Platform` into the search box.
 1. Select **Microsoft Power Platform**, and then select **Next**.
 1. If you aren't signed in already, sign into your Microsoft Power Platform account. If you don't have a Power Platform account, [Create a Developer Environment](create-developer-environment.md).
@@ -54,6 +52,7 @@ Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. 
    
    1. In the field **Name**, type `SampleTunnel`.
    1. Select **Tunnel Type**: **Persistent**.
+   <!-- I don't see the option to select Tunnel Type or Access after upgrading to VS 2022 v17.5.3  -->
    1. Select **Access** : **public**.
    1. Select **OK**.
    
@@ -64,13 +63,13 @@ Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. 
 
 When a tunnel is active and Visual Studio runs a web app, the web browser opens to a tunnel URL instead of a localhost URL. With your Visual Studio Solution running:
 
-1. In Visual Studio, press F5, or choose **Debug** > **Start Debugging** from the Visual Studio menu, or select the green **Start** arrow.
+1. In Visual Studio, start debugging. You can press **F5** or your preferred method.
 1. The browser opens. A warning page is show on the first request sent to the tunnel URL. Select **Continue**.
 1. With the web API running, in a new browser, open [Power Apps](https://make.powerapps.com). Select your developer environment in the top right corner.
 1. [Create a blank canvas app](/power-apps/maker/canvas-apps/create-blank-app). Select **Phone** as the format.
 1. In the top menu, select **Add data**.
 1. Type "WeatherSample" in the search box. Select the **WeatherSample_Connector**, and select **Connect**. More information: [Add connections to your canvas app](/power-apps/maker/canvas-apps/add-data-connection)
-<!-- Above didn't work for me I don't have the preview version installed -->
+<!-- Above didn't work for me with VS 2022 v17.5.3. I don't have the preview version installed -->
 1. In the menu, select **Insert**, **Button**. Drag and drop the button to the bottom of the form. Change the **Text** to **Load Data**.
 1. Add the following formula to the OnSelect Property:
    
