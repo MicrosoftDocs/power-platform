@@ -10,11 +10,6 @@ ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Connect Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue 
 

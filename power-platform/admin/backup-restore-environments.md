@@ -11,11 +11,6 @@ ms.author: cgarty
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Back up and restore environments
 

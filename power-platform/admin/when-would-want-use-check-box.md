@@ -10,11 +10,6 @@ ms.author: jimholtz
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # When would I want to use this check box?
 

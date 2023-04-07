@@ -10,11 +10,6 @@ ms.author: mihaelab
 ms.reviewer: kvivek
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365
 

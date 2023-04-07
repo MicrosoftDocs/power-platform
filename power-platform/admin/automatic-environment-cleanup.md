@@ -10,11 +10,6 @@ ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Automatic environment cleanup
 

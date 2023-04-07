@@ -2,7 +2,6 @@
 title: "Use the Innovation Backlog app to manage app and flow ideas | MicrosoftDocs"
 description: "Use the Innovation Backlog solution to gather ideas, pain points, and business value measures."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Use the Innovation Backlog app to manage app and flow ideas
 

@@ -11,8 +11,6 @@ ms.subservice: power-fx
 ms.author: jorisde
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae

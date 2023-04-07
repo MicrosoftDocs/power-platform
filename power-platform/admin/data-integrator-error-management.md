@@ -10,11 +10,6 @@ ms.author: nhelgren
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Data Integrator error management and troubleshooting
 
