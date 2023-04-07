@@ -2,7 +2,6 @@
 title: "Using the Power Platform administration planning component | Microsoft Docs"
 description: "Get insights into the tasks and time involved in administering Power Platform."
 author: stjeffer
-manager: phtopnes
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,9 +11,6 @@ ms.author: stjeffer
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
 # Use Microsoft Power Platform administration planning

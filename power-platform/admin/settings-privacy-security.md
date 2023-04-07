@@ -9,11 +9,6 @@ ms.date: 08/04/2022
 ms.author: jimholtz 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage privacy and security settings
 

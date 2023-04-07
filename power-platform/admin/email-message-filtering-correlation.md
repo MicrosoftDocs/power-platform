@@ -10,11 +10,6 @@ author: sericks007
 ms.contributor: dmartens
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ms.custom: bap-template
 ---
 

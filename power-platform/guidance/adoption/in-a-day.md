@@ -2,7 +2,6 @@
 title: "Internal training events - Microsoft Power Platform | MicrosoftDocs"
 description: "Microsoft has created a variety of hands-on lab content, ranging from App in an Hour, App in a Day, Power Virtual Agents in a Day, to Admin in a Day."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Provide internal training events
 

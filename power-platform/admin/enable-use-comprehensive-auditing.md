@@ -10,11 +10,6 @@ ms.author: tjvass
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Microsoft Dataverse and model-driven apps activity logging 
 

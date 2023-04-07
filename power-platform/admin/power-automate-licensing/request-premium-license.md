@@ -12,11 +12,6 @@ ms.author: prkoduku
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Request a Power Automate premium license from organization admins

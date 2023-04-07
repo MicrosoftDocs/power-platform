@@ -10,11 +10,6 @@ ms.date: 08/31/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # System Settings Goals tab
 

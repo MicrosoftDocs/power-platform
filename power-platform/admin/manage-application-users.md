@@ -10,11 +10,6 @@ ms.topic: conceptual
 ms.date: 03/18/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage application users in the Power Platform admin center
 

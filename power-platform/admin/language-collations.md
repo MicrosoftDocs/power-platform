@@ -8,15 +8,9 @@ ms.topic: conceptual
 author: "NHelgren"
 ms.subservice: admin
 ms.author: nhelgren
-manager: kvivek
 ms.reviewer: matp
 search.audienceType: 
   - maker
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Microsoft Dataverse language collations
 

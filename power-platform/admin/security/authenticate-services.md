@@ -13,11 +13,6 @@ ms.author: lanced
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Authenticating to Power Platform services
 
