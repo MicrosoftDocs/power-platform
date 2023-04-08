@@ -51,6 +51,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | CDSFileStorage | CDSFileStorage@onmicrosoft.com | To perform background operations like Organization Lifecycle (OLC) operations, file reconciliation and migration. | FileStoreService App Access |
 | | CDSUserManagement | CDSUserManagement<br />@onmicrosoft.com | To provision and synchronize users into Dataverse from Active Directory. | System Administrator |
 | |GDSGlobalDiscovery | GDSGlobalDiscovery<br />@onmicrosoft.com | To validate which environments that users can access. | Global Discovery Service  |
+| | PowerPlatformAuthorization | PowerPlatformAuthorization<br />@onmicrosoft.com | To aggregate environment role assignments for tenant-wide discovery. | Global Discovery Service  |
 | | BAP | BAP@onmicrosoft.com | To perform administrative operations on Dataverse linked environments: fetch user roles, provision users, assign roles in Power Platform portals.| N/A |
 | | Microsoft Forms Pro | enterprisesurveyappuser<br />@contoso.com | To perform data integration between Dynamics 365 Customer Voice and Dataverse | System Administrator  |
 | | PowerVIrtualAgents  | PowerVirtualAgents<br />@onmicrosoft.com | To manage the PVA capabilities within environments | CCI Admin, System Customizer, and Environment Maker    |
