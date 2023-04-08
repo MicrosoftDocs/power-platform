@@ -2,7 +2,6 @@
 title: "Admin and governance best practices - Microsoft Power Platform | MicrosoftDocs"
 description: "Discover admin and governance best practices for Microsoft Power Platform."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Admin and governance best practices
 

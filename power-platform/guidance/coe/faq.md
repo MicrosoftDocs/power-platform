@@ -2,7 +2,6 @@
 title: "Frequently asked questions | MicrosoftDocs"
 description: "Frequently asked questions, tips, and how-to's about getting the CoE Starter Kit set up"
 author: manuelap-msft
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/08/2023
@@ -11,10 +10,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Frequently asked questions, tips, and how-to's
 

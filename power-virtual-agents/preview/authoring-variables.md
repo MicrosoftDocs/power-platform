@@ -9,7 +9,6 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: clmori
-manager: shellyha
 ms.custom: authoring, ceX, bap-template
 ms.collection: virtual-agent
 ---

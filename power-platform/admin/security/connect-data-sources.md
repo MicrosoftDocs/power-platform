@@ -13,11 +13,6 @@ ms.author: lanced
 ms.reviewer: tapanm
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 contributors:
   - tapanm-msft
   - lancedMicrosoft

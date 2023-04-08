@@ -2,7 +2,6 @@
 title: "ALM Accelerator for Makers | MicrosoftDocs"
 description: "ALM Accelerator for Makers will help you follow ALM patterns and practices to implement source control and move your solutions from your development environment to test and production environments by using GitHub."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Use the ALM Accelerator for Makers app (preview)
 

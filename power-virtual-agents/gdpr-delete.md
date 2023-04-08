@@ -8,7 +8,6 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.custom: ceX, gdpr
-manager: shellyha
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---

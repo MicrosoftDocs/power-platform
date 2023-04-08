@@ -9,8 +9,6 @@ ms.date: 02/08/2023
 ms.author: jorisde
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 contributors:
   - jorisdg
 ---

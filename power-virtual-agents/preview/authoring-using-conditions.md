@@ -7,7 +7,6 @@ ms.topic: how-to
 author: v-alarioza
 ms.author: v-alarioza
 ms.reviewer: gapretty
-manager: shellyha
 ms.custom: authoring, topics, message, question, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents

@@ -11,11 +11,6 @@ contributors:
     - ProfessorKendrick
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage feature settings
 
