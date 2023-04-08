@@ -11,11 +11,6 @@ ms.topic: conceptual
 ms.date: 04/03/2023
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Audit security roles (preview)
 

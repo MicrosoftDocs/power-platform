@@ -8,10 +8,6 @@ ms.date: 06/30/2021
 ms.subservice: guidance
 ms.author: tayoshi
 ms.reviewer: kathyos
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - rogergilchrist
   - rjmax

@@ -2,7 +2,6 @@
 title: "Set up app quarantine components | MicrosoftDocs"
 description: "Learn how to set up the app quarantine components of the CoE Starter Kit"
 author: manuelap-msft
-manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up app quarantine components

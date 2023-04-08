@@ -5,7 +5,6 @@ keywords:
 author: shmcarth
 ms.subservice: alm
 ms.author: shmcarth
-manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: "matp"
@@ -13,9 +12,6 @@ ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Scenario 1: Citizen development
 This scenario aims at the legacy canvas app makers and flow makers in Power Apps and Power Automate, respectively, who work in a Microsoft Dataverse environment *without* a Dataverse database.

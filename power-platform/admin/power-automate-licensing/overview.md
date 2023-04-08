@@ -7,14 +7,8 @@ ms.component: pa-admin
 ms.topic: overview
 ms.date: 10/31/2021
 ms.author: prkoduku
-manager: kvivek
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Overview of Power Automate licensing

@@ -9,10 +9,6 @@ ms.author: jeschro
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Configuring user permissions for ALM Accelerator for Power Platform user setup (preview)
 

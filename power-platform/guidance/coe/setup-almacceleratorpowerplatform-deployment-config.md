@@ -2,7 +2,6 @@
 title: "Configuration and data deployment in pipelines | MicrosoftDocs"
 description: "Creating deployment configuration files in the ALM accelerator for Microsoft Power Platform pipelines to configure your solution in a downstream environment."
 author: jenschristianschroder
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
@@ -11,10 +10,6 @@ ms.author: jeschro
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Configuration and data deployment in pipelines (preview)
 

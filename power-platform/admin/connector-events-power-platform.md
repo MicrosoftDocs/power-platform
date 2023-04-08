@@ -15,8 +15,6 @@ ms.date: 10/17/2022
 ms.subservice: admin
 ms.author: sameerch
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

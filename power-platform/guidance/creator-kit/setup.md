@@ -2,7 +2,6 @@
 title: "Set up the Creator Kit | MicrosoftDocs"
 description: "Prerequisites and instructions for installing the Creator Kit."
 author: denisem-msft
-manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/16/2022
@@ -11,10 +10,6 @@ ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist

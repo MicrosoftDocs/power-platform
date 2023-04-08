@@ -2,7 +2,6 @@
 title: "Set up the ALM accelerator for Microsoft Power Platform components | MicrosoftDocs"
 description: "The ALM accelerator for Microsoft Power Platform will help you follow ALM patterns and practices to source-control and move your solutions from your development environment to test and production environments with Azure DevOps. This guide will walk through the setup of the accelerator by using the Center of Excellence CLI"
 author: jenschristianschroder 
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
@@ -11,10 +10,6 @@ ms.author: jeschro
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up the ALM accelerator for Microsoft Power Platform components (preview)
