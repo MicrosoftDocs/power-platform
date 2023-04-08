@@ -10,9 +10,6 @@ ms.subservice: alm
 ms.author: "shmcarth" # MSFT alias of Microsoft employees only
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Check for solution component dependencies
 

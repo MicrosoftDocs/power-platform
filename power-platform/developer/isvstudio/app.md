@@ -10,8 +10,6 @@ ms.topic: article
 ms.subservice: developer
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
 contributors: 
   - JimDaly
 ---

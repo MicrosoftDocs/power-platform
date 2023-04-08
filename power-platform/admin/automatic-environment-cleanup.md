@@ -4,17 +4,12 @@ description: "Learn about the automatic process to identify and disable environm
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/05/2023
+ms.date: 04/06/2023
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Automatic environment cleanup
 
@@ -57,8 +52,11 @@ Within 24 hours after the licenses and capacity are applied to your tenant, the 
 ## Environment cleanup based on inactivity
 Power Platform provides a cleanup mechanism that automatically removes environments from your tenant that are left inactive. An environment will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments. This cleanup process is automatic.
 
+> [!IMPORTANT]
+> This feature can't be turned off. Admin, however, can review the last activity date for developer environments in Power Platform admin center.
+
 ### Types of environments affected
-Developer and Dataverse for Teams environments are affected by the inactvity-based cleanup.
+Developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the inactvity-based cleanup.
 
 ### Timeline for inactive environments
 

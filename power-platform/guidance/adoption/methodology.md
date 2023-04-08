@@ -2,7 +2,6 @@
 title: "Microsoft Power Platform adoption best practices | MicrosoftDocs"
 description: "The Microsoft Power Platform adoption practices provide admin and governance, nurture, strategy, and vision best practices."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Microsoft Power Platform adoption best practices
 

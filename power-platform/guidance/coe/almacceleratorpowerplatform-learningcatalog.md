@@ -2,7 +2,6 @@
 title: "Learning catalog for ALM Accelerator for Power Platform | MicrosoftDocs"
 description: "Learning catalog for ALM Accelerator for Power Platform. "
 author: rsantos00
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/29/2022
@@ -11,10 +10,6 @@ ms.author: rusant
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # ALM Accelerator for Power Platform (AA4PP) : Learning Catalog
 

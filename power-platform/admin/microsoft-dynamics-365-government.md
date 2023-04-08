@@ -10,11 +10,6 @@ ms.author: macarrer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Dynamics 365 US Government  

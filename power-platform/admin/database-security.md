@@ -13,11 +13,6 @@ ms.topic: conceptual
 ms.date: 04/04/2023
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Configure user security to resources in an environment

@@ -2,7 +2,6 @@
 title: "Nurture components | MicrosoftDocs"
 description: "The CoE nurture components solution contains assets to share best practices and templates, and onboard new makers"
 author: manuelap-msft
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/08/2023
@@ -11,10 +10,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Use nurture components
 

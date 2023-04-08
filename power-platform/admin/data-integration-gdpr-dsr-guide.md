@@ -10,11 +10,6 @@ ms.author: nhelgren
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Responding to Data Subject Rights (DSR) requests for Data Integration for Microsoft Dataverse customer data
 

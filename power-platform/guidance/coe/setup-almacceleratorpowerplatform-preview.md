@@ -2,7 +2,6 @@
 title: "Set up ALM accelerator for Microsoft Power Platform using Admin App | MicrosoftDocs"
 description: "The ALM accelerator for Microsoft Power Platform helps you follow ALM patterns and practices to source-control and move your solutions from your development environment to test and production environments by using Azure DevOps. This guide walks through the setup steps of the accelerator using the Admin App."
 author: jenschristianschroder
-manager: tapanm-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/15/2023
@@ -11,10 +10,6 @@ ms.author: jeschro
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Set up ALM accelerator for Microsoft Power Platform (preview)
 
