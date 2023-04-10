@@ -2,17 +2,12 @@
 title: Text function in Power Apps
 description: Reference information including syntax and examples for the Text function in Power Apps.
 author: gregli-msft
-
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
 ms.date: 11/14/2018
 ms.subservice: power-fx
 ms.author: gregli
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
@@ -160,7 +155,7 @@ By default, **Text** uses the language of the user running the app. The **Langua
 - _AnyValue_ - Required. Value to convert to a text representation. A default format is used.
 
 **Text** ( _Untyped_ )
-- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a string. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md). If the untyped object is a number or boolean, it will be converted to text.
+- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a string. Acceptable values are dependent on the untyped provider. For [**JSON**](function-parsejson.md), if the untyped object is a number or boolean, it will be converted to text.
 
 ## Examples
 
