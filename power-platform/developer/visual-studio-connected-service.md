@@ -26,9 +26,9 @@ Dev tunnels enable an ad-hoc connection between your web API running locally and
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) version 17.5 or later with the ASP.NET and web development workload installed. You need to be signed in to Visual Studio to create and use dev tunnels. The feature isn't available in Visual Studio for Mac.
+- [Visual Studio 2022 version 17.6 Preview 3](/visualstudio/releases/2022/release-notes-preview) with the ASP.NET and web development workload installed. You need to be signed in to Visual Studio to create and use dev tunnels. The feature isn't available in Visual Studio for Mac.
 - [Dev tunnels](https://learn.microsoft.com/en-us/aspnet/core/test/dev-tunnels?view=aspnetcore-7.0) preview feature enabled. Select Tools > Options > Environment > Preview Features > Enable dev tunnels for Web Applications.
-- An ASP.NET Core Web API project - Tutorial: Create a web API with ASP.NET Core | Microsoft Learn
+- An [ASP.NET Core Web API project](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio)
 - A Microsoft Power Automate environment – more info: [Create a Developer Environment](https://review.learn.microsoft.com/en-us/power-platform/developer/create-developer-environment).
 
 ## Limitations
