@@ -25,13 +25,16 @@ Key access revocation can be triggered by completing any of the following tasks:
 - Deleting the key vault.
 - Deleting the enterprise policy.
 - Disabling the key version.
+- Disabling key vault networking's Public access
+- Adding a virtual network or adding an IP range outside of Microsoft services' reach
 
   > [!CAUTION]
   > You should never revoke key access as part of your normal business process. When you revoked key access, all environments associated with the enterprise policy will be taken completely offline immediately and your users who were active in the environment will experience unplanned downtime including data loss. If you decide to leave the service, locking the environment can ensure that your customer data can never be accessed again by anyone, including Microsoft.
   > Note the following about environments locking:
   >
   > - Locked environments can't be restored from backup.
-  > - Locked production environments are deleted if they aren't unlocked after 28 days.
+  > - Locked environment's data cannot be copied to another environment.
+  > - Locked production and sandbox environment's data persist in the platform but it is not accessible.
 
 ## Unlock environments
 
