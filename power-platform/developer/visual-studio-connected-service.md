@@ -22,6 +22,8 @@ Code-first developers can now create custom connectors from within Visual Studio
 - Automatically generate a [custom connector](https://learn.microsoft.com/en-us/connectors/custom-connectors/) for your Power Platform environment
 - Configure a [dev tunnel](https://learn.microsoft.com/en-us/aspnet/core/test/dev-tunnels?view=aspnetcore-7.0) to locally connect to your custom connector
 
+Dev tunnels enable an ad-hoc connection between your web API running locally and your Power Apps. This feature can be used, to locally debug and test your web API in the context of the Microsoft Power Platform in real time (inner loop).
+
 ## Prerequisites
 
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) version 17.5 or later with the ASP.NET and web development workload installed. You need to be signed in to Visual Studio to create and use dev tunnels. The feature isn't available in Visual Studio for Mac.
