@@ -42,7 +42,7 @@ The *application lifecycle* is the cyclical software development process that in
 
 ## ALM for Power Apps, Power Automate, Power Virtual Agents, and Dataverse
 
-[Dataverse](/powerapps/maker/data-platform/data-platform-intro) in Microsoft Power Platform lets you securely store and manage data and processes that's used by business applications. To use the Power Platform features and tools available to manage ALM, all environments that participate in ALM must include a Dataverse database.
+[Dataverse](/powerapps/maker/data-platform/data-platform-intro) in Microsoft Power Platform lets you securely store and manage data and processes that are used by business applications. To use the Power Platform features and tools available to manage ALM, all environments that participate in ALM must include a Dataverse database.
 
 The following concepts are important for understanding ALM using the Microsoft Power Platform.
 
