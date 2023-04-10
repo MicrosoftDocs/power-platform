@@ -1,22 +1,17 @@
 ---
-title: Working with JSON (experimental)
+title: Working with JSON in Power Fx (experimental)
 description: Guide to working with JSON in Power Fx.
 author: jorisdg
-
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
 ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: jorisde
-search.audienceType: 
-  - maker
-search.app: 
-  - PowerApps
 contributors:
   - jorisdg
 ---
-# Working with JSON (experimental)
+# Working with JSON in Power Fx (experimental)
 
 > [!IMPORTANT]
 > - This is an experimental feature.
@@ -50,7 +45,7 @@ Set( release, DateValue ( untyped.ReleaseDate ) );
 Set( preorder, Boolean ( untyped.AvailableForPreOrder ) );
 ```
 
-It is generally a good idea to explicitly convert an untyped object's value to a specific type. Setting an untyped object as a variable value makes the variable an **Untyped object** as well, so converting such value explicitly when setting to a variable is likely needed. But in most cases untyped object values will convert to a specific type automatically ("coerce") when used as function parameters where the type is a simple type like boolean, number or text, and the function's parameter profile does not have potential conflicting overloads.
+It is generally a good idea to explicitly convert an untyped object's value to a specific type. Setting an untyped object as a variable value makes the variable an **Untyped object** as well. So, converting such value explicitly when setting to a variable is likely needed. But in most cases untyped object values will convert to a specific type automatically ("coerce") when used as function parameters where the type is a simple type like boolean, number, or text, and the function's parameter profile does not have potential conflicting overloads.
 
 ```powerapps-dot
 Left( untyped.ItemName, 1 ); // "W"
@@ -74,7 +69,8 @@ untyped.Quantity + untyped.Quantity // result is a number
 untyped.Quantity & untyped.ItemName // result is text
 ```
 
-Note that **JSON** does not have a **GUID**, **Color**, **Time** or **DateTime** type. These values are represented as a string. If you assign a **JSON** untyped object value containing a date to a text property directly, the original text of the **JSON** will be used. This may be important when dealing with time zones, date formats, etc. In such cases you should explicitly convert the values using **GUID()**, **ColorValue()**, **DateValue()**, **DateTimeValue()**, etc.
+> [!NOTE]
+> **JSON** does not have a **GUID**, **Color**, **Time** or **DateTime** type. These values are represented as a string. If you assign a **JSON** untyped object value containing a date to a text property directly, the original text of the **JSON** will be used. This may be important when dealing with time zones, date formats, etc. In such cases you should explicitly convert the values using **GUID()**, **ColorValue()**, **DateValue()**, **DateTimeValue()**, etc.
 
 In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
 
