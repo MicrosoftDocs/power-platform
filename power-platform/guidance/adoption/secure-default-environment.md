@@ -1,38 +1,32 @@
 ---
-title: "Secure the Power Platform default environment"
-description: "Guidance for securing the Power Platform default environment."
+title: Secure the default environment
+description: Learn how to secure the default environment in Microsoft Power Platform.
 author: rranjit83
-ms.topic: conceptual
-ms.date: 11/30/2022
 ms.author: rranjit
 ms.reviewer: matp
+ms.topic: how-to
+ms.date: 04/10/2023
+ms.custom: bap-template
 ms.subservice: guidance
 ---
+
 # Secure the default environment
 
-This article covers the areas to focus on as you think through the security of your default environment.
+Every employee in your organization has access to the default Power Platform environment. As a Power Platform admin, you need to consider ways to secure that environment while keeping it accessible for makers' personal productivity uses. This article provides suggestions.
 
-## Managing administrators
+## Assign administrator roles judiciously
 
-In large organizations, you might want to assign the environment admin and system administrator roles to a few users instead of assigning the more powerful Power Platform administrator role.
+Consider whether your admin users need to have the Power Platform administrator role. Would the environment admin or system administrator role be more appropriate? In any case, limit the more powerful Power Platform admin role to just a few users. [Learn more about administering Power Platform environments](/power-platform/admin/environments-administration).
 
-Additional information:
+## Communicate intent
 
-- [Environment overview](/power-platform/admin/environments-overview)
+One of the key challenges for the Power Platform Center of Excellence (CoE) team is communicating how makers should use the default environment. Here are a few ways to make clear the intended uses of the default environment.
 
-- [Environment administration](/power-platform/admin/environments-administration)
+### Rename the default environment
 
-## Communicating intent
+The default environment is created with the name ***TenantName* (default)**. You can [change the environment name](/power-platform/admin/edit-properties-environment) to something more descriptive, like *Personal Productivity Environment*, to clearly call out the intent.
 
-One of the key challenges of the Center of Excellence (CoE) team is communicating how they want employees to use the default environment. This section highlights a few ways in which you can communicate default environment usage with makers across the organization. 
-
-### Renaming default environment
-
-One of the first things a Power Platform CoE can do is rename the default environment. The default environment is created with the name: ***TenantName* (default)**. A Power Platform admin can change the name of the default environment to something more descriptive like *Personal Productivity Environment* clearly calling out the intent.
-
-More information: [Edit properties of an environment](/power-platform/admin/edit-properties-environment)
-
-### Power Platform hub
+### Power Platform hub STOPPED EDITING HERE
 
 In addition to renaming the default environment, the Power Platform CoE team should set up a central Wiki that contains information about the organization's Power Platform service. This can include, but isn't limited to:
 
@@ -192,7 +186,7 @@ As a recommended practice, explicitly configure the tenants that your employees 
 > - Power Platform tenant isolation is different from Azure AD-wide tenant restriction because it doesn't impact Azure AD-based access outside of Power Platform.
 > - Power Platform tenant isolation works only for connectors using Azure AD-based authentication, such as the Office 365 Outlook and SharePoint connectors.
 
-## See also
+### See also
 
 [Restrict cross-tenant inbound and outbound access (preview)](/power-platform/admin/cross-tenant-restrictions)
 
