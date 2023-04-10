@@ -3,7 +3,7 @@ title: "Connector action control | MicrosoftDocs"
 description: You can use connector action control to allow or block individual actions within a given connector.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/06/2023
+ms.date: 04/10/2023
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -71,7 +71,7 @@ Get-AdminPowerAppConnectorAction
 Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
 ```
 
-|Id   |Type  |Properties  |
+|ID   |Type  |Properties  |
 |---------|---------|---------|
 |TodaysForecast     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=Get forecast for today; description=Get the forecast for the current day in the specified location.; visib...        |
 |OnCurrentWeatherChange     | Microsoft.ProcessSimple/apis/apiOperations        | @{summary=When the current weather changes; description=Triggers a new flow when the specified weather measure chang...        |
