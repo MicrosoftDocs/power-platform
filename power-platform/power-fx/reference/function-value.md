@@ -2,17 +2,12 @@
 title: Value function in Power Apps
 description: Reference information including syntax and examples for the Value function in Power Apps.
 author: gregli-msft
-
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
 ms.date: 02/06/2020
 ms.subservice: power-fx
 ms.author: gregli
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
@@ -47,7 +42,7 @@ To convert date and time values, use the [**DateValue**](function-datevalue-time
 
 **Value**( _Untyped_ )
 
-- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a number. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON number, boolean or text that can be converted to a number. Keep in mind that locale-related formats are important considerations when communicating with external systems.
+- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a number. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON number, boolean, or text that can be converted to a number. Keep in mind that locale-related formats are important considerations when communicating with external systems.
 
 ## Examples
 
