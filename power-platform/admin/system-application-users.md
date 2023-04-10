@@ -3,7 +3,7 @@ title: "Special system users and application users"
 description: "Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose." 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2023
+ms.date: 04/10/2023
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -64,16 +64,16 @@ Most of these users are hidden from user views but they can be found by using th
 | | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework  |
 | | # Sharepoint Syntex | SharepointSyntex@onmicrosoft.com | To allow Sharepoint to use AI Builder document processing models | Basic User  |
 
-**The purpose of the system account?** 
+## The purpose of the system account? 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 
 - The primary usage of this user account is to meet special business requirements that require elevation of privileges; for example, running background processes to integrate with other applications. 
 - It can also be used to handle rollup scenarios where individual users do not have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user’s tasks and individual users can only update their own task priority but not the Case priority. 
 
-**Technical details on permissions?**
+## Technical details on permissions?
 - This user account can perform any actions and has all system privileges. 
 - Records created/updated by this user account are audited. 
 
-**Technical details on the security?**
+## Technical details on the security?
 - This user account can't sign in to Dynamics 365 apps.  
 - Administrators have the option to use this user account when registering their plug-ins. 
 - This user account doesn't have a mailbox, so they can't be used to send or receive emails.
@@ -81,7 +81,7 @@ Most of these users are hidden from user views but they can be found by using th
 - The details of this user account can't be modified from the User Form interface. 
 - This user account doesn't show up in any views.
 
-**The purpose of the application users?** 
+## The purpose of the application users? 
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
 - Since these are built-in user accounts, they can't be updated. The security role that is assigned to these accounts cannot be updated either. This is to prevent any service outages.  
 - These users do not consume any service licenses.
