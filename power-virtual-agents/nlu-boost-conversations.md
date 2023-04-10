@@ -97,10 +97,6 @@ You can also change the URL, disable **Boost conversations**, or change the leve
 
 You can now test your bot to see how well it responds to questions related to the content on the URL you specified.
 
-> [!NOTE]
->  
-> During the Preview of this feature you'll need to contact Microsoft Support if you want to publish a bot that has **Boost conversations** enabled.
-
 ### URL considerations
 
 The URL you provide represents the scope of content that will be used for generating responses. 
