@@ -16,19 +16,28 @@ search.audienceType:
 
 Code-first developers can now create custom connectors from within Visual Studio. Together with the existing capabilities developers have to build Microsoft Azure Functions or APIs in Visual Studio, this Visual Studio integration enables a complete end-to-end experience in custom connector development.
 
-With the Power Platform as a connected service in Visual Studio, ASP.NET web API developers can create a custom connector to be used to create Power Apps and with Power Automate.
+[Connected Services](https://learn.microsoft.com/en-us/visualstudio/azure/overview-connected-services?view=vs-2022) is a collection of tools in Visual Studio that help you connect to different services. For Visual Studio 2022, we added support for the Microsoft Power Platform for [ASP.NET Core Web API projects](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio). With this integration, you can do the following:
 
-## Tunneling
+- Connect to a [Microsoft Power Platform environment](https://learn.microsoft.com/en-us/power-platform/admin/create-environment)
+- Automatically generate a [custom connector](https://learn.microsoft.com/en-us/connectors/custom-connectors/) for your Power Platform environment
+- Configure a [dev tunnel](https://learn.microsoft.com/en-us/aspnet/core/test/dev-tunnels?view=aspnetcore-7.0) to locally connect to your custom connector
 
-When a developer is working in an API within Visual Studio, the service is running in your localhost. By using the tunneling feature from Visual Studio, you can expose your local service to a public endpoint before publishing your API.
+## Prerequisites
 
-## OpenAPI definition
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) version 17.5 or later with the ASP.NET and web development workload installed. You need to be signed in to Visual Studio to create and use dev tunnels. The feature isn't available in Visual Studio for Mac.
+- [Dev tunnels](https://learn.microsoft.com/en-us/aspnet/core/test/dev-tunnels?view=aspnetcore-7.0) preview feature enabled. Select Tools > Options > Environment > Preview Features > Enable dev tunnels for Web Applications.
+- An ASP.NET Core Web API project - Tutorial: Create a web API with ASP.NET Core | Microsoft Learn
+- A Microsoft Power Automate environment – more info: [Create a Developer Environment](https://review.learn.microsoft.com/en-us/power-platform/developer/create-developer-environment).
 
-To create a custom connector, you must describe the API you want to connect to so that the connector understands the API's operations and data structures. You can provide an OpenAPI file, or Visual Studio generates it for you.
+## Limitations
+
+The current integration only works for the following dev tunnels configurations:
+- Tunnel type: Persistent
+- Access type: Public
 
 ## Next steps
 
-Try the Power Platform connected service
+Get started by right-clicking on the Connected Services node in Solution Explorer and select Manage Connected Services. Search for Power Platform and setup your connection.
 
 > [!div class="nextstepaction"]
 > [Create a Canvas App front end for your ASP.NET web API](visual-studio-create-canvas-app.md)<br/>
