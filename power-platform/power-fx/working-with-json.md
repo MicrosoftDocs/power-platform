@@ -65,14 +65,23 @@ Label1.Text: untyped.Quantity
 InputText1.Default: untyped.ItemName
 ```
 
+And finally, when [using operators](./operators.md) such as **&** or **+**, an **Untyped object** will be coerced if there is no ambigiuty on the expected type.
+
+```powerapps-dot
+untyped.Quantity + 1 // result is a number
+untyped.ItemName & " (preorder)" // result is text
+untyped.Quantity + untyped.Quantity // result is a number
+untyped.Quantity & untyped.ItemName // result is text
+```
+
+Note that **JSON** does not have a **GUID**, **Color**, **Time** or **DateTime** type. These values are represented as a string. If you assign a **JSON** untyped object value containing a date to a text property directly, the original text of the **JSON** will be used. This may be important when dealing with time zones, date formats, etc. In such cases you should explicitly convert the values using **GUID()**, **ColorValue()**, **DateValue()**, **DateTimeValue()**, etc.
+
 In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
 
 ```powerapps-dot
 untyped.'01'
 untyped.'my-field'
 ```
-
-Note that **JSON** does not have a **GUID**, **Color**, **Time** or **DateTime** type. These values are represented as a string. If you assign a **JSON** untyped object value containing a date to a text property directly, the original text of the **JSON** will be used. This may be important when dealing with time zones, date formats, etc. In such cases you should explicitly convert the values using **GUID()**, **ColorValue()**, **DateValue()**, **DateTimeValue()**, etc.
 
 Power Fx won't evaluate the existence of the field until the formula is run. This allows flexibility in the incoming **JSON**. For example, the previous **JSON** may sometimes contain an extra field called `Discount`. But in our previous example, this field isn't present. Writing a formula that uses the `Discount` field won't result in any errors, during the app making process or when users use the app. If the field is missing when the formula runs, the value will just result in a [Blank()](reference/function-isblank-isempty.md) value.
 
