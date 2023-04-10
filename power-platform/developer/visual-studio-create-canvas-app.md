@@ -16,9 +16,9 @@ search.audienceType:
 
 Power Platform enables web API developers to quickly build mobile or web applications using a Power Apps canvas app as a front end. With the Power Platform connected service in Visual Studio 2022, ASP.NET web API developers can easily create a custom connector you can use with Power Apps and Power Automate.
 
-You can start creating a canvas app before publishing your API to a public endpoint using Visual Studio [*dev tunnels*](https://learn.microsoft.com/en-us/aspnet/core/test/dev-tunnels?view=aspnetcore-7.0#create-a-tunnel). Dev tunnels enable an ad-hoc connection between your web API running locally and your Power Apps. This feature can be used, to locally debug and test your web API in the context of the Microsoft Power Platform in real time (inner loop).
+You can start creating a canvas app before publishing your API to a public endpoint using Visual Studio [*dev tunnels*](/aspnet/core/test/dev-tunnels#create-a-tunnel). Dev tunnels enable an ad-hoc connection between your web API running locally and your Power Apps. This feature can be used, to locally debug and test your web API in the context of the Microsoft Power Platform in real time (inner loop).
 
-This tutorial uses the sample ASP.NET Weather web API to create a custom connector that you can use with a canvas app. [More info](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio)
+This tutorial uses the sample ASP.NET Weather web API to create a custom connector that you can use with a canvas app. [More info](/aspnet/core/tutorials/first-web-api?tabs=visual-studio)
 
 :::image type="content" source="media/vs-powerApp.png" alt-text="Power app created from sample ASP.NET Weather web API":::
 
