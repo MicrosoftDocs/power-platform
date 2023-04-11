@@ -224,15 +224,6 @@
                   href: coe/cli/alm/personas.md
                 - name: Personas
                   href: coe/cli/alm/personas.md
-            - name: Maturity model
-              href: coe/cli/alm/maturity/overview.md
-            - name: Scenarios
-              href: coe/cli/alm/scenarios/overview.md
-              items:
-                - name: DevOps deployment model
-                  href: coe/cli/alm/scenarios/devops-deployment-model.md
-                - name: Tenant deployments
-                  href: coe/cli/alm/scenarios/tenant-deployments.md
             - name: CLI development
               href: coe/cli/cli-development/overview.md
               items:
