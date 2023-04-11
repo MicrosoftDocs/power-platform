@@ -15,7 +15,91 @@ ms.collection: virtualagent
 
 # Capture telemetry with Application Insights
 
-[!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]s
+In addition to the native analytics features within PVA, you can send telemetry data to Application Insights. Telemetry offers insights into your bot by logging the messages and events sent to / from your bot, which Topics are triggered during user conversations, and even custom telemetry events that you can send from your Topics. In this article, you'll learn how to capture telemetry from your PVA bot into Application Insights.
+
+> [!IMPORTANT]
+> Application Insights is a feature of [Azure Monitor](/azure/azure-monitor/overview), an extensible Application Performance Management (APM) tool that allows you to monitor your live applications. It requires a subscription to [Microsoft Azure](https://azure.microsoft.com/).
+
+# [Preview](#tab/preview)
+
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+
+## Connect your PVA bot to Application Insights
+
+To connect your bot to Application Insights, you need to add your instrumentation key to the project.
+
+1. Navigate to the **Bot details** page under **Settings**.
+
+1. Switch to the **Advanced** tab.
+
+1. Within the **Application Insights** section, populate the **Connection string** setting. See the [Azure Monitor documentation](https://go.microsoft.com/fwlink/?linkid=2227096) to find out how to locate your connection string.
+
+1. Optionally, you can choose to enable one of the following settings.
+
+- **Log activities** - If enabled, details of incoming / outgoing messages and events will be logged.
+
+- **Log sensitive Activity properties** - If enabled, the values of certain properties that could be considered sensitive on incoming / outgoing messages and events will be included in logs. The properties that are considered potentially sensitive are userid, name, text and speak (text and speak properties only apply to messages).
+
+## Analyze bot telemetry with Application Insights
+
+After connecting your bot to Application Insights, telemetry data will be logged when users interact with the bot, including testing within PVA. To see the logged telemetry data, navigate to the ***Logs*** section of your Application Insights resource in Azure.
+
+From here you can use [Kusto queries](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) to query and analyze your data. See [example queries](#example-queries).
+
+## Example queries
+
+A query can be as simple as specifying a single table, such as `customEvents`, which will show all custom telemetry events logged from PVA, but you can use [Kusto queries](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) to narrow down your results further, including;
+
+- Adding a time interval
+- Extending your results using [custom dimensions](#custom-dimensions). Custom dimensions are custom properties that are logged, along with the pre-built fields, such as timestamp or the event name.
+- A where clause to limit the data returned based on a condition
+- Using more built in Kusto functions to determine what information is shown and how.
+
+For example, the query below results in a line chart that shows how many distinct users communicated with your bot per day for the past 14 days.
+
+```
+let queryStartDate = ago(14d);
+let queryEndDate = now();
+let groupByInterval = 1d;
+customEvents
+| where timestamp > queryStartDate
+| where timestamp < queryEndDate
+| summarize uc=dcount(user_Id) by bin(timestamp, groupByInterval)
+| render timechart
+```
+
+> [!IMPORTANT]
+> The data within some fields will vary and be more / less applicable depending on the channel that is being used. For example, you'll only get a correct count of unique users in the query above if they're authenticated users and their user ids will be consistent across conversations. In anonymous scenarios where a random user id is generated per conversation, the user id field is less useful.
+
+## Excluding telemetry from test conversations from your queries
+
+You bot logs telemetry for all conversations, including those that happen within the PVA test canvas. If you want to exclude telemetry gathered during testing, you can extend your query with the `designMode` custom dimension that is captured on all events, and use a where clause in your query.
+
+The example below shows all custom events, excluding those captured through the test canvas.
+
+customEvents
+| extend isDesignMode = customDimensions['designMode']
+| where isDesignMode != "False"
+
+## Custom Dimensions
+
+Much of the specific activity data received from PVA is stored in the customDimensions field. You can [see a custom dimension field being used](#excluding-telemetry-from-test-conversations-from-your-queries) in a query to exclude telemetry from test conversations.
+
+| Field        | Description                     | Sample Values                                           |
+|--------------|---------------------------------|--------------------------------------------------------|
+| type | Type of activity                 | `message`, `conversationUpdate`, `event`, `invoke`       |
+| channelId    | Channel identifier              | `emulator`, `directline`, `msteams`, `webchat`           |
+| fromId       | From Identifier                 | `<id>`                                                 |
+| fromName     | Username from client            | `John Bonham`, `Keith Moon`, `Steve Smith`, `Steve Gadd` |
+| locale       | Client origin locale            | `en-us`, `zh-cn`, `en-GB`, `de-de`, `zh-CN`              |
+| recipientId  | Recipient identifier            | `<id>`                                                 |
+| recipientName| Recipient name                  | `John Bonham`, `Keith Moon`, `Steve Smith`, `Steve Gadd` |
+| text         | Text in message                 | `find a coffee shop`                                    |
+| designMode         | Conversation happened within the test canvas                 | `True` / `False`                                     |
+
+# [Classic](#tab/web)
+
+[!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
 
 You can use Bot Framework Composer with Power Virtual Agents to send event data to a telemetry service in [Application Insights](/azure/azure-monitor/app/app-insights-overview). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior, and provides data on availability, performance, and usage.
 
