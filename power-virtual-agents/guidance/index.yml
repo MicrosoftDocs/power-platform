@@ -11,89 +11,37 @@ metadata:
   ms.subservice: guidance
   ms.topic: landing-page
   ms.collection: collection
-  author: taiki-yoshida
-  ms.author: tayoshi
-  ms.date: 11/01/2020
+  author: hejammes
+  ms.author: hejammes
+  ms.date: 04/11/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
   # Card
-  - title: Planning a Power Virtual Agents project
+  - title: Building chatbots
     linkLists:
       - linkListType: overview
         links:
-          - text: Introduction
-            url: planning/introduction.md
-          - text: Planning phase
-            url: planning/planning-phase.md
-          - text: Designing phase
-            url: planning/process-design.md
-          - text: Making phase
-            url: planning/making-phase.md
-          - text: Testing phase
-            url: planning/testing-strategy.md
-          - text: Deploying and refining phase
-            url: planning/deploy-to-production.md
+          - text: Topics best practices
+            url: topics-in-pva.md
+          - text: Trigger phrases best practices
+            url: trigger-phrases-best-practices.md  
 
   # Card
-  - title: Building bots
+  - title: Measuring and improving chatbots
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
-          - text: Bot best practices
-            url: bot-best-practices.md
-          - text: Use pro-code RPA with SAP GUI
-            url: rpa-sap-playbook/vbscript-based-sap-gui-automation-overview.md
-          - text: Use low-code RPA with SAP GUI
-            url: rpa-sap-playbook/action-based-sap-gui-automation-manually-overview.md
-          - text: Use no-code RPA with SAP GUI
-            url: rpa-sap-playbook/action-based-sap-gui-automation-recorder-overview.md
-          - text: Conclusion
-            url: rpa-sap-playbook/conclusion.md
+          - text: Deflection optimization
+            url: deflection-overview.md
+          - text: Custom analytics strategy
+            url: custom-analytics-strategy.md
 
   # Card
-  - title: Automation Kit for Power Platform
+  - title: How-to articles
     linkLists:
-      - linkListType: overview
-        links:
-          - text: Overview
-            url: automation-kit/overview/introduction.md
-          - text: Setup
-            url: automation-kit/setup/main.md
-          - text: Use the Automation kit
-            url: automation-kit/use-automation-kit.md
-
-  # Card
-  - title: Automation adoption best practices
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Overview
-            url: ./automation-coe/overview.md
-          - text: Holistic Enterprise Automation Techniques (HEAT)
-            url: ./automation-coe/heat.md
-          - text: Automation Maturity Model
-            url: ./automation-coe/automation-maturity-model-overview.md
       - linkListType: how-to-guide
         links:
-          - text: Automation admin and governance
-            url: ./automation-coe/automation-admin-gov.md
-          - text: Automation Kit for Power Platform
-            url: ./automation-kit/overview/introduction.md
-          - text: Manage Power Virtual Agents for desktop on Windows
-            url: ./automation-coe/manage-pad-on-windows.md
-
-  # Card
-  - title: Related content
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Create your first flow
-            url: ../getting-started.md#create-your-first-flow
-          - text: What is desktop flow?
-            url: ../desktop-flows/overview.md
-          - text: Power Platform Center of Excellence (CoE) kit
-            url: /power-platform/guidance/coe/starter-kit
-          - text: Power Platform ALM guide
-            url: /power-platform/alm/
+          - text: Embed a chatbot on a Power Page
+            url: /power-pages/guidance/integrate-pva.md
