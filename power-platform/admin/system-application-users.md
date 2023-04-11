@@ -13,11 +13,11 @@ search.audienceType:
   - admin
 ---
 
-# System and application users 
+# System and application users
 
 There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and might not be modifiable. See other system [predefined security roles](database-security.md#predefined-security-roles).  
 
-Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Do not delete or modify these users including changing or reassigning security role. 
+Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Do not delete or modify these users including changing or reassigning security role.
 
 ## System users
 
@@ -26,7 +26,7 @@ Most of these users are hidden from user views but they can be found by using th
 | Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (does not have privilege to customer data) |
 | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 
-## Application users 
+## Application users
 
 |Full name  |User name  |Purpose  | Security role assigned |
 |-----------|-----------|---------|------------------------|
@@ -70,28 +70,30 @@ Most of these users are hidden from user views but they can be found by using th
 | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework  |
 | # Sharepoint Syntex | SharepointSyntex@onmicrosoft.com | To allow Sharepoint to use AI Builder document processing models | Basic User  |
 
-## The purpose of the system account? 
-- The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 
-- The primary usage of this user account is to meet special business requirements that require elevation of privileges; for example, running background processes to integrate with other applications. 
-- It can also be used to handle rollup scenarios where individual users do not have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user’s tasks and individual users can only update their own task priority but not the Case priority. 
+## The purpose of the system account?
+
+- The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins.
+- The primary usage of this user account is to meet special business requirements that require elevation of privileges; for example, running background processes to integrate with other applications.
+- It can also be used to handle rollup scenarios where individual users do not have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user’s tasks and individual users can only update their own task priority but not the Case priority.
 
 ## Technical details on permissions?
-- This user account can perform any actions and has all system privileges. 
-- Records created/updated by this user account are audited. 
+
+- This user account can perform any actions and has all system privileges.
+- Records created/updated by this user account are audited.
 
 ## Technical details on the security?
+
 - This user account can't sign in to Dynamics 365 apps.  
-- Administrators have the option to use this user account when registering their plug-ins. 
+- Administrators have the option to use this user account when registering their plug-ins.
 - This user account doesn't have a mailbox, so they can't be used to send or receive emails.
-- Since you can't log into the apps using this user account, it doesn't have any related entities (user settings, queues, calendar, team membership, internal address, etc.). 
-- The details of this user account can't be modified from the User Form interface. 
+- Since you can't log into the apps using this user account, it doesn't have any related entities (user settings, queues, calendar, team membership, internal address, etc.).
+- The details of this user account can't be modified from the User Form interface.
 - This user account doesn't show up in any views.
 
-## The purpose of the application users? 
+## The purpose of the application users?
+
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
 - Since these are built-in user accounts, they can't be updated. The security role that is assigned to these accounts cannot be updated either. This is to prevent any service outages.  
 - These users do not consume any service licenses.
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
