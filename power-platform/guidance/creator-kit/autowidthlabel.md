@@ -1,7 +1,7 @@
 ---
 title: AutoWidthLabel control reference | Creator Kit
 description: Learn about the details and properties of the AutoWidthLabel control in the Creator Kit.
-author: denisem-msft
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/16/2022

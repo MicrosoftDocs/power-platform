@@ -1,7 +1,7 @@
 ---
 title: CommandBar control reference | Creator Kit
 description: Learn about the details and properties of the CommandBar control in the Creator Kit.
-author: denisem-msft
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 11/02/2022
