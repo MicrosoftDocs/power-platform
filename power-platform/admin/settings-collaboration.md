@@ -35,12 +35,12 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Settings|Description|  
 > |--------------|-----------------|  
 > |**Model-driven apps**||  
-> | Show modern share on views and dashboards (preview) | Description goes here. |
+> | Show modern share on views and dashboards (preview) | Users will see the Share button in views and dashboards making it easy to copy links and share with others |
 > |**Enable sharing**||  
-> |Allow users to share read-only links to records with other users from this environment.|Description goes here.|  
+> |Allow users to share read-only links to records with other users from this environment.|Allows users with 'share' privilege to give 'read-only' access to records when sharing with 'specific people' option selected.|  
 > |**Team Integration**||  
-> |Show record name and type to unauthorized users when unfurling links in Teams chats| Description goes here.|
-> Intall the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams.| Description goes here. |
+> |Show record name and type to unauthorized users when unfurling links in Teams chats| When unfurling links in Teams, show name and type of record in unfurled card when link is shared within the organization|
+> Intall the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams.| Active users of Dynamics 365 apps annd Power Apps model-driven apps will get the Dynamics 365 app for Teams automatically installed in their Teams client.  |
 
 ## App authoring experiences
 > [!div class="mx-tableFixed"]
@@ -48,5 +48,4 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |--------------|-----------------|  
 > |**Coauthoring (preview)**||  
 > |Enable coauthoring, which lets people simultaneously edit model-driven apps together. | Description. More information: [Coauthoring in model-driven apps (preview)](/power-apps/maker/model-driven-apps/coauthoring)| 
-> Coauthoring in canvas apps | Description goes here. |
-> Copresence in cavas studio | Descripion goes here. |
+
