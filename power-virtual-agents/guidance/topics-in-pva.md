@@ -29,27 +29,26 @@ A topic can optionally have trigger phrases and contains conversation nodes:
 
 ## Default topics
 
-When creating a new chatbot, multiple topics get pre-created to help make the chatbot readily operational.
+Any new chatbot comes with a set of pre-created topics that make the chatbot readily operational with core capabilities. Both custom and system topics are pre-created.
 
 ### Custom topics
-Some of the generated custom topics offer basic conversational abilities, such as Greetings, Goodbye, Thank you, Start Over, etc., while 
-[lesson topics](/power-virtual-agents/authoring-template-topics) serve as example topics for topic authors. 
+The generated custom topics offer fundamental conversational abilities, such as Greetings, Goodbye, Thank you, Start Over, etc. while the [lesson topics](/power-virtual-agents/authoring-template-topics) serve as example topics for topic authors. 
 
-You can choose to disable or delete custom topics.
+Bot authors can choose to disable or delete custom topics. 
 
-Any new topic that you create will be a custom topic.
+Any new topic is a custom topic.
 
 ### System topics
 
-A numbrt of  [system topics](/power-virtual-agents/preview/authoring-system-topics) are also natively available, and help manage specific conversation events.
+A number of  [system topics](/power-virtual-agents/preview/authoring-system-topics) are also natively available and help manage specific conversation events. 
 
 These can be disabled but cannot be deleted.
 
 | System topic | Description |
 |----------|-----------|
-|**[Conversation Start](/power-virtual-agents/preview/authoring-system-topics#conversation-start)** | This topic is the one that gets proactively started to initiate the conversation. Users can be greeted with messages by the bot, even before they’ve started entering any input. |
-| **[End of conversation](/power-virtual-agents/preview/authoring-system-topics#end-of-conversation)** | This topic should be positioned at the end of each conversation with a chatbot, so that the user can confirm if the provided answer was useful or not, and fill out a statisfaction survey. This is crucial to act on your chatbot key performance indicators. |
-| **[Escalate](/power-virtual-agents/preview/authoring-system-topics#escalate)** | This topic is used to hand off the conversation to a live agent (when configured – for example to [Dynamics 365 Omnichannel for Customer Service](/power-virtual-agents/configuration-hand-off-omnichannel)). |
+|**[Conversation Start](/power-virtual-agents/preview/authoring-system-topics#conversation-start)** | Depending on the client, this gets proactively started to initiate the conversation with the user. Users can be greeted with messages by the bot, even before they’ve started entering any input. |
+| **[End of Conversation](/power-virtual-agents/preview/authoring-system-topics#end-of-conversation)** | This topic is meant to be positioned at the end of the conversation with a chatbot, so that the user can confirm if their query has been addressed or not, and fill out a statisfaction survey. This topic is important to measure a chatbot's performance and act on it. |
+| **[Escalate](/power-virtual-agents/preview/authoring-system-topics#escalate)** | The escalate topic is used to hand off the conversation to a live agent (when configured – for example to [Dynamics 365 Omnichannel for Customer Service](/power-virtual-agents/configuration-hand-off-omnichannel)) The session is . |
 | **[Fallback](/power-virtual-agents/preview/authoring-system-topics#fallback)** | This topic is triggered when the user query isn’t understood and can’t be associated with confidence with any existing topic. It is useful to have a strategy to catch these exceptions and handle them in a graceful way (with additional data sources or through an escalation path). |
 | **[Multiple Topics Matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched)** (also known as 'Did You Mean' or DYM)| This topic is triggered when multiple topics can potentially address the user input and the chatbot doesn't have sufficient confidence to trigger one over the others. When a 'Multiple Topics Matched' topic is triggered, the user is presented with a list of potential matching topics and can choose the most appropriate one. |*
 | **[On Error](/power-virtual-agents/preview/authoring-system-topics#fallback)** | **** |
