@@ -309,6 +309,9 @@ Command example with export:
 
 Makers can find a premium icon next to the name of a premium flow.
 
+### Power Automate capabilities included with Per App plans
+A Power Apps Per App plan assignment does not give users the ability to create or own Power Automate flows that use Premium features.  Creating and owning flows using Premium features requires assignment of a Power Apps Per User or Power Automate Per User license.  This does not apply for flows [associated to an app](https://learn.microsoft.com/en-us/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
+
 ## Multiplexing
 
 Multiplexing refers to the use of hardware or software that a customer uses to pool connections, reroute information, or reduce the number of users that directly access or use the Power Apps, Power Automate, and the Power Virtual Agents service. 
