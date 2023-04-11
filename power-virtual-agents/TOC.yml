@@ -112,7 +112,7 @@
           href: advanced-fundamentals.md
         - name: Enable advanced AI features
           href: advanced-ai-features.md
-        - name: Create a PVA bot with language understanding (preview)
+        - name: Create bots with Azure Language Understanding (preview)
           href: advanced-clu-integration.md
         - name: Use entities and slot filling
           href: advanced-entities-slot-filling.md

@@ -1,5 +1,5 @@
 ---
-title: "Automate bot creation with CLU integration"
+title: "Create bots with Azure Language Understanding"
 description: "Automate the creation of bots in Power Virtual Agents bots with CLU integration"
 keywords: "Cognitive language understanding, PVA, CLU, CLU models"
 ms.date: 4/03/2023
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 ---
 
-# Automate bot creation with CLU integration
+# ACreate bots with Azure Language Understanding
 
 Cognitive language understanding (CLU) model integration lets users use their CLU models with PVA projects. For bots created with this capability, bot creators can now access existing CLU model intents and entities directly in PVA. [Azure Language Studio](/azure/cognitive-services/language-service/overview) is a cloud-based service from Azure Cognitive Service for Language, providing users with natural language processing (NLP) features for analyzing conversational text. For more information, see [Conversational Language Understanding](/azure/cognitive-services/language-service/conversational-language-understanding/overview).
 

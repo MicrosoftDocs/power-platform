@@ -1,5 +1,5 @@
 ---
-title: "Get started with CLU integration"
+title: "Get started with language understanding with CLU integration"
 description: "Get started creating bots in Power Virtual Agents bots with CLU integration"
 keywords: "Cognitive language understanding, PVA, CLU, CLU models"
 ms.date: 4/03/2023
@@ -80,8 +80,6 @@ You create a new bot by mapping existing topics to CLU intents using the **Map i
 
 Once you’ve competed this procedure, your bot topics now appear in the PVA **Topics** pane. For more information, see [Managing topics](authoring-topic-management.md).
 
-[add screen shot of Topics pane]
-
 ## Manually map CLU entities to PVA pre-built data types
 
 1.	From the left navigation, select **Entities**.
@@ -98,10 +96,3 @@ Once you’ve competed this procedure, your bot topics now appear in the PVA **T
 1.	(Optional) If you want to import JSON schema from a sample file, choose **Get schema from sample JSON** to access the external file. 
 
 For more information, see [Entity registration](advanced-clu-entity-registration.md).
-
-[Perhaps add a conceptual image would be good to shows users what an external JSON file with entities and how they map to PVA entities?]
-
-
-## Troubleshooting tips: Error handling and validations
-
-TBD 
