@@ -4,11 +4,13 @@ description: "Learn how to use the Power Platform connected service integration 
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-ms.date: 04/06/2023
+ms.date: 04/11/2023
 ms.reviewer: jdaly
 ms.topic: how-to
 search.audienceType: 
   - developer
+contributors:
+- JimDaly
 ---
 # Create a Canvas App front end for your ASP.NET web API (Preview)
 

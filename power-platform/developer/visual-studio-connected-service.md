@@ -4,11 +4,13 @@ description: "Add Power Platform as a connected service in Visual Studio to crea
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-ms.date: 4/6/2023
+ms.date: 4/11/2023
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
   - developer
+contributors:
+- JimDaly
 ---
 # Visual Studio connected service (Preview)
 
@@ -16,11 +18,11 @@ search.audienceType:
 
 Code-first developers can now create custom connectors from within Visual Studio. Together with the existing capabilities developers have to build Microsoft Azure Functions or APIs in Visual Studio, this Visual Studio integration enables a complete end-to-end experience in custom connector development.
 
-[Connected Services](/visualstudio/azure/overview-connected-services?view=vs-2022) is a collection of tools in Visual Studio that help you connect to different services. For Visual Studio 2022, we added support for the Microsoft Power Platform for [ASP.NET Core Web API projects](/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio). With this integration, you can do the following:
+[Connected Services](/visualstudio/azure/overview-connected-services) is a collection of tools in Visual Studio that help you connect to different services. For Visual Studio 2022, we added support for the Microsoft Power Platform for [ASP.NET Core Web API projects](/aspnet/core/tutorials/first-web-api?tabs=visual-studio). With this integration, you can do the following:
 
 - Connect to a [Microsoft Power Platform environment](/power-platform/admin/create-environment)
 - Automatically generate a [custom connector](/connectors/custom-connectors/) for your Power Platform environment
-- Configure a [dev tunnel](/aspnet/core/test/dev-tunnels?view=aspnetcore-7.0) to locally connect to your custom connector
+- Configure a [dev tunnel](/aspnet/core/test/dev-tunnels) to locally connect to your custom connector
 
 Dev tunnels enable an ad-hoc connection between your web API running locally and your Power Apps. This feature can be used, to locally debug and test your web API in the context of the Microsoft Power Platform in real time (inner loop).
 
