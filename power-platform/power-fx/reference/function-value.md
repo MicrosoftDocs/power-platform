@@ -26,11 +26,11 @@ Different languages interpret **,** and **.** differently. By default, the text 
 
 Notes on the format of the string:
 
-- The string may be prefixed with the currency symbol for the current language. The currency symbol is ignored. Currency symbols for other languages are not ignored.
-- The string may be include a percent sign (**%**) at the end, indicating that it is a percentage. The number will be divided by 100 before being returned. Percentages and currency symbols cannot be mixed.
+- The string may be prefixed with the currency symbol for the current language. The currency symbol is ignored. Currency symbols for other languages aren't ignored.
+- The string may be include a percent sign (**%**) at the end, indicating that it's a percentage. The number will be divided by 100 before being returned. Percentages and currency symbols can't be mixed.
 - The string may be in scientific notation, with 12 x 10<sup>3</sup> expressed as "12e3".
 
-If the number is not in a proper format, **Value** will return an error.
+If the number isn't in a proper format, **Value** will return an error.
 
 To convert date and time values, use the [**DateValue**](function-datevalue-timevalue.md), [**TimeValue**](function-datevalue-timevalue.md), or [**DateTimeValue**](function-datevalue-timevalue.md) functions.
 
