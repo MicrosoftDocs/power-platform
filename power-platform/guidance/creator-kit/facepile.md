@@ -1,7 +1,7 @@
 ---
 title: Facepile control reference | Creator Kit (preview)
 description: Learn about the Creator Kit Facepile control.
-author: denisem-msft
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 10/06/2022

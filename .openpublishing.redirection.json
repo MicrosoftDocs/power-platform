@@ -427,12 +427,22 @@
     },
     {
       "source_path": "power-platform/power-fx/reference/data-types.md",
-      "redirect_url": "power-platform/power-fx/data-types.md",
+      "redirect_url": "/power-platform/power-fx/data-types",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/guidance/coe/motivation.md",
       "redirect_url": "overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/dlp-granular-controls.md",
+      "redirect_url": "/power-platform/admin/connector-action-control",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/dlp-endpoint-input-formats-examples.md",
+      "redirect_url": "/power-platform/admin/connector-action-control",
       "redirect_document_id": "false"
     }
   ]
