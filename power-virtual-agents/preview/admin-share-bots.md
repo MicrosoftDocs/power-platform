@@ -6,7 +6,6 @@ ms.date: 12/08/2022
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: micchow
 ms.custom: multi-author, admin, ceX, bap-template
 ms.collection: virtual-agent
@@ -18,4 +17,4 @@ ms.service: power-virtual-agents
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-This feature is available in the preview and hasn't changed. For more information, see [Share your bot with other users (production)](../admin-share-bots.md).
+This feature is available in the preview and is the same as the production version. For more information, see [Share your bot with other users (production)](../admin-share-bots.md).

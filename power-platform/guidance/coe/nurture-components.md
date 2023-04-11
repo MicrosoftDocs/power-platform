@@ -2,24 +2,18 @@
 title: "Nurture components | MicrosoftDocs"
 description: "The CoE nurture components solution contains assets to share best practices and templates, and onboard new makers"
 author: manuelap-msft
-manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/21/2022
+ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Use nurture components
 
-An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You'll want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.   More information: [Set up nurture components](setup-nurture-components.md) and [Watch](https://www.youtube.com/embed/StqxBgbt_ZM) how to use the core components solution.
+An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You'll want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.   More information: [Set up nurture components](setup-nurture-components.md) and [watch the video](https://www.youtube.com/embed/StqxBgbt_ZM) on how to use the core components solution.
 
 The CoE nurture components solution contains assets relevant to everyone in the organization: admins, makers, in addition to users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md)
 
@@ -81,28 +75,32 @@ Currently, internal (Stream) videos, and external (YouTube) are the only two typ
 | Flow | Type | Schedule | Description |
 | --- | --- | --- | --- |
 | Training in a Day \| Feedback Reminder | Schedule | Daily | Sends an email to attendees of a training event on the day, and requests feedback. |
-| Training in a Day \| Registration Confirmation Automated | Automated | when a user registers for an event using the [Training in a day](#training-in-a-day--registration) app | Sends an email to attendees of a training event on the day, and requests feedback. |
+| Training in a Day \| Registration Confirmation Automated | Automated | when a user registers for an event using the [Training in a day](#training-in-a-day-pages-in-nurture-apps---maker-app) app | Sends an email to attendees of a training event on the day, and requests feedback. |
 | Training in a Day \| Reminder 3 days prior to event | Schedule | Daily | Sends a reminder email to an attendee of a Training in a Day event three days before the event. |
 
 ### Apps
 
-#### Training in a Day – Management
+#### Nurture apps - admin
 
 If you're planning to run an internal Training in a Day event (such as App in a Day), you can use this canvas app to create and manage it.
 
 **Permission**: Share with CoE admins or the owners of your internal training events.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you've installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Training in a Day Management app.](media/training2.png "Training in a Day Management app")
 
-#### Training in a Day – Registration
+#### Training in a day pages in Nurture apps - Maker app
 
-If you're planning to run a Training in a Day event, use this canvas app to enable your users to register for upcoming events.
+>[!NOTE]
+>In the February 2023 release, the **Training in a day registration** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Training in a day registration canvas app has been renamed to [deprecated] Training in a day registration and will be removed from the solution by June 2023.
+>The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
-**Permission**: As soon as you're running internal training events, share with everyone in the organization.
+If you're planning to run a Training in a Day event, use this page in the Nurture apps - Maker app to enable your users to register for upcoming events.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.  If you've installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Permission**: As soon as you're running internal training events, share the Nurture apps - Maker with everyone in the organization.
+
+**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Training in a Day Registration app.](media/training1.png "Training in a Day Registration app")
 
@@ -110,9 +108,9 @@ If you're planning to run a Training in a Day event, use this canvas app to enab
 
 ### Security roles
 
-**Maker Journey Admin SR** Gives a user full access (create, read, write, etc.) to the Maker Assessment tables. When you share the Maker Assessment Admin app with your admin team, make sure to assign them the **Maker Journey Admin SR** security role.
+**Nurture Admin SR** Gives a user full access (create, read, write, etc.) to the Maker Assessment tables. When you share the Maker Assessment Admin app with your admin team, make sure to assign them the **Maker Journey Admin SR** security role.
 
-**Maker Journey Maker SR** Gives a user read access to the Maker Assessment tables. When you share the Maker Assessment app with your organization, make sure to assign them the **Maker Journey Maker SR** security role.
+**Nurture Maker SR** Gives a user read access to the Maker Assessment tables. When you share the Maker Assessment app with your organization, make sure to assign them the **Maker Journey Maker SR** security role.
 
 ### Tables
 
@@ -124,23 +122,27 @@ If you're planning to run a Training in a Day event, use this canvas app to enab
 
 ### Apps
 
-#### Maker Assessment Admin App
+#### Nurture apps - Admin
 
-A canvas app that the Maker Assessment admin uses to enter or update the questions, answers, and categories that are listed in the apps.
+A page inside the Nurture apps - Admin app that the Solution Assessment admin uses to enter or update the questions, answers, and categories that are listed in the apps.
 
-**Permission**: Share this app with the Maker Assessment admins - this can be your CoE or Power Platform adoption lead.
+**Permission**: Share this app with the Solution Assessment admins - this can be your CoE or Power Platform adoption lead.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you've installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Maker Journey Admin app.](media/MakerJourneyAdminApp.png "Maker Journey Admin app")
 
-#### Maker Assessment
+#### Solution Assessment page in Nurture apps - Maker apps
 
-The Maker Assessment app can be used to ask users a series of questions regarding the target audience, data and support of the solution they are planning and informing them about governance, support and license considerations a maker needs to keep in mind before starting the development of their solution.
+>[!NOTE]
+>In the February 2023 release, the **Maker Assessment** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Maker Assessment canvas app has been renamed to [deprecated] Maker Assessment and will be removed from the solution by June 2023.
+>The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
-**Permission**: The Maker Assessment app can be shared with the entire organization.
+The Solution Assessment page can be used to ask users a series of questions regarding the target audience, data and support of the solution they are planning and informing them about governance, support and license considerations a maker needs to keep in mind before starting the development of their solution.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.  If you've installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Permission**: The Nurture apps - Maker can be shared with the entire organization.
+
+**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Maker Assessment app, screen 1.](media/MakerJourneyAssessmentApp_1.png "Maker Assessment app, screen 1")
 
@@ -186,13 +188,17 @@ The dashboard also provides the ability to view detailed feedback with and filte
 
 ### Apps
 
-#### Template Catalog
+#### Template Catalog page in Nurture apps - Maker app
 
-A canvas app that CoE admins can use to share app and component templates, in addition to best practice documents, with their makers.
+>[!NOTE]
+>In the February 2023 release, the **Template Catalog** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Template Catalog canvas app has been renamed to [deprecated] Template Catalog and will be removed from the solution by June 2023.
+>The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
-**Permission**: After you've made the content ready, the template catalog can be shared with the entire organization.
+A custom page that CoE admins can use to share app and component templates, in addition to best practice documents, with their makers.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you've installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Permission**: After you've made the content ready, the Nurture apps - Maker can be shared with the entire organization.
+
+**Prerequisite**: This app uses Microsoft Dataverse. If you've installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 > [!NOTE]
 > This app can't be used in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps.

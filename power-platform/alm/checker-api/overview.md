@@ -2,7 +2,7 @@
 title: "Use the Power Apps checker web API | Microsoft Docs"
 description: "The Power Apps checker Web API provides a development experience that can be used across a wide variety of programming languages, platforms, and devices"
 ms.custom: ""
-ms.date: 10/14/2020
+ms.date: 03/21/2023
 
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -15,12 +15,8 @@ author: "mhuguet" # GitHub ID
 ms.subservice: alm
 ms.author: "michu"
 ms.reviewer: "pehecke"
-manager: "maustinjones"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Use the Power Apps checker web API
 
@@ -90,6 +86,11 @@ When interacting with the Power Apps checker service, files are temporarily stor
 |Public|Production|France|france.api.advisor.powerapps.com|
 |Public|Production|Germany|germany.api.advisor.powerapps.com|
 |Public|Production|United Arab Emirates|unitedarabemirates.api.advisor.powerapps.com|
+|Public|Production|Switzerland|switzerland.api.advisor.powerapps.com|
+|Public|Production|South Africa|southafrica.api.advisor.powerapps.com|
+|Public|Production|Korea|korea.api.advisor.powerapps.com|
+|Public|Production|Norway|norway.api.advisor.powerapps.com|
+|Public|Production|Singapore|singapore.api.advisor.powerapps.com|
 |Public|Production|US Government|gov.api.advisor.powerapps.us|
 |Public|Production|US Government L4|high.api.advisor.powerapps.us|
 |Public|Production|US Government L5 (DOD)|mil.api.advisor.appsplatform.us|
@@ -143,40 +144,36 @@ The tenant ID is the value of the `ObjectId` property that is returned from `Get
 
 ## Authentication and authorization
 
- Querying for rules and rulesets do not require an OAuth token, but all of the other APIs do require the token. The APIs do support authorization discovery by calling any of the APIs that require a token. The response will be an unauthorized HTTP status code of 401 with a WWW-Authenticate header, the authorization URI, and the resource ID. You should also provide your tenant ID in the `x-ms-tenant-id` header. Refer to [Power Apps Checker authentication and authorization](/powershell/powerapps/overview#powerapps-checker-authentication-and-authorization) for more information. Below is an example of the response header returned from an API request:
+ Querying for rules and rulesets do not require an OAuth token, but all of the other APIs do require the token. The APIs do support authorization discovery by calling any of the APIs that require a token. The response will be an unauthorized HTTP status code of 401 with a WWW-Authenticate header, the authorization URI, and the resource ID. You should also provide your tenant ID in the `x-ms-tenant-id` header. Refer to [Power Apps Checker authentication and authorization](/powershell/powerapps/get-started-powerapps-checker#powerapps-checker-authentication-and-authorization) for more information. Below is an example of the response header returned from an API request:
 
 ```http
 WWW-Authenticate →Bearer authorization_uri="https://login.microsoftonline.com/0082fff7-33c5-44c9-920c-c2009943fd1e", resource_id="https://api.advisor.powerapps.com/"
 ```
 
-Once you have this information, you can choose to use the Azure Active Directory Authentication Library (ADAL) or some other mechanism to acquire the token. Below is an example of how this can be done using C# and the [ADAL library, version 4.5.1](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/4.5.1):
+Once you have this information, you can choose to use the Microsoft Authentication Library (MSAL) or some other mechanism to acquire the token. Below is an example of how this can be done using C# and the [MSAL .NET](https://www.nuget.org/packages/Microsoft.Identity.Client/) library:
 
 ```c#
-// Call the status URI as it is the most appropriate to use with a GET.
-// The GUID here is just random, but needs to be there.
-Uri queryUri = new Uri($"{targetServiceUrl}/api/status/4799049A-E623-4B2A-818A-3A674E106DE5");
-AuthenticationParameters authParams = null;
+// Substitute your own environment URL here.
+string resource = "https://<env-name>.api.<region>.dynamics.com";
 
-using (var client = new HttpClient())
-{
-    var request = new HttpRequestMessage(HttpMethod.Get, queryUri);
-    request.Headers.Add("x-ms-tenant-id", tenantId.ToString());
+// Example Azure Active Directory app registration.
+// For your custom apps, you will need to register them with Azure AD yourself.
+// See https://docs.microsoft.com/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory
+var clientId = "51f81489-12ee-4a9e-aaae-a2591f45987d";
+var redirectUri = "http://localhost"; // Loopback required for the interactive login.
 
-    // NOTE - It is highly recommended to use async/await
-    using (var response = client.SendAsync(request).GetAwaiter().GetResult())
-    {
-        if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
-        {
-            // NOTE - It is highly recommended to use async/await
-            authParams = AuthenticationParameters.CreateFromUnauthorizedResponseAsync(response).GetAwaiter().GetResult();
-        }
-        else
-        {
-            throw new Exception($"Unable to connect to the service for authorization information. {response.ReasonPhrase}");
-        }
-    }
-}
+var authBuilder = PublicClientApplicationBuilder.Create(clientId)
+    .WithAuthority(AadAuthorityAudience.AzureAdMultipleOrgs)
+    .WithRedirectUri(redirectUri)
+    .Build();
+var scope = resource + "/.default";
+string[] scopes = { scope };
+
+AuthenticationResult tokenResult =
+     await authBuilder.AcquireTokenInteractive(scopes).ExecuteAsync();
 ```
+
+For the full working code, see the Web API [QuickStart sample](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/C%23-NETx/QuickStart).
 
 Once you have acquired the token, it is advised that you provide the same token to subsequent calls in the request lifecycle. However, additional requests will likely warrant a new token be acquired for security reasons.
 

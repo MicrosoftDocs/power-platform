@@ -11,11 +11,10 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Remove and RemoveIf functions in Power Apps
@@ -28,7 +27,7 @@ Removes [records](/power-apps/maker/canvas-apps/working-with-tables#records) fro
 
 Use the **Remove** function to remove a specific record or records from a data source.
 
-For [collections](/power-apps/maker/canvas-apps/working-with-data-sources#collections), the entire record must match. You can use the **All** argument to remove all copies of a record; otherwise, only one copy of the record is removed.
+For [collections](/power-apps/maker/canvas-apps/working-with-data-sources#collections), the entire record must match. You can use the **RemoveFlags.All** argument to remove all copies of a record; otherwise, only one copy of the record is removed.
 
 ### RemoveIf function
 
@@ -44,17 +43,17 @@ You can also use the **[Clear](function-clear-collect-clearcollect.md)** functio
 
 ## Syntax
 
-**Remove**( _DataSource_, _Record1_ [, *Record2*, ... ] [, **All** ] )
+**Remove**( _DataSource_, _Record1_ [, *Record2*, ... ] [, **RemoveFlags.All** ] )
 
 - _DataSource_ – Required. The data source that contains the record or records that you want to remove.
 - _Record(s)_ – Required. The record or records to remove.
-- **All** – Optional. In a collection, the same record may appear more than once. You can add the **All** argument to remove all copies of the record.
+- **RemoveFlags.All** – Optional. In a collection, the same record may appear more than once. You can add the **RemoveFlags.All** argument to remove all copies of the record.
 
-**Remove**( _DataSource_, _Table_ [, **All** ] )
+**Remove**( _DataSource_, _Table_ [, **RemoveFlags.All** ] )
 
 - _DataSource_ – Required. The data source that contains the records that you want to remove.
 - _Table_ – Required. A table of records to remove.
-- **All** – Optional. In a collection, the same record may appear more than once. You can add the **All** argument to remove all copies of the record.
+- **RemoveFlags.All** – Optional. In a collection, the same record may appear more than once. You can add the **RemoveFlags.All** argument to remove all copies of the record.
 
 **RemoveIf**( _DataSource_, _Condition_ [, ... ] )
 

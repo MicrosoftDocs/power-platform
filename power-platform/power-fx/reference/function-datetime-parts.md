@@ -11,11 +11,10 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Day, Month, Year, Hour, Minute, Second, and Weekday functions in Power Apps

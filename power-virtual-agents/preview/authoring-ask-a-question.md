@@ -8,7 +8,6 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: gapretty
-manager: shellyha
 ms.custom: authoring, topics, message, question, bap-template
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -37,7 +36,7 @@ Just like **Message** nodes, **Question** nodes can include images, videos, card
 
 1. In the **Enter a message** box, type the question you want to ask.
 
-1. Select the box under **Identify**, and then either create or select an entity to determine what the bot should listen for in the user's response. [Learn how to use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
+1. Select the box under **Identify**, then either create or select an entity to determine what the bot should listen for in the user's response. [Learn how to use entities in a conversation](../advanced-entities-slot-filling.md#use-entities-in-a-conversation).
 
 1. Depending which **Identify** option you selected, you may have more properties you need to set.
 

@@ -1,13 +1,12 @@
 ---
 title: "Customize how the bot looks to users in Microsoft Teams"
 description: "Change the name, icon, and color of your bot in the Power Virtual Agents app in Microsoft Teams without needing to know any code."
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 01/25/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "customization, ceX, teams"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

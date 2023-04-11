@@ -2,20 +2,13 @@
 title: "Using and Configuring the ALM Accelerator Azure DevOps pipelines for Microsoft Power Platform | MicrosoftDocs"
 description: "Customizing the ALM Accelerator for Power Platform can be achieved in several ways without affecting the upgrade path of the solution and Azure DevOps pipelines. This document describes how to customize ALM Accelerator Azure DevOps pipelines for Microsoft Power Platform."
 author: mikefactorial
-manager: devkeydet
-
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021
+ms.date: 02/13/2023
 ms.subservice: guidance
 ms.author: rusant
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Configuring the ALM Accelerator Azure DevOps pipelines
@@ -125,5 +118,6 @@ There are several places in the pipelines where pipeline variables are used to d
 | UseDeploymentSettingsPlaceholders    | true                        | If false then the deployment settings won't use placeholders and all values for the deployment settings will be saved in the deploymentSettings.json and customDeploymentSettings.json. IMPORTANT: Sensitive information may be saved in plain text in your deployment settings and any users with access to source control will be able to read these values. Take care when settings this variable. |
 | DisableFlows                         | false                       | If true then all flows will be turned off in the unpacked solution source code before committing. |
 | UseSolutionVersionFromDataverse      | false                       | If true then the version number exported in your solution will be preserved in downstream environments and will also be reflected in your source control when the solution source is committed. |
-| DoNotExportCurrentEnvironmentVariableValues | false                     | If true then the current environment variable values be removed from the unpacked solution source code. |
-| PublishCustomizationsBeforeExport | true                     | If false then the customizations won't be published before the solution is exported. This is useful if you're working in a shared environment and only want to export the latest published customizations. |
+| DoNotExportCurrentEnvironmentVariableValues | false                | If true then the current environment variable values will be removed from the unpacked solution source code. |
+| PublishCustomizationsBeforeExport     | true                       | If false then the customizations won't be published before the solution is exported. This is useful if you're working in a shared environment and only want to export the latest published customizations. |
+| CacheEnabled                          | true                       | If false then the caching of powershell modules will be disabled. This is useful if you're pipelines execute cleanup of the cache directory after execution of the pipelines. |

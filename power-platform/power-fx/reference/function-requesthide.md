@@ -11,11 +11,10 @@ ms.subservice: power-fx
 ms.author: emcoope
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # RequestHide function in Power Apps

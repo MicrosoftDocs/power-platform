@@ -2,7 +2,6 @@
 title: Microsoft Power Fx expression grammar | Microsoft Docs
 description: Annotated grammar for the Microsoft Power Fx language
 author: gregli-msft
-manager: kvivek
 ms.reviewer: jdaly
 ms.date: 03/06/2022
 ms.topic: reference
@@ -10,8 +9,10 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
+contributors:
+  - gregli-msft
+  - mduelae
+  - jorisdg
 ---
 # Expression grammar
 

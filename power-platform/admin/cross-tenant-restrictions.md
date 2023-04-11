@@ -15,11 +15,6 @@ ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Cross-tenant inbound and outbound restrictions (preview) 
@@ -66,6 +61,9 @@ Similarly, users signed in to Power Platform in the Fabrikam tenant can’t esta
 |Fabrikam     | Fabrikam        | Yes        |
 
 ![Restrict outbound and inbound cross-tenant access.](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
+
+> [!NOTE]
+> A connection attempt initiated by a guest user from their host tenant targeting data sources within the same host tenant is not evaluated by the tenant isolation rules.
 
 ## Tenant isolation with allowlists
 

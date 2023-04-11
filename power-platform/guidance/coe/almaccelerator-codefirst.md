@@ -2,7 +2,6 @@
 title: "Configuring and using the ALM accelerator for Plug-ins and PCF | MicrosoftDocs"
 description: "Code first components (that is, Plug-ins, PCF controls) ALM using ALM accelerator for Microsoft Power Platform builds code first projects in the repository and packs as solutions. This document describes how to perform code first components ALM using ALM accelerator for Microsoft Power Platform."
 author: rajeevpentyala
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/04/2022
@@ -11,10 +10,6 @@ ms.author: rajeevpe
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform 
 ---
 
 # Using the ALM accelerator to build and package code first components

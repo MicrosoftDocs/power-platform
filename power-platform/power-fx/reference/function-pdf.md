@@ -10,8 +10,6 @@ ms.subservice: power-fx
 ms.author: tashas
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - TashasEv
   - mduelae

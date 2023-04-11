@@ -5,12 +5,13 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 11/14/2018
+ms.date: 04/10/2023
 ms.subservice: power-fx
 ms.author: gregli
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Text function in Power Apps
@@ -119,7 +120,7 @@ To specify the language of the custom format, use:
 
 | Placeholder           | Description                                                                                                                                                                                                                                |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[$-*LanguageTag*]** | _LanguageTag_ is a language tag as returned from the **Language** function. It can specify just the language (such as **[$-en]** for English), or it can also specify the region (such as **[$-en-GB]** to further specify Great Britain). |
+| **[$-_LanguageTag_]** | _LanguageTag_ is a language tag as returned from the **Language** function. It can specify just the language (such as **[$-en]** for English), or it can also specify the region (such as **[$-en-GB]** to further specify Great Britain). |
 
 The language placeholder can appear anywhere in the custom format but only once.
 
@@ -138,13 +139,13 @@ By default, **Text** uses the language of the user running the app. The **Langua
 
 ## Syntax
 
-**Text**( _NumberOrDateTime_, _DateTimeFormatEnum_ [, *ResultLanguageTag* ] )
+**Text**( _NumberOrDateTime_, _DateTimeFormatEnum_ [, _ResultLanguageTag_ ] )
 
 - _NumberOrDateTime_ - Required. The number or the date/time value to format.
 - _DateTimeFormat_ - Required. A member of the **DateTimeFormat** enumeration.
 - _ResultLanguageTag_ - Optional. The language tag to use for the result text. By default, the language of the current user is used.
 
-**Text**( _NumberOrDateTime_, _CustomFormat_ [, *ResultLanguageTag* ] )
+**Text**( _NumberOrDateTime_, _CustomFormat_ [, _ResultLanguageTag_ ] )
 
 - _Number_ - Required. The number or the date/time value to format.
 - _CustomFormat_ - Required. One or more placeholders enclosed in double quotation marks.
@@ -155,6 +156,7 @@ By default, **Text** uses the language of the user running the app. The **Langua
 - _AnyValue_ - Required. Value to convert to a text representation. A default format is used.
 
 **Text** ( _Untyped_ )
+
 - _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a string. Acceptable values are dependent on the untyped provider. For [**JSON**](function-parsejson.md), if the untyped object is a number or boolean, it will be converted to text.
 
 ## Examples

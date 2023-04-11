@@ -7,7 +7,6 @@ ms.date: 04/19/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "customization, ce06102020"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -180,7 +179,7 @@ First, you need to configure where you're deploying your bot canvas.
                     window.WebChat.renderWebChat(
                         {
                             directLine: window.WebChat.createDirectLine({
-                                domain: '${directline}v3/directline',
+                                domain: `${directline}v3/directline`,
                                 token: conversationInfo.token,
                             }),
                             styleOptions

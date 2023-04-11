@@ -2,7 +2,6 @@
 title: "Create an internal Microsoft Power Platform hub | MicrosoftDocs"
 description: "At the heart of growth is a community, a place for people to collaborate, share ideas and discover new ways to apply technology to achieve more."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Create an internal Microsoft Power Platform hub 
 
@@ -151,6 +146,10 @@ If you can't connect to SharePoint Online, this could be caused by PnP PowerShel
 #### Can't run the script
 
 If you get an error message telling you the PowerShell script can't be loaded as it is not signed, you have to [update the execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) to [remove the execution policy from the current user](/powershell/module/microsoft.powershell.security/set-executionpolicy#example-5-remove-the-execution-policy-for-the-current-user).
+
+#### My tenant uses SharePoint Vanity URLs
+
+There are few companies around the world that use vanity URLs. If you are one of these companies, make sure to hard code the URLs in the `$adminURL` & `$newSiteURL` variables in the scripts. This will make sure the script will connect to the right tenant and site.
 
 #### Still seeing issues?
 

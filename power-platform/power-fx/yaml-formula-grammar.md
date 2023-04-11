@@ -2,7 +2,6 @@
 title: Microsoft Power Fx YAML Formula Grammar | Microsoft Docs
 description: Microsoft Power Fx YAML formula syntax
 author: gregli-msft
-manager: kvivek
 ms.reviewer: jdaly
 ms.date: 03/06/2022
 ms.topic: reference
@@ -11,8 +10,10 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
+contributors:
+  - gregli-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Power Fx YAML formula grammar

@@ -7,7 +7,6 @@ ms.service: power-virtual-agents
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring, bap-template
 ms.collection: virtual-agent
@@ -18,4 +17,4 @@ ms.collection: virtual-agent
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-This feature is available in the preview and hasn't changed. For more information, see [Use Power Automate flows (production)](../advanced-flow.md).
+This feature is available in the preview and is the same as the production version. For more information, see [Use Power Automate flows (production)](../advanced-flow.md).

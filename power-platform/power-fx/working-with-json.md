@@ -9,11 +9,14 @@ ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: jorisde
 contributors:
+  - gregli-msft
+  - mduelae
   - jorisdg
 ---
 # Working with JSON in Power Fx (experimental)
 
 > [!IMPORTANT]
+>
 > - This is an experimental feature.
 > - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the _ParseJSON function and untyped objects_ experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
@@ -150,6 +153,7 @@ Set( jsonOrder, ParseJSON( jsonStringVariable ) );
 ```
 
 You can retrieve individual records and values using the [Index()](reference/function-first-last.md) function. For example, to get the second record in the `OrderLines` field, then access the `Quantity` field and convert it to a value.
+
 ```powerapps-dot
 Set( line2Quantity, Value( Index( jsonOrder.OrderLines, 2 ).Quantity ); // 5
 ```

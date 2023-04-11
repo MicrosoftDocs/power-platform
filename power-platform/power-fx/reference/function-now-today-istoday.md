@@ -11,11 +11,10 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Now, Today, IsToday, UTCNow, UTCToday, IsUTCToday functions in Power Apps

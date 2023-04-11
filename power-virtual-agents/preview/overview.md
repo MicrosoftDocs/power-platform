@@ -6,7 +6,6 @@ ms.date: 12/07/2022
 ms.topic: overview
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: fundamentals, ceX, intro-internal, bap-template
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -24,6 +23,7 @@ This evolution brings several exciting new features:
 
 - A new authoring experience
 
+  - [Use GPT-based capabilities to expand your bot's reach](../nlu-gpt-overview.md)
   - [Add images, videos, and cards to a message](authoring-send-message.md)
   - [Message variations](authoring-send-message.md#use-message-variations)
   - [Quick replies](authoring-send-message.md#use-quick-replies)

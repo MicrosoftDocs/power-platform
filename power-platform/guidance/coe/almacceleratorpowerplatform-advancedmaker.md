@@ -2,7 +2,6 @@
 title: "ALM Accelerator for Power Platform advanced maker experience | MicrosoftDocs"
 description: "The advanced maker experience in the ALM Accelerator for Power Platform app will help you follow ALM patterns and practices. It enables you to source-control your solutions and move them from your development environment to test and production environments with Azure DevOps"
 author: alvarezskinner
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # ALM Accelerator for Power Platform advanced maker experience (preview)
 
@@ -91,6 +86,7 @@ The below table shows how the **User Labels** are configured for the **advanced 
 
    - **Configuration** (Optional): is a directory under the config directory in the **Solution Folder** that contains deployment settings and configuration data. For more information about configuration settings, go to the [Deployment Configuration Guide](setup-almacceleratorpowerplatform-deployment-config.md).
 
+   - **Import as Managed**: if you select this option, the solution will be imported as a managed solution. Turning this off imports the solution as unmanaged.
     > [!NOTE]
     > You're either pulling the latest changes from the solution branch or you'll want to pull another makers branch into your own environment. The configuration allows you to ensure that all of the necessary post solution import configuration and data exists in your environment.
 
@@ -142,9 +138,9 @@ The below table shows how the **User Labels** are configured for the **advanced 
       :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-group-teams.png" alt-text="Group Teams configuration":::
 
       - This screen allows the user to configure new Dataverse Teams of type AAD Security Group that can be used for sharing Flows and Custom Connectors
-      - Click the **'+'** icon to add a new Group Team configuration
-      - Enter a **Team Name**, select an **AAD Group** that the team should be linked to and select **Security Roles** as required. The list of security roles is based on those available in the currently selected development environment. Make sure to add any custom security roles to the solution to ensure the security roles are available in the target environment.
-      - Users can add multiple Group Team configurations by clicking the **'+'** to add additional rows
+      - Select the **'+'** icon to add a new Group Team configuration
+      - Enter a **Team Name**, select an **AAD Group** that the team should be linked to and select **Security Roles** as required. The list of security roles is based on the roles available in the currently selected development environment. Make sure to add any custom security roles to the solution to ensure the security roles are available in the target environment.
+      - Users can add multiple Group Team configurations by clicking the **'+'** to add more rows
 
    - **Flows**
 
@@ -155,7 +151,7 @@ The below table shows how the **User Labels** are configured for the **advanced 
       - Use the **Owner** dropdown list to select a Dataverse user to own the flow in the downstream environment.
       - Use the **Team Sharing** dropdown list to select the Dataverse Team to share the flow to. Note, this dropdown will list Dataverse Teams in the downstream environment and Dataverse teams configured in the Group Teams configuration.
       - Use the **Activation User** dropdown list to select the user that will be used to activate the flow
-      - In the **Flows to Activate and Order** column, the checkbox can be used to configure whether a specific flow should be activated or not. The up and down arrows can be used to organize the rows into the desired sequence in which the flows will be activated. The sequencing of activation is particularly useful if the solution include parent and child flows where child flows must be activated before parent flows.
+      - In the **Flows to Activate and Order** column, the checkbox can be used to configure whether a specific flow should be activated or not. The up and down arrows can be used to organize the rows into the desired sequence in which the flows will be activated. The sequencing of activation is useful if the solution includes parent and child flows where child flows must be activated before parent flows.
 
    - **Custom Connectors**
 
@@ -163,24 +159,29 @@ The below table shows how the **User Labels** are configured for the **advanced 
 
       - This screen lists all the custom connectors in the solution. Users can configure sharing of customer connectors to Dataverse Teams in the downstream environment
       - Use the **Sharing** dropdown list to select the Dataverse Team to share the custom connector to. Note, this dropdown will list Dataverse Teams in the downstream environment and Dataverse teams configured in the Group Teams configuration.
+
+   - **WebHooks**
+
+      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-webhooks.png" alt-text="Deployment settings WebHooks":::
+
+      - This screen lists all of the WebHooks in your solution. Users can configure the endpoint url of the WebHooks in a downstream environment. If the url is left empty, the WebHook url will be the same as the url in the development environment.
   
-2. After you've configured your solution, you can push your changes to Git by using the **Commit Solution** command for your solution. Depending on the permissions you're given, a **Show Advanced** toggle might appear. You can select **Show Advanced** to choose an existing branch or to create a new one with a specific naming convention. If you haven't been granted permissions to these options, the app creates a new branch based on your username and deployment profile data.
+1. After you've configured your solution, you can push your changes to Git by using the **Commit Solution** command for your solution. Depending on the permissions you're given, a **Show Advanced** toggle might appear. You can select **Show Advanced** to choose an existing branch or to create a new one with a specific naming convention. If you haven't been granted permissions to these options, the app creates a new branch based on your username and deployment profile data.
 
    > [!NOTE]
    > Be sure to publish any app changes before initiating the push.
 
-3. Select **Commit Solution**.
+1. Select **Commit Solution**.
 
- 1. In the **Commit Solution** dialog, select an existing branch, or create a new branch based on an existing branch and enter a comment. Use the hashtag notation (for example, **#123**) to link the changes to a specific work item in Azure DevOps, and then select **Prepare Solution**.
- 
-   - After configuring and confirming your solution configuration as described in the previous step, select **Commit Solution**.
-   - When the push begins, a waiting indicator appears. When the push is successful, a checkbox appears; otherwise, a red X is displayed. To see the progress of your push, select the progress indicator, which takes you to the running pipeline in Azure DevOps.
-   - Repeat the pushes as you iterate on your solution.
+   1. In the **Commit Solution** dialog, select an existing branch, or create a new branch based on an existing branch and enter a comment. Use the hashtag notation (for example, **#123**) to link the changes to a specific work item in Azure DevOps, and then select **Prepare Solution**.
+     - After configuring and confirming your solution configuration as described in the previous step, select **Commit Solution**.
+     - When the push begins, a waiting indicator appears. When the push is successful, a checkbox appears; otherwise, a red X is displayed. To see the progress of your push, select the progress indicator, which takes you to the running pipeline in Azure DevOps.
+     - Repeat the pushes as you iterate on your solution.
 
    > [!NOTE]
    > Using the progress icons links to visualize what's happening in the pipelines in Azure DevOps can be disabled for makers.
 
-4. After you've finished the changes in your solution and you're ready to deploy them across other environments, select the **Deploy Solution** button.
+1. After you've finished the changes in your solution and you're ready to deploy them across other environments, select the **Deploy Solution** button.
 
     > [!NOTE]
     > Be sure to publish any app changes before initiating the push.
@@ -191,17 +192,17 @@ The below table shows how the **User Labels** are configured for the **advanced 
 
     - Using the **Advanced Settings**, specify the **Source** and **Target** branch, enter a **Title** and **Comment** for your pull request, and then select **Deploy Solution**.
 
-5. After you deploy the solution, the next steps depend on the approval type of the deployment step.
+1. After you deploy the solution, the next steps depend on the approval type of the deployment step.
 
      - **Pull Request**: A pull request is created for your changes. The remaining steps to merge and release to the test environment occur in Azure DevOps. Depending on the branch policies and triggers configured for your target branch, an Azure DevOps user can approve or reject your pull request based on their findings in the submitted changes. The status of the pull request appears in the app.
 
      - **Environment**: The pipeline to deploy the solution to the target environment will be triggered. The remaining approval steps will occur in Azure DevOps.
 
-6. To initiate a solution upgrade in the target environment, you can tag a pull request with the **solution-upgrade** tag.
+1. To initiate a solution upgrade in the target environment, you can tag a pull request with the **solution-upgrade** tag.
 
-7. Approving the pull request or the pipeline execution (depending on the approval type selected for the step/environment) starts the deployment of your solution to the selected environment. If you get the approval for either your pull request or pipeline execution, the progress indicator states the deployment has started. You can select the right angle bracket (**>**) to visualize the request history.
+1. Approving the pull request or the pipeline execution (depending on the approval type selected for the step/environment) starts the deployment of your solution to the selected environment. If you get the approval for either your pull request or pipeline execution, the progress indicator states the deployment has started. You can select the right angle bracket (**>**) to visualize the request history.
 
       ![Request history for a solution.](media/almacceleratorpowerplatform-components/aa4pp-request-history.png "Request history for a solution")
 
-8. For production, you can either go into **Advanced settings** for the deployment and choose the main branch used to trigger the deployment to production, or create the pull request directly in Azure DevOps.
+1. For production, you can either go into **Advanced settings** for the deployment and choose the main branch used to trigger the deployment to production, or create the pull request directly in Azure DevOps.
    [!INCLUDE[footer-include](../../includes/footer-banner.md)]

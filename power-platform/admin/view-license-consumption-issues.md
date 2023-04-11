@@ -9,11 +9,6 @@ ms.subservice: admin
 ms.author: ampatra
 search.audienceType: 
  - admin
-search.app:
- - D365CE
- - PowerApps
- - Powerplatform
- - Flow
 ---
 
 # View license consumption (preview)
@@ -91,7 +86,7 @@ Select the **Environment view** tab to see a variety of licensing information re
 
 The license experience is not enabled by default for tenants. Admins may need to opt in. 
 
-If you see the message "Licensing information is not yet enabled", select **Enable license reporting** to enable licensing for your tenant. It can take up to a week for license information to be available.
+If you see the message that states licensing information is not yet enabled, select **Enable license reporting** to enable licensing for your tenant. Your request to enable preview will be added to the queue. Note that during this preview period, we are onboarding a limited number of tenants.
 
 :::image type="content" source="media/managed-environment-optin.png" alt-text="Message explaining that opt-in is required for tenant where license experience is not enabled.":::
 

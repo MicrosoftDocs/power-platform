@@ -11,6 +11,7 @@ ms.author: gregli
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Value function in Power Apps
@@ -29,13 +30,13 @@ Notes on the format of the string:
 - The string may be include a percent sign (**%**) at the end, indicating that it is a percentage. The number will be divided by 100 before being returned. Percentages and currency symbols cannot be mixed.
 - The string may be in scientific notation, with 12 x 10<sup>3</sup> expressed as "12e3".
 
-If the number is not in a proper format, **Value** will return _blank_.
+If the number is not in a proper format, **Value** will return an error.
 
 To convert date and time values, use the [**DateValue**](function-datevalue-timevalue.md), [**TimeValue**](function-datevalue-timevalue.md), or [**DateTimeValue**](function-datevalue-timevalue.md) functions.
 
 ## Syntax
 
-**Value**( _String_ [, *LanguageTag* ] )
+**Value**( _String_ [, _LanguageTag_ ] )
 
 - _String_ - Required. String to convert to a numeric value.
 - _LanguageTag_ - Optional. The language tag in which to parse the string. If not specified, the language of the current user is used.

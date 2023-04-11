@@ -8,7 +8,6 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: clmori
-manager: shellyha
 ms.custom: authoring, topics, variables, ceX
 ms.collection: virtual-agent
 searchScope:

@@ -10,11 +10,10 @@ ms.subservice: power-fx
 ms.author: mikepena
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
   - mikepenaMS
   - anuitz
 ---

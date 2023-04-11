@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI modelbuilder command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI modelbuilder command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 12/14/2022
+author: snizar007
+ms.author: snizar
+ms.date: 3/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -35,6 +35,11 @@ Builds a code model for Dataverse APIs and Tables
 
 [!INCLUDE [modelbuilder-build-intro](includes/modelbuilder-build-intro.md)]
 
+### Required Parameters
+
+#### `--outdirectory` `-o`
+
+Write Directory for entity, message and optionset files
 
 ### Optional Parameters
 
@@ -80,11 +85,9 @@ The namespace for the generated code.  The default namespace is the global names
 
 #### `--optionsetstypesfolder` `-otf`
 
-Folder name that will contain OptionSets.  default is OptionSets
+Folder name that will contain option sets.  default is OptionSets
 
-#### `--outdirectory` `-o`
 
-Write Directory for entity, message and optionset files
 
 #### `--serviceContextName` `-sctx`
 

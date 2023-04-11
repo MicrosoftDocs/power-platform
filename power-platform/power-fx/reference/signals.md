@@ -11,11 +11,10 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
+  - jorisdg
 ---
 
 # Acceleration, App, Compass, Connection, and Location signals in Power Apps

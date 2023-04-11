@@ -1,13 +1,12 @@
 ---
 title: "Share chatbots with other users in Microsoft Teams"
 description: "Work on Power Virtual Agents chatbots with other people in your team, and see who else has recently modified topics."
-keywords: "Administration, share, multi-author, PVA, teams"
+keywords: "Administration, share, multi-author, PVA, Teams"
 ms.date: 01/25/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: micchow
 ms.custom: "multi-author, admin, ceX, teams"
 ms.service: power-virtual-agents

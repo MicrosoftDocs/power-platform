@@ -9,11 +9,6 @@ ms.author: sriknair
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # New Microsoft Dataverse storage capacity 
@@ -173,7 +168,7 @@ Notifications for capacity approaching storage limits will be triggered when any
 > [!NOTE]
 > The storage driven capacity model calculation of these thresholds also considers the overflow usage allowed in the storage driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, overflow usage has been taken into consideration to reduce the number of emails a tenant admin receives.
 
-These notifications are sent out to tenant admins on a weekly basis. At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. All tenant admins for a tenant will automatically receive these notifications.
+These notifications are sent out to tenant admins, Power Platform admins, and Dynamics 365 admins on a weekly basis. At this time, there is no option for a customer to opt-out of these notifications or delegate these notifications to someone else. All admins types listed earlier will automatically receive these notifications.
 
 Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. 
 

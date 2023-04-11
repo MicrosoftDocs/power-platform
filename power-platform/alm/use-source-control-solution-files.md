@@ -9,12 +9,8 @@ ms.topic: "article"
 author: "shmcarth" # GitHub ID
 ms.subservice: alm
 ms.author: "jdaly" # MSFT alias of Microsoft employees only
-manager: "ryjones" # MSFT alias of manager or PM counterpart
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Source control with solution files
 
@@ -71,23 +67,23 @@ The previous example works only when there are changes to separate files. It is 
   
 1. Developer A is ready first.  
   
-    1.  Before she submits to source control she must get latest sources to ensure no prior check-ins conflict with her changes.  
+    1.  Before developer A submits to source control they must get latest sources to ensure no prior check-ins conflict with their changes.  
   
-    2.  There are no conflicts so she is able to submit.  
+    2.  There are no conflicts so developer A is able to submit.  
   
 1. Developer B is ready next following developer A.  
   
-    1.  Before he submits he must get the latest sources to ensure no prior check-ins conflict with his changes.  
+    1.  Before developer B submits they must get the latest sources to ensure no prior check-ins conflict with their changes.  
   
-    2.  There is a conflict because the file for “Active Contacts” has been modified since he last retrieved the latest sources.  
+    2.  There is a conflict because the file for “Active Contacts” has been modified since developer B last retrieved the latest sources.  
   
     3.  Developer B must reconcile the conflict. It is possible the capabilities of the source control system in use may aide this process; otherwise the following choices are all viable.  
   
-        1.  Developer B, through source control history, if available, can see that the developer A made the prior change. Through direct communication they can discuss each change. Then developer B only has to update his organization with the agreed resolution. He then exports, extracts, and overwrites the conflicting file and submits.  
+        1.  Developer B, through source control history, if available, can see that the developer A made the prior change. Through direct communication they can discuss each change. Then developer B only has to update the organization with the agreed resolution. Developer B then exports, extracts, and overwrites the conflicting file and submits.  
   
-        2.  Allow source control to overwrite his local file. Developer B packs the solution and imports it into his organization, then assesses the state of the view and re-customizes it as necessary. Next, he may export, extract, and overwrite the conflicting file.  
+        2.  Allow source control to overwrite the local file. Developer B packs the solution and imports it into their organization, then assesses the state of the view and re-customizes it as necessary. Next, developer B may export, extract, and overwrite the conflicting file.  
   
-        3.  If the prior change can be deemed unnecessary, developer B allows his copy of the file to overwrite the version in source control and submits.  
+        3.  If the prior change can be deemed unnecessary, developer B allows their copy of the file to overwrite the version in source control and submits.  
   
  Whether working on a shared organization or independent organizations, team development of Dataverse solutions requires those actively working on a common solution to be aware of the work of others. The SolutionPackager tool does not fully remove this need but it does enable easy merging of non-conflicting changes at the source control level, and it proactively highlights the concise components where conflicts have arisen.  
   

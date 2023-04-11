@@ -14,9 +14,11 @@ contributors:
   - jorisdg
 ---
 # Boolean function in Power Apps
+
 Converts a text string, number, or untyped value to a Boolean value.
 
 ## Description
+
 Use the **Boolean** function to convert other types to a Boolean value.  A Boolean value is *true*, *false*, or *blank*.
 
 In most cases, type coercion happens automatically and the **Boolean** function need not be used explicitly.  For example, `If( "true", 1, 0 )` will return 1 as the text string `"true"` is automatically converted to a Boolean.  The **Boolean** function is useful when an explicit conversion is desired or when using an untyped value.

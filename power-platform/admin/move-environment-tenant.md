@@ -12,11 +12,6 @@ ms.author: matgupta
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Tenant-to-tenant migration 
 
@@ -27,7 +22,7 @@ You can use the tenant-to-tenant migration feature to request an environment in 
 - Consolidate multiple tenants under one tenant
 - Support acquisition from Company A to Company B
 
-<sup>*</sup>The environment is not actually physically moved but instead is associated with another tenant. The environment still exists but is no longer under the source tenant. It is available and managed under the destination tenant.
+<sup>*</sup>The environment isn't physically moved but instead is associated with another tenant. The environment still exists but is no longer under the source tenant. It's available and managed under the destination tenant.
 
 You need to [submit a support request](get-help-support.md) to initiate tenant-to-tenant migration. 
 
@@ -82,11 +77,11 @@ Once a migration request is submitted, the support team is engaged to review the
 
 ### Prerequisites:
 
-If you don't have a paid subscription of Dynamics 365, Power Apps, or Power Virtual Agents in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial to paid, if not already done.
+If you don't have a paid subscription of Dynamics 365, Power Apps, or Power Virtual Agents in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial subscription to paid subscription, if not already done.
 
 The destination tenant needs an equal or higher number of active user licenses and equal or greater storage as the source tenant.
 
-When your environment is moved from one tenant to another within the same region, the URL does not change. In order to perform this operation, you'll need to answer some questions including:
+When your environment is moved from one tenant to another within the same region, the URL doesn't change. In order to perform this operation, you'll need to answer some questions including:
 
 - What is the source tenant domain and its region? (Example: EMEA, NA, APAC)
 - What is the destination tenant domain and its region? (Example: EMEA, NA, APAC)
@@ -98,8 +93,8 @@ When your environment is moved from one tenant to another within the same region
 You'll also need to provide the following information:
 
 - The environments to be migrated from the source tenant.
-- The user mapping file for the first environment to be migrated. Each environment will need to have a separate mapping file. Please note that the users need to exist in both the source and target tenants, and need to be licensed and enabled in the environments in order for the migration to succeed. They can have different source and target domains as long as they are active.
-- The security group object id in the target tenant to assign to each environment, if a security group should be assigned. The target tenant security group object id will be assigned during the migration if it is provided. If not provided, the security group can be assigned from the Power Platform admin center after the migration is completed.
+- The user mapping file for the first environment to be migrated. Each environment will need to have a separate mapping file. Note that the users need to exist in both the source and target tenants, and need to be licensed and enabled in the environments in order for the migration to succeed. They can have different source and target domains as long as they're active.
+- The security group object ID in the target tenant to assign to each environment, if a security group should be assigned. The target tenant security group object ID will be assigned during the migration if it's provided. If not provided, the security group can be assigned from the Power Platform admin center after the migration is completed.
 
 ### Steps to be performed by a global admin, Dynamics 365 admin, or Power Platform admin
 
@@ -108,7 +103,7 @@ You'll also need to provide the following information:
 4. Create users in the target tenant. You must:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
-5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this topic</a>.
+5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this article</a>.
 6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from [Power Apps](https://make.powerapps.com) and imported again into the new environment after the migration.
 7. If Lockbox is enabled in the source tenant, be prepared to approve Lockbox request at the start of the tenant to tenant operation.
 
@@ -122,9 +117,9 @@ You'll also need to provide the following information:
 - Café X
 - Forms Pro
 - Dynamics 365 Marketing 
-- Mailboxes. If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you will need to reconfigure the mailbox:
-  1. If the same mailbox is used in the target tenant (test@microsoft.com) then the mailbox will be enabled by default. Before the tenant-to-tenant process, customers need to migrate/configure their mailboxes on the target tenant.
-  2. If you are using the default onmicrosoft domain (test@sourcecompanyname.onmicrosoft.com), the post migration domain name is changed (test@targetcompanyname.onmicrosoft.com). Customers need to reconfigure the mailbox. To configure the mailbox, see [Connect to Exchange Online](connect-exchange-online.md).
+- Mailboxes. If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you'll need to reconfigure the mailbox:
+  1. If the same mailbox is used in the target tenant (test@microsoft.com), then the mailbox will be enabled by default. Before the tenant-to-tenant process, customers need to migrate/configure their mailboxes on the target tenant.
+  2. If you're using the default onmicrosoft domain (test@sourcecompanyname.onmicrosoft.com), the post migration domain name is changed (test@targetcompanyname.onmicrosoft.com). Customers need to reconfigure the mailbox. To configure the mailbox, see [Connect to Exchange Online](connect-exchange-online.md).
 
 ### Steps to create the mapping file
  
@@ -138,14 +133,14 @@ For full access users:
 7. Select all the records, select **Export Users** in the ribbon, and then choose **Static Worksheet**. 
 8. Follow steps 1-7 above for the destination tenant, if possible. You should now have two separate Excel sheets—one for source and one for target tenant.
 9. Open the files for editing.
-10.	Starting with the source Excel sheet, copy the records under the **Windows Live ID** column into Notepad. Do not copy the header.
+10.	Starting with the source Excel sheet, copy the records under the **Windows Live ID** column into Notepad. Don't copy the header.
 11.	Save the Notepad file.
 12.	Next, enter the destination Windows Live ID (UPNs) in the same Notepad document to the right of the corresponding Source UPN, separating Source and Destination UPNs by a comma (,). 
 
     Example: <br />
-    user001@source.com,user001@destination.com<br />
-    user002@source.com,user002@destination.com<br />
-    user003@source.com,user003@destination.com
+    user001@source.com, user001@destination.com<br />
+    user002@source.com, user002@destination.com<br />
+    user003@source.com, user003@destination.com
 
 13.	Save the file as a CSV.
 
@@ -156,27 +151,31 @@ For administrative access users:
 4. If you decide not to include any of these users, skip the following steps. Otherwise, to include these users in mapping:
    1. Find the corresponding users in the destination tenant.
    2. Make sure a valid Dynamics 365 license is assigned to the destination user in the destination tenant.
-      Note: If the destination user is not assigned any license, the migration will fail.
-   3. Save the CSV file which has both full access users and administrative access users mapped.
+      Note: If the destination user isn't assigned any license, the migration will fail.
+   3. Save the CSV file that has both full access users and administrative access users mapped.
 
 ### Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps Portals, and Marketing before and after the migration: 
 
 #### For Power Apps and Power Automate: 
 
 -	Any Power Apps and Power Automate flows must be manually exported. 
--	We do not support the migration of Customer Connectors, Connections, or Gateways. If you have any of these components set up, they must be manually reconfigured after the migration. 
+-	We don't support the migration of Customer Connectors, Connections, or Gateways. If you have any of these components set up, they must be manually reconfigured after the migration. 
 
-##### For apps which are solution aware
+##### For solution aware apps
 
 Before the migration: 
-1. For apps which are solution aware, you can go to https://make.powerapps.com/, navigate to the Solutions page, and export all apps/solutions (either individually or group them together in a single solution if they're not already)
+1. For apps that are solution aware, you can go to https://make.powerapps.com/, navigate to the Solutions page, and export all apps/solutions (either individually or group them together in a single solution if they're not already)
+2. Delete these solution aware apps in the environment after exporting them.
+
+> [!IMPORTANT]
+> Solution aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration won't work after the migration completes.
 
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
 2. Select **Import** and use the file selector to pick the packages exported from the above steps.
 3. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
-##### For apps which are not solution aware
+##### For non-solution aware apps
 
 Before the migration: 
 1. Go to https://make.powerapps.com, and then select **Apps**.
@@ -226,9 +225,9 @@ If the Marketing app is deployed in the tenant, ensure that the necessary licens
 
 After moving environments to another tenant:
 
-- The environment URL, organization ID (OrgID), and the name do not change.
-- The source environment will not be accessible.
-- Users not included in the mapping file will not be migrated and mapped post migration.
+- The environment URL, organization ID (OrgID), and the name don't change.
+- The source environment won't be accessible.
+- Users not included in the mapping file won't be migrated and mapped post migration.
 
 ## How the move works
 
@@ -237,9 +236,9 @@ You'll be provided with a list of pre- and post-requisites for your migration as
 
 | |Before the move:<br/>Notification   |During the move:<br/>Cut-over  |After the move:<br/>Notification and support |
 |---------|---------|---------|---------|
-|**What Microsoft does**   |Your support representative or account manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users. During this period, the environment is not accessible by the users, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There is a step that will require your involvement, which is to provide a user mapping file. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or account manager will assist you in contacting billing to cancel and/or credit your previous subscription, if needed.         |
+|**What Microsoft does**   |Your support representative or account manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users. During this period, the environment isn't accessible by the users, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There's a step that will require your involvement, which is to provide a user mapping file. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You'll be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or account manager will assist you in contacting billing to cancel and/or credit your previous subscription, if needed.         |
 
-We will adhere to the terms of the [Service Level Agreement for Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
+We'll adhere to the terms of the [Service Level Agreement for Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
 
 ## Frequently asked questions
 
@@ -249,8 +248,8 @@ Administration mode is enabled during tenant-to-tenant migration, therefore back
 ### Can we migrate all users of the Dataverse organization?
 We can migrate all users of the Dataverse organization only if users exist in the destination tenant. For example:
 
-user001@source.com,user001@destination.com <br />
-user002@source.com,user002@destination.com        
+user001@source.com, user001@destination.com <br />
+user002@source.com, user002@destination.com        
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

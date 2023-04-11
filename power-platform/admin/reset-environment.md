@@ -1,19 +1,14 @@
 ---
 title: "Reset an environment to delete and reprovision"
 description: "This page explains how to reset a Power Platform environment if you want to create a new project, free up storage space, or delete personal information."
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/13/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Reset environment 
 
@@ -29,7 +24,7 @@ Reset a sandbox environment to delete and reprovision it. Consider a reset when 
 
  **An example scenario**  
   
- Thomas is looking at the storage consumed by the various Contoso environments. He is getting concerned that they'll run out of space in one of their production environments.  Thomas also wants to free up some space so that he can give the production environment some extra storage.  He's also been notified that the Legal department has a retention policy regarding the use of production data in test environments.  
+ Thomas is looking at the storage consumed by the various Contoso environments. Thomas is getting concerned that they'll run out of space in one of their production environments. Thomas also wants to free up some space to give the production environment some extra storage. Thomas has also been notified that the Legal department has a retention policy regarding the use of production data in test environments.  
   
  After contacting Elisa, Thomas resets the Sales department's complete sandbox environment. The environment has been reprovisioned to factory settings. It's now ready for future use as a sandbox environment for a future project.  
  

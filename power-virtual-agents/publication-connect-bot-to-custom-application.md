@@ -7,7 +7,6 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: jameslew
 ms.custom: "publication, azure, ceX"
 ms.service: power-virtual-agents
@@ -236,6 +235,6 @@ If your application needs to hand off to a live agent provider, you will need to
 
 ### Trigger a welcome message
 
-If you want your bot to send the Greeting system topic automatically when a user starts a conversation, you can send an activity with `Type=event` and `Name=startsConversation`.
+If you want your bot to send the Greeting system topic automatically when a user starts a conversation, you can send an activity with `Type=event` and `Name=startConversation`.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

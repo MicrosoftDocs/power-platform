@@ -6,7 +6,6 @@ ms.date: 12/07/2022
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: publication, authoring, ceX, teams, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
@@ -17,4 +16,4 @@ ms.service: power-virtual-agents
 > [!IMPORTANT]
 > This topic contains Power Virtual Agents preview documentation and is subject to change.
 
-This feature is available in the preview and hasn't changed. For more information, see [Add a chatbot to Microsoft Teams (production)](../publication-add-bot-to-microsoft-teams.md).
+This feature is available in the preview and is the same as the production version. For more information, see [Add a chatbot to Microsoft Teams (production)](../publication-add-bot-to-microsoft-teams.md).

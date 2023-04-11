@@ -10,11 +10,10 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 contributors:
   - mduelae
   - gregli-msft
+  - jorisdg
 ---
 # Error handling
 

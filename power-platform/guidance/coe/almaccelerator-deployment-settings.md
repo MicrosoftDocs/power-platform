@@ -2,7 +2,6 @@
 title: "Schema and Description of Deployment Settings payload for the ALM accelerator pipelines for Microsoft Power Platform | MicrosoftDocs"
 description: "Customizing the ALM Accelerator for Power Platform can be achieved in several ways without affecting the upgrade path of the solution and pipelines. This document describes the deployment settings payload for the ALM Accelerator pipelines for Microsoft Power Platform."
 author: mikefactorial
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
@@ -11,10 +10,6 @@ ms.author: rusant
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # ALM accelerator for Microsoft Power Platform pipelines (preview) - Deployment settings
@@ -34,6 +29,7 @@ The deployment settings payload for the ALM Accelerator export pipeline is used 
 
   | Setting                     | Required | Description |
   | -------                     | -------- | ----------- |
+  | ApprovalType                | No       | The type of approval to use in the deployment pipeline. |
   | BuildName                   | Yes      | The name of the build pipeline. |
   | BuildTemplate               | No       | The name of the build pipeline template. |
   | DeploymentEnvironmentName   | Yes      | The name of the deployment environment. |

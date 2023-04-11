@@ -10,9 +10,12 @@ ms.date: 12/04/2021
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
+contributors:
+  - gregli-msft
+  - mduelae
+  - jorisdg
 ---
+
 # Confirm function in Power Apps
 
 Display a confirmation dialog box to the user.

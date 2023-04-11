@@ -1,20 +1,15 @@
 ---
 title: "Partners: Get credit when your customers subscribe to Dynamics 365"
 description: "As a Microsoft Dynamics 365 partner, learn how to help your customers sign up for a trial subscription, customize it, and set yourself as the partner of record."
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # For partners: Get the credit when your customers subscribe
 
@@ -60,7 +55,7 @@ Soon after you complete the sign up, you’ll be notified by email that the tria
 <a name="BKMK_ThreeTransferownership"></a>   
 
 ## Transfer ownership after completing the trial  
- After the trial period is complete and your customer is ready to start their subscription, there are a few steps you need to complete in order to transfer ownership of the environment. If you signed up for the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] on behalf of the customer by using a [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] other than your customer’s, call [Customer Service and support](support-overview.md) to request a transfer of ownership of the subscription to your customer and designate him or her as the billing administrator of the customer’s organization. The billing administrator can take actions that have financial implications to the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)], such as:  
+ After the trial period is complete and your customer is ready to start their subscription, there are a few steps you need to complete in order to transfer ownership of the environment. If you signed up for the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] on behalf of the customer by using a [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] other than your customer’s, call [Customer Service and support](support-overview.md) to request a transfer of ownership of the subscription to your customer and designate them as the billing administrator of the customer’s organization. The billing administrator can take actions that have financial implications to the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)], such as:  
   
 - Upgrading to a different subscription  
   

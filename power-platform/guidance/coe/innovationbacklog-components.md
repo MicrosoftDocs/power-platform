@@ -2,7 +2,6 @@
 title: "Use the Innovation Backlog components | MicrosoftDocs"
 description: "The Innovation Backlog app contains assets log ideas and perform business value assessments."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,16 +11,12 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Use the Innovation Backlog components
 
 Use the Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
 
-Pick the most impactful ideas to for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
+Pick the most impactful ideas for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
 More information: [Set up Innovation Backlog components](setup-innovationbacklog.md)
 
@@ -73,7 +68,7 @@ A canvas app that the Innovation Backlog admin uses to update icons for non-soft
 
 **Permission**: Share this app with the Innovation Backlog admin - this can be your CoE or Power Platform adoption lead.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Innovation Backlog Admin app.](media/ib-11.png "Innovation Backlog Admin app")
 
@@ -83,7 +78,7 @@ A canvas app that is used to share and vote on ideas, describe pain points and a
 
 **Permission**: The Innovation Backlog app can be shared with the entire organization.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ![Innovation Backlog app.](media/ib-12.png "Innovation Backlog app")
 

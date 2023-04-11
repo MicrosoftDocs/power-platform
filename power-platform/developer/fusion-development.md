@@ -10,10 +10,6 @@ ms.reviewer:
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerPlatform
-  - PowerApps
-  - Azure
 ---
 
 # Fusion development in Power Platform

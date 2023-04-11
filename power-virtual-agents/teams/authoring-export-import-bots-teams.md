@@ -1,14 +1,13 @@
 ---
-title: "Export and import bots in Teams"
+title: "Export and import bots in Microsoft Teams"
 description: "Transfer bots between teams by using the Power Apps app in Microsoft Teams."
-keywords: "export, import, transfer, environment, PVA"
+keywords: "export, import, transfer, environment, PVA, Teams"
 ms.date: 01/25/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: digantak
-manager: shellyha
 ms.custom: "customization, ceX, teams"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

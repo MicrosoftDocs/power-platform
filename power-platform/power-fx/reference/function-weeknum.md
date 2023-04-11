@@ -10,8 +10,10 @@ ms.date: 08/05/2021
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
+contributors:
+  - gregli-msft
+  - mduelae
+  - jorisdg
 ---
 # WeekNum and ISOWeekNum functions in Power Apps
 

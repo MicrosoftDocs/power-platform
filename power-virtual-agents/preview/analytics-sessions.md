@@ -2,11 +2,10 @@
 title: Download bot session transcripts in Power Virtual Agents (preview)
 description: Download transcripts of your bot sessions from the last 30 days for further analysis in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 12/09/2022
+ms.date: 01/23/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: analysis, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
@@ -18,7 +17,13 @@ ms.service: power-virtual-agents
 
 You can download transcripts of customer interactions with your bot in both Power Virtual Agents and Power Apps. The information that each app exports is slightly different. This article covers downloading session transcripts in Power Virtual Agents. [Download bot conversation transcripts in Power Apps](../analytics-sessions-transcripts.md).
 
-By default, Power Virtual Agents downloads session transcripts from the last 30 days. [You can change the retention period in Power Apps](analytics-sessions-transcripts.md#change-the-default-retention-period).
+By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
+
+You can also download and view chat transcripts in the Power Apps portal.
+
+See [Work with conversation transcripts](analytics-sessions-transcripts.md) for more details and tips.
+
+Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
 
 > [!NOTE]
 > If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Power Platform admin center.
