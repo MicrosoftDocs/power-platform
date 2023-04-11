@@ -37,6 +37,8 @@ Some of the generated custom topics offer basic conversational abilities, such a
 
 You can choose to disable or delete custom topics.
 
+Any new topic that you create will be a custom topic.
+
 ### System topics
 
 A numbrt of  [system topics](/power-virtual-agents/preview/authoring-system-topics) are also natively available, and help manage specific conversation events.
