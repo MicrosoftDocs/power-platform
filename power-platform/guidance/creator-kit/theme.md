@@ -1,7 +1,7 @@
 ---
 title: Theming | Creator Kit
 description: Learn how to configure the Theme property for Creator Kit components.
-author: denisem-msft
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 08/24/2022
