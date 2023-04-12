@@ -111,3 +111,9 @@
           href: tools-alm.md
         - name: Dataverse developer tools
           href: tools-dataverse.md
+        - name: Visual Studio Integration (preview)
+          items:
+            - name: Visual Studio connected service (Preview)
+              href: visual-studio-connected-service.md
+            - name: Create a Canvas App front end for your ASP.NET web API
+              href: visual-studio-create-canvas-app.md          
