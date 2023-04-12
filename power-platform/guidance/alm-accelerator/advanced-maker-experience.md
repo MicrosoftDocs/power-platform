@@ -4,7 +4,7 @@ description: "The advanced maker experience in the ALM Accelerator for Power Pla
 author: alvarezskinner
 manager: devkeydet
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 04/12/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -35,12 +35,12 @@ In the following table, you can see how the **User Functions** are configured fo
 
 The below table shows how the **User Labels** are configured for the **advanced maker** user settings
 
-| Field        | Value     | Description |
-|--------------|-----------|------------|
-| Deploy Solution |  | Setting the value to blank will use the default label. Default label is **DEPLOY SOLUTION**.|
-| Commit Solution |  | Setting the value to blank will use the default label. Default label is **COMMIT SOLUTION**.|
-| Import Solution |  | Setting the value to blank will use the default label. Default label is **IMPORT SOLUTION**.|
-| Delete Solution |  | Setting the value to blank will use the default label. Default label is **DELETE SOLUTION**.|
+| Field        | Description |
+|--------------|------------|
+| Deploy Solution |Setting the value to blank will use the default label. Default label is **DEPLOY SOLUTION**.|
+| Commit Solution |Setting the value to blank will use the default label. Default label is **COMMIT SOLUTION**.|
+| Import Solution | Setting the value to blank will use the default label. Default label is **IMPORT SOLUTION**.|
+| Delete Solution | Setting the value to blank will use the default label. Default label is **DELETE SOLUTION**.|
 
 ## Walk-through: ALM accelerator advanced maker experience
 
