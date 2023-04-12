@@ -182,7 +182,6 @@ If you'd like to publish a bot that has **Boost conversations** enabled, you'll 
 :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
 
 
-If your admin wants to enable it only for some environments instead of your tenant, they can start a support request. We'll review your request and get in touch with your admin.
 
 ### Quotas
 
