@@ -2,9 +2,8 @@
 title: "License assignment strategies | MicrosoftDocs"
 description: "Guidance for license assignment."
 author: stjeffer
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2020
+ms.date: 04/12/2023
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: sericks
@@ -32,7 +31,7 @@ Establishing a license assignment strategy is important for:
 > - Pay-as-you-go
 > - Power Pages
 > - Power Virtual Agents
-> - Add-on's such as AI Builder, etc
+> - Add-on's such as AI Builder
 
 ## Common license assignment strategies
 
