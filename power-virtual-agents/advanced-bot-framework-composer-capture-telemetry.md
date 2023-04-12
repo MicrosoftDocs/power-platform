@@ -50,11 +50,11 @@ To connect your bot to Application Insights, you first need to add your instrume
 
 After connecting your bot to Application Insights, telemetry data will be logged when users interact with the bot, including testing within PVA. To see the logged telemetry data, navigate to the **Logs** section of your Application Insights resource in Azure.
 
-From here you can use [Kusto queries](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) to query and analyze your data. See [example queries](#example-queries).
+From here you can use [Kusto queries](/azure/data-explorer/kusto/query) to query and analyze your data. See [example queries](#example-queries).
 
 #### Example queries
 
-A query can be as simple as specifying a single table, such as `customEvents`, which shows all custom telemetry events logged from PVA. But you can also use [Kusto queries](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) to narrow down your results further, including;
+A query can be as simple as specifying a single table, such as `customEvents`, which shows all custom telemetry events logged from PVA. But you can also use [Kusto queries](/azure/data-explorer/kusto/query) to narrow down your results further, including;
 
 - Adding a time interval
 - Extending your results using [custom dimensions](#custom-dimensions). Custom dimensions are custom properties that are logged, along with the pre-built fields, such as timestamp or the event name
