@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Detect duplicate data so you can fix or remove it
 

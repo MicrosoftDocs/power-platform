@@ -9,10 +9,6 @@ ms.author: jeschro
 ms.reviewer: kvivek
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Configuring deployment user settings and profiles for the ALM Accelerator for Power Platform app (preview)
 

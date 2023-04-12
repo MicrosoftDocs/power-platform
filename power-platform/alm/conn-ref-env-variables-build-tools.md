@@ -11,9 +11,6 @@ ms.subservice: alm
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Pre-populate connection references and environment variables for automated deployments

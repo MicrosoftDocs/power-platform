@@ -697,7 +697,7 @@
     },
     {
       "source_path": "power-platform/power-fx/reference/data-types.md",
-      "redirect_url": "power-platform/power-fx/data-types.md",
+      "redirect_url": "/power-platform/power-fx/data-types",
       "redirect_document_id": "false"
     },
     {
@@ -706,8 +706,13 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "power-virtual-agents/publication-add-bot-to-power-apps-portal.md",
-      "redirect_url": "power-virtual-agents/publication-add-bot-to-power-pages.md",
+      "source_path": "power-platform/admin/dlp-granular-controls.md",
+      "redirect_url": "/power-platform/admin/connector-action-control",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/dlp-endpoint-input-formats-examples.md",
+      "redirect_url": "/power-platform/admin/connector-action-control",
       "redirect_document_id": "false"
     }
   ]

@@ -7,21 +7,16 @@ ms.topic: conceptual
 ms.date: 09/20/2022
 ms.subservice: admin
 ms.author: sriknair 
-ms.reviewer: jimholtz
+ms.reviewer: angieandrews
 contributors: 
   - ShawnNandiMSFT 
   - PriyaKodukula 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Requests limits and allocations
 
-Originally announced in October 2019, Power Platform Request limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Power Virtual Agents, and Dynamics 365 applications.
+Power Platform Request limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Power Virtual Agents, and Dynamics 365 applications.
 
 ## What is a Microsoft Power Platform request?
 
@@ -107,7 +102,7 @@ Customers that observe in reporting that they're frequently using more requests 
 
 You cannot assign Power Platform requests capacity add-on packs to users or flows during the [transition period](power-automate-licensing/types.md#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. 
 
-If your Power Automate flows are being throttled, try [Pay-as-you-go](power-automate-licensing/types.md#pay-as-you-go) to ensure none of the flows in the environment are throttled. If you cannot use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
+If your Power Automate flows are being throttled, try [Pay-as-you-go](power-automate-licensing/types.md#power-platform-requests-pay-as-you-go) to ensure none of the flows in the environment are throttled. If you cannot use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
 > [!NOTE]
 > Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users). The functionality for assignment of capacity add-ons will be aligned to the timing of high usage enforcement.
@@ -223,7 +218,7 @@ Reporting for Power Platform Request usage in preview is available in the Power 
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests rolled out in June 2022. Following a public preview period, the reports will move to general availability. There is no current ETA for when this will happen.  Any potential high usage enforcement won't start until at least six months after reports have been made generally available.  However, note that Power Automate will continue to throttle at transition limits until enforcement. See [FAQs](power-automate-licensing/types.md#faqs).
+The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests rolled out in June 2022. Following a public preview period, the reports will move to general availability. There is no current ETA for when this will happen.  Any potential high usage enforcement won't start until at least six months after reports have been made generally available.  However, note that Power Automate will continue to throttle at transition limits until enforcement. See [FAQs](power-automate-licensing/types.md#power-platform-requests-faqs).
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 

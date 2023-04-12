@@ -6,7 +6,6 @@ keywords: "PVA, Teams"
 ms.topic: troubleshooting
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: clmori
 ms.service: power-virtual-agents
 

@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: jimholtz
 contributors:
   - paulliew
-  - denisem-msft
+  - denise-msft
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
@@ -15,11 +15,6 @@ ms.topic: overview
 ms.date: 08/24/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # About data encryption
 

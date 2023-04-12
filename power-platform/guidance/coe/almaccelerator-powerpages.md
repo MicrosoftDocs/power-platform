@@ -3,16 +3,12 @@ title: "Configuring and using the ALM accelerator for Power Apps portal and Powe
 description: "Committing Power Apps Portal/Power Pages website can be achieved by including the website during solution commit. This document describes how to commit Power Apps Portal/Power Pages website and deploy to test environments."
 author: rajeevpentyala
 ms.topic: conceptual
-ms.date: 02/13/2023
+ms.date: 03/15/2023
 ms.subservice: guidance
 ms.author: rajeevpe
-ms.reviewer: kvivek
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform 
 ---
 
 # Configuring and using the ALM accelerator for Power Pages
@@ -46,6 +42,16 @@ Follow these steps to include Power Pages website during solution commit:
 
 When working with multiple different environments, you may consider using deployment profiles to ensure the changes are uploaded to the correct environment using deployment profiles.
 
+There are two ways you can provide deployment profile(s) in ALM Accelerator.
+
+### Upload deployment profiles from the Deployment Settings of ALM Accelerator
+
+From the ALM Accelerator application, open the **Deployment Settings** of a solution and upload the deployment profile file for each environment.
+
+:::image type="content" source="media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png" alt-text="Upload the deployment profile.":::
+
+### Add deployment profiles manually to the solution branch
+
 Follow these steps to use deployment profile along with Power Pages website in the ALM Accelerator:
 
 1. After committing the solution by including Power Pages website, open the solution branch.
@@ -68,7 +74,7 @@ Follow these steps to update the website record once the website has been deploy
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select the downstream environment, and under **Resources**, select **Power Pages sites**.
-1. You will be redirected to **Power Pages sites** page. Select the website and select **Manage**.
+1. You are redirected to **Power Pages sites** page. Select the website and select **Manage**.
 1. Under the **Site Details** section, select **Edit**.
 1. From **Website Record** list, select the website that got transported from your maker/ or dev environment, and select **Save**.
 

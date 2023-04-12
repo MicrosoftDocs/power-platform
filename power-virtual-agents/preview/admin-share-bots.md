@@ -6,7 +6,6 @@ ms.date: 12/08/2022
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: micchow
 ms.custom: multi-author, admin, ceX, bap-template
 ms.collection: virtual-agent

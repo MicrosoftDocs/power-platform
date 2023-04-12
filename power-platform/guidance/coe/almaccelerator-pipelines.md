@@ -9,10 +9,6 @@ ms.author: rusant
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Configuring the ALM Accelerator Azure DevOps pipelines

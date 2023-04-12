@@ -7,7 +7,6 @@ ms.date: 08/30/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: micchow
 ms.custom: "teams, flow, ceX"
 ms.service: power-virtual-agents

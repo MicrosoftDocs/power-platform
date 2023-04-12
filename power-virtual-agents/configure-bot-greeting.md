@@ -8,7 +8,6 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: digantak
-manager: shellyha
 ms.custom: "customization, ce06102020"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

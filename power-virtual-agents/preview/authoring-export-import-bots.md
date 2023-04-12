@@ -7,7 +7,6 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: digantak
-manager: shellyha
 ms.custom: customization, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents

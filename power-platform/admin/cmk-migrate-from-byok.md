@@ -4,7 +4,6 @@ description: Details how to migrate from the legacy self-managed key feature to 
 author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
-ms.service: powerapps
 ms.topic: how-to 
 ms.date: 02/17/2023
 ms.custom: template-how-to
@@ -19,6 +18,7 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 - Migrate BYOK enabled environments – these are environments that you have encrypted with your own key.
 
 > [!IMPORTANT]
+>
 > - This is a preview feature.
 > - The environment is disabled during migration of the BYOK key to the customer-managed key. The downtime is short as we only need to change the encryption key for the SQL storage. Once the environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB, the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. When BYOK enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
 

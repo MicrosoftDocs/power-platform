@@ -10,10 +10,6 @@ ms.author: cgarty
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Administration mode  

@@ -5,7 +5,6 @@ keywords:
 author: Mattp123
 ms.subservice: alm
 ms.author: matp
-manager: kvivek
 ms.custom: ""
 ms.date: 06/25/2021
 ms.reviewer: ""
@@ -13,8 +12,6 @@ ms.reviewer: ""
 ms.topic: "conceptual"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 ---
 # Maintaining healthy model-driven app form ALM
 

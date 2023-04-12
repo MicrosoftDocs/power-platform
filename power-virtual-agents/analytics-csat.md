@@ -7,7 +7,6 @@ ms.date: 01/12/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: mboninco
 ms.custom: analysis, ceX
 ms.service: power-virtual-agents

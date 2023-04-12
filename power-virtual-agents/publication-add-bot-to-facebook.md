@@ -8,7 +8,6 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: micchow
-manager: shellyha
 ms.custom: "publication, authoring, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
