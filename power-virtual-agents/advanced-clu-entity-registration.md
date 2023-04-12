@@ -18,6 +18,9 @@ ms.collection: virtual-agent
 
 This article discusses adding language understanding entities to a Power Virtual Agents bot. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). 
 
+To setup your environment for mapping CLU entities to PVA bots, see [Get started with language understanding](advanced-clu-get-started.md).
+
+The following datatypes are available for mapping CLU entities: 
 
 - BooleanDatatype: `Choice.Boolean`
 - StringDatatype: `Geography.Location, Regex , List, General.Event, General.Organization, Phone Number, IpAddress, Person.Name, Phone Number, URL`

@@ -80,7 +80,12 @@ You create a new bot by mapping existing topics to CLU intents using the **Map i
 
 Once you’ve competed this procedure, your bot topics now appear in the PVA **Topics** pane. For more information, see [Managing topics](authoring-topic-management.md).
 
-## Manually map CLU entities to PVA pre-built data types
+## Manually map CLU intents and entities to PVA pre-built data types
+
+### To manually map intents:
+
+TBD
+### To manually map entities:
 
 1.	From the left navigation, select **Entities**.
 
@@ -94,5 +99,6 @@ Once you’ve competed this procedure, your bot topics now appear in the PVA **T
  
 1.	To access CLU pre-built entities, from the Data Type drop-down menu, select **From sample data**, and choose one of the CLU pre-built JSON code snippets.  
 1.	(Optional) If you want to import JSON schema from a sample file, choose **Get schema from sample JSON** to access the external file. 
+
 
 For more information, see [Entity registration](advanced-clu-entity-registration.md).
