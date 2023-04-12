@@ -12,7 +12,6 @@ ms.custom: "advanced-authoring, CLU, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 
----
 
 # Get started with language understanding
 
@@ -23,8 +22,7 @@ Below are the steps to create a bot using an existing CLU model:
 1. [Prepare your environment](#prepare-your-environment)
 1. Map CLU intents and entities using one of the following options:
     1. [Use the wizard to automatically map CLU intents and entities](#map-clu-intents-and-entities-to-pva-topics)
-    1. [Manually map intents and entities](#manually-map-clu-entities-to-pva-pre-built-data-types)
-1. Troubleshooting tips: Error handling and validation (TBD)
+    1. [Manually map intents and entities](#manually-map-clu-intents-and-entities-to-pva-pre-built-data-types)
 
 ## Prepare your environment
 
