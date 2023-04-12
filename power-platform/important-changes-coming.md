@@ -169,7 +169,6 @@ We are going to defer the removal of this service to allow people more time to c
 
 The Organization Data Service is an OData v2.0 endpoint introduced with Dynamics CRM 2011. The Organization Data Service was deprecated with Dynamics 365 Customer Engagement v8.0 in favor of the Web API, an OData v4.0 service. Today, less than .06% of requests to Dataverse use this endpoint. Removing this endpoint will enable Dataverse to improve overall performance.
 
-Any code that uses the Organization Data Service should be migrated to use the Web API before that time. 
 More information: [OData v2.0 Service removal date announcement](https://aka.ms/DataverseODataV2EndpointRemoval).
 
 ## Support for Microsoft 365 Groups and Yammer in Dynamics 365 is deprecated
