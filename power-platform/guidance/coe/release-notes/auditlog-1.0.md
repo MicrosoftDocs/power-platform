@@ -2,7 +2,6 @@
 title: "Release notes and latest version of the CoE starter kit Audit Log components 1.0 | MicrosoftDocs"
 description: "Release notes and latest version of the Audit Log solution version 1.0."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Released version Audit Log Components 1.0

@@ -3,7 +3,6 @@ title: Set up pipelines in Power Platform
 description: Learn how to create, configure, share, and manage Power Platform pipelines.
 author: caburk
 ms.author: matp
-ms.service: powerapps
 ms.topic: how-to
 ms.date: 02/28/2023
 ms.custom: template-how-to
@@ -20,37 +19,31 @@ Power Platform administrators can create one or more pipelines, associate any nu
 
 - Four environments are recommended, but you can use as few as three Power Platform environments to create a pipeline.
 - All environments used in pipelines must have a Microsoft Dataverse database.
-- Microsoft Dataverse for Teams environments aren't supported for use with pipelines.
+- Microsoft Dataverse for Teams environments aren't currently supported for use with pipelines.
 - You must have a Power Platform administrator or Dataverse system administrator role.
-- Pipelines are a feature of Managed Environments. As such, the development and target environments used in a pipeline must be enabled as a managed environment. Standalone licenses won't be required when you use developer or trial environments with pipelines. More information: [Managed Environments](../admin/managed-environment-overview.md)
-
-> [!IMPORTANT]
->
-> - Managed environment enforcement is enabled for pipelines upon general availability (GA). As a result, any pre-existing pipelines during preview may no longer function until enabled as a managed environment.
-> - End users within any production environment(s) linked to pipelines will require a standalone license for either Power Apps, Power Automate, or Dynamics 365. Makers generally won't require a standalone license unless they're also an end user.
+- All development and target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md). 
 
 #### Choose environments for pipelines
 
 Before you begin, you’ll need to choose which environments will participate in pipelines. A common setup might include the following:
 
-| Environment purpose | Environment type | Managed environment | Standalone license required |
-|--------------|-----|----|-----------|
-| Host | Production | No | No |
-| Development | Developer | Yes at GA | No |
-| QA |  Developer | Yes at GA | No |
-| Production |  Production | Yes at GA | Yes for end users at GA |
+| Environment purpose | Environment type | Managed environment |
+|--------------|-----|----|
+| Host | Production | No |
+| Development | Developer | Yes |
+| QA |  Developer | Yes |
+| Production |  Production | Yes | 
 
-- **Host environment (required)**. This special-purpose environment acts as the **storage** and management plane for all pipeline configuration, security, and run history.
-  - As this is the control center for all deployment activities, we recommend you keep this as a **dedicated production environment** separate from the development and target QA and production environments that participate in pipelines.
+- **Host environment**. This special-purpose environment acts as the **storage** and management plane for all pipeline configuration, security, and run history.
+  - We recommend you keep this as a **dedicated production environment** separate from the development and target environments.
   - If desired, you can configure multiple different hosts within a tenant, such as for separately managing pipelines for different business organizations or geographic locations. One host for the entire tenant is also acceptable as long as all environments are in the same geographic location.
 
    > [!IMPORTANT]
    >
    > Deleting the host environment deletes all pipelines and run data. Use caution and understand the impact of data and configuration loss as well as maker access to pipelines hosted in the environment.
    >
-- **Development (required)**. This is where you’ll develop solutions. 
-- **QA environment (optional)**. This is where you’ll deploy solutions for testing prior to moving them to production.
-- **Production (required)**. The final destination for a deployment pipeline. This is where end users will run the apps that are deployed.
+- **Development environment**. This is where you’ll develop solutions. A pipeline can be run from within any development environments linked to it.
+- **Target environment**. The destination environment(s) a pipeline deploys to. For example, integration testing, UAT, production, etc.
 
 > [!TIP]
 > Use environment names that indicate their purpose. For example, *Contoso Host*, *Contoso Development*, *Contoso QA*, and so forth.
@@ -97,7 +90,7 @@ Once installed, the deployment pipelines configuration application will appear i
    - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
    - **Target Deployment Environment**: This is the target environment where this stage will deploy to.
 1. Repeat the previous two steps for each stage you'd like to add to the pipeline. Note that you must have at least one stage. You can add up to seven stages.
-   
+
    :::image type="content" source="media/Pipeline fully configured.png" alt-text="A fully configured pipeline.":::
 
 ## Grant access to edit or run pipelines

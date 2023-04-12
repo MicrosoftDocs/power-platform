@@ -13,11 +13,6 @@ ms.reviewer: sericks
 ms.contributors: JesseParsons
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Power Platform security FAQs
 

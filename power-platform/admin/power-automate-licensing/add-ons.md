@@ -5,14 +5,9 @@ author: msftman
 ms.topic: overview
 ms.date: 01/31/2023
 ms.author: deonhe
-manager: kvivek
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Add-ons for Power Automate licensing
@@ -25,7 +20,7 @@ Power Apps and Power Automate capacity add-ons increase the daily Power Platform
 
 You cannot assign Power Platform requests capacity add-on packs to users or flows during the [transition period](types.md#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. 
 
-If Power Automate is throttling your flows, try [Pay-as-you-go](types.md#pay-as-you-go) to ensure that none of the flows in the environment are throttled. If you cannot use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
+If Power Automate is throttling your flows, try [Pay-as-you-go](types.md#power-platform-requests-pay-as-you-go) to ensure that none of the flows in the environment are throttled. If you cannot use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
 ## Unattended add-on
 

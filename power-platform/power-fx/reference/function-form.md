@@ -11,8 +11,6 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
@@ -57,6 +55,9 @@ If validation passes, **SubmitForm** submits the change to the data source.
 ### EditForm
 
 The **EditForm** function changes the Form control's mode to **FormMode.Edit**. In this mode, the contents of the Form control's **[Item](/power-apps/maker/canvas-apps/controls/control-form-detail)** property are used to populate the form. If the **SubmitForm** function runs when the form is in this mode, a record is changed, not created. **FormMode.Edit** is the default for the Form control.
+
+>[!NOTE]
+> When the form is in edit mode and Item is null, data card properties are not evaluated and will return default values. 
 
 ### NewForm
 

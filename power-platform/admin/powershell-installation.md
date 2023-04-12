@@ -11,8 +11,6 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-search.app:
-  - Powerplatform
 ---
 
 # Installing PowerShell for Power Platform Administrators

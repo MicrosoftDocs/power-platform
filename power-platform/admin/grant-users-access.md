@@ -14,11 +14,6 @@ ms.topic: overview
 ms.date: 02/23/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Grant users access
 

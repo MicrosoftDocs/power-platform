@@ -13,11 +13,6 @@ contributors:
   - ProfessorKendrick
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Free up storage space
 

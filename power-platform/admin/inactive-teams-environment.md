@@ -10,11 +10,6 @@ ms.author: matgupta
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Automatic deletion of inactive Microsoft Dataverse for Teams environments

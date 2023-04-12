@@ -9,11 +9,6 @@ ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # About the Microsoft Dataverse for Teams environment 
 

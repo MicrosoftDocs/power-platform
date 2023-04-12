@@ -9,11 +9,6 @@ ms.author: ritesp
 ms.subservice: admin
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Block cookie replay attacks in Dataverse
 
