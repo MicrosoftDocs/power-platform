@@ -1,20 +1,13 @@
 ---
-title: "License assignment strategies  - Microsoft Power Platform | MicrosoftDocs"
+title: "License assignment strategies | MicrosoftDocs"
 description: "Guidance for license assignment."
 author: stjeffer
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/31/2020
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: sericks
-search.audienceType: 
-  - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # License assignment strategies
 
@@ -59,8 +52,8 @@ Assigning licenses manually is the most straight-forward method of assigning lic
 
 Licenses are assigned in the following ways:
 
-- The [Licenses](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-licenses-page-to-assign-licenses-to-users&preserve-view=true) page in the Microsoft 365 admin portal. 
-- The [Active users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-active-users-page-to-assign-licenses&preserve-view=true) page in the Microsoft 365 admin portal. 
+- The [Licenses](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-licenses-page-to-assign-licenses-to-users&preserve-view=true) page in the Microsoft 365 admin portal.
+- The [Active users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-active-users-page-to-assign-licenses&preserve-view=true) page in the Microsoft 365 admin portal.
 - [PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true) scripts.
 
 ### Bulk user assignments the Microsoft 365 admin portal
@@ -91,6 +84,7 @@ foreach ($user in $usersToAssign) {
     Write-Host $userCurrent
 }
 ```
+
 Learn more about the Microsoft Graph SDK:
 
 - [Install the Microsoft Graph SDK](/powershell/microsoftgraph/installation?view=graph-powershell-1.0&preserve-view=true)
