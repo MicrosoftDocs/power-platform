@@ -142,7 +142,7 @@ In order for the pipelines to perform certain actions against the environments (
 > [!IMPORTANT]
 > Currently this cmdlet gives elevated permissions (for example, Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed certain capabilities won't work in the AA4PP pipelines.
 ```powershell
-Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
+Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -AllowClobber
 Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber
 New-PowerAppManagementApp -ApplicationId [the Application (client) ID you copied when creating your app registration]
 ```
