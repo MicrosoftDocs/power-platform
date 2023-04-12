@@ -39,6 +39,7 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
 
 - Dataverse (Custom solutions and Microsoft services)
+- [Power Automate](https://learn.microsoft.com/power-automate/customer-managed-keys) ** 
 - Chat for Dynamics 365
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
 - Dynamics 365 Customer Service
@@ -54,6 +55,9 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Fraud Protection (Finance and operations)
 
    > [!NOTE]
+   > 
+   > ** Power Automate - When you apply CMK to an environment that has Flows, the Flows data continues to be encrypted with Microsoft-managed key. For Flows created in an environment that didn't have Flows when CMK was applied will be encrypted with CMK. [Power Automate CMK](https://learn.microsoft.com/power-automate/customer-managed-keys).
+   > 
    > During preview, the connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
    >
    > Contact a representative for services not listed above for information about customer-managed key support.
