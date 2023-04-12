@@ -194,6 +194,6 @@ Yes. If a user account is disabled in an environment, there are three different 
 3. Add per app capacity to an environment, use [this Power Automate flow template](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/) to enable many disabled users in an environment which an admin can run to force the sync operation to enable users. 
 
 ### Power Automate capabilities included with Per App plans
-A Power Apps Per App plan assignment does not give user the ability to create or own Power Automate flows that user Premium features.  Creating and owning flows using Premium features requires assignment of a Power Apps Per User or Power Automate Per User license.  This does not apply for flows [associated to an app](https://learn.microsoft.com/en-us/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
+A Power Apps Per App plan assignment does not give user the ability to create or own Power Automate flows that user Premium features. Creating and owning flows using Premium features requires assignment of a Power Apps Per User or Power Automate Per User license.  This does not apply for flows [associated to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
