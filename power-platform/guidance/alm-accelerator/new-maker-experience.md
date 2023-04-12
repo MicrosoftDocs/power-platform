@@ -36,10 +36,10 @@ The below table shows how the **User Labels** are configured for the **maker** u
 
 | Field        | Value     | Description |
 |--------------|-----------|------------|
-| Deploy Solution |  | Setting the value to blank will use the default label. Default label is **DEPLOY SOLUTION**.|
+| Deploy Solution | - | Setting the value to blank will use the default label. Default label is **DEPLOY SOLUTION**.|
 | Commit Solution | Save Solution  | The commit solution button will be labeled **SAVE SOLUTION**.|
-| Import Solution |  | Setting the value to blank will use the default label. Default label is **IMPORT SOLUTION**. This button is hidden due to the configuration above|
-| Delete Solution |  | Setting the value to blank will use the default label. Default label is **DELETE SOLUTION**. This button is hidden due to the configuration above|
+| Import Solution | - | Setting the value to blank will use the default label. Default label is **IMPORT SOLUTION**. This button is hidden due to the configuration above|
+| Delete Solution |-  | Setting the value to blank will use the default label. Default label is **DELETE SOLUTION**. This button is hidden due to the configuration above|
 
 ## Walk-through: The ALM Accelerator for Power Platform app new maker experience
 
