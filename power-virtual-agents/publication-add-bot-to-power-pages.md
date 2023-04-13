@@ -23,7 +23,7 @@ ms.collection: virtual-agent
 - [Create a Power Page](/powerapps/maker/portals/create-portal).
 - [Create a Power Virtual Agents bot](authoring-first-bot.md).
 
-## Add a bot to your Power Apps portal
+## Add a bot to your Power Pages
 
 Power Pages [design studio](/power-pages/getting-started/use-design-studio) is a no-code experience used to create and customize Power Pages. It contains various options to add and configure webpages, components, forms, and lists.
 

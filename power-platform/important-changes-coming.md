@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 03/15/2023
+ms.date: 04/12/2023
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -158,14 +158,17 @@ Effective November 2021, Data Export Service was deprecated. Data Export Service
 
 ## Dataverse OData v2.0 Service removal
 
-We plan to remove the Dataverse OData v2.0 Organization Data Service on April 30,2023. This was originally scheduled for November 11, 2022, but the date has been extended.
+We plan to remove the Organization Data Service. Any code that uses the Organization Data Service should be migrated to use the Web API before that time.
+
+The original removal date was November 11, 2022, but this was extended to April 30, 2023. We have decided not to remove the service on April 30, 2023.
+
+We are going to defer the removal of this service to allow people more time to complete the transition of their code to use the Web API. If you have detected that you are still using this endpoint, you must prioritize transitioning this code to use Web API so you will be prepared when the final removal date is announced.
 
 > [!NOTE]
 > This announcement does not involve the deprecated Organization Service SOAP endpoint. At this time, no date has been announced for the removal of the SOAP endpoint.
 
 The Organization Data Service is an OData v2.0 endpoint introduced with Dynamics CRM 2011. The Organization Data Service was deprecated with Dynamics 365 Customer Engagement v8.0 in favor of the Web API, an OData v4.0 service. Today, less than .06% of requests to Dataverse use this endpoint. Removing this endpoint will enable Dataverse to improve overall performance.
 
-Any code that uses the Organization Data Service should be migrated to use the Web API before that time. 
 More information: [OData v2.0 Service removal date announcement](https://aka.ms/DataverseODataV2EndpointRemoval).
 
 ## Support for Microsoft 365 Groups and Yammer in Dynamics 365 is deprecated
@@ -387,7 +390,7 @@ Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector.
 
 
 #### Power Automate
-- All new flows must be created with the Microsoft Dataverse connector when possible. If feature gaps such as cross environment connectivity or “when a row is selected” triggering is needed, the Microsoft Dataverse (legacy) connector will need to be used until after August 2023.
+- All new flows must be created with the Microsoft Dataverse connector when possible. If feature gaps such as cross environment connectivity or "when a row is selected" triggering is needed, the Microsoft Dataverse (legacy) connector will need to be used until after August 2023.
 - Existing flows that use the Dynamics 365 connector will need to be re-created using Microsoft Dataverse connector (GA date will be provided in August 2023).
 
 In some cases users will be able to use a migration tool to migrate from the Dynamics 365 connector to the Microsoft Dataverse connector. You'll find the tool in Power Apps ([make.powerapps.com](https://make.powerapps.com)) in the detail page of each flow. In the Flow Checker, you'll see the message "Migrate this flow to the latest Microsoft Dataverse Connector". You'll be able to open the migration assistant from there. Once completed, your flow will be using the Microsoft Dataverse connector.
