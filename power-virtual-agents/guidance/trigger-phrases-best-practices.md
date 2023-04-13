@@ -26,10 +26,10 @@ ms.collection: virtual-agent
 
 ## The importance of the triggering context
 
-Power Virtual Agents Natural Understanding (NLU) behaves slightly differently based on the conversation state. This can sometimes lead to different behaviors for the same user utterence.
+Power Virtual Agents Natural Understanding (NLU) behaves slightly differently based on the conversation state. This can sometimes lead to different behaviors for the same user utterance.
 
 Below are the different conversation states:
- - **Start of the conversation**: the chatbot has no context, so a user utterence is expected to either: trigger a topic directly (*IntentRecognition*), trigger a 'did You mean' disambiguation question (*IntentCandidates*) if there are multiple matching topics, or fallback (*UnknownIntent*) if the intent is not recognized.
+ - **Start of the conversation**: the chatbot has no context, so a user utterance is expected to either: trigger a topic directly (*IntentRecognition*), trigger a 'did You mean' disambiguation question (*IntentCandidates*) if there are multiple matching topics, or fallback (*UnknownIntent*) if the intent is not recognized.
  - **After a 'did You mean' is triggered**: NLU will optimize to match one of the suggested topics, with higher thresholds to move out of the presented options.
  - **Switching out from a current topic**: if the NLU is trying to fill a slot in a topic, and user is giving a user query, that could trigger another topic (topic switching).
 
