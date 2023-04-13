@@ -3,7 +3,7 @@ title: "Upgrade of ALM Accelerator for Power Platform | MicrosoftDocs"
 description: "Upgrade the ALM accelerator for Microsoft Power Platform."
 author: rsantos00
 ms.topic: conceptual
-ms.date: 04/07/2023
+ms.date: 04/13/2023
 ms.subservice: guidance
 ms.author: rusant
 ms.reviewer: sericks
@@ -74,7 +74,7 @@ To simplify this process, there's a pipeline template that automatically synchro
 
 You should have 6 policies under **Definition** tab in the CustomAzureDevOps custom connector. Verify the policies are created according to the following information. You might need to create the missing policies or update them to ensure they match the specifications. Pay attention to the Operations field which in some cases has been seen to be empty after upgrade.
 
-**Set host to `https://vssps.dev.azure.com`** policy
+**Set host to `https://vssps.dev.azure.com` policy**
 
 | **Field name**         | **Value**   |
 |-------------------|-------------------|
@@ -83,7 +83,7 @@ You should have 6 policies under **Definition** tab in the CustomAzureDevOps cus
 | Operations | GetIdentities
 | URL Template | `https://vssps.dev.azure.com`
 
-**Set host to `https://app.vssps.visualstudio.com`** policy
+**Set host to `https://app.vssps.visualstudio.com` policy**
 
 | **Field name**         | **Value**   |
 |-------------------|-------------------|
@@ -92,7 +92,7 @@ You should have 6 policies under **Definition** tab in the CustomAzureDevOps cus
 | Operations | GetOrganizations |
 | URL Template | `https://app.vssps.visualstudio.com` |
 
-**Convert Build Definition Variables to Array** policy
+**Convert Build Definition Variables to Array policy**
 
 | **Field name**         | **Value**   |
 |-------------------|-------------------|
@@ -106,7 +106,7 @@ You should have 6 policies under **Definition** tab in the CustomAzureDevOps cus
 | Property name for the value | value |
 | Run policy on | Response |
 
-**Set host to `https://vsaex.dev.azure.com`** policy
+**Set host to `https://vsaex.dev.azure.com` policy**
 
 | **Field name**         | **Value**   |
 |-------------------|-------------------|
@@ -115,7 +115,7 @@ You should have 6 policies under **Definition** tab in the CustomAzureDevOps cus
 | Operations | RemoveMemberFromGroup, AddMemberToGroup
 | URL Template | `https://vsaex.dev.azure.com`
 
-**Set method to POST** policy
+**Set method to POST policy**
 
 | **Field name**         | **Value**   |
 |-------------------|-------------------|
@@ -125,7 +125,7 @@ You should have 6 policies under **Definition** tab in the CustomAzureDevOps cus
 | New path | {organization}/{project}/_apis/pipelines/{pipelineId}/runs
 | Method | POST
 
-**Set method to GET for ListItems** policy
+**Set method to GET for ListItems policy**
 
 | **Field name**         | **Value**   |
 |-------------------|-------------------|
