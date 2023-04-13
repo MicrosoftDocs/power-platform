@@ -36,7 +36,7 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 > SSO is currently not supported when a bot has been either:
 >
 > - Published to a [SharePoint website](publication-connect-bot-to-web-channels.md#add-bot-to-your-website).
-> - Published to a [Power Apps portal](publication-add-bot-to-power-apps-portal.md).
+> - Published to a [Power Apps portal](publication-add-bot-to-power-pages.md).
 
 ## Prerequisites
 
