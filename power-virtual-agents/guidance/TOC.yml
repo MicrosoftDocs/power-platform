@@ -16,6 +16,8 @@
         href: fallback-topic.md
     - name: Trigger phrases best practices
       href: trigger-phrases-best-practices.md  
+    - name: Slot filling best practices
+      href: slot-filling-best-practices.md
 - name: Measuring and improving chatbots
   items:
     - name: Deflection optimization
@@ -36,5 +38,9 @@
       href: custom-analytics-strategy.md
 - name: How to's
   items:
-  - name: Embed a chatbot on a webpage
+  - name: Embed a chatbot in Power Pages
     href: /power-pages/guidance/integrate-pva.md
+  - name: Embed a chatbot in Power Apps
+    href: /power-apps/maker/portals/add-chatbot    
+  - name: Search and return results from Dataverse
+    href: /power-virtual-agents/advanced-flow-list-of-results.md
