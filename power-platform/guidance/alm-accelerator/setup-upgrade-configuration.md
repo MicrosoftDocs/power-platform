@@ -70,11 +70,11 @@ To simplify this process, there's a pipeline template that automatically synchro
 > [!NOTE]
 > If the generated pull request has merge conflicts, these need to be resolved to complete the upgrade. A free Azure DevOps extension called **Pull Request Merge Conflict Extension** can be install from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.conflicts-tab).
 
-## Create the CustomAzureDevOps custom connector policies
+## Verify the CustomAzureDevOps custom connector policies
 
-You should have 3 policies under **Definition** tab in the CustomAzureDevOps custom connector. Verify the policies are created accordingly to the following information. You might need to create missing policies.
+You should have 6 policies under **Definition** tab in the CustomAzureDevOps custom connector. Verify the policies are created according to the following information. You might need to create the missing policies or update them to ensure they match the specifications. Pay attention to the Operations field which in some cases has been seen to be empty after upgrade.
 
-**Set host to `https://vssps.dev.azure.com` policy
+**Set host to `https://vssps.dev.azure.com`** policy
 
 | **Field name**         | **Value**   |
 |-------------------|-------------------|
@@ -83,7 +83,7 @@ You should have 3 policies under **Definition** tab in the CustomAzureDevOps cus
 | Operations | GetIdentities
 | URL Template | `https://vssps.dev.azure.com`
 
-**Set host to `https://app.vssps.visualstudio.com` policy
+**Set host to `https://app.vssps.visualstudio.com`** policy
 
 | **Field name**         | **Value**   |
 |-------------------|-------------------|
@@ -105,3 +105,32 @@ You should have 3 policies under **Definition** tab in the CustomAzureDevOps cus
 | Property name for the key | key |
 | Property name for the value | value |
 | Run policy on | Response |
+
+**Set host to `https://vsaex.dev.azure.com`** policy
+
+| **Field name**         | **Value**   |
+|-------------------|-------------------|
+| Name     | Set host to `https://vsaex.dev.azure.com`|
+| Template| Set host URL
+| Operations | RemoveMemberFromGroup, AddMemberToGroup
+| URL Template | `https://vsaex.dev.azure.com`
+
+**Set method to POST** policy
+
+| **Field name**         | **Value**   |
+|-------------------|-------------------|
+| Name     | Set method to POST |
+| Template| Route request
+| Operations | RunSyncPipeline
+| New path | {organization}/{project}/_apis/pipelines/{pipelineId}/runs
+| Method | POST
+
+**Set method to GET for ListItems** policy
+
+| **Field name**         | **Value**   |
+|-------------------|-------------------|
+| Name     | Set method to GET for ListItems |
+| Template| Route request
+| Operations | ListItems
+| New path | `https://dev.azure.com/{organization}/{project}/_apis/git/repositories/{repo}/items`
+| Method | GET
