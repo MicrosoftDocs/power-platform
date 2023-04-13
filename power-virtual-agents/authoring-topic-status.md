@@ -1,8 +1,8 @@
 ---
-title: View topic status (preview)
+title: View topic status
 description: Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 12/14/2022
+ms.date: 04/13/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
