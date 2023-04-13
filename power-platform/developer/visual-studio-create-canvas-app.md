@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
   - JimDaly
 ---
-# Create a Canvas App front end for your ASP.NET web API (preview)
+# Create a canvas app front end for your ASP.NET web API (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
