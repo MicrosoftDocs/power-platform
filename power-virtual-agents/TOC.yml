@@ -161,8 +161,8 @@
           href: publication-connect-bot-to-web-channels.md
         - name: Add your bot to your live website (preview)
           href: preview/publication-connect-bot-to-web-channels.md
-        - name: Add bot to Power Apps portal
-          href: publication-add-bot-to-power-apps-portal.md
+        - name: Add bot to Power Pages
+          href: publication-add-bot-to-power-pages.md
         - name: Add bot to Microsoft Teams
           href: publication-add-bot-to-microsoft-teams.md
         - name: Add bot to Facebook
