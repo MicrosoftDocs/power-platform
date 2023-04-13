@@ -49,5 +49,5 @@ The current integration only works for the following dev tunnels configurations:
 Get started by right-clicking on the **Connected Services** node in **Solution Explorer** and select **Manage Connected Services**. Search for **Power Platform** and setup your connection.
 
 > [!div class="nextstepaction"]
-> [Create a Canvas App front end for your ASP.NET web API](visual-studio-create-canvas-app.md)<br/>
+> [Create a canvas app front end for your ASP.NET web API](visual-studio-create-canvas-app.md)<br/>
 
