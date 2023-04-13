@@ -221,7 +221,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >[!NOTE]
 > To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 15 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
 
-The first run of these flows perform a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
+The first run of these flows performs a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
 
 ## Set up dataflows to retrieve your inventory from Data Export
 
@@ -482,7 +482,7 @@ Environment variables are used to store application and flow configuration data 
 | Environment Dataflow ID | Dataflow ID of the CoE BYODL Environments dataflow.  Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
 | Flow Dataflow ID | Dataflow ID of the CoE BYODL Flows dataflow.  Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
 | FullInventory | Determines whether you want to update only objects that have changed, or all objects. Switching to Yes causes the flows to inventory every single app, flow, and bot in the tenant every day, and isn't recommended for large tenants.  | No |
-| Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)| Not applicable |
+| Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High, and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)| Not applicable |
 |Individual Admin |This is the email address to which communications in the starter kit will be sent which can't be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
 | InventoryFilter_DaysToLookBack | When not running a full inventory, we filter back this number of days and then see if the object needs updated.| 7 |
 | is All Environments Inventory |If true, (the default) the CoE inventory tracks all environments. New environments added to the inventory have their Excuse from Inventory set to false. You can opt out individual environments.  If false, the CoE inventory tracks a subset of environments. New environments added to the inventory have their Excuse from Inventory set to true. You can opt in individual environments.  | Yes |
