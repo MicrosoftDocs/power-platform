@@ -287,7 +287,7 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
         
 1. The **CoE BYODL Makers** will now start refreshing - wait for the refresh to finish.
 
-            :::image type="content" source="media/byodl-12.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
+        :::image type="content" source="media/byodl-12.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
             
 1. Now edit the **CoE BYODL Environments** dataflow and complete the same steps to update the **DatalakeURL** and **EnvironmentAPI** parameters and configure the connections to the data sources used by this dataflow. 
 1. Select **Next**. 
