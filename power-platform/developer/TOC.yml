@@ -49,9 +49,9 @@
               href: isvstudio\usage-analytics.md
             - name: Install failures analytics
               href: isvstudio\install-failure-analytics.md
-            - name: Auto App Updates (Preview)
+            - name: Auto App Updates (preview)
               href: isvstudio\auto-update.md
-            - name: Embed Pay-as-you-go for ISVs (Preview)
+            - name: Embed Pay-as-you-go for ISVs (preview)
               href: isvstudio/embed-analytics.md      
     - name: Tools
       expanded: true
@@ -111,9 +111,9 @@
           href: tools-alm.md
         - name: Dataverse developer tools
           href: tools-dataverse.md
-        - name: Visual Studio Integration (preview)
+        - name: Visual Studio integration (preview)
           items:
-            - name: Visual Studio connected service (Preview)
+            - name: Visual Studio connected service
               href: visual-studio-connected-service.md
-            - name: Create a Canvas App front end for your ASP.NET web API
+            - name: Create a canvas app front end for your ASP.NET web API
               href: visual-studio-create-canvas-app.md          
