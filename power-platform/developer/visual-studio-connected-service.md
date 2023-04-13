@@ -14,7 +14,7 @@ contributors:
 ---
 # Visual Studio connected service (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Code-first developers can now create custom connectors from within Visual Studio. Together with the existing capabilities developers have to build Microsoft Azure Functions or APIs in Visual Studio, this Visual Studio integration enables a complete end-to-end experience in custom connector development.
 
@@ -35,7 +35,7 @@ Dev tunnels enable an ad-hoc connection between your web API running locally and
 - [Visual Studio 2022 version 17.6 Preview 2](/visualstudio/releases/2022/release-notes-preview) with the ASP.NET and web development workload installed. You need to be signed in to Visual Studio to create and use dev tunnels. The feature isn't available in Visual Studio for Mac.
 - [Dev tunnels](/aspnet/core/test/dev-tunnels) preview feature enabled. Select Tools > Options > Environment > Preview Features > Enable dev tunnels for Web Applications.
 - An [ASP.NET Core Web API project](/aspnet/core/tutorials/first-web-api?tabs=visual-studio)
-- A Microsoft Power Platform environment – more info: [Create a developer environment](create-developer-environment.md).
+- A Microsoft Power Platform environment. More information: [Create a developer environment](create-developer-environment.md).
 
 ## Limitations
 
