@@ -4,7 +4,7 @@ description: "Learn how to use the Power Platform connected service integration 
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-ms.date: 04/11/2023
+ms.date: 04/13/2023
 ms.reviewer: jdaly
 ms.topic: how-to
 search.audienceType: 
@@ -20,7 +20,7 @@ Power Platform enables web API developers to quickly build mobile or web applica
 
 You can start creating a canvas app before publishing your API to a public endpoint using Visual Studio [*dev tunnels*](/aspnet/core/test/dev-tunnels#create-a-tunnel). Dev tunnels enable an ad-hoc connection between your web API running locally and your Power Apps. This feature can be used, to locally debug and test your web API in the context of the Microsoft Power Platform in real time (inner loop).
 
-This tutorial uses the sample ASP.NET Weather web API to create a custom connector that you can use with a canvas app. [More info](/aspnet/core/tutorials/first-web-api?tabs=visual-studio)
+This tutorial uses the sample ASP.NET Weather web API to create a custom connector that you can use with a canvas app. It is based on [Tutorial: Create a web API with ASP.NET Core](/aspnet/core/tutorials/first-web-api?tabs=visual-studio).
 
 :::image type="content" source="media/vs-powerApp.png" alt-text="Power app created from sample ASP.NET Weather web API":::
 
@@ -35,7 +35,7 @@ This tutorial uses the sample ASP.NET Weather web API to create a custom connect
 1. Type `WeatherSample` into **Project name**, and then select **Next**.
 1. Select **Create**.
 
-Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. This project contains an example controller for a RESTful HTTP service.
+The `WeatherSample` project contains an example controller for a RESTful HTTP service.
 
 ## Step 2: Add Power Platform as a connected service
 
@@ -52,7 +52,6 @@ Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. 
    
    1. In the field **Name**, type `SampleTunnel`.
    1. Select **Tunnel Type**: **Persistent**.
-   <!-- I don't see the option to select Tunnel Type or Access after upgrading to VS 2022 v17.5.3 I don't have the preview version installed  -->
    1. Select **Access** : **public**.
    1. Select **OK**.
    
@@ -69,7 +68,6 @@ When a tunnel is active and Visual Studio runs a web app, the web browser opens 
 1. [Create a blank canvas app](/power-apps/maker/canvas-apps/create-blank-app). Select **Phone** as the format.
 1. In the top menu, select **Add data**.
 1. Type `WeatherSample` in the search box. Select the **WeatherSample_Connector**, and select **Connect**. More information: [Add connections to your canvas app](/power-apps/maker/canvas-apps/add-data-connection)
-<!-- Above didn't work for me with VS 2022 v17.5.3. I don't have the preview version installed -->
 1. In the menu, select **Insert** > **Button**. Drag and drop the button to the bottom of the form. Change the **Text** to **Load Data**.
 1. Add the following formula to the **OnSelect** property:
    
