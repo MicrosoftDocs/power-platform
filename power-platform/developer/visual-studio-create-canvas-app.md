@@ -1,5 +1,5 @@
 ---
-title: "Create a Canvas App front end for your ASP.NET web API (Preview)"
+title: "Create a canvas app front end for your ASP.NET web API (preview)"
 description: "Learn how to use the Power Platform connected service integration with Visual Studio to create a canvas Power App for your ASP.NET web API"
 author: marcelbf
 ms.subservice: developer
@@ -10,11 +10,11 @@ ms.topic: how-to
 search.audienceType: 
   - developer
 contributors:
-- JimDaly
+  - JimDaly
 ---
-# Create a Canvas App front end for your ASP.NET web API (Preview)
+# Create a Canvas App front end for your ASP.NET web API (preview)
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Platform enables web API developers to quickly build mobile or web applications using a Power Apps canvas app as a front end. With the Power Platform connected service in Visual Studio 2022, ASP.NET web API developers can easily create a custom connector you can use with Power Apps and Power Automate.
 
@@ -27,11 +27,11 @@ This tutorial uses the sample ASP.NET Weather web API to create a custom connect
 ## Prerequisites
 
 - Download [Visual Studio 2022 version 17.6 Preview 2](/visualstudio/releases/2022/release-notes-preview) with the **ASP.NET and web development**  workload installed. You need to be signed in to Visual Studio to create and use dev tunnels. The feature isn't available in Visual Studio for Mac.
-- One Power Platform environment with permission to create custom connectors.
+- A Power Platform environment with permission to create custom connectors.
 
 >[!NOTE]
 >
-> If you need help getting started with Microsoft Power Platform, go to [Create a Developer Environment](create-developer-environment.md).
+> If you need help getting started with Microsoft Power Platform, go to [Create a developer environment](create-developer-environment.md).
 
 ## Step 1: Create a new ASP.NET project in Visual Studio
 
@@ -63,7 +63,7 @@ Step 1 created a solution named `WeatherSample` with a `WeatherSample` project. 
 1. Select **Finish**
 1. Once the connected service is configured, select **Close**.
 
-## Step 3: Create a Power App with the Custom Connector
+## Step 3: Create a canvas app with the custom connector
 
 When a tunnel is active and Visual Studio runs a web app, the web browser opens to a tunnel URL instead of a localhost URL. With your Visual Studio Solution running:
 
@@ -89,6 +89,6 @@ When a tunnel is active and Visual Studio runs a web app, the web browser opens 
 With your power app running you can set a breakpoint, and debug your Power Apps app or Power Automate flow. You can also use [Hot Reload](/visualstudio/debugger/hot-reload)
 
 
-### See Also
+### See also
 
 [How to use dev tunnels in Visual Studio 2022 with ASP.NET Core apps](/aspnet/core/test/dev-tunnels)
