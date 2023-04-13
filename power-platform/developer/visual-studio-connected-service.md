@@ -1,6 +1,6 @@
 ---
-title: "Visual Studio connected service (Preview)"
-description: "Add Power Platform as a connected service in Visual Studio to create a Custom Connector."
+title: "Visual Studio connected service (preview)"
+description: "Add Power Platform as a connected service in Visual Studio to create a custom connector."
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
@@ -12,11 +12,15 @@ search.audienceType:
 contributors:
 - JimDaly
 ---
-# Visual Studio connected service (Preview)
+# Visual Studio connected service (preview)
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Code-first developers can now create custom connectors from within Visual Studio. Together with the existing capabilities developers have to build Microsoft Azure Functions or APIs in Visual Studio, this Visual Studio integration enables a complete end-to-end experience in custom connector development.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)].
 
 [Connected Services](/visualstudio/azure/overview-connected-services) is a collection of tools in Visual Studio that help you connect to different services. For Visual Studio 2022, we added support for the Microsoft Power Platform for [ASP.NET Core Web API projects](/aspnet/core/tutorials/first-web-api?tabs=visual-studio). With this integration, you can do the following:
 
