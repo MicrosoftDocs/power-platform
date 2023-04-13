@@ -14,11 +14,6 @@ contributors:
   - kenseongtan
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Pay-as-you-go meters
 
@@ -114,7 +109,7 @@ Flow runs of flows with standard connectors aren't charged. Flow runs triggered 
 
 Example: If a user with a Power Automate per user license runs a cloud flow in a pay-as-you-go environment, that flow run won't be charged as it's part of the Power Automate per user license entitlement. But, if the same user runs a flow with attended RPA, that flow run will be charged to the customer’s Azure subscription because RPA isn't part of the Power Automate per user license entitlement.  
 
-If a flow is licensed with a Power Automate per flow plan, any flow runs of that flow won't be changed to the customer’s Azure subscription.  
+If a flow is licensed with a Power Automate per flow plan, any flow runs of that flow won't be charged to the customer’s Azure subscription.  
 
 When determining whether a flow run should be charged or not:  
 

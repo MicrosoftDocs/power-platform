@@ -1,8 +1,7 @@
 ---
 title: "Use the Creator Kit | Creator Kit"
 description: "The Creator Kit is shipped as a single, self-contained solution. Learn about the building blocks designed to help you create Fluent UI–based apps."
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/16/2022
@@ -11,10 +10,6 @@ ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist

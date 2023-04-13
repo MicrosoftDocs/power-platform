@@ -7,7 +7,6 @@ ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: makolomi
 ms.custom: "cex"
 ms.collection: virtual-agent

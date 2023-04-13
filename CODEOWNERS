@@ -1,0 +1,9 @@
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
+
+/power-platform/admin                               @KumarVivek @sericks007 @tapanm-msft
+/power-platform/guidance                            @KumarVivek @sericks007
+/power-platform/developer/                          @PHecke @KumarVivek @JimDaly
+/power-platform/alm/                                @PHecke @KumarVivek @Mattp123
+/power-platform/power-fx/                           @tapanm-msft @KumarVivek @mduelae
+/power-virtual-agents/                              @iaanw @leeclontz @KumarVivek

@@ -12,11 +12,6 @@ ms.topic: conceptual
 ms.date: 12/08/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Create a team template to control access rights for automatically created teams
 

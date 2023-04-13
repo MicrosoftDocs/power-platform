@@ -11,8 +11,6 @@ ms.subservice: power-fx
 ms.author: jorisde
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 contributors:
   - jorisdg
   - mduelae
@@ -46,11 +44,11 @@ The following table lists the data types and corresponding functions to convert 
 
 | Data Type | Function  | Description |
 | --- | --- | --- |
-| Boolean | [Boolean()](./reference/function-boolean.md) | When converting **untyped object** to **boolean**, the value may need to be converted to [text](./reference/function-text.md) or [number](./reference/function-value.md) first if the **untyped object** represents the **boolean** in those types. |
+| Boolean | [Boolean()](./reference/function-boolean.md) | When converting **untyped object** to **boolean**, the underlying value has to represent a boolean or a type that can be automatically converted (such as a string "true"). |
 | Color | [ColorValue() or RGBA()](./reference/function-colors.md) | Colors can be represented in Cascading Style Sheet (CSS) color definition notation as a string, or as individual RGBA components. The **untyped object** can be converted directly from a Cascading Style Sheet (CSS) color definition string using the [ColorValue()](./reference/function-colors.md) function, or from individual RGBA [numbers](./reference/function-value.md) into color using the [RGBA()](./reference/function-colors.md) function. |
-| Currency, Number | [Value()](./reference/function-value.md) | Numbers in **untyped object** can be directly converted to numbers. However, if the original **untyped object** value was represented as text, for example as `ParseJSON("""123""")` then it must first be converted to [text](./reference/function-text.md) before converting to a number. |
+| Currency, Number | [Value()](./reference/function-value.md) | When converting **untyped object** to **number**, the underlying value has to represent a number or a type that can be automatically converted (such as a string "123.456"). |
 | Date, DateTime, Time | [DateValue(), TimeValue() or DateTimeValue()](./reference/function-datevalue-timevalue.md) | Date, time and datetime can be directly converted from **untyped object** to their respective type, when represented in ISO 8601 format. Other formats must first be converted to text using the [Text()](./reference/function-text.md) function and then passed into the [DateValue(), TimeValue() or DateTimeValue()](./reference/function-datevalue-timevalue.md) function that by default will use the language of the current user's settings to interpret the date and time. |
-| GUID | [GUID()](./reference/function-guid.md) | An **untyped object** can be directly converted to GUID. |
+| GUID | [GUID()](./reference/function-guid.md) | An **untyped object** can be directly converted to GUID if the underlying object represents a GUID, or if it represents a string. |
 | HyperLink, Image, Media | [Text()](./reference/function-text.md) | These data types are text data types, and can be converted to text and then used in Power Fx. |
 | Choice, Two Option | [Switch() or If()](./reference/function-if.md) | **Choices** and **two options** are presented as localized strings in Power Fx. **Choices** are backed by a number and **two options** as booleans. There's no direct conversion from boolean, number or string to a **choice** or **two option**, but the [Switch()](./reference/function-if.md) or [If()](./reference/function-if.md) functions can be used on the boolean, text or number value to correctly assign the **choice** or **two option** value. |
 | Record | n/a | There's no direct conversion from **untyped object** to a record structure, but individual fields can be retrieved from the **untyped object** to create a new record. |

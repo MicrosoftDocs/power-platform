@@ -2,7 +2,6 @@
 title: "ALM Accelerator App Registrations - considerations when designing your Azure App Registration strategy | MicrosoftDocs"
 description: "The ALM accelerator for Microsoft Power Platform relies on Azure App Registrations to communicate with required services such as Azure DevOps, Power Platform and Power Apps Advisor service. This document gives an overview of different approaches to designing your App Registrations for ALM Accelerator."
 author: jenschristianschroder
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/11/2022
@@ -11,10 +10,6 @@ ms.author: jeschro
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # ALM Accelerator App Registrations (preview)
 

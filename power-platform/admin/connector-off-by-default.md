@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Disable new connectors by default | MicrosoftDocs"
 description: Describes how new connectors are disabled by default in GCC High and DoD.
 
@@ -14,11 +14,6 @@ contributors:
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Disable new connectors by default in GCC High and DoD
 

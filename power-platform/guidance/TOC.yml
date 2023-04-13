@@ -17,10 +17,16 @@
           items:
             - name: Establishing a Center of Excellence
               href: adoption/coe.md
+            - name: Measure business value
+              href: adoption/business-value.md
             - name: Roles and responsibilities
               href: adoption/roles.md
+            - name: Executive sponsorship
+              href: adoption/executive-sponsorship.md
             - name: Delivery models
               href: adoption/delivery-models.md
+            - name: License assignment strategies
+              href: adoption/license-assignment-strategies.md
             - name: "Case study: Success Hub"
               items:
                 - name: Overview
@@ -42,7 +48,7 @@
                 - name: Manage Dataverse for Teams environments
                   href: adoption/teams-environment-strategy.md
                 - name: Manage the default environment
-                  href: adoption/manage-default-environment.md  
+                  href: adoption/manage-default-environment.md
             - name: Secure
               items:
                 - name: Establish DLP policies

@@ -9,11 +9,6 @@ ms.subservice: admin
 ms.author: ampatra
 search.audienceType: 
  - admin
-search.app:
- - D365CE
- - PowerApps
- - Powerplatform
- - Flow
 ---
 
 # View license consumption (preview)

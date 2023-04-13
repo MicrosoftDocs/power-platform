@@ -9,10 +9,6 @@ ms.author: rusant
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Upgrade of ALM accelerator for Power Platform (preview)
 

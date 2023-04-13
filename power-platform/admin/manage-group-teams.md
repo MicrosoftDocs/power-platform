@@ -10,11 +10,6 @@ ms.author: paulliew
 ms.reviewer: matp
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage group teams
 

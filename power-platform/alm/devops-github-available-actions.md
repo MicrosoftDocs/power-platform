@@ -5,7 +5,6 @@ keywords:
 author: kkanakas
 ms.subservice: alm
 ms.author: kartikka
-manager: kvivek
 ms.custom: ""
 ms.date: 08/30/2021
 ms.reviewer: "pehecke"
@@ -13,9 +12,6 @@ ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Available GitHub Actions for Microsoft Power Platform development

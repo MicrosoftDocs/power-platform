@@ -10,11 +10,6 @@ ms.author: dmartens
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Troubleshooting and monitoring server-side synchronization 
 

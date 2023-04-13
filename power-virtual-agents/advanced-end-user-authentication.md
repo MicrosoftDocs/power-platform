@@ -7,7 +7,6 @@ ms.date: 08/11/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: clmori
 ms.custom: authentication, ceX
 ms.service: power-virtual-agents
