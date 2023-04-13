@@ -1,10 +1,10 @@
 ---
-title: "Check your chatbot with the Test bot"
+title: "Test your Power Virtual Agents bot"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
 keywords: "PVA"
-ms.date: 03/24/2023
-
+ms.date: 04/13/2023
 ms.topic: article
+
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
@@ -17,14 +17,13 @@ ms.collection: virtual-agent
 
 [!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
-As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation.
+In Power Virtual Agents, you can design and test your bot simultaneously by opening the **Test bot** pane and the authoring canvas side-by-side. As you interact with the bot, nodes that fire are highlighted in the authoring canvas to help you find and fix unexpected behavior. 
 
-To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step, and go to the corresponding node in the authoring canvas.
+When you turn on the **Tracking topic-to-topic** feature, you can automatically navigate across topics to each node as it fires. You can also use the **Variables** pane to see the values of your variable change through the course of the conversation. 
 
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-
 
 # [Preview](#tab/preview)
 
@@ -32,62 +31,79 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 Use the **Test bot** pane to walk through your bot conversations as the user. It's a good way to make sure your topics are working and that conversations flow as you expect.
 
-### Test a topic in the Test bot pane
+### Follow a conversation through a topic 
 
-1. If the **Test bot** pane is hidden, select **Test your bot** at the bottom of the left side panel to open it.
+1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.  
 
-   :::image type="content" source="media/authoring-test-bot/test-bot-menu.png" alt-text="Screenshot of the Power Virtual Agents left side panel, with the Test your bot button highlighted.":::
+   [new PVA2 screenshot] 
 
-1. Select **Reset** at the top of the **Test bot** pane to clear previous conversations.
+1. In the *Type your message* field, enter some text. If the text is similar to a trigger phrase for a topic, that topic will begin. 
 
-    Resetting makes it easier to follow the flow of the current topic without getting confused by previous conversations.
+   [new PVA2 screenshot] 
 
-   :::image type="content" source="media/authoring-test-bot/test-bot-reset.png" alt-text="Screenshot of the Test bot pane, with the Reset button highlighted.":::
+1. Select the bot response in the **Test bot** pane. This takes you to the topic and the node that sent the response. Nodes that have fired display a colored checkmark and a colored bottom border. 
 
-1. At the **Type your message** prompt, enter one of the topic's trigger phrases.
+1. If you continue the conversation with the test bot in the same topic, each node that fires is marked with the checkbox and bottom border and centered in the canvas. 
 
-    It's a good idea to test variations of the topic's trigger phrases to make sure your bot is as responsive as possible.
+   [new PVA2 screenshot] 
 
-    The trigger phrase starts the conversation. The **Test bot** pane displays the bot's response and the user response choices you specified.
+1. Continue the conversation, testing that the bot flows as intended in the topic.  
 
-1. Continue the conversation, testing that it flows as intended when you [designed in the topic](authoring-create-edit-topics.md).
+You can update a topic at any time while interacting with the test bot. Simply save your topic to apply changes and continue the conversation with your bot.  
+ 
+Your conversation is not automatically cleared when you save a topic. If at any point you want to clear the conversation from your test bot and start over, select the **Reset** button. 
 
-You can return to a topic's authoring canvas at any time to revise the conversation path. The **Test bot** pane automatically refreshes when you save changes to a topic.
+[new PVA2 screenshot] 
 
+### Track topic-to-topic
+
+You can automatically navigate across topics to each node that fires, by using the **Track topic-to-topic** setting. 
+ 
+1. At the top of the **Test bot** pane, set **Track topic-to-topic** to **On**. 
+
+   [new PVA2 screenshot] 
+
+1. Continue interacting with your bot. As you navigate to each node that fires, you can switch topics along with the conversation. 
+
+### Test variable values
+
+You can observe the values of your variables as you test your bot. 
+
+1. Open the test bot. 
+
+1. Open the **Variables** pane and select the **Test** tab. If a variable has values, it appears here. Any empty variables appear as *undefined*. 
+
+   [new PVA2 screenshot] 
+
+1. To inspect complex values, such as a *list* or *record*, select the link in the value to see more details. 
+
+   [new PVA2 screenshot]  
+
+For information about using the variable test pane to test slot filling, see [Slot filling](advanced-entities-slot-filling#slot-filling.md).
+
+ 
 ### Save conversation snapshots
 
-While you're testing your bot in the **Test bot** pane, you can capture the content of, and diagnostics data about, the conversation and save it in a file. You can analyze the data to troubleshoot issues, such as the bot not responding in the way you expect.
+While you're testing your bot, you can capture the content of and diagnostics data about the conversation, and save it as a file. You can then analyze the data to troubleshoot issues, such as the bot not responding in the way you expect.
 
 > [!WARNING]
 > The snapshot file contains all your bot content, which may include sensitive information.
 
-1. At the top of the **Test bot** pane, select the **More** icon (**&vellip;**), and then select **Save snapshot**.
+1. At the top of the **Test bot** pane, select the menu icon (⋮), then select **Save snapshot**. 
 
-    :::image type="content" source="media/authoring-test-bot/save-snapshot.png" alt-text="Screenshot of the Test bot pane, with the More menu icon and Save snapshot button highlighted.":::
+   [new PVA2 screenshot] 
 
-1. Select **Save**.
+1. Select **Save** to save the bot content and conversational diagnostics in a .zip archive file named *botContent.zip*.
 
-The bot's content and conversational diagnostics are saved in a .zip archive file called _DSAT.zip_. The _DSAT.zip_ file contains two files, _botContent.json_ and _dialog.json_:
+   [new PVA 2 screenshot] 
+  
+The *botContent.zip* file contains two files: *botContent.yml* and *dialog.json*. 
 
-- _dialog.json_ contains conversational diagnostics, including detailed descriptions of errors.
+[new screenshot from Windows file explorer] 
 
-- _botContent.json_ contains the bot's topics and other content, including entities and variables used in the bot.
+- *dialog.json* contains conversational diagnostics, including detailed descriptions of errors.  
 
-### Report issues with your bot conversations
-
-Help us improve Power Virtual Agents by using the **Flag an issue** command in the **Test bot** pane to tell us about issues with your conversations.
-
-1. At the top of the **Test bot** pane, select the flag icon (**Flag an issue**)
-
-    :::image type="content" source="media/authoring-test-bot/flag-issue-icon.png" alt-text="Screenshot of the Test bot pane, with the Flag an issue icon highlighted.":::
-
-1. Select **Flag issue**.
-
-    :::image type="content" source="media/authoring-test-bot/flag-issue.png" alt-text="Screenshot of the Flag an issue confirmation message.":::
-
-The **Flag an issue** command sends the conversation ID to Microsoft. The conversation ID is a unique identifier that Microsoft uses to troubleshoot an issue with the conversation. Other information, such as the contents of the _DSAT.zip_ file, isn't sent when you flag an issue.
-
-All information collected is anonymous and will be used to help improve bot quality.
+- *botContent.yml* contains the bot's topics and other content, including entities and variables used. 
 
 
 # [Classic](#tab/web)
@@ -204,10 +220,7 @@ If the conversation path in the **Test your bot** pane moves from one topic to a
 
 ---
 
-Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
-
-:::image type="content" source="media/authoring-test-bot/flag-issue.png" alt-text="Flag an issue.":::
-
-All information collected is anonymous and will be used to help improve bot quality.
+> [!NOTE]
+> Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the **Test bot** pane. This submits your conversation ID to Microsoft; the ID is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as is stored in the *DSAT.zip* file, is not sent when you flag an issue. All information collected remains anonymous and will be used to help improve bot quality. 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
