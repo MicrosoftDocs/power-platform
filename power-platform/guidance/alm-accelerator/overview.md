@@ -42,7 +42,23 @@ The target users for the ALM Accelerator app include:
 
 The target user for [setting up and configuring](./setup-admin-tasks.md) the ALM Accelerator is an administrator with a deeper understanding of Power Platform environments, solutions, Azure pipelines, and familiarity with Azure AD and Dataverse administration.
 
-:::image type="content" source="media/TheMakerTeam.png " alt-text="The maker team.":::
+:::image type="content" source="media/TheMakerTeam.png " alt-text="Maker Team
+Individual Development Environments
+Makers work in isolation in their personal Development environments
+Their interaction with the ALM process is via the ALM Accelerator Canvas App
+
+ALM Accelerator for Power Platform ALM Automation
+Development Environment
+ALM Environment
+Makers use the ALM Accelerator Canvas App for their ALM tasks such as import solution from source control, export changes to source control and create pull request to merge changes
+ALM Accelerator templates for Azure DevOps pipelines facilitates the automation of ALM tasks based on the Makers interaction with the ALM Accelerator Canvas App
+
+ALM Downstream
+ALM Accelerator includes pipeline templates to support a 3 stage deployment to production.  
+Templates can be customized to fit specific needs and scenarios.
+
+The ALM Accelerator for Power Platform is a Canvas App that sits on top of Azure DevOps Pipelines to provide a simplified interface for Makers to regularly commit and create pull requests for their development work in the Power Platform.
+The combination of the Azure DevOps Pipelines and the Canvas App are what make up the full ALM Accelerator for Power Platform solution. The pipelines and the App are reference implementations. They were developed for use by the development team for the COE Starter Kit internally but have been open sourced and released in order to demonstrate how healthy ALM can be achieved in the Power Platform. They can be used as is or customized for specific business scenarios":::
 
 ## What are my options for ALM in the Power Platform?
 
@@ -62,17 +78,15 @@ Depending on the needs of your organization, you may decide to use one or more o
 
 | Capability | Pipelines | ALM Accelerator | DevOps/GitHub |
 | :---: | :---: | :---: | :---: |
-| IT / Developer involvement | Not required | Up front setup | Required for every project |
-| Source Code integration | No, but planned | Yes | Yes |
-|  Maker requires elevated privileges in target environment  |  Yes, but service principal support planned  |  No, Service Principal Supported  |  No, Service Principal Supported  |
-| Quality Control | Minimal | Best practices | Unlimited |
-| Democratized for Citizen Development | Yes | Yes | No |
-| In-Product Experience | Yes |  Canvas app provided, but not in maker experience  | No |
-| Support | Microsoft supported |  Power CAT support via GitHub Issues and Discussions  |  Microsoft supported and GitHub Issues  |
-| Customization | No | Yes | Yes |
-| Code-first development | No | Yes | Yes |
-
-
+| *IT / Developer involvement* | Not required | Up front setup | Required for every project |
+| *Source Code integration* | No, but planned | Yes | Yes |
+|  *Maker requires elevated privileges in target environment*  |  Yes, but service principal support planned  |  No, Service Principal Supported  |  No, Service Principal Supported  |
+| *Quality Control* | Minimal | Best practices | Unlimited |
+| *Democratized for Citizen Development* | Yes | Yes | No |
+| *In-Product Experience* | Yes |  Canvas app provided, but not in maker experience  | No |
+| *Support* | Microsoft supported |  Power CAT support via GitHub Issues and Discussions  |  Microsoft supported and GitHub Issues  |
+| *Customization* | No | Yes | Yes |
+| *Code-first development* | No | Yes | Yes |
 
 ### Pipelines for Power Platform (Pipelines)
 
