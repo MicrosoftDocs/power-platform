@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2023
+ms.date: 04/13/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -18,9 +18,8 @@ The Audit Log Sync flow connects to the Microsoft 365 audit log to gather teleme
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
->[!IMPORTANT]
->Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
->
+> [!IMPORTANT]
+> Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup in this article. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 >
 > Only set up the Audit Log solution if you've chosen [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
@@ -104,6 +103,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
    ![Edit OAuth configuration.](media/coe42.png "Edit OAuth configuration")
 
 1. Change the **Identity Provider** to Azure Active Directory.
+
     :::image type="content" source="media/auditlogcc.png" alt-text="Change the identity provider to Azure Active Directory.":::
 
 1. Paste the application (client) ID you copied from the app registration into **Client Id**.
