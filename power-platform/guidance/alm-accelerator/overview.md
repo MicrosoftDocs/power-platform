@@ -60,7 +60,19 @@ There are, however, other options for getting started with ALM in the Power Plat
 
 Depending on the needs of your organization, you may decide to use one or more of these options, including the ALM Accelerator as an option. While there's no one right answer for every organization, the following table and descriptions of each option can help you decide which option is right for you based on current capabilities and future plans. This table isn't exhaustive and is meant to help you make an informed decision. It's also going to evolve with time as more capabilities are added to the ALM Accelerator and to the built-in Power Platform ALM capabilities.
 
-:::image type="content" source="media/ALMCapabilityComparison20230323.png" alt-text="ALM Accelerator, Power Platform Build Tools and Pipelines for Power Platform Capabilities":::
+| Capability | Pipelines | ALM Accelerator | DevOps/GitHub |
+| :---: | :---: | :---: | :---: |
+| IT / Developer involvement | Not required | Up front setup | Required for every project |
+| Source Code integration | No, but planned | Yes | Yes |
+|  Maker requires elevated privileges in target environment  |  Yes, but service principal support planned  |  No, Service Principal Supported  |  No, Service Principal Supported  |
+| Quality Control | Minimal | Best practices | Unlimited |
+| Democratized for Citizen Development | Yes | Yes | No |
+| In-Product Experience | Yes |  Canvas app provided, but not in maker experience  | No |
+| Support | Microsoft supported |  Power CAT support via GitHub Issues and Discussions  |  Microsoft supported and GitHub Issues  |
+| Customization | No | Yes | Yes |
+| Code-first development | No | Yes | Yes |
+
+
 
 ### Pipelines for Power Platform (Pipelines)
 
