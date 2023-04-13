@@ -1,6 +1,6 @@
 ---
 title: "Create a canvas app front end for your ASP.NET web API (preview)"
-description: "Learn how to use the Power Platform connected service integration with Visual Studio to create a canvas Power App for your ASP.NET web API"
+description: "Learn how to use the Power Platform connected service integration with Visual Studio to create a canvas app for your ASP.NET web API"
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
@@ -14,7 +14,7 @@ contributors:
 ---
 # Create a Canvas App front end for your ASP.NET web API (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Platform enables web API developers to quickly build mobile or web applications using a Power Apps canvas app as a front end. With the Power Platform connected service in Visual Studio 2022, ASP.NET web API developers can easily create a custom connector you can use with Power Apps and Power Automate.
 
