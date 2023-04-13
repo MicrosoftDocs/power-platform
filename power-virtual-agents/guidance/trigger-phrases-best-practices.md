@@ -24,6 +24,21 @@ ms.collection: virtual-agent
 > [!TIP]
 > When creating a new topic, a maker only needs to provide a few sample phrases (ideally between 5 and 10). When the chatbot is used, the AI will parse what the user says and trigger the topic closest in meaning to the user utterance. 
 
+## The importance of the triggering context
+
+Power Virtual Agents Natural Understanding (NLU) behaves slightly differently based on the conversation state. This can sometimes lead to different behaviors for the same user utterence.
+
+Below are the different conversation states:
+ - **Start of the conversation**: the chatbot has no context, so a user utterence is expected to either: trigger a topic directly (*IntentRecognition*), trigger a 'did You mean' disambiguation question (*IntentCandidates*) if there are multiple matching topics, or fallback (*UnknownIntent*) if the intent is not recognized.
+ - **After a DYM triggered**: NLU will optimize to match one of the DYM options, with higher threshold to move out of the DYM options.
+ - **Switching out from a current topic**: if the NLU is trying to fill a slot in a topic, and user is giving a user query, that could trigger another topic (topic switching).
+
+## On punctuation, plural forms, and capitalization 
+
+ - The Natural Understanding (NLU) model is agnostic to punctuation, including question marks.
+ - For plural forms: ?
+ - For capitalization: ?
+
 ## Creating new trigger phrases
 
 If possible, start with **real production data** over making up your own trigger phrases. The best trigger phrases are the ones similar to actual data coming from end-users. These are the ones that will likely be asked to the chatbot when it is deployed.
