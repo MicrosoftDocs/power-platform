@@ -27,11 +27,7 @@ This tutorial uses the sample ASP.NET Weather web API to create a custom connect
 ## Prerequisites
 
 - Download [Visual Studio 2022 version 17.6 Preview 2](/visualstudio/releases/2022/release-notes-preview) with the **ASP.NET and web development**  workload installed. You need to be signed in to Visual Studio to create and use dev tunnels. The feature isn't available in Visual Studio for Mac.
-- A Power Platform environment with permission to create custom connectors.
-
->[!NOTE]
->
-> If you need help getting started with Microsoft Power Platform, go to [Create a developer environment](create-developer-environment.md).
+- A Power Platform environment with permission to create custom connectors. More information: [Create a developer environment](create-developer-environment.md)
 
 ## Step 1: Create a new ASP.NET project in Visual Studio
 
