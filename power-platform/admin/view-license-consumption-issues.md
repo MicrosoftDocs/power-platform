@@ -2,7 +2,7 @@
 title: View license consumption (preview)
 description: Review license consumption and potential license issues. 
 author: amiyapatr-zz
-ms.date: 10/12/2022
+ms.date: 04/14/2023
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -41,7 +41,7 @@ The **Overview** tab displays a summary of environments in your tenant requiring
 | Include standard environments        | Select this option to see results for standard (unmanaged) environments. By default, managed environments are displayed. In managed environments, all users will need standalone Power Apps licenses to run apps.           |
 | Environments requiring attention | Shows the number of environments having licensing issues. These envrionments require your attention.       |
 | Environment                          | Indicates which environments have licensing issues.               |
-| License issues                       | The number of licensing issues for the environment. The number of licensing issues are calculated based on how many different types of licensing actions need to be performed based on the app usage in the environment. |
+| License issues                       | The number of licensing issues for the environment. The number of licensing issues is calculated based on how many different types of licensing actions need to be performed based on the app usage in the environment. |
 | Recommended actions              | See a list of possible actions to remediate your licensing issues.        |
 
 ## Environment tab
@@ -51,15 +51,15 @@ The **Environment** tab displays licensing information related to a selected env
 | Setting                  | Description     |
 |-------------------------------------|-------------------|
 | Select environment                  | Select an environment to see the license usage in the environment. You can see if the selected environment is a standard or a managed environment. You can also view the license usage for the selected environment.        |
-| **Power Apps licensing overview**   | Summary count of users actively using licenses based on last thirty days, and indicates if actions are recommended. If you change a standard environment to a managed environment, any current user launching an app&mdash;with only a Microsoft 365 license&mdash;will require a standalone Power Apps license to run the app.     |
+| **Power Apps licensing overview**   | Summary count of users actively using licenses based on the last thirty days, and indicates if actions are recommended. If you change a standard environment to a managed environment, any current user launching an app&mdash;with only a Microsoft 365 license&mdash;will require a standalone Power Apps license to run the app.     |
 | License type                        | Type of license (Dynamics 365, Microsoft 365, per app, per user, pay-as-you-go, trial, or developer) the actual license is mapped to.       |
-| Active users                        | Count of unique users launching apps within the environment at least once within the last 30 days.    |
+| Active users                        | Count of unique users launching apps within the environment at least once within the last thirty days.    |
 | Recommended actions                 | Actions to consider to convert the environment to a managed environment.   |
-| Usage details for a License Type    | Select a license type in the **Power Apps licensing overview** section to see the list of users consuming specific license type.                    |
+| Usage details for a License Type    | Select a license type in the **Power Apps licensing overview** section to see the list of users consuming a specific license type.                    |
 | Email                               | Email ID or UPN of the user, who has launched an app available in the selected environment. Includes a list of users with whom an app is shared, and if the app is installed in the selected environment. Selecting the email link takes users to the Microsoft 365 admin portal.     |
 | License                             | Actual SKU name of the license.     |
 | Last active date                    | Date when a selected app was last launched by the user in a selected time.     |
-| **License Type: Power App Per App** | If the selected environment has per app licenses assigned, you can view the list of apps consuming app pass licenses, number of users the app has been shared with, and the count of users who have launched the app using per app licenses.     |
+| **License Type: Power App Per App** | If the selected environment has per app licenses assigned, you can view the list of apps consuming app pass licenses, the number of users the app has been shared with, and the count of users who have launched the app using per app licenses.     |
 | Download                        | Download the information in CSV format. <br><br>To download the details available in the drill-down section, select a specific license type to initiate a download. Once a CSV file is generated, you can re-download the same file within five days; you don't have to re-initiate a new download.|
                                                                                                       
 
