@@ -62,9 +62,9 @@ Depending on the needs of your organization, you may decide to use one or more o
 
 | Capability | Pipelines | ALM Accelerator | DevOps/GitHub |
 | :---: | :---: | :---: | :---: |
-| *IT / Developer involvement* | Not required | Up front setup | Required for every project |
+| *IT / Developer involvement* | Not required | Up-front set up | Required for every project |
 | *Source Code integration* | No, but planned | Yes | Yes |
-|  *Maker requires elevated privileges in target environment*  |  Yes, but service principal support planned  |  No, Service Principal Supported  |  No, Service Principal Supported  |
+|  *Maker requires elevated privileges in target environment*  |  Yes, but service principal support planned  |  No, service principal supported  |  No, service principal Supported  |
 | *Quality Control* | Minimal | Best practices | Unlimited |
 | *Democratized for Citizen Development* | Yes | Yes | No |
 | *In-Product Experience* | Yes |  Canvas app provided, but not in maker experience  | No |
