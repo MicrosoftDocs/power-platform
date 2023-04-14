@@ -3,7 +3,7 @@ title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftD
 description: Troubleshooting and monitoring server-side synchronization
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/28/2023
+ms.date: 04/14/2023
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
