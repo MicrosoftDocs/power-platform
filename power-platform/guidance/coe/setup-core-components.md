@@ -3,10 +3,11 @@ title: "Set up inventory components | MicrosoftDocs"
 description: "Set up instructions for how to set up the inventory components solution of the CoE Starter Kit"
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 03/08/2023
+ms.date: 04/13/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: kvivek
+ms.reviewer: sericks
+
 ---
 
 # Set up inventory components
@@ -103,7 +104,7 @@ During solution import, you configure environment variable values. Make sure to 
 | Name | Description |
 |------|---------------|
 |Admin eMail |This is the email address to which most admin communications in the starter kit will be sent. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
-|CompanyName |The name of the company to be displayed in various apps, emails, and so forth.  |
+|CompanyName |The name of the company to be displayed in various apps, emails, and so forth. Currently only used by the Video hub (Nurture components) app.  |
 |Individual Admin |This is the email address to which communications in the starter kit will be sent which can't be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group, which will contain all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow and as part of the [Admin | Welcome Email v3](core-components.md#flows-2). More information: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) |
 | Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group, which will contain all your Power Platform users (for example, end users that apps are shared with). You use this to communicate and share apps with them. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) |
@@ -220,14 +221,16 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >[!NOTE]
 > To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 15 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
 
-The first run of these flows perform a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
+The first run of these flows performs a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
 
 ## Set up dataflows to retrieve your inventory from Data Export
 
 If your inventory is coming from [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory), you have to configure dataflows as part of the setup.
 
->[!NOTE]
+> [!NOTE]
 > Only complete these steps if you've configured [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
+>
+> Only start with this configuration when you see data in the storage account that is set up to receive data from Data Export. This may take up to five days from initial setup of Data Export in the Power Platform admin center.
 
 ### Copy Azure Storage Account URL
 
@@ -271,21 +274,45 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
     1. For each connection, select Organizational account and sign in with your account.
         :::image type="content" source="media/byodl-10.png" alt-text="Configure the connection using your organizational account.":::
     1. Once all connections are configured and there are no more warnings, select **Next**.
+    1. Select the **Makers** table and confirm that this table is configured to load data to the existing **admin_Maker** table.
+    
+        :::image type="content" source="media/byodl-20.png" alt-text="Confirm the table mapping.":::
+        
+        >[!NOTE]
+        >If the table is configured to map to a new table or you don't see a mapping configured between source and destination columns, select **Cancel** and start again.
+       
     1. Select **Publish**. Don't change any data mapping configuration.
+    
         :::image type="content" source="media/byodl-11.png" alt-text="Publish the dataflow without making any changes.":::
+        
 1. The **CoE BYODL Makers** will now start refreshing - wait for the refresh to finish.
-            :::image type="content" source="media/byodl-12.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
-1. Now edit the **CoE BYODL Environments** dataflow and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
+
+    :::image type="content" source="media/byodl-12.png" alt-text="Wait for the CoE BYODL Makers dataflow to finish.":::
+            
+1. Now edit the **CoE BYODL Environments** dataflow and complete the same steps to update the **DatalakeURL** and **EnvironmentAPI** parameters and configure the connections to the data sources used by this dataflow. 
+1. Select **Next**. 
+1. Select the **Environments** table and confirm this table is configured to load data to the existing **admin_Environment** table.
 1. Publish the **CoE BYODL Environments** dataflow and wait for the refresh to finish.
+
     :::image type="content" source="media/byodl-13.png" alt-text="Wait for the CoE BYODL Environments dataflow to finish.":::
-1. Now edit the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps** and **CoE BYDODL Flows** dataflows and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
+    
+1. Now edit the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps**, and **CoE BYDODL Flows** dataflows and complete the same steps to update the **DatalakeURL** and **EnvironmentAPI** parameters and configure the connections to the data sources used by this dataflow. 
+1. Confirm that the **CoE BYODL Apps** and **CoE BYODL Model Driven Apps** dataflows are configured to load data to the existing **admin_App** table, and the **CoE BYDODL Flows** dataflow is configured to load data to the existing **admin_Flow** table.
 1. Publish the **CoE BYODL Apps**, **CoE BYODL Model Driven Apps** and **CoE BYDODL Flows** dataflows and wait for the refresh to finish.
+
     :::image type="content" source="media/byodl-17.png" alt-text="Wait for the CoE BYODL Apps, Model Driven Apps and Flows dataflows to finish.":::
-1. Now edit the **CoE BYODL Apps Connection, CoE BYODL Apps Last Launched Date, CoE BYODL Flows Connection, CoE BYODL Flows Last Run Date** dataflows and complete the same steps to update the *DatalakeURL* and *EnvironmentAPI* parameters and configure the connections to the data sources used by this dataflow.
-1. Publish the **CoE BYODL Apps Connection, CoE BYODL Apps Last Launched Date, CoE BYODL Flows Connection, CoE BYODL Flows Last Run Date** dataflows and wait for the refresh to finish.
+    
+1. Now edit the **CoE BYODL Apps Connection**, **CoE BYODL Apps Last Launched Date**, **CoE BYODL Flows Connection**, and **CoE BYODL Flows Last Run Date** dataflows and complete the same steps to update the **DatalakeURL** and **EnvironmentAPI** parameters, and configure the connections to the data sources used by this dataflow.
+1. Confirm the **CoE BYODL Apps Connection** and **CoE BYODL Apps Last Launched Date**  dataflows are configured to load data to the existing **admin_App** table and the **CoE BYODL Flows Connection** and **CoE BYODL Flows Last Run Date** dataflows are configured to load data to the existing **admin_Flow** table.
+1. Publish the **CoE BYODL Apps Connection**, **CoE BYODL Apps Last Launched Date**, **CoE BYODL Flows Connection**, and **CoE BYODL Flows Last Run Date** dataflows and wait for the refresh to finish.
+
      :::image type="content" source="media/byodl-19.png" alt-text="Wait for the remaining dataflows to finish.":::
 
 #### Troubleshooting
+
+If you receive a "The specified path does not exist" dataSource error, this means that you have only recently configured the Data Export and not all required folders and files are yet available in the storage account. After initial setup, it can take up to five days for folders to populate.
+
+:::image type="content" source="media/byodl-21.png" alt-text="Data source error if required folders are not yet available in the storage account.":::
 
 If you receive a DataFormat.Error after updating the *DatalakeURL* and *EnvironmentAPI* parameters, this may mean you've entered the incorrect URLs. Verify that the *DatalakeURL* parameter points to your Azure Storage Account URL - the URL should contain dfs.core and end with /powerplatform. Verify that the *EnvironmentAPI* points to your Environment Web API the URL should contain api.crm and end with /api/data/v9.2.
 
@@ -381,6 +408,9 @@ Using these steps, you set up an Azure AD app registration that is used in a clo
 
 ## Set up Audit Logs solution
 
+> [!NOTE]
+> Only set up the Audit Log solution if you've chosen [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
+
 The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The CoE Starter Kit works without this flow; however, usage information (app launches, unique users) in the Power BI dashboard will be blank. More information: [Set up the audit log connector](setup-auditlog.md)
 
 ## Set up the Power BI dashboard
@@ -442,7 +472,7 @@ Environment variables are used to store application and flow configuration data 
 | Command Center - Application Client ID | (optional) The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Secret | (optional) The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable.  Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)| Not applicable |
-|CompanyName |The name of the company to be displayed in various apps, emails, and so forth. | Not applicable |
+|CompanyName |The name of the company to be displayed in various apps and emails. | Not applicable |
 | Current Environment | Current Dataflow Environment ID used by cloud flows to refresh dataflows. Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
 | DelayInventory | If Yes, runs a delay step to assist with the Dataverse load balancing. Only set this to No for debugging. | Yes |
 | Disabled Users are Orphaned | If an AD User has property Account enabled as false, will be considered as orphaned. | No |
@@ -452,7 +482,7 @@ Environment variables are used to store application and flow configuration data 
 | Environment Dataflow ID | Dataflow ID of the CoE BYODL Environments dataflow.  Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
 | Flow Dataflow ID | Dataflow ID of the CoE BYODL Flows dataflow.  Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
 | FullInventory | Determines whether you want to update only objects that have changed, or all objects. Switching to Yes causes the flows to inventory every single app, flow, and bot in the tenant every day, and isn't recommended for large tenants.  | No |
-| Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)| Not applicable |
+| Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High, and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)| Not applicable |
 |Individual Admin |This is the email address to which communications in the starter kit will be sent which can't be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) | Not applicable |
 | InventoryFilter_DaysToLookBack | When not running a full inventory, we filter back this number of days and then see if the object needs updated.| 7 |
 | is All Environments Inventory |If true, (the default) the CoE inventory tracks all environments. New environments added to the inventory have their Excuse from Inventory set to false. You can opt out individual environments.  If false, the CoE inventory tracks a subset of environments. New environments added to the inventory have their Excuse from Inventory set to true. You can opt in individual environments.  | Yes |

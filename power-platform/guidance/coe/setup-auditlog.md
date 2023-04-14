@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2023
+ms.date: 04/13/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -18,8 +18,10 @@ The Audit Log Sync flow connects to the Microsoft 365 audit log to gather teleme
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
->[!IMPORTANT]
->Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+> [!IMPORTANT]
+> Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup in this article. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>
+> Only set up the Audit Log solution if you've chosen [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
 [Watch a walk-through](https://www.youtube.com/watch?v=Lsooi7xp6eA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG&index=1&t=1360s) on how to set up the audit log connector.
 
@@ -100,6 +102,10 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
    ![Edit OAuth configuration.](media/coe42.png "Edit OAuth configuration")
 
+1. Change the **Identity Provider** to Azure Active Directory.
+
+    :::image type="content" source="media/auditlogcc.png" alt-text="Change the identity provider to Azure Active Directory.":::
+
 1. Paste the application (client) ID you copied from the app registration into **Client Id**.
 
 1. Paste the client secret you copied from the app registration into **Client secret**.
@@ -157,7 +163,7 @@ You should see a (200) status returned, which means the query was successful.
 > If you have previously enabled the subscription, you will see a **(400) The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
 > If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
->
+> - Validate that the identity provider on the **Security** tab is set to Azure Active Directory.
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check by seeing if you can search in the [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
@@ -165,6 +171,8 @@ You should see a (200) status returned, which means the query was successful.
 > - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
 > - Validate that you correctly followed the steps in [Azure AD app registration](#create-an-azure-ad-app-registration-for-the-office-365-management-api)
 > - Validate that you correctly updated the security settings of the custom connector, as described in [step 6 of the custom connector setup](#set-up-the-custom-connector) procedure earlier in this article.
+>
+> If you are still seeing failures, your connection may be in a bad state. Learn more: [Step-by-step instructions to repair Audit Log connection](https://github.com/microsoft/coe-starter-kit/issues/4961)
 
 ### Set up the Power Automate flow
 

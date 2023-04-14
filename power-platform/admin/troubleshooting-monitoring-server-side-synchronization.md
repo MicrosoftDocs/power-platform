@@ -3,7 +3,7 @@ title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftD
 description: Troubleshooting and monitoring server-side synchronization
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/28/2023
+ms.date: 04/14/2023
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
@@ -261,6 +261,9 @@ This is a known issue and is not supported. If the organizer is someone outside 
  
 ### A sent email is created with a Direction value of Incoming
 The **Direction** (DirectionCode) of an email created by server-side synchronization is dependent on whether the original email exists in the **Sent Items** folder. If the original email is located in the **Sent Items** folder, the **Direction** is designated as **Outgoing**. In contrast, if the email is not discovered in the **Sent Items** folder, it is created with the **Direction** value set to **Incoming**.
+
+### Incoming emails over 150 MB are not created as email activities
+There is a maximum limit of 150 MB for incoming emails. Emails that exceed a total size of 150 MB, including all attachments, will not be created as an email activity.
   
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) <br />
