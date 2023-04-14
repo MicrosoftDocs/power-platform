@@ -4,7 +4,6 @@ description: "Add a new command to the Center of Excellence Command-Line interfa
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-manager: pladhani
 ms.custom: ""
 ms.date: 11/30/2021
 
@@ -12,9 +11,6 @@ ms.topic: "article"
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
 # CoE CLI development adding a new command

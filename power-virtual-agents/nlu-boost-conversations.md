@@ -7,7 +7,6 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: 
-manager: leeclontz
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ms.search.region: USA
@@ -98,10 +97,6 @@ You can also change the URL, disable **Boost conversations**, or change the leve
 
 You can now test your bot to see how well it responds to questions related to the content on the URL you specified.
 
-> [!NOTE]
->  
-> During the Preview of this feature you'll need to contact Microsoft Support if you want to publish a bot that has **Boost conversations** enabled.
-
 ### URL considerations
 
 The URL you provide represents the scope of content that will be used for generating responses. 
@@ -184,10 +179,9 @@ During this preview, you won't be able to publish bots that have **Boost convers
 If you'd like to publish a bot that has **Boost conversations** enabled, you'll need to ask your admin to enable it for your tenant in the **Power Platform admin center**. 
 
 
-:::image type="content" source="media/nlu-gpt/nlu-boost-conversation.jpg" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
+:::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
 
 
-If your admin wants to enable it only for some environments instead of your tenant, they can start a support request. We'll review your request and get in touch with your admin.
 
 ### Quotas
 

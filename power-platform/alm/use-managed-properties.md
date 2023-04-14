@@ -9,12 +9,8 @@ ms.topic: "article"
 author: "shmcarth" # GitHub ID
 ms.subservice: alm
 ms.author: "shmcarth" # MSFT alias of Microsoft employees only
-manager: "sunilg" # MSFT alias of manager or PM counterpart
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Use managed properties

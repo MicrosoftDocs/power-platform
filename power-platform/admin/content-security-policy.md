@@ -10,9 +10,6 @@ ms.reviewer: kvivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
 ---
 # Content security policy
 

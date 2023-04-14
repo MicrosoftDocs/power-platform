@@ -10,11 +10,6 @@ ms.author: mayadu
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # What's new about storage 

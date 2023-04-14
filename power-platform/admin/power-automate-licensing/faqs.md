@@ -12,11 +12,6 @@ ms.author: prkoduku
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Frequently asked questions about Power Automate licensing
@@ -272,7 +267,7 @@ The same user ([in the example above](#example-of-power-automate-use-within-an-a
 
 - It doesn't interact in any way with the app created using Power Apps (or its data sources).
 
-In this example, the app created using Power Apps is being used outside the context of Power Apps so the user needs a standalone Power Automate license.
+In this example, the flow created using Power Automate is being used outside the context of Power Apps so the user needs a standalone Power Automate license.
 
 #### Second example of Power Automate use outside of an app created using Power Apps context
 

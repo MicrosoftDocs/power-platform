@@ -6,7 +6,6 @@ ms.date: 12/07/2022
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: clmori
 ms.custom: configuration, ceX, bap-template
 ms.collection: virtual-agent

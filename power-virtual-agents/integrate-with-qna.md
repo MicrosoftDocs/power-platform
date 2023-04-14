@@ -7,7 +7,6 @@ ms.date: 07/05/2022
 ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza
-manager: shellyha
 ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---

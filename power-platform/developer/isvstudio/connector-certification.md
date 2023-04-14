@@ -8,9 +8,6 @@ ms.author: pemikkel
 ms.subservice: developer
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 contributors: 
   - JimDaly
   - phecke 

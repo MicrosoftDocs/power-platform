@@ -11,11 +11,6 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Responding to DSR requests for system-generated logs in Power Apps, Power Automate, and Microsoft Dataverse

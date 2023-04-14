@@ -11,10 +11,6 @@ ms.author: kathyos
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Overview of Success Hub
 

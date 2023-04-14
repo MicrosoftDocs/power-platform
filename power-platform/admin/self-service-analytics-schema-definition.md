@@ -13,11 +13,6 @@ ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Microsoft Power Platform self-service analytics schema definition (preview)

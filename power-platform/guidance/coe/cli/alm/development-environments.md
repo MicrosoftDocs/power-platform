@@ -4,7 +4,6 @@ description: "Summary of how to add a maker development environment to the ALM A
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-manager: pladhani
 ms.custom: ""
 ms.date: 11/30/2021
 
@@ -12,9 +11,6 @@ ms.topic: "article"
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
 # CoE ALM Accelerator for Power Platform developer environments

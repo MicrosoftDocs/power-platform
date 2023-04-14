@@ -2,7 +2,6 @@
 title: "Readiness checklist for using ExpressRoute with Microsoft Power Platform | MicrosoftDocs"
 description: "Checklist of points to consider when setting up ExpressRoute for Microsoft Power Platform"
 author: taiki-yoshida
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: tayoshi
 ms.reviewer: kathyos
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - rogergilchrist
   - topness-msft
