@@ -18,11 +18,11 @@ search.app:
 ---
 # Manage collaboration settings
 
-Use Collaboration settings to adjust how collaboration features work in Power Platform.
+Use collaboration settings to adjust how collaboration features work in Power Platform.
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Collaboration**.
 
-Make sure you have the System Administrator security role or equivalent permissions to update the Collaboration settings.
+Make sure you have the System Administrator security role or equivalent permissions to update the collaboration settings.
 
 **Check your security role**
 
