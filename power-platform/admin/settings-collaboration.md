@@ -35,11 +35,11 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Settings|Description|  
 > |--------------|-----------------|  
 > |**Model-driven apps**|Not applicable|  
-> | Show modern share on views and dashboards (preview) | Users will see the **Share** button in views and dashboards making it easy to copy links and share with others. |
+> | Show modern share on views and dashboards (preview) | Users will see the **Share** button in views and dashboards, which makes it easy to copy links and share with others. |
 > |**Enable sharing**|Not applicable|  
-> |Allow users to share read-only links to records with other users from this environment.|Allows users with the share privilege to give read-only access to records when sharing with the **Specific people** option selected.|  
+> |Allow users to share read-only links to records with other users from this environment.|Allows users with the share privilege to give read-only access to records when sharing them with the **Specific people** option selected.|  
 > |**Team Integration**|Not appliable|  
-> |Show record name and type to unauthorized users when unfurling links in Teams chats| When unfurling links in Teams, show name and type of record in unfurled card when link is shared within the organization.|
+> |Show record name and type to unauthorized users when unfurling links in Teams chats| When copying a link into Teams, display the name and type of record in a card when link is shared within the organization.|
 > Intall the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams.| Active users of Dynamics 365 apps annd Power Apps model-driven apps will get the Dynamics 365 app for Teams automatically installed in their Teams client.  |
 
 ## App authoring experiences
