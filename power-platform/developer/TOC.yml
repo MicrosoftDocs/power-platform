@@ -107,13 +107,13 @@
               href: devtools-vs.md
             - name: Create a Power Platform Tools project
               href: devtools-vs-create-project.md
+        - name: Visual Studio connected service (preview)
+          items:
+            - name: Overview of Visual Studio connected service
+              href: visual-studio-connected-service.md
+            - name: Create a canvas app front end for your ASP.NET web API
+              href: visual-studio-create-canvas-app.md
         - name: ALM developer tools
           href: tools-alm.md
         - name: Dataverse developer tools
-          href: tools-dataverse.md
-        - name: Visual Studio integration (preview)
-          items:
-            - name: Visual Studio connected service
-              href: visual-studio-connected-service.md
-            - name: Create a canvas app front end for your ASP.NET web API
-              href: visual-studio-create-canvas-app.md          
+          href: tools-dataverse.md                
