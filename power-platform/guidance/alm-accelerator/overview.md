@@ -31,10 +31,11 @@ Watch the [demo videos](https://github.com/microsoft/coe-starter-kit/blob/main/C
 
 ## Who should use the ALM Accelerator for Power Platform?
 
-Makers and maker teams can use the ALM Accelerator for Power Platform to implement source control and deploy solutions. With the ALM Accelerator for Power Platform app, makers can perform source control, enable version history, and deploy their solutions in Power Platform. The combination of Azure pipelines and the maker and administrator focused apps are what makes up the ALM Accelerator for Power Platform.
+Makers and maker teams can use the ALM Accelerator for Power Platform to implement source control and deploy solutions. With the ALM Accelerator for Power Platform app, makers can perform source control, enable version history, and deploy their solutions in Power Platform. The combination of Azure pipelines and the maker and administrator focused apps are what makes up the ALM Accelerator.
 
 While an advanced knowledge of ALM isn't required to use the accelerator, it's important that makers understand how to use solutions in Power Platform. To use the ALM Accelerator, all of your components—including apps, flows, customizations, and other components—must be contained in a solution. To learn more about solutions, see [Manage solutions in Power Apps and Power Automate](/learn/modules/manage-solutions-power-automate/).
 
+### Target users
 The target users for the ALM Accelerator app include:
 
 - Power Platform makers who are unfamiliar with ALM concepts, but want to be able to save their work along with a history of changes, and share those changes with other users.
@@ -42,7 +43,17 @@ The target users for the ALM Accelerator app include:
 
 The target user for [setting up and configuring](./setup-admin-tasks.md) the ALM Accelerator is an administrator with a deeper understanding of Power Platform environments, solutions, Azure pipelines, and familiarity with Azure AD and Dataverse administration.
 
-:::image type="content" source="media/TheMakerTeam.png " alt-text="Makers work in isolation in their personal development environments. Their interaction with the ALM process is via the ALM Accelerator canvas app. Makers use the ALM Accelerator Canvas App for their ALM tasks such as import solution from source control, export changes to source control, and create pull request to merge changes. ALM Accelerator templates for Azure DevOps pipelines facilitate the automation of ALM tasks based on the makers interaction with the ALM Accelerator Canvas App. ALM Accelerator includes pipeline templates to support a three-stage deployment to production. Templates can be customized to fit specific needs and scenarios. The ALM Accelerator is a canvas app that sits on top of Azure DevOps pipelines to provide a simplified interface for makers to regularly commit and create pull requests for their development work in the Power Platform. The combination of the Azure DevOps pipelines and the canvas app are what make up the full ALM Accelerator solution. The pipelines and the app are reference implementations. They were developed for use by the development team for the COE Starter Kit internally but have been open sourced and released in order to demonstrate how healthy ALM can be achieved in the Power Platform. They can be used as is or customized for specific business scenarios.":::
+The following image shows how target users for the ALM Acceleratior start the process.
+
+Makers work in isolation in their personal development environments. Their interaction with the ALM process is via the ALM Accelerator canvas app. 
+ 
+Makers use the ALM Accelerator canvas app for their ALM tasks such as import solution from source control, export changes to source control, and create pull request to merge changes. ALM Accelerator templates for Azure DevOps pipelines facilitate the automation of ALM tasks based on the makers interaction with the ALM Accelerator canvas app. 
+  
+ALM Accelerator includes pipeline templates to support a three-stage deployment to production. Templates can be customized to fit specific needs and scenarios. 
+
+The ALM Accelerator is a canvas app that sits on top of Azure DevOps pipelines to provide a simplified interface for makers to regularly commit and create pull requests for their development work in the Power Platform. The combination of the Azure DevOps pipelines and the canvas app are what make up the full ALM Accelerator solution. The pipelines and the app are reference implementations. They were developed for use by the development team for the COE Starter Kit internally but have been open sourced and released in order to demonstrate how healthy ALM can be achieved in the Power Platform. They can be used as is or customized for specific business scenarios.
+
+:::image type="content" source="media/TheMakerTeam2.png " alt-text="Description.":::
 
 ## What are my options for ALM in the Power Platform?
 
