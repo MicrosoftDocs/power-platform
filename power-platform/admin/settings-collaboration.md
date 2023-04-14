@@ -4,7 +4,7 @@ description: Manage collaboration settings to adjust how collaboration features 
 author: fikaradz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/05/2023
+ms.date: 04/14/2023
 ms.subservice: admin
 ms.author: fikaradz 
 ms.reviewer: sericks
@@ -18,7 +18,7 @@ search.app:
 ---
 # Manage collaboration settings
 
-Use Collaboration settings to adjust how how collaboration features work in Power Platform.
+Use Collaboration settings to adjust how collaboration features work in Power Platform.
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Collaboration**.
 
@@ -35,11 +35,11 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Settings|Description|  
 > |--------------|-----------------|  
 > |**Model-driven apps**||  
-> | Show modern share on views and dashboards (preview) | Users will see the Share button in views and dashboards making it easy to copy links and share with others |
+> | Show modern share on views and dashboards (preview) | Users will see the **Share** button in views and dashboards making it easy to copy links and share with others. |
 > |**Enable sharing**||  
-> |Allow users to share read-only links to records with other users from this environment.|Allows users with 'share' privilege to give 'read-only' access to records when sharing with 'specific people' option selected.|  
+> |Allow users to share read-only links to records with other users from this environment.|Allows users with the share privilege to give read-only access to records when sharing with the **Specific people** option selected.|  
 > |**Team Integration**||  
-> |Show record name and type to unauthorized users when unfurling links in Teams chats| When unfurling links in Teams, show name and type of record in unfurled card when link is shared within the organization|
+> |Show record name and type to unauthorized users when unfurling links in Teams chats| When unfurling links in Teams, show name and type of record in unfurled card when link is shared within the organization.|
 > Intall the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams.| Active users of Dynamics 365 apps annd Power Apps model-driven apps will get the Dynamics 365 app for Teams automatically installed in their Teams client.  |
 
 ## App authoring experiences
@@ -47,5 +47,5 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Settings|Description|  
 > |--------------|-----------------|  
 > |**Coauthoring (preview)**||  
-> |Enable coauthoring, which lets people simultaneously edit model-driven apps together. | Description. More information: [Coauthoring in model-driven apps (preview)](/power-apps/maker/model-driven-apps/coauthoring)| 
+> |Enable coauthoring, which lets people simultaneously edit model-driven apps together | [Coauthoring in model-driven apps (preview)](/power-apps/maker/model-driven-apps/coauthoring)| 
 
