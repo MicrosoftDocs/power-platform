@@ -16,12 +16,12 @@ ms.collection: virtual-agent
 
 # Create bots with Azure Language Understanding
 
-Cognitive language understanding (CLU) model integration lets users use their CLU models with PVA projects. For bots created with this capability, bot creators can now access existing CLU model intents and entities directly in PVA. [Azure Language Studio](/azure/cognitive-services/language-service/overview) is a cloud-based service from Azure Cognitive Service for Language, providing users with natural language processing (NLP) features for analyzing conversational text. For more information, see [Conversational Language Understanding](/azure/cognitive-services/language-service/conversational-language-understanding/overview).
+Cognitive language understanding (CLU) model integration lets users use their CLU models with Power Virtual Agents projects. For bots created with this capability, bot creators can now access existing CLU model intents and entities directly in Power Virtual Agents. [Azure Language Studio](/azure/cognitive-services/language-service/overview) is a cloud-based service from Azure Cognitive Service for Language, providing users with natural language processing (NLP) features for analyzing conversational text. For more information, see [Conversational Language Understanding](/azure/cognitive-services/language-service/conversational-language-understanding/overview).
 
-With this new capability, PVA users can now CLU intents to trigger PVA dialogs in the same way as PVA [utterance triggers](advanced-hand-off.md). Entities imported from the CLU model appear in PVA on the [Entities](advanced-entities-slot-filling.md) page. Bot creators can add new [question nodes](authoring-create-edit-topics.md) in a PVA topic and select available entities and intents from the imported CLU model. CLU entities are bound to equivalent PVA objects. Users specify the name, the data type, and the [JSON structure](advanced-clu-entity-registration.md) of a custom data type, if desired for each entity. 
+With this new capability, Power Virtual Agents users can now CLU intents to trigger bot dialogs in the same way as Power Virtual Agents [utterance triggers](advanced-hand-off.md). Entities imported from the CLU model appear on the Power Virtual Agents [Entities](advanced-entities-slot-filling.md) page. Bot creators can add new [question nodes](authoring-create-edit-topics.md) in a topic and select available entities and intents from the imported CLU model. CLU entities are bound to equivalent Power Virtual Agents objects. Users specify the name, the data type, and the [JSON structure](advanced-clu-entity-registration.md) of a custom data type, if desired for each entity. 
 
 > [!NOTE]
-> For existing bots that you want to take advantage of CLU integration, you'll need to map the CLU model to PVA, then you can update the bot’s trigger phrases to bind each topic to a corresponding CLU intent. You can also manually manage the relationship between the CLU model and PVA.
+> For existing bots that you want to take advantage of CLU integration, you'll need to map the CLU model to Power Virtual Agents, then you can update the bot’s trigger phrases to bind each topic to a corresponding CLU intent. You can also manually manage the relationship between the CLU model and Power Virtual Agents.
 
 ## Prerequisites
 
@@ -29,11 +29,11 @@ With this new capability, PVA users can now CLU intents to trigger PVA dialogs i
 - Enabled deployment of the model (including the key, appointment info, and prediction URL)
 - CLU project name and deployment name 
 - [Power Virtual Agents](requirements-licensing-subscriptions.md) account
-- [Existing PVA](authoring-first-bot.md) bot
+- [Existing Power Virtual Agents](authoring-first-bot.md) bot
 
 ## Key concepts
 
-The concepts discussed in this article help you understand how to integrate CLU models with PVA projects. For more information, see [Get started with language understanding](advanced-clu-get-started.md).
+The concepts discussed in this article help you understand how to integrate CLU models with Power Virtual Agents projects. For more information, see [Get started with language understanding](advanced-clu-get-started.md).
 
 ### CLU connectors
 
@@ -41,7 +41,7 @@ A *connector* is a wrapper around an API that allows the Azure Cognitive Service
 
 Power Platform connectors allow Microsoft services to talk to the CLU API. For more information, see [Power Platform and Azure Logic Apps connectors documentation - Connectors](/connectors). Although you can import any connector types, PVA doesn’t currently validate connectors. 
 
-### Connections in PVA
+### Connections in Power Virtual Agents
 
 A [connection](/power-automate/add-manage-connections) is a stored [authentication credential](/connectors/custom-connectors/connection-parameters#authentication-types) for a connector, for example OAuth credentials for the SharePoint connector. A connection reference is a solution component that contains a reference to a connection about a specific connector.
 
@@ -50,7 +50,7 @@ PVA connections are environment specific. When you import a bot, you need to set
 
 ### External recognizers 
 
-CLU integration supports specific external recognizers. The OnRecognize trigger fires in the following scenarios:
+CLU integration supports specific external recognizers. The `OnRecognize` trigger fires in the following scenarios:
 
 - When a topic is triggered:
 `LanguageUnderstandingReason.TriggerTopic`
@@ -83,7 +83,7 @@ For a complete list of PVA variables, including system variables, see [Use varia
 CLU entities include relevant information extracted from NLU utterances. An entity can be extracted using different methods. They can be learned through context, mixed and matched from a list, or detected by a prebuilt recognized entity. For a complete list of entity component types, see [Component Types](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components#component-types).
 
 > [!NOTE]
-> You can also use PVA [pre-built entities](authoring-variables.md) along with CLU entities.
+> You can also use Power Virtual Agents [pre-built entities](authoring-variables.md) along with CLU entities.
 
 ## Related topics
 
