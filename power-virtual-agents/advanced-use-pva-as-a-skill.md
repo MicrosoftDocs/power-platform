@@ -15,6 +15,9 @@ ms.collection: virtual-agent
 
 # Use a Power Virtual Agents bot as a skill
 
+> [!NOTE]
+> This topic includes information applicable to Power Virtual Agents Classic only. This feature is not pavailable in the new Power Virtual Agents experience.
+
 When you use a Power Virtual Agents bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) with a Bot Framework bot, the Bot Framework bot determines if anything the user says matches the Power Virtual Agents bot's [trigger phrases](authoring-create-edit-topics.md). If there's a match, the Bot Framework bot [passes the conversation to the Power Virtual Agents bot](#call-a-power-virtual-agents-skill-topic). The Power Virtual Agents bot extracts any [entities](advanced-entities-slot-filling.md) and triggers the matching topic.
 
 You can also [pass a variable to a Power Virtual Agents skill topic as an input](#pass-an-input-variable-to-a-power-virtual-agents-skill-topic) from Bot Framework Composer and [use the outputs it returns](#receive-an-output-variable-from-a-power-virtual-agents-skill-topic).
