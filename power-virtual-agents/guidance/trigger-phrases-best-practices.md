@@ -75,3 +75,7 @@ When updating trigger phrases, or when merging or splitting topics, there are mu
 > Although the underlying features and components used to build the Bot Test Framework (such as interacting with the Direct Line API) are fully supported, the Bot Test Framework itself represents sample implementations of these features.
 > 
 > Our customers and community can use and adjust it to implement bulk testing. If you face issues with the Bot Test Framework, report them issue here: https://aka.ms/PVASamples. (Microsoft Support won’t help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
+
+
+> [!div class="nextstepaction"]
+> [Entities and slot filling best practices](slot-filling-best-practices.md)
