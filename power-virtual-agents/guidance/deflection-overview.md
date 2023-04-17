@@ -1,6 +1,6 @@
 ---
 title: "Deflection Overview"
-description: "Set of best practices on how to improve deflection rate in a PVA chatbot"
+description: "Best practices to improve deflection rate in a Power Virtual Agents chatbot"
 author: athinesh
 
 ms.date: 1/20/2023

@@ -1,6 +1,6 @@
 ---
 title: "Alternate Escalation Paths"
-description: "Set of best practices on how to improve deflection rate in a PVA chatbot"
+description: "Set of best practices based on alternate escalation paths to improve the deflection rate of a Power Virtual Agents chatbot"
 author: athinesh
 
 ms.date: 1/20/2023
@@ -11,6 +11,12 @@ ms.author: athinesh
 ms.collection: virtual-agent
 ---
 # Alternate escalation paths 
-There are a few strategies you can use to deflect the user from reaching the human agent when the bot user decides to escalate, without deprecating the user experience. These are some of those:
-1.	Check for operating hours and queue size during escalation:  in this approach, you can have a self-service action inside PVA (e.g., a Power Automate cloud flow) that checks for the operating hours of the human agent and agent queue size form the engagement hub (E.g. Dynamics 365 Omnichannel for Customer Service), and transfers the chat only if the agent is available in the current hour or if the queue is not full. If the escalation happens outside the operating hours of agent or the agent queue is full, then the bot can redirect the user to email support or schedule a call back, etc. This approach avoids unnecessary escalation and in turn improves the deflection rate.
-2.	Provide an option to create a support ticket during escalation: this is another common approach, when the user escalates to an agent, the bot can redirect through a self-service action to create a support ticket by providing the required details.
+
+> [!TIP]
+> There are a few strategies you can use to deflect the user from reaching the human agent when the bot user decides to escalate, without deprecating the user experience.
+
+1.	**Check for operating hours and queue size during escalation.** <br> In this approach, you can have a self-service action inside Power Virtual Agents (e.g., a Power Automate cloud flow) that checks for the operating hours of the human agent and agent queue size form the engagement hub (e.g. Dynamics 365 Omnichannel for Customer Service), and transfers the chat only if the agent is available in the current hour or if the queue is not full. <br> If the escalation happens outside the operating hours of agent or the agent queue is full, then the bot can redirect the user to email support or schedule a call back, etc. This approach avoids unnecessary escalation and in turn improves the deflection rate.
+2.	**Provide an option to create a support ticket during escalation.** <br> This is another common approach, when the user escalates to an agent, the chatbot can redirect through a self-service action to create a support ticket by providing the required details.
+
+> [!div class="nextstepaction"]
+> [Agent transcript analysis](deflection-transcripts-analysis.md)

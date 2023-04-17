@@ -32,7 +32,7 @@
         href: deflection-topic-confusion-analysis.md
       - name: Alternate escalation paths
         href: deflection-alternate-escalation-paths.md    
-      - name: Transcripts analysis
+      - name: Agent transcripts analysis
         href: deflection-transcripts-analysis.md
     - name: Custom analytics strategy
       href: custom-analytics-strategy.md

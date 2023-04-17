@@ -1,6 +1,6 @@
 ---
 title: "Deflection topic escalation analysis"
-description: "Set of best practices on how to improve deflection rate in a PVA chatbot"
+description: "Set of best practices based on escalation to improve  the deflection rate of a Power Virtual Agents chatbot"
 author: athinesh
 
 ms.date: 1/20/2023
