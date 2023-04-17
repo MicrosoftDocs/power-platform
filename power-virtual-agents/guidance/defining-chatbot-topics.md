@@ -88,7 +88,7 @@ If you have very large FAQs or Knowledge Base, you can avoid creating one topic 
 
 > [!TIP]
 > [Question answering in Azure Cognitive Service for Language](/azure/cognitive-services/language-service/question-answering/overview) provides cloud-based Natural Language Processing (NLP) that allows you to create a natural conversational layer over your data. It is used to find the most appropriate answer for any input from your custom knowledge base of information.
-> [Learn how to integration question answering in Power Virtual Agents](/power-virtual-agents/integrate-with-question-answering).
+> [Learn how to integrate question answering in Power Virtual Agents](/power-virtual-agents/integrate-with-question-answering).
 
 > [!div class="nextstepaction"]
 > [Topic authoring best practices](topic-authoring-best-practices.md)
