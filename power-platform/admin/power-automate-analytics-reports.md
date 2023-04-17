@@ -10,11 +10,6 @@ ms.author: tjvass
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Tenant-level analytics for Power Automate

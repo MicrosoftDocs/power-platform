@@ -2,7 +2,6 @@
 title: "Set up Dataverse for Teams environment management | MicrosoftDocs"
 description: "Learn how to set up the Microsoft Teams governance components of the CoE Starter Kit"
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up Dataverse for Teams environment management
@@ -29,16 +24,16 @@ This article will help you to setup the Dataverse for Teams environment manageme
 This set of functionality allows you to monitor new Dataverse for Teams environments.
 
 >[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environments), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 >[!IMPORTANT]
 >Automatically deleting inactive Dataverse for Teams environment is now part of the product - you can configure Teams environment deletion policies from the Power Platform Admin center. Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md). <br>
 >As there is parity between this feature, and the functionality in the CoE Starter Kit we will remove that portion of the features below from the CoE starter kit once the native support in the product is available broadly in all clouds.
 
-## Set up the Dataverse for Teams environment management components using the Setup Wizard [Preview]
+## Set up the Dataverse for Teams environment management components using the Setup Wizard
 
 1. Open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Starter Kit Setup Wizard [Preview]** app.
+1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Teams environment governance**.
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-teams.png" alt-text="CoE Starter Kit Setup Wizard":::

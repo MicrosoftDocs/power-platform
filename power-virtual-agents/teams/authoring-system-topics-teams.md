@@ -7,7 +7,6 @@ ms.date: 04/20/2022
 ms.topic: article
 author: iaanw
 ms.author: iaanw
-manager: shellyha
 ms.reviewer: ggupta
 ms.custom: authoring, ceX
 ms.service: power-virtual-agents

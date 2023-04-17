@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Support for Power Platform and Dynamics 365 apps - operated by 21Vianet in China
 

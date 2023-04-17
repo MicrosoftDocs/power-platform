@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Turn duplicate detection rules on or off for the whole organization
 

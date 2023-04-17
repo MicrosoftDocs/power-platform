@@ -10,11 +10,6 @@ ms.author: davidme
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Troubleshoot missing environments
 

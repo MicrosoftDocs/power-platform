@@ -4,16 +4,12 @@ description: "Learn about staging solutions, and using an asynchronous job for i
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
-manager: kvivek
 ms.custom: ""
 ms.date: 04/05/2022
 ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Solution staging, with asynchronous import and export

@@ -2,7 +2,7 @@
 title: "Programmability and Extensibility - Power Platform API - 2020-10-01 - List tenant settings (preview) | Microsoft Docs"
 description: Power Platform API Reference - List tenant settings
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 10/10/2022
@@ -10,8 +10,6 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-search.app:
-  - Powerplatform
 ---
 
 # List tenant settings (preview)
@@ -73,6 +71,10 @@ The response is always a **200 OK** response, unless you aren't correctly authen
         "powerApps": {
             "disableShareWithEveryone": false,
             "enableGuestsToMake": false
+        },
+        "modelExperimentation": {
+            "enableModelDataSharing": false,
+            "disableDataLogging": false
         }
     }
 }
@@ -96,6 +98,8 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams.  Default is 10000 but can be increased or decreased as required.|
 |powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the Share With Everyone capability in all Power Apps.  Default is false.|
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps.  Default is false.|
+|powerPlatform.modelExperimentation.enableModelDataSharing | Boolean | Ability to allow Microsoft to read Power Automate Copilot AI feature customer data (inputs and outputs) and provide improved models.  Default is false.|
+|powerPlatform.modelExperimentation.disableDataLogging | Boolean | Ability to disable data logging and remove all data logged for Power Automate Copilot AI feature customer data (inputs and outputs).  Default is false.|
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

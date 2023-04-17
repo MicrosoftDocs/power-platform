@@ -10,9 +10,6 @@ ms.reviewer: "matp"
 ms.topic: "overview"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Overview of pipelines in Power Platform
 
@@ -68,6 +65,11 @@ Professional developers are more productive with pipelines now handling the comp
 ### What do pipelines deploy?
 
 Pipelines deploy solutions as well as configuration for the target environment such as connections, connection references, and environment variables. Any Power Platform customization contained in your solution can be deployed using pipelines. Pipelines, or solutions in general, don't contain data stored within Dataverse tables.
+
+   > [!IMPORTANT]
+   >
+   > Power BI Dashboards (preview) and Power BI Datasets (preview) are not currently supported in pipelines. 
+   >
 
 ### Are standalone licenses required to use pipelines?
 

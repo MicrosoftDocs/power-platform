@@ -6,7 +6,6 @@ ms.date: 01/23/2023
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: analysis, ceX, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents

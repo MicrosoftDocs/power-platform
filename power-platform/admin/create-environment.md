@@ -9,11 +9,6 @@ ms.subservice: admin
 ms.author: kvivek
 search.audienceType: 
   - admin 
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 contributors:
   - marcelbf
 ---
@@ -33,6 +28,8 @@ Your license determines whether you can create environments.
 | Dynamics 365 trial | Yes (one) | No| Yes |
 | Dynamics 365 Plans |Yes (one)| Yes | Yes |
 | Power Apps plan |Yes (one)| Yes | Yes |
+| Power Automate plan |Yes (one)| Yes | Yes |
+| Power Automate trial |Yes (one)| Yes | Yes |
 | Power Apps trial |Yes (one)| Yes | Yes |
 | Power Virtual Agents trial plan |Yes | No | Yes |
 | Power Virtual Agents plan | No | Yes | Yes |
@@ -52,6 +49,8 @@ To create an environment, all the following must be true:
    | Dynamics 365 Plans |Yes (one)| Yes | Yes |
    | Power Apps plan |Yes (one)| Yes | Yes |
    | Power Apps trial |Yes (one)| Yes | Yes |
+   | Power Automate plan |Yes (one)| Yes | Yes |
+   | Power Automate trial |Yes (one)| Yes | Yes |
    | Power Virtual Agents trial plan |Yes | No | Yes |
    | Power Virtual Agents plan | No | Yes | Yes |
 

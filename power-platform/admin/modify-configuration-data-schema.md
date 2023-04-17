@@ -2,7 +2,6 @@
 title: "Modify a configuration data schema  | MicrosoftDocs"
 description: Modify a configuration data schema
 author: jimholtz
-manager: kvivek
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -11,11 +10,6 @@ ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Modify a configuration data schema 
 

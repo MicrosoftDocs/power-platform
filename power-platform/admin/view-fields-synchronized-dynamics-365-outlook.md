@@ -9,11 +9,6 @@ ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # View the fields that are synchronized between customer engagement apps and Outlook
 
