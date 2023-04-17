@@ -51,7 +51,7 @@ Each security role consists of the following privilege types:
 
 - **Miscellaneous privileges**: These task-based privileges give a user permission to perform specific, miscellaneous (non-record) tasks, such as publish articles or activate business rules. More information: [Miscellaneous privileges](miscellaneous-privileges.md)
 
-- **Privacy-related privileges**: These privileges give a user permission to perform tasks where data is integrated or downloaded or exported outside of Dataverse, such as exporting data to Microsoft Excel or printing. More inforamtion: [Privacy-related privileges](privacy-related-privileges.md)
+- **Privacy-related privileges**: These privileges give a user permission to perform tasks where data is integrated or downloaded or exported outside of Dataverse, such as exporting data to Microsoft Excel or printing. More information: [Privacy-related privileges](privacy-related-privileges.md)
 
 Each set of privilege types are separated by a tab. For each tab, you can filter the view by all privileges, assigned privileges or unassigned privileges for the selected security role.
 
