@@ -12,8 +12,9 @@ ms.collection: virtual-agent
 ---
 # Topic escalation analysis
   
-Escalation is the conversation flow during which the bot couldn’t handle the conversation and escalated to a human agent. When a topic does not escalate to a human agent it is considered as deflection. The ideal goal is to increase the deflection rate of a bot by reducing the number of escalations. 
-PVA has multiple ways to handle escalation, the direct way of initiating an escalation to human agent is through the “Escalate” system topic. This system topic enables PVA to understand that the bot is no longer able to address the customer request and would need to escalate to a human agent. Through the “Escalate” topic, one can enable the bot to transfer the conversation to an agent service desk tool like Dynamics 365 Omnichannel for Customer Service for the live agent transfer or an asynchronous support experience like creating a ticket, scheduling a call back etc. A common way of triggering this escalation is through the “Transfer to agent” node in the PVA authoring canvas.
+Escalation is the conversation flow during which the bot couldn’t handle the conversation and escalated to a human agent. When a chatbot is able to answer the user query without having to escalate to a human agent, it is considered as deflection. The ideal goal is to increase the deflection rate of a bot by reducing the number of escalations. 
+
+Power Virtual Agents has multiple ways to handle escalation, the direct way of initiating an escalation to human agent is through the "Escalate" system topic. This system topic is triggered when the bot is no longer able to address the customer request and would need to escalate to a human agent. Through the “Escalate” topic, one can enable the bot to transfer the conversation to an agent service desk tool like Dynamics 365 Omnichannel for Customer Service for the live agent transfer or an asynchronous support experience like creating a ticket, scheduling a call back etc. A common way of triggering this escalation is through the “Transfer to agent” node in the PVA authoring canvas.
 ![transfer to agent](./media/introduction/df-transfer-agent.png)
     
   

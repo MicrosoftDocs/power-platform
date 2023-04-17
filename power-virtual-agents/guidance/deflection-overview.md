@@ -19,7 +19,7 @@ Optimizing the bot deflection rates is one of the top focus areas for organizati
 While the metrics continue to evolve, there are several things you can do as a bot builder to improve the deflection rate of your bot. In these articles, we will cover the importance of deflection in conversational AI and general techniques/considerations that are universal for optimizing deflection for chatbots.  
 
 > [!TIP]
-> In the context of conversational AI, deflection is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of items a team avoids having to deal with as a result of automation.
+> In the context of conversational AI, **deflection** is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of items a team avoids having to deal with as a result of automation.
 
 ## Why deflection optimization?
 
