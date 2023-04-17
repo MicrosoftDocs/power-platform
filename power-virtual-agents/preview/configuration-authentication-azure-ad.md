@@ -147,7 +147,7 @@ For more information, see [Configure single sign-on for your custom website (pre
 
 1. Under **Redirect URL**, select **Copy**.
 
-    :::image type="content" source="media/configure-web-sso/redirect-url-copy.png" alt-text="Screenshot the redirect URL copy button.":::
+    :::image type="content" source="media/configure-web-sso/redirect-url.png" alt-text="Screenshot the redirect URL copy button.":::
 
 1. In the Azure portal, go to the app registration for your bot.
 1. Under **Manage**, select **Authentication**, then **Add a platform**.
