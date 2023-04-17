@@ -93,6 +93,15 @@ Use the code provided in the [Power Virtual Agents GitHub repo](https://github.c
             },
     ```
 
+1. Find your bot's ID in Power Virtual Agents:
+    1. In the side navigation pane, under **Settings**, select **Channels**.
+
+    1. Select **Mobile app**.
+
+    1. Under **Token Endpoint**, select **Copy** to copy your bot's token endpoint URL to your clipboard.
+
+        :::image type="content" source="media/configure-web-sso/pva-bot-id.png" alt-text="Screenshot of copying token endpoint URL in Power Virtual Agents.":::
+
 1. Set the `theURL` variable to the token endpoint URL you copied earlier. For example:
 
     ```csharp
@@ -125,7 +134,6 @@ Use the code provided in the [Power Virtual Agents GitHub repo](https://github.c
     A new browser tab opens.
 
 1. Switch to the new tab and copy the validation code.
-
 1. Switch back to the tab with your bot, and paste the validation code into the bot conversation.
 
 ## Reference
