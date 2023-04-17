@@ -33,11 +33,9 @@ Below are the different conversation states:
  - **After a 'did You mean' is triggered**: NLU will optimize to match one of the suggested topics, with higher thresholds to move out of the presented options.
  - **Switching out from a current topic**: if the NLU is trying to fill a slot in a topic, and user is giving a user query, that could trigger another topic (topic switching).
 
-## On punctuation, plural forms, and capitalization 
+## On punctuation
 
- - The Natural Understanding (NLU) model is agnostic to punctuation, including question marks.
- - For plural forms: ?
- - For capitalization: ?
+ The Natural Understanding (NLU) model is agnostic to punctuation, including question marks.
 
 ## Creating new trigger phrases
 
@@ -56,6 +54,13 @@ There is no need to leave speficic words out: the model is designed to give less
 | **5** | **Use complete phrases** | *Can I talk to a human assistant* |
 | **6** | **Have unique verb/noun or combinations of those** | *I need customer service* <br> *I want to speak with a consultant* |
 | **7** | **Aoid using the same entity variation** <br> You don't need to use all of the examples from the entity value. <br> The NLU will automatically consider all the variations. | *I want to order a **burger*** <br> *I would like a **pizza***<br> *I want **chicken nuggets*** |
+
+## Balance the number of trigger phrases per topic
+
+Try to balance the number of trigger phrases between topic. 
+
+> [!TIP]
+> That way, the Power Virtual Agents Natural Language Understanding capabilities don’t overweight a topic versus another based on the configured trigger phrases. 
 
 ## Assessing the impact of your changes
 
