@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 02/28/2020
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Notify function in Power Apps
@@ -24,7 +23,7 @@ Displays a banner message to the user.
 
 ## Description
 
-The **Notify** function displays a banner message to the user at the top of the screen, overlaying what is currently displayed. The notification will remain until the user dismisses it, another notification replaces it, or the timeout expires which defaults to 10 seconds.
+The **Notify** function displays a banner message to the user at the top of the screen. The notification will remain until the user dismisses it or the timeout expires which defaults to 10 seconds.
 
 An appropriate color and icon are used depending on the type of the message. The type is specified by the second argument to the function:
 

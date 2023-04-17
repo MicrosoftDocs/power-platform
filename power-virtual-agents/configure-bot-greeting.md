@@ -8,9 +8,9 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: digantak
-manager: shellyha
 ms.custom: "customization, ce06102020"
-ms.collection: virtualagent
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Configure your bot to start the conversation automatically
@@ -60,7 +60,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
 
 1. [Create and publish a bot](fundamentals-get-started.md).
 
-1. Copy and paste the HTML code below and save it as *index.html*.  
+1. Copy and paste the HTML code below and save it as _index.html_.  
     You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
 
     ```HTML
@@ -172,22 +172,22 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
         </html>
     ```
 
-1. In the *index.html* file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
+1. In the _index.html_ file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
 
-1. Open *index.html* using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
+1. Open _index.html_ using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
 
 1. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
     If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (").
 
 ## Change the bot's default greeting
 
-The code in the *index.html* file causes a topic to be called automatically when the bot is loaded. By default, it calls the system greeting topic. You can also create a new topic and divert the default system greeting topic to that new topic.
+The code in the _index.html_ file causes a topic to be called automatically when the bot is loaded. By default, it calls the system greeting topic. You can also create a new topic and divert the default system greeting topic to that new topic.
 
 In both instances, you [make changes to the topic you want to call as you would normally](authoring-create-edit-topics.md).
 
 If you modify or create a new greeting topic, it's a best practice to include some sort of identification that the user is talking to a bot (or "virtual agent"), so they don't think they're talking to a human.
 
-We recommend you modify the system greeting topic so that you don't have to edit the *index.html* code.
+We recommend you modify the system greeting topic so that you don't have to edit the _index.html_ code.
 
 ### Modify the system greeting topic (recommended)
 

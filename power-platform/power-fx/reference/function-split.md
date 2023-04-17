@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 09/14/2019
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Split function in Power Apps
@@ -26,13 +25,13 @@ Splits a text string into a table of substrings.
 
 The **Split** function breaks a text string into a table of substrings. Use **Split** to break up comma delimited lists, dates that use a slash between date parts, and in other situations where a well defined delimiter is used.
 
-A separator string is used to break the text string apart. The separator can be zero, one, or more characters that are matched as a whole in the text string. Using a zero length or _blank_ string results in each character being broken out individually. The matched separator characters are not returned in the result. If no separator match is found then the entire text string is returned as a single result.
+A separator string is used to break the text string apart. The separator can be zero, one, or more characters that are matched as a whole in the text string. Using a zero length or _blank_ string results in each character being broken out individually. The matched separator characters are not returned in the result. If no separator match is found, then the entire text string is returned as a single result.
 
 Use the **[Concat](function-concatenate.md)** function to recombine the string without the separators.
 
 Use the **[MatchAll](function-ismatch.md)** function to split a string using a regular expression.
 
-The examples show how **Split** can be used with the **[First](function-first-last.md)** and **[Last](function-first-last.md)** functions to extract a single delimited substring. The **[Match](function-ismatch.md)** function is often a more concise and powerful choice for those familiar with regular expressions.
+The examples show how **Split** can be used with the **[First](function-first-last.md)** and **[Last](function-first-last.md)** functions to extract a single delimited substring. The **[Match](function-ismatch.md)** function is often a more concise and powerful choice for regular expressions.
 
 ## Syntax
 
@@ -45,22 +44,22 @@ The examples show how **Split** can be used with the **[First](function-first-la
 
 ### Basic usage
 
-| Formula                                                | Description                                                                                                                                                                                                                                                                                                                                                                   | Result                                                        |
-| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| `Split( "Apples, Oranges, Bananas", "," )`             | Splits the different fruits apart, based on the comma separator. The split is performed based on only the comma and not the space after it, resulting in a space at the front of "&nbsp;Oranges" and "&nbsp;Bananas".                                                                                                                                                         | ![Split based on comma.](media/function-split/fruit1.png)     |
-| `TrimEnds( Split( "Apples, Oranges, Bananas", "," ) )` | Same as the previous example, but in this case the space is removed by the [**TrimEnds** function](function-trim.md), operating on the single column table that is produced by **Split**. We could have also used the separator **",&nbsp;"** which includes the space after the comma, but that would not have worked properly if there is no space or there are two spaces. | ![Split with space removed.](media/function-split/fruit2.png) |
-| `Split( "08/28/17", "/" )`                             | Splits the date apart, using a forward slash as the separator.                                                                                                                                                                                                                                                                                                                | ![Using forward slash.](media/function-split/date.png)        |
+| Formula | Description | Result |
+| --- | --- | --- |
+| `Split( "Apples, Oranges, Bananas", "," )` | Splits the different fruits apart, based on the comma separator. The split is performed based on only the comma and not the space after it, resulting in a space at the front of "&nbsp;Oranges" and "&nbsp;Bananas". | A single-column table with a `Value` column containing the following values: "Apples", "&nbsp;Oranges", "&nbsp;Bananas" |
+| `TrimEnds( Split( "Apples, Oranges, Bananas", "," ) )` | Same as the previous example, but in this case the space is removed by the [**TrimEnds** function](function-trim.md), operating on the single column table that is produced by **Split**. We could have also used the separator **",&nbsp;"** which includes the space after the comma, but that wouldn't have worked properly if there's no space or there are two spaces. | A single-column table with a `Value` column containing the following values: "Apples", "Oranges", "Bananas" |
+| `Split( "08/28/17", "/" )` | Splits the date apart, using a forward slash as the separator. | A single-column table with a `Value` column containing the following values: "08", "28", "17"|
 
 ### Different delimiters
 
-| Formula                         | Description                                                                                                                                                                  | Result                                                          |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| `Split( "Hello, World", "," )`  | Splits the words apart, using a comma as the separator. The second result starts with a space since this was the character immediately following the comma.                  | ![Using comma separator.](media/function-split/comma.png)       |
-| `Split( "Hello, World", "o" )`  | Splits the string apart, using the character "o" as the separator.                                                                                                           | ![Using o separator.](media/function-split/o.png)               |
-| `Split( "Hello, World", "l" )`  | Splits the string apart, using the single character "l" as the separator. Since there were no characters between the two **l**'s in **Hello**, a _blank_ value was returned. | ![Using l separator.](media/function-split/l.png)               |
-| `Split( "Hello, World", "ll" )` | Splits the string apart, using the double character "ll" as the separator.                                                                                                   | ![Using ll separator.](media/function-split/ll.png)             |
-| `Split( "Hello, World", "%" )`  | Splits the string apart, using the percent sign as the separator. Since this separator does not appear in the string, the entire string is returned as one result.           | ![Using % separator.](media/function-split/percent.png)         |
-| `Split( "Hello, World", "" )`   | Splits the string apart, using an empty string as the separator (zero characters). This will break the string on each character.                                             | ![Using empty string separator.](media/function-split/none.png) |
+| Formula | Description | Result |
+| --- | --- | --- |
+| `Split( "Hello, World", "," )` | Splits the words apart, using a comma as the separator. The second result starts with a space since it is the character immediately following the comma. | A single-column table with a `Value` column containing the following values: "Hello", "&nbsp; World" |
+| `Split( "Hello, World", "o" )` | Splits the string apart, using the character "o" as the separator. | A single-column table with a `Value` column containing the following values: "Hell", ", W", "rld" |
+| `Split( "Hello, World", "l" )` | Splits the string apart, using the single character "l" as the separator. Since there were no characters between both the **l**'s in **Hello**, a _blank_ value was returned. | A single-column table with a `Value` column containing the following values: "He", Blank(), "o, Wor", "d" |
+| `Split( "Hello, World", "ll" )` | Splits the string apart, using the double character "ll" as the separator. | A single-column table with a `Value` column containing the following values: "He", "o, World" |
+| `Split( "Hello, World", "%" )` | Splits the string apart, using the percent sign as the separator. Since this separator doesn't appear in the string, the entire string is returned as one result. | A single-column table with a `Value` column containing the following value: "Hello, World" |
+| `Split( "Hello, World", "" )` | Splits the string apart, using an empty string as the separator (zero characters). This will break the string on each character. | A single-column table with a `Value` column containing the following values: "H", "e", "l", "l", "o", ",", "&nbsp;", "W", "o", "r", "l", "d" |
 
 ### Substring extraction
 

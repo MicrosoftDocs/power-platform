@@ -7,8 +7,8 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -76,7 +76,7 @@ While testing your bot in the **Test bot** pane, you can use the **Save snapshot
 > [!WARNING]
 > The snapshot contains all of your bot content, which may include sensitive information.
 
-1. At the top of the **Test bot** pane, select the menu icon (three vertical periods) and then **Save snapshot**.
+1. At the top of the **Test bot** pane, select the menu icon (**&vellip;**) and then **Save snapshot**.
 
     :::image type="content" source="media/authoring-test-bot/save-snapshot.png" alt-text="Save snapshot.":::
 

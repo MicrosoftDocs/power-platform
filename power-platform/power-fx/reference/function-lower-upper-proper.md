@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 11/07/2015
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Lower, Upper, and Proper functions in Power Apps
@@ -60,15 +59,18 @@ The examples in this section use a text-input control, named **Author**, as thei
 
 The examples in this section convert strings from the **Address** [column](/power-apps/maker/canvas-apps/working-with-tables#columns) of the **People** data source, which contains this data:
 
-![Table example.](media/function-lower-upper-proper/people-table.png)
+| Name | Address |
+| --- | --- |
+| "Jean" | "123 Main St NE" |
+| "Fred" | "789 SW 39th #3B" |
 
 Each formula returns a single-column table that contains the converted strings.
 
-| Formula                                                       | Description                                                                                                                     | Result                                                                |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )**  | Converts any letter that's lowercase to uppercase.                                                                              | ![Lower.](media/function-lower-upper-proper/people-table-lower.png)   |
-| **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )**  | Converts any letter that's lowercase to uppercase.                                                                              | ![Upper.](media/function-lower-upper-proper/people-table-upper.png)   |
-| **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** | Converts any first letter of a word that's lowercase to uppercase, and converts any other letter that's uppercase to lowercase. | ![Proper.](media/function-lower-upper-proper/people-table-proper.png) |
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** | Converts any letter that's lowercase to uppercase. | A single-column table with a `Value` column containing the following values: "123 main st ne", "789 sw 39th #3b" |
+| **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** | Converts any letter that's lowercase to uppercase. | A single-column table with a `Value` column containing the following values: "123 MAIN ST NE", "789 SW 39TH #3B" |
+| **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** | Converts any first letter of a word that's lowercase to uppercase, and converts any other letter that's uppercase to lowercase. | A single-column table with a `Value` column containing the following values: "123 Main St Ne", "789 Sw 39th #3b" |
 
 ### Step-by-step example
 

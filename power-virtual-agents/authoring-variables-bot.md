@@ -7,8 +7,8 @@ ms.date: 3/19/2020
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: authoring, ce06122020
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

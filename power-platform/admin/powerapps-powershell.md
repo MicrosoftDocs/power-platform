@@ -2,19 +2,14 @@
 title: PowerShell support | Microsoft Docs
 description: Description of the different PowerShell cmdlets and a walkthrough of how to install and run them.
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 09/06/2022
+ms.date: 01/20/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # PowerShell support for Power Apps 
@@ -351,9 +346,9 @@ EnvironmentName and FlowName can be found in the flow url:
    https://us.flow.microsoft.com/manage/environments/66495a1d-e34e-e330-9baf-0be559e6900b/solutions/fd140aaf-4df4-11dd-bd17-0019b9312238/flows/53d829c4-a5db-4f9f-8ed8-4fb49da69ee1/details
    <br />The GUID after environments/ is the EnvironmentName and the GUID after flows/ is the FlowName
  - The AppName for canvas app can be found in Canvas app details page.
-   ![image](https://user-images.githubusercontent.com/62711514/178654001-94235e7a-db95-4785-8175-a2994e0039e3.png)
+   ![The AppName for canvas app can be found in Canvas app details page.](https://user-images.githubusercontent.com/62711514/178654001-94235e7a-db95-4785-8175-a2994e0039e3.png)
  - The AppName for model driven app can be found in solution explorer.
-   ![image](https://user-images.githubusercontent.com/62711514/178653658-1f0a347d-d68b-4faa-881b-5396e5c29361.png)
+   ![The AppName for model driven app can be found in solution explorer.](https://user-images.githubusercontent.com/62711514/178653658-1f0a347d-d68b-4faa-881b-5396e5c29361.png)
    - To see the examples, type: "get-help Add-AdminFlowPowerAppContext -examples".
    - For more information, type: "get-help Add-AdminFlowPowerAppContext -detailed".
    - For technical information, type: "get-help Add-AdminFlowPowerAppContext -full".
@@ -435,12 +430,12 @@ Displays a list of all API connections you have in the default environment. Nati
 Get-AdminPowerAppConnector
 ```
 
-Returns a list of all custom connector details in the tenant. Does not return custom connectors that are in a solution. This is a known limitation.
+Returns a list of all custom connector details in the tenant. 
+
+> [!Note]
+> `Get-AdminPowerAppConnector` does not list custom connectors that are in a solution. This is a known limitation.
 
 ### Data loss prevention (DLP) policy commands 
-
-> [!NOTE]
-> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center are currently in public preview. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in public preview. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](/connectors/)
 
 These cmdlets control the DLP policies on your tenant.
 
@@ -460,6 +455,12 @@ Get-DlpPolicy
 
 Gets policy objects for the signed-in admin's tenant.
 
+> [!NOTE]
+> - When viewing a DLP policy using PowerShell, the display name of connectors will reflect the names of the connectors when the DLP policy was created or when the specific connectors were last moved within the policy. In other words, changes to the display names of connectors won't be reflected.
+> - When viewing a DLP policy using PowerShell, new connectors that are in the default group and have never been moved won't be returned.
+> 
+> For both of these known issues, a workaround is to move the affected connector to another group within the policy and then move it back to the correct group.  After doing this, each of the connectors will be visible with their correct name.
+
 #### Update a DLP policy
 
 ```powershell
@@ -475,6 +476,8 @@ Remove-DlpPolicy
 ```
 
 Deletes a DLP policy.
+
+
 
 ### DLP resource exemption cmdlets 
 

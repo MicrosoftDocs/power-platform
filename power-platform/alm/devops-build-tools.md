@@ -5,7 +5,6 @@ keywords:
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
-manager: kvivek
 ms.custom: ""
 ms.date: 12/07/2022
 ms.reviewer: "pehecke"
@@ -13,9 +12,6 @@ ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Microsoft Power Platform Build Tools for Azure DevOps
@@ -43,7 +39,7 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 > [!NOTE] 
 > Microsoft Power Platform Build Tools are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
 > 
-> Microsoft Power Platform Build Tools version 1.0.* and 2.0 are now available for use in **GCC** and **GCC High** regions.
+> Microsoft Power Platform Build Tools are now available for use in **GCC** and **GCC High** regions.
 
 ## What are Microsoft Power Platform Build Tools?
 

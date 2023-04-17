@@ -4,17 +4,16 @@ description: Reference information including syntax and examples for the Operato
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 04/18/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Operators and Identifiers in Power Apps
@@ -294,7 +293,7 @@ After selecting the suggestion, 'Custom Field' is shown in the formula bar and t
 > [!div class="mx-imgBorder"]  
 > ![Studio formula bar showing the use of the display name 'Custom Field' for the field.](media/operators/customfield_display.png)
 
-Although it isn't suggested, we could also use the logical name for this field. This will result in the same data being retrieved. Single quotes are required since this name doesn't contain spaces or special characters:
+Although it isn't suggested, we could also use the logical name for this field. This will result in the same data being retrieved. Single quotes are not required since this name doesn't contain spaces or special characters:
 
 > [!div class="mx-imgBorder"]  
 > ![Studio formula bar showing the use of the logical name cr5e3_customfield for the field.](media/operators/customfield_logical.png)

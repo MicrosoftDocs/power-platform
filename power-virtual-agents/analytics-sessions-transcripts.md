@@ -7,8 +7,8 @@ ms.date: 4/23/2021
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: analysis, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -30,24 +30,24 @@ The following are the most relevant to chatbots created with Power Virtual Agent
 
 | Field                         | Description                                                                                            | Example                                                                                                                           |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
-| *Content*                     | The entire transcript in JSON format.                                                                  | See the [Content field](#content-field) section.                                                                                  |
-| *ConversationStartTime*       | The start time of the conversation (not the time the transcript record was written to the data store). | `2021-04-19T20:39:09Z`                                                                                                            |
-| *Conversationtranscript*      | Unique identifier for the data row in the Dataverse table.                                             | `28eccb77-xxxx-4a63-985f-ffaaadd6f391`                                                                                            |
-| *Metadata*                    | JSON that includes the `Bot Id`, `Tenant Id`, and `Bot Name`.                                          | `{"BotId": "198eca5f-xxxx-4ae6-8c08-835d884a8688", "AADTenantId": "72f988bf-xxxx-41af-91ab-2d7cd011db47", "BotName": "Test Bot"}` |
-| *Name*                        | The name of the custom row that is created from the `conversationid`, followed by `botid`.             | `8YYe8iif49ZKkycZLe7HUO-o_198eca5f-xxxx-4ae6-8c08-835d884a8688`                                                                   |
-| *bot\_conversationtranscript* | The bot's ID.                                                                                          | `198eca5f-xxxx-4ae6-8c08-835d884a8688`                                                                                            |
-| *Created on*                  | Date and time when the transcript record was created.                                                  | `2021-04-20T02:40:13Z`                                                                                                            |
+| _Content_                     | The entire transcript in JSON format.                                                                  | See the [Content field](#content-field) section.                                                                                  |
+| _ConversationStartTime_       | The start time of the conversation (not the time the transcript record was written to the data store). | `2021-04-19T20:39:09Z`                                                                                                            |
+| _Conversationtranscript_      | Unique identifier for the data row in the Dataverse table.                                             | `28eccb77-xxxx-4a63-985f-ffaaadd6f391`                                                                                            |
+| _Metadata_                    | JSON that includes the `Bot Id`, `Tenant Id`, and `Bot Name`.                                          | `{"BotId": "198eca5f-xxxx-4ae6-8c08-835d884a8688", "AADTenantId": "72f988bf-xxxx-41af-91ab-2d7cd011db47", "BotName": "Test Bot"}` |
+| _Name_                        | The name of the custom row that is created from the `conversationid`, followed by `botid`.             | `8YYe8iif49ZKkycZLe7HUO-o_198eca5f-xxxx-4ae6-8c08-835d884a8688`                                                                   |
+| _bot\_conversationtranscript_ | The bot's ID.                                                                                          | `198eca5f-xxxx-4ae6-8c08-835d884a8688`                                                                                            |
+| _Created on_                  | Date and time when the transcript record was created.                                                  | `2021-04-20T02:40:13Z`                                                                                                            |
 
 ### Content field
 
-The *Content* field is a raw log of all the activities users have with the bot. Common activity types include *message* and *event*:
+The _Content_ field is a raw log of all the activities users have with the bot. Common activity types include _message_ and _event_:
 
-- *Message* activities represent content shown within a conversation. *Message* activities may contain text, speech, interactive cards, and binary or unknown attachments.
-- *Event* activities communicate programmatic information from a client or channel to a bot.
+- _Message_ activities represent content shown within a conversation. _Message_ activities may contain text, speech, interactive cards, and binary or unknown attachments.
+- _Event_ activities communicate programmatic information from a client or channel to a bot.
 
 For more information on activity types, see the [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md).
 
-The following are some of the key fields you will find within the *Content* JSON:
+The following are some of the key fields you will find within the _Content_ JSON:
 
 | **Key**       | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

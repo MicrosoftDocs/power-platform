@@ -10,16 +10,11 @@ ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Associate an email address with a row
 
-When customer engagement apps track an email, it associates the email address to a row within customer engagement apps. The contents of the email **From** field can only be associated with one row. If there are duplicate rows within customer engagement apps with the same email address, the contents of the email **From** field will resolve to the first active row in the following order:
+When customer engagement apps track an email, it associates the email address to a row within customer engagement apps. The contents of the email **From** field can only be associated with one row. If there are less than 100 duplicate rows within customer engagement apps with the same email address, the contents of the email **From** field will resolve to the first active row in the following order:
 
 
 1. SystemUser
@@ -30,6 +25,8 @@ When customer engagement apps track an email, it associates the email address to
 6. Team
 7. Business unit
 8. Email-enabled tables (such as Queues, custom, etc.)
+
+If the email address resolves to more than 100 rows, the **From** field will not be associated to a row and appears as unresolved.
 
 > [!NOTE]
 > The only exception is when the owner of the mailbox or queue tracking the email is the owner of the duplicated row. A row that's owned by you takes precedence over any rows that you don't own. For example, if the email address exists in a contact and account table and the mailbox owner also owns the account but not the contact, the **From** field will resolve to the account.

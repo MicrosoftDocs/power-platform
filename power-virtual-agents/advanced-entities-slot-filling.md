@@ -7,8 +7,8 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -23,9 +23,9 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](advanced-entities-slot-filling.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/advanced-entities-slot-filling-teams.md)
 
-A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working—even if that exact phrase isn't listed as a trigger phrase.
+A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working, even if that exact phrase isn't listed as a trigger phrase.
 
-One fundamental aspect of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name.
+One fundamental aspect of natural language understanding is to identify _entities_ in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mTUN]
@@ -153,7 +153,7 @@ Now that you've done the work of giving the bot the knowledge about outdoor gear
 
 ## Slot filling
 
-*Slot filling* is a natural language understanding concept that means saving an extracted entity to an object. However, in Power Virtual Agents, slot filling means placing the extracted entity value into a variable.
+_Slot filling_ is a natural language understanding concept that means saving an extracted entity to an object. However, in Power Virtual Agents, slot filling means placing the extracted entity value into a variable.
 
 We will continue to use the outdoor gear topic as an example, which is triggered by typing "I want to buy something" in the test chat.
 
@@ -173,7 +173,7 @@ Essentially, slot filling has happened by inserting the extracted entity "Hiking
 
 You can also use what is known as "proactive slot filling" where the user can specify multiple pieces of information that map to multiple entities. The bot is able to understand what information belongs to which entity automatically. In cases where it is unsure of the intended mapping, it will prompt the user to be more specific by providing choices.
 
-In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the user wants to buy gear and also provides a second piece of information—the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
+In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the user wants to buy gear and also provides a second piece of information&mdash;the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
 
 :::image type="content" source="media/advanced-entities-slot-filling/entities-13(draft).png" alt-text="Multiple and proactive slot filling." border="false":::
 

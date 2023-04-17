@@ -1,15 +1,15 @@
 ---
 title: "Notify bot users in Power Virtual Agents for Teams with proactive messages"
 description: "Use Power Automate flows to send proactive messages from bots created in Teams to bot users, with updates to their conversations, requests for information, and more."
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 08/30/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: micchow
 ms.custom: "teams, flow, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

@@ -1,19 +1,14 @@
 ---
 title: "About the Microsoft Dataverse for Teams environment | MicrosoftDocs"
 description: Administer and manage Microsoft Dataverse for Teams environment
-author: jimholtz
+author: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 01/31/2023
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: matp
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # About the Microsoft Dataverse for Teams environment 
 
@@ -80,7 +75,7 @@ This section summarizes user access to Dataverse for Teams environments and reso
 
 ### Conceptual model
 
-Every team in Microsoft Teams is linked 1:1 to a [Microsoft 365 group](/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide).
+Every team in Microsoft Teams is linked 1:1 to a [Microsoft 365 group](/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide&preserve-view=true).
 
 Microsoft 365 Groups supports two user membership types: owners and members. Members can be users from the customer's own tenant or from a guest tenant. Any user management (addition, removal, user type change) made in a team will be reflected in the Microsoft 365 group, and vice versa.
 
@@ -109,7 +104,7 @@ There's a difference in the models for adding users to an environment with a Dat
 </tr>
 <tr>
 <td width="20%"> Teams member </td>
-<td width="50%"> Members can view the Dataverse for Teams environment's resources, run all apps and resources, and create or update their own resources. They have full access to all data. </td>
+<td width="50%"> Members can view the Dataverse for Teams environment's resources, run all apps and resources, and create or update all resources. They have full access to all data. </td>
 <td width="30%"> Teams Member </td>
 </tr>
 <tr>
@@ -198,7 +193,7 @@ The consumption of capacity by Dataverse for Teams environments won't count towa
 |Unit  |Service limit  |
 |---------|---------|
 |Dataverse for Teams environments      | 5 environments, + 1 additional environment for every 20 eligible Microsoft 365 user licenses.<br /> Should more instances be needed, consider deleting unused environments or upgrading environments to Dataverse.  <br />Customers with more than 200,000 eligible Microsoft 365 seats should contact their Microsoft representative.  |
-|Max Dataverse for Teams environment storage per tenant      | 10 GB + Dataverse for Teams environments &times; 2 GB (up to a maximum of 19.5 TB). <br /> The 2 GB storage limit can't be extended further. Should more storage be needed, consider upgrading environments to Dataverse.  |
+|Max Dataverse for Teams environment storage per tenant      | Dataverse for Teams environments &times; 2 GB (up to a maximum of 19.5 TB). <br /> The 2 GB storage limit can't be extended further. Should more storage be needed, consider upgrading environments to Dataverse.  |
 |Max Dataverse for Teams environments API calls  | API requests in Microsoft Power Platform consist of various actions that a user makes across various products.  <br /> For more information about API calls and the per-user limits available, go to [Microsoft Power Platform request entitlements](./api-request-limits-allocations.md). |
 
 ### Enforcement

@@ -1,14 +1,14 @@
 ---
 title: "Language support in Microsoft Teams"
 description: "Create new chatbots in multiple languages, including tutorial and system topics, in the Power Virtual Agents app in Microsoft Teams."
-keywords: "PVA, language, regional, region"
+keywords: "PVA, language, regional, region, Teams"
 ms.date: 9/22/2020
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "authoring, fundamentals, ce06092020"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

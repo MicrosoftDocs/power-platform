@@ -9,13 +9,9 @@ ms.assetid: cac303a6-70f9-3962-879a-fbf7fdc2364f
 author: shmcarth # GitHub ID
 ms.subservice: alm
 ms.author: jdaly # MSFT alias of Microsoft employees only
-manager: ryjones # MSFT alias of manager or PM counterpart
 ms.reviewer: "pehecke"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # When to edit the customizations file

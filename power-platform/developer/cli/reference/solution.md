@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI solution command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI solution command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 11/18/2022
+author: snizar007
+ms.author: snizar
+ms.date: 3/13/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -354,12 +354,6 @@ Import the solution into Dataverse.
 
 
 ### Optional Parameters
-
-#### `--activate-flows` `-af`
-
-Turn on workflows specified in the deployment settings file using a specified user
-
-This parameter requires no value. It is a switch.
 
 #### `--activate-plugins` `-ap`
 
@@ -802,15 +796,20 @@ Revision version for solution
 
 **Note**: The value must be a positive integer
 
+#### `--solutionPath` `-sp`
+
+Path to Dataverse solution directory or Solution.xml file.
+
 #### `--strategy` `-s`
 
 Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"
 
 Use one of these values:
 
-- `gittags`
-- `filetracking`
-- `solution`
+- `None`
+- `GitTags`
+- `FileTracking`
+- `Solution`
 
 [!INCLUDE [solution-version-remarks](includes/solution-version-remarks.md)]
 

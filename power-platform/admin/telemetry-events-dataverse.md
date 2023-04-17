@@ -4,18 +4,13 @@ description: About telemetry events for Microsoft Dataverse
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 12/12/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Telemetry events for Microsoft Dataverse
 
@@ -27,7 +22,7 @@ These are calls made to the Dataverse API. They can be from Unified Interface (U
 
 - **Name**: The type of request. These fall into two categories:
   - **Web API Request**: A request to the OData v4 endpoint that's commonly used by Unified Interface and modern clients. This request is transformed into an operation that's common to both. Web API is a "wrapper" to enable the RESTful programming model, but after data is received, everything becomes the same within the server. When the response is returned, it's converted to JSON if the request came from the Web API.
-  - **Organization Service Request**: A request to the SOAP endpoint used by SDK clients or the legacy web client.
+  - **Organization Service Request**: A request to the Organization API endpoint used by SDK clients or the legacy web client.
 - **Duration**: The amount of time the server took to respond to the request.
 - **Url**: The URL to which the call was made.
 - **CustomDimensions**:
@@ -59,9 +54,9 @@ dependencies
 - **Name/Target**: The fully qualified type name for the plug-in being executed.
 - **Duration**: The amount of time it took for the plug-in to be executed.
 - **CustomDimensions**: 
-  - **Depth**: The current [depth](/dotnet/api/microsoft.xrm.sdk.iexecutioncontext.depth?view=dynamics-general-ce-9) of the execution in the call stack.
+  - **Depth**: The current [Depth](xref:Microsoft.Xrm.Sdk.IExecutionContext.Depth) of the execution in the call stack.
   - **EntityName**: The name of the entity being acted on by the plug-in.
-  - **IsolationType**: A [value](/dotnet/api/microsoft.xrm.sdk.iexecutioncontext.isolationmode?view=dynamics-general-ce-9) indicating whether the plug-in is being executed in the sandbox:
+  - **IsolationType**: A [value](xref:Microsoft.Xrm.Sdk.IExecutionContext.IsolationMode) indicating whether the plug-in is being executed in the sandbox:
     - 1: None
     - 2: Sandbox
     - 3: External

@@ -1,20 +1,17 @@
 ---
 title: "Server cipher suites and TLS requirements  | MicrosoftDocs"
-description: Power Platform settings
+description: Configure your servers to meet TLS 1.2 requirements with the latest cipher suites to use Dataverse services securely.
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2022
+ms.date: 2/23/2023
+contributors:
+    - ProfessorKendrick
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Server cipher suites and TLS requirements
 
@@ -94,7 +91,5 @@ To comply with our security policy for a secure connection, your server must hav
 [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/win32/secauthn/cipher-suites-in-schannel)  <br />
 [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls)  <br />
 [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)  
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,14 +1,14 @@
 ---
 title: "Configuration of advanced features in Microsoft Teams"
 description: "Use advanced features, like security and access controls, customization, and bot framework skills in the Power Virtual Agents app in Microsoft Teams."
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 9/22/2020
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "configuration, fundamentals, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

@@ -2,20 +2,14 @@
 title: "Set up Azure AD Conditional Access - Microsoft Power Platform | MicrosoftDocs"
 description: "By using Conditional Access policies, you can apply the right access controls when needed to keep your organization secure and stay out of your user’s way when not needed."
 author: manuelap-msft
-manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/17/2021
+ms.date: 03/07/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Set up Azure AD Conditional Access
 
@@ -37,12 +31,17 @@ Only *Global Admins* can configure Conditional Access policies. This isn't avail
 To learn how to set up Conditional Access policies, see [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access).
 
 > [!NOTE]
-> If you’re using Conditional Access polices to limit access to Power Automate and it’s features, the following apps must be included in **Cloud apps** policy application:
+> If you’re using Conditional Access polices to limit access to Power Platform and it’s features, the following apps must be included in **Cloud apps** policy application:
 > 
+> - Common Data Service (Dataverse)
+> - Power Platform API
 > - Microsoft Power Apps
 > - Microsoft Flow
+> - Microsoft Azure Management
 > 
 > Currently, **having conditional access to only Microsoft Flow is not enough**. To learn how to set up Conditional Access policies, see [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access) and [Control Access to Power Apps and Power Automate with Azure AD Conditional Access Policies](https://devblogs.microsoft.com/premier-developer/control-access-to-power-apps-and-power-automate-with-azure-ad-conditional-access-policies/#:~:text=Control%20Access%20to%20Power%20Apps%20and%20Power%20Automate,a%20Conditional%20Access%20Policy.%20...%204%20Summary.%20).
+> 
+> Conditional Access policies that block all cloud apps, except Power Apps, won't work as expected. For instance, users won't be able to access Power Apps. The exclusion of Power Apps doesn't encompass cloud apps that are required to use Power Apps. Not all of the cloud apps used by Power Apps are available in the Conditional Access cloud app list. 
 
 ## Further resources
 

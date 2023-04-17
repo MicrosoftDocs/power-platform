@@ -4,17 +4,16 @@ description: Reference information including syntax and examples for the Filter,
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
-ms.date: 02/05/2017
+ms.reviewer: mkaur
+ms.date: 01/30/2023
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Filter, Search, and LookUp functions in Power Apps

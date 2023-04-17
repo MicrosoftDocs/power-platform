@@ -7,8 +7,8 @@ ms.date: 06/22/2022
 ms.topic: overview
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: fundamentals, ceX, intro-internal
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
@@ -43,6 +43,7 @@ Power Virtual Agents is available as both a standalone web app, and as a discret
 
 ## Helpful links
 
+- [Use GPT-based capabilities to expand your bot's reach](nlu-gpt-overview.md)
 - [Create your first bot](authoring-first-bot.md)
 - [Create and edit topics](authoring-create-edit-topics.md)
 - [Enhance your bot](advanced-fundamentals.md)

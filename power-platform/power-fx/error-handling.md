@@ -4,17 +4,16 @@ description: Reference information about working with errors in Power Fx.
 author: gregli-msft
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 11/18/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 contributors:
-  - tapanm-msft
+  - mduelae
   - gregli-msft
+  - jorisdg
 ---
 # Error handling
 

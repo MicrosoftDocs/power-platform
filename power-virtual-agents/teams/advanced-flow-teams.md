@@ -1,13 +1,12 @@
 ---
 title: "Automate chatbot actions with flows in Microsoft Teams"
 description: "Use Power Automate flows in chatbots you build in the Power Virtual Agents app in Microsoft Teams."
-keywords: "PVA, flow, automate"
+keywords: "PVA, flow, automate, Teams"
 ms.date: 06/28/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring, teams
 ms.collection: virtual-agent

@@ -1,8 +1,7 @@
 ---
 title: "How to use the Environment Management components | MicrosoftDocs"
 description: "The Environment Management components in the Core solution will help automate and manage requests for development resources."
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: demora
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Environment and DLP Policy management
 

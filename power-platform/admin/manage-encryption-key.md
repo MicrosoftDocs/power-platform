@@ -3,7 +3,7 @@ title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/09/2022
+ms.date: 01/27/2023
 author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
@@ -11,11 +11,6 @@ ms.reviewer: kvivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage the encryption key 
 
@@ -25,14 +20,15 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
 
 > [!IMPORTANT]
 > Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses, or more than 1000 Dynamics 365 Enterprise licenses, or more than 1000 licenses from a combination of both in a single tenant. To opt in to this program, submit a [support request](./support-overview.md#using-support).
->
-> Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can't be encrypted with the self-managed encryption key:
-> - Dataverse search
-> - Mobile Offline
-> - Activity Log (Microsoft 365 portal)
-> - Exchange (Server-side sync)
-> 
-> Note the following: 
+
+Encryption key management is only applicable to Azure SQL environment databases. The following features and services continue to use the Microsoft-managed encryption key to encrypt their data and can't be encrypted with the self-managed encryption key:
+- Dataverse search
+- Elastic tables
+- Mobile Offline
+- Activity Log (Microsoft 365 portal)
+- Exchange (Server-side sync)
+ 
+> [!NOTE] 
 > - The self-manage database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
 > - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.  
 > - Support of [File](/powerapps/developer/data-platform/file-attributes) and [Image](/powerapps/developer/data-platform/image-attributes) with size < 128MB can be enabled if your environment has version 9.2.21052.00103 or higher.
@@ -72,15 +68,14 @@ These actions will result in disabling all the environments within the tenant fr
   
 <a name="KM_details"></a>   
 
+### Encryption key requirements
+
+If you provide your own encryption key, your key must meet  these  requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
   
-### Encryption key requirements  
- If you provide your own encryption key, your key must meet  these  requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
-  
--   The encryption key file format must be PFX or BYOK.  
-  
--   2048-bit RSA or RSA-HSM key type.  
-  
--   PFX encryption key files must be password protected.  
+- The encryption key file format must be PFX or BYOK.  
+- 2048-bit RSA.
+- RSA-HSM key type (requires a Microsoft Support request).
+- PFX encryption key files must be password protected.  
   
 For more information about generating and transferring an HSM-protected key over the Internet see [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys).  Only [nCipher Vendor HSM key](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) is supported. Before generating your HSM key, go to the Power Platform admin center **Manage encryption keys**/**Create New key** window to obtain the subscription ID for your environment region. You need to copy and paste this subscription ID into your HSM to create the key. This will ensure that only our Azure Key Vault can open your file.
   
@@ -260,7 +255,7 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 
 ### See also  
 
-[SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
+[SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017&preserve-view=true)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,24 +2,18 @@
 title: Responding to DSR requests for Microsoft Dataverse customer data | Microsoft Docs
 description: Walkthrough of how to respond to DSR requests for Microsoft Dataverse customer data
 author: jimholtz
-ms.reviewer: paulliew
+ms.reviewer: kvivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/01/2022
+ms.date: 12/19/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: paulliew
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data
 
-## Introduction to DSR requests
 The European Union (EU) General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that's been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects the right to do the following, as it pertains to their personal data:
 
 - Obtain copies
@@ -28,7 +22,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 - Delete it
 - Receive it in electronic format so it can be moved to another controller
 
-A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
+A formal request by a data subject to a controller to take an action on their personal data is called a Data Subject Rights (DSR) request.
 
 This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Power Apps, Power Automate, and Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
@@ -94,17 +88,17 @@ You can find personal data from Dataverse users within the following resources:
 #### User
 User personal data is stored in the Azure Active Directory and is automatically synced to all environments with a Dataverse database. System administrators cannot update this personal data directly in Dataverse while the user is active&mdash;they must update the data from within the Microsoft 365 admin center. System administrators can add personal data (for example, custom attributes) directly to Dataverse, but they must manually manage this data.
 
-To find a user and his or her personal data, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and do the following:
+To find a user and their personal data, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and do the following:
 
 1. Select **Environments**, and then select an environment from the list.
 
-2. Select **Open environment**.
+2. Go to **Settings** > **Users + permissions** > **Users**.
 
-3. Go to **Settings** > **Security** > **Users**.
+3. Enter the name of the user in the **Search** box, and select **Enter**.
 
-4. Enter the name of the user in the **Search** box, and then select **Search**.
+4. To view the user's personal data, select the user's name by clicking or double-tapping.
 
-5. To view the user's personal data, double-click or double-tap the user's name.
+5. To make changes to the Contact Information, expand on the ellipse and click **Manage user in Dynamics 365**
 
     ![Power Apps User Form.](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
 
@@ -155,7 +149,7 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 ### Delete
 
 #### User
-To avoid interruption to business applications that may be critical to your organization's operations, a user's records are not automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application.
+To avoid interruption to business applications that may be critical to your organization's operations, a user's records are not automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application or delete the user from each environment. You can remove the user's personal data or [permanently delete the user](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform).
 
 #### Remove a user's personal data from the user's Summary page
 When a user record is deleted from the Azure Active Directory, the following message is displayed on the user's Summary page:
@@ -196,6 +190,11 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 
 12. Select **Next**, and then select **Submit**.
 
+#### Permanently delete user
+You can either remove user's personal data or permanently delete the user record from the Datavese user table. More information: [Permanently delete users in Power Platform](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform). 
+
+When the user record is permanently deleted, the user's name in all records where the deleted user was the creator or last modified by and in the audit logs will show as **No Name**.
+
 #### Remove audit history from the Audit Summary View page
 
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
@@ -213,7 +212,7 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 ### Prerequisites
 You may be storing personal data from individuals (such as your own customers) within your Dataverse tables.  
 
-Dataverse System Administrators are responsible for maintaining an inventory of where personal data is being stored within various tables for each individual so that he or she can locate that data in response to any DSR requests.  
+Dataverse System Administrators are responsible for maintaining an inventory of where personal data is being stored within various tables for each individual so that they can locate that data in response to any DSR requests.  
 
 Personal data can then be exported, rectified, or deleted in a table using the in-product functionality.  
 
@@ -291,7 +290,7 @@ From the Dataverse search results, to the following:
 ### Prerequisites
 You may be storing personal data from individuals (such as your own customers) within your Dataverse tables.  
 
-Dataverse System Administrators are responsible for maintaining an inventory of where personal data is being stored within various tables for each individual so that he or she can locate that data in response to any DSR requests.  
+Dataverse System Administrators are responsible for maintaining an inventory of where personal data is being stored within various tables for each individual so that they can locate that data in response to any DSR requests.  
 
 Personal data can then be exported, rectified, or deleted in an table using the in-product functionality.  
 

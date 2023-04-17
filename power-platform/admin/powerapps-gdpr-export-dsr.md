@@ -1,25 +1,20 @@
 ---
 title: Responding to Data Subject Rights (DSR) requests to export Power Apps customer data | Microsoft Docs
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to export Power Apps customer data.
-author: jimholtz
+author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/07/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
 
-The "right of data portability" allows a data subject to request a copy of his or her personal data in an electronic format (that is, a structured, commonly used, machine readable and interoperable format) that may be transmitted to another data controller:
+The "right of data portability" allows a data subject to request a copy of their personal data in an electronic format (that is, a structured, commonly used, machine readable and interoperable format) that may be transmitted to another data controller:
 
 * Website access: [Power Apps portal](https://make.powerapps.com), [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
@@ -43,7 +38,7 @@ Power Apps user settings, user-app settings, and notifications | | App creator: 
 
 > ** With the introduction of Microsoft Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Dataverse database environment. For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 
-> *** An administrator can access these resources from the [Power Apps portal](https://make.powerapps.com) only if the owner of the resource has explicitly granted him or her access. If the administrator has not been granted access, he or she will need to leverage the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md).
+> *** An administrator can access these resources from the [Power Apps portal](https://make.powerapps.com) only if the owner of the resource has explicitly granted them access. If the administrator has not been granted access, they need to leverage the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md).
 
 ## Prerequisites
 

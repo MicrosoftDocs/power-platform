@@ -12,11 +12,6 @@ ms.topic: conceptual
 ms.date: 08/18/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Control user access to environments: security groups and licenses
 
@@ -55,6 +50,8 @@ Note the following about security groups:
 - **New**: Security groups cannot be assigned to default and developer environment types. If you've already assigned a security group to your default or developer environment, we recommend removing it since the default environment is intended to be shared with all users in the tenant and the developer environment is intended for use by only the owner of the environment.
 - Environments support associating the following group types: Security and Microsoft 365. Associating [other group types](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&WT.mc_id=365AdminCSH) is not supported.
 - When you select a security group, be sure to select an Azure AD security group and not one created in on-prem Windows Active Directory. On-prem Windows AD security groups aren't supported.
+- If a user is not a part of the assigned security group to the environment but has the Azure tenant Global Administrator role, the user will still show as an active user and will be able to log in.
+- If a user is assigned the Dynamics 365 Service Admin role, then the user must be part of the security group before they are enabled in the environment. They cannot access the environment until they are added to the security group and enabled.
 
 > [!NOTE]
 > All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application.  If users don’t have a security role, they will get a data access denied error when trying to run an app. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).

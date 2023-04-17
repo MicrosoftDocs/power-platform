@@ -3,18 +3,13 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/03/2022
+ms.date: 02/06/2023
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: matp
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage group teams
 
@@ -154,6 +149,7 @@ Review the following table for how members in Azure AD groups match to Dataverse
 > - **Azure AD group members are also added to the group team with [impersonation calls](/powerapps/developer/common-data-service/impersonate-another-user)**. You can use create group members in the group team on behalf of another user using impersonation. 
 > - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission.
+> - The group team name is not automatically updated when the Azure AD group name is changed. There is no impact in system operation with group name changes, but we recommend you update it via the Power Platform admin center Teams settings. 
 
 ## Manage the security roles of a team
 

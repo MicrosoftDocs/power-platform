@@ -6,23 +6,16 @@ author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
 ms.custom: ""
-ms.date: 04/09/2021
+ms.date: 12/23/2022
 ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Manage solutions using PowerShell
 
 The PowerShell cmdlets let you automate many of the monitoring, management, and quality assurance tasks in Power Platform.
-
-## Microsoft.Xrm.OnlineManagementAPI
-
-The online management API module is used to manage Dataverse environments. More information: [Use Microsoft.Xrm.OnlineManagementAPI](/powershell/powerapps/get-started-onlinemanagementap)
 
 ## Microsoft.PowerApps.Administration.PowerShell
 

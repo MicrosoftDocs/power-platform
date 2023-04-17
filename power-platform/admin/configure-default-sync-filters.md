@@ -10,11 +10,6 @@ ms.author: jimholtz
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Set up default sync filters for multiple users for appointments, contacts, or tasks

@@ -7,8 +7,8 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: fundamentals, portal, ceX, intro-internal
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
@@ -105,7 +105,7 @@ In the navigation menu, select **Chatbots** to open the **Chatbots** page and vi
 
 ## Create a topic
 
-Now that you have full functionality within your bot, you can create your own topic — or, in other words, a dialog tree specifying how your bot responds to a user's question.
+Now that you have full functionality within your bot, you can create your own topic, which is a dialog tree that describes how your bot responds to a user's question.
 
 1. In the navigation menu, select **Topics**, then select **New topic** at the top of the page.
 

@@ -2,12 +2,12 @@
 title: "Regional settings and data locations in Microsoft Teams"
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats, in the Power Virtual Agents app in Microsoft Teams."
 ms.date: 9/22/2020
-
+keywords: "PVA, Teams"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: digantak
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: "multi-geo, gdpr, ce06102020, teams"
 ---
@@ -45,7 +45,7 @@ Power Virtual Agents supports the following display formatting locales:
 - en-IN
 - en-US
 
-For example, if the user's browser locale setting is *en-GB*, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is *en-US*, the same date equates to **February 3**.
+For example, if the user's browser locale setting is _en-GB_, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is _en-US_, the same date equates to **February 3**.
 
 > [!NOTE]
 > Microsoft Teams supports a larger set of languages. If the selected language for Microsoft Teams is not supported by Power Virtual Agents, the displayed language will be en-US.

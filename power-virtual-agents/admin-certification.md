@@ -7,7 +7,7 @@ ms.keywords: "PVA, ISO, SOC, certification, compliance"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: "certification, ceX"
 ---
@@ -53,7 +53,7 @@ HITRUST created and maintains the Common Security Framework (CSF), a certifiable
 
 The CSF builds on HIPAA and the HITECH Act, which are US healthcare laws that have established requirements for the use, disclosure, and safeguarding of individually identifiable health information and enforce non-compliance.
 
-HITRUST provides a benchmark — a standardized compliance framework, assessment, and certification process — against which cloud service providers and covered health entities can measure compliance.
+HITRUST provides a benchmark&mdash;a standardized compliance framework, assessment, and certification process&mdash;against which cloud service providers and covered health entities can measure compliance.
 
 [Learn more about HITRUST](/compliance/regulatory/offering-hitrust).
 

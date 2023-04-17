@@ -2,7 +2,6 @@
 title: "CoE Starter Kit explained: building blocks and add-ons"
 description: "The Power Platform CoE Starter Kit is shipped in multiple components. Learn about the building blocks and add-ons designed to help you innovate and improve."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # CoE Starter Kit modules
 
@@ -44,6 +39,20 @@ The nurture components solution contains assets that are relevant to everyone in
 We recommend becoming familiar with the CoE core components solution before you add governance, nurture, or theming components.
 
 ## Standalone add-ons
+
+### Center of Excellence - Power Platform Administration Planner
+
+Behind the scenes, your IT and Center of Excellence team spends time configuring, managing and nurturing the adoption of Microsoft Power Platform. Understanding how that time is spent can help you plan who you need on your team and find the highest impact opportunities to streamline the administrative effort.
+
+Admin tasks are defined in a model-driven app and insights provided in a Power BI dashboard. More information: [Use Microsoft Power Platform administration planning](admin-tasks-component.md)
+
+### Center of Excellence - Power Platform communication site template
+
+Set up your own SharePoint Hub or Teams site to share success stories, upcoming events, rules of engagement and guidelines with your maker community. 
+
+The Power Platform communication site is a SharePoint Online template, designed to provide a starting point of content and page templates as your're setting up your internal Power Platform wiki and community site.
+
+More information: [Get starter with the Power Platform communication site template](../adoption/wiki-community.md#get-started-with-the-power-platform-communication-site-template)
 
 ### Center of Excellence – theming components
 

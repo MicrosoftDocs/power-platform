@@ -1,14 +1,14 @@
 ---
 title: "Work with chatbot variables in Microsoft Teams"
 description: "Use variables in the Power Virtual Agents app in Microsoft Teams to use custom and prebuilt entities to allow for customized conversations in your bot."
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 9/22/2020
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

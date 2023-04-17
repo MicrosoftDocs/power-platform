@@ -1,46 +1,37 @@
 ---
-title: Fundamentals - Analyze chatbot usage (preview)
-description: Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents preview.
+title: Analyze your bot's usage and performance (preview)
+description: Analyze your bot's customer satisfaction, topic usage, and performance in Power Virtual Agents preview.
 keywords: "PVA"
-ms.date: 10/10/2022
+ms.date: 02/02/2023
 ms.topic: overview
 author: iaanw
 ms.author: iawilt
-manager: shellyha
-ms.custom: analysis, ceX
+ms.custom: analysis, ceX, bap-template
 ms.collection: virtual-agent
+ms.service: power-virtual-agents
 ---
 
-# Analyze your bot's usage and performance (preview)
+# Analytics in Power Virtual Agents (preview)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-The maker's job isn't done when the bot is published and in use. You'll want to know how well your bot is performing its intended duties. The comprehensive analytics in Power Virtual Agents keep your bot's key performance indicators front and center. Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest impact on your bot's performance.
+As a maker, your job isn't done when your bot is published and in use. You'll want to know how well your bot is performing its intended duties. The comprehensive analytics in Power Virtual Agents keep your bot's key performance indicators front and center. Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest effect on your bot's performance.
 
 > [!NOTE]
 > Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. In the meantime, you can use a [custom analytics solution to create a Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get analytics in these plans.
 
 ## Analytics in Power Virtual Agents
 
-The analytics section is divided into pages to give you multiple ways to understand your bot's performance.
+In Power Virtual Agents, in the navigation menu, select **Analytics**.
 
-> [!NOTE]
-> Transcripts are available immediately. However, the analytics dashboards are updated every hour, so there will be a delay before you see all data.
+Conversation transcripts are available immediately. Analytics are updated every hour.
 
-### View analytics
+The reports in Power Virtual Agents give you multiple ways to understand your bot's performance:
 
-- In Power Virtual Agents, in the navigation menu, select **Analytics**.
-
-    :::image type="content" source="media/analytics-overview/analytics-open.png" alt-text="Screenshot of part of the Analytics dashboard, with Analytics highlighted in the navigation menu.":::
-
-### See also
-
-| Article | Description |
-| --- | --- |
-| [Analyze bot performance and usage](analytics-summary.md) | Review overall analytics for your bots. |
-| [Analyze customer satisfaction](analytics-csat.md) | Identify overall trends in customer satisfaction and where satisfaction is falling behind. |
-| [Analyze topic usage](analytics-topic-details.md) | Learn how individual topics are doing and how well they're resolving issues. |
-| [Analyze session information](analytics-sessions.md) | Review and monitor how sessions are doing, including analytics from the topics triggered during a session. |
-| [Analyze billed session information](analytics-billed-sessions.md) | Understand how sessions are being billed, based on their usage. |
+- [Summarize your bot's performance and usage](analytics-summary.md)
+- [Analyze your bot's customer satisfaction metrics](analytics-csat.md)
+- [Download your bot session transcripts](analytics-sessions.md)
+- [Analyze your bot's topic performance](analytics-topic-details.md)
+- [View billed sessions](analytics-billed-sessions.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

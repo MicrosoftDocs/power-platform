@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 02/07/2020
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Left, Mid, and Right functions in Power Apps
@@ -30,7 +29,7 @@ The **Left**, **Mid**, and **Right** functions return a portion of a string.
 - **Mid** returns the middle characters of a string.
 - **Right** returns the ending characters of a string.
 
-If you specify a single string as an argument, the function returns the portion that you requested of the string. If you specify a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains strings, the function returns a single-column table of the portions that you requested of those strings. If you specify a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
+If you specify a single string as an argument, the function returns the portion that you requested of the string. If you specify a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains strings, the function returns a single-column table with a **Value** column containing the portions that you requested of those strings. If you specify a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
 
 If the starting position is negative or beyond the end of the string, **Mid** returns _blank_. You can check the length of a string by using the **[Len](function-len.md)** function. If you request more characters than the string contains, the function returns as many characters as possible.
 
@@ -65,13 +64,16 @@ The examples in this section use a text-input control as their [data source](/po
 
 Each example in this section extracts strings from the **Address** [column](/power-apps/maker/canvas-apps/working-with-tables#columns) of this data source, named **People**, and returns a single-column table that contains the results:
 
-![Table.](media/function-left-mid-right/people-table.png)
+| Name | Address |
+| --- | --- |
+| "Jean" | "123 Main St NE" |
+| "Fred" | "789 SW 39th #3B" |
 
-| Formula                                                          | Description                                                                             | Result                                                          |
-| ---------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| **Left( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 8 )**   | Extracts the first eight characters of each string.                                     | ![Left.](media/function-left-mid-right/people-table-left.png)   |
-| **Mid( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 5, 7 )** | Extracts the middle seven characters of each string, starting with the fifth character. | ![Mid.](media/function-left-mid-right/people-table-mid.png)     |
-| **Right( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 7 )**  | Extracts the last seven characters of each string.                                      | ![Right.](media/function-left-mid-right/people-table-right.png) |
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Left( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 8 )** | Extracts the first eight characters of each string. | A single-column table with a `Value` column containing the following values: "123 Main", "789 SW 3" |
+| **Mid( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 5, 7 )** | Extracts the middle seven characters of each string, starting with the fifth character. | A single-column table with a `Value` column containing the following values: "Main St", "SW 39th" |
+| **Right( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 7 )** | Extracts the last seven characters of each string. | A single-column table with a `Value` column containing the following values: "n St NE", "9th #3B" |
 
 ### Step-by-step example
 

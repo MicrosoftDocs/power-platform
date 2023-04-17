@@ -7,9 +7,9 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: jameslew
 ms.custom: "publication, azure, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

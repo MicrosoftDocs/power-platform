@@ -1,31 +1,24 @@
 ---
-title: "Overview  | MicrosoftDocs"
+title: "Center of Excellence (CoE) overview  | MicrosoftDocs"
 description: Overview of the CoE Starter Kit
 author: manuelap-msft
-manager: devkeydet
-
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
-search.audienceType: 
-  - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
+ms.reviewer: kvivek
 ---
 # Center of Excellence (CoE) overview
 
-A Center of Excellence (CoE) drives innovation and improvement, and brings together like-minded people with similar business goals to share knowledge and success, while providing standards, consistency, and governance.
+Establishing a Microsoft Power Platform Center of Excellence (CoE) means investing in and nurturing organic growth while maintaining governance and control. A CoE is designed to drive innovation and improvement, and as a central function it can break down geographic and organizational silos. A CoE can be a powerful way for an organization to align around business goals rather than individual department metrics.
 
-The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform.
+A key principle is to clarify why you're setting up a CoE, what you aim to accomplish, and the key business outcomes you hope to achieve. Then get started, and learn and evolve along the way. For many, the CoE is the first step in fostering greater creativity and innovation across the organization by empowering business units to digitize and automate their business processes, while maintaining the necessary level of central oversight and governance.
+
+The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform. The CoE Starter Kit is a reference implementation, and the templates within it might not match every organization's requirements, so we recommend that you extend the solution to fit your organization's requirements as defined by your CoE.
 
 You can download the most recently updated assets from the [GitHub repository](https://aka.ms/CoEStarterKitRepo).
 
-The kit doesn't represent the entire CoE, because managing a CoE requires more than tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences. More information: [What is a Center of Excellence?](motivation.md)
+The kit doesn't represent the entire CoE, because managing a CoE requires more than tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences.
 
 The kit provides some automation and tooling to help teams build monitoring and automation necessary to support a CoE. The foundation of the kit is a Microsoft Dataverse data model and workflows to collect resource information across the environments in the tenant. The kit includes multiple apps and Power BI analytics to view and interact with the data you collect. The kit also provides several templates and suggested patterns and practices for implementing CoE efforts.
 
@@ -42,7 +35,7 @@ If you face issues with:
 
 This CoE Starter Kit and this guidance are targeted toward the person or department responsible for setting up a Microsoft Power Platform CoE in their organization. The goal of this guidance is to help you understand what the motivation for&mdash;and the responsibilities of&mdash;a Center of Excellence are, in addition to walking you through the prerequisites, setup instructions, and individual components of the CoE Starter Kit.
 
-## How to get started
+## How to get started using the CoE Starter Kit
 
 After you've [installed the CoE Starter Kit solution](setup.md), get familiar with the resources in your tenant.
 
@@ -54,7 +47,7 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
     ![CoE Power BI dashboard.](media/coe1.PNG "CoE Power BI dashboard")
 
 1. Identify orphaned apps, and assign them to new owners by using the embedded app in the Power BI dashboard.
-
+ 
     ![Set App Permissions canvas app.](media/SetAppPerms.PNG "Set App Permission canvas app")
 
 1. Start planning your governance strategy by identifying your requirements for what makes a compliant app or maker, what information you'll need per app or per maker, what happens to noncompliant apps and makers, how you'll support your maker community in building compliant apps that follow best practices, and what actions you'll drive based on this information.
@@ -73,6 +66,34 @@ The kit is especially useful to an Automation Center of Excellence (CoE) team, w
 
 The Automation Kit can be used standalone or alongside the CoE Starter Kit.
 
+## Admin tools available to you
+
+A Microsoft Power Platform CoE takes ownership of Microsoft Power Platform administration, nurturing, and operations support. To do that, you'll need to use the administrative functions in Microsoft Power Platform.
+
+Admin and governance tools fall into three broad categories:
+
+:::row:::
+   :::column span="":::
+      **Admin center** <br>The core, most important capabilities for admins and makers are the functions in the core product [admin center](https://admin.powerplatform.microsoft.com/). These features are designed to be the easiest and most robust way to complete tasks, and are fully supported by the engineering team:
+      - Environment and environment security management
+      - Data loss prevention (DLP) policy management
+      - Data integration and gateway management
+      - Admin analytics (to view capacity and activity on Microsoft Dataverse, Power Apps, and Power Automate)
+      - Support ticket requests
+
+   :::column-end:::
+   :::column span="":::
+       **Platform extensions** <br>Four connectors provide access to the same APIs that the products and admin centers use. These have been exposed through the connectors library to give users the ability to create custom solutions to execute administrative or governance-related tasks.
+       - [Power Platform for Admins](/connectors/powerplatformforadmins/)
+       - [Power Apps for Admins](/connectors/powerappsforadmins/)
+       - [Power Automate Management](/connectors/flowmanagement/)
+       - [Power Apps for Makers](/connectors/powerappsforappmakers/)
+   :::column-end:::
+    :::column span="":::
+      **Templates and customizations** <br>The [CoE Starter Kit](setup.md) falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. The nature of a template is to provide a good solution for a specific task, but it might not have the exact functionality that you need. You might have to adjust it to achieve what you're looking for.
+   :::column-end:::
+:::row-end:::
+
 ## How to use the CoE Starter Kit alongside Power Platform Admin Center
 
 ### Managed Environments for Power Platform
@@ -84,6 +105,8 @@ The CoE Starter Kit reflects our customer obsession though experimentation and i
 Our recommendation is to start with the out of the box capabilities in Power Platform admin center and Managed Environments. Those capabilities are robust in the product and fully supported. And if you discover you need more capabilities to govern your tenant, see if features in the CoE Starter Kit can complement what you get out of the box.
 
 Let's now look at individual features of Managed Environments to see how they compare to what's in the CoE Starter Kit:
+
+**[Maker welcome content](/power-platform/admin/welcome-content)**: In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When the welcome content is enabled, upon signing in to Power Apps, makers will be greeted with customized getting started information. A similar concept in the CoE Starter Kit is the [welcome email](core-components.md#flows-2), which sends an email to new makers only after they've created an app, flow, or bot for the first time. This means that makers may get necessary information only after they've created their first resource, whereas the Managed Environments feature shows them information when they sign in to Power Apps.
 
 **[Weekly digest](/power-platform/admin/managed-environment-weekly-digests)**: The CoE Starter Kit doesn't have a weekly digest for admins; instead admins self-serve information through the [Power BI dashboard](/power-platform/guidance/coe/power-bi). Inactive apps and flows are highlighted in the Weekly digest email. In the CoE Starter Kit, a similar goal is achieved with the [inactivity notification process](governance-components.md#inactivity-processes), which notifies makers of their inactive resources and asks for approval to delete them. One of the main goals of Managed Environments and the CoE Starter Kit is to provide more insights thus allowing admins to take action. The CoE kit provides more capabilities, which can reduce the burden on the admin dealing with inactive resources, as the CoE can direct resource management to the maker thus making the owner responsible for their own resources.
 
@@ -108,6 +131,5 @@ In addition to those three features that have an overlap with Managed Environmen
 - Get started with the Microsoft Power Platform learning path, a free online and interactive training platform [aka.ms/PowerUp](/learn/paths/create-powerapps/).
 
 - As an admin looking after the CoE, you should be familiar with the administration and governance of Microsoft Power Platform. We recommend the following white paper as a resource: [aka.ms/PowerAppsAdminWhitepaper](https://aka.ms/powerappsadminwhitepaper).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

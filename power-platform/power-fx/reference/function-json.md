@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 05/24/2021
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # JSON function in Power Apps
@@ -36,7 +35,7 @@ Canvas apps support the [data types](../data-types.md) that this table lists wit
 | **Date**            | String that contains the date in ISO 8601 **yyyy-mm-dd** format.                                                                                                                                                                                                                                                                                                                                                                                                                                               | `"2019-03-31"`                                                                 |
 | **DateTime**        | String that contains an ISO 8601 date/time. Date/time values are in UTC, as the ending "Z" indicates.                                                                                                                                                                                                                                                                                                                                                                                                          | `"2019-03-31T22:32:06.822Z"`                                                   |
 | **GUID**            | String that contains the GUID value. Letters are lowercase.                                                                                                                                                                                                                                                                                                                                                                                                                                                    | `"751b58ac-380e-4a04-a925-9f375995cc40"`                                       |
-| **Image, Media**    | If **IncludeBinaryData** is specified, media files are encoded in a string. Web references that use the http: or https: URL scheme aren't modified. References to in-memory binary data are encoded with the ["data:_mimetype_;base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme) format. In-memory data includes images that users capture by using the [**Camera**](/power-apps/maker/canvas-apps/controls/control-camera) control and any other references with the appres: and blob: URL schemes. | `"data:image/jpeg;base64,/9j/4AA..."`                                          |
+| **Image, Media**    | If **JSONFormat.IncludeBinaryData** is specified, media files are encoded in a string. Web references that use the http: or https: URL scheme aren't modified. References to in-memory binary data are encoded with the ["data:_mimetype_;base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme) format. In-memory data includes images that users capture by using the [**Camera**](/power-apps/maker/canvas-apps/controls/control-camera) control and any other references with the appres: and blob: URL schemes. | `"data:image/jpeg;base64,/9j/4AA..."`                                          |
 | **Number**          | Number that uses the appropriate decimal separator for the user's language. Scientific notation is used if needed.                                                                                                                                                                                                                                                                                                                                                                                             | `1.345`                                                                        |
 | **Option&nbsp;set** | Numeric value of the choice, not the label that's used for display. The numeric value is used because it's language independent.                                                                                                                                                                                                                                                                                                                                                                               | `1001`                                                                         |
 | **Time**            | String that contains an ISO 8601 _hh:mm:ss.fff_ format.                                                                                                                                                                                                                                                                                                                                                                                                                                                        | `"23:12:49.000"`                                                               |
@@ -49,11 +48,11 @@ Specify the optional _Format_ argument to control how readable the result is and
 
 | JSONFormat enum            | Description                                                                                                                                                                                         |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Compact**                | Default. The output is as compact as possible with no added spaces or newlines.                                                                                                                     |
-| **IndentFour**             | To improve readability, the output contains a newline for each column and nesting level and uses four spaces for each indentation level.                                                            |
-| **IncludeBinaryData**      | The result includes image, video, and audio-clip columns. This format can dramatically increase the result's size and degrade your app's performance.                                               |
-| **IgnoreBinaryData**       | The result doesn't include image, video, or audio-clip columns. If you specify neither **IncludeBinaryData** nor **IgnoreBinaryData**, the function produces an error if it encounters binary data. |
-| **IgnoreUnsupportedTypes** | Unsupported data types are allowed, but the result won't include them. By default, unsupported data types produce an error.                                                                         |
+| **JSONFormat.Compact**                | Default. The output is as compact as possible with no added spaces or newlines.                                                                                                                     |
+| **JSONFormat.IndentFour**             | To improve readability, the output contains a newline for each column and nesting level and uses four spaces for each indentation level.                                                            |
+| **JSONFormat.IncludeBinaryData**      | The result includes image, video, and audio-clip columns. This format can dramatically increase the result's size and degrade your app's performance.                                               |
+| **JSONFormat.IgnoreBinaryData**       | The result doesn't include image, video, or audio-clip columns. If you specify neither **JSONFormat.IncludeBinaryData** nor **JSONFormat.IgnoreBinaryData**, the function produces an error if it encounters binary data. |
+| **JSONFormat.IgnoreUnsupportedTypes** | Unsupported data types are allowed, but the result won't include them. By default, unsupported data types produce an error.                                                                         |
 
 Use the [**ShowColumns** and **DropColumns**](function-table-shaping.md) functions to control which data the result includes and to remove unsupported data types.
 
@@ -66,7 +65,7 @@ If a column has both a display name and a logical name, the result contains the 
 **JSON**( _DataStructure_ [, *Format* ] )
 
 - _DataStructure_ – Required. The data structure to convert to JSON. Tables, records, and primitive values are supported, arbitrarily nested.
-- _Format_ - Optional. **JSONFormat** enum value. The default value is **Compact**, which doesn't add newlines or spaces and blocks binary data and unsupported columns.
+- _Format_ - Optional. **JSONFormat** enum value. The default value is **JSONFormat.Compact**, which doesn't add newlines or spaces and blocks binary data and unsupported columns.
 
 ## Examples
 

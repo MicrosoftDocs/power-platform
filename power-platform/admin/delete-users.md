@@ -10,11 +10,6 @@ ms.topic: conceptual
 ms.date: 12/09/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Delete users from environment
 
@@ -211,6 +206,7 @@ The user still exists in the environment as disabled and continues to show in th
 - The user can't be restored.
 - The user's security role is unassigned.
 - The user is removed from all teams.
+- The user's queue, profile, business unit entity map, shared records (principal object access), principal entity business unit map, and system user principal records are deleted.
 
 #### Audit log after user is soft deleted
 
@@ -252,6 +248,10 @@ You can delete and remove users with disabled status in Power Platform. You may 
 #### Audit log after user is permanently deleted
 
 Once permanently deleted, the name of the deleted user no longer shows in the audit log records when the user was the owner, creator, or modifier of the record. For the record owner, the name is replaced with  **Record Unavailable** in these audit records. For the record creator or modifier, the name is replaced with  **No Name** in these audit records.
+
+#### Created by and Modified by name
+
+Once permanently deleted, the name of the deleted user no longer shows in the **Created by** and the **Modified by** fields for records that the deleted user created and for records that the deleted user last modified. These fields will show **No Name** and if you clicked on it, you will see a message that the 'Record is unavailable'. The deleted user's systemuserid is still in these records.
 
 ### See also
 
