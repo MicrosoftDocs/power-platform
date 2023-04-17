@@ -14,20 +14,22 @@ ms.collection: virtual-agent
 # Triggering topics
 
 There are two main ways to trigger a topic: 
-- **Based on the user query** (also known as utterance). Topic triggering based on what an end-user writes or says is also referred to as *intent recognition*. <br>
-The AI uses Natural Language Understanding (NLU) to parse what a user says and finds the most appropriate trigger phrase or node. 
-- **By redirecting** to it from another topic, with a redirect node.
+> [!div class="checklist"]
+> * **Based on the user query** (also known as *utterance*). <br> Topic triggering based on what an end-user writes or says is also referred to as *intent recognition*. <br> The AI uses its Natural Language Understanding (NLU) model to parse the end-user utterance and finds the most relevant topic based on the configured trigger phrases that match the intent. <br> If multiple topics are found, the [Multiple Topics Matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched) topic is triggered, so the that the user can select the appropriate topic from a list.
+> * **By redirecting** to it from another topic, with a redirect node.
 
 ## Triggering topics based on a user qurey
-Example: The "Store Locations" topic gets triggered based on the user utterance and the matching trigger phrases.
+> [!div class="checklist"]
+> * Example: The "*Store Locations*" topic gets triggered based on the user utterance and the matching **trigger phrases**.
 
 ![Diagram showing a Power Virtual Agents being triggered with a matching trigger phrase](./media/topics/topic-triggering-with-trigger-phrases.png)
 
 > [!TIP]
-> Check out [trigger phrases best practices](/trigger-phrases-best-practices).
+> Review [trigger phrases best practices](/trigger-phrases-best-practices).
 
 ## Redirecting to a topic
-Example 2: The "Request New Location" topic gets triggered when it is called from another topic with a redirect.
+> [!div class="checklist"]
+> * Example: the "*Request New Location*" topic gets triggered when it is explicitely called from an existing topic, with a **redirect** node.
 
 ![Diagram showing a Power Virtual Agents being triggered by a redirect from another topic](./media/topics/topic-triggering-with-redirect.png)
 
