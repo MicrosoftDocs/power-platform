@@ -218,7 +218,7 @@ The system is designed to query knowledge from the website of your choosing and 
 - The system does not perform an accuracy check, so if the selected website contains inaccurate information this could be shown to your chatbot users. We have implemented mitigations to filter out irrelevant and offensive responses, and the feature is designed not to respond when offensive language is detected. These filters and mitigations are not foolproof.  
 
 > [!NOTE]
-> You should always test and review your bots before publishing them. During the preview, your admin will need to contact Microsoft support to enable publication.
+> You should always test and review your bots before publishing them.
 
 
 ### How was the capability evaluated? What metrics are used to measure performance?   
