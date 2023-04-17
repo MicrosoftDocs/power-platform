@@ -13,7 +13,16 @@ ms.collection: virtual-agent
 
 # Topic authoring best practices in Power Virtual Agents
 
+> [!TIP]
+> Power Virtual Agents offers a lot of flexibility when it comes to topic management. Because topics can either be triggered by trigger phrases or by a redirect action, it'a good practice is to distinguish between:
+> [!div class="checklist"]
+> * Topics that will trigger based on the user utterance and the Natural Language Understanding model.
+> * Topics that will trigger when called from a redict action. These can contain conversation and logic nodes, can be called multiple topics, and can have input and output variables.
+
 ## Create bite-size topics
+
+Avoid creating massive topics as these can be challenging to maintain and update.
+
 
 Bite-size topics doesn’t mean that all topics should have trigger phrases, as topics triggered with trigger phrases can in turn redirect to other topics based on additional user inputs and answers.
 
@@ -23,6 +32,18 @@ Bite-size topics doesn’t mean that all topics should have trigger phrases, as 
 The number of topics is a Conversational Design preference and decision, as it either results in having a few bigger topic (in case of joining) or having more smaller topics (in case of splitting). 
 
 <!-- ADD EXAMPLE + VISUAL. Check Order Status > Update Order -->
+
+## Create re-usable topics
+
+Bite-size topics doesn’t mean that all topics should have trigger phrases, as topics triggered with trigger phrases can in turn redirect to other topics based on additional user inputs and answers.
+
+> [!TIP]
+> It’s often more manageable to create many bite-size topics rather than a few large topics. Taking this approach also helps making triggering more effective, by clearly mapping trigger phrases to the specific topics that address those areas.
+
+The number of topics is a Conversational Design preference and decision, as it either results in having a few bigger topic (in case of joining) or having more smaller topics (in case of splitting). 
+
+<!-- ADD EXAMPLE + VISUAL. Check Order Status > Update Order -->
+
 
 ## When multiple topics are too close, create a disambiguation topic
 
