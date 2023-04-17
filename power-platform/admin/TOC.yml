@@ -206,6 +206,8 @@
                   items:
                     - name: Behavior
                       href: settings-behavior.md
+                    - name: Collaboration
+                      href: settings-collaboration.md
                     - name: Features
                       href: settings-features.md
                     - name: Enable languages
