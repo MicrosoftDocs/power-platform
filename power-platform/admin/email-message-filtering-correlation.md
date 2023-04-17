@@ -3,7 +3,7 @@ title: Specify which emails are automatically tracked
 description: Use email message filtering and correlation to specify which emails are tracked in Dynamics 365 customer engagement apps. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/16/2023
+ms.date: 04/17/2023
 ms.subservice: admin
 ms.author: sericks
 author: sericks007
