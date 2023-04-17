@@ -36,39 +36,36 @@ You may also need some topics that are just there to take ambiguous user questio
 
 ## Topic design process
 
-| Identify the topic | List all scenarios | Design a high-level conversation tree | Validate and iterate on the design |
-|---------------|---------------|---------------|---------------|
-| <ul><li>Choose topics end-users will ask about.</li><li>Start with high-impact topics.</li><li>Think about topics from an end-user's point of view. Never forget that they might know much less about an area then you do.</li></ul>  | <ul><li>List all possible scenarios.</li><li>Categorize scenarios: informational needs, task completion, and troubleshooting.</li><li>Hierarchize topics: what are the initial questions a user asks?</li></ul>  | <ul><li>Draw the conversation tree.</li><li>Define the hierarchy of questions asked inside each topic.</li><li>Define the fewest number of questions to understand the situation and provide the right  solution.</li></ul> | <ul><li>Read the dialog out loud before publishing.</li><li>Get analytics and read session transcripts for further optimization.</li><li>Bot topic authoring is an iterative process, and it involves authors observe bot/end-user interactions with each authoring iteration.</li></ul> |
-
-
 :::row:::
    :::column span="":::
-      **Identify the topic**
-> [!div class="checklist"]
-> * Choose topics end-users will ask about.
-> * Start with high-impact topics.
-> * Think about topics from an end-user's point of view. Never forget that they might know much less about an area then you do.
+      > [!div class="checklist"]
+      > * **Identify the topic**
+        - Choose topics end-users will ask about.
+        - Start with high-impact topics.
+        - Think about topics from an end-user's point of view. Never forget that they might know much less about an area then you do.
    :::column-end:::
    :::column span="":::
-      **List all scenarios**
- - List all possible scenarios.
- - Categorize scenarios: informational needs, task completion, and troubleshooting.
- - Hierarchize topics: what are the initial questions a user asks?
+      > [!div class="checklist"]
+      > * **List all scenarios**
+        - List all possible scenarios.
+        - Categorize scenarios: informational needs, task completion, and troubleshooting.
+        - Hierarchize topics: what are the initial questions a user asks?
    :::column-end:::
    :::column span="":::
-      **Design a high-level conversation tree**
-- Draw the conversation tree.
-- Define the hierarchy of questions asked inside each topic.
-- Define the fewest number of questions to understand the situation and provide the right  solution.
+      > [!div class="checklist"]
+      > * **Design a high-level conversation tree**
+        - Draw the conversation tree.
+        - Define the hierarchy of questions asked inside each topic.
+        - Define the fewest number of questions to understand the situation and provide the right  solution.
    :::column-end:::
    :::column span="":::
-      **Validate and iterate on the design**
-- Read the dialog out loud before publishing.
-- Get analytics and read session transcripts for further optimization.
-- Bot topic authoring is an iterative process, and it involves authors observe bot/end-user interactions with each authoring iteration.
+      > [!div class="checklist"]
+      > * **Validate and iterate on the design**
+        - Read the dialog out loud before publishing.
+        - Get analytics and read session transcripts for further optimization.
+        - Bot topic authoring is an iterative process, and it involves authors observe bot/end-user interactions with each authoring iteration.
    :::column-end:::   
 :::row-end:::
-
 
 > [!NOTE]
 > - Don’t just replicate what your website or application can already do – most customers are familiar with websites apps and will accomplish these tasks themselves without needing to interact with a bot. 
