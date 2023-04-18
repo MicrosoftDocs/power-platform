@@ -66,6 +66,8 @@ Follow these steps to assign a service admin role.
 ## Service administrator permission matrix
 
 The following matrix shows what management is possible with the various service admin roles compared to the Microsoft 365 global admin role.
+> [!NOTE]
+> Global admin, Power Platform admin, and the Dynamics 365 admin roles must be directly assigned for a user. Role association via Security Groups is not supported.
 
 |  &nbsp;    |Microsoft 365<br>Global admin<br />  |Power Platform<br> admin <br />  |Dynamics 365<br> admin<br />  | Power BI<br> admin<br />  |
 |---------|---------|---------|---------|---------|
