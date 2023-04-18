@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/04/2023
+ms.date: 04/18/2023
 search.audienceType: 
   - admin
 ---
@@ -44,6 +44,8 @@ You can set the **Member's privilege inheritance** option to:
 - **Team privileges only**: A user is granted these privileges as member of a team. For team members who do not have user privileges of their own, they can only create records with the team as the owner. They have access to records owned by the Team when **User** access level for Create and Read privileges were given.
 
 - **Direct User (Basic) access level and Team privileges**: A user is granted these privileges directly when a security role is assigned to the user. A user can create and access records that were created and owned by the user when the **User** access level for Create and Read privileges were given. This is the default setting for new security roles.
+
+:::image type="content" source="media/members-privilege-inheritance.png" alt-text="Set the **Member's privilege inheritance** option.":::
 
 Each security role consists of the following privilege types:
 
