@@ -1,6 +1,6 @@
 ---
 title: "About the Power Apps Developer Plan"
-description: "Details about the the Power Apps Developer Plan"
+description: "Details about the Power Apps Developer Plan"
 author: Kumarvivek
 ms.subservice: developer
 ms.author: kvivek
@@ -177,6 +177,9 @@ Key changes include:
 
 > [!NOTE]
 > Existing Power Apps Community Plan users will also get all of these updates.
+
+> [!div class="nextstepaction"]
+> [Create a developer environment using the Power Apps Developer Plan](visual-studio-create-canvas-app.md)
 
 ### See also
 
