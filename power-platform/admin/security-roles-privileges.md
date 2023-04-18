@@ -93,6 +93,8 @@ The **Tables** tab shows the list of Dataverse tables in the environment. Each t
 
 When configuring a security role, you will need to determine the setting for each table and privacy-related privileges that are related to the application.
 
+:::image type="content" source="media/security-role-editor.png" alt-text="When configuring a security role, you will need to determine the setting for each table and privacy-related privileges that are related to the application..":::
+
 The following table provides details about each specific table privilege:
 
 | **Privilege** | **Description** |
