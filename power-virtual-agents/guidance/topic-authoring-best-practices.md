@@ -79,6 +79,7 @@ You should avoid unnecessarily duplicating logic when it the variation could be 
 - Order Pizzas
 - Order Burgers
 - Order Drinks
+
 You should create:
 - 1 topic for `Order`
 - 1 entity for `FoodType`, with Pizzas/Burgers/Drinks as values.
