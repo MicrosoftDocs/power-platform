@@ -4,7 +4,7 @@
       href: ./index.yml
     - name: Power Platform for developers
       href: get-started.md
-    - name: Developer plan and developer environment
+    - name: Developer plan and environment
       items:
         - name: About developer plan
           href: plan.md
