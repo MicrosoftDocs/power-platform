@@ -45,7 +45,7 @@ You can set the **Member's privilege inheritance** option to:
 
 - **Direct User (Basic) access level and Team privileges**: A user is granted these privileges directly when a security role is assigned to the user. A user can create and access records that were created and owned by the user when the **User** access level for Create and Read privileges were given. This is the default setting for new security roles.
 
-:::image type="content" source="media/members-privilege-inheritance.png" alt-text="Set the **Member's privilege inheritance** option.":::
+    :::image type="content" source="media/members-privilege-inheritance.png" alt-text="Set the **Member's privilege inheritance** option.":::
 
 Each security role consists of the following privilege types:
 
