@@ -1,7 +1,7 @@
 ---
 title: "About the Power Apps Developer Plan"
 description: "Details about the Power Apps Developer Plan"
-author: Kumarvivek
+author: KumarVivek
 ms.subservice: developer
 ms.author: kvivek
 ms.date: 04/18/2023
@@ -10,6 +10,7 @@ ms.topic: article
 search.audienceType: 
   - developer
 contributors:
+ - mattp123
  - JimDaly
  - phecke 
 ---
