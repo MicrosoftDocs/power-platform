@@ -7,8 +7,6 @@ ms.author: kvivek
 ms.date: 04/18/2023
 ms.reviewer: kvivek
 ms.topic: article
-search.audienceType: 
-  - developer
 contributors:
  - mattp123
  - JimDaly
@@ -183,7 +181,7 @@ Key changes include:
 
 ### Next step
 > [!div class="nextstepaction"]
-> [Create a developer environment using the Power Apps Developer Plan](visual-studio-create-canvas-app.md)
+> [Create a developer environment using the Power Apps Developer Plan](plan.md)
 
 ### See also
 
