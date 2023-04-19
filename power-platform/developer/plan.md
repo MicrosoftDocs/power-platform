@@ -181,7 +181,7 @@ Key changes include:
 
 ### Next step
 > [!div class="nextstepaction"]
-> [Create a developer environment using the Power Apps Developer Plan](plan.md)
+> [Create a developer environment using the Power Apps Developer Plan](create-developer-environment.md)
 
 ### See also
 
