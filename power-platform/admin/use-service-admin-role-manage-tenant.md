@@ -1,10 +1,10 @@
 ---
 title: "Use service admin roles to manage your tenant   | MicrosoftDocs"
 description: Use service admin roles to manage your tenant 
-author: jimholtz
+author: srpoduri
 ms.subservice: admin
-ms.author: jimholtz
-ms.reviewer: jimholtz
+ms.author: sericks
+ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
@@ -66,8 +66,9 @@ Follow these steps to assign a service admin role.
 ## Service administrator permission matrix
 
 The following matrix shows what management is possible with the various service admin roles compared to the Microsoft 365 global admin role.
+
 > [!NOTE]
-> Global admin, Power Platform admin, and the Dynamics 365 admin roles must be directly assigned for a user. Role association via Security Groups is not supported.
+> Global admin, Power Platform admin, and the Dynamics 365 admin roles must be directly assigned for a user. Role association through security groups is not supported.
 
 |  &nbsp;    |Microsoft 365<br>Global admin<br />  |Power Platform<br> admin <br />  |Dynamics 365<br> admin<br />  | Power BI<br> admin<br />  |
 |---------|---------|---------|---------|---------|
