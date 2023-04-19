@@ -72,6 +72,10 @@ Each flow exists in a specific environment. This means if a flow is imported int
 
 The per user license is a user level license. All user level licenses (per user, Microsoft 365, Dynamics 365) are tenant level licenses. The user can use the flow in all environments without having to buy a separate license.
 
+### Can Power Automate Hosted RPA add-on be used as a Power Automate Unattended RPA add-on?
+
+Yes, you can use the Power Automate Hosted RPA add-on capacity in two ways: (1) for hosted machines and hosted machine groups, and (2) to run Desktop flows (RPA) in unattended mode that can be applied to a local, remote desktop, or other virtualized environment.
+
 ### When five flows are purchased as part of the per flow pack, do I have to assign them all to the same environment?
 
 No, these licenses can be assigned to different environments.
