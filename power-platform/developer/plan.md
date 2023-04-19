@@ -180,6 +180,7 @@ Key changes include:
 > [!NOTE]
 > Existing Power Apps Community Plan users will also get all of these updates.
 
+### Next step
 > [!div class="nextstepaction"]
 > [Create a developer environment using the Power Apps Developer Plan](visual-studio-create-canvas-app.md)
 
