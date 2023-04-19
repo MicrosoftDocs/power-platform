@@ -162,7 +162,7 @@ For more information, see [Configure single sign-on for your custom website (pre
 
 1. In the **Implicit grant and hybrid flows** section, turn on both **Access tokens (used for implicit flows)** and **ID tokens (used for implicit and hybrid flows)**.
 
-    :::image type="content" source="media/configure-web-sso/redirect-url.png" alt-text="Screenshot of the Configure Web window with the redirect URI and implicit grant and hybrid flow tokens highlighted.":::
+    :::image type="content" source="media/configure-web-sso/redirect-uri.png" alt-text="Screenshot of the Configure Web window with the redirect URI and implicit grant and hybrid flow tokens highlighted.":::
 
 1. Select **Configure**.
 
