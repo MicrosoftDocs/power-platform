@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 3/13/2023
+ms.date: 4/19/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,6 +26,7 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac application](application.md)|Commands for listing and installing available Dataverse applications from AppSource|
 |[pac auth](auth.md)|Manage how you authenticate to various services|
 |[pac canvas](canvas.md)|Operating with Power Apps .msapp files|
+|[pac catalog](catalog.md)|(Preview) Commands for working with Catalog in Power Platform|
 |[pac connector](connector.md)|(Preview) Commands for working with Power Platform Connectors|
 |[pac data](data.md)|Import and export data from Dataverse.|
 |[pac help](help.md)|Show help for the Microsoft Power Platform CLI|
