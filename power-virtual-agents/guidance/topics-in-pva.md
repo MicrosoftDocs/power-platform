@@ -17,8 +17,13 @@ ms.collection: virtual-agent
 
 To author topics, makers can:
 - Create [new topics](/power-virtual-agents/preview/authoring-create-edit-topics) from scratch.
+
 - Create new topics using [Copilot (preview)](/power-virtual-agents/nlu-authoring): Copilot lets you create and iterate on topics by describing what you want and having AI build it for you.
+
+<!--- Commenting as this feature is no longer available in the unified authoring canvas.
 - [Use content from existing webpages](/power-virtual-agents/advanced-create-topics-from-web) to suggest new topics: this is useful to quickly create single-turn, question and answer pair topics, when content already exists in an FAQ format, in a publicly available website.
+--->
+
 - Customize provided [templates](/power-virtual-agents/fundamentals-templates) and [samples](/power-virtual-agents/preview/authoring-template-topics).
 
 ## Topic content

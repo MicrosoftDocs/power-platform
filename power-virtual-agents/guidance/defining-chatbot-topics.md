@@ -20,10 +20,12 @@ Obvious places to start are:
 > * Any existing **Frequently Asked Questions** (FAQ) or **Knowledge Base** (KB).
 > * **Common subjects raised by your employees or customers** in internal or customer service scenarios. If you’re building a customer service bot, talk with existing service representatives to learn what the most common questions are and the order in which they’re typically asked.
 
+<!--- Commenting as this feature is no longer available in the unified authoring canvas.
 > [!TIP] 
 > **Start quickly with the Suggest Topics feature**
 > 
 > For existing FAQs, Power Virtual Agents includes a [suggest topics](/power-virtual-agents/advanced-create-topics-from-web) feature. You supply URLs, then let Power Virtual Agents crawl these content for FAQ information. The feature will automatically import suggestions that you can promote to preformatted topics, including trigger phrases. You’re also free to edit or delete these suggestions before they’re promoted to topics. 
+--->
 
 ## Different types of topics
 
