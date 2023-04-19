@@ -1,14 +1,16 @@
 ---
 title: "Use service admin roles to manage your tenant   | MicrosoftDocs"
 description: Use service admin roles to manage your tenant 
-author: srpoduri
+author: sericks007
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
+contributors:
+- srpoduri
 ms.topic: conceptual
-ms.date: 03/29/2022
+ms.date: 04/19/2023
 search.audienceType: 
   - admin
 ---
