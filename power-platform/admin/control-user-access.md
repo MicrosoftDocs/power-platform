@@ -91,7 +91,7 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
 > [!NOTE]
 > If an environment has a Power Apps per app plan allocated, all users will be considered licensed when they attempt to access the environment, including users that do not have individual licenses assigned. Per app plan allocation on an environment satisfies the requirement for users to be licensed in order to access the environment.
   
-## Change the security groups that are associated with an environment  
+## Associate a security group with an environment 
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
 
