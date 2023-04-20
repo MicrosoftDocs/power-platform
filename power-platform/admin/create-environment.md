@@ -1,12 +1,15 @@
 ---
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
 description: About creating and manage environments in the Power Platform admin center
-author: Mattp123
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/30/2023
+ms.date: 04/20/2023
 ms.subservice: admin
-ms.author: kvivek
+ms.author: sericks
+ms.reviewer: sericks
+ms.contributors:
+- pmantha
 search.audienceType: 
   - admin 
 contributors:
@@ -114,7 +117,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Region     | Choose a region for the environment.        |
    |Type     | Choose production, trial, or sandbox.        |
    |Purpose     | A description of the environment.         |
-   |Create a database for this environment? | Select **Yes**. |
+   |Add a Dataverse data store | Select **Yes**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
    > [!div class="mx-imgBorder"] 
@@ -156,7 +159,7 @@ You need 1GB available database capacity.
    |Region     | Choose a region for the environment.        |
    |Type     | You can choose production or trial.        |
    |Purpose     | A description of the environment.         |
-   |Create a database for this environment? | Select **No**. |
+   |Add a Dataverse data store | Select **No**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
    > [!div class="mx-imgBorder"] 
