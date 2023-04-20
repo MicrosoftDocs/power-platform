@@ -6,11 +6,8 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/18/2023
-search.audienceType: 
-  - admin
 ---
 # Security roles and privileges
 
