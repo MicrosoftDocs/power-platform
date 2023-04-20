@@ -100,8 +100,8 @@ The following table describes which resources can be authored by each security r
 |Canvas app     |X         |X         |X        |X         |
 |Cloud flow     |X (non-solution aware)         |X         |X (solution aware)         |X         |
 |Connector     |X (non-solution aware)         |X         |X         |X         |
-|Connection     |X         |X         |-         |X         |
-|Data gateway     |X         |X         |X         |X         |
+|Connection     |X         |X         |X         |X         |
+|Data gateway     |X         |X         |-         |X         |
 |Dataflow     |X         |X         |-         |X         |
 |Dataverse tables     |-         |-         |X         |X         |
 |Model-driven app     |X        |-         |X         |X         |
