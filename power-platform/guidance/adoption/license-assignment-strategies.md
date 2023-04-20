@@ -126,7 +126,7 @@ Administrators also have the option to utilize their organization's request proc
 Learn more about request a license:
 
 - [Request a license (blog)](https://powerapps.microsoft.com/blog/powerapps-request-license/)
-- [Manage self-service license requests](/microsoft-365/commerce/licenses/manage-license-requests?view=o365-worldwide)
+- [Manage self-service license requests](/microsoft-365/commerce/licenses/manage-license-requests?view=o365-worldwide&preserve-view=true)
 - [Request a Power Apps premium license](/power-apps/user/request-license)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
