@@ -6,11 +6,8 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/18/2023
-search.audienceType: 
-  - admin
 ---
 # Security roles and privileges
 
@@ -19,7 +16,7 @@ To control data access, you must set up an organizational structure that both pr
 You can assign security roles using the new, modern UI, or using the the legacy UI:
 
 - [Security roles and the new, modern UI (preview)](security-roles-privileges.md#security-roles-and-the-new-modern-ui-preview)
-- [Security roels and the legacy UI](security-roles-privileges.md#security-roles-and-the-legacy-ui)
+- [Security roles and the legacy UI](security-roles-privileges.md#security-roles-and-the-legacy-ui)
 
 ## Security roles and the new, modern UI (preview)
 > [!Important]
