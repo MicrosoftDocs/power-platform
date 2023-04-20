@@ -91,23 +91,27 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
 > [!NOTE]
 > If an environment has a Power Apps per app plan allocated, all users will be considered licensed when they attempt to access the environment, including users that do not have individual licenses assigned. Per app plan allocation on an environment satisfies the requirement for users to be licensed in order to access the environment.
   
-## Associate a security group with an environment  
+## Change the security groups that are associated with an environment  
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
 
-2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.  
+1. In the navigation pane, select **Environments**. 
+
+1. Select the name of the environment.
+
+1. Select **Edit**.  
   
    > [!div class="mx-imgBorder"] 
    > ![Select Edit.](media/edit-environment.png "Select Edit")
 
-3. In the **Edit details** page, select the **Edit** icon (![Edit.](media/edit-button.png)) to select group.
+1. In the **Edit details** pane, select the **Edit** icon (![Edit.](media/edit-button.png)) in the **Security group** area.
   
    > [!div class="mx-imgBorder"] 
    > ![Edit security group.](media/edit-security-group.png "Edit security group")
 
    Only the first 200 security groups will be returned and selectable by default. To select additional security groups, use **Search** to look for a specific security group.
 
-4. Select a security group, select **Done**, and then select **Save**.
+1. Select a security group, select **Done**, and then select **Save**.
 
    > [!div class="mx-imgBorder"] 
    > ![Select a security group.](media/edit-security-group-select.png "Select a security group")
@@ -120,24 +124,6 @@ The security group is associated with the environment.
 > [!NOTE]
 > For end-users running canvas apps when a security group is associated with the environment of the app, users must be members of the security group to be able to run the canvas app, regardless of whether the app has been shared with them. Otherwise, users will see this error message: "You can't open apps in this environment. You are not a member of the environment's security group."
 
-
-## Remove a security group's association with an environment
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
-
-2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Edit environment.](media/edit-environment.png "Edit environment")
-
-3. In the **Settings** page, select **Delete** (![Delete.](media/nb-ua-r1-trashbin.png)).  
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Delete.](media/delete-security-group.png "Select Delete")
-
-4. Confirm removal, select **Remove**, and then select **Save**.
-
-The security group associated with the environment will be removed and the environment's access will no longer be restricted to only users that are members of that group.
 
 ### See also
 [Create users](create-users.md)
