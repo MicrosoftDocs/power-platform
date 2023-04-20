@@ -100,7 +100,7 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
    > [!div class="mx-imgBorder"] 
    > ![Select Edit.](media/edit-environment.png "Select Edit")
 
-3. In the **Edit details** page, select **Edit** (![Edit.](media/edit-button.png)).
+3. In the **Edit details** page, select the **Edit** icon (![Edit.](media/edit-button.png)) to select group.
   
    > [!div class="mx-imgBorder"] 
    > ![Edit security group.](media/edit-security-group.png "Edit security group")
