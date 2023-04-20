@@ -10,7 +10,7 @@ contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/17/2023
+ms.date: 04/20/2023
 search.audienceType: 
   - admin
 ---
@@ -99,8 +99,8 @@ The following table describes which resources can be authored by each security r
 |---------|---------|---------|---------|---------|
 |Canvas app     |X         |X         |X        |X         |
 |Cloud flow     |X (non-solution aware)         |X         |X (solution aware)         |X         |
-|Connector     |X         |X         |-         |X         |
-|Connection     |X         |X         |-         |X         |
+|Connector     |X (non-solution aware)         |X         |X         |X         |
+|Connection     |X         |X         |X         |X         |
 |Data gateway     |X         |X         |-         |X         |
 |Dataflow     |X         |X         |-         |X         |
 |Dataverse tables     |-         |-         |X         |X         |
