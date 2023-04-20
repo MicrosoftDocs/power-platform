@@ -104,10 +104,8 @@ To create an environment with a database, you need 1GB available database capaci
 ### Steps
 
 1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
-2. In the navigation pane, select **Environments**, and then select **New**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create a new environment.](./media/new-environment.png "Create a new environment")
+2. In the navigation pane, select **Environments**, and then select **New**.
 
 3. Enter the following, and then select **Next**.
 
@@ -120,9 +118,6 @@ To create an environment with a database, you need 1GB available database capaci
    |Add a Dataverse data store | Select **Yes**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings.](./media/new-environment-page1.png "Create new environment settings")
-
 4. Enter the following, and then select **Save**.
 
    |Setting  |Description  |
@@ -133,9 +128,6 @@ To create an environment with a database, you need 1GB available database capaci
    |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. You must have an appropriate Dynamics 365 license to select **Yes**. If you don't select **Yes** at the time of database provisioning, you won’t be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
    |Security group | Select a security group to restrict access to this environment. |
-
-   > [!div class="mx-imgBorder"] 
-   > ![Create new environment add database.](./media/new-environment-page2-enable-apps.png "Create new environment add database")
    
 ## Create an environment without a database 
 You can create an environment without a database and use your own data store.
@@ -147,9 +139,6 @@ You need 1GB available database capacity.
 1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 
 2. In the navigation pane, select **Environments**, and then select **New**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Create new environment without database.](./media/new-environment.png "Create new environment  without database")
 
 3. Enter the following, and then select **Save**.
    
@@ -180,9 +169,6 @@ To set refresh cadence:
 2. From the left-side menu, select **Environments**, and then select an environment.
 
 3. Select **Edit**
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Edit.](media/select-edit.png "Select Edit")
 
 4. Under **Refresh cadence**, choose the cadence type. 
 
