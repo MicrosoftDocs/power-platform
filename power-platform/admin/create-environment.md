@@ -151,9 +151,6 @@ You need 1GB available database capacity.
    |Add a Dataverse data store | Select **No**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create new environment.](./media/new-environment-page1-nodb.png "Create new environment ")
-
 ## Setting an environment refresh cadence
 You can indicate how often you would prefer an environment to receive updates and features to certain Microsoft Power Platform services. You have two options to choose from after creating an environment.
 
