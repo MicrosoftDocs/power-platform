@@ -5,7 +5,9 @@ services: powerapps
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
+ms.contributors:
+- pmantha
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
