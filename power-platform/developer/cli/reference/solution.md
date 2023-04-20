@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 3/13/2023
+ms.date: 4/19/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -150,9 +150,13 @@ Use one of these values:
 - `SouthAmerica`
 - `UnitedKingdom`
 - `France`
+- `SouthAfrica`
 - `Germany`
 - `UnitedArabEmirates`
 - `Switzerland`
+- `Norway`
+- `Singapore`
+- `Korea`
 - `USGovernment`
 - `USGovernmentL4`
 - `USGovernmentL5DoD`
@@ -632,7 +636,7 @@ Max asynchronous wait time in minutes. Default value is 60 minutes
 
 #### `--packagetype` `-p`
 
-When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'
+When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Both'
 
 #### `--processCanvasApps` `-pca`
 
