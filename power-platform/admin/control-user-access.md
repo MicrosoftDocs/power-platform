@@ -11,7 +11,7 @@ ms.contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/18/2022
+ms.date: 04/21/2023
 search.audienceType: 
   - admin
 ---
@@ -100,9 +100,8 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
 1. Select the name of the environment.
 
 1. Select **Edit**.  
-  
-   > [!div class="mx-imgBorder"] 
-   > ![Select Edit.](media/edit-environment.png "Select Edit")
+
+    :::image type="content" source="media/environment-properties.svg" alt-text="Select **Edit**.":::
 
 1. In the **Edit details** pane, select the **Edit** icon (![Edit.](media/edit-button.png)) in the **Security group** area.
   
