@@ -86,7 +86,7 @@ When you enable the [Boost conversations (preview)](/power-virtual-agents/nlu-bo
 ## Offload large volumes of single-turn question and answer pairs
 
 Power Virtual Agents limits a chatbot to 1,000 topics. 
-If you have very large FAQs or Knowledge Base, you can avoid creating one topic for each question and answer pair by offloading them outside of Power Virtual Agents topics, while offering a single user experience in Power Virtual Agents by [leveraging the Fallback topic](/power-virtual-agents/guidance/fallback-topic).
+If you have very large FAQs or Knowledge Base, you can avoid creating one topic for each question and answer pair by offloading them outside of Power Virtual Agents topics, while offering a single user experience in Power Virtual Agents by [leveraging the Fallback topic](./fallback-topic.md).
 
 > [!TIP]
 > [Question answering in Azure Cognitive Service for Language](/azure/cognitive-services/language-service/question-answering/overview) provides cloud-based Natural Language Processing (NLP) that allows you to create a natural conversational layer over your data. It is used to find the most appropriate answer for any input from your custom knowledge base of information.

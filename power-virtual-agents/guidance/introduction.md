@@ -1,5 +1,5 @@
 ---
-title: "Introduction: Planning a Power Virtual Agents project"
+title: "Planning a Power Virtual Agents project"
 description: "Power Virtual Agents is compliant with a number of standards and is covered under HIPAA."
 author: iaanw
 
@@ -11,7 +11,7 @@ ms.author: iawilt
 ms.collection: virtual-agent
 ---
 
-# Introduction: Planning a Power Virtual Agents project
+# Planning a Power Virtual Agents project
 
 :::image type="content" source="media/introduction/overview-no-code.png" alt-text="Screenshot of the Power Virtual Agents interface":::
 

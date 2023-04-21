@@ -11,6 +11,6 @@ ms.author: hejammes
 ms.collection: virtual-agent
 ---
 
-# Introduction: Planning a Power Virtual Agents project
+# Bot best practices
 
 <!-- TODO -->

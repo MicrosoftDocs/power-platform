@@ -79,7 +79,7 @@ Note: The impact score is not represented as a number but as a bar chart in PVA.
 Custom analytics:
   
 You can also build on your own custom analytics on top of the conversation transcripts data. Microsoft provides a template report (https://aka.ms/PVAAnalytics) that can be reused or extended to identify the top escalation driver topics and add custom details specific to your business and context, e.g. If you need number of escalated sessions per topic etc. More info how to do this can be done will be added through the deflection analytics dash-boards that will be available in future updates. 
-<Insert Image>
+<!-- Insert Image -->
  
  
 ### STEP 2: Select the top Escalation topics 
@@ -146,7 +146,7 @@ Other approach topic enrichment exercise
     o	Word clouds of user queries similar to existing topics
     o	Word clouds of user queries for new topics  
 
-<Add image from Dash board>
+<!-- Add image from Dash board -->
 
 •	Label and organize the top list of user queries you want to address for topic enrichment in an Excel sheet based on the word clouds.
 •	Rephrase the “user queries” to create topic trigger phrases.

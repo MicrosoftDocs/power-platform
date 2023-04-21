@@ -43,7 +43,7 @@ These can be grouped in *expected* vs *unexpected* escalations.
 
 ### STEP 1: Monitor and review topics performance
 
-Identifying and optimizing escalation rate drivers can be done through the [built-in analytics](/power-virtual-agents/preview/analytics-overview) or through [custom analytics](/power-virtual-agents/guidance/custom-analytics-strategy).
+Identifying and optimizing escalation rate drivers can be done through the [built-in analytics](/power-virtual-agents/preview/analytics-overview) or through [custom analytics](./custom-analytics-strategy.md).
 
 #### Built-in analytics:
  

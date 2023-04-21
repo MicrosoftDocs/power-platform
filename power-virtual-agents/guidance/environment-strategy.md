@@ -30,13 +30,13 @@ Engaged sessions can have one of 3 possible outcomes – it is these outcomes th
   
 Importantly, resolved sessions + abandoned sessions + escalated sessions = 100% of engaged sessions. More detail on PVA metrics + data dictionary. 
 
-# Environment Strategy :
+## Environment Strategy :
 Microsoft provides a comprehensive Environments strategy in our product documentation. However, there are some considerations related to Power Virtual Agents that should be accounted for. 
 ## Region/Data privacy 
 Environments are bound to a specific region. Does the chatbot have any regulatory requirements related to privacy and residency? For example, a foreign government customer may have a requirement to provision their chatbot under their country’s tenant instance instead of USA tenant, ensure the data lives in their country specific data center. Power Virtual Agents lets you choose where you want your data to live. Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as “regions”). You can create a bot in your tenant’s location by default, or you can choose the datacenter you want to use when setting up your environment. Data will be stored in the United States if a bot author’s tenant location isn’t listed. 
 
   
-#  Security Roles/Privileges 
+##  Security Roles/Privileges 
 Environments include predefined security roles that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app. 
 
 Users in the environment must have the Environment Maker security role before a PVA bot can be shared with them. For users who make apps that connect to the database and need to create or update entities and security roles, you need to assign the System Customizer security role in addition to the Environment Maker security role. This is necessary because the Environment Maker security role doesn’t have privileges on the environment’s data. 
@@ -44,7 +44,7 @@ Users in the environment must have the Environment Maker security role before a 
 System Administrators of the environment need to assign the Environment Maker security role to the user before you share the bot. If you’re a System Administrator, you can assign the Environment Maker role when you share the bot. You can only share a bot with individual users, which means you can’t share it with a security group or distribution group in your organization. You also can’t share with users or groups outside of your organization. 
   
    
-# Security Groups 
+## Security Groups 
 At the bot level, the “access” option controls who can access your bot. You can select one of two security groups: 
 
 - All bot managers. This lets only bot managers to chat with the bot. You can share your bot so other bot managerscan access it.
@@ -53,9 +53,9 @@ At the bot level, the “access” option controls who can access your bot. You 
 - Dedicated vs Shared The environments for the PVA can be either dedicated or shared with other Dynamics 365/Power Platform Apps. In the table below are some pros and cons for shared vs dedicated environments. 
 
   
-# Omnichannel for Dynamics 365 Customer Service
+## Omnichannel for Dynamics 365 Customer Service
 It is usually recommended to have a shared environment for PVA and Omnichannel for Dynamics 365 Customer Service. This will provide the extensibility for Dynamics 365 entities through the connectors in a low code fashion and enable re-using existing Dataverse customizations for the data export pipeline, clean up etc. 
-# Environment Types 
+## Environment Types 
  Customers generally have somewhere between 3 and 5 environments for their PVA from Development to Production, using the Production and Sandbox environment types. 
 
 More on Power Platform environment types. 
