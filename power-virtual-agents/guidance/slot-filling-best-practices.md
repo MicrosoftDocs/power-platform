@@ -1,7 +1,7 @@
 ---
 title: "Slot filling best practices"
 description: "Best practices for slot filling and entity extraction in Power Virtual Agents"
-author: hejammes
+author: HenryJammes
 
 ms.date: 04/13/2023
 ms.subservice: guidance

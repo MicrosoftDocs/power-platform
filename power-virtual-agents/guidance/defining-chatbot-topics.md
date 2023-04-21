@@ -1,7 +1,7 @@
 ---
 title: "Defining chatbot topics"
 description: "Defining new chatbot topics in Power Virtual Agents"
-author: hejammes
+author: HenryJammes
 
 ms.date: 02/22/2023
 ms.subservice: guidance

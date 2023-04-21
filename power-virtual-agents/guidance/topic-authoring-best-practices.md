@@ -1,7 +1,7 @@
 ---
 title: "Topic authoring best practices"
 description: "Topic authoring best practices in Power Virtual Agents"
-author: hejammes
+author: HenryJammes
 
 ms.date: 02/23/2023
 ms.subservice: guidance

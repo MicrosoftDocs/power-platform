@@ -1,7 +1,7 @@
 ---
 title: "Triggering topics"
 description: "Overview of the different ways to trigger topics in Power Virtual Agents"
-author: hejammes
+author: HenryJammes
 
 ms.date: 02/22/2023
 ms.subservice: guidance

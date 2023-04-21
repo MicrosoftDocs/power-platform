@@ -1,7 +1,7 @@
 ---
 title: "Leveraging the Fallback topic"
 description: "Leveraging the Fallback topic in Power Virtual Agents"
-author: hejammes
+author: HenryJammes
 
 ms.date: 02/22/2023
 ms.subservice: guidance
