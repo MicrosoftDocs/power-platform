@@ -1,6 +1,6 @@
 ---
 title: "Planning a Power Virtual Agents project"
-description: "Power Virtual Agents is compliant with a number of standards and is covered under HIPAA."
+description: "Planning a Power Virtual Agents project."
 author: iaanw
 
 ms.date: 10/19/2022

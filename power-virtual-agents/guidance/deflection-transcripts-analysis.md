@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 > [!TIP]
 > Analyzing the agent transcripts can provide insights on what new topics or self-service actions can be added to the chatbot to reduce escalation and improve deflection. 
 
-The agent transcript review process is similar to the [chatbot transcript review](/power-virtual-agents/guidance/deflection-topic-escalation-analysis#topic-escalation-analysis-1) we discussed earlier in this playbook:
+The agent transcript review process is similar to the [chatbot transcript review](./deflection-topic-escalation-analysis.md#topic-escalation-analysis-1) we discussed earlier in this playbook:
 1.	Identify the top escalation driver topics.
 2.	Download the agent conversation transcripts from your engagement hub (e.g. [download transcripts from Dynamics 365 Omnichannel for Customer Service](/dynamics365/customer-service/download-transcripts-bulk)).
 3.	Select the most recent sample set of human agent conversation transcripts for that topic (e.g., 10 sessions). The size of the sample set depends on how much accuracy you are looking for. For a quick analysis you can start with 10 sessions.

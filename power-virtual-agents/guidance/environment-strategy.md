@@ -21,7 +21,7 @@ This is a user interacting with the chatbot
 ## Engaged 
 Session A user interacts with the chatbot, and activates a user topic (content created by the chatbot author – not one of the pre-created system topics) 
 
-<Insert Image>
+<!-- Insert Image -->
   
 Engaged sessions can have one of 3 possible outcomes – it is these outcomes that customers tend to measure once live: 
 - Resolved session – an engaged session where the user indicates that their question was answered
