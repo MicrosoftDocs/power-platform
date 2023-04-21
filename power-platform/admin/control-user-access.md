@@ -111,13 +111,8 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
 
 1. Select a security group, select **Done**, and then select **Save**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Select a security group.](media/edit-security-group-select.png "Select a security group")
+    The security group is associated with the environment.
 
-The security group is associated with the environment.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Security group added.](media/security-group-added.png "Security group added")
 
 > [!NOTE]
 > For end-users running canvas apps when a security group is associated with the environment of the app, users must be members of the security group to be able to run the canvas app, regardless of whether the app has been shared with them. Otherwise, users will see this error message: "You can't open apps in this environment. You are not a member of the environment's security group."
