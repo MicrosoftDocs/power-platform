@@ -107,7 +107,7 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
   
     :::image type="content" source="media/edit-security-groups.png" alt-text="Select the Edit icon to select a security group.":::
 
-   Only the first 200 security groups will be returned and selectable by default. To select additional security groups, use **Search** to look for a specific security group.
+   Only the first 200 security groups will be returned. Use **Search** to look for a specific security group.
 
 1. Select a security group, select **Done**, and then select **Save**.
 
