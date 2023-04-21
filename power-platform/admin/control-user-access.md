@@ -105,7 +105,7 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
 
 1. In the **Edit details** pane, select the **Edit** icon in the **Security group** area.
   
-    :::image type="content" source="media/edit-security-groups.png" alt-text="Select Edit to select a security group.":::
+    :::image type="content" source="media/edit-security-groups.png" alt-text="Select the Edit icon to select a security group.":::
 
    Only the first 200 security groups will be returned and selectable by default. To select additional security groups, use **Search** to look for a specific security group.
 
