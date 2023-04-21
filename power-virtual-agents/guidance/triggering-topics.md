@@ -25,7 +25,7 @@ There are two main ways to trigger a topic:
 ![Diagram showing a Power Virtual Agents being triggered with a matching trigger phrase](./media/topics/topic-triggering-with-trigger-phrases.png)
 
 > [!TIP]
-> Review [trigger phrases best practices](/trigger-phrases-best-practices).
+> Review [trigger phrases best practices](./trigger-phrases-best-practices.md).
 
 ## Redirecting to a topic
 > [!div class="checklist"]

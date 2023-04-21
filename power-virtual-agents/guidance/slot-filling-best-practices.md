@@ -89,7 +89,7 @@ For this, you would need to pass the user utterance to the external service usin
 
 Your topic logic can then validate the accuracy of the result (or ask the user to validate it) before moving forward in the conversation.
 
-Dataverse is a good candidate to store such data, as it has a built-in [Dataverse Search](power-platform/admin/configure-relevance-search-organization) capability that supports fuzzy matching to return the best results along with a confidence score. Even if searching with a full sentence, it is able to retrieve potential matches.
+Dataverse is a good candidate to store such data, as it has a built-in [Dataverse Search](/power-platform/admin/configure-relevance-search-organization) capability that supports fuzzy matching to return the best results along with a confidence score. Even if searching with a full sentence, it is able to retrieve potential matches.
 
 > [!TIP]
 > See an example implementation here: [return a list of results](/power-virtual-agents/advanced-flow-list-of-results)
