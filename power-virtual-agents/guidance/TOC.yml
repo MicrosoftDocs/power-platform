@@ -36,7 +36,7 @@
         href: deflection-transcripts-analysis.md
     - name: Custom analytics strategy
       href: custom-analytics-strategy.md
-- name: How to's
+- name: How-to guides
   items:
   - name: Embed a chatbot in Power Pages
     href: /power-pages/guidance/integrate-pva.md
