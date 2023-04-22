@@ -16,7 +16,7 @@ ms.custom: handoff, ceX
 
 # Configure hand-off to Dynamics 365 Customer Service
 
-When your customers need to speak with a human agent, your bot can seamlessly hand off the conversation. With the omnichannel capabilities of the [Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), you can connect both voice and text conversations.
+When your customers need to speak with a human agent, your bot can seamlessly hand off the conversation. With the omnichannel capabilities of the [Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), you can connect both voice (Classic only, coming soon for Preview) and text (messaging) conversations.
 
 When your bot hands off a conversation, it shares the full history of the conversation and all variables collected in the interaction. Your Omnichannel for Customer Service routes incoming escalations to the right queue, and a live agent can seamlessly resume the conversation. For more information about how to use hand-off in bot conversations, see [Hand off to a live agent](./advanced-hand-off.md).
 
@@ -29,16 +29,10 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - Sign in with an account that has the System Administrator role.
 - Have a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
-- Environments:
-  - Your bot environment and Omnichannel for Customer Service environment must be in the same [geographical region](./data-location.md#data-locations).
-  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Canada, Europe, Asia, United Kingdom, or Australia geographies](./data-location.md#data-locations).
-- [Register an application with Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application).
+- Your bot and Omnichannel for Customer Service must be in the same environment.
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
 
 ## Connect your bot to Omnichannel for Customer Service
-
-> [!NOTE]
-> If you connected your bot to Omnichannel for Customer Service engagement before November 2021, the settings on the **Omnichannel** tile will look as if they haven't been configured. This is a known issue. It doesn't affect the bot or its omnichannel capabilities, which will continue to run normally. Select **Enable** to refresh the settings and show the actual connection details.
 
 1. In Power Virtual Agents, edit your bot. In the navigation menu, select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile.
 
@@ -125,116 +119,6 @@ If you select **Refresh**, the connection between your bot and the Omnichannel f
 
 It's a good idea to refresh the connection after you add your bot to an Omnichannel for Customer Service workstream to make sure that the connection was successful.
 
-## Voice-based capabilities
-
-The [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension) adds several actions and variables to Power Virtual Agents.
-
-:::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-oc-voice-vars.png" alt-text="List of voice-related actions that can be added to a node in Power Virtual Agents.":::
-
-Select **Enable voice** to turn voice capabilities on or off for the entire bot, not for individual bot sessions or connections. When voice is enabled, any connection with the bot can use voice, text, or both voice and text.
-
-:::image type="content" source="./media/configuration-hand-off-omnichannel/voice-toggle.png" alt-text="Screenshot of the Power Virtual Agents Omnichannel section with the Enable voice toggle highlighted.":::
-
-> [!IMPORTANT]
-> If a bot is connected to an Omnichannel voice workstream or queue and taking calls, and the voice is disabled, the calls will start to fail. Ensure that the bot is disconnected from Omnichannel workstreams or queues before disabling voice in the Power Virtual Agents configuration.
-
-
-### Set survey consent
-
-Use this action to ask callers if they're willing to take a survey at the end of their call.
-
-1. [Add the action](./authoring-create-edit-topics.md#insert-nodes).
-
-1. Select **Add input for destination topic**, and then select **surveyConsent (boolean)**.
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-survey-consent-add.png" alt-text="Add a Set survey consent action to a node in Power Virtual Agents.":::
-
-1. Select **Yes** or **No**, or enter a custom response.
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-survey-consent.png" alt-text="Set the response choice for the Set survey consent action.":::
-
-### Set customer locale and handoff to Omnichannel for Customer Service
-
-Use this action to ask callers for their preferred language.
-
-1. [Add the action](./authoring-create-edit-topics.md#insert-nodes).
-
-1. Select **Add input for destination topic**, and then select **customerLocale (string)**.
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-set-locale-add.png" alt-text="Add a Set customer locale and handoff to Omnichannel for Customer Service action to a node in Power Virtual Agents.":::
-
-1. Select a variable that defines the locale code, or enter a locale code.
-
-    Refer to the list of [languages supported in Omnichannel for Customer Service](/dynamics365/customer-service/voice-channel-multi-language-contact-center#supported-languages-and-locale-codes) for valid locale codes. Only a subset of these languages is supported in Power Virtual Agents. For more information, see [Supported languages](./authoring-language-support.md#list-of-supported-languages).
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-set-locale.png" alt-text="Set the response for the Set customer locale and handoff to Omnichannel for Customer Service action.":::
-
-### Send uninterruptible voice message
-
-Use this action to send a voice message that the caller can't interrupt.
-
-1. [Add the action](./authoring-create-edit-topics.md#insert-nodes).
-
-1. Select **Add input for destination topic**, and then select **UninterruptibleMessage (string)**.
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-interrupt-add.png" alt-text="Add a Send uninterruptible voice message action to a node in Power Virtual Agents.":::
-
-1. Select a variable that defines the message content, or enter a message.
-
-    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-interrupt.png" alt-text="Set the input for the Send uninterruptible voice message action.":::
-
-### Transfer the call to a different phone number
-
-Use this action to transfer the call to a different phone number.
-
-1. [Add the action](./authoring-create-edit-topics.md#insert-nodes).
-
-1. Select **Add input for destination topic**, and then select **TargetPhoneNumber (string)**.
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-transfer-add.png" alt-text="Add a Transfer the call to a different phone number action to a node in Power Virtual Agents.":::
-  
-1. Select a variable that defines the phone number to transfer the call to, or enter a phone number.
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-transfer.png" alt-text="Set the phone number for the Transfer the call to a different phone number action.":::
-
-    > [!WARNING]
-    > Don't add a plus symbol, "+", before the phone number.
-    >
-    > The phone number you enter must have the "Make calls" privilege. Without it, transfers to the number will fail.
-
-### Hang up
-
-Use this action to end the call.
-
-1. [Add the action](./authoring-create-edit-topics.md#insert-nodes).
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-hangup.png" alt-text="Add a Hang up action to a node in Power Virtual Agents.":::
-
-### bot.CustomerPhoneNumber
-
-This variable contains the customer's phone number. It's also known as CallerID.
-
-You can use the "Is Empty" condition with `bot.CustomerPhoneNumber` to find out the customer's communication channel. If the conversation is from a call, "Is Empty" always returns _False_. If it's from messaging, "Is Empty" always returns _True_.
-
-### bot.OrganizationPhoneNumber
-
-This variable contains the phone number the customer dialed.
-
-### Dynamics 365 variables
-
-Dynamics 365 Customer Service provides [more context variables](/dynamics365/customer-service/context-variables-for-bot#context-variables-for-power-virtual-agents-bots) for Power Virtual Agents bots.
-
-### Authoring considerations
-
-Authentication isn't supported for voice-based hand-off to Omnichannel for Customer Service instances. If you've set up authentication for your bot, the [authentication variables](./advanced-end-user-authentication.md) don't include authentication information when they're sent to your Omnichannel for Customer Service instance.
-
-> [!WARNING]
-> For voice-based hand-off capabilities to work, both your bot and Omnichannel for Customer Service environments must be hosted in a datacenter in the [United States, Canada, Europe, United Kingdom, Asia, or Australia geographies](data-location.md#data-locations). Otherwise, voice capabilities don't work, and you won't receive any error messages or warnings.
-
-If your bot incorporates adaptive cards, make sure you use [Bot Framework Composer](./advanced-bot-framework-composer.md) so that the voice bot correctly reads their "speak" property.
-
-If your topics include Markdown content, the voice bot will read the asterisk (*). Adjust your Markdown content accordingly, and always test your bot using voice to make sure you get the desired result.
-
 ## Known limitations
 
 See [limitations when using Power Virtual Agents with the Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#limitations).
@@ -243,23 +127,7 @@ See [limitations when using Power Virtual Agents with the Chat Add-in for Dynami
 
 The following extensions aren't required to hand-off to Omnichannel for Customer Service, but they provide bot authors with a better experience by providing [extra variables and actions](#voice-based-capabilities).
 
-Typically, the extensions are automatically installed in your Omnichannel for Customer Service environment. However, if the environment that you connected Omnichannel for Customer Service to isn't the same environment your bot is in, you'll need to manually install the extensions.
-
-### For both text and voice hand-off
-
-Install the following extensions in this order:
-
-1. [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension)
-1. [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension)
-1. [Omnichannel Voice Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelvoicepvaextension)
-
-### For only text (messaging) hand-off
-
 Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
-
-If you still see the following warning after installing the Omnichannel Power Virtual Agent extension, and you don't need voice capabilities, you can safely ignore it.
-
-:::image type="content" source="media/configuration-hand-off-omnichannel/handoff-no-extension.png" alt-text="Screenshot of the yellow warning that can be ignored.":::
 
 # [Classic](#tab/classic)
 
