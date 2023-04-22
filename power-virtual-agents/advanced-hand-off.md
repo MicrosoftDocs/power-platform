@@ -39,6 +39,7 @@ For more information about how to configure hand-off with [Omnichannel for Custo
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - A bot built with [Power Virtual Agents](https://aka.ms/TryPVA).
 - An engagement hub that is being used by live agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
+- If your bot does not have escalation to agent configured in the "Escalate" System topic, follow the instructions below to configure it 
 
 ## Triggering hand-off to a live agent
 
@@ -52,7 +53,7 @@ In some instances, the bot may be unable to determine the intent of a customer's
 
 In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid-way into a conversation.
 
-When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-create-edit-topics.md). This type of trigger is known as _implicit triggering_.
+When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-system-topics?tabs=preview#escalate). This type of trigger is known as _implicit triggering_.
 
 ### Explicit triggers
 
