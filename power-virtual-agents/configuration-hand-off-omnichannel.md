@@ -36,43 +36,16 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 
 1. In Power Virtual Agents, edit your bot. In the navigation menu, select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile.
 
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-settings.png" alt-text="The bot management Agent transfers page.":::
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-settings.png" alt-text="The bot management Agent transfers page.":::
 
 1. Select **Enable**.
 
-    - If the [required extensions](#recommended-extensions) aren't installed, you'll see a message that your bot doesn't have access to the variables or actions it needs.
-
-      :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-no-extension.png" alt-text="Message at the top of the Omnichannel configuration pane that says your bot doesn't have access.":::
-
     - If you're using Application Lifecycle Management (ALM), you may see a message that we can't determine if Omnichannel for Customer Service integration is enabled for the environment. For more information, see [Bots with ALM](#bots-with-alm).
-
-1. Under **See the environment this bot is connected to**, select the environment where you have Omnichannel for Customer Service integration turned on. If your bot and Omnichannel for Customer Service are in different environments, Analytics for Omnichannel for Customer Service won't work for your bot.
-
-    If you haven't set up Omnichannel for Customer Service in that environment, you'll see a message inviting you to begin a trial.
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/transfer-no-oc.png" alt-text="Message that says you haven't set up Omnichannel for Customer Service integration in this environment.":::
-
-1. Select **See how to register a new Application ID** and follow the steps to find or create the app registration for Power Virtual Agents.
-
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-bot-appid.png" alt-text="The Omnichannel configuration pane, with the Application ID section highlighted.":::
-
-1. On the Azure portal go to **App registrations**, then select **Overview**. Copy the **Application (client) ID**.
-
-1. Return to the **Omnichannel** pane in Power Virtual Agents and paste the Application ID in the **Application ID** box.
-
-    > [!IMPORTANT]
-    > Omnichannel for Customer Service models bots as "application users." Therefore, the Application ID that you use must be unique to your Microsoft Dataverse organization or environment.
-
-1. Select **Add your bot**.
-
-   Power Virtual Agents uses a [Teams channel](./publication-fundamentals-publish-channels.md) to communicate with Omnichannel for Customer Service. If one isn't turned on, a Teams channel will be enabled when you select **Add your bot**.
 
 1. Select the **View details in Omnichannel** link to [continue configuring the bot connection in Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
 
 > [!IMPORTANT]
 > To test the bot on your custom website, you must use the embed code that's specified in the chat widget you set up in Omnichannel for Customer Service. If you use the embed code from Power Virtual Agents, hand-off won't work. For more information, see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal).
-
-To add [voice capabilities](#voice-based-capabilities) after you've connected your bot to Omnichannel for Customer Service, you must disconnect the bot from your Omnichannel for Customer Service and reconnect it.
 
 <a id="managed-bot-oc"></a>
 <a id="bots-with-alm"></a>
@@ -112,12 +85,6 @@ If you select **Disconnect bot**, the application user that represents the bot i
 To add your bot back, you'll need to [connect it again](#connect-your-bot-to-omnichannel-for-customer-service), starting at Step 3.
 
 If you select **Disable**, the connection between your Omnichannel for Customer Service instance and Power Virtual Agents is disabled. Your bot will stop receiving any traffic from your Omnichannel for Customer Service instance.
-
-### Refresh the connection
-
-If you select **Refresh**, the connection between your bot and the Omnichannel for Customer Service instance is tested and verified.
-
-It's a good idea to refresh the connection after you add your bot to an Omnichannel for Customer Service workstream to make sure that the connection was successful.
 
 ## Known limitations
 
