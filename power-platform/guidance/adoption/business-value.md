@@ -185,7 +185,7 @@ Learn more:
 
 Measuring the business value of Power Platform solutions is important because it provides insights into how these solutions are contributing to the overall success of the organization. By measuring the business value, organizations determine how their investment in Power Platform is yielding the expected results, contributing to the success of the organization's digital transformation strategy, and identify opportunities to improve processes, automate tasks, and optimize resources.
 
-This guidance is designed to help you better understand the various measures that can be used to define the value of a Power Platform solution. By asking questions to process owners, focus groups, user groups, and app makers you to understand the user needs, identify common use cases, evaluate existing solutions, and demonstrate the return on inventment to stakeholders.
+This guidance is designed to help you better understand the various measures that can be used to define the value of a Power Platform solution. By asking questions to process owners, focus groups, user groups, and app makers you to understand the user needs, identify common use cases, evaluate existing solutions, and demonstrate the return on investment to stakeholders.
 
 ## Useful resources
 
