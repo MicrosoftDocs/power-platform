@@ -2,7 +2,6 @@
 title: "Set up Innovation Backlog components | MicrosoftDocs"
 description: "The Innovation Backlog components contain a canvas app that can be used for managing an idea backlog, estimating ROI and voting on ideas."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up Innovation Backlog components

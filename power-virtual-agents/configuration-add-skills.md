@@ -7,7 +7,6 @@ ms.date: 03/07/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "azure, extend, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

@@ -12,11 +12,6 @@ ms.author: lanced
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 contributors: 
 - alaug
 ms.contributors:

@@ -10,11 +10,6 @@ ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # How is an email record owner determined

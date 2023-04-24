@@ -206,6 +206,8 @@
                   items:
                     - name: Behavior
                       href: settings-behavior.md
+                    - name: Collaboration
+                      href: settings-collaboration.md
                     - name: Features
                       href: settings-features.md
                     - name: Enable languages
@@ -266,6 +268,8 @@
                       href: manage-dataverse-auditing.md#use-the-audit-summary-view
                     - name: Entity and field audit settings
                       href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
+                    - name: Audit security roles
+                      href: audit-security-roles.md
                     - name: System jobs
                       href: manage-dataverse-auditing.md#monitoring-system-jobs
                 - name: Templates
@@ -469,10 +473,10 @@
                       href: data-loss-prevention-sdk.md
                     - name: Basic connector classification
                       href: dlp-connector-classification.md
-                    - name: Advanced granular controls
-                      href: dlp-granular-controls.md
-                    - name: Endpoint input examples
-                      href: dlp-endpoint-input-formats-examples.md
+                    - name: Connector action control
+                      href: connector-action-control.md
+                    - name: Connector endpoint filtering (preview)
+                      href: connector-endpoint-filtering.md
                     - name: DLP for custom connectors
                       href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
@@ -543,6 +547,8 @@
                   href: use-service-admin-role-manage-tenant.md
                 - name: Miscellaneous privileges
                   href: miscellaneous-privileges.md
+                - name: Privacy-related privileges
+                  href: privacy-related-privileges.md
                 - name: Create or edit a security role
                   href: create-edit-security-role.md
                 - name: Copy a security role

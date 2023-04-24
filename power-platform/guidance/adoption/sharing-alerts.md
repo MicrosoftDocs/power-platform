@@ -2,7 +2,6 @@
 title: "Set up sharing alerts and mitigation - Microsoft Power Platform | MicrosoftDocs"
 description: "Alerting can be used to inform admins and stakeholders about specific events, or provide a summary of activity."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Set up sharing alerts and mitigation
 

@@ -5,7 +5,6 @@ keywords:
 author: Mattp123
 ms.subservice: alm
 ms.author: matp
-manager: kvivek
 ms.custom: ""
 ms.date: 05/03/2021
 ms.reviewer: ""
@@ -13,9 +12,6 @@ ms.reviewer: ""
 ms.topic: "article"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Scenario 3: Moving from unmanaged to managed solutions in your organization
 

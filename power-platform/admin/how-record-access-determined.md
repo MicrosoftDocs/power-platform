@@ -11,11 +11,6 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # How access to a record is determined

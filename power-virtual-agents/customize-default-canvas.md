@@ -7,7 +7,6 @@ ms.date: 04/19/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "customization, ce06102020"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

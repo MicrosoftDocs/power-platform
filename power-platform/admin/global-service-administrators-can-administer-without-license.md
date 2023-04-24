@@ -10,11 +10,6 @@ ms.topic: conceptual
 ms.date: 10/13/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Global admins and Power Platform admins can administer without a license
 

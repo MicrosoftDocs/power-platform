@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 3/13/2023
+ms.date: 4/19/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -61,6 +61,10 @@ The filename and path to and Icon .png file.
 #### `--settings-file`
 
 The filename and path Connector Settings file.
+
+#### `--solution-unique-name` `-sol`
+
+The unique name of the solution to add the connector to
 
 [!INCLUDE [connector-create-remarks](includes/connector-create-remarks.md)]
 
@@ -180,6 +184,10 @@ The filename and path to and Icon .png file.
 #### `--settings-file`
 
 The filename and path Connector Settings file.
+
+#### `--solution-unique-name` `-sol`
+
+The unique name of the solution to add the connector to
 
 [!INCLUDE [connector-update-remarks](includes/connector-update-remarks.md)]
 

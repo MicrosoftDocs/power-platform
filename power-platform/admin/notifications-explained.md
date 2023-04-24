@@ -8,15 +8,9 @@ ms.date: 02/01/2021
 ms.subservice: admin
 ms.author: astockli
 author: astockli
-manager: timrob
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Notifications for Business Application Group services
 

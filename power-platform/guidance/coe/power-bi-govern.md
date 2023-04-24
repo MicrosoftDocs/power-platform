@@ -2,7 +2,6 @@
 title: "Govern with the CoE Power BI dashboard | MicrosoftDocs"
 description: "Perform risk assessments and identifying critical, orphaned, or unused resources with the CoE Power BI dashboard"
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Govern with the CoE Power BI dashboard
 

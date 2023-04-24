@@ -10,8 +10,6 @@ ms.date: 2/22/2023
 ms.author: jorisde
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 ---
 # Copy function in Power Apps
 

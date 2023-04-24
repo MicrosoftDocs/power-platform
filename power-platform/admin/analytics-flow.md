@@ -2,18 +2,12 @@
 title: "View analytics for Power Automate cloud flows"
 description: "Admins can view Microsoft Power Automate analytics in the Power Platform admin center, including reports on run data of flows, flows created, usage, and errors."
 author: "MSFTMan"
-manager: kvivek
 ms.topic: conceptual
 ms.date: 02/23/2023
 ms.subservice: admin
 ms.author: deonhe
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # View analytics for cloud flows
 

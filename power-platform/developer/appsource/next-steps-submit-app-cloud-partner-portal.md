@@ -9,9 +9,6 @@ ms.author: pemikkel
 ms.subservice: developer
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Next steps: Submit your app on Partner Center
 

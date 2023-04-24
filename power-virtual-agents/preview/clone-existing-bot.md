@@ -7,7 +7,6 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: gapretty
-manager: shellyha
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: bap-template

@@ -9,8 +9,6 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-search.app:
-  - Powerplatform
 ---
 
 # Authentication (preview)

@@ -9,11 +9,6 @@ ms.author: dileeps
 ms.reviewer: kvivek
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Licensing overview for Microsoft Power Platform

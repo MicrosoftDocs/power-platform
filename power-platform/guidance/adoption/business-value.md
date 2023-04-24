@@ -2,7 +2,6 @@
 title: "Measuring business value of Power Platform solutions - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance for measuring the business value of Power Platform solutions."
 author: stjeffer
-manager: devkeydet
 contributors: 
 - manuelap-msft
 - robertsmith-bvm
@@ -19,10 +18,6 @@ ms.contributors:
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Measuring business value of Power Platform solutions
 

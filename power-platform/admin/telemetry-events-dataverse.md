@@ -11,11 +11,6 @@ ms.author: tjvass
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Telemetry events for Microsoft Dataverse
 

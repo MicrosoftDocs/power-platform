@@ -10,11 +10,6 @@ author: NHelgren
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 contributors: 
 - JasonHQX
 ---

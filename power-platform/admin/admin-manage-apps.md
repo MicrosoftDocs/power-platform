@@ -10,11 +10,6 @@ ms.author: alaug
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Manage Power Apps

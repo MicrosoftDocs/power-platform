@@ -5,17 +5,12 @@ keywords:
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
-manager: jstrauss
 ms.custom: ""
-ms.date: 10/14/2020
+ms.date: 04/10/2023
 ms.reviewer: "pehecke"
-
 ms.topic: "tutorial"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 #Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 
@@ -94,21 +89,17 @@ Now you have the environments that we will need for this and ready to begin the 
 
  In order for the GitHub workflow to deploy solutions as part of a CI/CD pipeline an "Application user" needs to be given access to the environment. An "Application user" represents an unlicensed user that is authenticated using the application registration completed in the prior steps.
 
-1. Navigate to your Dataverse environment (https://*[org]*.crm.dynamics.com).
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-2. Navigate to **Settings > Security > Users**.
+1. Go to **Environments** > open the environment you want > **Settings** > **Users + permissions** > **Application users**.
 
-3. Select the link **app users list**.
+1. Select **+ New app user**. A panel will open on the right hand side of the screen.
 
-  ![Application user list](../media/github-actions-tutorial/App-user-link.png "Application user list")
+1. Select **+ Add an app**. A list of all the application registrations in your Azure AD tenant is shown. Proceed to select the application name from the list of registered apps.
 
-4. Select **+ new app user**. A panel will open on the right hand side of the screen.
+ 1. Under **Business unit**, in the drop down box, select your environment as the business unit.
 
-5. Select **+ Add an app**. A list of all the application registrations in your Azure AD tenant is shown. Proceed to select the application name from the list of registered apps.
-
-  6. Under **Business unit**, in the drop down box, select your environment as the business unit.
-
-  7. Under **Security roles**, select **System administrator**, and then select **create**. This will allow the service principal access to the environment.
+ 1. Under **Security roles**, select **System administrator**, and then select **create**. This will allow the service principal access to the environment.
 
   ![New application user creation](../media/github-actions-tutorial/new-app-user.png "New application user")
 

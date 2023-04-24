@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: astockli
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Policies and Communications for Power Platform and Dynamics 365 Services
 

@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: kvivek
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Synchronization logic for appointments, contacts, and tasks

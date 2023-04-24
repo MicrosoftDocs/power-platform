@@ -2,7 +2,6 @@
 title: "Set up Developer Compliance components | MicrosoftDocs"
 description: "Learn how to set up the governance components of the CoE Starter Kit"
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up Developer Compliance components

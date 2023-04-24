@@ -1,4 +1,4 @@
-﻿---
+---
 title: Configure data loss prevention (preview)
 description: Configure data loss prevention (DLP) policies with PowerShell cmdlets to help prevent accidental data leaks or loss in the Power Virtual Agents preview.
 keywords: "PVA"
@@ -6,7 +6,6 @@ ms.date: 12/08/2022
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: admin, dlp, bap-template
 ms.collection: virtual-agent
 ms.service: power-virtual-agents

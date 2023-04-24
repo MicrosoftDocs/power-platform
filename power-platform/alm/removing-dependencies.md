@@ -9,12 +9,8 @@ ms.topic: "article"
 author: "ccdietrich" # GitHub ID
 ms.subservice: alm
 ms.author: "cdietric" # MSFT alias of Microsoft employees only
-manager: "shmcarth" # MSFT alias of manager or PM counterpart
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Removing dependencies

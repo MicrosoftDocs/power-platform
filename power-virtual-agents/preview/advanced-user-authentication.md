@@ -6,7 +6,6 @@ ms.date: 12/09/2022
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: kamrani
 ms.custom: authentication, ceX, bap-template
 ms.collection: virtual-agent

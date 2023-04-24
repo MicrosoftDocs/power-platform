@@ -3,18 +3,13 @@ title: Specify which emails are automatically tracked
 description: Use email message filtering and correlation to specify which emails are tracked in Dynamics 365 customer engagement apps. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/16/2023
+ms.date: 04/17/2023
 ms.subservice: admin
 ms.author: sericks
 author: sericks007
 ms.contributor: dmartens
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ms.custom: bap-template
 ---
 
@@ -110,7 +105,7 @@ By default, customer engagement apps use a token structure that consists of a fo
 
 | Part | Description |
 |------|-------------|
-| Prefix | Configurable from 1&ndash;20 characters. The default value is *CRM*. The prefix can be unique for each organization or environment. For example, in a multi-tenant deployment of customer engagement apps, we recommend that each organization configure and use a unique prefix. |
+| Prefix | Configurable from 1&ndash;20 characters. The default value is *CRM*. The prefix can be unique for each organization or environment. For example, in a multi-tenant deployment of customer engagement apps, we recommend that each organization configure and use a unique prefix. If you change the prefix, the previous prefix values are still maintained and used to correlate emails based on the previous prefix. |
 | Online/Offline designator | A legacy value that indicates whether the user was offline or online when sending the email. This digit isn't configurable. |
 | Deployment base tracking number | Configurable from 0&ndash;2,147,483,647. The default value is 0. Used as the base number for the user number digits. For example, if the value is 0 and three digits are configured for the user number, the first user would have an identifier of 001. If the value is 500, the first user would be 501. |
 | Number of digits for user numbers | Configurable from 1&ndash;10. The default range is three digits. This value determines how many digits to use when the customer engagement app assigns a numeric identifier for the user who generated the email activity. |

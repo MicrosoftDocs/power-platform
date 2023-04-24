@@ -11,11 +11,6 @@ ms.topic: conceptual
 ms.date: 07/25/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Assign a security role to a user  
 

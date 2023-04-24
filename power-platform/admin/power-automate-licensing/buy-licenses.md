@@ -8,11 +8,6 @@ ms.date: 05/09/2022
 ms.author: prkoduku
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Buy Power Automate licenses

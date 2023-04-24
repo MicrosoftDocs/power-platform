@@ -11,11 +11,6 @@ ms.topic: conceptual
 ms.date: 02/16/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Hierarchy security to control access
 

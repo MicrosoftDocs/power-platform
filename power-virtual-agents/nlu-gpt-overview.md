@@ -7,7 +7,6 @@ ms.topic: overview
 author: iaanw
 ms.author: iawilt
 ms.reviewer: 
-manager: leeclontz
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ms.search.region: USA

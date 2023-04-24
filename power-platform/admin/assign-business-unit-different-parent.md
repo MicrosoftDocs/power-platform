@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Assign a business unit to a different parent business
 

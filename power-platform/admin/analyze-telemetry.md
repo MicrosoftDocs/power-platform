@@ -11,11 +11,6 @@ ms.author: tjvass
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights
 <!-- fwlink: 2147020 2151390 -->

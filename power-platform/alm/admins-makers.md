@@ -10,9 +10,6 @@ ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # ALM for admins and makers

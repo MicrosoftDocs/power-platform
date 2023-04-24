@@ -11,11 +11,6 @@ ms.reviewer: kvivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 contributors:
   - alaug
   - tapanm-msft

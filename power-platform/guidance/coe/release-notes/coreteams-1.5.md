@@ -2,7 +2,6 @@
 title: "Release notes and latest version of the CoE starter kit Core components for Teams 1.6 | MicrosoftDocs"
 description: "Release notes and latest version of the CoE Starter Kit for Teams 1.5."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Released version Core Components for Teams 1.6

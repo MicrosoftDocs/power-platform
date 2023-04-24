@@ -12,11 +12,6 @@ ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 searchScope: 
   - D365-App-msdynce_saleshub
   - D365-Entity-territory

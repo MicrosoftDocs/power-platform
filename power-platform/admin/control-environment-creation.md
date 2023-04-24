@@ -9,11 +9,6 @@ ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 contributors:
   - marcelbf
 ---
@@ -46,7 +41,11 @@ To permanently remove the auto-creation of developer environments, a member of t
 
 - Remove the **Microsoft Power Apps for Developer** license. More information: [Service plan IDs for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
 - Disable [self-service sign-up](/azure/active-directory/enterprise-users/directory-self-service-signup).
-- Explicitly block all "internal" consent plans in the tenant using PowerShell. More information: [Block trial licenses commands](/power-platform/admin/powerapps-powershell#block-trial-licenses-commands).
+- Explicitly block all "internal" consent plans in the tenant using PowerShell:
+```powershell
+Remove-AllowedConsentPlans -Types @("Internal", "Viral")
+```
+More information: [Block trial licenses commands](/power-platform/admin/powerapps-powershell#block-trial-licenses-commands).
 
 ## Control environment creation through PowerShell
 

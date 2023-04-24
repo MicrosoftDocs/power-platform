@@ -2,7 +2,6 @@
 title: "Use Microsoft Dataverse usage reports | MicrosoftDocs"
 description: "The Microsoft Dataverse analytics in the Power Platform admin center will provide details about Dataverse usage in the selected environment."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Monitor Microsoft Dataverse usage
 

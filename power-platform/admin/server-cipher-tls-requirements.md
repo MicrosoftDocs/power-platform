@@ -12,11 +12,6 @@ contributors:
     - ProfessorKendrick
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Server cipher suites and TLS requirements
 

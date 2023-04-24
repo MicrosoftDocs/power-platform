@@ -14,11 +14,6 @@ ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Manage data loss prevention (DLP) policies

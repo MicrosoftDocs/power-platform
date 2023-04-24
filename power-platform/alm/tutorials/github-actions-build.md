@@ -5,7 +5,6 @@ keywords:
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
-manager: jstrauss
 ms.custom: ""
 ms.date: 10/14/2020
 ms.reviewer: "pehecke"
@@ -13,9 +12,6 @@ ms.reviewer: "pehecke"
 ms.topic: "tutorial"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 #Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 

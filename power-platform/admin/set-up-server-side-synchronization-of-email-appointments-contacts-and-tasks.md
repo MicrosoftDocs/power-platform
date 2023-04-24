@@ -10,11 +10,6 @@ ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Set up server-side synchronization of email, appointments, contacts, and tasks
 

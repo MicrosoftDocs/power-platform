@@ -9,11 +9,6 @@ ms.subservice: admin
 ms.author: kvivek 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Get Help + Support
 

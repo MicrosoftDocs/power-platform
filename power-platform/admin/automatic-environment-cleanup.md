@@ -4,17 +4,12 @@ description: "Learn about the automatic process to identify and disable environm
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/05/2023
+ms.date: 04/06/2023
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Automatic environment cleanup
 
@@ -57,8 +52,11 @@ Within 24 hours after the licenses and capacity are applied to your tenant, the 
 ## Environment cleanup based on inactivity
 Power Platform provides a cleanup mechanism that automatically removes environments from your tenant that are left inactive. An environment will first be disabled after 90 days of inactivity. If no action is taken by administrators and the environment is left disabled for 30 days, it will then be deleted. Administrators have 7 days to recover deleted environments. This cleanup process is automatic.
 
+> [!IMPORTANT]
+> This feature can't be turned off. Admin, however, can review the last activity date for developer environments in Power Platform admin center.
+
 ### Types of environments affected
-Developer and Dataverse for Teams environments are affected by the inactvity-based cleanup.
+Developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the inactvity-based cleanup.
 
 ### Timeline for inactive environments
 
@@ -66,18 +64,18 @@ The following table describes the schedule of notifications and action taken for
 
 | State of environment | Power Platform action |
 | --- | --- |
-| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Update the environment state on the **Environments** list page and the **Environment** page. |
-| 87 days after no user activity | Send a warning that the environment will be disabled. Update the inactive environment state on the **Environments** list page and the **Environment** page. |
+| 83 days after no [user activity](#definition-of-user-activity) | Send a warning that the environment will be disabled. Display the number of days until disablement in the **Environment state** on the **Environments** list page and the **Environment** page. |
+| 87 days after no user activity | Send a second warning that the environment will be disabled. |
 | 90 days after no user activity | Disable the environment. Send a notice that the environment has been disabled. Update the disabled environment state on the **Environments** list page and the **Environment** page. |
-| 113 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page and the **Environment** page. |
-| 117 days after no user activity | Send a warning that the environment will be deleted. Update the disabled environment state on the **Environments** list page and the **Environment** page. |
-| 120 days after no user activity | Delete the environment. Send a notice that the environment has been deleted. |
+| 23 days after environment disabled | Send first warning that the environment will be deleted. Show days until deletion in the **Environment state** field on the **Environments** list page and the **Environment** page. |
+| 27 days after environment disabled | Send second warning that the environment will be deleted. |
+| 30 days after environment disabled | Delete the environment. Send a notice that the environment has been deleted. |
 
 ### Notification recipients
 
 The following users will receive email notifications on the schedule described in the timeline:
 
-- The environment's system administrators
+- The environment's administrators
 - The user who created the environment 
 
 Additionally, users and makers are notified on the **Environments** list page and **Environment** page when the environment is disabled.

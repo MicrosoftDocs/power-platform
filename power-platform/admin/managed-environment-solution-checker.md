@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.custom: 
 search.audienceType:
 - admin
-search.app:
-- D365CE
-- PowerApps
-- Powerplatform
-- Flow
 
 ---
 

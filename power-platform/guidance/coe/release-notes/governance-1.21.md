@@ -2,7 +2,6 @@
 title: "Release notes and latest version of the CoE starter kit Governance components 1.21 | MicrosoftDocs"
 description: "Release notes and latest version of the CoE Starter Kit 1.21."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Released version Governance Components 1.21

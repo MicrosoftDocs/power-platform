@@ -9,11 +9,6 @@ ms.author: sriknair
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # New Microsoft Dataverse storage capacity 

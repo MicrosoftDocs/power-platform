@@ -7,7 +7,6 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: 
-manager: leeclontz
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ms.search.region: USA
@@ -53,7 +52,7 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 - This capability may be subject to usage limits or capacity throttling.
  
 > [!IMPORTANT] 
-> During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need to [contact Microsoft Support before you can publish your bot](nlu-boost-conversations.md#publishing). 
+> During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need your admin to [enable bot publishing for the capability](nlu-boost-conversations.md#publishing). 
 
 ## How bot conversations work
 

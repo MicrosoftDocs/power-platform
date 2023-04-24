@@ -6,7 +6,6 @@ keywords: "PVA, Teams"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: digantak
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

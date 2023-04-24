@@ -10,11 +10,6 @@ ms.author: cgarty
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Copy an environment
 

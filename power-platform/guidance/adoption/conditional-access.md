@@ -2,7 +2,6 @@
 title: "Set up Azure AD Conditional Access - Microsoft Power Platform | MicrosoftDocs"
 description: "By using Conditional Access policies, you can apply the right access controls when needed to keep your organization secure and stay out of your user’s way when not needed."
 author: manuelap-msft
-manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/07/2023
@@ -11,10 +10,6 @@ ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Set up Azure AD Conditional Access
 

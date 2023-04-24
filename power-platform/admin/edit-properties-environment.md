@@ -10,11 +10,6 @@ ms.author: lapepin
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Edit properties of an environment 
 
