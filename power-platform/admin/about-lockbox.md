@@ -4,10 +4,10 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/11/2023
+ms.date: 04/24/2023
 author: mihaelablendea
 ms.author: mihaelab
-ms.reviewer: kvivek
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
