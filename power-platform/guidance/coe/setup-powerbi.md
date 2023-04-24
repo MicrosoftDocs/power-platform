@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2023
+ms.date: 04/13/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -127,6 +127,38 @@ Power BI dataflows are used to transform data from the Azure Storage account int
 You can find the report later by going to [app.powerbi.com](https://app.powerbi.com/).
 
 ### Troubleshooting
+
+The *Data source error: Information is needed in order to combine data; Information about a data source is required.* error message when using the BYODL Dashboard means that you have not configured the correct [privacy settings](/power-bi/enterprise/desktop-privacy-levels) for Power BI to combine data from the Azure storage account and Dataverse. Change the privacy level and update the credentials to resolve the issue:
+
+1. Open Power BI Desktop.
+1. Select **File > Options and settings > Options**.
+1. Select **Global > Privacy** and set the privacy level to **Always combine data according to your Privacy Level setting for each data source**.
+2
+    :::image type="content" source="media/coepbi-byodl.PNG" alt-text="Set the privacy level to: Always combine data according to your Privacy Level setting for each data source.":::
+    
+1. Select **OK**, and then select **File > Options and settings > Options** again.
+1. Select **Current File > Privacy** and set the privacy level to **Combine data according to your Privacy Level setting for each data source**.
+
+    :::image type="content" source="media/coepbi-byodl2.PNG" alt-text="Set the privacy level to: Combine data according to your Privacy Level setting for each data source.":::
+    
+1. Select **OK**.
+1. Select **File > Options and settings > Data source settings**.
+1. Select **Edit Permissions** and set the privacy level to **Organizational** for both data sources.
+
+    :::image type="content" source="media/coepbi-byodl3.PNG" alt-text="Set the privacy level to: Organizational.":::
+    
+1. Save the report and refresh it in Power BI Desktop.
+1. Select **Publish**.
+1. Navigate to [app.powerbi.com](https://app.powerbi.com/) and select your workspace.
+1. Select **Datasets + dataflows**.
+1. Select **Settings** on the dataset.
+
+    :::image type="content" source="media/coepbi-byodl5.PNG" alt-text="Select settings on the dataset.":::
+    
+1. Select **Data Source Credentials**.
+1. Select **Edit credentials**, set the privacy level to **Organizational** for both data sources and select **Sign in** for each data source.
+
+    :::image type="content" source="media/coepbi-byodl4.PNG" alt-text="Set the privacy level to: Organizational and sign in.":::
 
 The *Unable to connect (provider Named Pipes Provider, error: 40 – Couldn't open a connection to SQL Server)* error message means that the connector has failed to connect to the TDS endpoint. This error can occur when the URL used with the connector includes https:// and/or the ending /. Remove the https:// and ending forward slash so that the URL is in the form orgname.crm.dynamics.com.
 

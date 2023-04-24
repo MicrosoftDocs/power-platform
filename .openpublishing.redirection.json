@@ -714,6 +714,151 @@
       "source_path": "power-platform/admin/dlp-endpoint-input-formats-examples.md",
       "redirect_url": "/power-platform/admin/connector-action-control",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-app-registrations.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/app-registration-strategy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-codefirst.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/build-package-codefirst-components",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-deployment-settings.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/deployment-settings-payload",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-pipelines.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/configure-azuredevops-pipelines",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-powerpages.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/configure-power-pages",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almacceleratorpowerplatform-advancedmaker.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/advanced-maker-experience",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almacceleratorpowerplatform-components.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almacceleratorpowerplatform-learningcatalog.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/learning-resources-catalog",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almacceleratorpowerplatform-newmaker.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/new-maker-experience",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorforpowerplatform-hook-extensions.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-hook-extensions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-config.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-data-deployment-configuration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-deployment-user-profiles",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-pipeline-sync.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-pipeline-sync",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-preview.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-almacceleratorpowerplatform-preview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-upgrade-configuration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-users.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-app-user-permissions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-components-manually",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-cli.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-components-manually",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/maturity/overview.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/maturity/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/scenarios/overview.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/scenarios/devops-deployment-model.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/devops-deployment-model",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/alm/scenarios/devops-deployment-model.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/devops-deployment-model",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/scenarios/tenant-deployments.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/tenant-deployments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almaccelerator.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-admin-tasks",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-components.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-admin-tasks",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/alm/scenarios/tenant-deployments.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/tenant-deployments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/alm/scenarios/overview.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/alm/maturity/overview.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/maturity/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/almhelper-1.1.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-admin-tasks",
+      "redirect_document_id": "false"
     }
   ]
 }

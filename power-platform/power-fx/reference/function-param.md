@@ -172,6 +172,7 @@ The following keywords are reserved (regardless of case) for internal use, and s
 - skipiframecreation
 - skiplaunchappcache
 - source
+- sourcetime
 - standaloneconsent
 - teamid
 - teamtype

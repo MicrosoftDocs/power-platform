@@ -18,6 +18,7 @@ Microsoft Power Platform provides various tools for developers to extend platfor
 |---------|---------|
 |[Power Platform CLI](cli/introduction.md)     | Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and more.        |
 |[Power Platform Tools for Visual Studio](devtools-vs.md)     | Power Platform Tools for Visual Studio supports the rapid creation, debugging, and deployment of plug-ins. Other capabilities include development of custom workflow activities, web resources, integration technologies like Azure Service endpoints and webhooks, and more.         |
+|[Visual Studio connected service](visual-studio-connected-service.md)|Add Power Platform as a connected service in Visual Studio to create a custom connector.|
 |[ALM developer tools](tools-alm.md)     |ALM developer tools for Power Platform enables developers to create and manage projects related to testing, deployment, maintenance, and governance of solutions.         |
 |[Dataverse developer tools](tools-dataverse.md)     | Dataverse developer tools enable developers to extend data platform capabilities in Power Platform.        |
 

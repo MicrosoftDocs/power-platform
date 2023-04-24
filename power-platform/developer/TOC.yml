@@ -4,8 +4,12 @@
       href: ./index.yml
     - name: Power Platform for developers
       href: get-started.md
-    - name: Create a developer environment
-      href: create-developer-environment.md
+    - name: Developer plan and environment
+      items:
+        - name: About developer plan
+          href: plan.md
+        - name: Create a developer environment
+          href: create-developer-environment.md
     - name: Fusion development
       href: fusion-development.md
     - name: ALM for developers
@@ -49,10 +53,10 @@
               href: isvstudio\usage-analytics.md
             - name: Install failures analytics
               href: isvstudio\install-failure-analytics.md
-            - name: Auto App Updates (Preview)
+            - name: Auto App Updates (preview)
               href: isvstudio\auto-update.md
-            - name: Embed Pay-as-you-go for ISVs (Preview)
-              href: isvstudio/embed-analytics.md      
+            - name: Embed Pay-as-you-go for ISVs (preview)
+              href: isvstudio/embed-analytics.md
     - name: Tools
       expanded: true
       items:
@@ -65,48 +69,56 @@
             - name: Power Platform CLI reference
               href: cli\reference\index.md
               items:
-                - name: pac admin
-                  href: cli\reference\admin.md
-                - name: pac application
-                  href: cli\reference\application.md
-                - name: pac auth
-                  href: cli\reference\auth.md
-                - name: pac canvas
-                  href: cli\reference\canvas.md
-                - name: pac connector
-                  href: cli\reference\connector.md
-                - name: pac data
-                  href: cli\reference\data.md
-                - name: pac help
-                  href: cli\reference\help.md
-                - name: pac modelbuilder
-                  href: cli\reference\modelbuilder.md
-                - name: pac org
-                  href: cli\reference\org.md
-                - name: pac package
-                  href: cli\reference\package.md
-                - name: pac paportal
-                  href: cli\reference\paportal.md
-                - name: pac pcf
-                  href: cli\reference\pcf.md
-                - name: pac pipeline
-                  href: cli\reference\pipeline.md
-                - name: pac plugin
-                  href: cli\reference\plugin.md
-                - name: pac solution
-                  href: cli\reference\solution.md
-                - name: pac telemetry
-                  href: cli\reference\telemetry.md
-                - name: pac tool
-                  href: cli\reference\tool.md
-                - name: pac virtual-agent
-                  href: cli\reference\virtual-agent.md
+              - name: pac admin
+                href: cli\reference\admin.md
+              - name: pac application
+                href: cli\reference\application.md
+              - name: pac auth
+                href: cli\reference\auth.md
+              - name: pac canvas
+                href: cli\reference\canvas.md
+              - name: pac catalog
+                href: cli\reference\catalog.md
+              - name: pac connector
+                href: cli\reference\connector.md
+              - name: pac data
+                href: cli\reference\data.md
+              - name: pac help
+                href: cli\reference\help.md
+              - name: pac modelbuilder
+                href: cli\reference\modelbuilder.md
+              - name: pac org
+                href: cli\reference\org.md
+              - name: pac package
+                href: cli\reference\package.md
+              - name: pac paportal
+                href: cli\reference\paportal.md
+              - name: pac pcf
+                href: cli\reference\pcf.md
+              - name: pac pipeline
+                href: cli\reference\pipeline.md
+              - name: pac plugin
+                href: cli\reference\plugin.md
+              - name: pac solution
+                href: cli\reference\solution.md
+              - name: pac telemetry
+                href: cli\reference\telemetry.md
+              - name: pac tool
+                href: cli\reference\tool.md
+              - name: pac virtual-agent
+                href: cli\reference\virtual-agent.md
         - name: Power Platform Tools for Visual Studio
           items:
             - name: What is Power Platform Tools for Visual Studio
               href: devtools-vs.md
             - name: Create a Power Platform Tools project
               href: devtools-vs-create-project.md
+        - name: Visual Studio connected service (preview)
+          items:
+            - name: Overview of Visual Studio connected service
+              href: visual-studio-connected-service.md
+            - name: Create a canvas app front end for your ASP.NET web API
+              href: visual-studio-create-canvas-app.md
         - name: ALM developer tools
           href: tools-alm.md
         - name: Dataverse developer tools

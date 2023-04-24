@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 03/20/2023
+ms.date: 04/12/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key (preview)
@@ -32,13 +32,14 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > - Lock CMK environments by revoking CMK key vault and/or key permissions.
 > - Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
 >
-> This feature will be available in all public cloud regions March 2023.
+> This feature will be available in all public cloud regions in March 2023.
 >
 > There's no additional Power Platform licensing requirement during this preview. When this feature becomes generally available, there will be a licensing requirement.
 > 
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
 
 - Dataverse (Custom solutions and Microsoft services)
+- [Power Automate](/power-automate/customer-managed-keys) <sup>1</sup>
 - Chat for Dynamics 365
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
 - Dynamics 365 Customer Service
@@ -53,10 +54,13 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
 
-   > [!NOTE]
-   > During preview, the connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
-   >
-   > Contact a representative for services not listed above for information about customer-managed key support.
+<sup>1</sup> When you apply the customer managed key to an environment that has existing Power Automate flows, the flows data continues to be encrypted with Microsoft-managed key. However, flows created in an environment that didn't already have existing flows when the customer managed key feature was applied are encrypted with customer managed key. More information: [Power Automate customer manged key](/power-automate/customer-managed-keys).
+
+> [!NOTE]
+>
+> During preview, the connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
+>
+> Contact a representative for services not listed above for information about customer-managed key support.
 
 Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys)
 

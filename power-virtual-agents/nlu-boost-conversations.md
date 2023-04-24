@@ -97,10 +97,6 @@ You can also change the URL, disable **Boost conversations**, or change the leve
 
 You can now test your bot to see how well it responds to questions related to the content on the URL you specified.
 
-> [!NOTE]
->  
-> During the Preview of this feature you'll need to contact Microsoft Support if you want to publish a bot that has **Boost conversations** enabled.
-
 ### URL considerations
 
 The URL you provide represents the scope of content that will be used for generating responses. 
@@ -186,7 +182,6 @@ If you'd like to publish a bot that has **Boost conversations** enabled, you'll 
 :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
 
 
-If your admin wants to enable it only for some environments instead of your tenant, they can start a support request. We'll review your request and get in touch with your admin.
 
 ### Quotas
 
@@ -223,7 +218,7 @@ The system is designed to query knowledge from the website of your choosing and 
 - The system does not perform an accuracy check, so if the selected website contains inaccurate information this could be shown to your chatbot users. We have implemented mitigations to filter out irrelevant and offensive responses, and the feature is designed not to respond when offensive language is detected. These filters and mitigations are not foolproof.  
 
 > [!NOTE]
-> You should always test and review your bots before publishing them. During the preview, your admin will need to contact Microsoft support to enable publication.
+> You should always test and review your bots before publishing them.
 
 
 ### How was the capability evaluated? What metrics are used to measure performance?   

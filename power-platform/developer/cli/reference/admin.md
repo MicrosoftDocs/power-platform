@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 3/13/2023
+ms.date: 4/19/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -332,6 +332,10 @@ List all environments from your tenant
 
 
 ### Optional Parameters
+
+#### `--application-id` `-ai`
+
+List all environments that have specified application installed.
 
 #### `--environment` `-env`
 
