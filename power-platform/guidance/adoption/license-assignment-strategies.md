@@ -3,7 +3,7 @@ title: "License assignment strategies | MicrosoftDocs"
 description: "Guidance for license assignment."
 author: stjeffer
 ms.topic: conceptual
-ms.date: 04/20/2023
+ms.date: 04/24/2023
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: sericks
@@ -110,24 +110,24 @@ Learn more about access packages:
 
 #### Licensing auto-claim for Power Apps
 
-License auto-claim for Power Apps  simplifies license assignment for administrators. The feature enables their Power Apps users to automatically claim Power Apps per user licenses when they're needed, instead of requiring an administrator to identify users who need licenses in advance. For example, when a user without a standalone license opens an app that requires a premium license, the user will automatically be assigned a Power Apps per user license.
+The license auto-claim feature for Power Apps simplifies license assignment for administrators. The feature enables their Power Apps users to automatically claim Power Apps per user licenses when they're needed, instead of requiring an administrator to identify users who need licenses in advance. For example, when a user without a standalone license opens an app that requires a premium license, the user will automatically be assigned a Power Apps per user license.
 
-Administrators can create an _auto-claim policy_ for Power Apps per user licenses in the Microsoft 365 admin center just like they can for other Microsoft licenses.
+Administrators can create an _auto-claim policy_ for Power Apps per user licenses in the Microsoft 365 admin center, just like they can for other Microsoft licenses.
 
-Learn more about on demand license assignment:
+Learn more about on-demand license assignment:
 
 - [Licensing auto-claim for Power Apps](/power-platform/release-plan/2023wave1/power-platform-governance-administration/license-autoclaim-power-apps-licenses)
 - [Auto-claim policies](/microsoft-365/commerce/licenses/manage-auto-claim-policies)
 
 #### Request a license
 
-Request a license streamlines the process of assigning licenses for both users and administrators. Whenever a user tries to use a premium Power App without a license, they can easily request one directly from the product.
+Power Apps users can request a license, which streamlines the process of assigning licenses for both users and administrators. Whenever a user tries to use a premium Power App without a license, they can easily request one directly from the product.
 
-Administrators can approve or reject numerous requests simultaneously and add a personalized message for their users.
+Administrators can approve or reject numerous requests simultaneously, and add a personalized message for their users.
 
-Administrators also have the option to utilize their organization's request process for custom licenses and adjust the relevant settings in the Microsoft 365 admin center.
+Administrators also have the option to utilize their organization's request process for custom licenses, and adjust the relevant settings in the Microsoft 365 admin center.
 
-Learn more about request a license:
+Learn more about requesting a license:
 
 - [Request a license (blog)](https://powerapps.microsoft.com/blog/powerapps-request-license/)
 - [Manage self-service license requests](/microsoft-365/commerce/licenses/manage-license-requests?view=o365-worldwide&preserve-view=true)
