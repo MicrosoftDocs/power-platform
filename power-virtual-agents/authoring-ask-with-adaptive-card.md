@@ -36,7 +36,7 @@ The **Adaptive Card** node is used for interactive cards, where the user is expe
 
 1. Select the card icon, which expands the properties pane for the node. Or, select the _Node Menu_ (**&vellip;**), then select **Properties**. 
 
-  :::image type="content" source="media/authoring-interactive-adaptive-cards/node.png" alt-text="Screenshot of a new Adaptive Card node":::
+     :::image type="content" source="media/authoring-interactive-adaptive-cards/node.png" alt-text="Screenshot of a new Adaptive Card node":::
 
 1. In the **Edit JSON** section, enter the JSON for your card.
 
@@ -51,10 +51,10 @@ The **Adaptive Card** node is used for interactive cards, where the user is expe
 
     :::image type="content" source="media/authoring-interactive-adaptive-cards/card-preview.png" alt-text="Screenshot of the Adaptive Card node, with a preview of a card.":::
 
-> [!TIP]
-> In the event that the output variables generated for your card are incorrect, you can manually update the list of variables and their types by selecting the **Edit Schema** button underneath the JSON editor in the property pane. The example below defines four string (Text) variables.
+    > [!TIP]
+    > In the event that the output variables generated for your card are incorrect, you can manually update the list of variables and their types by selecting the **Edit Schema** button underneath the JSON editor in the property pane. The example below defines four string (Text) variables.
 
-> :::image type="content" source="media/authoring-interactive-adaptive-cards/schema-editor.png" alt-text="Screenshot of the Adaptive Card node schema editor.":::
+    :::image type="content" source="media/authoring-interactive-adaptive-cards/schema-editor.png" alt-text="Screenshot of the Adaptive Card node schema editor.":::
 
 1. Your interactive Adaptive Card is now ready. When a user of your bot submits the card using one of the buttons, the output variables are populated with their responses. 
 
