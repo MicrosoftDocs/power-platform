@@ -32,17 +32,16 @@ Use the **Test bot** pane to walk through your bot conversations as the user. It
 
 1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.  
 
-   [new PVA2 screenshot] 
+   :::image type="content" source="media/authoring-test-bot/test-bot-button.png" alt-text="Screenshot of the Test bot button.":::
 
 1. In the *Type your message* field, enter some text. If the text is similar to a trigger phrase for a topic, that topic will begin. 
 
-   [new PVA2 screenshot] 
+   :::image type="content" source="media/authoring-test-bot/type-your-message.png" alt-text="Screenshot of the Type your message field.":::
 
 1. Select the bot response in the **Test bot** pane. This takes you to the topic and the node that sent the response. Nodes that have fired display a colored checkmark and a colored bottom border. 
 
-1. If you continue the conversation with the test bot in the same topic, each node that fires is marked with the checkbox and bottom border and centered in the canvas. 
-
-   [new PVA2 screenshot] 
+    >[!NOTE] 
+    > As you continue the conversation with the test bot in the same topic, each node that fires is marked with the checkbox and bottom border and centered in the canvas. 
 
 1. Continue the conversation, testing that the bot flows as intended in the topic.  
 
@@ -50,7 +49,7 @@ You can update a topic at any time while interacting with the test bot. Simply s
  
 Your conversation is not automatically cleared when you save a topic. If at any point you want to clear the conversation from your test bot and start over, select the **Reset** button. 
 
-[new PVA2 screenshot] 
+   :::image type="content" source="media/authoring-test-bot/test-bot-reset.png" alt-text="Screenshot of the Test reset button.":::
 
 ### Track topic-to-topic
 
@@ -58,7 +57,7 @@ You can automatically navigate across topics to each node that fires, by using t
  
 1. At the top of the **Test bot** pane, set **Track topic-to-topic** to **On**. 
 
-   [new PVA2 screenshot] 
+   :::image type="content" source="media/authoring-test-bot/track-topic-to-topic.png" alt-text="Screenshot of the topic-to-topic toggle.":::
 
 1. Continue interacting with your bot. As you navigate to each node that fires, you can switch topics along with the conversation. 
 
@@ -70,11 +69,11 @@ You can observe the values of your variables as you test your bot.
 
 1. Open the **Variables** pane and select the **Test** tab. If a variable has values, it appears here. Any empty variables appear as *undefined*. 
 
-   [new PVA2 screenshot] 
+   :::image type="content" source="media/authoring-test-bot/variables-pane.png" alt-text="Screenshot of the Variables Test pane."::: 
 
-1. To inspect complex values, such as a *list* or *record*, select the link in the value to see more details. 
+1. To inspect variable properties, select the link in the value to display variable details. 
 
-   [new PVA2 screenshot]  
+   :::image type="content" source="media/authoring-test-bot/complex values.png" alt-text="Screenshot of the Variables list details pane.":::
 
 For information about using the variable test pane to test slot filling, see [Use entities and slot filling](advanced-entities-slot-filling.md).
 
@@ -88,15 +87,13 @@ While you're testing your bot, you can capture the content of and diagnostics da
 
 1. At the top of the **Test bot** pane, select the menu icon (⋮), then select **Save snapshot**. 
 
-   [new PVA2 screenshot] 
+   :::image type="content" source="media/authoring-test-bot/save-snapshot.png" alt-text="Screenshot of the Save Snapshot option.":::
 
 1. Select **Save** to save the bot content and conversational diagnostics in a .zip archive file named *botContent.zip*.
 
-   [new PVA 2 screenshot] 
-  
-The *botContent.zip* file contains two files: *botContent.yml* and *dialog.json*. 
+   :::image type="content" source="media/authoring-test-bot/save-snapshot-window.png" alt-text="Screenshot of the Save Snapshot window.":::
 
-[new screenshot from Windows file explorer] 
+The *botContent.zip* file contains two files:
 
 - *dialog.json* contains conversational diagnostics, including detailed descriptions of errors.  
 
