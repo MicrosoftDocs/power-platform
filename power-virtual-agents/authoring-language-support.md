@@ -13,7 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Supported languages (preview)
+# Supported languages
 
 You can create chatbots in Power Virtual Agents in a number of languages. This means that your bots can reach a much broader audience and engage with more markets all around the world.
 
@@ -27,7 +27,7 @@ You specify the target language when you first create a bot.
 
 1. In the **Create a new bot** window, select **Language**.
 
-1. Choose the language you want to use. Some languages are listed under **Preview**, as described in the list of supported languages later in this article.
+1. Choose the language you want to use. 
 
     :::image type="content" source="../media/authoring-language-support/language-selection-teams.png" alt-text="Language selection option.":::
 
