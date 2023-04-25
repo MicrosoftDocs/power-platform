@@ -22,7 +22,7 @@ ms.collection: virtual-agent
 
 You design Adaptive Cards using the [Adaptive Cards Designer](https://adaptivecards.io/designer/) or author directly using JSON code. The **Adaptive Card** node allows you send an Adaptive Card that contains one or more submit buttons, and optionally one or more form input fields. PVA then stores user responses in variables for use later in the conversation.
 
-The node allows you to provide the JSON for the card you want to send to the user or provide a Power Fx formula to represent the card, allowing you to include dynamic information on the card. [Additional properties](#additional-properties) on the node allow you to control behavior, such as what to do when the user enters an invalid response and if the node is able to be interrupted.
+The node allows you to provide the JSON for the card you want to send to the user or provide a [Power Fx formula](advanced-power-fx.md) to represent the card, allowing you to include dynamic information on the card. [Additional properties](#additional-properties) on the node allow you to control behavior, such as what to do when the user enters an invalid response and if the node is able to be interrupted.
 
 The **Adaptive Card** node is used for interactive cards, where the user is expected to submit a response. **Message** and **Question** nodes can be used to present the user with a non-interactive card to display information to the user.
 
