@@ -73,7 +73,7 @@ You can observe the values of your variables as you test your bot.
 
 1. To inspect variable properties, select the link in the value to display variable details. 
 
-   :::image type="content" source="media/authoring-test-bot/complex values.png" alt-text="Screenshot of the Variables list details pane.":::
+   :::image type="content" source="media/authoring-test-bot/complex-values.png" alt-text="Screenshot of the Variables list details pane.":::
 
 For information about using the variable test pane to test slot filling, see [Use entities and slot filling](advanced-entities-slot-filling.md).
 
