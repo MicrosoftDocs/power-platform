@@ -3,13 +3,13 @@ title: "Maintain the ALM Accelerator for Microsoft Power Platform using the admi
 description: "The ALM Accelerator for Microsoft Power Platform helps you follow ALM patterns and practices to move your solutions from your development environment to test and production environments by using Azure DevOps. This guide walks through the maintenance tasks and Azure DevOps project configurations you need to perform for new solutions and projects."
 author: mikefactorial
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 04/25/2023
 ms.subservice: guidance
 ms.author: jeschro
 ms.reviewer: sericks
 ---
 
-# Maintain the ALM accelerator for Microsoft Power Platform using the ALM Accellerator Admin app
+# Maintain the ALM Accelerator for Microsoft Power Platform using the ALM Accelerator Admin app
 
 Once a project is onboarded to the ALM Accelerator, there are many tasks you can perform to maintain the project. This guide walks through the maintenance tasks and Azure DevOps project configurations you need to perform for new solutions and projects.
 
