@@ -31,7 +31,7 @@ The following datatypes are available for mapping CLU entities:
 
 ## Schema table
 
-Bot creators can use sample JSON code to register [entities](advanced-entities-slot-filling.md). Entities resolve to complex data types. You can manually map CLU entities to PVA data types by using the following JSON code blocks. 
+Bot creators can use sample JSON code to register [entities](advanced-entities-slot-filling.md). Entities resolve to complex data types. You can manually map CLU entities to Power Virtual Agents data types by using the following JSON code blocks. 
 
 To register the following data types, copy/paste the relative code block listed below by selecting **Copy code**.
 
