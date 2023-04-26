@@ -305,6 +305,8 @@
               href: alm-accelerator/configure-power-pages.md
             - name: Build and package code-first components
               href: alm-accelerator/build-package-codefirst-components.md
+            - name: Maintenance tasks
+              href: alm-accelerator/maintain-admin-tasks.md
             - name: ALM Accelerator learning catalog
               href: alm-accelerator/learning-resources-catalog.md
     - name: Power Platform Creator Kit
