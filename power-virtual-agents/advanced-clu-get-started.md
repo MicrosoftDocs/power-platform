@@ -59,7 +59,7 @@ Now that you’ve completed preparing your environment, you’re ready to create
 You create a new Power Virtual Agents bot by mapping existing topics to CLU intents. You can manually map intents and entities, or for bulk mapping, see [Use the Bulk tool wizard](#use-the-bulk-tool-wizard).
 ### Manually map intents:
 
-1.	Create a new Power Virtual Agents bot.
+1.	Create a new [Power Virtual Agents](authoring-first-bot.md) bot.
 
 1. From the left navigation, select **Topics**.
 
@@ -67,20 +67,20 @@ You create a new Power Virtual Agents bot by mapping existing topics to CLU inte
 
 1. In the *Phrases* section of the Trigger node, click the **Edit** link.
 
-    :::image type="content" source="media/advanced-clu-integration/map_intent-phrases.png" alt-text="Select the Edit link." border="false"::: 
+    :::image type="content" source="media/advanced-clu-integration/map-intent-phrases.png" alt-text="Select the Edit link." border="false"::: 
 
 1. In the *Add phrases* box, type the name of the CLU intent that you want to map to.
 
     :::image type="content" source="media/advanced-clu-integration/type-intent-name.png" alt-text="Type CLU intent name." border="false"::: 
 
     > [!NOTE]
-    > The CLU intent name must be typed exactly as is in the CLU model including matching case as uppercase and lowercase characters. 
+    > The CLU intent name must be typed exactly as stored in the CLU model, including matching case as uppercase and lowercase characters. 
 
 1. Click the + (plus) sign to the right of the *Add phrases* box to save the intent.
  
 ### Manually map entities:
 
-1. Open your Power Virtual Agents bot.	
+1. Open your [Power Virtual Agents](authoring-first-bot.md) bot.	
 
 1. From the left navigation, select **Entities**.
 
