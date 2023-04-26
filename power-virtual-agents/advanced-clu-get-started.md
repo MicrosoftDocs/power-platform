@@ -53,13 +53,53 @@ Below are the steps to create a bot using an existing CLU model:
 1. Switch back to Power Virtual Agents. Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
     :::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Power Virtual Agents NLU." border="false"::: 
 
-Now that you’ve completed preparing your environment, you’re ready to **Add topics and CLU intents from model data**. 
+Now that you’ve completed preparing your environment, you’re ready to create a new bot and map intents and entities to CLU model data. 
+## Map CLU intents and entities to Power Virtual Agents pre-built data types
 
-Next, follow the procedure below, so you can upload your model data file and map CLU intents to your Power Virtual Agents bot.
+You create a new Power Virtual Agents bot by mapping existing topics to CLU intents. You can manually map intents and entities, or for bulk mapping, see [Use the Bulk tool wizard](#use-the-bulk-tool-wizard).
+### Manually map intents:
 
-## Map CLU intents and entities to Power Virtual Agents topics
+1.	Create a new Power Virtual Agents bot.
 
-You create a new bot by mapping existing topics to CLU intents using the **Map intents and entities** wizard. With the wizard, your bot can utilize existing intents from your CLU model rather than trigger phrases to determine which topic to map to. 
+1. From the left navigation, select **Topics**.
+
+    :::image type="content" source="media/advanced-clu-integration/clu-menu-topics.png" alt-text="Select Topics from the left navigation." border="false"::: 
+
+1. In the *Phrases* section of the Trigger node, click the **Edit** link.
+
+    :::image type="content" source="media/advanced-clu-integration/map_intent-phrases.png" alt-text="Select the Edit link." border="false"::: 
+
+1. In the *Add phrases* box, type the name of the CLU intent that you want to map to.
+
+    :::image type="content" source="media/advanced-clu-integration/type-intent-name.png" alt-text="Type CLU intent name." border="false"::: 
+
+    > [!NOTE]
+    > The CLU intent name must be typed exactly as is in the CLU model including matching case as uppercase and lowercase characters. 
+
+1. Click the + (plus) sign to the right of the *Add phrases* box to save the intent.
+ 
+### Manually map entities:
+
+1. Open your Power Virtual Agents bot.	
+
+1. From the left navigation, select **Entities**.
+
+    :::image type="content" source="media/advanced-clu-integration/clu-image13.png" alt-text="Select Entities from the left navigation." border="false"::: 
+
+1. Select **New entity** on the **Entities** page.
+    :::image type="content" source="media/advanced-clu-integration/clu-image11.png" alt-text="Select + New entity to create a new entity." border="false"::: 
+
+1.	In the **New entity** pane, Add a *name, description* (optional), and *Data Type* for your entity.
+    :::image type="content" source="media/advanced-clu-integration/clu-image12.png" alt-text="Type in name, description, and data type for your new entity." border="false"::: 
+ 
+1.	To access CLU pre-built entities, from the Data Type drop-down menu, select **From sample data**, and choose one of the CLU pre-built JSON code snippets.  
+1.	(Optional) If you want to import JSON schema from a sample file, choose **Get schema from sample JSON** to access the external file. 
+
+##  Use the Bulk tool wizard
+
+You create a new bot by bulk mapping existing topics to CLU intents using the **Map intents and entities** wizard. With the wizard, your bot can automatically utilize existing intents from your CLU model rather than trigger phrases to determine which topic to map to. 
+
+Begin by uploading your CLU model data file and automatically map CLU intents to your Power Virtual Agents bot.
 
 1.	From the left navigation, select **Language**, then **Add topics and entities from model data**. 
 1.	In the **File name** option, select **Choose file** to select the data file that you want to upload your CLU model from.
@@ -74,30 +114,13 @@ You create a new bot by mapping existing topics to CLU intents using the **Map i
     In the wizard, you’ll see a list of CLU intents that haven’t been mapped to a PVA topic. In the field **Create a new topic**, type a name for each of the topics that you want to create, and then select **Next**.  
     :::image type="content" source="media/advanced-clu-integration/clu-image10.png" alt-text="Create new topics for CLU intents." border="false"::: 
 
+    > [!NOTE]
+    > Any fields that you leave blank are ignored by the wizard.
+
 1.	Once all CLU intents and entities are mapped to PVA topics, select **Done**.
     :::image type="content" source="media/advanced-clu-integration/clu-image8.png" alt-text="Add intents and entities and click Done to finish." border="false"::: 
 
 Once you’ve competed this procedure, your bot topics now appear in the Power Virtual Agents **Topics** pane. For more information, see [Managing topics](authoring-topic-management.md).
-
-## Manually map CLU intents and entities to Power Virtual Agents pre-built data types
-
-### To manually map intents:
-
-TBD
-### To manually map entities:
-
-1.	From the left navigation, select **Entities**.
-
-    :::image type="content" source="media/advanced-clu-integration/clu-image13.png" alt-text="Choose Entities from the left navigation." border="false"::: 
-
-1. Select **New entity** on the **Entities** page.
-    :::image type="content" source="media/advanced-clu-integration/clu-image11.png" alt-text="Choose + New entity to create a new entity." border="false"::: 
-
-1.	In the **New entity** pane, Add a *name, description* (optional), and *Data Type* for your entity.
-    :::image type="content" source="media/advanced-clu-integration/clu-image12.png" alt-text="Type in name, description, and data type for your new entity." border="false"::: 
- 
-1.	To access CLU pre-built entities, from the Data Type drop-down menu, select **From sample data**, and choose one of the CLU pre-built JSON code snippets.  
-1.	(Optional) If you want to import JSON schema from a sample file, choose **Get schema from sample JSON** to access the external file. 
 
 
 For more information, see [Entity registration](advanced-clu-entity-registration.md).
