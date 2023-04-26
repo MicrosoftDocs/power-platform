@@ -20,11 +20,12 @@ This topic includes the step-by-step procedures you need to get started with [co
 
 Below are the steps to create a bot using an existing CLU model:
 
-1. [Prepare your environment](#prepare-your-environment)
-1. Map CLU intents and entities using one of the following options:
-    1. [Use the wizard to automatically map CLU intents and entities](#map-clu-intents-and-entities-to-power-virtual-agents-topics)
-    1. [Manually map intents and entities](#manually-map-clu-intents-and-entities-to-power-virtual-agents-pre-built-data-types)
-
+1. [Prepare your environment](#prepare-your-environment).
+1. Map CLU intents and entities using one of the following procedures:
+    1. [Manually map intents](#manually-map-intents).
+    1. [Manually map entities](#manually-map-entities).
+    1. [Use the wizard to automatically map CLU intents and entities](#use-the-bulk-tool-wizard).
+ 
 ## Prepare your environment
 
 1. Before you begin, make sure that you have your CLU model project name and deployment name.
