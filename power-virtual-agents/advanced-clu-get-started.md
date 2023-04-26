@@ -21,15 +21,15 @@ This topic includes the step-by-step procedures you need to get started with [co
 Below are the steps to create a bot using an existing CLU model:
 
 1. [Prepare your environment](#prepare-your-environment).
-1. Map CLU intents and entities using one of the following procedures:
-    - [Manually map intents](#manually-map-intents).
-    - [Manually map entities](#manually-map-entities).
-    - [Use the wizard to automatically map CLU intents and entities](#use-the-bulk-tool-wizard).
+1. Map CLU intents and entities:
+   - [Manually map intents](#manually-map-intents).
+   - [Manually map entities](#manually-map-entities).
+   - [Use the wizard to automatically map CLU intents and entities](#use-the-bulk-tool-wizard).
  
 ## Prepare your environment
 
-1. Before you begin, make sure that you have your CLU model project name and deployment name.
-1. Create a new Power Virtual Agents bot. For more information, see [Authoring your first bot](authoring-first-bot.md).
+Before you begin, make sure that you have your CLU model project name and deployment name.
+1. Create a new [Power Virtual Agents](authoring-first-bot.md) bot.
 1. From the left navigation, choose **Language**.
 1. From the **NLU Resource** drop-down list, choose **Power Virtual Agent NLU**.
     :::image type="content" source="media/advanced-clu-integration/clu-image1.png" alt-text="Language option to select NLU resource." border="false":::
@@ -51,8 +51,9 @@ Below are the steps to create a bot using an existing CLU model:
 1. Enter your project name and deployment information, and select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image5.png" alt-text="Choose a project and model in Azure Cognitive Service for Language." border="false"::: 
 
-1. Switch back to Power Virtual Agents. Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
-    :::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Power Virtual Agents NLU." border="false"::: 
+Next, switch back to Power Virtual Agents. Changing back to the NLU environment removes the **Analyze text** system topic. It also requires you to manually add example phrases for topics currently mapped to external intents.
+
+:::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Power Virtual Agents NLU." border="false"::: 
 
 Now that you’ve completed preparing your environment, you’re ready to map intents and entities to CLU model data. 
 ## Map CLU intents and entities to Power Virtual Agents pre-built data types
