@@ -77,9 +77,9 @@ If an appointment organizer is changed in Dynamics 365 after it has been synchro
 
 - **Mapping:** Appointments in Dynamics 365 sync to Exchange as meetings.
 
-- **Appointment status:** If the appointment status in Dynamics 365 is **Completed**, **Canceled**, or **Free**, the appointment status syncs to Exchange as **Free**.
+- **Appointment status:** If the appointment status in Dynamics 365 is **Completed**, **Canceled**, or **Free** (Open), the appointment status syncs to Exchange as **Free**.
 
-- **Reminder:** No reminder is set if the appointment is more than seven days in the past or the appointment status is **Free**.
+- **Reminder:** No reminder is set if the appointment is more than seven days in the past or the appointment status is **Free** (Open).
 
 - **Invitations:** No invitation is sent if:
 
