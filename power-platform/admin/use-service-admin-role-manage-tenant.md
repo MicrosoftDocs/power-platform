@@ -44,7 +44,7 @@ Both service admin roles cannot do functions restricted to the Microsoft 365 glo
 Follow these steps to assign a service admin role.
 
 > [!NOTE]
-> When the Dynamics 365 administrator role is granted to a user in Azure Active Directory (Azure AD), they will get the System Administrator role in environments as well. When the Dynamics 365 administrator role is removed in Azure AD, user synchronization doesn't remove the System Administrator role. So, even though this user is no longer a Dynamics 365 administrator in Azure AD, they still remain a system administrator in the tenant and will be able to see all environments. We recommend manually removing the System Administrator role in all environments as soon as the role is removed from Azure AD.
+> When the Dynamics 365 administrator or Power Platform administrator or Global administrator role is granted to a user in Azure Active Directory (Azure AD), they will get the System Administrator role in environments as well. When the Dynamics 365 administrator or Power Platform administrator or Global administrator role is removed in Azure AD, user synchronization doesn't remove the System Administrator role. So, even though this user is no longer a Dynamics 365 administrator or Power Platform administrator or Global administrator in Azure AD, they still remain a system administrator in the tenant and will be able to see all environments. We recommend manually removing the System Administrator role in all environments as soon as the role is removed from Azure AD.
 >
 > To opt-out of automatic license-based user roles, see [Opt-out of automatic license-based user roles management](opt-out-automatic-license.md).
 
