@@ -7,6 +7,7 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: authoring, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
