@@ -37,16 +37,17 @@ When an access team is used for record collaboration, records are created in the
 
 - When a user explicitly shares a record to another user, a record is created in the POA table.
 
-- Direct sharing also occurs with a record that has a cascade sharing relationship or on a table with a parent/child relationship. When a parent record is shared to a user or team, the shared-to user or team has access to all the cascaded or child records. All these permissions to access the child records are created in the POA table. 
+### Indirect sharing
+
+- When a user shares a record to a team, all members of the team are indirectly shared to.
+
+- Indirect sharing also occurs with a record that has a cascade sharing relationship or on a table with a parent/child relationship. When a parent record is shared to a user or team, the shared-to user or team has access to all the cascaded or child records. All these permissions to access the child records are created in the POA table. 
 
   **Example of table relationship**
   
   A table can be set to have relationships with other tables (for example, Account to Case). By default, the relationship of the **Reparent** option is set to **Cascade All**. All related subrecords are shared to the owner of the parent record.  
 
   For example: User #1 owns Account #1. User #1 shares Account #1 with User #2. User #2 creates a Case #1 underneath Account #1. With the out-of-the-box reparent options, User #1 has access to Case #1. All these user permissions are captured in the POA table.
-
-### Indirect sharing
-When a user shares a record to a team, all members of the team are indirectly shared to.  
 
 ### Sharing source
 The RetrieveAccessOrigin API can be used to determine where a user or team’s access to a specific table comes from. The API requires an objectId, logicalName, and principalId in the request, and the response is a string describing where the access to the table was obtained.
@@ -66,8 +67,9 @@ The RetrieveAccessOrigin API can be used to determine where a user or team’s a
 - Remove all access team members when collaboration is over. 
 
 ## Deleting POA records
-Create a [support ticket](https://dynamics.microsoft.com/support/) to request assistance on deleting POA records.
+Since POA table is managed by the system to ensure proper access of users or teams to respective records, manual deletion on this table is not supported since it may break the security model defined for the organization. The correct way of cleaning up the POA table is by adjusting the security model and revoking access that was previously given.
 
+Create a [support ticket](https://dynamics.microsoft.com/support/) to understand how your POA table is distributed and what kind of actions can be done to optimize the storage.
 
 ### See also
 [Dataverse storage capacity](capacity-storage.md)
