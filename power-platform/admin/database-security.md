@@ -109,8 +109,8 @@ The following table describes which resources can be authored by each security r
 |Desktop flow<sup>**</sup>     |-         |-         |X         |X         |
 |AI Builder     |-         |-         |X         |X         |
 
-<sup>**</sup>Connections are used in [canvas apps](/power-apps/maker/canvas-apps/add-manage-connections) and [Power Automate]/power-automate/add-manage-connections).
-<sup>**</sup>Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
+*\Connections are used in [canvas apps](/power-apps/maker/canvas-apps/add-manage-connections) and [Power Automate]/power-automate/add-manage-connections).
+**\Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
 
 ## Assign security roles to users in an environment that has no Dataverse database 
 
