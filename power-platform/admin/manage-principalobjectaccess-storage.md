@@ -67,7 +67,7 @@ The RetrieveAccessOrigin API can be used to determine where a user or team’s a
 - Remove all access team members when collaboration is over. 
 
 ## Deleting POA records
-Since POA table is managed by the system to ensure proper access of users or teams to respective records, manual deletion on this table is not supported since it may break the security model defined for the organization. The correct way of cleaning up the POA table is by adjusting the security model and revoking access that was previously given.
+POA table is managed by the system to ensure proper access of users or teams to respective records, so direct deletion on this table is not supported since it can break the security model defined for the organization. The correct way to clean up the POA table is by adjusting the security model and revoking access that was previously given.
 
 Create a [support ticket](https://dynamics.microsoft.com/support/) to understand how your POA table is distributed and what kind of actions can be done to optimize the storage.
 
