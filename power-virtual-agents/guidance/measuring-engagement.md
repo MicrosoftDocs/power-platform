@@ -17,11 +17,10 @@ Tracking conversation engagement rates and outcomes is crucial to measure the ch
 
 ## Understanding conversations and analytics sessions
 
-> [!IMPORTANT]
-> **A single conversation** between an end-user and a Power Virtual Agents chatbot can generate **one or multiple analytics sessions**. <br> This typically happens when a user has new questions after an initial topic conversation path completed.
+ **A single conversation** between an end-user and a Power Virtual Agents chatbot can generate **one or multiple analytics sessions**. This typically happens when a user has new questions after an initial topic conversation path completed.
 
 > [!NOTE]
-> Analytics sessions and [billed sessions](/power-virtual-agents/preview/analytics-billed-sessions) are distinct concept.
+> Analytics sessions and [billed sessions](/power-virtual-agents/preview/analytics-billed-sessions) are distinct concepts.
 
 ## Engaged and unengaged analytics sessions
 
