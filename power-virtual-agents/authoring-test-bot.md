@@ -40,6 +40,8 @@ Use the **Test bot** pane to walk through your bot conversations as the user. It
 
 1. Select the bot response in the **Test bot** pane. This takes you to the topic and the node that sent the response. Nodes that have fired display a colored checkmark and a colored bottom border. 
 
+   :::image type="content" source="media/authoring-test-bot/colored-checkmark.png" alt-text="Screenshot of the node displaying a colored checkmark and border.":::
+
     >[!NOTE] 
     > As you continue the conversation with the test bot in the same topic, each node that fires is marked with the checkbox and bottom border and centered in the canvas. 
 
