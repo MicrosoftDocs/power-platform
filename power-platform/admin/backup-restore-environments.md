@@ -1,6 +1,6 @@
 ---
 title: Back up and restore environments | Microsoft Docs
-description: Covers how to back up and restore environments
+description: Provides information on how to back up and restore Power Platform environments
 ms.topic: conceptual
 ms.date: 07/12/2022
 ms.subservice: admin
