@@ -1,6 +1,6 @@
 ---
 title: "Deflection optimization techniques for Power Virtual Agents"
-description: "Set of best practices on how to improve deflection rate in a PVA chatbot"
+description: "Set of best practices on how to improve deflection rate in a Power Virtual Agents chatbot"
 author: athinesh
 
 ms.date: 1/20/2023
@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 ---
 # Deflection optimization techniques
 
-Return on investment (ROI) and improved customer satisfaction (CSAT) are top priorities for the organizations that implement Power Virtual Agents (PVA) bots. Optimizing the bot deflection rate is one of the top focus areas for organizations to achieve their business goals around ROI, CSAT etc. and improve the overall bot performance.  There are major indicators provided out-of-box in PVA to improve bot performance, such as resolution rate, escalation rate, and CSAT. While the metrics continue to evolve, there are several things you can do as a bot builder to improve the deflection rate of your PVA bot. This article covers the importance of deflection in conversational AI and some general techniques/considerations that are universal for optimizing deflection for bots.  
+Return on investment (ROI) and improved customer satisfaction (CSAT) are top priorities for the organizations that implement Power Virtual Agents bots. Optimizing the bot deflection rate is one of the top focus areas for organizations to achieve their business goals around ROI, CSAT etc. and improve the overall bot performance.  There are major indicators provided out-of-box in Power Virtual Agents to improve bot performance, such as resolution rate, escalation rate, and CSAT. While the metrics continue to evolve, there are several things you can do as a bot builder to improve the deflection rate of your Power Virtual Agents bot. This article covers the importance of deflection in conversational AI and some general techniques/considerations that are universal for optimizing deflection for bots.  
 In the context of conversational AI, deflection is an indicator representing the percentage of requests that are completed in a self-service fashion that live agents would otherwise handled. In other words, it refers to the number of items a team avoids having to deal with as a result of automation
 
 ## Why deflection optimization?
@@ -20,9 +20,9 @@ In the context of conversational AI, deflection is an indicator representing the
 More customers can get their issues resolved by the bot instead of waiting for a human agent in chat or phone, which results in a better customer experience and higher CSAT scores. While this help reduce wait time, live agents can also focus on more complex, higher-value tasks.
 Cost savings: one of the key ways to determine the ROI of the bot is by using the deflection rates. The human agent call support typically costs around $ 5-10 in the contact center industry. However, a bot session that resolves a customer request costs around 50 cents. Higher deflection rates lead to higher cost savings.
 
-## Understanding the key components of PVA analytics to improve deflection
+## Understanding the key components of Power Virtual Agents analytics to improve deflection
 
-A basic understanding of available PVA analytics is required to be able to determine what deflection means for your organization. The following table describes the key metrics from Power Virtual Agents:
+A basic understanding of available Power Virtual Agents analytics is required to be able to determine what deflection means for your organization. The following table describes the key metrics from Power Virtual Agents:
 
 |Description                     |Details                           |
 |--------------------------------|----------------------------------|
@@ -33,7 +33,7 @@ A basic understanding of available PVA analytics is required to be able to deter
 |  Abandon Rate                  | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is not resolved or escalated after one hour from the beginning of the session.                                 |
 |  CSAT                          | The graphical view of the average of customer satisfaction (CSAT) scores for sessions in which customers respond to an end-of-session request to take the survey.                                 |
 
-These metrics need to be continuously improved to optimize  the bot ROI. However, each organization may have their own definition of what deflection rate means to them. For example, an organization may consider “Abandon rate” along with “escalation rate” as part of deflection calculation while another organization may look purely at escalation rate. Despite having different definitions for deflection rate, the PVA metrics still provide the foundation to calculate deflection.
+These metrics need to be continuously improved to optimize  the bot ROI. However, each organization may have their own definition of what deflection rate means to them. For example, an organization may consider “Abandon rate” along with “escalation rate” as part of deflection calculation while another organization may look purely at escalation rate. Despite having different definitions for deflection rate, the Power Virtual Agents metrics still provide the foundation to calculate deflection.
 Based on our experience with various customers, we have seen that in the context of deflection, resolution rate and escalation rate play a major role. Increasing the resolution rate and reducing the escalation rate typically has a direct impact on the overall bot deflection metrics.
 
 ## Key Techniques
@@ -43,7 +43,7 @@ Based on our experience with various customers, we have seen that in the context
 ## Technique 1: topic escalation analysis
   
 Escalation is the conversation flow during which the bot couldn’t handle the conversation and escalated to a human agent. When a topic does not escalate to a human agent, it's considered as deflection. The ideal goal is to increase the deflection rate of a bot by reducing the number of escalations.
-PVA has multiple ways to handle escalation, the direct way of initiating an escalation to human agent is through the “Escalate” system topic. This system topic enables PVA to understand that the bot is no longer able to address the customer request and would need to escalate to a human agent. Through the “Escalate” topic, one can enable the bot to transfer the conversation to an agent service desk tool like Dynamics 365 Omnichannel for Customer Service for the live agent transfer or an asynchronous support experience like creating a ticket, scheduling a call back etc. A common way of triggering this escalation is through the “Transfer to agent” node in the PVA authoring canvas.
+Power Virtual Agents has multiple ways to handle escalation, the direct way of initiating an escalation to human agent is through the “Escalate” system topic. This system topic enables Power Virtual Agents to understand that the bot is no longer able to address the customer request and would need to escalate to a human agent. Through the “Escalate” topic, one can enable the bot to transfer the conversation to an agent service desk tool like Dynamics 365 Omnichannel for Customer Service for the live agent transfer or an asynchronous support experience like creating a ticket, scheduling a call back etc. A common way of triggering this escalation is through the “Transfer to agent” node in the Power Virtual Agents authoring canvas.
 ![transfer to agent](./media/introduction/df-transfer-agent.png)
 
 Power Virtual Agents has two types of escalations:
@@ -59,11 +59,11 @@ Power Virtual Agents has two types of escalations:
 
 ### STEP 1: Monitor and review topics performance
 
-Identifying and optimizing escalation rate drivers can be done through the built-in analytics provided in PVA or through custom analytics.
+Identifying and optimizing escalation rate drivers can be done through the built-in analytics provided in Power Virtual Agents or through custom analytics.
 
 Built-in analytics:
 
-PVA captures all the bot sessions that led to an escalation or transfer to an agent, from beginning to end, at the topic level. The bot topics are the escalation drivers. The PVA analytics dashboard has a section for “Escalation Rate Drivers” that gives the details on which are the bot topics that were escalated to human agents most of the time and why. This information is available in the numerical point of view and derived from the chat transcripts by the PVA analytics.
+Power Virtual Agents captures all the bot sessions that led to an escalation or transfer to an agent, from beginning to end, at the topic level. The bot topics are the escalation drivers. The Power Virtual Agents analytics dashboard has a section for “Escalation Rate Drivers” that gives the details on which are the bot topics that were escalated to human agents most of the time and why. This information is available in the numerical point of view and derived from the chat transcripts by the Power Virtual Agents analytics.
 
 For example, in the below screenshot under the “Escalation Rate Drivers” section we see the “Returns, Exchanges…” topic has a “Rate” value of 75%. Seventy-five percent of all the sessions that triggered the “Returns, Exchanges…” topic were escalated to a human agent. Since the bot couldn’t solve the issue for the user, 75% of the times when user asked about returns, the bot had to escalate to a human agent. Now the bot author can improve the “Returns, Exchanges..” topic to reduce the number of escalations happening through this topic.
 
@@ -98,7 +98,7 @@ Following is the step-by-step guidance you can use for dissecting the chat trans
 4. Read through each of the sessions and identify the various repeated dialog paths that are emerging for that topic related conversation.
 5. List out the dialog paths identified for each session and group them as per the dialog path.
 6. For each dialog path group, come up with a recommendation for improvement.
-7. Implement the recommendations in the PVA bot topics and observe the change in the escalation rate and deflection.
+7. Implement the recommendations in the Power Virtual Agents bot topics and observe the change in the escalation rate and deflection.
 
 Applying the above approach for the “Check Order Status” Topic example would look like this:
 ![check order example](./media/introduction/df-check-order.png)
@@ -130,7 +130,7 @@ Based on the outcome of the review of conversation transcripts, you can now make
 
 ## Technique 2: topic enrichment analysis  
 
-PVA has a built-in fallback system topic that is set to fire when the AI isn't able to find a matching intent/topic for a given user query. If most fallback topic conversations are escalated to a human agent – that is, not deflected – there's an opportunity to improve the deflection by addressing the usage patterns of the user that triggers fallback consistently. Topic enrichment is an offline data analysis exercise, focusing on repurposing such user queries that triggered a fallback topic into triggering relevant topics in PVA. The analyzed user queries from the fallback topic typically fall into these buckets:
+Power Virtual Agents has a built-in fallback system topic that is set to fire when the AI isn't able to find a matching intent/topic for a given user query. If most fallback topic conversations are escalated to a human agent – that is, not deflected – there's an opportunity to improve the deflection by addressing the usage patterns of the user that triggers fallback consistently. Topic enrichment is an offline data analysis exercise, focusing on repurposing such user queries that triggered a fallback topic into triggering relevant topics in PVA. The analyzed user queries from the fallback topic typically fall into these buckets:
 
 1. User queries that are expected to trigger existing topics, but are missed by the Natural Language Understanding (NLU) of the bot.
 2. User queries that can be converted to newly suggested topics.
@@ -139,12 +139,12 @@ PVA has a built-in fallback system topic that is set to fire when the AI isn't a
 Of the four categories, 1 and 2 are immediately actionable. Based on the findings from 1 and 2, you can enrich the topics by adding more trigger phrases for existing topics or creating new topics.
  ![enrichment or fallback analysis](./media/introduction/df-enrichment-analysis.png)
 
-Topic enrichment through out-of-the-box PVA Analytics.
-PVA provides some advanced AI capabilities out of box to identify the list of newly suggested topics, by enabling the “Advanced AI capabilities” in PVA for “Topic Suggestions based on Transcripts” when the author doesn't want to set up a fall back. This info can also be used to create new Topics to improve deflection rate.
+Topic enrichment through out-of-the-box Power Virtual Agents Analytics.
+Power Virtual Agents provides some advanced AI capabilities out of box to identify the list of newly suggested topics, by enabling the “Advanced AI capabilities” in Power Virtual Agents for “Topic Suggestions based on Transcripts” when the author doesn't want to set up a fall back. This info can also be used to create new Topics to improve deflection rate.
 ![OOB enrichment analysis](./media/introduction/df-oob-enrichment.png)
 
 Other approach topic enrichment exercise
-• Install the custom analytics for PVA (https://aka.ms/PVAAnalytics) that includes a "deflection analysis” page.
+• Install the custom analytics for Power Virtual Agents (https://aka.ms/PVAAnalytics) that includes a "deflection analysis” page.
 • Analyze a representative set of conversation transcripts for this exercise.
 • Under the deflection analysis report, you'll find charts of session clusters with word cloud based on user queries and their occurrences. The report contains the following info:
     o Word clouds of user queries similar to existing topics
@@ -163,14 +163,14 @@ Using semantically similar trigger phrases for two different topics can lead to 
 A topic confusion analysis exercise helps you improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
 Identifying semantically similar trigger phrases can also help you determine if you have topics that themselves are similar. You can then consolidate to simplify the bot authoring process, or edit to make the topics more distinct. Improving the high triggering accuracy improves the deflection rate.
 
-You can identify the list of topics causing confusion during triggering, by enabling the “AI capabilities” in PVA for “topic overlap detection”. This standard capability helps you to identify the trigger phrases causing confusion and remove duplicates, and consolidate similar topics.
+You can identify the list of topics causing confusion during triggering, by enabling the “AI capabilities” in Power Virtual Agents for “topic overlap detection”. This standard capability helps you to identify the trigger phrases causing confusion and remove duplicates, and consolidate similar topics.
 ![topic confusion analysis](./media/introduction/df-topic-confusion-analysis.png)
   
 ## Technique 4: alternate escalation paths
 
 There are a few strategies you can use to deflect the user from reaching the human agent when the bot user decides to escalate, without deprecating the user experience:
 
-1. Check for operating hours and queue size during escalation:  in this approach, you can have a self-service action inside PVA (for example, a Power Automate cloud flow) that checks for the operating hours of the human agent and agent queue size from the engagement hub (for example, Dynamics 365 Omnichannel for Customer Service). It then transfers the chat only if the agent is available in the current hour or if the queue isn't full. If the escalation happens outside the operating hours of agent or the agent queue is full, then the bot can redirect the user to email support or schedule a call back or some other action. This approach avoids unnecessary escalation and in turn improves the deflection rate.
+1. Check for operating hours and queue size during escalation:  in this approach, you can have a self-service action inside Power Virtual Agents (for example, a Power Automate cloud flow) that checks for the operating hours of the human agent and agent queue size from the engagement hub (for example, Dynamics 365 Omnichannel for Customer Service). It then transfers the chat only if the agent is available in the current hour or if the queue isn't full. If the escalation happens outside the operating hours of agent or the agent queue is full, then the bot can redirect the user to email support or schedule a call back or some other action. This approach avoids unnecessary escalation and in turn improves the deflection rate.
 
 2. Provide an option to create a support ticket during escalation: When the user escalates to an agent, the bot can redirect through a self-service action to create a support ticket by providing the required details.
   
@@ -184,11 +184,11 @@ Analyzing the agent transcripts can provide insights on what new topics or self-
 4. Read through each of the human agent conversations and identify the resolution path provided by the human agents and patterns that are emerging for that conversation.
 5. List out the resolution paths identified for each session and group them as per the resolution paths.
 6. For each resolution path group, come up with a recommendation for implementing it in the bot as a topic or self-service action etc.
-7. Implement the recommendations in the PVA bot topics and observe the change in the escalation rate and deflection.
+7. Implement the recommendations in the Power Virtual Agents bot topics and observe the change in the escalation rate and deflection.
 
 ## Appendix
 
-Sharing the PVA documentation links referred to:
+Sharing the Power Virtual Agents documentation links referred to:
 • Hand off to a live agent (contains video) - Power Virtual Agents | Microsoft Docs
 • Report analytics, performance, and usage (contains video) - Power Virtual Agents | Microsoft Docs
 • Download chatbot sessions - Power Virtual Agents | Microsoft Docs
