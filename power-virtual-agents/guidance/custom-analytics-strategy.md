@@ -2,9 +2,7 @@
 title: "Custom Analytics strategy for Power Virtual Agents"
 description: "Set of best practices on custom analytics for Power Virtual Agents"
 author: athinesh
-
 ms.date: 1/20/2023
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: athinesh

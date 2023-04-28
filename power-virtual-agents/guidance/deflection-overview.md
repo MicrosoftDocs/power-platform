@@ -2,9 +2,7 @@
 title: "Deflection Overview"
 description: "Best practices to improve deflection rate in a Power Virtual Agents chatbot"
 author: athinesh
-
 ms.date: 1/20/2023
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: athinesh

@@ -2,9 +2,7 @@
 title: "Deflection topic confusion analysis"
 description: "Set of best practices based on confusion analysis to improve the deflection rate of a Power Virtual Agents chatbot"
 author: athinesh
-
 ms.date: 1/20/2023
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: athinesh
