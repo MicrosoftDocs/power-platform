@@ -15,31 +15,32 @@ ms.collection: virtual-agent
 
 ## Create and organize topics in a way that's manageable and maintainable for your context
 
-Power Virtual Agents offers a lot of flexibility when it comes to topic management. While there is no *one size fits all*, given how topics can be triggered, it's a good practice to distinguish between:
+Power Virtual Agents offers much flexibility when it comes to topic management. While there's no _one size fits all_, given how topics can be triggered, it's a good practice to distinguish between:
 > [!div class="checklist"]
-> * **Topics that will trigger based on the user utterance** and the Natural Language Understanding model. These can almost be seen as your **entry points topics**. <br> If you have trigger phrases that overlap multiple topics, it's good to have a catch-all topic (or *disambiguation topic*) and then redirect to other topics through slot filling, clarifying questions. Thanks to entity extraction, clarifying questions can potentially be skipped and the conversation directly flow to the appropriate topic, without further input from the user.
-> * **Topics that will trigger when called from a redirect action**. These can contain conversation and logic nodes, can be called by multiple topics, and can have input and output variables. They're ideally **reusable, bite-size, topics**.
-> * **A topic can also be both**, triggered through intent recognition or by an explicit redirect.
+>
+> - **Topics that will trigger based on the user utterance** and the Natural Language Understanding model. These can almost be seen as your **entry points topics**. <br> If you have trigger phrases that overlap multiple topics, it's good to have a catch-all topic (or _disambiguation topic_) and then redirect to other topics through slot filling, clarifying questions. Thanks to entity extraction, clarifying questions can potentially be skipped and the conversation directly flow to the appropriate topic, without further input from the user.
+> - **Topics that will trigger when called from a redirect action**. These can contain conversation and logic nodes, can be called by multiple topics, and can have input and output variables. They're ideally **reusable, bite-size, topics**.
+> - **A topic can also be both**, triggered through intent recognition or by an explicit redirect.
 
 > [!TIP]
-> In the example below, trigger phrases are associated to two main topics, that then break down their logic into multiple topics that are called with redirect actions. <br> Some topics can be called by multiple other topics: that's typically the case with the End Of Conversation topic.
-> 
-> Thanks to slot filling and entity extraction, if a user says "*I need to unblock my credit card*", the `Card` topic will get triggered and both `Debit/Credit` and `Block/Unblock` questions will be skipped, as the `CardType` and `OperationType` will be deduced from the trigger phrase. That way, the appropriate `Credit Card` child topic will automatically be called, without the user providing any additional input.
+> In the following example, trigger phrases are associated to two main topics, that then break down their logic into multiple topics that are called with redirect actions. <br> Some topics can be called by multiple other topics: that's typically the case with the End Of Conversation topic.
+>
+> Thanks to slot filling and entity extraction, if a user says "_I need to unblock my credit card_", the `Card` topic will get triggered and both `Debit/Credit` and `Block/Unblock` questions will be skipped, as the `CardType` and `OperationType` will be deduced from the trigger phrase. That way, the appropriate `Credit Card` child topic will automatically be called, without the user providing any additional input.
 
 ![Diagram showing Power Virtual Agents topics being triggered by trigger phrases but also by other topics.](./media/topics/topic-authoring-best-practices.png)
 
 ## Create bite-size topics
 
-Very large topics can be challenging to maintain and update, so it's a good idea to break down your chatbot logic whenever possible, especially if parts of your bot conversation logic can be shared by multiple topics.
+Large topics can be challenging to maintain and update. It's a good idea to break down your chatbot logic whenever possible, especially if parts of your bot conversation logic can be shared by multiple topics.
 Topics don’t need to all have trigger phrases, as topics can redirect to other topics and pass variable information back and forth.
 
 > [!TIP]
 > It’s often more manageable to create many bite-size topics rather than a few large topics. Taking this approach also helps making triggering more effective, by clearly mapping trigger phrases to the specific topics that address those areas.
 
-The number of topics is a Conversational Design preference and decision, as it either results in having a few bigger topic (in case of joining) or having more smaller topics (in case of splitting). 
+The number of topics is a Conversational Design preference and decision. It either results in having a few bigger topic (if there's joining) or having smaller topics (if there's splitting).
 
 > [!TIP]
-> For intents that are more complex to recognize (for example, for generic words, such as "*request*" or "*issue*", as these could be about different things), then splitting the topics might be a better option, with adequate trigger phrases.
+> For intents that are more complex to recognize (for example, for generic words, such as "_request_" or "_issue_", as these could be about different things), then splitting the topics might be a better option, with adequate trigger phrases.
 
 ## Create reusable topics
 
@@ -49,41 +50,44 @@ That way, a single update to that topic reflects on all the topics redirecting t
 > [!TIP]
 > If you call the same Power Automate cloud flows from multiple Power Virtual Agents topics with the same or similar before and after nodes, it's a good idea to group them in a dedicated topic.
 
-## Avoid topic overlap 
+## Avoid topic overlap
 
 ### Monitor and remove ambiguity between topics
 
-When topics are triggered with Natural Language Understanding, it's very important to avoid overlap issues. Overlap issues typically reflect through a large number of [Multiple Topics Matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched) (a.k.a. *Did You Mean*).
+When topics are triggered with Natural Language Understanding, it's important to avoid overlap issues. Overlap issues typically reflect through a large number of [Multiple Topics Matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched) (also known as _Did You Mean_).
 
 You can avoid these issues by reducing the overlap in intent meaning between the trigger phrases of different topics.
 
 > [!TIP]
 > For topics triggered with trigger phrases, you should:
+>
 > - Compare the trigger phrases across your topics and remove ambiguous pairs.
-> - Try to not use the same words in different topics trigger phrases. 
-> 
+> - Try to not use the same words in different topics trigger phrases.
+>
 > There are multiple ways to monitor topic overlap:
+>
 > - Analyze the user utterances that trigger a “Did You Mean” topic, as it’s a key > indicator that you have overlap
 > - Power Virtual Agents offers a [topic overlap detection](/power-virtual-agents/advanced-ai-features#topic-overlap-detection) feature, that lets bot authors discover overlapping topics to resolve accordingly (deleting/moving trigger phrases between topics).
 
 ### Create a disambiguation topic
 
-When multiple topics have trigger phrases that are too close, you can avoid topic overlap by creating a disambiguation topic. 
+When multiple topics have trigger phrases that are too close, you can avoid topic overlap by creating a disambiguation topic.
 
 > [!TIP]
-> To continue on the previous example, to address with certainty scenarios such as "*unblock credit card*" or "*unblock debit card*", where users might just say "*unblock card*" and the Natural Language Understanding model doesn’t know what specific topic and process to trigger, you can call a generic `Card` disambiguation topic, use an entity slot filling question for `CardType`, and launch the appropriate topic accordingly.
+> To continue on the previous example, to address with certainty scenarios such as "_unblock credit card_" or "_unblock debit card_", where users might just say "_unblock card_" and the Natural Language Understanding model doesn’t know what specific topic and process to trigger, you can call a generic `Card` disambiguation topic, use an entity slot filling question for `CardType`, and launch the appropriate topic accordingly.
 
-## Leverage entities to reduce the number of topics
+## Use entities to reduce the number of topics
 
-You should avoid unnecessarily duplicating logic when it the variation could be stored in a variable. For example, instead of creating very similar topic, such as:
+You should avoid duplicating logic when the variation could be stored in a variable. For example, instead of creating similar topic, such as:
+
 - Order Pizzas
 - Order Burgers
 - Order Drinks
 
 You should create:
-- 1 topic for `Order`
-- 1 entity for `FoodType`, with Pizzas/Burgers/Drinks as values.
 
+- One topic for `Order`
+- One entity for `FoodType`, with Pizzas/Burgers/Drinks as values.
 
 > [!div class="nextstepaction"]
 > [Leverage the Fallback topic](fallback-topic.md)

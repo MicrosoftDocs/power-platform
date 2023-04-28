@@ -13,11 +13,11 @@ ms.collection: virtual-agent
 
 # Measuring chatbot engagement
 
-Tracking conversation engagement rates and outcomes is crucial to measure the chatbot performance metrics and spot areas for improvements.
+Tracking conversation engagement rates and outcomes are crucial to measure the chatbot performance metrics and spot areas for improvements.
 
 ## Understanding conversations and analytics sessions
 
- **A single conversation** between an end-user and a Power Virtual Agents chatbot can generate **one or multiple analytics sessions**. This typically happens when a user has new questions after an initial topic conversation path completed.
+ **A single conversation** between an end-user and a Power Virtual Agents chatbot can generate **one or multiple analytics sessions**, typically happening when a user has new questions after an initial topic conversation path completed.
 
 > [!NOTE]
 > Analytics sessions and [billed sessions](/power-virtual-agents/preview/analytics-billed-sessions) are distinct concepts.
@@ -37,7 +37,7 @@ This notion is used in the Power Virtual Agents [analytics dashboard](power-virt
 > - A session starts when a user interacts with the chatbot or when the chatbot sends a proactive message to the user.
 > - The analytics session begins in an **unengaged** state.
 > - An analytics session becomes **engaged** when either entering a **custom topic** or the **Escalate** topic.
-> - The last custom topic triggered — or the first system topic triggered, if no custom topics were triggered — is associated with the analytics session.
+> - The last custom topic triggered—or the first system topic triggered, if no custom topics were triggered—is associated with the analytics session.
 
  ![Chatbot engagement](./media/chatbot-engagement.png)
 

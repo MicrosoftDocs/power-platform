@@ -12,7 +12,7 @@
         href: defining-chatbot-topics.md
       - name: Topic authoring best practices
         href: topic-authoring-best-practices.md
-      - name: Leveraging the Fallback topic
+      - name: Using the Fallback topic
         href: fallback-topic.md
     - name: Trigger phrases best practices
       href: trigger-phrases-best-practices.md  

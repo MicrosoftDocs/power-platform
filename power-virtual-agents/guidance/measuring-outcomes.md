@@ -13,9 +13,9 @@ ms.collection: virtual-agent
 
 # Measuring chatbot outcomes
 
-Unengaged sessions always have an outcome of None. 
+Unengaged sessions always have an outcome of None.
 
-Once it's engaged, it remains engaged. An engaged session will have one of the following outcomes: resolved, escalated, or abandoned.
+Once it's engaged, it remains engaged. An engaged session has one of the following outcomes: resolved, escalated, or abandoned.
 A session ends and is considered escalated when the Escalate topic is triggered or a Transfer to agent node is run. (The current analytics session ends, whether the conversation transfers to a live agent or not.)
 A session ends and is considered resolved when either:
 The Confirmed Success topic is triggered.
