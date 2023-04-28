@@ -45,9 +45,9 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Embed a chatbot on a Power Page
+          - text: Embed a chatbot in Power Pages
             url: /power-pages/guidance/integrate-pva.md
-          - text: Embed a chatbot on a Power Apps
+          - text: Embed a chatbot in Power Apps
             url: /power-apps/maker/canvas-apps/add-ai-chatbota.md  
           - text: Search and return results from Dataverse
             url: /power-virtual-agents/advanced-flow-list-of-results.md  
