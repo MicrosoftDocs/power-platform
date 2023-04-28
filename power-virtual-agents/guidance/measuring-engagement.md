@@ -29,16 +29,17 @@ Analytics sessions are either **unengaged** (default) or **engaged**.
 This notion is used in the Power Virtual Agents [analytics dashboard](power-virtual-agents/preview/analytics-summary).
 
 > [!TIP]
-> Analytics session engagement is also tracked in [conversation transcript records in Dataverse](/power-virtual-agents/analytics-sessions-transcripts), if you have a [custom analytics strategy](/power-virtual-agents/guidance/custom-analytics-strategy).
+> Analytics session engagement is also tracked in [conversation transcript records in Dataverse](../analytics-sessions-transcripts.md), if you have a [custom analytics strategy](./custom-analytics-strategy.md).
 <br> In a conversation transcript record `content`, the engagement status of a session (either `unengaged` or `engaged`) is available as part of the `SessionInfo` activity, in the `value` `type`.
 
 > [!div class="checklist"]
-> * A session starts when a user interacts with the chatbot or when the chatbot sends a proactive message to the user. 
-> * The analytics session begins in an **unengaged** state.
-> * An analytics session becomes **engaged** when either entering a **custom topic** or the **Escalate** topic.
-> * The last custom topic triggered — or the first system topic triggered, if no custom topics were triggered — is associated with the analytics session.
+>
+> - A session starts when a user interacts with the chatbot or when the chatbot sends a proactive message to the user.
+> - The analytics session begins in an **unengaged** state.
+> - An analytics session becomes **engaged** when either entering a **custom topic** or the **Escalate** topic.
+> - The last custom topic triggered — or the first system topic triggered, if no custom topics were triggered — is associated with the analytics session.
 
- ![Chatbot engageme t](./media/chatbot-engagement.png)
+ ![Chatbot engagement](./media/chatbot-engagement.png)
 
 > [!NOTE]
 > Having a chatbot that [proactively starts a conversation](/power-virtual-agents/configure-bot-greeting) or that is placed on a website can greatly increase the session total and the number of unengaged sessions.
