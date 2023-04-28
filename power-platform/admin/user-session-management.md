@@ -74,7 +74,7 @@ For environments that require different session timeout values, administrators c
 ## Inactivity timeout
 By default, customer engagement apps do not enforce an inactivity session timeout.  A user can remain logged in the application until the session timeout expires.  You can change this behavior.
 
-- To enforce users too automatically signed out after a pre-determined period of inactivity, admins can set an inactivity timeout period for each of their environments. The application signs out the user when the inactivity session expires.
+- To enforce users to automatically be signed out after a pre-determined period of inactivity, admins can set an inactivity timeout period for each of their environments. The application signs out the user when the inactivity session expires.
 
 > [!NOTE]
 > Inactivity session timeout is not enforced in the following:
