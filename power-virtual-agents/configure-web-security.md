@@ -7,9 +7,9 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: clmori
 ms.custom: configuration, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -47,7 +47,7 @@ Once this option is enabled, channels will need the client to authenticate their
 
 Any access to the bot that doesn't provide this security measure won't work.
 
-1. On the side pane, navigate to **Manage** > **Security** > **Web channel security**.
+1. In the navigation menu, under **Settings**, select **Security**. Then select the **Web channel security** tile.
 
     :::image type="content" source="media/configure-web-security/settings-web-channel.png" alt-text="Screenshot showing Web channel security highlighted on the Settings flyout.":::
 
@@ -83,7 +83,7 @@ Choose the security model that works best for your situation.
 
 You'll need the secret so you can specify it in your app's authorization header requests or similar.
 
-1. On the side pane, navigate to **Manage** > **Security** > **Web channel security**.
+1. In the navigation menu, under **Settings**, select **Security**. Then select the **Web channel security** tile.
 
 1. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon :::image type="content" source="media/configure-web-security/visibility-icon.png" alt-text="Visibility icon." border="false"::: to reveal the secret. A warning prompt will appear before you can reveal it.
 

@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 05/13/2021
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # AsType and IsType functions in Power Apps
@@ -81,12 +80,12 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
 **AsType**( _RecordReference_, _TableType_ )
 
 - _RecordReference_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
-- _TableType_ - Required. The specific table for which to test.
+- _TableType_ - Required. The specific table to which the record should be cast.
 
 **IsType**( _RecordReference_, _TableType_ )
 
 - _RecordReference_ - Required. A record reference, often a lookup field that can refer to a record in any of multiple tables.
-- _TableType_ - Required. The specific table to which the record should be cast.
+- _TableType_ - Required. The specific table for which to test.
 
 ## Example
 
@@ -106,17 +105,21 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
 
 1. Set the gallery's layout to **Title and subtitle**.
 
-   > [!div class="mx-imgBorder"] > ![Open the layout picker from the properties pane.](media/function-astype-istype/contacts-customer-layout.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Open the layout picker from the properties pane.](media/function-astype-istype/contacts-customer-layout.png)
 
-   > [!div class="mx-imgBorder"] > ![Set layout to Title and subtitle.](media/function-astype-istype/contacts-customer-flyout.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Set layout to Title and subtitle.](media/function-astype-istype/contacts-customer-flyout.png)
 
 1. In the **Data** pane, open the **Title1** list, and then select **Full Name**.
 
-   > [!div class="mx-imgBorder"] > ![Set title value.](media/function-astype-istype/contacts-customer-title.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Set title value.](media/function-astype-istype/contacts-customer-title.png)
 
 1. Select the **Subtitle1** label control.
 
-   > [!div class="mx-imgBorder"] > ![Set subtitle value.](media/function-astype-istype/contacts-customer-subtitle.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Set subtitle value.](media/function-astype-istype/contacts-customer-subtitle.png)
 
 1. Set the **Text** property of **Subtitle1** to this formula:
 
@@ -128,7 +131,8 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
    )
    ```
 
-   > [!div class="mx-imgBorder"] > ![Screen is now complete showing accounts and contacts intermixed in the gallery.](media/function-astype-istype/contacts-customer-complete.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Screen is now complete showing accounts and contacts intermixed in the gallery.](media/function-astype-istype/contacts-customer-complete.png)
 
    The subtitle in the gallery shows these values:
 

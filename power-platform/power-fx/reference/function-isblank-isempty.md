@@ -5,18 +5,17 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.component: canvas
 ms.date: 05/24/2021
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Blank, Coalesce, IsBlank, and IsEmpty functions in Power Apps
@@ -42,7 +41,7 @@ The **Blank** function returns a _blank_ value. Use this to store a NULL value i
 
 ## IsBlank
 
-The **IsBlank** function tests for a _blank_ value or an empty string. The test includes empty strings to ease app creation since some data sources and controls use an empty string when there is no value present. To test specifically for a _blank_ value use `if( Value = Blank(), ...` instead of **IsBlank**.
+The **IsBlank** function tests for a _blank_ value or an empty string. The test includes empty strings to ease app creation since some data sources and controls use an empty string when there is no value present. To test specifically for a _blank_ value use `if( Value = Blank(), ...` instead of **IsBlank**. The **IsBlank** function considers empty tables as not blank, and **IsEmpty** should be used to test a table.
 
 When enabling error handling for existing apps, consider replacing **IsBlank** with [**IsBlankOrError**](function-iferror.md#isblankorerror) to preserve existing app behavior. Prior to the addition of error handling, a _blank_ value was used to represent both null values from databases and error values. Error handling separates these two interpretations of _blank_ which could change the behavior of existing apps that continue to use **IsBlank**.
 

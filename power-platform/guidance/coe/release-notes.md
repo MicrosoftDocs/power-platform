@@ -2,7 +2,6 @@
 title: "CoE Starter Kit Release Notes | MicrosoftDocs"
 description: "Latest version and release notes for the CoE Starter Kit"
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Released versions for the CoE Starter Kit

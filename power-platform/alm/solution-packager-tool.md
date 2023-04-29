@@ -1,6 +1,6 @@
 ---
 title: "SolutionPackager tool (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
-description: "SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files and other files so that these files can be easily managed by a source control system." # 115-145 characters including spaces. This abstract displays in the search result.
+description: "SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.custom: ""
 ms.date: 06/15/2020
 ms.reviewer: "pehecke"
@@ -9,22 +9,24 @@ ms.topic: "article"
 author: "shmcarth" # GitHub ID
 ms.subservice: alm
 ms.author: "jdaly" # MSFT alias of Microsoft employees only
-manager: "ryjones" # MSFT alias of manager or PM counterpart
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # SolutionPackager tool
 
-SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files and other files so that these files can be easily managed by a source control system. The following sections show you how to run the tool and how to use the tool with managed and unmanaged solutions.  
+SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files and other files. You can then easily manage these files by using a source control system. The following sections show you how to run the tool and how to use the tool with managed and unmanaged solutions.  
   
 <a name="bkm_where"></a>   
 
 ## Where to find the SolutionPackager tool  
 
- The SolutionPackager tool is distributed as part of the [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGet package. See [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget) for information about how to download it.
+ The SolutionPackager tool is distributed as part of the [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGet package. To install the program, follow these steps.
+
+1. Download the NuGet package.
+1. Rename the package filename extension from .nupkg to .zip.
+1. Extract the contents of the compressed (zip) file.
+
+You will find the SolutionPackager.exe executable in the \<extracted-folder-name\>/contents/bin/coretools folder. Run the program from the coretools folder or add that folder to your PATH.
   
 <a name="arguments"></a>   
 
@@ -35,11 +37,11 @@ SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse c
 |Argument|Description|  
 |--------------|-----------------|  
 |/action: {Extract&#124;Pack}|Required. The action to perform. The action can be either to extract a solution .zip file to a folder, or to pack a folder into a .zip file.|  
-|/zipfile: \<file path>|Required. The path and name of a solution .zip file. When extracting, the file must exist and will be read from. When packing, the file is replaced.|  
+|/zipfile: \<file path>|Required. The path and name of a solution .zip file. When extracting, the file must exist and be readable. When packing, the file is replaced.|  
 |/folder: \<folder path>|Required. The path to a folder. When extracting, this folder is created and populated with component files. When packing, this folder must already exist and contain previously extracted component files.|  
-|/packagetype: {Unmanaged&#124;Managed&#124;Both}|Optional. The type of package to process. The default value is Unmanaged. This argument may be omitted in most occasions because the package type can be read from inside the .zip file or component files. When extracting and Both is specified, managed and unmanaged solution .zip files must be present and are processed into a single folder. When packing and Both is specified, managed and unmanaged solution .zip files will be produced from one folder. For more information, see the section on working with managed and unmanaged solutions later in this topic.|  
+|/packagetype: {Unmanaged&#124;Managed&#124;Both}|Optional. The type of package to process. The default value is Unmanaged. This argument may be omitted in most occasions because the package type can be read from inside the .zip file or component files. When extracting and Both is specified, managed and unmanaged solution .zip files must be present and are processed into a single folder. When packing and Both is specified, managed and unmanaged solution .zip files are produced from one folder. For more information, see the section on working with managed and unmanaged solutions later in this topic.|  
 |/allowWrite:{Yes&#124;No}|Optional. The default value is Yes. This argument is used only during an extraction. When /allowWrite:No is specified, the tool performs all operations but is prevented from writing or deleting any files. The extract operation can be safely assessed without overwriting or deleting any existing files.|  
-|/allowDelete:{Yes&#124;No&#124;Prompt}|Optional. The default value is Prompt. This argument is used only during an extraction. When /allowDelete:Yes is specified, any files present in the folder specified by the /folder parameter that are not expected are automatically deleted. When /allowDelete:No is specified, no deletes will occur. When /allowDelete:Prompt is specified, the user is prompted through the console to allow or deny all delete operations. Note that if /allowWrite:No is specified, no deletes will occur even if /allowDelete:Yes is also specified.|  
+|/allowDelete:{Yes&#124;No&#124;Prompt}|Optional. The default value is Prompt. This argument is used only during an extraction. When /allowDelete:Yes is specified, any files present in the folder specified by the /folder parameter that are not expected are automatically deleted. When /allowDelete:No is specified, no deletes occur. When /allowDelete:Prompt is specified, the user is prompted through the console to allow or deny all delete operations. If /allowWrite:No is specified, no deletes occur even if /allowDelete:Yes is also specified.|  
 |/clobber|Optional. This argument is used only during an extraction. When /clobber is specified, files that have the read-only attribute set are overwritten or deleted. When not specified, files with the read-only attribute aren’t overwritten or deleted.|  
 |/errorlevel: {Off&#124;Error&#124;Warning&#124;Info&#124;Verbose}|Optional. The default value is Info. This argument indicates the level of logging information to output.|  
 |/map: \<file path>|Optional. The path and name of an .xml file containing file mapping directives. When used during an extraction, files typically read from inside the folder specified by the /folder parameter are read from alternate locations as specified in the mapping file. During a pack operation, files that match the directives aren’t written.|  
@@ -55,11 +57,11 @@ SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse c
 
 The following discussion details the use of the /map argument to the SolutionPackager tool.  
   
-Files that are built in an automated build system, such as .xap Silverlight files and plug-in assemblies, are typically not checked into source control. Web resources may already be present in source control in locations that are not directly compatible with the SolutionPackager tool. By including the /map parameter, the SolutionPackager tool can be directed to read and package such files from alternate locations and not from inside the Extract folder as it would typically be done. The /map parameter must specify the name and path to an XML file containing mapping directives that instruct the SolutionPackager to match files by their name and path, and indicate the alternate location to find the matched file. The following information applies to all directives equally.  
+Files that are built in an automated build system, such as .xap Silverlight files and plug-in assemblies, are typically not checked into source control. Web resources may already be present in source control in locations that aren't directly compatible with the SolutionPackager tool. By including the /map parameter, the SolutionPackager tool can be directed to read and package such files from alternate locations and not from inside the Extract folder as it would typically be done. The /map parameter must specify the name and path to an XML file containing mapping directives. Those directives instruct the SolutionPackager to match files by their name and path, and indicate the alternate location to find the matched file. The following information applies to all directives equally.  
   
-- Multiple directives may be listed including those that will match identical files. Directives listed early in the file take precedence over those listed later.  
+- Multiple directives may be listed including those directives that match identical files. Directives listed early in the file take precedence over directives listed later.  
   
-- If a file is matched to any directive, it must be found in at least one alternative location. If no matching alternatives are found, the SolutionPackager will issue an error.  
+- If a file is matched to any directive, it must be found in at least one alternative location. If no matching alternatives are found, the SolutionPackager issues an error.  
   
 - Folder and file paths may be absolute or relative. Relative paths are always evaluated from the folder specified by the /folder parameter.  
   
@@ -75,7 +77,7 @@ Files that are built in an automated build system, such as .xap Silverlight file
 
 ### Folder mapping  
 
-The following provides detailed information on folder mapping.  
+The following information provides detailed information on folder mapping.  
   
 **Xml Format**
 
@@ -83,11 +85,11 @@ The following provides detailed information on folder mapping.
   
 **Description**
 
-File paths that match “folderA” will be switched to “folderB”.  
+File paths that match “folderA” are switched to “folderB”.  
   
 - The hierarchy of subfolders under each must exactly match.  
   
-- Folder wildcards are not supported.  
+- Folder wildcards aren't supported.  
   
 - No file names may be specified.  
   
@@ -103,7 +105,7 @@ File paths that match “folderA” will be switched to “folderB”.
 
 ### File To file mapping  
 
-The following provides detailed information on file-to-file mapping.  
+The following information provides more details on file-to-file mapping.  
   
  **Xml Format**
 

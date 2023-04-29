@@ -7,12 +7,14 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "publication, fundamentals, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Key concepts - Publish your bot
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -39,7 +41,7 @@ Each time you want to update your bot, you publish it again from within the Powe
 
 You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you'd like your customers to engage with the latest bot content.
 
-1. On the left side pane, select the **Publish** tab.
+1. In the navigation menu, select the **Publish** tab.
 
 1. Select **Publish** to make the latest bot content available to your customers.
 
@@ -66,8 +68,8 @@ After publishing your bot at least once, you can add channels to make the bot re
 
 To configure channels:
 
-1. Select **Manage**.
-1. In the left side pane, select the **Channels** tab.
+1. Select **Settings**.
+1. In the navigation menu, select the **Channels** tab.
 
 :::image type="content" source="media/publication-fundamentals-publish-channels/channel-channels-menu.png" alt-text="Channel settings." border="false":::
 

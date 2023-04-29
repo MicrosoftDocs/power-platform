@@ -13,14 +13,8 @@ ms.collection: virtual-agent
 author: iaanw
 ms.subservice: admin
 ms.author: iawilt
-manager: shellyha
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Administer Power Virtual Agents
 

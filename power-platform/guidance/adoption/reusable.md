@@ -2,7 +2,6 @@
 title: "Share your own templates - Microsoft Power Platform | MicrosoftDocs"
 description: "Templates are a great way to learn more about features in Power Apps and a great learning tool where makers can browse and try samples."
 author: manuelap-msft
-manager: pratapladhani
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Share your own templates and reusable components
 

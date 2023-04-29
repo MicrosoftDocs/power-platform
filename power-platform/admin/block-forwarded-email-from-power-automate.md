@@ -12,11 +12,6 @@ ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Email exfiltration controls for connectors
 
@@ -25,6 +20,9 @@ search.app:
 Microsoft Power Platform has the capability to insert specific SMTP headers in email messages sent through Power Automate and Power Apps. It does this using Microsoft 365 Exchange/Outlook connectors. You can use these SMTP headers to set up appropriate exfiltration rules. These rules are for the unauthorized transfer of data from one device to another in Exchange for outbound emails.  
 
 For more details on the Microsoft 365 Outlook connector, see: [SMTP headers](/connectors/office365/#smtp-headers). 
+
+>[!NOTE]
+>This method of exfiltration control is not available in GCC High and DoD environments.  In these clouds the x-ms-mail-* headers are not used.
 
 ## Block exfiltration of forwarded emails 
 

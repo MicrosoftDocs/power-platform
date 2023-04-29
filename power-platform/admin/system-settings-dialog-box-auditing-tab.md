@@ -1,20 +1,14 @@
 ---
 title: "System Settings Auditing tab  | MicrosoftDocs"
 description: System Settings Auditing tab 
-author: jimholtz
-
+author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/05/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: matp
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # System Settings Auditing tab
 
@@ -42,6 +36,8 @@ Enable auditing to track changes to your organization's data and maintain a log 
 | Audit user access | Default: Off. If enabled, customer engagement apps (such as Dynamics 365 Sales and Customer Service) track when the user started accessing customer engagement apps and whether or not the user accessed the application by using the web application or Dynamics 365 for Outlook.  |  
 | Start Read Auditing | Default: Off. Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage). |
 
+> [!NOTE]
+> Enabling the **Start Read Auditing** setting is only applicable to [production environments and a Microsoft/Office 365 E1 or greater license](/power-platform/admin/enable-use-comprehensive-auditing). It also requires [enabling the table's auditing settings for **Single record auditing** and **Multiple record auditing**](/power-platform/admin/enable-use-comprehensive-auditing#enable-auditing).
 
 Specify to audit specific areas of the product, as described in the following table. 
 

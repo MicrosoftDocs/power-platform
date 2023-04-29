@@ -7,9 +7,9 @@ ms.date: 08/26/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: micchow
 ms.custom: "teams, flow, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -237,7 +237,7 @@ In this example, you'll send an order confirmation card that allows the user to 
             },
             {
                 "type": "Action.Submit",
-                "title": "Edit Order",
+                "title": "Edit Order"
             }
         ]
     }

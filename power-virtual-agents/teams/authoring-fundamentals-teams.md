@@ -1,14 +1,14 @@
 ---
 title: "Chatbot authoring in Microsoft Teams"
 description: "Discover how to create bots and topics easily in the Power Virtual Agents app in Microsoft Teams."
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 9/22/2020
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "authoring, fundamentals, ce06092020"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -50,7 +50,7 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 - ```Alt + Shift + B``` will read out the target node.
 
 > [!NOTE]
-> If you are using a screen reader, note that the sidebar menu entry labeled **Manage** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded.
+> If you are using a screen reader, note that the navigation menu entry labeled **Settings** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded.
 
 ## In this section
 

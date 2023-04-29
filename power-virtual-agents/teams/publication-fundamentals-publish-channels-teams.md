@@ -1,15 +1,15 @@
 ---
 title: "Fundamentals - Publish a chatbot to various channels in Microsoft Teams"
 description: "Publish your bot to Microsoft Teams."
-keywords: "Publish; demo; demo website; channels, PVA"
+keywords: "Publish; demo; demo website; channels, PVA, Teams"
 ms.date: 01/25/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: micchow
 ms.custom: "publication, fundamentals, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -38,7 +38,7 @@ After the first publish, you can do subsequent publishes whenever you would like
 
 **Publish the latest bot content:**
 
-1. Go to the **Publish** tab on the side pane.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Publish** to make the latest bot content available to your customers.
 
@@ -53,13 +53,13 @@ You can also install the bot for your own use in Microsoft Teams by selecting **
 > [!TIP]
 > To prevent disrupting users who are having an existing conversation with the bot, they will not receive the latest published content until a new conversation has started. A new conversation starts after it has been idle for more than 30 minutes.
 >
-> You may want to try out the latest published content in Microsoft Teams right away. You can do so by typing *start over* in an existing conversation. This will restart the conversation with the latest content you have published.
+> You may want to try out the latest published content in Microsoft Teams right away. You can do so by typing _start over_ in an existing conversation. This will restart the conversation with the latest content you have published.
 
 ## Known limitations
 
 - Customer satisfaction survey is a text-only version in Microsoft Teams instead of an adaptive card.
 - Microsoft Teams can only render up to six suggested actions for user in one question node.
-- A user can't send or upload attachments to the chat. If they try to send an attachment, the bot will reply with *Looks like you tried to send an attachment. Currently, I can only process text. Please try sending your message again without the attachment.*
+- A user can't send or upload attachments to the chat. If they try to send an attachment, the bot will reply with _Looks like you tried to send an attachment. Currently, I can only process text. Please try sending your message again without the attachment._
   - This applies to all channels, even if the channel or end-user-facing experience supports attachments (for example, if you're using the Direct Line API or Microsoft Teams).  
   - Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments.  
   - See the [Use Microsoft Bot Framework skills topic](advanced-use-skills-teams.md) for more details on skills.

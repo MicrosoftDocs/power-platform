@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Create a schema to export configuration data
 
@@ -24,13 +19,13 @@ The Configuration Migration tool lets you build a schema to describe your export
 
 ## Before you begin 
 
-Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
+Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf) or you can [download the tool using Power Platform CLI](/powerapps/developer/data-platform/download-tools-nuget). 
  
 <a name="CreateandExport"></a>  
 
 ## Create a schema and export configuration data  
   
-1. Start the Configuration Migration tool. Double-click **DataMigrationUtility.exe** in the folder: \[your folder]\Tools\ConfigurationMigration\  
+1. Start the Configuration Migration tool. Double-click **DataMigrationUtility.exe** in the folder where you downloaded the tool: \[your folder]\Tools\ConfigurationMigration\  
   
 2. On the main screen, click **Create schema**, and click **Continue**.  
   

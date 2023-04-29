@@ -1,29 +1,22 @@
 ---
-title: ProgressIndicator control reference (preview) | Creator Kit
+title: ProgressIndicator control reference | Creator Kit
 description: Learn about the details and properties of the ProgressIndicator control in the Creator Kit.
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 11/02/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="ProgressIndicator"::: control (preview)
-
-[This article is pre-release documentation and is subject to change.]
+# :::no-loc text="ProgressIndicator"::: control
 
 A control used to create a loading experience.
 
@@ -31,10 +24,6 @@ A control used to create a loading experience.
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/ProgressIndicator).
 
 :::image type="content" source="media/ProgressIndicator.png" alt-text="ProgressIndicator control.":::
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Description
 

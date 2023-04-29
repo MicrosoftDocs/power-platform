@@ -2,18 +2,18 @@
 title: "Advanced AI features (contains video)"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 06/23/2022
+ms.date: 01/20/2023
 
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: eaglez
 ms.custom: "advanced-authoring, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Enable advanced AI features in Power Virtual Agents (Preview)
+# Enable advanced AI features in Power Virtual Agents
 
 [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -45,21 +45,24 @@ Shorter trigger phrases are better, and you should aim for 2 to 10 words. You ju
 Entities used in corresponding topics will automatically be identified in user intents when matched with their trigger phrases. For example the user intent "I want to book a ticket to Boston" will match with the trigger phrase "I want to book a ticket to Paris".
 
 > [!NOTE]
-> The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
+> The AI capabilities that are in preview are only available to bots created with English as the set language.
 
 ## Advanced AI features overview
 
 There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.  
 
->  
+>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
 >
 
-## Topic overlap detection (preview)
+## Topic overlap detection
 
 Topic overlap detection helps improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
 
-[After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), go to **Analytics** on the side navigation pane, then go to the **Topic triggering (preview)** tab, where a list of overlapped topics will be displayed.
+> [!TIP]
+> Topic overlap detection is in general availability and supports [all languages supported in Power Virtual Agents](authoring-language-support.md).
+
+[After you enable advanced AI capabilities](#enable-or-disable-ai-capabilities), you can view a list of overlapped topics. In the navigation menu, select **Analytics**, then select the **Topic triggering** tab.
 
 :::image type="content" source="media/advanced-ai-features/overlapped-topics.png" alt-text="Screenshot showing the overlapping topics tile lists topics with their similarity score.":::
 
@@ -111,7 +114,7 @@ In the following screenshot, the first time the bot comes across a question it d
 
 Before auto-triggering improvements, a bot user asks a question with a spelling error "I'd like to purchase somethign," to which the bot says "Sorry, I didn't get that. Did you mean:" and then provides a few options such as **Buy items** or **Buy service**. In this case, the bot user selected **Buy items**.
 
-The next time someone asks the same question, the bot doesn't ask for clarification – it knows from previous interactions what the bot user is likely asking to buy items, so it goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?"
+The next time someone asks the same question, the bot doesn't ask for clarification. It knows from previous interactions that the bot user is likely asking to buy items. The bot goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?"
 
 In this example, it also understands the misspelling of "somethign" to mean "something," so it's able to carry over the improved intent triggering even though the bot user's question is spelled differently.
 
@@ -153,7 +156,7 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 ## Enable or disable AI capabilities
 
 1. Open a bot you want to enable or disable the features for.
-1. Expand the **Manage** tab, then select **AI capabilities**.
+1. Expand the **Settings** tab, then select **AI capabilities**.
 1. For each feature, select the checkbox to turn the feature on or off.
 1. Select **Save** at the top of the tab.
 

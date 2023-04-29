@@ -7,12 +7,14 @@ ms.date: 02/22/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "publication, authoring, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Configure the demo website and add the bot to your live website
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 When publishing the bot to the web, you can publish to a prebuilt demo website (which you can use to share the bot with your teammates and stakeholders) and to your own live website.
   
@@ -38,7 +40,7 @@ You can edit the welcome message and suggested trigger phrases for the demo webs
 
 ### Update the demo website
 
-1. On the side pane, select **Manage** then **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select the **Demo website** tile.
 
@@ -58,7 +60,7 @@ You can also add the bot to your Power Platform admin center.
 
 ### Add bot to your website
 
-1. On the side pane, select **Manage** then **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Custom website** and then select **Copy** to copy it directly to the clipboard, or **Share to email** to open a new email message with the snippet included, in your default email app.
 

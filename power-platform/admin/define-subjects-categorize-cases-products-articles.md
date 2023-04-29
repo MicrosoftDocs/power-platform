@@ -2,7 +2,6 @@
 title: "Define subjects to categorize cases, products, and articles"
 description: "Learn to create and edit subjects to categorize service cases, knowledge base articles, products, and sales literature in customer engagement apps."
 author: shubhadaj
-manager: shujoshi
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -11,11 +10,6 @@ ms.subservice: admin
 ms.author: shujoshi
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Define subjects to categorize cases, products, and articles
 

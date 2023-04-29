@@ -2,7 +2,6 @@
 title: Understand imperative logic in a Microsoft Power Fx | Microsoft Docs
 description: Reference information about working with imperative logic, which can change state in Microsoft Power Fx
 author: gregli-msft
-manager: kvivek
 ms.topic: conceptual
 ms.reviewer: jdaly
 ms.date: 03/06/2022
@@ -10,8 +9,10 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
+contributors:
+  - gregli-msft
+  - mduelae
+  - jorisdg
 ---
 # Imperative logic
 

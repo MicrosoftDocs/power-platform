@@ -5,15 +5,11 @@ author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
 ms.custom: ""
-ms.date: 05/25/2022
+ms.date: 11/09/2022
 ms.reviewer: kvivek
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerPlatform
-  - PowerApps
-  - Azure
 ---
 
 # Introduction to Microsoft Power Platform for developers
@@ -28,7 +24,7 @@ As a developer interacting with the platform, it's important to understand the b
 
 ## Power Apps 
 
-Apps created with Power Apps can be shared with internal users and can be run in a browser or on a mobile device. There are different types of Power Apps: canvas vs. model-driven vs. portal.
+Apps created with Power Apps can be shared with internal users and can be run in a browser or on a mobile device. You can create following types of apps: canvas and model-driven.
 
 ### Canvas apps
 
@@ -46,12 +42,6 @@ Data-driven applications that are built on top of [Microsoft Dataverse](#dataver
 > - Build custom UI components using [Power Apps component framework](/power-apps/developer/component-framework/overview)
 > - Implement client business logic using [JavaScript and the client API](/power-apps/developer/model-driven-apps/client-scripting)
 > - Build [HTML web resources](/power-apps/developer/model-driven-apps/webpage-html-web-resources)
-
-### Portals
-
-Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. **Power Pages** (preview), which is an evolution of Power Apps portals, adds new no-code/low-code capabilities and customization experiences  for organizations to securely build secure. modern websites.
-
-See [Power Pages](#power-pages)
 
 ## Power Automate
 
@@ -76,7 +66,7 @@ Power BI is Microsoft's business analytics solution that provides interactive da
 
 ## Power Pages
 
-Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Power Pages is built on the foundation of Power Apps portals. Low-code makers can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
+Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Low-code makers can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
 
 > #### Key developer extensibility points
 > - Custom web page templates built with HTML, CSS, and [Liquid](/power-pages/configure/liquid-overview)
@@ -105,6 +95,7 @@ Dataverse is a cloud scale data store that builds on Microsoft's data technologi
 
 ### See also
 
+[Create a developer environment](create-developer-environment.md)<br/>
 [Fusion Development](fusion-development.md)<br/>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

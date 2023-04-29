@@ -2,7 +2,6 @@
 title: "User support strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance on establishing a support and graduation framework, decision matrix, and user support process for Microsoft Power Platform solutions."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # User support: Ongoing production solution support
@@ -84,7 +79,7 @@ The help desk is operated as a shared service by the IT department.
 
 The help desk can:
 
-- Support technical issues that cannot be resolved without IT involvement—for example, Power Platform service issues that require an admin to [raise a support ticket](/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in the [Power Platform admin center](https://aka.ms/ppac).
+- Support technical issues that cannot be resolved without IT involvement—for example, Power Platform service issues that require an admin to [raise a support ticket](/power-platform/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in the [Power Platform admin center](https://aka.ms/ppac).
 - Answering user and governance-related questions, such as how to request access to applications or where to find applications.
 - Routing issues with critical apps to the correct support team.
 

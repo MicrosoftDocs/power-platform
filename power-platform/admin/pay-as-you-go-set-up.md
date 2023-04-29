@@ -12,11 +12,6 @@ contributors:
   - ShawnNandiMSFT
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Set up pay-as-you-go 
 

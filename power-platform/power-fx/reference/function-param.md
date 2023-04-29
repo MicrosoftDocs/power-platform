@@ -4,17 +4,16 @@ description: Reference information including syntax and examples for the Launch 
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 05/25/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Launch and Param functions in Power Apps
@@ -131,139 +130,56 @@ The **Param** function retrieves a parameter passed to the app when it was launc
 
 ### Reserved parameters
 
-The following keywords are reserved for internal use, and shouldn't be used as a custom parameter in the **Param()** function:
+The following keywords are reserved (regardless of case) for internal use, and shouldn't be used as a custom parameter in the **Param()** function:
 
-:::row:::
-:::column span="":::
-amp%3Bauthmode
-:::column-end:::
-:::column span="":::
-amp%3Benableonbehalfof
-:::column-end:::
-:::column span="":::
-amp%3Bhidenavbar
-:::column-end:::
-:::column span="":::
-amp%3Blocale
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="":::
-appmetadataversion
-:::column-end:::
-:::column span="":::
-authmode
-:::column-end:::
-:::column span="":::
-channeltype
-:::column-end:::
-:::column span="":::
-correlationid
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="":::
-delegatelaunchurl
-:::column-end:::
-:::column span="":::
-delegatelaunchurl
-:::column-end:::
-:::column span="":::
-disablepreviewredirect
-:::column-end:::
-:::column span="":::
-embedderorigin
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="":::
-enableonbehalfof
-:::column-end:::
-:::column span="":::
-groupid
-:::column-end:::
-:::column span="":::
-hideappsplash
-:::column-end:::
-:::column span="":::
-hidenavbar
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="":::
-hint
-:::column-end:::
-:::column span="":::
-hostclienttype
-:::column-end:::
-:::column span="":::
-hostmode
-:::column-end:::
-:::column span="":::
-iframecontainerid
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="":::
-isfullscreen
-:::column-end:::
-:::column span="":::
-ispreviewmode
-:::column-end:::
-:::column span="":::
-locale
-:::column-end:::
-:::column span="":::
-packageproperties
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="":::
-screencolor
-:::column-end:::
-:::column span="":::
-sdkversion
-:::column-end:::
-:::column span="":::
-site
-:::column-end:::
-:::column span="":::
-skipappmetadata
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="":::
-skipiframecreation
-:::column-end:::
-:::column span="":::
-skiplaunchappcache
-:::column-end:::
-:::column span="":::
-source
-:::column-end:::
-:::column span="":::
-standaloneconsent
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="":::
-teamid
-:::column-end:::
-:::column span="":::
-teamtype
-:::column-end:::
-:::column span="":::
-tenantId
-:::column-end:::
-:::column span="":::
-theme
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="":::
-userteamrole
-:::column-end:::
-:::row-end:::
+- amp%3Bauthmode
+- amp%3Benableonbehalfof
+- amp%3Bhidenavbar
+- amp%3Blocale
+- appmetadataversion
+- authmode
+- channeltype
+- cordovapath
+- correlationid
+- debug
+- delegatelaunchurl
+- delegatelaunchurl
+- disablepreviewredirect
+- embedderorigin
+- enableonbehalfof
+- groupid
+- hideappsplash
+- hidenavbar
+- hint
+- hostclienttype
+- hostmode
+- iframecontainerid
+- isfullscreen
+- ispreviewmode
+- loader
+- loaderType
+- locale
+- location
+- packagekind
+- packageproperties
+- playerresourcespath
+- playersessionid
+- powerappslanguage
+- screencolor
+- sdkversion
+- site
+- skipappmetadata
+- skipiframecreation
+- skiplaunchappcache
+- source
+- sourcetime
+- standaloneconsent
+- teamid
+- teamtype
+- tenantId
+- theme
+- uselocalpackagehostresources
+- userteamrole
 
 ## Examples
 
@@ -364,15 +280,15 @@ The **Product Showcase** tablet layout template was used for the following examp
 
 1. Close the app player and edit the app.
 1. Select **App** from the Tree view on left navigation.
-1. Select **OnStart** property on top left.
-1. Enter the formula as `If(Param("screen")="techspecs",Navigate(TechSpecs,Fade))`.
+1. Select **StartScreen** property on top left.
+1. Enter the formula as `If( Param("screen") = "techspecs", TechSpecs )`.
 
    ![Param example for navigation.](media/function-param/param-example-screen.png "Param example for navigation")
 
-   [If function](function-if.md) in [OnStart](object-app.md#onstart-property) property checks if parameter equals a certain value, in this case the value _techspecs_. And if it matches, the app navigates to _TechSpecs_ screen.
+   [If function](function-if.md) in [StartScreen](object-app.md#startscreen-property) property checks if parameter equals a certain value, in this case the value _techspecs_. And if it matches, returns the _TechSpecs_ screen control to the **StartScreen** property.
 
    > [!NOTE]
-   > Replace **TechSpecs** screen name in the Navigate function with name of a screen in your own app if you're not using the **Product Showcase** app template.
+   > Replace the **TechSpecs** control name in the **If** function with the name of a screen control in your own app if you're not using the **Product Showcase** app template.
 
 1. Save and publish the app.
 1. Open a new browser.
@@ -380,7 +296,7 @@ The **Product Showcase** tablet layout template was used for the following examp
 
    ![Web address for TechSpecs screen.](media/function-param/param-example-web-address-techspecs.png "Web address for TechSpecs screen")
 
-1. The app directly launches with **TechSpecs** or a screen you entered in Navigate function.
+1. The app directly launches with **TechSpecs** as the startscreen.
 
 ### See also
 

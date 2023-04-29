@@ -1,5 +1,11 @@
 ### Examples
 
+The following examples show the use of the `pac auth create` command.
+
+- [Basic Create](#basic-create)
+- [Named Create](#named-create)
+- [Named Create with Service Principal](#named-create-with-service-principal)
+
 #### Basic Create
 
 This example authenticates with the `https://myorg.crm.dynamics.com` org.

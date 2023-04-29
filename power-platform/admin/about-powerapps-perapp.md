@@ -10,11 +10,6 @@ ms.author: alaug
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # About Power Apps per app plans
 
@@ -22,8 +17,6 @@ Power Apps per app plan allows individual users to run one application or one po
 
 > [!IMPORTANT]
 > - Power Apps per app plans don't appear on the **Billing > Licenses** page in the [Microsoft 365 admin center](https://admin.microsoft.com). Admins should allocate Power Apps per app plans in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they are assigned when apps are shared with users in the environment.
-> - Power Apps for Windows isn't supported if you have the Power Apps per app plan.
-
 
 ## Steps for using per app plans 
 
@@ -172,13 +165,13 @@ Yes. Prior to October 2021 each app pass granted a user access to two apps and o
 Customers with existing per app plan subscriptions purchased prior to October 1, 2021 will maintain the current entitlement for the duration of their agreement term. Each existing per app plan license will now receive a total of three app passes, entitling users to continue accessing up to two apps and one portal. These app passes will be available for allocation to an environment and assignment to users beginning in October 2021. Power Apps per app plan subscriptions purchased after October 1, 2021 will receive one app pass for each license, entitling assigned users to access one app or one portal.  
 
 ### I assigned the baseline access license to my users as a workaround suggested earlier. Now that this workaround is not needed, what should I do to ensure my users are setup correctly? 
-As of October, 2020, the baseline access license is no longer required. Ensure that the per app capacity is allocated to the environment. After this step, you can remove the baseline access license from the user using [these instructions](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide). 
+As of October, 2020, the baseline access license is no longer required. Ensure that the per app capacity is allocated to the environment. After this step, you can remove the baseline access license from the user using [these instructions](/microsoft-365/admin/manage/remove-licenses-from-users?&preserve-view=trueview=o365-worldwide). 
 
 ### What happens if I assign a user the Power Apps per user license when earlier they were using apps with the per app license? 
 Once the user is allocated a Power Apps per user license, per app license consumption reports will show per app licenses aren’t being consumed.
 
 ### When will I be able to see the list of users who are using the Power Apps per app license?
-We are currently working on this report. Please check back again for more details. This report will be available in the Power Platform admin center. 
+The Power Apps per app plan assignment report is available in [license consumption reports](view-license-consumption-issues.md) in Power Platform admin center. 
 
 ### What are the differences in the admin experience between the Power Apps per app and the Power Apps per user license?
 Power Apps per user plan is a user license assigned by admins from https://admin.microsoft.com. Once the user has this license they can access any number of apps created using Power Apps. However, the Power Apps per app plan provides a capacity to run apps and the management experience for this license is in the Power Platform admin center. The license is assigned to users when apps in the environment are shared with them. Admins allocate the capacity of per app to an environment and the makers share the app with users. This sharing consumes the per app capacity. Once the reporting is available, admins can see the users who are consuming capacity in the Power Platform admin center and not in the Microsoft 365 admin center.
@@ -197,7 +190,10 @@ Yes. If a user account is disabled in an environment, there are three different 
 
 **Mitigation steps**
 1. Add per app capacity to an environment, add disabled users to an Azure AD security group, and share the app with the security group. The user launching the app will be enabled in the environment.
-2. Add per app capacity and use the following PowerShell cmdlet to 'force sync' disabled users to enable these users in the environment. An admin can run the [Add-AdminPowerAppsSyncUser](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) PowerShell cmdlet to enable disabled users in an environment.
+2. Add per app capacity and use the following PowerShell cmdlet to 'force sync' disabled users to enable these users in the environment. An admin can run the [Add-AdminPowerAppsSyncUser](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?&preserve-view=trueview=pa-ps-latest) PowerShell cmdlet to enable disabled users in an environment.
 3. Add per app capacity to an environment, use [this Power Automate flow template](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/) to enable many disabled users in an environment which an admin can run to force the sync operation to enable users. 
+
+### Power Automate capabilities included with Per App plans
+A Power Apps Per App plan assignment does not give user the ability to create or own Power Automate flows that user Premium features. Creating and owning flows using Premium features requires assignment of a Power Apps Per User or Power Automate Per User license.  This does not apply for flows [associated to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

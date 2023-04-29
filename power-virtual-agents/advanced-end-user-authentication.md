@@ -7,9 +7,9 @@ ms.date: 08/11/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: clmori
 ms.custom: authentication, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -117,7 +117,7 @@ To add an Authenticate node to your topic:
 1. Open the **Authoring canvas** for the topic you want to add the authentication template to.
 
     > [!NOTE]
-    > If your bot is connected to Dynamics 365 Customer Service, the Authentication node can't be part of the conversation path the bot follows when initially greeting users – otherwise the sign-in card will be shown twice. Instead you should add the Authenticate node to another topic that is triggered by a user response.
+    > If your bot is connected to Dynamics 365 Customer Service, the Authentication node can't be part of the conversation path the bot follows when initially greeting users; otherwise, the sign-in card will be shown twice. Instead you should add the Authenticate node to another topic that is triggered by a user response.
 
 1. Select **Add node** (**+**) to add a message node. Enter what the bot should say to indicate that a sign-on experience is about to occur.
 

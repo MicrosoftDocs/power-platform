@@ -1,19 +1,19 @@
 ---
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
 description: About creating and manage environments in the Power Platform admin center
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/14/2022
+ms.date: 04/27/2023
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
+ms.reviewer: sericks
+ms.contributors:
+- pmantha
 search.audienceType: 
   - admin 
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+contributors:
+  - marcelbf
 ---
 # Create and manage environments in the Power Platform admin center
 
@@ -23,43 +23,47 @@ An environment is a space to store, manage, and share your organization's busine
 
 Your license determines whether you can create environments.
 
-| License | Trial | Production |
-| --- | --- | --- |
-| Microsoft 365 Plans |No | No |
-| Dynamics 365 Teams Plans   |No | No |
-| Power Apps Developer Plan   |No | No |
-| Dynamics 365 trial | Yes (one) | No|
-| Dynamics 365 Plans |Yes (one)| Yes |
-| Power Apps plan |Yes (one)| Yes |
-| Power Apps trial |Yes (one)| Yes |
-| Power Virtual Agents trial plan |Yes | No |
-| Power Virtual Agents plan | No | Yes |
+| License | Trial | Production | Developer |
+| --- | --- | --- | --- |
+| Microsoft 365 Plans |No | No | Yes |
+| Dynamics 365 Teams Plans   |No | No | Yes |
+| Power Apps Developer Plan   |No | No | Yes |
+| Dynamics 365 trial | Yes (one) | No| Yes |
+| Dynamics 365 Plans |Yes (one)| Yes | Yes |
+| Power Apps plan |Yes (one)| Yes | Yes |
+| Power Automate plan |Yes (one)| Yes | Yes |
+| Power Automate trial |Yes (one)| Yes | Yes |
+| Power Apps trial |Yes (one)| Yes | Yes |
+| Power Virtual Agents trial plan |Yes | No | Yes |
+| Power Virtual Agents plan | No | Yes | Yes |
 
-To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true).
 
 To create an environment, all the following must be true:
 
-1. The user has a license (Yes below) that allows environment creation. This requirement is waived for Global admins and Power Platform admins.
+1. The user has a license (Yes below) that allows environment creation. This requirement is waived for Global admins and Power Platform admins except for trial (standard) environments; see #2.c later.
 
-   | License | Trial | Production |
-   | --- | --- | --- |
-   | Microsoft 365 Plans |No | No |
-   | Dynamics 365 Teams Plans   |No | No |
-   | Power Apps Developer Plan   |No | No |
-   | Dynamics 365 trial | Yes (one) | No|
-   | Dynamics 365 Plans |Yes (one)| Yes |
-   | Power Apps plan |Yes (one)| Yes |
-   | Power Apps trial |Yes (one)| Yes |
-   | Power Virtual Agents trial plan |Yes | No |
-   | Power Virtual Agents plan | No | Yes |
+   | License | Trial | Production | Developer |
+   | --- | --- | --- | --- |
+   | Microsoft 365 Plans |No | No | Yes |
+   | Dynamics 365 Teams Plans   |No | No | Yes |
+   | Power Apps Developer Plan   |No | No | Yes |
+   | Dynamics 365 trial | Yes (one) | No| Yes |
+   | Dynamics 365 Plans |Yes (one)| Yes | Yes |
+   | Power Apps plan |Yes (one)| Yes | Yes |
+   | Power Apps trial |Yes (one)| Yes | Yes |
+   | Power Automate plan |Yes (one)| Yes | Yes |
+   | Power Automate trial |Yes (one)| Yes | Yes |
+   | Power Virtual Agents trial plan |Yes | No | Yes |
+   | Power Virtual Agents plan | No | Yes | Yes |
 
-   To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+   To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true).
 
 2. The tenant (or user in the case of email trials) must have the following:
 
-   - For production and sandbox environments, the tenant must have at least 1GB of database storage capacity available.
-   - For trial (subscription-based) environments, each offer-based trial (also known as "admin trial") subscription entitles the tenant to three subscription-based trial environments. Only tenant-level admins are able to provision trial (subscription-based) environments.
-   - For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments (refer to the table above). This applies to tenant-level admins, as well. 
+   1. For production and sandbox environments, the tenant must have at least 1GB of database storage capacity available.
+   1. For trial (subscription-based) environments, each offer-based trial (also known as "admin trial") subscription entitles the tenant to three subscription-based trial environments. Only tenant-level admins are able to provision trial (subscription-based) environments.
+   1. For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments (refer to the table above). This applies to tenant-level admins as well. 
    
    Users wanting to create a standard trial can get the necessary license for free by signing up for a Power Apps trial via one of these paths:
 
@@ -85,10 +89,10 @@ You have multiple options when creating an environment:
 
 ### Some important considerations when creating a new environment
 
-- **Why create an environment with a database**: When you create a production or sandbox environment with a Dataverse database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment.<br>More information about Dataverse: [What is Dataverse?](/power-apps/maker/data-platform/data-platform-intro) and [Why choose Dataverse?](/power-apps/maker/data-platform/why-dataverse-overview) 
+- **Why create an environment with a database**: When you create a production or sandbox environment with a Dataverse database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by selecting **Yes** for **Enable Dynamics 365 apps**). Currently, if you don't select **Yes** for **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment. You must have an appropriate Dynamics 365 license to select **Yes** for **Enable Dynamics 365 apps**. <br>More information about Dataverse: [What is Dataverse?](/power-apps/maker/data-platform/data-platform-intro) and [Why choose Dataverse?](/power-apps/maker/data-platform/why-dataverse-overview) 
 - **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Dataverse, and you are creating canvas apps using Power Apps or flows using Power Automate using other data sources, create the environment without the Dataverse database.
 - **The Enable Dynamics 365 apps decision is not reversible**: Once you create an environment, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment. 
-- **Dynamics 365 apps and trial environments**: Currently, Dynamics 365 apps cannot be enabled for trial environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).
+- **Dynamics 365 apps and trial type environments**: Currently, Dynamics 365 apps can't be enabled for environments that are trial type environments. For more information about Power Platform environment types, go to [Type of environments](environments-overview.md#types-of-environments).
 - The URL can't be that of an environment that's been [deleted](delete-environment.md) or [changed](edit-properties-environment.md) until at least 24 hours have passed since an environment deletion or change.
 
 ## Create an environment with a database
@@ -100,10 +104,8 @@ To create an environment with a database, you need 1GB available database capaci
 ### Steps
 
 1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
-2. In the navigation pane, select **Environments**, and then select **New**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create new environment.](./media/new-environment.png "Create new environment")
+2. In the navigation pane, select **Environments**, and then select **New**.
 
 3. Enter the following, and then select **Next**.
 
@@ -113,11 +115,8 @@ To create an environment with a database, you need 1GB available database capaci
    |Region     | Choose a region for the environment.        |
    |Type     | Choose production, trial, or sandbox.        |
    |Purpose     | A description of the environment.         |
-   |Create a database for this environment? | Select **Yes**. |
+   |Add a Dataverse data store | Select **Yes**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
-
-   > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings.](./media/new-environment-page1.png "Create new environment settings")
 
 4. Enter the following, and then select **Save**.
 
@@ -126,12 +125,9 @@ To create an environment with a database, you need 1GB available database capaci
    |Language     | The default language for this environment. More information: [Dataverse language collations](language-collations.md)     |
    | URL         | Enter your organization name. Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won't be available. |
    |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. If you don't select **Yes** at the time of database provisioning, you won’t be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
+   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. You must have an appropriate Dynamics 365 license to select **Yes**. If you don't select **Yes** at the time of database provisioning, you won’t be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
-   |Security group | Select a security group to restrict access to this environment. |
-
-   > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings.](./media/new-environment-page2-enable-apps.png "Create new environment settings")
+   |Security group | Select a security group to restrict access to this environment. For open access, select **None**.<br><br>This field is now required.|
    
 ## Create an environment without a database 
 You can create an environment without a database and use your own data store.
@@ -144,9 +140,6 @@ You need 1GB available database capacity.
 
 2. In the navigation pane, select **Environments**, and then select **New**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create new environment.](./media/new-environment.png "Create new environment")
-
 3. Enter the following, and then select **Save**.
    
    |Setting  |Description  |
@@ -155,11 +148,8 @@ You need 1GB available database capacity.
    |Region     | Choose a region for the environment.        |
    |Type     | You can choose production or trial.        |
    |Purpose     | A description of the environment.         |
-   |Create a database for this environment? | Select **No**. |
+   |Add a Dataverse data store | Select **No**. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
-
-   > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings.](./media/new-environment-page1-nodb.png "Create new environment settings")
 
 ## Setting an environment refresh cadence
 You can indicate how often you would prefer an environment to receive updates and features to certain Microsoft Power Platform services. You have two options to choose from after creating an environment.
@@ -176,9 +166,6 @@ To set refresh cadence:
 2. From the left-side menu, select **Environments**, and then select an environment.
 
 3. Select **Edit**
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Edit.](media/select-edit.png "Select Edit")
 
 4. Under **Refresh cadence**, choose the cadence type. 
 

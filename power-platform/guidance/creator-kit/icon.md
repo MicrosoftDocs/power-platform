@@ -1,8 +1,7 @@
 ---
 title: Icon control reference | Creator Kit
 description: Learn about the details and properties of the Icon control in the Creator Kit.
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/16/2022
@@ -11,10 +10,6 @@ ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist
@@ -31,9 +26,7 @@ This control renders Fluent UI icons based on the name. You can use it to easily
 
 For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/fluentui#/styles/web/icons).
 
-## Properties
-
-### Key properties
+## Key properties
 
 | Property | Description |
 | -------- | ----------- |
@@ -42,9 +35,10 @@ For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/flu
 | `IconSize` | The size of the icon (pixels) |
 | `Text` | Text displayed (works for type `Action button`) |
 | `TextAlignment` | Position of the text (works for types `Action button` and `Icon only`) |
+| `Tooltip` | Text displayed in a tooltip when the user hovers over the icon. |
 
 
-### Style properties
+## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
@@ -60,16 +54,11 @@ For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/flu
 | `BorderRadius` | Roundness of the corners (works for types `Action button` and `Icon button`) |
 | `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `AccessibilityLabel` | Screen reader aria-label |
-
-### Event properties
-
-| Name | Description |
-| ------ | ----------- |
 | `InputEvent` |  An event to send to the control. |
 
 ## Behavior
 
-Supports [SetFocus](setfocus.md) as an `InputEvent`.
+- Supports [SetFocus](setfocus.md) as an `InputEvent`.
 
 ## Limitations
 

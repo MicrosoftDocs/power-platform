@@ -11,11 +11,6 @@ ms.author: tjvass
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Overview of integration with Application Insights 
 
@@ -40,7 +35,7 @@ Application Insights has a wide range of features to help you use this data:
 - Visualize and track common [navigation patterns](/azure/azure-monitor/app/usage-flows) from a usage perspective. This will help you understand, for example, whether a user always selects a specific tab first before navigating back to the main tab and closing the form. If so, this might indicate that a field should be positioned on the first tab, instead of another tab, to save the user time every time they open this record.
 - Create custom queries to troubleshoot performance and errors by using the [**Logs**](/azure/azure-monitor/log-query/log-query-overview) panel under **Monitoring** on the left pane.
 
-Example: List the top 10 records for form loads in the **pageViews** table:
+Example: List the top 100 records for form loads in the **pageViews** table:
 
 ```kusto
 pageViews

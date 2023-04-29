@@ -5,10 +5,10 @@ keywords: "question answering, fallback, knowledge base, question, answer, faq"
 ms.date: 10/12/2022
 
 ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
-manager: shellyha
+author: iaanw
+ms.author: iawilt
 ms.custom: "publication, authoring, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

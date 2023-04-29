@@ -2,7 +2,6 @@
 title: "Onboard new makers - Microsoft Power Platform | MicrosoftDocs"
 description: "A great way of embracing new users and making sure they get off to a good start is sending them a **welcome email** that includes validated resources, company-specific resources and links to upcoming internal events available to help them with their learning journey."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Onboard new makers
 
@@ -29,7 +24,7 @@ A great way of embracing new users and making sure they get off to a good start 
 
 The [core components](../coe/nurture-components.md) of the Center of Excellence (CoE) Starter Kit contain a [welcome email](../coe/core-components.md#flows) template that you can customize to your requirements.
 
-Even though we recommend that you use the CoE Starter Kit, alternatively the [hands-on lab](https://github.com/microsoft/powerapps-tools/blob/master/Administration/AdminInADay/LabMaterials/M03-HOL%20-%20Automation/M03_Automation.docx) part of our admin-in-a-day training includes step-by-step instructions on how to set up a welcome email flow.
+Even though we recommend that you use the CoE Starter Kit, alternatively the hands-on lab that is part of our [admin-in-a-day](https://github.com/microsoft/powerapps-tools/tree/master/Administration/AdminInADay) training includes step-by-step instructions on how to set up a welcome email flow.
 
 ![Sample welcome email to new makers.](/power-platform/guidance/coe/media/coe5.png "Sample welcome email to new makers")
 

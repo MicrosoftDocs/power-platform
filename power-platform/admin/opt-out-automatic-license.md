@@ -10,15 +10,9 @@ ms.topic: conceptual
 ms.date: 09/28/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Opt-out of automatic license-based user roles management 
-
-You can request to turn off Microsoft Power Platform from automatically adding and removing the user security roles based on the licenses the user has. 
+ 
 
 ## How to request my organization opt-outs?
 

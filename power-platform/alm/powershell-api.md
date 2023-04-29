@@ -1,51 +1,51 @@
 ---
-title: "Work with solutions using PowerShell | Microsoft Docs"
+title: "Manage solutions using PowerShell | Microsoft Docs"
 description: "Learn about the PowerShell APIs, service, and module that are available to analyze solutions against a set of best practice rules."
 keywords: 
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
-manager: kvivek
 ms.custom: ""
-ms.date: 04/09/2021
+ms.date: 12/23/2022
 ms.reviewer: "pehecke"
-
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
-# Work with solutions using PowerShell
-The Power Apps checker web API provides a mechanism to run static analysis
-checks against customizations and extensions to the Microsoft Dataverse
-platform. It's available for makers and developers to perform rich static
-analysis checks on their solutions against a set of best practice rules to
-quickly identify problematic patterns. To begin using the Power Apps checker Web
-API, see [Getting started](checker-api/overview.md#getting-started).
+# Manage solutions using PowerShell
 
-The checker service provides the logic for the [solution checker feature](/powerapps/maker/common-data-service/use-powerapps-checker) in the Power Apps maker [portal](https://make.powerapps.com/) and is included as part of the automation for [applications submitted to AppSource](/powerapps/developer/common-data-service/publish-app-appsource). In this section, we describe how to run a best practice solution analysis of your customizations and extensions in your DevOps pipeline to verify the quality of your solution component.
+The PowerShell cmdlets let you automate many of the monitoring, management, and quality assurance tasks in Power Platform.
 
-> [!TIP]
-> **Tip #1**: Consider using the PowerShell module,
-> [Microsoft.PowerApps.Checker.PowerShell](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Checker.PowerShell), instead of using the web API. The
-> module is a community supported tool that's available in the
-> [PowerShell Gallery](https://www.powershellgallery.com/). The current restriction is
-> that it does require Windows PowerShell in your project pipeline. If you're
-> unable to meet this requirement, interacting with the web APIs directly
-> will likely be the best approach.<p/>
-> **Tip #2**: You can easily manage solutions using PowerShell as part of your custom automation. Refer to the [Microsoft.Xrm.Data.PowerShell](https://github.com/seanmcne/Microsoft.Xrm.Data.PowerShell) module, which is also a community created and supported tool. See sample code [here](https://github.com/seanmcne/Microsoft.Xrm.Data.PowerShell.Samples/tree/master/Solutions). For example:<br/>
+## Microsoft.PowerApps.Administration.PowerShell
+
+The Power Apps administration module is used to manage users, databases, connectors, apps, flows, and permissions in Dataverse environments. More information: [Use Microsoft.PowerApps.Administration.PowerShell](/powershell/powerapps/get-started-powerapps-admin)
+
+## Microsoft.Xrm.Tooling.CrmConnector
+
+The connector module is used to connect to and retrieve environment or organization details from Dataverse and Dynamics 365 Customer Engagement (on-premises) deployments. More information: [Use Microsoft.Xrm.Tooling.CrmConnector](/powershell/powerapps/get-started-connector)
+
+## Microsoft.Xrm.Tooling.PackageDeployment
+
+The package deployment module is used to deploy packages. More information: [Use Microsoft.Xrm.Tooling.PackageDeployment](/powershell/powerapps/get-started-packagedeployment)
+
+## Microsoft.PowerApps.Checker.PowerShell
+
+The Power Apps checker module interacts with the Power Apps checker service providing the ability to run static analysis jobs and download the results. The module is a community supported tool that's available in the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Checker.PowerShell). More information: [Use Microsoft.PowerApps.Checker.PowerShell](/powershell/powerapps/get-started-powerapps-checker)
+
+The current restriction is
+that it does require Windows PowerShell in your project pipeline. If you're unable to meet this requirement, interacting directly with the [Power Checker Web API](checker-api/overview.md) might be a better approach.
+
+There is a checker task in the Azure DevOps build tools include a checker task. More information about using that task in your build pipeline: [Quality check](devops-build-tool-tasks.md#quality-check).
+
+> [!NOTE]
+> [Microsoft.Xrm.Data.PowerShell](https://github.com/seanmcne/Microsoft.Xrm.Data.PowerShell) module is another community supported tool that lets you easily manage solutions using PowerShell as part of your custom automation. See sample code [here](https://github.com/seanmcne/Microsoft.Xrm.Data.PowerShell.Samples/tree/master/Solutions). For example:<br/>
 > `Export-CrmSolution "MySolution"`<p/>
 > `Export-CrmSolution -conn $conn -SolutionName "MySolution" -Managed -SolutionFilePath "C:\temp" -SolutionZipFileName "MySolution_Managed.zip"`<p/>
 > `Import-CrmSolutionAsync -SolutionFilePath c:\temp\mysolution.zip -ActivateWorkflows -OverwriteUnManagedCustomizations -MaxWaitTimeInSeconds 600`
 
-In addition, there is a checker task in the Azure DevOps build tools include a checker task. For more information about using that task in your build pipeline, see [Quality check](devops-build-tool-tasks.md#quality-check).
-
 ### See also
-[PowerShell modules](tools-apps-used-alm.md#powershell-modules)  
-[Online Management API (REST) to manage environments](/powerapps/developer/data-platform/online-management-api/overview)
 
+[PowerShell modules](/powershell/powerapps/overview)  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

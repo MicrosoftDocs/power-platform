@@ -7,12 +7,12 @@ ms.date: 9/9/2021
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "licensing, admin, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Licensing for Power Virtual Agents
+# Get access to Power Virtual Agents
 
 This topic includes details about Power Virtual Agents Licensing. You can also review the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) to learn more.
 
@@ -51,7 +51,7 @@ Also see the [Quotas, limits, and configuration values](requirements-quotas.md) 
 
 To access the full range of Power Virtual Agents capabilities, you need to upgrade your plan to a standalone Power Virtual Agents subscription.
 
-After you upgrade your license, you can continue using the same bot in the same environment. Capabilities that were previously only available in a standalone license will now be available. These capabilities may include those that result in [billed sessions that require Power Virtual Agents capacity](analytics-billed-sessions.md)).
+After you upgrade your license, you can continue using the same bot in the same environment. Capabilities that were previously only available in a standalone license will now be available. These capabilities may include those that result in [billed sessions that require Power Virtual Agents capacity](analytics-billed-sessions.md).
 
 You can upgrade from within the Power Virtual Agents app for Microsoft Teams when prompted, as in the following example when publishing to other channels:
 

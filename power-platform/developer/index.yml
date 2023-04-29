@@ -10,9 +10,9 @@ metadata:
   ms.subservice: developer
   ms.topic: landing-page
   ms.collection: collection
-  author: marcelbf
-  ms.author: marcelbf
-  ms.date: 06/13/2022
+  author: KumarVivek
+  ms.author: kvivek
+  ms.date: 01/06/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -22,11 +22,23 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: "Power Platform for developers"
+          - text: Power Platform for developers
             url: get-started.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create a developer environment
+            url: create-developer-environment.md
+      - linkListType: learn
+        links:
+          - text: Introduction to developing with Power Platform
+            url: /training/paths/intro-developing-power-platform/
+
+  # Card
+  - title: Fusion development
+    linkLists:
       - linkListType: concept
         links:
-          - text: "Fusion development"
+          - text: Fusion development
             url: fusion-development.md
       - linkListType: reference
         links:
@@ -34,31 +46,135 @@ landingContent:
             url: /power-apps/guidance/fusion-dev-ebook
       - linkListType: learn
         links:
-          - text: Introduction to developing with Power Platform
-            url: /training/paths/intro-developing-power-platform/
-          - text: Transform your business applications with fusion development
+          - text: Transform business apps with fusion development
             url: /training/paths/transform-business-applications-with-fusion-development/
 
   # Card
-  - title: Tools
+  - title: ALM for developers
     linkLists:
       - linkListType: reference
         links:
+          - text: Power Platform ALM basics
+            url: /power-platform/alm/basics-alm
+          - text: Build Tools for Azure DevOps
+            url: /power-platform/alm/devops-build-tools
+          - text: GitHub Actions
+            url: /power-platform/alm/devops-github-actions
           - text: Power Platform CLI
-            url: ./cli/introduction.md
+            url: cli/introduction.md
+          - text: Create packages using Package Deployer
+            url: /power-platform/alm/package-deployer-tool
+          - text: Work with solutions using SDK
+            url: /power-platform/alm/solution-api
 
   # Card
-  - title: Related resources
+  - title: For ISVs
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
+        links:
+          - text: Publish your app on AppSource
+            url: appsource/publish-app.md
+      - linkListType: how-to-guide
+        links:
+          - text: Monitor your app in ISV Studio
+            url: isvstudio/index.md
+
+  # Card
+  - title: Tools for Developers
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Power Platform CLI
+            url: cli/introduction.md
+          - text: Power Platform Tools for Visual Studio
+            url: devtools-vs.md
+          - text: ALM developer tools
+            url: tools-alm.md 
+          - text: Dataverse developer tools
+            url: tools-dataverse.md
+          - text: Visual Studio connected service (Preview)
+            url: visual-studio-connected-service.md                          
+      
+  # Card
+  - title: Dataverse
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Dataverse developer docs
+            url: /power-apps/developer/data-platform
+          - text: Plug-ins
+            url: /power-apps/developer/data-platform/plug-ins
+          - text: Webhooks
+            url: /power-apps/developer/data-platform/use-webhooks
+          - text: Custom APIs
+            url: /power-apps/developer/data-platform/custom-api
+          - text: Virtual tables
+            url: /power-apps/developer/data-platform/virtual-entities/get-started-ve
+
+  # Card
+  - title: Power Apps
+    linkLists:
+      - linkListType: reference
         links:
           - text: Canvas apps developer docs
             url: /power-apps/maker/canvas-apps/dev-enterprise-intro
           - text: Model-driven apps developer docs
             url: /power-apps/developer/model-driven-apps/
-          - text: Dataverse developer docs
-            url: /power-apps/developer/data-platform
           - text: Power Apps component framework
             url: /power-apps/developer/component-framework/overview
-          - text: Power Platform ALM for developers
-            url: ../alm/alm-for-developers.md
+          - text: Custom connectors
+            url: /connectors/custom-connectors/
+          - text: JavaScript and the Client API
+            url: /power-apps/developer/model-driven-apps/client-scripting
+      - linkListType: quickstart
+        links:
+          - text: Create a Canvas App front end for your ASP.NET web API (Preview)
+            url: visual-studio-create-canvas-app.md
+
+  # Card
+  - title: Power Automate
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Custom connectors
+            url: /connectors/custom-connectors/
+          - text: Use workflow definition functions
+            url: /power-automate/developer/custom-cds-for-apps-workflow-activities
+          - text: Use APIs with desktop flows
+            url: /power-automate/developer/desktop-flow-public-apis
+
+  # Card
+  - title: Power BI
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Custom visuals
+            url: /power-bi/developer/visuals/power-bi-custom-visuals
+          - text: Use Power BI REST APIs
+            url: /rest/api/power-bi/
+          - text: Analysis Services developer documentation
+            url: /analysis-services/analysis-services-developer-documentation/
+
+  # Card
+  - title: Power Virtual Agents
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Bot Framework Composer
+            url: /power-virtual-agents/advanced-bot-framework-composer
+
+  # Card
+  - title: Power Pages
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Custom page layouts
+            url: /power-pages/configure/custom-page-layouts
+          - text: Work with Liquid templates
+            url: /power-pages/configure/liquid-overview
+          - text: Power Pages Web API
+            url: /power-pages/configure/web-api-overview
+          - text: Use Visual Studio Code and Power Platform CLI
+            url: /power-pages/configure/cli-tutorial
+          - text: Use code components
+            url: /power-pages/configure/component-framework

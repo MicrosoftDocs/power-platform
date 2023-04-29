@@ -2,13 +2,12 @@
 title: Use topics to design a chatbot conversation
 description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 12/29/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: clmori
-manager: shellyha
 ms.custom: authoring, topics, variables, ceX
 ms.collection: virtual-agent
 searchScope:
@@ -16,6 +15,8 @@ searchScope:
 ---
 
 # Create and edit topics in your Power Virtual Agents bot
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -28,9 +29,9 @@ In Power Virtual Agents, a topic defines a how a bot conversation plays out.
 
 To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
 
-A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
+A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that relate to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
 
-The AI uses natural language understanding (NLU) to parse what a customer types and find the most appropriate trigger phrase or node.
+The AI uses natural language understanding (NLU) to parse what a customer typed and find the most appropriate trigger phrase or node.
 
 For example, a user might type "Open hours" into your bot. The AI matches that to the **Store hours** topic, begins a conversation that asks which store the customer is interested in, and then displays the hours the store is open.
 
@@ -60,7 +61,7 @@ These automatically created topics fall into two categories:
 
 ## Create a topic
 
-1. In the left pane, select **Topics**.
+1. In the navigation menu, select **Topics**.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::
 
@@ -168,7 +169,7 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
 To [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md), select **Call an action**.
 
-If you've configured hand-off to omnichannel with voice-based capabilities, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
+If you've enabled voice-based capabilities for your bot, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
 
 #### Show a message
 

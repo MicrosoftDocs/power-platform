@@ -2,26 +2,23 @@
 title: Boolean function in Power Apps
 description: Reference information including syntax and examples for the Boolean function in Power Apps.
 author: jorisdg
-
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 06/10/2022
 ms.subservice: power-fx
 ms.author: jorisde
-search.audienceType: 
-  - maker
-search.app: 
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
   - jorisdg
 ---
 # Boolean function in Power Apps
+
 Converts a text string, number, or untyped value to a Boolean value.
 
 ## Description
+
 Use the **Boolean** function to convert other types to a Boolean value.  A Boolean value is *true*, *false*, or *blank*.
 
 In most cases, type coercion happens automatically and the **Boolean** function need not be used explicitly.  For example, `If( "true", 1, 0 )` will return 1 as the text string `"true"` is automatically converted to a Boolean.  The **Boolean** function is useful when an explicit conversion is desired or when using an untyped value.
@@ -40,7 +37,7 @@ In most cases, type coercion happens automatically and the **Boolean** function 
 
 **Boolean**( *Untyped* )
 
-* *Untyped* - Required. The untyped value to convert.  Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), JSON boolean values `true`, `false`, and `null` are accepted, corresponding to *true*, *false*, and *blank* values in Power Fx.  All other values will return an error.  Values inside of a string, such as `"true"` and `"false"`, aren't accepted. 
+* *Untyped* - Required. The untyped value to convert.  Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), JSON boolean values `true`, `false`, and `null` are accepted, corresponding to *true*, *false*, and *blank* values in Power Fx. String or number values are accepted as outlined for the *String* and *Number* overloads described earlier.
 
 ## Examples
 

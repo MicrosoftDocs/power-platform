@@ -2,7 +2,6 @@
 title: "Set up Innovation Backlog components | MicrosoftDocs"
 description: "The Innovation Backlog components contain a canvas app that can be used for managing an idea backlog, estimating ROI and voting on ideas."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up Innovation Backlog components
@@ -165,7 +160,7 @@ Before you begin:
 
 1. Go to the Teams channel, open the Innovation Backlog tab, select the **Web Link**, and copy the app link from the new browser window.
           ![Copy the Innovation Backlog web link.](media/ibteams-8.png "Copy the Innovation Backlog web link")
-1. Go to [flow.microsoft.com](<https://flow.microsoft.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**
+1. Go to [Power Automate](<https://make.powerautomate.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**
     ![Open the Default Solution and filter to only show Environment Variables.](media/ib-7.png "Open the Default Solution and filter to only show Environment Variables")
 1. Select the **InnovationBacklogAppURL** variable and paste in the URL for the Innovation Backlog app.
     ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")

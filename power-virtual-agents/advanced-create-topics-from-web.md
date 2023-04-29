@@ -7,8 +7,8 @@ ms.date: 08/24/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -100,9 +100,7 @@ First, you'll need to point to the webpages or online files from which you want 
 
 After the extraction is complete, you'll be shown the suggested topics for further review. Suggested topics aren't automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
 
-1. Select **Topics** on the side pane.
-
-    :::image type="content" source="media/advanced-create-topics-from-web/menu-topics.png" alt-text="Screenshot of the Topics menu item on the side pane." border="false":::
+1. In the navigation menu, select **Topics**.
 
 1. Select **Suggest topics**.
 
@@ -186,7 +184,7 @@ After the extraction process has been completed, the topic suggestions appear on
 
 Suggested topics are added to the **Existing** tab with their status set to **Off**. This way, topics won't be prematurely added to your bot.
 
-1. Select **Topics** on the side pane.
+1. In the navigation menu, select **Topics**.
 
 1. Go to the **Existing** tab.
 

@@ -1,30 +1,25 @@
 ---
-title: "Get Help + Support   | MicrosoftDocs"
+title: "Get Help + Support in Power Platform  | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative to get resolution for your issue.
-author: jimholtz
+author: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/22/2022
+ms.date: 04/04/2023
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: kvivek 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Get Help + Support
 
-Admins can use the **Help + support** experience in the [Power Platform admin center](admin-documentation.md) to get self-help solutions in ***real-time*** for their issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative.
+Admins can use the **Help + support** experience in the [Power Platform admin center](admin-documentation.md) to get self-help solutions in real-time for their issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative.
 
 An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 > [!div class="mx-imgBorder"] 
 > ![List of possible solutions.](media/support-solutions-list.png "List of possible solutions")
 
-### Prerequisites
+## Prerequisites
 
 - You have a security role that is enabled for creating support requests. Users having one of these security roles can create support requests:
 
@@ -44,31 +39,45 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
   - Compliance Admin
   - Helpdesk Admin
 
-- For the following [support plans](https://www.microsoft.com/dynamics365/support):
+- Available for the the following [support plans](https://www.microsoft.com/dynamics365/support):
    
   - Subscription Support
   - Professional Direct Support
   - Unified Support
 
 > [!NOTE]
-> In the following cases, you might not be able to create a support request or we can't provide relevant solutions:
-> 
+> In the following cases, you might not be able to create a support request or we can't provide relevant solutions: 
 > - There is an issue with your Unified or Premier Support contract. Please contact your Incident Manager or Customer Success Account Manager (CSAM).
 > - Your Support subscription has expired. Please renew.
-> - We couldn't find your Support plan. 
+> - We couldn't find your support plan. 
 >   - If you have a Unified or Premier Support plan, please contact your Incident Manager or Customer Success Account Manager (CSAM).
 >   - If you have a non-Unified/Premier Support plan, please verify the plan is active. For support information, see [Community Forums](https://community.dynamics.com/f).
 
 
-### View solutions or enter a support request through the new support center
+## View solutions or create a support request
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
 
 2. Select **Help + support** > **New support request**.
 
-   ![New support request.](media/new-support-request.png "New support request")
+   > [!div class="mx-imgBorder"] 
+   > ![New support request.](media/new-support-request.png "New support request")
 
 3. Select the product with the issue. Fill in the problem type, a description of the issue, and then select **See solutions**.
+
+    Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
+    
+    > [!NOTE]
+    > We've made changes to the product listing when creating a new support request. The following products are now available from the menu:
+    > 
+    > - Dynamics 365 Sales
+    > - Dynamics 365 Marketing
+    > - Dynamics 365 Customer Service
+    > - Dynamics 365 Omnichannel for Customer Service
+    > - Microsoft Dataverse
+    > - Power Platform Administration
+    > 
+    > This change won't have any impact on your licenses.
 
    > [!div class="mx-imgBorder"] 
    > ![See solutions.](media/create-support-ticket.png "See solutions")
@@ -76,7 +85,6 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
    > [!div class="mx-imgBorder"] 
    > ![New support request screen.](media/create-support-ticket2.png "Solutions")
 
-   Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
 
 4. If the guidance doesn't resolve your issue, scroll down and select **Next**, and fill in the fields in the form pages.
 
@@ -97,7 +105,8 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 Once you submit your request it will appear in the list of support requests.
 
-![List of support requests.](media/support-ticket-list.png "List of support requests")
+> [!div class="mx-imgBorder"]
+> ![List of support requests.](media/support-ticket-list.png "List of support requests")
 
 You can check the status and edit your request on this page.
 
@@ -107,16 +116,22 @@ A [premium support plan](https://dynamics.microsoft.com/support) includes adviso
 
 Without a premium support plan, you can only submit request on technical issues. Progressively, such restriction will be enforced and you won't be able to create a support request for advisory services unless you have a premium support plan.
 
-## Limited Preview: Report outage
-We're rolling out a new Preview feature to a limited set of customers to try out. If you're experiencing a service outage, we want your support request to get more timely review and action. Select the **Report outage** link to report the outage. If you don't see this link, don't worry! We'll be bringing this feature to all customers in the future.
+## Limited preview: Report outage
 
-![Report outage.](media/new-report-outage.png "Report outage")
+> [!NOTE]
+> This is a preview feature available only to a limited set of customers to try out. If you don't see the **Report Outage** link, don't worry! We'll be bringing this feature to all customers in the future.
+
+If you're experiencing a service outage, select the **Report outage** link to report the outage so that we can timely review and act on it. 
+
+> [!div class="mx-imgBorder"]
+> ![Report outage.](media/new-report-outage.png "Report outage")
 
 Fill out the pages and then submit to have your support request receive an expedited review.
 
-![Fill in outage info.](media/report-outage-page-one.png "Fill in outage info")
+> [!div class="mx-imgBorder"]
+> ![Fill in outage info.](media/report-outage-page-one.png "Fill in outage info")
 
-We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited Preview, please fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
+We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited preview, please fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
 
 ## For app-specific issues
 To get the fastest response time for issues you encounter with a preview or production release of a specific customer engagement app or add-on, create a support request for the specific application from the **Application and Add-ons** menu.   
@@ -129,7 +144,7 @@ Do **not** select topics from **Administration Center** as this can result in lo
 > [!div class="mx-imgBorder"] 
 > ![Don't select from this list for app issues.](media/support-dont-use-administration-center.png "Don't select from this list for app issues")
 
-## Model driven apps and support environments
+## Model-driven apps and support environments
 For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Dynamics 365 Customer Engagement** product for that field.
 
 > [!div class="mx-imgBorder"] 

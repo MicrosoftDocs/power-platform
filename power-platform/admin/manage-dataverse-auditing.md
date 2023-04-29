@@ -1,24 +1,19 @@
 ---
 title: "Manage Dataverse auditing"
-description: "Learn how to use Dataverse auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
+description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/21/2022
+ms.date: 2/28/2023
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
-ms.reviewer: jimholtz 
+ms.reviewer: matp 
+contributors: 
+    - ProfessorKendrick
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage Dataverse auditing
-
-<!-- legacy procedure -->
 
 The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Dataverse auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. 
 
@@ -115,7 +110,7 @@ This task requires the System Administrator or System Customizer role or equival
    |--------------------|---------------------|
    | Start Auditing   | Start or stop auditing.    |
    | Log access | Log whenever the system is accessed, generally by signing in.  |  
-   | Read logs  | Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage). |
+   | Read logs  | Logs will be sent to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/auditlogsearch). |
 
 3. You can set a retention period for how long audit logs are kept in an environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
 
@@ -223,6 +218,8 @@ System administrators or customizers can change the default audit settings for e
 5. To start auditing, on the **General** tab, in the **Data Services** section, select the **Auditing** check box to enable auditing, or clear the **Auditing** check box to disable it.  
   
    By default, when you start or stop auditing for an entity, you also start or stop auditing for all the fields of this entity.  
+   
+   If you have enabled the **Read Logs** in the environment's audit settings, you'll need to enable the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. More information: [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
   
 6. Select **Save**.  
   
@@ -423,8 +420,5 @@ Select the system job name to open details about your delete job.
 ### See also
 [Auditing overview](/power-apps/developer/data-platform/auditing-overview) <br />
 [Audit user access](/power-apps/developer/data-platform/audit-user-access)
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

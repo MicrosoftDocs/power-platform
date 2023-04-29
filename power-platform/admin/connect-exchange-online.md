@@ -3,18 +3,13 @@ title: "Connect to Exchange Online | MicrosoftDocs"
 description: Connect to Exchange Online
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/09/2021
+ms.date: 11/08/2022
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Connect to Exchange Online
 
@@ -35,7 +30,7 @@ With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-excha
 > [!TIP]
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).
 > 
-> For ports required, see [Network ports for clients and mail flow in Exchange](/exchange/plan-and-deploy/deployment-ref/network-ports?view=exchserver-2019).
+> For ports required, see [Network ports for clients and mail flow in Exchange](/exchange/plan-and-deploy/deployment-ref/network-ports?view=exchserver-2019&preserve-view=true).
 
 
 ## Create an email server profile for Exchange Online
@@ -167,26 +162,41 @@ To approve emails for customer engagement apps, a user requires:
 
 ### Approve your own user mailbox
 
-A Dynamics 365 user can approve their own user mailbox if all of these conditions are met: 
+You can approve your own user mailbox if all of these conditions are met: 
 
-- Their UPN matches the email address on the mailbox.
+- Your User Principal Name (UPN) matches the email address in your mailbox record.
 
-- The user has **Approve Email Addresses for Users or Queues** privilege.
+- The OrgDBOrgSetting [RequirePrivilegeToSelfApproveEmailAddress](../admin/OrgDbOrgSettings.md) setting is disabled (default) or you have the [Approve Email Addresses for Users or Queues](connect-exchange-online.md#add-the-approve-email-addresses-for-users-or-queues-privilege) privilege.
+
+- You have a minimum of User-level Write privileges on the Mailbox table.   
 
 - The mailbox is not a queue mailbox.
 
+If **RequirePrivilegeToSelfApproveEmailAddress** is disabled (default) and you do not have the **Approve Email Addresses for Users or Queues** privilege, the **Approve Email** button does not appear. However, if you select **Test & Enable Mailbox** and the conditions mentioned above are met, the email address in your mailbox will be approved as part of the test and enable process.
+
+### Delegate mailbox approval
+
+A user with the Global or Exchange admin role can delegate the mailbox approval process to another user by assigning the **Delegated Mailbox Approver** security role in Dynamics 365. A user with the **Delegated Mailbox Approver** role can approve mailboxes in the environment without being a Global or Exchange admin. As mentioned below in the [permission model](connect-exchange-online.md#permissions-model) section, the user also needs to have the **System Administrator** security role. This is a new role available in Dynamics 365 online version 9.2.22104.00170 or later.
+
+> [!IMPORTANT] 
+> You cannot assign the **Delegated Mailbox Approver** role unless you have the Global or Exchange admin role. If you try to assign this role but are not a Global or Exchange admin, you will receive an error: "You must be an Office 365 Global Administrator or an Exchange Administrator to assign the Delegated Mailbox Approver role." You may also see the error code 0x80090904.
+> 
+> The **Delegated Mailbox Approver** role is not currently supported for assigning to a team. If you try to assign this role to a team, you will receive an error: "The Delegated Mailbox Approver role cannot be assigned to a team." You may also see error code 0x80090905 or the message "Failed to add role Delegated Mailbox Approver : CannotAssignDelegatedMailboxApproverRoleToTeam".
+> 
+> Because this is a Dynamics 365 security role, the role is assigned per environment. The role can be assigned to one or more users per environment.
+
+> [!NOTE]
+> For more information about assigning security roles in Dynamics 365 or Power Apps, see [Assign a security role to a user](/power-platform/admin/assign-security-roles).
+>
+> For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#commonly-used-microsoft-365-admin-center-roles). 
 
 ### Require admin approval?
 
 Decide which approach you want your organization to follow for mailbox approval.
 
 :::image type="complex" source="media/approval-flow-chart.png" alt-text="Flowchart for deciding on your mailbox approval approach.":::
-   Flowchart with the starting condition "You must be an Office 365 Global admin + Dynamics 365 System admin OR an Exchange admin + Dynamics 365 System admin." The first decision point is "Do you want to require mailbox approval?" The "No" path leads to "See 'Remove requirement to approve mailboxes'". The "Yes" path leads to "See Permissions model."
+   Flowchart with the starting condition "You must be an Office 365 Global admin + Dynamics 365 System admin OR an Exchange admin + Dynamics 365 System admin OR a Dynamics 365 Delegated Mailbox Approver + Dynamics 365 System admin.." The first decision point is "Do you want to require mailbox approval?" The "No" path leads to "See 'Remove requirement to approve mailboxes'". The "Yes" path leads to "See Permissions model."
 :::image-end:::
-
-
-> [!NOTE]
-> We're planning to revise the mailbox approval process with scenarios that don't require global admin approval. We'll update this documentation when that becomes available.
 
 ### Permissions model
 
@@ -198,6 +208,14 @@ The following table describes the permissions required to approve emails.
 - **No**: Can't approve email
 - **n/a**: Not applicable
 
+- **Global admin**: Tenant level administrator role
+- **Exchange admin**: Exchange administrator role
+
+> [!NOTE]
+> For more information about the Global and Exchange admin roles, see [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#commonly-used-microsoft-365-admin-center-roles) 
+
+- **Delegated Mailbox Approver**: Dynamics 365 security role which can be assigned by a Global admin or Exchange admin. A user with this role can approve mailboxes without being a Global or Exchange admin. For additional details, refer to the section above titled **Delegate mailbox approval**.
+
 > [!NOTE]
 > This permissions model is being gradually rolled out and will be available as soon as it's deployed to your region. Check the version number provided in the following table for when the change will be provided. 
 
@@ -206,6 +224,7 @@ The following table describes the permissions required to approve emails.
     <th colspan="2">Security roles /<br />Applications in use</th>
     <th colspan="2">Both roles required:<br />Global admin<br />and <br />System admin</th>
     <th colspan="2">Both roles required:<br />Exchange admin<br />and <br />System admin</th>
+    <th colspan="2">Both roles required:<br />Delegated Mailbox Approver<br />and <br />System admin</th>
     <th>System admin</th>
     <th>Service admin</th>
     <th>Exchange admin</th>
@@ -214,7 +233,8 @@ The following table describes the permissions required to approve emails.
   <tr>
     <td rowspan="2">Customer engagement apps</td>
     <td>Exchange Online</td>
-    <td colspan="2">Yes<sup>1</sup></td>
+    <td colspan="2">Yes</td>
+    <td colspan="2">Yes</td>
     <td colspan="2">Yes<sup>1</sup></td>
     <td>No</td>
     <td>No</td>
@@ -223,9 +243,10 @@ The following table describes the permissions required to approve emails.
   </tr>
   <tr>
     <td>Exchange (on-premises)</td>
-    <td colspan="2">Yes<sup>2</sup></td>
-    <td colspan="2">Yes<sup>2</sup></td>
-    <td>No<sup>2</sup></td>
+    <td colspan="2">n/a</td>
+    <td colspan="2">n/a</td>
+    <td colspan="2">n/a</td>
+    <td>Yes<sup>2</sup></td>
     <td>No</td>
     <td>n/a</td>
     <td>n/a</td>
@@ -236,7 +257,8 @@ The following table describes the permissions required to approve emails.
     <td>Exchange Online</td>
     <td colspan="2">n/a</td>
     <td colspan="2">n/a</td>
-    <td>Yes<sup>3</sup></td>
+    <td colspan="2">n/a</td>
+    <td>Yes<sup>2</sup></td>
     <td>n/a</td>
     <td>n/a</td>
     <td>n/a</td>
@@ -245,16 +267,16 @@ The following table describes the permissions required to approve emails.
     <td>Exchange (on-premises)</td>
     <td colspan="2">n/a</td>
     <td colspan="2">n/a</td>
-    <td>Yes<sup>3</sup></td>
+    <td colspan="2">n/a</td>
+    <td>Yes<sup>2</sup></td>
     <td>n/a</td>
     <td>n/a</td>
     <td>n/a</td>
   </tr>
 </table>
  
-<sup>1</sup> We're updating for customer engagement apps and Exchange Online, for version 9.1.0.5805 or later.  <br />
-<sup>2</sup> We'll be updating for customer engagement apps and Exchange (on-premises). Check back for version information.<br>
-<sup>3</sup> We recommend that you include your Exchange admin in the custom business processes your organization follows for this configuration.
+<sup>1</sup> We're updating for customer engagement apps and Exchange Online, for version 9.2.22104.00170 or later.  <br />
+<sup>2</sup> We recommend that you include your Exchange admin in the custom business processes your organization follows for this configuration.
 
  To determine your version, sign in, and in the upper-right corner of the screen, select **Settings** ![User profile Settings button.](media/user-profile-settings-button.png) > **About**.  
 

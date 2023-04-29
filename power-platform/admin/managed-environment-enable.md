@@ -11,11 +11,6 @@ ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Enable Managed Environments
 
@@ -25,7 +20,7 @@ Admins can enable, disable, and edit Managed Environments in the Power Platform 
 
 ## Permissions
 
-- You must be an admin to enable or edit Managed Environments. That is, you must have the global admin, Power Platform service admin, or Dynamics 365 admin Azure Active Directory role.
+- You must be an admin to enable or edit Managed Environments. That is, you must have the role of global admin, Power Platform service admin, or Dynamics 365 admin Azure Active Directory.
 - Any user with permission to see environment details can view the Managed Environments property for an environment.  
 - Users with the Delegated Admin role or the Environment Admin security role aren't allowed to change the Managed Environments property in an environment.
 
@@ -49,16 +44,16 @@ Use the following settings to increase visibility and control for the selected e
 | Setting | Description |
 | --- | --- |
 | **[Limit sharing](managed-environment-sharing-limits.md)** | Help reduce risk by limiting how widely canvas apps can be shared. |
-| Don't set limits | Select to not limit sharing canvas apps. |
+| Don't set limits | Select to not limit sharing of canvas apps. |
 | Exclude sharing with security groups | Select if makers aren't allowed to share canvas apps with any security groups. Admins may share with a limit on who an app can be shared with. |
-| Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, select to limit the number of people makers can share canvas apps with. |
+| Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, select to limit the number of people that makers can share canvas apps with. |
 | **[Usage insights](managed-environment-usage-insights.md)** | Select to include insights for this environment in the weekly email digest. |
 | **[Data policies](managed-environment-data-policies.md)** | Help safeguard your organizational data by limiting the connectors available.|
 | See active data policies for this environment | View the policies that define the consumer connectors that specific data can be shared with. |
 
 ## Disable Managed Environments using PowerShell
 
-Admins can use PowerShell to remove the Managed Environments property on an environment. The environment must not be using any Managed Environments capabilities.
+Admins can use PowerShell to remove the Managed Environments property on an environment. Before disabling Managed Environments, the administrator must ensure that none of the Managed Environments capabilities are in use.
 
 Here's an example PowerShell script that calls the API to set the Managed Environments property:
 
@@ -69,15 +64,10 @@ $UpdatedGovernanceConfiguration = [pscustomobject]@{
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentID> -UpdatedGovernanceConfiguration $UpdatedGovernanceConfiguration
 ```
 
-## Known limitations
-
-- The Managed Environments state cannot be activated on developer environments. 
-
-
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br /> 
 [Usage insights](managed-environment-usage-insights.md)  <br />
-[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Limit sharing](managed-environment-sharing-limits.md)  <br />
 [Data policies](managed-environment-data-policies.md) <br />
 [Licensing](managed-environment-licensing.md)  <br />
 [View license consumption (preview)](view-license-consumption-issues.md) <br />

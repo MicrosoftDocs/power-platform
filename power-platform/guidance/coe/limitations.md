@@ -2,20 +2,14 @@
 title: "Limitations | MicrosoftDocs"
 description: "Limitations of some components within the CoE Starter Kit, such as potential timeouts, Government Community Cloud availability, and more."
 author: manuelap-msft
-manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 12/07/2022
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Limitations
 
@@ -29,27 +23,14 @@ There are some flows, which crawl the tenant in order to do their work. Specific
 
 To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations)
 
-Larger tenants might require a [Power Automate Per Flow](https://flow.microsoft.com/pricing/) license or may need to set up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) in order for these flows to complete in a timely manner.
+Larger tenants might require a [Power Automate Per Flow](https://powerautomate.microsoft.com/pricing/) license for these flows to complete in a timely manner.
 
 >[!NOTE]
 >The first run of the sync flows will perform a full inventory and will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not go over Power Platform request entitlements for most tenants.
 
-## Installing the CoE Starter Kit in Dataverse for Teams
+## Flows that have never been turned on
 
-> [!IMPORTANT]
-> Effective October 2022, we will stop investing in the CoE Starter Kit version for Dataverse for Teams. Existing customers can continue using the Dataverse for Teams version and you can continue to [download the latest available versions](https://aka.ms/CoEStarterKitD4T) for Dataverse for Teams, but we will no longer implement new features or fix bugs for this version.
->
->We recommend that customers transition to installing the CoE starter Kit in a [Production environment](/power-platform/admin/environments-overview#types-of-environments) and setting up [pay-as-you-go plans](/power-platform/admin/pay-as-you-go-overview) for the usage of apps within the CoE Starter Kit.
-
-Model Driven Apps, Business Process Flows, and Custom Connectors are not available in Dataverse for Teams. If you are installing the CoE Starter Kit in Dataverse for Teams, you will notice those components missing.
-
-## Flows that use the Microsoft Dataverse connector
-
-The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
-
-## Flows that are imported or owned by a service principal
-
-The Admin | Sync Template v3 (Flows) flow will fail to collect inventory information for flows that were imported or are owned by a service principal.
+The Admin | Sync Template v3 (Flows) flow will fail to collect flows that have never been turned on. For example, if you import a solution with flows that are off, these will not be collected to inventory as they are not returned by the connector.
 
 ## Co-authoring and Connections
 
@@ -63,15 +44,9 @@ If you see this error, you should either log in with the identity that installed
 
 To do the later, browse to the default solution, filter to connection references, and edit each connection to use your connection instead.
 
-## Developer environments from the Power Apps Community Plan
+## Developer and Microsoft Teams environments from the Power Apps Community Plan
 
-Microsoft Power Platform protects developer-type SKUs from inquiry by non-authenticated users. This configuration means that the model-driven apps in developer SKUs will be skipped from our inventory work in the sync flow Admin | Sync Template v3 (Model Driven Apps).
-
-To collect model-driven app inventory, add your admin identity to the security roles for all developer environments, and then remove the selection from the sync flow. More information: [Power Apps Community Plan](/powerapps/maker/dev-community-plan)
-
-## Sync flow limitations for Developer and Microsoft Team environments
-
-It currently isn't possible to retrieve the model-driven apps, chatbots, and Desktop flows for developer environments (*My Name's* environment) and Microsoft Teams environments.
+Microsoft Power Platform protects developer and Microsoft Teams type SKUs from inquiry by non-authenticated users. This configuration means that the model-driven apps, bots, desktop flows, solutions, business process flows and AI builder models in developer SKUs will be skipped from our inventory work in the sync flow.
 
 ## Supported languages
 
@@ -80,26 +55,26 @@ The CoE Starter Kit solutions are not localized, and only support English. Add t
 ## Security groups and approvals
 
 We recommend against using security groups to control access to the CoE environment, because it's likely that users who don't have access to this environment will be participating in approvals.
-If you choose to use a security group to control access, users will have to be a part of that group to work with the archival solutions.
-
-## Shared component library in the theming components solution
-
-The shared component library in the [theming components solution](theming-components.md) isn't editable. Make your own copy if you want to extend it.
+If you choose to use a security group to control access to the environment, manually add users to the Approvals Users security role.
 
 ## Trial licenses
 
 Trial licenses do not have sufficient [API call allowances](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits) to run the CoE Starter Kit flows.
 For full list of license requirements, see [Setup Prerequisite](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
+## MFA (Multi-Factor Authentication)
+
+Multi-factor authentication can be used for the account setting up the CoE Starter Kit, if **MaxAgeMultiFactor** is set to **Until-Revoked** instead of a fixed time. Learn more: [Conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
+
 ## PIM (Privileged Identity Management)
 
-If your Power Platform admin role is managed via **[PIM](/azure/active-directory/privileged-identity-management/pim-getting-started)**, ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user loses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
+These roles and licenses must be available to this user continuously; if admin access is granted only temporarily via [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management), this won't be sufficient to run the CoE Starter Kit.
 
 ## Monitoring cloud flow runs
 
-Monitoring Cloud flow runs is currently not included in the CoE Starter Kit. Monitoring Desktop flow runs is included, although limited.
+Monitoring Cloud flow runs is currently not included in the CoE Starter Kit, however you can explore [self-serve analytics](/power-platform/admin/self-service-analytics) to get cloud flow run information and extend the CoE Starter Kit with this data.
 
-For more details on managing Desktop flows, check out the [Advanced Power Automate RPA Run Log Analytics with Power BI and Dataverse](https://flow.microsoft.com/blog/advanced-power-automate-rpa-run-log-analytics-with-power-bi-and-dataverse/) solution.
+Monitoring Desktop flow runs is included, although limited. For more details on managing Desktop flows, check out the [Automation Kit](https://aka.ms/automationkit) solution.
 
 ## Unpublished model-driven apps
 
@@ -117,7 +92,10 @@ In order to see desktop flow runs in the inventory, one of the following must be
 - Another user has [shared their desktop flow](/power-automate/create-team-flows#share-a-cloud-flow-with-run-only-permissions) with you, which has attended or unattended runs
 - You have [permission](/power-platform/admin/database-security) to view all data in the environment
 
-Learn more: [Monitor Desktop Flow runs](/power-automate/desktop-flows/monitor-desktop-flow-runs)
+Learn more:
+
+- [Monitor Desktop Flow runs](/power-automate/desktop-flows/monitor-desktop-flow-runs)
+- [Automation Kit](https://aka.ms/automationkit)
 
 ## Missing custom connectors
 

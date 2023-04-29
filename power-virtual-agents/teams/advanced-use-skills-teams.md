@@ -1,14 +1,14 @@
 ---
 title: "Use Microsoft Bot Framework skills in Microsoft Teams"
 description: "Add skills to your chatbots in the Power Virtual Agents app in Microsoft Teams."
-keywords: "authoring, extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
+keywords: "authoring, extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA, Teams"
 ms.date: 9/22/2020
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "Azure, advanced-authoring, ceX, teams"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

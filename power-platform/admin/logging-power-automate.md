@@ -1,36 +1,26 @@
 ---
 title: View Power Automate audit logs. | Microsoft Docs
 description: View Power Automate logs in the Microsoft Purview compliance portal.
-services: ''
-suite: flow
-documentationcenter: na
 author: msftman
-manager: kvivek
-editor: ''
-tags: ''
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/23/2021
+ms.date: 12/15/2022
 ms.subservice: admin
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: deonhe
 search.audienceType: 
   - flowmaker
   - enduser
 ---
-# View Power Automate audit logs 
+# View Power Automate audit logs
 
 You can find logs of Power Automate activities in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
 
 ## Access the logs
 
-1.  Sign into the [compliance center](https://compliance.microsoft.com/) as a tenant admin.
-1.  In the left hamburger menu, select **Show all**.
-1. Select **Audit** from the **Solutions** category. 
-    
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a tenant admin.
+1. In the left hamburger menu, select **Show all**.
+1. Select **Audit** from the **Solutions** category.
+
     ![Select audit from the menu.](./media/audit-logs/show-all.png)
 
 Power Platform admins can search the **Audit** screen for details from the following popular services.
@@ -51,7 +41,7 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 
 | Category | Event | Description |
 |-|-|-|
-|Flows | Created flow | The time a flow is created|
+|Flows | Created flow | The time when a flow is created|
 |Flows | Edited flow | Any updates made to the flow|
 |Flows | Deleted flow | When the flow is deleted|
 |Flow permissions | Edited permissions | Every time a user's permissions to a flow changes, for example, when a user is added as co-owner.|
@@ -77,15 +67,20 @@ Schemas define the Power Automate fields that are sent to the Microsoft Purview 
 |User type | UserType | Edm.String | No | The audit type (admin, regular, or system)|
 |Flow connector names | FlowConnectorNames | Edm.String | No | Connector names listed in the flow|
 |SharingPermission | SharingPermission | Edm.String | No | Type of permission shared with another user (3 = “Owner”/ReadWrite, 2 = "Run-only user"/Read)|
-|Recipient UPN | RecipientUPN | Edm.String | No | If permission was updated, shows the UPN of the permission recipient |
+|Recipient UPN | RecipientUPN | Edm.String | No | If permission was updated, shows the UPN of the permission recipient|
+|LicenseDisplayName | LicenseDisplayName | Edm.String | No | Display name of the license|
+|UserTypeInititated | UserTypeInititated | Edm.Int32 | No | Which type of user initiated the operation - applicable for delete flow, edit permissions (1 = user, 2 = admin)|
+|UserUPN | UserUPN | Edm.String | No | Unique ID of the user. Always equivalent to UserKey|
 |Additional info | More information, for example, the environment name)|
 
 ## Retention
-Microsoft retains the audit data for 90 days. You can export the audit data in .csv format and then further explore the data with Microsoft Excel or Power BI. 
 
-## Timing 
-Events become available in the logs within 90 minutes of their occurance.
+Microsoft retains the audit data for 90 days. You can export the audit data in .csv format and then further explore the data with Microsoft Excel or Power BI.
+
+## Timing
+
+Events become available in the logs within 90 minutes of their occurrence.
 
 ## Limitations
-Only activity from cloud flows is available in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). Activity for desktop flows is in the Microsoft Dataverse audit logs.
 
+Only activity from cloud flows is available in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). Activity for desktop flows is in the Microsoft Dataverse audit logs.

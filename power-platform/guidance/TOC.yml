@@ -17,10 +17,16 @@
           items:
             - name: Establishing a Center of Excellence
               href: adoption/coe.md
+            - name: Measure business value
+              href: adoption/business-value.md
             - name: Roles and responsibilities
               href: adoption/roles.md
+            - name: Executive sponsorship
+              href: adoption/executive-sponsorship.md
             - name: Delivery models
               href: adoption/delivery-models.md
+            - name: License assignment strategies
+              href: adoption/license-assignment-strategies.md
             - name: "Case study: Success Hub"
               items:
                 - name: Overview
@@ -41,6 +47,8 @@
                   href: adoption/environment-strategy.md
                 - name: Manage Dataverse for Teams environments
                   href: adoption/teams-environment-strategy.md
+                - name: Manage the default environment
+                  href: adoption/manage-default-environment.md
             - name: Secure
               items:
                 - name: Establish DLP policies
@@ -49,6 +57,8 @@
                   href: adoption/conditional-access.md
                 - name: Enable cross-tenant isolation
                   href: /power-platform/admin/cross-tenant-restrictions
+                - name: Secure the default environment
+                  href: adoption/secure-default-environment.md
             - name: Monitor and alert
               items:
                 - name: Report on resource usage
@@ -104,8 +114,8 @@
       items:
         - name: Overview
           href: coe/overview.md
-        - name: Establishing a Center of Excellence
-          href: coe/motivation.md
+        - name: Establishing tenant hygiene
+          href: coe/after-setup-tenant-hygiene.md
         - name: Set up the CoE starter kit
           items:
             - name: Get started with setup
@@ -130,7 +140,7 @@
               href: coe/setup-quarantine-components.md
             - name: Collect audit log data
               href: coe/setup-auditlog.md
-            - name: Set-up Power BI reporting
+            - name: Set up Power BI reports
               href: coe/setup-powerbi.md
             - name: Set up nurture components
               href: coe/setup-nurture-components.md
@@ -140,39 +150,6 @@
               href: coe/setup-admin-tasks-component.md
             - name: Set up theming components
               href: coe/setup-theming.md
-            - name: Set up ALM Accelerator for Power Platform components
-              href: coe/setup-almacceleratorpowerplatform-cli.md
-              items:
-                - name: Set up ALM Accelerator for Power Platform using the Admin App
-                  href: coe/setup-almacceleratorpowerplatform-preview.md
-                - name: Set up ALM Accelerator for Power Platform using CoE CLI
-                  href: coe/cli/alm/overview.md
-                - name: Set up ALM Accelerator for Power Platform components manually
-                  href: coe/setup-almacceleratorpowerplatform.md
-                - name: Upgrade ALM Accelerator for Power Platform
-                  href: coe/setup-almacceleratorpowerplatform-upgrade-config.md
-                - name: Configuration and data deployment in pipelines
-                  href: coe/setup-almacceleratorpowerplatform-deployment-config.md
-                - name: Configuring pipeline sync
-                  href: coe/setup-almacceleratorpowerplatform-pipeline-sync.md
-                - name: Configuring user permissions
-                  href: coe/setup-almacceleratorpowerplatform-users.md
-                - name: Configuring deployment user settings and profiles
-                  href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
-                - name: Use with Power Apps portals and Power Pages
-                  href: coe/almaccelerator-powerpages.md
-                - name: Use with code first components
-                  href: coe/almaccelerator-codefirst.md
-                - name: Configuring the ALM Accelerator Pipelines
-                  href: coe/almaccelerator-pipelines.md
-                - name: Deployment settings for ALM Accelerator
-                  href: coe/almaccelerator-deployment-settings.md
-                - name: Using the Pipeline extension points
-                  href: coe/setup-almacceleratorforpowerplatform-hook-extensions.md
-                - name: Considerations when creating Azure App Registrations
-                  href: coe/almaccelerator-app-registrations.md
-                - name: Set up ALM Accelerator for Makers components
-                  href: coe/setup-almaccelerator.md
             - name: What's next - updating the CoE Starter Kit
               href: coe/after-setup.md
             - name: What's next - extending the CoE Starter Kit
@@ -215,20 +192,6 @@
               href: coe/use-innovationbacklog.md
             - name: Use the Administration planning components
               href: coe/admin-tasks-component.md
-            - name: Use the ALM Accelerator for Power Platform
-              href: coe/almacceleratorpowerplatform-components.md
-              items:
-                - name: Use the Advanced Maker experience
-                  href: coe/almacceleratorpowerplatform-advancedmaker.md
-                - name: Use the New Maker experience
-                  href: coe/almacceleratorpowerplatform-newmaker.md
-                - name: Use the Administrator experience
-                  href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
-                - name: Use the ALM Accelerator for Makers (preview)
-                  href: coe/almaccelerator-components.md
-                - name: ALM Accelerator learning catalog
-                  href: coe/almacceleratorpowerplatform-learningcatalog.md
-
             - name: Environment management
               href: coe/env-mgmt.md
             - name: Capacity alerting and reporting
@@ -263,15 +226,6 @@
                   href: coe/cli/alm/personas.md
                 - name: Personas
                   href: coe/cli/alm/personas.md
-            - name: Maturity model
-              href: coe/cli/alm/maturity/overview.md
-            - name: Scenarios
-              href: coe/cli/alm/scenarios/overview.md
-              items:
-                - name: DevOps deployment model
-                  href: coe/cli/alm/scenarios/devops-deployment-model.md
-                - name: Tenant deployments
-                  href: coe/cli/alm/scenarios/tenant-deployments.md
             - name: CLI development
               href: coe/cli/cli-development/overview.md
               items:
@@ -279,15 +233,82 @@
                   href: coe/cli/cli-development/adding-new-command.md
                 - name: Documentation
                   href: coe/cli/cli-development/documentation.md
-
         - name: FAQ and Tips
-          href: coe/faq.md
+          items:
+            - name: Questions, Tips and How To's
+              href: coe/faq.md
+            - name: Questions related to the Data Export integration
+              href: coe/faq-dataexport.md
         - name: Limitations
           href: coe/limitations.md
         - name: Release notes
           href: coe/release-notes.md
         - name: Feedback and support
           href: coe/feedback-support.md
+    - name: Power Platform ALM Accelerator
+      items:
+        - name: Overview
+          href: alm-accelerator/overview.md
+        - name: Maturity model
+          href: alm-accelerator/maturity/overview.md
+        - name: Branching and environment strategy
+          href: alm-accelerator/branching-environment-strategy.md
+        - name: Scenarios
+          items:
+            - name: Deployment scenarios
+              href: alm-accelerator/scenarios/overview.md
+            - name: DevOps deployment model
+              href: alm-accelerator/scenarios/devops-deployment-model.md
+            - name: Tenant deployments
+              href: alm-accelerator/scenarios/tenant-deployments.md
+        - name: Install the ALM Accelerator
+          items:
+            - name: Set up the ALM Accelerator using the Admin App
+              href: alm-accelerator/setup-admin-tasks.md
+            - name: Set up the ALM Accelerator manually
+              href: alm-accelerator/setup-components-manually.md
+            - name: Upgrade the ALM Accelerator
+              href: alm-accelerator/setup-upgrade-configuration.md
+        - name: Configure the ALM Accelerator
+          items:
+            - name: Configure deployment user settings
+              href: alm-accelerator/setup-deployment-user-settings.md
+            - name: Configure deployment profiles
+              href: alm-accelerator/setup-deployment-user-profiles.md
+            - name: Configuration and data deployment in pipelines
+              href: alm-accelerator/setup-data-deployment-configuration.md
+            - name: Configure user permissions
+              href: alm-accelerator/setup-app-user-permissions.md
+            - name: Configure ALM Accelerator Pipelines
+              href: alm-accelerator/configure-azuredevops-pipelines.md
+            - name: Set up pipeline sync
+              href: alm-accelerator/setup-pipeline-sync.md
+            - name: Bring your own templates with ALM Accelerator
+              href: alm-accelerator/customize-deployment-pipelines.md
+            - name: Configure the pipeline extension points
+              href: alm-accelerator/setup-hook-extensions.md
+            - name: Considerations when creating Azure App Registrations
+              href: alm-accelerator/app-registration-strategy.md
+            - name: Deployment settings for ALM Accelerator
+              href: alm-accelerator/deployment-settings-payload.md
+        - name: How to use the ALM Accelerator
+          items:
+            - name: What's in the ALM Accelerator
+              href: alm-accelerator/kit-contents.md
+            - name: Advanced Maker experience
+              href: alm-accelerator/advanced-maker-experience.md
+            - name: New Maker experience
+              href: alm-accelerator/new-maker-experience.md
+            - name: Creating an import configuration
+              href: alm-accelerator/create-import-deployment-configuration.md
+            - name: Configuration for Power Pages
+              href: alm-accelerator/configure-power-pages.md
+            - name: Build and package code-first components
+              href: alm-accelerator/build-package-codefirst-components.md
+            - name: Maintenance tasks
+              href: alm-accelerator/maintain-admin-tasks.md
+            - name: ALM Accelerator learning catalog
+              href: alm-accelerator/learning-resources-catalog.md
     - name: Power Platform Creator Kit
       items:
         - name: Overview
@@ -308,15 +329,17 @@
                   href: creator-kit/icon.md
                 - name: ResizableTextArea
                   href: creator-kit/resizabletextarea.md
-                - name: SearchBox
+                - name: SearchBox (preview)
                   href: creator-kit/searchbox.md
+                - name: SpinButton (preview)
+                  href: creator-kit/spinbutton.md
             - name: Commands, Menus & Navs
               items:
                 - name: Breadcrumb
                   href: creator-kit/breadcrumb.md
                 - name: ContextMenu
                   href: creator-kit/contextmenu.md
-                - name: CommandBar (preview)
+                - name: CommandBar
                   href: creator-kit/commandbar.md
                 - name: Header (experimental)
                   href: creator-kit/header.md
@@ -326,27 +349,33 @@
                   href: creator-kit/nav.md
                 - name: Pivot
                   href: creator-kit/pivot.md
-            - name: Lists and Items
+                - name: SubwayNav (preview)
+                  href: creator-kit/subwaynav.md
+            - name: Items and Lists
               items:
                 - name: DetailsList
                   href: creator-kit/detailslist.md
                 - name: Facepile (preview)
                   href: creator-kit/facepile.md
-            - name: Pickers
-              items:
-                - name: Calendar (preview)
-                  href: creator-kit/calendar.md
-                - name: TagsPicker
-                  href: creator-kit/picker.md
+                - name: Persona (preview)
+                  href: creator-kit/persona.md
                 - name: TagList
                   href: creator-kit/taglist.md
+            - name: Pickers
+              items:
+                - name: Calendar
+                  href: creator-kit/calendar.md
+                - name: PeoplePicker (preview)
+                  href: creator-kit/peoplepicker.md
+                - name: Picker
+                  href: creator-kit/picker.md
             - name: Progress
               items:
-                - name: Shimmer (preview)
+                - name: Shimmer
                   href: creator-kit/shimmer.md
-                - name: Spinner (preview)
+                - name: Spinner
                   href: creator-kit/spinner.md
-                - name: ProgressIndicator (preview)
+                - name: ProgressIndicator
                   href: creator-kit/progressindicator.md
             - name: Surfaces
               items:

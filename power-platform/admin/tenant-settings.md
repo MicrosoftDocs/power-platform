@@ -10,11 +10,6 @@ ms.author: ampatra
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Tenant settings 
 
@@ -25,7 +20,7 @@ To view tenant-level settings:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. Select **Settings** > **Tenant settings** in the left-side navigation pane. 
 
-The following settings apply to your tenant - all environments contained within your tenant. 
+The following settings apply to your tenant—all environments contained within your tenant. 
 
 |Name  |Description  |
 |---------|---------|
@@ -38,7 +33,7 @@ The following settings apply to your tenant - all environments contained within 
 *This setting applies only to Managed Environments.
 
 
-### See also  
+
 
 
 

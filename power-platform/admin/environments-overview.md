@@ -1,21 +1,17 @@
 ---
 title: Environments overview | Microsoft Docs
 description: Learn about Power Platform environments and how to use them.
-author: jimholtz
+author: Mattp123
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/25/2022
+ms.date: 01/30/2023
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: matp
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+contributors:
+  - marcelbf
 ---
-
 # Environments overview
 
 A *Power Platform environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
@@ -26,6 +22,7 @@ A *Power Platform environment* is a space to store, manage, and share your organ
 - You might also create separate environments for different global branches of your company.  
 
 ## Environment scope
+
 Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
 
 Every environment can have zero or one Microsoft Dataverse database, which provides storage for your apps and chatbots. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
@@ -37,6 +34,7 @@ You can also move resources between environments. More information: [Migrate res
 ![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database.](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
 
 ## Environment permissions
+
 Environments have two built-in roles that provide access to permissions within an environment:
 
 - The *Environment Admin* role can perform all administrative actions on an environment, including the following:
@@ -57,58 +55,49 @@ Users or security groups can be assigned to either of these two roles by an envi
 
 There are multiple types of environments. The type indicates the purpose of the environment and determines its characteristics. The following table summarizes the current types of environments that you might encounter.
 
-<table style="width:100%">
-<tr>
-<th>Type</th>
-<th>Description</th>
-<th>Security</th>
-</tr>
-<tr>
-<td width="20%"> Production</td>
-<td width="50%">  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1&nbsp;GB available database capacity. These environments are also created for each existing Dataverse database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.        </td>
-<td width="30%"> Full control.  </td>
-</tr>
-<tr>
-<td width="20%"> Default</td>
-<td width="50%"> These are a special type of production environment. Each tenant has a default environment that's created automatically. Its characteristics are discussed in the following section, <a href="#the-default-environment">The default environment</a>. </td>
-<td width="30%">  Limited control. All licensed users* have the Environment Maker role.</td>
-<tr>
-<td width="20%"> Sandbox</td>
-<td width="50%">   These are non-production environments, which offer features like copy and reset. Sandbox environments are used for development and testing, separate from production. Provisioning sandbox environments can be restricted to admins (because production environment creation can be blocked), but converting from a production to a sandbox environment can't be blocked. </td>
-<td width="30%">  Full control. If used for testing, only user access is needed. Developers require Environment Maker access to create resources.</td>
-</tr>
-<tr>
-<td width="20%"> Trial</td>
-<td width="50%">  Trial environments are intended to support short-term testing needs and are automatically cleaned up after a short period of time. They expire after 30 days and are limited to one per user. Provisioning trial environments can be restricted to admins.</td>
-<td width="30%">  Full control.</td>
-</tr>
-<tr>
-<td width="20%"> Developer</td>
-<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can be restricted to admins (see <a href="powerapps-powershell.md#block-trial-licenses-commands">Block trial licenses commands</a>). The developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: <a href="/powerapps/maker/developer-plan">Power Apps Developer Plan</a></td>
-<td width="30%">  The user with the Developer Plan can choose to add other users as makers. </td>
-</tr>
-<tr>
-<td width="20%"> Microsoft Dataverse for Teams</td>
-<td width="50%">  Dataverse for Teams environments are automatically created for the selected team when you create an app in Teams using the app for the first time or install an app from the app catalog. See <a href="about-teams-environment.md">About the Dataverse for Teams environment</a>. </td>
-<td width="30%">  Limited control. Admins have limited settings available for Teams environments.  No customizations of security role or assignments are available.  Teams members are automatically mapped to their Teams membership type - Owners, Members, and Guests - with a corresponding security role assigned by the system.  </td>
-</tr>
-<tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
-</table>
+|Type  |Description  |Security  |
+|---------|---------|---------|
+|Production  |  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1&nbsp;GB available database capacity. These environments are also created for each existing Dataverse database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.     | Full control.     |
+|Default   | These are a special type of production environment. Each tenant has a default environment that's created automatically. Its characteristics are discussed in the following section, [The default environment](#the-default-environment)   |  Limited control. All licensed users<sup>1</sup> have the environment maker role.     |
+|Sandbox  | These are non-production environments, which offer features like copy and reset. Sandbox environments are used for development and testing, separate from production. Provisioning sandbox environments can be restricted to admins (because production environment creation can be blocked), but converting from a production to a sandbox environment can't be blocked.     | Full control. If used for testing, only user access is needed. Developers require environment maker access to create resources.    |
+|Trial    | Trial environments are intended to support short-term testing needs and are automatically cleaned up after a short period of time. They expire after 30 days and are limited to one per user. Provisioning trial environments can be restricted to admins.    |  Full control.    |
+| Developer | Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can be restricted to admins. More information: [Control environment creation](control-environment-creation.md#developer-environments). The developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: [Power Apps Developer Plan](/powerapps/maker/developer-plan)     |  Limited control.  Security groups can't be assigned to developer environments. |
+| Microsoft Dataverse for Teams |  Dataverse for Teams environments are automatically created for the selected team when you create an app in Teams using the app for the first time or install an app from the app catalog. More information: [About the Dataverse for Teams environment](about-teams-environment.md)</a>.     |  Limited control. Admins have limited settings available for Teams environments. No customizations of security role or assignments are available. Teams members are automatically mapped to their Teams membership type - owners, members, and guests - with a corresponding security role assigned by the system.    |
+
+<sup>1</sup>Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.
 
 ## The default environment
-A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant.
+
+A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. No users will be automatically added to the Environment Admin role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant, and is named as follows: "{Azure AD tenant name} (default)".
+
+You can't delete the default environment. You can't manually back up the default environment; system backups are done continuously. 
+
+The default environment is limited to 1 TB of storage capacity. To store more data, you can create a production environment. The default environment has the following included storage capacity: 
+- 3 GB Dataverse Database Capacity
+- 3 GB Dataverse File Capacity
+- 1 GB Dataverse Log Capacity
+
+The capacity check conducted prior to creating new environments will exclude the default environment's included storage capacity when calculating whether you have  sufficient capacity to create a new environment.
+
+### Assign administrators to the default environment
+
+Microsoft 365 Power Platform administrators are automatically assigned the Dataverse system administrator security role in the default environment. However, no other users are automatically added to the default environment as an administrator. To avoid the possibility of an administrative lockout to the default environment, we recommend that you assign the system administrator security role to a few trusted users without assigning those users the Power Platform administrator role. More information: [Environments with a Dataverse database](database-security.md#environments-with-a-dataverse-database)
+
+### Rename the default environment
+
+The default environment is created using the naming convention {Azure AD tenant name} (default).  Power Platform administrators should consider renaming the default environment to something more descriptive, such as *Personal Productivity Environment* that clearly calls out the intent of the environment. 
 
 > [!NOTE]
-> - No users will be added to the Environment Admin role of the default environment automatically. 
-> - You can't delete the default environment.
-> - The default environment can't be manually backed up. System backups are done continuously.
-> - The default environment is limited to 1 TB of storage capacity.  To store more data, you can create a production environment.
-> - The default environment has the following included storage capacity: 3 GB Dataverse Database Capacity, 3GB Dataverse File Capacity, and 1 GB Dataverse Log Capacity.
-> - The capacity check conducted prior to creating new environments will exclude the default environment's included storage capacity when calculating whether you have  sufficient capacity to create a new environment.
+> After you change the name of the default environment, you can still identify it from the Power Platform admin center as the only environment with the environment **Type** of **Default**.
 
-The default environment is named as follows: "{Azure AD tenant name} (default)"
+More information: [Edit properties of an environment](edit-properties-environment.md) 
+
+### Default environment best practices
+
+For more guidance information with the default environment, go to [Manage the default environment](../guidance/adoption/manage-default-environment.md) and [Secure the default environment](../guidance/adoption/secure-default-environment.md).
 
 ## Production and trial environments
+
 You can create environments for different purposes. A trial environment is for trying out the environment and the experience of using a database with Dataverse. It expires after a certain period. 
 
 ## Manage environments in the Power Platform admin center

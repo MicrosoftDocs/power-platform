@@ -2,40 +2,35 @@
 title: "Set up audit log components | MicrosoftDocs"
 description: "The Audit Log Sync flow connects to the Audit Log to gather telemetry data (unique users, launches) for apps in Microsoft 365."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 04/13/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Set up the audit log connector
-
-> [!NOTE]
-> This Audit Log solution is not available for Dataverse for Teams.
 
 The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The flow uses a custom connector to connect to the Audit Log. In the following instructions, you'll set up the custom connector and configure the flow.
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
->[!IMPORTANT]
->Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+> [!IMPORTANT]
+> Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup in this article. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>
+> Only set up the Audit Log solution if you've chosen [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
 [Watch a walk-through](https://www.youtube.com/watch?v=Lsooi7xp6eA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG&index=1&t=1360s) on how to set up the audit log connector.
 
 ## Before you use the audit log connector
 
 1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide)
-1. A Global Admin is required to configure the Azure AD app registration.
+1. The user identity running the flow must have permission to the audit logs. Minimum permissions for this described here: [Before you search the audit logs](/microsoft-365/compliance/audit-log-search?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log)
 1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+1. A Global Admin is required to configure the Azure AD app registration.
 
 The Office 365 Management APIs use Azure Active Directory (Azure AD) to provide authentication services that you can use to grant rights for your application to access them.
 
@@ -87,10 +82,10 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-1. Go to [make.powerapps.com](https://make.powerapps.com) > **Data** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
+1. Go to [Power Apps](https://make.powerapps.com) > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
 1. Select **Edit**.
 
-  ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
+    ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
 
 1. If your tenant is a commercial tenant, leave the **General** page as is.
 
@@ -107,19 +102,23 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
    ![Edit OAuth configuration.](media/coe42.png "Edit OAuth configuration")
 
+1. Change the **Identity Provider** to Azure Active Directory.
+
+    :::image type="content" source="media/auditlogcc.png" alt-text="Change the identity provider to Azure Active Directory.":::
+
 1. Paste the application (client) ID you copied from the app registration into **Client Id**.
 
 1. Paste the client secret you copied from the app registration into **Client secret**.
 
 1. Don't change the **Tenant ID**.
 
-1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
+1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://<span>login</span>.microsoftonline.us/ for a GCC High or DoD tenant.
 
-1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, https://manage.office365.us for a GCC high tenant and https://manage.protection.apps.mil for a DoD tenant.
-
-1. Copy the **Redirect URL** into your text document in Notepad.
+1. Set the **Resource URL** to https://<span>manage</span>.office.com for a commercial tenant, https://<span>manage</span>-gcc.office.com for a GCC tenant, https://<span>manage</span>.office365.us for a GCC high tenant and https://<span>manage</span>.protection.apps.mil for a DoD tenant.
 
 1. Select **Update Connector**.
+
+1. Copy the **Redirect URL** into your text document in Notepad.
 
 > [!NOTE]
 > If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy.
@@ -164,14 +163,16 @@ You should see a (200) status returned, which means the query was successful.
 > If you have previously enabled the subscription, you will see a **(400) The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
 > If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
->
-> - Are audit logs enabled, and do you have permission to view the audit logs? Check [compliance.office.com](https://compliance.microsoft.com) > **Solutions** > **Audit** > **Search**.
+> - Validate that the identity provider on the **Security** tab is set to Azure Active Directory.
+> - Are audit logs enabled, and do you have permission to view the audit logs? Check by seeing if you can search in the [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Azure AD app registration?
 > - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
 > - Validate that you correctly followed the steps in [Azure AD app registration](#create-an-azure-ad-app-registration-for-the-office-365-management-api)
 > - Validate that you correctly updated the security settings of the custom connector, as described in [step 6 of the custom connector setup](#set-up-the-custom-connector) procedure earlier in this article.
+>
+> If you are still seeing failures, your connection may be in a bad state. Learn more: [Step-by-step instructions to repair Audit Log connection](https://github.com/microsoft/coe-starter-kit/issues/4961)
 
 ### Set up the Power Automate flow
 
@@ -187,12 +188,13 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. [Remove the unmanaged layer](after-setup.md) from the **\[Child\] Admin | Sync Logs**.
 1. Select the **\[Child\] Admin | Sync Logs**.
 1. Edit the **Run only users** settings.
+   :::image type="content" source="media/coe49.png" alt-text="Child flow - run only users.":::
 
-   ![Child flow - run only users.](media/coe49.png "Child flow - run only users")
+1. For the  Office 365 Management API custom connector change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
+   :::image type="content" source="media/coe50.png" alt-text="Configure run only users.":::
 
-1. For the custom connector, Dataverse and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
-
-   ![Configure run only users.](media/coe50.png "Configure run only users")
+1. For the Microsoft Dataverse connector, leave the run-only permission value blank and confirm that the connection reference for the **CoE Audit Logs - Dataverse** connection is configured correctly. If the connection is showing an error, [update the connection reference](faq.md#update-connection-references) for the **CoE Audit Logs - Dataverse** connection reference.
+   :::image type="content" source="media/auditlogdv.png" alt-text="Confirm Dataverse connection reference is set to your account.":::
 
 1. Select **Save**, and then close the **Flow details** tab.
 

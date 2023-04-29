@@ -6,16 +6,11 @@ author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 11/12/2020
+ms.date: 11/14/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Sign in to Dynamics 365 and Office apps
 
@@ -43,9 +38,8 @@ From there, you can get to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn
 For other ways to access Dynamics 365 and Office apps, see [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md).  
 
 ## Direct sign in to the Dynamics 365 home page  
-**Your business apps are moving**
 
-In the future, the home for all of your business applications across Dynamics and Microsoft Power Platform will move to the apps page on [office.com](https://office.com/apps). This will help ensure that your end-users have a single spot to find all of their apps across the Microsoft ecosystem. Once the apps on the Dynamics home page have moved to [office.com](https://office.com/apps), we will provide a banner redirecting users to their new home.
+The home for business applications across Dynamics 365 and Microsoft Power Platform has moved from [https://home.dynamics.com](https://home.dynamics.com) to [office.com](https://office.com/apps).
 
 ### See also  
  [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)   

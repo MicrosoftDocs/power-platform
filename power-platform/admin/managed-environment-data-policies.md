@@ -11,11 +11,6 @@ ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Data policies 
@@ -45,9 +40,9 @@ If no data policies are applied to the environment, the data policies page is em
 
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br />
-[Enable Managed Environment](managed-environment-enable.md)  <br />
+[Enable Managed Environments](managed-environment-enable.md)  <br />
 [Usage insights](managed-environment-usage-insights.md)  <br />
-[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Limit sharing](managed-environment-sharing-limits.md)  <br />
 [Licensing](managed-environment-licensing.md)  <br />
 [View license consumption (preview)](view-license-consumption-issues.md) <br />
 [Tenant settings](tenant-settings.md)

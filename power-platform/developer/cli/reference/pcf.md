@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI pcf command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI pcf command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 10/13/2022
+author: snizar007
+ms.author: snizar
+ms.date: 4/19/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -79,7 +79,7 @@ Output directory
 
 #### `--run-npm-install` `-npm`
 
-Auto run 'npm install' after the control is created. Default value is 'true'
+Auto run 'npm install' after the control is created. Default value is 'false'
 
 This parameter requires no value. It is a switch.
 
@@ -106,6 +106,12 @@ Customization prefix value for the Dataverse solution publisher
 #### `--force-import` `-f`
 
 Force a full update of the control
+
+This parameter requires no value. It is a switch.
+
+#### `--interactive` `-i`
+
+Indicates that actions in the build are allowed to interact with the user. Do not use this argument in an automated scenario where interactivity is not expected.
 
 This parameter requires no value. It is a switch.
 
@@ -157,9 +163,10 @@ Updates patch version for 'ControlManifest.xml' files using specified strategy. 
 
 Use one of these values:
 
-- `gittags`
-- `filetracking`
-- `manifest`
+- `None`
+- `GitTags`
+- `FileTracking`
+- `Manifest`
 
 #### `--updatetarget` `-ut`
 

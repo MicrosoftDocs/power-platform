@@ -5,7 +5,6 @@ keywords:
 author: shmcarth
 ms.subservice: alm
 ms.author: shmcarth
-manager: kvivek
 ms.custom: ""
 ms.date: 06/11/2020
 ms.reviewer: "matp"
@@ -19,9 +18,6 @@ applies_to:
 ms.assetid: 
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # ALM basics with Microsoft Power Platform 

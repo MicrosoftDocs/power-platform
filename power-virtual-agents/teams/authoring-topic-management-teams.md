@@ -1,14 +1,14 @@
 ---
 title: "Fix errors, set status, and copy topics in Microsoft Teams"
 description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time, all in the Power Virtual Agents app in Microsoft Teams."
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 01/25/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -60,10 +60,10 @@ Select the error count to open the authoring canvas to where the first error is.
 
 There are four types of errors that appear in the topic checker and in the authoring canvas:
 
-- *Node*: The entire node is incorrect and is highlighted red.
-- *Field*: The field might be missing required data and is highlighted red.
-- *Expression*: The expression might be invalid and is highlighted red.
-- *Variable deletion*: A variable in a topic was deleted and is highlighted red wherever it was used. This causes the variable to become "orphaned", and it must be either removed or replaced.
+- _Node_: The entire node is incorrect and is highlighted red.
+- _Field_: The field might be missing required data and is highlighted red.
+- _Expression_: The expression might be invalid and is highlighted red.
+- _Variable deletion_: A variable in a topic was deleted and is highlighted red wherever it was used. This causes the variable to become "orphaned", and it must be either removed or replaced.
 
 ## Topic status
 
@@ -97,7 +97,7 @@ On the Topics page, select the menu icon on a topic's name and then **Make a cop
 
 :::image type="content" source="../media/authoring-topic-management/topics-menu-icon.png" alt-text="Make a copy from the menu icon." border="false":::
 
-This option creates a duplicate of the selected topic with *(Copy)* added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
+This option creates a duplicate of the selected topic with _(Copy)_ added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
 
 A copied topic has a status of **Off** by default when it is copied to avoid confusion on which topic will trigger, since the trigger phrases are the same as the original topic.
 

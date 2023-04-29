@@ -12,11 +12,6 @@ ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Security enhancements: User session and access management 
 
@@ -61,7 +56,6 @@ For environments that require different session timeout values, administrators c
 > 5. Power Apps canvas apps 
 
 ## Configure session timeout 
-
 1. In the Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Product** > **Privacy + Security**.  
@@ -69,6 +63,7 @@ For environments that require different session timeout values, administrators c
 3. Set **Session Expiration** and **Inactivity timeout**. These settings apply to all users.
 
 > [!NOTE]
+> **Session timeout** is a server side feature where life time of all sessions are enforced.
 > Default values are:
 > - Maximum Session Length: 1440 minutes
 > - Minimum Session Length: 60 minutes
@@ -77,7 +72,6 @@ For environments that require different session timeout values, administrators c
 > - The updated settings will be effective the next time the user signs in to the application.
 
 ## Inactivity timeout
-
 By default, customer engagement apps do not enforce an inactivity session timeout.  A user can remain logged in the application until the session timeout expires.  You can change this behavior.
 
 - To enforce users too automatically signed out after a pre-determined period of inactivity, admins can set an inactivity timeout period for each of their environments. The application signs out the user when the inactivity session expires.
@@ -103,6 +97,7 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 3. Set **Session Expiration** and **Inactivity timeout**. These settings apply to all users.
 
 > [!NOTE]
+>  **Inactivity timeout** is a client side feature where client is making decision to primitively sign out based on the inactivity.
 > Default values are:
 > - Minimum Duration of Inactivity: 5 minutes
 > - Maximum Duration of Inactivity: less than Maximum Session length or 1440 minutes

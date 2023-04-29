@@ -1,31 +1,16 @@
 ---
 title: Back up and restore environments | Microsoft Docs
-description: Covers how to back up and restore environments
-services: powerapps
-ms.component: pa-admin
+description: Provides information on how to back up and restore Power Platform environments
 ms.topic: conceptual
 ms.date: 07/12/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
-ms.reviewer: jimholtz
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.reviewer: kvivek
 ---
 # Back up and restore environments
 
-Protecting your data in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and providing continuous availability of service are important. You have multiple options for backing up and restoring your environments. For  information about app specific backup and restore, see the respective app's documentation:
-
-- [Dynamics 365 Marketing](/dynamics365/marketing/manage-marketing-environments#create-and-restore-backups)
-- [Dynamics 365 Finance](/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations)
-- [Dynamics 365 Customer service](/dynamics365/customer-service/export-import-omnichannel-data)
-- [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/azure-synapse-link-olc#backup-and-restore-an-environment)
-- [Power Apps portals](/power-apps/maker/portals/admin/migrate-portal-configuration?tabs=CLI)
+Protecting your data in Power Platform and Dataverse, and providing continuous availability of service are important. You have multiple options for backing up and restoring your environments. 
  
 ## System backups 
 Some backups take place without you having to do anything.  
@@ -158,6 +143,16 @@ Restoring audit logs can significantly add to the time it takes to restore an en
 
 5. Confirm deletion of the environment. 
  
+## App-specific backups
+
+For information about backup and restore of certain apps, see the respective app's documentation:
+
+- [Dynamics 365 Marketing](/dynamics365/marketing/manage-marketing-environments#create-and-restore-backups)
+- [Dynamics 365 Finance](/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations)
+- [Dynamics 365 Customer service](/dynamics365/customer-service/export-import-omnichannel-data)
+- [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/azure-synapse-link-olc#backup-and-restore-an-environment)
+- [Power Apps portals](/power-apps/maker/portals/admin/migrate-portal-configuration?tabs=CLI)
+
 ## FAQ
 
 ### How are system backups taken?
@@ -210,7 +205,7 @@ The newly restored environment is placed in administration mode. To disable admi
 
 ### What steps are needed after a restore to ensure flows are working as expected?
 
-- **Flows** - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows will be disabled so enable flows as needed.
+- **Flows** - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows will be disabled so enable flows as needed. Solution flows need to be enabled or turned on for the PowerShell and API commands to work with these flows.
 - **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
 - **Custom Connectors** - Custom connectors should be reviewed and, if needed, deleted and reinstalled.
 

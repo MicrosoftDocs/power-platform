@@ -37,6 +37,6 @@ Further, the Dataverse connector bypasses the traditional connector infrastructu
 :::image-end:::
 
 
-As a real-world example, consider Belron, the worldwide leader in vehicle glass repair and replacement. Belron uses more than 40 apps, all developed in-house by just one employee with no programming skills. For more insight on how Belron used Dataverse, read the story here: [Customer story: Vehicle glass repair provider digitizes processes and increases productivity with self-developed apps](https://customers.microsoft.com/story/belron-autoglass-consumer-goods-powerapps). 
+As a real-world example, consider Belron, the worldwide leader in vehicle glass repair and replacement. Belron uses more than 40 apps, all developed in-house by just one employee with no programming skills.
 
 ![Screenshot showing a form for capturing information in an Autoglass helpdesk app.](./media/autoglass.jpg)

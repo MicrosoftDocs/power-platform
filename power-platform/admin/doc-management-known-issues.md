@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 05/06/2022
+ms.date: 10/26/2022
 ms.custom: 
 ms.topic: article
 applies_to: 
@@ -17,11 +17,6 @@ ms.tgt_pltfrm:
 topic-status: Drafting
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Known issues with document management
 
@@ -149,6 +144,21 @@ If you are using the list component, you must move your document management to u
 
 -	For Power Apps and Dynamics 365 apps, see [Switch from the list component or change the SharePoint deployment](switching-list-component-changing-deployment.md).
 -	For Dynamics 365 Customer Engagement (on-premises), see [Switching from the list component or changing the deployment](/dynamics365/customerengagement/on-premises/admin/switching-list-component-changing-deployment?view=op-9-0&preserve-view=true).
+
+### Error message "An error has occurred while loading documents" when filtering by Name column
+
+The  error "An error has occurred while loading documents. Please reload the document. If the problem persists, contact your Dynamics 365 administrator for help" occurs when you filter by the Name column in the document associated grid.
+
+This error occurs with the following filter by options in the document associated grid:
+
+- **Begins with**
+- **Does not begin with**
+- **Ends with**
+- **Does not end with**
+
+:::image type="content" source="media/filterby-unsupported-docmgt.png" alt-text="Filter by options not supported":::
+
+This error occurs because these filter by options aren't currently supported with the document associated grid.
 
 ### See also
 

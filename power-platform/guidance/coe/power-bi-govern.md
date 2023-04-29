@@ -2,7 +2,6 @@
 title: "Govern with the CoE Power BI dashboard | MicrosoftDocs"
 description: "Perform risk assessments and identifying critical, orphaned, or unused resources with the CoE Power BI dashboard"
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Govern with the CoE Power BI dashboard
 
@@ -199,8 +194,6 @@ The **Archive Score** is the sum of multiple criteria:
 - What is the flow state? (+2 for stopped, +1 for suspended)
 
 - How complex is the flow, based on the number of unique actions? (-1 if it's complex, because that indicates a user has spent a lot of time putting it together)
-
-A tooltip shows additional details like the number of launches and last launched date, in addition to the scores for the above criteria.
 
 ![Flow Archive.](media/pb-24.png "Flow Archive")
 

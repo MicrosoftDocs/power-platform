@@ -15,11 +15,6 @@ ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Cross-tenant inbound and outbound restrictions (preview) 
@@ -34,6 +29,9 @@ Microsoft Power Platform has a rich ecosystem of connectors based on Azure Activ
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 Note that Power Platform tenant isolation is different from Azure AD-wide tenant restriction. It *doesn't* impact Azure AD-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or SharePoint. 
+
+> [!WARNING]
+> There is a [known issue](#known-issues) with [Azure DevOps connector](/connectors/visualstudioteamservices/) that results in tenant isolation policy to not be enforced for connections established using this connector. If an insider attach vector is a concern, it is recommended to limit using the connector or its actions using data policies.
 
 The default configuration in Power Platform with tenant isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Azure AD credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn tenant isolation **On**. 
 
@@ -63,6 +61,9 @@ Similarly, users signed in to Power Platform in the Fabrikam tenant can’t esta
 |Fabrikam     | Fabrikam        | Yes        |
 
 ![Restrict outbound and inbound cross-tenant access.](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
+
+> [!NOTE]
+> A connection attempt initiated by a guest user from their host tenant targeting data sources within the same host tenant is not evaluated by the tenant isolation rules.
 
 ## Tenant isolation with allowlists
 
@@ -156,6 +157,9 @@ Selecting the failed run will show details of the failed flow run.
 > [!NOTE]
 > It takes about an hour for the latest tenant isolation policy changes to be assessed against active apps and flows. This change isn't instantaneous. 
 
+## Known issues
+
+[Azure DevOps connector](/connectors/visualstudioteamservices) uses Azure AD authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration is not from Azure AD, the tenant isolation policy is not enforced. As a mitigation, we recomend using other types of [data policies](wp-data-loss-prevention.md) to limit the use of the connector or its actions.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

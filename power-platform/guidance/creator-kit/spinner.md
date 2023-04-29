@@ -1,29 +1,22 @@
 ---
-title: Spinner control reference (preview) | Creator Kit
+title: Spinner control reference | Creator Kit
 description: Learn about the details and properties of the Spinner control in the Creator Kit.
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 11/02/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - mehdis-msft
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="Spinner"::: control (preview)
-
-[This article is pre-release documentation and is subject to change.]
+# :::no-loc text="Spinner"::: control
 
 A control used to create a loading experience.
 
@@ -31,10 +24,6 @@ A control used to create a loading experience.
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Spinner).
 
 :::image type="content" source="media/spinner.png" alt-text="Spinner control.":::
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Description
 
@@ -44,9 +33,7 @@ Spinners can vary in size, and can be located inline with content or centered. S
 
 This code component provides a wrapper around the [Fluent UI Spinner](https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner) control for use in canvas & custom pages. See component documentation for best practices.
 
-## Properties
-
-### Key properties
+## Key Properties
 
 | Property | Description |
 | -------- | ----------- |
@@ -62,7 +49,7 @@ This code component provides a wrapper around the [Fluent UI Spinner](https://de
 | `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `AccessibilityLabel` | Screen reader aria-label |
 
-## Behavior
+## Example
 
 ### Display the spinner when loading
 

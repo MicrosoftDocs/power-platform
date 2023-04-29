@@ -7,9 +7,9 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: micchow
 ms.custom: "multi-author, admin, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -22,29 +22,40 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](admin-share-bots.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/admin-share-bots-teams.md)
 
-Share your bot with other users so they can chat with it or collaborate together to author the bot. You can share bots with users with the **Share** options available in Power Virtual Agents.
+You can share your bots with others to grant them special permissions. There are two different sharing methods:
 
-## Share a bot
+1. Grant security groups, or your whole organization, permission to chat with the bot.
+1. Invite users to collaborate on your bot project. Collaborators always have permission to chat with the bot.
 
-Bot owners and managers from [sharing a bot for collaboration](#share-a-bot-for-collaboration) always have permission to chat with a bot. You can share bots with additional users to only chat with it.
-
-### Prerequisites
+## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization.
+
+## Share a bot for chat
+
+Bot makers that you've [shared your bot with for collaborative authoring](#share-a-bot-for-collaborative-authoring) will always have permission to chat with the bot. However, you can also grant users permission to chat with the bot without granting them authoring permissions.
+
+To grant users permission to only chat with the bot, you can either:
+
+- Share your bot with a security group.
+- Share your bot with everyone in your organization.
 
 ### Share bot with security groups
 
 You can share your bot with security groups so their members can chat with the bot.
 
-1. Select **Share** at the top of the bot's home page.
+1. Select **Share** at the top of the bot's overview page.
 
     :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Sharing UI entry point in bot homepage." border="false":::
 
 1. Specify the security group name that you would like to share the bot with.
 
     > [!NOTE]
-    > You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly. You can manage individual user access by adding or removing users from the security group.
+    > When sharing a bot for _chat_, you can only share a bot with security groups. You can't share it with:
+    >
+    > - Microsoft 365 groups.
+    > - Individual users directly. To manage individual user access, add or remove users from the security group.
 
     :::image type="content" source="media/admin-share-bots/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
 
@@ -63,7 +74,7 @@ You can share your bot with security groups so their members can chat with the b
 
 You can share your bot to allow everyone in the same organization the bot to chat with it.
 
-1. Select **Share** at the top of the bot's home page.
+1. Select **Share** at the top of the bot's overview page.
 
 1. Select **Everyone in _your organization's name_**.
 
@@ -82,7 +93,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 #### Stop sharing with a security group
 
-1. Select **Share** at the top of the bot's home page.
+1. Select **Share** at the top of the bot's overview page.
 
 1. Select **X** next to the security groups that you want to stop sharing the bot with.
 
@@ -92,7 +103,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 #### Stop sharing with everyone in the organization
 
-1. Select **Share** on the bot's homepage.
+1. Select **Share** on the bot's overview page.
 
 1. Select **Everyone in _your organization's name_**.
 
@@ -104,9 +115,9 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 1. Select **Share** to stop sharing the bot with everyone in the organization.
 
-## Share a bot for collaboration
+## Share a bot for collaborative authoring
 
-Everyone you share the bot with can view, edit, configure, share, and publish the bot. They can't delete the bot.
+Individual users that you share a bot with can view, edit, configure, share, and publish the bot. They can't delete the bot.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4DdcM]
@@ -115,16 +126,18 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 > [!NOTE]
 > You can only share a bot with users who have a Power Virtual Agents per user license. Users who don't have a license can [sign up for a free trial](sign-up-individual.md).
 
-1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
+1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's overview page.
 
-    :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Power Virtual Agents bot homepage with the Share button highlighted." border="false":::
+    :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Power Virtual Agents bot overview page with the Share button highlighted." border="false":::
 
 1. Specify the name or email address of each user that you would like to share the bot with.  
 
     > [!NOTE]
-    > You can only share a bot with individual users, which means you can't share it with a security group or distribution group in your organization.  
+    > When sharing a bot for _collaborative authoring_, you can only share it with individual users. You can't share it with:
     >
-    > You also can't share with users or groups outside of your organization.  
+    > - A security group in your organization.
+    > - Distribution group in your organization.  
+    > - Users or groups outside of your organization.  
 
     :::image type="content" source="media/admin-share-bots/sharing-input-invitee.png" alt-text="Screenshot showing name input in the share window." border="false":::
 
@@ -171,7 +184,7 @@ To let other users edit or add flows you'll need to share them in Power Automate
 
 You can stop sharing a bot with a user, and any shared user can stop the bot from being shared with other users, except for the owner. The owner will always have access to the bot.
 
-1. Sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
+1. Sign in to Power Virtual Agents and select **Share** at the top of the bot's overview page.
 
 1. Select **X** next to the users that you want to stop sharing the bot with.
 
@@ -196,7 +209,7 @@ You must be a **System administrator** of the environment where the bot is locat
 
 You can assign the **Environment maker** security role when sharing a bot with a user who does not have sufficient environment permissions to run Power Virtual Agents.
 
-When [sharing the bot](#share-a-bot), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that **Environment maker** security role will be assigned to the user so they can use the bot.
+When [sharing the bot for chat](#share-a-bot-for-chat), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that the **Environment maker** security role will be assigned to the user so they can use the bot.
 
 :::image type="content" source="media/admin-share-bots/sharing-input-invitee-no-permission.png" alt-text="Share panel with permission notice bubble." border="false":::
 
@@ -211,7 +224,7 @@ Based on the content and target audience of the bot, you may want to give transc
 >
 > In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](./environments-first-run-experience.md#create-a-new-environment-for-your-bots)
 
-When [sharing the bot](#share-a-bot), you can assign the **Bot transcript viewer** role by selecting the check box.
+When [sharing the bot for chat](#share-a-bot-for-chat), you can assign the **Bot transcript viewer** role by selecting the check box.
 
 :::image type="content" source="media/admin-share-bots/sharing-assign-transcript-viewer.png" alt-text="Share panel with Bot transcript viewer role selected." border="false":::
 

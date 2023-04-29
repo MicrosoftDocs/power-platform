@@ -11,11 +11,6 @@ ms.author: zakisama
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Access your storage with a SAS token
@@ -61,7 +56,7 @@ This section describes the prerequisites necessary to access the storage with th
 8. Use the below link to construct the SAS URL.
 
 ```http
-    https://<ContainerURL>/CDS?<SASToken>'
+    https://<ContainerURL>/CDS?<SASToken>
 ```
 
 > [!NOTE]

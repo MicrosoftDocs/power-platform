@@ -4,30 +4,25 @@ description: Reference information including syntax and examples for the Error, 
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
-ms.date: 04/21/2022
+ms.reviewer: mkaur
+ms.date: 11/18/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Error, IfError, IsError, IsBlankOrError functions in Power Apps
-
-[This article is pre-release documentation and is subject to change.]
 
 Detects errors and provides an alternative value or takes action. Create a custom error or pass through an error.
 
 > [!NOTE]
 >
-> - Error, IfError, IsError, and IsBlankOrError functions are part of an experimental feature and are subject to change. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview).
-> - The behavior that this article describes is available only when the _Formula-level error management_ experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
-> - Your feedback is very valuable to us - please let us know what you think in the [Power Apps community forums](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To).
+> - The behavior that this article describes is available only when the _Formula-level error management_ preview feature in [Settings > Upcoming features > Preview](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on.
 
 ## IfError
 

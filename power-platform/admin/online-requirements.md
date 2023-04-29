@@ -1,22 +1,17 @@
 ---
 title: "Power Platform URLs and IP address ranges  | MicrosoftDocs"
 description: Provides information about URLs and IP addresses to be added to the allow list to use Power Platform services.
-author: jimholtz
+author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/06/2022
+ms.date: 03/06/2023
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: kvivek
 contributors:
   - shazichuanshuo 
   - garrettm-msft 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Power Platform URLs and IP address ranges
 
@@ -52,8 +47,7 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://auth.gfx.ms  |   |
 | https://*.windows.net  |    |
 | http://*.passport.net  |    |
-| https://*.crm#.dynamics.com and http://*.crm#.dynamics.com | Required for environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. <br /><br />Replace # in http://*.crm#.dynamics.com and https://*.crm#.dynamics.com with your region's number: <ul><li>Asia/Pacific: 5</li><li>Canada: 3 </li><li>Europe, Africa, and Middle East: 15 and 4</li><li>France: 12</li><li>Germany: 16</li><li>India: 8</li><li>Japan: 7</li><li>North America: no number</li><li>Oceania: 6</li><li>South Africa: 14</li><li>South America: 2</li><li>Switzerland: 17</li><li>UAE: 15</li><li>United Kingdom: 11</li><li>Dynamics 365 US Government: 9</li>   |
-| `https://www.crmdynint.com`  |    |
+| https://*.crm#.dynamics.com and http://*.crm#.dynamics.com | Required for environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. <br /><br />Replace # in http://*.crm#.dynamics.com and https://*.crm#.dynamics.com with your region's number: <ul><li>Asia/Pacific: 5</li><li>Canada: 3 </li><li>Europe, Africa, and Middle East: 15 and 4</li><li>France: 12</li><li>Germany: 16</li><li>India: 8</li><li>Japan: 7</li><li>Korea: 21</li><li>North America: no number</li><li>Norway: 19</li><li>Oceania: 6</li><li>Singapore: 20</li><li>South Africa: 14</li><li>South America: 2</li><li>Switzerland: 17</li><li>UAE: 15</li><li>United Kingdom: 11</li><li>Dynamics 365 US Government: 9</li>   |
 | https://*.azureedge.net  |    |
 | https://*.microsoftonline.com  | Required for authentication and Microsoft 365 services such as the Microsoft 365 admin center.   |
 | https://go.microsoft.com  | Required for product documentation and context-sensitive help pages.    |
@@ -61,6 +55,8 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
 | https://*.api.powerplatform.com and https://api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products and admin automation scenarios as [documented here](programmability-extensibility-overview.md).
+| https://mem.gfx.ms  | Me Control is a Microsoft feature that provides a consistent way for users to do core authentication functions like signing in, switching between accounts and more.    |
+| https://www.d365ccafpi.com |  d365ccafpi service exposes a controller endpoint for token change to achieve client side first party integration with external service from PCF control  |
 
 > [!IMPORTANT]
 > - If you are Government cloud customer, go to [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls) 

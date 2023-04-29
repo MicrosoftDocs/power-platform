@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
-ms.date: 11/11/2015
+ms.reviewer: mkaur
+ms.date: 11/18/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Errors function in Power Apps
@@ -26,7 +25,9 @@ Provides error information for previous changes to a [data source](/power-apps/m
 
 Errors can happen when a [record](/power-apps/maker/canvas-apps/working-with-tables#records) of a data source is changed. Many causes are possible, including network outages, inadequate permissions, and edit conflicts.
 
-The **[Patch](function-patch.md)** function and other data functions don't directly return errors. Instead they return the result of their operation. After a data function executes, you can use the **Errors** function to obtain the details of any errors. You can check for the existence of errors with the **[IsEmpty]** function in the formula **IsEmpty( Errors ( ... ) )**.
+The functions that modify data in data sources, such as **[Patch](function-patch.md)**, **[Collect](function-clear-collect-clearcollect.md)**, **[Remove](function-remove-removeif.md)**, **[RemoveIf](function-remove-removeif.md)**, **[Update](function-update-updateif.md)**, **[UpdateIf](function-update-updateif.md)**, and **[SubmitForm](function-form.md)** report errors in two ways:
+- Each of these functions will return an error value as the result of the operation.  Errors can be detected with **IsError** and replaced or suppressed with **IfError** and **App.OnError** as usual.  See [Error Handling](../error-handling.md) for more information.
+- After the operation, the **Errors** function will also return the errors for previous operations.  This can be useful for displaying the error message on a form screen without needing to capture the error in a state variable.
 
 You can avoid some errors before they happen by using the **[Validate](function-validate.md)** and **[DataSourceInfo](function-datasourceinfo.md)** functions. See [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources) for more suggestions on how to work with and avoid errors.
 
@@ -78,7 +79,7 @@ For this example, we'll be working with the **IceCream** data source:
 
 Through the app, a user loads the Chocolate record into a data-entry form and then changes the value of **Quantity** to 90. The record to be worked with is placed in the [context variable](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable) **EditRecord**:
 
-- **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
+- **UpdateContext( { EditRecord: LookUp( IceCream, Flavor = "Chocolate" ) } )**
 
 To make this change in the data source, the **[Patch](function-patch.md)** function is used:
 

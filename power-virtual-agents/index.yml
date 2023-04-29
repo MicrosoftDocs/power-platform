@@ -28,14 +28,14 @@ highlightedContent:
       url: ./fundamentals-what-is-power-virtual-agents.md
 
     # Card
+    - title: Build bots fast with generative AI
+      itemType: whats-new
+      url: ./nlu-gpt-overview.md
+
+    # Card
     - title: What's new in Power Virtual Agents?
       itemType: whats-new
       url: https://go.microsoft.com/fwlink/?linkid=2082154
-
-    # Card
-    - title: "Power Virtual Agents videos"
-      itemType: video
-      url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
 
     # Card
     - title: "Power Virtual Agents Community"
@@ -43,9 +43,9 @@ highlightedContent:
       url: https://go.microsoft.com/fwlink/?linkid=2058639
 
     # Card
-    - title: Power Virtual Agents training
-      itemType: learn
-      url: /training/browse/?expanded=power-platform&products=power-virtual-agents
+    - title: "Power Virtual Agents videos"
+      itemType: video
+      url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
 
     # Card
     - title: Register for a free virtual Power Virtual Agents in a Day workshop
@@ -56,6 +56,18 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 conceptualContent:  
   items:
+    - title: Power Virtual Agents preview
+      links:
+        - text: Overview
+          url: ./preview/overview.md
+          itemType: overview
+        - text: Limitations
+          url: ./preview/limitations.md
+          itemType: overview
+        - text: Quickstart
+          url: ./preview/quickstart.md
+          itemType: quickstart
+
     - title: Get started
       links:
         - text: Sign up for free
@@ -68,18 +80,21 @@ conceptualContent:
           url: ./teams/fundamentals-what-is-power-virtual-agents-teams.md
           itemType: overview      
     
-    - title: Create intelligent bots
+    - title: Create bots with generative AI
       links:
-        - text: Create and delete bots
-          url: ./authoring-first-bot.md
-          itemType: how-to-guide
-        - text: Create and edit topics
-          url: ./authoring-create-edit-topics.md
-          itemType: how-to-guide
-        - text: Test your bot
-          url: ./authoring-test-bot.md
-          itemType: how-to-guide             
-    
+        - text: Use generative AI to build bots fast
+          url: ./nlu-gpt-overview.md
+          itemType: overview
+        - text: Tell your bot what it should do
+          url: ./nlu-authoring.md
+          itemType: tutorial
+        - text: Make your bot useful from day one
+          url: ./nlu-boost-conversations.md
+          itemType: tutorial
+        - text: Build a bot with generative AI from the ground up
+          url: ./nlu-gpt-quickstart.md
+          itemType: quickstart
+
     - title: Enhance and improve your bots
       links:
         - text: Use entities and slot filling
@@ -137,7 +152,6 @@ conceptualContent:
         - text: Licensing
           url: ./requirements-licensing-subscriptions.md
           itemType: overview 
-    
     
 
 # additionalContent section (optional)

@@ -2,7 +2,6 @@
 title: "Review compliance and adoption statistics with the CoE Power BI dashboard | MicrosoftDocs"
 description: "The Compliance and Adoption Power BI dashboard gives you the ability to review compliance, security and governance statistics and gain further adoption insights."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,16 +11,11 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Compliance and Adoption with the CoE Power BI dashboard
 
 >[!IMPORTANT]
 > The reports on this page are part of a separate dashboard, **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit**. See: [Setup Power BI dashboard](setup-powerbi.md).
-> This dashboard is currently not available if you have installed the CoE Starter Kit in a Dataverse for Teams environment.
 
 The **Compliance and Adoption** dashboard highlights governance, compliance and security insights, allows you to gain a high level view into your adoption and provides a tech debt report of the [Default environment](/power-platform/admin/environments-overview#the-default-environment).
 

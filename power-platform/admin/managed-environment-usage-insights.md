@@ -3,19 +3,12 @@ title: Usage insights
 description: Stay informed about your managed environments with weekly digests.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/12/2022
-author: jimholtz
+ms.date: 03/30/2023
+author: mihaelablendea 
 ms.author: caitlinshaw
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.subservice: admin
-ms.custom: "admin-security"
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.custom:
 ---
 
 # Usage insights
@@ -24,12 +17,13 @@ search.app:
 
 Stay informed about what’s happening in your managed environments with Power Platform’s weekly admin digest. Analytics about your top apps, your most impactful makers, and inactive resources you can safely clean up are distilled and delivered to your mailbox once a week.
 
-To enable weekly email digest, in the navigation pane, select **Environments**, select a managed environment. On the command bar, select **Edit Managed Environments**, and then select the settings under **Usage insights**, select **Include insights for this environment in the weekly email digest**. 
+To enable a weekly email digest, select **Environments** in the navigation pane and then select a managed environment. On the command bar, select **Edit Managed Environments**, select the settings under **Usage insights**, and then select **Include insights for this environment in the weekly email digest**. 
 
 :::image type="content" source="media/managed-environment-weekly-digest-include-environmenta.png" alt-text="Screenshot of the Managed Environments settings, with the Include this environment option highlighted.":::
 
 > [!NOTE]
-> You must [enable tenant-level analytics](tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics) to get usage insights.
+> - You must [enable tenant-level analytics](tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics) to get usage insights. 
+> - Currently, usage insights aren’t available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud – High (GCC High), Department of Defense (DoD), and Power Platform and Dynamics 365 services in China.
 
 ## What information is provided in the weekly digest?
 
@@ -58,7 +52,7 @@ To include a managed environment in the weekly digest, select **Include insights
 
 ## Who can receive the weekly digest?
 
-The weekly digest is sent to all users with the [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) and [Dynamics 365 service administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator) roles.
+The weekly digest is sent to all users with the roles of [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) and [Dynamics 365 service administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator).
 
 To add more recipients, select **Add additional recipients for the weekly email digest**, and then select **Weekly digest**. Enter email addresses in the Additional recipients box.
 
@@ -72,7 +66,7 @@ You can also use PowerShell to add and unsubscribe email addresses.
 
 #### Add email recipients
 
-Here's an example PowerShell script that adds two recipients. After you run it, the new addresses appear in the **Additional recipients** box in the **Usage insights** section of the Managed Environment settings.
+Here's an example PowerShell script that adds two recipients. After you run it, the new addresses appear in the **Additional recipients** box in the **Usage insights** section of the Managed Environments settings.
 
 ```powershell
 $tenantSettings = Get-TenantSettings  
@@ -95,7 +89,7 @@ To resubscribe everyone, set the value for `$tenantSettings.powerPlatform.govern
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br />
 [Enable Managed Environments](managed-environment-enable.md)  <br />
-[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Limit sharing](managed-environment-sharing-limits.md)  <br />
 [Data policies](managed-environment-data-policies.md)  <br />
 [Licensing](managed-environment-licensing.md)  <br />
 [View license consumption (preview)](view-license-consumption-issues.md) <br />

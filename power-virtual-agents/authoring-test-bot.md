@@ -7,12 +7,17 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Test your Power Virtual Agents bot
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 >
@@ -31,7 +36,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
 
-   :::image type="content" source="media/authoring-test-bot/test-bot-menu.png" alt-text="The Test your bot button is at the bottom of the side pane." border="false":::
+   :::image type="content" source="media/authoring-test-bot/test-bot-menu.png" alt-text="The Test your bot button is at the bottom of the navigation menu." border="false":::
 
 1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
 
@@ -72,7 +77,7 @@ While testing your bot in the **Test bot** pane, you can use the **Save snapshot
 > [!WARNING]
 > The snapshot contains all of your bot content, which may include sensitive information.
 
-1. At the top of the **Test bot** pane, select the menu icon (three vertical periods) and then **Save snapshot**.
+1. At the top of the **Test bot** pane, select the menu icon (**&vellip;**) and then **Save snapshot**.
 
     :::image type="content" source="media/authoring-test-bot/save-snapshot.png" alt-text="Save snapshot.":::
 

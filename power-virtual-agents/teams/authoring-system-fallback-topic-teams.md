@@ -1,14 +1,14 @@
 ---
 title: "Use a system fallback topic in Microsoft Teams"
 description: "A system fallback topic can be triggered when the bot doesn't understand the user's questions in the Power Virtual Agents app in Microsoft Teams."
-keywords: "PVA"
+keywords: "PVA, Teams"
 ms.date: 01/25/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: authoring, ceX, teams
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -35,7 +35,7 @@ This topic also includes the unique variable `UnrecognizedTriggerPhrase` to capt
 
 ## Add a system fallback topic
 
-1. At the bottom of the side pane, select **Settings** :::image type="content" source="../media/authoring-system-fallback-topic/settings-icon-teams.png" alt-text="Settings icon." border="false":::, and then select **System fallback**.
+1. At the bottom of the navigation menu, select **Settings** :::image type="content" source="../media/authoring-system-fallback-topic/settings-icon-teams.png" alt-text="Settings icon." border="false":::, and then select **System fallback**.
 
 1. Select **"+Add"**.
 

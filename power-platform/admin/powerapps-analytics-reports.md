@@ -3,21 +3,16 @@ title: Tenant-level Analytics for Power Apps
 description: View tenant-level analytics for Power Apps.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 11/16/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
-# Tenant-level Analytics for Power Apps
+# Tenant-level analytics for Power Apps
 
 Tenant-level analytics allow Power Platform admins to extract key service metrics based on user adoption across the environments they manage. Tailor made analytics are contained within reports embedded in Power Platform admin center. 
 
@@ -45,9 +40,9 @@ Power Apps reports provide insights into tenant and environment usage and invent
 |---------|---------|
 |Unique users     | Unique users included in the current view        |
 |Total sessions     | Power Apps sessions performed within the report window        |
-|Apps used     | Count of Power Apps included in the current view        |
+|Apps used     | Count of apps included in the current view        |
 |New users     | New users registering activity         |
-|Environments     | Count of Environments included in the current view        |
+|Environments     | Count of environments with usage reported in the last 30 days        |
 
 **Report filters**
 
@@ -77,11 +72,11 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 
 |Calculation  |Description  |
 |---------|---------|
-|Active apps    | Count of Power Apps with activity logged in the last 30 days       |
-|Created     | Number of Power Apps created within the current view        |
+|Active apps    | Count of apps with activity logged in the last 30 days       |
+|Created     | Number of apps created within the current view        |
 |Makers     | Total makers with activity registered in the last 30 days       |
 |Connections    | Count of unique connections referenced within the current view         |
-|Environments     | Count of Environments included in the current view       |
+|Environments     | Count of environments with maker activity reported in the last 30 days       |
 
 **Report filters**
 
@@ -95,7 +90,7 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 
 ## Power Apps - Inventory report
 
-The Power Apps Inventory report offers a complete catalog of Power Apps distributed across the tenant. This view includes the **Last opened** filter that allows admins to identify stale and orphaned Power Apps. The report answers questions such as:
+The Power Apps Inventory report offers a complete catalog of apps distributed across the tenant. This view includes the **Last opened** filter that allows admins to identify stale and orphaned apps. The report answers questions such as:
 
 - What is the total number of model-driven and canvas apps across the tenant or environments? 
 - Which apps depend on specific connectors?
@@ -111,10 +106,10 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 
 |Calculation  |Description  |
 |---------|---------|
-|Apps    | Count of Power Apps included in the current view      |
-|Makers     | Count of Makers with activity registered in the last 30 days       |
+|Apps    | Count of apps included in the current view      |
+|Makers     | Count of makers with activity registered in the last 30 days       |
 |Shared users     | Total count of users that have been granted access to Power Apps       |
-|Environments    | Count of Environments included in the current view          |
+|Environments    | Count of environments with apps within the current view       |
 |Connections      | Count of unique connections referenced within the current view      |
 
 **Report filters**
@@ -128,7 +123,7 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 |     | App type        | Global regions hosting environments        |
 
 
-## Download Inventory
+## Download inventory
 
 Power Platform admin center reports can be downloaded directly from the report visuals.  Users have the option of choosing between Summarized and Underlying data. 
 

@@ -7,8 +7,8 @@ ms.date: 03/07/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "azure, extend, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -56,7 +56,7 @@ You can get your bot's ID from the **Add skill** window.
 
 **Add a skill to your bot:**
 
-1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), expand the **Manage** tab on the side and select **Skills**.
+1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), expand the **Settings** tab on the side and select **Skills**.
 
    :::image type="content" source="media/configuration-add-skills/skills-menu.png" alt-text="Select Manage, then Skills.":::
 

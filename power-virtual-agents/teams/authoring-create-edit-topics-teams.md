@@ -1,14 +1,14 @@
 ---
 title: "Use topics to design a chatbot conversation in Microsoft Teams"
 description: "Use the authoring canvas in the Power Virtual Agents app in Microsoft Teams to create an end-to-end conversation."
-keywords: "PVA, authoring canvas, conversation"
+keywords: "PVA, authoring canvas, conversation, Teams"
 ms.date: 01/25/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: authoring, ceX, teams
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -43,20 +43,23 @@ For bot and topic limits, see the [Quotas, limits, and configuration values](../
 
 When you create a bot, a number of topics are automatically created.
 
-:::image type="content" source="../media/authoring-create-edit-topics/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
-  
-These topics fall into two categories:
-  
-- Four pre-populated user topics, titled as lessons. These [lesson topics](authoring-template-topics-teams.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
-- A number of [system topics](/authoring-system-topics.md). These are pre-populated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation.
+:::image type="content" source="../media/authoring-create-edit-topics/topics-system-teams.png" alt-text="Screenshot of the Topics list showing lesson topics and system topics.":::
 
-You can edit both of these topic types in the same manner as for topics you create but you can't delete them.
+These automatically created topics fall into two categories:
+  
+- [Lesson topics](authoring-template-topics-teams.md) help you understand simple to complex ways to use nodes to create bot conversations.
+
+    You can edit lesson topics or delete them entirely.
+
+- [System topics](authoring-system-topics-teams.md) are topics you're likely to need during a bot conversation.
+
+    You can't delete or disable system topics or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
 
 ## Create a topic
 
-1. Go to the **Topics** tab on the side pane to open the topics page.
+1. In the navigation menu, select **Topics** tab to open the topics page.
 
-   :::image type="content" source="../media/authoring-create-edit-topics/topics-menu.png" alt-text="Select Topics on the side navigation menu." border="false":::
+   :::image type="content" source="../media/authoring-create-edit-topics/topics-menu-teams.png" alt-text="Select Topics on the navigation menu." border="false":::
 
 1. On the topics page, select **New topic** to open the authoring canvas for an empty topic.
 
@@ -96,7 +99,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. In the topic list, select the topic you want to edit.
 
-   :::image type="content" source="../media/authoring-create-edit-topics/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas":::
+   :::image type="content" source="../media/authoring-create-edit-topics/topics-details-canvas-teams.png" alt-text="Selecting a topic will take you to the authoring canvas":::
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
@@ -205,7 +208,7 @@ You can consider the redirected topic as a "subtopic".
 
 :::image type="content" source="../media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](/authoring-system-topics.md), however, the entire conversation will end:
+If you redirect to any of the following [system topics](../authoring-system-topics.md), however, the entire conversation will end:
 
 - End of Conversation
 - Confirmed Success

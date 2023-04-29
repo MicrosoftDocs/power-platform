@@ -7,14 +7,16 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: fundamentals, portal, ceX, intro-internal
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
 ---
 
 # Quickstart: Create and deploy a Power Virtual Agents bot online
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -40,39 +42,72 @@ In addition to this guide, you can also [download and use templates to help you 
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
-## Create your first bot
+## Explore the home page
+
+Power Virtual Agents has an app-level home page that isn't specific to any bot. On this page you can create a new bot, view recent bots, and access learning resources like videos, documentation, and learning paths.
+
+:::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
+
+In the navigation menu, select **Chatbots** to open the **Chatbots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these bots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another bot that you have access to.
+
+:::image type="content" source="media/fundamentals-get-started/chatbot-list.png" alt-text="Screenshot of the list of chatbots.":::
+
+## Choose a bot type
+
+> [!IMPORTANT]
+> In this section, you'll make a choice on the type of bot you want to create. This decision affects which documentation to follow next.
 
 1. Go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA). Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
 1. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts are currently not supported.
 
-1. Choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
+1. When you first sign up, a default [Power Apps environment](environments-first-run-experience.md) is made for you. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment, select a different environment from the environment picker.
 
-    Your bot is created in the default Power Apps environment that was made for you on sign up. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, expand the **More options** menu and select a different environment.
+    :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the environment picker.":::
 
-   > [!NOTE]
-   > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
-   > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
+    > [!NOTE]
+    > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
+    > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
-   :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
+1. In the navigation menu, select **Create**. You can also select **Home** then select **Create a bot**.
+
+1. Choose one of the following options:
+
+    :::image type="content" source="media/fundamentals-get-started/create-bot-tiles.png" alt-text="Screenshot of the two chat bot creation options.":::
+
+    - Use **Build for production** to create production bots that are intended to be deployed to your customers. If you choose this option, continue to [Create a bot](#create-a-bot).
+
+    - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use. If you choose this option, refer to the [quickstart for preview bots](preview/quickstart.md) to continue creating your bot.
+
+## Create a bot
+
+1. For **Name your bot**, enter a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
+
+1. For **What language will your bot speak**, select the language you want your bot to speak.
+
+    :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
 
 1. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
 
-1. After a few minutes, you'll land on the home page and be able to interact with the bot in read-only mode. You can't save any edits during this time, but you can:
+1. After a few minutes, you'll be redirected to the bot's overview page. You'll see a banner at the top of the Power Virtual Agents portal indicating that the bot is still being built. While your bot is building, you can't save any edits during this time, but you can:
     - explore the overall user interface
     - look at topics
     - experiment with the preloaded user topics and system topics
     - interact with your bot using the Test Canvas
-
-    During this time, you can also review additional documentation on authoring topics in your bot. See [Authoring key concepts](authoring-fundamentals.md) for more information.
+    - review [additional documentation on authoring topics](authoring-fundamentals.md) in your bot
 
 1. When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify any User or System topic, test out your content changes, or deploy your bot.
 
+> [!TIP]
+> To navigate back to the app-level home page from your bot, in the navigation menu, select **Chatbots**.
+>
+>:::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Chatbots button in the navigation menu.":::
+
 ## Create a topic
 
-Now that you have full functionality within your bot, you can create your own topic — or, in other words, a dialog tree specifying how your bot responds to a user's question.
+Now that you have full functionality within your bot, you can create your own topic, which is a dialog tree that describes how your bot responds to a user's question.
 
-1. Select **Topics** on the side pane, then select **New topic** at the top of the page.
+1. In the navigation menu, select **Topics**, then select **New topic** at the top of the page.
 
     :::image type="content" source="media/fundamentals-get-started/topics-new.png" alt-text="New topic." border="false":::
 
@@ -122,17 +157,17 @@ Now that you have some content authored into a dialog tree, it's time to test th
 
 :::image type="content" source="media/fundamentals-get-started/test-bot-panel.png" alt-text="Start bot with latest content." border="false":::
 
-1. If the test bot is not showing on your screen, select **Test your bot** on the side pane.
+1. If the test bot pane is not showing on your screen, in the navigation menu, select **Test your bot**.
 
     :::image type="content" source="media/fundamentals-get-started/test-bot-menu.png" alt-text="Test bot control." border="false":::
 
-1. Try out your newly authored dialog tree by typing into the test bot window.
+1. Try out your newly authored dialog tree by typing into the test bot pane.
 
 1. Turn on **Track between topics** at the top, which enables you to follow along with the bot as it executes your dialog. You'll start to see parts of your dialog tree highlighted as the bot gets to that portion of the dialog.
 
     :::image type="content" source="media/fundamentals-get-started/test-bot-track.png" alt-text="Start conversation." border="false":::
 
-1. Type "hello world" in the chat window, and send the message to the bot. You'll see the top portion of your dialog tree highlighted in green, and you'll see **Seattle** and **Bellevue** presented as user options in the test bot window.
+1. Type "hello world" in the chat window, and send the message to the bot. You'll see the top portion of your dialog tree highlighted in green, and you'll see **Seattle** and **Bellevue** presented as user options in the test bot pane.
 
     The bot is now waiting for you to respond and has provided suggestions on how to respond. These suggestion buttons reflect what you authored within your dialog tree in the 'Ask a question' node.
 
@@ -150,11 +185,11 @@ This test experience empowers you to quickly create and test a conversation to e
 
 Once you're fine with the content authored in your bot, you can publish your bot to a website.
 
-1. Select the **Publish** tab on the side pane.
-
-    :::image type="content" source="media/fundamentals-get-started/channel-publish-latest-content.png" alt-text="Deploy bot to demo website." border="false":::
+1. In the navigation menu, select the **Publish**.
 
 1. Select **Publish** to activate your bot with a single click. If the publish is successful, you'll see a green banner on the top of the page.
+
+    :::image type="content" source="media/fundamentals-get-started/channel-publish-latest-content.png" alt-text="Deploy bot to demo website." border="false":::
 
 1. Select the demo website link under **Share your bot** to see it in action on a demo website.
 
@@ -168,7 +203,7 @@ For more information on publishing your bot to other channels, see the documenta
 
 ## Analyze the performance of your bot
 
-Once your bot has completed interactions with users, the statistics are available in the **Analytics** tab on the side pane. Here, you can find key performance indicators (KPIs) showing:
+When your bot completes interactions with users, the statistics are recorded in your bot's analytics. To view analytics, in the navigation menu select **Analytics**. Here, you can find key performance indicators (KPIs) showing:
 
 - the volume of sessions your bot has handled
 - how effectively your bot was able to engage end-users and resolve issues

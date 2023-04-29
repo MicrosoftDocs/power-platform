@@ -8,12 +8,13 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: clmori
-manager: shellyha
 ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
 # Use variables
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -113,11 +114,11 @@ You can type a literal value into the variable input field in an action node ins
 When you redirect to other topics, you can pass values into variables in the destination topic or get variables back from it. Passing variables between topics is especially useful when you already have information that the topic needs. Your users will appreciate not having to answer the question again. It's also helpful when you refactor and separate your topics into reusable components and you want to pass variables across the topics.
 
 > [!NOTE]
-> Variables of type `Custom Entity`, `Date Time`, and `Duration` can't be passed between topics.  
+> Variables of type `Custom Entity`, `Date and Time`, `Duration`, and `Multiple-choice` can't be passed between topics.  
 
 ### Receive values from other topics
 
-When a topic defines a variable (for example, by a question node), the bot asks the user the question to fill in the variable’s value. If the bot has already acquired the value, there's no reason to ask the question again. In these cases, you can define the variable as **Receive values from other topics**. When another topic redirects to this one, it can pass a variable (or [literal values](#using-literal-values-on-variable-inputs)) into this variable and skip the question. The experience for the user talking to the bot is seamless.
+When a topic defines a variable (for example, by a question node), the bot asks the user the question to fill in the variable's value. If the bot has already acquired the value, there's no reason to ask the question again. In these cases, you can define the variable as **Receive values from other topics**. When another topic redirects to this one, it can pass a variable (or [literal values](#using-literal-values-on-variable-inputs)) into this variable and skip the question. The experience for the user talking to the bot is seamless.
 
 To receive values from other topics, set the variable's property:
 

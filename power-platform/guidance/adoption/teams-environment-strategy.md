@@ -2,7 +2,6 @@
 title: "Manage Dataverse for Teams environments  | MicrosoftDocs"
 description: "Microsoft Dataverse for Teams enables users to build custom apps, bots, and flows in Microsoft Teams. This article walks you through important details about Dataverse for Teams environments, and discusses recommended ways to proactively manage them."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Establish governance policies to manage Microsoft Dataverse for Teams environments
 

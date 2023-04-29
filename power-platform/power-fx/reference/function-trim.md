@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 09/09/2016
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Trim and TrimEnds functions in Power Apps
@@ -44,22 +43,28 @@ By trimming spaces between words, **Trim** is consistent with the function of th
 
 ## Example
 
-| Formula                                                                                                  | Description                                                                                    | Result                                     |
-| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| **Trim(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)**     | Removes all spaces from the start and end of a string and extra spaces from within the string. | "Hello World"                              |
-| **TrimEnds(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)** | Removes all spaces from the start and end of a string.                                         | "Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World" |
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Trim(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)** | Removes all spaces from the start and end of a string and extra spaces from within the string. | "Hello World" |
+| **TrimEnds(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)** | Removes all spaces from the start and end of a string. | "Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World" |
 
 The following examples use a single-column collection, named **Spaces**, that contains these strings:
 
-![List of strings.](media/function-trim/input-strings.png)
+| Value |
+| --- |
+| "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;" |
+| "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill" |
+| "Already&nbsp;trimmed" |
+| "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;" |
+| "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" |
 
 To create this collection, set the **OnSelect** property of a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control to this formula, open Preview mode, and then click or tap the button:
 <br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill", "Already&nbsp;trimmed", "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;", "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
 
-| Formula                          | Description                                                                                                                   | Result                                                |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| **Trim(&nbsp;Spaces&nbsp;)**     | Trims all spaces from the start and end of each string and extra spaces from within each string in the **Spaces** collection. | ![Trim.](media/function-trim/output-trim.png)         |
-| **TrimEnds(&nbsp;Spaces&nbsp;)** | Trims all spaces from the start and end of each string in the **Spaces** collection.                                          | ![TrimEnds.](media/function-trim/output-trimends.png) |
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Trim(&nbsp;Spaces&nbsp;)** | Trims all spaces from the start and end of each string and extra spaces from within each string in the **Spaces** collection. | A single-column table with a `Value` column containing the following values: "Jane&nbsp;Doe", "Jack&nbsp;and&nbsp;Jill", "Already&nbsp;trimmed", "Venus,&nbsp;Earth,&nbsp;Mars", "Oil&nbsp;and&nbsp;Water" |
+| **TrimEnds(&nbsp;Spaces&nbsp;)** | Trims all spaces from the start and end of each string in the **Spaces** collection. | A single-column table with a `Value` column containing the following values: "Jane&nbsp;&nbsp;&nbsp;Doe", "Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill", "Already&nbsp;trimmed", "Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars", "Oil&nbsp;and&nbsp;Water" |
 
 > [!NOTE]
 > Extra spaces don't appear if you display a collection by clicking or tapping **Collections** on the **File** menu. To verify string length, use the **[Len](function-len.md)** function.

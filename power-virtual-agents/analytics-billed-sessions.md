@@ -2,17 +2,19 @@
 title: "View billed sessions"
 description: "See Power Virtual Agents billed sessions for the last 30 or 7 days."
 keywords: "PVA"
-ms.date: 01/25/2022
+ms.date: 01/23/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "analysis, licensing, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# View billed sessions for Power Virtual Agents in Teams
+# View billed sessions for Power Virtual Agents web app
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -31,7 +33,7 @@ The consumption of the capacity isn't reported at the tenant level, but can be s
 
 ## Find the number of billed sessions for your bot
 
-1. In Power Virtual Agents, select **Analytics** from the side pane.
+1. In Power Virtual Agents, in the navigation menu, select **Analytics**.
 
 1. Go to the **Billing** tab.
 
@@ -41,7 +43,7 @@ You can change the date range to filter the **Total billed sessions over time** 
 
 ## Definition of a billed session
 
-A *billed session* is an interaction between a customer and a bot, and represents one unit of consumption.
+A _billed session_ is an interaction between a customer and a bot, and represents one unit of consumption.
 
 The billed session begins when a user topic or premium functionality (as indicated in the [Common scenarios](#common-scenarios) section) is triggered. For more information, see [Use system and sample topics section](authoring-create-edit-topics.md#use-system-and-sample-topics)
 
@@ -53,7 +55,7 @@ A session ends for one of the following reasons:
 - The session is longer than 60 minutes.  
     The first message that occurs after 60 minutes starts a new session.
 
-- The session has more than 100 turns. A *turn* is defined as one exchange between a user and the bot.  
+- The session has more than 100 turns. A _turn_ is defined as one exchange between a user and the bot.  
  The one-hundred-and-first turn starts a new session.
 
 ## Common scenarios
@@ -76,11 +78,11 @@ The following table helps illustrate which sessions are going to be billed and w
 
 ### What's the difference between total sessions, engaged sessions, and billed sessions?
 
-The number of **billed sessions** is used to measure capacity, and is allocated when you purchase a license.
+- _Billed sessions_ are used to measure usage against the capacity that is allocated when you purchase a license. For more information, see the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+- _Total sessions_ and _engaged sessions_ are metrics of _analytics sessions_, used to determine how efficient a bot is in addressing a user's questions.
+- _Billed sessions_ and _analytics sessions_ are distinct and independent.
 
-**Total sessions** and **engaged sessions** are metrics used to determine how efficient a bot is in addressing a user's questions.
-
-More information: [Analyze bot performance and usage in Power Virtual Agents](analytics-summary.md)
+For more information, see [Analyze bot performance and usage in Power Virtual Agents](analytics-summary.md).
 
 ### Where can I see the total number of billed sessions for my organization?
 

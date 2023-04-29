@@ -1,23 +1,18 @@
 ---
 title: Configure user security in an environment | Microsoft Docs
-description: Configure user security in environment
+description: This article explains how to create the security artifacts that you must have to help secure resources in an environment.
 ms.subservice: admin
 ms.author: paulliew
 author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - hamenon-ms 
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2022
+ms.date: 04/20/2023
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Configure user security to resources in an environment
@@ -34,7 +29,8 @@ These security roles can be assigned to the user, [owner team](manage-teams.md#t
 
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
-Which predefined security roles are available in your environment depends on the environment type.
+> [!IMPORTANT]
+> The predefined security roles that are available in your environment depend on the environment type and the apps you have installed in your environment. Read on to know about all the predefined security roles available in an environment.
 
 ### Environments without a Dataverse database
 
@@ -55,10 +51,11 @@ For users who make apps that connect to the database and need to create or updat
 
 | Security role  | Database privileges*  | Description |
 |---------|---------|---------|
+| App Opener | Create (self), Read, Write (self), Delete (self)  | Has [minimum privileges for common tasks](create-edit-security-role.md#minimum-privileges-for-common-tasks). This is primarily used when creating a new security role for model-driven apps, where a copy of the role is created before applying data access to your tables. It doesn't have any privileges to the core business tables, such as Account, Contact, and Activity. This role is protected and cannot be updated.    |
 | Environment Maker     |  Customizations       | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data within an environment. More information: [Environments overview](./environments-overview.md) <br /> <br />Environment makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app)       |
-| System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](/dynamics365/customer-engagement/customize/privileges-required-customization)        |
-| System Customizer     | Create (self), Read (self), Write (self), Delete (self), Customizations         | Has full permission to customize the environment. However, users with this role can only view records for environment entities that they create. More information: [Privileges required for customization](/dynamics365/customer-engagement/customize/privileges-required-customization)        |
-| Basic User   |  Read (self), Create (self), Write (self), Delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role) <br /><br />  **Note**: the Common Data Service User security role was renamed to Basic User. There is no action required - this is just a name changed and it doesn't impact the user privileges or role assignment.  If you have a Solution with the Common Data Service User security role, you can inadvertently update the security role name back to Common Data Service User when you import the Solution. Please update the Solution before re-importing.|
+| System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
+| System Customizer     | Create, Read, Write, Delete, Customizations         | Has full permission to customize the environment. Can view all custom table data in the environment. However, users with this role can only view rows (records) that they create in Account, Contact, Activity tables. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
+| Basic User   |  Read (self), Create (self), Write (self), Delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. It has privileges to the core business tables, such as Account, Contact, and Activity.  More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role) <br /><br />  **Note**: The Common Data Service User security role was renamed to Basic User. There is no action required - this is just a name change, and it doesn't impact the user privileges or role assignment.  If you have a solution with the Common Data Service User security role, you can inadvertently update the security role name back to Common Data Service User when you import the solution. Please update the solution before re-importing.|
 | Service Reader | Read | Has full Read permission to all entities including custom entities. This is primarily used by backend service that requires reading all entities.    |
 | Service Writer | Create, Read, Write | Has full Create, Read, and Write permission to all entities including custom entities. This is primarily used by backend service that requires creating and updating records.    |
 | Delegate     | Act on behalf of another user        | Allows code to *impersonate*, or run as another user.  Typically used with another security role to allow access to records. More information: [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user)        |
@@ -102,8 +99,8 @@ The following table describes which resources can be authored by each security r
 |---------|---------|---------|---------|---------|
 |Canvas app     |X         |X         |X        |X         |
 |Cloud flow     |X (non-solution aware)         |X         |X (solution aware)         |X         |
-|Connector     |X         |X         |-         |X         |
-|Connection     |X         |X         |-         |X         |
+|Connector     |X (non-solution aware)         |X         |X         |X         |
+|Connection     |X         |X         |X         |X         |
 |Data gateway     |X         |X         |-         |X         |
 |Dataflow     |X         |X         |-         |X         |
 |Dataverse tables     |-         |-         |X         |X         |
@@ -113,7 +110,6 @@ The following table describes which resources can be authored by each security r
 |AI Builder     |-         |-         |X         |X         |
 
 <sup>*</sup>Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
-
 
 ## Assign security roles to users in an environment that has no Dataverse database 
 
@@ -160,6 +156,45 @@ To add a security role to an owner team, group team, or a user who has Enabled s
    > [!div class="mx-imgBorder"] 
    > ![Add people.](media/security-role-add-people.png "Add people")
 
+## Create, edit, or copy a security role using the new, modern UI (preview)
+You can easily create, edit, or copy a security role and customize it to meet your needs.
+
+> [!Important]
+> [!include [preview](../includes/cc-preview-features-definition.md)]
+> 
+> This capability is in process of rolling out, and may not be available in your region yet.
+
+1.  Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2.  Select **Environments** in the navigation pane.
+3.  Select the check mark next to the environment you want to use.
+4.  Select **Settings**.
+5.  Expand **Users + Permissions**.
+6.  Select **Security roles (Preview)**. A list of the existing security roles in your environment is displayed.
+7.  Complete the appropriate task:
+    - [Create a new security role](#create-a-new-security-role)
+    - [Edit an existing security role](#edit-an-existing-security-role)
+    - [Copy a security role](#copy-a-security-role)
+
+#### Create a new security role
+
+1. Select **New role** from the command bar. The **Create New Role** pane appears.
+2. In the **Role Name** field, enter a name for the new role.
+3. In the **Business unit** field, select the corresponding business unit the role will belong to.
+4. Indicate if team members should inherit the role. If enabled and the role is assigned to a team, all team members will inherit all the privileges associated with this role.
+5. Select **Save** to save the role.
+6. [Define the privileges and properties of the security role](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
+
+#### Edit an existing security role
+
+To edit an existing security role, either select the role name, or select the row and choose **Edit.** Then [define the privileges and properties of the security role](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
+
+#### Copy a security role
+
+Select the security role and choose copy. You will need to give the role a new name. Note that only the privileges will be copied, the assigned members and teams will not be assigned to the copied role. [Edit the security role](#edit-an-existing-security-role), as needed.
+
+#### Audit security roles
+[Audit security roles](audit-security-roles.md) to better understand changes made to security in your Power Platform environment.
+
 ## Create or configure a custom security role 
 
 If your app uses a custom entity, its privileges must be explicitly granted in a security role before your app can be used. You can either add these privileges in an existing security role or create a custom security role.
@@ -174,46 +209,36 @@ If your app uses a custom entity, its privileges must be explicitly granted in a
 
 For more information about access and scope privileges, see [Security roles and privileges](security-roles-privileges.md). 
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and select the environment for which you want to update a security role. 
+### Create a custom security role with minimum privileges to run an app
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and select **Environments** in the navigation pane.
+2. Select the environment for which you want to create a security role.
+3. Select **Settings** in the action bar.
+4. Select **Users + permissions** > **Security roles**.
+5. Select the check mark next to the **App Opener** role.
+6. Select **Copy** on the action bar.
+7. Enter a role name for your custom role, and then select **Copy**.
+8. From the list of security roles, locate your newly created custom role.
+9. Select the check mark next to your custom role.
+10. Select the **More actions** (**...**) icon, and then select **Edit**.
+11. In the role editor, select the **Custom Entities** tab to set permissions on your custom table.
+12. Find your custom table in the list, and select the **Read**, **Write**, and **Append** privileges.
+13. Select **Save and Close**.
 
-2. Select the environment's URL. 
+### Create a customer security role from scratch
 
-   > [!div class="mx-imgBorder"] 
-   > ![Select environment URL.](media/select-environment-url.png "Select environment URL")
-
-3. If you see published apps and tiles, select the gear icon (![Settings.](media/selection-rule-gear-button.png)) in the upper-right corner, and then select **Advanced settings**. 
-
-4. In the menu bar, select **Settings** > **Security**. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Settings > Security.](./media/database-security/dyn365-settings-security.png "Select Settings > Security")
-
-5. Select **Security roles**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Security roles.](./media/database-security/dyn365-securityroles.png "Select Security roles")
-
-6. Select **New**.
-
-7. From the security role designer, enter a role name on the **Details** tab. From the other tabs, you'll select the actions and the scope for performing that action.
-
-8. Select a tab, and search for your entity. For example, select the **Custom Entities** tab to set permissions on a custom entity.
-
-9. Select the privileges **Read, Write, Append**.
-
-10. Select **Save and Close**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and select **Environments** in the navigation pane.
+2. Select the environment for which you want to create a security role.
+3. Select **Settings** in the action bar.
+4. Select **Users + permissions** > **Security roles**.
+5. Select **New role** on the action bar.
+6. From the security role designer, enter a role name on the **Details** tab. From the other tabs, you'll select the actions and the scope for performing that action.
+7. Select a tab, and search for your entity. For example, select the **Custom Entities** tab to set permissions on a custom entity.
+8. Select the privileges **Read**, **Write**, **Append**.
+9. Select **Save and Close**.
 
 ## Minimum privileges to run an app
-When you create a custom security role, you need to include a set of minimum privileges into the security role in order for a user to run an app. We've created a solution you can import that provides a security role that includes the required minimum privileges.  
+When you create a custom security role, the role must have a set of minimum privileges in order for a user to run an app. We've created a solution you can import that provides a security role that includes the [required minimum privileges.](create-edit-security-role.md#minimum-privileges-for-common-tasks) 
 
-Start by downloading the solution from the Download Center: [Dataverse minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_2.zip). 
-
-Then, follow these directions to import the solution: [Import solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
-
-When you import the solution, it creates the **min pro apps use** role, which you can copy (see: [Create a security role by Copy Role](create-edit-security-role.md#create-a-security-role-by-copy-role)). When the Copy Role process is completed, navigate to each tab&mdash;**Core Records**, **Business Management**, **Customization**, and so on&mdash;and set the appropriate privileges. 
-
-> [!IMPORTANT]
-> You should try out the solution in a development environment before importing it into a production environment. 
 
 ### See also
 [Grant users access](grant-users-access.md) <br />

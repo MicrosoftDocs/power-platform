@@ -1,1077 +1,1101 @@
 - name: Power Platform
-  items: 
-  - name: Administer Power Platform
-    items:    
+  items:
     - name: Administer Power Platform
-      href: index.yml
-    - name: Overview
-      href: admin-documentation.md
-    - name: Working with the Admin Portals 
-      href: wp-work-with-admin-portals.md
-    - name: Get started
       items:
-      - name: What's the role of a Power Platform administrator? 
-        href: overview-role-powerapps-admin.md
-      - name: Management and monitoring
-        href: wp-management-monitoring.md
-      - name: Power Apps enterprise deployment whitepaper
-        href: admin-powerapps-enterprise-deployment.md
-      - name: Try Power Apps and customer engagement apps
-        href: try-powerapps-dynamics-365.md
-      - name: Move between your apps
-        href: quickly-navigate-office-365-app-launcher.md
-      - name: Sign in to your apps
-        href: sign-in-office-365-apps.md
-      - name: Manage subscription with Microsoft 365 admin center
-        href: use-office-365-admin-center-manage-subscription.md
-      - name: How do I check my online service health?
-        href: check-online-service-health.md
-      - name: Enabling preview features
-        href: what-are-preview-features-how-do-i-enable-them.md
-      - name: Requirements
-        items:
-        - name: URLs and IP address ranges
-          href: online-requirements.md
-        - name: End of support for Internet Explorer
-          href: support-end-internet-explorer.md
-        - name: Plan for deployment and administration
-          href: plan-for-deployment-and-administration.md
-        - name: Server cipher suites and TLS requirements
-          href: server-cipher-tls-requirements.md
-      - name: Unified Interface
-        items:
-        - name: About Unified Interface
-          href: about-unified-interface.md
-        - name: Enable Unified Interface Only
-          href: enable-unified-interface-only.md
-        - name: Update apps to Unified Interface
-          href: update-apps-to-unified-interface.md
-        - name: Enable the hybrid experience
-          href: enable-hybrid-experience.md
-    - name: Support
-      items:
-      - name: Get Help + Support 
-        href: get-help-support.md
-      - name: Support overview
-        href: support-overview.md
-      - name: Support environments and the consent process
-        href: support-environment.md    
-      - name: Determine your organization ID and name
-        href: determine-org-id-name.md
-      - name: Manage email notifications to admins
-        href: manage-email-notifications.md
-      - name: Policies and communications
-        href: policies-communications.md
-      - name: Manage maintenance window
-        href: manage-maintenance-window.md
-      - name: Notifications explained
-        href: notifications-explained.md 
-    - name: Licensing
-      items:
-      - name: Overview
-        href: pricing-billing-skus.md
-      - name: About licensing and license management  
-        href: wp-license-management.md     
-      - name: View license consumption (preview)
-        href: view-license-consumption-issues.md          
-      - name: Manage licenses in your org
-        href: signup-question-and-answer.md
-      - name: Administer without a license
-        href: global-service-administrators-can-administer-without-license.md
-      - name: Power Apps
-        items:      
-        - name: Purchase Power Apps 
-          href: signup-for-powerapps-admin.md
-        - name: About Power Apps per app plans
-          href: about-powerapps-perapp.md
-      - name: Power Automate
-        items:
+        - name: Administer Power Platform
+          href: index.yml
         - name: Overview
-          href: power-automate-licensing/overview.md
-        - name: Types of licenses
-          href: power-automate-licensing/types.md
-        - name: FAQs about licenses
-          href: power-automate-licensing/faqs.md
-        - name: Buy Power Automate licenses
-          href: power-automate-licensing/buy-licenses.md
-        - name: Add-ons
-          href: power-automate-licensing/add-ons.md
-      - name: Power Platform licensing FAQs
-        href: powerapps-flow-licensing-faq.md
-      - name: Pay-as-you-go plan
-        items:
-        - name: Overview
-          href: pay-as-you-go-overview.md
-        - name: Meters
-          href: pay-as-you-go-meters.md
-        - name: Set up
-          href: pay-as-you-go-set-up.md
-        - name: View usage and manage costs 
-          href: pay-as-you-go-usage-costs.md
-        - name: Issues and frequently asked questions
-          href: pay-as-you-go-issues-faq.md
-      - name: Requests limits and allocations
-        href: api-request-limits-allocations.md
-    - name: Environments
-      items:
-      - name: Administer environments 
-        items:
-        - name: Environments overview
-          href: environments-overview.md
-        - name: Create environment
-          href: create-environment.md
-        - name: Control environment creation
-          href: control-environment-creation.md
-        - name: Change environment type
-          href: switch-environment.md
-        - name: Add database to environment
-          href: create-database.md
-        - name: Delete environment
-          href: delete-environment.md
-        - name: Recover environment
-          href: recover-environment.md
-        - name: Reset environment
-          href: reset-environment.md
-        - name: Copy environment
-          href: copy-environment.md
-        - name: Back up and restore environment
-          href: backup-restore-environments.md
-        - name: Troubleshoot missing environments
-          href: troubleshoot-missing-environments.md
-        - name: Business continuity and disaster recovery
-          href: business-continuity-disaster-recovery.md
-        - name: Edit environment properties
-          href: edit-properties-environment.md
-        - name: Administration mode
-          href: admin-mode.md
-        - name: Customer managed encryption key
-          href: manage-encryption-key.md
-        - name: Trial environments
-          href: trial-environments.md     
-        - name: Sandbox environment
-          href: sandbox-environments.md
-        - name: Dataverse for Teams environment
-          href: about-teams-environment.md
-        - name: View apps in your environments 
-          href: admin-view-apps.md
-        - name: Language collations 
-          href: language-collations.md            
-      - name: Managed Environments   
-        items: 
-        - name: Overview
-          href: managed-environment-overview.md
-        - name: Enable Managed Environments
-          href: managed-environment-enable.md
-        - name: Limit sharing 
-          href: managed-environment-sharing-limits.md
-        - name: Usage insights
-          href: managed-environment-usage-insights.md 
-        - name: Data policies
-          href: managed-environment-data-policies.md
+          href: admin-documentation.md
+        - name: Working with the Admin Portals
+          href: wp-work-with-admin-portals.md
+        - name: Get started
+          items:
+            - name: What's the role of a Power Platform administrator?
+              href: overview-role-powerapps-admin.md
+            - name: Management and monitoring
+              href: wp-management-monitoring.md
+            - name: Power Apps enterprise deployment whitepaper
+              href: admin-powerapps-enterprise-deployment.md
+            - name: Try Power Apps and customer engagement apps
+              href: try-powerapps-dynamics-365.md
+            - name: Move between your apps
+              href: quickly-navigate-office-365-app-launcher.md
+            - name: Sign in to your apps
+              href: sign-in-office-365-apps.md
+            - name: Manage subscription with Microsoft 365 admin center
+              href: use-office-365-admin-center-manage-subscription.md
+            - name: How do I check my online service health?
+              href: check-online-service-health.md
+            - name: Enabling preview features
+              href: what-are-preview-features-how-do-i-enable-them.md
+            - name: Requirements
+              items:
+                - name: URLs and IP address ranges
+                  href: online-requirements.md
+                - name: End of support for Internet Explorer
+                  href: support-end-internet-explorer.md
+                - name: Plan for deployment and administration
+                  href: plan-for-deployment-and-administration.md
+                - name: Server cipher suites and TLS requirements
+                  href: server-cipher-tls-requirements.md
+            - name: Unified Interface
+              items:
+                - name: About Unified Interface
+                  href: about-unified-interface.md
+                - name: Enable Unified Interface Only
+                  href: enable-unified-interface-only.md
+                - name: Update apps to Unified Interface
+                  href: update-apps-to-unified-interface.md
+                - name: Enable the hybrid experience
+                  href: enable-hybrid-experience.md
+        - name: Support
+          items:
+            - name: Get Help + Support
+              href: get-help-support.md
+            - name: Support overview
+              href: support-overview.md
+            - name: Support environments and the consent process
+              href: support-environment.md
+            - name: Determine your organization ID and name
+              href: determine-org-id-name.md
+            - name: Manage email notifications to admins
+              href: manage-email-notifications.md
+            - name: Policies and communications
+              href: policies-communications.md
+            - name: Manage maintenance window
+              href: manage-maintenance-window.md
+            - name: Notifications explained
+              href: notifications-explained.md
         - name: Licensing
-          href: managed-environment-licensing.md
-      - name: Environment updates
-        items:
-        - name: Opt in to early access updates
-          href: opt-in-early-access-updates.md
-        - name: General availability deployment
-          href: general-availability-deployment.md
-        - name: "Manage maintenance window (preview)"
-          href: manage-maintenance-window.md
-      - name: Environment settings 
-        items:
-        - name: Tenant settings
-          href: tenant-settings.md
-        - name: Power Platform 
-          href: power-platform-settings.md
-        - name: Microsoft Dataverse settings
-          href: admin-settings.md      
-        - name: Environment database settings
-          href: environment-database-settings.md   
-        - name: Product 
           items:
-          - name: Behavior 
-            href: settings-behavior.md
-          - name: Features 
-            href: settings-features.md
-          - name: Enable languages
-            href: enable-languages.md
-          - name: Privacy preferences
-            href: settings-privacy-security.md
-          - name: Configure Dataverse search
-            href: configure-relevance-search-organization.md 
-        - name: Business 
+            - name: Overview
+              href: pricing-billing-skus.md
+            - name: About licensing and license management
+              href: wp-license-management.md
+            - name: View license consumption (preview)
+              href: view-license-consumption-issues.md
+            - name: Manage licenses in your org
+              href: signup-question-and-answer.md
+            - name: Administer without a license
+              href: global-service-administrators-can-administer-without-license.md
+            - name: Power Apps
+              items:
+                - name: Purchase Power Apps
+                  href: signup-for-powerapps-admin.md
+                - name: About Power Apps per app plans
+                  href: about-powerapps-perapp.md
+            - name: Power Automate
+              items:
+                - name: Overview
+                  href: power-automate-licensing/overview.md
+                - name: Types of licenses
+                  href: power-automate-licensing/types.md
+                - name: FAQs about licenses
+                  href: power-automate-licensing/faqs.md
+                - name: Buy Power Automate licenses
+                  href: power-automate-licensing/buy-licenses.md
+                - name: Add-ons
+                  href: power-automate-licensing/add-ons.md
+                - name: Request a Power Automate premium license
+                  href: power-automate-licensing/request-premium-license.md 
+            - name: Power Platform licensing FAQs
+              href: powerapps-flow-licensing-faq.md
+            - name: Pay-as-you-go plan
+              items:
+                - name: Overview
+                  href: pay-as-you-go-overview.md
+                - name: Meters
+                  href: pay-as-you-go-meters.md
+                - name: Set up
+                  href: pay-as-you-go-set-up.md
+                - name: View usage and manage costs
+                  href: pay-as-you-go-usage-costs.md
+                - name: Issues and frequently asked questions
+                  href: pay-as-you-go-issues-faq.md
+            - name: Requests limits and allocations
+              href: api-request-limits-allocations.md
+        - name: Environments
           items:
-          - name: Business closures 
-            href: /dynamics365/customer-service/set-when-business-closed-csh
-          - name: Fiscal year
-            href: work-fiscal-year-settings.md
-          - name: Connection roles
-            href: /dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
-          - name: Manage transactions with multiple currencies
-            href: manage-transactions-with-multiple-currencies.md 
-          - name: Queues
-            href: /dynamics365/customer-service/set-up-queues-manage-activities-cases
-          - name: Customize regional options
-            href: customize-regional-options-admins.md 
-          - name: Relationship roles
-            href: /dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
-          - name: Create or edit a site
-            href: create-edit-site.md
-          - name: Add resources to a site
-            href: add-resources-site.md 
-        - name: Users + permissions 
+            - name: Administer environments
+              items:
+                - name: Environments overview
+                  href: environments-overview.md
+                - name: Create environment
+                  href: create-environment.md
+                - name: Control environment creation
+                  href: control-environment-creation.md
+                - name: Change environment type
+                  href: switch-environment.md
+                - name: Add database to environment
+                  href: create-database.md
+                - name: Delete environment
+                  href: delete-environment.md
+                - name: Recover environment
+                  href: recover-environment.md
+                - name: Reset environment
+                  href: reset-environment.md
+                - name: Copy environment
+                  href: copy-environment.md
+                - name: Back up and restore environment
+                  href: backup-restore-environments.md
+                - name: Troubleshoot missing environments
+                  href: troubleshoot-missing-environments.md
+                - name: Business continuity and disaster recovery
+                  href: business-continuity-disaster-recovery.md
+                - name: Edit environment properties
+                  href: edit-properties-environment.md
+                - name: Administration mode
+                  href: admin-mode.md
+                - name: Encryption key management
+                  items:
+                    - name: Self-managed key (BYOK)
+                      href: manage-encryption-key.md
+                    - name: Customer managed key (preview)
+                      href: customer-managed-key.md
+                    - name: Lock and unlock environments (preview)
+                      href: cmk-lock-unlock.md
+                    - name: Migrate from BYOK (preview)
+                      href: cmk-migrate-from-byok.md
+                - name: Trial environments
+                  href: trial-environments.md
+                - name: Sandbox environment
+                  href: sandbox-environments.md
+                - name: Dataverse for Teams environment
+                  href: about-teams-environment.md
+                - name: View apps in your environments
+                  href: admin-view-apps.md
+                - name: Language collations
+                  href: language-collations.md
+            - name: Managed Environments
+              items:
+                - name: Overview
+                  href: managed-environment-overview.md
+                - name: Enable Managed Environments
+                  href: managed-environment-enable.md
+                - name: Enable maker welcome content (preview)
+                  href: welcome-content.md
+                - name: Limit sharing
+                  href: managed-environment-sharing-limits.md
+                - name: Usage insights
+                  href: managed-environment-usage-insights.md
+                - name: Data policies
+                  href: managed-environment-data-policies.md
+                - name: Use solution checker (preview)
+                  href: managed-environment-solution-checker.md
+                - name: Licensing
+                  href: managed-environment-licensing.md
+            - name: Environment updates
+              items:
+                - name: Opt in to early access updates
+                  href: opt-in-early-access-updates.md
+                - name: General availability deployment
+                  href: general-availability-deployment.md
+                - name: "Manage maintenance window (preview)"
+                  href: manage-maintenance-window.md
+            - name: Environment settings
+              items:
+                - name: Tenant settings
+                  href: tenant-settings.md
+                - name: Power Platform
+                  href: power-platform-settings.md
+                - name: Microsoft Dataverse settings
+                  href: admin-settings.md
+                - name: Environment database settings
+                  href: environment-database-settings.md
+                - name: Product
+                  items:
+                    - name: Behavior
+                      href: settings-behavior.md
+                    - name: Collaboration
+                      href: settings-collaboration.md
+                    - name: Features
+                      href: settings-features.md
+                    - name: Enable languages
+                      href: enable-languages.md
+                    - name: Privacy preferences
+                      href: settings-privacy-security.md
+                    - name: Configure Dataverse search
+                      href: configure-relevance-search-organization.md
+                - name: Business
+                  items:
+                    - name: Business closures
+                      href: /dynamics365/customer-service/set-when-business-closed-csh
+                    - name: Fiscal year
+                      href: work-fiscal-year-settings.md
+                    - name: Connection roles
+                      href: /dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
+                    - name: Manage transactions with multiple currencies
+                      href: manage-transactions-with-multiple-currencies.md
+                    - name: Queues
+                      href: /dynamics365/customer-service/set-up-queues-manage-activities-cases
+                    - name: Customize regional options
+                      href: customize-regional-options-admins.md
+                    - name: Relationship roles
+                      href: /dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
+                    - name: Create or edit a site
+                      href: create-edit-site.md
+                    - name: Add resources to a site
+                      href: add-resources-site.md
+                - name: Users + permissions
+                  items:
+                    - name: Create or edit business unit
+                      href: create-edit-business-units.md
+                    - name: Update record owner
+                      href: update-record-owner.md
+                    - name: Delete business unit
+                      href: delete-business-unit.md
+                    - name: Assign business units
+                      href: assign-business-unit-different-parent.md
+                    - name: Hierarchy security
+                      href: hierarchy-security.md
+                    - name: Mobile configuration
+                      href: /dynamics365/mobile-app/setup-mobile-offline-for-admin
+                    - name: Positions
+                      href: hierarchy-security.md#position-hierarchy
+                    - name: Security roles
+                      href: security-roles-privileges.md
+                    - name: Teams
+                      href: create-team-template-add-entity-form.md
+                    - name: Users
+                      href: users-settings.md
+                - name: Audit and logs
+                  items:
+                    - name: Audit log management
+                      href: recover-database-space-deleting-audit-logs.md
+                    - name: Audit settings
+                      href: system-settings-dialog-box-auditing-tab.md
+                    - name: Audit summary view
+                      href: manage-dataverse-auditing.md#use-the-audit-summary-view
+                    - name: Entity and field audit settings
+                      href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
+                    - name: Audit security roles
+                      href: audit-security-roles.md
+                    - name: System jobs
+                      href: manage-dataverse-auditing.md#monitoring-system-jobs
+                - name: Templates
+                  items:
+                    - name: Access team templates
+                      href: /dynamics365/customerengagement/on-premises/admin/about-team-templates
+                    - name: Article templates
+                      href: create-templates-articles.md
+                    - name: Contract templates
+                      href: /dynamics365/customer-service/create-entitlement-define-support-terms-customer
+                    - name: Data import templates
+                      href: download-template-data-import.md
+                    - name: Document templates
+                      href: /dynamics365/customerengagement/on-premises/admin/work-with-templates
+                    - name: Email signatures
+                      href: /dynamics365/customerengagement/on-premises/basics/create-signature-dynamics-365-email-queue
+                    - name: Email templates
+                      href: create-templates-email.md
+                    - name: Mail merge templates
+                      href: work-mail-merge-templates.md
+                - name: Email
+                  items:
+                    - name: Email settings
+                      href: settings-email.md
+                    - name: Email tracking
+                      href: settings-email-tracking.md
+                    - name: Mailboxes
+                      href: create-forward-mailboxes-edit-mailboxes.md
+                    - name: Server profiles
+                      href: supported-email-service-configurations-server-side-synchronization.md
+                - name: Integration
+                  items:
+                    - name: Enable server-based SharePoint integration
+                      href: configure-server-based-authentication-sharepoint-on-premises.md
+                    - name: Document management settings
+                      href: enable-sharepoint-document-management-specific-entities.md
+                    - name: Manage document suggestions
+                      href: enable-document-suggestions.md
+                    - name: OneDrive for business
+                      href: enable-onedrive-for-business.md
+                    - name: OneNote
+                      href: set-up-onenote-integration-in-dynamics-365.md
+                    - name: Outlook
+                      href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
+                    - name: SharePoint document locations
+                      href: create-edit-document-location-records.md
+                    - name: SharePoint sites
+                      href: edit-existing-sharepoint-site-records.md
+                    - name: Synchronization
+                      href: system-settings-dialog-box-synchronization-tab.md
+                    - name: Yammer
+                      href: connect-yammer.md
+                - name: Data management
+                  items:
+                    - name: Add ready-to-use business process
+                      href: /dynamics365/customerengagement/on-premises/customize/add-ready-use-business-processes
+                    - name: Announcements
+                      href: settings-announcements.md
+                    - name: Auto-numbering prefixes
+                      href: change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles.md
+                    - name: Automatic record creation policies
+                      href: /dynamics365/customer-engagement/customer-service/set-up-rules-to-automatically-create-or-update-records
+                    - name: Bulk deletion
+                      href: delete-bulk-records.md
+                    - name: Data import wizard
+                      href: import-data-all-record-types.md
+                    - name: Data maps
+                      href: select-data-map.md
+                    - name: Duplicate detection jobs
+                      href: run-bulk-system-jobs-detect-duplicate-records.md
+                    - name: Duplicate detection rules
+                      href: set-up-duplicate-detection-rules-keep-data-clean.md
+                    - name: Duplicate detection rules using solutions
+                      href: duplicate-detection-rules-solutions.md
+                    - name: Duplicate detection settings
+                      href: turn-duplicate-detection-rules-off-whole-organization.md
+                    - name: Asynchronous processing of cascading transactions
+                      href: async-cascading.md
+                    - name: Imports
+                      href: /dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data
+                    - name: Sample data
+                      href: add-remove-sample-data.md
+                - name: Encryption
+                  items:
+                    - name: Encryption
+                      href: data-encryption.md
+                - name: Resources
+                  items:
+                    - name: All legacy settings
+                      href: set-up-business-management-options.md
+                    - name: Dynamics 365 for Outlook
+                      href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
+                - name: System
+                  items:
+                    - name: Overview
+                      href: system-settings-dialog.md
+                    - name: General tab
+                      href: system-settings-dialog-box-general-tab.md
+                    - name: Calendar tab
+                      href: system-settings-dialog-box-calendar-tab.md
+                    - name: Formats tab
+                      href: system-settings-dialog-box-formats-tab.md
+                    - name: Auditing tab
+                      href: system-settings-dialog-box-auditing-tab.md
+                    - name: Email tab
+                      href: system-settings-dialog-box-email-tab.md
+                    - name: Marketing tab
+                      href: system-settings-dialog-box-marketing-tab.md
+                    - name: Customization tab
+                      href: system-settings-dialog-box-customization-tab.md
+                    - name: Outlook tab
+                      href: system-settings-dialog-box-outlook-tab.md
+                    - name: Reporting tab
+                      href: system-settings-dialog-box-reporting-tab.md
+                    - name: Goals tab
+                      href: system-settings-dialog-box-goals-tab.md
+                    - name: Sales tab
+                      href: system-settings-dialog-box-sales-tab.md
+                    - name: Service tab
+                      href: system-settings-dialog-box-service-tab.md
+                    - name: Synchronization tab
+                      href: system-settings-dialog-box-synchronization-tab.md
+                    - name: Mobile Client tab
+                      href: system-settings-dialog-box-mobile-client-tab.md
+                    - name: Previews tab
+                      href: system-settings-dialog-box-previews-tab.md
+                    - name: On-off switch for Learning Path (guided help)
+                      href: on-off-switch-for-learning-path-guided-help.md
+            - name: Advanced environment operations
+              items:
+                - name: Environment cleanup process
+                  href: automatic-environment-cleanup.md
+                - name: Dataverse for Teams environment cleanup
+                  href: inactive-teams-environment.md
+                - name: Migrate environment
+                  href: move-environment-tenant.md
+                - name: Geo to geo migrations
+                  href: geo-to-geo-migrations.md
+                - name: Power Platform Geos
+                  href: regions-overview.md
+                - name: Multiple online environments or tenants
+                  href: multiple-online-environments-tenants.md
+                - name: Migrate default and Dataverse for Teams environments
+                  href: migrate-default-teams-environment.md
+                - name: Administration mode
+                  href: admin-mode.md
+                - name: Automation of tasks with PowerShell
+                  href: wp-task-automation-powershell.md
+                - name: Automation of tasks with Power Automate
+                  href: wp-task-automation-flow.md
+        - name: Security and governance
           items:
-          - name: Create or edit business unit
-            href: create-edit-business-units.md
-          - name: Update record owner
-            href: update-record-owner.md
-          - name: Delete business unit
-            href: delete-business-unit.md 
-          - name: Assign business units
-            href: assign-business-unit-different-parent.md 
-          - name: Hierarchy security
-            href: hierarchy-security.md
-          - name: Mobile configuration
-            href: /dynamics365/mobile-app/setup-mobile-offline-for-admin
-          - name: Positions
-            href: hierarchy-security.md#position-hierarchy
-          - name: Security roles
-            href: security-roles-privileges.md
-          - name: Teams 
-            href: create-team-template-add-entity-form.md
-          - name: Users 
-            href: users-settings.md
-        - name: Audit and logs
-          items: 
-          - name: Audit log management
-            href: recover-database-space-deleting-audit-logs.md
-          - name: Audit settings
-            href: system-settings-dialog-box-auditing-tab.md
-          - name: Audit summary view 
-            href: manage-dataverse-auditing.md#use-the-audit-summary-view
-          - name: Entity and field audit settings 
-            href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
-          - name: System jobs
-            href: manage-dataverse-auditing.md#monitoring-system-jobs
-        - name: Templates
+            - name: Security and governance
+              href: security.yml
+            - name: Overview of Power Platform security
+              href: security/overview.md
+            - name: Authenticating to Power Platform services
+              href: security/authenticate-services.md
+            - name: Data storage and governance
+              href: security/data-storage.md
+            - name: Securely access customer data using Customer Lockbox
+              href: about-lockbox.md
+            - name: Connecting and authenticating to data sources
+              href: security/connect-data-sources.md
+            - name: Security and governance considerations
+              href: governance-considerations.md
+            - name: Configure security for Dataverse
+              expanded: true
+              items:
+                - name: Dataverse security
+                  href: wp-security.md
+                - name: Security concepts in Dataverse
+                  href: wp-security-cds.md
+                - name: System and application users
+                  href: system-application-users.md
+                - name: Configure user security
+                  href: database-security.md
+                - name: How access to records is determined
+                  href: how-record-access-determined.md
+                - name: Email exfiltration controls for connectors
+                  href: block-forwarded-email-from-power-automate.md
+                - name: Block cookie replay attacks
+                  href: block-cookie-replay-attack.md
+                - name: Configure environment security
+                  items:
+                    - name: Control user access to environments
+                      href: control-user-access.md
+                    - name: "Restrict cross-tenant access (preview)"
+                      href: cross-tenant-restrictions.md
+                    - name: Content security policy
+                      href: content-security-policy.md
+                - name: Data loss prevention policies
+                  items:
+                    - name: Overview
+                      href: wp-data-loss-prevention.md
+                    - name: Create a DLP policy
+                      href: create-dlp-policy.md
+                    - name: Manage DLP policies
+                      href: prevent-data-loss.md
+                    - name: Data loss prevention SDK
+                      href: data-loss-prevention-sdk.md
+                    - name: Basic connector classification
+                      href: dlp-connector-classification.md
+                    - name: Connector action control
+                      href: connector-action-control.md
+                    - name: Connector endpoint filtering (preview)
+                      href: connector-endpoint-filtering.md
+                    - name: DLP for custom connectors
+                      href: dlp-custom-connector-parity.md
+                    - name: DLP for Power Automate
+                      href: /power-automate/prevent-data-loss
+                    - name: DLP for desktop flows
+                      href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview
+                    - name: Disable new connectors
+                      href: connector-off-by-default.md
+                    - name: View policies and policy scope
+                      href: dlp-policy-scope.md
+                    - name: Effect of multiple policies
+                      href: dlp-combined-effect-multiple-policies.md
+                    - name: Impact on apps and flows
+                      href: dlp-impact-policies-apps-flows.md
+                    - name: Exempt apps and flows
+                      href: dlp-resource-exemption.md
+                    - name: Known limitations
+                      href: dlp-known-issues.md
+                - name: Configure column-level security
+                  items:
+                    - name: Overview
+                      href: field-level-security.md
+                    - name: Set permissions for a column
+                      href: set-up-security-permissions-field.md
+                    - name: Enable or disable column security
+                      href: enable-disable-security-field.md
+                    - name: Add teams or users to column security profile
+                      href: add-teams-users-field-security-profile.md
+                - name: Configure teams and team templates
+                  items:
+                    - name: Manage teams
+                      href: manage-teams.md
+                    - name: Manage group teams
+                      href: manage-group-teams.md
+                    - name: Team templates
+                      href: about-team-templates.md
+                    - name: Team templates for access rights
+                      href: create-team-template-add-entity-form.md
+                - name: Encryption
+                  items:
+                    - name: About encryption
+                      href: about-encryption.md
+                    - name: Encrypt your data
+                      href: data-encryption.md
+                    - name: Manage encryption key
+                      href: manage-encryption-key.md
+            - name: Security FAQs
+              href: security/faqs.md
+        - name: Manage users
           items:
-          - name: Access team templates
-            href: /dynamics365/customerengagement/on-premises/admin/about-team-templates
-          - name: Article templates
-            href: create-templates-articles.md
-          - name: Contract templates
-            href: /dynamics365/customer-service/create-entitlement-define-support-terms-customer
-          - name: Data import templates
-            href: download-template-data-import.md
-          - name: Document templates
-            href: /dynamics365/customerengagement/on-premises/admin/work-with-templates
-          - name: Email signatures
-            href: /dynamics365/customerengagement/on-premises/basics/create-signature-dynamics-365-email-queue
-          - name: Email templates
-            href: create-templates-email.md
-          - name: Mail merge templates
-            href: work-mail-merge-templates.md
-        - name: Email 
+            - name: Overview of user security
+              href: grant-users-access.md
+            - name: View active users
+              href: admin-view-user-licenses.md
+            - name: Create users
+              href: create-users.md
+            - name: Assign licenses
+              href: assign-licenses.md
+            - name: Assign security roles
+              items:
+                - name: About security roles and privileges
+                  href: security-roles-privileges.md
+                - name: Assign security roles
+                  href: assign-security-roles.md
+                - name: Opt-out of automatic license-based user roles management
+                  href: opt-out-automatic-license.md
+                - name: Use service admin roles to manage your tenant
+                  href: use-service-admin-role-manage-tenant.md
+                - name: Miscellaneous privileges
+                  href: miscellaneous-privileges.md
+                - name: Privacy-related privileges
+                  href: privacy-related-privileges.md
+                - name: Create or edit a security role
+                  href: create-edit-security-role.md
+                - name: Copy a security role
+                  href: copy-security-role.md
+            - name: Manage application users
+              href: manage-application-users.md
+            - name: Delete users
+              href: delete-users.md
+            - name: Reset a user's password
+              href: reset-users-password.md
+            - name: Assign service admin role to users
+              href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
+            - name: Add users to an environment
+              href: add-users-to-environment.md
+            - name: Configure user security to resources
+              href: database-security.md
+            - name: Configure user access to an environment
+              href: control-user-access.md
+            - name: View user profile
+              href: /powerapps/user/view-your-user-profile
+            - name: Create an administrative user
+              href: prevent-elevation-security-role-privilege.md
+            - name: Troubleshoot common user access issues
+              href: troubleshooting-user-needs-read-write-access-organization.md
+            - name: Manage user account synchronization
+              href: manage-user-account-synchronization.md
+            - name: Hierarchy security to control access
+              href: hierarchy-security.md
+            - name: Add or remove sales territory members
+              href: add-remove-territory-members.md
+            - name: User session management
+              href: user-session-management.md
+            - name: Conditional access with Azure AD
+              href: restrict-access-online-trusted-ip-rules.md
+            - name: B2B collaboration with Azure AD
+              href: invite-users-azure-active-directory-b2b-collaboration.md
+        - name: Analytics
           items:
-          - name: Email settings
-            href: settings-email.md
-          - name: Email tracking 
-            href: settings-email-tracking.md
-          - name: Mailboxes 
-            href: create-forward-mailboxes-edit-mailboxes.md
-          - name: Server profiles 
-            href: supported-email-service-configurations-server-side-synchronization.md
-        - name: Integration
+            - name: Dataverse analytics
+              href: analytics-common-data-service.md
+            - name: Power Apps analytics
+              href: analytics-powerapps.md
+            - name: Power Automate
+              items:
+                - name: Analytics for cloud flows
+                  href: analytics-flow.md
+                - name: Analytics for desktop flows
+                  href: analytics-ui-flow.md
+            - name: Reports
+              items:
+                - name: Tenant-level analytics (default)
+                  href: tenant-level-analytics.md
+                - name: Power Apps analytics
+                  href: powerapps-analytics-reports.md
+                - name: Power Automate analytics
+                  href: power-automate-analytics-reports.md
+            - name: Data export (preview)
+              items:
+                - name: "Export Power Apps inventory and usage data"
+                  href: self-service-analytics.md
+                - name: "Self-service analytics schema definition"
+                  href: self-service-analytics-schema-definition.md
+                - name: "Create custom dashboards using Power Apps inventory and usage data"
+                  href: build-custom-reports.md
+            - name: Analyze telemetry with Application Insights
+              items:
+                - name: Model-driven apps and Microsoft Dataverse telemetry
+                  href: analyze-telemetry.md
+                - name: Overview of integration with Application Insights
+                  href: overview-integration-application-insights.md
+                - name: Telemetry events for model-driven apps
+                  href: telemetry-events-model-driven-apps.md
+                - name: Telemetry events for Dataverse
+                  href: telemetry-events-dataverse.md
+                - name: Set up export to Application Insights
+                  href: set-up-export-application-insights.md
+        - name: Storage
           items:
-          - name: Enable server-based SharePoint integration
-            href: configure-server-based-authentication-sharepoint-on-premises.md
-          - name: Document management settings
-            href: enable-sharepoint-document-management-specific-entities.md
-          - name: Manage document suggestions
-            href: enable-document-suggestions.md
-          - name: OneDrive for business
-            href: enable-onedrive-for-business.md 
-          - name: OneNote
-            href: set-up-onenote-integration-in-dynamics-365.md
-          - name: Outlook
-            href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
-          - name: SharePoint document locations
-            href: create-edit-document-location-records.md
-          - name: SharePoint sites
-            href: edit-existing-sharepoint-site-records.md
-          - name: Synchronization
-            href: system-settings-dialog-box-synchronization-tab.md
-          - name: Yammer
-            href: connect-yammer.md
-        - name: Data management 
-          items:
-          - name: Add ready-to-use business process
-            href: /dynamics365/customerengagement/on-premises/customize/add-ready-use-business-processes
-          - name: Announcements
-            href: settings-announcements.md
-          - name: Auto-numbering prefixes
-            href: change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles.md 
-          - name: Automatic record creation policies
-            href: /dynamics365/customer-engagement/customer-service/set-up-rules-to-automatically-create-or-update-records
-          - name: Bulk deletion
-            href: delete-bulk-records.md
-          - name: Data import wizard
-            href: import-data-all-record-types.md
-          - name: Data maps
-            href: select-data-map.md
-          - name: Duplicate detection jobs
-            href: run-bulk-system-jobs-detect-duplicate-records.md
-          - name: Duplicate detection rules
-            href: set-up-duplicate-detection-rules-keep-data-clean.md
-          - name: Duplicate detection settings
-            href: turn-duplicate-detection-rules-off-whole-organization.md
-          - name: Asynchronous processing of cascading transactions
-            href: async-cascading.md
-          - name: Imports
-            href: /dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data
-          - name: Sample data
-            href: add-remove-sample-data.md
-        - name: Encryption
-          items:
-          - name: Encryption
-            href: data-encryption.md
+            - name: What's new for storage
+              href: whats-new-storage.md
+            - name: New capacity storage model
+              href: capacity-storage.md
+            - name: Legacy capacity storage model
+              href: legacy-capacity-storage.md
+            - name: Finance and operations storage capacity
+              href: finance-operations-storage-capacity.md
+            - name: View self-service capacity
+              href: view-self-service-capacity.md
+            - name: Free up storage
+              items:
+                - name: Recover storage space
+                  href: free-storage-space.md
+                - name: Clean up AsyncOperationBase and WorkflowLogBase tables
+                  href: cleanup-asyncoperationbase-table.md
+            - name: Add storage capacity
+              href: add-storage.md
+            - name: Manage PrincipalObjectAccess storage
+              href: manage-principalobjectaccess-storage.md
+            - name: Access storage with SAS token
+              href: storage-sas-token.md
         - name: Resources
-          items: 
-          - name: All legacy settings
-            href: set-up-business-management-options.md
-          - name: Dynamics 365 for Outlook
-            href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
-        - name: System 
-          items: 
-          - name: Overview
-            href: system-settings-dialog.md
-          - name: General tab
-            href: system-settings-dialog-box-general-tab.md
-          - name: Calendar tab
-            href: system-settings-dialog-box-calendar-tab.md
-          - name: Formats tab
-            href: system-settings-dialog-box-formats-tab.md
-          - name: Auditing tab
-            href: system-settings-dialog-box-auditing-tab.md
-          - name: Email tab
-            href: system-settings-dialog-box-email-tab.md
-          - name: Marketing tab
-            href: system-settings-dialog-box-marketing-tab.md
-          - name: Customization tab
-            href: system-settings-dialog-box-customization-tab.md
-          - name: Outlook tab
-            href: system-settings-dialog-box-outlook-tab.md
-          - name: Reporting tab
-            href: system-settings-dialog-box-reporting-tab.md
-          - name: Goals tab
-            href: system-settings-dialog-box-goals-tab.md
-          - name: Sales tab
-            href: system-settings-dialog-box-sales-tab.md
-          - name: Service tab
-            href: system-settings-dialog-box-service-tab.md
-          - name: Synchronization tab
-            href: system-settings-dialog-box-synchronization-tab.md
-          - name: Mobile Client tab
-            href: system-settings-dialog-box-mobile-client-tab.md
-          - name: Previews tab
-            href: system-settings-dialog-box-previews-tab.md
-          - name: On-off switch for Learning Path (guided help)
-            href: on-off-switch-for-learning-path-guided-help.md       
-      - name: Advanced environment operations
-        items:
-        - name: Environment cleanup process
-          href: automatic-environment-cleanup.md
-        - name: Dataverse for Teams environment cleanup
-          href: inactive-teams-environment.md
-        - name: Migrate environment
-          href: move-environment-tenant.md          
-        - name: Geo to geo migrations
-          href: geo-to-geo-migrations.md  
-        - name: Power Platform Geos
-          href: regions-overview.md
-        - name: Multiple online environments or tenants
-          href: multiple-online-environments-tenants.md
-        - name: Administration mode
-          href: admin-mode.md        
-        - name: Automation of tasks with PowerShell 
-          href: wp-task-automation-powershell.md
-        - name: Automation of tasks with Power Automate
-          href: wp-task-automation-flow.md    
-    - name: Security and governance
-      items:      
-      - name: Security and governance
-        href: security.yml
-      - name: Overview of Power Platform security
-        href: security/overview.md
-      - name: Authenticating to Power Platform services
-        href: security/authenticate-services.md
-      - name: Data storage and governance
-        href: security/data-storage.md
-      - name: Securely access customer data using Customer Lockbox (preview)
-        href: about-lockbox.md
-      - name: Connecting and authenticating to data sources
-        href: security/connect-data-sources.md
-      - name: Security and governance considerations
-        href: governance-considerations.md 
-      - name: Configure security for Dataverse
-        expanded: true
-        items:
-        - name: Dataverse security
-          href: wp-security.md
-        - name: Security concepts in Dataverse
-          href: wp-security-cds.md
-        - name: System and application users
-          href: system-application-users.md
-        - name: Configure user security
-          href: database-security.md
-        - name: How access to records is determined
-          href: how-record-access-determined.md
-        - name: Email exfiltration controls for connectors
-          href: block-forwarded-email-from-power-automate.md
-        - name: Block the cookie replay attack (preview)
-          href: block-cookie-replay-attack.md
-        - name: Configure environment security 
-          items: 
-          - name: Control user access to environments
-            href: control-user-access.md  
-          - name: "Restrict cross-tenant access (preview)" 
-            href: cross-tenant-restrictions.md
-          - name: Content security policy
-            href: content-security-policy.md
-        - name: Data loss prevention policies 
-          items: 
-          - name: Overview
-            href: wp-data-loss-prevention.md
-          - name: Create a DLP policy
-            href: create-dlp-policy.md
-          - name: Manage DLP policies
-            href: prevent-data-loss.md
-          - name: Data loss prevention SDK 
-            href: data-loss-prevention-sdk.md
-          - name: Basic connector classification
-            href: dlp-connector-classification.md
-          - name: Advanced granular controls
-            href: dlp-granular-controls.md    
-          - name: Endpoint input examples
-            href: dlp-endpoint-input-formats-examples.md
-          - name: DLP for custom connectors
-            href: dlp-custom-connector-parity.md 
-          - name: DLP for Power Automate
-            href: /power-automate/prevent-data-loss
-          - name: DLP for desktop flows
-            href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview 
-          - name: Disable new connectors
-            href: connector-off-by-default.md
-          - name: View policies and policy scope
-            href: dlp-policy-scope.md          
-          - name: Effect of multiple policies
-            href: dlp-combined-effect-multiple-policies.md           
-          - name: Impact on apps and flows
-            href: dlp-impact-policies-apps-flows.md          
-          - name: Exempt apps and flows
-            href: dlp-resource-exemption.md
-          - name: Known limitations
-            href: dlp-known-issues.md          
-        - name: Configure column-level security
           items:
-          - name: Overview
-            href: field-level-security.md
-          - name: Set permissions for a column
-            href: set-up-security-permissions-field.md
-          - name: Enable or disable column security
-            href: enable-disable-security-field.md
-          - name: Add teams or users to column security profile
-            href: add-teams-users-field-security-profile.md
-        - name: Configure teams and team templates
+            - name: Overview
+              href: view-manage-resources.md
+            - name: Manage Dynamics 365 apps
+              href: manage-apps.md
+            - name: Manage Power Apps
+              href: admin-manage-apps.md
+            - name: Manage Power Automate flows
+              href: manage-power-automate.md
+            - name: Add-on capacity management
+              href: capacity-add-on.md
+            - name: Portal administration
+              href: /powerapps/maker/portals/admin/power-platform-admin-center
+        - name: Activity logging
           items:
-          - name: Manage teams
-            href: manage-teams.md
-          - name: Manage group teams
-            href: manage-group-teams.md
-          - name: Team templates
-            href: about-team-templates.md
-          - name: Team templates for access rights 
-            href: create-team-template-add-entity-form.md
-        - name: Encryption
-          items:
-          - name: About encryption
-            href: about-encryption.md
-          - name: Encrypt your data
-            href: data-encryption.md
-          - name: Manage encryption key
-            href: manage-encryption-key.md      
-      - name: Security FAQs
-        href: security/faqs.md
-    - name: Manage users 
-      items:     
-      - name: Overview of user security
-        href: grant-users-access.md
-      - name: View active users  
-        href: admin-view-user-licenses.md
-      - name: Create users
-        href: create-users.md
-      - name: Assign licenses
-        href: assign-licenses.md
-      - name: Assign security roles
-        items:  
-        - name: About security roles and privileges
-          href: security-roles-privileges.md
-        - name: Assign security roles
-          href: assign-security-roles.md
-        - name: Opt-out of automatic license-based user roles management
-          href: opt-out-automatic-license.md
-        - name: Use service admin roles to manage your tenant
-          href: use-service-admin-role-manage-tenant.md
-        - name: Miscellaneous privileges
-          href: miscellaneous-privileges.md
-        - name: Create or edit a security role
-          href: create-edit-security-role.md
-        - name: Copy a security role
-          href: copy-security-role.md
-      - name: Manage application users
-        href: manage-application-users.md
-      - name: Delete users
-        href: delete-users.md
-      - name: Reset a user's password
-        href: reset-users-password.md          
-      - name: Assign service admin role to users
-        href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
-      - name: Add users to an environment
-        href: add-users-to-environment.md
-      - name: Configure user security to resources
-        href: database-security.md
-      - name: Configure user access to an environment
-        href: control-user-access.md  
-      - name: View user profile
-        href: /powerapps/user/view-your-user-profile
-      - name: Create an administrative user
-        href: prevent-elevation-security-role-privilege.md
-      - name: Troubleshoot common user access issues 
-        href: troubleshooting-user-needs-read-write-access-organization.md     
-      - name: Manage user account synchronization 
-        href: manage-user-account-synchronization.md       
-      - name: Hierarchy security to control access
-        href: hierarchy-security.md
-      - name: Add or remove sales territory members
-        href: add-remove-territory-members.md
-      - name: User session management
-        href: user-session-management.md
-      - name: Conditional access with Azure AD 
-        href: restrict-access-online-trusted-ip-rules.md
-      - name: B2B collaboration with Azure AD
-        href: invite-users-azure-active-directory-b2b-collaboration.md    
-    - name: Analytics
-      items: 
-      - name: Dataverse analytics 
-        href: analytics-common-data-service.md
-      - name: Power Apps analytics
-        href: analytics-powerapps.md
-      - name: Power Automate
-        items:
-        - name: Analytics for flows
-          href: analytics-flow.md
-        - name: Analytics for UI flows
-          href: analytics-ui-flow.md 
-      - name: Reports
-        items:
-        - name: Tenant-level analytics (default)
-          href: tenant-level-analytics.md
-        - name: Power Apps analytics
-          href: powerapps-analytics-reports.md
-        - name: Power Automate analytics
-          href: power-automate-analytics-reports.md
-      - name: Data export (preview)
-        items:
-        - name: "Export Power Apps inventory and usage data"
-          href: self-service-analytics.md
-        - name: "Self-service analytics schema definition"
-          href: self-service-analytics-schema-definition.md
-        - name: "Create custom dashboards using Power Apps inventory and usage data"
-          href: build-custom-reports.md
-      - name: Analyze telemetry with Application Insights
-        items:
-        - name: Model-driven apps and Microsoft Dataverse telemetry
-          href: analyze-telemetry.md
-        - name: Overview of integration with Application Insights
-          href: overview-integration-application-insights.md
-        - name: Telemetry events for model-driven apps
-          href: telemetry-events-model-driven-apps.md
-        - name: Telemetry events for Dataverse
-          href: telemetry-events-dataverse.md   
-        - name: Set up export to Application Insights
-          href: set-up-export-application-insights.md
-    - name: Storage
-      items: 
-      - name: What's new for storage
-        href: whats-new-storage.md
-      - name: New capacity storage model
-        href: capacity-storage.md
-      - name: Legacy capacity storage model
-        href: legacy-capacity-storage.md
-      - name: Finance and operations storage capacity
-        href: finance-operations-storage-capacity.md
-      - name: View self-service capacity
-        href: view-self-service-capacity.md
-      - name: Free up storage
-        items:
-        - name: Recover storage space
-          href: free-storage-space.md  
-        - name: Clean up AsyncOperationBase and WorkflowLogBase tables
-          href: cleanup-asyncoperationbase-table.md
-      - name: Add storage capacity
-        href: add-storage.md      
-      - name: Manage PrincipalObjectAccess storage
-        href: manage-principalobjectaccess-storage.md
-      - name: Access storage with SAS token
-        href: storage-sas-token.md 
-    - name: Resources
-      items:
-      - name: Overview 
-        href: view-manage-resources.md
-      - name: Manage Dynamics 365 apps
-        href: manage-apps.md
-      - name: Manage Power Apps 
-        href: admin-manage-apps.md
-      - name: Manage Power Automate flows
-        href: manage-power-automate.md
-      - name: Add-on capacity management
-        href: capacity-add-on.md
-      - name: Portal administration
-        href: /powerapps/maker/portals/admin/power-platform-admin-center
-    - name: Activity logging
-      items: 
-      - name: Power Apps activity logging
-        href: logging-powerapps.md
-      - name: Power Automate activity logging
-        href: logging-power-automate.md
-      - name: Power Platform connector activity logging (preview)
-        href: connector-events-power-platform.md  
+            - name: Power Apps activity logging
+              href: logging-powerapps.md
+            - name: Power Automate activity logging
+              href: logging-power-automate.md
+            - name: Power Platform connector activity logging (preview)
+              href: connector-events-power-platform.md
 
-      - name: Data loss prevention activity logging
-        href: dlp-activity-logging.md
-      - name: Manage Dataverse auditing
-        href: manage-dataverse-auditing.md
-      - name: Dataverse and model-driven apps
-        href: enable-use-comprehensive-auditing.md   
-    - name: Programmability and extensibility
-      items:
-      - name: Overview
-        href: programmability-extensibility-overview.md
-      - name: Versioning and support
-        href: programmability-versioning-support.md
-      - name: Authentication
-        items:
-        - name: Authentication - legacy
-          href: programmability-authentication.md
-        - name: Authentication (preview)
-          href: programmability-authentication-v2.md
-      - name: Permission reference (preview)
-        href: programmability-permission-reference.md
-      - name: Tutorials
-        items:
-        - name: "Create a daily capacity report (preview)"
-          href: programmability-tutorial-create-daily-capacity-report.md
-        - name: "Install an application to a target environment (preview)"
-          href: programmability-tutorial-install-application-environment.md
-      - name: PowerShell
-        items:
-        - name: Getting started
-          href: powershell-getting-started.md
-        - name: Installation
-          href: powershell-installation.md
-        - name: Creating a service principal
-          href: powershell-create-service-principal.md
-        - name: Cmdlet reference
-          href: /powershell/module/microsoft.powerapps.administration.powershell
-      - name: Connectors
-        items:
-        - name: Getting started
-          href: connectors-getting-started.md
-        - name: Connector reference
-          href: /connectors/powerplatformforadmins/
-      - name: Power Platform API (preview)
-        items:
-        - name: Getting started
-          href: powerplatform-api-getting-started.md
-        - name: Creating a service principal
-          href: powerplatform-api-create-service-principal.md
-        - name: Reference
+            - name: Data loss prevention activity logging
+              href: dlp-activity-logging.md
+            - name: Manage Dataverse auditing
+              href: manage-dataverse-auditing.md
+            - name: Dataverse and model-driven apps
+              href: enable-use-comprehensive-auditing.md
+        - name: Programmability and extensibility
           items:
-          - name: "2022-03-01-preview"
-            href: /rest/api/power-platform
-          - name: "2020-10-01"
-            items:
-            - name: Environments
+            - name: Overview
+              href: programmability-extensibility-overview.md
+            - name: Versioning and support
+              href: programmability-versioning-support.md
+            - name: Authentication
               items:
-              - name: "List environments"
-                href: list-environments.md
-              - name: "Create a Dataverse application user"
-                href: create-dataverseapplicationuser.md
-            - name: Tenant Settings
+                - name: Authentication - legacy
+                  href: programmability-authentication.md
+                - name: Authentication (preview)
+                  href: programmability-authentication-v2.md
+            - name: Permission reference (preview)
+              href: programmability-permission-reference.md
+            - name: Tutorials
               items:
-              - name: "List tenant settings"
-                href: list-tenantsettings.md
-    - name: PowerShell support for Power Apps 
-      items:
-      - name: About PowerShell support
-        href: powerapps-powershell.md           
-      - name: Automation of tasks with PowerShell 
-        href: wp-task-automation-powershell.md
-      - name: Data loss prevention SDK 
-        href: data-loss-prevention-sdk.md
-    - name: SharePoint and Power Apps
-      items:
-      - name: Manage your documents using SharePoint
-        href: manage-documents-using-sharepoint.md
-        items: 
-      - name: SharePoint document management software requirements
-        href: sharepoint-document-management-software-requirements.md
-      - name: Setup
-        href: set-up-sharepoint-integration.md 
-        items: 
-        - name: Set up customer engagement apps to use SharePoint online
-          href: set-up-dynamics-365-online-to-use-sharepoint-online.md
-        - name: Configure server-based authentication with SharePoint on-premises
-          href: configure-server-based-authentication-sharepoint-on-premises.md  
-          items: 
-      - name: Configure
-        items: 
-          - name: Enable SharePoint document management for specific entities
-            href: enable-sharepoint-document-management-specific-entities.md
-          - name: Edit existing SharePoint site records
-            href: edit-existing-sharepoint-site-records.md
-          - name: Create and edit document location records
-            href: create-edit-document-location-records.md
-          - name: Permissions required for document management tasks
-            href: permissions-required-document-management-tasks.md
-      - name: Troubleshoot 
-        items: 
-          - name: Troubleshooting server-based authentication
-            href: troubleshooting-server-based-authentication.md
-          - name: Troubleshoot set up with SharePoint online
-            href: troubleshoot-set-up-sharepoint-online.md
-          - name: Troubleshooting document management issues
-            href: troubleshoot-doc-management-issues.md
-          - name: Known issues with document management
-            href: doc-management-known-issues.md
-          - name: Switch from the list component
-            href: switching-list-component-changing-deployment.md
-    - name: Data integration
-      items:
-      - name: Integrate data into Dataverse 
-        href: data-integrator.md
-      - name: Data Integrator Error management and troubleshooting 
-        href: data-integrator-error-management.md
-    - name: Data sources and gateway clusters
-      items: 
-      - name: "About on-premises gateway"
-        href: wp-onpremises-gateway.md
-      - name: "On-premises data gateway management (preview)"
-        href: onpremises-data-gateway-management.md
-      - name: "Data source management (preview)"
-        href: onpremises-data-gateway-source-management.md
-    - name: Manage data
-      items: 
-      - name: Add or remove sample data 
-        href: add-remove-sample-data.md 
-      - name: Import data 
-        href: import-data-all-record-types.md 
-      - name: Template for data import
-        href: download-template-data-import.md
-      - name: Merge data
-        href: merge-data.md
-      - name: Detect duplicate data
-        href: detect-duplicate-data.md 
-      - name: Detect duplicate records
-        href: detect-duplicate-records.md
-      - name: Enable improved duplicate detection
-        href: enable-improved-duplicate-detection.md
-      - name: Duplicate detection rules
-        href: set-up-duplicate-detection-rules-keep-data-clean.md 
-      - name: Turn duplicate detection rules on or off
-        href: turn-duplicate-detection-rules-off-whole-organization.md 
-      - name: Bulk duplicate detection
-        href: run-bulk-system-jobs-detect-duplicate-records.md
-      - name: Bulk deletion
-        href: delete-bulk-records.md
-      - name: View and take action on bulk deletion jobs
-        href: view-take-action-bulk-deletion-jobs.md
-      - name: Remove user personal data
-        href: remove-user-personal-data.md
-      - name: Recover database space by deleting audit logs
-        href: recover-database-space-deleting-audit-logs.md 
-      - name: Enable change tracking to control data synchronization
-        href: enable-change-tracking-control-data-synchronization.md 
-      - name: Replicate data to Azure SQL Database
-        href: replicate-data-microsoft-azure-sql-database.md 
-      - name: Move configuration data
-        items:
-        - name: About moving configuration data
-          href: manage-configuration-data.md 
-        - name: Create a schema to export configuration data
-          href: create-schema-export-configuration-data.md
-        - name: Configure date settings for demo data
-          href: configure-date-settings-for-demo-data.md 
-        - name: Modify a configuration data schema
-          href: modify-configuration-data-schema.md
-        - name: Import configuration data
-          href: import-configuration-data.md 
-      - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
-        href: deploy-packages-using-package-deployer-windows-powershell.md 
-    - name: Work with templates
-      items: 
-      - name: Article templates
-        href: create-templates-articles.md 
-      - name: Email templates
-        href: create-templates-email.md
-      - name: Mail merge templates
-        href: work-mail-merge-templates.md
-      - name: Excel templates
-        href: analyze-your-data-with-excel-templates.md
-      - name: Word templates
-        href: using-word-templates-dynamics-365.md
-      - name: Troubleshooting Word templates
-        href: troubleshoot-word-templates-dynamics-365.md  
-    - name: Integrate (synchronize) your email system
-      items: 
-      - name: Overview
-        href: integrate-synchronize-your-email-system.md 
-      - name: Deploy Dynamics 365 App for Outlook
-        href: /dynamics365/customer-engagement/outlook-app/deploy-dynamics-365-app-for-outlook
-      - name: Enable accessible email flow
-        href: deploy-email-unified-interface.md 
-      - name: Server-side synchronization
-        items:
-        - name: About server-side sync
-          href: server-side-synchronization.md
-        - name: OrgDBSettings for server-side sync
-          href: orgdborgsettings.md
-        - name: Set up server-side sync
+                - name: "Create a daily capacity report (preview)"
+                  href: programmability-tutorial-create-daily-capacity-report.md
+                - name: "Install an application to a target environment (preview)"
+                  href: programmability-tutorial-install-application-environment.md
+            - name: PowerShell
+              items:
+                - name: Getting started
+                  href: powershell-getting-started.md
+                - name: Installation
+                  href: powershell-installation.md
+                - name: Creating a service principal
+                  href: powershell-create-service-principal.md
+                - name: Cmdlet reference
+                  href: /powershell/module/microsoft.powerapps.administration.powershell
+            - name: Connectors
+              items:
+                - name: Getting started
+                  href: connectors-getting-started.md
+                - name: Connector reference
+                  href: /connectors/powerplatformforadmins/
+            - name: Power Platform API (preview)
+              items:
+                - name: Getting started
+                  href: powerplatform-api-getting-started.md
+                - name: Creating a service principal
+                  href: powerplatform-api-create-service-principal.md
+                - name: Reference
+                  items:
+                    - name: "2022-03-01-preview"
+                      href: /rest/api/power-platform
+                    - name: "2020-10-01"
+                      items:
+                        - name: Environments
+                          items:
+                            - name: "List environments"
+                              href: list-environments.md
+                            - name: "Create a Dataverse application user"
+                              href: create-dataverseapplicationuser.md
+                        - name: Tenant Settings
+                          items:
+                            - name: "List tenant settings"
+                              href: list-tenantsettings.md
+        - name: PowerShell support for Power Apps
           items:
-          - name: Overview
-            href: set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md
-          - name: Supported email service configurations
-            href: supported-email-service-configurations-server-side-synchronization.md
-          - name: Connect to Exchange Online
-            href: connect-exchange-online.md
-          - name: Use of Basic authentication with Exchange Online
-            href: use-basic-authentication-exchange-online.md
-          - name: Exchange Online cross tenant authentication
-            href: connect-exchange-online-server-profile-oauth.md 
-          - name: Connect to Exchange Server (on-premises)
-            href: connect-exchange-server-on-premises.md 
-          - name: Hybrid Modern Authentication (HMA) for Exchange on-premises
-            href: connect-exchange-server-onprem-hma.md
-          - name: Test connection to Exchange Server (on-premises)
-            href: test-connection-exchange-server-onpremises.md
-          - name: Connect to IMAP, POP, or SMTP servers
-            href: connect-to-imap-servers.md 
-          - name: Connect to Gmail
-            items:
-            - name: Connect using OAuth 2.0
-              href: connect-gmail-oauth2.md
-            - name: Connect using credentials specified by a user or queue
-              href: connect-to-pop3-or-smtp-servers.md
-        - name: Server-side sync configuration
-          items: 
-          - name: Best practices
-            href: best-practices-server-side-synchronization.md
-          - name: Personal options that affect synchronization
-            href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
-          - name: Automatically track sent folder items
-            href: track-sent-folder-items.md
-          - name: Configure incoming and outgoing email synchronization
-            items: 
-            - name: Configure incoming and outgoing email synchronization
-              href: set-incoming-outgoing-email-synchronization.md
-            - name: Configure correlation settings for incoming email
-              href: email-message-filtering-correlation.md 
-            - name: Associate an email address with a row
-              href: associate-email-address.md
-            - name: How is an email record owner determined
-              href: email-record-owner.md
-            - name: Create queue items from incoming email
-              href: create-queue-items-from-synchronized-email-messages.md
-          - name: Configure appointment, contact, and task synchronization
-            items: 
-            - name: Configure appointment, contact, and task synchronization
-              href: choose-records-synchronize-dynamics-365-outlook-exchange.md
-            - name: Synchronization logic for appointments, contacts, and tasks
-              href: sync-logic.md
-            - name: Set up default sync filters for multiple users
-              href: configure-default-sync-filters.md
-            - name: Synchronized fields per entity
-              href: what-fields-synchronized-outlook.md
-            - name: View the fields that are synchronized with Outlook
-              href: view-fields-synchronized-dynamics-365-outlook.md
-            - name: Control field synchronization
-              href: control-field-synchronization-outlook.md 
-            - name: Field security best practices
-              href: how-field-security-affects-synchronization-between-outlook.md 
-            - name: "Frequently asked questions: record synchronization"
-              href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml 
-          - name: Configure folder-level tracking
-            items:
-            - name: Configure folder-level tracking
-              href: configure-outlook-exchange-folder-level-tracking.md
-            - name: Best practices for folder-level tracking
-              href: track-outlook-email-by-moving-it-tracked-exchange-folder.md
-          - name: Configure Outlook category tracking
-            items: 
-            - name: Use Outlook category to track appointments and emails
-              href: use-outlook-category-track-appointments-emails.md 
-            - name: Configure forward mailboxes
-              href: create-forward-mailboxes-edit-mailboxes.md
-            - name: Forward mailbox differences
-              href: forward-mailbox-vs-individual-mailboxes.md 
-            - name: Send email on behalf of another user 
-              href: send-email-on-behalf.md
-        - name: Troubleshoot server-side synchronization
+            - name: About PowerShell support
+              href: powerapps-powershell.md
+            - name: Automation of tasks with PowerShell
+              href: wp-task-automation-powershell.md
+            - name: Data loss prevention SDK
+              href: data-loss-prevention-sdk.md
+        - name: SharePoint and Power Apps
           items:
-          - name: Troubleshoot server-side synchronization
-            href: troubleshooting-monitoring-server-side-synchronization.md
-          - name: Monitor email processing errors
-            items:
-            - name: Monitor email processing errors
-              href: monitor-email-processing-errors.md 
-            - name: Email in "Pending Send" status?
-              href: why-email-message-sent-have-pending-send-status.md 
-       # Leave this commented out as this topic should not appear in the TOC. For context-sensitive help link.
-       #   - name: When would I want to use this check box?
-       #     href: when-would-want-use-check-box.md
-    - name: Extend with integration and solutions
+            - name: Manage your documents using SharePoint
+              href: manage-documents-using-sharepoint.md
+              items:
+            - name: SharePoint document management software requirements
+              href: sharepoint-document-management-software-requirements.md
+            - name: Setup
+              href: set-up-sharepoint-integration.md
+              items:
+                - name: Set up customer engagement apps to use SharePoint online
+                  href: set-up-dynamics-365-online-to-use-sharepoint-online.md
+                - name: Configure server-based authentication with SharePoint on-premises
+                  href: configure-server-based-authentication-sharepoint-on-premises.md
+                  items:
+            - name: Configure
+              items:
+                - name: Enable SharePoint document management for specific entities
+                  href: enable-sharepoint-document-management-specific-entities.md
+                - name: Edit existing SharePoint site records
+                  href: edit-existing-sharepoint-site-records.md
+                - name: Create and edit document location records
+                  href: create-edit-document-location-records.md
+                - name: Permissions required for document management tasks
+                  href: permissions-required-document-management-tasks.md
+            - name: Troubleshoot
+              items:
+                - name: Troubleshooting server-based authentication
+                  href: troubleshooting-server-based-authentication.md
+                - name: Troubleshoot set up with SharePoint online
+                  href: troubleshoot-set-up-sharepoint-online.md
+                - name: Troubleshooting document management issues
+                  href: troubleshoot-doc-management-issues.md
+                - name: Known issues with document management
+                  href: doc-management-known-issues.md
+                - name: Switch from the list component
+                  href: switching-list-component-changing-deployment.md
+        - name: Data integration
+          items:
+            - name: Integrate data into Dataverse
+              href: data-integrator.md
+            - name: Data Integrator Error management and troubleshooting
+              href: data-integrator-error-management.md
+        - name: Data sources and gateway clusters
+          items:
+            - name: "About on-premises gateway"
+              href: wp-onpremises-gateway.md
+            - name: "On-premises data gateway management (preview)"
+              href: onpremises-data-gateway-management.md
+            - name: "Data source management (preview)"
+              href: onpremises-data-gateway-source-management.md
+        - name: Manage data
+          items:
+            - name: Add or remove sample data
+              href: add-remove-sample-data.md
+            - name: Import data
+              href: import-data-all-record-types.md
+            - name: Template for data import
+              href: download-template-data-import.md
+            - name: Merge data
+              href: merge-data.md
+            - name: Detect duplicate data
+              href: detect-duplicate-data.md
+            - name: Detect duplicate records
+              href: detect-duplicate-records.md
+            - name: Enable improved duplicate detection
+              href: enable-improved-duplicate-detection.md
+            - name: Duplicate detection rules
+              href: set-up-duplicate-detection-rules-keep-data-clean.md
+            - name: Turn duplicate detection rules on or off
+              href: turn-duplicate-detection-rules-off-whole-organization.md
+            - name: Bulk duplicate detection
+              href: run-bulk-system-jobs-detect-duplicate-records.md
+            - name: Bulk deletion
+              href: delete-bulk-records.md
+            - name: View and take action on bulk deletion jobs
+              href: view-take-action-bulk-deletion-jobs.md
+            - name: Remove user personal data
+              href: remove-user-personal-data.md
+            - name: Recover database space by deleting audit logs
+              href: recover-database-space-deleting-audit-logs.md
+            - name: Enable change tracking to control data synchronization
+              href: enable-change-tracking-control-data-synchronization.md
+            - name: Replicate data to Azure SQL Database
+              href: replicate-data-microsoft-azure-sql-database.md
+            - name: Move configuration data
+              items:
+                - name: About moving configuration data
+                  href: manage-configuration-data.md
+                - name: Create a schema to export configuration data
+                  href: create-schema-export-configuration-data.md
+                - name: Configure date settings for demo data
+                  href: configure-date-settings-for-demo-data.md
+                - name: Modify a configuration data schema
+                  href: modify-configuration-data-schema.md
+                - name: Import configuration data
+                  href: import-configuration-data.md
+            - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
+              href: deploy-packages-using-package-deployer-windows-powershell.md
+        - name: Work with templates
+          items:
+            - name: Article templates
+              href: create-templates-articles.md
+            - name: Email templates
+              href: create-templates-email.md
+            - name: Mail merge templates
+              href: work-mail-merge-templates.md
+            - name: Excel templates
+              href: analyze-your-data-with-excel-templates.md
+            - name: Word templates
+              href: using-word-templates-dynamics-365.md
+            - name: Troubleshooting Word templates
+              href: troubleshoot-word-templates-dynamics-365.md
+        - name: Integrate (synchronize) your email system
+          items:
+            - name: Overview
+              href: integrate-synchronize-your-email-system.md
+            - name: Deploy Dynamics 365 App for Outlook
+              href: /dynamics365/customer-engagement/outlook-app/deploy-dynamics-365-app-for-outlook
+            - name: Enable accessible email flow
+              href: deploy-email-unified-interface.md
+            - name: Server-side synchronization
+              items:
+                - name: About server-side sync
+                  href: server-side-synchronization.md
+                - name: OrgDBSettings for server-side sync
+                  href: orgdborgsettings.md
+                - name: Set up server-side sync
+                  items:
+                    - name: Overview
+                      href: set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md
+                    - name: Supported email service configurations
+                      href: supported-email-service-configurations-server-side-synchronization.md
+                    - name: Connect to Exchange Online
+                      href: connect-exchange-online.md
+                    - name: Use of Basic authentication with Exchange Online
+                      href: use-basic-authentication-exchange-online.md
+                    - name: Exchange Online cross tenant authentication
+                      href: connect-exchange-online-server-profile-oauth.md
+                    - name: Connect to Exchange Server (on-premises)
+                      href: connect-exchange-server-on-premises.md
+                    - name: Hybrid Modern Authentication (HMA) for Exchange on-premises
+                      href: connect-exchange-server-onprem-hma.md
+                    - name: Test connection to Exchange Server (on-premises)
+                      href: test-connection-exchange-server-onpremises.md
+                    - name: Connect to IMAP, POP, or SMTP servers
+                      href: connect-to-imap-servers.md
+                    - name: Connect to Gmail
+                      items:
+                        - name: Connect using OAuth 2.0
+                          href: connect-gmail-oauth2.md
+                        - name: Connect using credentials specified by a user or queue
+                          href: connect-to-pop3-or-smtp-servers.md
+                - name: Server-side sync configuration
+                  items:
+                    - name: Best practices
+                      href: best-practices-server-side-synchronization.md
+                    - name: Personal options that affect synchronization
+                      href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
+                    - name: Automatically track sent folder items
+                      href: track-sent-folder-items.md
+                    - name: Configure incoming and outgoing email synchronization
+                      items:
+                        - name: Configure incoming and outgoing email synchronization
+                          href: set-incoming-outgoing-email-synchronization.md
+                        - name: Specify which emails are automatically tracked
+                          href: email-message-filtering-correlation.md
+                        - name: Associate an email address with a row
+                          href: associate-email-address.md
+                        - name: How is an email record owner determined
+                          href: email-record-owner.md
+                        - name: Create queue items from incoming email
+                          href: create-queue-items-from-synchronized-email-messages.md
+                    - name: Configure appointment, contact, and task synchronization
+                      items:
+                        - name: Configure appointment, contact, and task synchronization
+                          href: choose-records-synchronize-dynamics-365-outlook-exchange.md
+                        - name: Synchronization logic for appointments, contacts, and tasks
+                          href: sync-logic.md
+                        - name: Set up default sync filters for multiple users
+                          href: configure-default-sync-filters.md
+                        - name: Synchronized fields per entity
+                          href: what-fields-synchronized-outlook.md
+                        - name: View the fields that are synchronized with Outlook
+                          href: view-fields-synchronized-dynamics-365-outlook.md
+                        - name: Control field synchronization
+                          href: control-field-synchronization-outlook.md
+                        - name: Field security best practices
+                          href: how-field-security-affects-synchronization-between-outlook.md
+                        - name: "Frequently asked questions: record synchronization"
+                          href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml
+                    - name: Configure folder-level tracking
+                      items:
+                        - name: Configure folder-level tracking
+                          href: configure-outlook-exchange-folder-level-tracking.md
+                        - name: Best practices for folder-level tracking
+                          href: track-outlook-email-by-moving-it-tracked-exchange-folder.md
+                    - name: Configure Outlook category tracking
+                      items:
+                        - name: Use Outlook category to track appointments and emails
+                          href: use-outlook-category-track-appointments-emails.md
+                        - name: Configure forward mailboxes
+                          href: create-forward-mailboxes-edit-mailboxes.md
+                        - name: Forward mailbox differences
+                          href: forward-mailbox-vs-individual-mailboxes.md
+                        - name: Send email on behalf of another user
+                          href: send-email-on-behalf.md
+                - name: Troubleshoot server-side synchronization
+                  items:
+                    - name: Troubleshoot server-side synchronization
+                      href: troubleshooting-monitoring-server-side-synchronization.md
+                    - name: Monitor email processing errors
+                      items:
+                        - name: Monitor email processing errors
+                          href: monitor-email-processing-errors.md
+                        - name: Email in "Pending Send" status?
+                          href: why-email-message-sent-have-pending-send-status.md
+              # Leave this commented out as this topic should not appear in the TOC. For context-sensitive help link.
+              #   - name: When would I want to use this check box?
+              #     href: when-would-want-use-check-box.md
+        - name: Extend with integration and solutions
+          items:
+            - name: Manage Bing Maps
+              href: manage-bing-maps-organization.md
+            - name: Enable Power Automate integration
+              href: enable-embedded-flow-in-your-organization.md
+            - name: "Live Assist powered by Café X (preview)"
+              href: /dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
+            - name: Use Power BI
+              href: use-power-bi.md
+            - name: Install, update, or remove a preferred solution
+              href: install-remove-preferred-solution.md
+            - name: Add Microsoft 365 Online services
+              items:
+                - name: Overview
+                  href: add-office-365-online-services.md
+                - name: Connect to Exchange Online
+                  href: connect-exchange-online.md
+                - name: Connect to SharePoint Online
+                  href: set-up-dynamics-365-online-to-use-sharepoint-online.md
+                - name: Set up Microsoft Teams integration
+                  href: /dynamics365/teams-integration/teams-install-app
+                - name: Skype for Business and Skype integration
+                  href: skype-business-integration.md
+                - name: Set up Skype or Skype for Business
+                  href: set-up-skype-or-skype-for-business.md
+                - name: Deploy Microsoft 365 Groups
+                  href: deploy-office-365-groups.md
+                - name: Enable viewing profile cards
+                  href: enable-profile-card.md
+                - name: Set up OneNote integration
+                  href: set-up-onenote-integration-in-dynamics-365.md
+                - name: Enable OneDrive for Business (online)
+                  href: enable-onedrive-for-business.md
+                - name: Enable OneDrive for Business (on-premises)
+                  href: connect-onedrive-business.md
+                - name: Connect to Yammer
+                  href: connect-yammer.md
+        - name: Performance tuning and optimization
+          items:
+            - name: Overview
+              href: performance-tuning-and-optimization.md
+            - name: Verify network capacity and throughput for clients
+              href: verify-network-capacity-throughput-clients.md
+            - name: Performance insights
+              href: analyze-improve-data-query-performance.md
+        - name: Compliance and data privacy
+          href: wp-compliance-data-privacy.md
+        - name: GDPR - Responding to DSR requests
+          items:
+            - name: About GDPR
+              href: about-gdpr.md
+            - name: System-generated logs
+              href: powerapps-gdpr-dsr-guide-systemlogs.md
+            - name: Data integrations for Dataverse
+              href: data-integration-gdpr-dsr-guide.md
+            - name: Power Apps customer data
+              items:
+                - name: Overview
+                  href: powerapps-gdpr-dsr-guide.md
+                - name: Export data
+                  href: powerapps-gdpr-export-dsr.md
+                - name: Delete data
+                  href: powerapps-gdpr-delete-dsr.md
+                - name: Dataverse customer data
+                  href: common-data-service-gdpr-dsr-guide.md
+        - name: Datacenter regions
+          href: new-datacenter-regions.md
+          items:
+            - name: Australia
+              href: about-microsoft-cloud-australia.md
+            - name: Canada
+              href: about-microsoft-cloud-canada.md
+            - name: China
+              items:
+                - name: About China datacenter
+                  href: about-microsoft-cloud-china.md
+                - name: Business applications availability
+                  href: business-applications-availability-china.md
+                - name: 21Vianet support
+                  href: 21vianet-support.md
+            - name: France
+              href: about-microsoft-cloud-france.md
+            - name: Germany
+              href: about-microsoft-cloud-germany.md
+            - name: India
+              href: about-microsoft-cloud-india.md
+            - name: Japan
+              href: about-microsoft-cloud-japan.md
+            - name: U.S Government
+              items:
+                - name: Dynamics 365 service description
+                  href: microsoft-dynamics-365-government.md
+                - name: Power Apps service description
+                  href: powerapps-us-government.md
+            - name: Geo to geo migrations
+              href: geo-to-geo-migrations.md
+        - name: Partners
+          items:
+            - name: Add a Partner of Record
+              href: add-partner-record-subscription.md
+            - name: "For partners: get credit when customers subscribe"
+              href: partners-credit-when-customers-subscribe-dynamics-365.md
+            - name: "For partners: Delegated Administrator"
+              href: for-partners-delegated-administrator.md
+    - name: Administer Power Apps
+      href: admin-guide.md
+    - name: Administer Power Automate
+      href: about-flow-guide.md
+    - name: Administer Power BI
+      href: about-powerbi-guide.md
+    - name: Administer Power Virtual Agents
+      href: about-power-virtual-agents.md
+    - name: Administer customer engagement apps in Dynamics 365
       items:
-      - name: Manage Bing Maps
-        href: manage-bing-maps-organization.md 
-      - name: Enable Power Automate integration
-        href: enable-embedded-flow-in-your-organization.md 
-      - name: "Live Assist powered by Café X (preview)"
-        href: /dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
-      - name: Use Power BI
-        href: use-power-bi.md 
-      - name: Install, update, or remove a preferred solution
-        href: install-remove-preferred-solution.md 
-      - name: Add Microsoft 365 Online services
-        items: 
         - name: Overview
-          href: add-office-365-online-services.md
-        - name: Connect to Exchange Online
-          href: connect-exchange-online.md
-        - name: Connect to SharePoint Online
-          href: set-up-dynamics-365-online-to-use-sharepoint-online.md 
-        - name: Set up Microsoft Teams integration
-          href: /dynamics365/teams-integration/teams-install-app
-        - name: Skype for Business and Skype integration
-          href: skype-business-integration.md 
-        - name: Set up Skype or Skype for Business
-          href: set-up-skype-or-skype-for-business.md 
-        - name: Deploy Microsoft 365 Groups
-          href: deploy-office-365-groups.md 
-        - name: Enable viewing profile cards
-          href: enable-profile-card.md
-        - name: Set up OneNote integration
-          href: set-up-onenote-integration-in-dynamics-365.md 
-        - name: Enable OneDrive for Business (online)
-          href: enable-onedrive-for-business.md 
-        - name: Enable OneDrive for Business (on-premises)
-          href: connect-onedrive-business.md 
-        - name: Connect to Yammer
-          href: connect-yammer.md 
-    - name: Performance tuning and optimization
-      items:
-      - name: Overview
-        href: performance-tuning-and-optimization.md 
-      - name: Verify network capacity and throughput for clients
-        href: verify-network-capacity-throughput-clients.md
-      - name: Performance insights
-        href: analyze-improve-data-query-performance.md
-    - name: Compliance and data privacy 
-      href: wp-compliance-data-privacy.md
-    - name: GDPR - Responding to DSR requests
-      items:
-      - name: About GDPR
-        href: about-gdpr.md
-      - name: System-generated logs 
-        href: powerapps-gdpr-dsr-guide-systemlogs.md
-      - name: Data integrations for Dataverse 
-        href: data-integration-gdpr-dsr-guide.md
-      - name: Power Apps customer data 
-        items:
-        - name: Overview
-          href: powerapps-gdpr-dsr-guide.md        
-        - name: Export data 
-          href: powerapps-gdpr-export-dsr.md
-        - name: Delete data 
-          href: powerapps-gdpr-delete-dsr.md
-        - name: Dataverse customer data 
-          href: common-data-service-gdpr-dsr-guide.md
-    - name: Datacenter regions
-      href: new-datacenter-regions.md
-      items: 
-      - name: Australia
-        href: about-microsoft-cloud-australia.md
-      - name: Canada
-        href: about-microsoft-cloud-canada.md
-      - name: China
-        items:
-        - name: About China datacenter
-          href: about-microsoft-cloud-china.md
-        - name: Business applications availability
-          href: business-applications-availability-china.md
-        - name: 21Vianet support
-          href: 21vianet-support.md
-      - name: France
-        href: about-microsoft-cloud-france.md
-      - name: Germany
-        href: about-microsoft-cloud-germany.md
-      - name: India
-        href: about-microsoft-cloud-india.md
-      - name: Japan
-        href: about-microsoft-cloud-japan.md
-      - name: U.S Government 
-        items: 
-        - name: Dynamics 365 service description
-          href: microsoft-dynamics-365-government.md
-        - name: Power Apps service description
-          href: powerapps-us-government.md
-      - name: Geo to geo migrations
-        href: geo-to-geo-migrations.md    
-    - name: Partners
-      items:
-      - name: Add a Partner of Record
-        href: add-partner-record-subscription.md
-      - name: "For partners: get credit when customers subscribe"
-        href: partners-credit-when-customers-subscribe-dynamics-365.md
-      - name: "For partners: Delegated Administrator"
-        href: for-partners-delegated-administrator.md
-  - name: Administer Power Apps
-    href: admin-guide.md
-  - name: Administer Power Automate
-    href: about-flow-guide.md
-  - name: Administer Power BI
-    href: about-powerbi-guide.md
-  - name: Administer Power Virtual Agents
-    href: about-power-virtual-agents.md
-  - name: Administer customer engagement apps in Dynamics 365    
-    items:
-    - name: Overview
-      href: about-ce-guide.md
-    - name: Sales territories
-      href: set-up-sales-territories-organize-business-markets-geographical-area.md 
-    - name: Define subjects to categorize cases, products, and articles
-      href: define-subjects-categorize-cases-products-articles.md
-    - name: Enhanced service level agreements
-      href: enhanced-service-level-agreements.md 
-    - name: Manage product catalog configuration
-      href: manage-product-catalog-configuration.md 
-    - name: Rich text experience for appointment activities
-      href: enable-rich-text-experience.md
-  - name: Important changes (deprecations) coming
-    href: ../important-changes-coming.md
-  - name: International availability
-    href: ../availability.md
-  - name: Adoption best practices
-    href: ../guidance/adoption/methodology.md
-  - name: Center of Excellence (CoE) Kit
-    href: ../guidance/coe/starter-kit.md
+          href: about-ce-guide.md
+        - name: Sales territories
+          href: set-up-sales-territories-organize-business-markets-geographical-area.md
+        - name: Define subjects to categorize cases, products, and articles
+          href: define-subjects-categorize-cases-products-articles.md
+        - name: Enhanced service level agreements
+          href: enhanced-service-level-agreements.md
+        - name: Manage product catalog configuration
+          href: manage-product-catalog-configuration.md
+        - name: Rich text experience for appointment activities
+          href: enable-rich-text-experience.md
+    - name: Important changes (deprecations) coming
+      href: ../important-changes-coming.md
+    - name: International availability
+      href: ../availability.md
+    - name: Adoption best practices
+      href: ../guidance/adoption/methodology.md
+    - name: Center of Excellence (CoE) Kit
+      href: ../guidance/coe/starter-kit.md

@@ -1,20 +1,15 @@
 ---
-title: CommandBar control reference (preview) | Creator Kit
+title: CommandBar control reference | Creator Kit
 description: Learn about the details and properties of the CommandBar control in the Creator Kit.
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 11/02/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist
@@ -22,18 +17,12 @@ contributors:
 
 # :::no-loc text="CommandBar"::: control (preview)
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to input commands.
 
 > [!NOTE]
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/CommandBar).
 
 :::image type="content" source="media/command-bar.png" alt-text="CommandBar control.":::
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Description
 
@@ -71,6 +60,12 @@ Each item uses the following schema to visualize data in the component.
 | `ItemTopDivider` | Render a divider at the top of the section. |
 | `ItemDivider` | Render the item as a section divider - or if the item is a header (ItemHeader = true), then controls whether to render a divider at the bottom of the section. |
 | `ItemParentKey` | Render the option as child item of another option. |
+
+> [!NOTE]
+> - `ItemIconColor` will override the component's Theme value and ignore other state colors (e.g., disabled).
+> - `ItemHeader` and `ItemDivider` must be set to true to render as a divider. If set to false, it expects other values and will render blank.
+
+## Example
 
 Example Power Fx formula for basic `Items`:
 

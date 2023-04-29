@@ -1,24 +1,15 @@
 ---
 title: "Content security policy"
 description: "Use content security policy to prevent clickjacking in Power Apps."  
-ms.date: 09/02/2022
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.date: 01/31/2023
 ms.topic: conceptual
-applies_to: 
-  - "Dynamics 365 (online)"
-ms.assetid: 
-caps.latest.revision: 63
 author: JesseParsons
 ms.subservice: admin
 ms.author: jeparson
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
 ---
 # Content security policy
 
@@ -35,6 +26,9 @@ Each component of the CSP header value controls the assets that can be downloade
 | [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self'` | Yes |
 
 This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self';`. In our roadmap, we have the ability to modify currently non-customizable headers.
+
+### Prerequisites
+- For Dynamics 365 Customer Engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 Customer Engagement (on-premises), version 9.1 or later version.
 
 ## Configuring CSP
 
@@ -69,9 +63,13 @@ Leaving the default directive toggled on uses the default value specified in the
 
 ![Setting custom CSP directives](media/csp-default-directive.png "Setting custom CSP directives")
 
+### Common configurations
+For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-integration/teams-integration), add the following to `frame-ancestors`:
+- `https://teams.microsoft.com/`
+- `https://msteamstabintegration.dynamics.com/`
+
 ### Important considerations
-- Turning off the default directive doesn't send the default value as part of the response. For example, using custom `frame-ancestors` wouldn't send `'self'` as part of the directive. Admins would need to manually add `'self'` to the list.
-- Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
+Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
 
 ## Examples
 

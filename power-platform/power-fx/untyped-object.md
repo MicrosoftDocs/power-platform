@@ -5,17 +5,15 @@ author: jorisdg
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: jorisde
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 contributors:
   - jorisdg
-  - tapanm-msft
+  - mduelae
 ---
 # Untyped object data type (experimental)
 
@@ -46,11 +44,11 @@ The following table lists the data types and corresponding functions to convert 
 
 | Data Type | Function  | Description |
 | --- | --- | --- |
-| Boolean | [Boolean()](./reference/function-boolean.md) | When converting **untyped object** to **boolean**, the value may need to be converted to [text](./reference/function-text.md) or [number](./reference/function-value.md) first if the **untyped object** represents the **boolean** in those types. |
+| Boolean | [Boolean()](./reference/function-boolean.md) | When converting **untyped object** to **boolean**, the underlying value has to represent a boolean or a type that can be automatically converted (such as a string "true"). |
 | Color | [ColorValue() or RGBA()](./reference/function-colors.md) | Colors can be represented in Cascading Style Sheet (CSS) color definition notation as a string, or as individual RGBA components. The **untyped object** can be converted directly from a Cascading Style Sheet (CSS) color definition string using the [ColorValue()](./reference/function-colors.md) function, or from individual RGBA [numbers](./reference/function-value.md) into color using the [RGBA()](./reference/function-colors.md) function. |
-| Currency, Number | [Value()](./reference/function-value.md) | Numbers in **untyped object** can be directly converted to numbers. However, if the original **untyped object** value was represented as text, for example as `ParseJSON("""123""")` then it must first be converted to [text](./reference/function-text.md) before converting to a number. |
+| Currency, Number | [Value()](./reference/function-value.md) | When converting **untyped object** to **number**, the underlying value has to represent a number or a type that can be automatically converted (such as a string "123.456"). |
 | Date, DateTime, Time | [DateValue(), TimeValue() or DateTimeValue()](./reference/function-datevalue-timevalue.md) | Date, time and datetime can be directly converted from **untyped object** to their respective type, when represented in ISO 8601 format. Other formats must first be converted to text using the [Text()](./reference/function-text.md) function and then passed into the [DateValue(), TimeValue() or DateTimeValue()](./reference/function-datevalue-timevalue.md) function that by default will use the language of the current user's settings to interpret the date and time. |
-| GUID | [GUID()](./reference/function-guid.md) | An **untyped object** can be directly converted to GUID. |
+| GUID | [GUID()](./reference/function-guid.md) | An **untyped object** can be directly converted to GUID if the underlying object represents a GUID, or if it represents a string. |
 | HyperLink, Image, Media | [Text()](./reference/function-text.md) | These data types are text data types, and can be converted to text and then used in Power Fx. |
 | Choice, Two Option | [Switch() or If()](./reference/function-if.md) | **Choices** and **two options** are presented as localized strings in Power Fx. **Choices** are backed by a number and **two options** as booleans. There's no direct conversion from boolean, number or string to a **choice** or **two option**, but the [Switch()](./reference/function-if.md) or [If()](./reference/function-if.md) functions can be used on the boolean, text or number value to correctly assign the **choice** or **two option** value. |
 | Record | n/a | There's no direct conversion from **untyped object** to a record structure, but individual fields can be retrieved from the **untyped object** to create a new record. |
@@ -82,21 +80,41 @@ untyped.'my-field'
 
 ## Arrays
 
-An **untyped object** variable can contain an array. Even though the array could be either an array of records or array of simple types, converting the **untyped object** array to a table using the [Table()](./reference/function-table.md) function will always result in a single-column table of **untyped objects**.
+An **untyped object** variable can contain an array. Even though the array could be either an array of records or array of simple types, converting the **untyped object** array to a table using the [Table()](./reference/function-table.md) function will always result in a single-column table of **untyped objects**. Functions such as [ForAll()](./reference/function-forall.md) and [Index()](./reference/function-first-last.md) do not require you to first create a **Table()** and as result don't require you to use the single-column `Value` field,
 
-For example, to get the second number in an array of **untyped object** containing number values ( `[1, 2, 3]` ), the following formula can be used to retrieve the second row in the table and convert the single-column `Value` column to a number:
-
-```powerapps-dot
-Value( Index( Table(UOArray), 2 ).Value )
-```
-
-For an array of records that have a text column called `Field`, the **Table()** function will convert the **untyped object** array of records to a single-column table of **untyped object**. To get the `Field` column, first retrieve the single-column `Value` to get the **untyped object**, then access the `Field` column:
+For example, to get the second number in an array of **untyped object** containing number values ( `[1, 2, 3]` ), the following formula can be used to retrieve the second row in the table and convert column to a number:
 
 ```powerapps-dot
-Text( Index( Table(UORecordArray), 2 ).Value.Field )
+Value( Index( UOArray, 2 ) )
 ```
 
-To convert an array of records to a typed table, you can use the [ForAll()](./reference/function-forall.md) function to get the single-column `Value` representing the **untyped object** record, and converting each individual field:
+If the **untyped object** was converted to a **Table()** first, the second row in the result single-column table is a `Value` column containing the **untyped object**:
+
+```powerapps-dot
+Value( Index( Table( UOArray ), 2 ).Value )
+```
+
+For an array of records that have a text column called `Field`, the same logic applies. The **untyped object** can be accessed directly, or if using the **Table()** function will result in a single-column table of **untyped object**.
+
+The `Field` column can be access directly from the **untyped object** returned by the **Index()** function.
+
+```powerapps-dot
+Text( Index( UORecordArray, 2 ).Field )
+```
+
+When using the **Table()** function, first retrieve the single-column `Value` column to get the **untyped object**, then access the `Field` column:
+
+```powerapps-dot
+Text( Index( Table( UORecordArray ), 2 ).Value.Field )
+```
+
+To convert an array of records to a typed table, you can use the [ForAll()](./reference/function-forall.md) function and convert each individual field.
+
+```powerapps-dot
+ForAll( UORecordArray, { FirstField: Value(ThisRecord.FirstField), SecondField: Text(ThisRecord.SecondField) } )
+```
+
+If the **untyped object** is first converted to a table, again, the resulting single-column table of **untyped object** will require you to use the `Value` column to get the fields.
 
 ```powerapps-dot
 ForAll( Table(UORecordArray), { FirstField: Value(ThisRecord.Value.FirstField), SecondField: Text(ThisRecord.Value.SecondField) } )

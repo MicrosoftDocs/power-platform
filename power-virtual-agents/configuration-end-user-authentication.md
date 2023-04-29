@@ -3,12 +3,13 @@ title: Configure user authentication
 description: Configure authentication with your identity provider to enable users to sign in when having a bot conversation.
 keywords: "Authentication, IdP, PVA, AAD"
 ms.date: 08/18/2022
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewr: micchow
 ms.custom: authentication, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -46,9 +47,9 @@ Power Virtual Agents supports the following authentication providers:
 
 Power Virtual Agents supports several authentication options. Choose the one that meets your needs.
 
-To change your bot's authentication settings, go to **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
+To change your bot's authentication settings, in the navigation menu under **Settings**, go to the **Security** tab and select the **Authentication** card.
 
-:::image type="content" source="media/configuration-end-user-authentication/security-authentication.png" alt-text="Screenshot of the Security page under the Manage menu, highlighting the Authentication card.":::
+:::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of the Security page under the Settings menu, highlighting the Authentication card.":::
 
 The following authentication options are available:
 
@@ -130,7 +131,7 @@ Your bot's authentication and **Require user to sign in** setting in combination
   
   - If the service provider is **Generic OAuth2**, you can turn **Require users to sign in** on or off. When it's turned on, a user who signs in can chat with the bot. You can't control which specific users in your organization may chat with the bot using bot sharing.
 
-When a bot's authentication setting can't control who can chat with it, if you select **Share** on the bot's homepage a message informs you that anyone can chat with your bot.
+When a bot's authentication setting can't control who can chat with it, if you select **Share** on the bot's overview page a message informs you that anyone can chat with your bot.
 
 :::image type="content" source="media/configuration-end-user-authentication/auth-allow-everyone-chat-with-bot.PNG" alt-text="Screenshot of a message stating everyone in the organization can chat with the bot because of its authentication setting.":::
 
@@ -167,7 +168,7 @@ The following are all the fields you may see when you're configuring manual auth
 
 ## Remove the authentication configuration
 
-1. Edit your bot and select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
+1. In the navigation menu, under **Settings**, select **Security**. Then select the **Authentication** card.
 1. Select **No authentication**.
 1. Publish the bot.
 

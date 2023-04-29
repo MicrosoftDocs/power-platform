@@ -1,5 +1,10 @@
 ### Examples
 
+The following examples show the use of the `pac application list` command.
+
+- [Application List](#application-list)
+- [Application List JSON Export](#application-list-json-export)
+
 #### Application List
 
 This example lists all available applications in the specified environment.

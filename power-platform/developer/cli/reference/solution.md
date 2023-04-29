@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI solution command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI solution command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 10/13/2022
+author: snizar007
+ms.author: snizar
+ms.date: 4/19/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -28,7 +28,7 @@ Commands for working with Dataverse solution projects
 |---------|---------|
 |[pac solution add-license](#pac-solution-add-license)|Add license and plan info to solution|
 |[pac solution add-reference](#pac-solution-add-reference)|Adds a reference from the project in the current directory to the project at 'path'|
-|[pac solution add-solution-component](#pac-solution-add-solution-component)|Adds a solution component to the target unmanaged solution in Dataverse.|
+|[pac solution add-solution-component](#pac-solution-add-solution-component)|Add solution component(s) to the target unmanaged solution in Dataverse.|
 |[pac solution check](#pac-solution-check)|Upload a Dataverse Solution project to run against the Power Apps Checker Service|
 |[pac solution clone](#pac-solution-clone)|Create a solution project based on an existing solution in your Organization|
 |[pac solution create-settings](#pac-solution-create-settings)|Create a settings file from solution zip or solution folder.|
@@ -82,7 +82,7 @@ The path to the referenced project
 
 ## pac solution add-solution-component
 
-Adds a solution component to the target unmanaged solution in Dataverse.
+Add solution component(s) to the target unmanaged solution in Dataverse.
 
 [!INCLUDE [solution-add-solution-component-intro](includes/solution-add-solution-component-intro.md)]
 
@@ -150,9 +150,13 @@ Use one of these values:
 - `SouthAmerica`
 - `UnitedKingdom`
 - `France`
+- `SouthAfrica`
 - `Germany`
 - `UnitedArabEmirates`
 - `Switzerland`
+- `Norway`
+- `Singapore`
+- `Korea`
 - `USGovernment`
 - `USGovernmentL4`
 - `USGovernmentL5DoD`
@@ -354,12 +358,6 @@ Import the solution into Dataverse.
 
 
 ### Optional Parameters
-
-#### `--activate-flows` `-af`
-
-Turn on workflows specified in the deployment settings file using a specified user
-
-This parameter requires no value. It is a switch.
 
 #### `--activate-plugins` `-ap`
 
@@ -589,7 +587,7 @@ Publishes all customizations
 
 #### `--async` `-a`
 
-Publishes solution asynchronously
+Publishes all customizations asynchronously
 
 This parameter requires no value. It is a switch.
 
@@ -638,7 +636,7 @@ Max asynchronous wait time in minutes. Default value is 60 minutes
 
 #### `--packagetype` `-p`
 
-When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'
+When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Both'
 
 #### `--processCanvasApps` `-pca`
 
@@ -802,15 +800,20 @@ Revision version for solution
 
 **Note**: The value must be a positive integer
 
+#### `--solutionPath` `-sp`
+
+Path to Dataverse solution directory or Solution.xml file.
+
 #### `--strategy` `-s`
 
 Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"
 
 Use one of these values:
 
-- `gittags`
-- `filetracking`
-- `solution`
+- `None`
+- `GitTags`
+- `FileTracking`
+- `Solution`
 
 [!INCLUDE [solution-version-remarks](includes/solution-version-remarks.md)]
 

@@ -7,8 +7,8 @@ ms.date: 9/22/2020
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "teams, publication, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -30,7 +30,7 @@ Requirement | Default value | Suggestions
 Privacy statement | [Empty privacy statement and terms of use](#empty-privacy-statement-and-terms-of-use) | You should work with your manager or IT department to determine what you want to say in your privacy statement. This should follow your organization's privacy practices.
 Terms of use | [Empty privacy statement and terms of use](#empty-privacy-statement-and-terms-of-use) | Work with your manager or IT department to define the terms of use. Typically this would include any limitations you might have on how the information can be used. See [Teams privacy policy guidelines](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist#privacy-policy).
 Developer website | Link to the [Power Virtual Agents overview page](https://go.microsoft.com/fwlink/?linkid=2138949) | You could include a link to your Office profile, or a SharePoint site for your team.
-Developer's name | *Powered by Power Virtual Agents* | You should include a name of someone who can be contacted in case someone has questions about the bot.
+Developer's name | _Powered by Power Virtual Agents_ | You should include a name of someone who can be contacted in case someone has questions about the bot.
 
 ## Empty privacy statement and terms of use
 

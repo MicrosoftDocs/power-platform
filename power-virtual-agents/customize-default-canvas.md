@@ -7,12 +7,16 @@ ms.date: 04/19/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "customization, ce06102020"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Customize the look and feel of the bot's default canvas
+
+[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
+
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 >
@@ -45,11 +49,11 @@ Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (w
 ## Change the bot name and icon
 
 > [!IMPORTANT]
-> If your bot is connected to [Omnichannel for Customer Service](configuration-hand-off-omnichannel.md), the bot's name is defined by the **Display name** property in the Azure portal registration. 
+> If your bot is connected to [Omnichannel for Customer Service](configuration-hand-off-omnichannel.md), the bot's name is defined by the **Display name** property in the Azure portal registration.
 
 You can change the bot's name and icon. This will affect the icon in all channels where you publish your bot.
 
-1. Select **Manage** on the side pane, and then go to the **Details** tab.
+1. In the navigation menu, under **Settings**, select **Details**.
 
 1. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons)
 
@@ -60,22 +64,30 @@ You can change the bot's name and icon. This will affect the icon in all channel
 > [!IMPORTANT]
 > After updating your bot's icon, it may take up to 24 hours for the new icon to appear everywhere.
 
-## Retrieve bot ID and tenant ID details
+## Retrieve token endpoint
 
 To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details.
 
-You can get the Bot ID and Tenant ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters).
+1. In the navigation menu under **Settings**, select **Channels**.
+
+1. Select **Mobile app**.
+
+    :::image type="content" source="media/customize-default-canvas/channel-mobile-app.png" alt-text="Screenshot of the mobile app channel tile.":::
+
+1. Next to **Token Endpoint**, select **Copy**.
+
+    :::image type="content" source="media/customize-default-canvas/token-endpoint.png" alt-text="Screenshot of the endpoint token id.":::
 
 ## Customize the default canvas (simple)
 
-You can configure how the chat canvas looks with some simple CSS and JavaScript styling options.
+Configure how the chat canvas looks with some simple CSS and JavaScript styling options.
 
 First, you need to configure where you're deploying your bot canvas.
 
 1. [Create and publish a bot](fundamentals-get-started.md).
 
-1. Copy and paste the HTML code below and save it as *index.html*.  
-    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
+1. Copy and paste the HTML code below and save it as _index.html_.  
+    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You'll still need to add your token endpoint.  
 
     ```HTML
     <!DOCTYPE html>
@@ -144,9 +156,22 @@ First, you need to configure where you're deploying your bot canvas.
                hideUploadButton: true
             };
 
-            // Add your BOT ID below 
-            var BOT_ID = "<ENTER YOUR BOT ID>"; 
-            var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+            
+            var theURL = "<YOUR TOKEN ENDPOINT>";
+          
+            var environmentEndPoint = theURL.slice(0,theURL.indexOf('/powervirtualagents'));
+            var apiVersion = theURL.slice(theURL.indexOf('api-version')).split('=')[1];
+            var regionalChannelSettingsURL = `${environmentEndPoint}/powervirtualagents/regionalchannelsettings?api-version=${apiVersion}`; 
+            
+            var directline;
+                fetch(regionalChannelSettingsURL)
+                    .then((response) => {
+                        return response.json();
+                        })
+                    .then((data) => {
+                        directline = data.channelUrlsById.directline;
+                        })
+                    .catch(err => console.error("An error occurred: " + err));
         
           fetch(theURL)
                 .then(response => response.json())
@@ -154,6 +179,7 @@ First, you need to configure where you're deploying your bot canvas.
                     window.WebChat.renderWebChat(
                         {
                             directLine: window.WebChat.createDirectLine({
+                                domain: `${directline}v3/directline`,
                                 token: conversationInfo.token,
                             }),
                             styleOptions
@@ -168,12 +194,13 @@ First, you need to configure where you're deploying your bot canvas.
     </html>
     ```
 
-1. In the *index.html* file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
+1. In the _index.html_ file you created, enter your token endpoint at the line `var theURL = "<YOUR TOKEN ENDPOINT>";`.
 
-1. Open *index.html* using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
+1. Open _index.html_ using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
 
 1. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (").
+
+    If you encounter problems, make sure you've published your bot, and that your token endpoint has been inserted in the correct place. It should be after the equals sign (=) at the line `var theURL = "<YOUR TOKEN ENDPOINT>"`, and surrounded by double quotation marks (").
 
 ### Customize the bot icon, background color, and name
 
@@ -185,7 +212,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 #### Change the bot icon
 
-1. Update the *index.html* file with the following sample code:
+1. Update the _index.html_ file with the following sample code:
 
     ```js
     const styleOptions = {
@@ -202,7 +229,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 #### Change the background color
 
-1. Update the *index.html* file with following sample code:
+1. Update the _index.html_ file with following sample code:
 
     ```js
     const styleOptions = {
@@ -216,7 +243,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 #### Change the bot name
 
-1. Update the `<h1>` text in the *index.html* file with the following:
+1. Update the `<h1>` text in the _index.html_ file with the following:
 
     ```HTML
     <body>

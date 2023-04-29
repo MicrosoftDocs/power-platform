@@ -1,14 +1,14 @@
 ---
 title: "Quickstart: Create and deploy a bot in Microsoft Teams"
 description: "Create and publish a Power Virtual Agents bot in Teams with this quickstart guide."
-keywords: "PVA, teams, quickstart"
+keywords: "PVA, Teams, quickstart"
 ms.date: 01/25/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
-ms.custom: fundamentals, teams, intro-inernal
+ms.custom: fundamentals, teams, intro-internal
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -107,7 +107,7 @@ Now that the bot is created, we can go ahead and start adding content to the bot
 
 ### Build an employee time-off topic for common time-off queries
 
-Go to the topic list by selecting **Topics** in the side pane.
+Go to the topic list by selecting **Topics** in the navigation menu.
 
 A bot comes with a collection of topics that defines the bot's interaction with end users. The core of building a bot in Power Virtual Agents is to build topics that can respond to different user inquiries. Let's build a topic to answer employee questions about taking time-off.
 
@@ -252,7 +252,7 @@ Now you can let the employee know the experts have been notified of their reques
 
 1. Save the topic.
 
-Now that Bob has the time-off topic created, he can save the topic and add other topics that match the need for his HR bot to answer questions that Contoso employees might have.
+Now that the time-off topic has been created, Bob can save the topic and add other topics that match the need for the HR bot to answer questions that Contoso employees might have.
 
 > [!TIP]
 > Don't forget to test your bot and ensure it is working as expected for the best employee experience.
@@ -262,7 +262,7 @@ Now that Bob has the time-off topic created, he can save the topic and add other
 
 Once the topics are constructed and the bot is tested, you are ready to publish the bot. Publishing the bot will make the latest bot content updates available to end users.
 
-1. Select the **Publish** icon in the side pane.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Publish**.
 
@@ -275,7 +275,7 @@ You'll need to follow a few more actions to actually make the bot available to e
 
 Before making the bot available to employees in your organization, there is an option to add the bot in Teams for yourself to chat with and experience it like any employee would.
 
-On the **Publish** tab in the side pane, there is an option to **Open the bot**.
+On the **Publish** page, there is an option to **Open the bot**.
 
 This will give you the chance to add your bot in Teams and chat with it.
 
@@ -283,7 +283,7 @@ This will give you the chance to add your bot in Teams and chat with it.
 
 Now you're ready to make the bot discoverable for other employees in the Teams app store, so they can install and chat with it.
 
-1. Go to the **Publish** page from the side pane.
+1. In the navigation menu, select **Publish**.
 
 1. Select **Share the bot** which will open a pane with some customization options.
 
@@ -323,13 +323,13 @@ This section of the guide looks at how the experience might be for a team member
 
 Melissa can easily find the bot you built in the Teams app store to install and chat with it in Teams.
 
-Depending on where the bot was shared, she can find the bot in the **Built by your colleagues** section or the **Built by your org** section. To find the bot in the **Built by your org** section, it's a pre-requisite that the bot has been approved by an admin.
+Depending on where the bot was shared, Melissa can find the bot in the **Built by your colleagues** section or the **Built by your org** section. To find the bot in the **Built by your org** section, it's a pre-requisite that the bot has been approved by an admin.
 
 Melissa selects the chatbot's app tile, and then selects **Add for me**, as in the following screenshot:
 
 :::image type="content" source="../media/fundamentals-get-started/get-started-add-bot.png" alt-text="Teams opens the HR Support Bot with an option to Add for me so the user can start talking with it.":::
 
-This will add the bot in the Teams side bar and open it for her to chat.
+This will add the bot in the Teams side bar and open it for Melissa to chat.
 
 The **Greeting** topic which is available as a [default or "system" topic](authoring-create-edit-topics-teams.md) triggers automatically to welcome Melissa.
 
@@ -338,27 +338,25 @@ The **Greeting** topic which is available as a [default or "system" topic](autho
 
 ### Employee chats with the bot to ask about time-off
 
-Melissa needs time-off in the summer for personal reasons.
+Melissa needs time-off in the summer for personal reasons and enters *Need time-off information*.
 
-She enters *Need time-off information*.
+An option for **Paid vacation** appears and Melissa begins to get some initial information by selecting **Paid vacation**.
 
-She sees an option for **Paid vacation** and begins there to get some initial information, so she selects **Paid vacation**.
-
-She is presented the website to get more information on paid time-off.
+A website is presented to get more information on paid time-off.
 
 The bot then gathers customer satisfaction data and ends the conversation.
 
 :::image type="content" source="../media/fundamentals-get-started/get-started-chat.png" alt-text="The user can talk with the bot just like a normal Teams chat.":::
 
-After reviewing the HR site for paid time-off, she understands that she needs extended leave since she will be gone for more than three months. She returns to the bot and types *I need extended leave*.
+After reviewing the HR site for paid time-off, Melissa understands the need for extended leave after being gone for more than three months. Melissa returns to the bot and types *I need extended leave*.
 
-The bot lets Melissa know that an HR expert is needed for the extended leave request and asks Melissa for a description of her issue.
+The bot lets Melissa know that an HR expert is needed for the extended leave request and asks Melissa for a description of the issue.
 
 The bot then informs Melissa that an expert has been notified, who will be reaching out shortly.
 
 ***Now that the request has been made, let's go back to the bot author's (that's you) view and go to the HR team's experts channel.***
 
-Here we see that the bot ran the flow you added earlier and posted Melissa's request to the channel. HR experts in the channel can now reach out to Melissa to understand more on her extended leave request.
+Here we see that the bot ran the flow you added earlier and posted Melissa's request to the channel. HR experts in the channel can now reach out to Melissa to understand more on the extended leave request.
 
 :::image type="content" source="../media/fundamentals-get-started/get-started-channel.png" alt-text="The bot output a message into the Teams channel about Extended leave.":::
 
