@@ -2,13 +2,10 @@
 title: "Agent transcripts analysis"
 description: "Set of best practices based on agent transcript analysis to improve  the deflection rate of a Power Virtual Agents chatbot"
 author: athinesh
-
 ms.date: 1/20/2023
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: athinesh
-ms.collection: virtual-agent
 ---
 # Agent transcript analysis
 

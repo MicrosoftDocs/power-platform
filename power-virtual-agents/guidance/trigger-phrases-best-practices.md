@@ -2,13 +2,10 @@
 title: "Trigger phrases best practices"
 description: "Best practices for topic trigger phrases in Power Virtual Agents"
 author: HenryJammes
-
 ms.date: 03/21/2023
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: hejammes
-ms.collection: virtual-agent
 ---
 
 # Optimizing trigger phrases and Natural Language Understanding

@@ -2,13 +2,10 @@
 title: "Topics in Power Virtual Agents"
 description: "Overview of the different topic types in Power Virtual Agents"
 author: HenryJammes
-
 ms.date: 02/22/2023
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: hejammes
-ms.collection: virtual-agent
 ---
 
 # Topics in Power Virtual Agents

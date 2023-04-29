@@ -2,13 +2,10 @@
 title: "Deflection topic enrichment analysis"
 description: "Set of best practices based on topic enrichment to improve the deflection rate of a Power Virtual Agents chatbot"
 author: athinesh
-
 ms.date: 1/20/2023
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: athinesh
-ms.collection: virtual-agent
 ---
 
 # Topic enrichment analysis  

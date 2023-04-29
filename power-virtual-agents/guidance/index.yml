@@ -7,8 +7,6 @@ metadata:
   title: Power Virtual Agents guidance documentation
   description: Provides best practice guidance information for Power Virtual Agents.
   services: service
-
-  ms.subservice: guidance
   ms.topic: landing-page
   ms.collection: collection
   author: HenryJammes
@@ -26,7 +24,7 @@ landingContent:
           - text: Topics best practices
             url: topics-in-pva.md
           - text: Trigger phrases best practices
-            url: trigger-phrases-best-practices.md  
+            url: trigger-phrases-best-practices.md
           - text: slot filling best practices
             url: slot-filling-best-practices.md
 
@@ -41,13 +39,13 @@ landingContent:
             url: custom-analytics-strategy.md
 
   # Card
-  - title: How-to articles
+  - title: Related content
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: reference
         links:
-          - text: Embed a chatbot in Power Pages
-            url: /power-pages/guidance/integrate-pva.md
-          - text: Embed a chatbot in Power Apps
-            url: /power-apps/maker/canvas-apps/add-ai-chatbota.md  
-          - text: Search and return results from Dataverse
-            url: /power-virtual-agents/advanced-flow-list-of-results.md  
+          - text: Power Platform guidance center
+            url: /power-platform/guidance
+          - text: Power Apps guidance center
+            url: /power-apps/guidance
+          - text: Power Pages guidance center
+            url: /power-pages/guidance

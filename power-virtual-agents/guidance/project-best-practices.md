@@ -2,13 +2,10 @@
 title: "Power Virtual Agents project best practices"
 description: "Set of best practices on how to start a Power Virtual Agents project"
 author: nesrivastava
-
 ms.date: 11/22/2022
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: nesrivastava
-ms.collection: virtual-agent
 ---
 
 # Engagement Principles

@@ -2,13 +2,10 @@
 title: "Measuring chatbot engagement"
 description: "Measuring chatbot engagement in Power Virtual Agents"
 author: HenryJammes
-
 ms.date: 04/28/2023
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: hejammes
-ms.collection: virtual-agent
 ---
 
 # Measuring chatbot engagement

@@ -2,13 +2,10 @@
 title: "Using the Fallback topic"
 description: "Using the Fallback topic in Power Virtual Agents"
 author: HenryJammes
-
 ms.date: 02/22/2023
-ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: hejammes
-ms.collection: virtual-agent
 ---
 
 # Using the Fallback topic
