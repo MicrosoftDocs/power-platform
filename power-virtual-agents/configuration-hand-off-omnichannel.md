@@ -29,7 +29,7 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 - Have a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 - Environments:
   - Your bot environment and Omnichannel for Customer Service environment must be in the same [geographical region](./data-location.md#data-locations).
-  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [Asia, Australia, Canada, Europe, Switzerlandindia, United Kingdom, or United States geographies](./data-location.md#data-locations).
+  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [Asia, Australia, Canada, Europe, India, Switzerland, United Kingdom, or United States geographies](./data-location.md#data-locations).
 - [Register an application with Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application).
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
 
