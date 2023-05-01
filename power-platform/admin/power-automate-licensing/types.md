@@ -128,6 +128,8 @@ Here are a few things of which to be aware during the transition period.
 
 1. These transition period limits are applied at the flow level during the transition period. Additionally, a separate per user level limit of 1,000,000 actions is applied during the transition period to ensure users do not go above 1M actions across all their flow runs in a day. After the transition period ends, the actual limits will be applied at user level for per user plans and flow level for per flow plans.
 
+1. During transition period, manual flows do not use the flow owners/flow invokers limits. Every manual flow has a performance profile of Medium(100,000 requests/flow/24 hours). After transition peiod, manual flows will use the request limits of invoking user. 
+
 1. Since the limits are more generous during the transition period, [stacking of user licenses isn't supported](../api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
 
 1. Power Platform requests capacity add-on packs are not assignable to users or flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
@@ -242,7 +244,9 @@ Yes. Flows included in the [COE Starter Kit](../../guidance/coe/starter-kit.md) 
 
 #### Can I use service principal in flows, and does it count against my request limits?
 
-Yes, flows whose owner is a service principal will consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md#non-licensed-user-request-limits). These limits are only applicable if the owner of the flow is a service principal. These limits are not applicable if the flow just uses a service principal in one of the actions.
+Yes, flows whose owner is a service principal will consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md#non-licensed-user-request-limits). These limits are only applicable if the owner of the flow is a service principal. These limits are not applicable if the flow just uses a service principal in one of the actions. Manual flows(button flows that are shared with run only users/Power Apps invoked flows) will use run only user's request limits even when the owner of the flow is a service principal. The run only users must have a premium Power Automate license if the flow uses premium connectors. During transition period, manual flows can use up to 100,000 requests/ flow/24 hours. 
+
+Limits for automated/scheduled flows: 
 
  - Service principal flows running [in context of D365 applications](faqs.md#what-power-automate-capabilities-are-included-in-dynamics-365-licenses)) listed in the [table](../api-request-limits-allocations.md#non-licensed-user-request-limits) get 500,000 base requests  + 5,000 requests accrued per USL up to 10,000,000 maximun pooled at the tenant level. If a tenant has 1000 D365 licenses, that tenant has a pool of 5,500,000 requests avaialble for all Power platform resources like Service principal flows, Dataverse requests etc per 24 hours. If a tenant has 2500 D365 licenses, that tenant has a pool of 10,000,000 requests avaialble for all Power platform resources like Service principal flows, Dataverse requests etc per 24 hours.
 
