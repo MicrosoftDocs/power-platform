@@ -5,9 +5,10 @@ author: danamartens
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/02/2022
+ms.date: 05/01/2023
 ms.subservice: admin
-ms.author: kvivek
+ms.author: dmartens
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
