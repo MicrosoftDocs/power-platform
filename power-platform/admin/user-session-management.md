@@ -4,11 +4,11 @@ description: "Security enhancements: User session and access management"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/02/2021
-author: jimholtz
+ms.date: 05/01/2023
+author: alaug 
 ms.subservice: admin
-ms.author: jimholtz
-ms.reviewer: jimholtz
+ms.author: alaug
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
