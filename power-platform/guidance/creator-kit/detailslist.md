@@ -495,6 +495,11 @@ The number of records label can be set to an expression similar to:
 grid.TotalRecords & " record(s)  " & Text(CountRows(grid.SelectedItems)+0) & " selected" 
 ```
 
+#### Show the top of the next page
+This is implemented using the 'SetFocusOnRow' event. If you had the InputEvent property bound to `ctxGridEvent`, on the next page button's OnSelect property you would use:
+`UpdateContext({ctxGridEvent:"LoadNextPageSetFocusOnRow" & Text(Rand())});`
+
+
 ### Input Events
 
 The `InputEvent` property can be set to one or more of the following:
