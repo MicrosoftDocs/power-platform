@@ -4,7 +4,7 @@ description: About creating and manage environments in the Power Platform admin 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/20/2023
+ms.date: 04/27/2023
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -127,7 +127,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Currency     | The base currency used for reporting.         |
    |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. You must have an appropriate Dynamics 365 license to select **Yes**. If you don't select **Yes** at the time of database provisioning, you won’t be able to make this change later nor be able to install Dynamics 365 apps on this environment. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
-   |Security group | Select a security group to restrict access to this environment. This field is required.<br><br>If you want open access, you can select **None**.|
+   |Security group | Select a security group to restrict access to this environment. For open access, select **None**.<br><br>This field is now required.|
    
 ## Create an environment without a database 
 You can create an environment without a database and use your own data store.
