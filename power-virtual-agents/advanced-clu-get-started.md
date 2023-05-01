@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 
 ---
 
-# Get started with language understanding (preview)
+# Get started with cognitive language understanding (preview)
 
 This topic includes the step-by-step procedures you need to get started with [cognitive language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
 
