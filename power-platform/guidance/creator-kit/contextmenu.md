@@ -4,7 +4,7 @@ description: Learn about the details and properties of the ContextMenu control i
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 11/02/2022
+ms.date: 05/01/2023
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
