@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Entity registration for cognitive language understanding (preview)
 
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 This article discusses adding cognitive language understanding (CLU) entities to Power Virtual Agents bots. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). 
 
 To setup your environment for mapping CLU entities to Power Virtual Agents bots, see [Get started with language understanding](advanced-clu-get-started.md).
