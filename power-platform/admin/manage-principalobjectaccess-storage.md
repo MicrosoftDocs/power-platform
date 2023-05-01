@@ -1,14 +1,15 @@
 ---
 title: "Manage PrincipalObjectAccess storage  | MicrosoftDocs"
 description: Information about managing PrincipalObjectAccess storage.
-author: jimholtz 
+author: paulliew 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/29/2022
 ms.subservice: admin
-ms.author: jimholtz  
-ms.reviewer: paulliew 
+ms.author: jimhopaulliewltz  
+ms.reviewer: sericks 
 contributors:
+- igorantunesms 
 search.audienceType: 
   - admin
 ---
@@ -41,7 +42,7 @@ When an access team is used for record collaboration, records are created in the
 
 - When a user shares a record to a team, all members of the team are indirectly shared to.
 
-- Indirect sharing also occurs with a record that has a cascade sharing relationship or on a table with a parent/child relationship. When a parent record is shared to a user or team, the shared-to user or team has access to all the cascaded or child records. All these permissions to access the child records are created in the POA table. 
+- Indirect sharing also occurs with a record that has a cascade-sharing relationship or on a table with a parent/child relationship. When a parent record is shared to a user or team, the shared-to user or team has access to all the cascaded, or child records. All these permissions to access the child records are created in the POA table. 
 
   **Example of table relationship**
   
@@ -67,7 +68,7 @@ The RetrieveAccessOrigin API can be used to determine where a user or team’s a
 - Remove all access team members when collaboration is over. 
 
 ## Deleting POA records
-POA table is managed by the system to ensure proper access of users or teams to respective records, so direct deletion on this table is not supported since it can break the security model defined for the organization. The correct way to clean up the POA table is by adjusting the security model and revoking access that was previously given.
+The POA table is managed by the system to ensure proper access of users or teams to respective records. Direct deletion on this table is not supported since it can break the security model defined for the organization. The correct way to clean up the POA table is by adjusting the security model, and revoking access that was previously given.
 
 Create a [support ticket](https://dynamics.microsoft.com/support/) to understand how your POA table is distributed and what kind of actions can be done to optimize the storage.
 
