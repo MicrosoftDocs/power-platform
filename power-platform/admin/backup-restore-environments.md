@@ -6,7 +6,10 @@ ms.date: 07/12/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
-ms.reviewer: kvivek
+ms.reviewer: sericks
+ms.contributors:
+- matgupta
+
 ---
 # Back up and restore environments
 
