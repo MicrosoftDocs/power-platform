@@ -62,7 +62,7 @@ This new service plan allows select Microsoft 365 applications to take advantage
 
 These limited capabilities of Dataverse are only available through select Microsoft 365 licenses and can't be used to run any custom apps or Power Automate flows, or run any Power Virtual Agent bots, or use any other data that doesn't belong to the Microsoft 365 applications that take advantage of these capabilities.
 
-These limited capabilities aren't the common set included with every Office application. They can be different based on the Microsoft 365 applications that use these capabilities. For the complete list of various limited capabilities, customers should refer to the service description of these Microsoft 365 applications that contain these Dataverse plans. These limited capabilities of Dataverse don't entitle the licensed user to run standalone Power Apps or Power Automate, or any other Microsoft Power Platform applications that use Dataverse.
+These limited capabilities aren't the common set included with every Office application. They can be different, based on the Microsoft 365 applications that use these capabilities. For the complete list of various limited capabilities, customers should refer to the service description of these Microsoft 365 applications that contain these Dataverse plans. These limited capabilities of Dataverse don't entitle the licensed user to run standalone Power Apps or Power Automate, or any other Microsoft Power Platform applications that use Dataverse.
 
 Review the [Microsoft Project Service description](/office365/servicedescriptions/project-online-service-description/project-online-service-description) for more details on the limited use of Dataverse that comes with Project.
 
