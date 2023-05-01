@@ -27,7 +27,7 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- Sign in with an account that has the System Administrator role.
+- Sign in with an account that has at least OC_Admin and Bot Author role roles.
 - Have a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 - Your bot and Omnichannel for Customer Service must be in the same environment.
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
