@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Get started with cognitive language understanding (preview)
 
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 This topic includes the step-by-step procedures you need to get started with [cognitive language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
 
 Below are the steps to create a bot using an existing CLU model:
