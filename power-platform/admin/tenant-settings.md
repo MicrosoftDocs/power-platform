@@ -27,7 +27,7 @@ The following settings apply to your tenant—all environments contained within 
 
 |Name  |Description  |
 |---------|---------|
-|[Weekly digest](managed-environment-usage-insights.md)*     | Manage additional recipients for the weekly digest email for Managed Environments.        |
+|[Weekly digest](managed-environment-usage-insights.md)*     | Manage more recipients for the weekly digest email for Managed Environments.        |
 |[Production environment assignments](control-environment-creation.md)   | Control who can create and manage production and sandbox environments.        |
 |[Trial environment assignments](control-environment-creation.md)       | Control who can create and manage trial environments.        |
 |[Developer environment assigments](control-environment-creation.md)   | Control who can create and manage developer environments.  |
