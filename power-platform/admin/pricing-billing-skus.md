@@ -3,10 +3,12 @@ title: Licensing overview for Microsoft Power Platform | Microsoft Docs
 description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, Power Pages, Power BI, AI Builder, Dataverse).
 author: dileepsinghmicrosoft
 ms.topic: overview
-ms.date: 02/23/2023
+ms.date: 05/01/2023
 ms.subservice: admin
 ms.author: dileeps
-ms.reviewer: kvivek
+ms.reviewer: sericks
+contributors:
+- srpoduri 
 search.audienceType: 
   - admin
 ---
@@ -120,10 +122,10 @@ You can view a list of all assigned licenses in the [Microsoft Admin Center](htt
 |---|---|---|
 | Dynamics 365 for Marketing  | 00b861da-8087-4e30-beb8-8db3c6d9581e  | DYN365_MARKETING_APP  |
 | Dynamics 365 for Marketing Attach  | 85430fb9-02e8-48be-9d7e-328beb41fa29  | DYN365_MARKETING_APP_ATTACH  |
-| Dynamics 365 Marketing (Self-Service)  | 1224df81-ff37-4222-a5fe-85c7feecdba8  | DYN365_MARKETING_APP_DEPT  |
-| Dynamics 365 Marketing Attach (Self-Service)  |	95b34ddc-99ff-41f0-823d-0051478d9469  |	DYN365_MARKETING_APP_ATTACH_DEPT  |
-| Dynamics 365 Marketing Additional Application (Self-Service)  |	fcc6a509-4249-47bf-8f21-0d882dbbdae3  |	DYN365_MARKETING_APPLICATION_ADDON_DEPT	Company
-| Dynamics 365 Marketing Additional Non-Prod Application (Self-Service)	  | a7cd421b-9f64-4206-a33b-b9154ae28f97  |	DYN365_MARKETING_SANDBOX_APPLICATION_ADDON_DEPT	Company
+| Dynamics 365 Marketing (Self-service)  | 1224df81-ff37-4222-a5fe-85c7feecdba8  | DYN365_MARKETING_APP_DEPT  |
+| Dynamics 365 Marketing Attach (Self-service)  |	95b34ddc-99ff-41f0-823d-0051478d9469  |	DYN365_MARKETING_APP_ATTACH_DEPT  |
+| Dynamics 365 Marketing Additional Application (Self-service)  |	fcc6a509-4249-47bf-8f21-0d882dbbdae3  |	DYN365_MARKETING_APPLICATION_ADDON_DEPT	Company
+| Dynamics 365 Marketing Additional Non-Prod Application (Self-service)	  | a7cd421b-9f64-4206-a33b-b9154ae28f97  |	DYN365_MARKETING_SANDBOX_APPLICATION_ADDON_DEPT	Company
 | Project Plan 3  | 53818b1b-4a27-454b-8896-0dba576410e6  | PROJECTPROFESSIONAL  |
 | Project Plan 3 (for Department)  | 46102f44-d912-47e7-b0ca-1bd7b70ada3b  | PROJECT_PLAN3_DEPT  |
 | Project Plan 3 for faculty  | 46974aed-363e-423c-9e6a-951037cec495  | PROJECTPROFESSIONAL_FACULTY  |
