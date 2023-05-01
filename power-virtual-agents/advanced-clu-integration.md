@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Create bots with Azure cognitive language understanding (preview)
 
+[!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 Cognitive language understanding (CLU) model integration lets users map CLU models with Power Virtual Agents bots. For projects created with this capability, bot creators can now access existing CLU model intents and entities directly in Power Virtual Agents. [Azure Language Studio](/azure/cognitive-services/language-service/overview) is a cloud-based service from Azure Cognitive Service for Language, providing users with natural language processing (NLP) features for analyzing conversational text. For more information, see [Conversational Language Understanding](/azure/cognitive-services/language-service/conversational-language-understanding/overview).
 
 With this new capability, Power Virtual Agents users can now map CLU intents to trigger bot dialogs in the same way as Power Virtual Agents [utterance triggers](advanced-hand-off.md). Entities imported from a CLU model appear on the Power Virtual Agents [Entities](advanced-entities-slot-filling.md) page. Bot creators can add new [question nodes](authoring-create-edit-topics.md) in a topic and select available entities and intents from the imported CLU model. CLU entities are bound to equivalent Power Virtual Agents objects. Users specify the name, the data type, and the [JSON structure](advanced-clu-entity-registration.md) of a custom data type, if desired for each entity. 
