@@ -53,7 +53,7 @@ In some instances, the bot may be unable to determine the intent of a customer's
 
 In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid-way into a conversation.
 
-When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-system-topics?tabs=preview#escalate). This type of trigger is known as _implicit triggering_.
+When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-system-topics.md?tabs=preview#escalate). This type of trigger is known as _implicit triggering_.
 
 ### Explicit triggers
 
