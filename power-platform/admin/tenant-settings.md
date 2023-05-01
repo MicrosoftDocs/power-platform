@@ -4,10 +4,10 @@ description: "Review and configure tenant-level settings linked from this page."
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 10/12/2022
+ms.date: 05/01/2023
 ms.subservice: admin
 ms.author: ampatra
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
