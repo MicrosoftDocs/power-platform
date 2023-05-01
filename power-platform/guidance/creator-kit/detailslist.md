@@ -349,6 +349,9 @@ and the column metadata:
         ColDisplayName: "Clickable Image",
         ColCellType:"clickableimage",
         ColWidth: 60,
+        ColImageWidth: 60,
+        ColImagePadding: 8,
+        ColVerticalAlign: "Top"
 }
 ```
 
