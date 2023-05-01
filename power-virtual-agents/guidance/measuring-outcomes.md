@@ -13,7 +13,7 @@ ms.author: hejammes
 Tracking conversation engagement and outcomes is crucial to measure the chatbot performance metrics and spot areas for improvements in the analytics dashboard.
 
 > [!IMPORTANT]
-> A Power Virtual Agents conversation between an end-user and a chatbot generates one or multiple analytics sessions. [All analytics sessions are either **Engaged** or **Unengaged**](/power-virtual-agents/guidance/measuring-engagement).
+> A Power Virtual Agents conversation between an end-user and a chatbot generates one or multiple analytics sessions. [All analytics sessions are either **Engaged** or **Unengaged**](/power-virtual-agents/guidance/measuring-engagement.md).
 
 ## Understanding analytics sessions outcomes
 

@@ -22,7 +22,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Topics best practices
-            url: topics-in-pva.md
+            url: topics-overview.md
           - text: Trigger phrases best practices
             url: trigger-phrases-best-practices.md
           - text: slot filling best practices
