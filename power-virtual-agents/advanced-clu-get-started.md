@@ -1,9 +1,8 @@
 ---
-title: "Get started with language understanding with CLU integration"
-description: "Get started creating bots in Power Virtual Agents bots with CLU integration"
+title: Get started with cognitive language understanding (preview)
+description: Create bots that use Azure cognitive language services in Power Virtual Agents.
 keywords: "Cognitive language understanding, PVA, CLU, CLU models"
-ms.date: 4/03/2023
-
+ms.date: 5/1/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -14,7 +13,7 @@ ms.collection: virtual-agent
 
 ---
 
-# Get started with language understanding
+# Get started with language understanding (preview)
 
 This topic includes the step-by-step procedures you need to get started with [cognitive language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
 
