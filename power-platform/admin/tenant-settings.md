@@ -10,7 +10,10 @@ ms.author: ampatra
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- marcelbf
 ---
+
 # Tenant settings 
 
 Use the Tenant settings page to review and manage tenant-level settings.
