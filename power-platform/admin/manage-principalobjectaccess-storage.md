@@ -4,7 +4,7 @@ description: Information about managing PrincipalObjectAccess storage.
 author: jimholtz 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2022
+ms.date: 05/01/2023
 ms.subservice: admin
 ms.author: jimholtz  
 ms.reviewer: paulliew 
