@@ -23,11 +23,12 @@ Tracking conversation engagement rates and outcomes are crucial to measure the c
 
 Analytics sessions are either **unengaged** (default) or **engaged**.
 
-This notion is used in the Power Virtual Agents [analytics dashboard](power-virtual-agents/preview/analytics-summary).
+This notion is used in the Power Virtual Agents [analytics dashboard](/power-virtual-agents/preview/analytics-summary).
 
 > [!TIP]
 > Analytics session engagement is also tracked in [conversation transcript records in Dataverse](../analytics-sessions-transcripts.md), if you have a [custom analytics strategy](./custom-analytics-strategy.md).
-<br> In a conversation transcript record `content`, the engagement status of a session (either `unengaged` or `engaged`) is available as part of the `SessionInfo` activity, in the `value` `type`.
+
+In a conversation transcript record `content`, the engagement status of a session (either `unengaged` or `engaged`) is available as part of the `SessionInfo` activity, in the `value` `type`.
 
 > [!div class="checklist"]
 >

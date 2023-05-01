@@ -5,7 +5,7 @@
     - name: Topics best practices
       items:
       - name: Topics in Power Virtual Agents
-        href: topics-in-pva.md
+        href: topics-overview.md
       - name: Triggering topics
         href: triggering-topics.md
       - name: Defining chatbot topics

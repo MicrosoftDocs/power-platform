@@ -19,28 +19,30 @@ Tracking conversation engagement and outcomes is crucial to measure the chatbot 
 
 Analytics sessions each have an outcome:
 > [!div class="checklist"]
+>
 > * **Unengaged** sessions always have an outcome of **None**.
 > * **Engaged** sessions have one of the following outcomes:
->> * **Resolved**, 
+>>
+>> * **Resolved**,
 >> * **Escalated**,
 >> * **Abandoned**.
 
 ## Engagement and outcomes
 
-Conversation analytics sessions, their engegagement status, and their outcomes are available as part of the [analytics dashboard](/power-virtual-agents/preview/analytics-summary) or in the [`ConversationTranscript` table](/power-virtual-agents/analytics-sessions-transcripts) in Dataverse.
+Conversation analytics sessions, their engagement status, and their outcomes are available as part of the [analytics dashboard](/power-virtual-agents/preview/analytics-summary) or in the [`ConversationTranscript` table](/power-virtual-agents/analytics-sessions-transcripts) in Dataverse.
 
 |Engagement | Outcome | Definition |
 |----------|-----------|------------|
 | **Unengaged** | **None** (`None`) | All unengaged sessions have an outcome of *None*. |
 | **Engaged** | **Escalated** (`HandOff`) | A session is considered *escalated* when the **[Escalate](/power-virtual-agents/preview/authoring-system-topics#escalate)** topic is triggered, or the **Transfer Conversation** node is reached. |
-| **Engaged** | **Resolved** (`Resolved`) | A session is considered *resolved* when the **[End of Conversation](/power-virtual-agents/preview/authoring-system-topics#end-of-conversation)** topic is triggered and the user confirms that the interaction was a success (`impliedSuccess` = `FALSE`) or doesn't answer and lets the session time out (`impliedSuccess` = `TRUE`) . |
+| **Engaged** | **Resolved** (`Resolved`) | A session is considered *resolved* when the **[End of Conversation](/power-virtual-agents/preview/authoring-system-topics#end-of-conversation)** topic is triggered and the user confirms that the interaction was a success (`impliedSuccess` = `FALSE`) or doesn't answer and lets the session time out (`impliedSuccess` = `TRUE`). |
 | **Engaged** | **Abandoned** (`Abandoned`) | A session is considered *abandoned* when an engaged session ends and didn't reach a *resolved* or *escalated* state. |
 
 ## Properly ending conversations to measure outcomes
 
 It’s important to end conversation with the **End of Conversation** topic, so that the end-user can confirm their issue was resolved or not (and potentially escalate).
 
-When confirming success, a CSAT survey is displayed to the end-user [to capture a 0-5 score](/power-virtual-agents/preview/analytics-csat).
+When the bot confirms success, a CSAT survey is displayed to the end-user [to capture a 0-5 score](/power-virtual-agents/preview/analytics-csat).
 
 If you’re certain of the outcome of a conversation based on the topic logic, you can directly flag it as a confirmed success or redirect to the Escalate topic.
 
