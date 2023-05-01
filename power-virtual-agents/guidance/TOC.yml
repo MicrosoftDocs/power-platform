@@ -20,6 +20,10 @@
       href: slot-filling-best-practices.md
 - name: Measuring and improving chatbots
   items:
+    - name: Measuring engagement
+      href: measuring-engagement.md
+    - name: Measuring outcomes
+      href: measuring-outcomes.md       
     - name: Deflection optimization
       items:
       - name: Deflection overview

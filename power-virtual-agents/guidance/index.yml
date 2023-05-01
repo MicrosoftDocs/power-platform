@@ -33,6 +33,10 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
+          - text: Measuring engagement
+            url: measuring-engagement.md
+          - text: Measuring outcomes
+            url: measuring-outcomes.md      
           - text: Deflection optimization
             url: deflection-overview.md
           - text: Custom analytics strategy
