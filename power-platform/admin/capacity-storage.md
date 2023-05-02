@@ -58,6 +58,11 @@ The new licensing storage model looks like the following image.
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
+For the **Summary** page to be displayed, the user needs to have one of the following roles: 
+- Tenant Admin
+- Power Platform Admin
+- Dynamics 365 Admin 
+
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
 > [!div class="mx-imgBorder"] 
@@ -295,6 +300,10 @@ Default, production, and sandbox environments are counted for consumption. Trial
 ### What are tables ending in “- analytics" in my capacity report?
 
 Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse tables. See **More information** below for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
+
+### Why can I can no longer see the Summary tab in my capacity report? 
+
+This is due to a change that occurred in April 2023, after which only users with the Tenant Admin, Power Platform Admin, or Dynamics 365 Admin roles can see the Summary tab in the capacity report. Users, such as Environment Admins, will no longer see this tab and will be redirected to the Dataverse tab when accessing the report. If you have a user that requires access to the Summary tab, please assign one of the required roles. 
 
 **More information:**
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
