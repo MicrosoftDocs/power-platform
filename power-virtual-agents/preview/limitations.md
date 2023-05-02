@@ -26,9 +26,6 @@ The Power Virtual Agents preview doesn't yet support some of the features you're
 - Default values in multiple-choice questions don't work.
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
 - Omnichannel for Customer Service, including voice capabilities, isn't supported.
-- Data Loss Prevention (DLP) isn't fully implemented.
-  - When a DLP error occurs, the error banner is only visible on the bot's home page.
-  - The **Chat without Azure AD Authentication in Power Virtual Agents** connector doesn't work.
 - Preview bots can't be created in GCC or GCC High environments.
 
 ## Troubleshoot firewall or network issues
