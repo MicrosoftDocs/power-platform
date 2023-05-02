@@ -1,12 +1,12 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 07/26/2022
+ms.date: 05/02/2023
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
 ms.author: sriknair
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -59,9 +59,9 @@ The new licensing storage model looks like the following image.
 This page provides a tenant-level view of where your organization is using storage capacity.
 
 For the **Summary** page to be displayed, the user needs to have one of the following roles: 
-- Tenant Admin
-- Power Platform Admin
-- Dynamics 365 Admin 
+- Tenant admin
+- Power Platform admin
+- Dynamics 365 admin 
 
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
@@ -301,9 +301,9 @@ Default, production, and sandbox environments are counted for consumption. Trial
 
 Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse tables. See **More information** below for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
 
-### Why can I can no longer see the Summary tab in my capacity report? 
+### Why can I no longer see the Summary tab in my capacity report? 
 
-This is due to a change that occurred in April 2023, after which only users with the Tenant Admin, Power Platform Admin, or Dynamics 365 Admin roles can see the Summary tab in the capacity report. Users, such as Environment Admins, will no longer see this tab and will be redirected to the Dataverse tab when accessing the report. If you have a user that requires access to the Summary tab, please assign one of the required roles. 
+This is due to a change that occurred in April 2023, after which only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab in the capacity report. Users, such as environment admins, will no longer see this tab and will be redirected to the **Dataverse** tab when accessing the report. If you have a user that requires access to the **Summary** tab, assign one of the required roles. 
 
 **More information:**
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
