@@ -88,7 +88,7 @@ Ready to get started? The first step is to create your bot.
     > [!NOTE]
     > This initial bot creation only prompts you for one fallback website. You can add other data sources, including internal resources such as Sharepoint or OneDrive, and external facing websites. For more information about including additional data sources, refer to [Use Copilot to edit a topic](nlu-authoring.md#use-copilot-to-edit-a-topic).
 
-   :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-create.png" alt-text="Screenshot of the Boost your conversation preview option.":::
+   :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the Boost your conversation preview option.":::
 
 There you have it! You’ve created a new bot.  
 
