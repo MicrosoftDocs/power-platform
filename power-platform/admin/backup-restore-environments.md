@@ -2,7 +2,7 @@
 title: Back up and restore environments | Microsoft Docs
 description: Provides information on how to back up and restore Power Platform environments
 ms.topic: conceptual
-ms.date: 07/12/2022
+ms.date: 05/02/2023
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -13,22 +13,28 @@ ms.contributors:
 ---
 # Back up and restore environments
 
-Protecting your data in Power Platform and Dataverse, and providing continuous availability of service are important. If you use Power Platform to create production environments with a database and one or more Dynamics 365 applications, you can benefit from the system backups that are automatically performed for these environments. The system backups are stored for up to 28 days, so you can restore your environment in case of any issues. For production environments that do not have Dynamics 365 applications, the default backup retention period is only 7 days. However, admins can change this setting and extend the backup retention period for managed production type environments using PowerShell. The possible options are 7, 14, 21, and 28 days.
+Protecting your data in Power Platform and Dataverse, and providing continuous availability of service are important. If you use Power Platform to create production environments with a database and one or more Dynamics 365 applications, you can benefit from the system backups that are automatically performed for these environments. The system backups are stored for up to 28 days, so you can restore your environment in case of any issues. 
 
-Changing the backup retention period is a useful feature for managed production type environments that do not have Dynamics 365 applications. It gives you more flexibility and security for your data by extending back up to 28 days and helpful in case of an accidental data deletion scenario
+For production environments that do not have Dynamics 365 applications, the default backup retention period is only 7 days. However, admins can change this setting and extend the backup retention period for [Managed Environments](managed-environment-overview.md) using PowerShell. The possible options are 7, 14, 21, and 28 days.
 
-Note:
-•	This feature to extend back up beyond 7 days is only supported for managed type production environments. To learn about managed environments, see Managed Environments overview - Power Platform | Microsoft Learn[https://learn.microsoft.com/power-platform/admin/managed-environment-overview]
-•	If you have an existing environment that is older than 7 days and you change the backup retention period, the first backup will still expire after 7 days. However, subsequent backups will follow the new backup retention period that you have configured.
+Changing the backup retention period is a useful feature for Managed Environments that do not have Dynamics 365 applications. It also gives you more flexibility and security for your data by extending back up to 28 days, and it helps in accidental data deletion scenarios. Consider the following information:
 
-To change the backup retention period, you need to be an admin with one of these roles: global admin, Power Platform service admin, or Dynamics 365 admin in Azure Active Directory. You also need to know that changing the backup retention period does not affect the existing backups that are already stored for 7 days. It only applies to the future backups that will be taken after you change the setting
+- This ability to extend the backup retention period beyond 7 days is only supported for [Managed Environments](managed-environment-overview.md).
+- If you have an existing environment that is older than 7 days and you change the backup retention period, the first backup will still expire after 7 days. However, subsequent backups will follow the new backup retention period that you have configured.
 
-One way to illustrate how the retention period works is to use a hypothetical scenario. Suppose you create an environment on a certain day, which we can call day N. On that day, the system will start taking backups of your environment and store them for a default period of 7 days. This means that on day N+7, you will have backups from day N to day N+7 available for restoration. However, if you decide to change the retention period to 14 days, the system will keep the backups for a longer time. On day N+14, you will have backups from day N to day N+14 available for restoration. This way, you can have more flexibility and control over your backup data.
+To change the backup retention period, you need to be an admin with one of these roles in Azure Active Directory: 
+- Global admin
+- Power Platform admin
+- Dynamics 365 admin 
+
+You also need to know that changing the backup retention period does not affect the existing backups that are already stored for 7 days. It only applies to the future backups that will be taken after you change the setting.
+
+For example, suppose you create an environment on a certain day, which we'll can call day N. On that day, the system will start taking backups of your environment and store them for a default period of 7 days. This means that on day N+7, you will have backups from day N to day N+7 available for restoration. However, if you decide to change the retention period to 14 days, the system will keep the backups for a longer time. On day N+14, you will have backups from day N to day N+14 available for restoration. This way, you can have more flexibility and control over your backup data.
  
-Prepare your environment for PowerShell
-This section uses the PowerShell for Power platform administrator module, which is the recommended PowerShell module for interacting with admin capabilities. To get started with the Power platform PowerShell module, see Programmability and Extensibility - PowerShell - Installation - Power Platform | Microsoft Learn
+## Prepare your environment for PowerShell
+This section uses the PowerShell for Power Platform administrator module, which is the recommended PowerShell module for interacting with admin capabilities. To get started with the Power platform PowerShell module, see Programmability and Extensibility - PowerShell - Installation - Power Platform | Microsoft Learn
  
-#Set retention period
+## Set retention period
 Set-AdminPowerAppEnvironmentBackupRetentionPeriod
 Supply values for the following parameters:
 EnvironmentName: <Environment Id>
