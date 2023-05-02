@@ -14,7 +14,7 @@ search.audienceType:
 ---
 
 # Overview of application lifecycle management with Microsoft Power Platform
-The articles in this section describe how you can implement application lifecycle management (ALM) using Power Apps, Power Automate, Power Virtual Agents, and Microsoft Dataverse. 
+The articles in this section describe how you can implement application lifecycle management (ALM) using Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Microsoft Dataverse. 
 
 ## What is ALM? 
 ALM is the lifecycle management of applications, which includes governance, development, and maintenance. Moreover, it includes these disciplines: requirements management, software architecture, development, testing, maintenance, change management, support, continuous integration, project management, deployment, release management and governance. ALM tools provide a
