@@ -4,7 +4,7 @@ description: Learn about types of Power Automate licenses.
 author: PriyaKodukula
 ms.subservice: admin
 ms.topic: overview
-ms.date: 03/29/2023
+ms.date: 05/02/2023
 ms.author: prkoduku
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -29,7 +29,7 @@ Power Automate P1 and P2 plans (grand fathered)| These plans are no longer avail
 
 ## Seeded plans
 
-Organizations also gain rights to use Power Automate if they are licensed to use any of the following plans where Power Automate licenses are **seeded**. 
+Organizations also gain rights to use Power Automate if they are licensed to use any of the following plans where Power Automate licenses are *seeded*. 
 - Microsoft 365 (formerly Office 365).
 - Dynamics 365 Enterprise.
 - Dynamics 365 Professional.
@@ -58,7 +58,7 @@ Learn [more about license entitlements](#license-entitlements).
 
 Here's a chart that lays out the limits that are associated with the different license plans.
 
-![Image showing a comparison](../media/power-automate-licensing/license-comparison.png)
+:::image type="content" source="../media/power-automate-licensing/license-comparison.png" alt-text="Screenshot of a comparison.":::
 
 1. Dynamics 365 Sales Professional and Dynamics 365 Customer Service Professional.
 
@@ -128,7 +128,7 @@ Here are a few things of which to be aware during the transition period.
 
 1. These transition period limits are applied at the flow level during the transition period. Additionally, a separate per user level limit of 1,000,000 actions is applied during the transition period to ensure users do not go above 1M actions across all their flow runs in a day. After the transition period ends, the actual limits will be applied at user level for per user plans and flow level for per flow plans.
 
-1. During transition period, manual flows do not use the flow owners/flow invokers limits. Every manual flow has a performance profile of Medium(100,000 requests/flow/24 hours). After transition peiod, manual flows will use the request limits of invoking user. 
+1. During the transition period, manual flows don't use the flow owners/flow invokers limits. Every manual flow has a performance profile of Medium (100,000 requests/flow/24 hours). After the transition period, manual flows will use the request limits of invoking user.
 
 1. Since the limits are more generous during the transition period, [stacking of user licenses isn't supported](../api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
 
@@ -238,15 +238,15 @@ The connectors have separate limits as a service protection mechanism. For examp
 
 When a flow was throttled because it exceeded the connector limits, you might see a HTTP 429 (too many requests) error in your flow with error text like "Rate limit is exceeded. Try again in 27 seconds."
 
-#### I am using COE Starter Kit , will the usage count towards my request limits?
+#### I'm using CoE Starter Kit. Will the usage count towards my request limits?
 
-Yes. Flows included in the [COE Starter Kit](../../guidance/coe/starter-kit.md) also use limits from the owner. Microsoft recommends that you turn on Pay-as-you go for the environment or buy additional capacity and contact support to get temporary relief from throttling.
+Yes. Flows included in the [CoE Starter Kit](../../guidance/coe/starter-kit.md) also use limits from the owner. Microsoft recommends that you turn on Pay-as-you go for the environment or buy additional capacity and contact support to get temporary relief from throttling.
 
 #### Can I use service principal in flows, and does it count against my request limits?
 
-Yes, flows whose owner is a service principal will consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md#non-licensed-user-request-limits). These limits are only applicable if the owner of the flow is a service principal. These limits are not applicable if the flow just uses a service principal in one of the actions. Manual flows(button flows that are shared with run only users/Power Apps invoked flows) will use run only user's request limits even when the owner of the flow is a service principal. The run only users must have a premium Power Automate license if the flow uses premium connectors. During transition period, manual flows can use up to 100,000 requests/ flow/24 hours. 
+Yes, flows whose owner is a service principal will consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md#non-licensed-user-request-limits). These limits are only applicable if the owner of the flow is a service principal. These limits aren't applicable if the flow just uses a service principal in one of the actions. Manual flows(button flows that are shared with run only users/Power Apps invoked flows) will use run only user's request limits even when the owner of the flow is a service principal. The run only users must have a premium Power Automate license if the flow uses premium connectors. During the transition period, manual flows can use up to 100,000 requests/flow/24 hours.
 
-Limits for automated/scheduled flows: 
+Limits for automated/scheduled flows:
 
  - Service principal flows running [in context of D365 applications](faqs.md#what-power-automate-capabilities-are-included-in-dynamics-365-licenses)) listed in the [table](../api-request-limits-allocations.md#non-licensed-user-request-limits) get 500,000 base requests  + 5,000 requests accrued per USL up to 10,000,000 maximun pooled at the tenant level. If a tenant has 1000 D365 licenses, that tenant has a pool of 5,500,000 requests avaialble for all Power platform resources like Service principal flows, Dataverse requests etc per 24 hours. If a tenant has 2500 D365 licenses, that tenant has a pool of 10,000,000 requests avaialble for all Power platform resources like Service principal flows, Dataverse requests etc per 24 hours.
 
@@ -312,11 +312,11 @@ Best practices to scale your flow.
 
 - Consider splitting the workload across multiple flows to achieve high scale.
 
-## Power platform requests Pay-as-you-go
+## Power Platform requests pay-as-you-go
 
-We revised the Power Platform request limits for all licenses in late 2021. The new limits are designed to be sufficient for most customer scenarios. For more information on Power Platform request limits, visit the [Requests limits and allocations](../api-request-limits-allocations.md) page.
+We revised the Power Platform request limits for all licenses in late 2021. The new limits are designed to be sufficient for most customer scenarios. For more information on Power Platform request limits, go to [Requests limits and allocations](../api-request-limits-allocations.md).
 
-For customers with extremely high scale scenarios who need to exceed these limits you can link those environments to Azure subscription. By linking the environment, users and flows in the environment can consume more than their limits without being throttled and only pay for the Power Platform requests used above those limits. Flows still need to be licensed with a base license (either Power Automate per user, Power Automate per flow, Office 365, Power Apps, or Dynamics). For example, if you have Power Automate per user license, you have a limit of 40,000 Power Platform requests/per user/day. If the user used 45,000 requests a day, the additional 5,000 requests is multiplied by a $/request rate and billed to the Azure subscription. The total amount will be summed and billed based on the customer’s Azure billing cycle. Multiple [meters](../pay-as-you-go-meters.md) are turned on when you turn on Pay-as-you-go at the environment. See [How to set up Pay-as-you-go](../pay-as-you-go-set-up.md).
+For customers with extremely high scale scenarios who need to exceed these limits you can link those environments to Azure subscription. By linking the environment, users and flows in the environment can consume more than their limits without being throttled and only pay for the Power Platform requests used above those limits. Flows still need to be licensed with a base license (either Power Automate per user, Power Automate per flow, Office 365, Power Apps, or Dynamics). For example, if you have Power Automate per user license, you have a limit of 40,000 Power Platform requests/per user/day. If the user used 45,000 requests a day, the additional 5,000 requests is multiplied by a $/request rate and billed to the Azure subscription. The total amount will be summed and billed based on the customer’s Azure billing cycle. Multiple [meters](../pay-as-you-go-meters.md) are turned on when you turn on pay-as-you-go at the environment. Go to [How to set up Pay-as-you-go](../pay-as-you-go-set-up.md).
 
 ![An image that displays an overview of pay as you go](../media/power-automate-licensing/pay-as-you-go.png)
 
@@ -356,9 +356,9 @@ Follow these steps to get started.
 
 1. Sign in to [the Microsoft 365 admin center](https://admin.microsoft.com/).
 
-1. Go to **Purchase services** under the **Billing** section.
+1. Under the **Billing** section, select **Purchase services**.
 
-1. Search for "Power Automate", and then select a plan.
+1. Search for **Power Automate**, and then select a plan.
 
    ![Select a licensing plan](../media/power-automate-licensing/select-plan.png)
 
@@ -372,7 +372,6 @@ Follow these steps to get started.
 
 After the free trial starts, go to **Billing** > **Licenses** to see the 25 new licenses available for you to assign to users.
 
-<!--todo this isn't clear, PM will update in github-->
 > [!NOTE]
 > Trials are different from free licenses. Once you start a trial, the sku name might not say Trial.
 
