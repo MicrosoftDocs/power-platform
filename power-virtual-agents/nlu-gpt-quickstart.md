@@ -84,13 +84,13 @@ Ready to get started? The first step is to create your bot.
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-create-bot.png" alt-text="Screenshot of the Create a chatbot page.":::
 
 3. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic, and select **Create**.
- 
-    > [!NOTE]
-    > This initial bot creation only prompts you for one fallback website. You can add other data sources, including internal resources such as Sharepoint or OneDrive, and external facing websites. For more information about including additional data sources, refer to [Use Copilot to edit a topic](nlu-authoring.md#use-copilot-to-edit-a-topic).
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the Boost your conversation preview option.":::
 
 There you have it! You’ve created a new bot.  
+
+    > [!NOTE]
+    > This initial bot creation only prompts you for one fallback website. You can add other data sources, including internal resources such as Sharepoint or OneDrive, and external facing websites. For more information about including additional data sources, refer to [Use Copilot to edit a topic](nlu-authoring.md#use-copilot-to-edit-a-topic).
 
 For any user-sent message that can't be matched to an existing topic, your bot looks for an answer on the website you've specified, and turns the answer into a simple message that it sends to the user. 
 
