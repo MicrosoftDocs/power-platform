@@ -158,7 +158,7 @@ This table summarizes knowledge resources GPT Answers can use to boost conversat
 | Name | Source | Description | Number of Inputs | Authentication |
 | --- | --- | --- | --- | --- |
 | Bing Search | External | Searches the query in put on Bing; returning results only from provided websites | 4 public urls (for example, microsoft.com) | None |
-| [Bing Custom Search](https://www.customsearch.ai/) | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
+| [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
 | Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
 | OneDrive | Internal | Connects to a OneDrive url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
 | Other internal data | Internal | ... | ... | ... |
