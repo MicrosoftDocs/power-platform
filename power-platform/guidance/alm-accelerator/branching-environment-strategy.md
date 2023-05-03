@@ -31,7 +31,7 @@ The first time a solution is committed using the ALM Accelerator app, a maker mu
 
 ### Feature Commit Branching
 
-When subsequent features are created by the maker a **new feature branch** should be **created from the solution branch**. The branching strategy is similar ot the initial commit strategy, but the feature branch is created from the solution branch instead of the main branch. In this case the main branch remains unchanged and the solution branch is updated with the latest source code until the solution is ready to be deployed to the production environment again providing a version next branch sometimes referred to as a release branch or v-next branch.
+When subsequent features are created by the maker a **new feature branch** should be **created from the solution branch**. The branching strategy is similar to the initial commit strategy, but the feature branch is created from the solution branch instead of the main branch. In this case the main branch remains unchanged and the solution branch is updated with the latest source code until the solution is ready to be deployed to the production environment again providing a version next branch sometimes referred to as a release branch or v-next branch.
 
 :::image type="content" source="media/almaccelerator-branching/FeatureRun.png" alt-text="Default, feature branch strategy":::
 
