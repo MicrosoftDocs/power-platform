@@ -166,7 +166,7 @@ This table summarizes knowledge resources GPT Answers can use to boost conversat
 
 ### Search and Summarize
 
-You can add boost conversations functionality to your bot by adding a Search and summarize content node in the flow of your topic.
+You can add GPT functionality to a topic using a "Search and summarize content node" in the flow of your topic. This allows you to control the information sources a specific node is using to boost your bot's conversation.
 
 1. Open the authoring canvas for your topic
 
