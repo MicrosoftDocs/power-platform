@@ -90,7 +90,7 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 
     :::image type="content" source="media/nlu-gpt/describe-it-toolbar.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it button highlighted.":::
 
-> [!TIP]
+    > [!TIP]
     >
     >If you have selected any nodes on the canvas, they will be used to scope your request.  
     >For example, if you have a **Question** node selected, you could write _add a speech response_, instead of _add a speech response to the question node_.
