@@ -81,6 +81,9 @@ When creating a new topic, you can select **Create with Copilot** and ask the AI
 
 ## Use Copilot to edit a topic
 
+With the new **Edit with Copilot (preview)** pane, you can make changes to your topic using the power of NLU. For example, if you want to make updates to your bot, such as moving and updating the nodes, all you need to do is describe what you want with Copilot.
+Think of this new capability as a powerful wizard-like feature that walks you through the editing a topic process to fine-tune your bot's topics without having to work directly in the authoring canvas. You can also make additions and changes to existing nodes, and tell Copilot what you want it to do.
+
 You can use AI to help you modify any topic in your bot. The topic doesn't need to have been created with Copilot.
 
 1. Open your bot and select **Topics**. Select the topic you want to modify, and then **Edit with Copilot** on the menu bar just above the topic's conversation path.
