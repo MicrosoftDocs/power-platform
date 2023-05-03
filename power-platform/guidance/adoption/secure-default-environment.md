@@ -65,7 +65,7 @@ Consider also disabling the **Share with Everyone** feature in Power Platform. W
 1. Run the `Set-TenantSettings` cmdlet with the settings object to prevent makers from sharing their apps with everyone in the tenant.
 
    ```powershell
-     Set-TenantSettings \$settings
+     Set-TenantSettings $settings
    ```
 
 ## Establish a data loss prevention policy
