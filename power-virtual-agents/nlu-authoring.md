@@ -89,6 +89,13 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 1. Open your bot and select **Topics**. Select the topic you want to modify, and then **Edit with Copilot** on the menu bar just above the topic's conversation path.
 
     :::image type="content" source="media/nlu-gpt/describe-it-toolbar.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it button highlighted.":::
+
+> [!TIP]
+    >
+    >If you have selected any nodes on the canvas, they will be used to scope your request.  
+    >For example, if you have a **Question** node selected, you could write _add a speech response_, instead of _add a speech response to the question node_.
+    > You can see the nodes you've selected next to the **Update** button.
+    :::image type="content" source="media/nlu-gpt/describe-it-toolbar.png" alt-text="Screenshot of the Power Virtual Agents authoring window with the Describe it button highlighted.":::
    
 2. In the **What do you want to do** field, describe what you want to change or add in the topic. 
 
