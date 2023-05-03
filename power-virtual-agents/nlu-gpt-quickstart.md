@@ -123,3 +123,28 @@ See the [Boost conversations (preview)](nlu-boost-conversations.md) topic for mo
 Once your topic is created, your bot is ready for testing. It's that simple!
 
 You can explore ways to extend and enhance your boosted bot and topic in [Create (and edit) with Copilot](nlu-authoring.md).
+
+## Test your bot's boosted conversational reach 
+Once you create a bot, you can immediately test the bot and try out different phrases for your bot to reply to. 
+The **Test bot** pane shows how a bot conversation plays out at every step and you can fine-tune a topic directly within the **Power Virtual Agents (preview)** portal:
+ 
+1. With a topic open for editing, select **Test bot** above the authoring canvas. You can also select **Test your bot** from the side navigation menu. 
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-bot.png" alt-text="Screenshot of Test bot option.":::
+2. At the **Type your message** prompt, ask the bot about the return policy of the organization whose website you linked to. For example, you could type *What is your return policy?*. 
+ 
+   The bot retrieves information from the website and returns a response. The response provides a link to where it found that information and allows you to provide feedback.
+ 
+4. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
+ 
+> [!NOTE]
+> After you test your bot, you can select the reset icon at the top of the **Test bot** pane to clear previous conversations. Resetting makes it easier to follow the flow of the current topic without getting confused by previous conversations.
+>  
+> :::image type="content" source="media/nlu-gpt/nlu-quickstart-test-reset.png" alt-text="Screenshot of Test bot pane reset button that looks like a an arrow in a circle shap.":::
+You can return to the authoring canvas at any time to revise the conversation path. The **Test bot** pane automatically refreshes when you select **Save**. 
+
+
+## Add features to further develop your bot 
+It's easy to take your bot's conversations up a notch by giving your bot a voice of its own. You can add images and video clips, as well as adaptive cards, entities, and variable expressions. 
+See the [Key concepts - Enhanced authoring](advanced-fundamentals.md) for more details, or continue your bot-building journey by checking out the rest of the [Power Virtual Agents documentation](index.yml).
+[!INCLUDE[footer-include](includes/footer-banner.md)]
