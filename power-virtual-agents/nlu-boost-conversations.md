@@ -35,7 +35,7 @@ Internal resources include:
  - (Project Wednesday)
  - DataVerse.
 
-Sources will have different authentication rules you will need to configure. Further detail on this can be found [follow this doc link - new "boost-conv-configs"?].
+Sources will have different authentication rules you will need to configure. Further detail on this can be found [follow this section/doc link].
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
