@@ -35,7 +35,7 @@ Internal resources include:
  - (Project Wednesday)
  - DataVerse.
 
-Different sources have different authentication rules to configure. Additional details can be found in [Knowldge sources](#knowledge-sources).
+Different sources have different authentication rules to configure. Additional details can be found in [Knowledge sources](#knowledge-sources).
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
@@ -151,9 +151,22 @@ The URL you specify should host the content you want the bot to generate answers
 
 The following table summarizes sources your bot can use to gather information.
 
+### Knowledge Sources
+
+This table summarizes knowledge resources GPT Answers can use to boost conversations.
+
+| Name | Source | Description | Number of Inputs | Authentication |
+| --- | --- | --- | --- | --- |
+| Bing Search | External | Searches the query in put on Bing; returning results only from provided websites | 4 public urls (for example, microsoft.com) | None |
+| [Bing Custom Search](https://www.customsearch.ai/) | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
+| Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
+| OneDrive | Internal | Connects to a OneDrive url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
+| Other internal data | Internal | ... | ... | ... |
+| Project Wednesday | Internal | Azure Open AI knowledge repository | ... | ... |
+
 ### Search and Summarize
 
-You can add boost conversations functionality to your bot, by adding a Search and summarize content node in the flow of your topic.
+You can add boost conversations functionality to your bot by adding a Search and summarize content node in the flow of your topic.
 
 1. Open the authoring canvas for your topic
 
@@ -169,18 +182,6 @@ You can add boost conversations functionality to your bot, by adding a Search an
 
 Your bot will use the collected information in line with the topic flow to provide a response.
 
-### Knowledge Sources
-
-This table summarizes knowledge resources GPT Answers can use to boost conversations.
-
-| Name | Source | Description | Number of Inputs | Authentication |
-| --- | --- | --- | --- | --- |
-| Bing Search | External | Searches the query in put on Bing; returning results only from provided websites | 4 public urls (for example, microsoft.com) | None |
-| [Bing Custom Search](https://www.customsearch.ai/) | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
-| Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| OneDrive | Internal | Connects to a OneDrive url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| Other internal data | Internal | ... | ... | ... |
-| Project Wednesday | Internal | Azure Open AI knowledge repository | ... | ... |
 
 ## Test your bot's boosted conversational reach 
 
