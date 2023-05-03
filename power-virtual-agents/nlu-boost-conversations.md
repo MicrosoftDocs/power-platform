@@ -2,9 +2,9 @@
 title: Boost conversations (preview)
 description: Provide answers and information for your bot users, even if you haven't created a topic for their issue.
 keywords: "PVA"
-ms.date: 3/16/2023
+ms.date: 5/03/2023
 ms.topic: how-to
-author: iaanw
+author: KendalBond007
 ms.author: iawilt
 ms.reviewer: 
 ms.collection: virtual-agent
@@ -20,16 +20,31 @@ searchScope:
 
 [!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
-When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. However, by utilizing the boosted conversations in Power Virtual Agents, your bot can find and present information from an external source - even if you haven't created a topic for it.
+When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. By utilizing boosted conversations in Power Virtual Agents, your bot can find and present information from multiple sources (which may be internal or external) even if you haven't created a topic for it. These can be used as a fallback, or as primary information sources in your chatbot.
+
+External resources include:
+
+ - Bing Search
+ - [Bing Custom Search](https://www.customsearch.ai/).
+  
+Internal resources include:
+
+ - SharePoint
+ - OneDrive
+ - Internal data sources
+ - (Project Wednesday)
+ - DataVerse.
+
+Sources will have different authentication rules to access them. Details on this can be found [follow this doc link].
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
 Now, before involving a live agent, the bot uses natural language processing (NLP) to:
 - Parse what a user types to determine what they're asking
-- Find, collate, and parse relevant information from a specified URL (for example, your company's website) with Bing Search
+- Find, collate, and parse relevant information from a specified source (for example, your company's website) or from multiple sources, including Sharepoint and OneNote. "...with Bing Search" (phrase intention?)
 - Create a plain language response and then deliver that to the bot user
 
-This means you can quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers might end up asking.
+This means you can quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers end up asking.
 
 Your workflow might be like this:
 
