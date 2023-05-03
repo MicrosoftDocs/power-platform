@@ -35,7 +35,7 @@ Internal resources include:
  - (Project Wednesday)
  - DataVerse.
 
-Sources will have different authentication rules you will need to configure. Further detail on this can be found [follow this section/doc link].
+Different sources have different authentication rules to configure. Additional details can be found in [Knowldge sources](#knowledge-sources).
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
@@ -44,7 +44,7 @@ Now, before involving a live agent, the bot uses natural language processing (NL
 - Find, collate, and parse relevant information from a specified source (for example, your company's website) or from multiple sources, including Sharepoint and OneNote. "...with Bing Search" (phrase intention?)
 - Create a plain language response and then deliver that to the bot user
 
-This means you can quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers end up asking.
+As a result you can quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers end up asking.
 
 Your workflow might be like this:
 
@@ -52,7 +52,9 @@ Your workflow might be like this:
 
 1. After testing it, you publish your bot so you can instantly provide answers, help, and guidance to your customers or bot users.
 
-1. You create individual topics for the most important or most often-asked questions from your customers (which you might have developed based on [analytics from previous bots](analytics-overview.md) or existing support issues). This could take a while and some specialized knowledge - but with **Boost conversations** enabled you're up and running from day one.
+1. You create individual topics for the most important or most often-asked questions from your customers (which you might have developed based on [analytics from previous bots](analytics-overview.md) or existing support issues). 
+
+This could take a while and some specialized knowledge - but with **Boost conversations** enabled you're up and running from day one.
 
 ## Prerequisites
 
@@ -104,7 +106,7 @@ You can also change the URL, disable **Boost conversations**, or change the leve
 
     1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](#url-considerations) as when enabling the capability when you create a bot.
 
-    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot will generate more answers, but the answers may be irrelevant or undesirable.
+    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
 
     :::image type="content" source="media/nlu-gpt/responses-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
 
@@ -118,7 +120,7 @@ The URL you provide represents the scope of content that will be used for genera
 
 There are some requirements on the type and structure of the URL you use:
 
-The URL can have up to two levels of depth (or "sub-paths", indicated by forward slashes (/)). Your URL can have a trailing forward slash, and this won't be included in the limit of two slashes: 
+The URL can have up to two levels of depth (or "sub-paths", indicated by forward slashes (/)). Your URL can have a trailing forward slash, which won't be included in the limit of two slashes: 
 - The URLs *<span>www</span>.contoso.com*, *<span>www</span>.fabrikam.com/engines/rotary*, or *<span>www</span>.fabrikam.com/engines/rotary/* would be valid. 
     The URL *<span>www</span>.fabrikam.com/engines/rotary/dual-shaft* would not.
 
@@ -132,7 +134,7 @@ The capability won't generate responses from a URL that points to a website that
 
 You should also be aware of the following characteristics of the capability:
   
-The bot will generate responses from any publicly viewable content under the URL you specify. This includes subdomains under a top-level domain:
+The bot generates responses from any publicly viewable content under the URL you specify. This includes subdomains under a top-level domain:
 - If you were to use the URL *<span>www</span>.fabrikam.com/engines/rotary*, the content on *<span>www</span>.fabrikam.com/engines/rotary/dual-shaft* would also be used by the bot to generate responses.  
 Content from *<span>www</span>.fabrikam.com/tools* would not be used.  
 
@@ -147,7 +149,38 @@ See the [AI response generation training, model, and usage notes](#ai-response-g
 The URL you specify should host the content you want the bot to generate answers from; it should not be the URL for a search engine:
 -  Using *<span>bing</span>.com* or other search engines in the URL won't provide useful responses.  
 
+The following table summarizes sources your bot can use to gather information.
 
+### Search and Summarize
+
+You can add boost conversations functionality to your bot, by adding a Search and summarize content node in the flow of your topic.
+
+1. Open the authoring canvas for your topic
+
+1. Identify the point in your topic's flow where you want to use Search and summarize content functionality.
+
+1. Click on the '+' where you would like to add the Search and Summarize node.
+
+1. Add a Search and Summarize node (I can't currently do this in my preprod environment - likely don't know what I'm doing)
+
+1. Specify what information sources this node should access
+
+1. Save your changes
+
+Your bot will use the collected information in line with the topic flow to provide a response.
+
+### Knowledge Sources
+
+This table summarizes knowledge resources GPT Answers can use to boost conversations.
+
+| Name | Source | Description | Number of Inputs | Authentication |
+| --- | --- | --- | --- | --- |
+| Bing Search | External | Searches the query in put on Bing; returning results only from provided websites | 4 public urls (for example, microsoft.com) | None |
+| [Bing Custom Search](https://www.customsearch.ai/) | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
+| Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
+| OneDrive | Internal | Connects to a OneDrive url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
+| Other internal data | Internal | ... | ... | ... |
+| Project Wednesday | Internal | Azure Open AI knowledge repository | ... | ... |
 
 ## Test your bot's boosted conversational reach 
 
@@ -163,8 +196,7 @@ The boost conversation preview works well with a large variety of question types
  
 You should also be aware of some of the characteristics of the AI, and how to get the most out of the questions you ask:
 
-- The bot can have difficulty answering questions that require calculations, comparisons, or form submissions to provide answers. 
-    This includes questions that use comparative and superlative terms such as better or best, latest, or cheapest. 
+- The bot can have difficulty answering questions that require calculations, comparisons, or form submissions to provide answers. This includes questions that use comparative and superlative terms such as better or best, latest, or cheapest. 
 
 - The boost conversation capability doesn't remember context across multiple questions in the conversation (also known as "multi-turn questions"). 
     You should treat each question you ask the bot as part of testing this capability in isolation.
@@ -191,7 +223,7 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 During this preview, you won't be able to publish bots that have **Boost conversations** enabled. 
 
-If you'd like to publish a bot that has **Boost conversations** enabled, you'll need to ask your admin to enable it for your tenant in the **Power Platform admin center**. 
+If you'd like to publish a bot that has **Boost conversations** enabled, you need to ask your admin to enable it for your tenant in the **Power Platform admin center**. 
 
 
 :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
@@ -200,9 +232,9 @@ If you'd like to publish a bot that has **Boost conversations** enabled, you'll 
 
 ### Quotas
 
-Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. During preview, bots with "Boost conversations" enabled will have a limit on the amount of queries they can make that reach out to the URL you specified.
+Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. During preview, bots with "Boost conversations" enabled have a limit on the number of queries they can make that reach out to the URL you specified.
 
-During the preview, bots with **Boost conversations** enabled will have a limit on the amount of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas)
+During the preview, bots with **Boost conversations** enabled have a limit on the number of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas)
 
 ### Pricing
 
