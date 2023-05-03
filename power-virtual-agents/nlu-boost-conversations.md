@@ -31,7 +31,7 @@ Internal resources include:
 
  - SharePoint
  - OneDrive
- - Internal data sources
+ - Other internal information sources
  - (Project Wednesday)
  - DataVerse.
 
