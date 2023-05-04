@@ -114,6 +114,19 @@ You can also change the URL, disable **Boost conversations**, or change the leve
 
 You can now test your bot to see how well it responds to questions related to the content on the URL you specified.
 
+### Knowledge Sources
+
+This table summarizes knowledge resources GPT Answers can use to boost conversations.
+
+| Name | Source | Description | Number of Inputs | Authentication |
+| --- | --- | --- | --- | --- |
+| Bing Search | External | Searches the query in put on Bing; returning results only from provided websites | 4 public urls (for example, microsoft.com) | None |
+| [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
+| Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
+| OneDrive | Internal | Connects to a OneDrive url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
+| Other internal data | Internal | ... | ... | ... |
+| Project Wednesday | Internal | Azure Open AI knowledge repository | ... | ... |
+
 ### URL considerations
 
 The URL you provide represents the scope of content that will be used for generating responses. 
@@ -151,22 +164,9 @@ The URL you specify should host the content you want the bot to generate answers
 
 The following table summarizes sources your bot can use to gather information.
 
-### Knowledge Sources
-
-This table summarizes knowledge resources GPT Answers can use to boost conversations.
-
-| Name | Source | Description | Number of Inputs | Authentication |
-| --- | --- | --- | --- | --- |
-| Bing Search | External | Searches the query in put on Bing; returning results only from provided websites | 4 public urls (for example, microsoft.com) | None |
-| [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
-| Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| OneDrive | Internal | Connects to a OneDrive url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| Other internal data | Internal | ... | ... | ... |
-| Project Wednesday | Internal | Azure Open AI knowledge repository | ... | ... |
-
 ### Search and Summarize
 
-You can add GPT functionality to a topic using a "Search and summarize content node" in the flow of your topic. This allows you to control the information sources a specific node is using to boost your bot's conversation.
+You can add GPT Answers functionality to your bot by adding a "Search and summarize content" node in the flow of your topic.
 
 1. Open the authoring canvas for your topic
 
@@ -176,7 +176,11 @@ You can add GPT functionality to a topic using a "Search and summarize content n
 
 1. Add a Search and Summarize node (I can't currently do this in my preprod environment - likely don't know what I'm doing)
 
-1. Specify what information sources this node should access
+(Need an image here of the *plus with options menu; display S&S option*)
+
+1. Specify what information sources this node should access (for example, a url(s) or OneDrive)
+
+(Image with options menu)
 
 1. Save your changes
 
