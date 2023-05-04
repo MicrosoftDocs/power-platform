@@ -32,13 +32,15 @@ You also need to know that changing the backup retention period does not affect 
 For example, suppose you create an environment on a certain day, which we'll can call day N. On that day, the system will start taking backups of your environment and store them for a default period of 7 days. This means that on day N+7, you will have backups from day N to day N+7 available for restoration. However, if you decide to change the retention period to 14 days, the system will keep the backups for a longer time. On day N+14, you will have backups from day N to day N+14 available for restoration. This way, you can have more flexibility and control over your backup data.
  
 ## Prepare your environment for PowerShell
-This section uses the PowerShell for Power Platform administrator module, which is the recommended PowerShell module for interacting with admin capabilities. To get started with the Power platform PowerShell module, see Programmability and Extensibility - PowerShell - Installation - Power Platform | Microsoft Learn
- 
+This section uses the PowerShell for Power Platform administrator module, which is the recommended PowerShell module for interacting with admin capabilities. To get started with the Power platform PowerShell module, see [Get started with PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started).
+
 ## Set retention period
 Set-AdminPowerAppEnvironmentBackupRetentionPeriod
+
 Supply values for the following parameters:
-EnvironmentName: <Environment Id>
-NewBackupRetentionPeriodInDays: <7 or 14 or 21 or 28>
+
+- EnvironmentName: <Environment Id>
+- NewBackupRetentionPeriodInDays: <7 or 14 or 21 or 28>
 
  
 ## System backups 
