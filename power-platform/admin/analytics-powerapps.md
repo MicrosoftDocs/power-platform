@@ -53,7 +53,7 @@ There are six reports available for Power Apps admins. The last viewed environme
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics error report.](media/powerapps-analytics-toast-errors.png "Power Apps analytics error report")
 
-**Service Performance** report provides details of all standard and custom connectors to understand performance bottlenecks and client versus service API issues. An environment admin will get insights into:  
+**Service Performance** report provides details of all standard and custom connectors to understand performance bottlenecks and client versus service API issues. An environment admin gets insights into:  
 
 - Connectors used in the environment. 
 - Best and least performant service and the API service response times.  
@@ -71,9 +71,9 @@ All the service performance KPI's can be filtered with attributes like a specifi
 
 Admins can gain insights into the number of connectors associated with each app, the specific connectors being used by each app, and the owner of the connector. It also provides data on the number of times the app has been shared, the number of app sessions, and the last accessed time for visibility into high usage apps and connectors. At this time, this functionality is limited to only connections that the admin owns, and only activity on those specific connections.  
 
-**A sample scenario**: An admin can gain insight into the number of shares and usage of a specific finance app using one or more connectors. This will allow the admin to engage with the app owner to ensure no sensitive data is inadvertently being shared through the app.  
+**A sample scenario**: An admin can gain insight into the number of shares and usage of a specific finance app using one or more connectors. This allows the admin to engage with the app owner to ensure no sensitive data is inadvertently being shared through the app.  
 
-Note that the current iteration of this specific report does not have a download report feature. 
+The current iteration of this specific report does not have a download report feature. 
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics connector report.](media/powerapps-analytics-connector.png "Power Apps analytics connector report")
