@@ -1,18 +1,14 @@
 ---
-title: "Enable Preview features to get early access"
+title: "Enable preview features to get early access"
 description: "Learn how to enable Preview features that have limited functionality to get early access and provide feedback."
-author: jimholtz
+author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/19/2022
+ms.date: 05/4/2023
 ms.subservice: admin
-ms.author: jimholtz
-search.audienceType: 
-  - admin
+ms.author: kvivek
 ---
-# What are Preview features, and how do I enable them? 
-
-<!-- legacy procedure -->
+# What are preview features, and how do I enable them? 
 
 Preview features are features that aren't complete, but are made available on a "preview" basis so customers can get early access and provide feedback. Preview features:  
   
@@ -66,9 +62,16 @@ To enable a Preview feature, you must be an administrator.
   
 6. For each Preview feature you want to enable, select **Yes**.  
   
-![System settings preview.](media/system-settings-previews75.png "System settings preview")
+    :::image type="content" source="media/system-settings-previews75.png" alt-text="System settings preview":::
 
 ## How do I report an issue or provide other feedback?  
-If you'd like to provide feedback, offer suggestions, or report issues for a Preview feature, please go to [Application Ideas](https://experience.dynamics.com/ideas/). This website provides a collaboration platform for gathering actionable feedback to build and improve products and services.
+If you'd like to provide feedback, offer suggestions, or report issues for a preview feature, go to the appropriate ideas website that provides a collaboration platform for gathering actionable feedback to build and improve products and services:
+
+- [Power Apps ideas](https://aka.ms/powerappsidea)
+- [Power Automate ideas](https://aka.ms/powerautomateideas)
+- [Power BI ideas](https://aka.ms/powerbiideas)
+- [Power Pages ideas](https://aka.ms/powerpagesideas)
+- [Power Virtual Agents ideas](https://aka.ms/powervirtualagentideas)
+- [Power Platform governance and administration ideas](https://experience.dynamics.com/ideas/categories/?forum=1afbfe0a-5439-ea11-a813-000d3a579c35&forumName=Power%20Platform%20Governance%20and%20Administration)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
