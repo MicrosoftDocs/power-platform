@@ -62,12 +62,12 @@ There are six reports available for Power Apps admins. The last viewed environme
 - The number of HTTP 500 error codes of connectors indicating issues around the server not responding to calls from the client. 
 - The number of successful connection requests. 
 
-All the service performance KPI's can be filtered with attributes like a specific service or connector, device platform, player version, and country, state, or city to drill down into the specific API. 
+All the service performance KPIs can be filtered with attributes like a specific service or connector, device platform, player version, and country, state, or city to drill down into the specific API. 
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics service performance report.](media/powerapps-analytics-service-performance.png "Power Apps analytics service performance report")
 
-**Connectors report** provides visibility into the standard and custom connectors being used by canvas apps. The last 28 days of data is visible at the environment level.  
+**Connectors report** provides visibility into the standard and custom connectors being used by canvas apps. The last 28 days of data are visible at the environment level.  
 
 Admins can gain insights into the number of connectors associated with each app, the specific connectors being used by each app, and the owner of the connector. It also provides data on the number of times the app has been shared, the number of app sessions, and the last accessed time for visibility into high usage apps and connectors. At this time, this functionality is limited to only connections that the admin owns, and only activity on those specific connections.  
 
