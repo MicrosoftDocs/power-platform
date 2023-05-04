@@ -182,6 +182,10 @@ Select a rule set that will be executed as part of this build. Values: A valid G
 
 SAS Uri pointing to solution.zip to be analyzed
 
+#### `--saveResults` `-sav`
+
+Uses current environment to store solution analysis results.
+
 [!INCLUDE [solution-check-remarks](includes/solution-check-remarks.md)]
 
 ## pac solution clone
