@@ -5,9 +5,9 @@ keywords: "PVA"
 ms.date: 04/28/2023
 ms.service: power-virtual-agents
 ms.topic: article
-author: 
-ms.author: 
-ms.reviewer: 
+author: KendalBond007
+ms.author: iawilt
+ms.reviewer: iawilt
 manager: 
 ms.custom: authoring, ceX
 ms.collection: virtual-agent
@@ -29,7 +29,7 @@ By default, topics use the **Phrases** trigger, meaning they are triggered when 
 The following trigger types exist for determining when a topic should be fired.
 
 > [!TIP]
-> When a message is received from a user to a bot, the payload on which it arrives is called an [Activity](https://learn.microsoft.com/en-us/javascript/api/botframework-schema/activity?view=botbuilder-ts-latest), where the type of Activity is a ***message***. Bots can also receive activities of other types, usually sent by the channel being used to let the bot know that something has happened or changed. For example, Microsoft Teams sends hidden activities of type ***invoke***, which let the bot know that the Teams user did something, such as interacting with a Message Extension. Many of the available triggers discussed in this allow you to intercept and handle activities of different types.
+> When a message is received from a user to a bot, the payload on which it arrives is called an [Activity](https://learn.microsoft.com/javascript/api/botframework-schema/activity?view=botbuilder-ts-latest), where the type of Activity is a ***message***. Bots can also receive activities of other types, usually sent by the channel being used to let the bot know that something has happened or changed. For example, Microsoft Teams sends hidden activities of type ***invoke***, which let the bot know that the Teams user did something, such as interacting with a Message Extension. Many of the available triggers discussed in this allow you to intercept and handle activities of different types.
 
 <!-- best viewed without wordwrap -->
 | Type     | Description                                                                                                                                |
@@ -56,7 +56,7 @@ The following trigger types exist for determining when a topic should be fired.
 
 The **Condition** property allows you to specify a condition, or conditions, which must be met in order for the trigger to fire. In the example below, the trigger, and its associated topic, would only be fired if the channel being used by the end user is Microsoft Teams.
 
-    :::image type="content" source="media/authoring-triggers/trigger-condition.png" alt-text="Screenshot of the trigger condition property.":::
+:::image type="content" source="media/authoring-triggers/trigger-condition.png" alt-text="Screenshot of the trigger condition property.":::
 
 You can also optionally switch to the full Power Fx editor, to author more complex conditions, by switching the **Builder** dropdown to **Formula**.
 
@@ -86,6 +86,6 @@ Some of the individual trigger types have additional properties, beyond **Condit
 
 **Duration** - This determines the duration that the user should be inactive before this trigger, and its associated topic, is fired. The default is 30 minutes. You can choose from the available options within the dropdown or, alternatively, switch to the formula editor to provide a Power Fx formula to determine the value.
 
-    :::image type="content" source="media/authoring-triggers/inactivity-duration.png" alt-text="Screenshot of the duration property for the inactivity trigger.":::
+:::image type="content" source="media/authoring-triggers/inactivity-duration.png" alt-text="Screenshot of the duration property for the inactivity trigger.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
