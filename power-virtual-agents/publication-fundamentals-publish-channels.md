@@ -61,7 +61,7 @@ Test your bot after it's published. Select the **demo website** link to open a p
 > Share the demo website URL with members of your team or other stakeholders to try out the bot. The demo website isn't intended for production use. You shouldn't share the URL with customers.  
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Publish the latest bot content
 
@@ -150,7 +150,7 @@ Different channels have different end-user experiences. The following table show
 | [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)             | Add your bot to Azure Bot Service channels (developer coding required).           |
 
 
-# [Teams app](#tab/teams)
+# [Teams](#tab/teams)
 
 Once you're satisfied with your bot's content and quality, you can publish your bot to allow users to engage with your bot. You must publish your bot at least once for the user to chat with the bot in Microsoft Teams.
 

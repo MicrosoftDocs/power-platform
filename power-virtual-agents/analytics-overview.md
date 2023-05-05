@@ -49,7 +49,7 @@ In Power Virtual Agents, in the navigation menu, select **Analytics**.
 
 Conversation transcripts are available immediately. Analytics are updated every hour.
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Analytics in Power Virtual Agents
 

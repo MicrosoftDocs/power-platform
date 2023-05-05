@@ -102,7 +102,7 @@ The *botContent.zip* file contains two files:
 - *botContent.yml* contains the bot's topics and other content, including entities and variables used. 
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Test a topic in the Test bot pane
 

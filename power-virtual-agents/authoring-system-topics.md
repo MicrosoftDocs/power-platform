@@ -92,7 +92,7 @@ Prompts customers to sign in when user authentication is enabled. Learn how to [
 Triggers at the beginning of the conversation when users are required to sign in, or when the conversation reaches a node that uses authentication variables.
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 The table below lists all available system topics, their intended purpose, and a small sample of the built-in trigger phrases.
 

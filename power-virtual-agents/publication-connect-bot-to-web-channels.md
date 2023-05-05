@@ -77,7 +77,7 @@ When your bot is ready for customers, add it to your website as an IFrame code s
 1. Provide the snippet to your web developer to add the bot to your website.
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 You can edit the welcome message and suggested trigger phrases for the demo website. A welcome message helps prompt your teammates for what they should ask the bot about.
 

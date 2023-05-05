@@ -96,7 +96,7 @@ The following extensions aren't required to hand-off to Omnichannel for Customer
 
 Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
 
-# [Classic](#tab/classic)
+# [Web app](#tab/classic)
 
 ## Prerequisites
 

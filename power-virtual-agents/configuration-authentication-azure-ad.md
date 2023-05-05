@@ -178,7 +178,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
     :::image type="content" source="media/configure-web-sso/paste-code.png" alt-text="Screenshot of a successful user authentication in a bot conversation, with the validation code highlighted.":::
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 Adding authentication allows users to sign in, giving your bot access to a restricted resource or information.
 

@@ -27,7 +27,7 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Explore the home page
 

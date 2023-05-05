@@ -114,7 +114,7 @@ A customer may go through several topics prior to escalating. Power Virtual Agen
 
 If there are topics with similarly named context variables, Power Virtual Agents promotes the most recently defined topic variable.
 
-# [Classic](#tab/classoc)
+# [Web app](#tab/classoc)
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n4G1]

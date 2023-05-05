@@ -26,7 +26,7 @@ You can share your bots with others to grant them special permissions. There are
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization.
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Share a bot for chat
 

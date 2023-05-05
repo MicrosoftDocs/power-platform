@@ -313,7 +313,7 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
 After you've designed and tested your bot, [publish it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Use system and sample topics
 
