@@ -65,7 +65,7 @@ In the navigation menu, select **Chatbots** to open the **Chatbots** page and vi
 
     :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
     
-    <<IMAGE NEEDS UPDATE>>
+    <<----IMAGE NEEDS UPDATE------>>
   
 7. You can choose to Boost Conversations be providing a URL to generate AI answers from. <<LET'S ADD POINTERS AND TEXT FROM THE GPT ANSWERS FEATURE HERE>. This is optional. 
   With a bot name and langauge selected, you can select Create and create your bot.
