@@ -24,6 +24,8 @@ This quickstart walks you through making a bot that uses new features and improv
 
 ## Create your bot
 
+<<---- Are we planning to keep this page? Because the create bot content should be the same as what's in the fundamentals-get started page. at GA users will be creating the new bots by default', so we can copy content that I just updated on the fundamentals-get started page if we plan to keep it ---->>
+
 Power Virtual Agents now has an app-level home page that isn't specific to any bot. On this page, you can create a bot and view a list of bots you've worked on recently. You can also find learning resources, such as videos, documentation, and learning paths.
 
 1. In the navigation menu, select **Create** (**+**). Or, select **Home**, and then select **+ Create a bot**.
