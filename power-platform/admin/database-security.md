@@ -76,6 +76,7 @@ In addition to the predefined security roles listed above for Dataverse, there m
 |---------|---------|
 |Power Apps     |    [Predefined security roles for environments with a Dataverse database](#environments-with-a-dataverse-database)    |
 |Power Automate     |  [Security and privacy ](/power-automate/process-advisor-security)   |
+|Power Pages  | [Roles required for website administration](/power-pages/admin/admin-roles)  |
 |Power Virtual Agents     |   [Assign environment security roles](/power-virtual-agents/admin-share-bots#assign-environment-security-roles) |
 
 ### Dataverse for Teams environments 
