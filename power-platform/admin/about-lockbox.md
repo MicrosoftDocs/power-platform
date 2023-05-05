@@ -4,7 +4,7 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2023
+ms.date: 05/05/2023
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -119,10 +119,10 @@ Admins can directly export the result set based on the filter criteria.
 :::image type="content" source="media/lockbox-audit-search-results.png" alt-text="Lockbox audit search results.":::
 
 Customer Lockbox produces two types of audit logs:
-1.	Logs that are initiated by Microsoft, that correspond to lockbox request being created, expired, or access session ended. This set of audit logs do not correspond to a specific user ID, since the actions are initiated by Microsoft.
-2.	Logs that are initiated by end user actions such as approve or deny a lockbox request. If the user that performs these operations does not have E5 license assigned, the logs are filtered out and will not show up in the audit logs.
+1.	Logs that are initiated by Microsoft and correspond to lockbox request being created, expired, or when access sessions end. This set of audit logs do not correspond to a specific user ID since the actions are initiated by Microsoft.
+2.	Logs that are initiated by end user actions, such as when a user approves or denies a lockbox request. If the user that performs these operations does not have an E5 license assigned, the logs are filtered out and will not show up in the audit logs.
 
-By default, the audit logs are preserved for a duration of one year. You need a 10-Year Audit Log Retention add-on license to retain their audit records for 10 years. See [here](https://learn.microsoft.com/en-us/microsoft-365/compliance/audit-solutions-overview?view=o365-worldwide#audit-premium-1) for more detail on audit log retention.
+By default, the audit logs are preserved for a duration of one year. You need a 10-Year Audit Log Retention add-on license to retain audit records for 10 years. See [Audit (Premium)](/microsoft-365/compliance/audit-solutions-overview?view=o365-worldwide#audit-premium-1) for more details on audit log retention.
 
 ## Licensing requirements for Customer Lockbox
 
