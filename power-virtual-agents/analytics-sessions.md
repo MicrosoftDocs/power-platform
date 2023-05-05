@@ -70,7 +70,7 @@ The session transcript is a comma-separated values (CSV) file that contains the 
 - **TopicId**: The unique identifier of the last authored topic triggered in the session
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 1. In the navigation menu, select **Analytics**. Go to the **Sessions** tab.
 

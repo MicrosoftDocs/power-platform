@@ -110,13 +110,13 @@ When you create a topic, a **Trigger phrases** node is inserted for you. Add mor
 
 The following table lists the types of nodes you can insert in a topic:
 
-| Option                                                            | Description                                           |
-| :---------------------------------------------------------------- | :---------------------------------------------------- |
-| [**Send a message**](authoring-send-message.md)                   | Send the customer a message.                         |                       |
-| [**Add a condition**](authoring-using-conditions.md)              | Branch your conversation based on a condition.        |
-| [**Set a variable value**](authoring-variables.md#set-a-variable) | Set a value for a new or existing variable.           |
-| [**Topic management**](authoring-topic-management.md)             | Redirect, transfer, or end the topic or conversation. |
-| [**Call an action**](advanced-flow.md)                            | Call a Power Automate flow.                           |
+| Option | Description |
+| --- | --- |
+| [**Send a message**](authoring-send-message.md) | Send the customer a message. |
+| [**Add a condition**](authoring-using-conditions.md) | Branch your conversation based on a condition. |
+| [**Set a variable value**](authoring-variables.md#set-a-variable) | Set a value for a new or existing variable. |
+| [**Topic management**](authoring-topic-management.md) | Redirect, transfer, or end the topic or conversation. |
+| [**Call an action**](advanced-flow.md) | Call a Power Automate flow. |
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of node types to insert after a Trigger Phrases node.":::
 
@@ -313,7 +313,7 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
 After you've designed and tested your bot, [publish it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Use system and sample topics
 

@@ -136,7 +136,7 @@ Don't use `User.AccessToken` in **Message** nodes or in flows that you don't tru
 - `Initializer` indicates that if the user hasn't signed in yet, and they reach a point in the conversation that uses authentication variables, they'll be prompted to sign in.
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Authentication variables
 

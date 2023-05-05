@@ -186,7 +186,7 @@ Use the **See solution layers** option to see all solutions that a component is 
 1. In the **Solution Layers** page, select the unmanaged layer, and then select **Remove unmanaged layer**.
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Create a solution to manage export and import
 

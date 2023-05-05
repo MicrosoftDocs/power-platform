@@ -41,7 +41,7 @@ You can read more about Power Virtual Agents, or get started creating bots now a
 > [!div class="nextstepaction"]
 > [Get started now](https://aka.ms/trypva)
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Highlights of Power Virtual Agents
 

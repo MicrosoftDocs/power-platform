@@ -28,7 +28,7 @@ You can configure your bot to start a conversation conversation with a user. You
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 By default, chatbots created with Power Virtual Agents and [published to a website](publication-connect-bot-to-web-channels.md) will load without a greeting, and will passively wait for the user to start the conversation.
 

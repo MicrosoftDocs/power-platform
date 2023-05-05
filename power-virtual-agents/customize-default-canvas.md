@@ -35,7 +35,7 @@ Your bot's look and feel is defined by its canvas. To customize your bot, you mu
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
 

@@ -22,7 +22,7 @@ You can go beyond basic authoring in Power Virtual Agents by taking advantage of
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 These features enhance and improve upon the [authoring experience](authoring-fundamentals.md) by letting you:
 

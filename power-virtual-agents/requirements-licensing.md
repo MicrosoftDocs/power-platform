@@ -34,7 +34,7 @@ More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Buy a tenant license
 

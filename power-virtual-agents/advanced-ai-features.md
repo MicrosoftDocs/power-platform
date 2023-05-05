@@ -23,7 +23,7 @@ ms.collection: virtual-agent
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### AI models in Power Virtual Agents - background
 

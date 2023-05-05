@@ -27,7 +27,7 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Explore the home page
 
@@ -35,55 +35,63 @@ Power Virtual Agents has an app-level home page that isn't specific to any bot. 
 
 :::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
+  <<----IMAGE NEEDS UPDATE------>>
+
 In the navigation menu, select **Chatbots** to open the **Chatbots** page and view all the bots you have access to in this environment. On the page, you can see metadata about these bots, including the owner, when it was last published, and when it was last modified. Use this page to navigate to another bot that you have access to.
 
 :::image type="content" source="media/fundamentals-get-started/chatbot-list.png" alt-text="Screenshot of the list of chatbots.":::
 
-### Choose a bot type
+  <<----IMAGE NEEDS UPDATE------>>
 
-> [!IMPORTANT]
-> In this section, you'll make a choice on the type of bot you want to create. This decision affects which documentation to follow next.
+### Create a bot
 
 1. Go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA). Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
-1. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts are currently not supported.
+2. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts are currently not supported.
 
-1. When you first sign up, a default [Power Apps environment](environments-first-run-experience.md) is made for you. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment, select a different environment from the environment picker.
+3. When you first sign up, a default [Power Apps environment](environments-first-run-experience.md) is made for you. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment, select a different environment from the environment picker.
 
     :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the environment picker.":::
+    
+    <<----IMAGE NEEDS UPDATE------>>
 
     > [!NOTE]
     > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
     > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
-1. In the navigation menu, select **Create**. You can also select **Home** then select **Create a bot**.
-
-1. Choose one of the following options:
-
-    :::image type="content" source="media/fundamentals-get-started/create-bot-tiles.png" alt-text="Screenshot of the two chat bot creation options.":::
-
-    - Use **Build for production** to create production bots that are intended to be deployed to your customers. If you choose this option, continue to [Create a bot](#create-a-bot).
-
-    - Use **Try the unified canvas (preview)** to test out the new authoring features in preview. These preview bots are supported in English only and aren't recommended for deploying for customer use. If you choose this option, refer to the [quickstart for preview bots](quickstart-preview.md) to continue creating your bot.
-
-### Create a bot
-
-1. For **Name your bot**, enter a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
-
-1. For **What language will your bot speak**, select the language you want your bot to speak.
+4. Once signed up, you will land on the App Homepage. In the left navigation menu, select **Home** then select **Create a bot**.
+5. A whole page wizard will start with a couple steps to get your bot created very quickly. A default bot name is there. You can change this to be something generic to your company or specific to the scenario you are tailoring your bot to.
+6. For **What language do you want your bot to speak?**, select the language you want your bot to speak. The langugage dropdown is prepopulated with the browser locale.
 
     :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
+    
+    <<----IMAGE NEEDS UPDATE------>>
+  
+7. You can choose to Boost Conversations be providing a URL to generate AI answers from. <<LET'S ADD POINTERS AND TEXT FROM THE GPT ANSWERS FEATURE HERE>. This is optional. 
+  With a bot name and langauge selected, you can select Create and create your bot.
 
-1. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
+  
+There are optional customizations and enhancements you can make before getting your bot created.
+  
+  a. Choose **Edit advanced options** on the bottom left to see and edit advanced options. You can continue with bot creation without going into these advanced options.
+  
+  b. Here you can choose a bot icon to give your bot a personality and represent your business scenarios better. You can select from the pre-populated list if icons or upload a custom icon for your bot. This is the icon used in the chat window when the bot responds.
+  
+  c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with bot topics. <<---link to lesson topics docs page --->>
+  
+  d. There are a couple more advanced options to select the solution your bot will be in and the schema name. These are advanced options which can be changed later, but provided upfront for specific customization.
+ 
+8. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
 
-1. After a few minutes, you'll be redirected to the bot's overview page. You'll see a banner at the top of the Power Virtual Agents portal indicating that the bot is still being built. While your bot is building, you can't save any edits during this time, but you can:
+  
+  
+1. After a few minutes, you'll be redirected to the bot's overview page. Certain operations like Publish and Authentication configuration may take a few more minutes to be ready for your bot, but you can go ahead and:
     - explore the overall user interface
-    - look at topics
+    - explore topics and start creating and editing topics
     - experiment with the preloaded user topics and system topics
     - interact with your bot using the Test Canvas
     - review [additional documentation on authoring topics](authoring-fundamentals.md) in your bot
 
-1. When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify any User or System topic, test out your content changes, or deploy your bot.
 
 > [!TIP]
 > To navigate back to the app-level home page from your bot, in the navigation menu, select **Chatbots**.
