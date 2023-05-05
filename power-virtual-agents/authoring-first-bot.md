@@ -25,7 +25,7 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 You can only see bots in the version of Power Virtual Agents where you created them.  
 

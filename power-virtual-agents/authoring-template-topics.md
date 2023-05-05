@@ -15,24 +15,17 @@ ms.collection: virtual-agent
 
 # Use lesson topics in Power Virtual Agents
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
-Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These lessons range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
-
-## Prerequisites
-
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-
-
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
-
 Power Virtual Agents includes sample topics with every new bot to help you understand the capabilities of bot topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md), [variables](authoring-variables.md), and [custom entities](advanced-entities-slot-filling.md).
 
 The topics are functional, but they aren't designed for production use. They're examples to help you learn how to create content for your bots.
 
-### Use sample topics to understand how topics work
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- If you're using a bot that has **Classic** added to the name, you'll need to upgrade your bot to see the latest versions of the sample topics. If you can't upgrade, see the [archived version of this content](#).
+
+
+## Use sample topics to understand how topics work
 
 1. Open your bot, or create one, and go to the **Topics** tab.
 
@@ -65,7 +58,7 @@ This sample asks customers to enter the state to ship their order to. The bot us
 
 This sample uses [a custom entity](advanced-entities-slot-filling.md), **Usage Type**, to recognize the user's response to a multiple-choice question, and stores it in the **UsageType** variable. A condition uses this variable to suggest a product to order.
 
-# [Classic](#tab/web)
+
 
 ### Access and use lesson topics for new bots
 

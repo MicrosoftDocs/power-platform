@@ -140,7 +140,7 @@ You can also add the variable to a [custom canvas](customize-default-canvas.md).
         .catch(err => console.error("An error occurred: " + err));
     ```
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 Bot variables apply during a single user session. You specify which variables should be treated as bot variables to distinguish them from topic-level variables.
 

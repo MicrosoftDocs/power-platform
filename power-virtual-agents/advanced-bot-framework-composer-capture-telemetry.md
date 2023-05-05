@@ -104,7 +104,7 @@ Much of the specific activity data received from PVA is stored in the `customDim
 | text         | Text in message                 | `find a coffee shop`                                    |
 | designMode         | Conversation happened within the test canvas                 | `True` / `False`                                     |
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 [!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
 

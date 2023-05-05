@@ -147,7 +147,7 @@ Use the code provided in the [Power Virtual Agents GitHub repo](https://github.c
 - [Azure App Registration](/azure/active-directory/develop/quickstart-register-app)
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
