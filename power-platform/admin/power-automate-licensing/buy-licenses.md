@@ -67,7 +67,7 @@ After the purchase completes, the environment admin must assign the available (p
 
 ### Assign per flow license
 
-Here are the two steps you must take if you want to assign a per flow license to a user.
+Here are the two steps you must take if you want to assign a per flow license to a flow.
 
 1. Allocate the per flow license to an environment in the Power Platform admin center.
 
