@@ -12,11 +12,6 @@ contributors:
   - garrettm-msft 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Power Platform URLs and IP address ranges
 

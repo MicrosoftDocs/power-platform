@@ -7,7 +7,6 @@ ms.service: power-virtual-agents
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring, bap-template
 ms.collection: virtual-agent

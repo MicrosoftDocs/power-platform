@@ -6,7 +6,6 @@ ms.date: 9/22/2020
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: clmori
 ms.custom: authentication, ceX, teams
 ms.service: power-virtual-agents

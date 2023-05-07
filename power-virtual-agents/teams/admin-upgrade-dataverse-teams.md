@@ -7,7 +7,6 @@ ms.date: 2/8/2021
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "environments, admin, ceX, teams"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

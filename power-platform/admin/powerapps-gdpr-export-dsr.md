@@ -10,11 +10,6 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data

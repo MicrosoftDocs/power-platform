@@ -3,10 +3,11 @@ title: "Updating the Center of Excellence (CoE) Starter Kit"
 description: "The CoE Starter Kit is updated each month. Learn best practices for managing the update process in your organization."
 author: stjeffer
 ms.topic: conceptual
-ms.date: 03/14/2023
+ms.date: 04/13/2023
 ms.subservice: guidance
 ms.author: stjeffer
-ms.reviewer: kvivek
+ms.reviewer: sericks
+
 ---
 
 # Updating the Center of Excellence (CoE) Starter Kit
@@ -157,6 +158,10 @@ Once you've removed unmanaged layers, you can import the new solution version:
 1. This app provides a guided step by step experience through the configuration steps. During an upgrade, it will show you the solution history, any components with unmanaged layers and any new apps, flows and environment variables that have been added during this upgrade.
 
 1. Once you have finished this step, move on to [testing](#testing-strategy).
+
+## Updating the Audit Log solution
+
+Connections to custom connectors have to be re-established after solution upgrade. If you are using the Audit Log solution, [reset the connection](https://github.com/microsoft/coe-starter-kit/issues/1424) to the custom connector.
 
 ## Testing strategy
 

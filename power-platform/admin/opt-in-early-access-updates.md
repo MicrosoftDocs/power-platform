@@ -9,11 +9,6 @@ ms.topic: conceptual
 ms.date: 01/31/2023
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Opt in to early access updates 
 

@@ -8,14 +8,9 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2023
+ms.date: 03/31/2023
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Create or edit a security role to manage access 
 
@@ -37,17 +32,11 @@ For information on predefined security roles, see [Predefined security roles](da
   
 2. In the Microsoft Power Platform admin center, select an environment. 
 
-3. Select **Settings** > **Users + permissions** > **Security roles**.  
+3. Select **Settings** > **Users + permissions** > **Security roles (Preview)**.  
    
 4. On the Actions toolbar, select **New**.  
   
-5. Set the privileges on each tab.  
-  
-    To change the access level for a privilege, select the symbol until you see the symbol you want. The possible access levels depend on whether the record type is organization-owned or user-owned.  
-  
-   > [!TIP]
-   >  To cycle through the access levels, you can also select the privilege column heading, or select the record type multiple times.  
-   >  There are a set of minimum privileges that are required in order for the new security role to be used - see below Minimum Privileges for common tasks.
+5. Specify privileges for each security role using the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience.
   
 6. When you have finished configuring the security role, on the toolbar, select or tap **Save and Close**.  
   
@@ -63,7 +52,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 2. In the Power Platform admin center, select an environment. 
 
-3. Select **Settings** > **Users + permissions** > **Security roles**.  
+3. Select **Settings** > **Users + permissions** > **Security roles (Preview)**.  
   
 4. Select the Security role you want to copy from.
 
@@ -75,11 +64,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 8. When Copying Role is complete, navigate to each tab, ie Core Records, Business Management, Customization, etc.
 
-9. Set the privileges on each tab.
-
-> [!TIP]
->  To cycle through the access levels, you can also select the privilege column heading, or select the record type multiple times.  
->  There are a set of minimum privileges that are required in order for the new security role to be used - see below Minimum Privileges for common tasks.
+9. Specify privileges for each security role using the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience.
 
 ## Edit a security role  
  Before you edit an existing security role, make sure that you understand the principles of data access. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Controlling Data Access](../admin/security-roles-privileges.md)  
@@ -97,17 +82,11 @@ For information on predefined security roles, see [Predefined security roles](da
   
 2. In the Power Platform admin center, select an environment. 
 
-3. Select **Settings** > **Users + permissions** > **Security roles**.  
+3. Select **Settings** > **Users + permissions** > **Security roles (Preview)**.  
   
 4. In the list of security roles, double-select or tap a name to open the page associated with that security role.  
   
-5. Set the privileges on each tab.  
-  
-    To change the access level for a privilege, select the symbol until you see the symbol you want. The possible access levels depend on whether the record type is organization-owned or user-owned.  
-  
-   > [!TIP]
-   >  To cycle through the access levels, you can also select the privilege column heading, or select the record type multiple times.  
-   >  There are a set of minimum privileges that are required in order for the new security role to be used - see below Minimum Privileges for common tasks. 
+5. Specify privileges for each security role using the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience.
     
 6. When you have finished configuring the security role, on the toolbar, select or tap **Save and Close**.  
   
@@ -132,13 +111,15 @@ Copy the **App Opener** security role to create a custom security role by follow
   
   - To render an table grid: assign Read privilege on the table  
   
-  - To render tables: assign Read privilege on the table  
+  - To render tables: assign Read privilege on the table 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW10lgO]
   
 ## Privacy notices  
 [!INCLUDE[cc_privacy_crm_for_phones](../includes/cc-privacy-crm-for-phones.md)]
   
 [!INCLUDE[cc_privacy_crm_for_tablets](../includes/cc-privacy-crm-for-tablets.md)]
-  
+  %7BID%7D
 [!INCLUDE[cc_privacy_crm_go_offline_in_outlook](../includes/cc-privacy-crm-go-offline-in-outlook.md)]
   
 [!INCLUDE[cc_privacy_crm_sync_to_outlook](../includes/cc-privacy-crm-sync-to-outlook.md)]

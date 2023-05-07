@@ -7,7 +7,6 @@ ms.date: 01/23/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "analysis, licensing, ceX, teams"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

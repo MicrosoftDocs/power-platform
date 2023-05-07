@@ -4,18 +4,16 @@ description: "Review and configure tenant-level settings linked from this page."
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 10/12/2022
+ms.date: 05/01/2023
 ms.subservice: admin
 ms.author: ampatra
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+contributors:
+- marcelbf
 ---
+
 # Tenant settings 
 
 Use the Tenant settings page to review and manage tenant-level settings.
@@ -29,9 +27,10 @@ The following settings apply to your tenant—all environments contained within 
 
 |Name  |Description  |
 |---------|---------|
-|[Weekly digest](managed-environment-usage-insights.md)*     | Manage additional recipients for the weekly digest email for Managed Environments.        |
+|[Weekly digest](managed-environment-usage-insights.md)*     | Manage more recipients for the weekly digest email for Managed Environments.        |
 |[Production environment assignments](control-environment-creation.md)   | Control who can create and manage production and sandbox environments.        |
 |[Trial environment assignments](control-environment-creation.md)       | Control who can create and manage trial environments.        |
+|[Developer environment assigments](control-environment-creation.md)   | Control who can create and manage developer environments.  |
 |[Add-on capacity assignments](capacity-add-on.md#control-who-can-allocate-add-on-capacity)    | Control who can allocate add-on capacity to an environment.        |
 |[Analytics](tenant-level-analytics.md)   | Enable tenant-level analytics.        |
 

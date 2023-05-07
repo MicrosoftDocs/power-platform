@@ -6,11 +6,10 @@ keywords: "PVA, Teams"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: digantak
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
-ms.custom: "multi-geo, gdpr, ce06102020, teams"
+ms.custom: "multi-geo, ce06102020, teams"
 ---
 
 # Regional settings and data locations for organizations using Power Virtual Agents in Teams

@@ -7,8 +7,6 @@ ms.date: 12/15/2022
 ms.subservice: admin
 ms.author: deonhe
 ms.reviewer: deonhe
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 3/13/2023
+ms.date: 4/19/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -34,6 +34,13 @@ Code Generator for Dataverse APIs and Tables
 Builds a code model for Dataverse APIs and Tables
 
 [!INCLUDE [modelbuilder-build-intro](includes/modelbuilder-build-intro.md)]
+
+
+### Required Parameters
+
+#### `--outdirectory` `-o`
+
+Write Directory for entity, message and optionset files
 
 
 ### Optional Parameters
@@ -81,10 +88,6 @@ The namespace for the generated code.  The default namespace is the global names
 #### `--optionsetstypesfolder` `-otf`
 
 Folder name that will contain option sets.  default is OptionSets
-
-#### `--outdirectory` `-o`
-
-Write Directory for entity, message and optionset files
 
 #### `--serviceContextName` `-sctx`
 

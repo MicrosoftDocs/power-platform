@@ -2,7 +2,6 @@
 title: "Change environment type | MicrosoftDocs"
 description: Change the environment type
 author: jimholtz
-manager: kvivek
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -11,11 +10,6 @@ ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Change the environment type
 

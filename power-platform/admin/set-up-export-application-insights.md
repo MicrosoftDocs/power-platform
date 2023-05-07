@@ -11,11 +11,6 @@ ms.author: tjvass
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Set up exporting to Application Insights 
 
@@ -25,7 +20,7 @@ search.app:
    - For the Application Insights environment, you must have contributor, writer, or admin rights.
    - The Application Insights environment must be unique for an environment or tenant. Note that Application Insights out-of-the-box reports won't function correctly if a single Application Insights environment contains data from multiple environments.
 
-2. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need to be a member of the System Administrator role for an environment. 
+2. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need to be a member of one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin. 
 
 ## Set up export to your Applications Insights environment from the Power Platform admin center
 

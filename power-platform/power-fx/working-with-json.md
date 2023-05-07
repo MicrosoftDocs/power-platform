@@ -1,26 +1,22 @@
 ---
-title: Working with JSON (experimental)
+title: Working with JSON in Power Fx (experimental)
 description: Guide to working with JSON in Power Fx.
 author: jorisdg
-
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
 ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: jorisde
-search.audienceType: 
-  - maker
-search.app: 
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
   - jorisdg
 ---
-# Working with JSON (experimental)
+# Working with JSON in Power Fx (experimental)
 
 > [!IMPORTANT]
+>
 > - This is an experimental feature.
 > - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview)
 > - The behavior that this article describes is available only when the _ParseJSON function and untyped objects_ experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
@@ -51,6 +47,33 @@ Set( quantity, Value ( untyped.Quantity ) );
 Set( release, DateValue ( untyped.ReleaseDate ) );
 Set( preorder, Boolean ( untyped.AvailableForPreOrder ) );
 ```
+
+It is generally a good idea to explicitly convert an untyped object's value to a specific type. Setting an untyped object as a variable value makes the variable an **Untyped object** as well. So, converting such value explicitly when setting to a variable is likely needed. But in most cases untyped object values will convert to a specific type automatically ("coerce") when used as function parameters where the type is a simple type like boolean, number, or text, and the function's parameter profile does not have potential conflicting overloads.
+
+```powerapps-dot
+Left( untyped.ItemName, 1 ); // "W"
+Radians( untyped.Quantity ); // 0.80285146
+If (untyped.AvailableForPreOrder, "Available", "Not Available" ); // "Available"
+```
+
+In addition to automatically converting the type in function calls, untyped objects will also be converted when assigned to control properties, where possible.
+
+```powerapps-dot
+Label1.Text: untyped.Quantity
+InputText1.Default: untyped.ItemName
+```
+
+And finally, when [using operators](./operators.md) such as **&** or **+**, an **Untyped object** will be coerced if there is no ambigiuty on the expected type.
+
+```powerapps-dot
+untyped.Quantity + 1 // result is a number
+untyped.ItemName & " (preorder)" // result is text
+untyped.Quantity + untyped.Quantity // result is a number
+untyped.Quantity & untyped.ItemName // result is text
+```
+
+> [!NOTE]
+> **JSON** does not have a **GUID**, **Color**, **Time** or **DateTime** type. These values are represented as a string. If you assign a **JSON** untyped object value containing a date to a text property directly, the original text of the **JSON** will be used. This may be important when dealing with time zones, date formats, etc. In such cases you should explicitly convert the values using **GUID()**, **ColorValue()**, **DateValue()**, **DateTimeValue()**, etc.
 
 In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
 
@@ -130,6 +153,7 @@ Set( jsonOrder, ParseJSON( jsonStringVariable ) );
 ```
 
 You can retrieve individual records and values using the [Index()](reference/function-first-last.md) function. For example, to get the second record in the `OrderLines` field, then access the `Quantity` field and convert it to a value.
+
 ```powerapps-dot
 Set( line2Quantity, Value( Index( jsonOrder.OrderLines, 2 ).Quantity ); // 5
 ```

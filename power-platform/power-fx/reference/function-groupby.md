@@ -11,8 +11,6 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae
@@ -88,8 +86,7 @@ ClearCollect( CityPopulations,
 3. While holding down the Alt key, select the **Original** button.
 
    You just created a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections), named **CityPopulations**, that contains this data:
-
-   You just created a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections), named **CityPopulations**, that contains this data:
+   
    ![CityPopulations example.](media/function-groupby/cities.png)
 
 4. To display this collection, select **Collections** on the **File** menu and then select the **CityPopulations** collection. The first five records in the collection appear:

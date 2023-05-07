@@ -8,13 +8,6 @@ ms.subservice: admin
 author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Update a record Owner and Owning Business Unit
 
@@ -28,9 +21,9 @@ Follow these steps.
 
 2. Select a record such as an account.
 
-3. Change the **Owner** or **Owner Business Unit** in the form header or form summary.
+3. Change the **Owner** or **Owning Business Unit** in the form header or form summary.
 
-   :::image type="content" source="media/change-owning-business-unit.png" alt-text="Change Owner or Owner Business Unit":::
+   :::image type="content" source="media/change-owning-business-unit.png" alt-text="Change Owner or Owning Business Unit":::
 
 ## Record ownership
 To access a record, a new owner must have an **Enabled** user status and one of the following statements must be true:
@@ -41,8 +34,10 @@ To access a record, a new owner must have an **Enabled** user status and one of 
 
 If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) option, and your users are assigned to teams, the team's security role **Member's privilege inheritance** must be set to **Direct User (Basic) access level and Team privileges** to allow team members to own records.
 
+You can also set a user with the **Disabled** status as the owner of a record (row) provided the user has **Read** privilege on the table. This means that the user with the **Disabled** status must be assigned with a security role with the privilege. When an active user is deleted from the tenant, the user's status is set to **Disabled** in the system with the assigned security role retained. So, you can continue to make this user as owner of records. 
+
 > [!NOTE]
-> If you want to update the record ownership to a disabled user and also [share reports](/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them, you need to assign a security role to user with the above criteria. To assign a security role to a disabled user, you need to enable the allowRoleAssignmentOnDisabledUsers role. More information: [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm)
+> If there is no security role assigned to the user with **Disabled** status and you want to change record ownership to this user, you can enable the `allowRoleAssignmentOnDisabledUsers` setting using the [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm) tool to assign role to this user.
 
 
 ## Table relationship and cascading behavior 

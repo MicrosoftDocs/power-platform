@@ -5,16 +5,12 @@ author: danamartens
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/02/2022
+ms.date: 05/01/2023
 ms.subservice: admin
-ms.author: kvivek
+ms.author: dmartens
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Synchronization logic for appointments, contacts, and tasks
@@ -82,9 +78,9 @@ If an appointment organizer is changed in Dynamics 365 after it has been synchro
 
 - **Mapping:** Appointments in Dynamics 365 sync to Exchange as meetings.
 
-- **Appointment status:** If the appointment status in Dynamics 365 is **Completed**, **Canceled**, or **Free**, the appointment status syncs to Exchange as **Free**.
+- **Appointment status:** If the appointment status in Dynamics 365 is **Completed**, **Canceled**, or **Free** (Open), the appointment status syncs to Exchange as **Free**.
 
-- **Reminder:** No reminder is set if the appointment is more than seven days in the past or the appointment status is **Free**.
+- **Reminder:** No reminder is set if the appointment is more than seven days in the past or the appointment status is **Free** (Open).
 
 - **Invitations:** No invitation is sent if:
 

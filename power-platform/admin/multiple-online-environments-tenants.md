@@ -16,11 +16,6 @@ ms.subservice: admin
 ms.author: "jimholtz"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # About multiple online environments or tenants

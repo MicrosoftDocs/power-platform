@@ -15,11 +15,6 @@ ms.topic: conceptual
 ms.date: 02/28/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # About GDPR (EU) compliance
 

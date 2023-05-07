@@ -7,7 +7,6 @@ ms.date: 01/22/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: authoring, ceX, teams
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

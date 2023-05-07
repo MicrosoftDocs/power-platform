@@ -96,6 +96,8 @@
             href: reference/function-confirm.md
           - name: Connection
             href: reference/signals.md
+          - name: Copy
+            href: reference/function-copy.md
           - name: Count
             href: reference/function-table-counts.md
           - name: Cos

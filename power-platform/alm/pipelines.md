@@ -10,9 +10,6 @@ ms.reviewer: "matp"
 ms.topic: "overview"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Overview of pipelines in Power Platform
 

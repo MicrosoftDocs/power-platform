@@ -7,7 +7,6 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 ms.reviewer: 
-manager: leeclontz
 ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ms.search.region: USA
@@ -46,16 +45,18 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
-- Review the [AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note). 
+- [Review AI response generation training, model, and usage notes](nlu-boost-conversations.md#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
+
+- Your bot must be created in the US region. Other regions, and languages other than English, aren't supported during the preview.
 
 - This capability may be subject to usage limits or capacity throttling.
  
 > [!IMPORTANT] 
-> During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need to [contact Microsoft Support before you can publish your bot](nlu-boost-conversations.md#publishing). 
+> During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need your admin to [enable bot publishing for the capability](nlu-boost-conversations.md#publishing). 
 
 ## How bot conversations work
 
-Power Virtual Agent bots use a [customized NLU model and AI capabilities](advanced-ai-features.md) to understand what a user types and respond with the most appropriate bot topic. A bot topic is a sequence of nodes that logically flow from one step to the other. See [Create and edit topics (preview)](preview/authoring-create-edit-topics.md) for details on how bot topics work.
+Power Virtual Agent bots use a [customized NLU model and AI capabilities](advanced-ai-features.md) to understand what a user types and to respond with the most appropriate bot topic. A bot topic is a sequence of nodes that logically flow from one step to the other. See [Create and edit topics (preview)](preview/authoring-create-edit-topics.md) for details on how bot topics work.
 
 For example, you might create a bot for your customers to ask common questions about your business, thus reducing your support overhead by deflecting support calls. In the bot, you could create a topic that includes details about your store opening hours and call it **Store hours**. 
 
@@ -73,7 +74,7 @@ Ready to get started? The first step is to create your bot.
 
 1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/). 
 
-1. In the side navigation menu select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
+1. In the side navigation menu, select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-home.png" alt-text="Screenshot of the Power Virtual Agents home page.":::
 
@@ -82,7 +83,7 @@ Ready to get started? The first step is to create your bot.
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-create-bot.png" alt-text="Screenshot of the Create a chatbot page.":::
 
-3. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic. Select **Create**. 
+3. Enter a name for your bot, and add the website you'd like your bot to fall back to if it can't find an appropriate bot topic, and select **Create**. 
 
    :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-create.png" alt-text="Screenshot of the Boost your conversation preview option.":::
 
@@ -176,7 +177,7 @@ The **Test bot** pane shows how a bot conversation plays out at every step and y
  
    The bot retrieves information from the website and returns a response. The response provides a link to where it found that information and allows you to provide feedback.
  
-3. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue?*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
+4. (Optional) Try asking the bot about something you know is not on the website you specified, such as *Why is the sky blue*. Because the bot can't find a relevant bot topic or a relevant answer on the specified website, it replies with a [system fallback topic](authoring-system-fallback-topic.md) that indicates it can't understand the question, and asks you to rephrase the question. 
 
     :::image type="content" source="media/nlu-gpt/nlu-quickstart-system-fallback.png" alt-text="Screenshot of Test bot pane with the message that the bot doesn't understand.":::
  

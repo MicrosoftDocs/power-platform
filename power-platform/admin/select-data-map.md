@@ -10,11 +10,6 @@ ms.topic: conceptual
 ms.date: 06/19/2020
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Select a data map

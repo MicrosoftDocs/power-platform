@@ -4,17 +4,12 @@ description: "Admins can view Microsoft Power Apps analytics in the Power Platfo
 author: tjvass
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/18/2020
+ms.date: 05/04/2023
 ms.subservice: admin
 ms.author: tjvass
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Admin Analytics for Power Apps
 
@@ -58,7 +53,7 @@ There are six reports available for Power Apps admins. The last viewed environme
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics error report.](media/powerapps-analytics-toast-errors.png "Power Apps analytics error report")
 
-**Service Performance** report provides details of all standard and custom connectors to understand performance bottlenecks and client versus service API issues. An environment admin will get insights into:  
+**Service Performance** report provides details of all standard and custom connectors to understand performance bottlenecks and client versus service API issues. An environment admin gets insights into:  
 
 - Connectors used in the environment. 
 - Best and least performant service and the API service response times.  
@@ -67,18 +62,18 @@ There are six reports available for Power Apps admins. The last viewed environme
 - The number of HTTP 500 error codes of connectors indicating issues around the server not responding to calls from the client. 
 - The number of successful connection requests. 
 
-All the service performance KPI's can be filtered with attributes like a specific service or connector, device platform, player version, and country, state, or city to drill down into the specific API. 
+All the service performance KPIs can be filtered with attributes like a specific service or connector, device platform, player version, and country, state, or city to drill down into the specific API. 
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics service performance report.](media/powerapps-analytics-service-performance.png "Power Apps analytics service performance report")
 
-**Connectors report** provides visibility into the standard and custom connectors being used by canvas apps. The last 28 days of data is visible at the environment level.  
+**Connectors report** provides visibility into the standard and custom connectors being used by canvas apps. The last 28 days of data are visible at the environment level.  
 
-Admins can gain insights into the number of connectors associated with each app, the specific connectors being used by each app, and the owner of the connector. It also provides data on the number of times the app has been shared, the number of app sessions, and the last accessed time for visibility into high usage apps and connectors.  
+Admins can gain insights into the number of connectors associated with each app, the specific connectors being used by each app, and the owner of the connector. It also provides data on the number of times the app has been shared, the number of app sessions, and the last accessed time for visibility into high usage apps and connectors. At this time, this functionality is limited to only connections that the admin owns, and only activity on those specific connections.  
 
-**A sample scenario**: An admin can gain insight into the number of shares and usage of a specific finance app using one or more connectors. This will allow the admin to engage with the app owner to ensure no sensitive data is inadvertently being shared through the app.  
+**A sample scenario**: An admin can gain insight into the number of shares and usage of a specific finance app using one or more connectors. This allows the admin to engage with the app owner to ensure no sensitive data is inadvertently being shared through the app.  
 
-Note that the current iteration of this specific report does not have a download report feature. 
+The current iteration of this specific report does not have a download report feature. 
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics connector report.](media/powerapps-analytics-connector.png "Power Apps analytics connector report")

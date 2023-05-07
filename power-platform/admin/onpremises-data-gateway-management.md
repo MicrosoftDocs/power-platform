@@ -10,11 +10,6 @@ ms.author: arthii
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # On-premises data gateway management (preview)

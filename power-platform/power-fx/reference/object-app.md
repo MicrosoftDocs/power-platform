@@ -9,8 +9,6 @@ ms.date: 09/16/2022
 ms.author: gregli
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 contributors:
   - gregli-msft
   - mduelae

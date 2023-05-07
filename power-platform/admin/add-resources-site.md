@@ -2,7 +2,6 @@
 title: "Add resources to a site record for your business"
 description: "Learn how to add users, equipment, and facilities to a site record to show what is available at a location."
 author: jimholtz
-manager: kvivek
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -11,11 +10,6 @@ ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Add resources to a site
 

@@ -6,7 +6,6 @@ ms.date: 03/07/2022
 ms.topic: troubleshooting
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: clmori
 ms.service: power-virtual-agents
 

@@ -9,11 +9,6 @@ ms.subservice: admin
 ms.author: "jimholtz"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # How do I check my online service health?
 

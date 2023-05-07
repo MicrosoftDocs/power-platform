@@ -7,7 +7,6 @@ ms.date: 12/29/2020
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: "configuration, fundamentals, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

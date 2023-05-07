@@ -10,8 +10,6 @@ ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - mduelae
   - gregli-msft
@@ -106,6 +104,8 @@ Other elements include:
 **[Concurrent](reference/function-concurrent.md)** – Evaluates multiple formulas concurrently with one another.
 
 **[Connection](reference/signals.md)** – Returns information about your network connection.
+
+**[Copy](reference/function-copy.md)** - Copies text to the clipboard on the device where the app is running.
 
 **[Count](reference/function-table-counts.md)** – Counts table records that contain numbers.
 

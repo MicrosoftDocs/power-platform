@@ -10,11 +10,6 @@ ms.topic: conceptual
 ms.date: 09/28/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Opt-out of automatic license-based user roles management 
  

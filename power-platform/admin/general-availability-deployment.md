@@ -10,11 +10,6 @@ ms.topic: conceptual
 ms.date: 02/22/2023
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # General availability deployment
 

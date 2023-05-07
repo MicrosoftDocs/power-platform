@@ -4,17 +4,12 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/11/2023
+ms.date: 05/05/2023
 author: mihaelablendea
 ms.author: mihaelab
-ms.reviewer: kvivek
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365
 
@@ -37,6 +32,7 @@ Power Platform and Dynamics 365 applications and services store customer data in
 > [!NOTE]
 >
 > - Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Power Virtual Agents (excluding GPT AI features), Dataverse, Customer Insights, Customer Service, Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services), and the real-time marketing feature area of the Marketing app.
+> - Features powered by Azure OpenAI Service are excluded from Lockbox policy enforcement unless product documentation for a given feature states that Lockbox applies. 
 > - You must disable Lucene.NET search from your website and move to Dataverse Search to be able to use Customer Lockbox. More information: [Portals search using Lucene.NET search is deprecated](/power-apps/maker/portals/important-changes-deprecations#portals-search-using-lucenenet-search).
 
 ## Workflow
@@ -121,6 +117,12 @@ The Microsoft 365 **Audit** tab allows admins to search for events associated wi
 Admins can directly export the result set based on the filter criteria.
 
 :::image type="content" source="media/lockbox-audit-search-results.png" alt-text="Lockbox audit search results.":::
+
+Customer Lockbox produces two types of audit logs:
+1.	Logs that are initiated by Microsoft and correspond to lockbox request being created, expired, or when access sessions end. This set of audit logs do not correspond to a specific user ID since the actions are initiated by Microsoft.
+2.	Logs that are initiated by end user actions, such as when a user approves or denies a lockbox request. If the user that performs these operations does not have an E5 license assigned, the logs are filtered out and will not show up in the audit logs.
+
+By default, the audit logs are preserved for a duration of one year. You need a 10-Year Audit Log Retention add-on license to retain audit records for 10 years. See [Audit (Premium)](/microsoft-365/compliance/audit-solutions-overview?view=o365-worldwide#audit-premium-1&preserve-view=true) for more details on audit log retention.
 
 ## Licensing requirements for Customer Lockbox
 

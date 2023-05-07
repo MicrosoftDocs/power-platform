@@ -11,11 +11,6 @@ ms.topic: conceptual
 ms.date: 07/07/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Troubleshooting: Common user access issues
 

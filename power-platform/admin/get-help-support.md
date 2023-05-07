@@ -1,19 +1,14 @@
 ---
 title: "Get Help + Support in Power Platform  | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative to get resolution for your issue.
-author: jimholtz
+author: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 04/04/2023
 ms.subservice: admin
 ms.author: kvivek 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Get Help + Support
 
@@ -70,13 +65,26 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 3. Select the product with the issue. Fill in the problem type, a description of the issue, and then select **See solutions**.
 
+    Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
+    
+    > [!NOTE]
+    > We've made changes to the product listing when creating a new support request. The following products are now available from the menu:
+    > 
+    > - Dynamics 365 Sales
+    > - Dynamics 365 Marketing
+    > - Dynamics 365 Customer Service
+    > - Dynamics 365 Omnichannel for Customer Service
+    > - Microsoft Dataverse
+    > - Power Platform Administration
+    > 
+    > This change won't have any impact on your licenses.
+
    > [!div class="mx-imgBorder"] 
    > ![See solutions.](media/create-support-ticket.png "See solutions")
 
    > [!div class="mx-imgBorder"] 
    > ![New support request screen.](media/create-support-ticket2.png "Solutions")
 
-   Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
 
 4. If the guidance doesn't resolve your issue, scroll down and select **Next**, and fill in the fields in the form pages.
 

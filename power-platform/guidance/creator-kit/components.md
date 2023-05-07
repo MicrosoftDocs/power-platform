@@ -1,8 +1,7 @@
 ---
 title: "Overview of the Creator Kit components | MicrosoftDocs"
 description: "Learn about the manifest of the Creator Kit components and assets."
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 02/01/2023
@@ -11,10 +10,6 @@ ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist

@@ -9,13 +9,9 @@ ms.topic: "article"
 author: "shmcarth" 
 ms.subservice: alm
 ms.author: "matp" 
-manager: "kvivek" 
 search.audienceType: 
   - maker
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Understand how managed solutions are merged
 When you prepare your managed solution to be installed, remember that an environment might already have multiple solutions installed or that other solutions might be installed in the future. Construct a solution that follows best practices so that your solution won't interfere with other solutions.  

@@ -2,7 +2,6 @@
 title: "CoE Starter Kit explained: building blocks and add-ons"
 description: "The Power Platform CoE Starter Kit is shipped in multiple components. Learn about the building blocks and add-ons designed to help you innovate and improve."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # CoE Starter Kit modules
 

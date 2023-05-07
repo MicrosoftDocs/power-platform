@@ -4,18 +4,13 @@ description: Manage feature settings to adjust how features appear and function 
 author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2023
+ms.date: 04/05/2023
 ms.subservice: admin
 ms.author: kvivek 
 contributors:
     - ProfessorKendrick
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage feature settings
 
@@ -92,5 +87,6 @@ Make sure you have the System Administrator or System Customizer security role o
 > | **Power Apps Ideas for Canvas Apps** | |
 > | Share ideas query data to help improve ideas results. | Default: Off. To help Microsoft improve Power Apps Ideas, you can share your ideas query data with Microsoft. More information: [Power Apps Ideas (preview)](/power-apps/maker/canvas-apps/power-apps-ideas).
 > | **Create new canvas apps as Dataverse solutions (preview)**  | Default: Off. Set to **On** to add all newly created canvas apps to the default environment solution.  More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) |
+> | **Data Validation**  | Default: Off. When **On**, enables smart data validation for certain columns, such as text columns using the email format. More information: [Address validation for email columns](/power-apps/maker/data-platform/data-validation-email-column) |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

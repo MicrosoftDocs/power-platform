@@ -5,18 +5,15 @@ services: powerapps
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
+ms.contributors:
+- pmantha
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/18/2022
+ms.date: 04/21/2023
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Control user access to environments: security groups and licenses
 
@@ -36,13 +33,13 @@ Consider the following example scenario:
   
 In this example, four security groups provide controlled access to a specific environment.  
   
-Note the following about security groups: 
+Note the following information about security groups: 
   
 - About nested security groups
 
   Members of a nested security group in an environment security group are not **pre-provisioned or automatically added to the environment**. However, they can be added into the environment when you create a [Dataverse group team](manage-group-teams.md#create-a-group-team) for the nested security group. 
 
-  An example of this scenario: you assigned a security group for the environment when the environment was created. During the lifecycle of the environment, you want to add members to the environment which are managed by security groups. You create a security group in Azure Active Directory, for example managers, and assigned all your managers to the group. You then add this security group as a child of the environment security group, create a [Dataverse group team](manage-group-teams.md#create-a-group-team), and assign a security role to the group team. Your managers can now access Dataverse immediately.   
+  An example of this scenario: you assigned a security group for the environment when the environment was created. During the lifecycle of the environment, you want to add members to the environment that are managed by security groups. You create a security group in Azure Active Directory, for example managers, and assigned all your managers to the group. You then add this security group as a child of the environment security group, create a [Dataverse group team](manage-group-teams.md#create-a-group-team), and assign a security role to the group team. Your managers can now access Dataverse immediately.   
   
   A member of a nested security group is also added into the environment at run-time when the member accesses the environment the first time. But the member will not be able to run any application and access any data until a security role is assigned.   
   
@@ -53,7 +50,7 @@ Note the following about security groups:
 - If a security group is associated with an environment, only users with Dataverse licenses or per app plan that are members of the environment security group will be created as users in the environment.  
 - If you do not specify a security group, all users who have a Dataverse license (customer engagement apps (such as Dynamics 365 Sales and Customer Service)) or per app plan will be added to the new environment.
 - **New**: Security groups cannot be assigned to default and developer environment types. If you've already assigned a security group to your default or developer environment, we recommend removing it since the default environment is intended to be shared with all users in the tenant and the developer environment is intended for use by only the owner of the environment.
-- Environments support associating the following group types: Security and Microsoft 365. Associating [other group types](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&WT.mc_id=365AdminCSH) is not supported.
+- Environments support associating the following group types: Security and Microsoft 365. Associating [other group types](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&WT.mc_id=365AdminCSH&preserve-view=true) is not supported.
 - When you select a security group, be sure to select an Azure AD security group and not one created in on-prem Windows Active Directory. On-prem Windows AD security groups aren't supported.
 - If a user is not a part of the assigned security group to the environment but has the Azure tenant Global Administrator role, the user will still show as an active user and will be able to log in.
 - If a user is assigned the Dynamics 365 Service Admin role, then the user must be part of the security group before they are enabled in the environment. They cannot access the environment until they are added to the security group and enabled.
@@ -85,7 +82,8 @@ Note the following about security groups:
   
 ### Create a user and assign license  
   
-1. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Users** > **Active users** > **+ Add a user**. Enter the user information, select licenses, and then select **Add**.  
+1. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Users** > **Active users** > **+ Add a user**. 
+2. Enter the user information, select licenses, and then select **Add**.  
   
    [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users)  
 
@@ -94,53 +92,32 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
 > [!NOTE]
 > If an environment has a Power Apps per app plan allocated, all users will be considered licensed when they attempt to access the environment, including users that do not have individual licenses assigned. Per app plan allocation on an environment satisfies the requirement for users to be licensed in order to access the environment.
   
-## Associate a security group with an environment  
+## Associate a security group with an environment 
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
 
-2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.  
+1. In the navigation pane, select **Environments**. 
+
+1. Select the name of the environment.
+
+1. Select **Edit**.  
+
+    :::image type="content" source="media/environment-properties.svg" alt-text="Select Edit.":::
+
+1. In the **Edit details** pane, select the **Edit** icon in the **Security group** area.
   
-   > [!div class="mx-imgBorder"] 
-   > ![Select Edit.](media/edit-environment.png "Select Edit")
+    :::image type="content" source="media/edit-security-groups.png" alt-text="Select the Edit icon to select a security group.":::
 
-3. In the **Edit details** page, select **Edit** (![Edit.](media/edit-button.png)).
-  
-   > [!div class="mx-imgBorder"] 
-   > ![Edit security group.](media/edit-security-group.png "Edit security group")
+   Only the first 200 security groups will be returned. Use **Search** to look for a specific security group.
 
-   Only the first 200 security groups will be returned and selectable by default. To select additional security groups, use **Search** to look for a specific security group.
+1. Select a security group, select **Done**, and then select **Save**.
 
-4. Select a security group, select **Done**, and then select **Save**.
+    The security group is associated with the environment.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Select a security group.](media/edit-security-group-select.png "Select a security group")
-
-The security group is associated with the environment.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Security group added.](media/security-group-added.png "Security group added")
 
 > [!NOTE]
 > For end-users running canvas apps when a security group is associated with the environment of the app, users must be members of the security group to be able to run the canvas app, regardless of whether the app has been shared with them. Otherwise, users will see this error message: "You can't open apps in this environment. You are not a member of the environment's security group."
 
-
-## Remove a security group's association with an environment
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
-
-2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Edit environment.](media/edit-environment.png "Edit environment")
-
-3. In the **Settings** page, select **Delete** (![Delete.](media/nb-ua-r1-trashbin.png)).  
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Delete.](media/delete-security-group.png "Select Delete")
-
-4. Confirm removal, select **Remove**, and then select **Save**.
-
-The security group associated with the environment will be removed and the environment's access will no longer be restricted to only users that are members of that group.
 
 ### See also
 [Create users](create-users.md)

@@ -2,7 +2,6 @@
 title: "Create an internal Microsoft Power Platform hub | MicrosoftDocs"
 description: "At the heart of growth is a community, a place for people to collaborate, share ideas and discover new ways to apply technology to achieve more."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Create an internal Microsoft Power Platform hub 
 
@@ -59,7 +54,7 @@ The Power Platform communication site template is a SharePoint communication sit
 ### Deploy the Power Platform communication site template
 
 The Power Platform communication site template is a SharePoint Online template that is installed by running two PowerShell scripts.
-The steps in this section take you through the process of preparing, and running the PowerShell scripts.
+The steps in this section take you through the process of preparing and running the PowerShell scripts.
 
 > [!NOTE]
 > Your organization may restrict your ability to run PowerShell scripts, or you may need to work with your SharePoint Online administration team to run the PowerShell script.
@@ -170,17 +165,17 @@ After deployment, navigate to **Settings (Gear icon) > Site contents > Site Page
 - **Consultation-and-Development.aspx**: If you have an internal Power Platform development team, provide their contact details, and ways to engage here. If not, delete this page!
 - **Data-Loss-Prevention-(DLP)-Policies.aspx**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project. We have added content of a typical DLP policy strategy here for you to get started with. Scan the document for placeholders for *Company specific instructions that you need to update with your own processes and guidelines.
     ![Look out for placeholders to update the communication site with your own content](media/wiki-change.png "Look out for placeholders to update the communication site with your own content")
-- **Environments.aspx**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of environments with regard to licensing, security for environments, and connectors. We have added content of a typical environment policy strategy here for you to get started with. Scan the document for placeholders for *Company specific instructions that you need to update with your own processes and guidelines.
+- **Environments.aspx**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of environments with regard to licensing, security for environments, and connectors. We have added content of a typical environment strategy here for you to get started with. Scan the document for placeholders for *Company specific instructions that you need to update with your own processes and guidelines.
 - **Guided-Learning.aspx**: This page provides a summary of Power Platform learning paths available on Microsoft Learn. If you're running internal training events, add them here.
+- **Internal-Communities.aspx**: Update this page to add links to your Power Platform communities - we recommend including a Yammer web part here.
 - **Power-Platform-at-{companyName}.aspx**: Share what a maker is responsible for—for example
   - Keeping the tenant tidy by deleting unused resources.
   - Ensuring apps are only shared with required end users.
-  - Supporting their apps in the default environment,.
+  - Supporting their apps in the default environment.
   - Engaging with the Center of Excellence team before implementing a business-important or mission-critical app to plan appropriate support.
   
   Ensure makers are educated about the processes you have in place for business-important or mission-critical apps, such as engaging formal support.
 - **Requesting-a-Premium-License.aspx**: Share what licenses are available and what’s included in those licenses, how to request premium licenses, and who will pay for those premium licenses if cross-charging from IT to business units or teams is in place.
-- **Internal-Communities.aspx**: Update this page to add links to your Power Platform communities - we recommend including a Yammer web part here.
 - **Support.aspx**: Share how makers and solutions can be supported. Learn more: [Develop a support strategy](support-strategy.md).
 
 Once you've modified the existing content, you should also

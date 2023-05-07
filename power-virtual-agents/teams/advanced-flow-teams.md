@@ -7,7 +7,6 @@ ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring, teams
 ms.collection: virtual-agent

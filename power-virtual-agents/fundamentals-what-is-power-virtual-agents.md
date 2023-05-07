@@ -7,7 +7,6 @@ ms.date: 06/22/2022
 ms.topic: overview
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: fundamentals, ceX, intro-internal
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

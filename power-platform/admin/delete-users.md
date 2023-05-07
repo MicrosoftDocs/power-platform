@@ -10,11 +10,6 @@ ms.topic: conceptual
 ms.date: 12/09/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Delete users from environment
 
