@@ -71,18 +71,22 @@ Your bot will use the collected information in line with the topic flow to provi
 ### Connect to a single URL to boost a conversation
     
     A standard example - looks a lot like creating a bot.
-    - bot creation (all over the place in the content - just refer to)
-    - update/change default/fallback url from bot creation
+
+- bot creation (all over the place in the content - just refer to)
+- update/change default/fallback url from bot creation
 
 ### Connect a Bing Custom Search to search a number of websites
-    - link to [Bing Custom Search](https://www.customsearch.ai/)
-    - Do I have these instructions somewhere? Where else can we direct users?
+
+- link to [Bing Custom Search](https://www.customsearch.ai/)
+- Do I have these instructions somewhere? Where else can we direct users?
 
 ### Connect to a Sharepoint
-    - Maybe this is the first real "authentication" example? Make sure to call out in boosted convo docs
+
+- Maybe this is the first real "authentication" example? Make sure to call out in boosted convo docs
 
 ### Search and summarize into variables
-    - The multiple options that come up in S&S instructions should refer to here
-    - Thoughts on variables?
+
+- The multiple options that come up in S&S instructions should refer to here
+- Thoughts on variables?
 
 ## What else can multiple sources/S&S do?
