@@ -41,4 +41,4 @@ ms.reviewer: kvivek
 - [AI Copilot in Power Apps](/power-apps/maker/canvas-apps/ai-overview)
 - [Use Azure OpenAI Service in AI Builder](/ai-builder/prebuilt-azure-openai)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]

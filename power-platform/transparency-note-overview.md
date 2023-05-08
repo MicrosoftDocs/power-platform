@@ -10,7 +10,7 @@ ms.author: kvivek
 ms.reviewer: kvivek
 ---
 
-# International availability of Microsoft Power Platform
+# Transparency notes for Microsoft Power Platform
 
 [!INCLUDE[transparency-note-intro](includes/transparency-note-intro.md)]
 
