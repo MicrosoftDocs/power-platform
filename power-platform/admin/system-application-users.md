@@ -94,7 +94,7 @@ Most of these users are hidden from user views but they can be found by using th
 ## The purpose of the application users?
 
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
-- Since these are built-in user accounts, they can't be updated. The security role that is assigned to these accounts cannot be updated either. This is to prevent any service outages.  
+- Since these are built-in user accounts, they shouldn't be updated. The security role(s) that is assigned to these accounts shouldn't be updated either. This is to prevent any service outages.  
 - These users do not consume any service licenses.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
