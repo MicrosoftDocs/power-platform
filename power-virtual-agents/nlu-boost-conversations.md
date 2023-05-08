@@ -35,7 +35,7 @@ Internal resources include:
  - (Project Wednesday)
  - DataVerse.
 
-Different sources have different authentication rules to configure. Additional details can be found in [Knowledge sources](#knowledge-sources).
+Different sources have different authentication rules to configure. Additional details can be found in [Information sources](nlu-boost-node#information-sources).
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
