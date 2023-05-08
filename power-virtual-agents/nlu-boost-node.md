@@ -69,8 +69,8 @@ Your bot will use the collected information in line with the topic flow to provi
 ## Really cool examples (though admittedly, it's all pretty cool!)
 
 ### Connect to a single URL to boost a conversation
-    
-    A standard example - looks a lot like creating a bot.
+
+A standard example - looks a lot like creating a bot.
 
 - bot creation (all over the place in the content - just refer to)
 - update/change default/fallback url from bot creation
