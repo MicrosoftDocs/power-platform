@@ -50,7 +50,7 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 
 ## Search and Summarize content
 
-You can add Generative Answers functionality to your bot by adding a "Search and summarize content" node in your topic. 
+ You can add Generative Answers to your bot by adding a Search and summarize content node. This allows you to search internal and external information sources from the node level to further boost your bot's conversations.
 
 1. Open the authoring canvas for your topic, and identify the point where you want to Search and summarize content.
 
@@ -68,3 +68,21 @@ Your bot will use the collected information in line with the topic flow to provi
 
 ## Really cool examples (though admittedly, it's all pretty cool!)
 
+### Connect to a single URL to boost a conversation
+    
+    A standard example - looks a lot like creating a bot.
+    - bot creation (all over the place in the content - just refer to)
+    - update/change default/fallback url from bot creation
+
+### Connect a Bing Custom Search to search a number of websites
+    - link to [Bing Custom Search](https://www.customsearch.ai/)
+    - Do I have these instructions somewhere? Where else can we direct users?
+
+### Connect to a Sharepoint
+    - Maybe this is the first real "authentication" example? Make sure to call out in boosted convo docs
+
+### Search and summarize into variables
+    - The multiple options that come up in S&S instructions should refer to here
+    - Thoughts on variables?
+
+## What else can multiple sources/S&S do?
