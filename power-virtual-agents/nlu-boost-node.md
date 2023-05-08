@@ -14,7 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Boost conversations with Search and summarize content
+# Boost conversations with Search and summarize
 
 When you created your bot, you were invited to enter a url from which your bot could to generate responses. This is discussed in detail in [Boost conversations](nlu-boost-conversations.md). You can further boost your bot's conversations by using multiple information sources, both internal and external [to your network (?)], including:
 
@@ -31,7 +31,9 @@ Internal resources:
  - (Project Wednesday)
  - DataVerse.
 
-In addition, you can add information sources to a topic using the Search and summarize content node. Together, these methods of boosting your bot's conversation provide for more "global" information support (i.e., boosted conversations), and tailored "local" information support at specific points within a topic via node-specific information sources (would saying "boosted node" be inappropriate here?).
+In addition, you can add information sources to a topic using the Search and summarize content node. This node allows you to specify sources that the *node* will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability. [**Question**: Does this override or augment the "normal" boosted sources?]
+
+Together, these methods of boosting your bot's conversation provide for more "global" information support (i.e., boosted conversations), and tailored "local" information support at specific points within a topic via node-specific information sources (would saying "boosted node" be inappropriate here?).
 
 ## Information Sources
 
@@ -48,7 +50,7 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 
 ## Search and Summarize content
 
-You can add GPT Answers functionality to your bot by adding a "Search and summarize content" node in the flow of your topic.
+You can add Generative Answers functionality to your bot by adding a "Search and summarize content" node in your topic. 
 
 1. Open the authoring canvas for your topic, and identify the point where you want to Search and summarize content.
 
@@ -63,3 +65,6 @@ You can add GPT Answers functionality to your bot by adding a "Search and summar
 1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
 
 Your bot will use the collected information in line with the topic flow to provide a response.
+
+## Really cool examples (though admittedly, it's all pretty cool!)
+
