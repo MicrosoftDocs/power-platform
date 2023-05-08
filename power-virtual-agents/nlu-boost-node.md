@@ -50,26 +50,16 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 
 You can add GPT Answers functionality to your bot by adding a "Search and summarize content" node in the flow of your topic.
 
-1. Open the authoring canvas for your topic
-
-1. Identify the point in your topic's flow where you want to use Search and summarize content.
+1. Open the authoring canvas for your topic, and identify the point where you want to Search and summarize content.
 
 1. Click on the '+' where you would like to add the Search and Summarize node.
 
-1. Add a Search and Summarize content node.
-
-(image: *plus with options menu; display S&S option*)
+1. Add a Search and Summarize content node.(image: *plus with options menu; display S&S option*)
 
 1. On the Search and summarize node, select Properties from the node menu and select Data source
  
-1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources).
+1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources). (Note here about the other options (Variable or PowerFX) - what is the integration?)(image: data sources menu)
 
-Note here about the other options (Variable or PowerFX) - what is the integration?
-
-(image: data sources menu)
-
-1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.
- 
-(image: save topic?)
+1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
 
 Your bot will use the collected information in line with the topic flow to provide a response.
