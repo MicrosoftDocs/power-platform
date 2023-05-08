@@ -46,6 +46,7 @@ Now, before involving a live agent, the bot uses natural language processing (NL
 
 As a result you can quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers end up asking.
 
+
 Your workflow might be like this:
 
 1. You create a bot and enable this capability. You test it thoroughly.
@@ -55,6 +56,8 @@ Your workflow might be like this:
 1. You create individual topics for the most important or most often-asked questions from your customers (which you might have developed based on [analytics from previous bots](analytics-overview.md) or existing support issues). 
 
 This could take a while and some specialized knowledge - but with **Boost conversations** enabled you're up and running from day one.
+
+As you become familiar with boosted conversations, you may want to use more than one information source. You can also boost a topic at the node level with a Search and summarize content node. For details on using multiple sources and Search and summarize content nodes, refer to [Boost conversations with Search and summarize content](nlu-boost-node.md)
 
 ## Prerequisites
 
@@ -81,6 +84,11 @@ This could take a while and some specialized knowledge - but with **Boost conver
 - Your bot must be created in the US region. Other regions, and languages other than English, aren't supported during the preview.
 
 - This capability may be subject to usage limits or capacity throttling.
+
+## Boost conversations as a fallback
+
+As the introduction mentions, NLP provides path to assist bot users in finding answers before the conversation is escalated to a live agent. In this capacity, boosted conversations function as a fallback (triggered when current bot topics are unable to answer a query) providing the user additional bot-created assistance.
+You can add information sources for this purpose when creating your bot as outlined below.
 
 ## Boost your bot's reach
 
@@ -113,19 +121,6 @@ You can also change the URL, disable **Boost conversations**, or change the leve
 1. Select **Save** at the top of the **AI capabilities** page.
 
 You can now test your bot to see how well it responds to questions related to the content on the URL you specified.
-
-### Knowledge Sources
-
-This table summarizes knowledge resources GPT Answers can use to boost conversations.
-
-| Name | Source | Description | Number of Inputs | Authentication |
-| --- | --- | --- | --- | --- |
-| Bing Search | External | Searches the query in put on Bing; returning results only from provided websites | 4 public urls (for example, microsoft.com) | None |
-| [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
-| Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| OneDrive | Internal | Connects to a OneDrive url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| Other internal data | Internal | ... | ... | ... |
-| Project Wednesday | Internal | Azure Open AI knowledge repository | ... | ... |
 
 ### URL considerations
 
@@ -160,9 +155,13 @@ The bot may generate nonsensical, irrelevant, or inappropriate answers if you us
 See the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) for more information on how the AI is trained to avoid generating malicious and offensive responses.
 
 The URL you specify should host the content you want the bot to generate answers from; it should not be the URL for a search engine:
--  Using *<span>bing</span>.com* or other search engines in the URL won't provide useful responses.  
+-  Using *<span>bing</span>.com* or other search engines in the URL won't provide useful responses.
 
-The following table summarizes sources your bot can use to gather information.
+### Source authentication
+
+In addition to type and structure of a url, you will also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote to boost your bot's conversations.
+
+
 
 ## Test your bot's boosted conversational reach 
 
