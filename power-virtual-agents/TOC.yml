@@ -16,6 +16,8 @@
       href: nlu-gpt-quickstart.md
     - name: Boost conversations (preview)
       href: nlu-boost-conversations.md
+    - name: Boost conversations with Search and summarize content
+      href: nlu-boost-node.md
     - name: Create (and edit) with Copilot (preview)
       href: nlu-authoring.md
 - name: Get started
