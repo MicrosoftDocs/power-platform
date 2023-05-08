@@ -77,7 +77,7 @@ An in-app notification can have zero to many actions on the notification card. T
 | Pane ID | String | Yes | The ID of the new side pane |
 | Pane Title | String | Yes | The title to display for the side pane |
 | Entity Name | String | Yes | The logical name of the entity |
-| Entity ID | String | Yes | The ID of teh entity record to open in the side pane |
+| Entity ID | String | Yes | The ID of the entity record to open in the side pane |
 
 ### CreateSidePaneActionForEntityList
 
