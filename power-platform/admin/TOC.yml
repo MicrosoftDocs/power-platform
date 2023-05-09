@@ -156,10 +156,10 @@
                       href: cmk-lock-unlock.md
                     - name: Migrate from BYOK (preview)
                       href: cmk-migrate-from-byok.md
-                - name: Trial environments
-                  href: trial-environments.md
                 - name: Sandbox environment
                   href: sandbox-environments.md
+                - name: Trial environments
+                  href: trial-environments.md                
                 - name: Dataverse for Teams environment
                   href: about-teams-environment.md
                 - name: View apps in your environments
