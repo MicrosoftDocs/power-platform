@@ -20,22 +20,7 @@ searchScope:
 
 [!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
-When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. By utilizing Generative Answers (GA) in Power Virtual Agents, your bot can find and present information from multiple sources (which may be internal or external) even if you haven't created a topic for it. These can be used as a fallback, or as primary information sources in your chatbot.
-
-External resources include:
-
- - Bing Search
- - [Bing Custom Search](https://www.customsearch.ai/).
-  
-Internal resources include:
-
- - SharePoint
- - OneDrive
- - Other internal information sources
- - (Project Wednesday)
- - DataVerse.
-
-Different sources have different authentication rules to configure. Additional details can be found in [Information sources](nlu-boost-node#information-sources).
+When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. By utilizing **Generative Answers (GA)** in Power Virtual Agents, your bot can find and present information from multiple sources (which may be internal or external) even if you haven't created a topic for it. These can be used as a fallback, or as primary information sources in your chatbot.
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
@@ -58,10 +43,28 @@ This could take a while and some specialized knowledge - but with **Generative A
 
 ## Generative Answers as a fallback
 
-When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. This process includes the Fallback [system topic](authoring-system-topics.md), though it may not match the user's intent. If a matching intent is not found in the topics, the bot can use GA to attempt answering the query. This is called "Generative Answers for fallback".
+When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. This process includes the Fallback [system topic](authoring-system-topics.md), though it may not match the user's intent. If a matching intent is not found in the topics, the bot can use **GA** to attempt answering the query. This is called "Generative Answers for fallback".
+This document is focused on _getting you started_ using **GA** to augment your bot's ability to help customers.
 
-While GA serves as a fallback in this situation, it is not limited to fallback scenarios. Your bot's ability to answer user questions can also use additional web sites, external or internal web sources and other information sources such as SharePoint or OneNote (see [Generative Answers](nlu-boost-conversations.md#generative-ansers)).
-Detail and examples of how you can expand your bot's ability to use GA can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md).
+While **GA** serves as a fallback in this situation, it is not limited to fallback scenarios. Your bot's ability to answer user questions can also use additional web sites, external or internal web sources and other information sources such as SharePoint or OneNote (see [Generative Answers](nlu-boost-conversations.md#generative-answers)). Details and examples on how you can expand your bot's ability to use **GA** can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md). The following is an outline of sources that can be used by **GA**.
+
+External resources include:
+
+ - Bing Search
+ - [Bing Custom Search](https://www.customsearch.ai/)
+  
+Internal resources include:
+
+ - SharePoint
+ - OneDrive
+ - Other internal information sources
+ - (Project Wednesday)
+ - DataVerse
+
+
+### Source authentication
+
+In addition to [url considerations](nlu-boost-conversations.md#url-considerations), you will also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote as a source for **Generative Answers**. Additional details can be found in [Information sources](nlu-boost-node#information-sources).
 
 ## Prerequisites
 
@@ -89,7 +92,7 @@ Detail and examples of how you can expand your bot's ability to use GA can be fo
 
 - This capability may be subject to usage limits or capacity throttling.
 
-## Boost your bot's reach
+## Increasing your bot's reach
 
 1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/). 
 
@@ -156,18 +159,13 @@ See the [AI response generation training, model, and usage notes](#ai-response-g
 The URL you specify should host the content you want the bot to generate answers from; it should not be the URL for a search engine:
 -  Using *<span>bing</span>.com* or other search engines in the URL won't provide useful responses.
 
-### Source authentication
-
-In addition to type and structure of a url, you will also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote to boost your bot's conversations.
-
-
-## Test your bot's boosted conversational reach 
+## Test your bot's **Generative Answers** reach 
 
 1. Click on **Test your bot** at the bottom of the side navigation pane. 
 
 1. In the **Test bot** panel, ask the bot questions that take advantage of **GA** capability.
 
-The Generative Answers preview works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
+**Generative Answers** works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
 
 - personal questions 
 - questions that require authenticated access to content
@@ -177,7 +175,7 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 - The bot can have difficulty answering questions that require calculations, comparisons, or form submissions to provide answers. This includes questions that use comparative and superlative terms such as better or best, latest, or cheapest. 
 
-- The Generative Answers capability doesn't remember context across multiple questions in the conversation (also known as "multi-turn questions"). 
+- The **Generative Answers** capability doesn't remember context across multiple questions in the conversation (also known as "multi-turn questions"). 
     You should treat each question you ask the bot as part of testing this capability in isolation.
 
 - If the bot can't generate an answer to a question, it will ask you to rephrase the question. After two of these prompts, the bot will initiate the [system **Escalate** topic](authoring-system-fallback-topic.md).
