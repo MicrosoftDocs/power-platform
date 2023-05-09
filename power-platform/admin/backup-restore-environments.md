@@ -29,8 +29,10 @@ To change the backup retention period, you need to be an admin with one of these
 
 You also need to know that changing the backup retention period does not affect the existing backups that are already stored for 7 days. It only applies to the future backups that will be taken after you change the setting.
 
-For example, suppose you create an environment on a certain day, which we'll can call day N. On that day, the system will start taking backups of your environment and store them for a default period of 7 days. This means that on day N+7, you will have backups from day N to day N+7 available for restoration. However, if you decide to change the retention period to 14 days, the system will keep the backups for a longer time. On day N+14, you will have backups from day N to day N+14 available for restoration. This way, you can have more flexibility and control over your backup data.
- 
+For example, suppose you create an environment on January 1. On that day, the system will start taking backups of your environment and store them for a default period of 7 days. This means that on January 8, you will have backups from January 1 - 8 available for restoration.
+
+However, if you decide to change the retention period on January 8 to 14 days, the system will keep the backups for a longer time. On January 16, you will have backups from January 3 to January 16 available for restoration. This way, you can have more flexibility and control over your backup data.
+
 ## Prepare your environment for PowerShell
 This section uses the PowerShell for Power Platform administrator module, which is the recommended PowerShell module for interacting with admin capabilities. To get started with the Power platform PowerShell module, see [Get started with PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started).
 
