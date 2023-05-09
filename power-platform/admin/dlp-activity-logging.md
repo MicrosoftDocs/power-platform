@@ -4,11 +4,11 @@ description: Data loss prevention activity logging
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 05/09/2023
 ms.subservice: admin
 author: tjvass
 ms.author: tjvass
-ms.reviewer: jimholtz 
+ms.reviewer: sericks 
 search.audienceType: 
   - admin
 ---
