@@ -173,6 +173,14 @@
           href: publication-connect-bot-to-azure-bot-service-channels.md
         - name: Integrate with question answering
           href: integrate-with-question-answering.md
+        - name: Integrate with the Azure cognitive language understanding service (CLU)
+          items:
+            - name: Create bots with Azure cognitive language understanding (preview)
+              href: advanced-clu-integration.md
+            - name: Get started with cognitive language understanding (preview)
+              href: advanced-clu-get-started.md
+            - name: Entity registration for cognitive language understanding (preview)
+              href: advanced-clu-entity-registration.md
         - name: Integrate with Bot Framework skills
           items:
             - name: Configure a skill for use in Power Virtual Agents
