@@ -33,10 +33,14 @@ To run the PowerShell cmdlets for app creators, do the following:
    > [!div class="mx-imgBorder"] 
    > ![Run PowerShell as an administrator.](media/open-powershell-as-admin75.png "Run PowerShell as an administrator")
 
-2. Import the necessary module using the following command:
+2. Import or update the necessary module using one of the following commands:
 
     ```powershell
     Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
+    ```
+    
+    ```powershell
+    Update-Module -Name Microsoft.PowerApps.Administration.PowerShell
     ```
 
     Alternatively, if you don't have admin rights on your computer, you can use the following to use these modules:
