@@ -15,10 +15,8 @@ search.audienceType:
 
 # Data loss prevention activity logging
 
-
 > [!NOTE]
 > Activity logging for data loss protection policies is not currently available in sovereign clouds.
-
 
 Data loss protection (DLP) policy activities are tracked from the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide). 
 
