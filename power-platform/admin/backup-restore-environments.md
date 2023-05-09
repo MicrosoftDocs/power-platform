@@ -210,10 +210,7 @@ System and manual backups for certain production-type environments are retained 
 
 ### How do I determine if backups of a production environment are retained for 28 days? 
 
-Production environments that have been created with a database will give you the option to enable one or more Dynamics 365 applications if you have purchased licenses that entitle you to deploy such applications (for example, Dynamics 365 Sales, Dynamics 365 Customer Service). Backups of production environments with a database and Dynamics 365 applications deployed are retained for up to 28 days. In contrast, backups of production environments that don't have Dynamics 365 applications deployed in them will be retained for 7 days. 
-
-### Can I extend my backup to be retained beyond the standard number of days?
-You can't extend your system backups or manual/on-demand backups. However, if you want to keep the data for longer than the standard retention period, we recommend you copy your environment to an additional environment and don't modify that additional environment. 
+Production environments that have been created with a database will give you the option to enable one or more Dynamics 365 applications if you have purchased licenses that entitle you to deploy such applications (for example, Dynamics 365 Sales, Dynamics 365 Customer Service). Backups of production environments with a database and Dynamics 365 applications deployed are retained for up to 28 days and production environments that don't have Dynamics 365 applications deployed in them will be retained for 7 days bby default however there is option to extend beyond 7 days for managed environmens. 
 
 ### Can I move my data from an online environment to an on-premises version?
 Obtaining a copy of your database backup isn't available. If you want to move your online data to Dynamics 365 Customer Engagement (on-premises), this requires data migration. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).  
