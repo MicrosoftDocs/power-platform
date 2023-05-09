@@ -42,8 +42,8 @@ Set-AdminPowerAppEnvironmentBackupRetentionPeriod
 ```
 Supply values for the following parameters:
 
-- EnvironmentName: <Environment Id>
-- NewBackupRetentionPeriodInDays: <7 or 14 or 21 or 28>
+- Set the **EnvironmentName** parameter to your Environment ID.
+- The **NewBackupRetentionPeriodInDays** paramter should be set to 7, 14, 21, or 28.
 
  
 ## System backups 
