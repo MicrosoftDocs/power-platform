@@ -60,7 +60,7 @@ About **system backups**:
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 - You must restore an environment to the same region in which it was backed up.
 - When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time t1, full audit data for the environment will be available, including any audit logs that were generated after t1.
-- The target environment will be listed in the **Select environment to overwrite** drop-down. If you don't see an environment, note that the target environment must be in the same geo (geographical region) as the source environment. 
+- The target environment is listed in the **Select environment to overwrite** drop-down menu. If you don't see an environment, that means that the target environment is in the same geo (geographical region) as the source environment. 
 - Only Power Apps and Power Automate flows in a Dataverse solution participate in backup and restore operations.  
 
 ### Restore a system backup  
@@ -91,7 +91,7 @@ About **system backups**:
 6. Confirm overwrite of the environment. 
 
 ## Manual backups
-Automated system backups are great, but you'll want to make your own backups before making some significant customization change or applying a version update. You can do this with manual backups.  
+Automated system backups are great, but you want to make your own backups before making significant customizations or applying a version update. 
   
 About **manual backups**:  
 
@@ -99,7 +99,7 @@ About **manual backups**:
 - You can back up production and sandbox environments. 
 - You can't back up the default environment.
 - Sandbox backups are retained for up to 7 days. 
-- Manual backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. Manual backups for production environments that don't have Dynamics 365 applications deployed in them will be retained for 7 days.
+- Manual backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. Manual backups for production environments that don't have Dynamics 365 applications deployed in them are retained for 7 days.
 - Check your expiration date.  
   
   > [!div class="mx-imgBorder"] 
@@ -120,7 +120,7 @@ About **manual backups**:
 
 3. Fill in the information, and then select **Create**.
 
-There's no status as the backup is processing. When the backup is completed, you'll see the following message: "*The [backup name] backup was successfully created.*" 
+There's no status as the backup is processing. When the backup is completed, the following message is displayed: "*The [backup name] backup was successfully created.*" 
 
 ### Restore a manual backup  
 You can only restore to sandbox environments. To restore to a production environment, first switch it to a sandbox environment. See [Switch an environment](switch-environment.md).
@@ -161,7 +161,7 @@ Restoring audit logs can significantly add to the time it takes to restore an en
 
    :::image type="content" source="media/copy-environment-audit-logs-enable.png" alt-text="Enable copying audit logs.":::
 
-4. Continue with steps 6 and 7 above.
+4. Continue with steps 6 and 7 in [Restore a manual backup](#restore-a-manual-backup).
 
 ### Delete a manual backup  
  You can  delete manual backups. You can't delete system backups.  
@@ -190,15 +190,15 @@ For information about backup and restore of certain apps, see the respective app
 
 ### How are system backups taken?
 
-In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
+In the current version of the product, system backups occur continuously. The underlying technology used is Azure SQL Database. For more inforation, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
 ### How are manual/on-demand backups taken?
-In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
+In the current version of the product, system backups occur continuously. The underlying technology used is Azure SQL Database. For more information, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
-Because Azure SQL Database takes backups continuously, there's no need to take additional backups or specify Azure SQL Database to take additional backups or an on-demand full backup. That means your on-demand backup is just a timestamp and a label that reflects the timestamp that we store in our system and use during restore requests. This is different from previous versions that took a full backup during an on-demand backup. 
+Because Azure SQL Database takes backups continuously, there's no need to take additional backups. Your on-demand backup is just a timestamp and a label that reflects the timestamp that we store in our system and use during restore requests. This behavior is different from previous versions that took a full backup during an on-demand backup. 
 
 ### Why can't I see a status of the manual backup?
-There's no status as the backup is processing. When the backup is completed, you'll see the following message: "*The [backup name] backup was successfully created.*" 
+There's no status as the backup is processing. When the backup is completed, the following message is displayed: "*The [backup name] backup was successfully created.*" 
 
 ### Should I open a support ticket for taking a full backup?
 No. In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
