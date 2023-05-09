@@ -85,10 +85,14 @@ As you become familiar with boosted conversations, you may want to use more than
 
 - This capability may be subject to usage limits or capacity throttling.
 
-## Boost conversations as a fallback
+## Generative Answers as a fallback
 
-As the introduction mentions, NLP provides path to assist bot users in finding answers before the conversation is escalated to a live agent. In this capacity, boosted conversations function as a fallback (triggered when current bot topics are unable to answer a query) providing the user additional bot-created assistance.
-You can add information sources for this purpose when creating your bot as outlined below.
+When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. If a matching intent is not found in the topics, the bot can use Generative Answers to attempt answering the query. This is called Generative Answers for fallback.
+
+While Generative Answers serves as a fallback in this situation, it is not limited to fallback scenarios. Your bot's ability to answer user questions can also use additional web sites, external or internal web sources and other information sources such as SharePoint or OneNote.
+Detail on this, and examples of how you can expand your bot's ability to use Generative Answers can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md).
+
+
 
 ## Boost your bot's reach
 
@@ -102,7 +106,7 @@ You can add information sources for this purpose when creating your bot as outli
 
 3. Provide a website you'd like the bot to use for generating answers, and click **Create**. See the [URL considerations](#url-considerations) section for what types of URLs you can use. 
 
-    :::image type="content" source="media/nlu-gpt/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
 After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that **Boost conversations** is enabled, or choose to change the URL you want to use.
 
