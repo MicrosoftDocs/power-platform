@@ -29,6 +29,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
   - Billing Admin
   - Service Admin
   - CRM Service Admin
+  - CRM Organization Admin
   - Power Platform Admin  
   - Security Admin
   - Partner Delegated Admin
@@ -36,8 +37,11 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
   - Teams Admin
   - Exchange Admin
   - Power BI Admin
+  - Power Apps Environment Admin
+  - Power Apps Full Admin
   - Compliance Admin
   - Helpdesk Admin
+  - LCS User
 
 - Available for the the following [support plans](https://www.microsoft.com/dynamics365/support):
    
