@@ -35,7 +35,7 @@ This article is intended for system administrators or IT professionals who are f
 >
 > If you're using [Bot Framework Composer](/composer/) it's strongly recommended that you use Composer 2.x. If you want to use an existing Composer 1.x bot, [first migrate it to Composer 2.x](/composer/how-to-migrate-bot-to-2-0) before using it as a skill.
 > 
-> Please note, in order to configure a skill, the associated app-registration in AAD for your skill should be set to Multi-tenant configuration. 
+> To configure a skill, the associated app-registration in AAD for your skill should be set to Multi-tenant configuration. 
 
 ## Compare use of Flows and skills actions
 
