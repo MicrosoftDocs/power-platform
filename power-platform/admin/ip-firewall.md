@@ -18,7 +18,8 @@ For example, consider when the IP firewall is turned on in your production Micro
 :::image type="content" source="media/ip-firewall-dataverse-diagram.png" alt-text="IP firewall feature in Dataverse":::
 
 > [!IMPORTANT]
-> This is a preview feature.
+> - This is a preview feature.
+> - The IP firewall feature is only available with Managed Environments. More information: [Managed Environments overview](managed-environment-overview.md)
 
 ## Key benefits
 
@@ -41,13 +42,19 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 1. Select **Environments**, and then open the environment you want.
 1. Select **Settings** > **Product** > **Privacy + Security**.
 1. Under **IP address settings**, set **Enable IP address based firewall rule** to **On**.
-1. Under **Allowed list of IPv4 or IPv6 ranges**, specify the allowed IP ranges in classless inter-domain routing (CIDR) format. If you have multiple IP ranges, separate them using a comma (,).
-1. Set additional properties:
-   - **Allow access for Microsoft Trusted Services**: Enabled by default. When selected, allows access to the Dataverse environment for service tags 'PowerPlatformInfra', 'GenevaSynthetics' and 'GenevaActions' and for internal first party applications.
-   - **Allow access for all application users**: Enabled by default. When selected, allows all application users third party and first party access to Dataverse APIs.
-   
-   <!-- Disabling #3 and #4 may break the integrations. NEED AN EXPLANATION FOR THIS -->
+1. Under **Allowed list of IPv4 or IPv6 ranges**, specify the allowed IP ranges in classless inter-domain routing (CIDR) format. If you have multiple IP ranges, separate them using a comma (,). This field excepts alphanumeric characters with a maximum length of 4000, allowing Maximum of 200 IP Ranges.
+1. Choose additional settings as appropriate:
+
+   - **Service tags to be allowed by IP Firewall**: You can select list of service tags to bypass the IP Firewall restrictions.
+   - **Allow Access for Microsoft trusted Services**: Enabled by default. Enabling this allows access to the Power Platform environment with Dataverse for service tags `PowerPlatformInfra`, `GenevaSynthetics` and `GenevaActions` and for internal first party applications<sup>1</sup>.
+   - **Allow access for all application Users**: Enabled by default. This setting allows all application users third party and first party access to Dataverse APIs<sup>1</sup>.
+   - **Enable IP firewall in audit only mode**: This setting allows you to enable IP firewall where a request by a user will be allowed regardless of their IP address.<!-- Will this be indicated in the audit logs? -->
+   - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more reverse proxy separated by comma (,). This reverse proxy settings apply to both IP based cookie binding and IP firewall.
+
 1. Select **Save**.
+
+> [!IMPORTANT]
+> When **Service tags to be allowed by IP Firewall** , **Allow Access for Microsoft trusted Services** and **Allow access for all application Users** IP firewall settings are all disabled, some services that use Dataverse might no longer work, such as Power Automate flows. <!-- Need more explanation for this. What integrations besides flows?-->
 
 ### Test IP firewall
 
@@ -84,7 +91,24 @@ Audit only mode allows you to identify the IP addresses that are making calls to
 
 ### Is this feature available to all the environments?
 
-No, when this feature is generally available, it is available only in Managed Environments.
+No, when this feature is generally available, it is available only with Managed Environments.
+
+### Is there a limit in the number of IP addresses that I can add in the IP address text box? 
+
+Yes, you can add type in maximum of about 200 IP addresses separated by comma (,). 
+
+### What should I do in case I am locked out due to incorrect configuration of IP addresses in IP firewall?
+
+Contact Microsoft Customer Support to get the environment unlocked.
+
+### How do I download the audit log for audit only mode? 
+
+Download the audit log data in JSON format by using Dataverse OData API. The format of the audit log API is.
+`https://{orgURI}/api/data/v9.1/audits?$select=createdon,changedata,action&$filter=action%20eq%20116&$orderby=createdon%20desc&$top=1` 
+
+- Replace `{OrgURI}` with the Dataverse environment URI.
+- Action Value = 116, for this event, or specify the value you want. <!--- what is this? -->
+- Number of items to return Top=1, or specifyc the number you want to return.
 
 ## Next steps
 
