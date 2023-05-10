@@ -16,7 +16,7 @@ searchScope:
 
 # Boost conversations with Search and summarize
 
-When you created your bot, you were invited to enter a url from which your bot could to generate responses. This is discussed in detail in [Boost conversations](nlu-boost-conversations.md). You can further boost your bot's conversations by using multiple information sources, both internal and external [to your network (?)], including:
+When you created your bot, you were invited to enter a url from which your bot could to generate responses. This is discussed in detail in [Generative answers](nlu-boost-conversations.md). You can further boost your bot's conversations by using multiple information sources, both internal and external [to your network (?)], including:
 
 External sources:
 
@@ -31,9 +31,9 @@ Internal resources:
  - (Project Wednesday)
  - DataVerse.
 
-In addition, you can add information sources to a topic using the Search and summarize content node. This node allows you to specify sources that the *node* will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability. [**Question**: Does this override or augment the "normal" boosted sources?]
+In addition, you can add information sources to a topic using the **Search and summarize content node**. This node allows you to specify sources that the *node* will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability. [**Question**: Does this override or _augment_ the "normal" boosted sources?]
 
-Together, these methods of boosting your bot's conversation provide for more "global" information support (i.e., boosted conversations), and tailored "local" information support at specific points within a topic via node-specific information sources (would saying "boosted node" be inappropriate here?).
+These methods of boosting your bot using **generative answers** allows you to specify information sources for the entire bot (for instance, with a url at bot creation) and use additional information sources within a topic via the Search and summarize node.
 
 ## Information Sources
 
@@ -50,21 +50,27 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 
 ## Search and Summarize content
 
- You can add Generative Answers to your bot by adding a Search and summarize content node. This allows you to search internal and external information sources from the node level to further boost your bot's conversations.
+ Adding a Search and summarize content node allows you to use generative answers to your a bot's topic. This allows you to search internal and external information sources from the node level to further boost your bot's conversations.
 
-1. Open the authoring canvas for your topic, and identify the point where you want to Search and summarize content.
+1. Open the authoring canvas for your topic, and identify the point where you want to use Search and summarize content.
 
 1. Click on the '+' where you would like to add the Search and Summarize node.
 
-1. Add a Search and Summarize content node.(image: *plus with options menu; display S&S option*)
+1. Add a Search and Summarize content node.
+ 
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-node.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
 
 1. On the Search and summarize node, select Properties from the node menu and select Data source
- 
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
+
 1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources). (Note here about the other options (Variable or PowerFX) - what is the integration?)(image: data sources menu)
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
 
 1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
 
-Your bot will use the collected information in line with the topic flow to provide a response.
+The topic will now Search and summarize content from the information sources provided _to the node_. [What happens when that doesn't provide a cogent answer? Fallback?]
 
 ## Really cool examples (though admittedly, it's all pretty cool!)
 

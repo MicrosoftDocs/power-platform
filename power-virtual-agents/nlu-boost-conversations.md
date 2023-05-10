@@ -102,6 +102,8 @@ In addition to [url considerations](nlu-boost-conversations.md#url-consideration
     
 1. Enter a name for the bot.
 
+1. Select the language you want your bot to speak from the menu. [The default language is English (true?)]
+
 3. Provide a website you'd like the bot to use for generating answers, and click **Create**. See the [URL considerations](#url-considerations) section for what types of URLs you can use. 
 
     :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
