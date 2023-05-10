@@ -78,8 +78,9 @@ This sections provides instructions on boosting conversations with generative an
 
 ### Connect to a single URL to boost a conversation
 
-When you create a bot using the unified canvas, you are invited to boost it's conversations with generative answers. [Create a boosted bot](nlu-gpt-quickstart.md#create-a-boosted-bot) takes you through this process.
+#### [Bot]
 
+When you create a bot using the unified canvas, you are invited to boost it's conversations with generative answers. [Create a boosted bot](nlu-gpt-quickstart.md#create-a-boosted-bot) takes you through this process.
 
 You can also change the URL, disable **generative answers**, or change the level of content moderation in the settings for the bot:
 
@@ -98,6 +99,8 @@ You can also change the URL, disable **generative answers**, or change the level
 1. Select **Save** at the top of the **AI capabilities** page.
 
 You can now test your bot to see how well it responds to questions related to the content on the URL you specified. For more details, refer to [Test you bot's generative answers reach](nlu-gpt-quickstart.md#test-your-bots-generative-anwers-reach)
+
+#### [Search and summarize node]
 
 To boost coverage in a Search and summarize node, follow these instructions:
 
