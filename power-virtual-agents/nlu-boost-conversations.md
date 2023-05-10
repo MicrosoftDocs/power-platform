@@ -46,7 +46,7 @@ This could take a while and some specialized knowledge - but with **Generative A
 When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. This process includes the Fallback [system topic](authoring-system-topics.md), though it may not match the user's intent. If a matching intent is not found in the topics, the bot can use **GA** to attempt answering the query. This is called "Generative Answers for fallback".
 This document is focused on _getting you started_ using **GA** to augment your bot's ability to help customers.
 
-While **GA** serves as a fallback in this situation, it is not limited to fallback scenarios. Your bot's ability to answer user questions can also use additional web sites, external or internal web sources and other information sources such as SharePoint or OneNote (see [Generative Answers](nlu-boost-conversations.md#generative-answers)). Details and examples on how you can expand your bot's ability to use **GA** can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md). The following is an outline of sources that can be used by **GA**.
+While **GA** serves as a fallback in this situation, it is not limited to fallback scenarios. Your bot's ability to answer user questions can also use additional web sites, external or internal web sources and other information sources such as SharePoint or OneNote. Details and examples on how you can expand your bot's ability to use **GA** can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md). The following is an outline of sources that can be used by **GA**.
 
 External resources include:
 
