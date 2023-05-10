@@ -48,7 +48,7 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 | Other internal data | Internal | ... | ... | ... |
 | Project Wednesday | Internal | Azure Open AI knowledge repository | ... | ... |
 
-## Search and Summarize content
+## Search and Summarize content node
 
  Adding a Search and summarize content node allows you to use generative answers to your a bot's topic. This allows you to search internal and external information sources from the node level to further boost your bot's conversations.
 
@@ -76,7 +76,8 @@ The topic will now Search and summarize content from the information sources pro
 
 ### Connect to a single URL to boost a conversation
 
-When you create a bot using the unified canvas, you are invited to boost it's conversations with generative answers (refer to [Create a boosted bot](nlu-gpt-quickstart.md#create-a-boosted-bot)).
+When you create a bot using the unified canvas, you are invited to boost it's conversations with generative answers. [Create a boosted bot](nlu-gpt-quickstart.md#create-a-boosted-bot) takes you through this process.
+
 
 You can also change the URL, disable **generative answers**, or change the level of content moderation in the settings for the bot:
 
@@ -84,7 +85,7 @@ You can also change the URL, disable **generative answers**, or change the level
 
     1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
 
-    1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](#url-considerations) as when enabling the capability when you create a bot.
+    1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](nlu-boost-conversations#url-considerations) as when enabling the capability when you create a bot.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
 
@@ -96,12 +97,45 @@ You can also change the URL, disable **generative answers**, or change the level
 
 You can now test your bot to see how well it responds to questions related to the content on the URL you specified. For more details, refer to [Test you bot's generative answers reach](nlu-gpt-quickstart.md#test-your-bots-generative-anwers-reach)
 
+To boost coverage in a Search and summarize node, follow these instructions:
+
+1. On the Search and summarize node, select Properties from the node menu, and select Data source.
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of the Search and summarize node properties.":::
+
+1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](nlu-boost-conversations.md#information-sources).
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize node Data sources menu.":::
+
+1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
+
 [What (if anything) do we need to say about authentication here?]
 
 ### Connect a Bing Custom Search to search a number of websites
 
-- link to [Bing Custom Search](https://www.customsearch.ai/)
-- Do I have these instructions somewhere? Where else can we direct users?
+[Bing Custom Search](https://www.customsearch.ai/) allows you to build a tailored search for specific content. The generated **Custom configuration ID** can then be used in your bot by generative answers. If you haven't used Bing Custom Search, use the link at the beginning of this paragraph, and follow [Quickstart: Create your first Bing Custom Search instance](https://learn.microsoft.com/bing/search-apis/bing-custom-search/how-to/quick-start). This will walk you through creating and publishing one. Once you have a Custom configuration ID for your search, you can use it to boost conversations with generative answers.
+
+In Bing Custom Search:
+
+1. On the **Web API** tab under **Production**, copy the Custom configuration ID you want to use. This will function like a url would as described [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). NOTE: If you have more than one custom configuration, make sure you are copying the ID you want.
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize node Data sources menu.":::
+
+In your bot:
+
+{:start=2} 
+
+1. On the Search and summarize node, select Properties from the node menu, and select Data source.
+
+1. Copy your custom configuration into the [input box] under "Sites", and click on the '+' to add it to the node's Data sources.
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the Search and summarize node properties.":::
+
+1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
+ 
+The topic will now Search and summarize content from the information sources in the Bing Custom Search configuration provided. This allows you to use a large number of sources to boost your Search and summarize node without having to enter each source individually.
+
+[What (if anything) do we need to say about authentication here?]
 
 ### Connect to a Sharepoint
 
