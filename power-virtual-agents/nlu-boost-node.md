@@ -50,7 +50,7 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 
 ## Search and Summarize content node
 
- Adding a Search and summarize content node allows you to use generative answers to your a bot's topic. This allows you to search internal and external information sources from the node level to further boost your bot's conversations.
+ Adding a Search and summarize content node allows you to use generative answers with your a bot's topic. This allows you to search internal and external information sources from the node level to further boost your bot's conversations.
 
 1. Open the authoring canvas for your topic, and identify the point where you want to use Search and summarize content.
 
