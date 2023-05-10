@@ -16,11 +16,11 @@ searchScope:
 
 
 
-# Generative Answers (preview)
+# Generative answers (preview)
 
 [!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
-When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. By utilizing **Generative Answers (GA)** in Power Virtual Agents, your bot can find and present information from multiple sources (which may be internal or external) even if you haven't created a topic for it. These can be used as a fallback, or as primary information sources in your chatbot.
+When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. By utilizing **generative answers (GA)** in Power Virtual Agents, your bot can find and present information from multiple sources (which may be internal or external) even if you haven't created a topic for it. These can be used as a fallback, or as primary information sources in your chatbot.
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
@@ -39,9 +39,9 @@ Your workflow might be like this:
 
 1. You create individual topics for the most important or most often-asked questions from your customers (which you might have developed based on [analytics from previous bots](analytics-overview.md) or existing support issues).
 
-This could take a while and some specialized knowledge - but with **Generative Answers** enabled you're up and running from day one.
+This could take a while and some specialized knowledge - but with **generative answers** enabled you're up and running from day one.
 
-## Generative Answers as a fallback
+## Generative answers as a fallback
 
 When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. This process includes the Fallback [system topic](authoring-system-topics.md), though it may not match the user's intent. If a matching intent is not found in the topics, the bot can use **GA** to attempt answering the query. This is called "Generative Answers for fallback".
 This document is focused on _getting you started_ using **GA** to augment your bot's ability to help customers.
@@ -64,7 +64,7 @@ Internal resources include:
 
 ### Source authentication
 
-In addition to [url considerations](nlu-boost-conversations.md#url-considerations), you will also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote as a source for **Generative Answers**. Additional details can be found in [Information sources](nlu-boost-node.md#information-sources).
+In addition to [url considerations](nlu-boost-conversations.md#url-considerations), you will also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote as a source for **generative answers**. Additional details can be found in [Information sources](nlu-boost-node.md#information-sources).
 
 ## Prerequisites
 
@@ -84,7 +84,7 @@ In addition to [url considerations](nlu-boost-conversations.md#url-consideration
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
-- You must enable the **Generative Answers** option for each bot.
+- You must enable the **generative answers** option for each bot.
 
 - [Review AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
@@ -159,13 +159,13 @@ See the [AI response generation training, model, and usage notes](#ai-response-g
 The URL you specify should host the content you want the bot to generate answers from; it should not be the URL for a search engine:
 -  Using *<span>bing</span>.com* or other search engines in the URL won't provide useful responses.
 
-## Test your bot's **Generative Answers** reach 
+## Test your bot's **generative answers** reach 
 
 1. Click on **Test your bot** at the bottom of the side navigation pane. 
 
 1. In the **Test bot** panel, ask the bot questions that take advantage of **GA** capability.
 
-**Generative Answers** works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
+**Generative answers** works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
 
 - personal questions 
 - questions that require authenticated access to content
@@ -175,7 +175,7 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 - The bot can have difficulty answering questions that require calculations, comparisons, or form submissions to provide answers. This includes questions that use comparative and superlative terms such as better or best, latest, or cheapest. 
 
-- The **Generative Answers** capability doesn't remember context across multiple questions in the conversation (also known as "multi-turn questions"). 
+- The **generative answers** capability doesn't remember context across multiple questions in the conversation (also known as "multi-turn questions"). 
     You should treat each question you ask the bot as part of testing this capability in isolation.
 
 - If the bot can't generate an answer to a question, it will ask you to rephrase the question. After two of these prompts, the bot will initiate the [system **Escalate** topic](authoring-system-fallback-topic.md).
@@ -198,7 +198,7 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 ### Publishing
 
-During this preview, you won't be able to publish bots that have **Generative Answers** enabled. 
+During this preview, you won't be able to publish bots that have **generative answers** enabled. 
 
 If you'd like to publish a bot that has **GA** enabled, you need to ask your admin to enable it for your tenant in the **Power Platform admin center**. 
 
@@ -232,7 +232,7 @@ This FAQ answers common questions about the AI that is used by the **GA** capabi
 
 ### Does the capability produce perfect responses?   
 
-Responses generated by the **Generative Answers** capability are not always perfect and can contain mistakes. 
+Responses generated by the **generative answers** capability are not always perfect and can contain mistakes. 
 
 The system is designed to query knowledge from the website of your choosing and to package relevant findings into an easily consumable response. However, it's important to keep in mind some characteristics of the AI that may lead to unexpected responses:
 
