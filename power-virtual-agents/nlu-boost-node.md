@@ -58,15 +58,15 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 
 1. Add a Search and Summarize content node.
  
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-node.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-node.png" alt-text="Screenshot of the adding a Search and summarize node.":::
 
 1. On the Search and summarize node, select Properties from the node menu and select Data source
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of the Search and summarize node properties.":::
 
 1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources). (Note here about the other options (Variable or PowerFX) - what is the integration?)(image: data sources menu)
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize node Data sources menu.":::
 
 1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
 
@@ -76,10 +76,27 @@ The topic will now Search and summarize content from the information sources pro
 
 ### Connect to a single URL to boost a conversation
 
-A standard example - looks a lot like creating a bot.
+When you create a bot using the unified canvas, you are invited to boost it's conversations with generative answers (refer to [Create a boosted bot](nlu-gpt-quickstart.md#create-a-boosted-bot)).
 
-- bot creation (all over the place in the content - just refer to)
-- update/change default/fallback url from bot creation
+You can also change the URL, disable **generative answers**, or change the level of content moderation in the settings for the bot:
+
+1. With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
+
+    1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
+
+    1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](#url-considerations) as when enabling the capability when you create a bot.
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
+
+    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-content-moderation.png" alt-text="Screenshot of the bot content moderation menu.":::    
+
+1. Select **Save** at the top of the **AI capabilities** page.
+
+You can now test your bot to see how well it responds to questions related to the content on the URL you specified. For more details, refer to [Test you bot's generative answers reach](nlu-gpt-quickstart.md#test-your-bots-generative-anwers-reach)
+
+[What (if anything) do we need to say about authentication here?]
 
 ### Connect a Bing Custom Search to search a number of websites
 

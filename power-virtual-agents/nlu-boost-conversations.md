@@ -163,7 +163,7 @@ See the [AI response generation training, model, and usage notes](#ai-response-g
 The URL you specify should host the content you want the bot to generate answers from; it should not be the URL for a search engine:
 -  Using *<span>bing</span>.com* or other search engines in the URL won't provide useful responses.
 
-## Test your bot's **generative answers** reach 
+## Test your bot's **generative answers** reach
 
 1. Click on **Test your bot** at the bottom of the side navigation pane. 
 
