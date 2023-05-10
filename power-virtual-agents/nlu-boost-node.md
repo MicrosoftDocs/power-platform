@@ -72,7 +72,9 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 
 The topic will now Search and summarize content from the information sources provided _to the node_. [What happens when that doesn't provide a cogent answer? Fallback?]
 
-## Really cool examples (though admittedly, it's all pretty cool!)
+## Adding generative answers from different sources
+
+This sections provides instructions on boosting conversations with generative answers for several scenarios.
 
 ### Connect to a single URL to boost a conversation
 
@@ -111,29 +113,23 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
 [What (if anything) do we need to say about authentication here?]
 
-### Connect a Bing Custom Search to search a number of websites
+### Use a Bing Custom Search to search a number of websites
 
 [Bing Custom Search](https://www.customsearch.ai/) allows you to build a tailored search for specific content. The generated **Custom configuration ID** can then be used in your bot by generative answers. If you haven't used Bing Custom Search, use the link at the beginning of this paragraph, and follow [Quickstart: Create your first Bing Custom Search instance](https://learn.microsoft.com/bing/search-apis/bing-custom-search/how-to/quick-start). This will walk you through creating and publishing one. Once you have a Custom configuration ID for your search, you can use it to boost conversations with generative answers.
 
-In Bing Custom Search:
-
-1. On the **Web API** tab under **Production**, copy the Custom configuration ID you want to use. This will function like a url would as described [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). NOTE: If you have more than one custom configuration, make sure you are copying the ID you want.
+1. _In Bing Custom Search_, on the **Web API** tab under **Production**, copy the Custom configuration ID you want to use. This will function like a url would as described [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). NOTE: If you have more than one custom configuration, make sure you are copying the ID you want.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize node Data sources menu.":::
 
-In your bot:
+1. _On the Search and summarize node in your topic_, select Properties from the node menu, and select Data source.
 
-{:start=2} 
-
-1. On the Search and summarize node, select Properties from the node menu, and select Data source.
-
-1. Copy your custom configuration into the [input box] under "Sites", and click on the '+' to add it to the node's Data sources.
+1. Paste your custom configuration into the [input box] under "Sites", and click on the '+' to add it to the node's Data sources.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the Search and summarize node properties.":::
 
 1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
  
-The topic will now Search and summarize content from the information sources in the Bing Custom Search configuration provided. This allows you to use a large number of sources to boost your Search and summarize node without having to enter each source individually.
+The node will now Search and summarize content from the information sources in the Bing Custom Search configuration provided. This allows you to use a large number of sources to boost your Search and summarize node without having to enter each source individually.
 
 [What (if anything) do we need to say about authentication here?]
 
