@@ -156,10 +156,10 @@
                       href: cmk-lock-unlock.md
                     - name: Migrate from BYOK (preview)
                       href: cmk-migrate-from-byok.md
-                - name: Trial environments
-                  href: trial-environments.md
                 - name: Sandbox environment
                   href: sandbox-environments.md
+                - name: Trial environments
+                  href: trial-environments.md                
                 - name: Dataverse for Teams environment
                   href: about-teams-environment.md
                 - name: View apps in your environments
@@ -459,7 +459,7 @@
                   items:
                     - name: Control user access to environments
                       href: control-user-access.md
-                    - name: "Restrict cross-tenant access (preview)"
+                    - name: Restrict cross-tenant access
                       href: cross-tenant-restrictions.md
                     - name: Content security policy
                       href: content-security-policy.md

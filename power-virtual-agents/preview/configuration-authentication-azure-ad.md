@@ -57,7 +57,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
     :::image type="content" source="media/configure-web-sso/configure-platform.png" alt-text="Screenshot of the Platform configurations window with the Web application platform highlighted.":::
 
-1. Under **Redirect URIs**, enter `https://unitedstates.token.botframework.com/.auth/web/redirect` and `https://europe.token.botframework.com/.auth/web/redirect`.
+1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect` and `https://europe.token.botframework.com/.auth/web/redirect`.
 
 1. In the **Implicit grant and hybrid flows** section, turn on both **Access tokens (used for implicit flows)** and **ID tokens (used for implicit and hybrid flows)**.
 
