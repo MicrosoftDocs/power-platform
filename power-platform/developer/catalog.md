@@ -187,28 +187,147 @@ More information: [Assign a security role to a user](../admin/assign-security-ro
 
 ### Approve & Reject submission requests
 
-Environment admins and users with the Catalog Approver  role can review new submissions and approve or decline requests. If global auto-approval or publisher level auto-approval is turned on then there's no requirement for manual review and approval. More information: [Enable Auto Approval](#enable-auto-approval)
+Environment admins and users with the Catalog Approver role can review new submissions and approve or decline requests. If global auto-approval or publisher level auto-approval is turned on then there's no requirement for manual review and approval. More information: [Enable Auto Approval](#enable-auto-approval)
 
-1. Select **Requests** in the Catalog Manager app
-1. Open a request and select **Resolve Request** in the menu.
+In the **Approvals** section of the navigation pane, select **Requests**.
+This list has 16 views:
+
+- **Abandoned Approval Requests**
+- **Active Approval Requests** (Default)
+- **All Approval Request**
+- **Approved Approval Request**
+- **Completed Approval Requests**
+- **Draft Approval Requests**
+- **Draft or Failed Validation**
+- **Failed Pre-Validation**
+- **Functional Validation inProgress & Waiting for Test Cases**
+- **In Progress Approval request**
+- **Inactive Approval Requests**
+- **My Approval Request**
+- **Need Follow-Up**
+- **New Approval Request**
+- **Rejected Approval Requests**
+- **Waiting for submitter response**
+
+Using the **Active Approval Requests** view, open a request and select **Resolve Request** in the menu.
 
 - Select **Reject Request**to decline the request. The request will be archived and publisher, item and asset will not be created.
 - Click **Complete Request** to approve. Upon approval, Publisher, Item and Assets be created. The request will be archived and moved to **Inactive** status.
 
 
-
 ### Review Install history
+
+In the **Deployment History** section of the navigation pane, select **Install History** to view a list of installations that were requested from the catalog.
+
+This list has 2 views:
+
+- **Active Install Histories**(Default)
+- **Inactive Install Histories**
 
 ### Review Catalog Items
 
+In the **Catalog** section of the navigation pane, select **Catalog Items** to view a list of catalog items that are available in the catalog
+
+This list has 5 views:
+
+- **Active Catalog Items**
+- **Catalog Items - Publisher View**
+- **Inactive Applications** An inactive item can be reactivated, but a deleted item cannot be reinstated. Disabled items do not feature in discovery and list command response.
+- **Pending Approval**
+- **Published** (Default) This shows the most recent version of the item.
+
+These view show the following columns:
+
+
+|Column|Description|
+|---------|---------|
+|**Name (Publishers)** |Name of the publisher|
+|**Name**|Display Name|
+|**Catalog Item Id**|Id provided by publisher|
+|**Engineering Contact**|The engineering contact|
+|**Status Reason**|The reason for the status of the item. Options: <br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br /> - **Rejected**|
+|**Modified On**|When the item was last modified.|
+|**Modified By**|Who last modified the item.|
+
+This list can also be be viewed using the [pac catalog list](cli/reference/catalog.md#pac-catalog-list) command. More information: //TODO
+
 #### Review Catalog publishers
+
+In the **Catalog** section of the navigation pane, select **Catalog Publishers** to view a list of publishers associated to catalog items.
+
+This list has 2 views:
+
+- **Active Publishers**
+- **Inactive Publishers**
+
+
+Catalog publishers have the following columns:
+
+|Display Name|Description|
+|-----|-----|
+|**Allow Auto-Approval**|Both the publisher and the app must allow auto-approvals in order for the app's approval requests to look for auto-approval policies.|
+|**Azure Publisher Id**| //TODO|   
+|**Description**|A description of the publisher|
+|**Last Sync Date**|Date last synced with TPS / PES|
+|**Name**|The name of the publisher.|
+|**Publisher Type**|Choices:<br /> - **FirstParty**<br /> - **ThirdParty**<br /> - **Tenant**<br /> - **Partner**|
+|**Pushed Date**|Date the reocord was pushed to TPS\PES|
+|**Subscription Id**|Azure Subscription ID where Items should be Posted|
+|**Publisher ID**|This is the GUID of the ID used by the integration systems|
+|**Owner**|Owner Id|
+|**Status Reason**|Reason for the status of the Publisher<br />Choices:<br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br /> - **TPS Disabled**|
+
 
 #### Review packages and solutions of items in catalog
 
+In the **Catalog** section of the navigation pane, select **Packages Assets** to view a list of underlying artifacts associated to a catalog item that includes the package and solution details.
+
+This list 8 views:
+
+- **Active Packages Assets**
+- **Inactive Packages**
+- **Packages Assets**
+- **Packages Assets - Available**
+- **Packages Assets - Not Available**
+- **Packages Assets - Pending Approval**
+- **Packages Assets - Published** (Default)
+- **Packages Assets in Submission**
+
+//TODO: Is this Catalog Assets or Package Assets? I couldn't figure out what table is behind this
+
 ### Review errors in submission requests
+
+In the **Approvals** section of the navigation pane, select **Failed Pre-Validation** to view a lis of errors associated to a submission in the Catalog Manager application.
+
+1. Click on the request name that you want to investigate.
+1. In the **Timeline** card you can find the exception in the **Notes**.
+
+:::image type="content" source="media/failed-pre-validation-exception-ui.png" alt-text="The exception in the notes of the Timeline card.":::
+
+
+After fixing the submission, trigger the submit again from PAC CLI. You will see a new request that can be approved.
 
 ### Review errors in install requests
 
+In the **Deployment History** section of the navigation pane, select **Install History** to view a list of errors associated to an install. 
+
+Click on the failed request name to get more information.
+
+//TODO I don't see failed request names
+
+
+
 ## Frequently asked questions (FAQ)
+
+The following are frequently asked questions related to catalog in Power Platform.
+
+### When would I need to create more than one catalogs?
+
+While most organizations are likely to leverage just one catalog, it is possible to create more than one catalogs for distinct audiences. These include segregation of data concerns from a geography, departmental, business group (subsidiary) or other reasons.
+
+### Is there a license required to use the Catalog?
+
+For the public preview, the catalog feature is available to be used without any licensing. For GA, the catalog feature will require the catalog to be setup in a managed environment.
+
 
 
