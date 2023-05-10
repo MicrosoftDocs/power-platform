@@ -14,9 +14,9 @@ contributors:
 ---
 # Catalog components and templates
 
-Organizations where Developers & Makers build and share components and templates get more value from the Power Platform. Just building is not enough. Sharing power platform artifacts at scale fosters communities and support groups to emerge, incubate and unlock value from diverse set of personnel in an organization.
+Organizations where developers & makers build and share components and templates get more value from the Power Platform. Just building is not enough. Sharing power platform artifacts at scale fosters communities and support groups to emerge, incubate and unlock value from diverse set of personnel in an organization.
 
-Successful organizations adopt a *fusion teams* model whereby pro-developers, makers and admins all work together to help their fellow employees derive the highest value possible from the Power Platform.
+Successful organizations adopt a *fusion teams* model where pro-developers, makers and admins all work together to help their fellow employees derive the highest value possible from the Power Platform.
 
 The catalog in Power Platform enables developers and makers to:
 
@@ -32,17 +32,34 @@ For admins and line of business approvers, the catalog:
 
 ## Catalog process
 
-<!-- Need to extract these points from the diagram somehow -->
+<!-- 
+
+Need to extract these points from the diagram somehow.
+Need to get the words right before adding to a diagram.
+Try to get a diagram without text
+
+ -->
 
 ### Create
 
+Makers and Pro-devs can create solutions an templates with useful configuration points, so that users can easily configure all the solution components in a solution or create from a template.
+
 ### Submit
+
+Makers and Pro-devs can submit solutions and templates to the catalog so that they can help their colleagues solve business problems.
 
 ### Approve and Store
 
+Admins and LOB approvers can review and approve solutions and templates to be shared with the organization, so that catalog content is governed.
+
 ### Discover
 
+Makers and Pro-devs can discover solutions and templates from their colleagues in the catalog, so that they can more quickly solve business problems.
+
 ### Acquire
+
+Makers and Pro-devs can easily acquire solutions and templates from the catalog by providing connections and configuration
+
 
 ## Terminology
 
@@ -62,13 +79,13 @@ These terms are important to understand when using the catalog:
 
 To get started you need to complete the following:
 
-1. [Install the Catalog Manager application](#install-the-catalog-manager-application)
+1. [Install the **Catalog Manager** application](#install-the-catalog-manager-application)
 1. [Configure the catalog](#configure-the-catalog): Configure catalog settings including metadata management and enabling auto-approvals
 1. [Administer the catalog](#administer-the-catalog): Perform ongoing catalog administration including Approving new submissions, reviewing submission and install failures
 
-## Install the Catalog Manager application
+## Install the **Catalog Manager** application
 
-To start using the catalog, you need to install the **Catalog Manager**application from AppSource.
+To start using the catalog, you need to install the ****Catalog Manager****application from AppSource.
 
 > [!NOTE]
 > Most organizations will only need to install one catalog. While multiple catalogs within a tenant are supported they are for advanced departmental, data residency type scenarios and need to be evaluated in light of your business needs.
@@ -80,7 +97,7 @@ You must have the following security role assignment and your Dataverse environm
 - Security role: You must have the System administrator security role on the environment.
 - A Dataverse environment with minimum DB version of `9.2.22122.00148`. You can check the Database version:
 
-   - In the **Admin Center** > **Environment page** > **Version card**.
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) > **Environment page** > **Version card**.
    - By using the [RetrieveVersion function](xref:Microsoft.Dynamics.CRM.RetrieveVersion) with your browser. Type <br />`https://<your org>.<your region code>.dynamics.com/api/data/v9.2/RetrieveVersion`<br /> in your browser address bar  and view the JSON returned.
 
 ### Installation instructions
@@ -90,36 +107,37 @@ Here are instructions to install the catalog:
 1. Login into [appsource.microsoft.com](https://appsource.microsoft.com/) with your tenant credentials. Click this link:  [https://appsource.microsoft.com/product/dynamics-365/powerappssvc.catalogmanager-preview?flightCodes=dde212e5c66047c59bf2b346c419cef6](https://appsource.microsoft.com/product/dynamics-365/powerappssvc.catalogmanager-preview?flightCodes=dde212e5c66047c59bf2b346c419cef6)
 
    > [!NOTE]
-   > The Catalog Manager application is not enabled for search in appsource at this time. You must use the link above to open it.
+   > The **Catalog Manager** application is not enabled for search in appsource at this time. You must use the link above to open it.
 
-1. Click on **Get It Now** to acquire the **Catalog Manager** app. This will redirect you to the Power Platform Admin Center.
+1. Click on **Get It Now** to acquire the ****Catalog Manager**** app. This will redirect you to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-   You may be prompted to confirm your details before you are directed to the Admin center.
+   You may be prompted to confirm your details before you are directed to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-1. In the Admin Center, you will be asked to **Select an Environment** to install the **Catalog Manager** application.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you will be asked to **Select an Environment** to install the ****Catalog Manager**** application.
 1. After you agree to the legal terms and privacy statements, click **Install**.
 
 This will request that the application be installed. It will take a few minutes to complete. 
 
-After the installation is complete, the **Catalog Manager** app is available under Maker portal > Apps. Click **Play** to launch the **Catalog Manager** App.
+After the installation is complete, the ****Catalog Manager**** app is available in [Power Apps](https://make.powerapps.com/) > **Apps**. Click **Play** to launch the ****Catalog Manager**** App.
 
-#### Validating successful install of the Catalog Manager application
+#### Validating successful install of the **Catalog Manager** application
 
-To verify that the Catalog Manager application installed successfully:
+To verify that the **Catalog Manager** application installed successfully:
 
 1. In the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/) > Select **Environments**.
-1. Select the environment you chose to install the Catalog Manager application.
+1. Select the environment you chose to install the ****Catalog Manager**** application.
 1. In the **Resources** card, click the **Dynamics 365 apps** link.
-1. You should find the **Catalog Manager** app listed with a **Status** of **Installed**.
+1. You should find the ****Catalog Manager**** app listed with a **Status** of **Installed**.
 
 In [Power Apps](https://make.powerapps.com/), with the environment you selected, you should also be able to find the following solutions:
-You should also be able to see the following solutions installed in the Environment where the Catalog Manager application was installed:
 
 - Power Platform catalog service identities
 - Power Platform catalog manager
+
+
 ## Configure the catalog
 
-After you have installed the Catalog Manager application, in [Power Apps](https://make.powerapps.com/) locate the application and click **Play** to open the application.
+After you have installed the ****Catalog Manager**** application, in [Power Apps](https://make.powerapps.com/) locate the application and click **Play** to open the application.
 
 ### Configure catalog metadata
 
@@ -135,34 +153,39 @@ Here you can set the following configuration values which are particularly impor
 |**Help Link**|Type a URL to a resource for your organization that contains your documentation about using the catalog.|
 |**Image**|Upload an image to easily identify the catalog.|
 
-In the **Catalog Configuration** card on the right side, there are two choices you can apply
+In the **Catalog Configuration** card on the right side, there are two choices you can apply: **Enable Auto Approval** and **Enable Unmanaged Solutions**.
 
 #### Enable Auto Approval
 
 This is the setting for the entire catalog.
 
-Organizations can take a stance of approved by default or impose an approval process for submissions.
+Organizations can take a stance of *approved by default* or impose an approval process for submissions.
 
 Auto-approval can be enabled at two levels:
 
-- **Catalog as a whole** – This setting. This is to enable the scenario where every submission is auto-approved regardless of publisher.  
-- **Publisher** : Navigate to **Catalog Publishers** in Catalog Manager App and turn on for individual Catalog publishers. Use this when there is a trusted group for which no approval is required.
 
-If you choose to enable auto approval for the entire catalog, settings at the publisher level will not apply.
+|Level|Description  |
+|---------|---------|
+|**Catalog**|Set this once on the catalog so that every submission is auto-approved regardless of publisher.  |
+|**Publisher** |Navigate to **Catalog Publishers** in ****Catalog Manager**** App and turn on for individual catalog publishers. Use this when there is a trusted group for which no approval is required.|
 
-Even with auto-approval, submission requests that get auto-approved can are available to be viewed within the Catalog Manager app. They can be viewed under **Requests** using the **All Approval Request**view. More information: [Approve & Reject submission requests](#approve--reject-submission-requests)
+
+> [!NOTE]
+> If you choose to enable auto approval for the entire catalog, settings at the publisher level will not apply.
+
+Even with auto-approval, submission requests that get auto-approved can are available to be viewed within the ****Catalog Manager**** app. They can be viewed under **Requests** using the **All Approval Request**view. More information: [Approve & Reject submission requests](#approve--reject-submission-requests)
 
 
 #### Enable Unmanaged Solutions
 
 This setting is enabled by default. You must enable this setting if you want to use the deployment mode of **Template**. More information: TODO x-ref Submission >Deployment 
 
-You can choose to allow disallow sharing of unmanaged solutions via the catalog. 
+You can choose to allow disallow sharing of unmanaged solutions via the catalog.
 <!-- Why would someone want to do this? -->
 
 ## Administer the catalog
 
-Administering the catalog includes the following:
+Administering the catalog includes the following tasks:
 
 - [Setup Users](#setup-users)
 - [Approve & Reject submission requests](#approve--reject-submission-requests)
@@ -173,15 +196,15 @@ Administering the catalog includes the following:
 
 ### Setup Users
 
-The Catalog Manager application provides the following security roles you can associate to users, AAD groups, and modern teams:
+The **Catalog Manager** application includes the following security roles you can associate to users, Microsoft Azure Active Directory (AAD) groups, and modern teams:
 
 
 |Role |Description  |
 |---------|---------|
-|Catalog Submitter|Users with this role can submit items to the catalog.|
-|Catalog Read-Only Member|Users with this role can discover and install items from the catalog  |
-|Catalog Approver  |Users with this role can approve submissions to the catalog. Please note these can be users from your central IT department or Line of Business that your organization wants to empower to participate in the Approvals process.|
-|Catalog Administrator|Users with this role can administer the catalog.|
+|**Catalog Submitter**|Users with this role can submit items to the catalog.|
+|**Catalog Read-Only Member**|Users with this role can discover and install items from the catalog  |
+|**Catalog Approver**  |Users with this role can approve submissions to the catalog. Please note these can be users from your central IT department or Line of Business that your organization wants to empower to participate in the Approvals process.|
+|**Catalog Administrator**|Users with this role can administer the catalog.|
 
 More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team).
 
@@ -191,6 +214,13 @@ Environment admins and users with the Catalog Approver role can review new submi
 
 In the **Approvals** section of the navigation pane, select **Requests**.
 This list has 16 views:
+
+<!-- 
+
+I think it might be good to provide brief descriptions on the purpose of each view
+
+Then this list could be a table..
+ -->
 
 - **Abandoned Approval Requests**
 - **Active Approval Requests** (Default)
@@ -211,7 +241,7 @@ This list has 16 views:
 
 Using the **Active Approval Requests** view, open a request and select **Resolve Request** in the menu.
 
-- Select **Reject Request**to decline the request. The request will be archived and publisher, item and asset will not be created.
+- Select **Reject Request** to decline the request. The request will be archived and publisher, item and asset will not be created.
 - Click **Complete Request** to approve. Upon approval, Publisher, Item and Assets be created. The request will be archived and moved to **Inactive** status.
 
 
@@ -293,16 +323,44 @@ This list 8 views:
 - **Packages Assets - Published** (Default)
 - **Packages Assets in Submission**
 
-//TODO: Is this Catalog Assets or Package Assets? I couldn't figure out what table is behind this
+The following table describes selected fields that can be include in the form:
+
+|Field |Description|
+|---------|---------|
+|Allow Package Code Execution|If this is set to true, this will allow a deployment package to execute code during deployment.|
+|Available|         |
+|Catalog Item Cross Referance|Connects to the common catalog item record regardless of revision.|
+|CRM Working Package Drop Path|This is the location where the package file has been dropped for working|
+|CrmMaxVersion|         |
+|CrmMinVersion|         |
+|DefaultPackageLocaleId|         |
+|EndDateUtc|         |
+|InstanceConfigurationUrl|         |
+|Last Sync Date|         |
+|LearnMoreUrl|         |
+|Name|         |
+|Owner|         |
+|Package Manifest File Name|         |
+|Package Manifest Uri|URI to the package manifest.|
+|Package Uri|         |
+|ProviderName|         |
+|Pushed Date|         |
+|Revision Of|This field is populated when a new approval request contains a reference to an existing package version that has previously been made available|
+|StartDateUtc|         |
+|Status Reason|Choices:<br /> - **Pending Approval**<br /> - **Published**<br /> - **Rejected**<br /> - **Available**<br /> - **Inactive**|
+|SupportedCountries|         |
+|TPS ID||
+|UniqueName|         |
+|Version|         |
 
 ### Review errors in submission requests
 
-In the **Approvals** section of the navigation pane, select **Failed Pre-Validation** to view a lis of errors associated to a submission in the Catalog Manager application.
+In the **Approvals** section of the navigation pane, select **Failed Pre-Validation** to view a lis of errors associated to a submission in the **Catalog Manager** application.
 
 1. Click on the request name that you want to investigate.
 1. In the **Timeline** card you can find the exception in the **Notes**.
 
-:::image type="content" source="media/failed-pre-validation-exception-ui.png" alt-text="The exception in the notes of the Timeline card.":::
+   :::image type="content" source="media/failed-pre-validation-exception-ui.png" alt-text="The exception in the notes of the Timeline card.":::
 
 
 After fixing the submission, trigger the submit again from PAC CLI. You will see a new request that can be approved.
