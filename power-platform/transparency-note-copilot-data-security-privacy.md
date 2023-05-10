@@ -12,7 +12,9 @@ ms.reviewer: kvivek
 
 # Transparency note for Copilot data security and privacy in Microsoft Power Platform
 
-## What is Copilot data security and privacy?
+TO DO: Add content
+
+<!--## What is Copilot data security and privacy?
 
 *[Describe the system in plain English. What type of system is this? What does it do? At a high level, what does the system take as input? What kind of outputs does the system produce?]*
 
