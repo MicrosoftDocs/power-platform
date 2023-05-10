@@ -25,7 +25,7 @@ Application makers and developers can submit solutions and templates to the cata
 
 Please follow the steps to install Power Platform CLI found here: [Install Microsoft Power Platform CLI](cli/introduction.md#install-microsoft-power-platform-cli)
 
-You will use the [pac catalog](cli/reference/catalog.md) to interact with the catalog.
+You will use the [pac catalog](cli/reference/catalog.md) commands to interact with the catalog.
 
 ### Get access to catalog as Submitter or Reader
 
@@ -58,10 +58,17 @@ pac admin list --application-id 83a35943-cb41-4266-b7d2-81d60f383695
 
 Use the [pac catalog list](cli/reference/catalog.md#pac-catalog-list) command to view items in the catalog.
 
+```powershell
+pac catalog list //TODO
+```
 
 ## Install items from the catalog
 
 Use the [pac catalog install](cli/reference/catalog.md#pac-catalog-install) command to install items from the catalog.
+
+```powershell
+pac catalog install //TODO
+```
 
 ## Submit items to the catalog
 
@@ -78,10 +85,17 @@ After your submission metadata JSON document is ready, use the [pac catalog subm
 
 Use the [pac catalog status](cli/reference/catalog.md#pac-catalog-status) command to check the status of catalog submissions.
 
+```powershell
+pac catalog status //TODO
+```
+
 
 ## Submission Attributes
 
 The [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command will generate the following `submission.json` file:
+
+<!-- Why have a command? Is any unique data included here?
+Why not just copy this from the documentation? -->
 
 ```json
 {
@@ -136,9 +150,14 @@ The following items are required for all submissions:
 Unique identifier for a submission
 
 You can pass a unique string value
+
+```json
+//TODO example
+```
+
 #### Publisher
 
-Creates a publisher record that can be associated to one or more AAD groups containing authorized users who can make updates to the Catalog item going forward. 
+Creates a publisher record that can be associated to one or more AAD groups containing authorized users who can make updates to the Catalog item going forward.
 
 This is not to be confused with Solution Publisher. This is entirely a different concept. 
 
