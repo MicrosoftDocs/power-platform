@@ -64,7 +64,7 @@ Internal resources include:
 
 ### Source authentication
 
-In addition to [url considerations](nlu-boost-conversations.md#url-considerations), you will also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote as a source for **Generative Answers**. Additional details can be found in [Information sources](nlu-boost-node#information-sources).
+In addition to [url considerations](nlu-boost-conversations.md#url-considerations), you will also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote as a source for **Generative Answers**. Additional details can be found in [Information sources](nlu-boost-node.md#information-sources).
 
 ## Prerequisites
 
