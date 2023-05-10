@@ -75,7 +75,10 @@ The response is always a **200 OK** response, unless you aren't correctly authen
         "modelExperimentation": {
             "enableModelDataSharing": false,
             "disableDataLogging": false
-        }
+        },
+        "catalogSettings": {
+            "powerCatalogAudienceSetting": SpecificAdmin
+        }   
     }
 }
 ```
@@ -100,6 +103,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps.  Default is false.|
 |powerPlatform.modelExperimentation.enableModelDataSharing | Boolean | Ability to allow Microsoft to read Power Automate Copilot AI feature customer data (inputs and outputs) and provide improved models.  Default is false.|
 |powerPlatform.modelExperimentation.disableDataLogging | Boolean | Ability to disable data logging and remove all data logged for Power Automate Copilot AI feature customer data (inputs and outputs).  Default is false.|
+|powerPlatform.catalogSettings.powerCatalogAudienceSetting | Enum | Only two possible enum values. When this setting is "SpecificAdmin", only specific audience with certain admin privileged will be able to create catalogs and when the setting is "All", anyone can create catalogs.  Default is "SpecificAdmin".|
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
