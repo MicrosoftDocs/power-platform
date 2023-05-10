@@ -15,6 +15,8 @@ Limit access to users with IP firewall by IP location to reduce unauthorized acc
 
 For example, consider when the IP firewall is turned on in your production Microsoft Dataverse environment, and IP ranges are set with the IP address of your office location. Then, when a user tries to access the resources from another location, such as a coffee shop, Dataverse denies access to Power Platform resources in real time.
 
+:::image type="content" source="media/ip-firewall-dataverse-diagram.png" alt-text="IP firewall feature in Dataverse":::
+
 > [!IMPORTANT]
 > This is a preview feature.
 
