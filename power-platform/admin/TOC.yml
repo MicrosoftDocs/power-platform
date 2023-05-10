@@ -457,7 +457,7 @@
                   items:
                     - name: Control user access to environments
                       href: control-user-access.md
-                    - name: "Restrict cross-tenant access (preview)"
+                    - name: Restrict cross-tenant access
                       href: cross-tenant-restrictions.md
                     - name: Content security policy
                       href: content-security-policy.md
