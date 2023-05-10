@@ -1,5 +1,5 @@
 ---
-title: "Transparency note for AI Copilot data sharing in Microsoft Power Platform"
+title: "Transparency note for Copilot data security and privacy in Microsoft Power Platform"
 description: "The transparency note discusses AI Copilot data sharing and the key considerations for making use of the feature responsibly."
 author: KumarVivek 
 ms.date: 05/08/2023
@@ -10,9 +10,9 @@ ms.author: kvivek
 ms.reviewer: kvivek
 ---
 
-# Transparency note for AI Copilot data sharing in Power Platform
+# Transparency note for Copilot data security and privacy in Microsoft Power Platform
 
-## What is AI Copilot data sharing?
+## What is Copilot data security and privacy?
 
 *[Describe the system in plain English. What type of system is this? What does it do? At a high level, what does the system take as input? What kind of outputs does the system produce?]*
 

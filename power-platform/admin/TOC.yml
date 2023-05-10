@@ -1103,5 +1103,5 @@
       items:
         - name: Overview
           href: ../transparency-note-overview.md
-        - name: Transparency note for AI Copilot data sharing
-          href: ../transparency-note-copilot-data-sharing.md
+        - name: Transparency note for Copilot data security and privacy
+          href: ../transparency-note-copilot-data-security-privacy.md
