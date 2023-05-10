@@ -100,7 +100,7 @@ You can also change the URL, disable **generative answers**, or change the level
 
 You can now test your bot to see how well it responds to questions related to the content on the URL you specified. For more details, refer to [Test you bot's generative answers reach](nlu-gpt-quickstart.md#test-your-bots-generative-anwers-reach)
 
-#### [Search and summarize node]
+#### Search and summarize node
 
 To boost coverage in a Search and summarize node, follow these instructions:
 
@@ -120,13 +120,33 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
 [Bing Custom Search](https://www.customsearch.ai/) allows you to build a tailored search for specific content. The generated **Custom configuration ID** can then be used in your bot by generative answers. If you haven't used Bing Custom Search, use the link at the beginning of this paragraph, and follow [Quickstart: Create your first Bing Custom Search instance](https://learn.microsoft.com/bing/search-apis/bing-custom-search/how-to/quick-start). This will walk you through creating and publishing one. Once you have a Custom configuration ID for your search, you can use it to boost conversations with generative answers.
 
-1. _In Bing Custom Search_, on the **Web API** tab under **Production**, copy the Custom configuration ID you want to use. This will function like a url would as described [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). NOTE: If you have more than one custom configuration, make sure you are copying the ID you want.
+#### Bing custom search
+
+1. On the **Web API** tab under **Production**, copy the Custom configuration ID you want to use. This will function like a url would as described [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). NOTE: If you have more than one custom configuration, make sure you are copying the ID you want.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize node Data sources menu.":::
 
-1. _On the Search and summarize node in your topic_, select Properties from the node menu, and select Data source.
+#### [Bot]
 
-1. Paste your custom configuration into the [input box] under "Sites", and click on the '+' to add it to the node's Data sources.
+With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
+
+    1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
+
+    1. In the field under the checkbox, change the current url to the Custom configuration ID, or add the ID. [The [same requirements apply for the URL](nlu-boost-conversations#url-considerations) as when enabling the capability when you create a bot. - **Question**: is this true here?]
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
+
+    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-content-moderation.png" alt-text="Screenshot of the bot content moderation menu.":::    
+
+1. Select **Save** at the top of the **AI capabilities** page.
+
+#### Search and summarize node
+
+1. Select Properties from the node menu, and select Data source.
+
+1. Paste your custom configuration into the [input box] under "Sites", and click on the '+' to add it to the node's Data sources. If you have not exceeded relevant limits, you may add other urls.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the Search and summarize node properties.":::
 
