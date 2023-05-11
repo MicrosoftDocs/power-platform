@@ -254,7 +254,7 @@ If a Power Virtual Agents topic that can receive an input variable is listed in 
 
 ### Receive an output variable from a Power Virtual Agents skill topic
 
-It's possible to receive outputs from a Power Virtual Agents skill topic in Composer. To learn how to create Power Virtual Agents topics that return outputs, see [Passing variables between topics](/authoring-variables.md).
+It's possible to receive outputs from a Power Virtual Agents skill topic in Composer. To learn how to create Power Virtual Agents topics that return outputs, see [Passing variables between topics](authoring-variables.md).
 
 1. In the Composer authoring canvas, select **Add**, then select **Access external resources**, and then select **Connect to a skill**.
 
