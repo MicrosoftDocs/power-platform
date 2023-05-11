@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs and videos covering product capabilities and how-to guides. Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, rapidly design, configure, and publish modern websites using Power Pages, and build intelligent bots with a no-code interface using Power Virtual Agents.
+summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, rapidly design, configure, and publish modern websites using Power Pages, and build intelligent bots with a no-code interface using Power Virtual Agents.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/13/2022 #Required; mm/dd/yyyy format.
+  ms.date: 05/11/2023 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
