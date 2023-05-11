@@ -38,11 +38,16 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-settings.png" alt-text="The bot management Agent transfers page.":::
 
-1. Select **Enable**.
+1. Select **Connect**.
 
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-connect.png" alt-text="Screenshot showing the connect pane for OmniChannel transfer to agent":::
+
+    - Please note that the OmniChannel installation must be in the same environment as the bot.
     - If you're using Application Lifecycle Management (ALM), you may see a message that we can't determine if Omnichannel for Customer Service integration is enabled for the environment. For more information, see [Bots with ALM](#bots-with-alm).
 
-1. Select the **View details in Omnichannel** link to [continue configuring the bot connection in Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
+1. Select the **View  in Omnichannel** link to [continue configuring the bot connection in Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
+
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-view-in-oc.png" alt-text="Screenshot showing the link to this bot entry in Omnichannel":::
 
 > [!IMPORTANT]
 > To test the bot on your custom website, you must use the embed code that's specified in the chat widget you set up in Omnichannel for Customer Service. If you use the embed code from Power Virtual Agents, hand-off won't work. For more information, see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal).
@@ -76,15 +81,15 @@ If your bot doesn't have omnichannel capabilities enabled, the message will alwa
 
 ## Manage your bot's omnichannel capabilities
 
-Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect or disable your bot, refresh the connection, or open the Omnichannel for Customer Service admin center to view the connection details.
+Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect your bot, and find the link to go to the Omnichannel for Customer Service admin center to view the connection details.
 
 ### Disconnect your bot from Omnichannel for Customer Service or disable the connection
 
-If you select **Disconnect bot**, the application user that represents the bot in your Omnichannel for Customer Service instance is disabled. Your bot is effectively disconnected from the Omnichannel for Customer Service environment.
+If you select **Disconnect**, the application user that represents the bot in your Omnichannel for Customer Service instance is disabled. Your bot is effectively disconnected from the Omnichannel for Customer Service environment. Your bot will stop receiving any traffic from your Omnichannel for Customer Service instance.
 
-To add your bot back, you'll need to [connect it again](#connect-your-bot-to-omnichannel-for-customer-service), starting at Step 3.
+:::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-disconnect.png" alt-text="Screenshot of OmniChannel pane with a disconnect button.":::
 
-If you select **Disable**, the connection between your Omnichannel for Customer Service instance and Power Virtual Agents is disabled. Your bot will stop receiving any traffic from your Omnichannel for Customer Service instance.
+To add your bot back, you'll need to [connect it again](#connect-your-bot-to-omnichannel-for-customer-service), starting at Step 2.
 
 ## Known limitations
 
