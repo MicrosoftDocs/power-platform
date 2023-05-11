@@ -66,6 +66,34 @@ By default, emails are sent when a solution fails validation for medium and abov
 
 :::image type="content" source="media/managed-environment-solution-checker-checkbox.png" alt-text="Screenshot of the solution checker email checkbox.":::
 
+### Use PowerShell to enable solution checker enforcement
+
+You can also use PowerShell to enable solution checker enforcement
+
+#### Enable solution checker enforcement in block mode
+
+Here's an example PowerShell script that enables solution checker enforcement in block mode. After you run it, the slider shows block mode in the **Solution checker** section of the Managed Environments settings.
+
+```powershell
+SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level block
+```
+
+#### Enable solution checker enforcement in warn mode
+
+Here's an example PowerShell script that enables solution checker enforcement in warn mode. After you run it, the slider shows warn mode in the **Solution checker** section of the Managed Environments settings.
+
+```powershell
+SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level warn
+```
+
+#### Disable solution checker enforcement
+
+Here's an example PowerShell script that disables solution checker enforcement. After you run it, the slider shows off in the **Solution checker** section of the Managed Environments settings.
+
+```powershell
+SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level none
+```
+
 ### See also
 
 [Managed Environments overview](managed-environment-overview.md) <br />
