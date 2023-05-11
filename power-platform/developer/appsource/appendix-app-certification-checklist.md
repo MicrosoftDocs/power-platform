@@ -53,10 +53,10 @@ The following checklist provides the list of validations performed by Microsoft 
 <td>Deployment Validation</td>
 <td>
 <ul>
-<li>Solution will be installed to a Power Apps studio using <a href="/power-platform/alm/package-deployer-tool">Package Deployer</a>. Installed canvas apps will be manually located in the solution as well as on Apps section after installation and will make sure the app is opened in edit and run mode. Canvas App will be manually deleted from Power Apps studio to validate successful uninstallation</li>
+<li>Solution will be installed to a Power Apps studio using <a href="/power-platform/alm/package-deployer-tool">Package Deployer</a>. Installed canvas apps will be manually located in the solution as well as on Apps section after installation and will make sure the app is opened in edit and run mode. Canvas App will be manually deleted from Power Apps studio to validate successful uninstallation.</li>
 <li>Check the canvas app successfully connects through the connectors provided by the publishers. For example, Dataverse or any other connections.</li>
 <li>Check all Dataverse components (tables, web resources, plug-ins and other components) are available in the solution.</li>
-<li>Manually uninstall the solution and check if all the components associated to the managed solution is removed.</li>
+<li>Manually uninstall the solution and check if all the components associated to the managed solution are removed.</li>
 </ul>
 </td>
 </tr>
@@ -97,7 +97,7 @@ The following checklist provides the list of validations performed by Microsoft 
 <tr>
 <td>Code Validation</td>
 <td><ul>
-<li>Same as explained earlier for model-driven apps, canvas apps, and flows that connect to Dataverse</li></ul>
+<li>Same as explained earlier for model-driven apps, canvas apps, and flows that connect to Dataverse.</li></ul>
 </td>
 </tr>
 <tr>
@@ -113,13 +113,13 @@ The following checklist provides the list of validations performed by Microsoft 
 <td>Functionality Validation</td>
 <td>
 <ul>
-<li>Same as explained earlier for model-driven apps, canvas apps, and flows that connect to Dataverse</li></ul></td>
+<li>Same as explained earlier for model-driven apps, canvas apps, and flows that connect to Dataverse.</li></ul></td>
 </tr>
 <tr>
 <td>Security Validation</td>
 <td>
 <ul>
-<li>Same as explained earlier for model-driven apps, canvas apps, and flows that connect to Dataverse</li></ul>
+<li>Same as explained earlier for model-driven apps, canvas apps, and flows that connect to Dataverse.</li></ul>
 </td>
 </tr>
 </tbody>
