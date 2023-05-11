@@ -47,7 +47,7 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 
 1. Select the **View  in Omnichannel** link to [continue configuring the bot connection in Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
 
-    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-view-in-oc.png" alt-text="Screenshot showing the connect pane for OmniChannel transfer to agent":::
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-view-in-oc.png" alt-text="Screenshot showing the link to this bot entry in Omnichannel":::
 
 > [!IMPORTANT]
 > To test the bot on your custom website, you must use the embed code that's specified in the chat widget you set up in Omnichannel for Customer Service. If you use the embed code from Power Virtual Agents, hand-off won't work. For more information, see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal).
