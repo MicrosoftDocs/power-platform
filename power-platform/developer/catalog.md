@@ -34,13 +34,10 @@ For admins and line of business approvers, the catalog:
 
 ## Catalog process
 
-<!-- 
+This diagram describes the process of using catalog in Power Platform.
 
-Need to extract these points from the diagram somehow.
-Need to get the words right before adding to a diagram.
-Try to get a diagram without text
+:::image type="content" source="media/catalog in power platform process.png" alt-text="Catalog process":::
 
- -->
 
 ### Create
 
