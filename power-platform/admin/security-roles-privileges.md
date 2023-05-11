@@ -6,11 +6,8 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/04/2023
-search.audienceType: 
-  - admin
+ms.date: 04/18/2023
 ---
 # Security roles and privileges
 
@@ -19,7 +16,7 @@ To control data access, you must set up an organizational structure that both pr
 You can assign security roles using the new, modern UI, or using the the legacy UI:
 
 - [Security roles and the new, modern UI (preview)](security-roles-privileges.md#security-roles-and-the-new-modern-ui-preview)
-- [Security roels and the legacy UI](security-roles-privileges.md#security-roles-and-the-legacy-ui)
+- [Security roles and the legacy UI](security-roles-privileges.md#security-roles-and-the-legacy-ui)
 
 ## Security roles and the new, modern UI (preview)
 > [!Important]
@@ -45,13 +42,15 @@ You can set the **Member's privilege inheritance** option to:
 
 - **Direct User (Basic) access level and Team privileges**: A user is granted these privileges directly when a security role is assigned to the user. A user can create and access records that were created and owned by the user when the **User** access level for Create and Read privileges were given. This is the default setting for new security roles.
 
+  :::image type="content" source="media/members-privilege-inheritance.png" alt-text="Set the **Member's privilege inheritance** option.":::
+
 Each security role consists of the following privilege types:
 
 - **Tables**: Table privileges define which tasks a user with access to a table record can do, such as Read, Create, Delete, Write, Assign, Share, Append, and Append To. *Append* means to attach another record, such as an activity or note, to a record. *Append to* means to be attached to a record.
 
 - **Miscellaneous privileges**: These task-based privileges give a user permission to perform specific, miscellaneous (non-record) tasks, such as publish articles or activate business rules. More information: [Miscellaneous privileges](miscellaneous-privileges.md)
 
-- **Privacy-related privileges**: These privileges give a user permission to perform tasks where data is integrated or downloaded or exported outside of Dataverse, such as exporting data to Microsoft Excel or printing. More inforamtion: [Privacy-related privileges](privacy-related-privileges.md)
+- **Privacy-related privileges**: These privileges give a user permission to perform tasks where data is integrated or downloaded or exported outside of Dataverse, such as exporting data to Microsoft Excel or printing. More information: [Privacy-related privileges](privacy-related-privileges.md)
 
 Each set of privilege types are separated by a tab. For each tab, you can filter the view by all privileges, assigned privileges or unassigned privileges for the selected security role.
 
@@ -90,6 +89,8 @@ The **Tables** tab shows the list of Dataverse tables in the environment. Each t
 | Permissions Settings | Determines if the table is using a predefined set of permissions or custom permissions. |
 
 When configuring a security role, you will need to determine the setting for each table and privacy-related privileges that are related to the application.
+
+:::image type="content" source="media/security-role-editor.png" alt-text="When configuring a security role, you will need to determine the setting for each table and privacy-related privileges that are related to the application.":::
 
 The following table provides details about each specific table privilege:
 

@@ -206,7 +206,7 @@ A Power Apps bulk delete job automatically removes bot transcripts that are olde
 In many places, the conversation transcripts refer to content by its ID. For example, the ID of the topic that's being redirected to by the current topic is only referred to by its ID. To get the name of the topic, look up its name in the bot content.
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Conversation transcripts fields
 

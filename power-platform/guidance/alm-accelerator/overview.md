@@ -31,10 +31,11 @@ Watch the [demo videos](https://github.com/microsoft/coe-starter-kit/blob/main/C
 
 ## Who should use the ALM Accelerator for Power Platform?
 
-Makers and maker teams can use the ALM Accelerator for Power Platform to implement source control and deploy solutions. With the ALM Accelerator for Power Platform app, makers can perform source control, enable version history, and deploy their solutions in Power Platform. The combination of Azure pipelines and the maker and administrator focused apps are what makes up the ALM Accelerator for Power Platform.
+Makers and maker teams can use the ALM Accelerator for Power Platform to implement source control and deploy solutions. With the ALM Accelerator for Power Platform app, makers can perform source control, enable version history, and deploy their solutions in Power Platform. The combination of Azure pipelines and the maker and administrator focused apps are what makes up the ALM Accelerator.
 
 While an advanced knowledge of ALM isn't required to use the accelerator, it's important that makers understand how to use solutions in Power Platform. To use the ALM Accelerator, all of your components—including apps, flows, customizations, and other components—must be contained in a solution. To learn more about solutions, see [Manage solutions in Power Apps and Power Automate](/learn/modules/manage-solutions-power-automate/).
 
+### Target users
 The target users for the ALM Accelerator app include:
 
 - Power Platform makers who are unfamiliar with ALM concepts, but want to be able to save their work along with a history of changes, and share those changes with other users.
@@ -42,7 +43,17 @@ The target users for the ALM Accelerator app include:
 
 The target user for [setting up and configuring](./setup-admin-tasks.md) the ALM Accelerator is an administrator with a deeper understanding of Power Platform environments, solutions, Azure pipelines, and familiarity with Azure AD and Dataverse administration.
 
-:::image type="content" source="media/TheMakerTeam.png " alt-text="The maker team.":::
+The following image shows how target users for the ALM Acceleratior start the process.
+
+Makers work in isolation in their personal development environments. Their interaction with the ALM process is via the ALM Accelerator canvas app. 
+ 
+Makers use the ALM Accelerator canvas app for their ALM tasks such as import solution from source control, export changes to source control, and create pull request to merge changes. ALM Accelerator templates for Azure DevOps pipelines facilitate the automation of ALM tasks based on the makers interaction with the ALM Accelerator canvas app. 
+  
+ALM Accelerator includes pipeline templates to support a three-stage deployment to production. Templates can be customized to fit specific needs and scenarios. 
+
+The ALM Accelerator is a canvas app that sits on top of Azure DevOps pipelines to provide a simplified interface for makers to regularly commit and create pull requests for their development work in the Power Platform. The combination of the Azure DevOps pipelines and the canvas app are what make up the full ALM Accelerator solution. The pipelines and the app are reference implementations. They were developed for use by the development team for the COE Starter Kit internally but have been open sourced and released in order to demonstrate how healthy ALM can be achieved in the Power Platform. They can be used as is or customized for specific business scenarios.
+
+:::image type="content" source="media/TheMakerTeam2.png " alt-text="Description.":::
 
 ## What are my options for ALM in the Power Platform?
 
@@ -60,7 +71,17 @@ There are, however, other options for getting started with ALM in the Power Plat
 
 Depending on the needs of your organization, you may decide to use one or more of these options, including the ALM Accelerator as an option. While there's no one right answer for every organization, the following table and descriptions of each option can help you decide which option is right for you based on current capabilities and future plans. This table isn't exhaustive and is meant to help you make an informed decision. It's also going to evolve with time as more capabilities are added to the ALM Accelerator and to the built-in Power Platform ALM capabilities.
 
-:::image type="content" source="media/ALMCapabilityComparison20230323.png" alt-text="ALM Accelerator, Power Platform Build Tools and Pipelines for Power Platform Capabilities":::
+| Capability | Pipelines | ALM Accelerator | DevOps/GitHub |
+| :---: | :---: | :---: | :---: |
+| *IT / Developer involvement* | Not required | Up-front set up | Required for every project |
+| *Source Code integration* | No, but planned | Yes | Yes |
+|  *Maker requires elevated privileges in target environment*  |  Yes, but service principal support planned  |  No, service principal supported  |  No, service principal Supported  |
+| *Quality Control* | Minimal | Best practices | Unlimited |
+| *Democratized for Citizen Development* | Yes | Yes | No |
+| *In-Product Experience* | Yes |  Canvas app provided, but not in maker experience  | No |
+| *Support* | Microsoft supported |  Power CAT support via GitHub Issues and Discussions  |  Microsoft supported and GitHub Issues  |
+| *Customization* | No | Yes | Yes |
+| *Code-first development* | No | Yes | Yes |
 
 ### Pipelines for Power Platform (Pipelines)
 

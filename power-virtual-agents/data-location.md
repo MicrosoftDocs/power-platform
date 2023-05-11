@@ -40,7 +40,7 @@ Power Virtual Agents supports the following display formatting locales:
 
 For example, if the user's browser locale setting is _en-GB_, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is _en-US_, the same date equates to **February 3**.
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as "regions") listed here. You can create a bot in your tenant's location by default, or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 

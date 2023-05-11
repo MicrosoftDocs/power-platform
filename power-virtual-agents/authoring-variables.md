@@ -307,7 +307,7 @@ When you're returning a variable to a topic, the destination topic is the topic 
 1. Save the topic.
 
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 ### Entity and variable type
 

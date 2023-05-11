@@ -134,7 +134,7 @@ Many of the system topics use these nodes to control how conversations end or st
 > [!TIP]
 > The **End all topics** node doesn't clear or reset any global variables. To clear global variables, use a **Clear all variables** node first. For an example, see the default [Reset Conversation system topic](authoring-system-topics.md#reset-conversation).
 
-# [Classic](#tab/web)
+# [Web app](#tab/web)
 
 Power Virtual Agents offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
 
