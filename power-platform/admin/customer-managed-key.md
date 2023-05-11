@@ -375,6 +375,28 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 > [!NOTE]
 > During preview, there might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, submit a Microsoft Support request for help.
 
+## Environment database operations
+
+A customer tenant can have environments that are encrypted using the Microsoft managed key and environments that are encrypted with the customer managed key. To maintain data integrity and data protection, the following controls are available when managing environment database operations.
+
+- [Restore](backup-restore-environments.md) 
+   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer managed key. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Restore backup.](media/cmk-restore-backup.png "Restore backup")
+
+- [Copy](copy-environment.md)
+   The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer managed key. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Copy environment.](media/cmk-copy-environment.png "Copy environment")
+
+   > [!NOTE]
+   > If a Support Investigation environment was created to resolve support issue in a customer managed environment, the encryption key for the Support Investigation environment must be changed to customer managed key before the Copy environment operation can be performed. 
+
+- [Reset](sandbox-environments.md#reset-a-sandbox-environment)
+   The environment's encrypted data will be deleted including backups. After the environment is reset, the environment encryption will revert back to the Microsoft managed key. 
+
 ## Next steps
 
 [About Azure Key Vault](/azure/key-vault/general/overview)
