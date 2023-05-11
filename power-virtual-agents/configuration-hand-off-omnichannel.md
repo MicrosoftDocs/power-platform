@@ -40,6 +40,8 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 
 1. Select **Connect**.
 
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-connect.png" alt-text="Screenshot showing the connect pane for OmniChannel transfer to agent":::
+
     - Please note that the OmniChannel installation must be in the same environment as the bot.
     - If you're using Application Lifecycle Management (ALM), you may see a message that we can't determine if Omnichannel for Customer Service integration is enabled for the environment. For more information, see [Bots with ALM](#bots-with-alm).
 
