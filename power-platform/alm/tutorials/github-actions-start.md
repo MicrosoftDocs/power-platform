@@ -6,7 +6,7 @@ author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
 ms.custom: ""
-ms.date: 04/10/2023
+ms.date: 05/11/2023
 ms.reviewer: "pehecke"
 ms.topic: "tutorial"
 search.audienceType: 
@@ -59,7 +59,7 @@ Now you have the environments that we will need for this and ready to begin the 
 
 ## Create the service principal account and give it rights to the environments created
 
-1. You will need to create an application registration within Azure Active Directory. More information: [Tutorial: Register an app with Azure Active Directory](/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory)
+1. You will need to create an application registration within Azure Active Directory. Do this for all DEV/BUILD/PROD environments used. More information: [Tutorial: Register an app with Azure Active Directory](/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory)
 
 2. Upon creation of the application registration, please note and save the Directory (tenant) ID and the Application (client) ID of the application.
 
