@@ -91,7 +91,6 @@ If you select **Disconnect**, the application user that represents the bot in yo
 
 To add your bot back, you'll need to [connect it again](#connect-your-bot-to-omnichannel-for-customer-service), starting at Step 2.
 
-
 ## Known limitations
 
 See [limitations when using Power Virtual Agents with the Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#limitations).
