@@ -130,13 +130,13 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
 With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
 
-    1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
+1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
 
-    1. In the field under the checkbox, change the current url to the Custom configuration ID, or add the ID. [The [same requirements apply for the URL](nlu-boost-conversations#url-considerations) as when enabling the capability when you create a bot. - **Question**: is this true here?]
+1. In the field under the checkbox, change the current url to the Custom configuration ID, or add the ID. [The [same requirements apply for the URL](nlu-boost-conversations#url-considerations) as when enabling the capability when you create a bot. - **Question**: is this true here?]
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
 
-    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
+1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-content-moderation.png" alt-text="Screenshot of the bot content moderation menu.":::    
 
