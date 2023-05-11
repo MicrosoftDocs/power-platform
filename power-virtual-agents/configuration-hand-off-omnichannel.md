@@ -38,8 +38,9 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-handoff-settings.png" alt-text="The bot management Agent transfers page.":::
 
-1. Select **Enable**.
+1. Select **Connect**.
 
+    - Please note that the OmniChannel installation must be in the same environment as the bot.
     - If you're using Application Lifecycle Management (ALM), you may see a message that we can't determine if Omnichannel for Customer Service integration is enabled for the environment. For more information, see [Bots with ALM](#bots-with-alm).
 
 1. Select the **View details in Omnichannel** link to [continue configuring the bot connection in Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
