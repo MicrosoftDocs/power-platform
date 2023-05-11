@@ -89,7 +89,7 @@ Now you have the environments that we will need for this and ready to begin the 
 
  In order for the GitHub workflow to deploy solutions as part of a CI/CD pipeline an "Application user" needs to be given access to the environment. An "Application user" represents an unlicensed user that is authenticated using the application registration completed in the prior steps.
 
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to [Power Platform admin center](https://aka.ms/ppac).
 
 1. Go to **Environments** > open the environment you want > **Settings** > **Users + permissions** > **Application users**.
 
