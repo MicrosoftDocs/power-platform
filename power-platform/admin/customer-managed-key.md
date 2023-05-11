@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 04/12/2023
+ms.date: 05/10/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key (preview)
@@ -177,18 +177,6 @@ Register Power Platform as a resource provider. You only need to do this task on
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/) and go to **Subscription** > **Resource providers**.
 1. In the list of **Resource providers**, search for **Microsoft.PowerPlatform**, and **Register** it.
-
-### Enable Power Platform enterprise policies service
-
-1. Azure CLI is required on your local machine. [Download Azure CLI](https://aka.ms/InstallAzureCliWindows).
-1. Run the downloaded Azure cli.MSI.
-1. Download the ARMClient: [ARMClient/README.md projectkudu/ARMClient GitHub](https://github.com/projectkudu/ARMClient/blob/master/README.md).
-1. Start PowerShell and run the ARMClient to sign into your Azure subscription.
-   > [!NOTE]
-   > Depending on where you are running the command from, you could either use armclient.login from PowerShell, or armclient.azlogin from Azure CLI.
-1. Enable `enterprisePoliciesPreview` feature for your subscription. Replace {subscriptionId} with your *subscriptionId* number. More information: [Find your Azure subscription](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription)
-
-   `PS C:\> ARMClient.exe POST https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Features/providers/Microsoft.PowerPlatform/features/enterprisePoliciesPreview/register?api-version=2014-08-01-preview`
 
 ## Create enterprise policy
 
