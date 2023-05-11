@@ -33,26 +33,26 @@ Use the following checklist to evaluate your app design.
 </tr>
 <tr>
 <td>2</td>
-<td>Color Accessibility</td>
+<td>Color accessibility</td>
 <td>Colors used in this solution are accessible by all user
 groups.</td>
 </tr>
 <tr>
 <td>3</td>
 <td> Uniformity of color and design scheme </td>
-<td>The color and UI design are uniform and presentable</td>
+<td>The color and UI design are uniform and presentable.</td>
 </tr>
 <tr>
 <td>4</td>
 <td>Ease of use for users</td>
 <td>The solution is intuitive and easy to use with minimal
-directions</td>
+directions.</td>
 </tr>
 <tr>
 <td>5</td>
 <td>Minimum number of screens to achieve a use-case</td>
 <td>All use-cases could be achieved in minimum number of
-screens and steps</td>
+screens and steps.</td>
 </tr>
 <tr>
 <td>6</td>
@@ -62,7 +62,7 @@ screens and steps</td>
 <li>Caching is used where needed</li>
 <li>Only columns that are needed are pulled from database</li>
 <li>Minimum number of calls to server is made to achieve any</li>
-use-case.
+use-case
 </ul>
 </td>
 </tr>
@@ -83,7 +83,7 @@ devices that solution could be run</li>
 <td>8</td>
 <td>Responsiveness</td>
 <td>The solution is tested in all the intended devices for
-the solution</td>
+the solution.</td>
 </tr>
 <tr>
 <td>9</td>
@@ -92,7 +92,7 @@ the solution</td>
 <ul>
 <li>Content provided in the solution could be rendered in
 all the intended devices.<br/>Example: Do not have videos that could not render in
-certain browsers.</li>
+certain browsers</li>
 <li>Does not have unnecessary redirects</li>
 <li>Does not have interstitials that interrupts the user's
 flow</li>
@@ -107,7 +107,7 @@ designed for a touch screen</li>
 <td>Accuracy of information</td>
 <td>The information provided in the UI should help the user
 achieve the use case with minimal interruption in the
-intended flow of user actions to achieve that scenario</td>
+intended flow of user actions to achieve that scenario.</td>
 </tr>
 </tbody>
 </table>
