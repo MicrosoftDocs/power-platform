@@ -5,11 +5,13 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/10/2022
+ms.date: 05/11/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+contributors:
+- bibekTimalsina948 
 ---
 
 # List tenant settings (preview)
@@ -75,7 +77,10 @@ The response is always a **200 OK** response, unless you aren't correctly authen
         "modelExperimentation": {
             "enableModelDataSharing": false,
             "disableDataLogging": false
-        }
+        },
+        "catalogSettings": {
+            "powerCatalogAudienceSetting": SpecificAdmin
+        }   
     }
 }
 ```
@@ -100,6 +105,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps.  Default is false.|
 |powerPlatform.modelExperimentation.enableModelDataSharing | Boolean | Ability to allow Microsoft to read Power Automate Copilot AI feature customer data (inputs and outputs) and provide improved models.  Default is false.|
 |powerPlatform.modelExperimentation.disableDataLogging | Boolean | Ability to disable data logging and remove all data logged for Power Automate Copilot AI feature customer data (inputs and outputs).  Default is false.|
+|powerPlatform.catalogSettings.powerCatalogAudienceSetting | Enum | Only two possible enum values. When this setting is set to "SpecificAdmin", only users with admin privileges can create catalogs. When the setting is set to "All", anyone can create catalogs.  Default value is "SpecificAdmin".|
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
