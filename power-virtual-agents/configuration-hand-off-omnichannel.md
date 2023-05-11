@@ -81,7 +81,7 @@ If your bot doesn't have omnichannel capabilities enabled, the message will alwa
 
 ## Manage your bot's omnichannel capabilities
 
-Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect or disable your bot, refresh the connection, or open the Omnichannel for Customer Service admin center to view the connection details.
+Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect your bot, and find the link to go to the Omnichannel for Customer Service admin center to view the connection details.
 
 ### Disconnect your bot from Omnichannel for Customer Service or disable the connection
 
@@ -89,7 +89,7 @@ If you select **Disconnect bot**, the application user that represents the bot i
 
 To add your bot back, you'll need to [connect it again](#connect-your-bot-to-omnichannel-for-customer-service), starting at Step 3.
 
-If you select **Disable**, the connection between your Omnichannel for Customer Service instance and Power Virtual Agents is disabled. Your bot will stop receiving any traffic from your Omnichannel for Customer Service instance.
+If you select **Disconnect**, the connection between your Omnichannel for Customer Service instance and Power Virtual Agents is disabled. Your bot will stop receiving any traffic from your Omnichannel for Customer Service instance.
 
 ## Known limitations
 
