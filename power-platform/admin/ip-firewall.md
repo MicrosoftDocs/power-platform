@@ -48,13 +48,13 @@ When a request is made to Dataverse, the request IP address is evaluated in real
    - **Service tags to be allowed by IP Firewall**: You can select list of service tags to bypass the IP Firewall restrictions.
    - **Allow Access for Microsoft trusted Services**: Enabled by default. Enabling this allows access to the Power Platform environment with Dataverse for service tags `PowerPlatformInfra`, `GenevaSynthetics` and `GenevaActions` and for internal first party applications<sup>1</sup>.
    - **Allow access for all application Users**: Enabled by default. This setting allows all application users third party and first party access to Dataverse APIs<sup>1</sup>.
-   - **Enable IP firewall in audit only mode**: This setting allows you to enable IP firewall where a request by a user will be allowed regardless of their IP address.<!-- Will this be indicated in the audit logs? -->
+   - **Enable IP firewall in audit only mode**: This setting allows you to enable IP firewall where a request by a user will be allowed regardless of their IP address.<!-- Is this captured in the Audit Summary view? https://learn.microsoft.com/en-us/power-platform/admin/manage-dataverse-auditing#use-the-audit-summary-view -->
    - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more reverse proxy separated by comma (,). This reverse proxy settings apply to both IP based cookie binding and IP firewall.
 
 1. Select **Save**.
 
 > [!IMPORTANT]
-> When **Service tags to be allowed by IP Firewall** , **Allow Access for Microsoft trusted Services** and **Allow access for all application Users** IP firewall settings are all disabled, some services that use Dataverse might no longer work, such as Power Automate flows. <!-- Need more explanation for this. What integrations besides flows?-->
+> When **Service tags to be allowed by IP Firewall** , **Allow Access for Microsoft trusted Services** and **Allow access for all application Users** IP firewall settings are all disabled, some services that use Dataverse might no longer work, such as Power Automate flows. <!-- Need more explanation for this. How/what breaks? What integrations besides flows?-->
 
 ### Test IP firewall
 
