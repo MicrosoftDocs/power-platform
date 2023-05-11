@@ -1,5 +1,5 @@
 ---
-title: "Submit catalog items"
+title: "Submit catalog items (Preview)"
 description: "Learn how to submit items to your organization's catalog of templates and components."
 author: samathur
 ms.subservice: developer
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
  - JimDaly
 ---
-# Submit catalog items
+# Submit catalog items (Preview)
 
 Application makers and developers can submit solutions and templates to the catalog so that they can help their colleagues solve business problems.
 
@@ -23,13 +23,13 @@ Application makers and developers can submit solutions and templates to the cata
 
 ### Install PAC CLI
 
-Please follow the steps to install Power Platform CLI found here: [Install Microsoft Power Platform CLI](cli/introduction.md#install-microsoft-power-platform-cli)
+Follow the steps to install Power Platform CLI found here: [Install Microsoft Power Platform CLI](cli/introduction.md#install-microsoft-power-platform-cli)
 
-You will use the [pac catalog](cli/reference/catalog.md) commands to interact with the catalog.
+Use the [pac catalog](cli/reference/catalog.md) commands to interact with the catalog.
 
 ### Get access to catalog as Submitter or Reader
 
-Contact your administrator to grant access to the catalog. You will need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Setup Users](catalog.md#setup-users)
+Contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Setup Users](catalog.md#setup-users)
 
 ## Use the catalog
 
@@ -45,13 +45,13 @@ After you have installed the PAC CLI, you must create an authentication profile 
 
 Use the [pac admin list](cli/reference/admin.md#pac-admin-list) command to view the catalogs available in your tenant.
 
-When using this command you must use the following `--application-id` parameter:
+When using this command, you must use the following `--application-id` parameter:
 
 ```powershell
 pac admin list --application-id 83a35943-cb41-4266-b7d2-81d60f383695
 ```
 
-`83a35943-cb41-4266-b7d2-81d60f383695` is the application id associated with the catalog. The requirement to include this value will be removed in a future update.
+`83a35943-cb41-4266-b7d2-81d60f383695` is the application ID associated with the catalog. The requirement to include this value will be removed in a future update.
 
 
 ## View items in the catalog
@@ -92,7 +92,7 @@ pac catalog status //TODO
 
 ## Submission Attributes
 
-The [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command will generate the following `submission.json` file:
+The [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command generates the following `submission.json` file:
 
 <!-- Why have a command? Is any unique data included here?
 Why not just copy this from the documentation? -->
@@ -135,17 +135,19 @@ Why not just copy this from the documentation? -->
 }
 ```
 
+You need to edit this file to submit an item. See the following instructions about the items to add or edit.
+
 ### Required Data
 
 The following items are required for all submissions:
 
-- [Submission Id](#submission-id)
+- [Submission ID](#submission-id)
 - [Publisher](#publisher)
 - [Catalog Item](#catalog-item)
 - [Engineering contact](#engineering-contact)
 - [Support contact](#support-contact)
 
-#### Submission Id
+#### Submission ID
 
 Unique identifier for a submission
 
@@ -157,13 +159,13 @@ You can pass a unique string value
 
 #### Publisher
 
-Creates a publisher record that can be associated to one or more AAD groups containing authorized users who can make updates to the Catalog item going forward.
+Creates a publisher record that can be associated to one or more Microsoft Azure Active Directory (Azure AD) groups containing authorized users who can make updates to the Catalog item going forward.
 
-This is not to be confused with Solution Publisher. This is entirely a different concept. 
+Don't confuse this term with *Solution Publisher*. Catalog item publisher is entirely a different concept.
 
-You need to provide the id/ publisherDisplayName at a minimum. Id can be any string value. System checks if that publisher exists, else creates it and assigns an id. 
+You need to provide the ID publisher `DisplayName` at a minimum. ID can be any string value. System checks if that publisher exists, else creates it and assigns an ID. 
 
-Example: HR IT team of developers can create a publisher and id the devs using an AAD group. 
+Example: HR IT team of developers can create a publisher and ID the developers using an Azure AD group. 
 
 ```json
 Publisher Id: String 
@@ -187,7 +189,7 @@ groupType: Select from "Security" or "Modern"
 
 The actual power platform solution (package is what is stored in the Catalog) 
 
-Id and displayName are mandatory. Description and business categories are optional. Seeded Business Categories list of value is in the appendix. ComponentUsedInApplication is for future use only.
+ID and displayName are mandatory. Description and business categories are optional. Seeded Business Categories list of value is in the appendix. ComponentUsedInApplication is for future use only.
 
 ```json
 id: String  (generated if not provided)
@@ -202,7 +204,7 @@ deploymentType: "Normal" or "Template"
 
 Dev/ Product contact
 
-Contact that the consumer of catalog item can reach out to if they have technical questions to extend / re-use the app for another purpose 
+Contact that the consumer of catalog item can reach out to if they have technical questions to extend / reuse the app for another purpose 
 
 ```json
 firstName: String
@@ -236,7 +238,7 @@ The following items are highly recommended, but not required.
 #### small48x48image
 
 Provide information of the icon to be displayed in Maker/ Other discovery UX
-If you don't provide this image a system default icon will be utilized
+If you don't provide this image a system default icon is used.
 
 ```json
 name: String
@@ -248,7 +250,7 @@ AttributeName: string, for future use, ignored
 
 #### Documents
 
-You can pass screenshots here of your Application to help Makers id if this App will provide functionality/ capability they are looking for.
+You can pass screenshots here of your Application to help Makers ID if this App provides functionality/ capability they're looking for.
 
 Number #1 thing people do before downloading an App or template is to look at its images/ screenshots to gauge capabilities vs reading the description
 
@@ -265,7 +267,7 @@ AttributeName: string, for future use, ignored
 
 URL link to help documentation
 
-Fully qualified URLs your users will be able to access. These can be links to internal docs/ sharepoint resources etc.
+Fully qualified URLs your users are able to access. These URLs can be links to internal docs or sharepoint resources.
 
 ```json
 name: String
@@ -312,9 +314,9 @@ Possible values:
 
 #### Business Justification
 
-What business value is created by this Catalog item. This information is visible to Approvers and will surface in the planned consumption experience in Maker Discovery UX
+Explains the business value created by this Catalog item. This information is visible to Approvers and appears in the planned consumption experience in Maker Discovery UX
 
-User can say their submission helps with Cost reduction or productivity etc. Some organizations require certain classes of value and those can be input here.
+User can say their submission helps with Cost reduction or productivity, for example. Some organizations require certain classes of value and those values can be entered here.
 
 String can contain HTML, RTF
 
@@ -326,7 +328,7 @@ String can contain HTML, RTF
 
 Provide information of the icon to be displayed in Maker/ Other discovery UX
 
-Some UX will use larger icons to render cards for discovery
+Some user experiences uses larger icons to render cards for discovery
 
 ```json
 name: String

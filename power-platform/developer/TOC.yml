@@ -57,10 +57,10 @@
               href: isvstudio\auto-update.md
             - name: Embed Pay-as-you-go for ISVs (preview)
               href: isvstudio/embed-analytics.md
-    - name: Catalog components and templates
+    - name: Catalog components and templates (preview)
       href: catalog.md
       items:
-        - name: Submit catalog items
+        - name: Submit catalog items (preview)
           href: submit-catalog-items.md
     - name: Tools
       expanded: true
