@@ -85,7 +85,9 @@ Select **Settings**, **Agent transfers**, and then select the **Omnichannel** ti
 
 ### Disconnect your bot from Omnichannel for Customer Service or disable the connection
 
-If you select **Disconnect**, the application user that represents the bot in your Omnichannel for Customer Service instance is disabled. Your bot is effectively disconnected from the Omnichannel for Customer Service environment. Your bot will stop receiving any traffic from your Omnichannel for Customer Service instance. :::image type="content" source="./media/configuration-gand-off-omnichannel/PVA2-handoff-disconnect.png" alt-text="Screenshot of OmniChannel pane with a disconnect button.":::
+If you select **Disconnect**, the application user that represents the bot in your Omnichannel for Customer Service instance is disabled. Your bot is effectively disconnected from the Omnichannel for Customer Service environment. Your bot will stop receiving any traffic from your Omnichannel for Customer Service instance.
+
+:::image type="content" source="./media/configuration-gand-off-omnichannel/PVA2-handoff-disconnect.png" alt-text="Screenshot of OmniChannel pane with a disconnect button.":::
 
 To add your bot back, you'll need to [connect it again](#connect-your-bot-to-omnichannel-for-customer-service), starting at Step 2.
 
