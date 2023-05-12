@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This article discusses adding cognitive language understanding (CLU) entities to Power Virtual Agents bots. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). 
+This article discusses adding cognitive language understanding (CLU) entities to Power Virtual Agents bots. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). In most cases, you can use [Power Virtual Agent Prebuilt Entities](advanced-entities-slot-filling.md) for your projects, but should you want to leverage CLU entity types with custom JSON resolutions, the following Schema examples are provided as a referernce. 
 
 To setup your environment for mapping CLU entities to Power Virtual Agents bots, see [Get started with language understanding](advanced-clu-get-started.md).
 
@@ -55,26 +55,6 @@ To register the following data types, copy/paste the relative code block listed 
 }
 ```
 
-### Date
-
-```json
-{
-    "dateTimeSubKind": "Date",
-    "timex": "1995-01-01",
-    "value": "1995-01-01"
-}
-```
-
-### DateTime
-
-```json
-{
-    "dateTimeSubKind": "Date",
-    "timex": "XXXX-04-12",
-    "value": "2022-04-12"
-}
-```
-
 ### Temperature
 
 ```json 
@@ -102,6 +82,28 @@ To register the following data types, copy/paste the relative code block listed 
     "value": 24
 }
 ```
+## A special note about the CLU Datetime entity types
+
+### Date
+
+```json
+{
+    "dateTimeSubKind": "Date",
+    "timex": "1995-01-01",
+    "value": "1995-01-01"
+}
+```
+
+### DateTime
+
+```json
+{
+    "dateTimeSubKind": "Date",
+    "timex": "XXXX-04-12",
+    "value": "2022-04-12"
+}
+```
+
 
 ### DatetimeRange
 
