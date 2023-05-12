@@ -62,7 +62,7 @@ Informs customers about how they can speak to a human.
 Triggers when a trigger phrase such as "talk to agent" is matched or when the Escalate system event is triggered. For example, **Question** nodes can be configured to escalate if they don't receive a valid answer from the customer.
 
 > [!NOTE]
-> If using Power Virtual Agents with [hand off to OmniChannel](configuration-hand-off-omnichannel,md) configured, the "Transfer Conversation" node should be added to the end of the Escalate system topic. This will ensure proper hand-off to Dynamics 365 Customer Service.
+> If using Power Virtual Agents with [hand off to OmniChannel](configuration-hand-off-omnichannel.md) configured, the "Transfer Conversation" node should be added to the end of the Escalate system topic. This will ensure proper hand-off to Dynamics 365 Customer Service.
 
 ### Fallback
 
