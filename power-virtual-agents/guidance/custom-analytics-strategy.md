@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 # Custom analytics strategy
 
 
-<mark>Do we need the ms.service value declared in these topics?</mark>
+<mark>IDW TODO:: Confirm need for ms.service in the metadata</mark>
 
 
 Power Virtual Agents provides comprehensive [out-of-the-box analytics](/power-virtual-agents/preview/analytics-overview) that allow customers to understand a bot's usage and key performance indicators.
