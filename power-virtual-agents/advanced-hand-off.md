@@ -41,6 +41,19 @@ For more information about how to configure hand-off with [Omnichannel for Custo
 - An engagement hub that is being used by live agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 - If your bot does not have escalation to agent configured in the "Escalate" System topic, follow the instructions below to configure it 
 
+## Configuring the Escalate system topic 
+
+When you create a bot from Dynamics 365 Customer Service, the default bot content includes the "Transfer conversation" node at the end of the **Escalate** system topic. But if you create if from the Power Virtual Agents portal, that configuration will not be done ahead of time. To configure, follow the steps below:
+
+1. Go to Topics, then select the System tab and click on **Escalate** topic
+
+:::image type="content" source="media/advanced-hand-off/PVA2-escalate-topic-list.png" alt-text="Screenshot of escalate topic in the topic list page." border="false":::
+
+1. At the bottom of the topic, select **Add node** (**+**), go to **Topic Management** and then select **Transfer conversation**
+
+:::image type="content" source="media/advanced-hand-off/PVA2-escalate-topic-with-tranfer.png" alt-text="Screenshot of escalate topic with tranfer conversation node." border="false":::
+
+
 ## Triggering hand-off to a live agent
 
 Customers engaging with the bot can ask for a live agent at any point in the conversation. This escalation can happen in two ways, with an implicit trigger or an explicit trigger.
@@ -59,7 +72,7 @@ When the bot detects an escalation in this manner, it will automatically redirec
 
 When creating topics for your bot, you may determine that some topics require interaction with a human. This type of trigger is known as _explicit triggering_.
 
-In these instances, you must add a **Transfer to agent** node into the topic.
+In these instances, you must add a **Transfer conversation** node into the topic.
 
 This node lets you add a **Private message to agent**, which is sent to the connected engagement hub to help the live agent understand the history and context of the conversation.
 
@@ -70,28 +83,28 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 
 1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the bot you want to edit.
 
-1. Open the authoring canvas for the topic you want to add the **Transfer to agent** node to.
+1. Open the authoring canvas for the topic you want to add the **Transfer conversation** node to.
 
 1. Select **Add node** (**+**) to add a message node. Enter what the bot should say to indicate that transferal to a live agent is about to occur.
 
     :::image type="content" source="media/advanced-hand-off/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
-1. Underneath the message node, select **Add node** (**+**), go to **End the conversation** and then select **Transfer to agent**
+1. Underneath the message node, select **Add node** (**+**), go to **Topic Management** and then select **Transfer conversation**
 
-    :::image type="content" source="media/advanced-hand-off/handoff-add-transfer-node.png" alt-text="Screenshot of adding the node." border="false":::
+    :::image type="content" source="media/advanced-hand-off/PVA2-transfer-conversation.png" alt-text="Screenshot of adding the transfer conversation node." border="false":::
 
-1. Enter an optional private message to the live agent in the **Transfer to agent** node. This optional message can be useful if you have multiple topics with **Transfer to agent** nodes as the information is stored in the `va_AgentMessage` [context variable](#contextual-variables-available-upon-hand-off).
+1. Enter an optional private message to the live agent in the **Transfer conversation** node. This optional message can be useful if you have multiple topics with **Transfer conversation** nodes as the information is stored in the `va_AgentMessage` [context variable](#contextual-variables-available-upon-hand-off).
 
 The topic will start the transfer to a live agent when this node is reached. You can test the hand-off by triggering the topic in the test canvas.
 
 > [!NOTE]
-> Once you add a **Transfer to agent** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website. This message suggests the need to [customize your chat canvas](./customize-default-canvas.md) to implement custom client-side code that brings in a human agent from your engagement hub into the conversation.
+> Once you add a **Transfer conversation** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website. This message suggests the need to [customize your chat canvas](./customize-default-canvas.md) to implement custom client-side code that brings in a human agent from your engagement hub into the conversation.
 
 ## Contextual variables available upon hand-off
 
 Beyond providing an automated way for a conversation to be ported into an engagement hub, it's important to ensure that the best agent for a specific problem is engaged. To help route conversations to the most appropriate live agent there are context variables that are also passed to the engagement hub.
 
-You can use these variables to automatically determine where the conversation should be routed. For example, you may have added **Transfer to agent** nodes to several different topics, and you want to route conversations related to certain topics to specific agents.
+You can use these variables to automatically determine where the conversation should be routed. For example, you may have added **Transfer conversation** nodes to several different topics, and you want to route conversations related to certain topics to specific agents.
 
 The following table lists the context variables available by default.
 
@@ -114,7 +127,7 @@ A customer may go through several topics prior to escalating. Power Virtual Agen
 
 If there are topics with similarly named context variables, Power Virtual Agents promotes the most recently defined topic variable.
 
-# [Web app](#tab/classoc)
+# [Web app](#tab/classic)
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n4G1]
