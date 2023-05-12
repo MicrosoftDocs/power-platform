@@ -12,6 +12,8 @@ ms.collection: virtual-agent
 
 # Defining chatbot topics
 
+==Do we need ms.service in the metadata as well?==
+
 Defining the best topics for your bot requires an understanding of the questions users might ask or the tasks they'll try to accomplish, and the kind of information and automation you need to provide. 
 
 For example, a retail chatbot might start by asking the user to choose from four things they want to do: find a store, place an order, check the status of an order, or return a purchased product. Their answer could lead them into one of four topics, each with its own topic dialog.
