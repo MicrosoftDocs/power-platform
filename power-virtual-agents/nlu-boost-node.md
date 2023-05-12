@@ -176,11 +176,11 @@ If you have not already, [create a boosted bot](nlu-boost-conversations.md#incre
 
  When you are promted to provide a website you'd like the bot to use for generative answers, enter the SharePoint url.
 
+  :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
+
 > [!NOTE]
 >
 > A best practice is to omit the http/https. Also, that recognized SharePoint urls will be from the sharepoint.com domain.
-
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
 When you have entered your SharePoint url, click **Create**.
 If you are using an existing bot, you can update or change urls as described in [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation).
