@@ -71,6 +71,10 @@ The CoE Starter Kit's inventory is based on unique identifiers (GUIDs). App, flo
 
 If you switch from using cloud flows to using Data Export, the dataflows recognize existing rows via their GUID, and update those rows and add new records if the GUID doesn't yet exist. There won't be a duplication of rows.
 
+## Will I still need to install the Audit Log solution to get app usage?
+
+No, the Data Export contains app and flow usage information. The Audit Log solution setup is no longer required, if you are using Data Export as mechanism to retrieve inventory and telemetry.
+
 ## What will happen to custom columns that I've created as part of customizations, if they aren't part of data from datalake?
 
 The Power BI dashboard has been updated to depend on the Azure storage account, instead of Dataverse tables. If you're using your custom columns in the Power BI dashboard, you'll have to bring them into the new Power BI dashboard and append them to the new dataset.
