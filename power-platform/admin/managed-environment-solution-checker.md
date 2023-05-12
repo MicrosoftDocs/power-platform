@@ -2,7 +2,7 @@
 title: Use solution checker in Managed Environments (preview)
 description: Learn about using solution checker to automatically run security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 03/20/2023
+ms.date: 05/12/2023
 author: sidhartg
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -68,7 +68,7 @@ By default, emails are sent when a solution fails validation for medium and abov
 
 ### Use PowerShell to enable solution checker enforcement
 
-You can also use PowerShell to enable solution checker enforcement
+You can use PowerShell to enable solution checker enforcement.
 
 #### Enable solution checker enforcement in block mode
 
@@ -88,7 +88,7 @@ SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-855
 
 #### Disable solution checker enforcement
 
-Here's an example PowerShell script that disables solution checker enforcement. After you run it, the slider shows off in the **Solution checker** section of the Managed Environments settings.
+Here's an example PowerShell script that disables solution checker enforcement. After you run it, the slider shows **Off** in the **Solution checker** section of the Managed Environments settings.
 
 ```powershell
 SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level none
