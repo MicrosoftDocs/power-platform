@@ -90,7 +90,7 @@ You can also change the URL, disable **generative answers**, or change the level
 
     1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
 
-    1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](nlu-boost-conversations#url-considerations) as when enabling the capability when you create a bot.
+    1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](nlu-boost-conversations.md#url-considerations) as when enabling the capability when you create a bot.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
 
@@ -100,7 +100,7 @@ You can also change the URL, disable **generative answers**, or change the level
 
 1. Select **Save** at the top of the **AI capabilities** page.
 
-You can now test your bot to see how well it responds to questions related to the content on the URL you specified. For more details, refer to [Test you bot's generative answers reach](nlu-gpt-quickstart.md#test-your-bots-generative-anwers-reach)
+You can now test your bot to see how well it responds to questions related to the content on the URL you specified. For more details, refer to [Test you bot's generative answers reach](nlu-gpt-quickstart.md#test-your-bots-boosted-conversational-reach).
 
 #### Search and summarize node
 
@@ -110,7 +110,7 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of the Search and summarize node properties.":::
 
-1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](nlu-boost-conversations.md#information-sources).
+1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources).
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize node Data sources menu.":::
 
@@ -134,7 +134,7 @@ With a bot open, expand **Settings** on the side navigation pane, and select **A
 
 1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
 
-1. In the field under the checkbox, change the current url to the Custom configuration ID, or add the ID. [The [same requirements apply for the URL](nlu-boost-conversations#url-considerations) as when enabling the capability when you create a bot. - **Question**: is this true here?]
+1. In the field under the checkbox, change the current url to the Custom configuration ID, or add the ID. [The [same requirements apply for the URL](nlu-boost-conversations.md#url-considerations) as when enabling the capability when you create a bot. - **Question**: is this true here?]
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
 
@@ -191,7 +191,7 @@ Once your bot has been created, you can send it messages in the test canvas chat
 
 This feature requires authentication, since bot makes calls on behalf of the user interaction with the chat window. Currently when you use the test chat, it will make calls using the account used to sign into powerva.microsoft.com. If you publish your bot or want to use another account, you need to configure Manual Authentication using Azure Active Directory. Instructions for how to do this can be found in [Configure user authentication in Power Virtual Agents](https://learn.microsoft.com/power-virtual-agents/configuration-end-user-authentication).
 
-You can find instructions for how to create the needed Azure Active Directory Application Registration in [Configure user authentication with Azure Active Directory](https://learn.microsoft.com/en-us/power-virtual-agents/configuration-authentication-azure-ad)
+You can find instructions for how to create the needed Azure Active Directory Application Registration in [Configure user authentication with Azure Active Directory](https://learn.microsoft.com/power-virtual-agents/configuration-authentication-azure-ad)
 
 You will need to at least include these Delegated Permissions:
 

@@ -124,7 +124,8 @@ Once your topic is created, your bot is ready for testing. It's that simple!
 
 You can explore ways to extend and enhance your boosted bot and topic in [Create (and edit) with Copilot](nlu-authoring.md).
 
-## Test your bot's boosted conversational reach 
+## Test your bot's boosted conversational reach
+
 Once you create a bot, you can immediately test the bot and try out different phrases for your bot to reply to. 
 The **Test bot** pane shows how a bot conversation plays out at every step and you can fine-tune a topic directly within the **Power Virtual Agents (preview)** portal:
  
