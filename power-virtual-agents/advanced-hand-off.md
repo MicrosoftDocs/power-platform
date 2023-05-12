@@ -47,11 +47,11 @@ When you create a bot from Dynamics 365 Customer Service, the default bot conten
 
 1. Go to Topics, then select the System tab and click on **Escalate** topic
 
-:::image type="content" source="media/advanced-hand-off/PVA2-escalate-topic-list.png" alt-text="Screenshot of escalate topic in the topic list page." border="false":::
+    :::image type="content" source="media/advanced-hand-off/PVA2-escalate-topic-list.png" alt-text="Screenshot of escalate topic in the topic list page." border="false":::
 
 1. At the bottom of the topic, select **Add node** (**+**), go to **Topic Management** and then select **Transfer conversation**
 
-:::image type="content" source="media/advanced-hand-off/PVA2-escalate-topic-with-tranfer.png" alt-text="Screenshot of escalate topic with tranfer conversation node." border="false":::
+    :::image type="content" source="media/advanced-hand-off/PVA2-escalate-topic-with-tranfer.png" alt-text="Screenshot of escalate topic with tranfer conversation node." border="false":::
 
 
 ## Triggering hand-off to a live agent
