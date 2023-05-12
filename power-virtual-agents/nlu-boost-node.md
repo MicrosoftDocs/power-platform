@@ -48,7 +48,9 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 | Other internal data | Internal | ... | ... | ... |
 | Project Wednesday | Internal | Azure Open AI knowledge repository | ... | ... |
 
-## Search and Summarize content node
+As the table notes, some features require user authentication to be configured for your bot. In the cases of SharePoint and OneDrive, authentication is done using Azure Active Directory. User authentication for information sources also means that when a specific user asks a question of the bot, the bot will only surface content that specific user has access to read on SharePoint or OneDrive for Business.
+
+## Add a Search and summarize content node
 
  Adding a Search and summarize content node allows you to use generative answers with your a bot's topic. This allows you to search internal and external information sources from the node level to further boost your bot's conversations.
 
@@ -114,7 +116,7 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
 1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
 
-[What (if anything) do we need to say about authentication here?]
+
 
 ### Use a Bing Custom Search to search a number of websites
 
@@ -154,11 +156,56 @@ With a bot open, expand **Settings** on the side navigation pane, and select **A
  
 The node will now Search and summarize content from the information sources in the Bing Custom Search configuration provided. This allows you to use a large number of sources to boost your Search and summarize node without having to enter each source individually.
 
-[What (if anything) do we need to say about authentication here?]
+### Connect to a Sharepoint or OneDrive for Business
 
-### Connect to a Sharepoint
+Power Virtual Agents now supports boosting conversations using generative answers with content stored on SharePoint sites and OneDrive for Business. This capability works by pairing your bot with a specific site URL, such as contoso.sharepoint.com/sites/policies. When a bot user asks a question or makes a statement where the bot does not have a manually configured Topic to use, it will search for relevant content from that site URL and all sub-paths and will use generative answers technology to help summarize this content into a targeted response.
 
-- Maybe this is the first real "authentication" example? Make sure to call out in boosted convo docs
+When analyzing internal content stored on SharePoint or OneDrive for Business, it is essential to note this happens on behalf of the signed in user, meaning this feature requires user authentication to be configured for your bot using Azure Active Directory. It also means that when a specific user asks a question of the bot, the bot will only surface content that specific user has access to read on SharePoint or OneDrive for Business.
+
+#### Requirements
+
+To use this feature, you will need:
+
+1. A Power Virtual Agent bot created using the preview canvas  
+2. A SharePoint or OneDrive for Business URL
+3. An AAD application registration for employees to log (this is optional to try this in the Test Canvas, but is required if you Publish your bot and use it with channels)
+ 
+#### Inputting a SharePoint or OneDrive for Business url
+
+If you have not already, [create a boosted bot](nlu-boost-conversations.md#increasing-your-bots-reach).
+
+ When you are promted to provide a website you'd like the bot to use for generative answers, enter the SharePoint url.
+
+> [!NOTE]
+>
+> A best practice is to omit the http/https. Also, that recognized SharePoint urls will be from the sharepoint.com domain.
+
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
+
+When you have entered your SharePoint url, click **Create**.
+If you are using an existing bot, you can update or change urls as described in [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation).
+
+Once your bot has been created, you can send it messages in the test canvas chat window. Try sending it some phrases that you would expect to return content. If the user account you used to sign into powerva.microsoft.com **does not** have access to the SharePoint site you will not get content, or may get a System Error.
+
+#### Authentication
+
+This feature requires authentication, since bot makes calls on behalf of the user interaction with the chat window. Currently when you use the test chat, it will make calls using the account used to sign into powerva.microsoft.com. If you publish your bot or want to use another account, you need to configure Manual Authentication using Azure Active Directory. Instructions for how to do this can be found in [Configure user authentication in Power Virtual Agents](https://learn.microsoft.com/power-virtual-agents/configuration-end-user-authentication).
+
+You can find instructions for how to create the needed Azure Active Directory Application Registration in [Configure user authentication with Azure Active Directory](https://learn.microsoft.com/en-us/power-virtual-agents/configuration-authentication-azure-ad)
+
+You will need to at least include these Delegated Permissions:
+
+1. Files.Read.All
+2. Sites.Read.All
+
+#### Supported content
+
+Curently, this feature supports content stored in these formats:
+
+- SharePoint pages (aspx pages)
+- Word documents (docx)
+- PowerPoint documents (pptx)
+- PDF documents (pdf)
 
 ### Search and summarize into variables
 
