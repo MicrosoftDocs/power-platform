@@ -253,6 +253,48 @@ Once permanently deleted, the name of the deleted user no longer shows in the au
 
 Once permanently deleted, the name of the deleted user no longer shows in the **Created by** and the **Modified by** fields for records that the deleted user created and for records that the deleted user last modified. These fields will show **No Name** and if you clicked on it, you will see a message that the 'Record is unavailable'. The deleted user's systemuserid is still in these records.
 
+## Bulk Delete users in Power Platform
+
+Users with disabled status can be deleted in bulk using the [Data Management/Bulk deletion](https://learn.microsoft.com/power-platform/admin/delete-bulk-records). You can create bulk delete jobs to [soft delete](#soft-delete-users-in-power-platform)  and to [permanently delete users](#permanently-delete-users-in-power-platform).
+
+### How to bulk soft delete users in Power Platform
+
+1. In the [Power Platform admin center](https://aka.ms/ppac), select an environment.
+2. Select **Settings** > **Data management** > **Bulk deletion**.
+3. Select **New** to run the **Bulk Deletion Wizard** to create a bulk deletion job with the soft delete users you want to delete.
+4. Click **Next**.
+5. In the **Look for:** dropdown, scroll down and select the **Users** table.
+6. In the **Use Saved View:** dropdown, scroll down and select the **Users deleted in tenant but exist in the environment** view.
+7. Click on the **Preview Records** button to see the list of users that can be soft deleted.
+8. Click the **Next** button.
+9. Enter a name for your bulk deletion job.
+10. Enter a scheduled time and date.
+11. Optional: Click on the **Run this job after every:** box and set a frequency (in days).
+    Note: it is recommended that you set this option to soft delete your users on a scheduled basis as soft deleting users is where most of your storage costs can be saved.
+12. Click on **Next**.
+13. Review and **submit** your job.
+To check on the status of your job, select the **My bulk deletion system jobs** view.
+
+
+### How to bulk permanently delete users in Power Platform
+
+1. In the [Power Platform admin center](https://aka.ms/ppac), select an environment.
+2. Select **Settings** > **Data management** > **Bulk deletion**.
+3. Select **New** to run the **Bulk Deletion Wizard** to create a bulk deletion job with the soft delete users you want to delete.
+4. Click **Next**.
+5. In the **Look for:** dropdown, scroll down and select the **Users** table.
+6. In the **Use Saved View:** dropdown, scroll down and select the **Soft deleted Users** view.
+7. Click on the **Preview Records** button to see the list of users that can be soft deleted.
+8. Click the **Next** button.
+9. Enter a name for your bulk deletion job.
+10. Enter a scheduled time and date.
+    Note: it is recommended that you set this schedule based on your record retention policy.
+12. Click on **Next**.
+13. Review and **submit** your job.
+To check on the status of your job, select the **My bulk deletion system jobs** view.
+
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RW1305f]
+
 ### See also
 
 [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide) <br />
