@@ -36,7 +36,7 @@ However, if you decide to change the retention period on January 8 to 14 days, t
 ## Prepare your environment for PowerShell
 This section uses the PowerShell for Power Platform administrator module, which is the recommended PowerShell module for interacting with admin capabilities. To get started with the Power platform PowerShell module, see [Get started with PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started).
 
-## Set retention period
+### Set retention period
 ```powershell
 Set-AdminPowerAppEnvironmentBackupRetentionPeriod
 ```
