@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 
 # Defining chatbot topics
 
-==Do we need ms.service in the metadata as well?==
+<mark>IDW TODO:: Confirm need for ms.service in the metadata</mark>
 
 Defining the best topics for your bot requires an understanding of the questions users might ask or the tasks they'll try to accomplish, and the kind of information and automation you need to provide. 
 
