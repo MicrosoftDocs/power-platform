@@ -86,9 +86,9 @@ Here's an example PowerShell script that enables solution checker enforcement in
 SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level warn
 ```
 
-#### Disable solution checker enforcement
+#### Turn off solution checker enforcement
 
-Here's an example PowerShell script that disables solution checker enforcement. After you run it, the slider shows **Off** in the **Solution checker** section of the Managed Environments settings.
+Here's an example PowerShell script that turns off solution checker enforcement. After you run it, the slider shows **Off** in the **Solution checker** section of the Managed Environments settings.
 
 ```powershell
 SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level none
