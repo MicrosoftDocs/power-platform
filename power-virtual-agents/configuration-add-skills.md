@@ -55,7 +55,7 @@ You can get your bot's ID from the **Add skill** window.
 
 1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), expand the **Settings** tab on the side and select **Skills**.
 
-   :::image type="content" source="media/configuration-add-skills/skills-menu.png" alt-text="Select Manage, then Skills.":::
+   :::image type="content" source="media/configuration-add-skills/PVA2-skills-menu.png" alt-text="Select Settings, then Skills.":::
 
 1. At the top of the skills page, select **Add skill**.
 
