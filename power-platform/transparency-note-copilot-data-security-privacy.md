@@ -14,7 +14,7 @@ ms.reviewer: kvivek
 
 [!INCLUDE [copilot-data-security-privacy](~/../shared-content/shared/transparency-notes-includes/copilot-data-security-privacy.md)]
 
-## Related content
+### Related content
 
 - [AI Copilot in Power Apps](/power-apps/maker/canvas-apps/ai-overview)
 - [Use Azure OpenAI Service in AI Builder](/ai-builder/prebuilt-azure-openai)
