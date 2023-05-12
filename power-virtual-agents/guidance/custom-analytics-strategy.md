@@ -13,8 +13,6 @@ ms.collection: virtual-agent
 # Custom analytics strategy
 
 
-==Do we need ms.service in the metadata as well?==
-
 <mark>Do we need the ms.service value declared in these topics?</mark>
 
 
@@ -64,7 +62,7 @@ Power Virtual Agents uses the following tables for custom analytics in Dataverse
 - [**Chatbot Subcomponent**](/power-apps/developer/data-platform/reference/entities/botcomponent) (`BotComponent`). This table lists the topics, entities, and dialogs associated with the bot in your environment. Generally this is a small amount of data.
 - [**Conversation Transcripts**](/power-apps/developer/data-platform/reference/entities/conversationtranscript) (`ConversationTranscript`). This table contains detailed conversation data for all the chatbots in your environment. The size of the data in this table is related to the use of the bot and can be large.
 
-==How big is large and how small is small? 1gb? 400tb? 200kb?==
+<mark>How big is large and how small is small? 1gb? 400tb? 200kb?</mark>
 
 ### Azure Synapse Link for Dataverse (Azure Data Lake Storage Gen2)
 
