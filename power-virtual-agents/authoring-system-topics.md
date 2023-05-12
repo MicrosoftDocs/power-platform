@@ -61,6 +61,9 @@ Informs customers about how they can speak to a human.
 
 Triggers when a trigger phrase such as "talk to agent" is matched or when the Escalate system event is triggered. For example, **Question** nodes can be configured to escalate if they don't receive a valid answer from the customer.
 
+> [!NOTE]
+> If using Power Virtual Agents with [hand off to OmniChannel](configuration-hand-off-omnichannel.md) configured, follow the instructions on the [Hand off to a live agent](advanced-hand-off.md#configuring-the-escalate-system-topic) to ensure proper hand-off to Dynamics 365 Customer Service.
+
 ### Fallback
 
 Informs users that their query couldn't be matched to a topic and asks them to try again.
