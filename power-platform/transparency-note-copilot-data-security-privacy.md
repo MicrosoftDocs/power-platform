@@ -2,7 +2,7 @@
 title: "Transparency note for Copilot data security and privacy in Microsoft Power Platform"
 description: "The transparency note discusses AI Copilot data sharing and the key considerations for making use of the feature responsibly."
 author: KumarVivek 
-ms.date: 05/08/2023
+ms.date: 05/11/2023
 ms.custom: 
   - transparency-note
 ms.topic: article
