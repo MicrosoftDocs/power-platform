@@ -20,7 +20,7 @@ For production environments that do not have Dynamics 365 applications enabled, 
 Changing the backup retention period is a useful feature for Managed Environments that do not have Dynamics 365 applications enabled. It also gives you more flexibility and security for your data by extending back up to 28 days, and it helps in accidental data deletion scenarios. Consider the following information:
 
 - This ability to extend the backup retention period beyond 7 days is only supported for [Managed Environments](managed-environment-overview.md).
-- If you have an existing environment that is older than 7 days and you change the backup retention period, the first backup will still expire after 7 days. However, subsequent backups follow the new backup retention period that you have configured.
+- If you change the backup retention period, the new value will apply to all existing and future backups. However, it may take up to 24 hours for the changes to take effect on the existing backups. Please be aware that this may result in some backups being deleted sooner than expected.
 
 To change the backup retention period, you need to be an admin with one of these roles in Azure Active Directory: 
 - Global admin
