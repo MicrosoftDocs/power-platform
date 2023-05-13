@@ -81,7 +81,7 @@ If your bot doesn't have omnichannel capabilities enabled, the message will alwa
 
 ## Configure inactivity timeout to close conversation
 
-Dynamics 365 Customer Service expects a conversation to end after a period of inactivity. This is important to ensure the supervisor view displays the correct ongoing conversations and manage agent loads and metrics correctly. When you create a bot from Dynamics 365 Customer Service, the default bot content includes two topics: **Session Timeout Reminder** and **Session Timeout**. These topics uses the [Inactivity trigger](authoring-triggers?tabs=preview#inactivity) to first remind the user, and then close the convesation after a set inactivity timeout values, which can be configured in the topic. But if you create te bot from the Power Virtual Agents portal, those topics will not be included in the bot. To create them, follow the steps below:
+Dynamics 365 Customer Service expects a conversation to end after a period of inactivity. This is important to ensure the supervisor view displays the correct ongoing conversations and manage agent loads and metrics correctly. When you create a bot from Dynamics 365 Customer Service, the default bot content includes two topics: **Session Timeout Reminder** and **Session Timeout**. These topics uses the [Inactivity trigger](authoring-triggers.md?tabs=preview#inactivity) to first remind the user, and then close the convesation after a set inactivity timeout values, which can be configured in the topic. But if you create te bot from the Power Virtual Agents portal, those topics will not be included in the bot. To create them, follow the steps below:
 
 ### Creating a Session Timeout topic
 
