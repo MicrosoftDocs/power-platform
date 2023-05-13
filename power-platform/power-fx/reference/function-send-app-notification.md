@@ -103,5 +103,18 @@ An in-app notification can have zero to many actions on the notification card. T
 | Entity Name | String | No | If linking to a Dynamics 365 record, the logical name of the entity of the record to which the chat should be linked |
 | Initial Message | String | No | An introductory message of the new chat. |
 
+## Examples
+
+### In-app notification without a title, recipient, and body
+The following formula will send a basic in-app notification to a recipient with a title and body. It will not have any actions, and all other parameters will be teh default values.
+
+```powerapps-dot
+XSendAppNotification(
+    "Welcome", 
+    LookUp(Users, 'Primary Email'="<User's email address>"), 
+    "Welcome to the world of in-app notifications!"
+)
+```
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
