@@ -146,6 +146,7 @@ Any file matching the `map` parameter will be read from the name and path specif
     map="pluginpackages\cr886_PluginPackageTest\package\cr886_PluginPackageTest.nupkg"
     to="myplg\bin\Debug\myplg.1.0.0.nupkg" /> 
 ``` 
+Note that in the above NuGet package example, cr886_PluginPackageTest.nupkg is not overwritten if files already exist in the specified location.
   
 <a name="file_path_mapping"></a>   
 
