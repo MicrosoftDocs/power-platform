@@ -20,7 +20,7 @@ You must create an AppSource package (.zip file) to include your solution and de
 |[Content_Types].xml|File that provides MIME type information of the file type extensions included in the AppSource package. Typically, these are .config, .dll, .exe, .xml, and .zip file types, but you can add almost any file type that is supported by Windows.|
 |Icon file|An image file for the appsource package icon; size should be 32x32 pixels. Valid image formats are PNG and JPG.|
 |HTML file|File containing your License terms.|
-|Input.xml|Files that describe the assets in your AppSource package.|
+|Input.xml|File that describes the assets in your AppSource package.|
 
 
 ## Create a Package file
