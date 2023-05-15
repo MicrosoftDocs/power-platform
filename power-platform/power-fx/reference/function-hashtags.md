@@ -32,6 +32,8 @@ The **HashTags** function scans a string for hashtags. Hashtags start with a pou
 
 **HashTags** returns a one-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains the hashtags in the string. If the string contains no hashtags, the function returns a one-column table that's [empty](function-isblank-isempty.md).
 
+The HashTags function is not currently supported for PowerFx calculated columns in model-driven apps
+
 ## Syntax
 
 **HashTags**( _String_ )
