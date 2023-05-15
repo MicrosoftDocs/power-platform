@@ -5,7 +5,7 @@ keywords: "PVA"
 ms.date: 03/24/2023
 
 ms.topic: article
-author: iaanw  
+author: KendalBond007
 ms.author: iawilt
 ms.reviewer: clmori
 manager: leeclontz
@@ -81,21 +81,21 @@ If your bot doesn't have omnichannel capabilities enabled, the message will alwa
 
 ## Configure inactivity timeout to close conversation
 
-Dynamics 365 Customer Service expects a conversation to end after a period of inactivity. This is important to ensure the supervisor view displays the correct ongoing conversations and manage agent loads and metrics correctly. When you create a bot from Dynamics 365 Customer Service, the default bot content includes two topics: **Session Timeout Reminder** and **Session Timeout**. These topics uses the [Inactivity trigger](authoring-triggers.md?tabs=preview#inactivity) to first remind the user, and then close the convesation after a set inactivity timeout values, which can be configured in the topic. But if you create te bot from the Power Virtual Agents portal, those topics will not be included in the bot. To create them, follow the steps below:
+Dynamics 365 Customer Service expects a conversation to end after a period of inactivity. This is important to ensure the supervisor view displays the correct ongoing conversations and manage agent loads and metrics correctly. When you create a bot from Dynamics 365 Customer Service, the default bot content includes two topics: **Session Timeout Reminder** and **Session Timeout**. These topics use the [Inactivity trigger](authoring-triggers.md?tabs=preview#inactivity) to first remind the user, and then close the convesation after a set inactivity timeout value, which can be configured in the topic. But if you create the bot from the Power Virtual Agents portal, those topics will not be included in the bot. To create them, follow the steps below:
 
 ### Creating a Session Timeout topic
 
-1. From the left navigation, select **Topics**
+1. From the left navigation, select **Topics**.
 
-1. From the top bar, select **New topic** and **From blank**
+1. From the top bar, select **New topic** and **From blank**.
 
-1. Hover the trigger **Phrases** and select the **Change trigger** icon
+1. Hover the trigger **Phrases** and select the **Change trigger** icon.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-Change-Trigger.png" alt-text="Change topic's trigger":::
     
-1. Select the **Inactivity** from the list
+1. Select **Inactivity** from the list.
 
-1. Select **Edit** in the trigger node to configure the inactivity duration
+1. Select **Edit** in the trigger node to configure the inactivity duration.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-Inactivity-Trigger.png" alt-text="Configure inactivity trigger":::
 
