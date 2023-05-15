@@ -49,7 +49,7 @@ conceptualContent:
           links:
             - url: /powerapps
               itemType: overview
-              text: Power Apps docs
+              text: Power Apps documentation
             - url: /training/powerplatform/power-apps
               itemType: learn
               text: Power Apps training and learning paths
@@ -60,7 +60,7 @@ conceptualContent:
           links:
             - url: /power-automate/
               itemType: overview
-              text: Power Automate docs
+              text: Power Automate documentation
             - url: /training/powerplatform/power-automate
               itemType: learn
               text: Power Automate training and learning paths
@@ -71,7 +71,7 @@ conceptualContent:
           links:
             - url: /power-bi/
               itemType: overview
-              text: Power BI docs
+              text: Power BI documentation
             - url: /training/powerplatform/power-bi
               itemType: learn
               text: Power BI training and learning paths
@@ -82,7 +82,7 @@ conceptualContent:
           links:
             - url: /power-pages/
               itemType: overview
-              text: Power Pages docs
+              text: Power Pages documentation
             - url: /training/paths/power-pages-get-started
               itemType: learn
               text: Power Pages training and learning paths
@@ -93,24 +93,27 @@ conceptualContent:
           links:
             - url: /power-virtual-agents/
               itemType: overview
-              text: Power Virtual Agents docs
+              text: Power Virtual Agents documentation
             - url: /training/browse/?expanded=power-platform&products=power-virtual-agents
               itemType: learn
               text: Power Virtual Agents training and learning paths
             - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
               itemType: video
               text: Power Virtual Agents videos
-        - title: Administer and manage Microsoft Power Platform
+        - title: Administer and extend Microsoft Power Platform
           links:
             - url: ./admin/index.yml
-              itemType: overview
-              text: Admin docs
+              itemType: reference
+              text: Power Platform admin documentation
             - url: ./admin/pricing-billing-skus.md
               itemType: overview
               text: Product licensing
             - url: ./alm/index.yml
               itemType: overview
               text: Application lifecycle management (ALM) guide
+            - url: ./developer/index.yml
+              itemType: reference
+              text: Power Platform developer documentation
         - title: Best practices guidance
           links:
             - url: ./guidance/adoption/methodology.md
