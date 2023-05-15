@@ -203,7 +203,7 @@ Adding authentication allows users to sign in, giving your bot access to a restr
 
 1. Copy the **Application (client) ID** and store it in a temporary place. You'll need this in later steps.
 
-### Add the redirect URL
+### Add the redirect URL in Classic
 
 1. In the Azure portal, go to **Authentication** and then select **Add a platform**.
 
