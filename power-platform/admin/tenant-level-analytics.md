@@ -20,8 +20,6 @@ Once enabled, this feature will aggregate data from environments across all regi
 
 To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps** or **Analytics** > **Power Automate**. Tenant level reports can be accessed in the **Overview** tab, and environment-level reports can be accessed in the **Environment View** tab. 
 
-:::image type="content" source="media/select-tenant-level-analytics.png" alt-text="Select tenant level analytics.":::
-
 ## Who can view these reports?
 
 Administrators with the following roles and a [license](pricing-billing-skus.md) can view the reports in Power Apps analytics:
