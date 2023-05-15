@@ -159,7 +159,7 @@ For more information, see [Configure single sign-on for your custom website (pre
 
 1. Select **Save**.
 
-## Add the redirect URL in Power Virtual Agents
+## Add the redirect URL from Power Virtual Agents
 
 1. In Power Virtual Agents side navigation pane, under **Settings**, select **Security**. Then select **Authentication**.
 
