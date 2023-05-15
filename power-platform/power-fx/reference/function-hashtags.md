@@ -32,6 +32,8 @@ The **HashTags** function scans a string for hashtags. Hashtags start with a pou
 
 **HashTags** returns a one-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains the hashtags in the string. If the string contains no hashtags, the function returns a one-column table that's [empty](function-isblank-isempty.md).
 
+Note: This Function does not work in model-driven apps modern commanding. HashTags shows in the command designer, Intelisense won't show an error, however the command won't do anything. 
+
 ## Syntax
 
 **HashTags**( _String_ )
@@ -59,5 +61,7 @@ The **HashTags** function scans a string for hashtags. Hashtags start with a pou
    - **\#coUnt123**
    - **\#123abc**
    - **\#1**
+
+4. Combine HashTags with other functions e.g. Concatenate to create complex strings e.g. Concatenate("text", HashTags(Label2.Text))
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
