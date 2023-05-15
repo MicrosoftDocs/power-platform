@@ -109,6 +109,61 @@ You can type a literal value into the variable input field in an action node ins
 
 :::image type="content" source="media/authoring-variables/LiteralActionInput.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
 
+## Parse Value node
+
+The Parse Value node allows you to convert a value of one type, to a value of another type. When adding a node to a topic, select Add node (+), then Variable management, and Parse Value.
+
+:::image type="content" source="media/authoring-variables/nlu-var-mgt-parse-value.png" alt-text="Screenshot of adding a node, selecting variable management, then parse value.":::
+
+Key scenarios using the Parse Value node focus on converting raw JSON or untyped variables (whose value or structure isn’t know until runtime; for example ChannelData) to concrete types.
+
+The process starts when a Flow is called, which in turn calls an API. The API then returns a result. Typically, you would need to parse this response and return one or more primitive variables to PVA. With the Parse Value node, you can send the entire API result as a string:
+
+```json
+{
+	"Name" : "Gary",
+	"Position" : "PM",
+	"Company" : "Microsoft",
+	"FormerPositions" : [
+		{ "Position" : "Engineer" }
+	]
+}
+```
+
+The string variable that you have now can be converted to a Record variable, with full intellisense support in Power Fx, using this new node. An example using sample data will help illustrate this process.
+
+### Example of using the Parse Value node
+
+1. Add a Parse Value node, and select the variable you want to parse.
+
+:::image type="content" source="media/authoring-variables/nlu-parse-value-select-var.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
+
+2. Select the data type. In this case choose “From Sample Data”.
+
+:::image type="content" source="media/authoring-variables/nlu-parse-value-select-data-type.png" alt-text="Screenshot showing selection of data type for a Parse value node.":::
+
+3. Now you can provide JSON by clicking ‘Get Schema from Sample JSON’. Clicking this opens an editor where you can paste the example.
+ 
+:::image type="content" source="media/authoring-variables/nlu-parse-value-json-sample.png" alt-text="Screenshot showing 'Get schema from sample json.":::
+
+4. Finally, specify which variable you want to place the parsed value into. Usually you would create a new variable for this.
+
+:::image type="content" source="media/authoring-variables/nlu-parse-value-target-var.png" alt-text="Screenshot showing selection of a target variable for a parsed value.":::
+
+Note that the output variable is now of the correct type – Record.
+
+:::image type="content" source="media/authoring-variables/nlu-parse-value-target-verify-content.png" alt-text="Screenshot showing the target variable for the parsed data has the desired type - Record.":::
+
+5. You can now use your new variable. Here in the Power Fx editor, you can see that you get full intellisense for the various properties.
+
+:::image type="content" source="media/authoring-variables/nlu-parse-value-intellisense.png" alt-text="Screenshot showing access to full intellisense for various properties through the Power FX editor.":::
+
+As well as parsing JSON strings, a key use of the Parse value node will be for parsing UntypedObjects at runtime. The most common of these will be when you receive an Event (probably link to the Triggers article here) and you need to parse the Event value. Or you may want to parse the System.Activity.ChannelData property, which varies at runtime by channel.
+
+In the following example, if the event was coming from Teams, you would need to use the Teams developer docs [LINK!?] to find an example of what the incoming event will look like and then use from sample data as outlined in this section.
+
+:::image type="content" source="media/authoring-variables/nlu-parse-value-teams-event.png" alt-text="Screenshot showing an event coming from Teams.":::
+
 ## Passing variables between topics
 
 When you redirect to other topics, you can pass values into variables in the destination topic or get variables back from it. Passing variables between topics is especially useful when you already have information that the topic needs. Your users will appreciate not having to answer the question again. It's also helpful when you refactor and separate your topics into reusable components and you want to pass variables across the topics.
