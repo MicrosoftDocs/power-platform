@@ -188,6 +188,6 @@ We use this data to evaluate and improve the quality of the capability. More inf
 
 ### How can I report concerns about Copilot?
 
-If you have any concerns (such as those relating to content policies or codes of conduct) about the Copilot feature, you can raise them by (pvareport@microsoft.com)[emailing us]. We will aim to respond to you within 2 business days.
+If you have any concerns (such as those relating to content policies or codes of conduct) about the Copilot feature, you can raise them by [emailing us](pvareport@microsoft.com). We will aim to respond to you within 2 business days.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)] 
