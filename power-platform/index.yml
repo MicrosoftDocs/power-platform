@@ -100,7 +100,7 @@ conceptualContent:
             - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
               itemType: video
               text: Power Virtual Agents videos
-        - title: Administer and extend Microsoft Power Platform
+        - title: Administer and extend Power Platform
           links:
             - url: ./admin/index.yml
               itemType: reference
