@@ -1,10 +1,10 @@
 ---
-title: Create (and edit) with Copilot (preview)
+title: Create (and edit) with Copilot
 description: Use AI powered by GPT to create and edit bot topics, and get your chatbot ready for your users in minutes.
 keywords: "PVA"
 ms.date: 3/16/2023
 ms.topic: how-to
-author: iaanw
+author: KendalBond007
 ms.author: iawilt
 ms.reviewer: 
 ms.collection: virtual-agent
@@ -14,7 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Create (and edit) with Copilot (preview)
+# Create (and edit) with Copilot
 
 [!INCLUDE [AI tech disclosure](includes/disclosure-ai-preview.md)]
 
@@ -34,7 +34,7 @@ See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for
 >  
 > Your bot must be created in the US region. 
 >  
-> Other regions, and languages other than English, aren't supported during the preview.
+> Other regions, and languages other than English, aren't currently supported.
 
 - You'll need an account for Power Virtual Agents. 
 
@@ -54,7 +54,7 @@ See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for
 
 When creating a new topic, you can select **Create with Copilot** and ask the AI to make it for you. You need to do this for each topic you want to create, and you can't create multiple topics in one description.
 
-1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic** and then **Create with Copilot (preview)**.
+1. Open your bot and select **Topics**. On the **Topics** page, select **+ New topic** and then **Create with Copilot**.
 
     :::image type="content" source="media/nlu-gpt/describe-it-new-topic.png" alt-text="Screenshot of the Power Virtual Agents navigation pane with Topics and the New topics button highlighted.":::
 
@@ -137,7 +137,7 @@ Admins can disable Copilot for their organization by starting a support request 
 
 ### Topic node support
 
-During this preview, Copilot can create Message, Question, and Condition nodes when building and iterating on topics. Other node types during the preview aren't currently supported.
+During this preview, Copilot can create Message, Question, and Condition nodes when building and iterating on topics. Other node types aren't currently supported.
 
 There are some additional limitations on how Copilot works with nodes:
 
@@ -164,7 +164,7 @@ These filters and mitigations are not foolproof.
 
 You should always test and review your bots before publishing them.
 
-### How was the capability evaluated? What metrics are used to measure performance?   
+### How was the capability evaluated? What metrics are used to measure performance?
 
 The capability was evaluated on a collection of manually curated prompt-and-topic datasets, covering common, edge-case, and offensive content, as well as synthetic generation.
 
@@ -179,8 +179,15 @@ The system only supports English. Inaccurate responses may be returned when user
 ## Privacy
 
 ### What data does the capability collect? How is the data used?
-The capability collects user prompts, the returned configured Topics, and any feedback you provide. 
 
-We use this data to evaluate and improve the quality of the capability. More information on what data is collected is available in the [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520). 
+The capability collects user prompts, the returned configured Topics, and any feedback you provide.
+
+We use this data to evaluate and improve the quality of the capability. More information on what data is collected is available in the [terms](https://go.microsoft.com/fwlink/?linkid=2236010).
+
+## Reporting Concerns
+
+### How can I report concerns about Copilot?
+
+If you have any concerns (such as those relating to content policies or codes of conduct) about the Copilot feature, you can raise them by (pvareport@microsoft.com)[emailing us]. We will aim to respond to you within 2 business days.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)] 
