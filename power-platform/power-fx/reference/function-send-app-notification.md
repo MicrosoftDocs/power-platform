@@ -1,6 +1,6 @@
 ---
-title: SendAppNotification and related functions in Power Apps
-description: Reference information including syntax and examples for the SendAppNotification, CreateUrlAction, CreateSidePaneActionForDashboard, CreateSidePaneActionForEntity, CreateSidePaneActionForEntityList, and CreateTeamsChatAction functions in Power Apps.
+title: XSendAppNotification and related functions in Power Apps
+description: Reference information including syntax and examples for the XSendAppNotification, XCreateUrlAction, XCreateSidePaneActionForDashboard, XCreateSidePaneActionForEntity, XCreateSidePaneActionForEntityList, and XCreateTeamsChatAction functions in Power Apps.
 author: jaredha
 
 ms.topic: reference
@@ -14,26 +14,26 @@ search.audienceType:
 contributors:
 ---
 
-# SendAppNotification and related action functions in Power Apps
+# XSendAppNotification and related action functions in Power Apps
 
 Send an in-app notification with optional actions to a recipient.  
 
 ## Description
 
-The **SendAppNotification** function sends an in-app notification to a recipient. These notifications are displayed ot the app user as a toast or within the notification center. See [Send in-app notifications within model-driven apps](https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications.md) for more information.
+The **XSendAppNotification** function sends an in-app notification to a recipient. These notifications are displayed ot the app user as a toast or within the notification center. See [Send in-app notifications within model-driven apps](https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications.md) for more information.
 
-An in-app notification can have zero to many actions on the notification card. The following functions are used as parameters in the SendAppNotification function to add actions to the app notification card. See [Notification actions](https://review.learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?branch=jaredha-appnotificationapi&tabs=powerfx%2Csdk2%2Cwebapi3%2Cpowerfx4%2Cwebapi5%2Cwebapi6#notification-actions) for more information on each action type.
-- **CreateUrlAction**: adds a URL action to the notification.
-- **CreateSidePaneActionForDashboard**: adds a side pane action that will navigate in the side pane to a page with a type of `dashboard`.
-- **CreateSidePaneActionForEntity**: adds a side pane action that will navigate in the side pane to a page with a type of `entityrecord`.
-- **CreateSidePaneActionForEntityList**: adds a side pane action that will navigate in the side pane to a page with a type of `entitylist`.
-- **CreateTeamsChatAction**: adds a teams chat action.
+An in-app notification can have zero to many actions on the notification card. The following functions are used as parameters in the XSendAppNotification function to add actions to the app notification card. See [Notification actions](https://review.learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?branch=jaredha-appnotificationapi&tabs=powerfx%2Csdk2%2Cwebapi3%2Cpowerfx4%2Cwebapi5%2Cwebapi6#notification-actions) for more information on each action type.
+- **XCreateUrlAction**: adds a URL action to the notification.
+- **XCreateSidePaneActionForDashboard**: adds a side pane action that will navigate in the side pane to a page with a type of `dashboard`.
+- **XCreateSidePaneActionForEntity**: adds a side pane action that will navigate in the side pane to a page with a type of `entityrecord`.
+- **XCreateSidePaneActionForEntityList**: adds a side pane action that will navigate in the side pane to a page with a type of `entitylist`.
+- **XCreateTeamsChatAction**: adds a teams chat action.
 
 ## Syntax
 
-### SendAppNotification 
+### XSendAppNotification 
 
-**SendAppNotification**( _Title_, _Recipient_, _Body_, _Actions_, _Icon Type_, _Toast Type_, _Expiry_, _Priority_ ) 
+**XSendAppNotification**( _Title_, _Recipient_, _Body_, _Actions_, _Icon Type_, _Toast Type_, _Expiry_, _Priority_ ) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -46,9 +46,9 @@ An in-app notification can have zero to many actions on the notification card. T
 | Expiry | Int | No | The number of seconds from when the notification should be deleted if not already dismissed |
 | Priority | Int | No | Picklist value for the priority of notification (Normal or High) |
 
-### CreateUrlAction
+### XCreateUrlAction
 
-**CreateUrlAction**( _Title_, _URL_, _Navigation Target_ )
+**XCreateUrlAction**( _Title_, _URL_, _Navigation Target_ )
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -56,9 +56,9 @@ An in-app notification can have zero to many actions on the notification card. T
 | URL | String | Yes | The URL to be opened when the action is selected |
 | Navigation Target | String | No | Defines where the navigation link opens. The options are: <br><ul><li>`dialog`: Opens in the center dialog.</li><li>`inline`: Default. Opens in the current page.</li><li>`newWindow`: Opens in a new browser tab.</li></ul> | 
 
-### CreateSidePaneActionForDashbaord
+### XCreateSidePaneActionForDashbaord
 
-**CreateSidePaneActionForDashboard**( _Title_, _Pane ID_, _Pane Title_, _Page Type_, _Dashboard ID_ ) 
+**XCreateSidePaneActionForDashboard**( _Title_, _Pane ID_, _Pane Title_, _Page Type_, _Dashboard ID_ ) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -67,9 +67,9 @@ An in-app notification can have zero to many actions on the notification card. T
 | Pane Title | String | Yes | The title to display for the side pane |
 | Dashboard ID | GUID | Yes | The ID of the dashboard to open in the side pane |
 
-### CreateSidePaneActionForEntity
+### XCreateSidePaneActionForEntity
 
-**CreateSidePaneActionForEntity**( _Title_, _Pane ID_, _Pane Title_, _Page Type_, _Entity Name_, _Entity ID_ ) 
+**XCreateSidePaneActionForEntity**( _Title_, _Pane ID_, _Pane Title_, _Page Type_, _Entity Name_, _Entity ID_ ) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -79,9 +79,9 @@ An in-app notification can have zero to many actions on the notification card. T
 | Entity Name | String | Yes | The logical name of the entity |
 | Entity ID | String | Yes | The ID of the entity record to open in the side pane |
 
-### CreateSidePaneActionForEntityList
+### XCreateSidePaneActionForEntityList
 
-**CreateSidePaneActionForEntityList**( _Title_, _Pane ID_, _Pane Title_, _Page Type_, _Entity Name_  ) 
+**XCreateSidePaneActionForEntityList**( _Title_, _Pane ID_, _Pane Title_, _Page Type_, _Entity Name_  ) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -90,9 +90,9 @@ An in-app notification can have zero to many actions on the notification card. T
 | Pane Title | String | Yes | The title to display for the side pane |
 | Entity Name | String | Yes | The logical name of the entity to open as a list in the side pane |
 
-### CreateTeamsChatAction
+### XCreateTeamsChatAction
 
-**CreateTeamsChatAction**( _Title_, _Chat ID_, _Member IDs_, _Record ID_, _Entity Name_, _Initial Message_ ) 
+**XCreateTeamsChatAction**( _Title_, _Chat ID_, _Member IDs_, _Record ID_, _Entity Name_, _Initial Message_ ) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -105,8 +105,8 @@ An in-app notification can have zero to many actions on the notification card. T
 
 ## Examples
 
-### In-app notification without a title, recipient, and body
-The following formula will send a basic in-app notification to a recipient with a title and body. It will not have any actions, and all other parameters will be teh default values.
+### In-app notification with a title, recipient, and body
+The following formula will send a basic in-app notification to a recipient with a title and body. It will not have any actions, and all other parameters will be the default values.
 
 ```powerapps-dot
 XSendAppNotification(
@@ -114,6 +114,26 @@ XSendAppNotification(
     LookUp(Users, 'Primary Email'="<User's email address>"), 
     "Welcome to the world of in-app notifications!"
 )
+```
+### In-app notification with two actions
+The following is an example formula that can be used with an automated plugin when a new [Task](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/task) record is created. The formula sends an in-app notification to the owner of the task record, with two actions on the notification card:
+- A **side pane** action opens the new task record in a side pane.
+- A **Teams chat** action initiates a Teams chat with the owner of the account record assigned as the "Regarding" entity record for the new task (Note: assumes an account record is selected in the field for the task).
+
+```powerapps-dot
+XSendAppNotification
+  ("New task assigned",
+	AsType(ThisRecord.Owner, Users),
+	"A new task has been assigned to you to follow up with your customer",
+	[XCreateSidePaneAction
+		("Open account",1123,"entityRecord","account",AsType(ThisRecord.Regarding, Accounts).Account),
+	XCreateTeamsChatAction
+		("Chat with account manager",
+		[AsType(AsType(ThisRecord.Regarding, Accounts).Owner, Users).'Azure AD Object ID'],
+		AsType(ThisRecord.Regarding, Accounts).Account,"account",ThisRecord.Description)
+  ]
+)
+
 ```
 
 
