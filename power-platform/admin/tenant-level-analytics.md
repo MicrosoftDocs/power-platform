@@ -1,13 +1,13 @@
 ---
-title: "Tenant-level analytics (preview)" 
+title: Tenant-level analytics (preview)
 description: View tenant-level analytics in a variety of reports
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/10/2022
-author: tjvass
+ms.date: 05/15/2023
+author: andrewrooneymsft
 ms.subservice: admin
-ms.author: tjvass
-ms.reviewer: jimholtz
+ms.author: andrewrooney
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
