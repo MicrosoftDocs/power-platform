@@ -49,7 +49,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Copy the **Application (client) ID** and paste it in a temporary file. You'll need it in later steps.
 
-## Add the redirect URL
+## Add the redirect URL in Azure
 
 1. Go to **Authentication**, and then select **Add a platform**.
 
@@ -159,7 +159,7 @@ For more information, see [Configure single sign-on for your custom website (pre
 
 1. Select **Save**.
 
-## Add the redirect URL
+## Add the redirect URL in Power Virtual Agents
 
 1. In Power Virtual Agents side navigation pane, under **Settings**, select **Security**. Then select **Authentication**.
 
