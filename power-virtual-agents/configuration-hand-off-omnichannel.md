@@ -72,7 +72,7 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 1. Return to the **Omnichannel** pane in Power Virtual Agents and paste the Application ID in the **Application ID** box.
 
     > [!IMPORTANT]
-    > Omnichannel for Customer Service models bots as "application users." Therefore, the Application ID that you use **must be unique** to your Power Virtual Agents bot. Reusing this Application ID across bots will cause error code `1004` (DuplicateBotAppId) to be shown. 
+    > Omnichannel for Customer Service models bots as "application users." Therefore, the Application ID that you use **must be unique** to your Power Virtual Agents bot. Reusing this Application ID across bots will cause a generic error to be shown. 
 
 1. Select **Add your bot**.
 
