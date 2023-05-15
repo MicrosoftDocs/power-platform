@@ -49,6 +49,24 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Copy the **Application (client) ID** and paste it in a temporary file. You'll need it in later steps.
 
+## Add the redirect URL
+
+1. Go to **Authentication**, and then select **Add a platform**.
+
+    :::image type="content" source="media/configure-web-sso/add-platform.png" alt-text="Screenshot of the App registrations window with Authentication and the Add a platform button highlighted.":::
+
+1. Under **Platform configurations**, select **Add a platform**, and then select **Web**.
+
+    :::image type="content" source="media/configure-web-sso/configure-platform.png" alt-text="Screenshot of the Platform configurations window with the Web application platform highlighted.":::
+
+1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect` and `https://europe.token.botframework.com/.auth/web/redirect`.
+
+1. In the **Implicit grant and hybrid flows** section, turn on both **Access tokens (used for implicit flows)** and **ID tokens (used for implicit and hybrid flows)**.
+
+    :::image type="content" source="media/configure-web-sso/redirect-uri.png" alt-text="Screenshot of the Configure Web window with the redirect URI and implicit grant and hybrid flow tokens highlighted.":::
+
+1. Select **Configure**.
+
 ## Generate a client secret
 
 1. In the Azure portal, go to **Certificates & Secrets**.
