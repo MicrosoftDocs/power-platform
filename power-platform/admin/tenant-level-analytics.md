@@ -40,21 +40,17 @@ A member from one of the following admin roles is required to enable tenant-leve
 
 The admin doesn't need to be a licensed user.  Environment admins will gain access to the tenant-level analytics once the service admin enables the feature using the following steps. 
 
-1. Select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
+1. Select the **Overview** tab in the upper-left page on **Analytics** > **Power Apps** or **Analytics** > **Power Automate**. 
 
-2. Turn on the option to **Enable tenant level analytics**.
+2. Select **Enable** to redirect to the **Analytics** panel. You may also select the **Settings** icon in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
 
-   :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics.":::
+3. **Granting consent for tenant-level analytics:** Once enabled, this feature will aggregate data from environments across all regions in your tenant and copy it into the default environment region for tenant-level reporting. A tenant-level administrator role is required for one-time operation of granting consent for tenant-level analytics. 
 
-3. **Granting consent for tenant-level analytics:** The process of collecting information for tenant-level analytics includes copying service telemetry data from other GEO locations into a central location for reporting.  Customers must explicitly enable this Power Platform operation.  
-
-   Select **Enable** to grant consent for the service to collocate service telemetry data in the location associated with the default environment. 
-
-   :::image type="content" source="media/enable-collocate-service-telemetry-data.png" alt-text="Grant consent for the service to collocate service telemetry data.":::
+  Turn on the option to **Tenant-level analytics** to grant consent for the service to collocate service telemetry data in the location associated with the default environment. 
 
 4. Select **Save** and then close the form. 
 
-5. Select **Environment level analytics**, and then select **Tenant level analytics** to switch viewing modes. 
+5. The **Overview** tab in **Analytics** > **Power Apps** or **Analytics** > **Power Automate** will display a friendly message until your tenant-level reports are generated. Typically, these reports will be shown within 24-48 hours of enabling the feature. 
 
 ## How do I disable tenant-level analytics?
 
@@ -71,11 +67,12 @@ Environment admins are not able to disable tenant-level analytics.
 > - All the tenant-level aggregation of data from different environments (aggregating metrics, user object IDs, and resource names like app and flow names) will be permanently deleted. 
 > - Tenant-level analytics reports will be disabled. 
 
-1. Select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
+1. Select the **Settings** icon in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
 
 2. Turn off the option to **Enable tenant level analytics**.
 
-   :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics.":::
+3. Select **Save** and then close the form.
+
 
 ## Where is this feature available?
 
