@@ -121,17 +121,24 @@ The following is an example formula that can be used with an automated plugin wh
 - A **Teams chat** action initiates a Teams chat with the owner of the account record assigned as the "Regarding" entity record for the new task (Note: assumes an account record is selected in the field for the task).
 
 ```powerapps-dot
-XSendAppNotification
-  ("New task assigned",
+XSendAppNotification(
+	"New task assigned",
 	AsType(ThisRecord.Owner, Users),
 	"A new task has been assigned to you to follow up with your customer",
-	[XCreateSidePaneAction
-		("Open account",1123,"entityRecord","account",AsType(ThisRecord.Regarding, Accounts).Account),
-	XCreateTeamsChatAction
-		("Chat with account manager",
+	[XCreateSidePaneActionForEntity(
+		"View account",
+		1123,
+		"account",
+		AsType(ThisRecord.Regarding, Accounts).Account
+		),
+	XCreateTeamsChatAction(
+		"Chat with account manager",
 		[AsType(AsType(ThisRecord.Regarding, Accounts).Owner, Users).'Azure AD Object ID'],
-		AsType(ThisRecord.Regarding, Accounts).Account,"account",ThisRecord.Description)
-  ]
+		AsType(ThisRecord.Regarding, Accounts).Account, 
+		"account", 
+		ThisRecord.Description
+		)
+	]
 )
 
 ```
