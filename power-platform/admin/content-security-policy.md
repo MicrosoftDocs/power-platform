@@ -68,6 +68,8 @@ For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-
 - `https://teams.microsoft.com/`
 - `https://msteamstabintegration.dynamics.com/`
 
+For Dynamics 365 App for Outlook, you will need to add your Outlook Web App homepage origin to `frame-ancestors`.
+
 ### Important considerations
 Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
 
