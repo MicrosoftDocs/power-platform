@@ -4,7 +4,7 @@ description: "Learn how to submit items to your organization's catalog of templa
 author: samathur
 ms.subservice: developer
 ms.author: samathur
-ms.date: 05/09/2023
+ms.date: 05/15/2023
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
