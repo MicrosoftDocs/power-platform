@@ -141,7 +141,7 @@
             - name: Collect audit log data
               items:
                   - name: Using an HTTP call (recommended)
-                    href: coe/setup-auditlog.md
+                    href: coe/setup-auditlog-http.md
                   - name: Using a custom connector (deprecated)
                     href: coe/setup-auditlog.md
             - name: Set up Power BI reports
