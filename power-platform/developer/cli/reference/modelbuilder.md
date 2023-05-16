@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 5/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -72,6 +72,21 @@ Emit all Global OptionSets, note: if an entity contains a reference to a global 
 #### `--language` `-l`
 
 The language to use for the generated proxy code.  This can be either 'CS' or 'VB'.  The default language is 'CS'.
+
+#### `--logLevel` `-ll`
+
+Log level. Default is Off.
+
+Use one of these values:
+
+- `Off`
+- `Critical`
+- `Error`
+- `Warning`
+- `Information`
+- `Verbose`
+- `ActivityTracing`
+- `All`
 
 #### `--messagenamesfilter` `-mnf`
 

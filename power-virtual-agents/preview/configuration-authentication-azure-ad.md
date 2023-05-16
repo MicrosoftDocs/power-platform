@@ -25,7 +25,7 @@ If you have tenant administration rights, you can [configure API permissions](#c
 
 You'll complete the first several steps in the Azure portal. You'll complete the final two steps in Power Virtual Agents.
 
-## Create an app registration
+## Create an app registration for your bot
 
 1. Sign in to the [Azure portal](https://portal.azure.com), using an admin account in the same tenant as your bot.
 
@@ -37,6 +37,8 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
     It can be helpful later to use the name of your bot. For example, if your bot is called "Contoso sales help," you might name the app registration "ContosoSalesReg".
 
+    :::image type="content" source="media/configure-web-sso/new-app-reg.png" alt-text="Screenshot showing new registration form.":::
+
 1. Under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 
 1. Leave the **Redirect URI** section blank for now. You'll enter that information in the next steps.
@@ -47,7 +49,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Copy the **Application (client) ID** and paste it in a temporary file. You'll need it in later steps.
 
-## Add the redirect URL
+## Add the redirect URL in Azure
 
 1. Go to **Authentication**, and then select **Add a platform**.
 
@@ -67,7 +69,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 ## Generate a client secret
 
-1. Go to **Certificates & secrets**.
+1. In the Azure portal, go to **Certificates & Secrets**.
 
 1. In the **Client secrets** section, select **New client secret**.
 
@@ -125,17 +127,26 @@ You'll complete the first several steps in the Azure portal. You'll complete the
    | Admin consent description  | Enter `Allows the app to sign the user in.`                            |
    | State                      | Select **Enabled**                                                     |
 
+   > [!NOTE]
+   > The scope name `Test.Read` is a placeholder value and should be replaced with a name that makes sense in your environment.
+
+    :::image type="content" source="media/configure-web-sso/add-scope.png" alt-text="Screenshot adding of API scopes":::
+
 1. Select **Add scope**.
 
 ## Configure authentication in Power Virtual Agents
+
+The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the requested access token.
+For more information, see [Configure single sign-on for your custom website (preview)](configure-web-sso.md).
 
 1. In Power Virtual Agents, under **Settings**, select **Security**, and then select **Authentication**.
 
     :::image type="content" source="media/configure-web-sso/pva-security-auth.png" alt-text="Screenshot of the Power Virtual Agents Security page with Settings, Security, and Authentication highlighted.":::
 
-1. Select **Manual (for custom website)**.
+1. Select **Manual (for any channel including Teams)**.
+1. Select **Require users to sign in**.
 
-1. Turn on **Require users to sign in**.
+    :::image type="content" source="media/configure-web-sso/pva-auth.png" alt-text="Screenshot Power Virtual Agents authentication settings page":::
 
 1. Set the following properties.
 
@@ -148,8 +159,30 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Select **Save**.
 
-> [!TIP]
-> The token exchange URL is used to exchange the On-Behalf-Of (OBO) token for the requested access token. For more information, see [Configure single sign-on for your custom website (preview)](configure-web-sso.md).
+## Add the redirect URL from Power Virtual Agents
+
+1. In the Power Virtual Agents side navigation pane, under **Settings**, select **Security**, then **Authentication**.
+
+1. Under **Redirect URL**, select **Copy**.
+
+    :::image type="content" source="media/configure-web-sso/redirect-url.png" alt-text="Screenshot the redirect URL copy button.":::
+
+1. In the Azure portal, go to the app registration for your bot.
+1. Under **Manage**, select **Authentication**, then **Add a platform**.
+
+    :::image type="content" source="media/configure-web-sso/add-platform.png" alt-text="Screenshot showing authentication.":::
+
+1. Under **Platform configurations**, select **Add a platform**, and then select **Web**.
+
+    :::image type="content" source="media/configure-web-sso/configure-platform.png" alt-text="Screenshot showing add a platform.":::
+
+1. Under **Redirect URIs**, enter `https://unitedstates.token.botframework.com/.auth/web/redirect` and `https://europe.token.botframework.com/.auth/web/redirect`.
+
+1. In the **Implicit grant and hybrid flows** section, turn on both **Access tokens (used for implicit flows)** and **ID tokens (used for implicit and hybrid flows)**.
+
+    :::image type="content" source="media/configure-web-sso/redirect-uri.png" alt-text="Screenshot of the Configure Web window with the redirect URI and implicit grant and hybrid flow tokens highlighted.":::
+
+1. Select **Configure**.
 
 ## Test your bot
 
@@ -161,9 +194,9 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
     :::image type="content" source="media/configure-web-sso/test-bot.png" alt-text="Screenshot of testing a Power Virtual Agents bot with Azure AD user authentication.":::
 
-    A new browser tab opens, asking you to sign in.
+   A new browser tab will open asking you to sign in.
 
-1. Sign in, and then copy the validation code that's displayed.
+1. Sign in, then copy the code that is presented.
 
 1. Paste the code in the bot chat to complete the sign-in process.
 
