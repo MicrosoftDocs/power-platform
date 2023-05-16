@@ -107,7 +107,7 @@ The following table describes which resources can be authored by each security r
 |Dataverse tables     |-         |-         |X         |X         |
 |Model-driven app     |X        |-         |X         |X         |
 |Solution framework     |X         |-         |X         |X         |
-|<sup>*</sup>Desktop flow     |-         |-         |X         |X         |
+|<sup>*</sup>Desktop flow     |X         |X         |X         |X         |
 |AI Builder     |-         |-         |X         |X         |
 
 <sup>*</sup>Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
