@@ -70,7 +70,7 @@ The admin doesn't need to be a licensed user.  Environment admins gain access to
 
 1. Select **Save**, and then close the form. 
 
-1. The **Overview** tab displays a message indicating that tenant-level analtyics has been enabled. Typically, these reports are displayed within 24-48 hours of enabling the feature. 
+1. The **Overview** tab displays a message indicating that tenant-level analytics has been enabled. Typically, these reports are displayed within 24-48 hours of enabling the feature. 
 
     :::image type="content" source="media/analytics-overview-tab-feature-enabled.png" alt-text="Tenant-level analytics has been enabled.":::
 
