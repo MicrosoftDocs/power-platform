@@ -68,7 +68,9 @@ The admin doesn't need to be a licensed user.  Environment admins will gain acce
 
 1. Select **Save** and then close the form. 
 
-1. The **Overview** tab in **Analytics** > **Power Apps** or **Analytics** > **Power Automate** will display a friendly message until your tenant-level reports are generated. Typically, these reports will be shown within 24-48 hours of enabling the feature. 
+1. The **Overview** tab displays a message indicating that tenant-level analtyics has been enabled. Typically, these reports will be shown within 24-48 hours of enabling the feature. 
+
+    :::image type="content" source="media/analytics-overview-tab-feature-enabled.png" alt-text="Tenant-level analytics has been enabled.":::
 
 ## How do I disable tenant-level analytics?
 
