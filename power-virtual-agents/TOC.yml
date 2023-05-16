@@ -120,6 +120,8 @@
           href: authoring-variables.md
         - name: Use variables (preview)
           href: preview/authoring-variables.md
+        - name: Sending event activities
+          href: authoring-send-event-activities.md
         - name: Reuse variables across topics
           href: authoring-variables-bot.md
         - name: Reuse variables across topics (preview)
