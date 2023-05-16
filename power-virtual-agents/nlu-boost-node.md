@@ -1,6 +1,6 @@
 ---
 title: Boost conversations (preview)
-description: 
+description: "Use the Search and summarize content to boost conversations."
 keywords: "PVA"
 ms.date: 5/03/2023
 ms.topic: how-to
@@ -70,7 +70,7 @@ As the table notes, some features require user authentication to be configured f
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize node Data sources menu.":::
 
-1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
+1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.
 
 The topic will now Search and summarize content from the information sources provided _to the node_. [What happens when that doesn't provide a cogent answer? Fallback?]
 
@@ -108,13 +108,13 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
 1. On the Search and summarize node, select Properties from the node menu, and select Data source.
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of the Search and summarize node properties.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of the Search and summarize properties.":::
 
 1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources).
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize node Data sources menu.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize node Data sources.":::
 
-1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
+1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.
 
 
 
@@ -126,7 +126,7 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
 1. On the **Web API** tab under **Production**, copy the Custom configuration ID you want to use. This will function like a url would as described [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). NOTE: If you have more than one custom configuration, make sure you are copying the ID you want.
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize node Data sources menu.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize node medu" Data sources.":::
 
 #### [Bot]
 
