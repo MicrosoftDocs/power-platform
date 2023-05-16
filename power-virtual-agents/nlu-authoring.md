@@ -42,7 +42,7 @@ See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for
     >  
     > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
 
-- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
+- You must be using the [preview version of Power Virtual Agents](overview-preview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
@@ -76,7 +76,7 @@ When creating a new topic, you can select **Create with Copilot** and ask the AI
       
 4. Select **Create**.
    
-5. The authoring canvas will generate and open a new topic, with trigger phrases and one or more nodes, based on what you asked for. You can [use Copilot to further refine and update the topic](#use-copilot-to-edit-a-topic), in addition to the [usual ways of editing topics](preview/authoring-create-edit-topics.md).
+5. The authoring canvas will generate and open a new topic, with trigger phrases and one or more nodes, based on what you asked for. You can [use Copilot to further refine and update the topic](#use-copilot-to-edit-a-topic), in addition to the [usual ways of editing topics](authoring-create-edit-topics.md).
 
 
 ## Use Copilot to edit a topic
@@ -142,10 +142,10 @@ During this preview, Copilot can create Message, Question, and Condition nodes w
 There are some additional limitations on how Copilot works with nodes:
 
 - Copilot understands the required properties on Message, Question, and Condition nodes, such as the text to use when prompting the user, or generating appropriate output variables. However, Copilot doesn't understand all of the more advanced properties that can be configured in these nodes, such as the reprompt and interruption settings on a Question node. 
-    - You can still configure these properties manually by editing the generated topic in the authoring canvas, just as you would when [normally creating topics](preview/authoring-create-edit-topics.md).
+    - You can still configure these properties manually by editing the generated topic in the authoring canvas, just as you would when [normally creating topics](authoring-create-edit-topics.md).
 
 - Condition nodes that are created by Copilot, to branch a topic following a multiple choice question, will show errors in the generated conditions. 
-    - You'll need to resolve these errors manually in the [authoring canvas](preview/authoring-create-edit-topics.md).
+    - You'll need to resolve these errors manually in the [authoring canvas](authoring-create-edit-topics.md).
 
 ## AI response generation training, model, and usage notes
 

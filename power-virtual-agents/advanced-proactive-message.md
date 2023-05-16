@@ -7,6 +7,7 @@ ms.date: 04/21/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewer: micchow
 ms.custom: "teams, flow, ceX"
 ms.service: power-virtual-agents
@@ -16,13 +17,6 @@ ms.collection: virtual-agent
 # Send proactive messages Microsoft Teams (Preview)
 
 [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-proactive-message.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-proactive-message-teams.md)
 
 After you've [published your bot](publication-fundamentals-publish-channels.md) and [made the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md), you can notify users ("recipients") in Microsoft Teams with proactive messages. Proactive messages use Power Automate flows to deliver their content, and are useful in many scenarios, including:
 
@@ -385,3 +379,5 @@ You can use the returned status code to define different follow-up behaviors in 
 | 200         | True                | Message is successfully delivered.                                                             |
 | 100         | False               | Message couldn't be delivered because the recipient doesn't have the bot installed.            |
 | 300         | False               | Message couldn't be delivered because the recipient is in an active conversation with the bot. |
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

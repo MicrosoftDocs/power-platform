@@ -2,11 +2,12 @@
 title: "Advanced AI features (contains video)"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 01/20/2023
+ms.date: 03/24/2023
 
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewer: eaglez
 ms.custom: "advanced-authoring, ceX"
 ms.service: power-virtual-agents
@@ -17,18 +18,14 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-ai-features.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-ai-features-teams.md)
-
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
-## AI models in Power Virtual Agents - background
+
+# [Web app](#tab/web)
+
+### AI models in Power Virtual Agents - background
 
 :::image type="content" source="media/advanced-ai-features/nlu-models.png" alt-text="In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.":::
 
@@ -47,7 +44,7 @@ Entities used in corresponding topics will automatically be identified in user i
 > [!NOTE]
 > The AI capabilities that are in preview are only available to bots created with English as the set language.
 
-## Advanced AI features overview
+### Advanced AI features overview
 
 There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.  
 
@@ -55,7 +52,7 @@ There are some specific features that further improve how the AI in Power Virtua
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
 >
 
-## Topic overlap detection
+### Topic overlap detection
 
 Topic overlap detection helps improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
 
@@ -86,7 +83,7 @@ After you save the changes in the **Topic overlap details** pane, the overlappin
 
 :::image type="content" source="media/advanced-ai-features/refresh-overlaps.png" alt-text="Screenshot of the refresh icon, which looks like an arrow bent into a circle.":::
 
-## Topic suggestion from chat transcripts (preview)
+### Topic suggestion from chat transcripts (preview)
 
 This feature analyzes sessions between your bot and users and surfaces suggestions for you based on unmatched user input.
 
@@ -102,7 +99,7 @@ After reviewing the suggested trigger phrases, you can choose to delete the enti
 
 :::image type="content" source="media/advanced-ai-features/topic-editing.png" alt-text="Screenshot of the topic editing window.":::
 
-## Automatic triggering improvements (preview)
+### Automatic triggering improvements (preview)
 
 [Once enabled](#enable-or-disable-ai-capabilities), the automatic triggering feature improves intent triggering by using AI to automatically generate new trigger phrases by analyzing previous bot traffic.
 
@@ -120,7 +117,7 @@ In this example, it also understands the misspelling of "somethign" to mean "som
 
 :::image type="content" source="media/advanced-ai-features/triggering-improvements.png" alt-text="Screenshot of a bot conversation showing the improvements to auto triggering.":::
 
-## Conversation personalization (preview)
+### Conversation personalization (preview)
 
 [When this feature is enabled](#enable-or-disable-ai-capabilities), the bot reuses information from Microsoft Graph and Azure Active Directory (Azure AD) throughout the conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
 
@@ -153,7 +150,8 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 | <ul></br><li>`Can you please tell me what your state of residence is?`</li></br><li>`I can help you out with that. What's your state of residence so I can go ahead?`</li></br></ul>                                                                                                            | State/province of residence                                         |
 | <ul></br><li>`Wondering if you would please provide your zip code?`</li></br><li>`I can help you out with that. What's your zip code so I can go ahead?`</li></br></ul>                                                                                                                         | Zip code                                                            |
 
-## Enable or disable AI capabilities
+
+### Enable or disable AI capabilities
 
 1. Open a bot you want to enable or disable the features for.
 1. Expand the **Settings** tab, then select **AI capabilities**.
@@ -161,5 +159,36 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 1. Select **Save** at the top of the tab.
 
 :::image type="content" source="media/advanced-ai-features/enable-features.png" alt-text="Screenshot showing the new AI capabilities section under the Manage tab.":::
+
+
+# [Teams](#tab/teams)
+
+You can use advanced artificial intelligence features in Power Virtual Agents chatbots in Teams.
+
+Power Virtual Agents is built on a number of advanced artificial intelligence (AI) features that make your chatbots more efficient, easier to use, and quicker.
+
+All of the features available in the Power Virtual Agents web app are also available in the Microsoft Teams app (for English bots only).
+
+You can read more about the AI behind Power Virtual Agents in the [Enable advanced AI features in Power Virtual Agents]advanced-ai-features.md) topic. The following video provides an overview of each of the features:  
+
+>  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
+>  
+
+### Enable or disable AI capabilities
+
+To use these advanced AI capabilities in Power Virtual Agents:
+
+1. Open a bot you want to enable or disable the features for.
+
+1. In the navigation menu, under **Settings**, select **AI capabilities**.
+
+1. For each feature, select the checkbox to turn the feature on or off.
+
+1. Select **Save** at the top of the tab.
+
+:::image type="content" source="media/advanced-ai-features/enable-features-teams.png" alt-text="Screenshot showing the AI capabilities section under the Manage tab in Teams.":::
+
+---
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

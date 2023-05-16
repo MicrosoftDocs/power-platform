@@ -2,11 +2,12 @@
 title: "Get access to Power Virtual Agents"
 description: "Compare the capabilities you can access in Power Virtual Agents depending on whether you have a Microsoft 365 subscription or standalone Power Virtual Agents subscription."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 9/9/2021
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: "licensing, admin, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -34,9 +35,9 @@ Also see the [Quotas, limits, and configuration values](requirements-quotas.md) 
 
 | Capability                                              | Select Microsoft 365 subscriptions                                                                                                | Power Virtual Agents subscription                                                                                     |
 | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Deploy bot to channels                                  | [Microsoft Teams](teams/publication-add-bot-to-microsoft-teams-teams.md)                                                          | [Any channel supported by Power Virtual Agents](publication-fundamentals-publish-channels.md)                         |
-| Power Automate connectors                               | [Standard connectors available for flows triggered from Power Virtual Agents](teams/advanced-flow-teams.md)                       | [Premium connectors available for flows triggered from Power Virtual Agents](advanced-flow.md)                        |
-| Web security                                            | [Secure access enabled by default, no ability to generate secrets to enable secure access](teams/configure-web-security-teams.md) | [Ability to generate secrets and turn on or off secure access as wanted by the bot author](configure-web-security.md) |
+| Deploy bot to channels                                  | [Microsoft Teams](publication-add-bot-to-microsoft-teams.md)                                                          | [Any channel supported by Power Virtual Agents](publication-fundamentals-publish-channels.md)                         |
+| Power Automate connectors                               | [Standard connectors available for flows triggered from Power Virtual Agents](advanced-flow.md)                       | [Premium connectors available for flows triggered from Power Virtual Agents](advanced-flow.md)                        |
+| Web security                                            | [Secure access enabled by default, no ability to generate secrets to enable secure access](configure-web-security.md) | [Ability to generate secrets and turn on or off secure access as wanted by the bot author](configure-web-security.md) |
 | Use Microsoft Bot Framework skills                      | Not available                                                                                                                     | [Ability to extend Power Virtual Agents bots with Microsoft Bot Framework skills](advanced-use-skills.md)             |
 | Use a Power Virtual Agents bot as a Bot Framework skill | Not available                                                                                                                     | [Use a Power Virtual Agents bot as a skill](advanced-use-pva-as-a-skill.md)                                 |
 | Integrate Microsoft Bot Framework dialogs               | Not available                                                                                                                     | [Develop custom dialogs with Bot Framework Composer](advanced-bot-framework-composer.md)                              |

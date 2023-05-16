@@ -1,11 +1,12 @@
 ---
 title: "Responding to GDPR Data Subject Export Requests"
 description: "Learn how to respond to GDPR Data Subject Export Requests for Power Virtual Agents."
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -13,11 +14,7 @@ ms.collection: virtual-agent
 
 # Export data to respond to requests for copies of personal data in Power Virtual Agents
 
-Power Virtual Agents offers the following capabilities to find or export personal data for a specific user:
-
-1. [Export customer data: Bot content (as tenant admin)](#bot-content-as-tenant-admin)
-1. [Export customer data: Bot sessions (as bot author)](#bot-sessions-as-bot-author)
-1. [Export system-generated logs (as tenant admin)](#export-system-generated-logs-as-tenant-admin)
+This topic discusses the Power Virtual Agents capabilities to find or export personal data for a specific user.
 
 ## Prerequisites
 
@@ -51,7 +48,7 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
 ### Bot sessions (as bot author)
 
-You can download session data for the last 30 days from the [sessions analytics page](analytics-sessions.md#download-session-transcript-information-from-the-power-virtual-agents-portal) in Power Virtual Agents.
+You can download session data for the last 30 days from the [sessions analytics page](analytics-sessions.md) in Power Virtual Agents.
 
 You can also [export data from the ConversationTranscripts table](analytics-sessions.md#export-conversation-transcripts).
 

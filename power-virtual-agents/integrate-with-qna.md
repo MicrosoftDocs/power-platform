@@ -2,11 +2,12 @@
 title: "Integrate with QnA Maker"
 description: "Use an existing QnA Maker knowledge base as content in your fallback topic."
 keywords: "qna maker, fallback, knowledge base, question, answer, faq"
-ms.date: 07/05/2022
+ms.date: 03/24/2023
 
 ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
+author: iaanw
+ms.author: iawilt
+manager: leeclontz
 ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---

@@ -2,11 +2,12 @@
 title: "Overview"
 description: "Power Virtual Agents lets you create chatbots, both in a dedicated online web app and as a Microsoft Teams app."
 keywords: "PVA, portal, online, teams"
-ms.date: 06/22/2022
+ms.date: 03/24/2023
 
 ms.topic: overview
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: fundamentals, ceX, intro-internal
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -33,7 +34,7 @@ Power Virtual Agents is available as both a standalone web app, and as a discret
 | Power Virtual Agents version                 | Use cases                                                                                                                                                                                                                                                                                                                                                                          | More information                                                                                                                             |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Web app at https://web.powerva.microsoft.com | <ul><li>You're an IT admin and want to create bots for your customers to engage with</li><li>You've used chatbot services in the past, and want to trial or test Power Virtual Agents</li><li>You're familiar with advanced chatbot concepts, such as entities and variables, and want to create complex chatbots</li></ul>                                                        | <div class="nextstepaction">[Get started with Power Virtual Agents web app](fundamentals-what-is-power-virtual-agents-portal.md)</div>       |
-| Microsoft Teams app                          | <ul><li>You're an employee or member of an organization or team and want to create chatbots to answer common questions posed by other employees or teammates</li><li>You want to use advanced concepts, such as entities and variables, but have the chatbot available only internally</li><li>You want to create and distribute a chatbot in the shortest time possible</li></ul> | <div class="nextstepaction">[Get started with Power Virtual Agents in Teams](teams/fundamentals-what-is-power-virtual-agents-teams.md)</div> |
+| Microsoft Teams app                          | <ul><li>You're an employee or member of an organization or team and want to create chatbots to answer common questions posed by other employees or teammates</li><li>You want to use advanced concepts, such as entities and variables, but have the chatbot available only internally</li><li>You want to create and distribute a chatbot in the shortest time possible</li></ul> | <div class="nextstepaction">[Get started with Power Virtual Agents in Teams](fundamentals-what-is-power-virtual-agents.md)</div> |
 
 ## Important information
 
@@ -41,7 +42,7 @@ Power Virtual Agents is available as both a standalone web app, and as a discret
 > <!-- CELA required disclosure, do not modify -->
 > Microsoft Power Virtual Agents (1) is not intended or made available as a medical device for the diagnosis of disease or other conditions, or in the cure, mitigation, treatment or prevention of disease, or otherwise to be used as a component of any clinical offering or product, and no license or right is granted to use Microsoft Power Virtual Agents for such purposes, (2) is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used as a substitute for, or to replace, professional medical advice, diagnosis, treatment, or judgment, and (3) should not be used for emergencies and does not support emergency calls. Any chatbot you create using Microsoft Power Virtual Agents is your own product or service, separate and apart from Microsoft Power Virtual Agents. You are solely responsible for the design, development, and implementation of your chatbot (including incorporation of it into any product or service intended for medical or clinical use) and for explicitly providing end users with appropriate warnings and disclaimers pertaining to use of your chatbot. You are solely responsible for any personal injury or death that may occur as a result of your chatbot or your use of Microsoft Power Virtual Agents in connection with your chatbot, including (without limitation) any such injuries to end users.
 
-## Helpful links
+## Related topics
 
 - [Use GPT-based capabilities to expand your bot's reach](nlu-gpt-overview.md)
 - [Create your first bot](authoring-first-bot.md)

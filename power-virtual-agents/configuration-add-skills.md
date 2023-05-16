@@ -2,11 +2,12 @@
 title: "Configure Bot Framework skills"
 description: "Skills extend your bot's conversational capabilities by automating a series of actions within a topic. Skills enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
-ms.date: 03/07/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: "azure, extend, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -14,14 +15,10 @@ ms.collection: virtual-agent
 
 # Configure a skill for use in Power Virtual Agents
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](configuration-add-skills.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/configuration-add-skills-teams.md)
-
 Power Virtual Agents enables you to extend your bot using [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true). If you have already built and deployed bots in your organization (using Bot Framework SDK and pro-code tools) for specific scenarios, you can convert those bots into a skill and register that skill in a Power Virtual Agents bot.
+
+>[!NOTE]
+> You can add a skill from within the Power Virtual Agents app in Microsoft Teams, but you need a [Power Virtual Agents standalone subscription](requirements-licensing-subscriptions.md).
 
 This article is intended for system administrators or IT professionals who are familiar with [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true). After a skill has been registered with a Power Virtual Agents bot, authors can seamlessly [trigger skill actions in conversation](advanced-use-skills.md).
 
@@ -58,7 +55,7 @@ You can get your bot's ID from the **Add skill** window.
 
 1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), expand the **Settings** tab on the side and select **Skills**.
 
-   :::image type="content" source="media/configuration-add-skills/skills-menu.png" alt-text="Select Manage, then Skills.":::
+   :::image type="content" source="media/configuration-add-skills/PVA2-skills-menu.png" alt-text="Select Settings, then Skills.":::
 
 1. At the top of the skills page, select **Add skill**.
 

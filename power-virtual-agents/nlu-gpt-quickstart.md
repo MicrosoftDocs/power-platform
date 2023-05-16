@@ -41,7 +41,7 @@ This quickstart guide introduces you to the minimal steps necessary to get start
     >  
     > Supported browsers include Microsoft Edge, Chrome, and Firefox.
 
-- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
+- You must be using the [preview version of Power Virtual Agents](overview-preview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
@@ -56,7 +56,7 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 
 ## How bot conversations work
 
-Power Virtual Agent bots use a [customized NLU model and AI capabilities](advanced-ai-features.md) to understand what a user types and to respond with the most appropriate bot topic. A bot topic is a sequence of nodes that logically flow from one step to the other. See [Create and edit topics (preview)](preview/authoring-create-edit-topics.md) for details on how bot topics work.
+Power Virtual Agent bots use a [customized NLU model and AI capabilities](advanced-ai-features.md) to understand what a user types and respond with the most appropriate bot topic. A bot topic is a sequence of nodes that logically flow from one step to the other. See [Create and edit topics (preview)](authoring-create-edit-topics.md) for details on how bot topics work.
 
 For example, you might create a bot for your customers to ask common questions about your business, thus reducing your support overhead by deflecting support calls. In the bot, you could create a topic that includes details about your store opening hours and call it **Store hours**. 
 
