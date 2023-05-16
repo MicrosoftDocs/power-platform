@@ -4,17 +4,21 @@ description: Data loss prevention activity logging
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 05/09/2023
 ms.subservice: admin
 author: tjvass
 ms.author: tjvass
-ms.reviewer: jimholtz 
+ms.reviewer: sericks 
 search.audienceType: 
   - admin
 ---
+
 # Data loss prevention activity logging
 
-Data loss protection (DLP) policy activities are tracked from the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide). 
+> [!NOTE]
+> Activity logging for data loss protection policies is not currently available in sovereign clouds.
+
+Data loss protection (DLP) policy activities are tracked from the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide&preserve-view=true). 
 
 To log DLP activities, follow these steps:
 
@@ -43,7 +47,7 @@ The following are the user actions you can audit:
  
 ## Base schema for DLP audit events 
 
-Schemas define which fields are sent to the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide). Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to DLP policies. In the following table, **Name** and **Additional Info** are the DLP policy–specific columns. 
+Schemas define which fields are sent to the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide&preserve-view=true). Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to DLP policies. In the following table, **Name** and **Additional Info** are the DLP policy–specific columns. 
 
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
