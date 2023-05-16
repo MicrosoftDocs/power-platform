@@ -1,5 +1,5 @@
 ---
-title: "Submit catalog items (Preview)"
+title: "View, Install and Submit catalog items (Preview)"
 description: "Learn how to submit items to your organization's catalog of templates and components."
 author: samathur
 ms.subservice: developer
@@ -14,7 +14,7 @@ contributors:
 ---
 # Submit catalog items (Preview)
 
-Application makers and developers can submit solutions and templates to the catalog so that they can help their colleagues solve business problems.
+Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 
 ## Get started
 
@@ -35,7 +35,7 @@ Contact your administrator to grant access to the catalog. You need the **Catalo
 
 After you have installed the PAC CLI, you must create an authentication profile using the [pac auth create](cli/reference/auth.md#pac-auth-create) command. Using the authentication profile for the environment where the catalog is installed, you can perform the following tasks using PAC CLI:
 
-1. [View available catalogs in your tenant](#view-available-catalogs-in-your-tenant)
+1. [View available catalogs in your tenant](#view-available-catalogs-in-your-tenant). Requires an admin auth profile. 
 1. [View items in the catalog](#view-items-in-the-catalog)
 1. [Install items from the catalog](#install-items-from-the-catalog)
 1. [Submit items to the catalog](#submit-items-to-the-catalog)
@@ -59,7 +59,13 @@ pac admin list --application-id 83a35943-cb41-4266-b7d2-81d60f383695
 Use the [pac catalog list](cli/reference/catalog.md#pac-catalog-list) command to view items in the catalog.
 
 ```powershell
-pac catalog list //TODO
+pac catalog list 
+Connected to... TestCatalog
+Connected as user@domain
+Listing all published catalog items from the current Dataverse Organization...
+Catalog Item Name                   Publisher Name            Catalog Item Id                      Revision Id                          Version Status
+Contoso Conference Custom Connector Catalog Conferences Team  ContosoConferencesCustomConnector    4e882dd6-74f3-ed11-8849-000d3a0a286b 1.0.0.1 Published
+Contoso Themed Components           ContosoPublisher          ContosoThemedComponents              efbc469d-f1b2-ed11-83fd-000d3a0a2d9d 1.0.0.1 Published
 ```
 
 ## Install items from the catalog
@@ -67,7 +73,11 @@ pac catalog list //TODO
 Use the [pac catalog install](cli/reference/catalog.md#pac-catalog-install) command to install items from the catalog.
 
 ```powershell
-pac catalog install //TODO
+pac catalog install -tu https://org03b1eb31.crm.dynamics.com/ -cid ContosoConferencesCustomConnector
+Connected to... TestCatalog
+Connected as user@domain
+ContosoConferencesCustomConnector
+Tracking id for this installation is 202012ec-80f3-ed11-8849-000d3a0a2d9d
 ```
 
 ## Submit items to the catalog
@@ -81,34 +91,47 @@ Use the [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-cre
 
 After your submission metadata JSON document is ready, use the [pac catalog submit](cli/reference/catalog.md#pac-catalog-submit) command to submit it.
 
+```powershell
+pac catalog submit -p "BuildDemoSubmission.json" -sz "ContosoConference_1_0_0_1_managed.zip"
+Creating package for catalog submit request...
+Connected to... TestCatalog
+Connected as user@domain
+Tracking id for this submission is 0e6b119d-80f3-ed11-8849-000d3a0a2d9d
+```
+
 ## Check status of catalog submissions
 
 Use the [pac catalog status](cli/reference/catalog.md#pac-catalog-status) command to check the status of catalog submissions.
 
 ```powershell
-pac catalog status //TODO
+pac catalog status --tracking-id 0e6b119d-80f3-ed11-8849-000d3a0a2d9d --type submit
+Connected to... TestCatalog
+Connected as user@domain
+Status of the Submit request: Submitted
 ```
-
 
 ## Submission Attributes
 
 The [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command generates the following `submission.json` file:
 
 <!-- Why have a command? Is any unique data included here?
-Why not just copy this from the documentation? -->
+Why not just copy this from the documentation?
+
+The CLI has a pattern to enable initialization of settings files. This was done to help users quickly create a submissions file.
+ -->
 
 ```json
 {
   "modelVersion": "1.0.0.0",
-  "sourcePortal": 526430000,
+  "sourcePortal": 526430005,
   "operation": "CreateOrUpdate",
   "businessJustification": "Business Justification",
   "publisherDetails": {
-    "publisherId": "f3f22fca-5bd3-43f1-bd62-9069a3918631",
+    "publisherId": "MyPublisherId",
     "publisherDisplayName": "Publisher Display Name"
   },
   "catalogItemDefinition": {
-    "id": "a17cf4d2-6363-4c7c-bab5-a21b0a771e21",
+    "id": "MyItemId",
     "displayName": "Catalog Item Display Name",
     "description": "Catalog Item Description",
     "offer": {
@@ -126,10 +149,41 @@ Why not just copy this from the documentation? -->
         "email": "user@test.com",
         "phoneNumber": "999-111-1234"
       }
-    },
-    "packageFile": {
-      "name": "FileName.zip",
-      "fileSasLink": "File SAS Link HERE"
+    }
+  }
+}
+```
+Here's an example submission created from the .json above.
+
+```json 
+{
+  "modelVersion": "1.0.0.0",
+  "operation": "CreateOrUpdate",
+  "sourcePortal": 526430005,
+  "businessJustification": "Power Platform custom connector for Conference API",
+  "publisherDetails": {
+    "publisherId": "ContosoConferencesTeam",
+    "publisherDisplayName": "Catalog Conferences Team"
+  },
+  "catalogItemDefinition": {
+    "id": "ContosoConferencesCustomConnector",
+    "displayName": "Contoso Conference Custom Connector",
+    "description": "Demo Custom connector to query Conference Speakers & Sessions",
+    "offer": {
+      "type": "Component_Collection",
+      "deploymentType": "Normal",
+      "engineeringName": {
+        "firstName": "Albert",
+        "lastName": "Einstein",
+        "email": "albert@einstien.com",
+        "phoneNumber": "999-111-1234"
+      },
+      "supportName": {
+        "firstName": "Micky",
+        "lastName": "Mouse",
+        "email": "micky@mouse.com",
+        "phoneNumber": "999-111-1234"
+      }
     }
   }
 }
@@ -141,12 +195,13 @@ You need to edit this file to submit an item. See the following instructions abo
 
 The following items are required for all submissions:
 
-- [Submission ID](#submission-id)
+<!--- [Submission ID](#submission-id) Not needed-->
 - [Publisher](#publisher)
 - [Catalog Item](#catalog-item)
 - [Engineering contact](#engineering-contact)
 - [Support contact](#support-contact)
 
+<!-- not needed
 #### Submission ID
 
 Unique identifier for a submission
@@ -156,6 +211,7 @@ You can pass a unique string value
 ```json
 //TODO example
 ```
+-->
 
 #### Publisher
 
@@ -184,6 +240,28 @@ groupOID:guid (required)
 groupType: Select from "Security" or "Modern"
 ```
 
+Here's an example of a publisher record
+
+```json
+"publisherDetails": {
+    "publisherId": "MyPublisherId",
+    "publisherDisplayName": "Contosso Publishing",
+    "publisherUpnList": [
+      {
+        "action": "Add",
+        "upn": "john.doe@contosso.com"
+      }
+    ],
+	"publisherAADGroupOIDS": [
+      {
+        "action": "Add",
+        "groupName": "PowerCatalogSubmitters",
+        "groupOID": "2ded6de9-ab44-4478-9bd4-e609947daa2e",
+        "groupType": "Security"
+      }
+	  ]
+  },
+  ```
 
 #### Catalog Item
 
@@ -199,6 +277,75 @@ offer: businessCategories
 type: "Application" or "Component_Collection"
 deploymentType: "Normal" or "Template"
 ```
+
+Here is an example of a catalog item including its engineering and support contacts which are mandatory
+```json
+  "catalogItemDefinition": {
+    "id": "ContosoTravelsApp",
+    "displayName": "Contosso Travel Expense App",
+    "description": "Submit expenses on the go!",
+    "offer": {
+      "businessCategories": [
+        526430000,
+        526430001,
+        526430002
+      ],
+      "type": "Component_Collection",
+      "deploymentType": "Normal",
+      "componentsUsedInApplication": [
+        1,
+        3,
+        4
+      ],
+      "small48x48Image": {
+        "name": "Small48Image",
+        "fileSasLink": "http_pub_available_link",
+        "logicalName": "mspcat_files",
+        "recId": "54ab9862-9e54-41e6-8a39-0bbaa68ea7a0",
+        "attributebName": "filAttrib"
+      },
+      "large216x216Image": {
+        "name": "Large216image2",
+        "fileSasLink": "http_pub_available_link",
+        "logicalName": "mspcat_files",
+        "recId": "54ab9862-9e54-41e6-8a39-0bbaa68ea7a0",
+        "attributebName": "filAttrib"
+      },
+      "documents": [
+        {
+          "name": "ImaNewfile",
+          "fileSasLink": "http_pub_available_link",
+          "logicalName": "mspcat_Files",
+          "recId": "b0d034f5-0d61-42d9-8089-0f0e1d1a944e",
+          "attributebName": "TESTAttrib"
+        },
+        {
+          "name": "ImaNewfile2",
+          "fileSasLink": "http_pub_available_link",
+          "logicalName": "mspcat_Files",
+          "recId": "b0d034f5-0d61-42d9-8089-0f0e1d1a944e",
+          "attributebName": "TESTAttrib"
+        }
+      ],
+      "helpLink": "https://www.microsoft.com",
+      "privacyPolicyLink": "https://www.microsoft.com",
+      "legalTerms": "https://www.microsoft.com",
+      "engineeringName": {
+        "firstName": "Eng",
+        "lastName": "User",
+        "email": "test@test.com",
+        "phoneNumber": "999-111-1234"
+      },
+      "supportName": {
+        "firstName": "Support",
+        "lastName": "User",
+        "email": "test1@test.com",
+        "phoneNumber": "999-111-1234"
+      }
+    }
+  }
+```
+
 
 #### Engineering contact
 
@@ -291,11 +438,16 @@ AttributeName: string, for future use, ignored
 
 Source of submission
 
-List of values. Example PACCLI = 526430005
+List of values.
 
-```json
-//TODO example
-```
+When submitting from the PAC CLI please use 526430005 as the Source Portal value. For other sources, use 526430000.
+
+The following values are reserved for future use 
+PACBuildTask: 526430006 <br>
+PowerAutomateMakerPortal: 526430001 <br>
+PowerPlatformMakerPortal: 526430002 <br>
+PowerVirtualAgentsMakerPortal: 526430003 <br>
+PowerPlatformAdminAPI: 526430004 <br>
 
 #### Operation
 
@@ -309,7 +461,7 @@ Possible values:
 `CreateOrUpdate` for new submissions
 
 ```json
-//TODO example
+  "operation": "CreateOrUpdate",
 ```
 
 #### Business Justification
@@ -321,7 +473,7 @@ User can say their submission helps with Cost reduction or productivity, for exa
 String can contain HTML, RTF
 
 ```json
-//TODO example
+"businessJustification": "Submit your travel expenses!"
 ```
 
 #### large216x216Image
@@ -338,6 +490,16 @@ RecId: guid, for future use, ignored
 AttributeName: string, for future use, ignored
 ```
 
+```json
+      "large216x216Image": {
+        "name": "Large216image2",
+        "fileSasLink": "https://mywebsite/largeicon.jpeg",
+        "logicalName": "mspcat_files",
+        "recId": "54ab9862-9e54-41e6-8a39-0bbaa68ea7a0",
+        "attributebName": "filAttrib"
+      },
+```
+
 #### Privacy policy
 
 URL link to pertinent policies
@@ -345,7 +507,7 @@ URL link to pertinent policies
 Policies regarding careful usage of the component/ application being submitted
 
 ```json
-//TODO example
+"privacyPolicyLink": "https://www.mycompany.com/privacy.html"
 ```
 
 #### Legal terms
@@ -355,7 +517,7 @@ URL link to pertinent terms and conditions
 Any legal terms/ internal guidance for evaluation of the consumer of the catalog item
 
 ```json
-//TODO example
+"legalTerms": "https://www.mycompany.com/legalterms.html"
 ```
 
 #### Package
@@ -368,5 +530,3 @@ packageFile is a public accessible link
 name: String
 fileSasLink: fully qualified publicly accessible url
 ```
-
-
