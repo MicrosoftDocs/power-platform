@@ -41,3 +41,10 @@ Common types are:
 - **Handoff** – This allows a user to send a Handoff activity with explicit control over the value. This is used for some external channels, such as AudioCodes.
 
 :::image type="content" source="media/authoring-variables/authoring-send-activities-invoke-activity.png" alt-text="Screenshot showing the Invoke activity node with the Type dropdown list.":::
+
+## Related links
+
+- [Reuse variables across topics](authoring-variables-bot.md)
+- [Customize the look and feel of the bot](customize-default-canvas.md)
+
+[!INCLUDE[footer-include](includes/footer-banner.md)
