@@ -16,7 +16,7 @@ search.audienceType:
 
 Power Platform resources periodically emit telemetry data for various operations and user activities across environments and extensions. Tenant-level analytics allows admins to view and compare insights derived from the Platform telemetry data across environments they manage. Tenant admins can view reports containing analytics that apply to all environments within the tenant. 
 
-The Tenant-level analytics experience varies based on which version you are using. 
+The Tenant-level analytics experience varies based on which version you're using. 
 
 # [New experience (preview)](#tab/webapi)
 
@@ -82,7 +82,7 @@ Administrators with the following roles and a [license](pricing-billing-skus.md)
 - Microsoft 365 Global admin
 - Delegated admin 
 
-Environment admins are not able to disable tenant-level analytics.
+Environment admins aren't able to disable tenant-level analytics.
 
 > [!IMPORTANT]
 > When you disable the tenant-level analytics preview feature, note the following:
@@ -148,7 +148,7 @@ Administrators with the following roles and a [license](pricing-billing-skus.md)
 - Microsoft 365 Global admin
 - Delegated admin 
 
-Environment admins are not able to disable tenant-level analytics.
+Environment admins aren't able to disable tenant-level analytics.
 
 > [!IMPORTANT]
 > When you disable the tenant-level analytics preview feature, note the following:
