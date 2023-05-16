@@ -46,5 +46,3 @@ Common types are:
 
 - [Reuse variables across topics](authoring-variables-bot.md)
 - [Customize the look and feel of the bot](customize-default-canvas.md)
-
-[!INCLUDE[footer-include](includes/footer-banner.md)
