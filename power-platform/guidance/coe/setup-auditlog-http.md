@@ -39,8 +39,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Go to **Azure Active Directory** > **App registrations**.
-
-   ![Azure AD app registration.](media/coe33.png "Azure AD app registration")
+   :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the Azure AD app registration.":::
 
 1. Select **+ New Registration**.
 
@@ -48,13 +47,13 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 1. Select **API Permissions** > **+ Add a permission**.
 
-   ![API Permissions - Add a permission.](media/coe34.png "Add a permission")
+   :::image type="content" source="media/coe34.png" alt-text="Add API permissions":::
 
 1. Select **Office 365 Management API**, and configure permissions as follows:
 
    1. Select **Application permissions**, and then select **ActivityFeed.Read**.
 
-      ![Application permissions.](media/coe36new.png "Application permissions")
+      :::image type="content" source="media/coe36new.png" alt-text="Application permissions":::
 
    1. Select **Add permissions**.
 
@@ -66,7 +65,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 1. Select **+ New client secret**.
 
-   ![New client secret.](media/coe39.png "New client secret")
+   :::image type="content" source="media/coe39.png" alt-text="New client secret":::
 
 1. Add a description and expiration (in line with your organization's policies), and then select **Add**.
 
@@ -95,10 +94,10 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 
 1. Go to [make.powerapps.com](https://make.powerapps.com) > Solutions.
 1. Open the **Center of Excellence – Core Components** solution.
-1. Turn the **Admin | Audit Logs | Office 365 Management API Subscription** flow on and run it, enter *start* as the operation to run.
-    ![Start the subscription.](media/coe-startsubscription.png "Start the subscription")
+1. Turn the **Admin \| Audit Logs \| Office 365 Management API Subscription** flow on and run it, enter *start* as the operation to run.
+    :::image type="content" source="media/coe-startsubscription.png" alt-text="Start the subscription":::
 1. Open the flow run and verify the action to start the subscription has passed.
-    ![Start the subscription passed.](media/coe-startsubscription-passed.png "Start the subscription passed")
+    :::image type="content" source="media/coe-startsubscription-passed.png alt-text="Start the subscription passed":::
 
 > [!IMPORTANT]
 > If you have previously enabled the subscription, you will see a **(400) The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
@@ -124,12 +123,12 @@ You can load historic data into the CoE Starter Kit tables manually using one of
 
 1. Browse to the [Audit Log search](https://compliance.microsoft.com/auditlogsearch).
 1. Search for the Launched app activity in the date range available to you.
-![Get old audit logs.](media/coe-oldauditlogs-1.png "Get old audit logs")
+:::image type="content" source="media/coe-oldauditlogs-1.png" alt-text="Get old audit logs":::
 1. Once the search has run, select export to download the results.
-![Download old audit logs.](media/coe-oldauditlogs-2.png "Download old audit logs")
+:::image type="content" source="media/coe-oldauditlogs-2.png" alt-text="Download old audit logs":::
 1. Browse to the following flow in the Core solution: **Admin | Audit Logs | Load events from exported Audit Log CSV file**
 1. Turn the flow on and run it, selecting the downloaded file for the Audit Log CSV parameter.
-![Load old audit logs via flow.](media/coe-oldauditlogs-3.png "Load old audit logs via flow")
+:::image type="content" source="media/coe-oldauditlogs-3.png  alt-text="Load old audit logs via flow":::
 1. When complete, these logs will be included in your telemetry and last launched for the apps will be updated if more recent launches found.
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
