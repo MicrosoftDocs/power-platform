@@ -1,6 +1,6 @@
 ---
 title: "Collect audit logs using an HTTP action | MicrosoftDocs"
-description: "The Audit Log Sync flow connects to the Audit Log to gather telemetry data (unique users, launches) for apps in Microsoft 365."
+description: "The Audit Log Sync flow connects to the Audit Log using an HTTP action in a cloud flow to gather telemetry data (unique users, launches) for apps in Microsoft 365."
 author: manuelap-msft
 
 ms.component: pa-admin
@@ -97,7 +97,7 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 1. Turn the **Admin \| Audit Logs \| Office 365 Management API Subscription** flow on and run it, enter *start* as the operation to run.
     :::image type="content" source="media/coe-startsubscription.png" alt-text="Start the subscription":::
 1. Open the flow run and verify the action to start the subscription has passed.
-    :::image type="content" source="media/coe-startsubscription-passed.png alt-text="Start the subscription passed":::
+    :::image type="content" source="media/coe-startsubscription-passed.png" alt-text="Start the subscription passed":::
 
 > [!IMPORTANT]
 > If you have previously enabled the subscription, you will see a **(400) The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
@@ -128,7 +128,7 @@ You can load historic data into the CoE Starter Kit tables manually using one of
 :::image type="content" source="media/coe-oldauditlogs-2.png" alt-text="Download old audit logs":::
 1. Browse to the following flow in the Core solution: **Admin | Audit Logs | Load events from exported Audit Log CSV file**
 1. Turn the flow on and run it, selecting the downloaded file for the Audit Log CSV parameter.
-:::image type="content" source="media/coe-oldauditlogs-3.png  alt-text="Load old audit logs via flow":::
+:::image type="content" source="media/coe-oldauditlogs-3.png" alt-text="Load old audit logs via flow":::
 1. When complete, these logs will be included in your telemetry and last launched for the apps will be updated if more recent launches found.
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?

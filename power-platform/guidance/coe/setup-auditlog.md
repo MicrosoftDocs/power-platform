@@ -1,6 +1,6 @@
 ---
 title: "Collect audit logs using a custom connector | MicrosoftDocs"
-description: "The Audit Log Sync flow connects to the Audit Log to gather telemetry data (unique users, launches) for apps in Microsoft 365."
+description: "The Audit Log Sync flow connects to the Audit Log using a custom connector gather telemetry data (unique users, launches) for apps in Microsoft 365."
 author: manuelap-msft
 
 ms.component: pa-admin
