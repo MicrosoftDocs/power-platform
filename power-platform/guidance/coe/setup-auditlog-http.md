@@ -93,7 +93,7 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 
 ### Start a subscription to audit log content
 
-1. Go to [make.powerapps.com](https://make.powerapps.com).
+1. Go to [make.powerapps.com](https://make.powerapps.com) > Solutions.
 1. Open the **Center of Excellence – Core Components** solution.
 1. Turn the **Admin | Audit Logs | Office 365 Management API Subscription** flow on and run it, enter *start* as the operation to run.
     ![Start the subscription.](media/coe-startsubscription.png "Start the subscription")
@@ -112,7 +112,7 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 
 ### Turn on Flows
 
-1. Go to [make.powerapps.com](https://make.powerapps.com).
+1. Go to [make.powerapps.com](https://make.powerapps.com) > Solutions.
 1. Open the **Center of Excellence – Core Components** solution.
 1. Turn the **Admin | Audit Logs | Sync Audit Logs (V2)** flow on. This flow will run on an hourly schedule, and collect audit log events into the Audit Log table.
 
