@@ -32,7 +32,7 @@ Next, select either [local install](#local-install) or [Docker install](#docker-
 
 ### Prerequisites
 
-To run the CoE CLI application, you'll need to install the components below.
+To run the CoE CLI application, first install these components:
 > [!NOTE]
 > The CoE CLI has been tested with Azure CLI version up to 2.38.0
 

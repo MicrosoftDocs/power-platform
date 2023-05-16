@@ -14,7 +14,7 @@ search.audienceType:
 
 # Non Administrator Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
 
-To install the CoE CLI as a non-administrator you leverage use the following components:
+To install the CoE CLI as a non-administrator you apply use the following components:
 
 - Follow [Miniconda Install](#miniconda-install) instructions for your operating system.
 
@@ -24,7 +24,7 @@ To install the CoE CLI as a non-administrator you leverage use the following com
 
 ## Miniconda install
 
-Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages.
+Miniconda is a free minimal installer for conda. It's a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a few other useful packages.
 
 1. Visit [Minoconda](https://docs.conda.io/en/latest/miniconda.html) to download.
 
@@ -32,7 +32,7 @@ Miniconda is a free minimal installer for conda. It is a small, bootstrap versio
 
 ## Local NodeJs
 
-To install NodeJs using non-administrator install by following the steps:
+Install NodeJs as a non-administrator
 
 1. Go to [NodeJs Download](https://nodejs.org/en/download/).
 

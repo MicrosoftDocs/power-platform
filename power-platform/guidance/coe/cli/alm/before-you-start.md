@@ -18,7 +18,7 @@ search.audienceType:
 > [!NOTE]
 > The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](power-platform/guidance/alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
-Before you start an install of ALM Accelerator, ensure that you've the following components in place.
+Before you start an install of ALM Accelerator, ensure that you have the following components in place.
 
 ## CoE command line
 
@@ -28,9 +28,9 @@ Install the CoE CLI [locally](../install.md#local-install) or via a [docker imag
 
 Environment | Description
 ----------- | -------------
-Developer | Development environments that each maker will use to create and manage source-controlled solutions.
-ALM environment | Environment with Microsoft Dataverse enabled. Will be used to deploy managed solution.
-ALM environment - Dataverse connection | See [Maker environment Dataverse](#maker-environment-dataverse-connection) below to create the Dataverse connection.
+Developer | Development environments that each maker uses to create and manage source-controlled solutions.
+ALM environment | Environment with Microsoft Dataverse enabled. This environment will be used to deploy managed solution.
+ALM environment - Dataverse connection | Learn more: [Create the Dataverse connection](#maker-environment-dataverse-connection).
 Validation | Environment used to validate builds before merging into a solution branch.              |
 Test | Pre-production environment used to test solutions before moving to production.          |
 Production | Production environment for managed solutions.                                         |
@@ -38,12 +38,12 @@ Production | Production environment for managed solutions.                      
 Notes:
 
 1. As a Microsoft Partner you can request access to demo tenants to test ALM Accelerators for Power Platform.
-   1) Visit [Partner Center](/partner-center/mpn-demos) for more information.
-   2) Go to [https://demos.microsoft.com](https://demos.microsoft.com) to request a new environment.
-   3) Select **My Environments**.
-   4) Select **Create Tenant**.
-   5) Select tenant location.
-   6) Select the **Dynamics 365 Customer Engagement** content pack.
+   1. Visit [Partner Center](/partner-center/mpn-demos) for more information.
+   1. Go to [https://demos.microsoft.com](https://demos.microsoft.com) to request a new environment.
+   1. Select **My Environments**.
+   1. Select **Create Tenant**.
+   1. Select tenant location.
+   1. Select the **Dynamics 365 Customer Engagement** content pack.
 
 1. Sample environment from [https://admin.powerplatform.microsoft.com/environments](https://admin.powerplatform.microsoft.com/environments) for a [Demo Deployment](./scenarios/tenant-deployments.md#demonstration-deployment).
 
@@ -51,15 +51,15 @@ Notes:
 
 ## Maker environment Dataverse connection
 
-In the maker environment, you'll need a Dataverse connection created by the install user.
+In the maker environment, you need a Dataverse connection created by the install user.
 
 To create the Dataverse connection, use the following steps:
 
 1. Go to [https://make.powerapps.com/](https://make.powerapps.com/).
 
-1. Select the maker environment that you'll deploy the ALM Accelerator for Power Platform into.
+1. Select the maker environment that you deploy the ALM Accelerator for Power Platform into.
 
-1. Go to to **Data** > **Connections**.
+1. Go to **Data** > **Connections**.
 
 1. Select **New Connection**.
 
@@ -84,11 +84,11 @@ Component | Description
 Organization | Review [Add organization users](/azure/devops/organizations/accounts/add-organization-users) to create Azure DevOps organization and add users.
 Project | An Azure DevOps project to integrate with. This guide uses the name **alm-sandbox** as the project name.
 
-The following is set up or used as part of the install and follow on [coe alm branch](https://aka.ms/coe-cli/help/alm/branch).
+The following components are set up or used as part of the install and follow on [coe alm branch](https://aka.ms/coe-cli/help/alm/branch).
 
 Component | Description
 --------- | ----------
-Extensions | Review the [extensions configuration](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/config/AzureDevOpsExtensionsDetails.json) that will be installed.
+Extensions | Review the [extensions configuration](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/config/AzureDevOpsExtensionsDetails.json) that is installed.
 Repository | Ensure the git repository has been initialized with an initial commit.
 
 Notes:
@@ -101,7 +101,7 @@ Notes:
 
    - Create an initial project, for example, *alm-sandbox*.
 
-1. Review the Azure [DevOps Extensions](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/config/AzureDevOpsExtensionsDetails.json) that will be installed by the CLI application to ensure your organization gives consent for them to be installed.
+1. Review the Azure [DevOps Extensions](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/config/AzureDevOpsExtensionsDetails.json) that the CLI application installs to ensure your organization gives consent for them to be installed.
    - [Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools)
 
    - [Power DevOps Tools](https://marketplace.visualstudio.com/items?itemName=WaelHamze.xrm-ci-framework-build-tasks)
@@ -112,7 +112,7 @@ Notes:
 
 ## Read next
 
-Once you've verified the above:
+Once you've verified the configuration:
 
 1. Determine the install [deployment scenario](./scenarios/overview.md) you're targeting.
 
