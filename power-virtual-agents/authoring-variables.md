@@ -434,7 +434,7 @@ Note that the output variable is now of the correct type – Record.
 
 5. You can now use your new variable. Here in the Power Fx editor, you can see that you get full intellisense for the various properties.
 
-:::image type="content" source="media/authoring-variables/nlu-parse-value-intellisense.png" alt-text="Screenshot showing access to full intellisense for various properties through the Power FX editor.":::
+:::image type="content" source="media/authoring-variables/nlu-parse-value-iltellisense.png" alt-text="Screenshot showing access to full intellisense for various properties through the Power FX editor.":::
 
 As well as parsing JSON strings, a key use of the Parse value node will be for parsing UntypedObjects at runtime. The most common of these will be when you receive an Event (probably link to the Triggers article here) and you need to parse the Event value. Or you may want to parse the System.Activity.ChannelData property, which varies at runtime by channel.
 
