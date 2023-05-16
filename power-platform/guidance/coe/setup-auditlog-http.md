@@ -1,5 +1,5 @@
 ---
-title: "Set up audit log components | MicrosoftDocs"
+title: "Collect audit logs using an HTTP action | MicrosoftDocs"
 description: "The Audit Log Sync flow connects to the Audit Log to gather telemetry data (unique users, launches) for apps in Microsoft 365."
 author: manuelap-msft
 
@@ -14,7 +14,7 @@ search.audienceType:
 ---
 # Collect audit logs using an HTTP action
 
-The audit log sync flows connect to the [Office 365 Management API](https://learn.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) to gather telemetry data (unique users, launches) for apps. The flows use an HTTP action to access the API. In the following instructions, you'll set up the app registration for the HTTP action and the environment variables needed to run the flows.
+The audit log sync flows connect to the [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-reference) to gather telemetry data (unique users, launches) for apps. The flows use an HTTP action to access the API. In the following instructions, you'll set up the app registration for the HTTP action and the environment variables needed to run the flows.
 
 The Center of Excellence (CoE) Starter Kit will work without these flows, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
