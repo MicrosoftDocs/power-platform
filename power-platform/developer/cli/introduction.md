@@ -2,10 +2,10 @@
 title: Microsoft Power Platform CLI | Microsoft Docs
 description: "Install Microsoft Power Platform CLI to create, debug, and deploy code components by using Power Apps component framework."
 keywords: Microsoft Power Platform CLI, code components, component framework, CLI
-ms.author: jdaly
-author: kkanakas
+ms.author: snizar
+author: snizar007
 ms.reviewer: jdaly
-ms.date: 10/11/2022
+ms.date: 05/16/2023
 ms.topic: overview
 ---
 # What is Microsoft Power Platform CLI?
