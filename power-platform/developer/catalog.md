@@ -18,15 +18,27 @@ contributors:
 
 Organizations where developers & makers build and share components and templates get more value from the Power Platform. Just building isn't enough. Sharing power platform artifacts at scale fosters communities and support groups to emerge, incubate and unlock value from diverse set of personnel in an organization.
 
-Successful organizations adopt a *fusion teams* model where pro-developers, makers and admins all work together to help their fellow employees derive the highest value possible from the Power Platform.
+Successful organizations adopt a *fusion teams* model where pro-developers, makers and admins all work together to help their fellow employees derive the highest value possible from the Power Platform. Fusion teams can reuse components and templates.
+
+*Components* include things like:
+
+- Custom Connectors
+- Power Platform Component Framework (PCF) controls
+- Power Automate flows
+- Canvas apps
+- Model-driven apps
+
+*Templates* are items that represent an advanced starting point for components. Templates connect to their enterprise systems & resources, and utilize organization's themes
+
+In a large organization, there may be many components and template distributed amongst many environments.
 
 The catalog in Power Platform enables developers and makers to:
 
 - Crowd-source and find Power Platform templates and code components within their organization easily
-- Find and install the latest and authoritative version of a Custom Connector, PCF control, or App & Flow templates among the sprawl of such components built and distributed across many environments
-- Get started with templates that provide immediate value including templates that connect to their enterprise systems & resources, and utilize organization's themes
+- Find and install the latest and authoritative version of a component
+- Get started with templates that provide immediate value
 
-For admins and line of business approvers, the catalog:
+For administrators and line of business approvers, the catalog:
 
 - Provides a central location, a *single source of truth*, to store and maintain power platform artifacts they can curate and control to accelerate value for Makers and Developers
 - Enables approval workflows to enable usage of sanctioned components and templates where a high degree of care is required due to sensitive regulatory and statutory scenarios
@@ -41,7 +53,7 @@ This diagram describes the process of using catalog in Power Platform.
 
 ### Create
 
-Makers and developers can create solutions and templates with useful configuration points, so that users can easily configure all the solution components in a solution or create from a template.
+Makers and developers can create solutions and templates with useful configuration points. With these configuration points, users can easily configure all the solution components in a solution or create from a template.
 
 ### Submit
 
@@ -165,7 +177,7 @@ Auto approval can be enabled at two levels:
 
 |Level|Description  |
 |---------|---------|
-|**Catalog**|Set this once on the catalog so that every submission is auto approved regardless of publisher.  |
+|**Catalog**|Set auto approval once on the catalog so that every submission is auto approved regardless of publisher.  |
 |**Publisher** |Navigate to **Catalog Publishers** in the ****Catalog Manager**** application and turn on auto approval for individual catalog publishers. Use this publisher level auto approval when there's a trusted group for which no approval is required, but others require approval.|
 
 
@@ -177,10 +189,11 @@ Even with auto approval, submission requests that get auto approved can are avai
 
 #### Enable Unmanaged Solutions
 
-This setting is enabled by default. You must enable this setting if you want to use the deployment mode of **Template**. More information: TODO x-ref Submission >Deployment  //TODO: I don't find any target section in the submit-catalog-items.md file for 'Deployment'.
+This setting is enabled by default. You must enable this setting if you want to use the deployment mode of **Template**.
+ <!-- More information: TODO x-ref Submission >Deployment  //TODO: I don't find any target section in the submit-catalog-items.md file for 'Deployment'. -->
 
 You can choose to disallow sharing of unmanaged solutions via the catalog.
-<!-- Why would someone want to do this? -->
+<!--//TODO: Why would someone want to do this? -->
 
 ## Administer the catalog
 
@@ -195,27 +208,27 @@ Administering the catalog includes the following tasks:
 
 ### Setup Users
 
-The **Catalog Manager** application includes the following security roles you can associate to users, Microsoft Azure Active Directory (AAD) groups, and modern teams:
+The **Catalog Manager** application includes the following security roles you can associate to users, Microsoft Azure Active Directory groups, and modern teams:
 
 
 |Role |Description  |
 |---------|---------|
 |**Catalog Submitter**|Users with this role can submit items to the catalog.|
 |**Catalog Read-Only Member**|Users with this role can discover and install items from the catalog  |
-|**Catalog Approver**  |Users with this role can approve submissions to the catalog. Note these can be users from your central IT department or Line of Business that your organization wants to empower to participate in the approvals process.|
+|**Catalog Approver**  |Users with this role can approve submissions to the catalog. Catalog approvers can be users from your central IT department or Line of Business that your organization wants to empower to participate in the approvals process.|
 |**Catalog Administrator**|Users with this role can administer the catalog.|
 
 More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team).
 
 ### Approve & Reject submission requests
 
-Environment admins and users with the Catalog Approver role can review new submissions and approve or decline requests. If global auto approval or publisher level auto approval is turned on then there's no requirement for manual review and approval. More information: [Enable Auto Approval](#enable-auto-approval)
+Environment admins and users with the Catalog Approver role can review new submissions and approve or decline requests. If global auto approval or publisher level auto approval is turned on, then there's no requirement for manual review and approval. More information: [Enable Auto Approval](#enable-auto-approval)
 
 In the **Approvals** section of the navigation pane, select **Requests**.
 This list has 16 views:
 
 <!-- 
-
+//TODO
 I think it might be good to provide brief descriptions on the purpose of each view
 
 Then this list could be a table..
@@ -240,7 +253,7 @@ Then this list could be a table..
 
 Using the **Active Approval Requests** view, open a request and select **Resolve Request** in the menu.
 
-- Select **Reject Request** to decline the request. The request is archived and publisher, item and asset won't be created.
+- Select **Reject Request** to decline the request. The request is archived and publisher, item and asset aren't created.
 - Select **Complete Request** to approve. Upon approval, Publisher, Item and Assets be created. The request is archived to **Inactive** status.
 
 
@@ -250,7 +263,7 @@ In the **Deployment History** section of the navigation pane, select **Install H
 
 This list has two views:
 
-- **Active Install Histories**(Default)
+- **Active Install Histories** (Default)
 - **Inactive Install Histories**
 
 ### Review Catalog Items
@@ -322,35 +335,35 @@ This list 8 views:
 - **Packages Assets - Published** (Default)
 - **Packages Assets in Submission**
 
-The following table describes selected fields that can be include in the form:
+The following table describes selected fields that can be included in the form:
 
 |Field |Description|
 |---------|---------|
-|Allow Package Code Execution|If this is set to true, this allows a deployment package to execute code during deployment.|
-|Available|         |
-|Catalog Item Cross Reference|Connects to the common catalog item record regardless of revision.|
-|CRM Working Package Drop Path|The location where the package file has been dropped for working|
-|CrmMaxVersion|         |
-|CrmMinVersion|         |
-|DefaultPackageLocaleId|         |
-|EndDateUtc|         |
-|InstanceConfigurationUrl|         |
-|Last Sync Date|         |
-|LearnMoreUrl|         |
-|Name|         |
-|Owner|         |
-|Package Manifest File Name|         |
-|Package Manifest Uri|URI to the package manifest.|
-|Package Uri|         |
-|ProviderName|         |
-|Pushed Date|         |
-|Revision Of|This field is populated when a new approval request contains a reference to an existing package version that has previously been made available|
-|StartDateUtc|         |
-|Status Reason|Choices:<br /> - **Pending Approval**<br /> - **Published**<br /> - **Rejected**<br /> - **Available**<br /> - **Inactive**|
-|SupportedCountries|         |
-|TPS ID||
-|UniqueName|         |
-|Version|         |
+|**Allow Package Code Execution**|If **Allow Package Code Execution** is set to true, a deployment package can execute code during deployment.|
+|**Available**|//TODO|
+|**Catalog Item Cross Reference**|Connects to the common catalog item record regardless of revision.|
+|**CRM Working Package Drop Path**|The location where the package file has been dropped for working|
+|**CrmMaxVersion**|//TODO|
+|**CrmMinVersion**|//TODO|
+|**DefaultPackageLocaleId**|//TODO|
+|**EndDateUtc**|//TODO|
+|**InstanceConfigurationUrl**|//TODO|
+|**Last Sync Date**|//TODO|
+|**LearnMoreUrl**|//TODO|
+|**Name**|//TODO|
+|**Owner**|//TODO|
+|**Package Manifest File Name**|         |
+|**Package Manifest Uri**|URI to the package manifest.|
+|**Package Uri**|//TODO|
+|**ProviderName**|//TODO|
+|**Pushed Date**|//TODO|
+|**Revision Of**|This field is populated when a new approval request contains a reference to an existing package version that has previously been made available|
+|**StartDateUtc**|//TODO|
+|**Status Reason**|Choices:<br /> - **Pending Approval**<br /> - **Published**<br /> - **Rejected**<br /> - **Available**<br /> - **Inactive**|
+|**SupportedCountries**|//TODO|
+|**TPS ID**|//TODO|
+|**UniqueName**|//TODO|
+|**Version**|//TODO|
 
 ### Review errors in submission requests
 
@@ -362,7 +375,7 @@ In the **Approvals** section of the navigation pane, select **Failed Pre-Validat
    :::image type="content" source="media/failed-pre-validation-exception-ui.png" alt-text="The exception in the notes of the Timeline card.":::
 
 
-After fixing the submission, trigger the submit again from PAC CLI. You'll see a new request that can be approved.
+After fixing the submission, trigger the submit again from PAC CLI. You see a new request that can be approved.
 
 ### Review errors in install requests
 
