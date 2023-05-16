@@ -38,6 +38,8 @@
           href: nlu-gpt-quickstart.md
         - name: Boost conversations
           href: nlu-boost-conversations.md
+        - name: Boost conversations with Search and summarize
+          href: nlu-boost-node.md
         - name: Create (and edit) with Copilot
           href: nlu-authoring.md
 - name: Administer and manage
@@ -100,6 +102,8 @@
       href: advanced-entities-slot-filling.md
     - name: Use variables
       href: authoring-variables.md
+    - name: Sending event activities
+      href: authoring-send-event-activities.md
     - name: Reuse variables across topics
       href: authoring-variables-bot.md
     - name: Create topics from existing support content
