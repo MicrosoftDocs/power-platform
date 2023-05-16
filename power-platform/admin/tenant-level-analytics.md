@@ -58,13 +58,13 @@ The admin doesn't need to be a licensed user.  Environment admins will gain acce
 
 1. Select **Enable** to redirect to the **Analytics** panel.
 
-  :::image type="content" source="media/analytics-overview-tab-enble.png" alt-text="Select Enable on the Overview tab.":::
+    :::image type="content" source="media/analytics-overview-tab-enble.png" alt-text="Select Enable on the Overview tab.":::
   
-  You may also select the **Settings** icon in the upper-right corner of the site, and then select **Power Platform settings**. 
+    You may also select the **Settings** icon in the upper-right corner of the site, and then select **Power Platform settings**. 
 
 1. **Granting consent for tenant-level analytics:** Once enabled, this feature will aggregate data from environments across all regions in your tenant and copy it into the default environment region for tenant-level reporting. A tenant-level administrator role is required for one-time operation of granting consent for tenant-level analytics. 
 
-  Turn on the option to **Tenant-level analytics** to grant consent for the service to collocate service telemetry data in the location associated with the default environment. 
+    Turn on the option to **Tenant-level analytics** to grant consent for the service to collocate service telemetry data in the location associated with the default environment. 
 
 1. Select **Save** and then close the form. 
 
