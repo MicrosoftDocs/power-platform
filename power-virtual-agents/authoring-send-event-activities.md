@@ -16,13 +16,13 @@ ms.collection: virtual-agent
 
 PVA provides two nodes that allow you to send non-message activities: Send an Event, and Send an Activity. These are discussed in the following sections.
 
-:::image type="content" source="media/authoring-variables/authoring-send-activities-menu.png" alt-text="Screenshot of adding an Advanced node, including the Send an event and Send an activity options.":::
+:::image type="content" source="media/authoring-variables/authoring-send-activites-menu.png" alt-text="Screenshot of adding an Advanced node, including the Send an event and Send an activity options.":::
 
 ## Sending events
 
 The Sen and Event node is specifically designed for sending Event Activites. Event activities are sent from the bot and can be intercepted and used by the channel, which decides if and how to use the activities. When you send an event, you give it a name and then you can set a value on the event. This value can be in any format: a primitive literal value, a variable reference or a Power Fx formula. The value gets serialized as JSON and added to the outgoing activity.
 
-:::image type="content" source="media/authoring-variables/authoring-send-activities-settings.png" alt-text="Screenshot showing the settings menu for an Event activity node.":::
+:::image type="content" source="media/authoring-variables/authoring-send-activites-settings.png" alt-text="Screenshot showing the settings menu for an Event activity node.":::
 
 Uses of this node include:
 
@@ -40,7 +40,7 @@ Common types are:
 - **Invoke/Invoke Response** – Generally these are used for Microsoft Teams. A user will create a topic with an Invoke tigger to intercept an incoming Invoke from Teams. The C1 will then use an Invoke Response activity to send an appropriate response back to Teams.
 - **Handoff** – This allows a user to send a Handoff activity with explicit control over the value. This is used for some external channels, such as AudioCodes.
 
-:::image type="content" source="media/authoring-variables/authoring-send-activities-invoke-activity.png" alt-text="Screenshot showing the Invoke activity node with the Type dropdown list.":::
+:::image type="content" source="media/authoring-variables/authoring-send-activites-invoke-activity.png" alt-text="Screenshot showing the Invoke activity node with the Type dropdown list.":::
 
 ## Related links
 
