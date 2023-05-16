@@ -150,7 +150,6 @@ Environment admins are not able to disable tenant-level analytics.
 
    :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics.":::
 
----
 ## Where is this feature available?
 
 The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is pending availability in Government & Sovereign Clouds.
