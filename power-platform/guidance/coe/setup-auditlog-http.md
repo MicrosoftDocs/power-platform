@@ -78,10 +78,10 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 Environment variables are used to store the client ID and secret for the app registration, and the audience and authority service endpoints depending on your cloud (commercial, GCC, GCC High, DoD) for the HTTP action. Update the [environment variables](faq.md#update-environment-variables) before turning on the flows.
 
-You can store the client secret either in plain text in the **Command Center - Client Secret** environment variable (not recommended) or create store the client secret in Azure Key Vault and reference it in the **Audit Logs - Client Azure Secret** environment variable (recommended). Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)
+You can store the client secret either in plain text in the **Audit Logs - Client Secret** environment variable (not recommended) or create store the client secret in Azure Key Vault and reference it in the **Audit Logs - Client Azure Secret** environment variable (recommended).
 
 >[!NOTE]
-> The flow using this environment variable is configured with a condition to expect either the Command Center - Client Secret or the Command Center - Client Azure Secret environment variable. It is not necessary to edit the flow or command center application to work with Azure Key Vault.
+> The flow using this environment variable is configured with a condition to expect either the Audit Logs - Client Secret or the Audit Logs - Client Azure Secret environment variable. It is not necessary to edit the flow to work with Azure Key Vault.
 
 | Name | Description | Values |
 |------|------------|---------|
