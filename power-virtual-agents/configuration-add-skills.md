@@ -28,7 +28,6 @@ This article is intended for system administrators or IT professionals who are f
 - [Review restrictions and validation for skills used in Power Virtual Agents](/azure/bot-service/skill-pva)
 
 > [!IMPORTANT]
-> Power Virtual Agents **preview** only supports skills built using [Bot Framework SDK version 4.12.0+](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
 > 
 > Power Virtual Agents **classic** only supports skills built using [Bot Framework SDK version 4.7+](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
 > 
