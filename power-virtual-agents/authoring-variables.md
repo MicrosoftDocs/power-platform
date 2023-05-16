@@ -414,7 +414,7 @@ The string variable that you have now can be converted to a Record variable, wit
 
 1. Add a Parse Value node, and select the variable you want to parse.
 
-:::image type="content" source="media/authoring-variables/nlu-parse-value-select-var.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
+:::image type="content" source="media/authoring-variables/nlu-parse-value-select-var.png" alt-text="Screenshot showing selection of the variable to parse.":::
 
 2. Select the data type. In this case choose “From Sample Data”.
 
