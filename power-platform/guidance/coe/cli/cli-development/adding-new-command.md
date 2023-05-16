@@ -1,5 +1,5 @@
 ---
-title: "CoE CLI adding a new command"
+title: "CoE CLI adding a new command (Deprecated)"
 description: "Add a new command to the Center of Excellence Command-Line interface application"
 keywords: 
 author: Grant-Archibald-MS
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# CoE CLI development adding a new command
+# CoE CLI development adding a new command (Deprecated)
 
 To add a new sample command, you can use the following command to template the initial set-up of the TypeScript command and the Jest JavaScript testing framework unit test.
 

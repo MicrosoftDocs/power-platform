@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) overview"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) overview (Deprecated)"
 description: "Overview of the Center of Excellence Command-Line interface and how it automates the setup and administrator of common tasks"
 keywords: 
 author: Grant-Archibald-MS
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Center of Excellence (CoE) command line interface (CLI) overview
+# Center of Excellence (CoE) command line interface (CLI) overview (Deprecated)
 
 The Center of Excellence (CoE) command line interface provides automation for common tasks of the CoE starter toolkit. It's been designed to provide a set of commands that meet the needs of different [personas](./alm/personas.md) across the organization.
 

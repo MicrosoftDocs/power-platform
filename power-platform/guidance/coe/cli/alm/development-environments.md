@@ -1,5 +1,5 @@
 ---
-title: "CoE ALM Accelerator for Power Platform developer environments"
+title: "CoE ALM Accelerator for Power Platform developer environments (Deprecated)"
 description: "Summary of how to add a maker development environment to the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -13,7 +13,10 @@ search.audienceType:
   - admin
 ---
 
-# CoE ALM Accelerator for Power Platform developer environments
+# CoE ALM Accelerator for Power Platform developer environments (Deprecated)
+
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](/power-platform/guidance/alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 Each maker will need a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/), then select **Get started free**.
 

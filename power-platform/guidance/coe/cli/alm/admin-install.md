@@ -1,5 +1,5 @@
 ---
-title: "Set up ALM Accelerator for Power Platform"
+title: "Set up ALM Accelerator for Power Platform (Deprecated)"
 description: "Steps to do administrator install of the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -13,10 +13,10 @@ search.audienceType:
   - admin
 ---
 
-# Set up ALM Accelerator for Power Platform
+# Set up ALM Accelerator for Power Platform (Deprecated)
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](/power-platform/guidance/alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 As a first step you'll need to complete the initial steps of an ALM deployment as an administrator. The commands below allow you to quickly automate the install. When you've completed these steps, you can add makers and set up connections to their Power Platform development environments.
 

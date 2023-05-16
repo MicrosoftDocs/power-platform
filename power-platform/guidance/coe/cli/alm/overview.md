@@ -1,5 +1,5 @@
 ---
-title: "CoE CLI ALM accelerator for Microsoft Power Platform"
+title: "CoE CLI ALM accelerator for Microsoft Power Platform (Deprecated)"
 description: "Overview of the Center of Excellence (CoE) command-line interface (CLI) ALM accelerator commands"
 keywords: 
 author: Grant-Archibald-MS
@@ -12,7 +12,10 @@ search.audienceType:
   - admin
 ---
 
-# CoE CLI ALM accelerator for Microsoft Power Platform
+# CoE CLI ALM accelerator for Microsoft Power Platform (Deprecated)
+
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](/power-platform/guidance/alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 You can use the CLI application lifecycle management (ALM) accelerator for Microsoft Power Platform to manage common ALM tasks to install, set up, and administer the ALM accelerator for Microsoft Power Platform. This article contains:
 

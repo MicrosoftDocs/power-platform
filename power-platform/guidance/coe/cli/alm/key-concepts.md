@@ -1,5 +1,5 @@
 ---
-title: "CoE ALM Accelerator for Power Platform key concepts"
+title: "CoE ALM Accelerator for Power Platform key concepts (Deprecated)"
 description: "Key concepts related to ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -12,12 +12,12 @@ ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 ---
-# CoE ALM Accelerator for Power Platform key concepts
+# CoE ALM Accelerator for Power Platform key concepts (Deprecated)
 
 As you deploy and use the ALM CLI, it's important to understand the following key concepts that the CLI is automating.
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](/power-platform/guidance/alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 ## Azure Active Directory
 

@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) command line interface (CLI) upgrade"
+title: "Center of Excellence (CoE) command line interface (CLI) upgrade (Deprecated)"
 description: "Upgrade instructions for the Center of Excellence command line interface"
 keywords: 
 author: Grant-Archibald-MS
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Center of Excellence (CoE) command line interface (CLI) upgrade
+# Center of Excellence (CoE) command line interface (CLI) upgrade (Deprecated)
 
 Upgrade will depend on how you installed the CoE CLI.
 

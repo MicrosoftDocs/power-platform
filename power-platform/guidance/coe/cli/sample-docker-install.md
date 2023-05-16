@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) command line interface (CLI) Docker installation"
+title: "Center of Excellence (CoE) command line interface (CLI) Docker installation (Deprecated)"
 description: "Sample of installation of Center of Excellence (CoE) command line interface (CLI) to a Linux Docker image"
 keywords: 
 author: Grant-Archibald-MS
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Center of Excellence (CoE) Command Line Interface (CLI) Docker installation
+# Center of Excellence (CoE) Command Line Interface (CLI) Docker installation (Deprecated)
 
 The following video captures the results of a sample Docker install on Linux.
 
