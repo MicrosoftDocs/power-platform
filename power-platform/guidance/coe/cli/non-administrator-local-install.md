@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) non administrator installation"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) non administrator installation (Deprecated)"
 description: "Install instructions for the Center of Excellence Command-Line interface using non administrator rights"
 keywords: 
 author: Grant-Archibald-MS
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Non Administrator Center of Excellence (CoE) Command Line Interface (CLI) installation
+# Non Administrator Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
 
 To install the CoE CLI as a non-administrator you leverage use the following components:
 

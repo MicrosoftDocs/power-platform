@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) command line interface (CLI) local installation"
+title: "Center of Excellence (CoE) command line interface (CLI) local installation (Deprecated)"
 description: "Sample of installation of Center of Excellence (CoE) command line interface (CLI) to a local deployment"
 keywords: 
 author: Grant-Archibald-MS
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Center of Excellence (CoE) command line interface (CLI) local installation
+# Center of Excellence (CoE) command line interface (CLI) local installation (Deprecated)
 
 The following video captures the results of a sample local install.
 

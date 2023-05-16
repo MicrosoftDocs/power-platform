@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) installation"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)"
 description: "Install instructions for the Center of Excellence Command-Line interface"
 keywords: 
 author: Grant-Archibald-MS
@@ -14,7 +14,7 @@ search.audienceType:
 ---
 
 
-# Center of Excellence (CoE) Command Line Interface (CLI) installation
+# Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
 
 To install the CoE CLI:
 

@@ -1,5 +1,5 @@
 ---
-title: "CoE CLI development documentation"
+title: "CoE CLI development documentation (Deprecated)"
 description: "Documentation for the Center of Excellence Command-Line interface commands"
 keywords: 
 author: Grant-Archibald-MS
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# CoE CLI development documentation
+# CoE CLI development documentation (Deprecated)
 
 Documentation is key to understanding how the CLI works. As you add new commands, consider the following documentation:
 
