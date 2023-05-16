@@ -54,7 +54,7 @@ To run the CoE CLI application, first install these components:
 
 ### Non Administrator Install
 
-If you do not have administration rights you can use the [Non Administration Install](./non-administrator-local-install.md)
+If you don't have administration rights, you can use the [Non-Administration Install](./non-administrator-local-install.md)
 
 ### Checking prerequisites
 
@@ -104,9 +104,9 @@ One method of installation is via Docker.
 
 ### Docker prerequisites
 
-To run the CoE CLI application, you'll need the following software.
+To run the CoE CLI application, you need the following software.
 
-- A local install of [Docker](https://docs.docker.com/get-docker/). The install can be either Community Edition or Enterprise Edition. If you're installing onto a desktop environment, you'll normally pick a Community Edition deployment.
+- A local install of [Docker](https://docs.docker.com/get-docker/). The install can be either Community Edition or Enterprise Edition. If you're installing onto a desktop environment, you normally pick a Community Edition deployment.
 
 ### Docker install steps
 
@@ -126,7 +126,7 @@ To run the CoE CLI application, you'll need the following software.
    docker run -it --rm coe-cli
    ```
 
-This command will start a new interactive console (`-it`) and remove the Docker container (`--rm`) when the console session exits. Using `--rm` ensures that any cached credentials are removed when you exit.
+This command starts a new interactive console (`-it`) and remove the Docker container (`--rm`) when the console session exits. Using `--rm` ensures that any cached credentials are removed when you exit.
 
 ## Next steps
 
