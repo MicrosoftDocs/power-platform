@@ -40,7 +40,7 @@ To configure CSP, navigate to the [Power Platform admin center](https://admin.po
 
 ### Reporting
 
-The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. Enabling it requires an endpoint to be specified. Violation reports will be sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced). For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
+The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. Enabling it requires an endpoint to be specified. Violation reports are sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced). For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
 
 ![Enabling reporting endpoint](media/csp-reporting.png "Enabling reporting endpoint")
 
@@ -48,7 +48,7 @@ The "Enable reporting" toggle controls whether model-driven and canvas apps send
 
 Enforcement of CSP is controlled independently for model-driven and canvas apps to provide granular control over policies. Use the model-driven/canvas pivot to modify the intended app type.
 
-The "Enforce content security policy" toggle turns on the default policy for enforcement, as specified above, for the given app type. Turning on this toggle will change the behavior of apps in this environment to adhere to the policy. Therefore, the suggested enablement flow would be:
+The "Enforce content security policy" toggle turns on the default policy for enforcement, as specified above, for the given app type. Turning on this toggle changes the behavior of apps in this environment to adhere to the policy. Therefore, the suggested enablement flow would be:
 1. Enforce on a dev/test environment.
 2. Enable report-only mode in production.
 3. Enforce in production once no violations are reported.
@@ -68,7 +68,7 @@ For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-
 - `https://teams.microsoft.com/`
 - `https://msteamstabintegration.dynamics.com/`
 
-For Dynamics 365 App for Outlook, you will need to add your Outlook Web App homepage origin to `frame-ancestors`.
+For Dynamics 365 App for Outlook, you must add your Outlook Web App homepage origin to `frame-ancestors`.
 
 ### Important considerations
 Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
@@ -120,7 +120,7 @@ CSP can be configured without using the UI by modifying the following organizati
 
 - [ContentSecurityPolicyConfigurationForCanvas](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfigurationForCanvas) controls the policy for canvas using the same process described in `ContentSecurityPolicyConfiguration` above.
 
-- [ContentSecurityPolicyReportUri](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyReportUri) controls whether reporting should be used. This setting is used by both model-driven and canvas apps. A valid string will send violation reports to the specified endpoint, using report-only mode if `IsContentSecurityPolicyEnabled`/`IsContentSecurityPolicyEnabledForCanvas` is turned off. An empty string disables reporting. For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
+- [ContentSecurityPolicyReportUri](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyReportUri) controls whether reporting should be used. This setting is used by both model-driven and canvas apps. A valid string sends violation reports to the specified endpoint, using report-only mode if `IsContentSecurityPolicyEnabled`/`IsContentSecurityPolicyEnabledForCanvas` is turned off. An empty string disables reporting. For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
 
 ## Configuring CSP without UI
 Especially for environments not in the Power Platform admin center such as on-premises configurations, admins may want to configure CSP using scripts to directly modify settings.
