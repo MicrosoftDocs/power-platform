@@ -4,11 +4,13 @@ description: Manage feature settings to adjust how features appear and function 
 author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/05/2023
+ms.date: 05/16/2023
 ms.subservice: admin
-ms.author: kvivek 
+ms.author: kvivek
+ms.reviewer: sericks
 contributors:
     - ProfessorKendrick
+    - jasongre
 search.audienceType: 
   - admin
 ---
