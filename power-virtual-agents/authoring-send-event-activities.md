@@ -1,6 +1,6 @@
 ---
 title: "Sending event activities"
-description: "Use variables with custom and prebuilt entities to created customized bot conversations."
+description: "Use nodes to send event activities."
 keywords: "PVA"
 ms.date: 04/05/2022
 ms.service: power-virtual-agents
