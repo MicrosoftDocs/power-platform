@@ -108,7 +108,7 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
 1. On the Search and summarize node, select Properties from the node menu, and select Data source.
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of the Search and summarize properties.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of properties of the Search and summarize node.":::
 
 1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources).
 
@@ -126,7 +126,7 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
 1. On the **Web API** tab under **Production**, copy the Custom configuration ID you want to use. This will function like a url would as described [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). NOTE: If you have more than one custom configuration, make sure you are copying the ID you want.
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize node medu" Data sources.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize node with bing custom search.":::
 
 #### [Bot]
 
@@ -150,7 +150,7 @@ With a bot open, expand **Settings** on the side navigation pane, and select **A
 
 1. Paste your custom configuration into the [input box] under "Sites", and click on the '+' to add it to the node's Data sources. If you have not exceeded relevant limits, you may add other urls.
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the Search and summarize node properties.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of properties for the Search and summarize node.":::
 
 1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
  
