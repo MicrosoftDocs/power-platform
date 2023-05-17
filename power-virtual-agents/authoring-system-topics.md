@@ -20,7 +20,9 @@ ms.reviewer: ggupta
 
 System topics are common topics used in conversations with a bot.
 
-You can't delete or disable system topics, or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
+You can't delete or disable system topics, or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation. If you make changes to a system topic that later you don’t want anymore, you need to go back to the default. This can be done using the Reset to Default button available on system topics.
+
+:::image type="content" source="media/authoring-system-topics/reset-system-topic.png" alt-text="Diagram of system topics in a conversation.":::
 
 When you first create a bot, all system topics are configured to trigger at the appropriate times. However, you can manually trigger system topics by [redirecting](authoring-create-edit-topics.md#redirect-to-another-topic) to them.
 
@@ -60,6 +62,9 @@ Triggers when redirected to. You should call this topic from your custom topics 
 Informs customers about how they can speak to a human.
 
 Triggers when a trigger phrase such as "talk to agent" is matched or when the Escalate system event is triggered. For example, **Question** nodes can be configured to escalate if they don't receive a valid answer from the customer.
+
+> [!NOTE]
+> If using Power Virtual Agents with [hand off to OmniChannel](configuration-hand-off-omnichannel.md) configured, follow the instructions on the [Hand off to a live agent](advanced-hand-off.md#configuring-the-escalate-system-topic) to ensure proper hand-off to Dynamics 365 Customer Service.
 
 ### Fallback
 

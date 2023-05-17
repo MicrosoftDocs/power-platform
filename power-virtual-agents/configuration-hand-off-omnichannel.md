@@ -5,7 +5,7 @@ keywords: "PVA"
 ms.date: 03/24/2023
 
 ms.topic: article
-author: iaanw  
+author: KendalBond007
 ms.author: iawilt
 ms.reviewer: clmori
 manager: leeclontz
@@ -79,6 +79,38 @@ If you continue to see the message after exporting and importing the latest vers
 
 If your bot doesn't have omnichannel capabilities enabled, the message will always show.
 
+## Configure inactivity timeout to close conversation
+
+Dynamics 365 Customer Service expects a conversation to end after a period of inactivity. This is important to ensure the supervisor view displays the correct ongoing conversations and manage agent loads and metrics correctly. When you create a bot from Dynamics 365 Customer Service, the default bot content includes two topics: **Session Timeout Reminder** and **Session Timeout**. These topics use the [Inactivity trigger](authoring-triggers.md?tabs=preview#inactivity) to first remind the user, and then close the convesation after a set inactivity timeout value, which can be configured in the topic. But if you create the bot from the Power Virtual Agents portal, those topics will not be included in the bot. To create them, follow the steps below:
+
+### Creating a Session Timeout topic
+
+1. From the left navigation, select **Topics**.
+
+1. From the top bar, select **New topic** and **From blank**.
+
+1. Hover the trigger **Phrases** and select the **Change trigger** icon.
+
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-Change-Trigger.png" alt-text="Change topic's trigger":::
+    
+1. Select **Inactivity** from the list.
+
+1. Select **Edit** in the trigger node to configure the inactivity duration.
+
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-Inactivity-Trigger.png" alt-text="Configure inactivity trigger":::
+
+1. Select a **Value** from the dropdown, or enter an arbitrary value (in seconds) using a **Formula** entry. This is the amount of inactive time it will take for the topic to trigger.
+
+1. Select which channel it applies to by using the **Condition** option. For OmniChannel, click on **Select a varable** under the **Condition** block, select the **System** tab, and **Activity.Channel**. 
+
+    :::image type="content" source="./media/configuration-hand-off-omnichannel/PVA2-Inactivity-Condition.png" alt-text="Change inactivity trigger condition":::
+
+1. Select **Omnichannel** from the dropdown.
+
+1. Finally add a message, and at the end, add an End Conversation node so the conversation ends. You can do this by clikcing on the **(+)** sign, selecting **Topic management** and **End conversation**.
+
+Finally save and publish your bot.
+
 ## Manage your bot's omnichannel capabilities
 
 Select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect your bot, and find the link to go to the Omnichannel for Customer Service admin center to view the connection details.
@@ -110,7 +142,15 @@ Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.
 - Have a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 - Environments:
   - Your bot environment and Omnichannel for Customer Service environment must be in the same [geographical region](./data-location.md#data-locations).
-  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Canada, Europe, Asia, United Kingdom, or Australia geographies](./data-location.md#data-locations).
+  - To use [voice capabilities](#voice-based-capabilities), your tenant and environment [must be in these geographies](./data-location.md#data-locations):
+    - Asia
+    - Australia
+    - Canada
+    - Europe
+    - India
+    - Switzerland
+    - United Kingdom
+    - United States
 - [Register an application with Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application).
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
 
@@ -146,7 +186,7 @@ Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.
 1. Return to the **Omnichannel** pane in Power Virtual Agents and paste the Application ID in the **Application ID** box.
 
     > [!IMPORTANT]
-    > Omnichannel for Customer Service models bots as "application users." Therefore, the Application ID that you use must be unique to your Microsoft Dataverse organization or environment.
+    > Omnichannel for Customer Service models bots as "application users." As a result, the Application ID that you use **must be unique** to your Power Virtual Agents bot. Reusing an Application ID across bots will cause error code `1004` (DuplicateBotAppId). 
 
 1. Select **Add your bot**.
 
