@@ -44,6 +44,8 @@ For administrators and line of business approvers, the catalog:
 - Enables approval workflows to enable usage of sanctioned components and templates where a high degree of care is required due to sensitive regulatory and statutory scenarios
 - Provides management capabilities with settings and metadata
 
+Please note at GA, this feature will require the use of Managed Environment capabilities.
+
 ## Catalog process
 
 This diagram describes the process of using catalog in Power Platform.
@@ -371,13 +373,14 @@ The following table describes selected fields that can be included in the form:
 
 -->
 
-Package Information
+The following information is available about the Package
+
 |Field |Description|
 |---------|---------|
-|**UniqueName**|//TODO|
-|**Version**|//TODO|
-|**Status Reason**|Choices:<br /> - **Pending Approval**<br /> - **Published**<br /> - **Rejected**<br /> - 
-|**Package ID**|//TODO|
+|**UniqueName**|Package Unique Name|
+|**Version**|Package Version|
+|**Status Reason**|Current Status Choices:<br /> - **Pending Approval**<br /> - **Published**<br /> - **Rejected**<br />|
+|**Package ID**|Package Identifier|
 |**Locale Identifier (LCID)**|Identifier for localized package|
 |**Localized Name**|Name in localized language|
 |**Description**|Description in localized language|
@@ -387,7 +390,11 @@ Package Information
 |**Modified By**|Modified By User|
 |**Created On**|Date created|
 
-Information including the Package File, the Package Manifest and contained solutions and components is also available under the Package and Contents area. 
+Package and Content information
+|**Package File**|Package Deployer package file comprising of Catalog item contents|
+|**Package Manifest File**|Package Manifest file (.json)|
+|**Contained Solutions and Components**|This information is for reference only and being revised. Future update will enable a streamlined view of this data|
+
 
 ### Review errors in submission requests
 
@@ -421,7 +428,4 @@ While most organizations are likely to use just one catalog, it's possible to cr
 
 ### Is there a license required to use the Catalog?
 
-For the public preview, the catalog feature is available to be used without any licensing. For GA, the catalog feature requires the catalog to be set up in a managed environment.
-
-
-
+For the public preview, the catalog feature is available to be used without any licensing. For GA, the catalog feature requires the catalog to be set up in a managed environment. More details around the Managed Environments requirements will be made available during Preview.
