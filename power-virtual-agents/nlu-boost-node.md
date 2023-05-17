@@ -50,7 +50,7 @@ As the table notes, some features require user authentication to be configured f
 
 ## Create generative answers
 
- Adding a Search and summarize content node allows you to use generative answers with your a bot's topic. This allows you to search internal and external information sources from the node level to further boost your bot's conversations.
+Adding a Search and summarize content node allows you to use generative answers with your a bot's topic. This allows you to search internal and external information sources from the node level to further boost your bot's conversations.
 
 1. Open the authoring canvas for your topic, and identify the point where you want to use Search and summarize content.
 
@@ -98,7 +98,7 @@ You can also change the URL, disable **generative answers**, or change the level
 
 1. Select **Save** at the top of the **AI capabilities** page.
 
-You can now test your bot to see how well it responds to questions related to the content on the URL you specified. For more details, refer to [Test you bot's generative answers reach](nlu-gpt-quickstart.md#test-your-bots-boosted-conversational-reach).
+You can now test your bot to see how well it responds to questions related to the content on the URL you specified. For more details, refer to [Test your bot's generative answers reach](nlu-gpt-quickstart.md#test-your-bots-boosted-conversational-reach).
 
 #### Search and summarize node properties
 
@@ -131,7 +131,7 @@ With a bot open, expand **Settings** on the side navigation pane, and select **A
 
 1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
 
-1. In the field under the checkbox, change the current url to the Custom configuration ID, or add the ID. [The [same requirements apply for the URL](nlu-boost-conversations.md#url-considerations) as when enabling the capability when you create a bot. - **Question**: is this true here?]
+1. In the field under the checkbox, change the current url to the Custom configuration ID, or add the ID. This is similar to enabling this capability at bot creation. See [Url considerations](nlu-boost-conversations.md#url-considerations) for details.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
 
@@ -145,11 +145,11 @@ With a bot open, expand **Settings** on the side navigation pane, and select **A
 
 1. Select Properties from the node menu, and select Data source.
 
-1. Paste your custom configuration into the [input box] under "Sites", and click on the '+' to add it to the node's Data sources. If you have not exceeded relevant limits, you may add other urls.
+1. Paste your custom configuration in the input box under "Sites", and click on the '+' to add it to the node's Data sources. If you have not exceeded relevant limits, you may add other urls.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of properties for the Search and summarize node.":::
 
-1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.(image: save topic?)
+1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.
  
 The node will now Search and summarize content from the information sources in the Bing Custom Search configuration provided. This allows you to use a large number of sources to boost your Search and summarize node without having to enter each source individually.
 
