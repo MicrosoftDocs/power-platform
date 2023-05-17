@@ -1,6 +1,6 @@
 ---
 title: "Begin the bot topic design process"
-description: "You use bot topics in Power Virtual Agents to provide answers and information for your customers or bot users. Considering the types of questions and tasks that your bot users have will aid in the development of your chatbot design plan."
+description: "You use bot topics in Power Virtual Agents to provide answers and information for your customers or bot users. Considering the types of questions and tasks that your bot users have assists in the development of your chatbot design plan."
 author: HenryJammes
 ms.date: 05/18/2023
 ms.topic: conceptual
@@ -13,7 +13,7 @@ ms.reviewer: iawilt
 
 [!INCLUDE [Preview disclaimer](includes/preview-note-guidance.md)]
 
-Defining the best topics for your bot requires an understanding of the questions users might ask or the tasks they'll try to accomplish, and the kind of information and automation you need to provide. 
+Defining the best topics for your bot requires an understanding of the questions users might ask or the tasks they try to accomplish, and the kind of information and automation you need to provide.
 
 For example, a retail chatbot might start by asking the user to choose from four things they want to do: find a store, place an order, check the status of an order, or return a purchased product. Their answer could lead them into one of four topics, each with its own topic dialog.
 
@@ -24,9 +24,9 @@ An initial set of sources for this information include:
 
 ## Different types of topics
 
-Typically, bot users have a specific question or problem they want to address or an issue they want resolved (their "task"). The types of tasks usually undertaken by bot users (and, therefore, the types of bot topics you'll need to create) fit into three categories:
+Typically, bot users have a specific question or problem they want to address or an issue they want resolved (their "task"). The types of tasks undertaken by bot users (and, therefore, the types of bot topics you need to create) fit into three categories:
 
-1. **Informational**: for example "_What is…?_", "_When will…?_", "_Why…?_"
+1. **Informational**: for example, "_What is…?_", "_When will…?_", "_Why…?_"
 2. **Task completion**: "_I want to…_", "_How do I…?_"
 3. **Troubleshooting**: _"Something isn’t working…_", "_I got an error message…_"
 
@@ -34,27 +34,29 @@ You may also need to create bot topics to handle ambiguous user questions, such 
 
 ## Topic design process
 
-
 1. **Identify the topic**
-  - Choose topics bot users ask about.
-  - Start with high-impact topics.
-  - Think about topics from an end-user's point of view. Keep in mind that they might be less familiar or knowledgeable about an area than you are.
 
-2. **List all scenarios**
-  - List all possible scenarios.
-  - Categorize scenarios: **informational**, **task completion**, and **troubleshooting**.
-  - Hierarchize topics: what are the initial questions a user asks?
+- Choose topics bot users ask about.
+- Start with high-impact topics.
+- Think about topics from an end-user's point of view. Keep in mind that they might be less familiar or knowledgeable about an area than you are.
 
-3. **Design a high-level conversation tree**
-  - Draw the conversation tree.
-  - Define the hierarchy of questions asked inside each topic.
-  - Define the fewest number of questions to understand the situation and provide the right solution.
+1. **List all scenarios**
 
-4. **Validate and iterate on the design**
-  - Read the dialog out loud before publishing to help identify if there are problems with the tone or words.
-  - [Get analytics and read session transcripts](custom-analytics-strategy.md) for further optimization.
-  - Continuously iterate on and refine your bot topics by observing your bot users' interactions with the bot after each authoring iteration.
+- List all possible scenarios.
+- Categorize scenarios: **informational**, **task completion**, and **troubleshooting**.
+- Hierarchize topics: what are the initial questions a user asks?
 
+1. **Design a high-level conversation tree**
+
+- Draw the conversation tree.
+- Define the hierarchy of questions asked inside each topic.
+- Define the fewest number of questions to understand the situation and provide the right solution.
+
+1. **Validate and iterate on the design**
+
+- Read the dialog out loud before publishing to help identify if there are problems with the tone or words.
+- [Get analytics and read session transcripts](custom-analytics-strategy.md) for further optimization.
+- Continuously iterate on and refine your bot topics by observing your bot users' interactions with the bot after each authoring iteration.
 
 > [!IMPORTANT]
 >
@@ -78,7 +80,7 @@ When you enable the [Boost conversations (preview)](/power-virtual-agents/nlu-bo
 
 Power Virtual Agents limits a chatbot to 1,000 topics.
 
-If you have large numbers of FAQs or KBs, you can avoid creating one topic for each question and answer pair by offloading them outside of Power Virtual Agents topics, while offering a single user experience in Power Virtual Agents by [using the Fallback topic](./fallback-topic.md).
+If you have large numbers of FAQs or knowledgebases, you can avoid creating one topic for each question and answer pair by offloading them outside of Power Virtual Agents topics, while offering a single user experience in Power Virtual Agents by [using the Fallback topic](./fallback-topic.md).
 
 > [!TIP]
 > [Question answering in Azure Cognitive Service for Language](/azure/cognitive-services/language-service/question-answering/overview) provides cloud-based NLP that allows you to create a natural conversational layer over your data. It is used to find the most appropriate answer for any input from your custom KB of information.
