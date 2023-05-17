@@ -33,7 +33,7 @@ These features enhance and improve upon the [authoring experience](authoring-fun
 - Allow users to sign in directly within a bot, and then use that authentication to retrieve information from backend systems.
 - Use advanced Power Automate flows to retrieve and send information to other databases.
 - Add special nodes that take the context of the entire bot conversation and share it with a human help support agent.
-- 
+
 ### In this section
 
 | Topic                                                                             | Description                                                                                                                                                                                                |

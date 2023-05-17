@@ -17,8 +17,6 @@ searchScope:
 
 # Power Virtual Agents portal overview
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 
 Power Virtual Agents lets you create powerful chatbots that can be created with a guided, no-code graphical interface - and without the need for data scientists or developers.
 
@@ -50,10 +48,14 @@ You can read more about Power Virtual Agents, or get started creating bots now a
 1. **Empower your subject matter experts**. Using Power Virtual Agents, you are in the driver's seat. Your SMEs can create bots quickly and easily using a **novel, intuitive, code-free graphical interface**, eliminating the need for AI expertise or teams of developers.
 
     :::image type="content" source="media/fundamentals-what-is-pva-portal/overview-no-code.png" alt-text="No-code interface." border="false":::
+    
+ <mark>  << --- image needs update since track changes UI has changed and its no longer the green check mark --- >>></mark>
 
 1. **Enable rich, natural conversations.** Microsoft's powerful conversational AI capabilities enable your end users to have rich multi-turn conversations that quickly guide them to the right solution. And, unlike most products on the market, there's no need to retrain AI models. Simply provide a few short examples of the topic you want the bot to handle, build the conversation using our graphical editor and your bot is ready to handle customer requests about it. You can even try out your changes in real-time in the test pane!
 
    :::image type="content" source="media/fundamentals-what-is-pva-portal/overview-conversation.png" alt-text="Natural conversation with a bot." border="false":::
+
+
 
 1. **Enable bots to take action.** Bots that can chat with your users are great, but bots that can act on their behalf are even better. With Power Virtual Agents, you can easily integrate with services and back-end systems out-of-the-box or through hundreds of easy-to-add custom connectors using Power Automate. This makes it simple to create a bot that not only responds to the user, but also takes action on their behalf.
 
