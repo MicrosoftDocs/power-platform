@@ -205,9 +205,3 @@ Curently, this feature supports content stored in these formats:
 - PowerPoint documents (pptx)
 - PDF documents (pdf)
 
-### Search and summarize into variables
-
-- The multiple options that come up in S&S instructions should refer to here
-- Thoughts on variables?
-
-## What else can multiple sources/S&S do?
