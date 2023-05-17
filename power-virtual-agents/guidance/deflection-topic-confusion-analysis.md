@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 Using semantically similar trigger phrases for two different topics can lead to confusion, as the chatbot may not know which topic to open and will need to ask follow-up questions to the end-user.
 
 > [!TIP]
-> Confusion is typically measured by the frequency of the [Multiple Topics Matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched) topic, a.k.a. _Did You Mean_, being triggered.
+> Confusion Is typically measured by the frequency of the [Multiple Topics Matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched) topic (also known as "did you mean") being triggered.
 
 This often results in the escalation to an agent, and spikes the deflection rate of the bot.
 

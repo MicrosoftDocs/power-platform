@@ -2,17 +2,16 @@
 title: "Begin the bot topic design process"
 description: "You use bot topics in Power Virtual Agents to provide answers and information for your customers or bot users. Considering the types of questions and tasks that your bot users have will aid in the development of your chatbot design plan."
 author: HenryJammes
-ms.date: 02/22/2023
+ms.date: 05/18/2023
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: hejammes
 ms.reviewer: iawilt
-ms.collection: virtual-agent
 ---
 
 # Defining chatbot topics
 
-<mark>IDW TODO:: Confirm need for ms.service in the metadata</mark>
+[!INCLUDE [Preview disclaimer](includes/preview-note-guidance.md)]
 
 Defining the best topics for your bot requires an understanding of the questions users might ask or the tasks they'll try to accomplish, and the kind of information and automation you need to provide. 
 
@@ -35,32 +34,27 @@ You may also need to create bot topics to handle ambiguous user questions, such 
 
 ## Topic design process
 
-:::row:::
-   :::column span="":::
-      **Identify the topic**
-        - Choose topics bot users ask about.
-        - Start with high-impact topics.
-        - Think about topics from an end-user's point of view. Keep in mind that they might be less familiar or knowledgeable about an area than you are.
-   :::column-end:::
-   :::column span="":::
-      **List all scenarios**
-        - List all possible scenarios.
-        - Categorize scenarios: **informational**, **task completion**, and **troubleshooting**.
-        - Hierarchize topics: what are the initial questions a user asks?
-   :::column-end:::
-   :::column span="":::
-      **Design a high-level conversation tree**
-        - Draw the conversation tree.
-        - Define the hierarchy of questions asked inside each topic.
-        - Define the fewest number of questions to understand the situation and provide the right solution.
-   :::column-end:::
-   :::column span="":::
-      **Validate and iterate on the design**
-        - Read the dialog out loud before publishing to help identify if there are problems with the tone or words.
-        - [Get analytics and read session transcripts](custom-analytics-strategy.md) for further optimization.
-        - Continuously iterate on and refine your bot topics by observing your bot users' interactions with the bot after each authoring iteration.
-   :::column-end:::
-:::row-end:::
+
+1. **Identify the topic**
+  - Choose topics bot users ask about.
+  - Start with high-impact topics.
+  - Think about topics from an end-user's point of view. Keep in mind that they might be less familiar or knowledgeable about an area than you are.
+
+2. **List all scenarios**
+  - List all possible scenarios.
+  - Categorize scenarios: **informational**, **task completion**, and **troubleshooting**.
+  - Hierarchize topics: what are the initial questions a user asks?
+
+3. **Design a high-level conversation tree**
+  - Draw the conversation tree.
+  - Define the hierarchy of questions asked inside each topic.
+  - Define the fewest number of questions to understand the situation and provide the right solution.
+
+4. **Validate and iterate on the design**
+  - Read the dialog out loud before publishing to help identify if there are problems with the tone or words.
+  - [Get analytics and read session transcripts](custom-analytics-strategy.md) for further optimization.
+  - Continuously iterate on and refine your bot topics by observing your bot users' interactions with the bot after each authoring iteration.
+
 
 > [!IMPORTANT]
 >

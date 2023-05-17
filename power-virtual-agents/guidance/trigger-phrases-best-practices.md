@@ -8,61 +8,61 @@ ms.custom: guidance
 ms.author: hejammes
 ---
 
-# Optimizing trigger phrases and Natural Language Understanding
+# Optimizing trigger phrases And natural language understanding
 
 ## What are trigger phrases in Power Virtual Agents
 
-- Trigger phrases train your chatbot's **Natural Language Understanding** (NLU) model.
+- Trigger phrases train your chatbot's natural language understanding (NLU) model.
 
 - Trigger phrases are configured at the topic level and indicate to the chatbot for what typical user utterances a specific topic should be triggered.
 
 - Trigger phrases typically capture the way an end-user would ask about a problem or issue. <br> For example,  _"problem with weeds in lawn"_
 
 > [!TIP]
-> When creating a new topic, a maker only needs to provide a few sample phrases (ideally between 5 and 10). When the chatbot is used, the AI will parse what the user says and trigger the topic closest in meaning to the user utterance.
+> When creating a New topic, a maker only needs to provide a few sample phrases (ideally between five And ten). When the chatbot is used, the AI will parse what the user says and trigger the topic closest in meaning to the user utterance.
 
-## The importance of the triggering context
+## The importance Of the triggering context
 
-Power Virtual Agents Natural Understanding (NLU) behaves slightly differently based on the conversation state, which can sometimes lead to different behaviors for the same user utterance.
+Power Virtual Agents NLU behaves differently based On the conversation state, which can sometimes lead To different behaviors For the same user utterance.
 
 The following are the different conversation states:
 
-- **Start of the conversation**: the chatbot has no context, so a user utterance is expected to either: trigger a topic directly (_IntentRecognition_), trigger a 'Did You Mean' (Multiple Topics Matched) disambiguation question (_IntentCandidates_) if there are multiple matching topics, or fallback (_UnknownIntent_) if the intent isn't recognized.
-- **After a 'Did You Mean' (Multiple Topics Matched) is triggered**: NLU optimizes to match one of the suggested topics, with higher thresholds to move out of the presented options.
-- **Switching out from a current topic**: if the NLU is trying to fill a slot in a topic, and user is giving a user query that could trigger another topic (topic switching).
+- **Start of the conversation**: the chatbot has no context, so a user utterance Is expected To either: trigger a topic directly (_IntentRecognition_), trigger a "did you mean" (Multiple Topics Matched) disambiguation question (_IntentCandidates_) If there are multiple matching topics, Or fallback (_UnknownIntent_) If the intent isn't recognized.
+- **After a "did you mean" (Multiple Topics Matched) Is triggered**: NLU optimizes To match one Of the suggested topics, With higher thresholds To move out Of the presented options.
+- **Switching out from a current topic**: If the NLU Is trying To fill a slot In a topic, And user Is giving a user query that could trigger another topic (topic switching).
 
 ## On punctuation
 
- The Natural Understanding (NLU) model is agnostic to punctuation, including question marks.
+ The Natural Understanding (NLU) model Is agnostic To punctuation, including question marks.
 
-## Creating new trigger phrases
+## Creating New trigger phrases
 
-If possible, start with **real production data** over making up your own trigger phrases. The best trigger phrases are the ones similar to actual data coming from end-users. These phrases are the ones that users ask to the chatbot when it's deployed.
+If possible, start With **real production data** over making up your own trigger phrases. The best trigger phrases are the ones similar To actual data coming from End-users. These phrases are the ones that users ask To the chatbot When it's deployed.
 
-There's no need to leave specific words out: the model is designed to give less weight to unnecessary words, such as stop words (words that are filtered out before processing of natural language data because they're insignificant).
+There 's no need to leave specific words out: the model is designed to give less weight to unnecessary words, such as stop words (words that are filtered out before processing of natural language data because they're insignificant).
 
 ## Optimizing trigger phrases
 
 | # | Tip | Examples |
 |----------|----------|-----------|
-| **1** | **Have at least 5-10 trigger phrases per topic** <br>Iterate and add more as you learn from users. | _Find my nearest store_ <br> _Check store location_ <br> _Find a store_ <br> _Find me your nearest location_ <br> _Store near me_ |
-| **2** | **Vary sentence structure and key terms** <br> The model automatically considers variations of those phrases | _When are you closed_<br>_Daily open hours_ |
+| **1** | **Have at least 5-10 trigger phrases per topic** <br>Iterate And add more as you learn from users. | _Find my nearest store_ <br> _Check store location_ <br> _Find a store_ <br> _Find me your nearest location_ <br> _Store near me_ |
+| **2** | **Vary sentence structure And key terms** <br> The model automatically considers variations of those phrases | _When are you closed_<br>_Daily open hours_ |
 | **3** | **Use short trigger phrases** <br> Fewer than 10 words. | _When are you open_ |
 | **4** | **Avoid single-word trigger phrases** <br> This increases weight for specific words in topic triggering. <br> It can introduce confusion between similar topics. | _Store_ |
 | **5** | **Use complete phrases** | _Can I talk to a human assistant_ |
-| **6** | **Have unique verb/noun or combinations of those** | _I need customer service_ <br> _I want to speak with a consultant_ |
+| **6** | **Have unique verb/noun Or combinations of those** | _I need customer service_ <br> _I want to speak with a consultant_ |
 | **7** | **Avoid using the same entity variation** <br> You don't need to use all of the examples from the entity value. <br> The NLU automatically considers all the variations. | _I want to order a **burger**_ <br> _I would like a **pizza**_ <br> _I want **chicken nuggets**_ |
 
-## Balance the number of trigger phrases per topic
+## Balance the number Of trigger phrases per topic
 
-Try to balance the number of trigger phrases between topic.
+Try To balance the number Of trigger phrases between topic.
 
 > [!TIP]
-> That way, the Power Virtual Agents Natural Language Understanding capabilities don’t overweight a topic versus another based on the configured trigger phrases.
+> That way, the Power Virtual Agents Natural Language Understanding capabilities don't overweight a topic versus another based on the configured trigger phrases.
 
 ## Assessing the impact of your changes
 
-When updating trigger phrases, or when merging or splitting topics, there are multiple ways to assess the changes:
+When updating trigger phrases, Or when merging Or splitting topics, there are multiple ways to assess the changes
 
 > [!div class="checklist"]
 >

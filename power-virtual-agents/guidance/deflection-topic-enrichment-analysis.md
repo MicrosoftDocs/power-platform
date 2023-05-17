@@ -24,7 +24,7 @@ The analyzed user queries from the Fallback topic typically fall into these buck
 1. User queries that are expected to trigger existing topics, but are somehow missed by the NLU  of the bot.
 2. User queries that can be converted to newly suggested topics.
 3. Unmapped user queries that aren't relevant to any existing or new topics.
-4. Other categories including, user queries that triggered a [Multiple Topics Matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched) (also known as _Did You Mean_) followed by Fallback, unclear user queries that hit Fallback, user queries from incomplete conversations that led to Fallback.
+4. Other categories including, user queries that triggered a [Multiple Topics Matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched) (also known as "did you mean") followed by Fallback, unclear user queries that hit Fallback, user queries from incomplete conversations that led to Fallback.
 
 Of the four categories, #1 and #2 are immediately actionable. Based on the findings from #1 and #2, you can enrich the topics by adding more trigger phrases for existing topics or creating new topics.
 
