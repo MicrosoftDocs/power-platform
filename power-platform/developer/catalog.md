@@ -390,7 +390,10 @@ The following information is available about the Package
 |**Modified By**|Modified By User|
 |**Created On**|Date created|
 
-Package and Content information
+##### Package and Content information
+
+|Field |Description|
+|---------|---------|
 |**Package File**|Package Deployer package file comprising of Catalog item contents|
 |**Package Manifest File**|Package Manifest file (.json)|
 |**Contained Solutions and Components**|This information is for reference only and being revised. Future update will enable a streamlined view of this data|
