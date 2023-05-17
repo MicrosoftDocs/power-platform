@@ -40,3 +40,27 @@ When a CAE enabled and ready client such as UCI or any client makes a call to Po
 For Power Platform, continuous access evaluation is currently supported by Dataverse only and Microsoft is working additional Power Platform services and clients to support continuous access evaluation. 
 
  See [Continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) for the limitations of continuous access evaluation. 
+ 
+## Scenarios supported by Power Platform 
+
+Continuous access evaluation supports two types of events: 
+
+- User Critical Events are the events which are related to user’s access to cloud resources. 
+- Conditional Access policy evaluation occurs when a user should lose access to a resource based on an administrator-defined policy like IP location policy. 
+
+User Critical events include: 
+
+- User account is disabled/deleted. 
+- Password is changed/reset. 
+- User sessions are revoked. 
+- Multifactor authentication is enabled for the user. 
+
+Conditional Access policy evaluation occurs when the user account is no longer connecting from allowed IP location. 
+
+## Power Platform clients supporting continuous access evaluation. 
+
+Continuous access evaluation-enabled clients for Power Platform support a claim challenge, which is a redirect of a user session to Azure AD for reauthentication, when a cached user token is rejected by a continuous access evaluation-enabled Power Platform service such as Dataverse. Currently the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) support CAE claims, and many more clients will be onboarded to CAE in future. 
+
+For clients that don't support continuous access evaluation, the access token lifetime to Power Platform remains as one hour by default. 
+
+ 
