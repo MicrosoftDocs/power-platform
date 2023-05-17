@@ -16,7 +16,7 @@ searchScope:
 
 # Boost conversations with Search and summarize
 
-When you created your bot, you were invited to enter a url from which your bot could to generate responses. This is discussed in detail in [Generative answers](nlu-boost-conversations.md). You can further boost your bot's conversations by using multiple information sources, both internal and external [to your network (?)], including:
+When you created your bot, you were invited to enter a url from which your bot could to generate responses. This is discussed in detail in [Generative answers](nlu-boost-conversations.md). You can further boost your bot's conversations by using multiple internal and external information sources, including:
 
 External sources:
 
@@ -30,9 +30,9 @@ Internal resources:
  - DataVerse
  - Custom data (internal or external): Supply your own content from any source; for instance, from a Power Automate Flow, Skill, or other source.
 
-In addition, you can add information sources to a topic using the **Search and summarize content node**. This node allows you to specify sources that the *node* will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability. [**Question**: Does this override or _augment_ the "normal" boosted sources?]
+In addition, you can add information sources to a topic using the **Search and summarize content node**. This node allows you to specify sources that the *node* will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability. Note that this node's information sources override those you may have specified at the bot level, which function as a fallback. 
 
-These methods of boosting your bot using **generative answers** allows you to specify information sources for the entire bot (for instance, with a url at bot creation) and use additional information sources within a topic via the Search and summarize node.
+These methods of boosting your bot using **generative answers** allows you to specify information sources for the entire bot (for instance, with a url at bot creation) and use alternate information sources within a topic via the Search and summarize node.
 
 ## Information Sources
 
@@ -44,12 +44,11 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 | [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
 | Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
 | OneDrive for business | Internal | Connects to a OneDrive for Business url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| Other internal data | Internal | ... | ... | ... |
-| Project Wednesday | Internal | Azure Open AI knowledge repository | ... | ... |
+| Other internal data | Internal | ... | one variable, populated with JSON results to be summarized | ... |
 
 As the table notes, some features require user authentication to be configured for your bot. In the cases of SharePoint and OneDrive for Business, authentication is done using Azure Active Directory. User authentication for information sources also means that when a specific user asks a question of the bot, the bot will only surface content that specific user has access to read on SharePoint or OneDrive for Business.
 
-## Add a Search and summarize content node
+## Create generative answers
 
  Adding a Search and summarize content node allows you to use generative answers with your a bot's topic. This allows you to search internal and external information sources from the node level to further boost your bot's conversations.
 
