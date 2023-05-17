@@ -26,10 +26,9 @@ External sources:
 Internal resources:
 
  - SharePoint
- - OneDrive
- - Other internal information sources
- - (Project Wednesday)
- - DataVerse.
+ - OneDrive for Business
+ - DataVerse
+ - Custom data (internal or external): Supply your own content from any source; for instance, from a Power Automate Flow, Skill, or other source.
 
 In addition, you can add information sources to a topic using the **Search and summarize content node**. This node allows you to specify sources that the *node* will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability. [**Question**: Does this override or _augment_ the "normal" boosted sources?]
 
@@ -44,11 +43,11 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 | Bing Search | External | Searches the query in put on Bing; returning results only from provided websites | 4 public urls (for example, microsoft.com) | None |
 | [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
 | Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| OneDrive | Internal | Connects to a OneDrive url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
+| OneDrive for business | Internal | Connects to a OneDrive for Business url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
 | Other internal data | Internal | ... | ... | ... |
 | Project Wednesday | Internal | Azure Open AI knowledge repository | ... | ... |
 
-As the table notes, some features require user authentication to be configured for your bot. In the cases of SharePoint and OneDrive, authentication is done using Azure Active Directory. User authentication for information sources also means that when a specific user asks a question of the bot, the bot will only surface content that specific user has access to read on SharePoint or OneDrive for Business.
+As the table notes, some features require user authentication to be configured for your bot. In the cases of SharePoint and OneDrive for Business, authentication is done using Azure Active Directory. User authentication for information sources also means that when a specific user asks a question of the bot, the bot will only surface content that specific user has access to read on SharePoint or OneDrive for Business.
 
 ## Add a Search and summarize content node
 
@@ -80,7 +79,7 @@ This sections provides instructions on boosting conversations with generative an
 
 ### Connect to a single URL to boost a conversation
 
-#### [Bot]
+#### Bot settings
 
 When you create a bot using the unified canvas, you are invited to boost it's conversations with generative answers. [Create a boosted bot](nlu-gpt-quickstart.md#create-a-boosted-bot) takes you through this process.
 
@@ -102,7 +101,7 @@ You can also change the URL, disable **generative answers**, or change the level
 
 You can now test your bot to see how well it responds to questions related to the content on the URL you specified. For more details, refer to [Test you bot's generative answers reach](nlu-gpt-quickstart.md#test-your-bots-boosted-conversational-reach).
 
-#### Search and summarize node
+#### Search and summarize node properties
 
 To boost coverage in a Search and summarize node, follow these instructions:
 
@@ -117,7 +116,6 @@ To boost coverage in a Search and summarize node, follow these instructions:
 1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.
 
 
-
 ### Use a Bing Custom Search to search a number of websites
 
 [Bing Custom Search](https://www.customsearch.ai/) allows you to build a tailored search for specific content. The generated **Custom configuration ID** can then be used in your bot by generative answers. If you haven't used Bing Custom Search, use the link at the beginning of this paragraph, and follow [Quickstart: Create your first Bing Custom Search instance](/bing/search-apis/bing-custom-search/how-to/quick-start). This will walk you through creating and publishing one. Once you have a Custom configuration ID for your search, you can use it to boost conversations with generative answers.
@@ -128,7 +126,7 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize node with bing custom search.":::
 
-#### [Bot]
+#### Bot settings
 
 With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
 
@@ -144,7 +142,7 @@ With a bot open, expand **Settings** on the side navigation pane, and select **A
 
 1. Select **Save** at the top of the **AI capabilities** page.
 
-#### Search and summarize node
+#### Search and summarize node properties
 
 1. Select Properties from the node menu, and select Data source.
 
@@ -180,9 +178,10 @@ If you have not already, [create a boosted bot](nlu-boost-conversations.md#incre
 
 > [!NOTE]
 >
-> A best practice is to omit the http/https. Also, that recognized SharePoint urls will be from the sharepoint.com domain.
+> A best practice is to omit the http/https. Also, recognized SharePoint urls will be from the sharepoint.com domain.
 
 When you have entered your SharePoint url, click **Create**.
+
 If you are using an existing bot, you can update or change urls as described in [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation).
 
 Once your bot has been created, you can send it messages in the test canvas chat window. Try sending it some phrases that you would expect to return content. If the user account you used to sign into powerva.microsoft.com **does not** have access to the SharePoint site you will not get content, or may get a System Error.
