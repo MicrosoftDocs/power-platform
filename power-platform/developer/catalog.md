@@ -371,8 +371,6 @@ The following table describes selected fields that can be included in the form:
 
 -->
 
-New table under construction
-
 Package Information
 |Field |Description|
 |---------|---------|
