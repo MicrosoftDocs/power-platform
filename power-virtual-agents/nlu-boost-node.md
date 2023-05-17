@@ -86,7 +86,7 @@ You can also change the URL, disable **generative answers**, or change the level
 
 1. With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
 
-    1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
+    1. Under **Boost conversational coverage (preview)**, use the checkbox for Generative answers to enable or disable the capability.
 
     1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](nlu-boost-conversations.md#url-considerations) as when enabling the capability when you create a bot.
 
@@ -129,7 +129,7 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
 With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
 
-1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
+1. Under **Boost conversational coverage (preview)**, use the checkbox for generative answers to enable or disable the capability.
 
 1. In the field under the checkbox, change the current url to the Custom configuration ID, or add the ID. This is similar to enabling this capability at bot creation. See [Url considerations](nlu-boost-conversations.md#url-considerations) for details.
 
