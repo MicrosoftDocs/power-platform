@@ -1,16 +1,13 @@
 ---
 title: "Power Virtual Agents Unified Authoring Customer/Migration Guidance"
 description: "DESCRIPTION"
-keywords: "KEYWORDS"
-ms.date: mm/dd/yyyy
-ms.service: service
-ms.topic: article
+ms.date: 05/23/2023
+ms.topic: how-to
 author: doc-writer
-manager: shellyha
+manager: leeclontz
 ms.author: doc-writer-alias
-ms.reviewer: pm-alias
-ms.custom: ceX
-ms.collection: collection
+ms.reviewer: iawilt
+
 
 
 
