@@ -66,13 +66,11 @@ After the thirty-day window from the date you delete users in the Microsoft 365 
 
 If you want to permanently delete the user manually without waiting for thirty days when the user account is automatically deleted, you can do so by using the Azure AD option in the Azure portal by following the instructions here: [Permanently delete a user](/azure/active-directory/fundamentals/active-directory-users-restore#permanently-delete-a-user).
 
-## Delete users in Power Platform (preview)
+## Delete users in Power Platform
 
 Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in Power Platform environments with a **Disabled** status. These users can be deleted permanently from Power Platform environments. Deleting users from Power Platform environments goes through the similar deletion stages as in Azure AD. When you first delete the user in the Power Platform environment, the disabled user is first *soft deleted*, and then you can *permanently delete* the user.
 
 > [!IMPORTANT]
-> - Deleting users in Power Platform is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Not all users with a **Disabled** status can be deleted. A user can be in a **Disabled** status in Power Platform environment and still be active in Azure AD. The user can be in this disabled state when the license was removed or the user was removed from the security group of the environment. The user can also be disabled by updating the **Status** field. Customizing the User form by allowing the Status field to be updated is required.
 
 ### View the list of disabled users
