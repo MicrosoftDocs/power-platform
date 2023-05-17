@@ -201,10 +201,7 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 ### Publishing
 
-During this preview, you won't be able to publish bots that have generative answers enabled. 
-
-If you'd like to publish a bot that has generative answers enabled, you need to ask your admin to enable it for your tenant in the **Power Platform admin center**. 
-
+You'll be able to publish bots that have generative answers enabled by following the guidance in the Publish and integrate documentation, starting with [Key concepts - publish your bot](publication-fundamentals-publish-channels.md). Your admin could disable the ability to publish bots with generative answers for your tenant in the **Power Platform admin center**. 
 
 :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
 
