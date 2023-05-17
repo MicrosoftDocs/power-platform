@@ -29,7 +29,7 @@ Admins must use the Microsoft 365 admin center to delete users:
 
 1. Select the names of the users you want to delete, and then select **Delete user**.
 
-Although you deleted the user's account, you're still paying for the license. To stop paying for the license, follow the procedures in [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide). Or, you can assign the license to another user. It won't be assigned to anyone automatically.
+Although you deleted the user's account, you're still paying for the license. To stop paying for the license, follow the procedures in [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide&preserve-view=true). Or, you can assign the license to another user. It won't be assigned to anyone automatically.
 
 ### About deleted users
 
@@ -304,7 +304,7 @@ To check on the status of your job, select the **My bulk deletion system jobs** 
 
 ### See also
 
-[Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide) <br />
+[Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide&preserve-view=true) <br />
 [Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md) <br />
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
