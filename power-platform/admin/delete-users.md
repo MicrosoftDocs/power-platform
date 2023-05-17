@@ -298,8 +298,6 @@ To check the status of your job, select the **My bulk deletion system jobs** vie
 
 To check on the status of your job, select the **My bulk deletion system jobs** view.
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RW1305f]
-
 ### See also
 
 [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide&preserve-view=true) <br />
