@@ -30,7 +30,7 @@ Data Lake Storage is a key part of Cortana Intelligence, meaning that it works w
 
 ## Prerequisites
 
-- To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you'll need one of these roles: Power Platform Service admin, Dynamics 365 admin, or Microsoft 365 Global admin.
+- To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you'll need one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
 - [Create a storage account](/azure/storage/blobs/create-data-lake-storage-account) to use with Azure Data Lake Storage Gen2. Make sure you select the same location for the data lake storage account as your Power BI tenant. To learn more about how to determine your Power BI tenant location, see [Where is my Power BI tenant located?](/power-bi/admin/service-admin-where-is-my-tenant-located). In addition, you must have *owner* or *contributor* access to the Data Lake Storage account, in addition to *owner* or *contributor* access to the Azure subscription. 
 

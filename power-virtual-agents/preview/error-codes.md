@@ -71,7 +71,7 @@ Common problems include:
 
 **Resolution:**
 
-- Your environment's data loss prevention (DLP) policies require that users sign in. See [Configure user authentication](advanced-user-authentication.md#add-user-authentication-with-the-signin-system-topic).
+- Your environment's data loss prevention (DLP) policies require that users sign in. See [Configure user authentication](advanced-user-authentication.md#add-user-authentication-with-the-sign-in-system-topic).
 - One or more connectors that are used in the bot aren't in the same data group. See [Power Virtual Agents connectors](../admin-data-loss-prevention.md#power-virtual-agents-connectors).
 - One or more connectors that are used in the bot are blocked by the tenant administrator.
 
