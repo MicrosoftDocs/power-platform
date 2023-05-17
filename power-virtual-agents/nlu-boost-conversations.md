@@ -20,7 +20,7 @@ searchScope:
 
 [!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
-When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. By utilizing generative answers in Power Virtual Agents, your bot can find and present information from multiple sources (which may be internal or external) even if you haven't created a topic for it. These can be used as a fallback, or as primary information sources in your chatbot.
+Generative answers in Power Virtual Agents allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot or as fallback when authored topics are unable to address a user's query.
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
@@ -43,10 +43,12 @@ This could take a while and some specialized knowledge - but with **generative a
 
 ## Generative answers as a fallback
 
-When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. This process includes the Fallback [system topic](authoring-system-topics.md), though it may not match the user's intent. If a matching intent is not found in the topics, the bot can use generative answers to attempt answering the query. This is called "Generative Answers for fallback".
+When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. If a matching intent is not found in the topics, the bot can use generative answers to attempt answering the query. This is called "Generative Answers for fallback".
+Finally, if the user's intent is not matched by topics or generative answers, the Fallback [system topic](authoring-system-topics.md) will be called.
+
 This document is focused on _getting you started_ using generative answers to augment your bot's ability to help customers.
 
-While generative answers serves as a fallback in this situation, it is not limited to fallback scenarios. Your bot's ability to answer user questions can also use additional web sites, external or internal web sources and other information sources such as SharePoint or OneNote. Details and examples on how you can expand your bot's ability to use generative answers can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md). The following is an outline of sources that can be used by generative answers.
+While generative answers serves as a fallback in this situation, it is not limited to fallback scenarios. Your bot's ability to answer user questions can also use additional web sites, external or internal web sources and other information sources such as SharePoint or OneDrive for Business. Details and examples on how you can expand your bot's ability to use generative answers can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md). The following is an outline of sources that can be used by generative answers.
 
 External resources include:
 
