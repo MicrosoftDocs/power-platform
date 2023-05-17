@@ -31,7 +31,7 @@ This article is intended for system administrators or IT professionals who are f
 >
 > Power Virtual Agents **preview** only supports skills built using [Bot Framework SDK version 4.12.0+](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
 >
-> Power Virtual Agents **preview** and **classic** only support skills built using [Bot Framework SDK version 4.7+](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
+> Power Virtual Agents **classic** only supports skills built using [Bot Framework SDK version 4.7+](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
 > 
 > If you're using [Bot Framework Composer](/composer/) it's strongly recommended that you use Composer 2.x. If you want to use an existing Composer 1.x bot, [first migrate it to Composer 2.x](/composer/how-to-migrate-bot-to-2-0) before using it as a skill.
 
