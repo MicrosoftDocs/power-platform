@@ -14,7 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Boost conversations with Search and summarize
+# Generative answers with Search and summarize
 
 When you created your bot, you were invited to enter a url from which your bot could to generate responses. This is discussed in detail in [Generative answers](nlu-boost-conversations.md). You can further boost your bot's conversations by using multiple internal and external information sources, including:
 
