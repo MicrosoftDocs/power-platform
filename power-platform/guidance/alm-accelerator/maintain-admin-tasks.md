@@ -35,10 +35,11 @@ Once a project is onboarded to the ALM Accelerator, there are many tasks you can
 1. If you set up your project using the project wizard, you can upgrade an existing ALM Accelerator template repository to the latest version by selecting **Upgrade**. For more information on how the upgrade process works, see [Upgrade the ALM Accelerator for Power Platform app](setup-upgrade-configuration.md). If your project wasn't setup using the setup wizard, creating the sync-pipeline-repo pipeline manually will allow you to use the upgrade feature in the future.
 
 ## Onboarding new maker or deployment environments
+When new maker or deployment environments are joining the ALM process, you'll need to on-board those environments. This includes creating app users in Dataverse and new service connections in Azure DevOps to allow the pipelines to connect to the environment.
 
 ### Create an app user in your Dataverse environments
 
-Before creating new service connections for new environments you'll need to configure an App User in the Dataverse environment using the following steps for each environment.
+Before creating new service connections for new environments, you'll need to configure an app user in the Dataverse environment using the following steps for each environment.
 
 1. Go to [Power Platform admin center](https://aka.ms/ppac).
 
