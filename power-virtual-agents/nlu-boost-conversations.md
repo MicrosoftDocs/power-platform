@@ -1,10 +1,10 @@
 ---
-title: Boost conversations (preview)
+title: Generative Answers (preview)
 description: Provide answers and information for your bot users, even if you haven't created a topic for their issue.
 keywords: "PVA"
-ms.date: 3/16/2023
+ms.date: 5/03/2023
 ms.topic: how-to
-author: iaanw
+author: KendalBond007
 ms.author: iawilt
 ms.reviewer: 
 ms.collection: virtual-agent
@@ -16,20 +16,20 @@ searchScope:
 
 
 
-# Boost conversations (preview)
+# Generative answers (preview)
 
 [!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
-When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. However, by utilizing the boosted conversations in Power Virtual Agents, your bot can find and present information from an external source - even if you haven't created a topic for it.
+When designing and creating a chatbot, you'll likely encounter situations where your bot users ask questions that your bot doesn't have an answer for. By utilizing **generative answers (GA)** in Power Virtual Agents, your bot can find and present information from multiple sources (which may be internal or external) even if you haven't created a topic for it. These can be used as a fallback, or as primary information sources in your chatbot.
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
 Now, before involving a live agent, the bot uses natural language processing (NLP) to:
 - Parse what a user types to determine what they're asking
-- Find, collate, and parse relevant information from a specified URL (for example, your company's website) with Bing Search
+- Find, collate, and parse relevant information from a specified source (for example, your company's website) or from multiple sources, including Sharepoint and OneNote. "...with Bing Search" (phrase intention?)
 - Create a plain language response and then deliver that to the bot user
 
-This means you can quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers might end up asking.
+As a result you can quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers end up asking.
 
 Your workflow might be like this:
 
@@ -37,7 +37,34 @@ Your workflow might be like this:
 
 1. After testing it, you publish your bot so you can instantly provide answers, help, and guidance to your customers or bot users.
 
-1. You create individual topics for the most important or most often-asked questions from your customers (which you might have developed based on [analytics from previous bots](analytics-overview.md) or existing support issues). This could take a while and some specialized knowledge - but with **Boost conversations** enabled you're up and running from day one.
+1. You create individual topics for the most important or most often-asked questions from your customers (which you might have developed based on [analytics from previous bots](analytics-overview.md) or existing support issues).
+
+This could take a while and some specialized knowledge - but with **generative answers** enabled you're up and running from day one.
+
+## Generative answers as a fallback
+
+When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. This process includes the Fallback [system topic](authoring-system-topics.md), though it may not match the user's intent. If a matching intent is not found in the topics, the bot can use **GA** to attempt answering the query. This is called "Generative Answers for fallback".
+This document is focused on _getting you started_ using **GA** to augment your bot's ability to help customers.
+
+While **GA** serves as a fallback in this situation, it is not limited to fallback scenarios. Your bot's ability to answer user questions can also use additional web sites, external or internal web sources and other information sources such as SharePoint or OneNote. Details and examples on how you can expand your bot's ability to use **GA** can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md). The following is an outline of sources that can be used by **GA**.
+
+External resources include:
+
+ - Bing Search
+ - [Bing Custom Search](https://www.customsearch.ai/)
+  
+Internal resources include:
+
+ - SharePoint
+ - OneDrive
+ - Other internal information sources
+ - (Project Wednesday)
+ - DataVerse
+
+
+### Source authentication
+
+In addition to [url considerations](nlu-boost-conversations.md#url-considerations), you will also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote as a source for **generative answers**. Additional details can be found in [Information sources](nlu-boost-node.md#information-sources).
 
 ## Prerequisites
 
@@ -57,7 +84,7 @@ Your workflow might be like this:
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
-- You must enable the **Boost conversations** option for each bot.
+- You must enable the **generative answers** option for each bot.
 
 - [Review AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) and [Learn more about Azure OpenAI](/legal/cognitive-services/openai/transparency-note).
 
@@ -65,7 +92,7 @@ Your workflow might be like this:
 
 - This capability may be subject to usage limits or capacity throttling.
 
-## Boost your bot's reach
+## Increasing your bot's reach
 
 1. Go to the [Power Virtual Agents home page](https://web.powerva.microsoft.com/). 
 
@@ -75,23 +102,27 @@ Your workflow might be like this:
     
 1. Enter a name for the bot.
 
+1. Select the language you want your bot to speak from the menu. [The default language is English (true?)]
+
 3. Provide a website you'd like the bot to use for generating answers, and click **Create**. See the [URL considerations](#url-considerations) section for what types of URLs you can use. 
 
-    :::image type="content" source="media/nlu-gpt/responses-create-preview-bot.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
+    :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
-After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that **Boost conversations** is enabled, or choose to change the URL you want to use.
+After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that **GA** is enabled, or choose to change the URL you want to use.
 
-You can also change the URL, disable **Boost conversations**, or change the level of content moderation in the settings for the bot:
+You can also change the URL, disable **GA**, or change the level of content moderation in the settings for the bot:
 
 1. With a bot open, expand **Settings** on the side navigation pane, and select **AI Capabilities**.
 
-    1. Under **Boost conversational coverage (preview)**, use the checkbox for **Boost conversations** to enable or disable the capability.
+    1. Under **Boost conversational coverage (preview)**, use the checkbox for **GA** to enable or disable the capability.
 
     1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](#url-considerations) as when enabling the capability when you create a bot.
 
-    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot will generate more answers, but the answers may be irrelevant or undesirable.
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
 
-    :::image type="content" source="media/nlu-gpt/responses-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Boost conversations enabled and highlighted.":::
+    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
+
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-content-moderation.png" alt-text="Screenshot of the bot content moderation menu.":::    
 
 1. Select **Save** at the top of the **AI capabilities** page.
 
@@ -103,7 +134,7 @@ The URL you provide represents the scope of content that will be used for genera
 
 There are some requirements on the type and structure of the URL you use:
 
-The URL can have up to two levels of depth (or "sub-paths", indicated by forward slashes (/)). Your URL can have a trailing forward slash, and this won't be included in the limit of two slashes: 
+The URL can have up to two levels of depth (or "sub-paths", indicated by forward slashes (/)). Your URL can have a trailing forward slash, which won't be included in the limit of two slashes: 
 - The URLs *<span>www</span>.contoso.com*, *<span>www</span>.fabrikam.com/engines/rotary*, or *<span>www</span>.fabrikam.com/engines/rotary/* would be valid. 
     The URL *<span>www</span>.fabrikam.com/engines/rotary/dual-shaft* would not.
 
@@ -117,7 +148,7 @@ The capability won't generate responses from a URL that points to a website that
 
 You should also be aware of the following characteristics of the capability:
   
-The bot will generate responses from any publicly viewable content under the URL you specify. This includes subdomains under a top-level domain:
+The bot generates responses from any publicly viewable content under the URL you specify. This includes subdomains under a top-level domain:
 - If you were to use the URL *<span>www</span>.fabrikam.com/engines/rotary*, the content on *<span>www</span>.fabrikam.com/engines/rotary/dual-shaft* would also be used by the bot to generate responses.  
 Content from *<span>www</span>.fabrikam.com/tools* would not be used.  
 
@@ -130,17 +161,15 @@ The bot may generate nonsensical, irrelevant, or inappropriate answers if you us
 See the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) for more information on how the AI is trained to avoid generating malicious and offensive responses.
 
 The URL you specify should host the content you want the bot to generate answers from; it should not be the URL for a search engine:
--  Using *<span>bing</span>.com* or other search engines in the URL won't provide useful responses.  
+-  Using *<span>bing</span>.com* or other search engines in the URL won't provide useful responses.
 
-
-
-## Test your bot's boosted conversational reach 
+## Test your bot's **generative answers** reach
 
 1. Click on **Test your bot** at the bottom of the side navigation pane. 
 
-1. In the **Test bot** panel, ask the bot questions that take advantage of **Boost conversations** capability.
+1. In the **Test bot** panel, ask the bot questions that take advantage of **GA** capability.
 
-The boost conversation preview works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
+**Generative answers** works well with a large variety of question types. However, there are certain types of questions that may produce less-helpful responses, including:
 
 - personal questions 
 - questions that require authenticated access to content
@@ -148,10 +177,9 @@ The boost conversation preview works well with a large variety of question types
  
 You should also be aware of some of the characteristics of the AI, and how to get the most out of the questions you ask:
 
-- The bot can have difficulty answering questions that require calculations, comparisons, or form submissions to provide answers. 
-    This includes questions that use comparative and superlative terms such as better or best, latest, or cheapest. 
+- The bot can have difficulty answering questions that require calculations, comparisons, or form submissions to provide answers. This includes questions that use comparative and superlative terms such as better or best, latest, or cheapest. 
 
-- The boost conversation capability doesn't remember context across multiple questions in the conversation (also known as "multi-turn questions"). 
+- The **generative answers** capability doesn't remember context across multiple questions in the conversation (also known as "multi-turn questions"). 
     You should treat each question you ask the bot as part of testing this capability in isolation.
 
 - If the bot can't generate an answer to a question, it will ask you to rephrase the question. After two of these prompts, the bot will initiate the [system **Escalate** topic](authoring-system-fallback-topic.md).
@@ -174,9 +202,9 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 ### Publishing
 
-During this preview, you won't be able to publish bots that have **Boost conversations** enabled. 
+During this preview, you won't be able to publish bots that have **generative answers** enabled. 
 
-If you'd like to publish a bot that has **Boost conversations** enabled, you'll need to ask your admin to enable it for your tenant in the **Power Platform admin center**. 
+If you'd like to publish a bot that has **GA** enabled, you need to ask your admin to enable it for your tenant in the **Power Platform admin center**. 
 
 
 :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
@@ -185,9 +213,9 @@ If you'd like to publish a bot that has **Boost conversations** enabled, you'll 
 
 ### Quotas
 
-Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. During preview, bots with "Boost conversations" enabled will have a limit on the amount of queries they can make that reach out to the URL you specified.
+Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. During preview, bots with "Generative Answers" enabled have a limit on the number of queries they can make that reach out to the URL you specified.
 
-During the preview, bots with **Boost conversations** enabled will have a limit on the amount of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas)
+During the preview, bots with **GA** enabled have a limit on the number of queries they can make that reach out to the URL you specified. Normal conversations that use bot topics follow the [usual quotas and limitations](requirements-quotas.md#quotas)
 
 ### Pricing
 
@@ -203,12 +231,12 @@ To be considered for early access to trial this capability, you can apply [here]
 
 ## AI response generation training, model, and usage notes
 
-This FAQ answers common questions about the AI that is used by the **Boost conversations** capability in Power Virtual Agents.
+This FAQ answers common questions about the AI that is used by the **GA** capability in Power Virtual Agents.
 
 
 ### Does the capability produce perfect responses?   
 
-Responses generated by the **Boost conversations** capability are not always perfect and can contain mistakes. 
+Responses generated by the **generative answers** capability are not always perfect and can contain mistakes. 
 
 The system is designed to query knowledge from the website of your choosing and to package relevant findings into an easily consumable response. However, it's important to keep in mind some characteristics of the AI that may lead to unexpected responses:
 

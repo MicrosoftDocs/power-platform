@@ -2,7 +2,7 @@
 title: "Notify bot users in Teams with proactive messages"
 description: "Use Power Automate flows to send proactive messages to bot users in Teams, with updates to their conversations, requests for information, and more."
 keywords: "PVA"
-ms.date: 08/26/2022
+ms.date: 04/21/2023
 
 ms.topic: article
 author: iaanw
@@ -317,6 +317,12 @@ When the flow runs, each user in the security group will receive the proactive m
 ### Send proactive message to multiple recipients in parallel
 
 Normally when sending a proactive message to multiple recipients, your bot will send one message after another. However in some situations it may be more ideal to send the message to multiple recipients at the same time.
+
+> [!WARNING]
+>   
+> All proactive messages from Power Virtual Agents are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
+>
+> If you are sending messages to a large group of recipients, you'll see errors if you hit the throttling limit. You can reduce the degree of parallelism, or reduce the number of recipients in the group.
 
 1. In the **Apply to each** action, select the three horizontal dots (**. . .**) and then **Settings**.
 
