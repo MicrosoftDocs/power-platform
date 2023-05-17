@@ -4,7 +4,7 @@ description: "Use the catalog in Power Platform to managed shared components and
 author: samathur
 ms.subservice: developer
 ms.author: samathur
-ms.date: 05/12/2023
+ms.date: 05/17/2023
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
@@ -184,7 +184,7 @@ Auto approval can be enabled at two levels:
 > [!NOTE]
 > If you choose to enable auto approval for the entire catalog, settings at the publisher level will not apply.
 
-Even with auto approval, submission requests that get auto approved can are available to be viewed within the ****Catalog Manager**** app. They can be viewed under **Requests** using the **All Approval Request** view. More information: [Approve & Reject submission requests](#approve--reject-submission-requests)
+Even with auto approval, submission requests that get auto approved are available to be viewed within the ****Catalog Manager**** app. They can be viewed under **Requests** using the **All Approval Request** view. More information: [Approve & Reject submission requests](#approve--reject-submission-requests)
 
 
 #### Enable Unmanaged Solutions
@@ -225,15 +225,17 @@ More information: [Assign a security role to a user](../admin/assign-security-ro
 Environment admins and users with the Catalog Approver role can review new submissions and approve or decline requests. If global auto approval or publisher level auto approval is turned on, then there's no requirement for manual review and approval. More information: [Enable Auto Approval](#enable-auto-approval)
 
 In the **Approvals** section of the navigation pane, select **Requests**.
-This list has 16 views:
+This list has 16 views. The most important ones are:
 
-<!-- 
-//TODO
-I think it might be good to provide brief descriptions on the purpose of each view
+|View |Description  |
+|---------|---------|
+|**Active Approval Requests** (Default)|Use this view to review submission requests pending approval|
+|**All Approval Request**|Use this view to review all requests across all statuses|
+|**Failed Pre-Validation**|Use this view to identify requests where a submitter has sent a request but it is not available in the Active Approval requests. This can help with troubleshooting such scenarios.|
+|**Approved Approval Request**|Use this view to review previously approved requests|
 
-Then this list could be a table..
- -->
-
+<!--
+There are many other views that can be leveraged as well for different needs you may have.
 - **Abandoned Approval Requests**
 - **Active Approval Requests** (Default)
 - **All Approval Request**
@@ -250,6 +252,7 @@ Then this list could be a table..
 - **New Approval Request**
 - **Rejected Approval Requests**
 - **Waiting for submitter response**
+-->
 
 Using the **Active Approval Requests** view, open a request and select **Resolve Request** in the menu.
 
@@ -337,19 +340,20 @@ This list 8 views:
 
 The following table describes selected fields that can be included in the form:
 
+<!--
 |Field |Description|
 |---------|---------|
 |**Allow Package Code Execution**|If **Allow Package Code Execution** is set to true, a deployment package can execute code during deployment.|
-|**Available**|//TODO|
+|**Available**|Indicates availability of the said version for consumption. Many versions can be available however only one shows (usually the latest) as Published|
 |**Catalog Item Cross Reference**|Connects to the common catalog item record regardless of revision.|
 |**CRM Working Package Drop Path**|The location where the package file has been dropped for working|
-|**CrmMaxVersion**|//TODO|
-|**CrmMinVersion**|//TODO|
+|**CrmMaxVersion**|Compatibility information|
+|**CrmMinVersion**|Compatibility information|
 |**DefaultPackageLocaleId**|//TODO|
 |**EndDateUtc**|//TODO|
 |**InstanceConfigurationUrl**|//TODO|
 |**Last Sync Date**|//TODO|
-|**LearnMoreUrl**|//TODO|
+|**LearnMoreUrl**|URL accessible to tenant users where they can learn more|
 |**Name**|//TODO|
 |**Owner**|//TODO|
 |**Package Manifest File Name**|         |
@@ -364,6 +368,28 @@ The following table describes selected fields that can be included in the form:
 |**TPS ID**|//TODO|
 |**UniqueName**|//TODO|
 |**Version**|//TODO|
+
+-->
+
+New table under construction
+
+Package Information
+|Field |Description|
+|---------|---------|
+|**UniqueName**|//TODO|
+|**Version**|//TODO|
+|**Status Reason**|Choices:<br /> - **Pending Approval**<br /> - **Published**<br /> - **Rejected**<br /> - 
+|**Package ID**|//TODO|
+|**Locale Identifier (LCID)**|Identifier for localized package|
+|**Localized Name**|Name in localized language|
+|**Description**|Description in localized language|
+|**Notes**|Timeline section has notes with details for actions on asset|
+|**Revision Of**|This field is populated when a new approval request contains a reference to an existing package version that has previously been made available|
+|**Modified On**|Date last modified|
+|**Modified By**|Modified By User|
+|**Created On**|Date created|
+
+Information including the Package File, the Package Manifest and contained solutions and components is also available under the Package and Contents area. 
 
 ### Review errors in submission requests
 
