@@ -15,15 +15,12 @@ search.audienceType:
 # CoE CLI ALM accelerator for Microsoft Power Platform (Deprecated)
 
 > [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](/power-platform/guidance/alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 You can use the CLI application lifecycle management (ALM) accelerator for Microsoft Power Platform to manage common ALM tasks to install, set up, and administer the ALM accelerator for Microsoft Power Platform. This article contains:
 
 - [Quick start](#quick-start) guides you through the process of a [demo tenant installation](./scenarios/tenant-deployments.md#demonstration-deployment).
 - [Understand the concepts](#understand-the-concepts) covers scenarios, personas, key concepts, and the installation process of using the Center of Excellence (CoE) CLI.
-
-> [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 ## Prerequisites
 
