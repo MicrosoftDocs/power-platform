@@ -24,48 +24,15 @@ Before you start an install of ALM Accelerator, ensure that you have the followi
 
 Install the CoE CLI [locally](../install.md#local-install) or via a [docker image](../install.md#docker-install).
 
-## Power Platform
+## Power Platform Environment Prerequisites
 
 Environment | Description
 ----------- | -------------
 Developer | Development environments that each maker uses to create and manage source-controlled solutions.
 ALM environment | Environment with Microsoft Dataverse enabled. This environment will be used to deploy managed solution.
-ALM environment - Dataverse connection | Learn more: [Create the Dataverse connection](#maker-environment-dataverse-connection).
 Validation | Environment used to validate builds before merging into a solution branch.              |
 Test | Pre-production environment used to test solutions before moving to production.          |
 Production | Production environment for managed solutions.                                         |
-
-Notes:
-
-1. As a Microsoft Partner you can request access to demo tenants to test ALM Accelerators for Power Platform.
-   1. Visit [Partner Center](/partner-center/mpn-demos) for more information.
-   1. Go to [https://demos.microsoft.com](https://demos.microsoft.com) to request a new environment.
-   1. Select **My Environments**.
-   1. Select **Create Tenant**.
-   1. Select tenant location.
-   1. Select the **Dynamics 365 Customer Engagement** content pack.
-
-1. Sample environment from [https://admin.powerplatform.microsoft.com/environments](https://admin.powerplatform.microsoft.com/environments) for a [Demo Deployment](./scenarios/tenant-deployments.md#demonstration-deployment).
-
-   ![Sample image Environments from Power Platform Admin Portal](../media/environments.jpg)
-
-## Maker environment Dataverse connection
-
-In the maker environment, you need a Dataverse connection created by the install user.
-
-To create the Dataverse connection, use the following steps:
-
-1. Go to [https://make.powerapps.com/](https://make.powerapps.com/).
-
-1. Select the maker environment that you deploy the ALM Accelerator for Power Platform into.
-
-1. Go to **Data** > **Connections**.
-
-1. Select **New Connection**.
-
-1. Select **Microsoft Dataverse (legacy)**.
-
-1. Select Create.
 
 ### Azure
 

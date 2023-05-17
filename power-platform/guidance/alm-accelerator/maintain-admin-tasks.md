@@ -1,5 +1,5 @@
 ---
-title: "Maintain the ALM Accelerator for Microsoft Power Platform using the admin app | MicrosoftDocs"
+title: "Maintain the ALM Accelerator for Microsoft Power Platform | MicrosoftDocs"
 description: "The ALM Accelerator for Microsoft Power Platform helps you follow ALM patterns and practices to move your solutions from your development environment to test and production environments by using Azure DevOps. This guide walks through the maintenance tasks and Azure DevOps project configurations you need to perform for new solutions and projects."
 author: mikefactorial
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.author: jeschro
 ms.reviewer: sericks
 ---
 
-# Maintain the ALM Accelerator for Microsoft Power Platform using the ALM Accelerator Admin app
+# Maintain the ALM Accelerator for Microsoft Power Platform
 
 Once a project is onboarded to the ALM Accelerator, there are many tasks you can perform to maintain the project. This guide walks through the maintenance tasks and Azure DevOps project configurations you need to perform for new solutions and projects.
 
@@ -34,7 +34,26 @@ Once a project is onboarded to the ALM Accelerator, there are many tasks you can
 1. Create new repositories by selecting **New**.
 1. If you set up your project using the project wizard, you can upgrade an existing ALM Accelerator template repository to the latest version by selecting **Upgrade**. For more information on how the upgrade process works, see [Upgrade the ALM Accelerator for Power Platform app](setup-upgrade-configuration.md). If your project wasn't setup using the setup wizard, creating the sync-pipeline-repo pipeline manually will allow you to use the upgrade feature in the future.
 
-## Create, edit, and delete service connections
+## Onboarding new maker or deployment environments
+
+### Create an app user in your Dataverse environments
+
+Before creating new service connections for new environments you'll need to configure an App User in the Dataverse environment using the following steps for each environment.
+
+1. Go to [Power Platform admin center](https://aka.ms/ppac).
+
+1. Select your environment, and then select **Settings**.
+
+1. Select **Users + permissions** > **Application users**.
+
+1. Select **New app user** to add a new application user.
+
+1. Select the Azure app registration you created, **Business Unit**, and **Security Role**.
+
+    > [!NOTE]
+    > We recommend that you give this user system administrator security role privileges, so the user can perform the required functions in each of the environments.
+
+### Create, edit, and delete service connections
 
 When onboarding a new maker environment or deployment environment, you need to create a service connection to the environment. This service connection is used to deploy the solution to the environment. You can create, edit, and delete service connections from the ALM Accelerator Admin app.
 

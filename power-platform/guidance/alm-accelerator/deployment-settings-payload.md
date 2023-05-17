@@ -45,7 +45,9 @@ The deployment settings payload for the ALM Accelerator export pipeline is used 
   | connector.teamname.connector-name.connector-id                          | No       | The Dataverse Azure AD Group Team to share the connector record associated with the custom connector after import of the solution in the deployment environment. |
   | groupTeam.teamid.aadGroupId                                             | No       | Dataverse Group Teams to create in the deployment environment. |
   | businessUnit.teamid.aadGroupId                                          | No       | Dataverse Business Unit associated with the Group Teams being created by groupTeam.teamid.aadGroupId. |
-  | webhookrul.webookname                                                   | No       | The url of the webhook to update in the deployment environment. |
+  | webhookurl.webookname                                                   | No       | The url of the webhook to update in the deployment environment. |
+  | sdkstep.unsec.sdkstepid                                                 | No       | The unsecure configuration of the SDK step to update in the deployment environment. |
+  | sdkstep.sec.sdkstepid                                                   | No       | The secure configuration of the SDK step to update in the deployment environment. |
   | TriggerSolutionUpgrade                                                  | No       | True or false based on whether to apply solution upgrade during deployment to this environment. |
 
 ### Deployment Settings Schema
