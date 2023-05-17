@@ -135,7 +135,7 @@ Application Insights is now integrated by default within Power Virtual Agents. A
 
 To get started with structured learning of Power Virtual Agents, we are in the process of launching our brand new Power Virtual Agents in a Day training directly on Microsoft Learn with additional material for instructors. At this time, we do have our preview lab materials that can be accessed here, which will provide readers with a selection of labs they can use to get started. Additionally, our Microsoft Partners will be training on our latest release of Power Virtual Agents, transitioning within June, so check out their Events on the Microsoft Events page Link to a topic outside of docs: [here](https://events.microsoft.com/en-us/allevents/?search=Power%20Virtual%20Agents%20in%20a%20Day&view=list&clientTimeZone=1&startTime=07:00&endTime=11:00). (Note: ensure when booking which version the event is targeting)
 
-## H2 - Migrating your PVA Classic Bots
+## Migrating your PVA Classic Bots
 
 See the heading 'Cloning an existing PVA Classic Bot' section within this document 
 
