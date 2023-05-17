@@ -15,6 +15,9 @@ search.audienceType:
 
 # CoE CLI development adding a new command (Deprecated)
 
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](/power-platform/guidance/alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+
 To add a new sample command, you can use the following command to template the initial set-up of the TypeScript command and the Jest JavaScript testing framework unit test.
 
 ```bash

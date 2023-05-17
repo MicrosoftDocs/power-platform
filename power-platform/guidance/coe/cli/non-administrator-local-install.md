@@ -14,6 +14,9 @@ search.audienceType:
 
 # Non Administrator Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
 
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](/power-platform/guidance/alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+
 To install the CoE CLI as a non-administrator you apply use the following components:
 
 - Follow [Miniconda Install](#miniconda-install) instructions for your operating system.

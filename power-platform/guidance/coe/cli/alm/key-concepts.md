@@ -17,7 +17,7 @@ search.audienceType:
 As you deploy and use the ALM CLI, it's important to understand the following key concepts that the CLI is automating.
 
 > [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](/power-platform/guidance/alm-accelerator/setup-admin-tasks) to set up and manage your ALM Accelerator for Power Platform projects.
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](/power-platform/guidance/alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 ## Azure Active Directory
 
@@ -51,7 +51,7 @@ The CoE CLI application can create an Azure Active Directory application that au
 The CoE CLI application can create an Azure Active Directory group that is used for Azure DevOps and Power Platform authentication and role-based access security.
 
 - Group created via Azure CLI.
-   - [Create Group](/cli/azure/ad/group?#az_ad_group_create)
+- [Create Group](/cli/azure/ad/group?#az_ad_group_create)
 
 ## Azure DevOps
 
