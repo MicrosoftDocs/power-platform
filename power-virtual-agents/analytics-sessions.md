@@ -31,10 +31,6 @@ Lastly, you can manage the retention period for transcripts. This can be useful 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
-
 ### Download bot session transcripts
 
 1. In the Power Virtual Agents navigation menu, select **Analytics**.
@@ -69,9 +65,6 @@ The session transcript is a comma-separated values (CSV) file that contains the 
 - **SessionOutcome**: The outcome of the session (Resolved, Escalated, Abandoned, Unengaged)
 - **TopicId**: The unique identifier of the last authored topic triggered in the session
 
-
-# [Web app](#tab/web)
-
 1. In the navigation menu, select **Analytics**. Go to the **Sessions** tab.
 
     If your bot had a high number of sessions, they'll be broken down into multiple rows. Each row contains 2500 sessions.
@@ -105,43 +98,8 @@ The downloaded file contains the following information:
 >
 > Sessions may be grouped into multiple date ranges for download when the selected time window does not include the most recent day or when there are more than 2,500 sessions.
 
-### View and export bot conversation transcripts from the Power Apps portal
-
-You can also view and export bot conversation transcripts from the Power Apps portal.
-
-First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
-
-### View conversation transcripts
-
-1. In the side pane select the **Tables** node. At the top, select **All**.
-
-    :::image type="content" source="media/analytics-sessions/view-scripts1.png" alt-text="Screenshot showing All selected on the Tables node.":::
-
-1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Tables**.
-
-    :::image type="content" source="media/analytics-sessions/view-scripts2.png" alt-text="Screenshot showing Conversation Transcript selected.":::
-
-1. A page for the **ConversationTranscript** table will open and show a list of data available to view.
-
-    :::image type="content" source="media/analytics-sessions/view-scripts3.png" alt-text="Screenshot showing Active conversation transcripts expanded.":::
-
-### Export conversation transcripts
-
-1. In the side pane, select the **Tables** node. At the top, select **All**.
-
-    :::image type="content" source="media/analytics-sessions/export-scripts1.png" alt-text="Select All on the Tables node.":::
-
-1. Type **Conversation** in the **Search** textbox at the top right. Select **ConversationTranscript** under **Tables**.
-
-    :::image type="content" source="media/analytics-sessions/export-scripts2.png" alt-text="Select the transcript for export.":::
-
-1. Expand the **Export** menu item at the top of the screen and select **Export data**. It may take a few minutes for the data to be compiled for export.
-
-    :::image type="content" source="media/analytics-sessions/export-scripts3.png" alt-text="Selecting Export data from the Export menu.":::
-
-1. Select **Download exported data** to download the content.
-
-    :::image type="content" source="media/analytics-sessions/export-scripts4.png" alt-text="Download exported data.":::
+> [!NOTE]
+> You need to have sufficient permissions to download sessions. If you're using the Power Virtual Agents app in _Teams_, you need to be the **Team Owner**.
 
 ### Change the default period of session transcript retention
 
@@ -196,45 +154,3 @@ The following instructions describe how to set a job to delete transcripts that 
     The bulk delete job is created and will delete bot conversation transcripts that are older than 12 months.
 
     :::image type="content" source="media/analytics-sessions/sessions-job-ready.png" alt-text="The list of bulk delete jobs, now showing the new job just created.":::
-
-
-# [Teams](#tab/teams)
-
-1. In the navigation menu, select **Analytics** and go to the **Sessions** tab.
-
-    If your bot had a high number of sessions, they'll be broken down into multiple rows. Each row contains 2500 sessions.
-
-1. Select each row to download the session transcripts for the specified time frame.
-
-    :::image type="content" source="media/analytics-sessions/analytics-sessions-billing-teams.png" alt-text="Screenshot of the sessions download page in the Power Virtual Agents app in Teams.":::
-
-> [!NOTE]
-> You need to have sufficient permissions to download sessions. If you're using the Power Virtual Agents app in Teams, you need to be the **Team Owner**.
-
-The downloaded file contains the following information:
-
-- SessionID: A unique identifier per session.
-
-- StartDateTime: Time at which the session started. Entries are sorted by this column in descending order.
-
-- InitialUserMessage: First message typed by the user.
-
-- TopicName: Name of the last authored topic that was triggered in this session.
-
-- ChatTranscript: Transcript of the session in the following format, `User says: <message-text>; Bot says: <message-text>;`.
-  - Conversation turns are separated by semicolons
-  - _Bot says_ doesn't include the options presented to the user.
-
-    Example:
-
-    ```text
-    User says: store hours; Bot says: Which store are you asking about?; User says: Bellevue; Bot says: Bellevue store is open from 10am to 7pm every day.;
-    ```
-
-- SessionOutcome: Outcome of the session (Resolved, Escalated, Abandoned, Unengaged).
-
-- TopicId: A unique identifier of the last authored topic triggered in this session.
-
----
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
