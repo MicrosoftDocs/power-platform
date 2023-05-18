@@ -1,10 +1,10 @@
 ---
-title: "View, Install and Submit catalog items (Preview)"
+title: "View, submit, and install catalog items (Preview)"
 description: "Learn how to submit items to your organization's catalog of templates and components."
 author: samathur
 ms.subservice: developer
 ms.author: samathur
-ms.date: 05/16/2023
+ms.date: 05/18/2023
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
  - JimDaly
 ---
-# Submit catalog items (Preview)
+# View, submit, and install catalog items  (Preview)
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 
@@ -47,7 +47,7 @@ After you have installed the PAC CLI, you must create an authentication profile 
 Use the [pac admin list](cli/reference/admin.md#pac-admin-list) command to view the catalogs available in your tenant.
 
 > [!NOTE]
-> This command requires an admin auth profile. //TODO: What is an admin auth profile?
+> This command requires an administrator authentication profile.
 
 When using this command, you must use the following `--application-id` parameter with the value `83a35943-cb41-4266-b7d2-81d60f383695`.
 
@@ -120,7 +120,9 @@ Before you can submit items to a catalog, you must prepare a JSON document that 
 
 To help you, the [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command generates the following `submission.json` file:
 
-<!-- Why have a command? Is any unique data included here?
+<!-- 
+
+TODO: Why have a command? Is any unique data included here?
 Why not just copy this from the documentation?
 
 The CLI has a pattern to enable initialization of settings files. This was done to help users quickly create a submissions file.
@@ -203,8 +205,6 @@ Here's an example submission created from the JSON above.
 }
 ```
 
-
-
 ### Required Data
 
 The following items are required for all submissions:
@@ -223,26 +223,6 @@ Don't confuse this term with *Solution Publisher*. Catalog item publisher is ent
 You need to provide the ID publisher `DisplayName` at a minimum. ID can be any string value. System checks if that publisher exists, else creates it and assigns an ID.
 
 Example: HR IT team of developers can create a publisher and ID the developers using an Azure AD group. 
-
-<!-- 
-jdaly: I don't think we need this.
-
-```json
-Publisher Id: String 
-Publisher Name: String
-upn: List of UPNs
-
-Upn: 
-UPN: string, example "bob@foo.com"
-userOID guid 
-action: Select from "Add" or "Remove"
-
-publisherAADGroupOIDS (optional)
-action: Select "Add" or "Remove" 
-groupName: string (required)
-groupOID:guid (required)
-groupType: Select from "Security" or "Modern"
-``` -->
 
 Here's an example of a publisher record:
 

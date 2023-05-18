@@ -1,10 +1,10 @@
 ---
-title: "Catalog components and templates (Preview)"
+title: "Catalog in Power Platform (Preview)"
 description: "Use the catalog in Power Platform to managed shared components and templates so that administrators, application makers, and developers within an organization can use each other's work."
 author: samathur
 ms.subservice: developer
 ms.author: samathur
-ms.date: 05/17/2023
+ms.date: 05/18/2023
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
  - JimDaly
 ---
-# Catalog components and templates (Preview)
+# Catalog in Power Platform (Preview)
 
 [!INCLUDE [cc-preview-features-expect-changes](../includes/cc-preview-features-expect-changes.md)]
 
@@ -44,7 +44,8 @@ For administrators and line of business approvers, the catalog:
 - Enables approval workflows to enable usage of sanctioned components and templates where a high degree of care is required due to sensitive regulatory and statutory scenarios
 - Provides management capabilities with settings and metadata
 
-Please note at GA, this feature will require the use of Managed Environment capabilities.
+> [!NOTE]
+> While not required for the preview, when this feature is generally available it will require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
 ## Catalog process
 
@@ -81,8 +82,8 @@ These terms are important to understand when using the catalog:
 
 |Term|Description|
 |---------|---------|
-|**Catalog Item**|The unit of interaction with the catalog is called an item. <br /><br /> - What is being submitted to or installed from the catalog. <br /><br /> - Typically, an item is a Dataverse solution or package deployer package. An item can contain a fully built application or a template for a power app or flow or power platform code-first component such as a custom connector, PCF control. |
-|**Catalog Publisher**|The owning entity of the Application. For example, the publisher can be the human resources IT team or another Line of Business team.<br /><br /> - A group of people in an organization that are responsible for managing its lifecycle. <br /><br /> - Support and engineering contacts can be provided.<br /><br /> - Not to be confused with the Solution Publisher|
+|**Catalog Item**|The unit of interaction with the catalog is called an item. <br />- An item is what is being submitted to or installed from the catalog. <br /> - Typically, an item is a Dataverse solution or package deployer package. An item can contain a fully built application or a template for a power app or flow or power platform code-first component such as a custom connector, PCF control. |
+|**Catalog Publisher**|The owning entity of the Application. For example, the publisher can be the human resources IT team or another Line of Business team.<br /> - A group of people in an organization that are responsible for managing its lifecycle. <br /> - Support and engineering contacts can be provided.<br /> - Not to be confused with the Solution Publisher|
 |**Submission** |The act of sharing an item involves submitting it to the catalog. This act creates a *submission request* in the system.|
 |**Submission Request**|The result of a submission. This request can be approved or declined. When auto approval is configured for the catalog, no approval is required.|
 |**Discovery**|Act of finding items within a catalog by authorized users.|
@@ -98,7 +99,7 @@ To get started, you need to complete the following tasks:
 
 ## Install the **Catalog Manager** application
 
-To start using the catalog, you need to install the ****Catalog Manager** application from AppSource.
+To start using the catalog, you need to install the **Catalog Manager** application from AppSource.
 
 > [!NOTE]
 > Most organizations will only need to install one catalog. While multiple catalogs within a tenant are supported they are for advanced departmental, data residency type scenarios and need to be evaluated in light of your business needs.
@@ -236,25 +237,6 @@ This list has 16 views. The most important ones are:
 |**Failed Pre-Validation**|Use this view to identify requests where a submitter has sent a request but it is not available in the Active Approval requests. This can help with troubleshooting such scenarios.|
 |**Approved Approval Request**|Use this view to review previously approved requests|
 
-<!--
-There are many other views that can be leveraged as well for different needs you may have.
-- **Abandoned Approval Requests**
-- **Active Approval Requests** (Default)
-- **All Approval Request**
-- **Approved Approval Request**
-- **Completed Approval Requests**
-- **Draft Approval Requests**
-- **Draft or Failed Validation**
-- **Failed Pre-Validation**
-- **Functional Validation inProgress & Waiting for Test Cases**
-- **In Progress Approval request**
-- **Inactive Approval Requests**
-- **My Approval Request**
-- **Need Follow-Up**
-- **New Approval Request**
-- **Rejected Approval Requests**
-- **Waiting for submitter response**
--->
 
 Using the **Active Approval Requests** view, open a request and select **Resolve Request** in the menu.
 
@@ -342,38 +324,8 @@ This list 8 views:
 
 The following table describes selected fields that can be included in the form:
 
-<!--
-|Field |Description|
-|---------|---------|
-|**Allow Package Code Execution**|If **Allow Package Code Execution** is set to true, a deployment package can execute code during deployment.|
-|**Available**|Indicates availability of the said version for consumption. Many versions can be available however only one shows (usually the latest) as Published|
-|**Catalog Item Cross Reference**|Connects to the common catalog item record regardless of revision.|
-|**CRM Working Package Drop Path**|The location where the package file has been dropped for working|
-|**CrmMaxVersion**|Compatibility information|
-|**CrmMinVersion**|Compatibility information|
-|**DefaultPackageLocaleId**|//TODO|
-|**EndDateUtc**|//TODO|
-|**InstanceConfigurationUrl**|//TODO|
-|**Last Sync Date**|//TODO|
-|**LearnMoreUrl**|URL accessible to tenant users where they can learn more|
-|**Name**|//TODO|
-|**Owner**|//TODO|
-|**Package Manifest File Name**|         |
-|**Package Manifest Uri**|URI to the package manifest.|
-|**Package Uri**|//TODO|
-|**ProviderName**|//TODO|
-|**Pushed Date**|//TODO|
-|**Revision Of**|This field is populated when a new approval request contains a reference to an existing package version that has previously been made available|
-|**StartDateUtc**|//TODO|
-|**Status Reason**|Choices:<br /> - **Pending Approval**<br /> - **Published**<br /> - **Rejected**<br /> - **Available**<br /> - **Inactive**|
-|**SupportedCountries**|//TODO|
-|**TPS ID**|//TODO|
-|**UniqueName**|//TODO|
-|**Version**|//TODO|
 
--->
-
-The following information is available about the Package
+The following information is available about the **Package**:
 
 |Field |Description|
 |---------|---------|
@@ -417,8 +369,6 @@ In the **Deployment History** section of the navigation pane, select **Install H
 
 Select on the failed request name to get more information.
 
-//TODO I don't see failed request names
-
 
 
 ## Frequently asked questions (FAQ)
@@ -431,4 +381,4 @@ While most organizations are likely to use just one catalog, it's possible to cr
 
 ### Is there a license required to use the Catalog?
 
-For the public preview, the catalog feature is available to be used without any licensing. For GA, the catalog feature requires the catalog to be set up in a managed environment. More details around the Managed Environments requirements will be made available during Preview.
+For the public preview, the catalog feature is available to be used without any licensing. When it becomes generally available, the catalog feature requires the catalog to be set up in a managed environment. More details around the managed environments requirements will be made available during Preview. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
