@@ -15,6 +15,9 @@ search.audienceType:
 
 # CoE CLI development (Deprecated)
 
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+
 This section outlines the following key sections on the CoE CLI. The information below can help guide you in making contributions back to the open-source repository.
 
 - [Quick start](#quick-start) - Provides a set of links to the technology used to build and test the CLI.

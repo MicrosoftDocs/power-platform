@@ -15,6 +15,9 @@ search.audienceType:
 
 # Center of Excellence (CoE) Command Line Interface (CLI) Docker installation (Deprecated)
 
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+
 The following video captures the results of a sample Docker install on Linux.
 
 ![Docker install](./media/install-docker.svg)

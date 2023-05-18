@@ -15,6 +15,9 @@ search.audienceType:
 
 # Center of Excellence (CoE) command line interface (CLI) local installation (Deprecated)
 
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+
 The following video captures the results of a sample local install.
 
 ![Local install](./media/install-local.svg)

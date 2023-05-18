@@ -26,12 +26,16 @@ For users to be able to access resources in Dataverse when running the ALM Accel
 
 1. Enter a **Team name**, **Business unit**, and **Administrator**.
 
-1. Select **AAD Security Group** as the **Team type**, select a **Membership type**, and then select **Next**.
+1. Select **AAD Security Group** as the **Team type**
+
+1. Enter and select the name of the **AAD Security Group** you want to provide access to the ALM Accelerator for Power Platform app.
+
+1. Select Members for **Membership type**, and then select **Next**.
 
 1. On the **Manage security roles** page, select the **ALM Power App Access** and **Basic User** roles, and then select **Save**.
 
 > [!TIP]
-> To learn more about team management, go to [Microsoft Dataverse teams management](/power-platform/admin/manage-teams).
+> Repeat the steps above to create a group team to assign permissions to the ALM Accelerator Admin app and include the **ALM Power App Deployment Configuration** security role as a role on the group team. To learn more about team management, go to [Microsoft Dataverse teams management](/power-platform/admin/manage-teams).
 
 ## Azure DevOps user setup
 
