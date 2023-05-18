@@ -50,7 +50,7 @@ This topic discusses the Power Virtual Agents capabilities to find or export per
 
 You can download session data for the last 30 days from the [sessions analytics page](analytics-sessions.md) in Power Virtual Agents.
 
-You can also [export data from the ConversationTranscripts table](power-virtual-agents/analytics-sessions.md#download-bot-session-transcripts).
+You can also [export data from the ConversationTranscripts table](analytics-sessions.md#download-bot-session-transcripts).
 
 ## Export system-generated logs (as tenant admin)
 
