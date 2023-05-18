@@ -14,7 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Generative answers with Search and summarize
+# Generative answers with Search and summarize content
 
 When you created your bot, you were invited to enter a url from which your bot could to generate responses. This is discussed in detail in [Generative answers](nlu-boost-conversations.md). You can further boost your bot's conversations by using multiple internal and external information sources, including:
 
@@ -30,9 +30,9 @@ Internal resources:
  - DataVerse
  - Custom data (internal or external): Supply your own content from any source; for instance, from a Power Automate Flow, Skill, or other source.
 
-In addition, you can add information sources to a topic using the **Search and summarize content node**. This node allows you to specify sources that the *node* will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability. Note that this node's information sources override those you may have specified at the bot level, which function as a fallback. 
+In addition, you can add information sources to a topic using the **Search and summarize content*** node. This node allows you to specify sources that the *node* will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability. Note that this node's information sources override those you may have specified at the bot level, which function as a fallback. 
 
-These methods of boosting your bot using **generative answers** allows you to specify information sources for the entire bot (for instance, with a url at bot creation) and use alternate information sources within a topic via the Search and summarize node.
+These methods of boosting your bot using **generative answers** allows you to specify information sources for the entire bot (for instance, with a url at bot creation) and use alternate information sources within a topic via the Search and summarize content node.
 
 ## Information Sources
 
@@ -54,19 +54,19 @@ Adding a Search and summarize content node allows you to use generative answers 
 
 1. Open the authoring canvas for your topic, and identify the point where you want to use Search and summarize content.
 
-1. Click on the '+' where you would like to add the Search and Summarize node.
+1. Click on the '+' where you would like to add the Search and Summarize content node.
 
 1. Add a Search and Summarize content node.
  
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-node.png" alt-text="Screenshot of the adding a Search and summarize node.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-node.png" alt-text="Screenshot of the adding a Search and summarize content node.":::
 
-1. On the Search and summarize node, select Properties from the node menu and select Data source
+1. On the Search and summarize content node, select Properties from the node menu and select Data source
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of the Search and summarize node properties.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of the Search and summarize content node properties.":::
 
 1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources). (Note here about the other options (Variable or PowerFX) - what is the integration?)(image: data sources menu)
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize node Data sources menu.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize content node Data sources menu.":::
 
 1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.
 
@@ -100,17 +100,17 @@ You can also change the URL, disable **generative answers**, or change the level
 
 You can now test your bot to see how well it responds to questions related to the content on the URL you specified. For more details, refer to [Test your bot's generative answers reach](nlu-gpt-quickstart.md#test-your-bots-boosted-conversational-reach).
 
-#### Search and summarize node properties
+#### Search and summarize content node properties
 
-To boost coverage in a Search and summarize node, follow these instructions:
+To boost coverage in a Search and summarize content node, follow these instructions:
 
-1. On the Search and summarize node, select Properties from the node menu, and select Data source.
+1. On the Search and summarize content node, select Properties from the node menu, and select Data source.
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of properties of the Search and summarize node.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-properties.png" alt-text="Screenshot of properties of the Search and summarize content node.":::
 
 1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources).
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize node Data sources.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize content node Data sources.":::
 
 1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.
 
@@ -123,7 +123,7 @@ To boost coverage in a Search and summarize node, follow these instructions:
 
 1. On the **Web API** tab under **Production**, copy the Custom configuration ID you want to use. This will function like a url would as described [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation). NOTE: If you have more than one custom configuration, make sure you are copying the ID you want.
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize node with bing custom search.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-bing-custom-search-ID.png" alt-text="Screenshot of the  Search and summarize content node with bing custom search.":::
 
 #### Bot settings
 
@@ -141,23 +141,24 @@ With a bot open, expand **Settings** on the side navigation pane, and select **A
 
 1. Select **Save** at the top of the **AI capabilities** page.
 
-#### Search and summarize node properties
+#### Search and summarize content node properties
 
 1. Select Properties from the node menu, and select Data source.
 
 1. Paste your custom configuration in the input box under "Sites", and click on the '+' to add it to the node's Data sources. If you have not exceeded relevant limits, you may add other urls.
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of properties for the Search and summarize node.":::
+    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of properties for the Search and summarize content node.":::
 
 1. When you are done entering sources, close the menu. Make sure to save any changes to your topic.
  
-The node will now Search and summarize content from the information sources in the Bing Custom Search configuration provided. This allows you to use a large number of sources to boost your Search and summarize node without having to enter each source individually.
+The node will now Search and summarize content from the information sources in the Bing Custom Search configuration provided. This allows you to use a large number of sources to boost your Search and summarize content node without having to enter each source individually.
 
 ### Connect to a Sharepoint or OneDrive for Business
 
 Power Virtual Agents now supports boosting conversations using generative answers with content stored on SharePoint sites and OneDrive for Business. This capability works by pairing your bot with a specific site URL, such as contoso.sharepoint.com/sites/policies. When a bot user asks a question or makes a statement where the bot does not have a manually configured Topic to use, it will search for relevant content from that site URL and all sub-paths and will use generative answers technology to help summarize this content into a targeted response.
 
 When analyzing internal content stored on SharePoint or OneDrive for Business, it is essential to note this happens on behalf of the signed in user, meaning this feature requires user authentication to be configured for your bot using Azure Active Directory. It also means that when a specific user asks a question of the bot, the bot will only surface content that specific user has access to read on SharePoint or OneDrive for Business.
+Due to memory limits, we recommend that files saved on Sharepoint are no more than [WAITING ON ASNWER FROM JEFF] in size. If a file is larger than this size, consider saving as multiple smaller files.
 
 #### Requirements
 
