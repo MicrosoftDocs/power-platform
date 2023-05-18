@@ -20,14 +20,14 @@ searchScope:
 
 [!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
 
-Generative answers in Power Virtual Agents allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot or as fallback when authored topics are unable to address a user's query.
+Generative answers in Power Virtual Agents allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query. As a result you can quickly create and deploy a functional bot, without having to first manually author multiple topics that still may not address all your customer's intents.
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md). This document covers how to configure generative answers as a fallback topic when a user intent cannot be addressed by existing bot topics. [Generative answers with search and summarize](nlu-boost-node.md) discusses how your bot can query information sources by introducing generative answers in a node.
 
 Now, before involving a live agent, the bot uses natural language processing (NLP) to:
 - Parse what a user types to determine what they're asking
 - Find, collate, and parse relevant information from a specified source (for example, your company's website) or from multiple sources, including Sharepoint and OneNote. "...with Bing Search" (phrase intention?)
-- Create a plain language response and then deliver that to the bot user
+- Summarize search results into plain language that is delivered to the bot user
 
 As a result you can quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers end up asking.
 
