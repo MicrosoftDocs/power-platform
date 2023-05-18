@@ -1,18 +1,18 @@
 ---
-title: "Disable and Delete a business unit from an environment"
+title: "Disable and delete a business unit from an environment"
 description: "Learn how to disable and delete a business unit from an environment. Learn about the considerations before taking this irreversible action."
-author: jimholtz
-
+author: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/10/2020
+ms.date: 05/18/2023
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: paulliew
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
-# Disable and Delete a business unit
+# Disable and delete a business unit
 
 You can delete a business unit to completely remove it. To delete a business unit, you must first disable it.
   
@@ -34,8 +34,9 @@ You can delete a business unit to completely remove it. To delete a business uni
 4. On the Actions toolbar, choose **More Actions** > **Disable**.  
   
 > [!IMPORTANT]
-> When you disable a business unit which has child business units, all child business units (all depths) will also be disabled.
-> All users and teams associated with the business unit and/or child business units will not be able to sign in. You will need to reparent users and teams to another business unit and reassign security roles.
+> When you disable a business unit which has child business units, all child business units (all depths) are disabled.
+> 
+> All users and teams associated with the business unit or child business units won't be able to sign in. You must reparent users and teams to another business unit and reassign security roles.
 
 5. In the **Confirm Deactivation** dialog box, choose **Deactivate**.  
 
