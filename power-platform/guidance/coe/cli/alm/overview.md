@@ -32,7 +32,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
 1. Validate the organization's [maturity model](./maturity/overview.md#quick-start) for ALM.
 
-1. Create your [Microsoft Power Platform environments](./before-you-start.md#power-platform), [Azure DevOps](./before-you-start.md#azure-devops) organization, and Azure DevOps project.
+1. Create your [Microsoft Power Platform environments](before-you-start.md#power-platform), [Azure DevOps](./before-you-start.md#azure-devops) organization, and Azure DevOps project.
 
 1. Create an installation configuration. Review the [installation help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) for installation parameters.
 
