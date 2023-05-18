@@ -109,7 +109,7 @@ In addition to [url considerations](nlu-boost-conversations.md#url-consideration
 
     :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
-After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that generative answers is enabled, or choose to change the URL you want to use.
+After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that generative answers is enabled. From the **Overview** page, you can navigate to the AI Capabilities page if you want to change the URL you want to use.
 
 You can also change the URL, disable generative answers, or change the level of content moderation in the settings for the bot:
 
