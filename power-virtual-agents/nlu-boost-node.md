@@ -158,7 +158,7 @@ The node will now Search and summarize content from the information sources in t
 Power Virtual Agents now supports boosting conversations using generative answers with content stored on SharePoint sites and OneDrive for Business. This capability works by pairing your bot with a specific site URL, such as contoso.sharepoint.com/sites/policies. When a bot user asks a question or makes a statement where the bot does not have a manually configured Topic to use, it will search for relevant content from that site URL and all sub-paths and will use generative answers technology to help summarize this content into a targeted response.
 
 When analyzing internal content stored on SharePoint or OneDrive for Business, it is essential to note this happens on behalf of the signed in user, meaning this feature requires user authentication to be configured for your bot using Azure Active Directory. It also means that when a specific user asks a question of the bot, the bot will only surface content that specific user has access to read on SharePoint or OneDrive for Business.
-Due to memory limits, we recommend that files saved on Sharepoint are no more than [WAITING ON ASNWER FROM JEFF] in size. If a file is larger than this size, consider saving as multiple smaller files.
+Due to memory limits, we recommend that files saved on Sharepoint be limited in size. If a file is larger, consider saving as multiple smaller files.
 
 #### Requirements
 
