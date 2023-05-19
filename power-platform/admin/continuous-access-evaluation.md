@@ -29,13 +29,13 @@ With continuous access evaluation integration in Power Platform, a user's [criti
 
 - **Data exfiltration risks mitigation**: Continuous access evaluation helps prevent data exfiltration through enforcement of IP location policies and user critical events near real time. 
 
-- **Resiliency of Power Platform services**: With continuous access evaluation, clients get long-lived tokens, which requires fewer token refreshes. This improves overall resiliency of the services. 
+- **Resiliency of Power Platform services**: With continuous access evaluation, clients get long-lived tokens, which requires less token refreshes. This improves overall resiliency of the services. 
 
 - **Unauthorized access to Power Platform services**: When a user account password has been compromised, the Azure AD administrator can limit unauthorized access to Power Platform services by resetting or changing the user’s password or by disabling the user account near real time. 
 
 - **Remove user’s access near real time**: An organization has obligations to instantly remove user access due to various reasons, such as security threats, termination of employment, policy violations, or legal requirements. With continuous access evaluation, the Azure AD administrator can instantly disable user accounts, thereby revoking the access to organizations resources in near real time. 
 
-For Power Platform, continuous access evaluation is currently supported by Dataverse only. Microsoft is working with additional Power Platform services and clients to support continuous access evaluation. 
+For Power Platform, continuous access evaluation is currently supported by Dataverse only. Microsoft is working with other Power Platform services and clients to support continuous access evaluation. 
 
  See [Continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) for the limitations of continuous access evaluation. 
  
@@ -43,7 +43,7 @@ For Power Platform, continuous access evaluation is currently supported by Datav
 
 Continuous access evaluation supports two types of events: 
 
-- User critical events are the events which are related to a user’s access to cloud resources. 
+- User critical events are the events that are related to a user’s access to cloud resources. 
 - Conditional access policy evaluation occurs when a user should lose access to a resource, based on an administrator-defined policy, such as IP location policy. 
 
 User critical events include: 
