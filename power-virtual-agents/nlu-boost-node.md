@@ -44,7 +44,7 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 | [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to PVA | More than 4 urls (Bing Custom Search also provides other functionality) | None |
 | Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
 | OneDrive for business | Internal | Connects to a OneDrive for Business url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| Other internal data | Internal | ... | one variable, populated with JSON results to be summarized | ... |
+| Custom data | Internal | ... | one variable, populated with JSON results to be summarized | ... |
 
 As the table notes, some features require user authentication to be configured for your bot. In the cases of SharePoint and OneDrive for Business, authentication is done using Azure Active Directory. User authentication for information sources also means that when a specific user asks a question of the bot, the bot will only surface content that specific user has access to read on SharePoint or OneDrive for Business.
 
