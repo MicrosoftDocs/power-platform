@@ -20,8 +20,6 @@ OAuth 2.0 for authentication traditionally relies on access token expiration to 
 
 With continuous access evaluation integration in Power Platform, a user's [critical events](#scenarios-supported-by-power-platform) and network location changes are continuously evaluated by Power Platform services, such as Dataverse. Power Platform services proactively terminate active user sessions and enforce tenant policy changes in near real time, instead of relying on access token expiration. With continuous access evaluation, as users' critical events and network location changes signals are continuously available to Power Platform services to evaluate a user condition continuously. 
 
-When a continuous access evaluation-enabled and ready client, makes a call to Power Platform with an existing access token, the token is evaluated by the service near real time and it is accepted or rejected by Dataverse, which enforces the client to re-authenticate again based on the signals from the Azure AD. Continuous access evaluation allows enforcement of user critical events and network location changes near real time by Power Platform services. 
-
 > [!Important]
 > [!include [preview](../includes/cc-preview-features-definition.md)]
 
