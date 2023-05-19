@@ -17,7 +17,7 @@ Microsoft Power Platform is the world’s most complete low code platform. It's 
 
 This document aims to address a key need of how organizations and administrators can plan migration of their various assets from default environment. This by no means is going to be comprehensive but attempts to provide options available.
 
-## Default Environment
+## Default environment
 
 The default environment of Microsoft Power Platform empowers every employee in an organization, with a Microsoft 365 license to create apps and cloud flows. Default environment becomes the first playground studio for these employees (makers - citizen developers and professionals alike) to start building their apps and flows. Most Organizations often [rename the default environment as Personal Productivity](/power-platform/admin/environments-overview).
 
@@ -25,13 +25,10 @@ Every employee in an organization using the Power Platform has access to the def
 
 Admins reactively discover that many apps and flows are created in the default environment. It may not be appropriate for the app or flow to be in the default environment, in instances such as:
 
-An app is shared with many users – production like behavior.
-
-An app uses Excel workbooks with sensitive data.
-
-An app based on SharePoint lists is getting many data interactions – inserts, updates.
-
-An app or flow is using connectors that aren't allowed in new Data Loss Prevention (DLP) policies.
+- An app is shared with many users – production like behavior.
+- An app uses Excel workbooks with sensitive data.
+- An app based on SharePoint lists is getting many data interactions – inserts, updates.
+- An app or flow is using connectors that aren't allowed in new Data Loss Prevention (DLP) policies.
 
 Custom Connector(s) being enabled and used in the Default Environment instead of being secured via dedicated environment
 
@@ -324,7 +321,7 @@ Through the document, it’s laid out that a strong governance strategy is essen
 
 ## Appendix
 
-# Identification of Objects using DLP
+### Identification of Objects using DLP
 
 DLP policy-based identification is helpful to define target environments for your apps and flows. There might be an App or Flows that are using a connector that is blocked by the DLP or a mix of Business and Non-Business connectors, which, upon DLP activation, will stop working. Noncompliant objects based on DLP.
 
@@ -360,25 +357,24 @@ Notice the “Connections” will give you the list of all connections used by t
    | |
    |---|
 
-   ```
+   ```json
    [
      {
        "id": "/providers/Microsoft.PowerApps/apis/shared_twitter",
        "name": "Twitter",
        "type": "Microsoft.PowerApps/apis"
      }
-   ……
    ]
    ```
 
-4. From this list you have access to the “name” of the connector that will match with the name list of the csv App/Flow Connection column.
+1. From this list you have access to the “name” of the connector that will match with the name list of the csv App/Flow Connection column.
 1. By converting the csv to Excel format and placing it in your OneDrive, you can read all the impacted Apps/Flows from Power Automate and check which connection is the affected based on logic to compare connections with connector names.
 1. After you have a match on which connection is causing the impact, you can generate a new list with App/Flow ID and connector affected by the DLP.
 1. Use the earlier information to notify the maker about the future impact, you can use Power Cards to collect the feedback from the maker if the App/Flow can be deleted or need to be migrated to another Environment.
 
 Based on your analysis, if you determine that the affected Flows aren't being used (it hasn't been running for a while, isn't shared with anyone, hasn't been updated in a while), you can put it in quarantine and send an email to the make with instructions on how to move it to a different environment. This encourages a DIY (Do it Yourself) culture and removes the shadow IT. In some situations, you might want to exempt some objects from the DLP. For instance, you would like to apply a specific DLP only for new resources created and exempt the current resources. More information about DLP resource exemption can be found [here](/power-platform/admin/dlp-resource-exemption).
 
-# Cleanup Options
+## Cleanup Options
 
 A cleanup maybe be a good idea objects for apps, flow that have not been updated in a long time or they haven't been used for a good amount of time. In most cases, these are simply test flows, apps created by makers as part of their personal productivity learning and experimenting. There are different paths for an administrator to consider as far as cleanup is concerned.
 
@@ -419,7 +415,7 @@ To make a backup of the component either options of [Individual Migration](#) or
 
 Once the backup is secured then the options from Delete above can be applied to complete the cleanup process.
 
-# Solution Aware (be part of a solution)
+## Solution Aware (be part of a solution)
 
 Microsoft Power Platform is a collection of low-code tools that have their own ALM processes. For example, a Canvas app can be exported as a zip file and imported into a new environment, while a Cloud flow can be exported and imported as zip files. Dataverse objects use Solutions as a packaging tool, which can also be exported as a zip file and imported into a new environment.
 
@@ -429,19 +425,19 @@ Over time, Microsoft Power Platform objects have evolved to be solution aware. N
 
 The goal is to have all Microsoft Power Platform components added to a single Solution, which allows multiple components to be easily moved as a single unit between environments.
 
-**Common questions about solutions**
+### Common questions about solutions**
 
-# Can I make existing objects solution aware?
+#### Can I make existing objects solution aware?
 
 Yes, with the guidance provided in the sections following you'll understand the different options available.
 
-# I'm building an app using non-Premium connectors. Can I still use Solutions?
+#### I'm building an app using non-Premium connectors. Can I still use Solutions?
 
 Yes, you can still use solutions in a Dataverse enabled environment. The app and connection references can all be part of a one solution package. This helps to move the app into a new environment. You can iterate the development of the app in a Developer environment and deploy it to the downstream environments simply by exporting the solution and importing it into the target environment. Also, the Solutions zip file can be stored in the file repository for future reference and works as a back-up and restore purposes.
 
-# Definitions
+## Definitions
 
-## Default Environment
+### Default Environment
 
 A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. No users are automatically added to the Environment Admin role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant and is named as follows: "{Azure AD tenant name} (default)".
 
@@ -457,7 +453,7 @@ The default environment is limited to 1 TB of storage capacity. To store more da
 
 The capacity check conducted prior to creating new environments exclude the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
-## Managed Environment
+### Managed Environment
 
 Managed Environments is a suite of capabilities that allows admins to manage Microsoft Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment except the developer environments.
 
@@ -467,11 +463,11 @@ Every user running an app in a managed environment must have a Power Apps per us
 
 Every user running a Power Automate cloud flow in a managed environment must have a standalone Power Automate per user license, a Power Automate per flow license, or a Dynamics 365 license with premium Power Automate usage rights. Power Automate cloud flows that are triggered within apps or in context of apps or chatbots are covered by the respective Power Apps or Power Virtual Agents standalone licenses.
 
-## Solutions
+### Solutions
 
 Solutions are the mechanism for implementing ALM in Power Apps and other Microsoft Power Platform products, such as Power Automate. Solutions are used to transport apps and objects from one environment to another or to apply a set of customizations to existing apps. A solution can contain one or more apps and other objects such as site maps, tables, processes, web resources, choices, flows, and more.
 
-## Environment Variables in a solution
+### Environment Variables in a solution
 
 Environment variables enable the basic ALM scenario of moving an application between Microsoft Power Platform environments. Environment variables store the parameter keys and values, which then serve as input to various other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
 
@@ -499,7 +495,7 @@ A connection is a proxy or a wrapper around an API that allows the underlying se
 
 A connection reference is a solution component that contains information about a connector. Both canvas app and operations within a Power Automate flow bind to a connection reference. You can import your connection reference into a target environment with no further configuration needed after the import is completed. To change a specific connection associated with a canvas app or flow, you edit the connection reference component within the solution.
 
-# Reference Links
+## Reference Links
 
 The material below has been referenced as part of this paper.
 
@@ -535,7 +531,7 @@ The material below has been referenced as part of this paper.
 
 [Manage solutions using PowerShell - Power Platform | Microsoft Learn](/power-platform/alm/powershell-api)
 
-[Get started using the Dataverse package deployment module | Microsoft Learn](/powershell/powerapps/get-started-packagedeployment?view=pa-ps-latest)
+[Get started using the Dataverse package deployment module | Microsoft Learn](/powershell/powerapps/get-started-packagedeployment)
 
 [Move configuration data across organizations - Power Platform | Microsoft Learn](/power-platform/admin/manage-configuration-data)
 
