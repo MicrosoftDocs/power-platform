@@ -290,7 +290,6 @@ Catalog publishers have the following default columns:
 
 |Display Name|Description|
 |-----|-----|
-
 |**Name**|The name of the publisher.|
 |**Publisher ID**|Id provided by item submitter|
 |**Description**|A description of the publisher|
