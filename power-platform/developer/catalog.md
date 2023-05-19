@@ -192,11 +192,10 @@ Even with auto approval, submission requests that get auto approved are availabl
 
 #### Enable Unmanaged Solutions
 
-This setting is enabled by default. You must enable this setting if you want to use the deployment mode of **Template**.
- <!-- More information: TODO x-ref Submission >Deployment  //TODO: I don't find any target section in the submit-catalog-items.md file for 'Deployment'. -->
+This capability is reserved for future use. More details of what components are supported in deployment type of Template will be shared in the future.
 
-You can choose to disallow sharing of unmanaged solutions via the catalog.
-<!--//TODO: Why would someone want to do this? -->
+ <!--
+Revised this as future use. Jim please review //TODO-->
 
 ## Administer the catalog
 
@@ -290,21 +289,19 @@ This list has two views:
 - **Inactive Publishers**
 
 
-Catalog publishers have the following columns:
+Catalog publishers have the following default columns:
 
 |Display Name|Description|
 |-----|-----|
-|**Allow Auto-Approval**|Both the publisher and the app must allow auto approvals in order for the app's approval requests to look for auto approval policies.|
-|**Azure Publisher Id**| //TODO|   
-|**Description**|A description of the publisher|
-|**Last Sync Date**|Date last synced with TPS / PES|
+
 |**Name**|The name of the publisher.|
-|**Publisher Type**|Choices:<br /> - **FirstParty**<br /> - **ThirdParty**<br /> - **Tenant**<br /> - **Partner**|
-|**Pushed Date**|Date the record was pushed to TPS\PES|
-|**Subscription Id**|Azure Subscription ID where Items should be Posted|
-|**Publisher ID**|The GUID of the ID used by the integration systems|
-|**Owner**|Owner Id|
+|**Publisher ID**|Id provided by item submitter|
+|**Description**|A description of the publisher|
 |**Status Reason**|Reason for the status of the Publisher<br />Choices:<br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br /> - **TPS Disabled**|
+|**Allow Auto-Approval**|By enabling auto-approval at the Publisher level, future submissions from this publisher will be auto-approved. Admins can use this in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto-approval can be turned on globally across all publishers here.|
+<!--
+//TODO Jim to add link to another section in this document where we discuss enable auto-approval for entire catalog
+-->
 
 
 #### Review packages and solutions of items in catalog
