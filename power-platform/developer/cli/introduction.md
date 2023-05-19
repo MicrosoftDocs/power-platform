@@ -78,7 +78,13 @@ To uninstall Power Platform Tools for Visual Studio Code, follow the same steps 
 
 ## Install Power Platform CLI for Windows
 
-To install Power Platform CLI for Windows, download and run the .msi file found here: [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI) and choose the **Install** option.
+To install Power Platform CLI for Windows, you can either install via DotNet tool or .msi.
+
+* To install via [DotNet tool](https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools), you must have [.NET](https://dotnet.microsoft.com/en-us/download) installed (.NET 6.0 recommended). Install Power Platform CLI by using this command:
+```dotnetcli
+dotnet tool install --global Microsoft.PowerApps.CLI.Tool
+```
+* To install via .msi download and run the .msi file found here: [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI) and choose the **Install** option.
 
 ### Update Power Platform CLI for Windows
 
@@ -94,6 +100,25 @@ pac install latest
 ### Uninstall Power Platform CLI for Windows
 
 To uninstall Power Platform CLI for Windows, download and run the .msi from [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI) and choose the **Remove** option.
+
+## Install Power Platform CLI for Linux/macOS
+
+To install Power Platform CLI for Linux/macOS using [DotNet tool](https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools), you must have [.NET](https://dotnet.microsoft.com/en-us/download) installed (.NET 6.0 recommended). Install Power Platform CLI by using this command:
+```dotnetcli
+dotnet tool install --global Microsoft.PowerApps.CLI.Tool
+```
+
+The default location for a tool's binaries depends on the operating system:
+
+| OS          | Path                          |
+|-------------|-------------------------------|
+| Linux/macOS | `$HOME/.dotnet/tools`         |
+| Windows     | `%USERPROFILE%\.dotnet\tools` |
+
+This location is added to the user's path when the SDK is first run. So global tools can be invoked from any directory without specifying the tool location.
+
+Tool access is user-specific, not machine global. A global tool is only available to the user that installed the tool.
+
 
 ## Common commands
 
