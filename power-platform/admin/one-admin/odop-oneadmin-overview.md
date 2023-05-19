@@ -11,7 +11,7 @@ search.audienceType:
   - admin
 ---
 
-# One Dynamics, One Platform - One Admin experiences overview
+# One Dynamics, One Platform - Admin experiences overview
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -19,7 +19,7 @@ As part of the One Dynamics, One Platform initiative, Microsoft is consolidating
 
 As part of this admin unification, what has historically been known as a whole environment for Finance and Operations apps will now be considered simply as an application.  This means that many Dynamics 365 applications can be installed and hosted on the same environment, all powered by Microsoft Dataverse, with a consistent and single set of lifecycle operations that an admin can perform across them all.
 
-<img src="media/one-admin-journey.png" width="300px" alt="One Admin Journey" />
+<img src="media/one-admin-journey.png" style="float: right" width="300px" alt="One Admin Journey" />
 
 This article acts as an overview for Dynamics 365 Finance and Operations apps administrators who are new to Power Platform admin center.  Below you will find some core concepts to help understand the key differences between your prior admin center Lifecycle Services (LCS) and this new experience, as well as links to additional resources and articles that go in to more depth.
 
@@ -32,10 +32,10 @@ To learn more about One Dynamics, One Platform initiative, watch our TechTalk on
 Most notably, you will not see any new environment types in Power Platform admin center, we have truly integrated the ERP applications in to the fabric of Power Platform.  Getting access to Finance and Operations apps you have two primary options:
 
 1. **Create a new environment via template** - Whenever you create a new environment in Power Platform admin center you have the option to enable Dataverse and also enable Dynamics 365 apps.  This provides a drop down list of environment templates, which are just a bundling of applications pre-installed on top of a Dataverse database.  This list is dynamic so you will only see references to Finance, Supply Chain Management, Commerce, Project Operations and other Finance and Operations apps based on the license assigned to the admin creating the environment.
-<img src="media/new-environment-template.png" width="300px" alt="New environment templates" />
+<img src="media/new-environment-template.png" width="600px" alt="New environment templates" />
 
 2. **Install the provisioning app on an existing environment** - You can also install Finance and Operations apps on to an existing Dataverse-based environment.  This can be done via the Dynamics 365 resource page and choosing the "Dynamics 365 Finance and Operations Provisioning App" from inside any given environment, as long as that environment was originally created with the "Enable Dynamics 365 apps" toggle turned on.  This toggle ensures that Dataverse was created with the full Dynamics underlying schema, of which all Dynamics 365 apps require including Finance and Operations apps.  
-<img src="media/install-provisioning-app.png" width="300px" alt="Install provisioning app" />
+<img src="media/install-provisioning-app.png" width="600px" alt="Install provisioning app" />
 
 In either approach, you will notice that your environment will now have two runtime URLs available.  One for the CRM set of applications and one for the ERP set of applications:<br/>
 <img src="media/environment-urls.png" width="300px" alt="CRM and ERP URLs are now available" />
