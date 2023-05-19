@@ -7,7 +7,7 @@ ms.author: ritesp
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/17/2023
+ms.date: 05/19/2023
 search.audienceType: 
   - admin
 ---
@@ -18,9 +18,9 @@ search.audienceType:
 
 OAuth 2.0 for authentication traditionally relies on access token expiration to revoke a user's access to modern cloud services. Suppose an Azure Active Directory (Azure AD) administrator revokes a user's access. The user will still have access to resources until the access token expires, which for Power Platform, used to be up to an hour, by default, after the initial revocation event took place. 
 
-With continuous access evaluation (CAE) integration in Power Platform, a user's critical events and network location changes are continuously evaluated by Power Platform services, such as Dataverse. Power Platform services proactively terminate active user sessions and enforce tenant policy changes in near real time, instead of relying on access token static/configured expiration. This is possible with CAE as user critical events and network location change signals are continuously available to Power Platform services, such as Dataverse to evaluate a user condition continuously. 
+With continuous access evaluation integration in Power Platform, a user's [critical events](#scenarios-supported-by-power-platform) and network location changes are continuously evaluated by Power Platform services, such as Dataverse. Power Platform services proactively terminate active user sessions and enforce tenant policy changes in near real time, instead of relying on access token expiration. This is possible with continuous access evaluation as users' critical events and network location changes signals are continuously available to Power Platform services, such as Dataverse, to evaluate a user condition continuously. 
 
-When a CAE enabled and ready client, such as UCI or any client, makes a call to Power Platform, such as Dataverse, with an existing access token, the token is evaluated by the service near real time and it is accepted or rejected by Dataverse, which enforces the client to re-authenticate again based on the signals from the Azure AD. CAE allows enforcement of user critical events and network location change near real time by Power Platform services, such as Dataverse. 
+When a continuous access evaluation enabled and ready client, such as UCI or any client, makes a call to Power Platform, such as Dataverse, with an existing access token, the token is evaluated by the service near real time and it is accepted or rejected by Dataverse, which enforces the client to re-authenticate again based on the signals from the Azure AD. CAE allows enforcement of user critical events and network location change near real time by Power Platform services, such as Dataverse. 
 
 > [!Important]
 > [!include [preview](../includes/cc-preview-features-definition.md)]
