@@ -61,13 +61,35 @@ When the welcome content is enabled, upon signing in to Power Apps, makers will 
    > [!div class="mx-imgBorder"] 
    > ![Preview content.](media/welcome/maker-welcome-3.png "Preview content") 
 
+## User PowerShell to add/update welcome content
 
+You can use PowerShell to add/update Maker Welcome content
 
+#### Import module
 
+Run below command to import module
 
+```powershell
+import-Module -Name Microsoft.PowerApps.Administration.PowerShell 
+```
 
+#### Sets markdown content for maker onboarding for the specified Managed environment
 
+Here's an example PowerShell script that Sets markdown content for maker onboarding for the specified Managed environment. After you run it, you will see the markdown contents in **Maker welcome content** section of the Managed Environments settings. 
 
+Markdown parameter can span over multiple lines if it is in the double quotes.
 
+```powershell
+SetManagedEnvironmentMakerOnboardingMarkdownContent -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Markdown "## Welcome to Power Apps 
+### Let's get started" 
+```
+
+#### Sets Learn more URL for maker onboarding for the specified Managed environment
+
+Here's an example PowerShell script that Sets Learn more URL for maker onboarding for the specified Managed environment. After you run it, you will see Learn more URL populated in **Maker welcome content** section of the Managed Environments settings. 
+
+```powershell
+SetManagedEnvironmentMakerOnboardingLearnMoreUrl -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -LearnMoreUrl "www.microsoft.com" 
+```
  
 
