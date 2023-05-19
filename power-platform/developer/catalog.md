@@ -4,7 +4,7 @@ description: "Use the catalog in Power Platform to managed shared components and
 author: samathur
 ms.subservice: developer
 ms.author: samathur
-ms.date: 05/18/2023
+ms.date: 05/19/2023
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
@@ -194,9 +194,6 @@ Even with auto approval, submission requests that get auto approved are availabl
 
 This capability is reserved for future use. More details of what components are supported in deployment type of Template will be shared in the future.
 
- <!--
-Revised this as future use. Jim please review //TODO-->
-
 ## Administer the catalog
 
 Administering the catalog includes the following tasks:
@@ -298,10 +295,8 @@ Catalog publishers have the following default columns:
 |**Publisher ID**|Id provided by item submitter|
 |**Description**|A description of the publisher|
 |**Status Reason**|Reason for the status of the Publisher<br />Choices:<br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br /> - **TPS Disabled**|
-|**Allow Auto-Approval**|By enabling auto-approval at the Publisher level, future submissions from this publisher will be auto-approved. Admins can use this in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto-approval can be turned on globally across all publishers here.|
-<!--
-//TODO Jim to add link to another section in this document where we discuss enable auto-approval for entire catalog
--->
+|**Allow Auto-Approval**|By enabling auto-approval at the Publisher level, future submissions from this publisher will be auto-approved. Admins can use this in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto-approval can be turned on globally across all publishers here. More information: [Enable Auto Approval](#enable-auto-approval)|
+
 
 
 #### Review packages and solutions of items in catalog
