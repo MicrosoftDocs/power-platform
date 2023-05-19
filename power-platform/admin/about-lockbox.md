@@ -134,6 +134,7 @@ In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamic
 - Microsoft 365 A5/E5/F5/G5 Compliance
 - Microsoft 365 F5 Security & Compliance
 - Microsoft 365 A5/E5/F5/G5 Insider Risk Management
+- Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
 [Learn more](https://go.microsoft.com/fwlink/?linkid=2214240) about applicable licenses.
 
 ## Exclusions
