@@ -13,7 +13,7 @@ search.audienceType:
 
 # One Dynamics, One Platform - Admin experiences overview
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 As part of the One Dynamics, One Platform initiative, Microsoft is consolidating administrative functionalities from various other admin portals in to the Power Platform admin center.  Customers who have purchased Dynamics 365 Finance and Operations apps will now be able to administer their environments, policies, and licensing and capacity all from a single admin center.  
 
