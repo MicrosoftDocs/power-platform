@@ -10,7 +10,7 @@ contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2023
+ms.date: 05/16/2023
 search.audienceType: 
   - admin
 ---
@@ -57,9 +57,10 @@ For users who make apps that connect to the database and need to create or updat
 | Environment Maker     |  Customizations       | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data within an environment. More information: [Environments overview](./environments-overview.md) <br /> <br />Environment makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app)       |
 | Global Reader  |   | The [Global Reader](/azure/active-directory/roles/permissions-reference) role is not yet supported in the Power Platform admin center.  |
 | Office Collaborator | Read (self) | Has Read permission to tables where a record from these tables was shared with the organization. Does not have access to any other core and custom table records. This role is assigned to the Office Collaborators owner team and not to an individual user.   |
-| Service Reader | Read | Has full Read permission to all entities including custom entities. This is primarily used by backend service that requires reading all entities.    |
-| Service Writer | Create, Read, Write | Has full Create, Read, and Write permission to all entities including custom entities. This is primarily used by backend service that requires creating and updating records.    |
-| Support User | Read Customizations, Read Business Management settings      | Has full Read permission to customization and business management settings to allow Support staff to troubleshoot environment configuration issues. Does not have access to core records.      |
+| Service Deleted | Delete | Has full Delete permission to all entities, including custom entities. This is primarily used by the service and requires deleting records in all entities. **This role cannot be assigned to a user or team.**   |
+| Service Reader | Read | Has full Read permission to all entities, including custom entities. This is primarily used by the service and requires reading all entities. **This role cannot be assigned to a user or team.**   |
+| Service Writer | Create, Read, Write | Has full Create, Read, and Write permission to all entities, including custom entities. This is primarily used by the service and requires creating and updating records. **This role cannot be assigned to a user or team.**   |
+| Support User | Read Customizations, Read Business Management settings      | Has full Read permission to customization and business management settings, which allow support staff to troubleshoot environment configuration issues. This role does not have access to core records. **This role cannot be assigned to a user or team.**        |
 | System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
 | System Customizer     | Create, Read, Write, Delete, Customizations         | Has full permission to customize the environment. Can view all custom table data in the environment. However, users with this role can only view rows (records) that they create in Account, Contact, Activity tables. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
 
@@ -99,18 +100,20 @@ The following table describes which resources can be authored by each security r
 |Resource  |Environment Maker  |Environment Admin  |System Customizer  |System Admin  |
 |---------|---------|---------|---------|---------|
 |Canvas app     |X         |X         |X        |X         |
-|Cloud flow     |X (non-solution aware)         |X         |X (solution aware)         |X         |
+|Cloud flow     |X (non-solution aware)         |X         |X         |X         |
 |Connector     |X (non-solution aware)         |X         |X         |X         |
-|Connection     |X         |X         |X         |X         |
+|Connection<sup>*</sup>     |X         |X         |X         |X         |
 |Data gateway     |X         |X         |-         |X         |
 |Dataflow     |X         |X         |-         |X         |
 |Dataverse tables     |-         |-         |X         |X         |
 |Model-driven app     |X        |-         |X         |X         |
 |Solution framework     |X         |-         |X         |X         |
-|<sup>*</sup>Desktop flow     |-         |-         |X         |X         |
+|Desktop flow<sup>**</sup>     |-         |-         |X         |X         |
 |AI Builder     |-         |-         |X         |X         |
 
-<sup>*</sup>Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
+\*Connections are used in [canvas apps](/power-apps/maker/canvas-apps/add-manage-connections) and [Power Automate](/power-automate/add-manage-connections).
+
+\**Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
 
 ## Assign security roles to users in an environment that has no Dataverse database 
 

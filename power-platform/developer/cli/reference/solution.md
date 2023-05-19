@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 5/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -178,6 +178,12 @@ Path to a file containing a JSON array rules and levels to override.  Accepted v
 
 Select a rule set that will be executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default)
 
+#### `--saveResults` `-sav`
+
+Uses current environment to store solution analysis results. By default, this argument is set to false
+
+This parameter requires no value. It is a switch.
+
 #### `--solutionUrl` `-u`
 
 SAS Uri pointing to solution.zip to be analyzed
@@ -223,6 +229,12 @@ Use one or more of these values separated by commas:
 - `outlooksynchronization`
 - `relationshiproles`
 - `sales`
+
+#### `--localize` `-loc`
+
+Extract or merge all string resources into .resx files.
+
+This parameter requires no value. It is a switch.
 
 #### `--max-async-wait-time` `-wt`
 
@@ -629,6 +641,12 @@ Use one or more of these values separated by commas:
 - `outlooksynchronization`
 - `relationshiproles`
 - `sales`
+
+#### `--localize` `-loc`
+
+Extract or merge all string resources into .resx files.
+
+This parameter requires no value. It is a switch.
 
 #### `--max-async-wait-time` `-wt`
 
