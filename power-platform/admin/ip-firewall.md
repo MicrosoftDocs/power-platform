@@ -1,12 +1,15 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn about how to use IP firewall in Power Platform environments.
-author: Mattp123
-ms.author: matp
+author: ritesp
+ms.author: ritesp
 ms.topic: overview
-ms.date: 05/03/2023
+ms.date: 05/19/2023
+ms.reviewer: sericks
 ms.custom: template-overview
+
 ---
+
 # IP firewall in Power Platform environments (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
@@ -19,6 +22,7 @@ For example, consider when the IP firewall is turned on in your production Micro
 
 > [!IMPORTANT]
 > - This is a preview feature.
+> - [!include [preview](../includes/cc-preview-features-definition.md)]
 > - The IP firewall feature is only available with Managed Environments. More information: [Managed Environments overview](managed-environment-overview.md)
 
 ## Key benefits
