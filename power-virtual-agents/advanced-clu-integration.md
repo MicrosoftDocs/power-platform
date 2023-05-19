@@ -26,7 +26,7 @@ With this new capability, Power Virtual Agents users can now map CLU intents to 
 
 ## Prerequisites
 
-- A fully [trained CLU model](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio#train-your-model)
+- A fully [trained CLU model](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio#train-your-model)
 - Enabled deployment of the model (including the key and prediction URL)
 - CLU project name and deployment name 
 - [Power Virtual Agents](requirements-licensing-subscriptions.md) account
