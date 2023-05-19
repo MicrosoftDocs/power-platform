@@ -1,5 +1,5 @@
 ---
-title: Power Virtual Agents preview quickstart (preview)
+title: Power Virtual Agents preview quickstart
 description: Discover the new features introduced in the Power Virtual Agents preview.
 ms.date: 03/24/2023
 
@@ -12,9 +12,7 @@ ms.collection: virtual-agent
 ms.custom: bap-template
 ---
 
-# Quickstart (preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# Quickstart
 
 This quickstart walks you through making a bot that uses new features and improvements introduced in the Power Virtual Agents preview. You'll create a bot that helps users make a reservation at a fictional restaurant.
 
@@ -24,25 +22,21 @@ This quickstart walks you through making a bot that uses new features and improv
 
 ## Create your bot
 
-<<---- Are we planning to keep this page? Because the create bot content should be the same as what's in the fundamentals-get started page. at GA users will be creating the new bots by default', so we can copy content that I just updated on the fundamentals-get started page if we plan to keep it ---->>
+Power Virtual Agents has an app-level home page that isn't specific to any bot. On this page, you can create a bot and view a list of bots you've worked on recently. You can also find learning resources, such as videos, documentation, and learning paths.
 
-Power Virtual Agents now has an app-level home page that isn't specific to any bot. On this page, you can create a bot and view a list of bots you've worked on recently. You can also find learning resources, such as videos, documentation, and learning paths.
-
-1. In the navigation menu, select **Create** (**+**). Or, select **Home**, and then select **+ Create a bot**.
+1. In the navigation menu, select **Home**, and then select **Create a bot**.
 
     :::image type="content" source="media/quickstart/new-bot1.png" alt-text="Screenshot of the Power Virtual Agents app-level home page, with the Create buttons highlighted.":::
+    
+    <<< IMAGE NEEDS UPDATE >>>>
 
-1. Select **Try the unified canvas (preview)** to create a preview bot.
-
-    An opt-in confirmation will appear the first time you create or view a preview bot. Select **Continue**, or select **No thanks** if you change your mind.
-
-    :::image type="content" source="media/quickstart/preview-opt-in.png" alt-text="Screenshot of the Power Virtual Agents preview opt-in message.":::
-
-1. Name the bot `Reservation Bot` and select **Create**.
+2. A whole page wizard will start with a couple steps to get your bot created very quickly. A default bot name is there. Instead of the default name, name the bot `Reservation Bot` and select **Create**. 
 
     :::image type="content" source="media/quickstart/new-bot2.png" alt-text="Screenshot of creating a chatbot.":::
+    
+    <<< IMAGE NEEDS UPDATE >>>
 
-    In the Power Virtual Agents preview, bots can only be created in English.
+A new bot will be created and you will land on the bot's overview page.
 
 ## Customize the conversation start topic
 
@@ -108,7 +102,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 ## Add a reservation topic
 
-1. In the navigation menu, select **Topics** and then **New topic**.
+1. In the navigation menu, select **Topics**, then **New topic**, then **From blank**.
 
 1. Add the following trigger phrases:
     - `Reserve a table`
