@@ -224,13 +224,27 @@ Install a catalog item to the target environment.
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-| environment-url| (Required) The URL for the target environment that you want to import the solution into (for example, `https://YourOrg.crm.dynamics.com`).|
-|user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
-| password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
-| solution-file        | (Required) The path and name of the solution file you want to import.   |
-|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
-|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
-|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
+|catalog-item-id|(Required) Catalog item to be installed on the target environment.|
+| target-url| (Required) The Url of the target environment for catalog item installation into (for example, `https://YourOrg.crm.dynamics.com`).|
+| settings | (Required) Runtime Package Settings for the installation framework to execute. The format of the string must be `key=value\|key=value`. |
+| target-version        | Target version to install. If left empty, published version is selected.   |
+|poll-status| Poll to check status of your request.|
+
+### submit
+
+List all published catalog items from the current Dataverse Organization.
+
+| Parameter           | Description        |
+|----------------------|--------------------------|
+|catalog-item-id|(Required) Catalog item to be installed on the target environment.|
+| target-url| (Required) The Url of the target environment for catalog item installation into (for example, `https://YourOrg.crm.dynamics.com`).|
+| settings | (Required) Runtime Package Settings for the installation framework to execute. The format of the string must be `key=value\|key=value`. |
+| target-version        | Target version to install. If left empty, published version is selected.   |
+|poll-status| Poll to check status of your request.|
+
+### status
+
+List all published catalog items from the current Dataverse Organization.
 
 
 ## GitHub workflow authoring

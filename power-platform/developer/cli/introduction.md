@@ -80,7 +80,7 @@ To uninstall Power Platform Tools for Visual Studio Code, follow the same steps 
 
 To install Power Platform CLI for Windows, you can either install via DotNet tool or .msi.
 
-* To install via [DotNet tool](https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools), you must have [.NET](https://dotnet.microsoft.com/en-us/download) installed (.NET 6.0 recommended). Install Power Platform CLI by using this command:
+* To install via [DotNet tool](/dotnet/core/tools/global-tools), you must have [.NET](https://dotnet.microsoft.com/download) installed (.NET 6.0 recommended). Install Power Platform CLI by using this command:
 ```dotnetcli
 dotnet tool install --global Microsoft.PowerApps.CLI.Tool
 ```
@@ -103,7 +103,7 @@ To uninstall Power Platform CLI for Windows, download and run the .msi from [Mic
 
 ## Install Power Platform CLI for Linux/macOS
 
-To install Power Platform CLI for Linux/macOS using [DotNet tool](https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools), you must have [.NET](https://dotnet.microsoft.com/en-us/download) installed (.NET 6.0 recommended). Install Power Platform CLI by using this command:
+To install Power Platform CLI for Linux/macOS using [DotNet tool](/dotnet/core/tools/global-tools), you must have [.NET](https://dotnet.microsoft.com/download) installed (.NET 6.0 recommended). Install Power Platform CLI by using this command:
 ```dotnetcli
 dotnet tool install --global Microsoft.PowerApps.CLI.Tool
 ```
