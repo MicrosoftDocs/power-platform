@@ -18,14 +18,16 @@ search.audienceType:
 
 OAuth 2.0 for authentication traditionally relies on access token expiration to revoke a user's access to modern cloud services. Suppose an Azure Active Directory (Azure AD) administrator revokes a user's access. The user will still have access to resources until the access token expires, which for Power Platform, used to be up to an hour, by default, after the initial revocation event took place. 
 
-With continuous access evaluation integration in Power Platform, a user's [critical events](#scenarios-supported-by-power-platform) and network location changes are continuously evaluated by Power Platform services, such as Dataverse. Power Platform services proactively terminate active user sessions and enforce tenant policy changes in near real time, instead of relying on access token expiration. With continuous access evaluation, as users' critical events and network location changes signals are continuously available to Power Platform services to evaluate a user condition continuously. 
+With continuous access evaluation integration in Power Platform, a user's [critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) and network location changes are continuously evaluated by Power Platform services, such as Dataverse. Power Platform services proactively terminate active user sessions and enforce tenant policy changes in near real time, instead of relying on access token expiration. With continuous access evaluation, users' critical events and network location changes signals are continuously available to Power Platform services to evaluate a user condition continuously. 
+
+When a client, such as a customer engagement app (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) makes a call to a Power Platform service, for example Dataverse, with an existing access token, the token is evaluated by the service near real time. The call is accepted or rejected by Dataverse, forcing the client to re-authenticate again based on the signals from the Azure AD. Continuous access evaluation allows enforcement of user critical events and network location changes near real time by Power Platform services, such as Dataverse. 
 
 > [!Important]
 > [!include [preview](../includes/cc-preview-features-definition.md)]
 
 ## Key benefits
 
-- **Mitigation of insider threats**: An insider can export a valid access token outside your organization and can replay this token to gain access to cloud services outside of your organization. With continuous access evaluation, you can enforce IP location policies near real time to prevent such access.
+- **Mitigation of insider threats**: An internal team member can export a valid access token outside your organization and can replay this token to gain access to cloud services outside of your organization. With continuous access evaluation, you can enforce IP location policies near real time to prevent such access.
 
 - **Data exfiltration risks mitigation**: Continuous access evaluation helps prevent data exfiltration through enforcement of IP location policies and user critical events near real time. 
 
@@ -43,8 +45,8 @@ For Power Platform, continuous access evaluation is currently supported by Datav
 
 Continuous access evaluation supports two types of events: 
 
-- User critical events are the events that are related to a user’s access to cloud resources. 
-- Conditional access policy evaluation occurs when a user should lose access to a resource, based on an administrator-defined policy, such as IP location policy. 
+- User [critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) are the events that are related to a user’s access to cloud resources. 
+- [Conditional access policy](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#conditional-access-policy-evaluation) evaluation occurs when a user should lose access to a resource, based on an administrator-defined policy, such as IP location policy. 
 
 User critical events include: 
 
