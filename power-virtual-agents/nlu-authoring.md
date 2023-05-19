@@ -129,10 +129,6 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 >  
 > :::image type="content" source="media/nlu-gpt/describe-it-feedback.png" alt-text="Screenshot of the Power Virtual Agents Describe it feedback panel.":::
 
-## Disable Copilot in Power Virtual Agents
-
-Admins can disable Copilot for their organization by starting a support request with Microsoft.
-
 ## What's supported
 
 ### Topic node support
@@ -184,6 +180,10 @@ The capability collects user prompts, the returned configured Topics, and any fe
 
 We use this data to evaluate and improve the quality of the capability. More information on what data is collected is available in the [terms](https://go.microsoft.com/fwlink/?linkid=2236010).
 
+## Disable Copilot in Power Virtual Agents
+
+Admins can disable Copilot for their organization by starting a support request with Microsoft.
+
 ## Reporting Concerns
 
 ### How can I report concerns about Copilot?
@@ -191,5 +191,6 @@ We use this data to evaluate and improve the quality of the capability. More inf
 If you have any concerns (such as those relating to content policies or codes of conduct) about the Copilot feature, you can raise them by emailing us at pvareport@microsoft.com. We will aim to respond to you within 2 business days.
 
 <mark>We shouldn't have support contact info here - would be better to direct them to the PVA forum like we do for others.</mark>
+
 
 [!INCLUDE[footer-include](includes/footer-banner.md)] 
