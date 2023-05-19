@@ -13,7 +13,7 @@ search.audienceType:
 
 ---
 
-# Use solution checker in Managed Environments (preview)
+# Solution checker enforcement in Managed Environments (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
