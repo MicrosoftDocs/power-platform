@@ -35,7 +35,7 @@ This evolution brings several exciting new features:
 
 Check out the [Quickstart](quickstart-preview.md) for a guided tutorial on how to use the new features.
 
-The Power Virtual Agents preview doesn't yet support some of the features you're used to in Power Virtual Agents, such as agent transfers and bot authoring in Teams. For the complete list, see [Limitations of the Power Virtual Agents preview](limitations-preview.md).
+The Power Virtual Agents preview doesn't yet support some of the features you're used to in Power Virtual Agents, such as agent transfers and bot authoring in Teams.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
