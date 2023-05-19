@@ -178,10 +178,7 @@ The URL you specify should host the content you want the bot to generate answers
  
 You should also be aware of some of the characteristics of the AI, and how to get the most out of the questions you ask:
 
-- The bot can have difficulty answering questions that require calculations, comparisons, or form submissions to provide answers. This includes questions that use comparative and superlative terms such as better or best, latest, or cheapest. 
-
-- The **generative answers** capability doesn't remember context across multiple questions in the conversation (also known as "multi-turn questions"). 
-    You should treat each question you ask the bot as part of testing this capability in isolation.
+- The bot can have difficulty answering questions that require calculations, comparisons, or form submissions to provide answers. This includes questions that use comparative and superlative terms such as better or best, latest, or cheapest.
 
 - If the bot can't generate an answer to a question, it will ask you to rephrase the question. After two of these prompts, the bot will initiate the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
