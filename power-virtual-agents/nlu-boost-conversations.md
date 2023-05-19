@@ -201,14 +201,6 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 ## What's supported
 
-### Publishing
-
-You'll be able to publish bots that have generative answers enabled by following the guidance in the Publish and integrate documentation, starting with [Key concepts - publish your bot](publication-fundamentals-publish-channels.md). Your admin could disable the ability to publish bots with generative answers for your tenant in the **Power Platform admin center**. 
-
-:::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
-
-
-
 ### Quotas
 
 Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the client's service load, which protects a service from being overloaded and the client from unexpected resource usage. During preview, bots with "Generative Answers" enabled have a limit on the number of queries they can make that reach out to the URL you specified.
@@ -265,5 +257,11 @@ The system only supports English. Inaccurate responses may be returned when user
 The capability collects user prompts, the responses returned by the system, and any feedback you provide. 
 
 We use this data to evaluate and improve the quality of the capability. More information on what data is collected is available in the [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520). 
+
+### Disable bot publishing
+
+Your admin could disable the ability to publish bots with generative answers for your tenant in the **Power Platform admin center**. 
+
+:::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
