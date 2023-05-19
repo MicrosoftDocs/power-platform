@@ -211,6 +211,28 @@ Uploads data to Power Pages.
 |upload-path|Path where the website content is stored (alias: -p).|
 |deployment-profile| Upload portal data with environment details defined through [profile variables](/powerapps/maker/portals/power-apps-cli#use-deployment-profile) in deployment-profiles/\[profile-name].deployment.yaml file.|
 
+## Catalog tasks
+
+These tasks perform actions against Catalog in Power Platform and include the following.
+
+> [!NOTE]
+> Currently Catalog tasks for Power Platform are in **Preview**.
+
+### install
+
+Install a catalog item to the target environment.
+
+| Parameter           | Description        |
+|----------------------|--------------------------|
+| environment-url| (Required) The URL for the target environment that you want to import the solution into (for example, `https://YourOrg.crm.dynamics.com`).|
+|user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
+| password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
+| solution-file        | (Required) The path and name of the solution file you want to import.   |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
+
+
 ## GitHub workflow authoring
 
 To learn more about composing GitHub workflows using GitHub actions, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
