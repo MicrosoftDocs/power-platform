@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Work with conversation transcripts
 
-You can download transcripts of customer interactions with your bot in both Power Apps and Power Virtual Agents. The information that each app exports is slightly different. This article covers downloading conversation transcripts in Power Apps and using them to create reports in Power BI. [Download bot session transcripts in Power Virtual Agents](analytics-sessions.md).
+You can view, export and download transcripts of customer interactions with your bot in both Power Apps and Power Virtual Agents. The information that each app exports is slightly different. This article covers downloading conversation transcripts in Power Apps and using them to create reports in Power BI. [Download bot session transcripts in Power Virtual Agents](analytics-sessions.md).
 
 By default, Power Apps downloads conversation transcripts from the last 30 days. [You can change the retention period](#change-the-default-retention-period).
 
@@ -27,9 +27,43 @@ By default, Power Apps downloads conversation transcripts from the last 30 days.
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
+### View and export bot conversation transcripts from the Power Apps portal
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+You can also view and export bot conversation transcripts from the Power Apps portal.
+
+First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
+
+### View conversation transcripts
+
+1. In the side pane select the **Tables** node. At the top, select **All**.
+
+    :::image type="content" source="media/analytics-sessions/view-scripts1.png" alt-text="Screenshot showing All selected on the Tables node.":::
+
+1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Tables**.
+
+    :::image type="content" source="media/analytics-sessions/view-scripts2.png" alt-text="Screenshot showing Conversation Transcript selected.":::
+
+1. A page for the **ConversationTranscript** table will open and show a list of data available to view.
+
+    :::image type="content" source="media/analytics-sessions/view-scripts3.png" alt-text="Screenshot showing Active conversation transcripts expanded.":::
+
+### Export conversation transcripts
+
+1. In the side pane, select the **Tables** node. At the top, select **All**.
+
+    :::image type="content" source="media/analytics-sessions/export-scripts1.png" alt-text="Select All on the Tables node.":::
+
+1. Type **Conversation** in the **Search** textbox at the top right. Select **ConversationTranscript** under **Tables**.
+
+    :::image type="content" source="media/analytics-sessions/export-scripts2.png" alt-text="Select the transcript for export.":::
+
+1. Expand the **Export** menu item at the top of the screen and select **Export data**. It may take a few minutes for the data to be compiled for export.
+
+    :::image type="content" source="media/analytics-sessions/export-scripts3.png" alt-text="Selecting Export data from the Export menu.":::
+
+1. Select **Download exported data** to download the content.
+
+    :::image type="content" source="media/analytics-sessions/export-scripts4.png" alt-text="Download exported data.":::
 
 ### Download bot conversation transcripts
 
