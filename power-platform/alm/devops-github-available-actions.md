@@ -232,19 +232,23 @@ Install a catalog item to the target environment.
 
 ### submit
 
-List all published catalog items from the current Dataverse Organization.
+List all published catalog items from the current Dataverse environment (organization).
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-|catalog-item-id|(Required) Catalog item to be installed on the target environment.|
-| target-url| (Required) The Url of the target environment for catalog item installation into (for example, "https://YourOrg.crm.dynamics.com").|
-| settings | (Required) Runtime package settings for the installation framework to execute. The format of the string must be `key=value|key=value`. |
-| target-version        | Target version to install. If left empty, the published version is selected.   |
-|poll-status| Poll to check the status of your request.|
+| path |(Required) Path to catalog submission document.|
+| package-zip | Path to package zip file.|
+| solution-zip | Path to solution zip file. |
+|poll-status| Poll to check status of your request.|
 
 ### status
 
-List all published catalog items from the current Dataverse environment (organization).
+Get status of the catalog install/submit request.
+
+| Parameter           | Description        |
+|----------------------|--------------------------|
+| tracking-id |(Required) Request tracking id.|
+| type | (Required) Request type (Values: Install, Submit) |
 
 
 ## GitHub workflow authoring
