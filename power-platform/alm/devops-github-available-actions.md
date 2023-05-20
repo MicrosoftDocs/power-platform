@@ -211,12 +211,12 @@ Uploads data to Power Pages.
 |upload-path|Path where the website content is stored (alias: -p).|
 |deployment-profile| Upload portal data with environment details defined through [profile variables](/powerapps/maker/portals/power-apps-cli#use-deployment-profile) in deployment-profiles/\[profile-name].deployment.yaml file.|
 
-## Catalog tasks
+## Catalog tasks (preview)
 
-These tasks perform actions against Catalog in Power Platform and include the following.
+These tasks perform actions against the catalog in Power Platform and include the following.
 
 > [!NOTE]
-> Currently Catalog tasks for Power Platform are in **Preview**.
+> Currently, catalog tasks for Power Platform are a **preview** release.
 
 ### install
 
@@ -225,10 +225,10 @@ Install a catalog item to the target environment.
 | Parameter           | Description        |
 |----------------------|--------------------------|
 |catalog-item-id|(Required) Catalog item to be installed on the target environment.|
-| target-url| (Required) The Url of the target environment for catalog item installation into (for example, `https://YourOrg.crm.dynamics.com`).|
-| settings | (Required) Runtime Package Settings for the installation framework to execute. The format of the string must be `key=value\|key=value`. |
-| target-version        | Target version to install. If left empty, published version is selected.   |
-|poll-status| Poll to check status of your request.|
+| target-url| (Required) The Url of the target environment for the catalog item installation into (for example, "https://YourOrg.crm.dynamics.com").|
+| settings | (Required) Runtime package settings for the installation framework to execute. The format of the string must be `key=value|key=value`. |
+| target-version        | Target version to install. If left empty, the published version is selected.   |
+|poll-status| Poll to check the status of your request.|
 
 ### submit
 
@@ -237,14 +237,14 @@ List all published catalog items from the current Dataverse Organization.
 | Parameter           | Description        |
 |----------------------|--------------------------|
 |catalog-item-id|(Required) Catalog item to be installed on the target environment.|
-| target-url| (Required) The Url of the target environment for catalog item installation into (for example, `https://YourOrg.crm.dynamics.com`).|
-| settings | (Required) Runtime Package Settings for the installation framework to execute. The format of the string must be `key=value\|key=value`. |
-| target-version        | Target version to install. If left empty, published version is selected.   |
-|poll-status| Poll to check status of your request.|
+| target-url| (Required) The Url of the target environment for catalog item installation into (for example, "https://YourOrg.crm.dynamics.com").|
+| settings | (Required) Runtime package settings for the installation framework to execute. The format of the string must be `key=value|key=value`. |
+| target-version        | Target version to install. If left empty, the published version is selected.   |
+|poll-status| Poll to check the status of your request.|
 
 ### status
 
-List all published catalog items from the current Dataverse Organization.
+List all published catalog items from the current Dataverse environment (organization).
 
 
 ## GitHub workflow authoring
