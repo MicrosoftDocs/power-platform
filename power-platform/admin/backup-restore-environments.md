@@ -45,6 +45,11 @@ Supply values for the following parameters:
 - Set the **EnvironmentName** parameter to your Environment ID.
 - The **NewBackupRetentionPeriodInDays** parameter should be set to 7, 14, 21, or 28.
 
+### Verify retention period
+```powershell
+Get-AdminPowerAppEnvironment- Environment ID
+```
+Set the **EnvironmentName** parameter to your Environment ID.
  
 ## System backups 
 Some backups take place without you having to do anything.  
