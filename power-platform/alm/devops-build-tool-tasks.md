@@ -6,7 +6,7 @@ author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
 ms.custom: ""
-ms.date: 01/04/2022
+ms.date: 05/19/2023
 ms.reviewer: "pehecke"
 
 ms.topic: "article"
@@ -834,12 +834,12 @@ steps:
 | `UploadPath`<br/>Upload content path | Path from where the Power Pages website content will be uploaded. |
 
 
-## Catalog for Power Platform tasks
+## Catalog for Power Platform tasks (preview)
 
-These tasks perform actions against Catalog in Power Platform and include the following.
+These tasks perform actions against the catalog in Power Platform and include the following.
 
 > [!NOTE]
-> Currently Catalog tasks for Power Platform are in **Preview**.
+> Currently, catalog tasks for Power Platform are a **preview** release.
 
 ### Install Catalog item
 
@@ -851,8 +851,8 @@ Install a catalog item to the target environment.
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment that you want upload content to (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `Environment`<br/>Target environment URL | (Required) Environment url this task targets. |
 | `CatalogItemId`<br/>Catalog Item ID to be installed | (Required) Catalog item to be installed on the target environment. |
-| `TargetEnvironmentUrl`<br/>Target environment URL | (Required) The Url of the target environment for catalog item installation into (for example, `https://YourOrg.crm.dynamics.com`). |
-| `PollStatus`<br/>Check poll status | (Optional) Poll to check status of your request. (true\|false). |
+| `TargetEnvironmentUrl`<br/>Target environment URL | (Required) The Url of the target environment for catalog item installation into (for example, "https://YourOrg.crm.dynamics.com"). |
+| `PollStatus`<br/>Check poll status | (Optional) Poll to check the status of your request. (true\|false). |
 
 
 ### Parameters (catalog-install)
@@ -877,12 +877,12 @@ Submit catalog approval request.
 | Parameters   | Description   |
 |--------------|---------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment that you want upload content to (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment that you want upload content to (e.g., "https://powerappsbuildtools.crm.dynamics.com"). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `Environment`<br/>Target environment URL | (Required) Environment url this task targets. |
 | `CatalogSubmissionFile`<br/>Catalog submission file | (Required) Specify the path and file name of the catalog submission file. |
 | `UsePackageSolutionZipFile`<br/>File type | File type: package or solution zip file. |
 | `SolutionZipFile`<br/>Solution zip file name | Specify the path and file name of the solution zip file. |
-| `PollStatus`<br/>Check poll status | (Optional) Poll to check status of your request. (true\|false). |
+| `PollStatus`<br/>Check poll status | (Optional) Poll to check the status of your request. (true\|false). |
 
 
 ### Parameters (catalog-submit)
@@ -904,12 +904,12 @@ steps:
 
 ### Catalog request status
 
-Get status of the catalog install/submit request.
+Get the status of the catalog install/submit request.
 
 | Parameters   | Description   |
 |--------------|---------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment that you want upload content to (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment that you want upload content to (e.g., "https://powerappsbuildtools.crm.dynamics.com"). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `Environment`<br/>Target environment URL | (Required) Environment url this task targets. |
 | `TrackingId`<br/>Request tracking ID | (Required) Request tracking ID. |
 | `RequestType`<br/>Request type | (Required) Reqeust type. (Values: Install \| Submit). |
