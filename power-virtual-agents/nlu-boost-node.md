@@ -30,7 +30,7 @@ Internal resources:
  - DataVerse
  - Custom data (internal or external): Supply your own content from any source; for instance, from a Power Automate Flow, Skill, or other source.
 
-In addition, you can add information sources to a topic using the **Generative answers*** node. This node allows you to specify sources that the *node* will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability. Note that this node's information sources override those you may have specified at the bot level, which function as a fallback. 
+In addition, you can add information sources to a topic using the **Generative answers** node. This node allows you to specify sources that the *node* will search, based on the inputs you give it. The results of the search will be summarized and checked for data viability. Note that this node's information sources override those you may have specified at the bot level, which function as a fallback. 
 
 These methods of boosting your bot using generative answers allows you to specify information sources for the entire bot (for instance, with a url at bot creation) and use alternate information sources within a topic via the Search and summarize content node.
 
