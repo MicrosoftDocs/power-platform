@@ -27,15 +27,11 @@ Power Virtual Agents has an app-level home page that isn't specific to any bot. 
 1. In the navigation menu, select **Home**, and then select **Create a bot**.
 
     :::image type="content" source="media/quickstart/new-bot1.png" alt-text="Screenshot of the Power Virtual Agents app-level home page, with the Create buttons highlighted.":::
-    
-    <<< IMAGE NEEDS UPDATE >>>>
-
+   
 2. A whole page wizard will start with a couple steps to get your bot created very quickly. A default bot name is there. Instead of the default name, name the bot `Reservation Bot` and select **Create**. 
 
     :::image type="content" source="media/quickstart/new-bot2.png" alt-text="Screenshot of creating a chatbot.":::
-    
-    <<< IMAGE NEEDS UPDATE >>>
-
+   
 A new bot will be created and you will land on the bot's overview page.
 
 ## Customize the conversation start topic
