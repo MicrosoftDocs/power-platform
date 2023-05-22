@@ -34,7 +34,7 @@
           href: nlu-gpt-overview.md
         - name: Quickstart guide for building bots with GPT
           href: nlu-gpt-quickstart.md
-        - name: Generative answers (preview)
+        - name: Generative answers
           href: nlu-boost-conversations.md
         - name: Generative answers with Search and summarize
           href: nlu-boost-node.md
