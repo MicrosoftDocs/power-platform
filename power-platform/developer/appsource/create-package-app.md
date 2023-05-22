@@ -104,7 +104,7 @@ Create an *Input.xml* file that provides information about your package and the 
   </Locales>
 </PvsPackageData>
 ```
-> [!IMPORTANT]All attributes of XML elements are **case sensitive**.
+> [!IMPORTANT] All attributes of XML elements are **case sensitive**. 
 
 Here is a description of the elements in the **Input.xml** file.
 
