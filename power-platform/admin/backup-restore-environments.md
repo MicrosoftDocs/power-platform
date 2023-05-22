@@ -13,14 +13,14 @@ ms.contributors:
 ---
 # Back up and restore environments
 
-Protecting your data in Power Platform and Dataverse and providing continuous availability of service are important. If you use Power Platform to create production environments with a database and Dynamics 365 applications enabled, you can benefit from the system backups that are automatically performed for these environments. The system backups are stored for up to 28 days, so you can restore your environment if there are any issues. 
+Protecting your data in Power Platform and Dataverse and providing continuous availability of service are important. If you use Power Platform to create production environments with a database and Dynamics 365 applications enabled, you can benefit from the system backups that are automatically performed for these environments. The system backups are stored for up to 28 days, so that you can restore your environment if there are any issues. 
 
 For production environments that do not have Dynamics 365 applications enabled, the default backup retention period is only 7 days. However, admins can change this setting and extend the backup retention period for [Managed Environments](managed-environment-overview.md) using PowerShell. The possible options are 7, 14, 21, and 28 days.
 
 Changing the backup retention period is a useful feature for Managed Environments that do not have Dynamics 365 applications enabled. It also gives you more flexibility and security for your data by extending back up to 28 days, and it helps in accidental data deletion scenarios. Consider the following information:
 
 - This ability to extend the backup retention period beyond 7 days is only supported for [Managed Environments](managed-environment-overview.md).
-- If you change the backup retention period, the new value will apply to all existing and future backups. However, it may take up to 24 hours for the changes to take effect on the existing backups. Please be aware that this may result in some backups being deleted sooner than expected.
+- If you change the backup retention period, the new value applies to all existing and future backups. Note that it may take up to 24 hours for the changes to take effect on the existing backups. Be aware that this may result in some backups being deleted sooner than expected.
 
 To change the backup retention period, you need to be an admin with one of these roles in Azure Active Directory: 
 - Global admin
@@ -49,7 +49,7 @@ Supply values for the following parameters:
 ```powershell
 Get-AdminPowerAppEnvironment -EnvironmentName "Environment ID"
 ```
-Set the **EnvironmentName** parameter to your Environment ID.
+Set the **EnvironmentName** parameter to your environment ID.
  
 ## System backups 
 Some backups take place without you having to do anything.  
