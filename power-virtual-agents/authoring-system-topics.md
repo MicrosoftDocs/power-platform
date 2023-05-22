@@ -16,8 +16,6 @@ ms.reviewer: ggupta
 
 # Use system topics in Power Virtual Agents
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 System topics are common topics used in conversations with a bot.
 
 You can't delete or disable system topics, or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation. If you make changes to a system topic that later you don’t want anymore, you need to go back to the default. This can be done using the Reset to Default button available on system topics.
