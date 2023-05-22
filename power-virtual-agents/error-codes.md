@@ -13,8 +13,6 @@ ms.service: power-virtual-agents
 
 # Error codes: Power Virtual Agents
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 When a bot encounters a problem during a conversation, it will respond with an error message.
 
 If you're a bot user, the error message will contain an error code for the specific problem that was encountered.

@@ -14,8 +14,6 @@ ms.custom: bap-template
 
 # Create a preview bot from the content of an existing bot (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
-
 Use familiar content to explore preview features of Power Virtual Agents by cloning an existing non-preview bot.
 
 ## Eligibility
@@ -26,7 +24,7 @@ Bots that use any of the following features aren't eligible to be cloned:
 - Hand-off to Omnichannel for Customer Service
 - Knowledge Management extensions
 
-If your non-preview bot isn't eligible for cloning, [create a preview bot](quickstart.md) to explore Power Virtual Agents preview features.
+If your non-preview bot isn't eligible for cloning, [create a preview bot](quickstart-preview.md) to explore Power Virtual Agents preview features.
 
 ## Limitations
 
