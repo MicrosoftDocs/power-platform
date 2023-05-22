@@ -47,7 +47,7 @@ Supply values for the following parameters:
 
 ### Verify retention period
 ```powershell
-Get-AdminPowerAppEnvironment- Environment ID
+Get-AdminPowerAppEnvironment -EnvironmentName "Environment ID"
 ```
 Set the **EnvironmentName** parameter to your Environment ID.
  
