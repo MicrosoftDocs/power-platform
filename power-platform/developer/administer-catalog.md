@@ -42,7 +42,7 @@ More information: [Assign a security role to a user](../admin/assign-security-ro
 
 ## Approve & Reject submission requests
 
-Environment admins and users with the Catalog Approver role can review new submissions and approve or decline requests. If global auto approval or publisher level auto approval is turned on, then there's no requirement for manual review and approval. More information: [Enable Auto Approval](#enable-auto-approval)
+Environment admins and users with the Catalog Approver role can review new submissions and approve or decline requests. If global auto approval or publisher level auto approval is turned on, then there's no requirement for manual review and approval. More information: [Enable Auto Approval](catalog.md#enable-auto-approval)
 
 In the **Approvals** section of the navigation pane, select **Requests**.
 This list has 16 views. The most important ones are:
@@ -51,7 +51,7 @@ This list has 16 views. The most important ones are:
 |---------|---------|
 |**Active Approval Requests** (Default)|Use this view to review submission requests pending approval|
 |**All Approval Request**|Use this view to review all requests across all statuses|
-|**Failed Pre-Validation**|Use this view to identify requests where a submitter has sent a request but it is not available in the Active Approval requests. This can help with troubleshooting such scenarios.|
+|**Failed Pre-Validation**|Use this view to identify requests where a submitter has sent a request but it isn't available in the **Active Approval Requests** view. This view can help with troubleshooting such scenarios.|
 |**Approved Approval Request**|Use this view to review previously approved requests|
 
 
@@ -112,10 +112,10 @@ Catalog publishers have the following default columns:
 |Display Name|Description|
 |-----|-----|
 |**Name**|The name of the publisher.|
-|**Publisher ID**|Id provided by item submitter|
+|**Publisher ID**|ID provided by item submitter|
 |**Description**|A description of the publisher|
 |**Status Reason**|Reason for the status of the Publisher<br />Choices:<br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br />|
-|**Allow Auto-Approval**|By enabling auto-approval at the Publisher level, future submissions from this publisher will be auto-approved. Admins can use this in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto-approval can be turned on globally across all publishers here. More information: [Enable Auto Approval](#enable-auto-approval)|
+|**Allow Auto-Approval**|By enabling auto approval at the Publisher level, future submissions from this publisher are auto approved. Admins can use this strategy in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto approval can be turned on globally across all publishers here. More information: [Enable Auto Approval](catalog.md#enable-auto-approval)
 
 
 
@@ -158,9 +158,9 @@ The following information is available about the **Package**:
 
 |Field |Description|
 |---------|---------|
-|**Package File**|Package Deployer package file comprising of Catalog item contents|
+|**Package File**|Package Deployer package file comprised of catalog item contents|
 |**Package Manifest File**|Package Manifest file (.json)|
-|**Contained Solutions and Components**|This information is for reference only and being revised. Future update will enable a streamlined view of this data|
+|**Contained Solutions and Components**|This information is for reference only and being revised. A planned update will enable a streamlined view of this data|
 
 
 ## Review errors in submission requests

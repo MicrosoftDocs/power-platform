@@ -32,7 +32,7 @@ Use the [pac catalog](cli/reference/catalog.md) commands to interact with the ca
 
 ### Get access to catalog as Submitter or Reader
 
-Contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Setup Users](catalog.md#setup-users)
+Contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Setup Users](administer-catalog.md#setup-users)
 
 ## Use the catalog
 
@@ -121,7 +121,10 @@ Status of the Submit request: Submitted
 
 Before you can submit items to a catalog, you must prepare a JSON document that describes the items you want to submit. More information: [Submit items to the catalog](#submit-items-to-the-catalog)
 
-To help you, the [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command generates the a sample `submission.json` file. Please note more attributes are supported in the submission file and those are covered in the subsequent section.
+To help you, the [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command generates a sample `submission.json` file.
+
+> [!NOTE]
+> More attributes are supported in the submission file and those are covered in the subsequent section.
 
 You need to edit this file to submit an item. Here's an example submission created from the JSON above.
 
@@ -322,9 +325,9 @@ If you don't provide this image a system default icon is used.
 
 #### Documents
 
-You can pass screenshots here of your Application to help Makers ID if this App provides functionality/ capability they're looking for.
+You can pass screenshots here of your Application to help Makers ID if this App provides functionality or capability they're looking for.
 
-Number #1 thing people do before downloading an App or template is to look at its images/ screenshots to gauge capabilities vs reading the description
+The most common thing people do before downloading an App or template is to look at its images and screenshots to gauge capabilities compared to reading the description
 
 ```json
 {
@@ -341,7 +344,7 @@ URL link to help documentation
 Fully qualified URLs your users are able to access. These URLs can be links to internal docs or sharepoint resources.
 
 ```json
- "helpLink": "https://www.microsoft.com"
+ "helpLink": "https://www.yourcompany.com"
 ```
 
 ### The following items are optional
@@ -352,7 +355,7 @@ Fully qualified URLs your users are able to access. These URLs can be links to i
 - [large216x216Image](#large216x216image)
 - [Privacy policy](#privacy-policy)
 - [Legal terms](#legal-terms)
-- [Package](#package)
+
 
 #### Source Portal
 
@@ -385,7 +388,7 @@ One or more of the business categories can be included in the submission from th
 |**526430017**|Geolocation|
 |**526430018**|Human Resources|
 
-Currently, new business categories cannot be configured. Support for configuring additional categories is planned in the future.
+Currently, new business categories can't be configured. Support for configuring more categories is planned in the future.
 
 #### Operation
 
@@ -455,20 +458,6 @@ Any legal terms/ internal guidance for evaluation of the consumer of the catalog
 ```json
 "legalTerms": "https://www.mycompany.com/legalterms.html"
 ```
-
-<!--
-Will document package submission based on signals of demand
-#### Package
-
-Only needed when providing a Package as input to submission. 
-
-packageFile is a public accessible link
-
-```json
-name: String
-fileSasLink: fully qualified publicly accessible url
-```
--->
 
 ### See also
 

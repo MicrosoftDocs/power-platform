@@ -99,7 +99,7 @@ To get started, you need to complete the following tasks:
 
 1. [Install the **Catalog Manager** application](#install-the-catalog-manager-application)
 1. [Configure the catalog](#configure-the-catalog): Configure catalog settings including metadata management and enabling auto approvals
-1. [Administer the catalog](#administer-the-catalog): Perform ongoing catalog administration including Approving new submissions, reviewing submission and install failures
+1. [Administer the catalog)](administer-catalog.md): Perform ongoing catalog administration including: approving new submissions, reviewing submission and install failures
 
 ## Install the **Catalog Manager** application
 
@@ -203,9 +203,16 @@ Even with auto approval, submission requests that get auto approved are availabl
 
 This capability is reserved for future use. More details of what components are supported in deployment type of Template will be shared in the future.
 
+## Next steps
+
+Learn how to administer the catalog
+
+> [!div class="nextstepaction"]
+> [Administer the catalog](administer-catalog.md)<br/>
+
 ## Frequently asked questions (FAQ)
 
-The following are frequently asked questions related to catalog in Power Platform.
+The following are frequently asked questions related to catalog in Power Platform. If you have questions you haven't found in the documentation, please use the **Feedback** section at the bottom of this page. Click on the **This page** button. You'll need to have a GitHub account to provide feedback.
 
 ### When would I need to create more than one catalog?
 
@@ -213,7 +220,7 @@ While most organizations are likely to use just one catalog, it's possible to cr
 
 ### Is there a license required to use the Catalog?
 
-For the public preview, the catalog feature is available to be used without any licensing. While not required for the preview, when this feature is generally available it will require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
+For the public preview, the catalog feature is available to be used without any licensing. While not required for the preview, when this feature is generally available it requires the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
 ### See also
 
