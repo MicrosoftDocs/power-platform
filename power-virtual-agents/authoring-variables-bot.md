@@ -14,8 +14,6 @@ ms.collection: virtual-agent
 
 # Reuse variables across topics
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 [Variables](authoring-variables.md) store your customers' responses to questions from your bot. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
 By default, a variable's value can only be used in the topic where the variable is created. However, it's possible to reuse the same value across topics. For example, a Welcome topic asks for the customer's name and email address. In the Appointment Booking topic, you want the bot to remember what the customer entered and not ask again.

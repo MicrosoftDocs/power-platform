@@ -13,9 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Data loss prevention example 2 - Block HTTP requests from Power Virtual Agents chatbots (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+# Data loss prevention example 2 - Block HTTP requests from Power Virtual Agents chatbots
 
 Bot makers in your organization can [extend their bots with Bot Framework Composer](advanced-bot-framework-composer.md) and use HTTP requests.
 

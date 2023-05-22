@@ -13,9 +13,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Configure data loss prevention for Power Virtual Agents chatbots (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+# Configure data loss prevention for Power Virtual Agents chatbots
 
 Organizational data is the most important asset administrators are responsible for safeguarding. The ability to build automation to use that data is a large part of their company's success.
 
