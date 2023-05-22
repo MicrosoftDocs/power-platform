@@ -16,6 +16,8 @@ contributors:
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-expect-changes](../includes/cc-preview-features-expect-changes.md)]
+> 
+> Before you can work with catalog items, you must install and configure it. More information: [Get started](catalog.md#get-started)
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 

@@ -205,10 +205,15 @@ This capability is reserved for future use. More details of what components are 
 
 ## Next steps
 
-Learn how to administer the catalog
+Learn how to administer the catalog.
 
 > [!div class="nextstepaction"]
 > [Administer the catalog](administer-catalog.md)<br/>
+
+Learn how to view, submit, and install catalog items.
+
+> [!div class="nextstepaction"]
+> [View, submit, and install catalog items](submit-catalog-items.md)<br/>
 
 ## Frequently asked questions (FAQ)
 

@@ -16,6 +16,8 @@ contributors:
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-expect-changes](../includes/cc-preview-features-expect-changes.md)]
+>
+> Before you can administer the catalog, you must install and configure it. More information: [Get started](catalog.md#get-started)
 
 Administering the catalog includes the following tasks:
 
