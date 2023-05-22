@@ -29,9 +29,8 @@ Similarly, if you didn’t enable these audit or search functionalities and enab
 1. Create a new encryption key and a new enterprise policy, or use an existing key and enterprise policy. More information: [Create the key and grant access overview](customer-managed-key.md#create-the-key-and-grant-access-overview) and [Create enterprise policy](customer-managed-key.md#create-enterprise-policy)
 1. Add the non-BYOK or BYOK environment to the policy to the enterprise policy to encrypt data: More information: [Add an environment to the enterprise policy to encrypt data](customer-managed-key.md#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
 
-## Known issue
-
-When migrating your BYOK environment to use the customer-managed key, the environment shows up in the **Environments with policies** list. However, it shows as **Microsoft-managed** on the **Environment Settings\Environment** encryption page.
+> [!NOTE]
+> When migrating your BYOK environment to use the customer-managed key, the environment shows up in the **Environments with policies** list, and as Managed by **CustomerViaMicrosoft** on the **Environment Settings\Environment encryption** page.
 
 ## Next steps
 
