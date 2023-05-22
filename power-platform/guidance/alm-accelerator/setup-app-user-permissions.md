@@ -3,7 +3,7 @@ title: "Configuring the ALM Accelerator for Power Platform app user permissions 
 description: "Configuring user permissions to access the ALM Accelerator for Power Platform app and pipelines."
 author: jenschristianschroder
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 05/22/2023
 ms.subservice: guidance
 ms.author: jeschro
 ms.reviewer: sericks
@@ -26,11 +26,11 @@ For users to be able to access resources in Dataverse when running the ALM Accel
 
 1. Enter a **Team name**, **Business unit**, and **Administrator**.
 
-1. Select **AAD Security Group** as the **Team type**
+1. Select **AAD Security Group** as the **Team type**.
 
-1. Enter and select the name of the **AAD Security Group** you want to provide access to the ALM Accelerator for Power Platform app.
+1. Enter and select the name of the **AAD Security Group** that you want to provide access to the ALM Accelerator for Power Platform app.
 
-1. Select Members for **Membership type**, and then select **Next**.
+1. Select members for **Membership type**, and then select **Next**.
 
 1. On the **Manage security roles** page, select the **ALM Power App Access** and **Basic User** roles, and then select **Save**.
 
