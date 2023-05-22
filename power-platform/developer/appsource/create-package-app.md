@@ -105,7 +105,7 @@ Create an *Input.xml* file that provides information about your package and the 
 </PvsPackageData>
 ```
 > [!IMPORTANT]
-    > All attributes of XML elements are **case sensitive**.
+> All attributes of XML elements are **case sensitive**.
 
 Here is a description of the elements in the **Input.xml** file.
 
@@ -120,7 +120,7 @@ Here is a description of the elements in the **Input.xml** file.
 |LearnMoreLink|URL to the detailed information page for this package.|
 |Locales|An instance of this node for each language you want to support in the Preferred solution UI. This node contains the following children elements:<br/>- **PackageLocale.Code**: LCID of the language for this node. Example: US English is 1033<br/>&nbsp;&nbsp;**Note**: Please make sure to have same locale codes in both solution.xml and input.xml files.<br/>- **PackageLocale.IsDefault**: Indicates the default language. This is used as the fallback language if the language chosen by the customer is not available.<br/>- **Logo**: Logo for your app package. Size of the image must be 32x32. Valid image formats are PNG and JPG.<br/>- **Terms**: Name of the HTML file that contains your license terms for each language.|
 > [!IMPORTANT]
-    > Please make sure not to have any **Spaces & New line** key words between the country codes.
+> Please make sure not to have any **Spaces & New line** key words between the country codes.
 
 ## Add the items to an AppSource package
 
