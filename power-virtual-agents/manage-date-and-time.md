@@ -14,9 +14,7 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring, bap-template
 ---
 
-# Accommodate time zones (preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# Accommodate time zones
 
 The **Date and time** entity captures a date and time in Coordinated Universal Time (UTC). However, you may want to display the date and time based on the user's location instead.
 
