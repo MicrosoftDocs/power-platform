@@ -50,8 +50,8 @@
       href: sign-up-individual.md
     - name: Working with environments
       href: environments-first-run-experience.md
-    - name: Share bots with users in your organization
-      href: admin-share-bots.md
+    - name: Configure data loss prevention for chatbots
+      href: admin-data-loss-prevention.md
     - name: Export and import bots using solutions
       href: authoring-export-import-bots.md
     - name: Regional settings and data locations for organizations
@@ -193,10 +193,11 @@
   items:
     - name: Key concepts - Configuration
       href: configuration-fundamentals.md
+    - name: Share bots with users in your organization
+      href: admin-share-bots.md
     - name: Apply and configure data loss prevention policies
       items:
-        - name: Configure data loss prevention for chatbots
-          href: admin-data-loss-prevention.md
+
         - name: Example 1 - Use DLP to block skills
           href: dlp-example-1.md
         - name: Example 2 - Use DLP to block HTTP requests
