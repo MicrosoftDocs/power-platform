@@ -17,8 +17,6 @@ searchScope:
 
 # Create and edit topics in your Power Virtual Agents bot
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 In Power Virtual Agents, a topic defines a how a bot conversation plays out.
 
 To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
