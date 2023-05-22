@@ -47,6 +47,10 @@ For administrators and line of business approvers, the catalog:
 > [!NOTE]
 > While not required for the preview, when this feature is generally available it will require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
+> [!NOTE]
+> At this time the catalog cannot be utilized in an Environment that utilizes Customer Managed Keys.
+
+
 ## Catalog process
 
 This diagram describes the process of using catalog in Power Platform.
@@ -147,6 +151,9 @@ In [Power Apps](https://make.powerapps.com/), with the environment you selected,
 
 - Power Platform catalog service identities
 - Power Platform catalog manager
+
+> [!NOTE]
+> You will also see an app named "Package Viewer" in the environment. This app is reserved for future use. 
 
 
 ## Configure the catalog
@@ -293,7 +300,7 @@ Catalog publishers have the following default columns:
 |**Name**|The name of the publisher.|
 |**Publisher ID**|Id provided by item submitter|
 |**Description**|A description of the publisher|
-|**Status Reason**|Reason for the status of the Publisher<br />Choices:<br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br /> - **TPS Disabled**|
+|**Status Reason**|Reason for the status of the Publisher<br />Choices:<br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br />|
 |**Allow Auto-Approval**|By enabling auto-approval at the Publisher level, future submissions from this publisher will be auto-approved. Admins can use this in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto-approval can be turned on globally across all publishers here. More information: [Enable Auto Approval](#enable-auto-approval)|
 
 
@@ -372,4 +379,4 @@ While most organizations are likely to use just one catalog, it's possible to cr
 
 ### Is there a license required to use the Catalog?
 
-For the public preview, the catalog feature is available to be used without any licensing. When it becomes generally available, the catalog feature requires the catalog to be set up in a managed environment. More details around the managed environments requirements will be made available during Preview. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
+For the public preview, the catalog feature is available to be used without any licensing. While not required for the preview, when this feature is generally available it will require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)

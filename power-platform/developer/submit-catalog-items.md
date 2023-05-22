@@ -219,32 +219,20 @@ Here's an example of a catalog item including its `engineeringName` and `support
    "deploymentType": "Normal",
    "small48x48Image": {
       "name": "Small48Image",
-      "fileSasLink": "https://www.contoso.com/icon48.jpg",
-      "logicalName": "small_icon",
-      "recId": "54ab9862-9e54-41e6-8a39-0bbaa68ea7a0",
-      "attributebName": "icon_image"
+      "fileSasLink": "https://www.contoso.com/icon48.jpg"      
    },
    "large216x216Image": {
       "name": "Large216image2",
-      "fileSasLink": "https://www.contoso.com/icon216.jpg",
-      "logicalName": "large_icon",
-      "recId": "54ab9862-9e54-41e6-8a39-0bbaa68ea7a0",
-      "attributebName": "icon_image"
+      "fileSasLink": "https://www.contoso.com/icon216.jpg"
    },
    "documents": [
       {
          "name": "ImaNewfile",
-         "fileSasLink": "https://www.contoso.com/screenshot1.jpg",
-         "logicalName": "screenshot_1",
-         "recId": "b0d034f5-0d61-42d9-8089-0f0e1d1a944e",
-         "attributebName": "screenshot"
+         "fileSasLink": "https://www.contoso.com/screenshot1.jpg"
       },
       {
          "name": "ImaNewfile2",
-         "fileSasLink": "https://www.contoso.com/screenshot2.jpg",
-         "logicalName": "screenshot_2",
-         "recId": "b0d034f5-0d61-42d9-8089-0f0e1d1a944e",
-         "attributebName": "screenshot"
+         "fileSasLink": "https://www.contoso.com/screenshot2.jpg"
       }
    ],
    "helpLink": "https://www.contoso.com/help.html",
@@ -325,10 +313,7 @@ If you don't provide this image a system default icon is used.
 ```json
 "small48x48image":{
    "name": "String",
-   "fileSasLink": "Fully qualified publicly accessible url",
-   "LogicalName": "String for future use ignored",
-   "RecId": "Guid for future use ignored",
-   "AttributeName": "String for future use ignored"
+   "fileSasLink": "Fully qualified publicly accessible url"
 }
 ```
 
@@ -341,10 +326,7 @@ Number #1 thing people do before downloading an App or template is to look at it
 ```json
 {
    "name": "String",
-   "fileSasLink": "Fully qualified publicly accessible url",
-   "logicalName": "String for future use ignored",
-   "recId": "Guid for future use ignored",
-   "attributeName": "String for future use ignored"
+   "fileSasLink": "Fully qualified publicly accessible url"
 }
 ```
 
@@ -445,10 +427,7 @@ An example of the image metadata is as follows
 ```json
       "large216x216Image": {
         "name": "Large216image2",
-        "fileSasLink": "https://mywebsite/largeicon.jpeg",
-        "logicalName": "mspcat_files",
-        "recId": "54ab9862-9e54-41e6-8a39-0bbaa68ea7a0",
-        "attributebName": "filAttrib"
+        "fileSasLink": "https://mywebsite/largeicon.jpeg"
       },
 ```
 
