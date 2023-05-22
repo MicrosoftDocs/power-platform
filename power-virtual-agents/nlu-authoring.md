@@ -16,10 +16,6 @@ searchScope:
 
 # Create (and edit) with Copilot
 
-[!INCLUDE [AI tech disclosure](includes/disclosure-ai-preview.md)]
-
-
-
 In addition to the traditional method for [creating and editing topics](authoring-create-edit-topics.md), Power Virtual Agents lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
 
 This means you can quickly create and deploy a functional bot, without having to first manually author multiple topics.
