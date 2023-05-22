@@ -13,9 +13,7 @@ ms.search.region: USA
 searchScope:
   - "Power Virtual Agents"
 ---
-# AI-based chatbot authoring overview (preview)
-
-[!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
+# AI-based chatbot authoring overview
 
 By leveraging recent advancements in AI large language models, Power Virtual Agents (preview) transforms how you build chatbots, increasing a chatbot's usefulness and significantly reducing manual authoring and configuration. You can:
 
