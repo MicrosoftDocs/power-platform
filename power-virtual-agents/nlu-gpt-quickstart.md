@@ -93,7 +93,7 @@ For any user-sent message that can't be matched to an existing topic, your bot l
 
 See the [Boost conversations (preview)](nlu-boost-conversations.md) topic for more details on the capability, including instructions for enabling boosted conversations in preview bots you've already created.
 
-## Create a new topic using Copilot (preview)
+## Create a new topic using Copilot
 
 1. With your bot open, select **Topics**. On the **Topics** page, select **+ New topic** and then **Create with Copilot (preview)**.
 
