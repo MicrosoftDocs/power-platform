@@ -14,9 +14,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Send proactive messages Microsoft Teams (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+# Send proactive messages Microsoft Teams
 
 After you've [published your bot](publication-fundamentals-publish-channels.md) and [made the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md), you can notify users ("recipients") in Microsoft Teams with proactive messages. Proactive messages use Power Automate flows to deliver their content, and are useful in many scenarios, including:
 
