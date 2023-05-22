@@ -3,7 +3,7 @@ title: "Deployment settings for the ALM Accelerator for Power Platform pipelines
 description: "Customizing the ALM Accelerator for Power Platform can be achieved in several ways without affecting the upgrade path of the solution and pipelines. This document describes the deployment settings payload for the ALM Accelerator pipelines for Microsoft Power Platform."
 author: mikefactorial
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 05/22/2023
 ms.subservice: guidance
 ms.author: rusant
 ms.reviewer: sericks
@@ -45,7 +45,7 @@ The deployment settings payload for the ALM Accelerator export pipeline is used 
   | connector.teamname.connector-name.connector-id                          | No       | The Dataverse Azure AD Group Team to share the connector record associated with the custom connector after import of the solution in the deployment environment. |
   | groupTeam.teamid.aadGroupId                                             | No       | Dataverse Group Teams to create in the deployment environment. |
   | businessUnit.teamid.aadGroupId                                          | No       | Dataverse Business Unit associated with the Group Teams being created by groupTeam.teamid.aadGroupId. |
-  | webhookurl.webookname                                                   | No       | The url of the webhook to update in the deployment environment. |
+  | webhookurl.webookname                                                   | No       | The URL of the webhook to update in the deployment environment. |
   | sdkstep.unsec.sdkstepid                                                 | No       | The unsecure configuration of the SDK step to update in the deployment environment. |
   | sdkstep.sec.sdkstepid                                                   | No       | The secure configuration of the SDK step to update in the deployment environment. |
   | TriggerSolutionUpgrade                                                  | No       | True or false based on whether to apply solution upgrade during deployment to this environment. |
