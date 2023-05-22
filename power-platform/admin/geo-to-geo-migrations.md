@@ -25,7 +25,7 @@ The Geo Migration feature will allow customers to move their environments in a s
 > - After making a request, expect at least 10 days for the migration to be completed.  
 > - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
 > - Geo migrations are restricted into or out of OCE or IND.
-> - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances).
+> - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances). If installed, Marketing app needs to be uninstalled prior to the migration.
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
 > - Dataverse organization linked to a finance and operations organization is not supported.
 > - There are important and critical preparation steps mentioned below that need to be performed for Power Apps/Power Automate, etc. prior to the geo migration. If these steps are missed, it is difficult to recover Power Apps/Power Automate solutions.
@@ -135,6 +135,14 @@ After the migration:
 1. Sign in to the environment.
 2. Open the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
 3. Provision the portal with the same portal type and language.
+
+#### For Dynamics 365 Marketing app:
+The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances). If installed, Marketing app needs to be uninstalled prior to the migration.
+
+Before the migration: 
+
+1. Follow the [Uninstall Dynamics 365 Marketing](https://learn.microsoft.com/en-us/dynamics365/marketing/uninstall-marketing) guide to uninstall Marketing app from the environment.
+
 
 ## How the move works  
 You'll be provided with a list of prerequisites and post-requisites for your migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move. 
