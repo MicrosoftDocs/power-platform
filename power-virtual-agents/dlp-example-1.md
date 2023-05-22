@@ -13,9 +13,7 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Data loss prevention example 1 - Block skills in Power Virtual Agents chatbots (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+# Data loss prevention example 1 - Block skills in Power Virtual Agents chatbots
 
 Bot makers in your organization can [extend their bots with skills](configuration-add-skills.md). Skills can be a useful way of extending the functionality of your bots, however you may want to restrict their use to help prevent data exfiltration.
 
