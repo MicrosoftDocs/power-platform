@@ -23,9 +23,9 @@ Send an in-app notification with optional actions to a recipient.
 
 ## Description
 
-The **XSendAppNotification** function sends an in-app notification to a recipient. These notifications are displayed ot the app user as a toast or within the notification center. See [Send in-app notifications within model-driven apps](https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications.md) for more information.
+The **XSendAppNotification** function sends an in-app notification to a recipient. These notifications are displayed ot the app user as a toast or within the notification center. See [Send in-app notifications within model-driven apps](https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications.md) for more information.
 
-An in-app notification can have zero to many actions on the notification card. The following functions are used as parameters in the XSendAppNotification function to add actions to the app notification card. See [Notification actions](https://review.learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?branch=jaredha-appnotificationapi&tabs=powerfx%2Csdk2%2Cwebapi3%2Cpowerfx4%2Cwebapi5%2Cwebapi6#notification-actions) for more information on each action type.
+An in-app notification can have zero to many actions on the notification card. The following functions are used as parameters in the XSendAppNotification function to add actions to the app notification card. See [Notification actions](https://review.learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?branch=jaredha-appnotificationapi&tabs=powerfx%2Csdk2%2Cwebapi3%2Cpowerfx4%2Cwebapi5%2Cwebapi6#notification-actions) for more information on each action type.
 - **XCreateUrlAction**: adds a URL action to the notification.
 - **XCreateSidePaneActionForDashboard**: adds a side pane action that will navigate in the side pane to a page with a type of `dashboard`.
 - **XCreateSidePaneActionForEntity**: adds a side pane action that will navigate in the side pane to a page with a type of `entityrecord`.
