@@ -3,7 +3,7 @@ title: "Maintain the ALM Accelerator for Microsoft Power Platform | MicrosoftDoc
 description: "The ALM Accelerator for Microsoft Power Platform helps you follow ALM patterns and practices to move your solutions from your development environment to test and production environments by using Azure DevOps. This guide walks through the maintenance tasks and Azure DevOps project configurations you need to perform for new solutions and projects."
 author: mikefactorial
 ms.topic: conceptual
-ms.date: 04/25/2023
+ms.date: 05/22/2023
 ms.subservice: guidance
 ms.author: jeschro
 ms.reviewer: sericks
@@ -52,7 +52,7 @@ Before creating new service connections for new environments, you'll need to con
 1. Select the Azure app registration you created, **Business Unit**, and **Security Role**.
 
     > [!NOTE]
-    > We recommend that you give this user system administrator security role privileges, so the user can perform the required functions in each of the environments.
+    > We recommend that you give this user system administrator role privileges, so that the user can perform the required functions in each of the environments.
 
 ### Create, edit, and delete service connections
 
