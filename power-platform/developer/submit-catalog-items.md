@@ -237,7 +237,7 @@ Here's an example of a catalog item including its `engineeringName` and `support
    ],
    "helpLink": "https://www.contoso.com/help.html",
    "privacyPolicyLink": "https://www.contoso.com/privacy.html",
-   "legalTerms": "https://www.microsoft.com/legal.html",
+   "legalTerms": "https://www.contoso.com/legal.html",
    "engineeringName": {
       "firstName": "John",
       "lastName": "Roon",
@@ -381,6 +381,8 @@ One or more of the business categories can be included in the submission from th
 |**526430016**|AI Machine Learning|
 |**526430017**|Geolocation|
 |**526430018**|Human Resources|
+
+Currently, new business categories cannot be configured. Support for configuring additional categories is planned in the future.
 
 #### Operation
 
