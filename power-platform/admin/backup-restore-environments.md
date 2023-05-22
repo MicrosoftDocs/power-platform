@@ -60,7 +60,7 @@ Some backups take place without you having to do anything.
 About **system backups**:  
 
 - System backups are not counted toward capacity.  
-- Copy and restore operations can take up to 8 hours unless a lot of data, including audit data, needs to be copied or restored, in which case they could take up to 24 hours.
+- Depending on the size of data, copy and restore operations may take more than 24 hours, especially if you need to copy audit data.
 - All your environments, except Trial environments (standard and subscription-based), are backed up.  
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 - You must restore an environment to the same region in which it was backed up.
