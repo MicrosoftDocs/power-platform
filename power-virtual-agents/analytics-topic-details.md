@@ -16,8 +16,6 @@ ms.collection: virtual-agent
 
 # Analyze topic usage in Power Virtual Agents
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 The topic analytics pane provides a view into the performance of an individual topic and how it can be improved.
 
 To display the topic analytics pane, select the **Detail** link for the topic in one of the following charts on the [Summary](analytics-summary.md) or [Customer Satisfaction](analytics-CSAT.md) tab:
