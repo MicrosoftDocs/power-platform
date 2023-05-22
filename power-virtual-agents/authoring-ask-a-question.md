@@ -15,8 +15,6 @@ ms.collection: virtual-agent
 
 # Ask a question (preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
-
 The **Question** node allows you to prompt a user for information and store their response in a variable for use later on in the conversation.
 
 The node allows you to choose the type of information to collect, such as a multiple-choice answer, a pre-built entity, or a custom entity. [Question behavior properties](#configure-question-behavior) allow you to control the behavior of the node, such as what to do when the user enters an invalid response.
