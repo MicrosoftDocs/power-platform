@@ -3,7 +3,7 @@ title: "Learning catalog for ALM Accelerator for Power Platform | MicrosoftDocs"
 description: "Learning catalog for ALM Accelerator for Power Platform. "
 author: rsantos00
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 05/22/2023
 ms.subservice: guidance
 ms.author: rusant
 ms.reviewer: sericks
@@ -12,7 +12,7 @@ ms.reviewer: sericks
 
 The  ALM Accelerator for Power Platform  includes a canvas app that sits on top of Azure DevOps Pipelines and Git source control. The app provides a simplified interface for makers to regularly export the components in their  [Power Platform Solutions](/power-platform/alm/solution-concepts-alm)  to source control and create deployment requests to have their work reviewed before deploying to target environments.
 
-The ALM Accelerator for Power Platform is a complement to the ALM guidance available under the [Overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm). It was originally developed to facilitate ALM for the CoE Starter Kit team. We are now sharing what we’ve built for our own use and open sourcing it to help you understand how you can apply ALM patterns & practices with the Power Platform. You can use the ALM Accelerator as-is, customize it to meet your requirements, or as a reference implementation to see how we’ve addressed ALM scenarios.
+The ALM Accelerator for Power Platform complements the ALM guidance available under [Overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm). It was originally developed to facilitate ALM for the CoE Starter Kit team. We are now sharing what we’ve built for our own use and open sourcing it to help you understand how you can apply ALM patterns and practices with the Power Platform. You can use the ALM Accelerator as-is, customize it to meet your requirements, or as a reference implementation to see how we’ve addressed ALM scenarios.
 
 The shortcut for this page is [https://aka.ms/AA4PPLearning](https://aka.ms/AA4PPLearning).
 
