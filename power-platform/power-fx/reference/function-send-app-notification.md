@@ -18,6 +18,9 @@ contributors:
 
 Send an in-app notification with optional actions to a recipient.  
 
+> [!IMPORTANT]
+> The functions in this topic are in preview and will change before general availability. While in preview, the "X" prefix will be used on the functions, and the functions will be available for use only with Dataverse actions.
+
 ## Description
 
 The **XSendAppNotification** function sends an in-app notification to a recipient. These notifications are displayed ot the app user as a toast or within the notification center. See [Send in-app notifications within model-driven apps](https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications.md) for more information.
