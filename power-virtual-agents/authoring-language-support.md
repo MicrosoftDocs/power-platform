@@ -19,7 +19,7 @@ You can create chatbots in Power Virtual Agents in a number of languages. This m
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](../fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Specify a language for your bot
 
@@ -75,4 +75,4 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 
 ### Related topics
 
-- [Data locations for organizations using Power Virtual Agents](../data-location.md)
+- [Data locations for organizations using Power Virtual Agents](data-location.md)
