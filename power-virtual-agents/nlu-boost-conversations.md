@@ -1,5 +1,5 @@
 ---
-title: Generative Answers (preview)
+title: Generative Answers
 description: Provide answers and information for your bot users, even if you haven't created a topic for their issue.
 keywords: "PVA"
 ms.date: 5/03/2023
@@ -14,11 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-
-
-# Generative answers (preview)
-
-[!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
+# Generative answers
 
 Generative answers in Power Virtual Agents allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query. As a result you can quickly create and deploy a functional bot, without having to first manually author multiple topics that still may not address all your customer's intents.
 
@@ -81,7 +77,7 @@ In addition to [url considerations](nlu-boost-conversations.md#url-consideration
     >
     > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
 
-- You must be using the [preview version of Power Virtual Agents](overview-preview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
+- When you create a new bot, select **Try the unified canvas (preview)**.
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
@@ -99,15 +95,15 @@ In addition to [url considerations](nlu-boost-conversations.md#url-consideration
 
 1. In the side navigation menu, select **Create**. You can also select **Create a bot** on the **Home** page or **New chatbot** from the **Chatbots** page.
 
-1. Select **Try the unified canvas (preview)**. Preview chatbots have **(preview)** added to their name in the list of bots.
+1. Select **Try the unified canvas**.
     
 1. Enter a name for the bot.
 
-1. Select the language you want your bot to speak from the menu. [The default language is English (true?)]
+1. Select the language you want your bot to speak from the menu.
 
 3. Provide a website you'd like the bot to use for generating answers, and click **Create**. See the [URL considerations](#url-considerations) section for what types of URLs you can use. 
 
-    :::image type="content" source="media/nlu-gpt/nlu-quickstart-boost-bot-create.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
+    :::image type="content" source="media/nlu-gpt/create-bot-highlight-22May23.png" alt-text="Screenshot of the bot creation screen with the preview option highlighted.":::
 
 After your bot is created and ready for you to use, it'll open to the bot's **Overview** page. From here, you can confirm that generative answers is enabled. From the **Overview** page, you can navigate to the **AI Capabilities** page if you want to change the URL you want to use.
 
@@ -119,7 +115,7 @@ You can also change the URL, disable generative answers, or change the level of 
 
     1. In the field under the checkbox, add or change the URL. The [same requirements apply for the URL](#url-considerations) as when enabling the capability when you create a bot.
 
-    :::image type="content" source="media/nlu-gpt/nlu-generative-ans-enable.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
+    :::image type="content" source="media/nlu-gpt/ai-capabilities-highlight-22May23.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
 
     1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
 
