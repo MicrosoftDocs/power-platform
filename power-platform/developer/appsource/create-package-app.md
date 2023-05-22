@@ -104,8 +104,7 @@ Create an *Input.xml* file that provides information about your package and the 
   </Locales>
 </PvsPackageData>
 ```
-> [!IMPORTANT]
-> All attributes of XML elements are **case sensitive**.
+> [!IMPORTANT]All attributes of XML elements are **case sensitive**.
 
 Here is a description of the elements in the **Input.xml** file.
 
@@ -130,8 +129,7 @@ The final step is to add all the components that you created earlier into a sing
 
     :::image type="content" source="media/appsource-package.png" alt-text="AppSource package":::
 
-    > [!IMPORTANT]
-    > You must follow the content structure precisely for your package as described here otherwise, your package will fail during certification. Some common issues that lead to certification failure are incorrect file names or a nested file structure.
+    > [!IMPORTANT]You must follow the content structure precisely for your package as described here otherwise, your package will fail during certification. Some common issues that lead to certification failure are incorrect file names or a nested file structure.
 
 2. Rename the file appropriately as per your app. We recommend that you include your company name and app name. For example: **Microsoft_SamplePackage.zip**.
  
