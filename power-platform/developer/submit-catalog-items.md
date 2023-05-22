@@ -4,7 +4,7 @@ description: "Learn how to submit items to your organization's catalog of templa
 author: samathur
 ms.subservice: developer
 ms.author: samathur
-ms.date: 05/18/2023
+ms.date: 05/22/2023
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
@@ -13,6 +13,9 @@ contributors:
  - JimDaly
 ---
 # View, submit, and install catalog items  (Preview)
+
+> [!NOTE]
+> [!INCLUDE [cc-preview-features-expect-changes](../includes/cc-preview-features-expect-changes.md)]
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 
@@ -466,3 +469,8 @@ name: String
 fileSasLink: fully qualified publicly accessible url
 ```
 -->
+
+### See also
+
+[Catalog in Power Platform (Preview)](catalog.md)<br />
+[Administer the catalog (Preview)](administer-catalog.md)
