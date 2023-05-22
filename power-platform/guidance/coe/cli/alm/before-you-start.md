@@ -5,10 +5,10 @@ keywords:
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/22/2023
 
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -16,7 +16,7 @@ search.audienceType:
 # CoE ALM Accelerator for Power Platform before you start (Deprecated)
 
 > [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 Before you start an install of ALM Accelerator, ensure that you have the following components in place.
 
@@ -24,12 +24,12 @@ Before you start an install of ALM Accelerator, ensure that you have the followi
 
 Install the CoE CLI [locally](../install.md#local-install) or via a [docker image](../install.md#docker-install).
 
-## Power Platform Environment Prerequisites
+## Power Platform environment prerequisites
 
 Environment | Description
 ----------- | -------------
 Developer | Development environments that each maker uses to create and manage source-controlled solutions.
-ALM environment | Environment with Microsoft Dataverse enabled. This environment will be used to deploy managed solution.
+ALM environment | Environment with Microsoft Dataverse enabled. This environment will be used to deploy a managed solution.
 Validation | Environment used to validate builds before merging into a solution branch.              |
 Test | Pre-production environment used to test solutions before moving to production.          |
 Production | Production environment for managed solutions.                                         |
@@ -51,7 +51,7 @@ Component | Description
 Organization | Review [Add organization users](/azure/devops/organizations/accounts/add-organization-users) to create Azure DevOps organization and add users.
 Project | An Azure DevOps project to integrate with. This guide uses the name **alm-sandbox** as the project name.
 
-The following components are set up or used as part of the install and follow on [coe alm branch](https://aka.ms/coe-cli/help/alm/branch).
+The following components are set up or used as part of the install and follow the [CoE ALM branch](https://aka.ms/coe-cli/help/alm/branch).
 
 Component | Description
 --------- | ----------
@@ -79,7 +79,7 @@ Notes:
 
 ## Read next
 
-Once you've verified the configuration:
+After you've verified the configuration:
 
 1. Determine the install [deployment scenario](./scenarios/overview.md) you're targeting.
 
