@@ -126,10 +126,11 @@ XSendAppNotification(
 	AsType(ThisRecord.Owner, Users),
 	"A new task has been assigned to you to follow up with your customer",
 	[XCreateSidePaneActionForEntity(
-		"View account",
+		"View task",
 		1123,
-		"account",
-		AsType(ThisRecord.Regarding, Accounts).Account
+		"Your task",
+		"task",
+		ThisRecord.Task    
 		),
 	XCreateTeamsChatAction(
 		"Chat with account manager",
