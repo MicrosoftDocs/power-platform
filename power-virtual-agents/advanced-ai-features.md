@@ -16,8 +16,6 @@ ms.collection: virtual-agent
 
 # Enable advanced AI features in Power Virtual Agents
 
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
-
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
