@@ -1,6 +1,6 @@
 ---
 title: "Administer the catalog (Preview)"
-description: "Use the catalog in Power Platform to managed shared components and templates so that administrators, application makers, and developers within an organization can use each other's work."
+description: "Learn how to administer the catalog for Power Platform after you have finished installing it. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
 author: samathur
 ms.subservice: developer
 ms.author: samathur
