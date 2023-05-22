@@ -60,12 +60,30 @@ The **Compass** signal returns the compass heading of the top of the screen. The
 
 ### Connection
 
-The **Connection** signal returns the information about the network connection. When on a metered connection, you may want to limit how much data you send or receive over the network.
+The **Connection** signal returns the information about the network connection. When on a metered connection, you may want to limit how much data you send or receive over the network. Or, if you app is enabled for offline, you may want to display different information depending on the current sync state.
 
 | Property                 | Description                                                                                                |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | **Connection.Connected** | Returns a Boolean **true** or **false** value that indicates whether the device is connected to a network. |
 | **Connection.Metered**   | Returns a Boolean **true** or **false** value that indicates whether the connection is metered.            |
+| **Connection.Sync**   | Returns an enum named **ConnectionSync** which holds the current syncronization state for an app that is enabled for offline. 
+    
+Below are the enums values returned by Connection.Sync.
+
+| Enum value                 | Description                                                                                                |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| **Connected** | Your device is connected to the network and your app is ready to work offline |
+| **ConnectedWithWarning**   | Your device is connected with a warning.            |
+| **ConnectedPendingUpsync**   | Some data on your device must be synchronized with the service. 
+| **ConnectedError**   | There was an error on the last synchronization attempt. 
+| **ConnectedRefresh**   | Your app is currently synchronizing data with the service. 
+| **NotConnected**   | Your device is not connected to the service. 
+| **NotConnectedWithWarning**   | The last syncronization warning. 
+| **NotConnectedPendingUpsync**   | There are updates on your device waiting to be synchronized. 
+| **NotConnectedSyncError**   | The last synchronization error. 
+    
+
+
 
 ### Location
 
@@ -83,7 +101,7 @@ As the location changes, dependencies on the location will continuously recalcul
 
 ## Examples
 
-In a baseball field, a pitcher throws a phone from the pitcher's mound to a catcher at home plate. The phone is lying flat with respect to the ground, the top of the screen is pointed at the catcher, and the pitcher adds no spin. At this location, the phone has cellular network service that's metered but no WiFi. The **PlayBall** screen is displayed.
+In a baseball field, a pitcher throws a phone from the pitcher's mound to a catcher at home plate. The phone is lying flat with respect to the ground, the top of the screen is pointed at the catcher, and the pitcher adds no spin. At this location, the phone has cellular network service that's metered but no WiFi. The **PlayBall** screen is displayed.  The app is enabled for offline and is connected to the service.
 
 | Formula                         | Description                                                                                                                                                                                                                                                                                                                                                                                    | Result                                                                                                                              |
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -97,6 +115,7 @@ In a baseball field, a pitcher throws a phone from the pitcher's mound to a catc
 | **Acceleration**                | Returns the acceleration as a record.                                                                                                                                                                                                                                                                                                                                                          | { X: 0, Y: 264, Z: 0 } as the pitcher throws the device.                                                                            |
 | **Connection.Connected**        | Returns a Boolean value that indicates whether the device is connected to a network                                                                                                                                                                                                                                                                                                            | **true**                                                                                                                            |
 | **Connection.Metered**          | Returns a Boolean value that indicates whether the connection is metered                                                                                                                                                                                                                                                                                                                       | **true**                                                                                                                            |
+| **Connection.Sync**          | Returns an enum value that indicates current sync state.                                                                                                                                                                                                                                                                                                                       | **ConnectionSync.Connected**                                                                                                                            |
 | **App.ActiveScreen = PlayBall** | Returns a Boolean value that indicates whether **PlayBall** is displayed.                                                                                                                                                                                                                                                                                                                      | **true**                                                                                                                            |
 | **App.ActiveScreen.Fill**       | Returns the background color for the displayed screen.                                                                                                                                                                                                                                                                                                                                         | **Color.Green**                                                                                                                     |
 
