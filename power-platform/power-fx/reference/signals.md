@@ -60,13 +60,13 @@ The **Compass** signal returns the compass heading of the top of the screen. The
 
 ### Connection
 
-The **Connection** signal returns the information about the network connection. When on a metered connection, you may want to limit how much data you send or receive over the network. Or, if you app is enabled for offline, you may want to display different information depending on the current sync state.
+The **Connection** signal returns the information about the network connection. When on a metered connection, you may want to limit how much data you send or receive over the network. Or, if your app is enabled for offline, you may want to display different information depending on the current sync state.
 
 | Property                 | Description                                                                                                |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | **Connection.Connected** | Returns a Boolean **true** or **false** value that indicates whether the device is connected to a network. |
 | **Connection.Metered**   | Returns a Boolean **true** or **false** value that indicates whether the connection is metered.            |
-| **Connection.Sync**   | Returns an enum named **ConnectionSync** which holds the current syncronization state for an app that is enabled for offline. 
+| **Connection.Sync**   | Returns an enum named **ConnectionSync** which holds the current synchronization state for an app that is enabled for offline. 
     
 Below are the enums values available for Connection.Sync.
 
@@ -77,8 +77,8 @@ Below are the enums values available for Connection.Sync.
 | **ConnectedPendingUpsync**   | Some data on your device must be synchronized with the service. 
 | **ConnectedError**   | There was an error on the last synchronization attempt. 
 | **ConnectedRefresh**   | Your app is currently synchronizing data with the service. 
-| **NotConnected**   | Your device is not connected to the service. 
-| **NotConnectedWithWarning**   | The last syncronization warning. 
+| **NotConnected**   | Your device isn't connected to the service. 
+| **NotConnectedWithWarning**   | The last synchronization warning. 
 | **NotConnectedPendingUpsync**   | There are updates on your device waiting to be synchronized. 
 | **NotConnectedSyncError**   | The last synchronization error. 
     
@@ -97,7 +97,7 @@ As the location changes, dependencies on the location will continuously recalcul
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Location.Altitude**  | Returns a number that indicates the altitude, measured in meters, above sea level.                                                                                                  |
 | **Location.Latitude**  | Returns a number, from –90 to 90, that indicates the latitude, as measured in degrees from the equator. A positive number indicates a location that's north of the equator.         |
-| **Location.Longitude** | Returns a number, from –180 to 180, that indicates the longitude, as measured in degrees from Greenwich, England. A positive number indicates a location that's east of Greenwhich. |
+| **Location.Longitude** | Returns a number, from –180 to 180, that indicates the longitude, as measured in degrees from Greenwich, England. A positive number indicates a location that's east of Greenwich. |
 
 ## Examples
 
