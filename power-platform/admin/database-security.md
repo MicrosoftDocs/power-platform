@@ -100,18 +100,20 @@ The following table describes which resources can be authored by each security r
 |Resource  |Environment Maker  |Environment Admin  |System Customizer  |System Admin  |
 |---------|---------|---------|---------|---------|
 |Canvas app     |X         |X         |X        |X         |
-|Cloud flow     |X (non-solution aware)         |X         |X (solution aware)         |X         |
+|Cloud flow     |X (non-solution aware)         |X         |X         |X         |
 |Connector     |X (non-solution aware)         |X         |X         |X         |
-|Connection     |X         |X         |X         |X         |
+|Connection<sup>*</sup>     |X         |X         |X         |X         |
 |Data gateway     |X         |X         |-         |X         |
 |Dataflow     |X         |X         |-         |X         |
 |Dataverse tables     |-         |-         |X         |X         |
 |Model-driven app     |X        |-         |X         |X         |
 |Solution framework     |X         |-         |X         |X         |
-|<sup>*</sup>Desktop flow     |X         |X         |X         |X         |
+|Desktop flow<sup>**</sup>     |-         |-         |X         |X         |
 |AI Builder     |-         |-         |X         |X         |
 
-<sup>*</sup>Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
+\*Connections are used in [canvas apps](/power-apps/maker/canvas-apps/add-manage-connections) and [Power Automate](/power-automate/add-manage-connections).
+
+\**Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
 
 ## Assign security roles to users in an environment that has no Dataverse database 
 
