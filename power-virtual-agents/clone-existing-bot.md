@@ -24,7 +24,7 @@ Bots that use any of the following features aren't eligible to be cloned:
 - Hand-off to Omnichannel for Customer Service
 - Knowledge Management extensions
 
-If your non-preview bot isn't eligible for cloning, [create a preview bot](quickstart.md) to explore Power Virtual Agents preview features.
+If your non-preview bot isn't eligible for cloning, [create a preview bot](quickstart-preview.md) to explore Power Virtual Agents preview features.
 
 ## Limitations
 
