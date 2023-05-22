@@ -57,6 +57,13 @@
               href: isvstudio\auto-update.md
             - name: Embed Pay-as-you-go for ISVs (preview)
               href: isvstudio/embed-analytics.md
+    - name: Catalog in Power Platform (preview)
+      href: catalog.md
+      items:
+        - name: Administer the catalog (preview)
+          href: administer-catalog.md
+        - name: View, submit, and install catalog items (preview)
+          href: submit-catalog-items.md
     - name: Tools
       expanded: true
       items:
