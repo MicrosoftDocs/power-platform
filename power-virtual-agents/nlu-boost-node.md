@@ -60,7 +60,7 @@ Adding a Search and summarize content node allows you to use generative answers 
 
 1. On the Search and summarize content node, select **Edit** under **Data sources**.
 
-    :::image type="content" source="media/nlu-gpt/create-generative-ans-node-image-highlight-22May23.png" alt-text="Screenshot of the Search and summarize content node properties.":::
+    :::image type="content" source="media/nlu-gpt/create-gen-ans-node-image-highlight-22May23.png" alt-text="Screenshot of the Search and summarize content node properties.":::
 
 1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources). (Note here about the other options (Variable or PowerFX) - what is the integration?)(image: data sources menu)
 
