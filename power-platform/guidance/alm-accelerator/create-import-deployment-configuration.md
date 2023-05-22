@@ -3,7 +3,7 @@ title: "ALM Accelerator for Power Platform import configuration | MicrosoftDocs"
 description: "On import of a solution from source control, the user can select a deployment configuration file that contains connection information, environment variables, and other settings that are used to configure the solution."
 author: alvarezskinner
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 05/22/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -26,14 +26,14 @@ The ALM Accelerator components enable makers to apply source-control strategies 
 1. Select **New Deployment Step** and provide a unique name for the step, such as **My Development Environment**.
 1. Set **Step Type** to **Development**.
 1. Set **Step Number** to **4**.
-1. Set **Build Template Path** to '/Pipelines/build-deploy-dev-SampleSolution.yml'
+1. Set **Build Template Path** to **/Pipelines/build-deploy-dev-SampleSolution.yml**.
 1. Create a new environment and set the **Environment Name** and **URL** based on your development environment, such as **My Development Environment** and `https://dev.crm.dynamics.com/`.
 1. Save the deployment step.
 
 ## Create an import deployment configuration for your solution
 
 1. Open the ALM Accelerator for the Power Platform app.
-1. Ensure that the profile you just updated is selected as the solution deployment profile and select the **Configure Deployment Settings** link under your solution.
+1. Ensure that the profile you just updated is selected as the solution deployment profile, and then select the **Configure Deployment Settings** link under your solution.
 1. Your new deployment step should be listed in the **Select an Environment to Configure** section.
 1. Select the environment you just created.
 1. Configure your deployment settings for the development environment.
