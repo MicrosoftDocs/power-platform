@@ -4,7 +4,7 @@ description: "You can easily create new bots using the bot-builder wizard in Pow
 keywords: "PVA"
 ms.date: 03/24/2023
 ms.topic: article
-author: iaanw
+author: KendalBond007
 ms.author: iawilt
 manager: leeclontz
 ms.custom: onboarding, ceX
@@ -15,8 +15,6 @@ searchScope:
 ---
 
 # Create and delete Power Virtual Agents bots
-
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
 
 To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
 
