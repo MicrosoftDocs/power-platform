@@ -190,11 +190,13 @@ Use the **See solution layers** option to see all solutions that a component is 
 
 You use solutions to export bots from one environment and import them into another. The solution acts as a _carrier_ for the bots, and you can import multiple bots in one solution.
 
-1. Sign in to the Power Virtual Agents bot you want to export.
+1. Sign in to the Power Virtual Agents.
 
-1. In the navigation menu, under **Settings**, select **General**. Then select **Export**.
+1. In the navigation menu, select **Chatbots** to open the **Chatbots** page and view all the bots you have access to in this environment. 
 
-    :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the export button on the general setting page.":::
+1. Select the bot you want to export. Then select **Export chatbot**.
+
+    :::image type="content" source="media/authoring-export-import-bots/export-chatbot-list.png" alt-text="Screenshot of the export button on the general setting page.":::
 
 1. Select **Go to Power Apps Solutions**.
 
