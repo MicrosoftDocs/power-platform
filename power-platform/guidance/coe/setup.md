@@ -4,7 +4,7 @@ description: "Prerequisites and instructions for setting up the Center of Excell
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2023
+ms.date: 05/23/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
