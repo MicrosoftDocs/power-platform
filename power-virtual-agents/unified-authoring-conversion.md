@@ -23,7 +23,7 @@ If you already have created one or more bots using Power Virtual Agents you migh
 
 To assist in the upgrade experience, at launch, there is a new clone feature that is now available on bots built using Power Virtual Agents (classic).
 
-:::image type="content" source="media/clone-experience.png" alt-text="Screenshot of the window on the homepage to clone an existing Power Virtual Agents bot.":::
+:::image type="content" source="media/unified-authoring-conversion/clone-experience.png" alt-text="Screenshot of the window on the homepage to clone an existing Power Virtual Agents bot.":::
 
 This feature will clone the selected Power Virtual Agents classic bot and create a new bot that uses the latest unified authoring version. There are some important considerations to be aware of in this cloning process, which are listed below:
 
@@ -61,7 +61,7 @@ Additionally you can configure **Advanced Information** including the icon, choo
 > [!TIP]
 > For more information on Boosted Conversations, see below and also the feature documentation here.
 
-:::image type="content" source="media/new-bot.png" alt-text="Screenshot of the new bot wizard screen":::
+:::image type="content" source="media/unified-authoring-conversion/new-bot.png" alt-text="Screenshot of the new bot wizard screen":::
 
 ### User Interface Changes
 
@@ -74,17 +74,17 @@ There have been a number of user interface updates with the aim to make the bot 
 - *Variable Watch Window*: Specific call out where the variable watch window is no longer in the mini map, and instead on the variable panel at the top area of the authoring canvas.
 - *Flyout Menus*: Power Virtual Agents now utilizes the full window within the authoring experience and additional properties based on selections within the authoring canvas is traditionally held within a flyout panel on the side of the screen.
 
-:::image type="content" source="media/authoring-canvas.png" alt-text="Screenshot of the Power Virtual Agents Authoring Canvas with updated user interface":::
+:::image type="content" source="media/unified-authoring-conversion/authoring-canvas.png" alt-text="Screenshot of the Power Virtual Agents Authoring Canvas with updated user interface":::
 
 ### System Topics
 
-[System topics](https://learn.microsoft.com/en-us/power-virtual-agents/preview/authoring-system-topics) are not recommended to changed if you are new and not experienced to bot building in Power Virtual Agents. For those familiar with Power Virtual Agents you may notice that there are additional and updated system topics now available in the latest unified authoring release. 
+[System topics](authoring-system-topics.md) are not recommended to changed if you are new and not experienced to bot building in Power Virtual Agents. For those familiar with Power Virtual Agents you may notice that there are additional and updated system topics now available in the latest unified authoring release. 
 
 *Conversation Start*: Previously, Bot makers had to customize the bot with additional code to automatically begin a conversation with Power Virtual Agents. This is no longer required, and the Conversation Start system topic begins the conversation automatically and is turned on by default today. You can see this working for yourself by using the 'Test your bot' panel within Power Virtual Agents and your bot will automatically start using the Conversation Start topic data
 
 *Multiple Topics Matched*: When building conversational experiences, when a user asks a question, there can be more than one topics matched with high confidence. This causes a disambiguation experience to occur, normally referred to as 'Did You Mean' experiences within Power Virtual Agents. This is where the bot will ask the user, Did You Mean X, or Did you Mean Y? This experience helps to then disambiguate between two or more high ranking topics that were matched by the user's original question. In the latest Power Virtual Agent release, now you can edit the out of the box disambiguation experience using the 'Multiple Topics Matched' system topic e.g. not displaying specific topics when disambiguation is triggered.
 
-:::image type="content" source="media/system-topics.png" alt-text="Screenshot of the topics page, highlighting the system topics in Power Virtual Agents makex experience":::
+:::image type="content" source="media/unified-authoring-conversion/system-topics.png" alt-text="Screenshot of the topics page, highlighting the system topics in Power Virtual Agents makex experience":::
 
 ### Pass entire Objects back to Power Virtual Agents using Power Automate
 
@@ -102,7 +102,7 @@ When testing, it is critical to be able to test variables within the topic proce
 
 [Learn more about the latest features around Variables and PowerFX in Power Virtual Agents](advanced-power-fx.md)
 
-:::image type="content" source="media/variables.png" alt-text="Screenshot of the variable node in Power Virtual Agents":::
+:::image type="content" source="media/unified-authoring-conversion/variables.png" alt-text="Screenshot of the variable node in Power Virtual Agents":::
 
 ### Write your bot in YAML
 
@@ -120,7 +120,7 @@ Events introduces additional capabilities within the Power Virtual Agents web in
 
 *Co-Pilot (Preview)*: Co-creating Bots with AI has never been easier using Copilot in Power Virtual Agents. In our latest release, Bot Makers can now utilize Copilot on the topic screen when creating a new topic, entering a name and an initial prompt to build the topic directly within Power Virtual Agents. Bot Makers/Authors can also use Copilot, using the Copilot button within the topic, to open the Copilot panel on the side of the authoring screen to update the topic using natural language, including select specific nodes.
 
-:::image type="content" source="media/boosted-c.png" alt-text="Screenshot of Conversation Booster feature in Power Virtual Agent":::
+:::image type="content" source="media/unified-authoring-conversion/boosted-c.png" alt-text="Screenshot of Conversation Booster feature in Power Virtual Agent":::
 
 ### Application Insights Integration by default
 
@@ -142,7 +142,7 @@ With any application, it is vital that companies ensure there is enough time wit
 
 There are a range of resources available to assist with business application technology deployments, and specifically best practices around conversational projects using Power Virtual Agents. Check out the links below to learn more:
 
-- [Success By Design](https://learn.microsoft.com/en-us/dynamics365/fasttrack/success-by-design-overview)
+- [Success By Design](dynamics365/fasttrack/success-by-design-overview)
 
 - [PowerCAT Power Virtual Agents Playbook](https://powervirtualagents.microsoft.com/en-us/blog/announcing-power-virtual-agents-customer-playbook/)
 
