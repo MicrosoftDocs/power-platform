@@ -29,8 +29,6 @@ If you have tenant administration rights, you can [configure API permissions](#c
 
 # [Preview](#tab/preview)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
-
 You'll complete the first several steps in the Azure portal. You'll complete the final two steps in Power Virtual Agents.
 
 ### Create an app registration
@@ -67,12 +65,12 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect` and `https://europe.token.botframework.com/.auth/web/redirect`.
 
-    > [!NOTE]
-    > The authentication configuration pane in Power Virtual Agents might show the following redirect URL instead of the ones listed above: ` https://unitedstates.token.botframework.com/.auth/web/redirect`. Using that URL will make the authentication fail; ensure you use the URI listed above.
+> [!NOTE]
+> The authentication configuration pane in Power Virtual Agents might show the following redirect URL instead of the ones listed above: ` https://unitedstates.token.botframework.com/.auth/web/redirect`. Using that URL will make the authentication fail. Please use the URI listed above instead,
 
 1. In the **Implicit grant and hybrid flows** section, turn on both **Access tokens (used for implicit flows)** and **ID tokens (used for implicit and hybrid flows)**.
 
-    :::image type="content" source="media/configure-web-sso/redirect-uri.png" alt-text="Screenshot of the Configure Web window with the redirect URI and implicit grant and hybrid flow tokens highlighted.":::
+    :::image type="content" source="media/configure-web-sso/redirect-url.png" alt-text="Screenshot of the Configure Web window with the redirect URI and implicit grant and hybrid flow tokens highlighted.":::
 
 1. Select **Configure**.
 
@@ -181,7 +179,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
     :::image type="content" source="media/configure-web-sso/paste-code.png" alt-text="Screenshot of a successful user authentication in a bot conversation, with the validation code highlighted.":::
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/web)
 
 Adding authentication allows users to sign in, giving your bot access to a restricted resource or information.
 
@@ -256,6 +254,100 @@ Adding authentication allows users to sign in, giving your bot access to a restr
 
 1. Select **Save** to finish the configuration.
 
+## Configure API permissions
+
+1. In the left nav of the app registration blade in Azure portal, go to **API permissions**.
+
+1. Select **Grant admin consent for \<your tenant name>** and then select **Yes**. If this button is greyed out, you'll need to ask a tenant administrator to do this for you
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/api-permission.png" alt-text="Screenshot API permission." border="false":::
+
+    > [!NOTE]
+    > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator can grant tenant-wide consent to your app registrations.
+1. Select **Add a permission**, then **Microsoft Graph**.
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/request-api-permission.png" alt-text="Screenshot showing request API permission.":::
+
+1. Select **Delegated permissions**. A list of permissions will appear below.
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/delegated-permission.png" alt-text="Screenshot showing delegated permission.":::
+
+1. Expand **OpenId permissions** and turn on **openid** and **profile**.
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/select-permission.png" alt-text="Screenshot showing delegated permission selection.":::
+
+1. Select **Add permissions** to save your settings.
+
+## Define a custom scope for your bot
+
+[Scopes](/azure/active-directory/develop/developer-glossary#scopes) allow you to determine user and admin roles and access rights. You'll create a custom scope for your canvas app registration that you'll create in a later step.
+
+1. In the left nav of the app registration blade in Azure portal, go to **Expose an API** and select **Add a scope**.
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/expose-api.png" alt-text="Screenshot showing API scopes":::
+
+1. Set the following properties:
+
+   | Property                   | Value                                      |
+   | -------------------------- | ------------------------------------------ |
+   | Scope name                 | Enter `Test.Read`                          |
+   | Who can consent?           | Select **Admins and users**                |
+   | Admin consent display name | Enter `Test.Read`                          |
+   | Admin consent description  | Enter `Allows the app to log in the user.` |
+   | State                      | Select **Enabled**                         |
+
+   > [!NOTE]
+   > The scope name `Test.Read` is a placeholder value and should be replaced with a name that makes sense in your environment.
+    :::image type="content" source="media/configuration-authentication-azure-ad/add-scope.png" alt-text="Screenshot adding of API scopes":::
+
+1. Select **Add** scope.
+
+1. Under **Scopes**, select **Copy to clipboard** to copy the scope URI and store it in a temporary place. You'll need this in later steps.
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/copy-scope-uri.png" alt-text="Screenshot copy to clipboard button.":::
+
+## Configure authentication in Power Virtual Agents
+
+1. In Power Virtual Agents side navigation pane, under **Settings**, select **Security**. Then select **Authentication**.
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/pva-security-auth.png" alt-text="Screenshot Power Virtual Agents security and authentication page":::
+
+1. Select **Manual (for any channel including Teams)** then turn on **Require users to sign in**.
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/pva-auth.png" alt-text="Screenshot Power Virtual Agents authentication settings page" border="false":::
+
+1. Enter the values for the following properties:
+
+    - **Service provider**: Select **Azure Active Directory V2**.
+
+    - **Client ID**: Enter the application (client) ID that you [copied earlier from the Azure portal](#create-an-app-registration).
+
+    - **Client secret**: Enter the client secret you [generated earlier from the Azure portal](#generate-a-client-secret).
+
+    - **Token exchange URL (required for SSO)**: Enter the scope URI you [copied earlier from Azure portal](#define-a-custom-scope-for-your-bot).
+
+    - **Scopes**: Enter `profile openid`.
+
+1. Select **Save** to finish the configuration.
+
 ---
+
+## Test your bot using the test pane
+
+1. Publish your bot.
+
+1. In the test bot pane send a message to your bot.
+
+1. When the bot responds, select **Login**.
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/test-bot.png" alt-text="Screenshot testing Power Virtual Agents bot":::
+
+1. A new browser tab will open asking you to sign in. Sign in, then copy the code that is presented.
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/validation-code.png" alt-text="Screenshot bot login":::
+
+1. Send the code to the bot to complete the sign-in process.
+
+    :::image type="content" source="media/configuration-authentication-azure-ad/paste-code.png" alt-text="Screenshot paste validation code":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
