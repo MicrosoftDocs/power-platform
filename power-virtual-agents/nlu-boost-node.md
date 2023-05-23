@@ -64,7 +64,7 @@ The custom data field takes a JSON array of objects representing a set of Conten
   Content: "This is a second bit of sample text that can be replaced with content of your choice"
 }]
 ```
-Answers will be generated from the value defined in `Content:`.
+Answers will be generated from the value defined in `Content:` and will include the link to the related destination in `ContentLocation`.
 
 
 ## Create generative answers
