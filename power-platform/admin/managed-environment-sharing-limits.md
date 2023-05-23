@@ -39,11 +39,11 @@ If a user tries to share a canvas app that contradicts the sharing rules, they w
 
 :::image type="content" source="media/managed-environment-canvas-app-sharing-rule.png" alt-text="Screenshot of a message when canvas app doesn't respect sharing rule.":::
 
-### Use PowerShell to set sharing limits
+## Use PowerShell to set sharing limits
 
 You can also use PowerShell to set and remove sharing limits.
 
-#### Set sharing limits
+### Set sharing limits
 
 Here's an example PowerShell script that excludes sharing with security groups and limits the number of individuals canvas apps can be shared to to 20, for an existing managed environment:
 
@@ -61,7 +61,7 @@ $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType Note
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
-#### Remove sharing limits
+### Remove sharing limits
 
 Here's an example PowerShell script that removes the sharing limits set by the above script:
 
