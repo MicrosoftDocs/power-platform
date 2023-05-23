@@ -19,7 +19,7 @@ contributors:
 Send an in-app notification with optional actions to a recipient.  
 
 > [!IMPORTANT]
-> The functions in this topic are in preview and will change before general availability. While in preview, the "X" prefix will be used on the functions, and the functions will be available for use only with Dataverse actions.
+> The functions in this topic are in preview and will change before general availability. While in preview, the "X" prefix will be used on the functions, and the functions will be available for use only with [Dataverse low-code plug-ins](https://learn.microsoft.com/power-apps/maker/data-platform/low-code-plug-ins).
 
 ## Description
 
