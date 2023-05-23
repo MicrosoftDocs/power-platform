@@ -48,9 +48,7 @@ You can read more about Power Virtual Agents, or get started creating bots now a
 1. **Empower your subject matter experts**. Using Power Virtual Agents, you are in the driver's seat. Your SMEs can create bots quickly and easily using a **novel, intuitive, code-free graphical interface**, eliminating the need for AI expertise or teams of developers.
 
     :::image type="content" source="media/fundamentals-what-is-pva-portal/overview-no-code.png" alt-text="No-code interface." border="false":::
-    
- <mark>  << --- image needs update since track changes UI has changed and its no longer the green check mark --- >>></mark>
-
+   
 1. **Enable rich, natural conversations.** Microsoft's powerful conversational AI capabilities enable your end users to have rich multi-turn conversations that quickly guide them to the right solution. And, unlike most products on the market, there's no need to retrain AI models. Simply provide a few short examples of the topic you want the bot to handle, build the conversation using our graphical editor and your bot is ready to handle customer requests about it. You can even try out your changes in real-time in the test pane!
 
    :::image type="content" source="media/fundamentals-what-is-pva-portal/overview-conversation.png" alt-text="Natural conversation with a bot." border="false":::
@@ -104,7 +102,7 @@ To get started creating bots in Teams with Power Virtual Agents straight away, s
 ## Important information
 
 > [!IMPORTANT]
-><!-- CELA required disclosure, do not modify -->
+><!-- Microsoft Legal required disclosure, do not modify -->
 > Microsoft Power Virtual Agents (1) is not intended or made available as a medical device for the diagnosis of disease or other conditions, or in the cure, mitigation, treatment or prevention of disease, or otherwise to be used as a component of any clinical offering or product, and no license or right is granted to use Microsoft Power Virtual Agents for such purposes, (2) is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used as a substitute for, or to replace, professional medical advice, diagnosis, treatment, or judgment, and (3) should not be used for emergencies and does not support emergency calls. Any chatbot you create using Microsoft Power Virtual Agents is your own product or service, separate and apart from Microsoft Power Virtual Agents. You are solely responsible for the design, development, and implementation of your chatbot (including incorporation of it into any product or service intended for medical or clinical use) and for explicitly providing end users with appropriate warnings and disclaimers pertaining to use of your chatbot. You are solely responsible for any personal injury or death that may occur as a result of your chatbot or your use of Microsoft Power Virtual Agents in connection with your chatbot, including (without limitation) any such injuries to end users.
 
 ## Related topics

@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 5/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -59,6 +59,10 @@ Comma separated list of entity logical names to exclude downloading
 
 Download only the entities specified for this argument in comma separated entity logical name
 
+#### `--modelVersion` `-mv`
+
+Power Pages website data model version to download
+
 #### `--overwrite` `-o`
 
 Power Pages website content to overwrite
@@ -70,6 +74,17 @@ This parameter requires no value. It is a switch.
 ## pac paportal list
 
 List all Power Pages websites from the current Dataverse environment
+
+[!INCLUDE [paportal-list-intro](includes/paportal-list-intro.md)]
+
+
+### Optional Parameters
+
+#### `--verbose` `-v`
+
+Enables verbose mode and furbishes additional details.
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [paportal-list-remarks](includes/paportal-list-remarks.md)]
 
@@ -98,6 +113,10 @@ Deployment profile name to be used. Defaults to 'default'
 Upload all Power Pages website content to the current Dataverse environment
 
 This parameter requires no value. It is a switch.
+
+#### `--modelVersion` `-mv`
+
+Power Pages website data model version to upload
 
 [!INCLUDE [paportal-upload-remarks](includes/paportal-upload-remarks.md)]
 

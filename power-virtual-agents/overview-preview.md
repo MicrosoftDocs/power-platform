@@ -1,5 +1,5 @@
 ---
-title: Overview of the Power Virtual Agents preview (preview)
+title: Overview of the Power Virtual Agents
 description: Overview of new features and improvements in Power Virtual Agents preview.
 ms.date: 03/24/2023
 
@@ -14,9 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Overview (preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# Overview
 
 Power Virtual Agents is evolving. The new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer's "pro-code" capabilities with the simplicity of the Power Virtual Agents low-code platform. It's even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot-building studio.
 
@@ -35,9 +33,9 @@ This evolution brings several exciting new features:
   - [Enhanced variable management](authoring-variables.md)
   - [Power Fx support](advanced-power-fx.md)
 
-Check out the [Quickstart](quickstart.md) for a guided tutorial on how to use the new features.
+Check out the [Quickstart](quickstart-preview.md) for a guided tutorial on how to use the new features.
 
-The Power Virtual Agents preview doesn't yet support some of the features you're used to in Power Virtual Agents, such as agent transfers and bot authoring in Teams. For the complete list, see [Limitations of the Power Virtual Agents preview](limitations-preview.md).
+The Power Virtual Agents preview doesn't yet support some of the features you're used to in Power Virtual Agents, such as agent transfers and bot authoring in Teams.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

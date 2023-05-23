@@ -67,7 +67,6 @@ The following table lists the services to which Power Virtual Agents connects. E
 
 Configure all [required services for Power Automate](/power-automate/ip-address-configuration#required-services), in addition to Power Virtual Agents, to use both together.
 
-<!-- best viewed/edited without wordwrap -->
 | Domains                            | Required | Protocols | Uses                                                                                                                                          |
 | ---------------------------------- | -------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | *.directline.botframework.com        | Yes      | HTTPS     | Access to Bot Framework Web Chat                                                                                                              |

@@ -17,8 +17,6 @@ searchScope:
 
 # Quickstart: Create and deploy a Power Virtual Agents bot
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience - all without the need for data scientists or developers.
 
 This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it's been deployed.
@@ -325,7 +323,7 @@ Now you can add different responses for each option. For *paid vacation*, we can
 
 1. Add a message node specifically for the *Paid vacation* branch with this message to the user: *For paid vacation time-off, go to www.contoso.com/HR/PaidTimeOff to learn more on how to submit time-off requests.*
 
-2. Add a node by selecting **Add node** (**+**) to end the conversation with a survey. Select **End the conversation**, then **End with survey**. This is the [customer satisfaction survey](analytics-csat.md) pre-built in the bot for everyone to use in their topics.
+2. Add a node by selecting **Add node** (**+**) to end the conversation with a survey. Select **End the conversation**, then **End with survey**. This is the [customer satisfaction survey](analytics-csat.md) prebuilt in the bot for everyone to use in their topics.
 
 3. In the *National Holidays* path, add a message node with the following text:
 

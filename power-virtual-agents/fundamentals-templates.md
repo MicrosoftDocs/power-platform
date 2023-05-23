@@ -15,7 +15,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Use pre-built chatbot templates in Microsoft Teams
+# Use prebuilt chatbot templates in Microsoft Teams
 
 > [!NOTE]
 > This topic applies to chatbots created in the Power Virtual Agents app in Microsoft Teams only. Templates are not currently supported for the Power Virtual Agents web app.

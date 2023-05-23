@@ -63,7 +63,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
         <head>
             <title>Contoso Sample Web Chat</title> 
             <!-- This styling is for the canvas demonstration purposes. It is recommended 
-        that style is moved to separate file for organization in larger projects -->
+        that style is moved to a separate file for organization in larger projects -->
             <style>
                 html, body {
                     height: 100%;

@@ -14,9 +14,7 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring, bap-template
 ---
 
-# Create expressions using Power Fx (preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# Create expressions using Power Fx
 
 Power Fx is a low-code language that uses Excel-like formulas. Use Power Fx to create complex logic that allows your bots to manipulate data. For instance, a Power Fx formula can set the value of a variable, parse a string, or use an expression in a condition. For more information, see the [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](/power-platform/power-fx/formula-reference).
 

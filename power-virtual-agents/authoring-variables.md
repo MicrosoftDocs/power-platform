@@ -15,8 +15,6 @@ ms.collection: virtual-agent
 
 # Use variables
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 You can save customers' responses in a bot conversation to variables and reuse them later in the conversation. 
 
 You can also use variables to create logical expressions that dynamically route the customer down different conversation paths. For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
@@ -42,7 +40,6 @@ Variables can exist at three levels, or scopes:
 
 A variable is associated with a **base type**. The type determines what values the variable can contain and the operators that you can use when you construct a logical expression with it.
 
-<!-- best viewed without wordwrap -->
 | Type     | Description                                                                                                                                |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | String   | A sequence of characters used to represent text                                                                                            |
@@ -62,7 +59,7 @@ Order of variables is determined from top to bottom of the authoring canvas. Tha
 
 ### Entities
 
-Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to identify a specific type of information from a user's responses. The identified information is saved in a variable of the type that's appropriate for the information. The following table lists the variable base type that's associated with pre-built entities.
+Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to identify a specific type of information from a user's responses. The identified information is saved in a variable of the type that's appropriate for the information. The following table lists the variable base type that's associated with prebuilt entities.
 
 | Entity                  | Variable Base Type |
 | ----------------------- | ------------------ |
@@ -234,7 +231,7 @@ The destination topic is the topic being redirected to, the one that will receiv
 
 1. Add a Question node and enter `What should I call you?` for the message.
 
-1. Under **Identify**, select the pre-built entity **Person name**.
+1. Under **Identify**, select the prebuilt entity **Person name**.
 
 1. Select the variable to open the **Variable properties** pane. Name it `userName`, and then select **Receive values from other topics**.
 
@@ -286,7 +283,7 @@ When you're returning a variable to a topic, the source topic is the topic being
 
 1. Add a Question node and enter `What city do you live in?` for the message.
 
-1. Under **Identify**, select the pre-built entity **City**.
+1. Under **Identify**, select the prebuilt entity **City**.
 
 1. Select the variable to open the **Variable properties** pane. Name it `userCity`, and then select **Return values to original topics**.
 
@@ -395,7 +392,7 @@ The Parse Value node allows you to convert a value of one type, to a value of an
 
 Key scenarios using the Parse Value node focus on converting raw JSON or untyped variables (whose value or structure isn’t know until runtime; for example ChannelData) to concrete types.
 
-The process starts when a Flow is called, which in turn calls an API. The API then returns a result. Typically, you would need to parse this response and return one or more primitive variables to PVA. With the Parse Value node, you can send the entire API result as a string:
+The process starts when a Flow is called, which in turn calls an API. The API then returns a result. Typically, you would need to parse this response and return one or more primitive variables to Power Virtual Agents. With the Parse Value node, you can send the entire API result as a string:
 
 ```json
 {

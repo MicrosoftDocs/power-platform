@@ -14,10 +14,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Quickstart guide for building bots with GPT (preview)
-
-[!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
-
+# Quickstart guide for building bots with GPT
 
 Microsoft has made bot building even simpler with AI-powered capabilities in Power Virtual Agents (preview). Whether you're new to conversational AI or a seasoned developer, our intelligence platform is with you and your team every step of the way. 
 
@@ -52,7 +49,7 @@ This quickstart guide introduces you to the minimal steps necessary to get start
 - This capability may be subject to usage limits or capacity throttling.
  
 > [!IMPORTANT] 
-> During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need your admin to [enable bot publishing for the capability](nlu-boost-conversations.md#publishing). 
+> During the preview period, if you create a bot that has **Boost conversations** enabled, you'll need your admin to [enable bot publishing for the capability](nlu-boost-conversations.md#disable-bot-publishing). 
 
 ## How bot conversations work
 
@@ -96,7 +93,7 @@ For any user-sent message that can't be matched to an existing topic, your bot l
 
 See the [Boost conversations (preview)](nlu-boost-conversations.md) topic for more details on the capability, including instructions for enabling boosted conversations in preview bots you've already created.
 
-## Create a new topic using Copilot (preview)
+## Create a new topic using Copilot
 
 1. With your bot open, select **Topics**. On the **Topics** page, select **+ New topic** and then **Create with Copilot (preview)**.
 

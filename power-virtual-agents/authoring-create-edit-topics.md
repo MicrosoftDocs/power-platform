@@ -17,8 +17,6 @@ searchScope:
 
 # Create and edit topics in your Power Virtual Agents bot
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 In Power Virtual Agents, a topic defines a how a bot conversation plays out.
 
 To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
@@ -124,7 +122,7 @@ The following table lists the types of nodes you can insert in a topic:
 
 The **Question** node allows you to prompt a user for information and store their response in a variable for use later on in the conversation.
 
-The node allows you to choose the type of information to collect, such as a multiple-choice answer, a pre-built entity, or a custom entity. [Question behavior properties](#configure-question-behavior) allow you to control the behavior of the node, such as what to do when the user enters an invalid response.
+The node allows you to choose the type of information to collect, such as a multiple-choice answer, a prebuilt entity, or a custom entity. [Question behavior properties](#configure-question-behavior) allow you to control the behavior of the node, such as what to do when the user enters an invalid response.
 
 Just like **Message** nodes, **Question** nodes can include images, videos, cards, quick replies, and message variations. For more information, see [Send a message](authoring-send-message.md).
 
@@ -252,7 +250,7 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
       kind: OnRecognizedIntent
       id: main
       intent:
-        displayName: Lesson 3 - A topic with a condition, variables and a pre-built entity
+        displayName: Lesson 3 - A topic with a condition, variables and a prebuilt entity
         triggerQueries:
           - Buy items
           - Buy online

@@ -12,9 +12,7 @@ ms.collection: virtual-agent
 ms.service: power-virtual-agents
 ---
 
-# View billed sessions (preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# View billed sessions
 
 A _billed session_ is an interaction between a customer and a bot. It represents one unit of consumption. The purchase of a Power Virtual Agents license includes a specific number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. How much of your capacity you've consumed isn't reported at the tenant level. However, you can view consumption for individual bots.
 

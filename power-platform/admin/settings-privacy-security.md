@@ -1,12 +1,12 @@
 ---
 title: "Manage privacy and security settings   | MicrosoftDocs"
 description: View and manage privacy and security settings for Microsoft Dataverse.
-author: jimholtz
+author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: admin
-ms.date: 08/04/2022
-ms.author: jimholtz 
+ms.date: 05/03/2023
+ms.author: matp 
 search.audienceType: 
   - admin
 ---
@@ -44,9 +44,14 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**Inactivity timeout**|More information: [Inactivity timeout](user-session-management.md#inactivity-timeout) |  
 > |Set inactivity timeout|Default: Off. Enable to automatically sign out a user. |  
 > | **Enable sharing** | Default: Off. Select **On** to allow users to share read-only links to records with other users from this environment. |
-> |**Content security policy**|More information: [Content security policy](content-security-policy.md) |  
+> |**Content security policy**|More information: [Content security policy](content-security-policy.md) |
+> | **IP address settings**   |    |
+> |  Enable IP address based cookie binding  | Default is Off. When enabled, helps prevent session hijacking exploits in Dataverse with IP address-based cookie binding.  More information: [Block cookie replay attacks in Dataverse](block-cookie-replay-attack.md) |
+> | Enable IP address based Storage Shared Access Signature (SAS) rule  | Default is Off. Restricts who, based on IP address, can use enterprise SAS tokens. More information: [SAS IP Binding](security/data-storage.md#sas-ip-binding) |
+> |  Enable IP address based firewall rule  | Default is Off. When enabled, allows you to limit Dataverse access to users by specifying valid IP address ranges. More information: [IP firewall in Power Platform environments](ip-firewall.md)  | 
 
-## Replace the privacy statement for the organization  
+## Replace the privacy statement for the organization
+
  By default, the [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] privacy statement is always shown to users with an administrator role only, and not to other (business) users. As an administrator, you can add a link to specify your organization's privacy statement, which is then shown to other users in your organization.  
   
 1. Go to **Environments** > [select an environment] > **Settings** > **Product** > **Privacy + Security**
@@ -63,8 +68,8 @@ Make sure you have the System Administrator or System Customizer security role o
 > [!NOTE]
 >  Any user with the System Administrator security role will always see the [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] privacy statement and not the organization’s privacy statement.
 
+## Set error reporting preferences for the organization
 
-## Set error reporting preferences for the organization 
  When errors occur in the product, data about the problem is sent to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. This data – an error report - allows customer engagement apps to track and address errors relating to [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)]. You can help [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] improve products and services when you allow the system to send these error reports.  
   
  By default, individual users have a measure of control over whether to send error reports to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. But you, as an administrator, can override their preferences and set up the error reporting preferences for the entire organization.  

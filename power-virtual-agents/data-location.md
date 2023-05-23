@@ -1,5 +1,5 @@
 ---
-title: "Regional settings and data locations (contains video)"
+title: Regional settings and data locations (contains video)
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
 ms.date: 03/24/2023
 
@@ -9,7 +9,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
-ms.custom: "multi-geo, gdpr, ce06102020"
+ms.custom: "multi-geo, ce06102020"
 ---
 
 # Regional settings and data locations for organizations using Power Virtual Agents

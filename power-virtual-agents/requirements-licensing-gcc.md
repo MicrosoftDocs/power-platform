@@ -42,7 +42,7 @@ Beginning February 2022, eligible customers can choose to deploy Power Virtual A
 
 Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework.  
 
-This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD.
+This option enables and requires the customer to use Azure AD Government for customer identities, in contrast to GCC, which uses the public Azure AD.
 
 For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
 

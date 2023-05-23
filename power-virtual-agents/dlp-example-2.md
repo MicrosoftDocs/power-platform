@@ -13,11 +13,9 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Data loss prevention example 2 - Block HTTP requests from Power Virtual Agents chatbots (Preview)
+# Data loss prevention example 2 - Block HTTP requests from Power Virtual Agents chatbots
 
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
-
-Bot makers in your organization can [extend their bots with Bot Framework Composer](advanced-bot-framework-composer.md) and use HTTP requests.
+Bot makers in your organization can [extend their Power Virtual Agents (classic) bots with Bot Framework Composer](advanced-bot-framework-composer.md) and use HTTP requests. 
 
 You can use data loss prevention policies to prevent bot makers from configuring HTTP requests to help prevent data exfiltration.
 
@@ -43,9 +41,9 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
     :::image type="content" source="media/dlp-example-2/update-policy.png" alt-text="Screenshot of the review screen when creating a DLP policy ":::
 
-## Confirm policy enforcement in Power Virtual Agents
+## Confirm policy enforcement in Power Virtual Agents (classic) 
 
-You can confirm that this connector is being used in the DLP policy from the Power Virtual Agents web app.
+You can confirm that this connector is being used in the DLP policy from the Power Virtual Agents (classic) web app.
 
 First, open your bot from the environment where the DLP policy is applied. Go to the authoring canvas, and open (or create) a topic that includes a custom Bot Framework Trigger that uses an HTTP request.
 

@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Sending event activities
 
-PVA provides two nodes that allow you to send non-message activities: Send an Event, and Send an Activity. These are discussed in the following sections.
+Power Virtual Agents provides two nodes that allow you to send non-message activities: Send an Event, and Send an Activity. These are discussed in the following sections.
 
 :::image type="content" source="media/authoring-variables/authoring-send-activites-menu.png" alt-text="Screenshot of adding an Advanced node, including the Send an event and Send an activity options.":::
 

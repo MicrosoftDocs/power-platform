@@ -18,9 +18,9 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
-[Adaptive Cards](https://adaptivecards.io) enable you to add snippets of content to PVA bots that can also be openly exchanged with other cloud apps and services. Formatted using JSON code, bot builders can include text, graphics, and buttons to provide rich conversation capability for your bot. Because they are platform-agnostic, you can easily tailor Adaptive Cards to your needs. 
+[Adaptive Cards](https://adaptivecards.io) enable you to add snippets of content to Power Virtual Agents bots that can also be openly exchanged with other cloud apps and services. Formatted using JSON code, bot builders can include text, graphics, and buttons to provide rich conversation capability for your bot. Because they are platform-agnostic, you can easily tailor Adaptive Cards to your needs. 
 
-You design Adaptive Cards using the [Adaptive Cards Designer](https://adaptivecards.io/designer/) or author directly using JSON code. The **Adaptive Card** node allows you send an Adaptive Card that contains one or more submit buttons, and optionally one or more form input fields. PVA then stores user responses in variables for use later in the conversation.
+You design Adaptive Cards using the [Adaptive Cards Designer](https://adaptivecards.io/designer/) or author directly using JSON code. The **Adaptive Card** node allows you send an Adaptive Card that contains one or more submit buttons, and optionally one or more form input fields. Power Virtual Agents then stores user responses in variables for use later in the conversation.
 
 The node allows you to provide the JSON for the card you want to send to the user or provide a [Power Fx formula](advanced-power-fx.md) to represent the card, allowing you to include dynamic information on the card. [Additional properties](#additional-properties) on the node allow you to control behavior, such as what to do when the user enters an invalid response and if the node is able to be interrupted.
 
@@ -47,7 +47,7 @@ The **Adaptive Card** node is used for interactive cards, where the user is expe
 > [!TIP]
 > Your card must contain at least one submit button, as it must be an interactive card that allows a user to submit information back to the bot. If it does not and is only intended to show information to the bot user, you should add your card as an attachment to a **Message** node.
 
-1. Once you have added the JSON code for your card to the editor, click outside of the editor and the node is updated with a preview of your card, as shown below. PVA automatically creates output variables based on the inputs detected within the card.
+1. Once you have added the JSON code for your card to the editor, click outside of the editor and the node is updated with a preview of your card, as shown below. Power Virtual Agents automatically creates output variables based on the inputs detected within the card.
 
     :::image type="content" source="media/authoring-interactive-adaptive-cards/card-preview.png" alt-text="Screenshot of the Adaptive Card node, with a preview of a card.":::
 
