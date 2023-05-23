@@ -1,5 +1,5 @@
 ---
-title: "Geo to geo migrations  | MicrosoftDocs"
+title: Geo to geo migrations
 description: Move your environment in a single tenant from one region to another with the Geo Migration feature.
 author: matapg007
 ms.component: pa-admin
