@@ -20,6 +20,7 @@ You can optionally configure a gate for each pipeline stage. Then when a deploym
 The system prevents any tampering or modification to the exported solution artifact. Solutions are exported when a deployment request is submitted (when the maker clicked "Deploy" from within their development environment), and the same solution artifact will be deployed upon approval. Similarly, the system does not re-export a solution for deployments to subsequent stages in a pipeline. The same solution artifact must pass through pipeline stages in sequential order. This ensures customization cannot bypass QA environments or your approval processes.
 
 When configuring the pipeline stage, check **Pre-Deployment Step Required**
+  :::image type="content" source="media/pipelines-pre-step-config.png" alt-text="Pipelines pre-deployment step required":::
 
    > [!IMPORTANT]
    > Adding a pre-deployment step gates pipelines deployments, but makers are required to have permission to import solutions to the target environment. A separate feature will be available soon for deploying with service principals.
@@ -35,10 +36,10 @@ Triggers are available in Power Automate cloud flows within the pipelines host e
 - Table name: (none)
 - Action name: Select an option from the list
 
-
+:::image type="content" source="media/pipelines-triggers.png" alt-text="Pipelines triggers in Power Automate":::
 
 After running the desired pre-deployment logic in cloud flows, use the Perform an unbound action named UpdatePreDeploymentStepStatus to proceed or fail the deployment.
-
+  :::image type="content" source="media/pipelines-approval-flow.png" alt-text="Pipelines approvals":::
 
 
 **Deployment requested step**
