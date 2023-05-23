@@ -7,7 +7,7 @@ ms.author: ritesp
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/19/2023
+ms.date: 05/23/2023
 search.audienceType: 
   - admin
 ---
@@ -61,6 +61,6 @@ Conditional access policy evaluation occurs when the user account is no longer c
 
 Continuous access evaluation-enabled clients for Power Platform support a claim challenge. A claim challenge is a redirect of a user's session to Azure AD for reauthentication when a cached, user token is rejected by a continuous access evaluation-enabled Power Platform service, such as Dataverse. Currently the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) support continuous access evaluation claims. More clients are planned to onboarded to continuous access evaluation in the future. 
 
-Clients that don't support continuous access evaluation, the access token lifetime will remain the same as configured or set to the default value.
+For clients that don't support continuous access evaluation, the access token lifetime remains the same as configured or set to the default value.
 
  
