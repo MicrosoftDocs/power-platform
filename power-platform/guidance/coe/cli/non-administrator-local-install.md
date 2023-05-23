@@ -1,23 +1,23 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) non administrator installation (Deprecated)"
-description: "Install instructions for the Center of Excellence Command-Line interface using non administrator rights"
+title: Non-Administrator Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
+description: This article provides install instructions for the Center of Excellence Command-Line interface using non-administrator rights.
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 3/15/2022
+ms.date: 5/23/2023
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
-# Non Administrator Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
+# Non-Administrator Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
 
 > [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
-To install the CoE CLI as a non-administrator you apply use the following components:
+To install the CoE CLI as a non-administrator, use the following components:
 
 - Follow [Miniconda Install](#miniconda-install) instructions for your operating system.
 
@@ -35,7 +35,7 @@ Miniconda is a free minimal installer for conda. It's a small, bootstrap version
 
 ## Local NodeJs
 
-Install NodeJs as a non-administrator
+Install NodeJs as a non-administrator:
 
 1. Go to [NodeJs Download](https://nodejs.org/en/download/).
 
