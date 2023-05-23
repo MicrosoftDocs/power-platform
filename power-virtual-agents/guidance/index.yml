@@ -1,0 +1,55 @@
+### YamlMime:Landing
+
+title: Power Virtual Agents guidance documentation
+summary: Power Virtual Agents guidance documentation provides best practices, implementation, and architecture guidance information from the team that works with our enterprise customers.
+
+metadata:
+  title: Power Virtual Agents guidance documentation
+  description: Provides best practice guidance information for Power Virtual Agents.
+  ms.topic: landing-page
+  ms.collection: collection
+  author: HenryJammes
+  ms.author: hejammes
+  ms.date: 05/23/2023
+  ms.reviewer: iawilt
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+  # Card
+  - title: Building chatbots
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Topics best practices
+            url: topics-overview.md
+          - text: Trigger phrases best practices
+            url: trigger-phrases-best-practices.md
+          - text: slot filling best practices
+            url: slot-filling-best-practices.md
+
+  # Card
+  - title: Measuring and improving chatbots
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Measuring engagement
+            url: measuring-engagement.md
+          - text: Measuring outcomes
+            url: measuring-outcomes.md      
+          - text: Deflection optimization
+            url: deflection-overview.md
+          - text: Custom analytics strategy
+            url: custom-analytics-strategy.md
+
+  # Card
+  - title: Related content
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Power Platform guidance center
+            url: /power-platform/guidance
+          - text: Power Apps guidance center
+            url: /power-apps/guidance
+          - text: Power Pages guidance center
+            url: /power-pages/guidance

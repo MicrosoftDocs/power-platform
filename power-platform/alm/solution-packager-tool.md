@@ -2,7 +2,7 @@
 title: "SolutionPackager tool (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.custom: ""
-ms.date: 06/15/2020
+ms.date: 05/12/2023
 ms.reviewer: "pehecke"
 
 ms.topic: "article"
@@ -23,7 +23,7 @@ SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse c
  The SolutionPackager tool is distributed as part of the [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGet package. To install the program, follow these steps.
 
 1. Download the NuGet package.
-1. Rename the package filename extension from .nupkg to .zip.
+1. Rename the package filename extension from \.nupkg to \.zip.
 1. Extract the contents of the compressed (zip) file.
 
 You will find the SolutionPackager.exe executable in the \<extracted-folder-name\>/contents/bin/coretools folder. Run the program from the coretools folder or add that folder to your PATH.
@@ -57,7 +57,7 @@ You will find the SolutionPackager.exe executable in the \<extracted-folder-name
 
 The following discussion details the use of the /map argument to the SolutionPackager tool.  
   
-Files that are built in an automated build system, such as .xap Silverlight files and plug-in assemblies, are typically not checked into source control. Web resources may already be present in source control in locations that aren't directly compatible with the SolutionPackager tool. By including the /map parameter, the SolutionPackager tool can be directed to read and package such files from alternate locations and not from inside the Extract folder as it would typically be done. The /map parameter must specify the name and path to an XML file containing mapping directives. Those directives instruct the SolutionPackager to match files by their name and path, and indicate the alternate location to find the matched file. The following information applies to all directives equally.  
+Files that are built in an automated build system, such as \.xap Silverlight files and plug-in assemblies, are typically not checked into source control. Web resources may already be present in source control in locations that aren't directly compatible with the SolutionPackager tool. By including the /map parameter, the SolutionPackager tool can be directed to read and package such files from alternate locations and not from inside the Extract folder as it would typically be done. The /map parameter must specify the name and path to an XML file containing mapping directives. Those directives instruct the SolutionPackager to match files by their name and path, and indicate the alternate location to find the matched file. The following information applies to all directives equally.  
   
 - Multiple directives may be listed including those directives that match identical files. Directives listed early in the file take precedence over directives listed later.  
   
@@ -139,7 +139,14 @@ Any file matching the `map` parameter will be read from the name and path specif
   <FileToFile map="assembly.dll" to="c:\path\folder\assembly.dll" />  
   <FileToFile map="PluginAssemblies\**\this.dll" to="..\..\Plugins\**\that.dll" />  
   <FileToFile map="Webresrouces\ardvark.jpg" to="%SRCBASE%\CrmPackage\WebResources\JPG format\aardvark.jpg" />  
-```  
+```
+
+```xml  
+  <FileToFile
+    map="pluginpackages\cr886_PluginPackageTest\package\cr886_PluginPackageTest.nupkg"
+    to="myplg\bin\Debug\myplg.1.0.0.nupkg" /> 
+``` 
+Note that in the above NuGet package example, cr886_PluginPackageTest.nupkg is not overwritten if the file already exists in the specified location.
   
 <a name="file_path_mapping"></a>   
 
@@ -219,7 +226,7 @@ The following XML code sample shows a complete mapping file that enables the Sol
   
  The tool will assume the presence of the managed zip file in the same folder as the unmanaged file and extract both files into a single folder preserving the differences where managed and unmanaged components exist.  
   
- After a solution has been extracted as both unmanaged and managed, it is possible from that single folder to pack both, or each type individually, using the /PackageType parameter to specify which type to create. When specifying both, two .zip files will be produced using the naming convention as above. If the /PackageType parameter is missing when packing from a dual managed and unmanaged folder, the default is to produce a single unmanaged .zip file.  
+ After a solution has been extracted as both unmanaged and managed, it is possible from that single folder to pack both, or each type individually, using the /PackageType parameter to specify which type to create. When specifying both files, two .zip files will be produced using the naming convention as above. If the /PackageType parameter is missing when packing from a dual managed and unmanaged folder, the default is to produce a single unmanaged .zip file.  
   
 ## Troubleshooting  
 

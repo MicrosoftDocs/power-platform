@@ -2,11 +2,12 @@
 title: "Configure web channel security"
 description: "Use Direct Line tokens or secrets to secure access to your bots."
 keywords: "direct line, token, secret, access, secure, security, channels, PVA"
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewer: clmori
 ms.custom: configuration, ceX
 ms.service: power-virtual-agents
@@ -15,18 +16,14 @@ ms.collection: virtual-agent
 
 # Configure web and Direct Line channel security
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](configure-web-security.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/configure-web-security-teams.md)
-
 When you create a Power Virtual Agents bot, it is immediately available in the **Demo website** and **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed.
 
-Users can find the bot ID directly from within Power Virtual Agents or by receiving it from someone.
+For the Microsoft Teams app, you can configure advanced web channel security options.
 
-Depending on the bot's capability and sensitivity that might not be desirable.
+> [!NOTE]
+> If you have a [Teams-only license, you can't generate secrets to enable secure access](requirements-licensing-subscriptions.md). Secure access tokens are created automatically for you and secure access is enabled by default.
+
+Users can find the bot ID directly from within Power Virtual Agents or by receiving it from someone. But, depending on the bot's capability and sensitivity that might not be desirable.
 
 With Direct Line-based security, you can enable access only to locations that you control by enabling secured access with Direct Line secrets or tokens.
 
@@ -184,7 +181,7 @@ HTTP/1.1 200 OK
 
 For more details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API - Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token&preserve-view=true) topic.
 
-## See also
+## Related topics
 
 - [Key Concepts - Publish your bot](publication-fundamentals-publish-channels.md)
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)

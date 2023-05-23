@@ -97,7 +97,7 @@
                 - name: Add-ons
                   href: power-automate-licensing/add-ons.md
                 - name: Request a Power Automate premium license
-                  href: power-automate-licensing/request-premium-license.md 
+                  href: power-automate-licensing/request-premium-license.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
             - name: Pay-as-you-go plan
@@ -159,7 +159,7 @@
                 - name: Sandbox environment
                   href: sandbox-environments.md
                 - name: Trial environments
-                  href: trial-environments.md                
+                  href: trial-environments.md
                 - name: Dataverse for Teams environment
                   href: about-teams-environment.md
                 - name: View apps in your environments
@@ -180,7 +180,7 @@
                   href: managed-environment-usage-insights.md
                 - name: Data policies
                   href: managed-environment-data-policies.md
-                - name: Use solution checker (preview)
+                - name: Solution checker enforcement (preview)
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
@@ -599,7 +599,7 @@
                   href: analytics-ui-flow.md
             - name: Reports
               items:
-                - name: Tenant-level analytics (default)
+                - name: Tenant-level analytics (preview)
                   href: tenant-level-analytics.md
                 - name: Power Apps analytics
                   href: powerapps-analytics-reports.md
@@ -1099,3 +1099,9 @@
       href: ../guidance/adoption/methodology.md
     - name: Center of Excellence (CoE) Kit
       href: ../guidance/coe/starter-kit.md
+    - name: Responsible AI
+      items:
+        - name: Overview
+          href: ../transparency-note-overview.md
+        - name: Transparency note for Copilot data security and privacy
+          href: ../transparency-note-copilot-data-security-privacy.md
