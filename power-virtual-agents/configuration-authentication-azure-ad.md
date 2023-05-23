@@ -2,7 +2,7 @@
 title: Configure user authentication with Azure Active Directory
 description: Use Azure Active Directory as your service provider for user authentication.
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 3/24/2023
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
@@ -20,7 +20,7 @@ Adding authentication to your bot allows users to sign in, giving your bot acces
 
 This article covers how to configure Azure Active Directory (Azure AD) as your service provider. To learn about other service providers and user authentication in general, see [Configure user authentication](configuration-end-user-authentication.md).
 
-If you have tenant administration rights, you can [configure API permissions](#configure-api-permissions). Otherwise, you'll need to ask a tenant administrator to do so for you.
+If you have tenant administration rights, you can [configure API permissions](#configure-api-permissions). Otherwise, you'll need to ask a tenant administrator to do it for you.
 
 ## Prerequisites
 
@@ -203,7 +203,7 @@ Adding authentication allows users to sign in, giving your bot access to a restr
 
 1. Copy the **Application (client) ID** and store it in a temporary place. You'll need this in later steps.
 
-### Add the redirect URL in Classic
+### Add the redirect URL
 
 1. In the Azure portal, go to **Authentication** and then select **Add a platform**.
 
@@ -329,6 +329,8 @@ Adding authentication allows users to sign in, giving your bot access to a restr
     - **Scopes**: Enter `profile openid`.
 
 1. Select **Save** to finish the configuration.
+
+---
 
 ## Test your bot using the test pane
 

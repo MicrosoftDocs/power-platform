@@ -7,6 +7,7 @@ ms.date: 07/28/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring
 ms.service: power-virtual-agents

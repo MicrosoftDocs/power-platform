@@ -2,11 +2,12 @@
 title: "Integrate with question answering"
 description: "Use an existing question answering knowledge base as content in your fallback topic."
 keywords: "question answering, fallback, knowledge base, question, answer, faq"
-ms.date: 10/12/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: "publication, authoring, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

@@ -2,11 +2,12 @@
 title: "Add user authentication to chatbot topics"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 08/11/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewer: clmori
 ms.custom: authentication, ceX
 ms.service: power-virtual-agents
@@ -15,23 +16,129 @@ ms.collection: virtual-agent
 
 # Add end-user authentication to a Power Virtual Agents bot
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-end-user-authentication.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-end-user-authentication-teams.md)
-
 You can enable user authentication directly within a Power Virtual Agents bot conversation. User authentication means you can get a user's basic properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
 
-You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md) and [Configure SSO for Microsoft Teams](configure-sso-teams.md)
+>[!NOTE]
+> Bots created in Microsoft Teams come with authentication pre-configured to use Teams authentication.
+
+You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md).
 
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Use variables](authoring-variables.md)
 - [Configure end-user authentication](configuration-end-user-authentication.md).
 
-## Authentication variables
+
+# [Preview](#tab/preview)
+
+[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+
+Add user authentication to a topic to allow your customers to sign in right in the conversation. You can then personalize the conversation with user variables and access back-end systems on the user's behalf.
+
+### Configure manual authentication with Azure AD
+
+You need to configure user authentication with Azure AD before you can use authentication in your topics.
+
+1. Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md).
+1. Return to this article.
+
+### Add user authentication with the Signin system topic
+
+When you create a bot, Power Virtual Agents automatically adds a system topic called **Signin**. To use it, you must set your bot's authentication to manual and require users to sign in. When a customer starts a conversation with the bot, the **Signin** topic triggers and prompts the user to sign in. You can customize the **Signin** topic as appropriate for your bot.
+
+1. In the navigation menu under **Settings**, select **Security**.
+
+1. Select the **Authentication** tile.
+
+1. Select **Manual (for custom website)**, and then select **Require users to sign in**.
+
+    :::image type="content" source="media/advanced-user-authentication/require-signin.png" alt-text="Screenshot of the Power Virtual Agents Authentication page with Require users to sign in selected and highlighted.":::
+
+    :::image type="content" source="media/advanced-user-authentication/sign-in-card.png" alt-text="Screenshot of the sign-in prompt.":::
+
+### Add user authentication with a custom topic
+
+The **Signin** topic authenticates the user at the beginning of the conversation. To allow the user to sign in later, you can add an **Authenticate** node to any custom topic.
+
+When customers enter their username and password, they might be prompted to enter a validation code. After they've logged in, they won't be prompted again, even if they reach another **Authenticate** node.
+
+1. In the navigation menu under **Settings**, select **Security**.
+
+1. Select the **Authentication** tile.
+
+1. Turn off **Require users to sign in**.
+
+1. In the navigation menu, select **Topics**, and then open the topic you want to add authentication to.
+
+1. Select **Add node** (**+**), select **Call an action**, and then select **Authenticate**.
+
+1. [Test your topic](authoring-test-bot.md) with a user configured with your identity provider.
+
+> [!TIP]
+> It's important that you create paths for both a successful sign-in and failure to sign in. A sign-in may fail for many reasons, including errors with the identity provider's sign-in experience.
+
+### Authentication variables
+
+When you've configured user authentication for your bot, you can use authentication variables in your topics. The following table compares the availability of these variables based on the authentication option you chose.
+
+| Authentication Variable | No Authentication | Only for Teams | Manual    |
+|-------------------------|:-----------------:|:--------------:|:---------:|
+| [User.DisplayName][1]   | not available     | not available  | available |
+| [User.Id][2]            | not available     | not available  | available |
+| [User.IsLoggedIn][3]    | not available     | not available  | available |
+| [User.AccessToken][4]   | not available     | not available  | available |
+| [SignInReason][5]       | not available     | not available  | available |
+
+[1]: #userdisplayname
+[2]: #userid
+[3]: #userisloggedin
+[4]: #useraccesstoken
+[5]: #signinreason
+
+#### User.DisplayName
+
+> [!WARNING]
+> This variable isn't guaranteed to contain a value. Test with a user from your identity provider to ensure your topic works correctly.
+
+The `User.DisplayName` variable contains the display name that's stored in the identity provider. Use this variable to greet or refer to the user without their having to explicitly give their name to the bot, making the conversation more personalized.
+
+Power Virtual Agents automatically sets the value of `User.DisplayName` from the `name` claim provided by the identity provider, as long as the `profile` scope was defined when manual authentication was configured. For more information about scope, see [Configure manual authentication with Azure AD](#configure-manual-authentication-with-azure-ad).
+
+#### User.Id
+
+> [!WARNING]
+> This variable isn't guaranteed to contain a value. Test with a user from your identity provider to ensure your topic works correctly.
+
+The `User.Id` variable contains the userID that's stored in the identity provider. Use this variable in [Power Automate flows](advanced-flow.md) to call APIs that take the UserID as a value.
+
+Power Virtual Agents automatically sets the value of `User.DisplayName` from the `sub` claim provided by the identity provider.
+
+#### User.IsLoggedIn
+
+`User.IsLoggedIn` is a boolean-type variable that stores the user's sign-in status. A value of `true` indicates the user is signed in. You can use this variable to create branching logic in your topics that checks for a successful sign-in, or to fetch user information only if the user is signed in.
+
+#### User.AccessToken
+
+> [!WARNING]
+> Make sure you're passing the `User.AccessToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
+
+The `User.AccessToken` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow.md) so they can connect to back-end APIs and fetch user information, or to take actions on the user's behalf.
+
+Don't use `User.AccessToken` in **Message** nodes or in flows that you don't trust.
+
+#### SignInReason
+
+`SignInReason` is a choice-type variable that indicates when the user must sign in. It has two possible values:
+
+- `SignInRequired` indicates the user must sign in at the beginning of the conversation using the **Signin** system topic. [**Require users to sign in** must be turned on](#add-user-authentication-with-the-signin-system-topic).
+
+- `Initializer` indicates that if the user hasn't signed in yet, and they reach a point in the conversation that uses authentication variables, they'll be prompted to sign in.
+
+
+# [Web app](#tab/web)
+
+### Authentication variables
 
 If your bot is configured with either "Only for Teams" or "Manual" authentication options, you will have a set of authentication variables available in your topics. Check the [authentication configuration documentation](configuration-end-user-authentication.md) for more information on how to configure authentication in your bot.
 
@@ -44,13 +151,13 @@ The following table compares authentication variable availability by authenticat
 | ```IsLoggedIn```        |        :x:        |        :x:         | :heavy_check_mark: |
 | ```AuthToken```         |        :x:        |        :x:         | :heavy_check_mark: |
 
-### UserDisplayName variable
+#### UserDisplayName variable
 
 The ```UserDisplayName``` variable contains the user's display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
 
 This field value is obtained from the Azure Active Directory (Azure AD) ```name``` claim. For OAuth providers, this is the value stored in the ```name``` claim. Power Virtual Agents automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
 
-### UserID variable
+#### UserID variable
 
 The ```UserID``` variable contains the user's ID stored in the identity provider. This value can be used by Power Automate flows to call APIs that take the UserID as a value.
 This field value is obtained from the Azure AD ```sub``` claim. For OAuth providers, this is the value stored in the ```sub``` claim. Power Virtual Agents automatically extracts this field into the variable.
@@ -58,13 +165,13 @@ This field value is obtained from the Azure AD ```sub``` claim. For OAuth provid
 > [!WARNING]
 > The ```UserDisplayName``` and ```UserID``` variables are not guaranteed to be filled, and might be empty strings depending on the user configuration in the identity provider. Test with a user from your identification provider to ensure your topics work correctly, even if these variables are empty.
 
-### IsLoggedIn variable
+#### IsLoggedIn variable
 
 The ```IsLoggedIn``` variable indicates whether the user is signed in (either as a result of signing in or already being signed in, also known as the log-in success path) or not signed in (which would result in the log-in failure path).
 
 ```IsLoggedIn``` is a boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
 
-### AuthToken variable
+#### AuthToken variable
 
 The ```AuthToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow-input-output.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
 
@@ -73,7 +180,7 @@ The ```AuthToken``` variable contains the user's token, obtained after the user 
 
 Don't use `AuthToken` inside **Message** nodes, or on flows that you don't trust.
 
-## Testing authentication variables
+### Testing authentication variables
 
 By default, the **Test bot** pane will use the account of the currently signed-in user to populate the `UserDisplayName` and `UserID` variables. However, when testing topics that use authentication, you might want to use other values for these variables (or even a blank value).
 
@@ -93,14 +200,14 @@ If you reset the **Test bot** pane (or you make changes to a topic that cause th
 > [!IMPORTANT]
 > You can't populate the `UserID` variable with a custom value (other than an empty or blank value) due to security reasons.
 
-## Authentication when using "Only for Teams" configuration
+### Authentication when using "Only for Teams" configuration
 
 If your authentication option is set to **Only for Teams**, you don't need to explicitly add authentication to your topics. In this configuration, any user in Microsoft Teams is automatically signed in via their Teams credentials and they don't need to explicitly sign in with an authentication card. If your authentication option is set to Manual, then you will need to add the authentication node (even for the Teams channel).
 
 > [!NOTE]
 > If your authentication option is set to "Only for Teams", you don't have the option to explicitly add authentication to your topics.
 
-## Add user authentication to a topic
+### Add user authentication to a topic
 
 The _Authenticate_ node will prompt a user to log in with a sign-in card. If a user is already logged in, they won't be prompted again, even if they reach another Authenticate node.
 
@@ -134,7 +241,7 @@ To add an Authenticate node to your topic:
 
     :::image type="content" source="media/advanced-end-user-authentication/auth-template.png" alt-text="New nodes." border="false":::
 
-## AuthToken usage without an Authenticate node
+### AuthToken usage without an Authenticate node
 
 The ```IsLoggedIn``` and ```AuthToken``` variables are available even if you don't use the template provided by the **Call an action** menu entry. If you pass the `AuthToken` variable without first having the user go through the **Authenticate** node, the user will be prompted to sign in at that step.
 
@@ -143,20 +250,26 @@ Passing the `AuthToken` variable can be useful if you always expect the user to 
 > [!NOTE]
 > If the user signs out in the middle of a conversation, they will be prompted to sign in again if the topic comes to a node that uses the ```AuthToken``` variable.
 
-### Success path
+#### Success path
 
 The success path equates to where ```IsLoggedIn = True``` and accounts for when the user has successfully signed in (or was already signed in).
 
 If you have logic that uses the `AuthToken` variable (for example, to connect to a back-end system using a flow to retrieve a user's information), it should go under this path.
 
-### Failure path
+#### Failure path
 
 The failure path equates to any condition other than `IsLoggedIn = True`. In most cases the failure path occurs because the user failed to sign in, used the wrong password, or canceled the sign-in experience.
 
 Add any logic you might want to treat this case. As an example, we have provided options for retrying or to [escalate to a live agent](advanced-hand-off.md). Customize the failure path's actions for your particular scenario and usage.
 
-## Testing your topic
+### Testing your topic
 
 Make sure to [test your topic](authoring-test-bot.md) using a real user configured in your identity provider. Ensure both the sign-in success and failure paths are exercised, so there are no surprises if your user fails to sign in or there is an error with the identity provider's sign-in experience.
+
+---
+
+## Related topics
+
+You can also configure single sign-on (SSO) so your users don't need to sign in manually. For more information, see [Configure SSO for web](configure-sso.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

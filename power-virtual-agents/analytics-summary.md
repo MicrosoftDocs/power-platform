@@ -2,11 +2,12 @@
 title: "Report analytics, performance, and usage (contains video)"
 description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
 keywords: "PVA"
-ms.date: 01/20/2023
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: analysis, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -14,20 +15,11 @@ ms.collection: virtual-agent
 
 # Analyze bot performance and usage in Power Virtual Agents
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](analytics-summary.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-summary-teams.md)
+The **Summary** tab on the **Analytics** page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mQpm]
 >
-
-The **Summary** tab on the **Analytics** page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate.
 
 :::image type="content" source="media/analytics-summary/overview-analytics.png" alt-text="The Analytics summary page.":::
 
