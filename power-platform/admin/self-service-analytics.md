@@ -3,11 +3,13 @@ title: "Microsoft Power Platform self-service analytics export Power Platform in
 description: Export Power Apps canvas apps inventory and usage data to use with your organization's line-of-business scenarios.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/21/2022
+ms.date: 05/23/2023
 ms.subservice: admin
 author: tjvass
 ms.author: tjvass
-ms.reviewer: jimholtz
+ms.reviewer: sericks
+contributors:
+- StephenRauchPM
 search.audienceType: 
   - admin
 ---
@@ -39,11 +41,11 @@ Data Lake Storage is a key part of Cortana Intelligence, meaning that it works w
 
   > [!NOTE]
   > The following Azure Data Lake Storage Gen2 configurations are supported for this preview feature:
-  > - Storage Account Types: Standard general-purpose v2 or Premium block blobs
-  > - Hierarchical Namespace: “Enable hierarchical namespace” must be selected.
-  > - Network Connectivity, Network Access: “Enable public access from all networks” must be selected.
-  > - Network Routing, Routing Preference: “Microsoft network routing” recommended.
-  > - Security: “Require secure transfer for REST API operations” must be selected.
+  > - Storage Account Types: Standard general-purpose v2 or Premium block blobs.
+  > - Hierarchical Namespace: **Enable hierarchical namespace** must be selected.
+  > - Network Connectivity, Network Access: **Enable public access from all networks** must be selected.
+  > - Network Routing, Routing Preference: **Microsoft network routing** is recommended.
+  > - Security: **Require secure transfer for REST API operations** must be selected.
 
 ## Simplify data with Data Lake Storage
 
