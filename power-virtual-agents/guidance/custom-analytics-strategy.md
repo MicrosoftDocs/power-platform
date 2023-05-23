@@ -1,6 +1,6 @@
 ---
 title: "Use custom analytics reports"
-description: "Extend the use and scope of analytics data in Power Virtual Agents by using a custom report template. Use your data with Dataverse, Azure data lake storage, and Power BI."
+description: "Guidance for extending the use and scope of analytics data in Power Virtual Agents by using a custom report template. Use your data with Dataverse, Azure data lake storage, and Power BI."
 author: athinesh
 ms.date: 5/11/2023
 ms.topic: conceptual
@@ -11,9 +11,6 @@ ms.collection: virtual-agent
 ---
 
 # Custom analytics strategy
-
-
-<mark>IDW TODO:: Confirm need for ms.service in the metadata</mark>
 
 
 Power Virtual Agents provides comprehensive [out-of-the-box analytics](/power-virtual-agents/preview/analytics-overview) that allow customers to understand a bot's usage and key performance indicators.
@@ -61,8 +58,6 @@ Power Virtual Agents uses the following tables for custom analytics in Dataverse
 - [**Chatbot**](/power-apps/developer/data-platform/reference/entities/bot) (`Bot`). This table includes details of each bot in an environment. Generally this is a small amount of data.
 - [**Chatbot Subcomponent**](/power-apps/developer/data-platform/reference/entities/botcomponent) (`BotComponent`). This table lists the topics, entities, and dialogs associated with the bot in your environment. Generally this is a small amount of data.
 - [**Conversation Transcripts**](/power-apps/developer/data-platform/reference/entities/conversationtranscript) (`ConversationTranscript`). This table contains detailed conversation data for all the chatbots in your environment. The size of the data in this table is related to the use of the bot and can be large.
-
-<mark>How big is large and how small is small? 1gb? 400tb? 200kb?</mark>
 
 ### Azure Synapse Link for Dataverse (Azure Data Lake Storage Gen2)
 

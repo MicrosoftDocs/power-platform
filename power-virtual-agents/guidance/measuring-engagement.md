@@ -1,20 +1,21 @@
 ---
 title: "Measuring chatbot engagement"
-description: "Measuring chatbot engagement in Power Virtual Agents"
+description: "Guidance for measuring chatbot engagement in Power Virtual Agents."
 author: HenryJammes
-ms.date: 04/28/2023
+ms.date: 05/23/2023
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: hejammes
+ms.reviewer: iawilt
 ---
 
 # Measuring chatbot engagement
 
-Tracking conversation engagement rates and outcomes are crucial to measure the chatbot performance metrics and spot areas for improvements.
+Tracking conversation engagement rates and outcomes are crucial to measure the chatbot performance metrics, and spot areas for improvements.
 
 ## Understanding conversations and analytics sessions
 
- **A single conversation** between an end-user and a Power Virtual Agents chatbot can generate **one or multiple analytics sessions**, typically happening when a user has new questions after an initial topic conversation path completed.
+ **A single conversation** between an end user and a Power Virtual Agents chatbot can generate one or multiple analytics sessions, typically happening when a user has new questions after an initial topic conversation path completed.
 
 > [!NOTE]
 > Analytics sessions and [billed sessions](/power-virtual-agents/preview/analytics-billed-sessions) are distinct concepts.

@@ -15,7 +15,7 @@
       - name: Using the Fallback topic
         href: fallback-topic.md
     - name: Trigger phrases best practices
-      href: trigger-phrases-best-practices.md  
+      href: trigger-phrases-best-practices.md
     - name: Slot filling best practices
       href: slot-filling-best-practices.md
 - name: Measuring and improving chatbots
@@ -23,19 +23,19 @@
     - name: Measuring engagement
       href: measuring-engagement.md
     - name: Measuring outcomes
-      href: measuring-outcomes.md       
+      href: measuring-outcomes.md
     - name: Deflection optimization
       items:
       - name: Deflection overview
         href: deflection-overview.md
       - name: Topic escalation analysis
-        href: deflection-topic-escalation-analysis.md   
+        href: deflection-topic-escalation-analysis.md
       - name: Topic enrichment analysis  
-        href: deflection-topic-enrichment-analysis.md                
+        href: deflection-topic-enrichment-analysis.md
       - name: Topic confusion analysis
         href: deflection-topic-confusion-analysis.md
       - name: Alternate escalation paths
-        href: deflection-alternate-escalation-paths.md    
+        href: deflection-alternate-escalation-paths.md
       - name: Agent transcripts analysis
         href: deflection-transcripts-analysis.md
     - name: Custom analytics strategy

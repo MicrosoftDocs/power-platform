@@ -1,17 +1,17 @@
 ### YamlMime:Landing
 
 title: Power Virtual Agents guidance documentation
-summary: Power Virtual Agents guidance documentation provides best practices, implementation and architecture guidance information from the team that works with our enterprise customers.
+summary: Power Virtual Agents guidance documentation provides best practices, implementation, and architecture guidance information from the team that works with our enterprise customers.
 
 metadata:
   title: Power Virtual Agents guidance documentation
   description: Provides best practice guidance information for Power Virtual Agents.
-  services: service
   ms.topic: landing-page
   ms.collection: collection
   author: HenryJammes
   ms.author: hejammes
-  ms.date: 04/11/2023
+  ms.date: 05/23/2023
+  ms.reviewer: iawilt
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

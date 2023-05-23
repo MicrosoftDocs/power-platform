@@ -1,11 +1,12 @@
 ---
 title: "Measuring chatbot outcomes"
-description: "Measuring chatbot outcomes in Power Virtual Agents"
+description: "Guidance for measuring chatbot outcomes in Power Virtual Agents"
 author: HenryJammes
-ms.date: 04/28/2023
+ms.date: 05/23/2023
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: hejammes
+ms.reviewer: iawilt
 ---
 
 # Measuring chatbot outcomes

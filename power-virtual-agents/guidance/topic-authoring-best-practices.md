@@ -1,8 +1,8 @@
 ---
 title: "Topic authoring best practices"
-description: "Topic authoring best practices in Power Virtual Agents."
+description: "Guidance and  best practices for topic authoring in Power Virtual Agents."
 author: HenryJammes
-ms.date: 05/18/2023
+ms.date: 05/23/2023
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: hejammes
@@ -56,7 +56,7 @@ That way, a single update to that topic reflects on all the topics redirecting t
 
 ### Monitor and remove ambiguity between topics
 
-When topics are triggered with NLU, it's important to avoid overlap issues. Overlap issues typically reflect through a large number of [Multiple Topics Matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched) topics (also known as "did you mean").
+When topics are triggered with NLU, it's important to avoid overlap issues. Overlap issues typically reflect through a large number of [multiple topics matched](/power-virtual-agents/preview/authoring-system-topics#multiple-topics-matched) topics (also known as "did you mean").
 
 You can avoid these issues by reducing the overlap in intent meaning between the trigger phrases of different topics.
 

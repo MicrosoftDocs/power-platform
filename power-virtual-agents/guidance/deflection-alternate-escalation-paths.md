@@ -1,11 +1,12 @@
 ---
 title: "Alternate Escalation Paths"
-description: "Set of best practices based on alternate escalation paths to improve the deflection rate of a Power Virtual Agents chatbot"
+description: "Set of best practices based on alternate escalation paths to improve the deflection rate of a Power Virtual Agents chatbot."
 author: athinesh
-ms.date: 1/20/2023
+ms.date: 05/23/2023
 ms.topic: conceptual
 ms.custom: guidance
 ms.author: athinesh
+ms.reviewer: iawilt
 ---
 # Alternate escalation paths
 
@@ -14,7 +15,13 @@ ms.author: athinesh
 
 ## Check for operating hours and queue size during escalation
 
-In this approach, you can have a self-service action inside Power Virtual Agents, for example, a Power Automate cloud flow. The action that checks for the operating hours of the human agent and agent queue size from the engagement hub using, for example, Dynamics 365 Omnichannel for Customer Service. It then transfers the chat only if the agent is available in the current hour or if the queue isn't full. If the escalation happens outside the operating hours of agent or the agent queue is full, then the bot can redirect the user to email support or schedule a call back. This approach avoids unnecessary escalation and in turn improves the deflection rate.
+In this approach, you can have a self-service action inside Power Virtual Agents, for example, a Power Automate cloud flow. 
+
+The action that checks for the operating hours of the human agent and agent queue size from the engagement hub using, for example, Dynamics 365 Omnichannel for Customer Service. It then transfers the chat only if the agent is available in the current hour or if the queue isn't full. 
+
+If the escalation happens outside the operating hours of the agent or the agent queue is full, then the bot can redirect the user to email support or schedule a call back. 
+
+This approach avoids unnecessary escalation and, in turn, improves the deflection rate.
 
 ## Provide an option to create a support ticket during escalation
 
