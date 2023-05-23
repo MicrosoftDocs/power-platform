@@ -40,13 +40,30 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 
 | Name | Source | Description | Number of Inputs | Authentication |
 | --- | --- | --- | --- | --- |
-| Bing Search | External | Searches the query in put on Bing; returning results only from provided websites | 4 public urls (for example, microsoft.com) | None |
+| Bing Search | External | Searches the query input on Bing; returning results only from provided websites | 4 public URLs (for example, microsoft.com) | None |
 | [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to Power Virtual Agents | More than 4 urls (Bing Custom Search also provides other functionality) | None |
-| Sharepoint | Internal | Connects to a SharePoint url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| OneDrive for business | Internal | Connects to a OneDrive for Business url, uses GraphSearch to return results | 4 urls | C2 Azure Active Directory authentication |
-| Custom data | Internal | ... | one variable, populated with JSON results to be summarized | ... |
+| Sharepoint | Internal | Connects to a SharePoint URL, uses GraphSearch to return results | 4 URLs | Azure Active Directory authentication |
+| OneDrive for business | Internal | Connects to a OneDrive for Business url, uses GraphSearch to return results | 4 URLs | Azure Active Directory authentication |
+| [Custom data] | Internal | Uses a JSON code block to define the URLs and content to use | One variable, populated with the JSON results to be summarized | ... |
 
 As the table notes, some features require user authentication to be configured for your bot. In the cases of SharePoint and OneDrive for Business, authentication is done using Azure Active Directory. User authentication for information sources also means that when a specific user asks a question of the bot, the bot will only surface content that specific user has access to read on SharePoint or OneDrive for Business.
+
+### Use your own custom data with generative answers
+
+In some cases, your data may not exist in one of the supported data sources. However, you can provide your own data - possibly by accessing one of your own preferred data stores through Power Automate Flows, and then formatting the results into a JSON object that can be passed as a variable or expression to generate answers.
+
+The custom data field takes a JSON array of objects representing a set of ContentLocation/Content pairs, as in the following exmaple:
+
+```JSON
+[{
+  ContentLocation: "https://contoso.com/p1.htm",
+  Content: "This is a sample piece of text that was provided for testing purposes, to be replaced with content of your choice"
+ },
+ {
+  ContentLocation: "https://fabrikam.com/p2.htm",
+  Content: "This is a second bit of sample text that can be replaced with content of your choice"
+}]
+```
 
 ## Create generative answers
 
@@ -62,7 +79,7 @@ Adding a Search and summarize content node allows you to use generative answers 
 
     :::image type="content" source="media/nlu-gpt/create-gen-ans-node-image-highlight-22May23.png" alt-text="Screenshot of the Search and summarize content node properties.":::
 
-1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources Generative Answers can use, refer to [Information sources](#information-sources). (Note here about the other options (Variable or PowerFX) - what is the integration?)(image: data sources menu)
+1. Specify the data sources you would like the node to search and summarize, and add it to your list. This adds the source to the *node's* set of resources. For details on information sources that generative answers can use, refer to [Information sources](#information-sources).
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-SnS-sources.png" alt-text="Screenshot of the  Search and summarize content node Data sources menu.":::
 
@@ -136,19 +153,19 @@ To use this feature, you will need:
 2. A SharePoint or OneDrive for Business URL
 3. An AAD application registration for employees to log (this is optional to try this in the Test Canvas, but is required if you Publish your bot and use it with channels)
  
-#### Inputting a SharePoint or OneDrive for Business url
+#### Inputting a SharePoint or OneDrive for Business URL
 
 Follow the instructions for updating or changing urls as described in [Connect to a single URL to boost a conversation](#connect-to-a-single-url-to-boost-a-conversation), adding the SharePoint/OneDrive for Business url.
 
 > [!NOTE]
 >
-> A best practice is to omit the http/https. Also, recognized SharePoint urls will be from the sharepoint.com domain.
+> A best practice is to omit the http/https. Also, recognized SharePoint URLs will be from the sharepoint.com domain.
 
 Once your bot has been saved, you can send it messages in the test canvas chat window. Try sending it some phrases that you would expect to return content. If the user account you used to sign into powerva.microsoft.com **does not** have access to the SharePoint site you will not get content, or may get a System Error.
 
 #### Authentication
 
-This feature requires authentication, since bot makes calls on behalf of the user interaction with the chat window. Currently when you use the test chat, it will make calls using the account used to sign into powerva.microsoft.com. If you publish your bot or want to use another account, you need to configure Manual Authentication using Azure Active Directory. Instructions for how to do this can be found in [Configure user authentication in Power Virtual Agents](configuration-end-user-authentication.md).
+This feature requires authentication, since the bot makes calls on behalf of the user interaction with the chat window. Currently when you use the test chat, it will make calls using the account used to sign into powerva.microsoft.com. If you publish your bot or want to use another account, you need to configure Manual Authentication using Azure Active Directory. Instructions for how to do this can be found in [Configure user authentication in Power Virtual Agents](configuration-end-user-authentication.md).
 
 You can find instructions for how to create the needed Azure Active Directory Application Registration in [Configure user authentication with Azure Active Directory](configuration-authentication-azure-ad.md)
 
