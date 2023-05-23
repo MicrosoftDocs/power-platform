@@ -49,6 +49,7 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 1. Under **Allowed list of IPv4 or IPv6 ranges**, specify the allowed IP ranges in classless inter-domain routing (CIDR) format. If you have multiple IP ranges, separate them using a comma. This field excepts alphanumeric characters with a maximum length of 4000 and allows a maximum of 200 IP ranges.
 1. Choose additional settings as appropriate:
 
+   - **Service tags to be allowed by IP Firewall**: You can select list of service tags from dropdown list to bypass the IP Firewall restrictions.
    - **Allow access for Microsoft trusted services**: Enabled by default. Enabling this setting allows access to the Power Platform environment with Dataverse for service tags `PowerPlatformInfra`, `GenevaSynthetics`, and `GenevaActions` and for internal first-party applications.
    - **Allow access for all application users**: Enabled by default. This setting allows all application users third-party and first-party access to Dataverse APIs.
    - **Enable IP firewall in audit only mode**: Enabled by default. This setting allows you to enable IP firewall where a request by a user is allowed regardless of their IP address.
@@ -61,7 +62,7 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 
 ### Test IP firewall
 
-One enabled, you can test the IP firewall to verify it is working.
+Once enabled, you can test the IP firewall to verify it is working.
 
 1. Open the Power Platform environment URI that starts with `https://*environmentname*.crm*.dynamics.com` from an IP address, which isn't in the allow list of the IP addresses for the environment.
 
@@ -95,7 +96,7 @@ Audit-only mode allows you to identify the IP addresses that are making calls to
 
 ### Is this feature available to all the environments?
 
-No, when this feature is generally available, it is available with Managed Environments only.
+No, it is available with Managed Environments only.
 
 ### Is there a limit in the number of IP addresses that I can add in the IP address text box? 
 
@@ -112,8 +113,12 @@ Download the audit log data in JSON format by using Dataverse OData API. The for
 `https://{orgURI}/api/data/v9.1/audits?$select=createdon,changedata,action&$filter=action%20eq%20116&$orderby=createdon%20desc&$top=1` 
 
 - Replace **{orgURI}** with the Dataverse environment URI.
-- Set the action value to **116** for this event, or specify the value you want.
+- Set the action value to **116** for this event.
 - Set the number of items to return in **top=1** or specifyc the number you want to return.
+
+### My Power Automate flows are not working as expected after configuring the IP Firewall on Power Platform Environment.
+
+You can allow the service tags in IP Firewall settings. Please check if you have allowed the related service tags listed [here](https://learn.microsoft.com/en-us/connectors/common/outbound-ip-addresses).
 
 ## Next steps
 
