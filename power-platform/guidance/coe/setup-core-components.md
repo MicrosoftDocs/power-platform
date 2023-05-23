@@ -3,7 +3,7 @@ title: "Set up inventory components | MicrosoftDocs"
 description: "Set up instructions for how to set up the inventory components solution of the CoE Starter Kit"
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 04/13/2023
+ms.date: 05/23/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
