@@ -4,7 +4,7 @@ description: Learn about how to use IP firewall in Power Platform environments.
 author: ritesp
 ms.author: ritesp
 ms.topic: overview
-ms.date: 05/19/2023
+ms.date: 05/23/2023
 ms.reviewer: sericks
 ms.custom: template-overview
 
@@ -49,7 +49,7 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 1. Under **Allowed list of IPv4 or IPv6 ranges**, specify the allowed IP ranges in classless inter-domain routing (CIDR) format. If you have multiple IP ranges, separate them using a comma. This field excepts alphanumeric characters with a maximum length of 4000 and allows a maximum of 200 IP ranges.
 1. Choose additional settings as appropriate:
 
-   - **Service tags to be allowed by IP Firewall**: You can select list of service tags from dropdown list to bypass the IP Firewall restrictions.
+   - **Service tags to be allowed by IP firewall**: You can select a list of service tags from the drop-down list to bypass the IP firewall restrictions.
    - **Allow access for Microsoft trusted services**: Enabled by default. Enabling this setting allows access to the Power Platform environment with Dataverse for service tags `PowerPlatformInfra`, `GenevaSynthetics`, and `GenevaActions` and for internal first-party applications.
    - **Allow access for all application users**: Enabled by default. This setting allows all application users third-party and first-party access to Dataverse APIs.
    - **Enable IP firewall in audit only mode**: Enabled by default. This setting allows you to enable IP firewall where a request by a user is allowed regardless of their IP address.
@@ -62,7 +62,7 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 
 ### Test IP firewall
 
-Once enabled, you can test the IP firewall to verify it is working.
+Once enabled, you can test the IP firewall to verify that it's working.
 
 1. Open the Power Platform environment URI that starts with `https://*environmentname*.crm*.dynamics.com` from an IP address, which isn't in the allow list of the IP addresses for the environment.
 
@@ -96,7 +96,7 @@ Audit-only mode allows you to identify the IP addresses that are making calls to
 
 ### Is this feature available to all the environments?
 
-No, it is available with Managed Environments only.
+No, it's available with Managed Environments only.
 
 ### Is there a limit in the number of IP addresses that I can add in the IP address text box? 
 
@@ -116,9 +116,9 @@ Download the audit log data in JSON format by using Dataverse OData API. The for
 - Set the action value to **116** for this event.
 - Set the number of items to return in **top=1** or specifyc the number you want to return.
 
-### My Power Automate flows are not working as expected after configuring the IP Firewall on Power Platform Environment.
+### My Power Automate flows are not working as expected after configuring the IP firewall on my Power Platform environment. What should I do?
 
-You can allow the service tags in IP Firewall settings. Please check if you have allowed the related service tags listed [here](https://learn.microsoft.com/en-us/connectors/common/outbound-ip-addresses).
+You can allow the service tags in the IP firewall settings. Verify that you have allowed the related service tags listed the [Managed connectors outbound IP addresses](/connectors/common/outbound-ip-addresses) article.
 
 ## Next steps
 
