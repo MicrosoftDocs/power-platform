@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.component: pa-admin
 ms.topic: faq
-ms.date: 03/28/2023
+ms.date: 05/23/2023
 ms.author: prkoduku
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -74,7 +74,9 @@ The per user license is a user level license. All user level licenses (per user,
 
 ### Can Power Automate Hosted RPA add-on be used as a Power Automate Unattended RPA add-on?
 
-Yes, you can use the Power Automate Hosted RPA add-on capacity in two ways: (1) for hosted machines and hosted machine groups, and (2) to run Desktop flows (RPA) in unattended mode that can be applied to a local, remote desktop, or other virtualized environment.
+Yes, you can use the Power Automate Hosted RPA add-on capacity in two ways:
+- For hosted machines and hosted machine groups
+- To run desktop flows (RPA) in unattended mode that can be applied to a local, remote desktop, or other virtualized environment
 
 ### When five flows are purchased as part of the per flow pack, do I have to assign them all to the same environment?
 
