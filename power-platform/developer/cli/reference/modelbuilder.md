@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 3/13/2023
+ms.date: 5/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -35,11 +35,13 @@ Builds a code model for Dataverse APIs and Tables
 
 [!INCLUDE [modelbuilder-build-intro](includes/modelbuilder-build-intro.md)]
 
+
 ### Required Parameters
 
 #### `--outdirectory` `-o`
 
 Write Directory for entity, message and optionset files
+
 
 ### Optional Parameters
 
@@ -71,6 +73,21 @@ Emit all Global OptionSets, note: if an entity contains a reference to a global 
 
 The language to use for the generated proxy code.  This can be either 'CS' or 'VB'.  The default language is 'CS'.
 
+#### `--logLevel` `-ll`
+
+Log level. Default is Off.
+
+Use one of these values:
+
+- `Off`
+- `Critical`
+- `Error`
+- `Warning`
+- `Information`
+- `Verbose`
+- `ActivityTracing`
+- `All`
+
 #### `--messagenamesfilter` `-mnf`
 
 Filters the list of messages that are retrieved when reading data from Dataverse. Passed in as a semicolon separated list, required messages ( Create, Update, Delete, Retrieve, RetrieveMultiple, Associate and Disassociate) are always included. An * can be used to proceed or trail an message allowing for all messages starting with or ending with a string.  Using the form \<messagename>;\<messagename>
@@ -86,8 +103,6 @@ The namespace for the generated code.  The default namespace is the global names
 #### `--optionsetstypesfolder` `-otf`
 
 Folder name that will contain option sets.  default is OptionSets
-
-
 
 #### `--serviceContextName` `-sctx`
 

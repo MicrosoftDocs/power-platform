@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 3/13/2023
+ms.date: 5/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -150,9 +150,13 @@ Use one of these values:
 - `SouthAmerica`
 - `UnitedKingdom`
 - `France`
+- `SouthAfrica`
 - `Germany`
 - `UnitedArabEmirates`
 - `Switzerland`
+- `Norway`
+- `Singapore`
+- `Korea`
 - `USGovernment`
 - `USGovernmentL4`
 - `USGovernmentL5DoD`
@@ -173,6 +177,12 @@ Path to a file containing a JSON array rules and levels to override.  Accepted v
 #### `--ruleSet` `-rs`
 
 Select a rule set that will be executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default)
+
+#### `--saveResults` `-sav`
+
+Uses current environment to store solution analysis results. By default, this argument is set to false
+
+This parameter requires no value. It is a switch.
 
 #### `--solutionUrl` `-u`
 
@@ -219,6 +229,12 @@ Use one or more of these values separated by commas:
 - `outlooksynchronization`
 - `relationshiproles`
 - `sales`
+
+#### `--localize` `-loc`
+
+Extract or merge all string resources into .resx files.
+
+This parameter requires no value. It is a switch.
 
 #### `--max-async-wait-time` `-wt`
 
@@ -626,13 +642,19 @@ Use one or more of these values separated by commas:
 - `relationshiproles`
 - `sales`
 
+#### `--localize` `-loc`
+
+Extract or merge all string resources into .resx files.
+
+This parameter requires no value. It is a switch.
+
 #### `--max-async-wait-time` `-wt`
 
 Max asynchronous wait time in minutes. Default value is 60 minutes
 
 #### `--packagetype` `-p`
 
-When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'
+When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Both'
 
 #### `--processCanvasApps` `-pca`
 

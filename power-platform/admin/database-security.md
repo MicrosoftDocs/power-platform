@@ -10,7 +10,7 @@ contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/04/2023
+ms.date: 05/23/2023
 search.audienceType: 
   - admin
 ---
@@ -49,19 +49,23 @@ If the environment has a Dataverse database, a user must be assigned the System 
 
 For users who make apps that connect to the database and need to create or update entities and security roles, you need to assign the System Customizer role in addition to the Environment Maker role. This is necessary because the Environment Maker role doesn't have privileges on the environment's data. 
 
+> [!NOTE]
+> All of the following security roles **cannot be edited** to preserve the usage and function.
+
 | Security role  | Database privileges*  | Description |
 |---------|---------|---------|
-| App Opener | Create(self), Read,Write (self), Delete (self)  | Has [minimum privileges for common tasks](create-edit-security-role.md#minimum-privileges-for-common-tasks). This is primarily used when creating a new security role for model-driven apps, where a copy of the role is created before applying data access to your tables. This role is protected and cannot be updated.    |
-| Environment Maker     |  Customizations       | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data within an environment. More information: [Environments overview](./environments-overview.md) <br /> <br />Environment makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app)       |
+| App Opener | Create (self), Read, Write (self), Delete (self)  | Has [minimum privileges for common tasks](create-edit-security-role.md#minimum-privileges-for-common-tasks). This is primarily used when creating a new security role for model-driven apps, where a copy of the role is created before applying data access to your tables. It doesn't have any privileges to the core business tables, such as Account, Contact, and Activity.   |
+| Basic User   |  Read (self), Create (self), Write (self), Delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. It has privileges to the core business tables, such as Account, Contact, and Activity.  More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role) <br /><br />  **Note**: The Common Data Service **User** security role was renamed to **Basic User**. There is no action required, as this is just a name change and it doesn't impact the user privileges or role assignment.  If you have a solution with the Common Data Service **User** security role, you can inadvertently update the security role name back to Common Data Service **User** when you import the solution. Update the solution before re-importing.  |
+| Delegate     | Act on behalf of another user        | Allows code to *impersonate*, or run as another user.  Typically used with another security role to allow access to records. More information: [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user)    |
+| Environment Maker     |  Customizations       | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data within an environment. More information: [Environments overview](./environments-overview.md) <br /> <br />Environment makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app)    |
+| Global Reader  |   | The [Global Reader](/azure/active-directory/roles/permissions-reference) role is not yet supported in the Power Platform admin center.  |
+| Office Collaborator | Read (self) | Has Read permission to tables where a record from these tables was shared with the organization. Does not have access to any other core and custom table records. This role is assigned to the Office Collaborators owner team and not to an individual user.   |
+| Service Deleted | Delete | Has full Delete permission to all entities, including custom entities. This is primarily used by the service and requires deleting records in all entities. **This role cannot be assigned to a user or team.**   |
+| Service Reader | Read | Has full Read permission to all entities, including custom entities. This is primarily used by the service and requires reading all entities. **This role cannot be assigned to a user or team.**   |
+| Service Writer | Create, Read, Write | Has full Create, Read, and Write permission to all entities, including custom entities. This is primarily used by the service and requires creating and updating records. **This role cannot be assigned to a user or team.**   |
+| Support User | Read Customizations, Read Business Management settings      | Has full Read permission to customization and business management settings, which allow support staff to troubleshoot environment configuration issues. This role does not have access to core records. **This role cannot be assigned to a user or team.**        |
 | System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
 | System Customizer     | Create, Read, Write, Delete, Customizations         | Has full permission to customize the environment. Can view all custom table data in the environment. However, users with this role can only view rows (records) that they create in Account, Contact, Activity tables. More information: [Privileges required for customization](/power-apps/maker/model-driven-apps/privileges-required-customization)        |
-| Basic User   |  Read (self), Create (self), Write (self), Delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role) <br /><br />  **Note**: the Common Data Service User security role was renamed to Basic User. There is no action required - this is just a name changed and it doesn't impact the user privileges or role assignment.  If you have a Solution with the Common Data Service User security role, you can inadvertently update the security role name back to Common Data Service User when you import the Solution. Please update the Solution before re-importing.|
-| Service Reader | Read | Has full Read permission to all entities including custom entities. This is primarily used by backend service that requires reading all entities.    |
-| Service Writer | Create, Read, Write | Has full Create, Read, and Write permission to all entities including custom entities. This is primarily used by backend service that requires creating and updating records.    |
-| Delegate     | Act on behalf of another user        | Allows code to *impersonate*, or run as another user.  Typically used with another security role to allow access to records. More information: [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user)        |
-| Support User | Read Customizations, Read Business Management settings      | Has full Read permission to customization and business management settings to allow Support staff to troubleshoot environment configuration issues. Does not have access to core records.      |
-| Office Collaborator | Read (self) | Has Read permission to tables where a record from these tables was shared with the organization. Does not have access to any other core and custom table records. This role is assigned to the Office Collaborators owner team and not to an individual user.   |
-| Global Reader  |   | The [Global Reader](/azure/active-directory/roles/permissions-reference) role is not yet supported in the Power Platform admin center.  |
 
 *The scope of these privileges is global, unless specified otherwise.
 
@@ -71,6 +75,7 @@ In addition to the predefined security roles listed above for Dataverse, there m
 |---------|---------|
 |Power Apps     |    [Predefined security roles for environments with a Dataverse database](#environments-with-a-dataverse-database)    |
 |Power Automate     |  [Security and privacy ](/power-automate/process-advisor-security)   |
+|Power Pages  | [Roles required for website administration](/power-pages/admin/admin-roles)  |
 |Power Virtual Agents     |   [Assign environment security roles](/power-virtual-agents/admin-share-bots#assign-environment-security-roles) |
 
 ### Dataverse for Teams environments 
@@ -98,18 +103,20 @@ The following table describes which resources can be authored by each security r
 |Resource  |Environment Maker  |Environment Admin  |System Customizer  |System Admin  |
 |---------|---------|---------|---------|---------|
 |Canvas app     |X         |X         |X        |X         |
-|Cloud flow     |X (non-solution aware)         |X         |X (solution aware)         |X         |
-|Connector     |X         |X         |-         |X         |
-|Connection     |X         |X         |-         |X         |
+|Cloud flow     |X (non-solution aware)         |X         |X         |X         |
+|Connector     |X (non-solution aware)         |X         |X         |X         |
+|Connection<sup>*</sup>     |X         |X         |X         |X         |
 |Data gateway     |X         |X         |-         |X         |
 |Dataflow     |X         |X         |-         |X         |
 |Dataverse tables     |-         |-         |X         |X         |
 |Model-driven app     |X        |-         |X         |X         |
 |Solution framework     |X         |-         |X         |X         |
-|<sup>*</sup>Desktop flow     |-         |-         |X         |X         |
+|Desktop flow<sup>**</sup>     |-         |-         |X         |X         |
 |AI Builder     |-         |-         |X         |X         |
 
-<sup>*</sup>Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
+\*Connections are used in [canvas apps](/power-apps/maker/canvas-apps/add-manage-connections) and [Power Automate](/power-automate/add-manage-connections).
+
+\**Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
 
 ## Assign security roles to users in an environment that has no Dataverse database 
 
@@ -187,6 +194,10 @@ You can easily create, edit, or copy a security role and customize it to meet yo
 #### Edit an existing security role
 
 To edit an existing security role, either select the role name, or select the row and choose **Edit.** Then [define the privileges and properties of the security role](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
+
+> [!NOTE]
+> Some predefined [security roles cannot be edited](database-security.md#environments-with-a-dataverse-database). If you try to edit these roles, the **Save** and **Save + Close** buttons are greyed out.
+
 
 #### Copy a security role
 

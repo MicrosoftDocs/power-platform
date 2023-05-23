@@ -1,9 +1,10 @@
 ---
 title: Frequently asked questions about Power Automate licensing
-description: Learn the answers to frequently asked Power Automate questions."
+description: Learn the answers to frequently asked Power Automate questions.
 author: PriyaKodukula
 contributors:
   - PriyaKodukula
+  - thomasjeffries11
   - v-aangie
 ms.component: pa-admin
 ms.topic: faq
@@ -24,7 +25,9 @@ Each user and flow has a license plan. If a flow is set to the per flow plan, th
 
 If the flow is set to the per user plan, then it gets the plan of its primary owner. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the request limits from both plans.
 
-The standard user license plan for Power Automate is the Power Automate per user plan, but users have a range of other license plan options. Users with the free plan or one of the Microsoft 365 license plans can only access standard connectors, but most of the other license plans provide access to premium connectors. For details about license plans that include Power Automate capabilities, see [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types) and the Power Platform [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). For details about the limits and performance profile of license plans, see [Power Automate Limits](/power-automate/limits-and-config).
+The standard user license plan for Power Automate is the Power Automate per user plan, but users have a range of other license plan options. Users with the free plan or one of the Microsoft 365 license plans can only access standard connectors, but most of the other license plans provide access to premium connectors.
+
+To learn more about license plans that include Power Automate capabilities, go to [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types) and the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). To learn more about the limits and performance profile of license plans, go to [Limits for automated, scheduled, and instant flows](/power-automate/limits-and-config).
 
 ### When should I choose Power Automate 'per flow' versus 'per user'?
 
@@ -314,6 +317,12 @@ Command example with export:
 `Get-AdminFlowAtRiskOfSuspension -EnvironmentName  <ENV_NAME> -ApiVersion '2016-11-01' | Export-Csv -Path suspensionList.csv -NoTypeInformation`
 
 Makers can find a premium icon next to the name of a premium flow.
+
+### Power Automate capabilities included with per app plans
+
+A Power Apps per app plan assignment doesn't give users the ability to create or own Power Automate flows that use premium features. Creating and owning flows using premium features require assignment of a Power Apps per user or Power Automate per user license. This doesn't apply for flows associated to an app.
+
+To learn more, go to [Associate in context flows to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
 
 ## Multiplexing
 

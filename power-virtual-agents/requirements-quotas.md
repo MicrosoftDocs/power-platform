@@ -2,11 +2,12 @@
 title: "Rate limits for chatbots"
 description: "Rate limits determine how often messages can be sent to a chatbot"
 keywords: "PVA, quotas, rate limits, requests, restrictions"
-ms.date: 03/09/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: quotas, admin, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -45,7 +46,7 @@ These limits apply to the Power Virtual Agents web app and the Power Virtual Age
 | Trigger phrases | 200 per topic                          | 200 per topic                                                                                                           |
 | Skills          | 100 per bot                            | 100 per bot<sup>2</sup>                                                                                                 |
 
-<sup>1</sup> If you're approaching limits in Dataverse for Teams environments, you can [upgrade Dataverse for Teams](teams/admin-upgrade-dataverse-teams.md) to continue adding topics.
+<sup>1</sup> If you're approaching limits in Dataverse for Teams environments, you can [upgrade Dataverse for Teams](admin-upgrade-dataverse-teams.md) to continue adding topics.
 
 <sup>2</sup> You must have a [Power Virtual Agents standalone subscription](requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription) to use skills in a bot you've created in the Teams app. Skills are not available in the [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan).
 
@@ -66,7 +67,6 @@ The following table lists the services to which Power Virtual Agents connects. E
 
 Configure all [required services for Power Automate](/power-automate/ip-address-configuration#required-services), in addition to Power Virtual Agents, to use both together.
 
-<!-- best viewed/edited without wordwrap -->
 | Domains                            | Required | Protocols | Uses                                                                                                                                          |
 | ---------------------------------- | -------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | *.directline.botframework.com        | Yes      | HTTPS     | Access to Bot Framework Web Chat                                                                                                              |
@@ -77,6 +77,9 @@ Configure all [required services for Power Automate](/power-automate/ip-address-
 | bot-framework.azureedge.net        | Yes      | HTTPS     | Bot framework resources                                                                                                                       |
 | pa-guided.azureedge.net            | No       | HTTPS     | In-product guidance (recommended)                                                                                                             |
 | cci-prod-botdesigner.azureedge.net | Yes      | HTTPS     | Power Virtual Agents authoring experience                                                                                                     |
+
+
+
 
 ## IP addresses
 

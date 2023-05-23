@@ -1,10 +1,10 @@
 ---
 title: Block cookie replay attacks in Dataverse
 description: Learn how to use IP-based cookie binding to block session hijacking attacks in Dataverse.
-ms.date: 01/24/2023
+ms.date: 05/17/2023
 ms.topic: conceptual
 author: ritesp
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ms.author: ritesp
 ms.subservice: admin
 search.audienceType: 
@@ -14,7 +14,7 @@ search.audienceType:
 
 Prevent session hijacking exploits in Dataverse with IP address-based cookie binding. Let's say that a malicious user copies a valid session cookie from an authorized computer that has cookie IP binding enabled. The user then tries to use the cookie on a different computer to gain unauthorized access to Dataverse. In real time, Dataverse compares the IP address of the cookie's origin against the IP address of the computer making the request. If the two are different, the attempt is blocked, and an error message is shown.
 
-IP-based cookie binding is available in all environments across all tenants, including government clouds. You can enable this feature in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+IP-based cookie binding is available only for [Managed Environments](managed-environment-licensing.md) across all tenants, including government clouds. You can enable this feature in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 
 ## Enable IP address-based cookie binding

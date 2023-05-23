@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 04/12/2023
+ms.date: 05/10/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key (preview)
@@ -177,18 +177,6 @@ Register Power Platform as a resource provider. You only need to do this task on
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/) and go to **Subscription** > **Resource providers**.
 1. In the list of **Resource providers**, search for **Microsoft.PowerPlatform**, and **Register** it.
-
-### Enable Power Platform enterprise policies service
-
-1. Azure CLI is required on your local machine. [Download Azure CLI](https://aka.ms/InstallAzureCliWindows).
-1. Run the downloaded Azure cli.MSI.
-1. Download the ARMClient: [ARMClient/README.md projectkudu/ARMClient GitHub](https://github.com/projectkudu/ARMClient/blob/master/README.md).
-1. Start PowerShell and run the ARMClient to sign into your Azure subscription.
-   > [!NOTE]
-   > Depending on where you are running the command from, you could either use armclient.login from PowerShell, or armclient.azlogin from Azure CLI.
-1. Enable `enterprisePoliciesPreview` feature for your subscription. Replace {subscriptionId} with your *subscriptionId* number. More information: [Find your Azure subscription](/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription)
-
-   `PS C:\> ARMClient.exe POST https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Features/providers/Microsoft.PowerPlatform/features/enterprisePoliciesPreview/register?api-version=2014-08-01-preview`
 
 ## Create enterprise policy
 
@@ -386,6 +374,28 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 
 > [!NOTE]
 > During preview, there might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, submit a Microsoft Support request for help.
+
+## Environment database operations
+
+A customer tenant can have environments that are encrypted using the Microsoft managed key and environments that are encrypted with the customer managed key. To maintain data integrity and data protection, the following controls are available when managing environment database operations.
+
+- [Restore](backup-restore-environments.md) 
+   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer managed key. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Restore backup.](media/cmk-restore-backup.png "Restore backup")
+
+- [Copy](copy-environment.md)
+   The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer managed key. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Copy environment.](media/cmk-copy-environment.png "Copy environment")
+
+   > [!NOTE]
+   > If a Support Investigation environment was created to resolve support issue in a customer managed environment, the encryption key for the Support Investigation environment must be changed to customer managed key before the Copy environment operation can be performed. 
+
+- [Reset](sandbox-environments.md#reset-a-sandbox-environment)
+   The environment's encrypted data will be deleted including backups. After the environment is reset, the environment encryption will revert back to the Microsoft managed key. 
 
 ## Next steps
 

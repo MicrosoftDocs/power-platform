@@ -1,24 +1,18 @@
 ---
-title: "Regional settings and data locations (contains video)"
+title: Regional settings and data locations (contains video)
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
-ms.date: 7/20/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
-ms.custom: "multi-geo, gdpr, ce06102020"
+ms.custom: "multi-geo, ce06102020"
 ---
 
 # Regional settings and data locations for organizations using Power Virtual Agents
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](data-location.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/data-location-teams.md)
 
 Power Virtual Agents supports multiple globalization scenarios, and lets you choose where you want your data to live.
 
@@ -46,9 +40,11 @@ Power Virtual Agents supports the following display formatting locales:
 
 For example, if the user's browser locale setting is _en-GB_, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is _en-US_, the same date equates to **February 3**.
 
-## Data locations
+# [Web app](#tab/web)
 
 Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as "regions") listed here. You can create a bot in your tenant's location by default, or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
+
+### Data locations
 
 Microsoft might replicate customer data to other regions available within the same geography for data durability.
 
@@ -74,7 +70,7 @@ Data will be stored in the United States if a bot author's tenant location isn't
 | United Kingdom                    | UK South (London), UK West (Cardiff, Durham)                                                                                                                                              |
 | United States                     | East US (Virginia), South Central US (Texas), West US 2 (Washington)                                                                                                         |
 
-## Customer data
+### Customer data
 
 Microsoft won't transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when:
 
@@ -110,7 +106,17 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
 
   - [Dynamics 365 Customer Service Insights Topic suggestion](advanced-create-topics-from-csi.md), Topic suggestions from Customer Service Insights are automated into Power Virtual Agents with a single click. Data might go to a bot in a different geographic region than the workspace region in Customer Service Insights.
 
-## See also
+# [Teams](#tab/teams)
+
+Microsoft Teams supports a larger set of languages than the Web app. If the selected language for Microsoft Teams is not supported by Power Virtual Agents, the displayed language will be en-US.
+
+### Data locations
+
+Power Virtual Agents in Teams can be created in the [supported data locations](data-location.md). You can create a bot if your tenant's location is supported, or you can use the Power Virtual Agents web app by choosing the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
+
+---
+
+## Related topics
 
 - [Language support](authoring-language-support.md)
 

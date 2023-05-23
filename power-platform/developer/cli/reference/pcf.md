@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 3/13/2023
+ms.date: 5/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -106,6 +106,12 @@ Customization prefix value for the Dataverse solution publisher
 #### `--force-import` `-f`
 
 Force a full update of the control
+
+This parameter requires no value. It is a switch.
+
+#### `--interactive` `-i`
+
+Indicates that actions in the build are allowed to interact with the user. Do not use this argument in an automated scenario where interactivity is not expected.
 
 This parameter requires no value. It is a switch.
 

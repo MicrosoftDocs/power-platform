@@ -2,11 +2,12 @@
 title: "Create and use entities (contains video)"
 description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
 keywords: "PVA"
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: authoring, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -14,28 +15,24 @@ ms.collection: virtual-agent
 
 # Use entities and slot filling in Power Virtual Agents bots
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-entities-slot-filling.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-entities-slot-filling-teams.md)
-
 A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working, even if that exact phrase isn't listed as a trigger phrase.
 
-One fundamental aspect of natural language understanding is to identify _entities_ in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name.
+One fundamental aspect of natural language understanding is to identify _entities_ in a user dialog. Watch the video to get started with entities.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mTUN]
 >
+
+An entity can be thought of as a unit of information that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name. With the knowledge granted by entities, a bot can smartly recognize the relevant information from a user input and save it for later use.
+
 
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Prebuilt entities
+
+Entities in chatbots let you store information in similar groups.
 
 Out of the box, Power Virtual Agents comes with a set of prebuilt entities, which represent the most commonly used stereotype information in real-world dialogs, such as age, colors, numbers, and names.
 

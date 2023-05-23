@@ -3,7 +3,7 @@ title: "Special system users and application users"
 description: "Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose." 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 05/09/2023
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -65,6 +65,7 @@ Most of these users are hidden from user views but they can be found by using th
 | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
 | Dynamics365 SalesForecasting | Dynamics365SalesForecasting<br />@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |
 | # Omnichannel | Ominichannel@onmicrosoft.com | To perform data integration between Omnichannel for Customer Service and Dataverse | System admin    |
+| # PowerAppsRPRole | PowerAppsRPRole@onmicrosoft.com | To allow Power Apps to integrate with Dataverse | PowerAppsRPRole |
 | # Flow-RP | Flow-RP@onmicrosoft.com | To allow Power Automate to integrate with Dataverse | Flow-RP Role, Service Reader |
 | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\><br />@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service  |
 | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework  |
@@ -93,7 +94,7 @@ Most of these users are hidden from user views but they can be found by using th
 ## The purpose of the application users?
 
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
-- Since these are built-in user accounts, they can't be updated. The security role that is assigned to these accounts cannot be updated either. This is to prevent any service outages.  
+- Since these are built-in user accounts, they shouldn't be updated. The security roles that are assigned to these accounts shouldn't be updated either. This is to prevent any service outages.  
 - These users do not consume any service licenses.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

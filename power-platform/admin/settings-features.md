@@ -4,11 +4,13 @@ description: Manage feature settings to adjust how features appear and function 
 author: KumarVivek
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2023
+ms.date: 05/16/2023
 ms.subservice: admin
-ms.author: kvivek 
+ms.author: kvivek
+ms.reviewer: sericks
 contributors:
     - ProfessorKendrick
+    - jasongre
 search.audienceType: 
   - admin
 ---
@@ -56,7 +58,6 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**Advanced find options**||  
 > |Modern advanced find in model-driven apps|Default: Off. If **On**, legacy advanced find will be replaced with a modern experience that has enhanced view management capabilities like searching on views and the ability to share, hide, and delete personal views. More information: [Advanced find in model-driven apps](/powerapps/user/advanced-find). This setting only appears if you have enabled 2022 Release Wave 1. |  
 > |Allow users to hide system views|Default: Off. If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. More information: [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you have enabled 2022 Release Wave 1.|
-> |Show advanced lookup in lookup fields within Edit filters|Default: Off. If **On**, users see **Advanced lookup**, an option to see more fields and search for records within a specific view, when looking up a value as part of a condition in Edit filters panel in all model-driven apps.|
 > |Show co-presence of colleagues on forms | Default: Off. Turn **On**, to allow users to see each others presence status on a form when they're working on the same record. For more information see, [Collaborate with others in model-driven apps](/powerapps/user/collaboration).  |
 > | **Activities**   | Default: Off. Select **On** to limit the number of activities showing up in the **New Activity** dropdown list to activities that are relevant to the model-driven app. |
 > |**Asynchronous merge** | |
@@ -87,5 +88,6 @@ Make sure you have the System Administrator or System Customizer security role o
 > | **Power Apps Ideas for Canvas Apps** | |
 > | Share ideas query data to help improve ideas results. | Default: Off. To help Microsoft improve Power Apps Ideas, you can share your ideas query data with Microsoft. More information: [Power Apps Ideas (preview)](/power-apps/maker/canvas-apps/power-apps-ideas).
 > | **Create new canvas apps as Dataverse solutions (preview)**  | Default: Off. Set to **On** to add all newly created canvas apps to the default environment solution.  More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) |
+> | **Data Validation**  | Default: Off. When **On**, enables smart data validation for certain columns, such as text columns using the email format. More information: [Address validation for email columns](/power-apps/maker/data-platform/data-validation-email-column) |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
