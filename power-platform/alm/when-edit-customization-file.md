@@ -47,7 +47,7 @@ The customizations.xml file that is exported as part of an unmanaged solution ca
   
 ## Unsupported tasks
 
- Defining any other solution components by editing the exported customizations.xml file isn't supported. Other solution components include, *but isn't limited to*, the following:  
+ Defining any other solution components by editing the exported customizations.xml file isn't supported. Other solution components include, *but aren't limited to*, the following:  
   
 - Entities  
 - Attributes  
