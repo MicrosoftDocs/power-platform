@@ -271,11 +271,6 @@
     },
     //Preview redirects
     {
-      "source_path": "power-virtual-agents/preview/advanced-power-fx.md",
-      "redirect_url": "advanced-power-fx.md",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "power-virtual-agents/preview/admin-data-loss-prevention.md",
       "redirect_url": "admin-data-loss-prevention.md",
       "redirect_document_id": "false"
@@ -503,6 +498,11 @@
     {
       "source_path": "power-virtual-agents/preview/requirements-licensing-gcc.md",
       "redirect_url": "requirements-licensing-gcc.md",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/advanced-power-fx.md",
+      "redirect_url": "advanced-power-fx.md",
       "redirect_document_id": "false"
     },
     //Teams redirects
