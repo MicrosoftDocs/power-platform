@@ -26,6 +26,11 @@ highlightedContent:
       url: ./fundamentals-what-is-power-virtual-agents.md
 
     # Card
+    - title: Migrate to the unified canvas
+      itemType: whats-new
+      url: ./unified-authoring-conversion.md
+
+    # Card
     - title: Build bots fast with generative AI
       itemType: whats-new
       url: ./nlu-gpt-overview.md
@@ -63,6 +68,10 @@ conceptualContent:
         - text: Web app
           url: ./fundamentals-what-is-power-virtual-agents-portal.md
           itemType: overview
+        - text: Use the unified canvas to build bots
+          url: ./unified-authoring-conversion.md
+          itemType: overview
+
 
     - title: Create bots with generative AI
       links:

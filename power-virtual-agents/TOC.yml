@@ -12,8 +12,8 @@
       href: requirements-quotas.md
     - name: What's new in Power Virtual Agents
       items:
-        - name: Overview of what's new
-          href: overview-preview.md
+        - name: Migrate to the unified canvas
+          href: unified-authoring-conversion.md
         - name: Quickstart for what's new
           href: quickstart-preview.md
         - name: Key concepts for Composer users
