@@ -57,7 +57,7 @@ Next, switch back to Power Virtual Agents. Changing back to the NLU environment 
 :::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Power Virtual Agents NLU." border="false"::: 
 
 Now that you’ve completed preparing your environment, you’re ready to map intents and entities to CLU model data. 
-## Map CLU intents and entities to Power Virtual Agents pre-built data types
+## Map CLU intents and entities to Power Virtual Agents prebuilt data types
 
 You create a new Power Virtual Agents bot by mapping existing topics to CLU intents. You can manually map intents and entities, or for bulk mapping, see [Use the Bulk tool wizard](#use-the-bulk-tool-wizard).
 ### Manually map intents:
@@ -95,7 +95,7 @@ You create a new Power Virtual Agents bot by mapping existing topics to CLU inte
 1.	In the **New entity** pane, Add a *name, description* (optional), and *Data Type* for your entity.
     :::image type="content" source="media/advanced-clu-integration/clu-image12.png" alt-text="Type in name, description, and data type for your new entity." border="false"::: 
  
-1.	To access CLU pre-built entities, from the Data Type drop-down menu, select **From sample data**, and choose one of the CLU pre-built JSON code snippets.  
+1.	To access CLU prebuilt entities, from the Data Type drop-down menu, select **From sample data**, and choose one of the CLU prebuilt JSON code snippets.  
 1.	(Optional) If you want to import JSON schema from a sample file, choose **Get schema from sample JSON** to access the external file. 
 
 ##  Use the Bulk tool wizard

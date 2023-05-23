@@ -2,11 +2,12 @@
 title: "Analyze topic performance"
 description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
 keywords: "PVA"
-ms.date: 01/23/2023
+ms.date: 
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewer: mboninco
 ms.custom: analysis, ceX
 ms.service: power-virtual-agents
@@ -15,15 +16,6 @@ ms.collection: virtual-agent
 
 # Analyze topic usage in Power Virtual Agents
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](analytics-topic-details.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-topic-details-teams.md)
-
 The topic analytics pane provides a view into the performance of an individual topic and how it can be improved.
 
 To display the topic analytics pane, select the **Detail** link for the topic in one of the following charts on the [Summary](analytics-summary.md) or [Customer Satisfaction](analytics-CSAT.md) tab:
@@ -31,7 +23,10 @@ To display the topic analytics pane, select the **Detail** link for the topic in
 - [Escalation rate drivers (Summary tab)](analytics-summary.md#escalation-rate-drivers-chart)
 - [Abandon rate drivers (Summary tab)](analytics-summary.md#abandon-rate-drivers-chart)
 - [Resolution rate drivers (Summary tab)](analytics-summary.md#resolution-rate-drivers-chart)
-- [Customer satisfaction drivers (Customer Satisfaction tab)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
+- [Customer satisfaction drivers (Customer Satisfaction tab)](analytics-CSAT.md)
+
+> [!IMPORTANT]
+> For Microsoft Teams, you need a license for [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/licensing-case-capacity) to access the topic details charts.
 
 Alternatively, open an individual topic from the [Topics page](authoring-create-edit-topics.md) and select **Analytics** at the top of the page.
 

@@ -26,6 +26,11 @@ highlightedContent:
       url: ./fundamentals-what-is-power-virtual-agents.md
 
     # Card
+    - title: Migrate to the unified canvas
+      itemType: whats-new
+      url: ./unified-authoring-conversion.md
+
+    # Card
     - title: Build bots fast with generative AI
       itemType: whats-new
       url: ./nlu-gpt-overview.md
@@ -54,18 +59,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 conceptualContent:
   items:
-    - title: Power Virtual Agents preview
-      links:
-        - text: Overview
-          url: ./preview/overview.md
-          itemType: overview
-        - text: Limitations
-          url: ./preview/limitations.md
-          itemType: overview
-        - text: Quickstart
-          url: ./preview/quickstart.md
-          itemType: quickstart
-
+  
     - title: Get started
       links:
         - text: Sign up for free
@@ -74,9 +68,10 @@ conceptualContent:
         - text: Web app
           url: ./fundamentals-what-is-power-virtual-agents-portal.md
           itemType: overview
-        - text: App in Microsoft Teams
-          url: ./teams/fundamentals-what-is-power-virtual-agents-teams.md
+        - text: Use the unified canvas to build bots
+          url: ./unified-authoring-conversion.md
           itemType: overview
+
 
     - title: Create bots with generative AI
       links:
@@ -96,13 +91,13 @@ conceptualContent:
     - title: Enhance and improve your bots
       links:
         - text: Use entities and slot filling
-          url: ./teams/advanced-entities-slot-filling-teams.md
+          url: ./advanced-entities-slot-filling.md
           itemType: overview
         - text: Use end-user authentication
           url: ./advanced-end-user-authentication.md
           itemType: overview
         - text: Use Microsoft Bot Framework Skills
-          url: ./teams/advanced-use-skills-teams.md
+          url: ./advanced-use-skills.md
           itemType: concept
 
     - title: Publish and integrate
