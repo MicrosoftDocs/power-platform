@@ -1,12 +1,13 @@
 ---
 title: "Review ISO, SOC, and HIPAA compliance"
 description: "Power Virtual Agents is compliant with a number of standards and is covered under HIPAA."
-ms.date: 5/13/2021
+ms.date: 03/24/2023
 ms.keywords: "PVA, ISO, SOC, certification, compliance"
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: "certification, ceX"
@@ -158,3 +159,5 @@ In 2007, the Spanish government enacted Law 11/2007, which established a legal f
 The goal of the framework is to build trust in the provision of electronic services, and ensure the access, integrity, availability, authenticity, confidentiality, traceability, and preservation of data, information, and services.
 
 [Learn more about ENS](/compliance/regulatory/offering-ens-spain).
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

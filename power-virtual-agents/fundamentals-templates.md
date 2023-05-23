@@ -2,11 +2,12 @@
 title: "Chatbot templates for Teams"
 description: "Use templates to quickly get up and running with Power Virtual Agents chatbots in Microsoft Teams."
 keywords: "PVA, teams, templates"
-ms.date: 9/21/2021
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: fundamentals, teams, ceX
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -16,16 +17,31 @@ searchScope:
 
 # Use pre-built chatbot templates in Microsoft Teams
 
-Select the version of Power Virtual Agents you're using here:
+> [!NOTE]
+> This topic applies to chatbots created in the Power Virtual Agents app in Microsoft Teams only. Templates are not currently supported for the Power Virtual Agents web app.
 
-> [!div class="op_single_selector"]
+Bots are great at helping your employees to self-serve human resources (HR), IT, and other internal employee functions by providing automated responses and taking meaningful actions. This increases an employee's efficiency and saves your organization money and time.
+
+Sometimes, however, it's hard to know where to start. You can use templates created by the Power Virtual Agents team to help you create and customize bots to your needs.
+
+## Employee frequently asked questions (FAQ) template
+
+The Employee FAQ chatbot template helps you easily create a bot to handle your employee's most common questions by adding content that matches your business's needs.
+
 >
-> - [Power Virtual Agents web app](fundamentals-templates.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/fundamentals-templates-teams.md)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFMe0]
+>
 
-> [!IMPORTANT]
-> This topic applies to chatbots created in the Power Virtual Agents app in Microsoft Teams. Templates are not currently supported for the Power Virtual Agents web app.
+The template comes with a built-in capability to log an employee's escalation request, notify a human expert, and allow them to quickly respond to the employee - all within Microsoft Teams.
 
-[See the Microsoft Teams version of this page for details on chatbot templates](teams/fundamentals-templates-teams.md).
+It also obtains employee feedback so you can make improvements to the bot over time.
+
+As it's built with Power Virtual Agents, it can easily be customized and extended to suit your needs with no developer and data science background required.
+
+Whether it's HR, IT or other internal employee functions, the Employee FAQ bot template is a great place to start on your bot-building journey.
+
+Download the bot template from GitHub:
+
+- [Employee FAQ chatbot template](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/Templates/Employee%20FAQ)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

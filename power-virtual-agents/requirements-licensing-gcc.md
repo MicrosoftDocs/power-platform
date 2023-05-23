@@ -2,11 +2,12 @@
 title: "Understand the US Government plans available"
 description: "This document lists the capabilities, requirements, and features for US Government plans for Power Virtual Agents."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 12/02/2021
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: "licensing, admin, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -96,7 +97,7 @@ Power Virtual Agents support and service engineering staff do not have standing 
 
 <a href="#AccRef1" id="AccFn1">1.</a> Applies only to personnel with temporary or standing access to customer content hosted in Power Virtual Agents US Government (GCC and GCC High)
 
-## Certifications and accreditations
+## Certification and accreditation
 
 Power Virtual Agents US Government plans are designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level.  FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can peruse these artifacts in support of their review to grant an Authority to Operate (ATO).
 
@@ -193,7 +194,7 @@ Some of the features available in the commercial version of Power Virtual Agents
 | Feature or capability                                                                                           | Available in GCC | Available in GCC High |
 | --------------------------------------------------------------------------------------------------------------- | ---------------- | --------------------- |
 | [Power Virtual Agents Analytics](analytics-overview.md)&nbsp;<a id="LimsRef1" href="#LimsFn1"><sup>1</sup></a>  | &#X2716;</br>No  | &#X2716;</br>No       |
-| [Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md) | &#X2716;</br>No  | &#X2716;</br>No       |
+| [Power Virtual Agents Microsoft Teams app experience](fundamentals-what-is-power-virtual-agents.md) | &#X2716;</br>No  | &#X2716;</br>No       |
 | [Teams channel in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md)                  | &#X2714;</br>Yes | &#X2716;</br>No       |
 | [Transfer to agents](configuration-hand-off-omnichannel.md)                                                     | &#X2714;</br>Yes | &#X2716;</br>No       |
 
@@ -204,3 +205,6 @@ Some of the features available in the commercial version of Power Virtual Agents
 Having a problem with your service? You can create a support request to get the issue resolved.
 
 More information: [Contact Technical Support](/power-platform/admin/get-help-support)
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
+

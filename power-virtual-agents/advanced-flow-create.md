@@ -2,11 +2,12 @@
 title: Create a flow
 description: Create a Power Automate flow that fetches a weather forecast for use with a bot.
 keywords: "PVA, flow, automate"
-ms.date: 07/28/2022
+ms.date: 03/24/2023
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring
 ms.collection: virtual-agent
@@ -188,7 +189,7 @@ When you create a flow from Power Virtual Agents, [asynchronous responses](/azur
 
     :::image type="content" source="media/advanced-flow-create/async2.png" alt-text="Screenshot of the Asynchronous Response toggle.":::
 
-## Next steps
+## Related topics
 
 [Call the flow as an action in your bot](advanced-use-flow.md).
 
