@@ -1,7 +1,7 @@
 {
   "redirection_files": [
         ".openpublishing.redirection.json",
-        "power-virtual-agents/.openpublishing.redirection-power-virtual-agents.json"
+        ".openpublishing.redirection.power-virtual-agents.json"
     ],  
   "docsets_to_publish": [
     {
