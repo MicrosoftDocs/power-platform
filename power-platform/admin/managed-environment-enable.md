@@ -77,7 +77,7 @@ Here's an example PowerShell script that calls the API to set the Managed Enviro
 ```powershell
 $UpdatedGovernanceConfiguration = [pscustomobject]@{
     protectionLevel = "Basic"
- }
+}
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentID> -UpdatedGovernanceConfiguration $UpdatedGovernanceConfiguration
 ```
 
