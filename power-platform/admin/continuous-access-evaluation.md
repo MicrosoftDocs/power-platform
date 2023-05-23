@@ -63,4 +63,6 @@ Continuous access evaluation-enabled clients for Power Platform support a claim 
 
 For clients that don't support continuous access evaluation, the access token lifetime remains the same as configured or set to the default value.
 
+To enable continuous access evaluation on your Power Platform Dataverse environment, reach out to your Microsoft contact  or Microsoft Support.
+
  
