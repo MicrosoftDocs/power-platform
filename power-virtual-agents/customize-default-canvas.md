@@ -89,7 +89,7 @@ First, you need to configure where you're deploying your bot canvas.
     <html>
     <head>
         <title>Contoso Sample Web Chat</title> 
-        <!-- This styling is for the Web Chat demonstration purposes. It is recommended that style is moved to separate file for organization in larger projects -->
+        <!-- This styling is for the Web Chat demonstration purposes. It is recommended that style is moved to a separate file for organization in larger projects -->
         <style>
             html, body {
                 height: 100%;

@@ -137,7 +137,6 @@ When a bot's authentication setting can't control who can chat with it, if you s
 
 The following are all the fields you may see when you're configuring manual authentication. Which fields you'll see depends on your choice for service provider.
 
-<!-- table best viewed and edited without wordwrap -->
 | Field name                              | Description                                                                                                                                                                                                                                    |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization URL template              | The URL template for authorization, as defined by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`                                                                                        |

@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This article discusses adding cognitive language understanding (CLU) entities to Power Virtual Agents bots. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). In most cases, you can use [Power Virtual Agent Prebuilt Entities](advanced-entities-slot-filling.md) for your projects, but should you want to leverage CLU entity types with custom JSON resolutions, the following schema examples are provided as a referernce. 
+This article discusses adding cognitive language understanding (CLU) entities to Power Virtual Agents bots. The entities are composed of the following boolean, string, and number data types. For more information, see [Data types](/power-platform/power-fx/data-types). In most cases, you can use [Power Virtual Agent Prebuilt Entities](advanced-entities-slot-filling.md) for your projects, but should you want to use CLU entity types with custom JSON resolutions, the following schema examples are provided as a reference. 
 
 To set up your environment for mapping CLU entities to Power Virtual Agents bots, see [Get started with language understanding](advanced-clu-get-started.md).
 
@@ -82,9 +82,9 @@ Bot creators can use sample JSON code to register [entities](advanced-entities-s
 }
 ```
 ## CLU dateTime entity types
-DateTime is a special entity type that will change the returned resolution based on the types of user input that are received. 
+DateTime is a special entity type that changes the returned resolution based on the types of user input that are received. 
 
-The following examples demonstate how to configure entities for different types of date and time utterances. You can create your own mappings, based on these examples, depending on the type of result you expect your bot users to provide.
+The following examples demonstrate how to configure entities for different types of date and time utterances. You can create your own mappings, based on these examples, depending on the type of result you expect your bot users to provide.
 
 ### Date 
 Example input: *Jan 1st, 1995*
@@ -97,7 +97,7 @@ Example input: *Jan 1st, 1995*
 ```
 
 ### DateTime (year)
-Example input : *I'll be back on April 12th*
+Example input: *I'll be back on April 12th*
 ```json
 {
     "dateTimeSubKind": "Date",
@@ -107,7 +107,7 @@ Example input : *I'll be back on April 12th*
 ```
 
 ### DatetimeRange (duration)
-Example input : *I'll be out between 3 and 12 of Sept.* 
+Example input: *I'm out between 3 and 12 of Sept.* 
 ```json
       {
        "resolutionKind": "TemporalSpan",
@@ -120,7 +120,7 @@ Example input : *I'll be out between 3 and 12 of Sept.*
 ```
 
 ### DatetimeRange (set)
-Example input : *Every Tuesday.* 
+Example input: *Every Tuesday.* 
 
 ```json
 { 

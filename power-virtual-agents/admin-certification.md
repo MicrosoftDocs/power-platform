@@ -64,7 +64,7 @@ FedRAMP was established to provide a standardized approach for assessing, monito
 
 Microsoft's government cloud services meet the requirements of FedRAMP.
 
-By deploying protected services including Azure Government, Office 365 US Government, and Dynamics 365 Government, federal and defense agencies can leverage a rich array of compliant services.
+By deploying protected services including Azure Government, Office 365 US Government, and Dynamics 365 Government, federal and defense agencies can use a rich array of compliant services.
 
 [Learn more about FedRAMP](/compliance/regulatory/offering-fedramp).
 

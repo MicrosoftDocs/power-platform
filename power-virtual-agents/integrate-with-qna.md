@@ -12,7 +12,7 @@ ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-<!-- NOTE: this article was purposely removed from the TOC but kept searchable for historical purposes -->
+<!-- NOTE: this article was purposely removed from the TOC but kept for historical purposes -->
 
 # Integrate with QnA Maker
 

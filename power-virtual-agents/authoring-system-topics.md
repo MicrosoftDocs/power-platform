@@ -101,7 +101,6 @@ The table below lists all available system topics, their intended purpose, and a
 
 To see all trigger phrases for a system topic, [open the topic to view them in the trigger phrases pane](authoring-create-edit-topics.md).
 
-<!-- best viewed without wordwrap -->
 | System topic        | Trigger phrases                                      | Purpose                                                                                                                                                                         |
 | ------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Greeting            | "hey", "hello", "good morning"                       | Greet the user when a chat begins.                                                                                                                                              |

@@ -54,7 +54,6 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md), wh
 > [!IMPORTANT]
 > The term _dialog_ is used in some error messages when referring to a _topic_.
 
-<!-- table best viewed and edited without word wrap -->
 
 | Error code                                                        | Description                                                         |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -86,7 +85,6 @@ Common problems include:
 
 #### DataLossPreventionViolation
 
-<!-- NOTE: this error message is wrong, as the UI has been changed from "Manage" to "Settings". Keeping it for now since it's what the product shows users. -->
 **Error message:** "This environment requires users to sign in before they can use the bot. Go to Manage > Security > Authentication and select the option to require users to sign in."
 
 **Resolution:**
@@ -157,7 +155,6 @@ Common problems include:
 
 ### Error List
 
-<!-- Best viewed and edited without word wrap -->
 | Error    | Bot response                                                                                                                                                          | Resolution                                                                                                                                                                                                                                                                             |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **2000** | "The user is trapped in an infinite loop. Check to make sure `{Topic Name}` reaches a logical conclusion."                                                            | Make sure the topic ends properly, or links to other topics that end properly, [such as the **Escalate** system topic](advanced-hand-off.md).                                                                                                                                          |
@@ -199,7 +196,6 @@ Common problems include:
 
 ### Error List
 
-<!-- Best viewed and edited without word wrap -->
 | Error    | Bot response                   | Resolution                                                                                  |
 | -------- | ------------------------------ | ------------------------------------------------------------------------------------------- |
 | **2100** | "The user is typing too fast." | Interactions with the bot are rate limited to mitigate spam. Try again while typing slower. |

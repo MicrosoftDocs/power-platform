@@ -29,9 +29,8 @@ By default, topics use the **Phrases** trigger, meaning they are triggered when 
 The following trigger types exist for determining when a topic should be fired.
 
 > [!TIP]
-> When a message is received from a user to a bot, the payload on which it arrives is called an [Activity](https://learn.microsoft.com/javascript/api/botframework-schema/activity?view=botbuilder-ts-latest), where the type of Activity is a ***message***. Bots can also receive activities of other types, usually sent by the channel being used to let the bot know that something has happened or changed. For example, Microsoft Teams sends hidden activities of type ***invoke***, which let the bot know that the Teams user did something, such as interacting with a Message Extension. Many of the available triggers discussed in this allow you to intercept and handle activities of different types.
+> When a message is received from a user to a bot, the payload on which it arrives is called an [Activity](https://learn.microsoft.com/javascript/api/botframework-schema/activity?view=botbuilder-ts-latest&preserve-view=true), where the type of Activity is a ***message***. Bots can also receive activities of other types, usually sent by the channel being used to let the bot know that something has happened or changed. For example, Microsoft Teams sends hidden activities of type ***invoke***, which let the bot know that the Teams user did something, such as interacting with a Message Extension. Many of the available triggers discussed in this allow you to intercept and handle activities of different types.
 
-<!-- best viewed without wordwrap -->
 | Type     | Description                                                                                                                                |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | Phrases   | Topic is triggered when one or more of the trigger phrases match with the incoming message from a user |

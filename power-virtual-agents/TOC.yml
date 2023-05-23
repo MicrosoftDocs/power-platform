@@ -22,7 +22,7 @@
   items:
     - name: Get access to Power Virtual Agents
       href: requirements-licensing-subscriptions.md
-    - name: Use pre-built chatbot templates in Microsoft Teams
+    - name: Use prebuilt chatbot templates in Microsoft Teams
       href: fundamentals-templates.md
     - name: Quickstart - Create and deploy a chatbot
       href: fundamentals-get-started.md

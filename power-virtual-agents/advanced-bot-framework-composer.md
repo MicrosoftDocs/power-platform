@@ -56,7 +56,6 @@ Composer uses a different set of terms to describe similar concepts used in Powe
 
 The following Composer features aren't supported with Power Virtual Agents:
 
-<!-- best viewed/edited without wordwrap -->
 | Unsupported feature                             | Additional information                                                                              |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | LUIS Recognizer                                 | Default Recognizer in Composer is set to Power Virtual Agents Natural Language Understanding (NLU). |
