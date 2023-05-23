@@ -2,11 +2,12 @@
 title: "Add a chatbot to Azure Bot Service channels"
 description: "Connect your bot to existing Azure Bot Service framework channels (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewer: jameslew
 ms.custom: "publication, azure, ceX"
 ms.service: power-virtual-agents

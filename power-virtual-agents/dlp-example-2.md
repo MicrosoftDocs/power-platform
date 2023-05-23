@@ -2,21 +2,18 @@
 title: "Use DLP to block HTTP requests in chatbots"
 description: "Block HTTP requests from being used by Power Virtual Agents chatbots."
 keywords: "PVA"
-ms.date: 10/07/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: admin, dlp
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-
-
-# Data loss prevention example 2 - Block HTTP requests from Power Virtual Agents chatbots (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+# Data loss prevention example 2 - Block HTTP requests from Power Virtual Agents chatbots
 
 Bot makers in your organization can [extend their bots with Bot Framework Composer](advanced-bot-framework-composer.md) and use HTTP requests.
 
