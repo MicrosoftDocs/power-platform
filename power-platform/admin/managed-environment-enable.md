@@ -51,6 +51,23 @@ Use the following settings to increase visibility and control for the selected e
 | **[Data policies](managed-environment-data-policies.md)** | Help safeguard your organizational data by limiting the connectors available.|
 | See active data policies for this environment | View the policies that define the consumer connectors that specific data can be shared with. |
 
+## Enable Managed Environments using PowerShell
+
+Admins can use PowerShell to enable the Environments property for an environment.
+
+Here's an example PowerShell script that calls the API to set the enable Managed Environments:
+
+```powershell
+$GovernanceConfiguration = [pscustomobject] @{ 
+    protectionLevel = "Standard" 
+    settings = [pscustomobject]@{ 
+        extendedSettings = @{} 
+    }
+} 
+
+Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentID> -UpdatedGovernanceConfiguration $GovernanceConfiguration 
+```
+
 ## Disable Managed Environments using PowerShell
 
 Admins can use PowerShell to remove the Managed Environments property on an environment. Before disabling Managed Environments, the administrator must ensure that none of the Managed Environments capabilities are in use.
