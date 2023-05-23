@@ -108,7 +108,7 @@ When testing, it is critical to be able to test variables within the topic proce
 
 Fusion teams are enabled in Power Virtual Agents with the capabilities to author conversational experiences that use both the graphical user interface (GUI) authoring tool, leveraging rich responses, adaptive cards and more that can be utilized by everyone, together with developers who can choose to switch to the code view within a topic to directly build or edit the YAML that is referenced by the interface in real time. 
 
-:::image type="content" source="media/codeview.png" alt-text="Screenshot of the code view of YAML in Power Virtual Agents":::
+:::image type="content" source="media/unified-authoring-conversion/codeview.png" alt-text="Screenshot of the code view of YAML in Power Virtual Agents":::
 
 ### Events 
 
@@ -142,7 +142,7 @@ With any application, it is vital that companies ensure there is enough time wit
 
 There are a range of resources available to assist with business application technology deployments, and specifically best practices around conversational projects using Power Virtual Agents. Check out the links below to learn more:
 
-- [Success By Design](dynamics365/fasttrack/success-by-design-overview)
+- [Success By Design](/dynamics365/fasttrack/success-by-design-overview)
 
 - [PowerCAT Power Virtual Agents Playbook](https://powervirtualagents.microsoft.com/en-us/blog/announcing-power-virtual-agents-customer-playbook/)
 
