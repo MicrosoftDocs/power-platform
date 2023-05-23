@@ -42,13 +42,13 @@ This table summarizes knowledge resources Generative Answers can use to boost co
 | --- | --- | --- | --- | --- |
 | Bing Search | External | Searches the query input on Bing; returning results only from provided websites | 4 public URLs (for example, microsoft.com) | None |
 | [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to Power Virtual Agents | More than 4 urls (Bing Custom Search also provides other functionality) | None |
-| Sharepoint | Internal | Connects to a SharePoint URL, uses GraphSearch to return results | 4 URLs | Azure Active Directory authentication |
-| OneDrive for business | Internal | Connects to a OneDrive for Business url, uses GraphSearch to return results | 4 URLs | Azure Active Directory authentication |
-| [Custom data] | Internal | Uses a JSON code block to define the URLs and content to use | One variable, populated with the JSON results to be summarized | ... |
+| Sharepoint | Internal | Connects to a SharePoint URL, uses GraphSearch to return results | 4 URLs | Bot user Azure Active Directory authentication |
+| OneDrive for business | Internal | Connects to a OneDrive for Business url, uses GraphSearch to return results | 4 URLs | Bot user Azure Active Directory authentication |
+| [Custom data](#custom-data-source) | Internal | Uses a JSON code block to define the URLs and content to use | One variable, populated with the JSON results to be summarized | Dependent on source |
 
 As the table notes, some features require user authentication to be configured for your bot. In the cases of SharePoint and OneDrive for Business, authentication is done using Azure Active Directory. User authentication for information sources also means that when a specific user asks a question of the bot, the bot will only surface content that specific user has access to read on SharePoint or OneDrive for Business.
 
-### Use your own custom data with generative answers
+### Custom data source
 
 In some cases, your data may not exist in one of the supported data sources. However, you can provide your own data - possibly by accessing one of your own preferred data stores through Power Automate Flows, and then formatting the results into a JSON object that can be passed as a variable or expression to generate answers.
 
@@ -64,6 +64,8 @@ The custom data field takes a JSON array of objects representing a set of Conten
   Content: "This is a second bit of sample text that can be replaced with content of your choice"
 }]
 ```
+Answers will be generated from the value defined in `Content:`.
+
 
 ## Create generative answers
 
