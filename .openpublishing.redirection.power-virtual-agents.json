@@ -269,7 +269,6 @@
       "redirect_url": "../index",
       "redirect_document_id": "false"
     },
-    //Preview redirects
     {
       "source_path": "power-virtual-agents/preview/admin-data-loss-prevention.md",
       "redirect_url": "admin-data-loss-prevention.md",
@@ -501,15 +500,19 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "power-virtual-agents/preview/advanced-power-fx.md",
-      "redirect_url": "overview.md",
-      "redirect_document_id": "false"
-    },
-    //Teams redirects
-    {
       "source_path": "power-virtual-agents/teams/configuration-security-teams.md",
       "redirect_url": "configuration-end-user-authentication-teams.md",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/preview/advanced-power-fx.md",
+      "redirect_url": "advanced-power-fx.md",
+      "redirect_document_id": "true"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/admin-upgrade-dataverse-teams.md",
+      "redirect_url": "admin-upgrade-dataverse-teams.md",
+      "redirect_document_id":  "true"
     },
     {
       "source_path": "power-virtual-agents/teams/admin-share-bots-teams.md",
@@ -724,11 +727,6 @@
     {
       "source_path": "power-virtual-agents/teams/requirements-licensing-teams.md",
       "redirect_url": "requirements-licensing.md",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/teams/admin-upgrade-dataverse-teams.md",
-      "redirect_url": "admin-upgrade-dataverse-teams.md",
       "redirect_document_id": "false"
     }
   ]
