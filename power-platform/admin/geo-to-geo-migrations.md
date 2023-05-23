@@ -10,11 +10,9 @@ ms.author: matgupta
 ms.reviewer: sericks
 contributors: 
     - ProfessorKendrick
+    - - LaurentPepin
 search.audienceType: 
   - admin
-contributors:
-- LaurentPepin
-
 ---
 
 # Geo to geo migrations
@@ -145,7 +143,7 @@ The Dynamics 365 Marketing app does not support geo migration, due to component 
 
 Before the migration: 
 
-1. Follow the [Uninstall Dynamics 365 Marketing](https://learn.microsoft.com/en-us/dynamics365/marketing/uninstall-marketing) guide to uninstall Marketing app from the environment.
+1. Follow the [Uninstall Dynamics 365 Marketing](/dynamics365/marketing/uninstall-marketing) guide to uninstall Marketing app from the environment.
 
 
 ## How the move works  
