@@ -8,18 +8,16 @@ brand: power-virtual-agents
 metadata:
   title: Microsoft Power Virtual Agents documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: See how Power Virtual Agents can be used to build powerful AI-driven chatbots. # Required; article description that is displayed in search results. < 160 chars.
-  
+
   ms.topic: hub-page # Required
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
   ms.author: iawilt #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/24/2022 #Required; mm/dd/yyyy format.
+  ms.date: 05/22/2023 #Required; mm/dd/yyyy format.
   ms.custom: intro-internal
   hide_bc: false
 
-
 highlightedContent:
-
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
+  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
 
   items:
     # Card
@@ -54,7 +52,7 @@ highlightedContent:
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-conceptualContent:  
+conceptualContent:
   items:
     - title: Power Virtual Agents preview
       links:
@@ -72,14 +70,14 @@ conceptualContent:
       links:
         - text: Sign up for free
           url: ./sign-up-individual.md
-          itemType: get-started        
+          itemType: get-started
         - text: Web app
           url: ./fundamentals-what-is-power-virtual-agents-portal.md
           itemType: overview
         - text: App in Microsoft Teams
           url: ./teams/fundamentals-what-is-power-virtual-agents-teams.md
-          itemType: overview      
-    
+          itemType: overview
+
     - title: Create bots with generative AI
       links:
         - text: Use generative AI to build bots fast
@@ -107,7 +105,6 @@ conceptualContent:
           url: ./teams/advanced-use-skills-teams.md
           itemType: concept
 
-
     - title: Publish and integrate
       links:
         - text: Configure demo and live sites
@@ -130,7 +127,7 @@ conceptualContent:
           itemType: overview
         - text: Analyze topic usage
           url: ./analytics-topic-details.md
-          itemType: overview     
+          itemType: overview
 
     - title: Administer and manage
       links:
@@ -142,8 +139,8 @@ conceptualContent:
           itemType: overview
         - text: Export and import bots using solutions
           url: ./authoring-export-import-bots.md
-          itemType: how-to-guide     
-    
+          itemType: how-to-guide
+
     - title: Support and licensing
       links:
         - text: Community help and support
@@ -151,16 +148,19 @@ conceptualContent:
           itemType: overview
         - text: Licensing
           url: ./requirements-licensing-subscriptions.md
-          itemType: overview 
-    
+          itemType: overview
 
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Other Microsoft Power Platform products # < 60 chars (optional)
+    - title: Related content # < 60 chars (optional)
     - items:
+        # Card
+        - title: Power Platform
+          summary: One-stop learning resource for Power Platform applications and features including admin, developer, and guidance documentation.
+          url: /power-platform
         # Card
         - title: Power Apps
           summary: Quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
@@ -177,11 +177,11 @@ additionalContent:
 
     - title: See also
       items:
-      # Card
-      - title: Dynamics 365
-        summary: "The next generation of CRM and ERP applications"
-        url: /dynamics365/
-      # Card
-      - title: Microsoft Azure
-        summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
-        url: /azure
+        # Card
+        - title: Dynamics 365
+          summary: "The next generation of CRM and ERP applications"
+          url: /dynamics365/
+        # Card
+        - title: Microsoft Azure
+          summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
+          url: /azure
