@@ -11,15 +11,13 @@ ms.reviewer: iawilt
 
 # Topics in Power Virtual Agents
 
-[!INCLUDE [Preview disclaimer](includes/preview-note-guidance.md)]
-
 [Topics](/power-virtual-agents/authoring-fundamentals) are the core building blocks of a chatbot. Topics can be seen as the bot competencies: they define how a conversation dialog plays out. Topics are discrete conversation paths that, when used together, allow for users to have a conversation with a bot that feels natural and flows appropriately.
 
 To author topics, makers can:
 
 - Create [new topics](/power-virtual-agents/preview/authoring-create-edit-topics) from scratch.
 
-- Create new topics using [Copilot (preview)](/power-virtual-agents/nlu-authoring): Copilot lets you create and iterate on topics by describing what you want and having AI build it for you.
+- Create new topics using [Copilot in Power Virtual Agents](/power-virtual-agents/nlu-authoring): Copilot lets you create and iterate on topics by describing what you want and having AI build it for you.
 
 - Customize provided [templates](/power-virtual-agents/fundamentals-templates) and [samples](/power-virtual-agents/preview/authoring-template-topics).
 

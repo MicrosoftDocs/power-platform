@@ -11,7 +11,6 @@ ms.reviewer: iawilt
 
 # Topic authoring best practices in Power Virtual Agents
 
-[!INCLUDE [Preview disclaimer](includes/preview-note-guidance.md)]
 
 ## Create and organize topics in a way that's manageable and maintainable for your context
 

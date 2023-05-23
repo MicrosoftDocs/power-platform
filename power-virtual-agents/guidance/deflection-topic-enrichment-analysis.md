@@ -33,7 +33,7 @@ Of the four categories, the first and the second are immediately actionable. Bas
 
 ## Topic enrichment through out-of-the-box analytics
 
-Power Virtual Agents provides advanced AI capabilities out-of-the-box, to identify a list of suggested new topics, by enabling the [advanced AI features](/power-virtual-agents/advanced-ai-features) for [topic suggestion from chat transcripts (preview)](/power-virtual-agents/advanced-ai-features#topic-suggestion-from-chat-transcripts-preview), when the author doesn't want to enable the Fallback topic.
+Power Virtual Agents provides advanced AI capabilities out-of-the-box, to identify a list of suggested new topics, by enabling the [advanced AI features](/power-virtual-agents/advanced-ai-features) for [topic suggestion from chat transcripts](/power-virtual-agents/advanced-ai-features#topic-suggestion-from-chat-transcripts-preview), when the author doesn't want to enable the Fallback topic.
 
 This information can also be used to create new topics to improve deflection rate.
 

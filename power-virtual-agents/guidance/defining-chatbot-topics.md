@@ -11,7 +11,6 @@ ms.reviewer: iawilt
 
 # Defining chatbot topics
 
-[!INCLUDE [Preview disclaimer](includes/preview-note-guidance.md)]
 
 Defining the best topics for your bot requires an understanding of the questions users might ask or the tasks they try to accomplish, and the kind of information and automation you need to provide.
 
@@ -66,11 +65,11 @@ For simple interactions, you create single-turn conversations with just one ques
 
 For instance, if a user asks a retail bot whether there are any stores nearby, the chatbot might respond with a question such as _"What city do you live in?_" or "_What is your postal code?_" to narrow down its possible responses. The user’s response will determine the bot’s next response in the conversation.
 
-## Use native generative AI capabilities (preview)
+## Use native generative AI capabilities
 
 When designing a chatbot, you may not be able to anticipate all the types of questions your bot users ask. To help mitigate this, Power Virtual Agents incorporates a powerful AI-powered capability that uses the latest advancements in natural language understanding (NLU) models.
 
-When you enable the [Boost conversations (preview)](/power-virtual-agents/nlu-boost-conversations) option for your bot and link your chatbot to a publicly available,  Bing-indexed website, your bot can provide automatically generated, conversationally friendly, plain language responses without the need for you to create topics for every eventuality or "edge-case".
+When you enable the [Boost conversations](/power-virtual-agents/nlu-boost-conversations) option for your bot and link your chatbot to a publicly available,  Bing-indexed website, your bot can provide automatically generated, conversationally friendly, plain language responses without the need for you to create topics for every eventuality or "edge-case".
 
 ## Offload large volumes of single-turn question and answer pairs
 

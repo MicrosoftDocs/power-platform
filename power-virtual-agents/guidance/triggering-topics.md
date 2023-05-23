@@ -11,8 +11,6 @@ ms.reviewer: iawilt
 
 # Triggering topics
 
-[!INCLUDE [Preview disclaimer](includes/preview-note-guidance.md)]
-
 There are two main ways to trigger a topic:
 > [!div class="checklist"]
 >
