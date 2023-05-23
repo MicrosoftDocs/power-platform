@@ -4,7 +4,7 @@ description: Move your environment in a single tenant from one region to another
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 3/29/2023
+ms.date: 5/23/2023
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
@@ -12,7 +12,11 @@ contributors:
     - ProfessorKendrick
 search.audienceType: 
   - admin
+contributors:
+- LaurentPepin
+
 ---
+
 # Geo to geo migrations
 
 We continue to open new datacenter regions for business services, and to add datacenters to existing regions.  
@@ -25,7 +29,7 @@ The Geo Migration feature will allow customers to move their environments in a s
 > - After making a request, expect at least 10 days for the migration to be completed.  
 > - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
 > - Geo migrations are restricted into or out of OCE or IND.
-> - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances). If installed, Marketing app needs to be uninstalled prior to the migration.
+> - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances). If installed, the Dynamics 365 Marketing app must be uninstalled prior to the migration.
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
 > - Dataverse organization linked to a finance and operations organization is not supported.
 > - There are important and critical preparation steps mentioned below that need to be performed for Power Apps/Power Automate, etc. prior to the geo migration. If these steps are missed, it is difficult to recover Power Apps/Power Automate solutions.
@@ -137,7 +141,7 @@ After the migration:
 3. Provision the portal with the same portal type and language.
 
 #### For Dynamics 365 Marketing app:
-The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances). If installed, Marketing app needs to be uninstalled prior to the migration.
+The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances). If installed, the app must be uninstalled prior to the migration.
 
 Before the migration: 
 
