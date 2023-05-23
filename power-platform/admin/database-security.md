@@ -196,7 +196,7 @@ You can easily create, edit, or copy a security role and customize it to meet yo
 To edit an existing security role, either select the role name, or select the row and choose **Edit.** Then [define the privileges and properties of the security role](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
 
 > [!NOTE]
-> Some predefined [security roles cannot be edited](security-roles-privileges.md#environments-with-a-dataverse-database). If you try to edit these roles, the **Save** and **Save + Close** buttons are greyed out.
+> Some predefined [security roles cannot be edited](database-security.md#environments-with-a-dataverse-database). If you try to edit these roles, the **Save** and **Save + Close** buttons are greyed out.
 
 
 #### Copy a security role
