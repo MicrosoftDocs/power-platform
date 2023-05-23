@@ -92,45 +92,48 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 
 ### Start a subscription to audit log content
 
-1. Go to [make.powerapps.com](https://make.powerapps.com) > Solutions.
-1. Open the **Center of Excellence – Core Components** solution.
-1. Turn the **Admin \| Audit Logs \| Office 365 Management API Subscription** flow on and run it, enter *start* as the operation to run.
+1. Go to [make.powerapps.com](https://make.powerapps.com).
+2. Select **Solutions**.
+3. Open the **Center of Excellence – Core Components** solution.
+4. Turn the **Admin \| Audit Logs \| Office 365 Management API Subscription** flow on and run it, enter *start* as the operation to run.
     :::image type="content" source="media/coe-startsubscription.png" alt-text="Start the subscription":::
-1. Open the flow run and verify the action to start the subscription has passed.
+1. Open the flow and verify that the action to start the subscription has passed.
     :::image type="content" source="media/coe-startsubscription-passed.png" alt-text="Start the subscription passed":::
 
 > [!IMPORTANT]
 > If you have previously enabled the subscription, you will see a **(400) The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
+> 
 > If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
-> - Are audit logs enabled, and do you have permission to view the audit logs? Check by seeing if you can search in the [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
+> - Are audit logs enabled, and do you have permission to view the audit logs? Check by seeing if you can search in [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
 > - Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
-> - Validate that you correctly followed the steps in [Azure AD app registration](#create-an-azure-ad-app-registration-for-the-office-365-management-api)
+> - Validate that you correctly followed the steps in [Azure AD app registration](#create-an-azure-ad-app-registration-for-the-office-365-management-api).
 > - Validate that you correctly updated the environment variables for these flows.
 
-### Turn on Flows
+### Turn on flows
 
-1. Go to [make.powerapps.com](https://make.powerapps.com) > Solutions.
-1. Open the **Center of Excellence – Core Components** solution.
-1. Turn the **Admin | Audit Logs | Sync Audit Logs (V2)** flow on. This flow will run on an hourly schedule, and collect audit log events into the Audit Log table.
+1. Go to [make.powerapps.com](https://make.powerapps.com).
+2. Select **Solutions**.
+3. Open the **Center of Excellence – Core Components** solution.
+4. Turn the **Admin | Audit Logs | Sync Audit Logs (V2)** flow on. This flow will run on an hourly schedule, and collect audit log events into the Audit Log table.
 
 ## How to get older data
 
 This solution collects app launches from the moment it's configured, and is not set up to collect historic app launches. Depending on your [Microsoft 365 license](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log), historic data will be available for up to a year using the audit log in Microsoft Purview.
 
-You can load historic data into the CoE Starter Kit tables manually using one of the flows provided in the solution as shown here.
+You can load historic data into the CoE Starter Kit tables manually using one of the flows provided in the solution, as described here.
 
 1. Browse to the [Audit Log search](https://compliance.microsoft.com/auditlogsearch).
 1. Search for the Launched app activity in the date range available to you.
-:::image type="content" source="media/coe-oldauditlogs-1.png" alt-text="Get old audit logs":::
-1. Once the search has run, select export to download the results.
-:::image type="content" source="media/coe-oldauditlogs-2.png" alt-text="Download old audit logs":::
-1. Browse to the following flow in the Core solution: **Admin | Audit Logs | Load events from exported Audit Log CSV file**
+    :::image type="content" source="media/coe-oldauditlogs-1.png" alt-text="Get old audit logs":::
+1. Once the search has run, select **Export** to download the results.
+    :::image type="content" source="media/coe-oldauditlogs-2.png" alt-text="Download old audit logs":::
+1. Browse to the following flow in the core solution: **Admin | Audit Logs | Load events from exported Audit Log CSV file**
 1. Turn the flow on and run it, selecting the downloaded file for the Audit Log CSV parameter.
-:::image type="content" source="media/coe-oldauditlogs-3.png" alt-text="Load old audit logs via flow":::
-1. When complete, these logs will be included in your telemetry and last launched for the apps will be updated if more recent launches found.
+    :::image type="content" source="media/coe-oldauditlogs-3.png" alt-text="Load old audit logs via flow":::
+1. When complete, these logs will be included in your telemetry. The last launched list for the apps will be updated if more recent launches are found.
 
-## It looks like I found a bug with the CoE Starter Kit; where should I go?
+## It looks like I found a bug with the CoE Starter Kit. Where should I go?
 
 To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
