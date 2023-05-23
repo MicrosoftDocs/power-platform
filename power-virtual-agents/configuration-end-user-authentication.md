@@ -2,11 +2,12 @@
 title: Configure user authentication
 description: Configure authentication with your identity provider to enable users to sign in when having a bot conversation.
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 08/18/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewr: micchow
 ms.custom: authentication, ceX
 ms.service: power-virtual-agents
@@ -15,14 +16,11 @@ ms.collection: virtual-agent
 
 # Configure user authentication in Power Virtual Agents
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](configuration-end-user-authentication.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/configuration-end-user-authentication-teams.md)
-
 Authentication allows users to sign in, giving your bot access to a restricted resource or information. Users can sign in with [Azure Active Directory (Azure AD)](configuration-authentication-azure-ad.md), or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
+
+
+>[!NOTE]
+> In Microsoft Teams, you can configure a Power Virtual Agents bot to provide authentication capabilities, so that users can sign in with an Azure Active Directory or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft or Facebook account. 
 
 You can [add user authentication to your bot](advanced-end-user-authentication.md) when you edit a topic.
 
@@ -139,7 +137,6 @@ When a bot's authentication setting can't control who can chat with it, if you s
 
 The following are all the fields you may see when you're configuring manual authentication. Which fields you'll see depends on your choice for service provider.
 
-<!-- table best viewed and edited without wordwrap -->
 | Field name                              | Description                                                                                                                                                                                                                                    |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization URL template              | The URL template for authorization, as defined by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`                                                                                        |
