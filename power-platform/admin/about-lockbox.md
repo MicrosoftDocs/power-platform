@@ -4,7 +4,7 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2023
+ms.date: 05/22/2023
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -118,6 +118,12 @@ Admins can directly export the result set based on the filter criteria.
 
 :::image type="content" source="media/lockbox-audit-search-results.png" alt-text="Lockbox audit search results.":::
 
+Customer Lockbox produces two types of audit logs:
+1.	Logs that are initiated by Microsoft and correspond to lockbox request being created, expired, or when access sessions end. This set of audit logs do not correspond to a specific user ID since the actions are initiated by Microsoft.
+2.	Logs that are initiated by end user actions, such as when a user approves or denies a lockbox request. If the user that performs these operations does not have an E5 license assigned, the logs are filtered out and will not show up in the audit logs.
+
+By default, the audit logs are preserved for a duration of one year. You need a 10-Year Audit Log Retention add-on license to retain audit records for 10 years. See [Audit (Premium)](/microsoft-365/compliance/audit-solutions-overview?view=o365-worldwide#audit-premium-1&preserve-view=true) for more details on audit log retention.
+
 ## Licensing requirements for Customer Lockbox
 
 Customer Lockbox policy will be enforced only on environments that are activated for Managed Environments. Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
@@ -128,17 +134,20 @@ In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamic
 - Microsoft 365 A5/E5/F5/G5 Compliance
 - Microsoft 365 F5 Security & Compliance
 - Microsoft 365 A5/E5/F5/G5 Insider Risk Management
+- Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
 [Learn more](https://go.microsoft.com/fwlink/?linkid=2214240) about applicable licenses.
 
 ## Exclusions
 
-Lockbox requests aren't triggered in the following engineering support scenarios:
+- Lockbox requests aren't triggered in the following engineering support scenarios:
 
-- Emergency scenarios that fall outside of standard operating procedures, such as a major service outage that requires immediate attention to recover or restore services in unexpected or unpredictable cases. These “break glass” events are rare and, in most instances, don't require any access to customer data to resolve.
+    - Emergency scenarios that fall outside of standard operating procedures, such as a major service outage that requires immediate attention to recover or restore services in unexpected or unpredictable cases. These “break glass” events are rare and, in most instances, don't require any access to customer data to resolve.
 
-- A Microsoft engineer accesses the underlying platform as part of troubleshooting and is inadvertently exposed to customer data. It's rare that such scenarios would result in access to meaningful quantities of customer data.  
+    - A Microsoft engineer accesses the underlying platform as part of troubleshooting and is inadvertently exposed to customer data. It's rare that such scenarios would result in access to meaningful quantities of customer data.  
 
-Customer Lockbox requests are also not triggered by external legal demands for data. For details, refer to the discussion of government requests for data in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/).
+- Customer Lockbox requests are also not triggered by external legal demands for data. For details, refer to the discussion of government requests for data in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/).
+
+- Customer Lockbox won't apply to the access and manual review of customer data shared for Copilot AI features. Customer Lockbox will remain enabled for all in-scope data. 
 
 ## Known issues
 

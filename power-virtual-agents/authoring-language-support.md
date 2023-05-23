@@ -19,7 +19,7 @@ You can create chatbots in Power Virtual Agents in a number of languages. This m
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](../fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Specify a language for your bot
 
@@ -29,19 +29,19 @@ You specify the target language when you first create a bot.
 
 1. Choose the language you want to use. 
 
-    :::image type="content" source="../media/authoring-language-support/language-selection-teams.png" alt-text="Language selection option.":::
+    :::image type="content" source="media/authoring-language-support/language-selection-teams.png" alt-text="Language selection option.":::
 
 ## Default content in the target language
 
 After your new bot has been created, you'll notice that it already has content in the target language, including system topics and template user topics.
 
-:::image type="content" source="../media/authoring-language-support/language-topics.png" alt-text="Topics in the target language.":::
+:::image type="content" source="media/authoring-language-support/language-topics.png" alt-text="Topics in the target language.":::
 
 You can now move on to creating new topics for your bot, authoring bot trigger phrases, and creating bot messages in your target language.
 
 When you've created your own topic in the target language, you can test the bot in the chat canvas and see how well it understands user input and responds in that language.
 
-:::image type="content" source="../media/authoring-language-support/language-testing.png" alt-text="Test in the target language.":::
+:::image type="content" source="media/authoring-language-support/language-testing.png" alt-text="Test in the target language.":::
 
 ## List of supported languages
 
@@ -75,4 +75,4 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 
 ### Related topics
 
-- [Data locations for organizations using Power Virtual Agents](../data-location.md)
+- [Data locations for organizations using Power Virtual Agents](data-location.md)

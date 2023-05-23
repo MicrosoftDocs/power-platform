@@ -10,38 +10,36 @@
       href: admin-certification.md
     - name: Quotas, limits, and configuration values
       href: requirements-quotas.md
-- name: Get started
-  items:
-    - name: Get access to Power Virtual Agents
-      href: requirements-licensing-subscriptions.md
-    - name: Use pre-built chatbot templates in Microsoft Teams
-      href: fundamentals-templates.md
-    - name: Quickstart - Create and deploy a chatbot
-      href: fundamentals-get-started.md
-    - name: Community help and support
-      href: fundamentals-support.md
     - name: What's new in Power Virtual Agents
       items:
         - name: Overview of what's new
           href: overview-preview.md
         - name: Quickstart for what's new
           href: quickstart-preview.md
-        - name: Limitations
-          href: limitations-preview.md
         - name: Key concepts for Composer users
           href: composer-concepts-preview.md
-    - name: AI capabilities in Power Virtual Agents
-      items:
-        - name: AI-based chatbot authoring overview
-          href: nlu-gpt-overview.md
-        - name: Quickstart guide for building bots with GPT
-          href: nlu-gpt-quickstart.md
-        - name: Boost conversations
-          href: nlu-boost-conversations.md
-        - name: Boost conversations with Search and summarize
-          href: nlu-boost-node.md
-        - name: Create (and edit) with Copilot
-          href: nlu-authoring.md
+- name: Get started
+  items:
+    - name: Get access to Power Virtual Agents
+      href: requirements-licensing-subscriptions.md
+    - name: Use prebuilt chatbot templates in Microsoft Teams
+      href: fundamentals-templates.md
+    - name: Quickstart - Create and deploy a chatbot
+      href: fundamentals-get-started.md
+    - name: Community help and support
+      href: fundamentals-support.md
+- name: AI capabilities in Power Virtual Agents
+  items:
+    - name: AI-based chatbot authoring overview
+      href: nlu-gpt-overview.md
+    - name: Quickstart guide for building bots with GPT
+      href: nlu-gpt-quickstart.md
+    - name: Generative answers
+      href: nlu-boost-conversations.md
+    - name: Generative answers with Search and summarize
+      href: nlu-boost-node.md
+    - name: Create (and edit) with Copilot
+      href: nlu-authoring.md
 - name: Administer and manage
   items:
     - name: Assign licenses
@@ -52,8 +50,8 @@
       href: sign-up-individual.md
     - name: Working with environments
       href: environments-first-run-experience.md
-    - name: Share bots with users in your organization
-      href: admin-share-bots.md
+    - name: Configure data loss prevention for chatbots
+      href: admin-data-loss-prevention.md
     - name: Export and import bots using solutions
       href: authoring-export-import-bots.md
     - name: Regional settings and data locations for organizations
@@ -195,10 +193,10 @@
   items:
     - name: Key concepts - Configuration
       href: configuration-fundamentals.md
+    - name: Share bots with users in your organization
+      href: admin-share-bots.md
     - name: Apply and configure data loss prevention policies
       items:
-        - name: Configure data loss prevention for chatbots
-          href: admin-data-loss-prevention.md
         - name: Example 1 - Use DLP to block skills
           href: dlp-example-1.md
         - name: Example 2 - Use DLP to block HTTP requests

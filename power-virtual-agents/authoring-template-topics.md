@@ -50,9 +50,9 @@ This sample shows you how to create a topic that responds to a question about st
 
 This sample shows you how to create a question that asks customers which store they're interested in and stores the response in a variable. The condition uses the variable to determine which store's hours to return.
 
-**Lesson 3 - A topic with a condition, variables, and a pre-built entity**
+**Lesson 3 - A topic with a condition, variables, and a prebuilt entity**
 
-This sample asks customers to enter the state to ship their order to. The bot uses the pre-built **State** [entity](advanced-entities-slot-filling.md) to recognize the US state in the user's response, and stores it in the **State** variable. A condition uses this variable to determine which shipping message to send the user. Another condition uses the customer's response to a multiple-choice question, stored in the variable **Item**, to determine which product to order.
+This sample asks customers to enter the state to ship their order to. The bot uses the prebuilt **State** [entity](advanced-entities-slot-filling.md) to recognize the US state in the user's response, and stores it in the **State** variable. A condition uses this variable to determine which shipping message to send the user. Another condition uses the customer's response to a multiple-choice question, stored in the variable **Item**, to determine which product to order.
 
 **Lesson 4 - A topic with a condition, variables, and custom entity**
 
@@ -95,7 +95,7 @@ This lesson shows you how you can create a simple topic with one conditional bra
 
 A variable is a name for an item that will be used later in the topic flow. In this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
 
-**Lesson 3 - A topic with a conditions, variables, and a pre-built entity**
+**Lesson 3 - A topic with a conditions, variables, and a prebuilt entity**
 
 This lesson shows you how you can create a simple topic with one conditional branch, [a variable](authoring-variables.md), and [an entity](advanced-entities-slot-filling.md).
 

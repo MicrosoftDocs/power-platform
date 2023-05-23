@@ -16,10 +16,6 @@ searchScope:
 
 # Create (and edit) with Copilot
 
-[!INCLUDE [AI tech disclosure](includes/disclosure-ai-preview.md)]
-
-
-
 In addition to the traditional method for [creating and editing topics](authoring-create-edit-topics.md), Power Virtual Agents lets you create and iterate on topics by describing what you want and having AI build it for you, significantly decreasing the time it takes to create and update bot topics.
 
 This means you can quickly create and deploy a functional bot, without having to first manually author multiple topics.
@@ -41,8 +37,6 @@ See the [AI-based chatbot authoring overview (preview)](nlu-gpt-overview.md) for
     > [!NOTE]
     >  
     > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
-
-- You must be using the [preview version of Power Virtual Agents](overview-preview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
@@ -129,15 +123,11 @@ You can use AI to help you modify any topic in your bot. The topic doesn't need 
 >  
 > :::image type="content" source="media/nlu-gpt/describe-it-feedback.png" alt-text="Screenshot of the Power Virtual Agents Describe it feedback panel.":::
 
-## Disable Copilot in Power Virtual Agents
-
-Admins can disable Copilot for their organization by starting a support request with Microsoft.
-
 ## What's supported
 
 ### Topic node support
 
-During this preview, Copilot can create Message, Question, and Condition nodes when building and iterating on topics. Other node types aren't currently supported.
+Copilot can create Message, Question, and Condition nodes when building and iterating on topics. Other node types aren't currently supported.
 
 There are some additional limitations on how Copilot works with nodes:
 
@@ -184,12 +174,16 @@ The capability collects user prompts, the returned configured Topics, and any fe
 
 We use this data to evaluate and improve the quality of the capability. More information on what data is collected is available in the [terms](https://go.microsoft.com/fwlink/?linkid=2236010).
 
+## Disable Copilot in Power Virtual Agents
+
+Admins can disable Copilot for their organization by starting a support request with Microsoft.
+
 ## Reporting Concerns
 
 ### How can I report concerns about Copilot?
 
 If you have any concerns (such as those relating to content policies or codes of conduct) about the Copilot feature, you can raise them by emailing us at pvareport@microsoft.com. We will aim to respond to you within 2 business days.
 
-<mark>We shouldn't have support contact info here - would be better to direct them to the PVA forum like we do for others.</mark>
+
 
 [!INCLUDE[footer-include](includes/footer-banner.md)] 

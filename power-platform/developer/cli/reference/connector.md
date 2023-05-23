@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 5/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -57,6 +57,10 @@ The target Environment ID or URL.  Default value is the environment of your curr
 #### `--icon-file` `-if`
 
 The filename and path to and Icon .png file.
+
+#### `--script-file` `-sf`
+
+The filename and path to a Script .csx file.
 
 #### `--settings-file`
 
@@ -180,6 +184,10 @@ The target Environment ID or URL.  Default value is the environment of your curr
 #### `--icon-file` `-if`
 
 The filename and path to and Icon .png file.
+
+#### `--script-file` `-sf`
+
+The filename and path to a Script .csx file.
 
 #### `--settings-file`
 

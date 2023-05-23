@@ -1,5 +1,5 @@
 ---
-title: Key concepts for Bot Framework Composer users (preview)
+title: Key concepts for Bot Framework Composer users
 description: Overview of how key concepts in Microsoft Bot Framework Composer translate to concepts in Power Virtual Agents preview.
 ms.date: 03/24/2023
 ms.topic: conceptual
@@ -13,13 +13,10 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Key concepts for Bot Framework Composer users (preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# Key concepts for Bot Framework Composer users
 
 If you're used to designing bots in Bot Framework Composer, you'll find that some things are different in the Power Virtual Agents preview, and some things are similar. The following table lists some key concepts in Composer and where to find similar concepts in Power Virtual Agents preview.
 
-<!-- best viewed without wordwrap -->
 | Composer concept               | Power Virtual Agents concept                        | Description                                                                                                                                                                                                                                        |
 | :----------------------------- | :-------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Dialogs and triggers           | [Topics][]                                          | Use topics to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the bot should start the topic and a set of _nodes_ that describe the topic's conversation path.                                      |

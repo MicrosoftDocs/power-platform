@@ -15,8 +15,6 @@ ms.collection: virtual-agent
 
 # Manage topics in Power Virtual Agents
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 There are a number of ways you can manage your topics. Power Virtual Agents includes a topic checker that lets you know if there are errors in your topics, you can turn topics on or off so they don't appear to people chatting with your bot, and you can copy or duplicate topics to make it easier to create new ones.
 
 - [Manage topics in Power Virtual Agents](#manage-topics-in-power-virtual-agents)

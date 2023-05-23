@@ -14,9 +14,7 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring, bap-template
 ---
 
-# Accommodate time zones (preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# Accommodate time zones
 
 The **Date and time** entity captures a date and time in Coordinated Universal Time (UTC). However, you may want to display the date and time based on the user's location instead.
 
@@ -76,7 +74,6 @@ Power Virtual Agents stores the date and time in UTC. Before displaying a date a
 
 In this example, we'll get the current date and time using the Power Fx `Now()` function, and then add the time zone offset. It isn't possible to use the `Conversation.LocalTimeZoneOffset` system variable directly in a Power Fx formula. Instead, we'll use a **Set Variable Value** node to create a variable and then assign it the value of `Conversation.LocalTimeZoneOffset`.
 
-<!-- At time of writing, there was no way to use the Conversation.LocalTimeZoneOffset system variable directly in a Power Fx formula. As a workaround, the following instructions have you use a Set Variable Vale node to create a new variable and assign it to the value of Conversation.LocalTimeZoneOffset  -->
 1. Create a topic and add the trigger phrase `what time is it`.
 
 1. In the authoring canvas, select **Add node** (**+**). Select **Set a variable value**.

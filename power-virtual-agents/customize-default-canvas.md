@@ -15,8 +15,6 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of the bot's default canvas
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 Your bot's look and feel is defined by its canvas. To customize your bot, you must customize its canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
 
 - [Customize the default canvas](#customize-the-default-canvas-simple) with JavaScript styling in the HTML code of the website where you deploy your bot.  
@@ -91,7 +89,7 @@ First, you need to configure where you're deploying your bot canvas.
     <html>
     <head>
         <title>Contoso Sample Web Chat</title> 
-        <!-- This styling is for the Web Chat demonstration purposes. It is recommended that style is moved to separate file for organization in larger projects -->
+        <!-- This styling is for the Web Chat demonstration purposes. It is recommended that style is moved to a separate file for organization in larger projects -->
         <style>
             html, body {
                 height: 100%;

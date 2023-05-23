@@ -1,7 +1,7 @@
 {
   "redirection_files": [
         ".openpublishing.redirection.json",
-        "power-virtual-agents/.openpublishing.redirection-power-virtual-agents.json"
+        ".openpublishing.redirection.power-virtual-agents.json"
     ],  
   "docsets_to_publish": [
     {
@@ -66,12 +66,6 @@
       "path_to_root": "powerapps-samples",
       "url": "https://github.com/microsoft/PowerApps-Samples",
       "branch": "master",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "msft-shared-content",
-      "url": "https://github.com/MicrosoftDocs/reusable-content",
-      "branch": "main",
       "branch_mapping": {}
     },
     {

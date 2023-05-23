@@ -15,8 +15,6 @@ ms.collection: virtual-agent
 
 # Configure single sign-on with Azure Active Directory 
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're in to the page where the bot is deployed.  
 
 ## Prerequisites
@@ -96,14 +94,13 @@ Use the code provided in the [Power Virtual Agents GitHub repo](https://github.c
 
     For example:
 
-    <!-- the GUID used in the code block below is a randomly generated one, not one pulled from a live bot -->
     ```csharp
     var clientApplication;
         (function (){
         var msalConfig = {
             auth: {
-                clientId: '692e92c7-d146-4060-76d3-b381798f4d9c',
-                authority: 'https://login.microsoftonline.com/7ef988bf-86f1-51af-01ab-2d7fd011db47'     
+                clientId: '692e92c7-xxxx-4060-76d3-b381798f4d9c',
+                authority: 'https://login.microsoftonline.com/7ef988bf-xxxx-51af-01ab-2d7fd011db47'     
             },
     ```
 

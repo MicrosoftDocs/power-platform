@@ -74,7 +74,7 @@ Choose the security model that works best for your situation.
 > [!WARNING]
 > We strongly discourage exposing the secret in any code that runs in the browser, either hard-coded or transferred through a network call.  
 >
-> Acquiring the token using the secret in your service code is the most secured way to protect your PVA bot.
+> Acquiring the token using the secret in your service code is the most secured way to protect your Power Virtual Agents bot.
 
 ## Obtain the secrets
 

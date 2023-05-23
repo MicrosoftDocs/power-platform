@@ -177,8 +177,6 @@ Flows that you want to use in a bot must return values in real time, or [synchro
 
 When you create a flow from Power Virtual Agents, [asynchronous responses](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior) are turned off by default. If you modified an existing flow that has asynchronous responses turned on, you'll need to change the setting.
 
-<!-- At the time of writing, steps to find the async response setting (specifically in the PVA step/action) didn't exist in PA docs. If this has changed, please remove these steps and replace with the relevant link. -->
-
 1. [Open your flow](#modify-an-existing-flow-to-use-with-a-bot) and find the **Return value(s) to Power Virtual Agents** step.
 
 1. Select the **Menu** (**...**) icon, and then select **Settings**.

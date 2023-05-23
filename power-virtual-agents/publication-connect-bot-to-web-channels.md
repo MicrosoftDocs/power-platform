@@ -15,8 +15,6 @@ ms.collection: virtual-agent
 
 # Configure the demo website and add the bot to your live website
 
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
 When publishing the bot to the web, you can publish to a prebuilt demo website (which you can use to share the bot with your teammates and stakeholders) and to your own live website.
   
 >  
