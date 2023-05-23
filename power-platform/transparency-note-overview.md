@@ -17,6 +17,9 @@ ms.reviewer: kvivek
 [!INCLUDE[transparency-note-features](includes/transparency-note-features.md)]
 
 - [Copilot data security and privacy](transparency-note-copilot-data-security-privacy.md)
+
+### Related content
+
 - [Transparency notes for Power Automate](/power-automate/transparency-note)
 - [Transparency notes for Power Pages](/power-pages/transparency-note)
 
