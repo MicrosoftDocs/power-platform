@@ -237,6 +237,7 @@ Share your bot with other users so they can chat with the bot or collaborate tog
 
 A user can always chat with a bot if it was created in the same team. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
 
+
 ### Share bot with security groups
 
 You can share your bot with security groups so their members can chat with the bot.
@@ -287,6 +288,9 @@ You can share your bot to allow everyone in the same organization as the bot to 
 ### Stop sharing the bot
 
 You can stop sharing the bot with a security group or everyone in your organization.
+
+> [!NOTE]
+> When you stop sharing a bot, affected users can't access the bot after their current conversation has timed out (after 30 minutes of idle time).
 
 ### Stop sharing with a security group
 
