@@ -1,14 +1,14 @@
 ---
-title: "Review compliance and adoption statistics with the CoE Power BI dashboard | MicrosoftDocs"
+title: Compliance and Adoption with the CoE Power BI dashboard
 description: "The Compliance and Adoption Power BI dashboard gives you the ability to review compliance, security and governance statistics and gain further adoption insights."
 author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 05/23/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
