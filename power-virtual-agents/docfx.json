@@ -67,6 +67,9 @@
       },
       "ms.service": {
         "**.*": "power-virtual-agents"
+      },
+      "ms.subservice": {
+        "guidance/**/*.md": "guidance"
       }
     },
     "template": [],

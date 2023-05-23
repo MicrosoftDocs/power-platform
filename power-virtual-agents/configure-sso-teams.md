@@ -38,6 +38,7 @@ Before configuring SSO for Teams, you'll first need to configure user authentica
 1. Generate a client secret.
 1. Configure manual authentication.
 
+Follow the instructions in [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md) then return to this article.
 
 ## Locate your Microsoft Teams channel app ID
 
