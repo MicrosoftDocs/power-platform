@@ -27,7 +27,7 @@ For example, suppose the IP firewall is turned on in your production Dataverse e
 
 ## Key benefits
 
-- Helps mitigate insider threats like data exfiltration in real time. A malicious user who tries to download data from Dataverse using a client tool, such as Excel or Power BI, is blocked from downloading the data bssed on the IP location.
+- Helps mitigate insider threats like data exfiltration in real time. A malicious user who tries to download data from Dataverse using a client tool, such as Excel or Power BI, is blocked from downloading the data based on the IP location.
 - Helps prevent token replay attacks from outside configured IP ranges. If a user steals a token and tries to use it to access Dataverse from outside configured IP ranges, the access is denied by Dataverse in real time.
 - It works for both interactive and non-interactive scenarios.
 
@@ -47,7 +47,7 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 1. Select **Settings** > **Product** > **Privacy + Security**.
 1. Under **IP address settings**, set **Enable IP address based firewall rule** to **On**.
 1. Under **Allowed list of IPv4 or IPv6 ranges**, specify the allowed IP ranges in classless inter-domain routing (CIDR) format. If you have multiple IP ranges, separate them using a comma. This field excepts alphanumeric characters with a maximum length of 4000 and allows a maximum of 200 IP ranges.
-1. Choose additional settings as appropriate:
+1. Choose other settings, as appropriate:
 
    - **Service tags to be allowed by IP firewall**: You can select a list of service tags from the drop-down list to bypass the IP firewall restrictions.
    - **Allow access for Microsoft trusted services**: Enabled by default. Enabling this setting allows access to the Power Platform environment with Dataverse for service tags `PowerPlatformInfra`, `GenevaSynthetics`, and `GenevaActions` and for internal first-party applications.
@@ -114,7 +114,7 @@ Download the audit log data in JSON format by using Dataverse OData API. The for
 
 - Replace **{orgURI}** with the Dataverse environment URI.
 - Set the action value to **116** for this event.
-- Set the number of items to return in **top=1** or specifyc the number you want to return.
+- Set the number of items to return in **top=1** or specific the number you want to return.
 
 ### My Power Automate flows are not working as expected after configuring the IP firewall on my Power Platform environment. What should I do?
 
