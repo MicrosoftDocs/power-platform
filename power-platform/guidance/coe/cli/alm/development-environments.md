@@ -64,7 +64,7 @@ One approach to app development is for organizations is to manage and assign dev
 
 1. Makers who have been assigned the license can go to [https://make.powerapps.com](https://make.powerapps.com) to create a development environment.
 
-## Admin maker set-up
+## Admin maker setup
 
 As an Azure DevOps services administrator, running the following commands add the required service connection to the development environment and set up security for the user.
 
