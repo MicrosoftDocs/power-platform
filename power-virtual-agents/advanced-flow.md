@@ -2,11 +2,12 @@
 title: Use Power Automate flows in Power Virtual Agents
 description: Use Power Automate flows to extend the capabilities of your bots.
 keywords: "PVA, flow, automate"
-ms.date: 07/28/2022
+ms.date: 03/24/2023
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring
 ms.collection: virtual-agent

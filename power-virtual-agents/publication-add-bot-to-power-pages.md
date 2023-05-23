@@ -2,11 +2,12 @@
 title: "Add a chatbot to Power Pages"
 description: "Add your bot to Power Pages so users can interact with it."
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
-ms.date: 01/24/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: "publication, authoring, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
@@ -25,8 +26,6 @@ ms.collection: virtual-agent
 ## Add a bot to your Power Pages
 
 Power Pages [design studio](/power-pages/getting-started/use-design-studio) is a no-code experience used to create and customize Power Pages. It contains various options to add and configure webpages, components, forms, and lists.
-
-To learn about how to add a chatbot to a web page in a Power Pages website, see [How to: Embed a chatbot on a webpage](/power-pages/guidance/integrate-pva).
 
 To learn how to add a chatbot with design studio, see [Add chatbot to a page](/powerapps/maker/portals/add-chatbot).
 
