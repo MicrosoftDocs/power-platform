@@ -5,10 +5,10 @@ keywords:
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/23/2023
 
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -16,7 +16,7 @@ search.audienceType:
 # CoE CLI development (Deprecated)
 
 > [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 This section outlines the following key sections on the CoE CLI. The information below can help guide you in making contributions back to the open-source repository.
 
