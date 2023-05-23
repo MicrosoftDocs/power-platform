@@ -1,6 +1,6 @@
 ---
-title: Use solution checker in Managed Environments (preview)
-description: Learn about using solution checker to automatically run security and reliability validations during solution import.
+title: Solution checker enforcement in Managed Environments (preview)
+description: Learn about using solution checker enforcement to automatically prevent security and reliability validations during solution import.
 ms.topic: conceptual
 ms.date: 05/12/2023
 author: sidhartg
@@ -13,7 +13,7 @@ search.audienceType:
 
 ---
 
-# Use solution checker in Managed Environments (preview)
+# Solution checker enforcement in Managed Environments (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
