@@ -67,6 +67,9 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Under **Redirect URIs**, enter `https://unitedstates.token.botframework.com/.auth/web/redirect` and `https://europe.token.botframework.com/.auth/web/redirect`.
 
+    > [!NOTE]
+    > The authentication configuration pane in Power Virtual Agents might show the following redirect URL instead of the ones listed above: ` https://unitedstates.token.botframework.com/.auth/web/redirect`. Using that URL will make the authentication fail; ensure you use the URI listed above.
+
 1. In the **Implicit grant and hybrid flows** section, turn on both **Access tokens (used for implicit flows)** and **ID tokens (used for implicit and hybrid flows)**.
 
     :::image type="content" source="media/configure-web-sso/redirect-uri.png" alt-text="Screenshot of the Configure Web window with the redirect URI and implicit grant and hybrid flow tokens highlighted.":::
