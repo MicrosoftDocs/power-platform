@@ -130,10 +130,6 @@ Example input : *Every Tuesday.*
        "value": "not resolved"
       }
 ```
-### DatetimeRange (past)
-
-<mark>Should we have a json example here?</mark>
-
 ### Datetime (since)
 Example input: *I've been out since August*
 
@@ -147,7 +143,7 @@ Example input: *I've been out since August*
   ```
 
 ### Time
-Example input : *It's half past seven o'clock
+Example input : *It's half past seven o'clock*
       {
        "resolutionKind": "DateTime",
        "dateTimeSubKind": "Time",
