@@ -506,12 +506,12 @@
     },
     {
       "source_path": "power-virtual-agents/preview/advanced-power-fx.md",
-      "redirect_url": "advanced-power-fx.md",
+      "redirect_url": "power-virtual-agents/advanced-power-fx.md",
       "redirect_document_id": "true"
     },
     {
       "source_path": "power-virtual-agents/teams/admin-upgrade-dataverse-teams.md",
-      "redirect_url": "admin-upgrade-dataverse-teams.md",
+      "redirect_url": "power-virtual-agents/admin-upgrade-dataverse-teams.md",
       "redirect_document_id":  "true"
     },
     {
