@@ -76,7 +76,7 @@ The tables below indicate inputs and outputs for each event. Output parameters c
 | Event | Input parameters  | Output parameters | Comments |
 | --- | --- | --- | ---  |
 | `OnPreDeploymentStarted` (Gated)  | `StageRunID` | Artifact Name, <br/>Deployment Stage Run Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>PreDeplymentStepStatus, <br/>Deployment Notes | - Only triggers when **Pre-Deployment Step Required** is checked in the pipeline stage configuration. <br/>- Can be used to trigger approvals and other business logic before a deployment can proceed to the next step. <br/>- Requires calling the unbound action `UpdatePreDeploymentStepStatus` to set the `PreDeploymentStepStatus` after other business logic has completed. |
-| `OnPreDeploymentCompleted`   | `StageRunID` | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,<br/> PreDeployment Step Status (**10** (Pending), **20** (Completed), **30** (Failed)), <br/>Comments  | Event produced when **UpdatePreDeploymentStatus** is set to completed. |
+| `OnPreDeploymentCompleted`   | `StageRunID` | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,<br/> PreDeployment Step Status (**10** (Pending), **20** (Completed), **30** (Failed)), <br/>Comments  | Event produced when `UpdatePreDeploymentStatus` is set to completed. |
 
 #### Deployment step
 
