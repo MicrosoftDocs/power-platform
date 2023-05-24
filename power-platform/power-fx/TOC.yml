@@ -389,7 +389,9 @@
           - name: TrimEnds
             href: reference/function-trim.md
           - name: Trunc
-            href: reference/function-round.md    
+            href: reference/function-round.md 
+          - name: SendAppNotification
+            href: reference/function-send-app-notification.md
           - name: Ungroup
             href: reference/function-groupby.md
           - name: Unrelate
