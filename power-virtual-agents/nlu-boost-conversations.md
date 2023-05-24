@@ -242,7 +242,7 @@ We use this data to evaluate and improve the quality of the capability. More inf
 
 ### Disable bot publishing
 
-Your admin could disable the ability to publish bots with generative answers for your tenant in the **Power Platform admin center**. 
+Your admin can disable the ability to publish bots with generative answers for your tenant in the **Power Platform admin center**. 
 
 :::image type="content" source="media/nlu-gpt/nlu-boost-conversation.png" alt-text="Screenshot of the Power Virtual Agents boost conversation.":::
 
