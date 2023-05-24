@@ -330,7 +330,7 @@
             href: reference/function-select.md
           - name: Self
             href: reference/operators.md#self-and-parent-operators
-          - name: SendAppNotification
+          - name: SendAppNotification (preview)
             href: reference/function-send-app-notification.md
           - name: Set
             href: reference/function-set.md
