@@ -204,14 +204,6 @@ During the preview, bots with generative answers enabled have a limit on the num
 
 During the preview, the use of the boosted conversations capability is not billable and will follow the [usual quotas and limitations](requirements-quotas.md#quotas).
 
-## Application for the internal document search preview
-
-The internal document search capability will allow your chatbot to return answers generated from your internal knowledge sources.
-
-This capability is in gated preview, and you'll need to apply for consideration to the trial. You should only apply if you are willing to sign a marketing and PR agreement and if you have a use case for how you'd use this capability in a future production scenario.
-
-To be considered for early access to trial this capability, you can apply [here](https://aka.ms/PVAGPTInterest). You can also apply by following the link on the **AI Capabilities** page.
-
 ## AI response generation training, model, and usage notes
 
 This FAQ answers common questions about the AI that is used by the generative answers capability in Power Virtual Agents.
