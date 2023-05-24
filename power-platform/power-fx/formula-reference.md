@@ -366,6 +366,8 @@ Other elements include:
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
 
+**[SendAppNotification](reference/function-send-app-notification.md)** – Send an in-app notification with optional actions to a recipient.
+
 **[Set](reference/function-set.md)** – Sets the value of a global variable.
 
 **[SetFocus](reference/function-setfocus.md)** – Moves input focus to a specific control.
