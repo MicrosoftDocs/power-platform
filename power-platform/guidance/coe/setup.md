@@ -4,7 +4,7 @@ description: "Prerequisites and instructions for setting up the Center of Excell
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2023
+ms.date: 05/23/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -106,7 +106,7 @@ Create two production environments to install the CoE Starter Kit solutions:
 - [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database).
 - Choose English as the default language.
 - Don't add sample apps and datasets.
-- Don't restrict environment access with a security group, because some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
+- Set the security group to **None** to allow open access. Some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
 - After [importing the solution](setup-core-components.md) and completing the setup steps, set the *ProductionEnvironment* variable to no in your test environment. This means you can test the coE Starter Kit processes without impacting makers and end users.
 
 >[!IMPORTANT]

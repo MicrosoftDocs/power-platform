@@ -3,7 +3,7 @@ title: "Set up inventory components | MicrosoftDocs"
 description: "Set up instructions for how to set up the inventory components solution of the CoE Starter Kit"
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 04/13/2023
+ms.date: 05/23/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -136,6 +136,7 @@ In your test environment, [update the *ProductionEnvironment* environment variab
 
 There are several child flows, check to make sure all of these flows are on:
 
+1. HELPER - Add User to Security Role
 1. HELPER - Send Email
 1. HELPER - Maker Check
 1. HELPER - CloudFlowOperations
@@ -150,6 +151,9 @@ There are several child flows, check to make sure all of these flows are on:
 1. CLEANUP HELPER - Check Deleted (PVA)
 1. CLEANUP HELPER - Check Deleted (Solutions)
 1. CLEANUP HELPER - Power Apps User Shared With
+1. SYNC HELPER - Apps
+1. SYNC HELPER - Cloud Flows
+1. SYNC HELPER - Get Security Role Users
 
 If you get a connection authorization error turning on a flow, you might need to set the [run-only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
 
@@ -194,7 +198,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >This flow temporarily makes the account running the the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow that is using HTTP actions to retrieve further details of those actions (for example, the HTTP host), and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
 
 - Admin | Sync Template v3 (Ai Models)
-- Admin | Sync Template v3 (Apps)
+- Admin | Sync Template v4 (Apps)
 - Admin | Sync Template v3 (Business Process Flows)
 - Admin | Sync Template v3 (Call Updates)
 - Admin | Sync Template v3 (Connection Identities)
@@ -203,14 +207,14 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - Admin | Sync Template v3 (Desktop flows)
 - Admin | Sync Template v3 (Environment Properties)
 - (optional) Admin | Sync Template v3 (Flow Action Details)
-- Admin | Sync Template v3 (Flows)
+- Admin | Sync Template v4 (Flows)
 - Admin | Sync Template v3 (Model Driven Apps)
 - Admin | Sync Template v3 (Portals)
 - Admin | Sync Template v3 (PVA)
 - Admin | Sync Template v3 (PVA Usage)
 - Admin | Sync Template v3 (Solutions)
 - Admin | Sync Template v3 (Sync Flow Errors)
-- Admin | Sync Template v3
+- Admin | Sync Template v3 (Driver)
 - CLEANUP - Admin | Sync Template v3 (Check Deleted)
 - CLEANUP - Admin | Sync Template v3 (Connection Status)
 - CLEANUP - Admin | Sync Template v3 (Delete Bad Data)
@@ -472,7 +476,7 @@ Environment variables are used to store application and flow configuration data 
 | Command Center - Application Client ID | (optional) The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Secret | (optional) The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable.  Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)| Not applicable |
-|CompanyName |The name of the company to be displayed in various apps and emails. | Not applicable |
+|CompanyName |The name of the company to be displayed in various apps and emails. Currently this is only used by the [Video Hub](nurture-components.md#video-hub) app. | Not applicable |
 | Current Environment | Current Dataflow Environment ID used by cloud flows to refresh dataflows. Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) | Not applicable |
 | DelayInventory | If Yes, runs a delay step to assist with the Dataverse load balancing. Only set this to No for debugging. | Yes |
 | Disabled Users are Orphaned | If an AD User has property Account enabled as false, will be considered as orphaned. | No |
