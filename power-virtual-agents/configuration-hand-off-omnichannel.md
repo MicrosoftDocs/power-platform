@@ -33,7 +33,7 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
 
 > [!WARNING]
-> Power Virtual Agents bot with names containing more than 30 characters will fail to connect when following the instructions below. Please ensure your bot's name contains less than 30 characters before proceeding.
+> Power Virtual Agents bots with names that are longer than 30 characters will fail to connect when following the instructions in this topic. Ensure your bot's name contains less than 30 characters before proceeding.
 
 ## Connect your bot to Omnichannel for Customer Service
 
