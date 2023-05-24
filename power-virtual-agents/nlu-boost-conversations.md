@@ -16,16 +16,14 @@ searchScope:
 
 # Generative answers
 
-Generative answers in Power Virtual Agents allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query. As a result you can quickly create and deploy a functional bot, without having to first manually author multiple topics that still may not address all your customer's intents.
+Generative answers in Power Virtual Agents allow your bot to find and present information from multiple sources (which may be internal or external) without requiring creation of topics. Generative answers can be used as primary information sources in your chatbot, or as fallback when authored topics are unable to address a user's query. As a result you can quickly create and deploy a functional bot, without having to manually author multiple topics that may not address your customer's questions.
 
 In the past, when a bot couldn't determine a user's intent, it asked the user to rephrase their question. If, after two prompts, the bot still couldn't determine the user's intent, the bot escalated to a live agent by using the [system **Escalate** topic](authoring-system-fallback-topic.md). This document covers how to configure generative answers as a fallback topic when a user intent cannot be addressed by existing bot topics. [Generative answers with search and summarize](nlu-boost-node.md) discusses how your bot can query information sources by introducing generative answers in a node.
 
 Now, before involving a live agent, the bot uses natural language processing (NLP) to:
 - Parse what a user types to determine what they're asking
-- Find, collate, and parse relevant information from a specified source (for example, your company's website) or from multiple sources, including Sharepoint and OneNote. "...with Bing Search" (phrase intention?)
+- Find, collate, and parse relevant information from a specified source (for example, your company's website) or from multiple sources, including Sharepoint and OneNote.
 - Summarize search results into plain language that is delivered to the bot user
-
-As a result you can quickly create and deploy a functional bot, without having to first manually author multiple topics that may or may not cover all the questions your customers end up asking.
 
 Your workflow might be like this:
 
@@ -35,33 +33,32 @@ Your workflow might be like this:
 
 1. You create individual topics for the most important or most often-asked questions from your customers (which you might have developed based on [analytics from previous bots](analytics-overview.md) or existing support issues).
 
-This could take a while and some specialized knowledge - but with **generative answers** enabled you're up and running from day one.
+This workflow could take a while and some specialized knowledge - but with generative answers enabled you're up and running from day one.
 
 ## Generative answers as a fallback
 
-When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. If a matching intent is not found in the topics, the bot can use generative answers to attempt answering the query. This is called "Generative Answers for fallback".
-Finally, if the user's intent is not matched by topics or generative answers, the Fallback [system topic](authoring-system-topics.md) will be called.
+When a user sends an input to a bot, the bot first looks for topics to run which match the intent of the user prompt. If a matching intent isn't found in the topics, the bot can use generative answers to attempt answering the query. This behavior is called "Generative Answers for fallback".
+Finally, if the user's intent isn't matched by topics or generative answers, the Fallback [system topic](authoring-system-topics.md) is called.
 
 This document is focused on _getting you started_ using generative answers to augment your bot's ability to help customers.
 
-While generative answers serves as a fallback in this situation, it is not limited to fallback scenarios. Your bot's ability to answer user questions can also use additional web sites, external or internal web sources and other information sources such as SharePoint or OneDrive for Business. Details and examples on how you can expand your bot's ability to use generative answers can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md). The following is an outline of sources that can be used by generative answers.
+While generative answers serves as a fallback in this situation, it isn't limited to fallback scenarios. Your bot's ability to answer user questions can also use other web sites, external or internal web sources, and knowledge sources such as SharePoint or OneDrive for Business. 
 
-External resources include:
+Details and examples on how you can expand your bot's ability to use generative answers can be found in [Generative Answers with Search and Summarize](nlu-boost-node.md). These sources can be used by generative answers:
 
- - Bing Search
- - [Bing Custom Search](https://www.customsearch.ai/)
-  
-Internal resources include:
-
- - SharePoint
- - OneDrive
- - DataVerse
- - Custom data (internal or external): Supply your own content from any source; for instance, from a Power Automate Flow, Skill, or other source.
+- External resources include:
+  - Bing Search
+  - [Bing Custom Search](https://www.customsearch.ai/)
+- Internal resources include:
+  - SharePoint
+  - OneDrive
+  - Dataverse
+  - Custom data (internal or external): supply your own content from any source; for instance, from a Power Automate Flow, Skill, or other source
 
 
 ### Source authentication
 
-In addition to [url considerations](nlu-boost-conversations.md#url-considerations), you will also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote as a source for **generative answers**. Additional details can be found in [Information sources](nlu-boost-node.md#information-sources).
+In addition to [URL considerations](nlu-boost-conversations.md#url-considerations), you'll also need to consider authentication for your sources (should there be any). For example, you may choose an internal SharePoint site or OneNote as a source for **generative answers**. More details can be found in [Information sources](nlu-boost-node.md#information-sources).
 
 ## Prerequisites
 
@@ -71,7 +68,7 @@ In addition to [url considerations](nlu-boost-conversations.md#url-consideration
 >  
 > Other regions, and languages other than English, aren't supported during the preview.
 
-- You'll need an account for Power Virtual Agents.
+- An account for Power Virtual Agents.
 
     > [!NOTE]
     >
@@ -117,7 +114,7 @@ You can also change the URL, disable generative answers, or change the level of 
 
     :::image type="content" source="media/nlu-gpt/ai-capabilities-highlight-22May23.png" alt-text="Screenshot of the Power Virtual Agents AI capabilities page with Generative Answers enabled and highlighted.":::
 
-    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers will be more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
+    1. Under **Bot content moderation**, select the level you want for your bot. A higher level of moderation means that the bot’s answers are more relevant. A lower level of moderation means that the bot generates more answers, but the answers may be irrelevant or undesirable.
 
     :::image type="content" source="media/nlu-gpt/nlu-generative-ans-content-moderation.png" alt-text="Screenshot of the bot content moderation menu.":::    
 
@@ -127,15 +124,15 @@ You can now test your bot to see how well it responds to questions related to th
 
 ### URL considerations
 
-The URL you provide represents the scope of content that will be used for generating responses. 
+The URL you provide represents the scope of content that is used for generating responses. 
 
 There are some requirements on the type and structure of the URL you use:
 
-The URL can have up to two levels of depth (or "sub-paths", indicated by forward slashes (/)). Your URL can have a trailing forward slash, which won't be included in the limit of two slashes: 
+The URL can have up to two levels of depth (or "subpaths", indicated by forward slashes (/)). Your URL can have a trailing forward slash, which isn't included in the limit of two slashes: 
 - The URLs *<span>www</span>.contoso.com*, *<span>www</span>.fabrikam.com/engines/rotary*, or *<span>www</span>.fabrikam.com/engines/rotary/* would be valid. 
-    The URL *<span>www</span>.fabrikam.com/engines/rotary/dual-shaft* would not.
+    The URL *<span>www</span>.fabrikam.com/engines/rotary/dual-shaft* wouldn't.
 
-If the URL you specify redirects to another top-level site, that content won't be included in results:
+If the URL you specify redirects to another top-level site, that content isn't included in results:
 - If, when visited in a browser, *<span>www</span>.fabrikam.com* redirected to *<span>www</span>.contoso.fabrikam.com*, then the bot wouldn't generate responses from content on either of those URLs.  
   
 
@@ -145,9 +142,9 @@ The capability won't generate responses from a URL that points to a website that
 
 You should also be aware of the following characteristics of the capability:
   
-The bot generates responses from any publicly viewable content under the URL you specify. This includes subdomains under a top-level domain:
+The bot generates responses from any publicly viewable content under the URL you specify, including subdomains under a top-level domain:
 - If you were to use the URL *<span>www</span>.fabrikam.com/engines/rotary*, the content on *<span>www</span>.fabrikam.com/engines/rotary/dual-shaft* would also be used by the bot to generate responses.  
-Content from *<span>www</span>.fabrikam.com/tools* would not be used.  
+Content from *<span>www</span>.fabrikam.com/tools* wouldn't be used.  
 
 - If you were to use *<span>www</span>.fabrikam.com*, the bot wouldn't generate responses from content on *<span>news</spam>.fabrikam.com*, as *news.* is a subdomain under the top-level domain *<span>fabrikam</span>.com*.  
  
@@ -155,9 +152,9 @@ Content from *<span>www</span>.fabrikam.com/tools* would not be used.
 
 The bot may generate nonsensical, irrelevant, or inappropriate answers if you use a forum or social network site as your URL:  
 - Community content on social networks can often increase the risk of more answers being rejected due to inappropriate, offensive, and malicious content that is more common on those sites.  
-See the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) for more information on how the AI is trained to avoid generating malicious and offensive responses.
+For more information, see the [AI response generation training, model, and usage notes](#ai-response-generation-training-model-and-usage-notes) for more information on how the AI is trained to avoid generating malicious and offensive responses.
 
-The URL you specify should host the content you want the bot to generate answers from; it should not be the URL for a search engine:
+The URL you specify should host the content you want the bot to generate answers from; it shouldn't be the URL for a search engine:
 -  Using *<span>bing</span>.com* or other search engines in the URL won't provide useful responses.
 
 ## Test your bot's generative answers reach
@@ -170,7 +167,7 @@ The URL you specify should host the content you want the bot to generate answers
 
 - personal questions 
 - questions that require authenticated access to content
-- questions for each there is no related content at the specified URL
+- questions for each there's no related content at the specified URL
  
 You should also be aware of some of the characteristics of the AI, and how to get the most out of the questions you ask:
 
@@ -178,7 +175,7 @@ You should also be aware of some of the characteristics of the AI, and how to ge
 
 - If the bot can't generate an answer to a question, it will ask you to rephrase the question. After two of these prompts, the bot will initiate the [system **Escalate** topic](authoring-system-fallback-topic.md).
 
-- To learn more about how the question is being interpreted by Bing against the URL you specify, add "site: \<your URL here>" to the end of your question to see the top Bing results for the question.  
+- To learn more about how the question is interpreted by Bing against the URL you specify, add "site: \<your URL here>" to the end of your question to see the top Bing results for the question.  
 
 - You may need to disable the [sample topics that are created automatically](authoring-template-topics.md) when you create a bot. 
 
@@ -202,7 +199,7 @@ During the preview, bots with generative answers enabled have a limit on the num
 
 ### Pricing
 
-During the preview, the use of the boosted conversations capability is not billable and will follow the [usual quotas and limitations](requirements-quotas.md#quotas).
+During the preview, the use of the boosted conversations capability isn't billable and follows the [usual quotas and limitations](requirements-quotas.md#quotas).
 
 ## AI response generation training, model, and usage notes
 
@@ -211,14 +208,14 @@ This FAQ answers common questions about the AI that is used by the generative an
 
 ### Does the capability produce perfect responses?   
 
-Responses generated by the generative answers capability are not always perfect and can contain mistakes. 
+Responses generated by the generative answers capability aren't always perfect and can contain mistakes. 
 
 The system is designed to query knowledge from the website of your choosing and to package relevant findings into an easily consumable response. However, it's important to keep in mind some characteristics of the AI that may lead to unexpected responses:
 
 - The corpus upon which the model has been trained doesn't include data created after 2021.  
   We have implemented mitigations to prevent the model from using its training corpus as a source for answers, however it is possible for answers to include content from websites other than the one you selected. 
 
-- The system does not perform an accuracy check, so if the selected website contains inaccurate information this could be shown to your chatbot users. We have implemented mitigations to filter out irrelevant and offensive responses, and the feature is designed not to respond when offensive language is detected. These filters and mitigations are not foolproof.  
+- The system doesn't perform an accuracy check, so if the selected website contains inaccurate information it could be shown to your chatbot users. We have implemented mitigations to filter out irrelevant and offensive responses, and the feature is designed not to respond when offensive language is detected. These filters and mitigations are not foolproof.  
 
 > [!NOTE]
 > You should always test and review your bots before publishing them.
