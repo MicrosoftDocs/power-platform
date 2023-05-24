@@ -130,7 +130,7 @@ XSendAppNotification(
 The following example formula can be used with an automated plugin when a a new Task record is created. The formula is designed to send an in-app notification to the owner of the task record. The notification card contains two actions that the owner can take:
 
 - A **side pane** action, opens the new task record in a side pane.
-- A **Teams chat** action, initiates a Teams chat with the owner of the account record that is assigned as the **Regarding** table record for the new task. It is important to note that this assumes an account record has been selected in the task field.
+- A **Teams chat** action, initiates a Teams chat with the owner of the account record that is assigned as the **Regarding** table record for the new task. It's important to note that this assumes an account record has been selected in the task field.
 
 ```powerapps-dot
 XSendAppNotification(
