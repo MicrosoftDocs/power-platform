@@ -44,7 +44,7 @@ After running the desired predeployment logic in cloud flows, use the **Perform 
 
 :::image type="content" source="media/pipelines-approval-flow.png" alt-text="Pipelines approvals":::
 
-**Deployment requested step**
+#### Deployment requested step
 
 | Event | Request Parameters  | Output Parameters | Callback | Comments |
 | --- | --- | --- | --- | --- |
@@ -52,7 +52,7 @@ After running the desired predeployment logic in cloud flows, use the **Perform 
 
  | N/A  | Not gated. Can be used for predeployment validation of the solution artifact |
 
-**Pre-deployment step**
+#### Pre-deployment step
 
 | Event | Request Parameters  | Output Parameters | Callback | Comments |
 | --- | --- | --- | --- | --- |
@@ -63,13 +63,9 @@ Can be used to trigger approvals and other business logic before a deployment ca
 Requires calling the unbound action "UpdatePreDeploymentStepStatus" to mark the set the PreDeploymentStepStatus after other business logic has completed. |
 | OnPreDeploymentCompleted   | StageRunID | Artifact Name Deployment Stage Name Deployment Pipeline Name PreDeployment Step Status (10 = Pending, 20 = Completed, Failed = 30),Comments | N/A  | Configure any necessary business logic that takes place before the solution import (deployment to target) is started. The pipeline won't proceed to the next step until the **UpdatePreDeploymentStatus** is set to completed. |
 
-**Deployment Step**
+#### Deployment step
 
-| **Business Event**   | **Request Param**   | **Response Params**   | **Callback** | **Notes** |
+| Business Event | Request Param | Response Params | Callback | Notes |
 | --- | --- | --- | --- | --- |
-| OnDeploymentStarted   | StageRunID (GUID)  | Artifact Name Deployment Stage Name Deployment Pipeline Name Deployment Notes,Solution Artifact VersionStage Run Details Link (link to record in the pipelines configuration app),Artifact Download Link,Deployment Status ( **Started, Scheduled** )    | N/A   |  ArtifactFileDownloadLink is a link to download the managed solution file. To download the unmanaged solution, change the link from "/artifactfile/" to "/artifactfileunmanaged/"
-Example to download managed solution: [https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfile/$value](https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfile/%24value)
-
-Example to download unmanaged solution: <https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfileunmanaged/$value> |
-| OnDeploymentCompleted   | StageRunID (GUID), DeploymentStatus, ErrorMessage  | Artifact Name Deployment Stage Name Deployment Pipeline Name
- | N/A  | Triggers when the deployment succeeded, Failed, or was Canceled. Can be used to trigger custom post-deployment logic. |
+| `OnDeploymentStarted`   | StageRunID (GUID)  | Artifact Name Deployment Stage Name Deployment Pipeline Name Deployment Notes,Solution Artifact VersionStage Run Details Link (link to record in the pipelines configuration app),Artifact Download Link,Deployment Status ( **Started, Scheduled** )    | N/A   |ArtifactFileDownloadLink is a link to download the managed solution file. To download the unmanaged solution, change the link from "/artifactfile/" to "/artifactfileunmanaged/"<br/>Example to download managed solution: [https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfile/$value](https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfile/%24value)<br/>Example to download unmanaged solution: <https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfileunmanaged/$value> |
+| `OnDeploymentCompleted`   | StageRunID (GUID), DeploymentStatus, ErrorMessage  | Artifact Name Deployment Stage Name Deployment Pipeline Name | N/A  | Triggers when the deployment succeeded, Failed, or was Canceled. Can be used to trigger custom post-deployment logic. |
