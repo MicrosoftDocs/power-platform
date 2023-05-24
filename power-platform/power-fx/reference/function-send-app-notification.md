@@ -40,7 +40,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 ### XSendAppNotification 
 
-**XSendAppNotification** (_Title_, _Recipient_, _Body_, _Actions_, _Icon Type_, _Toast Type_, _Expiry_, _Priority_ ) 
+**XSendAppNotification** (_Title_, _Recipient_, _Body_, _Actions_, _Icon Type_, _Toast Type_, _Expiry_, _Priority_) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -55,7 +55,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 ### XCreateUrlAction
 
-**XCreateUrlAction** (_Title_, _URL_, _Navigation Target_ )
+**XCreateUrlAction** (_Title_, _URL_, _Navigation Target_)
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -65,7 +65,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 ### XCreateSidePaneActionForDashbaord
 
-**XCreateSidePaneActionForDashboard**( _Title_, _Pane ID_, _Pane Title_, _Page Type_, _Dashboard ID_ ) 
+**XCreateSidePaneActionForDashboard** (_Title_, _Pane ID_, _Pane Title_, _Page Type_, _Dashboard ID_) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -76,7 +76,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 ### XCreateSidePaneActionForEntity
 
-**XCreateSidePaneActionForEntity**( _Title_, _Pane ID_, _Pane Title_, _Page Type_, _Entity Name_, _Entity ID_ ) 
+**XCreateSidePaneActionForEntity** (_Title_, _Pane ID_, _Pane Title_, _Page Type_, _Entity Name_, _Entity ID_) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -88,7 +88,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 ### XCreateSidePaneActionForEntityList
 
-**XCreateSidePaneActionForEntityList**( _Title_, _Pane ID_, _Pane Title_, _Page Type_, _Entity Name_  ) 
+**XCreateSidePaneActionForEntityList** (_Title_, _Pane ID_, _Pane Title_, _Page Type_, _Entity Name_) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -99,7 +99,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 ### XCreateTeamsChatAction
 
-**XCreateTeamsChatAction**( _Title_, _Chat ID_, _Member IDs_, _Record ID_, _Entity Name_, _Initial Message_ ) 
+**XCreateTeamsChatAction** (_Title_, _Chat ID_, _Member IDs_, _Record ID_, _Entity Name_, _Initial Message_) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
