@@ -14,6 +14,9 @@ ALM processes often vary across customers and business organizations. Pipelines 
 
 Pipelines use [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) to provide flexibility in how the system can be extended. Pipelines event data is relayed to subscribers such as Power Automate, which provides over 1,000 built-in [connectors](/connectors/connector-reference/), Azure Service Bus, Azure Event Hubs, Webhooks, and Dataverse plug-ins. Regardless of how pipelines are extended, the maker-facing deployment experience remains simple.
 
+> [!IMPORTANT]
+> The capability to extend pipelines might not be available yet in your region.
+
 ## Add predeployment conditions
 
 You can optionally configure a gate for each pipeline stage. Then when a deployment is submitted, the request remains in a pending state until your business logic executes and finally signals the pipelines host to complete or reject the deployment. Pending deployment requests contain both the exported managed and unmanaged solutions, and connections and environment variable values for the target environment. For example, you may wish to run code scans, commit the solution to source control, or perform any number of automated tasks before deployments to a target environment.
@@ -36,7 +39,7 @@ Triggers are available in Power Automate cloud flows within the pipelines host e
 - **Catalog**: Microsoft Dataverse Common
 - **Category**: Power Platform Pipelines
 - **Table name**: (none)
-- **Action name**: Select an option from the list
+- **Action name**: Select an option from the list. These are the custom actions exposed by pipelines that produces a trigger in Power Automate cloud flows.
 
 :::image type="content" source="media/pipelines-triggers.png" alt-text="Pipelines triggers in Power Automate":::
 
