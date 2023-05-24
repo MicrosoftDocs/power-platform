@@ -134,4 +134,5 @@ The pipeline configuration app and host environment provide many other benefits 
 
 ## Next steps
 
-[Run pipelines in Power Platform](run-pipeline.md)
+- [Extend pipelines in Power Platform](extend-pipelines.md)
+- [Run pipelines in Power Platform](run-pipeline.md)
