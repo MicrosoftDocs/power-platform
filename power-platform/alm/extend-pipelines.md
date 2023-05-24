@@ -6,7 +6,7 @@ ms.author: caburk
 ms.reviewer: kvivek
 ms.topic: overview
 ms.date: 05/23/2023
-ms.custom: template-how-to
+ms.custom: 
 ---
 # Extend pipelines in Power Platform
 
@@ -58,6 +58,9 @@ After running the desired predeployment logic in cloud flows, use the **Perform 
 
 :::image type="content" source="media/pipelines-approval-flow.png" alt-text="Pipelines approvals":::
 
+> [!NOTE]
+> The system sets **10** (pending) for `PreDeploymentStepStatus` as the default state for submitted deployments when this configuration is present.
+
 ## Event details
 
 The below tables indicate inputs and outputs for each event. Output parameters can be used within subsequent steps of a cloud flow.
@@ -81,3 +84,13 @@ The below tables indicate inputs and outputs for each event. Output parameters c
 | --- | --- | --- | ---  |
 | `OnDeploymentStarted`   | `StageRunID (GUID)`  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>Deployment Notes,<br/>Solution Artifact Version, <br/>Stage Run Details Link (link to record in the pipelines configuration app), <br/>Artifact Download Link, <br/>Deployment Status ( **Started, Scheduled** )   |ArtifactFileDownloadLink is a link to download the managed solution file. To download the unmanaged solution, change the link from "/artifactfile/" to "/artifactfileunmanaged/"<br/><br/>Example to download managed solution: `https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfile/$value`<br/><br/>Example to download unmanaged solution: `https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfileunmanaged/$value` |
 | `OnDeploymentCompleted`   | `StageRunID (GUID)`, `DeploymentStatus`, `ErrorMessage`  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name  | Triggers when the deployment succeeded, failed, or was canceled. Can be used to trigger custom post-deployment logic. |
+
+## Next step
+
+[Run pipelines in Power Platform](run-pipeline.md)
+
+### Related content
+
+[What are cloud flows?](/power-automate/overview-cloud)<br/>
+[Use Dataverse connector with cloud flows](/power-automate/dataverse/overview)
+
