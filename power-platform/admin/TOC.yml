@@ -400,7 +400,7 @@
                       href: on-off-switch-for-learning-path-guided-help.md
             - name: Advanced environment operations
               items:
-                - name: Environment cleanup process
+                - name: Automatic environment cleanup
                   href: automatic-environment-cleanup.md
                 - name: Dataverse for Teams environment cleanup
                   href: inactive-teams-environment.md
