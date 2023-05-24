@@ -1,11 +1,11 @@
 ---
-title: "CoE ALM Accelerator for Power Platform branching and merging"
+title: "CoE ALM Accelerator for Power Platform branching and merging (Deprecated)"
 description: "Discussion of branching and merging for ALM Accelerator using the Center of Excellence (CoE) command line interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/22/2023
 
 ms.topic: "article"
 ms.reviewer: sericks
@@ -13,7 +13,10 @@ search.audienceType:
   - admin
 ---
 
-# CoE ALM Accelerator for Power Platform branching and merging
+# CoE ALM Accelerator for Power Platform branching and merging (Deprecated)
+
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 Development as a team of makers, advanced makers, and professional developers often uncovers new concepts. One area of complexity is branching and merging. Using the links below, different [personas](./personas.md) can review each concept and determine their level of comfort.
 

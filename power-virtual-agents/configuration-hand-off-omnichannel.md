@@ -32,6 +32,9 @@ You can also enable single sign-on (SSO) to allow chatbots to sign users in if t
 - Your bot and Omnichannel for Customer Service must be in the same environment.
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
 
+> [!WARNING]
+> Power Virtual Agents bots with names that are longer than 30 characters will fail to connect when following the instructions in this topic. Ensure your bot's name contains less than 30 characters before proceeding.
+
 ## Connect your bot to Omnichannel for Customer Service
 
 1. In Power Virtual Agents, edit your bot. In the navigation menu, select **Settings**, **Agent transfers**, and then select the **Omnichannel** tile.
