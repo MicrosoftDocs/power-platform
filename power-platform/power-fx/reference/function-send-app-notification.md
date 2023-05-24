@@ -82,7 +82,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 | --------- | ---- | -------- | ----------- |
 | Title | String | Yes | The title that displays for the action. |
 | Pane ID | String | Yes | The ID of the new side pane. |
-| Pane Title | String | Yes | The title to display for the side pan.e |
+| Pane Title | String | Yes | The title to display for the side pane. |
 | Entity Name | String | Yes | The logical name of the entity. |
 | Entity ID | String | Yes | The ID of the entity record to open in the side pane. |
 
