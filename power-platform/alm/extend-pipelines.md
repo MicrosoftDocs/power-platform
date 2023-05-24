@@ -75,14 +75,14 @@ The tables below indicate inputs and outputs for each event. Output parameters c
 
 | Event | Input parameters  | Output parameters | Comments |
 | --- | --- | --- | ---  |
-| `OnPreDeploymentStarted` (Gated)  | `StageRunID` | Deployment Stage Run Name, Deployment Stage Name, Deployment Pipeline Name, Artifact Name, PreDeplymentStepStatus, Deployment Notes | - Only triggers when **Pre-Deployment Step Required** is checked in the pipeline stage configuration. <br/>- Can be used to trigger approvals and other business logic before a deployment can proceed to the next step. <br/>- Requires calling the unbound action `UpdatePreDeploymentStepStatus` to set the `PreDeploymentStepStatus` after other business logic has completed. |
-| `OnPreDeploymentCompleted`   | `StageRunID` | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,<br/> PreDeployment Step Status (10 = Pending, 20 = Completed, Failed = 30), <br/>Comments  | Event produced when **UpdatePreDeploymentStatus** is set to completed. |
+| `OnPreDeploymentStarted` (Gated)  | `StageRunID` | Artifact Name, <br/>Deployment Stage Run Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>PreDeplymentStepStatus, <br/>Deployment Notes | - Only triggers when **Pre-Deployment Step Required** is checked in the pipeline stage configuration. <br/>- Can be used to trigger approvals and other business logic before a deployment can proceed to the next step. <br/>- Requires calling the unbound action `UpdatePreDeploymentStepStatus` to set the `PreDeploymentStepStatus` after other business logic has completed. |
+| `OnPreDeploymentCompleted`   | `StageRunID` | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,<br/> PreDeployment Step Status (**10** (Pending), **20** (Completed), **30** (Failed)), <br/>Comments  | Event produced when **UpdatePreDeploymentStatus** is set to completed. |
 
 #### Deployment step
 
 | Business Event | Input parameters | Output parameters  | Comments |
 | --- | --- | --- | ---  |
-| `OnDeploymentStarted`   | `StageRunID (GUID)`  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>Deployment Notes,<br/>Solution Artifact Version, <br/>Stage Run Details Link (link to record in the pipelines configuration app), <br/>Artifact Download Link, <br/>Deployment Status ( **Started, Scheduled** )   |ArtifactFileDownloadLink is a link to download the managed solution file. To download the unmanaged solution, change the link from "/artifactfile/" to "/artifactfileunmanaged/"<br/><br/>Example to download managed solution: `https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfile/$value`<br/><br/>Example to download unmanaged solution: `https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfileunmanaged/$value` |
+| `OnDeploymentStarted`   | `StageRunID (GUID)`  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>Deployment Notes,<br/>Solution Artifact Version, <br/>Stage Run Details Link (link to record in the pipelines configuration app), <br/>Artifact Download Link, <br/>Deployment Status ( **Started, Scheduled** )   |ArtifactFileDownloadLink is a link to download the managed solution file. To download the unmanaged solution, change the link from "/artifactfile/" to "/artifactfileunmanaged/"<br/><br/>Example to download managed solution: `https://[myorg].crm.dynamics.com/api/data/v9.0/deploymentartifacts(GUID)/artifactfile/$value`<br/><br/>Example to download unmanaged solution: `https://[myorg].crm.dynamics.com/api/data/v9.0/deploymentartifacts(GUID)/artifactfileunmanaged/$value` |
 | `OnDeploymentCompleted`   | `StageRunID (GUID)`, `DeploymentStatus`, `ErrorMessage`  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name  | Triggers when the deployment succeeded, failed, or was canceled. Can be used to trigger custom post-deployment logic. |
 
 ## Next step
@@ -93,4 +93,3 @@ The tables below indicate inputs and outputs for each event. Output parameters c
 
 [What are cloud flows?](/power-automate/overview-cloud)<br/>
 [Use Dataverse connector with cloud flows](/power-automate/dataverse/overview)
-
