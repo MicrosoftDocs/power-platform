@@ -2,8 +2,7 @@
 title: "Add a chatbot to Microsoft Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
-ms.date: 03/24/2023
-
+ms.date: 05/23/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -296,6 +295,9 @@ To disallow users from adding a bot to a team:
 
 Private greetings from a bot are useful for when you want team members to have one-on-one conversations with the bot without needing to manually install the bot themselves.
 
+> [!NOTE]
+> Private greeting configuration isn't supported for bots using the [upgraded unified authoring canvas](unified-authoring-conversion.md).
+
 When enabled, your bot will automatically start a conversation with team members. To customize the bot's greeting message, [modify the Greeting system topic](configure-bot-greeting.md#modify-the-system-greeting-topic-recommended).
 
 Consider how relevant the bot is to team members. Make sure the bot's greeting helps them understand what to do with it, describes its limitations and, most importantly, gets them comfortable interacting with it.
@@ -354,6 +356,7 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 
 ## Known limitations
 
+- [Private greeting configuration](#configure-private-greeting-behavior) isn't supported for bots using the [upgraded unified authoring canvas](unified-authoring-conversion.md).
 - Currently, only the **Personal** and **Team** scopes are supported for Microsoft Teams. **Group chat** is not supported.
 - [Setting the bot avatar icon](customize-default-canvas.md) on the details page won't show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
