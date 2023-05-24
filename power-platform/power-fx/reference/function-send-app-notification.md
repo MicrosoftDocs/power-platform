@@ -31,16 +31,16 @@ The **XSendAppNotification** function is used to send notifications within an ap
 In addition, an in-app notification can include zero to many actions on the notification card. To add actions to the app notification card, the following functions are used as parameters in the **XSendAppNotification** function. For more information on each action type, see [Notification actions](/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?branch=jaredha-appnotificationapi&tabs=powerfx%2Csdk2%2Cwebapi3%2Cpowerfx4%2Cwebapi5%2Cwebapi6#notification-actions).
 
 - **XCreateUrlAction**: Adds a URL action to the notification card.
-- **XCreateSidePaneActionForDashboard**: Adds a side pane action that will navigate to a page with a type of `dashboard` within the side pane.  
-- **XCreateSidePaneActionForEntity**: Adds a side pane action that will navigate to a page with a type of `entityrecord` within the side pane. 
-- **XCreateSidePaneActionForEntityList**: Adds a side pane action that will navigate to a page with a type of `entitylist` within the side pane.
+- **XCreateSidePaneActionForDashboard**: Adds a side pane action that navigates to a page with a type of `dashboard` within the side pane.  
+- **XCreateSidePaneActionForEntity**: Adds a side pane action that navigates to a page with a type of `entityrecord` within the side pane. 
+- **XCreateSidePaneActionForEntityList**: Adds a side pane action that navigates to a page with a type of `entitylist` within the side pane.
 - **XCreateTeamsChatAction**: Adds a Teams chat action to the notification card.
 
 ## Syntax
 
 ### XSendAppNotification 
 
-**XSendAppNotification**( _Title_, _Recipient_, _Body_, _Actions_, _Icon Type_, _Toast Type_, _Expiry_, _Priority_ ) 
+**XSendAppNotification** (_Title_, _Recipient_, _Body_, _Actions_, _Icon Type_, _Toast Type_, _Expiry_, _Priority_ ) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -55,7 +55,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 ### XCreateUrlAction
 
-**XCreateUrlAction**( _Title_, _URL_, _Navigation Target_ )
+**XCreateUrlAction** (_Title_, _URL_, _Navigation Target_ )
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
