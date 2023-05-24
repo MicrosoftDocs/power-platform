@@ -3,8 +3,8 @@ title: Extend pipelines in Power Platform
 description: Add business log to customize the pipeline deployment process.
 author: caburk
 ms.author: caburk
-ms.reviewer: caburk
-ms.topic: how-to
+ms.reviewer: kvivek
+ms.topic: overview
 ms.date: 05/23/2023
 ms.custom: template-how-to
 ---
