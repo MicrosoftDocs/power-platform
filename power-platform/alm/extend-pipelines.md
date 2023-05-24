@@ -15,7 +15,7 @@ ALM processes often vary across customers and business organizations. Pipelines 
 Pipelines use [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) to provide flexibility in how the system can be extended. Pipelines event data is relayed to subscribers such as Power Automate, which provides over 1,000 built-in [connectors](/connectors/connector-reference/), Azure Service Bus, Azure Event Hubs, Webhooks, and Dataverse plug-ins. Regardless of how pipelines are extended, the maker-facing deployment experience remains simple.
 
 > [!IMPORTANT]
-> The capability to extend pipelines might not be available yet in your region.
+> The capability to extend pipelines is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Add predeployment conditions
 
@@ -39,7 +39,12 @@ Triggers are available in Power Automate cloud flows within the pipelines host e
 - **Catalog**: Microsoft Dataverse Common
 - **Category**: Power Platform Pipelines
 - **Table name**: (none)
-- **Action name**: Select an option from the list. These are the custom actions exposed by pipelines that produces a trigger in Power Automate cloud flows.
+- **Action name**: Select an option from the list. Pipelines provide the following custom actions that produces a trigger in Power Automate cloud flows:
+  - `OnDeploymentCompleted`
+  - `OnDeploymentRequested`
+  - `OnDeploymentStarted`
+  - `OnPreDeploymentCompleted`
+  - `OnPreDeploymentStarted`
 
 :::image type="content" source="media/pipelines-triggers.png" alt-text="Pipelines triggers in Power Automate":::
 
@@ -49,20 +54,28 @@ After running the desired predeployment logic in cloud flows, use the **Perform 
 
 #### Deployment requested step
 
-| Event | Request Parameters  | Output Parameters | Callback | Comments |
-| --- | --- | --- | --- | --- |
-| `OnDeploymentRequested`  | `StageRunID` | Artifact Name, Deployment Stage Name, Deployment Pipeline Name, Solution Artifact Version, Deployment Stage Run Name, Stage Run Details Link (link to record in the pipelines configuration app), Artifact Download Link | N/A  | Not gated. Can be used for predeployment validation of the solution artifact |
+| Event | Request Parameters  | Output Parameters | Comments |
+| --- | --- | --- | --- |
+| `OnDeploymentRequested`  | `StageRunID` | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>Solution Artifact Version, <br/>Deployment Stage Run Name, <br/>Stage Run Details Link (link to record in the pipelines configuration app), <br/>Artifact Download Link  | Not gated. Can be used for predeployment validation of the solution artifact |
 
 #### Pre-deployment step
 
-| Event | Request Parameters  | Output Parameters | Callback | Comments |
-| --- | --- | --- | --- | --- |
-| `OnPreDeploymentStarted` (Gated)  | `StageRunID` | Deployment Stage Run Name, Deployment Stage Name, Deployment Pipeline Name, Artifact Name, PreDeplymentStepStatus, Deployment Notes |UpdatePreDeploymentStepStatus(StageRunID PreDeplymentStepStatus, PreDeploymentNotes); PreDeploymentStepStatus (10 = Pending, 20 = Completed, Failed = 30) Pending = State until marked as completed or failed. Completed = Deployment will proceed, Failed = Reject the deployment. It won't proceed  | - Only triggers when **Predeployment step required** is checked in the pipeline stage configuration. <br/>- Can be used to trigger approvals and other business logic before a deployment can proceed to the next step. <br/>- Requires calling the unbound action **UpdatePreDeploymentStepStatus** to mark the set the PreDeploymentStepStatus after other business logic has completed. |
-| `OnPreDeploymentCompleted`   | `StageRunID` | Artifact Name Deployment Stage Name Deployment Pipeline Name PreDeployment Step Status (10 = Pending, 20 = Completed, Failed = 30),Comments | N/A  | Configure any necessary business logic that takes place before the solution import (deployment to target) is started. The pipeline won't proceed to the next step until the **UpdatePreDeploymentStatus** is set to completed. |
+| Event | Request Parameters  | Output Parameters | Comments |
+| --- | --- | --- | ---  |
+| `OnPreDeploymentStarted` (Gated)  | `StageRunID` | Deployment Stage Run Name, Deployment Stage Name, Deployment Pipeline Name, Artifact Name, PreDeplymentStepStatus, Deployment Notes | - Only triggers when **Predeployment step required** is checked in the pipeline stage configuration. <br/>- Can be used to trigger approvals and other business logic before a deployment can proceed to the next step. <br/>- Requires calling the unbound action **UpdatePreDeploymentStepStatus** to mark the set the PreDeploymentStepStatus after other business logic has completed. |
+| `OnPreDeploymentCompleted`   | `StageRunID` | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,<br/> PreDeployment Step Status (10 = Pending, 20 = Completed, Failed = 30), <br/>Comments  | Configure any necessary business logic that takes place before the solution import (deployment to target) is started. The pipeline won't proceed to the next step until the **UpdatePreDeploymentStatus** is set to completed. |
+
+For the `OnPreDeploymentStarted` (Gated) event, the following is the callback:
+
+`UpdatePreDeploymentStepStatus (StageRunID PreDeplymentStepStatus,`PreDeploymentNotes`); PreDeploymentStepStatus (10 = Pending, 20 = Completed, Failed = 30)`
+
+- Pending = State until marked as completed or failed.
+- Completed = Deployment will proceed.
+- Failed = Reject the deployment. It won't proceed.  
 
 #### Deployment step
 
-| Business Event | Request Param | Response Params | Callback | Notes |
-| --- | --- | --- | --- | --- |
-| `OnDeploymentStarted`   | `StageRunID (GUID)`  | Artifact Name Deployment Stage Name Deployment Pipeline Name Deployment Notes,Solution Artifact VersionStage Run Details Link (link to record in the pipelines configuration app),Artifact Download Link,Deployment Status ( **Started, Scheduled** )    | N/A   |ArtifactFileDownloadLink is a link to download the managed solution file. To download the unmanaged solution, change the link from "/artifactfile/" to "/artifactfileunmanaged/"<br/><br/>Example to download managed solution: `https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfile/$value`<br/><br/>Example to download unmanaged solution: `https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfileunmanaged/$value` |
-| `OnDeploymentCompleted`   | `StageRunID (GUID)`, `DeploymentStatus`, `ErrorMessage`  | Artifact Name Deployment Stage Name Deployment Pipeline Name | N/A  | Triggers when the deployment succeeded, Failed, or was Canceled. Can be used to trigger custom post-deployment logic. |
+| Business Event | Request Param | Response Params  | Notes |
+| --- | --- | --- | ---  |
+| `OnDeploymentStarted`   | `StageRunID (GUID)`  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>Deployment Notes,<br/>Solution Artifact Version, <br/>Stage Run Details Link (link to record in the pipelines configuration app), <br/>Artifact Download Link, <br/>Deployment Status ( **Started, Scheduled** )   |ArtifactFileDownloadLink is a link to download the managed solution file. To download the unmanaged solution, change the link from "/artifactfile/" to "/artifactfileunmanaged/"<br/><br/>Example to download managed solution: `https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfile/$value`<br/><br/>Example to download unmanaged solution: `https://myorg.crm.dynamics.com/api/data/v9.0/deploymentartifacts(55518dfc-23e5-ed11-8848-0022482b22b5)/artifactfileunmanaged/$value` |
+| `OnDeploymentCompleted`   | `StageRunID (GUID)`, `DeploymentStatus`, `ErrorMessage`  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name  | Triggers when the deployment succeeded, Failed, or was Canceled. Can be used to trigger custom post-deployment logic. |
