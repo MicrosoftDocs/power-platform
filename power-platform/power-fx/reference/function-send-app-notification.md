@@ -2,10 +2,9 @@
 title: XSendAppNotification and related functions in Power Apps
 description: Reference information including syntax and examples for the XSendAppNotification, XCreateUrlAction, XCreateSidePaneActionForDashboard, XCreateSidePaneActionForEntity, XCreateSidePaneActionForEntityList, and XCreateTeamsChatAction functions in Power Apps.
 author: jaredha
-
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: 
+ms.reviewer: mkaur
 ms.date: 5/8/2023
 ms.subservice: power-fx
 ms.author: jaredha
@@ -14,18 +13,22 @@ search.audienceType:
 contributors:
 ---
 
-# XSendAppNotification and related action functions in Power Apps
+# XSendAppNotification and related action functions in Power Apps (preview)
+
+[This article is pre-release documentation and is subject to change.]
 
 Send an in-app notification with optional actions to a recipient.  
 
 > [!IMPORTANT]
-> The functions in this topic are in preview and will change before general availability. While in preview, the "X" prefix will be used on the functions, and the functions will be available for use only with [Dataverse low-code plug-ins](https://learn.microsoft.com/power-apps/maker/data-platform/low-code-plug-ins).
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - Throughout the preview period, the functions are labeled with the **X** prefix and can only be used with the [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins).
 
 ## Description
 
-The **XSendAppNotification** function sends an in-app notification to a recipient. These notifications are displayed ot the app user as a toast or within the notification center. See [Send in-app notifications within model-driven apps](https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications.md) for more information.
+The **XSendAppNotification** function sends an in-app notification to a recipient. These notifications are displayed ot the app user as a toast or within the notification center. For more information, see [Send in-app notifications within model-driven apps](/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications).
 
-An in-app notification can have zero to many actions on the notification card. The following functions are used as parameters in the XSendAppNotification function to add actions to the app notification card. See [Notification actions](https://review.learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?branch=jaredha-appnotificationapi&tabs=powerfx%2Csdk2%2Cwebapi3%2Cpowerfx4%2Cwebapi5%2Cwebapi6#notification-actions) for more information on each action type.
+An in-app notification can have zero to many actions on the notification card. The following functions are used as parameters in the XSendAppNotification function to add actions to the app notification card. For more information on each action type, see [Notification actions](/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?branch=jaredha-appnotificationapi&tabs=powerfx%2Csdk2%2Cwebapi3%2Cpowerfx4%2Cwebapi5%2Cwebapi6#notification-actions).
 - **XCreateUrlAction**: adds a URL action to the notification.
 - **XCreateSidePaneActionForDashboard**: adds a side pane action that will navigate in the side pane to a page with a type of `dashboard`.
 - **XCreateSidePaneActionForEntity**: adds a side pane action that will navigate in the side pane to a page with a type of `entityrecord`.
@@ -119,7 +122,7 @@ XSendAppNotification(
 )
 ```
 ### In-app notification with two actions
-The following is an example formula that can be used with an automated plugin when a new [Task](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/task) record is created. The formula sends an in-app notification to the owner of the task record, with two actions on the notification card:
+The following is an example formula that can be used with an automated plugin when a new [Task](/power-apps/developer/data-platform/reference/entities/task) record is created. The formula sends an in-app notification to the owner of the task record, with two actions on the notification card:
 - A **side pane** action opens the new task record in a side pane.
 - A **Teams chat** action initiates a Teams chat with the owner of the account record assigned as the "Regarding" entity record for the new task (Note: assumes an account record is selected in the field for the task).
 
