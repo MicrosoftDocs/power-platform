@@ -1,14 +1,14 @@
 ---
-title: Extend pipelines
-description: Add business log to customize the deployment process.
+title: Extend pipelines in Power Platform
+description: Add business log to customize the pipeline deployment process.
 author: caburk
 ms.author: caburk
 ms.reviewer: caburk
 ms.topic: how-to
-ms.date: 05/20/2023
+ms.date: 05/23/2023
 ms.custom: template-how-to
 ---
-# Extend pipelines
+# Extend pipelines in Power Platform
 
 ALM processes often vary across customers and business organizations. Pipelines extensibility provides the ability to apply custom logic at multiple steps of your deployment process. Using Power Automate cloud flows, you can optionally extend and integrate pipelines with other systems of record. For example, you can add approvals, send notifications, or use pipelines in Power Platform along-side CI/CD applications such as Azure DevOps, GitHub, and others.
 
