@@ -44,14 +44,14 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
-| Title | String | Yes | The title of the app notification |
-| Recipient | Entity | Yes | An entity of `systemuser` who is the recipient of the notification |
-| Body | String | No | The notification body |
-| Actions | Function | No | An array of the action functions to add actions ot the notification |
-| Icon Type | Int | No | Picklist value for the type of icon (Info, Success, Failure, Warning, Mention, Custom) | 
-| Toast Type | Int | No | Picklist value for the type of toast (Timed vs Hidden) |
-| Expiry | Int | No | The number of seconds from when the notification should be deleted if not already dismissed |
-| Priority | Int | No | Picklist value for the priority of notification (Normal or High) |
+| Title | String | Yes | The title of the app notification. |
+| Recipient | Entity | Yes | An entity of `systemuser` who is the recipient of the notification. |
+| Body | String | No | The notification body. |
+| Actions | Function | No | An array of the action functions to add actions ot the notification. |
+| Icon Type | Int | No | Picklist value for the type of icon (info, success, failure, warning, mention, custom). | 
+| Toast Type | Int | No | Picklist value for the type of toast (timed versus hidden). |
+| Expiry | Int | No | The number of seconds from when the notification should be deleted if not already dismissed. |
+| Priority | Int | No | Picklist value for the priority of notification (normal or high). |
 
 ### XCreateUrlAction
 
@@ -59,8 +59,8 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
-| Title | String | Yes | The title that displays for the action |
-| URL | String | Yes | The URL to be opened when the action is selected |
+| Title | String | Yes | The title that displays for the action. |
+| URL | String | Yes | The URL to be opened when the action is selected. |
 | Navigation Target | String | No | Defines where the navigation link opens. The options are: <br><ul><li>`dialog`: Opens in the center dialog.</li><li>`inline`: Default. Opens in the current page.</li><li>`newWindow`: Opens in a new browser tab.</li></ul> | 
 
 ### XCreateSidePaneActionForDashbaord
@@ -69,10 +69,10 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
-| Title | String | Yes | The title that displays for the action |
-| Pane ID | String | Yes | The ID of the new side pane |
-| Pane Title | String | Yes | The title to display for the side pane |
-| Dashboard ID | GUID | Yes | The ID of the dashboard to open in the side pane |
+| Title | String | Yes | The title that displays for the action. |
+| Pane ID | String | Yes | The ID of the new side pane. |
+| Pane Title | String | Yes | The title to display for the side pane. |
+| Dashboard ID | GUID | Yes | The ID of the dashboard to open in the side pane. |
 
 ### XCreateSidePaneActionForEntity
 
@@ -80,11 +80,11 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
-| Title | String | Yes | The title that displays for the action |
-| Pane ID | String | Yes | The ID of the new side pane |
-| Pane Title | String | Yes | The title to display for the side pane |
-| Entity Name | String | Yes | The logical name of the entity |
-| Entity ID | String | Yes | The ID of the entity record to open in the side pane |
+| Title | String | Yes | The title that displays for the action. |
+| Pane ID | String | Yes | The ID of the new side pane. |
+| Pane Title | String | Yes | The title to display for the side pan.e |
+| Entity Name | String | Yes | The logical name of the entity. |
+| Entity ID | String | Yes | The ID of the entity record to open in the side pane. |
 
 ### XCreateSidePaneActionForEntityList
 
@@ -92,10 +92,10 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
-| Title | String | Yes | The title that displays for the action |
-| Pane ID | String | Yes | The ID of the new side pane |
-| Pane Title | String | Yes | The title to display for the side pane |
-| Entity Name | String | Yes | The logical name of the entity to open as a list in the side pane |
+| Title | String | Yes | The title that displays for the action. |
+| Pane ID | String | Yes | The ID of the new side pane. |
+| Pane Title | String | Yes | The title to display for the side pane. |
+| Entity Name | String | Yes | The logical name of the entity to open as a list in the side pane. |
 
 ### XCreateTeamsChatAction
 
@@ -103,11 +103,11 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
-| Title | String | Yes | The title that displays for the action |
-| Chat ID | String | No | If opening an existing chat, the ID of the chat session to be opened |
-| Member IDs | GUID | No | If creating a new chat, an array of Azure AD Object ID values of the participants to be included in the chat |
+| Title | String | Yes | The title that displays for the action. |
+| Chat ID | String | No | If opening an existing chat, the ID of the chat session to be opened. |
+| Member IDs | GUID | No | If creating a new chat, an array of Azure AD Object ID values of the participants to be included in the chat. |
 | Record ID | GUID | No | If linking to a Dynamics 365 record, the ID of the record to which the chat should be linked. |
-| Entity Name | String | No | If linking to a Dynamics 365 record, the logical name of the entity of the record to which the chat should be linked |
+| Entity Name | String | No | If linking to a Dynamics 365 record, the logical name of the entity of the record to which the chat should be linked. |
 | Initial Message | String | No | An introductory message of the new chat. |
 
 ## Examples
