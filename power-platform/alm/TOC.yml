@@ -67,11 +67,13 @@
           items:
             - name: What are pipelines?
               href: pipelines.md
-              displayName: release management change management deploy solutions 
+              displayName: release management change management deploy solutions
             - name: Set up pipelines
-              href: set-up-pipelines.md              
+              href: set-up-pipelines.md
             - name: Run pipelines
-              href: run-pipeline.md              
+              href: run-pipeline.md
+            - name: Extend pipelines
+              href: extend-pipelines.md
     - name: ALM for developers
       href: alm-for-developers.md
       items:
