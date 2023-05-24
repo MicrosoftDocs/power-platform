@@ -28,7 +28,7 @@ When configuring the pipeline stage, select the **Pre-Deployment Step Required**
   :::image type="content" source="media/pipelines-pre-step-config.png" alt-text="Pipelines pre-deployment step required":::
 
    > [!IMPORTANT]
-   > Adding a pre-deployment step gates pipelines deployments, but makers are required to have permission to import solutions to the target environment. A separate feature will be available soon for deploying with service principals.
+   > Adding a pre-deployment step gates pipelines deployments, but makers are required to have permission to import solutions to the target environment.
 
 ## Triggers and actions
 
