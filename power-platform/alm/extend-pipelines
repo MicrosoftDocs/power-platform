@@ -46,17 +46,18 @@ After running the desired pre-deployment logic in cloud flows, use the Perform a
 
 | Event | Request Parameters  | Output Parameters | Callback | Comments |
 | --- | --- | --- | --- | --- |
-| OnDeploymentRequested  | StageRunID | Artifact Name Deployment Stage Name Deployment Pipeline Name Solution Artifact Version Deployment Stage Run Name Stage Run Details Link (link to record in the pipelines configuration app)Artifact Download Link
+| OnDeploymentRequested  | StageRunID | Artifact Name, Deployment Stage Name, Deployment Pipeline Name, Solution Artifact Version, Deployment Stage Run Name, Stage Run Details Link (link to record in the pipelines configuration app), Artifact Download Link
 
- | N/A  | Not blocking. Can be used for pre-deployment validation of the solution artifact |
+ | N/A  | Not gated. Can be used for pre-deployment validation of the solution artifact |
 
 
 **Pre-deployment step**
 
 | Event | Request Parameters  | Output Parameters | Callback | Comments |
 | --- | --- | --- | --- | --- |
-| OnPreDeploymentStarted (Gated)  | StageRunID | Deployment Stage Run Name, Deployment Stage Name,Deployment Pipeline Name,Artifact Name, PreDeplymentStepStatus, Deployment Notes | UpdatePreDeploymentStepStatus(StageRunID PreDeplymentStepStatus, PreDeploymentNotes);  PreDeploymentStepStatus (10 = Pending, 20 = Completed, Failed = 30)
-Pending = State until marked as completed or failedCompleted = Deployment will proceedFailed = Reject the deployment  | Only triggers when Pre-deployment step required is checked in the pipeline stage configuration.
+| OnPreDeploymentStarted (Gated)  | StageRunID | Deployment Stage Run Name, Deployment Stage Name, Deployment Pipeline Name, Artifact Name, PreDeplymentStepStatus, Deployment Notes | UpdatePreDeploymentStepStatus(StageRunID PreDeplymentStepStatus, PreDeploymentNotes);  PreDeploymentStepStatus (10 = Pending, 20 = Completed, Failed = 30)
+Pending = State until marked as completed or failed. 
+Completed = Deployment will proceed, Failed = Reject the deployment. It will not proceed  | Only triggers when Pre-deployment step required is checked in the pipeline stage configuration.
 Can be used to trigger approvals and other business logic before a deployment can proceed to the next step.
 Requires calling the unbound action "UpdatePreDeploymentStepStatus" to mark the set the PreDeploymentStepStatus after other business logic has completed. |
 | OnPreDeploymentCompleted   | StageRunID | Artifact Name Deployment Stage Name Deployment Pipeline Name PreDeployment Step Status (10 = Pending, 20 = Completed, Failed = 30),Comments | N/A  | Configure any necessary business logic that takes place before the solution import (deployment to target) is started. The pipeline will not proceed to the next step until the **UpdatePreDeploymentStatus** is set to completed. |
