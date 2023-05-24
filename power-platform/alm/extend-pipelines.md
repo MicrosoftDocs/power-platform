@@ -30,7 +30,7 @@ When configuring the pipeline stage, select the **Pre-Deployment Step Required**
    > [!IMPORTANT]
    > Adding a pre-deployment step gates pipelines deployments, but makers are required to have permission to import solutions to the target environment.
 
-## Triggers and actions
+## Triggers
 
 Each step of a deployment triggers a real-time event at the beginning and completion of the step.
 
@@ -48,10 +48,16 @@ Triggers are available in Power Automate cloud flows within the pipelines host e
 
 :::image type="content" source="media/pipelines-triggers.png" alt-text="Pipelines triggers in Power Automate":::
 
-After running the desired predeployment logic in cloud flows, use the **Perform an unbound action** named **UpdatePreDeploymentStepStatus** to proceed or fail the deployment.
+## Action
+After running the desired predeployment logic in cloud flows, use the **Perform an unbound action** named **UpdatePreDeploymentStepStatus**. Set **PreDeploymentStepStatus** to 20 for completing and 30 for failing the deployment. 
+- **Pending** (10) = State until marked as completed or failed.
+- **Completed** (20) = Deployment will proceed.
+- **Failed** (30) = Reject the deployment. It won't proceed and status will be set to failed. Comments can be provided to indicate the reason for rejection.
 
 :::image type="content" source="media/pipelines-approval-flow.png" alt-text="Pipelines approvals":::
 
+## Event details
+The below tables indicate inputs and outputs for each event. Output parameters can be used within subsequent steps of a cloud flow. 
 #### Deployment requested step
 
 | Event | Request Parameters  | Output Parameters | Comments |
@@ -62,16 +68,9 @@ After running the desired predeployment logic in cloud flows, use the **Perform 
 
 | Event | Request Parameters  | Output Parameters | Comments |
 | --- | --- | --- | ---  |
-| `OnPreDeploymentStarted` (Gated)  | `StageRunID` | Deployment Stage Run Name, Deployment Stage Name, Deployment Pipeline Name, Artifact Name, PreDeplymentStepStatus, Deployment Notes | - Only triggers when **Predeployment step required** is checked in the pipeline stage configuration. <br/>- Can be used to trigger approvals and other business logic before a deployment can proceed to the next step. <br/>- Requires calling the unbound action **UpdatePreDeploymentStepStatus** to mark the set the PreDeploymentStepStatus after other business logic has completed. |
-| `OnPreDeploymentCompleted`   | `StageRunID` | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,<br/> PreDeployment Step Status (10 = Pending, 20 = Completed, Failed = 30), <br/>Comments  | Configure any necessary business logic that takes place before the solution import (deployment to target) is started. The pipeline won't proceed to the next step until the **UpdatePreDeploymentStatus** is set to completed. |
+| `OnPreDeploymentStarted` (Gated)  | `StageRunID` | Deployment Stage Run Name, Deployment Stage Name, Deployment Pipeline Name, Artifact Name, PreDeplymentStepStatus, Deployment Notes | - Only triggers when **Predeployment step required** is checked in the pipeline stage configuration. <br/>- Can be used to trigger approvals and other business logic before a deployment can proceed to the next step. <br/>- Requires calling the unbound action **UpdatePreDeploymentStepStatus** to set the PreDeploymentStepStatus after other business logic has completed. |
+| `OnPreDeploymentCompleted`   | `StageRunID` | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,<br/> PreDeployment Step Status (10 = Pending, 20 = Completed, Failed = 30), <br/>Comments  | Event produced when **UpdatePreDeploymentStatus** is set to completed. |
 
-For the `OnPreDeploymentStarted` (Gated) event, the following is the callback:
-
-`UpdatePreDeploymentStepStatus (StageRunID PreDeplymentStepStatus,`PreDeploymentNotes`); PreDeploymentStepStatus (10 = Pending, 20 = Completed, Failed = 30)`
-
-- Pending = State until marked as completed or failed.
-- Completed = Deployment will proceed.
-- Failed = Reject the deployment. It won't proceed.  
 
 #### Deployment step
 
