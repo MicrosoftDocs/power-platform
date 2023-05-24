@@ -715,6 +715,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "power-virtual-agents/teams/publication-add-bot-to-microsoft-teams.md",
+      "redirect_url": "../publication-add-bot-to-microsoft-teams",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-virtual-agents/teams/publication-fundamentals-publish-channels-teams.md",
       "redirect_url": "../publication-fundamentals-publish-channels",
       "redirect_document_id": "false"
