@@ -4,7 +4,7 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/05/2023
+ms.date: 05/22/2023
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -134,17 +134,20 @@ In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamic
 - Microsoft 365 A5/E5/F5/G5 Compliance
 - Microsoft 365 F5 Security & Compliance
 - Microsoft 365 A5/E5/F5/G5 Insider Risk Management
+- Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
 [Learn more](https://go.microsoft.com/fwlink/?linkid=2214240) about applicable licenses.
 
 ## Exclusions
 
-Lockbox requests aren't triggered in the following engineering support scenarios:
+- Lockbox requests aren't triggered in the following engineering support scenarios:
 
-- Emergency scenarios that fall outside of standard operating procedures, such as a major service outage that requires immediate attention to recover or restore services in unexpected or unpredictable cases. These “break glass” events are rare and, in most instances, don't require any access to customer data to resolve.
+    - Emergency scenarios that fall outside of standard operating procedures, such as a major service outage that requires immediate attention to recover or restore services in unexpected or unpredictable cases. These “break glass” events are rare and, in most instances, don't require any access to customer data to resolve.
 
-- A Microsoft engineer accesses the underlying platform as part of troubleshooting and is inadvertently exposed to customer data. It's rare that such scenarios would result in access to meaningful quantities of customer data.  
+    - A Microsoft engineer accesses the underlying platform as part of troubleshooting and is inadvertently exposed to customer data. It's rare that such scenarios would result in access to meaningful quantities of customer data.  
 
-Customer Lockbox requests are also not triggered by external legal demands for data. For details, refer to the discussion of government requests for data in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/).
+- Customer Lockbox requests are also not triggered by external legal demands for data. For details, refer to the discussion of government requests for data in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/).
+
+- Customer Lockbox won't apply to the access and manual review of customer data shared for Copilot AI features. Customer Lockbox will remain enabled for all in-scope data. 
 
 ## Known issues
 

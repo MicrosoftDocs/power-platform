@@ -2,11 +2,12 @@
 title: "Sign up for a trial"
 description: "You can sign up for Power Virtual Agents individually as a trial if you're not an admin of an organization."
 keywords: "Administration, licensing, PVA"
-ms.date: 9/22/2020
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: "licensing, admin, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent

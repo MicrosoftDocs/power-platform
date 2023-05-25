@@ -2,7 +2,7 @@
 title: "Apply data loss prevention policies to chatbots"
 description: "Use and configure DLP policies with PowerShell cmdlets to help prevent accidental data exfiltration or data loss."
 keywords: "PVA"
-ms.date: 10/07/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
@@ -13,9 +13,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Configure data loss prevention for Power Virtual Agents chatbots (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+# Configure data loss prevention for Power Virtual Agents chatbots
 
 Organizational data is the most important asset administrators are responsible for safeguarding. The ability to build automation to use that data is a large part of their company's success.
 
