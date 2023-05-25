@@ -235,7 +235,7 @@ For more information about access and scope privileges, see [Security roles an
 12. Find your custom table in the list, and select the **Read**, **Write**, and **Append** privileges.
 13. Select **Save and Close**.
 
-### Create a customer security role from scratch
+### Create a custom security role from scratch
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and select **Environments** in the navigation pane.
 2. Select the environment for which you want to create a security role.
