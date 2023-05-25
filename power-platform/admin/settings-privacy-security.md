@@ -5,7 +5,7 @@ author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: admin
-ms.date: 05/03/2023
+ms.date: 05/25/2023
 ms.author: matp 
 search.audienceType: 
   - admin
@@ -37,7 +37,11 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Never send an error report to Microsoft|Default: Not selected. |  
 > |**Blocked attachments**| |
 > |Block these file extensions |Prevent upload or download of certain attachment types that are considered dangerous. Separate file extensions with a semicolon.<br /><br />Default extensions: ade; adp; app; asa; ashx; asmx; asp; bas; bat; cdx; cer; chm; class; cmd; com; config; cpl; crt; csh; dll; exe; fxp; hlp; hta; htr; htw; ida; idc; idq; inf; ins; isp; its; jar; js; jse; ksh; lnk; mad; maf; mag; mam; maq; mar; mas; mat; mau; mav; maw; mda; mdb; mde; mdt; mdw; mdz; msc; msh; msh1; msh1xml; msh2; msh2xml; mshxml; msi; msp; mst; ops; pcd; pif; prf; prg; printer; pst; reg; rem; scf; scr; sct; shb; shs; shtm; shtml; soap; stm; tmp; url; vb; vbe; vbs; vsmacros; vss; vst; vsw; ws; wsc; wsf; wsh|
-> |**Session expiration**|More information: [Security enhancements: User session and access management](user-session-management.md)> |  
+> |Blocked mime types|Prevent upload of certain attachment mime types that are considered dangerous. Separate mime types with a semicolon. <br/>
+> More information: [Mime type validation]|
+> |Allowed mime types|Allow upload of certain attachment mime types. Separate mime types with a semicolon. <br/>
+> More information: [Mime type validation]|
+> |**Session expiration**|More information: [Security enhancements: User session and access management](user-session-management.md) |  
 > |Set custom session timeout|Default: Off. Select **On** to specify values different from default values.|
 > |Enter maximum session length|After the time you set is reached, users must re-authenticate to customer engagement apps.|  
 > |How long before the session expires do you want to show a timeout warning?|After the time you set is reached, users receive an expiration warning.|  
@@ -89,6 +93,18 @@ When you use this setting, you can control error reporting for the entire organi
   
 -   Changing the default behavior for how error reporting happens.  
   
+## Mime type validation
+In addition to validation on the file extension, you can now enable validation on mime types.
 
+1. Go to **Environments** > [select an environment] > **Settings** > **Product** > **Privacy + Security**
+  
+2. Under **Privacy Preferences**, set allowed or blocked mime types.
+  
+   > [!div class="mx-imgBorder"] 
+   > ![Allowed or blocked mime types.](media/mimetypes.png "Allowed or blocked mime types")
+ 
+3. Select **Save**. 
+
+Allowed mime types is useful when there are only a few mime types that you want to allow. When the allowed mime types is set, the blocked mime types are ignored and only the mime types set in the allow list will be allowed.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
