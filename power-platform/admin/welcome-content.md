@@ -24,7 +24,8 @@ When the welcome content is enabled, upon signing in to Power Apps, makers will 
 > [!div class="mx-imgBorder"] 
 > ![Welcome content for makers.](media/welcome/maker-welcome-1.png "Welcome content for makers") 
 
-[!Important] [!include preview]
+> [!Important]
+> [!include [preview](../includes/cc-preview-features-definition.md)]
 
 ## Add welcome content
 
