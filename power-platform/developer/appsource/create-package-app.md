@@ -1,7 +1,7 @@
 ---
 title: "Step 3: Create an AppSource package for your app | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "Learn about how to create an AppSource package (.zip file) to include your solution and demo data files along with other required files." # 115-145 characters including spaces. This abstract displays in the search result.
-ms.date: 04/03/2023
+ms.date: 05/22/2023
 ms.reviewer: pehecke
 ms.topic: article
 author: mikkelsen2000
@@ -104,7 +104,8 @@ Create an *Input.xml* file that provides information about your package and the 
   </Locales>
 </PvsPackageData>
 ```
-
+> [!IMPORTANT]
+> All attributes of XML elements are case sensitive.
 
 Here is a description of the elements in the **Input.xml** file.
 
@@ -119,6 +120,9 @@ Here is a description of the elements in the **Input.xml** file.
 |LearnMoreLink|URL to the detailed information page for this package.|
 |Locales|An instance of this node for each language you want to support in the Preferred solution UI. This node contains the following children elements:<br/>- **PackageLocale.Code**: LCID of the language for this node. Example: US English is 1033<br/>&nbsp;&nbsp;**Note**: Please make sure to have same locale codes in both solution.xml and input.xml files.<br/>- **PackageLocale.IsDefault**: Indicates the default language. This is used as the fallback language if the language chosen by the customer is not available.<br/>- **Logo**: Logo for your app package. Size of the image must be 32x32. Valid image formats are PNG and JPG.<br/>- **Terms**: Name of the HTML file that contains your license terms for each language.|
 
+> [!IMPORTANT]
+> For the `SupportedCountries` element, ensure not to have any spaces and new line keywords between the country codes.
+
 ## Add the items to an AppSource package
 
 The final step is to add all the components that you created earlier into a single compressed (zip) file, which will be your app source package.
@@ -128,7 +132,7 @@ The final step is to add all the components that you created earlier into a sing
     :::image type="content" source="media/appsource-package.png" alt-text="AppSource package":::
 
     > [!IMPORTANT]
-    > You must follow the content structure precisely for your package as described here otherwise, your package will fail during certification. Some common issues that lead to certification failure are incorrect file names or a nested file structure.
+    > You must follow the content structure precisely for your package as described here. Otherwise, your package will fail during certification. Some common issues that lead to certification failure are incorrect file names or a nested file structure.
 
 2. Rename the file appropriately as per your app. We recommend that you include your company name and app name. For example: **Microsoft_SamplePackage.zip**.
  

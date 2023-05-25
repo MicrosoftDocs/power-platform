@@ -2,11 +2,12 @@
 title: "Hand off chatbot conversations to any generic engagement hub"
 description: "Guidance to hand off a bot conversation to any generic engagement hub"
 keywords: "human handoff, generic handoff, generic engagement hub support, PVA"
-ms.date: 9/22/2020
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: handoff, ceX
 ms.reviewer: pawant
 ms.service: power-virtual-agents
