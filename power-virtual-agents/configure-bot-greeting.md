@@ -2,59 +2,53 @@
 title: "Automatically start a chatbot conversation"
 description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: "PVA"
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.reviewer: digantak
+manager: leeclontz
 ms.custom: "customization, ce06102020"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Configure your bot to start the conversation automatically
+# Automatically start a chatbot conversation
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](configure-bot-greeting.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/configure-bot-greeting-teams.md)
-
-By default, chatbots created with Power Virtual Agents and [published to a website](publication-connect-bot-to-web-channels.md) will load without a greeting, and will passively wait for the user to start the conversation.
-
-However, you can use custom CSS and JavaScript code to automatically have the bot start the conversation when the bot loads.
-
-For example, you could have your bot say, "Hi, I'm Botty, a virtual agent" as soon as the bot loads.
-
-First, you'll need to deploy a custom canvas that includes arguments that trigger the greeting. By default, the custom canvas calls the default system greeting topic. You can, however, create a new topic to be used as the greeting, although you will need to divert the default system greeting topic to a new topic.
-
-You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas.md).
+You can configure your bot to start a conversation conversation with a user. You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas.md).
 
 > [!IMPORTANT]
 > Having the bot start the conversation will show up in your [analytics](analytics-overview.md) and will increase your session count.
 >
-> If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary.md#engagement-over-time-chart).
->
-> This might impact your analytics.
+> If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary.md#engagement-over-time-chart). This might impact your analytics.
 
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+
+
+# [Web app](#tab/web)
+
+By default, chatbots created with Power Virtual Agents and [published to a website](publication-connect-bot-to-web-channels.md) will load without a greeting, and will passively wait for the user to start the conversation.
+
+However, you can use custom CSS and JavaScript code to automatically have the bot start the conversation when the bot loads. For example, you could have your bot say, "Hi, I'm Botty, a virtual agent" as soon as the bot loads.
+
+First, you'll need to deploy a custom canvas that includes arguments that trigger the greeting. By default, the custom canvas calls the default system greeting topic. You can, however, create a new topic to be used as the greeting, although you will need to divert the default system greeting topic to a new topic.
+
 
 > [!IMPORTANT]
 > You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
 >
 > Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
-## Retrieve bot ID details
+### Retrieve bot ID details
 
 To customize the greeting, you need to know your Bot ID.
 
 You can get the Bot ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters).
 
-## Deploy a custom canvas for your bot
+### Deploy a custom canvas for your bot
 
 You'll need to deploy a custom canvas that includes arguments that cause the [default system greeting topic](authoring-create-edit-topics.md#use-system-and-sample-topics) to be displayed when the bot loads.
 
@@ -69,7 +63,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
         <head>
             <title>Contoso Sample Web Chat</title> 
             <!-- This styling is for the canvas demonstration purposes. It is recommended 
-        that style is moved to separate file for organization in larger projects -->
+        that style is moved to a separate file for organization in larger projects -->
             <style>
                 html, body {
                     height: 100%;
@@ -179,7 +173,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
 1. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
     If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (").
 
-## Change the bot's default greeting
+### Change the bot's default greeting
 
 The code in the _index.html_ file causes a topic to be called automatically when the bot is loaded. By default, it calls the system greeting topic. You can also create a new topic and divert the default system greeting topic to that new topic.
 
@@ -206,7 +200,7 @@ You can now test your bot by going to the webpage where you deployed your bot's 
 ### Create a new user topic
 
 > [!WARNING]
-> Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the topic [Analyze billed session information](analytics-billed-sessions.md).
+> Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the topic [Analyze billed session information](analytics-billed-sessions.md).
 
 1. In the navigation menu, select **Topics**.
 
@@ -229,5 +223,26 @@ You can now test your bot by going to the webpage where you deployed your bot's 
 1. [**Publish** your bot](publication-fundamentals-publish-channels.md).
 
 You can now test your bot by going to the webpage where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the new topic.
+
+
+# [Teams](#tab/teams)
+
+By default, chatbots created with the Power Virtual Agents app in Microsoft Teams will automatically start the conversation when installed for the first time.
+
+You can change what the bot says by updating the greeting topic. For example, you could have your bot say, "Hi, I'm Botty, a virtual agent" as soon as the bot loads.
+
+### Change the bot's default greeting
+
+1. In the navigation menu, select **Topics**, then select the **Greeting** topic row.
+
+    :::image type="content" source="media/configure-bot-greeting/select-greeting-topic-teams.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted.":::
+
+1. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics.md#insert-nodes).
+
+1. Select **Save** when you're finished editing the message.
+
+1. [**Publish** your bot](publication-add-bot-to-microsoft-teams.md) and test it.
+
+---
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
