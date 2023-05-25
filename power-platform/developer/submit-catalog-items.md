@@ -1,5 +1,5 @@
 ---
-title: "View, submit, and install catalog items (Preview)"
+title: "View, submit, and install catalog items (preview)"
 description: "Learn how to submit items to your organization's catalog of templates and components."
 author: samathur
 ms.subservice: developer
@@ -12,12 +12,11 @@ search.audienceType:
 contributors:
  - JimDaly
 ---
-# View, submit, and install catalog items  (Preview)
+# View, submit, and install catalog items (preview)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-expect-changes](../includes/cc-preview-features-expect-changes.md)]
-> 
-> Before you can work with catalog items, you must install and configure it. More information: [Get started](catalog.md#get-started)
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+Before you can work with catalog items, you must install and configure it. More information: [Get started](catalog.md#get-started)
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 
@@ -48,7 +47,6 @@ After you have installed the PAC CLI, you must create an authentication profile 
 
 ## View available catalogs in your tenant
 
-
 Use the [pac admin list](cli/reference/admin.md#pac-admin-list) command to view the catalogs available in your tenant.
 
 > [!NOTE]
@@ -61,7 +59,6 @@ pac admin list --application-id 83a35943-cb41-4266-b7d2-81d60f383695
 ```
 
 `83a35943-cb41-4266-b7d2-81d60f383695` is the application ID associated with the catalog. The requirement to include this value will be removed in a future update.
-
 
 ## View items in the catalog
 
@@ -181,7 +178,7 @@ Don't confuse this term with *Solution Publisher*. Catalog item publisher is ent
 
 You need to provide the ID publisher `DisplayName` at a minimum. ID can be any string value. System checks if that publisher exists, else creates it and assigns an ID.
 
-Example: HR IT team of developers can create a publisher and ID the developers using an Azure AD group. 
+Example: HR IT team of developers can create a publisher and ID the developers using an Azure AD group.
 
 Here's an example of a publisher record:
 
@@ -208,9 +205,9 @@ Here's an example of a publisher record:
 
 #### Catalog Item
 
-The actual power platform solution (package is what is stored in the Catalog) 
+The actual power platform solution (package is what is stored in the Catalog)
 
-`id` and `displayName` are mandatory. `description` and `businessCategories` are optional. 
+`id` and `displayName` are mandatory. `description` and `businessCategories` are optional.
 
 Seeded Business Categories list of value is in the appendix. `ComponentUsedInApplication` is for future use only.
 
@@ -288,7 +285,6 @@ Example
    },
 ```
 
-
 #### Support contact
 
 IT Biz Support Specialist
@@ -311,7 +307,6 @@ The following items are highly recommended, but not required.
 - [small48x48image](#small48x48image)
 - [Documents](#documents)
 - [Help Link](#help-link)
-
 
 #### small48x48image
 
@@ -338,7 +333,6 @@ The most common thing people do before downloading an App or template is to look
 }
 ```
 
-
 #### Help Link
 
 URL link to help documentation
@@ -358,7 +352,6 @@ Fully qualified URLs your users are able to access. These URLs can be links to i
 - [Privacy policy](#privacy-policy)
 - [Legal terms](#legal-terms)
 
-
 #### Source Portal
 
 Source of submission
@@ -366,6 +359,7 @@ Source of submission
 When submitting from the PAC CLI, use `526430005` as the Source Portal value. For other sources, use `526430000`.
 
 #### Business Categories
+
 One or more of the business categories can be included in the submission from the list below.
 
 |Code|Description|
@@ -434,6 +428,7 @@ attributeName: string, for future use, ignored
 ```
 
 An example of the image metadata is as follows
+
 ```json
       "large216x216Image": {
         "name": "Large216image2",
