@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 05/17/2023
+ms.date: 05/25/2023
 search.audienceType: 
   - admin
 ---
@@ -297,6 +297,8 @@ To check the status of your job, select the **My bulk deletion system jobs** vie
 13. Review the information and select **Submit**.
 
 To check on the status of your job, select the **My bulk deletion system jobs** view.
+
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RW1305f]
 
 ### See also
 
