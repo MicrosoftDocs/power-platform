@@ -1,6 +1,6 @@
 ---
-title: "Delete users from environments | MicrosoftDocs"
-description: Information about deleting users
+title: Delete users from an environment 
+description: This article covers the various levels and methods of user deletion in Microsoft Power Platform that involves the following: Microsoft 365 admin center, Azure Active Directory (Azure AD), and Power Platform admin center.
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
@@ -11,7 +11,7 @@ ms.date: 05/25/2023
 search.audienceType: 
   - admin
 ---
-# Delete users from environment
+# Delete users from an environment
 
 This article covers the various levels and methods of user deletion in Microsoft Power Platform that involves the following: Microsoft 365 admin center, Azure Active Directory (Azure AD), and Power Platform admin center.
 
@@ -53,9 +53,9 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [**Deleted users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
 
-2. Select the name of the user you want to re-enable, select **Restore user**, and then proceed through various pages.
+1. Select the name of the user you want to re-enable, select **Restore user**, and then proceed through various pages.
 
-3. Reassign licenses as needed to the user in the Microsoft 365 admin center.
+1. Reassign licenses as needed to the user in the Microsoft 365 admin center.
 
 > [!NOTE]
 > You can restore deleted users up to 30 days after deletion. When a deleted user is restored and a license is reassigned, the user's status is set to **Enabled** in the respective Power Platform environments in which the user was disabled.
@@ -66,15 +66,14 @@ After the thirty-day window from the date you delete users in the Microsoft 365 
 
 If you want to permanently delete the user manually without waiting for thirty days when the user account is automatically deleted, you can do so by using the Azure AD option in the Azure portal by following the instructions here: [Permanently delete a user](/azure/active-directory/fundamentals/active-directory-users-restore#permanently-delete-a-user).
 
-### Enable the **Delete disabled users** feature
-The **Delete disabled users** feature needs to be enabled in the environment where you want to delete users.
+### Enable the Delete disabled users feature
+The **Delete disabled users** feature must be enabled in the environment where you want to delete users.
+
 1. In the Power Platform admin center, select an environment.
-
-2. Select **Settings** > **Features**.
-
-3. Scroll through the list and under **Delete disabled users** feature, click the switch to **On**. 
-
-4. Click the **Save** button to save the change. 
+1. Select **Settings** > **Product** > **Features**.
+1. Scroll through the list and to find the **Delete disabled users** area.
+1. Set the **Enable delete disabled users** setting to **On**. 
+1. Select **Save** to save your changes.
 
 ## Delete users in Power Platform
 
@@ -87,11 +86,11 @@ Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/
 
 1. In the Power Platform admin center, select an environment.
 
-2. Select **Settings** > **Users + permissions** > **Users**.
+1. Select **Settings** > **Users + permissions** > **Users**.
 
-3. In the top menu bar, select **Manage users in Dynamics 365**.
+1. In the top menu bar, select **Manage users in Dynamics 365**.
 
-4. From the drop-down menu, select **Disabled users**.
+1. From the drop-down menu, select **Disabled users**.
 
 ### Disabled Azure AD user stages
 
@@ -173,17 +172,17 @@ There are two ways to soft delete users.
 
 1. Permanently delete the user in Azure Active Directory. Go to [Permanently delete users in Azure AD](#permanently-delete-users-in-azure-ad) earlier in this article.
 
-2. In the Power Platform admin center, select an environment.
+1. In the Power Platform admin center, select an environment.
 
-3. Select **Settings** > **Users + permissions** > **Users**.
+1. Select **Settings** > **Users + permissions** > **Users**.
 
-4. In the top menu bar, select **Manage users in Dynamics 365**.
+1. In the top menu bar, select **Manage users in Dynamics 365**.
 
-5. From the drop-down menu, select **Disabled users**.
+1. From the drop-down menu, select **Disabled users**.
 
-6. Select a user from the list.
+1. Select a user from the list.
 
-7. On the User Form, choose the **Delete** button.
+1. On the User Form, choose the **Delete** button.
 
 The user still exists in the environment as disabled and continues to show in the Disabled Users list. To permanently delete from the environment, go to [Permanently delete users in Power Platform](#permanently-delete-users-in-power-platform) later in this article.
 
@@ -191,19 +190,19 @@ The user still exists in the environment as disabled and continues to show in th
 
 1. In the Power Platform admin center, select an environment.
 
-2. Select **Settings** > **Users + permissions** > **Users**.
+1. Select **Settings** > **Users + permissions** > **Users**.
 
-3. From the top menu bar, select **Filter**.
+1. From the top menu bar, select **Filter**.
 
    :::image type="content" source="media/filteruser.png" alt-text="Select Filter from the top menu.":::
 
-4. From the drop-down menu, select **Users not in AAD but exist in the environment**.
+1. From the drop-down menu, select **Users not in AAD but exist in the environment**.
 
-5. Select the disabled user you want to delete.
+1. Select the disabled user you want to delete.
 
-6. On the User Form, select **Delete**.
+1. On the User Form, select **Delete**.
 
-7. Select **Refresh list** to update the list and confirm deletion.
+1. Select **Refresh list** to update the list and confirm deletion.
 
 > [!NOTE]
 > All records that are owned by the soft deleted user must first be reassigned to another user before the user record can be permanently deleted. You can reassign the records from the same **User details** panel under the **Manager** section.
@@ -235,23 +234,23 @@ You can delete and remove users with disabled status in Power Platform. You may 
 - All records owned by the user must be reassigned to another user. User records can be reassigned from the [User settings page](users-settings.md).
 - You must have turned on the **Delete disabled users (preview)** > **Enable delete disabled users** feature setting for your environment using the Power Platform admin center. More information: [Manage feature settings](settings-features.md).
 
-#### How to permanently delete users
+#### Permanently delete users
 
 1. In the [Power Platform admin center](https://aka.ms/ppac), select an environment.
 
-2. Select **Settings** > **Users + permissions** > **Users**.
+1. Select **Settings** > **Users + permissions** > **Users**.
 
-3. From the top menu bar, select **Filter**.
+1. From the top menu bar, select **Filter**.
 
    :::image type="content" source="media/filteruser.png" alt-text="Select Filter from the top menu.":::
 
-4. From the drop-down menu, select **Users not in AAD and soft deleted in the environment**.
+1. From the drop-down menu, select **Users not in AAD and soft deleted in the environment**.
 
-5. Select a soft deleted user to delete the user permanently in the Power Platform environment. Only users who were soft deleted can be deleted permanently.
+1. Select a soft deleted user to delete the user permanently in the Power Platform environment. Only users who were soft deleted can be deleted permanently.
 
-6. On the user form, select **Delete**.
+1. On the user form, select **Delete**.
 
-7. Select **Refresh list** to update the list and confirm deletion.
+1. Select **Refresh list** to update the list and confirm deletion.
 
 #### Audit log after user is permanently deleted
 
@@ -267,54 +266,54 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1305f]
 
-### To soft delete users in Power Platform in bulk
+### Soft delete users in Power Platform in bulk
 
 1. In the [Power Platform admin center](https://aka.ms/ppac), select an environment.
-2. Select **Settings** > **Data management** > **Bulk deletion**.
-3. Select **New** to start the **Bulk Deletion Wizard**, which creates a bulk deletion job with the soft delete users you want to delete.
-4. Click **Next**.
-5. In the **Look for** drop-down menu, select the **Users** table.
-6. In the **Use Saved View** drop-down menu, select the **Users deleted in tenant but exist in the environment** view.
+1. Select **Settings** > **Data management** > **Bulk deletion**.
+1. Select **New** to start the **Bulk Deletion Wizard**, which creates a bulk deletion job with the soft delete users you want to delete.
+1. Click **Next**.
+1. In the **Look for** drop-down menu, select the **Users** table.
+1. In the **Use Saved View** drop-down menu, select the **Users deleted in tenant but exist in the environment** view.
+
    > [!Note]
-   > You can create your own equivalent view to meet your record retention policy, for example you can add other Search criteria like the **Azure Deleted On** date and specify an 'Older than X months' with a value of '3' months to soft delete any users who were deleted from the tenant more than 3 months ago. Note that this **Azure Deleted on** date is a newer column created in 2022 which means that the value is *null* for users deleted in the tenant prior to 2022. 
+   > You can create your own equivalent view to meet your record retention policy. For example, you can add other search criteria, such as the **Azure Deleted On** date and specify **Older than X months** with a value of **3** months to soft delete any users who were deleted from the tenant more than three months ago. Note that this **Azure Deleted On** date is a newer column created in 2022 which means that the value is *null* for users deleted in the tenant prior to 2022. 
     
-8. Select the **Preview Records** button to see the list of users that can be soft deleted.
-9. Select **Next**.
-10. In the **Name** field, enter a name for your bulk deletion job.
-11. Select a date and time to start the job.
-12. **Optional**: Select the **Run this job after every** check box and set a frequency (in days).
+1. Select the **Preview Records** button to see the list of users that can be soft deleted.
+1. Select **Next**.
+1. In the **Name** field, enter a name for your bulk deletion job.
+1. Select a date and time to start the job.
+1. **Optional**: Select the **Run this job after every** check box and set a frequency (in days).
 
     > [!Note]
     > We recommend that you set this option to soft delete your users on a scheduled basis, as soft deleting users is where most of your storage costs can be saved.
     
-12. Select **Next**.
-13. Review the information and select **Submit**.
+1. Select **Next**.
+1. Review the information and select **Submit**.
 
 To check the status of your job, select the **My bulk deletion system jobs** view.
 
-### To permanently delete users in Power Platform in bulk
+### Permanently delete users in Power Platform in bulk
 
 1. In the [Power Platform admin center](https://aka.ms/ppac), select an environment.
-2. Select **Settings** > **Data management** > **Bulk deletion**.
-3. Select **New** to start the **Bulk Deletion Wizard**, which creates a bulk deletion job with the soft delete users you want to delete.
-4. Click **Next**.
-5. In the **Look for** drop-down meanu, select the **Users** table.
-6. In the **Use Saved View** drop-down menu, select the **Soft deleted Users** view.
+1. Select **Settings** > **Data management** > **Bulk deletion**.
+1. Select **New** to start the **Bulk Deletion Wizard**, which creates a bulk deletion job with the soft delete users you want to delete.
+1. Click **Next**.
+1. In the **Look for** drop-down meanu, select the **Users** table.
+1. In the **Use Saved View** drop-down menu, select the **Soft deleted Users** view.
  > [!Note]
  > You can create your own equivalent view to meet your record retention policy.
-8. Select the **Preview Records** button to see the list of users that can be permanently deleted.
-9. Select **Next**.
-10. In the **Name** field, enter a name for your bulk deletion job.
-11. Select a date and time to start the job.
+1. Select the **Preview Records** button to see the list of users that can be permanently deleted.
+1. Select **Next**.
+1. In the **Name** field, enter a name for your bulk deletion job.
+1. Select a date and time to start the job.
     
-    > [!Note]
-    > We recommend that you set this schedule based on your record retention policy.
+   > [!Note]
+   > We recommend that you set this schedule based on your record retention policy.
    
-12. Select **Next**.
-13. Review the information and select **Submit**.
+1. Select **Next**.
+1. Review the information and select **Submit**.
 
 To check on the status of your job, select the **My bulk deletion system jobs** view.
-
 
 
 ### See also
