@@ -21,14 +21,15 @@ Send an in-app notification with optional actions to a recipient.
 
 > [!IMPORTANT]
 > - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - Throughout the preview period, the functions are labeled with the **X** prefix and can only be used with the [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins).
+> - Preview features aren’t meant for production use, may have restricted functionality, and may change significantly before release. These features are available before an official release so that customers can get early access and provide feedback.  
+> - To help identify these as preview features, each function is prefixed with an **X**. Upon release, the **X** will need to be removed from any formulas that use these functions and arguments updated for any function changes.
+> - These functions can only be used with the [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins).
 
 ## Description
 
 The **XSendAppNotification** function is used to send notifications within an app to a recipient. These notifications appear as either a toast or within the notification center for the app user. For more information, see [Send in-app notifications within model-driven apps](/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications).
 
-In addition, an in-app notification can include zero to many actions on the notification card. To add actions to the app notification card, the following functions are used as parameters in the **XSendAppNotification** function. For more information on each action type, see [Notification actions](/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?branch=jaredha-appnotificationapi&tabs=powerfx%2Csdk2%2Cwebapi3%2Cpowerfx4%2Cwebapi5%2Cwebapi6#notification-actions).
+In addition, an in-app notification can include zero to many actions on the notification card. To add actions to the app notification card, the following functions are used as parameters in the **XSendAppNotification** function. For more information on each action type, see [Notification actions](/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications#notification-actions).
 
 - **XCreateUrlAction**: Adds a URL action to the notification card.
 - **XCreateSidePaneActionForDashboard**: Adds a side pane action that navigates to a page with a type of `dashboard` within the side pane.  
