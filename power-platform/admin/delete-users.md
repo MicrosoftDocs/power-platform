@@ -1,6 +1,6 @@
 ---
 title: Delete users from an environment 
-description: This article covers the various levels and methods of user deletion in Microsoft Power Platform that involves the following: Microsoft 365 admin center, Azure Active Directory (Azure AD), and Power Platform admin center.
+description: This article covers the various levels and methods of user deletion in Microsoft Power Platform.
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
@@ -11,6 +11,7 @@ ms.date: 05/25/2023
 search.audienceType: 
   - admin
 ---
+
 # Delete users from an environment
 
 This article covers the various levels and methods of user deletion in Microsoft Power Platform that involves the following: Microsoft 365 admin center, Azure Active Directory (Azure AD), and Power Platform admin center.
