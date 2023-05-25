@@ -10,7 +10,7 @@ ms.custom:
 ---
 # Extend pipelines in Power Platform
 
-ALM processes often vary across customers and business organizations. Pipelines extensibility provides the ability to apply custom logic at multiple steps of your deployment process. Using Power Automate cloud flows, you can optionally extend and integrate pipelines with other systems of record. For example, you can add approvals, send notifications, or use pipelines in Power Platform along-side continuos integration/continuos deployment (CI/CD) applications such as Azure DevOps, GitHub, and others.
+ALM processes often vary across customers and business organizations. Pipelines extensibility provides the ability to apply custom logic at multiple steps of your deployment process. Using Power Automate cloud flows, you can optionally extend and integrate pipelines with other systems of record. For example, you can add approvals, send notifications, or use pipelines in Power Platform along-side continuous integration/continuous deployment (CI/CD) applications such as Azure DevOps, GitHub, and others.
 
 Pipelines use [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) to provide flexibility in how the system can be extended. Pipelines event data is relayed to subscribers such as Power Automate, which provides over 1,000 built-in [connectors](/connectors/connector-reference/), Azure Service Bus, Azure Event Hubs, Webhooks, and [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins). Regardless of how pipelines are extended, the maker-facing deployment experience remains simple.
 
@@ -75,7 +75,7 @@ The tables below indicate inputs and outputs for each event. Output parameters c
 
 | Event | Input parameters  | Output parameters | Comments |
 | --- | --- | --- | ---  |
-| `OnPreDeploymentStarted` (Gated)  | `StageRunID` | Artifact Name, <br/>Deployment Stage Run Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>PreDeplymentStepStatus, <br/>Deployment Notes | - Only triggers when **Pre-Deployment Step Required** is checked in the pipeline stage configuration. <br/>- Can be used to trigger approvals and other business logic before a deployment can proceed to the next step. <br/>- Requires calling the unbound action `UpdatePreDeploymentStepStatus` to set the `PreDeploymentStepStatus` after other business logic has completed. |
+| `OnPreDeploymentStarted` (Gated)  | `StageRunID` | Artifact Name, <br/>Deployment Stage Run Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name, <br/>PreDeploymentStepStatus, <br/>Deployment Notes | - Only triggers when **Pre-Deployment Step Required** is checked in the pipeline stage configuration. <br/>- Can be used to trigger approvals and other business logic before a deployment can proceed to the next step. <br/>- Requires calling the unbound action `UpdatePreDeploymentStepStatus` to set the `PreDeploymentStepStatus` after other business logic has completed. |
 | `OnPreDeploymentCompleted`   | `StageRunID` | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,<br/> PreDeployment Step Status (**10** (Pending), **20** (Completed), **30** (Failed)), <br/>Comments  | Event produced when `UpdatePreDeploymentStatus` is set to completed. |
 
 #### Deployment step
