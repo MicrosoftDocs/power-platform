@@ -188,7 +188,7 @@ Auto approval can be enabled at two levels:
 > [!NOTE]
 > If you choose to enable auto approval for the entire catalog, settings at the publisher level will not apply.
 
-Even with auto approval, submission requests that get auto approved are available to be viewed within the ****Catalog Manager**** app. They can be viewed under **Requests** using the **All Approval Request** view. More information: [Approve & Reject submission requests](administer-catalog.md#approve--reject-submission-requests)
+Even with auto approval, submission requests that get auto approved are available to be viewed within the ****Catalog Manager**** app. They can be viewed under **Requests** using the **All Approval Request** view. More information: [Approve & Reject submission requests](administer-catalog.md#approve-and-reject-submission-requests)
 
 #### Enable Unmanaged Solutions
 
