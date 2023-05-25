@@ -16,7 +16,7 @@ contributors:
 
 Organizations where developers and makers build and share components and templates get more value from Power Platform. Just building isn't enough. Sharing Power Platform artifacts at scale fosters communities and support groups to emerge, incubate and unlock value from diverse set of personnel in an organization.
 
-Successful organizations adopt a *fusion teams* model where pro-developers, makers and admins all work together to help their fellow employees derive the highest value possible from the Power Platform. Fusion teams can reuse components and templates.
+Successful organizations adopt a *fusion teams* model where pro-developers, makers and admins all work together to help their fellow employees derive the highest value possible from Power Platform. Fusion teams can reuse components and templates.
 
 *Components* include things like:
 
