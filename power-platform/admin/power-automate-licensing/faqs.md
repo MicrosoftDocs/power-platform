@@ -296,7 +296,7 @@ Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be 
 Admins have a Powershell command to see the flows that need their attention like the following: 
 1. Premium flows where flow owner left the organization.
 
-1. Premium flows where the flow owner doesnt have a premium license(owner previously had a trial/license that is expired now)
+1. Premium flows where the flow owner doesn't have a premium license(owner previously had a trial/license that is expired now)
 
 1. Premium flows created by flow owner with Power Apps license but the flow is not triggered by the Power App.
 
