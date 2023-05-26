@@ -45,7 +45,7 @@ For administrators and line of business approvers, the catalog:
 > [!IMPORTANT]
 >
 > - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)].
+> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 > - Currently, the catalog cannot be utilized in an environment that utilizes customer managed keys. More information: [Manage your customer-managed encryption key (preview)](../admin/customer-managed-key.md)
 
