@@ -1,7 +1,8 @@
 ---
 title: Run pipelines in Power Platform
 description: Learn how to deploy solutions using pipelines.
-author: caburk, ASheehi1
+author: caburk
+author: ASheehi1
 ms.author: matp
 ms.topic: how-to
 ms.date: 05/26/2023
