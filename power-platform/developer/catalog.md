@@ -4,7 +4,7 @@ description: "Use the catalog in Power Platform to managed shared components and
 author: samathur
 ms.subservice: developer
 ms.author: samathur
-ms.date: 05/22/2023
+ms.date: 05/26/2023
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -206,22 +206,24 @@ Learn how to view, submit, and install catalog items.
 > [!div class="nextstepaction"]
 > [View, submit, and install catalog items](submit-catalog-items.md)<br/>
 
+Ask questions or contact the project team on GitHub.
+
 > [!div class="nextstepaction"]
-> [Ask questions or contact the project team on GitHub](https://github.com/microsoft/PowerPlatform-Catalog)<br/>
+> [github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)<br/>
 
 ## Frequently asked questions (FAQ)
 
 The following are frequently asked questions related to catalog in Power Platform. If you have questions you haven't found in the documentation, please use the **Feedback** section at the bottom of this page. Click on the **This page** button. You'll need to have a GitHub account to provide feedback.
 
-### When would I need to create more than one catalog?
+### Q: When would I need to create more than one catalog?
 
 While most organizations are likely to use just one catalog, it's possible to create more than one catalog for distinct audiences. These include segregation of data concerns from a geography, departmental, business group (subsidiary) or other reasons.
 
-### Is there a license required to use the Catalog?
+### Q: Is there a license required to use the Catalog?
 
 For the public preview, the catalog feature is available to be used without any licensing. While not required for the preview, when this feature is generally available it requires the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
-### Where do I provide feedback on Catalog
+### Q: Where do I provide feedback on Catalog
 
 You can reach the team and community using the Power Catalog for Pro dev on GitHub here: [https://github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)
 
