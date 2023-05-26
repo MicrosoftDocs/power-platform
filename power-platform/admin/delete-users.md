@@ -7,14 +7,14 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 05/25/2023
+ms.date: 05/26/2023
 search.audienceType: 
   - admin
 ---
 
 # Delete users from an environment
 
-This article covers the various levels and methods of user deletion in Microsoft Power Platform that involves the following: Microsoft 365 admin center, Azure Active Directory (Azure AD), and Power Platform admin center.
+This article covers the various levels and methods of user deletion in Microsoft Power Platform that involves the following components: Microsoft 365 admin center, Azure Active Directory (Azure AD), and Power Platform admin center.
 
 Watch this video for a detailed walkthrough of how to delete users from your environment:
 
@@ -38,7 +38,7 @@ When a user is deleted from the Microsoft 365 admin center, the user isn't remov
 
 The following lists the scenarios when a user is deleted:
 
-- If the user is in the environment and has a status of **Enabled**, the status will be updated to **Disabled**.
+- If the user is in the environment and has a status of **Enabled**, the status is updated to **Disabled**.
 - If the user is in the environment and has a status of **Disabled**, the status remains as **Disabled**.
 - If the user isn't present in the environment, no action is taken.
 
