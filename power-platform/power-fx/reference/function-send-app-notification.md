@@ -66,7 +66,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 ### XCreateSidePaneActionForDashbaord
 
-**XCreateSidePaneActionForDashboard** (_Title_, _Pane ID_, _Pane Title_, _Page Type_, _Dashboard ID_) 
+**XCreateSidePaneActionForDashboard** (_Title_, _Pane ID_, _Pane Title_, _Dashboard ID_) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -77,7 +77,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 ### XCreateSidePaneActionForEntity
 
-**XCreateSidePaneActionForEntity** (_Title_, _Pane ID_, _Pane Title_, _Page Type_, _Entity Name_, _Entity ID_) 
+**XCreateSidePaneActionForEntity** (_Title_, _Pane ID_, _Pane Title_, _Entity Name_, _Entity ID_) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
@@ -89,7 +89,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 ### XCreateSidePaneActionForEntityList
 
-**XCreateSidePaneActionForEntityList** (_Title_, _Pane ID_, _Pane Title_, _Page Type_, _Entity Name_) 
+**XCreateSidePaneActionForEntityList** (_Title_, _Pane ID_, _Pane Title_, _Entity Name_) 
 
 | Parameter | Type | Required | Description |
 | --------- | ---- | -------- | ----------- |
