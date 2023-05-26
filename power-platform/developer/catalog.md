@@ -206,6 +206,9 @@ Learn how to view, submit, and install catalog items.
 > [!div class="nextstepaction"]
 > [View, submit, and install catalog items](submit-catalog-items.md)<br/>
 
+> [!div class="nextstepaction"]
+> [Ask questions or contact the project team on GitHub](https://github.com/microsoft/PowerPlatform-Catalog)<br/>
+
 ## Frequently asked questions (FAQ)
 
 The following are frequently asked questions related to catalog in Power Platform. If you have questions you haven't found in the documentation, please use the **Feedback** section at the bottom of this page. Click on the **This page** button. You'll need to have a GitHub account to provide feedback.
@@ -217,6 +220,10 @@ While most organizations are likely to use just one catalog, it's possible to cr
 ### Is there a license required to use the Catalog?
 
 For the public preview, the catalog feature is available to be used without any licensing. While not required for the preview, when this feature is generally available it requires the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
+
+### Where do I provide feedback on Catalog
+
+You can reach the team and community using the Power Catalog for Pro dev on GitHub here: [https://github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)
 
 ### See also
 
