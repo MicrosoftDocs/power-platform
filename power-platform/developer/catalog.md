@@ -149,7 +149,18 @@ In [Power Apps](https://make.powerapps.com/), with the environment you selected,
 - Power Platform catalog manager
 
 > [!NOTE]
-> You will also see an app named "Package Viewer" in the environment. This app is reserved for future use.
+> You will also see an app named "Package Viewer" in the environment. This app is reserved for future use. </br></br>
+
+#### How the applications will appear in your environment.
+Thease apps will appear in two places.
+</br>
+In the Power Apps "Apps View":
+</br>
+:::image type="content" source="media/PowerCatalogApps_Maker.png" alt-text="Power Apps Maker App List":::
+</br></br>and in the Unified Client Applications View:
+</br>
+:::image type="content" source="media/PowerCatalogApps_UCI.png" alt-text="Power Apps Unified Client Applications View":::
+
 
 ## Configure the catalog
 
