@@ -2,10 +2,13 @@
 title: Run pipelines in Power Platform
 description: Learn how to deploy solutions using pipelines.
 author: caburk
-author: ASheehi1
 ms.author: matp
 ms.topic: how-to
 ms.date: 05/26/2023
+contributors:
+   - ASheehi1
+   - caburk
+
 ms.custom: template-how-to
 ---
 # Run pipelines in Power Platform
@@ -40,6 +43,7 @@ For more information about these prerequisites, go to [Set up pipelines](set-up-
 
 ## Cancel a scheduled deployment
 If you have a scheduled deployment, you can cancel it through three different methods:
+
 
 :::image type="content" source="media/pipeline-cancel-deployment.png" alt-text="Screenshot of the pipelines page with a cancelable deployment":::
 1. In the pipeline **Details** section where you began your deployment, there is an option to **Cancel deployment** before the scheduled deployment time.
