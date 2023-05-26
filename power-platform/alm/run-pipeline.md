@@ -39,6 +39,7 @@ For more information about these prerequisites, go to [Set up pipelines](set-up-
 
 ## Cancel a scheduled deployment
 If you have a scheduled deployment, you can cancel it through three different methods:
+
 :::image type="content" source="media/pipeline-cancel-deployment.png" alt-text="Screenshot of the pipelines page with a cancelable deployment":::
 1. In the pipeline **Details** section where you began your deployment, there is an option to **Cancel deployment** before the scheduled deployment time.
 1. In the **Run history**, clicking the **...** on a scheduled deployment will display a **Cancel deployment** option.
