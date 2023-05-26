@@ -8,9 +8,7 @@ ms.topic: how-to
 ms.date: 05/22/2023
 ms.custom: template-how-to
 ---
-# Migrate bring-your-own-key environments to customer-managed key (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Migrate bring-your-own-key environments to customer-managed key
 
 For customers using the previous [manage the encryption key](manage-encryption-key.md) (BYOK) feature, they can change their BYOK enabled environment's encryption to use the new customer-managed key. You can also add your existing non-BYOK enabled environments to use the new customer-managed key.
 
@@ -19,8 +17,7 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 
 > [!IMPORTANT]
 >
-> - This is a preview feature.
-> - The environment is disabled during migration of the BYOK key to the customer-managed key. The downtime is short as we only need to change the encryption key for the SQL storage. Once the environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB, the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. When BYOK enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
+> The environment is disabled during migration of the BYOK key to the customer-managed key. The downtime is short as we only need to change the encryption key for the SQL storage. Once the environment is migrated to customer-managed key, the audit log is automatically moved to Azure CosmosDB, the upload files and images are moved to file storage and are encrypted automatically with the customer-managed key. When BYOK enabled environments are migrated to this key management feature, the BYOK key in the Microsoft key vault is retained for at least 28 days so that support is available for restoring the environment.
 
 If you have enabled audit and search in the BYOK environment and have uploaded files and created a data lake, all these storages will be automatically created and encrypted with the customer-managed encryption key.
 
@@ -34,4 +31,4 @@ Similarly, if you didn’t enable these audit or search functionalities and enab
 
 ## Next steps
 
-[Manage your customer-managed encryption key (preview)](customer-managed-key.md)
+[Manage your customer-managed encryption key](customer-managed-key.md)
