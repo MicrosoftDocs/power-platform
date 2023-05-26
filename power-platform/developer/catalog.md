@@ -148,8 +148,22 @@ In [Power Apps](https://make.powerapps.com/), with the environment you selected,
 - Power Platform catalog service identities
 - Power Platform catalog manager
 
+#### How the applications will appear in your environment
+
+These apps will appear in two places:
+
 > [!NOTE]
-> You will also see an app named "Package Viewer" in the environment. This app is reserved for future use.
+> You will also see an app named **Package Management Viewer** in the environment. This app is reserved for future use.
+
+- In [Power Apps](https://make.powerapps.com/), select **Apps**
+
+   :::image type="content" source="../media/PowerCatalogApps_Maker.png" alt-text="Power Apps Maker App List":::
+
+- In the **Unified Interface apps** view:
+
+   :::image type="content" source="../media/PowerCatalogApps_UCI.png" alt-text="Power Apps Unified Client Applications View":::
+
+   More information: [About Unified Interface for model-driven apps in Power Apps](../admin/about-unified-interface.md)
 
 ## Configure the catalog
 
