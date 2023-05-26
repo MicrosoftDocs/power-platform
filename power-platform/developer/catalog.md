@@ -159,7 +159,7 @@ These apps will appear in two places:
 
    :::image type="content" source="../media/PowerCatalogApps_Maker.png" alt-text="Power Apps Maker App List":::
 
-- In the Unified Interface apps view:
+- In the **Unified Interface apps** view:
 
    :::image type="content" source="../media/PowerCatalogApps_UCI.png" alt-text="Power Apps Unified Client Applications View":::
 
