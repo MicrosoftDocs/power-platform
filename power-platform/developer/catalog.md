@@ -219,11 +219,11 @@ The following are frequently asked questions related to catalog in Power Platfor
 
 While most organizations are likely to use just one catalog, it's possible to create more than one catalog for distinct audiences. These include segregation of data concerns from a geography, departmental, business group (subsidiary) or other reasons.
 
-### Q: Is there a license required to use the Catalog?
+### Q: Is there a license required to use the catalog?
 
 For the public preview, the catalog feature is available to be used without any licensing. While not required for the preview, when this feature is generally available it requires the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
-### Q: Where do I provide feedback on Catalog
+### Q: Where do I provide feedback on catalog
 
 You can reach the team and community using the Power Catalog for Pro dev on GitHub here: [https://github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)
 
