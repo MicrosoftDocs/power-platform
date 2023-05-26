@@ -83,9 +83,9 @@ To comply with our security policy for a secure connection, your server must hav
 
    See [TLS 1.2 Standards Documentation - Section 7.4.2](https://datatracker.ietf.org/doc/html/rfc5246#section-7.4.2) - certificate-list.
 
-## Why do Dataverse SSL/TLS certificates use wildcards?
+## Why do Dataverse SSL/TLS certificates use wildcard domains?
 
-Wildcard SSL certificates are by design since hundreds of organization URLs must be accessible from each host server. SSL certificates with hundreds of Subject Alternate Names (SANs) have a negative impact on some web clients and browsers. This is an infrastructure constraint based on the nature of a software as a service (SAAS) offering, which hosts multiple customer organizations on a set of shared infrastructure.
+Wildcard SSL/TLS certificates are by design since hundreds of organization URLs must be accessible from each host server. SSL/TLS certificates with hundreds of Subject Alternate Names (SANs) have a negative impact on some web clients and browsers. This is an infrastructure constraint based on the nature of a software as a service (SAAS) offering, which hosts multiple customer organizations on a set of shared infrastructure.
 
 ### See also
 [Connect to Exchange Server (on-premises)](connect-exchange-server-on-premises.md) <br />
