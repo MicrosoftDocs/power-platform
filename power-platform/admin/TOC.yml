@@ -454,7 +454,7 @@
                 - name: Block cookie replay attacks
                   href: block-cookie-replay-attack.md
                 - name: IP firewall (preview)
-                  href: ip-firewall.md  
+                  href: ip-firewall.md
                 - name: Continuous access evaluation integration (preview)
                   href: continuous-access-evaluation.md
                 - name: Configure environment security
@@ -1109,3 +1109,5 @@
           href: ../transparency-note-overview.md
         - name: Transparency note for Copilot data security and privacy
           href: ../transparency-note-copilot-data-security-privacy.md
+        - name: Transparency note for Copilot data sharing
+          href: ../transparency-note-copilot-data-sharing.md
