@@ -1,8 +1,8 @@
 ---
-title: Configure connector endpoint filtering (preview)
-description: Learn how to use connector endpoint filtering as part of a data loss prevention policy to govern the endpoints makers can connect to in Power Platform.
+title: "Connector endpoint filtering (preview) | MicrosoftDocs"
+description: A description goes here.
 ms.component: pa-admin
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 03/31/2023
 ms.subservice: admin
 author: mikferland-msft
@@ -11,9 +11,7 @@ ms.reviewer: sericks
 contributors:
   - mikferland-msft
   - mihaelablendea
-ms.custom:
-  - "admin-security"
-  - bap-template
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
@@ -23,58 +21,59 @@ search.app:
   - Flow
 ---
 
-# Configure connector endpoint filtering (preview)
+# Connector endpoint filtering (preview)
+[This article is pre-release documentation and is subject to change.]
 
-> [!Important]
-> [!Include [preview](../includes/cc-preview-features-definition.md)]
-
-Use connector endpoint filtering as part of a data loss prevention (DLP) policy to govern the endpoints makers can connect to when they build apps, flows, and chatbots with the following connectors:
-
+Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It is configured within a data loss prevention (DLP) policy, and it is exclusively available for six connectors: 
 - HTTP
-- HTTP with Azure Active Directory (Azure AD)
+- HTTP with Azure Active Directory (AD)
 - HTTP Webhook
 - SQL Server
-- Azure Blob Storage
-- SMTP
+- Azure Blob Storage 
+- SMTP 
 
-When makers try to connect to a blocked endpoint, they encounter a DLP error message.
+When a maker tries to connect their app, flow, or chatbot to a blocked endpoint, they will encounter a DLP error message.
 
-:::image type="content" source="media/EF_CloudFlow.png" alt-text="Screenshot showing a DLP error message triggered by an endpoint filtering rule.":::
+> [!WARNING]
+> Endpoint filtering rules are not enforced on environment variables, custom inputs, or any endpoint that is dynamically created at run-time. Only static endpoints are evaluated in the app, flow, or chatbot designers. For more information, see [Known limitations](#known-limitations).
+
+> [!Important]
+> [!include [preview](../includes/cc-preview-features-definition.md)]
 
 ## Add endpoint filtering rules to your DLP policies
 
-1. Sign in to the Power Platform admin center.
-1. In the left side panel, select **Policies**.
-1. [Create](create-dlp-policy.md) or [edit](prevent-data-loss.md#edit-a-dlp-policy) a policy.
-1. On the **Prebuilt connectors** page, if the value of the **Endpoint configurable** column is **Yes**, select the connector, and then select **Configure connector** > **Connector endpoints (preview)**.
+The **Endpoint configurable** column, on the **Prebuilt Connectors** page in **Data Policies**, indicates whether the endpoint filtering capability is supported for the connector.
 
-    You can select **Configure connector** in the command bar at the top of the page or on the **More actions** (**&hellip;**) menu. **Configure connector** is available for blockable connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
+:::image type="content" source="media/dlp-endpoint-configurable-prebuilt-connectors.png" alt-text="Endpoint configurable in the Prebuilt Connectors page.":::
 
-    :::image type="content" source="media/dlp-configure-connector-connector-endpoints.png" alt-text="Screenshot of the Prebuilt connectors page showing endpoint configuration options.":::
+If the value of the **Endpoint configurable** column is **Yes**, you can use this capability by right-clicking and then selecting **Configure connector** > **Connector endpoints**.
 
-1. To add an endpoint rule, select **+ Add endpoint**.
-1. Enter a server name, database name, or URL pattern endpoint.
-1. Select **Allow** or **Deny** as the action to enforce.
-1. Use the **Order** list or the arrows in the **Move up** and **Move down** columns to change the order of the rules.
-1. Select **Save**.
+:::image type="content" source="media/dlp-configure-connector-connector-endpoints.png" alt-text="Configure connector > Connector endpoints.":::
 
-Rules are evaluated in the order they appear in the list. New rules are added as the second-to-the-last row. The last row is always a rule for the wildcard character (`*`), which applies to all endpoints in the connector. By default, the `*` pattern is allowed for new DLP policies, but you can change it to **Deny**.
+This opens a side panel where you can specify an ordered list of Allow or Deny URL patterns. The last row in the list will always be a rule for the wildcard character (`*`), which applies to all endpoints in that connector. By default, the `*` pattern is set up as Allow for new DLP policies, but you can tag this as Allow or Deny.
 
-:::image type="content" source="media/dlp-delete-pattern.png" alt-text="Screenshot of the Configure endpoints page.":::
+:::image type="content" source="media/dlp-specify-ordered-list-allow-deny-url-patterns.png" alt-text="Specify an ordered list of Allow and Deny URL patterns for custom connectors.":::
 
-To delete a rule, select it, and then select **Delete**.
+### Add new rules
+You can add new rules by selecting **Add endpoint**. New rules are added to the end of the pattern list as the second-to-the-last rule. This is because `*` will always be the last entry in the list. However, you can update the order of the patterns by using the **Order** drop-down list or selecting **Move up** or **Move down**. 
+
+:::image type="content" source="media/dlp-add-endpoint-new-rules.png" alt-text="Select Add endpoint to add new rules.":::
+
+After a pattern has been added, you can edit or delete these patterns by selecting a specific row and then selecting **Delete**. 
+
+:::image type="content" source="media/dlp-delete-pattern.png" alt-text="Delete a pattern.":::
+
+After saving your connector endpoint filtering rules and the DLP policy in which they are defined, they become instantly enforced on the targeted environments. Below is an example where a maker tried to connect their cloud flow to an HTTP endpoint that is not allowed.
+
+:::image type="content" source="media/EF_CloudFlow.png" alt-text="DLP error because of endpoint filtering rules.":::
 
 ## Known limitations
+- Endpoint filtering rules are not enforced on environment variables, custom inputs, and dynamically bound endpoints during runtime. Only static endpoints known and selected when building an app, flow, or chatbot during design time are enforced. This implies that connector endpoint filtering rules for SQL Server and Azure Blob Storage are not enforced if the connections are authenticated with Azure Active Directory. In the two screenshots below, a maker has built a cloud flow that defines the SQL Server and database inside variables, and then uses those variables as input to the connection definition. Therefore, the endpoint filtering rules are not evaluated and the cloud flow can execute successfully.
 
-- Endpoint filtering rules aren't enforced on environment variables, custom inputs, and dynamically bound endpoints at runtime. Only static endpoints that are known and selected when an app, flow, or chatbot is designed are enforced.
+    :::image type="content" source="media/EF_KnownLimitation_1.png" alt-text="Cloud flow uses variables to connect to SQL.":::
+    :::image type="content" source="media/EF_KnownLimitation_2.png" alt-text="Cloud flow runs successfully.":::
 
-  The previous statements imply that connector endpoint filtering rules for SQL Server and Azure Blob Storage aren't enforced if the connections are authenticated with Azure AD. In the following two screenshots, a maker has built a cloud flow that defines the SQL Server and database in variables, and then uses those variables as input to the connection definition. The endpoint filtering rules aren't evaluated, and the cloud flow can execute successfully.
-
-  :::image type="content" source="media/EF_KnownLimitation_1.png" alt-text="Screenshot of a Power Automate design canvas showing a cloud flow that uses variables to connect to SQL.":::
-
-  :::image type="content" source="media/EF_KnownLimitation_2.png" alt-text="Screenshot of a Power Automate design canvas showing the cloud flow after a successful run.":::
-
-- Some apps that were published before October 1, 2020, need to be republished before connector action rules and endpoint rules for DLP policies are enforced. Run the following script to identify apps that must be republished.
+- Some Power Apps published before October 1, 2020, need to be re-published for DLP connector action rules and endpoint rules to be enforced. The following script enables admins and makers to identify apps that must be re-published to respect these new DLP granular control rules:
 
     ```powershell
     Add-PowerAppsAccount
@@ -96,83 +95,81 @@ To delete a rule, select it, and then select **Delete**.
             Write-Host "App is already Granular DLP compliant: " $app.AppName 
         }
     }
-    ```
+    ``` 
 
-## Endpoint formats and examples
+## Endpoint input formats and examples 
 
-Each connector has a different notion of what an endpoint means, and some endpoints can be defined in multiple formats. Therefore, endpoints have to be entered in all possible formats to block makers from using them in their apps and flows.
+Each connector has a different notion of what an endpoint means. Further, some endpoints can be defined in multiple formats. Therefore, endpoints have to be entered in all possible formats to block makers from using them while creating apps and flows. Admins can either enter the full endpoint name or use pattern matching with the wildcard character (`*`) when creating an endpoint filtering rule. These rules are entered and presented in an ordered list of endpoint patterns, meaning that they'll be evaluated in ascending order by number. Note that the last rule for any given connector is always `*` Allow or `*` Deny. Allow is the default, which can be changed to Deny. 
 
-You can either enter the full endpoint name or use pattern matching with the wildcard character (`*`) in your endpoint filtering rules. The following guidance offers some examples.
+The following guidance describes how to enter connector endpoints while creating rules to allow or deny them. 
 
-### SQL Server
+### SQL Server 
 
-SQL Server connection endpoints have to be listed in `<Server_name, database_name>` format.
+SQL Server connection endpoints have to be listed in `<Server_name, database_name>` format. A few things to keep in mind: 
 
-Makers can specify the server name in different formats. To truly address an endpoint, create rules that encompass all possible formats.
+- The server name can be entered in various formats by makers. Therefore, to truly address an endpoint, it has to be entered in all possible formats. For example, on-premises instances can be in `<machine_name\named_instance, database_name>` or `<IP address, custom port, database_name>` format. In this case, you'll have to apply allow or block rules in both formats for an endpoint. For example:
+  - Block `WS12875676\Servername1,MktingDB` 
+  - Block `11.22.33.444,1401,MktingDB`
 
-For example, on-premises instances can be formatted as `<machine_name\named_instance, database_name>` or `<IP address, custom port, database_name>`. The following examples block both formats:
+- There's no special logic to handle relative addresses such as `localhost`. Therefore, if you block `*localhost*`, it will block makers from using any endpoints by using `localhost` as part of the SQL Server endpoint. However, it won't stop them from accessing the endpoint by using the absolute address, unless the absolute address has also been blocked by the admin. 
 
-- Block `WS12875676\Servername1,MktingDB`
-- Block `11.22.33.444,1401,MktingDB`
+The following are examples: 
 
-There's no special logic to handle relative addresses like `localhost`. If you block `*localhost*`, it blocks makers from using any endpoints that use `localhost` as part of the SQL Server endpoint. However, it doesn't stop them from accessing the endpoint by using the absolute address, unless you've also blocked the absolute address.
-
-Example: Allow only Azure SQL Server instances:
-
-  1. Allow `*.database.windows.net*`
+- Allow only Azure SQL Server instances: 
+  1. Allow `*.database.windows.net*` 
   2. Deny `*`
 
-Example: Allow only a specific IP range:
-
-  1. Allow `11.22.33*`
+- Allow only a specific IP range: (Note that the IP addresses that aren't allowed can still be entered by the maker in `<machine_name\named_instance>` format.) 
+  1. Allow `11.22.33*` 
   2. Deny `*`
 
-A maker can still use the `<machine_name\named_instance>` format to enter IP addresses that aren't allowed.
+### Dataverse 
 
-### Dataverse
+Dataverse endpoints are represented by the [organization ID](determine-org-id-name.md), such as, 7b97cd5c-ce38-4930-9497-eec2a95bf5f7. Please note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors are not in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. 
 
-Dataverse endpoints are represented by the [organization ID](determine-org-id-name.md); for example, `7b97cd5c-ce38-4930-9497-eec2a95bf5f7`.
-
-Endpoint filtering is only available for the regular Dataverse connector, not for Dataverse dynamics and Dataverse current connectors. Also, the local instance of Dataverse, also known as the current environment, can never be blocked. In any environment, makers can always access the Dataverse current environment.
-
-Therefore, the following rules:
+Therefore, a rule that says the following:
 
 1. Allow `7b97cd5c-ce38-4930-9497-eec2a95bf5f7`
 2. Deny `*`
 
-&hellip;actually mean:
-
+Actually means:
 1. Allow `Dataverse current environment`
 2. Allow `7b97cd5c-ce38-4930-9497-eec2a95bf5f7`
 3. Deny `*`
 
-**Allow `Dataverse current environment`** is always implicitly the first rule in the Dataverse endpoint filtering list for any environment.
+Allow `Dataverse current environment` is always implicitly the first rule in the Dataverse endpoint filtering list for any given environment.
 
-### Azure Blob Storage
+### Azure Blob Storage 
 
-Azure Blob Storage endpoints are represented by the Azure storage account name.
+Azure Blob Storage endpoints are represented by the Azure storage account name. 
 
-### SMTP
+### SMTP 
 
-SMTP endpoints are represented in `<SMTP server address, port number>` format; for example, `smtp.gmail.com,587`.
+SMTP endpoints are represented in `<SMTP server address, port number>` format. 
 
-### HTTP with Azure AD, HTTP Webhook, and HTTP connectors
+The following is an example scenario: 
 
-The endpoints for all HTTP connectors are represented by a URL pattern.
+1. Deny `smtp.gmail.com,587` 
+2. Allow `*`
 
-Endpoint filtering isn't available for the **Get web resource** action of the HTTP with Azure AD connector.
+### HTTP with Azure AD, HTTP Webhook, and HTTP connectors 
 
-Example: Allow access to only the Azure subscriptions page in `https://management.azure.com/`:
+The endpoints for all HTTP connectors are represented by a URL pattern. The **Get web resource** action of the HTTP with Azure AD connector is out of scope. 
+
+The following is an example scenario: 
+
+Allow access to only the Azure subscriptions page within `https://management.azure.com/`.
 
 1. Allow `https://management.azure.com/subscriptions*`
-2. Deny `https://management.azure.com/*`
+2. Deny `https://management.azure.com/*` 
 3. Deny `*`
 
-## Use PowerShell to manage endpoint filtering
+## PowerShell support for endpoint filtering
 
 ### Configure endpoint filtering rules for a policy
+The object that contains endpoint filtering rules for a policy is referred to below as the connector configurations.
 
-The connector configurations object contains the endpoint filtering rules for a policy. It has the following structure:
+The connector configurations object has the following structure:
 
 ```powershell
 $ConnectorConfigurations = @{ 
@@ -190,48 +187,49 @@ $ConnectorConfigurations = @{
     }
   ) 
 }
-```
+``` 
 
-- The last rule for each connector should always be applied to URL `*`, to make sure the rules cover all URLs.
-- Populate the order property of the rules for each connector with numbers 1 to N, where N is the number of rules for the connector.
+**Notes**
+-	The last rule for each connector should always be applied to URL `*`, to ensure that all URLs are covered by the rules.
+-	The order property of the rules for each connector should be populated with numbers 1 to N, where N is the number of rules for that connector.
 
-### Retrieve connector configurations for a DLP policy
+**Retrieve existing connector configurations for a DLP policy**
 
 ```powershell
 Get-PowerAppDlpPolicyConnectorConfigurations 
-```
+``` 
 
-### Create connector configurations for a DLP policy
+**Create connector configurations for a DLP policy**
 
 ```powershell
 New-PowerAppDlpPolicyConnectorConfigurations
-```
+``` 
 
-### Update connector configurations for a DLP policy
+**Update connector configurations for a DLP policy**
 
 ```powershell
 Set-PowerAppDlpPolicyConnectorConfigurations
-```
+``` 
 
-The following example accomplishes several goals.
+**Example**
 
-- For the SQL Server connector:
+Goal:
 
-  - Deny database "testdatabase" of server "myservername.database.windows.net"
-  - Allow all other databases of server "myservername.database.windows.net"
-  - Deny all other servers
-  
-- For the SMTP connector:
+For the SQL Server connector:
+  -	Deny database “testdatabase” of server “myservername.database.windows.net”
+  -	Allow all other databases of server “myservername.database.windows.net”
+  -	Deny all other servers
 
-  - Allow Gmail (server address: smtp.gmail.com, port: 587)
-  - Deny all other addresses
-  
-- For the HTTP connector:
+For the SMTP connector:
+  -	Allow Gmail (server address: smtp.gmail.com, port: 587)
+  -	Deny all other addresses
 
-  - Allow endpoints `https://mywebsite.com/allowedPath1` and `https://mywebsite.com/allowedPath2`
-  - Deny all other URLs
+For the HTTP connector:
+  -	Allow endpoints `https://mywebsite.com/allowedPath1` and `https://mywebsite.com/allowedPath2` 
+  -	Deny all other URLs
 
-In the cmdlet, *PolicyName* refers to the unique GUID. Run the **Get-DlpPolicy** cmdlet to retrieve the DLP GUID.
+> [!NOTE]
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 
