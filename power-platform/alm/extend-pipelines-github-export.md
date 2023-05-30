@@ -33,6 +33,7 @@ The following inputs are required:
 - `solution_name`: Name of the Solution in Dataverse environment.
 - `environment_url`: Https endpoint of your pipeline host Dataverse environment.
 - `source_branch`: Branch for the solution commit.
+- `target_branch`: Branch to create for the solution commit. If not specified, the source_branch will be used.
 - `commit_message`: Message to provide for the commit.
 
 ## Workflow Secrets
@@ -67,6 +68,9 @@ on:
         description: "Branch for the solution commit"
         required: true
         default: main
+      target_branch:
+        description: "Branch to create for the solution commit. If not specified, the source_branch will be used."
+        required: false
       commit_message:
         description: "Message to provide for the commit"
         required: true
@@ -78,18 +82,28 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+            ref: ${{ github.event.inputs.source_branch }}
+
+      # Commit changes to the existing or new branch
+      - name: create new branch if specified
+        shell: pwsh
+        run: |
+            if('${{ github.event.inputs.target_branch }}' -ne '') {
+                git checkout -b ${{ github.event.inputs.target_branch }} ${{ github.event.inputs.source_branch }}
+            }
 
       # Export the managed solution from the artifact created by pipelines
       - name: export-managed-solution-from-artifact
         env:
             CLIENT_ID: ${{secrets.CLIENT_ID}}   
             TENANT_ID: ${{secrets.TENANT_ID}}   
-            CLIENT_SECRET: ${{secrets.CLIENT_SECRET}}
+            PowerPlatformSPN: ${{secrets.PowerPlatformSPN}}
         shell: pwsh
         run: |
             $aadHost = "login.microsoftonline.com"
             $clientId = "$env:CLIENT_ID"
-            $clientSecret = "$env:CLIENT_SECRET"
+            $clientSecret = "$env:PowerPlatformSPN"
             $tenantId = "$env:TENANT_ID"
             
             $url = "${{ github.event.inputs.environment_url }}"
@@ -113,7 +127,6 @@ jobs:
             $response = Invoke-RestMethod $requestUrl -Method 'GET' -Headers $headers
             $bytes = [Convert]::FromBase64String($response.value)
             [IO.File]::WriteAllBytes("${{ github.event.inputs.solution_name }}_managed.zip", $bytes)
-
       # Unpack the solution
       - name: unpack-managed-solution
         uses: microsoft/powerplatform-actions/unpack-solution@v0
@@ -137,8 +150,14 @@ jobs:
 
       # Push the committed changes to the source branch
       - name: push to ${{ github.event.inputs.source_branch }}
+        shell: pwsh
         run: |
-          git push origin ${{ github.event.inputs.source_branch }}
+          if('${{ github.event.inputs.target_branch }}' -ne '') {
+              git push origin ${{ github.event.inputs.target_branch }}
+          } else {
+              git push origin ${{ github.event.inputs.source_branch }}
+          }
+
 ```
 
 ## Example Power Automate Flow
