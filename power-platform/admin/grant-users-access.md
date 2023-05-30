@@ -5,10 +5,8 @@ author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
-ms.custom: 
-  - "admin-security"
-  - "intro-internal"
-
+ms.custom: "admin-security"
+ms.collection: get-started
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 02/23/2021
