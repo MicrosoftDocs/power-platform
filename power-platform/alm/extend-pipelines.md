@@ -55,18 +55,19 @@ Power Automate [trigger conditions](/power-automate/triggers-introduction#use-tr
 :::image type="content" source="/media/pipelines-flow-trigger-conditions.png" alt-text="Pipelines trigger conditions in Power Automate":::
 
 ### Trigger a flow for a specific pipeline
-Triggers a flow run for all stages of a pipeline. In this example, replace 'Contoso Pipeline' with the name of your pipeline.
+Triggers a flow run for all stages of a pipeline (Contoso Pipeline). In this example, replace 'Contoso Pipeline' with the name of your pipeline:
 
 `@equals(triggerOutputs()?['body/OutputParameters/DeploymentPipelineName'], 'Contoso Pipeline')`
 
 ### Trigger a flow for a specific stage in a pipeline
+Triggers a flow for a deployment stage with a stage name *equal* to 'Contoso UAT':
 
-````@equals(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'Contoso UAT')````
+`**@equals**(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'Contoso UAT')`
 
-### Trigger a flow for deployments to QA
-Triggers a flow for any deployment stages with a stage name containing 'QA'. 
+### Trigger a flow for specific stages in a pipeline
+Triggers a flow for any deployment stages with a stage name *containing* 'QA': 
 
-````@contains(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'QA')````
+`**@contains**(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'QA')`
 
 Learn more about expressions used in conditions: [Use expressions in conditions to check multiple values](/power-automate/use-expressions-in-conditions).
 
