@@ -477,9 +477,9 @@
                       href: data-loss-prevention-sdk.md
                     - name: Basic connector classification
                       href: dlp-connector-classification.md
-                    - name: Connector action control
+                    - name: Block or allow connector actions
                       href: connector-action-control.md
-                    - name: Connector endpoint filtering (preview)
+                    - name: Configure connector endpoint filtering (preview)
                       href: connector-endpoint-filtering.md
                     - name: DLP for custom connectors
                       href: dlp-custom-connector-parity.md
