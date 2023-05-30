@@ -52,7 +52,7 @@ Triggers are available in Power Automate cloud flows within the pipelines host e
 ## Trigger conditions
 Power Automate [trigger conditions](/power-automate/triggers-introduction#use-trigger-conditions-to-reduce-flow-runs) allow you to customize the trigger so that the flow runs only when certain conditions are met. For example, you may need to run different flows and associated business logic within different pipelines or pipeline stages. This also helps keep flow runs and Power platform requests consumption low. 
 
-:::image type="content" source="/media/pipelines-flow-trigger-conditions.png" alt-text="Pipelines trigger conditions in Power Automate":::
+:::image type="content" source="media/pipelines-flow-trigger-conditions.png" alt-text="Pipelines trigger conditions in Power Automate":::
 
 ### Trigger a flow for a specific pipeline
 Triggers a flow run for all stages of a pipeline (Contoso Pipeline). In this example, replace 'Contoso Pipeline' with the name of your pipeline:
