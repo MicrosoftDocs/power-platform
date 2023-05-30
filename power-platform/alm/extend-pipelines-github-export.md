@@ -37,7 +37,7 @@ The following inputs are required:
 
 ## Workflow Secrets
 
-The following secrets are required to connect to Dataverse using an Application User configured in Dataverse and in Azure Active Directory. Configure these secrets in the GitHub repository settings. For more information, see [Creating and using encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) and [Create an application user](https://learn.microsoft.com/power-platform/admin/manage-application-users#create-an-application-user)
+The following secrets are required to connect to Dataverse using an Application User configured in Dataverse and in Azure Active Directory. Configure these secrets in the GitHub repository settings. For more information, see [Creating and using encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) and [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user)
 
 - `CLIENT_ID`: The client ID of the registered Azure AD application
 - `TENANT_ID`: The tenant ID of the Azure AD directory associated with the Azure AD application
@@ -143,7 +143,7 @@ jobs:
 
 ## Example Power Automate Flow
 
-To call this GitHub workflow, you can create a Power Automate Flow that is triggered when a pipeline artifact is created in Dataverse. The Flow can be configured to pass the required inputs to the GitHub workflow. For more information on how to create a Power Automate Flow, see [Create a flow](https://docs.microsoft.com/power-automate/getting-started#create-a-flow).
+To call this GitHub workflow, you can create a Power Automate Flow that is triggered when a pipeline artifact is created in Dataverse. The Flow can be configured to pass the required inputs to the GitHub workflow. For more information on how to create a Power Automate Flow, see [Create a flow](/power-automate/getting-started#create-a-flow).
 
 ## Flow Details
 
