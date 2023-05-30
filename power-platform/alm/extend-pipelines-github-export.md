@@ -94,12 +94,12 @@ jobs:
         env:
             CLIENT_ID: ${{secrets.CLIENT_ID}}   
             TENANT_ID: ${{secrets.TENANT_ID}}   
-            PowerPlatformSPN: ${{secrets.PowerPlatformSPN}}
+            CLIENT_SECRET: ${{secrets.CLIENT_SECRET}}
         shell: pwsh
         run: |
             $aadHost = "login.microsoftonline.com"
             $clientId = "$env:CLIENT_ID"
-            $clientSecret = "$env:PowerPlatformSPN"
+            $clientSecret = "$env:CLIENT_SECRET"
             $tenantId = "$env:TENANT_ID"
             
             $url = "${{ github.event.inputs.artifact_url }}"
