@@ -8,9 +8,11 @@ ms.topic: overview
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
-ms.custom: fundamentals, ceX, portal, intro-internal
+ms.custom: fundamentals, ceX, portal
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+ms.collection:
+    - virtual-agent
+    - get-started
 searchScope:
   - "Power Virtual Agents"
 ---

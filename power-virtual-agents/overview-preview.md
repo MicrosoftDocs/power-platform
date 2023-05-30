@@ -7,9 +7,11 @@ ms.topic: overview
 author: iaanw
 ms.author: iawilt
 manager: leeclontz
-ms.custom: fundamentals, ceX, intro-internal, bap-template
+ms.custom: fundamentals, ceX, bap-template
 ms.service: power-virtual-agents
-ms.collection: virtual-agent
+ms.collection:
+  - virtual-agent
+  - get-started
 searchScope:
   - "Power Virtual Agents"
 ---
