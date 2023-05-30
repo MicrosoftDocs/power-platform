@@ -1,0 +1,157 @@
+# Download, Unpack and Commit a Pipeline Artifact to a GitHub Repository
+
+This GitHub workflow downloads a pipeline artifact from Dataverse and unpacks and commits the source code to a branch in GitHub when a pipeline artifact is created in Dataverse. The workflow can be invoked manually or triggered by a pipeline artifact creation event in Dataverse as shown in the example Power Automate Flow. For more information on how to create a GitHub workflow, see [Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart).
+
+## Workflow Details
+
+The workflow is triggered via a `workflow_dispatch` event. The workflow runs on `ubuntu-latest` and has the `contents: write` permission to be able to commit changes to the GitHub repository branch.
+
+The workflow consists of the following steps:
+
+1. `actions/checkout@v3`: Checks out the repository.
+2. `export-managed-solution-from-artifact`: Exports the managed solution from the artifact created by pipelines.
+3. `unpack-managed-solution`: Unpacks the solution.
+4. `commit changes`: Commits changes to the existing or new branch.
+5. `push to`: Pushes the committed changes to the source branch.
+
+## Workflow Inputs
+
+The following inputs are required:
+
+- `artifact_id`: The Dataverse record ID of the Artifact created by the pipelines.
+- `solution_name`: Name of the Solution in Dataverse environment.
+- `environment_url`: Https endpoint of your pipeline host Dataverse environment.
+- `source_branch`: Branch for the solution commit.
+- `commit_message`: Message to provide for the commit.
+
+## Workflow Secrets
+
+The following secrets are required to connect to Dataverse using an Application User configured in Dataverse and in Azure Active Directory. Configure these secrets in the GitHub repository settings. For more information, see [Creating and using encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) and [Create an application user](https://learn.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user)
+
+- `CLIENT_ID`: The client ID of the registered Azure AD application
+- `TENANT_ID`: The tenant ID of the Azure AD directory associated with the Azure AD application
+- `CLIENT_SECRET`: The client secret of the registered Azure AD application
+
+## Workflow Code
+
+```github-actions-workflow
+name: Export, unpack and commit the solution to git
+run-name: Getting ${{ github.event.inputs.solution_name }} solution from environment ${{ github.event.inputs.environment_url }} environment and committing
+on:
+  workflow_dispatch:
+    inputs:
+      artifact_id:
+        description: "The Dataverse record ID of the Artifact created by the pipelines."
+        required: true
+        default: yourartifactid
+      solution_name:
+        description: "Name of the Solution in Dataverse environment"
+        required: true
+        default: yoursolutionname
+      environment_url:
+        description: Https endpoint of your pipeline host Dataverse environment"
+        required: true
+        default: "https://[your-env].crm.dynamics.com"
+      source_branch:
+        description: "Branch for the solution commit"
+        required: true
+        default: main
+      commit_message:
+        description: "Message to provide for the commit"
+        required: true
+permissions:
+  contents: write
+jobs:
+  export-unpack-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Export the managed solution from the artifact created by pipelines
+      - name: export-managed-solution-from-artifact
+        env:
+            CLIENT_ID: ${{secrets.CLIENT_ID}}   
+            TENANT_ID: ${{secrets.TENANT_ID}}   
+            CLIENT_SECRET: ${{secrets.CLIENT_SECRET}}
+        shell: pwsh
+        run: |
+            $aadHost = "login.microsoftonline.com"
+            $clientId = "$env:CLIENT_ID"
+            $clientSecret = "$env:CLIENT_SECRET"
+            $tenantId = "$env:TENANT_ID"
+            
+            $url = "${{ github.event.inputs.environment_url }}"
+            $options = [System.StringSplitOptions]::RemoveEmptyEntries
+            $dataverseHost = $url.Split("://", $options)[1].Split("/")[0]
+            
+            $body = @{client_id = $clientId; client_secret = $clientSecret; grant_type = "client_credentials"; scope = "https://$dataverseHost/.default"; }
+            $OAuthReq = Invoke-RestMethod -Method Post -Uri "https://$aadHost/$tenantId/oauth2/v2.0/token" -Body $body
+            $spnToken = $OAuthReq.access_token
+            $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+            $headers.Add("Authorization", "Bearer $spnToken")
+            $headers.Add("Content-Type", "application/json")
+            $odataQueryForFileName = "deploymentartifacts(${{ github.event.inputs.artifact_id }})?`$select=name"
+            $requestUrl = "https://$dataverseHost/api/data/v9.2/$odataQueryForFileName"    
+            $reponse = Invoke-RestMethod $requestUrl -Method 'GET' -Headers $headers
+            
+            $solutionName = $reponse.name
+            
+            $odataQueryForFileContents = "deploymentartifacts(${{ github.event.inputs.artifact_id }})/artifactfile/$value"
+            $requestUrl = "https://$dataverseHost/api/data/v9.2/$odataQueryForFileContents"
+            $response = Invoke-RestMethod $requestUrl -Method 'GET' -Headers $headers
+            $bytes = [Convert]::FromBase64String($response.value)
+            [IO.File]::WriteAllBytes("${{ github.event.inputs.solution_name }}_managed.zip", $bytes)
+
+      # Unpack the solution
+      - name: unpack-managed-solution
+        uses: microsoft/powerplatform-actions/unpack-solution@v0
+        with:
+          solution-file: "${{ github.event.inputs.solution_name }}_managed.zip"
+          solution-folder: "${{ github.event.repository.name }}"
+          solution-type: 'Managed'
+          process-canvas-apps: true
+          overwrite-files: true
+
+      # Commit changes to the existing or new branch
+      - name: commit changes
+        shell: pwsh
+        run: |
+          rm -rf ${{ github.event.inputs.solution_name }}_managed.zip
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>" 
+          git pull 
+          git add --all
+          git commit -am "${{ github.event.inputs.commit_message }}" --allow-empty
+
+      # Push the committed changes to the source branch
+      - name: push to ${{ github.event.inputs.source_branch }}
+        run: |
+          git push origin ${{ github.event.inputs.source_branch }}
+```
+
+## Example Power Automate Flow
+
+To call this GitHub workflow, you can create a Power Automate Flow that is triggered when a pipeline artifact is created in Dataverse. The Flow can be configured to pass the required inputs to the GitHub workflow. For more information on how to create a Power Automate Flow, see [Create a flow](https://docs.microsoft.com/en-us/power-automate/getting-started#create-a-flow).
+
+## Flow Details
+
+The Flow is triggered when a pipeline artifact is created in Dataverse. The Flow calls the HTTP connector to trigger the GitHub workflow. The Flow passes the required inputs to the GitHub workflow. Include the following inputs in the request body:
+
+- `artifact_id`: The Dataverse record ID of the Artifact created by the pipelines.
+- `solution_name`: Name of the Solution in Dataverse environment.
+- `environment_url`: Https endpoint of your pipeline host Dataverse environment.
+- `source_branch`: Branch for the solution commit.
+- `commit_message`: Message to provide for the commit.
+
+The Flow also uses a GitHub Personal Access token to authenticate to GitHub. For more information on how to create a GitHub Personal Access token, see [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). The PAT is passed in the `Authorization` header of the HTTP request.
+
+You will need to update the following values in the Flow:
+
+- `[Your GitHub Personal Access Token]` - Replace with your GitHub Personal Access Token.
+- `[Your GitHub Organization]` - Replace with your GitHub organization name.
+- `[Your GitHub Repository]` - Replace with your GitHub repository name.
+- `[Your Pipeline Host Environment]` - Replace with your pipeline host environment name.
+- `[Your GitHub Workflow YAML File]` - Replace with your GitHub workflow YAML file name.
+
+![Power Automate Flow](./media/extend-pipelines-github-export-flow.png)
