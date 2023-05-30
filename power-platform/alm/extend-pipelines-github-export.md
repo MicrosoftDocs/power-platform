@@ -89,7 +89,7 @@ jobs:
                 git checkout -b ${{ github.event.inputs.target_branch }} ${{ github.event.inputs.source_branch }}
             }
 
-      # Export the managed solution from the artifact created by pipelines
+      # Export the solution from the artifact created by pipelines
       - name: download solution from artifact
         env:
             CLIENT_ID: ${{secrets.CLIENT_ID}}   
@@ -115,7 +115,7 @@ jobs:
             
             $response = Invoke-RestMethod "${{ github.event.inputs.artifact_url }}" -Method 'GET' -Headers $headers
             $bytes = [Convert]::FromBase64String($response.value)
-            [IO.File]::WriteAllBytes("${{ github.event.inputs.solution_name }}_managed.zip", $bytes)
+            [IO.File]::WriteAllBytes("${{ github.event.inputs.solution_name }}.zip", $bytes)
       # Unpack the solution
       - name: unpack solution
         uses: microsoft/powerplatform-actions/unpack-solution@v0
