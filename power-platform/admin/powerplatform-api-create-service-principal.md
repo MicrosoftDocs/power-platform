@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Authenticating via username and password is often not ideal, especially with the rise of multifactor authentication.  In such cases, service principal (or client credentials flow) authentication is preferred.
+Authenticating via username and password is often not ideal, especially with the rise of multifactor authentication.  In such cases, service principal (or client credentials flow) authentication is preferred.  This can be done by both registering a new service principal application in your own Azure Active Directory tenant and then registering that same application with Power Platform.
 
 ## Registering an admin management application
 First, the client application needs to be registered in your Azure Active Directory (Azure AD) tenant.  To set this up, review the [Authentication](programmability-authentication.md) article for Power Platform APIs.  
@@ -44,3 +44,5 @@ GET https://api.bap.microsoft.com/providers/Microsoft.BusinessAppPlatform/adminA
 
 ## Limitations of service principals
 Currently, service principal authentication works for environment management, tenant settings, and Power Apps management.  APIs related to Flow are supported for service principal authentication in situations where a license is not required, as it is not possible to assign licenses to service principal identities in Azure Active Directory.
+
+Service principal applications are treated within Power Platform similar to how normal users are with the Power Platform Administrator role assigned.  Granular roles and permissions cannot be assigned to limit their capabilities.  The application does not get any special role assigned in Azure AD, this is just how the platform services will treat requests made by service principals.
