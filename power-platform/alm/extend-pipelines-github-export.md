@@ -1,6 +1,6 @@
 ---
 title: Extend pipelines in Power Platform with GitHub Source Control
-description: Export, unpack and commit a solution using a GitHub workflow called from a Power Automate Flow.
+description: Download, unpack and commit a solution using a GitHub workflow called from a Power Automate Flow.
 author: mikefactorial
 ms.author: caburk
 ms.reviewer: kvivek
@@ -21,7 +21,7 @@ The workflow consists of the following steps:
 
 1. `actions/checkout@v3`: Checks out the repository.
 1. `create new branch if specified`: Creates a new branch if a `target_branch` is specified in the inputs.
-1. `export-managed-solution-from-artifact`: Exports the managed solution from the artifact created by pipelines.
+1. `download-managed-solution-from-artifact`: Exports the managed solution from the artifact created by pipelines.
 1. `unpack-managed-solution`: Unpacks the solution.
 1. `commit changes`: Commits changes to the existing or new branch.
 1. `push to branch`: Pushes the committed changes to the source branch.
@@ -47,7 +47,7 @@ The following secrets are required to connect to Dataverse using an Application 
 ## Workflow Code
 
 ```github-actions-workflow
-name: Export, unpack and commit the solution to git
+name: Download, unpack and commit the solution to git
 run-name: Getting ${{ github.event.inputs.solution_name }} solution from environment ${{ github.event.inputs.environment_url }} environment and committing
 on:
   workflow_dispatch:
@@ -90,7 +90,7 @@ jobs:
             }
 
       # Export the managed solution from the artifact created by pipelines
-      - name: export-managed-solution-from-artifact
+      - name: download-managed-solution-from-artifact
         env:
             CLIENT_ID: ${{secrets.CLIENT_ID}}   
             TENANT_ID: ${{secrets.TENANT_ID}}   
@@ -161,10 +161,11 @@ The Flow triggers when the `OnDeploymentRequested` action is run in Dataverse. T
 - `source_branch`: Branch for the solution commit.
 - `commit_message`: Message to provide for the commit.
 
-The values passed into the `artifact_url` and `solution_name` are pulled from the outputs of the action that triggered the pipeline.
+The values passed into the `artifact_url` and `solution_name` are pulled from the outputs of the action that triggered the pipeline. The commit message is pulled from the deployment stage run row in Dataverse.
 
 - `artifact_url`: `@{triggerOutputs()?['body/OutputParameters/ArtifactFileDownloadLink']}`
 - `solution_name`: `@{triggerOutputs()?['body/OutputParameters/ArtifactName']}`
+- `commit_message`: `@{outputs('Retrieve_the_Deployment_Stage_Run')?['body/deploymentnotes']}`
 
 The Flow also uses a GitHub Personal Access token to authenticate to GitHub. For more information on how to create a GitHub Personal Access token, see [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). The PAT is passed in the `Authorization` header of the HTTP request.
 
@@ -176,7 +177,7 @@ Update the following values in the Flow:
 - `[Your GitHub Workflow YAML File]` - Replace with your GitHub workflow YAML file name.
 - `[The Git Branch to Commit the Solution]` - Replace with the Git branch to commit the solution. You can also create a new branch from an existing branch by adding the `target_branch` input to the GitHub workflow body parameters JSON.
 
-![Power Automate Flow](./media/extend-pipelines-github-export-flow.png)
+![Power Automate Flow that shows an OnDeploymentRequested trigger with a step to retrieve the associated deployment stage run and call the GitHub workflow using an HTTP connector](./media/extend-pipelines-github-export-flow.png)
 
 ## Next step
 
