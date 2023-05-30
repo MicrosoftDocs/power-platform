@@ -153,7 +153,7 @@ In [Power Apps](https://make.powerapps.com/), with the environment you selected,
 These apps will appear in two places:
 
 > [!NOTE]
-> You will also see an app named **Package Management Viewer** in the environment. This app is reserved for future use.
+> You will also see an app named **Package Management View** in the environment. This app is reserved for future use.
 
 - In [Power Apps](https://make.powerapps.com/), select **Apps**
 
