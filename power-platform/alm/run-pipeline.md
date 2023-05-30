@@ -49,9 +49,9 @@ If you have a scheduled deployment, you can cancel it through three different me
 
 - In the pipeline **Details** section where you began your deployment, there is an option to **Cancel deployment** before the scheduled deployment time.
 
-- In the **Run history**, clicking the **...** on a scheduled deployment will display a **Cancel deployment** option.
+- In **Run history**, selecting **...** on a scheduled deployment will display a **Cancel deployment** option.
 
-- In the *Information* pane when clicking on a deployment record in **Run history**, click the **Cancel deployment** option under the *Status* of a scheduled deployment.
+- In the *Information* pane, select a deployment record in **Run history**, and then select **Cancel deployment** under the *Status* of a scheduled deployment.
 
 ## Change the time of a scheduled deployment as a pipeline admin
 In the Deployment Pipeline Configuration app,
