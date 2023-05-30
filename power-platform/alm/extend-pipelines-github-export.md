@@ -11,7 +11,7 @@ ms.custom:
 
 # Download, Unpack and Commit a Pipeline Artifact to a GitHub Repository
 
-This GitHub workflow downloads a pipeline artifact from Dataverse and unpacks and commits the source code to a branch in GitHub when a pipeline artifact is created in Dataverse. The workflow can be invoked manually or triggered by a pipeline artifact creation event in Dataverse as shown in the example Power Automate Flow. For more information on how to create a GitHub workflow, see [Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart).
+This GitHub workflow downloads a pipeline artifact from Dataverse and unpacks and commits the source code to a branch in GitHub. The workflow triggers when a deployment request action in Dataverse as shown in the [example Power Automate Flow](#example-power-automate-flow). For more information on how to create a GitHub workflow, see [Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart).
 
 ## Workflow Details
 
@@ -20,20 +20,21 @@ The workflow is triggered via a `workflow_dispatch` event. The workflow runs on 
 The workflow consists of the following steps:
 
 1. `actions/checkout@v3`: Checks out the repository.
-2. `export-managed-solution-from-artifact`: Exports the managed solution from the artifact created by pipelines.
-3. `unpack-managed-solution`: Unpacks the solution.
-4. `commit changes`: Commits changes to the existing or new branch.
-5. `push to`: Pushes the committed changes to the source branch.
+1. `create new branch if specified`: Creates a new branch if a `target_branch` is specified in the inputs.
+1. `export-managed-solution-from-artifact`: Exports the managed solution from the artifact created by pipelines.
+1. `unpack-managed-solution`: Unpacks the solution.
+1. `commit changes`: Commits changes to the existing or new branch.
+1. `push to branch`: Pushes the committed changes to the source branch.
 
 ## Workflow Inputs
 
-The following inputs are required:
+The following inputs are required or optional:
 
-- `artifact_url`: The url of the Dataverse record ID for the artifact created by the pipelines.
-- `solution_name`: Name of the Solution in Dataverse environment.
-- `source_branch`: Branch for the solution commit.
-- `target_branch`: Branch to create for the solution commit. If not specified, the source_branch is used.
-- `commit_message`: Message to provide for the commit.
+- `artifact_url` (required): The url of the Dataverse record ID for the artifact created by the pipelines.
+- `solution_name` (required): Name of the Solution in Dataverse environment.
+- `source_branch` (required): Branch for the solution commit.
+- `target_branch` (optional): Branch to create for the solution commit. If not specified, the source_branch is used.
+- `commit_message` (required): Message to provide for the commit.
 
 ## Workflow Secrets
 
@@ -137,7 +138,7 @@ jobs:
           git commit -am "${{ github.event.inputs.commit_message }}" --allow-empty
 
       # Push the committed changes to the source branch
-      - name: push to ${{ github.event.inputs.source_branch }}
+      - name: push to branch
         shell: pwsh
         run: |
           if('${{ github.event.inputs.target_branch }}' -ne '') {
@@ -149,11 +150,11 @@ jobs:
 
 ## Example Power Automate Flow
 
-To call this GitHub workflow, you can create a Power Automate Flow that is triggered when a pipeline artifact is created in Dataverse. The Flow can be configured to pass the required inputs to the GitHub workflow. For more information on how to create a Power Automate Flow, see [Create a flow](/power-automate/getting-started#create-a-flow).
+To call this GitHub workflow, you can create a Power Automate Flow that is triggered when a deployment request is made in Dataverse. The Flow can be configured to pass the required inputs to the GitHub workflow. For more information on how to create a Power Automate Flow, see [Create a flow](/power-automate/getting-started#create-a-flow).
 
 ## Flow Details
 
-The Flow is triggered when a pipeline artifact is created in Dataverse. The Flow calls the HTTP connector to trigger the GitHub workflow. The Flow passes the required inputs to the GitHub workflow. Include the following inputs in the request body:
+The Flow triggers when the `OnDeploymentRequested` action is run in Dataverse. The Flow calls the HTTP connector to trigger the GitHub workflow. The Flow passes the required inputs to the GitHub workflow. Include the following inputs in the request body:
 
 - `artifact_url`: Url of the Dataverse solution artifact created by the pipelines.
 - `solution_name`: Name of the Solution in Dataverse environment.
