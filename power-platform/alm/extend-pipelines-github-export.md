@@ -29,11 +29,10 @@ The workflow consists of the following steps:
 
 The following inputs are required:
 
-- `artifact_id`: The Dataverse record ID of the Artifact created by the pipelines.
+- `artifact_url`: The url of the Dataverse record ID for the artifact created by the pipelines.
 - `solution_name`: Name of the Solution in Dataverse environment.
-- `environment_url`: Https endpoint of your pipeline host Dataverse environment.
 - `source_branch`: Branch for the solution commit.
-- `target_branch`: Branch to create for the solution commit. If not specified, the source_branch will be used.
+- `target_branch`: Branch to create for the solution commit. If not specified, the source_branch is used.
 - `commit_message`: Message to provide for the commit.
 
 ## Workflow Secrets
@@ -52,24 +51,20 @@ run-name: Getting ${{ github.event.inputs.solution_name }} solution from environ
 on:
   workflow_dispatch:
     inputs:
-      artifact_id:
-        description: "The Dataverse record ID of the Artifact created by the pipelines."
+      artifact_url:
+        description: "The url of the Dataverse record ID for the artifact created by the pipelines."
         required: true
-        default: yourartifactid
+        default: "https://[your-env].crm.dynamics.com/api/data/v9.0/deploymentartifacts([your-artifact-id])/artifactfile/$value"
       solution_name:
         description: "Name of the Solution in Dataverse environment"
         required: true
-        default: yoursolutionname
-      environment_url:
-        description: Https endpoint of your pipeline host Dataverse environment"
-        required: true
-        default: "https://[your-env].crm.dynamics.com"
+        default: "[your-solution-name]"
       source_branch:
         description: "Branch for the solution commit"
         required: true
         default: main
       target_branch:
-        description: "Branch to create for the solution commit. If not specified, the source_branch will be used."
+        description: "Branch to create for the solution commit"
         required: false
       commit_message:
         description: "Message to provide for the commit"
@@ -106,25 +101,18 @@ jobs:
             $clientSecret = "$env:PowerPlatformSPN"
             $tenantId = "$env:TENANT_ID"
             
-            $url = "${{ github.event.inputs.environment_url }}"
+            $url = "${{ github.event.inputs.artifact_url }}"
             $options = [System.StringSplitOptions]::RemoveEmptyEntries
             $dataverseHost = $url.Split("://", $options)[1].Split("/")[0]
-            
+
             $body = @{client_id = $clientId; client_secret = $clientSecret; grant_type = "client_credentials"; scope = "https://$dataverseHost/.default"; }
             $OAuthReq = Invoke-RestMethod -Method Post -Uri "https://$aadHost/$tenantId/oauth2/v2.0/token" -Body $body
             $spnToken = $OAuthReq.access_token
             $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
             $headers.Add("Authorization", "Bearer $spnToken")
             $headers.Add("Content-Type", "application/json")
-            $odataQueryForFileName = "deploymentartifacts(${{ github.event.inputs.artifact_id }})?`$select=name"
-            $requestUrl = "https://$dataverseHost/api/data/v9.2/$odataQueryForFileName"    
-            $reponse = Invoke-RestMethod $requestUrl -Method 'GET' -Headers $headers
             
-            $solutionName = $reponse.name
-            
-            $odataQueryForFileContents = "deploymentartifacts(${{ github.event.inputs.artifact_id }})/artifactfile/$value"
-            $requestUrl = "https://$dataverseHost/api/data/v9.2/$odataQueryForFileContents"
-            $response = Invoke-RestMethod $requestUrl -Method 'GET' -Headers $headers
+            $response = Invoke-RestMethod "${{ github.event.inputs.artifact_url }}" -Method 'GET' -Headers $headers
             $bytes = [Convert]::FromBase64String($response.value)
             [IO.File]::WriteAllBytes("${{ github.event.inputs.solution_name }}_managed.zip", $bytes)
       # Unpack the solution
@@ -157,7 +145,6 @@ jobs:
           } else {
               git push origin ${{ github.event.inputs.source_branch }}
           }
-
 ```
 
 ## Example Power Automate Flow
@@ -168,11 +155,15 @@ To call this GitHub workflow, you can create a Power Automate Flow that is trigg
 
 The Flow is triggered when a pipeline artifact is created in Dataverse. The Flow calls the HTTP connector to trigger the GitHub workflow. The Flow passes the required inputs to the GitHub workflow. Include the following inputs in the request body:
 
-- `artifact_id`: The Dataverse record ID of the Artifact created by the pipelines.
+- `artifact_url`: Url of the Dataverse solution artifact created by the pipelines.
 - `solution_name`: Name of the Solution in Dataverse environment.
-- `environment_url`: Https endpoint of your pipeline host Dataverse environment.
 - `source_branch`: Branch for the solution commit.
 - `commit_message`: Message to provide for the commit.
+
+The values passed into the `artifact_url` and `solution_name` are pulled from the outputs of the action that triggered the pipeline.
+
+- `artifact_url`: `@{triggerOutputs()?['body/OutputParameters/ArtifactFileDownloadLink']}`
+- `solution_name`: `@{triggerOutputs()?['body/OutputParameters/ArtifactName']}`
 
 The Flow also uses a GitHub Personal Access token to authenticate to GitHub. For more information on how to create a GitHub Personal Access token, see [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). The PAT is passed in the `Authorization` header of the HTTP request.
 
@@ -181,9 +172,8 @@ Update the following values in the Flow:
 - `[Your GitHub Personal Access Token]` - Replace with your GitHub Personal Access Token.
 - `[Your GitHub Organization]` - Replace with your GitHub organization name.
 - `[Your GitHub Repository]` - Replace with your GitHub repository name.
-- `[Your Pipeline Host Environment]` - Replace with your pipeline host environment name.
 - `[Your GitHub Workflow YAML File]` - Replace with your GitHub workflow YAML file name.
-
+- `[The Git Branch to Commit the Solution]` - Replace with the Git branch to commit the solution. You can also create a new branch from an existing branch by adding the `target_branch` input to the GitHub workflow body parameters JSON.
 ![Power Automate Flow](./media/extend-pipelines-github-export-flow.png)
 
 ## Next step
