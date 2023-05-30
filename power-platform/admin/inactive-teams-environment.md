@@ -4,10 +4,10 @@ description: Admins can configure an automatic cleanup process that removes inac
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/16/2022
+ms.date: 05/30/2023
 ms.subservice: admin
 ms.author: matgupta 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -59,7 +59,7 @@ The following users will receive email notifications on the schedule described i
   A Dataverse for Teams environment is paired with a team in Microsoft Teams. The owners of the team are automatically granted the System Administrator role for the environment. They receive email notifications and can [trigger activity, re-enable, and recover the environment](#trigger-activity-re-enable-and-recover-a-dataverse-for-teams-environment) in the Power Platform admin center. Team members and guests don't receive the email notifications.
 
 - The user who created the environment 
-- If environment admins are no longer part of the tenant then the tenant admin are notified.
+- If environment admins are no longer part of the tenant, then the tenant admin are notified.
 
 Additionally, users and makers are notified on the Environment's list page and Environment page when the Dataverse for Teams environment is disabled.
 
