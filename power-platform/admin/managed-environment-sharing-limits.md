@@ -45,7 +45,7 @@ You can also use PowerShell to set and remove sharing limits.
 
 ### Set sharing limits
 
-Here's an example PowerShell script that excludes sharing with security groups and limits the number of individuals canvas apps can be shared to to 20, for an existing managed environment:
+Here's an example PowerShell script that excludes sharing with security groups and limits to 20 the number of individuals canvas apps can be shared to, for an existing managed environment:
 
 ```powershell
 # Retrieve the environment
@@ -53,7 +53,6 @@ $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 
 # Update the Managed Environment settings
 $governanceConfiguration = $environment.Internal.properties.governanceConfiguration
-$governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'isGroupSharingDisabled' -Value "true" -Force
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'limitSharingMode' -Value "excludeSharingToSecurityGroups" -Force
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'maxLimitUserSharing' -Value "20" -Force
 
@@ -71,7 +70,6 @@ $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 
 # Update the Managed Environment settings
 $governanceConfiguration = $environment.Internal.properties.governanceConfiguration
-$governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'isGroupSharingDisabled' -Value "false" -Force
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'limitSharingMode' -Value "noLimit" -Force
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'maxLimitUserSharing' -Value "-1" -Force
 
