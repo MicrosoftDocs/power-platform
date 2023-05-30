@@ -74,8 +74,6 @@
               href: extend-pipelines.md
             - name: Extend pipelines using GitHub Actions
               href: extend-pipelines-github-export.md
-            - name: Extend pipelines using Azure DevOps Pipelines
-              href: extend-pipelines-azdo-export.md
             - name: Run pipelines
               href: run-pipeline.md
     - name: ALM for developers
