@@ -1,8 +1,8 @@
 ---
-title: Block or allow connector actions
-description: Learn how to block or allow individual actions of a connector as part of a data loss prevention policy in Power Platform.
+title: "Connector action control | MicrosoftDocs"
+description: You can use connector action control to allow or block individual actions within a given connector.
 ms.component: pa-admin
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 04/10/2023
 ms.subservice: admin
 author: mikferland-msft
@@ -11,9 +11,7 @@ ms.reviewer: sericks
 contributors:
   - mikferland-msft
   - mihaelablendea
-ms.custom:
-  - "admin-security"
-  - bap-template
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
@@ -23,29 +21,21 @@ search.app:
   - Flow
 ---
 
-# Block or allow connector actions
+# Connector action control
 
-Block or allow individual actions of a connector as part of a data loss prevention (DLP) policy.
+You can use connector action control to allow or block individual actions within a given connector. On the **Connectors** page, right-click the connector, and then select **Configure connector** > **Connector actions**.
 
-1. Sign in to the Power Platform admin center.
-1. In the left side panel, select **Policies**.
-1. [Create](create-dlp-policy.md) or [edit](prevent-data-loss.md#edit-a-dlp-policy) a policy.
-1. On the **Prebuilt connectors** page, select the connector, and then select **Configure connector** > **Connector actions**.
+:::image type="content" source="media/dlp-connector-actions.png" alt-text="Select Configure connector > Connector actions.":::
 
-    You can select **Configure connector** in the command bar at the top of the page or on the **More actions** (**&hellip;**) menu. **Configure connector** is available for blockable connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
+> [!NOTE]
+> Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
 
-    :::image type="content" source="media/dlp-connector-actions.png" alt-text="Screenshot of configuring connector actions in the Power Platform admin center.":::
+When configuring the connector, use the side panel to allow or deny specific actions. You can also set the default value (Allow or Deny) for any new connector actions that will be added to the connector in the future.
 
-1. In the right side panel, select or clear **Allow** to allow or block specific actions.
-1. Under **Default connector action settings**, select **Allow** or **Block** to set the default for new actions that are added to the connector in the future.
-
-    :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Screenshot of the connector actions configuration page.":::
-
-1. Select **Save**.
+:::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
 ## Known limitations
-
-Some apps that were published before October 1, 2020, need to be republished before connector action rules for DLP policies are enforced. Run the following script to identify apps that must be republished.
+Some Power Apps published before October 1, 2020, need to be re-published for connector action rules for data loss prevention (DLP) to be enforced. The script below helps admins and makers identify the apps that must be re-published.
 
 ```powershell
 Add-PowerAppsAccount
@@ -67,35 +57,32 @@ ForEach ($app in Get-AdminPowerApp){
         Write-Host "App is already Granular DLP compliant: " $app.AppName 
     }
 }
-```
+``` 
 
-## Use PowerShell to manage connector actions
+## PowerShell support for connector action control
 
-### Retrieve a list of available actions
-
+**Retrieve a list of available actions for a connector**
 ```powershell
 Get-AdminPowerAppConnectorAction
 ```
 
-The following example retrieves the actions for the shared_msnweather connector.
-
+**Example**
 ```powershell
 Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
 ```
 
-The following table describes the available actions for the connection.<!-- EDITOR'S NOTE: In the table, is "@{" with no closing bracket correct? -->
-
-|ID | Type | Properties |
+|ID   |Type  |Properties  |
 |---------|---------|---------|
-| TodaysForecast | Microsoft.ProcessSimple/apis/apiOperations | @{summary=Get forecast for today; description=Get the forecast for the current day in the specified location |
-| OnCurrentWeatherChange | Microsoft.ProcessSimple/apis/apiOperations | @{summary=When the current weather changes; description=Triggers a new flow when the specified weather measure changes |
-| CurrentWeather | Microsoft.ProcessSimple/apis/apiOperations | @{summary=Get current weather; description=Get the current weather for a location; visibility=advanced |
-| TomorrowsForecast | Microsoft.ProcessSimple/apis/apiOperations | @{summary=Get the forecast for tomorrow; description=Get the forecast for tomorrow in the specified location |
-| OnCurrentConditionsChange | Microsoft.ProcessSimple/apis/apiOperations | @{summary=When the current conditions change; description=Triggers a new flow when the conditions change for a location |
+|TodaysForecast     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=Get forecast for today; description=Get the forecast for the current day in the specified location.      |
+|OnCurrentWeatherChange     | Microsoft.ProcessSimple/apis/apiOperations        | @{summary=When the current weather changes; description=Triggers a new flow when the specified weather measure changes.     |
+|CurrentWeather     | Microsoft.ProcessSimple/apis/apiOperations        | @{summary=Get current weather; description=Get the current weather for a location.; visibility=advanced        |
+|TomorrowsForecast     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=Get the forecast for tomorrow; description=Get the forecast for tomorrow in the specified location.   |
+|OnCurrentConditionsChange     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=When the current conditions change; description=Triggers a new flow when the conditions change for a locattion.    |
 
-### Configure connector action rules for a policy
+#### Configure connector action rules for a policy
+The object that contains connector action rules for a policy is referred to below as the connector configurations.
 
-The connector configurations object contains the connection action rules for a policy. It has the following structure:
+The connector configurations object has the following structure:
 
 ```powershell
 $ConnectorConfigurations = @{ 
@@ -112,32 +99,31 @@ $ConnectorConfigurations = @{
     } 
   ) 
 }
-```
+``` 
 
-### Retrieve connector configurations for a DLP policy
-
+**Retrieve existing connector configurations for a DLP policy**
 ```powershell
 Get-PowerAppDlpPolicyConnectorConfigurations 
-```
+``` 
 
-### Create connector configurations for a DLP policy
-
+**Create connector configurations for a DLP policy**
 ```powershell
 New-PowerAppDlpPolicyConnectorConfigurations
-```
+``` 
 
-### Update connector configurations for a DLP policy
-
+**Update connector configurations for a DLP policy**
 ```powershell
 Set-PowerAppDlpPolicyConnectorConfigurations
-```
+``` 
 
-The following example accomplishes two goals:
+**Example**
 
-- Block actions `TodaysForecast` and `CurrentWeather` of the MSN Weather connector and allow all other actions.
-- Allow action `GetRepositoryById` of the GitHub connector and block all other actions.
+Goal:
+-	Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions.
+-	Allow action GetRepositoryById of connector GitHub; block all other actions.
 
-In the cmdlet, *PolicyName* refers to the unique GUID. Run the **Get-DlpPolicy** cmdlet to retrieve the DLP GUID.
+> [!NOTE]
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 
@@ -171,4 +157,4 @@ $ConnectorConfigurations = @{
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 ```
 
-[!INCLUDE [footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
