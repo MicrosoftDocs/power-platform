@@ -62,12 +62,12 @@ Triggers a flow run for all stages of a pipeline (Contoso Pipeline). In this exa
 ### Trigger a flow for a specific stage in a pipeline
 Triggers a flow for a deployment stage with the stage name *equal* to 'Contoso UAT':
 
-`**@equals**(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'Contoso UAT')`
+`@equals(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'Contoso UAT')`
 
 ### Trigger a flow for specific stages in a pipeline
 Triggers a flow for deployment stages with the stage name *containing* 'QA': 
 
-`**@contains**(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'QA')`
+`@contains(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'QA')`
 
 Learn more about expressions used in conditions: [Use expressions in conditions to check multiple values](/power-automate/use-expressions-in-conditions).
 
