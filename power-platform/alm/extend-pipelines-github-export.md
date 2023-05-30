@@ -1,3 +1,14 @@
+---
+title: Extend pipelines in Power Platform with GitHub Source Control
+description: Export, unpack and commit a solution using a GitHub workflow called from a Power Automate Flow.
+author: mikefactorial
+ms.author: caburk
+ms.reviewer: kvivek
+ms.topic: overview
+ms.date: 05/29/2023
+ms.custom: 
+---
+
 # Download, Unpack and Commit a Pipeline Artifact to a GitHub Repository
 
 This GitHub workflow downloads a pipeline artifact from Dataverse and unpacks and commits the source code to a branch in GitHub when a pipeline artifact is created in Dataverse. The workflow can be invoked manually or triggered by a pipeline artifact creation event in Dataverse as shown in the example Power Automate Flow. For more information on how to create a GitHub workflow, see [Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart).
@@ -155,3 +166,13 @@ You will need to update the following values in the Flow:
 - `[Your GitHub Workflow YAML File]` - Replace with your GitHub workflow YAML file name.
 
 ![Power Automate Flow](./media/extend-pipelines-github-export-flow.png)
+
+## Next step
+
+[Run pipelines in Power Platform](run-pipeline.md)
+
+### Related content
+
+[Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart)<br/>
+[Extend pipelines in Power Platform](extend-pipelines.md)<br/>
+[What are cloud flows?](/power-automate/overview-cloud)
