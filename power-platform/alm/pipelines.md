@@ -8,8 +8,6 @@ ms.custom: ""
 ms.date: 02/28/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
-search.audienceType: 
-  - maker
 ---
 # Overview of pipelines in Power Platform
 
@@ -60,7 +58,7 @@ Professional developers are more productive with pipelines now handling the comp
   - With pipelines, developers simply provide the required parameters and the system orchestrates all the end-to-end deployment operations in compliance with the organizational policies.
   - No need to connect to multiple environments, export solutions, download solution files, manually create connections and populate deployment settings files, import solutions, or handle various other tasks that were required previously.
 
-Additionally, developers can [extend pipelines.](/extend-pipelines.md)
+Additionally, developers can [extend pipelines](extend-pipelines.md).
 
 ## Frequently asked questions
 
