@@ -55,7 +55,7 @@ Use the following settings to increase visibility and control for the selected e
 
 Admins can use PowerShell to enable the Environments property for an environment.
 
-Here's an example PowerShell script that calls the API to set the enable Managed Environments:
+Here's an example PowerShell script that calls the API to enable Managed Environments:
 
 ```powershell
 $GovernanceConfiguration = [pscustomobject] @{ 
