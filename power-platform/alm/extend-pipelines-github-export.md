@@ -21,8 +21,8 @@ The workflow consists of the following steps:
 
 1. `actions/checkout@v3`: Checks out the repository.
 1. `create new branch if specified`: Creates a new branch if a `target_branch` is specified in the inputs.
-1. `download-managed-solution-from-artifact`: Exports the managed solution from the artifact created by pipelines.
-1. `unpack-managed-solution`: Unpacks the solution.
+1. `download solution from artifact`: Downloads the solution from the artifact created by pipelines.
+1. `unpack solution`: Unpacks the solution.
 1. `commit changes`: Commits changes to the existing or new branch.
 1. `push to branch`: Pushes the committed changes to the source branch.
 
@@ -90,7 +90,7 @@ jobs:
             }
 
       # Export the managed solution from the artifact created by pipelines
-      - name: download-managed-solution-from-artifact
+      - name: download solution from artifact
         env:
             CLIENT_ID: ${{secrets.CLIENT_ID}}   
             TENANT_ID: ${{secrets.TENANT_ID}}   
@@ -117,10 +117,10 @@ jobs:
             $bytes = [Convert]::FromBase64String($response.value)
             [IO.File]::WriteAllBytes("${{ github.event.inputs.solution_name }}_managed.zip", $bytes)
       # Unpack the solution
-      - name: unpack-managed-solution
+      - name: unpack solution
         uses: microsoft/powerplatform-actions/unpack-solution@v0
         with:
-          solution-file: "${{ github.event.inputs.solution_name }}_managed.zip"
+          solution-file: "${{ github.event.inputs.solution_name }}.zip"
           solution-folder: "${{ github.event.repository.name }}"
           solution-type: 'Managed'
           process-canvas-apps: true
@@ -130,7 +130,7 @@ jobs:
       - name: commit changes
         shell: pwsh
         run: |
-          rm -rf ${{ github.event.inputs.solution_name }}_managed.zip
+          rm -rf ${{ github.event.inputs.solution_name }}.zip
           git config user.name "GitHub Actions Bot"
           git config user.email "<>" 
           git pull 
