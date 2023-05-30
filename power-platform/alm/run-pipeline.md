@@ -4,11 +4,10 @@ description: Learn how to deploy solutions using pipelines.
 author: caburk
 ms.author: matp
 ms.topic: how-to
-ms.date: 05/26/2023
+ms.date: 05/30/2023
 contributors:
    - ASheehi1
    - caburk
-
 ms.custom: template-how-to
 ---
 # Run pipelines in Power Platform
@@ -32,25 +31,27 @@ For more information about these prerequisites, go to [Set up pipelines](set-up-
 1. From the **Solutions** area, choose between two options to include the solution in the pipeline:
    - Select **Pipelines** from the left navigation pane.
    - Select **Overview** from the left navigation pane, and then select **Deploy** on the command bar.
-1. Select the stage to deploy to, such as *Deploy to Test*, select **Deploy here**, and the deployment pane will appear on the right.
-1. Choose to deploy **Now** or schedule for **Later**, and then select **Next** on the right pane. This initiates validation of the solution against the test environment. This validation can also be referred to as “pre-flight” checks. Missing dependencies and other common issues are checked that might cause a deployment to fail.
+1. Select the stage to deploy to, such as **Deploy to Test**, select **Deploy here**, and the deployment pane will appear on the right.
+1. Choose to deploy **Now** or schedule for **Later**, and then select **Next** on the right pane. This initiates validation of the solution against the test environment. This validation can also be referred to as pre-flight checks. Missing dependencies and other common issues are checked that might cause a deployment to fail.
 1. If connection references or environment variables are present, you’ll be prompted to provide these (just as you would when manually importing solutions).
 1. Review the summary of the deployment and optionally add deployment notes.
 1. Select **Deploy**. This initiates an automated deployment to the target environment.
 
 > [!NOTE]
 > - You must complete the deployment stages in order. For example, you can't deploy version 1.0.0.1 to production before it has been deployed to test. After deploying to test, the same solution that was deployed will then be deployed to production, even if afterward you made changes to the solution without incrementing the version.
-> - A message stating your request to deploy here is pending means your admin attached [background processes or approvals.](extend-pipelines.md) which run before your deployment can proceed.
+> - A message stating your request to deploy here is pending, which means your admin attached [background processes or approvals](extend-pipelines.md) that run before your deployment can proceed.
 
 
 ## Cancel a scheduled deployment
 If you have a scheduled deployment, you can cancel it through three different methods:
 
-
 :::image type="content" source="media/pipeline-cancel-deployment.png" alt-text="Screenshot of the pipelines page with a cancelable deployment":::
-1. In the pipeline **Details** section where you began your deployment, there is an option to **Cancel deployment** before the scheduled deployment time.
-1. In the **Run history**, clicking the **...** on a scheduled deployment will display a **Cancel deployment** option.
-1. In the *Information* pane when clicking on a deployment record in **Run history**, click the **Cancel deployment** option under the *Status* of a scheduled deployment.
+
+- In the pipeline **Details** section where you began your deployment, there is an option to **Cancel deployment** before the scheduled deployment time.
+
+- In the **Run history**, clicking the **...** on a scheduled deployment will display a **Cancel deployment** option.
+
+- In the *Information* pane when clicking on a deployment record in **Run history**, click the **Cancel deployment** option under the *Status* of a scheduled deployment.
 
 ## Change the time of a scheduled deployment as a pipeline admin
 In the Deployment Pipeline Configuration app,
