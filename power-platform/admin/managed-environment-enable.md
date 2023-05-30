@@ -53,7 +53,7 @@ Use the following settings to increase visibility and control for the selected e
 
 ## Enable Managed Environments using PowerShell
 
-Admins can use PowerShell to enable the Environments property for an environment.
+Admins can use PowerShell to enable Managed Environments for an environment.
 
 Here's an example PowerShell script that calls the API to enable Managed Environments:
 
