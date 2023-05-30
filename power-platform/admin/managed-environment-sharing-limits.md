@@ -45,7 +45,7 @@ You can also use PowerShell to set and remove sharing limits.
 
 ### Set sharing limits
 
-Here's an example PowerShell script that excludes sharing with security groups and limits to 20 the number of individuals canvas apps can be shared to, for an existing managed environment:
+Here's a PowerShell script that excludes sharing a canvas app with security groups and excludes sharing a canvas app with more than 20 individuals within a managed environment:
 
 ```powershell
 # Retrieve the environment
@@ -62,7 +62,7 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 
 ### Remove sharing limits
 
-Here's an example PowerShell script that removes the sharing limits set by the above script:
+Here's a PowerShell scripts that removes the sharing limits that were configured in the script above:
 
 ```powershell
 # Retrieve the environment
