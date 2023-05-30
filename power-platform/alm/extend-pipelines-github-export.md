@@ -175,6 +175,7 @@ Update the following values in the Flow:
 - `[Your GitHub Repository]` - Replace with your GitHub repository name.
 - `[Your GitHub Workflow YAML File]` - Replace with your GitHub workflow YAML file name.
 - `[The Git Branch to Commit the Solution]` - Replace with the Git branch to commit the solution. You can also create a new branch from an existing branch by adding the `target_branch` input to the GitHub workflow body parameters JSON.
+
 ![Power Automate Flow](./media/extend-pipelines-github-export-flow.png)
 
 ## Next step
