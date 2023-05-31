@@ -19,7 +19,7 @@ ms.contributors:
 
 # Asynchronous processing of cascading transactions
 
-Certain transactions can be configured to cascade across all related records. This means the change on a parent record will be transacted upon (cascade down through) all the child records. Cascading relationships are configured at the table level. For more information about cascading relationships, see [Configure table relationship cascading behavior](https://learn.microsoft.com/en-us/powerapps/developer/common-data-service/configure-entity-relationship-cascading-behavior).
+Certain transactions can be configured to cascade across all related records. This means the change on a parent record will be transacted upon (cascade down through) all the child records. Cascading relationships are configured at the table level. For more information about cascading relationships, see [Configure table relationship cascading behavior](/powerapps/developer/common-data-service/configure-entity-relationship-cascading-behavior).
 
 ## Synchronous versus asynchronous modes
 By default, cascading operations are performed as a synchronous transaction. For a synchronous cascading transaction, all impacted records are identified by the system. As the records are processed, they are locked by the system. Once all the changes have been completed, the records are unlocked and the transaction is completed.
@@ -105,7 +105,7 @@ If the user is still in the system, validate they have the needed privileges to 
 
 If the user has been disabled or removed from the system, re-enabling or readding the user will resolve the issue and the job can be resumed. However, if the user must be deleted or disabled or is not supposed to have permissions for the actions or records, the job should be canceled and restarted by someone with appropriate permissions.
 
-For any other issues with failed jobs, contact Microsoft Support. More information: [Support overview](https://learn.microsoft.com/en-us/power-platform/admin/support-overview)
+For any other issues with failed jobs, contact Microsoft Support. More information: [Support overview](support-overview.md)
 
 ### Troubleshooting file deletion issues during cascade merge
 If you experience failures with cascade merge operations because files are deleted during the job run, you can skip the parenting check. This allows your merge to continue even if someone deletes a record from the set while the job is running in the background. To do this, when you choose to merge records, at the bottom of the merge window clear the option **Parenting check is enabled by default. Uncheck this to ignore the parenting check**.
