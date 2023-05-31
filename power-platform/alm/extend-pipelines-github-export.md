@@ -183,7 +183,7 @@ Update the following values in the Flow:
 - `[GitHub Repository]` - Replace with your GitHub repository name.
 - `[GitHub Workflow YAML File]` - Replace with your GitHub workflow YAML file name.
 - `[Source Branch]` - Replace with the Git branch to commit the solution.
-- `[Target Branch]` - Replace with the Git branch to create for the solution commit. Target Branch is optional. If you don't specify a target branch then your solution is committed to the Source Branch.
+- `[Target Branch]` - Replace with the Git branch to create for the solution commit. Target Branch is optional. If you don't specify a target branch, then your solution is committed to the Source Branch.
 
 ![Power Automate Flow that shows an OnDeploymentRequested trigger with a step to retrieve the associated deployment stage run and call the GitHub workflow using an HTTP connector](./media/extend-pipelines-github-export-flow.png)
 
