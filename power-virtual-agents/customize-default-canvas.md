@@ -151,8 +151,8 @@ First, you need to configure where you're deploying your bot canvas.
                hideUploadButton: true
             };
 
-            
-            var theURL = "<YOUR TOKEN ENDPOINT>";
+            // Add your BOT token endpoint below
+            var theURL = "<BOT TOKEN ENDPOINT>";
           
             var environmentEndPoint = theURL.slice(0,theURL.indexOf('/powervirtualagents'));
             var apiVersion = theURL.slice(theURL.indexOf('api-version')).split('=')[1];
