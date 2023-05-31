@@ -1,10 +1,10 @@
-### Examples
+### Example
 
-The following example show the use of the `pac connector init` command.
+The following example shows the use of the `pac connector init` command.
 
 #### Connector init with output directory and connection template for OAuth AAD authentication
 
-In this example, we'll init a connector in the current directory.
+In this example, we'll initialize a connector in the current directory.
 
 ```powershell
 pac connector init `
