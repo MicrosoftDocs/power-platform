@@ -6,11 +6,15 @@ author: NHelgren
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/12/2021
+ms.date: 05/31/2023
 ms.subservice: admin
-ms.author: matp
+ms.author: nhelgren
+ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.contributors:
+- erjost
+
 ---
 
 # Asynchronous processing of cascading transactions
