@@ -5,6 +5,7 @@ keywords:
 author: shmcarth
 ms.subservice: alm
 ms.author: shmcarth
+ms.author: caburk
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: "matp"
@@ -48,16 +49,17 @@ The following concepts are important for understanding ALM using the Microsoft P
 
 -   *Solutions* are the mechanism for implementing ALM; you use them to distribute components across environments through export and import. A component represents an artifact used in your application and something that you can potentially customize. Anything that can be included in a solution is a component, such as tables, columns, canvas and model-driven apps, Power Automate flows, chatbots, charts, and plug-ins.
 
--   *Dataverse* stores all the artifacts, including solutions.
+-   *Dataverse* stores all the artifacts, including solutions and in-product deployment [pipelines](pipelines.md)
 
 -   *Source control* should be your source of truth for storing and collaborating on your components.
 
--   *Continuous integration and continuous delivery (CI/CD) platform* such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) that allows you to automate your build, test, and deployment pipeline.
+-   *Continuous integration and continuous delivery (CI/CD) platform* such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) that allows you to automate your build, test, and deployment pipeline. Can also be used in with in-product [pipelines.](pipelines.md)
 
 For more information about how ALM and Azure DevOps technologies&mdash;combined with people and processes&mdash;enable teams to continually provide value to customers, see [DevOps tools on Azure](https://azure.microsoft.com/solutions/devops/).
 
 ### See also
 - [ALM basics with Microsoft Power Platform](basics-alm.md)
+- [Set up pipelines in Power Platform](set-up-pipelines.md)
 - [What is Dataverse?](/powerapps/maker/data-platform/data-platform-intro) 
 - [Application lifecycle management for Finance and Operations apps](/training/modules/application-lifecycle-finance-operations/)
 - [ALM for chatbots](/power-virtual-agents/authoring-export-import-bots)
