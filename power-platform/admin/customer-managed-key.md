@@ -86,6 +86,7 @@ In addition, access to using customer managed key for Microsoft Power Platform a
 - Microsoft 365 or Office 365 A5/E5/G5
 - Microsoft 365 A5/E5/F5/G5 Compliance
 - Microsoft 365 F5 Security & Compliance
+- Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
 - Microsoft 365 A5/E5/F5/G5 Insider Risk Management
 
 [Learn more about these licenses](https://go.microsoft.com/fwlink/?linkid=2214240)
@@ -315,6 +316,12 @@ To manage the environment's encryption, you need the following permission:
 - Azure AD user who has either a global tenant admin, Power Platform or Dynamics 365 service admin role.
 
 The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer-managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data, and encrypt it with the customer-managed key.
+
+### Enable Managed environment for the environment to be added into the enterprise policy
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and locate the environment.
+1. Click and check the environment on the environments list. 
+1. Click on the **Enable Managed Environments** icon on the action bar. 
+1. Click on the **Enable** button.
 
 ### Add an environment to the enterprise policy to encrypt data
 
