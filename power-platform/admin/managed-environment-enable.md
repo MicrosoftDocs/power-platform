@@ -3,10 +3,10 @@ title: Enable Managed Environments
 description: Learn how to enable Managed Environments for Power Platform in the admin center or PowerShell.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/12/2022
+ms.date: 06/01/2023
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
@@ -53,7 +53,7 @@ Use the following settings to increase visibility and control for the selected e
 
 ## Enable Managed Environments using PowerShell
 
-Admins can also use PowerShell to enable Managed Environments. Below is a PowerShell script that enables it for a single environment:
+Admins can also use PowerShell to enable Managed Environments. Below is a PowerShell script that enables it for a single environment.
 
 ```powershell
 $GovernanceConfiguration = [pscustomobject] @{ 
