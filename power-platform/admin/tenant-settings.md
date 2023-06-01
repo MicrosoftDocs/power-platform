@@ -14,16 +14,16 @@ contributors:
 - marcelbf
 ---
 
-# Tenant settings 
+# Tenant settings
 
 Use the Tenant settings page to review and manage tenant-level settings.
 
 To view tenant-level settings:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. Select **Settings** > **Tenant settings** in the left-side navigation pane. 
+2. Select **Settings** > **Tenant settings** in the left-side navigation pane.
 
-The following settings apply to your tenant—all environments contained within your tenant. 
+The following settings apply to your tenant—all environments contained within your tenant.
 
 |Name  |Description  |
 |---------|---------|
@@ -33,13 +33,8 @@ The following settings apply to your tenant—all environments contained within 
 |[Developer environment assigments](control-environment-creation.md)   | Control who can create and manage developer environments.  |
 |[Add-on capacity assignments](capacity-add-on.md#control-who-can-allocate-add-on-capacity)    | Control who can allocate add-on capacity to an environment.        |
 |[Analytics](tenant-level-analytics.md)   | Enable tenant-level analytics.        |
+|[Data sharing for Copilot AI features](../transparency-note-copilot-data-sharing.md)   | Enable sharing your inputs, related outputs, and telemetry for AI features in Dynamics 365 and Power Platform applications with Microsoft to help improve the quality of AI-powered features. By default, this setting is disabled.       |
 
 *This setting applies only to Managed Environments.
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

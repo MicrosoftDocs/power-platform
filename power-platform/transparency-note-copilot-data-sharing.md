@@ -1,6 +1,6 @@
 ---
-title: "Transparency note for Copilot data sharing in Microsoft Power Platform"
-description: "The transparency note describes Copilot data sharing in Power Platform and how Copilot responsibly uses your data."
+title: "Transparency note for data sharing for Copilot AI features in Microsoft Power Platform"
+description: "The transparency note describes data sharing for Copilot AI features in Power Platform and how Microsoft responsibly uses your data."
 author: KumarVivek 
 ms.date: 05/26/2023
 ms.custom: 
@@ -10,9 +10,9 @@ ms.author: amishastri
 ms.reviewer: kvivek
 ---
 
-# Transparency note for Copilot data sharing in Microsoft Power Platform
+# Transparency note for data sharing for Copilot AI features in Microsoft Power Platform
 
-This transparency note describes Copilot data sharing in Power Platform and how Copilot responsibly uses your data.
+This transparency note describes information related to data sharing for Copilot AI features in Power Platform and how Microsoft responsibly uses your data.
 
 ## What is data sharing for Copilot AI features?  
 
@@ -28,7 +28,7 @@ Sharing your data can benefit you in two ways:
 
 ## How do I opt out?
 
-By default, the data sharing option is disabled for you. After you opt-in, you can opt out any time by going to the **Settings** page in the Power Platform admin center and turn off the **Copilot data sharing** toggle.
+By default, the data sharing option is disabled for you. After you opt-in, you can opt out any time by going to the **Settings** > **Tenant Settings** page in the Power Platform admin center and turning off **Data sharing for Copilot AI features** > **Enable Data Sharing** toggle. MOre information: [Tenant settings](admin/tenant-settings.md)
 
 ## What happens when I opt out?
 
