@@ -107,7 +107,7 @@ Create two production environments to install the CoE Starter Kit solutions:
 - Choose English as the default language.
 - Don't add sample apps and datasets.
 - Set the security group to **None** to allow open access. Some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
-- After [importing the solution](setup-core-components.md) and completing the setup steps, set the *ProductionEnvironment* variable to no in your test environment. This means you can test the coE Starter Kit processes without impacting makers and end users.
+- After [importing the solution](setup-core-components.md) and completing the setup steps, set the *ProductionEnvironment* variable to no in your test environment. This means you can test the CoE Starter Kit processes without impacting makers and end users.
 
 >[!IMPORTANT]
 >Using Data Export as a mechanism to retrieve inventory and telemetry is currently in preview - we recommend you test this in a dedicated test environment before using this feature in production.
