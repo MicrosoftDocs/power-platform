@@ -40,7 +40,7 @@ Access to customer data is strictly controlled. Your data can be viewed only by 
 
 ## What about data privacy?
 
-All data is handled as per the Copilot data security and privacy guidelines explained in [Transparency note for Copilot data security and privacy in Microsoft Power Platform](transparency-note-copilot-data-security-privacy).
+All data is handled as per the Copilot data security and privacy guidelines explained in [Transparency note for Copilot data security and privacy in Microsoft Power Platform](transparency-note-copilot-data-security-privacy.md).
 
 ## What about Customer Lockbox?
 
