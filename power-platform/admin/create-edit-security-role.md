@@ -29,7 +29,7 @@ Create security roles or edit the privileges associated with an existing securit
 
 1. Select **Settings** > **Users + permissions** > **Security roles (Preview)**.
 
-1. Select **New**.
+1. Select **+ New role**.
 
 1. Use the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to specify privileges for the security role.
 
@@ -43,9 +43,9 @@ Create security roles or edit the privileges associated with an existing securit
 
 1. Select the security role you want to copy.
 
-1. Select **Copy security role**.
+1. Select **Copy**.
 
-1. Enter a name for the new role, and then select **Open the new security role when copying is complete**.
+1. Enter a name for the new role.
 
 1. Select **OK**.
 
