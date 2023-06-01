@@ -91,7 +91,7 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 ### Configure manual authentication
 
-Write some verbiage that explicitly clarifies this only applies to PVA1.0 bots!!
+To manually configure authentication, use the following steps. Note that these instructions apply to Classic (PVA 1.0) bots.
 
 1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Security**. Then select the **Authentication** card.
 
