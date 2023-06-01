@@ -11,7 +11,7 @@ ms.custom:
 
 # Download, Unpack and Commit a Pipeline Artifact to a GitHub Repository
 
-This GitHub workflow downloads a pipeline artifact from Dataverse and unpacks and commits the source code to a branch in GitHub. The workflow triggers when a deployment request action in Dataverse as shown in the [example Power Automate Flow](#example-power-automate-flow). For more information on how to create a GitHub workflow, see [Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart).
+This example demonstrates using [GitHub Actions](https://docs.github.com/en/actions/quickstart) and Power Automate cloud flows for extending pipelines in Power Platform. When a pipelines deployment is submitted, a cloud flow triggers the GitHub workflow to download, unpack, and commit the artifact's source code to a GitHub branch.
 
 ## Workflow Details
 
@@ -127,7 +127,7 @@ jobs:
           solution-file: "${{ github.event.inputs.solution_name }}.zip"
           solution-folder: "${{ github.event.repository.name }}"
           solution-type: 'Both'
-          process-canvas-apps: true
+          process-canvas-apps: false
           overwrite-files: true
 
       # Commit changes to the existing or new branch
