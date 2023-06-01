@@ -42,136 +42,143 @@ First, you'll need to deploy a custom canvas that includes arguments that trigge
 >
 > Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
-### Retrieve bot ID details
+### Retrieve token endpoint
 
-To customize the greeting, you need to know your Bot ID.
+To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details.
 
-You can get the Bot ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters).
+1. In the navigation menu under **Settings**, select **Channels**.
 
-### Deploy a custom canvas for your bot
+1. Select **Mobile app**.
 
-You'll need to deploy a custom canvas that includes arguments that cause the [default system greeting topic](authoring-create-edit-topics.md#use-system-and-sample-topics) to be displayed when the bot loads.
+    :::image type="content" source="media/customize-default-canvas/channel-mobile-app.png" alt-text="Screenshot of the mobile app channel tile.":::
+
+1. Next to **Token Endpoint**, select **Copy**.
+
+    :::image type="content" source="media/customize-default-canvas/token-endpoint.png" alt-text="Screenshot of the endpoint token id.":::
+
+### Customize the default canvas (simple)
+
+Configure how the chat canvas looks with some simple CSS and JavaScript styling options.
+
+First, you need to configure where you're deploying your bot canvas.
 
 1. [Create and publish a bot](fundamentals-get-started.md).
 
 1. Copy and paste the HTML code below and save it as _index.html_.  
-    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
+    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You'll still need to add your token endpoint.  
 
     ```HTML
-      <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Contoso Sample Web Chat</title> 
-            <!-- This styling is for the canvas demonstration purposes. It is recommended 
-        that style is moved to a separate file for organization in larger projects -->
-            <style>
-                html, body {
-                    height: 100%;
-                }
-                body {
-                    margin: 0;
-                }
-                h1 {
-                    font-size: 16px;
-                    font-family: Segoe UI;
-                    line-height: 20px;
-                    color: whitesmoke;
-                    display: table-cell;
-                    padding: 13px 0px 0px 20px;
-                }
-                .heading {
-                    background-color: black;
-                    height: 50px;
-                }
-                .main {
-                    margin: 18px;
-                    border-radius: 4px;
-                }
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Contoso Sample Web Chat</title> 
+        <!-- This styling is for the Web Chat demonstration purposes. It is recommended that style is moved to a separate file for organization in larger projects -->
+        <style>
+            html, body {
+                height: 100%;
+            }
 
-                div[role="form"]{
-                    background-color: black;
-                }        
-                #webchat {
-                    position: fixed;
-                    height: calc(100% - 50px);
-                    width: 100%;
-                    top: 50px;
-                    overflow: hidden;
-                }
-              </style>
-        </head>
-        <body>
-            <div>
-                <div class="heading">
+            body {
+                margin: 0;
+            }
 
-                    <!-- Change the h1 text to change the bot name -->    
-                    <h1>Contoso Bot Name</h1>
+            h1 {
+                font-size: 16px;
+                font-family: Segoe UI;
+                line-height: 20px;
+                color: whitesmoke;
+                display: table-cell;
+                padding: 13px 0px 0px 20px;
+            }
 
-                </div>
-                <div id="webchat" role="main"></div>
-            </div>    
-          <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
-          <script>
-                const styleOptions = {
-                   // Add styleOptions to customize web chat canvas
-                   hideUploadButton: true
-                };
+            #heading {
+                background-color: black;
+                height: 50px;
+            }
 
-                // Add your BOT ID below
-                var BOT_ID = "<ENTER YOUR BOT ID>"; 
+            .main {
+                margin: 18px;
+                border-radius: 4px;
+            }
 
-                var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+            div[role="form"]{
+                background-color: black;
+            }
 
-                const store = window.WebChat.createStore(
-                   {},
-                   ({ dispatch }) => next => action => {
-                       if (action.type === "DIRECT_LINE/CONNECT_FULFILLED") {
-                          dispatch({
-                              meta: {
-                                   method: "keyboard",
-                               },
-                               payload: {
-                                   activity: {
-                                         channelData: {
-                                              postBack: true,
-                                         },
-                                          //Web Chat will show the 'Greeting' System Topic message which has a trigger-phrase 'hello'
-                                          name: 'startConversation',
-                                          type: "event"
-                                     },
-                                },
-                                type: "DIRECT_LINE/POST_ACTIVITY",
-                           });
-                     }
-                     return next(action);
-                  }
-               );
-               fetch(theURL)
-                    .then(response => response.json())
-                    .then(conversationInfo => {
-                        window.WebChat.renderWebChat(
-                            {
-                                directLine: window.WebChat.createDirectLine({
-                                    token: conversationInfo.token,
-                                }),
-                                store: store,
-                                styleOptions: styleOptions
-                            },
-                            document.getElementById('webchat')
-                        );
-                    })
+            #webchat {
+                position: fixed;
+                height: calc(100% - 50px);
+                width: 100%;
+                top: 50px;
+                overflow: hidden;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <div id="heading">
+                <!-- Change the h1 text to change the bot name -->    
+                <h1>Contoso Bot Name</h1>
+            </div>
+            <div id="webchat" role="main"></div>
+        </div>    
+
+      <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+
+      <script>
+            const styleOptions = {
+
+               // Add styleOptions to customize Web Chat canvas
+               hideUploadButton: true
+            };
+       
+            // Add your BOT token endpoint below
+            var theURL = "<BOT TOKEN ENDPOINT>";
+          
+            var environmentEndPoint = theURL.slice(0,theURL.indexOf('/powervirtualagents'));
+            var apiVersion = theURL.slice(theURL.indexOf('api-version')).split('=')[1];
+            var regionalChannelSettingsURL = `${environmentEndPoint}/powervirtualagents/regionalchannelsettings?api-version=${apiVersion}`; 
+            
+            var directline;
+                fetch(regionalChannelSettingsURL)
+                    .then((response) => {
+                        return response.json();
+                        })
+                    .then((data) => {
+                        directline = data.channelUrlsById.directline;
+                        })
                     .catch(err => console.error("An error occurred: " + err));
-            </script>
-          </body>
-        </html>
+        
+          fetch(theURL)
+                .then(response => response.json())
+                .then(conversationInfo => {
+                    window.WebChat.renderWebChat(
+                        {
+                            directLine: window.WebChat.createDirectLine({
+                                domain: `${directline}v3/directline`,
+                                token: conversationInfo.token,
+                            }),
+                            styleOptions
+                        },
+                        document.getElementById('webchat')
+                    );
+                })
+                .catch(err => console.error("An error occurred: " + err));
+
+        </script>
+      </body>
+    </html>
     ```
 
-1. In the _index.html_ file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
+1. In the _index.html_ file you created, enter your token endpoint at the line `var theURL = "<YOUR TOKEN ENDPOINT>";`.
 
 1. Open _index.html_ using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
 
 1. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (").
+
+    If you encounter problems, make sure you've published your bot, and that your token endpoint has been inserted in the correct place. It should be after the equals sign (=) at the line `var theURL = "<YOUR TOKEN ENDPOINT>"`, and surrounded by double quotation marks (").
 
 ### Change the bot's default greeting
 
