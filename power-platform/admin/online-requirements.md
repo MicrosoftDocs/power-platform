@@ -29,8 +29,8 @@ Add the following URLs to the allow list.
 |--|--|
 |Power Apps|- [Public cloud](/powerapps/maker/canvas-apps/limits-and-config#required-services)<br/>- [Government cloud](powerapps-us-government.md#power-apps-us-government-service-urls)|
 |Power Automate| - [Public cloud](/power-automate/ip-address-configuration#required-services)<br/>- [Government cloud](/power-automate/us-govt#power-automate-us-government-service-urls)|
-|Power Pages| - [Public cloud](/power-pages/system-requirements#required-services)<br/>- [Government cloud](/power-pages/system-requirements#required-services)|
 |Power BI|- [Public cloud](/power-bi/admin/power-bi-allow-list-urls)<br/>- [Government cloud](/power-bi/admin/service-govus-overview#allow-connections-to-power-bi)|
+|Power Pages| - [Public cloud](/power-pages/system-requirements#required-services)<br/>- [Government cloud](/power-pages/system-requirements#required-services)|
 |Power Virtual Agents|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
 
 > [!IMPORTANT]

@@ -31,12 +31,12 @@ Go to [Power Apps](https://make.powerapps.com) and select the environment you pl
 When the import is completed, the reactivation of the **CustomAzureDevOps** custom connector needs to be done. The following steps need to be done.
 
 1. Select **Data** > **Custom Connectors** and edit the **CustomAzureDevOps**.
-1. Go to the Definition tab and verify if there are 3 **Policies** created and the information is accordingly to [this section](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config#create-the-customazuredevops-custom-connector-policies).
-1. Go to the **Security** tab and select **Edit**.
-1. Select **Azure Active Directory** as the **Identity Provider**.
-1. Add your **ClientId**, **Client Secret**, and **ResourceUrl**.
-1. Select the **Test** tab and select **Test operation**.
-1. Confirm the **status** of the response and select **Update connector** at the top.
+2. Go to the Definition tab and verify if there are 6 **Policies** created and the information is accordingly to [this section](/power-platform/guidance/alm-accelerator/setup-upgrade-configuration#verify-the-customazuredevops-custom-connector-policies).
+3. Go to the **Security** tab and select **Edit**.
+4. Select **Azure Active Directory** as the **Identity Provider**.
+5. Add your **ClientId**, **Client Secret**, and **ResourceUrl** according to [Configure the DevOps custom connector](/power-platform/guidance/alm-accelerator/setup-components-manually#configure-the-devops-custom-connector).
+6. Select the **Test** tab and select **Test operation**.
+7. Confirm the **status** of the response and select **Update connector** at the top.
 
 > [!NOTE]
 > If you already followed these steps before, you could run the **sync-pipeline-repo** pipeline with the new tag copied in the previous section, and **approve** and **complete** the pull request.
@@ -80,7 +80,7 @@ You should have 6 policies under **Definition** tab in the CustomAzureDevOps cus
 |-------------------|-------------------|
 | Name     | Set host to `https://vssps.dev.azure.com`|
 | Template| Set host URL
-| Operations | GetIdentities
+| Operations | GetUsers, GetIdentities
 | URL Template | `https://vssps.dev.azure.com`
 
 **Set host to `https://app.vssps.visualstudio.com` policy**
