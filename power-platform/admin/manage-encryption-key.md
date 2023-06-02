@@ -19,6 +19,8 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
  By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don't have to. The manage keys feature in the Microsoft Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the Dataverse tenant. 
 
 > [!IMPORTANT]
+> This service has been upgraded to [Customer-managed encryption key](https://learn.microsoft.com/power-platform/admin/customer-managed-key) as of June 2nd, 2023. New customers who need to manage their own encryption key will use the upgraded service as this service will no longer be offered. 
+
 > Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses, or more than 1000 Dynamics 365 Enterprise licenses, or more than 1000 licenses from a combination of both in a single tenant. To opt in to this program, submit a [support request](./support-overview.md#using-support).
 
 Encryption key management is only applicable to Azure SQL environment databases. The following features and services continue to use the Microsoft-managed encryption key to encrypt their data and can't be encrypted with the self-managed encryption key:
