@@ -3,7 +3,7 @@ title: Automatic environment cleanup
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/06/2023
+ms.date: 06/02/2023
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -54,10 +54,9 @@ Only developer and [Dataverse for Teams environments](inactive-teams-environment
 
 ### Timeline for unused environments
 
-The time difference from the first warning that the environment will be disabled to the final deletion of the environment is 37 days - production enviroments are not subject to this timeline.
+The time between the first warning that the environment will be disabled to the final deletion of the environment is 37 days. Production enviroments are not subject to this timeline.
 
-The environment's administrators and the user who created the environment are notified by email according to the schedule described in the following table
-
+The environment's administrators and the user who created the environment are notified by email according to the schedule described in the following table.
 
 | State of environment | Power Platform action |
 | --- | --- |
