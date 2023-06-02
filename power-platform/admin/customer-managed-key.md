@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 05/02/2023
+ms.date: 06/02/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key
@@ -319,9 +319,9 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 
 ### Enable Managed environment for the environment to be added into the enterprise policy
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and locate the environment.
-1. Click and check the environment on the environments list. 
-1. Click on the **Enable Managed Environments** icon on the action bar. 
-1. Click on the **Enable** button.
+1. Select and check the environment on the environments list. 
+1. Select the **Enable Managed Environments** icon on the action bar. 
+1. Select **Enable**.
 
 ### Add an environment to the enterprise policy to encrypt data
 
