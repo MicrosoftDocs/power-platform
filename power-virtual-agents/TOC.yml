@@ -50,8 +50,16 @@
       href: sign-up-individual.md
     - name: Working with environments
       href: environments-first-run-experience.md
-    - name: Configure data loss prevention for chatbots
-      href: admin-data-loss-prevention.md
+    - name: Apply and configure data loss prevention policies
+      items:
+        - name: Manage data loss prevention for chatbots
+          href: admin-data-loss-prevention.md
+        - name: Example 1 - Use DLP to block skills
+          href: dlp-example-1.md
+        - name: Example 2 - Use DLP to block HTTP requests
+          href: dlp-example-2.md
+        - name: Example 3 - Use DLP to require end-user authentication
+          href: dlp-example-3.md
     - name: Export and import bots using solutions
       href: authoring-export-import-bots.md
     - name: Regional settings and data locations for organizations
@@ -203,14 +211,6 @@
       href: configuration-fundamentals.md
     - name: Share bots with users in your organization
       href: admin-share-bots.md
-    - name: Apply and configure data loss prevention policies
-      items:
-        - name: Example 1 - Use DLP to block skills
-          href: dlp-example-1.md
-        - name: Example 2 - Use DLP to block HTTP requests
-          href: dlp-example-2.md
-        - name: Example 3 - Use DLP to require end-user authentication
-          href: dlp-example-3.md
     - name: Configure user authentication
       href: configuration-end-user-authentication.md
     - name: Configure user authentication with Azure Active Directory

@@ -5,21 +5,21 @@ author: caburk
 ms.author: caburk
 ms.reviewer: kvivek
 ms.topic: overview
-ms.date: 05/23/2023
+ms.date: 05/30/2023
 ms.custom: 
 ---
 # Extend pipelines in Power Platform
 
-ALM processes often vary across customers and business organizations. Pipelines extensibility provides the ability to apply custom logic at multiple steps of your deployment process. Using Power Automate cloud flows, you can optionally extend and integrate pipelines with other systems of record. For example, you can add approvals, send notifications, or use pipelines in Power Platform along-side continuous integration/continuous deployment (CI/CD) applications such as Azure DevOps, GitHub, and others.
+ALM processes often vary across customers and business organizations. Pipelines extensibility provides the ability to configure deployment gates and apply custom logic at multiple steps of your deployment process. No-code, low-code, and pro-code options are available to customize pipelines and integrate with with other systems of record. For example, you can use Power Automate to add approvals, send notifications, or use pipelines in Power Platform along-side continuous integration/continuous deployment (CI/CD) applications such as Azure DevOps, GitHub, and others. These are only a few of the many possibilities.
 
-Pipelines use [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) to provide flexibility in how the system can be extended. Pipelines event data is relayed to subscribers such as Power Automate, which provides over 1,000 built-in [connectors](/connectors/connector-reference/), Azure Service Bus, Azure Event Hubs, Webhooks, and [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins). Regardless of how pipelines are extended, the maker-facing deployment experience remains simple.
+Pipelines raise various [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events) that can trigger custom logic. Event data is relayed to subscribers such as Power Automate, which provides over 1,000 built-in [connectors](/connectors/connector-reference/), Azure Service Bus, Azure Event Hubs, Webhooks, and [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins). Regardless of how pipelines are extended, the maker-facing deployment experience remains simple.
 
 > [!IMPORTANT]
 > The capability to extend pipelines is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Add predeployment conditions
 
-You can optionally configure a gate for each pipeline stage. Then when a deployment is submitted, the request remains in a pending state until your business logic executes and finally signals the pipelines host to complete or reject the deployment. Pending deployment requests contain both the exported managed and unmanaged solutions, and connections and environment variable values for the target environment. For example, you may wish to run code scans, commit the solution to source control, or perform any number of automated tasks before deployments to a target environment.
+You can optionally configure a gate for each pipeline stage. Then when a deployment is submitted, the request remains in a pending state until your business logic executes and finally signals the pipelines host to complete or reject the deployment. Pending deployment requests contain both the exported managed and unmanaged solutions, and connections and environment variable values for the target environment (sometimes referred to as "deployment settings" or "DeploymentSettings.JSON"). For example, you may wish to run code scans, commit the solution to source control, or perform any number of automated tasks before deployments to a target environment.
 
 The system prevents any tampering or modification to the exported solution artifact. Solutions are exported when a deployment request is submitted (when the maker selects **Deploy** from within their development environment), and the same solution artifact will be deployed upon approval. Similarly, the system doesn't re-export a solution for deployments to subsequent stages in a pipeline. The same solution artifact must pass through pipeline stages in sequential order. This ensures customization can't bypass QA environments or your approval processes.
 
@@ -28,7 +28,8 @@ When configuring the pipeline stage, select the **Pre-Deployment Step Required**
   :::image type="content" source="media/pipelines-pre-step-config.png" alt-text="Pipelines pre-deployment step required":::
 
    > [!IMPORTANT]
-   > Adding a pre-deployment step gates pipelines deployments, but makers are required to have permission to import solutions to the target environment.
+   > - Adding a pre-deployment step gates pipelines deployments, but makers are required to have permission to import solutions to the target environment.
+   > - Existing pipeline users may need to update the Power Platform Pipelines application to enable new features. You can manage the updates within the Power Platform admin center.
 
 ## Triggers
 
@@ -47,6 +48,29 @@ Triggers are available in Power Automate cloud flows within the pipelines host e
   - `OnPreDeploymentStarted`
 
 :::image type="content" source="media/pipelines-triggers.png" alt-text="Pipelines triggers in Power Automate":::
+
+## Trigger conditions
+Power Automate [trigger conditions](/power-automate/triggers-introduction#use-trigger-conditions-to-reduce-flow-runs) allow you to customize the trigger so that the flow runs only when certain conditions are met. For example, you may need to run different flows and associated business logic within different pipelines or pipeline stages. This also helps keep flow runs and Power platform requests consumption low. 
+
+:::image type="content" source="media/pipelines-flow-trigger-conditions.png" alt-text="Pipelines trigger conditions in Power Automate":::
+
+### Trigger a flow for a specific pipeline
+Triggers a flow run for all stages of a pipeline (Contoso Pipeline). In this example, replace 'Contoso Pipeline' with the name of your pipeline:
+
+`@equals(triggerOutputs()?['body/OutputParameters/DeploymentPipelineName'], 'Contoso Pipeline')`
+
+### Trigger a flow for a specific stage in a pipeline
+Triggers a flow for a deployment stage with the stage name *equal* to 'Contoso UAT':
+
+`@equals(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'Contoso UAT')`
+
+### Trigger a flow for specific stages in a pipeline
+Triggers a flow for deployment stages with the stage name *containing* 'QA': 
+
+`@contains(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'QA')`
+
+Learn more about expressions used in conditions: [Use expressions in conditions to check multiple values](/power-automate/use-expressions-in-conditions).
+
 
 ## Action
 
