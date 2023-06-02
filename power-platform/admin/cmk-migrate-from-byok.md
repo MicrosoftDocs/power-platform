@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to 
-ms.date: 05/22/2023
+ms.date: 06/02/2023
 ms.custom: template-how-to
 ---
 # Migrate bring-your-own-key environments to customer-managed key
