@@ -16,6 +16,9 @@ Customers have data privacy and compliance requirements to secure their data by 
 
 All customer data stored in Power Platform is encrypted at-rest with strong Microsoft-managed encryption keys by default. Microsoft stores and manages the database encryption key for all your data so you don't have to. However, Power Platform provides this customer-managed encryption key (CMK) for your added data protection control where you can self-manage the database encryption key that is associated with your Microsoft Dataverse environment. This allows you to rotate or swap the encryption key on demand, and also allows you to prevent Microsoft's access to your customer data when you revoke the key access to our services at any time.
 
+To learn more about customer managed key in Power Platform, watch the following video.<p/>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW14O4G]
+
 > [!IMPORTANT]
 > This is a preview feature.
 >
@@ -24,7 +27,6 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 > - Create a RSA (RSA-HSM) key from your Azure Key vault.
 > - Create a Power Platform enterprise policy for your key.
 > - Grant the Power Platform enterprise policy permission to access your key vault.
-> - Grant the Power Platform service admin to read the enterprise policy.
 > - Grant the Power Platform service admin to read the enterprise policy.
 > - Apply encryption key to your environment.
 > - Revert/remove environment’s CMK encryption to Microsoft-managed key.

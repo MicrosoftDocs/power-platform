@@ -89,10 +89,12 @@ Once installed, the deployment pipelines configuration application will appear i
    - **Description** (optional): Optional description for the stage.
    - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. Note that for the first stage, or pipelines containing only one stage, this  should be left blank.
    - **Target Deployment Environment**: This is the target environment where this stage will deploy to.
+   - **PreDeployment Step Required** (optional): Deployment requests will be pending until approved via custom business logic. Requires additional configuration. More information: [Extend pipelines in Power Platform](extend-pipelines.md)  
 1. Repeat the previous two steps for each stage you'd like to add to the pipeline. Note that you must have at least one stage. You can add up to seven stages.
 
-   :::image type="content" source="media/Pipeline fully configured.png" alt-text="A fully configured pipeline.":::
+  :::image type="content" source="media/pipelines-pre-step-config.png" alt-text="Pipelines pre-deployment step required":::
 
+  
 ## Grant access to edit or run pipelines
 
 Pipeline security is managed within the host environment by assigning security roles. Additionally, users must currently have access to all environments associated with a pipeline in order to create or run the pipeline.
@@ -134,4 +136,5 @@ The pipeline configuration app and host environment provide many other benefits 
 
 ## Next steps
 
-[Run pipelines in Power Platform](run-pipeline.md)
+- [Extend pipelines in Power Platform](extend-pipelines.md)
+- [Run pipelines in Power Platform](run-pipeline.md)
