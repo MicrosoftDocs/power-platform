@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 06/02/2023
+ms.date: 06/05/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key
@@ -38,7 +38,6 @@ Currently, all your customer data stored *only* in the following apps and servic
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
 - Dynamics 365 Customer Service
 - Dynamics 365 Customer Insights
-- Dynamics 365 Omnichannel
 - Dynamics 365 Commerce (Finance and operations)
 - Dynamics 365 Field Service
 - Dynamics 365 Retail
