@@ -267,7 +267,7 @@
               href: alm-accelerator/scenarios/tenant-deployments.md
         - name: Install the ALM Accelerator
           items:
-            - name: Set up the ALM Accelerator using the Admin App
+            - name: Set up the ALM Accelerator using the admin app
               href: alm-accelerator/setup-admin-tasks.md
             - name: Set up the ALM Accelerator manually
               href: alm-accelerator/setup-components-manually.md
@@ -283,29 +283,29 @@
               href: alm-accelerator/setup-data-deployment-configuration.md
             - name: Configure user permissions
               href: alm-accelerator/setup-app-user-permissions.md
-            - name: Configure ALM Accelerator Pipelines
+            - name: Configure ALM Accelerator pipelines
               href: alm-accelerator/configure-azuredevops-pipelines.md
             - name: Set up pipeline sync
               href: alm-accelerator/setup-pipeline-sync.md
-            - name: Bring your own templates with ALM Accelerator
+            - name: Customize deployment pipelines with templates
               href: alm-accelerator/customize-deployment-pipelines.md
-            - name: Configure the pipeline extension points
+            - name: Configure pipeline extension points
               href: alm-accelerator/setup-hook-extensions.md
-            - name: Considerations when creating Azure App Registrations
+            - name: Considerations when creating Azure app registrations
               href: alm-accelerator/app-registration-strategy.md
-            - name: Deployment settings for ALM Accelerator
+            - name: Deployment settings
               href: alm-accelerator/deployment-settings-payload.md
-        - name: How to use the ALM Accelerator
+        - name: Use the ALM Accelerator
           items:
             - name: What's in the ALM Accelerator
               href: alm-accelerator/kit-contents.md
-            - name: Advanced Maker experience
+            - name: Advanced maker experience
               href: alm-accelerator/advanced-maker-experience.md
-            - name: New Maker experience
+            - name: New maker experience
               href: alm-accelerator/new-maker-experience.md
-            - name: Creating an import configuration
+            - name: Create an import configuration
               href: alm-accelerator/create-import-deployment-configuration.md
-            - name: Configuration for Power Pages
+            - name: Configure for Power Pages
               href: alm-accelerator/configure-power-pages.md
             - name: Build and package code-first components
               href: alm-accelerator/build-package-codefirst-components.md
