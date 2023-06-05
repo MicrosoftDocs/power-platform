@@ -113,7 +113,7 @@ Much of the specific activity data received from Power Virtual Agents is stored 
 | recipientId  | Recipient identifier            | `<id>`                                                 |
 | recipientName| Recipient name                  | `John Bonham`, `Keith Moon`, `Steve Smith`, `Steve Gadd` |
 | text         | Text in message                 | `find a coffee shop`                                    |
-| designMode         | Conversation happened within the test canvas (**Note:** does not apply to classic bots | `True` / `False`                                     |
+| designMode         | Conversation happened within the test canvas **Note:** does not apply to classic bots | `True` / `False`                                     |
 
 
 
