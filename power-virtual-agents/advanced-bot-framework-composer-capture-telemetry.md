@@ -87,6 +87,9 @@ customEvents
 
 ### Excluding telemetry from test conversations from your queries
 
+> [!Note]
+> Excluding telementry from test conversations from your queries does not apply to classic bots.
+
 Your bot logs telemetry for all conversations, including those that happen within the Power Virtual Agents test canvas. If you want to exclude telemetry gathered during testing, you can extend your query with the `designMode` custom dimension that is captured on all events, and use a *where* clause in your query.
 
 The following example shows all custom events, excluding those captured through the test canvas.
@@ -110,7 +113,7 @@ Much of the specific activity data received from Power Virtual Agents is stored 
 | recipientId  | Recipient identifier            | `<id>`                                                 |
 | recipientName| Recipient name                  | `John Bonham`, `Keith Moon`, `Steve Smith`, `Steve Gadd` |
 | text         | Text in message                 | `find a coffee shop`                                    |
-| designMode         | Conversation happened within the test canvas                 | `True` / `False`                                     |
+| designMode         | Conversation happened within the test canvas (**Note:** does not apply to classic bots | `True` / `False`                                     |
 
 
 
