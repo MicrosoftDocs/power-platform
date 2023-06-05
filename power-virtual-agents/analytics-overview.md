@@ -34,24 +34,11 @@ Multiple charts show you trends and usage for your bot's topics. These charts us
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
-
 As a bot maker, your job isn't done when you publish your bot for use. You'll want to know how well your bot is performing its intended duties. The comprehensive analytics in Power Virtual Agents keep your bot's key performance indicators front and center. Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest effect on your bot's performance.
-
-> [!NOTE]
-> Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. In the meantime, you can use a [custom analytics solution to create a Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get analytics in these plans.
 
 ### Analytics in Power Virtual Agents
 
 In Power Virtual Agents, in the navigation menu, select **Analytics**.
-
-Conversation transcripts are available immediately. Analytics are updated every hour.
-
-# [Web app](#tab/web)
-
-### Analytics in Power Virtual Agents
 
 The analytics section is divided into a number of pages to give you multiple ways to understand bot performance.
 
@@ -63,6 +50,10 @@ The following terms are used in this section.
 
 > [!NOTE]
 > Although transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
+
+
+> [!NOTE]
+> Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. In the meantime, you can use a [custom analytics solution to create a Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get analytics in these plans.
 
 ### View analytics
 
