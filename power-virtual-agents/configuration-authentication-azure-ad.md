@@ -86,12 +86,13 @@ You'll complete the first several steps in the Azure portal. You'll complete the
 
 1. Store the secret's **Value** in a secure temporary file. You'll need it when you configure your bot's authentication later on.
 
-> [!IMPORTANT]
+> [!TIP]
 > Don't leave the page before you copy the value of the client secret. If you do, the value is obfuscated and you'll need to generate a new client secret.
 
 ### Configure manual authentication
 
-To manually configure authentication, use the following steps. **Note** that these instructions apply to classic PVA bots.
+> [!IMPORTANT]
+> You can only manually configure authentication if the bot is labelled as a classic bot.
 
 1. In Power Virtual Agents, in the navigation menu under **Settings**, select **Security**. Then select the **Authentication** card.
 
