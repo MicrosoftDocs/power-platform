@@ -22,7 +22,7 @@ You can use Bot Framework Composer with Power Virtual Agents to send event data 
 > [!IMPORTANT]
 > Application Insights is a feature of [Azure Monitor](/azure/azure-monitor/overview), an extensible Application Performance Management (APM) tool that allows you to monitor your live applications. It requires a subscription to [Microsoft Azure](https://azure.microsoft.com/).
 
-### Connect Application Insights
+## Connect Application Insights
 
 To connect to your Application Insights service in Composer, you need to add your instrumentation key to the project.
 
@@ -45,9 +45,11 @@ To learn more on how to set up and use Application Insights and create queries f
 - The basic concepts of [Log queries](/azure/azure-monitor/log-query/get-started-queries) in Azure Monitor.
 - [Example Kusto queries](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed) for Adaptive dialogs in Composer.
 
-# Capture telemetry with Application Insights
+## Analyze bot telemetry with Application Insights
 
-This article discusses how you can capture telemetry data from your Power Virtual Agents bot for use in [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview). 
+After you've connected your bot to Application Insights, telemetry data is logged when users interact with the bot, including testing within Power Virtual Agents. To see the logged telemetry data, navigate to the **Logs** section of your Application Insights resource in Azure.
+
+From here, you can use [Kusto queries](/azure/data-explorer/kusto/query) to query and analyze your data. See [example queries](#example-queries).
 
 In addition to the native analytics features within Power Virtual Agents, you can send telemetry data to Application Insights. Telemetry offers insights into your bot by tracking: 
 
@@ -58,29 +60,7 @@ In addition to the native analytics features within Power Virtual Agents, you ca
 > [!IMPORTANT]
 > Application Insights is a feature of [Azure Monitor](/azure/azure-monitor/overview), an extensible Application Performance Management (APM) tool that allows you to monitor your live applications. It requires a subscription to [Microsoft Azure](https://azure.microsoft.com/).
 
-### Connect your Power Virtual Agents bot to Application Insights
-
-To connect your bot to Application Insights, you first need to add your instrumentation key to the project.
-
-1. Navigate to the **Bot details** page under **Settings**.
-
-1. Switch to the **Advanced** tab.
-
-1. Within the **Application Insights** section, populate the **Connection string** setting. See the [Azure Monitor documentation](https://go.microsoft.com/fwlink/?linkid=2227096) to find out how to locate your connection string.
-
-1. Optionally, you can choose to enable one of the following settings.
-
-- **Log activities** - If enabled, details of incoming / outgoing messages and events are logged.
-
-- **Log sensitive Activity properties** - If enabled, the values of certain properties that could be considered sensitive on incoming / outgoing messages and events are included in logs. The properties that are considered potentially sensitive are userid, name, text and speak (text and speak properties only apply to messages).
-
-### Analyze bot telemetry with Application Insights
-
-After you've connected your bot to Application Insights, telemetry data is logged when users interact with the bot, including testing within Power Virtual Agents. To see the logged telemetry data, navigate to the **Logs** section of your Application Insights resource in Azure.
-
-From here, you can use [Kusto queries](/azure/data-explorer/kusto/query) to query and analyze your data. See [example queries](#example-queries).
-
-#### Example queries
+### Example queries
 
 A query can be as simple as specifying a single table, such as `customEvents`, which shows all custom telemetry events logged from Power Virtual Agents. But you can also use [Kusto queries](/azure/data-explorer/kusto/query) to narrow down your results further, including;
 
