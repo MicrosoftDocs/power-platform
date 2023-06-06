@@ -108,9 +108,9 @@ If you're planning to run a Training in a Day event, use this page in the Nurtur
 
 ### Security roles
 
-**Nurture Admin SR** Gives a user full access (create, read, write, etc.) to the Maker Assessment tables. When you share the Maker Assessment Admin app with your admin team, make sure to assign them the **Maker Journey Admin SR** security role.
+**Nurture Admin SR** Gives a user full access (create, read, write, etc.) to the Maker Assessment tables. When you share the Nurture apps - Admin app with your admin team, make sure to assign them the **Nurture Admin SR** security role.
 
-**Nurture Maker SR** Gives a user read access to the Maker Assessment tables. When you share the Maker Assessment app with your organization, make sure to assign them the **Maker Journey Maker SR** security role.
+**Nurture Maker SR** Gives a user read access to the Maker Assessment tables. When you share the Nurture apps - Maker app with your organization, make sure to assign them the **Nurture Maker SR** security role.
 
 ### Tables
 

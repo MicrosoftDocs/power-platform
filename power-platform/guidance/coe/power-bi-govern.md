@@ -146,7 +146,7 @@ Using the CoE dashboard, admins also have the ability to identify unused apps an
 
 - The highest possible score for an app is 6. A score of 6 represents an app that hasn't been modified since it was created, is using a non-production word like  _test_ or _demo_ in the title, was created over three years ago, and was likely created from a template.
 
-- The highest possible score for a flow is 8. A score of 8 represents a flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over three years ago, was likely created from a template, is in a stopped state, and isn't complex (contains fewer than five actions).
+- The highest possible score for a flow is 10. A score of 10 represents a flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over three years ago, was likely created from a template, is in a stopped state, does not have an owner, and isn't complex (contains fewer than five actions).
 
 - The highest possible score for a desktop flow is 4. A score of 4 represents a desktop flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over a year ago, and was likely created from a template.
 
@@ -192,6 +192,8 @@ The **Archive Score** is the sum of multiple criteria:
 - Is this flow likely a template, or are there multiple flows with the same name? (+1)
 
 - What is the flow state? (+2 for stopped, +1 for suspended)
+
+- Does the flow have an owner?(+2 if no owner)
 
 - How complex is the flow, based on the number of unique actions? (-1 if it's complex, because that indicates a user has spent a lot of time putting it together)
 

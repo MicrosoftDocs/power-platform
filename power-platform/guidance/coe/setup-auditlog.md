@@ -151,7 +151,7 @@ Go back to the custom connector to set up a connection to the custom connector a
    ![Custom connector Start Subscription.](media/coe43.png "Custom connector Start Subscription")
 
 1. Paste the **directory (tenant) ID** - copied earlier from the **App Registration** overview page in Azure AD - into the **Tenant** field.
-1. Paste the **application (client) ID** into **PublisherIdentifier**.
+1. Paste the **directory (tenant) ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
 

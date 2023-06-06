@@ -66,7 +66,7 @@ We recommend that you create connections to all connectors used in the solution 
 
 1. Import the **CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip** solution file from the extracted folder.
 
-1. Leave all environment variable values blank.
+1. For an environment in the commercial cloud, leave all environment variable values blank. For a GCC, GCC High and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints) and enter the value for your cloud in the **Graph URL Environment Variable** environment variable.
 
 The import can take up to 15 minutes to be completed.
 
@@ -219,7 +219,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - CLEANUP - Admin | Sync Template v3 (PVA Usage)
 
 >[!NOTE]
-> To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 15 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
+> To load-balance queries against Dataverse, the Admin | Sync Template v3 (Driver) flow implements a delay between 0 and 15 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
 
 The first run of these flows performs a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
 
@@ -365,7 +365,6 @@ Using these steps, you set up an Azure AD app registration that is used in a clo
 
 1. Select **Microsoft Graph**, and configure permissions as follows:
 
-   1. Select **Delegated permissions**, and then select **ServiceMessage.Read.All**.
    1. Select **Application permissions**, and then select **ServiceMessage.Read.All**.
    1. Select **Add permissions**.
 
@@ -374,7 +373,7 @@ Using these steps, you set up an Azure AD app registration that is used in a clo
 1. Select **Certificates and secrets**.
 
 1. Select **+ New client secret**.
-    :::image type="content" source="media/coe9.png" alt-text="Add new client secret":::
+    :::image type="content" source="media/coe39.png" alt-text="Add new client secret":::
 
 1. Add a description and expiration (in line with your organization's policies), and then select **Add**.
 

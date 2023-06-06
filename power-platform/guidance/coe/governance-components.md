@@ -321,7 +321,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 #### Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
 >[!NOTE]
->You can now configure environment policies in Power Platform Admin Center to delete inactive Dataverse for Teams environments. As this feature is now available in Power Platform Admin Center, we will deprecate inactivity based deletion in the CoE Starter Kit effective November 2022.<br>
+>We recommend you configure environment policies in Power Platform Admin Center to delete inactive Dataverse for Teams environments instead. 
 >Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](/power-platform/admin/inactive-teams-environment)
 
 > [!IMPORTANT]
