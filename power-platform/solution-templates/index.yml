@@ -67,7 +67,7 @@ landingContent:
   # Card
   - title: Related docs
     linkLists:
-      - linkListType: overview
+      - linkListType: reference
         links:
           - text: Work with solutions in Power Apps
             url: /power-apps/maker/data-platform/solutions-overview
@@ -75,7 +75,6 @@ landingContent:
             url: /power-apps/maker/data-platform/export-solutions
           - text: Import solutions
             url: /power-apps/maker/data-platform/import-update-export-solutions
-          - text: Use pipelines in Power Platform to deploy solutions
-            url: /power-platform/alm/pipelines
+
 
 
