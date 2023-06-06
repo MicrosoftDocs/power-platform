@@ -3,7 +3,7 @@ title: "Set up inventory components | MicrosoftDocs"
 description: "Set up instructions for how to set up the inventory components solution of the CoE Starter Kit"
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 05/23/2023
+ms.date: 06/06/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -66,7 +66,7 @@ We recommend that you create connections to all connectors used in the solution 
 
 1. Import the **CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip** solution file from the extracted folder.
 
-1. For an environment in the commercial cloud, leave all environment variable values blank. For a GCC, GCC High and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints) and enter the value for your cloud in the **Graph URL Environment Variable** environment variable.
+1. For an environment in the commercial cloud, leave all environment variable values blank. For a GCC, GCC High, and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints) and enter the value for your cloud in the **Graph URL Environment Variable** environment variable.
 
 The import can take up to 15 minutes to be completed.
 
@@ -223,7 +223,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - CLEANUP - Admin | Sync Template v3 (PVA Usage)
 
 >[!NOTE]
-> To load-balance queries against Dataverse, the Admin | Sync Template v3 (Driver) flow implements a delay between 0 and 15 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
+> To load-balance queries against Dataverse, the Admin | Sync Template v3 (Driver) flow implements a delay of up to 15 hours before starting to collect the inventory. This flow, therefore, might appear to be running for a long time.
 
 The first run of these flows performs a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. More: [Long running flows](limitations.md#long-running-flows).
 
