@@ -14,7 +14,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 05/15/2023
+ms.date: 06/06/2023
 ms.custom: bap
 ---
 # What is the SAP procurement solution template? (preview)
@@ -25,7 +25,7 @@ SAP enterprise resource planning (ERP) is a centralized system of record that fa
 
 Microsoft Power Platform can help you transform the way you view and work with your SAP data. Enhanced functionalities in the on-premises data gateway and the [SAP ERP connector](/connectors/saperp/) make it easier for you to get started with and manage your SAP integration with Power Platform.
 
-The SAP procurement template solution is published by Microsoft on GitHub and is supported on GitHub. It accelerates the integration of data between the two systems to drive efficiencies in your procure-to-pay processes. The solution template contains the building blocks necessary to streamline all the SAP screens and attributes related to a core process into one simple screen in Power Apps with further automation of processes behind the scenes using Power Automate flows. Reduce inefficiencies in current manual processes by avoiding data entry mistakes and with little to no training, procurement team members will be managing SAP data in less time.
+The SAP procurement template solution is published by Microsoft on AppSource and is supported on GitHub. It accelerates the integration of data between the two systems to drive efficiencies in your procure-to-pay processes. The solution template contains the building blocks necessary to streamline all the SAP screens and attributes related to a core process into one simple screen in Power Apps with further automation of processes behind the scenes using Power Automate flows. Reduce inefficiencies in current manual processes by avoiding data entry mistakes and with little to no training, procurement team members will be managing SAP data in less time.
 
 The solution template's starter apps, flows, and other components are ready to be built upon and customized to meet your organization's unique needs.
 
@@ -33,8 +33,10 @@ Additionally, since the Power Platform can connect multiple business systems, yo
 
 The SAP procurement solution template consists of the following two solutions that layer onto themselves:
 
-- **SAP Base** contains base components used by the SAP procurement accelerator solution and future SAP accelerators.
+- **SAP Base** contains base components used by the SAP procurement solution template and future SAP solution templates.
 - **SAP Procurement** contains components that help transform your procure-to-pay business processes connected to SAP.
+
+You can access the solution templates on AppSource at: <https://aka.ms/DownloadSAPProcurementTemplate>
 
 > [!IMPORTANT]
 >
