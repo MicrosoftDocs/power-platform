@@ -1,6 +1,6 @@
 - name: Solution templates for Power Platform (preview)
   href: ./index.yml
-- name: Overview
+- name: What are solution templates?
   href: overview.md
 - name: Finance - SAP Procurement
   items:
