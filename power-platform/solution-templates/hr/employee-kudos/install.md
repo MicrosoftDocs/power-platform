@@ -17,7 +17,7 @@ Take the following steps to install the Employee Kudos solution template.
 
 ## Step 1: Create connections
 
-The installation requires that three new connections be set up. You can create the connections before importing the solution that makes the import smoother, or you can create them during import that requires jumping back and forth between browser windows.
+The installation requires that three new connections be set up. It's best to create the connections before importing the solution to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
 
 Create three new connections with these connectors:
 
@@ -88,7 +88,7 @@ The solution includes three new security roles:
 
 > [!NOTE]
 > All users must also be assigned the _Basic User_ role in addition to any other roles assigned to them.
-    
+
 Roles can be assigned from the Admin Center.
 
 1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
@@ -100,7 +100,7 @@ Roles can be assigned from the Admin Center.
 
 > [!IMPORTANT]
 >
->Be sure to also add the **Basic User** security role in addition to any Kudos-specific roles.
+>Be sure to also add the **Basic User** security role in addition to other Kudos-specific roles.
 
 ## Step 5: Assign _run-only_ access to flows
 
@@ -161,9 +161,9 @@ To create your own badges, refer to [Create Custom Badges](use.md#create-custom-
 ## Step 9: Share the App
 
 1. Go to [Power Apps](https://make.powerapps.com/).
-1. Select on the "Environments" tab and select the environment where the solution was installed.
+1. Select on the **Environments** tab and select the environment where the solution was installed.
 1. Select on **Apps** and localize the _Kudos App_.
-1. Select on the three dots and select **Share**.
+1. Select on the _three dots_ and select **Share**.
 1. Look for the users that you want to share the app with.
     - For users that should have access to edit the app, check the _Co- owner_ box.
     - For regular users of the app, leave that checkbox empty.
