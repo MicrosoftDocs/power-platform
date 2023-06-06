@@ -1,5 +1,5 @@
 ---
-title: What is the SAP Procurement solution template? (preview)
+title: SAP procurement solution template for Power Platform (preview)
 description: Learn about Microsoft Power Platform's SAP procurement template built to work with SAP.
 author: jongilman88
 ms.author: jongilman
@@ -17,7 +17,7 @@ ms.topic: overview
 ms.date: 06/06/2023
 ms.custom: bap
 ---
-# What is the SAP procurement solution template? (preview)
+# SAP procurement solution template for Power Platform (preview)
 
 [This article is prerelease documentation and is subject to change.]
 

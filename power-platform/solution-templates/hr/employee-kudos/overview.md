@@ -1,5 +1,5 @@
 ---
-title: Overview of Employee Kudos solution template for Power Platform (preview)
+title: Employee Kudos solution template for Power Platform (preview)
 description: Learn about the Employee Kudos solution template for Power Platform.
 author: tshanep
 ms.author: shanep
@@ -9,7 +9,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# What is the Employee Kudos solution template?
+# Employee Kudos solution template for Power Platform (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
