@@ -65,6 +65,17 @@ $GovernanceConfiguration = [pscustomobject] @{
 
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentID> -UpdatedGovernanceConfiguration $GovernanceConfiguration 
 ```
+## Copy Managed Environment settings using PowerShell
+
+Admins can use PowerShell to copy settings from one Managed Environment to another environment. If the target environment wasn't a Managed Environment, copy settings will also enable it as a Managed Environment. 
+
+```powershell
+#Get settings from the source Managed Environment
+$sourceEnvironment = Get-AdminPowerAppEnvironment -EnvironmentName <SourceEnvironmentId>
+
+# Copy the settings from the source Managed Environment above to the target environment
+Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <TargetEnvironmentId> -UpdatedGovernanceConfiguration $sourceEnvironment.Internal.properties.governanceConfiguration
+```
 
 ## Disable Managed Environments using PowerShell
 
