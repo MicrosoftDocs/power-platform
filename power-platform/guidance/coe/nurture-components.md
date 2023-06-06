@@ -4,10 +4,10 @@ description: "The CoE nurture components solution contains assets to share best 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 06/06/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -108,9 +108,9 @@ If you're planning to run a Training in a Day event, use this page in the Nurtur
 
 ### Security roles
 
-**Nurture Admin SR** Gives a user full access (create, read, write, etc.) to the Maker Assessment tables. When you share the Nurture apps - Admin app with your admin team, make sure to assign them the **Nurture Admin SR** security role.
+- **Nurture Admin SR** gives a user full access, including create, read, and write permissions, to the Maker Assessment tables. When you share the Nurture apps - Admin app with your admin team, be sure to assign team members to the **Nurture Admin SR** security role.
 
-**Nurture Maker SR** Gives a user read access to the Maker Assessment tables. When you share the Nurture apps - Maker app with your organization, make sure to assign them the **Nurture Maker SR** security role.
+- **Nurture Maker SR** gives a user read access to the Maker Assessment tables. When you share the Nurture apps - Maker app with your organization, be sure to assign individuals to the **Nurture Maker SR** security role.
 
 ### Tables
 
