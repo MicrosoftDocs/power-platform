@@ -16,7 +16,7 @@ This transparency note describes information related to data sharing for Copilot
 
 ## What is data sharing for Copilot AI features?  
 
-Microsoft is constantly working to improve the quality of the new AI-powered Copilot features to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features and related outputs. This setting allows Microsoft to capture and manually review users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s product.  
+Microsoft is constantly working to improve the quality of the new AI-powered Copilot features to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features and related outputs. This setting allows Microsoft to capture and manually review users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s product/feature.  
 
 ## What are the benefits of opting in?  
 
