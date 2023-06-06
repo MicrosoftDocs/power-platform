@@ -2,6 +2,9 @@
 title: Types of Power Automate licenses
 description: Learn about types of Power Automate licenses.
 author: PriyaKodukula
+contributors:
+  - PriyaKodukula
+  - v-aangie
 ms.subservice: admin
 ms.topic: overview
 ms.date: 05/02/2023
@@ -255,6 +258,8 @@ Limits for automated/scheduled flows:
 - Standard service principal flows get 25,000 base requests with no per-license accrual for the tenant per 24 hours. 
 
 If you need additional requests, turn on [Pay-as-you-go](#power-platform-requests-pay-as-you-go) for the environment or buy additional [power platform requests capacity](add-ons.md#power-automate-capacity-add-ons).
+
+To learn more, go to [Associate flows to apps](/power-automate/associate-flow-to-app).
 
 #### Will desktop flows usage count consume my Power Platform request limits?
 
