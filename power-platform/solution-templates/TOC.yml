@@ -6,7 +6,7 @@
   items:
   - name: Overview
     href: finance/sap-procurement/overview.md
-  - name: Use the apps
+  - name: Use
     items:
     - name: Vendor management
       href: finance/sap-procurement/use/vendor-management.md
@@ -54,5 +54,5 @@
     href: hr/employee-kudos/overview.md
   - name: Install
     href: hr/employee-kudos/install.md
-  - name: Use the Kudos app
+  - name: Use
     href: hr/employee-kudos/use.md  
