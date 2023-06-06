@@ -169,7 +169,7 @@ To create your own badges, refer to [Create Custom Badges](use.md#create-custom-
     - For regular users of the app, leave that checkbox empty.
     - If everyone in the company should be able to use the app, you can look for _Everyone_ in the _Enter a name_ box.
 1. Select on the three dots and select **Edit**.
-:::image type="content" source="media/install/ShareApp4.png" alt-text="Edit the app":::
+    :::image type="content" source="media/install/ShareApp4.png" alt-text="Edit the app":::
 
 ## Step 10: Turn on Auditing (optional)
 

@@ -41,7 +41,7 @@ The SAP procurement solution template consists of the following two solutions th
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-## How solution templates help you
+## How solution templates help you?
 
 The solution templates help you:
 

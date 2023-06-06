@@ -1,5 +1,5 @@
 ---
-title: Use the SAP Solution Administrator model-driven app(preview)
+title: Use the SAP Solution Administrator model-driven app (preview)
 description: Use the SAP Solution Administrator model-driven app to configure and manage data.
 author: tverhasselt
 ms.author: thoverh
@@ -19,19 +19,17 @@ ms.date: 06/05/2023
 ms.custom: bap-template
 ---
 
-# Use the SAP Solution Administrator model-driven app
-
-Learn about the _SAP Solution Administrator_ model-driven app and  how you can use it in conjunction with Dataverse to seed relevant SAP data into your solutions' apps and flows as well as monitor the solutions you deploy.
-
-## Work with model-driven apps and Dataverse (preview)
+# Use the SAP Solution Administrator model-driven app (preview)
 
 [This article is prerelease documentation and is subject to change.]
+
+Learn about the _SAP Solution Administrator_ model-driven app and  how you can use it in conjunction with Dataverse to seed relevant SAP data into your solutions' apps and flows as well as monitor the solutions you deploy.
 
 Model-driven apps allow you to quickly build apps from your data stored in Dataverse using forms, views, and relationships that connect seamlessly to your tables. The _SAP Solution Administrator_ is designed for the admin experience and is a model-driven app. Just like canvas apps, the model-driven app and underlying Dataverse tables can be extended to support additional admin requirements with minimal effort.
 
 Dataverse provides a great repository for data that's not currently sourced from a system of record. Dataverse also provides the ability to rapidly build experiences on that stored data.
 
-### SAP Solution Administrator
+## SAP Solution Administrator
 
 _SAP Solution Administrator_ is a model-driven app that allows the admin to configure seed data to power the end-user's canvas app experiences, as well as monitor solution errors. Through this app, an admin can directly search, view, create, update, delete, and deactivate data stored in Dataverse. This model-driven app can be extended to add new _Groups_, _Subareas_ and _Pages_ and many other customizations.
 
@@ -42,7 +40,7 @@ More information:
 - [What are model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/model-driven-app-overview)
 - [Understand model-driven app components](/power-apps/maker/model-driven-apps/model-driven-app-components)
 
-### Dataverse
+## Dataverse tables
 
 All SAP transactional data is sourced from your SAP system and not stored in Power Platform solutions. However, SAP seed data is required to be administrated and monitored in order to maintain the most efficient canvas apps and cloud flows. The following is a list of Dataverse entities that also have corresponding forms and views you can use in the _SAP Solution Administrator_ model-driven app. These tables can be further extended to support your local business requirements.
 

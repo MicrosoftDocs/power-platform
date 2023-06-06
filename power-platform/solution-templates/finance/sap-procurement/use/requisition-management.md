@@ -1,5 +1,5 @@
 ---
-title: What is the SAP Requisition Management app? (preview)
+title: SAP Requisition Management app (preview)
 description: Learn about the SAP Requisition Management app for Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
@@ -16,7 +16,7 @@ ms.date: 05/02/2023
 ms.custom: bap-template
 ---
 
-# What is the SAP Requisition Management app? (preview)
+# SAP Requisition Management app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 

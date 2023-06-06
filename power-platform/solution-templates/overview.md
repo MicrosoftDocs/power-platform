@@ -25,7 +25,7 @@ Power Platform solution templates require premium licensing and are designed to 
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-## What are some of the benefits?
+## What are the benefits?
 
 Enabling enterprise software use cases can be time consuming and expensive. Solution templates for Microsoft Power Platform provide a foundation for you to work with and build upon so you can quickly extend and deploy. In turn, by continuing to use the full potential of Power Platform, the solution templates can be further extended to connect workflows across more systems of record and digitize manually intensive processes.
 

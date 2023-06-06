@@ -1,5 +1,5 @@
 ---
-title: What is required to integrate SAP with Power Platform? (preview)
+title: Requirements to integrate SAP with Power Platform (preview)
 description: Review requirements for setting up SAP integration with Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
@@ -17,7 +17,7 @@ ms.date: 06/05/2023
 ms.custom: bap-template
 ---
 
-# What is required to integrate SAP with Power Platform? (preview)
+# Requirements to integrate SAP with Power Platform (preview)
 
 [This article is prerelease documentation and is subject to change.]
 

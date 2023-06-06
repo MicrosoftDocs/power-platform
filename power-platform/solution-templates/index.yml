@@ -23,10 +23,10 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: Solution templates for Power Platform
+            url: overview.md
           - text: Finance - SAP Procurement
             url: finance/sap-procurement/overview.md
-      - linkListType: overview
-        links:
           - text: Human Resources - Employee Kudos
             url: hr/employee-kudos/overview.md
 
@@ -51,6 +51,8 @@ landingContent:
             url: finance/sap-procurement/administer/get-started.md
           - text: Requirements
             url: finance/sap-procurement/administer/requirements.md
+          - text: FAQs
+            url: finance/sap-procurement/faqs.md
   
   # Card
   - title: Install and use Employee Kudos
