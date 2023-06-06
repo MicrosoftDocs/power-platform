@@ -299,10 +299,10 @@
           items:
             - name: What's in the ALM Accelerator
               href: alm-accelerator/kit-contents.md
-            - name: Advanced maker experience
-              href: alm-accelerator/advanced-maker-experience.md
             - name: New maker experience
               href: alm-accelerator/new-maker-experience.md
+            - name: Advanced maker experience
+              href: alm-accelerator/advanced-maker-experience.md
             - name: Create an import configuration
               href: alm-accelerator/create-import-deployment-configuration.md
             - name: Configure for Power Pages
