@@ -5,12 +5,10 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 05/10/2023
+ms.date: 06/05/2023
 ms.custom: template-how-to
 ---
-# Manage your customer-managed encryption key (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Manage your customer-managed encryption key
 
 Customers have data privacy and compliance requirements to secure their data by encrypting their data at-rest. This secures the data from exposure in an event where a copy of the database is stolen. With data encryption at-rest, the stolen database data is protected from being restored to a different server without the encryption key.
 
@@ -19,25 +17,19 @@ All customer data stored in Power Platform is encrypted at-rest with strong Micr
 To learn more about customer managed key in Power Platform, watch the following video.<p/>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW14O4G]
 
-> [!IMPORTANT]
-> This is a preview feature.
->
-> These encryption key operations are available with this release of customer-managed key (CMK):
->
-> - Create a RSA (RSA-HSM) key from your Azure Key vault.
-> - Create a Power Platform enterprise policy for your key.
-> - Grant the Power Platform enterprise policy permission to access your key vault.
-> - Grant the Power Platform service admin to read the enterprise policy.
-> - Apply encryption key to your environment.
-> - Revert/remove environment’s CMK encryption to Microsoft-managed key.
-> - Change key by creating a new enterprise policy, removing the environment from CMK and re-apply CMK with new enterprise policy.
-> - Lock CMK environments by revoking CMK key vault and/or key permissions.
-> - Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
->
-> This feature will be available in all public cloud regions in March 2023.
->
-> There's no additional Power Platform licensing requirement during this preview. When this feature becomes generally available, there will be a licensing requirement.
-> 
+These encryption key operations are available with customer-managed key (CMK):
+
+- Create a RSA (RSA-HSM) key from your Azure Key vault.
+- Create a Power Platform enterprise policy for your key.
+- Grant the Power Platform enterprise policy permission to access your key vault.
+- Grant the Power Platform service admin to read the enterprise policy.
+- Grant the Power Platform service admin to read the enterprise policy.
+- Apply encryption key to your environment.
+- Revert/remove environment’s CMK encryption to Microsoft-managed key.
+- Change key by creating a new enterprise policy, removing the environment from CMK and re-apply CMK with new enterprise policy.
+- Lock CMK environments by revoking CMK key vault and/or key permissions.
+- Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
+
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
 
 - Dataverse (Custom solutions and Microsoft services)
@@ -46,7 +38,6 @@ Currently, all your customer data stored *only* in the following apps and servic
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
 - Dynamics 365 Customer Service
 - Dynamics 365 Customer Insights
-- Dynamics 365 Omnichannel
 - Dynamics 365 Commerce (Finance and operations)
 - Dynamics 365 Field Service
 - Dynamics 365 Retail
@@ -56,11 +47,11 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
 
-<sup>1</sup> When you apply the customer managed key to an environment that has existing Power Automate flows, the flows data continues to be encrypted with Microsoft-managed key. However, flows created in an environment that didn't already have existing flows when the customer managed key feature was applied are encrypted with customer managed key. More information: [Power Automate customer manged key](/power-automate/customer-managed-keys).
+<sup>1</sup> When you apply the customer managed key to an environment that has existing Power Automate flows, the flows data continues to be encrypted with Microsoft-managed key. More information: [Power Automate customer manged key](/power-automate/customer-managed-keys).
 
 > [!NOTE]
 >
-> During preview, the connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
+> The connection settings for connectors will continue to be encrypted with a Microsoft-managed key.
 >
 > Contact a representative for services not listed above for information about customer-managed key support.
 
@@ -74,7 +65,7 @@ With customer-managed key, administrators can provide their own encryption key f
 
 The Power Platform service administrator can then add Dataverse environments to the enterprise policy to start encrypting all the customer data in the environment with your encryption key. Administrators can change the environment's encryption key by creating another enterprise policy and add the environment (after removing it) to the new enterprise policy. In the event that the environment no longer needs to be encrypted using your customer-managed key, the administrator can remove the Dataverse environment from the enterprise policy to revert the data encryption back to Microsoft-managed key.
 
-The administrator can lock the customer-managed key environments by revoking key access from the enterprise policy and unlock the environments by restoring the key access. More information: [Lock environments by revoking key vault and/or key permission access (preview)](cmk-lock-unlock.md)
+The administrator can lock the customer-managed key environments by revoking key access from the enterprise policy and unlock the environments by restoring the key access. More information: [Lock environments by revoking key vault and/or key permission access](cmk-lock-unlock.md)
 
 To simplify the key management tasks, the tasks are broken down into three main areas:
 
@@ -84,6 +75,20 @@ To simplify the key management tasks, the tasks are broken down into three main 
 
 > [!WARNING]
 > When environments are locked, they can't be accessed by anyone, including Microsoft support. Environments that are locked become disabled and data loss can occur.
+
+## Licensing requirements for customer managed key
+
+Customer managed key policy is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md), with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+
+In addition, access to using customer managed key for Microsoft Power Platform and Dynamics 365 requires users in the environments where the encryption key policy is enforced to have one of these subscriptions:
+
+- Microsoft 365 or Office 365 A5/E5/G5
+- Microsoft 365 A5/E5/F5/G5 Compliance
+- Microsoft 365 F5 Security & Compliance
+- Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
+- Microsoft 365 A5/E5/F5/G5 Insider Risk Management
+
+[Learn more about these licenses](https://go.microsoft.com/fwlink/?linkid=2214240)
 
 ## Understand the potential risk when you manage your key
 
@@ -137,7 +142,7 @@ The Power Platform administrator manages customer-managed key tasks related to t
 1. Add the Power Platform environments to the enterprise policy to encrypt data with the customer-managed key. More information: [Add an environment to the enterprise policy to encrypt data](#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
 1. Remove environments from enterprise policy to return encryption to Microsoft managed key. More information: [Remove environments from policy to return to Microsoft managed key](#remove-environments-from-policy-to-return-to-microsoft-managed-key)
 1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy. More information: [Change the environment's encryption key](#change-the-environments-encryption-key)
-1. Migrate from BYOK. If you are using the earlier self-managed encryption key feature, you can migrate your key to customer managed key. More information: [Migrate bring-your-own-key environments to customer-managed key (preview)](cmk-migrate-from-byok.md)
+1. Migrate from BYOK. If you are using the earlier self-managed encryption key feature, you can migrate your key to customer managed key. More information: [Migrate bring-your-own-key environments to customer-managed key](cmk-migrate-from-byok.md)
 
 ## Create encryption key and grant access
 
@@ -151,7 +156,7 @@ In Azure, perform the following steps:
    > [!IMPORTANT]
    >
    > - To ensure that your environment is protected from accidental deletion of the encryption key, the key vault must have soft-delete and purge protection enabled. You won’t be able to encrypt your environment with your own key without enabling these settings. More information: [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview) More information: [Create a key vault using Azure portal](/azure/key-vault/general/quick-create-portal)
-   > - During preview, your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet.
+   > - Your Azure Key Vault must be accessible from an unrestricted internet connection. It can't be behind your firewall or vNet.
 
 #### Create a key in the key vault
 
@@ -194,7 +199,7 @@ Register Power Platform as a resource provider. You only need to do this task on
 
 A deployment is started. When it's done, the enterprise policy is created.
  > [!NOTE]
-   > During preview, you can only create up to two enterprise policies.
+   > You can only create up to two enterprise policies.
 
 ### Enterprise policy json template
 
@@ -311,6 +316,12 @@ To manage the environment's encryption, you need the following permission:
 
 The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer-managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data, and encrypt it with the customer-managed key.
 
+### Enable Managed environment for the environment to be added into the enterprise policy
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and locate the environment.
+1. Select and check the environment on the environments list. 
+1. Select the **Enable Managed Environments** icon on the action bar. 
+1. Select **Enable**.
+
 ### Add an environment to the enterprise policy to encrypt data
 
 > [!IMPORTANT]
@@ -328,7 +339,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
 
 > [!NOTE]
-> During preview, you can only add sandbox environments.
+> You can only add sandbox environments.
 
 ### Remove environments from policy to return to Microsoft managed key
 
@@ -348,7 +359,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 
 To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
  > [!NOTE]
-   > During preview, using **New key version** and setting **Rotation policy** to rotate your encryption key is not supported. Activating new key version and disabling the current version will lock the environment.
+   > Using **New key version** and setting **Rotation policy** to rotate your encryption key is not supported. Activating new key version and disabling the current version will lock the environment.
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create the key and grant access](#create-the-key-and-grant-access-overview) and [Create an enterprise policy](#create-enterprise-policy)
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
@@ -375,7 +386,7 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 1. On the **Enterprise policies** page, select the **Environments with policies** tab. The list of environments that were added to enterprise policies are displayed.
 
 > [!NOTE]
-> During preview, there might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, submit a Microsoft Support request for help.
+> There might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, submit a Microsoft Support request for help.
 
 ## Environment database operations
 
