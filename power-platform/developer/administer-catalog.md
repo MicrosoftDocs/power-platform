@@ -1,5 +1,5 @@
 ---
-title: "Administer the catalog (Preview)"
+title: "Administer the catalog (preview)"
 description: "Learn how to administer the catalog for Power Platform after you have finished installing it. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
 author: samathur
 ms.subservice: developer
@@ -12,26 +12,24 @@ search.audienceType:
 contributors:
  - JimDaly
 ---
-# Administer the catalog (Preview)
+# Administer the catalog (preview)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-expect-changes](../includes/cc-preview-features-expect-changes.md)]
->
-> Before you can administer the catalog, you must install and configure it. More information: [Get started](catalog.md#get-started)
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+Before you can administer the catalog, you must install and configure it. More information: [Get started](catalog.md#get-started)
 
 Administering the catalog includes the following tasks:
 
-- [Setup Users](#setup-users)
-- [Approve & Reject submission requests](#approve--reject-submission-requests)
-- [Review Install history](#review-install-history)
-- [Review Catalog Items](#review-catalog-items)
+- [Setup users](#setup-users)
+- [Approve and reject submission requests](#approve-and-reject-submission-requests)
+- [Review install history](#review-install-history)
+- [Review catalog items](#review-catalog-items)
 - [Review errors in submission requests](#review-errors-in-submission-requests)
 - [Review errors in install requests](#review-errors-in-install-requests)
 
-## Setup Users
+## Setup users
 
 The **Catalog Manager** application includes the following security roles you can associate to users, Microsoft Azure Active Directory groups, and modern teams:
-
 
 |Role |Description  |
 |---------|---------|
@@ -42,7 +40,7 @@ The **Catalog Manager** application includes the following security roles you ca
 
 More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team).
 
-## Approve & Reject submission requests
+## Approve and reject submission requests
 
 Environment admins and users with the Catalog Approver role can review new submissions and approve or decline requests. If global auto approval or publisher level auto approval is turned on, then there's no requirement for manual review and approval. More information: [Enable Auto Approval](catalog.md#enable-auto-approval)
 
@@ -56,14 +54,12 @@ This list has 16 views. The most important ones are:
 |**Failed Pre-Validation**|Use this view to identify requests where a submitter has sent a request but it isn't available in the **Active Approval Requests** view. This view can help with troubleshooting such scenarios.|
 |**Approved Approval Request**|Use this view to review previously approved requests|
 
-
 Using the **Active Approval Requests** view, open a request and select **Resolve Request** in the menu.
 
 - Select **Reject Request** to decline the request. The request is archived and publisher, item and asset aren't created.
 - Select **Complete Request** to approve. Upon approval, Publisher, Item and Assets be created. The request is archived to **Inactive** status.
 
-
-## Review Install history
+## Review install history
 
 In the **Deployment History** section of the navigation pane, select **Install History** to view a list of installations that were requested from the catalog.
 
@@ -72,7 +68,7 @@ This list has two views:
 - **Active Install Histories** (Default)
 - **Inactive Install Histories**
 
-## Review Catalog Items
+## Review catalog items
 
 In the **Catalog** section of the navigation pane, select **Catalog Items** to view a list of catalog items that are available in the catalog
 
@@ -86,7 +82,6 @@ This list has five views:
 
 These views show the following columns:
 
-
 |Column|Description|
 |---------|---------|
 |**Name (Publishers)** |Name of the publisher|
@@ -99,7 +94,7 @@ These views show the following columns:
 
 You can also view this data using the [pac catalog list](cli/reference/catalog.md#pac-catalog-list) command. More information: [View items in the catalog](submit-catalog-items.md#view-items-in-the-catalog)
 
-### Review Catalog publishers
+### Review catalog publishers
 
 In the **Catalog** section of the navigation pane, select **Catalog Publishers** to view a list of publishers associated to catalog items.
 
@@ -107,7 +102,6 @@ This list has two views:
 
 - **Active Publishers**
 - **Inactive Publishers**
-
 
 Catalog publishers have the following default columns:
 
@@ -118,8 +112,6 @@ Catalog publishers have the following default columns:
 |**Description**|A description of the publisher|
 |**Status Reason**|Reason for the status of the Publisher<br />Choices:<br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br />|
 |**Allow Auto-Approval**|By enabling auto approval at the Publisher level, future submissions from this publisher are auto approved. Admins can use this strategy in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto approval can be turned on globally across all publishers here. More information: [Enable Auto Approval](catalog.md#enable-auto-approval)
-
-
 
 ### Review packages and solutions of items in catalog
 
@@ -138,7 +130,6 @@ This list 8 views:
 
 The following table describes selected fields that can be included in the form:
 
-
 The following information is available about the **Package**:
 
 |Field |Description|
@@ -156,14 +147,13 @@ The following information is available about the **Package**:
 |**Modified By**|Modified By User|
 |**Created On**|Date created|
 
-#### Package and Content information
+#### Package and content information
 
 |Field |Description|
 |---------|---------|
 |**Package File**|Package Deployer package file comprised of catalog item contents|
 |**Package Manifest File**|Package Manifest file (.json)|
 |**Contained Solutions and Components**|This information is for reference only and being revised. A planned update will enable a streamlined view of this data|
-
 
 ## Review errors in submission requests
 
@@ -174,12 +164,11 @@ In the **Approvals** section of the navigation pane, select **Failed Pre-Validat
 
    :::image type="content" source="media/failed-pre-validation-exception-ui.png" alt-text="The exception in the notes of the Timeline card.":::
 
-
 After fixing the submission, trigger the submit again from PAC CLI. You see a new request that can be approved.
 
 ## Review errors in install requests
 
-In the **Deployment History** section of the navigation pane, select **Install History** to view a list of errors associated to an install. 
+In the **Deployment History** section of the navigation pane, select **Install History** to view a list of errors associated to an install.
 
 Select on the failed request name to get more information.
 

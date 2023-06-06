@@ -5,7 +5,7 @@ author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.custom: intro-internal
+ms.collection: get-started
 ms.date: 11/14/2022
 ms.subservice: admin
 ms.author: jimholtz

@@ -139,7 +139,11 @@
             - name: Set up app quarantine components
               href: coe/setup-quarantine-components.md
             - name: Collect audit log data
-              href: coe/setup-auditlog.md
+              items:
+                  - name: Using an HTTP call (recommended)
+                    href: coe/setup-auditlog-http.md
+                  - name: Using a custom connector (deprecated)
+                    href: coe/setup-auditlog.md
             - name: Set up Power BI reports
               href: coe/setup-powerbi.md
             - name: Set up nurture components

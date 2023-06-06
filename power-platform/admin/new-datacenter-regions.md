@@ -4,7 +4,7 @@ description: "Provides information about Power Platform and Dynamics 365 apps ho
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.custom: intro-internal
+ms.collection: get-started
 ms.date: 05/19/2022
 ms.subservice: admin
 ms.author: jimholtz

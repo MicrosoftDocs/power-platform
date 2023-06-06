@@ -1,19 +1,22 @@
 ---
-title: "Center of Excellence (CoE) command line interface (CLI) upgrade"
+title: "Center of Excellence (CoE) command line interface (CLI) upgrade (Deprecated)"
 description: "Upgrade instructions for the Center of Excellence command line interface"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/23/2023
 
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
-# Center of Excellence (CoE) command line interface (CLI) upgrade
+# Center of Excellence (CoE) command line interface (CLI) upgrade (Deprecated)
+
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 Upgrade will depend on how you installed the CoE CLI.
 
