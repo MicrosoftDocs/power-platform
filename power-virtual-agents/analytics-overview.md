@@ -56,8 +56,7 @@ The following terms are used in this section.
 
 > [!Note]
 > Conversation transcripts in Dataverse are available approximately 6 hours after the analytic session
-starts.
-
+_starts_.
 
 > [!NOTE]
 > Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. In the meantime, you can use a [custom analytics solution to create a Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get analytics in these plans.
