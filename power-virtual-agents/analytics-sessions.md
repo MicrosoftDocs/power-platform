@@ -15,16 +15,11 @@ ms.collection: virtual-agent
 
 # Analyze session information in Power Virtual Agents
 
-By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
+By default, you can download up to seven days of bot chat transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
 
-You can also download and view chat transcripts in the Power Apps portal.
+You can also download and view conversation transcripts in the Power Apps portal.
 
 See [Work with conversation transcripts](analytics-sessions-transcripts.md) for more details and tips.
-
-Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
-
-> [!NOTE]
-> If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Microsoft Power Platform admin center.
 
 ## Prerequisites
 
@@ -95,7 +90,3 @@ The downloaded file contains the following information:
 
 > [!NOTE]
 > The download will start when you select the time period. It will be downloaded into your default browser download's location.
-
-### Change the default period of session transcript retention
-
-By default, a pre-configured bulk delete job will remove all conversation transcripts older than 30 days. Use the following instructions to [change the default period of session transcript retention](analytics-sessions-transcripts.md#change-the-default-period-of-session-transcript-retention).
