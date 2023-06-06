@@ -19,11 +19,11 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About solution templates for Power Platform
+  - title: Solution templates for Power Platform
     linkLists:
       - linkListType: overview
         links:
-          - text: Solution templates for Power Platform
+          - text: Solution templates overview
             url: overview.md
           - text: Finance - SAP Procurement
             url: finance/sap-procurement/overview.md
