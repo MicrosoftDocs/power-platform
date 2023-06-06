@@ -8,8 +8,6 @@ ms.custom: ""
 ms.date: 02/28/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
-search.audienceType: 
-  - maker
 ---
 # Overview of pipelines in Power Platform
 
@@ -51,7 +49,7 @@ Once pipelines are in place, makers can initiate in-product deployments with a f
   - This helps ensure applications and automation are deployed without needing manual post-processing steps, and are connected to the appropriate data sources within each environment.
   - Admins can even preconfigure certain connections that will be used.
 
-## Developers can use the same pipelines
+## Developers can use and extend pipelines
 
 Professional developers are more productive with pipelines now handling the complex background operations. Developers can tell the system what they want to accomplish instead of executing the various underlying tasks necessary to accomplish the same goal. Using the Power Platform CLI, developers can:
 
@@ -59,6 +57,8 @@ Professional developers are more productive with pipelines now handling the comp
 - Deploy a solution with a single command:
   - With pipelines, developers simply provide the required parameters and the system orchestrates all the end-to-end deployment operations in compliance with the organizational policies.
   - No need to connect to multiple environments, export solutions, download solution files, manually create connections and populate deployment settings files, import solutions, or handle various other tasks that were required previously.
+
+Additionally, developers can [extend pipelines](extend-pipelines.md).
 
 ## Frequently asked questions
 
@@ -70,6 +70,9 @@ Pipelines deploy solutions as well as configuration for the target environment s
    >
    > Power BI Dashboards (preview) and Power BI Datasets (preview) are not currently supported in pipelines. 
    >
+
+### Can customization bypass a deployment stage such as QA? 
+Solutions are exported when a deployment request is submitted (when the maker selects **Deploy** from within their development environment), and the same solution artifact will be deployed. Similarly, the system doesn't re-export a solution for deployments to subsequent stages in a pipeline. The same solution artifact must pass through pipeline stages in sequential order. The system also prevents any tampering or modification to the exported solution artifact. This ensures customization can't bypass QA environments or your approval processes.
 
 ### Are standalone licenses required to use pipelines?
 

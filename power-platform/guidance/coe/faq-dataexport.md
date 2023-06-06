@@ -5,7 +5,7 @@ author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2023
+ms.date: 05/23/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -70,6 +70,10 @@ Yes, migrating from cloud flows to Data Export will be a seamless process. Use t
 The CoE Starter Kit's inventory is based on unique identifiers (GUIDs). App, flow, and environment metadata is stored in Dataverse tables, and each app, flow, and environment has a unique identifier that is used as the key to the row in the table. This GUID is the same if the inventory is retrieved with cloud flows, and if the inventory is retrieved with Data Export. 
 
 If you switch from using cloud flows to using Data Export, the dataflows recognize existing rows via their GUID, and update those rows and add new records if the GUID doesn't yet exist. There won't be a duplication of rows.
+
+## Will I still need to install the Audit Log solution to get app usage?
+
+No, the Data Export contains app and flow usage information. The Audit Log solution setup is no longer required, if you are using Data Export as a mechanism to retrieve inventory and telemetry.
 
 ## What will happen to custom columns that I've created as part of customizations, if they aren't part of data from datalake?
 

@@ -19,19 +19,19 @@ You can audit security roles to better understand changes made to security roles
 > [!Important]
 > [!include [preview](../includes/cc-preview-features-definition.md)]
 > 
-> This capability is in process of rolling out, and may not be available in your region yet.
+> This capability is in the process of rolling out, and may not be available in your region yet.
 
 ## Configure auditing for an environment
 
 1. Go to the Power Platform admin center and sign in using administrator credentials. 
-2. Follow the instructions in [Configure auditing for an enviornment](manage-dataverse-auditing.md#configure-auditing-for-an-environment) to turn on auditing for your environment.
+2. Follow the instructions in [Configure auditing for an environment](manage-dataverse-auditing.md#configure-auditing-for-an-environment) to turn on auditing for your environment.
 
 ## Configure auditing for security roles
 
 1. Go to the Power Platform admin center and sign in using administrator credentials.  
 2. Select **Environments** > [select an environment] > **Settings** > **Audit and logs** > **Entity and field audit settings**.
 3. In the left pane, under **Entities** select **Security Role**. 
-4. On the **Gerneral** tab, under the **Data Services** area, select **Auditing**. 
+4. On the **General** tab, under the **Data Services** area, select **Auditing**. 
 5. Select the **Save** icon in the toolbar.
 
 ## Change a security role

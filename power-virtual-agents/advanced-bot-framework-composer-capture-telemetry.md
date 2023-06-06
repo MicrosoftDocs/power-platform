@@ -86,7 +86,7 @@ The following example shows all custom events, excluding those captured through 
 ```
 customEvents
 | extend isDesignMode = customDimensions['designMode']
-| where isDesignMode != "False"
+| where isDesignMode == "False"
 ```
 ### Custom Dimensions
 
