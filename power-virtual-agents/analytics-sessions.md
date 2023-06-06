@@ -109,4 +109,4 @@ To keep the transcripts for longer, you need to disable the existing system job 
 
 ### Change the default period of session transcript retention
 
-By default, a pre-configured bulk delete job will remove all conversation transcripts older than 30 days. Use the following instructions to [change the default period of session transcript retention](analytics-transcripts-sessions.md#change-the-default-period-of-session-transcript-retention).
+By default, a pre-configured bulk delete job will remove all conversation transcripts older than 30 days. Use the following instructions to [change the default period of session transcript retention](analytics-sessions-transcripts.md#change-the-default-period-of-session-transcript-retention).
