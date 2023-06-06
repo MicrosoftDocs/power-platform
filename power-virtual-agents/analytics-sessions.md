@@ -96,17 +96,6 @@ The downloaded file contains the following information:
 > [!NOTE]
 > The download will start when you select the time period. It will be downloaded into your default browser download's location.
 
-
-### Change the default period of session transcript retention
-
-By default, a pre-configured bulk delete job will remove all conversation transcripts older than 30 days.
-
-To keep the transcripts for longer, you need to disable the existing system job and create a new job.
-> Sessions may be grouped into multiple date ranges for download when the selected time window does not include the most recent day or when there are more than 2,500 sessions.
-
-> [!NOTE]
-> You need to have sufficient permissions to download sessions. If you're using the Power Virtual Agents app in _Teams_, you need to be the **Team Owner**.
-
 ### Change the default period of session transcript retention
 
 By default, a pre-configured bulk delete job will remove all conversation transcripts older than 30 days. Use the following instructions to [change the default period of session transcript retention](analytics-sessions-transcripts.md#change-the-default-period-of-session-transcript-retention).
