@@ -49,11 +49,9 @@ In the navigation menu, select **Chatbots** to open the **Chatbots** page and vi
 
 2. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts are currently not supported.
 
-3. When you first sign up, a default [Power Apps environment](environments-first-run-experience.md) is made for you. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment, select a different environment from the environment picker.
+3. When you first sign up, a default [Power Apps environment](environments-first-run-experience.md) is made for you. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment, select a different environment from the environment picker. <!--- IMAGE NEEDS UPDATE --->
 
     :::image type="content" source="media/fundamentals-get-started/environment-picker.png" alt-text="Screenshot of the environment picker.":::
-    
-<!--- IMAGE NEEDS UPDATE --->
 
     > [!NOTE]
     > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) article, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
