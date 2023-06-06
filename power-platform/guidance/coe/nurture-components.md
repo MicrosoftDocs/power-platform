@@ -13,7 +13,7 @@ search.audienceType:
 ---
 # Use nurture components
 
-An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You'll want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.   More information: [Set up nurture components](setup-nurture-components.md) and [watch the video](https://www.youtube.com/embed/StqxBgbt_ZM) on how to use the core components solution.
+An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.   More information: [Set up nurture components](setup-nurture-components.md) and [watch the video](https://www.youtube.com/embed/StqxBgbt_ZM) on how to use the core components solution.
 
 The CoE nurture components solution contains assets relevant to everyone in the organization: admins, makers, in addition to users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md)
 
@@ -25,7 +25,7 @@ The CoE nurture components solution contains assets relevant to everyone in the 
 |------|--------------|
 | Community hub content | Represents video content that is available in the video hub canvas app, or the Video hub - admin model driven app. |
 | Community hub comment | Represents comments that video hub users have made.  The 'comment status' column controls which comments are approved and viewable in the video hub canvas app. |
-| Playlist | Represents a playlist.  Playlists are curated lists of video content for a specific group or requirement, for example: community meeting recordings. The playlist type column currently defines two types of playlist: shared, or private. Shared playlists are viewable to all users, whereas private playlists will be available to the playlist creator (in development). |
+| Playlist | Represents a playlist.  Playlists are curated lists of video content for a specific group or requirement, for example: community meeting recordings. The playlist type column currently defines two types of playlist: shared, or private. Shared playlists are viewable to all users, whereas private playlists are available to the playlist creator (in development). |
 | Playlist item | Represents the relationship between a playlist and community hub content (video). |
 | Champion profile | Represents a champion in your organization. A champion profile is displayed on the start screen of the video hub canvas app. |
 
@@ -138,7 +138,7 @@ A page inside the Nurture apps - Admin app that the Solution Assessment admin us
 >In the February 2023 release, the **Maker Assessment** canvas app has been replaced with the Nurture apps - Maker model-driven app. The new app uses model-driven app features and custom pages. The Maker Assessment canvas app has been renamed to [deprecated] Maker Assessment and will be removed from the solution by June 2023.
 >The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
-The Solution Assessment page can be used to ask users a series of questions regarding the target audience, data and support of the solution they are planning and informing them about governance, support and license considerations a maker needs to keep in mind before starting the development of their solution.
+The Solution Assessment page can be used to ask users a series of questions regarding the target audience, data and support of the solution they're planning and informing them about governance, support and license considerations a maker needs to keep in mind before starting the development of their solution.
 
 **Permission**: The Nurture apps - Maker can be shared with the entire organization.
 
