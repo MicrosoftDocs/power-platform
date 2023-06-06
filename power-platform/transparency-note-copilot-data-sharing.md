@@ -60,9 +60,7 @@ All data is handled as per the Copilot data security and privacy guidelines expl
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 
-
-
-[Describe the operational factors and ranges within which the system is expected to perform reliably and safely. List the choices that end users can make (e.g., customization, settings, etc.), with a description of how those choices may impact system behavior in the real world.]
+Your data can only be accessed by Mocrosoft personnel using JIT access via SAW machines. Your data is stored in your geographic data boundaries with a 30-day retention policy.
 
 ### Related content
 
