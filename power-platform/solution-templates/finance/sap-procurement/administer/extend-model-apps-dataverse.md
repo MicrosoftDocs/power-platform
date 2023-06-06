@@ -47,7 +47,7 @@ All SAP transactional data is sourced from your SAP system and not stored in Pow
 | Table | Description |
 | ----- | ----------- |
 | SAP Solution Administrator Menu Item | Stores the list of menu items seen and used in the SAP process Power Apps. |
-| SAP Solution Administrator List of Value |  |
+| SAP Solution Administrator List of Value | Provides description of what the list of value represents. |
 | SAP Solution Administrator Localization | Stores a list of localized strings that can be displayed according to the user's locale in the SAP process Power Apps.  |
 | SAP Solution Administrator Errors | Captures unexpected exceptions within any of the canvas apps or cloud flows |
 | SAP Solution Administrator Search History | Stores all search history for a user within anyone of the canvas Power Apps across the various SAP objects and has a view that defaults the return results to 14 days of search history. |

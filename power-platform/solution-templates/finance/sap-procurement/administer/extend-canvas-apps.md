@@ -36,7 +36,7 @@ All apps are developed using published best practices and standards. We recommen
 | Standard | Comments | More information |
 | -------- | -------- | ---------------- |
 | Feature Status | Features that are either turned on or off by default. Includes a subset of preview features except experimental features. | [Understand experimental, preview, and retired features in canvas apps](/power-apps/maker/canvas-apps/working-with-experimental-preview) |
-| Responsiveness | Responsive to single device type such as tablet or mobile. Allows the app to snap to various standard screen and container sizes including embedding the apps within Microsoft Teams. Uses autolayout responsive container controls extensively. | [Building responsive canvas apps](/power-apps/maker/canvas-apps/build-responsive-apps)
+| Responsiveness | Responsive to single device type such as tablet or mobile. Allows the app to snap to various standard screen and container sizes including embedding the apps within Microsoft Teams. Uses auto-layout responsive container controls extensively. | [Building responsive canvas apps](/power-apps/maker/canvas-apps/build-responsive-apps)
 | Naming & Coding Standards | Controls, variables, collections, and Dataverse naming standards are followed to promote ease of discovery and maintenance. | [Power Apps Canvas App Coding Standards and Guidelines](https://powerapps.microsoft.com/blog/powerapps-canvas-app-coding-standards-and-guidelines)
 | Accessibility | Properties that support accessibility. For example, Accessible Labels, Roles, Live, Focus Border Thickness, Color Contrast, and Tab Orders. These properties avoid known design patterns that don't support accessibility requirements. | [Create accessible canvas apps](/power-apps/maker/canvas-apps/accessible-apps) and [Accessibility limitations in canvas apps](/power-apps/maker/canvas-apps/accessible-apps-limitations) |
 | Performance | Best practices are followed avoiding known performance limitations. | [Tips and best practices to improve performance of canvas apps](/power-apps/maker/canvas-apps/performance-tips)
@@ -193,16 +193,16 @@ For example, the _VendorSearch_ component is used across all the apps that suppo
 > [!WARNING]
 > A negative consequence of using local app components versus component libraries is that if a change is determined, those changes need to be made across all the apps that have already imported that component.
 
-This table lists the common components that are used throughout the apps.
+Common components used throughout the apps:
 
-| Component | Description | Screenshot Example |
-| --------- | ----------- | ------------------ |
-| ScreenHeader | Common header across every screen | ![Screen header component](https://github.com/MicrosoftDocs/powerapps-docs-pr/assets/123208262/b8cdfd92-fdc1-4c9f-b9ae-d9cf66673358) |
-| LeftNavigation | Main navigation that allows quick access to other apps driven by Menu Item Dataverse source | ![Main menu left navigation](https://github.com/MicrosoftDocs/powerapps-docs-pr/assets/123208262/9fcad2f0-d2fb-4421-8450-51ade5384c23) |
-| CommandBar | List of common controls to create, change, save, cancel, search, recent search or advance search objects | ![Command bar](https://github.com/MicrosoftDocs/powerapps-docs-pr/assets/123208262/274edf6d-cbd3-4669-bfd1-e254db159682) |
-| ScreenTabs | Used to group "tabs" and logic to navigate across screens that the tabs point to | ![Screen tabs](https://github.com/MicrosoftDocs/powerapps-docs-pr/assets/123208262/6193bc33-472d-47f2-9b50-b814f486b2e8) |
-| NoItemsDisplay | Shown in grids when no records are present | ![No items](https://github.com/MicrosoftDocs/powerapps-docs-pr/assets/123208262/551b6f39-c631-4963-ad9f-8af3b3174e60) |
-| ObjectNameSearch | Included within the appropriate app where used, common SAP object search components can be imported into other apps if needed. Examples include VendorSearch, GLAccountSearch, MaterialSearch, RequisitionSearch. | ![Object component search](https://github.com/MicrosoftDocs/powerapps-docs-pr/assets/123208262/b8182fbb-7cc0-4624-b9db-57e157d0eb82) |
+| Component        | Description                                                                                                                                                                                                          |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ScreenHeader     | Common header across every screen                                                                                                                                                                                    |
+| LeftNavigation   | Main navigation that allows quick access to other apps driven by _Menu Item Dataverse_ source                                                                                                                        |
+| CommandBar       | List of common controls to _create_, _change_, _save_, _cancel_, _search_, _recent search_, or _advance search_ objects                                                                                                            |
+| ScreenTabs       |  Groups of logical components arranged together into tabs for easy navigation                                                                                               |
+| NoItemsDisplay   | Items are shown in grids when no records are present                                                                                                                                                                           |
+| ObjectNameSearch | Common SAP object search components are included in the appropriate app where used and can be imported into other apps if needed. Examples include _VendorSearch_, _GLAccountSearch_, _MaterialSearch_, and _RequisitionSearch_ |
 
 More information: [Canvas component overview](/power-apps/maker/canvas-apps/create-component)  
 
