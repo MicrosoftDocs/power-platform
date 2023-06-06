@@ -121,7 +121,7 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 
 :::image type="content" source="media/apply-seed-data/export-sap-localizations.png" alt-text=" Export SAP string localizations to Excel.":::
 
-1. Create/update rows with the following attributes
+1. Create or update rows with the following attributes:
 
 | Field | Examples| Description |
 | ----------- | ----------- | ----------- |
@@ -134,9 +134,10 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 > List of Values localizations are not impacted by these strings due to how combo box items behave much differently than standard strings. Refer to the _List of values_ section to administrate localized drop down values.
 
 > [!TIP]
-> A [.CSV file available on GitHub](https://aka.ms/SAPProcurementLocalizationStrings) contains all the app default English strings and can be imported into your environment using the [Import data](/power-apps/user/import-data) capability that is part of the SAP Administrator app. Although not required for English-only deployments, importing this file will help you quickly identify the localization strings that you need to prepare for your required language.
+> A [**.CSV file available on GitHub**](https://aka.ms/SAPProcurementLocalizationStrings) contains all the app default English strings. You can import the .CSV file into your environment using the [_**Import data**_](/power-apps/user/import-data) capability that is part of the SAP Administrator app. Although not required for English-only deployments, importing this file helps you quickly identify the localization strings that you need to prepare for your required language.
 >
-> To further help accelerate the string localization creation process, create a cloud flow to trigger off of Dataverse English imported localization records selected in the SAP Administrator app. This flow can use _AI Builder_ action steps to automatically translate the English records to your target language and directly load them into the _SAP Localizations_ table.
+> To further accelerate the string localization creation process, create a cloud flow to trigger off of Dataverse English imported localization records selected in the SAP Administrator app. This flow can use _AI Builder_ action steps to automatically translate the English records to your target language and directly load them into the _SAP Localizations_ table.
+>
 > More information: [Use text translation pre-built model in Power Automate](/ai-builder/flow-text-translation)
 
 ## Next steps

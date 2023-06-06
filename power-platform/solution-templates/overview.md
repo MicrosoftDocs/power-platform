@@ -56,4 +56,4 @@ Learn more about the current template offerings on AppSource. Be sure to check b
 
 ## Support
 
-To get support related to solution templates for Power Platform, you can reach out to: <https://aka.ms/PowerPlatformTemplateSupport>.
+You can log your questions and get support for the solution templates at <https://aka.ms/PowerPlatformTemplateSupport>.

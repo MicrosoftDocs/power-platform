@@ -9,7 +9,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# Install the Employee Kudos template
+# Install the Employee Kudos template (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -31,12 +31,15 @@ If you want to create the connections in advance, go to _Connections_, and selec
 
 Import the Kudos solution template into the environment.
 
-1. Go to the Kudos solution template in AppSource and select **Get it now**.
-1. Select the environment that you want to install into.
-    :::image type="content" source="media/install/AppSource2.png" alt-text="Select environment":::
+1. Go to the [Kudos solution template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
+1. Select the environment that you want to install the solution template into.
+    :::image type="content" source="media/install/appsource-install-template.png" alt-text="Select environment":::
 1. Agree to the Terms and Privacy Statements by checking the boxes.
 1. Select **install**. You'll be taken to a screen where you can view the installation status.
 After the installation is complete, the status shows as _Installed_.
+
+> [!TIP]
+> You can log your questions and get support for the SAP Procurement solution template at the [**Templates-for-Power-Platform**](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
 ## Step 3: Create an access team
 

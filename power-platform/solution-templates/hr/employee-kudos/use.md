@@ -9,7 +9,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# Get started using the Employee Kudos app
+# Get started using the Employee Kudos app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
