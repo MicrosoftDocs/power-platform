@@ -7,12 +7,12 @@ contributors:
   - EllenWehrle
   - microsoft-george
   - robinsonshields
-  - thoverh
+  - tverhasselt
   - ryanb58
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 05/02/2023
+ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
@@ -24,31 +24,41 @@ The SAP Requisition Management app allows you to do several functions in SAP qui
 
 :::image type="content" source="media/requisition-management/sap-req-app.png" alt-text="Image of the Power Platform Procurement requisition app":::
 
-## View a requisition
+## View requisition data
 
-There are three options for viewing a requisition. You can select a recent requisition that you have interacted with, if you know the requisition number you can type that in, or you can search for a requisition based on vendor and date range.
+There are three options for viewing a requisition.
 
-## Select a recent requisition
+- You can select a recent requisition that you have interacted with.
+- You can type in the requisition number, if you know it.
+- You can search for a requisition based on vendor and date range.
+
+### Select a recent requisition
 
 From the _Select recent requisition_ drop-down list, you can see a list of previous requisitions that you have interacted with. You can choose one from the list, and it loads the data for that requisition.
 
-## Search for requisition
+### Search for requisition
 
-If you haven't interacted with the Requisition, and you don't know the exact number, you can search for a Requisition. Select the funnel icon, shown below in the red box.
+If you haven't interacted with the requisition, and you don't know the exact number, you can search for a requisition.
 
-This opens the requisition search screen. Here you can search by any individual field or a combination of _Requisition Number_, _Vendor_, and _Date Range_. After entering your desired selection criteria, select **Search** and your results will be displayed. Select the requisition you would like to see, and it will be displayed on the requisition overview screen.
+1. Select the **funnel icon**, to open the requisition search screen. On the screen, you can search by any individual field or a combination of _Requisition Number_, _Vendor_, and _Date Range_.
+:::image type="content" source="media/requisition-management/req-search.png" alt-text="Search for a requisition screen.":::
+1. Enter your selection criteria in the fields.
+1. Select **Search** and your results will be displayed.
+1. Select the requisition you would like to see, and it will be displayed on the requisition overview screen.
 
-## Enter a requisition number
+### Enter a requisition number
 
 If you know the requisition number of the document you want to view, you can type it in the _Search requisition number_ field.
 
 ## Create a requisition
 
+You can create a new requisition:
+
 1. Select **Create**.
 
 1. Enter a vendor number.
 
-1. Select on the arrow pointing to the right-side of the screen, next to the vendor number, and the Vendor name appear.
+1. Select on the arrow pointing to the right-side of the screen, next to the vendor number, and the vendor name appears.
 
 1. Select the appropriate Purchasing Organization from the drop-down list.
 
@@ -68,7 +78,7 @@ If you know the requisition number of the document you want to view, you can typ
 
 1. Search by _material number_, _description_, _material type_ or _location_ (_plant_). Select on the **material number**. As an example, pick _PRODUCT2_ and it populates that data into the new requisition item detail screen.
 
-1. Now we need to enter the quantity and the unit price. The _Unit_ field was prepopulated when we selected this material from the _Material Search_.
+1. Now we need to enter the quantity and the unit price. The _Unit_ field was pre-populated when we selected this material from the _Material Search_.
 
 1. View the total automatically calculated based on the quantity multiplied by the unit price.
 

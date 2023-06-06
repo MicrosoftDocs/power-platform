@@ -4,11 +4,11 @@ description: Learn how Microsoft solution templates for Power Platform empower y
 author: kaagar
 ms.author: kaagar
 contributors: 
-- thoverh
+- tverhasselt
 - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 06/05/2023
+ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 

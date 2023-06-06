@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 05/30/2023
+ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
@@ -17,7 +17,7 @@ Kudos allows employees to recognize others for attributes or actions they are gr
 
 The Kudos AppSource package consists of two solutions:
 
-- **Employee Experience base solution** Contains common foundational components that all HR solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+- **Employee Experience base solution** Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
 - **Kudos solution** Contains all the components needed to enable the Kudos experience in a company.
 
 You can access the solution templates on AppSource at: <https://aka.ms/DownloadEmployeeKudosTemplate>

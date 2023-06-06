@@ -7,12 +7,12 @@ contributors:
   - EllenWehrle
   - microsoft-george
   - robinsonshields
-  - thoverh
+  - tverhasselt
   - ryanb58
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: concept
-ms.date: 05/02/2023
+ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
@@ -24,7 +24,7 @@ The SAP Purchase Order Management app allows you to do several functions in SAP 
 
 :::image type="content" source="media/purchase-order-management/sap-po-app.png" alt-text="Image of the Power Platform Procurement purchase order app.":::
 
-## View a purchase order
+## View purchase order data
 
 There are three options for viewing a purchase order.
 
@@ -32,25 +32,27 @@ There are three options for viewing a purchase order.
 - You can type in the PO order number, if you know it.
 - You can search for a purchase order based on vendor and date range.
 
-## Select a recent purchase order
+### Select a recent purchase order
 
 From the _Select recent purchase order_ drop down list, you can see a list of previous orders that you have interacted with. You can choose one from the list, and it will load the PO data.
 
-## Search for purchase order
+### Search for purchase order
 
 If you have not interacted with the PO, and you don't know the exact number, you can search for it.
 
-1. Select the **funnel icon** to open the purchase order screen. On the screen, you can search by any individual field or a combination of _Purchase Order Number_, _Vendor_, and _Date Range_.
+1. Select the **funnel icon** to open the purchase order search screen. On the screen, you can search by any individual field or a combination of _Purchase Order Number_, _Vendor_, and _Date Range_.
 :::image type="content" source="media/purchase-order-management/search-po.png" alt-text="Search for a purchase order screen.":::
-
 1. Enter your selection criteria in the fields.
-1. Select **Search** and your results will be displayed. 1. Select the _PO_ you would like to see, and it will be displayed on the overview screen.
+1. Select **Search** and your results will be displayed.
+1. Select the _PO_ you would like to see, and it will be displayed on the overview screen.
 
 ## Enter a purchase order number
 
 If you know the number of the PO you want to view, you can type it in the _Search purchase order number_ field.
 
 ## Create a purchase order
+
+You can create a new purchase order:
 
 1. Select **Create**.
 1. Enter a vendor number.
