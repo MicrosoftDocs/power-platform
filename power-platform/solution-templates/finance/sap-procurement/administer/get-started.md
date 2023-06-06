@@ -57,7 +57,7 @@ Work with your SAP functional analyst, business subject matter expert and Power 
 | ----------- | ----------- |
 | [Customize your solutions](customize-solutions.md) | Start your local configurations by adding desired components from the SAP Procurement solution template to an unmanaged solution in your development environment |
 | [Extend canvas apps](extend-canvas-apps.md) | Add new SAP fields, apply custom themes, localize and connect your SAP data with additional sources and processes|
-| [Extend model driven app and Dataverse tables](extend-model-apps-and-dataverse.md) | Create additional tables, columns, security roles to help drive and persist newly digitized data that is currently not mastered and extend the administrator experience |
+| [Extend model driven app and Dataverse tables](extend-model-apps-dataverse.md) | Create additional tables, columns, security roles to help drive and persist newly digitized data that is currently not mastered and extend the administrator experience |
 | [Extend cloud flows](extend-cloud-flows.md) | Map new SAP fields and connect into additional processes and workflows|
 
 ## Next steps

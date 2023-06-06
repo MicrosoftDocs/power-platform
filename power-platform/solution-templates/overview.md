@@ -51,8 +51,8 @@ Learn more about the current template offerings on AppSource. Be sure to check b
 
 | Line of business | Organization function | Learn documentation                                                                                                         |  Download                                     |
 |------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| **Finance**          | SAP Procurement       | [SAP Procurement](/powerapps-docs/sample-apps/solution-templates-power-platform/finance-sap-procurement/overview.md) | <https://aka.ms/DownloadSAPProcurementTemplate> |
-| **Human resources**  | Employee Kudos        | [Employee Kudos](/powerapps-docs/sample-apps/solution-templates-power-platform/hr-employee-kudos/overview.md)        | <https://aka.ms/DownloadEmployeeKudosTemplate>  |
+| **Finance**          | SAP Procurement       | [SAP Procurement](finance/sap-procurementoverview.md) | <https://aka.ms/DownloadSAPProcurementTemplate> |
+| **Human resources**  | Employee Kudos        | [Employee Kudos](hr/employee-kudos/overview.md)        | <https://aka.ms/DownloadEmployeeKudosTemplate>  |
 
 ## Support
 

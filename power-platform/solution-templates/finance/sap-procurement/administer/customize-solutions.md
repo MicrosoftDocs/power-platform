@@ -48,7 +48,7 @@ More information:
 ## Next steps
 
 - [Extend canvas apps](extend-canvas-apps.md)
-- [Extend model-driven apps and Dataverse](extend-model-apps-and-dataverse.md)
+- [Extend model-driven apps and Dataverse](extend-model-apps-dataverse.md)
 - [Extend cloud flows](extend-cloud-flows.md)
 
 ### See also

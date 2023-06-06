@@ -130,7 +130,7 @@ These errors can be seen in the _SAP Administrator_ app as described in the[Moni
 
 ## Next step
 
-- [Extend model-driven apps and Dataverse](extend-model-apps-and-dataverse.md)
+- [Extend model-driven apps and Dataverse](extend-model-apps-dataverse.md)
 
 ### See also
 

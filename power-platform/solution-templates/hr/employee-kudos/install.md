@@ -157,7 +157,7 @@ Open the newly installed _Kudos solution template_ and verify that the four clou
 
 Sample data along with installation instructions are available on GitHub at this link: [Kudos Sample Data](https://aka.ms/KudosSampleData).
 
-To create your own badges, refer to [Create Custom Badges](use-kudos-app.md#create-custom-kudos-types).
+To create your own badges, refer to [Create Custom Badges](use.md#create-custom-kudos-types).
 
 ## Step 9: Share the App
 

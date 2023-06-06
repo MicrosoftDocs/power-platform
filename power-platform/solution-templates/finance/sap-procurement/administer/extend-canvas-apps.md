@@ -267,7 +267,7 @@ More information: [OnError property](/power-platform/power-fx/reference/object-a
 
 ## Next steps
 
-- [Extend model-driven apps and Dataverse](extend-model-apps-and-dataverse.md)
+- [Extend model-driven apps and Dataverse](extend-model-apps-dataverse.md)
 - [Extend cloud flows](extend-cloud-flows.md)
 
 ### See also

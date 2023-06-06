@@ -62,7 +62,7 @@ landingContent:
           - text: Install
             url: hr/employee-kudos/install.md
           - text: Use the Kudos app
-            url: hr/employee-kudos/use-kudos-app.md  
+            url: hr/employee-kudos/use.md  
   
   # Card
   - title: Related docs
