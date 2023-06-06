@@ -4,14 +4,6 @@
   items:
   - name: Overview
     href: finance/sap-procurement/overview.md
-  - name: Use
-    items:
-    - name: Vendor management
-      href: finance/sap-procurement/use/vendor-management.md
-    - name: Requisition management
-      href: finance/sap-procurement/use/requisition-management.md
-    - name: Purchase orders management
-      href: finance/sap-procurement/use/purchase-order-management.md
   - name: Administer
     items:
     - name: Get started
@@ -44,6 +36,14 @@
       href: finance/sap-procurement/administer/extend-model-apps-dataverse.md
     - name: Extend cloud flows
       href: finance/sap-procurement/administer/extend-cloud-flows.md
+  - name: Use
+    items:
+    - name: Vendor management
+      href: finance/sap-procurement/use/vendor-management.md
+    - name: Requisition management
+      href: finance/sap-procurement/use/requisition-management.md
+    - name: Purchase orders management
+      href: finance/sap-procurement/use/purchase-order-management.md
   - name: FAQs
     href: finance/sap-procurement/faqs.md
 - name: Human Resources - Employee Kudos
@@ -54,3 +54,9 @@
     href: hr/employee-kudos/install.md
   - name: Use
     href: hr/employee-kudos/use.md  
+- name: Related content
+  items:
+  - name: Power Apps documentation
+    href: /power-apps/
+  - name: Power Automate documentation
+    href: /power-automate/
