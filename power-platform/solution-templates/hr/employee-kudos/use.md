@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 05/30/2023
+ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
@@ -37,7 +37,7 @@ If a user doesn't wish to be a part of the program, they can be added to the opt
 
 ## Localize application strings
 
-All of the strings in the Kudos app can be localized to support the diverse set of languages that may be spoken in your company. The app contains default strings for all text, but checks to see if there's a localized version in the *Employee Experience Localization* table that comes as part of the Employee Experience base solution that gets installed with the Kudos Solution when installed from AppSource.
+All of the strings in the Kudos app can be localized to support the diverse set of languages that may be spoken in your company. The app contains default strings for all text, but checks to see if there's a localized version in the *Employee Experience Localization* table. The table is included in the Employee Experience base solution that gets installed alongside the Kudos solution. The Employee Experience base solution and the Kudos solution are accessed together from AppSource.
 
 The [*Kudos Localization Data Import*](http://aka/ms/KudosLocalization) instructions guide you through importing all of the English localization strings into the *Employee Experience Localization* table. You'll also get a full list of English values that you can then use as a reference to do your localization into other languages.
 
