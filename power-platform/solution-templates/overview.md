@@ -16,9 +16,9 @@ ms.custom: bap-template
 
 [This article is prerelease documentation and is subject to change.]
 
-Solution templates for Power Platform are solutions built on [Microsoft Power Platform](/power-platform/). The templates are designed drive productivity and operational efficiencies within specific lines of business or enterprise-wide. Aligned to specific use cases and outcomes, they accelerate time to value by digitizing new processes or extending upon existing major technology investments such as an enterprise resource planning (ERP), customer relationship management (CRM), or human capital management (HCM) systems.
+Solution templates for Power Platform are solutions built on [Microsoft Power Platform](/power-platform/). The solution templates are designed to drive productivity and operational efficiencies within specific lines of business or enterprise-wide. Aligned to specific use cases and outcomes, they accelerate time to value by digitizing new processes or extending upon existing major technology investments, such as an enterprise resource planning (ERP), customer relationship management (CRM), or human resource (HR) systems.
 
-Power Platform solution templates require premium licensing and are designed to be installed and extended upon locally by a centralized team. You can organize an internal information technology (IT) and  business operations team or select an external partner team to implement the Power Platform template solution project.
+Power Platform solution templates require premium licensing and are built for centralized teams to install and extend upon locally. You can organize an internal information technology (IT) and  business operations team or select an external partner team to implement the Power Platform template solution project.
 
 > [!IMPORTANT]
 >
@@ -27,9 +27,9 @@ Power Platform solution templates require premium licensing and are designed to 
 
 ## What are the benefits?
 
-Enabling enterprise software use cases can be time consuming and expensive. Solution templates for Microsoft Power Platform provide a foundation for you to work with and build upon so you can quickly extend and deploy. In turn, by continuing to use the full potential of Power Platform, the solution templates can be further extended to connect workflows across more systems of record and digitize manually intensive processes.
+Implementing enterprise software use cases can be time consuming and expensive. Solution templates for Microsoft Power Platform provide a foundation for you to work with and build upon so you can quickly extend and deploy. In turn, by continuing to use the full potential of Power Platform, the solution templates can be further extended to connect workflows across more systems of record and digitize manually intensive processes.
 
-The solution templates will enable you to:
+The solution templates enable you to:
 
 - **Time to Value**
   - Remove much of the upfront investments needed in traditional enterprise software development

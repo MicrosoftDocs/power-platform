@@ -38,7 +38,7 @@ From the _Select recent purchase order_ drop down list, you can see a list of pr
 
 ### Search for purchase order
 
-If you have not interacted with the PO, and you don't know the exact number, you can search for a PO.
+If you have not interacted with the purchase order, and you don't know the exact number, you can search for a PO.
 
 1. Select the **funnel icon** to open the purchase order search screen. On the screen, you can search by any individual field or a combination of _Purchase Order Number_, _Vendor_, and _Date Range_.
 :::image type="content" source="media/purchase-order-management/search-po.png" alt-text="Search for a purchase order screen.":::
@@ -48,7 +48,7 @@ If you have not interacted with the PO, and you don't know the exact number, you
 
 ## Enter a purchase order number
 
-If you know the number of the PO you want to view, you can type it in the _Search purchase order number_ field.
+If you know the number of the purchase order you want to view, you can type it in the _Search purchase order number_ field.
 
 ## Create a purchase order
 
