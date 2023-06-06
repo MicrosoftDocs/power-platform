@@ -54,7 +54,7 @@ The following terms are used in this section.
 >[!NOTE]
 > Session chat transcripts are available for download in Dataverse via the Power Virtual Agents app about 20 minutes after an analytic session _ends_.
 
-> [!Note].
+> [!Note]
 > Conversation transcripts in Dataverse are available approximately 6 hours after the analytic session
 starts.
 
