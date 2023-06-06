@@ -40,11 +40,11 @@ From the _Select recent purchase order_ drop down list, you can see a list of pr
 
 If you have not interacted with the PO, and you don't know the exact number, you can search for it.
 
-1. Click the **funnel icon** to open the purchase order screen. On the screen, you can search by any individual field or a combination of _Purchase Order Number_, _Vendor_, and _Date Range_.
+1. Select the **funnel icon** to open the purchase order screen. On the screen, you can search by any individual field or a combination of _Purchase Order Number_, _Vendor_, and _Date Range_.
 :::image type="content" source="media/purchase-order-management/search-po.png" alt-text="Search for a purchase order screen.":::
 
 1. Enter your selection criteria in the fields.
-1. Click the **Search** button and your results will be displayed. 1. Select the _PO_ you would like to see, and it will be displayed on the overview screen.
+1. Select **Search** and your results will be displayed. 1. Select the _PO_ you would like to see, and it will be displayed on the overview screen.
 
 ## Enter a purchase order number
 
@@ -52,9 +52,9 @@ If you know the number of the PO you want to view, you can type it in the _Searc
 
 ## Create a purchase order
 
-1. Click the **Create** button.
+1. Select **Create**.
 1. Enter a vendor number.
-1. Click on the **arrow** pointing to the right, next to the vendor number, and the vendor name will be determined.
+1. Select on the **arrow** pointing to the right, next to the vendor number, and the vendor name will be determined.
 1. Select the appropriate _purchasing organization_ from the drop-down list.
 1. Select the appropriate _purchasing group_ from the drop-down list.
 1. Select the appropriate _location_ from the drop-down list.
@@ -62,33 +62,33 @@ If you know the number of the PO you want to view, you can type it in the _Searc
 
 ## Add a line item to a purchase order
 
-1. Click the **+ Add** button at the _Items_ level.
+1. Select **+ Add** at the _Items_ level.
 1. View the _New Purchase Order Item Details_ page.
 1. Select your location (plant).
-1. If you know your material number, enter it, or you can search by clicking on the filter symbol.
-1. If you click on the **Search** filter, the material search page will open.
-1. Search by _material number_, _description_, _material type_ or _location_ (_plant_). Here is an example of partial material number search within a location. To select a material, click on the **material number**. We will pick _PRODUCT2_ for this example, and it will populate that data into the new purchase order item detail screen.
+1. If you know your material number, enter it, or you can search by selecting on the filter symbol.
+1. If you select on the **Search** filter, the material search page will open.
+1. Search by _material number_, _description_, _material type_ or _location_ (_plant_). Here is an example of partial material number search within a location. To select a material, select on the **material number**. We will pick _PRODUCT2_ for this example, and it will populate that data into the new purchase order item detail screen.
 1. Enter the quantity and the unit price. The _Unit_ field was pre-populated when we selected this material from the _Material Search_.
 1. View the total automatically calculated based on the quantity multiplied by the unit price.
-1. Click the **Done** button to add this line item to the purchase order.
+1. Select **Done** to add this line item to the purchase order.
 
 ### Add, cancel, or save the purchase order
 
-- Click **+ Add** for additional line items or click the **Cancel** button if you do not want to keep the purchase order. Hitting the cancel button removes everything.
+- Select **+ Add** for additional line items or select **Cancel** if you do not want to keep the purchase order. Selecting the cancel removes everything.
 
-- Click the **Save** button when you are finished. When you click **Save**, the purchase order data will be saved to SAP and the SAP document number will appear in the top left corner.
+- Select the **Save** when you are finished. When you select **Save**, the purchase order data will be saved to SAP and the SAP document number will appear in the top left corner.
 
 ## Additional functionality
 
 When you load an existing purchase order, you have the ability to edit or approve it.
 
-- If you click on the **Edit** button, you are able to change values, add line items, or delete unwanted line items. To delete an unwanted line item, select the **check box** on the left side of the line, and click the **Delete** button at the top. You can also copy an existing line by selecting it and clicking the **Copy** button.
+- If you select on **Edit**, you are able to change values, add line items, or delete unwanted line items. To delete an unwanted line item, select the **check box** on the left side of the line, and select **Delete** at the top. You can also copy an existing line by selecting it and selecting **Copy**.
 
-- If you want to edit a line, click the **Edit** link at the right side of the line under _Details_.
+- If you want to edit a line, select the **Edit** link at the right side of the line under _Details_.
 
 ### Additional items functionality
 
-- You can sort column headings by ascending or descending order. To sort, click on the **Column Heading**. An _arrow_ will appear to show you the sort order.
+- You can sort column headings by ascending or descending order. To sort, select on the **Column Heading**. An _arrow_ will appear to show you the sort order.
 
 > [!NOTE]
 >

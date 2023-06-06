@@ -72,8 +72,8 @@ To update the connection references originally set during the install solution p
 1. Go to **Solutions**.
 1. Select the **SAP Procurement** solution.
 1. Select **Connection references**.
-1. Double click each of the _connection references_ and choose each **Connection** that you created.
-1. Click **Save**
+1. Double select each of the _connection references_ and choose each **Connection** that you created.
+1. Select **Save**
 
 The two connection references contained in the solution are:
 

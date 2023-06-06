@@ -104,18 +104,18 @@ Share the flows with _Run only privileges_ so users have access to embedded flow
 
 ### Steps to share apps
 
-1. Go to the individual apps in the Power Apps portal.
+1. Go to the individual apps in Power Apps.
 1. Select the **Share** option.
 1. Search for and select the appropriate _security group_ that contains the members that need to access that app.
-1. Click **Share**. You can also choose whether or not to include an email invitation (not required).
+1. Select **Share**. You can also choose whether or not to include an email invitation (not required).
 
 ### Steps to share flows
 
-1. Go to the individual cloud flows in the Power Apps portal.
+1. Go to the individual cloud flows in Power Apps.
 1. Go to _Run only users_ section and select **Edit**.
 1. Invite _system users_ and _teams_ by searching for and selecting the AAD security groups that need access to the flow according to the Power Apps that that team needs to use.
 1. For all three _connections used_, select the **Provided by run-only end user** option.
-1. Click **Save**.
+1. Select **Save**.
 
 ### Sharing summary
 

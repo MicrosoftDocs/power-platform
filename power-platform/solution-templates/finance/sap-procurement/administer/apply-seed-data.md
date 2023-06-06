@@ -95,7 +95,7 @@ To help you create and manage the list of values, a list of the fields with exam
 | Parent Value |  | Allows for parent child relationships of values. For example, specific state/province domain values can be parented to a single country domain value. |
 | Description |  | General description of what the value represents. |
 
-1. Click **Save** and monitor the import progress
+1. Select **Save** and monitor the import progress
 
 More information: [Open your app data in Excel Online](/power-apps/user/export-to-excel-online)
 

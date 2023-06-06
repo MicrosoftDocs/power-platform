@@ -31,11 +31,11 @@ As a Power Platform admin, you can take the following steps to access and instal
 
 1. In the _Power Apps Maker Portal_, select the developer (sandbox) _environment_ that you want to install the solutions in and then select the **Solutions** menu option.
 
-1. Click **Import solution**, selecting the **mpa_SAPBase_managed** file.
+1. Select **Import solution**, selecting the **mpa_SAPBase_managed** file.
 
 1. Enter the environment variables when prompted, using the [Configure environment variables](configure-environment-variables.md) guidance.
 
-1. Click **Import**.
+1. Select **Import**.
 
 > [!NOTE]
 >
@@ -43,11 +43,11 @@ As a Power Platform admin, you can take the following steps to access and instal
 
 1. After the **SAP Base** solution successfully installs, navigate back to the **Solutions** menu option.
 
-1. Click **Import solution**, selecting the **mpa_SAPProcurement_managed** file.
+1. Select **Import solution**, selecting the **mpa_SAPProcurement_managed** file.
 
 1. When prompted, populate the _connection references_ by either creating new or selecting existing connections as described in [Setting up connections for solutions](set-up-connections.md).
 
-1. Click **Import**.
+1. Select **Import**.
 
 > [!NOTE]
 >
