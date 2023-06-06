@@ -40,7 +40,7 @@ From the _Select recent requisition_ drop-down list, you can see a list of previ
 
 If you haven't interacted with the requisition, and you don't know the exact number, you can search for a requisition.
 
-1. Select the **funnel icon**, to open the requisition search screen. On the screen, you can search by any individual field or a combination of _Requisition Number_, _Vendor_, and _Date Range_.
+1. Select the **funnel icon** to open the requisition search screen. On the screen, you can search by any individual field or a combination of _Requisition Number_, _Vendor_, and _Date Range_.
 :::image type="content" source="media/requisition-management/req-search.png" alt-text="Search for a requisition screen.":::
 1. Enter your selection criteria in the fields.
 1. Select **Search** and your results will be displayed.
