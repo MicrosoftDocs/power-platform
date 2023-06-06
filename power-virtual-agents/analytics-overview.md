@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
 
 > [!NOTE]
-> Sessions transcripts are unavailable for download on the Power Virtual Agents app in Teams. To review and export session information, you'll need to sign up for the [Power Virtual Agents web app](requirements-licensing-subscriptions.md).
+> Conversation transcripts in Dataverse are unavailable for download on the Power Virtual Agents app in Teams. To review and export transcripts in Dataverse, you'll need to sign up for the [Power Virtual Agents web app](requirements-licensing-subscriptions.md). Session chat transcripts can be downloaded via the Power Virtual Agents app. For more details, refer to [Download bot session transcripts](analytics-sessions.md#download-bot-session-transcripts).
 
 Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest impact on your bot's performance.
 
@@ -49,7 +49,14 @@ The following terms are used in this section.
 - _Billed sessions_ are used to measure resource consumption. Billed sessions are independent of analytics sessions.
 
 > [!NOTE]
-> Although transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
+> Although session chat transcripts are usually available within 5-10 minutes, it can take up to an hour after the analytic session _starts_ for the analytics dashboards to update. As a result, there will be some delay before you see all the data.
+
+>[!NOTE]
+> Session chat transcripts are available for download in Dataverse via the Power Virtual Agents app about 20 minutes after an analytic session _ends_.
+
+> [!Note].
+> Conversation transcripts in Dataverse are available approximately 6 hours after the analytic session
+starts.
 
 
 > [!NOTE]
