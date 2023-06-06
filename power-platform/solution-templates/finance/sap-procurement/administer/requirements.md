@@ -58,7 +58,7 @@ Power Platform solutions published by Microsoft are designed to solve broad, com
   - Set up the necessary [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference#global-administrator).
   - Set up [Azure AD single sign-on (SSO) for gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) having constrained delegation to support SSO.
 - [Power Platform admin center](https://admin.powerplatform.microsoft.com/). An Azure AD Global Admin or other designated admin will need to:
-  - Configure the [Power Platform admin portal](/power-platform/admin/wp-work-with-admin-portals) so other admins can manage gateways, tenants, environments and user access.
+  - Configure the [Power Platform admin center](/power-platform/admin/wp-work-with-admin-portals) so other admins can manage gateways, tenants, environments and user access.
   - Set up the [admin center connectors](/power-platform/admin/wp-management-monitoring):
     - [Power Automate Management](/connectors/flowmanagement/)
     - [Power Automate for Admins](/connectors/microsoftflowforadmins/)

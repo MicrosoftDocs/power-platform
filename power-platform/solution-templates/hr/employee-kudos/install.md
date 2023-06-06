@@ -91,7 +91,7 @@ The solution includes three new security roles:
     
 Roles can be assigned from the Admin Center.
 
-1. Go to the [Admin Portal](https://admin.powerplatform.microsoft.com/)
+1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
 
 1. Select on the **Environment** tab and select the environment where the solution was installed.
 1. Select on **Users** > **See all**.
@@ -176,7 +176,7 @@ To create your own badges, refer to [Create Custom Badges](use.md#create-custom-
 While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created/updated records in the future.
 To do this:
 
-1. Go to the [Admin Portal](https://admin.powerplatform.microsoft.com/).
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Environment** tab, select the environment where the solution is installed, and select **Audit settings**.
 
 :::image type="content" source="media/install/Auditing1.png" alt-text="Select environment tab and select audit settings":::
