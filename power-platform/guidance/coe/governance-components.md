@@ -40,7 +40,7 @@ The Governance components solution contains assets relevant to admins and makers
 
 #### Admin \| Compliance Detail request v3
 
-This flow works in conjunction with other apps and flows in the Center of Excellence (CoE) Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
+This flow works together with other apps and flows in the Center of Excellence (CoE) Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
 
 This flow sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
 
@@ -58,7 +58,7 @@ This flow sends an email to users who have chatbots in the tenant that aren't co
 
 You can customize the criteria for when makers are asked to provide a business justification using [environment variables](faq.md#update-environment-variables). Default values are provided.
 
-You can customize the email sent out by the flow; by default, it will look like the following image:
+You can customize the email sent out by the flow; by default, it looks like the following image:
 
 ![The compliance detail request email informs a maker that they own an app that is currently missing compliance details, which means it needs to be audited by an admin per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.](media/coe55.png "The compliance detail request email informs a maker that they own an app that is currently missing compliance details, which means it needs to be audited by an admin per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.")
 
@@ -70,7 +70,7 @@ You can customize the email sent out by the flow; by default, it will look like 
 > - In the February 2023 release, the **Developer Compliance Center** canvas app has been replaced with the Developer Compliance Center model-driven app. The new app uses model-driven app features and custom pages. The Developer Compliance Center canvas app has been renamed to [deprecated] Developer Compliance Center and will be removed from the solution by June 2023.
 > - The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
-This app is used in the [auditing process](example-processes.md) as a tool for users to check whether their app, flow, chatbot or custom connector is compliant, and to submit information to the CoE admins as business justification to stay in compliance.
+This app is used in the [auditing process](example-processes.md) as a tool for users to check whether apps, flows, chatbots or custom connectors they own are compliant, and to submit information to the CoE admins as business justification to stay in compliance.
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
@@ -78,7 +78,7 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 #### Compliance Status
 
-The Developer Compliance Center allows makers to check the compliance status and submit additional details for the following resources:
+The Developer Compliance Center allows makers to check the compliance status and submit more details for the following resources:
 
 - Canvas apps
 - Model-driven apps
@@ -91,10 +91,10 @@ The Developer Compliance Center allows makers to check the compliance status and
 
 Based on the resource, makers can filter their resources to the following compliance status:
 
-- **Missing Details** indicates that the compliance process or an admin has requested additional details to be submitted to bring the resource back into compliance.
+- **Missing Details** indicates that the compliance process or an admin has requested more details to be submitted to bring the resource back into compliance.
 - **Flagged as inactive** indicates that the resource has been marked as inactive.
-- **Non-compliant** indicates that the resource is currently non compliant with existing DLP or billing policies, often this means that the resource can not be used until the problem is resolved.
-- **Re-publish needed** (for canvas apps only) indicates that the app has not been published in the past 60 days.
+- **Non-compliant** indicates that the resource is currently non compliant with existing DLP or billing policies, often this means that the resource cannot be used until the problem is resolved.
+- **Re-publish needed** (for canvas apps only) indicates that the app hasn't been published in the past 60 days.
 - **Missing description** indicates that the resource needs a description populated to help the admin understand what the resource is used for.
 
 :::image type="content" source="media/coe56.png" alt-text="Developer Compliance Center overview":::
@@ -106,7 +106,7 @@ For **Missing Details**, makers can achieve compliance by providing additional i
 - **Access Management**: Describe who has access to this resource, how access is managed (individual user access or access through group membership) and how joiners/movers/leavers processes are managed.
 - **Dependencies**: Describe any dependencies this solution uses—for example, external or internal APIs or Azure resources.
 - **Conditions of use**: (For connectors only) Describe in which situations the connector can and should be used.
-- **Mitigation Plan provided**: For critical solutions, upload a mitigation plan that details what business users will do in the event of an outage.
+- **Mitigation Plan provided**: For critical solutions, upload a mitigation plan that details what business users do if there isn't an outage.
 
 **Customize**: Verify that the **Support Details** form matches your requirements, and update if necessary.
 
@@ -222,13 +222,13 @@ Represents inactivity notifications approval tasks started during the Admin | In
 
 Checks for apps that haven't been modified or launched in the last six months (this time span is configurable) and asks the app owner (via flow approvals) whether the app can be deleted.
 
-It recommends that the app owner take a backup of the app in the event that they would like to restore it at some later point.
+It recommends that the app owner takes a backup of the app if they would like to restore it at some later point.
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
 ![Inactivity notifications v2 (Start Approval for Apps) flow.](media/coe58.png "Inactivity notifications v2 (Start Approval for Apps) flow")
 
-**Customize**: By default, this flow will assign approvals to the app owner. In order to test in a debug environment, in which you don't want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
+**Customize**: By default, this flow assigns approvals to the app owner. In order to test in a debug environment, in which you don't want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals are sent to the admin account instead.
 
 ![Inactivity notifications v2 - workflow for Apps.](media/archivalFlow-Apps.png "Inactivity notifications v2 - workflow for Apps")
 
@@ -236,11 +236,11 @@ This flow starts the approval process and writes the approval task to the Archiv
 
 Similar to the previous flow, but for flows rather than apps. This flow checks for flows that haven't been modified in the last six months (this time span is configurable) and asks the flow owner (via flow approvals) whether the flow can be deleted.
 
-It recommends that the flow owner take a backup of the app in the event that they would like to restore it at some later point.
+It recommends that the flow owner takes a backup of the app if they would like to restore it at some later point.
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
-**Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you don't want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
+**Customize**: By default, this flow assigns approvals to the flow owner. In order to test in a debug environment, in which you don't want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals are sent to the admin account instead.
 
 ![Inactivity notifications - workflow for Flows.](media/archivalFlow-Flows.png "Inactivity notifications v2 - workflow for Flows")
 
@@ -255,7 +255,7 @@ If approved in the past, but before deletion, it sends a reminder to archive the
 Runs daily and does two cleanup tasks for the workflow.
 
 1. Deletes the flows and apps that were approved for deletion more than three weeks ago (configurable).
-1. Deletes expired approval requests that were created over a month ago. If a maker ignores an approval request, their app or flow will not get deleted, however they will receive another approval request again in the future. Additionally, their manager will receive a notification on ignored requests.
+1. Deletes expired approval requests that were created over a month ago. If a maker ignores an approval request, their app or flow won't get deleted, however they'll receive another approval request again in the future. Additionally, their manager receives a notification on ignored requests.
 
 #### Admin \| Email Managers Ignored Inactivity notifications Approvals
 
@@ -267,11 +267,11 @@ This flow works with the other Inactivity notifications flows in that it looks f
 
 #### Cleanup Old Objects App
 
-As makers are asked to respond if objects are still useful with the Archival flows above, they will sometimes ignore these asks. In that case, a flow above will send their manager this email.
+As makers are asked to respond if objects are still useful with the Archival flows above, they'll sometimes ignore these asks. In that case, a flow above will send their manager this email.
 
 ![Mail sent to managers.](media/ArchiveApps1.png "Mail sent to managers")
 
-The manager can click the link in the mail and be brought to this app for cleaning.
+The manager can select the link in the mail and be brought to this app for cleaning.
 
 They can choose which employee to work on first.
 
@@ -281,7 +281,7 @@ And then for each employee, either reject the deletion or send a reminder.
 
 ![Cleanup screen.](media/ArchiveApps3.png "Cleanup screen")
 
-They can send the person to the app to do the cleanup as well. There, they'll be able to approve/reject deletion for all their objects.
+They can send the person to the app to do the cleanup as well. There, they are able to approve/reject deletion for all their objects.
 
 ![Send reminder mail screen.](media/ArchiveApps4.png "Send reminder mail screen")
 
@@ -321,7 +321,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 #### Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
 >[!NOTE]
->We recommend you configure environment policies in Power Platform Admin Center to delete inactive Dataverse for Teams environments instead. 
+>We recommend you configure environment policies in Power Platform Admin Center to delete inactive Dataverse for Teams environments instead.
 >Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](/power-platform/admin/inactive-teams-environment)
 
 > [!IMPORTANT]
@@ -407,11 +407,11 @@ If they choose to see the items individually, then they can make these decisions
 This flow runs on a schedule and checks if any apps need quarantining based on the following criteria:
 
 - Environment is included in the quarantine process.
-- Compliance details have been requested, but are not yet submitted, and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
-- App is not already quarantined.
-- Admin Risk Assessment status is not complete.
+- Compliance details have been requested, but aren't yet submitted, and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
+- App isn't already quarantined.
+- Admin Risk Assessment status isn't complete.
 
-For any apps matching the above criteria, the app quarantine status is set to **Yes**. Note that a maker submitting compliance details via the [Developer Compliance Center](#developer-compliance-center) does not automatically release their app from quarantine, an admin will have to perform a risk assessment and manually release the app from quarantine using the [Power Platform Admin View](core-components.md#power-platform-admin-view).
+For any apps matching the above criteria, the app quarantine status is set to **Yes**. If a maker submits compliance details via the [Developer Compliance Center](#developer-compliance-center), it doesn't automatically release their app from quarantine, an admin has to perform a risk assessment and manually release the app from quarantine using the [Power Platform Admin View](core-components.md#power-platform-admin-view).
 
 To release an app from quarantine, use the [Power Platform Admin View](core-components.md#power-platform-admin-view) to set the **Quarantine App** field to **No** and mark the **Admin Requirement - Risk Assessment State** as **Complete**.
 
