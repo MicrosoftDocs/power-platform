@@ -4,7 +4,7 @@ description: "The governance components solution provides assets to automate com
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2023
+ms.date: 06/06/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -70,7 +70,7 @@ You can customize the email sent out by the flow; by default, it looks like the 
 > - In the February 2023 release, the **Developer Compliance Center** canvas app has been replaced with the Developer Compliance Center model-driven app. The new app uses model-driven app features and custom pages. The Developer Compliance Center canvas app has been renamed to [deprecated] Developer Compliance Center and will be removed from the solution by June 2023.
 > - The update has been made to use the benefits of custom pages and [Creator Kit](https://aka.ms/creatorkit) components. You can provide feedback about the new experience by raising [an issue in GitHub](https://aka.ms/coe-starter-kit-issues).
 
-This app is used in the [auditing process](example-processes.md) as a tool for users to check whether apps, flows, chatbots or custom connectors they own are compliant, and to submit information to the CoE admins as business justification to stay in compliance.
+This app is used in the [auditing process](example-processes.md) as a tool for users to check whether apps, flows, chatbots, or custom connectors they own are compliant, and to submit information to the CoE admins as business justification to stay in compliance.
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
@@ -93,7 +93,7 @@ Based on the resource, makers can filter their resources to the following compli
 
 - **Missing Details** indicates that the compliance process or an admin has requested more details to be submitted to bring the resource back into compliance.
 - **Flagged as inactive** indicates that the resource has been marked as inactive.
-- **Non-compliant** indicates that the resource is currently non compliant with existing DLP or billing policies, often this means that the resource cannot be used until the problem is resolved.
+- **Non-compliant** indicates that the resource is currently non compliant with existing DLP or billing policies, often this means that the resource can't be used until the problem is resolved.
 - **Re-publish needed** (for canvas apps only) indicates that the app hasn't been published in the past 60 days.
 - **Missing description** indicates that the resource needs a description populated to help the admin understand what the resource is used for.
 
@@ -321,7 +321,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 #### Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
 >[!NOTE]
->We recommend you configure environment policies in Power Platform Admin Center to delete inactive Dataverse for Teams environments instead.
+>We recommend that you configure environment policies in Power Platform admin center to delete inactive Dataverse for Teams environments, instead.
 >Learn more: [Automatic deletion of inactive Microsoft Dataverse for Teams environments](/power-platform/admin/inactive-teams-environment)
 
 > [!IMPORTANT]
