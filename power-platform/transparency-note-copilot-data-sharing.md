@@ -46,17 +46,6 @@ All data is handled as per the Copilot data security and privacy guidelines expl
 
 [Customer Lockbox](admin/about-lockbox.md) won't apply to the access and manual review of customer data shared using this setting. Customer Lockbox will remain enabled for all in-scope data.
 
-## How was [Feature] evaluated? What metrics are used to measure performance?
-
-*Flagged: Question not answered.*
-
-[Provide evidence of system accuracy and performance as well as a description of the extent to which these results are generalizable across use cases that were not part of the evaluation.]
-
-## What are the limitations of [Feature]? How can users minimize the impact of the [Feature] limitations when using the system?
-
-*Flagged: Question not answered.*
-
-[See Impact Assessment. Describe the known limitations of the system including uses for which the system was not designed or evaluated. Discuss steps that the user can take to minimize errors and the impact of trade-offs for the user.]
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 
