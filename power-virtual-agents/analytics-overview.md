@@ -49,14 +49,10 @@ The following terms are used in this section.
 - _Billed sessions_ are used to measure resource consumption. Billed sessions are independent of analytics sessions.
 
 > [!NOTE]
-> Although session chat transcripts are usually available within 5-10 minutes, it can take up to an hour after the analytic session _starts_ for the analytics dashboards to update. As a result, there will be some delay before you see all the data.
-
->[!NOTE]
-> Session chat transcripts are available for download in Dataverse via the Power Virtual Agents app about 20 minutes after an analytic session _ends_.
+> Transcripts are available for download about 20 minutes after an analytic session _ends_, as conversation transcripts in Dataverse via the Power Apps portal and as session chat transcripts via the Power Virtual Agents app. It can take up to an hour after the analytic session _ends_  before the appearing in the analytics dashboard.
 
 > [!Note]
-> Conversation transcripts in Dataverse are available approximately 6 hours after the analytic session
-_starts_.
+> In the classic version of Power Virtual Agents, conversation transcripts in Dataverse are available approximately 6 hours after the analytic session _starts_.
 
 > [!NOTE]
 > Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. In the meantime, you can use a [custom analytics solution to create a Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get analytics in these plans.
