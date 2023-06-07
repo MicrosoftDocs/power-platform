@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Branching and environment strategy
 
-The ALM Accelerator provides a default environment and branching strategy to help you get started quickly with ALM. The default strategy is based on the [CoE Starter Kit](../coe/overview.md) development team's ALM process. It can be [customized to meet your organization's needs](customize-deployment-pipelines.md), but you can adopt the default strategy and use the out-of-the-box pipelines without any customization.
+The ALM Accelerator provides a default environment and branching strategy to help you get started quickly with application lifecycle management (ALM). The default strategy is based on the [CoE Starter Kit](../coe/overview.md) development team's ALM process. It can be [customized to meet your organization's needs](customize-deployment-pipelines.md), but you can adopt the default strategy and use the out-of-the-box pipelines without any customization.
 
 ## Branching strategy
 

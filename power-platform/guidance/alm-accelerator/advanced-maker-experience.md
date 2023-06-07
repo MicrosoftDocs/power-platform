@@ -53,7 +53,7 @@ The ALM Accelerator administration app was used to configure the following user 
 
 1. Create connections and grant consent when prompted.
 
-1. If you're prompted to create an HTTP with Azure Active Directory (Azure AD) connection, enter `https://graph.microsoft.com` for both the **Base Resource URL** and **Azure AD Resource URI**.
+1. If you're prompted to create an HTTP with Azure Active Directory (Azure AD) connection, enter *https://graph.microsoft.com* for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. Select **Create** for each connection when prompted.
 
@@ -197,7 +197,7 @@ A waiting indicator appears when the push begins. When the push succeeds, a chec
 
    The deployment of your solution to the selected environment starts with the approval of the pull request or the pipeline execution, depending on the approval type. When the progress indicator appears, it means the deployment has started. Select the right angle bracket (**>**) to visualize the request history.
 
-   :::image type="content" source="media/aa4pp-request-history.png" alt-text="Screenshot of the request history of a solution in the ALM Accelerator.:::
+   :::image type="content" source="media/aa4pp-request-history.png" alt-text="Screenshot of the request history of a solution in the ALM Accelerator.":::
 
 1. For deployment to production, either open the **Advanced Settings** and select the main branch used to trigger the deployment, or create a pull request directly in Azure DevOps.
 

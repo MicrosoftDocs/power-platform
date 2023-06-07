@@ -1,120 +1,113 @@
 ---
-title: "ALM Accelerator App Registrations - considerations when designing your Azure App Registration strategy | MicrosoftDocs"
-description: "The ALM accelerator for Microsoft Power Platform relies on Azure App Registrations to communicate with required services such as Azure DevOps, Power Platform and Power Apps Advisor service. This document gives an overview of different approaches to designing your App Registrations for ALM Accelerator."
-author: jenschristianschroder
+title: App registration considerations
+description: Learn about considerations to keep in mind and approaches you can take when you're designing app registrations for the ALM Accelerator for Power Platform.
 ms.topic: conceptual
 ms.date: 04/12/2023
 ms.subservice: guidance
+author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks
+ms.custom: bap-template
 ---
-# ALM Accelerator App Registrations
 
-The ALM Accelerator for Microsoft Power Platform relies on Azure App Registrations to communicate with required services such as Azure DevOps, Power Platform and Power Apps Advisor service. This document gives an overview of different approaches to designing your App Registrations for ALM Accelerator.
+# App registration considerations
 
-## Required API Permissions for Azure App Registrations
+The ALM Accelerator for Power Platform relies on Azure Active Directory (Azure AD) app registrations to communicate with required services. This article discusses considerations you should keep in mind and approaches you can take when you design an app registration strategy for the ALM Accelerator.
 
-In order for ALM Accelerator to be able to communicate with the required services, you need to configure the App Registration to be allowed to use the relevant APIs.
+## Required API permissions
 
-Requirements for communication to these services depend on the functionality of the ALM Accelerator.
+You need to allow app registrations to use the relevant APIs for the ALM Accelerator to communicate with required services. Requirements for communication with these services depend on the functionality of the ALM Accelerator.
 
-### Canvas App communication with Azure DevOps
+The following table shows what API permissions are required for the different functionalities of the ALM Accelerator.
 
-When you use the ALM Accelerator Canvas App to trigger an Azure DevOps pipeline, or to create a Pull Request in Azure DevOps Git repositories, these operations are executed via the CustomAzureDevOps custom connector. In order for the CustomAzureDevOps custom connector to communicate with Azure DevOps, the Azure App Registration used to configure the OAuth security settings in the custom connector must have the required permissions to communicate with the Azure DevOps Rest API.
+| Functionality | API Permission | Permission type | Description  |
+|---------------|----------------|-----------------|--------------|
+| CustomAzureDevOps custom connector | Azure DevOps - user_impersonation | Delegated | The ALM Accelerator canvas app needs Azure DevOps API permissions to communicate with Azure DevOps. |
+| Deploy validation pipelines | Dynamics CRM - user_impersonation | Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| Deploy validation pipelines | Power Apps Advisor - Analysis.All | Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor service to run the solution checker task. |
+| Deploy test pipelines | Dynamics CRM - user_impersonation | Delegated | The pipeline to deploy solutions to the test environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| Deploy production pipelines | Dynamics CRM - user_impersonation | Delegated | The pipeline to deploy solutions to the production environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| Export solution pipeline | Dynamics CRM - user_impersonation | Delegated | The pipeline to export solutions from the maker development environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| Import solution pipeline | Dynamics CRM - user_impersonation | Delegated | The pipeline to import solutions from Azure Git source control to the maker development environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| Delete solution pipeline | Dynamics CRM - user_impersonation | Delegated | The pipeline to delete solutions in the maker development environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
 
-### Azure DevOps pipeline communication with Power Platform
+## Considerations for an app registration strategy
 
-When an Azure DevOps pipeline is running operations in a Power Platform environment, it will use an Azure DevOps Service Connection to connect to the relevant environment. The Azure DevOps Service connection is configured with details about the Azure App Registration to use when connecting to Power Platform, and, in the relevant Power Platform environment the Azure App Registration will be registered as an [Application User](/power-apps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation). This allows the Azure DevOps pipeline to communicate with the relevant Power Platform environment in the context of the Azure App Registration.
-
-### API permissions overview
-
-The following table shows what API permissions that are required for the different functionalities of ALM Accelerator
-
-| Functionality         | API Permissions   | Permission type   | Description       |
-|-------------------|-------------------|-------------------|-------------------|
-| CustomAzureDevOps custom connector     | Azure DevOps - user_impersonation   | Delegated       | The Azure DevOps API permissions are required in order for the ALM Accelerator Canvas App to communicate with Azure DevOps |
-| Deploy Validation pipelines     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| Deploy Validation pipelines     | PowerApps-Advisor - Analysis.All   | Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the PowerApps Advisor service to run the Solution Checker task |
-| Deploy Test pipelines     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to deploy solutions to the Test environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| Deploy Prod pipelines     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to deploy solutions to the Prod environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| Export solution pipeline     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to export solutions from the Maker development environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| Import solution pipeline     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to import solutions from Azure Git source control to the Maker development environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| Delete solution pipeline     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to delete solutions in the Maker development environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-
-## Considerations when designing your Azure App Registration strategy
-
-When designing your strategy for creating and managing Azure App Registrations for ALM Accelerator, you should consider both the security aspect and the maintenance aspect.
-
-### Simplicity of maintenance
-
-From a maintenance perspective, you'll want to have to do the least amount of work to maintain your Azure App Registrations and those services that use them. One of the tasks relating to maintaining Azure App Registrations is secret rotation, meaning revoking the current secret and creating a new secret. You should consider that for each service where you use the Azure App Registration you need to reconfigure when a secret is rotated.
-This perspective means the more App Registrations you use the more work is required.
+When you design your strategy for creating and managing app registrations for the ALM Accelerator, you should consider both security and maintenance.
 
 ### Principle of least privilege
 
-From a security perspective, you'll want to consider the principle of least privilege. This means any Azure App Registration should have the least privileges required to perform its necessary operations.
+From a security perspective, consider the principle of least privilege. Any app registration should have the least privileges required to perform its necessary operations.
 
-## Different scenarios for configuring Azure App Registrations for ALM Accelerator
+### Simplicity of maintenance
 
-### One Azure App Registration
+From a maintenance perspective, consider a strategy that requires you to do the least amount of work to maintain your app registrations and the services that use them. For example, one of the tasks of maintaining app registrations is secret rotation&mdash;revoking the current secret and creating a new one. Each service that uses an app registration needs to be reconfigured when a secret is rotated. The more app registrations you use, the more work you need to do to maintain them.
 
-The absolute simplest strategy for creating your Azure App Registrations for ALM Accelerator is to create one Azure App Registration for all your needs.
-This strategy means you use the same Azure App Registration for the ALM Accelerator CustomAzureDevOps custom connector and all Azure DevOps service connections you need to access your power platform environments.
-While this will give you the least management, it will also violate the principle of least privilege, as you'll have one Azure App Registration with permissions to do all required operations via the custom connector, and all Azure Service Connections you've configured.
+## Azure app registration strategies
 
-| App Registration         | API Permissions and type | Description       |
-|-------------------|-------------------|-------------------|
-| Single App Registration for all purposes     | Azure DevOps - user_impersonation - Delegated       | The Azure DevOps API permissions are required in order for the ALM Accelerator Canvas App to communicate with Azure DevOps |
-| Single App Registration for all purposes     | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to export solutions from Maker development environments and deploy solutions to the Validation, Test and Production environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| Single App Registration for all purposes     | PowerApps Advisor - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the PowerApps Advisor service to run the Solution Checker task |
+Strategies for registering apps with Azure AD for use by the ALM Accelerator range from the very simple to the very granular.
 
-### One Azure App Registration for accessing Azure DevOps and one Azure App Registration accessing Power Platform
+### One app registration for everything
 
-A more granular configuration of Azure App Registration for ALM Accelerator is to have one Azure App Registration for the CustomAzureDevOps custom connector and one for the Azure Pipelines to communicate with Power Platform environments.
-With this configuration, you'll have better alignment with the principle of least privilege. In this configuration, only the Azure App Registration used for the CustomAzureDevOps custom connector 's access to access the Azure DevOps API and only the App Registrations used to connect to Power Platform will be allowed to use the Power Platform (Dynamics CRM) API.
+The simplest strategy is to create one app registration for all your needs. With this strategy, you use the same app registration for the CustomAzureDevOps custom connector and all Azure DevOps Service connections you need to access your Power Platform environments.
 
-| App Registration         | API Permissions and type | Description       |
-|-------------------|-------------------|-------------------|
-| App Registration for Azure DevOps     | Azure DevOps - user_impersonation - Delegated       | The Azure DevOps API permissions are required in order for the ALM Accelerator Canvas App to communicate with Azure DevOps |
-| App Registration for Power Platform     | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to export solutions from Maker development environments and deploy solutions to the Validation environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| App Registration for Power Platform     | PowerApps Advisor - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the PowerApps Advisor service to run the Solution Checker task |
+Although this strategy is the easiest to manage, it violates the principle of least privilege. One app registration has permissions to perform all required operations through the custom connector and all Azure DevOps Service connections you've configured.
 
-### One App Registration for accessing Azure DevOps and several Azure App Registrations for accessing Power Platform
+| App Registration | API Permission and Type | Description |
+|------------------|-------------------------|-------------|
+| Single app registration for all purposes | Azure DevOps - user_impersonation - Delegated | The ALM Accelerator canvas app needs Azure DevOps API permissions to communicate with Azure DevOps. |
+| Single app registration for all purposes | Dynamics CRM - user_impersonation - Delegated | The pipeline to export solutions from maker development environments and deploy solutions to the validation, test, and production environments needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| Single app registration for all purposes | Power Apps Advisor - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor service to run the solution checker task. |
 
-Even more granular configuration, with close alignment to the principle of least privilege, would be to narrow the scope of Azure App Registrations that have access to Power Platform. You can do this by creating Azure App Registrations for accessing different Power Platform environments. This approach can be as granular as having one Azure App Registration per environment you'll need to access via the ALM Accelerator Azure DevOps pipelines. Or, one Azure App Registration per Power Platform project that you support via the ALM Accelerator.
-With this configuration, you should also consider the maintenance task and ensure that you maintain a structured way of identifying which Azure App Registration is used for which environment. This will come in handy when you'll be rotating the Azure App Registration secrets.
+### One app registration for Azure DevOps and one for Power Platform
 
-The following table shows how you can create Azure App Registrations per Power Platform project to restrict Azure App Registrations to only have access to the relevant Power Platform environment.
+A more granular strategy is to create one app registration for the CustomAzureDevOps custom connector and one for the pipelines to communicate with Power Platform environments.
 
-| App Registration         | Power Platform Scope        | API Permissions and type | Description       |
-|-------------------|-------------------|-------------------|-------------------|
-| App Registration for Azure DevOps     | Not applicable     | Azure DevOps - user_impersonation - Delegated       | The Azure DevOps API permissions are required in order for the ALM Accelerator Canvas App to communicate with Azure DevOps |
-| App Registration for Power | Platform Project 1    | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| App Registration for Power Platform | Project 1 | PowerApps Advisor - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the PowerApps Advisor service to run the Solution Checker task |
-| App Registration for Power Platform | Project 2    | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| App Registration for Power Platform | Project 2 | PowerApps Advisor - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the PowerApps Advisor service to run the Solution Checker task |
-| App Registration for Power Platform | Maker development environment 1 | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to export solutions from the Maker development environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| App Registration for Power Platform | Maker development environment 2 | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to export solutions from the Maker development environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
+This strategy aligns better with the principle of least privilege. Only the app registration that's used for the CustomAzureDevOps custom connector can access the Azure DevOps API, and only the app registration that's used to connect to Power Platform can use the Power Platform (Dynamics CRM) API.
 
-The following table shows how you can further align with the principle of least privilege by creating Azure App Registrations for each Power Platform environment
+| App Registration | API Permission and Type | Description |
+|------------------|-------------------------|-------------|
+| App registration for Azure DevOps | Azure DevOps - user_impersonation - Delegated | The ALM Accelerator canvas app needs Azure DevOps API permissions to communicate with Azure DevOps. |
+| App registration for Power Platform | Dynamics CRM - user_impersonation - Delegated | The pipeline to export solutions from maker development environments and deploy solutions to the validation environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| App registration for Power Platform | Power Apps Advisor - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor service to run the solution checker task. |
 
-| App Registration         | Power Platform Scope         | API Permissions and type | Description       |
-|-------------------|-------------------|-------------------|-------------------|
-| App Registration for Azure DevOps     | Not applicable     | Azure DevOps - user_impersonation - Delegated       | The Azure DevOps API permissions are required in order for the ALM Accelerator Canvas App to communicate with Azure DevOps |
-| App Registration for Power Platform | Project 1 - Validation Environment    | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| App Registration for Power Platform | Project 1 - Validation Environment | PowerApps Advisor - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the PowerApps Advisor service to run the Solution Checker task |
-| App Registration for Power Platform | Project 1 - Test Environment | PowerApps Advisor - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the PowerApps Advisor service to run the Solution Checker task |
-| App Registration for Power Platform | Project 1 - Production Environment    | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| App Registration for Power Platform  | Project 2 - Validation Environment    | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| App Registration for Power Platform | Project 2 - Validation Environment | PowerApps Advisor - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the PowerApps Advisor service to run the Solution Checker task |
-| App Registration for Power Platform | Project 2 -Test Environment | PowerApps Advisor - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the PowerApps Advisor service to run the Solution Checker task |
-| App Registration for Power Platform | Project 2 - Production Environment    | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to deploy solutions to the Validation environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| App Registration for Power Platform | Maker development environment 1 | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to export solutions from the Maker development environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
-| App Registration for Power Platform | Maker development environment 2 | Dynamics CRM - user_impersonation - Delegated       | The Azure DevOps pipeline to export solutions from the Maker development environment needs to have permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
+### One app registration for Azure DevOps and several for Power Platform
+
+An even more granular strategy is to create app registrations for accessing different Power Platform environments. You might create one app registration for each environment you need to access using the ALM Accelerator pipelines. Or, create one app registration for each Power Platform project that you support using the ALM Accelerator.
+
+This strategy aligns closely with the principle of least privilege. However, you should also consider maintenance. Make sure to maintain a structured way to identify which app registration is used for each environment. This information will come in handy when you rotate the app registration secrets.
+
+The following table shows how you can create app registrations for each Power Platform project to restrict access to only the relevant environment.
+
+| App Registration | Power Platform Scope | API Permission and Type | Description |
+|------------------|----------------------|-------------------------|-------------|
+| App registration for Azure DevOps | Not applicable | Azure DevOps - user_impersonation - Delegated | The ALM Accelerator canvas app needs Azure DevOps API permissions to communicate with Azure DevOps. |
+| App registration for Power Platform | Platform Project 1 | Dynamics CRM - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| App registration for Power Platform | Project 1 | Power Apps Advisor - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor service to run the solution checker task. |
+| App registration for Power Platform | Project 2 | Dynamics CRM - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| App registration for Power Platform | Project 2 | Power Apps Advisor - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor service to run the solution checker task. |
+| App registration for Power Platform | Maker development environment 1 | Dynamics CRM - user_impersonation - Delegated | The pipeline to export solutions from the maker development environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| App registration for Power Platform | Maker development environment 2 | Dynamics CRM - user_impersonation - Delegated | The pipeline to export solutions from the maker development environment needs permissions to use the Power Platform (Dynamics CRM) API to do solution operations |
+
+The following table shows how you can further align with the principle of least privilege by creating app registrations for each Power Platform environment.
+
+| App Registration | Power Platform Scope  | API Permission and Type | Description |
+|------------------|-----------------------|-------------------------|-------------|
+| App registration for Azure DevOps | Not applicable | Azure DevOps - user_impersonation - Delegated | The ALM Accelerator canvas app needs Azure DevOps API permissions to communicate with Azure DevOps. |
+| App registration for Power Platform | Project 1 - Validation Environment | Dynamics CRM - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| App registration for Power Platform | Project 1 - Validation Environment | Power Apps Advisor - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor service to run the solution checker task. |
+| App registration for Power Platform | Project 1 - Test Environment | Power Apps Advisor - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor service to run the solution checker task. |
+| App registration for Power Platform | Project 1 - Production Environment | Dynamics CRM - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| App registration for Power Platform  | Project 2 - Validation Environment | Dynamics CRM - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| App registration for Power Platform | Project 2 - Validation Environment | Power Apps Advisor - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor service to run the solution checker task. |
+| App registration for Power Platform | Project 2 - Test Environment | Power Apps Advisor - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor service to run the solution checker task. |
+| App registration for Power Platform | Project 2 - Production Environment | Dynamics CRM - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| App registration for Power Platform | Maker development environment 1 | Dynamics CRM - user_impersonation - Delegated | The pipeline to export solutions from the maker development environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
+| App registration for Power Platform | Maker development environment 2 | Dynamics CRM - user_impersonation - Delegated | The pipeline to export solutions from the maker development environment needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Pipelines deployment settings](./deployment-settings-payload.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE e[footer-include](../../includes/footer-banner.md)]

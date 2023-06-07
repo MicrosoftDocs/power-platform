@@ -164,6 +164,6 @@ The ALM Accelerator administration app was used to configure the following user 
 
    When the progress indicator appears, it means the deployment has started. Select the right angle bracket (**>**) to visualize the request history.
 
-   :::image type="content" source="media/aa4pp-request-history.png" alt-text="Screenshot of the request history of a solution in the ALM Accelerator.:::
+   :::image type="content" source="media/aa4pp-request-history.png" alt-text="Screenshot of the request history of a solution in the ALM Accelerator.":::
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]

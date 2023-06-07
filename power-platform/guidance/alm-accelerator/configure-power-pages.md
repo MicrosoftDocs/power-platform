@@ -29,7 +29,7 @@ With the ALM Accelerator, you can source-control your Power Pages websites, tran
 
    :::image type="content" source="media/setup-almacceleratorpowerplatform/IncludingPortalWebsite-solution-commit.png" alt-text="Screenshot of the Commit Solution pane in the ALM Accelerator, with the Include Power Apps setting and website highlighted.":::<!-- EDITOR'S NOTE: Please include the Include Power Pages setting in the red box. -->
 
-   After the commit succeeds, the website components are contained in a folder named `{SolutionName}\PowerPages\{SiteName}` under the repository branch.
+   After the commit succeeds, the website components are contained in a folder named *{SolutionName}\PowerPages\{SiteName}* under the repository branch.
 
 ## Upload changes using a deployment profile
 
@@ -53,13 +53,13 @@ When you're working with multiple environments, consider using deployment profil
 
 1. Open the solution branch.
 
-1. Create a folder named **deployment-profiles** in the **PowerPages** > **Website** folder.
+1. Create a folder named *deployment-profiles* in the **PowerPages** > **Website** folder.
 
-1. In the **deployment-profiles** folder, create a deployment YAML file that contains environment-specific changes. The file name must start with your environment name; for example, `dev.deployment.yml` or `validation.deployment.yml`.
+1. In the *deployment-profiles* folder, create a deployment YAML file that contains environment-specific changes. The file name must start with your environment name; for example, *dev.deployment.yml* or *validation.deployment.yml*.
 
    :::image type="content" source="media/setup-almacceleratorpowerplatform/deployment-profile-yml-files.png" alt-text="Screenshot of the folder structure for Power Pages website deployment profiles.":::
 
-When the **deployment-profiles** folder is present in your repository, the ALM Accelerator automatically looks for the appropriate profile during deployment.
+When the *deployment-profiles* folder is present in your repository, the ALM Accelerator automatically looks for the appropriate profile during deployment.
 
 ## Upload a website to downstream environments
 

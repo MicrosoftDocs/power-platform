@@ -1,5 +1,5 @@
 ---
-title: Tenant deployments
+title: Tenant deployment model
 description: Learn about tenant deployment models for the ALM Accelerator for Power Platform.
 keywords: 
 author: Grant-Archibald-MS
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
 ---
 
-# Tenant deployments
+# Tenant deployment model
 
 The ALM Accelerator for Power Platform can be deployed in a [single demo tenant](#demo-deployment-scenario), a [single enterprise tenant](#enterprise-deployment-scenario), or&mdash;with some manual configuration&mdash;[multiple enterprise tenants](#multi-tenant-deployment-scenario).
 

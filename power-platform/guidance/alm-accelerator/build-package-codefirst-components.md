@@ -40,6 +40,6 @@ If you have legacy plug-in projects, copy the project files to the new folder st
 
 ## Set up PCF projects
 
-No other steps are required to set up PCF projects. Add your PCF controls to the `{solution name}\PCF` folder.
+No other steps are required to set up PCF projects. Add your PCF controls to the *{solution name}\PCF* folder.
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
