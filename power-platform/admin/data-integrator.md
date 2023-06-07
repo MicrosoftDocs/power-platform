@@ -57,7 +57,7 @@ There are three primary steps:
 Once you create an integration project, you get the option to run the project manually and also set up a schedule-based refresh for the future. The rest of this article expands on these three steps.
 
 > [!NOTE]
-> The user interface for Data Integrator project management is hosted on https://dataintegrator.trafficmanager.net. Your organization policies may require adding this site to your allow list to access the interface.
+> The user interface for Data Integrator project management is hosted at <https://dataintegrator.trafficmanager.net>. Your organization policies may require adding this site to your allowlist to access the interface.
 
 ### How to create a connection
 
