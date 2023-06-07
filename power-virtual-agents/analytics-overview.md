@@ -31,7 +31,7 @@ Multiple charts show you trends and usage for your bot's topics. These charts us
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-As a bot maker, your job isn't done when you publish your bot for use. You'll want to know how well your bot is performing its intended duties. The comprehensive analytics in Power Virtual Agents keep your bot's key performance indicators front and center. Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest effect on your bot's performance.
+As a bot maker, your job isn't done when you publish your bot for use. You'll want to know how well your bot is performing its intended duties. The comprehensive analytics in Power Virtual Agents keep your bot's key performance indicators front and center. Multiple charts show trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest effect on your bot's performance.
 
 ### Analytics in Power Virtual Agents
 
