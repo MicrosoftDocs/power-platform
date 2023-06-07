@@ -110,7 +110,7 @@ The name for the generated service context. If a value is passed in, it will be 
 
 #### `--settingsTemplateFile` `-stf`
 
-Contains Settings to be used for this run of the Dataverse Model Builder, overrides any duplicate parameters on command line.  Cannot be set when --writesettingstemplate is used.
+Contains Settings to be used for this run of the Dataverse Model Builder, overrides any duplicate parameters on command line.  Cannot be set when --writesettingsTemplateFile is used.
 
 #### `--suppressGeneratedCodeAttribute` `-sgca`
 
