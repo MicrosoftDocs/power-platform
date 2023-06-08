@@ -15,16 +15,11 @@ ms.collection: virtual-agent
 
 # Analyze session information in Power Virtual Agents
 
-By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
+By default, you can download up to seven days of bot chat transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
 
-You can also download and view chat transcripts in the Power Apps portal.
+You can also download and view conversation transcripts in the Power Apps portal.
 
 See [Work with conversation transcripts](analytics-sessions-transcripts.md) for more details and tips.
-
-Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
-
-> [!NOTE]
-> If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Microsoft Power Platform admin center.
 
 ## Prerequisites
 
@@ -95,62 +90,3 @@ The downloaded file contains the following information:
 
 > [!NOTE]
 > The download will start when you select the time period. It will be downloaded into your default browser download's location.
->
-> Sessions may be grouped into multiple date ranges for download when the selected time window does not include the most recent day or when there are more than 2,500 sessions.
-
-> [!NOTE]
-> You need to have sufficient permissions to download sessions. If you're using the Power Virtual Agents app in _Teams_, you need to be the **Team Owner**.
-
-### Change the default period of session transcript retention
-
-By default, a pre-configured bulk delete job will remove all conversation transcripts older than 30 days.
-
-To keep the transcripts for longer, you need to disable the existing system job and create a new job.
-
-First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
-
-The following instructions describe how to set a job to delete transcripts that are older than 12 months.
-
-1. At the top right, open the **Settings** menu cog icon and select **Advanced settings**.
-
-    :::image type="content" source="media/analytics-sessions/sessions-advanced.png" alt-text="Select the cog icon to open the settings menu.":::
-
-    This will take you to the Dynamics 365 portal.
-
-    :::image type="content" source="media/analytics-sessions/sessions-d365.png" alt-text="The Dynamics 365 portal.":::
-
-1. Open the **Settings** menu and select **Data Management**.
-
-    :::image type="content" source="media/analytics-sessions/sessions-d365-settings.png" alt-text="The settings link at the top shows a number of objects, including Data Management.":::
-
-1. Select **Bulk Record Deletion**.
-
-    :::image type="content" source="media/analytics-sessions/sessions-bulk-delete.png" alt-text="An icon showing a table with a red x, indicating the deletion of a bulk record.":::
-
-1. On the **Bulk Record Deletion** screen, expand the **View** dropdown and select **Recurring Bulk Deletion System Jobs**.
-
-    :::image type="content" source="media/analytics-sessions/sessions-recurring.png" alt-text="The dropdown opens to show options.":::
-
-1. Select the pre-configured bulk delete job called **Bulk Delete Conversation Transcript Records Older Than 1 Month**.
-
-    :::image type="content" source="media/analytics-sessions/sessions-pre-configured.png" alt-text="A list of bulk delete jobs, with the first one highlighted.":::
-
-1. In the **More Actions** dropdown, select **Cancel** to disable future bulk deletion using this job.
-
-    :::image type="content" source="media/analytics-sessions/sessions-actions-cancel.png" alt-text="The more actions dropdown opens to show a menu list, including Cancel.":::
-
-1. Create a new bulk record delete job by selecting **New** and set the following:
-
-    - Set **ConversationStartTime** as **Older Than X Months** to **12**.  
-    This will keep the transcripts for 12 months
-    - Set **SchemaType** as **equals** to **powervirtualagents**.
-
-        :::image type="content" source="media/analytics-sessions/sessions-schema.png" alt-text="A popup window showing options to configure the job.":::
-
-1. Enter a name and change **Run this job after every** to **1**.
-
-    :::image type="content" source="media/analytics-sessions/sessions-run-job.png" alt-text="A popup window showing options to name and run the job.":::
-
-    The bulk delete job is created and will delete bot conversation transcripts that are older than 12 months.
-
-    :::image type="content" source="media/analytics-sessions/sessions-job-ready.png" alt-text="The list of bulk delete jobs, now showing the new job just created.":::
