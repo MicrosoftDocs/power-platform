@@ -58,15 +58,15 @@ productDirectory:
     imageSrc: "media/hub-page/power-pages.svg"
     summary: Learn how to create websites users to sign in with a wide variety of identities, create and view data in Dataverse, or even browse content anonymously.
     url: /power-pages
-  - title: Power Virtual Agents
+  - title: Power Virtual Agents documentation
     imageSrc: "media/hub-page/power-virtual-agents.svg"
     summary: Learn how to build chatbots easily that integrates across a variety of products and services.
     url: /power-virtual-agents
-  - title: AI Builder
+  - title: AI Builder documentation
     imageSrc: "media/hub-page/ai-builder.svg"
     summary: Learn how to bring the power of Microsoft AI to your organization without the need for coding or data science skills.
     url: /ai-builder
-  - title: Power Fx
+  - title: Power Fx documentation
     imageSrc: "media/hub-page/power-fx.svg"
     summary: Learn about the low-code language used across Power Platform as a general-purpose, strong-typed, declarative and functional programming language.
     url: /power-platform/power-fx/overview
