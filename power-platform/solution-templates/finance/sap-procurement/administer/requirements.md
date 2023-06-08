@@ -62,7 +62,7 @@ Review all the requirements, identify opportunities, and develop a plan of actio
   - Set up a new [Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant) or reconfigure an existing tenant. The tenant will need to have at least 1 GB of database storage capacity available for the environments within it.
   - Set up additional [Azure AD admin roles](/azure/active-directory/roles/permissions-reference#global-administrator).
   - Set up [Azure AD single sign-on (SSO) for gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) having constrained delegation to support SSO.
-  - Create [Azure AD security groups](/power-apps/sample-apps/solution-templates-power-platform/finance-sap-procurement/administer/configure-security-groups?branch=pr-en-us-8111#create-azure-active-directory-security-groups) within the Azure AD tenant created to support conditional access to solution components.
+  - Create [Azure AD security groups](configure-security-groups.md#create-azure-active-directory-security-groups) within the Azure AD tenant created to support conditional access to solution components.
 
 - [Power Platform admin center](https://admin.powerplatform.microsoft.com/). As a Global admin or Power Platform System admin, you need to:
   - Set up the admin center's [management and admin connectors](/power-platform/admin/wp-management-monitoring).
