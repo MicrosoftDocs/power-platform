@@ -43,7 +43,10 @@ Both **Update** and **UpdateIf** return the modified data source as a [table](/p
 
 ### Delegation
 
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+When used with a data source, these functions cannot be delegated.  Only the first portion of the data source will be retrieved and then the function applied.  This may not represent the complete story.  A warning may appear at authoring time to remind you of this limitation.
+
+#### Delegation support (Experimental)
+Delegation support for UpdateIf and RemoveIf is now in Experimental Preview (default OFF) for data sources that support it. If a data source does not support this feature, Power Apps will now send a query to the server and retrieve all data that matches the filter expression up to the maxium of either 500, 2000, or the data page size. Then, it will update those records and send each  back to the server to be updated. 
 
 ## Syntax
 
