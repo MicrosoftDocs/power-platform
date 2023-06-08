@@ -172,6 +172,8 @@ To create your own badges, refer to [Create Custom Badges](use.md#create-custom-
 1. Add an optional email message.
 1. Select **Share**.
 
+More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
+
 ## Step 10: Turn on Auditing (optional)
 
 While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created/updated records in the future.
