@@ -50,10 +50,6 @@ productDirectory:
     imageSrc: "media/hub-page/power-automate.svg"
     summary: Learn how to create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
     url: /power-automate
-  - title: Microsoft Dataverse documentation
-    imageSrc: "media/hub-page/dataverse.svg"
-    summary: Learn how to securely store and manage data that's used by Power Platform products and services.
-    url: /power-apps/maker/data-platform/
   - title: Power Pages documentation
     imageSrc: "media/hub-page/power-pages.svg"
     summary: Learn how to create websites users to sign in with a wide variety of identities, create and view data in Dataverse, or even browse content anonymously.
@@ -62,18 +58,25 @@ productDirectory:
     imageSrc: "media/hub-page/power-virtual-agents.svg"
     summary: Learn how to build chatbots easily that integrates across a variety of products and services.
     url: /power-virtual-agents
-  - title: AI Builder documentation
-    imageSrc: "media/hub-page/ai-builder.svg"
-    summary: Learn how to bring the power of Microsoft AI to your organization without the need for coding or data science skills.
-    url: /ai-builder
-  - title: Power Fx documentation
-    imageSrc: "media/hub-page/power-fx.svg"
-    summary: Learn about the low-code language used across Power Platform as a general-purpose, strong-typed, declarative and functional programming language.
-    url: /power-platform/power-fx/overview
   - title: Power BI documentation
     imageSrc: "media/hub-page/power-bi.svg"
     summary: Learn how to get expert information and answers to address your needs.
     url: /power-bi
+
+tools:
+  title: Power Platform capabilities 
+  summary: Securely store and manage data using Microsoft Dataverse, use low-code Power Fx language for functional programming across Power Platform, and bring the power of Microsoft AI to your organization using AI Builder in Power Platform. 
+  items:
+    # Card
+  - title: Microsoft Dataverse documentation
+    imageSrc: "media/hub-page/dataverse.svg"
+    url: /power-apps/maker/data-platform/
+  - title: Power Fx documentation
+    imageSrc: "media/hub-page/power-fx.svg"
+    url: /power-platform/power-fx/overview
+  - title: AI Builder documentation
+    imageSrc: "media/hub-page/ai-builder.svg"
+    url: /ai-builder
 
 additionalContent:
   sections:
