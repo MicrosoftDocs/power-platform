@@ -52,7 +52,7 @@ To help you set up application menus, a list of the fields with examples and des
 | Field | Examples| Description |
 | ----------- | ----------- | ----------- |
 | Menu Item Name | "Vendors", "Requisitions", "Purchase Orders" | The short descriptive name of the menu item. |
-| Used By Team | "Vendor Management Team", "Requisition Management Team", "Purchase Orders Team" | The Dataverse group that you previously set up. Select the appropiate group. |
+| Used By Team | "Vendor Management Team", "Requisition Management Team", "Purchase Orders Team" | The Dataverse group that you previously set up. Select the appropriate group. |
 | Menu Group | "Purchasing" | A logical grouping of menu items. Typically, this is a process domain area. |
 | Order | _1_, _2_, _3_, _4_ | The order in which the menu items should be displayed. |
 | Capability | "Vendors", "Requisitions", "Purchase Orders" | The capability or app that corresponds to each menu item. |

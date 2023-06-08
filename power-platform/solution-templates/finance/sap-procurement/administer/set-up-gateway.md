@@ -38,7 +38,6 @@ The on-premises data gateway installation encompasses multiple components instal
 >
 > For more information about SAP services and ports, review [TCP/IP Ports of All SAP Products](https://help.sap.com/docs/Security/575a9f0e56f34c6e8138439eefc32b16/616a3c0b1cc748238de9c0341b15c63c.html).
 
-
 The installed gateway runs as the default machine-local service account, _NT Service\PBIEgwService_. Update the service account to a domain account if setting up Windows or Azure single sign-on (SSO). Additional information is provided in [Step 1](configure-authentication.md#step-1-configure-kerberos-constrained-delegation) in the _Configure authentication_ article.
 
  On-premises data gateway clusters can be created to avoid single points of failure when accessing on-premises data resources. For solutions working with SAP, calls should be forced to the primary gateway in a cluster. Calls are only directed to the second gateway when the primary gateway call fails. To support this scenario, ensure that random load balancing is turned off.

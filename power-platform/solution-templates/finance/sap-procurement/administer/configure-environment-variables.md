@@ -43,8 +43,8 @@ More information: [Customizing solutions](customize-solutions.md).
 | ----------- | ----------- | ----------- |
 | SAP Application Server | JSON string that contains system parameters, host, system number, client, etc. Refer to the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance).  |  |
 | SAP Client ID | The SAP client ID to connect to the SAP system. The SAP backends' client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999. Used separately in IDoc transactions. |  |
-| SAP Count of Rows To Read | Sets the maximum number of records to be returned on any search query and helps to alleviate performance concerns  | 1000 |
-| SAP SPRAS | There are times when you will need to specify a language on specific transactions, such as _ReadMaterial_. We have created an environmental variable called SAP SPRAS that allows you to easily control the value in one place according to your localization requirements |  |
+| SAP Count of Rows To Read | Sets the maximum number of records to be returned on any search query and helps to alleviate performance concerns.  | 1000 |
+| SAP SPRAS | There are times when you will need to specify a language on specific transactions, such as _ReadMaterial_. We have created an environmental variable called SAP SPRAS that allows you to easily control the value in one place according to your localization requirements. |  |
 | SAP System ID | The SAP system's three-letter system ID (Mandatory if connection type Message Server and message server service isn't present). Used separately in IDoc transactions. |  |
 
 More information: [Create an environment variable in a solution](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution) using the [SAP property guidance](/connectors/saperp/#sap-system-property-guidance) or for any local environment variable need.
