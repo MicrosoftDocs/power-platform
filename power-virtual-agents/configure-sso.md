@@ -26,7 +26,7 @@ Power Virtual Agents supports single sign-on (SSO), which means chatbots can sig
 - [Use a custom canvas](customize-default-canvas.md).
 
 
-# [Preview](#tab/preview)
+# [Web app](#tab/webApp)
 
 With single sign-on (SSO), chatbots on your website can sign customers in if they're already signed in to the page or app where the bot is deployed.
 
@@ -144,7 +144,7 @@ Use the code provided in the [Power Virtual Agents GitHub repo](https://github.c
 - [Azure App Registration](/azure/active-directory/develop/quickstart-register-app)
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
