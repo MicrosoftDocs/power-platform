@@ -1,5 +1,5 @@
 ---
-title: SAP procurement solution template for Power Platform (preview)
+title: SAP procurement solution template for Power Platform
 description: Learn about Microsoft Power Platform's SAP procurement template built to work with SAP.
 author: jongilman88
 ms.author: jongilman
@@ -17,9 +17,7 @@ ms.topic: overview
 ms.date: 06/06/2023
 ms.custom: bap
 ---
-# SAP procurement solution template for Power Platform (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# SAP procurement solution template for Power Platform
 
 SAP enterprise resource planning (ERP) is a centralized system of record that facilitates the management of data and business processes between many departments within an organization. This complex system of record serves as the primary enterprise resource planning application for many businesses worldwide.
 
@@ -36,7 +34,7 @@ The SAP procurement solution template consists of the following two solutions th
 - **SAP Base** contains base components used by the SAP procurement solution template and future SAP solution templates.
 - **SAP Procurement** contains components that help transform your procure-to-pay business processes connected to SAP.
 
-You can access the solution templates on AppSource at: <https://aka.ms/DownloadSAPProcurementTemplate>
+You can access the solution templates on AppSource at: <https://aka.ms/AccessSAPProcurementTemplate>
 
 > [!IMPORTANT]
 >

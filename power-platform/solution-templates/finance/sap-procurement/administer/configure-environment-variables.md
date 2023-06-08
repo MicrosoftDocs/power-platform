@@ -1,5 +1,5 @@
 ---
-title: Configure environment variables for SAP and Power Platform SAP solutions  (preview)
+title: Configure environment variables for SAP and Power Platform SAP solutions
 description: Set up environment variables for SAP and Microsoft Power Platform SAP solutions.
 author: jongilman88
 ms.author: jongilman
@@ -19,9 +19,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# Configure environment variables (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Configure environment variables
 
 Environment variables are solution components that store parameter keys and values, which then serve as input to various other application objects, such as Power Automate flows and Power Apps. Enterprise systems often have multiple connection parameters, and manually entering the parameters into each component can be redundant and time-consuming.
 

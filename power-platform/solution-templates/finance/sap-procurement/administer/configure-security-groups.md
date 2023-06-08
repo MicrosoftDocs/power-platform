@@ -1,5 +1,5 @@
 ---
-title: Configure security groups (preview)
+title: Configure security groups
 description: Learn how to set up security groups for enterprise-scale solutions on Microsoft Power Platform.
 author: tverhasselt
 ms.author: thoverh
@@ -19,11 +19,9 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# Set up access control lists in Azure Active Directory (preview)
+# Set up access control lists in Azure Active Directory
 
-[This article is prerelease documentation and is subject to change.]
-
-Users only need access to the apps and flows that align to their departmental function. You can create Azure Active Directory (AD) security groups based on business processes and assign team members to the appropriate groups. The security groups help you to control user access to the apps and visibility to the various components within the apps.
+Users only need access to the apps and flows that align to their departmental function. You can create Azure Active Directory (AD) security groups based on business processes and assign team members to the appropriate groups. The security groups control user access to the apps and view of the various components within the apps.
 
 ## Create Azure Active Directory security groups
 

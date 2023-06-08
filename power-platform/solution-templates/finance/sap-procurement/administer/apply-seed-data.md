@@ -1,5 +1,5 @@
 ---
-title: Apply seed data (preview)
+title: Apply seed data
 description: Apply and manage key seed data that supports the SAP procurement apps and flows.
 author: jongilman88
 ms.author: jongilman
@@ -19,9 +19,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# Apply seed data (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Apply seed data
 
 Data seeding is the process of populating a database with an initial set of data. The SAP Procurement apps and flows require that key seed data be added to and managed by the SAP Administrator model-driven app. Adding seed data ensures an efficient and localized integration with SAP.
 

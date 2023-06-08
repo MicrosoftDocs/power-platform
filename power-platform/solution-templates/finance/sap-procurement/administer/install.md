@@ -1,5 +1,5 @@
 ---
-title: Install the SAP Procurement solution template (preview)
+title: Install the SAP Procurement solution template
 description: Steps to access and install the SAP Procurement solution template.
 author: jongilman88
 ms.author: jongilman
@@ -19,9 +19,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# Install SAP Procurement solution template files (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Install SAP Procurement solution template files
 
 As a Power Platform admin, you can take the following steps to access and install the solution to the development environment you prepared for it.
 

@@ -9,9 +9,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# Get started using the Employee Kudos app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Get started using the Employee Kudos app
 
 Follow the steps to create custom Kudos *Types*, opt-out users, and localize the application strings.
 

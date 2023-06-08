@@ -1,5 +1,5 @@
 ---
-title: Set up on-premises data gateway for SAP (preview)
+title: Set up on-premises data gateway for SAP
 description: Learn how to set up on-premises data gateway for SAP integration with Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
@@ -19,9 +19,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# Set up on-premises data gateway for SAP integration with Power Platform (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up on-premises data gateway for SAP integration with Power Platform
 
 An [on-premises data gateway](/power-platform/admin/wp-onpremises-gateway) acts as a bridge to provide secure data transfer between on-premises data that isn't in the cloud and Microsoft cloud services.
 

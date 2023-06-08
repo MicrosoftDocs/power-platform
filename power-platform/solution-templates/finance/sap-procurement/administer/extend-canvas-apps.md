@@ -1,5 +1,5 @@
 ---
-title: Extend canvas apps (preview)
+title: Extend canvas apps
 description: Best practices and patterns for applying customizations to the canvas Power Apps to enable local business requirements
 author: tverhasselt
 ms.author: thoverh
@@ -19,9 +19,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# How to build a canvas app in Power Apps (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# How to build a canvas app in Power Apps
 
 Power Apps is a high-productivity platform for business apps. Canvas apps are built in Power Apps. You can create tailored, pixel-perfect interfaces with the power of a blank canvas. And then, render the app in the browser or embedded in various containers such as Teams and SharePoint sites.
 

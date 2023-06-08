@@ -1,5 +1,5 @@
 ---
-title: Install the Power Platform Employee Kudos solution template (preview)
+title: Install the Power Platform Employee Kudos solution template
 description: Learn how to install the Employee Kudos solution template for Power Platform.
 author: tshanep
 ms.author: shanep
@@ -9,9 +9,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# Install the Employee Kudos template (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Install the Employee Kudos template
 
 Take the following steps to install the Employee Kudos solution template.
 

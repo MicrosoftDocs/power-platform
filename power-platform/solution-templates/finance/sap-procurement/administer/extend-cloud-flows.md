@@ -1,5 +1,5 @@
 ---
-title: Extend cloud flows (preview)
+title: Extend cloud flows
 description: Apply customizations to the cloud flows to to enable local business requirements.
 author: tverhasselt
 ms.author: thoverh
@@ -17,9 +17,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# How the cloud flows are developed and used (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# How the cloud flows are developed and used
 
 The canvas Power Apps integrate with SAP through a portfolio of pre-configured cloud flows. By orchestrating a series of transformations and using the [SAP enterprise resource planning (ERP) Connector](/connectors/saperp/), these cloud flows greatly simplify the process of integrating data with SAP. Each SAP object managed from the canvas app is mapped to a series of search, create, read and update flows. For vendor object as an example, there exists these 4 cloud flows:
 

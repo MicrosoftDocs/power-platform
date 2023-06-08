@@ -1,5 +1,5 @@
 ---
-title: Set up connections (preview)
+title: Set up connections
 description: Learn how to set up data connections for SAP Procurement apps and flows.
 author: jongilman88
 ms.author: jongilman
@@ -17,9 +17,7 @@ ms.date: 06/06/2023
 ms.custom: bap-template
 ---
 
-# Set up connection information in the solutions (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up connection information in the solutions
 
 Power Platform services use connectors, like [SAP ERP](/connectors/saperp/), to work with external data sources. A [Connector](/connectors/connectors) is a proxy or a wrapper around an application programming interface (API) that allows the underlying service to talk to Power Platform.
 
