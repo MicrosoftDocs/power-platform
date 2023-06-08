@@ -21,11 +21,11 @@ ms.custom: bap-template
 
 # Set up access control lists in Azure Active Directory
 
-Users only need access to the apps and flows that align to their departmental function. You can create Azure Active Directory (AD) security groups based on business processes and assign team members to the appropriate groups. The security groups control user access to the apps and view of the various components within the apps.
+Users only need access to the apps and flows that align to their departmental function. You can create Azure Active Directory (AD) security groups based on business processes and assign team members to the appropriate groups. The security groups control user access to the apps and visibility to the various components within the apps.
 
 ## Create Azure Active Directory security groups
 
-The following deployment model illustrates how users can be assigned to different Azure AD security groups based on department function.
+The following deployment model illustrates how you assign users to different Azure AD security groups based on their departmental function.
 
 ### Admin security group
 
@@ -48,7 +48,7 @@ More information:
 
 ## Create Dataverse group teams
 
-The [menu items](apply-seed-data.md#manage-menu-options) visible to users in the canvas apps are managed by admins directly in the SAP Administrator app. Access and visibility to those menu items is controlled by [Dataverse group team](/power-platform/admin/manage-group-teams) membership. Dataverse group team membership is governed by the associated [AAD security group](#create-azure-active-directory-security-groups) and ensures one of two options:
+Admins manage the [menu items](apply-seed-data.md#manage-menu-options) visible to users in the canvas apps directly in the SAP Administrator app. [Dataverse group team](/power-platform/admin/manage-group-teams) membership controls access and visibility to the menu items. [AAD security groups](#create-azure-active-directory-security-groups) govern Dataverse group team membership and ensure one of two options:
 
 - Users have visibility and access to the appropriate menu items in the canvas apps when they are added to the security group.
 - Users lose visibility and access when they are removed from the security group.
@@ -93,7 +93,7 @@ More information:
 
 ## Share access to the apps and flows
 
-Share access to the apps and flows using the example AAD security groups created. By sharing the apps with the appropriate security group, members will get access to only those apps.
+Security group members can only access apps and flows that are shared with them. Use the security groups model as an example to help you set up security groups for your organization.
 
 Share the flows with _Run only privileges_ so users have access to embedded flows and the SAP ERP, Dataverse, and Office 365 connector user services use the triggering user's credentials.
 
