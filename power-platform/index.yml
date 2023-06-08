@@ -81,24 +81,31 @@ additionalContent:
       items:
         # Card
         - title: Administration
+          summary: "Learn about how to administer using Power Platform admin center"
           url: ./admin/index.yml
         # Card
         - title: Licensing
+          summary: "Understand licensing across Power Platform products and services"
           url: ./admin/pricing-billing-skus.md
         # Card
         - title: Power Platform developer documentation
+          summary: "Learn about extending Power Platform using code first and integration with back-end services"
           url: ./developer/index.yml
         # Card
         - title: Real-world architecture examples
+          summary: "Learn from real-world examples of solution architectures created using Power Platform"
           url: ./guidance/architecture/real-world-examples/overview.md
         # Card
         - title: Application lifecycle management (ALM) guide
+          summary: "Learn how to implement ALM using Power Platform products and services"
           url: ./alm/index.yml
         # Card
         - title: Adoption best practices
+          summary: "Learn how to create and implement business and technology strategy to succeed with Power Platform"
           url: ./guidance/adoption/methodology.md
         # Card
         - title: Center of Excellence (CoE) Starter kit
+          summary: "Learn about CoE Starter Kit and get started to develop an adoption and support strategy for Power Platform"
           url: ./guidance/coe/starter-kit.md
     - title: Related products and capabilities
       items:
