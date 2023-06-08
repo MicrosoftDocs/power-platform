@@ -1,0 +1,62 @@
+- name: Solution templates for Power Platform (preview)
+  href: overview.md
+- name: Finance - SAP Procurement
+  items:
+  - name: Overview
+    href: finance/sap-procurement/overview.md
+  - name: Administer
+    items:
+    - name: Get started
+      href: finance/sap-procurement/administer/get-started.md
+    - name: Requirements
+      href: finance/sap-procurement/administer/requirements.md
+    - name: Set up environments and DLP policies
+      href: finance/sap-procurement/administer/set-up-environments-data-policies.md
+    - name: Set up on-premises data gateway
+      href: finance/sap-procurement/administer/set-up-gateway.md
+    - name: Configure authentication
+      href: finance/sap-procurement/administer/configure-authentication.md
+    - name: Install solution template
+      href: finance/sap-procurement/administer/install.md
+    - name: Set up connections
+      href: finance/sap-procurement/administer/set-up-connections.md
+    - name: Configure environment variables
+      href: finance/sap-procurement/administer/configure-environment-variables.md
+    - name: Configure security groups
+      href: finance/sap-procurement/administer/configure-security-groups.md
+    - name: Apply seed data
+      href: finance/sap-procurement/administer/apply-seed-data.md
+    - name: Monitor errors
+      href: finance/sap-procurement/administer/monitor-errors.md
+    - name: Customize solutions
+      href: finance/sap-procurement/administer/customize-solutions.md
+    - name: Extend canvas apps
+      href: finance/sap-procurement/administer/extend-canvas-apps.md
+    - name: Extend model-driven apps and Dataverse
+      href: finance/sap-procurement/administer/extend-model-apps-dataverse.md
+    - name: Extend cloud flows
+      href: finance/sap-procurement/administer/extend-cloud-flows.md
+  - name: Use
+    items:
+    - name: Vendor management
+      href: finance/sap-procurement/use/vendor-management.md
+    - name: Requisition management
+      href: finance/sap-procurement/use/requisition-management.md
+    - name: Purchase orders management
+      href: finance/sap-procurement/use/purchase-order-management.md
+  - name: FAQs
+    href: finance/sap-procurement/faqs.md
+- name: Human Resources - Employee Kudos
+  items:
+  - name: Overview
+    href: hr/employee-kudos/overview.md
+  - name: Install
+    href: hr/employee-kudos/install.md
+  - name: Use
+    href: hr/employee-kudos/use.md  
+- name: Related content
+  items:
+  - name: Power Apps documentation
+    href: /power-apps/
+  - name: Power Automate documentation
+    href: /power-automate/
