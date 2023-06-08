@@ -42,26 +42,22 @@ highlightedContent:
 
 productDirectory:
   items:
-  - title: Power Apps
+  - title: Power Apps documentation
     imageSrc: "media/hub-page/power-apps.svg"
     summary: Learn how to quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
     url: /power-apps
-  - title: Power Automate
+  - title: Power Automate documentation
     imageSrc: "media/hub-page/power-automate.svg"
     summary: Learn how to create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
     url: /power-automate
-  - title: Microsoft Dataverse
+  - title: Microsoft Dataverse documentation
     imageSrc: "media/hub-page/dataverse.svg"
     summary: Learn how to securely store and manage data that's used by Power Platform products and services.
     url: /power-apps/maker/data-platform/
-  - title: Power Pages
+  - title: Power Pages documentation
     imageSrc: "media/hub-page/power-pages.svg"
     summary: Learn how to create websites users to sign in with a wide variety of identities, create and view data in Dataverse, or even browse content anonymously.
     url: /power-pages
-  - title: Power BI
-    imageSrc: "media/hub-page/power-bi.svg"
-    summary: Learn how to get expert information and answers to address your needs.
-    url: /power-bi
   - title: Power Virtual Agents
     imageSrc: "media/hub-page/power-virtual-agents.svg"
     summary: Learn how to build chatbots easily that integrates across a variety of products and services.
@@ -74,6 +70,10 @@ productDirectory:
     imageSrc: "media/hub-page/power-fx.svg"
     summary: Learn about the low-code language used across Power Platform as a general-purpose, strong-typed, declarative and functional programming language.
     url: /power-platform/power-fx/overview
+  - title: Power BI documentation
+    imageSrc: "media/hub-page/power-bi.svg"
+    summary: Learn how to get expert information and answers to address your needs.
+    url: /power-bi
 
 additionalContent:
   # Supports up to 3 sections
