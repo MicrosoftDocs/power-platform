@@ -1,25 +1,22 @@
 ---
-title: "Set up ALM accelerator for Microsoft Power Platform using Admin App | MicrosoftDocs"
-description: "The ALM accelerator for Microsoft Power Platform helps you follow ALM patterns and practices to source-control and move your solutions from your development environment to test and production environments by using Azure DevOps. This guide walks through the setup steps of the accelerator using the Admin App."
+title: Configure the ALM Accelerator using the admin app
+description: Learn how to configure the ALM Accelerator for Power Platform using the administration app.
 author: jenschristianschroder
 ms.topic: conceptual
 ms.date: 04/10/2023
 ms.subservice: guidance
+author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks
+ms.custom: bap-template
 ---
-# Set up ALM accelerator for Microsoft Power Platform
 
-The ALM Accelerator for Microsoft Power Platform components enable makers to apply source-control strategies with Azure DevOps, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of the downstream technologies and be able to switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
+# Configure the ALM Accelerator using the admin app
 
-The ALM accelerator doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
+You can configure the components of the ALM Accelerator for Power Platform either using its administration app or [manually](setup-components-manually). This article guides you through using the admin app and is structured in seven sections:
 
-## Document structure
-
-This setup guide is structured into seven main sections:
-
-- [**Prerequisites**](#prerequisites): Considerations and requirements to complete the setup.
-- [**Azure AD App Registration setup**](#azure-ad-app-registration-setup): This section walks through the base setup of the ALM accelerator for Microsoft Power Platform. The base setup consists of the steps and configurations required.
+- [**Prerequisites**](#prerequisites): This section describes considerations and requirements to complete before you start.
+- [**Configure Azure AD App Registrations**](#azure-ad-app-registration-setup): This section provides instructions to configure the necessary Azure Activity Directory (Azure AD) app registrations.
 - [**Installing Azure DevOps extensions**](#install-azure-devops-extensions): This section list the required Azure DevOps extensions and how to install them.
 - [**Importing the solution and configuring the app**](#importing-the-solution-and-configuring-the-app): These are the steps required to import the actual ALM Accelerator for Power Platform canvas app and configure the included custom connector.
 - [**Set up your first Azure DevOps project for use with ALM Accelerator for Power Platform**](#set-up-your-first-azure-devops-project-for-use-with-alm-accelerator-for-power-platform): Walk through of using the Azure DevOps Projects Wizard to create and configure an Azure DevOps project to be used with ALM Accelerator for Power Platform.

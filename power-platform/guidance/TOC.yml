@@ -267,9 +267,9 @@
               href: alm-accelerator/scenarios/tenant-deployments.md
         - name: Install the ALM Accelerator
           items:
-            - name: Set up the ALM Accelerator using the admin app
+            - name: Configure the ALM Accelerator using the admin app
               href: alm-accelerator/setup-admin-tasks.md
-            - name: Set up the ALM Accelerator manually
+            - name: Configure the ALM Accelerator manually
               href: alm-accelerator/setup-components-manually.md
             - name: Upgrade the ALM Accelerator
               href: alm-accelerator/setup-upgrade-configuration.md
@@ -283,9 +283,9 @@
               href: alm-accelerator/setup-data-deployment-configuration.md
             - name: Configure user permissions
               href: alm-accelerator/setup-app-user-permissions.md
-            - name: Configure ALM Accelerator pipelines
+            - name: Configure pipelines
               href: alm-accelerator/configure-azuredevops-pipelines.md
-            - name: Set up pipeline sync
+            - name: Configure pipeline sync
               href: alm-accelerator/setup-pipeline-sync.md
             - name: Customize deployment pipelines with templates
               href: alm-accelerator/customize-deployment-pipelines.md
@@ -311,7 +311,7 @@
               href: alm-accelerator/build-package-codefirst-components.md
             - name: Maintenance tasks
               href: alm-accelerator/maintain-admin-tasks.md
-            - name: ALM Accelerator learning catalog
+            - name: Learn more about the ALM Accelerator
               href: alm-accelerator/learning-resources-catalog.md
     - name: Power Platform Creator Kit
       items:
