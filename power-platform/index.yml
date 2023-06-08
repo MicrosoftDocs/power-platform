@@ -76,8 +76,30 @@ productDirectory:
     url: /power-bi
 
 additionalContent:
-  # Supports up to 3 sections
   sections:
+    - title: Power Platform administration and guidance
+      items:
+        # Card
+        - title: Administration
+          url: ./admin/index.yml
+        # Card
+        - title: Licensing
+          url: ./admin/pricing-billing-skus.md
+        # Card
+        - title: Power Platform developer documentation
+          url: ./developer/index.yml
+        # Card
+        - title: Real-world architecture examples
+          url: ./guidance/architecture/real-world-examples/overview.md
+        # Card
+        - title: Application lifecycle management (ALM) guide
+          url: ./alm/index.yml
+        # Card
+        - title: Adoption best practices
+          url: ./guidance/adoption/methodology.md
+        # Card
+        - title: Center of Excellence (CoE) Starter kit
+          url: ./guidance/coe/starter-kit.md
     - title: Related products and capabilities
       items:
         # Card
