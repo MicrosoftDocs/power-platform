@@ -42,7 +42,7 @@ You can also use the **[Clear](function-clear-collect-clearcollect.md)** functio
 When used with a data source, these functions cannot be delegated. Only the first portion of the data source will be retrieved and then the function applied.  This may not represent the complete story. A warning may appear at authoring time to remind you of this limitation.
 
 #### Delegation support (Experimental)
-Delegation support for RemoveIf is now in Experimental Preview (default OFF) for data sources that support it.  If a data source does not support this feature, Power Apps will now send a query to the server and retrieve all data that matches the filter expression up to the maxium of either 500/2000 or the data page size. Then, it will perform a delete operation on each of those records with individual calls to the server. 
+Delegation support for RemoveIf is now in Experimental Preview (default OFF) for data sources that support it. If a data source doesn't support this feature, Power Apps will send a query to the server and retrieve all data that matches the filter expression up to the maxium of either 500, 2000, or the data page size. Then, it will perform a delete operation on each of those records with individual calls to the server. 
 
 ## Syntax
 
