@@ -7,6 +7,8 @@ ms.reviewer: ellenwehrle
 ms.topic: get-started
 ms.date: 06/06/2023
 ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
 ---
 
 # Get started using the Employee Kudos app (preview)
