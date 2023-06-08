@@ -161,16 +161,16 @@ To create your own badges, refer to [Create Custom Badges](use.md#create-custom-
 
 ## Step 9: Share the App
 
-1. Go to [Power Apps](https://make.powerapps.com/).
-1. Select on the **Environments** tab and select the environment where the solution was installed.
-1. Select on **Apps** and localize the _Kudos App_.
-1. Select on the _three dots_ and select **Share**.
-1. Look for the users that you want to share the app with.
-    - For users that should have access to edit the app, check the _Co- owner_ box.
+1. In the environment that Kudos is installed, select **Apps**.
+1. Locate the _Kudos App_. Note: If you did not install the Kudos solution and it has not been shared with you, then you will have to navigate into the Kudos solution and find the app there.
+1. Select the _three dots_ to the right of the Kudos app and select **Share**.
+1. Search for and add the users who you want to share the app with.
+    - For users that should have access to edit the app, check the _Co-owner_ box.
     - For regular users of the app, leave that checkbox empty.
-    - If everyone in the company should be able to use the app, you can look for _Everyone_ in the _Enter a name_ box.
-1. Select on the three dots and select **Edit**.
-    :::image type="content" source="media/install/ShareApp4.png" alt-text="Edit the app":::
+    - If everyone in the organization should be able to use the app, you can look for _Everyone_ in the _Enter a name_ box.
+1. In the _Data permission_ area, you can select roles from a drop-down list. It's next to the Microsoft Dataverse tables that the Kudos app uses. Be sure to select the correct Kudos role (Employee, Manager, Program Admin) along with _Basic User_.
+1. Add an optional email message.
+1. Select **Share**.
 
 ## Step 10: Turn on Auditing (optional)
 
