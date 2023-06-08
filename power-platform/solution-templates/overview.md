@@ -10,6 +10,8 @@ ms.reviewer: ellenwehrle
 ms.topic: overview
 ms.date: 06/06/2023
 ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
 ---
 
 # What are solution templates for Power Platform?

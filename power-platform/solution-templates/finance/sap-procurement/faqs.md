@@ -15,7 +15,9 @@ contributors:
 ms.reviewer: ellenwehrle
 ms.topic: FAQs
 ms.date: 04/27/2023
-ms.custom: bap
+ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
 ---
 
 # Frequently asked questions about SAP procurement integration with Power Platform

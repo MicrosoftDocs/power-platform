@@ -15,6 +15,8 @@ ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
 ms.date: 06/06/2023
 ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
 ---
 
 # Set up connection information in the solutions (preview)
