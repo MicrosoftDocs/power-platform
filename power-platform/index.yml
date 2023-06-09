@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Discover and learn how to make the most of Microsoft Power Platform products using documentation and training. Quickly and easily build apps using Power Apps. Automate business tasks using Power Automate. View and analyze insights using Power BI. Rapidly design, configure and publish modern websites using Power Pages. Build intelligent bots with no-code interface using Power Virtual Agents.
+summary: Discover and learn how to make the most of Microsoft Power Platform products using documentation and training. Quickly and easily build apps using Power Apps, automate business tasks using Power Automate, view and analyze insights using Power BI, rapidly design, configure and publish modern websites using Power Pages, build intelligent bots with no-code interface using Power Virtual Agents.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
@@ -17,42 +17,36 @@ metadata:
 
 highlightedContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
-
   items:
-
     # Card
     - title: Power Platform training and certifications
       itemType: learn
       url: /training/powerplatform/
-
     # Card
     - title: What's new in Power Platform?
       itemType: whats-new
       url: /dynamics365/release-plans/
-
     # Card
     - title: Power Platform administration
       itemType: concept
       url: /power-platform/admin/
-
     # Card
     - title: Power Platform troubleshooting
       itemType: reference
       url: /troubleshoot/power-platform/
-
 productDirectory:
   items:
   - title: Power Apps documentation
     imageSrc: "media/hub-page/power-apps.svg"
-    summary: Learn how to quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
+    summary: Learn how to quickly build modern low-code apps for business challenges in your organization.
     url: /power-apps
   - title: Power Automate documentation
     imageSrc: "media/hub-page/power-automate.svg"
-    summary: Learn how to create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
+    summary: Learn how to create flows quickly using low-code platform to automate business tasks and workflows.
     url: /power-automate
   - title: Power Pages documentation
     imageSrc: "media/hub-page/power-pages.svg"
-    summary: Learn how to create websites users to sign in with a wide variety of identities, create and view data in Dataverse, or even browse content anonymously.
+    summary: Learn how to create, host, customize, extend, and administer modern external-facing business websites.
     url: /power-pages
   - title: Power Virtual Agents documentation
     imageSrc: "media/hub-page/power-virtual-agents.svg"
@@ -62,7 +56,6 @@ productDirectory:
     imageSrc: "media/hub-page/power-bi.svg"
     summary: Learn how to get expert information and answers to address your needs.
     url: /power-bi
-
 tools:
   title: Power Platform capabilities 
   summary: Securely store and manage data using Microsoft Dataverse, use low-code Power Fx language for functional programming across Power Platform, and bring the power of Microsoft AI to your organization using AI Builder in Power Platform. 
@@ -77,7 +70,6 @@ tools:
   - title: AI Builder documentation
     imageSrc: "media/hub-page/ai-builder.svg"
     url: /ai-builder
-
 additionalContent:
   sections:
     - title: Power Platform administration and guidance
@@ -92,7 +84,7 @@ additionalContent:
           url: ./admin/pricing-billing-skus.md
         # Card
         - title: Power Platform developer documentation
-          summary: "Learn about extending Power Platform using code first and integration with back-end services"
+          summary: "Learn about developing apps and services in Power Platform using code"
           url: ./developer/index.yml
         # Card
         - title: Real-world architecture examples
@@ -104,11 +96,11 @@ additionalContent:
           url: ./alm/index.yml
         # Card
         - title: Adoption best practices
-          summary: "Learn how to create and implement business and technology strategy to succeed with Power Platform"
+          summary: "Learn how to create and implement strategies to succeed with Power Platform"
           url: ./guidance/adoption/methodology.md
         # Card
         - title: Center of Excellence (CoE) Starter kit
-          summary: "Learn about CoE Starter Kit and get started to develop an adoption and support strategy for Power Platform"
+          summary: "Learn about how develop an adoption and support strategy for Power Platform"
           url: ./guidance/coe/starter-kit.md
     - title: Related products and capabilities
       items:
