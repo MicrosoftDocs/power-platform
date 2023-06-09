@@ -36,13 +36,13 @@ The general availability deployment is based on the regions where environments a
 |Regions  |Schedule for 2023 wave 1 general availability deployment|
 |---------|---------|
 | Canada<br />South America<br />India<br />France<br />South Africa <br />Germany<br />Switzerland<br />Norway<br />Korea<br>Singapore  | Friday, September 29, 2023 to Monday, October 2, 2023 |
-|United Arab Emirates<br /> Japan<br />Asia Pacific<br />Great Britain<br>Australia<br>GCC High     | Friday, October 6, 2023 to Monday, October 9, 2023   |
+|United Arab Emirates<br /> Japan<br />Asia Pacific<br />Great Britain<br>Australia<br>GCC High\*     | Friday, October 6, 2023 to Monday, October 9, 2023   |
 |Europe    | Friday, October 13, 2023 to Monday, October 16, 2023      |
 |North America     |  Friday, October 20, 2023 to Monday, October 23, 2023            |
-|GCC<br>DoD | Friday, October 27, 2023 to Monday, October 30, 2023  |
-|Mooncake | Friday, October 27, 2023 to Monday, October 30, 2023   |
+|GCC\*<br>DoD\* | Friday, October 27, 2023 to Monday, October 30, 2023  |
+|China | Friday, October 27, 2023 to Monday, October 30, 2023   |
 
-For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
+\*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 
 ### See also
 
