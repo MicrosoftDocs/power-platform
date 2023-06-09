@@ -40,7 +40,9 @@ The general availability deployment is based on the regions where environments a
 |Europe    | Friday, October 13, 2023 to Monday, October 16, 2023      |
 |North America     |  Friday, October 20, 2023 to Monday, October 23, 2023            |
 |GCC<br>DoD | Friday, October 27, 2023 to Monday, October 30, 2023  |
-|Mooncake | Friday, October 27, 2023 to Monday, October 30, 2023  <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
+|Mooncake | Friday, October 27, 2023 to Monday, October 30, 2023   |
+
+For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 
 ### See also
 
