@@ -1,6 +1,6 @@
 ---
 title: Configure the ALM Accelerator using the admin app
-description: Learn how to configure the ALM Accelerator for Power Platform using the administration app.
+description: Learn how to configure the ALM Accelerator for Power Platform using the built-in administration app.
 author: jenschristianschroder
 ms.topic: conceptual
 ms.date: 04/10/2023
@@ -15,249 +15,294 @@ ms.custom: bap-template
 
 You can configure the components of the ALM Accelerator for Power Platform either using its administration app or [manually](setup-components-manually). This article guides you through using the admin app and is structured in seven sections:
 
-- [**Prerequisites**](#prerequisites): This section describes considerations and requirements to complete before you start.
-- [**Configure Azure AD App Registrations**](#azure-ad-app-registration-setup): This section provides instructions to configure the necessary Azure Activity Directory (Azure AD) app registrations.
-- [**Installing Azure DevOps extensions**](#install-azure-devops-extensions): This section list the required Azure DevOps extensions and how to install them.
-- [**Importing the solution and configuring the app**](#importing-the-solution-and-configuring-the-app): These are the steps required to import the actual ALM Accelerator for Power Platform canvas app and configure the included custom connector.
-- [**Set up your first Azure DevOps project for use with ALM Accelerator for Power Platform**](#set-up-your-first-azure-devops-project-for-use-with-alm-accelerator-for-power-platform): Walk through of using the Azure DevOps Projects Wizard to create and configure an Azure DevOps project to be used with ALM Accelerator for Power Platform.
-- [**Set up makers to use the ALM Accelerator for Power Platform app**](#set-up-makers-to-use-the-alm-accelerator-for-power-platform-app): A short introduction to using the ALM Accelerator for Power Platform canvas app.
+- [**Prerequisites**](#prerequisites)
+- [**Configure Azure AD app registrations**](#configure-azure-ad-app-registrations)
+- [**Install Azure DevOps extensions**](#install-azure-devops-extensions)
+- [**Import the solution and configure the app**](#import-the-solution-and-configure-the-app)
+- [**Set up your first Azure DevOps project for use with the ALM Accelerator**](#set-up-your-first-azure-devops-project-for-use-with-the-alm-accelerator)
+- [**Create an app user in your Dataverse environments**](#create-an-app-user-in-your-dataverse-environments)
+- [**Set up makers to use the ALM Accelerator app**](#set-up-makers-to-use-the-alm-accelerator-app)
 
 ## Prerequisites
 
-### Dataverse environments
+Before you install the ALM Accelerator for Power Platform, make sure you've met the following prerequisites.
 
-The ALM accelerator for Microsoft Power Platform must be installed into a Power Platform environment with a Microsoft Dataverse database. From this environment, the ALM Accelerator for Power Platform app can be used to deploy solutions from development to validation to testing to production. All of these environments will also require a Dataverse database to deploy your solutions.
+- The ALM Accelerator must be installed in a Power Platform environment that has a Microsoft Dataverse database. All the environments you use the ALM Accelerator to deploy solutions to also require a Dataverse database.
 
-> [!NOTE]
-> Currently, the ALM accelerator isn't compatible with Dataverse for Teams. Both the ALM Accelerator for Power Platform app and the associated Azure DevOps pipelines assume that the full version of Dataverse is being used in all environments.
-You'll need to create an environment in which to set up the ALM accelerator for Microsoft Power Platform. We recommend that you install the accelerator in the same environment as other CoE Starter Kit solutions. For more information about how to decide on the best strategy for your organization, go to [Establishing an environment strategy for Microsoft Power Platform](../adoption/environment-strategy.md) and [Environment strategy for ALM](../../alm/environment-strategy-alm.md).
+  > [!NOTE]
+  > The ALM Accelerator isn't compatible with Dataverse for Teams. Both the ALM Accelerator app and the associated pipelines assume that you're using the full version of Dataverse in all environments.
 
-### Azure DevOps organization
+  We recommend you install the ALM Accelerator in the same environment as other CoE Starter Kit solutions. Learn more about how to determine the best strategy for your organization:
 
-The ALM accelerator uses Azure DevOps for source control and deployments (pipelines). You can sign up for Azure DevOps for free for up to five users on the [Azure DevOps](https://azure.microsoft.com/services/DevOps/) site.
+  - [Establishing an environment strategy for Microsoft Power Platform](../adoption/environment-strategy.md)
+  - [Environment strategy for ALM](../../alm/environment-strategy-alm.md)
 
-### Users and permissions
+- The ALM Accelerator uses Azure DevOps for source control and deployments. If you don't have an Azure DevOps organization, sign up for free for up to five users on the [Azure DevOps site](https://azure.microsoft.com/services/DevOps/).
 
-To complete the steps in this section, you need the following users and permissions in Microsoft Power Platform, Azure DevOps, and Azure:
+- To complete the steps in this section, you need the following users and permissions in Azure, Azure DevOps, and Power Platform:
 
-- A licensed Azure user with permissions to create and view Azure AD groups, create app registrations, and grant admin consent to app registrations in Azure AD.
-- A licensed Azure DevOps user with permissions to create and manage pipelines, service connections, repos, and extensions.
-- A licensed Microsoft Power Platform user with permissions to create application users and grant administrative permissions to the application user.
+  - A licensed Azure user with permissions to create and view Azure Active Directory (Azure AD) groups, create app registrations, and grant admin consent to app registrations in Azure AD
+  - A licensed Azure DevOps user with permissions to create and manage pipelines, service connections, repos, and extensions
+  - A licensed Power Platform user with permissions to create application users and grant them administrative permissions
 
-### Connectors and data loss prevention policy
+- The following connectors must be available to be used together in the environment into which the ALM Accelerator is imported:
 
-For the ALM Accelerator for Power Platform canvas app to work, the following connectors must be available to be used together in the environment into which the ALM accelerator is imported:
+  - [Dataverse (legacy)](/connectors/commondataservice/)
+  - HTTP
+  - [Power Apps for Makers](/connectors/powerappsforappmakers/)
+  - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
+  - ALM Accelerator Custom DevOps (this connector is created as part of the [accelerator solution import](#import-the-solution-and-configure-the-app))
+  - [Office 365 Users](/connectors/office365users/)
+  - HTTP
 
-- [Dataverse (legacy)](/connectors/commondataservice/)
-- HTTP
-- [Power Apps for Makers](/connectors/powerappsforappmakers/)
-- [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
-- ALM Accelerator Custom DevOps (this connector is created as part of the [accelerator solution import](#importing-the-solution-and-configuring-the-app))
-- [Office 365 Users](/connectors/office365users/)
-- HTTP
+- [Install the Creator Kit](/power-platform/guidance/creator-kit/setup) in the environment where you install the ALM Accelerator.
 
-### Creator Kit
+## Configure Azure AD app registrations
 
-The ALM Accelerator includes features that required the installation of the **Creator Kit** in the environment where you install ALM Accelerator for Power Platform.
-
-To install the **Creator Kit** follow steps described here: [Install Creator Kit](/power-platform/guidance/creator-kit/setup)
-
-## Azure AD App Registration setup
-
-The following steps guide you through setting up the Azure Active Directory App Registration for use with the ALM Accelerator for Power Platform. These steps are general to the functionality of the ALM accelerator, and aren't project-specific or solution-specific.
+The following steps are general to the functionality of the ALM accelerator and aren't specific to any project or solution.
 
 ### Create an app registration in your Azure AD environment
 
-Creating an app registration for the ALM accelerator is a one-time setup step to grant permissions to the app and the associated pipelines, permissions required to perform operations in Azure DevOps and Power Apps or Dataverse. The following steps show how to create a single app registration with permissions for both Dataverse and Azure DevOps. However, you might want to separate responsibilities specifically into Dataverse and Azure DevOps by creating separate app registrations.
+Create an app registration for the ALM Accelerator to grant the app and associated pipelines permissions required to perform operations in Azure DevOps and Power Apps or Dataverse. You only need to do this once.
 
-> [!NOTE]
-> When separating the responsibilities of Azure App registration you should consider both maintenance and security aspect. Read the [Considerations for App Registrations](app-registration-strategy.md) page to understand more.
+The following steps show how to create a single app registration with permissions for both Dataverse and Azure DevOps. However, you might want to create separate app registrations to divide responsibilities. You should [consider how separate app registrations affect both maintenance and security](app-registration-strategy.md) before you decide on an app registration strategy.
+
+#### Create the app registration
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. Go to **Azure Active Directory** > **App registrations**.
+1. Select **Azure Active Directory** > **App registrations**.
 
-3. Select **New registration**, and then give the registration a name, such as **ALMAcceleratorServicePrincipal**. Leave all other options as default, and then select **Register**.
+1. Select **+ New registration**, and then give the registration a name, such as *ALMAcceleratorServicePrincipal*.
 
-4. Select **API permissions** > **+ Add a permission**.
+1. Leave all other options at their default values, and select **Register**.
 
-5. Select **Dynamics CRM**, and configure permissions as follows:
+#### Add permissions to the app registration
 
-    - Select **Delegated permissions**.
-    - Select **user_impersonation**.
+1. In the left side panel, select **API permissions**.
 
-6. Select **Add permissions**.
+1. Select **+ Add a permission**.
 
-7. Repeat the preceding steps for the following permissions:
-    - **PowerApps-Advisor (Analysis All)**. This is required for running static analysis via the [app checker](../../alm/checker-api/overview.md). This permission can be found under **APIs my organization uses**.
+1. Select **Dynamics CRM**, and then select **Delegated permissions** and **user_impersonation**.
 
-    - **DevOps**. This is required for connecting to Azure DevOps via the custom connector in the ALM accelerator app. This permission can either be found under Microsoft APIs or under **APIs my organization uses**.
+1. Select **Add permissions** to add the Dynamics CRM API user_impersonation permission to the app registration.
 
-      If adding the Azure DevOps permissions from the APIs my organization uses list, you should copy the **Application (client) ID** for later use.
+1. Select **+ Add a permission** again.
 
-        > [!IMPORTANT]
-        > You'll use this value later and specifically call it out as the **DevOps Application (client) ID**, which is different from the **Application (client) ID** you'll copy in step 12 of this procedure.
-      ![Copy the Application client ID.](media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
+1. Select the **APIs my organization uses** tab. Search for and select **PowerApps-Advisor**, and then select **Delegated permissions** and **Analysis.All** (admin consent not required).
 
-      If you can't find the Azure DevOps permissions in the **APIs my organization uses** you can get the **DevOps Application (client) ID** by following these steps:
+    This permission is required to run static analysis through the [app checker](../../alm/checker-api/overview.md).
 
-      1. Open a private browser session and go to `https://dev.azure.com/[your devops organization]/_apis`
-      2. After being redirected to the sign-in page, copy the value of the **client_id** parameter in the url on the sign-in page
+1. Select **Add permissions** to add the PowerApps-Advisor API Analysis.All permission to the app registration.
 
-      ![Copy the value of the client id parameter.](media/almacceleratorpowerplatform-components/aa4pp-devops-clientid.png)
+1. Select **+ Add a permission** again.
 
-8. After adding permissions in your app registration, select **Grant Admin consent for (your tenant)**.
+1. On either the **Microsoft APIs** tab or the **APIs my organization uses** tab, select **Azure DevOps**, and then select **Delegated permissions** and **user_impersonation**.
 
-9. Select **Certificates & Secrets**, and then select **New client secret**.
+    This permission is required for connecting to Azure DevOps through the custom connector in the ALM Accelerator app.
 
-10. Set the **Expiration**, and then select **Add**.
+1. If you added the Azure DevOps permission from the **APIs my organization uses** tab, copy the **Application (client) ID** for use later in this procedure.
 
-11. After adding the secret, copy the value and store it for safekeeping to be used later.
+    You'll use it as the **DevOps Application (client) ID**, which is different from the **Application (client) ID** you'll copy later in this procedure.
 
-12. Return to the **Overview** section of your app registration, and copy the **Application (client) ID** and **Directory (tenant) ID**.
+    :::image type="content" source="media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png" alt-text="Screenshot of the Request API permissions window, with the APIs my organization uses tab and Application (client) ID highlighted.":::<!-- EDITOR'S NOTE: Please crop and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
-     > [!IMPORTANT]
-     > You'll use this value later and call it out as the **Application (client) ID**, which is different from the **DevOps Application (client) ID** you copied earlier in step 7.
-13. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
+    If you can't find the Azure DevOps permission on the **APIs my organization uses** tab, follow these steps to get the **DevOps Application (client) ID**:
 
-14. Set the **Redirect URI** to `https://global.consent.azure-apim.net/redirect`.
+      1. Open a private browser window and go to `https://dev.azure.com/<your devops organization>/_apis`.
+      1. On the sign-in page, copy the value of the **client_id** parameter in the URL.
 
-    > [!NOTE]
-    > You might need to update this later when configuring your custom connector after you've installed the app, if this URL is different from the **Redirect URI** populated in the custom connector.
-15. Select **Configure**.
+      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-devops-clientid.png" alt-text="Screenshot of an Azure DevOps organization sign-in page, with the client_id parameter in the URL highlighted.":::<!-- EDITOR'S NOTE: Please crop the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
-### Give Power App Management Permission to your App
+1. Select **Add permissions** to add the Azure DevOps API user_impersonation permission to the app registration.
 
-In order for the pipelines to perform certain actions against the environments (for example, Sharing Apps and setting component ownership) in your Power Platform tenant you'll need to grant Power App Management permissions to your App registration. To do so, you'll need to run the following PowerShell cmdlet as an interactive user that has Power Apps administrative privileges. You'll need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp). Learn more: [**New-PowerAppManagementApp** cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp)
+1. Select **Grant admin consent for \<*your tenant*\>**.
+
+#### Configure the client secret and redirect URI
+
+1. In the left side panel, select **Certificates & secrets**.
+
+1. Select **+ New client secret**.
+
+1. Select an expiration date, and then select **Add**.
+
+1. Copy the client secret **Value** for use later. *This is the only time you can copy the value.* Be sure to do so before you leave the page.
+
+1. In the left side panel, select **Overview**.
+
+1. Copy the **Application (client) ID** and **Directory (tenant) ID**.
+
+1. Select **Add a Redirect URI**.
+
+1. Select **+ Add a Platform**, and then select **Web**.
+
+1. For the redirect URI of the application, enter *`https://global.consent.azure-apim.net/redirect`*.
+
+    You might need to change this value after you install the ALM Accelerator app and configure the Azure DevOps custom connector. If the redirect URI that's populated in the custom connector is different from what you enter here, change this URI to match the one in the custom connector.
+
+1. Select **Configure**.
+
+### Give Power App Management permission to your app registration
+
+Grant [Power App Management](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp) permissions to your app registration so that the pipelines can perform the actions they need to in your environments. To do that, run the following PowerShell cmdlet as an interactive user that has Power Apps administrative privileges. You only need to run this command once, after you create your app registration.
 
 > [!IMPORTANT]
-> Currently this cmdlet gives elevated permissions (for example, Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed certain capabilities won't work in the AA4PP pipelines.
+> The following PowerShell cmdlet gives the app registration elevated permissions like Power Platform Admin. Your organization's security policies may not allow these types of permissions. Make sure they're allowed before you continue. If they aren't allowed, certain capabilities don't work in the ALM Accelerator pipelines.
 
 ```powershell
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber
-New-PowerAppManagementApp -ApplicationId [the Application (client) ID you copied when creating your app registration]
+New-PowerAppManagementApp -ApplicationId <the Application (client) ID you copied when you created the app registration>
 ```
 
 ### Install Azure DevOps extensions
 
-The ALM accelerator uses several Azure DevOps extensions, including some third-party extensions that are available in the Azure DevOps marketplace. Under **Organization settings** in Azure DevOps, install the extensions described in the following procedure. For more information about Azure DevOps extensions from Microsoft and others, go to [Evaluate a Marketplace extension publisher](/azure/devops/marketplace/trust). In addition, each of the third-party extension's webpages and the link to their source code are provided in the following list.
+The ALM Accelerator uses several Azure DevOps extensions, including some third-party extensions that are available in the Azure DevOps marketplace. The website of each third-party extension and a link to their source code are provided in the following instructions. [Learn how to evaluate a Marketplace extension publisher](/azure/devops/marketplace/trust).
 
-1. Go to <https://dev.azure.com>, and select **Organization settings**.
+1. Sign in to [Azure DevOps](https://dev.azure.com).
 
-1. Select **General** > **Extension**.
+1. Select **Organization settings**.
 
-1. Install the following extensions:
+1. Select **General** > **Extensions**.
 
-   - **Power Platform Build Tools (required)**: This extension contains the Microsoft build tasks for Microsoft Power Platform. (<https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools>)
+1. Search for and install the following extensions:
 
-   - **Replace Tokens (required)**: This extension is used by the pipelines to replace tokens in configuration files to be able to store secure values in private variables configured for a pipeline. (<https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens> | <https://github.com/qetza/vsts-replacetokens-task>)
+   - **Power Platform Build Tools (required)**: This extension contains the Microsoft build tasks for Power Platform. (<https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools>)
 
-   - **SARIF SAST Scans Tab (optional)**: This extension can be used to visualize the SARIF files that are generated by the Solution Checker during a build. ([SARIF SAST Scans Tab - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=sariftools.scans))
+   - **Replace Tokens (required)**: The pipelines use this extension to replace tokens in configuration files and store secure values in private variables configured for a pipeline. (<https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens> | <https://github.com/qetza/vsts-replacetokens-task>)
 
-      ![Image of the SARIF SAST Scans tab in Azure DevOps.](media/almacceleratorpowerplatform-components/image-20210217102344719.png)
+   - **SARIF SAST Scans Tab (optional)**: Use this extension to visualize the SARIF files the solution checker generates during a build. ([SARIF SAST Scans Tab - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=sariftools.scans))
 
-## Importing the solution and configuring the app
+      :::image type="content" source="media/almacceleratorpowerplatform-components/image-20210217102344719.png" alt-text="Screenshot of the SARIF SAST Scans tab in Azure DevOps.":::<!-- EDITOR'S NOTE: Please crop and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
-### Install the ALM accelerator in Dataverse
+## Import the solution and configure the app
 
-1. Download the latest managed solution file from [GitHub](https://github.com/microsoft/coe-starter-kit/releases): CenterofExcellenceALMAccelerator_`[latest version]`_managed.zip.
+Import the ALM Accelerator canvas app into your Power Platform environment, and then configure the included custom connector for Azure DevOps.
 
-1. Go to [Power Apps](https://make.powerapps.com) and select the environment you want to use to host the ALM Accelerator for Power Platform app.
+### Install the ALM Accelerator in Dataverse
 
-1. On the left pane, select **Solutions**.
+1. Download the latest managed solution file from [GitHub](https://github.com/microsoft/coe-starter-kit/releases). Scroll down to **Assets** and select *CenterofExcellenceALMAccelerator_\<latest version\>_managed.zip*.
 
-1. Select **Import**, and browse to the location of the managed solution you downloaded.
+1. Sign in to [Power Apps](https://make.powerapps.com), and then select the environment you want to host the ALM Accelerator app.
+
+1. In the left side panel, select **Solutions**.
+
+1. Select **Import solution** > **Browse**, and then browse to the location of the managed solution you downloaded and select the file.
 
 1. Select **Next**, and then select **Next** again.
 
-1. On the **Connections** page, select or create a new connection to use to connect to Dataverse for the **CDS DevOps connection**.
+1. On the **Connections** page, select or create a connection to connect the **CDS DevOps connection** to Dataverse.
 
-    > [!NOTE]
-    > When creating a connection for **HTTP with Azure AD**, use **[Microsoft Graph](https://graph.microsoft.com)** for both parameters.
-1. Select **Import**, and wait for the solution to complete the import process.
+    When you create a connection for **HTTP with Azure AD**, use **[Microsoft Graph](https://graph.microsoft.com)** for both parameters.
+
+1. Select **Import**.
 
 ### Configure the DevOps custom connector
 
-1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
+1. Select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
 
-1. Select **Edit**, go to the **Security** section, select **Edit**, and then set the following fields.
+1. Select **Edit**. On the **Security** page, select **Edit**, and then set the following fields:
 
    | Name | Value |
    |--|--|
    | **Authentication Type** | **OAuth 2.0** |
    | **Identity provider** | **Azure Active Directory** |
-   | **Client ID** | The **Application (client) ID** you copied when [creating the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
-   | **Client secret** | The **Application (client) Secret** you copied when [creating the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
-   | **Tenant ID** | Leave as the default, **common** |
-   | **Resource URL** | The **DevOps Application (client) ID** you copied when [adding permissions to your app registration](#create-an-app-registration-in-your-azure-ad-environment) |
+   | **Client ID** | The **Application (client) ID** you copied when you [created the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
+   | **Client secret** | The **Application (client) secret value** you copied when you [created the app registration](#create-an-app-registration-in-your-azure-ad-environment) |
+   | **Tenant ID** | Leave the default value, **common** |
+   | **Resource URL** | The **DevOps Application (client) ID** you copied when you [added permissions to your app registration](#create-an-app-registration-in-your-azure-ad-environment) |
 
 1. Select **Update connector**.
 
-1. Verify that the **Redirect URL** is populated on the **Security** page with the URL `https://global.consent.azure-apim.net/redirect`. If the redirect URL is other than `https://global.consent.azure-apim.net/redirect`, copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-azure-ad-environment) and update the redirect URI you set earlier to the updated URL.
+1. Confirm that the **Redirect URL** on the **Security** page is `https://global.consent.azure-apim.net/redirect`.
 
-1. After you've completed the preceding steps, verify the connector from the **Test** menu:
+    If it isn't, copy the URL. [Return to the app registration you created](#create-an-app-registration-in-your-azure-ad-environment) earlier and replace the redirect URI there with the copied URL.
 
-    1. Open the **Test** menu.
+#### Test the custom connector
 
-    1. Select **New Connection**, and then follow the prompts to create a new connection.
+1. Open the **Test** menu.
 
-    1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Dataverse** > **Custom Connectors** > **CustomAzureDevOps**.
+1. Select **New Connection**, and then follow the prompts to create a connection.
 
-    1. Select **Edit**, go to the **Test** section, and then find the **GetOrganizations** operation.
+1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Dataverse** > **Custom Connectors** > **CustomAzureDevOps**.
 
-    1. Select **Test operation**, and verify that the **Response Status** returned is **200** and that the **Response Body** is json representation of your Azure DevOps organization.
+1. Select **Edit**, go to the **Test** page, and then find the **GetOrganizations** operation.
 
-    ![Test security settings for a custom Azure DevOps connector.](media/almacceleratorpowerplatform-components/image-20210222135128137.png)
+1. Select **Test operation**.
 
-## Set up your first Azure DevOps project for use with ALM Accelerator for Power Platform
+1. Confirm the **Response Status** returned is **200** and that the **Response Body** is a JSON representation of your Azure DevOps organization.
 
-The ALM Accelerator for Power Platform includes a guided wizard to help you set up your Azure DevOps project to support deployment of Power Platform solutions via ALM Accelerator for Power Platform.
+    :::image type="content" source="media/almacceleratorpowerplatform-components/image-20210222135128137.png" alt-text="Screenshot of test security settings for a custom Azure DevOps connector.":::<!-- EDITOR'S NOTE: Please crop and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
-To set up a new project for use with ALM Accelerator for Power Platform, follow these steps:
+## Set up your first Azure DevOps project for use with the ALM Accelerator
 
-1. Open the **ALM Accelerator for Power Platform Administration** app.
-1. select **Projects** in the Azure DevOps group in the left side navigation.
-1. If prompted to update **Release Tags**, select **Okay**. The app downloads the available release tags from the ALM Accelerator Github repository.
-1. Select an Azure DevOps organization in the **Organization** drop-down.
-1. In the **Projects List**, select **New** and select **Project Wizard**
-1. In the **Project** step, enter the name of your project, a description (optional), enable preview features (optional), and select **Next**. Alternatively you can select to configure an existing empty project.
-1. In the **Pipeline Templates** step, select **Next** to install templates into your new project. The app installs the pipeline templates into a new repository in the Project created in the previous step. Alternatively you can configure the Project to use templates from another project that has the templates installed already
-1. In the **Service Connections** steps, select the environments for which you want to create a **Service Connection**. You can select multiple environments and create service connections for all of them at the same time. If you want to use different app registrations for your environments, you need to create a service connection per app registration. Once you've configure **Service Connections** for an app registration, select **Add**. When you've configured all the **Service Connections**, you need select **Next**.
-1. In the **Generic Pipelines** step, select **Next**. This creates the required pipelines, variable group, and set the required permissions in ADO for the project to support ALM Accelerator for Power Platform functionality.
+Use the included wizard to set up your Azure DevOps project to deploy Power Platform solutions using the ALM Accelerator. You can configure an existing empty project or create one.
 
-## Set up makers to use the ALM Accelerator for Power Platform app
+1. Open the ALM Accelerator administration app.
 
-### Create an app user in your Dataverse environments
+1. In the left side panel, select **Projects** in the **Azure DevOps** group.
 
-Each environment (development, validation, test, and production) needs an application user for the pipelines to connect to Dataverse. For each of your environments, follow these steps to set up the application user.
+1. If you're prompted to update **Release Tags**, select **Okay**.
 
-1. Go to [Power Platform admin center](https://aka.ms/ppac).
+1. Select your Azure DevOps organization in the list.
 
-1. Select your environment, and then select **Settings**.
+1. In the **Projects List**, select **New**.
+
+1. Select **Project Wizard**.
+
+1. In the **Project** step, enter the name of your project. Optionally, enter a description and enable preview features.
+
+1. Select **Next**.
+
+1. In the **Pipeline Templates** step, select **Next** to install templates in your project.
+
+    The app installs the pipeline templates into a new repository in the project. Alternatively, you can configure the project to use templates from a project that already has them installed.
+
+1. In the **Service Connections** steps, select the environments for which you want to create a service connection.
+
+    You can select multiple environments and create service connections for all of them at the same time. To use different app registrations for your environments, create a service connection for each app registration individually.
+
+1. After you configure a service connection for an app registration, select **Add**.
+
+1. After you've configured all the service connections, select **Next**.
+
+1. In the **Generic Pipelines** step, select **Next** to create the pipelines and variable group and set the Azure DevOps permissions the project needs for ALM Accelerator functionality.
+
+## Create an app user in your Dataverse environments
+
+Create an application user in your environments to allow the pipelines to connect to Dataverse. Do this in each environment you plan to use the ALM Accelerator to deploy to.
+
+1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
+
+1. Select your development environment, and then select **Settings**.
 
 1. Select **Users + permissions** > **Application users**.
 
-1. Select **New app user** to add a new application user.
+1. Select **+ New app user**.
 
-1. Select the Azure app registration you created, **Business Unit**, and **Security Role**.
+1. Select **+ Add an app**, select the app registration you created earlier, and then select **Add**.
 
-    > [!NOTE]
-    > We recommend that you give this user system administrator security role privileges, so the user can perform the required functions in each of the environments.
+1. Select the **Business Unit**.
 
-Repeat the previous steps for each of your environments (development, validation, test, and production).
+1. Select the pencil icon to the right of **Security roles**, and then select security roles for the app user.
 
-### Configure user permissions and accounts for a maker
+    We recommend you give the app user system administrator security role privileges, so the user can perform the required functions in each environment.
 
-- See [Configuring user permissions](setup-app-user-permissions.md) for the recommended setup of a maker's user account in Dataverse and Azure DevOps.
+1. Select **Create**.
 
-- See [Configuring deployment user settings and profiles](setup-deployment-user-profiles.md) for how to configure the user experience in the app, and grant access to solutions and deployment profiles.
+Repeat the previous steps in your validation, test, and production environments.
+
+## Set up makers to use the ALM Accelerator app
+
+- [Configure user permissions](setup-app-user-permissions.md) for a maker's account in Dataverse and Azure DevOps.
+
+- [Configure deployment user settings](setup-deployment-user-settings.md) to set up the app's user experience and grant access to solutions and deployment profiles.
 
 ## Read more
 
-- [Use the ALM Accelerator for Power Platform app](overview.md)
-- [Configuring deployment user settings and profiles](setup-deployment-user-profiles.md)
+- [ALM Accelerator for Power Platform](overview.md)
+- [Configure deployment profiles](setup-deployment-user-profiles.md)
 - [Configuration and data deployment in pipelines](setup-data-deployment-configuration.md)
-- [Configuring pipeline sync](setup-pipeline-sync.md)
+- [Configure pipeline sync](setup-pipeline-sync.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]
