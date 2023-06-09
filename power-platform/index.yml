@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Discover and learn how to make the most of Microsoft Power Platform products using documentation and training. Quickly and easily build apps using Power Apps, automate business tasks using Power Automate, view and analyze insights using Power BI, rapidly design, configure and publish modern websites using Power Pages, build intelligent bots with no-code interface using Power Virtual Agents.
+summary: Discover and learn how to make the most of Microsoft Power Platform products using documentation and training. Quickly and easily build apps using Power Apps, automate business tasks using Power Automate, rapidly design, configure and publish modern websites using Power Pages, build intelligent bots with no-code interface using Power Virtual Agents, view and analyze insights using Power BI.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
