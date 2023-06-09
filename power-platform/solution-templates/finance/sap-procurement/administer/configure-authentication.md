@@ -1,5 +1,5 @@
 ---
-title: Configure authentication for SAP Procurement solutions (preview)
+title: Configure authentication for SAP Procurement solutions
 description: Set up authentication with SAP and Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
@@ -21,9 +21,7 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Configure authentication for SAP Procurement solution (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Configure authentication for SAP Procurement solution
 
 The [SAP ERP connector](/connectors/saperp/) is designed to be used by multiple users of an application, therefore, the connections aren't shared. The user credentials are provided in the connection, while other details required to connect to the SAP system (like server details and security configuration) are provided as part of the action.
 

@@ -1,5 +1,5 @@
 ---
-title: Use the SAP Solution Administrator model-driven app (preview)
+title: Use the SAP Solution Administrator model-driven app
 description: Use the SAP Solution Administrator model-driven app to configure and manage data.
 author: tverhasselt
 ms.author: thoverh
@@ -21,9 +21,7 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Use the SAP Solution Administrator model-driven app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Use the SAP Solution Administrator model-driven app
 
 Learn about the _SAP Solution Administrator_ model-driven app and  how you can use it in conjunction with Dataverse to seed relevant SAP data into your solutions' apps and flows as well as monitor the solutions you deploy.
 

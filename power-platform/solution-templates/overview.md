@@ -1,5 +1,5 @@
 ---
-title: Overview of solution templates for Power Platform (preview)
+title: Overview of solution templates for Power Platform
 description: Learn how Microsoft solution templates for Power Platform empower you to create solutions.
 author: kaagar
 ms.author: kaagar
@@ -16,16 +16,9 @@ ms.subservice: solution-templates
 
 # What are solution templates for Power Platform?
 
-[This article is prerelease documentation and is subject to change.]
-
 Solution templates for Power Platform are solutions built on [Microsoft Power Platform](/power-platform/). The solution templates are designed to drive productivity and operational efficiencies within specific lines of business or enterprise-wide. Aligned to specific use cases and outcomes, they accelerate time to value by digitizing new processes or extending upon existing major technology investments, such as an enterprise resource planning (ERP), customer relationship management (CRM), or human resource (HR) systems.
 
 Power Platform solution templates require premium licensing and are built for centralized teams to install and extend upon locally. You can organize an internal information technology (IT) and  business operations team or select an external partner team to implement the Power Platform template solution project.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## What are the benefits?
 
@@ -51,7 +44,7 @@ The solution templates enable you to:
 
 Learn more about the current template offerings on AppSource. Be sure to check back frequently for new templates that become available across more lines of business (LOB) and organization functions.
 
-| Line of business | Organization function | Learn documentation                                                                                                         |  Download                                     |
+| Line of business | Organization function | Learn documentation                                                                                                         |  Access                                     |
 |------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | **Finance**          | SAP Procurement       | [SAP Procurement](finance/sap-procurement/overview.md) | <https://aka.ms/AccessSAPProcurementTemplate> |
 | **Human resources**  | Employee Kudos        | [Employee Kudos](hr/employee-kudos/overview.md)        | <https://aka.ms/AccessEmployeeKudosTemplate>  |

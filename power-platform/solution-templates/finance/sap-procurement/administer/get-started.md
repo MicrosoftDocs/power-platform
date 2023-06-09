@@ -21,15 +21,17 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Get started with SAP Procurement solution template (preview)
+# Get started with SAP Procurement solution template
 
-[This article is prerelease documentation and is subject to change.]
+Power Platform solution templates published by Microsoft on AppSource are designed to digitally transform broad, complex business scenarios for specific lines of business or enterprise wide.
 
-Setting up the SAP Procurement solution template requires coordination within a centralized team that includes a mix of IT administrators, SAP functional analysts (SAP BASIS), and developers who are familiar with Power Platform. Review the steps for each phase in the administration journey.
+It's important to establish a defined, centralized team that consists of key stakeholders, business analysts, Power Platform administrators and developers, and SAP admins (S-User) and functional analysts (SAP BASIS).
 
-## Set up integration between SAP and Power Platform
+Your team can get started by reviewing the steps in each phase of the administration journey.
 
-Work with an IT Administrator to install and set up the SAP Procurement solution template in your target environment. The IT administrator will need to have _System Administrator_ access to the Power Platform environments and the general network. The IT admin will also need have SAP BASIS capabilities or be able to work with the designated SAP BASIS admin.
+## Integrate SAP with Power Platform
+
+Review your organization's current [Power Platform administration and governance](/power-platform/guidance/adoption/admin-best-practices) with your team. Develop a plan of action that supports your organization's deployment of enterprise-scale solutions on Power Platform.
 
 | Step | Description |
 | ----------- | ----------- |
@@ -51,9 +53,9 @@ Work with your the IT administrator and SAP functional analyst to administrate k
 | [Administer seed data](apply-seed-data.md)                                                                               | Import and create data used by the flows and apps to integrate with SAP          |
 | [Monitor for errors](monitor-errors.md)                                                                             | See and investigate unhandled exceptions generated from either the flows or apps |
 
-## Customize and extend to meet your local business requirements
+## Extend to meet your local business requirements
 
-Work with your SAP functional analyst, business subject matter expert and Power Platform developers to extend upon the solution according to your business requirements.
+Work with your SAP functional analyst, business subject matter expert (SME) and Power Platform developers to customize the solution so it supports your organization's unique business processes.
 
 | Step | Description |
 | ----------- | ----------- |
