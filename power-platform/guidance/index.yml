@@ -119,6 +119,17 @@ additionalContent:
               url: /power-pages/guidance/white-papers/security
             - text: More...
               url: /power-pages/guidance
+        # Card
+        - title: Power Virtual Agents guidance
+          links:
+            - text: Topics best practices
+              url: /power-virtual-agents/guidance/topics-overview
+            - text: Trigger phrases best practices
+              url: /power-virtual-agents/guidance/trigger-phrases-best-practices
+            - text: Measuring chatbot engagement
+              url: /power-virtual-agents/guidance/measuring-engagement
+            - text: More...
+              url: /power-virtual-agents/guidance
 
     - title: Documentation # < 60 chars (optional)
       summary: Official documentation for Power Platform components
