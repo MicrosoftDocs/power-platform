@@ -1,5 +1,5 @@
 ---
-title: Apply seed data (preview)
+title: Apply seed data
 description: Apply and manage key seed data that supports the SAP procurement apps and flows.
 author: jongilman88
 ms.author: jongilman
@@ -21,9 +21,7 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Apply seed data (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Apply seed data
 
 Data seeding is the process of populating a database with an initial set of data. The SAP Procurement apps and flows require that key seed data be added to and managed by the SAP Administrator model-driven app. Adding seed data ensures an efficient and localized integration with SAP.
 
@@ -56,7 +54,7 @@ To help you set up application menus, a list of the fields with examples and des
 | Field | Examples| Description |
 | ----------- | ----------- | ----------- |
 | Menu Item Name | "Vendors", "Requisitions", "Purchase Orders" | The short descriptive name of the menu item. |
-| Used By Team | "Vendor Management Team", "Requisition Management Team", "Purchase Orders Team" | The Dataverse group that you previously set up. Select the appropiate group. |
+| Used By Team | "Vendor Management Team", "Requisition Management Team", "Purchase Orders Team" | The Dataverse group that you previously set up. Select the appropriate group. |
 | Menu Group | "Purchasing" | A logical grouping of menu items. Typically, this is a process domain area. |
 | Order | _1_, _2_, _3_, _4_ | The order in which the menu items should be displayed. |
 | Capability | "Vendors", "Requisitions", "Purchase Orders" | The capability or app that corresponds to each menu item. |

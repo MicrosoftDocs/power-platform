@@ -1,5 +1,5 @@
 ---
-title: Set up connections (preview)
+title: Set up connections
 description: Learn how to set up data connections for SAP Procurement apps and flows.
 author: jongilman88
 ms.author: jongilman
@@ -19,9 +19,7 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Set up connection information in the solutions (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up connection information in the solutions
 
 Power Platform services use connectors, like [SAP ERP](/connectors/saperp/), to work with external data sources. A [Connector](/connectors/connectors) is a proxy or a wrapper around an application programming interface (API) that allows the underlying service to talk to Power Platform.
 
@@ -63,7 +61,7 @@ To set up [connections](/connectors/connectors):
 
 A _connection reference_ is a solution component that contains a reference to a connection about a specific connector.
 
-All required connections are referenced by _Connection References_ in the SAP procurement solution template cloud flows. Connection references provide a way to set connections on cloud flow action steps when migrating solutions across environments without modifying the flow and creating an unnecessary solution layer. 
+All required connections are referenced by _Connection References_ in the SAP procurement solution template cloud flows. Connection references provide a way to set connections on cloud flow action steps when migrating solutions across environments without modifying the flow and creating an unnecessary solution layer.
 
 > [!NOTE]
 > It is a best practice to always use connection references in both cloud flows and apps to support your ALM strategy.

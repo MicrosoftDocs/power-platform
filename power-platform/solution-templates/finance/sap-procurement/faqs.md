@@ -22,8 +22,6 @@ ms.subservice: solution-templates
 
 # Frequently asked questions about SAP procurement integration with Power Platform
 
-[This article is prerelease documentation and is subject to change.]
-
 This article provides answers to some of the most frequently asked questions (FAQs) about SAP integration with Microsoft Power Platform.
 
 ## Versions and licensing
