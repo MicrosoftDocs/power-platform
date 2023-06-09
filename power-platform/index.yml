@@ -35,6 +35,8 @@ highlightedContent:
       itemType: reference
       url: /troubleshoot/power-platform/
 productDirectory:
+  title: Power Platform products # < 60 chars (Optional; Remove if not applicable.)
+  summary: Leverage Microsoft Power Platform to build apps using Power Apps, chatbots using Power Virtual Agents, websites using Power Pages, automate tasks using Power Automate, analyze data using Power BI. # < 160 chars (Optional; Remove if not applicable.)
   items:
   - title: Power Apps documentation
     imageSrc: "media/hub-page/power-apps.svg"
