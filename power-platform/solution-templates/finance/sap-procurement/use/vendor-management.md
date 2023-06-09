@@ -14,6 +14,8 @@ ms.reviewer: ellenwehrle
 ms.topic: concept
 ms.date: 06/06/2023
 ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
 ---
 
 # SAP Vendor Management app (preview)

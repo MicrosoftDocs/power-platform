@@ -7,6 +7,8 @@ ms.reviewer: ellenwehrle
 ms.topic: overview
 ms.date: 06/06/2023
 ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
 ---
 
 # Employee Kudos solution template for Power Platform (preview)
