@@ -1,7 +1,6 @@
 ---
 title: Configure the ALM Accelerator using the admin app
 description: Learn how to configure the ALM Accelerator for Power Platform using the built-in administration app.
-author: jenschristianschroder
 ms.topic: conceptual
 ms.date: 04/10/2023
 ms.subservice: guidance
@@ -13,7 +12,7 @@ ms.custom: bap-template
 
 # Configure the ALM Accelerator using the admin app
 
-You can configure the components of the ALM Accelerator for Power Platform either using its administration app or [manually](setup-components-manually). This article guides you through using the admin app and is structured in seven sections:
+You can configure the components of the ALM Accelerator for Power Platform either using its administration app or [manually](setup-components-manually.md). This article guides you through using the admin app and is structured in seven sections:
 
 - [**Prerequisites**](#prerequisites)
 - [**Configure Azure AD app registrations**](#configure-azure-ad-app-registrations)
