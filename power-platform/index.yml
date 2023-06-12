@@ -38,23 +38,23 @@ productDirectory:
   title: Power Platform products # < 60 chars (Optional; Remove if not applicable.)
   summary: Leverage Microsoft Power Platform to build apps using Power Apps, chatbots using Power Virtual Agents, websites using Power Pages, automate tasks using Power Automate, analyze data using Power BI. # < 160 chars (Optional; Remove if not applicable.)
   items:
-  - title: Power Apps documentation
+  - title: Power Apps
     imageSrc: "media/hub-page/power-apps.svg"
     summary: Learn how to quickly build modern low-code apps for business challenges in your organization.
     url: /power-apps
-  - title: Power Automate documentation
+  - title: Power Automate
     imageSrc: "media/hub-page/power-automate.svg"
     summary: Learn how to create flows quickly using low-code platform to automate business tasks and workflows.
     url: /power-automate
-  - title: Power Pages documentation
+  - title: Power Pages
     imageSrc: "media/hub-page/power-pages.svg"
     summary: Learn how to create, host, customize, extend, and administer modern external-facing business websites.
     url: /power-pages
-  - title: Power Virtual Agents documentation
+  - title: Power Virtual Agents
     imageSrc: "media/hub-page/power-virtual-agents.svg"
     summary: Learn how to build chatbots easily that integrates across a variety of products and services.
     url: /power-virtual-agents
-  - title: Power BI documentation
+  - title: Power BI
     imageSrc: "media/hub-page/power-bi.svg"
     summary: Learn how to get expert information and answers to address your needs.
     url: /power-bi
@@ -63,13 +63,13 @@ tools:
   summary: Securely store and manage data using Microsoft Dataverse, use low-code Power Fx language for functional programming across Power Platform, and bring the power of Microsoft AI to your organization using AI Builder in Power Platform. 
   items:
     # Card
-  - title: Microsoft Dataverse documentation
+  - title: Microsoft Dataverse
     imageSrc: "media/hub-page/dataverse.svg"
     url: /power-apps/maker/data-platform/
-  - title: Power Fx documentation
+  - title: Power Fx
     imageSrc: "media/hub-page/power-fx.svg"
     url: /power-platform/power-fx/overview
-  - title: AI Builder documentation
+  - title: AI Builder
     imageSrc: "media/hub-page/ai-builder.svg"
     url: /ai-builder
 additionalContent:
@@ -85,7 +85,7 @@ additionalContent:
           summary: "Understand licensing across Power Platform products and services"
           url: ./admin/pricing-billing-skus.md
         # Card
-        - title: Power Platform developer documentation
+        - title: Power Platform developer
           summary: "Learn about developing apps and services in Power Platform using code"
           url: ./developer/index.yml
         # Card
