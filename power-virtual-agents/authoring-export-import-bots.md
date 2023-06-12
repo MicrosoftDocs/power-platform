@@ -32,7 +32,7 @@ This can be useful if you use different environments for different purposes, or 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - A maker will require the minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](/power-platform/admin/database-security).
 
-# [Preview](#tab/preview)
+# [Web app](#tab/webApp)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -184,7 +184,7 @@ Use the **See solution layers** option to see all solutions that a component is 
 1. In the **Solution Layers** page, select the unmanaged layer, and then select **Remove unmanaged layer**.
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 ### Create a solution to manage export and import
 
