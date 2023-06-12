@@ -52,7 +52,7 @@ You can access the solution templates on AppSource at: <https://aka.ms/AccessEmp
   - Kudos - program admin
   - Kudos - manager
   - Kudos - employee
-- **Four Power Automate (flows)**:
+- **Four Power Automate flows**:
   - Kudo app – share Kudos with sender, assign to recipient
   - Kudos – deactivate received Kudos when an employee leaves the company
   - Kudos – delete Kudos when a user opts-out
