@@ -110,4 +110,4 @@ The following table shows how you can further align with the principle of least 
 > [!div class="nextstepaction"]
 > [Pipelines deployment settings](./deployment-settings-payload.md)
 
-[!INCLUDE e[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]
