@@ -36,7 +36,7 @@ After you onboard a project to the ALM Accelerator, you need to perform certain 
 
 To create a repository, select **New**.
 
-If you set up your project using the project wizard, you can select **Upgrade** to [upgrade an ALM Accelerator template repository](setup-upgrade-configuration.md) to the latest version. If your project didn't use the wizard, [create the sync-pipeline-repo pipeline manually](setup-pipeline-sync) to use the upgrade feature in the future.
+If you set up your project using the project wizard, you can select **Upgrade** to [upgrade an ALM Accelerator template repository](setup-upgrade-configuration.md) to the latest version. If your project didn't use the wizard, [create the sync-pipeline-repo pipeline manually](setup-pipeline-sync.md) to use the upgrade feature in the future.
 
 ## Onboard new maker or deployment environments
 
