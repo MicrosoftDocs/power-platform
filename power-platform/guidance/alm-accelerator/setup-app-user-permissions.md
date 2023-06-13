@@ -67,7 +67,7 @@ The ALM Accelerator uses the Power Apps for Makers connector to list the environ
 
 The following table describes the permissions needed for each scenario in the ALM Accelerator.
 
-| Scenario | Dataverse Role | Description |
+| Scenario | Dataverse role | Description |
 | -------- | -------------- | ----------- |
 | Select a maker environment | Environment Maker or permission to edit any app | The signed-in user can list all the environments where they can import solutions or list solutions to commit. |
 | Create a deployment profile | Environment Maker or permission to edit any app | The signed-in user can list all environments a solution can be deployed to. If you provide only the URL, you might have limited functionality with respect to connection references in the deployment settings. |
