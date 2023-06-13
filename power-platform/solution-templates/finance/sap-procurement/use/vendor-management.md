@@ -1,5 +1,5 @@
 ---
-title: SAP Vendor Management app (preview)
+title: SAP Vendor Management app
 description: Learn about the SAP Vendor Management app for Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
@@ -18,7 +18,7 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# SAP Vendor Management app (preview)
+# SAP Vendor Management app
 
 [This article is prerelease documentation and is subject to change.]
 

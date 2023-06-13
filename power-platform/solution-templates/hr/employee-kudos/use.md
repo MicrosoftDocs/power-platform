@@ -1,5 +1,5 @@
 ---
-title: Use the Employee Kudos app (preview)
+title: Use the Employee Kudos app
 description: Get started using the Employee Kudos app.
 author: tshanep
 ms.author: shanep
