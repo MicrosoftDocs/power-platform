@@ -80,7 +80,7 @@ More information:
   
 ## Next steps
 
-- [Set up environments and data policies (preview)](set-up-environments-data-policies.md)
+- [Set up environments and data policies](set-up-environments-data-policies.md)
 - [Set up on-premises date gateway for SAP](set-up-gateway.md)
 
 ### See also
