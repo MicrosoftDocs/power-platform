@@ -1,7 +1,7 @@
 ---
 title: Configure deployment user settings
 description: Learn how to use deployment user settings to create a tailored experience for your makers in the ALM Accelerator for Power Platform app.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/07/2023
 ms.subservice: guidance
 author: jenschristianschroder
