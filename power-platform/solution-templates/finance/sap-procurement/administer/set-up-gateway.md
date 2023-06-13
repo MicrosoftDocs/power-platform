@@ -1,5 +1,5 @@
 ---
-title: Set up on-premises data gateway for SAP (preview)
+title: Set up on-premises data gateway for SAP
 description: Learn how to set up on-premises data gateway for SAP integration with Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
@@ -17,11 +17,11 @@ ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
 ms.date: 06/06/2023
 ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
 ---
 
-# Set up on-premises data gateway for SAP integration with Power Platform (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up on-premises data gateway for SAP integration with Power Platform
 
 An [on-premises data gateway](/power-platform/admin/wp-onpremises-gateway) acts as a bridge to provide secure data transfer between on-premises data that isn't in the cloud and Microsoft cloud services.
 
@@ -39,7 +39,6 @@ The on-premises data gateway installation encompasses multiple components instal
 > To avoid error messages, make sure you enable network connectivity from the host of the SAP .NET Connector (NCo) library and that the required ports are open on the firewalls and network security groups. Common error messages are _partner not reached_ from component _NI_ (network interface) or _WSAECONNREFUSED: Connection refused_.
 >
 > For more information about SAP services and ports, review [TCP/IP Ports of All SAP Products](https://help.sap.com/docs/Security/575a9f0e56f34c6e8138439eefc32b16/616a3c0b1cc748238de9c0341b15c63c.html).
-
 
 The installed gateway runs as the default machine-local service account, _NT Service\PBIEgwService_. Update the service account to a domain account if setting up Windows or Azure single sign-on (SSO). Additional information is provided in [Step 1](configure-authentication.md#step-1-configure-kerberos-constrained-delegation) in the _Configure authentication_ article.
 

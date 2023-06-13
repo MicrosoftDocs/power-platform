@@ -1,5 +1,5 @@
 ---
-title: Customize your solutions (preview)
+title: Customize your solutions
 description: Prepare your development environment so you're ready to customize the SAP procurement solution templates to meet your local business requirements.
 author: tverhasselt
 ms.author: thoverh
@@ -17,11 +17,11 @@ ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
 ms.date: 06/06/2023
 ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
 ---
 
-# Customize your SAP procurement solution templates (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Customize your SAP procurement solution templates
 
 The SAP procurement solution template is published as managed so that we can continue to provide new and updated capabilities. This means you will not be able to directly edit components _directly within_ the actual imported solution files. However, your local configurations will be _layered_ on top of the managed capabilities.
 
