@@ -37,8 +37,8 @@ The following table shows how the **User Labels** are configured for the new mak
 
 | Field | Description |
 |-------|-------------|
-| Deploy Solution | Set the value to blank to use the default label, **DEPLOY SOLUTION**. |
-| Commit Solution | Set the value to **SAVE SOLUTION**. |
+| Deploy Solution | Enter a label or set the value to blank to use the default label, **DEPLOY SOLUTION**. |
+| Commit Solution | Enter a label or set the value to **SAVE SOLUTION**. |
 | Import Solution | This button is hidden by the **User Functions** settings described in the previous table. |
 | Delete Solution | This button is hidden by the **User Functions** settings described in the previous table. |
 

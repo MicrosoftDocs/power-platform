@@ -1,105 +1,103 @@
 ---
-title: "Configure deployment user settings and profiles for the ALM Accelerator for Power Platform app | MicrosoftDocs"
-description: "Deployment user settings direct the ALM Accelerator for Power Platform app on how to display UI components and how to source-control and deploy solutions."
-author: jenschristianschroder
+title: Configure deployment user settings
+description: Learn how to use deployment user settings to create a tailored experience for your makers in the ALM Accelerator for Power Platform app.
 ms.topic: conceptual
 ms.date: 04/07/2023
 ms.subservice: guidance
+author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks
+ms.custom: bap-template
 ---
-# Configure deployment user settings and profiles for the ALM Accelerator for Power Platform app
 
-Depending on a user's role, you can configure the ALM Accelerator for Power Platform by turning on and off certain features in the UI, based on user preference and experience. To help all users use the app effectively, a common scenario is to create both a maker experience (for users who are unfamiliar with ALM) and an advanced maker experience (for users who are very familiar with ALM concepts). Deployment profiles are linked to user settings. The app uses deployment profiles to make decisions for the user on where and how to create branches and approvals for deployment. For more information on deployment profiles see [Deployment profiles](./setup-deployment-user-profiles.md).
+# Configure deployment user settings
 
-In this section, we'll describe how to use the ALM Accelerator for Power Platform Administration app to configure these settings for use by the ALM accelerator.
+You can customize the user experience in the ALM Accelerator for Power Platform by using deployment user settings to turn on or off some of the features in the UI. To help all makers use the app effectively, you can create separate experiences for users who are unfamiliar with application lifecycle management (ALM) and for those who are more experienced. User settings are linked to [deployment profiles](./setup-deployment-user-profiles.md).
 
-> [!NOTE]
-> It's not necessary to create deployment user settings manually. If a user signs in to the ALM Accelerator for Power Platform app and doesn't have a deployment user setting assigned to them, the app automatically creates a deployment user setting for that user. This user setting is created with all functionality enabled, including import, delete, and all advanced features.
+This section covers how to use the ALM Accelerator administration app to configure user settings. You don't need to do this manually, however. If a user doesn't have an experience assigned, the ALM Accelerator app automatically creates one when the user signs in. The default user setting enables all the app's functionality, including import, delete, and all advanced features.
 
-## Creating user settings and profiles with the ALM Accelerator for Power Platform Administration app
+## Create user settings with the administration app
 
-To create deployment user settings for the ALM accelerator for Microsoft Power Platform, follow these steps:
+1. Open the ALM Accelerator administration app, and then select **Deployment User Settings**.
 
-1. Open the **ALM Accelerator for Power Platform Administration**, and then select **Deployment User Settings**.
+    :::image type="content" source="media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126094411050.png" alt-text="Screenshot of the ALM Accelerator administration app.":::<!-- EDITOR'S NOTE: Please crop, highlight, and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
-   ![The ALM Accelerator for Power Platform Administration app.](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126094411050.png)
+1. Select **New**.
 
-1. Select **New**, and then **Provide a Name** for the user setting. This name will only be displayed to users who have access to more than one user setting option.
+1. Enter a name for the user setting. The name is only displayed to users who have more than one user setting assigned to them.
 
-1. Select **User Functions to Allow or Disallow**. The following areas are configurable in the app:
+1. Select the following **User Functions** to allow or disallow in the ALM Accelerator canvas app:
 
-    - **Import Solutions** - Allowing this function shows the **Import Solution** command in the app.
-    - **Delete Solutions** - This function shows the **Delete Solution** command in the app.
-    - **Manage Solutions** - This function shows the **Manage Solutions** command in the app.
-    - **Drillthrough Status** - This function allows users to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.
-    - **Profile Creation** - This function provides users with the ability to create new deployment profiles in the app.
-    - **Profile Updates** - This function provides users with the ability to update deployment profiles settings in the app.
-    - **Advanced Deploy** - This function provides users with the ability to switch between using the advanced deploy functionality. They can specify a source and target branch for a pull request.
-    - **Advanced Promote** - This function provides users with the ability to change between using the advanced promote functionality. They can specify a source and target branch, or create a new branch.
-    - **Bypass Prepare** - This function provides the user with the ability to skip the preparation step during the promotion of a solution. They can bypass needing to configure deployment settings before committing to source control.
-    - **Bypass Prepare Default** - If the **Bypass Prepare** is **Allowed**, this function prepopulates the **Bypass Prepare** toggle control in the ALM Accelerator App. If the **Bypass Prepare Default** set as Allowed the **Bypass Prepare** toggle control would be preset to True and vice versa.
-    - **Deployment Configuration** - This function provides the user with the ability to skip the preparation step during the promotion of a solution. They can bypass needing to configure deployment settings before committing to source control.
-    - **Show All Solutions** - This function provides users with the ability to see all solutions in the selected environment.
-    - **Bypass Approval** - This function provides the user with the ability to skip the approval of Pull Request during the deployment of a solution. They can bypass needing to approve the Pull Request before deploying to test environments.
-    - **Bypass Approval Default** - If the **Bypass Approval** is **Allowed**, this function prepopulates the **Bypass Approval** toggle control in the ALM Accelerator App. If the **Bypass Approval Default** set as Allowed the **Bypass Approval** toggle control would be preset to True and vice versa.
-    - **Commit Portals** - This function provides the user with the ability to include the Power Apps Portal/Power Pages website during the solution commit to source control. They can select the Power Apps Portal/Power Pages website before committing to source control.
-    - **Commit Portals Default** - If the **Commit Portals** is **Allowed**, this function prepopulates the **Include Power Apps Portal/Power Pages** toggle control in the ALM Accelerator App. If the **Commit Portals Default** set as Allowed the **Include Power Apps Portal/Power Pages** toggle control would be preset to True and vice versa.
-    - **Publish Customizations** - This function provides the user with the ability to publish customizations during the solution commit to source control. They can select the publish customizations toggle before committing to source control or turn off the toggle to skip publishing which can save time in the commit process.
-    - **Publish Customizations Default** If the **Publish Customizations** is **Allowed**, this function prepopulates the **Publish Customizations** toggle control in the ALM Accelerator app. If the **Bypass Approval Default** is set to **Allowed**, the **Bypass Approval** toggle control would be preset to true and vice versa.
-    - **Allow Import Managed** - This function provides the user with the ability to import managed solutions during the solution import. They can select the import managed toggle before importing the solution or turn off the toggle to import unmanaged solutions into their maker environment.
-    - **Import Managed Default** If the **Allow Import Managed** is **Allowed**, this function prepopulates the **Allow Import Managed** toggle control in the ALM Accelerator app. If the **Allow Import Managed Default** is set to **Allowed**, the **Allow Import Managed** toggle control would be preset to true and vice versa.
+    - **Import Solutions**: Allow this function to show the **Import Solution** command in the app.
+    - **Delete Solutions**: Allow this function to show the **Delete Solution** command in the app.
+    - **Manage Solutions**: Allow this function to show the **Manage Solutions** command in the app.
+    - **Drillthrough Status**: Allow this function to enable users to drill into promote and deploy pipeline runs in the app.
+    - **Profile Creation**: Allow this function to enable users to create deployment profiles in the app.
+    - **Profile Updates**: Allow this function to enable users to update deployment profiles in the app.
+    - **Advanced Deploy**: Allow this function to enable users to specify a source and target branch for a pull request using the advanced deploy functionality.
+    - **Advanced Promote**: Allow this function to enable users to specify a source and target branch, or create a branch, using the advanced promote functionality.
+    - **Bypass Prepare**: Allow this function to enable users to skip the preparation step during the promotion of a solution, bypassing the need to configure deployment settings before committing to source control.
+    - **Bypass Prepare Default**: Sets the **Bypass Prepare** toggle to True or False in the ALM Accelerator app depending on whether or not **Bypass Prepare** is allowed.
+    - **Deployment Configuration**: Allow this function to enable users to skip the preparation step during the promotion of a solution, and bypass the need to configure deployment settings before they commit to source control.
+    - **Show All Solutions**: Allow this function to enable users to see all solutions in the selected environment.
+    - **Bypass Approval**: Allow this function to enable users to skip the approval of their pull requests during the deployment of a solution to test environments.
+    - **Bypass Approval Default**: Sets the **Bypass Approval** toggle to True or False in the ALM Accelerator app depending on whether or not **Bypass Approval** is allowed.
+    - **Commit Portals**: Allow this function to enable users to include the Power Apps portal and Power Pages website when the solution is committed to source control.
+    - **Commit Portals Default**: Sets the **Include Power Apps Portal/Power Pages** toggle to True or False in the ALM Accelerator app depending on whether or not **Commit Portals** is allowed.
+    - **Publish Customizations**: Allow this function to enable users to publish customizations when the solution is committed to source control or skip publishing to save time.
+    - **Publish Customizations Default**: Sets the **Publish Customizations** toggle to True or False in the ALM Accelerator app depending on whether or not **Publish Customizations** is allowed.
+    - **Allow Import Managed**: Allow this function to enable users to import managed and unmanaged solutions into their maker environments.
+    - **Import Managed Default**: Sets the **Allow Import Managed** toggle to True or False in the ALM Accelerator app depending on whether or not **Allow Import Managed** is allowed.
 
-1. Update **User Labels**. The following areas are configurable in the app related to user labels for functions. These values also appear in the **Deployment History** view under the action that was executed:
+1. Configure **User Labels**. These values also appear in the **Deployment History** view under the action that was executed.
 
-    - **Deploy Solution** - Updating this label changes the text of the button for the deployment action in the app. The default value is **"DEPLOY SOLUTION"**.
-    - **Commit Solution** - Updating this label changes the text of the button for the promote action in the app. The default value is **"COMMIT SOLUTION"**.
-    - **Import Solution** - Updating this label changes the text of the button for the import solution action in the app. The default value is **"IMPORT SOLUTION"**.
-    - **Delete Solution** - Updating this label changes the text of the button for the delete solution action in the app. The default value is **"DELETE SOLUTION"**.
+    - **Deploy Solution**: Enter a label or set the value to blank to use the default label, **DEPLOY SOLUTION**.
+    - **Commit Solution**: Enter a label or set the value to blank to use the default label, **COMMIT SOLUTION**.
+    - **Import Solution**: Enter a label or set the value to blank to use the default label, **IMPORT SOLUTION**.
+    - **Delete Solution**: Enter a label or set the value to blank to use the default label, **DELETE SOLUTION**.
 
-1. Select **Save** to save your user settings.
+1. Select **Save**.
 
-## Sharing ALM accelerator user settings and profiles by using the ALM Accelerator for Power Platform Administration app
+## Share user settings with the ALM Accelerator administration app
 
-To share user settings created for a particular user profile, we recommend that you share the user setting row with an Azure Active Directory (Azure AD) Group team. Sharing with an Azure AD Group team allows you to manage access to user settings and deployment profiles from Azure AD by adding the user to the group in Azure AD. The following steps describe how to share and provide the appropriate roles to an Azure AD Group team after installing the ALM Accelerator for Power Platform app.
+To share user settings created for a particular user profile, we recommend that you share the user setting row with an Azure Active Directory (Azure AD) group team. Sharing with an Azure AD group team allows you to manage access to user settings and deployment profiles by adding the user to the group in Azure AD.
 
-1. If you haven't already created an Azure AD Group team in Microsoft Dataverse to share your user settings, perform the following steps; otherwise, skip to step 2.
+### Create an Azure AD group team
 
-   1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and select the environment in which you've installed the ALM Accelerator for Power Platform app.
+If you already have an Azure AD group team in Microsoft Dataverse to share user settings, skip this section.
 
-   1. Under **Access -Teams**, select **See all**, and then select **Create Team**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com), and then select the environment in which you installed the ALM Accelerator app.
 
-   1. Enter the required fields, and select **AAD Group Team** (AAD Security Group or AAD Office Group) as the **Team Type**.
+1. Under **Access -Teams**, select **See all**, and then select **Create Team**.
 
-   1. Select the **AAD Group** to use for this team, and then select **Next**.
+1. Enter the required fields, and then select **AAD Group Team** as the **Team Type**.
 
-   1. Select **ALM Power App Access** and **Basic User** as the roles for the team, and then select **Save**.
+1. Select the **AAD Group** to use for this team, and then select **Next**.
 
-1. Open the ALM Accelerator for Power Platform Administration app, and go to **Deployment User Settings**.
+1. Select **ALM Power App Access** and **Basic User** as the roles for the team.
 
-1. Open the **Deployment User Setting** that you want to share with your team, and then select **Share**.
+1. Select **Save**.
 
-1. Open your Azure AD Group team by using **Advanced lookup** in the **Sharing** dialog.
+### Share user settings with an Azure AD group team
 
-   1. In **Advanced lookup**, select **Teams**.
+1. Open the ALM Accelerator administration app and go to **Deployment User Settings**.
 
-   1. From the **View** dropdown list, select **All AAD Security Group Teams**.
+1. Open the user setting that you want to share with your team, and then select **Share**.
 
-   1. Select the team you created previously, and then select **Done**.
+1. Use **Advanced lookup** to search for and select your Azure AD group team in your organization's Azure AD security group teams.
+
+1. Select **Done**.
 
 1. Under **Manage Share Access**, select the team, and then select **Read** and **Append** as the privileges.
 
 1. Select **Share**.
-
-Next, you'll add new deployment profiles to your user settings. Deployment profiles are used by the ALM Accelerator for Power Platform app to determine where and how to create branches during the commit stage, and how to create pull requests when deploying. The following section describes the steps to create a deployment profile with the ALM Accelerator for Power Platform Administration app to associate with one or many deployment user settings.
 
 > [!div class="nextstepaction"]
 > [Configure deployment profiles](./setup-deployment-user-profiles.md)
 
 ## Read next
 
-- [Configuring Deployment Profiles](./setup-deployment-user-profiles.md)
-- [ALM Accelerator Advanced Maker Experience](./advanced-maker-experience.md)
-- [ALM Accelerator Maker Experience](./new-maker-experience.md)
+- [Advanced maker experience](./advanced-maker-experience.md)
+- [New maker experience](./new-maker-experience.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]

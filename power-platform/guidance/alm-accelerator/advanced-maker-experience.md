@@ -38,10 +38,10 @@ The following table shows how the **User Labels** are configured for the advance
 
 | Field | Description |
 |-------|-------------|
-| Deploy Solution | Set the value to blank to use the default label, **DEPLOY SOLUTION**. |
-| Commit Solution | Set the value to blank to use the default label, **COMMIT SOLUTION**. |
-| Import Solution | Set the value to blank to use the default label, **IMPORT SOLUTION**. |
-| Delete Solution | Set the value to blank to use the default label, **DELETE SOLUTION**. |
+| Deploy Solution | Enter a label or set the value to blank to use the default label, **DEPLOY SOLUTION**. |
+| Commit Solution | Enter a label or set the value to blank to use the default label, **COMMIT SOLUTION**. |
+| Import Solution | Enter a label or set the value to blank to use the default label, **IMPORT SOLUTION**. |
+| Delete Solution | Enter a label or set the value to blank to use the default label, **DELETE SOLUTION**. |
 
 ## Walk-through: ALM Accelerator advanced maker experience
 

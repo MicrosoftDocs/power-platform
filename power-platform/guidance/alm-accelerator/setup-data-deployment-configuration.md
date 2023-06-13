@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Deployment configuration guide
 
-The ALM Accelerator for Power Platform uses configuration files in JSON format to automate the deployment of your solutions. They set connection references, environment variables, and permissions; share canvas apps; and update ownership of solution components such as Power Automate flows when solutions are deployed to downstream environments.
+The ALM Accelerator for Power Platform uses configuration files in JSON format to automate the deployment of your solutions. They set connection references, environment variables, and permissions, share canvas apps, and update ownership of solution components such as Power Automate flows when solutions are deployed to downstream environments.
 
 The configuration files in this article allow you to configure items that are specific to the environment to which a solution is being deployed. The configuration files you need, and thus the steps you need to follow in this article, depend on the components your solution pipelines deploy. For instance, if your solution contains only Dataverse tables and model-driven apps and no per-environment configuration or data is needed, you can skip some of these steps.
 
@@ -100,7 +100,7 @@ The property `ConnectionReferences` in the *customDeploymentConfiguration.json* 
 
    - Get the logical name for the connection reference from the connection reference component in your solution.
 
-       :::image type="content" source="media/setup-almacceleratorpowerplatform-deployment-config/connrefschema.png" alt-text="Screenshot of a connnection reference schema name in a solution, highlighted in a disabled text field below the Name label.":::<!-- EDITOR'S NOTE: Please crop the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
+       :::image type="content" source="media/setup-almacceleratorpowerplatform-deployment-config/connrefschema.png" alt-text="Screenshot of a connection reference schema name in a solution, highlighted in a disabled text field below the Name label.":::<!-- EDITOR'S NOTE: Please crop the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
    - Get the connection ID from the URL of the connection after you create it. For example, if the URL is 'https://.../connections/shared_commondataservice/9f66d1d455f3474ebf24e4fa2c04cea2/details', the connection ID is *9f66d1d455f3474ebf24e4fa2c04cea2*.
 
@@ -318,9 +318,9 @@ The property `AadGroupTeamConfiguration` in the *customDeploymentConfiguration.j
 
 Security roles must be added to your solution if they aren't manually created in the target environment. One or more roles can be applied to a team. The roles provide permissions to solution components required by the users in the group.
 
-1. The Dataverse team name can be of an existing team or a new team to be created in Dataverse and mapped to an Azure AD group after the solution is imported by the pipeline.
+1. The Dataverse team name can be of an existing team or a new team to be created in Dataverse and mapped to an Azure AD group after the solution is imported.
 
-1. The Dataverse roles can be any security role in Dataverse that would be applied to the team after the solution is imported by the pipeline. The roles must have privileges to the resources the solution requires, such as tables and processes.
+1. The Dataverse roles can be any security role in Dataverse that would be applied to the team after the solution is imported. The roles must have privileges to the resources the solution requires, such as tables and processes.
 
 1. Get the Azure AD group ID from the **Group** page in the Azure portal as in the previous section.
 

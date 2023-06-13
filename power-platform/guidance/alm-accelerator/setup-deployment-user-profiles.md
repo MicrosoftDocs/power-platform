@@ -1,24 +1,24 @@
 ---
-title: "Configure deployment profiles for the ALM Accelerator for Power Platform app | MicrosoftDocs"
-description: "Deployment profiles direct the ALM Accelerator for Power Platform how to connect to your Azure DevOps organization and provide a default branching strategy for your solutions."
-author: jenschristianschroder
+title: Configure deployment profiles
+description: Learn how to use deployment profiles to direct the ALM Accelerator for Power Platform how to connect to your Azure DevOps organization and to provide a default branching strategy for your solutions.
 ms.topic: conceptual
 ms.date: 04/10/2023
 ms.subservice: guidance
+author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks
+ms.custom: bap-template
 ---
-# Configure deployment profiles for the ALM Accelerator for Power Platform app
 
-Deployment profiles are linked to [deployment user settings](./setup-deployment-user-settings.md). The app uses deployment profiles to make decisions for the user on where and how to create branches and approvals for deployment as well as how to connect to your Azure DevOps projects and repositories.
+# Configure deployment profiles
 
-## Create deployment profiles by using the ALM Accelerator app
+Deployment profiles are linked to [deployment user settings](./setup-deployment-user-settings.md). The ALM Accelerator app uses deployment profiles to make decisions for the user about where and how to create branches and approvals for deployment. It also uses them to know how to connect to your Azure DevOps projects and repositories.
+
+## Create deployment profiles using the ALM Accelerator app
 
 1. Open the ALM Accelerator for Power Platform app.
 
-   - If the user has more than one deployment user setting shared with them, the app displays a drop-down list for the user to choose their experience.
-
-   - If a user only has one deployment user setting shared with them, the drop-down list to choose their experience isn't displayed. Instead, their default user setting is used by the app.
+   - If you have more than one deployment user setting, select your experience in the list. Otherwise, the app uses a default setting.
 
    - If no user setting is shared with the user, the app creates a new user deployment setting for the user and uses the default interface for the app.
 
