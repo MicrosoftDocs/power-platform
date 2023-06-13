@@ -67,13 +67,13 @@ Additionally, users and makers are notified on the Environment's list page and E
 
 Power Platform calculates a single measure of inactivity for each Dataverse for Teams environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Virtual Agents, and Dataverse.
 
-Most create, read, update, and delete operations on the environment and its resources that a user, maker, or admin initiates are considered activity. Most read operations aren't accounted for.
+Most create, read, update, and delete operations on the environment, and its resources that a user, maker, or admin initiates, are considered activities. Most read operations like visits to the home page, solution explorer, and Power Apps or Power Automate designer aren't considered activities.
 
 Here are some examples of the types of activities that are included in the measure:
 
 - **User activity**: Launch an app, execute a flow (whether automatic or not), chat with a Power Virtual Agents bot
 
-- **Maker activity**: Create, read, update, or delete an app, flow (desktop and cloud flows), Power Virtual Agents bot, custom connector
+- **Maker activity**: Create, update, or delete an app, flow (desktop and cloud flows), Power Virtual Agents bot, custom connector
 
 - **Admin activity**: Environment operations such as copy, delete, back up, recover, reset  
 
