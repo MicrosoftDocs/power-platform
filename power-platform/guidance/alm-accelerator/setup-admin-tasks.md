@@ -58,7 +58,7 @@ Before you install the ALM Accelerator for Power Platform, make sure you've met 
 
 ## Configure Azure AD app registrations
 
-The following steps are general to the functionality of the ALM accelerator and aren't specific to any project or solution.
+The following steps are general to the functionality of the ALM Accelerator and aren't specific to any project or solution.
 
 ### Create an app registration in your Azure AD environment
 
@@ -289,7 +289,7 @@ Create an application user in your environments to allow the pipelines to connec
 
 1. Select **Create**.
 
-Repeat the previous steps in your validation, test, and production environments.
+Repeat these steps in your validation, test, and production environments.
 
 ## Set up makers to use the ALM Accelerator app
 
