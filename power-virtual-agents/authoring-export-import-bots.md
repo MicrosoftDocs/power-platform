@@ -105,7 +105,7 @@ You use solutions to export bots from one environment and import them into anoth
 > [!NOTE]
 > The following applies to **Classic** bots.
 
-1. If you're using [skills](advanced-use-skills.md), remove the skill's environment variables **Current Value** by selecting **Remove from this solution**.
+4. If you're using [skills](advanced-use-skills.md), remove the skill's environment variables **Current Value** by selecting **Remove from this solution**.
 
     :::image type="content" source="media/authoring-export-import-bots/EnvVariableRemoveCurrentValue.png" alt-text="Screenshot showing the Remove from this solution button.":::
 
