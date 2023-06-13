@@ -20,8 +20,6 @@ ms.subservice: solution-templates
 
 # SAP Requisition Management app
 
-[This article is prerelease documentation and is subject to change.]
-
 The SAP Requisition Management app allows you to do several functions in SAP quicker and easier than using SAPGui. You can view a requisition, search for a requisition, change an existing requisition, or create a new requisition from scratch.
 
 :::image type="content" source="media/requisition-management/sap-req-app.png" alt-text="Image of the Power Platform Procurement requisition app":::
