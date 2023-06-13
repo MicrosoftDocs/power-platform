@@ -29,7 +29,7 @@ Makers can use ALM Accelerator components to apply source control strategies wit
 1. Set **Step Type** to **Development**.
 1. Set **Step Number** to *4*.
 1. Set **Build Template Path** to, for example, */Pipelines/build-deploy-dev-SampleSolution.yml*.
-1. Create a new environment and set the **Environment Name** and **URL** based on your development environment, such as *My Development Environment* and *https://dev.crm.dynamics.com/*.
+1. Create a new environment and set the **Environment Name** and **URL** based on your development environment.
 1. Save the deployment step.
 
 ## Create an import deployment configuration for your solution

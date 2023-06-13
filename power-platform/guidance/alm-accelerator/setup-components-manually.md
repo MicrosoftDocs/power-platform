@@ -637,7 +637,7 @@ You can allow all pipelines to access required service connections.
 
 ### Create a deployment configuration (optional)
 
-You need to create several configurations in a target environment after a solution is deployed. These configurations are specific to the environment and include connection references, environment variables, and permissions for Azure AD Groups and Dataverse teams, in addition to sharing canvas apps and updating the ownership of solution components such as Power Automate flows. Along with these configurations, a target environment often needs sample or configuration data that's associated with Dataverse tables in the solution to provide a full end-to-end ALM experience.
+You need to create several configurations in a target environment after a solution is deployed. These configurations are specific to the environment and include connection references, environment variables, and permissions for Azure AD groups and Dataverse teams, in addition to sharing canvas apps and updating the ownership of solution components such as Power Automate flows. Along with these configurations, a target environment often needs sample or configuration data that's associated with Dataverse tables in the solution to provide a full end-to-end ALM experience.
 
 If your solution requires these other configurations or data, follow the [deployment configuration guide](setup-data-deployment-configuration.md) to configure your pipelines based on the environments to which you're deploying.
 

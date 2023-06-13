@@ -279,7 +279,7 @@
               href: alm-accelerator/setup-deployment-user-settings.md
             - name: Configure deployment profiles
               href: alm-accelerator/setup-deployment-user-profiles.md
-            - name: Configuration and data deployment in pipelines
+            - name: Deployment configuration guide
               href: alm-accelerator/setup-data-deployment-configuration.md
             - name: Configure user permissions
               href: alm-accelerator/setup-app-user-permissions.md
