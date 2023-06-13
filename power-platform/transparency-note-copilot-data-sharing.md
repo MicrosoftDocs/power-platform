@@ -49,7 +49,7 @@ All data is handled as per the Copilot data security and privacy guidelines expl
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 
-Your data can only be accessed by Mocrosoft personnel using JIT access via SAW machines. Your data is stored in your geographic data boundaries with a 30-day retention policy.
+Your data can only be accessed by Mocrosoft personnel with elevated access permissions. Your data is stored in your geographic data boundaries with a 30-day retention policy.
 
 ### Related content
 
