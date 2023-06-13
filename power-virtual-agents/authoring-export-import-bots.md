@@ -71,9 +71,9 @@ You use solutions to export bots from one environment and import them into anoth
     :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the Bot details settings page in Power Virtual Agents, with the Export button highlighted.":::
 
 > [!NOTE]
-> If you are using a **Classic** bot, select the bot you want to export. Then select **Export chatbot**.
+> If you ar using a **Classic** bot, select the bot you want to export, then select **Export chatbot**.
 
-    :::image type="content" source="media/authoring-export-import-bots/export-chatbot-list.png" alt-text="Screenshot of the export button on the general setting page.":::
+:::image type="content" source="media/authoring-export-import-bots/export-chatbot-list.png" alt-text="Screenshot of the export button on the general setting page.":::
 
 1. Select **Go to Power Apps Solutions**.
 
