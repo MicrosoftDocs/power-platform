@@ -45,7 +45,7 @@ You can access the finance and operations apps within Power Platform admin cente
   > [!IMPORTANT]
   > For this option to work, the environment must have been created with the **Enable Dynamics 365 apps** toggle turned on. This toggle ensures that the environment was created with the underlying schema required by the Dynamics 365 apps.
 
-In either approach, notice that your environment has two runtime URLs: one for the customer engagement apps another one for finance and operations apps.
+In either approach, notice that your environment has two runtime URLs: one for the customer engagement apps (**Environment URL**) another one for finance and operations apps (**Finance and Operations URL**).
 
 :::image type="content" source="media/environment-urls.png" alt-text="Two URLs for customer engagement and finance and operations apps in your environment":::
 
