@@ -12,7 +12,9 @@ ms.custom: bap-template
 
 # Configure pipeline sync
 
-As the pipeline templates in the ALM Accelerator for Power Platform change, you need to update them with each new release. The pipeline sync script makes it easy to keep your pipeline templates up-to-date. [Get instructions for a full upgrade of the ALM Accelerator for Power Platform](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config).
+We periodically release updates of the ALM Accelerator pipeline templates. Use the pipeline sync template that's included with the ALM Accelerator to keep your pipeline templates up-to-date automatically.
+
+The pipeline sync template only updates the ALM Accelerator pipeline templates. [Upgrade the ALM Accelerator solution components](setup-upgrade-configuration.md) separately.
 
 ## Pipeline sync setup
 
@@ -36,11 +38,15 @@ To simplify the process, we created a pipeline template that automatically syncs
 
 1. Run the new pipeline.
 
-1. Enter the name of the **SourceBranch** and **BranchToCreate** in Azure DevOps, and the **TargetBranch**, such as *main*, and then select **Select Run**.
+1. Enter the name of the **SourceBranch** and **BranchToCreate** in Azure DevOps, and the **TargetBranch**, such as *main*.
+
+1. Select **Run**.
 
 1. After the pipeline runs, a pull request is created for the **BranchToCreate** into the **TargetBranch**. To commit the changes, approve and complete the pull request.
 
     :::image type="content" source="media/setup-almacceleratorpowerplatform-pipeline-sync/image-20210524102603951.png" alt-text="Screenshot of the sync pipeline pull request.":::<!-- EDITOR'S NOTE: Please crop, highlight, and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
+
+    If the pull request has merge conflicts, you need to resolve them to complete the upgrade. Use the free Azure DevOps extension **Pull Request Merge Conflict**, available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.conflicts-tab).
 
 ## Next steps
 

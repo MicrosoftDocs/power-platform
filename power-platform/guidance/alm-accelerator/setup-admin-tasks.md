@@ -200,7 +200,9 @@ Import the ALM Accelerator canvas app into your Power Platform environment, and 
 
 1. Select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
 
-1. Select **Edit**. On the **Security** page, select **Edit**, and then set the following fields:
+1. Select **Edit**.
+
+1. On the **Security** tab, select **Edit**, and then set the following values:
 
    | Name | Value |
    |--|--|
