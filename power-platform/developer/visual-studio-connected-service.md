@@ -1,10 +1,10 @@
 ---
 title: Visual Studio connected service (preview)
-description: Learn about custom connectors in Visual Studio.
+description: Add Power Platform as a connected service in Visual Studio to create a custom connector.
 author: marcelbf
 ms.author: marcelbf
 ms.reviewer: jdaly
-ms.date: 4/11/2023
+ms.date: 6/14/2023
 ms.subservice: developer
 ms.topic: overview
 search.audienceType: 
@@ -18,14 +18,14 @@ ms.custom: bap-template
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Developers who prefer to work directly with code can use [Connected Services](/visualstudio/azure/overview-connected-services) to create custom connectors in Visual Studio. Connected Services is a collection of tools in Visual Studio that help you connect to services. With the existing capabilities developers have to build Microsoft Azure functions or APIs in Visual Studio, the Connected Services integration offers a complete end-to-end experience in custom connector development.
+Developers can use [Connected Services](/visualstudio/azure/overview-connected-services) within Visual Studio to create custom connectors. Connected Services is a collection of tools in Visual Studio that help you connect to services. With the existing capabilities developers have to build Microsoft Azure Functions or APIs in Visual Studio, the Connected Services integration offers a complete end-to-end experience in custom connector development.
 
 > [!IMPORTANT]
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)].
 
-For Visual Studio 2022, we added support for the Microsoft Power Platform for [ASP.NET Core web API projects](/aspnet/core/tutorials/first-web-api?tabs=visual-studio). This integration allows you to:
+For Visual Studio 2022, we added Connected Services support for the Microsoft Power Platform for [ASP.NET Core web API projects](/aspnet/core/tutorials/first-web-api?tabs=visual-studio). This integration allows you to:
 
 - Connect to a [Power Platform environment](/power-platform/admin/create-environment).
 - Automatically generate a [custom connector](/connectors/custom-connectors/) for your Power Platform environment.
@@ -38,7 +38,6 @@ Dev tunnels create an ad-hoc connection between your web API running locally and
 - [Visual Studio 2022 version 17.6 Preview 2](/visualstudio/releases/2022/release-notes-preview) with the ASP.NET and web development workload installed. You need to be signed in to Visual Studio to create and use dev tunnels. The feature isn't available in Visual Studio for Mac.
 
 - An [ASP.NET Core web API project](/aspnet/core/tutorials/first-web-api?tabs=visual-studio)
-
 - A [Power Platform developer environment](create-developer-environment.md)
 
 ## Limitations
