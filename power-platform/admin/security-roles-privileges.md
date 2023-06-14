@@ -249,8 +249,6 @@ A security role can be set to provide team members with direct Basic-level acces
 
    To change the access level for a privilege, keep selecting the access level symbol until you see the one you want. The access levels available depend on whether the record type is organization-owned or user-owned.
 
-You can also set this privilege inheritance property for all out-of-the-box security roles except the System Administrator role.  
-
 You can only select Basic-level privileges in the member's privilege inheritance. If you need to provide access to a child business unit, elevate the privilege to Deep. For example, you need to assign a security role to the Group team and you want the members of the group to be able to Append to Account. Set up the security role with a Basic-level member's privilege inheritance. Set the Append to Account privilege to Deep. This is because Basic privileges apply only to the user's business unit.
 
 ### See also
