@@ -1,6 +1,6 @@
 ---
-title: "Manage collaboration settings | MicrosoftDocs"
-description: Manage collaboration settings to adjust how collaboration features work in Power Platform.
+title: Manage collaboration settings
+description: Learn how to use collaboration settings to adjust how collaboration features work in Power Platform.
 author: fikaradz
 ms.component: pa-admin
 ms.topic: conceptual
@@ -15,37 +15,33 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+ms.custom: bap-template
 ---
+
 # Manage collaboration settings
 
-Use collaboration settings to adjust how collaboration features work in Power Platform.
+Use collaboration settings to adjust how collaboration features work in Power Platform. Adjust the settings in the Power Platform admin center, **Environments** > *select an environment* > **Settings** > **Product** > **Collaboration**.
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Collaboration**.
+## Prerequisites
 
-Make sure you have the System Administrator security role or equivalent permissions to update the collaboration settings.
+[Make sure you have the System Administrator security role](/powerapps/user/view-your-user-profile) or equivalent permissions to change the collaboration settings. If you don't, ask your system administrator.
 
-**Check your security role**
+## User experiences
 
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
+- Model-driven apps
 
-## End user experiences
+  - Show modern share on views and dashboards (preview): The **Share** button is shown in views and dashboards, which makes it easy to copy links and share them with others.
 
-> [!div class="mx-tableFixed"]
-> |Settings|Description|  
-> |--------------|-----------------|  
-> |**Model-driven apps**||  
-> | Show modern share on views and dashboards (preview) | Users will see the **Share** button in views and dashboards, which makes it easy to copy links and share with others. |
-> |**Enable sharing**||  
-> |Allow users to share read-only links to records with other users from this environment.|Allows users with the share privilege to give read-only access to records when sharing them with the **Specific people** option selected.|  
-> |**Team Integration**||  
-> |Show record name and type to unauthorized users when unfurling links in Teams chats| When copying a link into Teams, display the name and type of record in a card when link is shared within the organization.|
-> Intall the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams.| Active users of Dynamics 365 apps annd Power Apps model-driven apps will get the Dynamics 365 app for Teams automatically installed in their Teams client.  |
+- Enable sharing
+
+  - Allow users to share read-only links to records with other users from this environment: Allows users who have the share privilege to give read-only access to records when they share them with the **Specific people** option selected.
+
+- Team integration
+
+  - Show record name and type to unauthorized users when unfurling links in Teams chats: When a link is pasted into a Microsoft Teams chat, display the name and type of record in a card.
+
+  - Install the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams: Active users of Dynamics 365 apps and Power Apps model-driven apps get the Dynamics 365 app for Teams automatically installed in their Teams client.
 
 ## App authoring experiences
-> [!div class="mx-tableFixed"]
-> |Settings|Description|  
-> |--------------|-----------------|  
-> |**Coauthoring (preview)**||  
-> |Enable coauthoring, which lets people simultaneously edit model-driven apps together | [Coauthoring in model-driven apps (preview)](/power-apps/maker/model-driven-apps/coauthoring)| 
 
+- Coauthoring (preview): Enable [coauthoring](/power-apps/maker/model-driven-apps/coauthoring), which lets people simultaneously edit model-driven apps together
