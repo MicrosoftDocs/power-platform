@@ -241,7 +241,7 @@ The custom deployment settings JSON file contains settings that activate flows o
 
 1. Save the file in the *config* folder in Git.
 
-  :::image type="content" source="media/setup-almacceleratorpowerplatform-deployment-config/image-20210917153336262.png" alt-text="Screenshot of a config folder structure.":::<!-- EDITOR'S NOTE: Please crop and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
+  :::image type="content" source="media/setup-almacceleratorpowerplatform-deployment-config/image-20210917153336262.png" alt-text="Screenshot of a config folder structure for custom deployment settings.":::<!-- EDITOR'S NOTE: Please crop and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
 ### Create default environment variable JSON in the custom deployment configuration file
 

@@ -571,8 +571,7 @@ Create a [branch policy](/azure/devops/repos/git/branch-policies) to execute the
 
 1. Select **Save**.
 
-  :::image type="content" source="media/almacceleratorpowerplatform-components/image-20210301104042544.png" alt-text="
-Screenshot of selecting settings for a validation build policy.":::<!-- EDITOR'S NOTE: Please crop and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
+  :::image type="content" source="media/almacceleratorpowerplatform-components/image-20210301104042544.png" alt-text="Screenshot of selecting settings for a validation build policy.":::<!-- EDITOR'S NOTE: Please crop and rename the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
 
 ### Set resource access permissions for pipelines
 
