@@ -66,7 +66,7 @@ You use solutions to export bots from one environment and import them into anoth
 > [!NOTE]
 > If you are using a **Classic** bot, in the navigation menu select **Chatbots** to open the **Chatbots** page and view all the bots you have access to in this environment.
 
-1. In the navigation menu, under **Settings**, select **Bot details**, and then select **Export**.
+2. In the navigation menu, under **Settings**, select **Bot details**, and then select **Export**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-settings.png" alt-text="Screenshot of the Bot details settings page in Power Virtual Agents, with the Export button highlighted.":::
 
@@ -75,15 +75,15 @@ You use solutions to export bots from one environment and import them into anoth
 
 :::image type="content" source="media/authoring-export-import-bots/export-chatbot-list.png" alt-text="Screenshot of the export button on teh general setting page.":::
 
-1. Select **Go to Power Apps Solutions**.
+3. Select **Go to Power Apps Solutions**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-settings-powerapps.png" alt-text="Screenshot of the bot export prompt.":::
 
-1. In Power Apps, on the **Solutions** tab, select **New solution**.
+4. In Power Apps, on the **Solutions** tab, select **New solution**.
 
     :::image type="content" source="media/authoring-export-import-bots/export-new-solution.png" alt-text="Screenshot of the Power Apps Solutions page, with the New solution button highlighted.":::
 
-1. Enter the following information for the new solution:
+5. Enter the following information for the new solution:
 
     | Field        | Description   |
     | ------------ | ------------- |
@@ -92,7 +92,7 @@ You use solutions to export bots from one environment and import them into anoth
     | Publisher    | Select the default publisher or create a new one. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. Learn more about [solution publishers](/powerapps/maker/common-data-service/change-solution-publisher-prefix). |
     | Version      | Enter a number for the version of your solution. The version number is included in the file name when you export the solution. |
 
-1. Select **Create**.
+6. Select **Create**.
 
 ### Add your bot to the solution
 
