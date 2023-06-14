@@ -3,7 +3,7 @@ title: Enable Managed Environments
 description: Learn how to enable Managed Environments for Power Platform in the admin center or PowerShell.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2023
+ms.date: 06/14/2023
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
