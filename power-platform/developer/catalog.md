@@ -4,7 +4,7 @@ description: "Use the catalog in Power Platform to managed shared components and
 author: samathur
 ms.subservice: developer
 ms.author: samathur
-ms.date: 05/22/2023
+ms.date: 05/26/2023
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -45,7 +45,7 @@ For administrators and line of business approvers, the catalog:
 > [!IMPORTANT]
 >
 > - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)].
+> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 > - Currently, the catalog cannot be utilized in an environment that utilizes customer managed keys. More information: [Manage your customer-managed encryption key (preview)](../admin/customer-managed-key.md)
 
@@ -148,8 +148,22 @@ In [Power Apps](https://make.powerapps.com/), with the environment you selected,
 - Power Platform catalog service identities
 - Power Platform catalog manager
 
+#### How the applications will appear in your environment
+
+These apps will appear in two places:
+
 > [!NOTE]
-> You will also see an app named "Package Viewer" in the environment. This app is reserved for future use.
+> You will also see an app named **Package Management View** in the environment. This app is reserved for future use.
+
+- In [Power Apps](https://make.powerapps.com/), select **Apps**
+
+   :::image type="content" source="../media/PowerCatalogApps_Maker.png" alt-text="Power Apps Maker App List":::
+
+- In the **Unified Interface apps** view:
+
+   :::image type="content" source="../media/PowerCatalogApps_UCI.png" alt-text="Power Apps Unified Client Applications View":::
+
+   More information: [About Unified Interface for model-driven apps in Power Apps](../admin/about-unified-interface.md)
 
 ## Configure the catalog
 
@@ -206,17 +220,26 @@ Learn how to view, submit, and install catalog items.
 > [!div class="nextstepaction"]
 > [View, submit, and install catalog items](submit-catalog-items.md)<br/>
 
+Ask questions or contact the project team on GitHub.
+
+> [!div class="nextstepaction"]
+> [github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)<br/>
+
 ## Frequently asked questions (FAQ)
 
 The following are frequently asked questions related to catalog in Power Platform. If you have questions you haven't found in the documentation, please use the **Feedback** section at the bottom of this page. Click on the **This page** button. You'll need to have a GitHub account to provide feedback.
 
-### When would I need to create more than one catalog?
+### Q: When would I need to create more than one catalog?
 
 While most organizations are likely to use just one catalog, it's possible to create more than one catalog for distinct audiences. These include segregation of data concerns from a geography, departmental, business group (subsidiary) or other reasons.
 
-### Is there a license required to use the Catalog?
+### Q: Is there a license required to use the catalog?
 
 For the public preview, the catalog feature is available to be used without any licensing. While not required for the preview, when this feature is generally available it requires the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
+
+### Q: Where do I provide feedback on catalog
+
+You can reach the team and community using the Power Catalog for Pro dev on GitHub here: [https://github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)
 
 ### See also
 

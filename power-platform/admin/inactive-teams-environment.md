@@ -4,10 +4,10 @@ description: Admins can configure an automatic cleanup process that removes inac
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/16/2022
+ms.date: 05/30/2023
 ms.subservice: admin
 ms.author: matgupta 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -59,6 +59,7 @@ The following users will receive email notifications on the schedule described i
   A Dataverse for Teams environment is paired with a team in Microsoft Teams. The owners of the team are automatically granted the System Administrator role for the environment. They receive email notifications and can [trigger activity, re-enable, and recover the environment](#trigger-activity-re-enable-and-recover-a-dataverse-for-teams-environment) in the Power Platform admin center. Team members and guests don't receive the email notifications.
 
 - The user who created the environment 
+- If environment admins are no longer part of the tenant, then the tenant admin are notified.
 
 Additionally, users and makers are notified on the Environment's list page and Environment page when the Dataverse for Teams environment is disabled.
 
@@ -66,13 +67,13 @@ Additionally, users and makers are notified on the Environment's list page and E
 
 Power Platform calculates a single measure of inactivity for each Dataverse for Teams environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Virtual Agents, and Dataverse.
 
-Most create, read, update, and delete operations on the environment and its resources that a user, maker, or admin initiates are considered activity. Most read operations aren't accounted for.
+Most create, read, update, and delete operations on the environment, and its resources that a user, maker, or admin initiates, are considered activities. Most read operations like visits to the home page, solution explorer, and Power Apps or Power Automate designer aren't considered activities.
 
 Here are some examples of the types of activities that are included in the measure:
 
 - **User activity**: Launch an app, execute a flow (whether automatic or not), chat with a Power Virtual Agents bot
 
-- **Maker activity**: Create, read, update, or delete an app, flow (desktop and cloud flows), Power Virtual Agents bot, custom connector
+- **Maker activity**: Create, update, or delete an app, flow (desktop and cloud flows), Power Virtual Agents bot, custom connector
 
 - **Admin activity**: Environment operations such as copy, delete, back up, recover, reset  
 
