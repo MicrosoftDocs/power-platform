@@ -45,7 +45,7 @@ This table summarizes the information sources you can use to boost conversations
 | Bing Search | External | Searches the query input on Bing; returning results only from provided websites | 4 public URLs (for example, _microsoft.com_) | None |
 | [Bing Custom Search](https://www.customsearch.ai/) | External | Query input filtered based on a website configuration external to Power Virtual Agents | More than 4 URLs (Bing Custom Search also provides other functionality) | None |
 | SharePoint | Internal | Connects to a SharePoint URL, uses GraphSearch to return results | 4 URLs | Bot user Azure Active Directory (Azure AD) authentication |
-| OneDrive for business | Internal | Connects to a OneDrive for Business URL, uses GraphSearch to return results | 4 URLs | Bot user Azure Active Directory (Azure AD) authentication |
+| OneDrive for Business | Internal | Connects to a OneDrive for Business URL, uses GraphSearch to return results | 4 URLs | Bot user Azure Active Directory (Azure AD) authentication |
 | [Custom data](#custom-data-source) | Internal | Uses a JSON code block to define the URLs and content to use | One variable, populated with the JSON results to be summarized | Dependent on source |
 
 As the table notes, some features require user authentication to be configured for your bot. In the cases of SharePoint and OneDrive for Business, authentication is done using Azure AD. User authentication for information sources also means that when a specific user asks a question of the bot, the bot will only surface content that that specific user can access.
