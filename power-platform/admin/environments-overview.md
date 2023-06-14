@@ -102,7 +102,7 @@ You can create environments for different purposes. A trial environment is for t
 
 ## Manage environments in the Power Platform admin center
 
-You can view and manage your environments on the **Environments** page. 
+You can view and manage your environments on the **Environments** page in [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
 > [!div class="mx-imgBorder"] 
 > ![Environment list.](media/environment-list.png "Environment list")
