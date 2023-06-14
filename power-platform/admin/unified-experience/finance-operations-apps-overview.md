@@ -73,16 +73,16 @@ When it comes to environment lifecycle operations, there are some terminology an
 | Copy | Database Refresh | Copy | In Power Platform, code is always copied along with the data giving a full copy of the source environment.  This differs from LCS that only copied data. |
 |Backup | Database Export | Backup (Custom or System-defined)| In Power Platform, a backup is kept in the cloud and never downloaded as a SQL .bak or .bacpac file. |
 | Restore | Point-in-time restore | Restore (Custom or System-defined)| - |
-| Reset | Not applicable | Reset| This operation isn't yet implemented for environments where **Finance and Operations Provisioning App** is installed. |
+| Reset | Not applicable | Reset| This operation isn't yet implemented for environments where **Dynamics 365 Finance and Operations Provisioning App** is installed. |
 | Convert to Production | Not applicable | Convert to Production | This operation isn't yet implemented for environments where **Finance and Operations Provisioning App** is installed. |
-| Delete | Deallocate / Delete | Delete | Restoring a deleted environment where **Finance and Operations Provisioning App** was installed isn't yet implemented. |
+| Delete | Deallocate / Delete | Delete | Restoring a deleted environment where **Dynamics 365 Finance and Operations Provisioning App** was installed isn't yet implemented. |
 
 ## TO DO: Scenario tutorials
 
 The following list of continually updated scenario tutorials provides a walkthrough for administrators in these new experiences.
 
 - Provision a new environment with an ERP-based template
-- Install **Finance and Operations Provisioning app** on an existing environment
+- Install **Dynamics 365 Finance and Operations Provisioning app** in an existing environment
 - Add a developer user to an environment and connect to it with Visual Studio
 - Set up a continuous integration and continuous deployment (CI/CD) build and release pipeline
 - Manage storage and capacity
