@@ -31,6 +31,7 @@ The following settings apply to all environments within your tenant.
 |[Add-on capacity assignments](capacity-add-on.md#control-who-can-allocate-add-on-capacity)    | Control who can allocate add-on capacity to an environment.        |
 |[Analytics](tenant-level-analytics.md)   | Enable tenant-level analytics.        |
 |[Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy)*   | Enable the Customer Lockbox policy for Managed Environments.        |
+| Catalog Assignments  | This setting is reserved for future use. No enforcement is driven by this setting at the current time.       |
 
 *This setting applies only to Managed Environments.
 
