@@ -50,3 +50,14 @@ Additionally, you can:
 - Customize your solutions.
 - Integrate your system of record with other features, applications, and systems.
 - Incorporate additional controls over how your users interact with data.
+
+## Next steps
+
+- [Get started with SAP Procurement solution template](administer/get-started.md)
+
+## See also
+
+- [SAP Vendor Management app](use/vendor-management.md)
+- [SAP Requisition Management app](use/requisition-management.md)
+- [SAP Purchase Order Management app](use/purchase-order-management.md)
+- [Frequently asked questions about SAP procurement integration with Power Platform](faqs.md)

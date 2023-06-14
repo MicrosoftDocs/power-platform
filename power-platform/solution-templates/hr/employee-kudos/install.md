@@ -187,3 +187,7 @@ To do this:
 :::image type="content" source="media/install/Auditing1.png" alt-text="Select environment tab and select audit settings":::
 
 1. Select on **Start auditing**.
+
+## Next steps
+
+- [Get started using the Employee Kudos app](use.md)
