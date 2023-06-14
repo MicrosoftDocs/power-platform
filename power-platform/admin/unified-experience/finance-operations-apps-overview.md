@@ -77,7 +77,7 @@ When it comes to environment lifecycle operations, there are some terminology an
 | Convert to Production | Not applicable | Convert to Production | This operation isn't yet implemented for environments where **Finance and Operations Provisioning App** is installed. |
 | Delete | Deallocate / Delete | Delete | Restoring a deleted environment where **Finance and Operations Provisioning App** was installed isn't yet implemented. |
 
-## Scenario tutorials
+## TO DO: Scenario tutorials
 
 The following list of continually updated scenario tutorials provides a walkthrough for administrators in these new experiences.
 
@@ -86,3 +86,9 @@ The following list of continually updated scenario tutorials provides a walkthro
 - Add a developer user to an environment and connect to it with Visual Studio
 - Set up a continuous integration and continuous deployment (CI/CD) build and release pipeline
 - Manage storage and capacity
+
+### Related articles
+
+[Finance and operations apps documentation](/dynamics365/fin-ops-core/fin-ops/)<br/>
+[Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)<br/>
+[Manage Dynamics 365 apps](/power-platform/admin/manage-apps)
