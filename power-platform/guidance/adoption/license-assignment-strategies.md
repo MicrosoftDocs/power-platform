@@ -31,7 +31,7 @@ Establishing a license assignment strategy is important for:
 > - Pay-as-you-go
 > - Power Pages
 > - Power Virtual Agents
-> - Add-on's such as AI Builder
+> - Add-ons such as AI Builder
 
 ## Common license assignment strategies
 
