@@ -45,6 +45,8 @@ The identity setting up the CoE Starter Kit needs Storage Data Reader permission
 
 ## Why do you recommend moving from using cloud flows to retrieve inventory to using Data Export?
 
+
+
 The cloud flows that sync inventory to Dataverse consume a high number of API calls, and can hit throttling and scale limits if you have a large number of Power Platform resources (environments, apps, flows) in your tenant. These cloud flows work best for small to medium-sized tenants that have less than 10,000 apps and flows. The Data Export feature uses Power BI and Power Platform dataflows, which are powerful at transforming and handling large amounts of data. Once we've validated that this feature works as intended, using Data Export with the CoE Starter Kit will increase performance and scale.
 
 > [!IMPORTANT]
