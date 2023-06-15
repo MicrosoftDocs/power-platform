@@ -55,13 +55,13 @@ You can log your questions and get support for the solution templates at <https:
 
 ## Next steps
 
-- [Get started with SAP Procurement solution template](finance/sap-procurement/administer/get-started)
-- [Install the Employee Kudos template](hr/employee-kudos/install)
+- [Get started with SAP Procurement solution template](finance/sap-procurement/administer/get-started.md)
+- [Install the Employee Kudos template](hr/employee-kudos/install.md)
 
 ## See also
 
-- [Customize solutions](finance/sap-procurement/administer/customize-solutions)
-- [SAP Vendor Management app](finance/sap-procurement/use/vendor-management)
-- [SAP Requisition Management app](finance/sap-procurement/use/requisition-management)
-- [SAP Purchase Orders Management app](finance/sap-procurement/use/purchase-order-management)
-- [Get started using the Employee Kudos app](hr/employee-kudos/use)
+- [Customize solutions](finance/sap-procurement/administer/customize-solutions.md)
+- [SAP Vendor Management app](finance/sap-procurement/use/vendor-management.md)
+- [SAP Requisition Management app](finance/sap-procurement/use/requisition-management.md)
+- [SAP Purchase Orders Management app](finance/sap-procurement/use/purchase-order-management.md)
+- [Get started using the Employee Kudos app](hr/employee-kudos/use.md)
