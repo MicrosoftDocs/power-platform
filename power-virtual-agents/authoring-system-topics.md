@@ -96,7 +96,7 @@ The following diagram provides a visualization of how conversations flow through
 :::image type="content" source="media/authoring-system-topics/system-topics.png" alt-text="Diagram of system topics in a conversation.":::
 
 > [!NOTE]
-> Some of these topics are no longer available.
+> Some of these topics are only available for Classic bots.
 
 The table below lists all available system topics, their intended purpose, and a small sample of the built-in trigger phrases.
 
