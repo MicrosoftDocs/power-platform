@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 5/15/2023
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -90,7 +90,7 @@ Use one of these values:
 
 #### `--messagenamesfilter` `-mnf`
 
-Filters the list of messages that are retrieved when reading data from Dataverse. Passed in as a semicolon separated list, required messages ( Create, Update, Delete, Retrieve, RetrieveMultiple, Associate and Disassociate) are always included. An * can be used to proceed or trail an message allowing for all messages starting with or ending with a string.  Using the form \<messagename>;\<messagename>
+Filters the list of messages that are retrieved when reading data from Dataverse. Passed in as a semicolon separated list, required messages ( Create, Update, Delete, Retrieve, RetrieveMultiple, Associate and DisAssociate) are always included. An * can be used to proceed or trail an message allowing for all messages starting with or ending with a string.  Using the form \<messagename>;\<messagename>
 
 #### `--messagestypesfolder` `-mtf`
 
