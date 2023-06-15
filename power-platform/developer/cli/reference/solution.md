@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 5/15/2023
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -180,7 +180,7 @@ Select a rule set that will be executed as part of this build. Values: A valid G
 
 #### `--saveResults` `-sav`
 
-Uses current environment to store solution analysis results. By default, this argument is set to false
+Uses current environment to store solution analysis results which can be seen in Solution Health Hub App. By default, this argument is set to false
 
 This parameter requires no value. It is a switch.
 
