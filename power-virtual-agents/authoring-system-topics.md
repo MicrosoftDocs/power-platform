@@ -5,7 +5,7 @@ keywords: "PVA"
 ms.date: 03/24/2023
 
 ms.topic: article
-author: iaanw
+author: KendalBond007
 ms.author: iawilt
 manager: leeclontz
 ms.custom: authoring, ceX
@@ -18,25 +18,19 @@ ms.reviewer: ggupta
 
 System topics are common topics used in conversations with a bot.
 
-You can't delete or disable system topics, or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation. If you make changes to a system topic that later you don’t want anymore, you need to go back to the default. This can be done using the Reset to Default button available on system topics.
-
-:::image type="content" source="media/authoring-system-topics/reset-system-topic.png" alt-text="Diagram of resetting system topics.":::
-
 When you first create a bot, all system topics are configured to trigger at the appropriate times. However, you can manually trigger system topics by [redirecting](authoring-create-edit-topics.md#redirect-to-another-topic) to them.
 
 ## System topics
 
-The following diagram provides a visualization of how conversations flow through system topics.
-
-:::image type="content" source="media/authoring-system-topics/system-topics.png" alt-text="Diagram of system topics in a conversation.":::
-
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# [Web app](#tab/webApp)
 
 Unlike topics that you create, system topics are built into Power Virtual Agents. They're added to a bot automatically when you create it. System topics help your bot respond to common system events, such as escalation, or carry out essential behavior, such as ending a conversation. You can't delete system topics. You can disable ones that you don't need, however.
 
 When you create a bot, all system topics are configured to trigger at the appropriate times, in response to related events. However, you can manually trigger system topics by [redirecting](authoring-create-edit-topics.md#redirect-to-another-topic) to them. Some also have trigger phrases that you can customize to fit your needs.
+
+You can't delete or disable system topics, or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation. If you make changes to a system topic that later you don’t want anymore, you need to go back to the default. This can be done using the Reset to Default button available on system topics.
+
+:::image type="content" source="media/authoring-system-topics/reset-system-topic.png" alt-text="Diagram of resetting system topics.":::
 
 > [!TIP]
 > Although you can edit the content and nodes in system topics, we recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
@@ -95,7 +89,14 @@ Prompts customers to sign in when user authentication is enabled. Learn how to [
 Triggers at the beginning of the conversation when users are required to sign in, or when the conversation reaches a node that uses authentication variables.
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
+
+The following diagram provides a visualization of how conversations flow through system topics.
+
+:::image type="content" source="media/authoring-system-topics/system-topics.png" alt-text="Diagram of system topics in a conversation.":::
+
+> [!NOTE]
+> Some of these topics are no longer available.
 
 The table below lists all available system topics, their intended purpose, and a small sample of the built-in trigger phrases.
 
