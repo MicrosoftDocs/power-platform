@@ -475,6 +475,10 @@ The target Environment ID or URL.  Default value is the environment of your curr
 **Deprecated**: Use `--environment` instead.
 [!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
 
+#### `--json`
+
+Formats the list of solutions as JSON.
+
 ## pac solution online-version
 
 Sets version for solution loaded in Dataverse.
