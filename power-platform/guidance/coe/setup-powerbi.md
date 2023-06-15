@@ -128,16 +128,16 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ### Troubleshooting
 
-The *Data source error: Information is needed in order to combine data; Information about a data source is required.* error message when using the BYODL Dashboard means that you have not configured the correct [privacy settings](/power-bi/enterprise/desktop-privacy-levels) for Power BI to combine data from the Azure storage account and Dataverse. Change the privacy level and update the credentials to resolve the issue:
+The *Data source error: Information is needed in order to combine data; Information about a data source is required* error message when using the BYODL Dashboard means that you have not configured the correct [privacy settings](/power-bi/enterprise/desktop-privacy-levels) for Power BI to combine data from the Azure storage account and Dataverse. Change the privacy level and update the credentials to resolve the issue:
 
 1. Open Power BI Desktop.
 1. Select **File** > **Options and settings** > **Options**.
-1. Select **Global** > **Privacy** and set the privacy level to **Always combine data according to your Privacy Level setting for each data source**.
+1. Select **Global** > **Privacy** and set the privacy level to **Always combine data according to your Privacy Level settings for each source**.
 
     :::image type="content" source="media/coepbi-byodl.PNG" alt-text="Set the privacy level to: Always combine data according to your Privacy Level setting for each data source.":::
     
 1. Select **OK**, and then select **File** > **Options and settings** > **Options** again.
-1. Select **Current File** > **Privacy** and set the privacy level to **Combine data according to your Privacy Level setting for each data source**.
+1. Select **Current File** > **Privacy** and set the privacy level to **Combine data according to your Privacy Level settings for each source**.
 
     :::image type="content" source="media/coepbi-byodl2.PNG" alt-text="Set the privacy level to: Combine data according to your Privacy Level setting for each data source.":::
     
@@ -168,7 +168,7 @@ The *A connection was successfully established with the server, but then an erro
 
 :::image type="content" source="media/pbi_error2.PNG" alt-text="Error message: A connection was successfully established with the server, but then an error occurred.":::
 
-When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue, and [setup latest version](https://www.microsoft.com/download/details.aspx?id=58494).
+When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue, and [set up latest version](https://www.microsoft.com/download/details.aspx?id=58494).
 
 :::image type="content" source="media/pbi_error3.PNG" alt-text="Error message: Unable to open document.":::
 
