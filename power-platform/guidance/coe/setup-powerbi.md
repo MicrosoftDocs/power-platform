@@ -168,7 +168,7 @@ The *A connection was successfully established with the server, but then an erro
 
 :::image type="content" source="media/pbi_error2.PNG" alt-text="Error message: A connection was successfully established with the server, but then an error occurred.":::
 
-When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue, and [set up latest version](https://www.microsoft.com/download/details.aspx?id=58494).
+When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue, and [set up the latest version](https://www.microsoft.com/download/details.aspx?id=58494).
 
 :::image type="content" source="media/pbi_error3.PNG" alt-text="Error message: Unable to open document.":::
 
