@@ -1,19 +1,19 @@
 ---
-title: Extend pipelines in Power Platform with GitHub Source Control
-description: Download, unpack and commit a solution using a GitHub workflow called from a Power Automate Flow.
+title: Extend pipelines using GitHub Actions
+description: Download, unpack, and commit a solution using a GitHub workflow called from a Power Automate Flow.
 author: mikefactorial
 ms.author: caburk
 ms.reviewer: kvivek
 ms.topic: overview
-ms.date: 05/29/2023
+ms.date: 06/15/2023
 ms.custom: 
 ---
 
-# Download, Unpack and Commit a Pipeline Artifact to a GitHub Repository
+# Extend pipelines using GitHub Actions
 
-This example demonstrates using [GitHub Actions](https://docs.github.com/en/actions/quickstart) and Power Automate cloud flows for extending pipelines in Power Platform. When a pipelines deployment is submitted, a cloud flow triggers the GitHub workflow to download, unpack, and commit the artifact's source code to a GitHub branch.
+This article demonstrates using [GitHub Actions](https://docs.github.com/en/actions/quickstart) and Power Automate cloud flows for extending pipelines in Power Platform. When a pipelines deployment is submitted, a cloud flow triggers the GitHub workflow to download, unpack, and commit the artifact's source code to a GitHub branch.
 
-## Workflow Details
+## Workflow details
 
 The workflow is triggered via a `workflow_dispatch` event. The workflow runs on `ubuntu-latest` and has the `contents: write` permission to be able to commit changes to the GitHub repository branch.
 
@@ -26,27 +26,31 @@ The workflow consists of the following steps:
 1. `commit changes`: Commits changes to the existing or new branch.
 1. `push to branch`: Pushes the committed changes to the source branch.
 
-## Workflow Inputs
+## Workflow inputs
 
-The following inputs are required or optional:
+The following workflow inputs are required or optional:
 
-- `artifact_url` (required): The url of the Dataverse record ID for the artifact created by the pipelines.
-- `solution_name` (required): Name of the Solution in Dataverse environment.
+- `artifact_url` (required): The URL of the Dataverse row (record) ID for the artifact created by the pipelines.
+- `solution_name` (required): Name of the solution in the Dataverse environment.
 - `source_branch` (required): Branch for the solution commit.
-- `target_branch` (optional): Branch to create for the solution commit. If not specified, the source_branch is used.
+- `target_branch` (optional): Branch to create for the solution commit. If not specified, the `source_branch` is used.
 - `commit_message` (required): Message to provide for the commit.
 
-## Workflow Secrets
+## Workflow secrets
 
-The following secrets are required to connect to Dataverse using an Application User configured in Dataverse and in Azure Active Directory. Configure these secrets in the GitHub repository settings. For more information, see [Creating and using encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) and [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user)
+The following secrets are required to connect to Dataverse using an Application User configured in Dataverse and in Azure Active Directory (AD). Configure these secrets in the GitHub repository settings.
 
-- `CLIENT_ID`: The client ID of the registered Azure AD application
-- `TENANT_ID`: The tenant ID of the Azure AD directory associated with the Azure AD application
-- `CLIENT_SECRET`: The client secret of the registered Azure AD application
+- `CLIENT_ID`: The client ID of the registered Azure AD application.
+- `TENANT_ID`: The tenant ID of the Azure AD directory associated with the Azure AD application.
+- `CLIENT_SECRET`: The client secret of the registered Azure AD application.
 
-## Workflow Code
+For more information see [Creating and using encrypted secrets](https://docs.github.com/actions/reference/encrypted-secrets) and [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
 
-```github-actions-workflow
+## Workflow code
+
+Listed below is the GitHub Actions workflow code.
+
+```makefile
 name: Download, unpack and commit the solution to git
 run-name: Getting ${{ github.event.inputs.solution_name }} from pipelines host environment and committing
 on:
@@ -114,7 +118,7 @@ jobs:
             $bytes = [Convert]::FromBase64String($response.value)
             [IO.File]::WriteAllBytes("${{ github.event.inputs.solution_name }}_managed.zip", $bytes)
 
-            # Download the unmanaged solution (for now we will need to use string manipulation to get the unmanaged solution url, until the API provides this value)
+            # Download the unmanaged solution (for now we will need to use string manipulation to get the unmanaged solution URL, until the API provides this value)
             $unmanaged_artifact_url = "${{ github.event.inputs.artifact_url }}".Replace("artifactfile", "artifactfileunmanaged")
             $response = Invoke-RestMethod "$unmanaged_artifact_url" -Method 'GET' -Headers $headers
             $bytes = [Convert]::FromBase64String($response.value)
@@ -152,46 +156,46 @@ jobs:
           }
 ```
 
-## Example Power Automate Flow
+## Example Power Automate flow
 
-To call this GitHub workflow, you can create a Power Automate Flow that is triggered when a deployment request is made in Dataverse. The Flow can be configured to pass the required inputs to the GitHub workflow. For more information on how to create a Power Automate Flow, see [Create a flow](/power-automate/getting-started#create-a-flow).
+To call a GitHub workflow, you can create a Power Automate flow that is triggered when a deployment request is made in Dataverse. The flow can be configured to pass the required inputs to the GitHub workflow. For more information on how to create a Power Automate flow, see [Create a flow](/power-automate/getting-started#create-a-flow).
 
-## Flow Details
+## Flow details
 
-The Flow triggers when the `OnDeploymentRequested` action is run in Dataverse. The Flow calls the HTTP connector to trigger the GitHub workflow. The Flow passes the required inputs to the GitHub workflow. Include the following inputs in the request body:
+The flow triggers when the `OnDeploymentRequested` action is run in Dataverse. The flow calls the HTTP connector to trigger the GitHub workflow. The flow passes the required inputs to the GitHub workflow. Include the following inputs in the request body:
 
-- `artifact_url`: Url of the Dataverse solution artifact created by the pipelines.
-- `solution_name`: Name of the Solution in Dataverse environment.
+- `artifact_url`: URL of the Dataverse solution artifact created by the pipelines.
+- `solution_name`: Name of the solution in the Dataverse environment.
 - `user_name`: User name for the commit.
 - `source_branch`: Source branch for the solution commit.
 - `target_branch`: Branch to create for the solution commit.
 - `commit_message`: Message to provide for the commit.
 
-The values passed into the `artifact_url`, `solution_name` and `user_name` are pulled from the outputs of the action that triggered the pipeline. The `commit_message` is pulled from the deployment stage run row in Dataverse.
+The values passed into the `artifact_url`, `solution_name`, and `user_name` are pulled from the outputs of the action that triggered the pipeline. The `commit_message` is pulled from the deployment stage run row in Dataverse.
 
 - `artifact_url`: `@{triggerOutputs()?['body/OutputParameters/ArtifactFileDownloadLink']}`
 - `solution_name`: `@{triggerOutputs()?['body/OutputParameters/ArtifactName']}`
 - `user_name`: `@{triggerOutputs()?['body/OutputParameters/DeployAsUser']}`
 - `commit_message`: `@{outputs('Retrieve_the_Deployment_Stage_Run')?['body/deploymentnotes']}`
 
-The Flow also uses a GitHub Personal Access token to authenticate to GitHub. For more information on how to create a GitHub Personal Access token, see [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). The PAT is passed in the `Authorization` header of the HTTP request.
+The flow also uses a personal access token (PAT) to authenticate with GitHub. For more information on how to create a GitHub personal access token see [Creating a personal access token](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token). The PAT is passed in the `Authorization` header of the HTTP request.
 
 Update the following values in the Flow:
 
-- `[GitHub Personal Access Token]` - Replace with your GitHub Personal Access Token.
+- `[GitHub Personal Access Token]` - Replace with your GitHub personal access token.
 - `[GitHub Organization]` - Replace with your GitHub organization name.
 - `[GitHub Repository]` - Replace with your GitHub repository name.
 - `[GitHub Workflow YAML File]` - Replace with your GitHub workflow YAML file name.
 - `[Source Branch]` - Replace with the Git branch to commit the solution.
-- `[Target Branch]` - Replace with the Git branch to create for the solution commit. Target Branch is optional. If you don't specify a target branch, then your solution is committed to the Source Branch.
+- `[Target Branch]` - Replace with the Git branch to create for the solution commit. `Target Branch` is optional. If you don't specify a target branch, then your solution is committed to the `Source Branch`.
 
-![Power Automate Flow that shows an OnDeploymentRequested trigger with a step to retrieve the associated deployment stage run and call the GitHub workflow using an HTTP connector](./media/extend-pipelines-github-export-flow.png)
+![Power Automate flow that shows an OnDeploymentRequested trigger with a step to retrieve the associated deployment stage run and call the GitHub workflow using an HTTP connector](./media/extend-pipelines-github-export-flow.png)
 
-## Next step
+## Next steps
 
 [Run pipelines in Power Platform](run-pipeline.md)
 
-### Related content
+### See also
 
 [Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart)<br/>
 [Extend pipelines in Power Platform](extend-pipelines.md)<br/>
