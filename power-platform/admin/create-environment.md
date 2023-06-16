@@ -1,6 +1,6 @@
 ---
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
-description: About creating and manage environments in the Power Platform admin center
+description: Learn how to create and manage environments in the Power Platform admin center
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,7 +17,7 @@ contributors:
 ---
 # Create and manage environments in the Power Platform admin center
 
-An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
+An environment is a space in which to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant that is shared by all users in that tenant.
 
 ## Who can create environments?
 
