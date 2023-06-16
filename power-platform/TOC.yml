@@ -13,12 +13,12 @@
     - name: Solution templates
       href: solution-templates/overview.md
     - name: International availability
-      href: ../availability.md
+      href: availability.md
     - name: Important changes (deprecations) coming
-      href: ../important-changes-coming.md
+      href: important-changes-coming.md
     - name: Responsible AI
       items:
         - name: Overview
-          href: ../transparency-note-overview.md
+          href: transparency-note-overview.md
         - name: Transparency note for Copilot data security and privacy
-          href: ../transparency-note-copilot-data-security-privacy.md
+          href: transparency-note-copilot-data-security-privacy.md
