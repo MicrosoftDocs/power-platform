@@ -2,7 +2,7 @@
   items:
     - name: Administer Power Platform
       items:
-        - name: Administer Power Platform
+        - name: Admin documentation
           href: index.yml
         - name: Overview
           href: admin-documentation.md
