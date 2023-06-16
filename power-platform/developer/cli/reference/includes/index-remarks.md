@@ -22,4 +22,4 @@ Register-ArgumentCompleter -Native -CommandName pac -ScriptBlock $scriptblock
 
 ### Other Shells
 
-Follow instructions to add to [other shells here](/dotnet/core/tools/enable-tab-autocomplete#bash). Instead of `dotnet complete` use `pac complete`
+You can also use this with [bash, zsh, fish, and nushell](/dotnet/core/tools/enable-tab-autocomplete#bash). Instead of `dotnet complete` use `pac complete`
