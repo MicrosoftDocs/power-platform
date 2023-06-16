@@ -34,6 +34,8 @@
       href: nlu-gpt-overview.md
     - name: Quickstart guide for building bots with GPT
       href: nlu-gpt-quickstart.md
+    - name: Enable advanced AI features
+      href: advanced-ai-features.md
     - name: Generative answers
       href: nlu-boost-conversations.md
     - name: Generative answers with Search and summarize
@@ -102,8 +104,6 @@
   items:
     - name: Key concepts - Enhanced authoring
       href: advanced-fundamentals.md
-    - name: Enable advanced AI features
-      href: advanced-ai-features.md
     - name: Use entities and slot filling
       href: advanced-entities-slot-filling.md
     - name: Use variables
