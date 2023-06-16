@@ -454,7 +454,7 @@
                 - name: Block cookie replay attacks
                   href: block-cookie-replay-attack.md
                 - name: IP firewall (preview)
-                  href: ip-firewall.md  
+                  href: ip-firewall.md
                 - name: Continuous access evaluation integration (preview)
                   href: continuous-access-evaluation.md
                 - name: Configure environment security
@@ -1095,17 +1095,3 @@
           href: manage-product-catalog-configuration.md
         - name: Rich text experience for appointment activities
           href: enable-rich-text-experience.md
-    - name: Important changes (deprecations) coming
-      href: ../important-changes-coming.md
-    - name: International availability
-      href: ../availability.md
-    - name: Adoption best practices
-      href: ../guidance/adoption/methodology.md
-    - name: Center of Excellence (CoE) Kit
-      href: ../guidance/coe/starter-kit.md
-    - name: Responsible AI
-      items:
-        - name: Overview
-          href: ../transparency-note-overview.md
-        - name: Transparency note for Copilot data security and privacy
-          href: ../transparency-note-copilot-data-security-privacy.md

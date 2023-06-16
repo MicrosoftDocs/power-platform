@@ -1,0 +1,24 @@
+- name: Microsoft Power Platform documentation (ALM)
+  href: index.yml
+  items:
+    - name: Admin documentation
+      href: admin/index.yml
+    - name: Application lifecycle management (ALM) documentation
+      href: alm/index.yml
+    - name: Developer documentation
+      href: developer/index.yml
+    - name: Guidance documentation
+      href: guidance/index.yml
+      displayName: CoE adoption guidance best practices
+    - name: Solution templates
+      href: solution-templates/overview.md
+    - name: International availability
+      href: ../availability.md
+    - name: Important changes (deprecations) coming
+      href: ../important-changes-coming.md
+    - name: Responsible AI
+      items:
+        - name: Overview
+          href: ../transparency-note-overview.md
+        - name: Transparency note for Copilot data security and privacy
+          href: ../transparency-note-copilot-data-security-privacy.md
