@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/14/2020
+ms.date: 06/06/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -66,8 +66,11 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 ### Turn on the flows
 
 To populate some of the tables with default values, turn on the following flows:
+
 - Add pain points
 - Update Software Tools
+
+Learn more: [Turn flows on](/power-automate/disable-flow#turn-flows-on)
 
 1. Now, run the flows to populate some of the tables with default values.
     1. Open the **Add pain points** cloud flow and select **Run** > **Run Flow**.

@@ -2,7 +2,7 @@
   items:
     - name: Administer Power Platform
       items:
-        - name: Administer Power Platform
+        - name: Admin documentation
           href: index.yml
         - name: Overview
           href: admin-documentation.md
@@ -150,11 +150,11 @@
                   items:
                     - name: Self-managed key (BYOK)
                       href: manage-encryption-key.md
-                    - name: Customer managed key (preview)
+                    - name: Customer managed key
                       href: customer-managed-key.md
-                    - name: Lock and unlock environments (preview)
+                    - name: Lock and unlock environments
                       href: cmk-lock-unlock.md
-                    - name: Migrate from BYOK (preview)
+                    - name: Migrate from BYOK
                       href: cmk-migrate-from-byok.md
                 - name: Sandbox environment
                   href: sandbox-environments.md
@@ -1095,19 +1095,12 @@
           href: manage-product-catalog-configuration.md
         - name: Rich text experience for appointment activities
           href: enable-rich-text-experience.md
-    - name: Important changes (deprecations) coming
-      href: ../important-changes-coming.md
-    - name: International availability
-      href: ../availability.md
-    - name: Adoption best practices
-      href: ../guidance/adoption/methodology.md
-    - name: Center of Excellence (CoE) Kit
-      href: ../guidance/coe/starter-kit.md
-    - name: Responsible AI
+    - name: Related documentation
       items:
-        - name: Overview
-          href: ../transparency-note-overview.md
-        - name: Transparency note for Copilot data security and privacy
-          href: ../transparency-note-copilot-data-security-privacy.md
-        - name: Transparency note for Copilot data sharing
-          href: ../transparency-note-copilot-data-sharing.md
+        - name: Application lifecycle management (ALM) documentation
+          href: ../alm/index.yml
+        - name: Developer documentation
+          href: ../developer/index.yml
+        - name: Guidance documentation
+          href: ../guidance/index.yml
+          displayName: CoE adoption guidance best practices

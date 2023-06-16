@@ -1,50 +1,48 @@
 ---
 title: Audit security roles (preview)
-description: Audit security roles to better understand change made to your security.
+description: Learn how to audit security roles to better understand changes made to them in Power Platform.
 author: sericks007
-ms.subservice: admin
 ms.author: pmantha
 ms.reviewer: sericks
-ms.custom: "admin-security"
 ms.component: pa-admin
-ms.topic: conceptual
+ms.subservice: admin
+ms.topic: how-to
 ms.date: 04/03/2023
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - bap-template
 ---
+
 # Audit security roles (preview)
 
-You can audit security roles to better understand changes made to security roles in your Power Platform environment.
+Audit your organization's security roles to better understand changes made to them in your Power Platform environment.
 
 > [!Important]
-> [!include [preview](../includes/cc-preview-features-definition.md)]
-> 
-> This capability is in process of rolling out, and may not be available in your region yet.
+> [!Include [preview](../includes/cc-preview-features-definition.md)]
+>
+> This capability is in the process of rolling out and may not be available in your region yet.
 
-## Configure auditing for an environment
+## Prerequisites
 
-1. Go to the Power Platform admin center and sign in using administrator credentials. 
-2. Follow the instructions in [Configure auditing for an enviornment](manage-dataverse-auditing.md#configure-auditing-for-an-environment) to turn on auditing for your environment.
+[Turn on auditing in your environment](manage-dataverse-auditing.md#configure-auditing-for-an-environment).
 
-## Configure auditing for security roles
+## Turn on auditing for security roles
 
-1. Go to the Power Platform admin center and sign in using administrator credentials.  
-2. Select **Environments** > [select an environment] > **Settings** > **Audit and logs** > **Entity and field audit settings**.
-3. In the left pane, under **Entities** select **Security Role**. 
-4. On the **Gerneral** tab, under the **Data Services** area, select **Auditing**. 
-5. Select the **Save** icon in the toolbar.
+1. Sign in to the Power Platform admin center.
+1. Select **Environments** > [select an environment] > **Settings** > **Audit and logs** > **Entity and field audit settings**.
+1. In the left side panel, under **Entities**, select **Security Role**.
+1. On the **General** tab, under **Data Services**, select **Auditing**.
+1. Select the **Save** icon in the toolbar.
 
 ## Change a security role
 
-Change a security role, as needed. More information: [Create, edit, or copy a security role using the new, modern UI](database-security.md#create-edit-or-copy-a-security-role-using-the-new-modern-ui-preview)
+[Change a security role](database-security.md#create-edit-or-copy-a-security-role-using-the-new-modern-ui-preview).
 
 ## View the audit report
 
-1. Go to the Power Platform admin center and sign in using administrator credentials. 
-2. Select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security roles (Preview)**.
-3. Select **Audit report** in the command bar.
-4. A report showing the changes that have been made to security roles is displayed.
-
-
-
-
+1. Sign in to the Power Platform admin center.
+1. Select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security roles (Preview)**.
+1. Select **Audit report** in the command bar.
+<!-- EDITOR'S NOTE: Please include a screenshot of an audit report. -->

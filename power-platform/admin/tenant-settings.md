@@ -3,7 +3,7 @@ title: "Tenant settings"
 description: "Review and configure tenant-level settings linked from this page." 
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 06/01/2023
+ms.date: 06/14/2023
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:
@@ -32,6 +32,7 @@ The following settings apply to all environments within your tenant.
 |[Analytics](tenant-level-analytics.md)   | Enable tenant-level analytics.        |
 |[Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy)*   | Enable the Customer Lockbox policy for Managed Environments.        |
 |[Data sharing for Copilot AI features](../transparency-note-copilot-data-sharing.md)   | Enable sharing your inputs, related outputs, and telemetry for AI features in Dynamics 365 and Power Platform applications with Microsoft to help improve the quality of AI-powered features. By default, this setting is disabled.       |
+| Catalog Assignments  | This setting is reserved for future use. No enforcement is driven by this setting at the current time.       |
 
 *This setting applies only to Managed Environments.
 
