@@ -37,9 +37,6 @@ Shorter trigger phrases are better, and you should aim for 2 to 10 words. You ju
 
 Entities used in corresponding topics will automatically be identified in user intents when matched with their trigger phrases. For example the user intent "I want to book a ticket to Boston" will match with the trigger phrase "I want to book a ticket to Paris".
 
-> [!NOTE]
-> The AI capabilities that are in preview are only available to bots created with English as the set language.
-
 ### Advanced AI features overview
 
 There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.  
