@@ -1095,3 +1095,12 @@
           href: manage-product-catalog-configuration.md
         - name: Rich text experience for appointment activities
           href: enable-rich-text-experience.md
+    - name: Related documentation
+      items:
+        - name: Application lifecycle management (ALM) documentation
+          href: ../alm/index.yml
+        - name: Developer documentation
+          href: ../developer/index.yml
+        - name: Guidance documentation
+          href: ../guidance/index.yml
+          displayName: CoE adoption guidance best practices
