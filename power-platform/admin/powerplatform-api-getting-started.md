@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: reference
-ms.custom: intro-internal
+ms.collection: get-started
 ms.date: 03/09/2022
 ms.subservice: admin
 ms.author: laswenka

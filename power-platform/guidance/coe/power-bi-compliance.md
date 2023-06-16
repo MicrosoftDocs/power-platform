@@ -1,14 +1,14 @@
 ---
-title: "Review compliance and adoption statistics with the CoE Power BI dashboard | MicrosoftDocs"
+title: Compliance and Adoption with the CoE Power BI dashboard
 description: "The Compliance and Adoption Power BI dashboard gives you the ability to review compliance, security and governance statistics and gain further adoption insights."
 author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 05/23/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -56,7 +56,7 @@ The **Adoption insights** page provides you with a tenant-wide overview of:
 - Top 5 countries where makers create most launched apps
 - Top 5 environments that consume the most capacity
 
-![Adoption insights.](media/pbi-compliance1.png "Adoption insights")
+![Adoption insights.](media/pbi-compliance3.png "Adoption insights")
 
 ## Default environment
 
@@ -73,4 +73,4 @@ The **Default environment** page gives you an overview of adoption in the defaul
 - Latest non-compliant apps
 - Latest suspended flows
 
-![Default environment tech debt insights.](media/pbi-compliance1.png "Default environment tech debt insights.")
+![Default environment tech debt insights.](media/pbi-compliance4.png "Default environment tech debt insights.")

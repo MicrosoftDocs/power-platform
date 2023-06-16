@@ -1,20 +1,23 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) non administrator installation"
-description: "Install instructions for the Center of Excellence Command-Line interface using non administrator rights"
+title: Non-Administrator Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
+description: This article provides install instructions for the Center of Excellence Command-Line interface using non-administrator rights.
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 3/15/2022
+ms.date: 5/23/2023
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
-# Non Administrator Center of Excellence (CoE) Command Line Interface (CLI) installation
+# Non-Administrator Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
 
-To install the CoE CLI as a non-administrator you leverage use the following components:
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+
+To install the CoE CLI as a non-administrator, use the following components:
 
 - Follow [Miniconda Install](#miniconda-install) instructions for your operating system.
 
@@ -24,7 +27,7 @@ To install the CoE CLI as a non-administrator you leverage use the following com
 
 ## Miniconda install
 
-Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages.
+Miniconda is a free minimal installer for conda. It's a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a few other useful packages.
 
 1. Visit [Minoconda](https://docs.conda.io/en/latest/miniconda.html) to download.
 
@@ -32,7 +35,7 @@ Miniconda is a free minimal installer for conda. It is a small, bootstrap versio
 
 ## Local NodeJs
 
-To install NodeJs using non-administrator install by following the steps:
+Install NodeJs as a non-administrator:
 
 1. Go to [NodeJs Download](https://nodejs.org/en/download/).
 

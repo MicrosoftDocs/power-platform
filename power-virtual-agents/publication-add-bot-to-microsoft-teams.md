@@ -2,26 +2,17 @@
 title: "Add a chatbot to Microsoft Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
-ms.date: 01/25/2022
-
+ms.date: 05/23/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+manager: leeclontz
 ms.custom: "publication, authoring, ceX, teams"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Add a chatbot to Microsoft Teams
-
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/publication-add-bot-to-microsoft-teams-teams.md)
 
 Now that you have published your bot, you can make your bot available to users in Microsoft Teams so you, your teammates, and the broader organization can interact with it. You need to [publish the bot at least once](publication-fundamentals-publish-channels.md) before users can interact with the bot in Microsoft Teams.
 
@@ -89,7 +80,7 @@ Providing the right description and appearance for the bot before making it avai
     - Privacy Statement
     - Terms of use
 
-       You should provide this information to keep your user informed about the bot. See the [Privacy statement and terms of use](teams/publication-terms-of-use-teams.md) topic for more details and examples.
+       You should provide this information to keep your user informed about the bot. See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
 
 1. Select **Save** to return to the screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
 
@@ -259,7 +250,7 @@ In Microsoft Teams, you can [add bots to teams](/microsoftteams/platform/bots/ho
 
 This option allows users to add the bot to any team that they're part of when adding the bot in Microsoft Teams.
 
-After enabling this option, any user who [installs the bot from the Teams app store](teams/publication-add-bot-to-microsoft-teams-teams.md#install-a-bot-as-an-app-in-microsoft-teams) or via the [installation link](teams/publication-add-bot-to-microsoft-teams-teams.md#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
+After enabling this option, any user who [installs the bot from the Teams app store](publication-add-bot-to-microsoft-teams.md#install-a-bot-as-an-app-in-microsoft-teams) or via the [installation link](publication-add-bot-to-microsoft-teams.md#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
 
 > [!IMPORTANT]
 > The bot will be configured to allow everyone in the organization to chat with it. This ensures all team members have permission to chat with the bot in team channels. It's highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
@@ -303,6 +294,9 @@ To disallow users from adding a bot to a team:
 ### Configure private greeting behavior
 
 Private greetings from a bot are useful for when you want team members to have one-on-one conversations with the bot without needing to manually install the bot themselves.
+
+> [!NOTE]
+> Private greeting configuration isn't supported for bots using the [upgraded unified authoring canvas](unified-authoring-conversion.md).
 
 When enabled, your bot will automatically start a conversation with team members. To customize the bot's greeting message, [modify the Greeting system topic](configure-bot-greeting.md#modify-the-system-greeting-topic-recommended).
 
@@ -362,6 +356,7 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 
 ## Known limitations
 
+- [Private greeting configuration](#configure-private-greeting-behavior) isn't supported for bots using the [upgraded unified authoring canvas](unified-authoring-conversion.md).
 - Currently, only the **Personal** and **Team** scopes are supported for Microsoft Teams. **Group chat** is not supported.
 - [Setting the bot avatar icon](customize-default-canvas.md) on the details page won't show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.

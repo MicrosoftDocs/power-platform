@@ -1,5 +1,5 @@
 ---
-title: AI-based chatbot authoring overview (preview)
+title: AI-based chatbot authoring overview
 description: Create instantly useful chatbots quickly with natural language understanding-based authoring capabilities in Power Virtual Agents.
 keywords: "Power Virtual Agents, bot, chatbot, GPT, OpenAI, PVA"
 ms.date: 3/16/2023
@@ -13,9 +13,7 @@ ms.search.region: USA
 searchScope:
   - "Power Virtual Agents"
 ---
-# AI-based chatbot authoring overview (preview)
-
-[!INCLUDE [AI tech disclosure with Bing Search](includes/disclosure-ai-preview-bing-addendum.md)]
+# AI-based chatbot authoring overview
 
 By leveraging recent advancements in AI large language models, Power Virtual Agents (preview) transforms how you build chatbots, increasing a chatbot's usefulness and significantly reducing manual authoring and configuration. You can:
 
@@ -35,7 +33,7 @@ By leveraging recent advancements in AI large language models, Power Virtual Age
     > [!NOTE]
     > If you don't have a Power Virtual Agents account, or you haven't created chatbots with Power Virtual Agents before, see the [Quickstart guide for building bots with GPT (preview)](nlu-gpt-quickstart.md).
 
-- You must be using the [preview version of Power Virtual Agents](preview/overview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
+- You must be using the [preview version of Power Virtual Agents](overview-preview.md), and the bot type must be **Preview**. Preview chatbots have **(preview)** added to their name. When you create a new bot, select **Try the unified canvas (preview)**.  
 
     :::image type="content" source="media/nlu-gpt/nlu-boost-preview-bots.png" alt-text="Screenshot of the list of chatbots showing bots with preview added to their names.":::
 
@@ -45,7 +43,7 @@ By leveraging recent advancements in AI large language models, Power Virtual Age
 
 ## Generate a bot's responses on-the-fly
 
-Power Virtual Agents uses an underlying natural language understanding model for understanding a bot user's question and determining the right topic. Typically, [you create multiple topics](preview/authoring-create-edit-topics.md) within a bot to account for what a user might ask. But, sometimes, a bot user might ask a question for which there is no built topic. 
+Power Virtual Agents uses an underlying natural language understanding model for understanding a bot user's question and determining the right topic. Typically, [you create multiple topics](authoring-create-edit-topics.md) within a bot to account for what a user might ask. But, sometimes, a bot user might ask a question for which there is no built topic. 
 
 When this happens, by default the bot prompts the user to rephrase their query. If, after two prompts, the bot still can't determine the user's intent, the bot escalates to a live agent through the [system **Escalate** topic](authoring-system-topics.md).
 
@@ -63,7 +61,7 @@ See the [Boost conversations](nlu-boost-conversations.md) topic for how to set u
 
 ### Create and edit topics by talking to AI
 
-As part of creating a bot, a bot maker usually creates multiple, [individual topics](preview/authoring-create-edit-topics.md), with each topic corresponding to a particular issue or action. 
+As part of creating a bot, a bot maker usually creates multiple, [individual topics](authoring-create-edit-topics.md), with each topic corresponding to a particular issue or action. 
 
 This can require a large amount of time, and often requires specialized knowledge in the field of conversational user experiences, along with deep technical or domain knowledge. This isn't always possible in every organization - especially those that rely on fusion teams where multiple disciplines work directly in the Power Virtual Agents authoring canvas.
 

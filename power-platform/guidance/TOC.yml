@@ -139,7 +139,11 @@
             - name: Set up app quarantine components
               href: coe/setup-quarantine-components.md
             - name: Collect audit log data
-              href: coe/setup-auditlog.md
+              items:
+                  - name: Using an HTTP call (recommended)
+                    href: coe/setup-auditlog-http.md
+                  - name: Using a custom connector (deprecated)
+                    href: coe/setup-auditlog.md
             - name: Set up Power BI reports
               href: coe/setup-powerbi.md
             - name: Set up nurture components
@@ -251,6 +255,8 @@
           href: alm-accelerator/overview.md
         - name: Maturity model
           href: alm-accelerator/maturity/overview.md
+        - name: Branching and environment strategy
+          href: alm-accelerator/branching-environment-strategy.md
         - name: Scenarios
           items:
             - name: Deployment scenarios
@@ -303,6 +309,8 @@
               href: alm-accelerator/configure-power-pages.md
             - name: Build and package code-first components
               href: alm-accelerator/build-package-codefirst-components.md
+            - name: Maintenance tasks
+              href: alm-accelerator/maintain-admin-tasks.md
             - name: ALM Accelerator learning catalog
               href: alm-accelerator/learning-resources-catalog.md
     - name: Power Platform Creator Kit

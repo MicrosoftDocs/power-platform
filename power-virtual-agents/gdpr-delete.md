@@ -2,27 +2,20 @@
 title: "Responding to GDPR Data Subject Delete Requests"
 description: "Respond to GDPR Data Subject Delete Requests for Power Virtual Agents."
 keywords: "PVA, GDPR, delete data"
-ms.date: 08/18/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 ms.custom: ceX, gdpr
+manager: leeclontz
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Responding to requests to delete data from Power Virtual Agents
 
-Power Virtual Agents offers the following experiences to delete personal data for a specific user:
-
-- [Responding to requests to delete data from Power Virtual Agents](#responding-to-requests-to-delete-data-from-power-virtual-agents)
-  - [Prerequisites](#prerequisites)
-  - [Delete Power Virtual Agents bot chat logs](#delete-power-virtual-agents-bot-chat-logs)
-  - [Delete Power Virtual Agents bot including all content](#delete-power-virtual-agents-bot-including-all-content)
-  - [Delete Power Virtual Agents telemetry](#delete-power-virtual-agents-telemetry)
-  - [Delete Power Virtual Agents metrics](#delete-power-virtual-agents-metrics)
-  - [Delete Power Virtual Agents system telemetry](#delete-power-virtual-agents-system-telemetry)
+This topic discusses the experiences that Power Virtual Agents offers when deleting personal data for a specific user.
 
 ## Prerequisites
 

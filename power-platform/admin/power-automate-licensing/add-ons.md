@@ -58,7 +58,7 @@ Here are a few important notes of which you should be aware regarding the unatte
 Desktop flows can have varying levels of workload throughout a period of time. For example desktop flows for processing invoices or schedule reconciliation across multiple systems may have a monthly peak period. As desktop flows requires a physical or virtual machine to run on, most organizations would provision machines to cope with requests during peak periods, leaving machine underutilized for most of the remaining time.
 
 The Power Automate hosted RPA add-on provides hosted bot machines capacity provisioned and managed by Microsoft, enabling organizations to run desktop flow automations with zero infrastructure. The hosted RPA add-on supports two scenarios:
-- Individual hosted machines (preview), enable developers to build or test automation and business users to run automation.
+- Individual hosted machines, enable developers to build or test automation and business users to run automation.
 - Hosted machine groups, automatically scale workloads to optimize unattended automation in production, delivering improved business process continuity and governance at scale.
 
 The Power Automate per user with attended RPA or Power Automate per flow plans are the eligible standalone offers for the hosted RPA add-on.
@@ -69,6 +69,7 @@ The Power Automate per user with attended RPA or Power Automate per flow plans a
 Some important points that you should be aware of regarding the hosted RPA add-on:
 
 - One hosted RPA add-on license includes the capacity to one hosted bot machine, one unattended RPA bot, as well as all necessary functions tied to the authoring of  desktop flows, bot orchestration, and management.
+- One hosted RPA add-on license can also be used as an unattended RPA add-on license to run unattended automation on a customer managed bot machine. 
 - You can purchase additional AI Builder capacity; AI Builder service credit capacity is pooled at the tenant level.
 - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, the Microsoft 365, you must purchase the unattended license in addition to the Power Automate hosted RPA add-on.
 

@@ -2,11 +2,11 @@
 title: Programmability and Extensibility - Authentication | Microsoft Docs
 description: Overview of authentication for Power Platform programmability tools
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 12/15/2021
+ms.date: 05/30/2023
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -56,7 +56,10 @@ The above example contains placeholders that you can retrieve from your client a
 Use the **access_token** value in subsequent calls to the Power Platform API using the **Authorization** HTTP header.
 
 ### Obtain a token for client authentication
-Send a POST request via HTTP to Azure AD with a client secret payload.  This is often referred to as service principal authentication.  This can only be used after you have registered this client application ID with Microsoft Power Platform.  
+Send a POST request via HTTP to Azure AD with a client secret payload. This is often referred to as service principal authentication. 
+
+> [!Important]
+> This can only be used after you have registered this client application ID with Microsoft Power Platform following either the related [PowerShell](./powershell-create-service-principal.md) or [REST](./powerplatform-api-create-service-principal.md) documentation.
 
 ```HTTP
 Content-Type: application/x-www-form-urlencoded
