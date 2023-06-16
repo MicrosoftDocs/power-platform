@@ -72,6 +72,9 @@ Pipelines deploy solutions as well as configuration for the target environment s
    > Power BI Dashboards (preview) and Power BI Datasets (preview) are not currently supported in pipelines. 
    >
 
+### Does pipelines automatically store solution backups?
+Yes. Both managed and unmanaged solutions are automatically exported and stored in the pipelines host for every deployment.
+
 ### Can customization bypass a deployment stage such as QA? 
 No. Solutions are exported as soon as a deployment request is submitted (when the maker selects **Deploy** from within their development environment), and the same solution artifact will be deployed. Similarly, the system doesn't re-export a solution for deployments to subsequent stages in a pipeline. The same solution artifact must pass through pipeline stages in sequential order. The system also prevents any tampering or modification to the exported solution artifact. This ensures customization can't bypass QA environments or your approval processes.
 
@@ -116,6 +119,9 @@ Yes, together these tools are powerful while keeping maker experiences simple. S
 ### Can I roll back to a previous version?
 
 Not currently. The same is true when manually importing solutions.
+
+### Can I set retention policicies for pipelines data?
+Yes. You can configure bulk delete jobs in the Dataverse pipelines host to delete data on a defined schedule. 
 
 ### Can I specify advanced solution import behaviors such as update versus upgrade?
 
