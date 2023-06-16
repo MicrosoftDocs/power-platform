@@ -137,7 +137,7 @@ To use these advanced AI capabilities in Power Virtual Agents:
 1. For each feature, select the checkbox to turn the feature on or off.
 1. Select **Save** at the top of the tab.
 
-:::image type="content" source="media/advanced-ai-features/enable-features.png" alt-text="Screenshot showing the new AI capabilities section under the Manage tab.":::
+:::image type="content" source="media/advanced-ai-features/enable-disable-ai-16Jun23.png" alt-text="Screenshot showing enable or disable AI capabilities on the AI capabilities tab.":::
 
 ---
 
