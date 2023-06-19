@@ -1,4 +1,8 @@
 {
+  "redirection_files": [
+        ".openpublishing.redirection.json",
+        ".openpublishing.redirection.power-virtual-agents.json"
+    ],  
   "docsets_to_publish": [
     {
       "docset_name": "power-platform",
@@ -65,8 +69,8 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "msft-shared-content",
-      "url": "https://github.com/MicrosoftDocs/reusable-content",
+      "path_to_root": "shared-content",
+      "url": "https://github.com/MicrosoftDocs/powerapps-docs-pr",
       "branch": "main",
       "branch_mapping": {}
     }

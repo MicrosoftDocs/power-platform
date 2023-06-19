@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 4/19/2023
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -76,7 +76,7 @@ Use one of these values:
 - `UsGov`
 - `UsGovHigh`
 - `UsGovDod`
-- `Mooncake`
+- `China`
 
 #### `--deviceCode` `-dc`
 

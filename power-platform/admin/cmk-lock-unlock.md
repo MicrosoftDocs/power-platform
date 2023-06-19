@@ -5,17 +5,12 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to 
-ms.date: 04/10/2023
+ms.date: 06/02/2023
 ms.custom: template-how-to
 ---
-# Lock environments by revoking key vault and/or key permission access (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Lock environments by revoking key vault and/or key permission access
 
 Since separate encryption keys can be used to encrypt different Microsoft Dataverse environments, you can separately lock these environments by revoking key vault access to the respective enterprise policy. Locking key vault or key access can only be done by the Azure Key Vault admin. There's no advanced warning to the Power Platform admin or users when an Azure Key Vault admin revoked key access.
-
-> [!IMPORTANT]
-> This is a preview feature.
 
 Key access revocation can be triggered by completing any of the following tasks:
 
@@ -41,8 +36,8 @@ Key access revocation can be triggered by completing any of the following tasks:
 To unlock environments, all key access permissions must be restored for the original encryption key. Submit a Microsoft Support request to unlock and enable the environments. The environments can only be enabled when the original encryption key used to encrypt the customer data is restored.
 
 > [!IMPORTANT]
-> During preview, locked environments can't be enabled by an administrator when the key access permissions are restored. Environments remain disabled until a Microsoft Support request is received.
+> Locked environments can't be enabled by an administrator when the key access permissions are restored. Environments remain disabled until a Microsoft Support request is received.
 
 ## See also
 
-[Manage your customer-managed encryption key (preview)](customer-managed-key.md)
+[Manage your customer-managed encryption key](customer-managed-key.md)

@@ -4,7 +4,7 @@ description: Learn about the details and properties of the ContextMenu control i
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 11/02/2022
+ms.date: 05/01/2023
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -58,6 +58,7 @@ This code component provides a wrapper around the [Fluent UI ContextualMenu](htt
 > [!NOTE]
 > - `ItemIconColor` will override the component's Theme value and ignore other state colors (e.g., disabled).
 > - `ItemHeader` and `ItemDivider` must be set to true to render as a divider. If set to false, it expects other values and will render blank.
+> - Adding the `ItemChecked` property and behavior of submenu items will prevent the submenu from closing on click. 
 
 ## Example
 
