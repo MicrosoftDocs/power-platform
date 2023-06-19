@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 06/05/2023
+ms.date: 06/19/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key
@@ -178,30 +178,33 @@ In Azure, perform the following steps:
       - **Key type**: **RSA** or **RSA-HSM**
       - **RSA key size**: **2048**
 
-#### Encrypt your environment with key from Azure Key Vault with Private Link (preview)
+#### Encrypt your environment with key from Azure Key Vault with private link (preview)
 
-You can update your Azure Key vault's networking by enabling a [private endpoint](https://learn.microsoft.com/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-key-vault-using-the-azure-portal) and use the key in the key vault to encrypt your Power Platform environments.
+You can update your Azure Key vault's networking by enabling a [private endpoint](/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-key-vault-using-the-azure-portal) and use the key in the key vault to encrypt your Power Platform environments.
 
-You can either create a [new key vault and establish a private link connection](https://learn.microsoft.com/azure/key-vault/general/private-link-service?tabs=portal#create-a-new-key-vault-and-establish-a-private-link-connection) or [establish a private link connection to an existing key vault](https://learn.microsoft.com/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-an-existing-key-vault), and create a key from this key vault and use it to encrypt your environment. You can also [establish a private link connection to an existing key vault](https://learn.microsoft.com/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-an-existing-key-vault) after you have already created a key and use it to encrypt your environment.
+You can either create a [new key vault and establish a private link connection](/azure/key-vault/general/private-link-service?tabs=portal#create-a-new-key-vault-and-establish-a-private-link-connection) or [establish a private link connection to an existing key vault](/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-an-existing-key-vault), and create a key from this key vault and use it to encrypt your environment. You can also [establish a private link connection to an existing key vault](/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-an-existing-key-vault) after you have already created a key and use it to encrypt your environment.
 
-##### Encrypt data with key from Key vault with Private link.
-1.	Create an [Azure Key vault](https://learn.microsoft.com/azure/key-vault/general/quick-create-portal#create-a-vault):
-  
-      Enable **Purge Protection**.
-1.	Create a RSA 2048.
-1.	Copy down the key vault URL and the encryption key URL and version to be used for creating the Enterprise policy.
-   
-      Note: once you added a Private endpoint to your key vault or disabled the Public access network, you won’t be able to see the key unless you have the appropriate permission.
-1.	Create a [virtual network](https://learn.microsoft.com/azure/virtual-network/quick-create-portal).
-1.	Return to your key vault and add [Private endpoint connections to your Azure Key vault](https://learn.microsoft.com/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-an-existing-key-vault_).
-   
-      Note: you need to select the **Disable public access** networking option and enable the **Allow trusted Microsoft services to bypass this firewall** Exception.
+##### Encrypt data with key from key vault with private link
+
+1. Create an [Azure Key vault](/azure/key-vault/general/quick-create-portal#create-a-vault) with these options:
+   - Enable **Purge Protection**
+   - Key type: RSA 
+   - Key size: 2048
+1. Copy down the key vault URL and the encryption key URL and version to be used for creating the enterprise policy.
+
+   > [!NOTE]
+   > Once you've added a private endpoint to your key vault or disabled the public access network, you won’t be able to see the key unless you have the appropriate permission.
+1. Create a [virtual network](/azure/virtual-network/quick-create-portal).
+1. Return to your key vault and add [private endpoint connections to your Azure Key vault](/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-an-existing-key-vault_).
+
+   > [!NOTE]
+   > You need to select the **Disable public access** networking option and enable the **Allow trusted Microsoft services to bypass this firewall** exception.
 
 1. Create a Power Platform enterprise policy. More information: [Create enterprise policy](#create-enterprise-policy)
 1. Grant enterprise policy permissions to access the key vault. More information: [Grant enterprise policy permissions to access key vault](#grant-enterprise-policy-permissions-to-access-key-vault)
 1. Grant Power Platform and Dynamics 365 administrators permission to read the enterprise policy. More information: [Grant the Power Platform admin privilege to read enterprise policy](#grant-the-power-platform-admin-privilege-to-read-enterprise-policy)
-1.	Local Power Platform admin center admin to select environment to encrypt and enable Managed environment.
-1.	Local Power Platform admin center admin to add the Managed environment to Enterprise policy.
+1. Power Platform admin center admin selects the environment to encrypt and enable Managed environment. More information: [Enable Managed environment for the environment to be added into the enterprise policy](#enable-managed-environment-for-the-environment-to-be-added-into-the-enterprise-policy)
+1. Power Platform admin center admin adds the Managed environment to the enterprise policy. More information: [Add an environment to the enterprise policy to encrypt data](#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
 
 ### Enable the Power Platform enterprise policies service for your Azure subscription
 
