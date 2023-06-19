@@ -168,27 +168,28 @@ To create your own badges, refer to [Create Custom Badges](use.md#create-custom-
 
 ## Step 9: Share the App
 
-1. In the environment that Kudos is installed, select **Apps**.
-1. Locate the _Kudos App_. Note: If you did not install the Kudos solution and it has not been shared with you, then you will have to navigate into the Kudos solution and find the app there.
-1. Select the _three dots_ to the right of the Kudos app and select **Share**.
-1. Search for and add the users who you want to share the app with.
-    - For users that should have access to edit the app, check the _Co-owner_ box.
+1. In the environment that Kudos is installed in, select **Apps**.
+1. Locate the _Kudos App_. Note: If you didn't install the Kudos solution and it hasn't been shared with you, then you'll have to navigate to the Kudos solution and find the app there.
+1. Select the _three dots_ to the right of the Kudos app and then select **Share**.
+1. Search for and add the users with whom you want to share the app.
+    - For users who should be able to edit the app, select the _Co-owner_ box.
     - For regular users of the app, leave that checkbox empty.
     - If everyone in the organization should be able to use the app, you can look for _Everyone_ in the _Enter a name_ box.
-1. In the _Data permission_ area, you can select roles from a drop-down list. It's next to the Microsoft Dataverse tables that the Kudos app uses. Be sure to select the correct Kudos role (Employee, Manager, Program Admin) along with _Basic User_.
+1. In the _Data permission_ area, you can select roles from a dropdown list. It's next to the Microsoft Dataverse tables that the Kudos app uses. Be sure to select the correct Kudos role (Employee, Manager, Program Admin) along with _Basic User_.
 1. Add an optional email message.
 1. Select **Share**.
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
-## Step 10: Turn on Auditing (optional)
+## Step 10: Turn on auditing (optional)
 
-While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created/updated records in the future.
+While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created or updated records.
+
 To do this:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Environment** tab, select the environment where the solution is installed, and select **Audit settings**.
+1. Select the **Environment** tab, select the environment where the solution is installed, and then select **Audit settings**.
 
 :::image type="content" source="media/install/Auditing1.png" alt-text="Select environment tab and select audit settings":::
 
-1. Select on **Start auditing**.
+1. Select **Start auditing**.
