@@ -4,7 +4,7 @@ description: Learn about how to use IP firewall in Power Platform environments.
 author: ritesp
 ms.author: ritesp
 ms.topic: overview
-ms.date: 05/23/2023
+ms.date: 06/19/2023
 ms.reviewer: sericks
 ms.custom: template-overview
 
