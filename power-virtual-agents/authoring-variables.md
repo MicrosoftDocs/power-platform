@@ -26,7 +26,7 @@ Variables can also be passed to, and returned from, [other topics](authoring-var
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
+# [Web app](#tab/webApp)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -304,7 +304,7 @@ When you're returning a variable to a topic, the destination topic is the topic 
 1. Save the topic.
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 ### Entity and variable type
 
