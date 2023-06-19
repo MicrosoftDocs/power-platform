@@ -46,31 +46,35 @@ After the installation is complete, the status shows as _Installed_.
 ## Step 3: Create an access team
 
 Access team: Kudos-ReadAccessTeam
-Access teams aren't, technically, a security role as defined in the Power Platform, but they play an important part in securing access rights to a Kudo. Kudo records are _owned_ by the recipient but should be readable by the sender's manager and the recipient's manager. The access team enables this by dynamically assigning the sender's manager and recipient's manager _read access_ to that Kudo through a Power Automate flow.
+
+Access teams aren't, technically, a security role as defined in Power Platform, but they play an important part in securing access rights to a Kudos. Kudos records are _owned_ by the recipient but should be readable by the sender's manager and the recipient's manager. The access team enables this by dynamically assigning the sender's manager and recipient's manager _read access_ to that Kudos through a Power Automate flow.
 
 More information: [Use access teams and owner teams to collaborate and share information](/power-apps/developer/data-platform/use-access-teams-owner-teams-collaborate-share-information)
 
 This application requires an access team on the Kudos table to operate properly. This access team shares each Kudos record with the sender of the Kudos and the recipient's manager. That way, these three users have access to the record:
 
-- Recipient: Gets access to the record by owning it
-- Sender: Gets access to the record by being part of the Access Team
-- Recipient's manager: Gets access to the record by being part of the Access Team
+- **Recipient**: Gets access to the record by owning it.
+- **Sender**: Gets access to the record by being part of the access team.
+- **Recipient's manager**: Gets access to the record by being part of the access team.
 
-If, for any reason, any other user needs access to a particular Kudos, an admin needs to add that user to the Access Team to get access automatically.
-To create the Access Team:
+If another user needs access to a particular Kudos, an admin must add that user to the access team to get access automatically.
+
+To create the access team:
 
 1. Go to the [Admin Center](<https://admin.powerplatform.microsoft.com/environments>)
-1. Select the **Environment** tab and select the environment where the solution was installed.
+1. Select the **Environment** tab and then select the environment where the solution was installed.
 1. Select **Settings**.
-1. Select on **Templates** > **Access team templates**.
-:::image type="content" source="media/install/AccessTeam2.png" alt-text="Select on Access team templates":::
-1. You get redirected to the _All Team Templated_ view.
+1. Select **Templates** > **Access team templates**.
+
+   :::image type="content" source="media/install/AccessTeam2.png" alt-text="Select Access team templates":::
+
+   You be redirected to the _All Team Templated_ view.
 1. Select **New** on the ribbon.
-1. Create a new record with the following information. It's important to use the same name as the name that the Power Automate flow uses to look up and use the Access Team.
+1. Create a new record with the following information. Use the same name that the Power Automate flow uses to look up and use the access team.
     - Name: Kudos-ReadAccessTeam
-        - Use this name as the name that the Power Automate flow uses. You can change the name, but if you do, you must also edit the flow.
+        - Use this as the name that the Power Automate flow uses. You can change the name, but if you do, you must also edit the flow.
     - Entity: Kudo
-    - Description: The team to share with the sender of Kudos and the kudos recipient's manager
+    - Description: The team to share with the sender of Kudos and the Kudos recipient's manager.
 1. Set _Access Rights_ to _Read_.
 1. Select **Save** and close this window.
 
@@ -81,31 +85,29 @@ The solution includes three new security roles:
 - **Kudos – Program Admin**
   - A program admin can see all Kudos.
   - Users in this role act as the administrator of the Kudos program. This security role grants access to the canvas app as a regular user and access to the model-driven app where an admin can view all Kudos, create new Kudos _Types_, add users to the _Opt-out User_ list, and delete and deactivate Kudos and _Opt-out User_ records.
-  - Assign this role to users that manage the Kudos program in your organization.
+  - Assign this role to users who manage the Kudos program in your organization.
 - **Kudos – Manager**
-  - A manager has access to see their own Kudos, and the Kudos their direct reports have received.
-  - This security role grants access to the canvas app, where users can see their own _sent_ and _received_ Kudos, send new Kudos, and see the Kudos received by employees they currently manage. This security role doesn't grant _delete_ or _deactivate_ access.
-  - Assign this role to those users who manage employees.
-- **Kudos –Employee**
-  - An employee has access to see the Kudos they have both sent and received.
+  - A manager can see their own Kudos, and the Kudos their direct reports receive.
+  - This security role grants access to the canvas app, where users can see their own _sent_ and _received_ Kudos, send new Kudos, and see the Kudos received by employees they manage. This security role doesn't grant _delete_ or _deactivate_ access.
+  - Assign this role to users who manage employees.
+- **Kudos – Employee**
+  - An employee can see the Kudos they have sent and received.
   - This security role grants access to the canvas app, where users can see their own sent and received Kudos and send new ones.
-  - Assign this role to regular users that need access to send and receive Kudos.
+  - Assign this role to regular users who need access to send and receive Kudos.
 
 > [!NOTE]
 > All users must also be assigned the _Basic User_ role in addition to any other roles assigned to them.
 
-Roles can be assigned from the Admin Center.
+Roles can be assigned from the admin center.
 
 1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
-
-1. Select on the **Environment** tab and select the environment where the solution was installed.
-1. Select on **Users** > **See all**.
-1. Select the users, select **Manage security roles** and select the appropriate roles.
+1. Select the **Environment** tab and then select the environment where the solution was installed.
+1. Select **Users** > **See all**.
+1. Select the users, select **Manage security roles**, and then select the appropriate roles.
 1. Select **Save**.
 
 > [!IMPORTANT]
->
->Be sure to also add the **Basic User** security role in addition to other Kudos-specific roles.
+> Be sure to also add the **Basic User** security role in addition to other Kudos-specific roles.
 
 ## Step 5: Assign _run-only_ access to flows
 
