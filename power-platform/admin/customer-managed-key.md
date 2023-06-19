@@ -300,12 +300,12 @@ Once the enterprise policy is created, the key vault administrator grants the en
 1. Select the key vault where the key was assigned to the enterprise policy.
 1. Select the **Access control (IAM)** tab, and then select **+ Add**.
 1. Select **Add role assignment** from the drop-down list,
-1. Search **Key Vault Crypto Service Encryption User** and select it,
-1. Click **Next**,
-1. Click on **+ Select members**, 
+1. Search **Key Vault Crypto Service Encryption User** and select it.
+1. Select **Next**.
+1. Select **+ Select members**.
 1. Search for the enterprise policy you have created.
-1. Click on the enterprise policy to select and click the **Select** button.
-1. Click the **Review + assign** button.
+1. Select the enterprise policy, and then choose **Select**.
+1. Select **Review + assign**.
 
 ### Grant the Power Platform admin privilege to read enterprise policy
 
@@ -340,10 +340,11 @@ To manage the environment's encryption, you need the following permission:
 
 The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer-managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data, and encrypt it with the customer-managed key.
 
-### Enable Managed environment for the environment to be added into the enterprise policy
+### Enable Managed environment to be added to the enterprise policy
+
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and locate the environment.
-1. Select and check the environment on the environments list. 
-1. Select the **Enable Managed Environments** icon on the action bar. 
+1. Select and check the environment on the environments list.
+1. Select the **Enable Managed Environments** icon on the action bar.
 1. Select **Enable**.
 
 ### Add an environment to the enterprise policy to encrypt data
@@ -363,7 +364,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
 
 > [!NOTE]
-> You can only add environments that are enabled as Managed Environments. Trial and Teams environment types cannot be added as environment to the enterprise policy.
+> You can only add environments that are enabled as Managed Environments. Trial and Teams environment types can't be added to the enterprise policy.
 
 ### Remove environments from policy to return to Microsoft managed key
 
