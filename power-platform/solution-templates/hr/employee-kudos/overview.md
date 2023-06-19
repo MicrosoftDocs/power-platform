@@ -13,12 +13,12 @@ ms.subservice: solution-templates
 
 # Employee Kudos solution template for Power Platform
 
-Kudos allows employees to recognize others for attributes or actions they are grateful for by sending Kudos to their teammates—offering peer-to-peer recognition.
+Kudos allows employees to recognize others for attributes or actions they are grateful for by sending praise to their teammates—offering peer-to-peer recognition.
 
 The Kudos AppSource package consists of two solutions:
 
-- **Employee Experience base solution** Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-- **Kudos solution** Contains all the components needed to enable the Kudos experience in a company.
+- **Employee Experience base solution**: Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+- **Kudos solution**: Contains all the components needed to enable the Kudos experience within a company.
 
 You can access the solution templates on AppSource at: <https://aka.ms/AccessEmployeeKudosTemplate>
 
