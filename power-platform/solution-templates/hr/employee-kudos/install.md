@@ -17,13 +17,13 @@ Take the following steps to install the Employee Kudos solution template.
 
 ## Step 1: Create connections
 
-The installation requires that three new connections be set up. It's best to create the connections before importing the solution to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
+The installation requires you to set up three new connections. It's best to create the connections before importing the solution to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
 
 Create three new connections with these connectors:
 
-- A [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
-- An [Office 365 Outlook connector](/connectors/office365/)
-- An [Office 365 Users connector](/connectors/office365users/)
+- [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
+- [Office 365 Outlook connector](/connectors/office365/)
+- [Office 365 Users connector](/connectors/office365users/)
 
 If you want to create the connections in advance, go to _Connections_, and select **+ New Connection** in the left-side panel. Search for each connection listed in this section and create a connection.
 
@@ -33,9 +33,11 @@ Import the Kudos solution template into the environment.
 
 1. Go to the [Kudos solution template in AppSource](<https://aka.ms/AccessEmployeeKudosTemplate>) and select **Get it now**.
 1. Select the environment that you want to install the solution template into.
-    :::image type="content" source="media/install/appsource-install-template.png" alt-text="Select environment":::
-1. Agree to the Terms and Privacy Statements by checking the boxes.
-1. Select **install**. You'll be taken to a screen where you can view the installation status.
+
+   :::image type="content" source="media/install/appsource-install-template.png" alt-text="Select the environment in which to install the template":::
+1. Agree to the Terms and Privacy statements by selecting the boxes.
+1. Select **Install**. You'll be taken to a screen where you can view the installation status.
+
 After the installation is complete, the status shows as _Installed_.
 
 > [!TIP]
