@@ -3,7 +3,7 @@ title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftD
 description: Troubleshooting and monitoring server-side synchronization
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/14/2023
+ms.date: 06/19/2023
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
@@ -266,7 +266,9 @@ The **Direction** (DirectionCode) of an email created by server-side synchroniza
 There is a maximum limit of 150 MB for incoming emails. Emails that exceed a total size of 150 MB, including all attachments, will not be created as an email activity.
 
 ### Mailbox appears as updated by a user who is not actively using the application
-If a user is configured to synchronize appointments, contacts, and tasks, the synchronization process for those items is performed as the user. The synchronization process checks for any changes every 15 minutes and possibly more often if certain updates are detected. When the synchronization process runs, it runs as the user and will update columns stored in the mailbox record during each sync cycle. This will result in the user potentially appearing in the [Dataverse analytics reports](../admin/analytics-common-data-service.md) available in the Power Platform admin center even though the user is not actively logging into the application. The synchronization process for email is a separate process which also updates mailbox records, but this process runs as the SYSTEM user.
+If a user is configured to synchronize _appointments_, _contacts_, and _tasks_, the synchronization process for those items is performed by that user. The synchronization process checks for any changes every 15 minutes, and possibly more often if certain updates are detected. When the synchronization process runs, it runs as that user and updates columns stored in the mailbox record during each sync cycle. This results in that user potentially appearing in the [Dataverse analytics reports](../admin/analytics-common-data-service.md), which are available in the Power Platform admin center, even though that user is not actively logging into the application. 
+
+The synchronization process for _email_ is a separate process, which also updates mailbox records. The synchronization process for email runs as the SYSTEM user.
   
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) <br />
