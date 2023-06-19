@@ -4,6 +4,7 @@ description: Learn about Power Platform environments and how to use them.
 author: Mattp123
 ms.topic: overview
 ms.date: 01/30/2023
+ms.reviewer: angieandrews
 ms.subservice: admin
 ms.author: matp
 contributors:
@@ -108,7 +109,7 @@ You can sort and search the list of environments; this is useful if you have a l
 
 ### Environment details
 
-You can see some the details of your environments by selecting an environment. Select **See all** to see more environment details.
+You can see some of the details of your environments by selecting an environment. Select **See all** to see more environment details.
 
 > [!div class="mx-imgBorder"] 
 > ![Environment details.](media/environment-details-see-all.png "Environment details")
