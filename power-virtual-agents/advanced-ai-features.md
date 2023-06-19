@@ -1,6 +1,6 @@
 ---
-title: "Advanced AI features (contains video)"
-description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
+title: "AI features for Teams and Classic bots (contains video)"
+description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users. These features are available in the Teams app for Power Virtual Agents and for Classic bots."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
 ms.date: 03/24/2023
 
@@ -14,14 +14,33 @@ ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Enable advanced AI features in Power Virtual Agents for Teams and Classic bots
+# AI features for Teams and Classic bots
+
+If you create bots in the Power Virtual Agents app in Teams, or if you have bots marked **Classic** in the Power Virtual Agents web app, you can enable additional features for those bots that improve how the core AI in Power Virtual Agents works.
+
+The unified authoring canvas includes a raft of improvements to the types of AI used by Power Virtual Agents which build upon these features. Bots created with the unified authoring canvas include next-generation AI features that supersede or replace the features listed in this topic.
+
+This topic provides details and instructions for using these AI features for backwards compatibility with older bots and to support some specific support scenarios. In most cases, you should [create or convert your bots with the unified authoring canvas](unified-authoring-conversion.md) to get the best implementation of multiple AI technologies.
+
+> [!IMPORTANT]
+> The AI features available to you depend on how (or when) you created your bot.
+>
+> The AI features on this page are only available if:
+>
+> - You create your bot in the Teams app
+> - You create a **Classic** bot
+> - You created your bot before May 23, 2023
+>
+> [Generative AI features](nlu-gpt-overview.md) (such as [generative answers](nlu-boost-conversations.md) and [Copilot](nlu-authoring.md)) are only available if you create or convert a bot [using the unified authoring canvas](unified-authoring-conversion.md#what-is-new-or-has-been-updated-in-the-latest-power-virtual-agents) in the Power Virtual Agents web app.
+
 
 ## Prerequisites
 
+- Your bot must be marked **Classic**, or it must be a bot you created in the Teams app.
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-### AI models in Power Virtual Agents - background
+## AI models in Power Virtual Agents - background
 
 :::image type="content" source="media/advanced-ai-features/nlu-models.png" alt-text="In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.":::
 
@@ -37,16 +56,7 @@ Shorter trigger phrases are better, and you should aim for 2 to 10 words. You ju
 
 Entities used in corresponding topics will automatically be identified in user intents when matched with their trigger phrases. For example the user intent "I want to book a ticket to Boston" will match with the trigger phrase "I want to book a ticket to Paris".
 
-### Advanced AI features overview
 
-There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.  
-
->
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
->
-
-> [!NOTE]
-> All of the features available in the Power Virtual Agents web app are also available in the Microsoft Teams app (for English bots only).
 
 ### Topic overlap detection
 
@@ -79,7 +89,7 @@ After you save the changes in the **Topic overlap details** pane, the overlappin
 
 :::image type="content" source="media/advanced-ai-features/refresh-overlaps.png" alt-text="Screenshot of the refresh icon, which looks like an arrow bent into a circle.":::
 
-### Topic suggestion from chat transcripts
+### Topic suggestion from chat transcripts (preview)
 
 This feature analyzes sessions between your bot and users and surfaces suggestions for you based on unmatched user input.
 
@@ -95,7 +105,7 @@ After reviewing the suggested trigger phrases, you can choose to delete the enti
 
 :::image type="content" source="media/advanced-ai-features/topic-editing.png" alt-text="Screenshot of the topic editing window.":::
 
-### Conversation personalization
+### Conversation personalization (preview)
 
 [When this feature is enabled](#enable-or-disable-ai-capabilities), the bot reuses information from Microsoft Graph and Azure Active Directory (Azure AD) throughout the conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
 
@@ -130,14 +140,21 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 
 ### Enable or disable AI capabilities
 
-To use these advanced AI capabilities in Power Virtual Agents:
+> [!IMPORTANT]
+> You can't enable these features for bots aren't marked **Classic**. This includes any bots created (or converted) in the web app after May 23, 2023, or any bots that weren't created with the unified authoring canvas (such as those you created specifically for certain scenarios, which you chose when you created the bot).
 
-1. Open a bot you want to enable or disable the features for.
+To use these AI capabilities in Power Virtual Agents:
+
+1. Open the bot you want to enable the features for:
+  - In the web app, the bot must be marked with **Classic**.
+  - In the Teams app, the bot can be any bot.
 1. Expand the **Settings** tab, then select **AI capabilities**.
 1. For each feature, select the checkbox to turn the feature on or off.
 1. Select **Save** at the top of the tab.
 
-:::image type="content" source="media/advanced-ai-features/enable-disable-ai-16Jun23.png" alt-text="Screenshot showing enable or disable AI capabilities on the AI capabilities tab.":::
+
+
+:::image type="content" source="media/advanced-ai-features/enable-disable-ai-16Jun23.png" alt-text="Screenshot showing enable or disable AI capabilities on the AI capabilities tab."::: 
 
 ---
 
