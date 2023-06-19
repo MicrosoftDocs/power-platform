@@ -178,6 +178,31 @@ In Azure, perform the following steps:
       - **Key type**: **RSA** or **RSA-HSM**
       - **RSA key size**: **2048**
 
+#### Encrypt your environment with key from Azure Key Vault with Private Link (preview)
+
+You can update your Azure Key vault's networking by enabling a [private endpoint](https://learn.microsoft.com/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-key-vault-using-the-azure-portal) and use the key in the key vault to encrypt your Power Platform environments.
+
+You can either create a [new key vault and establish a private link connection](https://learn.microsoft.com/azure/key-vault/general/private-link-service?tabs=portal#create-a-new-key-vault-and-establish-a-private-link-connection) or [establish a private link connection to an existing key vault](https://learn.microsoft.com/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-an-existing-key-vault), and create a key from this key vault and use it to encrypt your environment. You can also [establish a private link connection to an existing key vault](https://learn.microsoft.com/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-an-existing-key-vault) after you have already created a key and use it to encrypt your environment.
+
+##### Encrypt data with key from Key vault with Private link.
+1.	Create an [Azure Key vault](https://learn.microsoft.com/azure/key-vault/general/quick-create-portal#create-a-vault):
+  
+      Enable **Purge Protection**.
+1.	Create a RSA 2048.
+1.	Copy down the key vault URL and the encryption key URL and version to be used for creating the Enterprise policy.
+   
+      Note: once you added a Private endpoint to your key vault or disabled the Public access network, you won’t be able to see the key unless you have the appropriate permission.
+1.	Create a [virtual network](https://learn.microsoft.com/azure/virtual-network/quick-create-portal).
+1.	Return to your key vault and add [Private endpoint connections to your Azure Key vault](https://learn.microsoft.com/azure/key-vault/general/private-link-service?tabs=portal#establish-a-private-link-connection-to-an-existing-key-vault_).
+   
+      Note: you need to select the **Disable public access** networking option and enable the **Allow trusted Microsoft services to bypass this firewall** Exception.
+
+1. Create a Power Platform enterprise policy. More information: [Create enterprise policy](#create-enterprise-policy)
+1. Grant enterprise policy permissions to access the key vault. More information: [Grant enterprise policy permissions to access key vault](#grant-enterprise-policy-permissions-to-access-key-vault)
+1. Grant Power Platform and Dynamics 365 administrators permission to read the enterprise policy. More information: [Grant the Power Platform admin privilege to read enterprise policy](#grant-the-power-platform-admin-privilege-to-read-enterprise-policy)
+1.	Local Power Platform admin center admin to select environment to encrypt and enable Managed environment.
+1.	Local Power Platform admin center admin to add the Managed environment to Enterprise policy.
+
 ### Enable the Power Platform enterprise policies service for your Azure subscription
 
 Register Power Platform as a resource provider. You only need to do this task once.
@@ -270,18 +295,14 @@ Once the enterprise policy is created, the key vault administrator grants the en
 
 1. Sign into the [Azure portal](https://ms.portal.azure.com/) and go to **Key vaults**.
 1. Select the key vault where the key was assigned to the enterprise policy.
-1. Select the **Access policies** tab, and then select **+ Create**.
-1. Under the **Key permissions** section,
-   Key Management Operations, select this option:
-   - **Get**
-
-   Cryptographic Operations, select these options:
-   - **Unwrap key**
-   - **Wrap key**
-   :::image type="content" source="media/cmk-keyvault-access-policy.png" alt-text="Key vault add access policy":::
-1. Select **Next**.
-1. On the **Principal** page, enter your Enterprise policy and select it.
-1. Select **Next**, and then select **Create**.
+1. Select the **Access control (IAM)** tab, and then select **+ Add**.
+1. Select **Add role assignment** from the drop-down list,
+1. Search **Key Vault Crypto Service Encryption User** and select it,
+1. Click **Next**,
+1. Click on **+ Select members**, 
+1. Search for the enterprise policy you have created.
+1. Click on the enterprise policy to select and click the **Select** button.
+1. Click the **Review + assign** button.
 
 ### Grant the Power Platform admin privilege to read enterprise policy
 
@@ -339,7 +360,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 > - Only environments that are in the same region as the enterprise policy are displayed in the **Add environments** list.
 
 > [!NOTE]
-> You can only add environments that are enabled as Managed Environments.
+> You can only add environments that are enabled as Managed Environments. Trial and Teams environment types cannot be added as environment to the enterprise policy.
 
 ### Remove environments from policy to return to Microsoft managed key
 
