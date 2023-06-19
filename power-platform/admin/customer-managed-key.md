@@ -203,7 +203,7 @@ You can either create a [new key vault and establish a private link connection](
 1. Create a Power Platform enterprise policy. More information: [Create enterprise policy](#create-enterprise-policy)
 1. Grant enterprise policy permissions to access the key vault. More information: [Grant enterprise policy permissions to access key vault](#grant-enterprise-policy-permissions-to-access-key-vault)
 1. Grant Power Platform and Dynamics 365 administrators permission to read the enterprise policy. More information: [Grant the Power Platform admin privilege to read enterprise policy](#grant-the-power-platform-admin-privilege-to-read-enterprise-policy)
-1. Power Platform admin center admin selects the environment to encrypt and enable Managed environment. More information: [Enable Managed environment for the environment to be added into the enterprise policy](#enable-managed-environment-to-be-added-into-the-enterprise-policy)
+1. Power Platform admin center admin selects the environment to encrypt and enable Managed environment. More information: [Enable Managed environment to be added to the enterprise policy](#enable-managed-environment-to-be-added-to-the-enterprise-policy)
 1. Power Platform admin center admin adds the Managed environment to the enterprise policy. More information: [Add an environment to the enterprise policy to encrypt data](#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
 
 ### Enable the Power Platform enterprise policies service for your Azure subscription
