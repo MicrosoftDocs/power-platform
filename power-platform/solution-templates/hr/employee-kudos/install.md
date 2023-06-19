@@ -111,17 +111,17 @@ Roles can be assigned from the admin center.
 
 ## Step 5: Assign _run-only_ access to flows
 
-Set up a new or use an existing security group that represents all users who use the Kudos App so that the flows can run for all users.
+Set up a new or use an existing security group that represents all users who use the Kudos app so that the flows can run for all users.
 
 There are two cloud flows that require configuration of run-only access:
 
-- Kudo App – Share Kudo with Sender, Assign to Recipient
+- Kudo App – Share Kudos with Sender, Assign to Recipient
 - Kudos App – Notification Email
 
 Follow these steps for each flow:
 
 1. Go to the Kudos solution and open the flow.
-1. In the bottom-right, there's a section called _Run only users_. Select **Edit**. The _Manage run-only permissions_ screen pops up:
+1. In the lower-right, in a section called _Run only users_, select **Edit**. The _Manage run-only permissions_ screen pops up:
 
      :::image type="content" source="media/install/RunOnly2.png" alt-text="Manage run-only permissions":::
 
@@ -130,29 +130,30 @@ Follow these steps for each flow:
 
 ## Step 6: Set flow connections
 
-1. Open the Kudos solution template solution by selecting on **Kudos solution template** in the solutions tab.
+1. Open the Kudos solution template by selecting **Kudos solution template** in the solutions tab.
 
-1. Inside the _Kudos solution template_, go to _Cloud Flows_. There are two cloud flows that require editing:
-
-    - **Kudo app**: Share Kudo with sender, assign to recipient
+1. In the _Kudos solution template_, go to _Cloud Flows_. Two cloud flows require editing:
+    - **Kudo app**: Share Kudos with sender, assign to recipient
     - **Kudos app**: Notification email
 1. Edit the _Kudo app_ by taking these steps:
-    1. Select on the flow to open up a flow overview page.
-    1. Select **Edit** in the top-left corner.
+    1. Select the flow to open a flow overview page.
+    1. Select **Edit** in the upper-left corner.
     1. Select **Continue**.
     1. Select **Save**.
 1. Edit the _Kudos app_ by taking these steps:
     1. Go to _Cloud Flows_ in the Kudos solution.
-    1. Select on the flow to open up a flow overview page.
-    1. Select **Edit** in the top-left corner.
-    1. Select on the first flows step with a warning sign-on it.
-    1. Select on **+ New connection reference** or if pre-existing connections are listed, you can select on one of those to reuse it. After you do that, the warning should resolve and you'll see the flow step without the warning. Note: after selecting, it may take a few seconds for everything to resolve.
-    1. Select on the next flow step with a warning on it.
-    1. Select on **+ New connection reference** or if pre-existing connections are listed, you can select on one of those to reuse it. After you do that, the warning should resolve and you'll see the flow step without the warning. It may take a few seconds for everything to resolve.
+    1. Select the flow to open a flow overview page.
+    1. Select **Edit** in the upper-left corner.
+    1. Select the first flows step with a warning on it.
+    1. Select **+ New connection reference** or if pre-existing connections are listed, you can select one of those to reuse it. After you do that, the warning should resolve and you'll see the flow step without the warning. Note: after selecting, it may take a few seconds for everything to resolve.
+    1. Select the next flow step with a warning on it.
+    1. Select **+ New connection reference** or if pre-existing connections are listed, you can select one of those to reuse it. After you do that, the warning should resolve and you'll see the flow step without the warning. It may take a few seconds for everything to resolve.
+     
     :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference":::
+    
     1. Select **Save** at the bottom of the screen or at the top toolbar.
 
-## Step 7: Set Cloud Flows to _On_
+## Step 7: Set cloud flows to _On_
 
 Open the newly installed _Kudos solution template_ and verify that the four cloud flows are set to the _on_ status. If they aren't, turn them on.
 
@@ -161,7 +162,7 @@ Open the newly installed _Kudos solution template_ and verify that the four clou
 
 ## Step 8: Install sample data (optional)
 
-Sample data along with installation instructions are available on GitHub at this link: [Kudos Sample Data](https://aka.ms/KudosSampleData).
+Sample data along with installation instructions are available on GitHub at this link: [Kudos Sample Data](https://aka.ms/KudosSampleData)
 
 To create your own badges, refer to [Create Custom Badges](use.md#create-custom-kudos-types).
 
