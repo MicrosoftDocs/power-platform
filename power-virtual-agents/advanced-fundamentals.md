@@ -5,7 +5,7 @@ keywords: "PVA"
 ms.date: 03/24/2023
 
 ms.topic: article
-author: iaanw
+author: KendalBond007
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "authoring, fundamentals, advanced-authoring, ceX"
@@ -26,7 +26,6 @@ You can go beyond basic authoring in Power Virtual Agents by taking advantage of
 
 These features enhance and improve upon the [authoring experience](authoring-fundamentals.md) by letting you:
 
-- Enhance the AI that powers your bots.
 - Expand the types of information the bot understands and can parse back.
 - Use variables to retrieve information from one part of a topic and use it in another, to ensure a consistent experience for your bot users.
 - Utilize existing support content from website pages, such as FAQ pages, to quickly create a robust set of topics that can be used in a bot.
@@ -38,7 +37,6 @@ These features enhance and improve upon the [authoring experience](authoring-fun
 
 | Topic                                                                             | Description                                                                                                                                                                                                |
 | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Use advanced AI features](advanced-ai-features.md)                               | Learn more about the AI models in Power Virtual Agents and use advanced AI capabilities, such as improved intent triggering and automatic personalization from Azure Active Directory and Microsoft Graph. |
 | [Use entities and slot filling](advanced-entities-slot-filling.md)                | Use prebuilt entities, and define custom ones, to expand the types of information the bot can parse.                                                                                                       |
 | [Use variables](authoring-variables.md)                                           | Retrieve information for consistent usage across topics.                                                                                                                                                   |
 | [Create topics from existing support content](advanced-create-topics-from-web.md) | Utilize your existing web content to quickly create bots and topics.                                                                                                                                       |
