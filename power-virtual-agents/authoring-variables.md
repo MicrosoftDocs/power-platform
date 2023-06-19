@@ -28,8 +28,6 @@ Variables can also be passed to, and returned from, [other topics](authoring-var
 
 # [Web app](#tab/webApp)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
-
 Variables can exist at three levels, or scopes:
 
 - **Topic** variables can only be used in the topics in which they're created. This scope is the default for variables that you create.
