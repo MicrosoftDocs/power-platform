@@ -1,6 +1,6 @@
 ---
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
-description: About creating and manage environments in the Power Platform admin center
+description: Learn how to create and manage environments in the Power Platform admin center
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,7 +17,7 @@ contributors:
 ---
 # Create and manage environments in the Power Platform admin center
 
-An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
+An environment is a space in which to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant that is shared by all users in that tenant.
 
 ## Who can create environments?
 
@@ -61,7 +61,7 @@ To create an environment, all the following must be true:
 
 2. The tenant (or user in the case of email trials) must have the following:
 
-   1. For production and sandbox environments, the tenant must have at least 1GB of database storage capacity available.
+   1. For production and sandbox environments, the tenant must have at least 1 GB of database storage capacity available.
    1. For trial (subscription-based) environments, each offer-based trial (also known as "admin trial") subscription entitles the tenant to three subscription-based trial environments. Only tenant-level admins are able to provision trial (subscription-based) environments.
    1. For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments (refer to the table above). This applies to tenant-level admins as well. 
    
@@ -99,7 +99,7 @@ You have multiple options when creating an environment:
 You create a database to use Dataverse as a data store. The Dataverse is a cloud scale database used to securely store data for business applications built on Power Apps. Dataverse provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Dataverse?](/powerapps/maker/common-data-service/data-platform-intro#why-use-dataverse)
 
 ### Prerequisites 
-To create an environment with a database, you need 1GB available database capacity.
+To create an environment with a database, you need 1 GB available database capacity.
 
 ### Steps
 
@@ -133,7 +133,7 @@ To create an environment with a database, you need 1GB available database capaci
 You can create an environment without a database and use your own data store.
 
 ### Prerequisites
-You need 1GB available database capacity.
+You need 1 GB available database capacity.
 
 ### Steps
 1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
@@ -165,7 +165,7 @@ To set refresh cadence:
 
 2. From the left-side menu, select **Environments**, and then select an environment.
 
-3. Select **Edit**
+3. Select **Edit**.
 
 4. Under **Refresh cadence**, choose the cadence type. 
 
@@ -185,26 +185,26 @@ The refresh cadence does not change when you will receive updates for:
 
 ### Who can access environments?
 Users are able to access resources in an environment when they have:
-- a license granting use rights for the resource being accessed in an environment. For example, a user with a Power Apps per user plan can access premium apps shared with them in any environment. 
+- A license granting use rights for the resource being accessed in an environment. For example, a user with a Power Apps per user plan can access premium apps shared with them in any environment. 
   - [This documentation](pricing-billing-skus.md) highlights use rights included with different licenses. 
 
 AND
 
-- permissions to access a resource. For example, a user can only access Power Apps that are shared with them. The following documentation outlines how to share some Power Platform resources:
+- Permissions to access a resource. For example, a user can only access Power Apps that are shared with them. The following documentation outlines how to share some Power Platform resources:
   - [This documentation](/powerapps/maker/canvas-apps/share-app) highlights how to share an app with users. 
   - [This documentation](/power-automate/create-team-flows) highlights how to share a cloud flow. 
 
 ### What are the new trial limits for Power Apps customers?
 The new trial limits are one per user. 
 
-### Can an Microsoft 365 licensed user manage and create environments?
-No, Microsoft 365 licensed users will not be able to manage environments. 
+### Can a Microsoft 365 licensed user manage and create environments?
+No, Microsoft 365 licensed users won't be able to manage environments. 
 
 ### If I create an environment in the Dynamics 365 admin center, will it appear in the Power Platform admin center?
 Yes, it will appear in both admin centers.
 
 ### What is the Power Apps production environment limit?
-Provisioning environments is based on database capacity. Previously, it was two environments per Power Apps Plan 2 license. Now all you need is 1GB of available capacity to provision. All environments with or without Dataverse will consume at least 1GB capacity.
+Provisioning environments is based on database capacity. Previously, it was two environments per Power Apps Plan 2 license. Now all you need is 1 GB of available capacity to provision. All environments with or without Dataverse will consume at least 1 GB capacity.
 
 ### See also 
 [Dataverse storage capacity](capacity-storage.md) <br />

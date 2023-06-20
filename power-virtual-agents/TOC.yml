@@ -40,6 +40,8 @@
       href: nlu-boost-node.md
     - name: Create (and edit) with Copilot
       href: nlu-authoring.md
+    - name: AI features for Teams and Classic bots
+      href: advanced-ai-features.md
 - name: Administer and manage
   items:
     - name: Assign licenses
@@ -102,8 +104,6 @@
   items:
     - name: Key concepts - Enhanced authoring
       href: advanced-fundamentals.md
-    - name: Enable advanced AI features
-      href: advanced-ai-features.md
     - name: Use entities and slot filling
       href: advanced-entities-slot-filling.md
     - name: Use variables
