@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: kvivek
 ms.topic: overview
-ms.date: 05/30/2023
+ms.date: 06/20/2023
 ms.custom: 
 ---
 # Extend pipelines in Power Platform
@@ -110,8 +110,8 @@ The tables below indicate inputs and outputs for each event. Output parameters c
 | `OnDeploymentCompleted`   | StageRunID (GUID), <br/>DeploymentStatus (**200000002** (Succeeded), **200000006** (Canceled), **200000003** (Failed)), <br/>ErrorMessage  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name  | Triggers when the deployment succeeded, failed, or was canceled. Can be used to trigger custom post-deployment logic. |
 
 ### Sample
-You can download and then import this unmanaged solution into your pipelines host environment. It contains sample cloud flows for using the above triggers and actions with pipelines. 
-Download sample solution: https:/aka.ms/DownloadPipelinesExtensibilitySamples
+
+Download and then import this unmanaged solution into your pipelines host environment, which contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https:/aka.ms/DownloadPipelinesExtensibilitySamples)
 
 ## Next step
 

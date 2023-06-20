@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 02/28/2023
+ms.date: 06/20/2023
 ms.reviewer: "matp"
 ms.topic: "overview"
 ---
@@ -37,7 +37,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
 - Achieve compliance, safety, monitoring, and automation goals with:
   - Customizations and audit logs saved automatically and are easily accessible.
   - Out-of-the-box analytics provides better visibility within a central location.
-  - The ability to view out of the box Power BI reports within the pipelines app or create your own from . More information: [Reporting overview for model-driven apps](/power-apps/maker/model-driven-apps/reporting-overview)
+  - The ability to view out-of-the-box Power BI reports within the pipelines app or create your own. More information: [Reporting overview for model-driven apps](/power-apps/maker/model-driven-apps/reporting-overview)
   - Custom tailor pipelines to the needs of your organization with [pipelines extensibility](extend-pipelines.md) and Power Automate. 
 
 ## Makers run preconfigured pipelines
@@ -73,15 +73,17 @@ Pipelines deploy solutions as well as configuration for the target environment s
    >
 
 ### Does pipelines automatically store solution backups?
+
 Yes. Both managed and unmanaged solutions are automatically exported and stored in the pipelines host for every deployment.
 
-### Can customization bypass a deployment stage such as QA? 
+### Can customization bypass a deployment stage such as QA?
+
 No. Solutions are exported as soon as a deployment request is submitted (when the maker selects **Deploy** from within their development environment), and the same solution artifact will be deployed. Similarly, the system doesn't re-export a solution for deployments to subsequent stages in a pipeline. The same solution artifact must pass through pipeline stages in sequential order. The system also prevents any tampering or modification to the exported solution artifact. This ensures customization can't bypass QA environments or your approval processes.
 
 ### Are standalone licenses required to use pipelines?
 
 - Both source and target environments must be enabled as Managed Environments. Managed Environments isn't required for the pipelines host. 
-- Standalone licenses are **not** required to enable Managed Environments for developer and trial type environments.
+- Standalone licenses aren't required to enable Managed Environments for developer and trial type environments.
 
 A common setup example:
 
@@ -94,7 +96,7 @@ A common setup example:
 
 ### Can I configure approvals for deployments?
 
-Yes. You can use the pipelines extensibility feature with Power Automate and other approval systems. Notice that to run pipelines, you currently need permission to import solutions to the target environment. 
+Yes. You can use the pipelines extensibility feature with Power Automate and other approval systems. Notice that to run pipelines, you currently need permission to import solutions to the target environment.
 
 ### Can pipelines deploy to a different tenant?
 
@@ -114,7 +116,7 @@ Not currently.
 
 ### Can pipelines be used with Azure DevOps, GitHub, or the ALM Accelerator?
 
-Yes, together these tools are powerful while keeping maker experiences simple. See [extend pipelines](extend-pipelines.md)
+Yes, together these tools are powerful while keeping maker experiences simple. More information: [extend pipelines](extend-pipelines.md)
 
 ### Can I roll back to a previous version?
 
@@ -129,11 +131,11 @@ Not currently. Pipelines default import behavior is _Upgrade_ with _Maintain cus
 
 ### Can an environment be associated with multiple hosts?
 
-No. However, one environment can be linked to multiple pipelines within the same host. In order to associate an environment with a different host, simply add it to a pipeline in the new host. Then you should delete the environment record from the original host and verify everything works as expected.
+No. However, one environment can be linked to multiple pipelines within the same host. In order to associate an environment with a different host, add it to a pipeline in the new host. Then delete the environment record from the original host and verify everything works as expected.
 
 ### Can I customize or extend the first-party deployment pipeline app and tables?
 
-Not currently. However, intentional extension hooks are available to customize pipelines logic. See [extend pipelines](extend-pipelines.md).
+Not currently. However, intentional extension hooks are available to customize pipelines logic. More information: [extend pipelines](extend-pipelines.md).
 
 ### Where can I view and run pipelines?
 
@@ -145,7 +147,7 @@ Not currently. The host and all environments associated with pipelines in a host
 
 ### Can I deploy the same solution using different pipelines?
 
-Yes, this is possible, although we recommend starting with the same pipeline for a given solution. This helps avoid confusion and inadvertent mistakes. Pipeline run information is displayed in the context of one pipeline and one solution (within the solution experience). Therefore other pipelines may not show the latest deployed solution version or other important run information associated with different pipelines. Notice the Deployment Pipeline Configuration app shows run information across all pipelines and all solutions for the current host.
+Yes, this is possible, although we recommend starting with the same pipeline for a given solution. This helps avoid confusion and inadvertent mistakes. Pipeline run information is displayed in the context of one pipeline and one solution (within the solution experience). Therefore other pipelines may not show the latest deployed solution version or other important run information associated with different pipelines. Notice that the Deployment Pipeline Configuration app shows run information across all pipelines and all solutions for the current host.
 
 ### Can the host environment also be used as a development or target environment?
 
