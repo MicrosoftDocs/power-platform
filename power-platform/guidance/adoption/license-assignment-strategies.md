@@ -3,15 +3,11 @@ title: "License assignment strategies | MicrosoftDocs"
 description: "Guidance for license assignment."
 author: stjeffer
 ms.topic: conceptual
-ms.date: 04/24/2023
+ms.date: 06/20/2023
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: sericks
 ---
-
-
-<!-- Line 129 says "a premium Power App". Can you change the wording? The style guide says this: "Don’t use Power App or Power Apps app to refer to something created using Power Apps. Instead, use just app." Also, in line 63, the title is "Bulk user assignments the Microsoft 365 admin portal". There's a word missing - maybe, "in" or "using"? -->
-
 
 # License assignment strategies
 
@@ -60,7 +56,7 @@ Licenses are assigned in the following ways:
 - The [Active users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-active-users-page-to-assign-licenses&preserve-view=true) page in the Microsoft 365 admin portal.
 - [PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true) scripts.
 
-### Bulk user assignments the Microsoft 365 admin portal
+### Bulk user assignments in the Microsoft 365 admin portal
 
 Bulk licensing commonly occurs in the following scenarios:
 
@@ -126,7 +122,7 @@ Learn more about on-demand license assignment:
 
 #### Request a license
 
-Power Apps users can request a license, which streamlines the process of assigning licenses for both users and administrators. Whenever a user tries to use a premium Power App without a license, they can easily request one directly from the product.
+Power Apps users can request a license, which streamlines the process of assigning licenses for both users and administrators. Whenever a user tries to use Power Apps without a license, they can easily request one directly from the product.
 
 Administrators can approve or reject numerous requests simultaneously, and add a personalized message for their users.
 
