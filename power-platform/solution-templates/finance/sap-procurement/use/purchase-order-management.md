@@ -92,9 +92,9 @@ You can create a new purchase order:
 
 ### Add, cancel, or save the purchase order
 
-- Select **+ Add** for additional line items or select **Cancel** if you do not want to keep the purchase order. Selecting _cancel_ removes everything.
+- Select **+ Add** for additional line items or select **Cancel** if you don't want to keep the purchase order. Selecting _cancel_ removes everything.
 
-- Select **Save** when you are finished. When you select **Save**, the purchase order data will be saved to SAP and the SAP document number will appear in the upper left corner.
+- Select **Save** when you're finished. When you select **Save**, the purchase order data will be saved to SAP and the SAP document number will appear in the upper left corner.
 
 ## Additional functionality
 
