@@ -1,10 +1,10 @@
 ---
 title: Microsoft Power Platform ISV Studio | Microsoft Docs
 description: Learn how apps are managed and supported through the ISV Studio portal.
-ms.date: 04/03/2023
+ms.date: 06/20/2023
 ms.reviewer: jdaly
-author: mikkelsen2000
-ms.author: pemikkel
+author: angela21k
+ms.author: angelakim
 suite: powerapps
 ms.topic: overview
 ms.subservice: developer
@@ -27,17 +27,19 @@ ISV Studio is designed to become the go-to Power Platform destination for Indepe
 > - ISV Studio is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
-ISV Studio supports applications built on the Microsoft Dataverse that are published to and deployed through [AppSource](https://appsource.microsoft.com/). No telemetry will be provided on side loaded solutions not deployed through AppSource.
+ISV Studio supports applications built on the Microsoft Dataverse that are published to and deployed through [AppSource](https://appsource.microsoft.com/). No telemetry is provided on side loaded solutions not deployed through AppSource.
 
 The applications currently available on the Dataverse includes Power Apps and Dynamics 365 for Sales, Marketing, Service, and Talent. ISV Studio now provides telemetry features in Dynamics 365 Finance and Operations.
 
-When end user installs an application from AppSource, a consent dialog will be displayed requesting the user to acknowledge that contact, usage, and transactional information may be shared with the application provider. This information is used by the provider to support billing and other transactional activities and to enable telemetry in ISV Studio for the ISV to learn from and act on.
+When end user installs an application from AppSource, a consent dialog is displayed requesting the user to acknowledge that contact, usage, and transactional information may be shared with the application provider. This information is used by the provider to support billing and other transactional activities and to enable telemetry in ISV Studio for the ISV to learn from and act on.
 
-A customer can request that data not be shared with the provider, in which case Microsoft will remove all data from that particular tenant within ISV Studio.
+A customer can request that data not be shared with the provider, in which case Microsoft removes all data from that particular tenant within ISV Studio.
 
 To access the public preview of ISV Studio, navigate your browser to [https://aka.ms/ISVStudio](https://aka.ms/ISVStudio/).
 
-## Pre-requisites 
+## Prerequisites
+
+Prerequisites are different for Microsoft Dataverse and for Dynamics 365 Finance and Operations.
 
 ### For Microsoft Dataverse
 
@@ -50,13 +52,15 @@ The ISV must be associated with a Microsoft registered Partner organization [ISV
 
 ## Access to ISV Studio
 
+When you have admin access, you can grant and remove read access for other users.
+
 ### Admin access
 
-To access ISV Studio as an admin user,  your Azure Active Directory account must be configured as a Publisher Owner in Partner Center. You can view the list of your Publisher Owners from the [Account Settings in Partner Center](/partner-center/partner-center-account-setup). With admin access, you'll be able to give additional users read-only access to ISV Studio from the Studio directly.  
+To access ISV Studio as an admin user, your Azure Active Directory account must be configured as a Publisher Owner in Partner Center. You can view the list of your Publisher Owners from the [Account Settings in Partner Center](/partner-center/partner-center-account-setup). With admin access, you're able to give more users read-only access to ISV Studio from the Studio directly.  
 
-### Grant read access 
+### Grant read access
 
-To give users within your organization read-only access to the ISV Studio data, you must first be an admin user. Once you are an admin for your publisher account, follow these steps below to give more users read-only access: 
+To give users within your organization read-only access to the ISV Studio data, you must first be an admin user. Once you're an admin for your publisher account, use the following steps to give more users read-only access:
 
 1. In ISV Studio, select **Settings** gear icon on the top right. Select **Manage access**.
 
@@ -69,29 +73,29 @@ To give users within your organization read-only access to the ISV Studio data, 
    > [!NOTE]
    > You can only search and add users within your tenant/organization.
 
-1. After giving access to the user, a confirmation email is sent to the user with access details.  
+1. After you give access to the user, a confirmation email is sent to the user with access details.  
 
 ### Remove read access
 
 You can follow the same steps to remove read-only access from a user to ISV Studio in the same window.
 
-<!--If you do not have permissions to give additional users access to ISV Studio. Please visit our documentation to learn more about user access.  
-If you want additional users to get access to ISV Studio, they can be added as app contributors in Partner Center.  Instructions can be found at
-[Managing users on cloud partner portal](/azure/marketplace/cloud-partner-portal-orig/cloud-partner-portal-manage-users).-->
-
 Continue reading the [App](app.md) and [Tenant](tenant.md) page articles listed below to learn about the capabilities of ISV Studio.
 
 ## How to provide feedback
 
-Please send an email to [ISVFeedback@microsoft.com](mailto:ISVFeedback@microsoft.com) with any feedback or questions. Your feedback is important for us to shape the experiences moving forward.
+Send an email to [ISVFeedback@microsoft.com](mailto:ISVFeedback@microsoft.com) with any feedback or questions. Your feedback is important for us to shape the experiences moving forward.
 
 ## In this Section
 
 [Home page](home.md)  
-[App page](app.md)<br/> 
-[Tenant page](tenant.md)<br/>
-[AppSource checker](appsource-checker.md)<br/>
-[Connector Certification](connector-certification.md)
+[App page](app.md)  
+[Tenant page](tenant.md)  
+[AppSource checker](appsource-checker.md)  
+[Connector Certification](connector-certification.md)  
+[App usage analytics](usage-analytics.md)  
+[Install failures](install-failure-analytics.md)  
+[Auto app updates (preview)](auto-update.md)  
+[Power Automate Embed Pay-as-you-go for ISVs (preview)](embed-analytics.md)
 
 ### See also
 
