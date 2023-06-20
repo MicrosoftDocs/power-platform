@@ -33,9 +33,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# [Web app](#tab/webApp)
 
 When a bot encounters a problem during a conversation, it sends an error response.
 
@@ -151,7 +149,7 @@ Common problems include:
 **Resolution:** [Contact customer support](fundamentals-support.md) for more details.
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 ### Error List
 
