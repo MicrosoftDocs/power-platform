@@ -11,13 +11,15 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
+<!-- Note from editor: Please check the link in line 50. It might not be working. --> 
+
 # Get started using the Employee Kudos app
 
-Follow the steps to create custom Kudos *Types*, opt out users, and localize the application strings.
+Follow the steps to create custom Kudos *types*, opt out users, and localize the application strings.
 
 ## Create custom Kudos types
 
-To add Kudos *Types* or *Badges*, follow these steps:
+To add Kudos *types* or *badges*, follow these steps:
 
 1. Start the *Kudos Administration app* and select **Badges** under **Administration**.
 
