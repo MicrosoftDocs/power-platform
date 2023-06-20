@@ -11,6 +11,9 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
+<!-- Note that "environment" is misspelled at the top center of the image in line 72.  Also, in line 74, is "templated" correct or should it be "templates"? -->
+
+
 # Install the Employee Kudos template
 
 Take the following steps to install the Employee Kudos solution template.
@@ -61,7 +64,7 @@ If another user needs access to a particular Kudos, an admin must add that user 
 
 To create the access team:
 
-1. Go to the [Admin Center](<https://admin.powerplatform.microsoft.com/environments>)
+1. Go to the [admin center](<https://admin.powerplatform.microsoft.com/environments>)
 1. Select the **Environment** tab and then select the environment where the solution was installed.
 1. Select **Settings**.
 1. Select **Templates** > **Access team templates**.
@@ -75,7 +78,7 @@ To create the access team:
         - Use this as the name that the Power Automate flow uses. You can change the name, but if you do, you must also edit the flow.
     - Entity: Kudo
     - Description: The team to share with the sender of Kudos and the Kudos recipient's manager.
-1. Set _Access Rights_ to _Read_.
+1. Set **Access Rights** to **Read**.
 1. Select **Save** and close this window.
 
 ## Step 4: Assign security roles to users
@@ -111,7 +114,7 @@ Roles can be assigned from the admin center.
 
 ## Step 5: Assign _run-only_ access to flows
 
-Set up a new or use an existing security group that represents all users who use the Kudos app so that the flows can run for all users.
+Set up a new or use an existing security group that represents all users of the Kudos app so that the flows can run for them all.
 
 There are two cloud flows that require configuration of run-only access:
 
@@ -149,7 +152,7 @@ Follow these steps for each flow:
     1. Select the next flow step with a warning on it.
     1. Select **+ New connection reference** or if pre-existing connections are listed, you can select one of those to reuse it. After you do that, the warning should resolve and you'll see the flow step without the warning. It may take a few seconds for everything to resolve.
      
-    :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference":::
+       :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference":::
     
     1. Select **Save** at the bottom of the screen or at the top toolbar.
 
@@ -190,6 +193,6 @@ To do this:
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select the **Environment** tab, select the environment where the solution is installed, and then select **Audit settings**.
 
-:::image type="content" source="media/install/Auditing1.png" alt-text="Select environment tab and select audit settings":::
+   :::image type="content" source="media/install/Auditing1.png" alt-text="Select environment tab and select audit settings":::
 
 1. Select **Start auditing**.
