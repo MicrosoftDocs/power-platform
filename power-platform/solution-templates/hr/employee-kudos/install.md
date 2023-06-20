@@ -71,7 +71,7 @@ To create the access team:
 
    :::image type="content" source="media/install/AccessTeam2.png" alt-text="Select Access team templates":::
 
-   You be redirected to the _All Team Templated_ view.
+   You'll be redirected to the _All Team Templated_ view.
 1. Select **New** on the ribbon.
 1. Create a new record with the following information. Use the same name that the Power Automate flow uses to look up and use the access team.
     - Name: Kudos-ReadAccessTeam
