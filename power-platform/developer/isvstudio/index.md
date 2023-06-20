@@ -71,7 +71,7 @@ To give users within your organization read-only access to the ISV Studio data, 
 
 1. After giving access to the user, a confirmation email is sent to the user with access details.  
 
-### Remove read access to users
+### Remove read access
 
 You can follow the same steps to remove read-only access from a user to ISV Studio in the same window.
 
@@ -81,7 +81,7 @@ If you want additional users to get access to ISV Studio, they can be added as a
 
 Continue reading the [App](app.md) and [Tenant](tenant.md) page articles listed below to learn about the capabilities of ISV Studio.
 
-### How to provide feedback
+## How to provide feedback
 
 Please send an email to [ISVFeedback@microsoft.com](mailto:ISVFeedback@microsoft.com) with any feedback or questions. Your feedback is important for us to shape the experiences moving forward.
 
