@@ -56,3 +56,11 @@ You can access the solution templates on AppSource at: <https://aka.ms/AccessEmp
   - Kudos app – Dataverse: connection reference to Dataverse
   - Kudos app – Office 365: Connection reference to Office 365
   - Kudos app – Outlook: Connection reference to Outlook
+
+## Next steps
+
+- [Install the Employee Kudos template](install.md)
+
+## See also
+
+- [Get started using the Employee Kudos app](use.md)
