@@ -37,22 +37,26 @@ A customer can request that data not be shared with the provider, in which case 
 
 To access the public preview of ISV Studio, navigate your browser to [https://aka.ms/ISVStudio](https://aka.ms/ISVStudio/).
 
-## Pre-requisites for Microsoft Dataverse
+## Pre-requisites 
+
+### For Microsoft Dataverse
 
 The ISV must be associated with a Microsoft registered Partner organization [ISV] that has one or more supported apps published in [AppSource](https://appsource.microsoft.com/). Supported apps include model-driven apps created using Power Apps and Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
 
-## Pre-requisites for Dynamics 365 Finance and Operations
+### For Dynamics 365 Finance and Operations
 
 - For Dynamics 365 Finance and Operations, update the `SolutionID` in the descriptors with the `ProductId` of their offer in Partner Center. The `ProductId` of their offer can be found in the URL in Partner Center.
 - Ask customers to install the latest solution with the above. They need to be on version `10.0.16` or above to see the telemetry feature in ISV Studio. More information: [ISV Studio solutions](/dynamics365/fin-ops-core/dev-itpro/dev-tools/isv-studio-solutions)
 
-### Admin access to ISV Studio
+## Access to ISV Studio
 
-To be an admin in ISV Studio,  your Azure Active Directory account must be configured as an app owner in Partner Center for their publisher account. Once you get the admin access, you'll be able to give more users access to ISV Studio from the studio directly.  
+### Admin access
 
-### Grant read access to users
+To access ISV Studio as an admin user,  your Azure Active Directory account must be configured as a Publisher Owner in Partner Center. You can view the list of your Publisher Owners from the [Account Settings in Partner Center](https://learn.microsoft.com/en-us/partner-center/partner-center-account-setup#identifiers). With admin access, you'll be able to give additional users read-only access to ISV Studio from the Studio directly.  
 
-If you want more users within your tenant/organization to get,  read-only access to ISV Studio, you must have [admin access](#admin-access-to-isv-studio). Once you are an admin for your publisher account, follow these steps below to give more users read-only access: 
+### Grant read access 
+
+To give users within your organization read-only access to the ISV Studio data, you must have [admin access](#admin-access-to-isv-studio). Once you are an admin for your publisher account, follow these steps below to give more users read-only access: 
 
 1. In ISV Studio, select **Settings** gear icon on the top right. Select **Manage access**.
 
