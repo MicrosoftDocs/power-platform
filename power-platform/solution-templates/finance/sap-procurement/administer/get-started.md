@@ -72,4 +72,3 @@ Work with your SAP functional analyst, business subject matter expert (SME) and 
 ### See also
 
 - [Overview](../overview.md)
-- [Get started](get-started.md)

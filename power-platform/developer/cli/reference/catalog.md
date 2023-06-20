@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 5/15/2023
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -31,6 +31,7 @@ Use the include files to add additional content to this topic.
 |[pac catalog list](#pac-catalog-list)|(Preview) List all published catalog items from the current Dataverse Organization.|
 |[pac catalog status](#pac-catalog-status)|(Preview) Get status of the catalog install/submit request.|
 |[pac catalog submit](#pac-catalog-submit)|(Preview) Submit catalog approval request.|
+|[pac catalog update](#pac-catalog-update)|(Preview) Update settings for the catalog.|
 
 
 ## pac catalog create-submission
@@ -166,6 +167,21 @@ This parameter requires no value. It is a switch.
 Path to solution zip file.
 
 [!INCLUDE [catalog-submit-remarks](includes/catalog-submit-remarks.md)]
+
+## pac catalog update
+
+(Preview) Update settings for the catalog.
+
+[!INCLUDE [catalog-update-intro](includes/catalog-update-intro.md)]
+
+
+### Required Parameters
+
+#### `--path` `-p`
+
+Path to catalog settings document
+
+[!INCLUDE [catalog-update-remarks](includes/catalog-update-remarks.md)]
 
 [!INCLUDE [catalog-remarks](includes/catalog-remarks.md)]
 
