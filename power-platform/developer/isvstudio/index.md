@@ -52,7 +52,7 @@ The ISV must be associated with a Microsoft registered Partner organization [ISV
 
 ### Admin access
 
-To access ISV Studio as an admin user,  your Azure Active Directory account must be configured as a Publisher Owner in Partner Center. You can view the list of your Publisher Owners from the [Account Settings in Partner Center](https://learn.microsoft.com/partner-center/partner-center-account-setup). With admin access, you'll be able to give additional users read-only access to ISV Studio from the Studio directly.  
+To access ISV Studio as an admin user,  your Azure Active Directory account must be configured as a Publisher Owner in Partner Center. You can view the list of your Publisher Owners from the [Account Settings in Partner Center](/partner-center/partner-center-account-setup). With admin access, you'll be able to give additional users read-only access to ISV Studio from the Studio directly.  
 
 ### Grant read access 
 
