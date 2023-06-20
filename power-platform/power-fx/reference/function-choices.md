@@ -41,9 +41,10 @@ At this time, you can use lookup columns only with SharePoint and Microsoft Data
 
 ## Syntax
 
-**Choices**( _column-reference_ )
+**Choices**( _column-reference_ [, _text-filter_ ] )
 
-- _column-reference_ – Required. A lookup column of a data source. Don't enclose the column name in double quotes. The reference must be directly to the column of the data source and not pass through a function or a control.
+- _column-reference_ - Required. A lookup column of a data source. Don't enclose the column name in double quotes. The reference must be directly to the column of the data source and not pass through a function or a control.
+- _text-filter_ - Optional. Filters the list of choices by only returning choices that start with the text specified in _text-filter_. If an empty string is specified, all choices will be returned.
 
 ## Examples
 
