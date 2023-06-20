@@ -115,7 +115,7 @@ The tables below indicate inputs and outputs for each event. Output parameters c
 
 ### Sample
 
-Download and then import this unmanaged solution into your pipelines host environment, which contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https:/aka.ms/DownloadPipelinesExtensibilitySamples)
+Download and then import this unmanaged solution into your pipelines host environment, which contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https://aka.ms/DownloadPipelinesExtensibilitySamples)
 
 ## Next step
 
