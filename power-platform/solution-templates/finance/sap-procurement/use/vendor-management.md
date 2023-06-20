@@ -20,7 +20,7 @@ ms.subservice: solution-templates
 
 # SAP Vendor Management app
 
-The SAP Vendor Management app lets you do several SAP functions quicker and easier than using SAPGui.  You can search, view, change existing, or create a new Vendor.
+The SAP Vendor Management app lets you do several SAP functions quicker and easier than using SAPGui. You can search, view, change existing, or create a new vendor.
 
 :::image type="content" source="media/vendor-management/sap-vendors-app.png" alt-text="Image of the Power Platform Procurement vendor app":::
 
