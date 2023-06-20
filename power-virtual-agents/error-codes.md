@@ -33,7 +33,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
+# [Web app](#tab/webApp)
 
 [!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
 
@@ -151,7 +151,7 @@ Common problems include:
 **Resolution:** [Contact customer support](fundamentals-support.md) for more details.
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 ### Error List
 
