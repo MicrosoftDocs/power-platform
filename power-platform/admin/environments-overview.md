@@ -2,13 +2,11 @@
 title: Environments overview | Microsoft Docs
 description: Learn about Power Platform environments and how to use them.
 author: Mattp123
-ms.component: pa-admin
 ms.topic: overview
 ms.date: 01/30/2023
+ms.reviewer: angieandrews
 ms.subservice: admin
 ms.author: matp
-search.audienceType: 
-  - admin
 contributors:
   - marcelbf
 ---
@@ -102,7 +100,7 @@ You can create environments for different purposes. A trial environment is for t
 
 ## Manage environments in the Power Platform admin center
 
-You can view and manage your environments on the **Environments** page. 
+You can view and manage your environments on the **Environments** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
 > [!div class="mx-imgBorder"] 
 > ![Environment list.](media/environment-list.png "Environment list")
@@ -111,7 +109,7 @@ You can sort and search the list of environments; this is useful if you have a l
 
 ### Environment details
 
-You can see some the details of your environments by selecting an environment. Select **See all** to see more environment details.
+You can see some of the details of your environments by selecting an environment. Select **See all** to see more environment details.
 
 > [!div class="mx-imgBorder"] 
 > ![Environment details.](media/environment-details-see-all.png "Environment details")
