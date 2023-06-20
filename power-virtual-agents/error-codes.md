@@ -35,8 +35,6 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 
 # [Web app](#tab/webApp)
 
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
-
 When a bot encounters a problem during a conversation, it sends an error response.
 
 If you're a bot user, the response contains an error code that identifies the problem. You should give this error code to your administrator.
