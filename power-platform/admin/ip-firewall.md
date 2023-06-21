@@ -4,7 +4,7 @@ description: Learn about how to use IP firewall in Power Platform environments.
 author: ritesp
 ms.author: ritesp
 ms.topic: overview
-ms.date: 05/23/2023
+ms.date: 06/19/2023
 ms.reviewer: sericks
 ms.custom: template-overview
 
@@ -110,10 +110,10 @@ Contact Microsoft Customer Support to get the environment unlocked.
 
 Download the audit log data in JSON format by using Dataverse OData API. The format of the audit log API is:
 
-`https://{orgURI}/api/data/v9.1/audits?$select=createdon,changedata,action&$filter=action%20eq%20116&$orderby=createdon%20desc&$top=1` 
+`https://{orgURI}/api/data/v9.1/audits?$select=createdon,changedata,action&$filter=action%20eq%20118&$orderby=createdon%20desc&$top=1` 
 
 - Replace **{orgURI}** with the Dataverse environment URI.
-- Set the action value to **116** for this event.
+- Set the action value to **118** for this event.
 - Set the number of items to return in **top=1** or specific the number you want to return.
 
 ### My Power Automate flows are not working as expected after configuring the IP firewall on my Power Platform environment. What should I do?

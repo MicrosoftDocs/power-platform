@@ -20,9 +20,9 @@
           href: error-handling.md
         - name: Global apps
           href: global.md
-        - name: Untyped objects (experimental)
+        - name: Untyped objects
           href: untyped-object.md
-        - name: Working with JSON (experimental)
+        - name: Working with JSON
           href: working-with-json.md
         - name: Formula reference
           items:
@@ -264,7 +264,7 @@
             href: reference/function-param.md
           - name: Parent
             href: reference/operators.md#self-and-parent-operators
-          - name: ParseJSON (experimental)
+          - name: ParseJSON
             href: reference/function-parsejson.md
           - name: Patch
             href: reference/function-patch.md

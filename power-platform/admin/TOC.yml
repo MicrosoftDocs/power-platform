@@ -2,21 +2,19 @@
   items:
     - name: Administer Power Platform
       items:
-        - name: Administer Power Platform
+        - name: Admin documentation
           href: index.yml
         - name: Overview
           href: admin-documentation.md
-        - name: Working with the Admin Portals
+        - name: Work with various admin portals
           href: wp-work-with-admin-portals.md
         - name: Get started
           items:
-            - name: What's the role of a Power Platform administrator?
+            - name: Role of a Power Platform administrator
               href: overview-role-powerapps-admin.md
             - name: Management and monitoring
               href: wp-management-monitoring.md
-            - name: Power Apps enterprise deployment whitepaper
-              href: admin-powerapps-enterprise-deployment.md
-            - name: Try Power Apps and customer engagement apps
+            - name: Try Power Platform apps for free
               href: try-powerapps-dynamics-365.md
             - name: Move between your apps
               href: quickly-navigate-office-365-app-launcher.md
@@ -437,7 +435,6 @@
             - name: Security and governance considerations
               href: governance-considerations.md
             - name: Configure security for Dataverse
-              expanded: true
               items:
                 - name: Dataverse security
                   href: wp-security.md
@@ -454,7 +451,7 @@
                 - name: Block cookie replay attacks
                   href: block-cookie-replay-attack.md
                 - name: IP firewall (preview)
-                  href: ip-firewall.md  
+                  href: ip-firewall.md
                 - name: Continuous access evaluation integration (preview)
                   href: continuous-access-evaluation.md
                 - name: Configure environment security
@@ -527,68 +524,68 @@
                       href: data-encryption.md
                     - name: Manage encryption key
                       href: manage-encryption-key.md
+            - name: Manage users
+              items:
+                - name: Overview of user security
+                  href: grant-users-access.md
+                - name: View active users
+                  href: admin-view-user-licenses.md
+                - name: Create users
+                  href: create-users.md
+                - name: Assign licenses
+                  href: assign-licenses.md
+                - name: Assign security roles
+                  items:
+                    - name: About security roles and privileges
+                      href: security-roles-privileges.md
+                    - name: Assign security roles
+                      href: assign-security-roles.md
+                    - name: Opt-out of automatic license-based user roles management
+                      href: opt-out-automatic-license.md
+                    - name: Use service admin roles to manage your tenant
+                      href: use-service-admin-role-manage-tenant.md
+                    - name: Miscellaneous privileges
+                      href: miscellaneous-privileges.md
+                    - name: Privacy-related privileges
+                      href: privacy-related-privileges.md
+                    - name: Create or edit a security role
+                      href: create-edit-security-role.md
+                    - name: Copy a security role
+                      href: copy-security-role.md
+                - name: Manage application users
+                  href: manage-application-users.md
+                - name: Delete users
+                  href: delete-users.md
+                - name: Reset a user's password
+                  href: reset-users-password.md
+                - name: Assign service admin role to users
+                  href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
+                - name: Add users to an environment
+                  href: add-users-to-environment.md
+                - name: Configure user security to resources
+                  href: database-security.md
+                - name: Configure user access to an environment
+                  href: control-user-access.md
+                - name: View user profile
+                  href: /powerapps/user/view-your-user-profile
+                - name: Create an administrative user
+                  href: prevent-elevation-security-role-privilege.md
+                - name: Troubleshoot common user access issues
+                  href: troubleshooting-user-needs-read-write-access-organization.md
+                - name: Manage user account synchronization
+                  href: manage-user-account-synchronization.md
+                - name: Hierarchy security to control access
+                  href: hierarchy-security.md
+                - name: Add or remove sales territory members
+                  href: add-remove-territory-members.md
+                - name: User session management
+                  href: user-session-management.md
+                - name: Conditional access with Azure AD
+                  href: restrict-access-online-trusted-ip-rules.md
+                - name: B2B collaboration with Azure AD
+                  href: invite-users-azure-active-directory-b2b-collaboration.md
             - name: Security FAQs
               href: security/faqs.md
-        - name: Manage users
-          items:
-            - name: Overview of user security
-              href: grant-users-access.md
-            - name: View active users
-              href: admin-view-user-licenses.md
-            - name: Create users
-              href: create-users.md
-            - name: Assign licenses
-              href: assign-licenses.md
-            - name: Assign security roles
-              items:
-                - name: About security roles and privileges
-                  href: security-roles-privileges.md
-                - name: Assign security roles
-                  href: assign-security-roles.md
-                - name: Opt-out of automatic license-based user roles management
-                  href: opt-out-automatic-license.md
-                - name: Use service admin roles to manage your tenant
-                  href: use-service-admin-role-manage-tenant.md
-                - name: Miscellaneous privileges
-                  href: miscellaneous-privileges.md
-                - name: Privacy-related privileges
-                  href: privacy-related-privileges.md
-                - name: Create or edit a security role
-                  href: create-edit-security-role.md
-                - name: Copy a security role
-                  href: copy-security-role.md
-            - name: Manage application users
-              href: manage-application-users.md
-            - name: Delete users
-              href: delete-users.md
-            - name: Reset a user's password
-              href: reset-users-password.md
-            - name: Assign service admin role to users
-              href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
-            - name: Add users to an environment
-              href: add-users-to-environment.md
-            - name: Configure user security to resources
-              href: database-security.md
-            - name: Configure user access to an environment
-              href: control-user-access.md
-            - name: View user profile
-              href: /powerapps/user/view-your-user-profile
-            - name: Create an administrative user
-              href: prevent-elevation-security-role-privilege.md
-            - name: Troubleshoot common user access issues
-              href: troubleshooting-user-needs-read-write-access-organization.md
-            - name: Manage user account synchronization
-              href: manage-user-account-synchronization.md
-            - name: Hierarchy security to control access
-              href: hierarchy-security.md
-            - name: Add or remove sales territory members
-              href: add-remove-territory-members.md
-            - name: User session management
-              href: user-session-management.md
-            - name: Conditional access with Azure AD
-              href: restrict-access-online-trusted-ip-rules.md
-            - name: B2B collaboration with Azure AD
-              href: invite-users-azure-active-directory-b2b-collaboration.md
         - name: Analytics
           items:
             - name: Dataverse analytics
@@ -675,7 +672,6 @@
               href: logging-power-automate.md
             - name: Power Platform connector activity logging (preview)
               href: connector-events-power-platform.md
-
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
             - name: Manage Dataverse auditing
@@ -712,6 +708,14 @@
                   href: powershell-create-service-principal.md
                 - name: Cmdlet reference
                   href: /powershell/module/microsoft.powerapps.administration.powershell
+                - name: PowerShell support for Power Apps
+                  items:
+                    - name: About PowerShell support
+                      href: powerapps-powershell.md
+                    - name: Automation of tasks with PowerShell
+                      href: wp-task-automation-powershell.md
+                    - name: Data loss prevention SDK
+                      href: data-loss-prevention-sdk.md
             - name: Connectors
               items:
                 - name: Getting started
@@ -740,51 +744,6 @@
                           items:
                             - name: "List tenant settings"
                               href: list-tenantsettings.md
-        - name: PowerShell support for Power Apps
-          items:
-            - name: About PowerShell support
-              href: powerapps-powershell.md
-            - name: Automation of tasks with PowerShell
-              href: wp-task-automation-powershell.md
-            - name: Data loss prevention SDK
-              href: data-loss-prevention-sdk.md
-        - name: SharePoint and Power Apps
-          items:
-            - name: Manage your documents using SharePoint
-              href: manage-documents-using-sharepoint.md
-              items:
-            - name: SharePoint document management software requirements
-              href: sharepoint-document-management-software-requirements.md
-            - name: Setup
-              href: set-up-sharepoint-integration.md
-              items:
-                - name: Set up customer engagement apps to use SharePoint online
-                  href: set-up-dynamics-365-online-to-use-sharepoint-online.md
-                - name: Configure server-based authentication with SharePoint on-premises
-                  href: configure-server-based-authentication-sharepoint-on-premises.md
-                  items:
-            - name: Configure
-              items:
-                - name: Enable SharePoint document management for specific entities
-                  href: enable-sharepoint-document-management-specific-entities.md
-                - name: Edit existing SharePoint site records
-                  href: edit-existing-sharepoint-site-records.md
-                - name: Create and edit document location records
-                  href: create-edit-document-location-records.md
-                - name: Permissions required for document management tasks
-                  href: permissions-required-document-management-tasks.md
-            - name: Troubleshoot
-              items:
-                - name: Troubleshooting server-based authentication
-                  href: troubleshooting-server-based-authentication.md
-                - name: Troubleshoot set up with SharePoint online
-                  href: troubleshoot-set-up-sharepoint-online.md
-                - name: Troubleshooting document management issues
-                  href: troubleshoot-doc-management-issues.md
-                - name: Known issues with document management
-                  href: doc-management-known-issues.md
-                - name: Switch from the list component
-                  href: switching-list-component-changing-deployment.md
         - name: Data integration
           items:
             - name: Integrate data into Dataverse
@@ -970,6 +929,42 @@
               #     href: when-would-want-use-check-box.md
         - name: Extend with integration and solutions
           items:
+            - name: SharePoint integration
+              items:
+                - name: Manage your documents using SharePoint
+                  href: manage-documents-using-sharepoint.md
+                  items:
+                - name: SharePoint document management software requirements
+                  href: sharepoint-document-management-software-requirements.md
+                - name: Setup
+                  href: set-up-sharepoint-integration.md
+                  items:
+                    - name: Set up customer engagement apps to use SharePoint online
+                      href: set-up-dynamics-365-online-to-use-sharepoint-online.md
+                    - name: Configure server-based authentication with SharePoint on-premises
+                      href: configure-server-based-authentication-sharepoint-on-premises.md
+                - name: Configure
+                  items:
+                    - name: Enable SharePoint document management for specific entities
+                      href: enable-sharepoint-document-management-specific-entities.md
+                    - name: Edit existing SharePoint site records
+                      href: edit-existing-sharepoint-site-records.md
+                    - name: Create and edit document location records
+                      href: create-edit-document-location-records.md
+                    - name: Permissions required for document management tasks
+                      href: permissions-required-document-management-tasks.md
+                - name: Troubleshoot
+                  items:
+                    - name: Troubleshooting server-based authentication
+                      href: troubleshooting-server-based-authentication.md
+                    - name: Troubleshoot set up with SharePoint online
+                      href: troubleshoot-set-up-sharepoint-online.md
+                    - name: Troubleshooting document management issues
+                      href: troubleshoot-doc-management-issues.md
+                    - name: Known issues with document management
+                      href: doc-management-known-issues.md
+                    - name: Switch from the list component
+                      href: switching-list-component-changing-deployment.md
             - name: Manage Bing Maps
               href: manage-bing-maps-organization.md
             - name: Enable Power Automate integration
@@ -1073,14 +1068,6 @@
               href: partners-credit-when-customers-subscribe-dynamics-365.md
             - name: "For partners: Delegated Administrator"
               href: for-partners-delegated-administrator.md
-    - name: Administer Power Apps
-      href: admin-guide.md
-    - name: Administer Power Automate
-      href: about-flow-guide.md
-    - name: Administer Power BI
-      href: about-powerbi-guide.md
-    - name: Administer Power Virtual Agents
-      href: about-power-virtual-agents.md
     - name: Administer customer engagement apps in Dynamics 365
       items:
         - name: Overview
@@ -1095,17 +1082,12 @@
           href: manage-product-catalog-configuration.md
         - name: Rich text experience for appointment activities
           href: enable-rich-text-experience.md
-    - name: Important changes (deprecations) coming
-      href: ../important-changes-coming.md
-    - name: International availability
-      href: ../availability.md
-    - name: Adoption best practices
-      href: ../guidance/adoption/methodology.md
-    - name: Center of Excellence (CoE) Kit
-      href: ../guidance/coe/starter-kit.md
-    - name: Responsible AI
+    - name: Related documentation
       items:
-        - name: Overview
-          href: ../transparency-note-overview.md
-        - name: Transparency note for Copilot data security and privacy
-          href: ../transparency-note-copilot-data-security-privacy.md
+        - name: Application lifecycle management (ALM) documentation
+          href: ../alm/index.yml
+        - name: Developer documentation
+          href: ../developer/index.yml
+        - name: Guidance documentation
+          href: ../guidance/index.yml
+          displayName: CoE adoption guidance best practices
