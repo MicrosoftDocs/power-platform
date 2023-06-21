@@ -23,7 +23,8 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
-# [Preview](#tab/preview)
+
+# [Web app](#tab/webApp)
 
 Use the **Test bot** pane to walk through your bot conversations as the user. It's a good way to make sure your topics are working and that conversations flow as you expect.
 ### Follow a conversation through a topic 
@@ -100,7 +101,7 @@ The *botContent.zip* file contains two files:
 - *botContent.yml* contains the bot's topics and other content, including entities and variables used. 
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 ### Test a topic in the Test bot pane
 
