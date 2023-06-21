@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 5/15/2023
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -31,12 +31,14 @@ Work with your Power Platform Admin Account
 |[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
 |[pac admin copy](#pac-admin-copy)|Copy Source Environment to Destination Environment|
 |[pac admin create](#pac-admin-create)|Creates a Dataverse database in your tenant.|
+|[pac admin create-service-principal](#pac-admin-create-service-principal)|Add AAD Application and SPN to Dynamics365 AAD and configure Dynamics365 to accept the SPN as tenant admin user.|
 |[pac admin delete](#pac-admin-delete)|Deletes Environment from your tenant|
 |[pac admin list](#pac-admin-list)|List all environments from your tenant|
 |[pac admin list-app-templates](#pac-admin-list-app-templates)|Lists all supported Dataverse database templates of model-driven apps in Dynamics 365.|
 |[pac admin list-backups](#pac-admin-list-backups)|Lists all backups of your environment.|
 |[pac admin reset](#pac-admin-reset)|Reset environment from your tenant|
 |[pac admin restore](#pac-admin-restore)|Restores an environment to a given backup.|
+|[pac admin set-backup-retention-period](#pac-admin-set-backup-retention-period)|Takes a manual backup of your environment.|
 |[pac admin status](#pac-admin-status)|This command will list the status of all the operations in progress.|
 
 
@@ -189,6 +191,12 @@ Max asynchronous wait time in minutes. Default value is 60 minutes
 
 Name of the target environment
 
+#### `--skip-audit-data` `-sa`
+
+Switch indicating whether audit data should be skipped
+
+This parameter requires no value. It is a switch.
+
 #### `--source-env` `-se`
 
 Environment URL or ID of the source environment that is being copied
@@ -293,6 +301,12 @@ Sets Dynamics365 app that needs to be deployed. [passed as comma separated value
 
 [!INCLUDE [admin-create-remarks](includes/admin-create-remarks.md)]
 
+## pac admin create-service-principal
+
+Add AAD Application and SPN to Dynamics365 AAD and configure Dynamics365 to accept the SPN as tenant admin user.
+
+[!INCLUDE [admin-create-service-principal-remarks](includes/admin-create-service-principal-remarks.md)]
+
 ## pac admin delete
 
 Deletes Environment from your tenant
@@ -333,9 +347,9 @@ List all environments from your tenant
 
 ### Optional Parameters
 
-#### `--application-id` `-ai`
+#### `--application` `-a`
 
-List all environments that have specified application installed.
+List all environments that have specified application installed. To specify application, use unique name or id.
 
 #### `--environment` `-env`
 
@@ -495,6 +509,12 @@ Max asynchronous wait time in minutes. Default value is 60 minutes
 
 Optional name of the restored environment.
 
+#### `--skip-audit-data` `-sa`
+
+Switch indicating whether audit data should be skipped
+
+This parameter requires no value. It is a switch.
+
 #### `--source-env` `-se`
 
 Environment URL or ID of the source environment required for restore.
@@ -516,6 +536,44 @@ Environment URL or ID of the target environment required for restore. This would
 
 **Deprecated**: Use `--target-env` instead.
 [!INCLUDE [admin-restore-remarks](includes/admin-restore-remarks.md)]
+
+## pac admin set-backup-retention-period
+
+Takes a manual backup of your environment.
+
+[!INCLUDE [admin-set-backup-retention-period-intro](includes/admin-set-backup-retention-period-intro.md)]
+
+
+### Required Parameters
+
+#### `--backup-retention-period` `-br`
+
+Sets the backup retention period in days as provided. Valid values are: 7, 14, 21, 28.
+
+
+### Optional Parameters
+
+#### `--async` `-a`
+
+Optional boolean argument to run pac verbs asynchronously, defaults to false.
+
+This parameter requires no value. It is a switch.
+
+#### `--environment` `-env`
+
+Environment URL or ID of the Environment that requires backup.
+
+#### `--environment-id` `-id`
+
+**Deprecated**: Use `--environment` instead.
+#### `--max-async-wait-time` `-wt`
+
+Max asynchronous wait time in minutes. Default value is 60 minutes
+
+#### `--url` `-u`
+
+**Deprecated**: Use `--environment` instead.
+[!INCLUDE [admin-set-backup-retention-period-remarks](includes/admin-set-backup-retention-period-remarks.md)]
 
 ## pac admin status
 

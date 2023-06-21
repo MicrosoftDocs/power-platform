@@ -22,7 +22,7 @@ When your bot hands off a conversation, it shares the full history of the conver
 
 You can also enable single sign-on (SSO) to allow chatbots to sign users in if they're logged in to the page where the bot is deployed. For more information, see [Configure single sign-on](configure-sso.md) and [Pass authentication token to bot during single sign-on in live chat](/dynamics365/customer-service/pass-auth-token-sso-live-chat).
 
-# [Preview](#tab/preview)
+# [Web app](#tab/webApp)
 
 ## Prerequisites
 
@@ -136,7 +136,7 @@ The following extensions aren't required to hand-off to Omnichannel for Customer
 
 Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
 
-# [Web app](#tab/classic)
+# [Classic](#tab/classic)
 
 ## Prerequisites
 

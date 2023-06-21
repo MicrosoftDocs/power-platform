@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2023
+ms.date: 06/06/2023
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -19,9 +19,9 @@ search.audienceType:
 > 
 > We have a new flow that collects audit log events, which is part of the **Center of Excellence - Core Components** solution. This new flow uses an HTTP connector. Learn more: [Collect audit logs using an HTTP action](setup-auditlog-http.md)
 
-The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The flow uses a custom connector to connect to the Audit Log. In the following instructions, you'll set up the custom connector and configure the flow.
+The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The flow uses a custom connector to connect to the Audit Log. In the following instructions, you set up the custom connector and configure the flow.
 
-The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
+The Center of Excellence (CoE) Starter Kit works without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
 > [!IMPORTANT]
 > Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup in this article. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
@@ -41,7 +41,7 @@ The Office 365 Management APIs use Azure Active Directory (Azure AD) to provide 
 
 ### Create an Azure AD app registration for the Office 365 Management API
 
-Using these steps, you'll set up an Azure AD app registration that will be used in a custom connector and Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)
+Using these steps, you set up an Azure AD app registration that is used in a custom connector and Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
@@ -87,7 +87,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-1. Go to [Power Apps](https://make.powerapps.com) > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
+1. Go to [Power Apps](https://make.powerapps.com) > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector is listed here; it has been imported with the core components solution.
 1. Select **Edit**.
 
     ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
@@ -156,7 +156,7 @@ Go back to the custom connector to set up a connection to the custom connector a
    ![Custom connector Start Subscription.](media/coe43.png "Custom connector Start Subscription")
 
 1. Paste the **directory (tenant) ID** - copied earlier from the **App Registration** overview page in Azure AD - into the **Tenant** field.
-1. Paste the **application (client) ID** into **PublisherIdentifier**.
+1. Paste the **directory (tenant) ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
 
@@ -203,7 +203,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
 1. Select **Save**, and then close the **Flow details** tab.
 
-1. (Optional) Edit the TimeInterval-Unit and TimeInterval-Interval environment variables to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You'll receive an alert from this solution if the Audit Log fails to collect all data with your configured time interval.
+1. (Optional) Edit the TimeInterval-Unit and TimeInterval-Interval environment variables to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You receive an alert from this solution if the Audit Log fails to collect all data with your configured time interval.
 
     | Name | Description |
     |------|---------------|
@@ -229,14 +229,14 @@ Here are some example configurations for these values:
 
 | StartTime-Interval | StartTime-Unit | TimeInterval-Interval | TimeInterval-Unit | TimeSegment-CountLimit | Expectation |
 |--------------------|----------------|-----------------------|-------------------|------------------------|-------------|
-| 1 | day | 1 | hour | 60 | Will create 24 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past 24 hours |
-| 2 | day | 1 | hour | 60 | Will create 48 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past 48 hours |
-| 1 | day | 5 | minute | 300 | Will create 288 child flows, which is within the limit of 300.<br>Each child flow will do the work to pull back 5 minutes of from the past 24 hours |
-| 1 | day | 15 | minute | 100 | Will create 96 child flows, which is within the limit of 100.<br>Each child flow will do the work to pull back 15 minutes of from the past 24 hours |
+| 1 | day | 1 | hour | 60 | Will create 24 child flows, which is within the limit of 60.<br>Each child flow does the work to pull back 1 hour of logs from the past 24 hours |
+| 2 | day | 1 | hour | 60 | Will create 48 child flows, which is within the limit of 60.<br>Each child flow does the work to pull back 1 hour of logs from the past 48 hours |
+| 1 | day | 5 | minute | 300 | Will create 288 child flows, which is within the limit of 300.<br>Each child flow does the work to pull back 5 minutes of from the past 24 hours |
+| 1 | day | 15 | minute | 100 | Will create 96 child flows, which is within the limit of 100.<br>Each child flow does the work to pull back 15 minutes of from the past 24 hours |
 
 ## How to get older data
 
-This solution collects app launches from the moment it's configured, and is not set up to collect historic app launches. Depending on your [Microsoft 365 license](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log), historic data will be available for up to a year using the audit log in Microsoft Purview.
+This solution collects app launches from the moment it's configured, and isn't set up to collect historic app launches. Depending on your [Microsoft 365 license](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log), historic data will be available for up to a year using the audit log in Microsoft Purview.
 You can load historic data into the CoE Starter Kit tables manually. Learn more: [How to import old Audit Logs](https://github.com/microsoft/coe-starter-kit/issues/3040)
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
