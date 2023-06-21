@@ -212,7 +212,7 @@ You can either create a [new key vault and establish a private link connection](
 
 ### Enable the Power Platform enterprise policies service for your Azure subscription
 
-Register Power Platform as a resource provider. You only need to do this task once.
+Register Power Platform as a resource provider. You only need to do this task once for each Azure subscription where your Azure Key vault resides. You need to have access rights to the subscription in order to register the resource provider.
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/) and go to **Subscription** > **Resource providers**.
 1. In the list of **Resource providers**, search for **Microsoft.PowerPlatform**, and **Register** it.
