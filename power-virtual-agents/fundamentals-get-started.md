@@ -72,7 +72,7 @@ There are optional customizations and enhancements you can make before getting y
   
   b. Here you can choose a bot icon to give your bot a personality and represent your business scenarios better. You can select from the pre-populated list if icons or upload a custom icon for your bot. This is the icon used in the chat window when the bot responds.
   
-  c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with bot topics. <!--- link to lesson topics docs page --->
+  c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with bot topics.
   
   d. There are a couple more advanced options to select the solution your bot will be in and the schema name. These are advanced options which can be changed later, but provided upfront for specific customization.
  
