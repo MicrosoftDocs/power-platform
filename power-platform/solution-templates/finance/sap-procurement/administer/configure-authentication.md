@@ -121,7 +121,7 @@ SAP user accounts need to access the `RFC_Metadata` function group and the respe
 | Operations | Access to function modules  |
 |------------|-----------------------------|
 |RFC actions    | `RFC_GROUP_SEARCH` and `DD_LANGU_TO_ISOLA`  |
-|Read Table action   | Either `RFC BBP_RFC_READ_TABLE` `RFC_READ_TABLE` |
+|Read Table action   | Either `RFC BBP_RFC_READ_TABLE` or `RFC_READ_TABLE` |
 |Grant strict minimum access to SAP server for your SAP connection  | `RFC_METADATA_GET` and `RFC_METADATA_GET_TIMESTAMP`|
 
 More information on setup and configuration:
