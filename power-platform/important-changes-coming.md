@@ -686,6 +686,10 @@ supported on Unified Interface. Instead of Silverlight web resources, you must u
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 
+## Gateways for desktop flows are deprecated
+
+Gateways for desktop flows are deprecated. Direct connectivity is the preferred option to run attended and unattended desktop flows on your machine(s). This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+
 ## Canvas apps
 
 See [Important upcoming changes and deprecations in canvas apps](/powerapps/maker/canvas-apps/important-changes-deprecations).
