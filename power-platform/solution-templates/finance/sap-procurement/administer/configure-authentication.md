@@ -96,7 +96,7 @@ More information: [Use Kerberos single sign-on for SSO to SAP BW using CommonCry
 
 ## Step 3: Enable SAP SNC for Azure AD and Windows authentication
 
-The SAP ERP connector supports Azure AD and Windows authentication by enabling SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so secure single sign-on to SAP environments can be established.  The following property guidance helps with setup.
+The SAP ERP connector supports Azure AD and Windows authentication by enabling SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so secure single sign-on to SAP environments can be established. The following property guidance helps with setup.
 
 | Property | Description |
 |---------|---------|
@@ -107,15 +107,16 @@ The SAP ERP connector supports Azure AD and Windows authentication by enabling S
 | SNC Quality of Protection     |  The quality of service used for SNC communication of this particular destination or server. The default value is defined by the back-end system. The maximum value is defined by the security product used for SNC. |
 
 The SAP SNC name for the user must equal the user's Active Directory fully qualified domain name. For example `p:CN=JANEDOE@REDMOND.CORP.CONTOSO.COM` must equal `JANEDOE@REDMOND.CORP.CONTOSO.COM`.
+
 > [!NOTE]
 >
 > Azure AD auth only—the _Active Directory SAP Service Principal_ account must have AES 128 or AES 256 defined on the _msDS-SupportedEncryptionType_ attribute.
 
 ## Step 4: Set up SAP server and user accounts to allow actions
 
-Review [SAP Note 460089 - Minimum authorization profiles for external RFC programs](https://accounts.sap.com/) to learn more about the supported user-account types and the minimum required authorization for each action type, like remote function call (RFC), business application programming interface (BAPI), and intermediate document (IDOC),
+Review [SAP Note 460089 - Minimum authorization profiles for external RFC programs](https://accounts.sap.com/) to learn more about the supported user-account types and the minimum required authorization for each action type, like remote function call (RFC), business application programming interface (BAPI), and intermediate document (IDOC).
 
-SAP user accounts need to access `RFC_Metadata` function group and the respective function modules for the following operations:
+SAP user accounts need to access the `RFC_Metadata` function group and the respective function modules for the following operations:
 
 | Operations | Access to function modules  |
 |------------|-----------------------------|
