@@ -32,6 +32,12 @@ To see your current license usage, select **View license consumption (preview)**
 > [!NOTE]
 > Trial licenses and Developer Plans can be used to license users in Managed Environments, but the restrictions specific to these types of licenses still apply. For example, trial licenses can be used to license users for 30 days, while the Developer Plan can be used to license users for dev/test purposes only in developer environments.
 
+> [!NOTE]
+> Restrictions that apply to Managed Environments will not apply to the Defalt environment. For details on managing or securing the default environment see:
+> https://learn.microsoft.com/en-us/power-platform/guidance/adoption/manage-default-environment
+> https://learn.microsoft.com/en-us/power-platform/guidance/adoption/secure-default-environment
+
+
 
 ### See also
 [Managed Environments overview](managed-environment-overview.md)  <br />
