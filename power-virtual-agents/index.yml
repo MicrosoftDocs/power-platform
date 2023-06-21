@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
-title: Official Microsoft Power Virtual Agents documentation # < 60 chars
+title: Microsoft Power Virtual Agents documentation # < 60 chars
 summary: Discover how to build AI-driven chatbots easily with Power Virtual Agents with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: power-virtual-agents
 
 metadata:
-  title: Microsoft Power Virtual Agents documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Official Microsoft Power Virtual Agents documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: See how Power Virtual Agents can be used to build powerful AI-driven chatbots. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
