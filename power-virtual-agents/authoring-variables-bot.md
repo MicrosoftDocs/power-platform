@@ -4,7 +4,7 @@ description: "Bot variables can be used to store and retrieve information across
 keywords: "PVA"
 ms.date: 03/24/2023
 ms.topic: article
-author: iaanw
+author: KendalBond007
 ms.author: iawilt
 manager: leeclontz
 ms.custom: authoring, ce06122020
@@ -25,7 +25,7 @@ One way to reuse a variable is to [pass the variable between topics](authoring-v
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
+# [Web app](#tab/webApp)
 
 Bot variables apply during a single user session. You specify which variables should be treated as bot variables to distinguish them from topic-level variables.
 
@@ -138,7 +138,8 @@ You can also add the variable to a [custom canvas](customize-default-canvas.md).
         .catch(err => console.error("An error occurred: " + err));
     ```
 
-# [Web app](#tab/web)
+
+# [Classic](#tab/classic)
 
 Bot variables apply during a single user session. You specify which variables should be treated as bot variables to distinguish them from topic-level variables.
 
