@@ -79,7 +79,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
             "disableDataLogging": false
         },
         "catalogSettings": {
-            "powerCatalogAudienceSetting": SpecificAdmin
+            "powerCatalogAudienceSetting": All
         }   
     }
 }
