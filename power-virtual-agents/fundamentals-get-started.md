@@ -62,9 +62,12 @@ In the navigation menu, select **Chatbots** to open the **Chatbots** page and vi
 6. For **What language do you want your bot to speak?**, select the language you want your bot to speak. The langugage dropdown is prepopulated with the browser locale.
 
     :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
-     
+
+<!--- IMAGE NEEDS UPDATE --->
+
 7. (Optional) You can choose to Boost Conversations be providing a URL to generate AI answers from. With a bot name and langauge selected, you can select Create and create your bot.
 
+<!--- LET'S ADD POINTERS AND TEXT FROM THE GPT ANSWERS FEATURE HERE --->
   
 There are optional customizations and enhancements you can make before getting your bot created.
   
@@ -73,6 +76,8 @@ There are optional customizations and enhancements you can make before getting y
   b. Here you can choose a bot icon to give your bot a personality and represent your business scenarios better. You can select from the pre-populated list if icons or upload a custom icon for your bot. This is the icon used in the chat window when the bot responds.
   
   c. You can also choose whether to include the pre-populated lesson topics which provide starter content to familiarize yourself with bot topics.
+
+  <!--- link to lesson topic doc page --->
   
   d. There are a couple more advanced options to select the solution your bot will be in and the schema name. These are advanced options which can be changed later, but provided upfront for specific customization.
  
