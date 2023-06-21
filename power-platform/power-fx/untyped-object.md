@@ -1,5 +1,5 @@
 ---
-title: Untyped object data type (experimental) 
+title: Untyped object data type
 description: Reference information about the untyped object type in Power Fx.
 author: jorisdg
 
@@ -15,13 +15,7 @@ contributors:
   - jorisdg
   - mduelae
 ---
-# Untyped object data type (experimental)
-
-> [!IMPORTANT]
-> - This is an experimental feature.
-> - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview)
-> - The behavior that this article describes is available only when the _ParseJSON function and untyped objects_ experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
-> - Your feedback is very valuable to us - please let us know what you think in the [Power Apps experimental features community forum](https://powerusers.microsoft.com/t5/Power-Apps-Experimental-Features/bd-p/PA_ExperimentalFeatures).
+# Untyped object data type
 
 **Untyped object** is a data type in Power Fx that can hold any data structure, complex or simple. It can't be used directly and requires explicit conversion to a data type. Fields in records in an **untyped object** can be accessed using the dot notation, and existence of fields is only verified at runtime.
 

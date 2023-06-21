@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: snizar007
 ms.author: snizar
-ms.date: 5/15/2023
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,11 +26,19 @@ Power Platform tools that can be installed and launched
 
 |Command|Description|
 |---------|---------|
+|[pac tool admin](#pac-tool-admin)|Launch Power Platform Admin Center for the current environment|
 |[pac tool cmt](#pac-tool-cmt)|Launch Configuration Migration Tool (CMT)|
 |[pac tool list](#pac-tool-list)|List the launchable tools and their local install state and version.|
+|[pac tool maker](#pac-tool-maker)|Launch Power Apps Maker Portal for the current environment|
 |[pac tool pd](#pac-tool-pd)|Launch Package Deployer (PD)|
 |[pac tool prt](#pac-tool-prt)|Launch Plug-in Registration Tool (PRT)|
 
+
+## pac tool admin
+
+Launch Power Platform Admin Center for the current environment
+
+[!INCLUDE [tool-admin-remarks](includes/tool-admin-remarks.md)]
 
 ## pac tool cmt
 
@@ -60,6 +68,12 @@ This parameter requires no value. It is a switch.
 List the launchable tools and their local install state and version.
 
 [!INCLUDE [tool-list-remarks](includes/tool-list-remarks.md)]
+
+## pac tool maker
+
+Launch Power Apps Maker Portal for the current environment
+
+[!INCLUDE [tool-maker-remarks](includes/tool-maker-remarks.md)]
 
 ## pac tool pd
 
