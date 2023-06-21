@@ -1,6 +1,6 @@
 ---
 title: Overview of the role of a Power Platform administrator
-description: "Get started on the Power Apps adoption journey by learning about the role of a Microsoft Power Platform administrator."
+description: "Get started on the adoption journey by learning about the role of a Microsoft Power Platform administrator."
 author: sericks007
 ms.topic: overview
 ms.date: 06/20/2023
