@@ -169,14 +169,18 @@ In Azure, perform the following steps:
    1. If you made changes, select **Save**.
 
    :::image type="content" source="media/cmk-key-vault-purge-protect.png" alt-text="Enable purge protection on the key vault":::
+##### Create RSA keys
 1. Create or import a key that has these properties:
    1. On the **Key Vault** properties pages, select **Keys**.
    1. Select **Generate/Import**.
    1. On the **Create a key** screen set the following values, and then select **Create**.
       - **Options**: **Generate**
       - **Name**: Provide a name for the key
-      - **Key type**: **RSA** or **RSA-HSM**
+      - **Key type**: **RSA**
       - **RSA key size**: **2048**
+
+##### Import HSM-protected keys
+You can use your HSM-protected keys to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](https://learn.microsoft.com/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. See more information on [Supported HSMs](https://learn.microsoft.com/azure/key-vault/keys/hsm-protected-keys#supported-hsms) and how to transfer the supported HSM-key [here](https://learn.microsoft.com/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
 
 #### Encrypt your environment with key from Azure Key Vault with private link (preview)
 
