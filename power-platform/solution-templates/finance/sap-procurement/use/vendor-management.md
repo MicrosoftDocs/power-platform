@@ -36,7 +36,7 @@ There are three options for loading an existing vendor.
 
     1. Select the **funnel icon**. This will open the vendor search screen. Type your search criteria into one or more of the following fields: _Vendor name_, _Street_, _City_, _Country_, or _State_.
     
-       :::image type="content" source="media/vendor-management/vendor-search.png" alt-text="Search for a vendor screen.":::
+       :::image type="content" source="media/vendor-management/vendor-search.png" alt-text="Image shows vendor search screen.":::
     
     1. Select **Search** to see your results.
     
@@ -46,7 +46,7 @@ There are three options for loading an existing vendor.
 
 ### Change a vendor
 
-Once an existing vendor record is loaded to the app, making changes is straightforward.  Select the **Edit** button to toggle into _Change_ mode.
+Once an existing vendor record is loaded to the app, making changes is straightforward. Select the **Edit** button to toggle into _Change_ mode.
 
 #### Edit header
 
@@ -54,30 +54,31 @@ Header information can be edited directly on the main page.
 
 #### Edit purchasing organizations and company codes
 
-1. Select the **Edit** link at the end of a row to edit existing Purchasing Organization and Company Code assignments.
+1. Select the **Edit** link at the end of a row to edit existing purchasing organization and company code assignments.
 
-1. Each _Purchasing Organization_ and _Company Code_ assignment can be edited individually.  Select **Done** to return to the main page with the updates or **Cancel** to return with no changes.
+1. Each _Purchasing Organization_ and _Company Code_ assignment can be edited individually. Select **Done** to return to the main page with the updates or **Cancel** to return with no changes.
 
-1. Select the **+ Add** button to initiate the creation of a new assignment.
-Once a row is selected with the checkbox, the _X Delete_ button appears, that allows for the assignment to be flagged as deleted in SAP.
+1. Select **+ Add** to initiate the creation of a new assignment.
+ 
+Once a row is selected with the checkbox, the _X Delete_ button appears. That allows for the assignment to be flagged as deleted in SAP.
 
 > [!NOTE]
 >
-> Changes will not be finalized in SAP until you Select the **Save** button on the main page.
+> Changes won't be finalized in SAP until you select **Save** on the main page.
 
 #### Phone numbers and email addresses
 
-Phone numbers and email addresses can be maintained in similar fashion to the Purchasing Organization and Company Code assignments, with _Edit_, _+ Add_, and _X Delete_ options available for each entry.
+Phone numbers and email addresses can be maintained in similar fashion to the purchasing organization and company code assignments, with _Edit_, _+ Add_, and _X Delete_ options available for each entry.
 
 #### Save or cancel
 
 Once the changes are completed, the user has the options at the top of the screen to select **Save** or **Cancel**.
 
-Selecting **Save** results in the call of standard functions for vendor update in SAP. The updated vendor record is loaded to the page from SAP.  Selecting **Cancel** discards all changes and the original vendor data is restored to the page.
+Selecting **Save** results in the call of standard functions for vendor update in SAP. The updated vendor record is loaded to the page from SAP. Selecting **Cancel** discards all changes and the original vendor data is restored to the page.
 
 ### Create a vendor
 
-Creating a vendor is straightforward.  Select the **+ Create** button to start a new vendor record.
+Creating a vendor is straightforward. Select **+ Create** to start a new vendor record.
 
 #### Enter header information
 
@@ -85,19 +86,19 @@ Header information can be entered directly on the main page.
 
 #### Add purchasing organizations and company codes
 
-Select the **+ Add** button to initiate the assignment of a new purchasing organization.
+Select **+ Add** to initiate the assignment of a new purchasing organization.
 
-Each purchasing organization and company code assignment is added individually.  Select **Done** to return to the main page with the new assignment or select **Cancel** to return with no changes.
+Each purchasing organization and company code assignment is added individually. Select **Done** to return to the main page with the new assignment or **Cancel** to return with no changes.
 
 #### Add phone numbers and email addresses
 
-Phone numbers and email addresses can be added in similar fashion to the purchasing organization and company code assignments, with **Edit**, **+ Add** and **X Delete** options available for each entry.
+Phone numbers and email addresses can be added in similar fashion to the purchasing organization and company code assignments, with *Edit*, *+ Add* and *X Delete* options available for each entry.
 
 #### Save or cancel changes
 
-Once the changes are completed, the user has the options at the top of the screen to Select **Save** or **Cancel**.
+Once the changes are completed, the user has the options at the top of the screen to select **Save** or **Cancel**.
 
- Selecting **Save** results in the call of standard functions for Vendor creation in SAP.  The saved vendor record is loaded to the page from SAP.  Selecting **Cancel** discards all inputs and the page is restored to its initial state.
+Selecting **Save** results in the call of standard functions for vendor creation in SAP. The saved vendor record is loaded to the page from SAP. Selecting **Cancel** discards all inputs and the page is restored to its initial state.
 
 ## Field mappings
 
