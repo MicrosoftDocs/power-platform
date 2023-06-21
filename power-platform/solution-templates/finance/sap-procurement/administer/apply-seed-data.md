@@ -150,3 +150,4 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 
 - [Overview](../overview.md)
 - [Get started](get-started.md)
+
