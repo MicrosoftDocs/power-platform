@@ -36,20 +36,21 @@ You can manage the menu options for one or more of the following apps that are p
 Managing the menu options enables you to determine which users will be able to view and access specific navigation items in the canvas apps deployed.
 
 You need to have _Data_.
+
 You can store and manage menu items in Dataverse and associate them with configured [Dataverse Group Teams](configure-security-groups.md#create-dataverse-group-teams) to control access and visibility to apps and components.
 
-:::image type="content" source="media/apply-seed-data/sap-admin-menu-items.png" alt-text=" Manage menu options in Dataverse.":::
+:::image type="content" source="media/apply-seed-data/sap-admin-menu-items.png" alt-text="Manage menu options in Dataverse.":::
 
 ### Set up application menus
 
-Follow the steps to set up application menus.
+Follow these steps to set up application menus:
 
 1. Open the _SAP Administrator_ app that was part of the SAP Administrator Base solution.
 1. Go to _Menu Items_.
 1. Select **+New**.
 1. Populate the fields.
 
-To help you set up application menus, a list of the fields with examples and descriptions are provided in the table.
+To help you set up application menus, a list of the fields with examples and descriptions are provided in this table.
 
 | Field | Examples| Description |
 | ----------- | ----------- | ----------- |
@@ -58,12 +59,12 @@ To help you set up application menus, a list of the fields with examples and des
 | Menu Group | "Purchasing" | A logical grouping of menu items. Typically, this is a process domain area. |
 | Order | _1_, _2_, _3_, _4_ | The order in which the menu items should be displayed. |
 | Capability | "Vendors", "Requisitions", "Purchase Orders" | The capability or app that corresponds to each menu item. |
-| Launch URL | "<https://apps.powerapps.com/play/e/2359c141-01e4-ec77-8e6f-7efd2f5c7308/a/7d0062b0-922b-454e-8154-295ef726d54d?tenantId=fe2dcd3b-6648-914a-8c8e-8761944769ce>" | The URL of the corresponding Power App to launch when the menu item is selected. You obtain it by copying the Web link value from the respective app details page. Note, this URL is unique for a given app per environment. |
-| Menu Icon | Purchase Orders Menu Icon | The icon to be displayed with with the menu item in the app. You can select your own or the one that is contained in the SAP Procurement solution located underneath _web resources_. |
+| Launch URL | "<https://apps.powerapps.com/play/e/2359c141-01e4-ec77-8e6f-7efd2f5c7308/a/7d0062b0-922b-454e-8154-295ef726d54d?tenantId=fe2dcd3b-6648-914a-8c8e-8761944769ce>" | The URL of the corresponding app to launch when the menu item is selected. You obtain it by copying the Web link value from the respective app details page. Note, this URL is unique for a given app per environment. |
+| Menu Icon | Purchase Orders Menu Icon | The icon to be displayed with the menu item in the app. You can select your own or the one that is contained in the SAP Procurement solution located underneath _web resources_. |
 
 ## Apply SAP's list of values
 
-SAP requires a constrained _list of values_ on transactions. These values need to be seeded and administered in the apps so they can be bounded to the _combobox_ or _dropdown_ controls.  This enables your users to make selections from the list of available values.
+SAP requires a constrained _list of values_ on transactions. These values need to be seeded and administered in the apps so they can be bound to the _combobox_ or _dropdown_ controls. This enables your users to make selections from the list of available values.
 
 The constrained list of values varies according to what business process is being implemented. Work with your SAP admin and functional analyst to:
 
@@ -74,26 +75,26 @@ The constrained list of values varies according to what business process is bein
 >
 > The _Export to Excel Online_ capability available in the administrator app is the most efficient way to load and maintain these values in bulk.
 
-:::image type="content" source="media/apply-seed-data/sap-admin-list-values.png" alt-text=" Manage list values in SAP Administrator app.":::
+:::image type="content" source="media/apply-seed-data/sap-admin-list-values.png" alt-text="Manage list values in the SAP Administrator app.":::
 
 ### Create and manage list of values
 
 1. Open the _SAP Administrator_ app that was installed as part of the SAP Base solution.
-1. Go to _List of Values_
-1. Select **Export to Excel | Open in Excel Online**
+1. Go to _List of Values_.
+1. Select **Export to Excel | Open in Excel Online**.
 
-:::image type="content" source="media/apply-seed-data/list-value-export.png" alt-text=" Export list values to Excel.":::
+   :::image type="content" source="media/apply-seed-data/list-value-export.png" alt-text="Export list values to Excel.":::
 
-To help you create and manage the list of values, a list of the fields with examples and descriptions are provided in the table.
+   To help you create and manage the list of values, a list of the fields with examples and descriptions are provided in this table.
 
-| Field | Examples| Description |
-| ----------- | ----------- | ----------- |
-| Display Value | "United States", "German", "Mexico" | The localized version of the display value the user will see in combo box app controls. |
-| Language | "en","de","es" | The language code of the display value. The app combo box controls filter appropriate values based upon the user's browser language from the app. More languages can be created by extending the Dataverse choice values. |
-| Value Code | "US","DE","MX" | The language independent code that SAP expects within the API. |
-| Domain | "Country", "State", "Payment Terms" | Constrained value representing the domain which the list of values is mapped to. The app combo box controls filter appropriate values based upon mapped domain. More domains can be added by extending the Dataverse choice values. |
-| Parent Value |  | Allows for parent child relationships of values. For example, specific state/province domain values can be parented to a single country domain value. |
-| Description |  | General description of what the value represents. |
+   | Field | Examples| Description |
+   | ----------- | ----------- | ----------- |
+   | Display Value | "United States", "German", "Mexico" | The localized version of the display value the user will see in combo box app controls. |
+   | Language | "en", "de", "es" | The language code of the display value. The app combo box controls filter the appropriate values based on the user's browser language from the app. More languages can be created by extending the Dataverse choice values. |
+   | Value Code | "US", "DE", "MX" | The language independent code that SAP expects within the API. |
+   | Domain | "Country", "State", "Payment Terms" | Constrained value representing the domain that the list of values is mapped to. The app combo box controls filter the appropriate values based on mapped domain. More domains can be added by extending the Dataverse choice values. |
+   | Parent Value |  | Allows for parent-child relationships of values. For example, specific state/province domain values can be parented to a single country domain value. |
+   | Description |  | General description of what the value represents. |
 
 1. Select **Save** and monitor the import progress
 
