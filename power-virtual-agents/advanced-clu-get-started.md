@@ -21,7 +21,8 @@ This topic includes the step-by-step procedures you need to get started with [co
 Below are the steps to create a bot using an existing CLU model:
 
 1. [Prepare your environment](#prepare-your-environment).
-1. Map CLU intents and entities:
+2. Prepare your CLU project.
+3. Map CLU intents and entities:
    - [Manually map intents](#manually-map-intents).
    - [Manually map entities](#manually-map-entities).
    - [Use the wizard to automatically map CLU intents and entities](#use-the-bulk-tool-wizard).
@@ -57,6 +58,9 @@ Next, switch back to Power Virtual Agents. Changing back to the NLU environment 
 :::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Power Virtual Agents NLU." border="false"::: 
 
 Now that you’ve completed preparing your environment, you’re ready to map intents and entities to CLU model data. 
+
+## Prepare your conversational language understanding project.
+
 ## Map CLU intents and entities to Power Virtual Agents prebuilt data types
 
 You create a new Power Virtual Agents bot by mapping existing topics to CLU intents. You can manually map intents and entities, or for bulk mapping, see [Use the Bulk tool wizard](#use-the-bulk-tool-wizard).
