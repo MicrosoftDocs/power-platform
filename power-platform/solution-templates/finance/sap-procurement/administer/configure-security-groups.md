@@ -50,7 +50,7 @@ More information:
 
 ## Create Dataverse group teams
 
-Admins manage the [menu items](apply-seed-data.md#manage-menu-options) visible to users in the canvas apps directly in the SAP Administrator app. [Dataverse group team](/power-platform/admin/manage-group-teams) membership controls access and visibility to the menu items. [AAD security groups](#create-azure-active-directory-security-groups) govern Dataverse group team membership and ensure one of two options:
+Admins manage the [menu items](apply-seed-data.md#manage-menu-options) visible to users in the canvas apps directly in the SAP Administrator app. [Dataverse group team](/power-platform/admin/manage-group-teams) membership controls access and visibility to the menu items. [Azure AD security groups](#create-azure-active-directory-security-groups) govern Dataverse group team membership and ensure one of two options:
 
 - Users have visibility and access to the appropriate menu items in the canvas apps when they are added to the security group.
 - Users lose visibility and access when they are removed from the security group.
