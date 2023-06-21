@@ -28,17 +28,21 @@ The SAP Vendor Management app lets you do several SAP functions quicker and easi
 
 There are three options for loading an existing vendor.
 
-- Enter the _requisition number_ - If you know the vendor number, you can enter it in the _Search vendor number_ field and select the **arrow** to the right. The vendor record will be retrieved from SAP and displayed in the canvas app.
+- Enter the _requisition number_: If you know the vendor number, you can enter it in the _Search vendor number_ field and select the **arrow** to the right. The vendor record will be retrieved from SAP and displayed in the canvas app.
 
-- Select **recent vendor** - If you have recently worked with a vendor record, you can pick it from a list without having to search.  Select on the **Select recent vendor** drop down list to see a list of vendors that you interacted with previously. Choose one vendor from the list to load that vendor record.
+- Select **recent vendor**: If you have recently worked with a vendor record, you can pick it from a list without having to search. Select the **Select recent vendor** dropdown list to see the vendors that you interacted with previously. Choose one vendor from the list to load that vendor record.
 
-- Search for _vendor_ - If you have not interacted with the vendor before, and you don't know the exact number, you can easily search for it.
+- Search for _vendor_: If you haven't interacted with the vendor before, and you don't know the exact number, you can easily search for it.
 
     1. Select the **funnel icon**. This will open the vendor search screen. Type your search criteria into one or more of the following fields: _Vendor name_, _Street_, _City_, _Country_, or _State_.
-    :::image type="content" source="media/vendor-management/vendor-search.png" alt-text="Search for a vendor screen.":::
+    
+       :::image type="content" source="media/vendor-management/vendor-search.png" alt-text="Search for a vendor screen.":::
+    
     1. Select **Search** to see your results.
+    
     1. Select the vendor from the list of results.
-    1. Select on the vendor number to load the vendor from SAP into the main screen.  If the list is too long, you can filter it to narrow the results by typing data from any field into _Filter vendors_.
+    
+    1. Select the vendor number to load the vendor from SAP into the main screen. If the list is too long, you can filter it to narrow the results by typing data from any field into _Filter vendors_.
 
 ### Change a vendor
 
