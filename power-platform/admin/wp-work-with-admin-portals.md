@@ -9,7 +9,7 @@ ms.author: sericks
 ---
 # Work with various admin portals
 
-While the Power Platform admin center enables you to perform most admin tasks, there are other admin centers that you need to be aware of.
+While the Power Platform admin center enables you to perform most Power Platform-related admin tasks, there are other admin centers that you need to be aware of and work with.
 
 |Portal  |Common Tasks  |
 |---------|---------|
