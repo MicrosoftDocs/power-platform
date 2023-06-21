@@ -589,6 +589,26 @@
       "source_path": "power-platform/guidance/coe/release-notes/almhelper-1.1.md",
       "redirect_url": "/power-platform/guidance/alm-accelerator/setup-admin-tasks",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/admin-guide.md",
+      "redirect_url": "/power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/about-flow-guide.md",
+      "redirect_url": "/power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/about-powerbi-guide.md",
+      "redirect_url": "/power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/about-power-virtual-agents.md",
+      "redirect_url": "/power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
     }
   ]
 }

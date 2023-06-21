@@ -1,5 +1,5 @@
 ---
-title: "Working with various admin portals"
+title: "Work with various admin portals"
 description: "Learn which admin portal or admin center to use for common administrative tasks. Many of these tasks can be performed in the Microsoft Power Platform admin center."
 author: sericks007
 ms.component: pa-admin
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 06/20/2023
 ms.author: sericks
 ---
-# Working with various admin portals
+# Work with various admin portals
 
 While the Power Platform admin center enables you to perform most admin tasks, there are other admin centers that you need to be aware of.
 
