@@ -435,7 +435,6 @@
             - name: Security and governance considerations
               href: governance-considerations.md
             - name: Configure security for Dataverse
-              expanded: true
               items:
                 - name: Dataverse security
                   href: wp-security.md
@@ -527,66 +526,66 @@
                       href: manage-encryption-key.md
             - name: Security FAQs
               href: security/faqs.md
-        - name: Manage users
-          items:
-            - name: Overview of user security
-              href: grant-users-access.md
-            - name: View active users
-              href: admin-view-user-licenses.md
-            - name: Create users
-              href: create-users.md
-            - name: Assign licenses
-              href: assign-licenses.md
-            - name: Assign security roles
+            - name: Manage users
               items:
-                - name: About security roles and privileges
-                  href: security-roles-privileges.md
+                - name: Overview of user security
+                  href: grant-users-access.md
+                - name: View active users
+                  href: admin-view-user-licenses.md
+                - name: Create users
+                  href: create-users.md
+                - name: Assign licenses
+                  href: assign-licenses.md
                 - name: Assign security roles
-                  href: assign-security-roles.md
-                - name: Opt-out of automatic license-based user roles management
-                  href: opt-out-automatic-license.md
-                - name: Use service admin roles to manage your tenant
-                  href: use-service-admin-role-manage-tenant.md
-                - name: Miscellaneous privileges
-                  href: miscellaneous-privileges.md
-                - name: Privacy-related privileges
-                  href: privacy-related-privileges.md
-                - name: Create or edit a security role
-                  href: create-edit-security-role.md
-                - name: Copy a security role
-                  href: copy-security-role.md
-            - name: Manage application users
-              href: manage-application-users.md
-            - name: Delete users
-              href: delete-users.md
-            - name: Reset a user's password
-              href: reset-users-password.md
-            - name: Assign service admin role to users
-              href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
-            - name: Add users to an environment
-              href: add-users-to-environment.md
-            - name: Configure user security to resources
-              href: database-security.md
-            - name: Configure user access to an environment
-              href: control-user-access.md
-            - name: View user profile
-              href: /powerapps/user/view-your-user-profile
-            - name: Create an administrative user
-              href: prevent-elevation-security-role-privilege.md
-            - name: Troubleshoot common user access issues
-              href: troubleshooting-user-needs-read-write-access-organization.md
-            - name: Manage user account synchronization
-              href: manage-user-account-synchronization.md
-            - name: Hierarchy security to control access
-              href: hierarchy-security.md
-            - name: Add or remove sales territory members
-              href: add-remove-territory-members.md
-            - name: User session management
-              href: user-session-management.md
-            - name: Conditional access with Azure AD
-              href: restrict-access-online-trusted-ip-rules.md
-            - name: B2B collaboration with Azure AD
-              href: invite-users-azure-active-directory-b2b-collaboration.md
+                  items:
+                    - name: About security roles and privileges
+                      href: security-roles-privileges.md
+                    - name: Assign security roles
+                      href: assign-security-roles.md
+                    - name: Opt-out of automatic license-based user roles management
+                      href: opt-out-automatic-license.md
+                    - name: Use service admin roles to manage your tenant
+                      href: use-service-admin-role-manage-tenant.md
+                    - name: Miscellaneous privileges
+                      href: miscellaneous-privileges.md
+                    - name: Privacy-related privileges
+                      href: privacy-related-privileges.md
+                    - name: Create or edit a security role
+                      href: create-edit-security-role.md
+                    - name: Copy a security role
+                      href: copy-security-role.md
+                - name: Manage application users
+                  href: manage-application-users.md
+                - name: Delete users
+                  href: delete-users.md
+                - name: Reset a user's password
+                  href: reset-users-password.md
+                - name: Assign service admin role to users
+                  href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
+                - name: Add users to an environment
+                  href: add-users-to-environment.md
+                - name: Configure user security to resources
+                  href: database-security.md
+                - name: Configure user access to an environment
+                  href: control-user-access.md
+                - name: View user profile
+                  href: /powerapps/user/view-your-user-profile
+                - name: Create an administrative user
+                  href: prevent-elevation-security-role-privilege.md
+                - name: Troubleshoot common user access issues
+                  href: troubleshooting-user-needs-read-write-access-organization.md
+                - name: Manage user account synchronization
+                  href: manage-user-account-synchronization.md
+                - name: Hierarchy security to control access
+                  href: hierarchy-security.md
+                - name: Add or remove sales territory members
+                  href: add-remove-territory-members.md
+                - name: User session management
+                  href: user-session-management.md
+                - name: Conditional access with Azure AD
+                  href: restrict-access-online-trusted-ip-rules.md
+                - name: B2B collaboration with Azure AD
+                  href: invite-users-azure-active-directory-b2b-collaboration.md
         - name: Analytics
           items:
             - name: Dataverse analytics
@@ -673,7 +672,6 @@
               href: logging-power-automate.md
             - name: Power Platform connector activity logging (preview)
               href: connector-events-power-platform.md
-
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
             - name: Manage Dataverse auditing
