@@ -96,23 +96,23 @@ The constrained list of values varies according to what business process is bein
    | Parent Value |  | Allows for parent-child relationships of values. For example, specific state/province domain values can be parented to a single country domain value. |
    | Description |  | General description of what the value represents. |
 
-1. Select **Save** and monitor the import progress
+1. Select **Save** and monitor the import progress.
 
 More information: [Open your app data in Excel Online](/power-apps/user/export-to-excel-online)
 
 > [!NOTE]
-> If your requirements require more Domains, extend the **SAP List of Value** Dataverse entity by adding possible values to the Domain choices list.
+> If your requirements call for more domains, extend the **SAP List of Value** Dataverse entity by adding possible values to the domain choices list.
 
 > [!TIP]
-> When a value is no longer in use, it is best practice to **deactivate** a _list-of-value_ record rather than delete it. The app _combo box_ controls will only show _Active_ status values for selections going forward.
+> When a value is no longer in use, a best practice is to **deactivate** a _list-of-value_ record rather than delete it. The app _combo box_ controls will only show _Active_ status values for selections going forward.
 
 ## String localization administration
 
-All strings in the canvas apps are defaulted to English. However, the canvas apps are localization ready. This means, all _Text_, _Accessible Label_, _Tool Tip_, _HintText_, _InputPlaceHolderText_ and _Notifications_ have Power-Fx functions built in to first check to see if a localized string is present for the user's logged in browser language code. These strings are administrated and maintained via the _SAP Solution Administrator_ app. The most efficient way to load and maintain these values is by using the _Export to Excel Online_ capability available in the administrator app in bulk rather than manually entering each one
+All strings in the canvas apps are defaulted to English. However, the canvas apps are localization ready. This means all _Text_, _Accessible Label_, _Tool Tip_, _HintText_, _InputPlaceHolderText_, and _Notifications_ have Power Fx functions built in to check whether a localized string is present for the user's logged-in browser language code. These strings are administered and maintained via the _SAP Solution Administrator_ app. The most efficient way to load and maintain these values is by using the _Export to Excel Online_ capability available in the administrator app in bulk rather than manually entering each one.
 
 More information: [Localization and global app support](extend-canvas-apps.md#localization-and-global-app-support)
 
-:::image type="content" source="media/apply-seed-data/sap-localizations.png" alt-text=" Manage SAP string localizations.":::
+:::image type="content" source="media/apply-seed-data/sap-localizations.png" alt-text="Manage SAP string localizations.":::
 
 ### Create localization strings
 
@@ -120,22 +120,22 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 1. Go to _Localizations_.
 1. Select **Export to Excel | Open in Excel Online**.
 
-:::image type="content" source="media/apply-seed-data/export-sap-localizations.png" alt-text=" Export SAP string localizations to Excel.":::
+   :::image type="content" source="media/apply-seed-data/export-sap-localizations.png" alt-text="Export SAP string localizations to Excel.":::
 
 1. Create or update rows with the following attributes:
 
-| Field | Examples| Description |
-| ----------- | ----------- | ----------- |
-| English Value | _Cancel_ | The English version of the string which serves as the _string key_ that the application will always look up to see if there is a corresponding localized value to display. |
-| Language | _de_ | The language ISO code of the display value. The apps will automatically look up if there are localized strings to display based upon the user's browser language code. |
-| Localized Value | _Abbrechen_ | The localized string value to display for the given English value. |
-| String Type | _Label_ | Not required, but helps categorize what control/property the string is noting that one localization entry can support multiple property types so just choose the primary property type in that situation. |
+   | Field | Examples| Description |
+   | ----------- | ----------- | ----------- |
+   | English Value | _Cancel_ | The English version of the string that serves as the _string key_ that the application will always look up to see if there's a corresponding localized value to display. |
+   | Language | _de_ | The language ISO code of the display value. The apps will automatically look up to see if there are localized strings to display based upon the user's browser language code. |
+   | Localized Value | _Abbrechen_ | The localized string value to display for the given English value. |
+   | String Type | _Label_ | Not required, but helps categorize what control/property the string is, noting that one localization entry can support multiple property types so just choose the primary property type in that situation. |
 
 > [!NOTE]
-> List of Values localizations are not impacted by these strings due to how combo box items behave much differently than standard strings. Refer to the _List of values_ section to administrate localized drop down values.
+> List of Values localizations are not impacted by these strings because combo box items behave differently than standard strings. Refer to the _List of values_ section to administer localized dropdown values.
 
 > [!TIP]
-> A [**.CSV file available on GitHub**](https://aka.ms/SAPProcurementLocalizationStrings) contains all the app default English strings. You can import the .CSV file into your environment using the [_**Import data**_](/power-apps/user/import-data) capability that is part of the SAP Administrator app. Although not required for English-only deployments, importing this file helps you quickly identify the localization strings that you need to prepare for your required language.
+> A [**CSV file available on GitHub**](https://aka.ms/SAPProcurementLocalizationStrings) contains all the app default English strings. You can import the CSV file into your environment using the [_**Import data**_](/power-apps/user/import-data) capability that is part of the SAP Administrator app. Although not required for English-only deployments, importing this file helps you quickly identify the localization strings that you need to prepare for your required language.
 >
 > To further accelerate the string localization creation process, create a cloud flow to trigger off of Dataverse English imported localization records selected in the SAP Administrator app. This flow can use _AI Builder_ action steps to automatically translate the English records to your target language and directly load them into the _SAP Localizations_ table.
 >
