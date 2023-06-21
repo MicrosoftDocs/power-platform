@@ -107,6 +107,26 @@ What content goes here???
 
 See [Frequently asked questions about Power Automate licensing](power-automate-licensing/faqs.md).
 
+### Power Automate RPA add-on
+
+#### How can I apply unattended RPA add-ons to my flows?
+
+Follow these steps to apply unattended RPA add-ons for your flows.
+
+1. The tenant admin must purchase or get a trial version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
+  
+   ![Get unattended add-ons.](./media/RPA-license/unattended-license-M365.JPG)
+  
+1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
+  
+   ![Manage unattended add-ons.](./media/RPA-license/unattended-license-manage.png)
+  
+1. Makers can now run unattended desktop flows within the environment that has the unattended capacity.
+
+> [!NOTE]
+> The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them.
+> Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
+
 ## Power Virtual Agents
 What content goes here???
 
@@ -529,36 +549,6 @@ A list of add-ons applicable to all standalone Power Apps and Power Automate pla
 > Effective October 12, 2022, Power Apps portals is Power Pages. More information: [Microsoft Power Pages is now generally available (blog)](https://aka.ms/PPagesIgnite22)
 
 See [Power Pages](#power-pages).
-
-
-
-
-## Power Automate RPA add-on
-
-### How can I apply unattended RPA add-ons to my flows?
-
-Follow these steps to apply unattended RPA add-ons for your flows.
-
-1. The tenant admin must purchase or get a trial version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
-  
-   ![Get unattended add-ons.](./media/RPA-license/unattended-license-M365.JPG)
-  
-1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
-  
-   ![Manage unattended add-ons.](./media/RPA-license/unattended-license-manage.png)
-  
-1. Makers can now run unattended desktop flows within the environment that has the unattended capacity.
-
-> [!NOTE]
-> The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them.
-> Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
-
-
-
-
-
-
-
 
 ## Trial Licenses
 
