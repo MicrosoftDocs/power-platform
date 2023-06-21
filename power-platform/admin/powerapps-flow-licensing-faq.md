@@ -2,11 +2,11 @@
 title: Power Platform licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder"
 ms.topic: conceptual
-ms.date: 10/12/2022
+ms.date: 06/21/2023
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -15,7 +15,7 @@ search.audienceType:
 
 We have found some common questions on licensing and plan options. We’ve included several here with their answers. For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-## General licensing questions
+## Power Platform product licensing
 
 ### How is Microsoft Power Apps and Power Automate licensed? 
 
@@ -100,253 +100,15 @@ API limits are also applicable to application users, non-interactive users and a
 
 More information is available [here](./api-request-limits-allocations.md).
 
-## Trial Licenses
-
-### How long is the free trial period?
-
-Free trials for Microsoft Power Apps last 30 days. For Power Automate, they're available for 90 days.
-
-### Is there a way to develop my Microsoft Power Apps and Power Automate skills for more than 90 days?
-
-Yes, with the Power Apps Developer Plan you get a free environment for individual use with functionality including the Dataverse. In this environment you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Developer Plan isn't intended for production use.
-
-[Learn more](https://powerapps.microsoft.com/pricing/).
-
-### How do I convert my trial environment to a production environment?
-
-More information is available [here](./trial-environments.md).
-
-### Where can I find more information about trial environments?
-
-For more information about trial environments in Power Apps read this [topic](./trial-environments.md).
-
-## Microsoft 365
-
-### What are Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications?
-
-Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications.
-
-Effective October 1, 2019, the SQL, Azure, and Dynamics 365 connectors listed below will be reclassified from Standard to Premium. Non-Microsoft connectors that had previously been classified as standard connectors will still be available to Microsoft 365 users. A standalone Power Apps or Power Automate plan license is required to access all Premium, on-premises and custom connectors.
-
-Premium connectors list at October 2019 (will expand over time):
-- Azure Application Insights  
-- Azure Automation  
-- Azure Blob Storage  
-- Azure Container  
-- Azure Cosmos  
-- Azure Data Factory  
-- Azure Data Lake  
-- Azure DevOps  
-- Azure Event Grid  
-- Azure Event Grid Publish  
-- Azure File Storage  
-- Azure IoT Central  
-- Azure Kusto  
-- Azure Log Analytics  
-- Azure Log Analytics Data Collector  
-- Azure Queues  
-- Azure Resource Manager  
-- Azure SQL  
-- Azure Synapse Analytics 
-- Azure Table Storage  
-- Dynamics 365  
-- Dynamics 365 Customer Insights  
-- Dynamics 365 Finance & Operations  
-- Dynamics 365 Sales Insights  
-- Dynamics 365 Business Central  
-- Dynamics 365 Business Central (on-premises)  
-- Dynamics NAV  
-- Event Hubs  
-- Service Bus  
-- SQL Server
-
-Power Automate plan-based limits on trigger frequency and the number of runs allocated to a tenant per month are being removed.
-
-Power Apps and Power Automate usage will be subject to service limits described [here](./api-request-limits-allocations.md). Per user service limits provide capacity assurance for users and alleviate the risk of one user exhausting the tenant wide quota.
-
-### How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct 1, 2019? Will my existing apps and Power Automate workflows continue to work?
-
-Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Microsoft 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Microsoft 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.
-
-In addition, apps and flows created prior to October 1, 2019 that are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors.
-
-The extended transition period allows for using the connectors listed above but it doesn't allow these connectors to use gateways. Gateways were a premium capability before the transition and they continue to be a premium capability.
-
-Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector doesn't provide Dataverse capacity. Dataverse capacity is a prerequisite for Power Apps and Power Automate workflows to use Dataverse. 
-
-### How many apps I can run with Microsoft 365 plans?
-
-There's no limit on the number of applications. Customers can continue to run standalone apps to extend and customize Microsoft 365 using standard connectors. 
-
-## Dynamics 365
-
-### What are Microsoft Power Apps and Power Automate use rights for Dynamics 365 applications?
-
-Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications.
-
-Effective October 1, 2019, there are certain changes made to use rights that are listed below:
-
-Power Apps use rights with Dynamics 365 licenses: Dynamics 365 *Enterprise* licenses will no longer include general purpose Power Apps capabilities. Dynamics 365 Enterprise users will continue to be able to run apps and portals that extend and customize the licensed Dynamics 365 application, as long as those apps and portals are located in the same environment as their licensed Dynamics 365 application. Custom apps or portals outside of the environment will require a standalone Power Apps license.
-
-Power Automate use rights with Dynamics 365 licenses: Dynamics 365 licenses will no longer include general purpose Power Automate capabilities. Power Automate flows will need to map to licensed Dynamics 365 application context - Power Automate flows should trigger from OR connect to data sources within use rights of licensed Dynamics 365 application(s). Use of standalone flows will require a Power Automate license.
-
-### Can I connect to Microsoft Dynamics for finance and operations apps?
-
-Yes, you can use the Dynamics 365 finance and operations apps connector to build canvas apps using this data.
+## Power Apps
+What content goes here???
 
 ## Power Automate
 
 See [Frequently asked questions about Power Automate licensing](power-automate-licensing/faqs.md).
 
-## Dataverse
-
-### What Dataverse capacity is included with the Power Apps and Power Automate plans?
-
-Every tenant with a Power Apps license gets default capacity. In addition, for each license there's additional capacity (pooled) added to the tenant.
-
-
-| **Power Apps capacity Limits**         | **Per license entitlement (Power Apps per app plan)** | **Per license entitlement (Power Apps per user plan)** |
-|---------------------------------------|------------------------------------------------------|-------------------------------------------------------|
-| Dataverse Database Capacity | \+ 50 MB                                             | \+ 250 MB                                             |
-| Dataverse Log Capacity      | \+ 0                                                 | \+ 0                                                  |
-| Dataverse File Capacity     | \+ 400 MB                                            | \+ 2 GB                                               |
-
-Since flows, as well as certain Power Automate features like approvals, run inside of the Dataverse, every tenant with a Power Automate license gets default capacity. In addition, for each per-user or per-flow license there is additional capacity added to the tenant.
-
-
-| **Power Automate capacity Limits**    | **+ Per user** | **+ Per flow** |
-|---------------------------------------|----------------|----------------|
-| Dataverse Database Capacity | \+ 250 MB       | \+ 50 MB       |
-| Dataverse Log Capacity      | \+ 0           | \+ 0           |
-| Dataverse File Capacity     | \+ 2 GB      | \+ 200 MB      |
-
-## Dataverse for Teams
-
-Here is a list of Microsoft Dataverse for Teams licensing FAQs; for more information about Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md).
-
-### Are the existing Microsoft Power Platform use rights included with Microsoft 365 licenses changing?
-
-To deliver a comprehensive low-code extensibility platform for Microsoft Teams, Microsoft Power Platform capabilities available as part of select Microsoft 365 subscriptions are expanding with the introduction of Dataverse for Teams.
-
-Dataverse for Teams is a built-in flexible datastore that provides data storage and a one-click solution for (app/chatbot) deployment in Teams. With the addition of Dataverse for Teams:
-- Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams. This includes using custom [APIs built using Azure API Management](/azure/api-management/export-api-power-platform). 
--	Additionally, Power Virtual Agents capabilities are being introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams.
-
-The existing Microsoft Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
-
-### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
-
-Yes. With Dataverse for Teams, users now can build flows using Power Automate portal and that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
-
-### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
-
-Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
-
-### How is Dataverse for Teams environment created? 
-
-Creation of Dataverse for Teams environments isn't available from the Power Platform admin center. Creation of new Dataverse for Teams environments will only be possible from within Teams. 
-
-### Can Dataverse for Teams be used outside of Teams?
-
-Dataverse for Teams is designed to work in the Teams client across web, desktop and mobile. If you’d want to use Dataverse for Teams outside of Teams, you must upgrade your environment to Dataverse. 
-
-### Is there a limit to Dataverse for Teams capacity? How many Dataverse for Teams environments can be created in a tenant?  
-
-Each Dataverse for Teams environment uniquely maps (1:1) to a Teams team and can store up to 1,000,000 records based on typical usage (enforced as 2 GB relational database storage per Dataverse for Teams environment). For details on service limits, including the tenant-level capacity limits associated with Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md). 
-
-### Can we control who can create environments with Dataverse for Teams?
-
-Teams governs who can create and join a Team. The environment is created for a team when an owner or member tries to create an application in it.
-
-### Can a Dataverse for Teams environment be deleted?
-A Dataverse for Teams environment is deleted when the associated Team is deleted.
-
-### How does the capacity enforcement work for Dataverse for Teams environments?
-
-When the environment capacity limits are reached (2 GB per environment) new solutions (apps, chatbots, flows) can't be created or installed in that specific Dataverse for Teams environment.
-
-When the tenant capacity service limits are reached (grows with the # of eligible Microsoft 365 USLs in the tenant as explained [here](./about-teams-environment.md):
-
--	New apps, chatbots, flows, or tables can't be created or installed in any Dataverse for Teams environment. 
--	New Dataverse for Teams environments can't be created in the tenant 
-
-In both cases:
--	Users who want to create/install new apps, chatbots, flows, or tables in that environment will be notified that the capacity limit is reached, and they need to reduce storage usage or contact their admins.
--	Existing solutions in the environment will continue to work (CRUD allowed). The environments will be able to continue to grow beyond the 2GB limit.  
--	Existing solutions within the environment can be updated.  
--	Certain options within each solution (Power Apps/Power Automate/Power Virtual Agents) will be hidden/grayed out.  
-
-### Can customers with Power Apps, Power Automate, and Power Virtual Agents subscriptions use premium connectors with Dataverse for Teams?  
-Yes. Accessing premium connectors in a specific Dataverse for Teams environment requires users in that environment to be licensed accordingly. 
-
-Example: In a Dataverse for Teams environment, accessing premium connectors in the context of an app requires all users accessing the app to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
- 
-### Can I use AI Builder with Dataverse for Teams?
-No. Tables for AI Builder aren't included in Dataverse for Teams.
-
-### Can I use desktop flows with Dataverse for Teams?
-
-No. Desktop flows aren't supported in Dataverse for Teams.
-
-### Can I use custom connectors in Dataverse for Teams?
-Custom connectors aren't supported in Dataverse for Teams but [support for Azure API Management (API-M)](https://powerapps.microsoft.com/blog/azure-api-management-connector-on-the-power-platform/) will be available later in Dataverse for Teams.
-
-### Can customers purchase more capacity for a Dataverse for Teams environment?
-
-No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2 GB), users who want to create a new app, flow, chatbot, or table in the environment will need to:
-1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in an environment.
-2.	[Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
-
-### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into an environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
-
-This capability isn't available yet, but is included in our roadmap.
-
-### Other than adding capacity, what are the other reasons to upgrade a Dataverse for Teams environment?
-
-[Upgrading](about-teams-environment.md#upgrade-process) an environment from Dataverse for Teams to Dataverse will enable customers to take advantage of additional capacity, capabilities, such as: 
--	Enterprise ALM, data types
--	Support for log and managed data lake
--	Rich access control, auditing
--	Governance and security
-
-> [!NOTE]
-> Accessing an environment with Dataverse requires all users to have a corresponding standalone Microsoft Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
-
-### Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
-No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Dataverse capabilities with Microsoft 365 licenses](pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses) for more details on the feature.
-
-> [!NOTE]
-> There is a service plan called *Dataverse for Teams* that is related to the Dataverse for Teams capabilities. This service plan is used by our platform for granting customer tenants Dataverse for Teams storage capacity and should not be deactivated.
-
-### Is geo migration supported for Dataverse for Teams environments?
-Geo migration isn't supported for Dataverse for Teams environments.
-
-## Add-ons
-
-### What add-ons are available to the Power Apps and Power Automate plans?
-
-A list of add-ons applicable to all standalone Power Apps and Power Automate plans are listed below:
-
-- New **Power Apps Portals login capacity add-on** and **Portals page view capacity add-on** for external users of Power Apps Portals. External users are those outside of your organization who sign in with various identities such as LinkedIn, Microsoft Account, other commercial sign-in providers, or anonymously.
-
-  - Power Apps Portals log in capacity add-ons (various volume tiers start from $200 per 100 logins per month)
-
-  - Power Apps Portals page view capacity add-on (100,000 anonymous page views for $100 per month)
-
-- New **Power Apps and Power Automate capacity add-on** increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
-
-- Dataverse Database Capacity (1 GB) $40 per month
-
-- Dataverse File Capacity (1 GB) $2 per month
-
-- Dataverse Log Capacity (1 GB) $10 per month
-
-## Portals
-
-> [!NOTE]
-> Effective October 12, 2022, Power Apps portals is Power Pages. More information: [Microsoft Power Pages is now generally available (blog)](https://aka.ms/PPagesIgnite22)
-
-See [Power Pages](#power-pages).
+## Power Virtual Agents
+What content goes here???
 
 ## Power Pages
 
@@ -580,6 +342,129 @@ Power Apps portals login and page view subscriptions will be available for purch
 
 Power Pages are licensed at a monthly rate that is based on a customer's anticipated user volume. They aren't accumulated as individual assets and wouldn't carry forward month to month.
 
+## Dataverse
+
+### What Dataverse capacity is included with the Power Apps and Power Automate plans?
+
+Every tenant with a Power Apps license gets default capacity. In addition, for each license there's additional capacity (pooled) added to the tenant.
+
+
+| **Power Apps capacity Limits**         | **Per license entitlement (Power Apps per app plan)** | **Per license entitlement (Power Apps per user plan)** |
+|---------------------------------------|------------------------------------------------------|-------------------------------------------------------|
+| Dataverse Database Capacity | \+ 50 MB                                             | \+ 250 MB                                             |
+| Dataverse Log Capacity      | \+ 0                                                 | \+ 0                                                  |
+| Dataverse File Capacity     | \+ 400 MB                                            | \+ 2 GB                                               |
+
+Since flows, as well as certain Power Automate features like approvals, run inside of the Dataverse, every tenant with a Power Automate license gets default capacity. In addition, for each per-user or per-flow license there is additional capacity added to the tenant.
+
+
+| **Power Automate capacity Limits**    | **+ Per user** | **+ Per flow** |
+|---------------------------------------|----------------|----------------|
+| Dataverse Database Capacity | \+ 250 MB       | \+ 50 MB       |
+| Dataverse Log Capacity      | \+ 0           | \+ 0           |
+| Dataverse File Capacity     | \+ 2 GB      | \+ 200 MB      |
+
+## Dataverse for Teams
+
+Here is a list of Microsoft Dataverse for Teams licensing FAQs; for more information about Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md).
+
+### Are the existing Microsoft Power Platform use rights included with Microsoft 365 licenses changing?
+
+To deliver a comprehensive low-code extensibility platform for Microsoft Teams, Microsoft Power Platform capabilities available as part of select Microsoft 365 subscriptions are expanding with the introduction of Dataverse for Teams.
+
+Dataverse for Teams is a built-in flexible datastore that provides data storage and a one-click solution for (app/chatbot) deployment in Teams. With the addition of Dataverse for Teams:
+- Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams. This includes using custom [APIs built using Azure API Management](/azure/api-management/export-api-power-platform). 
+-	Additionally, Power Virtual Agents capabilities are being introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams.
+
+The existing Microsoft Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
+
+### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
+
+Yes. With Dataverse for Teams, users now can build flows using Power Automate portal and that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
+
+### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
+
+Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+### How is Dataverse for Teams environment created? 
+
+Creation of Dataverse for Teams environments isn't available from the Power Platform admin center. Creation of new Dataverse for Teams environments will only be possible from within Teams. 
+
+### Can Dataverse for Teams be used outside of Teams?
+
+Dataverse for Teams is designed to work in the Teams client across web, desktop and mobile. If you’d want to use Dataverse for Teams outside of Teams, you must upgrade your environment to Dataverse. 
+
+### Is there a limit to Dataverse for Teams capacity? How many Dataverse for Teams environments can be created in a tenant?  
+
+Each Dataverse for Teams environment uniquely maps (1:1) to a Teams team and can store up to 1,000,000 records based on typical usage (enforced as 2 GB relational database storage per Dataverse for Teams environment). For details on service limits, including the tenant-level capacity limits associated with Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md). 
+
+### Can we control who can create environments with Dataverse for Teams?
+
+Teams governs who can create and join a Team. The environment is created for a team when an owner or member tries to create an application in it.
+
+### Can a Dataverse for Teams environment be deleted?
+A Dataverse for Teams environment is deleted when the associated Team is deleted.
+
+### How does the capacity enforcement work for Dataverse for Teams environments?
+
+When the environment capacity limits are reached (2 GB per environment) new solutions (apps, chatbots, flows) can't be created or installed in that specific Dataverse for Teams environment.
+
+When the tenant capacity service limits are reached (grows with the # of eligible Microsoft 365 USLs in the tenant as explained [here](./about-teams-environment.md):
+
+-	New apps, chatbots, flows, or tables can't be created or installed in any Dataverse for Teams environment. 
+-	New Dataverse for Teams environments can't be created in the tenant 
+
+In both cases:
+-	Users who want to create/install new apps, chatbots, flows, or tables in that environment will be notified that the capacity limit is reached, and they need to reduce storage usage or contact their admins.
+-	Existing solutions in the environment will continue to work (CRUD allowed). The environments will be able to continue to grow beyond the 2GB limit.  
+-	Existing solutions within the environment can be updated.  
+-	Certain options within each solution (Power Apps/Power Automate/Power Virtual Agents) will be hidden/grayed out.  
+
+### Can customers with Power Apps, Power Automate, and Power Virtual Agents subscriptions use premium connectors with Dataverse for Teams?  
+Yes. Accessing premium connectors in a specific Dataverse for Teams environment requires users in that environment to be licensed accordingly. 
+
+Example: In a Dataverse for Teams environment, accessing premium connectors in the context of an app requires all users accessing the app to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
+ 
+### Can I use AI Builder with Dataverse for Teams?
+No. Tables for AI Builder aren't included in Dataverse for Teams.
+
+### Can I use desktop flows with Dataverse for Teams?
+
+No. Desktop flows aren't supported in Dataverse for Teams.
+
+### Can I use custom connectors in Dataverse for Teams?
+Custom connectors aren't supported in Dataverse for Teams but [support for Azure API Management (API-M)](https://powerapps.microsoft.com/blog/azure-api-management-connector-on-the-power-platform/) will be available later in Dataverse for Teams.
+
+### Can customers purchase more capacity for a Dataverse for Teams environment?
+
+No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2 GB), users who want to create a new app, flow, chatbot, or table in the environment will need to:
+1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in an environment.
+2.	[Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
+
+### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into an environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
+
+This capability isn't available yet, but is included in our roadmap.
+
+### Other than adding capacity, what are the other reasons to upgrade a Dataverse for Teams environment?
+
+[Upgrading](about-teams-environment.md#upgrade-process) an environment from Dataverse for Teams to Dataverse will enable customers to take advantage of additional capacity, capabilities, such as: 
+-	Enterprise ALM, data types
+-	Support for log and managed data lake
+-	Rich access control, auditing
+-	Governance and security
+
+> [!NOTE]
+> Accessing an environment with Dataverse requires all users to have a corresponding standalone Microsoft Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
+
+### Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
+No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Dataverse capabilities with Microsoft 365 licenses](pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses) for more details on the feature.
+
+> [!NOTE]
+> There is a service plan called *Dataverse for Teams* that is related to the Dataverse for Teams capabilities. This service plan is used by our platform for granting customer tenants Dataverse for Teams storage capacity and should not be deactivated.
+
+### Is geo migration supported for Dataverse for Teams environments?
+Geo migration isn't supported for Dataverse for Teams environments.
+
 ## AI Builder
 
 ### How is AI Builder licensed?
@@ -618,6 +503,36 @@ AI models available in public preview do not require paid AI Builder capacity. A
 ### Is a trial available for AI Builder?
 Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane.
 
+## Add-ons
+
+### What add-ons are available to the Power Apps and Power Automate plans?
+
+A list of add-ons applicable to all standalone Power Apps and Power Automate plans are listed below:
+
+- New **Power Apps Portals login capacity add-on** and **Portals page view capacity add-on** for external users of Power Apps Portals. External users are those outside of your organization who sign in with various identities such as LinkedIn, Microsoft Account, other commercial sign-in providers, or anonymously.
+
+  - Power Apps Portals log in capacity add-ons (various volume tiers start from $200 per 100 logins per month)
+
+  - Power Apps Portals page view capacity add-on (100,000 anonymous page views for $100 per month)
+
+- New **Power Apps and Power Automate capacity add-on** increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
+
+- Dataverse Database Capacity (1 GB) $40 per month
+
+- Dataverse File Capacity (1 GB) $2 per month
+
+- Dataverse Log Capacity (1 GB) $10 per month
+
+## Portals
+
+> [!NOTE]
+> Effective October 12, 2022, Power Apps portals is Power Pages. More information: [Microsoft Power Pages is now generally available (blog)](https://aka.ms/PPagesIgnite22)
+
+See [Power Pages](#power-pages).
+
+
+
+
 ## Power Automate RPA add-on
 
 ### How can I apply unattended RPA add-ons to my flows?
@@ -637,5 +552,106 @@ Follow these steps to apply unattended RPA add-ons for your flows.
 > [!NOTE]
 > The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them.
 > Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
+
+
+
+
+
+
+
+
+## Trial Licenses
+
+### How long is the free trial period?
+
+Free trials for Microsoft Power Apps last 30 days. For Power Automate, they're available for 90 days.
+
+### Is there a way to develop my Microsoft Power Apps and Power Automate skills for more than 90 days?
+
+Yes, with the Power Apps Developer Plan you get a free environment for individual use with functionality including the Dataverse. In this environment you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Developer Plan isn't intended for production use.
+
+[Learn more](https://powerapps.microsoft.com/pricing/).
+
+### How do I convert my trial environment to a production environment?
+
+More information is available [here](./trial-environments.md).
+
+### Where can I find more information about trial environments?
+
+For more information about trial environments in Power Apps read this [topic](./trial-environments.md).
+
+## Microsoft 365
+
+### What are Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications?
+
+Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications.
+
+Effective October 1, 2019, the SQL, Azure, and Dynamics 365 connectors listed below will be reclassified from Standard to Premium. Non-Microsoft connectors that had previously been classified as standard connectors will still be available to Microsoft 365 users. A standalone Power Apps or Power Automate plan license is required to access all Premium, on-premises and custom connectors.
+
+Premium connectors list at October 2019 (will expand over time):
+- Azure Application Insights  
+- Azure Automation  
+- Azure Blob Storage  
+- Azure Container  
+- Azure Cosmos  
+- Azure Data Factory  
+- Azure Data Lake  
+- Azure DevOps  
+- Azure Event Grid  
+- Azure Event Grid Publish  
+- Azure File Storage  
+- Azure IoT Central  
+- Azure Kusto  
+- Azure Log Analytics  
+- Azure Log Analytics Data Collector  
+- Azure Queues  
+- Azure Resource Manager  
+- Azure SQL  
+- Azure Synapse Analytics 
+- Azure Table Storage  
+- Dynamics 365  
+- Dynamics 365 Customer Insights  
+- Dynamics 365 Finance & Operations  
+- Dynamics 365 Sales Insights  
+- Dynamics 365 Business Central  
+- Dynamics 365 Business Central (on-premises)  
+- Dynamics NAV  
+- Event Hubs  
+- Service Bus  
+- SQL Server
+
+Power Automate plan-based limits on trigger frequency and the number of runs allocated to a tenant per month are being removed.
+
+Power Apps and Power Automate usage will be subject to service limits described [here](./api-request-limits-allocations.md). Per user service limits provide capacity assurance for users and alleviate the risk of one user exhausting the tenant wide quota.
+
+### How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct 1, 2019? Will my existing apps and Power Automate workflows continue to work?
+
+Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Microsoft 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Microsoft 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.
+
+In addition, apps and flows created prior to October 1, 2019 that are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors.
+
+The extended transition period allows for using the connectors listed above but it doesn't allow these connectors to use gateways. Gateways were a premium capability before the transition and they continue to be a premium capability.
+
+Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector doesn't provide Dataverse capacity. Dataverse capacity is a prerequisite for Power Apps and Power Automate workflows to use Dataverse. 
+
+### How many apps I can run with Microsoft 365 plans?
+
+There's no limit on the number of applications. Customers can continue to run standalone apps to extend and customize Microsoft 365 using standard connectors. 
+
+## Dynamics 365
+
+### What are Microsoft Power Apps and Power Automate use rights for Dynamics 365 applications?
+
+Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications.
+
+Effective October 1, 2019, there are certain changes made to use rights that are listed below:
+
+Power Apps use rights with Dynamics 365 licenses: Dynamics 365 *Enterprise* licenses will no longer include general purpose Power Apps capabilities. Dynamics 365 Enterprise users will continue to be able to run apps and portals that extend and customize the licensed Dynamics 365 application, as long as those apps and portals are located in the same environment as their licensed Dynamics 365 application. Custom apps or portals outside of the environment will require a standalone Power Apps license.
+
+Power Automate use rights with Dynamics 365 licenses: Dynamics 365 licenses will no longer include general purpose Power Automate capabilities. Power Automate flows will need to map to licensed Dynamics 365 application context - Power Automate flows should trigger from OR connect to data sources within use rights of licensed Dynamics 365 application(s). Use of standalone flows will require a Power Automate license.
+
+### Can I connect to Microsoft Dynamics for finance and operations apps?
+
+Yes, you can use the Dynamics 365 finance and operations apps connector to build canvas apps using this data.
  
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
