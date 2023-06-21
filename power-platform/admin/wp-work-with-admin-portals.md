@@ -1,6 +1,6 @@
 ---
 title: "Work with various admin portals"
-description: "Learn which admin portal or admin center to use for common administrative tasks. Many of these tasks can be performed in the Microsoft Power Platform admin center."
+description: "Learn about various admin portals to use for common administrative tasks while working with Powwer Platform."
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
