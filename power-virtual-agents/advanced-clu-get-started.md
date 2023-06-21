@@ -1,8 +1,8 @@
 ---
-title: Get started with cognitive language understanding (preview)
-description: Create bots that use Azure cognitive language services in Power Virtual Agents.
-keywords: "Cognitive language understanding, PVA, CLU, CLU models"
-ms.date: 5/1/2023
+title: Get started with conversational language understanding integration (preview)
+description: Create bots that use Azure conversational language understanding in Power Virtual Agents.
+keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
+ms.date: 6/6/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -10,14 +10,13 @@ manager: leeclontz
 ms.custom: "advanced-authoring, CLU, ceX"
 ms.service: power-virtual-agents
 ms.collection: virtual-agent
-
 ---
 
-# Get started with cognitive language understanding (preview)
+# Get started with conversational language understanding integration (preview)
 
 [!INCLUDE [Preview disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-This topic includes the step-by-step procedures you need to get started with [cognitive language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
+This topic includes the step-by-step procedures you need to get started with [conversational language understanding (CLU) integration](advanced-clu-integration.md). Let’s get started.
 
 Below are the steps to create a bot using an existing CLU model:
 
@@ -41,13 +40,14 @@ Before you begin, make sure that you have your CLU model project name and deploy
 
 1. Select the **+ (plus sign)** on the to the right of the connector name, to display the authentication settings page. 
 1. Enter the  display name, API key, account key, site URL, then select **Save**. Once Power Apps creates the connector, return to your Power Virtual Agents bot.
-    :::image type="content" source="media/advanced-clu-integration/clu-image3.png" alt-text="Type display name, authentication type, account key, and Site URL." border="false"::: 
+    :::image type="content" source="media/advanced-clu-integration/clu-image3.png" alt-text="Enter display name, authentication type, account key, and Site URL." border="false"::: 
 
 1. To view it in the **Connections** list, right click the **Azure Cognitive Service for Language** connector and select **Edit**. 
-1. Change the display name to something else to distinguish it from other CLU connectors. The name you type to change can be any name you choose.
+1. Change the display name to something else to distinguish it from other CLU connectors. The name you enter to change can be any name you choose.
 1. From the left navigation in Power Virtual Agents, choose **Language**, then in the **NLU Resource** drop-down list, choose [*the name you typed in the last step*], then select **Save**.
 1. In the **Delete example trigger phrases?** option, select **Save snapshot**. This saves the bot content, including trigger phrases and bot dialogues into a backlog file in YAML format.
-    :::image type="content" source="media/advanced-clu-integration/clu-image4.png" alt-text="Click Save snapshot to delete example trigger phrases." border="false"::: 
+
+    :::image type="content" source="media/advanced-clu-integration/clu-image4.png" alt-text="Select Save snapshot to delete example trigger phrases." border="false"::: 
  
 1. Enter your project name and deployment information, and select **Save**.
     :::image type="content" source="media/advanced-clu-integration/clu-image5.png" alt-text="Choose a project and model in Azure Cognitive Service for Language." border="false"::: 
@@ -68,13 +68,13 @@ You create a new Power Virtual Agents bot by mapping existing topics to CLU inte
 
     :::image type="content" source="media/advanced-clu-integration/clu-menu-topics.png" alt-text="Select Topics from the left navigation." border="false"::: 
 
-1. In the *Phrases* section of the Trigger node, click the **Edit** link.
+1. In the *Phrases* section of the Trigger node, select the **Edit** link.
 
     :::image type="content" source="media/advanced-clu-integration/map-intent-phrases.png" alt-text="Select the Edit link." border="false"::: 
 
-1. In the *Add phrases* box, type the name of the CLU intent that you want to map to.
+1. In the *Add phrases* box, enter the name of the CLU intent that you want to map to.
 
-    :::image type="content" source="media/advanced-clu-integration/type-intent-name.png" alt-text="Type CLU intent name." border="false"::: 
+    :::image type="content" source="media/advanced-clu-integration/type-intent-name.png" alt-text="Enter CLU intent name." border="false"::: 
 
     > [!NOTE]
     > The CLU intent name must be typed exactly as stored in the CLU model, including matching case as uppercase and lowercase characters. 
@@ -93,7 +93,7 @@ You create a new Power Virtual Agents bot by mapping existing topics to CLU inte
     :::image type="content" source="media/advanced-clu-integration/clu-image11.png" alt-text="Select + New entity to create a new entity." border="false"::: 
 
 1.	In the **New entity** pane, Add a *name, description* (optional), and *Data Type* for your entity.
-    :::image type="content" source="media/advanced-clu-integration/clu-image12.png" alt-text="Type in name, description, and data type for your new entity." border="false"::: 
+    :::image type="content" source="media/advanced-clu-integration/clu-image12.png" alt-text="Enter the name, description, and data type for your new entity." border="false"::: 
  
 1.	To access CLU prebuilt entities, from the Data Type drop-down menu, select **From sample data**, and choose one of the CLU prebuilt JSON code snippets.  
 1.	(Optional) If you want to import JSON schema from a sample file, choose **Get schema from sample JSON** to access the external file. 
@@ -114,17 +114,17 @@ Begin by uploading your CLU model data file and automatically map CLU intents to
     :::image type="content" source="media/advanced-clu-integration/clu-image9.png" alt-text="Review your selection and then select Save." border="false"::: 
 
 1.	(Optional) For those intents that are not mapped to an existing topic, you can create new topics for each intent. 
-    In the wizard, you’ll see a list of CLU intents that haven’t been mapped to a topic. In the field **Create a new topic**, type a name for each of the topics that you want to create, and then select **Next**.  
+    In the wizard, you’ll see a list of CLU intents that haven’t been mapped to a topic. In the field **Create a new topic**, enter a name for each of the topics that you want to create, and then select **Next**.  
     :::image type="content" source="media/advanced-clu-integration/clu-image10.png" alt-text="Create new topics for CLU intents." border="false"::: 
 
     > [!NOTE]
     > Any fields that you leave blank are ignored by the wizard.
 
 1.	Once all CLU intents and entities are mapped to Power Virtual Agents topics, select **Done**.
-    :::image type="content" source="media/advanced-clu-integration/clu-image8.png" alt-text="Add intents and entities and click Done to finish." border="false"::: 
+    :::image type="content" source="media/advanced-clu-integration/clu-image8.png" alt-text="Add intents and entities and select Done to finish." border="false"::: 
 
 Once you’ve competed this procedure, your bot topics now appear in the Power Virtual Agents **Topics** pane. For more information, see [Managing topics](authoring-topic-management.md).
 
 ## Related topics
 
-[Entity registration](advanced-clu-entity-registration.md)
+- [Entity registration](advanced-clu-entity-registration.md)
