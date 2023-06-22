@@ -1,19 +1,15 @@
 ---
 title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/26/2022
-ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
 ms.reviewer: sericks
-search.audienceType: 
-  - admin
 ---
 # Copy an environment
 
-You can use Copy environment in the Microsoft Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use the **Copy** option in the Microsoft Power Platform admin center to copy data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![Copy menu.](media/copy-menu.png "Copy menu")
