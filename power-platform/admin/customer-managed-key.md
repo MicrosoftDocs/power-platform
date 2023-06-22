@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 06/19/2023
+ms.date: 06/22/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key
@@ -179,8 +179,8 @@ In Azure, perform the following steps:
       - **Key type**: **RSA**
       - **RSA key size**: **2048**
 
-##### Import HSM-protected keys
-You can use your HSM-protected keys to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](https://learn.microsoft.com/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. See more information on [Supported HSMs](https://learn.microsoft.com/azure/key-vault/keys/hsm-protected-keys#supported-hsms) and how to transfer the supported HSM-key [here](https://learn.microsoft.com/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
+##### Import protected keys for hardware security modules (HSM)
+You can use your protected keys for hardware security modules (HSM) to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. For more information, see [Supported HSMs](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) [Import HSM-protected keys to Key Vault (BYOK)](/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
 
 #### Encrypt your environment with key from Azure Key Vault with private link (preview)
 
