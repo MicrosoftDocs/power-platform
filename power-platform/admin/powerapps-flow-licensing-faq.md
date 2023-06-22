@@ -7,8 +7,6 @@ author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
-search.audienceType: 
-  - admin
 ---
 
 # Power Platform licensing FAQs
@@ -17,9 +15,45 @@ We have found some common questions on licensing and plan options. We’ve inclu
 
 ## Power Platform product licensing
 
-### How is Microsoft Power Apps and Power Automate licensed? 
+Provides answers to Power Platform products in general.
 
-Power Apps plans:
+### What are the self-service purchase options for the Microsoft Power Platform products?
+
+See the FAQ: [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities).
+
+### Is non-profit, government, and academic pricing available?
+
+Yes, non-profit, government and academic pricing is available in respective program channels.
+
+### What happened to the Power Apps and Power Automate Plan 1 and Plan 2 plans after December 31, 2020?
+
+Power Apps P1 and P2 and Power Automate P1 and P2 plans are no longer available for purchase, including via auto-renewal, after December 31, 2020. Customers with these plan licenses that have renewals falling on or after January 1, 2021 must transition to the Power Apps per user or per app plans, or the Power Automate per user or per flow plans to continue using the Microsoft Power Platform services. Contact your Microsoft account rep for more information.
+
+### Is there a plan for developers?
+
+Yes, we have a free Developer Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/developerplan/)).
+
+### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
+
+You can buy additional data storage, file storage and flow runs. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+
+### Who can buy Microsoft Platform apps plans?
+
+Any customer can sign up for a [free trial](/power-platform/admin/try-powerapps-dynamics-365). Microsoft 365 admins can buy Power Platform apps plans for their teams or organization. Contact your Microsoft 365 admin when you’re ready to buy.
+
+### Are there limits on the number of API requests users can make?
+
+Yes. To help ensure service levels, availability and quality, there are limits to the number of API requests users can make across Power Platform. Service limits are set against normal usage patterns in both 5-minute and per 24-hour intervals, and most customers won't reach them.
+
+API capacity is tracked based on consumption at an individual user level, and the daily limits can't be pooled at any other level.
+
+API limits are also applicable to application users, non-interactive users and administrative users in Dataverse.
+
+More information is available [here](./api-request-limits-allocations.md).
+
+## Power Apps
+
+### How is Microsoft Power Apps licensed? 
 
 - **Power Apps per app plan** which allows individual users to run applications (one app or one portal) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
 
@@ -28,10 +62,6 @@ Power Apps plans:
 - **Power Apps pay-as-you-go plan** which allows individual users to run applications (1 app or 1 portal) without any licenses via Azure subscription. You only pay for the number of users who used the app in a month. See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 See [Power Apps pricing](https://powerapps.microsoft.com/pricing/).
-
-Power Automate Plans:
-
-See [Types of Power Automate licenses](power-automate-licensing/types.md), [Frequently asked questions about Power Automate licenses](power-automate-licensing/faqs.md) and  [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for details.
 
 ### How do I use Power Apps per app plans? 
 See [About Power Apps per app plans](about-powerapps-perapp.md).
@@ -49,10 +79,6 @@ An important part of this feature simplification is that we'll no longer require
 
 No. Embedded canvas components within the model-driven app are recognized as a single app.
 
-### What are the self-service purchase options for the Microsoft Power Platform products?
-
-See the FAQ: [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities).
-
 ### What license must be assigned to a guest so they can run a canvas app shared with them?
 
 The guest user must have a Power Apps license assigned through one of the following tenants:
@@ -60,52 +86,21 @@ The guest user must have a Power Apps license assigned through one of the follow
 - The tenant hosting the app being shared
 - The home tenant of the guest user
 
-Also, the guest must have the same license that’s required for non-guests to run an app. A collection of examples is available [here](/powerapps/maker/canvas-apps/share-app-guests#frequently-asked-questions). 
-
-### Is non-profit, government, and academic pricing available?
-
-Yes, non-profit, government and academic pricing is available in respective program channels.
-
-### What will happen to the Power Apps and Power Automate Plan 1 and Plan 2 plans on December 31, 2020?
-
-Power Apps P1 and P2 and Power Automate P1 and P2 plans will no longer be available for purchase, including via auto-renewal, after December 31, 2020. Customers with these plan licenses that have renewals falling on or after January 1, 2021 will need to transition to the Power Apps per user or per app plans, or the Power Automate per user or per flow plans to continue using the Microsoft Power Platform services. Contact your Microsoft account rep for more information.
+Also, the guest must have the same license that’s required for non-guests to run an app. A collection of examples is available [here](/powerapps/maker/canvas-apps/share-app-guests#frequently-asked-questions).
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
 
 Power Apps licenses will continue to include Power Automate capabilities. However, flows will need to run within the context of the app, which refers to using the same data sources for triggers or actions as the app. Consuming standalone Power Automate flows unrelated to the app(s) will require purchase of a standalone Power Automate license.
 
-### Is there a plan for developers?
-
-Yes, we have a free Developer Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/communityplan/).
-
-### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
-
-You can buy additional data storage, file storage and flow runs. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
-
-### Who can buy Microsoft Power Apps and Power Automate plans?
-
-Any customer can sign up for a free trial. Microsoft 365 admins can buy Power Apps plans for their teams or organization. Contact your Microsoft 365 admin when you’re ready to buy.
-
 ### Do all my users need to be licensed with the same Power Apps plan, or can I mix plans?
 
 You can mix and match Power Apps licenses, and licenses that include Power Apps capabilities, across the users in your organization.
 
-### Are there limits on the number of API requests Power Apps and Power Automate users can make?
-
-Yes. To help ensure service levels, availability and quality, there are limits to the number of API requests users can make across Power Apps and Power Automate. Service limits are set against normal usage patterns in both 5-minute and per 24-hour intervals, and most customers won't reach them.
-
-API capacity is tracked based on consumption at an individual user level, and the daily limits can't be pooled at any other level.
-
-API limits are also applicable to application users, non-interactive users and administrative users in Dataverse.
-
-More information is available [here](./api-request-limits-allocations.md).
-
-## Power Apps
-What content goes here???
-
 ## Power Automate
 
-See [Frequently asked questions about Power Automate licensing](power-automate-licensing/faqs.md).
+### How is Microsoft Power Automate licensed? 
+
+See [Types of Power Automate licenses](power-automate-licensing/types.md), [Frequently asked questions about Power Automate licenses](power-automate-licensing/faqs.md) and [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for details.
 
 ### Power Automate RPA add-on
 
@@ -128,13 +123,14 @@ Follow these steps to apply unattended RPA add-ons for your flows.
 > Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
 
 ## Power Virtual Agents
-What content goes here???
+
+Learn more: [Assign licenses and manage access to Power Virtual Agents](/power-virtual-agents/requirements-licensing)
 
 ## Power Pages
 
 ### How is Power Pages licensed?
 
-Power Pages licensing is capacity based and offers two types of capacities based on user type: **authenticated users per website per month** and **anonymous users per website per month**.
+Power Pages (formerly Power Apps portals) licensing is capacity based and offers two types of capacities based on user type: **authenticated users per website per month** and **anonymous users per website per month**.
 
 1. **Authenticated Users**
 
@@ -386,8 +382,6 @@ Since flows, as well as certain Power Automate features like approvals, run insi
 
 ## Dataverse for Teams
 
-Here is a list of Microsoft Dataverse for Teams licensing FAQs; for more information about Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md).
-
 ### Are the existing Microsoft Power Platform use rights included with Microsoft 365 licenses changing?
 
 To deliver a comprehensive low-code extensibility platform for Microsoft Teams, Microsoft Power Platform capabilities available as part of select Microsoft 365 subscriptions are expanding with the introduction of Dataverse for Teams.
@@ -551,13 +545,6 @@ A list of add-ons applicable to all standalone Power Apps and Power Automate pla
 - Dataverse File Capacity (1 GB) $2 per month
 
 - Dataverse Log Capacity (1 GB) $10 per month
-
-## Portals
-
-> [!NOTE]
-> Effective October 12, 2022, Power Apps portals is Power Pages. More information: [Microsoft Power Pages is now generally available (blog)](https://aka.ms/PPagesIgnite22)
-
-See [Power Pages](#power-pages).
 
 ## Trial Licenses
 
