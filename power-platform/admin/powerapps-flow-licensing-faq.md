@@ -517,8 +517,11 @@ AI models available in public preview do not require paid AI Builder capacity. A
 ### Is a trial available for AI Builder?
 Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane.
 
-## Power Platform PAYG meters
-What content goes here???
+## Power Platform pay-as-you-go plan
+
+Learn more:
+- [How do pay-as-you-go meters work?](/power-platform/admin/pay-as-you-go-meters)
+- [Frequently asked questions](/power-platform/admin/pay-as-you-go-issues-faq#frequently-asked-questions)
 
 ## Promotions and limited-time offers
 What content goes here???
