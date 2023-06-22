@@ -1,19 +1,15 @@
 ---
 title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/26/2022
-ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
 ms.reviewer: sericks
-search.audienceType: 
-  - admin
 ---
 # Copy an environment
 
-You can use Copy environment in the Microsoft Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use the **Copy** option in the Microsoft Power Platform admin center to copy data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![Copy menu.](media/copy-menu.png "Copy menu")
@@ -23,7 +19,7 @@ You can use Copy environment in the Microsoft Power Platform admin center to cop
 >   :::image type="content" source="media/copy-environment-no-target.png" alt-text="No target for copying environment.":::
 > - You can only copy to an environment in the same tenant and region.
 > - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) might not be part of the copy. You should validate your apps post copy.
-> - You can't copy from or to a default type environment.
+> - You can't copy from or to a default or trial type environment.
 > - Copy and restore operations can take up to 8 hours unless a lot of data, including audit data, needs to be copied or restored, in which case they could take up to 24 hours.
   
 ## Copy over everything
