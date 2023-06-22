@@ -40,9 +40,7 @@ For bot and topic limits, see [Quotas, limits, and configuration values](require
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# [Web app](#tab/webApp)
 
 ### Topic types
 
@@ -311,7 +309,7 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
 After you've designed and tested your bot, [publish it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 ### Use system and sample topics
 
