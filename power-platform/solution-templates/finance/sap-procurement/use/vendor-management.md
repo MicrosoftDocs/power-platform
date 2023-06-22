@@ -1,5 +1,5 @@
 ---
-title: SAP Vendor Management app (preview)
+title: SAP Vendor Management app
 description: Learn about the SAP Vendor Management app for Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
@@ -18,9 +18,7 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# SAP Vendor Management app (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# SAP Vendor Management app
 
 The SAP Vendor Management app lets you do several SAP functions quicker and easier than using SAPGui.  You can search, view, change existing, or create a new Vendor.
 

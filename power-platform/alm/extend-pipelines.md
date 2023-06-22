@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: kvivek
 ms.topic: overview
-ms.date: 05/30/2023
+ms.date: 06/20/2023
 ms.custom: 
 ---
 # Extend pipelines in Power Platform
@@ -28,6 +28,7 @@ When configuring the pipeline stage, select the **Pre-Deployment Step Required**
   :::image type="content" source="media/pipelines-pre-step-config.png" alt-text="Pipelines pre-deployment step required":::
 
    > [!IMPORTANT]
+   >
    > - Adding a pre-deployment step gates pipelines deployments, but makers are required to have permission to import solutions to the target environment.
    > - Existing pipeline users may need to update the Power Platform Pipelines application to enable new features. You can manage the updates within the Power Platform admin center.
 
@@ -50,27 +51,30 @@ Triggers are available in Power Automate cloud flows within the pipelines host e
 :::image type="content" source="media/pipelines-triggers.png" alt-text="Pipelines triggers in Power Automate":::
 
 ## Trigger conditions
-Power Automate [trigger conditions](/power-automate/triggers-introduction#use-trigger-conditions-to-reduce-flow-runs) allow you to customize the trigger so that the flow runs only when certain conditions are met. For example, you may need to run different flows and associated business logic within different pipelines or pipeline stages. This also helps keep flow runs and Power platform requests consumption low. 
+
+Power Automate [trigger conditions](/power-automate/triggers-introduction#use-trigger-conditions-to-reduce-flow-runs) allow you to customize the trigger so that the flow runs only when certain conditions are met. For example, you may need to run different flows and associated business logic within different pipelines or pipeline stages. This also helps keep flow runs and Power platform requests consumption low.
 
 :::image type="content" source="media/pipelines-flow-trigger-conditions.png" alt-text="Pipelines trigger conditions in Power Automate":::
 
 ### Trigger a flow for a specific pipeline
+
 Triggers a flow run for all stages of a pipeline (Contoso Pipeline). In this example, replace 'Contoso Pipeline' with the name of your pipeline:
 
 `@equals(triggerOutputs()?['body/OutputParameters/DeploymentPipelineName'], 'Contoso Pipeline')`
 
 ### Trigger a flow for a specific stage in a pipeline
+
 Triggers a flow for a deployment stage with the stage name *equal* to 'Contoso UAT':
 
 `@equals(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'Contoso UAT')`
 
 ### Trigger a flow for specific stages in a pipeline
-Triggers a flow for deployment stages with the stage name *containing* 'QA': 
+
+Triggers a flow for deployment stages with the stage name *containing* 'QA':
 
 `@contains(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'QA')`
 
 Learn more about expressions used in conditions: [Use expressions in conditions to check multiple values](/power-automate/use-expressions-in-conditions).
-
 
 ## Action
 
@@ -108,6 +112,10 @@ The tables below indicate inputs and outputs for each event. Output parameters c
 | --- | --- | --- | ---  |
 | `OnDeploymentStarted`   | StageRunID (GUID), <br/>Deployment Status ( **200000001** (Started), **200000005** (Scheduled))  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name,  | Triggers when the actual deployment started or scheduled. Can be used to trigger custom pre-deployment logic.
 | `OnDeploymentCompleted`   | StageRunID (GUID), <br/>DeploymentStatus (**200000002** (Succeeded), **200000006** (Canceled), **200000003** (Failed)), <br/>ErrorMessage  | Artifact Name, <br/>Deployment Stage Name, <br/>Deployment Pipeline Name  | Triggers when the deployment succeeded, failed, or was canceled. Can be used to trigger custom post-deployment logic. |
+
+### Sample
+
+Download and then import this unmanaged solution into your pipelines host environment, which contains sample cloud flows for using the above triggers and actions with pipelines. [Download sample solution](https://aka.ms/DownloadPipelinesExtensibilitySamples)
 
 ## Next step
 

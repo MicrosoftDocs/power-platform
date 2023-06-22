@@ -1,32 +1,27 @@
 ---
-title: "Try Power Apps and customer engagement apps | MicrosoftDocs"
-description: Try Power Apps and customer engagement apps for free before you buy  
-author: jimholtz
-
-ms.component: pa-admin
+title: "Try Power Platform apps for free | MicrosoftDocs"
+description: Try Power Platform apps (Power Apps, Power Automate, Power BI, Power Pages, and Power Virtual Agents) for free before you buy  
+author: sericks007
 ms.topic: conceptual
-ms.date: 06/15/2021
-ms.subservice: admin
-ms.author: jimholtz
-search.audienceType: 
-  - admin
+ms.date: 06/20/2023
+ms.author: sericks
+
 ---
-# Try Power Apps and customer engagement apps apps
+# Try Power Platform apps for free
 
-You can explore all Power Apps and model-driven apps capabilities in Dynamics 365, such as Dynamics 365 Sales and Customer Service, for free by signing up for trial licenses.
+You can explore all Power Platform apps for free by signing up for trial licenses.
 
-## Power Apps trial 
+|App  |Description  |
+|---------|---------|
+|Power Apps     |[Sign up for 30 day trial](/powerapps/maker/signup-for-powerapps)         |
+|Power Automate     | [Sign up and sign in for Power Automate](/power-automate/sign-up-sign-in)        |
+|Power BI     | [Sign up for or purchase the Power BI service as an individual](/power-bi/fundamentals/service-self-service-signup-for-power-bi)        |
+|Power Pages     | [Sign up for a free Power Pages trial](/power-pages/getting-started/trial-signup)        |
+|Power Virtual Agents     | [Sign up for a Power Virtual Agents trial](/power-virtual-agents/sign-up-individual)        |
 
-You can try Power Apps for free by signing up either for a 30 day trial or developer plan. 
-- [Sign up for 30 day trial](/powerapps/maker/signup-for-powerapps)
-- [Sign up for Developer Plan](/powerapps/maker/dev-community-plan)
-- Sign up for trial while [purchasing Power Apps](signup-for-powerapps-admin.md) 
-
-## Customer engagement apps trial
-
-Visit <https://trials.dynamics.com> and select the required app to sign up for a 30-day trial.
-
-For detailed information about signing up, purchasing or using individual customer engagement apps, see the respective app's documentation at [Dynamics 365 documentation](/dynamics365/). 
-
+> [!NOTE]
+> You can sign up for for a 30-day free trial of customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing) by visiting <https://trials.dynamics.com>, and selecting the appropriate app.
+>
+> For detailed information about signing up, purchasing or using individual customer engagement apps, see the respective app's documentation at [Dynamics 365 documentation](/dynamics365/).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

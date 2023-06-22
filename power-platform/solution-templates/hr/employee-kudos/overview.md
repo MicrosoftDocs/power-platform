@@ -24,11 +24,6 @@ You can access the solution templates on AppSource at: <https://aka.ms/AccessEmp
 
 :::image type="content" source="media/overview/kudos-screens-small.png" alt-text="Image alt text." lightbox="media/overview/kudos-screens-large.png":::
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-
 ## Employee Experience base solution technical components
 
 - **One model-driven app**: _Employee Experience Localization Admin App_ where an admin can see and edit localized string values
@@ -61,3 +56,11 @@ You can access the solution templates on AppSource at: <https://aka.ms/AccessEmp
   - Kudos app – Dataverse: connection reference to Dataverse
   - Kudos app – Office 365: Connection reference to Office 365
   - Kudos app – Outlook: Connection reference to Outlook
+
+## Next steps
+
+- [Install the Employee Kudos template](install.md)
+
+## See also
+
+- [Get started using the Employee Kudos app](use.md)
