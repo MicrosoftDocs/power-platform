@@ -115,9 +115,7 @@ Common problems include:
 
 #### FlowActionTimedOut
 
-**Error messages:**
-
-- "The flow with id {FlowId} has timed out . Error Code: {FlowErrorCode}"
+**Error message:** "The flow with id {FlowId} has timed out . Error Code: {FlowErrorCode}"
 
 **Resolution:** [Check the flow for errors](/power-automate/error-checker) to understand why the cloud flow took more than 2 minutes to run before it returned to Power Virtual Agents. Try to optimize the query and the data you return from any other backend system. If some of the cloud flow logic can continue to run after a result is sent to the bot, place these actions after the 'Return value(s) to Power Virtual Agents' step in your cloud flow.
 
