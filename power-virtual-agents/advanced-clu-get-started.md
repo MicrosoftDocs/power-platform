@@ -21,7 +21,7 @@ This topic includes the step-by-step procedures you need to get started with [co
 Below are the steps to create a bot using an existing CLU model:
 
 1. [Prepare your environment](#prepare-your-environment).
-2. [Prepare your conversational language understanding project](#repare-your-conversational-language-understanding-project).
+2. [Prepare your conversational language understanding project](#prepare-your-conversational-language-understanding-project).
 3. Map CLU intents and entities:
    - [Manually map intents](#manually-map-intents).
    - [Manually map entities](#manually-map-entities).
