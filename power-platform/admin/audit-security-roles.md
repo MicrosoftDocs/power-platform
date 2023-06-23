@@ -33,7 +33,7 @@ Audit your organization's security roles to better understand changes made to th
 
 ## Change a security role
 
-[Change a security role](database-security.md#create-edit-or-copy-a-security-role-using-the-new-modern-ui-preview).
+[Change a security role](database-security.md#create-edit-or-copy-a-security-role-using-the-new-modern-ui).
 
 ## View the audit report
 
