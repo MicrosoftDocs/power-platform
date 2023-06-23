@@ -236,8 +236,8 @@ For example, if your SAP Procurement purchase order process requires data from u
 Additionally, if you have an internal proprietary system or a system with no native connector, you can work with your IT Team to create a custom connector that allows Power Apps to easily interface with that system through a supported API.
 
 More information:
--[List of connectors](/connectors/connector-reference/connector-reference-powerapps-connectors)
--[Custom connectors overview](/connectors/custom-connectors/)
+- [List of connectors](/connectors/connector-reference/connector-reference-powerapps-connectors)
+- [Custom connectors overview](/connectors/custom-connectors/)
 
 ## App error handling
 
