@@ -65,12 +65,12 @@ Creating a new purchase requisition offers a typical transaction scenario betwee
 
 1. The app invokes the embedded _CreateRequisition_ flow using the _Run_ function and passing in the previously constructed JSON string.
 
-~~~power-fx
-        Set(
-            varRequisitionReturn,
-            CreateRequisition.Run(varRequisitionJSON)
-        );
-~~~
+   ~~~power-fx
+           Set(
+               varRequisitionReturn,
+               CreateRequisition.Run(varRequisitionJSON)
+           );
+   ~~~
 
 1. The _CreateRequisition_ flow receives the JSON string from the app via the _PowerApps(V2)_ trigger and uses a _Parse JSON_ action to decompose it.
 1. _Variables_ are set using the JSON information to allow for easier mapping into the SAP ERP connector calls.
