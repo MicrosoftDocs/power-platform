@@ -64,8 +64,8 @@ Now that you’ve completed preparing your environment, you’re ready to map in
 1. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 2. Then create a language resource in [Language Studio](https://language.cognitive.azure.com/), with the [conversational language understanding](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio) feature enabled.
 3. Note, to ensure PVA functions correctly, you will need to create intents for [Power Virtual Agent's system topics](authoring-system-topics.md) and for [any custom topics](authoring-create-edit-topics.md) you may want to author.
-4. Author [any custom entities](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components) you want to use in your Power Virtual Agent project.
-5. Train and deploy the project in the same region as your Power Virtual Agent resource.
+4. Author [any custom entities](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components) you want to use in your Power Virtual Agents project.
+5. Train and deploy the project in the same region as your Power Virtual Agents resource.
 
 ## Map CLU intents and entities to Power Virtual Agents prebuilt data types
 
