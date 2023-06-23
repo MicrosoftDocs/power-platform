@@ -25,7 +25,7 @@ For projects created with this capability, bot creators can now access existing 
 
 ## Prerequisites
 
-- A fully [trained CLU model](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio#train-your-model). This includes intents for each of [PVA's system topics](https://learn.microsoft.com/en-us/power-virtual-agents/authoring-system-topics?tabs=webApp) and for [any custom topics](https://learn.microsoft.com/en-us/power-virtual-agents/authoring-create-edit-topics?tabs=preview) you may want to author.
+- A fully [trained CLU model](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio#train-your-model). This includes intents for each of [PVA's system topics](authoring-system-topics.md) and for [any custom topics](authoring-create-edit-topics.md) you may want to author.
 - Enabled deployment of the model (including the key and prediction URL)
 - CLU project name and deployment name 
 - [Power Virtual Agents](requirements-licensing-subscriptions.md) account
