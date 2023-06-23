@@ -27,7 +27,7 @@ Create security roles or edit the privileges associated with an existing securit
 
 1. Sign in to the Power Platform admin center and select an environment.
 
-1. Select **Settings** > **Users + permissions** > **Security roles (Preview)**.
+1. Select **Settings** > **Users + permissions** > **Security roles**.
 
 1. Select **+ New role**.
 
@@ -39,7 +39,7 @@ Create security roles or edit the privileges associated with an existing securit
 
 1. Sign in to the Power Platform admin center and select an environment.
 
-1. Select **Settings** > **Users + permissions** > **Security roles (Preview)**.
+1. Select **Settings** > **Users + permissions** > **Security roles**.
 
 1. Select the security role you want to copy.
 
@@ -62,7 +62,7 @@ Before you edit a security role, make sure you understand the principles of [con
 
 1. Sign in to the Power Platform admin center and select an environment.
 
-1. Select **Settings** > **Users + permissions** > **Security roles (Preview)**.
+1. Select **Settings** > **Users + permissions** > **Security roles**.
 
 1. Select the security role you want to edit.
 
@@ -94,7 +94,7 @@ and assign the following privilege on the Business Management tab: Read User.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW10lgO]
 
 ## Privacy notices
-<!-- EDITOR'S NOTE: Is this article the only one that includes all these privacy notices? Because if it isn't, "Privacy notices" should be a separate article that this and other articles refer to. This article just doesn't seem like the right place for all these notices. -->
+
 [!INCLUDE [cc_privacy_crm_for_phones](../includes/cc-privacy-crm-for-phones.md)]
 
 [!INCLUDE [cc_privacy_crm_for_tablets](../includes/cc-privacy-crm-for-tablets.md)]
