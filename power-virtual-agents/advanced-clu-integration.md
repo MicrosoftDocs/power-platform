@@ -2,7 +2,7 @@
 title: Conversational language understanding integration overview (preview)
 description: Automate the creation of bots in Power Virtual Agents bots with CLU integration.
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
-ms.date: 6/6/2023
+ms.date: 6/23/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
