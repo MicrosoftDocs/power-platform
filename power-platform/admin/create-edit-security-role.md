@@ -10,7 +10,7 @@ ms.custom:
 - bap-template
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/31/2023
+ms.date: 06/23/2023
 search.audienceType: 
 - admin
 ---
