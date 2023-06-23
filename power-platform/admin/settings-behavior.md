@@ -1,15 +1,16 @@
 ---
 title: "Manage behavior settings  | MicrosoftDocs"
 description: View and manage behavior settings for Microsoft Dataverse.
-author: jimholtz
-
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/04/2022
+ms.date: 06/23/2023
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 search.audienceType: 
   - admin
+contributors:
+- adrianorth
 ---
 # Manage behavior settings 
 
@@ -30,7 +31,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Settings|Description|  
 > |--------------|-----------------|  
 > |**Release channel**||  
-> |Model-driven app release channel|Default: Semi-annual channel. If **Semi-annual channel**, users in the org will use features from the current release wave which is existing behavior. If **Monthly channel**, users will use features from the current monthly release. This setting can be changed at anytime and users will be switched after one to two browser refreshes. More information: [Release Channel Overview (preview link)](https://review.learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/release-channels-model-driven-apps?branch=pr-en-us-8176)|  
+> |Model-driven apps release channel|Default: Semi-annual channel. If this setting is set to **Semi-annual channel**, users in the org will use features from the current release wave, which is existing behavior. If this setting is set to **Monthly channel**, users will use features from the current monthly release. This setting can be changed at anytime and users will be switched after one to two browser refreshes. More information: [Release Channel Overview (preview link)](https://review.learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/release-channels-model-driven-apps?branch=pr-en-us-8176)|  
 > |**Basic behavior**||  
 > |Auto save|Default: On. If **On**, after a record is created (initially saved), any changes made to a form will automatically be saved thirty seconds after the change is made. The 30-second period starts again after a change is made. If no changes are made, the automatic save doesn’t happen. More information: [Manage auto-save](/dynamics365/customer-engagement/customize/manage-auto-save)|  
 > |Load default static content from Content Delivery Network|Default: On. Canvas apps will load out-of-the-box static content from the Azure Content Delivery Network (CDN) service. For firewall restrictions and IP approved list related issues, system administrators can select **Off** to disable the Azure Content Delivery Network feature. **Note**: this setting does not apply to model-driven apps as they do not use CDN currently.|  
