@@ -36,32 +36,32 @@ Creating a new purchase requisition offers a typical transaction scenario betwee
 
 1. The _SAP Requisition Management_ app prepares _JSON_ by using data from the input controls and stored items collections, substituting any null values for empty strings.
 
-~~~power-fx
-     Set(
-        varRequisitionJSON,//Build the requisition JSON
-        "{Header: " & JSON(//Build the requisition header JSON
-            {
-                PurchaseRequisitionNumber: varRequisition,
-                Vendor: Trim(txtRequisitionDetailsVendor.Text),
-                PurchasingOrganization: cmbRequisitionDetailsPurchasingOrg.Selected.'Value Code',
-                PurchasingGroup: cmbRequisitionDetailsPurchasingGroup.Selected.'Value Code',
-                Currency: cmbRequisitionDetailsCurrency.Selected.'Value Code'
-            },
-            JSONFormat.IndentFour
-        ) & ", items: " & JSON(//Build the requisition items JSON from cached collection
-            colRequisitionItems,
-            JSONFormat.IndentFour
-        ) & "}"
-    );    
-    Set(
-        varRequisitionJSON,
-        Substitute(
-            varRequisitionJSON,
-            "null",
-            """"""
-        )
-    );
-~~~
+   ~~~power-fx
+        Set(
+           varRequisitionJSON,//Build the requisition JSON
+           "{Header: " & JSON(//Build the requisition header JSON
+               {
+                   PurchaseRequisitionNumber: varRequisition,
+                   Vendor: Trim(txtRequisitionDetailsVendor.Text),
+                   PurchasingOrganization: cmbRequisitionDetailsPurchasingOrg.Selected.'Value Code',
+                   PurchasingGroup: cmbRequisitionDetailsPurchasingGroup.Selected.'Value Code',
+                   Currency: cmbRequisitionDetailsCurrency.Selected.'Value Code'
+               },
+               JSONFormat.IndentFour
+           ) & ", items: " & JSON(//Build the requisition items JSON from cached collection
+               colRequisitionItems,
+               JSONFormat.IndentFour
+           ) & "}"
+       );    
+       Set(
+           varRequisitionJSON,
+           Substitute(
+               varRequisitionJSON,
+               "null",
+               """"""
+           )
+       );
+   ~~~
 
 1. The app invokes the embedded _CreateRequisition_ flow using the _Run_ function and passing in the previously constructed JSON string.
 
