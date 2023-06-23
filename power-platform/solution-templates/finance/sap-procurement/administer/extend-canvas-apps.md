@@ -184,11 +184,6 @@ More information: [Build global support into canvas apps](/power-apps/maker/canv
 
 ## Components
 
-
-
-
-
-
 Components are a great way to simplify the app development and maintenance process and help improve performance.
 
 For areas where there's a need for common user experience either internally or across apps, components are configured. Given limitations on component libraries to support things like access to app scope and embedded cloud flows, local components can be used in all of the apps that then can be imported to other apps.
@@ -213,22 +208,22 @@ More information: [Canvas component overview](/power-apps/maker/canvas-apps/crea
 
 ## Additional SAP fields
 
-Every SAP implementation is different and it's fully expected to add your own fields that support your business processes. Thus, ample screen space and design considerations were implemented to allow you to easily add the fields you need.
+Every SAP implementation is different and it's fully expected that you'll add your own fields that support your business processes. Thus, ample screen space and design considerations were implemented to allow you to easily add the fields you need.
 
 ### Common control containers
 
-Most controls are contained within a container consisting of both label and input control. For example, the field to capture the name of the vendor within the SAP Vendor Management app consists of a Label and Text Input control as seen in the screenshot that follows. To add a new field, copy an existing container control and paste in the appropriate responsive component, updating the names, text and ultimately mapped fields.
+Most controls are contained within a container consisting of both label and input control. For example, the field to capture the name of the vendor within the SAP Vendor Management app consists of a Label and Text Input control as seen in the screenshot that follows. To add a new field, copy an existing container control and paste in the appropriate responsive component, updating the names, text, and ultimately mapped fields.
 
-:::image type="content" source="media/extend-canvas-apps/container-control.png" alt-text=" Work with container controls.":::
+:::image type="content" source="media/extend-canvas-apps/container-control.png" alt-text="Work with container controls.":::
 
 > [!NOTE]
-> There are similar containers for other types of input controls like Comboboxes, Date Pickers and Buttons.
+> There are similar containers for other types of input controls like Comboboxes, Date Pickers, and Buttons.
 
 ### Responsive containers
 
-The apps are designed to be responsive to the tablet/desktop device type using vertical and horizontal container controls such as show in the screenshot that follows. These containers are configured to have starting points for properties such as _height_, _width_, _LayoutMinHeight_, _LayoutMinWidth_, and _Wrap_. As you add more fields to these containers, ensure these properties are also updated to continue to handle the responsiveness appropriately.
+The apps are designed to be responsive to the tablet/desktop device type using vertical and horizontal container controls such as shown in the screenshot that follows. These containers are configured to have starting points for properties such as _height_, _width_, _LayoutMinHeight_, _LayoutMinWidth_, and _Wrap_. As you add more fields to these containers, ensure these properties are also updated to continue to handle the responsiveness appropriately.
 
-:::image type="content" source="media/extend-canvas-apps/ex-horizontal-container.png" alt-text=" Work with responsive containers.":::
+:::image type="content" source="media/extend-canvas-apps/ex-horizontal-container.png" alt-text="Work with responsive containers.":::
 
 More information: [Autolayout containers](/power-apps/maker/canvas-apps/build-responsive-apps#auto-layout-containers)
 
@@ -236,7 +231,7 @@ More information: [Autolayout containers](/power-apps/maker/canvas-apps/build-re
 
 The power of canvas apps is that they can easily connect into one of several hundred other systems and applications securely using their native connector library. 
 
-For example, if your SAP Procurement purchase order process requires data from upstream presales opportunities that exist in a CRM to complete the process, you can use the [Salesforce](/connectors/salesforce/) or Dataverse connectors to integrate with Dynamics 365 so you can easily add that data to the SAP Purchase Order app at the select of a button.
+For example, if your SAP Procurement purchase order process requires data from upstream presales opportunities that exist in a CRM to complete the process, you can use the [Salesforce](/connectors/salesforce/) or Dataverse connectors to integrate with Dynamics 365 so you can easily add that data to the SAP Purchase Order app at the click of a button.
 
 Additionally, if you have an internal proprietary system or a system with no native connector, you can work with your IT Team to create a custom connector that allows Power Apps to easily interface with that system through a supported API.
 
