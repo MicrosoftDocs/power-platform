@@ -1,5 +1,5 @@
 ---
-title: Audit security roles (preview)
+title: Audit security roles
 description: Learn how to audit security roles to better understand changes made to them in Power Platform.
 author: sericks007
 ms.author: pmantha
@@ -15,14 +15,9 @@ ms.custom:
   - bap-template
 ---
 
-# Audit security roles (preview)
+# Audit security roles
 
 Audit your organization's security roles to better understand changes made to them in your Power Platform environment.
-
-> [!Important]
-> [!Include [preview](../includes/cc-preview-features-definition.md)]
->
-> This capability is in the process of rolling out and may not be available in your region yet.
 
 ## Prerequisites
 
@@ -43,6 +38,6 @@ Audit your organization's security roles to better understand changes made to th
 ## View the audit report
 
 1. Sign in to the Power Platform admin center.
-1. Select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security roles (Preview)**.
+1. Select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security roles**.
 1. Select **Audit report** in the command bar.
 <!-- EDITOR'S NOTE: Please include a screenshot of an audit report. -->
