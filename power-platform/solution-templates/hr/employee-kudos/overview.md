@@ -52,6 +52,15 @@ You can access the solution templates on AppSource at: <https://aka.ms/AccessEmp
   - Kudos – delete Kudos when a user opts out.
   - Kudos app – notification email.
 - **Three connection references**:
-  - Kudos app – Dataverse: Connection reference to Dataverse.
-  - Kudos app – Office 365: Connection reference to Office 365.
-  - Kudos app – Outlook: Connection reference to Outlook.
+  - Kudos app – Dataverse: Connection reference to Dataverse
+  - Kudos app – Office 365: Connection reference to Office 365
+  - Kudos app – Outlook: Connection reference to Outlook
+
+## Next steps
+
+[Install the Employee Kudos template](install.md)
+
+## See also
+
+[Get started using the Employee Kudos app](use.md)
+
