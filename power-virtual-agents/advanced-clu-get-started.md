@@ -2,7 +2,7 @@
 title: Get started with conversational language understanding integration (preview)
 description: Create bots that use Azure conversational language understanding in Power Virtual Agents.
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
-ms.date: 6/6/2023
+ms.date: 6/23/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -21,7 +21,8 @@ This topic includes the step-by-step procedures you need to get started with [co
 Below are the steps to create a bot using an existing CLU model:
 
 1. [Prepare your environment](#prepare-your-environment).
-1. Map CLU intents and entities:
+2. [Prepare your conversational language understanding project](#prepare-your-conversational-language-understanding-project).
+3. Map CLU intents and entities:
    - [Manually map intents](#manually-map-intents).
    - [Manually map entities](#manually-map-entities).
    - [Use the wizard to automatically map CLU intents and entities](#use-the-bulk-tool-wizard).
@@ -57,6 +58,15 @@ Next, switch back to Power Virtual Agents. Changing back to the NLU environment 
 :::image type="content" source="media/advanced-clu-integration/clu-image6.png" alt-text="Switch to Power Virtual Agents NLU." border="false"::: 
 
 Now that you’ve completed preparing your environment, you’re ready to map intents and entities to CLU model data. 
+
+## Prepare your conversational language understanding project
+
+1. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+2. Then create a language resource in [Language Studio](https://language.cognitive.azure.com/), with the [conversational language understanding](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio) feature enabled.
+3. Note, to ensure PVA functions correctly, you will need to create intents for [Power Virtual Agent's system topics](authoring-system-topics.md) and for [any custom topics](authoring-create-edit-topics.md) you may want to author.
+4. Author [any custom entities](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/entity-components) you want to use in your Power Virtual Agents project.
+5. Train and deploy the project in the same region as your Power Virtual Agents resource.
+
 ## Map CLU intents and entities to Power Virtual Agents prebuilt data types
 
 You create a new Power Virtual Agents bot by mapping existing topics to CLU intents. You can manually map intents and entities, or for bulk mapping, see [Use the Bulk tool wizard](#use-the-bulk-tool-wizard).
