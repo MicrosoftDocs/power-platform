@@ -42,6 +42,7 @@ Before you begin, make sure that you have your CLU model project name and deploy
 
 > [!NOTE]
 > If you you see the following, then you are not connected to **Azure Congnitive Service for Language**. Follow step 3 to connect.
+> 
 > :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected-27Jun23.png" alt-text="Language option menu when not connected to Azure Congintive Service for Language." border="false":::
 
 5. Select the **+ (plus sign)** on the to the right of the connector name, to display the authentication settings page. 
