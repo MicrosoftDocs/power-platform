@@ -5,9 +5,9 @@ description: "Learn how to manage your Power Platform users by adding or removin
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 

@@ -4,9 +4,9 @@ description: Configure default sync filters for appointments, contacts, or task 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/12/2021
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin

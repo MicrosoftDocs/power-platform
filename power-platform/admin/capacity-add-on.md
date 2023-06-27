@@ -4,9 +4,9 @@ description: This topic covers the Per app, Power Automate per business process,
 ms.date: 03/24/2022
 ms.reviewer: 
 ms.topic: conceptual
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---
