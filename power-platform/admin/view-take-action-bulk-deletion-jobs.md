@@ -1,13 +1,13 @@
 ---
 title: "Bulk deletion jobs: view, pause, postpone, resume, or cancel"
 description: "Learn how to use the Power Platform admin center to view and take your choice of actions on a Dynamics 365 bulk deletion job."
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/15/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

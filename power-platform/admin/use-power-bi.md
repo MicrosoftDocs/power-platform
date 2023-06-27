@@ -1,13 +1,13 @@
 ---
 title: "Use Power BI  | MicrosoftDocs"
 description: Use Power BI
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/15/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---
