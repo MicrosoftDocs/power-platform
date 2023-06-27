@@ -1,12 +1,12 @@
 ---
 title: "Manage user settings as a Microsoft Power Platform administrator"
 description: "Learn how to manage user settings and security roles when administering Microsoft Power Platform."
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/28/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin 
 ---

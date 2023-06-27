@@ -1,13 +1,13 @@
 ---
 title: "Move configuration data across organizations  | MicrosoftDocs"
 description: Move configuration data across organizations
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/23/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---
