@@ -41,7 +41,8 @@ Before you begin, make sure that you have your CLU model project name and deploy
     :::image type="content" source="media/advanced-clu-integration/clu-image1.png" alt-text="Language option to select NLU resource." border="false":::
 
 > [!NOTE]
-> If you you see the following, then you are not connected to **Azure Congnitive Service for Language**. Follow step 3 to connect. :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected-27Jun23.png" alt-text="Language option menu when not connected to Azure Congintive Service for Language." border="false":::
+> If you you see the following, then you are not connected to **Azure Congnitive Service for Language**. Follow step 3 to connect.
+> :::image type="content" source="media/advanced-clu-integration/nlu-not-azure-connected-27Jun23.png" alt-text="Language option menu when not connected to Azure Congintive Service for Language." border="false":::
 
 5. Select the **+ (plus sign)** on the to the right of the connector name, to display the authentication settings page. 
 6. Enter the  display name, API key, account key, site URL, then select **Save**. Once Power Apps creates the connector, return to your Power Virtual Agents bot.
