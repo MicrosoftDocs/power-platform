@@ -1,12 +1,12 @@
 ---
 title: "Monitor email processing errors  | MicrosoftDocs"
 description: Monitor email processing errors
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

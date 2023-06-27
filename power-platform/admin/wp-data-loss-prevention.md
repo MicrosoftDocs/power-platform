@@ -5,9 +5,9 @@ description: About data loss prevention (DLP) policies.
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 07/19/2021
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 

@@ -29,9 +29,7 @@ There are a number of ways you can manage your topics. Power Virtual Agents incl
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 
-# [Preview](#tab/preview)
-
-[!INCLUDE [Preview disclaimer](includes/public-preview-disclaimer.md)]
+# [Web app](#tab/webApp)
 
 Power Virtual Agents offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
 
@@ -132,7 +130,7 @@ Many of the system topics use these nodes to control how conversations end or st
 > [!TIP]
 > The **End all topics** node doesn't clear or reset any global variables. To clear global variables, use a **Clear all variables** node first. For an example, see the default [Reset Conversation system topic](authoring-system-topics.md#reset-conversation).
 
-# [Web app](#tab/web)
+# [Classic](#tab/classic)
 
 Power Virtual Agents offers many ways to manage your topics. It includes a topic checker that flags topics that contain errors. You can turn topics on or off so that they don't appear to people chatting with your bot. And you can copy topics to make it easier to create new ones.
 
