@@ -2,11 +2,13 @@
 title: Power Platform licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Power Pages, Dataverse, Dataverse for Teams, and AI Builder"
 ms.topic: conceptual
-ms.date: 06/21/2023
+ms.date: 06/27/2023
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
+ms.contributors:
+- jessechen
 ---
 
 # Power Platform licensing FAQs
@@ -569,7 +571,7 @@ More information is available [here](./trial-environments.md).
 
 For more information about trial environments in Power Apps read this [topic](./trial-environments.md).
 
-## Microsoft 365
+## Power Platform use rights included with Microsoft 365
 
 ### What are Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications?
 
@@ -627,7 +629,7 @@ Although apps may be granted to use the Dynamics 365 connector for an extended t
 
 There's no limit on the number of applications. Customers can continue to run standalone apps to extend and customize Microsoft 365 using standard connectors. 
 
-## Dynamics 365
+## Power Platform use rights included with Dynamics 365
 
 ### What are Microsoft Power Apps and Power Automate use rights for Dynamics 365 applications?
 
