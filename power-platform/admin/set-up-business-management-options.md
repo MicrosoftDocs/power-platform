@@ -1,13 +1,13 @@
 ---
 title: "Set up Business Management options | MicrosoftDocs"
 ms.custom: 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

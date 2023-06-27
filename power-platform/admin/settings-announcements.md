@@ -1,13 +1,13 @@
 ---
 title: "Broadcast announcements to an entire organization  | MicrosoftDocs"
 description: About broadcast announcements to an entire organization 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/09/2021
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 search.audienceType: 
   - admin
 ---

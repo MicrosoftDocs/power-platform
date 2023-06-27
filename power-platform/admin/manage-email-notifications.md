@@ -1,12 +1,12 @@
 ---
 title: "Manage email notifications  | MicrosoftDocs"
 description: Manage email notifications
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/08/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin

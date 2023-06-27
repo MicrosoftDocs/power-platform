@@ -1,7 +1,7 @@
 ---
 title: "Set up duplicate detection rules to keep your data clean  | MicrosoftDocs"
 description: Set up duplicate detection rules to keep your data clean
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/14/2022

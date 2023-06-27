@@ -1,12 +1,12 @@
 ---
 title: "Power Apps operated by 21Vianet and Power Automate operated by 21Vianet | MicrosoftDocs"
 description: Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/23/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---
