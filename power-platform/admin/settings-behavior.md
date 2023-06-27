@@ -16,7 +16,7 @@ contributors:
 
 Use Behavior settings to adjust how model-driven apps appear and function. These settings do not apply to canvas apps, except where noted.
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** >**Behavior**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Behavior**.
 
 Make sure you have the System Administrator security role or equivalent permissions to update the business closures.
 
