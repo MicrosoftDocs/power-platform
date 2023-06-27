@@ -3,7 +3,7 @@ title: Privacy-related privileges
 description: Learn about the privacy-related privileges you can assign to a security role in Power Platform.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/02/2023
+ms.date: 06/23/2023
 ms.subservice: admin
 author: sericks007
 ms.author: sericks
@@ -17,12 +17,7 @@ ms.custom: bap-template
 
 You can assign privileges to a security role that are related specifically to privacy. Use either the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to assign privileges to a security role.
 
-## New experience (preview)
-
-> [!Important]
-> [!include [preview](../includes/cc-preview-features-definition.md)]
->
-> This capability is in the process of rolling out and may not be available in your region yet.
+## New experience
 
 The following table describes the privacy-related privileges, which in the new, modern UI are listed alphabetically on the **Privacy-related privileges** tab of the security role editor.
 

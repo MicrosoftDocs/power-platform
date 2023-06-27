@@ -54,7 +54,7 @@ This card provides links to related documentation and information sources.
 
 ### See also
 
-[Working with the admin portals](wp-work-with-admin-portals.md) <br />
-[Introduction to Microsoft Power Platform](/training/modules/introduction-power-platform/)
+[Working with various admin portals](wp-work-with-admin-portals.md) <br />
+[Training: Microsoft Power Platform Fundamentals](/training/paths/power-plat-fundamentals)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

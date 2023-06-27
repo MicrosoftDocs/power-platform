@@ -1,12 +1,12 @@
 ---
 title: "Enable improved duplicate detection  | MicrosoftDocs"
 description: About how to enable improved duplicate detection.
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/13/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

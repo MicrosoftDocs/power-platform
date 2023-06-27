@@ -1,12 +1,12 @@
 ---
 title: "Resource overview | MicrosoftDocs"
 description: About resources
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 06/23/2022
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 search.audienceType: 
   - admin
 ---

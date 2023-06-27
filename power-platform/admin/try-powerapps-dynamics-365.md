@@ -13,7 +13,7 @@ You can explore all Power Platform apps for free by signing up for trial license
 
 |App  |Description  |
 |---------|---------|
-|Power Apps     |[Sign up for 30 day trial](/powerapps/maker/signup-for-powerapps)         |
+|Power Apps     |[Explore Power Apps for free for 30 days](/powerapps/maker/signup-for-powerapps)         |
 |Power Automate     | [Sign up and sign in for Power Automate](/power-automate/sign-up-sign-in)        |
 |Power BI     | [Sign up for or purchase the Power BI service as an individual](/power-bi/fundamentals/service-self-service-signup-for-power-bi)        |
 |Power Pages     | [Sign up for a free Power Pages trial](/power-pages/getting-started/trial-signup)        |

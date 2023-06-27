@@ -1,7 +1,7 @@
 ---
 title: "Create users | MicrosoftDocs"
 description: About creating users.
-author: jimholtz
+author: sericks007
 ms.reviewer: Kumarvivek
 ms.subservice: admin
 ms.author: kvivek
