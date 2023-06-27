@@ -1,13 +1,13 @@
 ---
 title: "Enable Unified Interface Only  | MicrosoftDocs"
 description: Enable Unified Interface Only
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/16/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

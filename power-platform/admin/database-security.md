@@ -12,7 +12,7 @@ ms.custom:
   - bap-template
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/22/2023
+ms.date: 06/23/2023
 search.audienceType: 
   - admin
 ---
@@ -156,14 +156,9 @@ In general, a security role can only be assigned to users whose accounts are ena
 
 1. Select **Add**.
 
-## Create, edit, or copy a security role using the new, modern UI (preview)
+## Create, edit, or copy a security role using the new, modern UI
 
 You can easily create, edit, or copy a security role and customize it to meet your needs.
-
-> [!Important]
-> [!include [preview](../includes/cc-preview-features-definition.md)]
->
-> This capability is in the process of rolling out and may not be available in your region yet.
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Environments** in the navigation pane, and then select an environment.
 
@@ -171,7 +166,7 @@ You can easily create, edit, or copy a security role and customize it to meet yo
 
 1. Expand **Users + Permissions**.
 
-1. Select **Security roles (Preview)**.
+1. Select **Security roles**.
 
 1. Complete the appropriate task:
 

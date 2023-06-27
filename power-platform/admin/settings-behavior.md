@@ -4,7 +4,7 @@ description: View and manage behavior settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/23/2023
+ms.date: 06/27/2023
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 

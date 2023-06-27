@@ -2,7 +2,7 @@
 title: Conversational language understanding integration overview (preview)
 description: Automate the creation of bots in Power Virtual Agents bots with CLU integration.
 keywords: "Azure, conversational language understanding, PVA, CLU, CLU models"
-ms.date: 6/6/2023
+ms.date: 6/23/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -25,7 +25,7 @@ For projects created with this capability, bot creators can now access existing 
 
 ## Prerequisites
 
-- A fully [trained CLU model](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio#train-your-model)
+- A fully [trained CLU model](/azure/cognitive-services/language-service/conversational-language-understanding/quickstart?pivots=language-studio#train-your-model). This includes intents for each of [PVA's system topics](authoring-system-topics.md) and for [any custom topics](authoring-create-edit-topics.md) you may want to author.
 - Enabled deployment of the model (including the key and prediction URL)
 - CLU project name and deployment name 
 - [Power Virtual Agents](requirements-licensing-subscriptions.md) account
@@ -87,7 +87,7 @@ CLU entities include relevant information extracted from NLU utterances. An enti
 
 ## Related topics
 
-Other bot building features that CLU integration supports include:
+Other bot-building features that CLU integration supports include:
 
 - System topics: [Use system topics in Power Virtual Agents](authoring-system-topics.md)
 - Entities and slot filling: [Create and use entities in Power Virtual Agents](advanced-entities-slot-filling.md)

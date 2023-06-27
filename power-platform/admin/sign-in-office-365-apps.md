@@ -1,14 +1,14 @@
 ---
 title: "Access Dynamics 365 login and Office apps"
 description: "There are two main ways to log in and access your Microsoft Dynamics 365 and Office apps. Troubleshoot issues using the Support and Recovery Assistant."
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.collection: get-started
 ms.date: 11/14/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---
