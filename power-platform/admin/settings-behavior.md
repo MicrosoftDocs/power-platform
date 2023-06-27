@@ -1,13 +1,13 @@
 ---
 title: "Manage behavior settings  | MicrosoftDocs"
 description: View and manage behavior settings for Microsoft Dataverse.
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/04/2022
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 search.audienceType: 
   - admin
 ---
