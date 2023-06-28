@@ -30,7 +30,7 @@ Use collaboration settings to adjust how collaboration features work in Power Pl
 
 - **Model-driven apps**:
 
-  - **Show other people when they're using the same form**: <!-- EDITOR'S NOTE: I'm not sure how to describe this setting. Can you fill in the blanks? -->
+  - **Show other people when they're using the same form**: When you're working on a record, you can also see other users who are working on the same record if this setting is set to **On**.
 
   - **End users can add and join Teams meetings from appointments in model-driven apps**: Teams meetings in model-driven apps include a **Join** button to allow users to easily join the call.
 
