@@ -26,7 +26,7 @@ Use collaboration settings to adjust how collaboration features work in Power Pl
 
 [Make sure you have the System Administrator security role](/powerapps/user/view-your-user-profile) or equivalent permissions to change the collaboration settings. If you don't, ask your system administrator.
 
-## User experiences
+## End user experiences
 
 - **Model-driven apps**:
 
