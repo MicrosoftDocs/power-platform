@@ -6,9 +6,9 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/14/2023
 ms.subservice: admin
-ms.author: fikaradz 
+ms.author: fikaradz
 ms.reviewer: sericks
-search.audienceType: 
+search.audienceType:
   - admin
 search.app:
   - D365CE
@@ -28,20 +28,24 @@ Use collaboration settings to adjust how collaboration features work in Power Pl
 
 ## User experiences
 
-- Model-driven apps
+- **Model-driven apps**:
 
-  - Show modern share on views and dashboards (preview): The **Share** button is shown in views and dashboards, which makes it easy to copy links and share them with others.
+  - **Show other people when they're using the same form**: <!-- EDITOR'S NOTE: I'm not sure how to describe this setting. Can you fill in the blanks? -->
 
-- Enable sharing
+  - **End users can add and join Teams meetings from appointments in model-driven apps**: Teams meetings in model-driven apps include a **Join** button to allow users to easily join the call.
 
-  - Allow users to share read-only links to records with other users from this environment: Allows users who have the share privilege to give read-only access to records when they share them with the **Specific people** option selected.
+  - **Show modern share on views and dashboards (preview)**: The **Share** button is shown in views and dashboards, which makes it easy to copy links and share them with others.
 
-- Team integration
+- **Enable sharing**:
 
-  - Show record name and type to unauthorized users when unfurling links in Teams chats: When a link is pasted into a Microsoft Teams chat, display the name and type of record in a card.
+  - **Allow users to share read-only links to records with other users from this environment**: Users who have the share privilege can give read-only access to records when they share them with the **Specific people** option selected.
 
-  - Install the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams: Active users of Dynamics 365 apps and Power Apps model-driven apps get the Dynamics 365 app for Teams automatically installed in their Teams client.
+- **Teams integration**:
+
+  - **Show record name and type to unauthorized users when unfurling links in Teams chats**: When a link is pasted into a Teams chat, display the name and type of record in a card.
+
+  - **Install the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams**: Active users of Dynamics 365 apps and Power Apps model-driven apps get the Dynamics 365 app for Teams automatically installed in their Teams client.
 
 ## App authoring experiences
 
-- Coauthoring (preview): Enable [coauthoring](/power-apps/maker/model-driven-apps/coauthoring), which lets people simultaneously edit model-driven apps together
+- **Coauthoring (preview)**: Enable [coauthoring](/power-apps/maker/model-driven-apps/coauthoring), which lets people simultaneously edit model-driven apps together.
