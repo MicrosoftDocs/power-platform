@@ -1,13 +1,13 @@
 ---
 title: "Add or remove sample data  | MicrosoftDocs"
 description: Add or remove sample data
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/07/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

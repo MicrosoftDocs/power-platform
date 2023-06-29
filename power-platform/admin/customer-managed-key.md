@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile
 ms.topic: how-to
-ms.date: 06/19/2023
+ms.date: 06/22/2023
 ms.custom: template-how-to
 ---
 # Manage your customer-managed encryption key
@@ -169,14 +169,18 @@ In Azure, perform the following steps:
    1. If you made changes, select **Save**.
 
    :::image type="content" source="media/cmk-key-vault-purge-protect.png" alt-text="Enable purge protection on the key vault":::
+##### Create RSA keys
 1. Create or import a key that has these properties:
    1. On the **Key Vault** properties pages, select **Keys**.
    1. Select **Generate/Import**.
    1. On the **Create a key** screen set the following values, and then select **Create**.
       - **Options**: **Generate**
       - **Name**: Provide a name for the key
-      - **Key type**: **RSA** or **RSA-HSM**
+      - **Key type**: **RSA**
       - **RSA key size**: **2048**
+
+##### Import protected keys for hardware security modules (HSM)
+You can use your protected keys for hardware security modules (HSM) to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. For more information, see [Supported HSMs](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) [Import HSM-protected keys to Key Vault (BYOK)](/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
 
 #### Encrypt your environment with key from Azure Key Vault with private link (preview)
 
@@ -208,7 +212,7 @@ You can either create a [new key vault and establish a private link connection](
 
 ### Enable the Power Platform enterprise policies service for your Azure subscription
 
-Register Power Platform as a resource provider. You only need to do this task once.
+Register Power Platform as a resource provider. You only need to do this task once for each Azure subscription where your Azure Key vault resides. You need to have access rights to the subscription in order to register the resource provider.
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/) and go to **Subscription** > **Resource providers**.
 1. In the list of **Resource providers**, search for **Microsoft.PowerPlatform**, and **Register** it.

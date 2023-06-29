@@ -1,12 +1,12 @@
 ---
 title: "Administer customer engagement apps in Dynamics 365  | MicrosoftDocs"
 description: Administer customer engagement apps
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 09/03/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

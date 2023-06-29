@@ -1,12 +1,12 @@
 ---
 title: "About Microsoft Cloud Australia  | MicrosoftDocs"
 description: About Microsoft Cloud Australia
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/20/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
 ---
