@@ -21,7 +21,7 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
+## Dynamics 365 for phones and tablets is deprecated for online users and replaced by Power Apps
 
 Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) will only support on-premise users. Online users will need to [migrate to the Power Apps mobile app](dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
 
