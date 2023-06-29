@@ -388,7 +388,7 @@ Using these steps, you set up an Azure AD app registration that is used in a clo
 
 ### Update environment variables
 
-[Update the environment variables](faq.md#update-environment-variables) that hold the client ID and secret as shown in the following table. You can store the client secret either in plain text in the **Command Center - Client Secret** environment variable (not recommended) or create store the client secret in Azure Key Vault and reference it in the **Command Center - Client Azure Secret** environment variable (recommended). Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)
+[Update the environment variables](faq.md#update-environment-variables) that hold the client ID and secret as shown in the following table. You can store the client secret either in plain text in the **Command Center - Client Secret** environment variable (not recommended) or create store the client secret in Azure Key Vault and reference it in the **Command Center - Client Azure Secret** environment variable (recommended). Review the required permissions to [use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview).
 
 >[!NOTE]
 > The flow using this environment variable is configured with a condition to expect either the Command Center - Client Secret or the Command Center - Client Azure Secret environment variable. It is not necessary to edit the flow or command center application to work with Azure Key Vault.
