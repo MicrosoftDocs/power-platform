@@ -3,7 +3,7 @@ title: "Tenant settings"
 description: "Review and configure tenant-level settings linked from this page." 
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 06/30/2023
+ms.date: 06/29/2023
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:

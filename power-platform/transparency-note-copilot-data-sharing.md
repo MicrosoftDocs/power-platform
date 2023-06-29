@@ -1,8 +1,8 @@
 ---
-title: "Transparency note for data sharing for Copilot AI features in Microsoft Power Platform"
-description: "The transparency note describes data sharing for Copilot AI features in Power Platform and how Microsoft responsibly uses your data."
-author: KumarVivek 
-ms.date: 05/26/2023
+title: "Transparency note for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform"
+description: "The transparency note describes the optional data sharing setting for Copilot AI features in Dynamics 365 and Power Platform and how Microsoft responsibly uses your data."
+author: amishastri 
+ms.date: 06/29/2023
 ms.custom: 
   - transparency-note
 ms.topic: article
@@ -10,46 +10,49 @@ ms.author: amishastri
 ms.reviewer: kvivek
 ---
 
-# Transparency note for optional data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features 
+# Transparency note for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform
 
-This transparency note describes information related to optional data sharing to improve Dynamics 365 Copilot and Power Platform Copilot AI features and how Microsoft responsibly uses your data. 
+This transparency note describes information related to optional data sharing to improve Dynamics 365 Copilot and Power Platform Copilot AI features and how Microsoft responsibly uses your data.
 
-## What is data sharing for Copilot AI features?   
+## What is data sharing for Copilot AI features?
 
-Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs and telemetry. This setting allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s machine learning models, features, services, and related systems.     
+Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s machine learning models, features, services, and related systems.
 
-## What are the benefits of opting in?   
+## What are the benefits of opting in?
 
-Sharing your data can benefit you in two ways:   
-- Existing Copilot AI features will become more effective as the models learn from and adapt to aggregate patterns observed in data shared through the program.   
-- We may derive new models that power new AI features in Dynamics 365 and Power Platform.    
+Sharing your data can benefit you in two ways:
 
-## If I've opted in, how can I withdraw my consent? 
+- Existing Copilot AI features will become more effective as the models learn from and adapt to aggregate patterns observed in data shared through the program.
+- We may derive new models that power new AI features in Dynamics 365 and Power Platform.
 
-By default, the data sharing option is disabled for you. After you opt-in, you can opt out any time by going to the **Settings** > **Tenant Settings** page in the Power Platform admin center and turning off **Data sharing for Copilot AI features** > **Enable Data Sharing** toggle. More information: [Tenant settings](admin/tenant-settings.md)
+## If I've opted in, how can I withdraw my consent?
 
-## What happens when I withdraw my consent? 
+By default, the data sharing option is disabled for you. After you opt in, you can opt out any time by going to the **Settings** > **Tenant Settings** page in the Power Platform admin center and turning off the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI features** toggle. More information: [Tenant settings](admin/tenant-settings.md)
 
-You own your data. Microsoft will use your data only to provide the services we've agreed upon and for the purposes that are compatible with providing those services. Your data remains yours and we don't share it. If you leave this program, all your data is deleted within 30 days of opting out. 
+## What happens when I withdraw my consent?
 
-## Who has access to my data? 
+You own your data. Microsoft will use your data only to provide the services we've agreed upon and for the purposes that are compatible with providing those services. Your data remains yours and we don't share it. If you leave this program, all your data is deleted within 30 days of opting out.
 
-Access to customer data is strictly controlled. Your data can be viewed only by those Microsoft employees who must view your data and have authorized access.  
+## Who has access to my data?
 
-## What operational factors and settings allow for effective and responsible use of the system? 
+Access to customer data is strictly controlled. Your data can be viewed only by the Microsoft employees who must view your data and have authorized access.  
 
-Your data can only be accessed by Microsoft personnel with elevated access permissions. Your data is stored in your geographic data boundaries with a 30-day retention policy. 
+## What operational factors and settings allow for effective and responsible use of the system?
 
-## What about data privacy? 
+Your data can only be accessed by Microsoft personnel with elevated access permissions. Your data is stored in your geographic data boundaries with a 30-day retention policy.
 
-All data is handled as per the Copilot data security and privacy guidelines explained in [Transparency note for Copilot data security and privacy in Microsoft Power Platform](transparency-note-copilot-data-security-privacy.md). 
+## What about data privacy?
 
-## What about Customer Lockbox? 
+All data is handled as per the Copilot data security and privacy guidelines explained in [Transparency note for Copilot data security and privacy in Microsoft Power Platform](transparency-note-copilot-data-security-privacy.md).
 
-[Customer Lockbox](admin/about-lockbox.md) won't apply to the access and manual review of customer data shared using this setting. 
+## What about Customer Lockbox?
+
+[Customer Lockbox](admin/about-lockbox.md) won't apply to the access and manual review of customer data shared using this setting.
 
 ### Related content
 
-[Manage tenant settings](/power-platform/admin/tenant-settings)
+[Manage tenant settings](/power-platform/admin/tenant-settings)<br/>
+[Transparency notes for Microsoft Power Platform](transparency-note-overview.md)<br/>
+[Transparency notes for Dynamics 365](/dynamics365/transparency-note-overview)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
