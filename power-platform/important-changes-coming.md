@@ -23,7 +23,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
 
-Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) will only support on-premise users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
+Effective January 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
 
 ## jQuery 2.1.1 to be removed in model-driven apps
 
