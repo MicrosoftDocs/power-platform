@@ -2,7 +2,6 @@
 title: "Create templates for articles  | MicrosoftDocs"
 description: Create templates for articles
 author: shubhadaj
-manager: shujoshi
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -11,11 +10,6 @@ ms.subservice: admin
 ms.author: shujoshi
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Create templates for articles
 

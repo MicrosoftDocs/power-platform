@@ -2,27 +2,19 @@
 title: "Notify bot users in Teams with proactive messages"
 description: "Use Power Automate flows to send proactive messages to bot users in Teams, with updates to their conversations, requests for information, and more."
 keywords: "PVA"
-ms.date: 08/26/2022
+ms.date: 04/21/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: micchow
 ms.custom: "teams, flow, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Send proactive messages Microsoft Teams (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-proactive-message.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-proactive-message-teams.md)
+# Send proactive messages Microsoft Teams
 
 After you've [published your bot](publication-fundamentals-publish-channels.md) and [made the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md), you can notify users ("recipients") in Microsoft Teams with proactive messages. Proactive messages use Power Automate flows to deliver their content, and are useful in many scenarios, including:
 
@@ -324,6 +316,12 @@ When the flow runs, each user in the security group will receive the proactive m
 
 Normally when sending a proactive message to multiple recipients, your bot will send one message after another. However in some situations it may be more ideal to send the message to multiple recipients at the same time.
 
+> [!WARNING]
+>   
+> All proactive messages from Power Virtual Agents are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
+>
+> If you are sending messages to a large group of recipients, you'll see errors if you hit the throttling limit. You can reduce the degree of parallelism, or reduce the number of recipients in the group.
+
 1. In the **Apply to each** action, select the three horizontal dots (**. . .**) and then **Settings**.
 
     :::image type="content" source="media/advanced-proactive-message/node-settings.png" alt-text="Settings under the more options menu.":::
@@ -379,3 +377,5 @@ You can use the returned status code to define different follow-up behaviors in 
 | 200         | True                | Message is successfully delivered.                                                             |
 | 100         | False               | Message couldn't be delivered because the recipient doesn't have the bot installed.            |
 | 300         | False               | Message couldn't be delivered because the recipient is in an active conversation with the bot. |
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

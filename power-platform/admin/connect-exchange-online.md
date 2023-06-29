@@ -10,11 +10,6 @@ ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Connect to Exchange Online
 
@@ -167,13 +162,17 @@ To approve emails for customer engagement apps, a user requires:
 
 ### Approve your own user mailbox
 
-A Dynamics 365 user can approve their own user mailbox if all of these conditions are met: 
+You can approve your own user mailbox if all of these conditions are met: 
 
-- Their UPN matches the email address on the mailbox.
+- Your User Principal Name (UPN) matches the email address in your mailbox record.
 
-- The user has **Approve Email Addresses for Users or Queues** privilege.
+- The OrgDBOrgSetting [RequirePrivilegeToSelfApproveEmailAddress](../admin/OrgDbOrgSettings.md) setting is disabled (default) or you have the [Approve Email Addresses for Users or Queues](connect-exchange-online.md#add-the-approve-email-addresses-for-users-or-queues-privilege) privilege.
+
+- You have a minimum of User-level Write privileges on the Mailbox table.   
 
 - The mailbox is not a queue mailbox.
+
+If **RequirePrivilegeToSelfApproveEmailAddress** is disabled (default) and you do not have the **Approve Email Addresses for Users or Queues** privilege, the **Approve Email** button does not appear. However, if you select **Test & Enable Mailbox** and the conditions mentioned above are met, the email address in your mailbox will be approved as part of the test and enable process.
 
 ### Delegate mailbox approval
 

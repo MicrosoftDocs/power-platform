@@ -2,17 +2,14 @@
 title: Programmability and Extensibility - PowerShell - Getting started | Microsoft Docs
 description: PowerShell getting started with Microsoft Power Platform programmability tools.
 author: laneswenka
-ms.reviewer: jimholtz
-ms.custom: intro-internal
-ms.component: pa-admin
+ms.reviewer: kvivek
+ms.collection: get-started
 ms.topic: reference
-ms.date: 08/05/2021
+ms.date: 03/06/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-search.app:
-  - Powerplatform
 ---
 
 # Get started with PowerShell for Power Platform Administrators
@@ -43,8 +40,8 @@ Add-PowerAppsAccount -Endpoint prod -TenantID $tenantId -ApplicationId $appId -C
 ### Prerequisite
 To perform the administration operations in the cmdlets, you'll need the following:
 
-- Any of these roles—Global admins, Microsoft Azure Active Directory Global admins, or Dynamics 365 admin—can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the Power Platform admin center at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
+- Any of these roles from Azure Active Directory, Tenant admin, Power Platform administrator, Dynamics 365 Service Administrator, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the Power Platform admin center at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
-- Microsoft 365 Global admin, Azure Active Directory Global Administrator, or Dynamics 365 admin permissions are required if you need to search through another user's resources. Note that environment admins only have access to those environments and environment resources for which they have permissions.
+- Microsoft 365 Global admin, Azure Active Directory Global Administrator, Power Platform administrator, or Dynamics 365 administrator permissions are required if you need to search through another user's resources. Note that environment admins only have access to those environments and environment resources for which they have permissions.
 
 - For Dataverse for Teams environments, you must be either a Microsoft 365 Global Admin, Azure Active Directory Global Administrator, or Power Platform Administrator to manage environments from which you are not the owner of the team in Microsoft Teams.   

@@ -1,20 +1,15 @@
 ---
 title: "Detect duplicate data with match codes and rules"
 description: "Learn about duplicate detection rules for data, including match codes, and their limitations for Dynamics 365 records."
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/16/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Detect duplicate data so you can fix or remove it
 

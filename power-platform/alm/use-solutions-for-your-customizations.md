@@ -9,13 +9,8 @@ ms.topic: "article"
 author: "Mattp123"
 ms.subservice: alm
 ms.author: "matp"
-manager: "kvivek"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - PowerAutomate
-  - D365CE
 ---
 
 # Use a solution to customize

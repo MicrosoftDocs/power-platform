@@ -1,23 +1,22 @@
 ---
-title: "CoE CLI development"
+title: "CoE CLI development (Deprecated)"
 description: "Overview of development for Center of Excellence Command-Line interface commands"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-manager: pladhani
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/23/2023
 
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
-# CoE CLI development
+# CoE CLI development (Deprecated)
+
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 This section outlines the following key sections on the CoE CLI. The information below can help guide you in making contributions back to the open-source repository.
 

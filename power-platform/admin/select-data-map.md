@@ -1,20 +1,15 @@
 ---
 title: "Select a data map | MicrosoftDocs"
 description: Select a data map
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/19/2020
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Select a data map

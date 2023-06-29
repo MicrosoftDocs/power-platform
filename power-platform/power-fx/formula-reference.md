@@ -4,16 +4,14 @@ description: Reference information for functions, signals, and enumerations in P
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm-msft
+ms.reviewer: mkaur-msft
 ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
-  - tapanm-msft
+  - mduelae
   - gregli-msft
   - jorisdg
 ---
@@ -107,6 +105,8 @@ Other elements include:
 
 **[Connection](reference/signals.md)** – Returns information about your network connection.
 
+**[Copy](reference/function-copy.md)** - Copies text to the clipboard on the device where the app is running.
+
 **[Count](reference/function-table-counts.md)** – Counts table records that contain numbers.
 
 **[Cos](reference/function-trig.md)** – Returns the cosine of an angle specified in radians.
@@ -157,7 +157,7 @@ Other elements include:
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
 
-**[Error](reference/function-iferror.md)** – Create a custom error or pass throguh an error.
+**[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
 
 **[Errors](reference/function-errors.md)** – Provides error information for previous changes to a data source.
 
@@ -189,7 +189,10 @@ Other elements include:
 
 **[HashTags](reference/function-hashtags.md)** – Extracts the hashtags (#strings) from a string.
 
+**[Host](reference/object-host.md)** - Provides information about the current host running the app.
+
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
+
 
 ## I
 
@@ -297,6 +300,8 @@ Other elements include:
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
+**[PDF](reference/function-pdf.md)** - Export contents from the current screen to an object for use in multiple scenarios.
+
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
 
 **[PlainText](reference/function-encode-decode.md)** – Removes HTML and XML tags from a string.
@@ -360,6 +365,8 @@ Other elements include:
 **[Self](reference/operators.md#self-and-parent-operators)** – Provides access to the properties of the current control.
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
+
+**[SendAppNotification (preview)](reference/function-send-app-notification.md)** – Send an in-app notification with optional actions to a recipient.
 
 **[Set](reference/function-set.md)** – Sets the value of a global variable.
 

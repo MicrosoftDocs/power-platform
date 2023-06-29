@@ -1,21 +1,15 @@
 ---
 title: "Set up Business Management options | MicrosoftDocs"
 ms.custom: 
-author: jimholtz
-manager: kvivek
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Set up Business Management options
 <!-- This is a topic linked from Help and is not in the TOC. -->

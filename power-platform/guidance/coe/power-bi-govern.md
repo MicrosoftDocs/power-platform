@@ -2,24 +2,19 @@
 title: "Govern with the CoE Power BI dashboard | MicrosoftDocs"
 description: "Perform risk assessments and identifying critical, orphaned, or unused resources with the CoE Power BI dashboard"
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 06/06/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Govern with the CoE Power BI dashboard
 
-As an admin, you'll want to use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, archive it, or delete it.
+As an admin, you want to use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, archive it, or delete it.
 
 ## App license assessment
 
@@ -57,9 +52,9 @@ Set **Shared with Everyone** to **True**, or select the **Number of Shared Users
 
 - Widely shared resources (shared with the entire tenant or many individual users) might need a stronger support model, or you might need to review the number of people they're shared with.
 
-- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise, (a) Your entire org will see the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them), and (b) If a user doesn't have access to the underlying data source, they'll receive an error message when they try to open the app, which can cause an increase in support tickets and confusion.
+- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise, (a) Your entire org sees the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them), and (b) If a user doesn't have access to the underlying data source, they receive an error message when they try to open the app, which can cause an increase in support tickets and confusion.
 
-- Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user leaves the department or job role they'll still see the app and be able to access the information. Therefore, it is recommended to share role-specific apps with an Azure AD group instead.
+- Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user leaves the department or job role they'll still see the app and be able to access the information. Therefore, it's recommended to share role-specific apps with an Azure AD group instead.
 
 ### Identify orphaned apps
 
@@ -95,7 +90,7 @@ Some typical assessments an admin might perform are described in the following s
 
 ### Identify suspended flows
 
-- Flows will be suspended due to using a combination of connectors that conflict with the company [data loss prevention (DLP) policies](/power-automate/prevent-data-loss) or billing restrictions.
+- Flows are suspended due to using a combination of connectors that conflict with the company [data loss prevention (DLP) policies](/power-automate/prevent-data-loss) or billing restrictions.
 
 - Find those flows, and work with the maker to decide whether the flow is still needed, and if so, what policy violation they've encountered. Educate the maker or modify the DLP policy as needed.
 
@@ -119,7 +114,7 @@ Select **SQL Server** in the **Connector** drop-down list on the rightmost filte
 
 ### Identify flow actions
 
-- Specific actions or connectors might require you to gather additional information from the maker or educate them on usage. Some examples might be the Forward Email action of the Outlook connector or HTTP requests.
+- Specific actions or connectors might require you to gather more information from the maker or educate them on usage. Some examples might be the Forward Email action of the Outlook connector or HTTP requests.
 
 Select actions or connectors you're interested in from the **Connector** and **Action** lists on the rightmost side of this page to find flows that use those connectors or actions.
 
@@ -149,11 +144,11 @@ Select **Blank** in the **Owner** drop-down list on the rightmost filter pane to
 
 Using the CoE dashboard, admins also have the ability to identify unused apps and flows by monitoring their archive score: in short, the higher the score, the more likely it is that you can safely archive the resource.
 
-- The highest possible score for an app is 6. A score of 6 represents an app that hasn't been modified since it was created, is using a non-production word like  _test_ or _demo_ in the title, was created over three years ago, and was likely created from a template.
+- The highest possible score for an app is 6. A score of 6 represents an app that hasn't been modified since it was created, is using a nonproduction word like  _test_ or _demo_ in the title, was created over three years ago, and was likely created from a template.
 
-- The highest possible score for a flow is 8. A score of 8 represents a flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over three years ago, was likely created from a template, is in a stopped state, and isn't complex (contains fewer than five actions).
+- The highest possible score for a flow is 10. A score of 10 represents a flow that hasn't been modified since it was created, is using a nonproduction word like _test_ or _demo_ in the title, was created over three years ago, was likely created from a template, is in a stopped state, doesn't have an owner, and isn't complex (contains fewer than five actions).
 
-- The highest possible score for a desktop flow is 4. A score of 4 represents a desktop flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over a year ago, and was likely created from a template.
+- The highest possible score for a desktop flow is 4. A score of 4 represents a desktop flow that hasn't been modified since it was created, is using a nonproduction word like _test_ or _demo_ in the title, was created over a year ago, and was likely created from a template.
 
 :::row:::
    :::column span="":::
@@ -170,13 +165,13 @@ The **Archive Score** is the sum of multiple criteria:
 
 - Has the app been modified since it was created? (+1)
 
-- Does the app name use non-production words such as *test*, *demo*, or *sample*? (+1)
+- Does the app name use nonproduction words such as *test*, *demo*, or *sample*? (+1)
 
 - When was the app last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
 
 - Is this app likely a template, or are there multiple apps with the same name? (+1)
 
-A [tooltip](/power-bi/desktop-tooltips) shows additional details like the number of launches and last launched date.
+A [tooltip](/power-bi/desktop-tooltips) shows more details like the number of launches and last launched date.
 
 ![App Archive.](media/pb-33.png "App Archive")
 
@@ -190,7 +185,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 - Has the flow been modified since it was created? (+1)
 
-- Does the flow name use non-production words such as *test*, *demo*, or *sample*? (+1)
+- Does the flow name use nonproduction words such as *test*, *demo*, or *sample*? (+1)
 
 - When was the flow last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
 
@@ -198,9 +193,9 @@ The **Archive Score** is the sum of multiple criteria:
 
 - What is the flow state? (+2 for stopped, +1 for suspended)
 
-- How complex is the flow, based on the number of unique actions? (-1 if it's complex, because that indicates a user has spent a lot of time putting it together)
+- Does the flow have an owner?(+2 if no owner)
 
-A tooltip shows additional details like the number of launches and last launched date, in addition to the scores for the above criteria.
+- How complex is the flow, based on the number of unique actions? (-1 if it's complex, because that indicates a user has spent much time putting it together)
 
 ![Flow Archive.](media/pb-24.png "Flow Archive")
 
@@ -210,13 +205,13 @@ The **Archive Score** is the sum of multiple criteria:
 
 - Has the flow been modified since it was created? (+1)
 
-- Does the flow name use non-production words such as *test*, *demo*, or *sample*? (+1)
+- Does the flow name use nonproduction words such as *test*, *demo*, or *sample*? (+1)
 
 - When was the flow last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
 
 - Is this flow likely a template, or are there multiple flows with the same name? (+1)
 
-A tooltip shows additional details like the number of launches and last launched date, in addition to the scores for the above criteria.
+A tooltip shows more details like the number of launches and last launched date, in addition to the scores for the above criteria.
 
 ![Desktop flow Archive.](media/pb-27.png "Desktop flow Archive")
 
@@ -228,7 +223,7 @@ The **App Detail** page provides you with rich information about this resource, 
 
 With the embedded app, you don't have to leave the Power BI dashboard to take action:
 
-- You can grant yourself or others ownership. Note that this will trigger an email notification to the users you share the app with.
+- You can grant yourself or others ownership. This will trigger an email notification to the users you share the app with.
 
 - You can delete the app.
 
@@ -244,7 +239,7 @@ The **Flow Detail** page provides you with richer information about this resourc
 
 With the embedded app, you don't have to leave the Power BI dashboard to take action:
 
-- You can grant yourself or others ownership. Note that this will trigger an email notification to the users you share the flow with.
+- You can grant yourself or others ownership. This will trigger an email notification to the users you share the flow with.
 
 - You can export the flow.
 
@@ -258,7 +253,7 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 ### Desktop flow Detail
 
-The **desktop flow Detail** page provides you with richer information about the runs of this desktop flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the desktop flow has failed.
+The **desktop flow Detail** page provides you with richer information about the runs of this desktop flow. You'll be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the desktop flow has failed.
 
 ![Desktop flow Details.](media/pb-34.png "Desktop flow Details")
 

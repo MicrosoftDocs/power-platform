@@ -2,24 +2,18 @@
 title: "Get topic suggestions from online content (contains video)"
 description: "Use existing help and support content to quickly generate new topics for your Power Virtual Agents bot."
 keywords: "PVA"
-ms.date: 08/24/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.custom: authoring, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Create topics from existing online support content
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-create-topics-from-web.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-create-topics-from-web-teams.md)
 
 You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you already have help or support content, such as FAQ pages or support sites.
 
@@ -100,7 +94,7 @@ First, you'll need to point to the webpages or online files from which you want 
 
 After the extraction is complete, you'll be shown the suggested topics for further review. Suggested topics aren't automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
 
-1. Select **Topics** on the side pane.
+1. In the navigation menu, select **Topics**.
 
 1. Select **Suggest topics**.
 
@@ -184,7 +178,7 @@ After the extraction process has been completed, the topic suggestions appear on
 
 Suggested topics are added to the **Existing** tab with their status set to **Off**. This way, topics won't be prematurely added to your bot.
 
-1. Select **Topics** on the side pane.
+1. In the navigation menu, select **Topics**.
 
 1. Go to the **Existing** tab.
 
@@ -192,7 +186,7 @@ Suggested topics are added to the **Existing** tab with their status set to **Of
 
     :::image type="content" source="media/advanced-create-topics-from-web/suggested-enable.png" alt-text="A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column." border="false":::
 
-### See also
+### Related topics
 
 - [Create your first bot](authoring-first-bot.md)  
 - [Create and edit topics](authoring-create-edit-topics.md)  

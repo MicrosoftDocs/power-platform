@@ -4,20 +4,14 @@ description: Learn how Microsoft Power Platform keeps your data secure.
 ms.date: 02/14/2022
 ms.service: power-platform
 ms.topic: overview
-ms.custom: 
-  - "admin-security"
-  - "intro-internal"
+ms.custom: "admin-security"
+ms.collection: get-started
 author: lancedMicrosoft
 ms.subservice: admin
 ms.author: lanced
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Security in Microsoft Power Platform
 

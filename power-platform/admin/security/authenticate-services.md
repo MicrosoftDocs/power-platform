@@ -4,20 +4,14 @@ description: Learn how Power Platform authenticates users.
 ms.date: 02/14/2022
 ms.service: power-platform
 ms.topic: conceptual
-ms.custom: 
-  - "admin-security"
-  - "intro-internal"
+ms.custom: "admin-security"
+ms.collection: get-started
 author: lancedMicrosoft
 ms.subservice: admin
 ms.author: lanced
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Authenticating to Power Platform services
 

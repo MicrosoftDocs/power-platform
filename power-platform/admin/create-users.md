@@ -1,21 +1,16 @@
 ---
 title: "Create users | MicrosoftDocs"
 description: About creating users.
-author: jimholtz
-ms.reviewer: jimholtz
+author: sericks007
+ms.reviewer: Kumarvivek
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: kvivek
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/26/2022
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Create users
 
@@ -92,9 +87,11 @@ The following table shows the fields that are managed in the **Users** section o
 </thead>
 <tbody>
 <tr><td>User Name</td><td>Username</td></tr>
-<tr><td>Full Name  </td><td>First name + Last name </td></tr>
+<tr><td>Full Name*  </td><td>Display Name </td></tr>
 <tr><td>Title </td><td>Job title </td></tr>
-<tr><td>Primary Email* </td><td>Email </td></tr>
+ <tr><td>First Name </td><td>First Name </td></tr>
+ <tr><td>Last Name </td><td>Last Name </td></tr>
+<tr><td>Primary Email** </td><td>Email </td></tr>
 <tr><td>Main Phone </td><td>Office phone</td></tr>
 <tr><td>Mobile Phone  </td><td>Mobile phone</td></tr>
 <tr><td>Fax  </td><td>Fax number  </td></tr>
@@ -102,8 +99,8 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>Address   </td><td>City   </td></tr>
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
-<tr><td>AzureActiveDirectoryObjectId**     </td><td>ObjectId   </td></tr>
-<tr><td colspan="2">* To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br />**object ID of a user or a service principal in Azure Active Directory</td></tr>
+<tr><td>AzureActiveDirectoryObjectId***     </td><td>ObjectId   </td></tr>
+<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br />** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br />*** object ID of a user or a service principal in Azure Active Directory.<br /></td></tr>
 </tbody>
 </table>
 

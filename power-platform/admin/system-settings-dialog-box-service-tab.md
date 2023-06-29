@@ -1,20 +1,15 @@
 ---
 title: "System Settings Service tab | MicrosoftDocs"
 description: System Settings Service tab 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/10/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # System Settings Service tab
 

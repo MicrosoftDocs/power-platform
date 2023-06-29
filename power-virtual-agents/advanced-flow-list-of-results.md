@@ -2,14 +2,15 @@
 title: Return a list of results
 description: Return a list of results from a Power Automate flow to a Power Virtual Agents bot.
 keywords: "PVA, flow, automate"
-ms.date: 07/28/2022
-ms.service: power-virtual-agents
+ms.date: 03/24/2023
+
 ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
-manager: shellyha
+author: iaanw
+ms.author: iawilt
+manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

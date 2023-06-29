@@ -1,28 +1,21 @@
 ---
-title: "Create a developer environment"
-description: "Sign up for the developer plan and create a developer environment"
+title: "Create a developer environment with the Power Apps Developer Plan"
+description: "Sign up for the Power Apps Developer Plan and create a developer environment"
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-ms.date: 11/08/2022
+ms.date: 03/14/2023
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
   - developer
-search.app: 
-  - PowerPlatform
-  - PowerApps
-  - Azure
 contributors:
  - JimDaly
  - phecke 
 ---
+# Create a developer environment with the Power Apps Developer Plan
 
-# Create a developer environment
-
-The simplest way to get access to a [Power Platform environment](/power-platform/admin/environments-overview) is to sign up for the Power Apps Developer plan. You can explore Power Platform at full potential for learning at no cost.
-
-To fully use it as a developer, you'll need an Azure account and a work account. This article will guide you through the process for creating a Power Platform environment and a test tenant if needed.
+To fully use the [Power Apps Develper Plan](plan.md) as a developer, you'll need an Azure account and a work account. This article will guide you through the process for creating a Power Platform environment and a test tenant if needed.
 
 ## Where do I start?
 
@@ -73,9 +66,9 @@ You'll need a work account or a microsoft account to sign up. Use either your pe
 5. Review the terms and conditions. You'll need to select the checkbox before you can join.
 6. Optionally, select the **I would like to hear from the Microsoft 365 Developer Program** checkbox if you want to hear from Microsoft about new capabilities and other updates.
 7. Select **Next**.
-    
+
     :::image type="content" source="media/create-developer-environment-m365-signup.png" alt-text="Sign-up for the Microsoft 365 Developer Program":::
-    
+
 8. On the Microsoft 365 Developer Program Preferences page, let us know your preferences so we can personalize your experience, including:
     - The industry that you work in.
     - The type of applications or solutions that you're interested in developing.

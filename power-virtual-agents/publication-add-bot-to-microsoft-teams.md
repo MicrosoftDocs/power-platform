@@ -2,26 +2,17 @@
 title: "Add a chatbot to Microsoft Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
-ms.date: 01/25/2022
-
+ms.date: 05/23/2023
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.custom: "publication, authoring, ceX, teams"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Add a chatbot to Microsoft Teams
-
-[!INCLUDE[public preview disclaimer](includes/public-preview-disclaimer-prod.md)]
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/publication-add-bot-to-microsoft-teams-teams.md)
 
 Now that you have published your bot, you can make your bot available to users in Microsoft Teams so you, your teammates, and the broader organization can interact with it. You need to [publish the bot at least once](publication-fundamentals-publish-channels.md) before users can interact with the bot in Microsoft Teams.
 
@@ -55,7 +46,7 @@ After publishing your bot at least once, you can connect your bot to the Microso
 
 **Connect to Microsoft Teams:**
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -70,7 +61,7 @@ After publishing your bot at least once, you can connect your bot to the Microso
 
 Providing the right description and appearance for the bot before making it available to other users is important as it educates them on what the bot's purpose is and its branding, when applicable.
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -89,7 +80,7 @@ Providing the right description and appearance for the bot before making it avai
     - Privacy Statement
     - Terms of use
 
-       You should provide this information to keep your user informed about the bot. See the [Privacy statement and terms of use](teams/publication-terms-of-use-teams.md) topic for more details and examples.
+       You should provide this information to keep your user informed about the bot. See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
 
 1. Select **Save** to return to the screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
 
@@ -105,11 +96,11 @@ After you have published a bot, you can add the bot to your own version of Micro
 > [!IMPORTANT]
 > New content in a freshly published bot won't appear in conversations that are currently ongoing. After 30 minutes of idle time, the bot will be updated.  
 >
-> You can type *Start over* in an existing conversation to start a new conversation right away and see the latest updates to the bot.
+> You can type `Start over` in an existing conversation to start a new conversation right away and see the latest updates to the bot.
 
 You should add your bot to your own version of Teams before sharing it with others.
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -119,7 +110,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 ## Share a link so others can install the bot
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -147,7 +138,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-bbyc-teams.PNG" alt-text="The Built by your colleagues section as at the bottom of the Built for your org section in the Teams app store.":::
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -174,7 +165,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 You can remove the bot from showing in the **Built by your colleagues** section. This does not impact users who have already installed the bot.
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -205,7 +196,7 @@ Before submitting the bot to your organization, make sure:
 
 #### Submit for the Built by your org section
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -259,14 +250,14 @@ In Microsoft Teams, you can [add bots to teams](/microsoftteams/platform/bots/ho
 
 This option allows users to add the bot to any team that they're part of when adding the bot in Microsoft Teams.
 
-After enabling this option, any user who [installs the bot from the Teams app store](teams/publication-add-bot-to-microsoft-teams-teams.md#install-a-bot-as-an-app-in-microsoft-teams) or via the [installation link](teams/publication-add-bot-to-microsoft-teams-teams.md#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
+After enabling this option, any user who [installs the bot from the Teams app store](publication-add-bot-to-microsoft-teams.md#install-a-bot-as-an-app-in-microsoft-teams) or via the [installation link](publication-add-bot-to-microsoft-teams.md#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
 
 > [!IMPORTANT]
 > The bot will be configured to allow everyone in the organization to chat with it. This ensures all team members have permission to chat with the bot in team channels. It's highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
 
 To allow users to add a bot to a team:
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -288,7 +279,7 @@ Disabling this option will prevent users from adding a bot to a new team, but wo
 
 To disallow users from adding a bot to a team:
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -304,13 +295,16 @@ To disallow users from adding a bot to a team:
 
 Private greetings from a bot are useful for when you want team members to have one-on-one conversations with the bot without needing to manually install the bot themselves.
 
+> [!NOTE]
+> Private greeting configuration isn't supported for bots using the [upgraded unified authoring canvas](unified-authoring-conversion.md).
+
 When enabled, your bot will automatically start a conversation with team members. To customize the bot's greeting message, [modify the Greeting system topic](configure-bot-greeting.md#modify-the-system-greeting-topic-recommended).
 
 Consider how relevant the bot is to team members. Make sure the bot's greeting helps them understand what to do with it, describes its limitations and, most importantly, gets them comfortable interacting with it.
 
 To configure when a bot sends a private greeting:
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -328,7 +322,7 @@ To configure when a bot sends a private greeting:
 
 You can download the bot's Teams app manifest to make detail changes to the manifest directly and share with your admin or users in the tenant. You can also directly upload the app manifest into Microsoft Teams if your organization's policy allows you to [upload custom applications](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -348,7 +342,7 @@ Bots no longer show in the Microsoft Teams app store **Built by your colleague**
 
 For bots that are approved by an admin, the bots will continue to be shown in the Microsoft Teams app store **Built by your org** section. You will need to contact your admin to remove the bot
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select **Microsoft Teams**.
 
@@ -362,8 +356,9 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 
 ## Known limitations
 
+- [Private greeting configuration](#configure-private-greeting-behavior) isn't supported for bots using the [upgraded unified authoring canvas](unified-authoring-conversion.md).
 - Currently, only the **Personal** and **Team** scopes are supported for Microsoft Teams. **Group chat** is not supported.
-- [Setting the bot avatar icon](customize-default-canvas.md) from the side pane under **Details** won't show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
+- [Setting the bot avatar icon](customize-default-canvas.md) on the details page won't show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Currently, if your bot supports [end-user authentication](advanced-end-user-authentication.md), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](/office/dev/store/validation-policies).
 - Disconnecting your bot from Teams might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.

@@ -2,13 +2,14 @@
 title: "Find community help and get support"
 description: "Use the Power Virtual Agents community forums to ask and get help and trips and ideas, or get support directly from Microsoft."
 keywords: "PVA"
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.custom: "fundamentals, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

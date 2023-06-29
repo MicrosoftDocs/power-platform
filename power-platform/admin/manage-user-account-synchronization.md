@@ -5,18 +5,13 @@ description: Manage user account synchronization
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/21/2021
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage user account synchronization 
 

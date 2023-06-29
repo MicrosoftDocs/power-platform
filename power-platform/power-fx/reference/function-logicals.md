@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 05/23/2019
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # And, Or, and Not functions in Power Apps

@@ -2,24 +2,18 @@
 title: "Use Microsoft Bot Framework skills"
 description: "Extend your bot and author complex bot dialogs using pro-code tools to build Microsoft Bot Framework skills that enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "authoring, extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
-ms.date: 9/22/2020
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.custom: "Azure, advanced-authoring, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Use Microsoft Bot Framework skills in Power Virtual Agents
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-use-skills.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-use-skills-teams.md)
 
 Power Virtual Agents enables you to extend your bot using Microsoft Bot Framework skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a skill and embed the skill within a Power Virtual Agents bot.
 

@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 04/26/2016
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Sort and SortByColumns functions in Power Apps
@@ -82,7 +81,7 @@ For the following examples, we'll use the **IceCream** [data source](/power-apps
 | **Sort( IceCream, Quantity )**<br><br>**SortByColumns( IceCream, "Quantity" )**                                                   | Sorts **IceCream** by its **Quantity** column. The **Quantity** column contains numbers, so the table is sorted numerically. By default, the sort order is ascending.                                                                                                                                                                                                                  | ![Sorted numerically.](media/function-sort/icecream-quantity-asc.png)                           |
 | **Sort( IceCream, Quantity, SortOrder.Descending )**<br><br>**SortByColumns( IceCream, "Quantity", SortOrder.Descending )**       | Sorts **IceCream** by its **Quantity** column. The **Quantity** column contains numbers, so the sort is done numerically. The sort order has been specified as descending.                                                                                                                                                                                                             | ![Sorted numerically and descending.](media/function-sort/icecream-quantity-desc.png)           |
 | **Sort( IceCream, Quantity + OnOrder )**                                                                                          | Sorts **IceCream** by the sum of its **Quantity** and **OnOrder** columns for each record individually. The sum is a number, so the table is sorted numerically. By default, the sort order is ascending. Since we are sorting by a formula and not by raw column values, there is no equivalent using **SortByColumns**.                                                              | ![Sorted numerically and ascending.](media/function-sort/icecream-total.png)                    |
-| **Sort( Sort( IceCream, OnOrder ), Quantity )**<br><br>**SortByColumns( IceCream, "OnOrder", Ascending, "Quantity", Ascending )** | Sorts **IceCream** first by its **OnOrder** column, and then by its **Quantity** column. Note that "Pistachio" rose above "Vanilla" in the first sort based on **OnOrder**, and then together they moved to their appropriate place based on **Quantity**.                                                                                                                             | ![Sorted with Pistachio above Vanilla.](media/function-sort/icecream-onorder-quantity.png)      |
+| **Sort( Sort( IceCream, OnOrder ), Quantity )**<br><br>**SortByColumns( IceCream, "OnOrder", SortOrder.Ascending, "Quantity", SortOrder.Ascending )** | Sorts **IceCream** first by its **OnOrder** column, and then by its **Quantity** column. Note that "Pistachio" rose above "Vanilla" in the first sort based on **OnOrder**, and then together they moved to their appropriate place based on **Quantity**.                                                                                                                             | ![Sorted with Pistachio above Vanilla.](media/function-sort/icecream-onorder-quantity.png)      |
 | **SortByColumns( IceCream, "Flavor", [&nbsp;"Pistachio",&nbsp;"Strawberry"&nbsp;] )**                                             | Sorts **IceCream** by it's **Flavor** column based on the single column table containing "Pistachio" and "Strawberry". Records which have a **Flavor** of "Pistachio" will appear first in the result, followed by records that contain "Strawberry". For values in the **Flavor** column that are not matched, such as "Vanilla", they will appear after the items that were matched. | ![Sorted with Pistachio above Strawberry.](media/function-sort/icecream-onflavor-sorttable.png) |
 
 ### Step by step
@@ -107,7 +106,7 @@ To run these examples yourself, create the **IceCream** data source as a [collec
 #### SortByColumns
 
 1. Add another button, and set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:<br>
-   **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
+   **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", SortOrder.Ascending, "Flavor", SortOrder.Descending ) )**
 
    The previous formula creates a third collection, named **SortByQuantity**, that contains the same data as **Ice Cream**. However, the new collection contains the data sorted numerically by the **Quantity** column in ascending order, and then by the **Flavor** column in descending order.
 

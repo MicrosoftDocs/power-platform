@@ -3,13 +3,14 @@ title: Call a flow as an action
 description: Call a Power Automate flow from a bot topic using an action node.
 keywords: "PVA, flow, automate"
 ms.date: 07/28/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
-manager: shellyha
+author: iaanw
+ms.author: iawilt
+manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 

@@ -2,31 +2,28 @@
 title: "Configure web channel security"
 description: "Use Direct Line tokens or secrets to secure access to your bots."
 keywords: "direct line, token, secret, access, secure, security, channels, PVA"
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: clmori
 ms.custom: configuration, ceX
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Configure web and Direct Line channel security
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](configure-web-security.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/configure-web-security-teams.md)
-
 When you create a Power Virtual Agents bot, it is immediately available in the **Demo website** and **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed.
 
-Users can find the bot ID directly from within Power Virtual Agents or by receiving it from someone.
+For the Microsoft Teams app, you can configure advanced web channel security options.
 
-Depending on the bot's capability and sensitivity that might not be desirable.
+> [!NOTE]
+> If you have a [Teams-only license, you can't generate secrets to enable secure access](requirements-licensing-subscriptions.md). Secure access tokens are created automatically for you and secure access is enabled by default.
+
+Users can find the bot ID directly from within Power Virtual Agents or by receiving it from someone. But, depending on the bot's capability and sensitivity that might not be desirable.
 
 With Direct Line-based security, you can enable access only to locations that you control by enabling secured access with Direct Line secrets or tokens.
 
@@ -47,7 +44,7 @@ Once this option is enabled, channels will need the client to authenticate their
 
 Any access to the bot that doesn't provide this security measure won't work.
 
-1. On the side pane, navigate to **Settings** > **Security** > **Web channel security**.
+1. In the navigation menu, under **Settings**, select **Security**. Then select the **Web channel security** tile.
 
     :::image type="content" source="media/configure-web-security/settings-web-channel.png" alt-text="Screenshot showing Web channel security highlighted on the Settings flyout.":::
 
@@ -77,13 +74,13 @@ Choose the security model that works best for your situation.
 > [!WARNING]
 > We strongly discourage exposing the secret in any code that runs in the browser, either hard-coded or transferred through a network call.  
 >
-> Acquiring the token using the secret in your service code is the most secured way to protect your PVA bot.
+> Acquiring the token using the secret in your service code is the most secured way to protect your Power Virtual Agents bot.
 
 ## Obtain the secrets
 
 You'll need the secret so you can specify it in your app's authorization header requests or similar.
 
-1. On the side pane, navigate to **Settings** > **Security** > **Web channel security**.
+1. In the navigation menu, under **Settings**, select **Security**. Then select the **Web channel security** tile.
 
 1. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon :::image type="content" source="media/configure-web-security/visibility-icon.png" alt-text="Visibility icon." border="false"::: to reveal the secret. A warning prompt will appear before you can reveal it.
 
@@ -184,7 +181,7 @@ HTTP/1.1 200 OK
 
 For more details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API - Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token&preserve-view=true) topic.
 
-## See also
+## Related topics
 
 - [Key Concepts - Publish your bot](publication-fundamentals-publish-channels.md)
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)

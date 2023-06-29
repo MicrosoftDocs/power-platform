@@ -2,7 +2,6 @@
 title: "Set up the Power Apps theming solution | MicrosoftDocs"
 description: "Setup instructions for the Power Apps theming solution, which contains a set apps, tables, custom controls and a component library.  The Theme editor app allows designers to create and manage themes."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Set up theming components
@@ -49,7 +44,7 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 
 ## Import the solution
 
-1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+1. Go to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit/releases/tag/CoEStarterKit-November2022), and download the Theming_x.x_managed.zip file from under **Assets**.
 
 1. Extract the zip file.
 
@@ -76,6 +71,5 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 1. Select **Close**.
 
 You can now [use the theming components](theming-components.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

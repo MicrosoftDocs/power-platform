@@ -10,11 +10,6 @@ author: NHelgren
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Integrate data into Microsoft Dataverse
 
@@ -60,6 +55,9 @@ There are three primary steps:
 3. Create a data integration project using a template (create or use predefined mappings for one or more entities).
 
 Once you create an integration project, you get the option to run the project manually and also set up a schedule-based refresh for the future. The rest of this article expands on these three steps.
+
+> [!NOTE]
+> The user interface for Data Integrator project management is hosted at <https://dataintegrator.trafficmanager.net>. Your organization policies may require adding this site to your allowlist to access the interface.
 
 ### How to create a connection
 

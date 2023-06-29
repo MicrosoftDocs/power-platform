@@ -1,20 +1,15 @@
 ---
 title: "For partners: Delegated administrator role"
 description: "Learn how a partner can be authorized to take on administrative tasks as a delegated admin to manage users, licenses, permissions, and domains."
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # For partners: the Delegated Administrator
 

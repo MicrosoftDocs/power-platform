@@ -4,20 +4,14 @@ description: Learn how Power Platform connects and authenticates to external dat
 ms.date: 02/14/2022
 ms.service: power-platform
 ms.topic: conceptual
-ms.custom: 
-  - "admin-security"
-  - "intro-internal"
+ms.custom: "admin-security"
+ms.collection: get-started
 author: lancedMicrosoft
 ms.subservice: admin
 ms.author: lanced
 ms.reviewer: tapanm
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 contributors:
   - tapanm-msft
   - lancedMicrosoft
@@ -50,7 +44,7 @@ In general, Power Platform services use connectors to work with external data so
 :::image type="content" source="./media/generaldataconnection.png" alt-text="A diagram that shows Power Platform back-end services working with an API Hub/API Management connector to reach external data connectors.":::
 
 1. The Power Platform service sends a connection request to the Power Apps Resource Provider (RP).
-1. The Power Apps RP asks the API Hub to create a connection and store the authentication credentials.
+1. The Power Apps RP asks the API Hub to create a connection and facilitate authentication token exchange.
 1. The Power Platform service sends a data query request to the API Management connector.
 1. The API Management connector sends a request to the consent service to get permission to access the data source.
 1. The consent service returns credentials to the API Management connector.

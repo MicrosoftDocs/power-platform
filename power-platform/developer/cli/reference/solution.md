@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI solution command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI solution command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 11/18/2022
+author: snizar007
+ms.author: snizar
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -150,9 +150,13 @@ Use one of these values:
 - `SouthAmerica`
 - `UnitedKingdom`
 - `France`
+- `SouthAfrica`
 - `Germany`
 - `UnitedArabEmirates`
 - `Switzerland`
+- `Norway`
+- `Singapore`
+- `Korea`
 - `USGovernment`
 - `USGovernmentL4`
 - `USGovernmentL5DoD`
@@ -173,6 +177,12 @@ Path to a file containing a JSON array rules and levels to override.  Accepted v
 #### `--ruleSet` `-rs`
 
 Select a rule set that will be executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default)
+
+#### `--saveResults` `-sav`
+
+Uses current environment to store solution analysis results which can be seen in Solution Health Hub App. By default, this argument is set to false
+
+This parameter requires no value. It is a switch.
 
 #### `--solutionUrl` `-u`
 
@@ -219,6 +229,12 @@ Use one or more of these values separated by commas:
 - `outlooksynchronization`
 - `relationshiproles`
 - `sales`
+
+#### `--localize` `-loc`
+
+Extract or merge all string resources into .resx files.
+
+This parameter requires no value. It is a switch.
 
 #### `--max-async-wait-time` `-wt`
 
@@ -354,12 +370,6 @@ Import the solution into Dataverse.
 
 
 ### Optional Parameters
-
-#### `--activate-flows` `-af`
-
-Turn on workflows specified in the deployment settings file using a specified user
-
-This parameter requires no value. It is a switch.
 
 #### `--activate-plugins` `-ap`
 
@@ -632,13 +642,19 @@ Use one or more of these values separated by commas:
 - `relationshiproles`
 - `sales`
 
+#### `--localize` `-loc`
+
+Extract or merge all string resources into .resx files.
+
+This parameter requires no value. It is a switch.
+
 #### `--max-async-wait-time` `-wt`
 
 Max asynchronous wait time in minutes. Default value is 60 minutes
 
 #### `--packagetype` `-p`
 
-When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'
+When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Both'
 
 #### `--processCanvasApps` `-pca`
 
@@ -802,15 +818,20 @@ Revision version for solution
 
 **Note**: The value must be a positive integer
 
+#### `--solutionPath` `-sp`
+
+Path to Dataverse solution directory or Solution.xml file.
+
 #### `--strategy` `-s`
 
 Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"
 
 Use one of these values:
 
-- `gittags`
-- `filetracking`
-- `solution`
+- `None`
+- `GitTags`
+- `FileTracking`
+- `Solution`
 
 [!INCLUDE [solution-version-remarks](includes/solution-version-remarks.md)]
 

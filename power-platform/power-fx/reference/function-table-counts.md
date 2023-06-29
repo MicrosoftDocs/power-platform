@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 05/24/2021
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Count, CountA, CountIf, and CountRows functions in Power Apps

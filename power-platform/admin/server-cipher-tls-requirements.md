@@ -1,20 +1,18 @@
 ---
 title: "Server cipher suites and TLS requirements  | MicrosoftDocs"
-description: Power Platform settings
+description: Configure your servers to meet TLS 1.2 requirements with the latest cipher suites to use Dataverse services securely.
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2022
+ms.date: 05/26/2023
+contributors:
+    - ProfessorKendrick
+    - ColeHarrison-Microsoft 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Server cipher suites and TLS requirements
 
@@ -85,7 +83,9 @@ To comply with our security policy for a secure connection, your server must hav
 
    See [TLS 1.2 Standards Documentation - Section 7.4.2](https://datatracker.ietf.org/doc/html/rfc5246#section-7.4.2) - certificate-list.
 
+## Why do Dataverse SSL/TLS certificates use wildcard domains?
 
+Wildcard SSL/TLS certificates are by design since hundreds of organization URLs must be accessible from each host server. SSL/TLS certificates with hundreds of Subject Alternate Names (SANs) have a negative impact on some web clients and browsers. This is an infrastructure constraint based on the nature of a software as a service (SAAS) offering, which hosts multiple customer organizations on a set of shared infrastructure.
 
 ### See also
 [Connect to Exchange Server (on-premises)](connect-exchange-server-on-premises.md) <br />
@@ -94,7 +94,5 @@ To comply with our security policy for a secure connection, your server must hav
 [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/win32/secauthn/cipher-suites-in-schannel)  <br />
 [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls)  <br />
 [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)  
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

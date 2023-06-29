@@ -1,23 +1,22 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) overview"
-description: "Overview of the Center of Excellence Command-Line interface and how it automates the setup and administrator of common tasks"
+title: Center of Excellence (CoE) command line interface (CLI) overview (Deprecated)
+description: This article provides an overview of the Center of Excellence Command-Line interface and how it automates the setup and administrator of common tasks.
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-manager: pladhani
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/23/2023
 
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
-# Center of Excellence (CoE) command line interface (CLI) overview
+# Center of Excellence (CoE) command line interface (CLI) overview (Deprecated)
+
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 The Center of Excellence (CoE) command line interface provides automation for common tasks of the CoE starter toolkit. It's been designed to provide a set of commands that meet the needs of different [personas](./alm/personas.md) across the organization.
 

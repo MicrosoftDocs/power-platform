@@ -1,13 +1,14 @@
 ---
 title: "Review ISO, SOC, and HIPAA compliance"
 description: "Power Virtual Agents is compliant with a number of standards and is covered under HIPAA."
-ms.date: 5/13/2021
+ms.date: 03/24/2023
 ms.keywords: "PVA, ISO, SOC, certification, compliance"
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ms.custom: "certification, ceX"
 ---
@@ -24,7 +25,7 @@ Power Virtual Agents is a Core Online Service, as defined in the [Online Service
 - Payment Card Industry (PCI) Data Security Standard (DSS)
 - The Cloud Security Alliance (CSA) Security Trust Assurance and Risk (STAR)
 - United Kingdom Government Cloud (G-Cloud)
-- Outsourced Service Provider’s Audit Report (OSPAR)
+- Outsourced Service Provider's Audit Report (OSPAR)
 - Korea-Information Security Management System (K-ISMS)
 - Singapore Multi-Tier Cloud Security (MTCS) Level 3
 - Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
@@ -53,7 +54,7 @@ HITRUST created and maintains the Common Security Framework (CSF), a certifiable
 
 The CSF builds on HIPAA and the HITECH Act, which are US healthcare laws that have established requirements for the use, disclosure, and safeguarding of individually identifiable health information and enforce non-compliance.
 
-HITRUST provides a benchmark — a standardized compliance framework, assessment, and certification process — against which cloud service providers and covered health entities can measure compliance.
+HITRUST provides a benchmark&mdash;a standardized compliance framework, assessment, and certification process&mdash;against which cloud service providers and covered health entities can measure compliance.
 
 [Learn more about HITRUST](/compliance/regulatory/offering-hitrust).
 
@@ -61,9 +62,9 @@ HITRUST provides a benchmark — a standardized compliance framework, assessment
 
 FedRAMP was established to provide a standardized approach for assessing, monitoring, and authorizing cloud computing products and services under the Federal Information Security Management Act (FISMA) and to accelerate the adoption of secure cloud solutions by federal agencies.
 
-Microsoft’s government cloud services meet the requirements of FedRAMP.
+Microsoft's government cloud services meet the requirements of FedRAMP.
 
-By deploying protected services including Azure Government, Office 365 US Government, and Dynamics 365 Government, federal and defense agencies can leverage a rich array of compliant services.
+By deploying protected services including Azure Government, Office 365 US Government, and Dynamics 365 Government, federal and defense agencies can use a rich array of compliant services.
 
 [Learn more about FedRAMP](/compliance/regulatory/offering-fedramp).
 
@@ -129,9 +130,9 @@ Inclusion in the Digital Marketplace requires a self-attestation of compliance, 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
 
-## Outsourced Service Provider’s Audit Report (OSPAR)
+## Outsourced Service Provider's Audit Report (OSPAR)
 
-The OSPAR framework was established by the Association of Banks in Singapore (ABS), which formulated IT security guidelines for outsourced service providers (OSPs) that seek to provide services to Singapore’s financial institutions. The ABS Guidelines are intended to assist financial institutions in understanding approaches to due diligence, vendor management, and key technical and organizational controls that should be implemented in cloud outsourcing arrangements, particularly for material workloads.
+The OSPAR framework was established by the Association of Banks in Singapore (ABS), which formulated IT security guidelines for outsourced service providers (OSPs) that seek to provide services to Singapore's financial institutions. The ABS Guidelines are intended to assist financial institutions in understanding approaches to due diligence, vendor management, and key technical and organizational controls that should be implemented in cloud outsourcing arrangements, particularly for material workloads.
 
 Power Virtual Agents has OSPAR attestation.
 
@@ -158,3 +159,5 @@ In 2007, the Spanish government enacted Law 11/2007, which established a legal f
 The goal of the framework is to build trust in the provision of electronic services, and ensure the access, integrity, availability, authenticity, confidentiality, traceability, and preservation of data, information, and services.
 
 [Learn more about ENS](/compliance/regulatory/offering-ens-spain).
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

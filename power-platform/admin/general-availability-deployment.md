@@ -4,26 +4,23 @@ description: About general availability deployment
 author: samathur
 ms.subservice: admin
 ms.author: samathur 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/30/2022
+ms.date: 06/12/2023
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.contributors:
+- matleon
 ---
-# General availability deployment 
+# General availability deployment
 
-After a release cycle has been made "generally available" to users, environments are typically automatically turned on. This is so users can receive ongoing mandatory updates. These updates enable early access features, as well as the current available features that are included in a release.  
+After a release cycle has been made "generally available" to users, environments are typically automatically turned on. This is so users can receive ongoing mandatory updates. These updates enable early access features, and the current available features that are included in a release.  
 
 > [!TIP]
-> Check out [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) to learn more about new features to be released in the release waves.   
+> Check out [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) to learn more about new features to be released in the release waves.
 
-Throughout a release cycle, your environments are updated during one of the weekend [maintenance windows](policies-communications.md#maintenance-timeline). These windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center). 
+Throughout a release cycle, your environments are updated during one of the weekend [maintenance windows](policies-communications.md#maintenance-timeline). These windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center).
 
 Each notification from the Message Center includes dates, the maintenance window, and the Release Plan reference. In addition, included is a list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).  
 
@@ -36,20 +33,21 @@ Each notification from the Message Center includes dates, the maintenance window
 
 The general availability deployment is based on the regions where environments are created.
 
-|Regions  |Schedule for 2022 wave 2 general availability deployment|
+|Regions  |Schedule for 2023 wave 2 general availability deployment|
 |---------|---------|
-| Canada<br />France<br />Germany<br />India<br />Norway <br />South Africa<br />South America<br />South Korea<br />Switzerland  | Friday, September 30th to Sunday, October 2nd     |
-|Asia Pacific<br /> Australia <br /> Great Britain<br />Japan<br />United Arab Emirates     | Friday, October 7th to Sunday, October 9th        |
-|Europe    | Friday, October 14th to Sunday, October 16th      |
-|North America     |  Friday, October 21st to Sunday, October 23rd             |
-|China | Friday, October 28th to Sunday, October 30th       |
-|GCC<br />GCC High<br />DOD  | Friday, October 28th to Sunday, October 30th    <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
+| Canada<br />South America<br />India<br />France<br />South Africa <br />Germany<br />Switzerland<br />Norway<br />Korea<br>Singapore  | Friday, September 29, 2023 to Monday, October 2, 2023 |
+|United Arab Emirates<br /> Japan<br />Asia Pacific<br />Great Britain<br>Australia<br>GCC High\*     | Friday, October 6, 2023 to Monday, October 9, 2023   |
+|Europe    | Friday, October 13, 2023 to Monday, October 16, 2023      |
+|North America     |  Friday, October 20, 2023 to Monday, October 23, 2023            |
+|GCC\*<br>DoD\* | Friday, October 27, 2023 to Monday, October 30, 2023  |
+|China | Friday, October 27, 2023 to Monday, October 30, 2023   |
+
+\*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 
 ### See also
+
 [Dynamics 365 release schedule](/dynamics365/get-started/release-schedule) <br />
-[Dynamics 365 and Power Platform Release Plans ](/dynamics365/release-plans/) <br />
-[Policies and communications ](policies-communications.md)
-
-
+[Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) <br />
+[Policies and communications](policies-communications.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

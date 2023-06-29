@@ -5,20 +5,18 @@ keywords:
 author: shmcarth
 ms.subservice: alm
 ms.author: shmcarth
-manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
+contributors:
+    - caburk
 ---
 
 # Overview of application lifecycle management with Microsoft Power Platform
-The articles in this section describe how you can implement application lifecycle management (ALM) using Power Apps, Power Automate, Power Virtual Agents, and Microsoft Dataverse. 
+The articles in this section describe how you can implement application lifecycle management (ALM) using Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Microsoft Dataverse. 
 
 ## What is ALM? 
 ALM is the lifecycle management of applications, which includes governance, development, and maintenance. Moreover, it includes these disciplines: requirements management, software architecture, development, testing, maintenance, change management, support, continuous integration, project management, deployment, release management and governance. ALM tools provide a
@@ -46,25 +44,27 @@ The *application lifecycle* is the cyclical software development process that in
 
 ## ALM for Power Apps, Power Automate, Power Virtual Agents, and Dataverse
 
-[Dataverse](/powerapps/maker/data-platform/data-platform-intro) in Microsoft Power Platform lets you securely store and manage data and processes that's used by business applications. To use the Power Platform features and tools available to manage ALM, all environments that participate in ALM must include a Dataverse database.
+[Dataverse](/powerapps/maker/data-platform/data-platform-intro) in Microsoft Power Platform lets you securely store and manage data and processes that are used by business applications. To use the Power Platform features and tools available to manage ALM, all environments that participate in ALM must include a Dataverse database.
 
 The following concepts are important for understanding ALM using the Microsoft Power Platform.
 
 -   *Solutions* are the mechanism for implementing ALM; you use them to distribute components across environments through export and import. A component represents an artifact used in your application and something that you can potentially customize. Anything that can be included in a solution is a component, such as tables, columns, canvas and model-driven apps, Power Automate flows, chatbots, charts, and plug-ins.
 
--   *Dataverse* stores all the artifacts, including solutions.
+-   *Dataverse* stores all the artifacts, including solutions and in-product deployment [pipelines](pipelines.md)
 
 -   *Source control* should be your source of truth for storing and collaborating on your components.
 
--   *Continuous integration and continuous delivery (CI/CD) platform* such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) that allows you to automate your build, test, and deployment pipeline.
+-   *Continuous integration and continuous delivery (CI/CD) platform* such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) that allows you to automate your build, test, and deployment pipeline. Can also be used in with in-product [pipelines.](pipelines.md)
 
 For more information about how ALM and Azure DevOps technologies&mdash;combined with people and processes&mdash;enable teams to continually provide value to customers, see [DevOps tools on Azure](https://azure.microsoft.com/solutions/devops/).
 
 ### See also
-[ALM basics with Microsoft Power Platform](basics-alm.md)<br/>
-[What is Dataverse?](/powerapps/maker/data-platform/data-platform-intro) <br/>
-[Application lifecycle management for Finance and Operations apps](/training/modules/application-lifecycle-finance-operations/)
-[ALM for chatbots](/power-virtual-agents/authoring-export-import-bots)
+- [ALM basics with Microsoft Power Platform](basics-alm.md)
+- [Set up pipelines in Power Platform](set-up-pipelines.md)
+- [What is Dataverse?](/powerapps/maker/data-platform/data-platform-intro) 
+- [Application lifecycle management for Finance and Operations apps](/training/modules/application-lifecycle-finance-operations/)
+- [ALM for chatbots](/power-virtual-agents/authoring-export-import-bots)
+- [Using solutions with Power Pages](/power-pages/configure/power-pages-solutions)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

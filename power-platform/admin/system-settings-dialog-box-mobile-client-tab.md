@@ -1,20 +1,15 @@
 ---
 title: "System Settings Mobile Client tab  | MicrosoftDocs"
 description: System Settings Mobile Client tab 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # System Settings Mobile Client tab
 

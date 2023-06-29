@@ -4,16 +4,11 @@ description: Check service health.
 ms.date: 09/21/2021
 ms.reviewer: ""
 ms.topic: conceptual
-author: "jimholtz"
+author: sericks007
 ms.subservice: admin
-ms.author: "jimholtz"
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # How do I check my online service health?
 

@@ -5,17 +5,12 @@ description: Create forward mailboxes or edit mailboxes
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/29/2020
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Edit mailboxes
 

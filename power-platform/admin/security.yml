@@ -1,16 +1,16 @@
 ### YamlMime:Landing
 
-title: Microsoft Power Platform security documentation
-summary: Learn how to set up and maintain security for Power Platform.
+title: Microsoft Power Platform security and governance documentation
+summary: Learn how to set up and maintain security and governance for Power Platform.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 
 metadata:
-  title: Microsoft Power Platform security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to set up and maintain security for Power Platform. # Required; article description that is displayed in search results. < 160 chars.
+  title: Microsoft Power Platform security and governance documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to set up and maintain security and governance for Power Platform. # Required; article description that is displayed in search results. < 160 chars.
   ms.subservice: admin
   ms.topic: landing-page  # Required
-  author: jimholtz #Required; your GitHub user alias, with correct capitalization.
-  ms.author: jimholtz #Required; microsoft alias of author; optional team alias.
+  author: sericks007 #Required; your GitHub user alias, with correct capitalization.
+  ms.author: sericks #Required; microsoft alias of author; optional team alias.
   ms.date: 09/28/2021 #Required; mm/dd/yyyy format.
   hide_bc: false
 
@@ -19,7 +19,7 @@ metadata:
 landingContent:
 
   # Card 
-  - title: Get started with security
+  - title: Get started with security and governance 
     linkLists:
        - linkListType: overview
          links:

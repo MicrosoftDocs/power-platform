@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI org command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI org command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 11/18/2022
+author: snizar007
+ms.author: snizar
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,10 +26,30 @@ Work with your Dataverse Organization
 
 |Command|Description|
 |---------|---------|
+|[pac org fetch](#pac-org-fetch)|(Preview) Performs FetchXML query against Dataverse|
 |[pac org list](#pac-org-list)|Lists all of the Dataverse Organizations the user has access to|
 |[pac org select](#pac-org-select)|Select default organization for current authentication profile|
 |[pac org who](#pac-org-who)|Displays information about the current Dataverse Organization|
 
+
+## pac org fetch
+
+(Preview) Performs FetchXML query against Dataverse
+
+[!INCLUDE [org-fetch-intro](includes/org-fetch-intro.md)]
+
+
+### Optional Parameters
+
+#### `--xml` `-x`
+
+FetchXML query to run
+
+#### `--xmlFile` `-xf`
+
+File with FetchXML query to run
+
+[!INCLUDE [org-fetch-remarks](includes/org-fetch-remarks.md)]
 
 ## pac org list
 

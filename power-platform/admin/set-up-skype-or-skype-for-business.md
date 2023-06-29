@@ -1,20 +1,15 @@
 ---
 title: "Set up Skype or Skype for Business  | MicrosoftDocs"
 description: Set up Skype or Skype for Business 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Set up customer engagement apps to use Skype or Skype for Business
 

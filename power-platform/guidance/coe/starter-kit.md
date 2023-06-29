@@ -2,7 +2,6 @@
 title: "Microsoft Power Platform Center of Excellence Kit| MicrosoftDocs"
 description: "The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate"
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Microsoft Power Platform Center of Excellence (CoE) Starter Kit
 
@@ -25,7 +20,7 @@ The Microsoft Power Platform CoE Starter Kit is a collection of components and t
 
 :::row:::
    :::column span="":::
-      <img src="media/i_overview.svg" alt="Overview icon" width="80"/><br><br>**Overview** <br /> Define goals and expected outcomes of your CoE<Br><ul><li>[Overview](overview.md)</li><li>[Motivation](motivation.md)</li><li>[Download](<https://aka.ms/coestarterkitdownload>)</li></ul>
+      <img src="media/i_overview.svg" alt="Overview icon" width="80"/><br><br>**Overview** <br /> Define goals and expected outcomes of your CoE<Br><ul><li>[Overview](overview.md)</li><li>[Download](<https://aka.ms/coestarterkitdownload>)</li></ul>
    :::column-end:::
    :::column span="":::
       <img src="media/i_dashboard.svg" alt="Admin icon" width="80"/><br><br>**Admin**  <br /> Gain insights into your Microsoft Power Platform adoption<br><ul><li>[Set up](setup-core-components.md)</li><li>[Use](core-components.md)</li><li>[Deep dive](power-bi.md)</li></ul>

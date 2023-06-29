@@ -1,5 +1,10 @@
 ### Examples
 
+The following examples show the use of the `pac application install` command.
+
+- [Install an application in a specified environment](#install-an-application-in-a-specified-environment)
+- [Install a list of applications in a JSON file in a specified environment](#install-a-list-of-applications-in-a-json-file-in-a-specified-environment)
+
 #### Install an application in a specified environment
 
 This example installs the `MSFT_EmployeeIdeas` application in the specified environment.

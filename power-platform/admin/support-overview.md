@@ -1,34 +1,20 @@
 ---
-title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
-description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
+title: "Support for Microsoft Power Platform and Dynamics 365 apps | MicrosoftDocs"
+description: Information on support for Microsoft Power Platform and Dynamics 365 apps
 ms.date: 03/23/2022
 ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: overview
-ms.custom: 
-  - "admin-security"
-  - "intro-internal"
-applies_to: 
-  - "Dynamics 365 (online)"
-author: "jimholtz"
+ms.custom: "admin-security"
+ms.collection: get-started
+author: "KumarVivek"
 ms.subservice: admin
-ms.author: "jimholtz"
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.author: "kvivek"
 ---
-# Support overview
+# Support for Microsoft Power Platform and Dynamics 365 apps
+
+Support is available in markets where Microsoft Power Platform or Dynamics 365 services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
 
 ## About support
-
-### Where is support available?
-
-Support is available in markets where Microsoft Dataverse or Dynamics 365 services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
 
 ### For which languages does Microsoft provide support?
 

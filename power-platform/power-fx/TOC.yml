@@ -4,28 +4,26 @@
       items: 
         - name: Overview
           href: overview.md
-        - name: Expression grammar
-          href: expression-grammar.md
-        - name: YAML formula grammar
-          href: yaml-formula-grammar.md
-        - name: Global apps
-          href: global.md
-        - name: Data types
-          href: data-types.md 
-        - name: Untyped objects (experimental)
-          href: untyped-object.md
-        - name: Working with JSON (experimental)
-          href: working-with-json.md
-        - name: Imperatives
-          href: imperative.md
+        - name: Use Power Fx formulas in Power Apps 
+          href: /power-apps/maker/canvas-apps/working-with-formulas  
         - name: Operators
-          href: operators.md
+          href: operators.md   
+        - name: Data types
+          href: data-types.md  
         - name: Tables
-          href: tables.md 
+          href: tables.md           
+        - name: Imperative logic
+          href: imperative.md
         - name: Variables
-          href: variables.md
+          href: variables.md   
         - name: Error handling
           href: error-handling.md
+        - name: Global apps
+          href: global.md
+        - name: Untyped objects
+          href: untyped-object.md
+        - name: Working with JSON
+          href: working-with-json.md
         - name: Formula reference
           items:
           - name: Overview
@@ -94,8 +92,12 @@
             href: reference/function-concatenate.md
           - name: Concurrent
             href: reference/function-concurrent.md
+          - name: Confirm
+            href: reference/function-confirm.md
           - name: Connection
             href: reference/signals.md
+          - name: Copy
+            href: reference/function-copy.md
           - name: Count
             href: reference/function-table-counts.md
           - name: Cos
@@ -168,6 +170,8 @@
             href: reference/function-guid.md
           - name: HashTags
             href: reference/function-hashtags.md
+          - name: Host
+            href: reference/object-host.md
           - name: Hour
             href: reference/function-datetime-parts.md
           - name: Identifiers
@@ -260,7 +264,7 @@
             href: reference/function-param.md
           - name: Parent
             href: reference/operators.md#self-and-parent-operators
-          - name: ParseJSON (experimental)
+          - name: ParseJSON
             href: reference/function-parsejson.md
           - name: Patch
             href: reference/function-patch.md
@@ -326,6 +330,8 @@
             href: reference/function-select.md
           - name: Self
             href: reference/operators.md#self-and-parent-operators
+          - name: SendAppNotification (preview)
+            href: reference/function-send-app-notification.md
           - name: Set
             href: reference/function-set.md
           - name: SetFocus
@@ -385,7 +391,7 @@
           - name: TrimEnds
             href: reference/function-trim.md
           - name: Trunc
-            href: reference/function-round.md    
+            href: reference/function-round.md 
           - name: Ungroup
             href: reference/function-groupby.md
           - name: Unrelate
@@ -420,5 +426,9 @@
             href: reference/function-with.md
           - name: Year
             href: reference/function-datetime-parts.md
-        - name: Use Power Fx formulas in Power Apps 
-          href: /power-apps/maker/canvas-apps/working-with-formulas
+        - name: Language grammars
+          Items: 
+          - name: Expression grammar
+            href: expression-grammar.md
+          - name: YAML formula grammar
+            href: yaml-formula-grammar.md

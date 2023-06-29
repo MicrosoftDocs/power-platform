@@ -1,8 +1,7 @@
 ---
 title: Dialog control reference (experimental) | Creator Kit
 description: Learn about the details and properties of the Dialog control in the Creator Kit.
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/16/2022
@@ -11,10 +10,6 @@ ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist
@@ -101,7 +96,7 @@ UpdateContext({ showHideDialog: true })
 The following is the Power Fx formula to close the dialog in the `OnCloseSelect` property of the dialog:
 
 ```powerapps-dot
-UpdateContext({ showHideDialog: true })
+UpdateContext({ showHideDialog: false })
 ```
 
 Assign the variable to the `Visible` property of the dialog:

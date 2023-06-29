@@ -1,9 +1,9 @@
 ---
 title: "Add Microsoft Dataverse storage capacity"
 description: "Learn about adding Microsoft Dataverse storage capacity." 
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 
@@ -12,11 +12,6 @@ ms.topic: conceptual
 ms.date: 08/24/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Add Microsoft Dataverse storage capacity
 

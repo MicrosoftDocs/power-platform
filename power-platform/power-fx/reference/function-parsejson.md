@@ -1,30 +1,22 @@
 ---
-title: ParseJSON function in Power Apps (experimental)
+title: ParseJSON function in Power Apps
 description: Reference information including syntax and examples for the ParseJSON function in Power Apps.
 author: jorisdg
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 09/10/2022
 ms.subservice: power-fx
 ms.author: jorisde
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
 contributors:
   - jorisdg
-  - tapanm-msft
+  - mduelae
 ---
-# ParseJSON function in Power Apps (experimental)
+# ParseJSON function in Power Apps
 Interprets a JSON string and returns an [untyped object](../untyped-object.md).
-
-> [!IMPORTANT]
-> - This is an experimental feature.
-> - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview)
-> - The behavior that this article describes is available only when the _ParseJSON function and untyped objects_ experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
-> - Your feedback is very valuable to us - please let us know what you think in the [Power Apps experimental features community forum](https://powerusers.microsoft.com/t5/Power-Apps-Experimental-Features/bd-p/PA_ExperimentalFeatures).
 
 ## Description
 The ParseJSON function will parse a valid JSON string and return an [untyped object](../untyped-object.md) representing the JSON structure. 

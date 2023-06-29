@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 07/06/2017
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Reset function in Power Apps
@@ -26,7 +25,7 @@ Resets a control to its default value, discarding any user changes.
 
 The **Reset** function resets a control to its **Default** property value. Any user changes are discarded.
 
-You cannot reset controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery.md) or [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail.md) control from outside those controls. You can reset controls from formulas on controls within the same gallery or form. You can also reset all the controls within a form with the [**ResetForm**](function-form.md) function.
+You cannot reset controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) or [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control from outside those controls. You can reset controls from formulas on controls within the same gallery or form. You can also reset all the controls within a form with the [**ResetForm**](function-form.md) function.
 
 Using the **Reset** function is an alternative to toggling the **Reset** property of input controls and is generally preferred. The **Reset** property may be a better choice if many controls need to be reset together from multiple formulas. Toggling the **Reset** property can be done from a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control with the formula **Reset = Button.Pressed** or from a variable with **Reset = MyVar** and toggling **MyVar** with the formula **Button.OnSelect = Set( MyVar, true ); Set( MyVar, false )**.
 

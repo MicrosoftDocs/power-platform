@@ -1,143 +1,162 @@
 - name: Application lifecycle management (ALM)
   items:
-  - name: Application lifecycle management (ALM)
-    href: ./index.yml
-  - name: Overview   
-    href: overview-alm.md     
-  - name: ALM basics
-    href: basics-alm.md    
-  - name: Environment strategy 
-    href: environment-strategy-alm.md
-  - name: Solutions
-    items:
-      - name: Solution concepts
-        href: solution-concepts-alm.md
-      - name: Solution layers
-        href: solution-layers-alm.md
-      - name: How managed solutions are merged
-        href: how-managed-solutions-merged.md        
-      - name: Use solutions to customize
-        href: use-solutions-for-your-customizations.md
-      - name: Managed properties
-        href: managed-properties-alm.md
-      - name: Use segmented solutions
-        href: segmented-solutions-alm.md
-      - name: Create and update solutions
-        href: update-solutions-alm.md
-      - name: Removing dependencies
-        href: removing-dependencies.md
-      - name: Organize solutions
-        href: organize-solutions.md
-      - name: Maintain managed solutions
-        href: maintain-managed-solutions.md
-  - name: Tools and apps used
-    href: tools-apps-used-alm.md    
-  - name: Implementing healthy project and solution ALM
-    items: 
-    - name: Healthy ALM overview
-      href: implement-healthy-alm.md
-    - name: "Scenario 0: Implement for a new project"
-      href: new-project-alm.md
-    - name: "Scenario 1: Citizen developer ALM"
-      href: citizen-dev-alm.md
-    - name: "Scenario 2: Moving from a single environment"
-      href: move-from-single-env-alm.md
-    - name: "Scenario 3: Moving from unmanaged to managed solutions"
-      href: move-from-unmanaged-managed-alm.md
-    - name: "Scenario 4: Use DevOps for automation"  
-      href: use-devops-automated-alm.md
-    - name: "Scenario 5: Support team development"
-      href: team-development-alm.md
-    - name: "Scenario 6: Embrace citizen developers"
-      href: embrace-citizen-devs.md
-    - name: "Scenario 7: Add canvas apps in solutions by default (preview)"
-      href: canvas-apps-solution-default.md
-  - name: Implementing healthy component ALM
-    items:
-    - name: Maintaining healthy model-driven app form ALM
-      href: form-alm.md
-    - name: Recommendations for healthy form ALM
-      href: form-alm-recommendations.md
-    - name: Form ALM FAQ
-      href: form-alm-faq.yml  
-  - name: ALM for developers   
-    href: alm-for-developers.md
-    items:
-    - name: Build Tools
+    - name: Application lifecycle management (ALM)
+      href: ./index.yml
+    - name: Overview
+      href: overview-alm.md
+    - name: ALM basics
+      href: basics-alm.md
+    - name: Environment strategy
+      href: environment-strategy-alm.md
+    - name: Solutions
       items:
-      - name: Use Microsoft Power Platform Build Tools
-        href: devops-build-tools.md
-      - name: Microsoft Power Platform Build Tools tasks
-        href: devops-build-tool-tasks.md
-      - name: Pre-populate connection references and environment variables
-        href: conn-ref-env-variables-build-tools.md
-    - name: GitHub Actions
+        - name: Solution concepts
+          href: solution-concepts-alm.md
+        - name: Solution layers
+          href: solution-layers-alm.md
+        - name: How managed solutions are merged
+          href: how-managed-solutions-merged.md
+        - name: Use solutions to customize
+          href: use-solutions-for-your-customizations.md
+        - name: Managed properties
+          href: managed-properties-alm.md
+        - name: Use segmented solutions
+          href: segmented-solutions-alm.md
+        - name: Create and update solutions
+          href: update-solutions-alm.md
+        - name: Removing dependencies
+          href: removing-dependencies.md
+        - name: Organize solutions
+          href: organize-solutions.md
+    - name: Tools and apps used
+      href: tools-apps-used-alm.md
+    - name: Implementing healthy project and solution ALM
       items:
-      - name: Use GitHub Actions for Microsoft Power Platform
-        href: devops-github-actions.md
-      - name: Available GitHub Actions for Power Platform development
-        href: devops-github-available-actions.md
-      - name: Available GitHub Actions for Power Platform administration
-        href: devops-github-available-administrative-actions.md
-      - name: Tutorials
-        items:
-        - name: Get started with GitHub Actions
-          href: tutorials/github-actions-start.md
-        - name: Build an app for GitHub Actions
-          href: tutorials/github-actions-build.md
-        - name: Automate deployment using GitHub Actions
-          href: tutorials/github-actions-deploy.md
-    - name: Work with solution components
+        - name: Healthy ALM overview
+          href: implement-healthy-alm.md
+        - name: "Scenario 0: Implement for a new project"
+          href: new-project-alm.md
+        - name: "Scenario 1: Citizen developer ALM"
+          href: citizen-dev-alm.md
+        - name: "Scenario 2: Moving from a single environment"
+          href: move-from-single-env-alm.md
+        - name: "Scenario 3: Moving from unmanaged to managed solutions"
+          href: move-from-unmanaged-managed-alm.md
+        - name: "Scenario 4: Use DevOps for automation"
+          href: use-devops-automated-alm.md
+        - name: "Scenario 5: Support team development"
+          href: team-development-alm.md
+        - name: "Scenario 6: Embrace citizen developers"
+          href: embrace-citizen-devs.md
+        - name: "Scenario 7: Add canvas apps in solutions by default (preview)"
+          href: canvas-apps-solution-default.md
+    - name: Implementing healthy component ALM
       items:
-        - name: Microsoft Power Apps component framework
-          href: component-framework.md
-        - name: Plug-ins
-          href: plugin-component.md
-        - name: Web resources
-          href: web-resource-component.md
-        - name: Use managed properties
-          href: use-managed-properties.md
-        - name: Dependency tracking
-          href: dependency-tracking-solution-components.md
-        - name: Check for component dependencies
-          href: check-solution-dependencies.md
-        - name: Support multiple languages
-          href: create-solutions-support-multiple-languages.md
-    - name: Leverage solution and packaging tools
-      href: 
+        - name: Maintaining healthy model-driven app form ALM
+          href: form-alm.md
+        - name: Recommendations for healthy form ALM
+          href: form-alm-recommendations.md
+        - name: Form ALM FAQ
+          href: form-alm-faq.yml
+    - name: ALM for admins and makers
+      href: admins-makers.md
       items:
-        - name: Configuration Migration
-          href: configure-and-deploy-tools.md
-        - name: Package Deployer tool
-          href: package-deployer-tool.md
-        - name: Solution Packager tool
-          href: solution-packager-tool.md
-        - name: Source control with solution files
-          href: use-source-control-solution-files.md
-    - name: Verify quality of solutions and packages
-      items:
-        - name: Use the Power Apps checker web API 
-          href: checker-api/overview.md
-        - name: Invoke the analysis
-          href: checker-api/analyze.md
-        - name: Check for analysis status
-          href: checker-api/check-status.md
-        - name: Retrieve the list of rules
-          href: checker-api/retrieve-rules.md
-        - name: Retrieve the list of rulesets
-          href: checker-api/retrieve-rulesets.md
-        - name: Upload a file for analysis
-          href: checker-api/upload-file.md
-    - name: Manage solutions using code
-      href: 
-      items:
-        - name: Use PowerShell
+        - name: Manage solutions using PowerShell
           href: powershell-api.md
-        - name: Work with solutions 
-          href: solution-api.md
-        - name: Stage, import, and export
-          href: solution-async.md
-        - name: Create patches 
-          href: create-patches-simplify-solution-updates.md
-    - name: Edit the customizations file
-      href: when-edit-customization-file.md
+        - name: Deploy solutions using pipelines
+          items:
+            - name: What are pipelines?
+              href: pipelines.md
+              displayName: release management change management deploy solutions
+            - name: Set up pipelines
+              href: set-up-pipelines.md
+            - name: Extend pipelines
+              items:
+                - name: Overview of extending pipelines
+                  href: extend-pipelines.md
+                - name: Extend pipelines using GitHub Actions
+                  href: extend-pipelines-github-export.md
+            - name: Run pipelines
+              href: run-pipeline.md
+    - name: ALM for developers
+      href: alm-for-developers.md
+      items:
+        - name: Build Tools
+          items:
+            - name: Use Microsoft Power Platform Build Tools
+              href: devops-build-tools.md
+              displayName: release management change management deploy solutions
+            - name: Microsoft Power Platform Build Tools tasks
+              href: devops-build-tool-tasks.md
+            - name: Pre-populate connection references and environment variables
+              href: conn-ref-env-variables-build-tools.md
+        - name: GitHub Actions
+          items:
+            - name: Use GitHub Actions for Microsoft Power Platform
+              href: devops-github-actions.md
+              displayName: release management change management deploy solutions
+            - name: Available GitHub Actions for Power Platform development
+              href: devops-github-available-actions.md
+            - name: Available GitHub Actions for Power Platform administration
+              href: devops-github-available-administrative-actions.md
+            - name: Tutorials
+              items:
+                - name: Get started with GitHub Actions
+                  href: tutorials/github-actions-start.md
+                - name: Build an app for GitHub Actions
+                  href: tutorials/github-actions-build.md
+                - name: Automate deployment using GitHub Actions
+                  href: tutorials/github-actions-deploy.md
+        - name: Work with solution components
+          items:
+            - name: Microsoft Power Apps component framework
+              href: component-framework.md
+            - name: Plug-ins
+              href: plugin-component.md
+            - name: Web resources
+              href: web-resource-component.md
+            - name: Use managed properties
+              href: use-managed-properties.md
+            - name: Dependency tracking
+              href: dependency-tracking-solution-components.md
+            - name: Check for component dependencies
+              href: check-solution-dependencies.md
+            - name: Support multiple languages
+              href: create-solutions-support-multiple-languages.md
+        - name: Leverage solution and packaging tools
+          href:
+          items:
+            - name: Configuration Migration
+              href: configure-and-deploy-tools.md
+            - name: Package Deployer tool
+              href: package-deployer-tool.md
+            - name: Solution Packager tool
+              href: solution-packager-tool.md
+            - name: Source control with solution files
+              href: use-source-control-solution-files.md
+        - name: Verify quality of solutions and packages
+          items:
+            - name: Use the Power Apps checker web API
+              href: checker-api/overview.md
+            - name: Invoke the analysis
+              href: checker-api/analyze.md
+            - name: Check for analysis status
+              href: checker-api/check-status.md
+            - name: Retrieve the list of rules
+              href: checker-api/retrieve-rules.md
+            - name: Retrieve the list of rulesets
+              href: checker-api/retrieve-rulesets.md
+            - name: Upload a file for analysis
+              href: checker-api/upload-file.md
+        - name: Manage solutions using code
+          items:
+            - name: Work with solutions
+              href: solution-api.md
+            - name: Stage, import, and export
+              href: solution-async.md
+            - name: Create patches
+              href: create-patches-simplify-solution-updates.md
+        - name: Edit the customizations file
+          href: when-edit-customization-file.md
+        - name: Pipeline table reference
+          href: ../developer/pipelines/table-reference.md

@@ -1,19 +1,14 @@
 ---
 title: Download a list of apps created in your environments | Microsoft Docs
 description: In this topic, you learn how to download a list of apps created in your environments.
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/04/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Download a list of apps created in your environments

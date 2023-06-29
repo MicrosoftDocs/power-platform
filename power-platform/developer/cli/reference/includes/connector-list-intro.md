@@ -1,5 +1,10 @@
 ### Examples
 
+The following examples show the use of the `pac connector list` command.
+
+- [List connectors in current environment](#list-connectors-in-current-environment)
+- [List connectors in specified environment](#list-connectors-in-specified-environment)
+
 #### List connectors in current environment
 
 This example lists all the connectors in the environment of your currently active auth profile.

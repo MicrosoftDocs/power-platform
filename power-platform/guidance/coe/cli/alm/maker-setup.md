@@ -1,26 +1,22 @@
 ---
-title: "CoE ALM Accelerator for Power Platform maker setup"
+title: "CoE ALM Accelerator for Power Platform maker setup (Deprecated)"
 description: "Summary of how to add a maker to the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-manager: pladhani
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/23/2023
 
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
-# CoE ALM Accelerator for Power Platform maker set-up
+# CoE ALM Accelerator for Power Platform maker set-up (Deprecated)
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 The first step is to ensure there's an environment to build and manage solutions. Normally each maker has a unique [development environment](./development-environments.md) created. Having successfully gained access to a development environment, the commands below allow either a Power Platform administrator or a maker to perform the following tasks:
 

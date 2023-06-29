@@ -1,20 +1,15 @@
 ---
 title: "Configure date settings for demo data  | MicrosoftDocs"
 description: Configure date settings for demo data 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/20/2017
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Configure date settings for demo data 
 

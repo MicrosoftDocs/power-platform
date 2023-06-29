@@ -2,19 +2,18 @@
 title: "Use DLP to require chatbot users to be authenticated"
 description: "Block unauthenticated end users from interacting with chatbots."
 keywords: "PVA"
-ms.date: 10/07/2022
+ms.date: 03/24/2023
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.custom: admin, dlp
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-
-# Data loss prevention example 3 - Require end-user authentication for Power Virtual Agents chatbots (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+# Data loss prevention example 3 - Require end-user authentication for Power Virtual Agents chatbots
 
 If a Power Virtual Agents chatbot isn't configured to require end-user authentication, then anyone on the internet can chat with the bot.
 
@@ -26,30 +25,30 @@ See the [Configure data loss prevention for Power Virtual Agents chatbots](admin
 
 ## Configure DLP to require authentication in the Power Platform admin center
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Data policies**.
+[!INCLUDE [Preview documentation notice](includes/dlp-basic-config.md)]
 
-    1. To create a new policy, select **New policy**, enter a name for the policy, and select **Next**.
+### Add the connector
 
-        :::image type="content" source="media/dlp-example-3/image3.png" alt-text="Screenshot of the Power Platform admin center  open to the Data policies  New Policy section.":::
+1. Use the search box to find the **Chat without Azure AD authentication in Power Virtual Agents** connector.
 
-    1. To add this connector to an existing DLP policy, select the policy you want to update, and then select **Edit policy**.
+    :::image type="content" source="media/dlp-example-3/chat-connector.png" alt-text="Screenshot of the Chat without Azure AD authentication in Power Virtual Agents connector.":::
 
-        :::image type="content" source="media/dlp-example-3/image4.png" alt-text="Screenshot of the Power Platform admin center  open to the Data policies section  with an existing policy and the Edit Policy button highlighted.":::
+1. Select the connector's **More actions** menu (**&vellip;**), and then select **Block**.
 
-1. Under **Prebuilt connectors**, find the **Chat without Azure AD authentication in Power Virtual Agents connector**.
+    :::image type="content" source="media/dlp-example-3/block-connector.png" alt-text="Screenshot of the Power Platform admin center showing the contextual menu for a connector available from the menu icon.":::
 
-1. Select the connector's menu ellipses (shown as three dots in a vertical line next to the connector's name), and then select **Block**. Select **Next**.
+1. Select **Next**.
 
-    :::image type="content" source="media/dlp-example-3/connect-block.png" alt-text="Screenshot of the Power Platform admin center showing the contextual menu for a connector available from the menu icon.":::
+1. If you're a tenant admin, or an environment admin for multiple environments, you'll see the **Scope** step. Choose one or more environments that your DLP policy will apply to.
 
-1. Under **Environments**, select **Scope**. Apply the DLP policy on the environment where the bot is created, or for all environments.
+    :::image type="content" source="media/dlp-example-3/scope-step.png" alt-text="Screenshot of the scope step where one or more environments are chosen.":::
 
     > [!NOTE]
     > If the policy has a tenant scope, DLP policy will apply to all bots.
 
-1. Under **Review**, Select **Update policy** to apply the DLP policy changes.
+1. Review your policy, then select **Update policy** to apply the DLP changes.
 
-    :::image type="content" source="media/dlp-example-3/image6.png" alt-text="Screenshot of the review screen when creating a DLP policy.":::
+    :::image type="content" source="media/dlp-example-3/update-policy.png" alt-text="Screenshot of the review screen when creating a DLP policy.":::
 
 ## Confirm policy enforcement in Power Virtual Agents
 
@@ -59,10 +58,10 @@ First, open your bot from the environment where the DLP policy is applied.
 
 If the policy is enforced, you'll see an error banner with a **Go to Authentication** button, and a message advising you to contact an admin or configure authentication.
 
-:::image type="content" source="media/dlp-example-3/image11.png" alt-text="Screenshot of a chat bot in the Power Virtual Agents web app with a banner that indicates DLP policies are in effect  and that authentication must be configured.":::
+:::image type="content" source="media/dlp-example-3/policy-enforcement-banner.png" alt-text="Screenshot of the banner that indicates DLP policies are in effect  and that authentication must be configured.":::
 
 The bot maker can select the **Go to Authentication** button to be taken directly to the **Authentication** configuration panel. Here, they'll need to configure **Only for Teams** or **Manual** (**Azure Active Directory** or **Azure Active Directory v2**) for the end-user to chat with the bot.
 
-:::image type="content" source="media/dlp-example-3/image12.png" alt-text="Screenshot of the authentication configuration panel in Power Virtual Agents  with the Only for Teams and Manual Azure Active Directory options highlighted.":::
+:::image type="content" source="media/dlp-example-3/update-auth.png" alt-text="Screenshot of the authentication configuration panel with the 'Only for Teams' and 'Manual' options highlighted.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

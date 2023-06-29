@@ -2,265 +2,278 @@
 title: "Use Bot Framework Composer adaptive cards in chatbots"
 description: "Use Bot Framework Composer to add Adaptive Cards to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 06/27/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtualagent
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Example 1 - Show an Adaptive Card in Power Virtual Agents
 
-You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
+[!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
+
+Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 In this example, you'll learn how to show an Adaptive Card in Power Virtual Agents by using Composer.
 
-Before you begin, ensure you read [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md) to understand how Composer integrates with Power Virtual Agents.
-
-> [!IMPORTANT]
-> Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
+[!INCLUDE [Composer License](includes/composer-license.md)]
 
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Introduction to Bot Framework Composer](/composer/introduction).
-- [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md).
+- [Composer fundamentals](advanced-bot-framework-composer-fundamentals.md).
 
-## Show an Adaptive Card
+## Create a new topic
 
-Go to **Topics** in Power Virtual Agents and create a new topic called **Meal delivery options**. Add the following trigger phrases for this new topic:
+1. In Power Virtual Agents, create a new bot named `Contoso Meal Delivery Service`.
 
-- what meals can I order
-- what meal options do you have
-- what dishes do you deliver
-- entrees available for delivery
+1. Go to the **Topics** page and create a new topic called `Meal delivery options`.
 
-In the **Authoring canvas**, select the default **Message** node. Select the three vertical dots, then select **Delete**.
+1. Copy and paste the following trigger phrases:
 
-Select **Add node** (**+**) under the **Trigger phrases** node, and then select **Ask a question**.
+    ```plaintext
+    what meals can I order
+    what meal options do you have
+    what dishes do you deliver
+    entrees available for delivery
+    ```
 
-For **Ask a question** , enter "What city are you in?".
+1. On the **Authoring canvas**, select the default **Message** node. Select the three vertical dots, then select **Delete**.
 
-In the **Identity** list, select **City**.
+1. Under the **Trigger phrases** node, select **Add node** (**+**) and then select **Ask a question**. Then in the **Question** node:
 
-In **Save response as** , select the variable for city,
-For **Name**, enter **user_city**.  For **Usage**, select **Bot (any topic can access)** then select **Save**.
+    1. For **Ask a question**, enter `What city are you in?`.
 
-:::image type="content" source="media/Composer_Example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
+    1. For **Identify**, select **City**.
 
-Next, we'll instruct the topic, **Meal delivery options**, to display meal choice images that are available in the user’s city. We'll retrieve the images from Bot Framework Composer content.
+1. In **Save response as**, select the automatically created variable. Then in the variable properties pane:
 
-On the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer**.
+    1. For **Name**, enter `user_city`.
 
-After you open, the Bot Framework Composer project, you'll see the list of all Power Virtual Agents topics in your bot. However, you won't be able to edit these PVA topics. **Recognizer Type** is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
+    1. For **Usage**, select **Bot (any topic can access)**.
 
-> [!TIP]
-> The **LUIS** service is not supported as a Recognizer for Power Virtual Agents in Composer. The **Default Recognizer** is set to **Power Virtual Agents NLU** instead. You do not need to have an additional subscription to use **Power Virtual Agents NLU** because it is included in your Power Virtual Agents license.
+1. Select **Save**.
 
-Go to the **Create** tab in Composer and select **Add a dialog** in the dropdown menu:
+:::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
 
-:::image type="content" source="media/Composer_Example1/E1_Meals_creatNewDialog.png" alt-text="Composer Create tab.":::
+## Create an adaptive card
 
-Name your new dialog **Meals**. Select **OK** to create a new dialog, **Meals**, in Composer. You will use this **Bot Framework dialog** to display an Adaptive Card.
+Next, you'll display meal choice images that are available in the user's city using Composer.
 
-:::image type="content" source="media/Composer_Example1/E1_Meals_newDialog.png" alt-text="Composer Create tab new dialog.":::
+1. Open your bot in Composer. For instructions on how to do so, see [Getting started with Bot Framework Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
-In Composer, go to the **Bot Responses** tab and, in the **Meals** section, select **Show code**.
+1. Go to the **Create** page. In your bot, select **More options** (**...**) then select **+ Add a dialog**.
 
-:::image type="content" source="media\Composer_Example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_creatNewDialog.png" alt-text="Composer Create tab.":::
 
-In the code window, copy and paste the following bot response. Then replace the three example image URLs with your own.
+1. For **Name**, enter `Meals` then select **OK**.
 
-```lg
-# Chicken()
--Chicken
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_newDialog.png" alt-text="Composer Create tab new dialog.":::
 
-# Steak()
--Steak
+1. Go to the **Bot Responses** page. In the bot explorer, select **Meals**, then select **Show code**.
 
-# Tofu()
--Tofu
+    :::image type="content" source="media\advanced-bot-framework-composer-example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
 
-# SteakImageURL()
--https://www.example.com/steak.jpg
+1. In the code view, copy and paste the following bot response. Then replace the three example image URLs with your own.
 
-# ChickenImageURL()
--https://www.example.com/chicken.jpg
+    ```lg
+    # Chicken()
+    -Chicken
 
-# TofuImageURL()
--https://www.example.com/tofu.jpg
+    # Steak()
+    -Steak
 
-```
+    # Tofu()
+    -Tofu
 
-:::image type="content" source="media/Composer_Example1/E1_Meals_BotResponse_data.png" alt-text="Composer Bot Responses tab with strings.":::
+    # SteakImageURL()
+    -https://www.example.com/steak.jpg
 
-Next, add the Adaptive Card by adding the following code to the same window. This Adaptive Card takes a parameter and displays a set of three images based on the image URLs.
+    # ChickenImageURL()
+    -https://www.example.com/chicken.jpg
 
-````lg
-# adaptivecardjson_meals(location)
-- ```
-{
-    "type": "AdaptiveCard",
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "version": "1.1",
-    "body": [
+    # TofuImageURL()
+    -https://www.example.com/tofu.jpg
+
+    ```
+
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_BotResponse_data.png" alt-text="Composer Bot Responses tab with strings.":::
+
+1. Copy and paste the following code into the same code view to add an Adaptive Card that displays three images.
+
+    ````lg
+    # adaptivecardjson_meals(location)
+    - ```
+    {
+        "type": "AdaptiveCard",
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "version": "1.1",
+        "body": [
+                {
+                "type": "TextBlock",
+                "text": "Meal delivery options for ${location}:",
+                "size": "Medium",
+                "weight": "Bolder"
+            },
             {
-            "type": "TextBlock",
-            "text": "Meal delivery options for ${location}:",
-            "size": "Medium",
-            "weight": "Bolder"
-        },
-        {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "Image",
-                            "url": "${SteakImageURL()}",
-                            "size": "Stretch",
-                            "spacing": "Medium",
-                            "horizontalAlignment": "Center"
-                        }
-                    ]
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "Image",
-                            "url": "${ChickenImageURL()}",
-                            "horizontalAlignment": "Center"
-                        }
-                    ]
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "Image",
-                            "url": "${TofuImageURL()}",
-                            "horizontalAlignment": "Center"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": "${Steak()}",
-                            "wrap": true,
-                            "horizontalAlignment": "Center"                            
-                        }
-                    ]
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": "${Chicken()}",
-                            "wrap": true,
-                            "horizontalAlignment": "Center"
-                        }
-                    ]
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": "${Tofu()}",
-                            "wrap": true,
-                            "horizontalAlignment": "Center"
-                        }
-                    ]
-                }
-            ]
-        }
+                "type": "ColumnSet",
+                "columns": [
+                    {
+                        "type": "Column",
+                        "width": "stretch",
+                        "items": [
+                            {
+                                "type": "Image",
+                                "url": "${SteakImageURL()}",
+                                "size": "Stretch",
+                                "spacing": "Medium",
+                                "horizontalAlignment": "Center"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Column",
+                        "width": "stretch",
+                        "items": [
+                            {
+                                "type": "Image",
+                                "url": "${ChickenImageURL()}",
+                                "horizontalAlignment": "Center"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Column",
+                        "width": "stretch",
+                        "items": [
+                            {
+                                "type": "Image",
+                                "url": "${TofuImageURL()}",
+                                "horizontalAlignment": "Center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "ColumnSet",
+                "columns": [
+                    {
+                        "type": "Column",
+                        "width": "stretch",
+                        "items": [
+                            {
+                                "type": "TextBlock",
+                                "text": "${Steak()}",
+                                "wrap": true,
+                                "horizontalAlignment": "Center"                            
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Column",
+                        "width": "stretch",
+                        "items": [
+                            {
+                                "type": "TextBlock",
+                                "text": "${Chicken()}",
+                                "wrap": true,
+                                "horizontalAlignment": "Center"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Column",
+                        "width": "stretch",
+                        "items": [
+                            {
+                                "type": "TextBlock",
+                                "text": "${Tofu()}",
+                                "wrap": true,
+                                "horizontalAlignment": "Center"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+    ```
+    ````
+
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_BotReponse_JSON.png" alt-text="Composer Bot Responses tab - Adaptive Card JSON.":::
+
+1. Copy and paste the following code into same code view to add an activity that will display the Adaptive Card.
+
+    ```lg
+    # AdaptiveCardMeals(location)
+    [Activity
+        Attachments = ${json(adaptivecardjson_meals(location))}
     ]
-}
-```
-````
+    ```
 
-:::image type="content" source="media/Composer_Example1/E1_Meals_BotReponse_JSON.png" alt-text="Composer Bot Responses tab - Adaptive Card JSON.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_BotResponse_Activity.png" alt-text="Composer Bot Responses tab - Activity.":::
 
-Add the **Activity** that will display this Adaptive Card in the Bot Framework dialog to the same window in Composer:
+## Display your Adaptive Card
 
-```lg
-# AdaptiveCardMeals(location)
-[Activity
-    Attachments = ${json(adaptivecardjson_meals(location))}
-]
+1. Go to the **Create** page. In the bot explorer, select the **Meals** dialog then select the **BeginDialog** trigger.
 
-```
+1. On the authoring canvas, select **Add** (**+**) then select **Send a response**.
 
-:::image type="content" source="media/Composer_Example1/E1_Meals_BotResponse_Activity.png" alt-text="Composer Bot Responses tab - Activity.":::
+1. Select the new **Send a response** node to open the properties pane. Under **Bot responses**, select **Show code** to switch to the code editor.
 
-Go back to the **Create** tab in Composer and select the **Meals** dialog. Select **BeginDialog** and add **Send a response** to your dialog. We'll use this node to display the Adaptive Card we have created in the **Bot Responses** tab.
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/response_code_editor.png" alt-text="Screenshot of show code button":::
 
-Select the new **Send a response** action to open the **Properties pane**. Under **Bot responses**, select **Show code** to switch to the code editor.
+    > [!WARNING]
+    > Adding the expression in the next step to the _response_ editor instead of the _code_ editor will result in the bot responding with raw JSON instead of an Adaptive Card.
 
-:::image type="content" source="media/Composer_Example1/response_code_editor.png" alt-text="Screenshot of show code button":::
+1. Copy and paste the following expression into the code editor.
 
-> [!WARNING]
-> Adding the following expression to the _response_ editor instead of the _code_ editor will result in the bot responding with raw JSON instead of an Adaptive Card.
+    ```lg
+    - ${AdaptiveCardMeals(virtualagent.user_city)}
+    ```
 
-Add the following expression to the code editor to show the Adaptive Card, and pass the Power Virtual Agents global variable `user_city` as a parameter:
+    Power Virtual Agents global variables are accessed in Composer by using the `virtualagent` scope. This scope won't appear in Composer's property reference menu, but you can access it by entering an expression directly.
 
-```lg
-- ${AdaptiveCardMeals(virtualagent.user_city)}
-```
+    In this example, `${virtualagent.user_city}` refers to the `user_city` global variable that was created in the Power Virtual Agents bot.
 
-:::image type="content" source="media/Composer_Example1/E1_Meals_AddResponse.png" alt-text="Composer Begin Dialog - add Send a response action.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_AddResponse.png" alt-text="Composer Begin Dialog - add Send a response action.":::
 
-> [!TIP]
-> You can [access Power Virtual Agents global variables in Composer](advanced-bot-framework-composer.md#use-and-update-power-virtual-agents-variables-in-bot-framework-composer) by referencing the scope **virtualagent**. For example, **${virtualagent.user_city}** will refer to the value of a variable that was created in the Power Virtual Agents bot.
+## Publish your content
 
-You're now ready to upload the **Meals** dialog to your Power Virtual Agents bot. Select the **Publish** tab, and then select the checkbox next to your bot. Select **Publish selected bot**. Add an optional comment, and select **Okay** in the confirmation window.
+1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-power-virtual-agents) to make it available in your Power Virtual Agents bot.
 
-:::image type="content" source="media/Composer_Example1/E1_Meals_Publish.png" alt-text="Composer Publish Example 1 publish.":::
+    [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
-The Composer content will be validated by Power Virtual Agents and a successful publish will be reported in Composer.
+1. Go to the Power Virtual Agents **Topics** page to see your new **Meals** topic.
 
-[!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_Meals_in_PVA_Topics.png" alt-text="Power Virtual Agents Topics page - new Bot Framework dialog.":::
 
-Go to the Power Virtual Agents **Topics** page to see your new Bot Framework content. Your new **Meals** Bot Framework dialog is now shown on the **Topics** page as part of your Power Virtual Agents bot.
+1. Open the **Meal delivery options** topic.
 
-:::image type="content" source="media/Composer_Example1/E1_Meals_in_PVA_Topics.png" alt-text="Power Virtual Agents Topics page - new Bot Framework dialog.":::
+1. Under the **Question** node, select **Add node** (**+**). Select **Redirect to another topic** then choose **Meals**.
 
-In Power Virtual Agents, open the **Meal delivery options** topic in the **Authoring canvas**. Under the **Question** node, add a new **Redirect to another topic** node, and select the Bot Framework dialog **Meals** from the list of available topics.
+    :::image type="content" source="media/advanced-bot-framework-composer-example1/E1_MealsDelivery_RedirectToMeals.png" alt-text="Power Virtual Agents - redirect to Bot Framework dialog.":::
 
-> [!NOTE]
-> You can continue building your dialog in Power Virtual Agents after calling a Bot Framework Composer dialog if you wish.
+1. Select **Save** to save the changes to your topic.
 
-Your Power Virtual Agents topic **Meal delivery options** will call the Bot Framework dialog **Meals** to display an Adaptive Card. Select **Save** to save the changes to your topic.
+## Test your bot
 
-:::image type="content" source="media/Composer_Example1/E1_MealsDelivery_RedirectToMeals.png" alt-text="Power Virtual Agents - redirect to Bot Framework dialog.":::
+To test your changes in Power Virtual Agents, open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `What meals do you deliver?` to start your conversation.
 
-To test your changes in Power Virtual Agents, open the **Test pane** and make sure **Track between topics** is turned on. Type in the following text to start your conversation:
+Your bot will trigger the **Meal delivery options** topic, which asks the user for their current city. Then the bot will redirect to the Composer dialog **Meals** to display an Adaptive Card.
 
-- **What meals do you deliver?**
+:::image type="content" source="media/advanced-bot-framework-composer-example1/Example1_cropped.png" alt-text="Power Virtual Agents Example 1 test.":::
 
-:::image type="content" source="media/Composer_Example1/Example1_cropped.png" alt-text="Power Virtual Agents Example 1 test.":::
+## Next Steps
 
-[!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
+[Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

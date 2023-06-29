@@ -2,19 +2,12 @@
 title: "Updating the Center of Excellence (CoE) Starter Kit"
 description: "The CoE Starter Kit is updated each month. Learn best practices for managing the update process in your organization."
 author: stjeffer
-manager: topness-msft
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/10/2022
+ms.date: 04/13/2023
 ms.subservice: guidance
 ms.author: stjeffer
-ms.reviewer: jimholtz
-search.audienceType: 
-  - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
+ms.reviewer: sericks
+
 ---
 
 # Updating the Center of Excellence (CoE) Starter Kit
@@ -108,19 +101,16 @@ Your first check before installing the upgrade is removing unmanaged layers from
 >[!NOTE]
 >You may have unknowingly created an unmanaged layer by selecting **Edit** to look at flow actions or by modifying the run-only properties of the flow.
 
-You can check for unmanaged layers on the inventory flows using the [Admin - Command Center](core-components.md#admin---command-center) app.
+You can check for unmanaged layers on the inventory flows using the [Coe Admin Command Center](core-components.md#coe-admin-command-center) app.
 
->[!NOTE]
->The [feature described below](https://github.com/microsoft/coe-starter-kit/issues/2108) was made available with the April 2022 release of the CoE Starter Kit, and requires the April or [later release](https://github.com/microsoft/coe-starter-kit/releases) to be installed.
-
-1. Open the **Admin - Command Center** app from your CoE environment.
+1. Open the **CoE Admin Command Center** app from your CoE environment.
 1. Select **Sync flows** from the navigation.
 1. Check if any of the flows show the layer icon, indicating they have unmanaged layers
- 
+
    ![Screenshot showing the layer icon in the Admin Command Center app](media/coe-upgrade6.png "Detect unmanaged layers on flows in the Admin Command Center app")
-    
+
 1. Select the layer icon to go to the solution layer page of the flow and remove the unmanaged layer.
- 
+
    ![Screenshot showing the Remove unmanaged layer action](media/upgrade2.png "Remove unmanaged layers")
 
 ### Removing other customizations
@@ -162,14 +152,16 @@ Once you've removed unmanaged layers, you can import the new solution version:
 1. The [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) will also show you if the upgrade has failed and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
  
    ![View solution operation error details](/power-platform/guidance/coe/media/coe-upgrade4.png "View solution operation error details")
-    
-1. Make sure to check the setup instructions of the solution you're upgrading to see if any new steps are necessary to use the solution and its new features.
- 
-   1. [Set up core components](/power-platform/guidance/coe/setup-core-components)
-   1. [Set up governance components](/power-platform/guidance/coe/before-setup-gov)
-   1. [Set up nurture components](/power-platform/guidance/coe/setup-nurture-components)
 
-1. When the upgrade has completed processing, move on to [testing](#testing-strategy).
+1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
+1. Open the **CoE Setup and Upgrade Wizard** app.
+1. This app provides a guided step by step experience through the configuration steps. During an upgrade, it will show you the solution history, any components with unmanaged layers and any new apps, flows and environment variables that have been added during this upgrade.
+
+1. Once you have finished this step, move on to [testing](#testing-strategy).
+
+## Updating the Audit Log solution
+
+Connections to custom connectors have to be re-established after solution upgrade. If you are using the Audit Log solution, [reset the connection](https://github.com/microsoft/coe-starter-kit/issues/1424) to the custom connector.
 
 ## Testing strategy
 
@@ -192,7 +184,7 @@ Example test pattern:
 | Reference | Test | Expected outcome | Result |
 |-----------|------|------------------|--------|
 | 1 | Enable: Admin - Sync Template v3 flow | Turn on successfully | Pass |
-| 2 | Launch: Admin - Command Center | App successfully launches | Pass |
+| 2 | Launch: CoE Admin Command Center | App successfully launches | Pass |
 
 ### Testing with users
 

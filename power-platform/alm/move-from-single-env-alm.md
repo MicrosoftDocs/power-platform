@@ -1,25 +1,16 @@
 ---
 title: "Move from a single environment for development and production"
 description: "Support healthy ALM by moving from a single environment to separate environments for development, testing, and production."
-keywords: 
 author: Mattp123
 ms.subservice: alm
 ms.author: matp
-manager: kvivek
-ms.custom: ""
 ms.date: 05/05/2020
-ms.reviewer: ""
-
 ms.topic: "article"
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 # Scenario 2: Moving from a single production environment 
-This scenario aims at users or organizations that have a single Common Data
-Service environment with a database that they use to create, test, and deploy
+This scenario aims at users or organizations that have a single Dataverse environment with a database that they use to create, test, and deploy
 their apps. Having a single environment poses challenges in terms of change
 management and control.
 

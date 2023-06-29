@@ -1,20 +1,15 @@
 ---
 title: "Move configuration data across organizations  | MicrosoftDocs"
 description: Move configuration data across organizations
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/23/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Move configuration data across environments and organizations with the Configuration Migration tool
 
@@ -39,7 +34,7 @@ The Configuration Migration tool enables you to move configuration data across e
   
 - Embed the exported modules created from this tool (schema and data files) in other programs. For example, you can use the exported data in Package Deployer along with other solutions files and data to create and deploy packages on an environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy packages using  Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)  
   
-For information on downloading the Configuration Migration tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget).
+The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf) or you can [download the tool using Power Platform CLI](/powerapps/developer/data-platform/download-tools-nuget).
 
 ## How does the Configuration Migration tool work? 
  The following diagram illustrates how the Configuration Migration tool is used for migrating configuration data.  

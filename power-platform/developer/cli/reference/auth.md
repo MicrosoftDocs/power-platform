@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI auth command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI auth command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 11/18/2022
+author: snizar007
+ms.author: snizar
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -76,7 +76,7 @@ Use one of these values:
 - `UsGov`
 - `UsGovHigh`
 - `UsGovDod`
-- `Mooncake`
+- `China`
 
 #### `--deviceCode` `-dc`
 
@@ -91,6 +91,12 @@ Default environment (id, url, unique name or partial name)
 #### `--kind` `-k`
 
 **Deprecated**: This parameter will be ignored.
+#### `--managedIdentity` `-mi`
+
+Use Azure Managed Identity.
+
+This parameter requires no value. It is a switch.
+
 #### `--name` `-n`
 
 The name you want to give to this authentication profile (maximum 30 characters)

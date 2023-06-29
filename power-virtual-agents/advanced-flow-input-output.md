@@ -2,14 +2,15 @@
 title: Add input and output variables
 description: Pass variables between a Power Automate flow and a Power Virtual Agents bot.
 keywords: "PVA, flow, automate"
-ms.date: 07/28/2022
-ms.service: power-virtual-agents
+ms.date: 03/24/2023
+
 ms.topic: article
-author: v-alarioza
-ms.author: v-alarioza
-manager: shellyha
+author: iaanw
+ms.author: iawilt
+manager: leeclontz
 ms.reviewer: peterswimm
 ms.custom: flow, ceX, advanced-authoring
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -115,7 +116,7 @@ Alternatively, instead of using a variable as an action's input parameter, you c
 
 :::image type="content" source="media/advanced-flow-input-output/literal-value.png" alt-text="Screenshot of a literal value passed as an input parameter.":::
 
-### See also
+### Related topics
 
 [Use variables](authoring-variables.md)
 

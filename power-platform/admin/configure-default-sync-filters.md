@@ -4,17 +4,12 @@ description: Configure default sync filters for appointments, contacts, or task 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/12/2021
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Set up default sync filters for multiple users for appointments, contacts, or tasks

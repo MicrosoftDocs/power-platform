@@ -1,20 +1,15 @@
 ---
 title: "Automation of tasks with Power Automate  | MicrosoftDocs"
 description: Automation of tasks with Power Automate 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/12/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Automation of tasks with Microsoft Power Automate 
 

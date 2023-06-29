@@ -7,13 +7,16 @@ ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtualagent
+ms.collection: virtual-agent
 ---
 
 # Use a Power Virtual Agents bot as a skill
+
+> [!NOTE]
+> This topic includes information applicable to Power Virtual Agents Classic only. This feature is not available in the new Power Virtual Agents experience.
 
 When you use a Power Virtual Agents bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) with a Bot Framework bot, the Bot Framework bot determines if anything the user says matches the Power Virtual Agents bot's [trigger phrases](authoring-create-edit-topics.md). If there's a match, the Bot Framework bot [passes the conversation to the Power Virtual Agents bot](#call-a-power-virtual-agents-skill-topic). The Power Virtual Agents bot extracts any [entities](advanced-entities-slot-filling.md) and triggers the matching topic.
 
@@ -48,7 +51,7 @@ Add the Bot Framework bot's app ID to the allowlist for the Power Virtual Agents
 
 1. In Power Virtual Agents, open the bot you want to use as a skill.
 
-1. In the left pane, go to **Settings** and select **Security**. Then select **Allowlist**.
+1. In the navigation menu, go to **Settings** and select **Security**. Then select **Allowlist**.
 
     :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_ManageAllowlistSecurity.png" alt-text="Screenshot highlighting the Allowlist tile on the Security page.":::
 
@@ -109,7 +112,7 @@ Both skill manifests are shown on the **Manage allowlist** panel.
 
 :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_Manifest1.png" alt-text="Screenshot of the Manage allowlist panel showing the Power Virtual Agents bot manifests.":::
 
-The skill manifests are also shown on the bot's Details page. In the left pane, select **Settings**, and then select **Details**. The Details page shows other metadata, including **Environment ID**, **Tenant ID**, and **Bot app ID**.
+The skill manifests are also shown on the bot's Details page. In the navigation menu, select **Settings**, and then select **Details**. The Details page shows other metadata, including **Environment ID**, **Tenant ID**, and **Bot app ID**.
 
 :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_Manifest2.png" alt-text="Screenshot of the Details page highlighting where to download the Power Virtual Agents bot manifests.":::
 
@@ -201,7 +204,7 @@ Instead of relying on what a user says to trigger a Power Virtual Agents skill t
 
 ### Pass an input variable to a Power Virtual Agents skill topic
 
-Bot Framework Composer can pass a variable to a Power Virtual Agents skill topic as an input. To learn how to create Power Virtual Agents topics that accept input variables, see [Passing variables between topics](/authoring-variables#passing-variables-between-topics).
+Bot Framework Composer can pass a variable to a Power Virtual Agents skill topic as an input. To learn how to create Power Virtual Agents topics that accept input variables, see [Passing variables between topics](authoring-variables.md).
 
 If a Power Virtual Agents topic that can receive an input variable is listed in your skill manifest, you can pass a Composer variable to it.
 
@@ -251,7 +254,7 @@ If a Power Virtual Agents topic that can receive an input variable is listed in 
 
 ### Receive an output variable from a Power Virtual Agents skill topic
 
-It's possible to receive outputs from a Power Virtual Agents skill topic in Composer. To learn how to create Power Virtual Agents topics that return outputs, see [Passing variables between topics](/authoring-variables#passing-variables-between-topics).
+It's possible to receive outputs from a Power Virtual Agents skill topic in Composer. To learn how to create Power Virtual Agents topics that return outputs, see [Passing variables between topics](authoring-variables.md).
 
 1. In the Composer authoring canvas, select **Add**, then select **Access external resources**, and then select **Connect to a skill**.
 

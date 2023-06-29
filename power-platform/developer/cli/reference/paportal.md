@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI paportal command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI paportal command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 11/18/2022
+author: snizar007
+ms.author: snizar
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,14 +26,14 @@ Commands for working with Power Pages website
 
 |Command|Description|
 |---------|---------|
-|[pac paportal download](#pac-paportal-download)|Download Power Pages website content from the current Dataverse Organization|
-|[pac paportal list](#pac-paportal-list)|List all Power Pages websites from the current Dataverse Organization|
-|[pac paportal upload](#pac-paportal-upload)|Upload Power Pages website content to current Dataverse Organization|
+|[pac paportal download](#pac-paportal-download)|Download Power Pages website content from the current Dataverse environment|
+|[pac paportal list](#pac-paportal-list)|List all Power Pages websites from the current Dataverse environment|
+|[pac paportal upload](#pac-paportal-upload)|Upload Power Pages website content to current Dataverse environment|
 
 
 ## pac paportal download
 
-Download Power Pages website content from the current Dataverse Organization
+Download Power Pages website content from the current Dataverse environment
 
 [!INCLUDE [paportal-download-intro](includes/paportal-download-intro.md)]
 
@@ -42,11 +42,11 @@ Download Power Pages website content from the current Dataverse Organization
 
 #### `--path` `-p`
 
-Path where the website content will be downloaded
+Path where the Power Pages website content will be downloaded
 
 #### `--webSiteId` `-id`
 
-Power Pages website id to download
+Power Pages website ID to download
 
 
 ### Optional Parameters
@@ -59,6 +59,10 @@ Comma separated list of entity logical names to exclude downloading
 
 Download only the entities specified for this argument in comma separated entity logical name
 
+#### `--modelVersion` `-mv`
+
+Power Pages website data model version to download
+
 #### `--overwrite` `-o`
 
 Power Pages website content to overwrite
@@ -69,13 +73,24 @@ This parameter requires no value. It is a switch.
 
 ## pac paportal list
 
-List all Power Pages websites from the current Dataverse Organization
+List all Power Pages websites from the current Dataverse environment
+
+[!INCLUDE [paportal-list-intro](includes/paportal-list-intro.md)]
+
+
+### Optional Parameters
+
+#### `--verbose` `-v`
+
+Enables verbose mode and furbishes additional details.
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [paportal-list-remarks](includes/paportal-list-remarks.md)]
 
 ## pac paportal upload
 
-Upload Power Pages website content to current Dataverse Organization
+Upload Power Pages website content to current Dataverse environment
 
 [!INCLUDE [paportal-upload-intro](includes/paportal-upload-intro.md)]
 
@@ -84,7 +99,7 @@ Upload Power Pages website content to current Dataverse Organization
 
 #### `--path` `-p`
 
-Path from where the website content will be uploaded
+Path from where the Power Pages website content will be uploaded
 
 
 ### Optional Parameters
@@ -92,6 +107,16 @@ Path from where the website content will be uploaded
 #### `--deploymentProfile` `-dp`
 
 Deployment profile name to be used. Defaults to 'default'
+
+#### `--forceUploadAll` `-f`
+
+Upload all Power Pages website content to the current Dataverse environment
+
+This parameter requires no value. It is a switch.
+
+#### `--modelVersion` `-mv`
+
+Power Pages website data model version to upload
 
 [!INCLUDE [paportal-upload-remarks](includes/paportal-upload-remarks.md)]
 

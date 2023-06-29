@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI connector command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI connector command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 11/18/2022
+author: snizar007
+ms.author: snizar
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -40,7 +40,7 @@ Use the include files to add additional content to this topic.
 [!INCLUDE [connector-create-intro](includes/connector-create-intro.md)]
 
 
-### Required Parameters
+### Optional Parameters
 
 #### `--api-definition-file` `-df`
 
@@ -50,12 +50,25 @@ The filename and path to read the the Connector's OpenApiDefinition.
 
 The filename and path to read the the Connector's API Properties file.
 
-
-### Optional Parameters
-
 #### `--environment` `-env`
 
 The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
+
+#### `--icon-file` `-if`
+
+The filename and path to and Icon .png file.
+
+#### `--script-file` `-sf`
+
+The filename and path to a Script .csx file.
+
+#### `--settings-file`
+
+The filename and path Connector Settings file.
+
+#### `--solution-unique-name` `-sol`
+
+The unique name of the solution to add the connector to
 
 [!INCLUDE [connector-create-remarks](includes/connector-create-remarks.md)]
 
@@ -94,19 +107,6 @@ Output directory
 [!INCLUDE [connector-init-intro](includes/connector-init-intro.md)]
 
 
-### Required Parameters
-
-#### `--display-name` `-dn`
-
-The display name of the Connector
-
-#### `--name` `-n`
-
-The Name of the Connector
-
-**Note**: Connector Name must have a prefix of 2-8 alphabetical characters followed by  '_' and an alphanumeric name.
-
-
 ### Optional Parameters
 
 #### `--connection-template` `-ct`
@@ -120,6 +120,18 @@ Use one of these values:
 - `ApiKey`
 - `OAuthGeneric`
 - `OAuthAAD`
+
+#### `--generate-script-file`
+
+Generate an initial Connector Script file
+
+This parameter requires no value. It is a switch.
+
+#### `--generate-settings-file`
+
+Generate an initial Connector Settings file
+
+This parameter requires no value. It is a switch.
 
 #### `--outputDirectory` `-o`
 
@@ -149,11 +161,15 @@ The target Environment ID or URL.  Default value is the environment of your curr
 [!INCLUDE [connector-update-intro](includes/connector-update-intro.md)]
 
 
-### Required Parameters
+### Optional Parameters
 
 #### `--api-definition-file` `-df`
 
 The filename and path to read the the Connector's OpenApiDefinition.
+
+#### `--api-properties-file` `-pf`
+
+The filename and path to read the the Connector's API Properties file.
 
 #### `--connector-id` `-id`
 
@@ -161,12 +177,25 @@ The ID of the Connector
 
 **Note**: The Connector Id must be a valid Guid.
 
-
-### Optional Parameters
-
 #### `--environment` `-env`
 
 The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
+
+#### `--icon-file` `-if`
+
+The filename and path to and Icon .png file.
+
+#### `--script-file` `-sf`
+
+The filename and path to a Script .csx file.
+
+#### `--settings-file`
+
+The filename and path Connector Settings file.
+
+#### `--solution-unique-name` `-sol`
+
+The unique name of the solution to add the connector to
 
 [!INCLUDE [connector-update-remarks](includes/connector-update-remarks.md)]
 

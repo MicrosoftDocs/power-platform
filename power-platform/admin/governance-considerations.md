@@ -5,18 +5,13 @@ description: Explains how Power Apps and Power Automate be made widely available
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/07/2022
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Security and governance considerations 

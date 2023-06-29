@@ -49,25 +49,27 @@
       ],
       "titleSuffix": "Power Virtual Agents",
       "breadcrumb_path": "/power-virtual-agents/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
+      "uhfHeaderId": "MSDocsHeader-PowerPlatform",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/power-platform",
       "feedback_product_url": "https://powerusers.microsoft.com/t5/Power-Apps-Ideas/idb-p/PowerAppsIdeas/label-name/power%20virtual%20agents",
       "search.app": [
-        "capaedac-pva"
+        "capaedac-pva",
+        "powervirtualagents-docs"
       ],
-      "search.audienceType": [
-        "maker"
-      ],
-      "search.appverid": "met150",
       "recommendations": true
     },
     "fileMetadata": {
       "searchScope": {
-	        "**.*": [ "Power Virtual Agents" ]
+        "**.*": [
+          "Power Virtual Agents"
+        ]
       },
-      "ms.service":{
+      "ms.service": {
         "**.*": "power-virtual-agents"
+      },
+      "ms.subservice": {
+        "guidance/**/*.md": "guidance"
       }
     },
     "template": [],

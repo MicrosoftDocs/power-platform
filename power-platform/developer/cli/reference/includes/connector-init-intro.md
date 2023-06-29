@@ -1,42 +1,15 @@
-### Examples
+### Example
 
-#### Basic connector init
+The following example shows the use of the `pac connector init` command.
 
-In this example, we'll init a connector in the current directory.
+#### Connector init with output directory and connection template for OAuth AAD authentication
 
-```powershell
-pac connector init `
-  --display-name "Connector Name" `
-  --name "contoso_Connector"
-```
-
-#### Basic connector init with output directory
-
-In this example, we'll init a connector in a new directory called `contoso_Connector`.
+This example initializes a connector in the current directory.
 
 ```powershell
 pac connector init `
-  --display-name "Connector Name" `
-  --name "contoso_Connector" `
+  --connection-template "OAuthAAD" `
+  --generate-script-file "contoso_script_file" `
+  --generate-settings-file "contoso_settings_file" `
   --outputDirectory "contoso_Connector"
-```
-
-#### Advanced connector init with output directory and connection template for anonymous authentication
-
-```powershell
-pac connector init `
-  --display-name "Connector Name" `
-  --name "contoso_Connector" `
-  --outputDirectory "contoso_Connector" `
-  --connection-template "NoAuth"
-```
-
-#### Advanced connector init with output directory and connection template for OAuth AAD authentication
-
-```powershell
-pac connector init `
-  --display-name "Connector Name" `
-  --name "contoso_Connector" `
-  --outputDirectory "contoso_Connector" `
-  --connection-template "OAuthAAD"
 ```

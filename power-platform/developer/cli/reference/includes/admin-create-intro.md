@@ -1,5 +1,10 @@
 ### Examples
 
+The following examples show the use of the `pac admin create` command.
+
+- [Simple creation of an environment](#simple-creation-of-an-environment)
+- [Advanced creation of an environment](#advanced-creation-of-an-environment)
+
 #### Simple creation of an environment
 
 In this example, we'll create a sandbox environment with the default settings:

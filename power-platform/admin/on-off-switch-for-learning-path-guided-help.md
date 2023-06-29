@@ -1,21 +1,15 @@
 ---
 title: "On-off switch for Learning Path (guided help)  | MicrosoftDocs"
 description: On-off switch for Learning Path (guided help) 
-author: jimholtz
-manager: kvivek
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/18/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # On-off switch for Learning Path (guided help)
 

@@ -2,120 +2,130 @@
 title: "Use Bot Framework Composer to use Bing search in chatbots"
 description: "Use Bot Framework Composer to fall back to Bing search in your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtualagent
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Example 3 - Use Bing Search as a fallback in Power Virtual Agents
 
-You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
+[!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
+
+Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 In this example, you'll learn how to set Bing search as a fallback answer in Power Virtual Agents by using Composer.
 
-Before you begin, ensure you read [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md) to understand how Composer integrates with Power Virtual Agents.
-
-> [!IMPORTANT]
-> Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
+[!INCLUDE [Composer License](includes/composer-license.md)]
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- [Introduction to Bot Framework Composer](/composer/introduction).
-- See how to [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md).
 - [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md).
 - [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md).
 
-## Use Bing Search as a fallback
+## Create a fallback trigger
 
-Open the Power Virtual Agents bot used in the previous examples.
+1. In Power Virtual Agents, open the bot from Example 2. If you haven't completed Example 2 yet, see [Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md).
 
-On the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer**.
+1. Open your bot in Composer. For instructions on how to do so, see [Getting started with Bot Framework Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
-Select **+ Add new trigger** to add another Bot Framework trigger to **Contoso Meal Delivery Service** dialog. Choose the type **Unknown intent** for your new trigger.
+1. In the bot explorer, go to the main dialog. Select **More options** (**...**) then select **Add new trigger**.
 
-:::image type="content" source="media/Composer_Example3/E3_BingSearch_UnknownIntent.png" alt-text="Composer - add Unknown Intent trigger.":::
+1. In the **Create a trigger** window, for **What is the type of this trigger?**, select **Unknown intent**. Select **Submit**.
 
-After the **Unknown intent** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_UnknownIntent.png" alt-text="Screenshot of the Create a trigger window.":::
 
-````lg
+1. Go to the **Bot Responses** page, select **Contoso Meal Delivery Service**, then select **Show code**.
 
-# adaptivecardjson_BingSearch(user_utterance)
-- ```
-{    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "type": "AdaptiveCard",
-    "version": "1.2",
-    "fallbackText": "This card requires Media to be viewed. Ask your platform to update to Adaptive Cards v1.1 for this and more!",
-    "actions": [
-        {
-            "type": "Action.OpenUrl",
-            "title": "Search with Bing",
-            "url": "https://www.bing.com/search?q=${user_utterance}",
-            "style": "positive"
-        }
-    ],
-    "body": [
-        {
-            "type": "Image",
-            "url": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWe65Z?ver=2d4e&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
-        },
-        {
-            "type": "TextBlock",
-            "text": "${user_utterance}",
-            "wrap": true,
-            "separator": true,
-            "horizontalAlignment": "Center",
-            "size": "Medium"
-            
-        }
+1. Copy and paste the following into the code view:
+
+    ````lg
+    # adaptivecardjson_BingSearch(user_utterance)
+    - ```
+    {    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.2",
+        "fallbackText": "This card requires Media to be viewed. Ask your platform to update to Adaptive Cards v1.1 for this and more!",
+        "actions": [
+            {
+                "type": "Action.OpenUrl",
+                "title": "Search with Bing",
+                "url": "https://www.bing.com/search?q=${user_utterance}",
+                "style": "positive"
+            }
+        ],
+        "body": [
+            {
+                "type": "Image",
+                "url": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWe65Z?ver=2d4e&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+            },
+            {
+                "type": "TextBlock",
+                "text": "${user_utterance}",
+                "wrap": true,
+                "separator": true,
+                "horizontalAlignment": "Center",
+                "size": "Medium"
+                
+            }
+        ]
+    }
+    ```
+    ````
+
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_BotResponses_AdaptiveCard.png" alt-text="Screenshot of the Adaptive Card JSON added to bot responses.":::
+
+1. Copy and paste the following code into the same code view:
+
+    ```lg
+    # AdaptiveCardBingSearch(user_utterance)
+    [Activity
+        Attachments = ${json(adaptivecardjson_BingSearch(user_utterance))}
     ]
-}
-```
-````
 
-:::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_AdaptiveCard.png" alt-text="Composer Bot Responses - add JSON.":::
+    ```
 
-Add this **Activity** to the same **Bot Responses** window in Composer:
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Screenshot of the activity added to the bot responses.":::
 
-```lg
-# AdaptiveCardBingSearch(user_utterance)
-[Activity
-    Attachments = ${json(adaptivecardjson_BingSearch(user_utterance))}
-]
+1. Go to the **Create** page. In the main dialog, select the **Unknown intent** trigger.
 
-```
+1. On the authoring canvas, select **Add** (**+**) then **Send a response**.
 
-:::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Composer Bot Responses - add Activity.":::
+1. In the properties pane, under **Bot responses**, and select **Show code**.
 
-Go to the **Create** tab in Composer and select the **Unknown intent** trigger. Add the **Send a response** action and select **Show code**. Add the following expression to the **Bot response** pane:
+    > [!WARNING]
+    > Adding the expression in the next step to the _response_ editor instead of the _code_ editor will result in the bot responding with raw JSON instead of an Adaptive Card.
 
-```lg
--${AdaptiveCardBingSearch(turn.activity.text)}
-```
+1. Copy and paste the following expression:
 
-:::image type="content" source="media/Composer_Example3/E3_BingSearch_addBotReponse_BingSearch.png" alt-text="Composer BeginDialog - Send a response.":::
+    ```lg
+    - ${AdaptiveCardBingSearch(turn.activity.text)}
+    ```
 
-You are now ready to add your Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_addBotReponse_BingSearch.png" alt-text="Screenshot of the response for the send a response action.":::
 
-Once your new Composer content is successfully published, you can now see that **OnUnknownIntent** was added to the **Topics** page in Power Virtual Agents.
+## Test your bot
 
-> [!NOTE]
-> You might need to refresh your **Topics** page to see the new bot content that has been added from Composer.
+1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-power-virtual-agents) to make it available in your Power Virtual Agents bot.
 
-:::image type="content" source="media/Composer_Example3/E3_BingSearch_inTopicsList.png" alt-text="Power Virtual Agents Topics page for example 3.":::
+    [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
-Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a bot conversation:
+1. Go to the Power Virtual Agents **Topics** page to see your new **OnUnknownIntent** topic.
 
-- **Is tofu vegan?**
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/E3_BingSearch_inTopicsList.png" alt-text="Screenshot of the new topic visible in Power Virtual Agents.":::
 
-:::image type="content" source="media/Composer_Example3/Example3_cropped.png" alt-text="Power Virtual Agents test for example 3.":::
+1. Open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `Is tofu vegan?` to start your conversation.
 
-[!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
+    :::image type="content" source="media/advanced-bot-framework-composer-example3/Example3_cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane.":::
+
+## Next Steps
+
+[Example 4 - Display a form with a Submit button in Power Virtual Agents](advanced-bot-framework-composer-example4.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

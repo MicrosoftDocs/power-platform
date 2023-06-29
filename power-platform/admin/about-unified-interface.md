@@ -5,16 +5,11 @@ description: About Unified Interface
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/20/2021
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # About Unified Interface for model-driven apps in Power Apps 
 

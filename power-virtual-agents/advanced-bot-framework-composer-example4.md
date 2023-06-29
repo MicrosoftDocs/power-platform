@@ -2,163 +2,189 @@
 title: "Use Bot Framework Composer to display a form in chatbots"
 description: "Use Bot Framework Composer to add a form with a Submit button to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 12/02/2021
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.collection: virtualagent
+ms.service: power-virtual-agents
+ms.collection: virtual-agent
 ---
 
 # Example 4 - Display a form with a Submit button in Power Virtual Agents
 
-You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
+[!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
+
+Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 In this example, you'll learn how to display a form with a Submit button in Power Virtual Agents by using Composer.
 
-Before you begin, ensure you read [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md) to understand how Composer integrates with Power Virtual Agents.
-
-> [!IMPORTANT]
-> Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
+[!INCLUDE [Composer License](includes/composer-license.md)]
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- [Introduction to Bot Framework Composer](/composer/introduction).
-- See how to [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md).
 - [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md).
 - [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md).
 - [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md).
 
-## Display a form with a Submit button
+## Create a new trigger
 
-Open the Power Virtual Agents bot used in the previous examples.
+1. In Power Virtual Agents, open the bot from Example 3. If you haven't completed Example 3 yet, see [Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md).
 
-On the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer**.
+1. Open your bot in Composer. For instructions on how to do so, see [Getting started with Bot Framework Composer](advanced-bot-framework-composer-fundamentals.md#open-your-bot-in-composer).
 
-Select **+ Add new trigger** to add another Bot Framework trigger of type **Intent recognized** to the **Contoso Meal Delivery Service** dialog and call it **StartTrial**.
+1. In the bot explorer, go to the main dialog. Select **More options** (**...**) then select **Add new trigger**.
 
-Add the following trigger phrases and select **Submit**.
+1. In the **Create a trigger** window:
 
-- **start trial**
-- **sign up to try**
-- **register to try service**
+    1. For **What is the type of this trigger?**, select **Intent recognized**.
+    1. For **What is the name of this trigger?**, enter `StartTrial`.
+    1. For **Trigger phrases**, copy and paste the following:
 
-:::image type="content" source="media/Composer-Example4/E4_createStartTrial_trigger.png" alt-text="Composer - create a new trigger.":::
+        ```lu
+        - start trial
+        - sign up to try
+        - register to try service
+        ```
 
-After the **StartTrial** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
+    1. Select **Submit**.
 
-````lg
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_createStartTrial_trigger.png" alt-text="Screenshot of the Create a trigger window.":::
 
-# adaptivecardjson_StartTrialForm()
-- ```
-{
-    "type": "AdaptiveCard",
-    "body": [
-        {
-            "type": "TextBlock",
-            "size": "Medium",
-            "weight": "Bolder",
-            "text": "Register for a meal plan trial:"
-        },
-        {
-            "type": "Input.Text",
-            "placeholder": "Please enter your Name",
-            "id": "Name"
-        },
-        {
-            "type": "Input.Text",
-            "placeholder": "Please enter your Address",
-            "id": "Address",
-            "isMultiline": true
-        },
-        {
-            "type": "Input.Number",
-            "placeholder": "How many weeks",
-            "id": "Weeks"
-        },
-        {
-            "type": "ActionSet",
-            "actions": [
-                {
-                    "type": "Action.Submit",
-                    "title": "Submit",
-                    "style": "positive"
-                }
-            ]
-        }
-    ],
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "version": "1.2"
-}
-```
-````
+1. Go to the **Bot Responses** page, select **Contoso Meal Delivery Service**, then select **Show code**.
 
-Note that every data field in this Adaptive card was given an ID: **Name**, **Address**, and **Weeks**.
+1. Copy and paste the following into the code view:
 
-:::image type="content" source="media/Composer-Example4/e4_createsubmitform.png" alt-text="Composer - create StartTrialForm.":::
+    ````lg
+    # adaptivecardjson_StartTrialForm()
+    - ```
+    {
+        "type": "AdaptiveCard",
+        "body": [
+            {
+                "type": "TextBlock",
+                "size": "Medium",
+                "weight": "Bolder",
+                "text": "Register for a meal plan trial:"
+            },
+            {
+                "type": "Input.Text",
+                "placeholder": "Please enter your Name",
+                "id": "Name"
+            },
+            {
+                "type": "Input.Text",
+                "placeholder": "Please enter your Address",
+                "id": "Address",
+                "isMultiline": true
+            },
+            {
+                "type": "Input.Number",
+                "placeholder": "How many weeks",
+                "id": "Weeks"
+            },
+            {
+                "type": "ActionSet",
+                "actions": [
+                    {
+                        "type": "Action.Submit",
+                        "title": "Submit",
+                        "style": "positive"
+                    }
+                ]
+            }
+        ],
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "version": "1.2"
+    }
+    ```
+    ````
 
-Next, add the following Activity below the Adaptive Card JSON:
+    Every input field in this Adaptive card has a unique ID: **Name**, **Address**, and **Weeks**.
 
-````lg
-# AdaptiveCard_StartTrialForm()
-[Activity
-    Attachments = ${json(adaptivecardjson_StartTrialForm())}
-]
-````
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/e4_createsubmitform.png" alt-text="Screenshot of the Adaptive Card JSON added to the bot responses.":::
 
-:::image type="content" source="media/Composer-Example4/E4_createSubmitFormActivity.png" alt-text="Composer - create Activity.":::
+1. Copy and paste the following code into the same code view:
 
-Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add the **Ask a question** action and select type **Text**.
+    ````lg
+    # AdaptiveCard_StartTrialForm()
+    [Activity
+        Attachments = ${json(adaptivecardjson_StartTrialForm())}
+    ]
+    ````
 
-:::image type="content" source="media/Composer-Example4/E4_ask_question.png" alt-text="Composer - ask a question.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_createSubmitFormActivity.png" alt-text="Screenshot of the activity added to the bot responses.":::
 
-Select the **Prompt for text** node, then in the properties pane under the **Bot response** tab, select **Show code**. Add the following to the code window:
+## Add conversation logic
 
-```lg
-- ${AdaptiveCard_StartTrialForm()}
-```
+1. Go to the **Create** page and select the **StartTrial** trigger.
 
-:::image type="content" source="media/Composer-Example4/e4_call_starttrialform_activity.png" alt-text="Composer - call StartTrialForm activity.":::
+1. On the authoring canvas, select **Add** (**+**), **Ask a question**, then **Text**.
 
-Select the **User Input** node. Select the **User Input** tab. Set **Property** to `user.name` and set **Value** to `=turn.activity.value.Name` to extract and save the value of the from field **Name** from our Adaptive card **StartTrialForm** into `user.name`.
+1. In the properties pane, under **Bot responses**, and select **Show code**.
 
-:::image type="content" source="media/Composer-Example4/E4_saveUserInput.png" alt-text="Composer - save user input.":::
+    > [!WARNING]
+    > Adding the expression in the next step to the _response_ editor instead of the _code_ editor will result in the bot responding with raw JSON instead of an Adaptive Card.
 
-Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Weeks**. Use the **Set properties** action to extract them from `turn.activity.value` and save them to `user.address` and `user.weeks`:
+1. Copy and paste the following expression:
 
-:::image type="content" source="media/Composer-Example4/E4_setProperties.png" alt-text="Composer - set properties.":::
+    ```lg
+    - ${AdaptiveCard_StartTrialForm()}
+    ```
 
-Add a **Send a Response** action to provide a form submission confirmation:
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/e4_call_starttrialform_activity.png" alt-text="Screenshot of the prompt for text response.":::
 
-```lg
-${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meals will be delivered to this address: ${user.address}.
-```
+1. Select the **User Input** tab in the properties pane, then do the following:
 
-:::image type="content" source="media/Composer-Example4/E4_formSubmit_confirm.png" alt-text="Composer - add form submission confirmation.":::
+    1. For **Property**, enter `user.name`.
+    1. For **Value**, enter `=turn.activity.value.Name`.
 
-Use the **Begin a Power Virtual Agents Topic** action to call the Power Virtual Agents bot's **End of Conversation** topic:
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_saveUserInput.png" alt-text="Screenshot of the user input action.":::
 
-:::image type="content" source="media/Composer-Example4/e4_call_pva_end_of_conversation.png" alt-text="Composer - call Power Virtual Agents topic.":::
+1. On the authoring canvas, select **Add** (**+**), **Manage properties**, then **Set properties**.
 
-You are now ready to add your Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
+1. In the properties pane, do the following:
 
-Once your new Composer content is successfully published, you can now see that **StartTrial** was added to the **Topics** page in Power Virtual Agents.
+    1. Under **Assignments**, select **Add new** to add a **Property** box and a **Value** box.
+    1. For **Property**, enter `user.address`
+    1. For **Value**, enter `=turn.activity.value.Address`.
+    1. Select **Add new** a second time to add another **Property** and **Value**.
+    1. For **Property**, enter `user.weeks`.
+    1. For **Value**, enter `=turn.activity.value.Weeks`.
 
-> [!NOTE]
-> You might need to refresh your **Topics** page to see the new bot content that has been added from Composer.
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_setProperties.png" alt-text="Screenshot of the Set properties action.":::
 
-:::image type="content" source="media/Composer-Example4/E4_StartTrial_inTopicsList.png" alt-text="Power Virtual Agents Topics page.":::
+1. On the authoring canvas, select **Add** (**+**) then **Send a response**.
 
-Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a bot conversation:
+1. In the response editor, copy and paste the following:
 
-- **How do I sign up for a trial?**
+    ```lg
+    ${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meals will be delivered to this address: ${user.address}.
+    ```
 
-:::image type="content" source="media/Composer-Example4/Example4_cropped.png" alt-text="Power Virtual Agents test.":::
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_formSubmit_confirm.png" alt-text="Screenshot of the confirmation response.":::
 
-[!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
+1. On the authoring canvas, select **Add** (**+**) then **Begin a Power Virtual Agents Topic**.
+
+1. In the properties pane, for **Dialog name**, select **End of conversation**.
+
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/e4_call_pva_end_of_conversation.png" alt-text="Screenshot of the Begin a Power Virtual Agents topic action.":::
+
+## Test your bot
+
+1. [Publish your Composer content](advanced-bot-framework-composer-fundamentals.md#test-composer-content-within-power-virtual-agents) to make it available in your Power Virtual Agents bot.
+
+    [!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
+
+1. Go to the Power Virtual Agents **Topics** page to see your new **StartTrial** topic.
+
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/E4_StartTrial_inTopicsList.png" alt-text="Screenshot of the new topic visible in Power Virtual Agents.":::
+
+1. Open the **Test bot pane** and make sure **Track between topics** is turned on. Enter the message `How do I sign up for a trial?` to start your conversation.
+
+    :::image type="content" source="media/advanced-bot-framework-composer-example4/Example4_cropped.png" alt-text="Screenshot of the Power Virtual Agents test bot pane.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

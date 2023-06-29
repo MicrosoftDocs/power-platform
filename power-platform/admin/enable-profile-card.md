@@ -1,20 +1,15 @@
 ---
 title: "Enable viewing profile cards  | MicrosoftDocs"
 description: Enable viewing profile cards 
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Enable viewing profile cards
 

@@ -1,24 +1,23 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) installation"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)"
 description: "Install instructions for the Center of Excellence Command-Line interface"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-manager: pladhani
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/23/2023
 
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
 
-# Center of Excellence (CoE) Command Line Interface (CLI) installation
+# Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
+
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 To install the CoE CLI:
 
@@ -36,7 +35,7 @@ Next, select either [local install](#local-install) or [Docker install](#docker-
 
 ### Prerequisites
 
-To run the CoE CLI application, you'll need to install the components below.
+To run the CoE CLI application, first install these components:
 > [!NOTE]
 > The CoE CLI has been tested with Azure CLI version up to 2.38.0
 
@@ -58,7 +57,7 @@ To run the CoE CLI application, you'll need to install the components below.
 
 ### Non Administrator Install
 
-If you do not have administration rights you can use the [Non Administration Install](./non-administrator-local-install.md)
+If you don't have administration rights, you can use the [Non-Administration Install](./non-administrator-local-install.md)
 
 ### Checking prerequisites
 
@@ -108,9 +107,9 @@ One method of installation is via Docker.
 
 ### Docker prerequisites
 
-To run the CoE CLI application, you'll need the following software.
+To run the CoE CLI application, you need the following software.
 
-- A local install of [Docker](https://docs.docker.com/get-docker/). The install can be either Community Edition or Enterprise Edition. If you're installing onto a desktop environment, you'll normally pick a Community Edition deployment.
+- A local install of [Docker](https://docs.docker.com/get-docker/). The install can be either Community Edition or Enterprise Edition. If you're installing onto a desktop environment, you normally pick a Community Edition deployment.
 
 ### Docker install steps
 
@@ -130,7 +129,7 @@ To run the CoE CLI application, you'll need the following software.
    docker run -it --rm coe-cli
    ```
 
-This command will start a new interactive console (`-it`) and remove the Docker container (`--rm`) when the console session exits. Using `--rm` ensures that any cached credentials are removed when you exit.
+This command starts a new interactive console (`-it`) and remove the Docker container (`--rm`) when the console session exits. Using `--rm` ensures that any cached credentials are removed when you exit.
 
 ## Next steps
 

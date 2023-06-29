@@ -4,17 +4,16 @@ description: Reference information, including syntax, for the ReadNFC function i
 author: mikepenaMS
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 08/01/2022
 ms.subservice: power-fx
 ms.author: mikepena
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
   - mikepenaMS
   - anuitz
 ---

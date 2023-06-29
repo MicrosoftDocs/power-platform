@@ -1,20 +1,18 @@
 ---
-title: "Microsoft Power Platform self-service analytics schema definition (preview)"
-description: This topic discusses the contents of the data exported from Power Platform to Azure Data Lake Gen2 storage locations. 
+title: Microsoft Power Platform self-service analytics schema definition (preview)
+description: Learn about the contents of the data exported from Power Platform to Azure Data Lake Gen2 storage locations. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/04/2022
+ms.date: 03/28/2023
 ms.subservice: admin
-author: tjvass
-ms.author: tjvass
-ms.reviewer: jimholtz
+author: ChrisGarty
+contributors:
+  - ChrisGarty
+  - v-aangie
+ms.author: cgarty
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Microsoft Power Platform self-service analytics schema definition (preview)
@@ -30,15 +28,17 @@ This topic discusses the contents of the data exported from Power Platform to Az
 
 ## Structure of the data output
 
-When you export Power Apps and usage data to your Data Lake Storage, self-service analytics makes the data available in a [Common Data Model](/common-data-model/) schema format. This Common Data Model&ndash;based metadata makes it possible for you to share your data across applications and business processes, such as Power Apps, Power BI, Dynamics 365, and Azure.
+When you export Power Apps and Power Automate inventory and usage data to your Data Lake Storage, self-service analytics makes the data available in a [Common Data Model](/common-data-model/) schema format. This Common Data Model-based metadata makes it possible for you to share your data across applications and business processes, such as Power Apps, Power Automate, Power BI, Dynamics 365, and Azure.
 
 The data export file includes:  
 
-- A full inventory for all apps, connectors, and associated metadata that exist in the tenant.
+- A full inventory for all apps, flows, connectors, and associated metadata that exist in the tenant.
+
 - Usage data comprising data starting from the time that the export starts.
 
 After the first time you generate a data export, Power Automate generates incremental daily updates. Each daily update includes details about all new and existing apps, including connector information. The data export contains the Azure Active Directory (Azure AD) *principal object ID (userid)*. Optionally, you can further use Azure AD to retrieve actual usernames and business units, such as marketing, sales, or finance.
 
+## Power Apps folder structure
 The main root folder for Power Apps has the following folder structure:
 
 - \Applications
@@ -47,20 +47,23 @@ The main root folder for Power Apps has the following folder structure:
 - \Environments
 - \Usage
 
+## Power Automate folder structure
+
 The main root folder for Power Automate has the following folder structure:
 
 - \Flows
 -	\FlowsConnectionReference
 -	\Usage
 
+## Viewing the data and folders inside Azure portal
 
-> [!NOTE] 
-> Data listed in these folders can be viewed through your Azure portal. For information, go to [https://portal.azure.com](https://portal.azure.com/) and navigate to your storage account (**Home** > **Subscriptions** > *your subscription name* > **Resource Groups** > *your resource group* > *your storage accounts* > **Storage Account**).
+Data listed in these folders can be viewed through your Azure portal. To learn more, go to [https://portal.azure.com](https://portal.azure.com/). Then, navigate to your storage account (**Home** > **Subscriptions** > *your subscription name* > **Resource Groups** > *your resource group* > *your storage accounts* > **Storage Account**).
 
 ## The structure of the containers and folders inside the data lake
 
-- The main root folder is in the yyyy-mm-dd date format&mdash;for example, 2020-02-28.
-- The root folder contains two folders, Metadata and KPI: 
+- The main root folder is in the yyyy-mm-dd date format (for example, 2020-02-28).
+
+- The root folder contains two folders: Metadata and KPI: 
   - The Metadata folder contains inventory data in a list of files, one for each region.
   - The KPI folder contains usage data.
 
@@ -68,9 +71,9 @@ The main root folder for Power Automate has the following folder structure:
 
 The following tables detail the schema definitions of the data. Metadata are considered as inventory data.
 
-### Power Apps subfolder
+## Power Apps subfolder
 
-#### Apps 
+### Apps
 
 | **Property name**       | **Property type**  | **Description**                               |
 |-------------------------|--------------------|-----------------------------------------------|
@@ -103,7 +106,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Settings                | Longtext           | Reserved                                      |
 | customExtensions        | Longtext           | Reserved                                      |
 
-#### Connection reference 
+### Connection reference
 
 | **Property name** | **Property type** | **Description**                     |
 |-------------------------|-------------------------|-------------------------|
@@ -114,7 +117,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Tier | Longtext | Premium or Standard |
 | Type | Longtext | Connection type&mdash;for example SQL, Office 365, or Azure |
 
-#### Connections 
+### Connections
 
 | **Property name** | **Property type** | **Description**                                              |
 |--------------------|--------------------|------------------------------------------------------------|
@@ -129,7 +132,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Swaggerurl         | Longtext           | Swagger URL for custom API                                 |
 | tenantId           | Guid               | Customer tenant ID                                          |
 
-#### Environments 
+### Environments
 
 | **Property name**       | **Property type**  | **Description**                                              |
 |-------------------------|--------------------|--------------------------------------------------------------|
@@ -152,7 +155,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 | DeletedTime             | Datetime           | Date the app was last deleted                                |
 | DeletedprincipalId      | Longtext           | Azure AD object ID of the user who deleted the app                         |
 
-#### Usage
+### Usage
 
 | **Property name**  | **Property type** |**Description**                                                |
 |--------------------|--------------------|--------------------------------------------------------------|
@@ -169,10 +172,9 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Browsername        | Longtext           | Client browser                                               |
 | DataVersion        | Int(11)            | Table data, not user-related                                 |
 
+## Power Automate subfolder
 
-### Power Automate subfolder
-
-#### Flows
+### Flows
 
 | **Property name**             | **Property type** |**Description**                                       |
 |-------------------------------|-------------------|------------------------------------------------------|
@@ -189,7 +191,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 |sharedUsers	                  |int	              |Number of users the flow is shared with |
 |sharedGroups	                  |int	              |Number of groups the flow is shared with |
 
-#### FlowsConnectionReference
+### FlowsConnectionReference
 
 | **Property name**  | **Property type** |**Description**                                                |
 |--------------------|--------------------|--------------------------------------------------------------|
@@ -202,7 +204,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 |displayName	       |LongText	          |Name of connection reference |
 |tier	               |LongText	          |Standard, Premium |
 
-#### Usage
+### Usage
 
 | **Property name**  | **Property type** |**Description**                                                |
 |--------------------|--------------------|--------------------------------------------------------------|
@@ -215,17 +217,12 @@ The following tables detail the schema definitions of the data. Metadata are con
 |runs	               |Int	                |Number of runs |
 
 > [!NOTE]
-> The latest versions of generally well-known platform operating systems should contain data, but in some cases this data might not be available. 
-
-
+> The latest versions of generally well-known platform operating systems should contain data, but in some cases this data might not be available.
 
 ### See also
 
-[Create a storage account](/azure/storage/common/storage-account-create) <br />
-[Set up Power Platform self-service analytics to export Power Apps inventory and usage data](self-service-analytics.md)
-
-
-
+- [Create a storage account](/azure/storage/common/storage-account-create) <br />
+- [Set up Power Platform self-service analytics to export Power Apps inventory and usage data](self-service-analytics.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

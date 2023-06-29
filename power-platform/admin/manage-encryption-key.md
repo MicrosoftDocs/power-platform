@@ -3,19 +3,14 @@ title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/14/2021
+ms.date: 06/02/2023
 author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: kvivek
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Manage the encryption key 
 
@@ -24,15 +19,17 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
  By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don't have to. The manage keys feature in the Microsoft Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the Dataverse tenant. 
 
 > [!IMPORTANT]
-> Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses, or more than 1000 Dynamics 365 Enterprise licenses, or more than 1000 licenses from a combination of both in a single tenant. To opt in to this program, submit a [support request](./support-overview.md#using-support).
->
-> Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can't be encrypted with the self-managed encryption key:
-> - Dataverse search
-> - Mobile Offline
-> - Activity Log (Microsoft 365 portal)
-> - Exchange (Server-side sync)
-> 
-> Note the following: 
+> - As of June 2, 2023, this service is upgraded to [Customer-managed encryption key](customer-managed-key.md). New customers who need to manage their own encryption key will use the upgraded service as this service is no longer offerred.
+> - Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses, or more than 1000 Dynamics 365 Enterprise licenses, or more than 1000 licenses from a combination of both in a single tenant. To opt in to this program, submit a [support request](./support-overview.md#using-support).
+
+Encryption key management is only applicable to Azure SQL environment databases. The following features and services continue to use the Microsoft-managed encryption key to encrypt their data and can't be encrypted with the self-managed encryption key:
+- Dataverse search
+- Elastic tables
+- Mobile Offline
+- Activity Log (Microsoft 365 portal)
+- Exchange (Server-side sync)
+ 
+> [!NOTE] 
 > - The self-manage database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
 > - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.  
 > - Support of [File](/powerapps/developer/data-platform/file-attributes) and [Image](/powerapps/developer/data-platform/image-attributes) with size < 128MB can be enabled if your environment has version 9.2.21052.00103 or higher.
@@ -68,19 +65,18 @@ The malicious administrator signs in to the Power Platform admin center, goes to
 These actions will result in disabling all the environments within the tenant from online access and make all database backups un-restorable.
   
 > [!IMPORTANT]
-> To prevent the malicious administrator from interrupting the business operations by locking the database, the managed keys feature doesn't allow tenant environments to be locked for 72 hours after the encryption key has changed or activated. Additionally, anytime an encryption key is changed for a tenant, all administrators receive an email message alerting them of the key change. This provides up to 72 hours for other administrators to roll back any unauthorized key changes. 
+> To prevent the malicious administrator from interrupting the business operations by locking the database, the managed keys feature doesn't allow tenant environments to be locked for 72 hours after the encryption key has changed or activated. This provides up to 72 hours for other administrators to roll back any unauthorized key changes. 
   
 <a name="KM_details"></a>   
 
+### Encryption key requirements
+
+If you provide your own encryption key, your key must meet  these  requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
   
-### Encryption key requirements  
- If you provide your own encryption key, your key must meet  these  requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
-  
--   The encryption key file format must be PFX or BYOK.  
-  
--   2048-bit RSA or RSA-HSM key type.  
-  
--   PFX encryption key files must be password protected.  
+- The encryption key file format must be PFX or BYOK.  
+- 2048-bit RSA.
+- RSA-HSM key type (requires a Microsoft Support request).
+- PFX encryption key files must be password protected.  
   
 For more information about generating and transferring an HSM-protected key over the Internet see [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys).  Only [nCipher Vendor HSM key](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) is supported. Before generating your HSM key, go to the Power Platform admin center **Manage encryption keys**/**Create New key** window to obtain the subscription ID for your environment region. You need to copy and paste this subscription ID into your HSM to create the key. This will ensure that only our Azure Key Vault can open your file.
   
@@ -119,7 +115,6 @@ Use this procedure to set the manage key feature the first time for an environme
 
 6. Select **Next**. 
 
-7. Email notification is sent to all administrators. More information: [Encryption key change notification](#encryption-key-change-notification).
 
 #### Generate a new key (.pfx)   
 1.    Enter a password, and then re-enter the password to confirm.
@@ -142,8 +137,8 @@ Once an encryption key is generated or uploaded for the tenant, it can be activa
 2.    Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar.
 1.  Select **Confirm** to acknowledge the manage key risk.
 2.  Select a key that has an **Available** state and then select **Activate key** on the toolbar.
-3.  Select **Confirm** to acknowledge the key change and that all administrators will be notified.
-    More information: [Encryption key change notification](#encryption-key-change-notification)
+3.  Select **Confirm** to acknowledge the key change.
+  
 
 When you activate a key for the tenant, it takes a while for the key management service to activate the key. The status of the **Key state** displays the key as **Installing** when the new or uploaded key is activated. 
 Once the key is activated, the following occurs: 
@@ -258,13 +253,10 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 3. [Reset](sandbox-environments.md#reset-a-sandbox-environment)
    The environment's encrypted data will be deleted including backups. After the environment is reset, the environment encryption will revert back to the Microsoft managed key. 
 
-## Encryption key change notification
-> [!IMPORTANT]
-> When an encryption key is activated or changed, all administrators receive an email message alerting them of the change. This provides a means to allow other administrators to verify and confirm that the key was updated by an authorized administrator.  Since it takes time to activate the key and to encrypt all the environments, and to send out the email notification, an encryption key can only be updated once every 24 hours.
 
 ### See also  
 
-[SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
+[SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017&preserve-view=true)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

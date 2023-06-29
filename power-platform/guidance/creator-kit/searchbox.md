@@ -1,8 +1,7 @@
 ---
 title: SearchBox control reference | Creator Kit
 description: Learn about the details and properties of the SearchBox control in the Creator Kit.
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 11/02/2022
@@ -11,16 +10,14 @@ ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist
 ---
 
-# :::no-loc text="SearchBox"::: control (Preview)
+# :::no-loc text="SearchBox"::: control (preview)
+
+[This article is pre-release documentation and is subject to change.]
 
 A control used to create a search experience.
 

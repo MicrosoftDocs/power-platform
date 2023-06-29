@@ -1,19 +1,14 @@
 ---
 title: "Configure Dataverse search to improve search results and performance   | MicrosoftDocs"
 description: Configure Dataverse search to improve search results and performance 
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/11/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Configure Dataverse search for your environment
 

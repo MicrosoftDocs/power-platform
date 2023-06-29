@@ -1,21 +1,17 @@
 ---
 title: "Use Word templates to create standardized documents  | MicrosoftDocs"
-description: Use Word templates to create standardized documents
-
+description: Create a standardized document with one click using Word templates in Power Platform.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/26/2021
+ms.date: 2/28/2023
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: jimholtz
+contributors: 
+    - ProfessorKendrick
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Use Word templates to create standardized documents
 
@@ -315,6 +311,5 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 [Analyze your data with Excel templates](../admin/analyze-your-data-with-excel-templates.md)
 
 [Troubleshooting Word templates](troubleshoot-word-templates-dynamics-365.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

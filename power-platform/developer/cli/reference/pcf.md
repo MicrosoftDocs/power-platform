@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI pcf command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI pcf command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 11/18/2022
+author: snizar007
+ms.author: snizar
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -109,6 +109,12 @@ Force a full update of the control
 
 This parameter requires no value. It is a switch.
 
+#### `--interactive` `-i`
+
+Indicates that actions in the build are allowed to interact with the user. Do not use this argument in an automated scenario where interactivity is not expected.
+
+This parameter requires no value. It is a switch.
+
 #### `--verbosity` `-v`
 
 Verbosity level for MSBuild when building the temporary solution wrapper.
@@ -157,9 +163,10 @@ Updates patch version for 'ControlManifest.xml' files using specified strategy. 
 
 Use one of these values:
 
-- `gittags`
-- `filetracking`
-- `manifest`
+- `None`
+- `GitTags`
+- `FileTracking`
+- `Manifest`
 
 #### `--updatetarget` `-ut`
 

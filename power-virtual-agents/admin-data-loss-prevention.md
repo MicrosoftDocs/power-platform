@@ -1,20 +1,19 @@
-﻿---
+---
 title: "Apply data loss prevention policies to chatbots"
 description: "Use and configure DLP policies with PowerShell cmdlets to help prevent accidental data exfiltration or data loss."
 keywords: "PVA"
-ms.date: 10/07/2022
+ms.date: 03/24/2023
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
 ms.custom: admin, dlp
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 
-# Configure data loss prevention for Power Virtual Agents chatbots (Preview)
-
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+# Configure data loss prevention for Power Virtual Agents chatbots
 
 Organizational data is the most important asset administrators are responsible for safeguarding. The ability to build automation to use that data is a large part of their company's success.
 
@@ -47,8 +46,8 @@ The following Power Virtual Agents connectors are available in the Power Platfor
 
 | Connector name | Description |
 |-------------------------|-------------------------|
-| Skills with Power Virtual Agents | Block bot makers from using skills in Power Virtual Agents chatbots. </br>See [Example 1 – Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md) and [Example 2 – Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md) for more details. |
-| Chat without Azure AD authentication in Power Virtual Agents | Block bot makers from publishing chatbots that aren't configured for authentication. </br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot. </br>See [Example 3 – Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md) for more details. |
+| Skills with Power Virtual Agents | Block bot makers from using skills in Power Virtual Agents chatbots. </br>See [Example 1: Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md) and [Example 2: Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md) for more details. |
+| Chat without Azure AD authentication in Power Virtual Agents | Block bot makers from publishing chatbots that aren't configured for authentication. </br>[Bot users will require authentication](configuration-end-user-authentication.md) to chat with the chatbot. </br>See [Example 3: Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md) for more details. |
 | Microsoft Teams channel in Power Virtual Agents | Block bot makers from enabling or using the Teams channel. |
 | Direct Line channels in Power Virtual Agents | Block any Direct Line channel. </br>For example, the Demo website, Custom website, and Mobile app channels would be blocked. |
 | Facebook channel in Power Virtual Agents | Block bot makers from enabling or using the Facebook channel. |
@@ -58,9 +57,9 @@ The following Power Virtual Agents connectors are available in the Power Platfor
 
 To help you get started with Power Virtual Agents chatbot governance, we created the following examples that detail different scenarios:
 
-- [Example 1 – Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md)
-- [Example 2 – Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md)
-- [Example 3 – Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md)
+- [Example 1: Use DLP to block skills in Power Virtual Agents chatbots](dlp-example-1.md)
+- [Example 2: Use DLP to block HTTP requests from Power Virtual Agents chatbots](dlp-example-2.md)
+- [Example 3: Use DLP to require end-user authentication for Power Virtual Agents chatbots](dlp-example-3.md)
 
 ## Use PowerShell to enable and administer DLP enforcement for chatbots in your organization
 

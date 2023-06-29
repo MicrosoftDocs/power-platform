@@ -1,19 +1,14 @@
 ---
 title: "Integrate (synchronize) your email system  | MicrosoftDocs"
 description: Integrate (synchronize) your email system
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 09/08/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Integrate (synchronize) your email system
 

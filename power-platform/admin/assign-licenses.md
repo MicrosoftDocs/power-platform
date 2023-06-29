@@ -1,10 +1,10 @@
 ---
 title: "Assign licenses | MicrosoftDocs"
 description: About assigning licenses to a user.
-author: jimholtz
+author: sericks007
 ms.reviewer: jimholtz
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.custom: "admin-security"
 
 ms.component: pa-admin
@@ -12,11 +12,6 @@ ms.topic: conceptual
 ms.date: 06/01/2021
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Assign licenses
 

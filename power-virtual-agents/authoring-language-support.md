@@ -2,25 +2,18 @@
 title: "Language support"
 description: "Create new chatbots in multiple languages, including tutorial and system topics."
 keywords: "PVA, language, regional, region"
-ms.date: 9/22/2020
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.custom: "authoring, fundamentals, ce06092020"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-
 # Supported languages
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](authoring-language-support.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-language-support-teams.md)
 
 You can create chatbots in Power Virtual Agents in a number of languages. This means that your bots can reach a much broader audience and engage with more markets all around the world.
 
@@ -30,11 +23,11 @@ You can create chatbots in Power Virtual Agents in a number of languages. This m
 
 ## Specify a language for your bot
 
-You specify the target language when you first [create a bot](authoring-first-bot.md).
+You specify the target language when you first create a bot.
 
 1. In the **Create a new bot** window, select **Language**.
 
-1. Choose the language you want to use. Some languages are listed under **Preview**, as described in the list of supported languages later in this article.
+1. Choose the language you want to use. 
 
     :::image type="content" source="media/authoring-language-support/language-selection-teams.png" alt-text="Language selection option.":::
 
@@ -56,32 +49,30 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 
 | Language               | Support              |
 | ---------------------- | -------------------- |
-| Chinese (Simplified)   | Preview              |
-| Chinese (Traditional)  | Preview              |
-| Czech                  | Preview              |
+| Chinese (Simplified)   | General availability |
+| Chinese (Traditional)  | General availability |
+| Czech                  | General availability |
 | Danish                 | General availability |
 | Dutch                  | General availability |
 | English                | General availability |
-| Finnish                | Preview              |
+| Finnish                | General availability |
 | French                 | General availability |
 | German                 | General availability |
-| Greek                  | Preview              |
-| Hindi                  | Preview              |
+| Greek                  | General availability |
+| Hindi                  | General availability |
 | Indonesian             | General availability |
 | Italian                | General availability |
 | Japanese               | General availability |
-| Korean                 | Preview              |
+| Korean                 | General availability |
 | Norwegian              | General availability |
-| Polish                 | Preview              |
+| Polish                 | General availability |
 | Portuguese (Brazilian) | General availability |
 | Russian                | General availability |
 | Spanish                | General availability |
 | Swedish                | General availability |
-| Thai                   | Preview              |
+| Thai                   | General availability |
 | Turkish                | General availability |
 
-### See also
+### Related topics
 
 - [Data locations for organizations using Power Virtual Agents](data-location.md)
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

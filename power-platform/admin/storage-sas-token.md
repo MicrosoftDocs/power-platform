@@ -4,18 +4,13 @@ description: "Learn how to gain access the SAS token for your storage and view t
 author: sama-zaki
 ms.component: pa-admin
 ms.topic: conceptual
-ms.custom: intro-internal
+ms.collection: get-started
 ms.date: 05/25/2022
 ms.subservice: admin
 ms.author: zakisama
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Access your storage with a SAS token
@@ -61,7 +56,7 @@ This section describes the prerequisites necessary to access the storage with th
 8. Use the below link to construct the SAS URL.
 
 ```http
-    https://<ContainerURL>/CDS?<SASToken>'
+    https://<ContainerURL>/CDS?<SASToken>
 ```
 
 > [!NOTE]

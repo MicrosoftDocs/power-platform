@@ -10,17 +10,12 @@ ms.author: dmartens
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Automatically track sent folder items with server-side synchronization 
 
-When server-side synchronization is enabled for an Microsoft Exchange mailbox within Dynamics 365, items in the Microsoft Exchange **Inbox** are tracked automatically and created in Dynamics 365 based on acceptance and correlation logic. You can configure this option in **Set Personal Options**. 
+When server-side synchronization is enabled for a Microsoft Exchange mailbox within Dynamics 365, received emails in the Microsoft Exchange **Inbox** are tracked automatically and created in Dynamics 365 based on acceptance and correlation logic. You can configure this option in **Set Personal Options**. 
 
-Email messages that users send directly from an email client, such as Microsoft Office Outlook, are not tracked automatically. Emails from these email clients won't be created in Dynamics 365.  
+Email messages that users send directly from an email client, such as Microsoft Office Outlook, are not tracked automatically by default. The following section includes the steps required to enable automatic tracking of sent emails.
  
 ## Enable Tracking for Sent Folder Items 
 

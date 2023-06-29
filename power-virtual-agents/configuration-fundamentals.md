@@ -2,36 +2,34 @@
 title: "Configuration of advanced features"
 description: "Incorporate advanced features into your bot, such as sign-in, live agent transfer, and custom appearances."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.custom: "configuration, fundamentals, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
-# Key concepts - Configuration of Power Virtual Agents
+# Key concepts - Configure Power Virtual Agents
 
-Select the version of Power Virtual Agents you're using here:
+Power Virtual Agents has many advanced features that let you extend the capabilities of what bot conversations can do.
 
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](configuration-fundamentals.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/configuration-fundamentals-teams.md)
+These features allow you to personalize the look and feel of your bot and give you more flexibility in what your users can ask your bot to do.
 
-Power Virtual Agents has a number of advanced features that let you extend the capabilities of what bot conversations can do.
-
-These features go beyond basic topic authoring and bot conversations and allow you to create a personalized look and feel to your bot, as well as give you more flexibility in what you users can ask your bot to do.
-
-You can sign-in to backend systems, seamlessly integrate between virtual support conversations, and customize the look and feel of your bot.
+> [!NOTE] 
+> With the Web app version, you can use single sign-in (SSO) to backend systems, seamlessly integrate between virtual support conversations, and customize the look and feel of your bot.
 
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
-## In this section
+
+## Related topics
+
+# [Web app](#tab/web)
 
 | Topic                                                                                           | Description                                                                                                                            |
 | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,8 +37,21 @@ You can sign-in to backend systems, seamlessly integrate between virtual support
 | [Configure end-user authentication](configuration-end-user-authentication.md)                   | Allow users to sign in with any OAuth2 identity provider directly in a bot conversation.                                               |
 | [Configure single sign-on](configure-sso.md)                                                    | Retain a user's authentication to use other signed-in products.                                                                        |
 | [Configure hand off to a generic engagement hub](configure-generic-handoff.md)                  | Hand off conversations to any engagement hub.                                                                                          |
-| [Configure hand off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md) | Seamlessly and contextually hand off bot conversations to live (human) agents using omnichannel for Dynamics 365 Customer Service.     |
+| [Configure hand off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) | Seamlessly and contextually hand off bot conversations to live (human) agents using Omnichannel for Customer Service.     |
 | [Configure your bot to automatically start the conversation](configure-bot-greeting.md)         | Make your bot start the conversation automatically whenever the bot is loaded.                                                         |
 | [Customize the look and feel of your bot](customize-default-canvas.md)                          | Send and receive dynamic responses (such as adaptive cards and carousels) that you can custom render directly in the bot conversation. |
+
+
+# [Teams](#tab/teams)
+
+| Topic                                                                                       | Description                                                                                       |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [Assign access and change security options](configuration-end-user-authentication.md) | Determine who can use the bot in Microsoft Teams                                                  |
+| [Configure end-user authentication](configuration-end-user-authentication.md)         | Allow users to sign in with any OAuth2 identity provider directly in a bot conversation.          |
+| [Configure how the bot starts the conversation](configure-bot-greeting.md)            | Change what the bot says when it starts a conversation.                                           |
+| [Customize the look and feel of your bot](customize-default-canvas.md)                | Change the bot's icon, name, and description so it looks unique in the Microsoft Teams app store. |
+| [Enable and configure Azure Bot Framework skills](configuration-add-skills.md)        | Extend your bot with Bot Framework skills.                                                        |
+
+---
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

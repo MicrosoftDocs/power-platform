@@ -1,23 +1,22 @@
 ---
-title: "CoE ALM Accelerator for Power Platform branching and merging"
+title: "CoE ALM Accelerator for Power Platform branching and merging (Deprecated)"
 description: "Discussion of branching and merging for ALM Accelerator using the Center of Excellence (CoE) command line interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-manager: pladhani
 ms.custom: ""
-ms.date: 11/30/2021
+ms.date: 05/22/2023
 
 ms.topic: "article"
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - PowerApps
-  - Powerplatform
 ---
 
-# CoE ALM Accelerator for Power Platform branching and merging
+# CoE ALM Accelerator for Power Platform branching and merging (Deprecated)
+
+> [!NOTE]
+> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
 Development as a team of makers, advanced makers, and professional developers often uncovers new concepts. One area of complexity is branching and merging. Using the links below, different [personas](./personas.md) can review each concept and determine their level of comfort.
 
@@ -56,7 +55,7 @@ More information: [CoE ALM branch](https://aka.ms/coe-cli/help/alm/branch)
 
 1. After this command is run, a default branch with Azure Pipelines is created in the repository.
 
-1. The advanced maker Alan creates an unmanaged solution named **Onboarding** in his development environment.
+1. The advanced maker Alan creates an unmanaged solution named **Onboarding** in the development environment.
 
 1. Using the AA4PP administration application Alan created a new feature branch and pushes the changes to Git.
 
@@ -97,7 +96,7 @@ Karen as the advanced maker in the Finance team follows a similar process to wha
 
 1. After this command is run, a default branch with Azure Pipelines is created in the repository.
 
-1. Karen creates an unmanaged solution named **Expense** in her development environment.
+1. Karen creates an unmanaged solution named **Expense** in the development environment.
 
 1. Using the AA4PP Administration application, Karen creates a new feature branch with the ID of the work item that has been assigned **385** and **Push changes to Git**.
 

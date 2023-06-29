@@ -4,17 +4,12 @@ description: Server-side synchronization provides direct apps-to-email server sy
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 05/25/2021
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Server-side synchronization
 

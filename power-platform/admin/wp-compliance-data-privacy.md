@@ -1,19 +1,14 @@
 ---
 title: "Compliance and data privacy  | MicrosoftDocs"
 description: Compliance and data privacy
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/29/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Compliance and data privacy
 

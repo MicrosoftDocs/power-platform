@@ -1,19 +1,14 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 07/26/2022
+ms.date: 05/02/2023
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
 ms.author: sriknair
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # New Microsoft Dataverse storage capacity 
@@ -62,6 +57,11 @@ The new licensing storage model looks like the following image.
 ### Summary tab
 
 This page provides a tenant-level view of where your organization is using storage capacity.
+
+For the **Summary** page to be displayed, the user needs to have one of the following roles: 
+- Tenant admin
+- Power Platform admin
+- Dynamics 365 admin 
 
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
@@ -173,7 +173,7 @@ Notifications for capacity approaching storage limits will be triggered when any
 > [!NOTE]
 > The storage driven capacity model calculation of these thresholds also considers the overflow usage allowed in the storage driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, overflow usage has been taken into consideration to reduce the number of emails a tenant admin receives.
 
-These notifications are sent out to tenant admins on a weekly basis. At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. All tenant admins for a tenant will automatically receive these notifications.
+These notifications are sent out to tenant admins, Power Platform admins, and Dynamics 365 admins on a weekly basis. At this time, there is no option for a customer to opt-out of these notifications or delegate these notifications to someone else. All admins types listed earlier will automatically receive these notifications.
 
 Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. 
 
@@ -300,6 +300,10 @@ Default, production, and sandbox environments are counted for consumption. Trial
 ### What are tables ending in “- analytics" in my capacity report?
 
 Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse tables. See **More information** below for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
+
+### Why can I no longer see the Summary tab in my capacity report? 
+
+This is due to a change that occurred in April 2023, after which only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab in the capacity report. Users, such as environment admins, will no longer see this tab and will be redirected to the **Dataverse** tab when accessing the report. If you have a user that requires access to the **Summary** tab, assign one of the required roles. 
 
 **More information:**
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)

@@ -5,18 +5,14 @@ keywords:
 author: mikkelsen2000
 ms.subservice: alm
 ms.author: pemikkel
-manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 02/17/2023
 ms.reviewer: "pehecke"
 
 ms.topic: "article"
 ms.assetid: 
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # ALM for developers
@@ -25,7 +21,9 @@ The articles in this section describe how you as a developer can use available A
 
 We'll start off talking a little about team development and then dive into Azure DevOps and available build tools.
 
-To learn more about key ALM concepts and working with solutions, see [Overview of application lifecycle management](overview-alm.md).
+To learn more about key ALM concepts and working with solutions, see [Overview of application lifecycle management](overview-alm.md) and watch the following video.<p/>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?ev=powerful-devs-conference&session=how-to-do-alm-with-power-platform]
 
 ## Team development
 
@@ -59,7 +57,7 @@ to avoid conflict.
 ### See also
 
 [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)  
-[Power Apps for developers](/powerapps/?panel=developer#pivot=home)
+[Power Platform developer docs](/power-platform/developer)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,20 +1,15 @@
 ---
 title: "Choose the region when setting up an environment"
 description: "Learn about the factors in selecting a region when creating a new environment in Microsoft Power Platform admin center."
-author: jimholtz
+author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Regions overview 
 

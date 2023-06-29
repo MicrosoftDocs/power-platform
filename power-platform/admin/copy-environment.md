@@ -1,24 +1,15 @@
 ---
 title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/26/2022
-ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
-ms.reviewer: jimholtz
-search.audienceType: 
-  - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.reviewer: sericks
 ---
 # Copy an environment
 
-You can use Copy environment in the Microsoft Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use the **Copy** option in the Microsoft Power Platform admin center to copy data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![Copy menu.](media/copy-menu.png "Copy menu")
@@ -28,7 +19,7 @@ You can use Copy environment in the Microsoft Power Platform admin center to cop
 >   :::image type="content" source="media/copy-environment-no-target.png" alt-text="No target for copying environment.":::
 > - You can only copy to an environment in the same tenant and region.
 > - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) might not be part of the copy. You should validate your apps post copy.
-> - You can't copy from or to a default type environment.
+> - You can't copy from or to a default or trial type environment.
 > - Copy and restore operations can take up to 8 hours unless a lot of data, including audit data, needs to be copied or restored, in which case they could take up to 24 hours.
   
 ## Copy over everything
@@ -41,9 +32,9 @@ You can use Copy environment in the Microsoft Power Platform admin center to cop
   
 **An example scenario**  
   
-Isaac, a business application developer, has received a request from the sales department to configure and deploy a social media integration solution from another company vendor.  Isaac has never installed a solution from this vendor and is unsure what impact this would have on the production application. Isaac would like to import the solution into an environment that is nearly identical to, but isolated from, production to learn about the solution and make the appropriate configuration changes. Isaac submits a request to Thomas, the IT Manager for Contoso, to create an Everything copy sandbox environment for him.  
+Isaac, a business application developer, has received a request from the sales department to configure and deploy a social media integration solution from another company vendor. Isaac has never installed a solution from this vendor and is unsure what impact this would have on the production application. Isaac would like to import the solution into an environment that is nearly identical to, but isolated from, production to learn about the solution and make the appropriate configuration changes. Isaac submits a request to Thomas, the IT Manager for Contoso, to create an Everything copy sandbox environment for Isaac.  
   
-After the Everything copy is complete, Isaac receives a mail from Thomas telling him the sandbox environment is ready.  Isaac logs into the sandbox environment and makes the necessary changes to make sure that production external services won't be impacted by the sandbox environment.  Once changes are complete, Isaac turns off administration mode and enables background services.  Isaac is able to use the Everything copy sandbox environment to do his testing and later manually import the solution into production.  
+After the Everything copy is complete, Isaac receives a mail from Thomas telling that the sandbox environment is ready. Isaac logs into the sandbox environment and makes the necessary changes to make sure that production external services won't be impacted by the sandbox environment.  Once changes are complete, Isaac turns off administration mode and enables background services.  Isaac is able to use the Everything copy sandbox environment to do the testing and later manually import the solution into production.  
   
 ## Copy over customizations and schemas only 
  Customizations and schemas copy only includes users, customizations, and schema from the source environment and is suitable for:  
@@ -54,14 +45,14 @@ After the Everything copy is complete, Isaac receives a mail from Thomas telling
   
 **An example scenario**  
   
-Isaac has a large development project starting next week for the sales department.  He has a team of developers ready to start on the project, some of whom are internal to Contoso and some are external vendors. The Contoso sales application contains Personally Identifiable Information (PII) that the sales manager has explicitly stated must not be made available to any external parties for privacy and legal liability reasons.  Isaac requests customizations and schemas only copy sandbox environment that doesn't contain any production data or users. In addition, Isaac creates a Microsoft 365 security group to give the development team access to the sandbox environment.  
+Isaac has a large development project starting next week for the sales department.  Isaac has a team of developers ready to start on the project, some of whom are internal to Contoso and some are external vendors. The Contoso sales application contains Personally Identifiable Information (PII) that the sales manager has explicitly stated must not be made available to any external parties for privacy and legal liability reasons.  Isaac requests customizations and schemas only copy sandbox environment that doesn't contain any production data or users. In addition, Isaac creates a Microsoft 365 security group to give the development team access to the sandbox environment.  
   
 After modifying and enabling some of the plug-ins, the developer sandbox environment functions the same and is isolated from the production application.  The development team works on their modifications in this environment for several weeks.  They package their changes into a solution and export/import to deploy to the Everything copy sandbox environment.  After a successful round of testing and signoffs, the changes are manually deployed to production.  
   
 ### Tables truncated in customizations and schemas only copy 
  The following tables will be truncated when you do a customizations and schemas only copy:  
 
-| Tables |  |  |
+| Tables    |  &nbsp;    |  &nbsp;   |
 |-----------|-----------|-----------| 
 | Account | InterProcessLock | SocialActivity |
 | AccountLeads | Invoice | SocialInsightsConfiguration |

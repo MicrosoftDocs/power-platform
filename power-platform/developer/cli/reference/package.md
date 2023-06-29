@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI package command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI package command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 11/18/2022
+author: snizar007
+ms.author: snizar
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -101,22 +101,6 @@ Use one of these values:
 
 A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.
 
-#### `--layer-order-behavior`
-
-This argument is applicable only for 1st party solutions.
-
-Use one of these values:
-
-- `above`
-- `base`
-- `below`
-
-#### `--layer-order-solution-unique-names`
-
-This argument is applicable only for 1st party solutions.
-
-**Note**: Use a semicolon delimited list of solution uniquenames.
-
 #### `--missing-dependency-behavior`
 
 Specifies the behavior on import when a dependency of this solution is missing from the target environment.
@@ -181,22 +165,6 @@ Use one of these values:
 
 A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.
 
-#### `--layer-order-behavior`
-
-This argument is applicable only for 1st party solutions.
-
-Use one of these values:
-
-- `above`
-- `base`
-- `below`
-
-#### `--layer-order-solution-unique-names`
-
-This argument is applicable only for 1st party solutions.
-
-**Note**: Use a semicolon delimited list of solution uniquenames.
-
 #### `--missing-dependency-behavior`
 
 Specifies the behavior on import when a dependency of this solution is missing from the target environment.
@@ -258,11 +226,17 @@ This parameter requires no value. It is a switch.
 
 Log file path
 
-#### `--settings`
+#### `--settings` `-s`
 
 Runtime Package Settings that are passed to the package that is being deployed.  The format of the string must be `key=value|key=value`.
 
 **Note**: The format of the string must be `key=value|key=value`.
+
+#### `--verbose` `-vdbg`
+
+Emit Verbose logs to the log outputs
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [package-deploy-remarks](includes/package-deploy-remarks.md)]
 
@@ -275,12 +249,6 @@ Initializes a directory with a new Dataverse package project
 
 ### Optional Parameters
 
-#### `--include-PkgAssets-Content`
-
-Indicates whether to also include some sample files for the PkgAssets/Content folder.
-
-This parameter requires no value. It is a switch.
-
 #### `--outputDirectory` `-o`
 
 Output directory
@@ -288,15 +256,6 @@ Output directory
 #### `--package-name`
 
 Sets the default name of the package. Applies to the generation of ImportExtension.GetNameOfImport.
-
-#### `--template`
-
-The name of the template to instantiate. Note: the template 'legacy' will be removed in a future release.
-
-Use one of these values:
-
-- `sdk-style`
-- `legacy`
 
 [!INCLUDE [package-init-remarks](includes/package-init-remarks.md)]
 
@@ -312,6 +271,19 @@ Shows details of Dataverse package
 #### `--package` `-p`
 
 path to a package dll or zip file with a package
+
+
+### Optional Parameters
+
+#### `--logFile` `-lf`
+
+Log file path
+
+#### `--verbose` `-vdbg`
+
+Emit Verbose logs to the log outputs
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [package-show-remarks](includes/package-show-remarks.md)]
 

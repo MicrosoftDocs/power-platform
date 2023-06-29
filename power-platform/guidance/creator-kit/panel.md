@@ -1,8 +1,7 @@
 ---
 title: Panel control reference (experimental) | Creator Kit
 description: Learn about the details and properties of the Panel control in the Creator Kit.
-author: denisem-msft
-manager: devkeydet
+author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/16/2022
@@ -11,10 +10,6 @@ ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 contributors:
   - tapanm-msft
   - slaouist
@@ -36,8 +31,6 @@ A control used to group content.
 Panels are overlays that contain supplementary content and are used for complex creation, edit, or management experiences—for example, viewing details about an item in a list or editing settings.
 
 This canvas component mimics the style and behavior of the [Fluent UI Panel control](https://developer.microsoft.com/fluentui#/controls/web/Panel).
-
-[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
 
 ## Properties
 
@@ -132,10 +125,10 @@ Steps to format content in a panel:
 
     |Property|Value|
     |-|-|
-    |`X`| `cmp_panel.X` |
-    |`Y`| `cmp_panel.X` |
-    |`Width`| `cmp_panel.X` |
-    |`Height`| `cmp_panel.X` |
+    |`X`| `cmp_panel.ContentX` |
+    |`Y`| `cmp_panel.ContentY` |
+    |`Width`| `cmp_panel.ContentWidth` |
+    |`Height`| `cmp_panel.ContentHeight` |
     |`Visible`| `cmp_panel.Visible` | 
 
 ## Limitations

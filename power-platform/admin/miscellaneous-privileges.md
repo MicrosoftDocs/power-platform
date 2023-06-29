@@ -1,519 +1,173 @@
 ---
-title: "Miscellaneous privileges  | MicrosoftDocs"
-description: About miscellaneous privileges
-author: jimholtz
+title: Miscellaneous privileges
+description: Learn about the miscellaneous privileges that you can assign to a security role in Power Platform.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/21/2021
+ms.date: 04/02/2023
 ms.subservice: admin
-ms.author: jimholtz
+author: sericks007
+ms.author: sericks
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ms.custom: bap-template
 ---
 
 # Miscellaneous privileges
 
-This topic provides a mapping of the security role user interface to the privilege names. Each section in this topic corresponds to a tab in the user interface (Power Platform admin center > **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security Roles** > select a role). A blank cell means that there is no privilege for that combination of table and action.
+You can assign other privileges to a security role than the familiar Read, Write, Append, and so on. Use either the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to assign privileges to a security role.
 
-> [!div class="mx-imgBorder"] 
-> ![Miscellaneous privileges.](media/miscellaneous-privileges.png "Miscellaneous privileges")
+## New experience
 
-## Core Records tab
+The following table describes the miscellaneous privileges, which in the new, modern UI are listpred alphabetically on the **Miscellaneous privileges** tab of the security role editor.
 
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the core records tab.
+| Miscellaneous privilege | Privilege name | More information |
+|-------------------------|----------------|------------|
+| Act on Behalf of Another User | prvActOnBehalfOfAnotherUser | [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user)   |
+| Activate Business Process Flows | prvActivateBusinessProcessFlow | [Model business process flows](/power-automate/business-process-flows-overview) |
+| Activate Business Rules | prvActivateBusinessRule | [Model business process flows](/power-automate/business-process-flows-overview) |
+| Activate Real-time Processes | prvActivateSynchronousWorkflow | [Model business process flows](/power-automate/business-process-flows-overview) |
+| Add Reporting Services Reports | prvPublishRSReport | [Download reports](analytics-common-data-service.md#download-reports) |
+| Approve Email Addresses for Users or Queues | prvApproveRejectEmailAddress | [Approve email](connect-exchange-online.md#approve-email) |
+| Approve Knowledge Articles | prvApproveKnowledgeArticle | [Create and manage knowledge articles](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
+| Assign manager for a user | prvAssignManager | [Manager hierarchy](hierarchy-security.md#manager-hierarchy) |
+| Assign position for a user | prvAssignPosition | [Position hierarchy](hierarchy-security.md#position-hierarchy) |
+| Assign Territory to User | prvAssignTerritory | [Add or remove sales territory members](add-remove-territory-members.md) |
+| Browse availability | prvBrowseAvailability | Not applicable |
+| Bulk Edit | prvBulkEdit | [Edit multiple rows](/powerapps/user/edit-rows) |
+| Bulk Delete | prvBulkDelete | [Bulk delete](delete-bulk-records.md) |
+| Change Hierarchy Security Settings | prvWriteHierarchicalSecurityConfiguration | [Hierarchy security to control access](hierarchy-security.md) |
+| Configure Internet Marketing module | prvConfigureInternetMarketing | [Create and deploy marketing pages](/dynamics365/marketing/create-deploy-marketing-pages) |
+| Configure Yammer | prvConfigureYammer | [Yammer resources](https://resources.techcommunity.microsoft.com/yammer/adoption/) |
+| Create own calendar | prvCreateOwnCalendar | [Create and customize marketing calendars](/dynamics365/marketing/customize-marketing-calendars) |
+| Create Quick Campaign | prvAllowQuickCampaign | [Create a quick campaign using in-app marketing (Sales)](/dynamics365/sales-enterprise/create-quick-campaign-using-app-marketing-sales) |
+| Delete Audit Partitions | prvDeleteAuditPartitions | [Recover database space by deleting audit logs](recover-database-space-deleting-audit-logs.md) |
+| Delete Audit Record Change History | prvDeleteRecordChangeHistory | Not applicable |
+| Delete own calendar | prvDeleteOwnCalendar | [Create and customize marketing calendars](/dynamics365/marketing/customize-marketing-calendars) |
+| Dynamics 365 Address Book | prvAddressBook | [Set schedule for address book synchronization](system-settings-dialog-box-outlook-tab.md) |
+| Enable or Disable a Business Unit | prvDisableBusinessUnit | [Create or edit business units](create-edit-business-units.md) |
+| Enable or Disable User | prvDisableUser | [Enable or disable user accounts](create-users.md#enable-or-disable-user-accounts) |
+| Execute Workflow Job | prvWorkflowExecution | [Configure background workflow stages and steps](/power-automate/configure-workflow-steps) |
+| Export Customizations | prvExportCustomization | [ExportSolution message privileges](/powerapps/maker/common-data-service/import-update-export-solutions) |
+| Import Customizations | prvImportCustomization | [ImportSolution message privileges](/powerapps/maker/common-data-service/import-update-export-solutions) |
+| ISV Extensions | prvISVExtensions | Not currently in use. |
+| Language Settings | prvLanguageSettings | [Regional and language options for your environment](enable-languages.md) |
+| Learning Path Authoring | Not applicable  | [On-off switch for Learning Path](/power-platform/admin/on-off-switch-for-learning-path-guided-help) |
+| Manage Data Encryption key - Activate | prvRestoreSqlEncryptionKey | [Activate an encryption key for a tenant](manage-encryption-key.md#activate-an-encryption-key-for-a-tenant)|
+| Manage Data Encryption key - Change | prvChangeSqlEncryptionKey | [Manage encryption for an environment](manage-encryption-key.md#manage-encryption-for-an-environment) |
+| Manage Data Encryption key - Read | prvReadSqlEncryptionKey | [Manage the encryption key](manage-encryption-key.md)  |
+| Manage User Synchronization Filters | prvAdminFilter | [Control field synchronization with Outlook](control-field-synchronization-outlook.md) |
+| Merge | prvMerge | [Merge data](merge-data.md) |
+| Override Created on or Created by for Records during Data Import | prvOverrideCreatedOnCreatedBy | [Import data (all record types) from multiple sources](import-data-all-record-types.md) |
+| Override Invoice Pricing | prvOverridePriceEngineInvoice | [Create or edit invoices (Sales and Sales Hub)](/dynamics365/sales-enterprise/create-edit-invoice-sales) |
+| Override Opportunity Pricing | prvOverridePriceEngineOpportunity | [Add products to an opportunity (Sales Hub)](/dynamics365/sales-enterprise/add-products-opportunity) |
+| Override Order Pricing | prvOverridePriceEngineOrder | [Create or edit orders (Sales and Sales Hub)](/dynamics365/sales-enterprise/create-edit-order-sales) |
+| Override Quote Order Invoice Delete | prvQOIOverrideDelete | [Create or edit quotes (Sales and Sales Hub)](/dynamics365/sales-enterprise/create-edit-quote-sales) |
+| Override Quote Pricing | prvOverridePriceEngineQuote | [Price calculation for opportunity, quote, order, and invoice records](/dynamics365/sales-enterprise/price-calculation-opportunity-quote-order-invoice-records) |
+| Perform in sync rollups on goals | prvRollupGoal | [Create or edit goals (Sales and Sales Hub)](/dynamics365/sales-enterprise/create-edit-goal-sales) |
+| Promote User to Microsoft Dynamics 365 Administrator Role | Not applicable | [Configure user security to resources in an environment](database-security.md) |
+| Publish Articles | prvPublishArticle | [Create and manage knowledge articles](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
+| Publish Duplicate Detection Rules | prvPublishDuplicateRule | [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md) |
+| Publish Email Templates | prvCreateOrgEmailTemplates | [Create templates for email](create-templates-email.md) |
+| Publish Customizations | prvPublishCustomization | [PublishXml message privileges](/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations)</br>[PublishAllXml message privileges](/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations) |
+| Publish Knowledge Articles | prvPublishKnowledgeArticle | [Create and manage knowledge articles](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
+| Publish Mail Merge Templates to Organization | prvPublishOrgMailMergeTemplate | [Work with mail merge templates](work-mail-merge-templates.md) |
+| Publish Reports | prvPublishOrgReport | [Common Data Service analytics](analytics-common-data-service.md) |
+| Read License info | prvReadLicense | [What users are licensed](wp-license-management.md#what-users-are-licensed) |
+| Read own calendar | prvReadOwnCalendar | [Create and customize marketing calendars](/dynamics365/marketing/customize-marketing-calendars) |
+| Reparent Business unit | prvReparentBusinessUnit | [Assign a business unit a different parent business](assign-business-unit-different-parent.md) |
+| Retrieve Multiple Social Insights | prvRetrieveMultipleSocialInsights | Not applicable |
+| Run Flows | Not applicable | [Run attended and unattended UI flows](/power-automate/ui-flows/run-ui-flow) |
+| Run SharePoint Integration Wizard | prvConfigureSharePoint | [Set up SharePoint integration](set-up-sharepoint-integration.md) |
+| Reparent team | prvReparentTeam | [Manage teams](manage-teams.md) |
+| Reparent user | prvReparentUser | [Create users](create-users.md) |
+| Search Availability | prvSearchAvailability | Not applicable |
+| Send Email as Another User | prvSendAsUser  | [Delegate users](use-outlook-category-track-appointments-emails.md#delegate-users) |
+| Send Invitation | prvSendInviteForLive | [Invite users with Azure Active Directory B2B collaboration](invite-users-azure-active-directory-b2b-collaboration.md) |
+| Turn On Tracing | Not applicable | [Plug-in and custom workflow activity tracing](system-settings-dialog-box-customization-tab.md) |
+| Use internet marketing module | prvUseInternetMarketing | [Create a quick campaign using in-app marketing (Sales)](/dynamics365/customerengagement/on-premises/developer/sample-distribute-a-quick-campaign) |
+| View Audit History | prvReadRecordAuditHistory | [Audit history](common-data-service-gdpr-dsr-guide.md#audit-history) |
+| View Audit Partitions | prvReadAuditPartitions | [Audit data and user activity for security and compliance](manage-dataverse-auditing.md) |
+| View Audit Summary | prvReadAuditSummary | [Power Apps activity logging](logging-powerapps.md) |
+| Web Mail Merge | prvWebMailMerge | [Work with mail merge templates](work-mail-merge-templates.md) |
+| Write own calendar | prvWriteOwnCalendar | Not applicable |
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Miscellaneous Privileges</p></th>
-<th><p>Privilege name</p></th>
-<th><p>More information</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Add Reporting Services Reports</p></td>
-<td><p>prvPublishRSReport</p></td>
-<td><p><a href="/power-platform/admin/analytics-common-data-service#download-reports">Download reports</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Bulk Delete</p></td>
-<td><p>prvBulkDelete</p></td>
-<td><p><a href="/power-platform/admin/delete-bulk-records">Bulk delete</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Delete Audit Partitions</p></td>
-<td><p>prvDeleteAuditPartitions</p></td>
-<td><p><a href="/power-platform/admin/recover-database-space-deleting-audit-logs">Recover database space by deleting audit logs</a></p></td>
-</tr>
-<tr>
-<td><p>Delete Audit Record Change History</p></td>
-<td><p>prvDeleteRecordChangeHistory</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>Manage Data Encryption key - Activate</p></td>
-<td><p>prvRestoreSqlEncryptionKey</p></td>
-<td><p><a href="/power-platform/admin/manage-encryption-key#activate-an-encryption-key-for-a-tenant">Activate an encryption key for a tenant</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Manage Data Encryption key - Change</p></td>
-<td><p>prvChangeSqlEncryptionKey</p></td>
-<td><p><a href="/power-platform/admin/manage-encryption-key#manage-encryption-for-an-environment">Manage encryption for an environment</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Manage Data Encryption key - Read</p></td>
-<td><p>prvReadSqlEncryptionKey</p></td>
-<td><p><a href="/power-platform/admin/manage-encryption-key">Manage the encryption key</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Manage User Synchronization Filters</p></td>
-<td><p>prvAdminFilter</p></td>
-<td><p><a href="/power-platform/admin/control-field-synchronization-outlook">Control field synchronization with Outlook</a></p></td>
-</tr>
-<tr>
-<td><p>Promote User to Microsoft Dynamics 365 Administrator Role</p></td>
-<td><p></p></td>
-<td><p><a href="/power-platform/admin/database-security">Configure user security to resources in an environment</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Publish Duplicate Detection Rules</p></td>
-<td><p>prvPublishDuplicateRule</p></td>
-<td><p><a href="/power-platform/admin/set-up-duplicate-detection-rules-keep-data-clean">Set up duplicate detection rules to keep your data clean</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Publish Email Templates</p></td>
-<td><p>prvCreateOrgEmailTemplates</p></td>
-<td><p><a href="/power-platform/admin/create-templates-email">Create templates for email</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Publish Mail Merge Templates to Organization</p></td>
-<td><p>prvPublishOrgMailMergeTemplate</p></td>
-<td><p><a href="/power-platform/admin/work-mail-merge-templates">Work with mail merge templates</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Publish Reports</p></td>
-<td><p>prvPublishOrgReport</p></td>
-<td><p><a href="/power-platform/admin/analytics-common-data-service">Common Data Service analytics</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Run SharePoint Integration Wizard</p></td>
-<td><p>prvConfigureSharePoint</p></td>
-<td><p><a href="/power-platform/admin/set-up-sharepoint-integration">Set up SharePoint integration</a></p></td>
-</tr>
-<tr>
-<td><p>Turn On Tracing</p></td>
-<td><p></p></td>
-<td><p><a href="/power-platform/admin/system-settings-dialog-box-customization-tab">Plug-in and custom workflow activity tracing</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>View Audit History</p></td>
-<td><p>prvReadRecordAuditHistory</p></td>
-<td><p><a href="/power-platform/admin/common-data-service-gdpr-dsr-guide#audit-history">Audit history</a></p></td>
-</tr>
-<tr class="even">
-<td><p>View Audit Partitions</p></td>
-<td><p>prvReadAuditPartitions</p></td>
-<td><p><a href="/power-platform/admin/manage-dataverse-auditing">Audit data and user activity for security and compliance</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>View Audit Summary</p></td>
-<td><p>prvReadAuditSummary</p></td>
-<td><p><a href="/power-platform/admin/logging-powerapps">Power Apps activity logging</a></p></td>
-</tr>
-</tbody>
-</table>
+## Legacy experience
 
-## Marketing tab
+The privileges described in the previous table are grouped by tab, shown in the following list:
 
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the marketing tab.
-
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Miscellaneous Privileges</p></th>
-<th><p>Privilege Name</p></th>
-<th><p>More information</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Configure Internet Marketing module</p></td>
-<td><p>prvConfigureInternetMarketing</p></td>
-<td><p><a href="/dynamics365/marketing/create-deploy-marketing-pages">Create and deploy marketing pages</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Create Quick Campaign</p></td>
-<td><p>prvAllowQuickCampaign</p></td>
-<td><p><a href="/dynamics365/sales-enterprise/create-quick-campaign-using-app-marketing-sales">Create a quick campaign using in-app marketing (Sales)</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Use internet marketing module</p></td>
-<td><p>prvUseInternetMarketing</p></td>
-<td><p><a href="/dynamics365/customerengagement/on-premises/developer/sample-distribute-a-quick-campaign">Create a quick campaign using in-app marketing (Sales)</a></p></td>
-</tr>
-</tbody>
-</table>
-
-## Sales tab
-
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the sales tab.
-
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Miscellaneous Privileges</p></th>
-<th><p>Privilege Name</p></th>
-<th><p>More information</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Override Invoice Pricing</p></td>
-<td><p>prvOverridePriceEngineInvoice</p></td>
-<td><p><a href="/dynamics365/sales-enterprise/create-edit-invoice-sales">Create or edit invoices (Sales and Sales Hub)</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Override Opportunity Pricing</p></td>
-<td><p>prvOverridePriceEngineOpportunity</p></td>
-<td><p><a href="/dynamics365/sales-enterprise/add-products-opportunity">Add products to an opportunity (Sales Hub)</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Override Order Pricing</p></td>
-<td><p>prvOverridePriceEngineOrder</p></td>
-<td><p><a href="/dynamics365/sales-enterprise/create-edit-order-sales">Create or edit orders (Sales and Sales Hub)</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Override Quote Order Invoice Delete</p></td>
-<td><p>prvQOIOverrideDelete</p></td>
-<td><p><a href="/dynamics365/sales-enterprise/create-edit-quote-sales">Create or edit quotes (Sales and Sales Hub)</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Override Quote Pricing</p></td>
-<td><p>prvOverridePriceEngineQuote</p></td>
-<td><p><a href="/dynamics365/sales-enterprise/price-calculation-opportunity-quote-order-invoice-records">Price calculation for opportunity, quote, order, and invoice records</a></p></td>
-</tr>
-</tbody>
-</table>
-
-## Service tab
-
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the service tab.
-
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Miscellaneous Privileges</p></th>
-<th><p>Privilege Name</p></th>
-<th><p>More information</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Approve Knowledge Articles</p></td>
-<td><p>prvApproveKnowledgeArticle</p></td>
-<td><p><a href="/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article">Create and manage knowledge articles</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Publish Articles</p></td>
-<td><p>prvPublishArticle</p></td>
-<td><p><a href="/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article">Create and manage knowledge articles</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Publish Knowledge Articles</p></td>
-<td><p>prvPublishKnowledgeArticle</p></td>
-<td><p><a href="/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article">Create and manage knowledge articles</a></p></td>
-</tr>
-</tbody>
-</table>
-
-## Business Management tab
-
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the business management tab.
-
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Miscellaneous Privileges</p></th>
-<th><p>Privilege Name</p></th>
-<th><p>More information</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Act on Behalf of Another User</p></td>
-<td><p>prvActOnBehalfOfAnotherUser</p></td>
-<td><p><a href="/powerapps/developer/common-data-service/impersonate-another-user">Impersonate another user</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Approve Email Addresses for Users or Queues</p></td>
-<td><p>prvApproveRejectEmailAddress</p></td>
-<td><p><a href="/power-platform/admin/connect-exchange-online#approve-email">Approve email</a></p></td> 
-</tr>
-<tr class="odd">
-<td><p>Assign manager for a user</p></td>
-<td><p>prvAssignManager</p></td>
-<td><p><a href="/power-platform/admin/hierarchy-security#manager-hierarchy">Manager hierarchy</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Assign position for a user</p></td>
-<td><p>prvAssignPosition</p></td>
-<td><p><a href="/power-platform/admin/hierarchy-security#position-hierarchy">Position hierarchy</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Assign Territory to User</p></td>
-<td><p>prvAssignTerritory</p></td>
-<td><p><a href="/power-platform/admin/add-remove-territory-members">Add or remove sales territory members</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Bulk Edit</p></td>
-<td><p>prvBulkEdit</p></td>
-<td><p><a href="/powerapps/user/edit-rows">Edit multiple rows</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Change Hierarchy Security Settings</p></td>
-<td><p>prvWriteHierarchicalSecurityConfiguration</p></td>
-<td><p><a href="/power-platform/admin/hierarchy-security">Hierarchy security to control access</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Dynamics 365 Address Book</p></td>
-<td><p>prvAddressBook</p></td>
-<td><p><a href="/power-platform/admin/system-settings-dialog-box-outlook-tab">Set schedule for address book synchronization</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Enable or Disable a Business Unit</p></td>
-<td><p>prvDisableBusinessUnit</p></td>
-<td><p><a href="/power-platform/admin/create-edit-business-units">Create or edit business units</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Enable or Disable User</p></td>
-<td><p>prvDisableUser</p></td>
-<td><p><a href="/power-platform/admin/create-users#enable-or-disable-user-accounts">Enable or disable user accounts</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Language Settings</p></td>
-<td><p>prvLanguageSettings</p></td>
-<td><p><a href="/power-platform/admin/enable-languages">Regional and language options for your environment</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Merge</p></td>
-<td><p>prvMerge</p></td>
-<td><p><a href="/power-platform/admin/merge-data">Merge data</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Override Created on or Created by for Records during Data Import</p></td>
-<td><p>prvOverrideCreatedOnCreatedBy</p></td>
-<td><p><a href="/power-platform/admin/import-data-all-record-types">Import data (all record types) from multiple sources</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Perform in sync rollups on goals</p></td>
-<td><p>prvRollupGoal</p></td>
-<td><p><a href="/dynamics365/sales-enterprise/create-edit-goal-sales">Create or edit goals (Sales and Sales Hub)</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Read License info</p></td>
-<td><p>prvReadLicense</p></td>
-<td><p><a href="/power-platform/admin/wp-license-management#what-users-are-licensed">What users are licensed</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Reparent Business unit</p></td>
-<td><p>prvReparentBusinessUnit</p></td>
-<td><p><a href="/power-platform/admin/assign-business-unit-different-parent">Assign a business unit a different parent business</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Reparent team</p></td>
-<td><p>prvReparentTeam</p></td>
-<td><p><a href="/power-platform/admin/manage-teams">Manage teams</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Reparent user</p></td>
-<td><p>prvReparentUser</p></td>
-<td><p><a href="/power-platform/admin/create-users">Create users</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Send Email as Another User</p></td>
-<td><p>prvSendAsUser</p></td>
-<td><p><a href="/power-platform/admin/use-outlook-category-track-appointments-emails#delegate-users">Delegate users</a></p></td> 
-</tr>
-<tr class="even">
-<td><p>Send Invitation</p></td>
-<td><p>prvSendInviteForLive</p></td>
-<td><p><a href="/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration">Invite users with Azure Active Directory B2B collaboration</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Web Mail Merge</p></td>
-<td><p>prvWebMailMerge</p></td>
-<td><p><a href="/power-platform/admin/work-mail-merge-templates">Work with mail merge templates</a></p></td>
-</tr>
-</tbody>
-</table>
-
-## Service Management tab
-
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the service management tab.
-
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Miscellaneous Privileges</p></th>
-<th><p>Privilege Name</p></th>
-<th><p>More information</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Browse availability</p></td>
-<td><p>prvBrowseAvailability</p></td>
-<td><p></p>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Create own calendar</p></td>
-<td><p>prvCreateOwnCalendar</p></td>
-<td><p><a href="/dynamics365/marketing/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Delete own calendar</p></td>
-<td><p>prvDeleteOwnCalendar</p></td>
-<td><p><a href="/dynamics365/marketing/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Read own calendar</p></td>
-<td><p>prvReadOwnCalendar</p></td>
-<td><p><a href="/dynamics365/marketing/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Search Availability</p></td>
-<td><p>prvSearchAvailability</p></td>
-<td><p> </p></td>
-<tr class="even">
-<td><p>Write own calendar</p></td>
-<td><p>prvWriteOwnCalendar</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-
-## Customization tab
-
-The following table lists the privileges shown in the security role editor miscellaneous privileges section on the customization tab.
-
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Miscellaneous Privileges</p></th>
-<th><p>Privilege Name</p></th>
-<th><p>More information</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Activate Business Process Flows</p></td>
-<td><p>prvActivateBusinessProcessFlow</p></td>
-<td><p><a href="/power-automate/business-process-flows-overview">Model business process flows</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Activate Business Rules</p></td>
-<td><p>prvActivateBusinessRule</p></td>
-<td><p><a href="/power-automate/business-process-flows-overview">Model business process flows</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Activate Real-time Processes</p></td>
-<td><p>prvActivateSynchronousWorkflow</p></td>
-<td><p><a href="/power-automate/business-process-flows-overview">Model business process flows</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Configure Yammer</p></td>
-<td><p>prvConfigureYammer</p></td>
-<td><p><a href="https://resources.techcommunity.microsoft.com/yammer/adoption/">Yammer resources</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Execute Workflow Job</p></td>
-<td><p>prvWorkflowExecution</p></td>
-<td><p><a href="/power-automate/configure-workflow-steps">Configure background workflow stages and steps</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Export Customizations</p></td>
-<td><p>prvExportCustomization</p></td>
-<td><p><a href="/powerapps/maker/common-data-service/import-update-export-solutions">ExportSolution message privileges</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Import Customizations</p></td>
-<td><p>prvImportCustomization</p></td>
-<td><p><a href="/powerapps/maker/common-data-service/import-update-export-solutions">ImportSolution message privileges</a></p></td>
-</tr>
-<tr class="even">
-<td><p>ISV Extensions</p></td>
-<td><p>prvISVExtensions</p></td>
-<td><p>Not currently in use.</p></td>
-</tr>
-<tr>
-<td><p>Learning Path Authoring</p></td>
-<td><p></p></td>
-<td><p><a href="/power-platform/admin/on-off-switch-for-learning-path-guided-help">On-off switch for Learning Path</a></p></td>  
-</tr>
-<tr class="even">
-<td><p>Publish Customizations</p></td>
-<td><p>prvPublishCustomization</p></td>
-<td><p><a href="/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations">PublishXml message privileges</a></p>
-<p><a href="/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations">PublishAllXml message privileges</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Retrieve Multiple Social Insights</p></td>
-<td><p>prvRetrieveMultipleSocialInsights</p></td>
-<td><p></p></td>
-</tr>
-<tr>
-<td><p>Run Flows</p></td>
-<td><p></p></td>
-<td><p><a href="/power-automate/ui-flows/run-ui-flow">Run attended and unattended UI flows</a></p></td>  
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- **Core Records tab**
+  - Add Reporting Services Reports
+  - Bulk Delete
+  - Delete Audit Partitions
+  - Delete Audit Record Change History
+  - Manage Data Encryption key - Activate
+  - Manage Data Encryption key - Change
+  - Manage Data Encryption key - Read
+  - Manage User Synchronization Filters
+  - Promote User to Microsoft Dynamics 365 Administrator Role
+  - Publish Duplicate Detection Rules
+  - Publish Email Templates
+  - Publish Mail Merge Templates to Organization
+  - Publish Reports
+  - Run SharePoint Integration Wizard
+  - Turn On Tracing
+  - View Audit History
+  - View Audit Partitions
+  - View Audit Summary
+- **Marketing tab**  
+  - Configure Internet Marketing module
+  - Create Quick Campaign
+  - Use internet marketing module
+- **Sales tab**
+  - Override Invoice Pricing
+  - Override Opportunity Pricing
+  - Override Order Pricing
+  - Override Quote Order Invoice Delete
+  - Override Quote Pricing
+- **Service tab**
+  - Approve Knowledge Articles
+  - Publish Articles
+  - Publish Knowledge Articles
+- **Business Management tab**
+  - Act on Behalf of Another User
+  - Approve Email Addresses for Users or Queues
+  - Assign manager for a user
+  - Assign position for a user
+  - Assign Territory to User
+  - Bulk Edit
+  - Change Hierarchy Security Settings
+  - Dynamics 365 Address Book
+  - Enable or Disable a Business Unit
+  - Enable or Disable User
+  - Language Settings
+  - Merge
+  - Override Created on or Created by for Records during Data Import
+  - Perform in sync rollups on goals
+  - Read License info
+  - Reparent Business unit
+  - Reparent team
+  - Reparent user
+  - Send Email as Another User
+  - Send Invitation
+  - Web Mail Merge
+- **Service Management tab**
+  - Browse availability
+  - Create own calendar
+  - Delete own calendar
+  - Read own calendar
+  - Search Availability
+  - Write own calendar
+- **Customization tab**
+  - Activate Business Process Flows
+  - Activate Business Rules
+  - Activate Real-time Processes
+  - Configure Yammer
+  - Execute Workflow Job
+  - Export Customizations
+  - Import Customizations
+  - ISV Extensions
+  - Learning Path Authoring
+  - Publish Customizations
+  - Retrieve Multiple Social Insights
+  - Run Flows

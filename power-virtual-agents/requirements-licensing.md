@@ -2,26 +2,20 @@
 title: "Assign user licenses and manage access"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing, PVA"
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.custom: "licensing, admin, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
 # Assign licenses and manage access to Power Virtual Agents
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](requirements-licensing.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/requirements-licensing-teams.md)
-
-This documentation is written for tenant admins. If you want to sign up for Power Virtual Agents as an individual, see the [Sign up for a Power Virtual Agents trial](sign-up-individual.md) topic.
+This topic is written for tenant admins. If you want to sign up for Power Virtual Agents as an individual, see the [Sign up for a Power Virtual Agents trial](sign-up-individual.md) topic.
 
 To create and manage bots with Power Virtual Agents, you need:
 
@@ -40,7 +34,9 @@ More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
-## Buy a tenant license
+# [Web app](#tab/web)
+
+### Buy a tenant license
 
 Purchase licenses for your organization by going to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx). You'll need to sign in with an admin account to buy licenses.
 
@@ -48,7 +44,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 1. On the side pane, expand the **Billing** menu, and then select **Purchase services**.
 1. Search for **Power Virtual Agent**, and complete the checkout process.
 
-## Acquire user licenses
+### Acquire user licenses
 
 1. After you've purchased a Power Virtual Agents license from the Microsoft 365 admin center, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
 1. Scroll down to the **Add-ons** section.
@@ -57,7 +53,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 > [!IMPORTANT]
 > If you purchased a Power Virtual Agents license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant license and user licenses through that channel, preferably as part of a single transaction.
 
-## Assign licenses to users
+### Assign licenses to users
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
 
@@ -78,7 +74,7 @@ Repeat these steps to add more users, or exit the Microsoft 365 admin center if 
 
 The users can now sign in to the [Power Virtual Agents portal](https://web.powerva.microsoft.com).
 
-## How to differentiate between tenant and user licenses
+### How to differentiate between tenant and user licenses
 
 If you are unsure whether you have both of the required licenses, on the [Microsoft 365 admin center](https://admin.microsoft.com) go to **Billing** and then **Subscriptions** to see the list of active licenses. For Power Virtual Agents you should see two licenses:
 
@@ -86,6 +82,24 @@ If you are unsure whether you have both of the required licenses, on the [Micros
 - Power Virtual Agent User License
 
 You can only assign the "Power Virtual Agent User License" to specific users. You don't need to assign the "Power Virtual Agent" license.
+
+# [Teams](#tab/teams)
+
+To create and manage Power Virtual Agents chatbots in Teams, you need:
+
+- [A license to use Teams](/MicrosoftTeams/user-access)
+- [Licenses to use Power Virtual Agents](requirements-licensing.md)
+
+In some instances you may see a diamond icon or other indicator when a particular feature requires a different type of license. You'll be prompted about upgrading if you try to use that feature. For example, you'll see diamond icons when publishing to additional channels:
+
+:::image type="content" source="media/requirements-licensing/upgrade-channels.png" alt-text="You need an upgraded license to publish to channels other than Teams.":::
+
+For more information about licenses, see the following topics:
+
+- [Manage user access to Teams](/MicrosoftTeams/user-access)
+- [Assign licenses and manage access to Power Virtual Agents](requirements-licensing.md)
+
+---
 
 ## Trial plans
 

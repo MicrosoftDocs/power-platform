@@ -5,18 +5,13 @@ description: "Learn how to use team templates in Microsoft Power Platform to all
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/11/2021
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # About collaborating with team templates
 

@@ -50,7 +50,6 @@
         "cpdSeattle"
       ],
       "breadcrumb_path": "/power-platform/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
       "titleSuffix": "Power Platform",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/power-platform",
@@ -63,7 +62,7 @@
         "**.*": [ "Power Apps", "Power Automate", "Power Platform" ]
       },
       "ms.service": {
-        "**.*": "power-platform"        
+        "**.*": "power-platform"
       },
       "ms.subservice": {
         "power-fx/**/*.md": "power-fx",
@@ -71,6 +70,13 @@
         "alm/**/*.md": "alm",
         "admin/**/*.md": "admin",
         "developer/**/*.md": "developer"
+      },
+      "search.app": {
+        "power-fx/**/*.md": [ "powerapps-docs" ],
+        "guidance/**/*.md": [ "powerapps-docs", "administration-docs", "powerautomate-docs", "dataverse-docs" ],
+        "alm/**/*.md": [ "powerapps-docs", "administration-docs", "powerautomate-docs", "dataverse-docs" ],
+        "admin/**/*.md": [ "administration-docs" ],
+        "developer/**/*.md": [ "powerapps-docs", "powerautomate-docs", "dataverse-docs", "powerpages-docs", "powervirtualagents-docs" ]
       }
     },
     "template": [],

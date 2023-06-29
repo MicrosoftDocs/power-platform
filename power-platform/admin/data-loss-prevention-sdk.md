@@ -4,18 +4,13 @@ description: "Learn about the capabilities of the Microsoft Power Platform data 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/08/2021
-author: jimholtz
+author: sericks007
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: sericks
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Power Platform data loss prevention (DLP) SDK 
 

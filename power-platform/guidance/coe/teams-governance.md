@@ -2,7 +2,6 @@
 title: "Dataverse for Teams environment management| MicrosoftDocs"
 description: "This article describes a sample process for managing Microsoft Teams environments by using Microsoft Power Platform."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Microsoft Dataverse for Teams environment management
 
@@ -73,7 +68,7 @@ A weekly cleanup deletes environments that:
 
 An admin can customize the conditions for deletion by creating a copy of the flow and modifying it:
 
-1. Go to [flow.microsoft.com](https://flow.microsoft.com) > **Solutions** > **Center of Excellence - Governance Components**.
+1. Go to [make.powerautomate](https://make.powerautomate.com) > **Solutions** > **Center of Excellence - Governance Components**.
 1. Open the *Admin | Weekly Clean Up of Microsoft Teams environments* flow, and save a copy.
 1. Modify the conditions used for marking environments for deletion, based on your business needs.
 

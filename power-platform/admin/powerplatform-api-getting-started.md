@@ -5,14 +5,12 @@ author: laneswenka
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: reference
-ms.custom: intro-internal
+ms.collection: get-started
 ms.date: 03/09/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-search.app:
-  - Powerplatform
 ---
 
 # Get started with Power Platform API (preview)

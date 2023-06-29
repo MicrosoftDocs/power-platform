@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/alm/maintain-managed-solutions.md",
+      "redirect_url": "/power-apps/maker/data-platform/update-solutions",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/managed-environment-weekly-digests.md",
       "redirect_url": "managed-environment-usage-insights",
       "redirect_document_id": "false"
@@ -101,146 +106,6 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "power-virtual-agents/build-22/advanced-cards.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/advanced-custom-speech-ssml.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/advanced-entities-slot-filling.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/advanced-flow.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/advanced-power-fx.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/advanced-speech-settings.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/analytics-billed-sessions.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/analytics-csat.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/analytics-overview.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/analytics-sessions-transcripts.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/analytics-sessions.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/analytics-summary.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/analytics-topic-details.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/authoring-comments.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/authoring-create-edit-topics.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/authoring-template-topics.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/authoring-test-bot.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/authoring-topic-management.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/authoring-variables-bot.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/authoring-variables.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/build-2022-limitations.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/build-2022-overview.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/build-2022-quickstart.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/customize-default-canvas.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/error-codes.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/publication-connect-bot-to-telephony.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/publication-connect-bot-to-web-channels.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/build-22/publication-fundamentals-publish-channels.md",
-      "redirect_url": "../index",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "power-platform/guidance/adoption/tenant-isolation.md",
       "redirect_url": "/power-platform/admin/cross-tenant-restrictions",
       "redirect_document_id": "false"
@@ -328,11 +193,6 @@
     {
       "source_path": "power-platform/admin/create-environment-powerapps.md",
       "redirect_url": "create-environment",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/advanced-use-dispatcher.md",
-      "redirect_url": "configuration-add-skills",
       "redirect_document_id": "false"
     },
     {
@@ -526,16 +386,6 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "power-virtual-agents/extend-custom-canvas-upload.md",
-      "redirect_url": "customize-default-canvas",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/extend-custom-canvas-connect.md",
-      "redirect_url": "customize-default-canvas",
-      "redirect_document_id": "true"
-    },
-    {
       "source_path": "power-platform/admin/provision-environment.md",
       "redirect_url": "create-environment",
       "redirect_document_id": "false"
@@ -543,116 +393,6 @@
     {
       "source_path": "power-platform/admin/wp-licensing-faq.md",
       "redirect_url": "/power-platform/admin/powerapps-flow-licensing-faq",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/expanding-design-canvas.md",
-      "redirect_url": "authoring-create-edit-topics",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/faq.md",
-      "redirect_url": "index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/getting-started-analytics.md",
-      "redirect_url": "analytics-overview",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/getting-started-bot-designer.md",
-      "redirect_url": "authoring-fundamentals",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/getting-started-create-bot.md",
-      "redirect_url": "authoring-first-bot",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/getting-started-create-greeting.md",
-      "redirect_url": "authoring-first-bot",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/getting-started-create-topics.md",
-      "redirect_url": "authoring-create-edit-topics",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/getting-started-delete-bot.md",
-      "redirect_url": "authoring-first-bot",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/getting-started-deploy.md",
-      "redirect_url": "publication-fundamentals-publish-channels",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/getting-started-new-environment.md",
-      "redirect_url": "environments-fundamentals",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/how-to-flow.md",
-      "redirect_url": "advanced-flow",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/how-to-handoff.md",
-      "redirect_url": "advanced-hand-off",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/how-to-templates.md",
-      "redirect_url": "authoring-template-topics",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/how-to-test-bot.md",
-      "redirect_url": "authoring-first-bot",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/how-to-variables.md",
-      "redirect_url": "authoring-variables",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/overview.md",
-      "redirect_url": "fundamentals-what-is-power-virtual-agents",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/quickstart.md",
-      "redirect_url": "fundamentals-get-started",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/topic-checker.md",
-      "redirect_url": "authoring-create-edit-topics",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/videos.md",
-      "redirect_url": "index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/how-to-use-dispatcher.md",
-      "redirect_url": "index",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/configuration-security.md",
-      "redirect_url": "configuration-end-user-authentication.md",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "power-virtual-agents/teams/configuration-security-teams.md",
-      "redirect_url": "configuration-end-user-authentication-teams.md",
       "redirect_document_id": "false"
     },
     {
@@ -686,15 +426,194 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "power-virtual-agents/build-22/index.yml",
-      "redirect_url": "../index",
+      "source_path": "power-platform/power-fx/reference/data-types.md",
+      "redirect_url": "/power-platform/power-fx/data-types",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "power-platform/power-fx/reference/data-types.md",
-      "redirect_url": "power-platform/power-fx/data-types.md",
+      "source_path": "power-platform/guidance/coe/motivation.md",
+      "redirect_url": "overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/dlp-granular-controls.md",
+      "redirect_url": "/power-platform/admin/connector-action-control",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/dlp-endpoint-input-formats-examples.md",
+      "redirect_url": "/power-platform/admin/connector-action-control",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-app-registrations.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/app-registration-strategy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-codefirst.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/build-package-codefirst-components",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-deployment-settings.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/deployment-settings-payload",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-pipelines.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/configure-azuredevops-pipelines",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-powerpages.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/configure-power-pages",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almacceleratorpowerplatform-advancedmaker.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/advanced-maker-experience",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almacceleratorpowerplatform-components.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almacceleratorpowerplatform-learningcatalog.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/learning-resources-catalog",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almacceleratorpowerplatform-newmaker.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/new-maker-experience",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorforpowerplatform-hook-extensions.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-hook-extensions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-config.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-data-deployment-configuration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-deployment-user-profiles",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-pipeline-sync.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-pipeline-sync",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-preview.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-almacceleratorpowerplatform-preview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-upgrade-configuration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-users.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-app-user-permissions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-components-manually",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almacceleratorpowerplatform-cli.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-components-manually",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/maturity/overview.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/maturity/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/scenarios/overview.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/scenarios/devops-deployment-model.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/devops-deployment-model",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/alm/scenarios/devops-deployment-model.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/devops-deployment-model",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/scenarios/tenant-deployments.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/tenant-deployments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-almaccelerator.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-admin-tasks",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/almaccelerator-components.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-admin-tasks",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/alm/scenarios/tenant-deployments.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/tenant-deployments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/alm/scenarios/overview.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/scenarios/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/alm/maturity/overview.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/maturity/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/almhelper-1.1.md",
+      "redirect_url": "/power-platform/guidance/alm-accelerator/setup-admin-tasks",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/admin-guide.md",
+      "redirect_url": "/power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/about-flow-guide.md",
+      "redirect_url": "/power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/about-powerbi-guide.md",
+      "redirect_url": "/power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/about-power-virtual-agents.md",
+      "redirect_url": "/power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/admin-powerapps-enterprise-deployment.md",
+      "redirect_url": "https://aka.ms/powerappsadminwhitepaper",
       "redirect_document_id": "false"
     }
   ]
-  }
-  
+}

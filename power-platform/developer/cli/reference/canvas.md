@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI canvas command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI canvas command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 11/18/2022
+author: snizar007
+ms.author: snizar
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -57,7 +57,7 @@ The ID of the Connector from which the Power App will be generated
 
 #### `--environment`
 
-The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.
+The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [canvas-create-remarks](includes/canvas-create-remarks.md)]
 

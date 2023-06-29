@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
-ms.date: 11/29/2021
+ms.reviewer: mkaur
+ms.date: 12/02/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
   - melzoghbi
 ---
 
@@ -65,16 +64,26 @@ These functions depend on the collection being implicitly defined with **[Collec
 
 The loaded data will be appended to the collection. Use the **[Clear](function-clear-collect-clearcollect.md)** function before calling **LoadData** if you want to start with an empty collection.
 
-The device's built in app sandbox facilities are used to isolate saved data from other apps.
+## Data security
 
-The device may also encrypt the data; or you can use a mobile device management tool such as [Microsoft Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune). Data stored when playing an app in a web browser is not encrypted.
+Consider carefully the isolation and encryption of data stored with **SaveData** and decide if it's appropriate for your needs, especially if devices are shared by multiple users.
+
+Data stored with **SaveData** is isolated from other Power Apps by the Power Apps players. Data is stored based on the app's App ID, automatically isolating the **SaveData** name space between Power Apps.
+
+The operating system and browser is responsible for isolating data between Power Apps and other apps on a device and with websites. For example, the operating system is responsible for isolating data stored in Microsoft Outlook from data stored in Power Apps, and also isolating that data from websites such as Bing.com or PowerApps.com. The operating system's built in app sandbox facilities are used for **SaveData** storage which is usually not accessible to or hidden from the user.
+ 
+When using the same app, the operating system and browser is also responsible for isolating the data between different operating system level users. For example, if two different users share a computer and use two different Windows login credentials, the operating system is responsible for isolating data between the two Windows users.
+
+Data may or may not be isolated between different Power Apps users if the operating system user is the same. Not every Power Apps player treats this the same way. For example, while logged in as the same Windows user, in the Power Apps player, the user signs out of Power Apps and signs in as a different Power Apps user. Data stored in an app before the change of Power Apps user, may be accessible to the second Power Apps user within the same app. The data may also be removed and the first Power Apps user may no longer be able to access it. The behavior varies between Power Apps players.
+
+The operating system may also encrypt the data or you can use a mobile device management tool such as [Microsoft Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune). Data stored when playing an app in a web browser is not encrypted.
 
 ## Syntax
 
 **SaveData**( _Collection_, _Name_ )<br>**LoadData**( _Collection_, _Name_ [, *IgnoreNonexistentFile* ])
 
 - _Collection_ - Required. Collection to be stored or loaded.
-- _Name_ - Required. Name of the storage. The name must be same to save and load same set of data. The name space isn't shared with other apps or users. Names must not contain any of these characters: `*".?:\<>|/`.
+- _Name_ - Required. Name of the storage. The name must be same to save and load same set of data. The name space isn't shared with other apps. Names must not contain any of these characters: `*".?:\<>|/`.
 - _IgnoreNonexistentFile_ - Optional. A Boolean value indicating what to do if the file doesn't already exist. Use _false_ (default) to return an error and _true_ to suppress the error.
 
 **ClearData**( [*Name*] )

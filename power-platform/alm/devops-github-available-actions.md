@@ -5,7 +5,6 @@ keywords:
 author: kkanakas
 ms.subservice: alm
 ms.author: kartikka
-manager: kvivek
 ms.custom: ""
 ms.date: 08/30/2021
 ms.reviewer: "pehecke"
@@ -13,9 +12,6 @@ ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
   - developer
-search.app: 
-  - PowerApps
-  - D365CE
 ---
 
 # Available GitHub Actions for Microsoft Power Platform development
@@ -214,6 +210,46 @@ Uploads data to Power Pages.
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 |upload-path|Path where the website content is stored (alias: -p).|
 |deployment-profile| Upload portal data with environment details defined through [profile variables](/powerapps/maker/portals/power-apps-cli#use-deployment-profile) in deployment-profiles/\[profile-name].deployment.yaml file.|
+
+## Catalog tasks (preview)
+
+These tasks perform actions against the catalog in Power Platform and include the following.
+
+> [!NOTE]
+> Currently, catalog tasks for Power Platform are a **preview** release.
+
+### install
+
+Install a catalog item to the target environment.
+
+| Parameter           | Description        |
+|----------------------|--------------------------|
+|catalog-item-id|(Required) Catalog item to be installed on the target environment.|
+| target-url| (Required) The Url of the target environment for the catalog item installation into (for example, "https://YourOrg.crm.dynamics.com").|
+| settings | (Required) Runtime package settings for the installation framework to execute. The format of the string must be `key=value|key=value`. |
+| target-version        | Target version to install. If left empty, the published version is selected.   |
+|poll-status| Poll to check the status of your request.|
+
+### submit
+
+List all published catalog items from the current Dataverse environment (organization).
+
+| Parameter           | Description        |
+|----------------------|--------------------------|
+| path |(Required) Path to catalog submission document.|
+| package-zip | Path to package zip file.|
+| solution-zip | Path to solution zip file. |
+|poll-status| Poll to check status of your request.|
+
+### status
+
+Get status of the catalog install/submit request.
+
+| Parameter           | Description        |
+|----------------------|--------------------------|
+| tracking-id |(Required) Request tracking id.|
+| type | (Required) Request type (Values: Install, Submit) |
+
 
 ## GitHub workflow authoring
 

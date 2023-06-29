@@ -2,14 +2,15 @@
 title: "Add a chatbot to Azure Bot Service channels"
 description: "Connect your bot to existing Azure Bot Service framework channels (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
-ms.date: 01/25/2022
+ms.date: 03/24/2023
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: jameslew
 ms.custom: "publication, azure, ceX"
+ms.service: power-virtual-agents
 ms.collection: virtual-agent
 ---
 
@@ -60,19 +61,19 @@ If you already have an Azure Bot Service bot, you need to add a Power Virtual Ag
 
 ## Get your Power Virtual Agents bot parameters
 
-To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
+To connect to the bot you have built with Power Virtual Agents, you'll need to retrieve your bot's name and token endpoint.
 
 1. Copy your bot's name in Power Virtual Agents.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
 
-1. On the side pane, go to **Settings** > **Channels**.
+1. In the navigation menu under **Settings**, select **Channels**.
 
 1. Select the channel you want to connect to. This topic uses Slack as an example.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-slack.png" alt-text="Slack channel." border="false":::
 
-1. Copy and save the *Bot ID* and *Tenant ID* value by selecting **Copy**. You will need these when connecting your bot to the Azure Bot Service channel.
+1. To copy and save the **Token Endpoint** value, select **Copy**. You'll need your endpoint to connect your bot to the Azure Bot Service channel.
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-parameters-slack.png" alt-text="Get bot parameters." border="false":::
 
@@ -93,7 +94,6 @@ The following example uses samples from the [relay bot sample code](https://gith
     {   
         httpRequest.Method = HttpMethod.Get;
         UriBuilder uriBuilder = new UriBuilder(TokenEndPoint);
-        uriBuilder.Query = $"botId={BotId}&tenantId={TenantId}";
         httpRequest.RequestUri = uriBuilder.Uri;
         using (var response = await s_httpClient.SendAsync(httpRequest))
         {

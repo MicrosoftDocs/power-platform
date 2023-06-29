@@ -3,18 +3,15 @@ title: "Microsoft Power Platform self-service analytics export Power Platform in
 description: Export Power Apps canvas apps inventory and usage data to use with your organization's line-of-business scenarios.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/21/2022
+ms.date: 05/23/2023
 ms.subservice: admin
 author: tjvass
 ms.author: tjvass
-ms.reviewer: jimholtz
+ms.reviewer: sericks
+contributors:
+- StephenRauchPM
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Set up Microsoft Power Platform self-service analytics to export Power Platform inventory and usage data (preview)
@@ -35,12 +32,20 @@ Data Lake Storage is a key part of Cortana Intelligence, meaning that it works w
 
 ## Prerequisites
 
-- To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you'll need one of these roles: Power Platform Service admin, Dynamics 365 admin, or Microsoft 365 Global admin.
+- To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you'll need one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
 - [Create a storage account](/azure/storage/blobs/create-data-lake-storage-account) to use with Azure Data Lake Storage Gen2. Make sure you select the same location for the data lake storage account as your Power BI tenant. To learn more about how to determine your Power BI tenant location, see [Where is my Power BI tenant located?](/power-bi/admin/service-admin-where-is-my-tenant-located). In addition, you must have *owner* or *contributor* access to the Data Lake Storage account, in addition to *owner* or *contributor* access to the Azure subscription. 
 
   > [!NOTE]
   > Your organization's Azure Active Directory (Azure AD) global admin must be the one who sets up the connection. This is required because your tenant has to allow the service to access the Data Lake Storage account. This is a one-time setup only, and will need to be performed by the Azure AD admin.
+
+  > [!NOTE]
+  > The following Azure Data Lake Storage Gen2 configurations are supported for this preview feature:
+  > - Storage Account Types: Standard general-purpose v2 or Premium block blobs.
+  > - Hierarchical Namespace: **Enable hierarchical namespace** must be selected.
+  > - Network Connectivity, Network Access: **Enable public access from all networks** must be selected.
+  > - Network Routing, Routing Preference: **Microsoft network routing** is recommended.
+  > - Security: **Require secure transfer for REST API operations** must be selected.
 
 ## Simplify data with Data Lake Storage
 
@@ -86,7 +91,7 @@ Follow these steps to set up the data lake.
 6. Select **Create** to set up the connection to Data Lake Storage Gen2.
 
 > [!NOTE]
-> Resource inventory and 30 days of historical usage data will be exported into the Azure storage account over the next several hours.
+> Customers can expect to see resource inventory and 30 days of historical usage data being exported to the Azure Data Lake Storage account within the 12 hours upon successful setup of a data export process.
 
 ### First-time setup of a data export
 

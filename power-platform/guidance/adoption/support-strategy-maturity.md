@@ -2,7 +2,6 @@
 title: "Support strategy - Maturity levels - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance on maturity levels for establishing ongoing solution and maker support for Microsoft Power Platform."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,10 +11,6 @@ ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 
 # Support strategy - Maturity levels

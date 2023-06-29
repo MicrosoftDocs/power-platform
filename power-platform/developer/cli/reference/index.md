@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI Command Groups| Microsoft Docs
 description: "Descriptions for Power Platform Command Line Interface commands."
 keywords: "pac cli"
 ms.subservice: developer
-author: kkanakas
-ms.author: kartikka
-ms.date: 11/18/2022
+author: snizar007
+ms.author: snizar
+ms.date: 6/15/2023
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,7 +26,9 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac application](application.md)|Commands for listing and installing available Dataverse applications from AppSource|
 |[pac auth](auth.md)|Manage how you authenticate to various services|
 |[pac canvas](canvas.md)|Operating with Power Apps .msapp files|
+|[pac catalog](catalog.md)|(Preview) Commands for working with Catalog in Power Platform|
 |[pac connector](connector.md)|(Preview) Commands for working with Power Platform Connectors|
+|[pac copilot](copilot.md)|(Preview) Tools and utilities for copilot scenarios|
 |[pac data](data.md)|Import and export data from Dataverse.|
 |[pac help](help.md)|Show help for the Microsoft Power Platform CLI|
 |[pac modelbuilder](modelbuilder.md)|Code Generator for Dataverse APIs and Tables|
@@ -34,10 +36,12 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac package](package.md)|Commands for working with Dataverse package projects|
 |[pac paportal](paportal.md)|Commands for working with Power Pages website|
 |[pac pcf](pcf.md)|Commands for working with Power Apps component framework projects|
+|[pac pipeline](pipeline.md)|Work with Pipelines|
 |[pac plugin](plugin.md)|Commands for working with Dataverse plug-in class library|
 |[pac solution](solution.md)|Commands for working with Dataverse solution projects|
 |[pac telemetry](telemetry.md)|Manage telemetry settings|
 |[pac tool](tool.md)|Power Platform tools that can be installed and launched|
+|[pac virtual-agent](virtual-agent.md)|Commands for working with Power Virtual Agent bots|
 
 
 [!INCLUDE [index-remarks](includes/index-remarks.md)]

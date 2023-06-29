@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 11/11/2022
+ms.date: 12/06/2022
 ms.topic: conceptual
 author: paulliew
 ms.subservice: admin
@@ -10,11 +10,6 @@ ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Security concepts in Microsoft Dataverse
@@ -65,7 +60,7 @@ User A can be associated with any of the business units, including the root busi
 #### Enable the Matrix data access structure
 
 > [!NOTE]
-> Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that are not working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+> Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that are not working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). Setting **RecomputeOwnershipAcrossBusinessUnits** to true allows the [Owning Business Unit](#owning-business-unit) field to be set and updated.
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
 2. Select **Environments**, and then choose the environment that you want to enable this feature for. 
@@ -95,7 +90,7 @@ In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-mode
 
 ### Owning Business Unit
 
-Each record has an Owning Business Unit column which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
+Each record has an **Owning Business Unit** column which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
 
 > [!NOTE]
 > When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using Organization Service to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
@@ -141,10 +136,13 @@ In **Modernized Business units**, you can have users being owners of records acr
 If **Record ownership across business units** was enabled in your production environment during the Preview period, you need to perform the following to enable this record ownership across business unit:
 
 1. Install the [Organization Settings editor](environment-database-settings.md#install-the-organizationsettingseditor-tool)
-2. Set the **RecomputeOwnershipAcrossBusinessUnits** organization settings to true. When this setting is set to true, the system is locked and can take up to five minutes to do the re-computation. 
+2. Set the **RecomputeOwnershipAcrossBusinessUnits** organization settings to true. When this setting is set to true, the system is locked and can take up to 5 minutes to do the recomputation to enable the capability where users can now own records across business units without the need to have separate security role assigned from each business unit. This allows an owner of a record to assign their record to someone outside of the record's owning business unit.
 3. Set **AlwaysMoveRecordToOwnerBusinessUnit** to false. This makes the record remain in the original owning business unit when the record ownership is changed.
 
 For all non-production environments, you just need to set **AlwaysMoveRecordToOwnerBusinessUnit** to false to use this capability.
+
+> [!NOTE]
+> If you turn off either the **Record ownership across business units** feature or set the **RecomputeOwnershipAcrossBusinessUnits** setting to false using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm), you won't be able to set or update the [Owning Business unit](wp-security-cds.md#owning-business-unit) field, and all records where the [Owning Business Unit](#owning-business-unit) field is different from the owner's business unit will be updated to the owner's business unit. 
 
 ## Teams (including [group teams](manage-group-teams.md))
 

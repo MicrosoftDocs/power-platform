@@ -1,20 +1,15 @@
 ---
 title: Finance and operations storage capacity
 description: Learn to use the finance and operations storage capacity report to understand your storage usage vs. your entitlement and get answers to frequently asked questions.
-author: jimholtz
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/13/2022
+ms.date: 02/22/2023
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: sericks 
 ms.reviewer: 
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 
 # Finance and operations storage capacity
@@ -105,11 +100,17 @@ Details at the table level aren't available in the initial launch of reporting. 
 
 ### Is there any reporting for file capacity?
 
-File capacity reporting isn't available in the initial launch of reporting. File capacity analytics will be available in a future release.
+File capacity reporting is in public preview. Capacity reports for Finance and Operations File is not generally available. 
+
+:::image type="content" source="media/finance-operations-storage-capacity/finance-operations-database.png" alt-text="Screenshot of the Finance and operations File.":::
+
+A new report will provide Log, and File consumption analytics for Finance and Operations and is expected to be available during the calendar year 2023. The new report will provide enhanced precision for file consumption analytics.
 
 ### What happens if my consumption is over the entitled limit?
 
-The runtime experience isn't affected. However, we strongly recommend that you review your data consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity if needed.
+The runtime experience isn't affected. However, we strongly recommend that you review your database storage consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity if needed.
+
+For File and Log capacity analytics for Finance and Operations, you're not expected to take any action currently in the public preview phase. This article will be updated with the steps to stay within the storage limit when File capacity analytics for Finance and Operations will be generally available.
 
 ### How is Microsoft helping customers stay within their storage entitlement limits?
 

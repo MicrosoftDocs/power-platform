@@ -3,18 +3,13 @@ title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftD
 description: Troubleshooting and monitoring server-side synchronization
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
-author: jimholtz
+ms.date: 06/19/2023
+author: DanaMartens
 ms.subservice: admin
-ms.author: jimholtz
-ms.reviewer: jimholtz
+ms.author: dmartens
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
 ---
 # Troubleshooting and monitoring server-side synchronization 
 
@@ -60,7 +55,7 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
  **Solution:**  [https://support.microsoft.com/kb/2993502](https://support.microsoft.com/kb/2993502)  
   
 ### Error while establishing a secure connection  
-**Alert:** Email cannot be received for the mailbox because an error occurred while establishing a secure connection to the email server. The mailbox has been disabled for receiving email and the owner of the email server profile has been notified.  
+**Alert:** Email can't be received for the mailbox because an error occurred while establishing a secure connection to the email server. The mailbox has been disabled for receiving email and the owner of the email server profile has been notified.  
   
  **Solution:**  [https://support.microsoft.com/kb/2993502](https://support.microsoft.com/kb/2993502)  
   
@@ -82,11 +77,11 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
    - If the user's mailbox record is configured to use server-side synchronization for outgoing email, verify the user's email address is approved and is also tested and enabled.  For more information about configuring server-side synchronization, see [Set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md).  
   
 ### Email address requires approval by Microsoft 365 administrator  
- **Alert:** Email cannot be sent/received because the email address of the mailbox \<User Name> requires an approval by an Microsoft 365 administrator. The mailbox has been disabled for sending/receiving email and the owner of the email server profile Exchange Online has been notified.  
+ **Alert:** Email can't be sent/received because the email address of the mailbox \<User Name> requires an approval by a Microsoft 365 administrator. The mailbox has been disabled for sending/receiving email and the owner of the email server profile Exchange Online has been notified.  
   
  **Cause:**  
   
- This error will occur if a user is configured to use the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile but their email address has not been approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] administrator. A user with the global administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] needs to approve the email address for each user that uses the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile. The [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile uses server-to-server authentication between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. This authentication is dependent on a trust between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. By verifying the email address in customer engagement apps as an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator, customer engagement apps be able to send and receive email for that user without the need to provide any email credentials within customer engagement apps.  
+ This error occurs if a user is configured to use the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile but their email address hasn't been approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] administrator. A user with the global administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] needs to approve the email address for each user that uses the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile. The [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile uses server-to-server authentication between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. This authentication is dependent on a trust between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. By verifying the email address in customer engagement apps as an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator, customer engagement apps be able to send and receive email for that user without the need to provide any email credentials within customer engagement apps.  
   
  **Solution:**  
   
@@ -105,11 +100,11 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
 6. Click **Test & Enable Mailboxes** to retest email processing for the enabled mailboxes.  
   
 ### Email addresses must be approved  
- **Alert:** One or more mailboxes have been disabled for sending/receiving email because their email addresses have not been approved. Approve the email addresses, and then enable the mailboxes for sending/receiving email." or "Email cannot be received for the mailbox \<Mailbox Name> because the email address of the mailbox \<Mailbox Name> is not approved and the mailbox has been disabled. The owner of the associated email server profile \<Email Server Profile name> has been notified.  
+ **Alert:** One or more mailboxes have been disabled for sending/receiving email because their email addresses haven't been approved. Approve the email addresses, and then enable the mailboxes for sending/receiving email." or "Email can't be received for the mailbox \<Mailbox Name> because the email address of the mailbox \<Mailbox Name> is not approved and the mailbox has been disabled. The owner of the associated email server profile \<Email Server Profile name> has been notified.  
   
  **Solution:**  
   
- Mailboxes must be approved before the email will be processed. To approve mailboxes:  
+ Mailboxes must be approved before the email is processed. To approve mailboxes:  
   
 1. In the Power Platform admin center, select an environment. 
 
@@ -129,10 +124,10 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
 ### Mailbox location could not be determined  
  **Alert:** The mailbox location could not be determined while sending/receiving the email message \<Message Subject>. The mailbox \<Mailbox Name> has been disabled for sending/receiving email and the owner of the associated email server profile \<Email Server Profile name> has been notified.  
   
- **Solution:** You will see this alert if your email server profile (**Settings** > **Email Configuration** > **Email Server Profiles**) is configured to use the **Auto Discover Server Location** option but auto discover cannot detect the location of your mailbox. If this issue occurs, check with your [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] administrator to verify your network is configured for auto discover. You can update the email server profile and click **No** for **Auto Discover Server Location**. Then provide the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] web services URL for your [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] deployment. For example: https://ExchangeServerName/EWS/Exchange.asmx.  
+ **Solution:** You see this alert if your email server profile (**Settings** > **Email Configuration** > **Email Server Profiles**) is configured to use the **Auto Discover Server Location** option but auto discover can't detect the location of your mailbox. If this issue occurs, check with your [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] administrator to verify your network is configured for auto discover. You can update the email server profile and click **No** for **Auto Discover Server Location**. Then provide the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] web services URL for your [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] deployment. For example: https://ExchangeServerName/EWS/Exchange.asmx.  
   
 ### Credentials are incorrect or have insufficient permissions  
- **Alert:** Email cannot be sent/received because the credentials specified in the associated email server profile are incorrect or have insufficient permissions for sending/receiving email. The mailbox \<Mailbox Name> has been disabled for sending/receiving email and the owner of the email server profile \<Email Server Profile name> has been notified.  
+ **Alert:** Email can't be sent/received because the credentials specified in the associated email server profile are incorrect or have insufficient permissions for sending/receiving email. The mailbox \<Mailbox Name> has been disabled for sending/receiving email and the owner of the email server profile \<Email Server Profile name> has been notified.  
   
  **Solution:**  
   
@@ -145,7 +140,7 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
 -   [Allow Mailbox Access](https://technet.microsoft.com/library/aa996343\(v=exchg.141\).aspx)  
   
 ### Appointments can't be synchronized  
- **Alert:** Appointments can't be synchronized because the Organizer field is not present.  
+ **Alert:** Appointments can't be synchronized because the Organizer field isn't present.  
   
  **Cause:** The Organizer field is required for appointment records to synchronize. By default, this field isn't included on the appointment form.  
   
@@ -164,11 +159,11 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
 5. Select **Save** > **Publish**.  
   
 ### Appointments, contacts, and tasks can't be synchronized  
- **Alert:** Appointments, contacts, and tasks can't be synchronized because the email address of the mailbox \<Mailbox Name> is configured with another organization. The best practice is to overwrite the configuration when you test and enable the mailbox in your primary organization. Also, change the synchronization method for your mailbox in non-primary organizations to None.  
+ **Alert:** Appointments, contacts, and tasks can't be synchronized because the email address of the mailbox \<Mailbox Name> is configured with another organization. The best practice is to overwrite the configuration when you test and enable the mailbox in your primary organization. Also, change the synchronization method for your mailbox in nonprimary organizations to None.  
   
  **Solution:**  
   
- To change the primary synchronization organization and overwrite the setting stored in [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)], click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > **Test & Enable Mailbox** > select **Sync items with Exchange from this Organization only, even if Exchanges was set to sync with a different Organization**. This will allow server-side synchronization to work for this environment but the other environment would no longer work for synching that mailbox through server-side synchronization. To change the synchronization method for Appointments, Contacts, and Tasks, click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > select **None** for **Appointments, Contacts, and Tasks**.  
+ To change the primary synchronization organization and overwrite the setting stored in [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)], click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > **Test & Enable Mailbox** > select **Sync items with Exchange from this Organization only, even if Exchanges was set to sync with a different Organization**. This allows server-side synchronization to work for this environment but the other environment would no longer work for synching that mailbox through server-side synchronization. To change the synchronization method for Appointments, Contacts, and Tasks, click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > select **None** for **Appointments, Contacts, and Tasks**.  
   
  For more information, see: [When would I want to use this check box?](when-would-want-use-check-box.md)  
   
@@ -181,9 +176,9 @@ If your organization connects to Exchange Server (on-premises), you can run the 
 <a name="BKMK_SSSGmail"></a>   
 
 ### Email fails to be sent or received when server-side synchronization is configured with Gmail  
- If customer engagement apps is configured to use Server-Side Synchronization with Gmail, you may encounter one of the following errors:  
+ If customer engagement apps are configured to use Server-Side Synchronization with Gmail, you may encounter one of the following errors:  
   
--   Email cannot be received for the mailbox \<Mailbox Name>. Make sure that the credentials specified in the mailbox are correct and have sufficient permissions for receiving email. Then, enable the mailbox for email processing.  
+-   Email can't be received for the mailbox \<Mailbox Name>. Make sure that the credentials specified in the mailbox are correct and have sufficient permissions for receiving email. Then, enable the mailbox for email processing.  
   
 -   An unknown error occurred while sending the email message "Test Message". Mailbox \<Mailbox Name> didn't synchronize. The owner of the associated email server profile \<Email Server Profile Name> has been notified.  
   
@@ -219,7 +214,7 @@ For more information, see this [kb article](https://support.microsoft.com/kb/318
   
 -   For server or mailbox permanent errors, the mailbox is disabled as soon as the error is detected.  
   
--   For server or mailbox transient errors, delivery is retried up to 10 times with a 5 minute gap between attempts. If delivery fails after 10 attempts, the error is considered permanent and the mailbox is disabled.  
+-   For server or mailbox transient errors, delivery is retried up to 10 times with a five-minute gap between attempts. If delivery fails after 10 attempts, the error is considered permanent and the mailbox is disabled.  
   
 Review the troubleshooting steps in this topic and if the issue is successfully resolved, enable the mailbox.  
   
@@ -241,7 +236,7 @@ For most situations not supported by server-side synchronization, you can use th
 > [!NOTE]
 >  We recommend that you don't use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated Dynamics 365 apps data not synchronizing to all attendees.  
   
-### Appointment record is not created when tracked by invitee  
+### Appointment record isn't created when tracked by invitee  
  Consider the following scenario regarding tracking an event:  
   
 1. An event organizer uses [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] for the synchronization method.  
@@ -254,15 +249,26 @@ For most situations not supported by server-side synchronization, you can use th
   
 5. The invitee logs in to customer engagement apps and navigates to **Marketing** > **Activities** > **Appointment** > **My Appointments**  
   
-Result: the appointment is not created for the invitee.  
+Result: the appointment isn't created for the invitee.  
   
-This is a known issue and is not supported. If the organizer is someone outside of the organization, a user who is an invitee can still track the appointment and have the record created.  
+This is a known issue and isn't supported. If the organizer is someone outside of the organization, a user who is an invitee can still track the appointment and have the record created.  
    
 ### Service Appointments and Activities don't synchronize from Outlook to customer engagement apps 
- Changes made to Service Appointments and Activities will update in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] when you synchronize but the reverse is not true. When you make changes to Service Appointments or Activities in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the changes are not synchronized to customer engagement apps. Service appointments are scheduled by an agent and need free/busy information for resources available only in customer engagement apps.  
+ Changes made to Service Appointments and Activities update in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] when you synchronize but the reverse isn't true. When you make changes to Service Appointments or Activities in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the changes are not synchronized to customer engagement apps. Service appointments are scheduled by an agent and need free/busy information for resources available only in customer engagement apps.  
   
 ### Be aware of Exchange Online receiving and sending limits  
  For enterprise customers with a large mail flow, make sure you're not running up against Exchange Online receiving and sending limits. See [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)  
+ 
+### A sent email is created with a Direction value of Incoming
+The **Direction** (DirectionCode) of an email created by server-side synchronization is dependent on whether the original email exists in the **Sent Items** folder. If the original email is located in the **Sent Items** folder, the **Direction** is designated as **Outgoing**. In contrast, if the email isn't discovered in the **Sent Items** folder, it is created with the **Direction** value set to **Incoming**.
+
+### Incoming emails over 150 MB are not created as email activities
+There is a maximum limit of 150 MB for incoming emails. Emails that exceed a total size of 150 MB, including all attachments, won't be created as an email activity.
+
+### Mailbox appears as updated by a user who isn't actively using the application
+If a user is configured to synchronize _appointments_, _contacts_, and _tasks_, the synchronization process for those items is performed by that user. The synchronization process checks for any changes every 15 minutes, and possibly more often if certain updates are detected. When the synchronization process runs, it runs as that user and updates columns stored in the mailbox record during each sync cycle. This results in that user potentially appearing in the [Dataverse analytics reports](../admin/analytics-common-data-service.md), which are available in the Power Platform admin center, even though that user isn't actively logging into the application. 
+
+The synchronization process for _email_ is a separate process, which also updates mailbox records. The synchronization process for email runs as the SYSTEM user.
   
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) <br />

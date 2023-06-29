@@ -1,27 +1,21 @@
 ---
-title: "Review compliance and adoption statistics with the CoE Power BI dashboard | MicrosoftDocs"
+title: Compliance and Adoption with the CoE Power BI dashboard
 description: "The Compliance and Adoption Power BI dashboard gives you the ability to review compliance, security and governance statistics and gain further adoption insights."
 author: manuelap-msft
-manager: devkeydet
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 05/23/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - PowerApps
-  - Powerplatform
 ---
 # Compliance and Adoption with the CoE Power BI dashboard
 
 >[!IMPORTANT]
 > The reports on this page are part of a separate dashboard, **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit**. See: [Setup Power BI dashboard](setup-powerbi.md).
-> This dashboard is currently not available if you have installed the CoE Starter Kit in a Dataverse for Teams environment.
 
 The **Compliance and Adoption** dashboard highlights governance, compliance and security insights, allows you to gain a high level view into your adoption and provides a tech debt report of the [Default environment](/power-platform/admin/environments-overview#the-default-environment).
 
@@ -62,7 +56,7 @@ The **Adoption insights** page provides you with a tenant-wide overview of:
 - Top 5 countries where makers create most launched apps
 - Top 5 environments that consume the most capacity
 
-![Adoption insights.](media/pbi-compliance1.png "Adoption insights")
+![Adoption insights.](media/pbi-compliance3.png "Adoption insights")
 
 ## Default environment
 
@@ -79,4 +73,4 @@ The **Default environment** page gives you an overview of adoption in the defaul
 - Latest non-compliant apps
 - Latest suspended flows
 
-![Default environment tech debt insights.](media/pbi-compliance1.png "Default environment tech debt insights.")
+![Default environment tech debt insights.](media/pbi-compliance4.png "Default environment tech debt insights.")

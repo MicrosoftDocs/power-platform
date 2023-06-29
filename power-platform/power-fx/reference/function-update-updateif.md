@@ -5,17 +5,16 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: tapanm
+ms.reviewer: mkaur
 ms.date: 10/21/2015
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
-search.app:
-  - PowerApps
 contributors:
   - gregli-msft
-  - tapanm-msft
+  - mduelae
+  - jorisdg
 ---
 
 # Update and UpdateIf functions in Power Apps
@@ -28,7 +27,7 @@ Updates [records](/power-apps/maker/canvas-apps/working-with-tables#records) in 
 
 Use the **Update** function to replace an entire record in a data source. In contrast, the **UpdateIf** and the **[Patch](function-patch.md)** functions modify one or more values in a record, leaving the other values alone.
 
-For a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections), the entire record must match. Collections allow duplicate records, so multiple records might match. You can use the **All** argument to update all copies of a record; otherwise, only one copy of the record is updated.
+For a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections), the entire record must match. Collections allow duplicate records, so multiple records might match. You can use the **RemoveFlags.All** argument to update all copies of a record; otherwise, only one copy of the record is updated.
 
 If the data source generates a column's value automatically, the value of that [column](/power-apps/maker/canvas-apps/working-with-tables#columns) must be reaffirmed.
 
@@ -44,16 +43,19 @@ Both **Update** and **UpdateIf** return the modified data source as a [table](/p
 
 ### Delegation
 
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+When used with a data source, these functions cannot be delegated.  Only the first portion of the data source will be retrieved and then the function applied.  This may not represent the complete story.  A warning may appear at authoring time to remind you of this limitation.
+
+#### Delegation support (Experimental)
+Delegation support for UpdateIf and RemoveIf is now in Experimental Preview (default OFF) for data sources that support it. If a data source does not support this feature, Power Apps will now send a query to the server and retrieve all data that matches the filter expression up to the maxium of either 500, 2000, or the data page size. Then, it will update those records and send each  back to the server to be updated. 
 
 ## Syntax
 
-**Update**( _DataSource_, _OldRecord_, _NewRecord_ [, **All** ] )
+**Update**( _DataSource_, _OldRecord_, _NewRecord_ [, **RemoveFlags.All** ] )
 
 - _DataSource_ – Required. The data source that contains the record that you want to replace.
 - _OldRecord_ – Required. The record to replace.
 - _NewRecord_ – Required. The replacement record. This isn't a change record. The entire record is replaced, and missing properties will contain _blank_.
-- _All_ – Optional. In a collection, the same record may appear more than once. Specify the **All** argument to update all copies of the record.
+- _RemoveFlags.All_ – Optional. In a collection, the same record may appear more than once. Specify the **RemoveFlags.All** argument to update all copies of the record.
 
 **UpdateIf**( _DataSource_, _Condition1_, _ChangeRecord1_ [, *Condition2*, *ChangeRecord2*, ... ] )
 
