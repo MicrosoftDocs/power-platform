@@ -35,7 +35,7 @@ For information on the Power Apps admin module, see [Get started using the Power
 > ```
 
 ## Get started with PowerShell
-If you're new to PowerShell and need help finding and launchingit, go to [Getting Started with PowerShell](/powershell/scripting/learn/ps101/01-getting-started). If you need help using PowerShell or the cmdlets, go to [The PowerShell Help System](/powershell/scripting/learn/ps101/02-help-system).
+If you're new to PowerShell and need help finding and launching it, go to [Getting Started with PowerShell](/powershell/scripting/learn/ps101/01-getting-started). If you need help using PowerShell or the cmdlets, go to [The PowerShell Help System](/powershell/scripting/learn/ps101/02-help-system).
 
 ## Requirements
 PowerShell in this article requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
