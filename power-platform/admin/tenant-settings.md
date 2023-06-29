@@ -14,9 +14,8 @@ contributors:
 
 Use the Tenant settings page to review and manage tenant-level settings.
 
-To view tenant-level settings:
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
 2. Select **Settings** > **Tenant settings** in the left-side navigation pane.
 
 The following settings apply to all environments within your tenant.
