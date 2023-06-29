@@ -176,7 +176,7 @@ These sources require authentication, since the bot makes calls on behalf of the
 
 You can find instructions for how to create the needed Azure AD application registration in [Configure user authentication with Azure Active Directory](configuration-authentication-azure-ad.md)
 
-You'll need to include these delegated permissions:
+You'll need to include these delegated permissions for **Microsoft Graph**:
 
 1. Files.Read.All
 2. Sites.Read.All

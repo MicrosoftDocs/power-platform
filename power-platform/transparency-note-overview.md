@@ -17,6 +17,7 @@ ms.reviewer: kvivek
 [!INCLUDE[transparency-note-features](includes/transparency-note-features.md)]
 
 - [Copilot data security and privacy](transparency-note-copilot-data-security-privacy.md)
+- [Copilot data sharing](transparency-note-copilot-data-sharing.md)
 
 ### Related content
 
