@@ -16,7 +16,10 @@ ms.custom: handoff, ceX
 
 # Configure hand-off to Dynamics 365 Customer Service
 
-When your customers need to speak with a human agent, your bot can seamlessly hand off the conversation. With the omnichannel capabilities of the [Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), you can connect both voice (Classic only, coming soon for Preview) and text (messaging) conversations.
+When your customers need to speak with a human agent, your bot can seamlessly hand off the conversation. With the omnichannel capabilities of the [Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), you can connect both voice (Classic only, coming soon for all other bots) and text (messaging) conversations.
+
+> [!NOTE]
+> Connecting to Dynamics 365 Customer Service Omnichannel for **voice** capabilities is available to Power Virtual Agents Classic only at this moment. This feature is coming soon to all other bots.
 
 When your bot hands off a conversation, it shares the full history of the conversation and all variables collected in the interaction. Your Omnichannel for Customer Service routes incoming escalations to the right queue, and a live agent can seamlessly resume the conversation. For more information about how to use hand-off in bot conversations, see [Hand off to a live agent](./advanced-hand-off.md).
 
