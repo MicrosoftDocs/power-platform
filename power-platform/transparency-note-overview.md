@@ -21,6 +21,7 @@ ms.reviewer: kvivek
 
 ### Related content
 
+- [Transparency notes for Power Apps](/power-apps/maker/common/transparency-note)
 - [Transparency notes for Power Automate](/power-automate/transparency-note)
 - [Transparency notes for Power Pages](/power-pages/transparency-note)
 
