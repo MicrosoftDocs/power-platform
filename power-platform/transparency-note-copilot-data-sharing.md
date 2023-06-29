@@ -31,7 +31,7 @@ By default, the data sharing option is disabled for you. After you opt in, you c
 
 ## What happens when I withdraw my consent?
 
-You own your data. Microsoft will use your data only to provide the services we've agreed upon and for the purposes that are compatible with providing those services. Your data remains yours and we don't share it. If you leave this program, all your data is deleted within 30 days of opting out.
+You own your data. Microsoft uses your data only to provide the services we've agreed upon and for the purposes that are compatible with providing those services. Your data remains yours and we don't share it. If you leave this program, all your data is deleted within 30 days of opting out.
 
 ## Who has access to my data?
 
