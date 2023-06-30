@@ -84,7 +84,7 @@ A language includes the following information:
 | 2052 Simplified Chinese (China) - Stroke 90 dataset    | \_CI_AI       |
 | 2070 Portuguese (Portugal)                             | \_CI_AI       |
 | 2074 Serbian - Latin character set                     | \_CI_AS       |
-| 3076 Traditional Chinese Hong Kong - Stroke 90 dataset | \_CI_AI       |
+| 3076 Traditional Chinese Hong Kong  - Stroke 90 dataset | \_CI_AI       |
 | 3082 Modern Spanish (Spain)                            | \_CI_AI       |
 | 3098 Serbian - Cyrillic dataset                        | \_CI_AI       |
 
