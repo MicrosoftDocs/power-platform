@@ -14,7 +14,7 @@ ms.contributors:
 ---
 # Power Platform and Dynamics 365 apps operated by 21Vianet in China
 
-Microsoft Power Platform and Dynamics 365 apps services operated by 21Vianet are designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services that's currently operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd ("21Vianet"). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., located in mainland China.
+Microsoft Power Platform and Dynamics 365 apps services operated by 21Vianet are designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services that's currently operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd ("21Vianet"). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., located in China.
 
 The Dyamics 365 apps include Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
