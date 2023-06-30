@@ -25,7 +25,7 @@ landingContent:
             url: topics-overview.md
           - text: Trigger phrases best practices
             url: trigger-phrases-best-practices.md
-          - text: slot filling best practices
+          - text: Slot filling best practices
             url: slot-filling-best-practices.md
 
   # Card
