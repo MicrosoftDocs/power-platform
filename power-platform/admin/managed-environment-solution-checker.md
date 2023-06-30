@@ -25,11 +25,11 @@ You can use [solution checker](/power-apps/maker/data-platform/use-powerapps-che
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-To enable the solution checker for your Managed Environment:
+To enable solution checker enforcement for your Managed Environment:
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 1. In the navigation pane, select **Environments**, and then select a managed environment.
-1. On the command bar, select **Edit Managed Environments**, and then select the appropriate setting under **Solution checker**.
+1. On the command bar, select **Edit Managed Environments**, and then select the appropriate setting under **Solution checker enforcement**.
 
     :::image type="content" source="media/managed-environment-solution-checker.png" alt-text="Screenshot of the solution checker settings screen.":::
 
