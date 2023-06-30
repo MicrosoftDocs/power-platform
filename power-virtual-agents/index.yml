@@ -7,7 +7,7 @@ brand: power-virtual-agents
 
 metadata:
   title: Official Microsoft Power Virtual Agents documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: See how Power Virtual Agents can be used to build powerful AI-driven chatbots. # Required; article description that is displayed in search results. < 160 chars.
+  description: Discover how to build AI-driven chatbots easily with Power Virtual Agents with online training courses, docs, and videos. Learn how to quickly and simply integrate chat into your web site. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
@@ -47,14 +47,17 @@ highlightedContent:
 additionalContent:
   sections:
     - title: Create and design
-      # Guidance should be the first card under implement. On this card, include links for Security and Compliance, Implementation, Adoption frameworks, and Best practices.
       # Each card should have at least three and no more than five links. Do not include a "See also" link.
       items:
-        - title: Get started
+        - title: Try/Buy
           links:
             - text: Sign up for free
               url: ./sign-up-individual.md
-            - text: Web app
+            - text: Buy license
+              url: ./requirements-licensing-subscriptions.md
+        - title: Fundamentals
+          links:
+            - text: Use the web app
               url: ./fundamentals-what-is-power-virtual-agents-portal.md
             - text: Use the unified canvas to build bots
               url: ./unified-authoring-conversion.md
@@ -76,41 +79,43 @@ additionalContent:
               url: ./advanced-end-user-authentication.md
             - text: Use Microsoft Bot Framework Skills
               url: ./advanced-use-skills.md
-        - title: Support and licensing
+        - title: Best practices guidance
           links:
-            - text: Community help and support
-              url: ./fundamentals-support.md
-            - text: Licensing
-              url: ./requirements-licensing-subscriptions.md
+            - text: Topics best practices
+              url: guidance/topics-overview.md
+            - text: Trigger phrases best practices
+              url: guidance/trigger-phrases-best-practices.md
+            - text: Measuring chatbot engagement
+              url: guidance/measuring-engagement.md
 
     - title: Administer and extend
       items:
-      - title: Administer Power Virtual Agents
-        links:
-          - text: Assign licenses
-            url: ./requirements-licensing.md
-          - text: Working with environments
-            url: ./environments-first-run-experience.md
-          - text: Export and import bots using solutions
-            url: ./authoring-export-import-bots.md
-      - title: Publish and integrate
-        links:
-          - text: Configure demo and live sites
-            url: ./publication-connect-bot-to-web-channels.md
-          - text: Publish to Microsoft Teams
-            url: ./publication-add-bot-to-microsoft-teams.md
-          - text: Publish to Facebook
-            url: ./publication-add-bot-to-facebook.md
-      - title: Monitor and diagnose
-        links:
-          - text: Use analytics to improve your bot
-            url: ./analytics-overview.md
-          - text: Analyze bot performance and usage
-            url: ./analytics-summary.md
-          - text: Analyze topic usage
-            url: ./analytics-topic-details.md
- #   - title: Use
- #   items:
+        - title: Administer Power Virtual Agents
+          links:
+            - text: Assign licenses
+              url: ./requirements-licensing.md
+            - text: Working with environments
+              url: ./environments-first-run-experience.md
+            - text: Export and import bots using solutions
+              url: ./authoring-export-import-bots.md
+        - title: Publish and integrate
+          links:
+            - text: Configure demo and live sites
+              url: ./publication-connect-bot-to-web-channels.md
+            - text: Publish to Microsoft Teams
+              url: ./publication-add-bot-to-microsoft-teams.md
+            - text: Publish to Facebook
+              url: ./publication-add-bot-to-facebook.md
+        - title: Monitor and diagnose
+          links:
+            - text: Use analytics to improve your bot
+              url: ./analytics-overview.md
+            - text: Analyze bot performance and usage
+              url: ./analytics-summary.md
+            - text: Analyze topic usage
+              url: ./analytics-topic-details.md
+    #   - title: Use
+    #   items:
 
     - title: Related content
       items:
