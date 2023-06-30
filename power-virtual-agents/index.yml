@@ -39,7 +39,7 @@ highlightedContent:
     # Card
     - title: "Troubleshoot"
       itemType: concept
-      url: /power-virtual-agents/fundamentals-support
+      url: ./error-codes.md
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
