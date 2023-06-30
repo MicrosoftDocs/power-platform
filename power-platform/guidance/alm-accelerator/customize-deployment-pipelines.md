@@ -66,7 +66,7 @@ In the ALM Accelerator, deployment profiles contain the information needed to cr
 1. Name the new deployment step *Acceptance*.
 1. Set the **Step Number** to *2*.
 1. Create a **Deployment Environment** for your deployment step and name it *Acceptance*.
-1. Set the URL to the URL of your acceptance environment; for example, *https://myacceptanceenvironment.crm.dynamics.com/*.
+1. Set the URL to the URL of your acceptance environment; for example, *`https://myacceptanceenvironment.crm.dynamics.com/`*.
 1. Set the **Build Template Path** to the path to the pipeline template you created; for example, *Pipelines/build-deploy-acceptance-SampleSolution.yml*.
 1. Set **Deployable** to **Allowed**, **Approval Type** to **Pull Request**, and **Target Branch** to **[Use Solution Branches]**.  
 
