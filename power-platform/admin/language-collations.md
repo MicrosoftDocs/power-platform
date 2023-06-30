@@ -34,7 +34,7 @@ A language includes the following information:
 
 - **LCID**: This is an identification number applied to languages in the Microsoft .NET framework to easily identify which language is being used. For example, 1033 is US English.
 
-- **Language**: The actual language. In some cases, names, country, and character dataset information have been added for disambiguation.
+- **Language**: The actual language. In some cases, names, country/region, and character dataset information have been added for disambiguation.
 
 - **Collation**: The language collation uses the case-sensitivity and accent-sensitivity options associated with the language (_CI, _AS, _AI) described earlier. 
 
@@ -84,7 +84,7 @@ A language includes the following information:
 | 2052 Simplified Chinese (China) - Stroke 90 dataset    | \_CI_AI       |
 | 2070 Portuguese (Portugal)                             | \_CI_AI       |
 | 2074 Serbian - Latin character set                     | \_CI_AS       |
-| 3076 Traditional Chinese Hong Kong  - Stroke 90 dataset | \_CI_AI       |
+| 3076 Traditional Chinese Hong Kong - Stroke 90 dataset | \_CI_AI       |
 | 3082 Modern Spanish (Spain)                            | \_CI_AI       |
 | 3098 Serbian - Cyrillic dataset                        | \_CI_AI       |
 
