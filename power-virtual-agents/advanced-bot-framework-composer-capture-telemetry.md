@@ -5,7 +5,7 @@ keywords: "composer, adaptive card"
 ms.date: 03/24/2023
 
 ms.topic: article
-author: iaanw
+author: KendalBond007
 ms.author: iawilt
 manager: leeclontz
 ms.reviewer: makolomi
