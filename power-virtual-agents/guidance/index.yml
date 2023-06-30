@@ -53,3 +53,5 @@ landingContent:
             url: /power-apps/guidance
           - text: Power Pages guidance center
             url: /power-pages/guidance
+          - text: Power Virtual Agents docs
+            url: /power-virtual-agents
