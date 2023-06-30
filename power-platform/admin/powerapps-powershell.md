@@ -49,7 +49,7 @@ If you have an outdated version, go to [Upgrading existing Windows PowerShell](/
 > [!IMPORTANT]
 > The modules described in this document, use .NET Framework. This makes it incompatible with PowerShell 6.0 and later, which uses .NET Core. 
 
-## Installation
+## Module installation
 To run the PowerShell cmdlets for app creators, do the following:
 
 1. Run PowerShell as an administrator.
@@ -87,6 +87,31 @@ To run the PowerShell cmdlets for app creators, do the following:
     $pass = ConvertTo-SecureString "password" -AsPlainText -Force
     Add-PowerAppsAccount -Username user@contoso.com -Password $pass
     ```
+### Module updates
+You can check the version of all your PowerShell modules using [Get-Module](/powershell/module/microsoft.powershell.core/get-module)
+
+```powershell
+Get-Module
+```
+And you can update all your PowerShell modules to the latest using [Update-Module](/powershell/module/powershellget/update-module)
+
+```powershell
+Update-Module
+```
+
+Alternately, you can check the module version of the Power Platform modules specifically using [Get-Module](/powershell/module/microsoft.powershell.core/get-module) and the "-Name" parameter
+
+```powershell
+Get-Module -Name "Microsoft.PowerApps.Administration.PowerShell"
+Get-Module -Name "Microsoft.PowerApps.PowerShell"
+```
+
+And update the Power Platform PowerShell modules specifically using [Update-Module](/powershell/module/powershellget/update-module) and the "-Name" parameter
+
+```powershell
+Update-Module -Name "Microsoft.PowerApps.Administration.PowerShell"
+Update-Module -Name "Microsoft.PowerApps.PowerShell"
+```
 
 ## Power Apps cmdlets for app creators
 
