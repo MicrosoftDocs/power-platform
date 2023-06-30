@@ -146,16 +146,16 @@ conceptualContent:
           itemType: overview
 
     - title: Best practices guidance
-          links:
-            - text: Topics best practives
-              url: guidance/topics-overview.md
-              itemType: reference
-            - text: Trigger phrases best practices
-              url: guidance/trigger-phrases-best-practices.md
-              itemType: reference
-            - text: Measuring chatbot engagement
-              url: guidance/measuring-engagement.md
-              itemType: reference
+      links:
+        - text: Topics best practives
+          url: guidance/topics-overview.md
+          itemType: reference
+        - text: Trigger phrases best practices
+          url: guidance/trigger-phrases-best-practices.md
+          itemType: reference
+        - text: Measuring chatbot engagement
+          url: guidance/measuring-engagement.md
+          itemType: reference
 
 # additionalContent section (optional)
 # Card with summary style
