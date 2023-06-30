@@ -147,7 +147,7 @@ conceptualContent:
 
     - title: Best practices guidance
       links:
-        - text: Topics best practives
+        - text: Topics best practices
           url: guidance/topics-overview.md
           itemType: reference
         - text: Trigger phrases best practices
