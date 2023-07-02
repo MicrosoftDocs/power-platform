@@ -56,7 +56,7 @@ When the solution checker enforcement is turned on, all solutions should be vali
 
 When the validation mode is set to **Warn** or **Block**, Power Platform admins receive summary emails when a solution is imported or blocked. When the solution is imported into an environment, environment admins can see the count of issues by severity in the solution in the summary email.
 
-The email is sent to all users with the roles of [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) and [Dynamics 365 service administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). It is also sent to recipients of the [weekly digest emails](/managed-environment-usage-insights#who-can-receive-the-weekly-digest).
+The email is sent to all users with the roles of [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) and [Dynamics 365 service administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). It is also sent to recipients of the [weekly digest emails](managed-environment-usage-insights.md#who-can-receive-the-weekly-digest).
 
 ### Suppress validation emails
 
