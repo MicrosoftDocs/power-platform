@@ -29,7 +29,7 @@ For information about how to provision environments, go to [Create and manage en
 
 ## Feature availability
 
-The deployment of Microsoft Business Applications in each geography is based on the foundational principles of security, privacy, compliance, transparency, reliability, and in-country disaster recovery. Organizations get a complete cloud infrastructure and platform, and familiar productivity and business application tools. Customer data is stored at rest within the geography, except as noted in the [Trust Center](https://www.microsoft.com/trust-center/privacy/data-location).
+The deployment of Microsoft Business Applications in each geography is based on the foundational principles of security, privacy, compliance, transparency, reliability, and in-country/region disaster recovery. Organizations get a complete cloud infrastructure and platform, and familiar productivity and business application tools. Customer data is stored at rest within the geography, except as noted in the [Trust Center](https://www.microsoft.com/trust-center/privacy/data-location).
 
 Microsoft strives to maintain functional parity across our localized datacenter deployments. However, there are exceptions that are affected by dependent service availability, market priorities, or compliance regulations. These exceptions are indicated in the [Product and Feature Availability PDF document (download)](https://aka.ms/BAPfunctionalparityapac). The column labeled "China (21-V)" should help customers and partners understand and plan for successful implementation of their business application solutions. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases.
 
