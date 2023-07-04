@@ -38,7 +38,7 @@ When a user first creates an environment from a region, the environment is alway
 
 There are six reports available for Power Apps admins. The last viewed environment is selected by default.  
 
-**Usage** report is the default reports seen by the logged in environment admin. It provides total app launches and daily active users across all apps in the environment. Admins can filter the view with attributes like device platform, player version, country, state, and city.
+**Usage** report is the default reports seen by the logged in environment admin. It provides total app launches and daily active users across all apps in the environment. Admins can filter the view with attributes like device platform, player version, country/region, state, and city.
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics usage report.](media/powerapps-analytics-usage.png "Power Apps analytics usage report")
