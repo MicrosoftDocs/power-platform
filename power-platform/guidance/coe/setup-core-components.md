@@ -409,7 +409,12 @@ Using these steps, you set up an Azure AD app registration that is used in a clo
     1. Update the **List serviceAnnouncements from Graph** action and change the **Authority** to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
     1. **Save** this flow.
 
-## Set up Audit Logs solution
+## Set up Audit Logs solution (deprecated)
+
+> [!IMPORTANT]
+> Using the dedicated **Center of Excellence - Audit Log** solution and the Office 365 Management custom connector to collect audit log events are deprecated. The solution and custom connector will be removed from the CoE Starter Kit in August 2023.
+> 
+> We have a new flow that collects audit log events, which is part of the **Center of Excellence - Core Components** solution. This new flow uses an HTTP connector. Learn more: [Collect audit logs using an HTTP action](setup-auditlog-http.md)
 
 > [!NOTE]
 > Only set up the Audit Log solution if you've chosen [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
